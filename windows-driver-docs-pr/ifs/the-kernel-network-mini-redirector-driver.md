@@ -9,11 +9,8 @@ keywords:
 - kernel network redirectors WDK , mini-redirector drivers
 - mini-redirectors WDK
 - mini-redirectors WDK , about kernel network mini-redirector drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The Kernel Network Mini-Redirector Driver
@@ -102,6 +99,5 @@ The routines implemented by a network mini-redirector can be organized into the 
  
 
 
---------------------
 
 

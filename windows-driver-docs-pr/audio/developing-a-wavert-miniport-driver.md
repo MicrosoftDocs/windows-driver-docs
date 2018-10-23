@@ -2,11 +2,8 @@
 title: Developing a WaveRT Miniport Driver
 description: Developing a WaveRT Miniport Driver
 ms.assetid: d2d37c9e-fbfb-4bf3-bd7d-c8e19070a3f1
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/03/2017
+ms.localizationpriority: medium
 ---
 
 # Developing a WaveRT Miniport Driver
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 This topic presents the software and hardware-related points you must consider when you decide to develop your own WaveRT miniport driver.
 
-Microsoft has developed a set of hardware design guidelines for a [Universal Audio Architecture (UAA),](http://go.microsoft.com/fwlink/p/?linkid=30850) and the guidelines incorporate the features we recommend for a WaveRT audio device. The UAA guidelines are closely based on the High Definition (HD) Audio specification developed by Intel.
+Microsoft has developed a set of hardware design guidelines for a [Universal Audio Architecture (UAA)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) and the guidelines incorporate the features we recommend for a WaveRT audio device. The UAA guidelines are closely based on the High Definition (HD) Audio specification developed by Intel.
 
 Windows Vista and later Windows operating systems provide an HD audio driver for UAA-compliant audio devices. So if your audio device is UAA-compliant, you do not have to develop your own WaveRT miniport driver. But for audio devices that have some proprietary, non-UAA hardware features, you must develop your own WaveRT miniport driver to support the proprietary features.
 
@@ -71,9 +68,7 @@ After you review the sample adapter driver and start to design your WaveRT minip
         GFX APOs perform hardware-specific processing of an audio stream. A GFX APO is tied to a particular audio device by the INF file that installs the device. The effect of a GFX APO is global because it affects the global mix that plays through the audio device.
 
         **Note**   Windows Vista and later operating systems provide a set of APOs as part of the operating system. You can, however develop your own APOs to replace the system-supplied ones. For more information, see [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md).
-
-         
-
+    
     Global mixing is performed by the audio engine, which is the user-mode system component that is responsible for mixing the audio streams from all audio applications. Typically, the audio engine is the client that directly exchanges data with the WaveRT audio device through the cyclic buffer.
 
     When the user enables an LFX APO, the audio system inserts the APO into one of the input streams to the audio engine. When the user enables a GFX APO, the system inserts that APO into the output stream from the audio engine. For more information about LFX and GFX APOs and the audio engine, see the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic.
@@ -85,7 +80,5 @@ After you review the sample adapter driver and start to design your WaveRT minip
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Developing%20a%20WaveRT%20Miniport%20Driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

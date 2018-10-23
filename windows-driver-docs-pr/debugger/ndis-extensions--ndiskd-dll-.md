@@ -3,11 +3,9 @@ title: NDIS Extensions (Ndiskd.dll)
 description: NDIS Extensions (Ndiskd.dll)
 ms.assetid: bf4a7cc2-0116-4d6d-8a6f-2e9dc77d3631
 keywords: ["NDIS extensions (ndiskd.dll)", "ndiskd.dll (NDIS extensions)", "extensions, NDIS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Extensions (Ndiskd.dll)
@@ -20,7 +18,7 @@ This section describes commands available in !ndiskd, a debugger extension that 
 
 The commands can be found in Ndiskd.dll. To load the symbols, enter **.reload /f ndis.sys** in the debugger command window. To confirm the symbols loaded successfully, use the [**!lmi ndis**](-lmi.md) extension and look for the phrase "Symbols loaded successfully" toward the bottom. Your output should look similar to the following example:
 
-```
+```dbgcmd
 3: kd> !lmi ndis
 Loaded Module Info: [ndis] 
          Module: ndis
@@ -189,7 +187,6 @@ For a demonstration of using the !ndiskd debugger commands to debug the network 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20NDIS%20Extensions%20%28Ndiskd.dll%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

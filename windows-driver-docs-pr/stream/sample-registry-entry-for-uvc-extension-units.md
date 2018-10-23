@@ -7,11 +7,8 @@ keywords:
 - registry WDK USB Video Class
 - extension units WDK USB Video Class , samples, registry entry
 - sample code WDK USB Video Class , registry entry for UVC extension units
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Registry Entry for UVC Extension Units
@@ -39,7 +36,7 @@ Verify that:
 
 Include the following code in the registry script, arbitrarily named *Xusample.rgs*:
 
-```
+```cpp
 HKLM
 {
     NoRemove SYSTEM
@@ -51,13 +48,13 @@ HKLM
                 NoRemove NodeInterfaces
                 {
                     ForceRemove {xxxxxxxx-xxxx-xxxx-xxxx-
-                       xxxxxxxxxxxx} = s &#39;Extension Unit 
-                       Property Set&#39;
+                       xxxxxxxxxxxx} = s 'Extension Unit 
+                       Property Set'
                     {
-                        val IID = b &#39;yyyyyyyyyyyyyyyyyyy
-                           yyyyyyyyyyyyy&#39;
-                        val CLSID = b &#39;zzzzzzzzzzzzzzzzz
-                           zzzzzzzzzzzzzzz&#39;
+                        val IID = b 'yyyyyyyyyyyyyyyyyyy
+                           yyyyyyyyyyyyy'
+                        val CLSID = b 'zzzzzzzzzzzzzzzzz
+                           zzzzzzzzzzzzzzz'
                     }             
                 }
             }
@@ -68,29 +65,19 @@ HKLM
 
 To support installation by registering the plug-in DLL, add the following code to your registry script:
 
-```
+```cpp
 HKCR
 {
     NoRemove CLSID
     {
-         ForceRemove {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} = s &#39;CompanyName Extension Unit Interface&#39;
+         ForceRemove {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} = s 'CompanyName Extension Unit Interface'
         {
-            InprocServer32 = s &#39;%MODULE%&#39;
+            InprocServer32 = s '%MODULE%'
                                                 {
-                                val ThreadingModel = s &#39;Both&#39;
+                                val ThreadingModel = s 'Both'
                                                 }
         }
  
     }
 }
 ```
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Sample%20Registry%20Entry%20for%20UVC%20Extension%20Units%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

@@ -10,17 +10,14 @@ keywords:
 - Halted state WDK networking
 - Shutdown state WDK networking
 - Initializing state WDK ne
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter States and Operations
 
 
-## <a href="" id="ddk-miniport-adapter-states-and-operations-ng"></a>
+
 
 
 For each adapter that it manages, an NDIS 6.0 or later miniport driver must support the following set of operational states:

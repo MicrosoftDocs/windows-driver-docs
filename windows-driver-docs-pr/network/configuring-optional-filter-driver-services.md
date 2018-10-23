@@ -5,17 +5,14 @@ ms.assetid: 698e1b2a-de1a-435a-bc30-0d27d9e15e19
 keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring Optional Filter Driver Services
 
 
-## <a href="" id="ddk-configuring-optional-filter-driver-services-ng"></a>
+
 
 
 NDIS calls a filter driver's [*FilterSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549972) function to configure optional filter driver services. NDIS calls *FilterSetOptions* within the context of the filter driver's call to the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function

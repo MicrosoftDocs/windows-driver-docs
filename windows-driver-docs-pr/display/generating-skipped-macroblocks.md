@@ -5,11 +5,8 @@ ms.assetid: 98ea004b-347d-4299-a23c-da0a9d0e844f
 keywords:
 - macroblocks WDK DirectX VA , skipped macroblocks
 - skipped macroblocks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generating Skipped Macroblocks
@@ -32,7 +29,7 @@ The following conditions are required when generating and using skipped macroblo
 
 Because of the first three preceding conditions, an accelerator may implement motion compensation (when *Motion4MV* is zero) by applying the specified motion vectors to a rectangle of width equal to the following expression in the luminance component, and to a similarly specified rectangle in the chrominance components. This rectangular-area motion compensation method can be performed by the accelerator rather than by using *MBskipsFollowing*+1 repetitions of the same macroblock control operation.
 
-```
+```cpp
 (bMacroblockWidthMinus1+1) X (MBskipsFollowing+1)
 ```
 
@@ -139,7 +136,6 @@ These seven macroblocks would require the generation (at least) of the five Dire
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Generating%20Skipped%20Macroblocks%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

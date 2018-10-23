@@ -6,11 +6,8 @@ keywords:
 - Winsock Kernel WDK networking , control operations
 - WSK WDK networking , control operations
 - control operations WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performing Control Operations on a Socket
@@ -22,7 +19,7 @@ A WSK application performs control operations on a socket by calling the [**WskC
 
 The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](https://msdn.microsoft.com/library/windows/hardware/ff570830) socket option on a datagram socket.
 
-```
+```C++
 // Prototype for the control socket IoCompletion routine
 NTSTATUS
   ControlSocketComplete(
@@ -135,7 +132,7 @@ For more information about each of the supported socket options, see [**WSK Sock
 
 The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff570820) socket IOCTL operation on a datagram socket.
 
-```
+```C++
 // Prototype for the control socket IoCompletion routine
 NTSTATUS
   ControlSocketComplete(

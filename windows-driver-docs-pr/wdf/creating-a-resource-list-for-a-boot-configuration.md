@@ -9,11 +9,8 @@ keywords:
 - boot configuration resource lists WDK KMDF , creating
 - resource lists WDK KMDF
 - resource lists WDK KMDF , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Resource List for a Boot Configuration

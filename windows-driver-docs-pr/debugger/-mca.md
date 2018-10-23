@@ -3,35 +3,25 @@ title: mca
 description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers. On an Itanium target computer, the mca extension displays the MCA error record.
 ms.assetid: 452bfbf2-fcab-4a71-bfd0-b02afe30df74
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - mca
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !mca
 
+The !mca extension displays the machine check architecture (MCA) registers. 
 
-On an x86 target computer, the !mca extension displays the machine check architecture (MCA) registers. On an Itanium target computer, the **!mca** extension displays the MCA error record.
-
-Syntax for x86 target computer
-
-```
+```dbgcmd
 !mca
 ```
 
-Syntax for Itanium target computer
-
-```
-!mca Address [Flags]
-```
 
 ## <span id="ddk__mca_dbg"></span><span id="DDK__MCA_DBG"></span>Parameters
 
@@ -94,7 +84,7 @@ Remarks
 
 On an Itanium target, **!mca** displays the MCA error record from the system abstraction layer (SAL). Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !mca e0000165f3f58000
 hal!HalpFeatureBits: 0xf [HAL_PERF_EVENTS|HAL_MCA_PRESENT|HAL_CMC_PRESENT|HAL_CPE_PRESENT]
  
@@ -596,7 +586,7 @@ CP M/R/F/A Manufacturer     SerialNumber     Features         Speed
 
 On an x86 target, **!mca** displays the machine check registers supported by the active processor. It also displays basic CPU information (identical to that displayed by [**!cpuinfo**](-cpuinfo.md)). Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !mca
 MCE: Enabled, Cycle Address: 0x00000001699f7a00, Type: 0x0000000000000000
 
@@ -620,7 +610,7 @@ CP F/M/S Manufacturer   MHz Update Signature Features
 
 Note that this extension requires private HAL symbols. Without these symbols, the extension will display the message "HalpFeatureBits not found" along with basic CPU information. For example:
 
-```
+```dbgcmd
 kd> !mca
 HalpFeatureBits not found
 CP F/M/S Manufacturer  MHz Update Signature Features
@@ -631,7 +621,6 @@ CP F/M/S Manufacturer  MHz Update Signature Features
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!mca%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - telephonic services WDK WAN , registering
 - CoNDIS TAPI WDK networking , registering
 - registering CoNDIS TAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS TAPI Registration
 
 
-## <a href="" id="ddk-condis-tapi-registration-ng"></a>
+
 
 
 This section discusses how a CoNDIS WAN miniport driver indicates that it supports TAPI services and how it sets up TAPI-specific communications with the NDISWAN and NDPROXY drivers.

@@ -7,11 +7,8 @@ keywords:
 - context WDK Windows Filtering Platform
 - flowContext parameter WDK Windows Filtering Platform
 - associating context with data flow WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Associating Context with a Data Flow
@@ -21,7 +18,7 @@ For callouts that process data at a filtering layer that supports data flows, th
 
 To associate a context with a data flow, a callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function calls the [**FwpsFlowAssociateContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551165) function. For example:
 
-```
+```C++
 // Context structure to be associated with data flows
 typedef struct FLOW_CONTEXT_ {
   .
@@ -100,7 +97,7 @@ VOID NTAPI
 
 If a context is already associated with a data flow, it must first be removed before a new context may be associated with the data flow. To remove a context from a data flow, a callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function calls the [**FwpsFlowRemoveContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551169) function. For example:
 
-```
+```C++
 // Context structure to be associated with data flows
 typedef struct FLOW_CONTEXT_ {
   ...

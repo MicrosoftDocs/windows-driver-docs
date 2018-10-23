@@ -10,11 +10,8 @@ keywords:
 - near field proximity
 - NFP
 - CX
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NFC class extension (CX) design guide
@@ -81,5 +78,5 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_nfpdrivers/)  
+[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/)  

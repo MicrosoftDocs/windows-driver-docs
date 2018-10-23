@@ -6,17 +6,14 @@ keywords:
 - installation applications WDK , preinstall driver packages
 - device installation applications WDK , preinstall driver packages
 - preinstalled drivers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preinstalling Driver Packages
 
 
-## <a href="" id="ddk-pre-installing-driver-files-dg"></a>
+
 
 
 To preinstall driver files, your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) should follow these steps:

@@ -10,17 +10,14 @@ keywords:
 - architecture WDK WAN , bindings
 - architecture WDK WAN , connections
 - WAN miniport drivers WDK networking , bindings
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WAN Driver Bindings and Connections
 
 
-## <a href="" id="ddk-wan-driver-bindings-and-connections-ng"></a>
+
 
 
 This topic provides an overview of bindings and connections between NDISWAN, overlying protocol drivers, and the underlying WAN miniport drivers.

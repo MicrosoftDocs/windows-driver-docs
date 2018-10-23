@@ -3,17 +3,15 @@ title: Activating a Smart Client (Kernel Mode)
 description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: bf0f1dd5-e6dc-4168-8476-cf21e77bd335
 keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Activating a Smart Client (Kernel Mode)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Smart Client (Kernel Mode)
@@ -27,7 +25,7 @@ You need to specify the remote transfer protocol used by the KD connection serve
 
 The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
-```
+```console
 Debugger -k kdsrv:server=@{npipe:server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
 
 Debugger -k kdsrv:server=@{tcp:server=Server,port=Socket[,password=Password][,ipversion=6]},trans=@{ConnectType} [Options]
@@ -45,7 +43,7 @@ Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clic
 
 To use the graphical interface to connect to a KD connection server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -117,7 +115,7 @@ If a password was used when the KD connection server was created, *Password* mus
 <span id="________trans___________ConnectType_________"></span><span id="________trans___________connecttype_________"></span><span id="________TRANS___________CONNECTTYPE_________"></span> **trans=@{** *ConnectType* **}**  
 Tells the debugger how to connect to the target. The following kernel connection protocols are permitted:
 
-```
+```dbgcmd
 com:port=ComPort,baud=BaudRate 
 1394:channel=1394Channel[,symlink=1394Protocol] 
 usb2:targetname=String 
@@ -136,7 +134,6 @@ Since the KD connection server simply acts as a gateway for the smart client, th
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Smart%20Client%20%28Kernel%20Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

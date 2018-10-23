@@ -3,17 +3,15 @@ title: usbkd._ehcitd
 description: The usbkd._ehcitd command displays information from a usbehci _TRANSFER_CONTEXT structure. 
 ms.assetid: C0EE04CF-E059-4064-9791-3500E66B24FA
 keywords: ["usbkd._ehcitd Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usbkd._ehcitd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.\_ehcitd
@@ -21,7 +19,7 @@ api_type:
 
 The **!usbkd.\_ehcitd** command displays information from a **usbehci!\_TRANSFER\_CONTEXT** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
-```
+```dbgcmd
 !usbkd._ehcitd StructAddr
 ```
 
@@ -41,7 +39,7 @@ Examples
 
 This example shows one way to get the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Use [**!\_ehciep**](-usbkd--ehciep.md) to display information about an endpoint.
 
-```
+```dbgcmd
 0: kd> !_ehciep ffffe000001ab618
 *USBEHCI
 dt usbehci!_ENDPOINT_DATA ffffe000001ab618
@@ -64,7 +62,7 @@ slot[0] dt usbehci!_ENDPOINT_SLOT ffffe000001ab798 - slot_NotBusy
 
 In the preceding output, `ffffd00021e65100` is the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Pass this address to **!\_ehcitd**.
 
-```
+```dbgcmd
 0: kd> !_ehcitd ffffd00021e65100
 *USBEHCI TD 21e65100
 Sig 20td
@@ -108,13 +106,12 @@ SlotNextHcdTD: 21e65200
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usbkd._ehcitd%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

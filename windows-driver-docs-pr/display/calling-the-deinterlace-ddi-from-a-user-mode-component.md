@@ -5,11 +5,8 @@ ms.assetid: 3ec18c7e-02dc-4607-b280-3ca1bc5d2839
 keywords:
 - calling deinterlace DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling the Deinterlace DDI from a User-Mode Component
@@ -29,7 +26,7 @@ The following steps explain how the VMR initiates calls to the deinterlace DDI:
 1.  When the VMR is added to a filter graph, it initiates a call to the driver-supplied [*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236) callback function to retrieve the list of devices supported by the driver. The **GetMoCompGuids** member of the DD\_MOTIONCOMPCALLBACKS structure points to this callback function. For more information about a filter graph, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656).
 
 2.  If the deinterlace container device GUID is present, the VMR initiates a call to the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function to create an instance of the device. The **CreateMoComp** member of DD\_MOTIONCOMPCALLBACKS points to the callback function. In the *DdMoCompCreate* call, a pointer to the container device GUID is specified in the **lpGuid** member of the [**DD\_CREATEMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550529) structure. The container device GUID is defined as follows:
-    ```
+    ```cpp
     DEFINE_GUID(DXVA_DeinterlaceContainerDevice, 0x0e85cb93,0x3046,0x4ff0,0xae,0xcc,0xd5,0x8c,0xb5,0xf0,0x35,0xfd);
     ```
 
@@ -43,7 +40,7 @@ The following steps explain how the VMR initiates calls to the deinterlace DDI:
 
 5.  After the VMR has determined the deinterlacing capabilities of a particular deinterlace mode (for example, bob deinterlacing), it initiates a call to [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) to create an instance of the deinterlace mode device (for example, the deinterlace bob device). In the *DdMoCompCreate* call, a pointer to the deinterlace mode device GUID is specified in the **lpGuid** member of DD\_CREATEMOCOMPDATA. The deinterlace bob device GUID is defined as follows:
 
-    ```
+    ```cpp
     DEFINE_GUID(DXVAp_DeinterlaceBobDevice, 0x335aa36e,0x7884,0x43a4,0x9c,0x91,0x7f,0x87,0xfa,0xf3,0xe3,0x7e);
     ```
 
@@ -67,7 +64,6 @@ The following steps explain how the VMR initiates calls to the deinterlace DDI:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Calling%20the%20Deinterlace%20DDI%20from%20a%20User-Mode%20Component%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

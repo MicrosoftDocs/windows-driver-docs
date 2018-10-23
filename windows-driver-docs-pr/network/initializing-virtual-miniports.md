@@ -7,17 +7,14 @@ keywords:
 - opening underlying adapters
 - virtual miniports WDK networking
 - initializing virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing Virtual Miniports
 
 
-## <a href="" id="ddk-initializing-as-a-miniport-ng"></a>
+
 
 
 An intermediate driver initializes its virtual miniports after it has successfully opened an underlying miniport adapter and is ready to accept requests and sends on its virtual miniports. An intermediate driver calls [**NdisIMInitializeDeviceInstanceEx**](https://msdn.microsoft.com/library/windows/hardware/ff562727) from its [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function one or more times to request initialization of one or more virtual miniports.

@@ -8,17 +8,14 @@ keywords:
 - porting CoNDIS drivers WDK networking , send and receive operations
 - send operation porting WDK networking
 - receive
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Send and Receive Operations to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-send-and-receive-operations-to-condis-6-0-ng"></a>
+
 
 
 The CoNDIS send and receive functions are similar to the connectionless send and receive functions. The primary difference between the CoNDIS and connectionless interfaces is how they manage virtual connections (VCs). For more information about connectionless send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).

@@ -2,11 +2,8 @@
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
 ms.assetid: 55edc72a-2d53-4084-a1e4-e7e6515a4990
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling SetupWriteTextLogError
@@ -50,7 +47,7 @@ The parameters *LogToken*, *Category*, and *LogFlags* affect the operation of **
 
 The following code calls [**SetupWriteTextLogError**](https://msdn.microsoft.com/library/windows/hardware/ff552232) to write the log entry for this example:
 
-```
+```cpp
 //The LogToken value was previously returned by call to
 //SetupGetThreadLogToken or one of the system-defined log token values
 DWORD Category = TXTLOG_VENDOR; 
@@ -62,7 +59,7 @@ SetupWriteTextLog(LogToken, Category, Flags, ErrorCode, TEXT("Start Service: Fai
 
 If the TXTLOG_VENDOR event category is enabled and the TXTLOG_ERROR event level is set for the text log, this code would create an entry in the text log that would be formatted as follows:
 
-```
+```cpp
 !!!     :  Start Service: Failed to start service &#39;SomeService&#39; 
 !!!   :  Error 1056: An instance of the service is already running.
 ```

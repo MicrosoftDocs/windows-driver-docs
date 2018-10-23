@@ -4,11 +4,8 @@ author: windows-driver-content
 description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.assetid: 0442E4E2-DBC7-4EB0-BEB6-49EFF5132A1D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Windows Performance Toolkit (WPT) with WDF
@@ -30,12 +27,12 @@ You can use WPT to obtain performance insights or troubleshoot performance issue
 ## Getting started
 
 
-The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](http://dev.windows.com/en-US/featured/hardware/windows-10-hardware-preview-tools) site.
+The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](http://dev.windows.com/featured/hardware/windows-10-hardware-preview-tools) site.
 
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
 To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video. The video and the steps cover the same procedure.
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
 
 **Recording and viewing an event log for a WDF driver**
 
@@ -154,7 +151,7 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
 -   Be sure to reboot after you run the WdfPerfEnhancedVerifier.cmd script.
 -   To determine if your driver is configured to record an event log, use the **!WdfKd.wdfdriverinfo** kernel debugger command. If the driver is configured for performance tracing, you will see output like this:
 
-    ```
+    ```cpp
     !WdfKd.WdfDriverInfo Echo.sys
     …
     …

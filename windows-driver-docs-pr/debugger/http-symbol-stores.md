@@ -3,11 +3,9 @@ title: HTTP Symbol Stores
 description: HTTP Symbol Stores
 ms.assetid: b7dd1f3c-0135-4b69-9d70-b7cbf37fa969
 keywords: ["HTTP symbol stores"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # HTTP Symbol Stores
@@ -106,7 +104,7 @@ You can edit the web.config file to configure MIME types for Symbols. This appro
 
 1.  Edit the web.config file as shown here.
 
-    ```
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
         <system.webServer>
@@ -166,13 +164,13 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
 
 2.  To disable Kerberos and force the use of NTLM, use this command:
 
-    ```
+    ```console
     appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication /+"providers.[value='NTLM']" /commit:apphost
     ```
 
 3.  To return to the default value with Kerberos enabled, use this command:
 
-    ```
+    ```console
     appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication /+"providers.[value='Negotiate,NTLM']" /commit:apphost
     ```
 
@@ -181,23 +179,22 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
 
 When SymSrv receives authentication requests, the debugger can either display the authentication dialog box or automatically refuse the request, depending on how it has been configured. You can configure this behavior using !sym prompts on|off. For example to turn prompts on, use this command.
 
-```
+```dbgcmd
 !sym prompts on
 ```
 
 To check the current setting, use this command.
 
-```
+```dbgcmd
 !sym prompts
 ```
 
-For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md) on MSDN.
+For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20HTTP%20Symbol%20Stores%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

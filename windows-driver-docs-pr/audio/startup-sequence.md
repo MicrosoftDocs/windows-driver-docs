@@ -6,11 +6,8 @@ keywords:
 - adapter drivers WDK audio , startup sequences
 - startup sequences WDK audio
 - audio adapters WDK , startup sequences
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Startup Sequence
@@ -23,7 +20,7 @@ Because the adapter driver is installed as a kernel-mode driver service, the ope
 
 In the following example, the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function passes the function pointer `MyAddDevice`, which points to the driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) function, as the third parameter to the [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703) routine.
 
-```
+```cpp
 NTSTATUS 
   DriverEntry( 
     PDRIVER_OBJECT  DriverObject,
@@ -38,7 +35,7 @@ The [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/h
 
 The following code is an example implementation of the driver's `MyAddDevice` function.
 
-```
+```cpp
 #define MAX_MINIPORTS 6    // maximum number of miniports
 NTSTATUS
   MyAddDevice(
@@ -55,7 +52,7 @@ This function calls the PortCls function [**PcAddAdapterDevice**](https://msdn.m
 
 After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
 
-```
+```cpp
 NTSTATUS
   MyStartDevice(
     PDEVICE_OBJECT DeviceObject,
@@ -76,7 +73,5 @@ For more examples of driver startup code, see the sample audio adapter drivers i
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Startup%20Sequence%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

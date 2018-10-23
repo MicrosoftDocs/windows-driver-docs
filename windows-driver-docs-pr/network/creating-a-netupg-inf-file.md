@@ -7,17 +7,14 @@ keywords:
 - network component upgrades WDK , customizing
 - upgrading network components WDK , customizing
 - customizing network upgrade process WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Netupg.inf File
 
 
-## <a href="" id="ddk-creating-a-netupg-inf-file-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
@@ -28,7 +25,7 @@ The netupg.inf file contains a single section called **OemNetUpgradeDirs**. Each
 
 The following is an example of a netupg.inf file:
 
-```
+```INF
 [OemNetUpgradeDirs]
 c:\temp\adapter1
 c:\temp\adapter2

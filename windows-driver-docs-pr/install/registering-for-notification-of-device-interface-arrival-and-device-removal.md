@@ -2,11 +2,8 @@
 title: Register for Notification of Device Interface Arrival and Removal
 description: This topic describes how a user-mode application or driver registers for notification of device interface arrival and device removal.
 ms.assetid: 665E7881-F49C-4FC1-971C-1762B7D0C26E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering for Notification of Device Interface Arrival and Device Removal
@@ -44,7 +41,7 @@ Typically, a user-mode component calls [**CM_Register_Notification**](https://ms
     <tbody>
     <tr class="odd">
     <td align="left"><strong>CM_NOTIFY_ACTION_DEVICEQUERYREMOVE</strong></td>
-    <td align="left"><p>Call [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) to close the device handle. If you do not do this, your open handle prevents the query remove of this device from succeeding.</p></td>
+    <td align="left"><p>Call [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) to close the device handle. If you do not do this, your open handle prevents the query remove of this device from succeeding.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><strong>CM_NOTIFY_ACTION_DEVICEQUERYREMOVEFAILED</strong></td>

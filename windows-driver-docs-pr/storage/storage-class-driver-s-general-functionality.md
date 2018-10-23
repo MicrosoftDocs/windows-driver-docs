@@ -6,11 +6,8 @@ ms.assetid: 4fc92d20-5570-4680-bc7b-f6e84524a672
 keywords:
 - storage class drivers WDK , functionality
 - class drivers WDK storage , functionality
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's General Functionality
@@ -42,6 +39,5 @@ To a storage port driver, a storage class driver is a higher-level driver with b
  
 
 
---------------------
 
 

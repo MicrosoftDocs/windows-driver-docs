@@ -3,17 +3,15 @@ title: Bug Check 0xCA PNP_DETECTED_FATAL_ERROR
 description: The PNP_DETECTED_FATAL_ERROR bug check has a value of 0x000000CA. This indicates that the Plug and Play Manager encountered a severe error.
 ms.assetid: 2092c4a7-e068-461f-b28e-8063faf5a031
 keywords: ["Bug Check 0xCA PNP_DETECTED_FATAL_ERROR", "PNP_DETECTED_FATAL_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PNP_DETECTED_FATAL_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR
@@ -21,7 +19,7 @@ api_type:
 
 The PNP\_DETECTED\_FATAL\_ERROR bug check has a value of 0x000000CA. This indicates that the Plug and Play Manager encountered a severe error, probably as a result of a problematic Plug and Play driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PNP\_DETECTED\_FATAL\_ERROR Parameters
 

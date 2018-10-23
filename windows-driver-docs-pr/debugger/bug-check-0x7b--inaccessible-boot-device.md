@@ -3,17 +3,15 @@ title: Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE
 description: The INACCESSIBLE_BOOT_DEVICE bug check has a value of 0x0000007B. This bug check indicates that the Microsoft Windows operating system has lost access to the system partition during startup.
 ms.assetid: 0dfcb519-4ea3-4419-a1c3-60fdff96404d
 keywords: ["Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE", "INACCESSIBLE_BOOT_DEVICE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INACCESSIBLE_BOOT_DEVICE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7B: INACCESSIBLE\_BOOT\_DEVICE
@@ -21,7 +19,7 @@ api_type:
 
 The INACCESSIBLE\_BOOT\_DEVICE bug check has a value of 0x0000007B. This bug check indicates that the Microsoft Windows operating system has lost access to the system partition during startup.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INACCESSIBLE\_BOOT\_DEVICE Parameters
 
@@ -65,7 +63,7 @@ To determine the meaning of Parameter 1, look at the data that it points to. If 
 
 -   If this parameter points to a Unicode string, you must read the first 8 bytes at this address. These bytes form the UNICODE\_STRING structure, which is defined as follows:
 
-    ```
+    ```cpp
     USHORT Length;
     USHORT MaximumLength;
     PWSTR Buffer;
@@ -160,13 +158,13 @@ F2
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
 -   Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
-    ```
+    ```console
     SFC /scannow
     ```
 
@@ -193,7 +191,7 @@ It is helpful to know as much as possible about the boot device that Windows is 
 
 *disk*
 
-```
+```dbgcmd
            
 0: kd> lm m disk
 Browse full module list
@@ -203,7 +201,7 @@ fffff806`bd0b0000 fffff806`bd0cd000   disk       (deferred)
 
 *partmgr*
 
-```
+```dbgcmd
 0: kd> lm m partmgr
 Browse full module list
 start             end                 module name
@@ -212,7 +210,7 @@ fffff806`bc5a0000 fffff806`bc5c1000   partmgr    (deferred)
 
 *NTFS*
 
-```
+```dbgcmd
 0: kd> lm m ntfs
 Browse full module list
 start             end                 module name
@@ -221,7 +219,7 @@ fffff806`bd3f0000 fffff806`bd607000   NTFS       (deferred)
 
 *classpnp*
 
-```
+```dbgcmd
  0: kd> lm m classpnp
 Browse full module list
 start             end                 module name
@@ -230,7 +228,7 @@ fffff806`bd0d0000 fffff806`bd131000   CLASSPNP   (deferred)
 
 *pci*
 
-```
+```dbgcmd
 0: kd> lm m pci
 Browse full module list
 start             end                 module name
@@ -239,7 +237,7 @@ fffff806`bc440000 fffff806`bc494000   pci        (deferred)
 
 Also make sure your controller drivers are loaded. For example for a SATA RAID Controller, this might be the *iaStorA.Sys* driver, or it could be the *EhStorClass* driver.
 
-```
+```dbgcmd
 0: kd> lm m EhStorClass
 Browse full module list
 start             end                 module name
@@ -248,7 +246,7 @@ fffff806`bcbb0000 fffff806`bcbcb000   EhStorClass   (deferred)
 
 List the drivers that contain "stor", storahci, may be present.
 
-```
+```dbgcmd
 0: kd> lm m stor*
 Browse full module list
 start             end                 module name
@@ -263,7 +261,7 @@ If you can boot the target system with a debugger connected, issue [**!devnode 0
 
 One cause, might be that Plug and Play cannot assign resources to the boot device. You can verify this restriction by finding an entry for the service. If the status flags include DNF\_INSUFFICIENT\_RESOURCES or do not include DNF\_STARTED or DNF\_ENUMERATED, you may have located the problem. Try **!devnode 0 1 storahci** to save some time, instead of dumping the whole device tree.
 
-```
+```dbgcmd
 0: kd> !devnode 0 1 storahci
 Dumping IopRootDeviceNode (= 0xffffb9053d94d850)
 DevNode 0xffffb9053e8dea50 for PDO 0xffffb9053e8da060

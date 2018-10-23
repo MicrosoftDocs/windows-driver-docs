@@ -10,11 +10,8 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , callbacks
 - memory WDK DirectDraw AGP , callbacks
 - callbacks WDK DirectDraw nonlocal memory
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Callback Handling Of Nonlocal Display Memory Surfaces
@@ -29,7 +26,7 @@ Because the same driver functions are used for both local and nonlocal display m
 
 Applications and AGP hardware access the bits of a DirectDraw surface using two different addresses. Applications use a virtual address that is translated through the operating system's page table to a portion of physical address space. This physical address space is mapped by the GART hardware to appear contiguous. Hardware accesses this physical linear address (again remapped to real, discontinuous pages of memory by the GART). The **fpVidMem** member of the [**DD\_SURFACE\_GLOBAL**](https://msdn.microsoft.com/library/windows/hardware/ff551726) structure holds the virtual linear address useful to applications (and potentially some driver operations). The device-side physical address can be found from:
 
-```
+```cpp
 fpStartOffset = pSurface->fpHeapOffset - pSurface->lpVidMemHeap->fpStart;
 ```
 
@@ -45,7 +42,6 @@ Nonlocal display memory is [lost](losing-and-restoring-directdraw-surfaces.md) i
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Callback%20Handling%20Of%20Nonlocal%20Display%20Memory%20Surfaces%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

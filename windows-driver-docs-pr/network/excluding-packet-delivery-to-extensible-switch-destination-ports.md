@@ -2,11 +2,8 @@
 title: Excluding Packet Delivery to Extensible Switch Destination Ports
 description: Excluding Packet Delivery to Extensible Switch Destination Ports
 ms.assetid: 04BF02A6-360F-482E-A86B-31232AFCB778
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Excluding Packet Delivery to Extensible Switch Destination Ports
@@ -87,12 +84,3 @@ Filtering and forwarding extensions must follow these guidelines for excluding p
          
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
-
- 
-
- 
-
-
-
-
-

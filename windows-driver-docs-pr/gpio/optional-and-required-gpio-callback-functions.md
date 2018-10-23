@@ -3,11 +3,8 @@ title: Optional and Required GPIO Callback Functions
 author: windows-driver-content
 description: A general-purpose I/O (GPIO) controller driver calls the GPIO_CLX_RegisterClient method to register as a client of the GPIO framework extension (GpioClx).
 ms.assetid: 2F126431-13AB-4E3F-9E5E-56DC7D9AF024
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Optional and Required GPIO Callback Functions
@@ -67,6 +64,5 @@ The [*CLIENT\_PreProcessControllerInterrupt*](https://msdn.microsoft.com/library
  
 
 
---------------------
 
 

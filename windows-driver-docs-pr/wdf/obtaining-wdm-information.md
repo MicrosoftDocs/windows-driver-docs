@@ -6,11 +6,8 @@ ms.assetid: a43ffa5b-6166-4624-8dee-a54aaa8c7283
 keywords:
 - WDM information WDK KMDF
 - status information WDK KMDF , WDM
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining WDM Information

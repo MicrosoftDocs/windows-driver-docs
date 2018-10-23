@@ -2,11 +2,8 @@
 title: Hyper-V Extensible Switch Port and Network Adapter States
 description: Hyper-V Extensible Switch Port and Network Adapter States
 ms.assetid: 1E2075E3-D7CC-4364-ABB2-D5969DB361B5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Port and Network Adapter States

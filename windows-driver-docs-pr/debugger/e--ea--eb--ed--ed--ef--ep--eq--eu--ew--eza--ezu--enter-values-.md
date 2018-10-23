@@ -3,17 +3,15 @@ title: e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 description: The e* commands enter into memory the values that you specify.This command should not be confused with the ~E (Thread-Specific Command) qualifier.
 ms.assetid: d21b13ac-2268-4218-b562-4c466956b05d
 keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
@@ -23,7 +21,7 @@ The **e\*** commands enter into memory the values that you specify.
 
 This command should not be confused with the [**~E (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier.
 
-```
+```dbgcmd
 e{b|d|D|f|p|q|w} Address [Values] 
 e{a|u|za|zu} Address "String" 
 e Address [Values]
@@ -150,7 +148,7 @@ Numeric values will be interpreted as numbers in the current radix (16, 10, or 8
 
 When entering byte values with the **eb** command, you can use single straight quotation marks to specify characters. If you want to include multiple characters, each must be surrounded with its own quotation marks. This allows you to enter a character string that is not terminated by a null character. For example:
 
-```
+```dbgcmd
 eb 'h' 'e' 'l' 'l' 'o'
 ```
 
@@ -168,7 +166,6 @@ If you omit the *Values* parameter, you will be prompted for input. The address 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20e,%20ea,%20eb,%20ed,%20eD,%20ef,%20ep,%20eq,%20eu,%20ew,%20eza%20%28Enter%20Values%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

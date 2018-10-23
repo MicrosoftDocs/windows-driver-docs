@@ -6,11 +6,8 @@ ms.assetid: cdcdffb0-4210-4bf0-984e-b0c3234df129
 keywords:
 - IRP completion routines WDK file system , PendingReturned flag
 - PendingReturned flag
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking the PendingReturned Flag
@@ -26,6 +23,5 @@ If a completion routine does not signal an event, it must check the **Irp‑&gt;
  
 
 
---------------------
 
 

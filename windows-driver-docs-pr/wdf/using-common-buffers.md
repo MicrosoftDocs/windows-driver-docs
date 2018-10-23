@@ -8,11 +8,8 @@ keywords:
 - bus-master DMA WDK KMDF , common buffers
 - common buffers WDK KMDF
 - buffers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Common Buffers
@@ -20,7 +17,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-using-common-buffers-df"></a>
+
 
 
 Drivers for DMA devices sometimes must allocate buffer space that both a device and the driver can access. For example, a device might write transfer information, such as byte counts, into this buffer space and the driver can read it to determine the number of bytes that were transferred. This type of buffer space is called a *common buffer*.
@@ -37,7 +34,7 @@ To allocate a common buffer, your driver's [*EvtDriverDeviceAdd*](https://msdn.m
 
 The following code example is taken from the *Init.c* file of the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
 
-```
+```cpp
 // Allocate common buffer for building writes
 DevExt->WriteCommonBufferSize = 
          sizeof( DMA_TRANSFER_ELEMENT) * DevExt->WriteTransferElements;

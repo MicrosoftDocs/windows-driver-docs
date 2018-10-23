@@ -2,11 +2,8 @@
 title: Determining SR-IOV Capabilities
 description: Determining SR-IOV Capabilities
 ms.assetid: 61895987-2469-471E-BB29-FF1CDD2869DC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining SR-IOV Capabilities
@@ -18,7 +15,7 @@ This topic describes how NDIS and overlying drivers determine the single root I/
 
 [Querying SR-IOV Capabilities by Overlying Drivers](#query)
 
-## <a href="" id="report"></a>Reporting SR-IOV Capabilities during *MiniportInitializeEx*
+## Reporting SR-IOV Capabilities during *MiniportInitializeEx*
 
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following SR-IOV capabilities:
@@ -62,7 +59,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-## <a href="" id="query"></a>Querying SR-IOV Capabilities by Overlying Drivers
+## Querying SR-IOV Capabilities by Overlying Drivers
 
 
 NDIS passes the network adapter's currently enabled SR-IOV capabilities to overlying drivers that bind to the network adapter in the following way:

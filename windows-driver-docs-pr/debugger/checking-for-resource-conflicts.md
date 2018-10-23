@@ -3,11 +3,9 @@ title: Checking for Resource Conflicts
 description: Checking for Resource Conflicts
 ms.assetid: c994085c-8610-487f-88a5-f11b4a68ec4a
 keywords: ["Plug and Play (PnP), resource conflicts", "resource conflicts"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking for Resource Conflicts
@@ -20,7 +18,7 @@ This section discusses techniques that can be used to detect resource conflicts.
 
 The first technique involves dumping the arbiter data. The following example examines the arbiter data for the I/O ranges:
 
-```
+```dbgcmd
 kd> !arbiter 1
 
 DEVNODE ff0daf48
@@ -84,7 +82,7 @@ Note that there are two arbiters: one located in the root of the device tree, an
 
 In the following example, the PCI bridge passes I/O 0xD000-0xDFFFF so its arbiter will contain the following two ranges:
 
-```
+```text
 0-CFFFF            Owner 00000000
 E0000-FFFFFFFFFFFFFFFF   Owner 00000000
 ```
@@ -93,7 +91,7 @@ The FFFFFFFFFFFFFFFF is because all arbitrated resources are treated as 64-bit r
 
 **Examples:**
 
-```
+```dbgcmd
 kd> !devobj ff0bb900
 
 Device object (ff0bb900) is for:
@@ -137,7 +135,7 @@ As shown in the example, this operation retrieved the legacy video card that own
 
 A similar technique is required to translate the interrupts:
 
-```
+```dbgcmd
 kd> !arbiter 4
 
 DEVNODE ff0daf48
@@ -158,7 +156,7 @@ Note that there is a single arbiter for interrupts: the root arbiter.
 
 For example, translate the interrupt 3F to an IRQ. First dump the device object, then the devnode:
 
-```
+```dbgcmd
 kd> !devobj ff0cf030
 
 Device object (ff0cf030) is for:
@@ -223,7 +221,7 @@ DevNode 0xff0cfe88 for PDO 0xff0cf030 at level 0x3
 
 For example, try to determine if there is a resource conflict that caused this device not to start, starting with a **devnode**:
 
-```
+```dbgcmd
 kd> !devnode 0xff0d4bc8 6
 
 DevNode 0xff0d4bc8 for PDO 0xff0d4cb0 at level 0
@@ -267,7 +265,7 @@ ing (0)
 
 First, make the assumption that this is an I/O conflict and dump the arbiters (see the preceding example). The result shows that the range 0x3EC-0x3EF is owned by 0xFF0D0B50, which overlaps the serial device's resources request. Next, dump the device object for the owner of this range, and then dump the devnode for the owner:
 
-```
+```dbgcmd
 kd> !devobj ff0d0b50
 
 Device object (ff0d0b50) is for:
@@ -301,7 +299,7 @@ To determine the resources that the PnP Manager assigned to a particular device 
 
 **Example:**
 
-```
+```dbgcmd
 ntoskrnl!IopStartDevice:
 80420212 55               push    ebp
 kd> kb
@@ -369,7 +367,7 @@ DevNode 0xff0cde88 for PDO 0xff0ce870 at level 0x2
 
 Example for PCMCIA:
 
-```
+```dbgcmd
 kd> bp pcmcia!pcmciastartpccard
 Loading symbols for 0x8039d000       pcmcia.sys ->   pcmcia.sys
 kd> kb
@@ -415,7 +413,6 @@ kd> g
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Checking%20for%20Resource%20Conflicts%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

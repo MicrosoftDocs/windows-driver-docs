@@ -8,11 +8,8 @@ keywords:
 - filter drivers WDK storage , DriverEntry
 - SFD WDK storage , DriverEntry
 - DriverEntry WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's DriverEntry Routine
@@ -30,6 +27,5 @@ For more information about a PnP driver's [*DriverEntry*](https://msdn.microsoft
  
 
 
---------------------
 
 

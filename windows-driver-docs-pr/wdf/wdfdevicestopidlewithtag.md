@@ -5,11 +5,8 @@ description: The WdfDeviceStopIdleWithTag macro increments the power reference c
 ms.assetid: 792A5EA8-5273-4284-B0EE-01BE1DCB9863
 keywords:
  - WdfDeviceStopIdleWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfDeviceStopIdleWithTag macro
@@ -93,7 +90,7 @@ You can view the tag, line number, and file name values by using the [**!wdftagt
 
 Use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags on and locate the link to [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) in the output:
 
-```
+```cpp
 kd> !wdfdevice <handle> f 
 ```
 

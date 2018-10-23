@@ -3,11 +3,8 @@ title: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 author: windows-driver-content
 description: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 ms.assetid: 5449A10A-17BC-40CB-A8FC-19F867CFC9D0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR
@@ -18,7 +15,7 @@ The **EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR** structure provides
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     UINT8          Length;
@@ -71,6 +68,5 @@ The total number of bytes this endpoint will transfer every service interval (SI
  
 
 
---------------------
 
 

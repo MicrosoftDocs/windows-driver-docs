@@ -9,11 +9,8 @@ keywords:
 - public release driver signing WDK , SPC
 - release signing WDK , SPC
 - cross-certificate WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Software Publisher Certificate
@@ -51,13 +48,13 @@ To create a .*pfx* file from the pair of files issued by the CA, follow these in
 
 -   To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](https://msdn.microsoft.com/library/windows/hardware/ff550672) command at a command prompt:
 
-    ```
+    ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc myspcfile.spc -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 
 -   To convert a *.pvk* file and a *.cer* file, to a *.pfx* file, use the following Pvk2Pfx command at a command prompt:
 
-    ```
+    ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc mycerfile.cer -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 

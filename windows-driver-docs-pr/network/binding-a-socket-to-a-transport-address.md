@@ -8,11 +8,8 @@ keywords:
 - binding sockets WDK Winsock Kernel
 - local transport address bindings WDK Winsock Kernel
 - transport addresses WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Binding a Socket to a Transport Address
@@ -30,7 +27,7 @@ A socket can be bound to a local wildcard address. For more information about th
 
 The following code example shows how a WSK application can bind a listening socket to a local transport address.
 
-```
+```C++
 // Prototype for the bind IoCompletion routine
 NTSTATUS
   BindComplete(

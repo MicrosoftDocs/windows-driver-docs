@@ -2,11 +2,8 @@
 Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
 title: Talking to USB devices, start to finish (UWP app)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Talking to USB devices, start to finish (UWP app)
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 -   [**Windows.Devices.Enumeration**](https://msdn.microsoft.com/library/windows/apps/br225459)
 -   [**Windows.Devices.Background**](https://msdn.microsoft.com/library/windows/apps/dn263409)
 
-Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.
+Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data streams from the device, and poll the device for interrupt data.
 
 Here we describe, how your UWP app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
 
@@ -405,7 +402,5 @@ Learn about how to make your apps stay responsive when they do work that might t
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Talking%20to%20USB%20devices,%20start%20to%20finish%20%28Windows%20Store%20app%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

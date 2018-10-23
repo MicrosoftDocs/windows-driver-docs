@@ -3,17 +3,15 @@ title: Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 description: The VIDEO_DRIVER_DEBUG_REPORT_REQUEST bug check has a value of 0x000000AD. This bug check indicates that the video port created a non-fatal minidump on behalf of the video driver during run time.
 ms.assetid: eedde484-584b-478b-9429-a9c78bb62c1e
 keywords: ["Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST", "VIDEO_DRIVER_DEBUG_REPORT_REQUEST"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAD: VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST
@@ -21,7 +19,7 @@ api_type:
 
 The VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST bug check has a value of 0x000000AD. This bug check indicates that the video port created a non-fatal minidump on behalf of the video driver during run time.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST Parameters
 

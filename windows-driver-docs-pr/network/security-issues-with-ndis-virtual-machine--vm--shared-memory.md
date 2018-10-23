@@ -2,17 +2,14 @@
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 ms.assetid: 42b903b0-6729-4314-9305-9345fff9b2ba
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Issues with NDIS Virtual Machine (VM) Shared Memory
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This topic discusses the potential security issues involved with allocating shared memory from a virtual machine (VM) for virtual machine queue (VMQ) receive buffers. The topic includes the following sections:
@@ -43,7 +40,7 @@ However, when VMQ is configured to use shared memory, the network adapter uses D
 
 In Windows Server 2008 R2, before the VSP configures a VM queue to use shared memory that is allocated from the VM address space, it uses the following filtering test for the queue.
 
-```
+```syntax
 (MAC address == x) && (VLAN identifier == n)
 ```
 

@@ -2,11 +2,8 @@
 Description: Interfaces on a composite USB device can be grouped in collections. The USB Generic Parent Driver (Usbccgp.sys) can enumerate interface collections in four ways.
 title: Enumeration of Interface Collections on USB Composite Devices
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumeration of Interface Collections on USB Composite Devices
@@ -75,7 +72,7 @@ WMCDC devices consist of multiple functions that are grouped into *logical hands
 
 The Windows WMCDC architecture uses native Windows drivers to manage the functions of your WMCDC device. For example, you can use the Windows telephony application program interface (TAPI) subsystem to manage the voice and data/fax modem functions of your device and the Windows network driver interface specification (NDIS) subsystem to manage the device's Ethernet LAN function. Furthermore, you can manage some functions, such as an Object Exchange Protocol (OBEX) function, in user-mode software with the assistance of the [WinUSB](winusb.md) (Winusb.sys).
 
-The following figure shows an example driver stack for a WMCDC device.
+This image shows an example driver stack for a WMCDC device.
 
 ![sample device configuration and driver stack](images/wmcdc-architecture.png)
 
@@ -85,7 +82,7 @@ In the preceding figure, the WMCDC device contains a single logical handset: an 
 
 The USB stack does not automatically support WMCDC. You must provide an INF file that loads an instance of Usbccgp.sys. The INF file must contain an **AddReg** section that sets the **EnumeratorClass** registry value in the software key that is associated with Usbccgp.sys to a REG\_BINARY value that is constructed from three numbers: 0x02, 0x00, and 0x 00. The following code example from an example INF file illustrates how to set **EnumeratorClass** to the appropriate value.
 
-```
+```cpp
 [CCGPDriverInstall.NT]
 Include=usb.inf
 Needs=Composite.Dev.NT
@@ -149,19 +146,19 @@ There are two control models whose enumeration characteristics are configurable 
 
 For example, to clear both bits (set them to 0), your INF file should have the following line in a **DDInstall.AddReg** section.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000000
 ```
 
 To set both bits to 1, your INF file should have the following line.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000011
 ```
 
 To set both bit 0 to 1 and bit 1 to 0, your INF file should have the following line.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000001
 ```
 
@@ -177,7 +174,7 @@ The Wireless Handset Control Model (WHCM) interface collection in the preceding 
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are set.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags wpd.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags-wpd.png)
 
 Because bit 0 of **CdcFlags** is set to 1, the USB generic parent driver creates a PDO for the WHCM interface collection. Because bit 1 of **CdcFlags** is set to 1, the USB generic parent driver groups the two OBEX collections together and generates a single PDO for both OBEX collections.
 
@@ -185,7 +182,7 @@ You might want to represent OBEX collections with a single PDO at the kernel lev
 
 The following example INF file loads the USB generic parent driver to manage a WMCDC device and instructs the USB generic parent to create PDOs for logical handsets and to create a single PDO for all OBEX collections in the logical handset.
 
-```
+```cpp
 [Version]
 signature="$Windows NT$"
 Class=USB
@@ -1251,7 +1248,7 @@ The hardware ID formats in the preceding topics describe use the following conve
 
 If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see [USB Interface Association Descriptor](usb-interface-association-descriptor.md). This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.
 
-## <a href="" id="hardware-ids"></a> Hardware IDs
+##  Hardware IDs
 
 
 `USB\VID_v(4)&PID_p(4)&Rev_r(4)&MI_z(2)`
@@ -1323,7 +1320,5 @@ In these compatible IDs, c(2), s(2), and p(2) contain values that are taken, res
 [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Enumeration%20of%20Interface%20Collections%20on%20USB%20Composite%20Devices%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -9,11 +9,8 @@ keywords:
 - monitor configurations WDK display , persisted
 - video present networks WDK display , about IViewHelper
 - VidPN WDK display , about IViewHelper
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using an IViewHelper Clone-View COM Object
@@ -25,7 +22,7 @@ Errors from a [Video Present Network (VidPN)](multiple-monitors-and-video-presen
 
 TMM determines the [IViewHelper](https://msdn.microsoft.com/library/windows/hardware/ff568164) COM interface object through the **UserModeDriverGUID** string registry value. Hardware vendors should add this value under the registry keys that the **DeviceKey** member of the DISPLAY\_DEVICE structure specifies. A call to the Win32 **EnumDisplayDevices** function returns this registry key information in DISPLAY\_DEVICE that the *lpDisplayDevice* parameter points to. If multiple **DeviceKey** names exist, this value should appear under each of those keys. The following is an example of a device key and the **UserModeDriverGUID** string registry value:
 
-```
+```cpp
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{7661971C-A9BD-48B5-ACBC-298A8826535D}\0000]
 "UserModeDriverGUID"="{YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY}"
 ```
@@ -38,7 +35,6 @@ You should only copy and register the correctly compiled versions of [IViewHelpe
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20an%20IViewHelper%20Clone-View%20COM%20Object%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

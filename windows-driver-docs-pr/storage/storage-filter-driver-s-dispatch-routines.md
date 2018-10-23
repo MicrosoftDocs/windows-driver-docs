@@ -8,11 +8,8 @@ keywords:
 - filter drivers WDK storage , dispatch routines
 - SFD WDK storage , dispatch routines
 - dispatch routines WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's Dispatch Routines
@@ -131,6 +128,5 @@ For more information about *BuildRequest* and *SplitTransferRequest* routines, s
  
 
 
---------------------
 
 

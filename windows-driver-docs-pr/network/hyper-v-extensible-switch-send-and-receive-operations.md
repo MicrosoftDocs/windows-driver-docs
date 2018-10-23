@@ -2,11 +2,8 @@
 title: Hyper-V Extensible Switch Send and Receive Operations
 description: Hyper-V Extensible Switch Send and Receive Operations
 ms.assetid: 3BC59344-CF8E-436F-A1C9-883707990C7D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Send and Receive Operations

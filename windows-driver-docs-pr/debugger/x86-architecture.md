@@ -3,11 +3,9 @@ title: x86 Architecture
 description: x86 Architecture
 ms.assetid: 42c62647-7c9a-496e-839f-91283db73a29
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # x86 Architecture
@@ -42,11 +40,11 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ecx</strong></p></td>
-<td align="left"><p>Count register</p></td>
+<td align="left"><p>Counter register</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>edx</strong></p></td>
-<td align="left"><p>Double-precision register</p></td>
+<td align="left"><p>Data register - can be used for I/O port access and arithmetic functions</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>esi</strong></p></td>
@@ -211,7 +209,7 @@ The following is a list of calling conventions used on the x86 architecture:
 
 Here is a sample debugger register display:
 
-```
+```dbgcmd
 eax=00000000 ebx=008b6f00 ecx=01010101 edx=ffffffff esi=00000000 edi=00465000
 eip=77f9d022 esp=05cffc48 ebp=05cffc54 iopl=0         nv up ei ng nz na po nc
 cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000286
@@ -330,7 +328,7 @@ In the Registers window of WinDbg, the flag code is used to view or alter flags.
 
 Here is an example. In the preceding register display, the flag status **ng** appears. This means that the sign flag is currently set to 1. To change this, use the following command:
 
-```
+```dbgcmd
 r sf=0
 ```
 
@@ -494,7 +492,7 @@ NAE</td>
 
 Conditions are typically used to act on the result of a **cmp** or **test** instruction. For example,
 
-```
+```asm
 cmp eax, 5
 jz equal
 ```
@@ -616,7 +614,6 @@ The **lock** prefix should not be used for unaligned memory accesses.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20x86%20Architecture%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -9,11 +9,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power states
@@ -27,7 +24,7 @@ The NFC CX driver supports device power states D0 and D3. The state diagram belo
 
 Furthermore, the built-in idle detection logic of UMDF is used to power manager the device. During initialization, the WdfDevice is assigned its S0 Idle settings as follows:
 
-```
+```cpp
 WdfDeviceAssignS0IdleSettings(
     IdleCannotWakeFromS0,
     PowerDeviceD3,

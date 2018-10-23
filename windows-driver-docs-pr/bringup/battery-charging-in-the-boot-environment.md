@@ -3,11 +3,8 @@ title: Battery charging in the boot environment for Windows 10 Mobile
 author: windows-driver-content
 description: Battery charging in the boot environment for Windows 10 Mobile
 ms.assetid: 5aa1ef68-6939-4896-aabd-d499ba23f89f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Battery charging in the boot environment for Windows 10 Mobile
@@ -50,7 +47,7 @@ The following diagram illustrates this components involved with the boot battery
 
 ![pre-boot battery charging flow](images/oem-preboot-battery-flow.png)
 
-## <a href="" id="batterychargingapp"></a>Charging states supported by the Microsoft-provided battery charging application
+## Charging states supported by the Microsoft-provided battery charging application
 
 
 When the boot battery charging process reaches the UEFI battery charging application, the device can enter several different states depending on how it is configured. These states are called *threshold charging* and *power-off charging*.
@@ -116,7 +113,7 @@ The following steps illustrate the corresponding UI flow while power-off chargin
 
     ![low battery screen oem logo](images/oem-battery-charge-ui-oem-logo.png)
 
-## <a href="" id="thresholds"></a>Battery charging thresholds
+## Battery charging thresholds
 
 
 Microsoft has defined several battery charging thresholds to ensure correct battery charging user experience. Some of these thresholds must be implemented by the OEM to ensure correct battery charging behavior. The following diagram illustrates how each of the charging thresholds fit together (this diagram is not drawn to scale).
@@ -177,7 +174,7 @@ The left side of the diagram shows all thresholds that affect the user experienc
 <tr class="even">
 <td><p>Main OS shut down threshold</p></td>
 <td><p>This is the threshold at which the software safely shuts the device off. It is required to prevent system memory corruption.</p></td>
-<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the [BATTERY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa372661.aspx) struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
+<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the [BATTERY_INFORMATION](https://msdn.microsoft.com/library/windows/desktop/aa372661.aspx) struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Hardware shut down threshold</p></td>
@@ -193,6 +190,5 @@ The left side of the diagram shows all thresholds that affect the user experienc
 [Architecture of the UEFI battery charging application provided by Microsoft](architecture-of-the-uefi-battery-charging-application.md)  
 [Boot and UEFI](boot-and-uefi.md)  
 
---------------------
 
 

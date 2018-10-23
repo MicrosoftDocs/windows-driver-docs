@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Building and Deploying the Localized MOF File
 ms.assetid: 3a741dc6-a789-44e1-9d68-cdb41b7161ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "MUI versions WDK WMI", "master MOF files WDK WMI", "languages WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building and Deploying the Localized MOF File
 
 
-## <a href="" id="ddk-building-and-deploying-the-localized-mof-file-kg"></a>
+
 
 
 International versions of Windows XP and later versions of the operating system come in two flavors — single-language (localized) versions, and Multilanguage User Interface (MUI) versions. An MUI version of Windows can support several languages simultaneously.
@@ -33,7 +30,7 @@ Driver writers can use one master MOF text file to contain the basic class, and 
 
 You can use the [MOF compiler](compiling-a-driver-s-mof-file.md) to generate a file containing the language-neutral classes as well as a file to contain the amended classes for a particular language.
 
-```
+```cpp
 mofcomp -amendment:namespace [ -MOF:mof] [ -MFL:mfl] masterfile
 ```
 
@@ -41,7 +38,7 @@ The *namespace* parameter is of the form MS\_*XXX*, where *XXX* is the LCID for 
 
 When building your driver on NT-based operating systems, you can merge the two files by using the copy command. On Windows 98/Me, the copy command does not correctly append Unicode files, but the following command can be used.
 
-```
+```cpp
 wmimofck localizedfile -ymof -zmfl
 ```
 
@@ -49,7 +46,7 @@ You can combine any number of languages into a single text file.
 
 The localized file can then be compiled into a binary file by the same method as for the MOF files that have not been localized:
 
-```
+```cpp
 mofcomp -B:binaryfile localizedfile
 ```
 
@@ -63,19 +60,19 @@ If the driver image will contain every supported language, there is a simpler wa
 
 When writing the combined MOF text file, driver writers must precede each amended class declaration with a **\#pragma** directive as follows
 
-```
+```cpp
 #pragma namespace ("namespace")
 ```
 
 where `namespace` is the correct namespace for the declaration. For example, the amended class declaration for American English must be preceded with a declaration of the form:
 
-```
+```cpp
 #pragma namespace ("\\\\.\\root\\wmi\\ms_409")
 ```
 
 For example, you declare a class and its amendments as follows.
 
-```
+```cpp
 #pragma namespace ("\\\\.\\root\\wmi)
 
 [guid(xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx)]
@@ -97,7 +94,5 @@ Using this approach, building the binary MOF file is identical to the nonlocaliz
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Building%20and%20Deploying%20the%20Localized%20MOF%20File%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -7,17 +7,14 @@ keywords:
 - property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - DIF_ADDPROPERTYPAGE_ADVANCED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specific Requirements for Device Property Page Providers (Co-Installers)
 
 
-## <a href="" id="ddk-handling-dif-addpropertypage-advanced-requests-dg"></a>
+
 
 
 A [co-installer](writing-a-co-installer.md) that provides one or more custom device property pages must handle the [**DIF_ADDPROPERTYPAGE_ADVANCED**](https://msdn.microsoft.com/library/windows/hardware/ff543656) device installation function (DIF) code. Device Manager issues this request when a user clicks on the **Properties** tab of a device in Device Manager or in Control Panel.

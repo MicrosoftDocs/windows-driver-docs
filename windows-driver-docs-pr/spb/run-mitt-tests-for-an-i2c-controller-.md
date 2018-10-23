@@ -3,11 +3,8 @@ title: I2C controller tests in MITT
 author: windows-driver-content
 description: I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 ms.assetid: E40B9ABB-B119-4EC1-A383-EB96CC350A25
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I2C controller tests in MITT
@@ -57,7 +54,7 @@ I²C test modules that are included in the MITT software package can be used to 
 
 6.  Use the **RESET** button to power cycle the MITT board. If the wire connections to the I²C controller are correct, **LD7** (SDA indicator) and **LD6** (SCL indicator) turn on. If either LED does not turn on, there is a wiring issue because either SDA or, SCL, or both are pulled low.
 
-## <a href="" id="test-driver-and-acpi-configuration--"></a>Test driver and ACPI configuration
+## Test driver and ACPI configuration
 
 
 Perform these steps on the system under test that has the I²C controller:
@@ -155,7 +152,7 @@ Perform these steps on the system under test that has the I²C controller:
 
      
 
-## <a href="" id="i2c-automation-tests--"></a>I²C automation tests
+## I²C automation tests
 
 
 1.  Create a folder on the system under test.
@@ -177,7 +174,7 @@ You are now ready to run I²C tests. You can run a single test, all tests at onc
 
 -   Run tests manually by using SPBCmd.exe tool included in the MITT software package.
 
-## <a href="" id="i2c-adapter-schematic"></a>I²C adapter schematic
+## I²C adapter schematic
 
 
 ![i2c schematic](images/i2c-schematic.png)
@@ -185,6 +182,5 @@ You are now ready to run I²C tests. You can run a single test, all tests at onc
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

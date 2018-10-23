@@ -2,11 +2,9 @@
 title: Customizing Debugger Output Using DML
 description: The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions.
 ms.assetid: 04984510-B95F-405F-81DF-E9D0673210B4
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing Debugger Output Using DML
@@ -52,7 +50,7 @@ DML content roughly follows the XML/HTML rules for special characters. The chara
 
 would be converted to the following DML.
 
-```
+```text
 &quot;Alice & Bob think 3 &lt 4&quot;
 ```
 
@@ -65,14 +63,14 @@ A significant departure from XML/HTML rules is that DML text can include C progr
 
 Suppose the file C:\\Dml\_Experiment.txt contains the following lines.
 
-```
+```text
 My DML Experiment
 <link cmd="lmD musb*">List modules that begin with usb.</link>
 ```
 
 The following command displays the text and link in the Command Browser window.
 
-```
+```dbgcmd
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
@@ -87,7 +85,7 @@ If you click the **List modules that begin with usb** link, you see output simil
 
 Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -109,7 +107,7 @@ Conversion to plain text drops the tags.
 
 **Example**
 
-```
+```text
 <b> Handy Links </b>
 <link cmd="!dml_proc">Display process information with DML rendering.</link>
 <link cmd="kM">Display stack information with DML rendering.</link>
@@ -119,7 +117,7 @@ Conversion to plain text drops the tags.
 
 This example shows the use of the alt attribute to create text that will appear when you hover over the DML link.
 
-```
+```text
 <b>Hover Example</b>
 <link cmd="lmD" alt="This link will run the list modules command and display the output in DML format">LmD</link>
 ```
@@ -136,7 +134,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -155,7 +153,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define two commands with a regular click.
 
-```
+```text
 <b>Exec Sample</b>
 <exec cmd="!dml_proc">Display process information with DML rendering.</exec>
 <exec cmd="kM">Display stack information with DML rendering.</exec>
@@ -173,7 +171,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to bold text.
 
-```
+```text
 <b>This is bold Text</b>
 ```
 
@@ -189,13 +187,13 @@ Conversion to plain text drops the tags.
 
 This example shows how to italicize text.
 
-```
+```text
 <i>This is italicized Text</i>
 ```
 
 ### <span id="_u_"></span><span id="_U_"></span>&lt;u&gt;
 
-*&lt;i&gt;underlined text&lt;/i&gt;*
+*&lt;u&gt;underlined text&lt;/u&gt;*
 
 This tag requests underlined text. The &lt;b&gt;, &lt;i&gt; and &lt;u&gt; can be nested to have a mix of the properties.
 
@@ -205,7 +203,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to underlined text.
 
-```
+```text
 <u>This is underlined Text</u>
 ```
 
@@ -213,7 +211,7 @@ This example shows how to underlined text.
 
 This example shows how to combine tags to bold, underline and italicize text.
 
-```
+```text
 <b><u><i>This is bold, underlined and italizized text. </i></u></b> 
 ```
 
@@ -512,7 +510,7 @@ The following table summarizes the use of the %Y format specifier.
 
 This code snippet illustrates the use of the %Y format specifier.
 
-```
+```cpp
 HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 {
     HRESULT hr = S_OK;
@@ -546,7 +544,7 @@ HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 
 This sample code would generate the following output.
 
-```
+```dbgcmd
 0:004> !testout
 DML/NORMAL Y{t}: "Hello <World>"
 DML/NORMAL Y{T}: "Hello <World>"
@@ -566,7 +564,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 
 An additional control flag, DEBUG\_OUTCTL\_AMBIENT\_DML, allows specification of DML context text without modifying any out output control attributes. DEBUG\_OUTCTL\_AMBIENT\_TEXT has been added also as a more-descriptive alias for the previously-existing DEBUG\_OUTCTL\_AMBIENT. The output control flags are defined in dbgeng.h.
 
-```
+```cpp
 #define DEBUG_OUTCTL_DML               0x00000020
 
 // Special values which mean leave the output settings
@@ -584,7 +582,7 @@ The dbgeng has been enhanced to scan debuggee output for a special marker – �
 
 This example shows a mix of plain and DML output.
 
-```
+```text
 OutputDebugString(“This is plain text\n<?dml?>This is <col fg=\”emphfg\”>DML</col> text\n”);
 ```
 
@@ -605,7 +603,7 @@ The new methods are:
 
     The flags are defined in dbgeng.h as shown here.
 
-    ```
+    ```cpp
     // IDebugOutputCallbacks2 interest mask flags.
     //
 
@@ -637,7 +635,6 @@ The dbgeng will automatically convert between plain text and DML as necessary. F
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Customizing%20Debugger%20Output%20Using%20DML%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

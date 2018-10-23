@@ -3,17 +3,15 @@ title: Bug Check 0x35 NO_MORE_IRP_STACK_LOCATIONS
 description: The NO_MORE_IRP_STACK_LOCATIONS bug check has a value of 0x00000035. This bug check occurs when the IoCallDriver packet has no more stack locations remaining.
 ms.assetid: 1a8d5a1b-70aa-4846-bafe-0fef041570c1
 keywords: ["Bug Check 0x35 NO_MORE_IRP_STACK_LOCATIONS", "NO_MORE_IRP_STACK_LOCATIONS"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - NO_MORE_IRP_STACK_LOCATIONS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x35: NO\_MORE\_IRP\_STACK\_LOCATIONS
@@ -21,7 +19,7 @@ api_type:
 
 The NO\_MORE\_IRP\_STACK\_LOCATIONS bug check has a value of 0x00000035. This bug check occurs when the **IoCallDriver** packet has no more stack locations remaining.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## NO\_MORE\_IRP\_STACK\_LOCATIONS Parameters
 

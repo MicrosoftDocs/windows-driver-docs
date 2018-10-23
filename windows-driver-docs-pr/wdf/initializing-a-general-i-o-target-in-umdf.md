@@ -6,11 +6,8 @@ ms.assetid: cf1b39c3-4c82-411b-8eef-117ac0fe793e
 keywords:
 - general I/O targets WDK UMDF , initializing
 - initializing general I/O targets WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a General I/O Target in UMDF

@@ -10,11 +10,8 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Keyboard and mouse HID client drivers
@@ -66,9 +63,7 @@ Microsoft provides the following guidance for IHVs writing drivers:
         -   Filter drivers are allowed in the following scenarios:
             -   As an upper filter to kbdhid/mouhid
             -   As an upper filter to kbdclass/mouclass
-        -   Filter drivers are NOT recommended in the following scenarios:
-            -   As a lower filter to the HID transport (e.g. HIDI2C)
-            -   As a filter between HIDCLASS and HID Transport minidriver
+        -   Filter drivers are _not_ recommended as a filter between HIDCLASS and HID Transport minidriver
 
     2.  Function Drivers: Alternatively vendors can create a function driver (instead of a filter driver) but only for vendor specific HID PDOs (with a user mode service if necessary).
 
@@ -94,9 +89,9 @@ See the following for information about keyboard layouts:
 
 -   Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
--   Sample keyboard [layouts](http://go.microsoft.com/fwlink/p/?linkid=256128) in the MSDN Code Gallery.
+-   Sample keyboard [layouts](http://go.microsoft.com/fwlink/p/?linkid=256128).
 
-To visualize the layout of a specific keyboard, please review to the “Windows Keyboard Layout” article in MSDN.
+To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](https://docs.microsoft.com/globalization/windows-keyboard-layouts).
 
 For additional details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
 
@@ -155,7 +150,7 @@ Note that this is applicable to PS/2 mice only and is not applicable to HID mice
 | 1    | 0   | 0   | Ysign | Xsign | 1   | M   | R   | L   | X/Y signs and R/L/M buttons           |
 | 2    | X7  | X6  | X5    | X4    | X3  | X2  | X1  | X0  | X data byte                           |
 | 3    | Y7  | Y6  | Y5    | Y4    | Y3  | Y2  | Y1  | Y0  | Y data bytes                          |
-| 4    | 0   | 0   | B5    | B4    | Z3  | Z2  | Z1  | Z0  | Z/wheel data data and buttons 4 and 5 |
+| 4    | 0   | 0   | B5    | B4    | Z3  | Z2  | Z1  | Z0  | Z/wheel data and buttons 4 and 5 |
 
  
 
@@ -178,8 +173,9 @@ Kbfiltr is designed to be used with Kbdclass, the system class driver for keyboa
 
 For more information about Kbfiltr operation, see the following:
 
-The ntddkbd.h WDK header file. 
-The sample [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) source code in the MSDN Code Gallery. 
+* The ntddkbd.h WDK header file. 
+
+* The sample [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) source code. 
 
 ### Kbfiltr IOCTLs
 
@@ -557,7 +553,5 @@ VOID MouFilter_ServiceCallback(
 </p>
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Keyboard%20and%20mouse%20HID%20client%20drivers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

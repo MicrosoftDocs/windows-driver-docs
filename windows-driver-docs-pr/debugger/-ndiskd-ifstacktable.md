@@ -3,17 +3,15 @@ title: ndiskd.ifstacktable
 description: The ndiskd.ifstacktable extension displays the network interface stack table (ifStackTable).
 ms.assetid: 8166C088-9366-49C4-9C3A-0089807352A9
 keywords: ["ndiskd.ifstacktable Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.ifstacktable
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ifstacktable
@@ -23,7 +21,7 @@ The **!ndiskd.ifstacktable** extension displays the network interface stack tabl
 
 For more information about the interface stack table, see [Maintaining a Network Interface Stack](https://msdn.microsoft.com/windows/hardware/drivers/network/maintaining-a-network-interface-stack).
 
-```
+```console
 !ndiskd.ifstacktable 
 ```
 
@@ -41,7 +39,7 @@ Examples
 
 Run the **!ndiskd.ifstacktable** command to see the ifStackTable.
 
-```
+```console
 3: kd> !ndiskd.ifstacktable
 
 
@@ -57,7 +55,7 @@ NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.x filter inter
 
 Since there are no NDIS MUX Intermediate drivers installed on this example system, the ifStackTable only shows the stack relationships that NDIS has provided. In the following example, clicking on the handle for the Lower interface of the third row (handle ffffdf801494c010, Lower IfIndex 16) shows the interface for the QoS Packet Scheduler.
 
-```
+```console
 3: kd> !ndiskd.interface ffffdf801494c010
 
 
@@ -108,7 +106,7 @@ STATE
 
 Continuing the same example, clicking the handle for the Higher interface of the third row (handle ffffdf801494ba20, Higher IfIndex 17) shows the interface for the WFP 802.3 MAC Layer LightWeight Filter.
 
-```
+```console
 3: kd> !ndiskd.interface ffffdf801494ba20
 
 
@@ -182,7 +180,6 @@ This shows that the WFP 802.3 MAC Layer LightWeight Filter sits above the QoS Pa
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.ifstacktable%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

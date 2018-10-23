@@ -2,11 +2,8 @@
 Description: This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.
 title: How to use the continuous reader for reading data from a USB pipe
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to use the continuous reader for reading data from a USB pipe
@@ -25,14 +22,14 @@ The continuous reader is not automatically power managed by the framework. This 
 
 ### Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
 ### Prerequisites
 
 Before the client driver can use the continuous reader, make sure that these requirements are met:
 
--   Your USB device must have an IN endpoint. Check the device configuration in [USBView](http://msdn.microsoft.com/library/ff560019(VS.85).aspx). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
+-   Your USB device must have an IN endpoint. Check the device configuration in [USBView](https://msdn.microsoft.com/library/ff560019(VS.85).aspx). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
 -   The client driver must have created the framework USB target device object.
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
@@ -72,7 +69,7 @@ Instructions
 
     The following example code configures the continuous reader for the specified target pipe object.
 
-    ```
+    ```cpp
     NTSTATUS FX3ConfigureContinuousReader(
         _In_ WDFDEVICE Device,
         _In_ WDFUSBPIPE Pipe)
@@ -138,7 +135,7 @@ Instructions
 
     The following example code shows the completion routine implementation.
 
-    ```
+    ```cpp
     EVT_WDF_USB_READER_COMPLETION_ROUTINE FX3EvtReadComplete;
 
     VOID FX3EvtReadComplete(
@@ -183,7 +180,7 @@ Instructions
 
     The following example code shows a failure routine implementation.
 
-    ```
+    ```cpp
     EVT_WDF_USB_READERS_FAILED FX3EvtReadFailed;  
       
     BOOLEAN  
@@ -220,7 +217,7 @@ Instructions
 
 The following example code configures the continuous reader for the specified target pipe object.
 
-```
+```cpp
 
 EVT_WDF_DEVICE_D0_ENTRY FX3EvtDeviceD0Entry;
 
@@ -287,7 +284,7 @@ Before you start using the continuous reader, you must configure the reader in y
 
 The following example code configures the continuous reader for the specified target pipe object. The example assumes that the target pipe object specified by the caller is associated with an IN endpoint. The continuous reader is configured to read USBD\_DEFAULT\_MAXIMUM\_TRANSFER\_SIZE bytes; to use the default number of pending requests using by the framework; to invoke the client driver-supplied completion and failure callback methods. Buffer received will not contain any header or trailer data.
 
-```
+```cpp
 HRESULT CDeviceCallback::ConfigureContinuousReader (IWDFUsbTargetPipe* pFxPipe)
 {
     if (!pFxPipe)
@@ -381,7 +378,7 @@ The continuous reader does not use power-managed queues to submit requests. Ther
 After the device enters a working state (**D0**), the framework calls the client-driver supplied D0-entry callback method that starts the target pipe object. When the device leaves the **D0** state, the framework calls the D0-exit callback method. The target pipe object completes the number of pending read requests, configured by the client driver, and stops accepting new requests.
 The following example code implements the [IPnpCallback](https://msdn.microsoft.com/library/windows/hardware/ff556762) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,
@@ -414,7 +411,7 @@ private:
 
 The following example code shows how to get a pointer to the IWDFIoTargetStateManagement interface of the target pipe object in the IPnpCallback::OnPrepareHardware method
 
-```
+```cpp
    //Enumerate the endpoints and get the interrupt pipe.
 
     for (UCHAR index = 0; index < NumEndpoints; index++)
@@ -454,7 +451,7 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
 
 The following example code shows how to get a pointer to the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface of the target pipe object in the [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766) method.
 
-```
+```cpp
  HRESULT CDeviceCallback::OnD0Entry(
     IWDFDevice*  pWdfDevice,
     WDF_POWER_DEVICE_STATE  previousState
@@ -509,7 +506,7 @@ Each time that data is available on the endpoint on the device, the target pipe 
 
 The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff556908) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,   
@@ -547,7 +544,7 @@ private:
 
 The following example code shows the QueryInterface implementation of the device callback object.
 
-```
+```cpp
 HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 {
     if (ppvObject == NULL)
@@ -589,7 +586,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 
 The following example code shows how to get data from the buffer returned by [**IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556910). Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containsng data and prints the contents on the debugger output.
 
-```
+```cpp
  VOID CDeviceCallback::OnReaderCompletion(
     IWDFUsbTargetPipe* pPipe,
     IWDFMemory* pMemory,
@@ -647,7 +644,7 @@ The client driver can get notifications from the framework when a failure occurs
 
 The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](https://msdn.microsoft.com/library/windows/hardware/ff556914) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,
@@ -687,7 +684,7 @@ private:
 
 The following example code shows the QueryInterface implementation of the device callback object.
 
-```
+```cpp
 HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 {
     if (ppvObject == NULL)
@@ -735,7 +732,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 
 The following example code shows an implementation of a failure callback. If a read request fails, the method prints the error code reported by the framework in the debugger and instructs the framework to reset the pipe and then restart the continuous reader.
 
-```
+```cpp
  BOOL CDeviceCallback::OnReaderFailure(
     IWDFUsbTargetPipe * pPipe,
     HRESULT hrCompletion
@@ -757,7 +754,5 @@ If the client driver does not provide a failure callback and an error occurs, th
 [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)  
 [Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20use%20the%20continuous%20reader%20for%20reading%20data%20from%20a%20USB%20pipe%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

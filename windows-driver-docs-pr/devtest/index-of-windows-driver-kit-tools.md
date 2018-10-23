@@ -18,11 +18,8 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # Index of Windows Driver Kit Tools
@@ -77,8 +74,6 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> No</p></td>
 <td align="left"><p>%Windir%\System32\Dccw.exe</p></td>
 <td align="left"><p>A calibration tool that lets users adjust their display color to be closer to the Windows and World Wide Web international standard red-green-blue (sRGB) color space.</p>
-<p>WHDC Documentation:</p>
-<p>[MCCS Use by Windows 7 Display Color Calibration Tool](http://go.microsoft.com/fwlink/p/?linkid=150003)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GraphEdt (Graphedt.exe)</p>
@@ -86,7 +81,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\tools\x86\graphedt.exe</p>
 <p>%WindowsSdkDir%\tools\x64\graphedt.exe</p></td>
 <td align="left"><p>Builds filter graphs to test streaming audio/video capture drivers.</p>
-<p>MSDN Documentation:</p>
+<p>Documentation:</p>
 <p>[Overview of GraphEdit](http://go.microsoft.com/fwlink/p/?linkid=9230)</p></td>
 </tr>
 <tr class="odd">
@@ -312,7 +307,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Validates the conformance of an XPS file to the XPS and OPC specifications.</p>
 <p>For information about command options, type</p>
 <p><strong>isxps /?</strong> in a Command prompt window.</p>
-<p>For more information, see [isXPS Conformance Tool](http://go.microsoft.com/fwlink/p/?linkid=150004) in the Windows MSDN library.</p></td>
+<p>For more information, see [isXPS Conformance Tool](http://go.microsoft.com/fwlink/p/?linkid=150004).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Looksgood (Looksgood.exe)</p>
@@ -444,12 +439,13 @@ The information in the following tables describes the tools that are useful for 
 </tr>
 <tr class="even">
 <td align="left"><p>ChkINF</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
-<td align="left"><p>A set of Perl scripts that verify the structure and syntax of setup information (INF) files for drivers.</p>
+<p><strong>WDK tool:</strong> Deprecated</p></td>
+<td align="left"><p>Previous path:</p>
+<p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
+<td align="left"><p>ChkInf has been deprecated. Instead, use [InfVerif](infverif.md)</p>
 <p>WDK Documentation:</p>
-<p>[ChkINF](chkinf.md)</p>
-<p>[Using ChkINF with Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542789)</p></td>
+<p>[InfVerif](infverif.md)</p>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Computer Hardware Identification Tool (ComputerHardwareIds.exe)</p>
@@ -472,7 +468,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\tools\x64\DC2WMIParser.exe</p>
 <p>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe</p></td>
 <td align="left"><p>DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</p>
-<p>MSDN Documentation:</p>
+<p>Documentation:</p>
 <p>[IRP Logging](http://go.microsoft.com/fwlink/p/?LinkId=698758)</p></td>
 </tr>
 <tr class="odd">
@@ -548,6 +544,18 @@ The information in the following tables describes the tools that are useful for 
 <p>[<strong>Inf2Cat</strong>](inf2cat.md)</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>InfVerif (InfVerif.exe)</p>
+<p><strong>WDK tool:</strong> Yes</p></td>
+<td align="left"><p>c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe</p>
+<td align="left"><p>Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</p>
+<p>WDK Documentation:</p>
+<p>[InfVerif](infverif.md)</p></td>
+</tr>
+
+<tr class="even">
 <td align="left"><p>MakeCat (MakeCat.exe)</p>
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>WDKPath\bin\amd64\MakeCat.exe</p>
@@ -607,7 +615,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>A command-line tool that is used to evaluate system energy efficiency.</p>
 <p>This tool is available in Windows 7 and later versions of Windows.</p>
 <p>Dev Center Documentation:</p>
-[Using PowerCfg to Evaluate System Energy Efficiency](http://go.microsoft.com/fwlink/p/?linkid=168800)
+[Using PowerCfg to Evaluate System Energy Efficiency](http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)
 <p>For information about command options, type</p>
 <p></p>
 <p><strong>PowerCfg /?</strong></p></td>
@@ -858,4 +866,3 @@ You can run the integrated Visual Studio driver development environment on these
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Index%20of%20Windows%20Driver%20Kit%20Tools%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

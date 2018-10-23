@@ -3,17 +3,15 @@ title: ks.objhdr
 description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
 ms.assetid: 105b1c03-fc89-4c0f-91d0-42e88f07c71c
 keywords: ["ks.objhdr Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ks.objhdr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.objhdr
@@ -21,7 +19,7 @@ api_type:
 
 The **!ks.objhdr** extension displays the kernel streaming object header associated with the specified file object.
 
-```
+```dbgcmd
 !ks.objhdr FileObject [Level] [Flags]  
 ```
 
@@ -69,7 +67,7 @@ Levels and flags for **!ks.objhdr** are identical to those described in [**!ks.d
 
 The output from [**!ks.allstreams**](-ks-allstreams.md) and [**!ks.enumdevobj**](-ks-enumdevobj.md) can be used as the input for **!ks.objhdr**. To do this with the *avssamp* sample, for instance, issue the following commands:
 
-```
+```dbgcmd
 kd> !ks.allstreams
 6 Kernel Streaming FDOs found:
     Functional Device 8299be18 [\Driver\smwdm]
@@ -90,7 +88,7 @@ The results of this command might be lengthy. Issue a Ctrl-BREAK (WinDbg) or Ctr
 
 Here's a separate example:
 
-```
+```dbgcmd
 kd> !ks.objhdr 81D828B8 7
 Adjusting file object 81D828B8 to object header 81BC1008
 
@@ -136,7 +134,6 @@ Object Header 81BC1008
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ks.objhdr%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

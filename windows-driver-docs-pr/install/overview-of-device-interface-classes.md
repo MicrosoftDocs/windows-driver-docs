@@ -7,17 +7,14 @@ keywords:
 - device interfaces WDK device installations
 - interfaces WDK device
 - device interface classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Device Interface Classes
 
 
-## <a href="" id="ddk-introduction-to-device-interfaces-dg"></a>
+
 
 
 Any driver of a physical, logical, or virtual device to which user-mode code can direct I/O requests must supply some sort of name for its user-mode clients. Using the name, a user-mode application (or other system component) identifies the device from which it is requesting I/O.

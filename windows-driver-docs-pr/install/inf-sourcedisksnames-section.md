@@ -10,11 +10,8 @@ api_name:
 - INF SourceDisksNames Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF SourceDisksNames Section
@@ -22,9 +19,11 @@ ms.technology: windows-devices
 
 A **SourceDisksNames** section identifies the distribution disks or CD-ROM discs that contain the source files to be transferred to the target computer during installation.
 
-```
+```cpp
 [SourceDisksNames] |
 [SourceDisksNames.x86] | 
+[SourceDisksNames.arm] | (Windows 8 and later versions of Windows)
+[SourceDisksNames.arm64] | (Windows 10 version 1709 and later versions of Windows)
 [SourceDisksNames.ia64] | (Windows XP and later versions of Windows)
 [SourceDisksNames.amd64] (Windows XP and later versions of Windows)
 
@@ -109,7 +108,7 @@ Examples
 
 In the following example, the *write.exe* file is the same for all Windows platforms and is located in the *\\common* subdirectory, under the installation root, on a CD-ROM distribution disc. The *cmd.exe* file is a platform-specific file that is only used on x86-based platforms.
 
-```
+```cpp
 [SourceDisksNames]
 1 = "Windows NT CD-ROM",file.tag,,\common
 
@@ -123,7 +122,7 @@ cmd.exe = 2
 
 The following example uses entries that contain separate specifications for *.tag* files and *.cab* files.
 
-```
+```cpp
 [Version]
 signature = "$Windows NT$"
 Provider = %Msft%

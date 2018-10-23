@@ -6,11 +6,8 @@ ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:
 - IRP dispatch routines WDK file system , completing IRPs
 - completing I/O requests WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing the IRP
@@ -48,6 +45,5 @@ NTSTATUS values are defined in ntstatus.h. These values fall into four categorie
  
 
 
---------------------
 
 

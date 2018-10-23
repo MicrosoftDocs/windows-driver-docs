@@ -2,11 +2,8 @@
 title: Supporting NVGRE in Checksum Offload
 description: This section describes supporting NVGRE in checksum offload
 ms.assetid: 933EE18B-917A-40BC-87AA-0F463615A082
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting NVGRE in Checksum Offload

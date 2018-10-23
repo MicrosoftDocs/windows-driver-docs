@@ -6,11 +6,8 @@ ms.assetid: 09d9c836-1754-4a50-92a3-229a3ae05ccb
 keywords:
 - handles WDK file systems
 - security WDK file systems , minimizing threats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handle Management
@@ -48,6 +45,5 @@ Note that if the Nt variant is used to open a file, then the Nt variant must als
  
 
 
---------------------
 
 

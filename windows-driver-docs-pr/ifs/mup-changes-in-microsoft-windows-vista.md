@@ -13,11 +13,8 @@ keywords:
 - prefix resolution WDK network redirectors
 - prefix cache WDK network redirectors
 - double filtering WDK network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MUP Changes in Microsoft Windows Vista
@@ -103,14 +100,14 @@ The prefix cache size and timeout used by MUP on Windows Vista are now controlle
 
 These registry values can be changed dynamically without a reboot. These registry values are under the following registry key:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\Mup\Parameters.
  
 ```
 
 The ProviderOrder registry value that determines the order in which MUP issues prefix resolution requests to individual redirectors can be changed dynamically without rebooting the system. This registry value is located under the following registry key:
 
-```
+```cpp
 HKLM\CurrentControlSet\Control\NetworkProvider\Order
 ```
 
@@ -153,7 +150,7 @@ Network redirectors should only honor kernel-mode senders of this IOCTL, by veri
 
 MUP uses the QUERY\_PATH\_REQUEST\_EX data structure for the request information.
 
-```
+```cpp
 typedef struct _QUERY_PATH_REQUEST_EX {
   PIO_SECURITY_CONTEXT  pSecurityContext;
  ULONG  EaLength;
@@ -197,7 +194,7 @@ typedef struct _QUERY_PATH_REQUEST_EX {
 
 UNC providers should use the QUERY\_PATH\_RESPONSE data structure for the response information.
 
-```
+```cpp
 typedef struct _QUERY_PATH_RESPONSE {
  ULONG  LengthAccepted;
 } QUERY_PATH_RESPONSE, *PQUERY_PATH_RESPONSE;
@@ -255,6 +252,5 @@ If the network mini-redirector wants to see details of the prefix claim, it can 
  
 
 
---------------------
 
 

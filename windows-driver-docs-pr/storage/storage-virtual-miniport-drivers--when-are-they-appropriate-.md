@@ -3,11 +3,8 @@ title: Storage Virtual Miniport Drivers When Are They Appropriate
 author: windows-driver-content
 description: Storage Virtual Miniport Drivers When Are They Appropriate
 ms.assetid: 45b9eab9-15b8-4244-bd16-e8850211b8bf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Virtual Miniport Drivers: When Are They Appropriate?
@@ -22,6 +19,5 @@ A virtual miniport is inappropriate when it is directly controlling real hardwar
  
 
 
---------------------
 
 

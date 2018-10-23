@@ -8,11 +8,8 @@ keywords:
 - registry WDK device installations , modifying registry keys, co-installers
 - class installers WDK device installations , modifying registry keys
 - co-installers WDK device installations , modifying registry keys
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying Registry Keys by Class Installers and Co-installers

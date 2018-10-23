@@ -4,17 +4,14 @@ description: Sending and receiving data in CoNDIS
 ms.assetid: aad7ccf9-0eaa-4327-b048-268d12593a70
 keywords:
 - virtual connections WDK CoNDIS , data transfers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending and receiving data in CoNDIS
 
 
-## <a href="" id="ddk-sending-and-receiving-data-ng"></a>
+
 
 
 Transferring data involves sending or receiving packets over an established and activated VC.

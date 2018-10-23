@@ -5,17 +5,14 @@ ms.assetid: 73143c2f-4127-41fc-b916-eac87521440a
 keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in an Intermediate Driver with a Connectionless Lower Edge
 
 
-## <a href="" id="ddk-receiving-data-in-an-intermediate-driver-with-a-connectionless-low"></a>
+
 
 
 An intermediate driver with a connectionless lower edge must have a [**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267) function to receive network data.

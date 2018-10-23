@@ -10,17 +10,14 @@ keywords:
 - installing devices WDK , registry
 - Device setup WDK device installations , registry
 - debugging device
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Trees for Devices and Drivers
 
 
-## <a href="" id="ddk-driver-information-in-the-registry-dg"></a>
+
 
 
 The following trees in the registry are of particular interest to driver writers (where **HKLM** represents **HKEY_LOCAL_MACHINE**):

@@ -5,17 +5,14 @@ ms.assetid: 1f1174ba-8b0a-4d43-96c9-2d92f50a22c4
 keywords:
 - miniport drivers WDK networking , CoNDIS
 - NDIS miniport drivers WDK , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS Miniport Driver Status Indications
 
 
-## <a href="" id="ddk-condis-miniport-driver-status-indications-ng"></a>
+
 
 
 Miniport drivers call the [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) function to report a change in the status of a miniport adapter. The miniport driver passes **NdisMCoIndicateStatusEx** a pointer to an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the status information.

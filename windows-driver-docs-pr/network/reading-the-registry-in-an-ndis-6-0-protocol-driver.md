@@ -6,17 +6,14 @@ keywords:
 - NdisOpenConfiguration
 - NdisOpenConfigurationEx
 - registry WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading the Registry in an NDIS 6.0 Protocol Driver
 
 
-## <a href="" id="ddk-reading-the-registry-in-ndis-6-0-protocol-drivers-nd"></a>
+
 
 
 In NDIS 6.0, the [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) function replaces the [**NdisOpenConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff553676) function. **NdisOpenConfigurationEx** receives, as parameters, an NDIS handle and a pointer to a configuration handle.

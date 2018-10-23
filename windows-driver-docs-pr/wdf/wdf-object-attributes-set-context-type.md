@@ -5,11 +5,8 @@ description: The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object'
 ms.assetid: cac8b8f4-cc6b-4e6c-ad0b-dee58e4673ff
 keywords:
  - WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro

@@ -2,11 +2,8 @@
 title: NDIS Selective Suspend Implementation Guidelines
 description: NDIS Selective Suspend Implementation Guidelines
 ms.assetid: 70548C06-B944-4040-AEA2-4FB6098EBA9E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Selective Suspend Implementation Guidelines

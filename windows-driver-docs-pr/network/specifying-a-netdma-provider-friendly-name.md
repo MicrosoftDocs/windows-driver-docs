@@ -6,11 +6,8 @@ keywords:
 - NetDMA provider friendly names WDK networking
 - friendly names WDK NetDMA
 - NetDMA 2.0 WDK networking , friendly names
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying a NetDMA Provider Friendly Name
@@ -20,7 +17,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-specifying-a-netdma-provider-friendly-name-ng"></a>
+
 
 
 For improved manageability and testing, NetDMA 2.0 providers and later must provide a friendly name for the provider in the **FriendlyName** member of the [**NET\_DMA\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff568738) structure.

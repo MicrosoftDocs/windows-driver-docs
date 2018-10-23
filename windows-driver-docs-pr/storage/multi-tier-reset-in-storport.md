@@ -6,11 +6,8 @@ ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
 keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multi-Tier Reset in Storport
@@ -32,6 +29,5 @@ Finally, the bus reset operation is effected through a synchronous callback rout
  
 
 
---------------------
 
 

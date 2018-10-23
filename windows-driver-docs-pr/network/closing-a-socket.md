@@ -7,11 +7,8 @@ keywords:
 - WSK WDK networking , socket closing
 - closing sockets
 - WskCloseSocket
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Closing a Socket
@@ -29,7 +26,7 @@ Calling the **WskCloseSocket** function causes the WSK subsystem to cancel and c
 
 The following code example shows how a WSK application can close a socket.
 
-```
+```C++
 // Prototype for the socket close IoCompletion routine
 NTSTATUS
   CloseSocketComplete(

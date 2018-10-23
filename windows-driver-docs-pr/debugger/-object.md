@@ -3,17 +3,15 @@ title: object
 description: The object extension displays information about a system object.
 ms.assetid: dc6d862b-3246-4d5b-992c-8723a0347f1d
 keywords: ["object Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - object
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !object
@@ -21,7 +19,7 @@ api_type:
 
 The **!object** extension displays information about a system object.
 
-```
+```dbgcmd
 !object Address [Flags] 
 !object Path
 !object 0 Name 
@@ -77,7 +75,7 @@ Kdexts.dll
 
 This example passes the path of the \\Device directory to **!object**. The output lists all objects in the \\Device directory.
 
-```
+```dbgcmd
 0: kd> !object \Device
 Object: ffffc00b074166a0  Type: (ffffe0083b768690) Directory
     ObjectHeader: ffffc00b07416670 (new version)
@@ -99,7 +97,7 @@ Object: ffffc00b074166a0  Type: (ffffe0083b768690) Directory
 
 Choose one of listed objects, say USBPDO-8. Pass the address of USBPDO-8 (ffffe0083b85d060) to **!objec**t. Set *Flags* to 0x0 to get minimal information.
 
-```
+```dbgcmd
 0: kd> !object ffffe0083b85d060 0x0
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -107,7 +105,7 @@ Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
 
 Include name and reference count information for the same object by setting *Flags* to 0x1.
 
-```
+```dbgcmd
 0: kd> !object ffffe0083b85d060 0x1
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -117,7 +115,7 @@ Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
 
 Get optional header information for the same object by setting *Flags* to 0x10.
 
-```
+```dbgcmd
 0: kd> !object ffffe0083b85d060 0x10
 Object: ffffe0083b85d060  Type: (ffffe0083b87df20) Device
     ObjectHeader: ffffe0083b85d030 (new version)
@@ -127,7 +125,7 @@ Optional Headers:
 
 The following example calls **!object** twice for a Directory object. The first time, the contents of the directory are not displayed because the 0x8 flag is not set. The second time, the contents of the directory are displayed because both the 0x8 and 0x1 flags are set (Flags = 0x9).
 
-```
+```dbgcmd
 0: kd> !object ffffc00b07481d00 0x1
 Object: ffffc00b07481d00  Type: (ffffe0083b768690) Directory
     ObjectHeader: ffffc00b07481cd0 (new version)
@@ -148,7 +146,7 @@ Object: ffffc00b07481d00  Type: (ffffe0083b768690) Directory
 
 The following example calls **!object** twice for a SymbolicLink object. The first time, the target of the symbolic link is not displayed because the 0x8 flag is not set. The second time, the target of the symbolic link is splayed because both the 0x8 and 0x1 flags are set (Flags = 0x9).
 
-```
+```dbgcmd
 0: kd> !object ffffc00b07628fb0 0x1
 Object: ffffc00b07628fb0  Type: (ffffe0083b769450) SymbolicLink
     ObjectHeader: ffffc00b07628f80 (new version)
@@ -184,7 +182,6 @@ For information about objects and the object manager, see the Microsoft Windows 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!object%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Appendix 4 Driver Signing Issues
 description: Two known driver signing issues are described below.
 ms.assetid: EC244022-A02B-4AAD-93EE-B9AE3E72A674
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Appendix 4: Driver Signing Issues
@@ -30,7 +27,7 @@ To resolve the issue, you may ask VeriSign to provide a replacement certificate 
 
 Alternatively, you can buy another SHA1 certificate and sign the file with two signatures as shown below if you want to keep both certificates. Note that only .sys files can be dual signed because they are PE files.
 
-```
+```cpp
 Signtool sign /fd sha256 /ac C:\MyCrossCert\Crosscert.cer /s my /n “MyCompany Inc. “ /ph /as /sha1 XX...XX C:\DriverDir\toaster.SYS
 ```
 

@@ -6,11 +6,8 @@ ms.assetid: 7e65c21c-d38f-4804-8c07-6cd89f6a6dd6
 keywords:
 - postoperation callback routines WDK file system minifilter , completion processing
 - completing I/O requests WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performing Completion Processing for an I/O Operation
@@ -34,6 +31,5 @@ This section includes the following topic:
  
 
 
---------------------
 
 

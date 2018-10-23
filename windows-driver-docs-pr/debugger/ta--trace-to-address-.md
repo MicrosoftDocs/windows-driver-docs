@@ -3,17 +3,15 @@ title: ta (Trace to Address)
 description: The ta command executes the program until the specified address is reached, displaying each step (including steps within called functions).
 ms.assetid: 99741659-dd43-44ea-ac27-06d821b47fbe
 keywords: ["ta (Trace to Address) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ta (Trace to Address)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ta (Trace to Address)
@@ -23,13 +21,13 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ta [r] [= StartAddress] StopAddress 
 ```
 
@@ -92,7 +90,7 @@ During this execution, all steps are displayed explicitly. If a function is call
 
 For example, the following command explicitly traces through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> ta @$ra 
 ```
 
@@ -100,7 +98,6 @@ For example, the following command explicitly traces through the target code unt
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20ta%20%28Trace%20to%20Address%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

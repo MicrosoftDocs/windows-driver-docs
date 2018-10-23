@@ -5,11 +5,8 @@ ms.assetid: efa83c49-bdec-438d-a2de-e7f13f2466b9
 keywords:
 - NetDMA provider drivers WDK networking , stopping
 - stopping NetDMA provider drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stopping a NetDMA Provider
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-stopping-a-netdma-provider-ng"></a>
+
 
 
 A NetDMA provider driver calls the [**NetDmaProviderStop**](https://msdn.microsoft.com/library/windows/hardware/ff568335) function to notify the NetDMA interface that a dynamic memory access (DMA)- engine, which was started by calling the [**NetDmaProviderStart**](https://msdn.microsoft.com/library/windows/hardware/ff568334) function, is no longer available. For more information about starting a NetDMA provider, see [Starting a NetDMA Provider](starting-a-netdma-provider.md).

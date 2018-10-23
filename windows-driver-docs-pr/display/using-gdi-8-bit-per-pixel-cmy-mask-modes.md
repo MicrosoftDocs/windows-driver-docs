@@ -8,11 +8,8 @@ keywords:
 - drawing WDK GDI , halftoning
 - halftoning WDK GDI
 - 8-bit-per-pixel CMY mask modes WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using GDI 8-Bit-Per-Pixel CMY Mask Modes
@@ -37,7 +34,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
-    ```
+    ```cpp
     pPaletteEntry[0].peRed   = &#39;R&#39;;
     pPaletteEntry[0].peGreen = &#39;G&#39;;
     pPaletteEntry[0].peBlue  = &#39;B&#39;;
@@ -46,7 +43,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
     To do this, a caller should use the **HT\_SET\_BITMASKPAL2RGB** macro (defined in *winddi.h*). Here is an example showing the use of this macro:
 
-    ```
+    ```cpp
     HT_SET_BITMASKPAL2RGB(pPaletteEntry)
     ```
 
@@ -54,7 +51,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 3.  Check the *pPaletteEntry* parameter returned from the call to [**HT\_Get8BPPMaskPalette**](https://msdn.microsoft.com/library/windows/hardware/ff567320) using the **HT\_IS\_BITMASKPALRGB** macro, which is defined in *winddi.h*. Here is an example showing the use of this macro.
 
-    ```
+    ```cpp
     InvCMYSupported = HT_IS_BITMASKPALRGB(pPaletteEntry)
     ```
 
@@ -453,7 +450,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 
 -   If the requested palette is a CMY mode palette (not a CMY\_INVERTED mode palette), then for values of *CMYMask* from 3 to 255, the rendered 8-bit-per-pixel byte index bits have the following meaning. In this case, the bit patterns represent ink levels that can be used directly without translation. This also applies when a CMY\_INVERTED mode byte index is mapped to CMY mode using a translation table's **CMY332Idx** member. See [Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels](translating-8-bit-per-pixel-halftone-indexes-to-ink-levels.md) for more information.
 
-```
+```cpp
   Bit     7 6 5 4 3 2 1 0
           |   | |   | | |
           +---+ +---+ +-+
@@ -469,7 +466,6 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20GDI%208-Bit-Per-Pixel%20CMY%20Mask%20Modes%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

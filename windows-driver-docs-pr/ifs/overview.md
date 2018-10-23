@@ -3,11 +3,8 @@ title: Overview
 author: windows-driver-content
 description: Overview
 ms.assetid: 3b2895a2-9a2e-46eb-b8fb-47d6db4a1de0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview
@@ -57,6 +54,5 @@ Remember that oplock keys exist on handles, and they are "put on" the handle whe
  
 
 
---------------------
 
 

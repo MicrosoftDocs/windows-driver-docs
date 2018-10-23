@@ -3,17 +3,14 @@ title: Overview of Windows support for ACPI 5.0
 author: windows-driver-content
 description: The ACPI 5.0 specification enables support of SoC-based mobile platforms that run Windows 8 and later, but continues to support many useful features that were introduced in earlier versions Windows.
 ms.assetid: BAFBA051-FEDA-469B-9B67-C74D252C84F9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Windows support for ACPI 5.0
 
 
-The [ACPI 5.0 specification](http://www.acpi.info) enables support of SoC-based mobile platforms that run Windows 8 and later, and enables and support of Windows Server 2016 and later, but continues to support many useful features that were introduced in earlier versions Windows. This design guide directs implementers to the parts of ACPI 5.0 that specifically apply to SoC-based platforms as well as for systems designed for Windows Server 2016, and describes best practices for implementing the SoC-specific features in ACPI to run Windows on these platforms.
+The [ACPI 5.0 specification](https://www.uefi.org/specifications) enables support of SoC-based mobile platforms that run Windows 8 and later, and enables and support of Windows Server 2016 and later, but continues to support many useful features that were introduced in earlier versions Windows. This design guide directs implementers to the parts of ACPI 5.0 that specifically apply to SoC-based platforms as well as for systems designed for Windows Server 2016, and describes best practices for implementing the SoC-specific features in ACPI to run Windows on these platforms.
 
 ## Scope
 
@@ -25,7 +22,7 @@ This design guidance specifically targets hardware-reduced ACPI platforms that s
 ## Firmware revision support
 
 
-Windows supports firmware revisions based on the [ACPI 5.0 specification](http://www.acpi.info).
+Windows supports firmware revisions based on the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 **Note**  Windows supports a subset of functionality defined in the ACPI 5.0 specification. Windows does not have an explicit check against higher revisions of the firmware. Windows will support firmware that conforms to higher revisions of the ACPI specification if this firmware contains the necessary support, as described in this design guide.
 
@@ -52,7 +49,7 @@ Windows supports firmware revisions based on the [ACPI 5.0 specification](http:/
 </tr>
 <tr class="even">
 <td><p>[Hardware requirements for SoC-based platforms](hardware-requirements-for-soc-based-platforms.md)</p></td>
-<td><p>The [ACPI 5.0 specification](http://www.acpi.info) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.</p></td>
+<td><p>The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[ACPI namespace hierarchy](acpi-namespace-hierarchy.md)</p></td>
@@ -60,7 +57,7 @@ Windows supports firmware revisions based on the [ACPI 5.0 specification](http:/
 </tr>
 <tr class="even">
 <td><p>[Microsoft ASL compiler](microsoft-asl-compiler.md)</p></td>
-<td><p>Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](http://www.acpi.info)). The ASL compiler is distributed with the Windows Driver Kit (WDK) 8.1.</p></td>
+<td><p>Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://www.uefi.org/specifications)). The ASL compiler is distributed with the Windows Driver Kit (WDK) 8.1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,6 +69,5 @@ Windows supports firmware revisions based on the [ACPI 5.0 specification](http:/
  
 
 
---------------------
 
 

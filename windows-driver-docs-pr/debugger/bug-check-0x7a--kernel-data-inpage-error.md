@@ -3,17 +3,15 @@ title: Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR
 description: The KERNEL_DATA_INPAGE_ERROR bug check has a value of 0x0000007A. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
 ms.assetid: 466d4864-8840-47b2-9a9a-302a125bf095
 keywords: ["Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - KERNEL_DATA_INPAGE_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7A: KERNEL\_DATA\_INPAGE\_ERROR
@@ -21,7 +19,7 @@ api_type:
 
 The KERNEL\_DATA\_INPAGE\_ERROR bug check has a value of 0x0000007A. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## KERNEL\_DATA\_INPAGE\_ERROR Parameters
 

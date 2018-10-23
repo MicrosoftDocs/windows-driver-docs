@@ -9,11 +9,8 @@ keywords:
 - near field proximity
 - NFP
 description: Information about the NFC CX, which provides two modes of operation to support different implementations of NFCEE management.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NFCEE discovery sequence

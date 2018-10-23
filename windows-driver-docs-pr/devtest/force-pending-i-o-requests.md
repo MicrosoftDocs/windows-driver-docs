@@ -5,11 +5,8 @@ ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Force Pending I/O Requests
@@ -114,7 +111,7 @@ For example, the following stack trace of Pci.sys shows its response to Force Pe
 
 ```
 kd> !verifier 40
-# Size of the log is is 0x40
+# Size of the log is 0x40
 ========================================================
 IRP: 8f84ef00 - forced pending from stack trace:
 
@@ -157,7 +154,6 @@ The stack trace shows that *Acpi.sys* was trying to complete IRP 8f84ef00. Drive
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Force%20Pending%20I/O%20Requests%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

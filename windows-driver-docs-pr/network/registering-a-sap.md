@@ -6,17 +6,14 @@ keywords:
 - service access points WDK CoNDIS
 - SAPs WDK CoNDIS
 - registering SAPs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a SAP
 
 
-## <a href="" id="ddk-registering-a-sap-ng"></a>
+
 
 
 If a client accepts incoming calls, its [**ProtocolClOpenAfCompleteEx**](https://msdn.microsoft.com/library/windows/hardware/ff570235) function usually registers one or more SAPs with the call manager by calling [**NdisClRegisterSap**](https://msdn.microsoft.com/library/windows/hardware/ff561648).

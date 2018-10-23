@@ -10,11 +10,8 @@ keywords:
 - framework-based drivers WDK UMDF , USB devices
 - USB device WDK UMDF
 - USB device WDK UMDF , driver model
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing a Driver Model for a USB Device

@@ -6,11 +6,8 @@ ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Application for UVC Extension Units
@@ -18,13 +15,13 @@ ms.technology: windows-devices
 
 This topic contains sample application code that you can use to support Extension Units.
 
-An application accesses the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API. The **IKsTopologyInfo** interface is documented on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=27252) website.
+An application accesses the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API. The **IKsTopologyInfo** interface is documented on the [API and reference catalog](http://go.microsoft.com/fwlink/p/?linkid=27252) website.
 
 Include the following code in the application source, arbitrarily named TestApp.cpp.
 
 Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
-```
+```cpp
   // pUnkOuter is the unknown associated with the base filter
   hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
                                (void **) &pKsTopologyInfo);
@@ -89,7 +86,5 @@ Write the code for the **FindExtensionNode** function to locate the necessary ex
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Sample%20Application%20for%20UVC%20Extension%20Units%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

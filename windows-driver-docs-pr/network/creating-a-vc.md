@@ -4,17 +4,14 @@ description: Creating a VC
 ms.assetid: 29d7f2b3-0514-46f8-8b12-02275b404a2a
 keywords:
 - virtual connections WDK CoNDIS , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a VC
 
 
-## <a href="" id="ddk-creating-a-vc-ng"></a>
+
 
 
 Before making an outgoing call, a connection-oriented client initiates the creation a virtual connection (VC). Before indicating an incoming call to a connection-oriented client, a call manager or an MCM driver initiates the creation of a VC . After the VC has been set up and activated, client data can be transmitted or received on the VC.

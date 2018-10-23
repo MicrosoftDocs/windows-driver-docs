@@ -6,17 +6,14 @@ keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS
 - Network Driver Interface Specification WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.1
 
 
-## <a href="" id="ddk-introduction-to-ndis-6-1-ng"></a>
+
 
 
 This section introduces Network Driver Interface Specification (NDIS) 6.1 and describes its major design additions. NDIS 6.1 is included in the Windows Server 2008 and Windows Vista with Service Pack 1 (SP1) operating systems.

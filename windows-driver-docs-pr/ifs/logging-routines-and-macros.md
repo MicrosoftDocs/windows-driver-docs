@@ -8,11 +8,8 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , logging
 - logging WDK RDBSS
 - RDBSSLOG macro
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Logging Routines and Macros
@@ -112,6 +109,5 @@ The following macros are defined in the rxlog.h and rxprocs.h header files that 
  
 
 
---------------------
 
 

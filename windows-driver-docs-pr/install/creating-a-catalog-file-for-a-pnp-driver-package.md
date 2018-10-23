@@ -2,11 +2,8 @@
 title: Creating a Catalog File for a PnP Driver Package
 description: Creating a Catalog File for a PnP Driver Package
 ms.assetid: 2af431f1-a35d-4312-86f6-a928ef4148df
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Catalog File for a PnP Driver Package
@@ -20,7 +17,7 @@ To create an unsigned catalog file for a driver package, follow these steps:
 
 Use the following Inf2Cat command to create unsigned catalog files:
 
-```
+```cpp
 Inf2Cat /driver:DriverPath /os:WindowsVersionList
 ```
 
@@ -34,7 +31,7 @@ Where:
 
 The following examples apply to the toaster [driver package](driver-packages.md) that is located in *c:\\WindDDK\\5739\\src\\general\\toaster\\toastpkg\\toastcd*. The INF file for the toaster package is *Toastpkg.inf* and this INF file contains the following **CatalogFile** directives with platform extensions:
 
-```
+```cpp
 [Version]
 . . .
 CatalogFile.NTx86  = tostx86.cat
@@ -45,19 +42,19 @@ CatalogFile.NTAMD64 = tstamd64.cat
 
 To generate *Tostx86.cat* for specific x86 versions of Windows, specify the Windows versions in *WindowsVersionList*. For example, the following Inf2Cat command verifies that the [driver package](driver-packages.md) can be signed for Windows 2000 and the x86 versions of Windows Vista, Windows Server 2003, and Windows XP.
 
-```
+```cpp
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:2000,XP_X86,Server2003_X86,Vista_X86
 ```
 
 To generate *Tostamd64.cat* for x64 versions of Windows, specify the Windows versions in *WindowsVersionList*. For example, the following Inf2Cat command verifies that the driver package can be signed for the x64 versions of Windows Vista, Windows Server 2003, and Windows XP.
 
-```
+```cpp
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:XP_X64,Server2003_X64,Vista_X64
 ```
 
 To generate *Tostamd64.cat* only for Windows Vista x64 Edition, specify only "Vista_X64" in *WindowsVersionList.* For example, the following Inf2Cat command only verifies that the [driver package](driver-packages.md) can be signed for Windows Vista x64 Edition.
 
-```
+```cpp
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:Vista_X64
 ```
 

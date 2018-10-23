@@ -6,17 +6,14 @@ keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking
 - status information WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Getting the Current Header-Data Split Configuration
 
 
-## <a href="" id="ddk-getting-the-current-header-data-split-configuration-ng"></a>
+
 
 
 To get the current header-data split settings of a miniport adapter, overlying drivers or user-mode applications can query the [OID\_GEN\_HD\_SPLIT\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569586) OID. However, overlying drivers should use the information that NDIS provides to them during initialization and with status indications.

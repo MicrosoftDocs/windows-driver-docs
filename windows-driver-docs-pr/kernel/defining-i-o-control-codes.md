@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Defining I/O Control Codes
 ms.assetid: 967b0199-e9a0-4c8d-9130-c81436c59ca3
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining I/O Control Codes
 
 
-## <a href="" id="ddk-defining-i-o-control-codes-kg"></a>
+
 
 
 When defining new IOCTLs, it is important to remember the following rules:
@@ -28,7 +25,7 @@ An I/O control code is a 32-bit value that consists of several fields. The follo
 
 Use the system-supplied **CTL\_CODE** macro, which is defined in Wdm.h and Ntddk.h, to define new I/O control codes. The definition of a new IOCTL code, whether intended for use with **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, uses the following format:
 
-```
+```cpp
 #define IOCTL_Device_Function CTL_CODE(DeviceType, Function, Method, Access)
 ```
 
@@ -94,7 +91,7 @@ Some system-defined I/O control codes have a *RequiredAccess* value of FILE\_ANY
 
 Other system-defined I/O control codes require the caller to have read access rights, write access rights, or both. For example, the following definition of the public I/O control code IOCTL\_DISK\_SET\_PARTITION\_INFO shows that this I/O request can be sent to a driver only if the caller has both read and write access rights:
 
-```
+```cpp
 #define IOCTL_DISK_SET_PARTITION_INFO\
         CTL_CODE(IOCTL_DISK_BASE, 0x008, METHOD_BUFFERED,\
         FILE_READ_DATA | FILE_WRITE_DATA)
@@ -111,7 +108,7 @@ Drivers can use [**IoValidateDeviceIoControlAccess**](https://msdn.microsoft.com
 
 The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit *TransferType* fields from an IOCTL code:
 
-```
+```cpp
 #define DEVICE_TYPE_FROM_CTL_CODE(ctrlCode)   (((ULONG)(ctrlCode & 0xffff0000)) >> 16)
 #define METHOD_FROM_CTL_CODE(ctrlCode)        ((ULONG)(ctrlCode & 3))
 ```
@@ -123,7 +120,5 @@ These macros are defined in Wdm.h and Ntddk.h.
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Defining%20I/O%20Control%20Codes%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -3,11 +3,8 @@ title: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 author: windows-driver-content
 description: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 ms.assetid: 1151643e-8b22-4034-b043-ac4d44c01082
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
@@ -18,7 +15,7 @@ This structure defines the completion token used by [EFI\_BATTERY\_CHARGING\_PRO
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct _EFI_BATTERY_CHARGING_COMPLETION_TOKEN {
   EFI_EVENT Event;
   EFI_BATTERY_CHARGING_STATUS Status;
@@ -45,9 +42,7 @@ EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN is returned in the *CompletionToken* p
 **Header:** User generated
 
 ## Related topics
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
+
 [EFI\_BATTERY\_CHARGING\_STATUS](efi-battery-charging-status.md)  
-
---------------------
-
-

@@ -3,11 +3,8 @@ title: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
 ms.assetid: bd754296-5002-48b6-9986-fa09c2094470
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.SetEndpointStallState
@@ -18,7 +15,7 @@ The **SetEndpointStallState** function sets or clears the stall state on the spe
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_SET_ENDPOINT_STALL_STATE) (
@@ -95,6 +92,5 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
  
 
 
---------------------
 
 

@@ -9,11 +9,8 @@ keywords:
 - near field proximity
 - NFP
 description: A diagram of the near field communication (NFC) stack architecture and design.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NFC stack architecture

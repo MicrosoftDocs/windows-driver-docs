@@ -2,11 +2,8 @@
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 ms.assetid: 888AEF01-271D-41CD-8372-A47551348959
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low Latency Audio
@@ -201,7 +198,7 @@ In order to target low latency scenarios, AudioGraph provides the [AudioGraphSet
 
 The AudioCreation sample (available for download on GitHub: <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AudioCreation>) shows how to use AudioGraph for low latency. The following code snippet shows how to set the minimum buffer size:
 
-```
+```cpp
 AudioGraphSettings settings = new AudioGraphSettings(AudioRenderCategory.Media);
 settings.QuantumSizeSelectionMode = QuantumSizeSelectionMode.LowestLatency;
 CreateAudioGraphResult result = await AudioGraph.CreateAsync(settings);
@@ -252,7 +249,7 @@ The WASAPIAudio sample (available on GitHub: <https://github.com/Microsoft/Windo
 
 The following code snippet shows how a music creation app can operate in the lowest latency setting that is supported by the system.
 
-```
+```cpp
 // 1. Activation
 
 // Get a string representing the Default Audio (Render|Capture) Device
@@ -335,7 +332,7 @@ if (AUDCLNT_E_ENGINE_FORMAT_LOCKED == hr) {
 
 Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or the [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
 
-```
+```cpp
 // Specify Source Reader Attributes 
 Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceReaderCallback *>(this) ); 
     if (FAILED( hr )) 
@@ -364,7 +361,7 @@ Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceRe
 
 Alternatively, the following code snippet shows how to use the RT Work Queue APIs.
 
-```
+```cpp
 #define INVALID_WORK_QUEUE_ID 0xffffffff
 DWORD g_WorkQueueId = INVALID_WORK_QUEUE_ID;
 //#define MMCSS_AUDIO_CLASS    L"Audio"
@@ -506,7 +503,7 @@ A driver operates under various constraints when moving audio data between the O
 
 In Windows 10 the driver can express its buffer size capabilities using the DEVPKEY\_KsAudio\_PacketSize\_Constraints device property. This property allows the user to define the absolute minimum buffer size that is supported by the driver, as well as specific buffer size constraints for each signal processing mode (the mode-specific constraints need to be higher than the drivers minimum buffer size, otherwise they are ignored by the audio stack). For example, the following code snippet shows how a driver can declare that the absolute minimum supported buffer size is 1ms, but default mode supports 128 frames (which corresponds to 3 ms, if we assume 48 kHz sample rate).
 
-```
+```cpp
 // Describe constraints for small buffers
 static struct
 {
@@ -528,7 +525,7 @@ static struct
 };
 ```
 
-MSDN provides more in-depth information regarding these structures:
+See the following topics for more in-depth information regarding these structures:
 
 -   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://msdn.microsoft.com/library/windows/hardware/dn965561)
 -   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://msdn.microsoft.com/library/windows/hardware/dn965562)
@@ -596,7 +593,7 @@ Notes:
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 
-```
+```inf
 [<install-section-name>]
 Include=wdmaudio.inf
 Needs=WDMPORTCLS.CopyFilesOnly
@@ -664,7 +661,5 @@ No. By default, all applications in Windows 10 will use 10ms buffers to render a
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Low%20Latency%20Audio%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

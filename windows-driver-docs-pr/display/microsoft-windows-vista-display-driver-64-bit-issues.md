@@ -6,11 +6,8 @@ keywords:
 - 64-bit WDK display
 - display driver model WDK Windows Vista , 64-bit
 - Windows Vista display driver model WDK , 64-bit
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Display Driver Model (WDDM) 64-Bit Issues
@@ -20,7 +17,7 @@ To allow 32-bit applications to run on a 64-bit operating system, a 32-bit user-
 
 To install a 32-bit user-mode display driver on a 64-bit operating system, the following entry must be set in an add-registry section of the INF file for the graphics device's display miniport driver. This must happen so that the 32-bit user-mode display driver's DLL name is added to the registry during driver installation:
 
-```
+```cpp
  [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverNameWow, %REG_MULTI_SZ%, Xxx.dll
@@ -39,7 +36,6 @@ Because WOW64 cannot process opaque or untyped data structures such as the [**D3
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Windows%20Display%20Driver%20Model%20%28WDDM%29%2064-Bit%20Issues%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

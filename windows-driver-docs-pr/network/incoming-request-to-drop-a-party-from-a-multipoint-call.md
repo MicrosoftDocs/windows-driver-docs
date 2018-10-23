@@ -8,17 +8,14 @@ keywords:
 - dropping party from multipoint calls
 - removing party from multipoint calls
 - incoming drop party requests WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Incoming Request to Drop a Party from a Multipoint Call
 
 
-## <a href="" id="ddk-incoming-request-to-drop-a-party-from-a-multipoint-call-ng"></a>
+
 
 
 A call manager or MCM driver is alerted to an incoming request from a remote party to drop that party from a multipoint call by signaling messages from the network. A call manager or MCM driver can also signal an incoming request to drop a party if it detects network problems that prevent further data transfers on the VC.

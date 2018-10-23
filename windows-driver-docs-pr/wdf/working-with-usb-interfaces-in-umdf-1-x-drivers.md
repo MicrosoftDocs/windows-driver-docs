@@ -8,11 +8,8 @@ keywords:
 - User-Mode Driver Framework WDK , USB interfaces
 - user-mode drivers WDK UMDF , USB interfaces
 - USB interfaces WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Working with USB Interfaces in UMDF 1.x Drivers

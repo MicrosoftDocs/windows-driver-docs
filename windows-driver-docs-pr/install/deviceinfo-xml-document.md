@@ -2,11 +2,8 @@
 title: DeviceInfo XML Document
 description: DeviceInfo XML Document
 ms.assetid: b6b859cf-de30-4df0-bec1-0cd7d8c55ea6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DeviceInfo XML Document

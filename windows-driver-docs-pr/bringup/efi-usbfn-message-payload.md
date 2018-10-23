@@ -3,11 +3,8 @@ title: EFI_USBFN_MESSAGE_PAYLOAD
 author: windows-driver-content
 description: EFI_USBFN_MESSAGE_PAYLOAD
 ms.assetid: 88d32ce1-460d-4c0f-b42a-426f42e2f969
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_MESSAGE\_PAYLOAD
@@ -18,7 +15,7 @@ The **EFI\_USBFN\_MESSAGE\_PAYLOAD** union contains additional payload (device r
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef union _EFI_USBFN_MESSAGE_PAYLOAD
 {
     EFI_USB_DEVICE_REQUEST      udr;
@@ -49,6 +46,5 @@ A [EFI\_USB\_BUS\_SPEED](efi-usb-bus-speed.md) enumeration value that indicates 
  
 
 
---------------------
 
 

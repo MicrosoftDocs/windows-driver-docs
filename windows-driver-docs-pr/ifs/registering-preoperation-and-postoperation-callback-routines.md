@@ -7,11 +7,8 @@ keywords:
 - preoperation callback routines WDK file system minifilter , registering
 - postoperation callback routines WDK file system minifilter , registering
 - registering callback routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering Preoperation and Postoperation Callback Routines
@@ -24,7 +21,7 @@ To register [**preoperation callback routines**](https://msdn.microsoft.com/libr
 
 Each FLT\_OPERATION\_REGISTRATION structure in the array, except for the last one, contains the following information:
 
--   The major function code for the operation
+-   The major function code for the operation. See [FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) for information on I/O operations, and their request-type-specific parameters.
 
 -   For read and write operations (IRP\_MJ\_READ and IRP\_MJ\_WRITE), a set of flags that specify whether to ignore cached I/O or paging I/O or both for IRP-based I/O operations
 
@@ -34,7 +31,7 @@ The last element in the array must be {IRP\_MJ\_OPERATION\_END}.
 
 The following code example, which is taken from the Scanner sample minifilter driver, shows an array of FLT\_OPERATION\_REGISTRATION structures. The Scanner sample minifilter driver registers preoperation and postoperation callback routines for IRP\_MJ\_CREATE and preoperation callback routines for IRP\_MJ\_CLEANUP and IRP\_MJ\_WRITE operations.
 
-```
+```cpp
 const FLT_OPERATION_REGISTRATION Callbacks[] = {
     {IRP_MJ_CREATE,
      0,
@@ -57,6 +54,5 @@ const FLT_OPERATION_REGISTRATION Callbacks[] = {
  
 
 
---------------------
 
 

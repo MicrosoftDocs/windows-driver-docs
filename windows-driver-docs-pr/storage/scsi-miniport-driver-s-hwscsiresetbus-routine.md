@@ -7,11 +7,8 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiResetBus
 - HwScsiResetBus
 - bus-reset operations WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiResetBus Routine
@@ -33,6 +30,5 @@ Note that the operating system - specific port driver manages SCSI bus-reset del
  
 
 
---------------------
 
 

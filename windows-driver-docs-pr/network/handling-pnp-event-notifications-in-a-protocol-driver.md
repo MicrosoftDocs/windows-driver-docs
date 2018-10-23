@@ -6,17 +6,14 @@ keywords:
 - Plug and Play WDK NDIS protocol
 - notifications WDK PnP , NDIS protocol drivers
 - event notifications WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Event Notifications in a Protocol Driver
 
 
-## <a href="" id="ddk-handling-pnp-event-notifications-in-a-protocol-driver-ng"></a>
+
 
 
 NDIS 6.0 and later protocol drivers handle the same Plug and Play (PnP) event notifications as NDIS 5.x drivers in addition to event notifications that are specific to NDIS 6.0 and later. The handling of PnP event notifications is driver specific.

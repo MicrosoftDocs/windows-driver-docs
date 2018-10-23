@@ -10,17 +10,14 @@ keywords:
 - accepting connection requests WDK SANs
 - refusing SAN connection requests
 - rejecting SAN connection requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accepting Connection Requests
 
 
-## <a href="" id="ddk-accepting-connection-requests-ng"></a>
+
 
 
 If an application calls the **WSAAccept**, **accept**, or **AcceptEx** function to accept an incoming connection request on a socket, the Windows Sockets switch always forwards this call to the TCP/IP service provider. If an incoming connection request arrives from a non-SAN network, it flows through the NDIS path and the TCP/IP service provider handles it. If a connection request arrives from a remote peer on a SAN, the switch acts as an intermediary between the TCP/IP service provider and the SAN service provider in determining whether to accept the connection request and in completing the application's **WSAAccept**, **accept**, or **AcceptEx** function.

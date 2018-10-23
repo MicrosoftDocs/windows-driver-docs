@@ -3,11 +3,9 @@ title: Analyzing Stalled Drivers and Time-Outs
 description: Analyzing Stalled Drivers and Time-Outs
 ms.assetid: c305acba-48b9-4597-925a-8b1ded4f0048
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Analyzing Stalled Drivers and Time-Outs
@@ -23,7 +21,7 @@ When debugging a SCSI miniport driver, the three most common causes for hangs an
 
 If you suspect that the SCSI miniport DPC is not running, use [**!pcr**](-pcr.md) to display the DPC queue for the current processor. If the SCSI port DPC routine is in the DPC queue, place a breakpoint on this routine to determine whether this routine is ever called. Otherwise, use [**!scsikd.scsiext**](-scsikd-scsiext.md) on each device. Consider the following sample output from the **!scsikd.scsiext** extension:
 
-```
+```dbgcmd
 0: kd> !scsikd.scsiext 86353040 
 Common Extension:
    < ..omitted.. >
@@ -54,7 +52,6 @@ The [**!devobj**](-devobj.md) extension determines whether the SCSI miniport is 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Analyzing%20Stalled%20Drivers%20and%20Time-Outs%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

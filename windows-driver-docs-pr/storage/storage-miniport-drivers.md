@@ -7,11 +7,8 @@ keywords:
 - storage miniport drivers WDK
 - miniport drivers WDK storage
 - storage drivers WDK , miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Miniport Drivers
@@ -36,19 +33,18 @@ Do not use [Hardware Abstraction Layer Routines](https://msdn.microsoft.com/libr
 
 The following list indicates the port driver support library that each type of storage miniport driver should use:
 
--   SCSI Port miniport drivers: [SCSI Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff565375)
+-   SCSI Port miniport drivers: [SCSI Port Library Routines](required-and-optional-scsi-miniport-driver-routines.md)
 
--   Storport miniport drivers: [Storport Driver Support Routines](https://msdn.microsoft.com/library/windows/hardware/ff567548)
+-   Storport miniport drivers: [Storport Driver Support Routines](storport-driver-support-routines.md)
 
--   IDE miniport drivers: [PciIdeX Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff563803)
+-   IDE miniport drivers: [PciIdeX Library Routines](ide-controller-minidrivers.md)
 
--   ATA Port miniport drivers: [ATA Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff551343)
-
- 
+-   ATA Port miniport drivers: [ATA Port Library Routines](ata-miniport-drivers.md)
 
  
 
+ 
 
---------------------
+
 
 

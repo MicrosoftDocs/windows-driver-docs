@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Mapping Bus-Relative Addresses to Virtual Addresses
 ms.assetid: 16496465-8a30-4250-9d64-afd36a788ae2
 keywords: ["virtual address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses", "bus-relative memory space WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping Bus-Relative Addresses to Virtual Addresses
 
 
-## <a href="" id="ddk-mapping-bus-relative-addresses-to-virtual-addresses-kg"></a>
+
 
 
 Some processors implement separate memory and I/O address spaces, while other processors do not. Because of these differences in hardware platforms, the mechanism drivers use to access I/O- or memory-resident device resources differs from platform to platform.
@@ -48,7 +45,5 @@ For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Mapping%20Bus-Relative%20Addresses%20to%20Virtual%20Addresses%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

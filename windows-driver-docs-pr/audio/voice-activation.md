@@ -1,25 +1,21 @@
 ---
 title: Voice Activation
-description: Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices.
+description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/14/2018
+ms.localizationpriority: medium
 ---
 
 # Voice Activation
 
 
-Cortana, the personal assistant technology introduced on Windows Phone 8.1, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
+Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
 **Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
 
  
-
-## <span id="Cortana_End_User_Experience"></span><span id="cortana_end_user_experience"></span><span id="CORTANA_END_USER_EXPERIENCE"></span>Cortana End User Experience
+## <span id="cortana_end_user_experience">Cortana End User Experience
 
 
 To understand the voice interaction experience available in Windows, review these topics.
@@ -27,12 +23,12 @@ To understand the voice interaction experience available in Windows, review thes
 |                                                                                                   |                                                                       |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Topic**                                                                                         | **Description**                                                       |
-| [What is Cortana?](http://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
-| [Make Cortana yours](http://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
+| [What is Cortana?](https://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
+| [Make Cortana yours](https://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
  
 
-## <span id="Introduction_to__Hey_Cortana__Voice_Activation_and__Learn_my_voice_"></span><span id="introduction_to__hey_cortana__voice_activation_and__learn_my_voice_"></span><span id="INTRODUCTION_TO__HEY_CORTANA__VOICE_ACTIVATION_AND__LEARN_MY_VOICE_"></span>Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
+## <span id="introduction_to__hey_cortana__voice_activation_and__learn_my_voice_"></span>Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
 
 
 **"Hey Cortana" Voice Activation**
@@ -74,7 +70,7 @@ This glossary summarizes terms related to voice activation.
 | Voice Activation      | The scenario of providing keyword detection of a predefined activation keyphrase. For example, "Hey Cortana" is the Microsoft Voice Activation scenario. |
 |WoV                    | Wake-on-Voice – Technology that enables Voice Activation from a screen off, lower power state, to a screen on full power state. |
 |WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state. |
-|Modern Standby |Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://msdn.microsoft.com/en-us/library/windows/hardware/mt282515(v=vs.85).aspx)   |
+|Modern Standby |Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://msdn.microsoft.com/library/windows/hardware/mt282515(v=vs.85).aspx)   |
 |KWS                    |Keyword spotter – the algorithm that provides the detection of “Hey Cortana” |
 | SW KWS                |Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS                | Hardware-offloaded keyword spotter – an implementation of KWS that runs offloaded on hardware. |
@@ -99,9 +95,32 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
 -   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
 -	Support both staged and chained commands.
 -	Support “Hey Cortana” for each of the supported Cortana locales. 
+-	The APOs (Audio Processing Objects) must provide the following effects: 
+    -	AEC
+    -	AGC
+    -	NS
+-   Effects for Speech processing mode must be reported by the MFX APO.
+-	The APO may perform format conversion as MFX.   
+-	The APO must output the following format: 
+    -	16 kHz, mono, FLOAT.
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 
-## <span id="Sample_Code_Overview"></span><span id="sample_code_overview"></span><span id="SAMPLE_CODE_OVERVIEW"></span>Sample Code Overview
+Hardware-offloaded keyword spotter (HW KWS) WoV Requirements
+- HW KWS WoV is supported during S0 Working state and S0 sleep state also known as Modern Standby.  
+- HW KWS WoV is not supported from S3.  
+ 
+AEC Requirements for HW KWS
+
+- For Windows Version 1709
+    - To support HW KWS WoV for S0 sleep state (Modern Standby) AEC is not required.  
+    - HW KWS WoV for S0 working state is not supported in Windows Version 1709.
+ 
+- For Windows Version 1803 
+    - HW KWS WoV for S0 working state is supported.
+    - To enable HW KWS WoV for S0 working state, the APO must support AEC.
+
+
+## <span id="sample_code_overview"></span>Sample Code Overview
 
 
 There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use this code as a starting point. The code is available at this location.
@@ -110,7 +129,7 @@ There is sample code for an audio driver that implements voice activation on Git
 
 For more information about the SYSVAD sample audio driver, see [Sample Audio Drivers](sample-audio-drivers.md).
 
-## <span id="Keyword_Recognition_System_Information"></span><span id="keyword_recognition_system_information"></span><span id="KEYWORD_RECOGNITION_SYSTEM_INFORMATION"></span>Keyword Recognition System Information
+## <span id="keyword_recognition_system_information"></span>Keyword Recognition System Information
 
 
 **Voice Activation Audio Stack Support**
@@ -166,7 +185,7 @@ After detecting a keyword, all voice activation solutions must buffer all of the
 In order to support the keyword start/end timestamps, DSP software may need to internally timestamp events based on a DSP clock. Once a keyword is detected, the DSP software interacts with the driver to prepare a KS event. The driver and DSP software will need to map the DSP timestamps to a Windows performance counter value. The method of doing this is specific to the hardware design. One possible solution is for the driver to read current performance counter, query the current DSP timestamp, read current performance counter again, and then estimate a correlation between performance counter and DSP time. Then given the correlation, the driver can map the keyword DSP timestamps to Windows performance counter timestamps.
 
 
-## <span id="Keyword_Detector"></span><span id="keyword_detector"></span><span id="KEYWORD_DETECTOR"></span>Keyword Detector OEM Adapter Interface
+## <span id="keyword_detector"></span>Keyword Detector OEM Adapter Interface
 
 The OEM supplies a COM object implementation that acts as an intermediary between the OS and the driver, helping to compute or parse the opaque data that is written and read to the audio driver through [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://msdn.microsoft.com/library/windows/hardware/dn932151) and [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://msdn.microsoft.com/library/windows/hardware/dn932150).
 
@@ -194,7 +213,7 @@ Implement the following methods.
 
 The [**KEYWORDID**](https://msdn.microsoft.com/library/windows/hardware/dn957510) enumeration identifies the phrase text/function of a keyword and is also used in the Windows Biometric Service adapters. For more information, see [Biometric Framework Overview - Core Platform Components](https://msdn.microsoft.com/library/windows/desktop/dd560897.aspx)
 
-```
+```cpp
 typedef enum  { 
   KwInvalid              = 0,
   KwHeyCortana           = 1,
@@ -206,7 +225,7 @@ typedef enum  {
 
 The [**KEYWORDSELECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn957511) struct is a set of IDs that uniquely select a particular keyword and language.
 
-```
+```cpp
 typedef struct
 {
     KEYWORDID KeywordId;
@@ -365,7 +384,5 @@ The audio stack is responsible for communicating the wake data (speaker ID, keyw
   
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Voice%20Activation%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

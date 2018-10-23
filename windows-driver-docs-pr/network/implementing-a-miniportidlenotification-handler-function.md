@@ -2,11 +2,8 @@
 title: Implementing a MiniportIdleNotification Handler Function
 description: Implementing a MiniportIdleNotification Handler Function
 ms.assetid: F2F8C98F-D8B3-49A6-819D-BC0EC936F41E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing a MiniportIdleNotification Handler Function
@@ -30,7 +27,7 @@ For example, when [*MiniportIdleNotification*](https://msdn.microsoft.com/librar
 
 The following is an example of a [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) handler function for a USB miniport driver. This example shows the steps that are involved with issuing a USB idle request IRP to the underlying USB driver. This example also shows how the IRP resources, which were previously allocated in [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389), can be reused for the IRP.
 
-```
+```C++
 //
 // MiniportIdleNotification()
 //

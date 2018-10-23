@@ -5,11 +5,8 @@ ms.assetid: c6f91535-25d6-4e3c-9daf-53f07d4c7c67
 keywords:
 - starting NetDMA provider drivers
 - NetDMA provider drivers WDK networking , starting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a NetDMA Provider
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-starting-a-netdma-provider-ng"></a>
+
 
 
 A NetDMA provider driver initializes a dynamic memory access (DMA) engine and starts the NetDMA provider while handling the [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) IRP. After the driver successfully initializes all of the DMA channels, the NetDMA provider driver calls the [**NetDmaProviderStart**](https://msdn.microsoft.com/library/windows/hardware/ff568334) function to notify the NetDMA interface that the NetDMA provider is started and ready for use.

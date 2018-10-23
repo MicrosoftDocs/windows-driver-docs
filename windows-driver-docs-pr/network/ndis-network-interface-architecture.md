@@ -5,17 +5,14 @@ ms.assetid: ce51008e-678c-421c-b796-36baab3df6b3
 keywords:
 - NDIS network interfaces WDK , architecture
 - network interfaces WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Network Interface Architecture
 
 
-## <a href="" id="ddk-ndis-network-interface-architecture-ng"></a>
+
 
 
 NDIS provides a set of services to support network interfaces and interface stacks. In the WDK, this set of services is referred to as *NDIS network interface (NDISIF)* services.

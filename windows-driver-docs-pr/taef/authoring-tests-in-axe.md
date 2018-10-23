@@ -2,11 +2,8 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.assetid: B042FE1B-98E4-48ae-BE2C-15C71EC6640A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Authoring Tests in AXE
@@ -44,7 +41,7 @@ For AXE tests, TAEF uses the AXE assessment manifest file format.
 
 The AXE assessment manifest schema is designed to support very rich descriptions of complex assessment for sophisticated scenarios. However, the manifests can also be very simple as there are very few mandatory nodes. The following example shows a minimal manifest that includes all of the mandatory tags.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>
@@ -132,7 +129,7 @@ Finally, **lines 28 - 32** instruct AXE to use the Win32 API CreateProcess() to 
 
 As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Consider the example that is shown below.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>
@@ -176,7 +173,7 @@ As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Con
 
 **Lines 25 - 29** demonstrate how TAEF standard and custom metadata can be applied to an AXE test. Under the **AxeAssessmentManifest** XML node is a **Properties** node. Single level XML tags under the **Properties** node are recognized as metadata (properties). All single level XML tags under **Properties** are interpreted as property names and their text values are interpreted as the property values. In the above example, **Owner** is interpreted as a property name and **Someone** as a property value. XML tags with no text in these elements are interpreted as elements whose value equals the empty string (for example, **&lt;SimpleTagWithNoText/&gt;**). Multilevel XML tags under **Properties** are ignored (for example, a multilevel tag like
 
-```
+```cpp
 <VerifyOSVersion>
     <Major>6</Major>
     <Minor>0</Minor>
@@ -225,7 +222,7 @@ It is beyond the scope of this document to describe all of the possible AXE mani
 
 The following example shows a more complex AXE assessment manifest.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>
@@ -351,7 +348,6 @@ AXE does not ship with Windows. To be able to execute AXE tests, you need to cop
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Authoring%20Tests%20in%20AXE%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

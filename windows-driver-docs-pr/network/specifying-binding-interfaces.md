@@ -5,17 +5,14 @@ ms.assetid: 49ef3eae-88e6-4424-8c3b-19e8c3bb734f
 keywords:
 - add-registry-sections WDK networking , binding interfaces
 - binding interfaces WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Binding Interfaces
 
 
-## <a href="" id="ddk-specifying-binding-interfaces-ng"></a>
+
 
 
 For each network component that it installs, a network INF file must specify the upper and lower binding interfaces for the component by adding the **Interfaces** key to the **Ndi** key.
@@ -218,7 +215,7 @@ An INF-file-writer can define and use vendor-specific **UpperRange** and **Lower
 
 The following is an example of an *add-registry-section* that adds **UpperRange** and **LowerRange** values for an ATM adapter:
 
-```
+```INF
 [addreg-section]
 HKR, Ndi\Interfaces, UpperRange, 0, "ndisATM"
 HKR, Ndi\Interfaces, LowerRange, 0, "atm"

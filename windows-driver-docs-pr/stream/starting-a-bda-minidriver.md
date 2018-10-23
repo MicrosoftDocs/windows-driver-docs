@@ -6,17 +6,14 @@ ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords:
 - BDA minidrivers WDK AVStream , starting
 - starting BDA minidrivers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a BDA Minidriver
 
 
-## <a href="" id="ddk-starting-a-bda-minidriver-ksg"></a>
+
 
 
 When a BDA device starts operating, the Plug and Play (PnP) manager dispatches [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749). The AVStream class in turn calls the start routine of the BDA minidriver associated with the BDA device. This start routine retrieves information about the device from the registry, sets information about the device, and then calls the [**BdaCreateFilterFactory**](https://msdn.microsoft.com/library/windows/hardware/ff556438) support function to:
@@ -32,7 +29,7 @@ When a BDA device starts operating, the Plug and Play (PnP) manager dispatches [
 
 The following code snippet shows an example of an initial filter descriptor for the device that **BdaCreateFilterFactory** sets as the filter factory:
 
-```
+```cpp
 const KSFILTER_DESCRIPTOR    InitialTunerFilterDescriptor;
 //
 //  Filter Factory Descriptor for the tuner filter
@@ -68,7 +65,7 @@ DEFINE_KSFILTER_DESCRIPTOR(InitialTunerFilterDescriptor)
 
 The following code snippet shows an example of an array of initial pin descriptors that are exposed by an initialized filter. The network provider initializes a filter using such an array before the network provider configures that filter. However, when configuring an initialized filter, the network provider selects pins that are referenced in the pointer to the filter descriptor member of the BDA\_FILTER\_TEMPLATE structure. See [Configuring a BDA Filter](configuring-a-bda-filter.md) for more information.
 
-```
+```cpp
 //
 //  Initial Pin Descriptors
 //
@@ -112,7 +109,7 @@ Note that an initialized filter must have one or more input pins exposed so that
 
 The following code snippet shows examples of a BDA\_FILTER\_TEMPLATE structure and related structures and arrays:
 
-```
+```cpp
 const KSFILTER_DESCRIPTOR  TemplateTunerFilterDescriptor;
 const BDA_PIN_PAIRING  *TemplateTunerPinPairings;
 //
@@ -191,7 +188,5 @@ BDA_PIN_PAIRING TemplateTunerPinPairings[] =
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Starting%20a%20BDA%20Minidriver%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

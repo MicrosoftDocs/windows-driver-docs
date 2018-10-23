@@ -7,17 +7,14 @@ keywords:
 - NDIS miniport drivers WDK , unloading
 - porting miniport drivers WDK networking , unload operations
 - unloading miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Unload Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-unload-operations-to-ndis-6-0-ng"></a>
+
 
 
 For NDIS 6.0, miniport drivers must specify a [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function entry point in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure. NDIS 6.0 drivers do not call the [**NdisMRegisterUnloadHandler**](https://msdn.microsoft.com/library/windows/hardware/ff553606) function.

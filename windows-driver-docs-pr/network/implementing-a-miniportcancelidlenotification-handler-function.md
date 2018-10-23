@@ -2,11 +2,8 @@
 title: Implementing a MiniportCancelIdleNotification Handler Function
 description: Implementing a MiniportCancelIdleNotification Handler Function
 ms.assetid: 51C25573-5723-44F9-B498-EBEF6756F3B0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing a MiniportCancelIdleNotification Handler Function
@@ -26,7 +23,7 @@ For example, when [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/
 
 The following is an example of a [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function for a USB miniport driver. This example shows the steps that are involved with canceling a USB idle request IRP.
 
-```
+```C++
 //
 // MiniportCancelIdleNotification()
 //

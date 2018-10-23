@@ -6,17 +6,14 @@ ms.assetid: a22cdeef-4ae7-49f8-b0b5-a4d68feb4235
 keywords:
 - parallel ports WDK , communication modes
 - communication modes WDK parallel ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting and Clearing the Communication Mode on a Parallel Port
 
 
-## <a href="" id="ddk-setting-and-clearing-the-communication-mode-on-a-parallel-port-kg"></a>
+
 
 
 A client sets the communication mode on a parallel port by using the following internal device control requests:
@@ -42,6 +39,5 @@ To determine the current mode, a client can use the IOCTL\_INTERNAL\_GET\_PARALL
  
 
 
---------------------
 
 

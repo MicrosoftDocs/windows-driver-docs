@@ -6,17 +6,14 @@ ms.assetid: 75c82353-6490-47e9-9278-ec0981af9ae9
 keywords:
 - parallel ports WDK , creating
 - parallel ports WDK , starting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Starting a Parallel Port
 
 
-## <a href="" id="ddk-creating-and-starting-a-parallel-port-kg"></a>
+
 
 
 The Plug and Play manager uses the Plug and Play support of the system-supplied function driver for parallel ports to create and start a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) that represents a parallel port.
@@ -54,6 +51,5 @@ The parallel port function driver does the following:
  
 
 
---------------------
 
 

@@ -3,25 +3,23 @@ title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - dx (Display Debugger Object Model Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](http://msdn.microsoft.com/library/jj620914.aspx).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://msdn.microsoft.com/library/jj620914.aspx).
 
-```
+```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
 dx [{-?}|{-h}]
 ```
@@ -92,7 +90,7 @@ Displays help for objects available in the debugger.
 ## Command line usage example
 
 The .dx settings command can be used to display information about the Debug Settings object. For more information about the debug settings objects, see [**.settings**](-settings--set-debug-settings-.md) .
-```
+```dbgcmd
 kd> dx -r1 Debugger.Settings
 Debugger.Settings : 
     Display          : 
@@ -106,7 +104,7 @@ Debugger.Settings :
 
 Use the -r1 recursion option to view the other Debugger objects - Sessions, Settings and State.
 
-```
+```dbgcmd
 kd> dx -r1 Debugger
 Debugger : 
   Sessions : 
@@ -116,7 +114,7 @@ Debugger :
 
 Specify the Debugger.Sessions object with the -r3 recursion option to travel further down the object chain.
 
-```
+```dbgcmd
 kd> dx -r3 Debugger.Sessions
 Debugger.Sessions : 
   [0]              : Remote KD: KdSrv:Server=@{<Local>},Trans=@{1394:Channel=0}
@@ -136,7 +134,7 @@ Debugger.Sessions :
 
 Add the x format specifier to display the ordinal values in hexadecimal.
 
-```
+```dbgcmd
 kd> dx -r3 Debugger.Sessions,x
 Debugger.Sessions,x : 
   [0x0]            : Remote KD: KdSrv:Server=@{<Local>},Trans=@{1394:Channel=0}
@@ -161,7 +159,7 @@ Debugger.Sessions,x :
 
 This example uses an active debug session to list the call stack of the first thread in the first process.
 
-```
+```dbgcmd
 kd> dx -r1 Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames
 Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames : 
     [0x0]            : nt!RtlpBreakWithStatusInstruction
@@ -177,14 +175,14 @@ Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames :
 
 Use the -g option to display output as a data grid. Click on a column to sort.
 
-```
+```dbgcmd
 kd> dx -g @$curprocess.Modules
 ```
 
 ![output from dx -g @$curprocess.modules showing columnar grid output](images/dx-grid-example.png)
 
 Use the -h option to display information about objects.
-```
+```dbgcmd
 kd>  dx -h Debugger.State
 Debugger.State   [State pertaining to the current execution of the debugger (e.g.: user variables)]
     DebuggerVariables [Debugger variables which are owned by the debugger and can be referenced by a pseudo-register prefix of @$]
@@ -198,7 +196,7 @@ Use the Environment object to display TEB and PEB information associated with th
 
 To display the TEB associated with the current thread use this command.
 
-```
+```dbgcmd
 0: kd> dx -r2 @$curthread.Environment
 @$curthread.Environment                
     EnvironmentBlock [Type: _TEB]
@@ -222,7 +220,7 @@ To display the TEB associated with the current thread use this command.
 
 To display PEB associated with the current process use this command.
 
-```
+```dbgcmd
 0: kd> dx -r2 @$curprocess.Environment
 @$curprocess.Environment                
     EnvironmentBlock [Type: _PEB]
@@ -251,7 +249,7 @@ To display PEB associated with the current process use this command.
 
 Use the current process Io.Handles object to display kernel handle information.
 
-```
+```dbgcmd
 0: kd> dx -r1 @$curprocess.Io.Handles
 @$curprocess.Io.Handles                
     [0x8]           
@@ -265,7 +263,7 @@ Use the current process Io.Handles object to display kernel handle information.
 
 Use the .First() function to display information about the first handle.
 
-```
+```dbgcmd
 0: kd> dx -r2 @$curprocess.Io.Handles.First()
 @$curprocess.Io.Handles.First()                
     Handle           : 0x8
@@ -307,20 +305,20 @@ Note that the Io.Handles object is a kernel only object.
 
 When displaying information about various Windows system variables, there are times where not all of the type information is available in the public symbols. This example illustrates this situation.
 
-```
+```dbgcmd
 0: kd> dx nt!PsIdleProcess
 Error: No type (or void) for object at Address 0xfffff800e1d50128
 ```
 
 The dx command supports the ability to reference the address of a variable which does not have type information. Such “address of” references are treated as “void \*” and can be cast as such. This means that if the data type is known, the following syntax can be used to display type information for the variable.
 
-```
+```dbgcmd
 dx (Datatype *)&VariableName
 ```
 
 For example for a nt!PsIdleProcess which has a data type of nt!\_EPROCESS, use this command.
 
-```
+```dbgcmd
 dx (nt!_EPROCESS *)&nt!PsIdleProcess
 (nt!_EPROCESS *)&nt!PsIdleProcess                 : 0xfffff800e1d50128 [Type: _EPROCESS *]
     [+0x000] Pcb              [Type: _KPROCESS]
@@ -357,7 +355,6 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 ---
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dx%20%28Display%20Debugger%20Object%20Model%20Expression%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

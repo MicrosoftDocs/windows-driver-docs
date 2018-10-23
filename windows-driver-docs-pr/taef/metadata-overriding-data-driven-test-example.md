@@ -2,11 +2,8 @@
 title: Metadata Overriding Data Driven Test Example
 description: Metadata Overriding Data Driven Test Example
 ms.assetid: F39A556F-1816-4272-ABDE-62164AE09685
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Metadata Overriding Data Driven Test Example
@@ -24,7 +21,7 @@ If you compare the examples that are covered on this section to the ones that ar
 
 In the native example, observe lines 5 and 10 in the code example below:
 
-```
+```cpp
 1   class MetadataOverridingDataDrivenExample
 2   {
 3      BEGIN_TEST_CLASS(MetadataOverridingDataDrivenExample)
@@ -43,7 +40,7 @@ So all tests defined in Class "MetadataOverridingDataDrivenExample" has priority
 
 Let's look at the XML file to understand how.
 
-```
+```cpp
     1  <?xml version="1.0"?>
     2  <Data>
     3    <Table Id="MetadataTable">
@@ -74,7 +71,7 @@ In the first 3 rows, the example overrides some metadata by explicitly specifyin
 
 Let's take a look at the managed code before looking into the selection and execution of these tests.
 
-```
+```cpp
 1   [TestClass]
 2   public class DataDrivenMetadataOverridingExample
 3   {
@@ -211,7 +208,6 @@ TE.exe Examples\CPP.DataDriven.Example.dll Examples\CSharp.DataDriven.Example.dl
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Metadata%20Overriding%20Data%20Driven%20Test%20Example%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

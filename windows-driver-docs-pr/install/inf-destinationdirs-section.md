@@ -10,11 +10,8 @@ api_name:
 - INF DestinationDirs Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DestinationDirs Section
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 A **DestinationDirs** section specifies the target destination directory or directories for all copy, delete, and/or rename operations on files referenced by name elsewhere in the INF file.
 
-```
+```cpp
 [DestinationDirs]
 
 [DefaultDestDir=dirid[,subdir]] 
@@ -63,14 +60,14 @@ Examples
 
 This example sets the default target directory for all copy-file, delete-file, and rename-file operations. Such a simple **DestinationDirs** section is common to INF files for new peripheral devices, because such an INF usually just copies a set of source files into a single directory on the target computer.
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12 ; dirid = \Drivers on WinNT platforms
 ```
 
 This example shows a fragment of the **DestinationDirs** section of the INF for display/video drivers.
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir     = 11 ; dirid = \system32 on WinNT platforms
 
@@ -105,6 +102,8 @@ xga.Display      = 11
 [**SourceDisksFiles**](inf-sourcedisksfiles-section.md)
 
 [**SourceDisksNames**](inf-sourcedisksnames-section.md)
+
+[**Using Dirids**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids)
 
 [**Version**](inf-version-section.md)
 

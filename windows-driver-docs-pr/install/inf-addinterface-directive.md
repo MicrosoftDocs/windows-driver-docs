@@ -10,11 +10,8 @@ api_name:
 - INF AddInterface Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF AddInterface Directive
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 One or more **AddInterface** directives can be specified within an [**INF DDInstall.Interfaces section**](inf-ddinstall-interfaces-section.md). This directive installs device-specific support for [device interface classes](device-interface-classes.md) exported to higher level components, such as other drivers or applications. The directive typically references an *add-interface-section* , which sets up registry information for the device-specific instance of the device interface class.
 
-```
+```cpp
 [DDInstall.Interfaces]
   
 AddInterface={InterfaceClassGUID} [,[reference-string] [,[add-interface-section][,flags]]] 
@@ -60,7 +57,7 @@ Each **AddInterface** directive in an [**INF DDInstall.Interfaces section**](inf
 
 An *add-interface-section* referenced by the **AddInterface** directive has the following form:
 
-```
+```cpp
 [add-interface-section]
  
 AddReg=add-registry-section[, add-registry-section]...
@@ -89,7 +86,7 @@ Examples
 
 This example shows some of the expansion of the *DDInstall*.**Interfaces** section for a particular audio device that supports system-defined kernel-streaming interfaces.
 
-```
+```cpp
 ; ...
 [ESS6881.Device.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,ESSAud.Interface.Wave

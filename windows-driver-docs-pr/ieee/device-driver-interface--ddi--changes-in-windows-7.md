@@ -3,11 +3,8 @@ title: Device Driver Interface (DDI) Changes in Windows 7
 author: windows-driver-content
 description: This topic summarizes the general DDI changes that support the new 1394 bus driver.
 ms.assetid: 5473C6AC-284C-41B1-AA67-75696BE96C24
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Driver Interface (DDI) Changes in Windows 7
@@ -60,7 +57,7 @@ The following table describes the changes in functional behavior of the DDIs exp
 
  
 
-## <a href="" id="speed"></a>New Flags for Speed and Payload Size
+## New Flags for Speed and Payload Size
 
 
 The 1394 header file, 1394.h, in the Windows 7 Windows Driver Kit defines new flags for faster speeds and larger payloads. This section describes these new flags and values.
@@ -95,7 +92,7 @@ The following table describes the speed code values for each newly supported spe
 
  
 
-## <a href="" id="ioctl"></a>IEEE 1394 IOCTL Changes
+## IEEE 1394 IOCTL Changes
 
 
 This section describes the 1394 I/O requests that use the new speed and payload size values.
@@ -185,6 +182,5 @@ Specifies the maximum possible transaction speed between the source device and t
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

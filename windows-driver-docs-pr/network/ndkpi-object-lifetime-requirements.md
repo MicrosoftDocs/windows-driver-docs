@@ -2,11 +2,8 @@
 title: NDKPI Object Lifetime Requirements
 description: This section describes NDKPI object lifetime requirements
 ms.assetid: 94993523-D0D7-441E-B95C-417800840BAC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDKPI Object Lifetime Requirements
@@ -84,7 +81,7 @@ Consider the following scenario:
 2.  The provider returns STATUS\_PENDING, and later calls the consumer's completion callback.
 3.  Inside this completion callback, the consumer signals an event that it's now OK to close the NDK\_ADAPTER.
 4.  Another thread wakes up upon this signal, and closes the [**NDK\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/hh439848) and proceeds to unload.
-5.  However, the thread in which the consumer's CQ close completion callback was called might still be inside the consumer's callback function (for example, the function [epilog](http://msdn.microsoft.com/library/tawsa7cb.aspx)), so it's not safe for the consumer driver to unload.
+5.  However, the thread in which the consumer's CQ close completion callback was called might still be inside the consumer's callback function (for example, the function [epilog](https://msdn.microsoft.com/library/tawsa7cb.aspx)), so it's not safe for the consumer driver to unload.
 6.  Because the completion callback context is the only context the consumer can signal the event, the consumer driver can't solve the safe-unload issue itself.
 
 There must be a point at which the consumer can be assured that all of its callbacks have returned control. In NDKPI, this point is when the close request on a [**NDK\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/hh439848) returns control. Note that **NDK\_ADAPTER** close request is a blocking call. When an **NDK\_ADAPTER** close request returns, it's guaranteed that all callbacks on all objects that descend from that **NDK\_ADAPTER** object have returned control to the provider.

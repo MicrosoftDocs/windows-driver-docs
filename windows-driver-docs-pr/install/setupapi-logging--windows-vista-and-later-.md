@@ -7,11 +7,8 @@ keywords:
 - logging WDK SetupAPI
 - SetupAPI logging WDK Windows Vista
 - SetupAPI logging WDK Windows Vista , about SetupAPI logging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SetupAPI Logging

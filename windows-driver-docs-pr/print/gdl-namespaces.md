@@ -8,11 +8,8 @@ keywords:
 - namespaces WDK GDL
 - namespaces WDK GDL , examples
 - unnamed namespaces WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDL Namespaces
@@ -32,7 +29,7 @@ A template or macro name can be referenced in a qualified or unqualified form in
 
 For example, after a template that is named "TEMPNAME" has been defined within a namespace that is named "NSName", that template can be referenced by another template definition by using the namespace qualified form, as the following code example shows.
 
-```
+```cpp
 *DefineInNameSpace: NSName
 {
     *Template:  TEMPNAME
@@ -44,7 +41,7 @@ For example, after a template that is named "TEMPNAME" has been defined within a
 
 This template can now be referenced from another template by using the namespace qualified syntax, as the following code example shows.
 
-```
+```cpp
 *Template:  ANOTHER_TEMPLATE
 {
     *Inherits: NSName:TEMPNAME
@@ -67,7 +64,7 @@ For example, the template that was defined earlier showed two namespaces that ha
 
 The following code example shows how to specify the "unnamed" namespace to define the search order.
 
-```
+```cpp
 *UsingNameSpace: NSName2
 {
     *UsingNameSpace:  *%%%%%  omitting symbol specifies the  Unnamed 
@@ -99,7 +96,5 @@ Namespace constructs can be interleaved between other types of constructs. There
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20GDL%20Namespaces%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

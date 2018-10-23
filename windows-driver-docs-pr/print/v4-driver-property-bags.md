@@ -3,11 +3,8 @@ title: V4 Printer Driver Property Bags
 author: windows-driver-content
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 ms.assetid: 4E20303A-BEB3-4928-BA5A-356D978FA2BE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Property Bags
@@ -104,7 +101,7 @@ The DEVMODE property bag uses an XML file to specify the members of the property
 
 The follwoing code snippet shows a DEVMODE Property Bag Mapping XML Sample.
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
   <Property Name="FabrikamAccountCode">
@@ -181,7 +178,7 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 
 **Queue Property Bag XML Sample**. The following code snippet shows the XML syntax that could be used for three properties, Name1, Name2, Name3 and their child elements:
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Properties xmlns= "http://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
   <Property Name="Name1">
@@ -208,7 +205,5 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 [**IPrinterScriptContext**](https://msdn.microsoft.com/library/windows/hardware/hh768279)  
 [**Print Filter Pipeline Property Bag**](https://msdn.microsoft.com/library/windows/hardware/ff561066)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Printer%20Driver%20Property%20Bags%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

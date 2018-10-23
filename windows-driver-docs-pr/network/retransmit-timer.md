@@ -6,11 +6,8 @@ keywords:
 - timers WDK TCP chimney offload , retransmit timers
 - TCP timers WDK TCP chimney offload , retransmit timers
 - retransmit timers WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retransmit Timer

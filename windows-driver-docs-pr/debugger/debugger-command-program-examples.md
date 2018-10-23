@@ -3,11 +3,9 @@ title: Debugger Command Program Examples
 description: Debugger Command Program Examples
 ms.assetid: da756906-6243-4cb9-b4e5-5b0b4540533d
 keywords: ["debugger command program, examples"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugger Command Program Examples
@@ -22,19 +20,19 @@ The following sections describe debugger command programs.
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting at the address of where the 5a4d DWORD was found.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place L8 } 
 ```
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting 4 bytes prior to the address where the 5a4d DWORD was found.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place -0x4 L8 } 
 ```
 
 The following example displays the same values.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc ( place -0x4 ) L8 } 
 ```
 
@@ -46,7 +44,7 @@ The **-\[1\]** option together with the [**s (Search Memory)**](s--search-memory
 
 The following command displays verbose module information for all modules that are located in the memory range from 0x77000000 through 0x7F000000.
 
-```
+```dbgcmd
 0:000> .foreach (place { lm1m }) { .if ((${place} >= 0x77000000) & (${place} <= 0x7f000000)) { lmva place } } 
 ```
 
@@ -68,7 +66,7 @@ This example illustrates the following features:
 
 -   The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-register **$t2**.
 
-```
+```dbgcmd
 $$  Get process list LIST_ENTRY in $t0.
 r $t0 = nt!PsActiveProcessHead
 
@@ -109,7 +107,7 @@ This example illustrates the following features:
 
 -   The [**.block**](-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
 
-```
+```dbgcmd
 $$ Get module list LIST_ENTRY in $t0.
 r? $t0 = &@$peb->Ldr->InLoadOrderModuleList
  
@@ -138,7 +136,6 @@ $$ Iterate over all modules in list.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugger%20Command%20Program%20Examples%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

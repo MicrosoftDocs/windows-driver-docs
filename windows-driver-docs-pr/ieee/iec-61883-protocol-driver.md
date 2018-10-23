@@ -6,17 +6,14 @@ ms.assetid: d1e639f0-a22f-4005-86a7-fdbfe509265b
 keywords:
 - IEC-61883 client drivers WDK IEEE 1394 bus
 - 61883 WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IEC-61883 Protocol Driver
 
 
-## <a href="" id="ddk-iec-61883-protocol-driver-kg"></a>
+
 
 
 The IEC-61883 protocol driver, *61883.sys*, supports function control protocol (FCP), common isochronous packet (CIP) format, and connection management procedures (CMP), as defined in the IEC 61883-1 specification. The protocol driver strips stream packet headers from requests, supports scatter/gather, and limits buffer copies to move large amounts of data efficiently.
@@ -28,6 +25,5 @@ To issue IEC-61883 commands to devices connected to the IEEE 1394 bus, IEC-61883
  
 
 
---------------------
 
 

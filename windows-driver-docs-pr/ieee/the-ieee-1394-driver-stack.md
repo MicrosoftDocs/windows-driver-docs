@@ -9,17 +9,14 @@ keywords:
 - driver stacks WDK IEEE 1394 bus
 - stacks WDK IEEE 1394 bus
 - device stacks WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The IEEE 1394 Driver Stack
 
 
-## <a href="" id="ddk-the-ieee-1394-driver-stack-kg"></a>
+
 
 
 The following diagram illustrates the IEEE 1394 driver stack with the new 1394 bus driver and the Microsoft-supported 1394 client drivers.
@@ -41,6 +38,5 @@ During normal operation, drivers receive ordinary I/O requests (such as [**IRP\_
 ## Related topics
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

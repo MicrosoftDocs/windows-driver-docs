@@ -10,11 +10,8 @@ keywords:
 - NetDMA WDK networking , descriptor handling
 - NetDMA 2.0 WDK networking , descriptor handling
 - NetDMA 2.0 WDK networking , chained descriptors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extensions to Chained Descriptors
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-extensions-to-chained-descriptors-ng"></a>
+
 
 
 In NetDMA versions before 2.0, the linked list of descriptors is NULL-terminated. The DMA engine stops after processing a descriptor with **NULL** for the address of the next descriptor (that is, the **NextDescriptor** member in [**NET\_DMA\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568734) structure). This design requires the NetDMA interface to go back and modify the last submitted descriptor every time that the NetDMA interface needed to submit a new batch of descriptors. This design also forces the DMA engine to perform a DMA re-read on the last submitted descriptor, and there were some caching issues that negatively impact the computer performance.

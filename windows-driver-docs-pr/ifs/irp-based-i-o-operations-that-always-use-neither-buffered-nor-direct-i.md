@@ -5,11 +5,8 @@ description: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direc
 ms.assetid: 2d757904-e46c-476d-896c-77beacfe4b7c
 keywords:
 - neither buffered nor direct I/O WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
@@ -33,6 +30,5 @@ The following IRP-based I/O operations always use neither buffered nor direct I/
  
 
 
---------------------
 
 

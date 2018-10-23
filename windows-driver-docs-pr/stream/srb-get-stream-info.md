@@ -9,11 +9,8 @@ api_name:
 - SRB_GET_STREAM_INFO
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SRB\_GET\_STREAM\_INFO
@@ -34,7 +31,7 @@ Indicates successful completion of the command.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff567785).
 
@@ -45,7 +42,8 @@ The class driver normally issues this request only once. The minidriver may forc
 **When the SRB\_GET\_STREAM\_INFO command is received by the minidriver, the minidriver should:**
 
 1.  Retrieve the pointers for the stream header and the stream information data structures. For example:
-    ```
+
+    ```cpp
      PHW_STREAM_HEADER pstrhdr =
       (PHW_STREAM_HEADER)&amp;(pSrb->CommandData.StreamBuffer->StreamHeader);
      PHW_STREAM_INFORMATION pstrinfo =
@@ -56,13 +54,3 @@ The class driver normally issues this request only once. The minidriver may forc
 2.  Verify that the buffer is large enough to hold the returned data.
 
 3.  Write the information to the buffer.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20SRB_GET_STREAM_INFO%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

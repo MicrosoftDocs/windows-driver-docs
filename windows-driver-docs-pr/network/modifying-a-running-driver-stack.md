@@ -4,17 +4,14 @@ description: Modifying a Running Driver Stack
 ms.assetid: b8279471-50f4-46f5-8c77-d354dd9b94b5
 keywords:
 - driver stacks WDK networking , modifying a running stack
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying a Running Driver Stack
 
 
-## <a href="" id="ddk-modifying-a-running-driver-stack-ng"></a>
+
 
 
 NDIS modifies a driver stack for operations such as inserting, removing, or reconfiguring a filter module. NDIS can activate or deactivate the bypass mode in a filter module. For more information about bypass mode in filter drivers, see [Data Bypass Mode](data-bypass-mode.md).

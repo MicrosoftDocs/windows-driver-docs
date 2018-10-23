@@ -3,11 +3,8 @@ title: EFI_USB_BOS_DESCRIPTOR
 author: windows-driver-content
 description: EFI_USB_BOS_DESCRIPTOR
 ms.assetid: A12E3678-E5B6-4AB0-8F28-FCDA57C9D397
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_BOS\_DESCRIPTOR
@@ -18,7 +15,7 @@ The **EFI\_USB\_BOS\_DESCRIPTOR** structure provides information about the Binar
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     UINT8   Length;
@@ -53,6 +50,5 @@ The number of separate device capability descriptors in the BOS.
  
 
 
---------------------
 
 

@@ -3,17 +3,15 @@ title: ndiskd.af
 description: The ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
 ms.assetid: 737AB46E-DFAA-42D6-A9BD-B7223167D0DD
 keywords: ["ndiskd.af Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.af
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.af
@@ -21,7 +19,7 @@ api_type:
 
 The **!ndiskd.af** extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
 
-```
+```console
 !ndiskd.af [-handle <x>] 
 ```
 
@@ -47,7 +45,7 @@ Examples
 
 CoNDIS is used in certain situations such as connecting to a VPN, so running **!ndiskd.af** will not show you results unless a miniport driver on your system has created and activated a CoNDIS virtual connection. The following example shows results from a machine that is connected to a VPN network. First, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters to see a list of miniports and miniport drivers on the system. In the following output, look for the miniport driver for the Marvell AVASTAR Wireless-AC Network Controller network adapter. Its handle is ffffc804af2e3710.
 
-```
+```console
 1: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
@@ -68,7 +66,7 @@ CoNDIS is used in certain situations such as connecting to a VPN, so running **!
 
 Next, enter the **!ndiskd.af** command with the miniport driver's handle to see the address family for this miniport driver, which is acting as a connection-oriented client.
 
-```
+```console
 1: kd> !ndiskd.af ffffc804af2e3710
 
 
@@ -132,7 +130,6 @@ CLIENT HANDLERS
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.af%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

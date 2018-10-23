@@ -7,11 +7,8 @@ keywords:
 - storage class drivers WDK , about storage class drivers
 - class drivers WDK storage , about storage class drivers
 - HBA WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Storage Class Drivers
@@ -41,6 +38,5 @@ To the PnP manager, a storage class driver is a [Function Drivers](https://msdn.
  
 
 
---------------------
 
 

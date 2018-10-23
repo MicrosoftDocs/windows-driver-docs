@@ -3,11 +3,9 @@ title: Kill Tool
 description: The Kill tool, kill.exe, terminates one or more processes and all of their threads. This tool works only on processes running on the local computer.
 ms.assetid: e1733a74-2a31-436f-87b8-e704b27b6f04
 keywords: kill Tool, Kill.exe, kill.exe
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kill Tool
@@ -23,7 +21,7 @@ Kill.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="Kill_Tool_command-line_options"></span><span id="kill_tool_command-line_options"></span><span id="KILL_TOOL_COMMAND-LINE_OPTIONS"></span>Kill Tool command-line options
 
 
-```
+```console
 kill [/f] { PID | Pattern* }
 ```
 
@@ -47,19 +45,19 @@ Before using a pattern that might match many process or window names unintention
 
 The following command terminates processes whose names begin with "myapp."
 
-```
+```console
 kill myapp*
 ```
 
 The following command terminates the process whose process ID (PID) is 2520:
 
-```
+```console
 kill 2520
 ```
 
 The following command terminates processes whose names begin with "my\*." It does not prompt for confirmation. This command succeeds even when this process is a system service:
 
-```
+```console
 kill /f my*
 ```
 
@@ -72,7 +70,6 @@ kill /f my*
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Kill%20Tool%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: 342f534e-d203-4823-a4d8-a8a51b7ff0bd
 keywords:
 - connection-oriented clients WDK
 - client operations WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Operations Performed by Clients
 
 
-## <a href="" id="ddk-connection-oriented-operations-performed-by-clients-ng"></a>
+
 
 
 A connection-oriented client:

@@ -2,11 +2,8 @@
 title: Accessing Device Class Properties
 description: Accessing Device Class Properties
 ms.assetid: 51eef1f4-ca7d-46ab-a33f-be53de277541
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Device Class Properties

@@ -4,11 +4,8 @@ author: windows-driver-content
 ms.assetid: 2B15570A-A220-4BF7-B595-D9CF66E02673
 keywords: ["Examples of sequences of IOCTLs in the Smart Card resource manager including start-up connection and disconnection", "NFC","near field communications","proximity","near field proximity","NFP"]
 description: Provides examples of sequences of IOCTLs in the Smart Card resource manager, including start-up, connection, and disconnection.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example sequence

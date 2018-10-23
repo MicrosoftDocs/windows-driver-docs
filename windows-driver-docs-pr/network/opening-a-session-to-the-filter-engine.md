@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , opening sessions
 - filter engine WDK Windows Filtering Platform
 - opening filter engine sessions WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening a Session to the Filter Engine
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 A callout driver must open a session to the filter engine to perform management tasks such as adding filters to the filter engine. A callout driver opens a session to the filter engine by calling the [**FwpmEngineOpen0**](https://msdn.microsoft.com/library/windows/hardware/ff550075) function. For example:
 
-```
+```cpp
 HANDLE engineHandle;
 NTSTATUS status;
 

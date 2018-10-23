@@ -11,11 +11,8 @@ keywords:
 - WPP software tracing WDK , about WPP
 - default WPP software tracing
 - tracing WDK , WPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WPP Software Tracing
@@ -81,7 +78,7 @@ The basic process for adding WPP software tracing to a driver or application, in
 **Note**   Event Tracing for Windows (ETW) and WPP support most types of kernel-mode and user-mode drivers. However, ETW and WPP use types that are not available for certain types of drivers, such as miniport drivers. To determine whether a particular driver type is supported, add basic WPP macros to the driver, such as [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) and [WPP\_CLEANUP](https://msdn.microsoft.com/library/windows/hardware/ff556179). If the code does not compile because the types that are used are not defined, ETW and WPP cannot support the driver type.
 For more information about ETW, see [Event Tracing](http://go.microsoft.com/fwlink/p/?linkid=179202) in the Windows SDK documentation.
 
- 
+**Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](https://msdn.microsoft.com/library/windows/desktop/aa363668#providers) for more information.
 
 For information about the [WMI library support routines](https://msdn.microsoft.com/library/windows/hardware/ff566359) that support WPP software tracing, see:
 
@@ -95,7 +92,6 @@ For information about the [WMI library support routines](https://msdn.microsoft.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20WPP%20Software%20Tracing%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

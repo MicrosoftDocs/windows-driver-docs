@@ -5,11 +5,8 @@ ms.assetid: 19eb2328-0ffa-4c40-bfab-6a5a3a3b4b7b
 keywords:
 - 802.1Q and 802.1p information WDK TCP chimney offload , failing requests
 - failing requests for 802.1Q information WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Whether to Fail an Offload Request Because of 802.1Q Information
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-determining-whether-to-fail-an-offload-request-because-of-802-1q-o"></a>
+
 
 
 When the host stack makes an initiate offload request, one or more filter or intermediate drivers might be present between the host stack and the offload target. During the initiate offload request, a filter or intermediate driver might set the **VlanId** member of [**NEIGHBOR\_OFFLOAD\_STATE\_CONST**](https://msdn.microsoft.com/library/windows/hardware/ff568324) structure, the **UserPriority** member of the [**TCP\_OFFLOAD\_STATE\_CACHED**](https://msdn.microsoft.com/library/windows/hardware/ff570937) structure, or both.

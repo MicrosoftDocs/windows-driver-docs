@@ -8,17 +8,14 @@ keywords:
 - protocol bindings WDK networking
 - binding operations WDK networking
 - porting protocol drivers WDK networking , binding operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations
 
 
-## <a href="" id="ddk-supporting-ndis-6-0-protocol-binding-pause-and-restart-operations-"></a>
+
 
 
 NDIS 6.0 introduces driver stack pause and restart capabilities. A pause operation transitions a protocol binding to the *Paused* state. A restart operation transitions a protocol binding to the *Running* state. For an overview of binding states, see [Binding States of a Protocol Driver](binding-states-of-a-protocol-driver.md).

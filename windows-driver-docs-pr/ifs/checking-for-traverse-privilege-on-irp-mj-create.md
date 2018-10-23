@@ -11,11 +11,8 @@ keywords:
 - paths WDK file systems
 - generic security checks WDK file systems
 - SeChangeNotifyPrivilege
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking for Traverse Privilege on IRP\_MJ\_CREATE
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 
 One of the primary concerns [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630) checks is whether the caller has traverse privilege (does the caller have the right to access the path to the object). Since most callers have traverse privilege, one of the first checks normally done within the file system is checking for the traverse privilege:
 
-```
+```cpp
     BOOLEAN traverseCheck = 
         !(IrpContext->IrpSp->Parameters.Create.SecurityContext->AccessState->Flags
             & TOKEN_HAS_TRAVERSE_PRIVILEGE);
@@ -36,7 +33,7 @@ Note that the traverse privilege check relies upon the state information passed 
 
 {
 
-```
+```cpp
     SeLockSubjectContext(
         &accessParams.AccessState->SubjectSecurityContext);
 //
@@ -112,6 +109,5 @@ Note that for a simple traverse check, the requested access would be FILE\_TRAVE
  
 
 
---------------------
 
 

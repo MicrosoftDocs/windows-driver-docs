@@ -3,17 +3,15 @@ title: bp, bu, bm (Set Breakpoint)
 description: The bp, bu, and bm commands set one or more software breakpoints. You can combine locations, conditions, and options to set different kinds of software breakpoints.
 ms.assetid: 77d095fe-06d1-4842-ad49-8420ab4d5d72
 keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - bp, bu, bm (Set Breakpoint)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bp, bu, bm (Set Breakpoint)
@@ -23,7 +21,7 @@ The **bp**, **bu**, and **bm** commands set one or more software breakpoints. Yo
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] bp[ID] [Options] [Address [Passes]] ["CommandString"] 
 [~Thread] bu[ID] [Options] [Address [Passes]] ["CommandString"] 
 [~Thread] bm [Options] SymbolPattern [Passes] ["CommandString"]
@@ -31,7 +29,7 @@ User-Mode
 
 Kernel-Mode
 
-```
+```dbgcmd
 bp[ID] [Options] [Address [Passes]] ["CommandString"] 
 bu[ID] [Options] [Address [Passes]] ["CommandString"] 
 bm [Options] SymbolPattern [Passes] ["CommandString"]
@@ -162,7 +160,7 @@ The **bm** command is useful when you want to use wildcard characters in the sym
 
 Example
 
-```
+```dbgcmd
 0:000> bm myprogram!mem* 
   4: 0040d070 MyProgram!memcpy
  5: 0040c560 MyProgram!memmove
@@ -185,19 +183,19 @@ The **bp**, **bu**, and **bm** commands set software breakpoints by replacing th
 
 The following command sets a breakpoint 12 bytes past the beginning of the function **MyTest**. This breakpoint is ignored for the first six passes through the code, but execution stops on the seventh pass through the code.
 
-```
+```dbgcmd
 0:000> bp MyTest+0xb 7 
 ```
 
 The following command sets a breakpoint at **RtlRaiseException**, displays the **eax** register, displays the value of the symbol **MyVar**, and continues.
 
-```
+```dbgcmd
 kd> bp ntdll!RtlRaiseException "r eax; dt MyVar; g"
 ```
 
 The following two **bm** commands set three breakpoints. When the commands are executed, the displayed result does not distinguish between breakpoints created with the **/d** switch and those created without it. The [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) can be used to distinguish between these two types. If the breakpoint was created by **bm** without the **/d** switch, the **.bpcmds** display indicates the breakpoint type as **bu**, followed by the evaluated symbol enclosed in the **@!""** token (which indicates it is a literal symbol and not a numeric expression or register). If the breakpoint was created by **bm** with the **/d** switch, the **.bpcmds** display indicates the breakpoint type as **bp**.
 
-```
+```dbgcmd
 0:000> bm myprog!openf* 
   0: 00421200 @!"myprog!openFile"
   1: 00427800 @!"myprog!openFilter"
@@ -215,7 +213,6 @@ bp2 0x00421600 ;
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20bp,%20bu,%20bm%20%28Set%20Breakpoint%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

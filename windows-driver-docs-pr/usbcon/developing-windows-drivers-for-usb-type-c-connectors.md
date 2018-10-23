@@ -2,11 +2,8 @@
 Description: You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided UCSI driver.
 title: Developing Windows drivers for USB Type-C connectors
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing Windows drivers for USB Type-C connectors
@@ -18,7 +15,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 **Last Updated**
 
--   March 2016
+-   September 2018
 
 **Windows version**
 
@@ -27,19 +24,16 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 **Important APIs**
 
--   [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
-
--   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
-
+-   [USB Type-C driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 ![drivers](images/drivers-c.png)
 
 | Hardware/Firmware capabilities                        | Non-detachable    | Add-on card    | 
 |------------------------------------------------------ |-------------      |---            |
-|USB Type-C connector does not have a PD state machine.  | Write a client driver to UcmTcpciCx. <p>Start with [UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample) </p>| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).</p>| 
-|Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsi.sys.  |N/A| 
-|Connector is UCSI-compliant without ACPI.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus. |
-| Has PD state machine but is not UCSI-compliant.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).  |Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>|                 
+|USB Type-C connector does not have a PD state machine.  | [Write a client driver to UcmTcpciCx](https://docs.microsoft.com/windows-hardware/drivers/usbcon/write-a-usb-type-c-port-controller-driver). <p>Start with [UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample) </p>| [Write a client driver to UcmCx](https://docs.microsoft.com/windows-hardware/drivers/usbcon/bring-up-a-usb-type-c-connector-on-a-windows-system). <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).</p>| 
+|Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsiCx.sys and UcmUcsiAcpiClient. See [USB Type-C Connector System Software Interface (UCSI) driver](https://docs.microsoft.com/windows-hardware/drivers/usbcon/ucsi). |N/A| 
+|Connector is UCSI-compliant without ACPI.| Write a client driver to UcmUcsiCx. For more information, see [Write a UCSI client driver](write-a-ucsi-driver.md). <p>Start with [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI portions with your implementation for the required bus.| [Write a client driver to UcmCx](https://docs.microsoft.com/windows-hardware/drivers/usbcon/bring-up-a-usb-type-c-connector-on-a-windows-system). |
+| Has PD state machine but is not UCSI-compliant.| [Write a client driver to UcmCx](https://docs.microsoft.com/windows-hardware/drivers/usbcon/bring-up-a-usb-type-c-connector-on-a-windows-system). <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).  | [Write a client driver to UcmCx](https://docs.microsoft.com/windows-hardware/drivers/usbcon/bring-up-a-usb-type-c-connector-on-a-windows-system)<p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>|                 
 ## In this section
 To implementation the proposed solutions in the preceding table, read these topics:
 <table>
@@ -75,6 +69,16 @@ To implementation the proposed solutions in the preceding table, read these topi
 <td><p>Describes how to write a the USB Type-C port controller driver that communicates with a USB Type-C connector without PD state machine. </p></td>
 
 </tr>
+<tr class="even">
+<td><p>[Write a UCSI client driver](write-a-ucsi-driver.md)</p></td>
+<td><p>Describes how to write a driver for a UCSI-compliant controller that uses non-ACPI transport. </p></td>
+
+</tr>
+
+<tr>
+<tr class="odd">
+<td>[Write a USB Type-C Policy Manager client driver](policy-manager-client.md)</td>
+<td>The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB Type-C connectors. Windows, version 1809, introduces a set of programming interfaces that you can use to write a client driver to Policy Manager. The client driver can participate in the policy decisions for USB Type-C connectors. With this set, you can choose to write a kernel-mode export driver or a user-mode driver. </td>
 </tbody>
 </table>
 
@@ -82,20 +86,19 @@ To implementation the proposed solutions in the preceding table, read these topi
 
 **Related sections**
 
-<a href="" id="write-a-usb-role-switch--urs--client-driver"></a>Write a USB role-switch (URS) client driver  
-[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)
+[Write a USB role-switch (URS) client driver ](usb-dual-role-driver-stack-architecture.md)
 
 [USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)
 
-<a href="" id="write-a-usb-function-client-driver"></a>Write a USB function client driver  
-[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)
+[Write a USB function client driver](developing-windows-drivers-for-usb-function-controllers.md)  
 
 [USB function controller programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)
 
 ## Related topics
+
 [Windows support for USB Type-C connectors](oem-tasks-for-bringing-up-a-usb-typec.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Developing%20Windows%20drivers%20for%20USB%20Type-C%20connectors%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

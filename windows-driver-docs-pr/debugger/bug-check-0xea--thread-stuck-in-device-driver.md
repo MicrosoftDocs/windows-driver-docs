@@ -3,17 +3,15 @@ title: Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER
 description: The THREAD_STUCK_IN_DEVICE_DRIVER bug check has a value of 0x000000EA. This indicates that a thread in a device driver is endlessly spinning.
 ms.assetid: f3d6acaf-3445-4fc3-b4ed-b72a74a32b57
 keywords: ["Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER", "THREAD_STUCK_IN_DEVICE_DRIVER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - THREAD_STUCK_IN_DEVICE_DRIVER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xEA: THREAD\_STUCK\_IN\_DEVICE\_DRIVER
@@ -21,7 +19,7 @@ api_type:
 
 The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This indicates that a thread in a device driver is endlessly spinning.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## THREAD\_STUCK\_IN\_DEVICE\_DRIVER Parameters
 

@@ -3,13 +3,10 @@ title: SO_WSK_SECURITY
 author: windows-driver-content
 description: SO_WSK_SECURITY
 ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SO\_WSK\_SECURITY
@@ -70,12 +67,6 @@ To apply a security descriptor to a socket, a WSK application calls the [**WskCo
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to apply a security descriptor to a socket.
 
 If a WSK application uses this socket option to apply a security descriptor to a socket, the new security descriptor replaces any security descriptor that was previously applied to the socket.
@@ -135,12 +126,6 @@ To retrieve a cached copy of a socket's security descriptor from a socket, a WSK
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to retrieve a cached copy of a socket's security descriptor from a socket.
 
 A WSK application must call the [**WskControlClient**](https://msdn.microsoft.com/library/windows/hardware/ff571126) function with the [**WSK\_RELEASE\_SD**](wsk-release-sd.md) control code to release the cached copy of the security descriptor when it is no longer needed.
@@ -172,7 +157,5 @@ Requirements
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SO_WSK_SECURITY%20%20RELEASE:%20%287/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

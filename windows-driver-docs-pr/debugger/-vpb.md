@@ -3,17 +3,15 @@ title: vpb
 description: The vpb extension displays a volume parameter block (VPB).
 ms.assetid: 978d4ec8-6141-4656-9e5c-266de91c9440
 keywords: ["vpb Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - vpb
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !vpb
@@ -21,7 +19,7 @@ api_type:
 
 The **!vpb** extension displays a volume parameter block (VPB).
 
-```
+```dbgcmd
 !vpb Address
 ```
 
@@ -61,7 +59,7 @@ Remarks
 
 Here is an example. First, the device tree is displayed with the [**!devnode**](-devnode.md) extension:
 
-```
+```dbgcmd
 kd> !devnode 0 1
 Dumping IopRootDeviceNode (= 0x80e203b8)
 DevNode 0x80e203b8 for PDO 0x80e204f8
@@ -89,7 +87,7 @@ DevNode 0x80e203b8 for PDO 0x80e204f8
 
 The last device node listed is a volume. Examine its physical device object (PDO) with the [**!devobj**](-devobj.md) extension:
 
-```
+```dbgcmd
 kd> !devobj 80e15cb8
 Device object (80e15cb8) is for:
  HarddiskVolume1 \Driver\Ftdisk DriverObject 80e4e248
@@ -102,7 +100,7 @@ Device queue is not busy.
 
 The address of this device's VPB is included in this listing. Use this address with the **!vpb** extension:
 
-```
+```dbgcmd
 kd> !vpb 80e15c30
 Vpb at 0x80e15c30
 Flags: 0x1 mounted 
@@ -116,7 +114,6 @@ Volume Label:           MY-DISK-C
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!vpb%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

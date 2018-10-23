@@ -2,11 +2,8 @@
 Description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. 
 title: Test USB Type-C systems with USB Type-C ConnEx
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -130,7 +127,7 @@ Here are the tools in MUTT software package that are specific to USB Type-C Conn
 
 For information about all other tools, see [Tools in the MUTT software package](mutt-software-package.md).
 
-## <a href="" id="config"></a>Get started...
+## Get started...
 
 
 Follow this procedure to set up your test environment.
@@ -207,7 +204,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         ![USB Type-C ConnEx in device manager](images/connexc-connect8.png)
 
-## <a href="" id="connexutil"></a>ConnExUtil.exe
+## ConnExUtil.exe
 
 
 Here are the command line options that ConnExUtil.exe supports for controlling the USB Type-C ConnEx board.
@@ -257,13 +254,11 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 <tr class="odd">
 <td>Device Command</td>
 <td><strong>/getPort</strong></td>
-<td>Read the currently connected port.
-<p>Read a port either by specifying number (1 – 4) or by name (<strong>J2</strong>, <strong>J3</strong>, <strong>J4</strong>, <strong>J6</strong>).</p>
-<p>0 disconnects all ports.</p></td>
+<td>Read the currently connected port.</td>
 </tr>
 <tr class="even">
 <td>Device Command
-<p>Read amperage/volt information</p></td>
+<p>Read amperage/voltage information</p></td>
 <td><p><strong>/volts</strong></p>
 <p><strong>/amps</strong></p>
 <p><strong>/version</strong></p></td>
@@ -357,7 +352,7 @@ do (
 )
 ```
 
-## <a href="" id="scripts"></a>Scripts for controlling the USB Type-C ConnEx board
+## Scripts for controlling the USB Type-C ConnEx board
 
 
 These scripts exercise the control interface supported by ConnExUtil.exe to run sequential and stress type tests with the USB Type-C ConnEx through the command line. All of these scripts support the optional command line parameter **audio** to indicate that the USB Type-C ConnEx board is connected over the 3.5 mm audio interface. By default they will only attempt to use USB connected boards.
@@ -413,7 +408,7 @@ Confirms that core aspects of device enumeration are functional.
 <a href="" id="charging-and-power-delivery--pd-"></a>[Charging and power delivery (PD)](#st2)  
 Confirms charging with USB Type-C.
 
-## <a href="" id="ft1"></a>FT Case 1: Device Enumeration
+## FT Case 1: Device Enumeration
 
 
 ![ft case 1: device enumeration](images/ft1.png)
@@ -438,7 +433,7 @@ Confirms charging with USB Type-C.
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft2"></a>FT Case 2: Alternate Mode Negotiation
+## FT Case 2: Alternate Mode Negotiation
 
 
 ![ft case 2: alternate mode negotiation](images/ft2.png)
@@ -463,7 +458,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft3"></a>FT Case 3: Charging and power delivery (PD)
+## FT Case 3: Charging and power delivery (PD)
 
 
 ![ft case 3: charging and power delivery (pd)](images/ft3.png)
@@ -501,7 +496,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft4"></a>FT Case 4: Role Swap
+## FT Case 4: Role Swap
 
 
 ![ft case 4: role swap](images/ft4.png)
@@ -531,7 +526,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="st1"></a>ST Case 1: Device Enumeration
+## ST Case 1: Device Enumeration
 
 
 ![st case 1: device enumeration](images/ft1.png)
@@ -559,7 +554,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="st2"></a>ST Case 2: Charging and power delivery (PD)
+## ST Case 2: Charging and power delivery (PD)
 
 
 ![st case 2: charging and power delivery (pd)](images/ft3.png)
@@ -645,23 +640,7 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 ## Using ETW to log issues
 
 
-To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?LinkId=623316).
-
-To enable USB 3.0 logging, perform the following commands instead (or see [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)):
-
-``` syntax
-logman start usbtrace -ets -o usbtrace.etl -nb 128 640 -bs 128
-logman update usbtrace -ets -p Microsoft-Windows-USB-UCX Default
-logman update usbtrace -ets -p Microsoft-Windows-USB-USBHUB3 Default
-```
-
-After these are logs are captured, perform the test scenario.
-
-Stop the trace by using this command:
-
-``` syntax
-logman stop usbtrace -ets
-```
+Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Reporting test results
 
@@ -677,8 +656,6 @@ Provide these details:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

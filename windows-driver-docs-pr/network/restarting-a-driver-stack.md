@@ -5,17 +5,14 @@ ms.assetid: 5c9138f8-4a29-4740-b085-efe24d950fba
 keywords:
 - driver stacks WDK networking , restarting
 - restarting driver stacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Restarting a Driver Stack
 
 
-## <a href="" id="ddk-restarting-a-driver-stack-ng"></a>
+
 
 
 NDIS restarts a driver stack after operations such as inserting a filter module or adding a binding. A driver stack restart operation proceeds as follows:

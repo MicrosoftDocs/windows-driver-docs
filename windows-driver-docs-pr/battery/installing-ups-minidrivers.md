@@ -4,11 +4,8 @@ description: Installing UPS Minidrivers
 ms.assetid: 37f91b0d-79b1-4482-9db7-8007f78194ac
 keywords:
 - UPS minidrivers WDK , installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing UPS Minidrivers
@@ -26,6 +23,5 @@ One responsibility of the installation operation is to create [UPS\\ServiceProvi
  
 
 
---------------------
 
 

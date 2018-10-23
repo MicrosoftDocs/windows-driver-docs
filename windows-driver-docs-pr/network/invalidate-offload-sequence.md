@@ -4,11 +4,8 @@ description: Invalidate Offload Sequence
 ms.assetid: 691bd23c-f006-4f86-9a44-e4a906820c91
 keywords:
 - invalidating offloaded state WDK TCP chimney offload , sequence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Invalidate Offload Sequence
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-invalidate-offload-sequence-ng"></a>
+
 
 
 When the host stack sends an invalidate offload request to NDIS, NDIS calls the offload target's [**MiniportInvalidateOffload**](https://msdn.microsoft.com/library/windows/hardware/ff559406) function. The *MiniportInvalidateOffload* function inputs the following parameters:

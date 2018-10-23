@@ -3,11 +3,8 @@ title: Support for device properties
 author: windows-driver-content
 description: Support for device properties
 ms.assetid: ED9A67C4-DFD6-4CF1-B911-29570B3409A5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for device properties
@@ -37,17 +34,17 @@ The source file, SensorDdi.cpp, has three arrays of **PROPERTYKEY** structures t
 
 The first array has the general sensor properties - strings like the manufacturer's name, device model, and serial number. In addition, there are values like the minimum and maximum range, sensor resolution, and the minimum supported report interval.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SupportedAccelerometerProperties[] =
 {
     WPD_OBJECT_ID,
     SENSOR_PROPERTY_TYPE,
     SENSOR_PROPERTY_PERSISTENT_UNIQUE_ID,
-    SENSOR_PROPERTY_MANUFACTURER, 
+    SENSOR_PROPERTY_MANUFACTURER,
     SENSOR_PROPERTY_MODEL,
     SENSOR_PROPERTY_SERIAL_NUMBER,
     SENSOR_PROPERTY_FRIENDLY_NAME,
-    SENSOR_PROPERTY_DESCRIPTION, 
+    SENSOR_PROPERTY_DESCRIPTION,
     SENSOR_PROPERTY_CONNECTION_TYPE,
     SENSOR_PROPERTY_RANGE_MINIMUM,
     SENSOR_PROPERTY_RANGE_MAXIMUM,
@@ -60,7 +57,7 @@ const PROPERTYKEY g_SupportedAccelerometerProperties[] =
 
 The second array has three per data-field properties - the minimum and maximum range as well as the sensor resolution.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SupportedPerDataFieldProperties[] =
 {
     SENSOR_PROPERTY_RANGE_MINIMUM,
@@ -71,7 +68,7 @@ const PROPERTYKEY g_SupportedPerDataFieldProperties[] =
 
 The third array contains the accelerometer's change sensitivity and the current report interval.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SettableAccelerometerProperties[] =
 {
     SENSOR_PROPERTY_CHANGE_SENSITIVITY,
@@ -79,11 +76,11 @@ const PROPERTYKEY g_SettableAccelerometerProperties[] =
 };
 ```
 
-### Setting the general and per data-field properties
+## Setting the general and per data-field properties
 
 The sample driver sets the general and per data-field properties during the initialization phase. The code that handles this work is found in the **CAccelerometerDevice::SetDefaultProperties** method. For information about the sequence of calls that set these properties, see [Driver initialization](driver-initialization.md).
 
-### Setting the writeable properties
+## Setting the writeable properties
 
 When a desktop, or WinRT, app sets the current report-interval, or, the change-sensitivity properties, the Sensors Class extension uses this sequence of methods to make the update.
 
@@ -100,7 +97,5 @@ When a desktop, or WinRT, app sets the current report-interval, or, the change-s
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Support%20for%20device%20%20properties%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

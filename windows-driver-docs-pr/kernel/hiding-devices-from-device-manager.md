@@ -4,11 +4,8 @@ author: windows-driver-content
 description: Hiding Devices from Device Manager
 ms.assetid: dd362ae1-ab14-44ee-982e-f972454c2623
 keywords: ["Device Manager WDK , hidden devices", "devices WDK , hiding from Device Manager", "hidden devices WDK", "hiding devices WDK", "NoDisplayClass value WDK device installations"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hiding Devices from Device Manager
@@ -34,7 +31,7 @@ You can mark a device as hidden in the ACPI BIOS. The BIOS can expose a \_STA me
 
 For example, the following code example shows how a USB controller on the root bus would be hidden.
 
-```
+```cpp
 Device(PCI0) // Root PCI bus
 _HID *PNP0A03 
 ...
@@ -45,7 +42,7 @@ _HID *PNP0A03
 
 In Microsoft Windows 2000, you can hide only started, working devices. In Windows XP and later versions of Windows, you can also hide broken devices. Bit 3 (mask 0x8) that is returned by the \_STA method indicates whether a device is working properly. This bit is 1 if the device is working properly and is 0 otherwise. For example, the following code example shows how a BIOS would indicate a USB controller is broken and should be hidden:
 
-```
+```cpp
 Device(PCI0) // Root PCI bus 
 _HID *PNP0A03 
 ...
@@ -63,7 +60,5 @@ _HID *PNP0A03
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Hiding%20Devices%20from%20Device%20Manager%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

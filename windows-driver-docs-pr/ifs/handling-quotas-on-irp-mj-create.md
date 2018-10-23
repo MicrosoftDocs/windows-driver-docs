@@ -7,11 +7,8 @@ keywords:
 - IRP_MJ_CREATE
 - quotas WDK file systems
 - security checks WDK file systems , IRP_MJ_CREATE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Quotas on IRP\_MJ\_CREATE
@@ -27,6 +24,5 @@ Some logic could also be included to acquire quota information if the file syste
  
 
 
---------------------
 
 

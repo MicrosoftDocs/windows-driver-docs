@@ -7,17 +7,14 @@ keywords:
 - CoNDIS WDK networking , address families
 - connection-oriented NDIS WDK , service access points
 - CoNDIS WDK networking , service access points
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operations on Address Families and SAPs
 
 
-## <a href="" id="ddk-operations-on-address-families-and-saps-ng"></a>
+
 
 
 A call manager or MCM driver must register its call manager entry points with NDIS and advertise its call manager services to connection-oriented clients. For more information about registering enttry points with NDIS, see [CoNDIS Registration](condis-registration.md).

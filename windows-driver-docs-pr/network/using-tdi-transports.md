@@ -4,11 +4,8 @@ description: Using TDI Transports
 ms.assetid: 58fb5e62-e15d-4f15-8eb3-3e302ea08c4f
 keywords:
 - TDI transports WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using TDI Transports
@@ -18,7 +15,7 @@ The Winsock Kernel (WSK) subsystem provides support for using [TDI](https://msdn
 
 The following code example shows how a WSK application can map combinations of address family, socket type, and protocol to device names of TDI transports.
 
-```
+```C++
 // Number of TDI mappings
 #define MAPCOUNT 2
 

@@ -2,11 +2,8 @@
 title: Native WLAN to WDI OID mapping
 description: The following table contains the mappings between Native 802.11 WLAN and WDI OIDs.
 ms.assetid: 98F4D26F-72FC-4945-AF53-064A0F80673F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Native WLAN to WDI OID mapping
@@ -148,9 +145,9 @@ Due to long DDI names, you may need to scroll the table horizontally to see all 
 | [OID\_802\_3\_MULTICAST\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569073) | Handled by Microsoft | [OID\_WDI\_SET\_MULTICAST\_LIST](https://msdn.microsoft.com/library/windows/hardware/dn925932) |
 | [OID\_802\_3\_MAXIMUM\_LIST\_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569072) | Handled by Microsoft | Not applicable |
 | [OID\_802\_3\_MAC\_OPTIONS](https://msdn.microsoft.com/library/windows/hardware/ff569071) | Handled by Microsoft | Not applicable |
-| [OID\_802\_3\_RCV\_ERROR\_ALIGNMENT](https://msdn.microsoft.com/en-us/library/windows/hardware/ff569075) | Handled by Microsoft | Not applicable |
-| [OID\_802\_3\_XMIT\_ONE\_COLLISION](https://msdn.microsoft.com/en-us/library/windows/hardware/ff569082) | Handled by Microsoft | Not applicable |
-| [OID\_802\_3\_XMIT\_MORE\_COLLISIONS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff569081) | Handled by Microsoft | Not applicable |
+| [OID\_802\_3\_RCV\_ERROR\_ALIGNMENT](https://msdn.microsoft.com/library/windows/hardware/ff569075) | Handled by Microsoft | Not applicable |
+| [OID\_802\_3\_XMIT\_ONE\_COLLISION](https://msdn.microsoft.com/library/windows/hardware/ff569082) | Handled by Microsoft | Not applicable |
+| [OID\_802\_3\_XMIT\_MORE\_COLLISIONS](https://msdn.microsoft.com/library/windows/hardware/ff569081) | Handled by Microsoft | Not applicable |
 | *NDIS Power* |
 | [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778) | Handled by Microsoft | Not applicable |
 | [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) | Not applicable | [OID\_WDI\_SET\_POWER\_STATE](https://msdn.microsoft.com/library/windows/hardware/dn925939), [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925933), [OID\_WDI\_TASK\_OPEN](https://msdn.microsoft.com/library/windows/hardware/dn925954) (hibernate), [OID\_WDI\_TASK\_CLOSE](https://msdn.microsoft.com/library/windows/hardware/dn925947) (hibernate) |

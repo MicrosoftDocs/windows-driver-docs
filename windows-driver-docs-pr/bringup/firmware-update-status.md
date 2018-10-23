@@ -3,11 +3,8 @@ title: Firmware update status
 author: windows-driver-content
 description: At this point it is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 ms.assetid: 988B1E95-2268-4B4F-B0C6-3C965FCD1B1C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Firmware update status
@@ -67,6 +64,5 @@ The entry is a key with the Name equal to the GUID used to report the resource i
 [Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 
---------------------
 
 

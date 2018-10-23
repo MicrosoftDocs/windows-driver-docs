@@ -6,11 +6,8 @@ ms.assetid: 2ee83fa4-41df-403e-86b8-b269f5dfbfed
 keywords:
 - storage drivers WDK , system header files
 - header files WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System Header Files for Storage Drivers
@@ -27,13 +24,12 @@ Tape miniclass drivers include *minitape.h*.
 
 Medium changer miniclass drivers include *mcd.h*.
 
-Vendor-supplied class and filter drivers can also incorporate the sample files *classpnp.h* and *classpnp.c*. These files define a series of **Class**Xxx routines that simplify the design of class and filter drivers. However, *classpnp.h* and *classpnp.c* are only samples, and are not supported in any version of the Windows operating system. Be cautious about using these files in a production driver, because some of the structure and routine declarations in *classpnp.h* might not be current or might be incompatible with with the versions of Windows your driver runs in.
+Vendor-supplied class and filter drivers can also incorporate the sample files *classpnp.h* and *classpnp.c*. These files define a series of **Class**Xxx routines that simplify the design of class and filter drivers. However, *classpnp.h* and *classpnp.c* are only samples, and are not supported in any version of the Windows operating system. Be cautious about using these files in a production driver, because some of the structure and routine declarations in *classpnp.h* might not be current or might be incompatible with the versions of Windows your driver runs in.
 
  
 
  
 
 
---------------------
 
 

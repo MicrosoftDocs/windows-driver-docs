@@ -6,11 +6,8 @@ ms.assetid: 39b04911-c0d9-42ec-b93e-b440b12f9e41
 keywords:
 - preoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pending an I/O Operation in a Preoperation Callback Routine
@@ -50,6 +47,5 @@ The work routine that dequeues and processes the I/O operation must call **FltCo
  
 
 
---------------------
 
 

@@ -9,17 +9,14 @@ keywords:
 - network INF files WDK , NetworkProvider section
 - PrintProvider section WDK networking
 - NetworkProvider section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NetworkProvider and PrintProvider Sections in a Network INF File
 
 
-## <a href="" id="ddk-networkprovider-and-printprovider-sections-ng"></a>
+
 
 
 **NetClient** components are considered to be network providers because they provide network services to user applications. The Microsoft Client for Networks and the NetWare Client are examples of **NetClient** components.

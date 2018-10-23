@@ -5,11 +5,8 @@ ms.assetid: e4fc3c65-a509-4aa6-88e1-9ca564cefa4b
 keywords:
 - offload state WDK TCP chimney offload , structures
 - structures WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offload State Structures
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-state-structures-ng"></a>
+
 
 
 The following table indicates which structures a host stack uses to package offload state.

@@ -3,17 +3,15 @@ title: SymChk Command-Line Options
 description: SymChk uses the following syntax
 ms.assetid: e17dd001-2830-49bd-b727-fcd772ee23b4
 keywords: ["SymChk Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 06/28/2017
 topic_type:
 - apiref
 api_name:
 - SymChk Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SymChk Command-Line Options
@@ -21,7 +19,7 @@ api_type:
 
 SymChk uses the following syntax:
 
-```
+```dbgcmd
 symchk [/r] [/v | /q ] FileNames /s[Opts] SymbolPath Options
 
 symchk [/r] [/v | /q ] /ie ExeFile /s[Opts] SymbolPath Options
@@ -94,14 +92,14 @@ Specifies that a manifest file is created. The manifest file contains informatio
 <span id="________s_Opts__SymbolPath"></span><span id="________s_opts__symbolpath"></span><span id="________S_OPTS__SYMBOLPATH"></span> **/s**\[*Opts*\] *SymbolPath*  
 Specifies the directories containing symbols. Absolute paths, relative paths, and UNC paths are permitted. Any number of directories can be specified -- multiple directories should be separated with semicolons. If *SymbolPath* contains spaces, it must be enclosed in quotation marks. If you wish to specify a symbol server within this path, you should use one of the following syntaxes:
 
-```
+```dbgcmd
 srv*DownstreamStore*\\Server\Share
 srv*\\Server\Share
 ```
 
 It is not recommended that you omit the **/s**\[*Opts*\] *SymbolPath* parameter, but if it is omitted, SymChk will point to the public symbol store by using the following default path:
 
-```
+```dbgcmd
 srv*%SystemRoot%\symbols*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -118,6 +116,10 @@ Force checking for private symbols. Public symbols will be treated as not matchi
 
 <span id="s"></span><span id="S"></span>**s**  
 Force checking for public (split) symbols. Private symbols will be treated as not matching. The **s** option implies **e** and **u**, and cannot be used with **p**.
+
+<span id="r"></span><span id="R"></span>**r**  
+Expand all non-symbol server elements in the specified path in order to do a deep search of the path. NOTE: This option may produce matches that will not occur inside the debugger since it modifies the symbol path specified.
+
 
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 The available options are divided into several classes. Each class of options controls a different set of features.
@@ -301,7 +303,6 @@ For more information about SymChk, see [Using SymChk](using-symchk.md).
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20SymChk%20Command-Line%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

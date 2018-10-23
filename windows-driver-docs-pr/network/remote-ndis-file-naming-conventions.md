@@ -5,17 +5,14 @@ ms.assetid: 9c5b2cfe-c38f-4314-a91c-f27c77ea1f63
 keywords:
 - Remote NDIS WDK networking , driver names
 - Remote NDIS WDK networking , operating system support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS File Naming Conventions
 
 
-## <a href="" id="ddk-benefits-of-remote-ndis-ng"></a>
+
 
 
 In order to support legacy Remote NDIS devices, multiple Remote NDIS drivers have been included with various versions of Windows. The following table lists the Remote NDIS driver names used in each version of Windows.

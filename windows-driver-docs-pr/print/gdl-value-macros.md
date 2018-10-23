@@ -10,11 +10,8 @@ keywords:
 - values WDK GDL , value macros
 - Macros directive WDK GDL
 - macros WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDL Value Macros
@@ -37,7 +34,7 @@ All value macro definitions must be recognized as complete, valid value entity.
 
 The following code example shows how to use value macros.
 
-```
+```cpp
 *Macros:
 {
     InvalidMacro: "First Half of a string
@@ -48,7 +45,7 @@ InvalidMacro is not valid because the quoted string context must be terminated w
 
 If you want to represent an incomplete value entity, use the following code example.
 
-```
+```cpp
 *Macros:
 {
     FirstHalf: <BeginValue:Q>"This is the first half <EndValue:Q>
@@ -61,7 +58,7 @@ If you want to represent an incomplete value entity, use the following code exam
 
 The following code shows how to use macro arguments.
 
-```
+```cpp
 *Macros: FormalArgs(=arg1, =arg2)
 {
 result1: disappointed
@@ -73,22 +70,22 @@ result5: restrained
 
 adverb1: very =arg1 and =arg2
    adverb2: while remaining =arg1
-   String1:  The audience was =arg1 with today&#39;s performance.
+   String1:  The audience was =arg1 with today's performance.
 }
 ```
 
 The following code shows how to use macro references with parameters.
 
-```
+```cpp
 *BadOutput: =String1(=result1)
 *GoodOutput: =String1(=adverb1(=adverb1(=result2, =result3), =adverb2(=result5)))
 ```
 
 The parser will expand the preceding macro references to produce the following code.
 
-```
-*BadOutput: The audience was disappointed with today&#39;s performance.
-*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today&#39;s performance.
+```cpp
+*BadOutput: The audience was disappointed with today's performance.
+*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today's performance.
 ```
 
 Value macro references are not recognized in all value contexts. For example, value macros are not recognized within the arbitrary value or quoted string contexts. But value macros are recognized within hex string contexts that might reside within the quoted string context.
@@ -101,7 +98,7 @@ You should think of the parser as acting on a single input stream. When a macro 
 
 Consider the following macro.
 
-```
+```cpp
 *Macros:
 {
 quote: <BeginValue:x>"<EndValue:x>
@@ -117,7 +114,7 @@ whole_string: =first_half <not a hex string!> =second_half
 
 The preceding macro will expand to the following code.
 
-```
+```cpp
 *Print1:  "
 *Print2:  " This is enclosed
 *Print3:  by quotes."
@@ -131,7 +128,5 @@ Note that the expanded result is not syntactically legal GDL.
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20GDL%20Value%20Macros%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

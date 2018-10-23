@@ -5,17 +5,14 @@ ms.assetid: 1e71e376-2c35-49d8-b1bc-6278679ab46f
 keywords:
 - network component upgrades WDK , testing
 - upgrading network components WDK , testing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Testing the Upgrade of Network Components
 
 
-## <a href="" id="ddk-testing-the-upgrade-of-network-components-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

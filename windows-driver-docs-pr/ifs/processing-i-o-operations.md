@@ -9,11 +9,8 @@ keywords:
 - postoperation callback routines WDK file system minifilter , filter manager
 - opportunistic lock WDK file system minifilter
 - locking WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing I/O Operations
@@ -123,6 +120,5 @@ The following callback routines are stored in the [**FLT\_OPERATION\_REGISTRATIO
  
 
 
---------------------
 
 

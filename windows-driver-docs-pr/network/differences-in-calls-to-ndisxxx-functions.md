@@ -4,17 +4,14 @@ description: Differences in Calls to NdisXxx Functions
 ms.assetid: 967ad913-24ca-4f05-b10b-1daa88845ed3
 keywords:
 - NdisCmXxx functions WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Differences in Calls to NdisXxx Functions
 
 
-## <a href="" id="ddk-differences-in-calls-to-ndisxxx-functions-ng"></a>
+
 
 
 A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm*Xxx*** functions, and an MCM driver calls **NdisMCm*Xxx*** functions.

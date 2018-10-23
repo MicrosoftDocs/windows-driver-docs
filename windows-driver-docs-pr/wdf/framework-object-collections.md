@@ -8,17 +8,14 @@ keywords:
 - collections WDK KMDF
 - framework collection objects WDK KMDF
 - object collections WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Collections
 
 
-## <a href="" id="ddk-framework-object-collections-df"></a>
+
 
 
 Drivers can group framework objects into collections that are represented by *framework collection objects*.
@@ -69,7 +66,7 @@ Framework-based drivers can perform the following operations on object collectio
 
 Sometimes a driver must examine all of the objects within a collection. The following code example demonstrates this situation:
 
-```
+```cpp
 WdfWaitLockAcquire(CollectionLockHandle, NULL);
 ItemCount = WdfCollectionGetCount(CollectionHandle);
 for (i=0; i<ItemCount; i++) {

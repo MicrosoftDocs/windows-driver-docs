@@ -7,17 +7,14 @@ keywords:
 - RSS WDK networking , standardized INF keywords
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for RSS
 
 
-## <a href="" id="ddk-standardized-inf-keywords-for-rss-ng"></a>
+
 
 
 The RSS interface supports [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) that appear in the registry and are specified in INF files.

@@ -7,11 +7,8 @@ keywords:
 - NDIS WDK , drivers, developing
 - developing NDIS drivers WDK
 - Network Driver Interface Specification (NDIS) WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing NDIS Drivers
@@ -56,8 +53,6 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
     [Roadmap for Developing NDIS Filter Drivers](roadmap-for-developing-ndis-filter-drivers.md)
 
     [Roadmap for Developing NDIS Intermediate Drivers](roadmap-for-developing-ndis-intermediate-drivers.md)
-
-    [Roadmap for Developing Native 802.11 Wireless LAN Drivers](roadmap-for-developing-native-802-11-wireless-lan-drivers.md)
 
     [Roadmap to Develop Mobile Broadband Miniport Drivers](roadmap-to-develop-mb-miniport-drivers.md)
 

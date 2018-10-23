@@ -6,11 +6,8 @@ keywords:
 - offloading state process WDK TCP chimney offload , state tree transversing
 - transversing state tree WDK TCP chimney offload
 - state offloading process WDK TCP chimney offload , state tree traversing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Traversing a State Tree
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-traversing-a-state-tree-ng"></a>
+
 
 
 After returning from the [*MiniportInitiateOffload*](https://msdn.microsoft.com/library/windows/hardware/ff559393) function, the offload target traverses the offload state tree that is referenced by the *OffloadBlockList* parameter. The offload target offloads the state from this tree to its own internal offload context areas.

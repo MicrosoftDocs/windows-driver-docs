@@ -5,11 +5,8 @@ description: Constraints on Dispatch Routines
 ms.assetid: 5b2acaea-1f66-4285-9a36-5ab0f440f6b4
 keywords:
 - IRP dispatch routines WDK file system , constraints
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constraints on Dispatch Routines
@@ -87,6 +84,5 @@ Note: For information about setting completion routines, see [Using Completion R
  
 
 
---------------------
 
 

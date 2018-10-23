@@ -6,11 +6,8 @@ keywords:
 - battery miniclass drivers WDK , FDOs
 - FDOs WDK battery
 - functional device objects WDK battery
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an FDO in the Battery Miniclass Driver
@@ -23,7 +20,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
 1.  Call [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) to create an FDO for the current device, as follows:
 
-    ```
+    ```cpp
     Status = IoCreateDevice(
              DriverObject,
              sizeof (DeviceExtension),
@@ -39,7 +36,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
 2.  In the returned FDO, set flags and the stack size. For example:
 
-    ```
+    ```cpp
     Fdo->Flags |= DO_BUFFERED_IO;
     Fdo->Flags |= DO_POWER_PAGABLE;
     Fdo->StackSize = Pdo->StackSize + 2;
@@ -49,7 +46,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
 3.  Store the pointer to the device's PDO, the pointer to the FDO, the device type, the device name, and any other necessary state in the device extension. For example:
 
-    ```
+    ```cpp
     NewBatt = (PNEW_BATT) Fdo->DeviceExtension;
     NewBatt->Type = NEW_BATTERY_TYPE;
     NewBatt->Fdo = Fdo;
@@ -63,7 +60,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
 4.  Call [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) to attach the FDO to the device stack, then store the returned pointer, as follows:
 
-    ```
+    ```cpp
     NewBatt->LowerDO = IoAttachDeviceToDeviceStack(Fdo,Pdo);
     ```
 
@@ -71,7 +68,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
 5.  Clear the DO\_DEVICE\_INITIALIZING flag in the FDO, as follows:
 
-    ```
+    ```cpp
     Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
     ```
 
@@ -82,6 +79,5 @@ The miniclass driver should create an FDO and attach it to the device stack for 
  
 
 
---------------------
 
 

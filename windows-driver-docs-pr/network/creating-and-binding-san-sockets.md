@@ -13,17 +13,14 @@ keywords:
 - raw sockets WDK SANs
 - SAN sockets WDK , creating
 - SAN sockets WDK , binding
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Binding SAN Sockets
 
 
-## <a href="" id="ddk-creating-and-binding-san-sockets-ng"></a>
+
 
 
 If the Windows Sockets switch determines that it can route data through a SAN connection rather than through the TCP/IP stack, it requests the appropriate SAN service provider to create, bind, and set options for a socket on which the data can be transferred.

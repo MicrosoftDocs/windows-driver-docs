@@ -2,11 +2,8 @@
 title: Overview of Device Property Pages
 description: Overview of Device Property Pages
 ms.assetid: b117721a-db32-4144-b0ae-5a0fca40f9db
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Device Property Pages

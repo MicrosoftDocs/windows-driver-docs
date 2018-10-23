@@ -9,11 +9,8 @@ keywords:
 - per-stream context tracking WDK file system
 - tracking per-stream context WDK file system
 - associating per-stream context WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Associating a Per-Stream Context With a File Stream
@@ -37,6 +34,5 @@ After [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windo
  
 
 
---------------------
 
 

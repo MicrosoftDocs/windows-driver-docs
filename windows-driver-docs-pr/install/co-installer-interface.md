@@ -5,11 +5,8 @@ ms.assetid: affcf2a5-5dbb-49bd-916c-bc99302b5bd8
 keywords:
 - co-installers WDK device installations , interface
 - interface WDK co-installer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Co-installer Interface
@@ -21,7 +18,7 @@ A co-installer's interface consists of an exported entry point function and an a
 
 A co-installer must export an entry point function that has the following prototype:
 
-```
+```cpp
 typedef DWORD 
   (CALLBACK* COINSTALLER_PROC) (
     IN DI_FUNCTION  InstallFunction,
@@ -62,7 +59,7 @@ A co-installer does not set a return status of ERROR_DI_DO_DEFAULT. This status 
 
 COINSTALLER_CONTEXT_DATA is a co-installer-specific context structure that describes an installation request. The format of the structure is:
 
-```
+```cpp
 typedef struct 
   _COINSTALLER_CONTEXT_DATA {
       BOOLEAN  PostProcessing;

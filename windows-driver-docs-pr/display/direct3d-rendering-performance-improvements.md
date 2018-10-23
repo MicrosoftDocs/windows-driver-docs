@@ -2,11 +2,8 @@
 title: Direct3D rendering performance improvements
 description: Windows Display Driver Model (WDDM) 1.3 and later drivers can support Microsoft Direct3D rendering performance improvements that let Direct3D 9 hardware make better use of hardware command buffers and counters and make efficient copies of system memory to subresources. These capabilities, which mirror some of the capabilities available for Direct3D Version 10 hardware, are new starting with Windows 8.1.
 ms.assetid: F9AAE489-EC45-4EE6-875E-E084BB3054EE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Direct3D rendering performance improvements
@@ -19,10 +16,19 @@ New Direct3D 11.1 resource trim and map default performance improvements are als
 ## <span id="Rendering_performance_reference"></span><span id="rendering_performance_reference"></span><span id="RENDERING_PERFORMANCE_REFERENCE"></span>Rendering performance reference
 
 
-This reference section describes the user-mode device driver interfaces (DDIs):
+This reference section describes the user-mode device driver interfaces (DDIs).
 
-<span id="Direct3D_rendering_performance_functions_implemented_by_the_user-mode_driver"></span><span id="direct3d_rendering_performance_functions_implemented_by_the_user-mode_driver"></span><span id="DIRECT3D_RENDERING_PERFORMANCE_FUNCTIONS_IMPLEMENTED_BY_THE_USER-MODE_DRIVER"></span>[Direct3D rendering performance functions implemented by the user-mode driver](https://msdn.microsoft.com/library/windows/hardware/dn449220)  
-All functions that user-mode display drivers must implement in order to improve rendering performance for Direct3D Level 9 hardware.
+### Direct3D rendering performance functions implemented by the user-mode driver
+
+This section contains functions that a Windows Display Driver Model (WDDM) 1.3 and later user-mode display driver implements in order to support Microsoft Direct3D rendering performance improvements.
+
+
+|||
+|:--|:--|
+|[PFND3DDDI_FLUSH1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_flush1)| [PFND3DDDI_CHECKCOUNTERINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_checkcounterinfo)|
+|[PFND3DDDI_CHECKCOUNTER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_checkcounter) |[PFND3DDDI_UPDATESUBRESOURCEUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updatesubresourceup)|
+
+### Direct3D rendering performance structures and enumerations
 
 These user-mode structures and enumerations support rendering performance improvements and are new or updated for Windows 8.1. All apply to Direct3D Level 9 drivers except for [**D3D11\_1\_DDI\_FLUSH\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh451049).
 
@@ -253,7 +259,6 @@ These input parameters to [*ResourceUnmap*](https://msdn.microsoft.com/library/w
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Direct3D%20rendering%20performance%20improvements%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

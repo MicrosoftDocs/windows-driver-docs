@@ -3,11 +3,9 @@ title: Specifying Module and Function Owners
 description: Specifying Module and Function Owners
 ms.assetid: be227712-7f70-4e74-b090-ca8b3ecd1e13
 keywords: ["executable files and paths, specifying module owner", "function owners", "owners of modules and functions", "triage.ini file", "triage.ini file, syntax", "analyze extension, triage.ini file"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Module and Function Owners
@@ -32,7 +30,7 @@ Although the Triage.ini file is intended to help you determine the owner of a fu
 
 Each line in this file has the following syntax.
 
-```
+```dbgcmd
 Module[!Function]=Owner 
 ```
 
@@ -44,7 +42,7 @@ For more information about syntax options, see Special Triage.ini Syntax.
 
 The following examples shows a sample Triage.ini file.
 
-```
+```ini
 module1=Person1
 module2!functionA=Person2
 module2!functionB=Person3
@@ -60,7 +58,7 @@ When you pass a module or function name to the [**!owner**](-owner.md) extension
 
 The following example uses the previous sample Triage.ini file.
 
-```
+```dbgcmd
 0:000> !owner module2!functionB
 Followup:  Person3
 ```
@@ -85,7 +83,7 @@ Suppose the third frame is **module2!functionC**. The debugger first looks for a
 
 The debugger then displays output that is similar to the following example.
 
-```
+```dbgcmd
 0:000> !analyze
 *******************************************************************************
 *                                                                             *
@@ -121,7 +119,6 @@ A sample Triage.ini template is included in the Debugging Tools for Windows pack
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Specifying%20Module%20and%20Function%20Owners%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

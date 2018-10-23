@@ -2,11 +2,8 @@
 Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon
@@ -76,7 +73,7 @@ In this example, the device of interest was not connected to the system when we 
 
 In the sample log, the first event after the device summary events is a USB Hub Wait Wake IRP Completed event. We plugged in a device, and a host controller or a hub is waking up in response. To determine which component is waking up, look at the event's data. The data is in the Frame Details pane, which is shown in a tree structure in approximately the following form:
 
-```
+```cpp
 Frame information
 ETW event header information
     ETW event descriptor (Constant information about the event ID such
@@ -181,7 +178,7 @@ You can create custom filters in Netmon. The easiest method is to create a filte
 -   Right-click a field in the **Frame Summary** pane and select **Add \[field name\] to Display Filter**.
 
 You can change the operators (such as OR, AND, and ==) and the filter values to build the appropriate filter expressions.
-## <a href="" id="status-codes"></a>Understanding Error Events and Status Codes
+## Understanding Error Events and Status Codes
 
 
 In our unknown device example, most of the USB hub exceptions have a **fid\_DebugText** data of CreateDeviceFailure. It is not clear how serious the exception is, but the debug text gives a hint as to the cause: an operation related to the new device failed. For now, assume that the adjacent Create Device Failed events are redundant. The last two exceptions are CreateDeviceFailure\_Popup and GenErr\_UserIoctlFailed. The popup exception sounds like an error that was exposed to the user, but any and all of these errors could be related to the unknown device problem.
@@ -210,14 +207,14 @@ The next previous event is Endpoint Close. This event means that an endpoint is 
 
 The next previous event is a completed USB control transfer. The event data shows that the target of the transfer is the device (the port path is 1). The fid\_USBPORT\_Endpoint\_Descriptor structure indicates that the endpoint's address is 0, so this is the USB-defined default control endpoint. The URB status is 0xC0000004. Because the status is not zero, the transfer was probably not successful. For more details about this USBD\_STATUS value, see usb.h and [Understanding Error Events and Status Codes](#status-codes).
 
-```
+```cpp
 #define USBD_STATUS_STALL_PID ((USBD_STATUS)0xC0000004L)
 
 ```
 
 Meaning: The device returned a stall packet identifier. What request was stalled by the endpoint? The other data that was logged for the event indicates that the request was a standard device control request. Here is the parsed request:
 
-```
+```cpp
   Frame: Number = 184, Captured Frame Length = 252, MediaType = NetEvent 
 + NetEvent: 
 - MicrosoftWindowsUSBUSBPORT: Complete Internal URB_FUNCTION_CONTROL_TRANSFER 
@@ -247,7 +244,5 @@ For USB enumeration to continue, the device should have responded to this reques
 [Using USB ETW](using-usb-etw.md)  
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Case%20Study:%20Troubleshooting%20an%20unknown%20USB%20device%20by%20using%20ETW%20and%20Netmon%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

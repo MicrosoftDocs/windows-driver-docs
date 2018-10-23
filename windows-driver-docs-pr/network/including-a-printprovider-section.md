@@ -6,17 +6,14 @@ keywords:
 - INF files WDK network , PrintProvider section
 - network INF files WDK , PrintProvider section
 - PrintProvider section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Including a PrintProvider Section
 
 
-## <a href="" id="ddk-including-a-printprovider-section-ng"></a>
+
 
 
 An INF file that installs a **NetClient** component that is a print provider must contain a **PrintProvider** section for that component.
@@ -26,7 +23,7 @@ An INF file that installs a **NetClient** component that is a print provider mus
  
 
 To create a **PrintProvider** section, add the **PrintProvider** extension to the *DDInstall* section for the component, as shown in the following example:
-```
+```cpp
 [DDInstall-section] ; Install section
 [DDInstall-section.PrintProvider] ; PrintProvider section
 ```
@@ -46,7 +43,7 @@ The **PrintProviderName** and **PrintProviderDll** entries supply information th
 
 The following is an example of a **PrintProvider** section:
 
-```
+```cpp
 [DDnstall-section.PrintProvider]
 PrintProviderName = "NetWare or Compatible Network"
 PrintProviderDll  = "nwprovau.dll"

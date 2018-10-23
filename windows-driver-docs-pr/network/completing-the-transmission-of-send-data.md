@@ -7,11 +7,8 @@ keywords:
 - offloading state process WDK TCP chimney offload , outstanding send data
 - outstanding send data WDK TCP chimney offload
 - send data outstanding WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing the Transmission of Send Data
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-completing-the-transmission-of-send-data-ng"></a>
+
 
 
 The host stack must complete the transmission of all of the send data with one or more calls to the [**NdisTcpOffloadSendComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564609) function.

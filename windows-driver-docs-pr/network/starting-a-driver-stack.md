@@ -5,17 +5,14 @@ ms.assetid: 316de69e-38e8-4ac6-83c5-5d13090ee6d5
 keywords:
 - driver stacks WDK networking , starting
 - starting driver stacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a Driver Stack
 
 
-## <a href="" id="ddk-starting-a-driver-stack-ng"></a>
+
 
 
 After the system detects a networking device, the system starts an NDIS driver stack for the device. The device can be a virtual device or a physical device. In either case, a driver stack start operation proceeds as follows:

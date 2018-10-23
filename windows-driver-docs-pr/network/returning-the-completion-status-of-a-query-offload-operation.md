@@ -5,11 +5,8 @@ ms.assetid: 9583279e-1f18-4753-a7fa-08947339553f
 keywords:
 - querying offloaded TCP chimney state, completion status
 - completion status of querying WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning the Completion Status of a Query Offload Operation
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-returning-completion-status-of-a-query-offload-operation-ng"></a>
+
 
 
 Before calling the [**NdisMQueryOffloadStateComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563634) function, the offload target must write one of the following NDIS\_STATUS values to the **Status** member of each [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure in the state tree:

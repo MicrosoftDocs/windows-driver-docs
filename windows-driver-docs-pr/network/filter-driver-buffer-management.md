@@ -6,17 +6,14 @@ keywords:
 - filter drivers WDK networking , buffers
 - NDIS filter drivers WDK , buffers
 - buffer management WDK NDIS filter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Driver Buffer Management
 
 
-## <a href="" id="ddk-filter-driver-buffer-management-ng"></a>
+
 
 
 Filter drivers create buffers to copy network data obtained from other drivers, or to initiate send or receive operations.

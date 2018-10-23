@@ -3,17 +3,15 @@ title: Bug Check 0xF7 DRIVER_OVERRAN_STACK_BUFFER
 description: The DRIVER_OVERRAN_STACK_BUFFER bug check has a value of 0x000000F7. This indicates that a driver has overrun a stack-based buffer.
 ms.assetid: 5981b5e0-90c1-486e-8bbf-2778f2595f6b
 keywords: ["Bug Check 0xF7 DRIVER_OVERRAN_STACK_BUFFER", "DRIVER_OVERRAN_STACK_BUFFER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_OVERRAN_STACK_BUFFER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF7: DRIVER\_OVERRAN\_STACK\_BUFFER
@@ -21,7 +19,7 @@ api_type:
 
 The DRIVER\_OVERRAN\_STACK\_BUFFER bug check has a value of 0x000000F7. This indicates that a driver has overrun a stack-based buffer.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_OVERRAN\_STACK\_BUFFER Parameters
 

@@ -3,17 +3,15 @@ title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - cs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !cs
@@ -21,14 +19,14 @@ api_type:
 
 The **!cs** extension displays one or more critical sections or the whole critical section tree.
 
-```
+```dbgsyntax
 !cs [-s] [-l] [-o] 
 !cs [-s] [-o] Address 
 !cs [-s] [-l] [-o] StartAddress EndAddress 
 !cs [-s] [-o] -d InfoAddress 
 !cs [-s] -t [TreeAddress] 
 !cs -? 
-```
+```dbgsyntax
 
 ## <span id="ddk__cs_dbg"></span><span id="DDK__CS_DBG"></span>Parameters
 
@@ -98,7 +96,7 @@ The **!cs** extension requires full symbols (including type information) for the
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 
-```
+```dbgcmd
 0:001> !cs -s 0x7803B0F8
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
 DebugInfo          = 0x6A262080
@@ -116,7 +114,7 @@ Stack trace for DebugInfo = 0x6A262080:
 
 The following command displays information about the critical section whose DebugInfo is at address 0x6A262080.
 
-```
+```dbgcmd
 0:001> !cs -d 0x6A262080
 DebugInfo          = 0x6A262080
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
@@ -127,7 +125,7 @@ SpinCount          = 0x0
 
 The following command displays information about all of the active critical sections in the current process.
 
-```
+```dbgcmd
 ## 0:001> !cs
 
 DebugInfo          = 0x6A261D60
@@ -165,7 +163,7 @@ LockSemaphore      = 0x0
 
 The following command displays the critical section tree.
 
-```
+```dbgcmd
 0:001> !cs -t
 
 Tree root 00bb08c0
@@ -209,7 +207,6 @@ The following items appear in this **!cs -t** display:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!cs%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

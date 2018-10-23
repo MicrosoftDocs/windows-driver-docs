@@ -12,11 +12,8 @@ keywords:
 - worker threads WDK RDBSS
 - one-shot notifications WDK RDBSS
 - periodic triggers WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Timer and Worker Thread Management
@@ -69,6 +66,5 @@ The following RDBSS timer routines are included.
  
 
 
---------------------
 
 

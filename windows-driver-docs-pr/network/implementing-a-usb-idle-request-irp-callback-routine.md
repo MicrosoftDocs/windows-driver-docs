@@ -2,11 +2,8 @@
 title: Implementing a USB Idle Request IRP Callback Routine
 description: Implementing a USB Idle Request IRP Callback Routine
 ms.assetid: B3F843CD-E9D8-4ABD-9BC9-08C5AB7CDB98
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing a USB Idle Request IRP Callback Routine
@@ -26,7 +23,7 @@ Within the context of the call to [**NdisMIdleNotificationConfirm**](https://msd
 
 The following is an example of a callback routine for a USB idle request IRP.
 
-```
+```C++
 //
 // MiniportUsbIdleRequestCallback()
 //

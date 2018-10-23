@@ -3,17 +3,15 @@ title: db, dc, dd, dp, dq, du, dw
 description: The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer.
 ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 01/18/2017
 topic_type:
 - apiref
 api_name:
 - db, dc, dd, dp, dq, du, dw
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !db, !dc, !dd, !dp, !dq, !du, !dw
@@ -23,7 +21,7 @@ The **!db**, **!dc**, **!dd**, **!dp**, **!dq**, **!du**, and **!dw** extensions
 
 These extension commands should not be confused with the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!ntsdexts.dp**](-dp---ntsdexts-dp-.md) extension command.
 
-```
+```dbgcmd
 !db [Caching] [-m] [PhysicalAddress] [L Size] 
 !dc [Caching] [-m] [PhysicalAddress] [L Size] 
 !dd [Caching] [-m] [PhysicalAddress] [L Size] 
@@ -57,6 +55,22 @@ Specifies the first physical address to be displayed, in hexadecimal format. If 
 <span id="_______L_______Size______"></span><span id="_______l_______size______"></span><span id="_______L_______SIZE______"></span> **L** **** *Size*   
 Specifies the number of chunks of memory to display. The size of a chunk is determined by the precise extension used.
 
+### <span id="DLL"></span><span id="dll"></span>Environment
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Mode</strong></p></td>
+<td align="left"><p>Kernel Mode</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 <table>
@@ -66,13 +80,6 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
 <td align="left"><p>Kext.dll</p></td>
 </tr>
 </tbody>
@@ -107,7 +114,7 @@ Consequently, using two of these extensions that are distinct with the same valu
 
 Here is an example in which the caching attribute flag is needed:
 
-```
+```dbgcmd
 kd> !dc e9000
 physical memory read at e9000 failed
 If you know the caching attributes used for the memory,
@@ -126,7 +133,6 @@ kd> !dc [c] e9000
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!db,%20!dc,%20!dd,%20!dp,%20!dq,%20!du,%20!dw%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

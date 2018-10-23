@@ -2,11 +2,8 @@
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
 ms.assetid: 6E94529E-F3F0-4DC5-AF8B-F896A4F991E3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Audio Hardware Resource Management
@@ -32,7 +29,7 @@ To specify constraints complete these two steps.
 
 The XML constraints file is made up of three sections. The first required section is defined by &lt;Limits&gt; &lt;/Limits&gt;. This section can be used to define up to fifteen resource restraints. For example you could define constraints for the maximum number of rendering stream and the maximum number of streams that can be off loaded.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
   
@@ -56,7 +53,7 @@ For example, if the audio hardware has both HandsetSpeaker and WiredHeadsetSpeak
 
 This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveEndpoints node contains two or more Endpoint nodes. Each Endpoint node contains HWID, TopologyName, and PinId.
 
-```
+```xml
   <ExclusiveEndpoints>
     <Endpoint>
       <HWID>Root\sysvad_PhoneAudioSample</HWID>
@@ -79,7 +76,7 @@ This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveE
 
 The last required section of the XML file defines various resource consumers. This section of the file contains multiple &lt;ResourceConsumer&gt; entries. Each entry identifies information about a resource consumer and their associated resources use. Each resource that is used, must be previously defined in the &lt;Limits&gt; section.
 
-```
+```xml
   <ResourceConsumer>
     <!-- Active Phone call -->
     <ConsumerInfo>
@@ -185,13 +182,13 @@ The following table summarizes the capture audio stream priorities, listed from 
 
 The full path to the concurrency constraints XML file needs to be specified in the following registry key.
 
-```
+```inf
 HKLM\System\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
 ```
 
 In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file or preferably through the phone Package schema as shown here.
 
-```
+```xml
 <RegKeys> 
         <RegKey KeyName="$(hklm.system)\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig"> 
         <RegValue Name="AudioResourceConstraintExamplePath" Type="REG_SZ" 
@@ -205,7 +202,7 @@ In this registry key, provide a value containing the path to the XML. It is reco
 
 This is an example XML constraints file from the SYSVAD virtual audio driver sample.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
 
@@ -1638,7 +1635,5 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Hardware%20Resource%20Management%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

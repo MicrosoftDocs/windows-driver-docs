@@ -7,11 +7,8 @@ keywords:
 - I/O resource usage reduction WDK
 - resource usage WDK
 - I/O resources WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Resource Usage Reduction
@@ -21,7 +18,7 @@ Microsoft has implemented support to help reduce the dependence that PCI, PCI-X,
 
 To reduce I/O resource usage in Windows 10, place the following entry in the device driver's INF file:
 
-```
+```cpp
 [DDInstall.HW]
 Include=pci.inf
 Needs=PciIoSpaceNotRequired.HW
@@ -29,7 +26,7 @@ Needs=PciIoSpaceNotRequired.HW
 
 In Windows 8.1 and earlier, use this entry instead:
 
-```
+```cpp
 [DDInstall.HW]
 Include=machine.inf
 Needs=PciIoSpaceNotRequired

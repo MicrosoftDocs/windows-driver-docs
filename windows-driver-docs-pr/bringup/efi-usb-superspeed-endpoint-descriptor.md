@@ -3,11 +3,8 @@ title: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 author: windows-driver-content
 description: EFI_USB_SUPERSPEED_ENDPOINT_DESCRIPTOR
 ms.assetid: 3254C0F1-85C2-472B-938A-F71645703540
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
@@ -18,7 +15,7 @@ The **EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR** structure is used to describe
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_ENDPOINT_DESCRIPTOR                         *EndpointDescriptor;
@@ -50,6 +47,5 @@ The **EFI\_USB\_ENDPOINT\_DESCRIPTOR** structure is defined in the UEFI specific
  
 
 
---------------------
 
 

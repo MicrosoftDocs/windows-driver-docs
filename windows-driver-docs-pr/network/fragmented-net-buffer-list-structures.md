@@ -9,17 +9,14 @@ keywords:
 - parent/child NET_BUFFER_LIST relationships WDK networking
 - child/parent NET_BUFFER_LIST relationships WDK networking
 - relationships WDK NET_BUFFER_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Fragmented NET\_BUFFER\_LIST Structures
 
 
-## <a href="" id="ddk-fragmented-net-buffer-structures-ng"></a>
+
 
 
 An NDIS driver can create a fragmented [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure from an existing NET\_BUFFER\_LIST structure. The fragmented structure references a set of [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures that reference the original data; however, the data is divided into units that do not exceed a maximum size. Drivers can use this type of structure to efficiently break up large buffers into smaller buffers.

@@ -3,11 +3,8 @@ title: Supported PrintTicket Features
 author: windows-driver-content
 description: This section provides information about the PrintTicket features that are supported by the standard XPS filters.
 ms.assetid: 6D1AD770-D4BA-4BDC-886A-C5C36A09BB0E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supported PrintTicket Features
@@ -497,10 +494,15 @@ The PostScript generated for the selected negative printing is specified by the 
 3. The name attribute of the PageNegativeImage Option matches the name of the Option in the PPD.
 
 ## Related topics
+
 [Default PageMediaSize mappings](default-pagemediasize-mappings.md)  
+
 [Standard XPS Filters](standard-xps-filters.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Supported%20PrintTicket%20Features%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+The print schema specifications can be downloaded here:
+
+[Print Schema Specification 1.1](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
+
+[Print Schema Specification 2.0](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
 
 

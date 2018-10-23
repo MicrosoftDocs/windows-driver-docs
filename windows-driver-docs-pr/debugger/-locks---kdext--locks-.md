@@ -3,17 +3,15 @@ title: locks kdext
 description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
 ms.assetid: c1be6c6c-0028-459f-9c92-61df52cbc4b6
 keywords: ["kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  kdext .locks Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - locks ( kdext .locks)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !locks (!kdext\*.locks)
@@ -23,7 +21,7 @@ The **!locks** extension in Kdextx86.dll and Kdexts.dll displays information abo
 
 This extension command should not be confused with the [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension command.
 
-```
+```dbgcmd
 !locks [Options] [Address]
 ```
 
@@ -75,7 +73,7 @@ You can usually pinpoint a deadlock in Microsoft Windows 2000 by finding one non
 
 Here is an example of the basic **!locks** output:
 
-```
+```dbgcmd
 kd> !locks
 **** DUMP OF ALL RESOURCE OBJECTS ****
 KD: Scanning for held locks......
@@ -97,7 +95,7 @@ Note that the address for each thread displayed is followed by its thread count 
 
 If you want to find more information about one of these resource objects, use the address that follows "Resource @" as an argument for future commands. To investigate the second resource shown in the preceding example, you could use [**dt ERESOURCE 80d8b0b0**](dt--display-type-.md) or [**!thread 80ed0020**](-thread.md). Or you could use the **!locks** extension again with the **-v** option:
 
-```
+```dbgcmd
 kd> !locks -v 80d8b0b0
 
 Resource @ 0x80d8b0b0    Shared 1 owning threads
@@ -130,7 +128,6 @@ fafa3ddc 8050ec72 nt!PspSystemThreadStartup+0x2e (FPO: [Non-Fpo]) (CONV: stdcall
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!locks%20%28!kdext*.locks%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

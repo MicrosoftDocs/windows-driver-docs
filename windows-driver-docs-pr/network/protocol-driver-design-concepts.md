@@ -6,17 +6,14 @@ keywords:
 - protocol drivers WDK networking , designing
 - NDIS protocol drivers WDK , designing
 - writing NDIS protocol drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Driver Design Concepts
 
 
-## <a href="" id="ddk-protocol-driver-design-concepts-ng"></a>
+
 
 
 The following topics describe how to implement a protocol driver:

@@ -10,11 +10,8 @@ keywords:
 - debugging drivers WDK KMDF
 - driver debugging WDK KMDF
 - framework-based drivers WDK KMDF , debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging WDF Drivers
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 The topics in this section describe techniques and tools that you can use to debug a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver.
 
-## <a href="" id="ddk-debugging-a-framework-based-driver-df"></a>
+
 
 
 ## In this section

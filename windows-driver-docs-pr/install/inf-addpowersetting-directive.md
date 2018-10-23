@@ -10,11 +10,8 @@ api_name:
 - INF AddPowerSetting Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF AddPowerSetting Directive
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 An **AddPowerSetting** directive references one or more sections that are used to modify or create power setting information. Each *add-power-setting-section* defines a power setting, the allowed values for the power setting, the friendly name of the power setting, and the description of the power setting. An *add-power-setting-section* also specifies the default value for each power scheme personality. For more information about power settings and power scheme personalities, see [Managing Device Performance States](https://msdn.microsoft.com/library/windows/hardware/ff554353).
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -45,7 +42,7 @@ An *add-power-setting-section* takes one of the following two possible forms:
 
 -   If the allowed power settings values can best be defined as a set of two or more discrete values, use a list of **Value** directives to specify the allowed values, as follows:
 
-    ```
+    ```cpp
     [add-power-setting-section]
 
     [SubGroup = {subgroup-guid}] | SubGroup = {subgroup-guid}, subgroup-name, subgroup-description, subgroup-icon
@@ -63,7 +60,7 @@ An *add-power-setting-section* takes one of the following two possible forms:
 
 -   If the allowed power settings values can best be defined as an incremented sequence of nonnegative integer values within a specified range, use one **ValueRange** directive to specify allowed values, as follows:
 
-    ```
+    ```cpp
     [add-power-setting-section]
 
     [SubGroup = {subgroup-guid}] | 
@@ -148,30 +145,30 @@ A required entry that specifies the data type of the corresponding value-data en
 
 | Flag value | Data type   |
 |------------|-------------|
-| 0x00000001 | REG_BINARY |
-| 0x00010001 | REG_DWORD  |
-| 0x00000000 | REG_SZ     |
+| 0x00000001 | [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) |
+| 0x00010001 | [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)  |
+| 0x00000000 | [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)     |
 
  
 
 <a href="" id="value-data"></a>*value-data*  
 A required entry that supplies the data for the corresponding setting value, the format of which depends on the data type that is specified by corresponding *value-flags* entry, as follows:
 
--   A REG_BINARY value can be specified in hexadecimal format by using 0x notation, or as a comma-separated list of paired hexadecimal numbers without the 0x notation.
+-   A [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value can be specified in hexadecimal format by using 0x notation, or as a comma-separated list of paired hexadecimal numbers without the 0x notation.
 
     For example, the following entries are equivalent: 0xFEDCBA9876543210 and the following comma-separated list of paired hexadecimal digits: FE, DC, BA, 98, 76, 54, 32, 10.
 
--   A REG_DWORD value can be specified either in hexadecimal format (by using 0x notation) or in decimal format.
--   A REG_SZ value can only be expressed as a string enclosed in double quotation marks ("*quoted-string*") or as a %*strkey*% token that is defined in the INF [**Strings**](inf-strings-section.md) section of an INF file.
+-   A [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value can be specified either in hexadecimal format (by using 0x notation) or in decimal format.
+-   A [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value can only be expressed as a string enclosed in double quotation marks ("*quoted-string*") or as a %*strkey*% token that is defined in the INF [**Strings**](inf-strings-section.md) section of an INF file.
 
-**Note**  You should not use string values because they cannot be localized. Instead, use values of type REG_BINARY or REG_DWORD.
+**Note**  You should not use string values because they cannot be localized. Instead, use values of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) or [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
  
 
 <a href="" id="valuerange"></a>**ValueRange**  
 Use the **ValueRange** directive if the allowed power settings values can best be defined as an incremented sequence of non-negative integer values within a specified range. The power manager validates that a setting that a user selects in **Power Options** in Control Panel is one of these allowed values. The set of allowed values is determined by a minimum allowed value, a maximum allowed value, and an increment between the allowed values within the range. A value is allowed if it satisfies the following:
 
-```
+```cpp
 range-minimum-value + k*range-increment
 ```
 
@@ -182,13 +179,13 @@ For example, for a *range-minimum-value* equal to 0, a *range-maximum-value* equ
 If the allowed power setting values can best be described as a list of values, where each value can have a value-specific custom data type, use the **Value** directive instead of the **ValueRange** directive.
 
 <a href="" id="range-minimum-value"></a>*range-minimum-value*  
-A value of type REG_DWORD that specifies the minimum allowed power setting.
+A value of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) that specifies the minimum allowed power setting.
 
 <a href="" id="range-maximum-value"></a>*range-maximum-value*  
-A value of type REG_DWORD that specifies the maximum allowed power setting value. The maximum value must be greater than or equal to minimum-value and should be equal to range-minimum-value + *k\*range-increment*, for some integer *k* that is greater than zero.
+A value of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) that specifies the maximum allowed power setting value. The maximum value must be greater than or equal to minimum-value and should be equal to range-minimum-value + *k\*range-increment*, for some integer *k* that is greater than zero.
 
 <a href="" id="range-increment-"></a>*range-increment*   
-A value of type REG_DWORD that is greater than zero. This value specifies the difference between consecutive values within the inclusive range that is specified by *range-minimum-value* and *range-maximum-value*.
+A value of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) that is greater than zero. This value specifies the difference between consecutive values within the inclusive range that is specified by *range-minimum-value* and *range-maximum-value*.
 
 <a href="" id="range-unit-label-"></a>*range-unit-label*   
 An optional string that describes the power setting value. The string, together with *setting-name*, informs the user of what type of data to enter.
@@ -235,11 +232,11 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 ### Specifying an AddPowerSetting String Entry Value
 
-Except for *value-data* entries of type REG_SZ, all the other string entry values that are supplied with an **AddPowerSetting** directive can be expressed as a string enclosed in double quotation marks ("*quoted-string*"), as a %*strkey*% token that is defined in the INF string section of an INF file, or as language-neutral registry value.
+Except for *value-data* entries of type [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), all the other string entry values that are supplied with an **AddPowerSetting** directive can be expressed as a string enclosed in double quotation marks ("*quoted-string*"), as a %*strkey*% token that is defined in the INF string section of an INF file, or as language-neutral registry value.
 
 Language-neutral registry values are used to support Windows Multilingual User Interface (MUI) and are specified as follows:
 
-```
+```cpp
 "@file-path,-resourceID[;comment]"
 ```
 
@@ -261,7 +258,7 @@ Examples
 
 The following two examples define power settings that control the brightness of an LCD. The first example shows how to use the **Value** directive to define a minimum, a medium, and a maximum LCD brightness value.
 
-```
+```cpp
 // Within a DDinstall or ClassInstall23 section
 AddPowerSetting=LCDDim
 ...
@@ -293,7 +290,7 @@ FLG_ADDREG_TYPE_DWORD = 0x00010001
 
 The second example shows how to use the **ValueRange** directive to define a range of allowed LCD brightness values that varies from 0% through 100%, with an increment of 1% between allowed values.
 
-```
+```cpp
 // Within a DDinstall or a ClassInstall23 section
 AddPowerSetting=LCDDimRange
 ...

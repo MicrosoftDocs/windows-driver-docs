@@ -6,11 +6,8 @@ ms.assetid: d2e8daaf-47e2-4a6c-9992-517dc107d4bd
 keywords:
 - Storport drivers WDK , SCSI Port miniport drivers
 - SCSI Port drivers WDK storage , Storport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Making SCSI Port Miniport Drivers Work with Storport
@@ -46,6 +43,5 @@ This section provides more detailed instructions for driver writers who wish to 
  
 
 
---------------------
 
 

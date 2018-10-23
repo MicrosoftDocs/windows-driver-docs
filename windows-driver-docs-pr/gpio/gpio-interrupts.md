@@ -3,11 +3,8 @@ title: GPIO Interrupts
 author: windows-driver-content
 description: Some general-purpose I/O (GPIO) controller devices can configure their GPIO pins to function as interrupt request inputs.
 ms.assetid: 0F56AD4C-E0BF-49F1-AB67-0107D08DEF9F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO Interrupts
@@ -38,7 +35,7 @@ Support for GPIO interrupts is optional. The GPIO framework extension (GpioClx) 
 </tr>
 <tr class="even">
 <td><p>[GPIO-Based Interrupt Resources](https://msdn.microsoft.com/library/windows/hardware/hh698246)</p></td>
-<td><p>Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources. [Kernel-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) drivers receive these resources through their [<em>EvtDevicePrepareHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback functions. [User-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff560442) (UMDF) drivers receive them through their [<strong>IPnpCallbackHardware2::OnPrepareHardware</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556766) methods.</p></td>
+<td><p>Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources. [Kernel-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) drivers receive these resources through their [<em>EvtDevicePrepareHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback functions. </p></td>
 </tr>
 <tr class="odd">
 <td><p>[Passive-Level ISRs](https://msdn.microsoft.com/library/windows/hardware/hh698262)</p></td>
@@ -70,6 +67,5 @@ Support for GPIO interrupts is optional. The GPIO framework extension (GpioClx) 
  
 
 
---------------------
 
 

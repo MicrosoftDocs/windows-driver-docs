@@ -8,17 +8,14 @@ keywords:
 - opening adapters
 - adapters WDK networking
 - opening
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening an Adapter in an NDIS 6.0 Protocol Driver
 
 
-## <a href="" id="ddk-opening-an-adapter-in-an-ndis-6-0-protocol-driver-nd"></a>
+
 
 
 In NDIS 6.0, the [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715) function replaces the [**NdisOpenAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff553673) function. A protocol driver calls **NdisOpenAdapterEx** from the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function. The driver passes protocol binding configuration parameters to **NdisOpenAdapterEx** in an [**NDIS\_OPEN\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566734) structure.

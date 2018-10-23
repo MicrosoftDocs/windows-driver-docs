@@ -3,11 +3,8 @@ title: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 author: windows-driver-content
 description: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 ms.assetid: 7c6d1756-a3db-4754-9edb-af6ba1ecf65b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
@@ -18,7 +15,7 @@ This function verifies the signature on the catalog file in the FFU against the 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS
 (EFIAPI * EFI_CHECK_SIG_AND_HASH) (
   IN EFI_CHECKSIG_PROTOCOL *This,
@@ -100,6 +97,5 @@ The call to this function is synchronous.
  
 
 
---------------------
 
 

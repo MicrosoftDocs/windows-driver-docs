@@ -6,11 +6,8 @@ ms.assetid: 128f009e-1847-493e-90e3-2fe8c141b158
 keywords:
 - power management WDK UMDF , idle power-down
 - idle power-down WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Idle Power-Down in UMDF Drivers
@@ -40,7 +37,7 @@ If your device can be powered down when it is idle, the [power policy owner](pow
     -   [**IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0**](https://msdn.microsoft.com/library/windows/hardware/ff556819), which disables the device's ability (not the bus's ability) to respond to an external wake-up event.
     -   [**IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered**](https://msdn.microsoft.com/library/windows/hardware/ff556822), which informs the driver that the bus detected a wake signal.
 
-## <a href="" id="idle-conditions-umdf"></a>
+
 
 
 The framework considers the device to be idle, and starts counting idle time, when all of the following conditions are met:

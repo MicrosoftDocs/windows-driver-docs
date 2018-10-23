@@ -2,17 +2,14 @@
 title: VMQ Transmit Path
 description: VMQ Transmit Path
 ms.assetid: a34f0708-e477-4acc-b854-f00f752be423
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VMQ Transmit Path
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 For transmit requests, the overlying driver uses the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff568407) macro to set the queue identifier of the outgoing queue in the outgoing data with the **NetBufferListFilteringInfo** OOB information. The **NetBufferListFilteringInfo** information is specified in an [**NDIS\_NET\_BUFFER\_LIST\_FILTERING\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff566567) structure.

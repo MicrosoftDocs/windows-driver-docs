@@ -3,11 +3,8 @@ title: Customize device I/O using a WDTF simple I/O action plug-in
 author: windows-driver-content
 description: To get the most benefit from the Device Fundamental tests and tests you might have written using the Visual Studio test templates, your device should be supported by a Simple I/O plug-in.
 ms.assetid: 96BC880B-79DC-4CB1-BD79-87B0A4717634
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to customize I/O for your device using the WDTF Simple I/O Action Plug-in
@@ -67,7 +64,7 @@ This [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) me
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //   TODO: Add code for your implementation of Open() here.
        //
@@ -90,7 +87,7 @@ This method should close your previously opened test context. You should clear y
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://msdn.microsoft.com/library/windows/hardware/hh451151) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentation of Close() here.
@@ -117,7 +114,7 @@ This method should perform a small number of input and output operations on the 
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the RunIO method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentaiton of RunIO() here.
@@ -151,7 +148,5 @@ If you have not already done so, you will need to configure a computer for testi
 [How to How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device](test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md)  
 [How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdtf\dtf%5D:%20How%20to%20customize%20I/O%20for%20your%20device%20using%20the%20WDTF%20Simple%20I/O%20Action%20Plug-in%20%20RELEASE:%20%289/13/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

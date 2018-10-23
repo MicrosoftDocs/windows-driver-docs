@@ -10,11 +10,8 @@ keywords:
 - in-flight requests WDK UMDF
 - I/O requests WDK UMDF , states
 - request processing WDK UMDF , states
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Canceling I/O Requests in UMDF

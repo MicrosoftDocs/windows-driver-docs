@@ -4,17 +4,14 @@ author: windows-driver-content
 description: DispatchReadWrite in Higher-Level Drivers
 ms.assetid: d8406115-c62e-4362-8d2c-77d0414c4104
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchReadWrite in Higher-Level Drivers
 
 
-## <a href="" id="ddk-dispatchreadwrite-in-higher-level-drivers-kg"></a>
+
 
 
 Except for file system drivers, a higher-level driver usually does not have any internal driver queues for IRPs. Such a driver's [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can pass IRPs with valid parameters on to lower drivers, possibly after setting up its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, as described in [Passing IRPs down the Driver Stack](passing-irps-down-the-driver-stack.md).
@@ -34,7 +31,5 @@ If a higher-level driver's *DispatchReadWrite* routine allocates memory for part
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20DispatchReadWrite%20in%20Higher-Level%20Drivers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

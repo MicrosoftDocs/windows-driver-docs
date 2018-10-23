@@ -8,17 +8,14 @@ keywords:
 - sending I/O requests WDK KMDF
 - sending I/O requests WDK KMDF , asynchronous
 - asynchronously sending I/O requests WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests Asynchronously
 
 
-## <a href="" id="ddk-sending-i-o-requests-asynchronously-df"></a>
+
 
 
 Before you can send an I/O request asynchronously to an I/O target, you must format the request. The following table lists the I/O target object methods that your driver can call to format I/O requests.

@@ -3,11 +3,9 @@ title: Microsoft public symbol server
 description: The Microsoft symbol server makes Windows debugger symbols publicly available.
 ms.assetid: b0d38104-c386-4d20-8d9c-7701347c1643
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 04/26/2018
+ms.localizationpriority: medium
 ---
 
 # Microsoft public symbol server
@@ -17,7 +15,7 @@ The Microsoft symbol server makes Windows debugger symbols publicly available.
 
 You can refer directly to the public symbol server in your symbol path in the following manner:
 
-```
+```console
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -25,15 +23,22 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 To avoid typing this long symbol path, use the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
+```dbgcmd
+.symfix+ C:\MySymbols
 ```
-.symfix+ DownstreamStore 
+
+If local symbol cache location is omitted, the sym subdirectory of the debugger installation directory will be used.
+
+Use the [**.sympath (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command to display the full symbol path. This example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
+
+```dbgcmd
+0: kd> .symfix c:\MyCache
+0: kd> .sympath
+Symbol search path is: srv*
+Expanded Symbol search path is: cache*c:\MyCache;SRV*https://msdl.microsoft.com/download/symbols
 ```
 
-**Note**   To successfully access Microsoft's public symbol store, you will need a fast internet connection. If your internet connection is only 56 Kbps or slower, you should install Windows symbols directly onto your hard drive. For details, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
-
- 
-
-For more information about the public symbol store, see the [Windows Symbols](http://go.microsoft.com/fwlink/p/?linkid=17363) Web site.
+For more information about working with symbols, see the [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
 
 **Symbol File Compression**
 
@@ -45,7 +50,6 @@ Refer to the Debugger topic [SymStore](symstore.md) for information on using Sym
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Microsoft%20public%20symbol%20server%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

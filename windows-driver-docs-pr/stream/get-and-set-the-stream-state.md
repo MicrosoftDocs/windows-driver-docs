@@ -11,24 +11,21 @@ keywords:
 - KSSTATE_ACQUIRE
 - KSSTATE_PAUSE
 - KSSTATE_RUN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get and Set the Stream State
 
 
-## <a href="" id="ddk-getting-and-setting-the-stream-state-ksg"></a>
+
 
 
 A subunit receives IOCTLs from a client application to get the current stream state or to set to a new stream state. When a data stream is created, it is initialized to the **KSSTATE\_STOP** state. The isochronous resource is allocated in the **KSSTATE\_ACQUIRE** state, and if it fails, it will return STATUS\_INSUFFICIENT\_RESOURCE (declared in *Ntstatus.h*) in the **KSSTATE\_PAUSE** state. Data streaming will commence in the **KSSTATE\_RUN** state.
 
 The following code sample sets the stream to a new state:
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_SET_STATE);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext; //  From cached context saved in OPEN_STREAM request
 pAVCStrmReq->CommandData.StreamState = StreamState; // New stream state
@@ -43,7 +40,7 @@ Status =
 
 The following code sample queries for the current stream state:
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_GET_STATE);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext;  // From cached context saved in OPEN_STREAM request
 
@@ -63,7 +60,5 @@ Status =
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Get%20and%20Set%20the%20Stream%20State%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

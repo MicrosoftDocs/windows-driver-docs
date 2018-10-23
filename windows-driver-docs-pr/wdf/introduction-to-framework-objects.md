@@ -9,17 +9,14 @@ keywords:
 - deletion callback functions WDK KMDF
 - callback functions WDK KMDF
 - parent objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Framework Objects
 
 
-## <a href="" id="ddk-introduction-to-framework-objects-df"></a>
+
 
 
 The interfaces that Windows Driver Frameworks (WDF) provides to drivers are object-based. The framework defines several objects. These objects export [methods](framework-object-methods.md) (functions) and [properties](framework-object-properties.md) (data) that drivers can access. Framework objects also initiate [events](framework-object-events.md), which drivers can support by providing event callback functions.

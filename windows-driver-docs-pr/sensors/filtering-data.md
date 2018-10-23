@@ -15,11 +15,8 @@ keywords:
 - sensor events
 - filtering data
 - data filtering
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
+ms.localizationpriority: medium
 ---
 
 # Filtering data
@@ -37,9 +34,8 @@ An ambient light sensor (ALS) is an example of a sensor that would require chang
 
 The following table lists six common sensors, the data associated with each, and the corresponding change sensitivity.
 
-|                    |                        |                                    |
-|--------------------|------------------------|------------------------------------|
 | Sensor             | Datafield              | Change Sensitivity Value           |
+|--------------------|------------------------|------------------------------------|
 | Light Sensor       | LUX                    | % change in lux                    |
 | Accelerometer      | Acceleration X         | Acceleration G-force               |
 |                    | Acceleration Y         | Acceleration G-force               |
@@ -57,80 +53,30 @@ The following table lists six common sensors, the data associated with each, and
 
  
 
-The following table lists the recommended Current Report Interval (CRI) defaults. In addition, it lists the defaults supported by the sensors HID class driver, the Sensor Service, the Windows runtime, and the ACPI for Ambient Light Sensors (ALS). These values are listed in milliseconds.
+The following table lists the recommended Current Report Interval (CRI) defaults.
 
-|               |                                  |                  |                |       |          |
-|---------------|----------------------------------|------------------|----------------|-------|----------|
-| Sensor Type   | Windows Driver Kit (recommended) | HID Class Driver | Sensor Service | WinRT | ACPI ALS |
-| Ambient Light | 5000                             | 100              | 1500           | N/A   | 1000     |
-| Accelerometer | 100                              | 100              | 125            | N/A   | N/A      |
-| Gyrometer     | 100                              | 100              | N/A            | N/A   | N/A      |
-| Compass       | 100                              | 100              | N/A            | N/A   | N/A      |
-| Inclinometer  | 50                               | 50               | N/A            | N/A   | N/A      |
-| Orientation   | 50                               | 50               | N/A            | N/A   | N/A      |
+| Sensor Type   | Recommended default report interval |
+|---------------|-------------------------------------|
+| Ambient Light | 5000                                |
+| Accelerometer | 100                                 |
+| Gyrometer     | 100                                 |
+| Compass       | 100                                 |
+| Inclinometer  | 50                                  |
+| Orientation   | 50                                  |
 
  
 
-The following table lists the recommended Change Sensitivity (CS) defaults. In addition, it lists the defaults supported by the sensors HID class driver, the Sensor Service, the Windows runtime, and the ACPI for Ambient Light Sensors (ALS).
+The following table lists the recommended Change Sensitivity (CS) defaults.
 
-Sensor Type
-Windows Driver Kit (recommended)
-HID Class Driver
-Sensor Service
-WinRT (at or below this RI)
-ACPI ALS
-16 ms
-32 ms
-Max RI
-Ambient Light
-50
-1.00
-25.00
-1.00
-1.00
-5.00
-10.00
-Accelerometer
-0.02
-0.02
-0.02
-0.01
-0.02
-0.05
-N/A
-Gyrometer
-0.50
-0.50
-N/A
-0.10
-0.50
-1.00
-N/A
-Compass
-0.20
-0.20
-N/A
-0.01
-0.50
-2.00
-N/A
-Inclinometer
-0.50
-0.50
-N/A
-0.01
-0.50
-2.00
-N/A
-Orientation
-0.50
-0.20
-N/A
-0.01
-0.50
-2.00
-N/A
- 
+|  Sensor Type  | Recommended default change sensitivity |
+|---------------|----------------------------------------|
+| Ambient Light | 50                                     |
+| Accelerometer | 0.02                                   |
+| Gyrometer     | 0.50                                   |
+| Compass       | 0.20                                   |
+| Inclinometer  | 0.50                                   |
+| Orientation   | 0.50                                   |
+
 
 ## Change Sensitivity (CS) for the Inclinometer and Orientation Sensors
 
@@ -193,9 +139,8 @@ Whenever a client application establishes a connection to a sensor, your driver 
 
 The following table represents the client container for a 3D accelerometer with 4 connected client applications. Two of these client apps (corresponding to the 2nd and 4th row) have subscribed to events.
 
-|                    |                      |     |        |        |        |
-|--------------------|----------------------|-----|--------|--------|--------|
 | Client File Handle | Subscribed To Events | CRI | CS (X) | CX (Y) | CS (Z) |
+|--------------------|----------------------|-----|--------|--------|--------|
 | FF80A267           | FALSE                | 50  | .001   | .001   | .001   |
 | FF802489           | TRUE                 | 70  | .02    | .02    | .02    |
 | FF80D345           | FALSE                | 15  | NULL   | NULL   | NULL   |
@@ -251,12 +196,10 @@ If your sensor hardware, or firmware, supports threshold detection you should us
 
 If your sensor hardware, or firmware, supports the notion of a report interval you should use this feature.
 
-If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time ellapses, retrieve the current device data.
+If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Filtering%20data%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

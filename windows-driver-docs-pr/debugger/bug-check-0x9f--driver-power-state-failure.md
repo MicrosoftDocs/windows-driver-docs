@@ -3,17 +3,15 @@ title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 ms.assetid: f767fe80-0ec0-45e4-9949-467f50ac601c
 keywords: ["(Developer Content) Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_POWER_STATE_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
@@ -21,7 +19,7 @@ api_type:
 
 This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_POWER\_STATE\_FAILURE Parameters
 
@@ -95,7 +93,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
 
-    ```
+    ```dbgcmd
     kd>!analyze -v
     *******************************************************************************
     *                                                                             *
@@ -116,7 +114,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
 
-    ```
+    ```dbgcmd
     0: kd> dt nt!TRIAGE_9F_POWER fffff8000386c3d8
        +0x000 Signature        : 0x8000
        +0x002 Revision         : 1
@@ -129,7 +127,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
 
-    ```
+    ```dbgcmd
     0: kd> !irp fffffa800ab61bd0
     Irp is active with 7 stacks 6 is current (= 0xfffffa800ab61e08)
      No Mdl: No System Buffer: Thread 00000000:  Irp stack trace.  
@@ -168,7 +166,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   Use the [**!devstack**](-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
 
-    ```
+    ```dbgcmd
     0: kd> !devstack fffffa8007b13440
       !DevObj           !DrvObj            !DevExt           ObjectName
       fffffa800783f060  \Driver\HidUsb     fffffa800783f1b0  InfoMask field not found for _OBJECT_HEADER at fffffa800783f030
@@ -182,7 +180,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   Use the !poaction command to display the threads that handle the power operations and any allocated power IRPs.
 
-    ```
+    ```dbgcmd
     3: kd> !poaction
     PopAction: fffff801332f3fe0
       State..........: 0 - Idle
@@ -249,7 +247,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
 
-    ```
+    ```dbgcmd
     kd> !analyze -v
     *******************************************************************************
     *                                                                             *
@@ -273,7 +271,7 @@ For a description of the possible causes, see the description of each code in th
 
 -   Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
 
-    ```
+    ```dbgcmd
     kd> dt nt!TRIAGE_9F_PNP 82931b24
        +0x000 Signature        : 0x8001
        +0x002 Revision         : 1
@@ -302,7 +300,7 @@ If you are not equipped to debug this problem using the techniques described abo
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   To try and isolate the cause, temporally disable power save using control panel, power options. Some driver issues are related to the various states of system hibernation and the suspending and resumption of power.
 

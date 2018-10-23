@@ -2,11 +2,8 @@
 title: Account provisioning
 description: Account provisioning
 ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Account provisioning
@@ -21,7 +18,6 @@ The following diagram illustrates the contents and hierarchy of the provisioning
 For more info about the provisioning schema, see [CarrierControlSchema schema](https://msdn.microsoft.com/library/windows/apps/hh868312).
 
 ## <span id="Updating_the_provisioning_metadata"></span><span id="updating_the_provisioning_metadata"></span><span id="UPDATING_THE_PROVISIONING_METADATA"></span>Updating the provisioning metadata
-
 
 There are several ways you can update the provisioning metadata on a computer.
 
@@ -84,12 +80,9 @@ The global section is required in every provisioning file. Required elements in 
 
 -   [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
-    **Note**  
-    This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
-
-     
-
-    If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
+  > [!NOTE]
+  > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
+  > If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
 
 -   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
@@ -352,7 +345,7 @@ This profile configures Windows to connect to an encrypted network by using a SI
       </authEncryption>
       <OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
         <EAcomputeronfig>
-          <!-- The config XML for all EA methods can be found at: http://msdn.microsoft.com/library/cc232996(v=prot.10).aspx -->
+          <!-- The config XML for all EA methods can be found at: https://msdn.microsoft.com/library/cc232996(v=prot.10).aspx -->
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
               <Type>18</Type>
@@ -664,7 +657,7 @@ You can define a provisioning XML document by using a **WlanProfiles** section.
 </CarrierProvisioning>
 ```
 
-The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
+The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
 
 ### Provision the device to connect automatically to a WISPr-enabled hotspot
 
@@ -908,7 +901,6 @@ After you import this module, the following four PowerShell cmdlets are availabl
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Account%20provisioning%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

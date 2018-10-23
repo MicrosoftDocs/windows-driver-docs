@@ -3,17 +3,15 @@ title: ndiskd.dbglevel
 description: The ndiskd.dbglevel extension displays and optionally changes the current NDIS debug level. Warning ndiskd.dbglevel has been superceded by WPP and Driver Verifier.
 ms.assetid: D134FD03-DABA-4558-A5C3-C365F77BD69A
 keywords: ["ndiskd.dbglevel Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.dbglevel
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.dbglevel
@@ -24,7 +22,7 @@ The **!ndiskd.dbglevel** extension displays and optionally changes the current N
 **Warning**  
 **!ndiskd.dbglevel** has been superceded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbglevel**.
 
-```
+```console
 0: kd> !ndiskd.dbglevel
     This target does not support tracing through !ndiskd.dbglevel or
     !ndiskd.dbgsystems.
@@ -33,7 +31,7 @@ The **!ndiskd.dbglevel** extension displays and optionally changes the current N
 
 If you click on the link at the bottom of the warning, !ndiskd will give you more information.
 
-```
+```console
 0: kd> !ndiskd.help wpptracing
     WPP traces are fast, flexible, and detailed.  Plus, starting with Windows 8
     and Windows Server 2012, you can automatically decode NDIS traces using the
@@ -56,7 +54,7 @@ For more information about Driver Verifier, see [Driver Verifier](https://msdn.m
 
 For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](https://msdn.microsoft.com/library/windows/hardware/ff561362).
 
-```
+```console
 !ndiskd.dbglevel [-level <str>] 
 ```
 
@@ -107,7 +105,6 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.dbglevel%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

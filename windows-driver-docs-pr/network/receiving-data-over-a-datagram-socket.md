@@ -6,11 +6,8 @@ keywords:
 - receiving datagrams
 - datagram sockets WDK Winsock Kernel
 - WskReceiveFrom
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data over a Datagram Socket
@@ -20,7 +17,7 @@ After a Winsock Kernel (WSK) application has bound a datagram socket to a local 
 
 The following code example shows how a WSK application can receive a datagram over a datagram socket.
 
-```
+```C++
 // Prototype for the receive datagram IoCompletion routine
 NTSTATUS
   ReceiveDatagramComplete(
@@ -131,7 +128,7 @@ As an alternative to calling the [**WskReceiveFrom**](https://msdn.microsoft.com
 
 The following code example shows how a WSK application can receive datagrams by the WSK subsystem by calling a datagram socket's *WskReceiveFromEvent* event callback function.
 
-```
+```C++
 // A datagram socket&#39;s WskReceiveFromEvent
 // event callback function
 NTSTATUS WSKAPI

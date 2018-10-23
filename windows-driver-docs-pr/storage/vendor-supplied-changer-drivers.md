@@ -7,11 +7,8 @@ keywords:
 - changer drivers WDK storage , vendor-supplied
 - storage changer drivers WDK , vendor-supplied
 - vendor-supplied changer drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Supplied Changer Drivers
@@ -33,6 +30,5 @@ This section contains the following information:
  
 
 
---------------------
 
 

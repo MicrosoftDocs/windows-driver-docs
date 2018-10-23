@@ -5,17 +5,14 @@ description: Creating Varying Resource Maps
 ms.assetid: bfe3a760-d8fe-4213-9bbe-2bad6927d8e2
 keywords:
 - varying resource maps WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Varying Resource Maps
 
 
-## <a href="" id="ddk-creating-varying-resource-maps-dg"></a>
+
 
 
 While standard resource maps can only assign an entire parent resource to a child of a multifunction device, varying resource maps let you subdivide a parent resource among children enumerated by mf.sys. Varying resource maps are supported on Windows XP and later versions of the NT-based operating system.
@@ -73,7 +70,7 @@ Based on these assumptions, mf.sys will return a resource requirements list for 
 
 Vendors use INF file directives to specify the sharing of these resources among the card's 16550 UART functions. For each function that requires a segment of the device's resources, you must use a **VaryingResourceMap** entry in the INF to create a registry entry. Following is an excerpt from the INF file for this device:
 
-```
+```cpp
 [DDInstall.RegHW] 
 ; for each "child" function list hardware ID and resource map 
 ; and/or varying resource map
@@ -96,7 +93,7 @@ The **ResourceMap** parameter is described in [Creating Standard Resource Maps](
 
 Following is a more complete example for this device, specifying four child functions:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=MultiFunction
@@ -147,7 +144,5 @@ MYCOMPANY_4PORT="MYCOMPANY 4PORT"
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bmultifunc\multifunc%5D:%20Creating%20Varying%20Resource%20Maps%20%20RELEASE:%20%288/29/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

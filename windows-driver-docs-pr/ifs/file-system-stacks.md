@@ -11,11 +11,8 @@ keywords:
 - VDOs WDK file system
 - control device objects WDK file system
 - CDOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Stacks
@@ -45,6 +42,5 @@ File system volume device objects represent volumes mounted by file systems. A f
  
 
 
---------------------
 
 

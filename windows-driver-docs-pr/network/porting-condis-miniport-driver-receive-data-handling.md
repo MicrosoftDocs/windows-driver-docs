@@ -4,17 +4,14 @@ description: Porting CoNDIS Miniport Driver Receive Data Handling
 ms.assetid: 9f540bd8-8cbf-4a7a-b4ac-83cd159f5e37
 keywords:
 - porting miniport drivers WDK networking , send and receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting CoNDIS Miniport Driver Receive Data Handling
 
 
-## <a href="" id="ddk-porting-ndis-miniport-driver-receive-data-handling-ng"></a>
+
 
 
 CoNDIS 6.0 miniport drivers indicate a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures to NDIS instead of a linked list of [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structures. NDIS then forwards the NET\_BUFFER\_LIST structures to the appropriate overlying drivers.

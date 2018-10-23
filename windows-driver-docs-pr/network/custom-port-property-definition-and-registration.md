@@ -2,11 +2,8 @@
 title: Custom Port Property Definition and Registration
 description: Custom Port Property Definition and Registration
 ms.assetid: 55FCA402-191B-4DC9-A126-77AA15183E90
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Custom Port Property Definition and Registration
@@ -22,7 +19,7 @@ Custom property definitions for a Hyper-V extensible switch port policy are regi
 
 The following shows an example of a MOF class for a custom property of an extensible switch port policy.
 
-```
+```C++
 #pragma namespace("\\\\.\\root\\virtualization\\v2")
 
 [ Dynamic, 
@@ -60,7 +57,7 @@ The MOF classes for custom properties of a port policy are registered in the com
 
 The following example shows the commands that must be entered to register a file (Fabrikam\_PortCustomSettingData.mof) that contains the MOF class for a custom port property.
 
-```
+```PowerShell
 net stop vmms
 mofcomp -N:root\virtualization\v2 Fabrikam_PortCustomSettingData.mof
 net start vmms
@@ -70,7 +67,7 @@ For more information about how to use the MOF compiler, see [Compiling a Driver'
 
 The following example shows how you can configure the sample feature. In this example, the Fabrikam\_PortCustomSettingData MOF class is used to configure a port from a Hyper-V partition named "TestVm".
 
-```
+```PowerShell
 # Retrieve the template object for the custom configuration. We know the ID already so
 # we can retrieve it directly, otherwise Get-VmSystemSwitchExtensionPortFeature can list all available
 # properties. 

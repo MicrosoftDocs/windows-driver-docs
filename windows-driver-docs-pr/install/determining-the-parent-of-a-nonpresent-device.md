@@ -12,17 +12,14 @@ keywords:
 - retrieving parent-child relationships
 - connected sequence of ancestors WDK
 - ancestors WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the Parent of a Nonpresent Device
 
 
-## <a href="" id="ddk-determining-the-parent-of-a-nonpresent-device-dg"></a>
+
 
 
 You can use the approach described in this section to determine the parent of a [*nonpresent device*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device) only if the relationship between the nonpresent device and its parent is fixed. (If the relationship between a nonpresent device and its parent is not fixed, you cannot use this method because the nonpresent device does not have a specific parent).

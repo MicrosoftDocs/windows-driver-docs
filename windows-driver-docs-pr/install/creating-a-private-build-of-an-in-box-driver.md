@@ -2,11 +2,8 @@
 title: Creating a Private Build of an Inbox Driver
 description: Creating a Private Build of an Inbox Driver
 ms.assetid: aed3c175-3e95-4bfb-a514-a663dd9e3f57
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Private Build of an Inbox Driver
@@ -18,13 +15,13 @@ You can automate the process for building a private version of an inbox driver t
 
 1.  Modify the makefile to generate a new INF file for the [driver package](driver-packages.md). For example, add the following line to the *Makefile*:
 
-    ```
+    ```cpp
     $(O)\sample.inf
     ```
 
 2.  Add directives to the *Makefile* that will generate a new INF file and execute the [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) tool to time stamp the INF file. For example, the following code example shows how you can create and time stamp an INF file that is named *Sample.inf*:
 
-    ```
+    ```cpp
     $(O)\ sample.inf: $(_INX)\ sample.inx $(_LNG)\ sample.txt
         $(C_PREPROCESSOR_NAME) $(PREFLAGS) $(_LNG)\$(@B).txt > $(O)\$(@B).txt1
         copy /b $(_INX)\$(@B).inx+$(O)\$(@B).txt1 $@

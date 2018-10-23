@@ -2,11 +2,8 @@
 ms.assetid: 51CD05AB-2626-4E27-AA08-09547D546218
 title: Converting WDK 8.1 Projects to WDK 10
 description: How to convert a driver project created with Microsoft Visual Studio 2013 and the Windows Driver Kit (WDK) 8.1 to a driver project that builds in Microsoft Visual Studio 2015 with the Windows Driver Kit (WDK) 10.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting WDK 8.1 Projects to WDK 10
@@ -45,7 +42,7 @@ Use these steps to convert the projects in a driver solution.
 
     For more information about ApiValidator, see [Validating Universal Windows drivers](validating-universal-drivers.md).
 
-    To learn how to determine the target platform for a given DDI, see [Target platform on MSDN driver reference pages](windows-10-editions-for-universal-drivers.md).
+    To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](windows-10-editions-for-universal-drivers.md).
 
  
 

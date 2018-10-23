@@ -10,11 +10,8 @@ api_name:
 - INF DDInstall.FactDef Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.FactDef Section
@@ -26,10 +23,12 @@ ms.technology: windows-devices
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 
-```
+```cpp
 [install-section-name.FactDef] |
 [install-section-name.nt.FactDef] | 
 [install-section-name.ntx86.FactDef] | 
+[install-section-name.ntarm.FactDef] |  (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.FactDef] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.FactDef] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.FactDef]  (Windows XP and later versions of Windows)
  
@@ -68,7 +67,7 @@ Specifies the bus-relative DMA channel as a decimal number. *DMAattrs* is option
 <a href="" id="ioconfig-io-range"></a>**IOConfig=***io-range*  
 Specifies the I/O port range for the device in the following form:
 
-```
+```cpp
 start-end[([decode-mask][:alias-offset][:attr])]
 ```
 
@@ -99,7 +98,7 @@ Specifies the letter **M** if the specified range is in system memory. If omitte
 <a href="" id="memconfig-mem-range"></a>**MemConfig=***mem-range*  
 Specifies the memory range for the device in the following form:
 
-```
+```cpp
 start-end[(attr)]
 ```
 
@@ -141,13 +140,13 @@ Examples
 
 This **IOConfig** entry specifies an I/O port region, 8 bytes in size, which can start at 2F8.
 
-```
+```cpp
 IOConfig=2F8-2FF
 ```
 
 This **MemConfig** entry specifies a memory region of 32K bytes that can start at D0000.
 
-```
+```cpp
 MemConfig=D0000-D7FFF
 ```
 

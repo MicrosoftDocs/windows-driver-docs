@@ -8,24 +8,21 @@ keywords:
 - installing devices WDK , null drivers
 - null drivers WDK device installations
 - nonexistent drivers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Null Driver
 
 
-## <a href="" id="ddk-installing-a-null-driver-dg"></a>
+
 
 
 You might install a "null driver" (that is, nonexistent driver) for a device if the device is not used on the machine and should not be started. Such devices do not typically exist on a machine, but if they do, you can install a null driver. Additionally, the system installs null drivers for devices that do not have a [function driver](https://msdn.microsoft.com/library/windows/hardware/ff546516), if they are capable of executing in [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode).
 
 To specify a null driver in an INF file, use entries like the following:
 
-```
+```cpp
 :
 [MyModels]
 %MyDeviceDescription% = MyNullInstallSection, &BadDeviceHardwareID%

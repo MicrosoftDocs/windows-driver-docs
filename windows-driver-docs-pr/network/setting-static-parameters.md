@@ -6,24 +6,21 @@ keywords:
 - add-registry-sections WDK networking , static parameters
 - static parameters WDK networking
 - parameters WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Static Parameters
 
 
-## <a href="" id="ddk-setting-static-parameters-ng"></a>
+
 
 
 An INF file sets a static parameter only once. This parameter cannot be reconfigured through a properties page in the user interface.
 
 An *add-registry-section* adds a static parameter as a REG\_SZ value to a component's instance key as shown in the following example:
 
-```
+```INF
 [a1.staticparams.reg]
 HKR,, MediaType, 0, "1"
 HKR,, InternalId, 0, "232"

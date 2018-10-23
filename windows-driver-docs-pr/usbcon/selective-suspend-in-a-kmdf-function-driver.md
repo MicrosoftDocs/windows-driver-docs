@@ -2,11 +2,8 @@
 Description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
 author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # Selective suspend in USB KMDF function drivers
@@ -61,7 +58,7 @@ After the device has been suspended, the framework automatically resumes the dev
 
 To resume the device, KMDF sends a power-up request down the device stack and then invokes the driver’s callback functions in the same way that it would for any other power-up sequence.
 
-For detailed information about the callbacks that are involved in the power-down and power-up sequences, see “Plug and Play and Power Management in WDF Drivers” on the WHDC Web site.
+For detailed information about the callbacks that are involved in the power-down and power-up sequences, see the [Plug and Play and Power Management in WDF Drivers](http://download.microsoft.com/download/5/d/6/5d6eaf2b-7ddf-476b-93dc-7cf0072878e6/WDF-pnpPower.docx) white paper.
 
 ## Supporting USB selective suspend in a KMDF function driver
 
@@ -102,7 +99,7 @@ After the driver initializes the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**
 
 The following code snippet is from the Osrusbfx2 sample driver’s Device.c file:
 
-```
+```cpp
 WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS idleSettings;
 NTSTATUS    status = STATUS_SUCCESS;
 //
@@ -138,7 +135,7 @@ Sometimes, a USB device should not be powered down even if no I/O requests are p
 
 KMDF upper filter drivers for USB HID devices must indicate in the INF that they support selective suspend so that the Microsoft-supplied HIDClass.sys port driver can enable selective suspend for the HID stack. The INF should include an AddReg directive that adds the SelectiveSuspendEnabled key and set its value to 1, as the following string shows:
 
-```
+```cpp
 HKR,,"SelectiveSuspendEnabled",0x00000001,0x1
 ```
 
@@ -166,7 +163,7 @@ In the call to [**WdfUsbTargetDeviceRetrieveInformation**](https://msdn.microsof
 
 The following example from the Osrusbfx2 KMDF sample shows how to call this method to determine whether a device supports remote wake. After these lines of code have run, the waitWakeEnable variable contains TRUE if the device supports remote wake and FALSE if it does not:
 
-```
+```cpp
     WDF_USB_DEVICE_INFORMATION          deviceInfo;
 // Retrieve USBD version information, port driver capabilities and device
 // capabilites such as speed, power, etc.
@@ -191,7 +188,7 @@ In USB terminology, a USB device is enabled for remote wakeup when its DEVICE\_R
 
 The following code snippet from the Osrusbfx2 sample shows how to initialize wake settings to their default values:
 
-```
+```cpp
 WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS wakeSettings;
 
 WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&wakeSettings);
@@ -208,7 +205,5 @@ For the same reason, USB function drivers rarely require a *EvtDeviceWakeFromS0T
 ## Related topics
 [Selective suspend in USB drivers (WDF)](selective-suspend-in-usb-drivers-wdf.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Selective%20suspend%20in%20USB%20KMDF%20function%20drivers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

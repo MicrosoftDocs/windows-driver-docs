@@ -5,17 +5,14 @@ ms.assetid: 19810a7c-91c1-4014-a364-2819d743627d
 keywords:
 - NDIS 6.20 WDK , data structures
 - data structures WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using NDIS 6.20 Data Structures
 
 
-## <a href="" id="ddk-using-ndis-6-20-data-structures-ng"></a>
+
 
 
 NDIS can support multiple versions of the same data structure. NDIS 6.20 and later drivers that use updated structures must report the correct **Revision** member and **Size** member value in the [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure that is in the **Header** member of a structure, if any, when the drivers initialize NDIS 6.20 data structures.

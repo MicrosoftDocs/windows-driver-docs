@@ -2,11 +2,8 @@
 title: Roadmap for Developing NDIS Filter Drivers
 description: Roadmap for Developing NDIS Filter Drivers
 ms.assetid: 346dae93-4cb7-4cb5-a2cf-41be9809fec2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing NDIS Filter Drivers

@@ -13,11 +13,8 @@ keywords:
 - host controllers WDK SD bus
 - hardware WDK SD bus
 - software WDK SD bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SD Card Driver Stack
@@ -50,6 +47,5 @@ The *ntddsd.h* header file, which is provided in the Windows Driver Kit (WDK), d
  
 
 
---------------------
 
 

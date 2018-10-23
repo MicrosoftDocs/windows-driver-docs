@@ -3,11 +3,8 @@ title: Handling SRB_FUNCTION_PNP
 author: windows-driver-content
 description: Handling SRB_FUNCTION_PNP
 ms.assetid: 25490320-8d6b-4c5a-a585-4f628ea72393
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_PNP
@@ -24,6 +21,5 @@ If the function member of an SRB is set to SRB\_FUNCTION\_PNP, the SRB is a stru
  
 
 
---------------------
 
 

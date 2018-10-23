@@ -11,11 +11,8 @@ keywords:
 - Sony/Philips digital interface
 - data ranges WDK audio , WMA Pro
 - non-PCM audio formats WDK , WMA Pro
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying WMA Pro Data Ranges
@@ -24,22 +21,22 @@ ms.technology: windows-devices
 ## <span id="specifying_wma_pro_data_ranges"></span><span id="SPECIFYING_WMA_PRO_DATA_RANGES"></span>
 
 
-In the Microsoft Windows SDK for Windows XP SP2 and later, the header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
 
-```
+```cpp
   #define WAVE_FORMAT_WMASPDIF  0x0164
 ```
 
 The corresponding format-subtype GUID can be specified in terms of the wave-format tag by using the DEFINE\_WAVEFORMATEX\_GUID macro from the header file Ksmedia.h as follows:
 
-```
+```cpp
   #define KSDATAFORMAT_SUBTYPE_WMA_SPDIF    \
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_WMASPDIF)
 ```
 
 The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats:
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesSpdifOut[] =
 {
   // 48-kHz WMA Pro over S/PDIF
@@ -111,7 +108,5 @@ The preceding example does not enable DirectSound to handle the non-PCM WMA Pro-
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20WMA%20Pro%20Data%20Ranges%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

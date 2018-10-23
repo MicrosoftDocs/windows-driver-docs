@@ -8,11 +8,8 @@ keywords:
 - load order groups WDK file system
 - start types WDK file system
 - driver start types WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Load Order Groups and Altitudes for Minifilter Drivers
@@ -183,6 +180,5 @@ Note that the load order groups and altitude ranges are listed as they appear on
  
 
 
---------------------
 
 

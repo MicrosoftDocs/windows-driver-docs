@@ -2,11 +2,8 @@
 title: Setting a Device Instance Property Value
 description: Setting a Device Instance Property Value
 ms.assetid: 45f63ee3-278e-4b8c-a666-c860074fa172
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting a Device Instance Property Value

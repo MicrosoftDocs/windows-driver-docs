@@ -7,17 +7,14 @@ keywords:
 - telephonic services WDK WAN , initiliazing
 - CoNDIS TAPI WDK networking , initializing
 - initializing CoNDIS TAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS TAPI Initialization
 
 
-## <a href="" id="ddk-condis-tapi-initialization-ng"></a>
+
 
 
 This section discusses how a CoNDIS WAN miniport driver enumerates its TAPI capabilities for applications. These TAPI capabilities consist of:

@@ -9,17 +9,14 @@ keywords:
 - NDIS miniport drivers WDK , receiving data
 - sending data WDK networking
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Send and Receive Operations
 
 
-## <a href="" id="ddk-miniport-driver-send-and-receive-operations-ng"></a>
+
 
 
 Miniport drivers handle send requests from overlying drivers and originate receive indications. In a single function call, NDIS miniport drivers can indicate a linked list with multiple received [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures. Miniport drivers can handle send requests for lists of multiple NET\_BUFFER\_LIST structures with multiple [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures on each NET\_BUFFER\_LIST structure.

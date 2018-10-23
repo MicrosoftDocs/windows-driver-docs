@@ -3,17 +3,15 @@ title: storagekd.storunit
 description: The storagekd.storunit extension displays information about the specified Storport logical unit.
 ms.assetid: 73A2632C-962E-4075-97B9-5D7D843E9D0F
 keywords: ["storagekd.storunit Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - storagekd.storunit
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !storagekd.storunit
@@ -21,7 +19,7 @@ api_type:
 
 The **!storagekd.storunit** extension displays information about the specified Storport logical unit.
 
-```
+```dbgcmd
 !storagekd.storunit [Address] 
 ```
 
@@ -55,7 +53,7 @@ Here is an example of the **!storagekd.storunit** display:
 
 **0: kd&gt; !storagekd.storunit**
 
-```
+```dbgcmd
 # STORPORT Units:
 ==================
 ## Product                 SCSI ID  Object            Extension         Pnd Out Ct  State
@@ -65,7 +63,7 @@ Msft       Virtual Di   0  0  1  fffffa800658a060  fffffa800658a1b0    0   0  0 
 
 **0: kd&gt; !storagekd.storunit fffffa800658a060**
 
-```
+```dbgcmd
    DO fffffa800658a060   Ext fffffa800658a1b0   Adapter fffffa800649a1a0   Working
    Vendor: Msft       Product: Virtual Disk       SCSI ID: (0, 0, 1)   
    Claimed Enumerated 
@@ -104,7 +102,6 @@ IRP               SRB Type   SRB               XRB               Command        
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!storagekd.storunit%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

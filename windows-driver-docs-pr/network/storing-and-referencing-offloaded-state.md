@@ -5,11 +5,8 @@ ms.assetid: 596ec8b5-0a8e-488c-a2d3-162cc440d45f
 keywords:
 - offload state WDK TCP chimney offload , context area
 - context area WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storing and Referencing Offloaded State
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-storing-and-referencing-offloaded-state-ng"></a>
+
 
 
 For each [offload state object](offload-state-objects.md) that an offload target offloads from the host stack, the offload target allocates a unique offload context area in which to store the offloaded state object and information about that state object. This context area can be in host memory or NIC memory.

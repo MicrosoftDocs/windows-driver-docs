@@ -5,17 +5,14 @@ ms.assetid: FED22F37-D09C-4207-8C2C-FB6484A8D19D
 keywords:
 - hardware keys WDK device installations , opening
 - opening hardware keys WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening a Device's Hardware Key
 
 
-You must not directly open a device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key). As with any registry key, the location or format of these keys might change between different versions of Windows.
+A *hardware key* is device-specific registry subkey that contains information about the device. You must not directly open a device's hardware key. As with any registry key, the location or format of these keys might change between different versions of Windows. 
 
 **Note**  You should open a device's hardware key only after the corresponding device has been found. For more information about this procedure, see [Enumerating Installed Devices](enumerating-installed-devices.md).
 

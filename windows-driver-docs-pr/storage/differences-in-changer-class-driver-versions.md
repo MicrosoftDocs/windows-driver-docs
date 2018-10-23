@@ -7,11 +7,8 @@ keywords:
 - changer drivers WDK storage , class drivers
 - storage changer drivers WDK , class drivers
 - class drivers WDK storage , changer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Differences in Changer Class Driver Versions
@@ -57,6 +54,5 @@ In Windows XP and later operating systems, the changer class driver provides, tw
  
 
 
---------------------
 
 

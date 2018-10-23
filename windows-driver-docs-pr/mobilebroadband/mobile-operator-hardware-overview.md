@@ -2,11 +2,8 @@
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
 ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mobile operator hardware overview
@@ -72,7 +69,7 @@ When an active device is attached that already had an active SIM, the workflow i
 
 ### <span id="Windows_8__Windows_8.1__or_Windows_10_certified_mobile_broadband_devices"></span><span id="windows_8__windows_8.1__or_windows_10_certified_mobile_broadband_devices"></span><span id="WINDOWS_8__WINDOWS_8.1__OR_WINDOWS_10_CERTIFIED_MOBILE_BROADBAND_DEVICES"></span>Windows 8, Windows 8.1, or Windows 10 certified mobile broadband devices
 
-To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](http://msdn.microsoft.com/library/windows/hardware/hh748188).
+To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](https://msdn.microsoft.com/library/windows/hardware/hh748188).
 
 For the end user, the most simplified connection experience is delivered with a USB-based mobile broadband device. As part of the hardware certification requirements, any mobile broadband device that manifests as a USB device must comply with the [Mobile Broadband Interface Model (MBIM) specification](https://msdn.microsoft.com/library/windows/hardware/dn265427) and the MBIM v1.0 Errata. This includes both external USB dongles and embedded modules that provide USB interfaces. For this class of devices, Windows 8, Windows 8.1, or Windows 10 includes a mobile broadband class driver, which eliminates the need for additional drivers from the IHV and simplifies the user’s connection experience. Other hardware that is not USB and driver models can receive Windows 8, Windows 8.1, and Windows 10 certification and will provide the Microsoft Store mobile broadband app experience, but these are not supported by the mobile broadband class driver.
 
@@ -169,7 +166,7 @@ Here are some options to consider when supporting an operator-specific OMA-DM:
 
     -   The mobile broadband device manufacturer may be able to provide 3rd party OMA-DM client solutions for integrating in their network adapter firmware if a natively supported solution does not exist.
 
-    -   Mobile broadband apps should continue to use [provisioning metadata](http://msdn.microsoft.com/library/windows/apps/windows.networking.networkoperators.provisioningagent) when configuring operating system specific parameters.
+    -   Mobile broadband apps should continue to use [provisioning metadata](https://msdn.microsoft.com/library/windows/apps/windows.networking.networkoperators.provisioningagent) when configuring operating system specific parameters.
 
 -   OMA-DM client in the mobile broadband app:
 
@@ -211,7 +208,6 @@ There is no HCK test case to validate that this feature implemented on the devic
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Mobile%20operator%20hardware%20overview%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

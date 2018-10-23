@@ -2,11 +2,8 @@
 title: Managing IRP Resources for NDIS Selective Suspend
 description: Managing IRP Resources for NDIS Selective Suspend
 ms.assetid: 542A96A7-AD6D-4780-8FEF-34730A663C1A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing IRP Resources for NDIS Selective Suspend
@@ -20,11 +17,11 @@ NDIS may issue the idle notification to the miniport driver many times after the
 
 The following example shows how the miniport driver allocates the IRP resources.
 
-```
+```C++
 //
 // MiniportInitializeEx()
 //
-// In the miniport&#39;s initialization routine, the miniport should allocate
+// In the miniport's initialization routine, the miniport should allocate
 // an IRP.  It can also set up the USB_IDLE_CALLBACK_INFO structure that
 // will be used with each successive USB idle request.
 //
@@ -59,7 +56,7 @@ If the miniport driver allocates the IRP resources during the call to [*Miniport
 
 The following example shows how the miniport driver frees the IRP resources.
 
-```
+```C++
 //
 // MiniportHaltEx
 //
@@ -82,12 +79,3 @@ VOID MiniportHaltEx(
     }
 
 ```
-
- 
-
- 
-
-
-
-
-

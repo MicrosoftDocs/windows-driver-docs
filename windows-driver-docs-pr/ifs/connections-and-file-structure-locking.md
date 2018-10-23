@@ -16,11 +16,8 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connections and File Structure Locking
@@ -149,7 +146,7 @@ A network mini-redirector should have an exclusive lock on the NetName table in 
 
 To execute a Create on one of these data structures, a network mini-redirector driver should do something similar to the following:
 
-```
+```cpp
     getshared();lookup();
     if (failed) {
         release(); getexclusive(); lookup();
@@ -166,6 +163,5 @@ When you have successfully acquired the lock, insert the node into the table, re
  
 
 
---------------------
 
 

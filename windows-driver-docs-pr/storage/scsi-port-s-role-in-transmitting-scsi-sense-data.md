@@ -3,11 +3,8 @@ title: SCSI Port's Role in Transmitting SCSI Sense Data
 author: windows-driver-content
 description: SCSI Port's Role in Transmitting SCSI Sense Data
 ms.assetid: 27acaa0f-5b8f-43a3-9c2b-d23943114335
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Port's Role in Transmitting SCSI Sense Data
@@ -27,6 +24,5 @@ When SCSI Port completes the IRP\_MJ\_SCSI IRP associated with the SRB, it must 
  
 
 
---------------------
 
 

@@ -7,11 +7,8 @@ keywords:
 - signing drivers WDK , selecting signature type
 - digital signatures WDK , selecting signature type
 - signatures WDK , selecting signature type
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Selecting the Appropriate Signature Type

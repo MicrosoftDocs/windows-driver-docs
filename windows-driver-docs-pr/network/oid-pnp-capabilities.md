@@ -3,13 +3,10 @@ title: OID_PNP_CAPABILITIES
 author: windows-driver-content
 description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
 ms.assetid: f2e3a867-d7d2-4d09-b84b-e8f8610b8535
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PNP_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_CAPABILITIES
@@ -17,15 +14,14 @@ keywords:
 
 The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities. The wake-up capabilities are formatted as an **NDIS\_PNP\_CAPABILITIES** structure, which is defined as follows:
 
-```ManagedCPlusPlus
+```C++
     typedef struct _NDIS_PNP_CAPABILITIES {
          ULONG Flags;
          NDIS_PM_WAKE_UP_CAPABILITIES WakeUpCapabilities;
-    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;
-  
+    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;  
 ```
 
-## <a href="" id="ddk-oid-pnp-capabilities-nr"></a>
+
 
 
 The members of this structure contain the following information:
@@ -38,7 +34,7 @@ NDIS sets this flag if the underlying miniport driver supports one or more wake-
 <a href="" id="wakeupcapabilities"></a>**WakeUpCapabilities**  
 An **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure that specifies the wake-up capabilities of the miniport driver's network adapter. The **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_PM_WAKE_UP_CAPABILITIES {
          NDIS_DEVICE_POWER_STATE MinMagicPacketWakeUp;
          NDIS_DEVICE_POWER_STATE MinPatternWakeUp;
@@ -157,7 +153,5 @@ Requirements
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_PNP_CAPABILITIES%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

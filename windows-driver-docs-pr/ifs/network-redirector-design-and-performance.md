@@ -9,11 +9,8 @@ keywords:
 - performance WDK network redirectors
 - run-to-the-wire approach WDK network redirectors
 - bandwidth WDK network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Redirector Design and Performance
@@ -37,6 +34,5 @@ Finally, performance may be enhanced if appropriate data obtained during operati
  
 
 
---------------------
 
 

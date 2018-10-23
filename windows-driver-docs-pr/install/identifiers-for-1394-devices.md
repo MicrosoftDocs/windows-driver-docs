@@ -10,17 +10,14 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for 1394 Devices
 
 
-## <a href="" id="ddk-identifiers-for-1394-devices-dg"></a>
+
 
 
 The 1394 bus driver constructs these identifiers for a device:

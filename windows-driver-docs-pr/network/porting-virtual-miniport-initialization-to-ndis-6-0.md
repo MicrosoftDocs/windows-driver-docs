@@ -8,17 +8,14 @@ keywords:
 - virtual miniports WDK networking
 - porting intermediate drivers WDK networking , virtual miniports
 - initializing virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Virtual Miniport Initialization to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-virtual-miniport-initialization-to-ndis-6-0-nd"></a>
+
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers usually starts virtual miniport initialization during the bind operation. In NDIS 6.0, the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function replaces the NDIS 5.*x*[**ProtocolBindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff562465) function.

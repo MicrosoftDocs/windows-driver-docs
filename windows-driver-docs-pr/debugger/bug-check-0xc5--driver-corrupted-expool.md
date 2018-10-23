@@ -3,17 +3,15 @@ title: Bug Check 0xC5 DRIVER_CORRUPTED_EXPOOL
 description: The DRIVER_CORRUPTED_EXPOOL bug check has a value of 0x000000C5. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
 ms.assetid: e375e7d3-9cb1-474f-ade2-1bc65dd79864
 keywords: ["Bug Check 0xC5 DRIVER_CORRUPTED_EXPOOL", "DRIVER_CORRUPTED_EXPOOL"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_CORRUPTED_EXPOOL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC5: DRIVER\_CORRUPTED\_EXPOOL
@@ -21,7 +19,7 @@ api_type:
 
 The DRIVER\_CORRUPTED\_EXPOOL bug check has a value of 0x000000C5. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_CORRUPTED\_EXPOOL Parameters
 

@@ -3,11 +3,8 @@ title: Use the Sensors Diagnostic Tool to test your driver and device
 author: windows-driver-content
 description: Use the Sensors Diagnostic Tool to test your driver and device
 ms.assetid: 68E0BB6C-7777-4EC5-B084-DA623074BBB2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Use the Sensors Diagnostic Tool to test your driver and device
@@ -15,7 +12,8 @@ ms.technology: windows-devices
 
 The Sensor Diagnostic Tool (SDT) is included with the Windows Driver Kit, and you can use this tool to test your driver, firmware, and hardware functionality.
 
-**Note**  The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Microsoft Store, for all sensor testing and diagnostics.
+>[!NOTE]
+> The Sensor Diagnostic Tool is now deprecated for Windows 10. Please use the SensorInfo App from the Microsoft Store, for all sensor testing and diagnostics.
 
  
 
@@ -32,7 +30,7 @@ This screenshot shows the SDT running after the SpbAccelerometer sample driver a
 
 ![sensors diagnostic tool](images/sdt2.png)
 
-For more information about using the SDT, see to the Sensor Driver Documentation on MSDN.
+For more information about using the SDT, see to the [Sensor Driver Documentation](https://docs.microsoft.com/windows-hardware/drivers/sensors/).
 
  
 

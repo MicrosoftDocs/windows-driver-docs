@@ -10,11 +10,8 @@ api_name:
 - INF ClassInstall32.Services Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF ClassInstall32.Services Section
@@ -26,10 +23,12 @@ ms.technology: windows-devices
 
 A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-```
+```cpp
 [ClassInstall32.Services] | 
 [ClassInstall32.nt.Services] | 
 [ClassInstall32.ntx86.Services] | 
+[ClassInstall32.ntarm.Services] | (Windows 8 and later versions of Windows)
+[ClassInstall32.ntarm64.Services] | (Windows 10 version 1709 and later versions of Windows)
 [ClassInstall32.ntia64.Services] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64.Services]  (Windows XP and later versions of Windows)
 

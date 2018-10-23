@@ -3,17 +3,15 @@ title: .pop (Restore Debugger State)
 description: The .pop command restores the state of the debugger to a state that has previously been saved by using the .push (Save Debugger State) command.
 ms.assetid: 31f94b2a-3597-40e4-845a-d686274e36c3
 keywords: ["Restore Debugger State (.pop) command", ".pop (Restore Debugger State) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .pop (Restore Debugger State)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .pop (Restore Debugger State)
@@ -21,7 +19,7 @@ api_type:
 
 The **.pop** command restores the state of the debugger to a state that has previously been saved by using the [**.push (Save Debugger State)**](-push--save-debugger-state-.md) command.
 
-```
+```dbgcmd
 .pop
 .pop /r
 .pop /r /q
@@ -70,7 +68,6 @@ This command is most useful when used with [scripts](using-script-files.md) and 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.pop%20%28Restore%20Debugger%20State%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

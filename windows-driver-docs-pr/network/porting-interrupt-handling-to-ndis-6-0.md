@@ -9,17 +9,14 @@ keywords:
 - RSS WDK networking , porting interrupt handling
 - interrupts WDK networking , receive-side scaling
 - message-signaled inter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Interrupt Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-interrupt-handling-to-ndis-6-0-ng"></a>
+
 
 
 In NDIS 6.0, when a NIC asserts an interrupt line, NDIS calls the miniport driver's [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395) function (formerly [**MiniportISR**](https://msdn.microsoft.com/library/windows/hardware/ff550478)). *MiniportInterrupt* dismisses the interrupt, saves necessary interrupt state information, and defers as much of the I/O processing as possible to the [*MiniportInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff559398) function (formerly [**MiniportHandleInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff549458)).

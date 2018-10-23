@@ -6,17 +6,14 @@ keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases
 - Winnt32 phase WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winnt32 Phase of the Network Upgrade Process
 
 
-## <a href="" id="ddk-winnt32-phase-of-the-network-upgrade-process-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

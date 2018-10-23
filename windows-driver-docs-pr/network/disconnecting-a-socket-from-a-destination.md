@@ -9,11 +9,8 @@ keywords:
 - connections WDK Winsock Kernel
 - disconnections WDK Winsock Kernel
 - destination connections WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Disconnecting a Socket from a Destination
@@ -23,7 +20,7 @@ When a Winsock Kernel (WSK) application has finished sending and receiving data 
 
 The following code example shows how a WSK application can gracefully disconnect a connection-oriented socket from a remote transport address.
 
-```
+```C++
 // Prototype for the disconnect IoCompletion routine
 NTSTATUS
   DisconnectComplete(

@@ -4,17 +4,14 @@ description: Sending Data from a Protocol Driver
 ms.assetid: f4fa1814-1d8f-49d3-90fb-766b5b17ef28
 keywords:
 - sending data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Data from a Protocol Driver
 
 
-## <a href="" id="ddk-sending-data-from-a-protocol-driver-ng"></a>
+
 
 
 The following figure illustrates a protocol driver send operation, which involves a protocol driver, NDIS, and underlying drivers in a driver stack.

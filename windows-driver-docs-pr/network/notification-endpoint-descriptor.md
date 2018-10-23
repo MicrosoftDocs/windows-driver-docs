@@ -2,17 +2,14 @@
 title: Notification Endpoint Descriptor
 description: Notification Endpoint Descriptor
 ms.assetid: de15c698-a4a6-49f9-9faf-b9a64fe8b1c2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Notification Endpoint Descriptor
 
 
-## <a href="" id="ddk-notification-endpoint-descriptor-ng"></a>
+
 
 
 <table>

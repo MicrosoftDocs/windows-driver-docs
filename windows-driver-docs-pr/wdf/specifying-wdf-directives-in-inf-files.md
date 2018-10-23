@@ -19,11 +19,8 @@ keywords:
 - UMDF-service-install section WDK
 - INF files WDK UMDF , directives
 - UmdfDispatcher INF directive WDK UMDF , syntax
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying WDF Directives in INF Files
@@ -41,7 +38,7 @@ An INF file that installs a UMDF driver must contain a Microsoft Windows Driver 
 
 The following code example shows UMDF-specific directives in a WDF-specific *DDInstall* section.
 
-```
+```cpp
 [Skeleton_Install.Wdf]
 UmdfService=UMDFSkeleton,UMDFSkeleton_Install
 UmdfServiceOrder=UMDFSkeleton
@@ -50,7 +47,7 @@ UmdfServiceOrder=UMDFSkeleton
 Each UMDF-specific directive in the WDF-specific *DDInstall* section is described in the following list:
 
 <a href="" id="umdfservice----servicename----sectionname-"></a>**UmdfService** = &lt;*serviceName*&gt;, &lt;*sectionName*&gt;  
-Associates a UMDF driver with a *UMDF-service-install* section that contains information that is required to install the UMDF driver. The *serviceName* parameter specifies the UMDF driver. The *sectionName* parameter references the *UMDF-service-install* section. A valid INF file typically requires at least one **UmdfService** directive. However, if a UMDF driver is part of the operating system, a **UmdfService** directive for the UMDF driver is not required. Therefore, a valid INF file might not have any **UmdfService** directives, although most INF files have one **UmdfService** directive for each UMDF driver.
+Associates a UMDF driver with a *UMDF-service-install* section that contains information that is required to install the UMDF driver. The *serviceName* parameter specifies the UMDF driver, and is limited to a maximum of 31 characters in length. The *sectionName* parameter references the *UMDF-service-install* section. A valid INF file typically requires at least one **UmdfService** directive. However, if a UMDF driver is part of the operating system, a **UmdfService** directive for the UMDF driver is not required. Therefore, a valid INF file might not have any **UmdfService** directives, although most INF files have one **UmdfService** directive for each UMDF driver.
 
 <a href="" id="umdfhostprocesssharing-------------processsharingdisabled---processsharingenabled-"></a>**UmdfHostProcessSharing** = &lt;**ProcessSharingDisabled** | **ProcessSharingEnabled**&gt;  
 Determines whether a device stack is placed into a shared process pool (**ProcessSharingEnabled**) or its own individual process (**ProcessSharingDisabled**). The default is **ProcessSharingEnabled**. This directive is device-specific rather than driver-specific.
@@ -132,7 +129,7 @@ A **UmdfDispatcher** directive is optional.
 
 The following code example shows the **UmdfDispatcher** directive in a WDF-specific **DDInstall** section.
 
-```
+```cpp
 [Xxx_Install.Wdf]
 UmdfDispatcher=NativeUSB
 ```
@@ -170,12 +167,12 @@ The default value is **CanUseFsContext**.
 
 UMDF versions 1.11 and later support the **UmdfFsContextUsePolicy** directive.
 
-## <a href="" id="umdf-service-install"></a>
+
 
 
 The following code example shows the required directives in a *UMDF-service-install* section.
 
-```
+```cpp
 [UMDFSkeleton_Install]
 UmdfLibraryVersion=1.0.0
 ServiceBinary=%12%\UMDF\UMDFSkeleton.dll
@@ -207,7 +204,7 @@ Service names for the class extension drivers could be located as a subkey under
 
 On Windows 8.1 and earlier, to avoid a required reboot when you update a UMDF driver, specify the **COPYFLG\_IN\_USE\_RENAME** flag in the [**CopyFiles Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346) in your driver's INF file, as shown in this example:
 
-```
+```cpp
 [VirtualSerial_Install.NT]
 CopyFiles=UMDriverCopy
  

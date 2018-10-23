@@ -5,11 +5,8 @@ ms.assetid: 3b383f78-da88-4979-b55f-8e234f230df7
 keywords:
 - Direct3D version 11 WDK Windows 7 display , initializing DDI communication
 - Direct3D version 11 WDK Windows Server 2008 R2 display , initializing DDI communication
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing Communication with the Direct3D Version 11 DDI
@@ -31,7 +28,7 @@ To initialize communication with the user-mode display driver DLL's version 11 D
 
 There are at least two new DDI versions for the Direct3D 11 DDI functions. Each DDI version distinguishes whether the DDI runs on Windows Vista or Windows 7. However, support of the Direct3D 11 DDI does not necessarily indicate full support of the hardware features that are associated with D3D\_FEATURE\_LEVEL\_11. Drivers can support the new threading features of the Direct3D 11 DDI with hardware that does not support the other features that are exposed by the Direct3D 11 DDI, like tessellation, and so on. The following code shows how each DDI version is distinguished:
 
-```
+```cpp
 // D3D11.0 on Vista
 #define D3D11_DDI_MAJOR_VERSION 11
 #define D3D11_0_DDI_MINOR_VERSION ...
@@ -88,7 +85,6 @@ The user-mode display driver's CreateDevice(D3D10) function is called with a [**
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Initializing%20Communication%20with%20the%20Direct3D%20Version%2011%20DDI%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

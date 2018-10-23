@@ -3,17 +3,15 @@ title: Bug Check 0x96 INVALID_WORK_QUEUE_ITEM
 description: The INVALID_WORK_QUEUE_ITEM bug check has a value of 0x00000096. This bug check indicates that a queue entry was removed that contained a NULL pointer.
 ms.assetid: 18d7d8b2-814c-4207-aac9-e3affc2ccebd
 keywords: ["Bug Check 0x96 INVALID_WORK_QUEUE_ITEM", "INVALID_WORK_QUEUE_ITEM"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INVALID_WORK_QUEUE_ITEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x96: INVALID\_WORK\_QUEUE\_ITEM
@@ -21,7 +19,7 @@ api_type:
 
 The INVALID\_WORK\_QUEUE\_ITEM bug check has a value of 0x00000096. This bug check indicates that a queue entry was removed that contained a **NULL** pointer.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_WORK\_QUEUE\_ITEM Parameters
 

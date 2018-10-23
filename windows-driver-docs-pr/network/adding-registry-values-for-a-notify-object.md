@@ -7,17 +7,14 @@ keywords:
 - notify objects WDK networking , registry values
 - network notify objects WDK , registry values
 - registry WDK notify objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Registry Values for a Notify Object
 
 
-## <a href="" id="ddk-adding-registry-values-for-a-notify-object-ng"></a>
+
 
 
 A **NetTrans**, **NetClient**, or **NetService** component can have a notify object that performs one or more of the following actions:
@@ -50,7 +47,7 @@ A REG\_SZ value that specifies the path to the notify object DLL. The **Componen
 
 The following is an example of an *add-registry-section* that adds **ClsID** and **ComponentDll** values to the **Ndi** key:
 
-```
+```INF
 [MS_Protocol.ndi.reg]
 HKR, Ndi, ClsID, 0, "GUID"
 HKR, Ndi, ComponentDll, 0, "notifyobject.dll"

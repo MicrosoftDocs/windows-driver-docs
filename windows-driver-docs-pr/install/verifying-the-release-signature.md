@@ -2,11 +2,8 @@
 title: Verifying the Release-Signature
 description: Verifying the Release-Signature
 ms.assetid: 28ed3bb6-dc57-42f9-8bd5-7118619f3bf5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Verifying the Release-Signature
@@ -22,7 +19,7 @@ The examples in this topic use the 64-bit version of the Toastpkg sample's binar
 
 The following example verifies the signature of *toaster.sys* in the *tstamd64.cat* release-signed [catalog file](catalog-files.md):
 
-```
+```cpp
 Signtool verify /kp /v /c tstamd64.cat amd64\toaster.sys
 ```
 
@@ -52,7 +49,7 @@ For a signed catalog file, the Default Authenticode verification policy signatur
 
 The following example verifies the Default Authenticode verification policy of *toaster.sys* in the *tstamd64.cat* signed catalog file:
 
-```
+```cpp
 Signtool verify /pa /v /c tstamd64.cat amd64\toaster.sys
 ```
 

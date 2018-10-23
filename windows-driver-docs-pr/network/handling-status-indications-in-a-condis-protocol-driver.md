@@ -5,17 +5,14 @@ ms.assetid: 948df51b-0561-4b67-b87f-e1652bb18772
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Status Indications in a CoNDIS Protocol Driver
 
 
-## <a href="" id="ddk-handling-status-indications-in-a-condis-protocol-driver-ng"></a>
+
 
 
 Protocol drivers must supply a [**ProtocolCoStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570258) function that NDIS calls when an underlying driver reports status.

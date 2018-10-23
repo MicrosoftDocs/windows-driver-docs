@@ -12,11 +12,8 @@ keywords:
 - framework objects WDK KMDF , DMA objects
 - enabler objects WDK KMDF
 - transaction objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework DMA Objects
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-framework-dma-objects-df"></a>
+
 
 
 To handle bus-master and system-mode DMA operations in a framework-based driver, the framework provides three objects:

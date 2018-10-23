@@ -5,11 +5,8 @@ description: The WDF_PTR_ADD_OFFSET_TYPE macro adds an offset value to an addres
 ms.assetid: b46d0bbe-8401-4c97-8327-fecd3af50eca
 keywords:
  - WDF_PTR_ADD_OFFSET_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF_PTR_ADD_OFFSET_TYPE macro

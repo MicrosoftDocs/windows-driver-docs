@@ -23,11 +23,8 @@ keywords:
 - PCM wave output WDK audio
 - S/PDIF pass-through WDK audio
 - mixing audio WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the Topology
@@ -146,7 +143,7 @@ This type of hardware acceleration is supported in Windows Server 2003, Windows 
 
 In the preceding figure, the physical connections between the MIDI, Wave*Xxx*, and topology filters all transport analog audio signals. However, a different topology device might achieve a similar effect by accepting digital output streams from the MIDI and wave devices, digitally mixing them, and converting the digital mix to an analog output signal.
 
-The "Non-PCM Wave Out" pin at the lower-left corner of the preceding figure accepts a non-PCM output stream in an S/PDIF pass-through format, such as AC-3-over-S/PDIF or WMA Pro-over-S/PDIF. Using one of these formats, the device simply transmits the compressed data over the S/PDIF link without decoding the data. For this reason, the data path to the "S/PDIF Out" pin on the lower-right corner of the preceding figure contains no volume or mute nodes. For more information about non-PCM audio formats and S/PDIF pass-through transmission, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md). Additional information is available in the white paper titled *Audio Driver Support for the WMA Pro-over-S/PDIF Format* at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+The "Non-PCM Wave Out" pin at the lower-left corner of the preceding figure accepts a non-PCM output stream in an S/PDIF pass-through format, such as AC-3-over-S/PDIF or WMA Pro-over-S/PDIF. Using one of these formats, the device simply transmits the compressed data over the S/PDIF link without decoding the data. For this reason, the data path to the "S/PDIF Out" pin on the lower-right corner of the preceding figure contains no volume or mute nodes. For more information about non-PCM audio formats and S/PDIF pass-through transmission, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md). Additional information is available in the white paper titled *Audio Driver Support for the WMA Pro-over-S/PDIF Format* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
 The miniport driver presents its topology to the port driver in the form of a [**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694) structure. This structure describes all of the filter's pins and nodes, and it specifies how the pins and nodes connect to each other.
 
@@ -157,7 +154,5 @@ Instead of designing a monolithic topology filter, as shown in the preceding fig
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20the%20Topology%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

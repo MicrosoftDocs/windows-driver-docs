@@ -8,17 +8,14 @@ keywords:
 - sending I/O requests WDK KMDF
 - sending I/O requests WDK KMDF , synchronous
 - synchronously sending I/O requests WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests Synchronously
 
 
-## <a href="" id="ddk-sending-i-o-requests-synchronously-df"></a>
+
 
 
 The following table lists the I/O target object methods that your driver can call to send I/O requests synchronously to an I/O target. For detailed information about how to use these methods, see the methods' reference pages.
@@ -76,7 +73,7 @@ Sending I/O requests to an I/O target synchronously is simpler to program than s
 
 The following example shows how to send a synchronous I/O control (IOCTL) request:
 
-```
+```cpp
 NTSTATUS                status;
     WDF_MEMORY_DESCRIPTOR   inputDesc, outputDesc;
     PWDF_MEMORY_DESCRIPTOR  pInputDesc = NULL, pOutputDesc = NULL;

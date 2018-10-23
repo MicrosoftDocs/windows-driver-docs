@@ -3,17 +3,15 @@ title: Bug Check 0x10D WDF_VIOLATION
 description: The WDF_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
 ms.assetid: 2d8c9730-cd24-4f8c-8f8b-252644737847
 keywords: ["Bug Check 0x10D WDF_VIOLATION", "WDF_VIOLATION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - WDF_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10D: WDF\_VIOLATION
@@ -21,7 +19,7 @@ api_type:
 
 The WDF\_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## WDF\_VIOLATION Parameters
 
@@ -227,7 +225,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 Typically, the WDF dump file will yield further information on the driver that caused this bug check. Use this command to look at the log file.
 
-```
+```dbgcmd
 kd> !wdfkd.wdflogdump <WDF_Driver_Name>
 ```
 

@@ -5,11 +5,8 @@ description: Registering the Minifilter Driver
 ms.assetid: 943082c9-dcff-478f-80ba-2a2e72f6ead2
 keywords:
 - registering minifilter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering the Minifilter Driver
@@ -22,7 +19,7 @@ Every minifilter driver must call [**FltRegisterFilter**](https://msdn.microsoft
 
 In the MiniSpy sample, the minifilter driver is registered as shown in the following code example:
 
-```
+```cpp
 NTSTATUS status;
 status = FltRegisterFilter(
            DriverObject,                  //Driver
@@ -39,6 +36,5 @@ In addition, **FltRegisterFilter** has an output parameter, *RetFilter*, that re
  
 
 
---------------------
 
 

@@ -10,11 +10,8 @@ keywords:
 - enumeration WDK KMDF
 - child devices WDK KMDF
 - listing child devices WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerating the Devices on a Bus
@@ -30,7 +27,7 @@ Kernel-Mode Driver Framework (KMDF) supports two types of bus enumeration:
 
 A bus driver can use either or both types of bus enumeration.
 
-For more information about writing a KMDF bus driver, see [Bus Driver Development Based on KMDF](http://msdn.microsoft.com/windows/hardware/gg463281).
+For more information about writing a KMDF bus driver, see [Bus Driver Development Based on KMDF](https://msdn.microsoft.com/windows/hardware/gg463281).
 
  
 

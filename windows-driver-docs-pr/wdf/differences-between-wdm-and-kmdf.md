@@ -3,11 +3,8 @@ title: Differences Between WDM and WDF
 author: windows-driver-content
 description: The WDM model is closely tied to the operating system.
 ms.assetid: 4D35F0AB-44CE-49CA-8AB7-3922871567B0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Differences Between WDM and WDF
@@ -31,7 +28,7 @@ This section describes important differences between WDM and WDF in the followin
 -   [Synchronization and Concurrency](#sync)
 -   [Driver Installation](#install)
 
-## <a href="" id="drv-struct"></a>Driver Structure
+## Driver Structure
 
 
 Both WDM and WDF drivers contain a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine, a number of routines that are called to handle particular I/O requests, and various support routines.
@@ -50,7 +47,7 @@ A typical WDF driver for a Plug and Play device contains:
 -   Callbacks to handle the WMI requests that the driver supports. (KMDF-only)
 -   Additional callbacks, as appropriate, for object cleanup, file creation, and I/O targets, and so on.
 
-## <a href="" id="roles"></a>Device Objects and Driver Roles
+## Device Objects and Driver Roles
 
 
 Both WDM and WDF drivers create one or more device objects. Each device object represents a driver role that is the target of I/O requests. A physical device object (PDO) represents a bus driver, a functional device object (FDO) represents a function driver, and a filter device object (filter DO) represents a filter driver.
@@ -67,7 +64,7 @@ For information on how to create framework device objects, see [Creating a Frame
 
 Some drivers also handle certain I/O requests that are independent of Plug and Play. A WDM driver creates a DEVICE\_OBJECT as the target for such requests, but does not attach it to the Plug and Play device stack. To accomplish the same result, a KMDF driver [creates a control device object](using-control-device-objects.md). Some framework-based drivers use control device objects to implement “sideband” I/O mechanisms so that they can receive certain types of I/O requests regardless of device state.
 
-## <a href="" id="obj-model"></a>Object Model
+## Object Model
 
 
 WDF supports a coherent object model in which objects are opaque to drivers, provide driver-configurable context areas, and are referenced by a handle. WDM objects are system-wide objects that are accessible to drivers and are referenced by pointers. A driver that corrupts a WDM object can corrupt the entire system. Corrupting a WDF object is not only more difficult—because the framework validates the data that the driver supplies—but also causes system-wide problems much less often.
@@ -78,7 +75,7 @@ The framework maintains a reference count for each object, which thus provides s
 
 Although many of the WDF objects correspond to WDM objects, the WDF objects support features that would require additional code in a WDM driver. All WDF objects support driver-definable object context areas so that a driver can store information that is related to a particular instance of an object with the object itself. Objects typically track state as well. For example, WDFQUEUE objects are more than just a list of I/O requests; they support several types of dispatching, automatic synchronization with Plug and Play, and request cancellation. For WDFMEMORY objects, the framework-managed reference count helps prevent memory leaks and premature release of resources.
 
-## <a href="" id="creation"></a>Object Creation
+## Object Creation
 
 
 WDF drivers follow a regular pattern to create all types of objects:
@@ -93,19 +90,19 @@ The configuration structure holds pointers to object-specific information, such 
 
 The framework defines functions that are named WDF\_*Object*\_CONFIG\_INIT to initialize the configuration structures, where *Object* represents the name of the object type. The [**WDF\_OBJECT\_ATTRIBUTES\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552402) function initializes a driver's [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 
-## <a href="" id="context"></a>Object Context Area
+## Object Context Area
 
 
 Every instance of an object can have one or more object context areas. The object context area is a storage area for data that is related to that particular instance, such as a driver-allocated event object. The driver determines the size and layout of the object context area. For a device object, the object context area is the equivalent of the WDM device extension. For information about defining and initializing a context area, see [Framework Object Context Space](framework-object-context-space.md).
 
-## <a href="" id="irp"></a>Supported IRP Types
+## Supported IRP Types
 
 
 WDF supports a subset of Windows IRPs. For a summary of the major WDM IRP types and the corresponding WDF event callback functions, see [WDM IRPs and WDF Event Callback Functions](wdm-irps-and-kmdf-event-callback-functions.md).
 
 Even if your driver receives IRPs other than those listed in the table, you can port it to KMDF. KMDF provides a mechanism through which a driver can receive “raw” WDM IRPs but also use the KMDF features for other types of IRPs. For more information, see [Handling WDM IRPs Outside of the Framework](handling-wdm-irps-outside-of-the-framework.md).
 
-## <a href="" id="queue"></a>I/O Queues
+## I/O Queues
 
 
 Nearly all drivers queue I/O requests. WDM drivers typically use one of the following approaches:
@@ -118,14 +115,14 @@ A WDF driver creates a WDF queue object (WDFQUEUE) to represent an I/O queue. Th
 
 When you port a WDM driver to WDF, you can use the WDF queuing mechanism regardless of the mechanism that the WDM driver uses. For more information about queues, see [Framework Queue Objects](framework-queue-objects.md).
 
-## <a href="" id="sync"></a>Synchronization and Concurrency
+## Synchronization and Concurrency
 
 
 WDF drivers benefit from some built-in synchronization support that is not available to WDM drivers. Although this support does not mean that the driver can ignore concurrency and synchronous access to data, WDF drivers nevertheless require significantly fewer locks and less synchronization code than do WDM drivers.
 
 For more information about the synchronization features that the framework provides, see [Synchronization Techniques](synchronization-techniques-for-wdf-drivers.md).
 
-## <a href="" id="install"></a>Driver Installation
+## Driver Installation
 
 
 Like WDM drivers, KMDF and UMDF drivers are installed by using INF files. However, WDF driver installation sometimes requires a framework co-installer that is provided with the Windows Driver Kit (WDK). The co-installer ensures that a compatible version of the framework library is present on the target system. For information about installation, see [Building and Loading a WDF Driver](building-and-loading-a-kmdf-driver.md).

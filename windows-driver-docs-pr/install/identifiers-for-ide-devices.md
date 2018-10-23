@@ -11,17 +11,14 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 - integrated device electronics identifiers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for IDE Devices
 
 
-## <a href="" id="ddk-identifiers-for-ide-devices-dg"></a>
+
 
 
 Identifiers for integrated device electronics (IDE) devices resemble SCSI identifiers. The device ID format is as follows:

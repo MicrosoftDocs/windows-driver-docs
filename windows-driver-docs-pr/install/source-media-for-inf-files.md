@@ -11,17 +11,14 @@ keywords:
 - INF files WDK device installations , shipping separately
 - shipping INF files WDK
 - separately shipping INF files WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Source Media for INF Files
 
 
-## <a href="" id="ddk-source-media-for-infs-dg"></a>
+
 
 
 The methods that you should use to specify source media for device files depend on whether your INF files ship separately from the operating system or are included with the operating system.
@@ -54,7 +51,7 @@ Please note that **Includes** entries can only be used to specify system-supplie
 
 An INF file that uses a section in another INF file by using the **Include** and **Needs** entries might have to use an accompanying section to maintain consistency. For example, if an INF file references the installation section (*DDInstall*) of another INF file in order to install the driver, it must reference an [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) to install the accompanying service. Such an INF file might have the following sections:
 
-```
+```cpp
 [DDInstall]
 Include = AnotherINFFile.inf
 Needs = AnotherINFFileDDInstall

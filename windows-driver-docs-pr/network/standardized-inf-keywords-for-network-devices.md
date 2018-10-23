@@ -2,17 +2,14 @@
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
 ms.assetid: F79AFB63-D404-4A5C-9515-82FFEB667048
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Network Devices
 
 
-## <a href="" id="ddk-standardized-installation-keywords-for-ethernet-devices-ng"></a>
+
 
 
 This section provides information about standardized keywords that appear in the registry and are specified in INF files. NDIS 6.0 and later versions of NDIS support standardized keywords for miniport drivers in network devices.
@@ -73,8 +70,6 @@ The following topics include descriptions for the standardized keywords that are
 In addition, standardized keywords that are specific to networking technologies are described in the following topics:
 
 [INF File Settings for Filter Drivers](inf-file-settings-for-filter-drivers.md)
-
-[INF File Settings for Virtual WiFi](inf-file-settings-for-virtual-wifi.md)
 
 [INF Requirements for NDKPI](inf-requirements-for-ndkpi.md)
 

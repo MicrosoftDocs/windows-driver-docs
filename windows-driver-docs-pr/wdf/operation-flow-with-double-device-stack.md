@@ -8,11 +8,8 @@ keywords:
 - I/O requests WDK UMDF , operation flow
 - request processing WDK UMDF , operation flow
 - double device stack flow WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operation Flow with Double Device Stack

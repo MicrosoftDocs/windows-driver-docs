@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , installing
 - installing callout drivers WDK Windows Filtering Platform
 - INF files WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Files for Callout Drivers
@@ -35,7 +32,7 @@ A Windows Filtering Platform callout driver is installed by a setup information 
 
 For example:
 
-```
+```INF
 ;
 ; Example callout driver INF file
 ;
@@ -87,12 +84,3 @@ ServiceBinary = %12%\ExampleCalloutDriver.sys
 %ServiceName% = "ExampleCalloutDriver"
 %ServiceDesc% = "Example Callout Driver"
 ```
-
- 
-
- 
-
-
-
-
-

@@ -7,11 +7,8 @@ keywords:
 - registering callback routines
 - callback routines WDK file system
 - FsFilter notification callback routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering FsFilter Callback Routines
@@ -26,7 +23,7 @@ To register the FsFilter notification callback routines, you must allocate and i
 
 For example, a hypothetical "MyLegacyFilter" driver can register its FsFilter callback routines as follows:
 
-```
+```cpp
 fsFilterCallbacks.SizeOfFsFilterCallbacks = sizeof(FS_FILTER_CALLBACKS);
 fsFilterCallbacks.PreAcquireForSectionSynchronization = MyLegacyFilterPreFsFilterOperation;
 fsFilterCallbacks.PostAcquireForSectionSynchronization = MyLegacyFilterPostFsFilterOperation;
@@ -49,6 +46,5 @@ status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &fsFilterCallbacks
  
 
 
---------------------
 
 

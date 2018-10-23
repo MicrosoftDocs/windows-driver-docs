@@ -8,11 +8,8 @@ keywords:
 - access control list WDK file systems
 - security checks WDK file systems , IRP_MJ_CREATE
 - ACL WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Management of Access Control Lists on IRP\_MJ\_CREATE
@@ -30,6 +27,5 @@ An additional option would be for the file system to cache results. While not st
  
 
 
---------------------
 
 

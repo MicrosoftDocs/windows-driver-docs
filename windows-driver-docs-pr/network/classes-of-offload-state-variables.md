@@ -8,11 +8,8 @@ keywords:
 - cached variables WDK TCP chimney offload
 - delegated variables WDK TCP chimney offload
 - variables WDK TCP chimney offload state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Classes of Offload State Variables
@@ -20,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-classes-of-offload-state-variables-ng"></a>
+
 
 
 There are three classes of offload state variables:

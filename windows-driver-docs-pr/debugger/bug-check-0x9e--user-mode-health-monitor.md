@@ -3,17 +3,15 @@ title: Bug Check 0x9E USER_MODE_HEALTH_MONITOR
 description: The USER_MODE_HEALTH_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
 ms.assetid: 5ad56234-5150-4acb-828d-198c2e5fb9b6
 keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - USER_MODE_HEALTH_MONITOR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9E: USER\_MODE\_HEALTH\_MONITOR
@@ -21,7 +19,7 @@ api_type:
 
 The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## USER\_MODE\_HEALTH\_MONITOR Parameters
 

@@ -8,17 +8,14 @@ keywords:
 - printer driver installations WDK , versioning
 - version numbers WDK printer
 - printer driver versioning WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print Driver Versioning
 
 
-## <a href="" id="ddk-specifying-printer-driver-version-numbers-gg"></a>
+
 
 
 Unidrv- and Pscript5-based printer minidrivers, as well as monolithic printer drivers (drivers developed completely by an IHV), should use printer driver versioning on Microsoft Windows XP and later. The Windows XP and later print spooler uses the versioning information to enable it to select the correct driver files during the installation of a new operating system version or service pack, or when a new Point and Print connection is established.
@@ -74,7 +71,7 @@ Represents a bug fix or service pack release. Increment this value on release of
 
 Here is a monolithic driver example:
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0100, 0X0002
 ```
 
@@ -82,13 +79,13 @@ In order, left to right, the first WORD value is zero, which it must be. The val
 
 Here are some Unidrv-/Pscript5-based minidriver examples:
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0501, 0X0001
 ```
 
 In order, left to right, the first WORD value is zero, as before. The value of the second WORD is three, indicating that this is a user-mode driver. In the third WORD, the high byte and low byte values (0X05 and 0x01, respectively) denote that this is a release for Windows XP. The fourth WORD (0x0001) indicates that this is the first bug fix or service pack release.
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0502, 0X0000
 ```
 
@@ -97,21 +94,21 @@ As before, the first WORD is zero, and the second WORD indicates that this is a 
 <a href="" id="ver-filedescription-str"></a>VER\_FILEDESCRIPTION\_STR  
 This constant should be set to a name that identifies the driver, as in the following example.
 
-```
+```cpp
 #define VER_FILEDESCRIPTION_STR    "Sample Printer Driver Resource DLL"
 ```
 
 <a href="" id="ver-internalname-str"></a>VER\_INTERNALNAME\_STR  
 Set this constant to a name that specifies the internal name of the file (not including the path), as in the following example. For more information, see the Windows SDK documentation.
 
-```
+```cpp
 #define VER_INTERNALNAME_STR    "SAMPLERES.DLL"
 ```
 
 <a href="" id="ver-originalfilename-str"></a>VER\_ORIGINALFILENAME\_STR  
 Set this constant to a name that specifies the original name of the file (not including the path), as in the following example. For more information, see the Windows SDK documentation.
 
-```
+```cpp
 #define VER_ORIGINALFILENAME_STR    "SAMPLERES.DLL"
 ```
 
@@ -120,7 +117,5 @@ Set this constant to a name that specifies the original name of the file (not in
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Print%20Driver%20Versioning%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

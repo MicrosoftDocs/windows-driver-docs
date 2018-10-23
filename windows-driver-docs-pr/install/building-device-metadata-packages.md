@@ -4,11 +4,8 @@ description: Building Device Metadata Packages
 ms.assetid: 8b95a88e-430c-4250-959f-43536fdc1824
 keywords:
 - device metadata packages WDK , building
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building Device Metadata Packages
@@ -22,13 +19,13 @@ Before you create the device metadata package file, you must first create a glob
 
 The file name of the device metadata package must use the following naming convention:
 
-```
+```cpp
 <GUID>.devicemetadata-ms
 ```
 
 For example, if you create a GUID that has the value of {20f001a99-4675-8707-248ca-187dfd9}, you use that GUID to create the following device metadata package file:
 
-```
+```cpp
 20f001a99-4675-8707-248ca-187dfd9.devicemetadata-ms
 ```
 
@@ -54,7 +51,7 @@ The [components of a device metadata package](device-metadata-package-components
 
 The following code example shows how to use the Cabarc tool to create a device metadata package file. In this example, the components of the metadata package are located in a local directory named *MyMetadataPackage*. The following list shows the subdirectories and files within the *MyMetadataPackage* directory:
 
-```
+```cpp
 .\MyMetadataPackages
 .\MyMetadataPackage\PackageInfo.xml
 .\MyMetadataPackage\DeviceInformation\DeviceInfo.xml
@@ -68,7 +65,7 @@ First, a GUID with the value of {f4ea2b40-77ff-443d-8212-be7e74a344ae} is create
 
 Then, the following command uses the Cabarc tool to create a new device metadata package file in a local directory named *MyDeviceMetadataPackage*:
 
-```
+```cpp
 Cabarc.exe -r -p -P .\MyMetadataPackage\ 
     N .\MyDeviceMetadataPackage\f4ea2b40-77ff-443d-8212-be7e74a344ae.devicemetadata-ms 
     .\MyMetadataPackage\PackageInfo.xml 

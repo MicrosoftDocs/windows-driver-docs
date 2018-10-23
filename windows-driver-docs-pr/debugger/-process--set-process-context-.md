@@ -3,17 +3,15 @@ title: .process (Set Process Context)
 description: The .process command specifies which process is used for the process context.
 ms.assetid: f454faef-bc28-43f1-b511-bcee0c12fc24
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .process (Set Process Context)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .process (Set Process Context)
@@ -21,7 +19,7 @@ api_type:
 
 The **.process** command specifies which process is used for the process context.
 
-```
+```dbgcmd
 .process [/i] [/p [/r]] [/P] [Process]
 ```
 
@@ -97,7 +95,7 @@ If you want to use the kernel debugger to set breakpoints in user space, use the
 
 The following example shows how to use the [**!process**](-process.md) extension to find the address of the EPROCESS block for the desired process.
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -113,21 +111,21 @@ PROCESS fe3c0d60  SessionId: 0  Cid: 0208    Peb: 7ffdf000  ParentCid: 00d4
 
 Now the example uses the **.process** command with this process address.
 
-```
+```dbgcmd
 kd> .process fe3c0d60
 Implicit process is now fe3c0d60
 ```
 
 Notice that this command makes the [**.context**](-context--set-user-mode-address-context-.md) command unnecessary. The user-mode address context already has the desired value.
 
-```
+```dbgcmd
 kd> .context 
 User-mode page directory base is 11f000
 ```
 
 This value enables you to examine the address space in various ways. For example, the following example shows the output of the [**!peb**](-peb.md) extension.
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7FFDF000
     InheritedAddressSpace:    No
@@ -158,7 +156,6 @@ PEB at 7FFDF000
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.process%20%28Set%20Process%20Context%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

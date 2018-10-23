@@ -9,11 +9,8 @@ keywords:
 - neighbor reachability WDK TCP chimney offload
 - neighbor solicitations WDK TCP chimney offload
 - events WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Making a NeighborReachabilityQuery Indication
@@ -59,7 +56,7 @@ Before the host stack sends an IP datagram on an offloaded connection, it checks
 
 Before an offload target sends an IP datagram on an offloaded connection, it performs the following test:
 
-```
+```syntax
 If ((NCT - NRT) > NCEStaleTicks & (NCT - HRT) > NCEStaleTicks) 
 ```
 

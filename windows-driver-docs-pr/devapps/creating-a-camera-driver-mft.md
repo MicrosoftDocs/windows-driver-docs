@@ -2,14 +2,14 @@
 title: Creating a camera driver MFT for a UWP device app
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
 ms.assetid: 079CB01E-D16C-4597-8F08-BD75F1D02427
-ms.author: windowsdriverdev
-ms.date: 06/29/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/14/2017
+ms.localizationpriority: medium
 ---
 
 # Creating a camera driver MFT for a UWP device app
+
+> [!IMPORTANT]
+> This topic has been deprecated. See the [Device MFT design guide](https://docs.microsoft.com/windows-hardware/drivers/stream/dmft-design) for updated guidance.
 
 UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](http://go.microsoft.com/fwlink/p/?LinkID=251566) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -51,7 +51,7 @@ In addition to UWP device apps, the driver MFT functionality can be accessed whe
 
 - HTML5 &lt;video&gt; tags in a UWP app using HTML. Transforms that the driver MFT has enabled will affect video that is being played using the &lt;video&gt; element, as in the following code example:
 
-    ```
+    ```cpp
     var video = document.getElementById('myvideo');
         video.src = URL.createObjectURL(fileItem);
         video.play();
@@ -83,7 +83,7 @@ The driver MFT is instantiated per stream. For each stream the camera supports, 
 
 To enable two-way communication between the media source and the driver MFT, the pointer to source stream’s attribute store is set on the input stream attribute store of the driver MFT as `MFT_CONNECTED_STREAM_ATTRIBUTE`. This occurs through a handshake process you enable by exposing `MFT_ENUM_HARDWARE_URL_Attribute` in the driver MFT, as in the following example:
 
-```
+```cpp
 HRESULT CDriverMft::GetAttributes(IMFAttributes** ppAttributes)
 {
     HRESULT hr = S_OK;
@@ -108,7 +108,7 @@ In this example, the `MFT_CONNECTED_STREAM_ATTRIBUTE` in the driver MFT’s attr
 
 The following code example shows how the driver MFT can get the pointer to the source transform from its input attribute store. The driver MFT can then use the source pointer to get device source info.
 
-```
+```cpp
 if(!m_pSourceTransform && m_pInputAttributes) {
           
           m_pInputAttributes->
@@ -134,7 +134,7 @@ To put the driver MFT in passthrough mode, specify the same media type for the i
 
 You’ll need to include header files for the `IInspectable` and `IMFTransform` methods that the driver MFT must implement. For a list of header files to include, see **stdafx.h** in the **SampleMFT0** directory of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample.
 
-```
+```cpp
 // required for IInspectable
 #include <inspectable.h>
 ```
@@ -151,7 +151,7 @@ A driver MFT that’s intended for use from a camera’s UWP device app must imp
 
 The following code example shows how the `IInspectable` methods are implemented in the sample driver MFT. This code can be found in the **Mft0.cpp** file, in the **SampleMFT0** directory of the sample.
 
-```
+```cpp
 // Mft0.cpp
 STDMETHODIMP CMft0::GetIids( 
     /* [out] */ __RPC__out ULONG *iidCount,
@@ -197,7 +197,7 @@ STDMETHODIMP CMft0::GetTrustLevel(
 
 Each interface your driver MFT implements should implement and derive from `IUnknown`, in order to be correctly marshaled to the camera’s UWP device app. The following is an example **.idl** file for a driver MFT that demonstrates this.
 
-```
+```cpp
 // SampleMft0.idl : IDL source for SampleMft0
 //
 
@@ -261,7 +261,7 @@ This section lists steps for installing the driver MFT:
 2. Your camera installer registers the driver MFT by calling **regsvr32** on your driver MFT DLL, or by providing a driver manifest (.man) file for the DLL that the installer uses for registration.
 3. Set the `CameraPostProcessingPluginCLSID` value in the registry key for your camera. Your INF file should specify the CLSID of the Driver MFT in the device class registry key for the device, by setting the `CameraPostProcessingPluginCLSID` value to the CLSID GUID of the driver MFT class. The following is an example from an INF file entry that populates the registry keys for a camera:
 
-    ```
+    ```cpp
     KSCATEGORY_VIDEO_CAMERA:
 
     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
@@ -328,6 +328,4 @@ For more info about how to use device metadata to associate your app with your d
  
 
  
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Creating%20a%20camera%20driver%20MFT%20for%20a%20Windows%20Store%20device%20app%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

@@ -2,11 +2,8 @@
 Description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
 title: USB host-side drivers in Windows
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB host-side drivers in Windows
@@ -31,7 +28,7 @@ Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oH
 -   [Helper libraries for client drivers](#helper-libraries-for-client-drivers)
 -   [Related topics](#related-topics)
 
-## <a href="" id="usb-3-0-driver-stack"></a>USB 3.0 driver stack
+## USB 3.0 driver stack
 
 
 The USB 3.0 stack is new in Windows 8. Microsoft created the new drivers by using Kernel Mode Driver Framework (KMDF) interfaces. The KMDF driver model reduces complexity and improves stability.
@@ -61,7 +58,7 @@ The new hub driver, in the USB driver stack for 3.0 devices, uses the KMDF drive
 
 Windows loads the hub driver as the FDO in the hub device stack. Device enumeration and hub management in the new driver are implemented through a set of state machines. The hub driver relies on KMDF for power management and PnP functions. In addition to hub management, the hub driver also performs preliminary checks and processing of certain requests sent by the USB client driver layer. For instance, the hub driver parses a select-configuration request to determine which endpoints will be configured by the request. After parsing the information, the hub driver submits the request to the USB host controller extension or further processing.
 
-## <a href="" id="usb-2-0-driver-stack"></a>USB 2.0 driver stack
+## USB 2.0 driver stack
 
 
 Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oHCI, or uHCI controllers. The drivers in the USB 2.0 driver stack ship in Windows XP with SP1 and later versions of the Windows operating system. The USB 2.0 driver stack is designed to facilitate high-speed USB devices as defined in the USB 2.0 specification.
@@ -74,7 +71,7 @@ In all versions of Windows that support USB 2.0, the operating system is capable
 
 Above the port driver is the USB bus driver, Usbhub.sys, also known as the hub driver. This is the device driver for each hub on the system.
 
-## <a href="" id="usb-common-class-generic-parent-driver--usbccgp-sys--"></a>USB common class generic parent driver (Usbccgp.sys)
+## USB common class generic parent driver (Usbccgp.sys)
 
 
 The USB common class generic parent driver is the Microsoft-provided parent driver for composite devices. The hub driver enumerates and loads the parent composite driver if **deviceClass** is 0 or 0xef and **numInterfaces** is greater than 1 in the device descriptor. The hub driver generates the compatible ID for the parent composite driver as "USB\\COMPOSITE". Usbccgp.sys uses Windows Driver Model (WDM) routines.
@@ -85,7 +82,7 @@ Usbccgp.sys is included with Windows XP with SP1 and later versions of the Wind
 
 For more information, see [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md).
 
-## <a href="" id="#winusb-winusb-sys"></a>WinUSB (Winusb.sys)
+## WinUSB (Winusb.sys)
 
 
 Windows USB (WinUSB) is a Microsoft-provided generic driver for USB devices. WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll). For devices that don't require a custom function driver, Winusb.sys can be installed in the device's kernel-mode stack as the function driver. User-mode processes can then communicate with Winusb.sys by using a set of device I/O control requests or by calling **WinUsb\_Xxx** functions. For more information, see [WinUSB](winusb.md).
@@ -126,7 +123,5 @@ Microsoft provides the following helper libraries to help kernel-mode drivers an
 [Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 [USB Driver Development Guide](usb-driver-development-guide.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20host-side%20drivers%20in%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -3,6 +3,8 @@ title: Windows kernel macros
 author: windows-driver-content
 description: Windows kernel macros
 ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows kernel macros
@@ -127,7 +129,7 @@ The following table contains Windows kernel macros:
 <p>On platforms on which address 0 is an invalid address, a driver that accesses address 0 at IRQL &lt; DISPATCH_LEVEL causes an exception (access violation) that can be inadvertently caught by a <code>try/except</code> statement. Thus, the driver's exception handling code might mask the invalid access and prevent it from being detected during debugging. However, an access of the <strong>MM_BAD_POINTER</strong> address is guaranteed to cause a bug check, which cannot be masked by an exception handler.</p>
 <p>The following code example shows how to assign the value <strong>MM_BAD_POINTER</strong> to a pointer variable named <code>ptr</code>. The Ntdef.h header file defines the PUCHAR type to be a pointer to an <code>unsigned char</code>.</p>
 <div class="code">
-```
+```cpp
 PUCHAR ptr = (PUCHAR)MM_BAD_POINTER;  // Now *ptr is guaranteed to fault.
 ```
 </div>
@@ -176,7 +178,7 @@ Available starting with Windows 8.1. Compatible with previous versions of Windo
 <p><strong>PPFN_NUMBER</strong></p>
 <p>A pointer to the beginning of the array of physical page numbers associated with the MDL. The number of entries in the array is <strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong>(<strong>MmGetMdlVirtualAddress</strong>(<em>Mdl</em>), <strong>MmGetMdlByteCount</strong>(<em>Mdl</em>)). Each array element is an integer value of type PFN_NUMBER, which is defined in Wdm.h as follows:</p>
 <div class="code">
-```
+```cpp
 typedef ULONG PFN_NUMBER, *PPFN_NUMBER;
 ```
 </div>
@@ -636,7 +638,5 @@ typedef ULONG PFN_NUMBER, *PPFN_NUMBER;
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Windows%20kernel%20macros%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

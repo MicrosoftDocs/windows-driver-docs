@@ -2,11 +2,8 @@
 title: Rendering on a discrete GPU using cross-adapter resources
 description: Starting in Windows 8.1, a discrete GPU uses a cross-adapter resource as A destination for bit-block transfer (bitblt) or present operations, but without stretching or color conversion.The resource that the operating system requests the user-mode display driver to perform the bitblt or present operation to and from.integrated GPU uses a cross-adapter resource as A texture during composition by the Desktop Window Manager (DWM).A render target for GDI hardware acceleration.A display primary.Not as a render target for 3-D operations.
 ms.assetid: 88CE2D2F-BBD8-4CE4-9183-BBFB0659990E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="display.rendering_on_a_discrete_gpu_using_cross-adapter_resources"></span>Rendering on a discrete GPU using cross-adapter resources
@@ -64,7 +61,6 @@ The following sections describe the architecture and processes involved in three
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Rendering%20on%20a%20discrete%20GPU%20using%20cross-adapter%20resources%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

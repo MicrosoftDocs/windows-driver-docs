@@ -7,17 +7,14 @@ keywords:
 - pausing filter modules
 - filter drivers WDK networking , pausing filter modules
 - NDIS filter drivers WDK , pausing filter modules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pausing a Filter Module
 
 
-## <a href="" id="ddk-pausing-a-filter-module-ng"></a>
+
 
 
 To pause a running filter module, NDIS calls the filter driver's [*FilterPause*](https://msdn.microsoft.com/library/windows/hardware/ff549957) function. The filter module enters the *Pausing* state at the start of execution in the *FilterPause* function.

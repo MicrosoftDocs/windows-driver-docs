@@ -3,11 +3,8 @@ title: Driver initialization
 author: windows-driver-content
 description: Driver initialization
 ms.assetid: 9886BBBC-7EE5-45AF-AEDD-75C0885C622B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver initialization
@@ -25,7 +22,7 @@ Driver initialization is one of the more complex phases of a user-mode driver’
 
 The sample driver is designed so that the sensor is permanently connected to an I2C bus. Instead of supporting Plug and Play, it supports the Advanced Configuration and Power Interface (ACPI).
 
-ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic on MSDN. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
+ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
 
 To install a sensor device and driver on your Windows SoC device, you’ll need to update the DSDT table with a corresponding node. This node has information about the sample device’s controllers and connectors. Here’s how Windows and your driver use the data in the node:
 
@@ -57,7 +54,7 @@ If you do not specify the /resdecode option, the \_CRS section will contain a bi
 
 In addition to updating the DSDT table, you’ll need to update the Windows setup information file (INF) to specify that your device supports ACPI. Because the sensor is always enumerated by ACPI, the hardware identifier in the INF file must contain the “ACPI” string.
 
-```ManagedCPlusPlus
+```cpp
 ; =================== Manufacturer/Models sections =======================
 
 [Manufacturer]
@@ -330,7 +327,5 @@ After the driver and device have been configured, the initialization sequence is
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Driver%20initialization%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

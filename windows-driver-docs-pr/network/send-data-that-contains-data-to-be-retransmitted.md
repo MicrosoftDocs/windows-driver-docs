@@ -11,11 +11,8 @@ keywords:
 - SndUna WDK TCP chimney offload
 - SndNxt WDK TCP chimney offload
 - SndMax WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Send Data That Contains Data to Be Retransmitted
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-send-data-that-contains-data-to-be-retransmitted-ng"></a>
+
 
 
 The following figure shows how the **SndUna**, **SndNxt**, and **SndMax** members of the [**TCP\_OFFLOAD\_STATE\_DELEGATED**](https://msdn.microsoft.com/library/windows/hardware/ff570939) structure segment send data that contains data to be retransmitted by the offload target.

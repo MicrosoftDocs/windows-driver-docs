@@ -11,11 +11,8 @@ keywords:
 - low-power states WDK KMDF
 - power management WDK KMDF , idle power-down
 - idle power-down WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User Control of Device Idle and Wake Behavior
@@ -39,7 +36,7 @@ Therefore, for version 1.9 and later versions of KMDF, the framework provides tw
 
 Your driver's INF file can use an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) to create and set the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values. For example, if your driver enables a device's idle power-down capability, but if the capability must be disabled when the device is installed, the driver's INF file can set **WdfDefaultIdleInWorkingState** to "0".
 
-The framework examines the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values only if the driver has set the **UserControlOfIdleSettings** or **UserControlOfWakeSettings** member to to **IdleAllowUserControl** or **WakeAllowUserControl**, respectively, and the **Enabled** member to **WdfTrue** or **WdfUseDefault**, in the appropriate settings structure.
+The framework examines the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values only if the driver has set the **UserControlOfIdleSettings** or **UserControlOfWakeSettings** member to **IdleAllowUserControl** or **WakeAllowUserControl**, respectively, and the **Enabled** member to **WdfTrue** or **WdfUseDefault**, in the appropriate settings structure.
 
  
 

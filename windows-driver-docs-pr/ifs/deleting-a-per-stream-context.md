@@ -9,11 +9,8 @@ keywords:
 - per-stream context tracking WDK file system
 - tracking per-stream context WDK file system
 - deleting per-stream context
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting a Per-Stream Context
@@ -49,6 +46,5 @@ When the file stream is being closed or deleted, the file system frees its own s
  
 
 
---------------------
 
 

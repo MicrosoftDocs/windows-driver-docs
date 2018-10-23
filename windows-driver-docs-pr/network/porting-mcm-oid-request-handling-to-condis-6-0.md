@@ -6,17 +6,14 @@ keywords:
 - miniport call managers WDK networking , OID requests
 - MCMs WDK networking , OID requests
 - porting OID requests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting MCM OID Request Handling to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-oid-request-handling-to-condis-6-0-nd"></a>
+
 
 
 Miniport call managers (MCMs) must service OID requests that are associated with miniport parameters and also OID requests that are associated with call manager parameters. This topic describes porting MCM OID request handling for the call manager parameters. For more information about porting OID request handling for the miniport parameters, see [Porting OID Requests for CoNDIS 6.0 Miniport Drivers](porting-oid-requests-for-condis-6-0-miniport-drivers.md).

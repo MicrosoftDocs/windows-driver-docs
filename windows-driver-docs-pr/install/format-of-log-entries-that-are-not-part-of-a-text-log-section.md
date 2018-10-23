@@ -5,11 +5,8 @@ ms.assetid: c2c7567e-dfb4-49d3-acc9-034f6544633e
 keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , entries not part of section
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Format of Log Entries That Are Not Part of a Text Log Section
@@ -74,7 +71,7 @@ The following example of text log entries is taken from a device installation te
 
 Be aware that the *event_category* field for the first two log entries indicates that the user-mode PnP manager wrote these log entries.
 
-```
+```cpp
    . ump: Start service install for: PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38
    . ump: Creating Install Process: rundll32.exe
 

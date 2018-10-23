@@ -9,11 +9,8 @@ keywords:
 - WDM-based callout drivers WDK Windows Filtering Platform
 - WDF-based callout drivers WDK Windows Filtering Platform
 - unload function WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying an Unload Function
@@ -27,7 +24,7 @@ How a callout driver specifies an unload function depends on whether the callout
 
 If a callout driver is based on WDM, it specifies an [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. For example:
 
-```
+```C++
 VOID
  Unload(
     IN PDRIVER_OBJECT DriverObject
@@ -41,7 +38,7 @@ NTSTATUS
 {
   ...
 
-  // Specify the callout driver&#39;s Unload function
+  // Specify the callout driver's Unload function
  DriverObject->DriverUnload = Unload;
 
   ...
@@ -52,7 +49,7 @@ NTSTATUS
 
 If a callout driver is based on WDF, it specifies an [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694) function in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. For example:
 
-```
+```C++
 VOID
  Unload(
     IN WDFDRIVER Driver
@@ -76,7 +73,7 @@ NTSTATUS
   // Indicate that this is a non-PNP driver
  config.DriverInitFlags = WdfDriverInitNonPnpDriver;
 
-  // Specify the callout driver&#39;s Unload function
+  // Specify the callout driver's Unload function
  config.EvtDriverUnload = Unload;
 
   // Create a WDFDRIVER object

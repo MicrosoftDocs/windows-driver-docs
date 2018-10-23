@@ -3,11 +3,8 @@ title: Blocking legacy file system filter drivers
 author: windows-driver-content
 description: Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers.
 ms.assetid: 90A562FB-D616-4D38-8D4F-7EFCDF9E617F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Blocking legacy file system filter drivers
@@ -27,7 +24,7 @@ Use the **IoBlockLegacyFsFilters** registry key to specify if the system blocks 
 The registry key must be created under the following registry path:
 
 ``` syntax
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SessionManager\I/O System
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System
 ```
 
 The valid DWORD values for the **IoBlockLegacyFsFilters** key are as follows:
@@ -137,6 +134,5 @@ If your system has legacy file system filter drivers, work with the respective I
  
 
 
---------------------
 
 

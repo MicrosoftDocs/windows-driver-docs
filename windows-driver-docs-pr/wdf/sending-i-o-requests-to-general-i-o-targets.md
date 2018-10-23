@@ -6,17 +6,14 @@ ms.assetid: 3fa897f5-2de8-484b-becb-c2de23fb5e8c
 keywords:
 - general I/O targets WDK KMDF , sending I/O requests to
 - sending I/O requests WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests to General I/O Targets
 
 
-## <a href="" id="ddk-sending-i-o-requests-to-general-i-o-targets-df"></a>
+
 
 
 Your driver can send I/O requests to general I/O targets either synchronously or asynchronously.

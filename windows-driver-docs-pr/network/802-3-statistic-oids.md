@@ -2,17 +2,14 @@
 title: 802.3 Statistic OIDs
 description: 802.3 Statistic OIDs
 ms.assetid: bd9b3cff-d71b-4afc-b806-41229ef98e34
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 802.3 Statistic OIDs
 
 
-## <a href="" id="ddk-statistic-oids-ng"></a>
+
 
 
 The following table lists the 802.3 statistic OIDs for Remote NDIS Ethernet devices.

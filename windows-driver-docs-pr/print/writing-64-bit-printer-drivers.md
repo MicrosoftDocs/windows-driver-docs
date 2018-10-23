@@ -6,11 +6,8 @@ ms.assetid: 41f1a521-980e-4ccd-a395-e1d1bf0114d1
 keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing 64-Bit Printer Drivers
@@ -36,14 +33,14 @@ Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer 
 
 For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff557653) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 
-```
+```cpp
     PUSERDATA pData;
     OEMCUIPPARAM->pDrvOptItems.UserData = (ULONG)pData;  // Wrong
 ```
 
 The preceding code example casts the *pData* pointer to type ULONG, which can truncate the pointer value if **sizeof**(*pData*) &gt; **sizeof**(ULONG). The correct approach is to cast the pointer to ULONG\_PTR, as shown in the following code example.
 
-```
+```cpp
     PUSERDATA pData;
     OEMCUIPPARAM->pDrvOptItems.UserData = (ULONG_PTR)pData;  // Correct
 ```
@@ -52,21 +49,21 @@ The preceding code example preserves all 64 bits of the pointer value.
 
 Inline 64-bit functions such as **PtrToUlong** and **UlongToPtr** safely convert between pointer and integer types without relying on assumptions about the relative sizes of these types. If one type is shorter than the other, it must be extended when converting to the longer type. If the shorter type is extended by filling with the sign bit or with zeros, each Win64 function can handle these situations. Consider the following code example.
 
-```
+```cpp
     ULONG ulHWPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = ULONG(pulPhysHWBuffer) + HW_BUFFER_SIZE;  // wrong
 ```
 
 You should replace the preceding code example with the following code example.
 
-```
+```cpp
     ULONG_PTR ulHWPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = PtrToUlong(pulPhysHWBuffer) + HW_BUFFER_SIZE;  // correct
 ```
 
 The second code example is preferred even though
 
-```
+```cpp
 ulSlotPhysAddr
 ```
 
@@ -76,7 +73,5 @@ might represent the value of a hardware register that is only 32 bits long rathe
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Writing%2064-Bit%20Printer%20Drivers%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

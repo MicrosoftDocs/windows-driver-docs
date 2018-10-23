@@ -4,17 +4,14 @@ description: Using the Network Driver Design Guide
 ms.assetid: 8d9cbf3c-5eec-4409-ab4c-595bb921832d
 keywords:
 - network drivers WDK , documentation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Network Driver Design Guide
 
 
-## <a href="" id="ddk-using-the-network-driver-design-guide-ng"></a>
+
 
 
 Microsoft Windows-based operating systems support several types of kernel-mode network drivers. The Network section of the Windows Driver Kit (WDK) documentation describes how to write these network drivers. This topic briefly describes the supported types of network drivers and explains which sections of the Network section you should read before writing each type of network driver.
@@ -84,7 +81,7 @@ The following additional driver models are available to use particular hardware 
 <td align="left"><p>Networking technologies that support the offload of tasks to a network adapter, such as the following:</p>
 <ul>
 <li><p>[Header-Data Split](header-data-split.md), a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
-<li><p>[NDIS Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232), a network driver technology that improves network performance on multiprocessor systems.</p></li>
+<li><p>[Receive Side Scaling](ndis-receive-side-scaling2.md), a network driver technology that improves network performance on multiprocessor systems.</p></li>
 <li><p>[TCP Chimney Offload](ndis-tcp-chimney-offload.md), an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
 <li><p>[TCP/IP Offload](tcp-ip-offload.md), an offload of tasks or connections to a network adapter that has the appropriate capabilities.</p></li>
 <li><p>[Network Direct Kernel Provider Interface (NDKPI)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md), which enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).</p></li>

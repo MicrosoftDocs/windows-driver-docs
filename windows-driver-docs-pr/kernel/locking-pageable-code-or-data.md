@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Locking Pageable Code or Data
 ms.assetid: b99b6af3-b4b1-4fd6-ac73-27c1068183a4
 keywords: ["pageable drivers WDK kernel , locking code or data", "locking WDK pageable drivers", "restoring pageable status", "resident code WDK pageable drivers", "isolating pageable code", "PAGE keyword WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking Pageable Code or Data
 
 
-## <a href="" id="ddk-locking-pageable-code-or-data-kg"></a>
+
 
 
 Certain kernel-mode drivers, such as the serial and parallel drivers, do not have to be memory-resident unless the devices they manage are open. However, as long as there is an active connection or port, some part of the driver code that manages that port must be resident to service the device. When the port or connection is not being used, the driver code is not required. In contrast, a driver for a disk that contains system code, application code, or the system paging file must always be memory-resident because the driver constantly transfers data between its device and the system.
@@ -31,7 +28,7 @@ The name of a pageable code section must start with the four letters "PAGE" and 
 
 The shortest valid name for a pageable code section in a driver file is simply PAGE. For example, the pragma directive in the following code example identifies `RdrCreateConnection` as an entry point in a pageable code section named PAGE.
 
-```
+```cpp
 #ifdef  ALLOC_PRAGMA 
 #pragma alloc_text(PAGE, RdrCreateConnection) 
 #endif 
@@ -49,7 +46,7 @@ Avoid assigning identical names to code and data sections. To make source code m
 
 For example, the first two pragma directives in the following code example define two pageable data sections, PAGEDATA and PAGEBSS. PAGEDATA is declared using the data\_seg pragma directive and contains initialized data. PAGEBSS is declared using the bss\_seg pragma directive and contains uninitialized data.
 
-```
+```cpp
 #pragma data_seg("PAGEDATA")
 #pragma bss_seg("PAGEBSS")
 
@@ -102,7 +99,5 @@ Consider the following implementation guidelines for locking a code or data sect
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Locking%20Pageable%20Code%20or%20Data%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -13,11 +13,8 @@ keywords:
 - PME WDK KMDF
 - Power Management Capabilities WDK KMDF
 - PMC WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting System Wake-Up

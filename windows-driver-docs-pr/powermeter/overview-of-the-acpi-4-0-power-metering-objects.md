@@ -5,11 +5,8 @@ ms.assetid: 91488b88-bbdc-40e9-9095-2ea3fb7d69ad
 keywords:
 - Power Metering and Budgeting WDK , ACPI 4.0 power metering objects
 - ACPI 4.0 Power Metering objects WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the ACPI 4.0 Power Metering Objects
@@ -40,6 +37,5 @@ Each ACPI PMI namespace object has appropriate control methods that allow intera
  
 
 
---------------------
 
 

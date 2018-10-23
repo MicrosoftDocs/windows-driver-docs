@@ -2,11 +2,8 @@
 title: How the DMRC Determines When to Search the WMIS Server
 description: How the DMRC Determines When to Search the WMIS Server
 ms.assetid: dc68045e-85c2-443d-9e4d-099bbd21590d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How the DMRC Determines When to Search the WMIS Server
@@ -30,7 +27,7 @@ This registry value indicates the number of days that the DMRC waits before it r
 
 The **CheckBackMDNotRetrieved** value is located under the following registry key:
 
-```
+```cpp
 HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata
 ```
 
@@ -38,7 +35,7 @@ The following table describes the format and value range for the **CheckBackMDNo
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| REG_DWORD | 0 to 256, inclusive | 5             |
+| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 5             |
 
  
 
@@ -47,7 +44,7 @@ This registry value indicates the number of days that the DMRC waits before it q
 
 The **CheckBackMDRetrieved** value is located under the following registry key:
 
-```
+```cpp
 HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata
 ```
 
@@ -55,7 +52,7 @@ The following table describes the format and value range for the **CheckBackMDRe
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| REG_DWORD | 0 to 256, inclusive | 8             |
+| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 8             |
 
  
 

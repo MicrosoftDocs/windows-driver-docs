@@ -10,17 +10,14 @@ keywords:
 - proxy interface providers WDK networking
 - NDIS proxy interface providers WDK
 - NDIS network interfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping of NDIS Network Interfaces to NDIS OIDs
 
 
-## <a href="" id="ddk-ndis-network-interface-to-oid-mapping-ng"></a>
+
 
 
 To respond to NDIS interface object requests, NDIS interface providers can cache information that they obtain from underlying drivers and can also issue OID requests to obtain information about underlying interfaces.

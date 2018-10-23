@@ -7,11 +7,8 @@ keywords:
 - IRP_MJ_CREATE
 - security WDK file systems , adding security checks
 - security checks WDK file systems , IRP_MJ_CREATE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CREATE Dispatch Routine
@@ -40,6 +37,5 @@ This section includes the following topics:
  
 
 
---------------------
 
 

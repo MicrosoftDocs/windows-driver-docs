@@ -3,17 +3,15 @@ title: Bug Check 0xC6 DRIVER_CAUGHT_MODIFYING_FREED_POOL
 description: The DRIVER_CAUGHT_MODIFYING_FREED_POOL bug check has a value of 0x000000C6. This indicates that the driver attempted to access a freed memory pool.
 ms.assetid: a5df3612-549d-4cf1-b3e1-4e5efad8ce88
 keywords: ["Bug Check 0xC6 DRIVER_CAUGHT_MODIFYING_FREED_POOL", "DRIVER_CAUGHT_MODIFYING_FREED_POOL"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_CAUGHT_MODIFYING_FREED_POOL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC6: DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL
@@ -21,7 +19,7 @@ api_type:
 
 The DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL bug check has a value of 0x000000C6. This indicates that the driver attempted to access a freed memory pool.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL Parameters
 

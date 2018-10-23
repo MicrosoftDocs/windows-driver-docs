@@ -8,17 +8,14 @@ keywords:
 - preprocessor directives WDK GPD files
 - parsing GPD file sections
 - preprocessor symbols WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preprocessor Directives
 
 
-## <a href="" id="ddk-preprocessor-directives-gg"></a>
+
 
 
 GPD files can contain preprocessor directives, which can be used to control conditional parsing of sections within the GPD file. The following table describes the preprocessor directives that can be used in GPD files.
@@ -103,13 +100,13 @@ The \***SetPPPrefix** directive allows you to change the prefix used with prepro
 
 For example, if your GPD file contains the following directive:
 
-```
+```cpp
 *SetPPPrefix: #SpecialPrefix#
 ```
 
 then the preprocessor stops searching for preprocessor directives that begin with **\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\***.
 
-```
+```cpp
 *SetPPPrefix: #SpecialPrefix#
 #SpecialPrefix#Ifdef: WINNT_50
 #SpecialPrefix#Include: "ExtraGPD.gpd"
@@ -119,7 +116,7 @@ then the preprocessor stops searching for preprocessor directives that begin wit
 
 The primary purpose of this feature is to allow GPD files written for future operating system versions to be compatible with Windows 2000. For example, suppose GPD files for a future version of the operating system can include GPD file entries that conflict with the asterisk-prefixed preprocessor directives supported by Windows 2000. By changing the prefix, a GPD file written for the future operating system version can also be used with Windows 2000. An example might be constructed as follows:
 
-```
+```cpp
 *Ifdef: WINNT_70
     *SetPPPrefix: #SpecialPrefix#
     *% Do special, OS-specific processing of
@@ -181,7 +178,5 @@ The WINNT\_40, WINNT\_50, and WINNT\_51 symbols are useful for creating GPD file
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Preprocessor%20Directives%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

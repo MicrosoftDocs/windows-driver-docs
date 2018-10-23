@@ -3,13 +3,10 @@ title: OID_WDI_GET_ADAPTER_CAPABILITIES
 author: windows-driver-content
 description: OID_WDI_GET_ADAPTER_CAPABILITIES is a read-only property that is issued from the host to the adapter during initialization and requests the adapter’s capabilities.
 ms.assetid: e79deb29-bc0b-472e-b549-86bf71fe66ff
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_ADAPTER_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_ADAPTER\_CAPABILITIES
@@ -30,7 +27,7 @@ No additional parameters. The data in the header is sufficient.
 ## Get property results
 
 
-If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn926129) and [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897863) must be specified
+If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn926129) and [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897863) must be specified.
 
 <table>
 <colgroup>
@@ -133,6 +130,14 @@ If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https:
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>A list of GUIDs that are passed on to NDIS when WDI is queried for [OID_GEN_SUPPORTED_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff569641).</p></td>
 </tr>
+<tr class="odd">
+<td><p>[<strong>WDI_TLV_OS_POWER_MANAGEMENT_FEATURES</strong>](wdi-tlv-os-power-management-features.md)</p></td>
+<td></td>
+<td></td>
+<td><p>Added in Windows 10, version 1803, WDI version 1.1.6.</p>
+<p>Used to enable advanced OS power management features.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -167,7 +172,5 @@ Requirements
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_GET_ADAPTER_CAPABILITIES%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

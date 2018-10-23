@@ -7,11 +7,8 @@ keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 - ConfigInfo
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting up ConfigInfo in HwScsiFindAdapter
@@ -47,6 +44,5 @@ For an "AT-compatible" HBA, *HwScsiFindAdapter* should check the input **Atdisk.
  
 
 
---------------------
 
 

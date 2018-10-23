@@ -3,11 +3,9 @@ title: Interpreting Bug Check 0xCB
 description: Interpreting Bug Check 0xCB
 ms.assetid: 82951e2b-cbb2-45d2-a6b8-4fddece035ce
 keywords: ["kernel streaming debugging, video stream stall, bug check 0xcb"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interpreting Bug Check 0xCB
@@ -17,7 +15,7 @@ The most common bug check code associated with debugging a video stream stall is
 
 The message displayed when the bug check occurs will point to Ks.sys as the cause.
 
-```
+```dbgcmd
 Use !analyze -v to get detailed debugging information.
 BugCheck CB, {f90c6ae0, f9949215, 81861788, 26}
 Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
@@ -25,7 +23,7 @@ Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
 
 As suggested, use [**!analyze -v**](-analyze.md) to get more detailed information.
 
-```
+```dbgcmd
 kd> !analyze -v
 DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS (cb)
 Caused by a driver not cleaning up completely after an I/O.
@@ -37,7 +35,7 @@ Arg3: 81861788, A pointer to the MDL containing the locked pages.
 
 Now, use the [**!search**](-search.md) extension to find the virtual addresses that are associated with the MDL pointer.
 
-```
+```dbgcmd
 kd> !search 81861788
 Searching PFNs in range 00000001 - 0000FF76 for [FFFFFFFF81861788 - FFFFFFFF81861788]
 
@@ -51,7 +49,7 @@ Pfn      Offset   Hit      Va       Pte
 
 For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command with the VA minus one DWORD.
 
-```
+```dbgcmd
 kd> dd 808A7B0C-4 l4
 808a7b08  f9949215 81861788 00000026 00000000
 kd> $ Not an Irp
@@ -65,7 +63,7 @@ kd> $ Matches signature
 
 After a VA with an IRP signature has been found, use the [**!irp**](-irp.md) extension to find out what driver is pending on this IRP.
 
-```
+```dbgcmd
 kd> !irp 817329b0 7
 Irp is active with 2 stacks 2 is current (= 0x81732a44)
  Mdl = 81861788 System buffer = ffa59220 Thread 00000000:  Irp stack trace.
@@ -80,7 +78,6 @@ In this case, \\Driver\\TESTCAP is the likely cause of the bug check.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Interpreting%20Bug%20Check%200xCB%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

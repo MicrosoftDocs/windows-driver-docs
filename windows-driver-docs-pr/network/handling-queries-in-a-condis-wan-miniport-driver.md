@@ -8,17 +8,14 @@ keywords:
 - OID_WAN_CO_GET_LINK_INFO
 - OID_WAN_CO_GET_STATS_INFO
 - queries WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Queries in a CoNDIS WAN Miniport Driver
 
 
-## <a href="" id="ddk-handling-queries-in-a-condis-wan-miniport-driver-ng"></a>
+
 
 
 This topic provides an overview of the requirements for handling queries in a CoNDIS WAN miniport driver. An upper-layer driver calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) with a query request to determine WAN-specific capabilities and current status of a CoNDIS WAN miniport driver and the miniport driver's NIC.

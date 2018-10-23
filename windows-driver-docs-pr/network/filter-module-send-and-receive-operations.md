@@ -8,17 +8,14 @@ keywords:
 - filter drivers WDK networking , send operations
 - NDIS filter drivers WDK , send operations
 - filter drivers WDK networking , receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Module Send and Receive Operations
 
 
-## <a href="" id="ddk-filter-module-send-and-receive-operations-ng"></a>
+
 
 
 This section documents send and receive operations for NDIS 6.0 filter drivers. Filter drivers can initiate send requests and receive indications or filter the requests and indications of other drivers.

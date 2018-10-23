@@ -7,11 +7,8 @@ keywords:
 - catalog files WDK driver signing , commercial release certificates
 - public release driver signing WDK , commercial release certificates
 - release signing WDK , commercial release certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Commercial Release Certificate

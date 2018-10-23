@@ -3,11 +3,8 @@ title: IWiaMiniDrv COM Interface
 author: windows-driver-content
 ms.assetid: a4bd0dee-fb40-42d4-a235-9dab3bc84017
 description: This topic provides detailed guidance on using the IWiaMiniDrv COM interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IWiaMiniDrv COM Interface
@@ -30,7 +27,7 @@ Applications make requests to the WIA service through the WIA application progra
 
 The **IWiaMiniDrv** interface provides the entry points shown in the following tables for the WIA service to control the device. A WIA minidriver must implement every **IWiaMiniDrv** method. These entry points are defined through the following **IWiaMiniDrv** methods.
 
-## <a href="" id="ddk-creating-and-initializing-items-si"></a>Creating and Initializing Items
+## Creating and Initializing Items
 
 
 <table>
@@ -62,7 +59,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-deleting-items-si"></a>Deleting Items
+## Deleting Items
 
 
 <table>
@@ -94,7 +91,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-enumerating-device-capabilities-si"></a>Enumerating Device Capabilities
+## Enumerating Device Capabilities
 
 
 <table>
@@ -118,7 +115,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-enumerating-image-formats-si"></a>Enumerating Image Formats
+## Enumerating Image Formats
 
 
 <table>
@@ -142,7 +139,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-issuing-device-commands-si"></a>Issuing Device Commands
+## Issuing Device Commands
 
 
 <table>
@@ -166,7 +163,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-locking-and-unlocking-a-device-si"></a>Locking and Unlocking a Device
+## Locking and Unlocking a Device
 
 
 <table>
@@ -194,7 +191,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-notifying-a-device-of-an-event-si"></a>Notifying a Device of an Event
+## Notifying a Device of an Event
 
 
 <table>
@@ -218,7 +215,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-obtaining-device-error-strings-si"></a>Obtaining Device Error Strings
+## Obtaining Device Error Strings
 
 
 <table>
@@ -242,7 +239,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-reading-and-storing-item-properties-si"></a>Reading and Storing Item Properties
+## Reading and Storing Item Properties
 
 
 <table>
@@ -274,7 +271,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-transferring-data-si"></a>Transferring Data
+## Transferring Data
 
 
 <table>
@@ -303,7 +300,5 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20IWiaMiniDrv%20COM%20Interface%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

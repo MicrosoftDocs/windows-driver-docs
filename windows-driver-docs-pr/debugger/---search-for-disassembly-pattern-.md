@@ -1,19 +1,17 @@
 ---
-title: # (Search for Disassembly Pattern)
+title: \# (Search for Disassembly Pattern)
 description: The number sign (#) command searches for the specified pattern in the disassembly code.
 ms.assetid: 834dd432-94b8-4bf6-9318-09a118eab5ab
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
 - (Search for Disassembly Pattern)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # \# (Search for Disassembly Pattern)
@@ -21,9 +19,7 @@ api_type:
 
 The number sign (**\#**) command searches for the specified pattern in the disassembly code.
 
-```
-# [Pattern] [Address [ L Size ]] 
-```
+     # [Pattern] [Address [ L Size ]] 
 
 ## <span id="ddk_cmd_search_for_disassembly_pattern_dbg"></span><span id="DDK_CMD_SEARCH_FOR_DISASSEMBLY_PATTERN_DBG"></span>Parameters
 
@@ -75,7 +71,7 @@ This command works by searching the disassembled text for the specified pattern.
 
 You can view disassembly instructions by using the [**u (Unassemble)**](u--unassemble-.md) command or by using the [Disassembly window](disassembly-window.md) in WinDbg. The disassembly display contains up to four parts: Address offset, Binary code, Assembly language mnemonic, and Assembly language details. The following example shows a possible display.
 
-```
+```console
 0040116b    45          inc         ebp            
 0040116c    fc          cld                        
 0040116d    8945b0      mov         eax,[ebp-0x1c] 
@@ -83,7 +79,7 @@ You can view disassembly instructions by using the [**u (Unassemble)**](u--unass
 
 The **\#** command can search for text within any single part of the disassembly display. For example, you could use **\# eax 0040116b** to find the **mov eax,\[ebp-0x1c\]** instruction at address 0040116d. The following commands also find this instruction.
 
-```
+```console
 #  [ebp?0x  0040116b 
 #  mov  0040116b 
 #  8945*  0040116b 
@@ -94,13 +90,13 @@ However, you cannot search for **mov eax\*** as a single unit, because **mov** a
 
 As an additional example, you could issue the following command to search for the first reference to the **strlen** function after the entry point **main**.
 
-```
+```console
 # strlen main
 ```
 
 Similarly, you could issue the following two commands to find the first **jnz** instruction after address 0x779F9FBA and then find the next **jnz** instruction after that.
 
-```
+```console
 # jnz 779f9fba# 
 ```
 
@@ -112,7 +108,6 @@ If you include *Pattern* or *Address*, its value is set to the entered value. If
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20#%20%28Search%20for%20Disassembly%20Pattern%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: e5d3071e-a0d1-4a66-b8aa-6823e737f242
 keywords:
 - header-data split WDK , when not used
 - Ethernet frame splitting WDK networking , when not used
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cases Where Header-Data Split Is Not Used
 
 
-## <a href="" id="ddk-cases-where-header-data-split-is-not-used-ng"></a>
+
 
 
 This topic provides an overview of the cases where a header-data split provider must not split Ethernet frames. For a listing of the minimum requirements that a provider must meet to support header-data split, see [Minimum Requirements for Supporting Header-Data Split](minimum-requirements-for-supporting-header-data-split.md).

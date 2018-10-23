@@ -3,19 +3,15 @@ title: Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
 ms.assetid: 8dd0703a-ddcd-461f-b164-1c079a93bb3a
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 07/11/2018
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
-
-As an alternative to setting up USB 2.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio](setting-up-a-usb-2-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
@@ -34,7 +30,7 @@ Debugging over a USB 2.0 cable requires the following hardware:
 2.  In UsbView, locate all of the host controllers that are compatible with the EHCI specification. For example, you could look for controllers that are listed as Enhanced.
 3.  In UsbView, expand the nodes of the EHCI host controllers. Look for an indication that a host controller supports debugging, and look for the number of the debug port. For example, UsbView displays this output for an EHCI host controller that supports debugging on port 1.
 
-    ```
+    ```console
     Xxx xxx xxx USB2 Enhanced Host Controller - 293A
     ...
     Debug Port Number:  1
@@ -51,7 +47,11 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
     **Note**  See [this remark](#what-if-usbview-shows-a-debug-capable-port) for an exception.
 
-     
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
+
+   
 
 6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
@@ -119,7 +119,7 @@ On the host computer, open a Command Prompt window and enter the following comma
 
 On some computers, USBView shows a debug-capable port, but does not show the port mapped to any physical USB connector. For example, USBView might show port 2 as the debug port number for an eHCI controller.
 
-```
+```console
 ... USB Enhanced Host Controller ...
 ...
 Debug Port Number:  2
@@ -128,7 +128,7 @@ Bus.Device.Function (in decimal): 0.29.0
 
 Also, when you use USBView to look at the individual port, it is listed as debug-capable.
 
-```
+```console
 [Port 2]
 Is Port User Connectiable: Yes
 Is Port Debug Capable: Yes
@@ -149,7 +149,7 @@ In a case like this, you might still be able to establish kernel-mode debugging 
 
 ### <span id="software-setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
 
-For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](http://go.microsoft.com/fwlink/p?linkid=389435) in MSDN Blogs.
+For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](https://go.microsoft.com/fwlink/p?linkid=389435).
 
 ## <span id="related-topics"></span>Related topics
 
@@ -160,7 +160,6 @@ For troubleshooting tips and detailed instructions on setting up kernel debuggin
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20over%20a%20USB%202.0%20Cable%20Manually%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

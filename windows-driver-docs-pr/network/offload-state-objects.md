@@ -11,11 +11,8 @@ keywords:
 - cached variables WDK TCP chimney offload
 - delegated variables WDK TCP chimney offload
 - variables WDK TCP chimney offload state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offload State Objects
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-state-objects-ng"></a>
+
 
 
 A *state object* is one instance of all the state variables of a particular layer of offload state. For example, a TCP connection state object contains all the constant, cached, and delegated variables of the TCP layer.
@@ -221,7 +218,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>HashValue</em></p></td>
-<td align="left"><p>A 32-bit hash value that the offload target uses for [NDIS 6.0 Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232) processing if the offload target supports RSS</p></td>
+<td align="left"><p>A 32-bit hash value that the offload target uses for [Receive Side Scaling](ndis-receive-side-scaling2.md) processing if the offload target supports RSS</p></td>
 </tr>
 </tbody>
 </table>

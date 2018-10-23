@@ -5,11 +5,8 @@ description: The WdfObjectDereferenceWithTag macro decrements the reference coun
 ms.assetid: c5cfe516-ad62-4656-a033-d1800d9554a8
 keywords:
  - WdfObjectDereferenceWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfObjectDereferenceWithTag macro
@@ -61,7 +58,7 @@ Examples
 
 The following code example decrements an object's reference count and assigns a tag value to the reference.
 
-```
+```cpp
 WdfObjectDereferenceWithTag(
                             object,
                             pTag

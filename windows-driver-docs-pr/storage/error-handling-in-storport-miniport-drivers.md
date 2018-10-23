@@ -3,11 +3,8 @@ title: Error Handling in Storport Miniport Drivers
 author: windows-driver-content
 description: Error Handling in Storport Miniport Drivers
 ms.assetid: 23ea8c36-56cf-45ae-a066-765d3a91b542
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Error Handling in Storport Miniport Drivers
@@ -86,6 +83,5 @@ SP\_BAD\_FW\_WARNING
  
 
 
---------------------
 
 

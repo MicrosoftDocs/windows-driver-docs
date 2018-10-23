@@ -12,11 +12,8 @@ keywords:
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an INF File for a Minifilter Driver
@@ -66,7 +63,7 @@ Strings (required)
 
 The [**Version**](https://msdn.microsoft.com/library/windows/hardware/ff547502) section specifies a class and GUID that are determined by the type of minifilter driver, as shown in the following code example.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = "ActivityMonitor"
@@ -125,7 +122,7 @@ The [**DestinationDirs**](https://msdn.microsoft.com/library/windows/hardware/ff
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383). In the following code example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers), and the value 10 refers to the Windows directory (%windir%).
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12
 Minispy.DriverFiles = 12
@@ -144,7 +141,7 @@ You can create a single INF file to install your driver on multiple versions of 
 
 The following code example shows a typical [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356) section.
 
-```
+```cpp
 [DefaultInstall]
 OptionDesc = %MinispyServiceDesc%
 CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
@@ -154,7 +151,7 @@ CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
 
 The [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360) section contains an [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive that controls how and when the services of a particular driver are loaded, as shown in the following code example.
 
-```
+```cpp
 [DefaultInstall.Services]
 AddService = %MinispyServiceName%,,Minispy.Service
 ```
@@ -163,7 +160,7 @@ AddService = %MinispyServiceName%,,Minispy.Service
 
 The **ServiceInstall** section contains information used for loading the driver service. In the MiniSpy sample driver, this section is named "Minispy.Service", as shown in the following code example. The name of the **ServiceInstall** section must appear in an [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive in the [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360) section.
 
-```
+```cpp
 [Minispy.Service]
 DisplayName    = %MinispyServiceName%
 Description    = %MinispyServiceDesc%
@@ -245,7 +242,7 @@ The **AddRegistry** section adds keys and values to the registry. Minifilter dri
 
 In the MiniSpy sample driver, the following **AddRegistry** section, together with the %strkey% token definitions in the [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section, defines three instances, one of which is named as the MiniSpy sample driver's default instance.
 
-```
+```cpp
 [Minispy.AddRegistry]
 HKR,%RegInstancesSubkeyName%,%RegDefaultInstanceValueName%,0x00000000,%DefaultInstance%
 HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegAltitudeValueName%,0x00000000,%Instance1.Altitude%
@@ -260,7 +257,7 @@ HKR,%RegInstancesSubkeyName%"\"%Instance3.Name%,%RegFlagsValueName%,0x00010001,%
 
 The **DefaultUninstall** section is optional but recommended if your driver can be uninstalled. It contains [**DelFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547363) and [**DelReg**](https://msdn.microsoft.com/library/windows/hardware/ff547374) directives to remove files and registry entries, as shown in the following code example.
 
-```
+```cpp
 [DefaultUninstall]
 DelFiles   = Minispy.DriverFiles, Minispy.UserFiles
 DelReg     = Minispy.DelRegistry
@@ -274,7 +271,7 @@ The **DefaultUninstall.Services** section is optional but recommended if your dr
 
  
 
-```
+```cpp
 [DefaultUninstall.Services]
 DelService = Minispy,0x200
 ```
@@ -287,7 +284,7 @@ You can create a single international INF file by creating additional locale-spe
 
 The following code example shows a typical [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section.
 
-```
+```cpp
 [Strings]
 Msft               = "Microsoft Corporation"
 MinispyServiceDesc = "Minispy mini-filter driver"
@@ -314,6 +311,5 @@ Instance3.Flags    = 0x1 ; Suppress automatic attachments
  
 
 
---------------------
 
 

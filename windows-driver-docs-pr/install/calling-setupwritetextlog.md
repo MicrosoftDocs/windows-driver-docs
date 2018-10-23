@@ -2,11 +2,8 @@
 title: Calling SetupWriteTextLog
 description: Calling SetupWriteTextLog
 ms.assetid: a07118ae-bef6-4d01-94d9-98587cbff863
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling SetupWriteTextLog
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 As described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), the format of a log entry consists of the following fields:
 
-```
+```cpp
 entry_prefix time_stamp event_category indentation formatted_message
 ```
 

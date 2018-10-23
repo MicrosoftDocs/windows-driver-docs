@@ -3,11 +3,9 @@ title: Configuring the Registry
 description: Configuring the Registry
 ms.assetid: 69a1dd39-c4aa-491d-9e28-fd1661ec9a7a
 keywords: ["SymProxy, registry", "ProxyCfg and SymProxy", "Netsh and SymProxy"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring the Registry
@@ -15,7 +13,7 @@ ms.technology: windows-devices
 
 SymProxy stores its settings in this registry key.
 
-```
+```text
 HKLM/Software/Microsoft/Symbol Server Proxy
 ```
 
@@ -23,7 +21,7 @@ This registry key controls the location from which to find symbols to store in t
 
 This will add entries for the settings that will be prefixed with an "x" so that they are disabled. To enable a setting, remove the "x" from in front of the desired setting.
 
-```
+```text
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Symbol Server Proxy]
 "Available Settings"="Remove the 'x' prefix to use the setting"
 "xLogLevel"=dword:0000000f
@@ -45,7 +43,7 @@ This will add entries for the settings that will be prefixed with an "x" so that
 
 The symproxy.reg registry file assumes a virtual directory name of Symbols and configures the Symbol Path to use the Microsoft Public Symbol Server.
 
-```
+```text
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Symbol Server Proxy\Web Directories]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Symbol Server Proxy\Web Directories\Symbols]
@@ -54,7 +52,7 @@ The symproxy.reg registry file assumes a virtual directory name of Symbols and c
 
 The event logging entries in symproxy.reg are covered latter in the Event Log section of this topic.
 
-```
+```text
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\Microsoft-Windows-SymProxy]
 "ProviderGuid"="{0876099c-a903-47ff-af14-52035bb479ef}"
 "EventMessageFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,\
@@ -70,17 +68,17 @@ The web directory entries in symproxy.reg are discussed in this topic.
 
 For each virtual directory generated in IIS that you are using as a symbol store, you must setup a registry key below the **Web Directories** subkey of the following registry key.
 
-```
+```text
 HKLM/Software/Microsoft/Symbol Server Proxy
 ```
 
 **To edit the registry key for a symbol store virtual directory**
 
--   Edit the contents of **SymbolPath** to contain all of the symbol stores used by the SymProxy symbol store. If there is more than one symbol store being used, separate them with semicolons. A maximum of 10 stores is supported for each value. HTTP paths must include the **http:// prefix**, and UNC paths must include the **\\\\** prefix.
+-   Edit the contents of **SymbolPath** to contain all of the symbol stores used by the SymProxy symbol store. If there is more than one symbol store being used, separate them with semicolons. A maximum of 10 stores is supported for each value. HTTP paths must include the **https:// prefix**, and UNC paths must include the **\\\\** prefix.
 
 For example, if one of the virtual directories is called Symbols, and the symbols stores that it accesses are located at the UNC store \\\\symbols\\symbols and the HTTP store https://msdl.microsoft.com/download/symbols, create the following registry key.
 
-```
+```text
 HKLM/Software/Microsoft/Symbol Server Proxy/Web Directories/Symbols
 ```
 
@@ -98,7 +96,7 @@ In this example, SymProxy first searches for symbols in \\\\symbols\\symbols. If
 
 -   UNC paths need to include the “\\\\” prefix
 
--   HTTP paths need to include the “http://” prefix
+-   HTTP paths need to include the “https://” prefix
 
 -   Order the values from least expensive to most expensive.
 
@@ -112,13 +110,13 @@ SymProxy can emit performance counters via a provider called SymProxy.
 
 To enable the performance counters support, register the symproxy manifest file in an administrator command window:
 
-```
+```console
 C:\> lodctr.exe /m:%WINDIR%\system32\inetsrv\symproxy.man
 ```
 
 To disable the performance counters support, unregister the manifest:
 
-```
+```console
 C:\> unlodctr.exe /m:%WINDIR%\system32\inetsrv\symproxy.man
 ```
 
@@ -126,20 +124,20 @@ C:\> unlodctr.exe /m:%WINDIR%\system32\inetsrv\symproxy.man
 
 SymProxy can create ETW events via a provider called Microsoft-Windows-SymProxy.
 
-```
+```console
 C:\> logman query providers | findstr SymProxy
 Microsoft-Windows-SymProxy {0876099C-A903-47FF-AF14-52035BB479EF}
 ```
 
 To enable the ETW support, register the manifest file:
 
-```
+```console
 C:\> wevtutil.exe install-manifest %WINDIR%\system32\inetsrv\symproxy.man
 ```
 
 To disable the ETW support, unregister the manifest file:
 
-```
+```console
 C:\> wevtutil.exe uninstall-manifest %WINDIR%\system32\inetsrv\symproxy.man
 ```
 
@@ -149,7 +147,7 @@ If ETW is configured, the events are recorded as events in the *Operational and 
 
 To correctly view the message of the Event Log entries, the Event Log area of the symproxy.reg file needs to be added to the registry:
 
-```
+```text
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\Microsoft-Windows-SymProxy]
 "ProviderGuid"="{0876099c-a903-47ff-af14-52035bb479ef}"
 "EventMessageFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,\
@@ -194,7 +192,7 @@ SymProxy logs the following events:
 
 SymProxy stores its configuration settings in the following registry key area:
 
-```
+```text
 HKLM/Software/Microsoft/Symbol Server Proxy
 ```
 
@@ -295,8 +293,9 @@ When SymSrv is used in conjunction with SymProxy, it runs as a service and uses 
 
 Consequently, you may need to set up HTTP proxy settings so that this service can access outside network resources. Use one of the following methods to configure these settings:
 
--   In Windows Vista, Windows Server 2008, and later versions of Windows, use the Netsh tool (netsh.exe). For instructions, type the following in a Command Prompt window:
-    ```
+-   Use the Netsh tool (netsh.exe). For instructions, type the following in a Command Prompt window:
+
+    ```console
     netsh winhttp -? 
     ```
 
@@ -306,7 +305,6 @@ The default behavior of SymProxy is to use whatever HTTP proxy is designated by 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Configuring%20the%20Registry%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

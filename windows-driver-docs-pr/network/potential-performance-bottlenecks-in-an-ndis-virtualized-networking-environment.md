@@ -2,17 +2,14 @@
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 
 
-## <a href="" id="ddk-overview-of-virtual-machine-queue-nr"></a>
+
 
 
 In a networking environment that supports device sharing, a virtual interface with its own media access control (MAC) address is exposed in each Hyper-V child partition. These virtual interfaces use the underlying virtual machine bus (VMBus) to connect to a port on the Hyper-V extensible switch module that runs in the management operating system of the Hyper-V parent partition. The extensible switch transmits all the outgoing frames from the different partitions by issuing send requests to the underlying shared network adapter.

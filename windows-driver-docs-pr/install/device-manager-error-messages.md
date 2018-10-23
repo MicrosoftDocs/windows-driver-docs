@@ -7,22 +7,19 @@ keywords:
 - errors WDK Device Manager
 - yellow exclamation point WDK Device Manager
 - messages WDK Device Manager
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Manager Error Messages
 
 
-## <a href="" id="ddk-device-manager-error-messages-dg"></a>
+
 
 
 When Device Manager marks a device with a yellow exclamation point, it also provides an error message.
 
-The following table lists the errors reported by Device Manager on Windows 2000 and later versions of Windows. These error codes are defined in Cfg.h.
+The following table lists the errors reported by Device Manager. These error codes are defined in Cfg.h.
 
 <table>
 <colgroup>

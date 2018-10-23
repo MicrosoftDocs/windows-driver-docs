@@ -16,11 +16,8 @@ keywords:
 - multiple channel support WDK audio
 - speakers WDK audio , multichannel nodes
 - channel multichannel support WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Exposing Multichannel Nodes
@@ -55,7 +52,7 @@ In miniport drivers for Windows XP and later, the property handler for a multich
 
 The following code example shows how to handle a [basic-support query for an audio property](basic-support-queries-for-audio-properties.md) with non-uniform property values. Variable pDescription in the first line of code below points to the [**KSPROPERTY\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff565132) structure at the beginning of the data buffer into which the handler writes the basic-support information:
 
-```
+```cpp
   //
   // Fill in the members header.
   //
@@ -100,7 +97,7 @@ If a multichannel node has a property with a per-channel property value of type 
 
 The following code example shows how to handle the basic-support request for a multichannel node, in the case of a property with a per-channel property value of type BOOL:
 
-```
+```cpp
   //
   // Fill in the members header.
   //
@@ -151,7 +148,7 @@ For example, if a device exposes four channels on a line and the user has select
 
 At the driver level, the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property uses a mask value of KSAUDIO\_SPEAKER\_QUAD or KSAUDIO\_SPEAKER\_SURROUND to represent a quadraphonic or surround speaker configuration, respectively. Header file Ksmedia.h defines these values as follows:
 
-```
+```cpp
   #define KSAUDIO_SPEAKER_QUAD      (SPEAKER_FRONT_LEFT | SPEAKER_FRONT_RIGHT | \
                                      SPEAKER_BACK_LEFT | SPEAKER_BACK_RIGHT)
 
@@ -168,7 +165,5 @@ If the node's basic-support handler sets the KSPROPERTY\_MEMBER\_FLAG\_BASICSUPP
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Exposing%20Multichannel%20Nodes%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

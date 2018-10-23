@@ -8,17 +8,14 @@ keywords:
 - WMI WDK networking , OIDs
 - OIDs WDK networking , WMI
 - Windows Management Instrumentation WDK networking , OIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standard Miniport Driver OIDs Registered with WMI
 
 
-## <a href="" id="ddk-standard-miniport-driver-oids-registered-with-wmi-ng"></a>
+
 
 
 NDIS registers WMI GUIDs with WMI for miniport adapters. To obtain the list of OIDs that a miniport adapter supports, NDIS issues an [OID\_GEN\_SUPPORTED\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569642) query to the associated miniport driver. The miniport driver must provide the list of all of the OIDs that the miniport adapter supports. This list must contain all of the mandatory OIDs and should contain optional and custom OIDs, if any.

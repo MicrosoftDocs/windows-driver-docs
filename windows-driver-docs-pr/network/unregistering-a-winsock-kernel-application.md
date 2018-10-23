@@ -7,11 +7,8 @@ keywords:
 - unregistering Winsock Kernel applications
 - WSK WDK networking , registering
 - WskDeregister
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unregistering a Winsock Kernel Application
@@ -21,7 +18,7 @@ A Winsock Kernel (WSK) application that has successfully registered as a WSK cli
 
 For example:
 
-```
+```C++
 // Unload function
 VOID
   Unload(

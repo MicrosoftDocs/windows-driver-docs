@@ -5,11 +5,8 @@ ms.assetid: d8f533f8-3037-47c0-986b-bd283bb3804d
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming on Windows 2000
 - vertex buffers WDK DirectX 8.0 , renaming on Windows 2000
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Renaming on Windows 2000
@@ -28,7 +25,7 @@ It may be helpful to think of AGP heaps as residing in a conceptual address spac
 
 Given a surface (**pSurface**), a kernel-mode AGP heap (**pvmHeap**) and a mapping of the heap into a particular user-mode process (**pMap**), the following formula is used to compute the actual, user-mode **fpVidMem** for a surface:
 
-```
+```cpp
 fpVidMem = pMap->pvVirtAddr +
     (pSurface->fpHeapOffset âˆ’ pvmHeap->fpStart)
 ```
@@ -39,7 +36,7 @@ Your driver is notified of the conceptual base address of AGP heaps through the 
 
 The following code fragment demonstrates computing a new **fpVidMem** for an AGP surface in a lock call.
 
-```
+```cpp
 // Get the vertex buffer&#39;s surface local and global from the
 // lock data
 LPDDRAWI_DDRAWSURFACE_LCL*pLcl = pLockData->lpDDSurface;
@@ -80,7 +77,6 @@ If the driver returns DDHAL\_DRIVER\_HANDLED for a lock of an AGP surface the ke
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Handling%20Renaming%20on%20Windows%202000%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

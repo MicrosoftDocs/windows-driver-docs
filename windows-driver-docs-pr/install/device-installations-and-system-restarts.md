@@ -9,17 +9,14 @@ keywords:
 - rebooting WDK device installations
 - initiating reboots during device installations
 - restarting during device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Installations and System Restarts
 
 
-## <a href="" id="ddk-device-installations-requiring-a-reboot-dg"></a>
+
 
 
 Device installations should not force the user to restart the system unless absolutely necessary. The following circumstances are the only ones for which a system restart should be necessary:

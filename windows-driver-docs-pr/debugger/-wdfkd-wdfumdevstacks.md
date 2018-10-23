@@ -3,17 +3,15 @@ title: wdfkd.wdfumdevstacks
 description: The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process.
 ms.assetid: 05D09B0D-4ED8-4333-B4BC-5BE28C63312C
 keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wdfkd.wdfumdevstacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumdevstacks
@@ -21,7 +19,7 @@ api_type:
 
 The **!wdfkd.wdfumdevstacks** extension displays information about all UMDF device stacks in the [implicit process](controlling-threads-and-processes.md).
 
-```
+```dbgcmd
 !wdfkd.wdfumdevstacks [Flags] 
 ```
 
@@ -61,7 +59,7 @@ This command displays the same information as the user-mode command [**!wudfext.
 
 Before you use this command, use [**!process**](-process.md) to get a list of all UMDF host processes.
 
-```
+```dbgcmd
 0: kd> !process 0 0 wudfhost.exe
 PROCESS ffffe00000c32900
     SessionId: 0  Cid: 079c    Peb: 7ff782537000  ParentCid: 037c
@@ -73,7 +71,7 @@ The preceding output shows that there is one UMDF host process; that is, there i
 
 Next use [**.process**](-process--set-process-context-.md) to set the implicit process to wudfhost.exe.
 
-```
+```dbgcmd
 0: kd> .process /P ffffe00000c32900
 Implicit process is now ffffe000`00c32900
 .cache forcedecodeptes done
@@ -81,7 +79,7 @@ Implicit process is now ffffe000`00c32900
 
 Now use **!wdfkd.wdfumdevstacks** to display the UMDF device stacks in the implicit process (wudfhost.exe).
 
-```
+```dbgcmd
 0: kd> !wdfkd.wdfumdevstacks
 Number of device stacks: 1
   Device Stack: 0x000000a5a3ab5f70     Pdo Name: \Device\00000052
@@ -103,7 +101,6 @@ The preceding output shows that there is one UMDF device stack in the implicit p
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wdfkd.wdfumdevstacks%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

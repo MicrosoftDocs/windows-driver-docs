@@ -2,11 +2,8 @@
 title: Standardized INF Keywords for Packet Coalescing
 description: Standardized INF Keywords for Packet Coalescing
 ms.assetid: 423E9B50-6474-454A-97BB-91404DF9F729
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Packet Coalescing

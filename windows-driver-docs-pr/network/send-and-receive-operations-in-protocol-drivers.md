@@ -9,17 +9,14 @@ keywords:
 - NDIS protocol drivers WDK , send operations
 - send operations WDK NDIS protocol
 - receive operations WDK NDIS protocol
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Send and Receive Operations in Protocol Drivers
 
 
-## <a href="" id="ddk-send-and-receive-operations-in-protocol-drivers-ng"></a>
+
 
 
 There are two different interfaces for send and receive operations in NDIS protocol drivers. Protocol drivers with a connectionless lower edge call the [**NdisSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564535) function to send network data. A connectionless protocol driver must supply a [**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267) function. NDIS calls *ProtocolReceiveNetBufferLists* when an underlying connectionless miniport driver calls the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function to indicate received network data. For more information about sending and receiving data in connectionless protocol drivers, see [Protocol Driver Send and Receive Operations](protocol-driver-send-and-receive-operations.md).

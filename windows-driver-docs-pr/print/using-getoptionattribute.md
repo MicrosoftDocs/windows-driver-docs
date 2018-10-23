@@ -5,17 +5,14 @@ description: Using GetOptionAttribute
 ms.assetid: d35f0811-d572-422c-8672-ffd29bf69efa
 keywords:
 - GetOptionAttribute
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using GetOptionAttribute
 
 
-## <a href="" id="ddk-using-getoptionattribute-gg"></a>
+
 
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E\_INVALIDARG.
@@ -195,7 +192,7 @@ This option attribute is available to any option of the "InstalledMemory" PPD fe
 
 Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
 
-```
+```cpp
 PCUSTOMSIZEPARAM  pCSParam;
 
 pCSParam = (PCUSTOMSIZEPARAM)pbData + CUSTOMPARAM_WIDTH;
@@ -213,7 +210,5 @@ max = pCSParam->lMaxVal / 25400.0 * 72.0;
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Using%20GetOptionAttribute%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

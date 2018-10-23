@@ -5,11 +5,8 @@ description: The WdfObjectGetTypedContext macro returns a pointer to an object's
 ms.assetid: de0edae4-7c05-4419-972e-c106875dfff1
 keywords:
  - WdfObjectGetTypedContext macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfObjectGetTypedContext macro
@@ -55,7 +52,7 @@ Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object and then registers the structure.
 
-```
+```cpp
 typedef struct _MY_REQUEST_CONTEXT {
   LIST_ENTRY ListEntry;
   WDFMEMORY Memory;
@@ -66,7 +63,7 @@ WDF_DECLARE_CONTEXT_TYPE(MY_REQUEST_CONTEXT)
 
 The following code example creates a request object and obtains a pointer to its context space.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;

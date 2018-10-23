@@ -7,11 +7,8 @@ keywords:
 - storage class drivers WDK , device extensions
 - class drivers WDK storage , device extensions
 - device extensions WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up a Storage Class Driver's Device Extension
@@ -63,6 +60,5 @@ A storage class driver cannot send requests to its device through the storage po
  
 
 
---------------------
 
 

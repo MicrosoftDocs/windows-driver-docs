@@ -8,11 +8,8 @@ keywords:
 - storage tape drivers WDK , optional routines
 - tape drivers WDK storage , required routines
 - storage tape drivers WDK , required routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required and Optional Tape Miniclass Routines
@@ -50,6 +47,5 @@ See also the description of tape miniclass routines in [Tape Miniclass Driver Ro
  
 
 
---------------------
 
 

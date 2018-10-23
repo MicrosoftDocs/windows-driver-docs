@@ -7,11 +7,8 @@ keywords:
 - I/O requests WDK UMDF , completing
 - request processing WDK UMDF , completing requests
 - completing I/O requests WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing I/O Requests in UMDF
@@ -45,7 +42,7 @@ For more information about these macros, see the Microsoft Windows SDK documenta
 
 The following example code shows how to complete a request with a suitable error code:
 
-```
+```cpp
 VOID
 STDMETHODCALLTYPE
 CMyQueue::OnWrite(

@@ -3,11 +3,9 @@ title: Reading Symbols from Paged-Out Headers
 description: Reading Symbols from Paged-Out Headers
 ms.assetid: 74ec20d8-e2b5-449d-8b93-7553c57fac07
 keywords: ["symbols, paged-out header problems"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading Symbols from Paged-Out Headers
@@ -38,7 +36,7 @@ This technique is only used for kernel-mode debugging. The operating system is c
 
 Here is an example of this technique being used:
 
-```
+```dbgcmd
 kd> .reload
 Connected to Windows XP 2268 x86 compatible target, ptr64 FALSE
 Loading Kernel Symbols
@@ -62,14 +60,14 @@ by being in the wrong process context or by paging
 
 Notice that many images have inaccessible headers. Check the symbols from one of these files (in this example, fs\_rec.sys):
 
-```
+```dbgcmd
 kd> x fs_rec!*
 *** ERROR: Module load completed but symbols could not be loaded for fs_rec.sys
 ```
 
 These headers are apparently paged out. So you need to add the proper images to the symbol path:
 
-```
+```dbgcmd
 kd> .sympath+ \\myserver\myshare\symbols\x86fre\symbols
 Symbol search path is: symsrv*symsrv.dll*c:\localcache*https://msdl.microsoft.com/download/symbols;\\myserver\myshare\symbols\x86fre\symbols
 
@@ -96,7 +94,7 @@ by being in the wrong process context or by paging
 
 The same warnings have appeared, but the symbols themselves are now accessible:
 
-```
+```dbgcmd
 kd> x fs_Rec!*
 fe0c8358  Fs_Rec!_imp___allmul
 fe0c8310  Fs_Rec!_imp__IoCreateDevice
@@ -111,7 +109,6 @@ fe0c9570  Fs_Rec!_NULL_IMPORT_DESCRIPTOR
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Reading%20Symbols%20from%20Paged-Out%20Headers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

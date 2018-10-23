@@ -6,17 +6,14 @@ keywords:
 - installation keywords WDK networking , non-visible
 - non-visible keywords WDK DNIS miniport
 - hidden keywords WDK DNIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Keywords Not Displayed in the User Interface
 
 
-## <a href="" id="ddk-keywords-not-displayed-in-the-user-interface-ng"></a>
+
 
 
 NDIS 6.0 and later versions of NDIS provide some standardized keywords for miniport drivers of network devices. These standardized keywords appear in INF files but not in the user interface.

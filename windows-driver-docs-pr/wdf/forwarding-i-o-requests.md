@@ -7,17 +7,14 @@ keywords:
 - forwarding I/O requests WDK KMDF
 - I/O requests WDK KMDF , forwarding
 - request processing WDK KMDF , forwarding I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Forwarding I/O Requests
 
 
-## <a href="" id="ddk-forwarding-i-o-requests-df"></a>
+
 
 
 When a driver receives an I/O request that it cannot process, it typically does one of the following:

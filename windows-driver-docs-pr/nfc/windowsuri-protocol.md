@@ -9,11 +9,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WindowsUri protocol
@@ -31,7 +28,7 @@ The “WindowsUri” protocol is a means of abstracting a subscription for a sim
 -   If the proximity technology is advertised as NFC, then the driver MUST encapsulate the payload of each “WindowsUri” publication within NDEF messages as specified in \[NFC URI\].
 -   The provider MAY support other compatible schemes as well.
 
-## <a href="" id="publications-for--windowsuri-writetag-"></a>Publications for “WindowsUri:WriteTag”
+## Publications for “WindowsUri:WriteTag”
 
 
 This is a special type of WindowsUri publication that allows a URI to be written to any writeable tag.

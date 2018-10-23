@@ -7,11 +7,8 @@ keywords:
 - filter drivers WDK file system , vs. device drivers
 - file system filter drivers WDK , vs. device drivers
 - device drivers WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Filter Drivers Are Not Device Drivers
@@ -35,6 +32,5 @@ For more details on the similarities and differences between file system filter 
  
 
 
---------------------
 
 

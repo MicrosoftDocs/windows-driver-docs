@@ -8,11 +8,8 @@ keywords:
 - minifilter drivers WDK , DriverEntry routine
 - DriverEntry WDK file systems
 - global initialization WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a DriverEntry Routine for a Minifilter Driver
@@ -27,7 +24,7 @@ The **DriverEntry** routine performs global initialization, registers the minifi
 
 The **DriverEntry** routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_INITIALIZE) ( 
     IN PDRIVER_OBJECT DriverObject, 
@@ -60,6 +57,5 @@ This section includes:
  
 
 
---------------------
 
 

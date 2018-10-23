@@ -4,11 +4,8 @@ description: Client Module
 ms.assetid: 73529a39-a6b3-4db7-9695-04634c4772de
 keywords:
 - client modules WDK Network Module Registrar , defined
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Client Module

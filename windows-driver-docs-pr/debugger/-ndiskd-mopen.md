@@ -3,17 +3,15 @@ title: ndiskd.mopen
 description: The ndiskd.mopen extension displays information about bindings between miniports and protocols. 
 ms.assetid: 439c4647-8f3e-4473-aca8-364b5d2206e9
 keywords: ["ndiskd.mopen Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.mopen
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.mopen
@@ -21,7 +19,7 @@ api_type:
 
 The **!ndiskd.mopen** extension displays information about bindings between miniports and protocols. If you run this extension with no parameters, !ndiskd will display a list of all open bindings between NDIS miniport drivers and protocol drivers.
 
-```
+```console
 !ndiskd.mopen [-handle <x>] [-ref] 
 ```
 
@@ -43,7 +41,7 @@ Examples
 
 Enter the !ndiskd.mopen command to get a list of all open bindings. In this example, look for the binding between the Microsoft ISATAP Adapter \#2 miniport and the TCPIP6TUNNEL protocol. Its handle is ffff8083e56b8110.
 
-```
+```console
 3: kd> !ndiskd.mopen
 Open ffff8083e56b8110
   Miniport: ffff8083e02ce1a0 - Microsoft ISATAP Adapter #2
@@ -76,7 +74,7 @@ Open ffff8083e504c770
 
 Now you can either click on the handle or use the handle to enter the **!ndiskd.mopen -handle** command, which enables you to see more details about that open binding such as its Datapath state and Receive path information.
 
-```
+```console
 3: kd> !ndiskd.mopen ffff8083e56b8110
 
 
@@ -118,7 +116,6 @@ RECEIVE PATH
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.mopen%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -4,17 +4,14 @@ author: windows-driver-content
 description: SDDL for Device Objects
 ms.assetid: c0e4432a-4429-4ecd-a2e5-f93a9e3caf48
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "Security Descriptor Definition Language WDK device objects", "SDDL WDK device objects", "IoCreateDeviceSecure", "security descriptors WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SDDL for Device Objects
 
 
-## <a href="" id="ddk-sddl-for-device-objects-kg"></a>
+
 
 
 The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://msdn.microsoft.com/library/windows/hardware/ff540212) or passed to [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407). The [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) is fully documented in the Microsoft Windows SDK documentation.
@@ -329,7 +326,5 @@ Note that the above SDDL strings do not include any inheritance modifiers. As su
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20SDDL%20for%20Device%20Objects%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

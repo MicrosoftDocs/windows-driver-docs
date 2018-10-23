@@ -7,11 +7,8 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , indented log entries
 - SetupWriteTextLog
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing Indented Log Entries
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 As described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), the format of a section body log entry in a [SetupAPI text log](setupapi-text-logs.md) consists of the following fields:
 
-```
+```cpp
 entry_prefix time_stamp event_category indentation formatted_message
 ```
 
@@ -60,7 +57,7 @@ To change the indentation depth for a section, call a SetupAPI logging function 
 
 For example, the following sequence of calls to [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) writes a sequence of indented log entries after the section header whose *section_title* field is "Indentation Example" and whose *instance_identifier* field is "Instance 0".
 
-```
+```cpp
 // The LogToken value was previously returned by a call to 
 // SetupGetThreadLogToken.
 // The LogToken value specifies a section in one of the text logs.
@@ -94,7 +91,7 @@ If the event level for the text log is greater than or equal to TXTLOG_DETAILS a
 
 In the following example, ellipsis (...) represents zero or more additional log entries at the same level of indentation as the previous log entry. The time stamp would be replaced by an actual time stamp.
 
-```
+```cpp
 >>>  [Indentation Example - Instance 0]
 >>>  2005/02/13 22:06:28.109: Section start
         : Subsection A

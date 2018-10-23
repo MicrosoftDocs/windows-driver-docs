@@ -4,22 +4,17 @@ description: CM_PROB_LEGACY_SERVICE_NO_DEVICES
 ms.assetid: 98fb4601-b386-427f-9db6-57f07f24c125
 keywords:
 - CM_PROB_LEGACY_SERVICE_NO_DEVICES
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_LEGACY_SERVICE_NO_DEVICES
 
-
-## <a href="" id="ddk-cm-prob-legacy-service-no-devices-dg"></a>
-
+This function is reserved for system use.
 
 A driver was loaded but Windows cannot find the device.
 
-### Error Code
+## Error Code
 
 41
 
@@ -32,12 +27,3 @@ A driver was loaded but Windows cannot find the device.
 Reinstall the device.
 
 This is a legacy root service that did not create a device object.
-
- 
-
- 
-
-
-
-
-

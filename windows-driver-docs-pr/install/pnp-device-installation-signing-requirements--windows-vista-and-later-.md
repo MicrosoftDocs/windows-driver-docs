@@ -9,11 +9,8 @@ keywords:
 - signatures WDK , PnP device installations
 - PnP WDK driver signing
 - Plug and Play WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PnP Device Installation Signing Requirements

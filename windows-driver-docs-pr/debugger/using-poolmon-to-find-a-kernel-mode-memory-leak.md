@@ -3,11 +3,9 @@ title: Using PoolMon to Find a Kernel-Mode Memory Leak
 description: Using PoolMon to Find a Kernel-Mode Memory Leak
 ms.assetid: 383b5d9a-3e99-4dc5-bce9-bd44f2ef1dc0
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using PoolMon to Find a Kernel-Mode Memory Leak
@@ -15,7 +13,7 @@ ms.technology: windows-devices
 
 If you suspect there is a kernel-mode memory leak, the easiest way to determine which pool tag is associated with the leak is to use the PoolMon tool.
 
-PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](http://go.microsoft.com/fwlink/p/?linkid=122776) in the WDK documentation.
+PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](https://go.microsoft.com/fwlink/p/?linkid=122776) in the WDK documentation.
 
 ### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
 
@@ -27,7 +25,7 @@ On Windows Server 2003 and later versions of Windows, pool tagging is always ena
 
 The PoolMon header displays the total paged and non-paged pool bytes. The columns show pool use for each pool tag. The display is updated automatically every few seconds. For example:
 
-```
+```dbgcmd
 Memory: 16224K Avail: 4564K PageFlts: 31 InRam Krnl: 684K P: 680K
 Commit: 24140K Limit: 24952K Peak: 24932K Pool N: 744K P: 2180K
 
@@ -123,7 +121,6 @@ After you have determined which pool tag is associated with the leak, this might
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20PoolMon%20to%20Find%20a%20Kernel-Mode%20Memory%20Leak%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

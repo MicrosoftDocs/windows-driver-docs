@@ -5,17 +5,14 @@ description: Obtaining Information about a Parallel Device
 ms.assetid: a891718a-9e2c-4823-a0b9-5cbe770c3f85
 keywords:
 - parallel devices WDK , obtaining information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Information about a Parallel Device
 
 
-## <a href="" id="ddk-obtaining-information-about-a-parallel-device-kg"></a>
+
 
 
 In addition to [connecting to a parallel device](connecting-to-a-parallel-device.md), a client can use the following device control requests to obtain additional information about a parallel device:
@@ -45,6 +42,5 @@ In addition to [connecting to a parallel device](connecting-to-a-parallel-device
  
 
 
---------------------
 
 

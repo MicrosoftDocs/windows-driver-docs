@@ -5,17 +5,14 @@ ms.assetid: 0c0516b0-1fc4-43b5-8c7c-58255c72a4e7
 keywords:
 - intermediate drivers WDK networking , architecture
 - NDIS intermediate drivers WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate drivers
 
 
-## <a href="" id="ddk-ndis-intermediate-driver-ng"></a>
+
 
 
 As the following figure illustrates, intermediate drivers are typically layered between miniport drivers and transport protocol drivers.

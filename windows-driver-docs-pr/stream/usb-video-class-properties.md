@@ -8,11 +8,8 @@ keywords:
 - Video Class drivers WDK USB , properties
 - UVC drivers WDK AVStream , properties
 - property sets WDK USB Video Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Video Class Properties
@@ -24,7 +21,7 @@ Clients of the USB Video Class can use the following video capture property sets
 [PROPSETID\_VIDCAP\_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows/hardware/ff568122)
 Clients of the USB Video Class can make requests on filters or individual nodes. The functionality of the node-based properties is identical to that of the pre-USB Video Class filter-based properties.
 
-To specify a node-based property, set the KSPROPERTY\_TYPE\_TOPOLOGY flag in the Flags member of the [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure contained in the property descriptor structure—for example, [**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564420).
+To specify a node-based property, set the KSPROPERTY\_TYPE\_TOPOLOGY flag in the Flags member of the [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure contained in the property descriptor structure—for example, [**KSPROPERTY\_CAMERACONTROL\_NODE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564420).
 
 Because clients can address multiple nodes on a single filter, the USB Video Class enables IHVs to support cameras that have multiple independently controlled lenses.
 
@@ -44,7 +41,5 @@ USB Video Class devices can support some or all of the property sets listed abov
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20USB%20Video%20Class%20Properties%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

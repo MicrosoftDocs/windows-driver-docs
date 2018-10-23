@@ -9,17 +9,14 @@ keywords:
 - conditional statements WDK Unidrv
 - multiple dependencies WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Conditional Statements
 
 
-## <a href="" id="ddk-conditional-statements-gg"></a>
+
 
 
 The GPD language provides C-like conditional statements that allow you to describe dependencies that some printer attributes can have on a printer's configuration. For example, the margins and cursor origin for a page might depend on the page's orientation. The **\*Switch** and **\*Case** statements allow you to express such dependencies. The format of these statements is as follows:
@@ -57,7 +54,7 @@ The GPD language provides C-like conditional statements that allow you to descri
 
 To express the case in which page margins and cursor origin are dependent on the page's orientation, the following entries could be used:
 
-```
+```cpp
 *Feature: Orientation
 {
     *DefaultOption: Portrait
@@ -105,7 +102,7 @@ If you do not list all of a feature's options as **\*Case** statement arguments,
 
 You can include **\*Switch** statements inside **\*Case** and **\*Default** statements. This allows you to specify multiple dependencies, as follows:
 
-```
+```cpp
 *Feature: feature1 {*Option: optionA {...} *Option: optionB {...}}
 *Feature: feature2 {*Option: optionC {...} *Option: optionD {...}}
 *Feature: feature3 
@@ -189,7 +186,7 @@ Consider the following scenario. You have a v4 printer driver which is derived f
 
 The class driver's GPD file has the following switch tree:
 
-```
+```cpp
 * Option: A4
     1. Switch: Resolution
 * Option: Letter
@@ -199,7 +196,7 @@ The class driver's GPD file has the following switch tree:
 
 The derived v4 printer driver wants to add the **MarginSetting** switch, so its GPD file will have the following switch tree:
 
-```
+```cpp
 * Option: A4
     1. Switch: Resolution
     2. Switch: InputBin
@@ -214,7 +211,7 @@ Note that **Resolution** is set before **InputBin** in the derived GPD and **Mar
 
 For example, an incorrectly derived GPD file may look like the following:
 
-```
+```cpp
 * Option: A4
     1. Switch: MarginSetting
     2. Switch: InputBin
@@ -230,7 +227,5 @@ For example, an incorrectly derived GPD file may look like the following:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Conditional%20Statements%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

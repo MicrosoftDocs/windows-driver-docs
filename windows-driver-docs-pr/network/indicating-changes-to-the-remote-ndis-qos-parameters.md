@@ -2,11 +2,8 @@
 title: Indicating Changes to the Remote NDIS QoS Parameters
 description: Indicating Changes to the Remote NDIS QoS Parameters
 ms.assetid: E09EBF25-96B6-417F-9538-D0BEBE5B9E19
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Changes to the Remote NDIS QoS Parameters
@@ -34,7 +31,7 @@ The miniport driver must follow these guidelines for issuing an [**NDIS\_STATUS\
 
  
 
-## <a href="" id="guidelines-for-issuing-the-ndis-status-qos-remote-parameters-change-status-indication"></a>Guidelines for Issuing the NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE Status Indication
+## Guidelines for Issuing the NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE Status Indication
 
 
 The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439812) status indication:
@@ -83,7 +80,7 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
 5.  The miniport driver issues the status indication by calling [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600). The driver must pass a pointer to the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure to the *StatusIndication* parameter.
 
-## <a href="" id="flags"></a>Guidelines for Setting the Flags Member
+## Guidelines for Setting the Flags Member
 
 
 The miniport driver sets the following flags in the **Flags** member of the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure to specify which operational NDIS QoS parameters have been configured or changed on the network adapter:

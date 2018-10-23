@@ -3,17 +3,15 @@ title: pcr
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 ms.assetid: a9d82aa4-57de-4170-80fd-b7cd5b82f1e5
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - pcr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pcr
@@ -21,7 +19,7 @@ api_type:
 
 The **!pcr** extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 
-```
+```dbgcmd
 !pcr [Processor]
 ```
 
@@ -63,7 +61,7 @@ The processor control block (PRCB) is an extension of the PCR. It can be display
 
 Here is an example of the **!pcr** extension on an x86 target computer:
 
-```
+```dbgcmd
 kd> !pcr 0
 KPCR for Processor 0 at ffdff000:
     Major 1 Minor 1
@@ -99,7 +97,6 @@ One of the entries in this display shows the interrupt request level (IRQL). The
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!pcr%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

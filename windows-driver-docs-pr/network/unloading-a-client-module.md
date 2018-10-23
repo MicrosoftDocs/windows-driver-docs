@@ -6,11 +6,8 @@ keywords:
 - client modules WDK Network Module Registrar , unloading
 - unloading network modules
 - NmrDeregisterClient
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unloading a Client Module
@@ -22,7 +19,7 @@ A client module's [**Unload**](https://msdn.microsoft.com/library/windows/hardwa
 
 For example:
 
-```
+```C++
 // Variable containing the handle for the registration
 HANDLE ClientHandle;
 

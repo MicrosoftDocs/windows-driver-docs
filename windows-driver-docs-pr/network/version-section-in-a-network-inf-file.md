@@ -6,17 +6,14 @@ keywords:
 - INF files WDK network , Version section
 - network INF files WDK , Version section
 - Version section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Version Section in a Network INF File
 
 
-## <a href="" id="ddk-version-section-ng"></a>
+
 
 
 The **Version** section in a network INF file is based on the generic [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
@@ -119,7 +116,7 @@ The **CatalogFile** entry is used to declare an optional driver-supplied .cat fi
 
 The following is an example of a **Version** section for an INF file that installs a network adapter:
 
-```
+```INF
 [Version]
 Signature = $Windows NT$
 Class=Net

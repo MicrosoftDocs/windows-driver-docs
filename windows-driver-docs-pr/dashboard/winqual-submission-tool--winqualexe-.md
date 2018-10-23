@@ -2,11 +2,8 @@
 title: Winqual Submission Tool (winqual.exe)
 description: Winqual Submission Tool (winqual.exe)
 ms.assetid: f7a34ee3-0532-465b-acb0-1ff80e2d4cb8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winqual Submission Tool (winqual.exe)
@@ -16,12 +13,12 @@ The Winqual Submission Tool (Winqual.exe) helps you to create a submission packa
 
 In addition, the use of Winqual.exe is applicable only to WLK.
 
-## <span id="How_to_Install_Winqual_Submission_Tool"></span><span id="how_to_install_winqual_submission_tool"></span><span id="HOW_TO_INSTALL_WINQUAL_SUBMISSION_TOOL"></span>How to Install Winqual Submission Tool
+## Installing the Winqual submission tool
 
 
 1.  Sign in to the dashboard with your Microsoft account.
 
-2.  Click **Hardware logo**, click **Downloads**, and then click **Winqual Submission Tool (WST)**.
+2.  On the left navigation menu, click on **Drivers**. in the **Get the essentials** section, click **Winqual Submission Tool (WST)**.
 
 3.  In the **File Download - Security Warning** dialog box, click **Run**.
 
@@ -40,7 +37,7 @@ In addition, the use of Winqual.exe is applicable only to WLK.
 ## <span id="How_to_use_WST"></span><span id="how_to_use_wst"></span><span id="HOW_TO_USE_WST"></span>How to use WST
 
 
-To use the WST, follow these steps:
+To use the Windows Submission Tool (WST):
 
 1.  When you open the tool, a **Welcome** screen appears. You can choose to not show this dialog box next time you open the tool by selecting **Don't show this message again**. To re-enable this dialog box, click **Tools**, click **Options**, and then select the **Show Welcome screen on startup** check box.
 
@@ -111,7 +108,6 @@ You can also perform the following additional actions in the WST:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Winqual%20Submission%20Tool%20%28winqual.exe%29%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -3,11 +3,8 @@ title: Atomic Bus Operations
 author: windows-driver-content
 description: To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation.
 ms.assetid: F8CD670F-C817-40BF-AF4B-5F3839E46EFB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Atomic Bus Operations
@@ -46,7 +43,7 @@ For an I²C bus, the controller starts a sequence by transmitting a start bit on
 
 For an SPI bus, the controller starts a sequence by asserting the chip-select line to the target device, and ends the sequence by deasserting the chip-select line. By keeping the chip-select line continuously asserted during a sequence of data transfers over the bus, the transfers are performed as a single, atomic bus operation.
 
-## <a href="" id="an-example-i2c-device"></a>An example I²C device
+## An example I²C device
 
 
 A typical peripheral device on an I²C bus might implement several internal device functions. To access some of these functions, a client might use [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) requests.
@@ -78,6 +75,5 @@ To perform a read-modify-write on function address 0 in this device, the **IOCTL
  
 
 
---------------------
 
 

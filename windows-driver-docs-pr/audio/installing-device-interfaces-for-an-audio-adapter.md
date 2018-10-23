@@ -9,11 +9,8 @@ keywords:
 - device interfaces WDK audio
 - subdevices WDK audio
 - audio device interfaces WDK
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Device Interfaces for an Audio Adapter
@@ -101,7 +98,7 @@ The following example installs four common system-defined device interfaces that
 
 In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
 
-```
+```inf
   [XYZ-Audio-Device.Interfaces]
   AddInterface=%KSCATEGORY_AUDIO%,%KSName_Wave%,XYZ-Audio-Device.Wave
   AddInterface=%KSCATEGORY_RENDER%,%KSName_Wave%,XYZ-Audio-Device.Wave
@@ -117,7 +114,7 @@ The first three **AddInterface** directives specify an add-interface section nam
 
 The two add-interface sections appear in the following example, which contains INF file entries that add each interface's FriendlyName and CLSID to the registry:
 
-```
+```inf
   [XYZ-Audio-Device.Wave]
   AddReg=XYZ-Audio-Device.Wave.AddReg
   [XYZ-Audio-Device.Wave.AddReg]
@@ -135,7 +132,7 @@ The keyword HKR in this example denotes the system-supplied registry path for th
 
 The following is the Strings section for this example.
 
-```
+```inf
   [Strings]
   KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
   KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
@@ -148,7 +145,7 @@ The following is the Strings section for this example.
 
 The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*XXX* device interface cannot be localized because the adapter driver uses the same name internally as a string constant. The sample adapter drivers in the Windows Driver Kit (WDK) use the following string names for their audio device interfaces:
 
-```
+```inf
   KSNAME_Wave="Wave"
   KSNAME_UART="UART"
   KSNAME_FMSynth="FMSynth"
@@ -164,7 +161,5 @@ For the sake of uniformity, your proprietary driver should assign these same nam
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20Device%20Interfaces%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

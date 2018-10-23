@@ -3,11 +3,8 @@ title: Handling Active-Both Interrupts
 author: windows-driver-content
 description: Handling Active-Both Interrupts
 ms.assetid: CFA205B1-FDDD-4E27-8CF9-106C8D1CC4EF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Active-Both Interrupts
@@ -35,7 +32,7 @@ This solution requires that the GPIO controller support active-both interrupts i
 
 The following code example shows how a KMDF driver for a peripheral device can track interrupt polarity.
 
-```
+```cpp
 typedef struct _INTERRUPT_CONTEXT INTERRUPT_CONTEXT, *PINTERRUPT_CONTEXT;
 typedef struct _DEVICE_CONTEXT DEVICE_CONTEXT, *PDEVICE_CONTEXT;
 

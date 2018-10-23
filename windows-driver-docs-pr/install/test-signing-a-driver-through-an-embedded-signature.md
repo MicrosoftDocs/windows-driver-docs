@@ -2,11 +2,8 @@
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
 ms.assetid: 862e89e0-f84a-4058-a32f-09ae3043b884
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test-Signing a Driver through an Embedded Signature
@@ -30,7 +27,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 
 To test-sign the *toaster.sys* file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
 ```
 

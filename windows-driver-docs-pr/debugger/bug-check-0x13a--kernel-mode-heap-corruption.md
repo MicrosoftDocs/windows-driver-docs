@@ -3,17 +3,15 @@ title: Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION
 description: The KERNEL_MODE_HEAP_CORRUPTION bug check has a value of 0x0000013A. This indicates that the kernel mode heap manager has detected corruption in a heap.
 ms.assetid: 806669B3-B811-462A-A3B6-2F583BF0E19A
 keywords: ["Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION", "KERNEL_MODE_HEAP_CORRUPTION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - KERNEL_MODE_HEAP_CORRUPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13A: KERNEL\_MODE\_HEAP\_CORRUPTION
@@ -21,7 +19,7 @@ api_type:
 
 The KERNEL\_MODE\_HEAP\_CORRUPTION bug check has a value of 0x0000013A. This indicates that the kernel mode heap manager has detected corruption in a heap.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## KERNEL\_MODE\_HEAP\_CORRUPTION Parameters
 

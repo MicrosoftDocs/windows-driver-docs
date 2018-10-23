@@ -3,11 +3,8 @@ title: Acknowledging Oplock Breaks
 author: windows-driver-content
 description: Acknowledging Oplock Breaks
 ms.assetid: ea5bcd1e-d22c-4f80-89e4-1a61e43959dd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Acknowledging Oplock Breaks
@@ -48,6 +45,5 @@ Closing the handle of the file for which the oplock break is requested will impl
  
 
 
---------------------
 
 

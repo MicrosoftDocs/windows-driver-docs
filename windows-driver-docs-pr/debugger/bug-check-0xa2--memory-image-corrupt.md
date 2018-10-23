@@ -3,17 +3,15 @@ title: Bug Check 0xA2 MEMORY_IMAGE_CORRUPT
 description: The MEMORY_IMAGE_CORRUPT bug check has a value of 0x000000A2. This bug check indicates that corruption has been detected in the image of an executable file in memory.
 ms.assetid: 73990217-4af2-478c-aa5e-39e6bc5811cf
 keywords: ["Bug Check 0xA2 MEMORY_IMAGE_CORRUPT", "MEMORY_IMAGE_CORRUPT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - MEMORY_IMAGE_CORRUPT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA2: MEMORY\_IMAGE\_CORRUPT
@@ -21,7 +19,7 @@ api_type:
 
 The MEMORY\_IMAGE\_CORRUPT bug check has a value of 0x000000A2. This bug check indicates that corruption has been detected in the image of an executable file in memory.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MEMORY\_IMAGE\_CORRUPT Parameters
 

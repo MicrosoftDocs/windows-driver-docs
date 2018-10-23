@@ -10,11 +10,8 @@ keywords:
 - sleep power management WDK KMDF
 - low-power states WDK KMDF
 - system sleeping states WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Idle Power-Down
@@ -44,7 +41,7 @@ If your device or component can be powered down when it is idle, the [*EvtDriver
     -   [*EvtDeviceDisarmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540860), which disables the device's ability (not the bus's ability) to respond to an external wake-up event
     -   [*EvtDeviceWakeFromS0Triggered*](https://msdn.microsoft.com/library/windows/hardware/ff540919), which informs the driver that the bus detected a wake signal.
 
-## <a href="" id="idle-conditions"></a>
+
 
 
 The framework considers the device to be idle, and starts counting idle time, when all of the following conditions are met:

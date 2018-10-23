@@ -8,17 +8,14 @@ keywords:
 - CoNDIS TAPI WDK networking , outgoing calls
 - outgoing calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Making Outgoing Calls
 
 
-## <a href="" id="ddk-making-outgoing-calls-ng"></a>
+
 
 
 If an application attempts to make an outgoing call, it must first open a line. A line is opened as a result of an application calling the TAPI **lineOpen** function. To place a telephony call on the previously opened line, the application calls the TAPI **lineMakeCall** function and passes a pointer to the specific destination address. If anything but default call-setup parameters are requested, the application also passes a pointer to a LINECALLPARAMS structure. If the application uses default call-setup parameters, **lineMakeCall** provides those parameters in a LINECALLPARAMS structure. Members of this structure specify how the telephony call should be set up.

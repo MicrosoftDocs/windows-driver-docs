@@ -3,17 +3,15 @@ title: amli dns
 description: The amli dns extension displays an ACPI namespace object.
 ms.assetid: 7db937ba-109f-4f4e-8dd3-4aa5d0dc13b2
 keywords: ["amli dns Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
 - amli dns
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !amli dns
@@ -23,8 +21,8 @@ The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
 
-```
-!amli dns [/s] [Name | Address]
+```dbgcmd
+    !amli dns [/s] [Name | Address]
 ```
 
 ## <span id="ddk__amli_dns_dbg"></span><span id="DDK__AMLI_DNS_DBG"></span>Parameters
@@ -58,7 +56,7 @@ Without the **/s** parameter, this extension is equivalent to the [**!nsobj**](-
 
 Here are some examples. The following command displays the namespace for the object **bios**:
 
-```
+```console
 AMLI(? for help)-> dns \bios
 
 ACPI Name Space: \BIOS (80E5F378)
@@ -67,7 +65,7 @@ OpRegion(BIOS:RegionSpace=SystemMemory,Offset=0xfcb07500,Len=2816)
 
 The following command displays the namespace for the object \_BST, and the tree subordinate to it:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.isa.bat1._bst
 
 ACPI Name Space: \_SB.PCI0.ISA.BAT1._BST (c29c2044)
@@ -76,25 +74,25 @@ Method(_BST:Flags=0x0,CodeBuff=c29c20a5,Len=103)
 
 To display the namespace for the device BAT1, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.isa.bat1
 ```
 
 To display the namespace of everything subordinate to the DOCK device, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.dock
 ```
 
 To display the namespace subordinate to the \_DCK method, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.dock._dck
 ```
 
 To display the entire namespace, type:
 
-```
+```console
 kd> !amli dns
 ```
 
@@ -102,7 +100,6 @@ kd> !amli dns
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!amli%20dns%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

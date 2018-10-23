@@ -6,17 +6,14 @@ ms.assetid: da2f6161-072a-4d3c-94a8-1020520de524
 keywords:
 - block macros WDK GPD files
 - referencing macros
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Block Macros
 
 
-## <a href="" id="ddk-block-macros-gg"></a>
+
 
 
 A block macro is used to delimit a set of GPD file entries that you want to insert repeatedly into a GPD file. You can include any entry type in a block macro definition, such as feature and option statements, attribute specifications, and references to value macros or other block macros.
@@ -58,7 +55,7 @@ where *BlockMacroName* is a unique name, and *BlockMacroBody* is a set of one or
 
 For example, you might define a block macro named EnvelopeDefaults, which is defined as follows:
 
-```
+```cpp
 *BlockMacro: EnvelopeDefaults
 {
     *PrintableArea: PAIR(4646, 6738)
@@ -88,7 +85,7 @@ where *BlockMacroName* is a unique name, previously specified in the **\*BlockMa
 
 For example, to reference the EnvelopeDefaults macro within an option specification, you could use the following entries:
 
-```
+```cpp
 *Option: Env9
 {
     *InsertBlock: =EnvelopeDefaults
@@ -100,7 +97,5 @@ For example, to reference the EnvelopeDefaults macro within an option specificat
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Block%20Macros%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

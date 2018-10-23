@@ -6,11 +6,8 @@ keywords:
 - sending datagrams
 - datagram sockets WDK Winsock Kernel
 - WskSendTo
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Data over a Datagram Socket
@@ -20,7 +17,7 @@ After a Winsock Kernel (WSK) application has bound a datagram socket to a local 
 
 The following code example shows how a WSK application can send a datagram over a datagram socket.
 
-```
+```C++
 // Prototype for the send datagram IoCompletion routine
 NTSTATUS
   SendDatagramComplete(

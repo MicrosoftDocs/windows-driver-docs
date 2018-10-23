@@ -10,11 +10,8 @@ keywords:
 - troubleshooting GDL parsing WDK
 - GDL WDK , parsing errors
 - GDL WDK , errors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Troubleshooting GDL Parsing
@@ -63,13 +60,13 @@ Solution: Xpath assumes that element names without a namespace prefix refer to t
 
 To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is http://schemas.microsoft.com/2002/print/gdl/1.0 so the call to setProperty might look like the following code example.
 
-```
+```cpp
 XMLDoc->setProperty(L"SelectionNamespaces", "xmlns:gdl=\"http://schemas.microsoft.com/2002/print/gdl/1.0\"");
 ```
 
 The second argument in the preceding example is actually a Variant, but this added complexity is omitted for simplicity. The Xpath query must now explicitly reference the namespace prefix gdl when referencing elements in the default namespace. The query then becomes the following code example.
 
-```
+```cpp
 selectSingleNode("/gdl:SnapshotRoot/gdl:GDL_ATTRIBUTE")
 ```
 
@@ -90,7 +87,5 @@ Solution: The \#Precompiled directive might actually reside in the preface itsel
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Troubleshooting%20GDL%20Parsing%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

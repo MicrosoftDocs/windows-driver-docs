@@ -6,17 +6,14 @@ keywords:
 - SetupAPI functions WDK , guidelines
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guidelines for Using SetupAPI
 
 
-## <a href="" id="ddk-guidelines-for-using-setupapi-dg"></a>
+
 
 
 The following are guidelines for using the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) (**Setup***Xxx*) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx*) that are provided by SetupAPI:

@@ -6,17 +6,14 @@ ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Master Units
 
 
-## <a href="" id="ddk-master-units-gg"></a>
+
 
 
 Most printers support commands with a variety of horizontal and vertical resolutions. For example, the Immediate Line Feed command for a particular printer might provide a resolution of 1/288th of an inch, while the same printer might support a vertical graphics resolution of 1/96th of an inch. Likewise, this printer might also provide horizontal resolutions of 1/80th, 1/160th, and 1/320th of an inch.
@@ -50,13 +47,13 @@ To specify a printer's master units, use the \***MasterUnits** attribute. The at
 
 where *X\_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y\_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
 
-```
+```cpp
 *MasterUnits: PAIR(320, 576)
 ```
 
 Generally, position and size values used in GPD file entries must be specified in master units. For example, to specify that the maximum custom page size for our example printer is 9 inches by 12 inches, the following entry would be used, where 9x320=2880 and 12x576=6912:
 
-```
+```cpp
 *MaxSize: PAIR(2880, 6912)
 ```
 
@@ -64,7 +61,7 @@ When calculating values for master units, use only the device resolutions that y
 
 If your printer supports [cursor commands](cursor-commands.md) for moving the cursor position, then the values specified for the \***XMoveUnit** and \***YMoveUnit**[cursor attributes](cursor-attributes.md) must be included in master unit calculations. Suppose, for example, that a GPD file contains the following entries:
 
-```
+```cpp
 *XMoveUnit: 60
 *YMoveUnit: 60
 ```
@@ -76,7 +73,5 @@ When calculating this printer's master units, 1/60th of an inch must be included
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Master%20Units%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

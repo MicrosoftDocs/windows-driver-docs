@@ -5,17 +5,14 @@ ms.assetid: 0819ef06-5715-4814-a1ed-ddc757728ec4
 keywords:
 - miniport drivers WDK networking , OID requests
 - OIDs WDK networking , miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling OID Requests In a Miniport Adapter
 
 
-## <a href="" id="ddk-handling-oid-requests-in-a-miniport-adapter-ng"></a>
+
 
 
 NDIS calls a miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function to submit an OID request to query or set information in the driver. NDIS calls the *MiniportOidRequest* function either on its own behalf or on behalf of an overlying driver that called the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) or [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function.

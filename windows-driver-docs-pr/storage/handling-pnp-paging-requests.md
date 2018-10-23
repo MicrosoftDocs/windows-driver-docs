@@ -8,11 +8,8 @@ keywords:
 - filter drivers WDK storage , PnP
 - SFD WDK storage , PnP
 - PnP WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Paging Requests
@@ -71,7 +68,7 @@ G. End Synchronization (KeSetEvent(PagingCountEvent, ...)).
 
 The sections marked by letters (*//A*, *//B*, etc.) in the following code sample map to the letters of the outline above.
 
-```
+```cpp
 case DeviceUsageTypePaging: { 
     BOOLEAN setPageable = FALSE; 
     BOOLEAN addPageFile = irpStack -> 
@@ -134,6 +131,5 @@ case DeviceUsageTypePaging: {
  
 
 
---------------------
 
 

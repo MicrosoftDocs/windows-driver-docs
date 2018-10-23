@@ -3,17 +3,14 @@ title: Locking and Unlocking Best Practices
 author: windows-driver-content
 description: Locking and Unlocking Best Practices
 ms.assetid: cfa45c0d-4e92-4455-a8f6-17d4806f9c36
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/18/2018
+ms.localizationpriority: medium
 ---
 
 # Locking and Unlocking Best Practices
 
 
-## <a href="" id="ddk-locking-and-unlocking-best-practices-si"></a>
+
 
 
 Locking for the STI portion of a WIA driver needs special attention. Even though an application can access the published STI interfaces directly, such direct access to the device can be misused. Locking techniques that are implemented improperly can leave a device open to a denial of service (DoS) attack.
@@ -28,7 +25,7 @@ The following list contains precautions and guidelines you should follow when us
 
 -   TWAIN drivers that use STI use the [**IStiUSD::LockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543829) method to control access to the device. When a TWAIN driver uses STI, the TWAIN driver is responsible for controlling lock times.
 
--   If you are creating a driver for Windows 98 or Windows 2000, you can create it so that it implements only the **IStiUSD** interface methods. The disadvantage of this approach is that an application can call **IStiUSD::LockDevice** directly, thereby locking the device for exclusive use by the application. The Windows Hardware Quality Lab does not certify drivers that use this technique for Windows XP and later; such drivers can be installed only as unsigned drivers.
+-   You can create it so that it implements only the **IStiUSD** interface methods. The disadvantage of this approach is that an application can call **IStiUSD::LockDevice** directly, thereby locking the device for exclusive use by the application. The Windows Hardware Quality Lab does not certify drivers that use this technique; such drivers can be installed only as unsigned drivers.
 
 ### For WIA Drivers
 
@@ -49,7 +46,5 @@ The following list contains precautions and guidelines you should follow when wo
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Locking%20and%20Unlocking%20Best%20Practices%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

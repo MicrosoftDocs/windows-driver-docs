@@ -6,11 +6,8 @@ ms.assetid: 29d855cd-cca6-486b-86d9-f74810ae12c1
 keywords:
 - contexts WDK file system minifilter , releasing
 - releasing contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Releasing Contexts
@@ -41,7 +38,7 @@ Note that the *OldContext* pointer returned by **FltSet***Xxx***Context** and th
 
 In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine creates and sets an instance context and then calls [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314):
 
-```
+```cpp
 status = FltAllocateContext(
            FltObjects->Filter,           //Filter
            FLT_INSTANCE_CONTEXT,         //ContextType
@@ -72,6 +69,5 @@ If the call to [**FltSetInstanceContext**](https://msdn.microsoft.com/library/wi
  
 
 
---------------------
 
 

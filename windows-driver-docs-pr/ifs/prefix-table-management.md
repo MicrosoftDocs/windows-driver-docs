@@ -9,11 +9,8 @@ keywords:
 - prefix tables WDK network redirectors
 - names WDK RDBSS
 - version stamps WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Prefix Table Management
@@ -132,6 +129,5 @@ Starting with Windows Server 2003, the routines mentioned in the previous table
  
 
 
---------------------
 
 

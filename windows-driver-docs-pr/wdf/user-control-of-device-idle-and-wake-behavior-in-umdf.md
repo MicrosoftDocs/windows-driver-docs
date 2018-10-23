@@ -10,11 +10,8 @@ keywords:
 - idle power-down capabilities WDK UMDF , user control
 - wake-up capabilities WDK UMDF
 - wake-up capabilities WDK UMDF , user control
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User Control of Device Idle and Wake Behavior in UMDF

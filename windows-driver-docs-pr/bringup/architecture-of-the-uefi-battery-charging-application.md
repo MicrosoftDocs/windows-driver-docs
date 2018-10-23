@@ -3,11 +3,8 @@ title: Architecture of the UEFI battery charging application
 author: windows-driver-content
 description: Architecture of the UEFI battery charging application provided by Microsoft
 ms.assetid: eabac2ec-6e2f-448f-9793-117e12c288d9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Architecture of the UEFI battery charging application provided by Microsoft
@@ -246,7 +243,7 @@ The following table illustrates how the UEFI battery charging application reacts
 
  
 
-## <a href="" id="ux"></a>User experience
+## User experience
 
 
 The following diagram shows how the UEFI battery charging application draws the UI to the screen if there is not enough charge in the battery, or if the device is in *power-off charging mode*.
@@ -266,6 +263,5 @@ The following steps describe how the application draws the UI to the screen:
  
 
 
---------------------
 
 

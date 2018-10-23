@@ -2,11 +2,8 @@
 Description: This section describes tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.
 title: Testing USB hardware, drivers, and apps in Windows
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Testing USB hardware, drivers, and apps in Windows
@@ -40,7 +37,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="odd">
 <td><p>[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</p></td>
-<td><p>The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
+<td><p>The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
 </tr>
 <tr class="even">
 <td><p>[USB Type-C manual interoperability test procedures](type.md)</p></td>
@@ -52,7 +49,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="even">
 <td><p>[How to run stress and transfer performance tests for MUTT devices](how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md)</p></td>
-<td><p>Read how to run stress and transfer and Super MUTT performance tests.</p>
+<td><p>Read how to run stress and transfer and SuperMUTT performance tests.</p>
 <p>Stress and transfer tests are geared towards saturating the bus protocol and the host controller software. These tests perform several simultaneous I/O transfers and cancellations to the MUTT device. The MUTT firmware is programmed to fail transfers during these tests. These failures emulate error conditions that the controller or USB driver stack are exposed to under stressful USB conditions.</p></td>
 </tr>
 <tr class="odd">
@@ -66,7 +63,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="odd">
 <td><p>[Test USB hubs with MUTT devices](how-to-run-hub-testing-with-the-mutt-device.md)</p></td>
-<td><p>The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.</p></td>
+<td><p>The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT Pack.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Test USB host controllers with MUTT devices](how-to-run-controller-and-device-testing-with-the-mutt-device.md)</p></td>
@@ -77,8 +74,8 @@ This section describes tools that you can use to test your USB hardware or softw
 <td><p>The goal of device testing is to test device usage against various hub scenarios and systems power states. The MUTT Pack and SuperMUTT Pack devices can provide a way to expose the device to connect/disconnect scenarios across different hub and system power state scenarios. Test the device when it is attached to a USB 2.0 and 3.0 hubs in the MUTT Pack and SuperMUTT Pack devices, respectively.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)</p></td>
-<td><p>The Windows Hardware Certification Kit (HCK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. These tests cover basic device functionality, reliability, and compatibility with Windows.</p></td>
+<td><p>[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)</p></td>
+<td><p>The Windows Hardware Lab Kit (HLK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. These tests cover basic device functionality, reliability, and compatibility with Windows.</p></td>
 </tr>
 </tbody>
 </table>
@@ -88,7 +85,5 @@ This section describes tools that you can use to test your USB hardware or softw
 ## Related topics
 [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Testing%20USB%20hardware,%20drivers,%20and%20apps%20in%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -4,17 +4,14 @@ description: Differences in Initialization
 ms.assetid: 1b19e30d-3c10-4b97-9bb4-3233f7f2a195
 keywords:
 - initializing connection-oriented protocols
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Differences in Initialization
 
 
-## <a href="" id="ddk-differences-in-initialization-ng"></a>
+
 
 
 A call manager is an NDIS protocol; therefore, it follows the initialization sequence for a connection-oriented protocol, but with one additional step. In its [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) handler, immediately after completing the initialization steps for a connection-oriented protocol, a call manager must register an address family by calling [**NdisCmRegisterAddressFamilyEx**](https://msdn.microsoft.com/library/windows/hardware/ff561685). The call to **NdisCmRegisterAddressFamilyEx**, in which a call manager registers its call manager functions, identifies the protocol as a call manager. The call manager must register an address family for each NIC to which it binds itself.

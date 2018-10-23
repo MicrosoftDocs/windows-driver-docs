@@ -3,17 +3,15 @@ title: Bug Check 0x191 PF_DETECTED_CORRUPTION
 description: The PF_DETECTED_CORRUPTION bug check has a value of 0x00000191.
 ms.assetid: 570D22A7-E3EB-4A53-9188-640907FF39A5
 keywords: ["Bug Check 0x191 PF_DETECTED_CORRUPTION", "PF_DETECTED_CORRUPTION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PF_DETECTED_CORRUPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x191: PF\_DETECTED\_CORRUPTION
@@ -21,7 +19,7 @@ api_type:
 
 The PF\_DETECTED\_CORRUPTION bug check has a value of 0x00000191.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PF\_DETECTED\_CORRUPTION Parameters
 

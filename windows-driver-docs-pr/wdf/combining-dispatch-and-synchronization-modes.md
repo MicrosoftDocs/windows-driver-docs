@@ -12,11 +12,8 @@ keywords:
 - sequential dispatch mode WDK UMDF
 - parallel dispatch mode WDK UMDF
 - manual dispatch mode WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Combining Dispatch and Synchronization Modes

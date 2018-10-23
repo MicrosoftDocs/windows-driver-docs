@@ -10,11 +10,8 @@ keywords:
 - I/O WDK file systems
 - buffers WDK file systems
 - disclosure WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Information Disclosure
@@ -46,6 +43,5 @@ Because of their unique role in managing and protecting information, file system
  
 
 
---------------------
 
 

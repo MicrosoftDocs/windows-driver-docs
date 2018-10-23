@@ -1,18 +1,14 @@
 ---
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/19/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Introduction to Time Travel Debugging objects
+# Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
@@ -23,7 +19,7 @@ There are TTD extensions that add data to the *Session* and *Process* data model
 ## Process Objects
 The primary objects added to *Process* objects can be found in the *TTD* namespace off of any *Process* object. For example, `@$curprocess.TTD`.
 
-### Children
+### Properties
 | Object | Description |
 | --- | --- |
 | Lifetime | A [TTD range object](time-travel-debugging-range-objects.md) describing the lifetime of the entire trace. |
@@ -47,6 +43,9 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 | --- | --- |
 | Data.Heap() | A collection of [heap objects](time-travel-debugging-heap-objects.md) that were allocated during the trace. Note that this is a function that does computation, so it takes a while to run.|
 | Calls() | Returns a collection of [calls objects](time-travel-debugging-calls-objects.md) that match the input string. The input string can contain wildcards. Note that this is a function that does computation, so it takes a while to run.  |
+| Memory() | This is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of [memory objects](time-travel-debugging-memory-objects.md). Note that this is a function that does computation, so it takes a while to run.  |
+
+
 
 ## Examples
 
@@ -54,16 +53,15 @@ The primary objects added to *Session* objects can be found in the *TTD* namespa
 
 This LINQ query displays all of the exceptions in the trace.
 
-```
+```dbgcmd
 dx @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception) 
-
 ```
 
 ### Querying for the load event of a specific module
 
 Use the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command to display the loaded modules.
 
-```
+```dbgcmd
 0:000> lm
 start    end        module name
 012b0000 012cf000   CDog_Console   (deferred)             
@@ -79,7 +77,7 @@ start    end        module name
 
 Then use the following dx command to see at what position in the trace a specific module was loaded.
 
-```
+```dbgcmd
 dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
 @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
     [0x0]            : Module Loaded at position: A:0 
@@ -87,7 +85,7 @@ dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleLoaded").Where(t => t.Mod
 
 This LINQ query displays the load event(s) of a particular module.
 
-```
+```dbgcmd
 0:000> dx @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll")) 
 @$curprocess.TTD.Events.Where(t => t.Type == "ModuleUnloaded").Where(t => t.Module.Name.Contains("ntdll.dll"))                 
     [0x0]            : Module Unloaded at position: FFFFFFFFFFFFFFFE:0
@@ -99,7 +97,7 @@ The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 Use this dx command to display all of the events in the trace in grid format (-g).
 
-```
+```dbgcmd
 0:000> dx -g @$curprocess.TTD.Events
 ==================================================================================================================================================================================================
 =                                                          = (+) Type            = (+) Position          = (+) Module                                                   = (+) Thread             =
@@ -136,7 +134,7 @@ Click on any of the columns with a + sign to sort the output.
 
 Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 
-```
+```dbgcmd
 dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => t.Thread) 
 ===========================================================================================================
 =                             = (+) UniqueId = (+) Id    = (+) Lifetime                 = (+) ActiveTime  =
@@ -149,7 +147,7 @@ dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadCreated").Select(t => 
 
 Use this LINQ query to display in grid format, the time positions in the trace when threads were terminated (Type == "ThreadTerminated").
 
-```
+```dbgcmd
 0:000> dx -g @$curprocess.TTD.Events.Where(t => t.Type == "ThreadTerminated").Select(t => t.Thread) 
 ===========================================================================================================
 =                             = (+) UniqueId = (+) Id    = (+) Lifetime                 = (+) ActiveTime  =
@@ -165,7 +163,7 @@ Use this LINQ query to display in grid format, the time positions in the trace w
 
 Use this LINQ query to display in grid format, the approximate longest running threads in the trace.
 
-```
+```dbgcmd
 0:000> dx -g @$curprocess.TTD.Events.Where(e => e.Type == "ThreadTerminated").Select(e => new { Thread = e.Thread, ActiveTimeLength = e.Thread.ActiveTime.MaxPosition.Sequence - e.Thread.ActiveTime.MinPosition.Sequence }).OrderByDescending(t => t.ActiveTimeLength)
 =========================================================
 =          = (+) Thread              = ActiveTimeLength =
@@ -201,7 +199,6 @@ Use this LINQ query to display in grid format, the approximate longest running t
 
 ---
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Using%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

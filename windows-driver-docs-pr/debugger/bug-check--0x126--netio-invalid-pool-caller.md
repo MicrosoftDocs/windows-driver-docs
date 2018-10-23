@@ -3,17 +3,15 @@ title: Bug Check 0x126 NETIO_INVALID_POOL_CALLER
 description: The NETIO_INVALID_POOL_CALLER bug check has a value of 0x00000126. This indicates that an invalid pool request has been made to netio managed memory pool, e.g. FSB and MDL.
 ms.assetid: D155D39D-0E8B-4BA5-91B4-AF8F291F7F1F
 keywords: ["Bug Check 0x126 NETIO_INVALID_POOL_CALLER", "NETIO_INVALID_POOL_CALLER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - NETIO_INVALID_POOL_CALLER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x126: NETIO\_INVALID\_POOL\_CALLER
@@ -21,7 +19,7 @@ api_type:
 
 The NETIO\_INVALID\_POOL\_CALLER bug check has a value of 0x00000126. This indicates that an invalid pool request has been made to netio managed memory pool, e.g. FSB and MDL.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## NETIO\_INVALID\_POOL\_CALLER Parameters
 

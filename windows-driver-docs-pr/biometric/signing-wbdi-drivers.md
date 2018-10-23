@@ -2,17 +2,14 @@
 title: Signing WBDI Drivers
 description: Signing WBDI Drivers
 ms.assetid: 1BE83F60-4A04-457E-BD31-5E6F104A3505
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Signing WBDI Drivers
 
 
-The specific code-signing requirements for WBDI drivers depend on whether the WBDI driver is implemented by using the user-mode driver framework (UMDF), the kernel-mode driver framework (KMDF), or the Windows Driver Model (WDM). In addition to the catalog file that needs to be signed, certain dlls need to be signed with a specific attribute. For more information, see [Steps to submit a fingerprint driver](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-driver-signing).
+The specific code-signing requirements for WBDI drivers depend on whether the WBDI driver is implemented by using the user-mode driver framework (UMDF), the kernel-mode driver framework (KMDF), or the Windows Driver Model (WDM). In addition to the catalog file that needs to be signed, certain dlls need to be signed with a specific attribute. For more information, see [Steps to submit a fingerprint driver](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-driver-signing).
 
 All WBDI driver packages must be signed through the WHQL portal, to ensure that it has not been tampered with. Such a signature is required whether the driver runs in kernel mode or in user mode. You are not required to sign every individual file in the package. Instead, you create a catalog file that contains a hash value for every file in the package, and you sign the catalog file. The CatalogFile directive in the INF indicates the name of this file. For most WBDI drivers, the catalog file signature is the only type of signature that you need.
 
@@ -35,7 +32,6 @@ This topic does not cover the details of driver-signing requirements or procedur
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[biometric\biometric]:%20Signing%20WBDI%20Drivers%20%20RELEASE:%20%288/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

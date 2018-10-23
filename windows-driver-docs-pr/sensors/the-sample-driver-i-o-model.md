@@ -3,11 +3,8 @@ title: Sample driver I/O model
 author: windows-driver-content
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
 ms.assetid: 86DA1BDE-DD97-45CA-884D-12BD279BD12E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample driver I/O model
@@ -26,7 +23,7 @@ Windows 8.1 supports an SPB component as a class extension (running in kernel mo
 -   Implements tiered queue structure to manage simultaneous targets and bus-locking requests
 -   Translates buffers from user-mode to kernel-mode
 
-For more information see Simple Peripheral Bus on MSDN.
+For more information see [Simple Peripheral Bus](https://docs.microsoft.com/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
 
 ### SPB component and the sample driver
 
@@ -46,7 +43,7 @@ The SpbAccelerometer sample code interacts with the SPB component is found in Sp
 
  
 
-### General-purpose input/output (GPIO)
+## General-purpose input/output (GPIO)
 
 Windows 8.1 supports a GPIO class extension that resides at the same level as the kernel-mode SPB component. The extension allows for flexibility in the underlying hardware connections and GPIO locations while offering a standard interface for client drivers.
 
@@ -62,12 +59,12 @@ On SoC platforms GPIO pins are spread across the chip as well as exposed on othe
 
 The SpbAccelerometer sample relies on the GPIO component for interrupts. The GpioInt() element in the SpbAccelerometer.asl file defines the GPIO pin that’s connected to the ADXL345 as an interrupt resource.
 
-``` syntax
+```cpp
 //
 // Sample I2C and GPIO resources. Modify to match your
 // platform's underlying controllers and connections.
-// \_SB.I2C and \_SB.GPIO are paths to predefined I2C 
-// and GPIO controller instances. 
+// \_SB.I2C and \_SB.GPIO are paths to predefined I2C
+// and GPIO controller instances.
 //
 // Note: as written SpbAccelerometer requires a GPIO resource.
 //
@@ -99,7 +96,7 @@ If the interrupt processed by ::**OnInterruptIsr** corresponds to register 0x30 
 
 When the ::**RequestData** method processes the results of the read operations, it first combines the two bytes of data corresponding to each axis. Next, it applies a scale factor to obtain the actual acceleration value. (The scale factor is the result of dividing the range of G-forces (32) by the resolution (2^13). The result is .00390625.)
 
-```ManagedCPlusPlus
+```cpp
 // Get the data values as doubles
 SHORT xRaw, yRaw, zRaw;
 DOUBLE xAccel, yAccel, zAccel;
@@ -116,7 +113,7 @@ zAccel = (DOUBLE)zRaw * scaleFactor;
 
 The scale factor is determined by the settings in register 0x31 (DATA\_FORMAT).
 
-### Resource hub
+## Resource hub
 
 Windows 8.1 supports a resource hub that manages the connections for all devices and bus controllers. It makes sure the necessary start and stop ordering is maintained.
 
@@ -135,14 +132,14 @@ The hub is a component specifically aimed at SoC platforms and their flat device
 
 The **ResourceTemplate** section of SpbAccelerometer.asl specifies how the resources are connected.
 
-```Text
+```cpp
 Name(RBUF, ResourceTemplate()
 {
    //
     // Sample I2C and GPIO resources. Modify to match your
     // platform&#39;s underlying controllers and connections.
-    // \_SB.I2C and \_SB.GPIO are paths to predefined I2C 
-    // and GPIO controller instances. 
+    // \_SB.I2C and \_SB.GPIO are paths to predefined I2C
+    // and GPIO controller instances.
     //
     // Note: as written SpbAccelerometer requires a GPIO resource.
     //
@@ -157,7 +154,5 @@ Return(RBUF)
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Sample%20driver%20I/O%20model%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

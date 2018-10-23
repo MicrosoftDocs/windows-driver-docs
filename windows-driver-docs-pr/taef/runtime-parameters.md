@@ -2,11 +2,8 @@
 title: Runtime Parameters
 description: Runtime Parameters
 ms.assetid: 5CE5D2C3-F967-4318-B799-38CE8E8B15A6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Runtime Parameters
@@ -46,7 +43,7 @@ TAEF has built-in support for the following Runtime Parameters:
 
 Runtime Parameters are available in Setup, Cleanup and test methods. Use the RuntimeParameters::TryGetValue API to obtain them:
 
-```
+```cpp
 String value;
 VERIFY_SUCCEEDED(RuntimeParameters::TryGetValue(L"ParameterName3", value));
 ```
@@ -59,7 +56,7 @@ Runtime Parameters are available in setup and test methods. To obtain them, use 
 
 Example (class or assembly setup):
 
-```
+```cpp
 [ClassInitialize]
 
 public static void ClassSetup(TestContext context)
@@ -71,7 +68,7 @@ public static void ClassSetup(TestContext context)
 
 Similarly, from a test:
 
-```
+```cpp
 [TestMethod]
 
 public void VerifyRuntimeParametersTest()
@@ -95,13 +92,13 @@ public TestContext TestContext
 
 Runtime parameters are available in the setup, cleanup and the test methods. To retrieve runtime parameters, define and instantiate the RuntimeParameters object from Te.Common:
 
-```
+```cpp
 <object id="RuntimeParameters" progid="Te.Common.RuntimeParameters" />
 ```
 
 Once the RuntimeParameters object is instantiated, you can use RuntimeParameters.Contains("&lt;runtime parameter name&gt;") method to query if a runtime parameter was supplied and is available to the test. If it returns true, you can then use RuntimeParameters.GetValue("&lt;runtime parameter name&gt;") to retrieve it. Note that RuntimeParameters.GetValue(...) will throw if the runtime parameter is not available. The following example is from our VBScript example:
 
-```
+```cpp
        <script language="VBScript">
             <![CDATA[
                 Function TestOne()
@@ -126,7 +123,6 @@ Once the RuntimeParameters object is instantiated, you can use RuntimeParameters
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Runtime%20Parameters%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

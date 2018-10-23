@@ -3,11 +3,8 @@ title: Comparing UMDF 2 Functionality to KMDF
 author: windows-driver-content
 description: This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2 driver.
 ms.assetid: 9D4DD1A9-DA49-4132-B98F-AFEC8B427272
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Comparing UMDF 2 Functionality to KMDF
@@ -42,7 +39,7 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 <td align="left">[Supporting Functional Power States](supporting-functional-power-states.md)</td>
 </tr>
 <tr class="even">
-<td align="left">Access to WDM objects</td>
+<td align="left">Access to WDM objects and IRPs</td>
 <td align="left">[Obtaining WDM Information](obtaining-wdm-information.md)</td>
 </tr>
 <tr class="odd">
@@ -69,6 +66,10 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 <tr class="odd">
 <td align="left">Remove lock opt-in for I/O requests</td>
 <td align="left">[<strong>WdfDeviceInitSetRemoveLockOptions</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451095)</td>
+</tr>
+<tr class="even">
+<td align="left">WMI</td>
+<td align="left">[Introduction to WMI for KMDF Drivers](introduction-to-wmi-for-kmdf-drivers.md)</td>
 </tr>
 </tbody>
 </table>

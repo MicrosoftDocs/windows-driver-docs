@@ -5,11 +5,8 @@ description: Crash Dump and Hibernation Support
 ms.assetid: 6f5e6f4e-b734-45fe-80d5-fd7b81c9b329
 keywords:
 - crash dump WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Crash Dump and Hibernation Support
@@ -22,6 +19,5 @@ A Storport virtual miniport driver must support the [**SCSI\_REQUEST\_BLOCK**](h
  
 
 
---------------------
 
 

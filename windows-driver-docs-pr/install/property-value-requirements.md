@@ -4,11 +4,8 @@ description: Property Value Requirements
 ms.assetid: 05512f3d-fe64-4de0-848c-c983d883fc60
 keywords:
 - device properties WDK device installations , property value requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property Value Requirements
@@ -42,7 +39,7 @@ Windows enforces the device property value size requirements that are listed in 
 </tr>
 <tr class="even">
 <td align="left"><p>A [<strong>DEVPROP_TYPE_STRING</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543612) data type value, a [<strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543609) data type value, or a [<strong>DEVPROP_TYPE_STRING_INDIRECT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543613) data type value</p></td>
-<td align="left"><p>The specified size of the supplied data must be the number of bytes of a Unicode REG_SZ string, including the NULL-terminator.</p></td>
+<td align="left"><p>The specified size of the supplied data must be the number of bytes of a Unicode [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) string, including the NULL-terminator.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>A list of DEVPROP_TYPE_STRING-typed strings, a list of DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING-typed strings, or a DEVPROP_TYPE_STRING_LIST data type value</p></td>

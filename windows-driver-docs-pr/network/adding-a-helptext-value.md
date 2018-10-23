@@ -5,17 +5,14 @@ ms.assetid: fb29852c-5d47-4660-9fe4-dc8ae05449ff
 keywords:
 - add-registry-sections WDK networking , HelpText values
 - HelpText values WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding a HelpText Value
 
 
-## <a href="" id="ddk-adding-a-helptext-value-ng"></a>
+
 
 
 The INF file for a **NetTrans**, **NetClient**, or **NetService** network component that is visible in a user interface should add a **HelpText** value (REG\_SZ) to the component's **Ndi** key.
@@ -32,7 +29,7 @@ The **HelpText** value is a localizable string that explains how the component b
 
 The following is an example of an *add-registry-section* that adds a **HelpText** value to the **Ndi** key:
 
-```
+```INF
 [MS_Protocol.ndi_reg]
 HKR, Ndi, HelpText, 0, %MyTransport_Help%
 ```

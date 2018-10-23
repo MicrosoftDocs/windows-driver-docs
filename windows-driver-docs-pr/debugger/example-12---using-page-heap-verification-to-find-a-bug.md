@@ -2,11 +2,9 @@
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
 ms.assetid: aa3f5c53-8522-48be-a3cd-49b740803fe3
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 10/12/2018
+ms.localizationpriority: medium
 ---
 
 # Example 12: Using Page Heap Verification to Find a Bug
@@ -23,7 +21,7 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
 
 The following command enables standard page heap verification for pheap-buggy.exe:
 
-```
+```console
 gflags /p /enable pheap-buggy.exe
 ```
 
@@ -31,13 +29,13 @@ gflags /p /enable pheap-buggy.exe
 
 The following command lists the image files for which page heap verification is enabled:
 
-```
+```console
 gflags /p
 ```
 
 In response, GFlags displays the following list of programs. In this display, **traces** indicates standard page heap verification, and **full traces** indicates full page heap verification. In this case, pheap-buggy.exe is listed with **traces**, indicating that standard page heap verification is enabled, as intended.
 
-```
+```console
 pheap-buggy.exe: page heap enabled with flags (traces )
 ```
 
@@ -45,13 +43,13 @@ pheap-buggy.exe: page heap enabled with flags (traces )
 
 The following command runs the **CorruptAfterEnd** function of pheap-buggy.exe in NTSD with the **-g** (ignore initial breakpoint) and **-x** (set second-chance break on access violation exceptions) parameters:
 
-```
-ntsd -g -x pheap-buggy /CorruptAfterEnd
+```console
+ntsd -g -x pheap-buggy CorruptAfterEnd
 ```
 
 When the application fails, NTSD generates the following display, which indicates that it detected an error in pheap-buggy.exe:
 
-```
+```dbgcmd
 ===========================================================
 VERIFIER STOP 00000008: pid 0xAA0: corrupted suffix pattern
 
@@ -77,7 +75,7 @@ The "corrupted suffix pattern" message indicates that the application violated t
 
 In the next step, use the addresses that NTSD reported to locate the function that caused the error. The next two commands turn on line number dumping in the debugger and display the call stack with line numbers.
 
-```
+```dbgcmd
 C:\>.lines
 
 Line number information will be loaded 
@@ -107,7 +105,7 @@ The most likely cause of this error is that the program wrote past the end of th
 
 Unlike standard page heap verification, full page heap verification can catch the misuse of this heap buffer as soon as it occurs. The following command enables full page heap verification for pheap-buggy.exe:
 
-```
+```console
 gflags /p /enable pheap-buggy.exe /full
 ```
 
@@ -115,13 +113,13 @@ gflags /p /enable pheap-buggy.exe /full
 
 The following command lists the programs for which page heap verification is enabled:
 
-```
+```console
 gflags /p
 ```
 
 In response, GFlags displays the following list of programs. In this display, **traces** indicates standard page heap verification, and **full traces** indicates full page heap verification. In this case, pheap-buggy.exe is listed with **full traces**, indicating that full page heap verification is enabled, as intended.
 
-```
+```console
 pheap-buggy.exe: page heap enabled with flags (full traces )
 ```
 
@@ -129,13 +127,13 @@ pheap-buggy.exe: page heap enabled with flags (full traces )
 
 The following command runs the **CorruptAfterEnd** function of pheap-buggy.exe in the NTSD debugger with the **-g** (ignore initial breakpoint) and **-x** (set second-chance break on access violation exceptions) parameters:
 
-```
-ntsd -g -x pheap-buggy /CorruptAfterEnd
+```console
+ntsd -g -x pheap-buggy CorruptAfterEnd
 ```
 
 When the application fails, NTSD generates the following display, which indicates that it detected an error in pheap-buggy.exe:
 
-```
+```console
 Page heap: process 0x5BC created heap @ 00880000 (00980000, flags 0x3)
 ModLoad: 77db0000 77e8c000   kernel32.dll
 ModLoad: 78000000 78046000   MSVCRT.dll
@@ -154,7 +152,7 @@ With full page heap verification enabled, the debugger breaks at an access viola
 
 The numbered call stack trace appears as follows: The line displaying the problem appears in bold text.
 
-```
+```console
 ChildEBP RetAddr  Args to Child
 0006ff3c 01001450 00000000 00000001 0006ffc0 pheap-buggy!TestCorruptAfterEnd+0x1f [d:\nttest\base\testsrc\kernel\rtl\pageheap\pheap-buggy.cxx @ 184]
 0006ff4c 0100157f 00000002 00c16fd0 00b70eb0 pheap-buggy!main+0xa9 [d:\nttest\base\testsrc\kernel\rtl\pageheap\pheap-buggy.cxx @ 69]
@@ -169,7 +167,7 @@ The stack trace shows that the problem occurs in line 184 of pheap-buggy.exe. Be
 
 A quick inspection reveals the cause of the problem: The program tries to write to the 257th byte (0x101) of a 256-byte (0x100) buffer, a common off-by-one error.
 
-```
+```console
 *((PCHAR)Block + 0x100) = 0;
 ```
 
@@ -177,7 +175,6 @@ A quick inspection reveals the cause of the problem: The program tries to write 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Example%2012:%20%20Using%20Page%20Heap%20Verification%20to%20Find%20a%20Bug%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

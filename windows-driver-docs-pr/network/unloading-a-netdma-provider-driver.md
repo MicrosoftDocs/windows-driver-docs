@@ -5,11 +5,8 @@ ms.assetid: 2c7a0cbd-0a88-4e10-8eba-0b7e6e42c4fc
 keywords:
 - NetDMA provider drivers WDK networking , unloading
 - unloading NetDMA provider drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unloading a NetDMA Provider Driver
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-unloading-a-netdma-provider-driver-ng"></a>
+
 
 
 The Plug and Play (PnP) manager calls a NetDMA provider driver's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine after all of the dynamic memory access (DMA) engines that the driver manages have been removed. For more information about removing DMA engines, see [Deregistering a NetDMA Provider](deregistering-a-netdma-provider.md).

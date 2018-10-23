@@ -5,11 +5,8 @@ ms.assetid: d267b450-0e96-44d5-b034-455bdc4c9f8c
 keywords:
 - NetDMA provider drivers WDK networking , initializing
 - initializing NetDMA provider drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a NetDMA Provider Driver
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-initializing-a-netdma-provider-driver-ng"></a>
+
 
 
 When a NetDMA device becomes available, the Plug and Play (PnP) manager loads the NetDMA provider driver to manage the dynamic memory access (DMA) engine (if the driver is not already loaded). The PnP manager then calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine (which every driver must provide) after it loads the driver.

@@ -6,11 +6,8 @@ ms.assetid: 0915167a-f8ac-4222-bece-76d7fc8a3823
 keywords:
 - security WDK file systems , memory mapped files
 - memory mapped files WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Memory Mapped Files in a File System Filter Driver
@@ -26,6 +23,5 @@ A file system filter driver must be cognizant of the fact that files may be acce
  
 
 
---------------------
 
 

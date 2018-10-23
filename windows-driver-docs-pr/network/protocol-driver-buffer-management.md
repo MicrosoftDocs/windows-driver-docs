@@ -2,17 +2,14 @@
 title: Protocol Driver Buffer Management
 description: Protocol Driver Buffer Management
 ms.assetid: 1f91b58e-d432-46c8-994e-d95c3aadfe43
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Driver Buffer Management
 
 
-## <a href="" id="ddk-protocol-driver-buffer-management-ng"></a>
+
 
 
 A protocol driver must manage [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure pools and [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure pools for send operations. To create these pools, drivers call the following functions:

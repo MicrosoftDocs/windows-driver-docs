@@ -2,11 +2,8 @@
 title: Working with print notifications in a UWP device app
 description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
 ms.assetid: 39A06A8A-5603-44AB-8884-C12B8E2F1A45
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Working with print notifications in a UWP device app
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 In Windows 8.1, UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
 **Note**  The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
@@ -443,7 +440,6 @@ If no default print notification appears when expected...
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Working%20with%20print%20notifications%20in%20a%20Windows%20Store%20device%20app%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

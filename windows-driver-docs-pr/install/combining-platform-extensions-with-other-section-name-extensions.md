@@ -10,11 +10,8 @@ keywords:
 - install-section-name WDK INF files
 - decorated INF WDK
 - operating systems WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Combining Platform Extensions with Other Section Name Extensions

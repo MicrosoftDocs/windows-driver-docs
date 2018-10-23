@@ -3,11 +3,8 @@ title: Defining the accelerometer object
 author: windows-driver-content
 description: The sample driver treats the accelerometer as an object.
 ms.assetid: EA30C9E6-3DA1-44C8-89DA-6FA21BE3B226
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining the accelerometer object
@@ -43,7 +40,7 @@ The object supports a **ConnectInterrupt** method that creates a WUDF device int
 
 ### Supporting the report interval
 
-The sensor platform supports the notion of a report interval and allows applications to set this interval to values within a defined range. A Windows store app can set the interval for an Accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **SetReportInterval** method is called to pass the requested interval to the device's firmware.
+The sensor platform supports the notion of a report interval and allows applications to set this interval to values within a defined range. A Windows app can set the interval for an Accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **SetReportInterval** method is called to pass the requested interval to the device's firmware.
 
 The primary component responsible for the report interval is the client manager. The supporting code is found in the module ClientManager.cpp. The client manager maintains a list of connected clients, their subscription state, desired report interval, and desired change sensitivities. Whenever any of these change, the client manager computes the data update mode and lowest report interval and change sensitivity values. For more information about the report interval and change sensitivity, see the [Filtering data](filtering-data.md) topic.
 
@@ -69,7 +66,7 @@ The driver supports a **WriteRegister** method that it invokes internally when w
 
 The complete register map for the accelerometer is found within table 16 of the device's data sheet. The sample driver supports a subset of the values found in the register map. These supported values are found within the Adxl345.h header file:
 
-```ManagedCPlusPlus
+```cpp
 //
 // Register interface
 //
@@ -107,9 +104,7 @@ The complete register map for the accelerometer is found within table 16 of the 
 ```
 
 ## Related topics
-[SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)  
+[SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Defining%20the%20accelerometer%20object%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

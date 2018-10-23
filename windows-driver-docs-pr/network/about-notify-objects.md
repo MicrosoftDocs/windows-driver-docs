@@ -8,17 +8,14 @@ keywords:
 - notifications WDK networking , about notify objects
 - network configuration subsystem WDK
 - subsystem WDK network configuration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # About Notify Objects
 
 
-## <a href="" id="ddk-about-notify-objects-ng"></a>
+
 
 
 A notify object processes notifications that the network configuration subsystem sends to the object on behalf of a specific network component. This network component owns the notify object. Network components that can own a notify object are:

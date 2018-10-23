@@ -9,17 +9,14 @@ keywords:
 - callback functions WDK property page
 - PSPCB_CREATE
 - PSPCB_RELEASE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property Page Callback Function
 
 
-## <a href="" id="ddk-property-page-callback-function-dg"></a>
+
 
 
 When a provider creates a property page for its device or device class, it supplies a pointer to a callback function. The callback function is called one time when the property page is created and again when it is about to be destroyed.

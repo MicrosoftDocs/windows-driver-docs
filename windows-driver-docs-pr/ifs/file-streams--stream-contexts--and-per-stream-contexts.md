@@ -12,11 +12,8 @@ keywords:
 - stream control blocks WDK file system
 - SCB WDK file system
 - stream context WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File Streams, Stream Contexts, and Per-Stream Contexts
@@ -50,6 +47,5 @@ To query whether the file system supports per-stream contexts for the file strea
  
 
 
---------------------
 
 

@@ -14,11 +14,8 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The V\_NET\_ROOT Structure
@@ -29,7 +26,7 @@ ms.technology: windows-devices
 
 The V\_NET\_ROOT structure provides a mechanism for mapping into a share (for example, a user drive mapping that points below the root of the associated share point). The V\_NET\_ROOT name can be in one of the following formats:
 
-```
+```cpp
 \server\share\d1\d2
 \;m:\server\share\d1\d2
 ```
@@ -61,6 +58,5 @@ There can be a delay between these two actions, and a field in the V\_NET\_ROOT 
  
 
 
---------------------
 
 

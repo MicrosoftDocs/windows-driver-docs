@@ -4,17 +4,14 @@ description: Receiving Data in a Filter Driver
 ms.assetid: 4f6d44e9-c351-452d-aadf-505e6bb30fc2
 keywords:
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in a Filter Driver
 
 
-## <a href="" id="ddk-receiving-data-in-a-filter-driver-ng"></a>
+
 
 
 Filter drivers can initiate receive indications or filter receive indications from underlying drivers. When a miniport driver calls the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function, NDIS submits the specified [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure to the lowest overlying filter module in the driver stack.

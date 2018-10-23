@@ -2,11 +2,8 @@
 title: Installing Test Certificates
 description: Installing Test Certificates
 ms.assetid: 4c306390-32cc-4c7a-9f61-48e8af385a6d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Test Certificates
@@ -20,7 +17,7 @@ The simplest way to add a test certificate to the Trusted Root Certification Aut
 
 The following command-line uses Certmgr.exe to install, or add, the Contoso.com(test) certificate to the test computer's Trusted Root Certification Authorities certificate store:
 
-```
+```cpp
 certmgr.exe /add ContosoTest.cer /s /r localMachine root
 ```
 

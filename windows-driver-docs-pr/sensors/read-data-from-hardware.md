@@ -3,11 +3,8 @@ title: Read data from hardware
 author: windows-driver-content
 description: This topic shows you how the sample sensor driver reads data from the sensor hardware (the accelerometer) in response to read requests.
 ms.assetid: 4C01324D-3C4D-4028-A7DE-0AD8F2233071
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Read data from hardware
@@ -22,7 +19,8 @@ Typically the “top end” of the sensor driver is designed to be accessible to
 
 1. Click the *client.cpp* file to open it, and find the **OnInterruptIsr** function.
 2. Find the following code:
-```ManagedCPlusPlus
+
+```cpp
 // Read the Interrupt source
    BYTE IntSrcBuffer = 0;
    WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
@@ -33,8 +31,9 @@ Typically the “top end” of the sensor driver is designed to be accessible to
 The preceding code first acquires a lock on the device, and then it determines the source of the interrupt, using the **I2CSensorReadRegister** function. The code finally releases the lock on the device.
 
 3. Find the following code:
-```ManagedCPlusPlus
-// Create work item   
+
+```cpp
+// Create work item
    InterruptRecognized = TRUE;
 
    BOOLEAN WorkItemQueued = WdfInterruptQueueWorkItemForIsr(Interrupt);
@@ -49,7 +48,8 @@ After the sensor driver successfully determines the source of the interrupt, the
 The sample sensor driver uses **GetData** to retrieve the sensor instance, acquire a lock on the device, and then read the sensor data. When the **GetData** function call returns, the lock is released.
 
 1. Within the *client.cpp* file, find the **OnInterruptWorkItem** function. Then within that function, review the following code:
-```ManagedCPlusPlus
+
+```cpp
 // Invoke the function that Reads the device data
    WdfInterruptAcquireLock(Interrupt);
    Status = pAccDevice->GetData();
@@ -57,7 +57,7 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 ```
 
 2. Find the **GetData** function, and find the following code:
-```ManagedCPlusPlus
+```cpp
 // Read the device data
    BYTE DataBuffer[ADXL345_DATA_REPORT_SIZE_BYTES];
    WdfWaitLockAcquire(m_I2CWaitLock, NULL);
@@ -68,7 +68,7 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 The preceding code sets aside a buffer of size *DataBuffer*, and reads the device data into that buffer, via an I2C connection.
 
 3. Find the following code:
-```ManagedCPlusPlus
+```cpp
 // Add timestamp
    FILETIME Timestamp = {};
    GetSystemTimeAsFileTime(&Timestamp);
@@ -85,7 +85,5 @@ The preceding code adds a time stamp to the device data, then saves the data to 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Read%20data%20from%20hardware%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

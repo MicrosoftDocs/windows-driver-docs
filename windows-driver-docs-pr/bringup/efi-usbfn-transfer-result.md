@@ -3,11 +3,8 @@ title: EFI_USBFN_TRANSFER_RESULT
 author: windows-driver-content
 description: EFI_USBFN_TRANSFER_RESULT
 ms.assetid: d101b061-2a83-4bf8-9502-ccb6e56f5cea
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_TRANSFER\_RESULT
@@ -18,7 +15,7 @@ The **EFI\_USBFN\_TRANSFER\_RESULT** structure contains information about data t
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct _EFI_USBFN_TRANSFER_RESULT 
 {
     UINTN                         BytesTransferred;
@@ -57,6 +54,5 @@ The buffer that contains the transferred data.
  
 
 
---------------------
 
 

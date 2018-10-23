@@ -3,17 +3,15 @@ title: chkimg
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 ms.assetid: 8079676c-1138-4c60-95df-62fd270fee62
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - chkimg
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !chkimg
@@ -21,7 +19,7 @@ api_type:
 
 The **!chkimg** extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 
-```
+```dbgsyntax
 !chkimg [Options] [-mmw LogFile LogOptions] [Module]
 ```
 
@@ -200,7 +198,7 @@ All sections of the file are compared, except for sections that are discardable,
 
 When you include the **-d** option, **!chkimg** displays a summary of all mismatched areas while the scan is occurring. Each mismatch is displayed on two lines. The first line includes the start of the range, the end of the range, the size of the range, the symbol name and offset that corresponds to the start of the range, and the number of bytes since the last error (in parentheses). The second line is enclosed in brackets and includes the hexadecimal byte values that were expected, a colon, and then the hexadecimal byte values that were actually encountered in the image. If the range is longer than 8 bytes, only the first 8 bytes are shown before the colon and after the colon. The following example shows this situation.
 
-```
+```dbgcmd
 be000015-be000016  2 bytes - win32k!VeryUsefulFunction+15 (0x8)
      [ 85 dd:95 23 ]
 ```
@@ -209,13 +207,13 @@ Occasionally, a driver alters part of the Microsoft Windows kernel by using hook
 
 You can also use **!chkimg** together with the [**!for\_each\_module**](-for-each-module.md) extension to check the image of each loaded module. The following example shows this situation.
 
-```
+```dbgcmd
 !for_each_module !chkimg @#ModuleName 
 ```
 
 Suppose that you encounter a bug check, for example, and begin by using [**!analyze**](-analyze.md).
 
-```
+```dbgcmd
 kd> !analyze 
 ....
 BugCheck 1000008E, {c0000005, bf920e48, baf75b38, 0}
@@ -226,14 +224,14 @@ CHKIMG_EXTENSION: !chkimg !win32k
 
 In this example, the [**!analyze**](-analyze.md) output suggests that memory corruption has occurred and includes a CHKIMG\_EXTENSION line that suggests that Win32k.sys could be the corrupted module. (Even if this line is not present, you might consider possible corruption in the module on top of the stack.) Start by using **!chkimg** without any switches, as the following example shows.
 
-```
+```dbgcmd
 kd> !chkimg win32k
 Number of different bytes for win32k: 31
 ```
 
 The following example shows that there are indeed memory corruptions. Use **!chkimg -d** to display all of the errors for the Win32k module.
 
-```
+```dbgcmd
 kd> !chkimg win32k -d
     bf920e40-bf920e46  7 bytes - win32k!HFDBASIS32::vSteadyState+1f
         [ 78 08 d3 78 0c c2 04:00 00 00 00 00 01 00 ]
@@ -244,7 +242,7 @@ Number of different bytes for win32k: 31
 
 When you try to disassemble the corrupted image of the second section that is listed, the following output might occur.
 
-```
+```dbgcmd
 kd> u  win32k!HFDBASIS32::vHalveStepSize
 win32k!HFDBASIS32::vHalveStepSize:
 bf920e48 0000             add     [eax],al
@@ -259,7 +257,7 @@ bf920e58 8b510c           mov     edx,[ecx+0xc]
 
 Then, use **!chkimg -f**to fix the memory corruption.
 
-```
+```dbgcmd
 kd> !chkimg win32k -f
 Warning: Any detected errors will be fixed to what we expect!
 Number of different bytes for win32k: 31 (fixed)
@@ -267,7 +265,7 @@ Number of different bytes for win32k: 31 (fixed)
 
 Now you can disassemble the corrected view and see the changes that you have made.
 
-```
+```dbgcmd
 kd> u  win32k!HFDBASIS32::vHalveStepSize
 win32k!HFDBASIS32::vHalveStepSize:
 bf920e48 8b510c           mov     edx,[ecx+0xc]
@@ -284,7 +282,6 @@ bf920e59 d1fe             sar     esi,1
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!chkimg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

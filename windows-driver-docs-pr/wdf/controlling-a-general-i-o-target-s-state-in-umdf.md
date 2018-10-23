@@ -14,11 +14,8 @@ keywords:
 - remote I/O targets WDK UMDF
 - stopping I/O targets
 - restarting I/O targets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling a General I/O Target's State in UMDF

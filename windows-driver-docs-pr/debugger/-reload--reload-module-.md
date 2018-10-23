@@ -3,17 +3,15 @@ title: .reload (Reload Module)
 description: The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 ms.assetid: 750eb1a2-7af9-4f2d-81ca-9ea0fb157961
 keywords: ["Reload Module (.reload) command", "symbols, Reload Module (.reload) command", ".reload (Reload Module) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .reload (Reload Module)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .reload (Reload Module)
@@ -21,7 +19,7 @@ api_type:
 
 The **.reload** command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 
-```
+```dbgcmd
 .reload [Options] [Module[=Address[,Size[,Timestamp]]]] 
 .reload -?
 ```
@@ -133,7 +131,7 @@ If the image header is incorrect for some reason, such as the module being unloa
 
 The **.reload /u** command performs a broad search. The debugger first tries to match *Module* with an exact module name, regardless of path. If the debugger cannot find this match, *Module* is treated as the name of the loaded image. For example, if the HAL that resides in memory has the module name of halacpi.dll, both of the following commands unload its symbols.
 
-```
+```dbgcmd
 kd> .reload /u halacpi.dll
 
 kd> .reload /u hal
@@ -141,7 +139,7 @@ kd> .reload /u hal
 
 If you are performing user-mode debugging and want to load a module that is not part of the target application's module list, you must include the **/s** option, as the following example shows.
 
-```
+```dbgcmd
 0:000> .reload /u ntdll.dll
 Unloaded ntdll.dll
 
@@ -152,7 +150,6 @@ Unloaded ntdll.dll
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.reload%20%28Reload%20Module%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

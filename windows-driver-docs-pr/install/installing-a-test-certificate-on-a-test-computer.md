@@ -7,11 +7,8 @@ keywords:
 - installing test certificates WDK
 - test signing driver packages WDK , installing test certificates
 - certificate stores WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Test Certificate on a Test Computer

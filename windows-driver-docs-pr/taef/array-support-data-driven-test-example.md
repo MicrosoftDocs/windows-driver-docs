@@ -2,11 +2,8 @@
 title: Array Support Data Driven Test Example
 description: Array Support Data Driven Test Example
 ms.assetid: ECCDE395-C887-4485-8C8F-312EFCFD16A2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Array Support Data Driven Test Example
@@ -31,7 +28,7 @@ If any other data type is specified, the test throws a warning and considers it 
 
 The following example shows how to specify that the parameter is an array of one of the basic types. It is important to note that there are no default types allowed in the case of arrays - you must explictly specify the type and set the **Array** attribute for the parameter to be true.
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2  <Data>
 3    <Table Id="ArraySupportTable">
@@ -85,7 +82,7 @@ Now, take a look at the retrieval APIs.
 
 Array elements can be retrieved in native code, by using the **WEX::TestExecution::TestDataArray&lt;&gt;** template class. See the published header TestData.h for details. The **TestDataArray** class manages the lifetime of the array elements and provides useful APIs to retrieve specific values within the array:
 
-```
+```cpp
 1  namespace WEX { namespace TestExecution
 2  {
 3      template <typename T>
@@ -108,7 +105,7 @@ You can obtain the length of the array by calling **GetSize** and can get a spec
 
 The next example shows how to use these functions in the code. Consider the cpp file in the native example:
 
-```
+```cpp
 1  TestDataArray<int> sizes;
 2  if (SUCCEEDED(TestData::TryGetValue(L"size", sizes)))
 3  {
@@ -136,7 +133,7 @@ First, you define a local TestDataArray of the array type. In this case, **sizes
 
 If an array parameter is not specified in the XML Row at all, an attempt to retrieve the parameter fails. For example, if a Row looked like:
 
-```
+```cpp
        <Row>
          <Parameter Name="Color">
            <Value>White</Value>
@@ -149,7 +146,7 @@ Notice that the parameter **Size**, which is an array, is not specified in the R
 
 On the other hand, you can specify an empty array by specifying an empty parameter tag for **Size** as follows:
 
-```
+```cpp
        <Row>
          <Parameter Name="Size"></Parameter>
          <Parameter Name="Color">
@@ -166,7 +163,7 @@ In this case, an attempt to retrieve **size** would succeed, but the array size 
 
 Managed retrieval remains almost the same as before - only you need to make sure to retrieve the values into a local variable of the appropriate array type. Consider the following managed example:
 
-```
+```cpp
 1  Int32[] sizes = m_testContext.DataRow["Size"] as Int32[];
 2  foreach (int size in sizes)
 3  {
@@ -183,7 +180,7 @@ Managed retrieval remains almost the same as before - only you need to make sure
 
 Similar to the native retrieval, if an array parameter is not specified in the XML Row at all, an attempt to retrieve the parameter returns an object of type **System.DBNull**. For example, if a Row looked like:
 
-```
+```cpp
        <Row>
          <Parameter Name="Color">
            <Value>White</Value>
@@ -196,7 +193,7 @@ Notice that the parameter **Size**, which is an array, is not specified in the R
 
 On the other hand, you may specify an empty array by specifying an empty parameter tag for **Size** as follows:
 
-```
+```cpp
        <Row>
          <Parameter Name="Size"></Parameter>
          <Parameter Name="Color">
@@ -231,7 +228,6 @@ You can build more complex queries which say, for example, select only the test 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Array%20Support%20Data%20Driven%20Test%20Example%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

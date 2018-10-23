@@ -7,17 +7,14 @@ keywords:
 - ID mapping WDK netmap.inf
 - one-to-one ID mapping WDK networking
 - preupgrade IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # One-to-One ID Mapping
 
 
-## <a href="" id="ddk-one-to-one-id-mapping-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
@@ -30,7 +27,7 @@ An entry in an **Oem*Xxx*** section of a netmap.inf file that specifies one-to-o
 
 For example:
 
-```
+```cpp
 netservice=netservice_2000
 ```
 

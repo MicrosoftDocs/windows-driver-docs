@@ -3,17 +3,15 @@ title: Bug Check 0xC2 BAD_POOL_CALLER
 description: The BAD_POOL_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
 keywords: ["(Developer Content) Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - BAD_POOL_CALLER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # (Developer Content) Bug Check 0xC2: BAD\_POOL\_CALLER
@@ -21,7 +19,7 @@ api_type:
 
 The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## BAD\_POOL\_CALLER Parameters
 

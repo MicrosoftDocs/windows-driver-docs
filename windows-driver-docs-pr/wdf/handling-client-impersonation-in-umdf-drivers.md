@@ -3,11 +3,8 @@ title: Handling Client Impersonation in UMDF Drivers
 author: windows-driver-content
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver accesses protected resources, starting in UMDF version 2.
 ms.assetid: 02EA93CE-3C4D-4F6F-8E58-DD78EBDB19DE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Client Impersonation in UMDF Drivers
@@ -53,7 +50,7 @@ Therefore, if you want a kernel-mode driver to receive the client's user credent
 
 The following example shows how a UMDF driver might use the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT** flag to send a file creation request to an I/O target. The driver's INF file must also include the **UmdfImpersonationLevel** directive as described above.
 
-```
+```cpp
 WDFIOTARGET iotarget;
 WDF_REQUEST_SEND_OPTIONS options;
 NTSTATUS status;

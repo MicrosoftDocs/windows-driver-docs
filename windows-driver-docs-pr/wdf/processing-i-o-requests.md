@@ -7,17 +7,14 @@ keywords:
 - I/O requests WDK KMDF , processing
 - request objects WDK KMDF , processing I/O requests
 - request processing WDK KMDF , options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing I/O Requests
 
 
-## <a href="" id="ddk-processing-i-o-requests-df"></a>
+
 
 
 When a driver [receives](receiving-i-o-requests.md) an I/O request, it can:

@@ -3,17 +3,15 @@ title: ndiskd.pendingnbls
 description: The ndiskd.pendingnbls extension displays pending NBLs (NET_BUFFER_LISTs) that are in transit.
 ms.assetid: 9137B995-FCCA-4E25-85D3-FCB5B717EBDF
 keywords: ["ndiskd.pendingnbls Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.pendingnbls
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.pendingnbls
@@ -21,7 +19,7 @@ api_type:
 
 The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) that are in transit.
 
-```
+```console
 !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
 ```
 
@@ -46,7 +44,7 @@ Examples
 
 **!ndiskd.pendingnbls** can be passed the handle of an NDIS miniport, filter, or open. The following series of examples use a miniport handle. To see a list of all miniports and their associated minidrivers, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters. In the following example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffe00bc3f701a0. Its minidriver's handle is ffffe00bc51b9ae0.
 
-```
+```console
 0: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffe00bc6e12ae0   ffffe00bc6e4e1a0    Microsoft ISATAP Adapter #2
@@ -55,7 +53,7 @@ Examples
 
 To see the pending NBLs for a miniport, set a breakpoint on its minidriver's SendNetBufferListsHandler. Use the minidriver's handle to run the [**!ndiskd.minidriver -handle -handlers**](-ndiskd-minidriver.md) command to see a list of its handlers, then click the "bp" link to the right of the SendNetBufferListsHandler. You can alternatively enter the [**bp -handle**](bp--bu--bm--set-breakpoint-.md) command in the command line.
 
-```
+```console
 0: kd> !ndiskd.minidriver ffffe00bc51b9ae0 -handlers
 
 
@@ -86,7 +84,7 @@ HANDLERS
 
 After setting the breakpoint on the SendNetBufferListsHandler, enter the **g** command to let the debugee target machine run and hit the breakpoint.
 
-```
+```console
 0: kd> bp fffff80ae9611870
 0: kd> g
 Breakpoint 0 hit
@@ -100,7 +98,7 @@ The debugee target machine in this example was loading a web page when it hit th
 
  
 
-```
+```console
 0: kd> !ndiskd.pendingnbls ffffe00bc3f701a0
 
 PHASE 1/3: Found 20 NBL pool(s).                 
@@ -139,7 +137,6 @@ Search complete.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.pendingnbls%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

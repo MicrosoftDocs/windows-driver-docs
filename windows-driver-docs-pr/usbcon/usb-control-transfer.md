@@ -2,11 +2,8 @@
 Description: This topic explains the structure of a control transfer and how a client driver should send a control request to the device.
 title: How to send a USB control transfer
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send a USB control transfer
@@ -232,8 +229,8 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
 ### Related Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User- Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User- Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 -   [WinUSB](winusb.md)
 
 ## Prerequisites
@@ -263,7 +260,7 @@ Before the client driver can enumerate pipes, make sure that these requirements 
 
     You can obtain all that information from the official USB specification.
 
--   If you are writing a UMDF driver, get the header file, Usb\_hw.h from the the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
+-   If you are writing a UMDF driver, get the header file, Usb\_hw.h from the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
 
     All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](winusb.md) (Winusb.sys).
 
@@ -299,7 +296,7 @@ Certain types of control requests are not exposed through WDF. For those request
 
 Use the helper macros and structure defined in usb\_hw.h. This header is included with the UMDF Sample Driver for OSR USB Fx2 Learning Kit.
 
-Use this table to determine the best way to send control requests to the USB driver stack. If you are unable to view this table, see the table in [this topic](http://msdn.microsoft.com/library/ff539261(VS.85).aspx).
+Use this table to determine the best way to send control requests to the USB driver stack. If you are unable to view this table, see the table in [this topic](https://msdn.microsoft.com/library/ff539261(VS.85).aspx).
 
 <table>
 <colgroup>
@@ -560,7 +557,7 @@ This procedure shows how a client driver can send a control transfer. In this ex
 
 This code example sends a control transfer request to a USB device to retrieve its firmware version. The request is sent synchronously and the client driver specifies a relative timeout value of 5 seconds (in 100-nanosecond units). The driver stores the received response in the driver-defined device context.
 
-```
+```cpp
 enum {   
     USBFX2_GET_FIRMWARE_VERSION = 0x1,  
 ....
@@ -655,7 +652,7 @@ VOID  GetFirmwareVersion(
 }  
 ```
 
-## <a href="" id="how-to-send-a-control-transfer-for-get-status---umdf"></a>How to send a control transfer for GET\_STATUS - UMDF
+## How to send a control transfer for GET\_STATUS - UMDF
 
 
 This procedure shows how a client driver can send a control transfer for a GET\_STATUS command. The recipient of the request is the device and the request obtains information in bits D1-D0. For more information, see Figure 9-4 in the USB specification.
@@ -673,7 +670,7 @@ This procedure shows how a client driver can send a control transfer for a GET\_
 
 This code example sends a control transfer request to a get the status of the device. The example sends the request synchronously by calling a helper method named SendControlTransferSynchronously.
 
-```
+```cpp
 HRESULT  
 CDevice::GetDeviceStatus ()  
 {  
@@ -726,7 +723,7 @@ CDevice::GetDeviceStatus ()
 
 The following code example shows the implementation of the helper method named SendControlTransferSynchronously. This method sends a request synchronously.
 
-```
+```cpp
 HRESULT  
 CDevice::SendControlTransferSynchronously(  
     _In_ PWINUSB_SETUP_PACKET SetupPacket,  
@@ -818,7 +815,5 @@ If you are using Winusb.sys as the function driver for your device, you can send
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20send%20a%20USB%20control%20transfer%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

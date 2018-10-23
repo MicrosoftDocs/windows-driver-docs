@@ -9,11 +9,8 @@ keywords:
 - fltkd debugger extension WDK file system minifilter
 - Filter Verifier WDK file system minifilter
 - Verifier utility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Development and Testing Tools
@@ -115,6 +112,5 @@ Filter Verifier tracks the following filter manager objects:
  
 
 
---------------------
 
 

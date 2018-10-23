@@ -10,17 +10,14 @@ keywords:
 - device power states WDK networking
 - power states WDK networking
 - transitioning power states WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Transitioning to a Sleeping State
 
 
-## <a href="" id="ddk-transitioning-to-a-sleeping-state-ng"></a>
+
 
 
 If a miniport driver supports wake-up events, NDIS sends the driver an [OID\_PNP\_ENABLE\_WAKE\_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775) request before sending an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md). A miniport driver must not fail an OID\_PNP\_SET\_POWER request.

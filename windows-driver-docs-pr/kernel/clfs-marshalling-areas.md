@@ -4,17 +4,14 @@ author: windows-driver-content
 description: CLFS Marshalling Areas
 ms.assetid: 1153bcfd-43e9-43bd-b893-5ec044ea9584
 keywords: ["Common Log File System WDK kernel , marshalling areas", "CLFS WDK kernel , marshalling areas", "marshalling areas WDK CLFS", "log I/O buffers WDK CLFS", "maximum number of log I/O buffers WDK CLFS", "memory allocations WDK CLFS", "buffers WDK CLFS", "appending records WDK CLFS", "stable storage WDK CLFS", "volatile memory WDK CLFS", "storage WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CLFS Marshalling Areas
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 A Common Log File System (CLFS) client appends log records to a [*marshalling area*](clfs-terminology.md#kernel-clfs-term-marshalling-area) in volatile memory, and CLFS periodically writes those records to stable storage. A marshalling area is a collection of log I/O buffers, each of which can hold several log records. Log I/O buffers hold records that have recently been written to a stream (but possibly not flushed to stable storage) as well as records that have recently been read from the stream.
@@ -36,7 +33,5 @@ In some cases, you might want to reserve space in a marshalling area ahead of ti
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20CLFS%20Marshalling%20Areas%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

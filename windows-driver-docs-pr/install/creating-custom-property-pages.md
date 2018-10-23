@@ -2,11 +2,8 @@
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
 ms.assetid: 2481450f-ebb2-40e3-8a42-eabaecc1c7e4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Custom Property Pages
@@ -16,7 +13,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 1.  Call [**SetupDiGetClassInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551083) to get the current class install parameters for the device. For example:
 
-    ```
+    ```cpp
     SP_ADDPROPERTYPAGE_DATA AddPropertyPageData;
     :
     ZeroMemory(&AddPropertyPageData, sizeof(SP_ADDPROPERTYPAGE_DATA));
@@ -32,7 +29,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 2.  Make sure that the maximum number of dynamic pages for the device has not yet been met by using a statement such as the following:
 
-    ```
+    ```cpp
     if (AddPropertyPageData.NumDynamicPages < 
         MAX_INSTALLWIZARD_DYNAPAGES)
      ...
@@ -46,7 +43,7 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
     For example, a property page provider can define and use a structure as shown in the following example:
 
-    ```
+    ```cpp
     typedef struct _TEST_PROP_PAGE_DATA {
         HDEVINFO DeviceInfoSet;
         PSP_DEVINFO_DATA DeviceInfoData;

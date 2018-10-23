@@ -5,18 +5,15 @@ ms.assetid: 1cf6306c-bb1d-40f6-a0e3-59c14a60a8ff
 keywords:
 - IPsec offload WDK TCP/IP transport , version 1
 - IPsecOV1 WDK TCP/IP transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IPsec Offload Version 1
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-ipsec-offload-version-1-ng"></a>
+
 
 
 This section describes the version 1 interface for offloading Internet protocol security (IPsec) tasks in NDIS 6.0 and later.

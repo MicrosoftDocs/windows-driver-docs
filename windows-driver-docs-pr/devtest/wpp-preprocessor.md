@@ -10,11 +10,8 @@ keywords:
 - WPP software tracing WDK , invoking preprocessor
 - Windows software trace preprocessor WDK , build process
 - WPP software tracing WDK , build process
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WPP Preprocessor
@@ -49,7 +46,7 @@ You can also run the preprocessor separate from the build environment by using t
 ## <span id="WPP_Tracing_General_Options"></span><span id="wpp_tracing_general_options"></span><span id="WPP_TRACING_GENERAL_OPTIONS"></span>WPP Tracing General Options
 
 
-The following tables describe the options for the WPP preprocessor. You can configure these options in Visual Studio using the WPP Tracing property page for your project, or or as parameters to the TraceWPP tool.
+The following tables describe the options for the WPP preprocessor. You can configure these options in Visual Studio using the WPP Tracing property page for your project, or as parameters to the TraceWPP tool.
 
 <table>
 <colgroup>
@@ -289,7 +286,6 @@ The WPP build process completes the following steps:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20WPP%20Preprocessor%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

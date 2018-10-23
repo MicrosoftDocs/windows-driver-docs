@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Required Dispatch Routines
 ms.assetid: 9b760ac7-7f31-47ad-bf84-7d79c6b24ebd
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required Dispatch Routines
 
 
-## <a href="" id="ddk-required-dispatch-routines-kg"></a>
+
 
 
 Most drivers must handle the following *Dispatch* routines:
@@ -27,7 +24,7 @@ Most drivers must handle the following *Dispatch* routines:
 
     [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) indicates a request pertaining to the power state of either the device or the system. Such requests are sent to the device driver by either the power manager or a closely coupled higher-level driver.
 
--   [*DispatchCreate*](https://msdn.microsoft.com/library/windows/hardware/ff543266)
+-   [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
     [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) indicates either that a user-mode protected subsystem, possibly on behalf of an application or subsystem-specific driver, has requested a handle for the file object associated with the target device object, or that a higher-level driver is connecting or attaching its device object to the target device object.
 
@@ -64,7 +61,5 @@ The dispatch routines that a driver must provide vary according to the type and 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Required%20Dispatch%20Routines%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

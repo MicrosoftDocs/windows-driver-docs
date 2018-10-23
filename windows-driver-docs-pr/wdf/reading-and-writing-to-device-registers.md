@@ -3,11 +3,8 @@ title: Reading and Writing to Device Registers
 author: windows-driver-content
 description: Reading and Writing to Device Registers
 ms.assetid: 58A94C75-94C1-4517-A300-9F04AA7B771A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading and Writing to Device Registers
@@ -21,7 +18,7 @@ The following example includes code that could be compiled using KMDF (1.13 or l
 
 Before accessing device registers and ports, a UMDF driver must set the **UmdfDirectHardwareAccess** directive to **AllowDirectHardwareAccess** in the driver's INF file.
 
-```
+```cpp
 NTSTATUS
  MyDevicePrepareHardware (
     IN WDFDEVICE  Device,

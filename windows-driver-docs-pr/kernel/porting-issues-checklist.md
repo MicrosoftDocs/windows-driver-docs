@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Porting Issues Checklist
 ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Issues Checklist
 
 
-## <a href="" id="ddk-porting-issues-checklist-kg"></a>
+
 
 
 ### General
@@ -27,7 +24,7 @@ ms.technology: windows-devices
 
     The following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN32  // 32-bit Windows code
     ...
     #else          // 16-bit Windows code
@@ -39,7 +36,7 @@ ms.technology: windows-devices
 
     Also, the following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN16  // 16-bit Windows code
     ...
     #else          // 32-bit Windows code
@@ -69,7 +66,7 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     ULONG x;
     LONG y;
     LONG *pVar1;
@@ -84,7 +81,7 @@ ms.technology: windows-devices
 
     The following assertion is not true on 64-bit systems:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) == (UINT64)~(PAGE_SIZE-1)
     PAGE_SIZE = 0x1000UL  // Unsigned long - 32 bits
     PAGE_SIZE - 1 = 0x00000fff
@@ -92,21 +89,21 @@ ms.technology: windows-devices
 
     LHS expression:
 
-    ```
+    ```cpp
     // Unsigned expansion(UINT64)(PAGE_SIZE -1 ) = 0x0000000000000fff
     ~((UINT64)(PAGE_SIZE -1 )) = 0xfffffffffffff000
     ```
 
     RHS expression:
 
-    ```
+    ```cpp
     ~(PAGE_SIZE-1) = 0xfffff000
     (UINT64)(~(PAGE_SIZE - 1)) = 0x00000000fffff000
     ```
 
     Hence:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) != (UINT64)(~(PAGE_SIZE-1))
     ```
 
@@ -114,14 +111,14 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     UINT_PTR a; ULONG b;
     a = a & ~(b - 1); 
     ```
 
     The problem is that ~(b−1) produces 0x0000 0000 *xxxx xxxx* and not 0xFFFF FFFF *xxxx xxxx*. The compiler will not detect this. To fix this, change the code as follows:
 
-    ```
+    ```cpp
     a = a & ~((UINT_PTR)b - 1);
     ```
 
@@ -129,7 +126,7 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     len = ptr2 - ptr1 
     /* len could be greater than 2**32 */
     ```
@@ -152,7 +149,7 @@ ms.technology: windows-devices
 
     For example:
 
-    ```
+    ```cpp
     DWORD index = 0;
     CHAR *p;
 
@@ -161,13 +158,13 @@ ms.technology: windows-devices
 
     On 32-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0xffffffff] == p[-1] 
     ```
 
     On 64-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0x00000000ffffffff] != p[-1]
     ```
 
@@ -185,7 +182,7 @@ ms.technology: windows-devices
 
     Do not do this:
 
-    ```
+    ```cpp
     void GetBufferAddress(OUT PULONG *ptr);
     {
       *ptr=0x1000100010001000;
@@ -206,13 +203,13 @@ ms.technology: windows-devices
 
     If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
 
-    ```
+    ```cpp
     ImageBase = (PVOID)((ULONG)ImageBase | 1);
     ```
 
     As a part of the porting process, you would change the code as follows:
 
-    ```
+    ```cpp
     ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
     ```
 
@@ -244,7 +241,7 @@ ms.technology: windows-devices
 
     For example:
 
-    ```
+    ```cpp
     struct xx {
        DWORD NumberOfPointers;
        PVOID Pointers[1];
@@ -254,14 +251,14 @@ ms.technology: windows-devices
 
     The following allocation is incorrect in 64-bit Windows because the compiler will pad the structure with an additional 4 bytes to make the 8-byte alignment requirement:
 
-    ```
+    ```cpp
     malloc(sizeof(DWORD)+100*sizeof(PVOID)); 
      
     ```
 
     Here is how to do it correctly:
 
-    ```
+    ```cpp
     malloc(FIELD_OFFSET(struct xx, Pointers) +100*sizeof(PVOID));
     ```
 
@@ -269,20 +266,20 @@ ms.technology: windows-devices
 
     The **TYPE\_ALIGNMENT** macro returns the alignment requirement for a given data type on the current platform. For example:
 
-    ```
+    ```cpp
     TYPE_ALIGNMENT(KFLOATING_SAVE) == 4 on x86, 8 on Itanium
     TYPE_ALIGNMENT(UCHAR) == 1 everywhere
     ```
 
     As an example, code such as this:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, sizeof(ULONG));
     ```
 
     becomes more portable when changed to:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, TYPE_ALIGNMENT(ULONG));
     ```
 
@@ -294,7 +291,7 @@ ms.technology: windows-devices
 
     On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561808) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
-    ```
+    ```cpp
     #pragma pack (1)  /* also set by /Zp switch */
     struct Buffer {
         ULONG size;
@@ -310,7 +307,7 @@ ms.technology: windows-devices
 
     You could use the **UNALIGNED** macro to fix this:
 
-    ```
+    ```cpp
     void SetPointer(void *p) {
         struct Buffer s;
         *(UNALIGNED void *)&s.ptr = p;
@@ -334,7 +331,5 @@ ms.technology: windows-devices
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Porting%20Issues%20Checklist%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

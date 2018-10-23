@@ -11,17 +11,14 @@ keywords:
 - power states WDK networking
 - transitioning power states WDK networking
 - wake-up capabilities WDK networking , transitioning power states
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an OID\_PNP\_SET\_POWER OID
 
 
-## <a href="" id="ddk-handling-an-oid-pnp-set-power-oid-ng"></a>
+
 
 
 NDIS sends an OID request of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) to notify a miniport driver that a network adapter will be making a transition from the working state to a sleeping state or from a sleeping state to the working state. An OID\_PNP\_SET\_POWER request can be preceded by an [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778) request.

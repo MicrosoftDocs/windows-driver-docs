@@ -2,11 +2,8 @@
 title: Table Data Source
 description: Table Data Source
 ms.assetid: D0CC0536-5569-47ed-8DE8-B64FF3042C51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Table Data Source
@@ -18,7 +15,7 @@ Now that you have basic test automation written and working with TAEF, you can c
 
 Consider a simple non-data driven example in which you are printing the size and theme to the console. In this exercise, you will convert this test to a data driven test.
 
-```
+```cpp
 1  namespace WEX { namespace TestExecution { namespace Examples
 2  {
 3     void DataDrivenTests::FirstTable()
@@ -40,7 +37,7 @@ Consider a simple non-data driven example in which you are printing the size and
 
 Now, you want the function above to work for a set of sizes and themes. In other words, you want variant data values that our function can consume. In order to do this, define two tables in an XML file DataDrivenTests.xml :
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2  <Data>
 3  <Table Id ="Table1">
@@ -97,7 +94,7 @@ Notice lines 9, 14, 19, 26, 30, and 34 in the example above - you can define met
 
 With the data sets defined and ready for consumption, you now need a way to qualify the test function as a data driven test and associate it with the table that defines the data set. This is done by way of extra metadata while authoring the test:
 
-```
+```cpp
 1  namespace WEX { namespace TestExecution { namespace Examples
 2  {
 3      class DataDrivenTests
@@ -127,7 +124,7 @@ You may have observed in the above example that "SecondTable" is defined before 
 
 With the mapping of our data source to the test method complete, you can now modify the example to get the data from the source. Before doing that, take a look at the published header file, TestData.h. The part of interest is:
 
-```
+```cpp
 1    class TestData
 2    {
 3    public:
@@ -143,7 +140,7 @@ Line 5 shows the API to call in order to retrieve the data in the function. Take
 
 Ok - all set to re-write our example:
 
-```
+```cpp
 1  namespace WEX { namespace TestExecution { namespace Examples
 2  {
 3      void DataDrivenTests::FirstTable()
@@ -176,7 +173,7 @@ Lines 7 and 18 are the main parts that changed in order to make the test data dr
 
 Consider an example where you want to print the co-ordinates of a rectangle on the console. Start with defining these co-ordinates as the data set in an XML file.
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2  <Data>
 3  <Table Id="FirstTable">
@@ -226,7 +223,7 @@ Notice lines 10, 16, and 22 in the example above - you can define metadata speci
 
 Now, you have all the data defined. The following example shows how to access it.
 
-```
+```cpp
 1  namespace WEX.Examples
 2  {
 3      using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -273,7 +270,7 @@ Associating the XML Table with a given test method in managed code is very simil
 
 Notice that the Second function is not data-driven. **You may choose to have only some of your tests to be data driven. You also have the option of having each test have its table defined in a different XML file.**
 
-In Line 36, you define a private TestContext property - like VSTS recommends (<http://msdn2.microsoft.com/library/ms404699(VS.80).aspx>). You also define public assessors to this property (lines 30 through 34). Internally TAEF loads the dictionary property of TestContext with the corresponding data set in focus.
+In Line 36, you define a private TestContext property - like VSTS recommends (<https://msdn2.microsoft.com/library/ms404699(VS.80).aspx>). You also define public assessors to this property (lines 30 through 34). Internally TAEF loads the dictionary property of TestContext with the corresponding data set in focus.
 
 TestContext is defined in Microsoft.VisualStudio.TestTools.UnitTesting. See line 3 in the example above. You should already be including this as a reference in your managed test authoring. **So, no additional references are required for authoring data driven tests.**
 
@@ -284,7 +281,7 @@ In line 18 of the example above, you show how to retrieve data in the function. 
 
 TAEF allows you to have a more meaningful 'Name' property instead of the Index to identify any DataRow in your DataSource. To do this, simply add 'Name' metadata at the Row level in your DataSource. Our first example on this page can be modified to use this feature as follows:
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2  <Data>
 3  <Table id ="Table1">
@@ -315,13 +312,13 @@ TAEF allows you to have a more meaningful 'Name' property instead of the Index t
 
 In the above modified example, 'BlueTransparent' correspondes to index 0. The Row with index 1 has no special name given to it and the Row with index 2 has the Name 'BlackTransparent associated with it. You can still use a selection query to look for index 0 or 2 in 'Table1', and it will find the correct Row. But, when executing or listing the dll, instead of seeing:
 
-```
+```cpp
 <qualified name of the test method>#<index>
 ```
 
 you will instead see:
 
-```
+```cpp
 <qualified name of the test method>#<name property provided at Row level>
 ```
 
@@ -334,7 +331,7 @@ NOTE that by way of providing a "Name" attribute at Row level, you are essential
 
 TAEF supports supplying the datasource as a runtime parameter. The syntax for this is as follows:
 
-```
+```cpp
 te <test dll names> /p:<DataSource runtime name>=Table:<DataSoure XML file>#<Table Id>
 ```
 
@@ -353,7 +350,7 @@ TAEF allows you to add your DataSource as a resource of your test module as long
 
 In case of native test modules, you can do this by specifying your DataSource as the resource id or resource name. Here is a code example:
 
-```
+```cpp
 BEGIN_TEST_METHOD(ResourceNameDataSource)
     TEST_METHOD_PROPERTY(L"DataSource", L"Table:MyResourceName#SimpleTable")
 END_TEST_METHOD()
@@ -361,13 +358,13 @@ END_TEST_METHOD()
 
 "MyResourceName" is the resource name as is defined in ResourceDataSource.rc file in this case:
 
-```
+```cpp
 MyResourceName DATASOURCE_XML "ResourceDataSource.xml"
 ```
 
 In case of managed test modules, the resource can only be specified in a certain way as shown in the **sources** file snippet shown below:
 
-```
+```cpp
 LANGUAGE_NEUTRAL_MANAGED_RESOURCES = CSharpAdvancedDataDrivenTests.xml
 ```
 
@@ -387,7 +384,6 @@ To grasp various aspects of table based data-driven testing, take a read of some
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Table%20Data%20Source%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - CoNDIS WDK networking , address families
 - address families WDK networking
 - AFs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Address Families
 
 
-## <a href="" id="ddk-address-families-ng"></a>
+
 
 
 An *address family* (AF) represents an association between one of the following sets of drivers:

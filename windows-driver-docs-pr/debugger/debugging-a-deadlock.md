@@ -3,11 +3,9 @@ title: Debugging a Deadlock
 description: Debugging a Deadlock
 ms.assetid: ee7990d9-2d4e-4e48-9214-539eebd1d8db
 keywords: ["deadlocks", "thread, no ready threads"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging a Deadlock
@@ -36,7 +34,7 @@ When a deadlock occurs in user mode, use the following procedure to debug it:
 
 Here is an illustration of this procedure. You begin with the **!ntdexts.locks** extension:
 
-```
+```dbgcmd
 0:006>  !locks 
 CritSec ftpsvc2!g_csServiceEntryLock+0 at 6833dd68
 LockCount          0
@@ -69,7 +67,7 @@ The second critical section displayed has a lock count of 2 and is, therefore, a
 
 You can find this thread by listing all threads with the [**~ (Thread Status)**](---thread-status-.md) command, and looking for the thread with this ID:
 
-```
+```dbgcmd
 0:006>  ~ 
    0  Id: 1364.1330 Suspend: 1 Teb: 7ffdf000 Unfrozen
    1  Id: 1364.17e0 Suspend: 1 Teb: 7ffde000 Unfrozen
@@ -86,7 +84,7 @@ In this display, the first item is the debugger's internal thread number. The se
 
 You then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
 
-```
+```dbgcmd
 0:006>  ~4 kb 
   4  id: 97.a3   Suspend: 0 Teb 7ffd9000 Unfrozen
 ChildEBP RetAddr  Args to Child
@@ -108,7 +106,7 @@ Notice that this thread has a call to the **WaitForCriticalSection** function, w
 
 In other words, thread 4, which owns the second critical section, is waiting on the third critical section. Now turn your attention to the third critical section, which is also locked. The owning thread has thread ID 0xA9. Returning to the output of the **~** command that you saw previously, note that the thread with this ID is thread number 6. Display the stack backtrace for this thread:
 
-```
+```dbgcmd
 0:006>  ~6 kb 
 ChildEBP RetAddr  Args to Child
 0155fe38 77f6cc7b 00000414 00000000 00000000 ntdll!NtWaitForSingleObject+0xb
@@ -154,7 +152,6 @@ You can usually pinpoint the deadlock by finding one non-executing thread that h
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Deadlock%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

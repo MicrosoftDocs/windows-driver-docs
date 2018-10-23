@@ -5,11 +5,8 @@ description: Storage Class Driver's Dispatch Routines
 ms.assetid: 99713661-5e99-4110-b369-afc084a2aaef
 keywords:
 - dispatch routines WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Dispatch Routines
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 ## <span id="ddk_storage_class_drivers_dispatch_routines_kg"></span><span id="DDK_STORAGE_CLASS_DRIVERS_DISPATCH_ROUTINES_KG"></span>
 
 
-Class driver [**DispatchCreate**](https://msdn.microsoft.com/library/windows/hardware/ff543266) and [**DispatchClose**](https://msdn.microsoft.com/library/windows/hardware/ff543255) routines usually have no device-specific requirements. Most storage class drivers are intermediate drivers; their dispatch routines just return STATUS\_SUCCESS to indicate that a given device object exists so that higher-level drivers and, indirectly, user-mode applications can open the device for I/O and close the device afterward.
+Class driver [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) and [**DispatchClose**](https://msdn.microsoft.com/library/windows/hardware/ff543255) routines usually have no device-specific requirements. Most storage class drivers are intermediate drivers; their dispatch routines just return STATUS\_SUCCESS to indicate that a given device object exists so that higher-level drivers and, indirectly, user-mode applications can open the device for I/O and close the device afterward.
 
 Class driver [**DispatchDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff543287) and [**DispatchInternalDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff543326) routines must be resident; that is, they cannot be pageable nor part of a driver's pageable-image section. Depending on the IOCTL of a given request, such a dispatch routine might call a paged routine or wait for a call from a synchronization or notification object (thereby blocking the executing thread), but the dispatch routine must be able to pass an unknown IOCTL through at DISPATCH\_LEVEL.
 
@@ -35,6 +32,5 @@ See also [Writing Dispatch Routines](https://msdn.microsoft.com/library/windows/
  
 
 
---------------------
 
 

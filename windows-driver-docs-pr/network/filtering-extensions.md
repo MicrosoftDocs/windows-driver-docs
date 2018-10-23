@@ -2,11 +2,8 @@
 title: Filtering Extensions
 description: Filtering Extensions
 ms.assetid: EDE50213-DFA0-4D8B-9E15-12AED8FDE5CA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filtering Extensions

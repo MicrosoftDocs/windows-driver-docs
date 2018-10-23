@@ -10,11 +10,8 @@ api_name:
 - INF UnregisterDlls Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF UnregisterDlls Directive
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 
-```
+```cpp
 [DDInstall]
   
 UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
@@ -34,7 +31,7 @@ UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
 
 Each INF section referenced by an **UnregisterDlls** directive must have the following entry format:
 
-```
+```cpp
 [unregister-dll-section] 
   
 dirid,[subdir],filename,registration-flags[,[timeout][,argument]] 
@@ -81,7 +78,7 @@ For more information about OLE controls and self unregistration, see the Windows
 Examples
 --------
 
-```
+```cpp
 [Dialer]
 RegisterDlls = DialerRegSvr
 

@@ -10,11 +10,8 @@ keywords:
 - NetDMA WDK networking , interrupts
 - interrupts WDK NetDMA
 - interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing NetDMA Interrupts
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-managing-netdma-interrupts-ng"></a>
+
 
 
 With the NetDMA interface, you can complete dynamic memory access (DMA) operations with an interrupt service routine (ISR). For general information about servicing interrupts in Microsoft Windows drivers, see [Servicing Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff563737).

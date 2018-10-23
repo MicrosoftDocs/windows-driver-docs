@@ -2,11 +2,8 @@
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
 ms.assetid: 7519235c-46c5-49aa-8b11-9e9ac5a51026
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing drivers for different versions of Windows
@@ -40,7 +37,7 @@ A kernel-mode driver can dynamically determine which version of Windows it is ru
 
 [**RtlIsNtDdiVersionAvailable**](https://msdn.microsoft.com/library/windows/hardware/ff561954) is a function that drivers can use to determine, at run time, if the features that are provided by a particular version of Windows are available. The prototype for this function is as follows:
 
-```
+```cpp
 BOOLEAN RtlIsNtDdiVersionAvailable(IN ULONG Version)
 ```
 
@@ -50,7 +47,7 @@ In this prototype, *Version* is a value that indicates the required version of t
 
 Your driver can also check for a specific service pack by calling the [**RtlIsServicePackVersionInstalled**](https://msdn.microsoft.com/library/windows/hardware/ff561956) function. The prototype for this function is as follows:
 
-```
+```cpp
 BOOLEAN RtlIsServicePackVersionInstalled(IN ULONG Version)
 ```
 
@@ -70,7 +67,7 @@ After a driver determines that a specific operating system version is available 
 
 This code example, which is from a driver's header file, defines the PAISQSL type as a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) function. The example then declares a `AcquireInStackQueuedSpinLock` variable with this type.
 
-```
+```cpp
 ...
  //
 // Pointer to the ordered spin lock function.
@@ -84,7 +81,7 @@ PAISQSL AcquireInStackQueued = NULL;
 
 This code example, which is from the driver's initialization code, determines whether the driver is running on Windows 7 or a later operating system. If it is, the code retrieves a pointer to [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899).
 
-```
+```cpp
 ...
  
 //
@@ -125,7 +122,6 @@ Later, when the driver must acquire a spin lock, it checks to see whether it has
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wdkgetstart\wdkgetstart]:%20Writing%20drivers%20for%20different%20versions%20of%20Windows%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

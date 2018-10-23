@@ -3,11 +3,9 @@ title: Using ks.graph
 description: Using ks.graph
 ms.assetid: 05dcd5d3-fac6-4af5-8149-955435fb016f
 keywords: ["kernel streaming debugging, displaying a graph"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using !ks.graph
@@ -17,7 +15,7 @@ The [**!ks.graph**](-ks-graph.md) command is one of most powerful extension comm
 
 Before running [**!ks.graph**](-ks-graph.md), you may want to enable all library extensions that are capable of being active. To do this, issue a [**!ks.libexts enableall**](-ks-libexts.md) command. The output of **!ks.graph** will be a textual description of the kernel mode graph in topologically sorted order. Here is an example:
 
-```
+```dbgcmd
 kd> !graph ffa0c6d4 7
 Attempting a graph build on ffa0c6d4...  Please be patient...
 Graph With Starting Point ffa0c6d4:
@@ -32,7 +30,7 @@ Below each entry, each factory is enumerated and lists the address of each pin i
 
 Connections which have forward direction symbols (-&gt;) indicate that the pin is an output pin and is connected to an input pin. Connections which have reverse direction symbols (&lt;-), on the other hand, are input pins and show the origination of the connection. The output continues as follows:
 
-```
+```dbgcmd
 "splitter" Filter ffa0c660, Child Factories 2
     Output Factory 0:
         Pin 81250008 (File ffb10028, -> "kmixer" 8123c000) Irps(q/p) = 3, 0
@@ -65,7 +63,7 @@ In order to follow the graph, use the following procedure:
 
 The To follow this graph: command can also be used to analyze stalled graphs from any given starting point. To do this, specify 4 in the *Flags* parameter:
 
-```
+```dbgcmd
 kd> !graph 812567c0 7 4
 
 Attempting a graph build on 812567c0...  Please be patient...
@@ -107,7 +105,6 @@ For such output, look at the "suspects" list. These suspect filters are those th
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20!ks.graph%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: a9d4691b-4429-456b-a5d2-482ccd0a2845
 keywords:
 - INF files WDK device installations , sections
 - sections WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of INF Sections
 
 
-## <a href="" id="ddk-summary-of-inf-sections-dg"></a>
+
 
 
 The following summarizes the system-defined sections that can be used in INF files. System-defined section names are case-insensitive. For example, **version**, **VERSION**, and **Version** are equally valid section-names within an INF file.

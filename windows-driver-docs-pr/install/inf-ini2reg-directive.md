@@ -10,11 +10,8 @@ api_name:
 - INF Ini2Reg Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Ini2Reg Directive
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 
 An **Ini2Reg** directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 
-```
+```cpp
         [
         DDInstall
         ] | 
@@ -41,7 +38,7 @@ Ini2Reg=ini-to-registry-section[,ini-to-registry-section]...
 
 Each named section referenced by an **Ini2Reg** directive has the following form:
 
-```
+```cpp
 [ini-to-registry-section]
  
 ini-file,ini-section,[ini-key],reg-root,subkey[,flags]

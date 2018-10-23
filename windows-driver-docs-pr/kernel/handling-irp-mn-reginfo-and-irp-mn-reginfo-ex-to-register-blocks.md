@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks
 ms.assetid: 2c17fc63-3c33-4d03-8c46-8d56242556d1
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_REGINFO and IRP\_MN\_REGINFO\_EX to Register Blocks
 
 
-## <a href="" id="ddk-handling-irp-mn-reginfo-and-irp-mn-reginfo-ex-to-register-blocks-k"></a>
+
 
 
 On Windows 98 and Windows 2000, the system sends the [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) request to a driver to allow a driver to register its WMI classes. On Windows XP and later, the system sends the [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request instead. Most drivers can handle these requests by using [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) to provide a callback routine. See [Using the WMI Library to Register Blocks](using-the-wmi-library-to-register-blocks.md) for details.
@@ -58,7 +55,5 @@ In this case, the driver:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Handling%20IRP_MN_REGINFO%20and%20IRP_MN_REGINFO_EX%20to%20Register%20Blocks%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

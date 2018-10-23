@@ -3,19 +3,20 @@ title: Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
 ms.assetid: bcfc61a1-0315-451c-a279-f6305995b05f
 keywords: making a 1394 cable connection, 1394 connection, IEEE 1394 cable, FireWire cable
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 05/03/2018
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 
+> [!IMPORTANT]  
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+>
 
 Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
-
-As an alternative to setting up 1394 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio](setting-up-a-1394-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host and target computers must each have a 1394 adapter and must be running Windows XP or later. The host and target computers do not have to be running the same version of Windows.
 
@@ -23,6 +24,11 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 
 1.  Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
+
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 2.  In an elevated Command Prompt window, enter the following commands, where *n* is a channel number of your choice, from 0 through 62:
 
     **bcdedit /debug on**
@@ -101,7 +107,6 @@ Reboot the target computer.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20over%20a%201394%20Cable%20Manually%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

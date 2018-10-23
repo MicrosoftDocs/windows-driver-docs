@@ -3,17 +3,14 @@ title: Control Method Input Buffer Structures
 author: windows-driver-content
 description: Control Method Input Buffer Structures
 ms.assetid: 41d4c53f-9dc7-4723-9707-ae48ff07f5f4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Control Method Input Buffer Structures
 
 
-Starting with Microsoft Windows 2000, the ACPI driver supports the [**IOCTL\_ACPI\_EVAL\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff536148) request. A driver for a device can use this request to evaluate a control method that is an immediate child object in the ACPI namespace of the device to which the request is sent. The IOCTL\_ACPI\_EVAL\_METHOD request supports the following input structures:
+The ACPI driver supports the [**IOCTL\_ACPI\_EVAL\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff536148) request. A driver for a device can use this request to evaluate a control method that is an immediate child object in the ACPI namespace of the device to which the request is sent. The IOCTL\_ACPI\_EVAL\_METHOD request supports the following input structures:
 
 <a href="" id="acpi-eval-input-buffer"></a>[**ACPI\_EVAL\_INPUT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff536115)  
 This structure supplies the signature of the buffer and the name of a control method that does not take an input argument.
@@ -27,7 +24,7 @@ This structure supplies the signature of the structure, the name of a control me
 <a href="" id="acpi-eval-input-buffer-complex"></a>[**ACPI\_EVAL\_INPUT\_BUFFER\_COMPLEX**](https://msdn.microsoft.com/library/windows/hardware/ff536116)  
 This structure supplies the signature of the structure, the name of a control method, and an input array of [**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125) structures. The array can contain a maximum number of seven such structures. An ACPI\_METHOD\_ARGUMENT structure can contain a ULONG integer, an ASCII string, an ACPI package description, or an array of custom data.
 
-Windows Server 2008, Windows Vista and later versions of Windows also support the [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) request. A driver for a device can use this request to evaluate a control method that is a descendant child object in the ACPI namespace of the device to which the request is sent. The IOCTL\_ACPI\_EVAL\_METHOD\_EX request supports the following input structures:
+Windows also supports the [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) request. A driver for a device can use this request to evaluate a control method that is a descendant child object in the ACPI namespace of the device to which the request is sent. The IOCTL\_ACPI\_EVAL\_METHOD\_EX request supports the following input structures:
 
 <a href="" id="acpi-eval-input-buffer-ex"></a>[**ACPI\_EVAL\_INPUT\_BUFFER\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536118)  
 This structure supplies the signature of the structure and the path and name of a control method that does not take an input argument.
@@ -42,12 +39,3 @@ This structure supplies the signature of the structure and the path and name of 
 This structure supplies the signature of the structure and the path and name of a control method that takes an array of ACPI\_METHOD\_ARGUMENT structures as input. The array can contain a maximum number of seven such structures. An ACPI\_METHOD\_ARGUMENT structure can contain a ULONG integer, an ASCII string, an ACPI package description, or an array of custom data.
 
 To obtain the path and name of child objects in the ACPI namespace of a device, a driver for a device can use an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147) request, as described in [Enumerating Child Devices and Control Methods](enumerating-child-devices-and-control-methods.md).
-
- 
-
- 
-
-
---------------------
-
-

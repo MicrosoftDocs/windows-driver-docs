@@ -4,17 +4,14 @@ description: Summary of Changes Required to Port a CoNDIS Driver to CoNDIS 6.0
 ms.assetid: 151bdcf8-5f7c-494d-a0a2-d1fac997d82e
 keywords:
 - porting CoNDIS drivers WDK networking , required changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a CoNDIS Driver to CoNDIS 6.0
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-driver-to-condis-6-0-nd"></a>
+
 
 
 This topic summarizes what you must change to port a connection-oriented NDIS (CoNDIS) 5.*x* driver to CoNDIS 6.0. You can port earlier drivers (before NDIS 5.*x*) in a way similar to porting NDIS 5.*x* drivers.

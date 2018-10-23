@@ -5,11 +5,8 @@ description: Constraints on Completion Routines
 ms.assetid: 3873fd27-cfa8-414d-9437-c0789b20ff27
 keywords:
 - IRP completion routines WDK file system , constraints
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constraints on Completion Routines
@@ -63,6 +60,5 @@ A completion routine cannot return STATUS\_MORE\_PROCESSING\_REQUIRED for an opl
  
 
 
---------------------
 
 

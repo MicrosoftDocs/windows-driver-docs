@@ -3,17 +3,15 @@ title: Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 description: The SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION bug check has a value of 0x000000C1. This indicates that the driver wrote to an invalid section of the special pool.
 ms.assetid: 4d5a3d95-de39-4e15-aba8-33257a6f0677
 keywords: ["Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION", "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC1: SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION
@@ -21,7 +19,7 @@ api_type:
 
 The SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION bug check has a value of 0x000000C1. This indicates that the driver wrote to an invalid section of the special pool.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION Parameters
 

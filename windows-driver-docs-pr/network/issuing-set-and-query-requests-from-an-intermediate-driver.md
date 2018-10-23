@@ -5,17 +5,14 @@ ms.assetid: bd049639-970c-43c8-8ef9-c5e75cc2d75f
 keywords:
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Issuing Set and Query Requests from an Intermediate Driver
 
 
-## <a href="" id="ddk-issuing-set-and-query-requests-from-an-intermediate-driver-ng"></a>
+
 
 
 The protocol edge of an intermediate driver can issue set and query information requests to the underlying miniport driver. The virtual miniport edge of an intermediate driver can use the information obtained from the underlying driver to determine how to respond to set and query requests.

@@ -7,11 +7,8 @@ keywords:
 - StaticDV WDK , requirements
 - SDV WDK , requirements
 - function prototypes WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supported Drivers
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 For SDV to verify a driver, it must be able to interpret the driver code, specifically, the driver's entry points and the code in functions and routines that support required driver functionality.
 
-The following sections describe the basic requirements for drivers and the specific syntax that SDV expects of the drivers that it verifies. SDV does not verify that drivers comply with these requirements, but if the driver does not comply, SDV declares errors and, in rare situations, it reports false positive or false negative results because of misinterpretation.
+The following sections describe the basic requirements for drivers and the specific syntax that SDV expects of the drivers that it verifies. SDV does not verify that drivers comply with these requirements, but if the driver does not comply, SDV may fail to run and, in rare situations, it reports false positive or false negative results because of misinterpretation.
 
 ### <span id="basic_driver_characteristics"></span><span id="BASIC_DRIVER_CHARACTERISTICS"></span>Basic Driver Characteristics
 
@@ -27,7 +24,9 @@ SDV is able to verify only drivers with the following characteristics:
 
 -   SDV verifies drivers and libraries that are written in C and C++.
 
--   SDV verifies only KMDF-compliant and WDM-compliant device drivers (function drivers, filter drivers, and bus drivers), NDIS drivers (filter, miniport, and protocol drivers), and Storport drivers.
+-   SDV performs full verification only on KMDF-compliant and WDM-compliant device drivers (function drivers, filter drivers, and bus drivers), NDIS drivers (filter, miniport, and protocol drivers), and Storport drivers.
+
+-   SDV attempts limited verification of generic properties (such as [NullCheck](nullcheckw.md)) on drivers that do not fit into the above categories.
 
 -   SDV can verify WDM drivers that declare their driver callback functions by using the WDM function role types. For information about how to declare functions, see [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md).
 
@@ -91,7 +90,6 @@ If the driver code or library code includes these elements, SDV attempts to veri
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Supported%20Drivers%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

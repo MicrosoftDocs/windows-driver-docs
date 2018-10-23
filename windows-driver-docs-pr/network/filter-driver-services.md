@@ -5,17 +5,14 @@ ms.assetid: 72ee00c6-0887-46bd-a329-ee7bf0dd2c06
 keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Driver Services
 
 
-## <a href="" id="ddk-filter-driver-services-ng"></a>
+
 
 
 Filter drivers can provide the following services:

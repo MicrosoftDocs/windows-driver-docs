@@ -2,11 +2,8 @@
 title: Network Adapter Index Values
 description: Network Adapter Index Values
 ms.assetid: 969333DA-0282-474B-8D56-72CD623C5329
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Adapter Index Values

@@ -7,11 +7,8 @@ keywords:
 - deadlocks WDK Driver Verifier
 - locked resources WDK Driver Verifier
 - thread locks WDK Driver Verifier
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/03/2017
+ms.localizationpriority: medium
 ---
 
 # Deadlock Detection
@@ -25,6 +22,7 @@ Deadlock Detection monitors the driver's use of resources which need to be locke
 The Deadlock Detection option of Driver Verifier, along with the **!deadlock** kernel debugger extension, is an effective tool for making sure your code avoids poor use of these resources.
 
 Deadlock Detection is supported only in Windows XP and later versions of Windows.
+
 
 ### <span id="causes_of_deadlocks"></span><span id="CAUSES_OF_DEADLOCKS"></span>Causes of Deadlocks
 
@@ -105,7 +103,6 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 -   Starting in Windows 7, Driver Verifier can predict possible deadlocks. For example, trying to use the same KSPIN\_LOCK data structure both as a regular spin lock and as a stack queued spin lock.
 
--   
 
 See [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 
@@ -157,7 +154,6 @@ You can activate the Deadlock Detection feature for one or more drivers by using
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Deadlock%20Detection%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -3,11 +3,8 @@ title: Checking the Oplock State of an IRP_MJ_SET_INFORMATION operation
 author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_SET_INFORMATION operation
 ms.assetid: d164be8d-cf42-4b96-9883-e0f8223bfde4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_SET_INFORMATION operation
@@ -292,6 +289,5 @@ This information applies when the following operations are being performed on a 
  
 
 
---------------------
 
 

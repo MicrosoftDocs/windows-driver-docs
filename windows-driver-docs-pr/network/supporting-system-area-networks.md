@@ -2,17 +2,14 @@
 title: Supporting System Area Networks
 description: Supporting System Area Networks
 ms.assetid: 04b58db0-6f8d-41e1-b38f-fcd3de00a161
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting System Area Networks
 
 
-## <a href="" id="ddk-supporting-system-area-networks-ng"></a>
+
 
 
 This section describes the performance benefits that client and server computers can achieve by interfacing with a SAN, as well as the software components that you must implement and supply. These matters are discussed in the following topics:

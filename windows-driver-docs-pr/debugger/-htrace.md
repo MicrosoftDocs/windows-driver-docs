@@ -3,17 +3,15 @@ title: htrace
 description: The htrace extension displays stack trace information for one or more handles.
 ms.assetid: 1da92c8d-8f77-4b30-a908-bcc33ad05cce
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - htrace
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !htrace
@@ -23,7 +21,7 @@ The **!htrace** extension displays stack trace information for one or more handl
 
 User-Mode Syntax
 
-```
+```dbgcmd
 !htrace [Handle [Max_Traces]] 
 !htrace -enable [Max_Traces]
 !htrace -snapshot
@@ -34,7 +32,7 @@ User-Mode Syntax
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
     !htrace [Handle [Process [Max_Traces]]] 
 !htrace -? 
 ```
@@ -106,7 +104,7 @@ Some of the traces reported by **!htrace** may be from a different process conte
 
 The following example displays information about all handles in process 0x81400300:
 
-```
+```dbgcmd
 kd> !htrace 0 81400300
 Process 0x81400300
 ObjectTable 0xE10CCF60
@@ -163,7 +161,6 @@ Dumped 0x5 stack traces.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!htrace%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

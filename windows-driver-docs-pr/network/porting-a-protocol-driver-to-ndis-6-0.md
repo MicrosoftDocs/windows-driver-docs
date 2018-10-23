@@ -9,17 +9,14 @@ keywords:
 - porting drivers WDK networking , protocol drivers
 - network driver porting WDK , protocol drivers
 - porting protocol drivers WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting a Protocol Driver to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-drivers-to-ndis-6-0-nd"></a>
+
 
 
 This section describes what is required to port an NDIS 5.*x* protocol driver to NDIS 6.0.

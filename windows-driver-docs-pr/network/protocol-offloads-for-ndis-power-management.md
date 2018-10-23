@@ -2,17 +2,14 @@
 title: Protocol Offloads for NDIS Power Management
 description: Protocol Offloads for NDIS Power Management
 ms.assetid: 191aa59d-1772-4824-ad15-e813f2e154e0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Offloads for NDIS Power Management
 
 
-## <a href="" id="ddk-power-management-protocol-offloads-nr"></a>
+
 
 
 NDIS 6.20 and later versions of NDIS support protocol offloads for NDIS power management. For example, NDIS can offload the handling of Address Resolution Protocol (ARP) requests to a network adapter. Some applications use periodic ARP request packets to discover and ensure the presence of a host on the network. These applications send the ARP requests even when there is no current need to send data to the host. Such ARP requests wake up the host and waste power when there is nothing for the host to do.

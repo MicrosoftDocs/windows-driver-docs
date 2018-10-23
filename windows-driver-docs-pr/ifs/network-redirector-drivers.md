@@ -7,11 +7,8 @@ keywords:
 - file system drivers WDK , network redirectors
 - network redirectors WDK
 - redirector drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Redirector Drivers
@@ -32,6 +29,5 @@ This section includes the following topics, which describe network redirector dr
  
 
 
---------------------
 
 

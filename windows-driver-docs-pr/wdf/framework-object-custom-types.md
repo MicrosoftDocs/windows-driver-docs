@@ -3,11 +3,8 @@ title: Framework Object Custom Types
 author: windows-driver-content
 description: Framework Object Custom Types
 ms.assetid: E00393ED-7285-4354-9E1B-D9ABDB7DC9F2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Custom Types
@@ -26,7 +23,7 @@ A driver can associate multiple custom types with a single framework object. A d
 
 In output from KMDF debugger extensions, custom type names are displayed along with other WDF object information.
 
-```
+```cpp
 WDF_Object_Name, [custom_Type1_Name, custom_Type2_Name]
 ```
 

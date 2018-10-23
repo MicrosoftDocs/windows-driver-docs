@@ -3,17 +3,15 @@ title: usb3kd.device_info_from_pdo
 description: The usb3kd.device_info_from_pdo command displays information about a USB device in the USB 3.0 tree.
 ms.assetid: 74FD68E6-78DF-452F-80C2-91A37877DE52
 keywords: ["usb3kd.device_info_from_pdo Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usb3kd.device_info_from_pdo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.device\_info\_from\_pdo
@@ -21,7 +19,7 @@ api_type:
 
 The **!usb3kd.device\_info\_from\_pdo** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.device_info_from_pdo DeviceObject
 ```
 
@@ -46,7 +44,7 @@ Examples
 
 You can get the address of the PDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devnode**](-devnode.md) command displays the addresses of PDOs. In the following example, the USBSTOR device node is the direct child of the USBHUB3 node. The address of the PDO for the USBSTOR node is 0xfffffa80059c3800.
 
-```
+```dbgcmd
 3: kd> !devnode 0 1 usbhub3
 
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
@@ -71,7 +69,7 @@ DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
 
 Now you can pass the address of the PDO to the **!usb3kd.device\_info\_from\_pdo** command.
 
-```
+```dbgcmd
 3: kd> !device_info_from_pdo 0xfffffa80059c3800
 
 ## Dumping Device Information fffffa80059c3800
@@ -111,7 +109,7 @@ Device Event History:
 
 The following example shows some of the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. You can see the address of the PDO of one of the child device nodes as the argument to the [**!devstack**](-devstack.md) command. (**!devstack fffffa80059c3800**)
 
-```
+```dbgcmd
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -141,13 +139,12 @@ Topology
 
 [**!usb3kd.device\_info**](-usb3kd-device-info.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usb3kd.device_info_from_pdo%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

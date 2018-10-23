@@ -7,17 +7,14 @@ keywords:
 - framework objects WDK KMDF , context space
 - context space WDK KMDF
 - object context space WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Context Space
 
 
-## <a href="" id="ddk-framework-object-context-df"></a>
+
 
 
 *Object context space* is extra, nonpageable, memory space that a driver can allocate and assign to an object. Each framework-based driver can create one or more object-specific context spaces for every framework object that the driver receives or creates.

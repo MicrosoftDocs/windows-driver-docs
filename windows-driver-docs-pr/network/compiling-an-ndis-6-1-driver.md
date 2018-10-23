@@ -5,17 +5,14 @@ ms.assetid: 9606a91c-c1cb-4d93-b648-3829d1b51954
 keywords:
 - NDIS WDK , compile flags
 - compile flags WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Compiling an NDIS 6.1 Driver
 
 
-## <a href="" id="ddk-compiling-an-ndis-6-1-driver-ng"></a>
+
 
 
 The Build utility for Windows Server 2008 supports header versioning. Header versioning makes sure that NDIS 6.1 drivers use the appropriate NDIS 6.1 data structures at compile time. You must update the SOURCES file to indicate NDIS 6.1.

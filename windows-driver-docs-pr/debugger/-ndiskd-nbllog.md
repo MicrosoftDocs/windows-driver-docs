@@ -3,17 +3,15 @@ title: ndiskd.nbllog
 description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
 ms.assetid: 59CB6B60-E0B3-435E-A6F6-82A715E87C69
 keywords: ["ndiskd.nbllog Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.nbllog
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.nbllog
@@ -21,7 +19,7 @@ api_type:
 
 The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) activity on the system.
 
-```
+```console
 !ndiskd.nbllog [-stacks] 
 ```
 
@@ -41,7 +39,7 @@ Remarks
 **Important**  
 **!ndiskd.nbllog** requires NBL tracking to be enabled on the debugee target machine. NBL tracking is not enabled by default in all configurations of Windows. If NBL tracking is not enabled, !ndiskd will give you instructions on how to enable it, as shown in the following snippet.
 
-```
+```console
 0: kd> !ndiskd.nbllog
     This command requires NBL tracking to be enabled on the debugee target
     machine.  (By default, client operating systems have level 1, and servers
@@ -67,7 +65,7 @@ Examples
 
 After you have enabled NBL tracking on the target debugee machine, enter the **!ndiskd.nbllog** command to see the log of all NBL traffic on the system. As shown in the example below, running **!ndiskd.nbllog** with no parameters will limit output to 200 events, which can be bypassed by rerunning the command with the *-force* option. The middle of the output in this example has been excised for brevity.
 
-```
+```console
 0: kd> !ndiskd.nbllog
     NBLs               Processor           Event              Detail            
                                                                      
@@ -122,7 +120,6 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.nbllog%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

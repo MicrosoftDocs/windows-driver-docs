@@ -5,30 +5,27 @@ ms.assetid: 9d0c6d6f-c12f-4921-b08a-b23b7d96ccd9
 keywords:
 - MUX intermediate drivers WDK
 - NDIS MUX intermediate drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MUX Intermediate Driver Installation
 
 
-## <a href="" id="ddk-mux-intermediate-driver-installation-ng"></a>
+
 
 
 This topic provides an overview of MUX intermediate driver installation issues. For additional information about the structure of intermediate driver INF files, see [Installation Requirements for Network MUX Intermediate Drivers](installation-requirements-for-network-mux-intermediate-drivers.md).
 
 A MUX intermediate driver requires two INF files. The protocol INF file defines the installation parameters for the protocol lower edge. The miniport INF file defines the installation parameters for the virtual miniport upper edge. Set the **Class** INF file entry to **Net** in the virtual miniport INF file and **NetTrans** in the protocol INF file. The following code example shows a **Class** entry for the protocol INF file.
 
-```
+```INF
 Class = NetTrans
 ```
 
 The *DDInstall* section in a MUX intermediate driver INF file must have a **Characteristics** entry. Define the **Characteristics** entry in your protocol INF file as demonstrated in the following code example.
 
-```
+```INF
 Characteristics = 0x80
 ```
 
@@ -36,7 +33,7 @@ NCF\_HAS\_UI (0x80) is required to enable custom property pages, which in this c
 
 Define the **Characteristics** entry in your miniport INF file as demonstrated in the following code example.
 
-```
+```INF
 Characteristics = 0x21
 ```
 
@@ -46,7 +43,7 @@ The *DDInstall* section of the protocol INF file for a MUX intermediate driver m
 
 In addition to the INF files, you must also provide a notify object with a MUX Intermediate driver. The notify object is responsible for installation of virtual miniports. Reference the notify object with the **ComponentDll** entry in the protocol INF as follows:
 
-```
+```INF
 HKR, Ndi,            ComponentDll,   , mux.dll
 ```
 
@@ -54,20 +51,20 @@ The user installs the protocol INF file which defines configuration parameters, 
 
 The protocol name that the driver registers must match the service name.
 
-```
+```INF
 HKR, Ndi, Service, 0, MUXP
 ```
 
 The **UpperRange** and **LowerRange** INF file entries determine the bindings for a MUX intermediate driver. The protocol INF file must define the protocol edge bindings, as the following code example shows.
 
-```
+```INF
 HKR, Ndi\Interfaces, UpperRange,    0,          "noupper"
 HKR, Ndi\Interfaces, LowerRange,    0,          "ndis5"
 ```
 
 The miniport INF file must define the upper edge bindings, as the following code example shows.
 
-```
+```INF
 HKR, Ndi\Interfaces,    UpperRange, 0,  "ndis5"
 HKR, Ndi\Interfaces,    LowerRange, 0,  "nolower"
 ```

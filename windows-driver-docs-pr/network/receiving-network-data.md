@@ -10,17 +10,14 @@ keywords:
 - network data WDK , returning
 - data WDK networking , returning
 - packets WDK networking , returning
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Network Data
 
 
-## <a href="" id="ddk-receiving-network-data-ng"></a>
+
 
 
 The following figure illustrates a basic receive operation, which involves a miniport driver, NDIS, and a protocol driver.

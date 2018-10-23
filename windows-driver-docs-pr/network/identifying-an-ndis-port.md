@@ -7,17 +7,14 @@ keywords:
 - NDIS ports WDK , identifyng
 - identifyng NDIS ports
 - port numbers WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifying an NDIS Port
 
 
-## <a href="" id="ddk-identifying-ndis-ports-ng"></a>
+
 
 
 An NDIS port is identified by its port number. When a miniport driver calls the [**NdisMAllocatePort**](https://msdn.microsoft.com/library/windows/hardware/ff562779) function to allocate a port, NDIS allocates and assigns the lowest available port number to the port. When a miniport driver calls the [**NdisMFreePort**](https://msdn.microsoft.com/library/windows/hardware/ff563588) function to free a port, NDIS also frees the port number that is assigned to the freed port so that NDIS can reuse the port number.

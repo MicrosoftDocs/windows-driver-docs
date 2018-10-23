@@ -12,17 +12,14 @@ keywords:
 - root bus drivers WDK ACPI
 - function drivers WDK ACPI , device stacks
 - WDM function drivers WDK ACPI , device stacks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Stacks for an ACPI Device
 
 
-## <a href="" id="ddk-device-stacks-for-an-acpi-device-kg"></a>
+
 
 
 This section describes the device stacks for an ACPI device that include an optional functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) created by a vendor-supplied WDM function driver.
@@ -48,6 +45,5 @@ A vendor can supply an optional WDM function driver for an ACPI device. The func
  
 
 
---------------------
 
 

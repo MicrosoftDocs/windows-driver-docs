@@ -2,11 +2,8 @@
 Description: The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.
 title: Write a Windows desktop app based on the WinUSB template
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a Windows desktop app based on the WinUSB template
@@ -136,7 +133,7 @@ You can deploy, install, load, and debug your application and the driver by foll
     5.  On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
     6.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
     7.  Change **Debugger to launch** to **Remote Windows Debugger**.
-    8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](http://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+    8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
     9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
 -   **Single computer setup:**
 
@@ -165,7 +162,7 @@ The main.cpp file contains the application entry point, \_tmain. The device.cpp 
 
 The template also has a header file named device.h. This file contains definitions for the device interface GUID (discussed later) and a DEVICE\_DATA structure that stores information obtained by the application. For example, it stores the WinUSB interface handle obtained by OpenDevice and used in subsequent operations.
 
-```
+```cpp
 typedef struct _DEVICE_DATA {
 
     BOOL                    HandlesOpen;
@@ -180,7 +177,7 @@ typedef struct _DEVICE_DATA {
 
 To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](https://msdn.microsoft.com/library/windows/hardware/ff550855) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
 
-```
+```cpp
 HRESULT
 RetrieveDevicePath(
     _Out_bytecap_(BufLen) LPTSTR DevicePath,
@@ -360,7 +357,7 @@ In the preceding function, the application gets the device path by calling these
 
 To interact with the device, the needs a WinUSB interface handle to the first (default) interface on the device. The template code obtains the file handle and the WinUSB interface handle and stores them in the DEVICE\_DATA structure.
 
-```
+```cpp
 HRESULT
 OpenDevice(
     _Out_     PDEVICE_DATA DeviceData,
@@ -448,7 +445,7 @@ The template code implements code to release the file handle and the WinUSB inte
 -   **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#filehandle) section of this walkthrough.
 -   [**WinUsb\_Free**](https://msdn.microsoft.com/library/windows/hardware/ff540233) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff540277).
 
-```
+```cpp
 VOID
 CloseDevice(
     _Inout_ PDEVICE_DATA DeviceData
@@ -504,7 +501,5 @@ Next, read these topics to send get device information and send data transfers t
 [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)  
 [Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Write%20a%20Windows%20desktop%20app%20based%20on%20the%20WinUSB%20template%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

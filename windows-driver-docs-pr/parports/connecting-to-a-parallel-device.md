@@ -5,17 +5,14 @@ description: Connecting to a Parallel Device
 ms.assetid: c05a1a1e-308a-4b9f-af43-761c4c14d6af
 keywords:
 - parallel devices WDK , connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connecting to a Parallel Device
 
 
-## <a href="" id="ddk-connecting-to-a-parallel-device-kg"></a>
+
 
 
 A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff544040) request to obtain a [**PARCLASS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544334) structure that contains:
@@ -37,6 +34,5 @@ A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISC
  
 
 
---------------------
 
 

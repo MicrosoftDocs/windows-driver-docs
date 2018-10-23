@@ -3,11 +3,8 @@ title: Enhanced Driver Configuration
 author: windows-driver-content
 description: GPD and PPD files can be used to provide enhanced driver configuration information for a v4 print driver.
 ms.assetid: B208C661-4D5B-467A-8451-4382453EC09A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enhanced Driver Configuration
@@ -57,10 +54,10 @@ Extension for Reading the PPD File
 
 The following XML fragment demonstrates the correct syntax for using the drvPrinterEvent attribute:
 
-```XML
-<?xml vesrion=&#39;1.0&#39;?>
+```xml
+<?xml version='1.0'?>
 ...
-  <Property name=&#39;DeviceInfo&#39;>
+  <Property name='DeviceInfo'>
      <Const name="Category" type="BIDI_STRING" value="DeviceCategory"/> 
      <Value name="QueueProperty" type="BIDI_STRING" accessType="Get" queryKey="Configuration" refreshInterval="60" drvPrinterEvent="true"/> 
   </Property> 
@@ -68,9 +65,8 @@ The following XML fragment demonstrates the correct syntax for using the drvPrin
 ```
 
 ## Related topics
+
 [V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Enhanced%20Driver%20Configuration%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

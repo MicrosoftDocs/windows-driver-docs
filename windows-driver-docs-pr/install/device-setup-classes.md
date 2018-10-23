@@ -5,17 +5,14 @@ ms.assetid: c9069018-266c-450a-b135-f1a35df76124
 keywords:
 - setup classes WDK device installations
 - device setup classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Setup Classes
 
 
-## <a href="" id="ddk-device-setup-classes-dg"></a>
+
 
 
 This section provides the following topics:

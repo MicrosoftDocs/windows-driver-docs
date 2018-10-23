@@ -3,11 +3,8 @@ title: Synchronized Access within Miniport Driver Routines
 author: windows-driver-content
 description: Even when a miniport driver executes in full-duplex mode or has unsynchronized processing of SRBs, it might still require synchronized access.
 ms.assetid: a1bc3bff-b109-4a52-8466-48a0be7611b7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronized Access within Miniport Driver Routines
@@ -25,6 +22,5 @@ When the miniport driver calls **StorPortSynchronizeAccess**, it must supply the
  
 
 
---------------------
 
 

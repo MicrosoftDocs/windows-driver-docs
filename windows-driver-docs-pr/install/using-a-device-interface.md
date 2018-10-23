@@ -5,17 +5,14 @@ ms.assetid: a41f9ae2-6128-43e2-a6b5-4d0bd45371bd
 keywords:
 - interface classes WDK device installations
 - device interface classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a Device Interface
 
 
-## <a href="" id="ddk-using-a-device-interface-dg"></a>
+
 
 
 Device interfaces are available to both kernel-mode components and user-mode applications. User-mode code can use **SetupDi***Xxx* functions to find out about registered, enabled device interfaces. See [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg) for more information.

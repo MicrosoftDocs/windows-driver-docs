@@ -5,11 +5,8 @@ ms.assetid: 1b34e223-e238-4547-bd44-754be2e6749c
 keywords:
 - AddDevice routine WDK battery
 - battery miniclass drivers WDK , routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AddDevice Routine of a Battery Miniclass Driver
@@ -33,6 +30,5 @@ In addition to the tasks required of a PnP *AddDevice* routine, the *AddDevice* 
  
 
 
---------------------
 
 

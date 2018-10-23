@@ -3,11 +3,8 @@ title: V4 Driver Setup Concepts
 author: windows-driver-content
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 ms.assetid: C1DF5496-14CF-4BF4-B85C-AF1A691C7AF2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Driver Setup Concepts
@@ -32,7 +29,7 @@ For example: 1284\_CID\_FA\_PCL5e\_Laser
 
 If CompatibleIDs are already implemented in existing devices, the print driver should continue to use those CompatibleIDs.
 
-CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](http://msdn.microsoft.com/library/windows/hardware/gg463313.aspx).
+CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](https://msdn.microsoft.com/library/windows/hardware/gg463313.aspx).
 
 Microsoft supports a few standard CompatibleIDs in order to support several manufacturer-neutral (standard) print class drivers. The following table shows these standard CompatibleIDs and their associated PDL file types.
 
@@ -136,7 +133,7 @@ c. Solution \#2 – The PnP devnode is extraneous: The setup program removes the
 
 **Driver Ranking**. The introduction of v4 print drivers does not modify the Plug and Play ranking behavior. When a device is plugged in, the available driver with the highest score will be selected. If the selected driver is a print class driver, and there is a better ranked, matching driver on the Windows Update site, then the selected driver will automatically be replaced the next time the user downloads updates for Windows.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](http://msdn.microsoft.com/library/windows/hardware/ff546225.aspx).
+For more information about driver ranking, see [How Windows Ranks Drivers](https://msdn.microsoft.com/library/windows/hardware/ff546225.aspx).
 
 ## Driver Setup Best Practices
 
@@ -180,11 +177,9 @@ c. CompatibleID lines: "Print Class Driver name" = INSTALL\_SECTION,,1284\_CID\_
 2. Print class driver INFs must not define any bus enumerators (for example, WSDPRINT\)
 
 ## Related topics
-[How to Implement Compatible IDs in Printing Devices](http://msdn.microsoft.com/library/windows/hardware/gg463313.aspx)  
-[How Windows Ranks Drivers](http://msdn.microsoft.com/library/windows/hardware/ff546225.aspx)  
+[How to Implement Compatible IDs in Printing Devices](https://msdn.microsoft.com/library/windows/hardware/gg463313.aspx)  
+[How Windows Ranks Drivers](https://msdn.microsoft.com/library/windows/hardware/ff546225.aspx)  
 [Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Driver%20Setup%20Concepts%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

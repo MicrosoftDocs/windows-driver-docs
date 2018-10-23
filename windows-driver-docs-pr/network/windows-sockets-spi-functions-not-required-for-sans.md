@@ -5,17 +5,14 @@ ms.assetid: 995ff59e-8ee4-4468-914d-47c14d804c38
 keywords:
 - SAN service providers WDK , not required functions
 - functions WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Sockets SPI Functions not Required for SANs
 
 
-## <a href="" id="ddk-windows-sockets-spi-functions-not-required-for-sans-ng"></a>
+
 
 
 This section describes the functions of the Windows Sockets SPI that a SAN service provider is not required to implement. These functions are defined in Ws2spi.h.

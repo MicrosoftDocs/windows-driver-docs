@@ -6,11 +6,8 @@ ms.assetid: 8760e7e4-1721-4e55-99e6-c9e234368fa1
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiInterrupt
 - HwScsiInterrupt
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiInterrupt Routine
@@ -44,6 +41,5 @@ For better overall system performance, a miniport driver's *HwScsiInterrupt* rou
  
 
 
---------------------
 
 

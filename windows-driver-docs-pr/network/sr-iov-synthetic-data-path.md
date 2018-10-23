@@ -2,11 +2,8 @@
 title: SR-IOV Synthetic Data Path
 description: SR-IOV Synthetic Data Path
 ms.assetid: FB7E57F6-AA99-421D-8344-B76615BD20ED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SR-IOV Synthetic Data Path

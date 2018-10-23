@@ -7,11 +7,8 @@ keywords:
 - changer drivers WDK storage , request processing
 - storage changer drivers WDK , request processing
 - IOCTLs WDK changer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing Changer Device-Control Requests
@@ -33,6 +30,5 @@ If the SRB succeeds, the miniclass driver routine fills in the output parameters
  
 
 
---------------------
 
 

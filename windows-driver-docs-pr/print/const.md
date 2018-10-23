@@ -5,11 +5,8 @@ description: The TCP/IP Const construct defines the data type and value that mus
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords:
 - Const construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Const (TCP/IP)
@@ -50,7 +47,7 @@ The TCP/IP Const construct defines the data type and value that must be returned
 
 The following code example extends the bidi communications schema by adding an `Extension` property to the `Printer` property, and a `Version` property to the `Extension` property. In the example, `Extension` contains a constant **value** entry, `Category`. Also, `Version` has two constant **value** entries, `Major` and `Minor`.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Category" type="BIDI_STRING" value="Extension"/>
@@ -64,7 +61,7 @@ The following code example extends the bidi communications schema by adding an `
 
 The preceding example results in the following queries:
 
-```
+```cpp
 \Printer.Extension:Category
 \Printer.Extension.Version:Major
 \Printer.Extension.Version:Minor
@@ -75,7 +72,5 @@ The preceding example results in the following queries:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Const%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -7,11 +7,8 @@ keywords:
 - actions WDK finish-install
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 - DIF_FINISHINSTALL_ACTION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing Finish-Install Actions

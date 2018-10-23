@@ -5,17 +5,14 @@ ms.assetid: 4d8cd9c2-6f78-4c70-83bd-f36fffbf1c35
 keywords:
 - NDIS network interfaces WDK , information about
 - network interfaces WDK , information about
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Interface Information
 
 
-## <a href="" id="ddk-network-interface-information-ng"></a>
+
 
 
 An interface provider supplies information about each registered interface by using the following data structures.

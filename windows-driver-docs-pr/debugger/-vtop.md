@@ -3,17 +3,15 @@ title: vtop
 description: The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
 ms.assetid: 41f4accc-3eb9-4406-a6cc-a05022166e14
 keywords: ["vtop Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - vtop
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !vtop
@@ -23,7 +21,7 @@ The **!vtop** extension converts a virtual address to the corresponding physical
 
 Syntax
 
-```
+```dbgcmd
 !vtop PFN VirtualAddress 
 !vtop 0 VirtualAddress 
 ```
@@ -58,7 +56,7 @@ To use this command, first use the [**!process**](-process.md) extension to dete
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 ....
@@ -69,7 +67,7 @@ PROCESS ff779190  SessionId: 0  Cid: 04fc    Peb: 7ffdf000  ParentCid: 0394
 
 Since the directory base is 0x098FD000, its PFN is 0x098FD.
 
-```
+```dbgcmd
 kd> !vtop 98fd 12f980
 Pdi 0 Pti 12f
 0012f980 09de9000 pfn(09de9)
@@ -81,7 +79,7 @@ If you want to convert the virtual address 0x0012F980 to a physical address, you
 
 If you forget to remove the three zeros, and pass the full directory base to **!vtop** instead of the PFN, the results will usually be correct. This is because when **!vtop** receives a number too large to be a PFN, it right-shifts it twelve bits and uses that number instead:
 
-```
+```dbgcmd
 kd> !vtop 98fd 12f980
 Pdi 0 Pti 12f
 0012f980 09de9000 pfn(09de9)
@@ -97,7 +95,6 @@ However, it is better to always use the PFN, because some directory base values 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!vtop%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,9 @@
 title: SymProxy Automated Installation
 description: These steps along with the Install.cmd script below can help automate the installation of SymProxy to a default IIS installation. 
 ms.assetid: 9E5433D8-D024-4E2B-AEAA-2271C133FD0E
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SymProxy Automated Installation
@@ -28,8 +26,8 @@ These steps along with the Install.cmd script below can help automate the instal
 4.  (Optionally) Create an empty file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. This accepts the EULA for the Microsoft Public Symbol Store.
 5.  Determine the parameters for Install.cmd and run it.
 6.  Configure the clients symbol path using the server name that you created.
-    ```
-    SRV*\\MachineName\Symbols*http://MachineName/Symbols
+    ```dbgcmd
+    SRV*\\MachineName\Symbols*https://MachineName/Symbols
     ```
 
 The Install.cmd script requires 3 parameters:
@@ -42,14 +40,14 @@ To clear the MIME Type inheritance, an XML file is needed to drive the associate
 
 Example Install.Cmd parameter usage:
 
-```
+```console
 Install.cmd D:\SymStore\Symbols CONTOSO\SymProxyService Pa$$word
 ```
 
 ## <span id="install.cmd"></span><span id="INSTALL.CMD"></span>Install.cmd
 
 
-```
+```bat
 @echo off
 
 SET VirDirectory=%1
@@ -104,7 +102,7 @@ rem Add * to the MIME Types of the 'Default Web Site'
 ## <span id="staticcontentclear.xml"></span><span id="STATICCONTENTCLEAR.XML"></span>staticContentClear.xml
 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <appcmd>
     <CONFIG CONFIG.SECTION="system.webServer/staticContent"                  path="MACHINE/WEBROOT/APPHOST">
@@ -121,15 +119,15 @@ The system should now be ready to acquire and serve files. To test it, start by 
 
 Configure a debugger to use this symbol path:
 
-```
-srv*\\MachineName\Symbols*http://MachineName/Symbols
+```dbgcmd
+srv*\\MachineName\Symbols*https://MachineName/Symbols
 ```
 
 If *MissTimeout* is enabled (it is set to 300 seconds by default), running the .reload /f command twice should result in much faster execution the second time.
 
 To view the location of the PDBs being referenced, use the lm (list modules) command. The path to the PDBs should all begin with \\\\MachineName\\Symbols.
 
-If directory browsing is enabled on the web site, browse to http://MachineName/Symbols to see the files that are cached.
+If directory browsing is enabled on the web site, browse to https://MachineName/Symbols to see the files that are cached.
 
 Open the Performance Monitor and view the Symbol Proxy counters.
 
@@ -144,7 +142,6 @@ Open the Event Viewer and view the Microsoft\\Windows\\SymProxy events.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20SymProxy%20Automated%20Installation%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

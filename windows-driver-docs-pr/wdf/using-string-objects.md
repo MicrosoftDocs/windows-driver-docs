@@ -7,11 +7,8 @@ keywords:
 - string objects WDK KMDF
 - framework objects WDK KMDF , string objects
 - Unicode strings WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using String Objects
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 This topic describes the support that Windows Driver Frameworks (WDF) provides for string objects. It applies to both Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting in version 2.
 
-## <a href="" id="ddk-using-user-event-objects-df"></a>
+
 
 
 WDF uses only Unicode strings. All of the methods that are defined by framework objects accept only Unicode strings.

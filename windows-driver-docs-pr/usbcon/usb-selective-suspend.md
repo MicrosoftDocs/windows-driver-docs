@@ -2,11 +2,8 @@
 Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Selective Suspend
@@ -20,10 +17,16 @@ The USB selective suspend feature allows the hub driver to suspend an individual
 
 There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
 
-## <a href="" id="------selecting-a-selective-suspend-mechanism"></a> Selecting a Selective Suspend Mechanism
+##  Selecting a Selective Suspend Mechanism
 
 
 Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) mechanism to selectively suspend a device.
+
+For information about remote wakeup, see:
+
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
@@ -64,7 +67,7 @@ The following restrictions apply to the use of idle request IRPs:
 The following WDM example code illustrates the steps that a device driver takes to send a USB idle request IRP. Error checking has been omitted in the following code example.
 
 1.  Allocate and initialize the [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270) IRP
-    ```
+    ```cpp
     irp = IoAllocateIrp (DeviceContext->TopOfStackDeviceObject->StackSize, FALSE);
     nextStack = IoGetNextIrpStackLocation (irp);
     nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;
@@ -74,7 +77,7 @@ The following WDM example code illustrates the steps that a device driver takes 
     ```
 
 2.  Allocate and initialize the idle request information structure (USB\_IDLE\_CALLBACK\_INFO).
-    ```
+    ```cpp
     idleCallbackInfo = ExAllocatePool (NonPagedPool,
     sizeof(struct _USB_IDLE_CALLBACK_INFO));
     idleCallbackInfo->IdleCallback = IdleNotificationCallback;
@@ -88,7 +91,7 @@ The following WDM example code illustrates the steps that a device driver takes 
 
     The client driver must associate a completion routine with the idle request IRP. For more information about the idle notification completion routine and example code, see "USB Idle Request IRP Completion Routine".
 
-    ```
+    ```cpp
     IoSetCompletionRoutine (irp,
      IdleNotificationRequestComplete,
        DeviceContext,
@@ -99,13 +102,13 @@ The following WDM example code illustrates the steps that a device driver takes 
     ```
 
 4.  Store the idle request in the device extension.
-    ```
+    ```cpp
     deviceExtension->PendingIdleIrp = irp;
      
     ```
 
 5.  Send the Idle request to the parent driver.
-    ```
+    ```cpp
     ntStatus = IoCallDriver (DeviceContext->TopOfStackDeviceObject, irp);
     ```
 
@@ -401,7 +404,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```
@@ -411,7 +414,5 @@ Client drivers should not try to determine whether selective suspend is enabled 
 ## Related topics
 [USB Power Management](usb-power-management.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Selective%20Suspend%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

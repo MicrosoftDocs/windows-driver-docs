@@ -4,17 +4,14 @@ description: Closing an Address Family in a CoNDIS Client
 ms.assetid: 06e8128a-f3da-48f2-a045-6c4be5f85889
 keywords:
 - client closed AFs WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Closing an Address Family in a CoNDIS Client
 
 
-## <a href="" id="ddk-closing-an-address-famil--in-a-condis-client-nd"></a>
+
 
 
 To close AFs, a CoNDIS client must provide a [**ProtocolClNotifyCloseAf**](https://msdn.microsoft.com/library/windows/hardware/ff570234) function. NDIS calls *ProtocolClNotifyCloseAf* when a stand-alone call manager or MCM calls the [**NdisCmNotifyCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561680) function or the [**NdisMCmNotifyCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff563546) function, respectively.

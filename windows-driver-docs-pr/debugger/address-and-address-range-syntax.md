@@ -2,11 +2,9 @@
 title: Address and Address Range Syntax
 description: Address and Address Range Syntax
 ms.assetid: 3d4f41f1-07ec-484d-a748-27fbbb9bd0b2
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Address and Address Range Syntax
@@ -106,14 +104,14 @@ Use the [**dg (Display Selector)**](dg--display-selector-.md) command to view se
 
 In MASM expressions, you can also use the **poi** operator to dereference any pointer. For example, if the pointer at address 0x00123456 points to address location 0x00420000, the following two commands are equivalent.
 
-```
+```dbgcmd
 0:000> dd 420000 
 0:000> dd poi(123456) 
 ```
 
 In C++ expressions, pointers behave like pointers in C++. However, numbers are interpreted as integers. If you have to deference an actual number, you must cast it first, as the following example shows.
 
-```
+```dbgcmd
 0:000> dd *( (long*) 0x123456 ) 
 ```
 
@@ -127,19 +125,19 @@ You can specify an address range by a pair of addresses or by an address and obj
 
 To specify a range by a pair of addresses, specify the starting address and the ending address. For example, the following example is a range of 8 bytes, beginning at the address 0x00001000.
 
-```
+```dbgcmd
 0x00001000  0x00001007
 ```
 
 To specify an address range by an address and object count, specify an address argument, the letter L (uppercase or lowercase), and a value argument. The address specifies the starting address. The value specifies the number of objects to be examined or displayed. The size of the object depends on the command. For example, if the object size is 1 byte, the following example is a range of 8 bytes, beginning at the address 0x00001000.
 
-```
+```dbgcmd
 0x00001000  L8
 ```
 
 However, if the object size is a double word (32 bits or 4 bytes), the following two ranges each give an 8-byte range.
 
-```
+```dbgcmd
 0x00001000  0x00001007
 0x00001000  L2
 ```
@@ -156,7 +154,6 @@ Some commands that ask for address ranges accept a single address as the argumen
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Address%20and%20Address%20Range%20Syntax%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

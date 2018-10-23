@@ -7,17 +7,14 @@ keywords:
 - NDIS-WDM miniport drivers WDK networking , entry-point functions
 - lower edge of NDIS miniport drivers WDK networking , entry-point functions
 - WDM lower edge WDK networking , entry-point functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering Miniport Driver Functions for WDM Lower Edge
 
 
-## <a href="" id="ddk-registering-miniport-driver-functions-for-wdm-lower-edge-ng"></a>
+
 
 
 A miniport driver that has a WDM lower edge must call the [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) function in its **DriverEntry** routine to register certain entry-point functions with the NDIS library. These entry-point functions compose the miniport driver's upper edge and are described in [Initializing a Miniport Driver](initializing-a-miniport-driver.md). However, a miniport driver that has a WDM lower edge is not required to set up certain entry-point functions. For example, the following entry-point functions are not set up for the following reasons:

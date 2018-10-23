@@ -12,17 +12,14 @@ keywords:
 - power management WDK NDIS miniport , power policy
 - user input WDK power management
 - power management WDK NDIS miniport , user input
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How NDIS Sets the Power Policy for a Network Adapter
 
 
-## <a href="" id="ddk-how-ndis-sets-the-power-policy-for-a-nic-ng"></a>
+
 
 
 NDIS serves as the device power policy owner for each network device. As such, NDIS sets and administers the power policy for each network device. For more information about managing device power policy, see [Managing Device Power Policy](https://msdn.microsoft.com/library/windows/hardware/ff554355).
@@ -102,7 +99,7 @@ NDIS uses the DEVICE\_CAPABILITIES information to determine if:
 
 The **DeviceState** array indicates, for each system power state, the highest-powered device power state in which the NIC can be and still support that system power state. For example, consider the following array values.
 
-```
+```cpp
 DeviceState[PowerSystemWorking] PowerDeviceD0
 DeviceState[PowerSystemSleeping1] PowerDeviceD1
 DeviceState[PowerSystemSleeping2] PowerDeviceD2

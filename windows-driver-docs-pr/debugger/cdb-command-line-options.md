@@ -3,17 +3,15 @@ title: CDB Command-Line Options
 description: First-time users of CDB or NTSD should begin with the Debugging Using CDB and NTSD section.
 ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 08/01/2018
 topic_type:
 - apiref
 api_name:
 - CDB Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CDB Command-Line Options
@@ -23,7 +21,7 @@ First-time users of CDB or NTSD should begin with the [Debugging Using CDB and N
 
 The CDB command line uses the following syntax:
 
-```
+```dbgcmd
 cdb  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -53,7 +51,7 @@ cdb -?
 
 The NTSD command-line syntax is identical to that of CDB:
 
-```
+```dbgcmd
 ntsd  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -83,7 +81,7 @@ ntsd -?
 
 The only difference between NTSD and CDB is that NTSD spawns a new console window while CDB inherits the window from which it was invoked. Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
-```
+```dbgcmd
 start cdb [parameters]
 ntsd [parameters]
 ```
@@ -407,7 +405,7 @@ Disables first-chance break on access violation exceptions. The second occurrenc
 Specifies the symbol search path. Separate multiple paths with a semicolon (;). If the path contains spaces, it should be enclosed in quotation marks. For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).
 
 <span id="_______-z_______DumpFile______"></span><span id="_______-z_______dumpfile______"></span><span id="_______-Z_______DUMPFILE______"></span> **-z** *DumpFile*   
-Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File with CDB](analyzing-a-user-mode-dump-file-with-cdb.md).
+Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md).
 
 <span id="_______-zp_______PageFile______"></span><span id="_______-zp_______pagefile______"></span><span id="_______-ZP_______PAGEFILE______"></span> **-zp** *PageFile*   
 Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
@@ -420,7 +418,7 @@ Displays command-line help text.
 
 When you are starting the debugger from **Start | Run** or from a Command Prompt window, specify arguments for the target application after the application's file name. For instance:
 
-```
+```dbgcmd
 cdb myexe arg1arg2
 ```
 
@@ -428,7 +426,6 @@ cdb myexe arg1arg2
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20CDB%20Command-Line%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

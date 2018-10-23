@@ -10,11 +10,8 @@ keywords:
 - registering network modules
 - Network Module Registrar WDK , attaching network modules
 - NMR WDK , attaching network modules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Module Attachment
@@ -24,35 +21,14 @@ Before a [client module](client-module.md) and a [provider module](provider-modu
 
 ![diagram illustrating network module registration](images/nmrattach1.png)
 
-```
-
-```
-
 If the client module and the provider module both specify the same [Network Programming Interface (NPI)](network-programming-interface.md) when they register with the NMR, the NMR will initiate attaching the two network modules together. The NMR initiates the attachment process by calling the client module's [*ClientAttachProvider*](https://msdn.microsoft.com/library/windows/hardware/ff544903) callback function. The following diagram illustrates the Network Module Registrar (NMR) initiating the attachment.
 
 ![diagram illustrating the network module registrar (nmr) initiating the attachment](images/nmrattach2.png)
-
-```
-
-```
 
 A client module's [*ClientAttachProvider*](https://msdn.microsoft.com/library/windows/hardware/ff544903) callback function can examine the registration data for the provider module to determine if it will attach to the provider module. If the client module determines that it will attach to the provider module, it continues the attachment process by calling the [**NmrClientAttachProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568770) function. When a client module calls the **NmrClientAttachProvider** function, the NMR in turn calls the provider module's [*ProviderAttachClient*](https://msdn.microsoft.com/library/windows/hardware/ff570395) callback function. The following diagram illustrates the client module continuing the attachment.
 
 ![diagram illustrating the client module continuing the attachment](images/nmrattach3.png)
 
-```
-
-```
-
 A provider module's [*ProviderAttachClient*](https://msdn.microsoft.com/library/windows/hardware/ff570395) callback function can examine the registration data for the client module to determine if it will attach to the client module. If the provider module determines that it will attach to the client module, the provider module and client module exchange pointers to their respective NPI dispatch table structures. After the client module and provider module are attached, they can interact with each other through their NPI functions independent of the NMR. The following diagram illustrates the network modules attached.
 
 ![diagram illustrating the network modules attached](images/nmrattach4.png)
-
- 
-
- 
-
-
-
-
-

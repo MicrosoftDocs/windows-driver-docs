@@ -3,17 +3,15 @@ title: Bug Check 0x111 RECURSIVE_NMI
 description: The RECURSIVE_NMI bug check has a value of 0x00000111. This bug check indicates that a non-maskable-interrupt (NMI) occurred while a previous NMI was in progress.
 ms.assetid: 1f275db1-ac79-4bd2-85c5-cb64342911d1
 keywords: ["Bug Check 0x111 RECURSIVE_NMI", "RECURSIVE_NMI"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - RECURSIVE_NMI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x111: RECURSIVE\_NMI
@@ -21,7 +19,7 @@ api_type:
 
 The RECURSIVE\_NMI bug check has a value of 0x00000111. This bug check indicates that a non-maskable-interrupt (NMI) occurred while a previous NMI was in progress.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 Remarks
 -------

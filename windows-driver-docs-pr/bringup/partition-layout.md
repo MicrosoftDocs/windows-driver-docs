@@ -3,11 +3,8 @@ title: Partition Layout
 author: windows-driver-content
 description: Partition Layout
 ms.assetid: 59ac7ec7-1b96-4fe1-a221-d8422e60072d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows 10 Mobile partition layout
@@ -198,4 +195,3 @@ The removable user data partition refers to the data stored on the SD card. The 
  
 
 
---------------------

@@ -5,11 +5,8 @@ description: What is Driver Security
 ms.assetid: df959e2b-c779-4171-b408-32fbe52ed7af
 keywords:
 - security WDK file systems , about file system security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What is Driver Security
@@ -29,6 +26,5 @@ Achieving secure drivers requires the cooperation of the designer (consciously t
  
 
 
---------------------
 
 

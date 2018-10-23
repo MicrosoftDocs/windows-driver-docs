@@ -12,17 +12,14 @@ keywords:
 - landscape mode WDK Unidrv
 - portrait mode WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Paper Orientation
 
 
-## <a href="" id="ddk-specifying-paper-orientation-gg"></a>
+
 
 
 There are three [standard options](standard-options.md) associated with the Orientation [standard feature](standard-features.md): PORTRAIT, LANDSCAPE\_CC90, and LANDSCAPE\_CC270. Unless otherwise specified, the default orientation is PORTRAIT. The use of this option is straightforward, and is not discussed further in this topic. The balance of this topic is concerned with the two landscape options.
@@ -39,7 +36,7 @@ For a printer that supports landscape mode as well as portrait mode, you should 
 
 However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 option ordinarily would be used), can still operate with the LANDSCAPE\_CC270 option. Under this option, Unidrv is directed to treat the printer as if it supported only portrait mode (that is, with only a single coordinate system, with the origin at the upper left corner). Consequently, Unidrv must not be directed to issue a command to change coordinate systems. Unidrv presents the transformed text and graphics to the printer with coordinates relative to this upper-left-corner origin. Because Unidrv assumes this location of the origin, such a printer must not be issued a landscape mode command string, even when the user has selected the Landscape orientation on the printer's property page. In the following GPD file example, notice that the \*Option: LANDSCAPE\_CC270 section contains a command to place the printer into portrait mode (ORIENT\_PORTRAIT\_CMD), and not one to place it into landscape mode.
 
-```
+```cpp
 *Feature: Orientation
 {
   *rcNameID: =ORIENTATION_DISPLAY
@@ -74,7 +71,5 @@ However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 o
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Specifying%20Paper%20Orientation%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

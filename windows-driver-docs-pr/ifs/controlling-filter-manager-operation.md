@@ -5,11 +5,8 @@ description: Controlling Filter Manager Operation
 ms.assetid: 884e6a15-5bfa-41bf-b759-af6e43078fad
 keywords:
 - filter manager WDK file system minifilter , controlling operation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Filter Manager Operation
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 The operation of filter manager on versions of Windows earlier than Windows Vista is controlled by the REG\_DWORD *AttachWhenLoaded* registry value stored under the following key:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\FltMgr
 ```
 
@@ -36,6 +33,5 @@ When a minifilter driver is installed on Windows prior to Windows Vista, the so
  
 
 
---------------------
 
 

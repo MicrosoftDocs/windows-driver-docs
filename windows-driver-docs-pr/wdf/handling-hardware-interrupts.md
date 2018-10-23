@@ -12,11 +12,8 @@ keywords:
 - Kernel-Mode Driver Framework WDK , hardware interrupts
 - framework objects WDK KMDF , interrupt objects
 - interrupt objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Hardware Interrupts
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
 The topics in this section describe how a Windows Driver Frameworks (WDF) driver creates framework interrupt objects to service hardware interrupts, and how your driver synchronizes access to interrupt data buffers.
 
-## <a href="" id="ddk-handling-hardware-interrupts-df"></a>
+
 
 
 ## In this section

@@ -2,11 +2,8 @@
 ms.assetid: 79AB7242-72D6-4198-9AF0-482CBFB756C7
 title: How to write a driver test using a Driver Test template
 description: Use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to write a driver test using a Driver Test template
@@ -122,8 +119,8 @@ The WDK provides starter code for a Windows Driver test project in C++, C\#, and
 ## <span id="related_topics"></span>Related topics
 
 
-* [Test Authoring and Execution Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725)
-* [Windows Driver Testing Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547)
+* [Test Authoring and Execution Framework](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725)
+* [Windows Driver Testing Framework](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547)
 * [How to add test metadata](to-add-test-metadata.md)
  
 

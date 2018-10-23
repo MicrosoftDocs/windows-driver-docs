@@ -7,11 +7,8 @@ keywords:
 - boot configurations WDK KMDF
 - logical configurations WDK KMDF
 - hardware resources WDK KMDF , about hardware resources
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Hardware Resources

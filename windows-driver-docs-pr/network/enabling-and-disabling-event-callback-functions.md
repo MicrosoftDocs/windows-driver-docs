@@ -9,11 +9,8 @@ keywords:
 - event callback functions WDK Winsock Kernel
 - SO_WSK_EVENT_CALLBACK
 - WSK_SET_STATIC_EVENT_CALLBACKS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling Event Callback Functions
@@ -25,7 +22,7 @@ All of a socket's event callback functions, except for a listening socket's [*Ws
 
 The following code example shows how a WSK application can use the SO\_WSK\_EVENT\_CALLBACK socket option to enable the [*WskDisconnectEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571130) and [*WskReceiveEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571140) event callback functions on a connection-oriented socket.
 
-```
+```C++
 // Function to enable the WskDisconnectEvent and WskReceiveEvent
 // event callback functions on a connection-oriented socket
 NTSTATUS
@@ -71,7 +68,7 @@ NTSTATUS
 
 The following code example shows how a WSK application can use the [**SO\_WSK\_EVENT\_CALLBACK**](https://msdn.microsoft.com/library/windows/hardware/ff570834) socket option to disable the [*WskReceiveEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571140) event callback functions on a connection-oriented socket.
 
-```
+```C++
 // Prototype for the disable disconnect IoCompletion routine
 NTSTATUS
   DisableDisconnectComplete(
@@ -198,7 +195,7 @@ If a WSK application always enables certain event callback functions on every so
 
 The following code example shows how a WSK application can use the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation to automatically enable the [*WskReceiveFromEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571142) event callback function on datagram sockets and the [*WskReceiveEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571140) event callback function on connection-oriented sockets.
 
-```
+```C++
 // Function to set static event callbacks
 NTSTATUS
   SetStaticEventCallbacks(

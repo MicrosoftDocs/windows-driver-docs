@@ -9,17 +9,14 @@ keywords:
 - request processing WDK KMDF , request objects
 - framework objects WDK KMDF , I/O request objects
 - request objects WDK KMDF , about request objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Request Objects
 
 
-## <a href="" id="ddk-framework-request-objects-df"></a>
+
 
 
 Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](https://msdn.microsoft.com/library/windows/hardware/dn265664).

@@ -8,11 +8,8 @@ keywords:
 - forward progress, guaranteed WDK KMDF
 - low-memory situations WDK KMDF
 - I/O queues WDK KMDF , guaranteed forward progress
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guaranteeing Forward Progress of I/O Operations

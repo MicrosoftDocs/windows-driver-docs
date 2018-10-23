@@ -8,11 +8,8 @@ keywords:
 - send operations from target WDK TCP chimney offload
 - fragment ID space WDK TCP chimney offload
 - IP IDs WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Data from an Offload Target

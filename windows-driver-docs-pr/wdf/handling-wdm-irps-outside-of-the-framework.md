@@ -9,11 +9,8 @@ keywords:
 - IRPs WDK KMDF
 - IRPs WDK KMDF , outside framework
 - I/O request packets WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling WDM IRPs Outside of the Framework

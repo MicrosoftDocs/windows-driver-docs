@@ -10,11 +10,8 @@ keywords:
 - kernel-mode communication WDK file system minifilter
 - user-mode communication WDK file system minifilter
 - ports WDK , file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Communication Between User Mode and Kernel Mode
@@ -90,6 +87,5 @@ The following minifilter driver callback routines are passed as parameters to [*
  
 
 
---------------------
 
 

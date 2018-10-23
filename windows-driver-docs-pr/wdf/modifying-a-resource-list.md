@@ -7,11 +7,8 @@ keywords:
 - boot configuration resource lists WDK KMDF , modifying
 - hardware resources WDK KMDF , resource lists
 - resource lists WDK KMDF , modifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying a Resource List

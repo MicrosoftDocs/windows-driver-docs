@@ -9,11 +9,8 @@ keywords:
 - close-file notifications WDK UMDF
 - notifications WDK UMDF
 - notifications WDK UMDF , preventing create and close imbalance
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preventing an Imbalance of Create and Close Notifications to a Driver

@@ -7,11 +7,8 @@ keywords:
 - installed device setup classes WDK
 - installed device setup classes WDK , enumerating
 - device setup classes WDK device installations , enumerating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerating Installed Device Setup Classes

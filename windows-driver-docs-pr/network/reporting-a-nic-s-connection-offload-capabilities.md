@@ -5,17 +5,14 @@ ms.assetid: a9bf798b-382c-4904-b0b2-ed1e54f9c36b
 keywords:
 - connection offload WDK TCP/IP transport , reporting capabilities
 - reporting connection offload capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's Connection Offload Capabilities
 
 
-## <a href="" id="ddk-reporting-a-nic-s-connection-offload-capabilities-ng"></a>
+
 
 
 An NDIS miniport driver specifies the current connection offload configuration of a NIC in an [**NDIS\_TCP\_CONNECTION\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff567875) structure. Miniport drivers must include the current connection offload configuration in the [**NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565930) structure. Miniport drivers call the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and pass in the information in NDIS\_MINIPORT\_TCP\_CONNECTION\_OFFLOAD\_ATTRIBUTES.

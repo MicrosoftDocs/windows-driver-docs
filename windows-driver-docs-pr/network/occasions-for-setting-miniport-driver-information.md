@@ -2,17 +2,14 @@
 title: Occasions for Setting Miniport Driver Information
 description: Occasions for Setting Miniport Driver Information
 ms.assetid: 46834d76-e1b9-440c-af18-a4b564d1a76e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Occasions for Setting Miniport Driver Information
 
 
-## <a href="" id="ddk-occasions-for-setting-miniport-driver-information-ng"></a>
+
 
 
 The [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function in a connectionless miniport driver and the [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function in a connection-oriented miniport driver are called during initialization. These functions can also be called:

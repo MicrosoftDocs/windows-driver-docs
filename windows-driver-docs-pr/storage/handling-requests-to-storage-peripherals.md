@@ -10,11 +10,8 @@ keywords:
 - storage peripherals WDK
 - peripherals WDK storage , about storage peripherals
 - storage peripherals WDK , about storage peripherals
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Requests to Storage Peripherals
@@ -46,6 +43,5 @@ For additional information about handling requests to storage peripherals, see t
  
 
 
---------------------
 
 

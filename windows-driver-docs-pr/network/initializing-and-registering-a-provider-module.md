@@ -8,11 +8,8 @@ keywords:
 - registering provider modules
 - initializing provider modules
 - NmrRegisterProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing and Registering a Provider Module
@@ -26,7 +23,7 @@ All of these data structures must remain valid and resident in memory as long as
 
 For example, suppose the "EXNPI" NPI defines the following in header file Exnpi.h:
 
-```
+```C++
 // EXNPI NPI identifier
 const NPIID EXNPI_NPIID = { ... };
 
@@ -41,11 +38,11 @@ typedef struct EXNPI_PROVIDER_CHARACTERISTICS_
 
 The following shows how a provider module that registers itself as a provider of the EXNPI NPI can initialize all of these data structures:
 
-```
+```C++
 // Include the NPI specific header file
 #include "exnpi.h"
 
-// Structure for the provider module&#39;s NPI-specific characteristics
+// Structure for the provider module's NPI-specific characteristics
 const EXNPI_PROVIDER_CHARACTERISTICS NpiSpecificCharacteristics =
 {
   .
@@ -53,7 +50,7 @@ const EXNPI_PROVIDER_CHARACTERISTICS NpiSpecificCharacteristics =
   .
 };
 
-// Structure for the provider module&#39;s identification
+// Structure for the provider module's identification
 const NPI_MODULEID ProviderModuleId =
 {
   sizeof(NPI_MODULEID),
@@ -61,7 +58,7 @@ const NPI_MODULEID ProviderModuleId =
   { ... }  // A GUID that uniquely identifies the provider module
 };
 
-// Prototypes for the provider module&#39;s callback functions
+// Prototypes for the provider module's callback functions
 NTSTATUS
   ProviderAttachClient(
     IN HANDLE NmrBindingHandle,
@@ -83,7 +80,7 @@ VOID
     IN PVOID ProviderBindingContext
     );
 
-// Structure for the provider module&#39;s characteristics
+// Structure for the provider module's characteristics
 const NPI_PROVIDER_CHARACTERISTICS ProviderCharacteristics =
 {
   0,
@@ -101,14 +98,14 @@ const NPI_PROVIDER_CHARACTERISTICS ProviderCharacteristics =
   }
 };
 
-// Context structure for the provider module&#39;s registration
+// Context structure for the provider module's registration
 typedef struct PROVIDER_REGISTRATION_CONTEXT_ {
   .
   . // Provider-specific members
   .
 } PROVIDER_REGISTRATION_CONTEXT, *PPROVIDER_REGISTRATION_CONTEXT;
 
-// Structure for the provider&#39;s registration context
+// Structure for the provider's registration context
 PROVIDER_REGISTRATION_CONTEXT ProviderRegistrationContext =
 {
   .
@@ -125,8 +122,8 @@ A provider module typically initializes itself within its [**DriverEntry**](http
 
 For example:
 
-```
-// Prototype for the provider module&#39;s unload function
+```C++
+// Prototype for the provider module's unload function
 VOID
   Unload(
     PDRIVER_OBJECT DriverObject

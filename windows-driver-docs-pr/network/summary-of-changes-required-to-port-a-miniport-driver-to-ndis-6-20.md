@@ -7,17 +7,14 @@ keywords:
 - porting miniport drivers to NDIS 6.20 WDK
 - miniport drivers WDK
 - miniport drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.20
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-20"></a>
+
 
 
 This topic summarizes the changes that are required to port an NDIS 6.x miniport driver to NDIS 6.20.

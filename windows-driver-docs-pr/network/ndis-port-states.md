@@ -9,17 +9,14 @@ keywords:
 - authentication states WDK NDIS ports
 - link states WDK NDIS ports
 - initialization states WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Port States
 
 
-## <a href="" id="ddk-ndis-port-states-ng"></a>
+
 
 
 NDIS ports have operating states that include initialization states and states that are specified in the [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800) structure. Port states fit into the following categories:

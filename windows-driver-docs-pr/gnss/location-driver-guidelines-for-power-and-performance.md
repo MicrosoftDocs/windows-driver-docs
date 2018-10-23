@@ -3,11 +3,8 @@ title: Location driver guidelines for power and performance
 author: windows-driver-content
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
 ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Location driver guidelines for power and performance
@@ -64,7 +61,7 @@ If any app requests DESIRED\_ACCURACY\_HIGH, the sensor should deliver the highe
 
 ### Detecting Idle States
 
-Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](http://msdn.microsoft.com/library/windows/hardware/ff561211.aspx) for more info.
+Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561211.aspx) for more info.
 
 ### Position Injection for GPS and GNSS
 
@@ -98,7 +95,5 @@ The use of the Sensor API for sensor-to-sensor communication to enable location 
 [Writing a Location Sensor Driver](writing-a-location-sensor-driver.md)  
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Location%20driver%20guidelines%20for%20power%20and%20performance%20%20RELEASE:%20%281/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

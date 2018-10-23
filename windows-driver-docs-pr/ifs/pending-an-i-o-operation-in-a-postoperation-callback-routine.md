@@ -6,11 +6,8 @@ ms.assetid: 126e13fb-51f6-4dcc-aa13-850921b3c752
 keywords:
 - postoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pending an I/O Operation in a Postoperation Callback Routine
@@ -48,6 +45,5 @@ The work routine that dequeues and performs completion processing for the I/O op
  
 
 
---------------------
 
 

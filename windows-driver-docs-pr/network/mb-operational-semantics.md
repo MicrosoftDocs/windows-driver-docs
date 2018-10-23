@@ -2,11 +2,8 @@
 title: MB Operational Semantics
 description: MB Operational Semantics
 ms.assetid: 5f04b7fd-3df3-4efa-bb26-c7f4cd3c9ebd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Operational Semantics
@@ -157,7 +154,7 @@ You must set the **RequestId** member of the NDIS\_STATUS\_INDICATION structure 
 
 Both the asynchronous response for a given OID request and the unsolicited event notification structures share the following structure members that are pointed to by **StatusBuffer** member of the *StatusIndication* parameter to [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600):
 
-```
+```C++
 typedef struct _NDIS_WWAN_XXX {
   NDIS_OBJECT_HEADER Header;
   WWAN_STATUS uStatus;

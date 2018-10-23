@@ -9,17 +9,14 @@ keywords:
 - OIDs WDK networking , request operation porting
 - object identifiers WDK networking
 - porting miniport drivers WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver OID Request Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-oid-request-handling-to-ndis-6-0-ng"></a>
+
 
 
 In NDIS 6.0, the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function replaces the NDIS 5.x [**MiniportQueryInformation**](https://msdn.microsoft.com/library/windows/hardware/ff550490) and [**MiniportSetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff550530) functions. Also, the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure replaces the [**NDIS\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff557179) structure.

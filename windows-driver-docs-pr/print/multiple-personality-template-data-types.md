@@ -11,11 +11,8 @@ keywords:
 - ElementTags directive WDK GDL
 - unions WDK GDL
 - GDL WDK , unions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multiple Personality Template Data Types
@@ -39,7 +36,7 @@ The following directives are used to define the MULTIPLE\_PERSONALITY data type:
 
 Consider the following template.
 
-```
+```cpp
 *Template:  INT_OR_QUALNAME_EX
 {
     *Type:  DATATYPE
@@ -53,14 +50,14 @@ This template defines a data type that can hold an INTEGER value, QUALNAME\_EX v
 
 Consider the following GDL entries.
 
-```
+```cpp
 *rcNameID:     ( RESDLL.stdname.467 )  
 *rcNameID:      (0x117 )  
 ```
 
 And consider the following RC\_NAME\_ID2 template.
 
-```
+```cpp
 *Template:  RC_NAME_ID2
 {
     *Name:  "*rcNameID"
@@ -72,7 +69,7 @@ And consider the following RC\_NAME\_ID2 template.
 
 If the GDL entries are interpreted by the preceding template, the resulting XML output will be as follows.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*rcNameID"  Personality="QualNameEx" >
    <feature  xsi:type="GDLW_string">RESDLL</feature>
    <option  xsi:type="GDLW_string">stdname</option>
@@ -86,7 +83,7 @@ The only difference between the XML output that is generated from the MULTIPLE\_
 
 For example, you can create an array where each member of the array is a MULTIPLE\_PERSONALITY type, as follows.
 
-```
+```cpp
 *Template:  DT_ARRAY_OF_MP
 {
     *Type:  DATATYPE
@@ -107,13 +104,13 @@ For example, you can create an array where each member of the array is a MULTIPL
 
 And you can use the preceding template to process the following instance data, which is an array that contains three multiple personality objects, each of which happens to have a different personality.
 
-```
+```cpp
 *rcNameID_List:( RESDLL.stdname.467, 0x117, "Quote" )
 ```
 
 This processing will produce the following XML snapshot.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*rcNameID_List"  >
         <ArrayMember  Personality="QualNameEx">
             <feature  xsi:type="GDLW_string">RESDLL</feature>
@@ -132,7 +129,5 @@ As the snapshot shows, the parser determined the correct personality for each of
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Multiple%20Personality%20Template%20Data%20Types%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

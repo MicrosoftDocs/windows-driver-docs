@@ -9,17 +9,14 @@ keywords:
 - message-signaled interrupts WDK networking , porting
 - MSIs WDK networking , porting operations
 - porting miniport driv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Interrupt Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-interrupt-operations-to-ndis-6-0-ng"></a>
+
 
 
 In NDIS 6.0, the interrupt function entry points are moved from the driver characteristics into the [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566465) structure.

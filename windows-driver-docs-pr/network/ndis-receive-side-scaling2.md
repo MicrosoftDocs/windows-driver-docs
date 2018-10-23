@@ -7,17 +7,14 @@ keywords:
 - receive-side scaling WDK networking , NDIS 6.0
 - RSS WDK networking , NDIS 6.0
 - network receive processing WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receive Side Scaling
 
 
-## <a href="" id="ddk-ndis-receive-side-scaling-ng"></a>
+
 
 
 Receive side scaling (RSS) improves the system performance related to handling of network data on multiprocessor systems.

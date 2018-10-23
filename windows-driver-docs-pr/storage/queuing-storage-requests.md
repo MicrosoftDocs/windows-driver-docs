@@ -8,11 +8,8 @@ keywords:
 - storage peripherals WDK , queued requests
 - queued requests WDK storage
 - queues WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Queuing Storage Requests
@@ -38,6 +35,5 @@ If an HBA supports command queuing, as indicated in the returned STORAGE\_ADAPTE
  
 
 
---------------------
 
 

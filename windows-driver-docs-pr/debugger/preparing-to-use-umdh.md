@@ -3,11 +3,9 @@ title: Preparing to Use UMDH
 description: Preparing to Use UMDH
 ms.assetid: 9adebe43-3167-4e1a-ac98-db19ace944be
 keywords: ["UMDH, preparing to use UMDH", "UMDH, disabling BSTR caching", "SetNoOaCache function", "OANOCACHE environment variable", "stack trace database"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preparing to Use UMDH
@@ -46,13 +44,13 @@ If you also include a path to Windows symbols, the analysis may be more complete
 
 For example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you have installed the Windows symbol files to \\\\myshare\\winsymbols, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\myapp\symbols;\\myshare\winsymbols
 ```
 
 As another example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\myapp\symbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -70,7 +68,7 @@ Alternatively, you can disable BSTR caching from within the application itself b
 
 If you need to trace the allocations made by a service, you must set OANOCACHE as a system environment variable and then restart Windows for this setting to take effect.
 
-On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](http://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
+On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](https://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
 
 ### <span id="find_the_process_id"></span><span id="FIND_THE_PROCESS_ID"></span>Find the Process ID
 
@@ -80,7 +78,6 @@ UMDH identifies the process by its process identifier (PID). You can find the PI
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Preparing%20to%20Use%20UMDH%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -13,11 +13,8 @@ keywords:
 - deleting subdevices
 - unregistering subdevices
 - dynamic subdevices WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dynamic Audio Subdevices
@@ -25,7 +22,7 @@ ms.technology: windows-devices
 
 Some audio adapters can dynamically change their internal topologies at run time. By using the system-supplied capabilities in the PortCls system driver (Portcls.sys), adapter drivers can provide software support for dynamically configurable audio hardware.
 
-For example, the [Intel High Definition Audio Specification](http://go.microsoft.com/fwlink/p/?linkid=42508) uses the term audio codec to refer to an integrated audio adapter that connects to a High Definition Audio (HD Audio) controller through an HD Audio Link interface. A typical audio codec supports jack-presence detection: when a plug is inserted into or removed from a jack, the hardware generates an interrupt to notify the driver of the change in the hardware configuration. For example, the driver responds to the insertion of a plug into the headphones jack by creating a [KS filter](https://msdn.microsoft.com/library/windows/hardware/ff567644) to represent the audio subdevice for the headphones. The driver assigns hardware resources to the filter (for example, headphones might require a volume control and a digital-to-analog converter, or DAC) and registers the filter as an audio device. When the user unplugs the headphones, the driver responds by freeing the resources, deleting the filter, and removing it from the registry.
+For example, the [Intel High Definition Audio Specification](https://go.microsoft.com/fwlink/p/?linkid=42508) uses the term audio codec to refer to an integrated audio adapter that connects to a High Definition Audio (HD Audio) controller through an HD Audio Link interface. A typical audio codec supports jack-presence detection: when a plug is inserted into or removed from a jack, the hardware generates an interrupt to notify the driver of the change in the hardware configuration. For example, the driver responds to the insertion of a plug into the headphones jack by creating a [KS filter](https://msdn.microsoft.com/library/windows/hardware/ff567644) to represent the audio subdevice for the headphones. The driver assigns hardware resources to the filter (for example, headphones might require a volume control and a digital-to-analog converter, or DAC) and registers the filter as an audio device. When the user unplugs the headphones, the driver responds by freeing the resources, deleting the filter, and removing it from the registry.
 
 This behavior ensures that when an audio application checks to see which audio devices are registered, it finds only the devices that are currently plugged in. If a device is unplugged, it does not appear in the registry.
 
@@ -58,7 +55,5 @@ The following topics in this section describe how to implement driver support fo
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Dynamic%20Audio%20Subdevices%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

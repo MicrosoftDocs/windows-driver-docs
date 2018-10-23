@@ -2,17 +2,14 @@
 title: Obtaining and Updating Power Management Parameters
 description: Obtaining and Updating Power Management Parameters
 ms.assetid: 46c4d2ab-e6d9-4d23-bf40-0037b80b01af
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining and Updating Power Management Parameters
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 Protocol drivers can use the [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) OID to query the hardware capabilities of a network adapter that is currently enabled. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure.

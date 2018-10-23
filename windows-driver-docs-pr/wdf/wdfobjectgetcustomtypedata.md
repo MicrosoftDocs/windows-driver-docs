@@ -5,11 +5,8 @@ description: The WdfObjectGetCustomTypeData macro retrieves the data that the dr
 ms.assetid: 60A6546B-84C6-4A53-BAA1-3719DCBA63B4
 keywords:
  - WdfObjectGetCustomTypeData macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfObjectGetCustomTypeData macro

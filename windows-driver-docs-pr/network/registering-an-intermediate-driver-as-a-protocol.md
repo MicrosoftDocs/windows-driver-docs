@@ -6,17 +6,14 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering an Intermediate Driver as a Protocol
 
 
-## <a href="" id="ddk-registering-an-intermediate-driver-as-a-protocol-ng"></a>
+
 
 
 An intermediate driver registers its *ProtocolXxx* functions with NDIS in the context of its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function by calling [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520).

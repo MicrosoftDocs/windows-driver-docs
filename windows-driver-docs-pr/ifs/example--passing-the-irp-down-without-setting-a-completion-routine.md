@@ -6,11 +6,8 @@ ms.assetid: d18d3ead-2cec-4ea6-ac4c-b809ba985f23
 keywords:
 - IRP dispatch routines WDK file system , passing IRP down
 - passing IRPs down device stack WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: Passing the IRP Down Without Setting a Completion Routine
@@ -27,14 +24,14 @@ To pass the IRP down to lower-level drivers without setting a completion routine
 
 This technique is illustrated in the following code examples:
 
-```
+```cpp
 IoSkipCurrentIrpStackLocation ( Irp ); 
 return IoCallDriver ( NextLowerDriverDeviceObject, Irp ); 
 ```
 
 Or, equivalently:
 
-```
+```cpp
 IoSkipCurrentIrpStackLocation ( Irp ); 
 status = IoCallDriver ( NextLowerDriverDeviceObject, Irp ); 
 /* log or debugprint the status value here */
@@ -58,6 +55,5 @@ If you call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/libra
  
 
 
---------------------
 
 

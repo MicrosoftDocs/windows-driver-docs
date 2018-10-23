@@ -10,26 +10,25 @@ api_name:
 - INF DefaultInstall Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DefaultInstall Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is not valid and should not be used.  Instead, use only the [**INF Manufacturer Section**](inf-manufacturer-section.md).  Using both **DefaultInstall** and **Manufacturer** sections in your INF will cause Universal INF validation failures and can lead to inconsistent installation behaviors.  See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
 An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
 
-```
+```cpp
 [DefaultInstall] | 
 [DefaultInstall.nt] | 
 [DefaultInstall.ntx86] | 
+[DefaultInstall.ntarm] | (Windows 8 and later versions of Windows)
+[DefaultInstall.ntarm64]  (Windows 10 version 1709 and later versions of Windows)
 [DefaultInstall.ntia64] | (Windows XP and later versions of Windows)
 [DefaultInstall.ntamd64]  (Windows XP and later versions of Windows)
  
@@ -75,7 +74,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-```
+```cpp
 Include= ks.inf[,[kscaptur.inf,][ksfilter.inf]]
 ```
 
@@ -86,7 +85,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-```
+```cpp
 Needs= KS.Registration[,KSCAPTUR.Registration | 
                         KSCAPTUR.Registration.NT,MSPCLOCK.Installation]
 ```
@@ -111,7 +110,7 @@ Typically, this directive is used to handle upgrades when an INF must clean up o
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=***bit-registry-section*\[**,***bit-registry-section*\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type REG_BINARY are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\***SetupClassGUID***\\***device-instance-id* registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 
@@ -164,7 +163,7 @@ Providing a **DefaultInstall** section is optional. If an INF file does not incl
 
 To install a **DefaultInstall** section from a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), use the following call to **InstallHinfSection**:
 
-```
+```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
 ```
 
@@ -177,7 +176,7 @@ Examples
 
 The following example shows a typical **DefaultInstall** section:
 
-```
+```cpp
 [DefaultInstall]
 CopyFiles=MyAppWinFiles, MyAppSysFiles, @SRSutil.exe
 AddReg=MyAppRegEntries

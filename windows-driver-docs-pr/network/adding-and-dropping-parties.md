@@ -5,17 +5,14 @@ ms.assetid: ec4c10a4-6a8f-4c1c-858e-954b98922e84
 keywords:
 - connection-oriented NDIS WDK , parties
 - CoNDIS WDK networking , parties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding and Dropping Parties
 
 
-## <a href="" id="ddk-adding-and-dropping-parties-ng"></a>
+
 
 
 A connection-oriented client can add a party to an outgoing multipoint call that it initiated with [**NdisClMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff561635). A connection-oriented client can also delete a party from a multipoint call either at its own discretion or at the request of the remote party to be dropped.

@@ -3,17 +3,15 @@ title: Bug Check 0xFF RESERVE_QUEUE_OVERFLOW
 description: The RESERVE_QUEUE_OVERFLOW bug check has a value of 0x000000FF. This indicates that an attempt was made to insert a new item into a reserve queue, causing the queue to overflow.
 ms.assetid: d327ea41-c568-49f6-8b37-183533fd6261
 keywords: ["Bug Check 0xFF RESERVE_QUEUE_OVERFLOW", "RESERVE_QUEUE_OVERFLOW"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - RESERVE_QUEUE_OVERFLOW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFF: RESERVE\_QUEUE\_OVERFLOW
@@ -21,7 +19,7 @@ api_type:
 
 The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates that an attempt was made to insert a new item into a reserve queue, causing the queue to overflow.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## RESERVE\_QUEUE\_OVERFLOW Parameters
 

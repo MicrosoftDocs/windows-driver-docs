@@ -2,11 +2,8 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get a code signing certificate
@@ -16,7 +13,7 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 ## <span id="Step_1__Determine_which_type_of_code_signing_certificate_you_need"></span><span id="step_1__determine_which_type_of_code_signing_certificate_you_need"></span><span id="STEP_1__DETERMINE_WHICH_TYPE_OF_CODE_SIGNING_CERTIFICATE_YOU_NEED"></span>Step 1: Determine which type of code signing certificate you need
 
 
--   Microsoft accepts standard code signing and extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. Please see <http://aka.ms/rootcert> for more information. If you already have an approved standard or EV certificate from one of these authorities, you can use it to establish a Hardware Dev Center hardware dashboard account. If you don’t have a certificate, you’ll need to buy a new one.
+-   Microsoft accepts standard code signing and extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved standard or EV certificate from one of these authorities, you can use it to establish a Hardware Dev Center hardware dashboard account. If you don’t have a certificate, you’ll need to buy a new one.
 
 -   The table below provides the details of the Certificate requirements for each of the dashboard services.
 
@@ -68,16 +65,20 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 <td><p>Windows Reference Design</p></td>
 <td><p>Standard or EV</p></td>
 </tr>
+<tr class="even">
+<td><p>Attestation Driver Signing</p></td>
+<td><p>EV</p></td>
+</tr>
 </tbody>
 </table>
 
  
-
-**Note**   Submissions will enforce the EV-only requirement later this year.
+> [!NOTE] 
+> The Hardware Dev Center dashboard will enforce mandatory EV certificates for submissions later this year.
 
  
 
-### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center hardware dashboard
+### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
 There are two types of code signing certificates available today:
 
@@ -110,7 +111,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a Symantec standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393247)
 
--   [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062)
+-   [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062) (Supported only in the Hardware Dev Center Dashboard)
 
 -   [Buy an Entrust standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843067)
 
@@ -175,7 +176,7 @@ This section provides answers to frequently asked questions about code signing f
 
 **HLK Tested and Dashboard Signed Drivers**
 
--   A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588).
+-   A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index).
 
 **Windows 10 Desktop Attestation Signing**
 
@@ -190,7 +191,7 @@ This section provides answers to frequently asked questions about code signing f
 
 **Cross-Signing and SHA-256 Certificates**
 
-Cross-signing describes a process where a driver is signed with a certificate issued by a Certificate Authority (CA) that is trusted by Microsoft. For more information, see [Cross-Certificates Overview](https://msdn.microsoft.com/library/windows/hardware/dn170454%28v=vs.85%29.aspx ).
+Cross-signing describes a process where a driver is signed with a certificate issued by a Certificate Authority (CA) that is trusted by Microsoft. For more information, see [Cross-Certificates Overview](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing).
 
 -   Windows 8 and later versions support SHA-256.
 -   Windows 7, if patched, supports SHA-256. If you need to support unpatched devices that run Windows 7, you need to either cross-sign with a SHA-1 certificate or submit to the Dashboard for signing. Otherwise, you can either cross-sign with SHA-1 or SHA-2 certificate or create an HLK/HCK submission for signing.
@@ -241,10 +242,9 @@ This table summarizes the driver signing requirements for Windows.
 
 \*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://technet.microsoft.com/library/mt219733.aspx).
 
-(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://msdn.microsoft.com/library/windows/hardware/dn170454). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
+(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Get%20a%20code%20signing%20certificate%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -6,17 +6,14 @@ ms.assetid: d7e6d187-bed4-4071-a50b-90f32c4f0d5a
 keywords:
 - work items WDK KMDF
 - queues WDK KMDF , framework work items
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Framework Work Items
 
 
-## <a href="" id="ddk-using-framework-work-items-df"></a>
+
 
 
 A *work item* is a task that a driver performs in an [*EvtWorkItem*](https://msdn.microsoft.com/library/windows/hardware/ff541859) event callback function. These functions run asynchronously, at IRQL = PASSIVE\_LEVEL, in the context of a system worker thread.

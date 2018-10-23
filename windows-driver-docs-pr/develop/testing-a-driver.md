@@ -2,27 +2,28 @@
 ms.assetid: bb73768e-0ac9-4377-9caa-c0cce1d10bb8
 title: Testing a Driver
 description: Testing a Driver
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 06/28/2018
+ms.localizationpriority: medium
 ---
 
 # Testing a Driver
 
-The WDK adds a driver testing interface to Visual Studio that allows you to conveniently build, deploy, install, and test a driver on a remote test computer on your network. The WDK also provides a collection of device driver tests that you can use to test features and functions of your driver. You can also write customize or write your own driver tests using the Driver Test Template in Visual Studio.
+The WDK adds a driver testing interface to Visual Studio that allows you to build, deploy, install, and test a driver on a remote test computer on your network. The WDK also provides a collection of device driver tests that you can use to test features and functions of your driver. You can also write customize or write your own driver tests using the Driver Test Template in Visual Studio.
 
 ## <span id="Video_Demonstration"></span><span id="video_demonstration"></span><span id="VIDEO_DEMONSTRATION"></span>Video Demonstration
 
 
 This video demonstrates the how to run driver-related tests in a test group.
 
-<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/en-us/videoplayer/embed/e12e5ce5-b41f-4b91-ab5f-69598ccdcb57?autoplay=false"></iframe> 
+<iframe class="video-iframe" style="width: 100%; height: 550px;" frameborder="0" allowfullscreen="true" src ="https://www.microsoft.com/videoplayer/embed/e12e5ce5-b41f-4b91-ab5f-69598ccdcb57?autoplay=false"></iframe> 
 
 This section describes some strategies for testing driver, and information about how you select and configure a remote computer to use for testing.
 
 To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016).
+
+The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
+For more information, see [Run the DevFund Tests via the command-line](https://review.docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
+
 ## 
 <table>
 <colgroup>

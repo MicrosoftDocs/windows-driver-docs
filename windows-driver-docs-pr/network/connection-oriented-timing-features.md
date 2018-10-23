@@ -8,17 +8,14 @@ keywords:
 - timing features WDK CoNDIS
 - clocks
 - local clocks WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Timing Features
 
 
-## <a href="" id="ddk-connection-oriented-timing-features-ng"></a>
+
 
 
 Connection-oriented NDIS supports using a NIC's local time for scheduling the transmission of packets and for time-stamping send and receive packets.

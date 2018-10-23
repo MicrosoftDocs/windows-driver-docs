@@ -6,17 +6,14 @@ keywords:
 - NDPROXY WDK networking
 - NDISWAN WDK networking
 - architecture WDK WAN , NDPROXY
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDPROXY Overview
 
 
-## <a href="" id="ddk-ndproxy-overview-ng"></a>
+
 
 
 **Note**  If you are reading this page because of the 27 November 2013 [Microsoft Security Advisory (2914486)](http://technet.microsoft.com/security/advisory/2914486) affecting Windows XP and Windows Server 2003, you may find this Trustworthy Computing [blog post](http://blogs.technet.com/b/msrc/archive/2013/11/27/microsoft-releases-security-advisory-2914486.aspx) helpful.

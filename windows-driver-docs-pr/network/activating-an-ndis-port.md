@@ -8,17 +8,14 @@ keywords:
 - activating NDIS ports
 - port states WDK NDIS
 - activation PnP events WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Activating an NDIS Port
 
 
-## <a href="" id="ddk-activating-ndis-ports-ng"></a>
+
 
 
 After a miniport driver successfully allocates an NDIS port, and before using the port number in NDIS functions, the driver must activate the port. To activate the port, the miniport driver sends a port activation Plug and Play (PnP) event to NDIS. To send the port activation PnP event, miniport drivers use the **NetEventPortActivation** PnP event code in the call to the [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) function.

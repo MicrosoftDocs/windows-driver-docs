@@ -11,17 +11,14 @@ keywords:
 - AFM files
 - converting AFM files to NTF files
 - Adobe Font Metrics WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting AFM Files to NTF Files
 
 
-## <a href="" id="ddk-converting-afm-files-to-ntf-files-gg"></a>
+
 
 
 For Windows 2000 and later, Adobe Font Metrics ([*AFM*](https://msdn.microsoft.com/library/windows/hardware/ff556270#wdkgloss-adobe-font-metrics--afm-)) files must be converted to .ntf files. A command-line tool for performing this conversion, named makentf.exe, was provided with the Windows Driver Development Kit (DDK).
@@ -46,7 +43,7 @@ Verbose. This option creates a command output stream that contains a textual dis
 <a href="" id="-o"></a>**-o**  
 Omit standard Western glyph sets. By default, Makentf.exe includes the standard Western glyph sets when generating an .ntf file. If you are creating multiple .ntf files, you only need to include the Western glyph sets in one of the files, as long as all the files will be used together. For example, suppose you are creating one .ntf file that contains Roman font metrics and another that contains Japanese font metrics. You might use the following commands:
 
-```
+```cpp
 makentf -win32 roman.ntf roman1.afm roman2.afm roman3.afm
 makentf -win32 -o jpn.ntf jpn1.afm jpn2.afm jpn3.afm
 ```
@@ -63,7 +60,7 @@ An additional file, PSFamily.dat, is provided with the WDK and must reside in th
 
 Before a standard .afm file can be converted, you must add a line similar to the following:
 
-```
+```cpp
 Comment UniqueID IDnumber
 ```
 
@@ -78,7 +75,5 @@ An .afm file that will be converted to an .ntf file can contain the **FontBBox2*
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Converting%20AFM%20Files%20to%20NTF%20Files%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

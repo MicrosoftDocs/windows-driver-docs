@@ -9,17 +9,14 @@ keywords:
 - custom OIDs WDK networking
 - custom status indications WDK networking
 - WMI WDK networking , OID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customized OIDs and Status Indications
 
 
-## <a href="" id="ddk-customized-oids-and-status-indications-ng"></a>
+
 
 
 You can create a custom OID that NDIS maps to a custom GUID that you create. NDIS registers the custom GUID with WMI for the miniport driver so that WMI clients can query or set the associated information.

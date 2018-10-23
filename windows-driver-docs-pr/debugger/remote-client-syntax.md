@@ -3,17 +3,15 @@ title: Remote Client Syntax
 description: To start the client side of the Remote tool, use the following syntax at the command line.
 ms.assetid: 4728ef17-a365-4024-815c-2719b51b81f6
 keywords: ["Remote Client Syntax Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Remote Client Syntax
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Remote Client Syntax
@@ -21,7 +19,7 @@ api_type:
 
 To start the client side of the Remote tool, use the following syntax at the command line.
 
-```
+```console
 remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
 ```
 
@@ -67,14 +65,14 @@ To disconnect from a remote session, type **@q**. For more information, see [Rem
 
 The keyword or phrase appears on a line by itself. The colors associated with that keyword appear by themselves on the following line, as shown in the syntax:
 
-```
+```text
 Keyword
 TextColor[, BackgroundColor]
 ```
 
 For example, the following file directs Remote to display lines that include the word "error" in black text on a light red background; to display lines that include the word "warning" in light blue (on the default background), and lines that include the phrase "Windows Vista" in light green on the default background.
 
-```
+```text
 ERROR
 black, lred
 WARNING
@@ -85,7 +83,7 @@ lgreen
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```console
 remote /c Server01 TestSession
 remote /c Domain1\ComputerA0 "cmd" "My Remote Session"
 remote /c Server01 TestSession /L 50 /f black /b white /k c:\remote_file.txt
@@ -96,7 +94,6 @@ remote /q Server01
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Remote%20Client%20Syntax%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

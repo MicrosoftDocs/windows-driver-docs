@@ -9,11 +9,8 @@ keywords:
 - DMA transfers WDK NetDMA , completing
 - NetDMA WDK networking , completing transfers
 - completing DMA transfers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing a DMA Transfer
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-completing-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface provides two methods for a NetDMA provider to complete a dynamic memory access (DMA) transfer:

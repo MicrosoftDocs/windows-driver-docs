@@ -7,11 +7,8 @@ keywords:
 - RDBSS WDK file systems , macros
 - Redirected Drive Buffering Subsystem WDK file systems , macros
 - macros WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Macros Defined by RDBSS
@@ -193,6 +190,5 @@ The following macros are defined by RDBSS.
  
 
 
---------------------
 
 

@@ -4,24 +4,21 @@ author: windows-driver-content
 description: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
 ms.assetid: 672fb3d8-6e64-425b-a035-8f8ecfd624f1
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "PASSIVE_LEVEL WDK", "driver stacks WDK configuration info"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL
 
 
-## <a href="" id="ddk-obtaining-device-configuration-information-at-irql-passive-level-k"></a>
+
 
 
 To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**IRP\_MN\_READ\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551727) and [**IRP\_MN\_WRITE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551769). You indicate in the IRP stack which configuration space you wish to access and where the I/O buffer is. See the description of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure for further details.
 
 The following code sample demonstrates how to access a device's configuration space.
 
-```
+```cpp
 NTSTATUS
 ReadWriteConfigSpace(
     IN PDEVICE_OBJECT  DeviceObject,
@@ -83,7 +80,5 @@ End:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Obtaining%20Device%20Configuration%20Information%20at%20IRQL%20=%20PASSIVE_LEVEL%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

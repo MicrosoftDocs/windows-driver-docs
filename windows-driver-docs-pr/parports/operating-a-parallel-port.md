@@ -7,17 +7,14 @@ keywords:
 - vendor-supplied parallel drivers WDK , parallel port operation
 - system-supplied function drivers WDK parallel ports
 - function drivers WDK parallel ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operating a Parallel Port
 
 
-## <a href="" id="ddk-operating-a-parallel-port-kg"></a>
+
 
 
 This section describes how a client, in particular, a vendor-supplied function driver for a parallel device, operates a parallel port.
@@ -53,6 +50,5 @@ For more information about system support for parallel ports, see:
  
 
 
---------------------
 
 

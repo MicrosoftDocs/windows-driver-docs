@@ -3,17 +3,15 @@ title: irql extension command
 description: The irql extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 ms.assetid: 52dd3b9f-c03c-4b90-a01b-25289de67f5a
 keywords: ["IRQL", "Interrupt Request Level", "irql Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - irql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !irql
@@ -21,7 +19,7 @@ api_type:
 
 The **!irql** extension displays the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 
-```
+```dbgcmd
 !irql [Processor] 
 ```
 
@@ -77,7 +75,7 @@ If you supply an invalid processor number, or there has been kernel corruption, 
 
 Here is an example of the output from this extension from a dual-processor x86 computer:
 
-```
+```dbgcmd
 kd> !irql 0
 Debugger saved IRQL for processor 0x0 -- 28 (CLOCK2_LEVEL)
 
@@ -87,14 +85,14 @@ Debugger saved IRQL for processor 0x1 -- 0 (LOW_LEVEL)
 
 If the debugger is in verbose mode, a description of the IRQL itself is included. Here is an example from an Itanium processor:
 
-```
+```dbgcmd
 kd> !irql
 Debugger saved IRQL for processor 0x0 -- 12 (PC_LEVEL) [Performance counter level]
 ```
 
 The meaning of the IRQL number often depends on the processor. Here is an example from an x64 processor. Note that the IRQL number is the same as in the previous example, but the IRQL meaning is different:
 
-```
+```dbgcmd
 kd> !irql
 Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level]
 ```
@@ -103,7 +101,6 @@ Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!irql%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

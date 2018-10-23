@@ -3,17 +3,15 @@ title: Bug Check 0x14F PDC_WATCHDOG_TIMEOUT
 description: The PDC_WATCHDOG_TIMEOUT bug check has a value of 0x0000014F. This indicates that a system component failed to respond within the allocated time period.
 ms.assetid: 347D31C2-7027-44BD-A0E8-60C6EC3A2030
 keywords: ["Bug Check 0x14F PDC_WATCHDOG_TIMEOUT", "PDC_WATCHDOG_TIMEOUT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PDC_WATCHDOG_TIMEOUT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14F: PDC\_WATCHDOG\_TIMEOUT
@@ -21,7 +19,7 @@ api_type:
 
 The PDC\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000014F. This indicates that a system component failed to respond within the allocated time period, preventing the system from exiting connected standby.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PDC\_WATCHDOG\_TIMEOUT Parameters
 

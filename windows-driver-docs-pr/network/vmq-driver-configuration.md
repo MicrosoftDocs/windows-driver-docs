@@ -2,17 +2,14 @@
 title: VMQ Driver Configuration
 description: VMQ Driver Configuration
 ms.assetid: 69133958-fbc0-4bae-9ca1-56e8152db500
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VMQ Driver Configuration
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This section describes the features that NDIS provides to determine the virtual machine queue (VMQ) capabilities of network adapters.

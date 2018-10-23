@@ -3,11 +3,8 @@ title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
 author: windows-driver-content
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
 ms.assetid: e27ed767-7854-4b2f-8043-35c39357eee4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Initialize
@@ -18,7 +15,7 @@ The **Initialize** function waits for a connection from the host computer for th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS(EFIAPI * EFI_SIMPLE_WINPHONE_IO_INITIALIZE) 
 (
@@ -95,6 +92,5 @@ The function returns one of the following values:
  
 
 
---------------------
 
 

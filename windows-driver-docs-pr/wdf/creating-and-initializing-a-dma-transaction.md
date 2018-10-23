@@ -9,11 +9,8 @@ keywords:
 - bus-master DMA WDK KMDF , transactions
 - DMA transactions WDK KMDF , creating
 - initializing DMA transactions WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Initializing a DMA Transaction
@@ -21,7 +18,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-creating-and-initializing-a-dma-transaction-df"></a>
+
 
 
 Before your driver can send an I/O request to a DMA device, the driver must:

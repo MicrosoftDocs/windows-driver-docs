@@ -11,24 +11,21 @@ keywords:
 - interrupts WDK networking
 - interrupt affinity WDK networking
 - interrupts WDK net
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS MSI-X
 
 
-## <a href="" id="ddk-ndis-msi-x-ng"></a>
+
 
 
 Message-signaled interrupts (MSIs) provide an alternative to traditional line-based interrupts that network devices and their miniport drivers can use. Starting with Windows Vista, the operating system supports two types of MSIs: PCI V2.2 MSI and PCI V3.0 MSI-X.
 
 Miniport drivers that support MSI-X can specify an *interrupt affinity*, which is a subset of central processing units (CPUs) that the drivers' message interrupt service routines run on. You can specify the interrupt affinity for each MSI-X message--for example, you can specify interrupt affinities on computers with Non-Uniform Memory Access (NUMA) architecture in terms of the "nearness" of their device to certain CPUs.
 
-MSI-X support can provide significant performance benefits, especially for network interface cards (NICs) that support receive side scaling (RSS). For more information about receive side scaling, see [NDIS 6.0 Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+MSI-X support can provide significant performance benefits, especially for network interface cards (NICs) that support receive side scaling (RSS). For more information about receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
 For more information about line-based interrupts, see [Managing Interrupts](managing-interrupts.md).
 

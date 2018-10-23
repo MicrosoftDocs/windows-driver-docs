@@ -5,17 +5,14 @@ ms.assetid: 3d7c6f75-4523-4ad3-b15d-53f9d4ee1074
 keywords:
 - Ethernet frame splitting WDK networking , TCP payload
 - TCP payload WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting Frames at the TCP Payload
 
 
-## <a href="" id="ddk-splitting-frames-at-the-tcp-payload-ng"></a>
+
 
 
 NDIS miniport adapters that support header-data split must support splitting frames at the upper-layer-protocol header for TCP frames. However, if the TCP header does not contain any TCP options, the NIC should split the frame at the beginning of the TCP payload.

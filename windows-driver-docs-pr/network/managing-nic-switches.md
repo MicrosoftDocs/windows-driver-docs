@@ -2,11 +2,8 @@
 title: Managing NIC Switches
 description: Managing NIC Switches
 ms.assetid: EE198C8D-427B-4013-8D19-5323332A4D87
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing NIC Switches

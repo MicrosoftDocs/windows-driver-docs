@@ -3,17 +3,15 @@ title: ndiskd.ndisevent
 description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
 ms.assetid: E042CA22-6521-4DD4-9396-39EC587706D6
 keywords: ["ndiskd.ndisevent Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.ndisevent
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisevent
@@ -25,7 +23,7 @@ api_type:
 
 The **!ndiskd.ndisevent** extension displays an NDIS debug event log.
 
-```
+```console
 !ndiskd.ndisevent [-handle <x>] [-tagtype <str>] 
 ```
 
@@ -49,7 +47,7 @@ To see the output of the event log for a network adapter, !ndiskd provides a lin
 
 First, enter the **!ndiskd.netadapter** command with no parameters to see a list of network adapters and miniport drivers on the system. In the following example, look for the handle for the Marvell AVASTAR Wireless-AC Network Controller, ffffc804b9e6f1a0.
 
-```
+```console
 1: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
@@ -70,7 +68,7 @@ First, enter the **!ndiskd.netadapter** command with no parameters to see a list
 
 Now, click on the link for that NetAdapter or enter the **!ndiskd.netadapter -handle** command to see its details. Look for the "Show state history" link to the right of the Device PnP field, in the State section.
 
-```
+```console
 1: kd> !ndiskd.netadapter ffffc804b9e6f1a0
 
 
@@ -141,7 +139,7 @@ MORE INFORMATION
 
 Now you can click the "Show state history" link or use the net adapter's handle to enter the **!ndiskd.netadapter -handle -log** command, which will show you the PnP event log for this miniport's miniport driver.
 
-```
+```console
 1: kd> !ndiskd.netadapter ffffc804b9e6f1a0 -log
 
 
@@ -175,7 +173,6 @@ MINIPORT PM & PNP EVENTS
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.ndisevent%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

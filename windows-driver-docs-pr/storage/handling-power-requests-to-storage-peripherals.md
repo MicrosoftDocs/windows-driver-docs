@@ -7,11 +7,8 @@ keywords:
 - peripherals WDK storage , power requests
 - storage peripherals WDK , power requests
 - power requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Power Requests to Storage Peripherals
@@ -43,6 +40,5 @@ A class driver should not attempt to bypass a queue locked by another driver.
  
 
 
---------------------
 
 

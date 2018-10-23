@@ -4,17 +4,14 @@ description: Summary of Changes Required to Port a Protocol Driver to NDIS 6.0
 ms.assetid: a2d17b63-81fc-44c9-a437-cd7c9f04be5b
 keywords:
 - porting protocol drivers WDK networking , required changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Protocol Driver to NDIS 6.0
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-0-"></a>
+
 
 
 This topic provides a summary of the changes that are required to port an NDIS 5.x protocol driver to NDIS 6.0. Porting earlier drivers is similar to porting NDIS 5.x drivers. To run in the NDIS 6.0 environment, NDIS 5.*x* protocol drivers must be modified as follows:

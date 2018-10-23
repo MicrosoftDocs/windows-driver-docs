@@ -6,11 +6,8 @@ keywords:
 - Bluetooth WDK , registry entries
 - registry WDK Bluetooth
 - COD_Type subkey
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Registry Entries
@@ -26,7 +23,7 @@ The registry path to the **COD Major** and **COD Type** values is:
 
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\BTHPORT\\Parameters
 
-Note that setting these values changes the Bluetooth Class of Device for the system, regardless of which Bluetooth radio may be attached. You can set the **COD Major** and **COD Type** to `DWORD` values as defined for the Class of Device field values in the [Bluetooth SIG Assigned Numbers](https://www.bluetooth.org/specification/assigned-numbers/baseband).
+Note that setting these values changes the Bluetooth Class of Device for the system, regardless of which Bluetooth radio may be attached. You can set the **COD Major** and **COD Type** to `DWORD` values as defined for the Class of Device field values in the [Bluetooth SIG Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/baseband).
 
 The Bluetooth profile driver, BthPort.sys, reads the **COD Major** and **COD Type** values to determine how it should respond to a device inquiry. These values affect only the `COD_MAJOR_XXX` and `COD_XXX_MINOR_XXX` bits of the Class of Device. The `COD_SERVICE_XXX` bits are not affected by this registry entry.
 
@@ -36,7 +33,7 @@ If the **COD Major** and **COD Type** values are not set or are set to invalid v
 
 Profile drivers can specify scanning parameters settings for their device(s) in their profile driver's INF file to tailor to the specific needs of a given device scenario.
 
-You can override the default system scanning parameters by providing one or more of the following scanning parameters listed below into the AddReg directive. More information on how to use this directive can be found on [MSDN](http://msdn.microsoft.com/library/ff546320(VS.85).aspx).
+You can override the default system scanning parameters by providing one or more of the following scanning parameters listed below into the AddReg directive. More information on how to use this directive can be found in [INF AddReg Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 |                           |               |           |                                                                                |
 |---------------------------|---------------|-----------|--------------------------------------------------------------------------------|
@@ -60,7 +57,6 @@ You can override the default system scanning parameters by providing one or more
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20Registry%20Entries%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

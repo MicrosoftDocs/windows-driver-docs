@@ -3,11 +3,8 @@ title: IRP-Based I/O Operations That Obey Device Object Flags
 author: windows-driver-content
 description: IRP-Based I/O Operations That Obey Device Object Flags
 ms.assetid: d322aeda-a753-4616-8a35-1a5ae5a37cf2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP-Based I/O Operations That Obey Device Object Flags
@@ -49,6 +46,5 @@ Note that IRP\_MJ\_READ and IRP\_MJ\_WRITE can be IRP-based or fast I/O operatio
  
 
 
---------------------
 
 

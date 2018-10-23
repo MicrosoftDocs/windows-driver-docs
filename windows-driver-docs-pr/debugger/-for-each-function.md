@@ -3,17 +3,15 @@ title: for_each_function
 description: The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 ms.assetid: D51C3562-3D49-4528-A208-71A8756EBC8E
 keywords: ["for_each_function Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - for_each_function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !for\_each\_function
@@ -21,7 +19,7 @@ api_type:
 
 The **!for\_each\_function** extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 
-```
+```dbgcmd
 !for_each_function -m:ModuleName -p:Pattern -c:CommandString
 !for_each_function -?
 ```
@@ -91,7 +89,7 @@ Remarks
 
 The following example shows how to list all function names, in the PCI module, that match the pattern \*read\*.
 
-```
+```dbgcmd
 1: kd> !for_each_function -m:pci -p:*read* -c:.echo @#FunctionName
 
 PciReadDeviceConfig
@@ -116,7 +114,7 @@ The following example shows how to list all symbols, in all modules, whose funct
 
  
 
-```
+```dbgcmd
 1: kd> !for_each_module !for_each_function -m:${@#ModuleName} -p:*CreateFile* -c:.echo @#SymbolName
 nt!BiCreateFileDeviceElement
 nt!NtCreateFile
@@ -136,7 +134,7 @@ srv!SrvIoCreateFile
 
 You can put a sequence of commands in a command file, and use [**$$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) to execute those commands for each function that matches the pattern. Suppose that a file named Commands.txt contains the following commands:
 
-```
+```dbgcmd
 .echo
 .echo @#FunctionName
 u @#SymbolAddress L1
@@ -144,7 +142,7 @@ u @#SymbolAddress L1
 
 In the following example, the commands in the Commands.text file are executed for each function, in the PCI module, that matches the pattern \*read\*.
 
-```
+```dbgcmd
 1: kd> !for_each_function -m:pci -p:*read* -c:$$><Commands.txt
 
 PciReadDeviceConfig
@@ -167,7 +165,6 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!for_each_function%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

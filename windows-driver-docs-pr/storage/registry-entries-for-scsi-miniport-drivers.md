@@ -12,11 +12,8 @@ keywords:
 - BusType
 - CreateInitiatorLU
 - pseudo-LUNs WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Entries for SCSI Miniport Drivers
@@ -69,6 +66,5 @@ The following registry entries allow you to configure the behavior of the port d
  
 
 
---------------------
 
 

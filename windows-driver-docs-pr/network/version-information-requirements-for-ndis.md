@@ -2,17 +2,14 @@
 title: Version Information Requirements for NDIS
 description: Version Information Requirements for NDIS
 ms.assetid: b2850077-271f-4bb6-8710-ae9415ad5eda
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Version Information Requirements for NDIS
 
 
-## <a href="" id="ddk-version-information-requirements-for-ndis-ng"></a>
+
 
 
 NDIS supports various header version information requirements that guarantee consistent behavior between NDIS versions. To support header version information, NDIS has the following responsibilities:

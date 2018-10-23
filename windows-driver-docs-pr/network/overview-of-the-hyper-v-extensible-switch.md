@@ -2,11 +2,8 @@
 title: Overview of the Hyper-V Extensible Switch
 description: This section provides an overview of the Hyper-V Extensible Switch
 ms.assetid: 78181C72-FBFD-4860-A664-C297997D780F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Hyper-V Extensible Switch
@@ -28,7 +25,7 @@ For high-level technical overviews of this technology and its underpinnings, see
 -   [Hyper-V Network Virtualization Overview](http://technet.microsoft.com/library/jj134230.aspx)
 -   [Hyper-V Overview](http://technet.microsoft.com/library/hh831531.aspx)
 
-## <a href="" id="types-of-hyper-v--extensible-switches-and-network-adapters"></a>Types of Hyper-V extensible switches and network adapters
+## Types of Hyper-V extensible switches and network adapters
 
 
 The Hyper-V Virtual Network Manager can be used to create, configure, or delete one or more extensible switches of the following types:

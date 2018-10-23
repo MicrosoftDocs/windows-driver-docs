@@ -2,11 +2,8 @@
 Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
 title: Microsoft USB Test Tool (MUTT) devices
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft USB Test Tool (MUTT) devices
@@ -56,7 +53,7 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 
     ![mutt device](images/fig1-mutt-device.png)
 
-## <a href="" id="mutt-pack-"></a>MUTT Pack
+## MUTT Pack
 
 
 The MUTT Pack is a combination of a USB 2.0 hub and an FX2 device that controls the hub and acts as a downstream device.
@@ -99,7 +96,7 @@ This image shows how to use the jumper for powering the MUTT pack with an extern
 
  
 
-## <a href="" id="supermutt-"></a>SuperMUTT
+## SuperMUTT
 
 
 -   Based on the design of FX3 EZ-USB FX3.
@@ -128,7 +125,7 @@ The DR MUTT acts like a SuperMutt when testing host mode of the device under tes
 ## USB Type-C ConnEx
 
 
-The MUTT Connection Exerciser for USB Type-C (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
+The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
 
 ![USB Type-C ConnEx](images/connexc-side.jpg)
 
@@ -136,8 +133,6 @@ The MUTT Connection Exerciser for USB Type-C (USB Type-C ConnEx) is a custom shi
 [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 [Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Microsoft%20USB%20Test%20Tool%20%28MUTT%29%20devices%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: WSD Scan Service Operation Error Reporting
 description: WSD Scan Service Operation Error Reporting
 ms.assetid: 78cf0cf9-f792-4dc9-b0df-c45b408b85ab
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WSD Scan Service Operation Error Reporting
@@ -26,7 +23,7 @@ All error messages that are defined within the WSD Scan Service must be sent acc
 
 Endpoints must include required message information headers on all fault messages. Fault messages are correlated as replies by using the \[relationship\] property as defined in WS-Addressing. The following \[action\] property designates fault messages:
 
-```
+```xml
 http://schemas.xmlsoap.org/ws/2004/08/addressing/fault
 ```
 
@@ -67,7 +64,7 @@ The definitions of faults use the following properties.
 
 These properties bind to a SOAP 1.2 fault as the following code example shows.
 
-```
+```xml
 <S:Envelope>
   <S:Header>
     <wsa:Action>http://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action>
@@ -92,7 +89,7 @@ These properties bind to a SOAP 1.2 fault as the following code example shows.
 
 The following code example shows a sample SOAP **Fault**.
 
-```
+```xml
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soapelope"
     xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -121,7 +118,6 @@ The following code example shows a sample SOAP **Fault**.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WSD%20Scan%20Service%20Operation%20Error%20Reporting%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

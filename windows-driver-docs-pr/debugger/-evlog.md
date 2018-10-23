@@ -3,17 +3,15 @@ title: evlog
 description: The evlog extension displays, changes, or backs up the event log.
 ms.assetid: 72038e3e-ff12-4df1-8f55-c02258d764aa
 keywords: ["event log", "evlog Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - evlog
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !evlog
@@ -21,7 +19,7 @@ api_type:
 
 The **!evlog** extension displays, changes, or backs up the event log.
 
-```
+```dbgcmd
 !evlog addsource [-d] [-s Source] [-t Type] [-f MsgFile] 
 !evlog backup [-d] [-l EventLog] [-f BackupFile] 
 !evlog clear [-!] [-d] [-l EventLog] [-f BackupFile] 
@@ -144,7 +142,7 @@ Remarks
 
 After you have added an event source to the registry with **!evlog addsource**, you can view the values with [**!dreg**](-dreg.md). For example:
 
-```
+```dbgcmd
 0:000> !dreg hklm\system\currentcontrolset\services\eventlog\Application\<source>!* 
 ```
 
@@ -154,7 +152,7 @@ Before using **!evlog report**, you should use **!evlog addsource** to configure
 
 Here is an example of the **!evlog info** extension:
 
-```
+```dbgcmd
 ## 0:000> !evlog info -?
 
 Application Event Log:
@@ -246,7 +244,6 @@ WARNING: Max record count (4) exceeded, increase record count to view more
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!evlog%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Instance ID
 description: An instance ID is a device identification string that distinguishes a device from other devices of the same type on a computer.
 ms.assetid: 093063a6-1855-4e36-9465-1eedaa3cd0f9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Instance ID
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 An instance ID is a device identification string that distinguishes a device from other devices of the same type on a computer. An instance ID contains serial number information, if supported by the underlying bus, or some kind of location information. The string cannot contain any "\\" characters; otherwise, the generic format of the string is bus-specific.
 
-## <a href="" id="ddk-instance-ids-dg"></a>
+
 
 
 The number of characters of an instance ID, excluding a NULL-terminator, must be less than MAX_DEVICE_ID_LEN. In addition, when an instance ID is concatenated to a [device ID](device-ids.md) to create a device instance ID, the lengths of the device ID and the instance ID are further constrained by the maximum possible length of a device instance ID.

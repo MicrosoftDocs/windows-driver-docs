@@ -7,11 +7,8 @@ keywords:
 - storage port drivers WDK , Storport driver
 - Storport drivers WDK
 - Storport drivers WDK , about Storport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport Driver
@@ -61,6 +58,5 @@ This section includes the following topics:
  
 
 
---------------------
 
 

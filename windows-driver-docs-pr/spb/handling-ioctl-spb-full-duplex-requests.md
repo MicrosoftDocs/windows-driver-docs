@@ -3,11 +3,8 @@ title: Handling IOCTL_SPB_FULL_DUPLEX Requests
 author: windows-driver-content
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
 ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
@@ -44,7 +41,7 @@ Although the [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/libr
 
 In contrast, SpbCx treats the **IOCTL\_SPB\_FULL\_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL\_SPB\_FULL\_DUPLEX** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoOther*](https://msdn.microsoft.com/library/windows/hardware/hh450805) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [*EvtIoInCallerContext*](https://msdn.microsoft.com/library/windows/hardware/ff541764) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the **SPB\_TRANSFER\_LIST** Structure for Custom IOCTLs](https://msdn.microsoft.com/library/windows/hardware/hh974776).
 
-## <a href="" id="code-example"></a>
+
 
 
 Typically, the SPB controller driver validates the parameter values in an **IOCTL\_SPB\_FULL\_DUPLEX** request in the *EvtSpbControllerIoOther* function instead of in the *EvtIoInCallerContext* function. The following code example shows how the driver might implement parameter checking. In this example, the driver verifies that the following parameter requirements are satisfied:
@@ -53,7 +50,7 @@ Typically, the SPB controller driver validates the parameter values in an **IOCT
 -   The first entry in the transfer list is for a write buffer, and the second is for a read buffer.
 -   The **DelayInUs** value for both entries is zero.
 
-```
+```cpp
 //
 // Validate the transfer count.
 //
@@ -149,6 +146,5 @@ After checking the parameter values, the preceding code example calls a driver-i
  
 
 
---------------------
 
 

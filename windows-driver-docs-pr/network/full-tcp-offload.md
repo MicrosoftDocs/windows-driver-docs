@@ -7,17 +7,14 @@ keywords:
 - chimney offload WDK networking , full
 - offloading processing WDK networking
 - full TCP offload WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Full TCP Offload
 
 
-## <a href="" id="ddk-full-tcp-offload-ng"></a>
+
 
 
 NDIS 6.0 introduced an architecture for full TCP offload. This architecture is called a "chimney offload" architecture because it provides a direct connection, called a "chimney," between applications and an offload-capable NIC. The chimney enables the NIC to perform TCP processing for offloaded connections, including maintaining the protocol state.

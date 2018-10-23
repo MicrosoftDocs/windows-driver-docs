@@ -5,17 +5,14 @@ ms.assetid: 950cb2cb-7f02-4f3c-924a-0d1e7bb19b55
 keywords:
 - CoNDIS WAN drivers WDK networking , information setting
 - OID_WAN_CO_SET_LINK_INFO
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting CoNDIS WAN Miniport Driver Information
 
 
-## <a href="" id="ddk-setting-condis-wan-miniport-driver-information-ng"></a>
+
 
 
 This topic provides an overview of the requirements for setting information in a CoNDIS WAN miniport driver. An upper-layer driver calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) with a set request to change information that a CoNDIS WAN miniport driver and the miniport driver's NIC maintain.

@@ -3,17 +3,15 @@ title: Bug Check 0xFD DIRTY_NOWRITE_PAGES_CONGESTION
 description: The DIRTY_NOWRITE_PAGES_CONGESTION bug check has a value of 0x000000FD. This indicates that there are no free pages available to continue basic system operations.
 ms.assetid: b657fffe-8331-4b4f-9d29-fea8ee1e1682
 keywords: ["Bug Check 0xFD DIRTY_NOWRITE_PAGES_CONGESTION", "DIRTY_NOWRITE_PAGES_CONGESTION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DIRTY_NOWRITE_PAGES_CONGESTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFD: DIRTY\_NOWRITE\_PAGES\_CONGESTION
@@ -21,7 +19,7 @@ api_type:
 
 The DIRTY\_NOWRITE\_PAGES\_CONGESTION bug check has a value of 0x000000FD. This indicates that there are no free pages available to continue basic system operations.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DIRTY\_NOWRITE\_PAGES\_CONGESTION Parameters
 

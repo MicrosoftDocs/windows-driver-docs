@@ -2,11 +2,8 @@
 Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to capture a USB event trace with Logman
@@ -33,7 +30,7 @@ Instructions
 1.  Open a command-prompt window that has administrative privileges. To do so, click Start, type **cmd** in the search box, right-click cmd.exe, and then select **Run as administrator**.
 2.  In the command-prompt window, enter these commands to start a capture session:
 
-    ```
+    ```cpp
     logman create trace -n usbtrace -o %SystemRoot%\Tracing\usbtrace.etl -nb 128 640 -bs 128
     logman update trace -n usbtrace -p Microsoft-Windows-USB-USBXHCI (Default,PartialDataBusTrace)
     logman update trace -n usbtrace -p Microsoft-Windows-USB-UCX (Default,PartialDataBusTrace)
@@ -52,7 +49,7 @@ Instructions
 
     You can stop USB hub and port event collection by running the following command:
 
-    ```
+    ```cpp
     logman stop -n usbtrace 
     logman delete -n usbtrace
     move /Y %SystemRoot%\Tracing\usbtrace_000001.etl %SystemRoot%\Tracing\usbtrace.etl
@@ -135,7 +132,7 @@ You can filter events based on keywords depending on your requirements. Here are
 
 As an example, here is a sequence of commands that start a session to capture USB device power transitions. Due to the selection of providers (the USB 3.0 driver stack), events are captured only for devices that are connected downstream of a USB 3.0 host controller.
 
-```
+```cpp
 logman create trace -n usbtrace -o %SystemRoot%\Tracing\usbtrace.etl -nb 128 640 -bs 128
 logman update trace -n usbtrace -p Microsoft-Windows-USB-USBXHCI (Rundown,Power)
 logman update trace -n usbtrace -p Microsoft-Windows-USB-UCX (Rundown,Power)
@@ -149,7 +146,7 @@ logman start -n usbtrace
 
 A useful ETW keyword for USB devices is the USB port driver’s PowerDiagnostics flag. When you use this keyword, the port driver logs host-controller and endpoint information but omits all events that describe transfers. If you do not need to see the transfer events, you can use the PowerDiagnostics keyword to reduce the size of a trace log by as much as 85 percent. Specify the PowerDiagnostics keyword when you start the trace, as shown in the following example:
 
-```
+```cpp
 Logman start Usbtrace -p Microsoft-Windows-USB-USBPORT PowerDiagnostics -o usbtrace.etl -ets -nb 128 640 -bs 128
 
 Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
@@ -158,7 +155,7 @@ Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
 
 If your filtered trace log has many host controller asynchronous schedule enable and disable events, you can filter them out when viewing the log by using a Netmon filter, as shown in the following example:
 
-```
+```cpp
 NOT (Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Enable" 
 OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Disable")
 ```
@@ -172,7 +169,5 @@ Sometimes it is helpful to have the transfer events in your trace log, such as h
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 [Defining Keywords Used to Classify Types of Events](https://msdn.microsoft.com/library/windows/desktop/dd996915)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20capture%20a%20USB%20event%20trace%20with%20Logman%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

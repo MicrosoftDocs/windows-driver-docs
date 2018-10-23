@@ -3,11 +3,9 @@ title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 ms.assetid: 785469d2-30b8-4f73-b397-80bf89ed20ea
 keywords: ["reading and filtering debugging messages", "debugging messages, reading and filtering"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading and Filtering Debugging Messages
@@ -103,7 +101,7 @@ Thus, if you wish to set the bit field to 0x00004000, you can specify *Level* as
 
 The following constants can be useful for setting the value of *Level*. They are defined in the Microsoft Windows Driver Kit (WDK) header ntddk.h and the Windows SDK header ntrtl.h:
 
-```
+```cpp
 #define   DPFLTR_ERROR_LEVEL     0
 #define   DPFLTR_WARNING_LEVEL   1
 #define   DPFLTR_TRACE_LEVEL     2
@@ -155,7 +153,7 @@ Suppose that before the last boot, you created the following values in the **Deb
 
 Now you issue the following commands in the kernel debugger:
 
-```
+```dbgcmd
 kd> ed Kd_IHVVIDEO_Mask 0x8 
 kd> ed Kd_IHVAUDIO_Mask 0x7 
 ```
@@ -166,7 +164,7 @@ However, because these masks are automatically ORed with the **WIN2000** system-
 
 Now suppose that the following function calls occur in various drivers:
 
-```
+```cpp
 DbgPrintEx( DPFLTR_IHVVIDEO_ID,  DPFLTR_INFO_LEVEL,   "First message.\n");
 DbgPrintEx( DPFLTR_IHVAUDIO_ID,  7,                   "Second message.\n");
 DbgPrintEx( DPFLTR_IHVBUS_ID,    DPFLTR_MASK | 0x10,  "Third message.\n");
@@ -195,7 +193,6 @@ If a message is filtered out because of its *ComponentId* and *Level* values, it
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Reading%20and%20Filtering%20Debugging%20Messages%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

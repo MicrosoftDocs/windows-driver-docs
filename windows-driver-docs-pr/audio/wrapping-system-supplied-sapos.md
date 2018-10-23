@@ -2,11 +2,8 @@
 title: Wrapping System-supplied sAPOs
 description: Wrapping System-supplied sAPOs
 ms.assetid: fcde6de0-921c-4c73-8e4d-941a447d35af
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Wrapping System-supplied sAPOs
@@ -25,7 +22,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
     The following C++ code example shows the creation of a class that inherits from **CBaseAudioProcessingObject**. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapo.h* file.
 
-    ```
+    ```cpp
     // Custom APO class - LFX
     Class MyCustomSAPOLFX: public CBaseAudioProcessingObject
     {
@@ -49,7 +46,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
 The following C++ code example shows an implementation of the [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of APOProcess method
 STDMETHODIMP_ (Void) MyCustomSAPOLFX::APOProcess (...)
 {
@@ -61,7 +58,7 @@ STDMETHODIMP_ (Void) MyCustomSAPOLFX::APOProcess (...)
 
 The following code example shows an implementation of the **ValidateAndCacheConnectionInfo** method. For an actual implementation of this method, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapogfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of the ValidateAndCacheConnectionInfo method.
 HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 {
@@ -82,7 +79,7 @@ You must provide a user interface to configure the features that you added to th
 
 The Swap sample is the sample that was developed to illustrate some features of audio processing objects. To access this sample and browse the code files, perform the following steps:
 
-1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052)
+1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 2. Download the samples and unzip them to a hard drive.
 3. Locate this directory: *..\\Windows Driver Kit (WDK) 8.1 Samples\\Microsoft slate system virtual audio device driver sample\\C++\\SwapAPO*
 4. Open the SwapAPO project in Visual Studio.
@@ -93,7 +90,5 @@ The Swap sample is the sample that was developed to illustrate some features of 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wrapping%20System-supplied%20sAPOs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

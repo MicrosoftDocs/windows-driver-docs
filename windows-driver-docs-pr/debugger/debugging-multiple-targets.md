@@ -3,11 +3,9 @@ title: Debugging Multiple Targets
 description: Debugging Multiple Targets
 ms.assetid: 93eb6b49-e7a0-4f30-ade8-94019a1adf43
 keywords: ["multiple targets", "system", "system, overview"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Multiple Targets
@@ -64,7 +62,7 @@ Example
 
 To  work with three dump files at the same time, you can use the -z option to load them when WinDbg is started. 
 
-```
+```console
 windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
 ```
 
@@ -72,15 +70,15 @@ For more infomation see [WinDbg Command-Line Options](windbg-command-line-option
 
 Use the  [|| (System Status)](----system-status-.md) command to confirm that all three systems are present.
 
-```
+```dbgcmd
 ||0:0:007> ||
 .  0 User mini dump: c:\notepad.dmp
    1 User mini dump: C:\paint.dmp
    2 User mini dump: c:\calc.dmp
 ```
 
-Use the The [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
-```
+Use the [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
+```dbgcmd
 ||0:0:007> g
 
 ************* Path validation summary **************
@@ -105,7 +103,7 @@ ntdll!DbgBreakPoint:
 
 Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to set the current system to system 1 and then display the current system.
 
-```
+```dbgcmd
 ||1:1:017> ||1s
 ||1:1:017> ||
    0 User mini dump: c:\notepad.dmp
@@ -116,7 +114,7 @@ Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to
 
 You can use the [.detach](-detach--detach-from-process-.md) command when you are done looking at the current dump file.
 
-```
+```dbgcmd
 ||1:1:017> .detach
 ntdll!DbgBreakPoint:
 00007ff8`aada8d70 cc              int     3
@@ -141,14 +139,13 @@ For addtional information on debugging see the following resources.
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 [http://channel9.msdn.com/Shows/Defrag-Tools](http://channel9.msdn.com/Shows/Defrag-Tools) 
+The Defrag Tools Show WinDbg Episodes 13-29 [https://channel9.msdn.com/Shows/Defrag-Tools](https://channel9.msdn.com/Shows/Defrag-Tools) 
 
 
 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Multiple%20Targets%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

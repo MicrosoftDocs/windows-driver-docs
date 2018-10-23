@@ -3,11 +3,8 @@ title: Roadmap for Developing Windows Storage Drivers
 author: windows-driver-content
 description: Roadmap for Developing Windows Storage Drivers
 ms.assetid: 67627ff9-588c-492f-861f-c592f7f92b51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing Windows Storage Drivers
@@ -37,7 +34,7 @@ ms.technology: windows-devices
 
 6.  **Review storage driver samples.**
 
-    To access and review the storport miniport driver samples see the [MSDN Code Gallery](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+    To access and review the storport miniport driver samples see the [Windows Driver Kit (WDK) samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 7.  **Develop, build, test, and debug your storage driver.**
 
@@ -58,6 +55,5 @@ These are the basic steps. Additional steps might be necessary based on the need
  
 
 
---------------------
 
 

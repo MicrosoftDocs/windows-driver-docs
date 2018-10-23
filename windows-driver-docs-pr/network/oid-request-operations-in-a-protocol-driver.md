@@ -7,17 +7,14 @@ keywords:
 - NDIS protocol drivers WDK , OID requests
 - OID requests WDK networking
 - OIDs WDK networking , protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # OID Request Operations in a Protocol Driver
 
 
-## <a href="" id="ddk-oid-request-operations-in-a-protocol-driver-ng"></a>
+
 
 
 There are two different interfaces for OID request operations in a protocol driver. NDIS protocol drivers with a connectionless lower edge call the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) function to initiate an OID request. An NDIS protocol driver with a connectionless lower edge must supply a [**ProtocolOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570264) function. NDIS calls *ProtocolOidRequestComplete* when the underlying drivers complete a pending OID request. For more information about OID requests in connectionless protocol drivers, see [Protocol Driver OID Requests](protocol-driver-oid-requests.md).

@@ -5,11 +5,8 @@ description: A list of the serial I/O control requests that SerCx supports.
 ms.assetid: 2697096f-73a2-4474-9040-e1cadbb10b1e
 keywords:
 -    SerCx IOCTLs
-ms.author: windowsdriverdev
 ms.date: 11/30/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SerCx I/O Control Requests

@@ -5,17 +5,14 @@ ms.assetid: 6db5a4a2-f090-4688-99fa-9d22ca7077ed
 keywords:
 - CoNDIS WDK networking , registration
 - registering CoNDIS drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS Registration
 
 
-## <a href="" id="ddk-condis-registration-ng"></a>
+
 
 
 To support CoNDIS, NDIS drivers must register the optional CoNDIS function entry points. NDIS drivers call the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function to register optional services.

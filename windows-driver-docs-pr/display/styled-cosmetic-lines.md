@@ -9,11 +9,8 @@ keywords:
 - drawing WDK GDI , lines, styled cosmetic
 - styled cosmetic lines WDK GDI
 - cosmetic lines WDK GDI , styled
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Styled Cosmetic Lines
@@ -28,13 +25,13 @@ Styling of a cosmetic line is similar to that of a geometric wide line because i
 
 When the driver calls [**PATHOBJ\_bEnumClipLines**](https://msdn.microsoft.com/library/windows/hardware/ff568852), to handle styled cosmetic lines through complex clipping, GDI modifies the value of the [**CLIPLINE**](https://msdn.microsoft.com/library/windows/hardware/ff539416) structure's **iStyleState** member to represent the style state. The style state is the offset back to the first pixel of the line segment; that is, the first pixel that would be rendered if the line were not clipped. The style state consists of two 16-bit values packed into a ULONG value. If HIGH and LOW are the high-order and the low-order 16 bits of the style state, a fractional version of the style state, referred to as style position, can be computed as:
 
-```
+```cpp
     style position = HIGH + LOW/denStyleStep
 ```
 
 For example, if the values in **iStyleState** are 1 and 2, and **denStyleStep** is 3, then style position is 5/3. To determine exactly where the drawing of the style begins in the style array, take the product:
 
-```
+```cpp
     style position * denStyleStep
 ```
 
@@ -42,7 +39,7 @@ In this example, with a **denStyleStep** value of 3, the drawing position is cal
 
 There are y-styled cosmetic lines and x-styled cosmetic lines. If a line extends dx device units in the x direction and dy units in the y direction, the line is y-styled when the following is true:
 
-```
+```cpp
     (dy * yStyleStep)  >=  (dx * xStyleStep)
 ```
 
@@ -50,7 +47,7 @@ In this case, the style position is advanced by **yStyleStep**/**denStyleStep** 
 
 Conversely, a line is x-styled and the style position is advanced by **xStyleStep**/**denStyleStep** for each pixel advanced in the x direction when the following is true:
 
-```
+```cpp
     (dx * xStyleStep)  >  (dy * yStyleStep)
 ```
 
@@ -72,7 +69,6 @@ If the LA\_STARTGAP bit is set in the LINEATTRS flag, the sense of the elements 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Styled%20Cosmetic%20Lines%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

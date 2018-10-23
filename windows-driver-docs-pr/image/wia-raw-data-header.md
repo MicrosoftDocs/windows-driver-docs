@@ -3,11 +3,8 @@ title: WIA RAW Data Header
 author: windows-driver-content
 description: WIA RAW Data Header
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA RAW Data Header
@@ -15,8 +12,8 @@ ms.technology: windows-devices
 
 The header for RAW data is as follows:
 
-```
-DWORD Tag;         // must contain &#39;WRAW&#39; (single byte ASCII characters)
+```cpp
+DWORD Tag;         // must contain 'WRAW' (single byte ASCII characters)
 DWORD Version;        // must contain 0x00010000
 DWORD HeaderSize;       // contains amount of valid bytes in header
 DWORD XRes;              // X (horizontal) resolution, in DPI
@@ -56,7 +53,7 @@ Describes the photometric interpretation for the image that is transferred. This
 <a href="" id="dword-lineorder"></a>DWORD *LineOrder*  
 Describes whether the lines/rows in the image data are ordered top-to-bottom or bottom-to-top. Two new constants were defined in *wiadef.h* for this:
 
-```
+```cpp
 #define  WIA_LINE_ORDER_TOP_TO_BOTTOM        0x00000001 
 #define  WIA_LINE_ORDER_BOTTOM_TO_TOP        0x00000002
 ```
@@ -81,7 +78,5 @@ For indexed images, the number of entries in the color palette is dictated by th
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WIA%20RAW%20Data%20Header%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

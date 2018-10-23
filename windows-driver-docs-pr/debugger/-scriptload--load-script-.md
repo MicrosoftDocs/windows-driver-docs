@@ -3,17 +3,15 @@ title: .scriptload (Load Script)
 description: The .scriptload command will load and execute the specified script file.
 ms.assetid: 1D4C9587-1491-4D34-9D09-45587B272641
 keywords: [".scriptload (Load Script) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .scriptload (Load Script)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .scriptload (Load Script)
@@ -21,7 +19,7 @@ api_type:
 
 The **.scriptload** command will load and execute the specified script file.
 
-```
+```dbgcmd
 .scriptload ScriptFile
 ```
 
@@ -60,14 +58,14 @@ Specifies the name of the script file to load. *ScriptFile* should include the .
 
 The .scriptload command will load a script and execute a script. The following command shows the successful load of TestScript.js.
 
-```
+```dbgcmd
 0:000> .scriptload C:\WinDbg\Scripts\TestScript.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 If there are any errors in the initial load and execution of the script, the errors will be displayed to console, including the line number and error message.
 
-```
+```dbgcmd
 0:000:x86> .scriptload C:\WinDbg\Scripts\TestScript.js
 0:000> "C:\WinDbg\Scripts\TestScript.js" (line 11 (@ 1)): Error (0x80004005): Syntax error
 Error: Unable to execute JavaScript script 'C:\WinDbg\Scripts\TestScript.js'
@@ -88,7 +86,7 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
@@ -103,7 +101,6 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.scriptload%20%28Load%20Script%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

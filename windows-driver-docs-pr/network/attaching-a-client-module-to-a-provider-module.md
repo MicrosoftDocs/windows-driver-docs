@@ -10,11 +10,8 @@ keywords:
 - client modules WDK Network Module Registrar , attaching
 - network modules WDK Network Module Registrar , attachment
 - NmrClientAttachProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching a Client Module to a Provider Module
@@ -36,7 +33,7 @@ If the client module determines that it will not attach to the provider module, 
 
 For example, suppose the "EXNPI" Network Programming Interface (NPI) defines the following in header file Exnpi.h:
 
-```
+```C++
 // EXNPI provider characteristics structure
 typedef struct EXNPI_PROVIDER_CHARACTERISTICS_
 {
@@ -64,7 +61,7 @@ typedef struct EXNPI_PROVIDER_DISPATCH_ {
 
 The following code example shows how a client module that is registered as a client of the EXNPI NPI can attach itself to a provider module that is registered as a provider of the EXNPI NPI:
 
-```
+```C++
 // Context structure for the client
 // module&#39;s binding to a provider module
 typedef struct CLIENT_BINDING_CONTEXT_ {

@@ -6,11 +6,8 @@ ms.assetid: ee56cd54-01ac-46ad-8ee4-e76131b058f3
 keywords:
 - security WDK file systems , impersonation
 - impersonation WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Impersonation in a File System Filter Driver
@@ -30,6 +27,5 @@ In the case of [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/har
  
 
 
---------------------
 
 

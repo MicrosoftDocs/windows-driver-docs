@@ -8,17 +8,14 @@ keywords:
 - protocol bindings WDK networking
 - binding operations WDK networking
 - porting protocol drivers WDK networking , unbinding operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Protocol Unbinding Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-unbinding-operations-to-ndis-6-0-nd"></a>
+
 
 
 In NDIS 6.0, the [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function replaces the NDIS 5.x [**ProtocolUnbindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff563260) function. A protocol driver calls the [**NdisCloseAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff561640) function (formerly [**NdisCloseAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff550904)) from *ProtocolUnbindAdapterEx* to close a binding to a miniport adapter.

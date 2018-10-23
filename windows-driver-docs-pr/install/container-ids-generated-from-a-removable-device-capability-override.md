@@ -2,11 +2,8 @@
 title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
 ms.assetid: 8b1bf9d4-1aea-4d82-b783-f6dc62b9f8f3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs Generated from a Removable Device Capability Override
@@ -97,15 +94,15 @@ In this example, the override will disable the removable device capability, and 
 
 The following is an example of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
-    USB\VID_1234&PID_5678
+    USB#VID_1234&PID_5678
         LocationPaths
             PCIROOT(0)#PCI(102)#USBROOT(0)#USB(1)
                 Removable=0
 ```
 
-In this example, `USB\VID_1234&PID_5678 `is the name of the [HardwareID](hardwareid-registry-subkey.md) registry subkey, and `PCIROOT(0)#PCI(102)#USBROOT(0)#USB(1)` is the name of the [LocationPath](locationpath-registry-subkey.md) registry subkey.
+In this example, `USB#VID_1234&PID_5678 `is the name of the [HardwareID](hardwareid-registry-subkey.md) registry subkey, and `PCIROOT(0)#PCI(102)#USBROOT(0)#USB(1)` is the name of the [LocationPath](locationpath-registry-subkey.md) registry subkey.
 
 This override changes the Plug and Play (PnP) manager's interpretation of the device topology. Notice that the devnode with a [hardware ID](hardware-ids.md) value of USB\\VID_1234&PID_5678 was marked as not removable in the registry. A new container ID is not generated for this devnode, because the PnP manager interprets the devnode as not being removable from its parent. Instead, USB\\VID_1234&PID_5678 (and all its children) inherit the container ID (ContainerID {A}) of its parent.
 
@@ -125,9 +122,9 @@ In this example, the override will enable the removable device capability, and t
 
 The following is a high-level description of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
-    USB\VID_062A&PID_00001
+    USB#VID_062A&PID_00001
         LocationPaths
             *
                 Removable=1

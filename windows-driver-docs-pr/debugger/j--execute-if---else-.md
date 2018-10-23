@@ -3,17 +3,15 @@ title: j (Execute If - Else)
 description: The j command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 ms.assetid: c6bb2415-e888-458b-8fb9-9d50b90cc531
 keywords: ["j (Execute If - Else) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - j (Execute If - Else)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # j (Execute If - Else)
@@ -21,7 +19,7 @@ api_type:
 
 The **j** command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 
-```
+```dbgcmd
 j Expression Command1 ; Command2 
 j Expression 'Command1' ; 'Command2' 
 ```
@@ -70,20 +68,20 @@ You cannot add a semicolon or additional commands after the **j** command. If a 
 
 The following command displays the value of **eax** if **MySymbol** is equal to zero and displays the values of **ebx** and **ecx** otherwise.
 
-```
+```dbgcmd
 0:000> j (MySymbol=0) 'r eax'; 'r ebx; r ecx' 
 ```
 
 You could omit the single quotation marks around **r eax**, but they make the command easier to read. If you want to omit one of the commands, you can include empty quotation marks or omit the parameter for that command, as in the following commands.
 
-```
+```dbgcmd
 0:000> j (MySymbol=0) ''; 'r ebx; r ecx' 
 0:000> j (MySymbol=0)  ; 'r ebx; r ecx' 
 ```
 
 You can also use the **j** command inside other commands. For example, you can use a **j** command to create conditional breakpoints.
 
-```
+```dbgcmd
 0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' "
 ```
 
@@ -98,7 +96,6 @@ For more information about the syntax for conditional breakpoints, see [Setting 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20j%20%28Execute%20If%20-%20Else%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

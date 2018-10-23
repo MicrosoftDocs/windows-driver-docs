@@ -6,17 +6,14 @@ ms.assetid: 4bd668ec-14fb-4999-9535-a49712a26ba6
 keywords:
 - request objects WDK KMDF , creating
 - request objects WDK KMDF , read operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Framework Request Objects
 
 
-## <a href="" id="ddk-creating-framework-request-objects-df"></a>
+
 
 
 Most framework request objects are created by the framework, but your driver can also create request objects.

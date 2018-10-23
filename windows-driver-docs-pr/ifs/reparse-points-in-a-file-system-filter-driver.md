@@ -6,11 +6,8 @@ ms.assetid: 6aae70d9-c934-4759-bb26-728b0ac025d1
 keywords:
 - security WDK file systems , reparse points
 - reparse points WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reparse Points in a File System Filter Driver
@@ -28,6 +25,5 @@ Otherwise, it is possible that a malicious application could create reparse poin
  
 
 
---------------------
 
 

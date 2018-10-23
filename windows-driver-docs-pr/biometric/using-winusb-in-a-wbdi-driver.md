@@ -4,11 +4,8 @@ description: Using WinUSB in a WBDI Driver
 ms.assetid: a2f109cd-cb61-4c63-8e93-111f62a2c02d
 keywords:
 - biometric drivers WDK , WinUSB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using WinUSB in a WBDI Driver
@@ -22,7 +19,7 @@ An INF file that installs a UMDF driver must contain a WDF-specific **DDInstall*
 
 The following section from WudfBioUsbSample.inx in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) sample shows how to set this directive:
 
-```
+```cpp
 [Biometric_Install.NT.Wdf]
 KmdfService=WINUSB, WinUsb_Install
 UmdfDispatcher=WinUsb
@@ -51,7 +48,7 @@ The code to pend a read request should be a loop of the following steps:
 5.  Call [**IWDFIoRequest::Send**](https://msdn.microsoft.com/library/windows/hardware/ff559149) to send the read request to the device.
 
 6.  Process read request when callback completion occurs. Before the [**OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905) routine initiates a new pending read request, it should check the state of the I/O target. To do this, query [IWDFUsbTargetPipe](https://msdn.microsoft.com/library/windows/hardware/ff560391) for a pointer to its [IWDFIoTargetStateManagement](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface. Then call [**IWDFIoTargetStateManagement::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff559202):
-    ```
+    ```cpp
     IWDFIoTarget * pTarget
     IWDFIoTargetStateManagement * pStateMgmt = NULL;
     WDF_IO_TARGET_STATE state;
@@ -74,7 +71,7 @@ A WBDI driver should support [USB Selective Suspend](https://msdn.microsoft.com/
 
 A device that supports system wake and device idle should enable the registry settings for selective suspend in WinUsb, as shown in this code example from WudfBioUsbSample.inx:
 
-```
+```cpp
 HKR,,"SystemWakeEnabled",0x00010001,1
 HKR,,"DeviceIdleEnabled",0x00010001,1
 ```
@@ -87,7 +84,6 @@ Ideally, the device should be left in a state ready to capture a scan when the s
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[biometric\biometric]:%20Using%20WinUSB%20in%20a%20WBDI%20Driver%20%20RELEASE:%20%288/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

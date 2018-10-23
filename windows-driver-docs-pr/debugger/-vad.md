@@ -3,17 +3,15 @@ title: vad
 description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 ms.assetid: 96bd5a38-016d-4ce9-b128-cc730577be45
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - vad
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !vad
@@ -25,7 +23,7 @@ The **!vad** extension displays details of a virtual address descriptor (VAD) or
 -   Displays details of a tree of VADs.
 -   Displays information about the VADs for a particular user-mode module and provides a string that you can use to load the symbols for that module.
 
-```
+```dbgcmd
 !vad VAD-Root [Flag]
 !vad Address 1
 ```
@@ -82,7 +80,7 @@ The **!vad** command can be helpful when you need to load symbols for a user-mod
 
 Here is an example of the **!vad** extension:
 
-```
+```dbgcmd
 kd> !vad 824bc2f8
 VAD     level      start      end    commit
 82741bf8 ( 1)      78000    78045         8 Mapped  Exe  EXECUTE_WRITECOPY
@@ -108,7 +106,6 @@ SecNoChange
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!vad%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

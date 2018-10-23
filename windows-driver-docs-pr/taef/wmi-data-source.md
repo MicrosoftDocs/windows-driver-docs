@@ -2,11 +2,8 @@
 title: WMI Data Source
 description: WMI Data Source
 ms.assetid: 1C9D0EEC-6542-4249-B7E0-CA3ED63FB120
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Data Source
@@ -34,19 +31,19 @@ That would have hopefully given you some idea on where and how you can leverage 
 
 The only special metadata you need to make your test a WMI DataSource test is the "DataSource". The DataSource syntax must look as follows:
 
-```
+```cpp
 [DataSource("WMI:<WQL query>")]
 ```
 
 Or in native code:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"WMI:<WQL query>")]
 ```
 
 You must have noticed that the DataSource value starts with "WMI:" which lets TAEF know that this is indeed the data source for a test that depends on WMI query result and also distinguishes it from data-driven test. This is good opportunity to mention that currently TAEF does not support a test to be both - a data-driven test as well as a test that depends on the WMI query result.
 
-The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided on [http://msdn2.microsoft.com/library/aa394585(VS.85).aspx.](http://msdn2.microsoft.com/library/aa394585(VS.85).aspx) Here are a few examples:
+The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided on [https://msdn2.microsoft.com/library/aa394585(VS.85).aspx.](https://msdn2.microsoft.com/library/aa394585(VS.85).aspx) Here are a few examples:
 
 <span id="SELECT_Description__DesktopInteract__ProcessId_FROM_Win32_Service_WHERE_Name__Themes_"></span><span id="select_description__desktopinteract__processid_from_win32_service_where_name__themes_"></span><span id="SELECT_DESCRIPTION__DESKTOPINTERACT__PROCESSID_FROM_WIN32_SERVICE_WHERE_NAME__THEMES_"></span>SELECT Description, DesktopInteract, ProcessId FROM Win32\_Service WHERE Name='Themes'  
 Run the test on the "Themes" service after finding out it's Description, DesktopInteract and ProcessId properties which you intend to use in your testing.
@@ -57,13 +54,13 @@ Run the test for each printer connected to this computer. Allow the test to acce
 <span id="SELECT_Name__User__Location_FROM_Win32_StartupCommand"></span><span id="select_name__user__location_from_win32_startupcommand"></span><span id="SELECT_NAME__USER__LOCATION_FROM_WIN32_STARTUPCOMMAND"></span>SELECT Name, User, Location FROM Win32\_StartupCommand  
 Run the test for each process that gets run at Windows startup. For each process let the test know what the Name of the process is, where it is located (Location), and what User the process runs as.
 
-You can find more examples in the MSDN page mentioned above as well as in the .cs file and header file in the examples you have opened. The general, over-simplified syntax is as follows:
+You can find more examples in the documentation mentioned above as well as in the .cs file and header file in the examples you have opened. The general, over-simplified syntax is as follows:
 
-```
+```cpp
 SELECT <comma separated properties> FROM <WMI Class name> [WHERE <add condition on some properties>]
 ```
 
-In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up what WMI class you are interested in for your test here: [http://msdn2.microsoft.com/library/aa394554(VS.85).aspx.](http://msdn2.microsoft.com/library/aa394554(VS.85).aspx)
+In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up what WMI class you are interested in for your test here: [https://msdn2.microsoft.com/library/aa394554(VS.85).aspx.](https://msdn2.microsoft.com/library/aa394554(VS.85).aspx)
 
 TAEF does not support retrieving System Properties.
 
@@ -86,7 +83,7 @@ By now you have an idea of how to come up with a WMI query for a test method and
 
 The basics on retrieving this information are very similar to retrieving values for your data-driven test. For example, in managed code this would look as follows:
 
-```
+```cpp
 1 namespace WEX.Examples
 2 {
 3     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -126,7 +123,7 @@ Lines 24-30 in the example above are exactly what is required for a managed data
 
 The native code for retrieving the WMI properties is very similar. Like with native data-driven tests, you will use TestData to get the property values. For example, let's consider the test for getting properties of the default printer. The header file authors this test like so:
 
-```
+```cpp
 1        // Test on the default printer and its driver name
 2        BEGIN_TEST_METHOD(DefaultPrinterTest)
 3            TEST_METHOD_PROPERTY(L"DataSource",
@@ -136,7 +133,7 @@ The native code for retrieving the WMI properties is very similar. Like with nat
 
 For this, our retrieval code, in the cpp file looks as follows:
 
-```
+```cpp
 1     void WmiExample::DefaultPrinterTest()
 2     {
 3         String deviceId;
@@ -164,7 +161,7 @@ The part to keep in mind is that the WMI query may not always return a non-null 
 
 In managed test code for example, TestContext will store the null values as an object of type DBNull. You must check if the object is of type DBNull before trying to cast the resultant value to the type you expect it to be. Let's take a look:
 
-```
+```cpp
 1 namespace WEX.Examples
 2 {
 3     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -236,7 +233,7 @@ For example, in the above test, "Compressed", "MaximumComponentLength" and "Avai
 
 The same is true with native retrievals APIs as well - the property value returned could be NULL. This means that you need to check if the TestData successfully retrieved the value without using a verify call (since not being able to retrieve could be because the value is null). For example, you may have a test method that depends on a WMI query:
 
-```
+```cpp
 1        // Test on only local (drive type = 3) or removable (drive type = 2) harddrive
 2        BEGIN_TEST_METHOD(LocalOrRemovableHardDriveTest)
 3            TEST_METHOD_PROPERTY(L"DataSource", L"WMI:SELECT DeviceId, DriveType, Availability,
@@ -246,7 +243,7 @@ The same is true with native retrievals APIs as well - the property value return
 
 You may have "Availability and "MaximumComponentLength" returned as NULL values. So write the test to account for this like so:
 
-```
+```cpp
 1     void WmiExample::LocalOrRemovableHardDriveTest()
 2     {
 3         String deviceId;
@@ -275,7 +272,6 @@ You may have "Availability and "MaximumComponentLength" returned as NULL values.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20WMI%20Data%20Source%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

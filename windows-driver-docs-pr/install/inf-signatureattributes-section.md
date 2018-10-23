@@ -10,11 +10,8 @@ api_name:
 - INF SignatureAttributes Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF SignatureAttributes Section
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 This section allows users to request additional signatures as required by certain certification scenarios. Examples of these scenarios are: Protected Environment media playback, Early Launch Antimalware, and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
 
-```
+```cpp
 [SignatureAttributes]
 FileOne = SignatureAttributes.SigType
 
@@ -63,7 +60,7 @@ Examples
 
 The following examples demonstrate how to enumerate and request additional signatures for audio:
 
-```
+```cpp
 [SignatureAttributes]
 ExampleFile1.dll=SignatureAttributes.PETrust
 ExampleFile2.dll=SignatureAttributes.DRM
@@ -77,7 +74,7 @@ PETrust=true
 
 The following examples demonstrate how to enumerate and request additional signatures for video:
 
-```
+```cpp
 [SignatureAttributes]
 ExampleFile1.dll=SignatureAttributes.PETrust
 
@@ -87,7 +84,7 @@ PETrust=true
 
 The following examples demonstrate how to enumerate and request additional signatures for HAL:
 
-```
+```cpp
 [SignatureAttributes]
 HALFILE.dll=SignatureAttributes.HalExt
 
@@ -97,7 +94,7 @@ HalExt=true
 
 The following examples demonstrate how to enumerate and request additional signatures for ELAM:
 
-```
+```cpp
 [SignatureAttributes]
 ELAMFILE.dll=SignatureAttributes.Elam
 
@@ -107,7 +104,7 @@ Elam=true
 
 The following examples demonstrate how to enumerate and request additional signatures for Windows Hello:
 
-```
+```cpp
 [SignatureAttributes]
 WindowsHelloFile.dll=SignatureAttributes.WindowsHello
 

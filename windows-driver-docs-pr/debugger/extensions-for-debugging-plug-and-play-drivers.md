@@ -3,11 +3,9 @@ title: Extensions for Debugging Plug and Play Drivers
 description: Extensions for Debugging Plug and Play Drivers
 ms.assetid: 0b60c4ce-5c2d-4cce-a1e6-8275186aa147
 keywords: ["Plug and Play (PnP), extensions", "extensions, plug and play"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extensions for Debugging Plug and Play Drivers
@@ -25,7 +23,7 @@ You must know the address of the CM Resource List.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !cmreslist 0xe12576e8
 
 CmResourceList at 0xe12576e8  Version 0.0  Interface 0x1  Bus #0
@@ -52,7 +50,7 @@ Device node 0 (zero) is the root of the device tree.
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !devnode 0xfffffa8003634af0
 DevNode 0xfffffa8003634af0 for PDO 0xfffffa8003658590
   Parent 0xfffffa8003604010   Sibling 0xfffffa80036508e0   Child 0000000000
@@ -80,7 +78,7 @@ Displays detailed information about a DEVICE\_OBJECT.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !devobj 0xff0d4af0
 
 Device object (ff0d4af0) is for:
@@ -101,7 +99,7 @@ Lists all the device objects created by the specified driver.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !drvobj serial
 
 Driver object (ff0ba630) is for:
@@ -134,7 +132,7 @@ Displays information about all IRPs currently allocated in the target system, or
 
 The following example displays the devices on the primary bus:
 
-```
+```dbgcmd
 kd> !pci
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -167,7 +165,7 @@ PCI Bus 1
 
 The following example displays the PCI configuration space for the SCSI controller (bus 1, device 9, function 0):
 
-```
+```dbgcmd
 kd> !pci 100 1 9 0 
 00: 9004    ;VendorID=9004
 02: 8178    ;DeviceID=8178
@@ -219,7 +217,6 @@ Displays a PnP relation list and any related CM\_RESOURCE\_LIST and IO\_RESOURCE
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Extensions%20for%20Debugging%20Plug%20and%20Play%20Drivers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

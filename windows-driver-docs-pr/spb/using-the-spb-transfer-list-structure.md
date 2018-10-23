@@ -3,11 +3,8 @@ title: Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs
 author: windows-driver-content
 description: If your simple peripheral bus (SPB) controller driver supports one or more custom I/O control (IOCTL) requests, use the SPB_TRANSFER_LIST structure to describe the read and write buffers in these requests.
 ms.assetid: 577122CC-D1F8-41C5-BE77-A22FC8516B82
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the SPB\_TRANSFER\_LIST Structure for Custom IOCTLs
@@ -36,7 +33,7 @@ If an SPB controller driver supports the **IOCTL\_SPB\_FULL\_DUPLEX** request, o
 
 The following code example shows an *EvtIoInCallerContext* function that is implemented by an SPB controller driver.
 
-```
+```cpp
 VOID
 EvtIoInCallerContext(
     _In_  WDFDEVICE   SpbController,
@@ -112,6 +109,5 @@ For a [code example](https://msdn.microsoft.com/library/windows/hardware/hh97477
  
 
 
---------------------
 
 

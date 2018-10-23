@@ -9,11 +9,8 @@ keywords:
 - power management WDK KMDF , software-only drivers
 - software-only drivers WDK KMDF
 - filter drivers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting PnP and Power Management in Software-only Drivers

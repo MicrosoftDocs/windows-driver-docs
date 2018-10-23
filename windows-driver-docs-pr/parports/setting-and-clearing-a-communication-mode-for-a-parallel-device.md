@@ -7,17 +7,14 @@ keywords:
 - parallel devices WDK , communication modes
 - communication modes WDK parallel devices
 - clearing communication modes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting and Clearing a Communication Mode for a Parallel Device
 
 
-## <a href="" id="ddk-setting-and-clearing-a-communication-mode-for-a-parallel-device-kg"></a>
+
 
 
 A client can set the communication mode of a parallel device using the following device control requests:
@@ -47,6 +44,5 @@ For more information about the communication modes that the parallel port bus dr
  
 
 
---------------------
 
 

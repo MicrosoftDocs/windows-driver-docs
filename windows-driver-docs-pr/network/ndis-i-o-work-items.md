@@ -5,17 +5,14 @@ ms.assetid: 4f966ff3-2092-495f-863f-50f079085fa6
 keywords:
 - I/O work items WDK NDIS
 - I/O WDK kernel , NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS I/O Work Items
 
 
-## <a href="" id="ddk-ndis-6-0-i-o-work-items-ng"></a>
+
 
 
 Drivers can queue I/O work item callback functions for later execution. NDIS calls the driver-specified callback function at IRQL = PASSIVE\_LEVEL. This improves system performance by allowing the current function to return immediately and the driver to do work later at a lower IRQL.

@@ -3,11 +3,8 @@ title: Checking the Oplock State of an IRP_MJ_CREATE operation
 author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_CREATE operation
 ms.assetid: 30684025-9da0-4f4c-a850-ab0390bef091
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_CREATE operation
@@ -387,6 +384,5 @@ The check to break Batch and Filter oplocks occurs before the share access check
  
 
 
---------------------
 
 

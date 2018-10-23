@@ -11,17 +11,14 @@ keywords:
 - data WDK networking , context data
 - packets WDK networking , context data
 - context da
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER\_LIST\_CONTEXT Structure
 
 
-## <a href="" id="ddk-net-buffer-list-context-structure-ng"></a>
+
 
 
 NDIS drivers use [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structures to store additional data that is associated with a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure. The **Context** member of the NET\_BUFFER\_LIST structure is a pointer to a NET\_BUFFER\_LIST\_CONTEXT structure. The information stored in the NET\_BUFFER\_LIST\_CONTEXT structures is opaque to NDIS and other drivers in the stack.

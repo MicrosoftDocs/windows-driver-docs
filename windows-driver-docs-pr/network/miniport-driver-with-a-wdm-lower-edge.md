@@ -9,17 +9,14 @@ keywords:
 - WDM lower edge WDK networking
 - lower edge of NDIS miniport drivers WDK networking , about WDM lower edge
 - WDM lower edge WDK networking , about WDM lower edge
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver with a WDM Lower Edge
 
 
-## <a href="" id="ddk-miniport-driver-with-a-wdm-lower-edge-ng"></a>
+
 
 
 A miniport driver with a WDM lower edge (an NDIS-WDM miniport driver) follows the WDM rule that specifies that a WDM header file must be included in the driver's source files. An NDIS-WDM miniport driver requires a WDM header file to call kernel-mode routines on its lower edge. Typically, NDIS miniport drivers should just call functions that NDIS provides. This restriction is shown by the way NDIS wraps around NDIS miniport drivers in the figure in the [NDIS Drivers](ndis-drivers.md) section. Although typical NDIS miniport drivers are not called WDM drivers, they indirectly follow WDM rules because NDIS itself follows WDM rules.

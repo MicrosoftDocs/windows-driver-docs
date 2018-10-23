@@ -6,11 +6,8 @@ ms.assetid: 9f89fd24-59b8-4529-b151-4e91e6334173
 keywords:
 - control device objects WDK file system
 - CDOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating the Control Device Object
@@ -25,7 +22,7 @@ Note that file systems also create control device objects. When a file system fi
 
 The following example creates a control device object:
 
-```
+```cpp
 RtlInitUnicodeString(&nameString, MYLEGACYFILTER_FULLDEVICE_NAME);
 status = IoCreateDevice(
         DriverObject,                  //DriverObject
@@ -57,6 +54,5 @@ An effective way for a file system filter driver to identify its own control dev
  
 
 
---------------------
 
 

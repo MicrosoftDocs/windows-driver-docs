@@ -7,17 +7,14 @@ keywords:
 - registry WDK TCP/IP offload
 - connection offload WDK TCP/IP transport , enabling services
 - connection offload WDK TCP/IP transport , disabling services
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Registry Values to Enable and Disable Connection Offloading
 
 
-## <a href="" id="ddk-using-registry-values-to-enable-and-disable-connection-offloading-"></a>
+
 
 
 When you debug a driver's connection offload functionality, you might find it useful to enable or disable connection offload services with a registry key setting. There are standardized keywords that you can define in INF files and in the registry. For more information about standardized keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).

@@ -10,11 +10,8 @@ keywords:
 - established socket connections WDK Winsock Kernel
 - connections WDK Winsock Kernel
 - destination connections WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Establishing a Connection with a Destination
@@ -26,7 +23,7 @@ A WSK application connects a socket to a remote transport address by calling the
 
 The following code example shows how a WSK application can connect a connection-oriented socket to a remote transport address.
 
-```
+```C++
 // Prototype for the connect IoCompletion routine
 NTSTATUS
   ConnectComplete(

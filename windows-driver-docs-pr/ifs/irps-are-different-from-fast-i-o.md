@@ -6,11 +6,8 @@ ms.assetid: 22b08da2-043e-4724-b8f1-90b337fa222c
 keywords:
 - IRPs WDK file system
 - fast I/O vs. IRPs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRPs Are Different From Fast I/O
@@ -32,6 +29,5 @@ File system filter drivers are not required to support I/O on control device obj
  
 
 
---------------------
 
 

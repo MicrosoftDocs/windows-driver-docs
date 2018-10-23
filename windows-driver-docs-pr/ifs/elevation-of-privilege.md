@@ -8,11 +8,8 @@ keywords:
 - security threat models WDK file systems , elevation-of-privilege
 - elevation-of-privilege WDK file systems
 - buffers WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Elevation of Privilege
@@ -38,6 +35,5 @@ This type of exploit is most important for those implementing file systems. This
  
 
 
---------------------
 
 

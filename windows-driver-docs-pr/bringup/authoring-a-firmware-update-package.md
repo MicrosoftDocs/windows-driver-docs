@@ -3,11 +3,8 @@ title: Authoring a firmware update package
 author: windows-driver-content
 description: Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin.
 ms.assetid: 672F5E45-C0AB-4C19-BB0A-C8B5A66D8EED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Authoring a firmware update package
@@ -69,6 +66,5 @@ It is recommended that each firmware update package target a single firmware res
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
 [Installing the update](installing-the-update.md)  
 
---------------------
 
 

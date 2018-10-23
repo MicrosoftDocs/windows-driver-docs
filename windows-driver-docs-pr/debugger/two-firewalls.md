@@ -3,11 +3,9 @@ title: Two Firewalls
 description: Two Firewalls
 ms.assetid: e6192cf8-02a4-4dbe-8ed7-a64f8efc24f6
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Two Firewalls
@@ -34,19 +32,19 @@ First, make sure the target computer is configured for debugging and is attached
 
 Second, start the repeater on 127.0.20.20:
 
-```
+```console
 dbengprx -p -s tcp:port=9001 -c tcp:port=9000,clicon=127.0.10.10 
 ```
 
 Third, start the KD connection server on 127.0.10.10 in Building A as follows:
 
-```
+```console
 kdsrv -t tcp:port=9000,clicon=127.0.20.20,password=longjump 
 ```
 
 Finally, start the smart client on 127.0.30.30 in Building C. (This can actually be done before or after starting the server in Building A.)
 
-```
+```console
 windbg -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
@@ -56,13 +54,13 @@ This scenario can be made even more complicated if you suppose that the symbols 
 
 Suppose that 127.0.30.30 has the symbols, as before, and that its local name is \\\\BOXC. The smart client can be started with the same command as above but with an additional **-server** parameter. Since no one will be using this machine, it will take less processing time if you use KD instead of WinDbg:
 
-```
+```console
 kd -server npipe:pipe=randomname -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
 Then the technician, elsewhere in the building, can start a debugging client as follows:
 
-```
+```console
 windbg -remote npipe:server=\\BOXC,pipe=randomname 
 ```
 
@@ -72,7 +70,6 @@ Notice that the password must be supplied by the first non-repeater in the chain
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Two%20Firewalls%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

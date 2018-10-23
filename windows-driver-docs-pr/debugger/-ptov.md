@@ -3,17 +3,15 @@ title: ptov
 description: The ptov extension displays the entire physical-to-virtual map for a given process.
 ms.assetid: 82352d12-4e81-4746-9333-b2cc98eb7a9d
 keywords: ["ptov Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ptov
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ptov
@@ -21,7 +19,7 @@ api_type:
 
 The **!ptov** extension displays the entire physical-to-virtual map for a given process.
 
-```
+```dbgcmd
 !ptov DirBase
 ```
 
@@ -57,7 +55,7 @@ Remarks
 
 Here is an example. First, use [**.process**](-process--set-process-context-.md) and [**!process**](-process.md) to determine the directory base of the current process:
 
-```
+```dbgcmd
 1: kd> .process
 Implicit process is now 852b4040
 1: kd> !process 852b4040 1
@@ -69,7 +67,7 @@ PROCESS 852b4040  SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
 
 In this case, the directory base is 0x00185000. Pass this address to **!ptov**:
 
-```
+```dbgcmd
 1: kd> !ptov 185000
 X86PtoV: pagedir 185000, PAE enabled.
 15e11000 10000
@@ -91,7 +89,7 @@ The total display is very long.
 
 Here is a 64-bit example.
 
-```
+```dbgcmd
 3: kd> .process
 Implicit process is now fffffa80`0361eb30
 3: kd> !process fffffa80`0361eb30 1
@@ -123,7 +121,6 @@ For related topics, see [**!vtop**](-vtop.md) and [Converting Virtual Addresses 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ptov%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

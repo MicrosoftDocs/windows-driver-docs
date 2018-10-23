@@ -5,17 +5,14 @@ ms.assetid: 95e302c1-687e-4a30-b3bc-9d272c688cba
 keywords:
 - filter drivers WDK networking , characteristics
 - NDIS filter drivers WDK , characteristics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Driver Characteristics
 
 
-## <a href="" id="ddk-filter-driver-characteristics-ng"></a>
+
 
 
 Filter drivers have the following characteristics:

@@ -11,11 +11,8 @@ keywords:
 - CoInstallers section WDK KMDF
 - DDInstall section WDK KMDF
 - Wdf INF file section WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the KMDF Co-installer in an INF File
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
 If you include a co-installer in your [driver package](https://msdn.microsoft.com/library/windows/hardware/ff539954), read this topic for information about sections you must provide in your driver's INF file. This information does not apply if you provide your own setup application that calls Microsoft-supplied .msu redistributables.
 
-## <a href="" id="-------------inf-file-sections-for-the-co-installer"></a> INF File Sections for the Co-installer
+##  INF File Sections for the Co-installer
 
 
 Your driver's INF file must contain an INF *DDInstall***.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321).
@@ -44,7 +41,7 @@ The INF section that *Wdf-install-section* identifies must contain the following
 
 For example, the following INF *DDInstall***.Wdf** section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
 
-```
+```cpp
 [ECHO_Device.NT.Wdf]
 KmdfService = Echo, Echo_wdfsect
 [Echo_wdfsect]
@@ -63,7 +60,7 @@ You should attempt to match the section layout that the *Echo.inf* sample uses. 
 
 Before you have modified *echo.inf*, the sections that install the co-installer are as follows:
 
-```
+```cpp
 =============== Top of Echo.inf ====================
 ....
 ....
@@ -95,7 +92,7 @@ KmdfLibraryVersion = 1.0
 
 After you have changed all **ECHO\_Device** substrings, your *MyDevice.inf* file should appear as follows:
 
-```
+```cpp
 =============== Top of MyDevice.inf ===============
 ....
 ....

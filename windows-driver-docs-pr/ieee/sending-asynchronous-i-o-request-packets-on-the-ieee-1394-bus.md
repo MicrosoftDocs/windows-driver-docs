@@ -16,17 +16,14 @@ keywords:
 - bus reset generation WDK IEEE 1394 bus
 - reset generation WDK IEEE 1394 bus
 - locking WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 
 
-## <a href="" id="ddk-sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg"></a>
+
 
 
 Drivers use REQUEST\_ASYNC\_READ, REQUEST\_ASYNC\_WRITE, and REQUEST\_ASYNC\_LOCK to send asynchronous read, write, and lock operations to a device on the IEEE 1394 bus. For REQUEST\_ASYNC\_READ and REQUEST\_ASYNC\_WRITE, the operation-specific parameters of the IRB are stored in either **u.AsyncRead** or **u.AsyncWrite** members of the IRB.
@@ -78,6 +75,5 @@ A device driver that uses asynchronous I/O keeps track of the bus reset generati
  
 
 
---------------------
 
 

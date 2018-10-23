@@ -3,11 +3,8 @@ title: Thin Provisioning
 author: windows-driver-content
 description: Thin Provisioning
 ms.assetid: 0D65DDCC-D207-4EA8-B5D6-56DF57221EE3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Thin Provisioning
@@ -100,6 +97,5 @@ The storage device does not need to process the entire LBA range in one return. 
  
 
 
---------------------
 
 

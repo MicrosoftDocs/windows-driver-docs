@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , flow delete callouts
 - flow delete callouts WDK Windows Filtering Platform
 - flowDeleteFn
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing Flow Delete Callouts
@@ -21,7 +18,7 @@ When a data flow that is being processed by a callout is stopped, the filter eng
 
 For example:
 
-```
+```C++
 // Context structure to be associated with data flows
 typedef struct FLOW_CONTEXT_ {
   ...

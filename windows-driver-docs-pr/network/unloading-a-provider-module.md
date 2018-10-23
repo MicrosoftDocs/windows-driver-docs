@@ -6,11 +6,8 @@ keywords:
 - provider modules WDK Network Module Registrar , unloading
 - unloading network modules
 - NmrDeregisterProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unloading a Provider Module
@@ -22,7 +19,7 @@ A provider module's [**Unload**](https://msdn.microsoft.com/library/windows/hard
 
 For example:
 
-```
+```C++
 // Variable containing the handle for the registration
 HANDLE ProviderHandle;
 

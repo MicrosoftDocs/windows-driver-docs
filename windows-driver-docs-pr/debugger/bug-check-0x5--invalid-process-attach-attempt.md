@@ -3,17 +3,15 @@ title: Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT
 description: The INVALID_PROCESS_ATTACH_ATTEMPT bug check has a value of 0x00000005.
 ms.assetid: 72efb88f-1bf7-4552-b44e-4ecb04754b7d
 keywords: ["Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT", "INVALID_PROCESS_ATTACH_ATTEMPT"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INVALID_PROCESS_ATTACH_ATTEMPT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5: INVALID\_PROCESS\_ATTACH\_ATTEMPT
@@ -23,7 +21,7 @@ The INVALID\_PROCESS\_ATTACH\_ATTEMPT bug check has a value of 0x00000005. This 
 
 This bug check appears very infrequently.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_PROCESS\_ATTACH\_ATTEMPT Parameters
 

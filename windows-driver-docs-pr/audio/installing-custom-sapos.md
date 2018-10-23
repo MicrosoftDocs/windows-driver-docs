@@ -8,11 +8,8 @@ keywords:
 - LFX WDK
 - GFX WDK
 - INF files WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Custom sAPOs
@@ -36,7 +33,7 @@ In the INF file, a GFX or LFX sAPO is identified by its COM class ID (CLSID). In
 
 The property keys are first defined to improve readability.
 
-```
+```inf
 ;; Property Keys
 PKEY_FX_Association = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},0"
 PKEY_FX_PreMixClsid = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},1"
@@ -49,7 +46,7 @@ Where the PKEY\_FX\_PreMixClsid property key represents the LFX sAPO and the PKE
 
 The previously defined property keys are then used to add the key value pairs to the registry. This is shown in the following INF file fragment.
 
-```
+```inf
 ;; Key value pairs
 HKR,"FX\\0",%PKEY_FriendlyName%,,%FX_FriendlyName%
 HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%FX_PREMIX_CLSID%
@@ -60,7 +57,7 @@ HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
 
 Because an audio adapter is capable of supporting multiple inputs and outputs, you must explicitly indicate the type of kernel streaming (KS) node type that your custom sAPO is compatible with. In the preceding INF file fragment, the sAPO is shown to be associated with a KS node type of %KSNODETYPE\_ANY%. Later in this INF file, KSNODETYPE\_ANY is defined as follows:
 
-```
+```inf
 [Strings]
 ;; Define the strings used in MyINF.inf
 ...
@@ -71,7 +68,7 @@ KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
 
 A value of **NULL** for KSNODETYPE\_ANY means that this sAPO is compatible with any type of KS node type. To indicate, for example, that your sAPO is only compatible with a KS node type of KSNODETYPE\_SPEAKER, the INF file would show the KS node type and sAPO association as follows:
 
-```
+```inf
 ;; Key value pairs
 ...
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
@@ -84,7 +81,7 @@ Microsoft supplies an **Enhancements** property page for the **Sound** applet on
 
 See the [Replacing the Default Property Page](replacing-the-default-property-page.md) topic for information about how to replace the **Enhancements** property page. The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-```
+```inf
 [SysFx.AddReg]
 ...
 HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -99,7 +96,5 @@ SYSFX_UI_CLSID     = "{YOUR GUID GOES HERE}"
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20Custom%20sAPOs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

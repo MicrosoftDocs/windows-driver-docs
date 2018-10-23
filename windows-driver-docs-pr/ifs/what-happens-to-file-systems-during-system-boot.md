@@ -21,11 +21,8 @@ keywords:
 - file system queues WDK
 - queues WDK file system
 - FsRec
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What Happens to File Systems During System Boot
@@ -85,6 +82,5 @@ FsRec is loaded in the SERVICE\_SYSTEM\_START phase of system startup. Note that
  
 
 
---------------------
 
 

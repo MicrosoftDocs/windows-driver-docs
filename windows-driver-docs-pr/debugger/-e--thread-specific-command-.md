@@ -3,17 +3,15 @@ title: ~e (Thread-Specific Command)
 description: The ~e command executes one or more commands for a specific thread or for all threads in the target process.Do not confuse this command with the e (Enter Values) command.
 ms.assetid: a14f0a5f-48f9-46dd-baa6-b7d91b15772c
 keywords: ["Thread-Specific Command (~e) command", "thread, Thread-Specific Command (~e) command", "~e (Thread-Specific Command) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ~e (Thread-Specific Command)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ~e (Thread-Specific Command)
@@ -23,7 +21,7 @@ The **~e** command executes one or more commands for a specific thread or for al
 
 Do not confuse this command with the [**e (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command.
 
-```
+```dbgcmd
 ~Thread e CommandString
 ```
 
@@ -72,7 +70,7 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 
 When you use the **~e** command together with one thread, the **~e** command only saves some typing. For example, the following two commands are equivalent.
 
-```
+```dbgcmd
 0:000> ~2e r; k; kd 
 
 0:000> ~2r; ~2k; ~2kd 
@@ -80,7 +78,7 @@ When you use the **~e** command together with one thread, the **~e** command onl
 
 However, you can use the **~e** qualifier to repeat a command or extension command several times. When you use the qualifier in this manner, it can eliminate extra typing. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that you are debugging.
 
-```
+```dbgcmd
 0:000> ~*e !gle 
 ```
 
@@ -96,7 +94,6 @@ If you are debugging more than one process, you cannot use the **~e** command to
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20~e%20%28Thread-Specific%20Command%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

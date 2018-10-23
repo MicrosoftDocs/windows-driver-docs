@@ -8,11 +8,8 @@ keywords:
 - claiming storage devices
 - query-property requests WDK storage
 - configuration information WDk storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's ClaimDevice Routine
@@ -36,6 +33,5 @@ A *ClaimDevice* routine can serve double duty as a routine to be called from a c
  
 
 
---------------------
 
 

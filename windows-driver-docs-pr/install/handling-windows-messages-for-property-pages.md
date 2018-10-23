@@ -12,17 +12,14 @@ keywords:
 - friendly names WDK property pages
 - WM_NOTIFY
 - PSN_APPLY
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Windows Messages for Property Pages
 
 
-## <a href="" id="ddk-handling-windows-messages-for-property-pages-dg"></a>
+
 
 
 When a [device property page provider](types-of-device-property-page-providers.md) handles a request to create a property page for its device or device class, it returns the address of a dialog box procedure for the property page. The dialog box procedure must initialize the property page when it gets a WM_INITDIALOG message, and it must be prepared to handle changes to device properties when it gets a WM_NOTIFY message. The procedure can also handle any other such messages it may require, as described in the Microsoft Windows SDK documentation.
@@ -31,7 +28,7 @@ In response to a WM_INITDIALOG message, the dialog box procedure initializes inf
 
 [**SetupDiLoadClassIcon**](https://msdn.microsoft.com/library/windows/hardware/ff552053) loads the icons for a specified device class and returns a handle to the loaded large icon that can be used in a subsequent call to **SendDlgItemMessage**. For example:
 
-```
+```cpp
 if (SetupDiLoadClassIcon(
         &pTestPropPageData->DeviceInfoData->ClassGuid, &ClassIcon, 
         NULL)) {

@@ -6,11 +6,8 @@ ms.assetid: 1f339779-dc88-4673-87d5-36cee0b27fc2
 keywords:
 - preoperation callback routines WDK file system minifilter , completing I/O operations
 - completing I/O requests WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing an I/O Operation in a Preoperation Callback Routine
@@ -58,6 +55,5 @@ NTSTATUS values are defined in ntstatus.h. These values fall into four categorie
  
 
 
---------------------
 
 

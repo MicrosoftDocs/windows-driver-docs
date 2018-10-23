@@ -3,11 +3,8 @@ title: UEFI protocols for Windows
 author: windows-driver-content
 description: This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process.
 ms.assetid: 67AADA80-3AC8-47AA-89A2-4460DC5880A3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI protocols for Windows
@@ -34,6 +31,5 @@ This section describes UEFI protocols that are defined by Windows. These protoco
  
 
 
---------------------
 
 

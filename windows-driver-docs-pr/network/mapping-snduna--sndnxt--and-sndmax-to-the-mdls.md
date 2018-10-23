@@ -11,11 +11,8 @@ keywords:
 - SndNxt WDK TCP chimney offload
 - SndMax WDK TCP chimney offload
 - mapping bytes for TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping SndUna, SndNxt, and SndMax to the MDLs
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-mapping-snduna-sndnxt-and-sndmax-to-the-mdls-ng"></a>
+
 
 
 The following figure shows how an offload target maps the bytes that are indicated by the **SndUna**, **SndNxt**, and **SndMax** members of the [**TCP\_OFFLOAD\_STATE\_DELEGATED**](https://msdn.microsoft.com/library/windows/hardware/ff570939) structure to the send data.

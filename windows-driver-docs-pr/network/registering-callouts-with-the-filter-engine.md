@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , initializing
 - initializing callout drivers WDK Windows Filtering Platform
 - registering callouts WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering Callouts with the Filter Engine
@@ -19,8 +16,8 @@ ms.technology: windows-devices
 
 After a callout driver has created a device object, it can then register its callouts with the filter engine. A callout driver can register its callouts with the filter engine at any time, even if the filter engine is currently not running. To register a callout with the filter engine, a callout driver calls the [**FwpsCalloutRegister0**](https://msdn.microsoft.com/library/windows/hardware/ff551140) function. For example:
 
-```
-// Prototypes for the callout&#39;s callout functions
+```C++
+// Prototypes for the callout's callout functions
 VOID NTAPI
  ClassifyFn(
     IN const FWPS_INCOMING_VALUES0  *inFixedValues,

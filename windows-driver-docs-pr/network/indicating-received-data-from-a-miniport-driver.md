@@ -6,17 +6,14 @@ keywords:
 - receiving data WDK networking
 - NdisMIndicateReceiveNetBufferLists
 - indicatings WDK NDIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Received Data from a Miniport Driver
 
 
-## <a href="" id="ddk-indicating-received-data-from-a-miniport-driver-ng"></a>
+
 
 
 The following figure illustrates a miniport driver receive indication.

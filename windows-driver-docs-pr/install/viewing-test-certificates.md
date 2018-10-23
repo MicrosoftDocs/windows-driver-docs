@@ -4,11 +4,8 @@ description: Viewing Test Certificates
 ms.assetid: bdfa8970-fdba-4d65-8a9c-960e5f6844d6
 keywords:
 - driver signing WDK , viewing test certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Viewing Test Certificates

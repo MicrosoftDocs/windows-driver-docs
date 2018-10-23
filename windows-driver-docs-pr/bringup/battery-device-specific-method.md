@@ -3,11 +3,8 @@ title: Battery Device-Specific Method
 author: windows-driver-content
 description: This topic describes _DSM control method and parameters for passive thermal battery management.
 ms.assetid: 622803F4-2548-4E8A-A330-179ABDF374AD
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/16/2018
+ms.localizationpriority: medium
 ---
 
 # Battery Device-Specific Method
@@ -15,7 +12,7 @@ ms.technology: windows-devices
 
 To support the passive thermal management of the battery by the platform, Microsoft defines a \_DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone.
 
-For more information, see [Thermal zones](acpi-defined-devices.md#thermal).
+For more information, see the **Thermal zones** section in the [ACPI defined devices](acpi-defined-devices.md#thermal) topic.
 
 ## Function 1: Battery thermal limit
 
@@ -37,6 +34,5 @@ None. Firmware is responsible for taking the current thermal limit into account 
  
 
 
---------------------
 
 

@@ -2,11 +2,8 @@
 title: What's new for UWP device apps
 description: This section provides a glimpse of what's new for UWP device apps.
 ms.assetid: AF18ACFD-EA38-4ABD-9369-3974C019E132
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What's new for UWP device apps
@@ -21,7 +18,7 @@ This section provides a glimpse of what's new for UWP device apps. For more info
 ## <span id="What_s_new_for_Windows_10"></span><span id="what_s_new_for_windows_10"></span><span id="WHAT_S_NEW_FOR_WINDOWS_10"></span>What's new for Windows 10
 
 
-With Windows 10, there are no changes to the Microsoft Store device app functionality. The Windows 8.1 processes for building, testing, and submitting UWP device apps will continue to work with Windows 10. However, it is recomended to develop a Universal Windows Platform app with Custom Capabilities. For more info, see [Using a custom capability to pair a Hardware Support App (HSA) with a driver](using-a-custom-capability-to-pair-hsa-with-driver.md)
+With Windows 10, there are no changes to the Microsoft Store device app functionality. The Windows 8.1 processes for building, testing, and submitting UWP device apps will continue to work with Windows 10. However, we recommend developing a Universal Windows Platform (UWP) app with custom capabilities. For more info, see [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
 
 ## <span id="Device_metadata_wizard"></span><span id="device_metadata_wizard"></span><span id="DEVICE_METADATA_WIZARD"></span>Device metadata wizard
 
@@ -64,7 +61,6 @@ The Windows 8.1 built-in Camera app no longer includes an **Options** button. T
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20What's%20new%20for%20Windows%20Store%20device%20apps%20%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

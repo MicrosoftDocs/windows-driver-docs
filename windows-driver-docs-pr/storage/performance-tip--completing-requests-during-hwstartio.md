@@ -3,11 +3,8 @@ title: Performance Tip Completing Requests During HwStartIo
 author: windows-driver-content
 description: Performance Tip Completing Requests During HwStartIo
 ms.assetid: b1a3feff-ca18-4757-a336-c70ada998ba9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performance Tip: Completing Requests During HwStartIo
@@ -30,6 +27,5 @@ While in its [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hard
  
 
 
---------------------
 
 

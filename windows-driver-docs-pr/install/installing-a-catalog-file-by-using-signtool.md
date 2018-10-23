@@ -2,11 +2,8 @@
 title: Installing a Catalog File by using SignTool
 description: Installing a Catalog File by using SignTool
 ms.assetid: b3d151af-d49b-468f-a34a-04e5ab875a07
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Catalog File by using SignTool
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) is not a redistributable tool and therefore cannot be included with a redistributed installation application. However, SignTool can be used on a computer that has SignTool already installed in a manner that complies with the Microsoft Software License Terms for the tool. A [catalog file](catalog-files.md) can be manually installed from a command line or installed by command script by using the following SignTool command:
 
-```
+```cpp
 SignTool catdb /v /u CatalogFileName.cat
 ```
 

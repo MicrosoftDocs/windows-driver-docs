@@ -2,17 +2,14 @@
 title: Enumerating Filters on a VMQ
 description: Enumerating Filters on a VMQ
 ms.assetid: 6d5d8cb6-7bdf-488b-8fcd-7c6e78c4fb24
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerating Filters on a VMQ
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 To obtain a list of all the filters that are set on a receive queue, overlying drivers and applications can use the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) method object identifier (OID) request.

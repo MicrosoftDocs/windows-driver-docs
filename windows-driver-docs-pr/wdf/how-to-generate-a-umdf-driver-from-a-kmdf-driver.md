@@ -3,11 +3,8 @@ title: How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
 author: windows-driver-content
 description: This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 ms.assetid: 69B865CF-65D0-4211-951B-6574E27F10BD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
@@ -15,7 +12,7 @@ ms.technology: windows-devices
 
 This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 
-## <a href="" id="use-vs"></a>Driver Conversion using Visual Studio
+## Driver Conversion using Visual Studio
 
 
 1.  When switching from KMDF to UMDF, create an empty UMDF project in Visual Studio using the **User Mode Driver, Empty (UMDF V2)** project template. When switching from UMDF to KMDF, create an empty KMDF project in Visual Studio using the **Kernel Mode Driver, Empty (KMDF)** project template.
@@ -27,7 +24,7 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
 
     Optionally, use the **\_KERNEL\_MODE** preprocessor macro to add the right system header conditionally:
 
-    ```
+    ```cpp
     #ifndef _KERNEL_MODE
     // This is a user-mode driver
     #include <windows.h>
@@ -46,7 +43,7 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
 4.  Update the source code to either remove or conditionally compile (using the **\_KERNEL\_MODE** macro) any functionality that is not supported in the target driver model. For example:
 
     -   If your driver uses WPP tracing, update the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro. This macro takes different parameters in user mode and kernel mode.
-        ```
+        ```cpp
         WPP_INIT_TRACING ( DriverObject, RegistryPath ); // KMDF
         WPP_INIT_TRACING ( “<MyDriverNameString>” ); // UMDF
         ```

@@ -10,11 +10,8 @@ api_name:
 - INF RegisterDlls Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF RegisterDlls Directive
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
 A **RegisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 
-```
+```cpp
 [DDInstall]
   
 RegisterDlls=register-dll-section[,register-dll-section]...
@@ -32,7 +29,7 @@ RegisterDlls=register-dll-section[,register-dll-section]...
 
 Each INF section referenced by a **RegisterDlls** directive must have the following entry format:
 
-```
+```cpp
 [register-dll-section] 
   
 dirid,[subdir],filename,registration-flags[,[timeout][,argument]] 
@@ -85,7 +82,7 @@ For more information about OLE controls and self registration, see the Windows S
 Examples
 --------
 
-```
+```cpp
 [Dialer]
 RegisterDlls = DialerRegSvr
 [DialerUninstall]

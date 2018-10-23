@@ -2,11 +2,8 @@
 title: Requirements for Property Page Extension DLLs
 description: Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
 ms.assetid: bc48d848-a216-442e-97ca-f990f8d243ac
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
@@ -26,14 +23,14 @@ For information about how to create a custom device property page by a property 
 
 A property page extension DLL is installed by using the following directives in the [INF file](inf-files.md) of a [driver package](driver-packages.md):
 
-1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following REG_SZ values:
+1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) values:
 
     -   The name of the DLL that exports the **ExtensionPropSheetPageProc** callback function.
     -   The name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL.
 
     The following code example shows an *add-registry-section* that adds the **EnumPropPages32** entry that specifies the name of the DLL (*MyPropProvider.dll*) and callback function (*MyCallbackFunction*):
 
-    ```
+    ```cpp
     HKR, , EnumPropPages32, 0, "MyPropProvider.dll, MyCallbackFunction"
     ```
 

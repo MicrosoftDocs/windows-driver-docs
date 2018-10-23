@@ -6,11 +6,8 @@ ms.assetid: df55105e-3da3-40cc-9f57-05632cb2d043
 keywords:
 - order of resources WDK PCI
 - start-device IRP WDK PCI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Order of Resources in Start-Device IRP
@@ -23,6 +20,5 @@ The order of the resources that are reported in the start-device I/O request pac
  
 
 
---------------------
 
 

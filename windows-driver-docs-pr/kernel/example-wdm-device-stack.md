@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Example WDM Device Stack
 ms.assetid: 1128e098-9ef4-4bc3-aa09-74df3142fb11
 keywords: ["device stacks WDK kernel , examples", "joystick WDK device stacks", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "USB hub device stacks WDK kernel", "USB host controller device stacks WDK kernel", "PCI bus device stacks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example WDM Device Stack
 
 
-## <a href="" id="ddk-example-wdm-device-stack-kg"></a>
+
 
 
 This section describes the device objects created by a possible set of drivers for USB hardware to illustrate WDM device objects and how they are layered.
@@ -70,7 +67,5 @@ A bus driver spans more than one device stack. A bus driver creates the FDO for 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Example%20WDM%20Device%20Stack%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

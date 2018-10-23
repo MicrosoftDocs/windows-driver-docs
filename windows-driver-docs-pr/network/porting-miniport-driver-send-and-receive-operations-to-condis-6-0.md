@@ -4,17 +4,14 @@ description: Porting Miniport Driver Send and Receive Operations to CoNDIS 6.0
 ms.assetid: 2b1f7f31-2693-4ab5-bd30-b8a45dceb338
 keywords:
 - porting miniport drivers WDK networking , send and receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Send and Receive Operations to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-send-and-receive-operations-to-condis-6-0-"></a>
+
 
 
 Data transfer code paths in NDIS 6.0 have changed as follows:

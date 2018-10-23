@@ -8,17 +8,14 @@ keywords:
 - initializing miniport adapters
 - Initializing state WDK networking
 - MiniportInitializeEx
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Miniport Adapter
 
 
-## <a href="" id="ddk-initializing-an-adapter-ng"></a>
+
 
 
 When a networking device becomes available, the system loads the required NDIS miniport driver, if it is not already loaded. Subsequently, the Plug and Play (PnP) manager sends NDIS a Plug and Play IRP to start the device. NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function to initialize an adapter for network I/O operations. NDIS can call *MiniportInitializeEx* at any time after the driver is initialized. For more information about miniport driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).

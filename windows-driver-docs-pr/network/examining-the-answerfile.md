@@ -6,17 +6,14 @@ keywords:
 - testing network component upgrades WDK
 - AnswerFile WDK networking
 - upgrade tests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Examining the AnswerFile
 
 
-## <a href="" id="ddk-examining-the-answerfile-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
@@ -82,7 +79,7 @@ To the parameters section name for a component, NetSetup adds the extension **Oe
 
 The following portion of an AnswerFile shows the sections and entries for a network adapter whose Windows 2000 or later device ID is **adapter2**:
 
-```
+```INF
 [NetAdapter]              ;top-level adapters section
 adapter2=params.adapter2      ;entry for adapter2
 [params.adapter2]          ;parameters section for adapter2
@@ -109,7 +106,7 @@ If a network migration DLL is to be loaded during the GUI mode phase, its [**DoP
 
 The following example shows the AnswerFile sections and entries for a component whose network migration DLL is loaded during the GUI mode phase:
 
-```
+```INF
 [NetAdapter]              ;top-level adapters section
 adapter2=params.adapter2      ;entry for adapter2
 [params.adapter2]          ;parameters section for adapter2

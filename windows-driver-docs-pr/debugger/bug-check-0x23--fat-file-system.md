@@ -3,17 +3,15 @@ title: Bug Check 0x23 FAT_FILE_SYSTEM
 description: The FAT_FILE_SYSTEM bug check has a value of 0x00000023. This indicates that a problem occurred in the FAT file system.
 ms.assetid: 5a10e650-2fca-4836-b407-ded8b41c43a1
 keywords: ["Bug Check 0x23 FAT_FILE_SYSTEM", "FAT_FILE_SYSTEM"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - FAT_FILE_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x23: FAT\_FILE\_SYSTEM
@@ -21,7 +19,7 @@ api_type:
 
 The FAT\_FILE\_SYSTEM bug check has a value of 0x00000023. This indicates that a problem occurred in the FAT file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FAT\_FILE\_SYSTEM Parameters
 

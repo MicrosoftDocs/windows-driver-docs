@@ -2,11 +2,8 @@
 title: Replacing the Default Property Page
 description: Replacing the Default Property Page
 ms.assetid: decd2f44-fb1f-41bf-b5a7-e1ca295a0bb9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Replacing the Default Property Page
@@ -18,15 +15,15 @@ In Windows Vista the Sound applet in the Control Panel shows an **Enhancements**
 
 To design and implement the custom property page provider, perform the following steps.
 
-1.  Create a custom property page. See the [creating property sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) topic on the MSDN website for more information.
+1.  Create a custom property page. See [Creating property sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
 
-2.  Package your property page as a DLL. See the [creating and using a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) topic on the MSDN website to help you package your custom page as a DLL.
+2.  Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) for more information about packaging your custom page as a DLL.
 
 3.  Modify your [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the DLL for the property page.
 
 The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-```
+```inf
 [SysFx.AddReg]
 ...
 HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -38,7 +35,7 @@ SYSFX_UI_CLSID     = "{YOUR GUID GOES HERE}"
 
 And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-```
+```text
 HKLM
  SOFTWARE
   Microsoft
@@ -61,7 +58,5 @@ The CLSID of the default property page is replaced with the CLSID of your custom
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Replacing%20the%20Default%20Property%20Page%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -10,11 +10,8 @@ keywords:
 - scavenging WDK network redirectors
 - FOBX structure
 - cleanup FOBX structures WDK network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Purging and Scavenging Control
@@ -71,6 +68,5 @@ The RDBSS purging and scavenging routines include the following:
  
 
 
---------------------
 
 

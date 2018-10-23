@@ -5,17 +5,14 @@ ms.assetid: 6dcebd63-dce9-47a9-a19c-52f8dab63202
 keywords:
 - USB WDK networking
 - Remote NDIS WDK networking , mapping to USB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS To USB Mapping
 
 
-## <a href="" id="ddk-remote-ndis-to-usb-mapping-ng"></a>
+
 
 
 This section includes the following topics:

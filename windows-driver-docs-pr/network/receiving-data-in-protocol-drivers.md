@@ -4,17 +4,14 @@ description: Receiving Data in Protocol Drivers
 ms.assetid: 758c6a86-6704-410b-ba13-bf589b1e330f
 keywords:
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in Protocol Drivers
 
 
-## <a href="" id="ddk-receiving-data-in-protocol-drivers-ng"></a>
+
 
 
 The following figure illustrates a basic receive operation, which involves a protocol driver, NDIS, and underlying drivers in a driver stack.

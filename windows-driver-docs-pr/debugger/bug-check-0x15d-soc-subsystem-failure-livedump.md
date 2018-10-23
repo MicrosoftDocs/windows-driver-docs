@@ -3,17 +3,15 @@ title: Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP
 description: The SOC_SUBSYSTEM_FAILURE_LIVEDUMP bug code has a value of 0x0000015D.
 ms.assetid: F7903E88-1706-46E6-A5D0-6972702058A8
 keywords: ["Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15D: SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP
@@ -21,7 +19,7 @@ api_type:
 
 The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This indicates that a System on a Chip (SoC) subsystem has experienced a critical fault and has captured a live kernel dump. The SoC subsystem does not generate a bug check in this situation.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## Bug Check 0x14B SOC\_SUBSYSTEM\_FAILURE Parameters
 
@@ -66,7 +64,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failure data using the dt command and the address provided by Arg1.
 
-```
+```dbgcmd
 2: kd> dt nt!SOC_SUBSYSTEM_FAILURE_DETAILS 9aa8d630
    +0x000 SubsysType       : 1 ( SOC_SUBSYS_AUDIO_DSP )
    +0x008 FirmwareVersion  : 0

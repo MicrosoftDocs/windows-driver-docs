@@ -2,11 +2,8 @@
 title: Personal Information Exchange (.pfx) Files
 description: Personal Information Exchange (.pfx) Files
 ms.assetid: 58849ccc-c86f-4c49-b848-8926febb5521
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Personal Information Exchange (.pfx) Files
@@ -18,7 +15,7 @@ If the CA issued an *.spc* and its keys in non-*.pfx* files, you must convert an
 
 The following command-line example converts a *.pvk* file that is named *abc.pvk* and a *.spc* that is named *abc.spc* into a *.pfx* file that is named *abc.pfx*:
 
-```
+```cpp
 Pvk2Pfx -pvk abc.pvk -pi pvkpassword -spc abc.spc -pfx abc.pfx -po pfxpassword -f
 ```
 

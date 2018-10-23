@@ -2,11 +2,8 @@
 Description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
 title: How to connect to a USB device (UWP app)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to connect to a USB device (UWP app)
@@ -31,7 +28,7 @@ When you write a UWP app that interacts with a USB device, the app can send cont
 -   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with UWP apps](http://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
 -   Code examples are based on the CustomUsbDeviceAccess sample. You can download the complete sample from this code gallery page.
 -   The USB device used in tutorial is the SuperMUTT device.
--   In order to use the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace to write a Windows store app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
+-   In order to use the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace to write a Windows app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
 
 ## Flowchart: Finding the device
 
@@ -216,7 +213,5 @@ The [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20connect%20to%20a%20USB%20device%20%28Windows%20Store%20app%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

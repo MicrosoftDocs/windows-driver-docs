@@ -7,17 +7,14 @@ keywords:
 - NDIS miniport drivers WDK , types
 - WDM lower edge WDK networking
 - lower edge of NDIS miniport drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Miniport Drivers with a WDM Lower Edge
 
 
-## <a href="" id="ddk-ndis-miniport-drivers-with-a-wdm-lower-edge-ng"></a>
+
 
 
 You can write an NDIS miniport driver that controls a device on a bus — for example, the Universal Serial Bus (USB) or the IEEE 1394 (firewire) bus. Such a miniport driver must expose a standard NDIS miniport driver interface at its upper edge and use the class interface for the particular bus at its lower edge. The miniport driver communicates with devices that are attached to the bus by sending I/O request packets (IRPs) to the bus through its Microsoft Windows Driver Model (WDM) lower interface.

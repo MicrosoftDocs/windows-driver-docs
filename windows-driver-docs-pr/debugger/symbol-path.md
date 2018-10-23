@@ -3,11 +3,9 @@ title: Symbol path for Windows debuggers
 description: The symbol path specifies locations where the Windows debuggers (WinDbg, KD, CDB, NTST) look for symbol files. 
 ms.assetid: 705df98f-717f-40ad-a424-101826970691
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Symbol path for Windows debuggers
@@ -39,7 +37,7 @@ We strongly recommend that you always cache your symbols locally. One way to cac
 
 If you include the string `cache*;` in your symbol path, symbols loaded from any element that appears to the right of this string are stored in the default symbol cache directory on the local computer. For example, the following command tells the debugger to get symbols from the network share `\\someshare` and cache the symbols in the default location on the local computer.
 
-```
+```dbgcmd
 .sympath cache*;\\someshare
 ```
 
@@ -47,7 +45,7 @@ If you include the string `cache*localsymbolcache;` in your symbol path, symbols
 
 For example, the following command tells the debugger to obtain symbols from the network share `\\someshare` and cache the symbols in the `c:\MySymbols` directory.
 
-```
+```dbgcmd
 .sympath cache*c:\MySymbols;\\someshare
 ```
 
@@ -58,25 +56,25 @@ If you are connected to the Internet or a corporate network, the most efficient 
 
 If you include the string `srv*` in your symbol path, the debugger uses a symbol server to get symbols from the default symbol store. For example, the following command tells the debugger to use a symbol server to get symbols from the default symbol store. These symbols are not cached on the local computer.
 
-```
+```dbgcmd
 .sympath srv*
 ```
 
 If you include the string `srv*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore* store. For example, the following command tells the debugger to use a symbol server to get symbols from the symbol store at https://msdl.microsoft.com/download/symbols. These symbols are not cached on the local computer.
 
-```
+```dbgcmd
 .sympath srv*https://msdl.microsoft.com/download/symbols
 ```
 
 If you include the string `srv*localcache*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore* store and caches them in the *localcache* directory. For example, the following command tells the debugger to use a symbol server to get symbols from the symbol store at https://msdl.microsoft.com/download/symbols and cache the symbols in `c:\MyServerSymbols`.
 
-```
+```dbgcmd
 .sympath srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
 If you have a directory on your computer where you manually place symbols, do not use that directory as the cache for symbols obtained from a symbol server. Instead, use two separate directories. For example, you can manually place symbols in `c:\MyRegularSymbols` and then designate `c:\MyServerSymbols` as a cache for symbols obtained from a server. The following example shows how to specify both directories in your symbol path.
 
-```
+```dbgcmd
 .sympath c:\MyRegularSymbols;srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -87,7 +85,7 @@ For more information about symbol servers, see [Symbol Stores and Symbol Servers
 
 If you include the string `cache*;` in your symbol path, symbols loaded from any element that appears to the right of this string are stored in the default symbol cache directory on the local computer. For example, the following command tells the debugger to use a symbol server to get symbols from the store at https://msdl.microsoft.com/download/symbols and cache them in the default symbol cache directory.
 
-```
+```dbgcmd
 .sympath cache*;srv*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -95,7 +93,7 @@ If you include the string `cache*localsymbolcache;` in your symbol path, symbols
 
 For example, the following command tells the debugger to use a symbol server to get symbols from the store at https://msdl.microsoft.com/download/symbols and cache the symbols in the `c:\MySymbols` directory.
 
-```
+```dbgcmd
 .sympath cache*c:\MySymbols;srv*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -145,4 +143,3 @@ If you use the `-sins` [command-line option](command-line-options.md), the debug
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20path%20for%20Windows%20debuggers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

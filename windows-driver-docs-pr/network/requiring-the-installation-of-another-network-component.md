@@ -7,31 +7,28 @@ keywords:
 - component IDs WDK networking
 - component dependencies WDK networking
 - dependencies WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requiring the Installation of Another Network Component
 
 
-## <a href="" id="ddk-requiring-the-installation-of-another-network-component-ng"></a>
+
 
 
 A network component may require the installation of one or more other network components in order to function properly. A network INF file specifies each such dependency with a **RequiredAll** value. The **RequiredAll** value is added (through an *add-registry-section*) to the **Ndi** key of the network component that requires the installation of another network component.
 
 The following example shows a **RequiredAll** entry in an *add-registry-section*:
 
-```
+```INF
 [ndi.reg]
 HKR, Ndi, RequiredAll, 0, "component id"
 ```
 
 The *component ID* is the *hw-id* of the required network component. For more information, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456). If a network component requires the installation of more than one other network component, use one **RequiredAll** entry for each network component that must be installed, as shown in the following example:
 
-```
+```INF
 HKR, Ndi, RequiredAll, 0, "component1 id, component2 id"
 ```
 

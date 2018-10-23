@@ -3,17 +3,15 @@ title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
 ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Managed Code Using the Windows Debugger
 
 
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
 
 The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
@@ -45,7 +43,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 To debug managed code, the debugger must load these two components.
 
 -   Data access component (DAC) (mscordacwks.dll)
--   [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345)
+-   [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345)
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
@@ -61,10 +59,10 @@ For version 1.*x* of the .NET Framework, sos.dll is not included in the .NET Fra
 
 Windows 7 Debugging Tools for Windows is included in the Windows SDK for Windows 7, which is available at these two places:
 
--   [Windows SDK for Windows 7 and .NET Framework 4.0](http://go.microsoft.com/fwlink/p?LinkId=320327)
--   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](http://go.microsoft.com/fwlink/p?LinkId=320328)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0](https://go.microsoft.com/fwlink/p?LinkId=320327)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://go.microsoft.com/fwlink/p?LinkId=320328)
 
-If you are running an x64 version of Windows, use the [ISO](http://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
+If you are running an x64 version of Windows, use the [ISO](https://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
 
 ### <span id="Loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="LOADING_MSCORDACWKS.DLL_AND_SOS.DLL__LIVE_DEBUGGING_"></span>Loading mscordacwks.dll and sos.dll (live debugging)
 
@@ -76,7 +74,7 @@ The debugger must load a version of the DAC that is the same as the version of t
 
 The output should be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 ```
@@ -89,7 +87,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -134,7 +132,7 @@ Enter these commands.
 
 The output will be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Unable to get version info for 'C:\Windows\Microsoft.NET
    \Framework64\v4.0.30319\mscordacwks.dll', Win32 error 0n87
 
@@ -142,13 +140,13 @@ SYMSRV:  C:\ProgramData\dbg\sym\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll
    \5038768C95e000\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll not found
 
 SYMSRV:  mscordacwks_AMD64_AMD64_4.0.30319.18010.dll from 
-   http://msdl.microsoft.com/download/symbols: 570542 bytes - copied         
+   https://msdl.microsoft.com/download/symbols: 570542 bytes - copied         
 ...
 SYMSRV:  C:\ProgramData\dbg\sym\SOS_AMD64_AMD64_4.0.30319.18010.dll
    \5038768C95e000\SOS_AMD64_AMD64_4.0.30319.18010.dll not found
 
 SYMSRV:  SOS_AMD64_AMD64_4.0.30319.18010.dll from 
-   http://msdl.microsoft.com/download/symbols: 297048 bytes - copied         
+   https://msdl.microsoft.com/download/symbols: 297048 bytes - copied         
 ...
 Automatically loaded SOS Extension
 ...
@@ -164,7 +162,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -177,7 +175,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
-```
+```dbgcmd
 0:000> .chain
 Extension DLL search Path:
 ...
@@ -198,7 +196,6 @@ Sometimes a managed-code application loads more than one version of the CLR. In 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Managed%20Code%20Using%20the%20Windows%20Debugger%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

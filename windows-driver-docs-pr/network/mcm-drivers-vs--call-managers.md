@@ -9,17 +9,14 @@ keywords:
 - CoNDIS WDK networking , MCM drivers
 - MCM drivers WDK networking
 - call managers WDK networking , vs. MCM drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MCM Drivers vs. Call Managers
 
 
-## <a href="" id="ddk-how-an-mcm-driver-differs-from-a-call-manager-ng"></a>
+
 
 
 An integrated MCM driver is a connection-oriented miniport driver that also provides call manager services to connection-oriented clients. As such, an MCM driver performs all the connection-oriented functions of both a connection-oriented miniport driver and a call manager. Like all miniport drivers, MCM drivers must use **Ndis*Xxx*** calls to communicate with the underlying NIC hardware.

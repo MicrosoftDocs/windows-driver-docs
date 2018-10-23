@@ -7,11 +7,8 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
 - SRB_FUNCTION_ABORT_COMMAND
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_ABORT\_COMMAND
@@ -41,6 +38,5 @@ Otherwise, the *HwScsiStartIo* routine does the following:
  
 
 
---------------------
 
 

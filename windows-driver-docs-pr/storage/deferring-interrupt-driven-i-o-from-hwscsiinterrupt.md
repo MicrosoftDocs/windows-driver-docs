@@ -8,11 +8,8 @@ keywords:
 - HwScsiInterrupt
 - interrupts WDK SCSI
 - deferred interrupt-driven I/O WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deferring Interrupt-Driven I/O from HwScsiInterrupt
@@ -46,6 +43,5 @@ Such a miniport driver also might call **ScsiPortNotification** with a miniport 
  
 
 
---------------------
 
 

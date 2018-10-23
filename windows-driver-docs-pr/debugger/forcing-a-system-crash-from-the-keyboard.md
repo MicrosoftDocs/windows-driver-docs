@@ -3,11 +3,9 @@ title: Forcing a System Crash from the Keyboard
 description: Forcing a System Crash from the Keyboard
 ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Forcing a System Crash from the Keyboard
@@ -24,15 +22,15 @@ This feature is available in Windows 2000 and later versions of Windows operatin
 <span id="________USB_keyboards_______"></span><span id="________usb_keyboards_______"></span><span id="________USB_KEYBOARDS_______"></span> USB keyboards   
 This feature is available in:
 
--   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](http://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
+-   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](https://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
 
 -   Windows Server 2003 (with Service Pack 2 or later).
 
--   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 
 -   Windows Vista Service Pack 2.
 
--   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 -   Windows Server 2008 (with Service Pack 2 or later).
 -   Windows 7 and later versions of Windows operating system.
 
@@ -56,7 +54,7 @@ The system then calls **KeBugCheck** and issues [**bug check 0xE2**](bug-check-0
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](http://go.microsoft.com/fwlink/p/?linkid=106065).
+For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](https://go.microsoft.com/fwlink/p/?linkid=106065).
 
 ### <span id="defining_alternate_keyboard_shortcuts_to_force_a_system_crash_from_the"></span><span id="DEFINING_ALTERNATE_KEYBOARD_SHORTCUTS_TO_FORCE_A_SYSTEM_CRASH_FROM_THE"></span>Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
 
@@ -125,7 +123,7 @@ The values for the first hot key are described in the following table.
 <span id="Dump2Key"></span><span id="dump2key"></span><span id="DUMP2KEY"></span>**Dump2Key**  
 The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
 
-```
+```cpp
 const UCHAR keyToScanTbl[134] = { 
         0x00,0x29,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,
         0x0A,0x0B,0x0C,0x0D,0x7D,0x0E,0x0F,0x10,0x11,0x12,
@@ -159,7 +157,6 @@ Forcing a system crash from the keyboard does not work if the computer stops res
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Forcing%20a%20System%20Crash%20from%20the%20Keyboard%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

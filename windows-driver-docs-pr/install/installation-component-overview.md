@@ -9,17 +9,14 @@ keywords:
 - operating systems WDK , driver installation information
 - installing drivers WDK , information required
 - installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Component Overview
 
 
-## <a href="" id="ddk-installation-component-overview-pg"></a>
+
 
 
 The [Device Installation Overview](overview-of-device-and-driver-installation.md) section provides details on how the Microsoft Windows operating system finds and installs devices and drivers, and on the components involved in such an installation.

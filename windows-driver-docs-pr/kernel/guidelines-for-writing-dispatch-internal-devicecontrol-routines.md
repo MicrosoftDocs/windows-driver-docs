@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 ms.assetid: e64ab28e-2904-41c2-a262-405bc129b9bb
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 
 
-## <a href="" id="ddk-guidelines-for-writing-dispatch-internal-devicecontrol-routines-kg"></a>
+
 
 
 Keep the following points in mind when writing a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) or [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine:
@@ -27,14 +24,14 @@ The underlying device driver must process device control requests unless it has 
 
 A lower-level device driver should check the parameters passed in with the request and fail the IRP with an appropriate error if any parameter is invalid. The most common check on the validity of parameters to these requests has the form:
 
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.InputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX;
 ```
 
 or
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.OutputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX; 
@@ -52,7 +49,5 @@ The class driver of a closely coupled class/port driver pair can process and com
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Guidelines%20for%20Writing%20Dispatch%28Internal%29DeviceControl%20Routines%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

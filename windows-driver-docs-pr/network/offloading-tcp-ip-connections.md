@@ -5,17 +5,14 @@ ms.assetid: 3c9b74ca-d624-4f0b-be8b-4a71016d53d4
 keywords:
 - connection offload WDK TCP/IP transport , TCP chimney offload services
 - TCP chimney offload services WDK TCP/IP transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading TCP/IP Connections
 
 
-## <a href="" id="ddk-offloading-tcp-ip-connections-ng"></a>
+
 
 
 Offloading TCP/IP connections is supported in NDIS 6.0 and later.

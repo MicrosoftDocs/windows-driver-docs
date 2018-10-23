@@ -6,11 +6,8 @@ ms.assetid: 971558ae-96a3-43a5-94bd-4883bb9feb58
 keywords:
 - storage virtual miniport drivers WDK
 - virtual miniports WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Virtual Miniport Drivers
@@ -31,6 +28,5 @@ This section contains the following topics:
  
 
 
---------------------
 
 

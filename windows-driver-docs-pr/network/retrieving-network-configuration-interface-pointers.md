@@ -8,23 +8,20 @@ keywords:
 - network configuration interface pointers WDK
 - interface pointers WDK networking
 - pointers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving Network Configuration Interface Pointers
 
 
-## <a href="" id="ddk-retrieving-network-configuration-interface-pointers-ng"></a>
+
 
 
 When the network configuration subsystem initializes an instance of the notify object as described in [Creating and Initializing an Instance of a Notify Object](creating-and-initializing-an-instance-of-a-notify-object.md), the object receives [**INetCfgComponent**](https://msdn.microsoft.com/library/windows/hardware/ff547715) and [**INetCfg**](https://msdn.microsoft.com/library/windows/hardware/ff547694) interface pointers. **INetCfgComponent** points to the notify object's component interface that the object can use to access and control the component. **INetCfg** points to the root network configuration interface that the notify object can use to access all aspects of network configuration. The following code uses these **INetCfgComponent** and **INetCfg** interface pointers to retrieve other network configuration interfaces that the notify object might require.
 
-```
-// Using the notify object&#39;s component interface that the notify 
+```C++
+// Using the notify object's component interface that the notify 
 // object received:
 INetCfgComponent *pncfgcompThis, *pncfgcompUp, *pncfgcompLow;
 INetCfgComponentBindings *pncfgcompbind;

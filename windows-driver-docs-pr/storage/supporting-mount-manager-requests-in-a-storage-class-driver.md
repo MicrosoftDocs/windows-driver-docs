@@ -16,11 +16,8 @@ keywords:
 - dead mounted devices WDK storage
 - symbolic link names WDK storage
 - nonpersistent names WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Mount Manager Requests in a Storage Class Driver
@@ -74,6 +71,5 @@ For information about how mount manager clients create persistent symbolic names
  
 
 
---------------------
 
 

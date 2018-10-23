@@ -7,24 +7,21 @@ keywords:
 - kernel streaming WDK , properties
 - KS properties WDK kernel streaming
 - properties WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Properties
 
 
-## <a href="" id="ddk-ks-properties-ksg"></a>
+
 
 
 A *Property* represents a capability or control-state setting that belongs to a kernel streaming object, such as a filter or pin. Clients of a kernel streaming minidriver can send get and set property requests (KSPROPERTY\_TYPE\_GET and KSPROPERTY\_TYPE\_SET) to the filters and pins that the minidriver has instantiated. A group of related properties is referred to as a *property set*.
 
 To get or set individual properties, user-mode clients call the Win32 function **DeviceIoControl** with the *dwIoControlCode* parameter set to IOCTL\_KS\_PROPERTY. **DeviceIoControl** is described in the Microsoft Windows SDK documentation. Kernel-mode clients should call [**KsSynchronousDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff567142).
 
-The input buffer is either a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure or a wrapper containing a KSPROPERTY structure and other information relevant to the request. In response to this call, the operating system dispatches an IRP to the class driver.
+The input buffer is either a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure or a wrapper containing a KSPROPERTY structure and other information relevant to the request. In response to this call, the operating system dispatches an IRP to the class driver.
 
 When the class driver receives the resulting IRP, it calls [**KsPropertyHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564263). The class driver includes as a call parameter the address of the KSPROPERTY structure that identifies the specifics of the property request. The property request is either handled automatically at the class driver level or by a minidriver-provided handler. See [Kernel Streaming Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff554246) for reference information including which property sets are handled by the class driver and which require minidriver-provided handlers. A minidriver can override or augment the class driver handler by providing callbacks for a property that is by default handled by the class driver.
 
@@ -43,7 +40,5 @@ The class driver may append a list of KSPROPERTY\_MEMBERSHEADER structures to th
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20KS%20Properties%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

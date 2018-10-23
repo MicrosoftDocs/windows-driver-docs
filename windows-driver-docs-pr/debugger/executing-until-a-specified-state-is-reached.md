@@ -3,11 +3,9 @@ title: Executing Until a Specified State is Reached
 description: Executing Until a Specified State is Reached
 ms.assetid: 0657a7bf-4d72-4248-9e45-d79d51b91139
 keywords: ["executing until a specified state is reached", "breakpoints, used to control execution", "breakpoints, and pseudo-registers", "script file, used to control execution"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Executing Until a Specified State is Reached
@@ -40,7 +38,7 @@ In specifying the desired state, it is often helpful to use *automatic pseudo-re
 
 For example, the following breakpoint uses the **$thread** pseudo-register, which is always equal to the value of the current thread. It resolves to the value of the current thread when it is used in a command. By using **$thread** as the argument of the **/t** parameter of the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command, you can create a breakpoint that will be triggered every time that **NtOpenFile** is called by the thread which was active at the time you issued the **bp** command:
 
-```
+```dbgcmd
 kd> bp /t @$thread nt!ntopenfile
 ```
 
@@ -56,13 +54,13 @@ Typically, this script file will contain the [**.if**](-if.md) and [**.else**](-
 
 For example, if you wish to execute until the **eax** register contains the value 0x1234, you can create a script file called *eaxstep* that contains the following line:
 
-```
+```dbgcmd
 .if (@eax == 1234) { .echo 1234 } .else { t "$<eaxstep" }
 ```
 
 Then issue the following command from the Debugger Command window:
 
-```
+```dbgcmd
 t "$<eaxstep"
 ```
 
@@ -74,7 +72,6 @@ For details on script files, see [Using Script Files](using-script-files.md) and
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Executing%20Until%20a%20Specified%20State%20is%20Reached%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Specifying Hardware IDs for a Computer
 description: Specifying Hardware IDs for a Computer
 ms.assetid: af0dbfc4-747c-4e16-a3ed-678df0e07757
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 #  Specifying Hardware IDs for a Computer
@@ -116,7 +113,7 @@ To specify that the hardware ID is for a computer device container, use the foll
 
 The following is an example of a [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) XML element for the computer:
 
-```
+```cpp
 DOID:ComputerMetadata\{c20d5449-511e-4cb5-902a-a541239322aa}
 ```
 

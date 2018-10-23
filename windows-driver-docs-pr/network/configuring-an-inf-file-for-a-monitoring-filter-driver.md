@@ -5,29 +5,26 @@ ms.assetid: b45c6f40-7254-4cc1-a007-d40eaa74a290
 keywords:
 - INF files WDK network , filter drivers
 - monitoring filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring an INF File for a Monitoring Filter Driver
 
 
-## <a href="" id="ddk-monitoring-filter-driver-installation-ng"></a>
+
 
 
 The following NDIS filter driver installation issues are associated with monitoring filter drivers:
 
 -   Set the **Class** INF file entry to **NetService** in the INF file. The following example shows a sample **Class** entry for the INF file.
-    ```
+    ```INF
     Class = NetService
     ```
 
 -   The *DDInstall* section in a filter driver INF file must have a **Characteristics** entry. The following example shows how you should define the **Characteristics** entry in your filter INF file.
 
-    ```
+    ```INF
     Characteristics=0x40000
     ```
 
@@ -35,7 +32,7 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   Set the **NetCfgInstanceId** INF file entry in the INF file, as the following example shows.
 
-    ```
+    ```INF
     NetCfgInstanceId="{5cbf81bf-5055-47cd-9055-a76b2b4e3697}"
     ```
 
@@ -45,7 +42,7 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   The *DDInstall* section in a filter driver INF file must have **FilterType** and **FilterRunType** entries. To specify a monitoring filter, define the **FilterType** entry in your INF file, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,FilterType,0x00010001 ,0x00000001
     ```
 
@@ -53,7 +50,7 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   Define the **FilterRunType** entry in your INF file, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,FilterRunType,0x00010001 ,0x00000002
     ```
 
@@ -68,14 +65,14 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   The following example shows how a filter driver INF file specifies the name of the service.
 
-    ```
+    ```INF
     HKR, Ndi,Service,,"NdisMon"
     ```
 
     In this example, "NdisMon" is the name of the driver's service as it is reported to NDIS. Note that the name of a filter driver's service can be different from the name of the binary for the driver, but typically they are the same.
 
 -   The following example shows how the filter INF file references the name of the filter driver's service when it adds that service.
-    ```
+    ```INF
     [Install.Services]
     AddService=NdisMon,,NdisMon_Service_Inst
 
@@ -92,7 +89,7 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   A filter INF file must specify at least the primary service name of the filter for the **CoServices** attribute, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,CoServices,0x00010000,"NdisMon"
     ```
 
@@ -102,7 +99,7 @@ The following NDIS filter driver installation issues are associated with monitor
 
 -   You must define the following entries in the monitoring filter driver INF file to control the driver bindings:
 
-    ```
+    ```INF
     HKR, Ndi\Interfaces,UpperRange,,"noupper"
     HKR, Ndi\Interfaces,LowerRange,,"nolower"
     HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
@@ -111,7 +108,7 @@ The following NDIS filter driver installation issues are associated with monitor
     For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
 -   A monitoring filter INF file should specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
-    ```
+    ```INF
     [Common.Params.reg]
 
     HKR, FilterDriverParams\DriverParam, ParamDesc, ,"Driverparam for filter"

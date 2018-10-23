@@ -12,11 +12,8 @@ keywords:
 - catalog files WDK driver signing , release signing
 - public release driver signing WDK , about release signing
 - release signing WDK , about release signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Release-Signing Driver Packages

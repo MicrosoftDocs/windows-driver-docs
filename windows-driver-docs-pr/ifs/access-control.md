@@ -9,11 +9,8 @@ keywords:
 - access validation WDK file systems
 - validating security WDK file systems
 - checking security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access Control
@@ -43,6 +40,5 @@ This list is incomplete, but it describes a number of the key functions that can
  
 
 
---------------------
 
 

@@ -3,11 +3,8 @@ title: UEFI USB function protocol
 author: windows-driver-content
 description: UEFI USB function protocol
 ms.assetid: eac35cf4-82b4-4d7e-ae69-8f506f12ae5d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI USB function protocol
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 The USB function protocol defines a generic and lightweight USB transport in the UEFI environment. This protocol is used by flashing tools, USB mass storage mode, and other tools that require bidirectional communication between a device that is booted into the UEFI environment and a host computer.
 
-## <a href="" id="efi-usbfn-io-protocol"></a>EFI\_USBFN\_IO\_PROTOCOL
+## EFI\_USBFN\_IO\_PROTOCOL
 
 
 Like other UEFI device drivers, the entry point for a USB function driver attaches **EFI\_DRIVER\_BINDING\_PROTOCOL** to image handle of **EFI\_USBFN\_IO\_PROTOCOL** driver
@@ -28,7 +25,7 @@ The driver binding protocol contains three services, **Supported**, **Start**, a
 
 **GUID**
 
-``` syntax
+```cpp
 // {32D2963A-FE5D-4f30-B633-6E5DC55803CC}
 #define EFI_USBFN_IO_PROTOCOL_GUID \
   {0x32d2963a, 0xfe5d, 0x4f30, 0xb6, 0x33, 0x6e, 0x5d, 0xc5, \
@@ -37,13 +34,13 @@ The driver binding protocol contains three services, **Supported**, **Start**, a
 
 **Revision number**
 
-``` syntax
+```cpp
 #define EFI_USBFN_IO_PROTOCOL_REVISION   0x00010002
 ```
 
 **Protocol interface structure**
 
-``` syntax
+```cpp
 typedef struct _EFI_USBFN_IO_PROTOCOL 
 {
   UINT32                                      Revision;
@@ -180,14 +177,3 @@ The following table lists the functions that are supported in each version of th
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
---------------------
-
-

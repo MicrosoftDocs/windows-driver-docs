@@ -4,11 +4,8 @@ description: Handling a NetDMA Interrupt
 ms.assetid: 239eb7e3-9935-4281-9215-5b0b987f7d33
 keywords:
 - interrupts WDK NetDMA , generating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a NetDMA Interrupt
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-handling-a-netdma-interrupt-ng"></a>
+
 
 
 If the NET\_DMA\_INTERRUPT\_ON\_COMPLETION flag in the **ControlFlags** member of the [**NET\_DMA\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568734) structure is set, the dynamic memory access (DMA) engine generates an interrupt for the DMA channel after it processes the DMA descriptor. When this flag is cleared, the DMA engine does not generate an interrupt.

@@ -13,17 +13,14 @@ keywords:
 - timers WDK networking
 - event notifications WDK networking
 - events WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronization and Notification in Network Drivers
 
 
-## <a href="" id="ddk-synchronization-and-notification-ng"></a>
+
 
 
 Whenever two threads of execution share resources that can be accessed at the same time, either in a uniprocessor computer or on a symmetric multiprocessor (SMP) computer, they need to be synchronized. For example, on a uniprocessor computer, if one driver function is accessing a shared resource and is interrupted by another function that runs at a higher IRQL, such as an ISR, the shared resource must be protected to prevent race conditions that leave the resource in an indeterminate state. On an SMP computer, two threads could be running simultaneously on different processors and attempting to modify the same data. Such accesses must be synchronized.
@@ -65,7 +62,7 @@ Microsoft Windows operating systems do not restrict a network driver from simult
 
 Acquiring a spin lock raises the IRQL to DISPATCH\_LEVEL and stores the old IRQL in the spin lock. Releasing the spin lock sets the IRQL to the value stored in the spin lock. Because NDIS sometimes enters drivers at PASSIVE\_LEVEL, problems can arise with the following code sequence:
 
-```
+```syntax
 NdisAcquireSpinLock(A);
 NdisAcquireSpinLock(B);
 NdisReleaseSpinLock(A);

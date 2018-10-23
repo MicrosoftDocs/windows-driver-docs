@@ -5,17 +5,14 @@ ms.assetid: 387d27de-3214-4f93-8f45-9a2f28e5036f
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Driver Direct OID Requests
 
 
-## <a href="" id="ddk-protocol-driver-direct-oid-requests-ng"></a>
+
 
 
 To support the direct OID request path, protocol drivers provide *ProtocolXxx* function entry points in the [**NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566825) structure and NDIS provides **Ndis*Xxx*** functions for protocol drivers.

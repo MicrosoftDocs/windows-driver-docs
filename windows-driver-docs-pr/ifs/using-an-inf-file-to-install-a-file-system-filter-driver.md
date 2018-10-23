@@ -5,11 +5,8 @@ description: Using an INF File to Install a File System Filter Driver
 ms.assetid: 0bc70cdb-d115-4329-9fcc-a085a57c5f78
 keywords:
 - INF files WDK file system , installation steps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using an INF File to Install a File System Filter Driver
@@ -36,7 +33,7 @@ To execute the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/h
 
 To execute the **DefaultInstall** and **DefaultInstall.Services** sections of your INF file on the command line or by using a batch file installation, type the following command at the command prompt, or create and run a batch file that contains this command:
 
-```
+```cpp
 RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultInstall 132 path-to-inf\infname.inf
 ```
 
@@ -46,7 +43,7 @@ RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultInstall 132 path-to-inf\infn
 
 [**InstallHinfSection**](https://msdn.microsoft.com/library/windows/desktop/aa376957) can also be called from a setup application, as shown in the following code example:
 
-```
+```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
 ```
 
@@ -67,6 +64,5 @@ For more information about setup applications, see [Writing a Device Installatio
  
 
 
---------------------
 
 

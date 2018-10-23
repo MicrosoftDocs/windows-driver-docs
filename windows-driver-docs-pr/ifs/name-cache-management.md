@@ -12,11 +12,8 @@ keywords:
 - file not found messages WDK RDBSS
 - name cache WDK RDBSS
 - NAME_CACHE_CONTROL structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Name Cache Management
@@ -99,6 +96,5 @@ The RDBSS name cache management routines include the following:
  
 
 
---------------------
 
 

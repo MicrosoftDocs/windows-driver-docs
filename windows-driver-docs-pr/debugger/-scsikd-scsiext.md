@@ -3,17 +3,15 @@ title: scsikd.scsiext
 description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
 ms.assetid: 0fcb0545-eb5a-4500-8e14-a5296624c80b
 keywords: ["scsikd.scsiext Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - scsikd.scsiext
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !scsikd.scsiext
@@ -21,7 +19,7 @@ api_type:
 
 The **!scsikd.scsiext** extension displays detailed information about the specified SCSI port extension.
 
-```
+```dbgcmd
 !scsikd.scsiext Device 
 ```
 
@@ -61,7 +59,7 @@ Remarks
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a functional device object (FDO); this can be obtained from the **DO** field or **DevExt** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816f9a40 
 Scsiport functional device extension at address 816f9af8
 Common Extension:
@@ -99,7 +97,7 @@ Adapter Extension:
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a physical device object (PDO); this can be obtained from the **DevObj** field or **LUN** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816ea030
 Scsiport physical device extension at address 816ea0e8
 Common Extension:
@@ -127,7 +125,6 @@ Logical Unit Extension:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!scsikd.scsiext%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -8,11 +8,8 @@ keywords:
 - mini-redirectors WDK , object deletion
 - file objects WDK mini-redirectors
 - objects WDK mini-redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Object Creation and Deletion
@@ -110,6 +107,5 @@ The following table lists the routines that can be implemented by a network mini
  
 
 
---------------------
 
 

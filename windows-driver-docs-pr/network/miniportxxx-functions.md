@@ -4,17 +4,14 @@ description: MiniportXxx Functions
 ms.assetid: b992c3ff-deb1-49e2-a99f-310cc4cb81c3
 keywords:
 - MiniportXxx functions WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MiniportXxx Functions
 
 
-## <a href="" id="ddk-miniportxxx-functions-ng"></a>
+
 
 
 The typical miniport driver uses a small number of functions to communicate through NDIS with the upper layers and hardware. Not all of these functions are required. For more information about which functions are optional, which are required, and why, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).

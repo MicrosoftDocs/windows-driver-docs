@@ -4,11 +4,8 @@ description: Software Defined Battery
 keywords:
 - Software Defined Battery
 - SDB
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Software Defined Battery
@@ -179,7 +176,6 @@ Alternatively, HPMI may act as a forwarder and simply forward the Windows batter
 A full flow-chart model depicting how SDB Algorithm is implemented is shown in [Implementing SDB Algorithm in Firmware](#IMPLEMENTING-SDB).
 
 
---------------------
 
 ## Interface Definitions
 
@@ -187,7 +183,7 @@ A new Device Interface Class GUID for HPMI device is introduced. HPMI device mus
 
 Windows uses the device arrival notification for querying and configuring the HPMI device.
 
-```
+```cpp
 //
 // HPMI Device Interface Class.
 //
@@ -208,7 +204,7 @@ Note that the device index should be set to zero.
 Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. 
 
 
-```
+```cpp
 //
 // Query command sent to HPMI to query features supported by HPMI and Windows
 // services requested by HPMI.
@@ -224,7 +220,7 @@ Windows will issue this IOCL to HPMI once after a new HPMI driver instance is di
 
 ```
 
-```
+```cpp
 //
 // IOCTL_HPMI_QUERY_CAPABILITIES - Command.
 //
@@ -241,14 +237,14 @@ typedef struct _HPMI_QUERY_CAPABILITIES {
 
 ```
 
-```
+```cpp
 #define HPMI_QUERY_CAPABILITIES_VERSION_1                   
     (1)
 #define HPMI_QUERY_CAPABILITIES_SIZEOF_VERSION_1         
     sizeof(HPMI_QUERY_CAPABILITIES)
 ```
 
-```
+```cpp
 //
 // IOCTL_HPMI_QUERY_CAPABILITIES - Response.
 //
@@ -265,7 +261,7 @@ typedef struct _HPMI_QUERY_CAPABILITIES {
 
 ```
 
-```
+```cpp
 typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
 
     //
@@ -303,7 +299,7 @@ Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://msdn.microsoft.com/
 
 HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#ADAPTING-SDB) to conserve the internal batteries.
 
-```
+```cpp
 //
 // Set command sent to HPMI to provide battery utilization hints.
 //
@@ -336,7 +332,7 @@ typedef enum _HPMI_HINT_BOOL {
 
 ```
 
-```
+```cpp
 //
 // IOCTL_HPMI_BATTERY_UTILIZATION_HINT - Command.
 //
@@ -372,7 +368,7 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 ```
 
-```
+```cpp
 #define HPMI_BATTERY_UTILIZATION_HINT_VERSION_1              
     (1)
 #define HPMI_BATTERY_UTILIZATION_HINT_SIZEOF_VERSION_1       
@@ -409,6 +405,5 @@ Refer to [HMPI.h](https://msdn.microsoft.com/library/windows/hardware/mt828470.a
 >[!NOTE]
 > Contents of this document are subject to change without notice.
 
---------------------
 
 

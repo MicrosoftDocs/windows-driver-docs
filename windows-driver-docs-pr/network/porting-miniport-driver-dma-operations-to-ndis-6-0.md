@@ -7,17 +7,14 @@ keywords:
 - DMA operations WDK networking , porting DMA operations
 - scatter/gather DMA WDK networking , porting DMA operations
 - porting miniport drivers WDK networking , DMA operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver DMA Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-dma-operations-to-ndis-6-0-ng"></a>
+
 
 
 When compared with NDIS 5.*x*, NDIS 6.0 provides a much different interface for handling DMA. For information about the benefits of the NDIS 6.0 approach, see [NDIS 6.0 SGDMA Support](benefits-of-ndis-sgdma-support.md).

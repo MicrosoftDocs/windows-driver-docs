@@ -2,11 +2,8 @@
 title: Subformat GUIDs for Compressed Audio Formats
 description: Subformat GUIDs for Compressed Audio Formats
 ms.assetid: f9595d6c-952c-4266-8eb5-5c8581051d28
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Subformat GUIDs for Compressed Audio Formats
@@ -14,9 +11,9 @@ ms.technology: windows-devices
 
 For Windows 7, new subformat GUIDs have been added to the Ksmedia.h header file to provide support for compressed audio formats. Subformat GUIDs indicate the specific subformat of a data format. These formats are defined by the Consumer Electronics Association (CEA) standard for uncompressed audio.
 
-As a result of the CEA-861-D standard, you must ensure that audio formats that are not supported by a CEA device are not transmitted to such a device. High definition multimedia interface (HDMI) and [DisplayPort](http://www.displayport.org/) are examples of CEA devices.
+As a result of the CEA-861-D standard, you must ensure that audio formats that are not supported by a CEA device are not transmitted to such a device. High definition multimedia interface (HDMI) and [DisplayPort](https://www.displayport.org/) are examples of CEA devices.
 
-For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](http://go.microsoft.com/fwlink/p/?linkid=142020) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](http://go.microsoft.com/fwlink/p/?linkid=142021). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure,
+For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](https://go.microsoft.com/fwlink/p/?linkid=142020) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](https://go.microsoft.com/fwlink/p/?linkid=142021). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure,
 
 The GUIDs for the available compressed audio formats are listed in the following table.
 
@@ -183,7 +180,7 @@ The following code example shows how an audio miniport driver defines and initia
 
 For a sampling rate of 48 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure. This code shows the data ranges that the audio miniport driver exposes:
 
-```
+```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
 // for use with a sample rate of 48 KHz.
 KSDATARANGE_AUDIO drDDPlus48;
@@ -203,7 +200,7 @@ drDDPlus48.MaximumSampleFrequency = 192000;
 
 For a sampling rate of 44.1 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure:
 
-```
+```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
 // for use with a sample rate of 41.1 KHz.
 KSDATARANGE_AUDIO drDDPlus44;
@@ -226,7 +223,5 @@ drDDPlus44.MaximumSampleFrequency = 176400;
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Subformat%20GUIDs%20for%20Compressed%20Audio%20Formats%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

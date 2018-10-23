@@ -7,17 +7,14 @@ keywords:
 - target media WDK INF files
 - locations WDK INF files
 - media WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Target Media for INF Files
 
 
-## <a href="" id="ddk-target-media-for-infs-dg"></a>
+
 
 
 An INF file specifies the target location for device files that have a [**DestinationDirs**](inf-destinationdirs-section.md) section. This section should always be specified in the same INF file as the section with the copy, rename, or delete statements.

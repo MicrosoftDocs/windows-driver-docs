@@ -5,17 +5,14 @@ ms.assetid: e43f9ccb-308d-435f-b99b-bb7dcbacfcac
 keywords:
 - network services installation requirements WDK
 - service installation requirements WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network Services
 
 
-## <a href="" id="ddk-installation-requirements-for-network-services-ng"></a>
+
 
 
 This topic summarizes the installation requirements for network services.

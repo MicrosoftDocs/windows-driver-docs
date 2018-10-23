@@ -6,11 +6,8 @@ keywords:
 - section body WDK SetupAPI
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , section body
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Format of a Text Log Section Body
@@ -147,7 +144,7 @@ The section body entries that are logged depend on the event level that is set f
 
 When SetupAPI creates a section that groups operations that apply to a device installation, it also recursively groups section body log entries in subsections. SetupAPI distinguishes subsections by the way it annotates and indents log entries. One such subsection appears in the following excerpt from a typical device installation section. The subsection begins with the log entry "dvi: {Build Driver List}" and ends with the log entry "dvi: {Build Driver List - exit(0x00000000)}". This subsection shows a typical sequence of log entries that include the *entry_prefix*, *event_category*, *indentation*, and *formatted_message* fields. The SetupAPI operations that wrote the log entries also created the indentation and supplied the content of the formatted messages. The event level for this example was set to TXTLOG_DETAILS and all category levels were enabled for this example.
 
-```
+```cpp
 >>>  [Device Install - PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38]
 >>>  2005/02/13 22:06:28.109: Section start
 ...

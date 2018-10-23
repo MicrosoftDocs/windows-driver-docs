@@ -2,11 +2,8 @@
 title: Avoiding Device Container Conflicts
 description: Avoiding Device Container Conflicts
 ms.assetid: 1c752333-8776-4c5e-bc2f-47ffde60c931
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Avoiding Device Container Conflicts

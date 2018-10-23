@@ -8,11 +8,8 @@ keywords:
 - device object I/O requests WDK file system
 - filter drivers WDK file system , device object I/O requests
 - file system filter drivers WDK , device object I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Device Object Attached to a File System
@@ -48,6 +45,5 @@ File system filter device objects attached to file systems are required to pass 
  
 
 
---------------------
 
 

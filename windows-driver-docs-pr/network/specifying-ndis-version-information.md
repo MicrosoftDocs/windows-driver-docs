@@ -5,17 +5,14 @@ ms.assetid: 9d007046-01c5-4bf8-adda-b88b596945d6
 keywords:
 - NDIS version information WDK
 - versioning WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying NDIS Version Information
 
 
-## <a href="" id="ddk-specifying-ndis-version-information-ng"></a>
+
 
 
 This section provides an overview of the support that NDIS and NDIS drivers provide for NDIS version information.

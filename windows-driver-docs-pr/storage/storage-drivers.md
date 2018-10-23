@@ -5,11 +5,8 @@ description: Storage Drivers
 ms.assetid: 5512a8f1-20ad-4b78-a60e-7418ac7f2117
 keywords:
 - storage drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Drivers
@@ -51,6 +48,5 @@ Subsequent sections contain guidelines for designing the following kinds of Wind
  
 
 
---------------------
 
 

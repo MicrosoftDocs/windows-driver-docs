@@ -7,17 +7,14 @@ keywords:
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
 - SP_DEVINFO_DATA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Basic Installation Operations
 
 
-## <a href="" id="ddk-basic-installation-operations-dg"></a>
+
 
 
 Installers can use the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) that are provided by SetupAPI to perform installation operations. These functions allow installers to search INF files for compatible drivers, to display driver choices to the user through selection dialog boxes, and to perform the actual driver installation.

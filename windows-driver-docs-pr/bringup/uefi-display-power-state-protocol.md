@@ -3,11 +3,8 @@ title: UEFI display power state protocol
 author: windows-driver-content
 description: UEFI display power state protocol
 ms.assetid: ab16c548-1402-4819-9fbb-a1d6f55d934a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI display power state protocol
@@ -43,6 +40,5 @@ For more information about the Microsoft-provided UEFI battery charging applicat
 ## Related topics
 [Architecture of the UEFI battery charging application](architecture-of-the-uefi-battery-charging-application.md)  
 
---------------------
 
 

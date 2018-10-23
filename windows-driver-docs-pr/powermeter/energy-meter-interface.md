@@ -5,11 +5,8 @@ keywords:
 - Energy Metering and Budgeting WDK , interface
 - Energy Meter Interface WDK
 - PMI WDK Energy Meter
-ms.author: windowsdriverdev
 ms.date: 11/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Energy Meter Interface
@@ -53,6 +50,5 @@ For more information see these topics.
  
 
 
---------------------
 
 

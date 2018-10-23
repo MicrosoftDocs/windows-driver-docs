@@ -3,17 +3,15 @@ title: .dump (Create Dump File)
 description: The .dump command creates a user-mode or kernel-mode crash dump file.
 ms.assetid: df6bcf7f-eb2e-4605-87a0-c0a7e9e4776b
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: domars
+ms.date: 08/01/2018
 topic_type:
 - apiref
 api_name:
 - .dump (Create Dump File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .dump (Create Dump File)
@@ -21,7 +19,7 @@ api_type:
 
 The **.dump** command creates a user-mode or kernel-mode crash dump file.
 
-```
+```dbgcmd
 .dump Options FileName 
 .dump /?
 ```
@@ -38,7 +36,7 @@ Overwrites an existing dump file with the same name. If this option is not used 
 <span id="_f_FullOptions_"></span><span id="_f_fulloptions_"></span><span id="_F_FULLOPTIONS_"></span>**/f\[***FullOptions***\]**  
 (Kernel mode:) Creates a [complete memory dump](complete-memory-dump.md).
 
-(User mode:) Creates a [full user-mode dump](full-user-mode-dumps.md). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[***MiniOptions***\]** is always preferable to **.dump /f**.
+(User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[***MiniOptions***\]** is always preferable to **.dump /f**.
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
@@ -62,7 +60,7 @@ You can add the following *FullOptions* to change the contents of the dump file;
  
 
 <span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[***MiniOptions***\]**  
-Creates a [small memory dump](cdb-and-windbg.md) (in kernel mode) or a [minidump](minidumps.md) (in user mode). If neither **/f** nor **/m** is specified, **/m** is the default.
+Creates a *small memory dump* (in kernel mode) or a *minidump* (in user mode) For more information, see [User-Mode Dump Files](user-mode-dump-files.md). If neither **/f** nor **/m** is specified, **/m** is the default.
 
 In user mode, **/m** can be followed with additional *MiniOptions* specifying extra data that is to be included in the dump. If no *MiniOptions* are included, the dump will include module, thread, and stack information, but no additional data. You can add any of the following *MiniOptions* to change the contents of the dump file; they are case-sensitive.
 
@@ -233,7 +231,7 @@ The **/xc**, **/xr**, **/xp**, and **/xt** options are used to store exception a
 
 The following example will create a user-mode minidump, containing full memory and handle information:
 
-```
+```dbgcmd
 0:000> .dump /mfh myfile.dmp 
 ```
 
@@ -243,7 +241,6 @@ Handle information can be read by using the [**!handle**](-handle.md) extension 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.dump%20%28Create%20Dump%20File%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

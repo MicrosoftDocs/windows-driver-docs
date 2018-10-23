@@ -4,17 +4,14 @@ description: Implementing an NDIS 6.1 Driver
 ms.assetid: a2b5d722-88b3-4321-9d0d-451f465194d1
 keywords:
 - NDIS WDK , versions in network drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing an NDIS 6.1 Driver
 
 
-## <a href="" id="ddk-implementing-an-ndis-6-1-driver-ng"></a>
+
 
 
 An NDIS 6.1 driver must report the correct NDIS version when it registers with NDIS.

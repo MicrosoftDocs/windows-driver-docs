@@ -9,17 +9,14 @@ keywords:
 - local I/O targets WDK KMDF
 - remote I/O targets WDK KMDF
 - general I/O targets WDK KMDF , about general I/O targets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General I/O Targets
 
 
-## <a href="" id="ddk-general-i-o-targets-df"></a>
+
 
 
 General I/O targets do not support special, device-specific data formats, such as USB request blocks. Before drivers send data to a general I/O target, they must put data into a write buffer in a format that the I/O target can interpret. Likewise, when drivers read data from a general I/O target, the drivers must be able interpret the contents of data buffers that they receive from the target.

@@ -3,11 +3,8 @@ title: EFI_DISPLAY_POWER_STATE
 author: windows-driver-content
 description: EFI_DISPLAY_POWER_STATE
 ms.assetid: b4b0980b-db87-44e8-842c-afce0c8df0a0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_DISPLAY\_POWER\_STATE
@@ -18,7 +15,7 @@ This enumeration represents the charging state of the display and backlight. Thi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_DISPLAY_POWER_STATE {  
     EfiDisplayPowerStateUnknown = 0,  
     EfiDisplayPowerStateOff,  
@@ -46,6 +43,5 @@ When used with [EFI\_DISPLAY\_POWER\_PROTOCOL.GetDisplayPowerState](efi-display-
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

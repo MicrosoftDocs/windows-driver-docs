@@ -7,17 +7,14 @@ keywords:
 - AFs WDK networking
 - registering address families
 - opening address families
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering and Opening an Address Family
 
 
-## <a href="" id="ddk-registering-and-opening-an-address-family-ng"></a>
+
 
 
 A call manager must register an address family for each NIC on which it provides call manager services to connection-oriented clients. Similarly, an MCM driver must register an address family for the NIC that it manages.

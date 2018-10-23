@@ -7,17 +7,14 @@ keywords:
 - NDIS filter drivers WDK
 - intermediate drivers WDK networking , vs filter drivers
 - NDIS intermediate drivers WDK , vs filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Faster filter drivers
 
 
-## <a href="" id="ddk-filter-drivers-ng"></a>
+
 
 
 The NDIS 6.x filter driver model supersedes the NDIS 5.x filter intermediate driver model. The new filter driver model enhances system performance in several ways:

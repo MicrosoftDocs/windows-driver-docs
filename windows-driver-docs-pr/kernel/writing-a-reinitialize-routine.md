@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Writing a Reinitialize Routine
 ms.assetid: 47a7dd3f-e474-49c7-adf2-11f6e788c261
 keywords: ["standard driver routines WDK kernel , Reinitialize routine", "driver routines WDK kernel , Reinitialize routine", "routines WDK kernel , Reinitialize routine", "Reinitialize", "reinitializing drivers WDK", "driver reinitialization WDK kernel", "driver initialization WDK kernel", "initializing drivers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a Reinitialize Routine
 
 
-## <a href="" id="ddk-writing-a-reinitialize-routine-kg"></a>
+
 
 
 Any driver that needs to initialize itself in stages can contain a [*Reinitialize*](https://msdn.microsoft.com/library/windows/hardware/ff561022) routine. A *Reinitialize* routine is called after the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine has returned control and other drivers have initialized themselves. Typically, the *Reinitialize* routine performs tasks that must be done after another driver starts.
@@ -36,7 +33,5 @@ If a driver has a *Reinitialize* routine, it initializes in the same basic steps
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Writing%20a%20Reinitialize%20Routine%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

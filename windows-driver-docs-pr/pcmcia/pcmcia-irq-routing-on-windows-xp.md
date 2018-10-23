@@ -11,17 +11,14 @@ keywords:
 - ISA-to-PCI interrupt routing WDK PCMCIA bus
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCMCIA IRQ Routing on Windows XP
 
 
-## <a href="" id="ddk-pcmcia-irq-routing-on-windowsxp-kg"></a>
+
 
 
 There are two classes of PCMCIA cards which are supported by CardBus controllers:

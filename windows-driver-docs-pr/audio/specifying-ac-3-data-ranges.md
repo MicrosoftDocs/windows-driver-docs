@@ -12,11 +12,8 @@ keywords:
 - Sony/Philips digital interface
 - data ranges WDK audio , AC-3
 - non-PCM audio formats WDK , AC-3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying AC-3 Data Ranges
@@ -25,9 +22,9 @@ ms.technology: windows-devices
 ## <span id="specifying_ac_3_data_ranges"></span><span id="SPECIFYING_AC_3_DATA_RANGES"></span>
 
 
-In the Windows SDK for Windows 2000 and later, Windows Me, and Windows 98 SE, the header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
 
-```
+```cpp
     #define WAVE_FORMAT_DOLBY_AC3_SPDIF  0x0092
 ```
 
@@ -35,14 +32,14 @@ Wave-format tags 0x0240 and 0x0241 are synonymous with 0x0092 and many DVD appli
 
 The corresponding format-subtype GUID can be specified in terms of the wave-format tag by using the DEFINE\_WAVEFORMATEX\_GUID macro from the header file Ksmedia.h as follows:
 
-```
+```cpp
   #define KSDATAFORMAT_SUBTYPE_AC3_SPDIF    \
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_DOLBY_AC3_SPDIF)
 ```
 
 The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the AC-3-over-S/PDIF format:
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesAC3Stream[] =
 {
   // 48-kHz AC-3 over S/PDIF
@@ -98,7 +95,5 @@ As explained in [S/PDIF Pass-Through Transmission of Non-PCM Streams](s-pdif-pas
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20AC-3%20Data%20Ranges%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

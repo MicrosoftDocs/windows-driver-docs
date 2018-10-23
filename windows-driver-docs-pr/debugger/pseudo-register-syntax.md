@@ -3,11 +3,9 @@ title: Pseudo-Register Syntax
 description: Pseudo-Register Syntax
 ms.assetid: f7dc52ea-e97e-4251-a517-c115cbc7d056
 keywords: ["pseudo-registers", "pseudo-registers, automatic", "pseudo-registers, user defined", "registers, pseudo-registers", "loop variables", "return address", "$to to $t19 pseudo-registers", "$bp ID pseudo-register", "$ea"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pseudo-Register Syntax
@@ -24,7 +22,7 @@ All pseudo-registers begin with a dollar sign (**$**). If you are using MASM syn
 
 For example, the following two commands produce the same output, but the second command is faster.
 
-```
+```dbgcmd
 0:000> ? $exp
 Evaluate expression: 143 = 0000008f
 0:000> ? @$exp
@@ -37,7 +35,7 @@ If you are using C++ expression syntax, the at sign ( **@** ) is always required
 
 The [**r (Registers)**](r--registers-.md) command is an exception to this rule. The debugger always interprets its first argument as a register or pseudo-register. (An at sign is not required or permitted.) If there is a second argument for the **r** command, it is interpreted according to the default expression syntax. If the default expression syntax is C++, you must use the following command to copy the **$t2** pseudo-register to the **$t1** pseudo-register.
 
-```
+```dbgcmd
 0:000> r $t1 = @$t2
 ```
 
@@ -332,14 +330,14 @@ There are 20 user-defined pseudo-registers (**$t0**, **$t1**, ..., **$t19**). Th
 
 To write to one of these pseudo-registers, use the [**r (Registers)**](r--registers-.md) command, as the following example shows.
 
-```
+```dbgcmd
 0:000> r $t0 = 7
 0:000> r $t1 = 128*poi(MyVar)
 ```
 
 Like all pseudo-registers, you can use the user-defined pseudo-register in any expression, as the following example shows.
 
-```
+```dbgcmd
 0:000> bp $t3 
 0:000> bp @$t4 
 0:000> ?? @$t1 + 4*@$t2 
@@ -347,7 +345,7 @@ Like all pseudo-registers, you can use the user-defined pseudo-register in any e
 
 A pseudo-register is always typed as an integer, unless you use the **?** switch together with the **r** command. If you use this switch, the pseudo-register acquires the type of whatever is assigned to it. For example, the following command assigns the UNICODE\_STRING\*\* type and the 0x0012FFBC value to **$t15**.
 
-```
+```dbgcmd
 0:000> r? $t15 = * (UNICODE_STRING*) 0x12ffbc
 ```
 
@@ -361,7 +359,7 @@ User-defined pseudo-registers use zero as the default value when the debugger is
 
 The following example sets a breakpoint that is hit every time that the current thread calls **NtOpenFile**. But this breakpoint is not hit when other threads call **NtOpenFile**.
 
-```
+```dbgcmd
 kd> bp /t @$thread nt!ntopenfile
 ```
 
@@ -369,13 +367,13 @@ kd> bp /t @$thread nt!ntopenfile
 
 The following example executes a command until the register holds a specified value. First, put the following code for conditional stepping in a script file named "eaxstep".
 
-```
+```dbgcmd
 .if (@eax == 1234) { .echo 1234 } .else { t "$<eaxstep" }
 ```
 
 Next, issue the following command.
 
-```
+```dbgcmd
 t "$<eaxstep"
 ```
 
@@ -385,7 +383,6 @@ The debugger performs a step and then runs your command. In this case, the debug
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Pseudo-Register%20Syntax%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Resolving Operational NDIS QoS Parameters
 description: Resolving Operational NDIS QoS Parameters
 ms.assetid: F6C486B4-ABD5-413A-9E2D-283D83802C2B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Resolving Operational NDIS QoS Parameters

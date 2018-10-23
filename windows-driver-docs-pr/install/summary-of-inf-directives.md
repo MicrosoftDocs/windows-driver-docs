@@ -5,17 +5,14 @@ ms.assetid: 6212502c-183c-4abb-9e56-59dba15fc685
 keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of INF Directives
 
 
-## <a href="" id="ddk-summary-of-inf-directives-dg"></a>
+
 
 
 The following list summarizes many (but not all) of the directives that can be used in INF files. INF directive names are case-insensitive. For example, **Addreg**, **addReg**, and **AddReg** are equally valid as directive specifications within an INF file.
@@ -73,7 +70,7 @@ This directive references an *add-interface-section* in which one or more **AddR
 
  
 
-This rarely used directive references one or more *bit-registry-section*s specifying existing REG_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
+This rarely used directive references one or more *bit-registry-section*s specifying existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entries in the registry for which particular bits in the values are to be modified.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
@@ -105,7 +102,7 @@ This rarely used directive references one or more *ini-to-registry-section*s spe
 
 The sections under which any of the directives in the previous list can be specified is system-determined. The basic form of each directive is shown in the formal syntax of the reference for each section, as for example:
 
-```
+```cpp
 [DDInstall] | [DDInstall.HW] | [DDInstall.CoInstallers] | 
 [ClassInstall32] | [ClassInstall32.ntx86] | [ClassInstall32.ntia64] | [ClassInstall32.ntamd64]
 

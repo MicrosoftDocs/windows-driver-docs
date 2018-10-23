@@ -6,17 +6,14 @@ keywords:
 - NDIS-WDM miniport driver WDK networking , installing
 - lower edge of NDIS miniport drivers WDK networking , driver installations
 - WDM lower edge WDK networking , driver installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing NDIS-WDM Miniport Drivers
 
 
-## <a href="" id="ddk-installing-ndis-wdm-miniport-drivers-ng"></a>
+
 
 
 When you implement the installation mechanism for an NDIS-WDM miniport driver, you should keep the following items in mind:

@@ -3,17 +3,15 @@ title: Bug Check 0xBD INVALID_HIBERNATED_STATE
 description: The INVALID_HIBERNATED_STATE bug check has a value of 0x000000BD.
 ms.assetid: DB386A20-EE6F-4E2B-8FFD-51CCE0A8AEAC
 keywords: ["Bug Check 0xBD INVALID_HIBERNATED_STATE", "INVALID_HIBERNATED_STATE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INVALID_HIBERNATED_STATE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBD: INVALID\_HIBERNATED\_STATE
@@ -21,7 +19,7 @@ api_type:
 
 The INVALID\_HIBERNATED\_STATE bug check has a value of 0x000000BD. This indicates that the hibernated memory image does not match the current hardware configuration. This bugcheck occurs when a system resumes from hibernate and discovers that the hardware has been changed while the system was hibernated.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_HIBERNATED\_STATE Parameters
 

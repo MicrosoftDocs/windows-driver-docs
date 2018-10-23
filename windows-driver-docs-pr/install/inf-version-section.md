@@ -10,11 +10,8 @@ api_name:
 - INF Version Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Version Section
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 By convention, the **Version** section appears first in INF files. Every INF file must have this section.
 
-```
+```cpp
 [Version]
  
 Signature="signature-name"
@@ -35,7 +32,7 @@ Signature="signature-name"
 [CatalogFile.ntx86=unique-filename.cat]
 [CatalogFile.ntia64=unique-filename.cat]  (Windows XP and later versions of Windows)
 [CatalogFile.ntamd64=unique-filename.cat]  (Windows XP and later versions of Windows)
-DriverVer=mm/dd/yyyy[,w.x.y.z]
+DriverVer=mm/dd/yyyy,w.x.y.z
 [DontReflectOffline=1] (Windows Vista and later versions of Windows)
 [PnpLockDown=0|1] (Windows Vista and later versions of Windows)
 [DriverPackageDisplayName=%driver-package-description%]
@@ -122,7 +119,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
  
 
-<a href="" id="driverver-mm-dd-yyyy--w-x-y-z-"></a>**DriverVer=***mm/dd/yyyy*\[**,***w.x.y.z*\]  
+<a href="" id="driverver-mm-dd-yyyy--w-x-y-z-"></a>**DriverVer=** **mm/dd/yyyy**,**w.x.y.z**  
 This entry specifies version information for drivers that are installed by this INF file. Starting with Windows 2000, this entry is required.
 
 For information about how to specify this entry, see [**INF DriverVer Directive**](inf-driverver-directive.md).
@@ -148,7 +145,7 @@ Starting with Windows Vista, a driver package should set **PnpLockDown** to 1 to
 <a href="" id="driverpackagedisplayname--driver-package-description-"></a>**DriverPackageDisplayName=%**driver-package-description**%**  
 Specifies a string token that corresponds to a string key entry in an INF [**Strings**](inf-strings-section.md) section. The string key entry supplies the [driver package](driver-packages.md) display name. Driver Install Frameworks (DIFx) uses the driver package display name to describe the purpose of driver package to end-users.
 
-<a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=***PackageType*  
+<a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
 Specifies the [driver package](driver-packages.md) type. Driver Install Frameworks (DIFx) uses the driver package type to determine the type of driver package.
 
 Remarks
@@ -167,7 +164,7 @@ Examples
 
 The following example shows a **Version** section typical of a simple device-driver INF, followed by the required [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections implied by the entries specified in this sample **Version** section:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=SCSIAdapter

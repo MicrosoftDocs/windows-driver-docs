@@ -5,17 +5,14 @@ ms.assetid: a585bb06-d65f-4e14-a205-dc0d6523363e
 keywords:
 - co-installers WDK device installations , registering
 - registering co-installers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Co-installer
 
 
-## <a href="" id="ddk-registering-a-co-installer-dg"></a>
+
 
 
 A co-installer can be registered for a single device or for all the devices in a particular setup class. A device-specific co-installer is registered dynamically through the INF file when one of its devices is installed. A class co-installer is registered manually or by a Custom Device Installation Application and an INF.

@@ -5,17 +5,14 @@ ms.assetid: 27272427-86bc-4fd3-bd2f-12d94273fcd4
 keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Receive Network Data to Higher Level Drivers
 
 
-## <a href="" id="ddk-indicating-receive-packets-to-higher-level-drivers-ng"></a>
+
 
 
 A connectionless intermediate driver indicates receive network data to the next higher driver by calling the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function. A connection-oriented intermediate driver indicates receive network data to the next higher driver by calling the [**NdisMCoIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563561) function.

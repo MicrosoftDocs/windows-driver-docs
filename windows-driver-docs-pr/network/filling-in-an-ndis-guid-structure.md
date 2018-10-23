@@ -8,22 +8,19 @@ keywords:
 - OIDs WDK networking , WMI
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filling in an NDIS\_GUID Structure
 
 
-## <a href="" id="ddk-filling-in-an-ndis-guid-structure-ng"></a>
+
 
 
 An NDIS\_GUID structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_GUID {
   GUID  Guid;
   union {

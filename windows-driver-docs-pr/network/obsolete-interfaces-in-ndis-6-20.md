@@ -5,17 +5,14 @@ ms.assetid: 11c3abd5-651e-4f9c-9f0b-ced6c00947f1
 keywords:
 - NDIS 6.20 WDK , obsolete NDIS 6.1 interfaces
 - obsolete NDIS 6.1 interfaces WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obsolete Interfaces in NDIS 6.20
 
 
-## <a href="" id="ddk-obsolete-interfaces-in-ndis-6-20-ng"></a>
+
 
 
 Some NDIS 6.1 application interface elements are obsolete for NDIS 6.20 drivers.

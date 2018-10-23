@@ -5,11 +5,8 @@ ms.assetid: 1e4f00e0-0fc6-459d-bbdd-02fbca5b9945
 keywords:
 - classify callouts WDK Windows Filtering Platform , data logging
 - logging WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Logging
@@ -19,7 +16,7 @@ To determine what data should be logged, a callout's [classifyFn](https://msdn.m
 
 For example, if a callout keeps track of how many incoming (inbound) IPv4 packets are discarded by a filter at the network layer, the callout is added to the filter engine at the FWPM\_LAYER\_INBOUND\_IPPACKET\_V4\_DISCARD layer. In this situation, the callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function might resemble the following example:
 
-```
+```C++
 ULONG TotalDiscardCount = 0;
 ULONG FilterDiscardCount = 0;
 

@@ -2,11 +2,8 @@
 Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) Installation
 author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # WinUSB (Winusb.sys) Installation
@@ -71,6 +68,8 @@ If you are installing WinUSB as the function driver for one of the functions in 
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system.
 
+> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommened that you provide a universal INF. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+
 ``` syntax
 ;
 ;
@@ -93,7 +92,7 @@ DriverVer=09/04/2012,13.54.20.543
 [Standard.NTamd64]
 %DeviceName% =USB_Install, USB\VID_0547&PID_1002
 
-; ========== Class definition ===========
+; ========== Class definition (for Windows 8 and ealier versions)===========
 
 [ClassInstall32]
 AddReg = ClassInstall_AddReg
@@ -117,6 +116,12 @@ Needs   = WINUSB.NT.Services
 [USB_Install.HW]
 AddReg=Dev_AddReg
 
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+
+[WinUsb_Install]
+KmdfLibraryVersion=1.11
+
 [Dev_AddReg]
 HKR,,DeviceInterfaceGUIDs,0x10000,"{9f543223-cede-4fa3-b376-a25ce9a30e74}"
 
@@ -132,6 +137,10 @@ ClassName="Universal Serial Bus devices"
 DeviceName="Fx2 Learning Kit Device"
 REG_MULTI_SZ = 0x00010000
 ```
+> Only include a ClassInstall32 section in a device INF file to install a new custom device setup class. INF files for devices in an installed class, whether a system-supplied device setup class or a custom class, must not include a ClassInstall32 section. 
+
+
+
 
 Except for device-specific values and several issues that are noted in the following list, you can use these sections and directives to install WinUSB for any USB device. These list items describe the **Includes** and **Directives** in the preceding .inf file.
 
@@ -169,7 +178,7 @@ DriverVer=09/04/2012,13.54.20.543
 [Standard.NTamd64]
 %DeviceName% =USB_Install, USB\VID_0547&PID_1002
 
-; ========== Class definition ===========
+; ========== Class definition (for Windows 8 and ealier versions) ===========
 
 [ClassInstall32]
 AddReg = ClassInstall_AddReg
@@ -226,6 +235,7 @@ WdfCoInstaller01011.dll=1
 ManufacturerName=""
 ClassName="Universal Serial Bus devices"
 DeviceName="Fx2 Learning Kit Device"
+DiskName="MyDisk"
 REG_MULTI_SZ = 0x00010000
 ```
 
@@ -252,7 +262,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 -   WinUSB co-installer (Winusbcoinstaller.dll)
 -   KMDF co-installer (WdfcoinstallerXXX.dll)
 -   An .inf file that installs Winusb.sys as the device's function driver. For more information, see [Writing an .Inf File for WinUSB Installation](#inf).
--   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows Vista.
+-   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
 
 ![winusb installation package](images/winusb-package.jpg)
 
@@ -263,7 +273,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 
  
 
-1.  Install the [Windows Driver Kit](http://www.microsoft.com/whdc/devtools/wdk/WDKpkg.mspx).
+1.  [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) and install it.
 2.  Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
 3.  Copy the WinUSB co-installer (WinusbcoinstallerX.dll) from the **WinDDK\\***BuildNumber***\\redist\\winusb** folder to the driver package folder.
 
@@ -325,7 +335,5 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)  
 [WinUSB](winusb.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20WinUSB%20%28Winusb.sys%29%20Installation%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

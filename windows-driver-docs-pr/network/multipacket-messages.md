@@ -2,17 +2,14 @@
 title: Multipacket Messages
 description: Multipacket Messages
 ms.assetid: 58979799-4618-43b9-a6dc-0635f6ade9b3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multipacket Messages
 
 
-## <a href="" id="ddk-multi-packet-messages-ng"></a>
+
 
 
 Multiple [**REMOTE\_NDIS\_PACKET\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff570635) messages may be sent in a single transfer, in either direction. A multipacket message is formed by concatenating multiple **REMOTE\_NDIS\_PACKET\_MSG** elements. The maximum length of such a transfer is governed by the *MaxTransferSize* parameter passed in the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff570624) and response messages. The host will also limit the number of messages it bundles into a single transfer to the *MaxPacketsPerMessage* parameter returned by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](https://msdn.microsoft.com/library/windows/hardware/ff570621) response message.

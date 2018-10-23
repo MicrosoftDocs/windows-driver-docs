@@ -4,11 +4,8 @@ description: Network Module
 ms.assetid: 49e73a9c-16f0-4fe0-904f-45e8c85ed56a
 keywords:
 - network modules WDK Network Module Registrar , defined
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Module

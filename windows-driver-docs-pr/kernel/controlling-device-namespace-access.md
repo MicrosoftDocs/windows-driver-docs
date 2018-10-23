@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Controlling Device Namespace Access
 ms.assetid: e5312297-849f-4b4e-835d-0ce5295c7ce2
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device namespace access WDK kernel", "namespaces WDK device objects", "file open requests WDK device objects", "open requests WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Device Namespace Access
 
 
-## <a href="" id="ddk-controlling-device-namespace-access-kg"></a>
+
 
 
 In the Windows Driver Model (WDM), every device object has an associated *namespace*. Names in the device's namespace are paths that begin with the device's name. For a device named "\\*Device*\\*DeviceName*", its namespace consists of any name of the form "\\*Device*\\*DeviceName*\\*FileName*". (For a file system, *FileName* is an actual name of a file on the file system.)
@@ -33,7 +30,7 @@ Drivers for devices that do not support namespaces must use one of two methods t
 
 Drivers for devices that do support namespaces can also use two methods to secure file open requests into the device's namespace:
 
--   The driver's device objects have the FILE\_DEVICE\_SECURE\_OPEN device characteristic set. This ensures that the security settings for the device apply uniformly to the device's namespace. (The driver is responsible for implementing support for the namespace in its [*DispatchCreate*](https://msdn.microsoft.com/library/windows/hardware/ff543266) routine.)
+-   The driver's device objects have the FILE\_DEVICE\_SECURE\_OPEN device characteristic set. This ensures that the security settings for the device apply uniformly to the device's namespace. (The driver is responsible for implementing support for the namespace in its [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function.)
 
 -   The driver checks any ACLs for the file name in its *DispatchCreate* routine. (Even in this case the driver should set the FILE\_DEVICE\_SECURE\_OPEN characteristic unless opens into the device's namespace can have weaker security settings than the device object.)
 
@@ -44,7 +41,5 @@ The FILE\_DEVICE\_SECURE\_OPEN characteristic is checked at the top of the stack
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Controlling%20Device%20Namespace%20Access%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

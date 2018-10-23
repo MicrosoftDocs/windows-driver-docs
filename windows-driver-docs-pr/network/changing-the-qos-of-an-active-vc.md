@@ -12,20 +12,17 @@ keywords:
 - QoS WDK CoNDIS
 - MCM drivers WDK networking
 - call managers WDK networking , quality of service
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changing the QoS of an Active VC
 
 
-## <a href="" id="ddk-changing-the-qos-of-an-active-vc-ng"></a>
 
 
-A connection-oriented client can request a change in the quality of service (QoS) on an active virtual connection (VC) for an outgoing or an incoming call. A remote client can also make such a request. In this case, a call manager or MCM driver driver indicates the remote client's incoming request to change the QoS.
+
+A connection-oriented client can request a change in the quality of service (QoS) on an active virtual connection (VC) for an outgoing or an incoming call. A remote client can also make such a request. In this case, a call manager or MCM driver indicates the remote client's incoming request to change the QoS.
 
 This section includes:
 

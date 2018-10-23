@@ -17,17 +17,14 @@ keywords:
 - Resetting state WDK networking
 - Halting state WDK networking
 - Initializing state WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Connection Status
 
 
-## <a href="" id="ddk-indicating-connection-status-ng"></a>
+
 
 
 A miniport driver calls [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) or [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) to indicate a change in the media connection status. The miniport driver passes one of the following status indications to **NdisM(Co)IndicateStatus**:

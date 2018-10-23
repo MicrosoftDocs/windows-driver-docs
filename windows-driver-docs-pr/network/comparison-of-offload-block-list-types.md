@@ -8,11 +8,8 @@ keywords:
 - block list types WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 - NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Comparison of Offload Block List Types

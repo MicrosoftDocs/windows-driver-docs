@@ -3,11 +3,9 @@ title: Public and Private Symbols
 description: Public and Private Symbols
 ms.assetid: 61ed583d-8b97-4929-8d86-1a6353c13304
 keywords: ["symbols, public", "symbols, private", "public symbols", "private symbols", "retail symbols", "export symbols", "symbol file, full symbol file", "symbol file, stripped symbol file", "full symbol file"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Public and Private Symbols
@@ -101,7 +99,7 @@ When accessing public symbols, the debugger's behavior depends on certain [symbo
 
 Here is an example in which the command [**x (Examine Symbols)**](x--examine-symbols-.md) is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the array **typingString**. Next, the command .symopt+ 4000 is used, causing the debugger to ignore the private symbol data. When the **x** command is then run again, the public symbol table is used; this time there is no size and data type information for **typingString**. Finally, the command .symopt- 2 is used, which causes the debugger to include decorations. When the **x** command is run this final time, the decorated version of the function name, **\_typingString**, is shown.
 
-```
+```dbgcmd
 0:000> x /t /d *!*typingstring* 
 00434420 char [128] TimeTest!typingString = char [128] ""
 
@@ -122,7 +120,7 @@ Another way to view symbols is by using the [the DBH tool](dbh.md). DBH uses the
 
 Here is an example in which the DBH command **addr 414fe0** is used three times. The first time, the default symbol options are used, and so the information is taken from the private symbol data. Note that this includes information about the address, size, and data type of the function **fgets**. Next, the command symopt +4000 is used, which causes DBH to ignore the private symbol data. When the **addr 414fe0** is then run again, the public symbol table is used; this time there is no size and data type information for the function **fgets**. Finally, the command symopt -2 is used, which causes DBH to include decorations. When the **addr 414fe0** is run this final time, the decorated version of the function name, **\_fgets**, is shown.
 
-```
+```dbgcmd
 pid:4308 mod:TimeTest[400000]: addr 414fe0
 
 fgets
@@ -183,7 +181,6 @@ modbase :   400000
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Public%20and%20Private%20Symbols%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

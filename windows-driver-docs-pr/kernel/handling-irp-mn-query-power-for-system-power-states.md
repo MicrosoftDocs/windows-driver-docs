@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Handling IRP_MN_QUERY_POWER for System Power States
 ms.assetid: 1904a1cb-a220-41cc-8894-5f90919e7383
 keywords: ["IRP_MN_QUERY_POWER", "system power states WDK kernel , IRP_MN_QUERY_POWER", "query-power IRPs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_QUERY\_POWER for System Power States
 
 
-## <a href="" id="ddk-handling-irp-mn-query-power-for-system-power-states-kg"></a>
+
 
 
 The power manager sends a power IRP with the minor IRP code [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) and **SystemPowerState** in **Parameters.Power.Type** to determine whether it can safely change to a specified system power state (S1-S5) and to allow drivers to prepare for such a change.
@@ -50,7 +47,5 @@ Usually, however, a driver receives a system set-power IRP following a system qu
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Handling%20IRP_MN_QUERY_POWER%20for%20System%20Power%20States%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

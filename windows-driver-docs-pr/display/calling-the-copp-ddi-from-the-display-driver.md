@@ -5,11 +5,8 @@ ms.assetid: d91d8a62-f212-4ae7-be61-b973d6495880
 keywords:
 - calling COPP DDI WDK DirectX VA
 - COPP WDK DirectX VA , calling from the display driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling the COPP DDI from the Display Driver
@@ -24,7 +21,7 @@ The display driver initiates calls to the video miniport driver's [COPP DDI](htt
 
 The following sample data structure and IOCTLs can be used to transfer COPP information between the display driver and the video miniport driver. Your drivers can either use the data structure and IOCTLs or create new ones, as appropriate.
 
-```
+```cpp
 typedef struct {
     PVOID* ppThis;
     PVOID InputBuffer;
@@ -53,7 +50,6 @@ If you do not use the preceding IOCTLs, then you can define your own private IOC
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Calling%20the%20COPP%20DDI%20from%20the%20Display%20Driver%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

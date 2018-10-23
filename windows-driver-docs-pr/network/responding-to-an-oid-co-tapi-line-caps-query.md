@@ -9,17 +9,14 @@ keywords:
 - ulAddressTypes
 - UlGenerateDigitModes
 - UlMonitorDigitModes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query
 
 
-## <a href="" id="ddk-responding-to-an-oid-co-tapi-line-caps-query-ng"></a>
+
 
 
 In response to an [OID\_CO\_TAPI\_LINE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569098) query, a call manager or MCM returns a CO\_TAPI\_LINE\_CAPS structure that contains a LINE\_DEV\_CAPS structure. To support voice streaming, a call manager or MCM must specify the following values in the LINE\_DEV\_CAPS structure:

@@ -9,17 +9,14 @@ keywords:
 - space calculations WDK SetupAPI
 - disk space calculations WDK SetupAPI
 - total disk space calculations WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Disk-Space List Functions
 
 
-## <a href="" id="ddk-disk-space-list-functions-dg"></a>
+
 
 
 Disk-space list functions are used to create and modify disk-space lists. These lists can be used to calculate the total disk space that is required to handle the files that will be copied or deleted during the installation procedure.

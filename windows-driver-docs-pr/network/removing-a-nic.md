@@ -7,17 +7,14 @@ keywords:
 - network interface cards WDK networking , removing
 - Plug and Play WDK NDIS miniport , removing NIC
 - removing NICs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Removing a NIC
 
 
-## <a href="" id="ddk-removing-a-nic-ng"></a>
+
 
 
 The following steps describe how NDIS participates in the removal of a NIC:

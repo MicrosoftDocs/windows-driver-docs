@@ -5,17 +5,14 @@ description: Framework Object Methods
 ms.assetid: f82275c5-15f9-43f5-91bb-b83446526c28
 keywords:
 - framework objects WDK KMDF , methods
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Methods
 
 
-## <a href="" id="ddk-framework-object-methods-df"></a>
+
 
 
 Each framework object exports a set of methods (functions). Each method serves one of two purposes:

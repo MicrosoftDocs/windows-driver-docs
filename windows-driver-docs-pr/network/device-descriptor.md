@@ -2,17 +2,14 @@
 title: Device Descriptor
 description: Device Descriptor
 ms.assetid: 5c533053-6a4e-4c28-a87d-562791298d5c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Descriptor
 
 
-## <a href="" id="ddk-device-descriptor-ng"></a>
+
 
 
 <table>

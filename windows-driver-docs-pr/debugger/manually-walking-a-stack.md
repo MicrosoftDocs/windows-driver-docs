@@ -3,11 +3,9 @@ title: Manually Walking a Stack
 description: Manually Walking a Stack
 ms.assetid: 9235fe4d-3e94-4143-867f-18b696e489d0
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Manually Walking a Stack
@@ -26,7 +24,7 @@ For the example, a failure that actually gives a stack trace is used so the resu
 
 The first step is to find out what modules are loaded where. This is accomplished with the [**x (Examine Symbols)**](x--examine-symbols-.md) command (some symbols are edited out for reasons of length):
 
-```
+```dbgcmd
 kd> x *! 
 start    end        module name
 77f70000 77fb8000   ntdll     (C:\debug\ntdll.dll, \\ntstress\symbols\dll\ntdll.DBG)
@@ -66,7 +64,7 @@ fe6c0000 fe6f0920   srv       (load from srv.sys deferred)
 
 The second step is dumping out the stack pointer to look for addresses in the modules given by the **x \*!** command:
 
-```
+```dbgcmd
 kd> dd esp 
 fe4cc97c  80136039 00000270 00000000 00000000
 fe4cc98c  fe682ae4 801036fe 00000000 fe68f57a
@@ -94,7 +92,7 @@ To determine which values are likely function addresses and which are parameters
 
 Notice that all modules listed are in the ranges of 77f70000 to 8040c000 and fe4c0000 to fe6f0920. Based on these ranges, the possible function addresses in the preceding list are: 80136039, 801036fe (listed twice, so more likely a parameter), fe682ae4, fe68f57a, fe682a78, fe6a1198, 8011c901, 80127797, 80110008, fe6a1430, fe6a10ae, fe6b2c04, fe685968, fe680ba4, and fe682050. Investigate these locations by using an [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command for each address:
 
-```
+```dbgcmd
 kd> ln 80136039 
 (80136039)   NT!_KiServiceExit+0x1e  |  (80136039)   NT!_KiServiceExit2-0x177
 kd> ln fe682ae4 
@@ -131,7 +129,7 @@ kd> ln fe682050
 
 As noted before, 801036fe is not likely to be part of the stack trace as it is listed twice. If the return addresses have an offset of zero, they can be ignored (you cannot return to the beginning of a function). Based on this information, the stack trace is revealed to be:
 
-```
+```dbgcmd
 NT!_KiServiceExit+0x1e
 rdr!_RdrSectionInfo+0x2c
 rdr!_RdrDereferenceDiscardableCode+0xb4  
@@ -148,7 +146,7 @@ rdr!__strnicmp+0xaa
 
 To verify each symbol, unassemble immediately before the return address specified to see if it does a call to the function above it. To reduce length, the following is edited (the offsets used were found by trial and error):
 
-```
+```dbgcmd
 kd> u 80136039-2 l1      //  looks ok, its a call
 NT!_KiServiceExit+0x1c:
 80136037 ffd3             call    ebx
@@ -201,7 +199,7 @@ Based on this, it appears that **RdrReconnectConnection** called **RdrCleanupTra
 
 In this case, the stack trace worked properly. Following is the actual stack trace to check the answer:
 
-```
+```dbgcmd
 kd> k 
 ChildEBP RetAddr
 fe4cc978 80136039 NT!_NtClose+0xd
@@ -226,7 +224,6 @@ The first entry was the current location based on the stack trace, but otherwise
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Manually%20Walking%20a%20Stack%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

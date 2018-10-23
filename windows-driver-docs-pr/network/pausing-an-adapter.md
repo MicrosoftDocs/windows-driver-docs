@@ -10,17 +10,14 @@ keywords:
 - MiniportPause
 - pausing miniport adapters
 - stopping miniport adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pausing an Adapter
 
 
-## <a href="" id="ddk-pausing-an-adapter-ng"></a>
+
 
 
 NDIS calls a miniport driver's [*MiniportPause*](https://msdn.microsoft.com/library/windows/hardware/ff559418) function to initiate a pause operation. The adapter remains in the Pausing state until the pause operation is complete.

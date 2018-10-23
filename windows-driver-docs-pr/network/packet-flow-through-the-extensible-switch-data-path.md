@@ -2,11 +2,8 @@
 title: Packet Flow through the Extensible Switch Data Path
 description: Packet Flow through the Extensible Switch Data Path
 ms.assetid: 9236CE95-F959-445F-849F-14377EE91D19
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Packet Flow through the Extensible Switch Data Path
@@ -157,12 +154,3 @@ The extensible switch data path has the following parts, listed in the order tha
 7.  Once the packet has been forwarded, the interface completes the packet through the same path in reverse. First, the interface calls the extension's [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964) function to complete packets forwarded on the egress data path. Then, the interface calls the extension's [*FilterSendNetBufferListsComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549967) function to complete packets forwarded on the ingress data path.
 
     When the packet is completed on both the egress and ingress data path, the extension performs any necessary packet cleanup and post-processing that may be required.
-
- 
-
- 
-
-
-
-
-

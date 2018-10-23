@@ -8,11 +8,8 @@ keywords:
 - DMA operations WDK KMDF , transactions
 - bus-master DMA WDK KMDF , transactions
 - reusing DMA transaction objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reusing DMA Transaction Objects
@@ -20,7 +17,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-reusing-dma-transaction-objects-df"></a>
+
 
 
 After a driver processes all of the DMA transfers that are associated with a DMA transaction, the driver can delete or reuse the transaction object. Typically, the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function deletes the transaction object (by calling [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734)). Subsequently, when the driver creates a new DMA transaction, it calls [**WdfDmaTransactionCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547027) to create a new transaction object.

@@ -3,13 +3,15 @@ title: Offloading IPsec Tasks
 description: Offloading IPsec Tasks
 ms.assetid: e2006459-cc74-43d1-9ce0-4869e2ef5d7d
 keywords: ["task offload WDK TCP/IP transport , IPsec tasks", "IPsec offload WDK TCP/IP transport , about offloading IPsec tasks"]
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Offloading IPsec Tasks
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offloading-ipsec-tasks-ng"></a>
+
 
 
 This section describes the offloading of Internet protocol security (IPsec) tasks.

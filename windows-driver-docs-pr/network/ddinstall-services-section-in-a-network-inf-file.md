@@ -6,17 +6,14 @@ keywords:
 - INF files WDK network , DDInstall.Services section
 - network INF files WDK , DDInstall.Services section
 - DDInstall.Services section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DDInstall.Services Section in a Network INF File
 
 
-## <a href="" id="ddk-ddinstall-services-section-ng"></a>
+
 
 
 A *DDInstall*.**Services** section in a network INF file is based on the generic [**INF DDInstall.Services section**](https://msdn.microsoft.com/library/windows/hardware/ff547349).
@@ -35,7 +32,7 @@ For more information, see [**INF AddService Directive**](https://msdn.microsoft.
 
 The following is an example of a *DDInstall*.**Services** section, a *service-install-section*, an *error-log-install-section*, and an *add-registry-section* that is referenced by an **AddReg** directive in the *error-log-install-section*:
 
-```
+```cpp
 [a1.ndi.NT.Services]
 AddService = a1, 2, a1.AddService, a1.AddEventLog
  

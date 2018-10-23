@@ -3,17 +3,15 @@ title: Bug Check 0xBB NETWORK_BOOT_INITIALIZATION_FAILED
 description: The NETWORK_BOOT_INITIALIZATION_FAILED bug check has a value of 0x000000BB. This indicates that Windows failed to successfully boot off a network.
 ms.assetid: 1cc86ca0-437d-4a26-90ed-76f122c522ef
 keywords: ["Bug Check 0xBB NETWORK_BOOT_INITIALIZATION_FAILED", "NETWORK_BOOT_INITIALIZATION_FAILED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - NETWORK_BOOT_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBB: NETWORK\_BOOT\_INITIALIZATION\_FAILED
@@ -21,7 +19,7 @@ api_type:
 
 The NETWORK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000BB. This indicates that Windows failed to successfully boot off a network.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## NETWORK\_BOOT\_INITIALIZATION\_FAILED Parameters
 

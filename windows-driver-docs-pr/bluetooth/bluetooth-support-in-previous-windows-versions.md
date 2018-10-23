@@ -2,11 +2,8 @@
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.assetid: 5209DE94-241D-4EFA-BA00-884EC74C8C1B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Version and Profile Support in Previous Windows Versions
@@ -438,7 +435,7 @@ Windows 7 introduced new Ex versions of previous APIs to provide enhanced funct
 
 Windows Vista introduced a kernel-mode DDI for Bluetooth wireless technology, which provides access to SCO, SDP, and L2CAP. The DDI is included with Windows Driver Kit (WDK) build 6000, which was released with Windows Vista, and all later builds of the WDK. We do not intend to make the kernel-mode DDI available on earlier versions of Windows. The [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) can be used to verify that kernel-mode Bluetooth drivers comply with standard driver development practices and use the DDI correctly.
 
-Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see ”Bluetooth” on the MSDN Web site. The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see ”How to Get the WDK” on the WHDC Web site. The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
+Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads) The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -449,7 +446,6 @@ Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Blu
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20Version%20and%20Profile%20Support%20in%20Previous%20Windows%20Versions%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

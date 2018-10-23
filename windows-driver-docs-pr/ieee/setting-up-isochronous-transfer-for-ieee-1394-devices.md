@@ -11,11 +11,8 @@ keywords:
 - buffers WDK IEEE 1394 bus
 - speed WDK IEEE 1394 bus
 - allocating bandwidth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Isochronous Transfer for IEEE 1394 Devices
@@ -88,6 +85,5 @@ To read from the device, the driver issues the [**REQUEST\_ISOCH\_LISTEN**](http
  
 
 
---------------------
 
 

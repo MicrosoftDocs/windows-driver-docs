@@ -3,11 +3,8 @@ title: UEFI requirements for Windows 10 Mobile
 author: windows-driver-content
 description: In addition to UEFI requirements that apply to all Windows editions, Windows 10 Mobile devices must meet additional requirements described in this topic.
 ms.assetid: 12a03f5b-1717-4daf-90ef-5e530f72b19e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI requirements for Windows 10 Mobile
@@ -156,6 +153,5 @@ The following table describes the requirements that are specific to Windows 10 
 [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md)  
 [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)  
 
---------------------
 
 

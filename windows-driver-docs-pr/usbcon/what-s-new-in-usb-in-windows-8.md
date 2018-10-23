@@ -2,11 +2,8 @@
 Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
 title: Windows 8 - What's new for USB
 author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/05/2018
+ms.localizationpriority: medium
 ---
 
 # Windows 8: What's new for USB
@@ -28,7 +25,7 @@ This topic summarizes the new features and improvements for Universal Serial Bus
 
 For information about new features in USB in general, see [New for USB Drivers](https://msdn.microsoft.com/library/windows/hardware/hh451212).
 
-## <a href="" id="new-driver-stack-for-usb-3-0-devices"></a>New Driver Stack for USB 3.0 Devices
+## New Driver Stack for USB 3.0 Devices
 
 
 Windows 8 provides a new USB driver stack to support USB 3.0 devices. The new stack includes drivers that are loaded by Windows when a USB 3.0 device is attached to an xHCI host controller. The new drivers are based on [Kernel Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557405) (KMDF) and implement features defined in the USB 3.0 specification. The new drivers are as follows:
@@ -91,7 +88,7 @@ In addition to the routines in the preceding list, there are new KMDF-specific m
 -   The [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method (instead of [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)) to allocate an URB.
 -   The [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method (instead of [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
 
-## <a href="" id="new-user-mode-i-o-control-requests-for-usb-3-0-hubs"></a>New User Mode I/O Control Requests for USB 3.0 Hubs
+## New User Mode I/O Control Requests for USB 3.0 Hubs
 
 
 Windows 8 provides the new IOCTLs that applications can use to retrieve information about USB 3.0 hubs and their ports. The new IOCTLs are as follows:
@@ -111,7 +108,7 @@ By sending the preceding I/O requests to the USB driver stack an application ret
 
 Device manufacturers can add "WINUSB" in the firmware (Microsoft OS feature descriptor) so that Windows recognizes the device as a WinUSB device. In Windows 8, Winusb.inf has been modified to include USB\\MS\_COMP\_WINUSB as a device identifier string. That modification enables Windows to automatically load Winusb.sys, as the function driver for the device, as soon as the device is detected. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="new-visual-studio-templates-for-usb-client-drivers---new-for-beta-"></a>New Visual Studio templates for USB client drivers *(\*New for Beta)*
+## New Visual Studio templates for USB client drivers *(\*New for Beta)*
 
 
 Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel-Mode Driver** templates that generate starter code for a UMDF and KMDF USB client driver, respectively. The template code initializes the USB target device object to enable communication with the hardware. For more information, see the following topics:
@@ -121,7 +118,7 @@ Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel
 
 For more information, see [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md). Extend your driver by performing [Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md).
 
-For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation* or the [WHDC Web site](http://www.microsoft.com/whdc/driver/wdf/default.mspx).
+For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation*.
 
 ## UASP driver
 
@@ -133,7 +130,7 @@ Windows 8 includes a new USB storage driver that implements the USB Attached SC
 
 The Windows to Go feature allows Windows to boot from a flash drive or an external drive. You can boot with your copy of Windows from those drives on various machines.
 
-## <a href="" id="enhanced-debugging-and-diagnostic-capabilities-----"></a>Enhanced debugging and diagnostic capabilities
+## Enhanced debugging and diagnostic capabilities
 
 
 Windows 8 provides new USB 3.0 debugging tools to improve diagnosing USB issues faster. There are new USB 3.0 kernel debugger extensions that examine USB 3.0 host controller and device states. You can use USB WPP and event tracing to analyze USB interactions and troubleshoot USB device issues more easily. Windows 8 supports debugging over USB 3.0. For more information, see [Setting Up a USB 3.0 Connection Manually](https://msdn.microsoft.com/library/windows/hardware/hh439372).
@@ -177,7 +174,5 @@ The error strings are as follows:
 [New for USB Drivers](https://msdn.microsoft.com/library/windows/hardware/hh451212)  
 [Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Windows%C2%A08:%20What's%20new%20for%20USB%20%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

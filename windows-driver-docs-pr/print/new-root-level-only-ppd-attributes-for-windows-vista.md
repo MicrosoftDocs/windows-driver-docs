@@ -7,11 +7,8 @@ keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
 - PPD attributes WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New Root-Level-Only PPD Attributes for Windows Vista
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 The following list describes the PPD attributes that are new starting with Windows Vista. To maintain backwards compatibility with pre-Windows Vista versions of Windows, you should surround these attributes with the following code.
 
-```
+```cpp
 *Ifdef: WINNT_60 ... *Endif: WINNT_60 blocks
 ```
 
@@ -30,12 +27,12 @@ The **MSPrintSchemaKeywordMap** attribute defines the mapping from a PPD feature
 **MSPrintSchemaKeywordMap** has two acceptable formats:
 
 <a href="" id="format-1"></a>Format 1  
-```
+```cpp
 *MSPrintSchemaKeywordMap: PrintSchema_feature_keyword *<PPD_feature_keyword>
 ```
 
 <a href="" id="format-2"></a>Format 2  
-```
+```cpp
 *MSPrintSchemaKeywordMap: PrintSchema_feature_keyword PrintSchema_option_keyword *<PPD_feature_keyword> <PPD_option_keyword>
 ```
 
@@ -79,7 +76,7 @@ It is also important to know that if you map a feature to a Print Schema keyword
 
 The following code example shows an example of the **MSPrintSchemaKeywordMap** attribute in a partial PPD file.
 
-```
+```cpp
 *OpenUI *IHVStapling:PickOne
 *DefaultIHVStapling:Disabled
 *IHVStapling Enabled:"..."
@@ -97,7 +94,7 @@ The **MsPrintSchemaPrivateNamespaceURI** attribute defines the private namespace
 
 **MSPrintSchemaPrivateNamespaceURI** uses the following format.
 
-```
+```cpp
 *MSPPrintSchemaPrivateNamespaceURI: "<URI>"
 ```
 
@@ -107,7 +104,7 @@ A single printer model's PPD file (or files) should have only one definition of 
 
 The following code example shows an example of the **MsPrintSchemaPrivateNamespaceURI** attribute in a partial PPD file.
 
-```
+```cpp
 *MSPrivateNamespaceURI:  "http://www.ihv.com/schema/2004"
 ```
 
@@ -115,7 +112,7 @@ The following code example shows an example of the **MsPrintSchemaPrivateNamespa
 
 The **MSIsXPSDriver** attribute uses the following format.
 
-```
+```cpp
 *MSIsXPSDriver:  True | False
 ```
 
@@ -123,7 +120,7 @@ You can use the Windows Vista PScript5 driver configuration module (Ps5ui.dll) f
 
 The following code example shows an example of this attribute in a partial PPD file:
 
-```
+```cpp
 *MSIsXPSDriver: True
 ```
 
@@ -133,7 +130,7 @@ To use the PScript5 driver configuration module for Win32 GDI drivers, you do no
 
 The **MSPrintProcDuplexOptions** attribute uses the following format.
 
-```
+```cpp
 *MSPrintProcDuplexOptions:  "int"
 ```
 
@@ -149,7 +146,7 @@ This attribute can have one of the following values:
 
 The following code example shows an example of **MSPrintProcDuplexOptions** in a partial PPD file.
 
-```
+```cpp
 *MSPrintProcDuplexOptions:  "2" 
 ```
 
@@ -167,7 +164,7 @@ Before Windows Vista, a print processor would print the pages in format 2 \[(3,4
 
 If your printer works correctly with format 1, you will not need to change anything for Windows Vistaand later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the **MSPrintProcDuplexOptions** attribute with value 1.
 
-```
+```cpp
 *MSPrintProcDuplexOptions: "1"
 ```
 
@@ -208,7 +205,7 @@ For the Windows Vista PScript driver. if you have a pre-Windows Vista print proc
 
 The **MSBiDiQueryFile** attribute uses the following format.
 
-```
+```cpp
 *MSBidiQueryFile: "filename"
 ```
 
@@ -216,7 +213,7 @@ Use **MSBiDiQueryFile** to specify the GPD or GDL file name that contains the pr
 
 The following code example shows an example of **MSBiDiQueryFile** in a partial PPD file.
 
-```
+```cpp
 *MSBidiQueryFile: "ACnfgPS.GDL"
 ```
 
@@ -224,7 +221,7 @@ The following code example shows an example of **MSBiDiQueryFile** in a partial 
 
 The **MSXPSMaxCopies** attribute uses the following format.
 
-```
+```cpp
 *MSXPSMaxCopies: "int"
 ```
 
@@ -232,7 +229,7 @@ Use **MSXPSMaxCopies** to specify the maximum number of copies that an XPSDrv pr
 
 The following code example shows an example of **MSXPSMaxCopies** in a partial PPD file.
 
-```
+```cpp
 *MSXPSMaxCopies: "99"
 ```
 
@@ -241,7 +238,5 @@ The following code example shows an example of **MSXPSMaxCopies** in a partial P
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20New%20Root-Level-Only%20PPD%20Attributes%20for%20Windows%20Vista%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

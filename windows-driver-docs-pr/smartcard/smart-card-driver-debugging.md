@@ -7,11 +7,8 @@ keywords:
 - debugging drivers WDK smart card
 - DebugLevel
 - vendor-supplied drivers WDK smart card , debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Smart Card Driver Debugging
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 The smart card driver libraries support several debugging features. Each debugging feature is represented by one of the following constants, which are defined in the *Smclib.h* header file:
 
-```
+```cpp
 DEBUG_IOCTL
 DEBUG_ATR
 DEBUG_PROTOCOL
@@ -39,7 +36,7 @@ There are two ways to set the debugging level. First, you can use the smart card
 
 In both cases, you must pass the value for the debugging level you want to the program or routine that sets the debugging level. For instance, to set the debugging level from the driver by using a smart card library routine, make the following call:
 
-```
+```cpp
 SmartcardSetDebugLevel(DebugLevel);
 ```
 
@@ -49,7 +46,7 @@ SmartcardSetDebugLevel(DebugLevel);
 
 To write debugging messages from a reader driver, the driver must call the following routine:
 
-```
+```cpp
 SmartcardDebug(
  ULONG DebugLevel,
  PCHAR Message
@@ -72,7 +69,6 @@ For information about setting up a remote debugging session, see [Windows Debugg
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[smartcrd\smartcrd]:%20Smart%20Card%20Driver%20Debugging%20%20RELEASE:%20%287/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

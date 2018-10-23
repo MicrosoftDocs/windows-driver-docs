@@ -8,11 +8,8 @@ keywords:
 - class drivers WDK storage , I/O request support
 - I/O requests WDK storage
 - IRPs WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Support of I/O Requests
@@ -40,6 +37,5 @@ The designer of a class driver for an entirely new type of storage device must d
  
 
 
---------------------
 
 

@@ -5,29 +5,26 @@ ms.assetid: d9eac8f6-a560-41e5-ae71-3bd9d6714c3a
 keywords:
 - INF files WDK network , filter drivers
 - modifying filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring an INF File for a Modifying Filter Driver
 
 
-## <a href="" id="ddk-modifying-filter-driver-installation-ng"></a>
+
 
 
 The following NDIS filter driver installation issues are associated with modifying filter drivers. To create your own modifying filter driver INF file, you can also adapt the [sample NDIS 6.0 filter driver](http://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 -   Set the **Class** INF file entry to **NetService** in the INF file. The following example shows a sample **Class** entry for the INF file.
-    ```
+    ```INF
     Class = NetService
     ```
 
 -   The *DDInstall* section in a filter driver INF file must have a **Characteristics** entry. The following example shows how you should define the **Characteristics** entry in your filter INF file.
 
-    ```
+    ```INF
     Characteristics=0x40000
     ```
 
@@ -35,7 +32,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   Set the **NetCfgInstanceId** INF file entry in the INF file, as the following example shows.
 
-    ```
+    ```INF
     NetCfgInstanceId="{5cbf81bd-5055-47cd-9055-a76b2b4e3697}"
     ```
 
@@ -45,7 +42,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   The *DDInstall* section in a filter driver INF file must have **FilterType** and **FilterRunType** entries. To specify a modifying filter, define the **FilterType** entry in your INF file, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,FilterType,0x00010001 ,0x00000002
     ```
 
@@ -53,7 +50,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   Define the **FilterRunType** entry in your INF file, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,FilterRunType,0x00010001 ,0x00000001
     ```
 
@@ -61,14 +58,14 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   The following example shows how a modifying filter driver INF file specifies the name of the service.
 
-    ```
+    ```INF
     HKR, Ndi,Service,,"NdisLwf"
     ```
 
     In this example, NdisLwf is the name of the driver's service as it is reported to NDIS. Note that the name of a filter driver's service can be different from the name of the binary for the driver—but typically they are the same.
 
 -   The following example shows how the filter INF file references the name of the filter driver's service when it adds that service.
-    ```
+    ```INF
     [Install.Services]
     AddService=NdisLwf,,NdisLwf_Service_Inst;, common.EventLog 
 
@@ -85,7 +82,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   A filter INF file must specify at least the primary service name of the filter for the **CoServices** attribute, as the following example shows.
 
-    ```
+    ```INF
     HKR, Ndi,CoServices,0x00010000,"NdisLwf"
     ```
 
@@ -152,7 +149,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
     The following example shows a sample **FilterClass** .
 
-    ```
+    ```INF
     HKR, Ndi,FilterClass,, compression
     ```
 
@@ -192,7 +189,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 -   You must define the following entries in the modifying filter driver INF file to control the driver bindings.
 
-    ```
+    ```INF
     HKR, Ndi\Interfaces,UpperRange,,"noupper"
     HKR, Ndi\Interfaces,LowerRange,,"nolower"
     HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
@@ -201,7 +198,7 @@ The following NDIS filter driver installation issues are associated with modifyi
     For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
 -   A modifying filter INF file should specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
-    ```
+    ```INF
     [Common.Params.reg]
 
     HKR, FilterDriverParams\DriverParam,  ParamDesc, , "Driverparam for lwf"

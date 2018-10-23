@@ -2,11 +2,8 @@
 title: Calling the Default DIF Code Handlers
 description: Calling the Default DIF Code Handlers
 ms.assetid: bc168c30-2269-4760-bc0a-e3e6ee3ce720
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling the Default DIF Code Handlers

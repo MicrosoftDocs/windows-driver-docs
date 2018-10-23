@@ -3,11 +3,8 @@ title: SPI tests in MITT
 author: windows-driver-content
 description: SPI test modules that are included in the MITT software package.
 ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SPI tests in MITT
@@ -51,7 +48,7 @@ SPI test modules that are included in the MITT software package can be used to t
 
     ![spi power](images/spi-power.png)
 
-## <a href="" id="test-driver-and-acpi-configuration--"></a>Test driver and ACPI configuration
+## Test driver and ACPI configuration
 
 
 Perform these steps on the system under test that has the I²C controller:
@@ -112,7 +109,7 @@ Perform these steps on the system under test that has the I²C controller:
 
     ```
 
-## <a href="" id="spi-automation-tests--"></a>SPI automation tests
+## SPI automation tests
 
 
 1.  Create a folder on the system under test.
@@ -136,6 +133,5 @@ You are now ready to run SPI tests. You can run a single test, all tests at once
  
 
 
---------------------
 
 

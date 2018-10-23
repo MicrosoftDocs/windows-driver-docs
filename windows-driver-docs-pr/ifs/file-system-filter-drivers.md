@@ -7,11 +7,8 @@ keywords:
 - filter drivers WDK file system
 - file system filter drivers WDK
 - file system drivers WDK , filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Filter Drivers
@@ -38,6 +35,5 @@ This section includes the following topics, which describe file system filter dr
  
 
 
---------------------
 
 

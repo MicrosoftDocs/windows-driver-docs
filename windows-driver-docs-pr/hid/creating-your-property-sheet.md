@@ -4,12 +4,14 @@ author: windows-driver-content
 description: Creating Your Property Sheet
 ms.assetid: 04fa34fd-86d6-4017-a6da-9882d65674e3
 keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK DirectInput , property sheet creation", "control panels WDK DirectInput , property sheet creation", "sample property sheet applications WDK DirectInput", "custom property sheets WDK DirectInput", "templates WDK DirectInput"]
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Creating Your Property Sheet
 
 
-## <a href="" id="ddk-creating-your-property-sheet-di"></a>
+
 
 
 This example demonstrates many aspects of DirectInput and provides a good starting point for your own custom property sheet.
@@ -20,7 +22,7 @@ Creating a custom property sheet from scratch is a relatively simple process.
 
 1.  Create a GUID to identify your property page:
     -   Using the GuidGen tool (which is included in the Microsoft Windows SDK), create a GUID for your property page (only one, no matter how many pages). Define this in your application-specific include file. It should look something like:
-        ```
+        ```cpp
         
         ```
 
@@ -47,7 +49,5 @@ Dialog templates are also important to remember when considering visual alignmen
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Creating%20Your%20Property%20Sheet%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

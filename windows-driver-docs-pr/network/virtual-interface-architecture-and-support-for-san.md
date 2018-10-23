@@ -7,17 +7,14 @@ keywords:
 - SAN WDK , VI architecture
 - VI architecture WDK SANs
 - Virtual Interface architecture WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Interface Architecture and Support for SAN
 
 
-## <a href="" id="ddk-virtual-interface-architecture-and-support-for-san-ng"></a>
+
 
 
 The Virtual Interface (VI) architecture, proposed by Compaq, Intel, and Microsoft, is a design for an interface between a SAN NIC and a host computer system. This architecture represents only one aspect of design with regard to system area networks (SAN). There are alternate designs that share the same fundamental characteristics.

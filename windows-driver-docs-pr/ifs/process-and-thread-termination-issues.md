@@ -9,11 +9,8 @@ keywords:
 - process terminations WDK file systems
 - thread terminations WDK file systems
 - terminated processes or threads WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Process and Thread Termination Issues
@@ -29,6 +26,5 @@ File systems that store state information related to specific users might need t
  
 
 
---------------------
 
 

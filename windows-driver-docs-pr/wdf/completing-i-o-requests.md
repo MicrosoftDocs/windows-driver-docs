@@ -8,17 +8,14 @@ keywords:
 - completing I/O requests WDK KMDF
 - request processing WDK KMDF , completing requests
 - status information WDK KMDF , completing I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing I/O Requests
 
 
-## <a href="" id="ddk-completing-i-o-requests-df"></a>
+
 
 
 Every framework-based driver must eventually complete every I/O request that it receives from the framework. Drivers complete requests by calling the request object's [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945), [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), or [**WdfRequestCompleteWithPriorityBoost**](https://msdn.microsoft.com/library/windows/hardware/ff549949) method.

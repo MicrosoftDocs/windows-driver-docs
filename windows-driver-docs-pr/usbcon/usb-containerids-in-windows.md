@@ -2,11 +2,8 @@
 Description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
 title: USB ContainerIDs in Windows
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB ContainerIDs in Windows
@@ -61,7 +58,7 @@ There are several established algorithms for generating UUIDs with almost zero c
 
 A **ContainerID** is reported in the standard UUID string format of {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}. The following is an example representation in firmware for a 0C B4 A7 2C D1 7B 25 4F B5 73 A1 3A 97 5D DC 07 USB **ContainerID**, which is formatted as a {2CA7B40C-7BD1-4F25-B573-A13A975DDC07} UUID string.
 
-```
+```cpp
 UCHAR Example<mark type="member">ContainerID</mark>Descriptor[24] =
 {
     0x18, 0x00, 0x00, 0x00,     // dwLength - 24 bytes
@@ -161,7 +158,7 @@ Device manufacturers must ensure that each instance of a device that they produc
 Recommendations for Implementing a USB **ContainerID** The following are recommendations for device vendors that design, manufacture, and ship USB devices:
 
 -   Learn how Windows 7 improves the support for multifunction and multiple transport USB devices through the use of a **ContainerID**. We recommend that you start by reading “Multifunction Device Support and Device Container Groupings in Windows 7.”
--   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device. For more information about the WLK test for USB serial numbers, see ”USB Serial Number” on MSDN®.
+-   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device.
 -   Do not provide a **ContainerID** for a USB device that is embedded in a system. Integrated USB devices should rely on ACPI BIOS settings or the USB hub descriptor **DeviceRemovable** bit for the port.
 -   Ensure that all USB devices that are attached to a system have unique **ContainerID** values. Do not share **ContainerID** values or USB serial numbers across your product lines.
 -   Make sure to set the Removable Device Capability correctly for your device.
@@ -173,7 +170,5 @@ Recommendations for Implementing a USB **ContainerID** The following are recomme
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  
 [Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20ContainerIDs%20in%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

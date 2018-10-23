@@ -4,17 +4,14 @@ description: General Guidelines for INF Files
 ms.assetid: a0394708-46ed-47f8-a629-0c7d3088df3b
 keywords:
 - INF files WDK device installations , general guidelines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Guidelines for INF Files
 
 
-## <a href="" id="ddk-general-guidelines-for-inf-files-dg"></a>
+
 
 
 INF files have many common parts and follow a single set of syntax rules. However, they are also as different as the variety of devices that are supported by Microsoft Windows. When you write an INF file, refer to the following sources of information:

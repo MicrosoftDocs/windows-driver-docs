@@ -9,11 +9,8 @@ keywords:
 - IRQLs WDK SD bus
 - hardware interrupts WDK SD bus
 - interrupt notifications WDK SD bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SD Card Interrupts
@@ -32,6 +29,5 @@ An SD device driver specifies the IRQL at which it will run when it initializes 
  
 
 
---------------------
 
 

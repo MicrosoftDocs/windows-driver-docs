@@ -9,11 +9,8 @@ keywords:
 - boot drives WDK storage
 - disk dump drivers WDK storage
 - dump mode WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Restrictions on Miniport Drivers that Manage the Boot Drive
@@ -70,6 +67,5 @@ When you look in the debugger for an image of a storage miniport driver in dump 
  
 
 
---------------------
 
 

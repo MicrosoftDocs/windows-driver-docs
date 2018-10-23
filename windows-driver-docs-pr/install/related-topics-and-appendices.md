@@ -2,11 +2,8 @@
 title: Related Topics and Appendices
 ms.assetid: AD0A2FCB-9790-4E9D-B0B5-AF550EF5ECB0
 description: Contains a list of link to topic related to Windows driver signing.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Related Topics and Appendices
@@ -15,7 +12,7 @@ ms.technology: windows-devices
 The following are topics related driver signing:
 
 [Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver)
-[Windows Hardware Certification](http://msdn.microsoft.com/windows/hardware/gg463010.aspx)
+[Windows Hardware Certification](https://msdn.microsoft.com/windows/hardware/gg463010.aspx)
 [Dashboard Services](https://msdn.microsoft.com/library/windows/hardware/br230803)
 [Driver Signing Requirements for Windows](https://msdn.microsoft.com/library/windows/hardware/dn653563)
 [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md)

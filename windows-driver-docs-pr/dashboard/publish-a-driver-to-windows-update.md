@@ -2,11 +2,8 @@
 title: Publish a driver to Windows Update
 description: To publish a driver to Windows Update, create a hardware submission and then follow the steps below.
 ms.assetid: E62AADCF-E481-40CA-98F1-BE4629C3EE35
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Publish a driver to Windows Update
@@ -92,10 +89,10 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 
 
-8. If your driver targets Windows 10 S, you must select both boxes, confirming the following:
+8. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
 
-  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements).
-  * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 S guidelines.
+  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/Windows10SDriverRequirements).
+  * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 in S mode guidelines.
   * Your driver does not contain any non-Microsoft UI components or applications in the driver package.
 
   ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)
@@ -106,4 +103,3 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Publish%20a%20driver%20to%20Windows%20Update%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -3,11 +3,8 @@ title: Processing updates
 author: windows-driver-content
 description: After any firmware update package(s) have been applied and the system subsequently rebooted, the Windows OS loader loads all the firmware payload files (in this example, firmware.bin) into physical memory.
 ms.assetid: 87BC1366-F69D-412A-883E-861853A4902A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing updates
@@ -51,6 +48,5 @@ After the Windows OS loader has loaded all pending firmware updates and created 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

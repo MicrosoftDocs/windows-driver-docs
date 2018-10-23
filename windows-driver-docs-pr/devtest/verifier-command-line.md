@@ -10,11 +10,8 @@ api_name:
 - Driver Verifier Command Syntax
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Verifier Command Syntax
@@ -574,6 +571,9 @@ Options for rules that can be disabled (advanced).
 <span id="________standard"></span><span id="________STANDARD"></span> **/standard**  
 (Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
 
+> [!NOTE]
+> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
+
 <span id="________volatile______"></span><span id="________VOLATILE______"></span> **/volatile**   
 Changes the settings without rebooting the computer. Volatile settings take effect immediately.
 
@@ -713,7 +713,6 @@ The following values are returned after driver verifier has run.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Driver%20Verifier%20Command%20Syntax%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

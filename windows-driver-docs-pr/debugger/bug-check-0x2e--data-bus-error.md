@@ -3,17 +3,15 @@ title: Bug Check 0x2E DATA_BUS_ERROR
 description: The DATA_BUS_ERROR bug check has a value of 0x0000002E. This typically indicates that a parity error in system memory has been detected.
 ms.assetid: 117adb1b-49aa-4c4e-ae01-730d1d653c02
 keywords: ["Bug Check 0x2E DATA_BUS_ERROR", "DATA_BUS_ERROR"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DATA_BUS_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2E: DATA\_BUS\_ERROR
@@ -21,7 +19,7 @@ api_type:
 
 The DATA\_BUS\_ERROR bug check has a value of 0x0000002E. This typically indicates that a parity error in system memory has been detected.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DATA\_BUS\_ERROR Parameters
 

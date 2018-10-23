@@ -2,17 +2,14 @@
 title: Determining the VMQ Capabilities of a Network Adapter
 description: Determining the VMQ Capabilities of a Network Adapter
 ms.assetid: a8efc393-60fd-4ff8-ba9a-53846f5fbba4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the VMQ Capabilities of a Network Adapter
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 NDIS provides the interface to determine the VMQ capabilities of a network adapter, such as:

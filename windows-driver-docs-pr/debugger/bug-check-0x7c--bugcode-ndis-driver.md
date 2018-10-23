@@ -3,17 +3,15 @@ title: Bug Check 0x7C BUGCODE_NDIS_DRIVER
 description: The BUGCODE_NDIS_DRIVER bug check has a value of 0x0000007C. This bug check indicates that the operating system detected an error in a networking driver.
 ms.assetid: 0f2c2e9c-2889-4d99-b653-0ee1d4c2be0e
 keywords: ["Bug Check 0x7C BUGCODE_NDIS_DRIVER", "BUGCODE_NDIS_DRIVER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - BUGCODE_NDIS_DRIVER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7C: BUGCODE\_NDIS\_DRIVER
@@ -21,7 +19,7 @@ api_type:
 
 The BUGCODE\_NDIS\_DRIVER bug check has a value of 0x0000007C. This bug check indicates that the operating system detected an error in a networking driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## BUGCODE\_NDIS\_DRIVER Parameters
 

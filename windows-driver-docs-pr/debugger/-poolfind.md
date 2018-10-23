@@ -3,17 +3,15 @@ title: poolfind
 description: The poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 ms.assetid: 01783b6b-0117-49ca-87ca-bbe3c1b0e730
 keywords: ["poolfind Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - poolfind
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !poolfind
@@ -21,7 +19,7 @@ api_type:
 
 The **!poolfind** extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 
-```
+```dbgcmd
 !poolfind TagString [PoolType] 
 !poolfind TagValue [PoolType] 
 ```
@@ -84,7 +82,7 @@ The pool tag is the same tag passed to the **ExAllocate***Xxx* family of routine
 
 Here is an example. The entire nonpaged pool is searched and then the paged pool is searched, but the command is terminated before completion (after an hour of operation):
 
-```
+```dbgcmd
 kd> !poolfind SeSd 0
 
 Scanning large pool allocation table for Tag: SeSd (827d1000 : 827e9000)
@@ -133,7 +131,6 @@ kd>
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!poolfind%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

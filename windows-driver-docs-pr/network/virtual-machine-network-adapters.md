@@ -2,11 +2,8 @@
 title: Virtual Machine Network Adapters
 description: Virtual Machine Network Adapters
 ms.assetid: 8A2A708C-AB43-4D9F-A7CB-2AC4438BCD54
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Machine Network Adapters

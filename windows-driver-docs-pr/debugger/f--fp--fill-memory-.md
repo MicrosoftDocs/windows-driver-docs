@@ -3,17 +3,15 @@ title: f, fp (Fill Memory)
 description: The f and fp commands fill the specified memory range with a repeating pattern.These commands should not be confused with the ~F (Freeze Thread) command.
 ms.assetid: 9ef4eb88-dc6f-4f0f-ac01-a6b0bb42b33e
 keywords: ["f, fp (Fill Memory) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - f, fp (Fill Memory)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # f, fp (Fill Memory)
@@ -23,7 +21,7 @@ The **f** and **fp** commands fill the specified memory range with a repeating p
 
 These commands should not be confused with the [**~F (Freeze Thread)**](-f--freeze-thread-.md) command.
 
-```
+```dbgcmd
 f Range Pattern 
 fp [MemoryType] PhysicalRange Pattern
 ```
@@ -104,27 +102,27 @@ If *pattern* has more values than the number of bytes in the range, the debugger
 
 Here are some examples. Assuming the current radix is 16, the following command will fill memory locations 0012FF40 through 0012FF5F with the pattern "ABC", repeated several times:
 
-```
+```dbgcmd
 0:000> f 0012ff40 L20 'A' 'B' 'C'
 ```
 
 The following command has the exact same effect:
 
-```
+```dbgcmd
 0:000> f 0012ff40 L20 41 42 43
 ```
 
 The following examples show how you can use the physical memory types (**c**, **uc**, and **wc**) with the **fp** command in kernel mode:
 
-```
+```dbgcmd
 kd> fp [c] 0012ff40 L20 'A' 'B' 'C'
 ```
 
-```
+```dbgcmd
 kd> fp [uc] 0012ff40 L20 'A' 'B' 'C'
 ```
 
-```
+```dbgcmd
 kd> fp [wc] 0012ff40 L20 'A' 'B' 'C'
 ```
 
@@ -132,7 +130,6 @@ kd> fp [wc] 0012ff40 L20 'A' 'B' 'C'
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20f,%20fp%20%28Fill%20Memory%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

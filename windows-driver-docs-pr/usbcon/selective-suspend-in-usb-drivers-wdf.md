@@ -2,11 +2,8 @@
 Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. 
 title: Selective suspend in USB drivers (WDF)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Selective suspend in USB drivers (WDF)
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 A USB function driver supports runtime idle detection by implementing USB selective suspend. Here is content for driver developers about how to implement selective suspend in USB drivers that are based on the Windows® Driver Foundation (WDF).
 
-## <a href="" id="about"></a>About selective suspend
+## About selective suspend
 
 
 Selective suspend is the ability to power down and later resume an idle USB device while the computer to which it is attached remains in the working state (S0). For energy-efficient operation—especially on mobile PCs—all USB devices and drivers should support selective suspend. Powering down a device when it is idle, but while the system remains in the S0 state, has the following significant advantages:
@@ -39,7 +36,7 @@ The details of a function driver’s USB selective suspend code depend on whethe
 -   Use the user-mode driver framework (UMDF) to implement USB drivers whenever possible. User-mode drivers are less likely to corrupt system data and are simpler to debug than kernel-mode drivers.
 -   Use the kernel-mode driver framework (KMDF) only if the driver streams data through isochronous endpoints or requires other features or resources that are available only in kernel mode.
 
-## <a href="" id="ppo"></a>Power policy ownership, I/O queues, and selective suspend
+## Power policy ownership, I/O queues, and selective suspend
 
 
 The power policy owner (PPO) for a device stack is the driver that determines which power state the device should be in at any given time. Only one driver in each device stack can be the PPO. The function driver typically is the PPO for its device.
@@ -96,7 +93,5 @@ If the driver is not the PPO, the framework takes no further actions because onl
 [Writing USB Drivers with WDF](http://go.microsoft.com/fwlink/p/?linkid=320988)  
 [Implementing power management in USB client drivers](http://go.microsoft.com/fwlink/p/?linkid=320989)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Selective%20suspend%20in%20USB%20drivers%20%28WDF%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

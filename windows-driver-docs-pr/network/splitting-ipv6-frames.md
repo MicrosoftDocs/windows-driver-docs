@@ -5,17 +5,14 @@ ms.assetid: fe18ccfb-29d0-4b57-9308-a9d4a9c6777a
 keywords:
 - Ethernet frame splitting WDK networking , IPv6 frames
 - IPv6 frames WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting IPv6 Frames
 
 
-## <a href="" id="ddk-splitting-ipv6-frames-ng"></a>
+
 
 
 To support header-data split, a NIC must support splitting IPv6 Ethernet frames without any IPv6 extension headers. The NIC must be able to split such frames at the beginning of upper-layer-protocol header.

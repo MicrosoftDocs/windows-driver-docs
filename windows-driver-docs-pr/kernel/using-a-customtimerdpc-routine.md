@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Using a CustomTimerDpc Routine
 ms.assetid: e95d01a2-4d13-40d2-aeb0-44c45e4a49f5
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "disabling timer objects", "timer objects WDK kernel , disabling", "periodic timers WDK kernel", "queuing timer objects", "timer objects WDK kernel , expirations", "timer expirations WDK kernel", "expired timers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a CustomTimerDpc Routine
 
 
-## <a href="" id="ddk-using-a-customtimerdpc-routine-kg"></a>
+
 
 
 To disable a previously set timer object, a driver calls [**KeCancelTimer**](https://msdn.microsoft.com/library/windows/hardware/ff551970). This routine removes the timer object from the system's timer queue. Generally, the timer object is not set to the signaled state and the *CustomTimerDpc* routine is not queued for execution. However, if the timer is about to expire when **KeCancelTimer** is called, expiration might occur before **KeCancelTimer** has a chance to access the time queue, in which case signaling and DPC queuing will occur.
@@ -58,7 +55,5 @@ In addition, a DPC used by two standard driver routines with very different func
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Using%20a%20CustomTimerDpc%20Routine%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

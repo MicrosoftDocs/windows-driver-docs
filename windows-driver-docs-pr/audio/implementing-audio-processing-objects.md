@@ -2,11 +2,8 @@
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
 ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 06/19/2018
+ms.localizationpriority: medium
 ---
 
 # Implementing Audio Processing Objects
@@ -103,13 +100,12 @@ In Visual Studio locate the Solution Explorer. (If this is not already open, cho
 
 **SwapAPO Example Code**
 
-There are six projects in the SYSVAD sample Two projects are of primary interest to the APO developer.
+There are five projects in the SYSVAD sample, one of which is of primary interest to the APO developer.
 
 |                    |                                       |
 |--------------------|---------------------------------------|
 | **Project**        | **Description**                       |
 | SwapAPO            | Sample code for an example APO.       |
-| PropPageExtensions | Sample code for an APO property page. |
 
  
 
@@ -153,7 +149,7 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
 
     The following C++ code example shows the creation of a class that inherits from **CBaseAudioProcessingObject**. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapo.h* file.
 
-    ```
+    ```cpp
     // Custom APO class - LFX
     Class MyCustomAPOLFX: public CBaseAudioProcessingObject
     {
@@ -177,7 +173,7 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
 
 The following C++ code example shows an implementation of the [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of APOProcess method
 STDMETHODIMP_ (Void) MyCustomAPOLFX::APOProcess (...)
 {
@@ -189,7 +185,7 @@ STDMETHODIMP_ (Void) MyCustomAPOLFX::APOProcess (...)
 
 The following code example shows an implementation of the **ValidateAndCacheConnectionInfo** method. For an actual implementation of this method, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapogfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of the ValidateAndCacheConnectionInfo method.
 HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 {
@@ -212,7 +208,7 @@ When implementing the APO interfaces, there are two approaches: you can write yo
 
 This pseudocode illustrates wrapping a system APO.
 
-```
+```cpp
 CMyWrapperAPO::CMyWrapperAPO {
     CoCreateInstance(CLSID_InboxAPO, m_inbox);
 }
@@ -224,7 +220,7 @@ CMyWrapperAPO::IsInputFormatSupported {
 
 This pseudocode illustrates creating your own custom APO.
 
-```
+```cpp
 CMyFromScratchAPO::IsInputFormatSupported {
     my custom logic
 }
@@ -250,7 +246,7 @@ When working with APOs in Visual Studio, perform these tasks for each APO projec
 
 Drivers that are targeting Windows 10 should dynamically link against the universal CRT.
 
-If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](http://msdn.microsoft.com/library/2kzt1wy3.aspx) .
+If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](https://msdn.microsoft.com/library/2kzt1wy3.aspx) .
 
 **Disable Use of an Embedded Manifest**
 
@@ -259,19 +255,11 @@ Disable Use of an Embedded Manifest by setting project properties for your APO p
 ## <span id="Packaging_your_APO_with_a_Driver"></span><span id="packaging_your_apo_with_a_driver"></span><span id="PACKAGING_YOUR_APO_WITH_A_DRIVER"></span>Packaging your APO with a Driver
 
 
-When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. The driver package would typically contain the following:
+When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.  
 
--   A custom HD or USB audio driver
+The custom APO is packaged as a DLL, and any configuration UI is packaged as a separate UWP or Desktop Bridge app. The APO device INF copies the DLLs to the system folders that are indicated in the associated INF CopyFile directive. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
 
--   Custom APOs
-
--   A configuration user interface
-
--   An INF file
-
-The custom APO and the configuration UI are packaged as separate DLLs. The device installation program or a setup program copies the DLLs to the system folders that are indicated in the associated INF file. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
-
-The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs and the configuration UI.
+The following paragraphs and INF file fragments show the modifications that are necessary to use the standard INF file to copy and register APOs.
 
 The tabletaudiosample.inf and phoneaudiosample.inf files included with the Sysvad sample illustrate how the SwapApo.dll APOs are registered.
 
@@ -294,7 +282,7 @@ Refer to these reference topics for information on each of the APO INF file sett
 
 [PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt238380)
 
-The following INF file samples shows how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
+The following INF file samples show how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
 
 -   PKEY\_FX\_StreamEffectClsid with PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 -   PKEY\_FX\_ModeEffectClsid with PKEY\_MFX\_ProcessingModes\_Suppoted\_For\_Streaming
@@ -317,7 +305,7 @@ This sample illustrates this combination of system effects:
 
 -   PKEY\_FX\_ModeEffectClsid with PKEY\_MFX\_ProcessingModes\_Suppoted\_For\_Streaming
 
-```
+```cpp
 [SWAPAPO.I.Association0.AddReg]
 ; Instruct audio endpoint builder to set CLSID for property page provider into the
 ; endpoint property store
@@ -351,7 +339,7 @@ This sample illustrates this combination of system effects:
 
 This sample code supports Bluetooth hands-free and stereo devices.
 
-```
+```inf
 ; wdma_bt.inf – example usage
 ...
 [BthA2DP]
@@ -387,7 +375,7 @@ This sample INF file illustrates the following combination of system effects:
 
 -   PKEY\_FX\_EndpointEffectClsid without PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming
 
-```
+```inf
 [MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%MyFilterName%,MyAudioInterface
  
@@ -417,7 +405,7 @@ This INF file sample also illustrates the use of this combination of system effe
 
 -   PKEY\_FX\_EndpointEffectClsid without PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming
 
-```
+```inf
 ;wdma_bt.inf
 [BthHfAud]
 Include=ks.inf, wdmaudio.inf, BtaMpm.inf
@@ -438,7 +426,7 @@ HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 This sample INF file shows the \[MsApoFxProxy.Registration\] and \[MsApoFxProxy.AddReg\] sections. This registers the well-known GUID with COM using the \[MsApoFxProxy.CopyList\] section. This section copies MsApoFxProxy.dll into C:\\Windows\\system32.
 
-```
+```inf
 ; wdmaudio.inf – this is where WmaLfxGfxDsp.dll is registered
 ...
 ;; MsApoFxProxy.Registration section can be called by OEM&#39;s to install the discover-effects APO
@@ -502,20 +490,20 @@ Only Microsoft inbox class drivers (which can be wrapped by a third-party develo
 
 The following INF file sample illustrates setting the PKEY\_FX\_Association key to a GUID associated with the APO.
 
-```
+```inf
 ;; Property Keys
 PKEY_FX_Association = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},0"
 "
 ```
 
-```
+```inf
 ;; Key value pairs
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
 ```
 
 Because an audio adapter is capable of supporting multiple inputs and outputs, you must explicitly indicate the type of kernel streaming (KS) node type that your custom APO is compatible with. In the preceding INF file fragment, the APO is shown to be associated with a KS node type of %KSNODETYPE\_ANY%. Later in this INF file, KSNODETYPE\_ANY is defined as follows:
 
-```
+```inf
 [Strings]
 ;; Define the strings used in MyINF.inf
 ...
@@ -526,7 +514,7 @@ KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
 
 A value of **NULL** for KSNODETYPE\_ANY means that this APO is compatible with any type of KS node type. To indicate, for example, that your APO is only compatible with a KS node type of KSNODETYPE\_SPEAKER, the INF file would show the KS node type and APO association as follows:
 
-```
+```inf
 ;; Key value pairs
 ...
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
@@ -577,7 +565,5 @@ This section describes the differences between Windows Mobile and Windows Deskto
 [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Implementing%20Audio%20Processing%20Objects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

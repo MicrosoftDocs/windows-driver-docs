@@ -3,17 +3,15 @@ title: Bug Check 0xF5 FLTMGR_FILE_SYSTEM
 description: The FLTMGR_FILE_SYSTEM bug check has a value of 0x000000F5. This indicates that an unrecoverable failure occurred in the Filter Manager.
 ms.assetid: 9b008c76-65c8-4de4-b7a0-96d8732c7b7e
 keywords: ["Bug Check 0xF5 FLTMGR_FILE_SYSTEM", "FLTMGR_FILE_SYSTEM"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - FLTMGR_FILE_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF5: FLTMGR\_FILE\_SYSTEM
@@ -21,7 +19,7 @@ api_type:
 
 The FLTMGR\_FILE\_SYSTEM bug check has a value of 0x000000F5. This indicates that an unrecoverable failure occurred in the Filter Manager.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FLTMGR\_FILE\_SYSTEM Parameters
 

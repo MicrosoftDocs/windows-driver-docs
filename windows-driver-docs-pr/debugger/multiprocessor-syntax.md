@@ -3,11 +3,9 @@ title: Multiprocessor Syntax
 description: This topic covers Multiprocessor Syntax
 ms.assetid: 71adc522-f078-457c-8bc9-9e971e914a41
 keywords: multiprocessor computer, multiprocessor, command syntax, dual-processor computer, syntax rules for commands, processor identifier
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multiprocessor Syntax
@@ -28,13 +26,13 @@ You can use the [**.echocpunum (Show CPU Number)**](-echocpunum--show-cpu-number
 
 In the following example, **0:** in front of the **kd&gt;** prompt indicates that you are debugging the first processor in the computer.
 
-```
+```dbgcmd
 0: kd>
 ```
 
 Use the [**~s (Change Current Processor)**](-s--change-current-processor-.md) command to switch between processors, as the following example shows.
 
-```
+```dbgcmd
 0: kd> ~1s
 1: kd>
 ```
@@ -53,7 +51,7 @@ You can add a processor number before several commands. This number is not prece
 
 Processor IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a processor ID. To indicate that the expression should be interpreted as a processor, use the following syntax.
 
-```
+```dbgcmd
 ||[Expression]
 ```
 
@@ -61,7 +59,7 @@ In this syntax, the square brackets are required, and *Expression* stands for an
 
 In the following example, the processor changes depending on the value of a user-defined pseudo-register.
 
-```
+```dbgcmd
 ||[@$t0]
 ```
 
@@ -69,19 +67,19 @@ In the following example, the processor changes depending on the value of a user
 
 The following example uses the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display a stack trace from processor two.
 
-```
+```dbgcmd
 1: kd> 2k 
 ```
 
 The following example uses the [**r (Registers)**](r--registers-.md) command to display the **eax** register of processor three.
 
-```
+```dbgcmd
 1: kd> 3r eax 
 ```
 
 However, the following command gives a syntax error, because you cannot change the state of a processor other than the current processor.
 
-```
+```dbgcmd
 1: kd> 3r eax=808080 
 ```
 
@@ -91,7 +89,7 @@ During kernel debugging, the [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-b
 
 For example, if the current processor is three, you can enter the following command to put a breakpoint at **SomeAddress**.
 
-```
+```dbgcmd
 1: kd> bp SomeAddress 
 ```
 
@@ -107,7 +105,6 @@ You can use the [**!cpuinfo**](-cpuinfo.md) and [**!cpuid**](-cpuid.md) extensio
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Multiprocessor%20Syntax%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

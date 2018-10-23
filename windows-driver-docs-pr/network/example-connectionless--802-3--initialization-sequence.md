@@ -2,17 +2,14 @@
 title: Example Connectionless (802.3) Initialization Sequence
 description: Example Connectionless (802.3) Initialization Sequence
 ms.assetid: 9625f717-81c3-460b-83e8-c7a86aa85f36
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example Connectionless (802.3) Initialization Sequence
 
 
-## <a href="" id="ddk-example-connectionless-802-3-initialization-sequence-ng"></a>
+
 
 
 This section describes the general order of events that a device can expect upon startup as a Remote NDIS connectionless device. Because the basic operation of Remote NDIS is the same, regardless of the underlying bus, the require bus enumeration and start up process has been left out of the example.

@@ -9,11 +9,8 @@ keywords:
 - invalid GDL configurations WDK
 - configurations WDK GDL , examples
 - InvalidCombination directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Invalid GDL Configurations
@@ -23,7 +20,7 @@ Not all possible configurations are valid or permitted. For example, a printing 
 
 The \*InvalidCombination directive is used for this purpose. The value of \*InvalidCombination is a LIST that names two or more parameter settings that cannot be used together. The syntax that is used to specify a parameter setting is in EBNF notation, as the following code example shows.
 
-```
+```cpp
 InvalidCombination_Directive :== "*InvalidCombination" S ":"  S ParamSettingsList  S LB
 ParamSettingsList :== "LIST" S "("  S ParamSetting S ","  S ParamSetting ( S "," S ParamSetting)?  S ")"
 ParamSetting :== ParameterName "." Value
@@ -37,14 +34,14 @@ The \*InvalidCombination directive must appear at the root context of the GDL fi
 
 For example if you wanted to prevent rain on weekends, you could specify the following code.
 
-```
+```cpp
 *InvalidCombination: LIST(Weather.Rain, Today.Saturday)
 *InvalidCombination: LIST(Weather.Rain, Today.Sunday)
 ```
 
 If you wanted to prevent rain on weekends only if you were healthy, you could specify the following code.
 
-```
+```cpp
 *InvalidCombination: LIST(Weather.Rain, Today.Saturday, Health.Well)
 *InvalidCombination: LIST(Weather.Rain, Today.Sunday, Health.Well)
 ```
@@ -66,7 +63,5 @@ The \*InvalidCombination directive is a specific type of constraint. The GDL par
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Using%20Invalid%20GDL%20Configurations%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

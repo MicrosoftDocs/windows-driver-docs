@@ -7,17 +7,14 @@ keywords:
 - network drivers WDK , intermediate drivers
 - NDIS WDK , intermediate drivers
 - NDIS intermediate drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Intermediate Drivers
 
 
-## <a href="" id="ddk-ndis-intermediate-drivers-ng"></a>
+
 
 
 NDIS intermediate drivers interface between upper-level protocol drivers and miniport drivers. Some applications that might require an intermediate driver include:

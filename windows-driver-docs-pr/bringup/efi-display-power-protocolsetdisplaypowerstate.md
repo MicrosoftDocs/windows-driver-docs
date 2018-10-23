@@ -3,11 +3,8 @@ title: EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState
 author: windows-driver-content
 description: EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState
 ms.assetid: ee638d05-4d0e-45b0-a733-73923a7c045a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState
@@ -18,7 +15,7 @@ Modifies the power state of the display and backlight.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_DISPLAY_POWER_SETDISPLAYPOWERSTATE) (
     IN EFI_DISPLAY_POWER_PROTOCOL *This,
     IN EFI_DISPLAY_POWER_STATE PowerState 
@@ -83,6 +80,5 @@ This function must allow redundant calls without returning an error code. Multip
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

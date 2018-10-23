@@ -3,17 +3,14 @@ title: Image Processing Code Example
 author: windows-driver-content
 description: Image Processing Code Example
 ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Image Processing Code Example
 
 
-## <a href="" id="ddk-image-processing-examples-si"></a>
+
 
 
 The following code example shows how to implement a simple image processing filter. This image processing filter supports brightness and contrast as well as the optional deskew and rotation properties.
@@ -22,7 +19,7 @@ The following code example shows how to implement a simple image processing filt
 
  
 
-```
+```cpp
 ///
 ///  Constructor
 ///
@@ -168,7 +165,7 @@ CImageFilter::FilterPreviewImage(
         // deskewed) image into pAppStream.
         //
         // Note: A "real" implementation of DoFiltering should send
-        // WIA_TRANSFER_MSG_STATUS messages to the application&#39;s
+        // WIA_TRANSFER_MSG_STATUS messages to the application's
         // callback interface, m_pAppWiaTransferCallback.
         // DoFiltering should preferably also be able to
         // work on bands of data in the case where there is no
@@ -198,13 +195,13 @@ CImageFilter::FilterPreviewImage(
 //
 // Our simple image processing filter implementation always
 // caches all data internally, and it does not write data back
-// to the application&#39;s stream until it receives
+// to the application's stream until it receives
 // WIA_TRANSFER_MSG_END_OF_STREAM. A "real" image-processing
 // filter should be able to work on bands of data -- at least
 // if there is no rotation or deskew set into the item.
 //
 // In order to find out how many bytes have been written
-// into the application&#39;s stream, we store an interface
+// into the application's stream, we store an interface
 // pointer to the current filtering stream, m_pCurrentStream.
 // When we reach the end of the stream, we must notify the
 // filtering stream that it should filter and write all of
@@ -226,7 +223,7 @@ CImageFilter::TransferCallback(
         // Note: The percent reflects the amount of scanning
         // the driver reports, whereas the "BytesWritten" member
         // is the actual number of bytes that we have written
-        // to the application&#39;s stream.
+        // to the application's stream.
         // We do not modify the percent, however we have to
         // modify the ulBytesWrittenToCurrentStream member.
         //
@@ -258,7 +255,7 @@ CImageFilter::TransferCallback(
 
 //
 // GetNextStream creates a filtering stream whose Write method
-// writes to the application&#39;s stream. Because the item
+// writes to the application's stream. Because the item
 // represented by bstrFullItemName might be a child item of
 // the item passed into InitializeFilter, we have to call
 // FindItemByName to retrieve the actual item.
@@ -430,7 +427,7 @@ CMyFilterStream::~CMyFilterStream()
 // The only IStream method of interest here is Write.
 // For this simple ImageProcesing filter, we always write the
 // data into the "caching stream". The filtered image data is
-// not written into the application&#39;s stream until we receive
+// not written into the application's stream until we receive
 // an end-of-stream message.
 //
 STDMETHODIMP
@@ -442,7 +439,7 @@ CMyFilterStream::Write(const void *pv, ULONG cb, ULONG *pcbWritten)
 //
 // Flush is called when our callback routine receives
 // WIA_TRANSFER_MSG_END_OF_STREAM. In this simple implementation,
-// this is when we first write the data to the application&#39;s
+// this is when we first write the data to the application's
 // stream, m_pAppStream.
 //
 HRESULT
@@ -479,7 +476,5 @@ CMyFilterStream::Flush(VOID)
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Image%20Processing%20Code%20Example%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

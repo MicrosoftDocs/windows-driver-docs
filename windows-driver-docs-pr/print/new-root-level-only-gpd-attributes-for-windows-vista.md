@@ -6,11 +6,8 @@ ms.assetid: 09f38459-6062-4d2a-9aee-929aa60193cf
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New Root-Level-Only GPD Attributes for Windows Vista
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 The following list describes the GPD attributes that are new starting with Windows Vista. To maintain backwards compatibility with pre-Windows Vista versions of Windows, you should surround these attributes with the following code.
 
-```
+```cpp
 *Ifdef: WINNT_60 ... *Endif: WINNT_60 blocks
 ```
 
@@ -46,7 +43,7 @@ Before Windows Vista, a print processor would print the order in format 2 \[(3,4
 
 But if your printer works correctly with format 1, you will not need to change anything for Windows Vista and later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the following code example to your GPD file.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 1
 *Endif: WINNT_60
@@ -85,7 +82,7 @@ Note that even if this attribute is set, blank page optimization is performed on
 
 **Usage of PrintProcDuplexOptions**
 
-```
+```cpp
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 2
 *Endif: WINNT_60 
@@ -151,7 +148,7 @@ All values should be enclosed in quotation marks. They will be converted to Unic
 
 The following code example shows a partial GPD file to show the layout.
 
-```
+```cpp
 *Feature: HPSTAPLER
 {
     *Name: "Staple"
@@ -176,7 +173,7 @@ The following code example shows a partial GPD file to show the layout.
 
 The **IsXPSDriver** attribute uses the following GPD syntax.
 
-```
+```cpp
 *IsXPSDriver?: TRUE | FALSE
 ```
 
@@ -184,7 +181,7 @@ You can use the Windows Vista Unidrv configuration module (Unidrvui.dll) for bot
 
 For example, if you have an XPS driver, use the following code.
 
-```
+```cpp
 *IsXPSDriver?: TRUE
 ```
 
@@ -194,7 +191,7 @@ To use the Unidrv configuration module for Win32 GDI drivers, you do not need to
 
 The **UseImageForHatchBrush?** attribute uses the following GPD syntax.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *UseImageForHatchBrush?: TRUE
 *Endif: WINNT_60 
@@ -208,7 +205,7 @@ In Windows Vista, if the GPD specifies the **UseImageForHatchBrush?** attribute,
 
 The **ReverseBandOrder?** attribute uses the following GPD syntax.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *ReverseBandOrder?: TRUE
 *Endif: WINNT_60 
@@ -234,7 +231,7 @@ When both **ReverseBandOrder?** and **ReverseBandOrderForEvenPages?** are set, t
 
 The **BidiQueryFile** attribute uses the following GPD syntax.
 
-```
+```cpp
 *BidiQueryFile: <GPD or GDL file name>
 ```
 
@@ -242,7 +239,7 @@ Use **BidiQueryFile** to specify the GPD or GDL file name that contains the prin
 
 The following code example shows an example of this attribute in a partial GPD file.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *BidiQueryFile: "ACnfgUni.GDL"
 *Endif: WINNT_60
@@ -253,7 +250,5 @@ The following code example shows an example of this attribute in a partial GPD f
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20New%20Root-Level-Only%20GPD%20Attributes%20for%20Windows%20Vista%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

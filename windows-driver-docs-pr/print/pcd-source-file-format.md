@@ -10,17 +10,14 @@ keywords:
 - PCD files WDK MSPlot
 - .pcd files
 - keywords WDK MSPlot
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCD Source File Format
 
 
-## <a href="" id="ddk-pcd-source-file-format-gg"></a>
+
 
 
 All plotter device characteristics are specified using the following format:
@@ -29,7 +26,7 @@ All plotter device characteristics are specified using the following format:
 
 where *keyword* is one of the PCD source file keywords and *value* is a quoted string or numeric value. For example, the following statement specifies that the plotter supports color:
 
-```
+```cpp
 ColorCap {1}
 ```
 
@@ -267,7 +264,7 @@ Each pen description must have the following format:
 
 where *Pen Number* identifies the pen's slot number and *Color* is a PC\_IDX\_-prefixed color identifier. Following are example pen descriptions:
 
-```
+```cpp
 PlotPenData {1, PC_IDX_WHITE}
 PlotPenData {2, PC_IDX_BLACK}
 PlotPenData {3, PC_IDX_RED}
@@ -281,7 +278,7 @@ Each form description must have the following format:
 
 where *Form Description* is a string describing the form, *Width* and *Length* specify the form size in 1/1000 mm units, and the margins are also specified in 1/1000 mm units. Following are three examples:
 
-```
+```cpp
 FormInfo {"Roll Paper 24 in",    609600,      0, 0, 0, 0, 0}
 FormInfo {"ANSI A 8.5 x 11 in",  215900, 279400, 0, 0, 0, 0}
 FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}
@@ -292,7 +289,5 @@ FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20PCD%20Source%20File%20Format%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

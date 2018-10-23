@@ -2,11 +2,8 @@
 title: MB Packet Context Management
 description: MB Packet Context Management
 ms.assetid: 52d72def-8aee-4e04-ad42-1a4537cda899
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Packet Context Management

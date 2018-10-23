@@ -4,17 +4,14 @@ description: Implementing an NDIS 6.20 Driver
 ms.assetid: 6c6f83ff-2a6f-4e5d-acc0-70835429312d
 keywords:
 - NDIS 6.20 WDK , implementing a driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing an NDIS 6.20 Driver
 
 
-## <a href="" id="ddk-implementing-an-ndis-6-20-driver-ng"></a>
+
 
 
 An NDIS 6.20 driver must report the correct NDIS version when it registers with NDIS.

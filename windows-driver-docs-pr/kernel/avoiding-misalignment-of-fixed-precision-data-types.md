@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Avoiding Misalignment of Fixed-Precision Data Types
 ms.assetid: 4e214bd8-b622-447a-b484-bd1d5d239de7
 keywords: ["file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit", "misaligned fixed-precision data types"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Avoiding Misalignment of Fixed-Precision Data Types
 
 
-## <a href="" id="ddk-avoiding-misalignment-of-fixed-precision-data-types-kg"></a>
+
 
 
 Unfortunately, it is possible for a data type to have the same size, but different alignment requirements, for 32-bit and 64-bit programming. Thus not all IOCTL/FSCTL buffer misalignment problems can be avoided by changing pointer-precision data types to fixed-precision types. This means that kernel-mode driver IOCTLs and FSCTLs that pass buffers containing certain fixed-precision data types (or pointers to them) may also need to be thunked.
@@ -37,7 +34,7 @@ Assuming that the 32-bit application has passed a valid value for **Irp-&gt;User
 
  
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS2 {
     LARGE_INTEGER DeviceTime;
 } IOCTL_PARAMETERS2, *PIOCTL_PARAMETERS2;
@@ -68,7 +65,7 @@ The following sections tell how to fix the problem described above. Note that al
 
 The safest way to avoid misalignment problems is to make a copy of the buffer before accessing its contents, as in the following example.
 
-```
+```cpp
 case IOCTL_SETTIME: {
     PIOCTL_PARAMETERS2 p = (PIOCTL_PARAMETERS2)Irp->UserBuffer;
 #if _WIN64
@@ -85,7 +82,7 @@ case IOCTL_SETTIME: {
 
 This solution can be optimized for better performance by first checking whether the buffer contents are correctly aligned. If so, the buffer can be used as is. Otherwise, the driver makes a copy of the buffer.
 
-```
+```cpp
 case IOCTL_SETTIME: {
     PIOCTL_PARAMETERS2 p = (PIOCTL_PARAMETERS2)Irp->UserBuffer;
 #if _WIN64
@@ -109,7 +106,7 @@ case IOCTL_SETTIME: {
 
 The **UNALIGNED** macro tells the C compiler to generate code that can access the **DeviceTime** field without taking an alignment fault. Note that using this macro on Itanium-based platforms is likely to make your driver significantly larger and slower.
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS2 {
     LARGE_INTEGER DeviceTime;
 } IOCTL_PARAMETERS2;
@@ -120,7 +117,7 @@ typedef IOCTL_PARAMETERS2 UNALIGNED *PIOCTL_PARAMETERS2;
 
 The misalignment problem described earlier can also occur in buffered I/O requests. In the following example, the IOCTL buffer contains an embedded pointer to a LARGE\_INTEGER structure.
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS3 {
     LARGE_INTEGER *pDeviceCount;
 } IOCTL_PARAMETERS3, *PIOCTL_PARAMETERS3;0
@@ -136,7 +133,7 @@ As in the earlier example, assuming that the 32-bit application has passed a val
 
 This problem can be fixed either by making a properly aligned copy of the LARGE\_INTEGER structure, as in Solution 1, or by using the UNALIGNED macro as follows:
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS3 {
     LARGE_INTEGER UNALIGNED *pDeviceCount;
 } IOCTL_PARAMETERS3, *PIOCTL_PARAMETERS3;
@@ -147,7 +144,5 @@ typedef struct _IOCTL_PARAMETERS3 {
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Avoiding%20Misalignment%20of%20Fixed-Precision%20Data%20Types%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

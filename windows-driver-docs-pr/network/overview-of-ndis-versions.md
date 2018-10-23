@@ -7,18 +7,11 @@ keywords:
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of NDIS versions
-
-
-## <a href="" id="ddk-ndis-versions-ng"></a>
-
 
 If you are writing an NDIS driver for more than one version of Microsoft Windows, be sure the features that you are using are supported on each Windows version. New features have been added to NDIS with each release. Other features became obsolete and were removed from later NDIS versions.
 
@@ -72,6 +65,7 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |   |   | NDIS 6.70 coincided with a preview release of the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md).<p>For more information about NDIS 6.70 features, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).</p> |
 | Windows 10, version 1709 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.80 | X | X | X |
 |   |   | For more information about NDIS 6.80 features, see [Introduction to NDIS 6.80](introduction-to-ndis-6-80.md). | 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
+| Windows 10, version 1803 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.81 | X | X | X |
+|   |   | For more information about NDIS 6.81 features, see [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md). |
+| Windows 10, version 1809 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.82 | X | X | X |
+|   |   | For more information about NDIS 6.82 features, see [Introduction to NDIS 6.82](introduction-to-ndis-6-82.md). |

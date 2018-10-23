@@ -2,11 +2,8 @@
 title: Writing VMQ Drivers
 description: This section provides information about writing NDIS virtual machine queue (VMQ) drivers. You should already understand the Virtual Machine Queue Architecture before you read this section.
 ms.assetid: 877d3d95-2ec5-4d2e-9bcc-cd2adfc2a667
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing VMQ Drivers
@@ -18,7 +15,7 @@ This section provides information about writing NDIS virtual machine queue (VMQ)
 
  
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 A miniport driver that supports VMQ manages NICs that provide the VMQ hardware support. Such a NIC provides hardware services to filter incoming network data, and assign it to VM receive queues.

@@ -3,17 +3,15 @@ title: .force_radix_output (Use Radix for Integers)
 description: The .force_radix_output command specifies whether integers are displayed in decimal format or in the default radix.
 ms.assetid: 9ce79919-69fd-426f-8de1-34d0721c35a5
 keywords: ["Use Radix for Integers (.force_radix_output) command", ".force_radix_output (Use Radix for Integers) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .force_radix_output (Use Radix for Integers)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .force\_radix\_output (Use Radix for Integers)
@@ -21,7 +19,7 @@ api_type:
 
 The **.force\_radix\_output** command specifies whether integers are displayed in decimal format or in the default radix.
 
-```
+```dbgcmd
 .force_radix_output 0 
 .force_radix_output 1 
 ```
@@ -75,7 +73,6 @@ To change the default radix, use the [**n (Set Number Base)**](n--set-number-bas
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.force_radix_output%20%28Use%20Radix%20for%20Integers%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

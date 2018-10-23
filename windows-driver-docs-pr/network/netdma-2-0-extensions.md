@@ -10,11 +10,8 @@ keywords:
 - NetDMA WDK networking , extensions
 - NetDMA 2.0 WDK , extensions
 - NetDMA 2.0 WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NetDMA 2.0 Extensions
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-netdma-2-0-extensions-nr"></a>
+
 
 
 The Windows Vista operating system supports NetDMA version 1.0. Windows Server 2008 and later versions of Windows includes NetDMA version 2.0. NetDMA 2.0 extends the NetDMA 1.0 interface to enable support for NetDMA 1.1 and NetDMA 2.0 drivers.

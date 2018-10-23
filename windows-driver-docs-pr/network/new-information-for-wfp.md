@@ -2,11 +2,8 @@
 title: New Information for WFP
 description: New Information for WFP
 ms.assetid: f3629e65-6a73-40d3-96c1-416f9bb82eb7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New Information for WFP

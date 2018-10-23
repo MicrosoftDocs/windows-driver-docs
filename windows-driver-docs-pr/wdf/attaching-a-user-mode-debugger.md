@@ -14,11 +14,8 @@ keywords:
 - user-mode drivers WDK UMDF , debugging
 - debugging drivers WDK UMDF , attaching a user-mode debugger
 - driver debugging WDK UMDF , attaching a user-mode debugger
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching a User-Mode Debugger
@@ -28,7 +25,7 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If a single device is attached, run the following command:
 
-    ```
+    ```cpp
     windbg -pn WUDFHost.exe
     ```
 
@@ -36,7 +33,7 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If multiple devices are attached, determine the process identifier (PID) of a particular host and run the following command:
 
-    ```
+    ```cpp
     windbg -p PID
     ```
 

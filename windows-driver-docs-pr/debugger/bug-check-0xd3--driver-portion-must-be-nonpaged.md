@@ -3,17 +3,15 @@ title: Bug Check 0xD3 DRIVER_PORTION_MUST_BE_NONPAGED
 description: The DRIVER_PORTION_MUST_BE_NONPAGED bug check has a value of 0x000000D3. This indicates that the system attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 8b33dd20-9faa-4c02-96b7-89f55e69aeec
 keywords: ["Bug Check 0xD3 DRIVER_PORTION_MUST_BE_NONPAGED", "DRIVER_PORTION_MUST_BE_NONPAGED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_PORTION_MUST_BE_NONPAGED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD3: DRIVER\_PORTION\_MUST\_BE\_NONPAGED
@@ -21,7 +19,7 @@ api_type:
 
 The DRIVER\_PORTION\_MUST\_BE\_NONPAGED bug check has a value of 0x000000D3. This indicates that the system attempted to access pageable memory at a process IRQL that was too high.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_PORTION\_MUST\_BE\_NONPAGED Parameters
 

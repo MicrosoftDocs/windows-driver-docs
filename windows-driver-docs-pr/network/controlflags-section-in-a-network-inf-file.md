@@ -6,17 +6,14 @@ keywords:
 - INF files WDK network , ControlFlags section
 - network INF files WDK , ControlFlags section
 - ControlFlags section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ControlFlags Section in a Network INF File
 
 
-## <a href="" id="ddk-controlflags-section-ng"></a>
+
 
 
 A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](https://msdn.microsoft.com/library/windows/hardware/ff546342).

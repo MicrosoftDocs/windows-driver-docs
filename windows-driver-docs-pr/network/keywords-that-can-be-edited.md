@@ -5,24 +5,21 @@ ms.assetid: 88c3a285-941a-4c91-9e61-25c445d07344
 keywords:
 - installation keywords WDK networking , editing
 - editing installation keywords
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Keywords That Can Be Edited
 
 
-## <a href="" id="ddk-keywords-that-can-be-edited-ng"></a>
+
 
 
 NDIS 6.0 and later versions of NDIS provide standardized keywords that can be edited for miniport drivers of network devices. These standardized keywords are associated with numeric or text values that you can edit in the user interface.
 
 The following example shows an INF file definition for a keyword that can be edited.
 
-```
+```INF
 HKR, Ndi\params\<SubkeyName>,ParamDesc, 0, "<ParamDesc>"
 HKR, Ndi\params\<SubkeyName>,Type, 0, "int"
 HKR, Ndi\params\<SubkeyName>,Default, 0, "<IHV defined>"

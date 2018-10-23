@@ -7,11 +7,8 @@ keywords:
 - filter manager WDK file system minifilter , porting legacy drivers
 - porting legacy filter drivers
 - legacy filter drivers WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guidelines for Porting Legacy Filter Drivers
@@ -156,6 +153,5 @@ The following table lists common operations in a legacy filter driver and how th
  
 
 
---------------------
 
 

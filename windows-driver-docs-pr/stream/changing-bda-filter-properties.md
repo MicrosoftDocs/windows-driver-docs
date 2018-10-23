@@ -7,17 +7,14 @@ keywords:
 - property sets WDK BDA , filter property changes
 - filter property changes WDK BDA
 - method sets WDK BDA , filter property changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changing BDA Filter Properties
 
 
-## <a href="" id="ddk-changing-bda-filter-properties-ksg"></a>
+
 
 
 Because multiple instances of an application that views media broadcasts can run simultaneously on a system, you should write a BDA minidriver to accommodate multiple instances of a filter. Each filter instance can contain different information. For example, one instance of a tuner filter can contain a request to tune to channel 5, while another instance can contain a request to tune to channel 8. As control transitions from one instance to another, the BDA minidriver must instruct the underlying tuning device to change the way resources are configured. A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaChangeSync](https://msdn.microsoft.com/library/windows/hardware/ff563403) method set to coordinate a list of property requests on one the minidriver's filter instances.
@@ -38,7 +35,7 @@ Typically, a BDA minidriver's filter object intercepts and supplies methods for 
 
 The following code snippet shows how to intercept method requests of the KSMETHODSETID\_BdaChangeSync method set using an internal method:
 
-```
+```cpp
 //
 //  BDA Change Sync Method Set
 //
@@ -68,7 +65,7 @@ DEFINE_KSMETHOD_TABLE(BdaChangeSyncMethods)
 
 The following code snippet shows how the internal start-changes method in a BDA minidriver resets pending resource changes after the minidriver calls the **BdaStartChanges** support function to initiate the setting of new BDA topology changes:
 
-```
+```cpp
 //
 // StartChanges ()
 //
@@ -126,7 +123,5 @@ errExit:
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Changing%20BDA%20Filter%20Properties%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

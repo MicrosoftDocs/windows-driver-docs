@@ -9,11 +9,8 @@ keywords:
 - miniport drivers WDK storage , SCSI miniport drivers
 - SCSI miniport drivers WDK storage , about SCSI miniport drivers
 - HBA WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Drivers
@@ -45,6 +42,5 @@ A SCSI miniport driver can be a Plug and Play driver, or it can run as a legacy 
  
 
 
---------------------
 
 

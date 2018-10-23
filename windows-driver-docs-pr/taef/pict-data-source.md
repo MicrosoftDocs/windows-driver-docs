@@ -2,11 +2,8 @@
 title: PICT Data Source
 description: PICT Data Source
 ms.assetid: 75D3E086-C277-410d-B474-742A47ABB6AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PICT Data Source
@@ -41,7 +38,7 @@ One you are done authoring your model file (and seed file) for PICT and have ver
 
 Native code:
 
-```
+```cpp
 1     class PictExample
 2     {
 3         TEST_CLASS(PictExample)
@@ -64,7 +61,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpPictExample
 3     {
@@ -118,7 +115,7 @@ te.exe <test dll> /Pict:Order=3 /Pict:SeedingFile=test.seed
 
 To set metadata in the DataSource property, append the model file name with a question mark character (?) then a set of ampersand-separated metadata name = metadata value pairs. When using this method, the "Pict:" prefix for metadata names is optional. Here is an example:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:model.txt?Order=3&CaseSensitive=true&Random=true")
 ```
 
@@ -132,7 +129,7 @@ You can access the data values during a given invocation from your test method a
 
 Native code:
 
-```
+```cpp
 1     void PictExample::SimpleTest()
 2     {
 3         String valueA;
@@ -163,7 +160,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1      [TestClass]
 2      public class CSharpPictExample
 3      {
@@ -285,7 +282,7 @@ If persisting the PICT results, and using cached data is something you want to d
 set te_cmd = /persistPictResults
 ```
 
-The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
+The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
 
 With in-built PICT support in TAEF, you can now make the most of both, features in PICT as well as features in TAEF in your test automation.
 
@@ -296,7 +293,7 @@ You can add PICT models and seeding files as resources in your test module.
 
 In native code, this is done by specifying the resource name instead of the file name in the DataSource metadata. Here is an example:
 
-```
+```cpp
 BEGIN_TEST_METHOD(ResourceNameDataSource)
     TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyModelResourceName?SeedingFile=MySeedingResourceName")
 END_TEST_METHOD()
@@ -304,7 +301,7 @@ END_TEST_METHOD()
 
 "MyModelResourceName" and "MySeedingResourceName" are the resource names defined in a .rc file. The resource type needs to be DATAFILE, unlike in [table data sources](table-data-source.md) where the resource type needs to be DATASOURCE\_XML.
 
-```
+```cpp
 MyModelResourceName DATAFILE "model.txt"
 MySeedingResourceName DATAFILE "seed.txt"
 ```
@@ -315,7 +312,6 @@ The DataSource metadata value will remain the same as it did when the model was 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20PICT%20Data%20Source%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

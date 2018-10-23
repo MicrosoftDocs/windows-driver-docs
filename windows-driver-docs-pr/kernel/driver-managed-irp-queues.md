@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Driver-Managed IRP Queues
 ms.assetid: b701e4aa-96ba-44af-96a5-b6cecf075bac
 keywords: ["device queues WDK IRPs , objects", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "internal IRP queues WDK kernel", "cancel-safe IRP queues WDK kernel", "driver-managed IRP queues WDK kernel", "supplemental IRP queues WDK kernel", "interlocked IRP queues WDK kernel", "device queues WDK IRPs", "device queues WDK IRPs , about device queues"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver-Managed IRP Queues
 
 
-## <a href="" id="ddk-driver-managed-irp-queues-kg"></a>
+
 
 
 Except for file system drivers, the I/O manager associates a device queue object (for queuing IRPs) with each device object that a driver creates.
@@ -50,7 +47,5 @@ The following sections explain how to use device queues, interlocked queues, and
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Driver-Managed%20IRP%20Queues%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

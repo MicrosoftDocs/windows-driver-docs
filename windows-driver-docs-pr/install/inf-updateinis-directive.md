@@ -10,11 +10,8 @@ api_name:
 - INF UpdateInis Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF UpdateInis Directive
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -41,7 +38,7 @@ This directive is almost never specified in INF files for installation on Window
 
 Each named section referenced by an **UpdateInis** directive has the following form:
 
-```
+```cpp
 [update-ini-section]
  
 ini-file,ini-section[,old-ini-entry][,new-ini-entry][,flags]
@@ -62,7 +59,7 @@ Specifies the name of the section within the given INI file. If the next two val
 <a href="" id="old-ini-entry"></a>*old-ini-entry*  
 This optional value specifies the name of an entry in the given *ini-section*, usually expressed in the following form:
 
-```
+```cpp
 "key=value"
 ```
 

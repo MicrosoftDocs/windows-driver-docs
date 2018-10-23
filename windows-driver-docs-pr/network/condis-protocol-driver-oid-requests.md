@@ -5,17 +5,14 @@ ms.assetid: 1338d199-2cd8-430a-a0a5-95aaea04c384
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS Protocol Driver OID Requests
 
 
-## <a href="" id="ddk-condis-protocol-driver-oid-requests-ng"></a>
+
 
 
 CoNDIS protocol drivers, either clients or call managers, can query or set the operating parameters of miniport drivers and other protocol drivers. CoNDIS protocol drivers can also query or set information in miniport call managers (MCMs). For more information about OID requests and MCMs, see [CoNDIS MCM OID Requests](condis-mcm-oid-requests.md).

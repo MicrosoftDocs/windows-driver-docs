@@ -2,11 +2,8 @@
 ms.assetid: DDAF6D33-46D8-4A04-A3DC-C9FE26ABD003
 title: How to select and configure the Device Fundamentals tests
 description: The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to select and configure the Device Fundamentals tests
@@ -16,24 +13,24 @@ The WDK for Windows 8 provides a driver testing framework that includes a set o
 ## <span id="Getting_the_most_from_the_Device_Fundamentals_tests"></span><span id="getting_the_most_from_the_device_fundamentals_tests"></span><span id="GETTING_THE_MOST_FROM_THE_DEVICE_FUNDAMENTALS_TESTS"></span>Getting the most from the Device Fundamentals tests
 
 
-To get the most benefit from the Device Fundamentals tests, your device must be supported by the default I/O plug-ins. To see whether your device type is supported and to determine whether there are specific requirements for testing, refer to [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398). The Device Fundamentals test also include a utility you can use to test your device to see whether it is supported. If your device is not supported, you can create a WDTF Simple I/O plug-in. in Visual Studio. For more information, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh706277).
+To get the most benefit from the Device Fundamentals tests, your device must be supported by the default I/O plug-ins. To see whether your device type is supported and to determine whether there are specific requirements for testing, refer to [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/Library/Windows/Hardware/Hh781398). The Device Fundamentals test also include a utility you can use to test your device to see whether it is supported. If your device is not supported, you can create a WDTF Simple I/O plug-in. in Visual Studio. For more information, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/Library/Windows/Hardware/Hh706277).
 
 ## <span id="About_the_Device_Fundamentals_Tests"></span><span id="about_the_device_fundamentals_tests"></span><span id="ABOUT_THE_DEVICE_FUNDAMENTALS_TESTS"></span>About the Device Fundamentals Tests
 
 
 The WDK provides the Device Fundamentals tests in two configurations, Basic and Certification. In both configurations, you can edit the test parameters to vary the length of the test, the number of test cycles to perform, and other test parameters, depending upon how you want to test the targeted devices or drivers. The Basic configuration is intended for general driver and device testing and debugging. Use the Basic configuration early on and throughout the development cycle. The tests in the Basic configuration have the same settings that are used in the Windows Certification testing, with the exception of having a shorter run time. In the Certification configuration, the tests have the same settings that are used in the Windows Certification testing. Use the Certification configuration to verify readiness for testing your device or driver for the [Windows Certification Program for Hardware](http://go.microsoft.com/fwlink/p/?linkid=8705).
 
-The [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011) include tests in the following categories.
+The [Device Fundamentals Tests](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673011) include tests in the following categories.
 
--   [CHAOS Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673008)
--   [Coverage Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673009)
--   [CPUStress Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673010)
--   [Driver Install Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673012)
--   [I/O Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673013)
--   [Penetration Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673014)
--   [PNP Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673015)
--   [Reboot Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673016)
--   [Sleep Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673017)
+-   [CHAOS Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673008)
+-   [Coverage Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673009)
+-   [CPUStress Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673010)
+-   [Driver Install Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673012)
+-   [I/O Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673013)
+-   [Penetration Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673014)
+-   [PNP Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673015)
+-   [Reboot Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673016)
+-   [Sleep Tests (Device Fundamentals)](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673017)
 -   [Utility](#utility_tests)
 -   [Driver Verifier](#utility_tests)
 
@@ -41,7 +38,7 @@ The [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows
 
 You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Click the arrow (») to display the run-time parameters.
 
-One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) [SDEL](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539571) query that identifies the target devices. You can specify a particular device for testing, for example:
+One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547) [SDEL](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539571) query that identifies the target devices. You can specify a particular device for testing, for example:
 
 **DeviceID=’USB\\ROOT\_HUB\\4&1CD5D022&0’** selects only the device for testing with the specified **DeviceID**.
 
@@ -64,7 +61,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="DQ"></span><span id="dq"></span><em>DQ</em></p></td>
-<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a [<strong>WDTF</strong>](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547)[SDEL](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539571) query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
+<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a [<strong>WDTF</strong>](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547)[SDEL](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539571) query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
 <p>Common examples:</p>
 <p></p>
 <dl>
@@ -107,7 +104,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="DoConcurrentIO"></span><span id="doconcurrentio"></span><span id="DOCONCURRENTIO"></span><em>DoConcurrentIO</em></p></td>
-<td align="left"><p>True or False. Uses [WDTF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
+<td align="left"><p>True or False. Uses [WDTF](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547) concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FillZeroPageWithNull"></span><span id="fillzeropagewithnull"></span><span id="FILLZEROPAGEWITHNULL"></span><em>FillZeroPageWithNull</em></p></td>
@@ -262,13 +259,13 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Disable_Driver_Verifier"></span><span id="disable_driver_verifier"></span><span id="DISABLE_DRIVER_VERIFIER"></span>Disable Driver Verifier</p></td>
-<td align="left"><p>Disables [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448) on the test computer.</p>
+<td align="left"><p>Disables [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) on the test computer.</p>
 <p><strong>Parameters:</strong> None</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
-<td align="left"><p>You can use this test to enable [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448) for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See [Driver Verifier Options](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545470).</p></td>
+<td align="left"><p>You can use this test to enable [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) for all drivers of a device (or devices) on the test computer.</p>
+<p><strong>Parameters:</strong> - See [Driver Verifier Options](https://msdn.microsoft.com/library/windows/hardware/ff545470).</p></td>
 </tr>
 </tbody>
 </table>
@@ -279,9 +276,9 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 
 
 * [How to How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
-* [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011)
-* [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398)
-* [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh706277)
+* [Device Fundamentals Tests](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673011)
+* [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/Library/Windows/Hardware/Hh781398)
+* [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/Library/Windows/Hardware/Hh706277)
  
 
  

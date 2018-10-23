@@ -3,17 +3,15 @@ title: Bug Check 0x93 INVALID_KERNEL_HANDLE
 description: The INVALID_KERNEL_HANDLE bug check has a value of 0x00000093. This bug check indicates that an invalid or protected handle was passed to NtClose.
 ms.assetid: c8564da7-cdbf-40f5-94f4-b1fac23b8b42
 keywords: ["Bug Check 0x93 INVALID_KERNEL_HANDLE", "INVALID_KERNEL_HANDLE"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INVALID_KERNEL_HANDLE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x93: INVALID\_KERNEL\_HANDLE
@@ -21,7 +19,7 @@ api_type:
 
 The INVALID\_KERNEL\_HANDLE bug check has a value of 0x00000093. This bug check indicates that an invalid or protected handle was passed to **NtClose**.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_KERNEL\_HANDLE Parameters
 

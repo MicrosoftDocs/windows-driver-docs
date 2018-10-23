@@ -5,11 +5,8 @@ description: The WdfObjectAddCustomType macro associates a framework object with
 ms.assetid: 750CF669-A436-4571-B474-D5447E0AA64F
 keywords:
  - WdfObjectAddCustomType macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfObjectAddCustomType macro
@@ -88,7 +85,7 @@ Examples
 
 This example code shows how to add a custom type to a queue.
 
-```
+```cpp
 NTSTATUS                status;
 WDF_IO_QUEUE_CONFIG     queueConfig;
 WDFQUEUE                queue;  

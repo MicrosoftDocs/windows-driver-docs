@@ -2,11 +2,8 @@
 title: Container IDs Generated from a Bus-Specific Unique ID
 description: Container IDs Generated from a Bus-Specific Unique ID
 ms.assetid: 06bd4f06-51f2-4983-9ddc-bff27eaa367e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs Generated from a Bus-Specific Unique ID

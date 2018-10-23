@@ -8,17 +8,14 @@ keywords:
 - network drivers WDK , IRQLs
 - current IRQLs WDK networking
 - dispatch IRQL tracking WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dispatch IRQL Tracking
 
 
-## <a href="" id="ddk-dispatch-irql-tracking-ng"></a>
+
 
 
 To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.

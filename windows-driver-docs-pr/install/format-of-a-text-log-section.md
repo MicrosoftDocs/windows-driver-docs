@@ -7,11 +7,8 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , sections
 - SetupAPI logging WDK Windows Vista , text log sections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Format of a Text Log Section
@@ -21,7 +18,7 @@ A *text log section* includes a section header that opens the section, a section
 
 The following example of a text log section shows the general format of a typical section, where the fields in italic font style are placeholders for section-specific text, and the remaining text in bold font style is generic text supplied by SetupAPI. The first two log entries comprise the section header and the last two log entries comprise the section footer.
 
-```
+```cpp
 >>>  [section_title - instance_identifer]
 >>> time_stamp Section start
  section body log entry
@@ -35,7 +32,7 @@ The section body entries that are logged depend on the event level that is set f
 
 The following is a typical example of a text log section that the Plug and Play (PnP) manager created to log entries that pertained to the installation of a PCI device. In the section header, the *section_title* field is "Device Install," the *instance_identifier* field is the device instance identifier "PCI\\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\\3&61aaa01&0&38," and the *time_stamp* field is "2005/02/13 22:06:28.109:." In the section footer, the *status_value* field is "0x00000000" and the *time_stamp* field is "2005/02/13 22:06:20.000:." Only the first three section body log entries are included in this example. The event level for this example was set to TXTLOG_DETAILS and all category levels were enabled for this example.
 
-```
+```cpp
 >>>  [Device Install - PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38]
 >>>  2005/02/13 22:06:20.000: Section start
      ndv: Retrieving device info...

@@ -9,11 +9,8 @@ keywords:
 - IDE controller minidrivers WDK storage , calling
 - storage IDE controller minidrivers WDK , calling
 - initializing IDE controller minidrivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing and Calling IDE Minidriver Routines
@@ -73,6 +70,5 @@ This routine determines whether I/O can be done by means of DMA.
  
 
 
---------------------
 
 

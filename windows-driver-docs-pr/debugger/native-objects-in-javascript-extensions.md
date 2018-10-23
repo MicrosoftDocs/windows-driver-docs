@@ -2,11 +2,9 @@
 title: Native Debugger Objects in JavaScript Extensions
 description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Native Debugger Objects in JavaScript Extensions
@@ -28,9 +26,9 @@ Example debugger objects include the following.
 
 For example the host.namespace.Debugger.Utility.Control.ExecuteCommand object can be used to send the u command to the debugger with following two lines of JavaScript code.
 
-```
+```dbgcmd
 var ctl = host.namespace.Debugger.Utility.Control;   
-var output = ctl.ExecuteCommand("u");
+var outputLines = ctl.ExecuteCommand("u");
 ```
 
 This topic describes how to work with common objects and provides reference information on their attributes and behaviors.
@@ -51,7 +49,7 @@ For general information about working with JavaScript, see [JavaScript Debugger 
 
 To explore the objects available in a debugger session, use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command. For example, you can display some of the top level debugger objects with this dx command.
 
-```
+```dbgcmd
 0: kd> dx -r2 Debugger
 Debugger                
     Sessions         : [object Object]
@@ -98,7 +96,7 @@ This section describes how to extend a core concept within the debugger. Extensi
 
 A script can register the fact that it provides an extension through an entry in the array returned from the initializeScript method.
 
-```
+```dbgcmd
 function initializeScript()
 {
     return [new host.namedModelParent(comProcessExtension, "Debugger.Models.Process")];
@@ -165,7 +163,7 @@ Going back to our example, we can define a prototype or ES6 class, *comProcessEx
 
 In this code snippet, we create add a sub-namespace called 'COM' on to the existing process debugger object.
 
-```
+```javascript
 var comProcessExtension =
 {
     //
@@ -194,7 +192,7 @@ There can be multiple processes (whether attached to such in user mode or under 
 
  
 
-```
+```javascript
 class comNamespace
 {
     constructor(process)
@@ -218,7 +216,7 @@ class comNamespace
 
 To separate this out the implementation logic for the COM global interface table more clearly, we'll define one ES6 class, *gipTable* which abstracts away the COM GIP table and another, *globalObjects*, which is what will get returned from the GlobalObjects() getter defined in the Namespace Implementation code snip shown above. All of these details can be hidden inside the closure of initializeScript to avoid publishing any of these internal details out into the debugger namespace.
 
-```
+```javascript
 // gipTable:
 //
 // Internal class which abstracts away the GIP Table.  It iterates objects of the form
@@ -342,7 +340,7 @@ class globalObjects
 
 Lastly, use host.namedModelRegistration to register the new COM functionality.
 
-```
+```javascript
 function initializeScript()
 {
     return [new host.namedModelParent(comProcessExtension, "Debugger.Models.Process"),
@@ -354,7 +352,7 @@ Save the code to GipTableAbstractor.js using an application such as notepad.
 
 Here is the process information available in user mode before loading this extension.
 
-```
+```dbgcmd
 0:000:x86> dx @$curprocess
 @$curprocess                 : DataBinding.exe
     Name             : DataBinding.exe
@@ -365,7 +363,7 @@ Here is the process information available in user mode before loading this exten
 
 Load the JavaScript scripting provider and the extension.
 
-```
+```dbgcmd
 0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\GipTableAbstractor.js
 JavaScript script successfully loaded from 'C:\JSExtensions\GipTableAbstractor.js'
@@ -373,7 +371,7 @@ JavaScript script successfully loaded from 'C:\JSExtensions\GipTableAbstractor.j
 
 Then use the dx command to display information about the process using the predefined @$curprocess.
 
-```
+```dbgcmd
 0:000:x86> dx @$curprocess
 @$curprocess                 : DataBinding.exe
     Name             : DataBinding.exe
@@ -383,7 +381,7 @@ Then use the dx command to display information about the process using the prede
     COM              : [object Object]
 ```
 
-```
+```dbgcmd
 0:000:x86> dx @$curprocess.COM
 @$curprocess.COM                 : [object Object]
     GlobalObjects    : [object Object]
@@ -403,7 +401,7 @@ Then use the dx command to display information about the process using the prede
 
 This table is also programmatically accessible via GIT cookie.
 
-```
+```dbgcmd
 0:000:x86> dx @$curprocess.COM.GlobalObjects[0xa09]
 @$curprocess.COM.GlobalObjects[0xa09]                 : 0x5afcb58 [Type: IUnknown *]
     [+0x00c] __abi_reference_count [Type: __abi_FTMWeakRefData]
@@ -414,7 +412,7 @@ This table is also programmatically accessible via GIT cookie.
 
 In addition to being able to extend objects like process and thread, JavaScript can extend concepts associated with the data model as well. For example, it is possible to add a new LINQ method to every iterable. Consider an example extension, "DuplicateDataModel" which duplicates every entry in an iterable N times. The following code shows how this could be implemented.
 
-```
+```javascript
 function initializeScript()
 {
     var newLinqMethod =
@@ -439,7 +437,7 @@ Save the code to DuplicateDataModel.js using an application such as notepad.
 
 Load the JavaScript scripting provider if necessary and then load the DuplicateDataModel.js extension.
 
-```
+```dbgcmd
 0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\DuplicateDataModel.js
 JavaScript script successfully loaded from 'C:\JSExtensions\DuplicateDataModel.js'
@@ -447,7 +445,7 @@ JavaScript script successfully loaded from 'C:\JSExtensions\DuplicateDataModel.j
 
 Use the dx command to test the new Duplicate function.
 
-```
+```dbgcmd
 0: kd> dx -r1 Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d
 Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d                 : [object Generator]
     [0]              : nt!DbgBreakPointWithStatus (fffff800`9696ca60) 
@@ -532,7 +530,7 @@ The location object which is returned from the targetLocation property of a nati
 
 Any object which is understood as iterable by the data model (it is a native array or it has a visualizer (NatVis or otherwise) which makes it iterable) will have an iterator function (indexed via the ES6 standard Symbol.iterator) placed upon it. This means that you can iterate a native object in JavaScript as follows.
 
-```
+```javascript
 function iterateNative(nativeObject)
 {
     for (var val of nativeObject)
@@ -551,7 +549,7 @@ function iterateNative(nativeObject)
 
 Objects which are understood as indexable in one dimension via ordinals (e.g.: native arrays) will be indexable in JavaScript via the standard property access operator -- object\[index\]. If an object is indexable by name or is indexable in more than one dimension, the getValueAt and setValueAt methods will be projected onto the object so that JavaScript code can utilize the indexer.
 
-```
+```javascript
 function indexNative(nativeArray)
 {
     var first = nativeArray[0];
@@ -562,7 +560,7 @@ function indexNative(nativeArray)
 
 Any native object which has a display string conversion via support of IStringDisplayableConcept or a NatVis DisplayString element will have that string conversion accessible via the standard JavaScript toString method.
 
-```
+```javascript
 function stringifyNative(nativeObject)
 {
     var myString = nativeObject.toString();
@@ -871,7 +869,7 @@ The following data model concepts map to JavaScript.
 
 The string conversion concept (IStringDisplayableConcept) directly translates to the standard JavaScript **toString** method. As all JavaScript objects have a string conversion (provided by Object.prototype if not provided elsewhere), every JavaScript object returned to the data model can be converted to a display string. Overriding the string conversion simply requires implementing your own toString.
 
-```
+```javascript
 class myObject
 {
     //
@@ -890,7 +888,7 @@ The data model's concept of whether an object is iterable or not maps directly t
 
 An object which is only iterable can have an implementation such as follows.
 
-```
+```javascript
 class myObject
 {
     //
@@ -913,7 +911,7 @@ An object which is iterable and indexable requires a special return value from t
 
 This code shows an example implementaion.
 
-```
+```javascript
 class myObject
 {
     //
@@ -935,7 +933,7 @@ class myObject
 
 Unlike JavaScript, the data model makes a very explicit differentiation between property access and indexing. Any JavaScript object which wishes to present itself as indexable in the data model must implement a protocol consisting of a getDimensionality method which returns the dimensionality of the indexer and an optional pair of getValueAt and setValueAt methods which perform reads and writes of the object at supplied indicies. It is acceptable to omit either the getValueAt or setValueAt methods if the object is read-only or write-only
 
-```
+```javascript
 class myObject
 {
     //
@@ -973,7 +971,7 @@ This is only relevant for JavaScript prototypes/classes which are registered aga
 
 Note that while this method can technically return anything, it is considered bad form for it to return something which isn't really the runtime type or a derived type. Such can result in significant confusion for users of the debugger. Overriding this method can, however, be valuable for things such as C-style header+object styles of implementation, etc...
 
-```
+```javascript
 class myNativeModel
 {
     //
@@ -1080,7 +1078,6 @@ Investigate the use of test automation that can verify the functionality of your
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Native%20Debugger%20Objects%20in%20JavaScript%20Extensions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

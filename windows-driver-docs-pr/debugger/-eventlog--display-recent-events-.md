@@ -3,17 +3,15 @@ title: .eventlog (Display Recent Events)
 description: The .eventlog command displays the recent Microsoft Win32 debug events, such as module loading, process creation and termination, and thread creation and termination.
 ms.assetid: 8075007a-42a2-4973-bb04-cca9a4a1b9b6
 keywords: [".eventlog (Display Recent Events) Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .eventlog (Display Recent Events)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .eventlog (Display Recent Events)
@@ -21,7 +19,7 @@ api_type:
 
 The **.eventlog** command displays the recent Microsoft Win32 debug events, such as module loading, process creation and termination, and thread creation and termination.
 
-```
+```dbgcmd
 .eventlog 
 ```
 
@@ -57,7 +55,7 @@ The **.eventlog** command shows only 1024 characters.
 
 The following example shows the **.eventlog** command.
 
-```
+```dbgcmd
 0:000> .eventlog
 0904.1014: Load module C:\Windows\system32\ADVAPI32.dll at 000007fe`fed80000
 0904.1014: Load module C:\Windows\system32\RPCRT4.dll at 000007fe`fe8c0000
@@ -79,7 +77,6 @@ Last event: Break instruction exception - code 80000003 (first chance)
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.eventlog%20%28Display%20Recent%20Events%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

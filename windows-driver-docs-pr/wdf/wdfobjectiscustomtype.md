@@ -5,11 +5,8 @@ description: The WdfObjectIsCustomType macro determines whether a framework obje
 ms.assetid: EE3CC41D-6FBA-49A2-A2A0-C7E818F6FAAA
 keywords:
  - WdfObjectIsCustomType macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfObjectIsCustomType macro

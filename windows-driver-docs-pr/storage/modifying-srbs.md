@@ -7,11 +7,8 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
 - SRB modifications WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying SRBs
@@ -140,6 +137,5 @@ The SCSI port driver reserves LUN 0xFF to indicate all logical units.
  
 
 
---------------------
 
 

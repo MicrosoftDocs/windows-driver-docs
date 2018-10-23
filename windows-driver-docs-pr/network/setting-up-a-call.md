@@ -12,17 +12,14 @@ keywords:
 - CoNDIS WDK networking , MCM drivers
 - MCM drivers WDK networking
 - call managers WDK networking , call setup
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up a Call
 
 
-## <a href="" id="ddk-setting-up-a-call-ng"></a>
+
 
 
 A connection-oriented client initiates the call setup when making an outgoing call. A call manager or MCM driver initiates the call setup when indicating an incoming call to a connection-oriented client.

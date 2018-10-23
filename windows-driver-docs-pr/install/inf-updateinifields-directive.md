@@ -10,11 +10,8 @@ api_name:
 - INF UpdateIniFields Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF UpdateIniFields Directive
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 
 An **UpdateIniFields** directive references one or more named sections in which fine-grained modifications within the lines of an INI file can be specified.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +36,7 @@ UpdateIniFields=update-inifields-section[,update-inifields-section]...
 
 Each named section referenced by an **UpdateIniFields** directive has the following form:
 
-```
+```cpp
 [update-inifields-section]
  
 ini-file,ini-section,profile-name[,old-field][,new-field][,flags]

@@ -3,11 +3,8 @@ title: Driver Support Methods in the GpioClx DDI
 author: windows-driver-content
 description: The GPIO framework extension (GpioClx) is available starting with Windows 8.
 ms.assetid: 179EFB06-6122-4EB0-B9F8-D5A3089D75EE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Support Methods in the GpioClx DDI
@@ -57,6 +54,5 @@ If the GpioClx ISR calls a driver-implemented callback function, this function d
  
 
 
---------------------
 
 

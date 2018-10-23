@@ -10,18 +10,15 @@ api_name:
 - INF Reboot Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Reboot Directive
 
 A **Reboot** directive indicates that the caller should be notified to reboot the system after installation is complete.
 
-```
+```cpp
 [DDInstall]
   
 Reboot

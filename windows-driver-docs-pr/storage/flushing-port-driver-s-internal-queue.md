@@ -3,11 +3,8 @@ title: Flushing Port Driver's Internal Queue
 author: windows-driver-content
 description: Flushing Port Driver's Internal Queue
 ms.assetid: b0e6762e-0380-4ff5-aac7-36bdb5a60aa7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Flushing Port Driver's Internal Queue
@@ -27,6 +24,5 @@ For a discussion of how storage miniport drivers handle flush requests, see [Han
  
 
 
---------------------
 
 

@@ -6,11 +6,8 @@ keywords:
 - driver signing WDK , Trusted Publishers certificate store
 - Trusted Publishers certificate store WDK
 - certificate stores WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Trusted Publishers Certificate Store

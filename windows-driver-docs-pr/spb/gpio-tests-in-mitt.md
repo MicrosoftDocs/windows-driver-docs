@@ -3,11 +3,8 @@ title: GPIO tests in MITT
 author: windows-driver-content
 description: GPIO test modules that are included in the MITT software package can be used to test the following buttons volume up, volume down, power, and rotation lock.
 ms.assetid: D50C371B-4A03-4BDD-8EC2-6E7A4A4DF3C5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO tests in MITT
@@ -192,6 +189,5 @@ To generate a sequence, you need these values:
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

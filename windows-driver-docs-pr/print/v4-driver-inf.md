@@ -3,11 +3,8 @@ title: V4 Driver INF
 author: windows-driver-content
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
 ms.assetid: 48F19796-43F9-4A69-B042-1305245C9CB9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Driver INF
@@ -22,7 +19,7 @@ Notice that the sample v4 print driver INF file presented in this topic does not
 
 The following sample INF file assumes that a fictional company, Fabrikam, has manufactured print devices that will be installed to run with the v4 print driver.
 
-```Text
+```INF
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"
@@ -70,21 +67,6 @@ faPDL.dll =2
 Location="Fabrikam DVD"
 ```
 
-## Print Class Driver GenericDriverInstalled Properties
-
-
-Print class drivers need to specify that they are generic drivers in order to enable automatic upgrade to a newer print driver on the Windows Update site.
-
-**Note**  This property is allowed for print class drivers only.
-
- 
-
-For print class drivers, this property should be specified in the install section for the driver. This is a two-part declaration.
-
-1. Add the "AddProperty=GENERIC.AddProp" line to all install sections that are class drivers.
-
-2. Add the \[GENERIC.AddProp\] section. For example, add the "GenericDriverInstalled,,,,1" line under this section.
-
 ## INF Directives
 
 
@@ -93,8 +75,6 @@ The following table shows the list of printer-specific directives that are permi
 | Directive | Description                                         | Restrictions                                                                                                                                           | Usage        |
 |-----------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | ClassVer  | Used to indicate that a printer class driver is v4. | V4 print drivers must specify ClassVer=4.0. V3 print drivers may specify ClassVer=3.0, but it is optional. No other values are supported at this time. | ClassVer=4.0 |
-
- 
 
 ## The DestinationDirs Keyword
 
@@ -187,7 +167,5 @@ For information about how to create an INF file for a basic v4 printer driver, s
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Driver%20INF%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

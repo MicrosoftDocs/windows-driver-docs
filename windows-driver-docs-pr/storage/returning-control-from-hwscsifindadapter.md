@@ -8,11 +8,8 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 - return values WDK SCSI
 - status values WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning Control from HwScsiFindAdapter
@@ -52,6 +49,5 @@ Note also that the NT-based operating system port driver uses values from the PO
  
 
 
---------------------
 
 

@@ -2,11 +2,8 @@
 title: Direct3D 11 video playback improvements
 description: With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, some app developers want to treat all content the same.
 ms.assetid: BB32F074-16E8-46E4-B9CF-6AEBE331B549
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Direct3D 11 video playback improvements
@@ -33,9 +30,9 @@ With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, s
 <td align="left">Mandatory for all WDDM 1.2 drivers with Microsoft Direct3D 10-, 10.1-, 11-, or 11.1-capable hardware (or later)</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
-<td align="left"><p><strong>Device.Graphicsâ€¦DX11 Video Decode FeatureLevel 9</strong></p>
-<p><strong>Device.Graphicsâ€¦DX11 VideoProcessing</strong></p></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit">WHCK</a> requirements and tests</td>
+<td align="left"><p><strong>Device.Graphics ¦ DX11 Video Decode FeatureLevel 9</strong></p>
+<p><strong>Device.Graphics ¦ DX11 VideoProcessing</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -198,7 +195,7 @@ These device driver interfaces (DDIs) are new or updated for Windows 8:
 
 Direct3D 11 API support is required on all Windows 8 hardware.
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦DX11 Video Decode FeatureLevel 9** and **Device.Graphicsâ€¦DX11 VideoProcessing**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ DX11 Video Decode FeatureLevel 9** and **Device.Graphics ¦ DX11 VideoProcessing**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
@@ -206,7 +203,6 @@ See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added wi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Direct3D%2011%20video%20playback%20improvements%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

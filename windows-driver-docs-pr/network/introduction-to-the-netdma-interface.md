@@ -8,11 +8,8 @@ keywords:
 - transferring data WDK NetDMA , about NetDMA interface
 - NetDMA WDK networking , about NetDMA interface
 - copying data with low CPU pr
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to the NetDMA Interface
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-introduction-to-the-netdma-interface-ng"></a>
+
 
 
 The NetDMA interface provides generic access to direct memory access (DMA) engines that can perform memory-to-memory data transfers with little CPU involvement.

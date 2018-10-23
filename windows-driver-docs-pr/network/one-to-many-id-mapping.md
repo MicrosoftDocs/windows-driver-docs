@@ -7,17 +7,14 @@ keywords:
 - ID mapping WDK netmap.inf
 - one-to-many ID mapping WDK networking
 - preupgrade IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # One-to-Many ID Mapping
 
 
-## <a href="" id="ddk-one-to-many-id-mapping-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
@@ -52,7 +49,7 @@ Specifies the registry value type for *ValueName*. *Type* is an integer that cor
 
 The following example shows a one-to-many device ID mapping:
 
-```
+```cpp
 [OemAdapters]
 DATAFIREU=0, DATAFIREU
 

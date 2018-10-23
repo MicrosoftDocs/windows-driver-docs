@@ -2,11 +2,8 @@
 title: SIM toolkit commands
 description: SIM toolkit commands
 ms.assetid: 7c13c27a-7a2d-4eae-a64e-1133aa533343
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SIM toolkit commands
@@ -527,7 +524,7 @@ TERMINAL PROFILE, 3GPP
 
 TERMINAL PROFILE, Microsoft Requirements
 
-## <a href="" id="sms-pp"></a>SMS–PP
+## SMS–PP
 
 
 SMS PP, UICC responds with "61XX" (acknowledgement)

@@ -3,17 +3,15 @@ title: ks.dump
 description: The ks.dump extension displays the specified object.
 ms.assetid: 7878c79f-9de6-4fd2-9641-c636212429eb
 keywords: ["ks.dump Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ks.dump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.dump
@@ -21,7 +19,7 @@ api_type:
 
 The **!ks.dump** extension displays the specified object.
 
-```
+```dbgcmd
 !ks.dump Object [Level] [Flags]  
 ```
 
@@ -29,7 +27,7 @@ The **!ks.dump** extension displays the specified object.
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
-Specifies a pointer to an AVStream structure, an AVStream class object, or a PortCls object. Can also specify a pointer to an an IRP or a file object.
+Specifies a pointer to an AVStream structure, an AVStream class object, or a PortCls object. Can also specify a pointer to an IRP or a file object.
 
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7. You can see more information about levels by issuing a **!ks.dump** command with no arguments.
@@ -81,7 +79,7 @@ The **!ks.dump** command recognizes most AVStream objects, including pins, filte
 
 Following is an example of the **!ks.dump** display for a filter:
 
-```
+```dbgcmd
 kd> !dump 829493c4
 Filter object 829493c4 [CKsFilter = 82949350]
     Descriptor     f7a233c8:
@@ -90,7 +88,7 @@ Filter object 829493c4 [CKsFilter = 82949350]
 
 Following is an example of the **!ks.dump** display for a pin:
 
-```
+```dbgcmd
 kd> !dump 8160DDE0 7
 Pin object 8160DDE0 [CKsPin = 8160DD50]
     DeviceState    KSSTATE_RUN
@@ -140,7 +138,7 @@ Some important parts of this display are included in the following table.
 
 Following is an example of the **!ks.dump** display for a stream class driver:
 
-```
+```dbgcmd
 kd> !dump 81a0a170 7
 Device Extension 81a0a228:
     Device Object          81a0a170 [\Driver\TESTCAP]
@@ -202,7 +200,6 @@ Note that the sizes are listed both in hexadecimal numbers, and then, parentheti
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ks.dump%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

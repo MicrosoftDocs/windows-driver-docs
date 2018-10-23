@@ -10,11 +10,8 @@ keywords:
 - tampering with data WDK file systems
 - buffers WDK file systems
 - IOCTLs WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tampering with Data
@@ -44,6 +41,5 @@ Note that validating the data by itself is not enough. For example, a successful
  
 
 
---------------------
 
 

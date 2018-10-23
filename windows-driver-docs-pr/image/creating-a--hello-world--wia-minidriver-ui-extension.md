@@ -3,17 +3,14 @@ title: Creating a "Hello World" WIA Minidriver UI Extension
 author: windows-driver-content
 description: Creating a "Hello World" WIA Minidriver UI Extension
 ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a "Hello World" WIA Minidriver UI Extension
 
 
-## <a href="" id="ddk-creating-a-hello-world-wia-minidriver-ui-extension-si"></a>
+
 
 
 A WIA minidriver UI extension is a simple DLL that exports a few functions and implements at least one of the four following COM interface identifiers (IID):
@@ -49,7 +46,7 @@ The following example INF snippet is derived from the WIA minidriver sample in [
 
 It is recommended that all WIA UI extension DLLs should be self-registering COM objects, to promote easier installation. This sample does not contain a self-registering COM object.
 
-```
+```INF
 [WIADevice.DeviceData]
 Server=local
 UI DLL=sti.dll
@@ -58,7 +55,7 @@ UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
 
 The following sample is a complete INF file that sets the **UI Class ID** subkey to the CLSID of the *hellowldui* sample UI Extension.
 
-```
+```INF
 ; HELLOWLD.INF  -- Hello World WIA Minidriver setup file (with a WIA UI extension DLL)
 ; Copyright (c) 2002 Hello World Company
 ; Manufacturer:  Hello World Company
@@ -138,7 +135,7 @@ Location="Hello World WIA Minidriver Installation Source"
 
 The *hellowldui.def* file should contain the following:
 
-```
+```make
 LIBRARY HELLOWLDUI
 
 EXPORTS
@@ -148,7 +145,7 @@ EXPORTS
 
 The *hellowldui.cpp* file should contain the following:
 
-```
+```cpp
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
@@ -360,7 +357,5 @@ The preceding sample is an example of how to replace the default icon for your d
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Creating%20a%20%22Hello%20World%22%20WIA%20Minidriver%20UI%20Extension%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -5,17 +5,14 @@ ms.assetid: 848b6fd5-64f8-4e62-9c54-c23bbc3d9ede
 keywords:
 - Windows Sockets Direct WDK , service providers
 - SAN service providers WDK , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Service Provider for a SAN
 
 
-## <a href="" id="ddk-creating-a-service-provider-for-a-san-ng"></a>
+
 
 
 This section provides a brief description of the functions that make up the interface between a SAN service provider DLL and the Windows Sockets switch. The SAN service provider DLL exports a single entry point for its initialization function [**WSPStartupEx**](https://msdn.microsoft.com/library/windows/hardware/ff566321). The SAN service provider's **WSPStartupEx** function in turn makes most of the other interface functions accessible to the Windows Sockets switch through a dispatch table. The remaining interface functions are supplied to the switch through calls to the SAN service provider's [**WSPIoctl**](https://msdn.microsoft.com/library/windows/hardware/ff566296) function. The interface functions include [Windows Sockets SPI functions](windows-sockets-spi-functions-required-for-sans.md) and [SAN-specific extensions to the Windows Sockets SPI interface](windows-sockets-spi-extensions-for-sans.md).

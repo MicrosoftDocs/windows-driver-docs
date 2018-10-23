@@ -9,17 +9,14 @@ keywords:
 - user-mode debugging WDK printer
 - macros WDK printer
 - global variables WDK debugging
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/17/2017
+ms.localizationpriority: medium
 ---
 
 # Debugging Printer Driver Components
 
 
-## <a href="" id="ddk-debugging-printer-driver-components-gg"></a>
+
 
 
 If you are developing a printer driver rendering plug-in or user interface plug-in, you can enable debug messages in these components. As explained in the Global Debug Variable section, you can use a global debug variable to control the level of detail in messages appearing in the debugger window.
@@ -32,13 +29,13 @@ Steps for debugging a user-mode driver and some general debugging tips are inclu
 
 To start debugging printer drivers and their components:
 
-1.  Install the latest debugging tools from [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=8708) on the WHDC Web site.
+1.  Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
 
-2.  Install the correct symbols from [Debugging Tools and Symbols](http://go.microsoft.com/fwlink/p/?linkid=17363) on the WHDC Web site.
+2.  Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
 
 **Note**   It is very important that you use the latest version of the debugger.
 
- 
+
 
 It is advisable to install the checked build of only the components that you are interested in debugging. Typically you would replace the following retail binaries with their corresponding checked builds:
 
@@ -56,7 +53,7 @@ To begin user-mode debugging, on the **File** menu in Windbg debugger select **A
 
 **Note**   You do not require two separate machines for user-mode debugging.
 
- 
+
 
 The following procedure will get you ready to debug the Oemuni sample.
 
@@ -70,13 +67,13 @@ The following procedure will get you ready to debug the Oemuni sample.
 
 You can enable verbose debugging by turning on the giDebugLevel variable. Its default value is 3, which denotes WARNING. If set to 1, it denotes VERBOSE. To set the latter value with Unidrv.dll, type the following command in the debugger:
 
-```
+```cpp
 > ed unidrv!giDebugLevel 1
 ```
 
 When you are running the Oemuni sample, the same debugging variable also applies, so to enable verbose debugging, type the following command:
 
-```
+```cpp
 > ed oemuni!giDebugLevel 1
 ```
 
@@ -94,7 +91,7 @@ The giDebugLevel global variable is declared by the Oemui and Oemuni samples in 
 
 You can set giDebugLevel to any of the following values:
 
-```
+```cpp
 #define DBG_VERBOSE 1
 #define DBG_TERSE   2
 #define DBG_WARNING 3
@@ -106,32 +103,32 @@ You can set giDebugLevel to any of the following values:
 
 The following macros are used for debugging purposes. Several of them take action only if the giDebugLevel global variable, which controls which debug messages are emitted, is set to a specific value. The macros expand to white spaces on a free build. Here are brief descriptions of what they do and their parameters.
 
-<a href="" id="assert-cond-"></a>**ASSERT**(*cond*)  
+<a href="" id="assert-cond-"></a>**ASSERT**(*cond*)
 Verifies whether the Boolean expression in *cond* is **TRUE**. If it is not, the macro forces a breakpoint.
 
-<a href="" id="assertmsg-cond---msg--"></a>**ASSERTMSG**(*cond,* (*msg*))  
+<a href="" id="assertmsg-cond---msg--"></a>**ASSERTMSG**(*cond,* (*msg*))
 Verifies whether the Boolean expression in *cond* is **TRUE**. If it is not, the macro displays the message in *msg,* and forces a breakpoint.
 
-<a href="" id="err--msg--"></a>**ERR**((*msg*))  
+<a href="" id="err--msg--"></a>**ERR**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_ERROR. The message format is:
 
-```
+```cpp
 ERR filename (linenumber): msg
 ```
 
-<a href="" id="rip--msg--"></a>**RIP**((*msg*))  
+<a href="" id="rip--msg--"></a>**RIP**((*msg*))
 Displays the message in *msg* and forces a breakpoint.
 
-<a href="" id="terse--msg--"></a>**TERSE**((*msg*))  
+<a href="" id="terse--msg--"></a>**TERSE**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_TERSE.
 
-<a href="" id="verbose--msg--"></a>**VERBOSE**((*msg*))  
+<a href="" id="verbose--msg--"></a>**VERBOSE**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_VERBOSE.
 
-<a href="" id="warning--msg--"></a>**WARNING**((*msg*))  
+<a href="" id="warning--msg--"></a>**WARNING**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_WARNING. The message format is:
 
-```
+```cpp
 WRN filename (linenumber): msg
 ```
 
@@ -163,12 +160,10 @@ Note that all of the macros with a *msg* argument require an extra pair of paren
 
 The macros that contain a *msg* argument are defined by the Oemui and Oemuni samples in their Debug.h headers.
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Debugging%20Printer%20Driver%20Components%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

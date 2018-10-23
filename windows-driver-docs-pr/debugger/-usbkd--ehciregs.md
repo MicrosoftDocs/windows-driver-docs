@@ -3,17 +3,15 @@ title: usbkd._ehciregs
 description: The usbkd._ehciregs command displays the operational and root hub port status registers of a USB EHCI host controller.
 ms.assetid: BFD58E6B-BC51-4F2F-B597-8C815826F931
 keywords: ["usbkd._ehciregs Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usbkd._ehciregs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.\_ehciregs
@@ -21,7 +19,7 @@ api_type:
 
 The **!usbkd.\_ehciregs** command displays the operational and root hub port status registers of a USB EHCI host controller.
 
-```
+```dbgcmd
 !usbkd._ehciregs StructAddr[, NumPorts]
 ```
 
@@ -44,7 +42,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdlist
 MINIPORT List @ fffff80001e5bbd0
 
@@ -62,7 +60,7 @@ In the preceding output,` ffffd000228bf020` is the address of a **\_HC\_OPERATIO
 
 Now pass the structure address to **!\_ehciregs**. In this example, the second argument limits the display to two root hub port status registers.
 
-```
+```dbgcmd
 0: kd> !usbkd._ehciregs ffffd000228bf020, 2
 *(ehci)HC_OPERATIONAL_REGISTER ffffd000228bf020
     USBCMD 00010001
@@ -143,13 +141,12 @@ Now pass the structure address to **!\_ehciregs**. In this example, the second a
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usbkd._ehciregs%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

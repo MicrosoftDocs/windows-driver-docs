@@ -2,11 +2,8 @@
 Description: Developing Windows drivers for USB host controllers
 title: Developing Windows drivers for USB host controllers
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing Windows drivers for USB host controllers
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 <p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) host controller driver that communicates with the Microsoft-provided USB host controller extension (UCX).</p>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
 <p><strong>USB host controller extension (UCX)</strong></p>
-<p>The USB host controller extension is a system-supplied driver (Ucx01000.sys). This driver is implemented as a framework class extension by using the [Windows Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) programming interfaces. The host controller driver serves as the client driver to that class extension. While a host controller driver handles hardware operations and events, power management, and PnP events, UCX serves as an abstracted interface that queues requests to the host controller driver, and performs other tasks.</p>
+<p>The USB host controller extension is a system-supplied driver (Ucx01000.sys). This driver is implemented as a framework class extension by using the [Windows Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) programming interfaces. The host controller driver serves as the client driver to that class extension. While a host controller driver handles hardware operations and events, power management, and PnP events, UCX serves as an abstracted interface that queues requests to the host controller driver, and performs other tasks.</p>
 <p>UCX is one of the [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md). It is loaded as the FDO in the host controller device stack.</p>
 <p><strong>USB host controller driver</strong></p>
 <p>UCX is extensible and is designed to support various host controller drivers. Windows provides an xHCI driver (Usbxhci.sys) that targets USB xHCI host controllers.</p>
@@ -73,10 +70,11 @@ ms.technology: windows-devices
 <p>UCX triages incoming USB request blocks (URBs), and then forwards them to the correct endpoint queue.</p>
 [Configure USB endpoints in a host controller driver](configuring-usb-endpoints-in-a-host-controller-driver.md)
 <p>The host controller driver plays a role in UCX’s management of the queues that are associated with its endpoints, and in the programming of endpoints into controller hardware.</p>
-[USB host controller extension (UCX) reference](https://msdn.microsoft.com/library/windows/hardware/mt188009)
+[USB host controller extension (UCX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#host-controller-driver-reference)
 <p>Gives specifications for I/O requests, support routines, structures, and interfaces used by the client driver. Those routines and related data structures are defined in the WDK headers.</p>
 <p>UCX is referred to as the <em>framework class extension</em>.</p>
 <p>The host controller driver is referred to as the <em>client driver</em>.</p></td>
+
 </tr>
 </tbody>
 </table>
@@ -86,7 +84,5 @@ ms.technology: windows-devices
 ## Related topics
 [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Developing%20Windows%20drivers%20for%20USB%20host%20controllers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

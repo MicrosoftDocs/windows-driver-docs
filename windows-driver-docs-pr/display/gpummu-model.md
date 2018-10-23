@@ -2,11 +2,8 @@
 title: GpuMmu model
 description: In the GpuMmu model, the graphics processing unit (GPU) has its own memory management unit (MMU) which translates per-process GPU virtual addresses to physical addresses.
 ms.assetid: FFDFD647-2F00-4AC3-A41A-4224562A51ED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GpuMmu model
@@ -24,7 +21,7 @@ For engines running in the virtual mode, a GPU virtual address needs to be expli
 
 Similarly, in a linked display adapter configuration, the user mode driver may explicitly map GPU virtual address to specific allocation instances and choose for each mapping whether the mapping should be to self or to a specific peer GPU. In this model, the CPU and GPU virtual addresses assigned to an allocation are independent. A user mode driver may decide to keep them the same in both address spaces or keep them independent.
 
-GPU virtual addresses are managed logically at a fixed 4KB page granularity through the DDI interface. GPU virtual addresses may reference allocations, which are resident in either a memory segment or system memory. System memory is managed at 4KB physical granularity while memory segments are managed at either 4KB or 64KB at the driverâ€™s choice. All video memory manager allocations are aligned and sized to be a multiple of the page size chosen by the driver.
+GPU virtual addresses are managed logically at a fixed 4KB page granularity through the DDI interface. GPU virtual addresses may reference allocations, which are resident in either a memory segment or system memory. System memory is managed at 4KB physical granularity while memory segments are managed at either 4KB or 64KB at the driver's choice. All video memory manager allocations are aligned and sized to be a multiple of the page size chosen by the driver.
 
 Access to an invalid range of GPU virtual addresses results in an access violation and termination of the context and/or device that caused the access fault. To recover from such a fault, the video memory manager initiates an engine reset which gets promoted to an adapter wide timeout detection recovery (TDR) if unsuccessful.
 
@@ -36,7 +33,6 @@ The *GpuMmu* model is illustrated below:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20GpuMmu%20model%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

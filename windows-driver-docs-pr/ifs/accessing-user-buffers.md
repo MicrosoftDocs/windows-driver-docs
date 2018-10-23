@@ -7,11 +7,8 @@ keywords:
 - filter manager WDK file system minifilter , user buffers
 - buffers WDK file system minifilter
 - user buffers WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers
@@ -40,6 +37,5 @@ The filter manager provides the following support routines for accessing user bu
  
 
 
---------------------
 
 

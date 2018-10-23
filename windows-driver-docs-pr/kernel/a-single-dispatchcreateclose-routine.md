@@ -4,24 +4,21 @@ author: windows-driver-content
 description: A Single DispatchCreateClose Routine
 ms.assetid: 6127d696-2409-49fc-9cbd-ba1b13c0c672
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # A Single DispatchCreateClose Routine
 
 
-## <a href="" id="ddk-a-single-dispatchcreateclose-routine-kg"></a>
+
 
 
 Many drivers, particularly lower-level drivers in a chain of layered drivers, merely need to establish their existence on receipt of a *create* request and merely need to acknowledge the receipt of a *close* request.
 
 For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) might have a minimal [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine. The routine might do nothing more than complete the IRP as follows:
 
-```
+```cpp
     :    : 
 { 
     Irp->IoStatus.Status = STATUS_SUCCESS; 
@@ -50,7 +47,5 @@ Following the preceding steps ensures that no attempt to open a pseudofile on a 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20A%20Single%20DispatchCreateClose%20Routine%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

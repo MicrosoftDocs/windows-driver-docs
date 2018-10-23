@@ -3,17 +3,15 @@ title: ndiskd.netrb
 description: The ndiskd.netrb extension displays information about a NET_RING_BUFFER structure.
 ms.assetid: 2D749E7E-00A5-422B-B785-B8DB3393A74F
 keywords: ["ndiskd.netrb Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.netrb
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.netrb
@@ -23,7 +21,7 @@ The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER]
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-```
+```console
 !ndiskd.netrb [-handle <x>] [-basic] [-dump] [-elementtype <str>] 
 ```
 
@@ -64,7 +62,7 @@ To obtain a handle for a NET\_RING\_BUFFER, follow these steps:
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic.
 In the following example, look for the handle for this NETTXQUEUE's ring buffer, ffffd1022d000000.
 
-```
+```console
 0: kd> !ndiskd.netqueue ffffd1022f512700
 
     NETTXQUEUE         00002efdd0aed9a8
@@ -80,7 +78,7 @@ In the following example, look for the handle for this NETTXQUEUE's ring buffer,
 
 By clicking on the handle for the ring buffer or by entering the **!ndiskd.netrb -handle** command on the command line, you can see details for this NET\_RING\_BUFFER, including how many elements it contains and the address of its Begin and End indices.
 
-```
+```console
 0: kd> !ndiskd.netrb ffffd1022d000000
 
     NET_RING_BUFFER    ffffd1022d000000
@@ -98,7 +96,7 @@ By clicking on the handle for the ring buffer or by entering the **!ndiskd.netrb
 
 To see this NET\_RING\_BUFFER's elements, either click the "List all elements" link at the bottom of its details or enter the **!ndiskd.netrb -dump** command on the command line. The following example has had the middle elements excised for brevity.
 
-```
+```console
 0: kd> !ndiskd.netrb ffffd1022d000000 -dump
 
     [000] ffffd1022d000040 - NET_PACKET
@@ -146,7 +144,6 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.netrb%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

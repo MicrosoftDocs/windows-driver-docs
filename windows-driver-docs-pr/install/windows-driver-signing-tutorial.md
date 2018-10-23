@@ -2,11 +2,8 @@
 title: Windows Driver Signing Tutorial
 ms.assetid: B6F907DC-74DC-4BF3-A2F9-481AE706733C
 description: 
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Driver Signing Tutorial
@@ -25,7 +22,7 @@ Starting with Windows Vista, x64-based versions of Windows required all softwar
 
 Microsoft provides the following two ways to digitally sign drivers:
 
-1.  [Certify your driver with Microsoft](http://msdn.microsoft.com/windows/hardware/gg463010.aspx) and Microsoft will provide a signature for it. When your driver package passes the certification tests, it can be signed by Windows Hardware Quality Labs (WHQL). If your driver package is signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
+1.  [Certify your driver with Microsoft](https://msdn.microsoft.com/windows/hardware/gg463010.aspx) and Microsoft will provide a signature for it. When your driver package passes the certification tests, it can be signed by Windows Hardware Quality Labs (WHQL). If your driver package is signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 2.  Vendors or driver developers can obtain a software publishing certificate (SPC) from a Microsoft authorized Certificate Authority (CA) and use it to sign kernel mode and user mode binaries by themselves.
 
 In the case of boot-start drivers during system start, drivers that are loaded by the system loader (Windows Vista and later versions of Windows), vendors must use a Software Publishers Certificate (SPC) to embed-sign their driver binary image file.
@@ -38,8 +35,8 @@ User-mode drivers, like the Printer driver will install and work in an x64-based
 
 The following resources describe Driver Signing in greater detail:
 
--   The main [Driver Signing](driver-signing.md) topic on MSDN
--   The subtopic "How to Release Sign a Kernel Module" in the [Kernel-Mode Code Signing Walkthrough](http://msdn.microsoft.com/library/windows/hardware/dn653569.aspx) describes what you should know about signing kernel-mode code. The information in the document also applies to signing user-mode drivers.
+-   The main [Driver Signing](driver-signing.md) topic
+-   The subtopic "How to Release Sign a Kernel Module" in the [Kernel-Mode Code Signing Walkthrough](https://msdn.microsoft.com/library/windows/hardware/dn653569.aspx) describes what you should know about signing kernel-mode code. The information in the document also applies to signing user-mode drivers.
 -   The selfsign_readme.htm file in the Windows 7 WDK is located in the WDK install directory, \\WinDDK\\7600.16385.1\\src\\general\\build\\driversigning. This directory also has a command file, selfsign_example.cmd, which can be edited to run the driver signing commands. The selfsign_readme.htm file in the Windows 8.1 WDK is located at C:\\Program Files (x86)\\Windows Kits\\8.1\\bin\\selfsign, and provides links to additional driver signing information.
 
  

@@ -2,17 +2,14 @@
 title: Queue States and Operations
 description: Queue States and Operations
 ms.assetid: 892f8f19-b94e-4950-af88-334c9a8b8c0d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Queue States and Operations
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 For each queue, a network adapter must support the following set of operational states:

@@ -2,17 +2,14 @@
 title: Installation Requirements for Network Filter Drivers
 description: Installation Requirements for Network Filter Drivers
 ms.assetid: 7fb31e18-a2f0-48fe-b0a8-cf4aca7d27d5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network Filter Drivers
 
 
-## <a href="" id="ddk-installation-requirements-for-network-filter-drivers-ng"></a>
+
 
 
 This topic summarizes the INF file requirements for network filter drivers. Filter drivers are supported in NDIS 6.0 and later versions. For more information about how to install filter drivers, see [NDIS Filter Driver Installation](ndis-filter-driver-installation.md).
