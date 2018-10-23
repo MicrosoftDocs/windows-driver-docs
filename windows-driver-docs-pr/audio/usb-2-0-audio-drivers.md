@@ -234,7 +234,7 @@ For IHV provided third party driver USB Audio 2.0 drivers, those drivers will co
 
 ## Audio Jack Registry Descriptions
 
-Starting in Windows 10 release 1809, IHVs that create USB 2.0 audio devices having one or more jacks have the capability to describe these jacks to the in-box USB 2 audio driver. The in-box driver uses the supplied jack information when handling the KSPROPERTY_JACK_DESCRIPTION for this device.
+Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the KSPROPERTY_JACK_DESCRIPTION for this device.
 
 Jack information is stored in the registry in the device instance key (HW key).
 
@@ -270,13 +270,14 @@ These registry values can be set in various ways:
 
 - Using custom INFs which wrap the in-box INF for the purpose to set these values.
 
-- Directly by the h/w device via a MSOS USB descriptor (see example below). For more information about creating MSOS USB descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
 
-### MSOS USB descriptor info example
+### Microsoft OS Descriptors for USB Example
 
-The following MSOS USB descriptor example contains the channel mapping and color for one jack. The IHV vendor should extend it to contain any other information for the jack description. 
+The following Microsoft OS Descriptors for USB example contains the channel mapping and color for one jack. The example is for a non-composite device with single feature descriptor. 
 
-The example is for a non-composite device with single feature descriptor. 
+The IHV vendor should extend it to contain any other information for the jack description. 
+
 
 ```text
 UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
