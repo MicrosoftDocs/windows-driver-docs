@@ -4,11 +4,8 @@ description: Mobile Plans promotional content
 ms.assetid: FB789462-732C-436A-B69C-43940F7F8A77
 keywords:
 - Windows Mobile Plans promotional content mobile operators
-ms.author: windowsdriverdev
-ms.date: 09/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/23/2018
+ms.localizationpriority: medium
 ---
 
 # Mobile Plans promotional content
