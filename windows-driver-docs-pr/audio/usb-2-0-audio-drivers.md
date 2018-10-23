@@ -1,7 +1,7 @@
 ---
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.date: 05/14/2018
+ms.date: 10/23/2018
 ms.localizationpriority: medium
 ---
 
@@ -231,6 +231,95 @@ An arbitrary number of channels (greater than eight) are not supported in shared
 
 ## IHV USB Audio 2.0 drivers and updates
 For IHV provided third party driver USB Audio 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver. 
+
+## Audio Jack Registry Descriptions
+
+Starting in Windows 10 release 1809, IHVs that create third party USB 2.0 audio drivers should create registry keys to describe the audio jack properties.
+
+Jack information is stored in the registry in the device instance key (HW key).
+
+The following describes the audio jack information settings in the registry:
+
+```text
+REG_DWORD  T<tid>_NrJacks                 # of the jack on this device
+REG_DWORD  T<tid>_J<n>_ChannelMapping     Channel mask. The value is define in ksmedia.h. e.g. SPEAKER_FRONT_RIGHT or KSAUDIO_SPEAKER_5POINT1_SURROUND
+REG_DWORD  T<tid>_J<n>_ConnectorType      The enum value is define in EPcxConnectionType. 
+REG_DWORD  T<tid>_J<n>_GeoLocation        The enum value is define in EPcxGeoLocation.
+REG_DWORD  T<tid>_J<n>_GenLocation        The enum value is define in EPcxGenLocation.
+REG_DWORD  T<tid>_J<n>_PortConnection     The enum value is define in EPxcPortConnection.
+REG_DWORD  T<tid>_J<n>_Color              The color needs to be represent by RGB like this: 0x00RRGGBB (NOT a COLORREF).
+```
+
+\<tid\> = terminal ID (As defined in the descriptor)
+  
+\<n\>   = Jack number (1 ~ n). 
+
+Convention for \<tid\> and \<n\> is:
+
+- Base 10 (8, 9, 10 rather than 8, 9, a)
+- No leading zeros
+- n is 1-based (first jack is jack 1 rather than jack 0)
+
+For example: 
+
+T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
+
+For additional audio jack information, see [KSJACK_DESCRIPTION structure](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description).
+
+The following is an example which contains the channel mapping and color for one jack. The IHV vendor should extend it to contain any other information for the jack description. 
+
+The example is for a non-composite device with single feature descriptor. 
+
+```ini
+UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
+    //
+    // Microsoft OS 2.0 Descriptor Set Header
+    //
+    0x0A, 0x00,             // wLength - 10 bytes
+    0x00, 0x00,             // MSOS20_SET_HEADER_DESCRIPTOR
+    0x00, 0x00, 0x0?, 0x06, // dwWindowsVersion – 0x060?0000 for future Windows version
+    0x76, 0x00,             // wTotalLength – 118 bytes // update later
+
+    //
+    // Microsoft OS 2.0 Registry Value Feature Descriptor
+    //
+    0x42, 0x00,             // bLength - 66 bytes
+    0x04, 0x00,             // wDescriptorType – 5 for Registry Property
+    0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
+    0x34, 0x00,             // wPropertyNameLength – 52 bytes
+    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_ChannelMapping”
+    0x31, 0x00, 0x5f, 0x00,
+    0x4a, 0x00, 0x30, 0x00,
+    0x31, 0x00, 0x5f, 0x00, 
+    0x43, 0x00, 0x68, 0x00,
+    0x61, 0x00, 0x6e, 0x00,
+    0x6e, 0x00, 0x65, 0x00,
+    0x6c, 0x00, 0x4d, 0x00,
+    0x61, 0x00, 0x70, 0x00,
+    0x70, 0x00, 0x69, 0x00,
+    0x6e, 0x00, 0x67, 0x00,
+    0x00, 0x00
+    0x04, 0x00,                       // wPropertyDataLength – 4 bytes
+    0x02, 0x00, 0x00, 0x00  // PropertyData - SPEAKER_FRONT_RIGHT
+
+    //
+    // Microsoft OS 2.0 Registry Value Feature Descriptor
+    //
+    0x2A, 0x00,             // bLength - 42 bytes
+    0x04, 0x00,             // wDescriptorType – 5 for Registry Property
+    0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
+    0x1C, 0x00,             // wPropertyNameLength – 28 bytes
+    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_Color”
+    0x31, 0x00, 0x5f, 0x00,
+    0x4a, 0x00, 0x30, 0x00,
+    0x31, 0x00, 0x5f, 0x00,
+    0x43, 0x00, 0x6f, 0x00,
+    0x6c, 0x00, 0x6f, 0x00,
+    0x72, 0x00, 0x00, 0x00,
+    0x04, 0x00,             // wPropertyDataLength – 4 bytes
+    0x00, 0x00, 0xff, 0x00  // PropertyData - 0xff0000 - RED }
+```
+
 
 ## Troubleshooting
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
