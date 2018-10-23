@@ -234,7 +234,7 @@ For IHV provided third party driver USB Audio 2.0 drivers, those drivers will co
 
 ## Audio Jack Registry Descriptions
 
-Starting in Windows 10 release 1809, IHVs that create third party USB 2.0 audio drivers should create registry keys to describe the audio jack properties.
+Starting in Windows 10 release 1809, IHVs that create USB 2.0 audio devices having one or more jacks have the capability to describe these jacks to the in-box USB 2 audio driver. The in-box driver uses the supplied jack information when handling the KSPROPERTY_JACK_DESCRIPTION for this device.
 
 Jack information is stored in the registry in the device instance key (HW key).
 
@@ -266,11 +266,19 @@ T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
 
 For additional audio jack information, see [KSJACK_DESCRIPTION structure](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description).
 
-The following is an example which contains the channel mapping and color for one jack. The IHV vendor should extend it to contain any other information for the jack description. 
+These registry values can be set in various ways: 
+
+- Using custom INFs which wrap the in-box INF for the purpose to set these values.
+
+- Directly by the h/w device via a MSOS USB descriptor (see example below). For more information about creating MSOS USB descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+
+### MSOS USB descriptor info example
+
+The following MSOS USB descriptor example contains the channel mapping and color for one jack. The IHV vendor should extend it to contain any other information for the jack description. 
 
 The example is for a non-composite device with single feature descriptor. 
 
-```cpp
+```text
 UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
     //
     // Microsoft OS 2.0 Descriptor Set Header
