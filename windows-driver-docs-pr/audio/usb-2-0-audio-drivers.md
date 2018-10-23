@@ -242,7 +242,7 @@ The following describes the audio jack information settings in the registry:
 
 ```text
 REG_DWORD  T<tid>_NrJacks                 # of the jack on this device
-REG_DWORD  T<tid>_J<n>_ChannelMapping     Channel mask. The value is define in ksmedia.h. e.g. SPEAKER_FRONT_RIGHT or KSAUDIO_SPEAKER_5POINT1_SURROUND
+REG_DWORD  T<tid>_J<n>_ChannelMapping     Channel mask. The value is defined in ksmedia.h. e.g. SPEAKER_FRONT_RIGHT or KSAUDIO_SPEAKER_5POINT1_SURROUND
 REG_DWORD  T<tid>_J<n>_ConnectorType      The enum value is define in EPcxConnectionType. 
 REG_DWORD  T<tid>_J<n>_GeoLocation        The enum value is define in EPcxGeoLocation.
 REG_DWORD  T<tid>_J<n>_GenLocation        The enum value is define in EPcxGenLocation.
@@ -270,7 +270,7 @@ The following is an example which contains the channel mapping and color for one
 
 The example is for a non-composite device with single feature descriptor. 
 
-```ini
+```cpp
 UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
     //
     // Microsoft OS 2.0 Descriptor Set Header
