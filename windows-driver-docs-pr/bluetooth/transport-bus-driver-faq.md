@@ -23,7 +23,7 @@ Code 52 = Unsigned driver.
 Driver signing is described in greater detail in these topics:
 
 -   [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865)
--   [Driver Signing Requirements for Windows](http://msdn.microsoft.com/windows/hardware/gg487317)
+-   [Driver Signing Requirements for Windows](https://msdn.microsoft.com/windows/hardware/gg487317)
 
 ## <span id="Why_is_my_serial_bus_driver_not_getting_any_IOCTLs_from_the_Bluetooth_core_stack_"></span><span id="why_is_my_serial_bus_driver_not_getting_any_ioctls_from_the_bluetooth_core_stack_"></span><span id="WHY_IS_MY_SERIAL_BUS_DRIVER_NOT_GETTING_ANY_IOCTLS_FROM_THE_BLUETOOTH_CORE_STACK_"></span>Why is my serial bus driver not getting any IOCTLs from the Bluetooth core stack?
 

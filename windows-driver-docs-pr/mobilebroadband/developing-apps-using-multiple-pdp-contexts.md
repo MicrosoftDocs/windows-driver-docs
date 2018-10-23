@@ -54,7 +54,7 @@ For sending data by using a special PDP context, the Microsoft Store app must us
 HTTP-based APIs, such as [**XMLHTTPRequest**](https://msdn.microsoft.com/library/windows/apps/br229787), [IXHR2](https://msdn.microsoft.com/library/windows/desktop/hh831163), [**Windows.Web.Syndication**](https://msdn.microsoft.com/library/windows/apps/br243632), and [**Windows.Web.AtomPub**](https://msdn.microsoft.com/library/windows/apps/br210609), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](https://msdn.microsoft.com/library/windows/apps/dn279692), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
 
 **Note**  
-[**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](http://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
+[**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](https://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
 
  
 

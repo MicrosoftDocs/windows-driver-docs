@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides installation information about Netmon and the USB ETW parsers.
 
-Install Netmon from the Microsoft Download Center, and then install USB ETW parsers from [Windows Driver Kit (WDK)](http://msdn.microsoft.com/windows/hardware/hh852362.aspx). The USB ETW parsers are supported in Netmon Version 3.3 and later versions.
+Install Netmon from the Microsoft Download Center, and then install USB ETW parsers from [Windows Driver Kit (WDK)](https://msdn.microsoft.com/windows/hardware/hh852362.aspx). The USB ETW parsers are supported in Netmon Version 3.3 and later versions.
 
 Instructions
 ------------
@@ -33,7 +33,7 @@ Instructions
     3.  Download and run the .exe file to start the Setup Wizard.
     4.  Select **Typical** when you are asked to choose the setup type.
 
-3.  Install the WDK from [Windows Driver Kit 8](http://msdn.microsoft.com/windows/hardware/hh852362.aspx).
+3.  Install the WDK from [Windows Driver Kit 8](https://msdn.microsoft.com/windows/hardware/hh852362.aspx).
 4.  Allow execution of PowerShell scripts:
     1.  On the Start screen, type "powershell", right-click on the Windows PowerShell result, and select **Run as administrator**.
     2.  In the PowerShell window, type this command:

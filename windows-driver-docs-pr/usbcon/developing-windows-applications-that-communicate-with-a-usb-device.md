@@ -32,7 +32,7 @@ If you install [Winusb.sys](winusb-installation.md), here are the programming mo
 
 -   [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 
-    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). The namespace cannot be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](http://msdn.microsoft.com/windows/apps).
+    Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). The namespace cannot be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](https://msdn.microsoft.com/windows/apps).
 
 -   [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
 

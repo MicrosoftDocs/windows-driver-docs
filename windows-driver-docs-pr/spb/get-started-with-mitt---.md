@@ -34,7 +34,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 
 -   The computer must be running Windows 8.1 version of the operating system.
 -   The computer must have the MITT software package installed.
--   The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](http://msdn.microsoft.com/library/windows/hardware/ff551063.aspx).
+-   The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063.aspx).
     **Note**  Windbg can be installed as a standalone tool set.
 
      

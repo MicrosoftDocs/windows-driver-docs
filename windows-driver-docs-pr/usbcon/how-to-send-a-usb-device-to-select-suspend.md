@@ -26,7 +26,7 @@ For example, a client driver supports I/O operations through static streams of a
 
  
 
-The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](http://msdn.microsoft.com/library/windows/hardware/hh998558.aspx).
+The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](https://msdn.microsoft.com/library/windows/hardware/hh998558.aspx).
 
 ## How to enable the USB client driver verifier
 
