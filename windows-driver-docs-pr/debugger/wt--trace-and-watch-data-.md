@@ -138,7 +138,7 @@ Because the output from **wt** can be long, you might want to use a log file to 
 
 The following example shows a typical log file.
 
-```
+```dbgcmd
 0:000> l+                  Source options set to show source lines
 Source options are f:
      1/t - Step/trace by source line

@@ -4,7 +4,7 @@ description: Mobile Plans asynchronous fulfillment
 ms.assetid: 56AB67D6-59A9-4483-B455-2FCC309C8903
 keywords:
 - Windows Mobile Plans asynchronous fulfillment mobile operators
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.localizationpriority: medium
 ---
 
@@ -112,7 +112,7 @@ function finishPurchaseWithBalanceAddition() {
     }
 ```
 
-## Cancelling purchase flow
+## Canceling purchase flow
 
 If a user cancels the purchase flow at the MO portal, then the portal must invoke the `DataMart.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
 
@@ -137,4 +137,26 @@ function finishPurchaseWithCancellation() {
 ```
 
 > [!NOTE]
-> Cancellation and the balance addition flows using the `DataMart.notifyPurchaseResult` API are still supported. 
+> The cancelation and balance addition flows using the `DataMart.notifyPurchaseResult` API are still supported. 
+
+## Frequently Asked Questions
+
+1. Is *Transaction ID* still required?  
+
+    Mobile operators do not have to return the *Transaction ID* passed to the portal, but they are required to store this value for troubleshooting purposes.  
+
+2. Which API should be used to transfer control back to Mobile Plans when connectivity is available immediately?  
+
+    The `DataMart.notifyPurchaseDelayedProfile` API is supported for this scenario going forward. In this specific case, the *networkRegistrationInterval* parameter should be set to **0**.  
+
+    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
+
+3. Is ICCID information still required for the eSIM activation callback?  
+
+    ICCID information is only needed for the adding balance scenario, when the `DataMart.notifyBalanceAddition` API callback is used.  
+
+    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
+
+4. What if I still need help?  
+
+    Please contact your Microsoft representative.

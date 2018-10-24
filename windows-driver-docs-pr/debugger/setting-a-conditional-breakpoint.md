@@ -79,13 +79,9 @@ The *lpName* argument passed to the **CreateEventW** function is the fourth argu
 
 2.  Use [**$spat**](masm-numbers-and-operators.md) to compare the string represented by EventName to the pattern "Global\*". If the string does not match the pattern, use [**gc**](gc--go-from-conditional-breakpoint-.md) to continue without breaking. If the string does match the pattern, break and display the string represented by EventName.
 
-    **Note**  [**$spat**](masm-numbers-and-operators.md) performs a case-insensitive match.
+**Note**  [**$spat**](masm-numbers-and-operators.md) performs a case-insensitive match.
 
-     
-
-    **Note**  The ampersand ( @ ) character in $spat(@"${EventName}" specifies that the string represented by EventName is to be interpreted literally; that is, a backslash ( \\ ) is treated as a backslash rather than an escape character.
-
-     
+**Note**  The ampersand ( @ ) character in $spat(@"${EventName}" specifies that the string represented by EventName is to be interpreted literally; that is, a backslash ( \\ ) is treated as a backslash rather than an escape character.
 
 ### <span id="conditional_breakpoints_and_register_sign_extension"></span><span id="CONDITIONAL_BREAKPOINTS_AND_REGISTER_SIGN_EXTENSION"></span>Conditional Breakpoints and Register Sign Extension
 

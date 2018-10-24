@@ -354,9 +354,9 @@ Using breakpoints is a common approach to pause code execution at some event of 
 
 You can set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
-
-    ba <access> <size> <address> {options}
-
+```dbgcmd
+ba <access> <size> <address> {options}
+```
 
 <table>
 <colgroup>

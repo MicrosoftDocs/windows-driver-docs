@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.pcmd** command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the [Debugger Command window](debugger-command-window.md) with register or target state information.
 
-```
+```dbgcmd
 .pcmd -s CommandString 
 .pcmd -c 
 .pcmd 

@@ -21,13 +21,13 @@ The CTRL+R key synchronizes with the target computer.
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+R  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+R 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following syntax forms are supported for SymStore transactions. The first parameter must always be **add** or **del**. The order of the other parameters is immaterial.
 
-``````
+```dbgcmd
 symstore add [/r] [/p [/l] [-:MSG Message] [-:REL] [-:NOREFS]] /f File /s Store /t Product [/v Version] [/o] [/c Comment] [/d LogFile] [/compress]
 
 symstore add [/r] [/p [/l] [-:REL] [-:NOREFS]] /g Share /f File /x IndexFile [/a] [/o] [/d LogFile] 

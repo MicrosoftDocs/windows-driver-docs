@@ -6,11 +6,11 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !tt (time travel)
+#  !tt (time travel)
 
 The !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
-
 
 ## !tt navigation commands
 

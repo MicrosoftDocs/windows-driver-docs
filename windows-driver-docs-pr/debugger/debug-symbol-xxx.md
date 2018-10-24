@@ -27,7 +27,7 @@ The DEBUG\_SYMBOL\_*XXX* constants are used for the symbol flags bit-set. The sy
 
 The least significant bits of the symbol flags--the bits found in DEBUG\_SYMBOL\_EXPANSION\_LEVEL\_MASK--form a number that represents the expansion depth of the symbol within the symbol group. The depth of a child symbol is always one more than the depth of its parent symbol. For example, to find the depth of a symbol whose flags are contained in the variable *flags*, use the following statement:
 
-```
+```dbgcmd
 depth = flags &amp; DEBUG_SYMBOL_EXPANSION_LEVEL_MASK;
 ```
 
