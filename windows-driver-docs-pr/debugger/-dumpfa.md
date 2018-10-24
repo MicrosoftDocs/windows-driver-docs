@@ -55,7 +55,7 @@ Remarks
 
 The **.dumpfa** extension is useful only to debug the [**!analyze**](-analyze.md) extension, as the following example shows.
 
-```
+```dbgcmd
 0:000> !dumpfa 0x00a34140
 DataUsed 3b0
 Type =        DEBUG_FLR_MARKER_BUCKET 00010016 - Size = 9

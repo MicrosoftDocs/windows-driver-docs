@@ -55,7 +55,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !imgreloc 00400000
 00400000 Prymes - at preferred address
 010e0000 appvcore - RELOCATED from 00400000

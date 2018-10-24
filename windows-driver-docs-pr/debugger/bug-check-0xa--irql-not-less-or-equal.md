@@ -108,7 +108,7 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 
 Here is a debugging example:
 
-```
+```dbgcmd
 kd> .bugcheck       [Lists bug check data.]
 Bugcheck code 0000000a
 Arguments 00000000 0000001c 00000000 00000000

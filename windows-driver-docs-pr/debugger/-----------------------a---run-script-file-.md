@@ -19,13 +19,13 @@ ms.localizationpriority: medium
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.
 
-
+```dbgcmd
     $<Filename 
     $><Filename 
     $$<Filename 
     $$><Filename 
     $$>a<Filename [arg1 arg2 arg3 ...] 
-
+```
 
 ## <span id="ddk_cmd_run_script_file_dbg"></span><span id="DDK_CMD_RUN_SCRIPT_FILE_DBG"></span>Parameters
 

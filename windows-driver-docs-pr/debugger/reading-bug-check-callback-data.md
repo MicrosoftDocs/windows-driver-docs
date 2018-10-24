@@ -4,7 +4,7 @@ description: Reading Bug Check Callback Data
 ms.assetid: 638074bb-5133-4edc-86c5-33aafa837a0c
 keywords: ["callback data for bug checks", "callback data for bug checks, displaying callback data", "callback data for bug checks, displaying secondary data", "secondary bug check callback data", "bug check, callback routines", "dbgeng.h header file, IDebugDataSpaces3", "dbgeng.h header file, ReadTagged", "dbgeng.h header file, StartEnumTagged", "dbgeng.h header file, GetNextTagged"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 10/24/2018
 ms.localizationpriority: medium
 ---
 
@@ -32,10 +32,6 @@ The amount of callback and secondary callback data that is available to the debu
 
 See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md) for more details on these different dump file sizes.
 
-## <span id="earlier-versions-of-windows"></span><span id="EARLIER-VERSIONS-OF-WINDOWS"></span>Earlier Versions of Windows
-
-
-In versions of Windows earlier than Windows XP SP1, callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) is included in the crash dump file.
 
 ## <span id="ddk_reading_bug_check_callback_data_dbg"></span><span id="DDK_READING_BUG_CHECK_CALLBACK_DATA_DBG"></span>
 
@@ -50,7 +46,7 @@ To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*
 
 ### <span id="displaying-secondary-callback-data"></span><span id="DISPLAYING-SECONDARY-CALLBACK-DATA"></span>Displaying Secondary Callback Data
 
-There are two methods for displaying secondary callback data in Windows XP SP1, Windows Server 2003, and later versions of Windows. You can use the **.enumtag** command or you can write your own debugger extension.
+There are two methods for displaying secondary callback data. You can use the **.enumtag** command or you can write your own debugger extension.
 
 Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481).
 

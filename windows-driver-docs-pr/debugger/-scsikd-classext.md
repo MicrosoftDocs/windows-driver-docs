@@ -62,7 +62,7 @@ Remarks
 
 Here is an example of the **!scsikd.classext** display:
 
-```
+```dbgcmd
 0: kd> !scsikd.classext
   ' !scsikd.classext 8633e3f0 '   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
   ' !scsikd.classext 86347b48 '   (paging device) "IBM     " / "DDYS-T09170M    " / "S80D" / "        VDA60491"

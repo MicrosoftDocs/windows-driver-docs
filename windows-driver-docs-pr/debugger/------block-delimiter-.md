@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 A pair of braces ( **{ }** ) is used to surround a block of statements within a debugger command program.
 
+```dbgcmd
     Statements { Statements } Statements 
-
+```
 
 ## <span id="ddk_token_block_delimiter_dbg"></span><span id="DDK_TOKEN_BLOCK_DELIMITER_DBG"></span>
 

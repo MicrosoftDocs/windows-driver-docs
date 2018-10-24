@@ -22,16 +22,12 @@ This command is equivalent to pressing F6. You can use this command only when Wi
 
 When you click **Attach to a Process**, the **Attach to Process** dialog box appears,and you can do the following:
 
--   Select the line that contains the proper process ID and name (or enter the process ID in the **Process ID** box).
+- Select the line that contains the proper process ID and name (or enter the process ID in the **Process ID** box).
     **Note**  Each listed process has an associated plus sign (**+**). You can click the plus sign to display information about that process' command line, services, and child processes.
-
-     
 
     **Note**   If WinDbg is connected to a process server, the **Attach to Process** dialog box will display processes that are running on the remote computer. For more information about process servers, see [**Activating a Smart Client**](activating-a-smart-client.md).
 
-     
-
--   If you want to attach noninvasively to a process, select the **Noninvasive** check box.
+- If you want to attach noninvasively to a process, select the **Noninvasive** check box.
 
 After you make your selections, click **OK**.
 

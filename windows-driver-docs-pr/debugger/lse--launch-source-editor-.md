@@ -57,7 +57,7 @@ The editor is opened on the computer that the target is running on, so you canno
 
 The WinDiff editor registry information or the value of the WINDBG\_INVOKE\_EDITOR environment variable determine which editor is opened. For example, consider the following value of WINDBG\_INVOKE\_EDITOR.
 
-```
+```reg
 c:\my\path\myeditor.exe -file %f -line %l
 ```
 

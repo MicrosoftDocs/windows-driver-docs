@@ -120,7 +120,7 @@ During live user-mode debugging, you can use the [**.closehandle (Close Handle)*
 
 The following examples are user-mode examples of the **!handle** extension. The following command displays a list of all handles.
 
-```
+```dbgcmd
 0:000> !handle
 Handle 4
   Type          Section
@@ -144,7 +144,7 @@ Directory       1
 
 The following command displays detailed information about handle 0x8.
 
-```
+```dbgcmd
 0:000> !handle 8 f
 Handle 8
   Type          Event
@@ -162,7 +162,7 @@ Handle 8
 
 The following examples are kernel-mode examples of **!handle**. The following command lists all handles, including free handles.
 
-```
+```dbgcmd
 kd> !handle 0 4
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -186,7 +186,7 @@ New version of handle table at e1002000 with 380 Entries in use
 
 The following command show detailed information about handle 0x14 in the kernel handle table.
 
-```
+```dbgcmd
 kd> !handle 14 13
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -203,7 +203,7 @@ Object: e12751d0  Type: (80ec8db8) Key
 
 The following command shows information about all handles to Section objects in all processes.
 
-```
+```dbgcmd
 !handle 0 3 0 Section
 ...
 PROCESS fffffa8004f48940

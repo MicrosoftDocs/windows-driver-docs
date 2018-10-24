@@ -21,7 +21,7 @@ The INVALID\_MDL\_RANGE bug check has a value of 0x0000012E. This indicates that
 
 The source and target MDLs, as well as the address range length to be mapped are the arguments to the IoBuildPartialMdl() function, i.e.;) .
 
-```
+```cpp
 IoBuildPartialMdl(
         IN PMDL SourceMdl,
         IN OUT PMDL TargetMdl,
