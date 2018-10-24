@@ -137,7 +137,7 @@ function finishPurchaseWithCancellation() {
 ```
 
 > [!NOTE]
-> Cancelation and the balance addition flows using the `DataMart.notifyPurchaseResult` API are still supported. 
+> The cancelation and balance addition flows using the `DataMart.notifyPurchaseResult` API are still supported. 
 
 ## Frequently Asked Questions
 
