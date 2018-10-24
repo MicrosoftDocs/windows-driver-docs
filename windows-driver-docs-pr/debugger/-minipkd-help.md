@@ -53,7 +53,7 @@ Remarks
 
 If an error message similar to the following appears, it indicates that the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols.
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 

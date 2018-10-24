@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lsf** and **lsf-** commands load or unload a source file.
 
-```
+```dbgcmd
 lsf Filename 
 lsf- Filename
 ```

@@ -68,7 +68,7 @@ The **!exchain** extension displays the list of exception handlers for the curre
 
 The list begins with the first handler on the chain (the one that is given the first opportunity to handle an exception) and continues on to the end. The following example shows this extension.
 
-```
+```dbgcmd
 0:000> !exchain
 0012fea8: Prymes!_except_handler3+0 (00407604)
   CRT scope  0, filter: Prymes!dzExcepError+e6 (00401576)

@@ -61,7 +61,7 @@ The evaluated expression is displayed in hexadecimal, decimal, octal, and binary
 
 The following example shows a **.formats** command.
 
-```
+```dbgcmd
 0:000> .formats 1c407e62
 Evaluate expression:
   Hex:     1c407e62

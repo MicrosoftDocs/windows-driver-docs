@@ -80,7 +80,7 @@ Resolution
 
 -   Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
-    ```
+    ```console
     SFC /scannow
     ```
 

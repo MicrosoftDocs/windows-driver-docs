@@ -69,13 +69,13 @@ When the output from *InCommands*, the *InString* string, or the *InFile* file i
 
 Here is an example of a **.foreach** statement that uses the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) command on each token found in the file *myfile.txt*:
 
-```
+```dbgcmd
 0:000> .foreach /f ( place "g:\myfile.txt") { dds place } 
 ```
 
 The **/pS** and **/ps** flags can be used to pass only certain tokens to the specified *OutCommands*. For example, the following statement will skip the first two tokens in the *myfile.txt* file and then pass the third to [**dds**](dds--dps--dqs--display-words-and-symbols-.md). After each token that is passed, it will skip four tokens. The result is that **dds** will be used with the 3rd, 8th, 13th, 18th, and 23rd tokens, and so on:
 
-```
+```dbgcmd
 0:000> .foreach /pS 2 /ps 4 /f ( place "g:\myfile.txt") { dds place } 
 ```
 

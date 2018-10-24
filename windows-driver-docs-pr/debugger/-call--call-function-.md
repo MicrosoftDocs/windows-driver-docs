@@ -95,7 +95,7 @@ The **.call /c** and **.call /C** commands should only be used if an attempt to 
 
 The following code example shows how the **.call /s** command is used.
 
-```
+```dbgcmd
 .call /s KnownFunction UnknownFunction( 1 )
 ```
 

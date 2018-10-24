@@ -263,7 +263,6 @@ For a description of the possible causes, see the description of each code in th
     Arg2: 00000258, Timeout in seconds.
     Arg3: 84e01a70, The thread currently holding on to the Pnp lock.
     Arg4: 82931b24, nt!TRIAGE_9F_PNP on Win7
-
      
     ```
 

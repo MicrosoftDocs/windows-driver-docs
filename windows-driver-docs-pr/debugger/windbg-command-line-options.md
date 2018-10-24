@@ -253,7 +253,7 @@ Pops up this HTML Help window.
 
 When you are running the debugger from the command line, specify arguments for the target application after application's file name. For instance:
 
-```
+```dbgcmd
 windbg myexe arg1 arg2
 ```
 

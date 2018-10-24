@@ -21,8 +21,9 @@ The question mark (**?**) character displays a list of all commands and operator
 
 **Note**   A question mark by itself displays command help. The [**? expression**](---evaluate-expression-.md) syntax evaluates the given expression.
 
+```dbgcmd
     ?
-
+```
 
 ## <span id="ddk_cmd_command_help_dbg"></span><span id="DDK_CMD_COMMAND_HELP_DBG"></span>
 
