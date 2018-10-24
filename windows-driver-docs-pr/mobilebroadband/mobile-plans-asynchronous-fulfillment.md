@@ -141,22 +141,22 @@ function finishPurchaseWithCancellation() {
 
 ## Frequently Asked Questions
 
-1. Is *Transaction ID* still required?
+1. Is *Transaction ID* still required?  
 
-        Mobile operators do not have to return the *Transaction ID* passed to the portal, but they are required to store this value for troubleshooting purposes.
+    Mobile operators do not have to return the *Transaction ID* passed to the portal, but they are required to store this value for troubleshooting purposes.  
 
-2. Which API should be used to transfer control back to Mobile Plans when connectivity is available immediately?
+2. Which API should be used to transfer control back to Mobile Plans when connectivity is available immediately?  
 
-        The `DataMart.notifyPurchaseDelayedProfile` API is supported for this scenario going forward. In this specific case, the *networkRegistrationInterval* parameter should be set to **0**.
+    The `DataMart.notifyPurchaseDelayedProfile` API is supported for this scenario going forward. In this specific case, the *networkRegistrationInterval* parameter should be set to **0**.  
 
-        If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported. 
+    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
 
-3. Is ICCID information still required for the eSIM activation callback?
+3. Is ICCID information still required for the eSIM activation callback?  
 
-        ICCID information is only needed for the adding balance scenario, when the `DataMart.notifyBalanceAddition` API callback is used.
+    ICCID information is only needed for the adding balance scenario, when the `DataMart.notifyBalanceAddition` API callback is used.  
 
-        If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.
+    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
 
-4. What if I still need help?
+4. What if I still need help?  
 
-        Please contact your Microsoft representative.
+    Please contact your Microsoft representative.
