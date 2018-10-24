@@ -3,7 +3,7 @@ title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
-ms.date: 12/22/2017
+ms.date: 10/24/2018
 ms.localizationpriority: medium
 ---
 
@@ -1156,12 +1156,17 @@ bl
        1 enabled  34:5                                      
 ```
 
-From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
+From here, we'll disable the entry (en) event using the **sxd** script debugger command. 
  
 ```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
 Event filter 'en' is now inactive                                                                                      
+```
+
+And then just go and let the script continue to the end.
+
+```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >g                                                                                   
 g                                                                                                                      
 This is a fun test                                                                                                     
@@ -1193,14 +1198,17 @@ k
    [02] outermost                        074:05 (var result = outer())                
 ```
 
-At this point, we want to stop debugging this script, so we detach from it and then type q to quit.  
-
+At this point, we want to stop debugging this script, so we detach from it.  
 
 ```dbgcmd
 >>> Debug [DebuggableSample 34:5] >.detach                  
 .detach                                                     
 Debugger has been detached from script!                     
->>> Debug [<NONE> ] >q                                      
+```
+
+And then type q to quit.
+
+```dbgcmd                             
 q                                                           
 This is a fun test                                          
 Of the script debugger                                      
@@ -1221,27 +1229,6 @@ Caught and returned!
 Test
 
 ```
-
-
-```graphviz
-digraph finite_state_machine {
-    rankdir=LR;
-    size="8,5"
-
-    node [shape = doublecircle]; S;
-    node [shape = point ]; qi
-
-    node [shape = circle];
-    qi -> S;
-    S  -> q1 [ label = "Eliot get's budget!" ];
-    S  -> S  [ label = "Partner Docs Team" ];
-    q1 -> S  [ label = "Take Nap" ];
-    q1 -> q2 [ label = "Dance a jig" ];
-    q2 -> q1 [ label = "Check Fridge" ];
-    q2 -> q2 [ label = "Sleep in" ];
-}
-```
-
 
 
 
