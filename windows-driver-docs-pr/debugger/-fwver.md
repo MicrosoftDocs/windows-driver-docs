@@ -62,7 +62,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !fwver
 
 Firmware Version

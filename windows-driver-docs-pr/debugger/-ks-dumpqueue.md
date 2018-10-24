@@ -66,7 +66,7 @@ This command can take some time to execute.
 
 Here is an example of the **!ks.dumpqueue** display:
 
-```
+```dbgcmd
 kd> !dumpqueue 829493c4
 Filter 829493c4: Output Queue 82990e20:
  Queue 82990e20:

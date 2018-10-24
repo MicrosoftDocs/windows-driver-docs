@@ -63,7 +63,7 @@ The records are displayed in order, with the most recent records first. The reco
 
 Here is an example (in which there is only one record):
 
-```
+```dbgcmd
 0:001> !rpcexts.eeinfo 0xb015f0
 Computer Name: (null)
 ProcessID: 708 (0x2C4)
