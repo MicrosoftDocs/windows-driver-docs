@@ -45,7 +45,7 @@ The *Cardmod.h* C header file provides additional information that is relevant t
 
     -   Adherence to Microsoft Security Development Lifecycle (SDL) Process Guidance.
 
-        -   All plug-ins also need to conform to the applicable portions of the [Microsoft Security Development Lifecycle (SDL) – Process Guidance](http://msdn.microsoft.com/library/windows/desktop/cc307891.aspx) topic. For example, see *No Shared Sections*, described in the SDL Process in Appendix G.
+        -   All plug-ins also need to conform to the applicable portions of the [Microsoft Security Development Lifecycle (SDL) – Process Guidance](https://msdn.microsoft.com/library/windows/desktop/cc307891.aspx) topic. For example, see *No Shared Sections*, described in the SDL Process in Appendix G.
 
         -   Even if the plug-ins are properly signed with a Microsoft signature, non-compliance with the SDL Process might result in a failure to load the plug-ins.
 

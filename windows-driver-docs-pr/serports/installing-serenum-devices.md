@@ -19,7 +19,7 @@ To install a device that is enumerated by Serenum, use the following [*hardware 
 
 Serenum\\*XxxxYyyy*
 
-Where: *Xxxx* is a field of four ASCII characters that specify the EISA Manufacturing ID; *Yyyy* is a field of four ASCII characters that specify the Product ID. Serenum IDs are documented in the [Plug and Play External COM Device Specification](http://msdn.microsoft.com/windows/hardware/gg463189.aspx).
+Where: *Xxxx* is a field of four ASCII characters that specify the EISA Manufacturing ID; *Yyyy* is a field of four ASCII characters that specify the Product ID. Serenum IDs are documented in the [Plug and Play External COM Device Specification](https://msdn.microsoft.com/windows/hardware/gg463189.aspx).
 
  
 

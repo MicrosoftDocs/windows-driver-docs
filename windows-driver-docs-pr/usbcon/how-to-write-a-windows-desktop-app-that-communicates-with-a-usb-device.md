@@ -133,7 +133,7 @@ You can deploy, install, load, and debug your application and the driver by foll
     5.  On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
     6.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
     7.  Change **Debugger to launch** to **Remote Windows Debugger**.
-    8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](http://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+    8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
     9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
 -   **Single computer setup:**
 

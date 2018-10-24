@@ -42,7 +42,7 @@ Studying samples is a practical way to see how working storage drivers are devel
 
 Using code analysis tools during driver development and testing helps to catch performance problems and defects in a storage driver. The [Static Driver Verifier (SDV)](https://msdn.microsoft.com/library/windows/hardware/ff552808) tool is available to discover defects in storage driver code. Included with SDV are compliance [rules](https://msdn.microsoft.com/library/windows/hardware/hh454238) for verifying proper usage of StorPort routines by miniport drivers.
 
-Tests for storage hardware certification are found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Test for storage devices are found in the [Devices.Storage](http://msdn.microsoft.com/library/windows/hardware/jj125097) category of the HCK.
+Tests for storage hardware certification are found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Test for storage devices are found in the [Devices.Storage](https://msdn.microsoft.com/library/windows/hardware/jj125097) category of the HCK.
 
  
 
