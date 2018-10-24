@@ -23,6 +23,7 @@
         "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
         "feedback_product_url": "https://wpdev.uservoice.com/",
         "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"],
+        "titleSuffix": "Windows drivers",
         "ms.prod": "windows-hardware",
         "ms.technology": "windows-devices",
         "ms.author": "windowsdriverdev",
