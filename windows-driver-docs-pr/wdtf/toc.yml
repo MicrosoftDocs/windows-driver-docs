@@ -1,6 +1,8 @@
 - name: "WDTF design guide"
   href: index.md
   items: 
+  - name: "WDTF Quick Start"
+    href: wdtf-quick-start-.md
   - name: "Writing a WDTF SimpleIO plug-in for your device"
     href: writing-a-wdtf-simpleio-plug-in-for-your-device.md
     items: 
@@ -22,8 +24,6 @@
         href: sample-wdtf-scenarios.md
     - name: "Controlling Targets"
       href: controlling-targets.md
-    - name: "WDTF Quick Start"
-      href: wdtf-quick-start-.md
     - name: "Action interfaces"
       href: action-interfaces.md
   - name: "Triaging WDTF-based tests"

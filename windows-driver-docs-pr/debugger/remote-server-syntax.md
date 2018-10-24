@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 To start the server side of the Remote tool, use the following syntax at the command line.
 
-```
+```console
 remote /s Command SessionName [/f Color] [/b] [/u User [/u User...]] [/ud User [/ud User...]] [/v | /-v]
 ```
 
@@ -73,7 +73,7 @@ When starting more than one remote session on a single computer, open a new comm
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```console
 remote /s "i386kd -v" TestSession
 remote /s "cmd" "My Remote Session" /f white /b black /u Server01\Administrators
 remote /s "ntsd -d -g -x" DebugIt /-v

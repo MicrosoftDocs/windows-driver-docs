@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!btb** extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor.
 
-```dbgsytax
+```dbgcmd
 !btb
 ```
 

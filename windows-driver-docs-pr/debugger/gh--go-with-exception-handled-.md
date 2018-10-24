@@ -21,13 +21,13 @@ The **gh** command marks the given thread's exception as having been handled and
 
 User-Mode Syntax
 
-```
+```dbgcmd
 [~Thread] gh[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
 gh[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 

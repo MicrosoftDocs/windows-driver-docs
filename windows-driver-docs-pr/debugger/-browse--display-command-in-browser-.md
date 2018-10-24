@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.browse** command displays the output of a specified command in a new [Command Browser window](command-browser-window.md).
 
-```
+```dbgcmd
 .browse Command
 ```
 

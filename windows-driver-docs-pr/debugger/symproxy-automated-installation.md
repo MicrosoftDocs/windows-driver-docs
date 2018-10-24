@@ -26,8 +26,8 @@ These steps along with the Install.cmd script below can help automate the instal
 4.  (Optionally) Create an empty file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. This accepts the EULA for the Microsoft Public Symbol Store.
 5.  Determine the parameters for Install.cmd and run it.
 6.  Configure the clients symbol path using the server name that you created.
-    ```
-    SRV*\\MachineName\Symbols*http://MachineName/Symbols
+    ```dbgcmd
+    SRV*\\MachineName\Symbols*https://MachineName/Symbols
     ```
 
 The Install.cmd script requires 3 parameters:
@@ -40,14 +40,14 @@ To clear the MIME Type inheritance, an XML file is needed to drive the associate
 
 Example Install.Cmd parameter usage:
 
-```
+```console
 Install.cmd D:\SymStore\Symbols CONTOSO\SymProxyService Pa$$word
 ```
 
 ## <span id="install.cmd"></span><span id="INSTALL.CMD"></span>Install.cmd
 
 
-```
+```bat
 @echo off
 
 SET VirDirectory=%1
@@ -102,7 +102,7 @@ rem Add * to the MIME Types of the 'Default Web Site'
 ## <span id="staticcontentclear.xml"></span><span id="STATICCONTENTCLEAR.XML"></span>staticContentClear.xml
 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <appcmd>
     <CONFIG CONFIG.SECTION="system.webServer/staticContent"                  path="MACHINE/WEBROOT/APPHOST">
@@ -119,15 +119,15 @@ The system should now be ready to acquire and serve files. To test it, start by 
 
 Configure a debugger to use this symbol path:
 
-```
-srv*\\MachineName\Symbols*http://MachineName/Symbols
+```dbgcmd
+srv*\\MachineName\Symbols*https://MachineName/Symbols
 ```
 
 If *MissTimeout* is enabled (it is set to 300 seconds by default), running the .reload /f command twice should result in much faster execution the second time.
 
 To view the location of the PDBs being referenced, use the lm (list modules) command. The path to the PDBs should all begin with \\\\MachineName\\Symbols.
 
-If directory browsing is enabled on the web site, browse to http://MachineName/Symbols to see the files that are cached.
+If directory browsing is enabled on the web site, browse to https://MachineName/Symbols to see the files that are cached.
 
 Open the Performance Monitor and view the Symbol Proxy counters.
 

@@ -123,7 +123,7 @@ The values for the first hot key are described in the following table.
 <span id="Dump2Key"></span><span id="dump2key"></span><span id="DUMP2KEY"></span>**Dump2Key**  
 The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
 
-```
+```cpp
 const UCHAR keyToScanTbl[134] = { 
         0x00,0x29,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,
         0x0A,0x0B,0x0C,0x0D,0x7D,0x0E,0x0F,0x10,0x11,0x12,

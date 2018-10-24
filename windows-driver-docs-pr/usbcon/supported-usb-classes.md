@@ -257,8 +257,8 @@ Windows 8.1
 Windows 8
 
 Uaspstor.sys is the class driver for SuperSpeed USB devices that support bulk stream endpoints. For more information see:
--   [Loading a UASP Storage Driver as a Class Driver on xHCI](http://msdn.microsoft.com/library/windows/hardware/gg585600.aspx)
--   [USB Attached SCSI (UAS) Best Practices for Windows 8](http://msdn.microsoft.com/library/windows/hardware/jj248714.aspx)
+-   [Loading a UASP Storage Driver as a Class Driver on xHCI](https://msdn.microsoft.com/library/windows/hardware/gg585600.aspx)
+-   [USB Attached SCSI (UAS) Best Practices for Windows 8](https://msdn.microsoft.com/library/windows/hardware/jj248714.aspx)
 
 Hub (09h)
 **USB**

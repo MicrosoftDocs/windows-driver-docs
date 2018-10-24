@@ -21,8 +21,9 @@ The **!amli bd** extension temporarily disables an AML breakpoint.
 
 Syntax
 
+```dbgcmd
     !amli bd Breakpoint!amli bd *
-
+```
 
 ## <span id="ddk__amli_bd_dbg"></span><span id="DDK__AMLI_BD_DBG"></span>Parameters
 

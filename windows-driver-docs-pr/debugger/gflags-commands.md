@@ -27,61 +27,61 @@ To use GFlags, type the following commands at the command line.
 
 To open the GFlags dialog box:
 
-```
+```console
 gflags
 ```
 
 To set or clear global flags in the registry:
 
-```
+```console
 gflags /r [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for the current session:
 
-```
+```console
 gflags /k [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for an image file:
 
-```
+```console
 gflags /i ImageFile [{+ | -}Flag [{+ | -}Flag...]]
 gflags /i ImageFile /tracedb SizeInMB
 ```
 
 To set or clear the Special Pool feature (Windows Vista and later)
 
-```
+```console
 gflags {/r | /k} {+ | -}spp {PoolTag | 0xSize}
 ```
 
 To enable or disable the Object Reference Tracing feature (Windows Vista and later)
 
-```
+```console
 gflags {/ro | /ko} [/p] [/i ImageFile | /t PoolTag;[PoolTag...]]
 ```
 
-```
+```console
 gflags {/ro | /ko} /d
 ```
 
 To enable and configure page heap verification:
 
-```
+```console
 gflags /p /enable ImageFile  [ /full [/backwards] | /random Probability | /size SizeStart SizeEnd | /address AddressStart AddressEnd | /dlls DLL [DLL...] ] 
 [/debug ["DebuggerCommand"] | /kdebug] [/unaligned] [/notraces] [/fault Rate [TimeOut]] [/leaks] [/protect] [/no_sync] [/no_lock_checks] 
 ```
 
 To disable page heap verification:
 
-```
+```console
 gflags /p [/disable ImageFile] [/?]
 ```
 
 To display help:
 
-```
+```console
 glags /?
 ```
 

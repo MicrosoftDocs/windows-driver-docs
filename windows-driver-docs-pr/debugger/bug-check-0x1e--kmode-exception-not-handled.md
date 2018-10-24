@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## KMODE\_EXCEPTION\_NOT\_HANDLED Parameters
 
@@ -112,7 +112,7 @@ The error that generates this message can occur after the first restart during W
 
 2.  The first parameter to **NT!PspUnhandledExceptionInSystemThread** is a pointer to a structure, which contains pointers to an **except** statement:
 
-    ```
+    ```cpp
     typedef struct _EXCEPTION_POINTERS {
         PEXCEPTION_RECORD ExceptionRecord;
         PCONTEXT ContextRecord;
@@ -135,7 +135,7 @@ The error that generates this message can occur after the first restart during W
 
 Here is an example of bug check 0x1E on an x86 processor:
 
-```
+```dbgcmd
 kd> .bugcheck                 get the bug check data
 Bugcheck code 0000001e
 Arguments c0000005 8013cd0a 00000000 0362cffff

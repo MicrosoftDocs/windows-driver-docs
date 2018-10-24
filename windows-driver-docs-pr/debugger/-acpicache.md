@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!acpicache** extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 
-    !acpicache [DisplayLevel]
-
+```dbgcmd
+!acpicache [DisplayLevel]
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

@@ -20,7 +20,7 @@ The PID of a process must be specified. You may specify a thread within that pro
 
 In the following example, the process ID is 0x278 and the thread ID is omitted:
 
-```
+```console
 D:\wmsg>dbgrpc -t -P 278
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME

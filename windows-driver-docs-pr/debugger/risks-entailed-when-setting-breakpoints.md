@@ -15,7 +15,7 @@ When you are setting a [breakpoints](using-breakpoints.md) by specifying a memor
 
 For example, consider the following disassembled code.
 
-```
+```dbgcmd
 770000f1 5e               pop     esi
 770000f2 5b               pop     ebx
 770000f3 c9               leave

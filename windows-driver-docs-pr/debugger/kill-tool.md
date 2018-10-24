@@ -21,7 +21,7 @@ Kill.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="Kill_Tool_command-line_options"></span><span id="kill_tool_command-line_options"></span><span id="KILL_TOOL_COMMAND-LINE_OPTIONS"></span>Kill Tool command-line options
 
 
-```
+```console
 kill [/f] { PID | Pattern* }
 ```
 
@@ -45,19 +45,19 @@ Before using a pattern that might match many process or window names unintention
 
 The following command terminates processes whose names begin with "myapp."
 
-```
+```console
 kill myapp*
 ```
 
 The following command terminates the process whose process ID (PID) is 2520:
 
-```
+```console
 kill 2520
 ```
 
 The following command terminates processes whose names begin with "my\*." It does not prompt for confirmation. This command succeeds even when this process is a system service:
 
-```
+```console
 kill /f my*
 ```
 

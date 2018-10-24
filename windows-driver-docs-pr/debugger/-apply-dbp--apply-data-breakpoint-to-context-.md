@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **.apply\_dbp** command applies the current process' existing data breakpoints to the specified register context.
 
+```dbgcmd
     .apply_dbp [/m Context] 
-
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

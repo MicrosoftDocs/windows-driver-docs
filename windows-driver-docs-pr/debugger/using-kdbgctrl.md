@@ -63,7 +63,7 @@ In some cases you might want to set up the target computer for kernel debugging,
 
 To block kernel debugging, set up the target computer by using commands similar to the following:
 
-```
+```console
 bcdedit /debug on
 bcdedit /dbgsettings 1394 channel:32 /start DISABLE /noumex
 ```
@@ -72,14 +72,14 @@ When you restart the target computer, it will be prepared for kernel debugging, 
 
 When you are ready, you can enable kernel debugging (without restarting the target computer) by entering the following commands.
 
-```
+```console
 kdbgctrl -db
 kdbgctrl -e
 ```
 
 Later, you can disable kernel debugging by entering the following commands.
 
-```
+```console
 kdbgctrl -d
 kdbgctrl -eb
 ```
@@ -98,31 +98,31 @@ The default size of the DbgPrint buffer is 4 KB on a free build of Windows, and 
 
 To display all the current settings, use the following command:
 
-```
+```console
 kdbgctrl -c -ca -cu -cb -cdb 
 ```
 
 To restore the default settings, use the following command:
 
-```
+```console
 kdbgctrl -e -da -eu -db -sdb 0x1000 
 ```
 
 To lock out the host computer so that it only is contacted on exceptions, use the following command:
 
-```
+```console
 kdbgctrl -d -ea -eu 
 ```
 
 To disable all kernel debugging, use the following command:
 
-```
+```console
 kdbgctrl -d -da 
 ```
 
 If you are disabling all kernel debugging, you may also wish to increase the size of the DbgPrint buffer. This insures that all messages will be saved in case you need to see them later. If you have a megabyte of memory to spare, you might use the following command:
 
-```
+```console
 kdbgctrl -sdb 0x100000 
 ```
 

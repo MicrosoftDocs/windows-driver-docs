@@ -6,11 +6,9 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Record a trace 
+#  Time Travel Debugging - Record a trace 
 
 This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
 
@@ -77,7 +75,7 @@ To attach to a process and record a TTD trace, follow these steps.
 
 5. When a trace file is opened, the debugger will automatically index the trace file. Indexing allows for more accurate and faster memory value look ups. This indexing process will take longer for larger trace files.
 
-    ```
+    ```dbgcmd
     ...
     00007ffc`61f789d4 c3              ret
     0:000> !index

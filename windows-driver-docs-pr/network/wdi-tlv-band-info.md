@@ -3,7 +3,7 @@ title: WDI_TLV_BAND_INFO
 author: windows-driver-content
 description: WDI_TLV_BAND_INFO is a TLV that contains band information.
 ms.assetid: 37F1CE39-5471-489A-8DA2-F058B631B31F
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BAND_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

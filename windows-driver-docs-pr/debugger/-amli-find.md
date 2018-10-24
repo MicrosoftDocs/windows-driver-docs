@@ -21,7 +21,9 @@ The **!amli find** extension finds an ACPI namespace object.
 
 Syntax
 
+```dbgcmd
     !amli find Name
+```
 
 ## <span id="ddk__amli_find_dbg"></span><span id="DDK__AMLI_FIND_DBG"></span>Parameters
 

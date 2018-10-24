@@ -183,7 +183,7 @@ The **ExtExtension** class includes the following methods, which can be used by 
 
 The **ExtExtension** class also contains the following fields that can be used by the subclass:
 
-``` syntax
+```cpp
 class ExtExtension
 {
 public:

@@ -3,7 +3,7 @@ title: OID_WDI_SET_POWER_STATE
 author: windows-driver-content
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
 ms.assetid: f1453ace-5e36-464e-96f0-e578890cdf3f
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_POWER_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

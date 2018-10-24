@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The **!atom** extension displays the formatted atom table for the specified atom or for all atoms of the current process.
 
+```dbgcmd
     !atom [Address] 
+```
 
 ## <span id="ddk__atom_dbg"></span><span id="DDK__ATOM_DBG"></span>Parameters
 

@@ -5,7 +5,7 @@ description: The HSPluginGetVersion function is exported by the plugin DLL and i
 ms.assetid: dfdd534c-43c0-4d96-b85b-de9c2830322d
 keywords: 
 - HSPluginGetVersion function Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

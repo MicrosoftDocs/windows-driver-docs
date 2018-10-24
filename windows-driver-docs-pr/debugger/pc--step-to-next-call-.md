@@ -21,13 +21,13 @@ The **pc** command executes the program until a call instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pc [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pc [r] [= StartAddress] [Count] 
 ```
 

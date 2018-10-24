@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes how to use Xperf with Netmon to analyze USB trace data.
 
-You can use Xperf with Netmon to analyze trace data or to analyze kernel events on the same timeline as a USB trace. Xperf is in the Windows Performance Toolkit, which is part of the Windows Software Development Kit (SDK) for Windows 8. You can download the SDK from [this Web site](http://msdn.microsoft.com/windows/hardware/hh852363).
+You can use Xperf with Netmon to analyze trace data or to analyze kernel events on the same timeline as a USB trace. Xperf is in the Windows Performance Toolkit, which is part of the Windows Software Development Kit (SDK) for Windows 8. You can download the SDK from [this Web site](https://msdn.microsoft.com/windows/hardware/hh852363).
 
 ## In this section
 

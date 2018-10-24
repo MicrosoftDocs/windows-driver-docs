@@ -29,7 +29,7 @@ The most effective way to collect this information is by logging everything in t
 
 To maintain a rolling memory-based log, use the following code:
 
-```
+```cpp
 typedef struct _LOGENTRY {
     ULONG Tag;
     ULONG Arg[3];
@@ -44,7 +44,7 @@ LOGENTRY g_Log [LOGSIZE];
     g_Log [i].Arg [1] = (ULONG)(arg2); \
     g_Log [i].Arg [2] = (ULONG)(arg3); \
 } while (0)
-```
+```dbgcmd
 
 Then, use a simple "dc g\_Log" to view the contents of the **g\_Log** array in the debugger.
 
@@ -93,7 +93,7 @@ The following example uses the above memory-based scheme to determine the cause 
 
 Log excerpts are as follows:
 
-```
+```text
 f9494b80  3c435044 816e2c90 00000000 00000000  DPC<.,n.........
 f9494b90  656c6544 816e2c90 81750260 00000000  Dele.,n.`.u.....
 f9494ba0  706d7441 816e2c90 ffa4d418 00000000  Atmp.,n.........
@@ -110,7 +110,7 @@ This first log excerpt is representative of the normal streaming state. In the f
 
 This next excerpt includes the last entries in the log right before the stall occurred.
 
-```
+```text
 f949b430  3c435044 816e2c90 00000000 00000000  DPC<.,n.........
 f949b440  656c6544 816e2c90 ffac4de8 00000000  Dele.,n..M......
 f949b450  706d7441 816e2c90 ffa4d418 00000000  Atmp.,n.........

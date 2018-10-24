@@ -20,7 +20,7 @@ If you plan to debug the service application from the beginning of its execution
 
 Locate or create the following registry key, where *ProgramName* is the name of the service application's executable file:
 
-```
+```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ProgramName 
 ```
 
@@ -30,7 +30,7 @@ Under this registry key, create a string data value entitled **Debugger**. The v
 
 -   If you plan to debug locally, use a string such as the following:
 
-    ```
+    ```console
     c:\Debuggers\windbg.exe 
     ```
 
@@ -38,7 +38,7 @@ Under this registry key, create a string data value entitled **Debugger**. The v
 
 -   If you plan to use remote debugging, specify NTSD with the -noio option. This causes NTSD to run without any console of its own, accessible only through the remote connection. For example:
 
-    ```
+    ```console
     c:\Debuggers\ntsd.exe -server ServerTransport -noio -y SymbolPath 
     ```
 
@@ -46,13 +46,13 @@ Under this registry key, create a string data value entitled **Debugger**. The v
 
 -   If you plan to control the user-mode debugger from a kernel-mode debugger, specify NTSD with the -d option. For example:
 
-    ```
+    ```console
     c:\Debuggers\ntsd.exe -d -y SymbolPath 
     ```
 
     If you plan to use this method and your user-mode symbols will be accessed from a symbol server, you should combine this method with remote debugging. In this case, specify NTSD with the -ddefer option. Choose a transport protocol that is implemented by the Windows kernel without interfacing with a user-mode service, such as TCP or NPIPE. For example:
 
-    ```
+    ```console
     c:\Debuggers\ntsd.exe -server ServerTransport -ddefer -y SymbolPath 
     ```
 
@@ -72,7 +72,7 @@ This preparatory step involves registering the chosen debugger as the postmortem
 
 -   If you plan to debug locally, use a command such as the following:
 
-    ```
+    ```console
     windbg -iae 
     ```
 
@@ -80,7 +80,7 @@ This preparatory step involves registering the chosen debugger as the postmortem
 
 -   If you plan to use remote debugging, specify NTSD with the -noio option. This causes NTSD to run without any console of its own, accessible only through the remote connection. To install a postmortem debugger that includes the -server parameter, you must manually edit the registry; for details, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md). For example, the **Debugger** value of the **AeDebug** key could be the following:
 
-    ```
+    ```console
     ntsd -server npipe:pipe=myproc%x -noio -p %ld -e %ld -g -y SymbolPath 
     ```
 
@@ -88,13 +88,13 @@ This preparatory step involves registering the chosen debugger as the postmortem
 
 -   If you plan to control the user-mode debugger from a kernel-mode debugger, specify NTSD with the -d option. For example:
 
-    ```
+    ```console
     ntsd -iaec -d -y SymbolPath 
     ```
 
     If you choose this method and intend to access user-mode symbols from a symbol server, you should combine this method with remote debugging. In this case, specify NTSD with the -ddefer option. Choose a transport protocol that is implemented by the Windows kernel without interfacing with a user-mode service, such as TCP or NPIPE. To install a postmortem debugger that includes the -server parameter, you must manually edit the registry; for details, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md). For example, the **Debugger** value of the **AeDebug** key could be the following:
 
-    ```
+    ```console
     ntsd -server npipe:pipe=myproc%x -ddefer -p %ld -e %ld -g -y SymbolPath 
     ```
 
@@ -108,7 +108,7 @@ If you plan to launch the debugger automatically (either when the service starts
 
 Locate the following registry key:
 
-```
+```text
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
 ```
 
@@ -128,13 +128,13 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
 1.  Issue the following Service Configuration tool (Sc.exe) command, where *ServiceName* is the name of the service:
 
-    ```
+    ```console
     sc qc ServiceName 
     ```
 
     This displays the current configuration values for the service. The value of interest is BINARY\_PATH\_NAME, which specifies the command line used to launch the service control program. In this scenario, because your service is not yet isolated, this command line includes a directory path, Svchost.exe, and some SvcHost parameters, including the -k switch, followed by a group name. For example, it may look something like this:
 
-    ```
+    ```console
     %SystemRoot%\System32\svchost.exe -k LocalServiceNoNetwork 
     ```
 
@@ -142,7 +142,7 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
 2.  Locate the following registry key:
 
-    ```
+    ```text
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SvcHost 
     ```
 
@@ -152,7 +152,7 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
 4.  Under the same registry key, create a new key with the same name you used in step 2. For example:
 
-    ```
+    ```text
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SvcHost\TempGrp 
     ```
 
@@ -162,13 +162,13 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
     For example, the old key might be named this:
 
-    ```
+    ```text
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SvcHost\LocalServiceNoNetwork 
     ```
 
     and it might contain values such as **CoInitializeSecurityParam**, **AuthenticationCapabilities**, and other values. You would go to the newly created key:
 
-    ```
+    ```text
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SvcHost\TempGrp 
     ```
 
@@ -178,7 +178,7 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
 6.  Use the following Service Configuration tool command to revise the path found in step 1:
 
-    ```
+    ```console
     sc config ServiceName binPath= "RevisedPath" 
     ```
 
@@ -186,7 +186,7 @@ There are three methods by which you can isolate a service. Microsoft recommends
 
     For example, your command might look like this:
 
-    ```
+    ```console
     sc config MyService binPath= "%SystemRoot%\System32\svchost.exe -k TempGrp" 
     ```
 
@@ -200,21 +200,21 @@ After you have completed your debugging, if you want to return this service to t
 
 1.  Issue the following Service Configuration tool (Sc.exe) command, where *ServiceName* is the name of the service:
 
-    ```
+    ```console
     sc config ServiceName type= own 
     ```
 
     The space after the equal sign is required.
 
 2.  Restart the service, by using the following commands:
-    ```
+    ```console
     net stop ServiceName 
     net start ServiceName 
     ```
 
 This alternative is not the recommended method because it can alter the behavior of the service. If you do use this method, use the following command to revert to the normal behavior after you have completed your debugging:
 
-```
+```console
 sc config ServiceName type= share 
 ```
 
@@ -224,19 +224,19 @@ sc config ServiceName type= share
 
 2.  Issue the following Service Configuration tool (Sc.exe) command, where *ServiceName* is the name of the service:
 
-    ```
+    ```console
     sc qc ServiceName 
     ```
 
     This command displays the current configuration values for the service. The value of interest is BINARY\_PATH\_NAME, which specifies the command line used to launch the service control program. In this scenario, because your service is not yet isolated, this command line will include a directory path, Svchost.exe, and probably some SvcHost parameters. For example, it may look something like this:
 
-    ```
+    ```console
     %SystemRoot%\System32\svchost.exe -k LocalServiceNoNetwork 
     ```
 
 3.  To revise this path, issue the following command:
 
-    ```
+    ```console
     sc config ServiceName binPath= "RevisedPath" 
     ```
 
@@ -244,14 +244,14 @@ sc config ServiceName type= share
 
     For example, your command might look like this:
 
-    ```
+    ```console
     sc config MyService binPath= "%SystemRoot%\System32\svchost2.exe -k LocalServiceNoNetwork" 
     ```
 
     You can use the **sc qc** command again to review the change you have made.
 
 4.  Restart the service by using the following commands:
-    ```
+    ```console
     net stop ServiceName 
     net start ServiceName 
     ```

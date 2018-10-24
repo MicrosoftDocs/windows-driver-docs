@@ -3,7 +3,7 @@ title: WDI_TLV_DOT11_RESET_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_DOT11_RESET_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DOT11_RESET.
 ms.assetid: 14F3DECD-E875-44BB-969B-705B075E4636
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DOT11_RESET_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

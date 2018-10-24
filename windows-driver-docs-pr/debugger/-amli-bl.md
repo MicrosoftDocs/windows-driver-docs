@@ -21,8 +21,9 @@ The **!amli bl** extension displays a list of all AML breakpoints.
 
 Syntax
 
+```dbgcmd
    !amli bl
-
+```
 
 ## <span id="ddk__amli_bl_dbg"></span><span id="DDK__AMLI_BL_DBG"></span>
 

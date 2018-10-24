@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!ate** extension displays the alternate page table entry (ATE) for the specified address.
 
+```dbgcmd
     !ate Address
-    
+```    
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 

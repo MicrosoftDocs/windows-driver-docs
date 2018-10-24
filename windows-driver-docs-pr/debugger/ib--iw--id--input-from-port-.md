@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ib**, **iw**, and **id** commands read and display a byte, word, or double word from the selected port.
 
-```
+```dbgcmd
 ib Address 
 iw Address 
 id Address

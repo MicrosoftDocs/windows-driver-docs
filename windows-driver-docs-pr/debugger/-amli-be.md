@@ -21,8 +21,9 @@ The **!amli be** extension enables an AML breakpoint.
 
 Syntax
 
+```dbgcmd
     !amli be Breakpoint!amli be *
-
+```
 
 ## <span id="ddk__amli_be_dbg"></span><span id="DDK__AMLI_BE_DBG"></span>Parameters
 

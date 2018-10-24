@@ -21,15 +21,18 @@ The **!analyze** extension displays information about the current exception or b
 
 User-Mode
 
+```dbgcmd
     !analyze [-v] [-f | -hang] [-D BucketID] 
     !analyze -c [-load KnownIssuesFile | -unload | -help ]
-
+```
 
 Kernel-Mode
-    
+
+```dbgcmd    
     !analyze [-v] [-f | -hang] [-D BucketID] 
     !analyze -c [-load KnownIssuesFile | -unload | -help ]
     !analyze -show BugCheckCode [BugParameters]
+```
 
 ## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
 

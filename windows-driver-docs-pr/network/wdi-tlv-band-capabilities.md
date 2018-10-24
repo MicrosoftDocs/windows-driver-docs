@@ -3,7 +3,7 @@ title: WDI_TLV_BAND_CAPABILITIES
 author: windows-driver-content
 description: WDI_TLV_BAND_CAPABILITIES is a TLV that contains the capabilities of a band.
 ms.assetid: ABD198FE-8E81-4AF3-BB3D-D78AEB75782F
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BAND_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

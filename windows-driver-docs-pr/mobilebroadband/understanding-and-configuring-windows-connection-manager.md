@@ -25,7 +25,7 @@ This topic describes how Windows automatically manages physical wireless connect
 ## <span id="Connection_management_policies"></span><span id="connection_management_policies"></span><span id="CONNECTION_MANAGEMENT_POLICIES"></span>Connection management policies
 
 
-Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](http://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
+Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](https://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
 
 ### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
 

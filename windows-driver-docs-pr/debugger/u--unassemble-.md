@@ -21,7 +21,7 @@ The **u\*** commands display an assembly translation of the specified program co
 
 This command should not be confused with the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
-```
+```dbgcmd
 u[u|b] Range 
 u[u|b] Address
 u[u|b] 

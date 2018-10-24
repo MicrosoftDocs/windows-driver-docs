@@ -164,7 +164,7 @@ The following table describes the [sensor data fields](https://msdn.microsoft.co
 <td><p><strong>SENSOR_DATA_TYPE_CITY</strong></p></td>
 <td><p>[ICivicAddressReport::GetCity](http://go.microsoft.com/fwlink/p/?linkid=157828)</p>
 <p>[LocationDisp.DispCivicAddressReport.City](http://go.microsoft.com/fwlink/p/?linkid=157830)</p>
-<p>[Windows.Devices. Geolocation.CivicAddress](http://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx)</p></td>
+<p>[Windows.Devices. Geolocation.CivicAddress](https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_COUNTRY_REGION</strong></p></td>

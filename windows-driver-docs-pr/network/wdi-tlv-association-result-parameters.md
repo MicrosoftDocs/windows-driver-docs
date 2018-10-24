@@ -3,7 +3,7 @@ title: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS is a TLV that contains parameters for an association result.
 ms.assetid: A6F29084-EF36-43C4-B646-E071E755E110
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESULT_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

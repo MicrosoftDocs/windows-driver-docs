@@ -20,7 +20,7 @@ If an endpoint number is specified, information about that endpoint is shown. If
 
 The following example displays all endpoints. This is often a useful way to obtain process IDs and cell numbers that can be used as arguments for additional commands:
 
-```
+```console
 D:\wmsg>dbgrpc -e
 Searching for endpoint info ...
 ## PID  CELL ID   ST PROTSEQ        ENDPOINT

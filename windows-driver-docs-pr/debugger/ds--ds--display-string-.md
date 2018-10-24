@@ -23,7 +23,7 @@ These commands do not display null-delimited character strings, but rather strin
 
 If you have the address of the characters of a Unicode string then use the du command instead. Use the da command to display ASCII characters. For more information, see [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](https://docs.microsoft.com/windows-hardware/drivers/debugger/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor).
 
-```
+```dbgcmd
 d{s|S} [/c Width] [Address]
 ```
 

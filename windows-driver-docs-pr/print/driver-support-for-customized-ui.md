@@ -30,11 +30,11 @@ While print preferences are contextual to the app that is printing, printer noti
 
 ![printer notification behavior flowchart](images/notificationbhvr.png)
 
-**Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](http://msdn.microsoft.com/library/windows/desktop/ms633505.aspx), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](http://msdn.microsoft.com/library/windows/desktop/ms633504.aspx)
+**Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](https://msdn.microsoft.com/library/windows/desktop/ms633505.aspx), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](https://msdn.microsoft.com/library/windows/desktop/ms633504.aspx)
 
  
 
-**Creating Driver Events**. V4 print drivers use a DriverEvent XML file to describe Bidi queries and the triggers that should cause a driver event to be raised. And it is important to note that driver events only support standard strings. For more information about standard strings, see [AsyncUI Default Resource File String Resources](http://msdn.microsoft.com/library/cc746159.aspx). In the current implementation, this will cause an [AsyncUIBalloon](http://msdn.microsoft.com/library/cc238009(PROT.10).aspx) message to be created and published using the [MS-PAN protocol](http://msdn.microsoft.com/library/cc237960(PROT.13).aspx). This implementation may change in the future to improve performance, so it is crucial to develop your v4 print driver such that it does not take dependencies on the underlying protocol.
+**Creating Driver Events**. V4 print drivers use a DriverEvent XML file to describe Bidi queries and the triggers that should cause a driver event to be raised. And it is important to note that driver events only support standard strings. For more information about standard strings, see [AsyncUI Default Resource File String Resources](https://msdn.microsoft.com/library/cc746159.aspx). In the current implementation, this will cause an [AsyncUIBalloon](https://msdn.microsoft.com/library/cc238009(PROT.10).aspx) message to be created and published using the [MS-PAN protocol](https://msdn.microsoft.com/library/cc237960(PROT.13).aspx). This implementation may change in the future to improve performance, so it is crucial to develop your v4 print driver such that it does not take dependencies on the underlying protocol.
 
 The following diagram shows the protocol utilization.
 
@@ -62,10 +62,10 @@ The following diagram shows the protocol utilization.
 **Driver Event XML Validation**. As long as you describe your DriverEvent XML properly in the driver manifest, the XML file is automatically validated by the INFGate tool.
 
 ## Related topics
-[AsyncUIBalloon](http://msdn.microsoft.com/library/cc238009(PROT.10).aspx)  
-[AsyncUI Default Resource File String Resources](http://msdn.microsoft.com/library/cc746159.aspx)  
+[AsyncUIBalloon](https://msdn.microsoft.com/library/cc238009(PROT.10).aspx)  
+[AsyncUI Default Resource File String Resources](https://msdn.microsoft.com/library/cc746159.aspx)  
 [**IPrinterQueue::SendBidiQuery**](https://msdn.microsoft.com/library/windows/hardware/hh846197)  
-[MS-PAN protocol](http://msdn.microsoft.com/library/cc237960(PROT.13).aspx)  
+[MS-PAN protocol](https://msdn.microsoft.com/library/cc237960(PROT.13).aspx)  
 
 
 

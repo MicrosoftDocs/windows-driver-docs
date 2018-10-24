@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 The following are topics related driver signing:
 
 [Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver)
-[Windows Hardware Certification](http://msdn.microsoft.com/windows/hardware/gg463010.aspx)
+[Windows Hardware Certification](https://msdn.microsoft.com/windows/hardware/gg463010.aspx)
 [Dashboard Services](https://msdn.microsoft.com/library/windows/hardware/br230803)
 [Driver Signing Requirements for Windows](https://msdn.microsoft.com/library/windows/hardware/dn653563)
 [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md)
