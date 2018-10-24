@@ -28,12 +28,3 @@ Use the docs in this section to help you learn about the different mobile operat
 -   [Understanding and configuring Windows Connection Manager](understanding-and-configuring-windows-connection-manager.md)
 
 -   [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
-
- 
-
- 
-
-
-
-
-
