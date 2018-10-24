@@ -1223,6 +1223,27 @@ Test
 ```
 
 
+```graphviz
+digraph finite_state_machine {
+    rankdir=LR;
+    size="8,5"
+
+    node [shape = doublecircle]; S;
+    node [shape = point ]; qi
+
+    node [shape = circle];
+    qi -> S;
+    S  -> q1 [ label = "Eliot get's budget!" ];
+    S  -> S  [ label = "Partner Docs Team" ];
+    q1 -> S  [ label = "Take Nap" ];
+    q1 -> q2 [ label = "Dance a jig" ];
+    q2 -> q1 [ label = "Check Fridge" ];
+    q2 -> q2 [ label = "Sleep in" ];
+}
+```
+
+
+
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>JavaScript Resources
 
