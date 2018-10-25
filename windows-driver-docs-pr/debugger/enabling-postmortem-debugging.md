@@ -112,7 +112,7 @@ C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe –I
 
 This updates the registry key with these values.
 
-```console
+```reg
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug
 Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe" -p %ld -e %ld –g
 ```
@@ -125,9 +125,10 @@ C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe –I
 
 This updates the registry key with these values.
 
-    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
-    Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe" -p %ld -e %ld –g
-
+```reg
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
+Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe" -p %ld -e %ld –g
+```
 
 ## <span id="Configuring"></span><span id="configuring"></span><span id="CONFIGURING"></span>Configuring Post Mortem Debuggers
 

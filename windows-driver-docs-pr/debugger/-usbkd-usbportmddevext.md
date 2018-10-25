@@ -38,7 +38,7 @@ Examples
 
 Here is an example of the output of **!usbportmddevext**.
 
-```
+```dbgcmd
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 
