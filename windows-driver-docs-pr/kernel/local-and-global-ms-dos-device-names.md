@@ -1,3 +1,4 @@
+---
 title: Local and Global MS-DOS Device Names
 author: windows-driver-content
 description: Local and Global MS-DOS Device Names
@@ -8,10 +9,6 @@ ms.localizationpriority: medium
 ---
 
 # Local and Global MS-DOS Device Names
-
-
-
-
 
 The Microsoft Windows 2000 and later versions of the Windows NT-based operating system maintain multiple versions of the **DosDevices** directory.
 
