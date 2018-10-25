@@ -82,7 +82,7 @@ This command may take time to execute, especially if the ACPI filter driver is l
 
 Here is an example of the **!ks.pciks** display:
 
-```
+```dbgcmd
 kd> !pciks
 1 Kernel Streaming FDOs found:
     Functional Device 82a17690 [\Driver\smwdm]
