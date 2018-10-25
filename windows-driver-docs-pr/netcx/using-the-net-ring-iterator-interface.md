@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-A **NET_RING** is a circular buffer that contains network data. Each packet queue in a NetAdapterCx client driver has two rings: a *packet ring* for packet descriptors, and a *fragment ring* for packet fragment descriptors. NetAdapterCx client drivers access elements and perform operations on net rings by calling into the Net Ring Iterator interface.
+A **NET_RING** is a circular buffer that contains network data. Each packet queue has two rings: a *packet ring* for packet descriptors, and a *fragment ring* for each packet's fragment descriptors. NetAdapterCx client drivers access elements and perform operations on net rings by calling into the Net Ring Iterator interface.
 
-This topic describes the Net Ring Iterator interface and its underlying post and drain concepts. For more information about packets, fragments, and net rings in general, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
+This topic describes the Net Ring Iterator interface and its underlying post and drain concepts. For more information about net rings in general, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
 ## NET_RING post and drain semantics
 
