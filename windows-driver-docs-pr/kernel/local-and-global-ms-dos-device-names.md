@@ -1,4 +1,3 @@
----
 title: Local and Global MS-DOS Device Names
 author: windows-driver-content
 description: Local and Global MS-DOS Device Names
@@ -42,7 +41,7 @@ UNICODE_STRING symbolicLinkName; // Initializing below.
 NTSTATUS status;
 
 if (IoIsWdmVersionAvailable(1, 0x10)) {
-    // We&#39;re on Windows 2000 or later, so we use \DosDevices\Global.
+    // We're on Windows 2000 or later, so we use \DosDevices\Global.
  
     RtlInitUnicodeString(&symbolicLinkName, L"\\DosDevices\\Global\\SymbolicLinkName");
 
