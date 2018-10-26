@@ -22,7 +22,11 @@ Errors from a [Video Present Network (VidPN)](multiple-monitors-and-video-presen
 
 TMM determines the [IViewHelper](https://msdn.microsoft.com/library/windows/hardware/ff568164) COM interface object through the **UserModeDriverGUID** string registry value. Hardware vendors should add this value under the registry keys that the **DeviceKey** member of the DISPLAY\_DEVICE structure specifies. A call to the Win32 **EnumDisplayDevices** function returns this registry key information in DISPLAY\_DEVICE that the *lpDisplayDevice* parameter points to. If multiple **DeviceKey** names exist, this value should appear under each of those keys. The following is an example of a device key and the **UserModeDriverGUID** string registry value:
 
+<<<<<<< HEAD
+```registry
+=======
 ```cpp
+>>>>>>> master
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{7661971C-A9BD-48B5-ACBC-298A8826535D}\0000]
 "UserModeDriverGUID"="{YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY}"
 ```

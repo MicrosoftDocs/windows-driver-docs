@@ -33,7 +33,11 @@ You must use the **FeatureScore** directive to set the feature score to the foll
 
 The following examples show how to add the **FeatureScore** directive:
 
+<<<<<<< HEAD
+```inf
+=======
 ```cpp
+>>>>>>> master
 [R200_RV200]
 FeatureScore=F6
 CopyFiles=R200.Miniport, R200.Display

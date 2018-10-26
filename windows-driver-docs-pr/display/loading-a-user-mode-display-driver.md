@@ -15,7 +15,11 @@ ms.localizationpriority: medium
 
 You must set the following entry in an add-registry section of the INF file so that the user-mode display driver's DLL name is added to the registry during driver installation and so that the Microsoft Direct3D runtime can subsequently load the DLL:
 
+<<<<<<< HEAD
+```inf
+=======
 ```cpp
+>>>>>>> master
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, UserModeDriverName,    %REG_MULTI_SZ%, Xxx.dll

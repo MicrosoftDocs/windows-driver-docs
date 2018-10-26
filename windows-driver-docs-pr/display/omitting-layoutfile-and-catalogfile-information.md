@@ -16,7 +16,11 @@ ms.localizationpriority: medium
 
 You must not specify any information for the **LayoutFile** and **CatalogFile** directives in the **Version** section. The following example shows a typical **Version** section:
 
+<<<<<<< HEAD
+```inf
+=======
 ```cpp
+>>>>>>> master
 [Version]
 Signature="$Windows NT$"
 Provider=%MSFT%
