@@ -3,7 +3,7 @@ title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
-ms.date: 10/24/2018
+ms.date: 10/26/2018
 ms.localizationpriority: medium
 ---
 
@@ -896,7 +896,7 @@ In order to allow a debugger extension to maintain precision, a set of math func
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
 
-This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the **.scriptdebug** command.
+This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](-scriptdebug--debug-javascript-.md) command.
 
 >[!NOTE] 
 > To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
