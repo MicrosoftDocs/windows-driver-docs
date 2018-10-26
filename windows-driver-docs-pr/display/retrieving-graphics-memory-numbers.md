@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 Software developers who create graphics applications can use the Microsoft DirectX version 10 APIs starting in Windows Vista to retrieve the accurate set of graphics memory numbers on computers running [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) display drivers. The following steps show how to retrieve the graphics memory numbers:
 
 1.  Because the new graphics memory reporting is available only on computers running Windows Display Driver Model (WDDM) display drivers, an application must first call the following function to confirm the driver model:
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
     ```cpp
     HasWDDMDriver()
     {
@@ -38,6 +42,10 @@ Software developers who create graphics applications can use the Microsoft Direc
     ```
 
 2.  After the application determines that the display driver model is the WDDM, the application can use the new DirectX version 10 APIs to get the graphics memory numbers. The application gets the graphics memory numbers from the following [**DXGI\_ADAPTER\_DESC**](https://msdn.microsoft.com/library/windows/desktop/bb173058) data structure, which is present in Dxgi.h and is included in the DirectX Software Development Kit (SDK).
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
     ```cpp
     typedef struct DXGI_ADAPTER_DESC {
         WCHAR Description[ 128 ];

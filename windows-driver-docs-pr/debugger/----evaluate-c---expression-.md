@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The double question mark (**??**) command evaluates and displays the value of an expression according to C++ expression rules.
 
+```dbgcmd
     ?? Expression
+```
 
 ## <span id="ddk_cmd_evaluate_c_expression_dbg"></span><span id="DDK_CMD_EVALUATE_C_EXPRESSION_DBG"></span>Parameters
 

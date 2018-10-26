@@ -38,7 +38,11 @@ For best performance, the DLL should be under 200 KB in size, should keep alloca
 
 The user-mode display driver provides the name of the small **dList** DLL in its INF file under the registry keys **UserModeDListDriverName** and **UserModeDListDriverNameWow,** the latter under the **Wow64** registry entry. Here's example INF code:
 
+<<<<<<< HEAD
+```inf
+=======
 ```cpp
+>>>>>>> master
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, UserModeDListDriverName,    %REG_MULTI_SZ%, dlistumd.dll

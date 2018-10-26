@@ -46,7 +46,7 @@ This header file, which is included in *winddi.h*, is required to develop the Mi
 
 All of these header files are shipped with the Windows Driver Kit (WDK). Previous Driver Development Kits (DDKs) also provide sample code for a Direct3D driver in the *Perm3* video display directory.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm* ) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm* ) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
  
 

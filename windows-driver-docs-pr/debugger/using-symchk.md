@@ -101,7 +101,7 @@ For more information, see [Public and Private Symbols](public-and-private-symbol
 
 Here are some examples. The following command searches for symbols for the program Myapp.exe:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\applications 
 
 SYMCHK: Myapp.exe           FAILED  - Myapp.pdb is missing
@@ -112,7 +112,7 @@ SYMCHK: PASSED + IGNORED files = 0
 
 You can try again with a different symbol path:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: FAILED files = 0
@@ -125,7 +125,7 @@ A program file is ignored if it contains no executable code. Many resource files
 
 If you prefer to see the file names of all program files, you can use the **/v** option to generate verbose output:
 
-```
+```console
 e:\debuggers> symchk /v f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: MyApp.exe           PASSED
@@ -136,7 +136,7 @@ SYMCHK: PASSED + IGNORED files = 1
 
 The following command searches for a huge number of Windows symbols in a symbol server. There are a great variety of possible error messages:
 
-```
+```console
 e:\debuggers> symchk /r c:\windows\system32 /s srv*\\manysymbols\windows 
 
 SYMCHK: msisam11.dll         FAILED  - MSISAM11.pdb is missing

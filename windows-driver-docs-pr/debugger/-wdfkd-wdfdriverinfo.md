@@ -75,7 +75,7 @@ If you omit the *DriverName* parameter, the default driver is used. You can disp
 
 The following example shows the display from the **!wdfkd.wdfdriverinfo** extension.
 
-```
+```dbgcmd
 ## kd> !wdfdriverinfo wdfrawbusenumtest 
 ----------------------------------
 Default driver image name:   wdfrawbusenumtest

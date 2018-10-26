@@ -77,7 +77,7 @@ The [**!stacks**](-stacks.md) kernel-mode extension also display information abo
 
 The following are some examples of the output from this extension:
 
-```
+```dbgcmd
 0:023> !uext.findstack wininet
 Thread 009, 2 frame(s) match
         * 06 03eaffac 771d9263 wininet!ICAsyncThread::SelectThread+0x22a

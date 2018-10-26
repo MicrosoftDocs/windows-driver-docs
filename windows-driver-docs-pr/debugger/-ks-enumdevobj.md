@@ -61,7 +61,7 @@ The output from [**!ks.allstreams**](-ks-allstreams.md) can be used as the input
 
 Here is an example of the **!ks.enumdevobj** display:
 
-```
+```dbgcmd
 kd> !enumdevobj 8241c020
 WDM device object 8241c020:
     Corresponding KSDEVICE        823b8430

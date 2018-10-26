@@ -94,7 +94,7 @@ This section describes the changes in the debugging tools for Windows.
 
 **Debugging in Windows 10, version 1809**
 
-* **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](https://docs.microsoft.com/windows-hardware/drivers/debugger/data-model-cpp-overview)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/) header reference topics.
+* **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/) header reference topics.
 
 * **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at http://aka.ms/windbgpreview that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details. 
 
@@ -183,7 +183,7 @@ This section describes new and updated features for Universal Windows drivers in
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
 
-* [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented)
+* [IsApiSetImplemented](https://docs.microsoft.com/en-us/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
 This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles):
 
@@ -635,7 +635,7 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
 
     * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_child_process_policy)
     * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_payload_restriction_policy)
-    * [PROCESS_READWRITEVM_LOGGING_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_readwritevm_logging_information)
+    * PROCESS_READWRITEVM_LOGGING_INFORMATION
 
 * [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetparentsilo) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
 * The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
@@ -664,7 +664,7 @@ This section outlines new features and improvements for Windows Networking drive
 
 The following is a list of new and updated features for NDIS:
 
-* [Introduction to NetAdapterCx 1.1](https://docs.microsoft.com/windows-hardware/drivers/netcx/introduction-to-netadaptercx-1-1), which includes new NewAdapterCx features:
+* Introduction to NetAdapterCx 1.1, which includes new NewAdapterCx features:
     * More packet context options
     * Finer link state control
     * Improved receive buffer management and performance

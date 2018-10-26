@@ -111,7 +111,7 @@ To get a list of the control areas of all mapped files, use the [**!memusage**](
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !memusage
  loading PFN database
 loading (99% complete)

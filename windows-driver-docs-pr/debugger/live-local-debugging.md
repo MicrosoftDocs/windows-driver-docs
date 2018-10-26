@@ -51,7 +51,7 @@ Consider the last of these.
 
 First, use the [**!process 0 0**](-process.md) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
 
-```
+```dbgcmd
 lkd> !process 816a550 7
         THREAD 81705da8  Cid 0b5c.0b60  Teb: 7ffde000 Win32Thread: e1b2d890 WAIT: (Suspended)
         IRP List:
@@ -64,7 +64,7 @@ lkd> !process 816a550 7
 
 The threads are not displayed, but the stack addresses are. Using the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
 
-```
+```dbgcmd
 lkd> dds f50bea74
 f50bea74  f50bebc4
 f50bea78  00000000

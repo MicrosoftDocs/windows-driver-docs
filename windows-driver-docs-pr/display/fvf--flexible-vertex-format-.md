@@ -21,7 +21,7 @@ The driver's [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows
 
 There is an FVF update for Microsoft DirectX 7.0 that includes 1D, 3D, and 4D textures in addition to the usual 2D textures. For more information about this update, see [FVF Update](fvf-update.md). See the *Perm3* sample driver and DirectX SDK documentation for more information about these topics.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
  
 

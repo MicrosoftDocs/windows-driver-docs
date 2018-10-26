@@ -60,7 +60,7 @@ The .scriptlist command will list any scripts which have been loaded via the .sc
 
 If the TestScript was successfully loaded using .scriptload, the .scriptlist command would display the name of the loaded script.
 
-```
+```dbgcmd
 0:000> .scriptlist
 Command Loaded Scripts:
     JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
@@ -70,7 +70,7 @@ Command Loaded Scripts:
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
