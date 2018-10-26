@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Bug Check 0x8: IRQL\_NOT\_DISPATCH\_LEVEL
 
 
-The IRQL\_NOT\_DISPATCH\_LEVEL bug check has a value of 0x00000008.
+The IRQL\_NOT\_DISPATCH\_LEVEL bug check has a value of 0x00000008. It indicates an attempt to remove a device not at the dispatch level.
 
 This bug check appears very infrequently.
 
