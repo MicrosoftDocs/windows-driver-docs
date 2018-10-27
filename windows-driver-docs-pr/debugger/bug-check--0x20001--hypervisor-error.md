@@ -31,7 +31,9 @@ The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that t
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+## Resolution 
+If you're equipped with a debugger, the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+This kind of error can also be due to system's BIOS or to non standard hardware: check that the BIOS is the latest available version, as well as the hardware can fully support the hypervisor.
 
  
 
