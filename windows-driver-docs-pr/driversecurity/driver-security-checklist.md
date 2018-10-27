@@ -82,7 +82,7 @@ Use the [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/
 
 Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 
-The Windows Driver Framework source code is open source and available on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from [http://github.com/Microsoft/Windows-Driver-Frameworks](http://github.com/Microsoft/Windows-Driver-Frameworks).
+The Windows Driver Framework source code is open source and available on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from [https://github.com/Microsoft/Windows-Driver-Frameworks](https://github.com/Microsoft/Windows-Driver-Frameworks).
 
 
 ## <span id="controlsoftwareonly"></span>Control access to software only drivers
@@ -298,7 +298,7 @@ For more information about controlling access, see the following articles:
 
 [Controlling Device Access in KMDF Drivers](https://msdn.microsoft.com/windows/hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers)
 
-[Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE](https://www.osr.com/nt-insider/2017-issue1/making-device-objects-accessible-safe) from the *January February 2017 The NT Insider Newsletter* published by [OSR](http://www.osr.com).
+[Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE](https://www.osr.com/nt-insider/2017-issue1/making-device-objects-accessible-safe) from the *January February 2017 The NT Insider Newsletter* published by [OSR](https://www.osr.com).
 
 
 **Managing driver access control - WDM**
@@ -639,7 +639,7 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 The !exploitable Crash Analyzer is a Windows debugger extensions that parses crash logs looking for unique issues. It also examines the type of crash and tries to determine whether the error is something that could be exploited by a malicious hacker.
 
-Microsoft Security Engineering Center (MSEC), created the !exploitable Crash Analyzer. You can download the from codeplex: <http://msecdbg.codeplex.com/>.
+Microsoft Security Engineering Center (MSEC), created the !exploitable Crash Analyzer. You can download the from codeplex: <https://msecdbg.codeplex.com/>.
 
 For more information, see [!Exploitable crash analyzer version 1.6](https://blogs.microsoft.com/microsoftsecure/2013/06/13/exploitable-crash-analyzer-version-1-6/) and the Channel 9 video [!exploitable Crash Analyzer](https://channel9.msdn.com/blogs/pdcnews/bang-exploitable-security-analyzer).
 
@@ -669,9 +669,9 @@ The !sd extension displays the security descriptor at the specified address. For
 
 **Secure coding organizations**
 
-[Carnegie Mellon University SEI CERT](http://www.cert.org/)
+[Carnegie Mellon University SEI CERT](https://www.cert.org/)
 
-Carnegie Mellon University SEI CERT [C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems](https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard) (2016 Edition) available as a [PDF download](http://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf).
+Carnegie Mellon University SEI CERT [C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems](https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard) (2016 Edition).
 
 CERT - [Build Security In](https://www.us-cert.gov/bsi)
 
@@ -684,13 +684,13 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 
 **OSR**
 
-[OSR](http://www.osr.com) provides driver development training and consulting services. These articles from the OSR newsletter highlight driver security issues.
+[OSR](https://www.osr.com) provides driver development training and consulting services. These articles from the OSR newsletter highlight driver security issues.
 
 [Names, Security Descriptors and Device Classes - Making Device Objects Accessible… and SAFE](https://www.osr.com/nt-insider/2017-issue1/making-device-objects-accessible-safe)
 
-[You've Gotta Use Protection -- Inside Driver & Device Security](http://www.osronline.com/article.cfm?article=100)
+[You've Gotta Use Protection -- Inside Driver & Device Security](https://www.osronline.com/article.cfm?article=100)
 
-[Locking Down Drivers - A Survey of Techniques](http://www.osronline.com/article.cfm?article=357) 
+[Locking Down Drivers - A Survey of Techniques](https://www.osronline.com/article.cfm?article=357) 
 
 [Meltdown and Spectre: What about drivers?](https://www.osr.com/blog/2018/01/23/meltdown-spectre-drivers/) 
 
@@ -726,7 +726,7 @@ Secure coding online training is available from a variety of sources. For exampl
 
 SAFECode offers free training as well:
 
-[SAFECode/training](https://training.safecode.org/)
+[SAFECode.org/training](https://safecode.org/training/)
 
 **Professional Certification**
 
@@ -754,7 +754,7 @@ Driver security is a complex undertaking containing many elements, but here are 
 
  
 
-[Send comments about this article to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Driver%20security%20checklist%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this article to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[hw_design\hw_design]:%20Driver%20security%20checklist%20%20RELEASE:%20%286/16/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20https://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

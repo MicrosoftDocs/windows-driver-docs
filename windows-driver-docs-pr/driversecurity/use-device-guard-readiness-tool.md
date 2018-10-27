@@ -108,7 +108,7 @@ To use Device Guard Readiness Tool, complete the following steps:
     Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
     ```
 
-    For information on how to interrupt the output displayed, see [Deploy Device Guard: enable virtualization-based security](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-device-guard-enable-virtualization-based-security).
+    For information on how to interrupt the output displayed, see [Enable virtualization-based protection of code integrity](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
 
     *Disable Device Guard* - Note that while running the Readiness Tool, Device Guard must be disabled on the PC under test, as Device Guard might prevent the driver from loading, and the driver won’t be available for the Readiness Tool to test.
 
