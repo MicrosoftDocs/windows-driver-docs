@@ -39,7 +39,7 @@ When you start *WpdInfo.exe*, it prompts you to select a portable device from th
 
 When the sensor reading event fired in the previous example, the following information was true:
 
--   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees farenheit, and a relative humidity of 41.7%.
+-   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees fahrenheit, and a relative humidity of 41.7%.
 -   Its interval property, SENSOR\_UPDATE\_INTERVAL, was set to 2,000.
 
 ## <span id="updating_the_interval_property_by_using_wpdinfo.exe"></span><span id="UPDATING_THE_INTERVAL_PROPERTY_BY_USING_WPDINFO.EXE"></span>Updating the Interval Property by Using WpdInfo.exe
