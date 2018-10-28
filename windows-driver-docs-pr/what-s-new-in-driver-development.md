@@ -183,7 +183,7 @@ This section describes new and updated features for Universal Windows drivers in
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
 
-* [IsApiSetImplemented](https://docs.microsoft.com/en-us/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
+* [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
 This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles):
 
