@@ -1,10 +1,10 @@
 ---
-title: Using the Net Ring Iterator interface
-description: Using the Net Ring Iterator interface
+title: Net rings and net ring iterators
+description: Net rings and net ring iterators
 ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
-- NetAdapterCx Using the Net Ring Iterator interface, NetCx Using the Net Ring Iterator interface, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 10/17/2018
+- NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
+ms.date: 10/29/2018
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +52,12 @@ After the hardware transmits or receives data, the client uses the rings' drain 
 
 Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. When a driver advances any net ring iterator, the Net Ring Iterator Interface automatically handles wrap around for incrementing the appropriate index.
 
-## Using the Net Ring Iterator Interface
+## Net rings and net ring iterators
+
+### Post operations
+
+
+### Drain operations
 
 
 
