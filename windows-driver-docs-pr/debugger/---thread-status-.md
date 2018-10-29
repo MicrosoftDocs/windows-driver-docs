@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The tilde (**~**) command displays status for the specified thread or for all threads in the current process.
 
-    ~ Thread
+```dbgcmd
+~ Thread
+```
 
 ## <span id="ddk_cmd_thread_status_dbg"></span><span id="DDK_CMD_THREAD_STATUS_DBG"></span>Parameters
 
@@ -49,7 +51,6 @@ Specifies the thread to display. If you omit this parameter, all threads are dis
 </tr>
 </tbody>
 </table>
-
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information

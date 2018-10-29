@@ -104,7 +104,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     Alternatively, there is also a WMI interface for checking using management tools that can be used to display information in PowerShell.
 
-    ```cpp
+    ```console
     Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
     ```
 
@@ -114,7 +114,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     *Optionaly Enable Test Signing* - To allow for the installation of unsigned development drivers, you may want to enable test signing using BCDEdit.
 
-    ```cpp
+    ```console
     bcdedit /set TESTSIGNING ON 
     ```
 
@@ -131,8 +131,6 @@ To use Device Guard Readiness Tool, complete the following steps:
     **Warning**  
     As the Device Guard Readiness Tool changes registry values and may impact features such as secure boot, use a test PC that doesn't contain any data or applications. After the tests have been run, you may want to re-install Windows to re-establish your desired security configuration.
 
-     
-
     1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
     2. Unzip the tool on the target test machine.
@@ -143,7 +141,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     If Execution-Policy is not already set to allow running script, then you should manually set it as shown here.
 
-    ```cpp
+    ```powershell
     Set-ExecutionPolicy Unrestricted
     ```
 
@@ -153,7 +151,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     2. Run the Readiness Tool to enable HVCI.
 
-    ```cpp
+    ```powershell
     DG_Readiness_Tool.ps1 -Enable HVCI
     ```
 
@@ -163,7 +161,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     1. Run the Readiness Tool to evaluate the ability of the drivers to support HVCI.
 
-    ```cpp
+    ```powershell
     DG_Readiness_Tool.ps1 -Capable HVCI
     ```
 
@@ -176,14 +174,12 @@ To use Device Guard Readiness Tool, complete the following steps:
     | Red - Errors      | Elements are missing or not configured that will prevent enabling and using DG/CG.                |
     | Yellow - Warnings | This device can be used to enable and use DG/CG, but additional security benefits will be absent. |
     | Green - Messages  | This device is fully compliant with DG/CG requirements.                                           |
-
-     
-
+    
     In addition to the output to the screen, by default, the log file with detailed output is located at C:\\DGLogs
 
     There are five steps (or sections) in the output of the Device Guard Readiness Tool. Step 1 contains the is the driver compatibility information.
 
-    ```cpp
+    ```text
      ====================== Step 1 Driver Compat ====================== 
     ```
 
@@ -191,7 +187,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     Locate the "InCompatible HVCI Kernel Driver Modules" section shown below, towards the end of the log.
 
-    ```cpp
+    ```text
     InCompatible HVCI Kernel Driver Modules found
 
     Module: TestDriver1.sys
@@ -204,7 +200,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     The statistics for the seven types of device driver incompatibilities are also available using the !verifier debugger extension. For more information on the !verifier extension, see [**!verifier**](https://msdn.microsoft.com/library/windows/hardware/ff565591).
 
-    ```cpp
+    ```text
             Execute Pool Type Count:                3
             Execute Page Protection Count:          0
             Execute Page Mapping Count:             0
@@ -353,24 +349,25 @@ There are other situations involving the use of assembler code, where this issue
 
 Below is the list of Regkeys and their values for customization of the script to Device Guard and Credential Guard without UEFI Lock.
 
-```cpp
-For RS1 and RS2 – to enable HVCI and CG without UEFI Lock:
-&#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f&#39; 
-&#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f&#39; 
+To enable HVCI and CG without UEFI Lock:
+
+```reg
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f&#39; 
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f&#39; 
 ```
 
 ## Driver Verifier code integrity
 
 Use the Driver Verifier code integrity option flag (0x02000000) to enable extra checks that validate compliance with this feature. To enable this from the command line, use the following command.
 
-```cpp
+```console
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
 To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
 
 You can use the verifier command line /query option to display the current driver verifier information.
 
-```cpp
+```console
 verifier /query 
 ```
 
