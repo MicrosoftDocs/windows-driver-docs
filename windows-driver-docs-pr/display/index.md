@@ -21,7 +21,7 @@ Welcome to the Windows Display Driver Design Guide. This section includes:
 
 [Windows 2000 Display Driver Model (XDDM) Design Guide](windows-2000-display-driver-model-design-guide.md)
 
-[Display Samples](display-samples)
+[Display Samples](display-samples.md)
 
 
 
