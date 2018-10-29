@@ -60,16 +60,10 @@ The maximum absolute error is 0.002.
 
 The following shows the Taylor series for sin(x) and cos(x):
 
-<<<<<<< HEAD
 
 `(1) cos(x) = 1 - x2/2! + x4/4! - x6/6!
 sin(x) = x - x3/3! + x5/5! - x7/7! = x*(1 - x2/3! + x4/5! - x6/7!)`
 
-=======
-```cpp
-(1) cos(x) = 1 - x2/2! + x4/4! - x6/6!
-sin(x) = x - x3/3! + x5/5! - x7/7! = x*(1 - x2/3! + x4/5! - x6/7!)
->>>>>>> master
 To increase precision we compute cos(x) using cos(x/2):
 
 `(2) cos(x) = 1 - 2*sin(x/2)*sin(x/2)
@@ -88,7 +82,6 @@ Lets, write (3) in vector form. Here a,b,c,d are 2D constant vectors:
 
 The following shows the implementation for SINCOS:
 
-<<<<<<< HEAD
 
 SRC2 should be constant:
 
@@ -98,11 +91,6 @@ SRC3 should be constant:
 
 ```cpp
 (1.f/(3!*8), 1.f/(2!*8), 1.f, 0.5f )
-=======
-```cpp
-SRC2 should be constant (1.f/(7!*128), 1.f/(6!*64), 1.f/(4!*16), 1.f/(5!*32) )
-SRC3 should be constant (1.f/(3!*8), 1.f/(2!*8), 1.f, 0.5f )
->>>>>>> master
 VECTOR v1 = EvalSource(SRC1);
 VECTOR v2 = EvalSource(SRC2);
 VECTOR v3 = EvalSource(SRC3);
@@ -125,11 +113,7 @@ WriteResult(v, DST);
 
 If an application must compute SINCOS for an arbitrary angle, the angle can be mapped to the range -Pi...+Pi by using the following macro (r0.x holds the original angle):
 
-<<<<<<< HEAD
 ```macro
-=======
-```cpp
->>>>>>> master
 def c0, Pi, 0.5f, 2*Pi, 1/(2*Pi)
 mad r0.x, r.x, c0.w, c0.y
 frc r0.x, r0.x

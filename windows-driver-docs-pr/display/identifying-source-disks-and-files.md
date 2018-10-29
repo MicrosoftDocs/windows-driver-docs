@@ -16,11 +16,7 @@ ms.localizationpriority: medium
 
 You must specify all in-box display drivers in the **SourceDisksNames** and **SourceDisksFiles** sections. The following example shows how to identify the CD-ROM discs and the names of the source files that are contained on the disks. The source files are transferred to the target computer during installation.
 
-<<<<<<< HEAD
 ```inf
-=======
-```cpp
->>>>>>> master
 [SourceDisksNames]
 3426=windows cd
 

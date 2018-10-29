@@ -14,11 +14,7 @@ ms.localizationpriority: medium
 
 The following x64-specific information is required for an INF file that loads display drivers that run on 64-bit Windows Vista and later:
 
-<<<<<<< HEAD
 ```inf
-=======
-```cpp
->>>>>>> master
 [DestinationDirs]
 DefaultDestDir  = 11
 R200.Miniport   = 12  ; drivers
@@ -51,12 +47,3 @@ r200umd.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 [R200.DispWow]
 r2umd32.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 ```
-
- 
-
- 
-
-
-
-
-
