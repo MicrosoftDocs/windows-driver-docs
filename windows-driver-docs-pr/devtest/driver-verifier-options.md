@@ -24,7 +24,7 @@ Starting in Windows 10, version 17627 and later, you can enable rule classes wit
 
 `/ruleclasses or /rc [<ruleclass_1> <ruleclass_2> ... <ruleclass_k>]`
 
-Note that when enabling multiple classes (represented by the positive decimal integer below), seperate each integer with a space character. 
+Note that when enabling multiple classes (represented by the positive decimal integer below), separate each integer with a space character. 
 
 Descriptions for these rule classes can be found below.
 
