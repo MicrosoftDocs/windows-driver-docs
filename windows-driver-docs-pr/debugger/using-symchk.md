@@ -15,8 +15,9 @@ ms.localizationpriority: medium
 
 The basic syntax for SymChk is as follows:
 
-    symchk [/r] FileNames /s SymbolPath 
-
+```console
+symchk [/r] FileNames /s SymbolPath 
+```
 
 *FileNames* specifies one or more program files whose symbols are needed. If *FileNames* is a directory and the **/r** flag is used, this directory is explored recursively, and SymChk will try to find symbols for all program files in this directory tree. *SymbolPath* specifies where SymChk is to search for symbols.
 
