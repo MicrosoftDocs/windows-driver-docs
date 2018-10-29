@@ -33,9 +33,8 @@
       href: netadaptercx-hardware-offloads.md
     - name: "Transmit and receive queues"
       href: transmit-and-receive-queues.md
-    - name: "Using the Net Ring Iterator interface"
-      href: using-the-net-ring-iterator-interface.md
-    - name: "Network data buffer management"
+    - name: "Net rings and net ring iterators"
+      href: net-rings-and-net-ring-iterators.md
       href: network-data-buffer-management.md
   - name: "NetAdapterCx receive side scaling (RSS)"
     href: netadaptercx-receive-side-scaling-rss-.md

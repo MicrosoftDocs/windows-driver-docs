@@ -33,15 +33,11 @@ The second figure shows a packet stored across two memory fragments, with both R
 ![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
 
 
-## Storage of packet descriptors
+## Packet descriptor storage and access
 
-The core descriptors and fragment descriptors are stored independently in two separate ring buffers, the *packet ring* and *fragment ring*. Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the **NET_RING_COLLECTION**, groups the packet ring and fragment ring together for a given packet queue.
+Packet descriptors and fragment descriptors are both stored in [**NET_RING**](TBD) structures. A NIC client driver accesses the net rings and performs operations on them by calling into the Net Ring Iterator Interface, which enables the driver to work with NetAdapterCx to post network data to hardware and drain completed data back to the OS. 
 
-![multi-ring layout](images/multi-ring.png) 
-
-Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
-
-Client drivers call Net Ring Iterator methods to access the packet ring, the fragment ring and the descriptors they contain. To learn more about using Net Ring Iterators, see [Using the Net Ring Iterator interface](using-the-net-ring-iterator-interface.md).
+For more information on net rings and the Net Ring Iterator Interface, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Packet descriptor extensibility
 

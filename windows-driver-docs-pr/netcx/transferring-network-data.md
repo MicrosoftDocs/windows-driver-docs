@@ -20,5 +20,5 @@ The following topics explain in detail how to transfer network data in your NetA
 
 - [Packet descriptors and extensions](packet-descriptors-and-extensions.md)
 - [Transmit and receive queues](transmit-and-receive-queues.md)
-- [Using the Net Ring Iterator interface](using-the-net-ring-iterator-interface.md)
+- [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 - [Network data buffer management](network-data-buffer-management.md)
