@@ -52,7 +52,7 @@ Remarks
 
 The following example shows a display from the **!wdfkd.wdfiotarget** extension.
 
-```
+```dbgcmd
 kd> !wdfiotarget 0x7c9630b8 
 
 # WDFIOTARGET 8369cf40

@@ -75,6 +75,7 @@ To run the host debugger on the same PC as the target virtual machine, follow th
     ...
 
     ```
+
 3. Record the IPv4 address of the External Virtual Switch that will be used as the host address for debugging.
 
 4. To confirm connectivity between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer. 
@@ -167,9 +168,9 @@ After connecting to the VM, hit break on your debugger and you can start debuggi
 
 If the debugger does not connect, use the ping command from the target VM to verify connectivity. 
 
-    ```console
-    C:\>Ping <HostComputerIPAddress> 
-    ```
+```console
+C:\>Ping <HostComputerIPAddress> 
+```
 
 *Something didn't work right and I'm not sure what...* 
 

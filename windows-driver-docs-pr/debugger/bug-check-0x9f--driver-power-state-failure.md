@@ -81,7 +81,6 @@ Parameter 1 indicates the type of violation.
 </tr>
 </tbody>
 </table>
-
  
 
 Cause
@@ -286,6 +285,7 @@ For a description of the possible causes, see the description of each code in th
     -   Is there an IRP associated with the thread?
     -   Is there any IO in the CompletionQueue?
     -   What symbols are on the stack?
+
 -   Refer to the additional techniques described above under parameter 0x3.
 
 Resolution
@@ -306,11 +306,3 @@ If you are not equipped to debug this problem using the techniques described abo
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
 -   Check with the manufacturer to see if an updated system BIOS or firmware is available.
-
- 
-
- 
-
-
-
-

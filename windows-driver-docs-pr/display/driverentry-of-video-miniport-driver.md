@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG DriverEntry(
   _In_ PVOID Context1,
   _In_ PVOID Context2

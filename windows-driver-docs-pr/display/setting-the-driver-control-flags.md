@@ -13,7 +13,7 @@ The **ExcludeFromSelect** directive is required for all drivers, except for [mir
 
 The following example shows how to add the **ExcludeFromSelect** directive to a **ControlFlags** section of the INF file:
 
-```cpp
+```inf
 [ControlFlags]
 ExcludeFromSelect=*
 ```
