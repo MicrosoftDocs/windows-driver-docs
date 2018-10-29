@@ -16,6 +16,8 @@ ms.localizationpriority: medium
 
 A **NET_RING** is a circular buffer of network data that is shared between NetAdapterCx and a client driver. Every packet queue in a client driver has two rings: a *packet ring* for core packet descriptors, and a *fragment ring* for each packet's fragment descriptors. Client drivers perform operations on their net rings by calling into the *Net Ring Iterator Interface*.
 
+For more information about packet descriptors, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
+
 Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the [**NET_RING_COLLECTION**](TBD), groups the packet ring and fragment ring together for a given packet queue.
 
 ![multi-ring layout](images/multi-ring.png) 
@@ -38,15 +40,17 @@ If **BeginIndex** is equal to **EndIndex**, the client driver does not own any e
 
 NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**. A client driver returns ownership of the elements by using the ring's drain iterator to increment **BeginIndex**.
 
-The following diagram illustrates the post and drain operations that iterators perform on a **NET_RING**.
+The following animation illustrates the post and drain operations that iterators perform on a **NET_RING**.
 
-![Net ring post and drain operations](images/net-ring-post-and-drain-operations.gif "Net ring post and drain operations")
+![Net ring post and drain operations](images/net_ring_post_and_drain_operations.gif "Net ring post and drain operations")
 
-In this model, the client has posted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware. Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been posted to hardware.
+In this model, the client has posted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware. At the beginning of the previous animation, this includes packets A, B, C, and D, as well as their fragments. Note that each packet has one or more fragments. 
 
-After the hardware transmits or receives data, the client uses the ring's drain iterator to advance **BeginIndex**, transferring ownership of the packets to NetAdapterCx. 
+Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been posted to hardware. In the animation, after NetAdapterCx adds packets E, F, and G to the packet ring (along with their fragments), the client driver submits packet E to hardware and advances the rings' post iterators accordingly.
 
-Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. When a driver advances an iterator, the Net Ring Iterator Interface automatically handles wrap around for incrementing the appropriate index.
+After the hardware transmits or receives data, the client uses the rings' drain iterators to advance **BeginIndex**, transferring ownership of the packets and their fragments back to NetAdapterCx. In the animation, the driver returns packet A and its fragments to the OS.
+
+Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. When a driver advances any net ring iterator, the Net Ring Iterator Interface automatically handles wrap around for incrementing the appropriate index.
 
 ## Using the Net Ring Iterator Interface
 
