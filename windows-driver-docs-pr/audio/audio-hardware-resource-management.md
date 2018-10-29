@@ -186,7 +186,7 @@ HKR\SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
 The path is relative to the driver install. In the driver INF installation the constraint XML file needs to be copied and the following line would be added to register it with the system:
 
 ```inf
-HKR\SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig,<Name of the constraint>,<Path to the constraint>
+HKR,SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig,<Name of the constraint>,,<Path to the constraint>
 ```
 
 In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file.
