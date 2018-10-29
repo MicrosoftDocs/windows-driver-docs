@@ -297,7 +297,7 @@ There is one additional valid combination that is not shown in these samples.
 
 This sample shows a multi-mode streaming effect being registered using AddReg entries in the SYSVAD Tablet INF file.
 
-This sample code is from the SYSVAD audio sample and is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
+This sample code is from the SYSVAD audio sample and is available on GitHub: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
 
 This sample illustrates this combination of system effects:
 
@@ -305,7 +305,7 @@ This sample illustrates this combination of system effects:
 
 -   PKEY\_FX\_ModeEffectClsid with PKEY\_MFX\_ProcessingModes\_Suppoted\_For\_Streaming
 
-```cpp
+```inf
 [SWAPAPO.I.Association0.AddReg]
 ; Instruct audio endpoint builder to set CLSID for property page provider into the
 ; endpoint property store
@@ -328,6 +328,51 @@ HKR,FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,%REG_MULTI_SZ%,%AUDI
 ```
 
 Note that in the sample INF file, the EFX\_Streaming property is commented out because the audio processing has transitioned to kernel mode above that layer, so that streaming property is not necessary and would not be used. It would be valid to specify a PKEY\_FX\_EndpointEffectClsid for discovery purposes, but it would be an error to specify PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming. This is because the mode mix / tee happens lower in the stack, where it is not possible to insert an endpoint APO.
+
+**Componentized APO Installation**
+
+Starting with Windows 10, release 1803, APO registration with the audio engine uses the componentized audio driver model. Using audio componentization creates a smoother and more reliable install experience and better supports component servicing. For more information, see [Creating a componentized audio driver installation](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-universal-drivers#span-idcreating-a-componentized-audio-driver-installationspan-creating-a-componentized-audio-driver-installation).
+
+The following example code is extracted from the public ComponentizedAudioSampleExtension.inf and ComponentizedApoSample.inf. Refer to the SYSVAD audio sample which is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
+ 
+The registration of the APO with the audio engine is done using a newly created APO device.
+
+The installation of the APO is done in two parts. First, the driver extension INF will add an APO device to the system:
+ 
+```inf
+[DeviceExtension_Install.Devices]
+AddDevice = SwapApo,,Apo_AddDevice
+ 
+[Apo_AddDevice]
+HardwareIds = APO\VEN_SMPL&CID_APO
+Description = "Audio Proxy APO Sample"
+Capabilities = 0x00000008 ; SWDeviceCapabilitiesDriverRequired
+```
+
+This APO device triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO device. It specifies the device class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine. 
+ 
+```inf
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = AudioProcessingObject
+ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+ 
+[ApoComponents.NT$ARCH$]
+%Apo.ComponentDesc% = ApoComponent_Install,APO\VEN_SMPL&CID_APO
+ 
+[Apo_AddReg]
+; CLSID registration
+HKCR,CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
+HKCR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
+HKCR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
+…
+;Audio engine registration
+HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%SFX_FriendlyName%
+...
+```
+
+When this INF installs the componentized APO, on a desktop system "Audio Processing Objects" will be shown in Windows Device Manager. 
+
 
 **Bluetooth Audio Sample APO INF Sample**
 
