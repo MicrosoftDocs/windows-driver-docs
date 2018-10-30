@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 A driver registers for notification of PnP target device change events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).
 
-> [!IMPORTANT]
-> Starting with Windows 7, if the driver is registering for target device PnP events related to power, the driver must first define a power relationship with the target device. It does so by calling [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) with the *Type* parameter set to **PowerRelations**, then responding to the PnP manager's [IRP_MN_QUERY_DEVICE_RELATIONS](irp-mn-query-device-relations.md) query for **PowerRelations** with the correct information. 
-
 The following information applies to calling this routine for target device change notification:
 
 -   Specify an *EventCategory* of **EventCategoryTargetDeviceChange**.
