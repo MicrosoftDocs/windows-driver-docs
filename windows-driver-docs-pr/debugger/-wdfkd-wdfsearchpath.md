@@ -51,7 +51,7 @@ Remarks
 
 The KMDF formatting files are included in the Windows Driver Kit (WDK). The path to the formatting files depends on the installation directory of your WDK and on the version of the WDK that you have installed. The KMDF formatting files have extension tmf (trace message formatting). To determine the search path, browse or search your WDK installation for file names of the form Wdf*VersionNumber*.tmf. The following example shows how to use the **!wdfkd.wdfsearchpath** extension.
 
-```
+```dbgcmd
 kd> !wdfsearchpath C:\WinDDK\7600\tools\tracing\amd64
 ```
 

@@ -17,7 +17,7 @@ The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) records display 
 
 In addition to recording information to a log, by default, the checked-build version of the DirectX graphics kernel subsystem breaks into the attached debugger if errors or assertions occur. By default, the free-build version of the DirectX graphics kernel subsystem only records errors and assertions to the log and does not break into the debugger if errors or assertions occur. You can change this default behavior by first creating the following REG\_DWORD entries in the registry:
 
-```cpp
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Logging\BreakOnAssertion
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Logging\BreakOnError
 ```

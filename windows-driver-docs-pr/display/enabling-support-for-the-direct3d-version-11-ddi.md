@@ -22,7 +22,7 @@ You can use the same user-mode display driver DLL name in multiple locations to 
 
 The following example shows how support for the version 11 DDI is enabled if the version 11 DDI is contained in *Umd11*.dll (that is, a separate DLL from the version 9 and 10 DDIs):
 
-```cpp
+```inf
  [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd9.dll, umd10.dll,  umd11.dll
@@ -31,7 +31,7 @@ The following example shows how support for the version 11 DDI is enabled if the
 
 The following example shows how support for the version 11 DDI is enabled if the version 11 DDI is contained in *Umd*.dll (that is, a shared implementation of Direct3D version 9, 10 and 11 drivers):
 
-```cpp
+```inf
 [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd.dll, umd.dll, umd.dll

@@ -927,7 +927,7 @@ The **rep stos** instruction is used to fill a block of memory with acc*T*.
 
 The **cmpxchg** instruction is the atomic version of the following:
 
-```
+```asm
    cmp     accT, r/m
    jz      match
    mov     accT, r/m

@@ -71,7 +71,7 @@ Remarks
 
 Here is an example of the output from **!ks.pciaudio**:
 
-```
+```dbgcmd
 kd> !ks.pciaudio
 1 Audio FDOs found:
  Functional Device 8299be18 [\Driver\smwdm]

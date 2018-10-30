@@ -23,7 +23,7 @@ Before calling [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windo
 
 These integer values start at one and are kept as small as possible. (Zero is a guaranteed invalid value for a surface handle.) The intention is that a driver can keep an array of pointers into its own structures. As soon as it receives a handle (when *D3dCreateSurfaceEx* is called) that is beyond the end of the array, it can reallocate the array and continue. The Direct3D runtime passes no handle value to the driver before that handle is shown to the driver via *D3dCreateSurfaceEx*. However, the driver should be robust enough to handle values that are out-of-range, or that refer to a slot in the handle table that has been freed (that is a handle for which [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) has been called). Note that since zero is a guaranteed invalid value, the zero entry in the handle table can be reused for other purposes. The *Perm3* sample driver uses the zero entry to store the current length of the array.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
  
 

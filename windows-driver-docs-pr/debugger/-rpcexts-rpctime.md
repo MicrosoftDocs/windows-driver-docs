@@ -54,7 +54,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.rpctime
 Current time is: 059931.126  (0x00ea1b.07e)
 ```

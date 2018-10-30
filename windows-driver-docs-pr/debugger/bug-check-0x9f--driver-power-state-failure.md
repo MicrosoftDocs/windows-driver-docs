@@ -23,7 +23,6 @@ This bug check has a value of 0x0000009F. This bug check indicates that the driv
 
 ## DRIVER\_POWER\_STATE\_FAILURE Parameters
 
-
 Parameter 1 indicates the type of violation.
 
 <table>
@@ -81,7 +80,6 @@ Parameter 1 indicates the type of violation.
 </tr>
 </tbody>
 </table>
-
  
 
 Cause
@@ -93,13 +91,13 @@ For a description of the possible causes, see the description of each code in th
 
 -   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
 
-    ```dbgcmd
-    kd>!analyze -v
-    *******************************************************************************
-    *                                                                             *
-    *                        Bugcheck Analysis                                    *
-    *                                                                             *
-    *******************************************************************************
+```dbgcmd
+kd>!analyze -v
+*******************************************************************************
+*                                                                             *
+*                        Bugcheck Analysis                                    *
+*                                                                             *
+*******************************************************************************
 
     DRIVER_POWER_STATE_FAILURE (9f)
     A driver has failed to complete a power IRP within a specific time.
@@ -108,26 +106,26 @@ For a description of the possible causes, see the description of each code in th
     Arg2: fffffa8007b13440, Physical Device Object of the stack
     Arg3: fffff8000386c3d8, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
     Arg4: fffffa800ab61bd0, The blocked IRP
-    ```
+```
 
     The nt!TRIAGE\_9F\_POWER structure provides additional bug check information that might help you determine the cause of this bug check. The structure can provide a list of all outstanding power IRPs, a list of all power IRP worker threads, and a pointer to the delayed system worker queue.
 
 -   Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
 
-    ```dbgcmd
+```dbgcmd
     0: kd> dt nt!TRIAGE_9F_POWER fffff8000386c3d8
        +0x000 Signature        : 0x8000
        +0x002 Revision         : 1
        +0x008 IrpList          : 0xfffff800`01c78bd0 _LIST_ENTRY [ 0xfffffa80`09f43620 - 0xfffffa80`0ad00170 ]
        +0x010 ThreadList       : 0xfffff800`01c78520 _LIST_ENTRY [ 0xfffff880`009cdb98 - 0xfffff880`181f2b98 ]
        +0x018 DelayedWorkQueue : 0xfffff800`01c6d2d8 _TRIAGE_EX_WORK_QUEUE
-    ```
+```
 
     The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
 
 -   Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
 
-    ```dbgcmd
+```dbgcmd
     0: kd> !irp fffffa800ab61bd0
     Irp is active with 7 stacks 6 is current (= 0xfffffa800ab61e08)
      No Mdl: No System Buffer: Thread 00000000:  Irp stack trace.  
@@ -162,11 +160,11 @@ For a description of the possible causes, see the description of each code in th
                 Args: 00000000 00000000 00000000 00000000
 
     
-    ```
+```
 
 -   Use the [**!devstack**](-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
 
-    ```dbgcmd
+```dbgcmd
     0: kd> !devstack fffffa8007b13440
       !DevObj           !DrvObj            !DevExt           ObjectName
       fffffa800783f060  \Driver\HidUsb     fffffa800783f1b0  InfoMask field not found for _OBJECT_HEADER at fffffa800783f030
@@ -176,11 +174,11 @@ For a description of the possible causes, see the description of each code in th
     !DevNode fffffa8007ac8a00 :
       DeviceInst is "USB\VID_04D8&PID_0033\5&46fa7b7&0&1"
       ServiceName is "HidUsb"
-    ```
+```
 
 -   Use the !poaction command to display the threads that handle the power operations and any allocated power IRPs.
 
-    ```dbgcmd
+```dbgcmd
     3: kd> !poaction
     PopAction: fffff801332f3fe0
       State..........: 0 - Idle
@@ -225,13 +223,13 @@ For a description of the possible causes, see the description of each code in th
     Irp worker threads (PopIrpThreadList - fffff801332f3100)
       THREAD: ffffe0000ef5d040 (static)
       THREAD: ffffe0000ef5e040 (static), IRP: ffffe00013d07420, DEVICE: ffffe00012dd5040
-    ```
+```
 
 -   If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
 
-    Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
+   Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
 
-    Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
+   Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
 
 -   Use the [**!stacks**](-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
 
@@ -263,7 +261,6 @@ For a description of the possible causes, see the description of each code in th
     Arg2: 00000258, Timeout in seconds.
     Arg3: 84e01a70, The thread currently holding on to the Pnp lock.
     Arg4: 82931b24, nt!TRIAGE_9F_PNP on Win7
-
      
     ```
 
@@ -287,6 +284,7 @@ For a description of the possible causes, see the description of each code in th
     -   Is there an IRP associated with the thread?
     -   Is there any IO in the CompletionQueue?
     -   What symbols are on the stack?
+
 -   Refer to the additional techniques described above under parameter 0x3.
 
 Resolution
@@ -307,11 +305,3 @@ If you are not equipped to debug this problem using the techniques described abo
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
 -   Check with the manufacturer to see if an updated system BIOS or firmware is available.
-
- 
-
- 
-
-
-
-

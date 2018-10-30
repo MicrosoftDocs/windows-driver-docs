@@ -21,8 +21,9 @@ The question mark (**?**) command evaluates and displays the value of an express
 
 **Note**   A question mark by itself ([**?**](---command-help-.md)) displays command help. The **?** *expression* command evaluates the given expression.
 
+```dbgcmd
     ? Expression
-
+```
 
 ## <span id="ddk_cmd_evaluate_expression_dbg"></span><span id="DDK_CMD_EVALUATE_EXPRESSION_DBG"></span>Parameters
 

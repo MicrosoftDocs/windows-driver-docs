@@ -15,7 +15,7 @@ To help in debugging the driver, the behavior of the graphics processing unit (G
 
 You can enable or disable preemption requests from the GPU scheduler (see [Timeout Detection and Recovery](timeout-detection-and-recovery.md)) by using the following registry configuration:
 
-```cpp
+```registry
 KeyPath   : HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler
 KeyValue  : EnablePreemption
 ValueType : REG_DWORD

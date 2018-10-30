@@ -16,8 +16,8 @@ The **Microsoft Direct3D version 9** runtime supplies pointers to *adapter-speci
 
 The **Microsoft Direct3D version 10** or later runtime supplies pointers to adapter-specific callback functions through members of the **D3DDDI_ADAPTERCALLBACKS** structure in a call to the user-mode display driver's [OpenAdapter10](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_openadapter) or OpenAdapter10_2 function. The runtime supplies pointers to display device-specific callback functions through members of the **D3DDDI_DEVICECALLBACKS** structure in a call to the user-mode display driver's [CreateDevice(D3D10)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
-| | |
-|:---|:---|
+|Functions | |
+|:----|:----|
 |[PFND3DDDI_ALLOCATECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb)|[PFND3DDDI_CREATECONTEXTVIRTUALCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createcontextvirtualcb)|
 |[PFND3DDDI_CREATEHWCONTEXTCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createhwcontextcb)|[PFND3DDDI_CREATEHWQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createhwqueuecb)|
 |[PFND3DDDI_CREATEOVERLAYCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createoverlaycb)|[PFND3DDDI_CREATEPAGINGQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createpagingqueuecb)|
@@ -49,6 +49,40 @@ The **Microsoft Direct3D version 10** or later runtime supplies pointers to adap
 |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectcb) |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPUCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb) |
 |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromgpucb) |[PFND3DWDDM2_0DDI_DECODEJPEG](https://msdn.microsoft.com/library/windows/hardware/dn937733.aspx) |
 |[PFND3DWDDM2_0DDI_ENCODEJPEG](https://msdn.microsoft.com/library/windows/hardware/dn937735.aspx) ||
+
+### Direct3D Parameter Structures
+
+This section describes structures that are used by the Direct3D runtime kernel-services accessing functions. The user-mode display driver passes pointers to these structures in parameters of the runtime functions.
+
+|Structures | |
+|:----|:----|
+|D3DDDI_UPDATEALLOCPROPERTY|D3DDDICB_ALLOCATE|
+D3DDDICB_CREATECONTEXT|D3DDDICB_CREATECONTEXTVIRTUAL
+D3DDDICB_CREATEHWCONTEXT|D3DDDICB_CREATEHWQUEUE
+D3DDDICB_CREATEOVERLAY|D3DDDICB_CREATEPAGINGQUEUE
+D3DDDICB_CREATESYNCHRONIZATIONOBJECT2|D3DDDICB_CREATESYNCHRONIZATIONOBJECT
+D3DDDICB_DESTROYHWCONTEXT|D3DDDICB_DESTROYHWQUEUE
+D3DDDICB_DEALLOCATE|D3DDDICB_DEALLOCATE2
+D3DDDICB_DESTROYCONTEXT|D3DDDICB_DESTROYOVERLAY
+D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT|D3DDDICB_ESCAPE
+D3DDDICB_EVICT|D3DDDICB_FLIPOVERLAY|D3DDDICB_FREEGPUVIRTUALADDRESS
+D3DDDICB_GETMULTISAMPLEMETHODLIST|D3DDDICB_LOCK
+D3DDDICB_LOCK2FLAGS|D3DDDICB_OFFERALLOCATIONS
+D3DDDICB_PRESENT|D3DDDICB_QUERYADAPTERINFO
+D3DDDICB_QUERYRESIDENCY|D3DDDICB_RECLAIMALLOCATIONS
+D3DDDICB_RECLAIMALLOCATIONS2|D3DDDICB_RENDER
+D3DDDICB_SETDISPLAYMODE|D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
+D3DDDICB_SETPRIORITY|D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
+D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2|D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU|D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2
+D3DDDICB_SUBMITCOMMAND|D3DDDICB_SUBMITCOMMANDFLAGS
+D3DDDICB_SUBMITCOMMANDTOHWQUEUE|D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
+D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE|D3DDDICB_UNLOCK
+D3DDDICB_UNLOCK2|D3DDDICB_UPDATEGPUVIRTUALADDRESS
+D3DDDICB_UPDATEOVERLAY|D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT
+D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2|D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU|
+
 
 ## Direct3D Runtime Version 10 and Later Core Callback Functions
 
@@ -166,3 +200,13 @@ The reference pages in this section describe core callback functions that the Mi
 |[PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_2ddi_destroy_shadercache_session)|[PFND3DWDDM2_2DDI_RELOCATEDEVICEFUNCS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_2ddi_relocatedevicefuncs)|
 |[PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_2ddi_set_shadercache_session)|[PFND3DWDDM2_2DDI_SHADERCACHE_ADDREF_RELEASE_CB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_2ddi_shadercache_addref_release_cb)|
 |PFND3DWDDM2_2DDI_SHADERCACHE_GET_VALUE|[PFND3DWDDM2_2DDI_SHADERCACHE_STORE_VALUE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_2ddi_shadercache_store_value_cb)|
+
+## See also
+
+[Supporting the DXGI DDI](supporting-the-dxgi-ddi.md)
+
+[Multiplane overlay support](multiplane-overlay-support.md)
+
+[Direct3D Functions Implemented by User Mode Display Drivers](direct3d-functions-implemented-by-user-mode.md)
+
+[Direct3D rendering performance improvements](direct3d-rendering-performance-improvements.md)

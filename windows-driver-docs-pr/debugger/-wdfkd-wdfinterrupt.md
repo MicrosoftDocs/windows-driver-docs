@@ -52,7 +52,7 @@ Remarks
 
 The following example shows the output of the **!wdfinterrupt** extension with bit 0 set in the *Flags* parameter (so the output displays information about the IDT).
 
-```
+```dbgcmd
 kd> !wdfkd.wdfinterrupt 0x7a988698  1 
 
 # Dumping WDFINTERRUPT 0x7a988698

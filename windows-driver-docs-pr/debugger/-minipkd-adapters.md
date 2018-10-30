@@ -102,7 +102,7 @@ The flags in the display are explained in the following table:
 
 Here is an example of the **!minipkd.adapters** display:
 
-```
+```dbgcmd
 0: kd> !minipkd.adapters
 Adapter \Driver\lp6nds35     DO 86334a70         DevExt 86334b28
 Adapter \Driver\adpu160m     DO 8633da70         DevExt 8633db28
@@ -115,7 +115,7 @@ Adapter \Driver\adpu160m     DO 86376040         DevExt 863760f8
 
 An error message similar to the following indicates that either the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols, or that Windows has not identified any adapters that work with the SCSI Port driver.
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 

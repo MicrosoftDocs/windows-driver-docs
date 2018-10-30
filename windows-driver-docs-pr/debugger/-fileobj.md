@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!fileobj** extension displays detailed information about a FILE\_OBJECT structure.
 
-```
+```dbgcmd
 !fileobj FileObject
 ```
 

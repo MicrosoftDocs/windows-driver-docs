@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 If your miniport driver maps more than 8 MB of device memory, include a **GeneralConfigData** section in your INF file.
 
-```cpp
+```inf
 [GeneralConfigData]
  
 [MaximumDeviceMemoryConfiguration = n]
