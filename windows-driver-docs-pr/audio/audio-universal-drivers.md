@@ -130,7 +130,7 @@ The traditional INF files continue to be available in the SYSVAD sample.
 
 ### APO vendor specific tuning parameters and feature configuration
 
-All APO vendor system specific settings, parameters, and tuning values must be installed via an extension INF package. In many cases, this can be performed in a simple manner with the [INF AddReg directive](../install/inf-addreg-directive). In more complex cases, a tuning file can be used.  
+All APO vendor system specific settings, parameters, and tuning values must be installed via an extension INF package. In many cases, this can be performed in a simple manner with the [INF AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In more complex cases, a tuning file can be used.  
  
 Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
 
