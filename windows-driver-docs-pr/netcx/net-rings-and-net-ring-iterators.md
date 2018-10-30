@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## NET_RING overview
 
-A **NET_RING** is a circular buffer of network data that is shared between NetAdapterCx and a client driver. Every packet queue in a client driver has two rings: a *packet ring* for core packet descriptors, and a *fragment ring* for each packet's fragment descriptors. Client drivers perform operations on their net rings by calling into the *Net Ring Iterator Interface*.
+A **NET_RING** is a circular buffer of network data that is shared between NetAdapterCx and a client driver. Every packet queue in a client driver has two rings: a *packet ring* for core packet descriptors, and a *fragment ring* for each packet's fragment descriptors.
 
 For more information about packet descriptors, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
@@ -30,38 +30,39 @@ Each element in a **NET_RING** is owned by either the client driver or NetAdapte
 
 | Index | Description | Modified by |
 | --- | --- | --- |
-| BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When the driver increments **BeginIndex** by advancing the ring's drain iterator, the driver *drains* the elements from the ring and returns ownership of them to the OS. | NIC client driver |
-| NextIndex | The beginning of the *post* section of the **NET_RING**. When the driver increments **NextIndex** by advancing the ring's post iterator, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver |
+| BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When **BeginIndex** is incremented, the driver *drains* the elements from the ring and returns ownership of them to the OS. | NIC client driver (indirectly) |
+| NextIndex | The beginning of the *post* section of the **NET_RING**. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver (indirectly) |
 | EndIndex | The end of the range of elements in the **NET_RING** that the NIC client driver owns. Client drivers own elements up to **EndIndex - 1** inclusive. | NetAdapterCx |
 
 Client drivers own every element from **BeginIndex** to **EndIndex - 1** inclusive. For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
 
-NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**. A client driver returns ownership of the elements by using the ring's drain iterator to increment **BeginIndex**.
+NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**. A client driver returns ownership of the elements by incrementing **BeginIndex**.
 
-The following animation illustrates the post and drain operations that iterators perform on a **NET_RING**.
+The following animation illustrates the post and drain operations for a **NET_RING**.
 
 ![Net ring post and drain operations](images/net_ring_post_and_drain_operations.gif "Net ring post and drain operations")
 
 In this model, the client has posted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware. At the beginning of the previous animation, this includes packets A, B, C, and D, as well as their fragments. Note that each packet has one or more fragments. 
 
-Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been posted to hardware. In the animation, after NetAdapterCx adds packets E, F, and G to the packet ring (along with their fragments), the client driver submits packet E to hardware and advances the rings' post iterators accordingly.
+Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been posted to hardware. In the animation, after NetAdapterCx adds packets E, F, and G to the packet ring (along with their fragments), the client driver submits packet E to hardware.
 
-After the hardware transmits or receives data, the client uses the rings' drain iterators to advance **BeginIndex**, transferring ownership of the packets and their fragments back to NetAdapterCx. In the animation, the driver returns packet A and its fragments to the OS.
+After the hardware transmits or receives data, the client advances **BeginIndex**, transferring ownership of the packets and their fragments back to NetAdapterCx. In the animation, the driver returns packet A and its fragments to the OS.
 
-Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. When a driver advances any net ring iterator, the Net Ring Iterator Interface automatically handles wrap around for incrementing the appropriate index.
+Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. NetAdapterCx automatically handles wrapping the index values around the ring when the client driver calls the appropriate method, as described in the following section.
 
-## Net rings and net ring iterators
+## Net Ring Iterator Interface overview
 
-### Post operations
+NIC client drivers perform operations on net rings by calling into the *Net Ring Iterator Interface*. A *net ring iterator* is a small structure associated with a **NET_RING** that contains references to the indices of the **NET_RING** to which it belongs. Net ring iterators are grouped by their ring's type: the packet ring has a post and a drain iterator, and the fragment ring has a post and a drain iterator. This is true for both receive queues and transmit queues.
 
+The Net Ring Iterator Interface is designed to abstract the previously described **NET_RING** index manipulation away from client drivers, as well as provide convenience functions for accessing elements in the rings. This makes posting and draining network data easy for client drivers.
 
-### Drain operations
+For a list of Net Ring Iterator data structures and methods, see [Net Ring Iterator Interface reference](TBD).
 
+## Using the Net Ring Iterator Interface
 
-
-## PCI Device Drivers
+### PCI Device Drivers
 
 Drivers for devices that use ring buffers at the hardware level (for example, typical PCI NICs) normally manipulate the [**NET_RING_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer) indices directly.
 
@@ -79,7 +80,10 @@ Here is a typical sequence for a PCI device driver:
     3. Translate the hardware descriptor to the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet).
     4. Call [**NetRingBufferIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/nf-netringbuffer-netringbufferincrementindex).
 
-## Device Drivers with Asynchronous I/O
+```C++
+```
+
+### Device Drivers with Asynchronous I/O
 
 While a client driver that targets a device with an asynchronous I/O model, such as USB, can also modify the [**NET_RING_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer) indices directly, we recommend instead using higher level routines to manage out-of-order-completions:
 
@@ -98,3 +102,6 @@ Here is a typical sequence for a device driver with asynchronous I/O:
 4. Call [**NetRingBufferReturnCompletedPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbufferreturncompletedpackets).
 
 As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) to **TRUE**. This enables [**NetRingBufferReturnCompletedPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbufferreturncompletedpackets) to complete packets. To access the first associated **NET_PACKET_FRAGMENT** of a packet, call the [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment) macro with the packet, the queue's datapath descriptor, and the *0* index parameters.
+
+```C++
+```
