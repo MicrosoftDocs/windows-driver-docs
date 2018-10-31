@@ -34,7 +34,7 @@ Once a driver has been published for test distribution it can be manually expire
 
 ### <span id="How_long_does_my_driver_published_for_test_distribution_last_"></span><span id="how_long_does_my_driver_published_for_test_distribution_last_"></span><span id="HOW_LONG_DOES_MY_DRIVER_PUBLISHED_FOR_TEST_DISTRIBUTION_LAST_"></span>How long does my driver published for test distribution last?
 
-Drivers are not automatically expired from the test distrubtion workflow.  Once you have completed your testing you should manually expire these.
+Drivers do not automatically expire from the test distribution workflow. After you complete testing, manually remove a driver using the procedure described in [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md).
 
 ## <span id="Client_PC_configuration"></span><span id="client_pc_configuration"></span><span id="CLIENT_PC_CONFIGURATION"></span>Client PC configuration
 
