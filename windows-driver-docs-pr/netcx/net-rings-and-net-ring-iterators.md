@@ -26,19 +26,22 @@ Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequen
 
 ## NET_RING post and drain operations
 
-Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**.
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**. 
+
+> [!NOTE] 
+> This section describes the **NET_RING** indices and their underlying post and drain concepts for transferring network data. To perform operations on a **NET_RING**, client drivers call into the Net Ring Iterator Interface, described in the [next section](#net-ring-iterator-interface-overview).
 
 | Index | Description | Modified by |
 | --- | --- | --- |
-| BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When **BeginIndex** is incremented, the driver *drains* the elements from the ring and returns ownership of them to the OS. | NIC client driver (indirectly) |
-| NextIndex | The beginning of the *post* section of the **NET_RING**. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver (indirectly) |
+| BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When **BeginIndex** is incremented, the driver *drains* the elements from the ring and returns ownership of them to the OS. | NIC client driver, through Net Ring Iterator Interface API calls |
+| NextIndex | The beginning of the *post* section of the **NET_RING**. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver, through Net Ring Iterator Interface API calls |
 | EndIndex | The end of the range of elements in the **NET_RING** that the NIC client driver owns. Client drivers own elements up to **EndIndex - 1** inclusive. | NetAdapterCx |
 
 Client drivers own every element from **BeginIndex** to **EndIndex - 1** inclusive. For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
 
-NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**. A client driver returns ownership of the elements by incrementing **BeginIndex**.
+NetAdapterCx posts elements to the ring buffer by incrementing **EndIndex**. A client driver drains the buffers and returns ownership of the elements by incrementing **BeginIndex**.
 
 The following animation illustrates the post and drain operations for a **NET_RING**.
 
@@ -58,7 +61,7 @@ NIC client drivers perform operations on net rings by calling into the *Net Ring
 
 Each **NET_RING** has multiple iterators. For example, the packet ring has an iterator that iterates over the drain section of the ring (a *drain iterator*) and an iterator that iterates over the post section of the ring (a *post iterator*). Likewise, the fragment ring has the same iterators. 
 
-The Net Ring Iterator Interface provides methods for getting, setting, and advancing these iterators, which is how drivers post and drain network data from the rings. The interface also provides convenience methods for accessing elements in the rings and linking packets to fragments.
+The Net Ring Iterator Interface provides methods for getting, setting, and advancing these iterators, which is how drivers post and drain network data from the rings. The interface also provides convenience methods for accessing elements in the rings and linking packets to their associated fragments.
 
 For a list of net ring iterator data structures and functions, see [Netringiterator.h](netringiterator-h.md).
 
