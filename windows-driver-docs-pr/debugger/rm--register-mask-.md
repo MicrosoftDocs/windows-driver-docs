@@ -168,7 +168,7 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 
 Enable the integer state and segment registers.
 
-```
+```dbgcmd
 0: kd> rm 0x00a
 0: kd> rm
 Register output mask is a:
@@ -179,7 +179,7 @@ Register output mask is a:
 
 Enable 0x1000 (Displays the AVX-512 zmm0-zmm31 registers in floating point format).
 
-```
+```dbgcmd
 0: kd> rm 0x100a
 0: kd> rm
 Register output mask is 100a:
@@ -191,7 +191,7 @@ Register output mask is 100a:
 
 Enable mask 0x2000 (Displays the  AVX-512 zmm00-zmm31 registers in integer format).
 
-```
+```dbgcmd
 0: kd> rm 0x200a
 0: kd> rm
 Register output mask is 200a:
@@ -203,7 +203,7 @@ Register output mask is 200a:
 
 Enable all AVX-512 register masks:
 
-```
+```dbgcmd
 0: kd> rm 0x700a
 0: kd> rm
 Register output mask is 700a:
@@ -216,7 +216,7 @@ Register output mask is 700a:
 
 If you try and set a register mask on hardware that does not support it, the invalid bits of the register mask will be ignored.
 
-```
+```dbgcmd
 kd> rm 0x100a
 Ignored invalid bits 1000
 kd> rm

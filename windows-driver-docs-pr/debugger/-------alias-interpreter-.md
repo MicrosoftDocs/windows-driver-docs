@@ -19,13 +19,14 @@ ms.localizationpriority: medium
 
 A dollar sign followed by a pair of braces ( **${ }** ) evaluates to a variety of values related to the specified user-named alias.
 
+```dbgcmd
 
     Text ${Alias} Text 
     Text ${/d:Alias} Text 
     Text ${/f:Alias} Text 
     Text ${/n:Alias} Text 
     Text ${/v:Alias} Text 
-
+```
 
 ## <span id="ddk_token_alias_interpreter_dbg"></span><span id="DDK_TOKEN_ALIAS_INTERPRETER_DBG"></span>Parameters
 

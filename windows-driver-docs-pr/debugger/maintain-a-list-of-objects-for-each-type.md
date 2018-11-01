@@ -4,7 +4,7 @@ description: Maintain a list of objects for each type
 ms.assetid: 845ba6cb-60b3-4053-9d54-f43ed344f82d
 keywords: ["Maintain a list of objects for each type (global flag)"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 10/25/2018
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +45,7 @@ The **Maintain a list of objects for each type** flag collects and maintains a l
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-To display the object list, use Open Handles (oh.exe), a tool included in the Windows 2000 Resource Kit, and now available for download from the [Microsoft Windows 2000 Resource Kit](https://go.microsoft.com/fwlink/p/?linkid=11233) Web site. Because Open Handles automatically sets the OTL flag, but does not clear it, use **GFlags -otl** to clear the flag.
+To display the object list, use the sysinternals tool [Handle](https://docs.microsoft.com/sysinternals/downloads/handle).
 
 **Note**   The linked lists created when you set this flag use eight bytes of overhead for each object. Remember to clear this flag when your analysis is complete.
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbpdos** command displays information about all physical device objects (PDOs) created by the USB hub driver.
 
-```
+```dbgcmd
 !usbkd.usbpdos
 ```
 
@@ -33,7 +33,7 @@ Examples
 
 Here's an example of the output of the **!usbpdos** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbpdos
 
 ext ffffe00006c513f0

@@ -22,7 +22,7 @@ When a complex primary surface is created, it might or might not have an attache
 
 A typical technique, presented in the *Perm3* sample driver, is to mark a surface's **dwReserved1** field when *D3dCreateSurfaceEx* is called for that surface. The driver only marks the surface if **fpVidMem** (a member of the [**DD\_SURFACE\_GLOBAL**](https://msdn.microsoft.com/library/windows/hardware/ff551726) structure) is not equal to zero. This is because **fpVidMem** could be zero because the application restored a primary surface that had a back buffer with an explicitly attached Z-buffer, but the Z-buffer had not yet been restored. At some later time, the application restores the Z-buffer, and the driver then marks it. If the application restores the Z-buffer before restoring the primary chain, the driver may receive the Z-buffer, already marked, attached to the back buffer when *D3dCreateSurfaceEx* is called.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
  
 

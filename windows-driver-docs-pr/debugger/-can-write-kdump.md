@@ -69,7 +69,7 @@ If no *Option* is specified, then the extension will determine if there is enoug
 
 In the following example, the file system is not specified:
 
-```
+```dbgcmd
 kd> !can_write_kdump
 Checking kernel summary dump...
 WARNING: Can't predict how many pages will be used, assuming worst-case.

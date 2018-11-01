@@ -26,7 +26,7 @@ If, during debugging and testing, you use software emulation for the rendering t
 
 To specify the watchdog time threshold for display drivers, create the following REG\_DWORD entry in the registry:
 
-```cpp
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\BreakPointDelay
 ```
 
@@ -34,7 +34,7 @@ Set the value of **BreakPointDelay** to the watchdog time threshold, in 10-secon
 
 If you test your display driver without an attached debugger, you can prevent the watchdog timer from generating a bug check. To do so, create the following REG\_DWORD entry in the registry, and set its value to 1:
 
-```cpp
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\DisableBugCheck
 ```
 

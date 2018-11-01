@@ -34,7 +34,7 @@ Remarks
 
 The following example uses the **.browse** command to display the output of the [**.chain /D**](-chain--list-debugger-extensions-.md) command in a Command Browser window.
 
-```
+```dbgcmd
 .browse .chain /D
 ```
 

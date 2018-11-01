@@ -44,13 +44,13 @@ This can happen because of the following:
 -   A device driver does not instruct its hardware to release the interrupt signal because it does not believe the interrupt was initiated from its hardware.
 -   A device driver claims the interrupt even though the interrupt was not initiated from its hardware. Note that this can only occur when multiple devices are sharing the same IRQ.
 -   The ELCR (edge level control register) is set incorrectly.
--   Edge and Level interrupt triggered devices share an IRQ (e.g. COM port and PCI SCSI controller).
+-   Edge and Level interrupt triggered devices share an IRQ.
 
 All of these cases will instantly hard hang your system. Instead of hard hanging the system, this bugcheck is initiated since in many cases it can identify the culprit.
 
 When the bugcheck occurs, the module containing the ISR (interrupt service routine) of the storming IRQ is displayed on the screen. This is an example of what you would see:
 
-```
+```console
 *** STOP: 0x000000F2 (0xFCA7C55C, 0x817B9B28, 0x817D2AA0, 0x00000002)
 An interrupt storm has caused the system to hang.
 *** Address FCA7C55C base at FCA72000, Datestamp 3A72BDEF - ACPI.sys

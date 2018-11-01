@@ -64,8 +64,6 @@ For more information on integrating WER into applications, see [Using WER](https
 
 [Windows Error Reporting](https://msdn.microsoft.com/library/bb513641(vs.85).aspx)
 
-[Webcast: Windows Error Reporting (Level 200)](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventId=1032314332)
-
 [VERSIONINFO resource](https://msdn.microsoft.com/library/aa381058.aspx)
 
  

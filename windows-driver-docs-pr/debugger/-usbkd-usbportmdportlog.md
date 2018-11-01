@@ -38,7 +38,7 @@ Examples
 
 Here is an example of a portion of the output of **!usbportmdportlog**.
 
-```
+```dbgcmd
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 

@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The semicolon ( **;** ) character is used to separate multiple commands on a single line.
 
+```dbgcmd
     Command1 ; Command2 [; Command3 ...] 
-
+```
 
 ## <span id="ddk_token_command_separator_dbg"></span><span id="DDK_TOKEN_COMMAND_SEPARATOR_DBG"></span>Parameters
 

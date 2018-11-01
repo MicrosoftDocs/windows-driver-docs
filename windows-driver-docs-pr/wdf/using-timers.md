@@ -27,7 +27,7 @@ Typically, you will know the number of timers that your driver will need for eac
 
 To start the timer, your driver calls [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054), passing a "due time". The framework starts the timer's clock and calls the [*EvtTimerFunc*](https://msdn.microsoft.com/library/windows/hardware/ff541823) callback function when the specified amount of time has elapsed.
 
-If the driver supplied a periodic time interval when it called [**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050), the timer is referred to as a *periodic timer*. A periodic timer's clock continues to run after the initial "due time" has elapsed, and the framework calls the driver's callback function repeatedly, whenever the periodic time interval has elapsed.
+If the driver supplied a periodic time interval when it called [**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050), the timer is referred to as a *periodic timer*. A periodic timer's clock continues to run after the initial "due time" has elapsed, and the framework calls the driver's callback function repeatedly, whenever the periodic time interval has elapsed. Periodic timers do not start automatically. Like non-periodic timers, the driver must still call [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054) after creating the timer to start it the first time.
 
 A driver might call [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054) from its [*EvtTimerFunc*](https://msdn.microsoft.com/library/windows/hardware/ff541823) callback function in order to restart a non-periodic timer after it expires.
 

@@ -6,7 +6,9 @@ ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !index
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+
+#  !index
 
 
 The **!index** extension indexes time travel traces or displays index status information.

@@ -21,8 +21,9 @@ The pipe (**|**) command displays status for the specified process, or for all p
 
 Do not confuse this command with the [**|| (System Status)**](----system-status-.md) command.
 
+```dbgcmd
     | Process
-
+```
 
 ## <span id="ddk_cmd_process_status_dbg"></span><span id="DDK_CMD_PROCESS_STATUS_DBG"></span>Parameters
 
@@ -70,37 +71,37 @@ Unless you enabled the debugging of child processes when you started the debuggi
 
 The following examples show you how to use this command. The following command displays all processes.
 
-```console
+```dbgcmd
 2:005> |
 ```
 
 The following command also displays all processes.
 
-```console
+```dbgcmd
 2:005> |*
 ```
 
 The following command displays the currently active process.
 
-```console
+```dbgcmd
 2:005> |.
 ```
 
 The following command displays the process that originally caused the exception (or that the debugger originally attached to).
 
-```console
+```dbgcmd
 2:005> |#
 ```
 
 The following command displays process number 2.
 
-```console
+```dbgcmd
 2:005> |2
 ```
 
 The previous command displays the following output.
 
-```console
+```dbgcmd
 0:002> |
 #  0 id: 224   name: myprog.exe 
    1 id: 228   name: onechild.exe 
