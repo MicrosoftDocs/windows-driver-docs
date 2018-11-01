@@ -111,7 +111,7 @@
       - name: "NetRingIteratorGetIndex"
         href: netringiteratorgetindex.md
       - name: "NetRingIteratorAny"
-        href: .netringiteratoranymd
+        href: netringiteratoranymd
       - name: "NET_RING_ITERATOR"
         href: net-ring-iterator.md
       - name: "NET_RING_PACKET_ITERATOR"
