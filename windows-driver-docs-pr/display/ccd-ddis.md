@@ -45,9 +45,9 @@ The following function must be implemented by display miniport drivers that supp
 
 |||
 |:--|:--|
-|[**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling)|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_ASPECT\_RATIO**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_aspect_ratio)|
-|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_SCANNING\_MODE**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_scanning_mode)|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_STEREO\_MODE**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_stereo_mode)|
-|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_SYNC\_POLARITY**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_sync_polarity)||
+|[**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling)|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_ASPECT\_RATIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_aspect_ratio)|
+|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_SCANNING\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_scanning_mode)|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_STEREO\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_stereo_mode)|
+|[**DISPLAYID\_DETAILED\_TIMING\_TYPE\_I\_SYNC\_POLARITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_displayid_detailed_timing_type_i_sync_polarity)||
 
 
 For more details on how to implement CCD in your display miniport driver, see the following topics:

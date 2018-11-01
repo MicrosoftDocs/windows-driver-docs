@@ -68,7 +68,7 @@ Remarks
 
 The following is an example of the **!wudfext.umdevstack** display:
 
-```
+```dbgcmd
 kd> !umdevstack 0x0034e4e0
 Device Stack: 0x0034e4e0  Pdo Name: \Device\00000057
  Number of UM drivers: 0x1

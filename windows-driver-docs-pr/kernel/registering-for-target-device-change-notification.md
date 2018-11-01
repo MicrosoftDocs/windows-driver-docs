@@ -10,10 +10,6 @@ ms.localizationpriority: medium
 
 # Registering for Target Device Change Notification
 
-
-
-
-
 A driver registers for notification of PnP target device change events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).
 
 The following information applies to calling this routine for target device change notification:
