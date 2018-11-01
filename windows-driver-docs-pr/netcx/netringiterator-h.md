@@ -22,8 +22,8 @@ Netringiterator.h contains the following programming interfaces:
 
 | Title | Description |
 | --- | --- |
-| [NetRingIteratorGetFragment](netringiteratorgetfragment.md) | x |
-| [NetRingIteratorGetPacket](netringiteratorgetpacket.md) | x |
+| [NetRingIteratorGetFragment](netringiteratorgetfragment.md) | The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure pointed to by a NET_RING_FRAGMENT_ITERATOR. |
+| [NetRingIteratorGetPacket](netringiteratorgetpacket.md) | The NetRingIteratorGetPacket method gets the NET_PACKET structure pointed to by a NET_RING_PACKET_ITERATOR. |
 | [NetRingGetRxPostFragmentIterator](netringgetrxpostfragmentiterator.md) | x |
 | [NetRingSetRxPostFragmentIterator](netringsetrxpostfragmentiterator.md) | x |
 | [NetRingGetRxDrainFragmentIterator](netringgetrxdrainfragmentiterator.md) | x |

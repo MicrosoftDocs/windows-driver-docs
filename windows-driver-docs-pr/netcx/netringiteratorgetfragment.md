@@ -1,6 +1,6 @@
 ---
 title: NetRingIteratorGetFragment function
-description: 
+description: The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure pointed to by a NET_RING_FRAGMENT_ITERATOR.
 ms.assetid: B6F2FEE8-7571-4B00-8D73-352D554F2F45
 keywords:
 - NetAdapterCx NetRingIteratorGetFragment, NetCx NetRingIteratorGetFragment
@@ -12,32 +12,31 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Description
+The **NetRingIteratorGetFragment** method gets the **NET_FRAGMENT** structure pointed to by a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md).
 
 ## Syntax
 
 ```cpp
-
+NET_FRAGMENT* NetRingIteratorGetFragment(
+    NET_RING_FRAGMENT_ITERATOR const * Iterator
+);
 ```
 
 ## Parameters
 
-Param
+`Iterator`
+
+A pointer to a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) structure.
 
 ## Return Value
 
-Returns 
-
-## Remarks
-
-Remark
+Returns a pointer to the **NET_FRAGMENT** pointed to by the **NET_RING_FRAGMENT_ITERATOR**.
 
 ## Requirements
 
 |  |  |
 | --- | --- |
 | Target Platform | Universal |
-| Minimum KMDF version | ? |
 | Header | netringiterator.h (include netadaptercx.h) |
 | Library | NetAdapterCxStub.lib |
 | IRQL | PASSIVE_LEVEL |
