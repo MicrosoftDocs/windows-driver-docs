@@ -8,21 +8,17 @@ ms.localizationpriority: medium
 
 # Attestation signing a kernel driver for public release
 
-
 This topic describes how to sign a driver using attestation signing.
- 
 
-> [!Note]  
+> [!Note]
 > Attestation signing has the following properties.
 > -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > -   Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
 > -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
 > -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
- 
 
 ## Attestation signing a kernel mode driver
-
 
 To attestation sign a kernel mode driver complete the following steps:
 
@@ -37,11 +33,9 @@ To attestation sign a kernel mode driver complete the following steps:
 
 ## Acquire an EV code signing certificate
 
-
 Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit. 
 
 ## Allowable PE signatures and binaries
-
 
 The following PE levels and binaries can be processed throught Attestation:
 
@@ -58,7 +52,6 @@ The following PE levels and binaries can be processed throught Attestation:
 
 ## Register your company for Hardware Dev Center (Sysdev) Dashboard Services
 
-
 To sign your drivers through the Hardware dashboard you first need to register your organization and get a code signing certificate.
 
 Follow the process described in [Register for the hardware program](register-for-the-hardware-program.md) to set up the account you will use for the hardware dashboard.
@@ -71,7 +64,6 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 
 ## Create a CAB Files Submission
 
-
 To create a CAB file that can be submitted to the dashboard, complete the following steps:
 
 1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available from GitHub.
@@ -83,9 +75,8 @@ Typical CAB file submissions contain the following:
 -   The symbol file that is used for debugging information. For example, Echo.pdb.
 -   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
-  >[!NOTE]  
-  >All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
-
+> [!NOTE]  
+> All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -136,7 +127,6 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 C:\Echo\Echo.Inf
 C:\Echo\Echo.Sys
 ```
- 
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
@@ -163,20 +153,16 @@ Throughput:              86.77 Kb/second
 
 ## Sign the submission CAB file with your EV certificate
 
-
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, you might use the signtool and if you are using Verisign, you might specify their timestamp server.
 
 ```cpp
 C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"
 ```
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Remember to use industry best practices to manage the security of the EV code signing process.
 
- 
-
 ## Submit the EV signed Cab file using the Hardware Dev Center dashboard
-
 
 1. Submit the EV signed CAB file using the Hardware Dev Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
 
@@ -188,7 +174,6 @@ C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http:
 2. When the signing process is complete, download your signed driver from the hardware dashboard.
 
 ## Validate that the driver was properly signed
-
 
 Complete the following steps to ensure that the driver was properly signed.
 
@@ -266,8 +251,3 @@ C:\DriverFiles\DriverPackage2\Driver2.inf
 ```
 
 You can follow these steps to sign, submit and test the other driver files you wish to submit.
-
- 
-
- 
-
