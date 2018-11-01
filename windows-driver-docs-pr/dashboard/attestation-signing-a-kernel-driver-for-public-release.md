@@ -12,43 +12,43 @@ This topic describes how to sign a driver using attestation signing.
 
 > [!Note]
 > Attestation signing has the following properties.
-> -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
-> -   Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
-> -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
-> -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-> -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
+> - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
+> - Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
+> - An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
+> - Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
 
 ## Attestation signing a kernel mode driver
 
 To attestation sign a kernel mode driver complete the following steps:
 
-1.  Acquire an EV Code Signing Certificate
-2.  Register your company for the Hardware Dev Center
-3.  Download and install the Windows Driver Kit
-4.  Create a CAB files submission
-5.  Sign the CAB file submission with your EV Cert
-6.  Submit the EV signed Cab file using the Hardware Dev Center dashboard
-7.  Validate that the driver was properly signed
-8.  Test your driver on Windows 10 for Desktop
+1. Acquire an EV Code Signing Certificate
+2. Register your company for the Hardware Dev Center
+3. Download and install the Windows Driver Kit
+4. Create a CAB files submission
+5. Sign the CAB file submission with your EV Cert
+6. Submit the EV signed Cab file using the Hardware Dev Center dashboard
+7. Validate that the driver was properly signed
+8. Test your driver on Windows 10 for Desktop
 
 ## Acquire an EV code signing certificate
 
-Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit. 
+Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit.
 
 ## Allowable PE signatures and binaries
 
-The following PE levels and binaries can be processed throught Attestation:
+The following PE levels and binaries can be processed through Attestation:
 
-* **PeTrust**
-* **DrmLevel**
-* **HAL**
-* .exe
-* .cab
-* .dll
-* .ocx
-* .msi
-* .xpi 
-* .xap
+- **PeTrust**
+- **DrmLevel**
+- **HAL**
+- .exe
+- .cab
+- .dll
+- .ocx
+- .msi
+- .xpi
+- .xap
 
 ## Register your company for Hardware Dev Center (Sysdev) Dashboard Services
 
@@ -70,13 +70,13 @@ To create a CAB file that can be submitted to the dashboard, complete the follow
 
 Typical CAB file submissions contain the following:
 
--   The driver itself, for example Echo.sys
--   The driver INF file that is used by the dashboard to facilitate the signing process.
--   The symbol file that is used for debugging information. For example, Echo.pdb.
--   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+- The driver itself, for example Echo.sys
+- The driver INF file that is used by the dashboard to facilitate the signing process.
+- The symbol file that is used for debugging information. For example, Echo.pdb.
+- Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
-> [!NOTE]  
-> All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
+  > [!NOTE]  
+  > All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -198,9 +198,9 @@ c. Select the **Details** button, and then select **View Certificate**.
 d. On the **Details** tab, select the **Enhanced Key Usage** field.
 When the driver is resigned by the dashboard the following process is used.
 
--   Appends a Microsoft SHA2 embedded signature.
--   If the driver binaries are embedded signed by the customer with their own certificates, those signatures will not be overwritten.
--   Creates and signs a new catalog file with a SHA2 Microsoft certificate. This catalog replaces any existing catalog provided by the customer.
+- Appends a Microsoft SHA2 embedded signature.
+- If the driver binaries are embedded signed by the customer with their own certificates, those signatures will not be overwritten.
+- Creates and signs a new catalog file with a SHA2 Microsoft certificate. This catalog replaces any existing catalog provided by the customer.
 
 ## Test your driver on Windows 10
 
