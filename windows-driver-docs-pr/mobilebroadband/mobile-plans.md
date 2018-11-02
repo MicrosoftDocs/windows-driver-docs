@@ -81,4 +81,6 @@ To get started with the postpaid Mobile Plans experience, follow these steps:
 See these topics for additional information about Mobile Plans:
 
 - [Prepaid experience](mobile-plans-prepaid-experience.md)
+- [Promotional content](mobile-plans-promotional-content.md)
+- [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
 - [Appendix](mobile-plans-appendix.md)
