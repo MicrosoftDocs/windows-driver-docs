@@ -66,7 +66,7 @@ Note the following for both COSA and APN database.
 
 - The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
-    >[!NOTE]  
+    >[!NOTE]
     >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
     For example, when the following values are entered in a row in the spreadsheet:
