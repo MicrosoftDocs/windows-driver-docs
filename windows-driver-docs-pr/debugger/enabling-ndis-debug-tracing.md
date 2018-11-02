@@ -17,9 +17,9 @@ You can enable debug tracing by setting appropriate registry values. For details
 
 Setting registry values to enable debug tracing works even if the host computer does not have the checked version of the Ndis.sys symbols installed.
 
- 
+ 
 
- 
+ 
 
 
 

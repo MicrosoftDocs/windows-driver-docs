@@ -32,9 +32,9 @@ The main target for autoconfiguration is network printers as they are the most l
 
 [Autoconfiguration Implementation Options](autoconfiguration-implementation-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ When drivers create a framework device object, they can register the following i
 
 [**IPowerPolicyCallbackWakeFromSx**](https://msdn.microsoft.com/library/windows/hardware/ff556825)
 
- 
+ 
 
- 
+ 
 
 
 

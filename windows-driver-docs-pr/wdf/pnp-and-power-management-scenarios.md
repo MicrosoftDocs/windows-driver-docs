@@ -26,9 +26,9 @@ The following topics identify typical PnP and power management scenarios and sho
 
 -   [The PnP Manager Redistributes System Resources](the-pnp-manager-redistributes-system-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

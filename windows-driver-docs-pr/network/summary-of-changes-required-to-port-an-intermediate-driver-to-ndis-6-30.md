@@ -22,9 +22,9 @@ To update an NDIS 6.x intermediate (IM) driver to support NDIS 6.30, you must mo
 
 -   Except where noted otherwise, protocol driver and miniport driver changes also apply to intermediate drivers. For more information about porting these drivers, see the [Summary of Changes Required to Port a Protocol or Filter Driver to NDIS 6.30](summary-of-changes-required-to-port-a-protocol-or-filter-driver-to-ndis-6-30.md) and [Summary of Changes Required to Port a Miniport Driver to NDIS 6.30](summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-30.md).
 
- 
+ 
 
- 
+ 
 
 
 

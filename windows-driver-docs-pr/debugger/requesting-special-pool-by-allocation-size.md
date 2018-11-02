@@ -19,7 +19,7 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
 **Note**   This method is rarely useful for diagnosing driver errors, because it affects all kernel pool requests of the specified size, regardless of which driver or kernel module requested the allocation.
 
- 
+ 
 
 ### <span id="to_request_special_pool_by_allocation_size"></span><span id="TO_REQUEST_SPECIAL_POOL_BY_ALLOCATION_SIZE"></span>To request special pool by allocation size
 
@@ -35,9 +35,9 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
     ![screen shot that shows an allocation size entered as a hexadecimal value](images/gflags-specialpool-size.png)
 
- 
+ 
 
- 
+ 
 
 
 

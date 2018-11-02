@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 Before you upgrade network components, make sure that the network components to be upgraded are correctly installed and configured.
 
@@ -26,7 +26,7 @@ Before you upgrade network components, make sure that the network components to 
 1.  Create one partition for the preupgrade operating system and another partition for the Microsoft Windows 2000 or later operating system.
     **Note**  Do not install the preupgrade operating system and the upgrade operating system in the same partition. If the preupgrade operating system and Windows 2000 or later are installed in the same partition, they will share the same Program Files directory.
 
-     
+     
 
 2.  On the test system, boot an operating system build other than the one to be upgraded. Then copy the entire partition to be upgraded, except for the pagefile.sys file, into a back-up directory. There is no need to copy the pagefile.sys file, since it is created on the start-up of Windows 2000 or later.
 
@@ -82,9 +82,9 @@ Before you upgrade network components, make sure that the network components to 
     OutputToDebug=0
     ```
 
- 
+ 
 
- 
+ 
 
 
 

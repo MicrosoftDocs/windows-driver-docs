@@ -56,9 +56,9 @@ This sample INF copies the file *classXcoinst.dll* to the system directory and m
 
 Such an INF that registers a class co-installer can be activated by a right-click install or through an application that calls **SetupInstallFromInfSection**.
 
- 
+ 
 
- 
+ 
 
 
 

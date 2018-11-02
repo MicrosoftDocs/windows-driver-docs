@@ -34,9 +34,9 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/
 
 The member values in this example are similar to those in the [PCM Multichannel Stream Data Range](pcm-multichannel-stream-data-range.md) example, with the exception of the `MaximumBitsPerSample` value, which is greater than 16. This value is set to the maximum number of valid bits supported. For example, if the device supports 20 bits of valid audio data in 24-bit containers, the value for `MaximumBitsPerSample` should be set to 20.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ The following event sets are defined for video capture minidrivers:
 
 [KSEVENTSETID\_VolumeLimit](kseventsetid-volumelimit.md)
 
- 
+ 
 
- 
+ 
 
 
 

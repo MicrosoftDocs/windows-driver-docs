@@ -49,11 +49,11 @@ Unlike lstrlen, none of the replacements catch exceptions. In addition, lstrlen 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

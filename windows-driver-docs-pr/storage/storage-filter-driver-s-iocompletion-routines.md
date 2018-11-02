@@ -30,9 +30,9 @@ In general, a storage filter driver should supply an [*IoCompletion*](https://ms
 
 For more information about *InterpretRequestSense*, *RetryRequest*, and *ReleaseQueue* routines, see [Storage Class Drivers](storage-class-drivers.md). For more information about general requirements for [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines, see [Using IoCompletion Routines](https://msdn.microsoft.com/library/windows/hardware/ff565398).
 
- 
+ 
 
- 
+ 
 
 
 

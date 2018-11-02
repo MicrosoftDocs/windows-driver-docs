@@ -31,7 +31,7 @@ The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](https://msdn.micr
 |-------------------------------------------------------------|----------------------------------------|
 | [**WDI\_AUTH\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897792)\[\] | An array of authentication algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

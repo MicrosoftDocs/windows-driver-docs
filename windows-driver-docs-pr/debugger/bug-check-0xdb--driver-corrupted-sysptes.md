@@ -56,7 +56,7 @@ The DRIVER\_CORRUPTED\_SYSPTES bug check has a value of 0x000000DB. This indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -68,9 +68,9 @@ Resolution
 
 If this bug check occurs, the culprit can be detected by editing the registry. In the **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management** registry key, create or edit the **TrackPtes** value, and set it equal to DWORD 3. Then reboot. The system will then save stack traces, and if the driver commits the same error, the system will issue [**bug check 0xDA**](bug-check-0xda--system-pte-misuse.md) (SYSTEM\_PTE\_MISUSE). Then the stack trace will identify the driver that caused the error.
 
- 
+ 
 
- 
+ 
 
 
 

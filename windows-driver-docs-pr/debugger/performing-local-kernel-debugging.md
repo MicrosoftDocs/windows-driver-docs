@@ -75,9 +75,9 @@ The LiveKD tool simulates local kernel debugging. This tool creates a "snapshot"
 
 LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](https://go.microsoft.com/fwlink/p/?linkid=56552) from the Windows Sysinternals site.
 
- 
+ 
 
- 
+ 
 
 
 

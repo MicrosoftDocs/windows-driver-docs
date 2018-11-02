@@ -45,9 +45,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh831858)
 
- 
+ 
 
- 
+ 
 
 
 

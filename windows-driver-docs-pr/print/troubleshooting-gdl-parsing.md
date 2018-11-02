@@ -82,9 +82,9 @@ Solution: Creating your own XML by using the PASSTHROUGH or XSD\_DEFINED data ty
 <a href="" id="symptom---the-parser-says--preface-cannot-be-used-with-a-precompiled-file---but-the-root-file-does-not-contain-a--precompiled-directive-"></a>Symptom: The parser says "Preface cannot be used with a precompiled file", but the root file does not contain a \#Precompiled directive.  
 Solution: The \#Precompiled directive might actually reside in the preface itself. The parser cannot distinguish whether GDL content came from the preface or the root file.
 
- 
+ 
 
- 
+ 
 
 
 

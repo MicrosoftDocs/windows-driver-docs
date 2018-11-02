@@ -27,11 +27,11 @@ To find a product by searching (in this case, Arc Mouse), follow these steps:
 
 4. Click the product name to get further details about the product. The list of details includes the product name, company, compatibility status, product type, and certification status.
 
-> [!Note]  
+> [!Note]
 > Search is limited to **Product Name** and **Company**.
-
+> 
 > Search will run an AND operation on any word entered in the **Search** box.
-
+> 
 > Search treats multiple words enclosed in quotation marks as one search string.
 
 ## To find products by filtering

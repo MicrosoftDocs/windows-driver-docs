@@ -43,7 +43,7 @@ The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](https://msdn.micr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

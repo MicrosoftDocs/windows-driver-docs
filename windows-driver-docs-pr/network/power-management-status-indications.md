@@ -30,9 +30,9 @@ This section includes the following reference topics:
 
 [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](ndis-status-pm-wol-pattern-rejected.md)
 
- 
+ 
 
- 
+ 
 
 
 

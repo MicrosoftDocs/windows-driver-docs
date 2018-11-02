@@ -37,7 +37,7 @@ The following table describes the format and value range for the **CheckBackMDNo
 |------------|---------------------|---------------|
 | [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 5             |
 
- 
+ 
 
 <a href="" id="checkbackmdretrieved"></a>**CheckBackMDRetrieved**  
 This registry value indicates the number of days that the DMRC waits before it queries for updated device metadata packages. This value applies to devices for which the DMRC previously downloaded metadata packages.
@@ -54,11 +54,11 @@ The following table describes the format and value range for the **CheckBackMDRe
 |------------|---------------------|---------------|
 | [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 8             |
 
- 
+ 
 
 **Note**  The WMIS server, in cooperation with the DMRC, sets the values for the **CheckBackMDRetrieved** and **CheckBackMDNotRetrieved** registry values on the client system. These values are set based on network conditions and load balancing. Every response from the WMIS server contains the client configuration data and controls the DMRC behavior.
 
- 
+ 
 
 The DMRC follows these steps to determine whether it has to search the WMIS server for a newer metadata package for a device:
 
@@ -70,9 +70,9 @@ The DMRC follows these steps to determine whether it has to search the WMIS serv
 
     2.  If the DMRC has not previously downloaded a device metadata package for the device, the DMRC compares the value of the **CheckBackMDNotRetrieved** registry key to the value of today's date minus the **LastCheckedDate** value. If the **CheckBackMDNotRetrieved** value is smaller, the DMRC queries the WMIS server.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ As shown in Figure 3, the device icon and the context menu that appears when the
 
 ![figures comparing the menus for the default device experience and the custom device experience](images/devicestage004.png)
 
- 
+ 
 
- 
+ 
 
 
 

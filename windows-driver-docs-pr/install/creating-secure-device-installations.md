@@ -90,9 +90,9 @@ Additionally, after an installation completes you can do the following:
 
 -   Use **My Computer** to view the security settings that are assigned to a file.
 
- 
+ 
 
- 
+ 
 
 
 

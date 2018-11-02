@@ -41,15 +41,15 @@ The **Stop on exception** flag causes the kernel to break into the kernel debugg
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 Windows passes all first chance exceptions (except for STATUS\_PORT\_DISCONNECT) with a severity of Warning or Error to the debugger before passing them to a local exception handler.
 
- 
+ 
 
- 
+ 
 
 
 

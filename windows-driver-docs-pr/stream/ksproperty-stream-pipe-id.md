@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_STREAM\_PIPE\_ID property is opaque and used internally for communication between the KSProxy system driver and AVStream.
 
- 
+ 
 
- 
+ 
 
 
 

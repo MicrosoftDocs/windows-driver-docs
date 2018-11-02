@@ -20,9 +20,9 @@ The KSPROPSETID\_Quality property set is enumerated by KSPROPERTY\_QUALITY and i
 
 [**KSPROPERTY\_QUALITY\_REPORT**](ksproperty-quality-report.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ A *DpcForIsr* or *CustomDpc* routine is called in an arbitrary DPC context at IR
 
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

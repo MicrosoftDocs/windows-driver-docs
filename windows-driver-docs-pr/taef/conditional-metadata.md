@@ -67,9 +67,9 @@ TEST_METHOD_PROPERTY(L"Pict:Order", L"2")
 
 In this case, it is unspecified whether the PICT data source will use the "1" or the "2" for the PICT order.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -107,9 +107,9 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
- 
+ 
 
- 
+ 
 
 
 

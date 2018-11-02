@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_MID property specifies the mid-frequency level of a chann
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies the mid-frequency level. Level values use the following scale:
 
@@ -101,9 +101,9 @@ Requirements
 
 [**KSNODETYPE\_TONE**](ksnodetype-tone.md)
 
- 
+ 
 
- 
+ 
 
 
 

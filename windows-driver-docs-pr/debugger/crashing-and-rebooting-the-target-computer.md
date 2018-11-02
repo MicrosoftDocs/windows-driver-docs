@@ -42,9 +42,9 @@ You can also change the break state after the debugger is running:
 
 -   Use the [**CTRL+K**](ctrl-k--change-post-reboot-break-state-.md) shortcut keys in KD, the [CTRL+ALT+K](debug---kernel-connection---cycle-initial-break.md) shortcut keys in WinDbg, and the Debug | Kernel Connection | Cycle Initial Break command in WinDbg to change the break state. Every time that you use these commands, the debugger switches between three states: no automatic break, break upon kernel initialization, and break on first kernel module load. This method cannot activate both automatic breakpoints at the same time.
 
- 
+ 
 
- 
+ 
 
 
 

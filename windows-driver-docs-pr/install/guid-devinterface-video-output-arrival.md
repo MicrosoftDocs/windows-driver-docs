@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL [device interface class](https://msdn
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md)
 
- 
+ 
 
- 
+ 
 
 
 

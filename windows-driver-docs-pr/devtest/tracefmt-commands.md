@@ -25,24 +25,18 @@ To provide a TMF file or a path to a directory of TMF files:
 
 ```
     tracefmt [EtlFile | -rt SessionName][-tmf TMFFile | -p TMFPath ] [Options]
-
-   
 ```
 
 To create a TMF file:
 
 ```
     tracefmt [EtlFile | -rt SessionName]-i ImageFiles [-r SymbolPath ] [-p TmfPath ] [Options]
-
-   
 ```
 
 To display the syntax at the command line.
 
 ```
     tracefmt -h | /?
-
-   
 ```
 
 ## <span id="ddk_tracefmt_commands_tools"></span><span id="DDK_TRACEFMT_COMMANDS_TOOLS"></span>Parameters
@@ -193,9 +187,9 @@ Tracefmt does not format the values of the system performance counter clock (**Q
 
 If you view a trace message file on a computer running Windows XP, the display might show trace messages that are out of sequence. To correct this problem, you can use the sequence number option when you start the trace session and view the trace using Tracefmt. You can then view the trace with Traceview and sort according to sequence number. You can also view the trace on a computer running Windows Server 2003 or later versions of Windows.
 
- 
 
- 
+
+
 
 
 

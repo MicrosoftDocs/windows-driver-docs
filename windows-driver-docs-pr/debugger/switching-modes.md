@@ -17,7 +17,7 @@ When you [control user-mode debugging from the kernel debugger](controlling-the-
 
 **Note**   In describing this scenario, *target application* refers to the user-mode application that is being debugged, *target computer* refers to the computer that contains the target application and the CDB or NTSD process, and *host computer* refers to the computer that contains the kernel debugger.
 
- 
+ 
 
 The following four modes will be encountered:
 
@@ -55,9 +55,9 @@ The session begins in user-mode debugging mode. The following actions and events
 
 -   To switch out of kernel-mode debugging, use the [**g (Go)**](g--go-.md) command at the `kd>` prompt. This command returns to user-mode debugging or target application execution (whichever of the two was the most recently-used state).
 
- 
+ 
 
- 
+ 
 
 
 

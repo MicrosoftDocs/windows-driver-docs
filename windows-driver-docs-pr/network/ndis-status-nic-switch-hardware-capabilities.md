@@ -70,9 +70,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES](oid-nic-switch-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

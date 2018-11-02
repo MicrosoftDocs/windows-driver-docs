@@ -55,11 +55,11 @@ Some system-defined objects are *opaque*: only the defining system component is 
 
 **Note**   To maintain driver portability, drivers must use the system-supplied support routines to manipulate system-defined objects. The defining system component can change the internal structure of its object types at any time.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

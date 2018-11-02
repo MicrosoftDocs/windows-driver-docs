@@ -23,9 +23,9 @@ To improve the performance of your display driver, you should observe the follow
 
 For more information about **IDirect3DDevice8::SetRenderState**, see the Direct3D SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

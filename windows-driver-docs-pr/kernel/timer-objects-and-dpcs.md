@@ -35,9 +35,9 @@ The following topics provide more information about timer objects and DPCs:
 [Registering and Queuing a CustomTimerDpc Routine](registering-and-queuing-a-customtimerdpc-routine.md)
 [Providing CustomTimerDpc Context Information](providing-customtimerdpc-context-information.md)
 [Using a CustomTimerDpc Routine](using-a-customtimerdpc-routine.md)
- 
+ 
 
- 
+ 
 
 
 

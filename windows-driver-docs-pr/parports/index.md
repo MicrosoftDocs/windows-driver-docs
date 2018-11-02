@@ -28,9 +28,9 @@ This section includes:
 
 [Parallel Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff544269)
 
- 
+ 
 
- 
+ 
 
 
 

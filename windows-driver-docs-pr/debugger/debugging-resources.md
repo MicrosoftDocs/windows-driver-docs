@@ -71,9 +71,9 @@ A number of [Knowledge Base articles](https://support.microsoft.com) are availab
 
 [Support for Developer Kits and Tools](https://msdn.microsoft.com/windows/hardware/gg454528)
 
- 
+ 
 
- 
+ 
 
 
 

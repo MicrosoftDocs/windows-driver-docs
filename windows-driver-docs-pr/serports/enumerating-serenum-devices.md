@@ -28,9 +28,9 @@ Windows does not support a single registry setting that globally controls the en
 
 Serenum must open a serial port to enumerate it. Devices that keep a port open indefinitely should not use Serenum.
 
- 
+ 
 
- 
+ 
 
 
 

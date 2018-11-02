@@ -22,9 +22,9 @@ The DirectX 9.0 version driver for a display device that supports pixel or verte
 
 [Reporting Capabilities for Shader 3 Support](reporting-capabilities-for-shader-3-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

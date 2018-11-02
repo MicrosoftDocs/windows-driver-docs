@@ -93,9 +93,9 @@ myMPIsr(
 
 To help you determine whether the source code is prepared, run [Code Analysis for Drivers](code-analysis-for-drivers.md). Code Analysis for Drivers checks for function role type declarations and can help identify function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
- 
+ 
 
- 
+ 
 
 
 

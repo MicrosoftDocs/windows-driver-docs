@@ -20,9 +20,9 @@ Drivers can automatically expose any WMI classes they implement on their propert
 
 Drivers can enable certain controls on the **Power Management** tab of the **Device Manager** property sheet by supporting certain particular WMI class GUIDs. See [WMI and the Power Management Tab](wmi-and-the-power-management-tab.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ For example: **WiaItemTypeImage** is a data representation flag that tells the a
 
 For a complete list of the WIA item flags and their definitions see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,7 +39,7 @@ To enable or disable its NDK functionality, the miniport driver's [*MiniportOidR
 
 **Note**  An NDK-capable miniport driver must never call [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) from the context of its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function, because doing so could cause a deadlock. Instead, it should call **NdisMNetPnPEvent** from some other context or queue a work item.
 
- 
+ 
 
 An NDK-capable miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
 
@@ -86,9 +86,9 @@ Requirements
 
 [OID\_NDK\_SET\_STATE](oid-ndk-set-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,6 @@ function initializeScript()
 {
     return [new host.functionAlias(__constants, "constants")];
 }
-
 ```
 
 The results of calling the function alias are shown here. 
@@ -52,7 +51,6 @@ DML links to complex objects will be generated automatically. Clicking the math_
 @$constants().math_constants                 : [object Object]
     pi               : 3.141593
     e                : 2.718282
-
 ```
 
 
@@ -145,7 +143,6 @@ The function alias can then be invoked as a debug extension command.
     [0x5]            : ROOT\spaceport\0000 (spaceport)
 
     ...
-
 ```
 
 One of the advantages with using a function alias, is that it can be further refined using the dx syntax. In this example, a where clause is added to look for device nodes that contain "Harddisk".
@@ -172,7 +169,6 @@ As with other dx commands, you can right click on a command after it was execute
 
 ```dbgcmd
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
-
 ```
 
 ![debugger objects function alias grid output showing sorted rows](images/debugger-objects-function-alias.png) 
@@ -195,7 +191,6 @@ function initializeScript()
 {
     return [new host.functionAlias(__Processes, "Processes")];
 }
-
 ```
 This shows the example output with the !Processes function alias.
 
@@ -218,7 +213,6 @@ This shows the example output with the !Processes function alias.
     [0x494]          : [object Object]
 
 ...    
-
 ```
 In this example the top 5 process with the largest thread count are displayed.
 
@@ -231,7 +225,6 @@ In this example the top 5 process with the largest thread count are displayed.
     [0xda4]          : [object Object]
     [0x3e8]          : [object Object]
     [...]   
-     
 ```
 
 
@@ -244,7 +237,7 @@ In this example the top 5 process with the largest thread count are displayed.
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 
-[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
 

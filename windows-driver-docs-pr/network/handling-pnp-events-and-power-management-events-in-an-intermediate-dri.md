@@ -39,9 +39,9 @@ This section includes the following topics:
 
 [Handling a Set Power Request](handling-a-set-power-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

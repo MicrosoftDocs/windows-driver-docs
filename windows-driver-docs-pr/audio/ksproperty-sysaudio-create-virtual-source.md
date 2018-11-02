@@ -47,13 +47,13 @@ The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538485)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538485" data-raw-source="[&lt;strong&gt;SYSAUDIO_CREATE_VIRTUAL_SOURCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538485)"><strong>SYSAUDIO_CREATE_VIRTUAL_SOURCE</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a structure of type SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE that specifies the pin-category and pin-name GUIDs for the virtual source.
 
@@ -99,9 +99,9 @@ Requirements
 
 [**KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-attach-virtual-source.md)
 
- 
+ 
 
- 
+ 
 
 
 

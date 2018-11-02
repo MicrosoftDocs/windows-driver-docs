@@ -48,9 +48,9 @@ The following figure shows the UDP-ESP encapsulation subtypes for port 4500.
 
 ![diagram illustrating the udp-esp encapsulation subtypes for port 4500](images/4500-encap-subtypes.png)
 
- 
+ 
 
- 
+ 
 
 
 

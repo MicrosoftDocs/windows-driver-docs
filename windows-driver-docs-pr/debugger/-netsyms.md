@@ -50,7 +50,7 @@ Disables network symbol loading.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -58,9 +58,9 @@ Use .netsyms with no argument to display the current state of this setting.
 
 Use [**!sym noisy**](-sym.md) or the *-n* [**WinDbg Command-Line Option**](windbg-command-line-options.md) to display additional detail as symbols are loaded.
 
- 
+ 
 
- 
+ 
 
 
 

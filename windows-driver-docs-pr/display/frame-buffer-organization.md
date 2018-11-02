@@ -31,9 +31,9 @@ The following figure shows how video data buffering is implemented in the host a
 
 ![diagram illustrating video data buffering in host and accelerator systems](images/hostaccsys.png)
 
- 
+ 
 
- 
+ 
 
 
 

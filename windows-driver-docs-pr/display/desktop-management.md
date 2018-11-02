@@ -25,9 +25,9 @@ GDI's mechanism for handling dynamic mode changes has changed significantly in W
 
 -   Drivers have always referenced *ppdev-&gt;hdevEng* in any callbacks that require an HDEV.
 
- 
+ 
 
- 
+ 
 
 
 

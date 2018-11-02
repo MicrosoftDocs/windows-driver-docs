@@ -20,9 +20,9 @@ The **IPrintCoreHelper** interface is a new interface that is implemented by the
 
 4.  Create a GDL parser snapshot for full access to GPD and GDL content.
 
- 
+ 
 
- 
+ 
 
 
 

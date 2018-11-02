@@ -34,9 +34,9 @@ A BDA minidriver assigns this GUID to specify to create a BDA network provider f
 <span id="KSCATEGORY_BDA_TRANSPORT_INFORMATION"></span><span id="kscategory_bda_transport_information"></span>KSCATEGORY\_BDA\_TRANSPORT\_INFORMATION  
 A BDA minidriver assigns this GUID to specify to create a BDA transport information filter (TIF).
 
- 
+ 
 
- 
+ 
 
 
 

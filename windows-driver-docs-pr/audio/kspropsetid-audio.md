@@ -129,9 +129,9 @@ The following properties are part of the `KSPROPSETID_Audio` property set:
 
 [**KSPROPERTY\_AUDIO\_WIDENESS**](ksproperty-audio-wideness.md)
 
- 
+ 
 
- 
+ 
 
 
 

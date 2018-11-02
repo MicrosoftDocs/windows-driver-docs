@@ -50,9 +50,9 @@ Completing an I/O operation is often referred to as succeeding or failing the op
 
 NTSTATUS values are defined in ntstatus.h. These values fall into four categories: success, informational, warning, and error. For more information about these values, see [Using NTSTATUS Values](https://msdn.microsoft.com/library/windows/hardware/ff565436).
 
- 
+ 
 
- 
+ 
 
 
 

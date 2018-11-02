@@ -19,7 +19,7 @@ The "ThreadingModel" metadata property is used to request a threading model. The
 | MTA            | Multithreaded Apartment (CoInitializeEx is called with COINIT\_MULTITHREADED flag).       |
 | None           | Threading model is not specified.                                                         |
 
- 
+ 
 
 ## <span id="Configuring_a_threading_model"></span><span id="configuring_a_threading_model"></span><span id="CONFIGURING_A_THREADING_MODEL"></span>Configuring a threading model
 
@@ -85,9 +85,9 @@ public class SimpleTests
 
 Notice in the last test above: SetsOfMetadataTest, it is also possible to make use of metadata sets and run the same test: first with STA threading model and then with MTA.
 
- 
+ 
 
- 
+ 
 
 
 

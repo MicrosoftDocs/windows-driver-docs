@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!dcs** extension is obsolete. To display the PCI configuration space, use [**!pci 100**](-pci.md)*Bus Device Function*.
 
- 
+ 
 
- 
+ 
 
 
 

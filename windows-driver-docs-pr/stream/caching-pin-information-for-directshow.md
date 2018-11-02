@@ -36,13 +36,13 @@ Whenever a BDA minidriver determines that its pin data cache that DirectShow use
 
 **Note**   Updating DirectShow's pin data cache has significant overhead because it touches and modifies the registry. In addition, updating DirectShow's pin data cache impacts the amount of time required for DirectShow to automatically build filter graphs. Therefore, a BDA minidriver should call **BdaFilterFactoryUpdateCacheData** for all possible pins only when it determines that its pin data cache that DirectShow uses is not up-to-date.
 
- 
+ 
 
 If possible, a BDA minidriver should call **BdaFilterFactoryUpdateCacheData** whenever a driver, firmware, or hardware update has occurred.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,11 +31,11 @@ BDA minidrivers use these GUIDs to specify the broadcast network types that they
 
 **Note**   The BDA constants are available on Windows XP and later. These constants are available on the Windows 2000 platform only if DirectX 9.0 and later is installed on that platform.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Once its queue is unlocked, SCSI Port resumes processing queued SRBs. A class dr
 
 For more information about unlocking queues from the perspective of the class driver, see [Storage Class Driver's ReleaseQueue Routine](storage-class-driver-s-releasequeue-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

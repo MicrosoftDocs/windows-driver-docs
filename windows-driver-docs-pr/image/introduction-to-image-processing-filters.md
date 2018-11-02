@@ -33,9 +33,9 @@ The following figure shows the image processing filter being loaded by WIA compo
 
 ![diagram illustrating the image processing filter being loaded by wia components into the application's process](images/wia-components-app-process.png)
 
- 
+ 
 
- 
+ 
 
 
 

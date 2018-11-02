@@ -18,9 +18,9 @@ NDIS handles [OID\_PM\_PROTOCOL\_OFFLOAD\_LIST](https://msdn.microsoft.com/libra
 
 Overlying drivers can use the [OID\_PM\_GET\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569766) method OID to get parameter settings for a low power protocol offload from a miniport driver. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure initially contains a pointer to a protocol offload identifier. After a successful return from the method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure.
 
- 
+ 
 
- 
+ 
 
 
 

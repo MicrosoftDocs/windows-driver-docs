@@ -77,9 +77,9 @@ No error is permitted in gradient fills for any of these surfaces. For an 8-bpp 
 
 Note that in all surfaces, clipping does not affect results.
 
- 
+ 
 
- 
+ 
 
 
 

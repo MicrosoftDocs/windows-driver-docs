@@ -21,9 +21,9 @@ A file system filter driver's **DriverEntry** routine normally returns STATUS\_S
 
 If the **DriverEntry** routine returns a status value that is not a success status value, the system responds by unloading the driver. For this reason, the **DriverEntry** routine must always free any memory that was allocated for system resources, such as device objects, before returning a status value that is not a success status value.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,9 +72,9 @@ Requirements
 
 [OID\_PNP\_WAKE\_UP\_PATTERN\_LIST](oid-pnp-wake-up-pattern-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

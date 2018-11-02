@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 A Hyper-V extensible switch is a virtual Ethernet switch that runs in the management operating system of the Hyper-V parent partition. Each instance of the extensible switch routes packets between the physical network interface in the host and the virtual network interfaces that are configured for the Hyper-V child partitions. These virtual network interfaces include Hyper-V external, internal, and private network interfaces.
 
@@ -40,17 +40,17 @@ For more information, see [Forwarding Extensions](forwarding-extensions.md).
 
 **Note**  In NDIS 6.40 (Windows Server 2012 R2) and later, forwarding extensions must support [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 **Note**  If a forwarding extension is not installed and enabled in the extensible switch, the switch determines a packet's destination ports as well as filters packets based on standard port settings.
 
- 
+ 
 
 For more information about the extensible switch interface, see [Hyper-V Extensible Switch](hyper-v-extensible-switch.md).
 
- 
+ 
 
- 
+ 
 
 
 

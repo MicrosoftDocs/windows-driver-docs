@@ -32,9 +32,9 @@ COPP uses eXtensible rights Markup Language (XrML) digital certificates.
 <span id="Message_authentication_code__MAC_"></span><span id="message_authentication_code__mac_"></span><span id="MESSAGE_AUTHENTICATION_CODE__MAC_"></span>Message authentication code (MAC)  
 COPP uses a one-key Cipher Block Chaining (CBC)-mode MAC (OMAC) for message authenticity. The OMAC is based on Advanced Encryption Standard (AES). For information about AES, see the [RSA Laboratories](http://go.microsoft.com/fwlink/p/?linkid=70411) website. For more information about OMAC, see the [OMAC-1 algorithm](http://go.microsoft.com/fwlink/p/?linkid=70417).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,7 +65,7 @@ Automatically chooses a file name based on the name of the target process or tar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ The **.logopen /t** command appends the process ID, date, and time to the log fi
 Opened log file 'c:\logs\mylogfile_02BC_2005-02-28_09-05-50-935.txt'
 ```
 
- 
+ 
 
- 
+ 
 
 
 

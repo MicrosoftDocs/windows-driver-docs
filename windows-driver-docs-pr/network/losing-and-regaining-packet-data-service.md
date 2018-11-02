@@ -31,9 +31,9 @@ To regain packet data service after it has been lost, use the following procedur
 
 8.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

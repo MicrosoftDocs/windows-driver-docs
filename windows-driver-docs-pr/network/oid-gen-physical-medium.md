@@ -18,7 +18,7 @@ As a query, the OID\_GEN\_PHYSICAL\_MEDIUM OID specifies the types of physical m
 
 **Note**  This OID is supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md).
 
- 
+ 
 
 Remarks
 -------
@@ -59,7 +59,7 @@ Packets are transferred over a wireless LAN network through a miniport driver th
 
 **Note**  The Native 802.11 interface is supported in NDIS 6.0 and later and later and later versions.
 
- 
+ 
 
 **NdisPhysicalMediumBluetooth**
 Packets are transferred over a Bluetooth network. Bluetooth is a short-range wireless technology that uses the 2.4 GHz spectrum.
@@ -105,7 +105,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID_GEN_PHYSICAL_MEDIUM_EX](oid-gen-physical-medium-ex.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="oid-gen-physical-medium-ex.md" data-raw-source="[OID_GEN_PHYSICAL_MEDIUM_EX](oid-gen-physical-medium-ex.md)">OID_GEN_PHYSICAL_MEDIUM_EX</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -121,9 +121,9 @@ Requirements
 
 [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ A device property page is displayed in the following ways:
 
     -   On the **Properties** window, click the **Hardware** tab, and then click **Properties**.
 
- 
+ 
 
- 
+ 
 
 
 

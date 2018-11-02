@@ -31,11 +31,11 @@ The KERNEL\_STORAGE\_SLOT\_IN\_USE bug check has a value of 0x00000199. This ind
 | 3         | Reserved                         |
 | 4         | Reserved                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

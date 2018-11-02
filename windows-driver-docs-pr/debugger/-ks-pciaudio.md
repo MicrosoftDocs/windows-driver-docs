@@ -60,7 +60,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,9 +77,9 @@ kd> !ks.pciaudio
  Functional Device 8299be18 [\Driver\smwdm]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

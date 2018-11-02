@@ -21,8 +21,6 @@ Lists the third-party (OEM) driver packages in the driver store on the local com
 
 ```
     devcon dp_enum
-
-   
 ```
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
@@ -39,9 +37,9 @@ devcon dp_enum
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
- 
 
- 
+
+
 
 
 

@@ -22,9 +22,9 @@ To create a trace session group:
 
 The **Group Sessions** command is available only when the operating system supports grouping of that type of trace session. For details, see [Limitations of Grouping](limitations-of-grouping.md).
 
- 
+ 
 
- 
+ 
 
 
 

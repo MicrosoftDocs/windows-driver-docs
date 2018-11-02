@@ -56,9 +56,9 @@ Handles wave output for a DirectMusic synthesizer device. Implemented by a DMus 
 
 [ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011)
 
- 
+ 
 
- 
+ 
 
 
 

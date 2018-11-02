@@ -50,7 +50,7 @@ qq
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +63,9 @@ If this command does not work in KD, press [**CTRL+R+ENTER**](ctrl-r--re-synchro
 
 The **qq** command behaves exactly like the **q** command, unless you are performing remote debugging. During remote debugging, the **q** command has no effect, but the **qq** command ends the debugging server. For more information about this effect, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

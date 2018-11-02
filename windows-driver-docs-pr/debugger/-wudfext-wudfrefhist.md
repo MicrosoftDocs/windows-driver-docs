@@ -48,7 +48,7 @@ Specifies the address of the UMDF object whose reference count stack history is 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -101,9 +101,9 @@ WUDFPlatform!WdfLpcCommPort::ProcessMessage+0x92
 WUDFPlatform!WdfLpc::RetrieveMessage+0x20c
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,9 +62,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for staple Location.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -147,9 +147,9 @@ The topology filter's physical connections to other filters that represent other
 
 During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff565205) get-property requests.
 
- 
+ 
 
- 
+ 
 
 
 

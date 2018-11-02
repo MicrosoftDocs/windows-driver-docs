@@ -19,9 +19,9 @@ For C/C++ native code (user mode and kernel mode) and managed code, the WDK inst
 
 ![figure shows the wdk and msbuild platform for a visual studio driver solution.](images/build-platform-msbuild.png)
 
- 
+ 
 
- 
+ 
 
 
 

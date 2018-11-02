@@ -73,11 +73,11 @@ The following lists summarize the differences between the Windows Hardware Error
 
 **Note**   Items identified with an asterisk (\*) are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

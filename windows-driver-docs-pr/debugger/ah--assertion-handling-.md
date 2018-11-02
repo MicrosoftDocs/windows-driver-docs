@@ -71,7 +71,7 @@ Displays the current assertion-handling settings.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,17 +80,17 @@ For more information about break status and handling status, descriptions of all
 Remarks
 -------
 
-The **ah\*** command controls the assertion handling status for a specific address. The [**sx\* asrt**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command controls the global assertion handling status. If you use **ah\*** for a certain address and then an assert occurs there, the debugger responds based on the **ah\*** settings and ignores the **sx\* asrt** settings.
+The **ah\\*** command controls the assertion handling status for a specific address. The [**sx\* asrt**](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command controls the global assertion handling status. If you use **ah\\*** for a certain address and then an assert occurs there, the debugger responds based on the **ah\\*** settings and ignores the **sx\* asrt** settings.
 
 When the debugger encounters an assertion, the debugger first checks whether handling has been configured for that specific address. If you have not configured the handling, the debugger uses the global setting.
 
-The **ah\*** command affects only the current process. When the current process ends, all status settings are lost.
+The **ah\\*** command affects only the current process. When the current process ends, all status settings are lost.
 
 Assertion handling status affects only STATUS\_ASSERTION\_EXCEPTION exceptions. This handling does not affect the kernel-mode ASSERT routine.
 
- 
+ 
 
- 
+ 
 
 
 

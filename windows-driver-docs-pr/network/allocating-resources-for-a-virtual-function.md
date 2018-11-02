@@ -45,11 +45,11 @@ For more information on how the PF miniport driver handles [OID\_NIC\_SWITCH\_AL
 
 **Note**  After resources for a VF have been allocated through an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451814), the resource parameters for the VF cannot be changed dynamically.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

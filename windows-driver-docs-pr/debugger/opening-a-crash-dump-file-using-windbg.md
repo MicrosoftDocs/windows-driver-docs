@@ -28,9 +28,9 @@ The **-v** option (verbose mode) is also useful. For more information about the 
 
 If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ When each block is entered, all aliases within the block are evaluated. If you a
 
 Each block must begin with a control flow token. If you wish to create a block for the sole purpose of evaluating aliases, you should prefix it with the [**.block**](-block.md) token.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -87,9 +87,9 @@ For more information about INF files, see [INF Files for WIA Devices](inf-files-
 
 See the Windows Security documentation for more information about the Windows Security model. Driver writers should also be aware of general security best practices that reduce the chance of destructive users successfully exploiting vulnerabilities in their drivers. "*Writing Secure Code*" (ISBN 0-7356-1588-8) from Microsoft Press is one of the several helpful resources available.
 
- 
+ 
 
- 
+ 
 
 
 

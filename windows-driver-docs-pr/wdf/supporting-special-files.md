@@ -29,9 +29,9 @@ If your driver calls [**WdfDeviceSetSpecialFileSupport**](https://msdn.microsoft
 
 After a driver has called [**WdfDeviceAddDependentUsageDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff545864), it can call [**WdfDeviceRemoveDependentUsageDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff546829) to remove a device's dependency on another device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,9 +49,9 @@ When the miniclass driver reports a critically low, discharging battery, the pow
 
 The class driver's [**BatteryClassStatusNotify**](https://msdn.microsoft.com/library/windows/hardware/ff536269) routine and the miniclass driver's [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274), [*BatteryMiniSetStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536277), and [*BatteryMiniDisableStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536272) routines are used in sequence by the two drivers to provide timely status information. For details, see [Interaction of Battery Status and Notification Routines](interaction-of-battery-status-and-notification-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

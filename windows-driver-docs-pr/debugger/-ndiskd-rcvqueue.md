@@ -119,9 +119,9 @@ RECEIVE QUEUE
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

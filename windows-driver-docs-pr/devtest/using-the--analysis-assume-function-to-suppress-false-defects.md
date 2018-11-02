@@ -138,9 +138,9 @@ There are only 6 possible IOCTLs for IoControlCode; each case is covered in the 
 
 For another example of how you can use **\_\_analysis\_assume**, see the example code that is used in [Using \_\_sdv\_save\_request and \_\_sdv\_retrieve\_request for Deferred Procedure Calls](using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md). The example shows how to use **\_\_sdv\_save\_request** and **\_\_sdv\_retrieve\_request** for DPCs (workitems, Timers and so on). The **\_\_analysis\_assume** function is used to suppress false defects that might otherwise result.
 
- 
+ 
 
- 
+ 
 
 
 

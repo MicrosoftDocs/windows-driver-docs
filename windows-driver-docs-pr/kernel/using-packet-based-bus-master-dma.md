@@ -36,9 +36,9 @@ Individual drivers call this sequence of support routines at different points, d
 
 Instead of using the routines described in this section, any driver that uses packet-based DMA can use support routines intended to streamline scatter/gather DMA, regardless of whether its device has built-in scatter/gather support. See [Using Scatter/Gather DMA](using-scatter-gather-dma.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

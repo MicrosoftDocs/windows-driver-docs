@@ -23,9 +23,9 @@ Postscript commands can be considered RAW data if the target printer supports Po
 
 For more information about the RAW data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

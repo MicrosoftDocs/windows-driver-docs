@@ -25,9 +25,9 @@ The macroblock is a fundamental unit of the video decoding process. A macroblock
 
 A macroblock may be predicted using motion compensation with one or more motion vectors, or may be coded as intra without such prediction. After determining whether the macroblock is predicted or not, the remaining signal refinement, if any, is added in the form of residual difference data blocks. In the established video coding standards, these residual difference data blocks are 8x8, so that four residual difference data blocks are needed to cover a 16x16 luminance macroblock.
 
- 
+ 
 
- 
+ 
 
 
 

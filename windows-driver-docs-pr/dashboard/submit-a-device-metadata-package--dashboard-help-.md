@@ -72,9 +72,9 @@ For info about submitting service metadata for a mobile broadband app, see [Serv
 
 - [Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

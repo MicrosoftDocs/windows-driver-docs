@@ -35,9 +35,9 @@ Programmable data source items marked with the **WiaItemTypeTransfer** flag must
 
 WIA data items may have additional properties depending on the item's flag settings. For example, WIA items marked with the **WiaItemTypeImage** flag should have image-specific information properties, such as [**WIA\_IPA\_DEPTH**](https://msdn.microsoft.com/library/windows/hardware/ff551546) and [**WIA\_IPA\_NUMBER\_OF\_LINES**](https://msdn.microsoft.com/library/windows/hardware/ff551611).
 
- 
+ 
 
- 
+ 
 
 
 

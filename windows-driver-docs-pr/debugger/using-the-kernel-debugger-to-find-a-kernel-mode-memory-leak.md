@@ -75,9 +75,9 @@ If there are several different places where memory with this tag is being alloca
 
 If you cannot recompile the program but you want to determine which one of several possible locations in the code is causing the leak, you can unassemble the code at each location and use the debugger to edit this code resident in memory so that each instance uses a distinct (and previously unused) pool tag. Then allow the system to run for several minutes or more. After some time has passed, break in again with the debugger and use the [**!poolfind**](-poolfind.md) extension to find all pool allocations associated with each of the new tags.
 
- 
+ 
 
- 
+ 
 
 
 

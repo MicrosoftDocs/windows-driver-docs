@@ -26,9 +26,9 @@ The following camera driver functions are new for Windows 10.
 
 [**KsReleaseCachedMdl**](https://msdn.microsoft.com/library/windows/hardware/mt186396)
 
- 
+ 
 
- 
+ 
 
 
 

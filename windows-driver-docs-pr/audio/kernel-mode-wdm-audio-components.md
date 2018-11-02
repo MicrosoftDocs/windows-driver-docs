@@ -179,9 +179,9 @@ For more information about the driver components in the figure, see the followin
 
 [IEEE 1394 Bus](https://msdn.microsoft.com/library/windows/hardware/ff537207)
 
- 
+ 
 
- 
+ 
 
 
 

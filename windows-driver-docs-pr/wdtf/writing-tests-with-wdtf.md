@@ -20,9 +20,9 @@ Whether you start writing driver tests with the templates provided in the Window
 -   [Controlling Targets](controlling-targets.md)
 -   [WDTF Quick Start](wdtf-quick-start-.md)
 
- 
+ 
 
- 
+ 
 
 
 

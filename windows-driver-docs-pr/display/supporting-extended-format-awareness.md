@@ -43,9 +43,9 @@ The following sections describe the new features for Direct3D:
 
 [DDI Changes for Direct3D Version 9 Drivers](ddi-changes-for-direct3d-version-9-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

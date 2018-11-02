@@ -41,9 +41,9 @@ The following system-defined device property keys are defined in *Devpkey.h*:
 
 For information about how to create custom device properties, see [Creating Custom Device Properties](creating-custom-device-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

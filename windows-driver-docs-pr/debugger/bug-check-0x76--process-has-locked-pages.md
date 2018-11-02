@@ -59,7 +59,7 @@ The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug ch
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -85,9 +85,9 @@ The system then saves stack traces, so you can easily identify the driver that c
 
 Examine the driver source code that locks and unlocks memory, and try to locate an instance where memory is unlocked without first being locked.
 
- 
+ 
 
- 
+ 
 
 
 

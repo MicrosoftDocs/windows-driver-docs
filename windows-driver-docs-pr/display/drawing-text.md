@@ -48,9 +48,9 @@ If a driver has scalable fonts, it should call the [**FONTOBJ\_pxoGetXform**](ht
 
 The graphics engine queries the driver by calling the function [**DrvGetGlyphMode**](https://msdn.microsoft.com/library/windows/hardware/ff556230) to find out how it should internally cache its font information. It can cache individual glyphs as bitmaps, outlines, or neither (the proper choice for device fonts).
 
- 
+ 
 
- 
+ 
 
 
 

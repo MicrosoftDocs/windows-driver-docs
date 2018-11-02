@@ -42,13 +42,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Identity](identity-privapps.md)</p></td>
+<td><p><a href="identity-privapps.md" data-raw-source="[Identity](identity-privapps.md)">Identity</a></p></td>
 <td><p>The publisher identify of the app.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -66,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PrivilegedApplications](privilegedapplications.md)</p></td>
+<td><p><a href="privilegedapplications.md" data-raw-source="[PrivilegedApplications](privilegedapplications.md)">PrivilegedApplications</a></p></td>
 <td><p>The apps that should have access to the privileged Mobile Broadband interfaces.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -93,9 +93,9 @@ There are no attributes.
 
 The Package element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

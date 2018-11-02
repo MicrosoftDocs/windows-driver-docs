@@ -68,9 +68,9 @@ PS C:\> $portData.Data.CurrentStatus
 
 For more information on how extensible switch extensions manage port feature status information, see [Managing Custom Port Feature Status Information](managing-custom-port-feature-status-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

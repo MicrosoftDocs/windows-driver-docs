@@ -47,9 +47,9 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://msdn.microsoft.com/library/windows/hardware/hh846206)
 
- 
+ 
 
- 
+ 
 
 
 

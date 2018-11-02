@@ -22,9 +22,9 @@ A client reads and writes a parallel device by using [**IRP\_MJ\_READ**](https:/
 
 If a client uses read and write I/O requests, the parallel port bus driver queues the requests on the work queue of the parallel device. A client of a parallel device does not have to lock a parallel port before reading and writing a device because the system-supplied bus driver for parallel ports automatically locks and unlocks the port for the client.
 
- 
+ 
 
- 
+ 
 
 
 

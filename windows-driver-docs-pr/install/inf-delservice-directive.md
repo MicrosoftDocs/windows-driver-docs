@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelService** directive is used in a [***DDInstall*.Services**](inf-ddinstall-services-section.md) section to remove one or more previously installed device/driver services from the target computer.
 
@@ -71,9 +71,9 @@ However, by default, event-log information supplied by a particular device drive
 
 [**DelReg**](inf-delreg-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

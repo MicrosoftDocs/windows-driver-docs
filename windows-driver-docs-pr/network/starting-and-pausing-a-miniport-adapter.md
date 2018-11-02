@@ -26,9 +26,9 @@ The following topics provide more information about starting and pausing and ada
 -   [Starting an Adapter](starting-an-adapter.md)
 -   [Pausing an Adapter](pausing-an-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ In many cases, these problems are simply a matter of a thread taking too long to
 
 On a retail system, the time-out value is set high enough that you would not see the break (a true deadlock would simply hang). The time-out values are set in the registry under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\SessionManager**. The integer values specify the number of seconds in each time out.
 
- 
+ 
 
- 
+ 
 
 
 

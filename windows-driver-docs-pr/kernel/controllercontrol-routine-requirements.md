@@ -54,9 +54,9 @@ As soon as the I/O operation(s) to satisfy the current request are done, the rou
 
 If the *ControllerControl* routine itself completes an IRP or if it can set up an operation, such as a disk seek, for one target device object (disk) that could be overlapped with an operation for another device object, the *ControllerControl* routine should return **DeallocateObject**.
 
- 
+ 
 
- 
+ 
 
 
 

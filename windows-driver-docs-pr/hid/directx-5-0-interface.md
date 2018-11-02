@@ -60,7 +60,7 @@ The following example shows a joystick minidriver registration sequence:
 </tbody>
 </table>
 
- 
+ 
 
 The [**VJREGDRVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff543581) structure is passed to the new registration.
 
@@ -76,11 +76,11 @@ The [*Initialize*](https://msdn.microsoft.com/library/windows/hardware/ff541025)
 
 **Note**   If you need to open registry keys, you should use the [VJOYD\_OpenConfigKey\_Service](https://msdn.microsoft.com/library/windows/hardware/ff543545) and [VJOYD\_OpenTypeKey\_Service](https://msdn.microsoft.com/library/windows/hardware/ff543549) macros instead of opening the registry keys directly. Using these service macros ensures that the correct registry branch is opened. In addition, the service macros will be supported in future versions of DirectInput when the underlying registry data may be structured differently.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

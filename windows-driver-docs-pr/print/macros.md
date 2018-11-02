@@ -22,9 +22,9 @@ The GPD language supports two types of macros:
 
 -   [Value macros](value-macros.md), which allow you to specify sets of values that can be inserted individually anywhere in a GPD file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ If, within a short period of time, several consecutive restart attempts fail (be
 
 If a bus driver's [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) function returns a value for which NT\_SUCCESS(*status*) equals **FALSE**, the framework might still call the *EvtDeviceD0Entry* functions of drivers associated with the bus driver's child devices.
 
- 
+ 
 
- 
+ 
 
 
 

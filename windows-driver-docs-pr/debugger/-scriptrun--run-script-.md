@@ -52,7 +52,7 @@ Specifies the name of the script file to load and execute. *ScriptFile* should i
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -83,7 +83,7 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left"><strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
+<td align="left"><strong><a href="-scriptload--load-script-.md" data-raw-source="[.scriptload](-scriptload--load-script-.md)">.scriptload</a></strong></td>
 <td align="left"><strong>.scriptrun</strong></td>
 </tr>
 <tr class="even">
@@ -109,7 +109,7 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 </tbody>
 </table>
 
- 
+
 
 You can use this code to see which functions are called with the .script run command.
 
@@ -131,8 +131,6 @@ function invokeScript()
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
-
- 
 ```
 
 For more information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md). For more information about the debugger objects, see [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
@@ -152,9 +150,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
- 
 
- 
+
+
 
 
 

@@ -25,11 +25,11 @@ If the PF miniport driver can successfully free the allocated software resources
 
 **Note**  NDIS guarantees that all the VFs allocated on the miniport are freed before NDIS issues an OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817) to the PF miniport driver. When it handles this OID, the driver deletes a NIC switch on the network adapter.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

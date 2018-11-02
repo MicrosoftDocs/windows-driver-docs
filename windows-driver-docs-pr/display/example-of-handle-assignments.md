@@ -78,11 +78,11 @@ The following table shows an example arrangement of Direct3D handle values (supp
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

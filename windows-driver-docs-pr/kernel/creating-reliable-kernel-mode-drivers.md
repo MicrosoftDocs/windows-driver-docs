@@ -96,9 +96,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) is the most important tool you can use to ensure the reliability of your driver. Driver Verifier can check for a variety of common driver problems, including some of those discussed in this section. However, use of Driver Verifier does not replace careful, thoughtful software design.
 
- 
+ 
 
- 
+ 
 
 
 

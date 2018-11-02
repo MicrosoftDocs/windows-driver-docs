@@ -48,7 +48,7 @@ Specifies the device object. This can be the hexadecimal address of this structu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -94,9 +94,9 @@ ExtensionFlags (0000000000)
 Device queue is not busy.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

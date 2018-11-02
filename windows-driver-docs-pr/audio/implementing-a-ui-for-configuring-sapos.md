@@ -19,9 +19,9 @@ You have the following two options for implementing your user interface.
 
 -   If you replace the system-supplied sAPOs with ones that you developed, you must provide a separate UI for configuring your sAPOs. See the [Custom UI Design Information](custom-ui-design-information.md) topic for details about how to do this.
 
- 
+ 
 
- 
+ 
 
 
 

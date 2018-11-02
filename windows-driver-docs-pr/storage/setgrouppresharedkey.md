@@ -21,9 +21,9 @@ After the **SetGroupPresharedKey** method specifies the default key, the initiat
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetGroupPresharedKey**.
 
- 
+ 
 
- 
+ 
 
 
 

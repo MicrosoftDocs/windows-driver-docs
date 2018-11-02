@@ -62,11 +62,11 @@ The following table defines the smart card reader states.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

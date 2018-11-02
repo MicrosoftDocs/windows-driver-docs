@@ -42,7 +42,7 @@ Devices controlled by battery miniclass drivers include batteries and some UPS d
 
 **Note**   For UPS units connected to COM ports, [writing a UPS minidriver](writing-ups-minidrivers.md) is preferable to writing a battery miniclass driver for operating systems prior to Windows Vista.
 
- 
+ 
 
 As shown in the preceding figure, the role of each component in battery operations is as follows:
 
@@ -58,9 +58,9 @@ As shown in the preceding figure, the role of each component in battery operatio
 
 -   The *battery GUI* gets system battery status from the composite battery driver through the power manager and presents the information to the user. The GUI also sends IRPs to the battery miniclass drivers for device-specific information. The system has one battery GUI, supplied by the hardware vendor.
 
- 
+ 
 
- 
+ 
 
 
 

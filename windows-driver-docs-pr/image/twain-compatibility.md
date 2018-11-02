@@ -21,9 +21,9 @@ This section discusses TWAIN compatibility and covers the following topics:
 
 [Support for TWAIN-Compatible Applications](support-for-twain-compatible-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

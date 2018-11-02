@@ -61,9 +61,9 @@ tracelog -flush MyTrace
 
 In response, Tracelog displays the revised properties of the trace session.
 
- 
+ 
 
- 
+ 
 
 
 

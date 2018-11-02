@@ -34,11 +34,11 @@ For a similar example using the RPC debugger extensions, see [**!rpcexts.getclie
 
 **Note**   Information about Client Call objects is only gathered if the **Full** state information is being gathered. See [Enabling RPC State Information](enabling-rpc-state-information.md) for details.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

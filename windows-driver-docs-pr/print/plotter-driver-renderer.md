@@ -22,9 +22,9 @@ The plotter driver renderer is implemented as a [printer graphics DLL](printer-g
 
 The renderer is also responsible for sending rendered image data, along with plotter command sequences, to the print spooler, which then directs the images and commands to plotter hardware.
 
- 
+ 
 
- 
+ 
 
 
 

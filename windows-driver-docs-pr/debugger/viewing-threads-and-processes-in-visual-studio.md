@@ -17,9 +17,9 @@ The procedures shown in this topic require that you have the Windows Driver Kit 
 
 To open the Threads Window in Visual Studio, from the **Debug** menu, choose **Windows&gt;Threads**.
 
- 
+ 
 
- 
+ 
 
 
 

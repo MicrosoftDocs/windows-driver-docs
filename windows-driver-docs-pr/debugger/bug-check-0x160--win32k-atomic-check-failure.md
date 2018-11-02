@@ -31,11 +31,11 @@ The WIN32K\_ATOMIC\_CHECK\_FAILURE bug check has a value of 0x00000160. This ind
 | 3         | Reserved                                                                |
 | 4         | Reserved                                                                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

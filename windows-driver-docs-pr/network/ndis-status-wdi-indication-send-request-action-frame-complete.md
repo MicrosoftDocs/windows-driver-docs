@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_REQUEST\_ACTION\_FRAME
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +54,9 @@ Requirements
 
 [OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME](oid-wdi-task-send-request-action-frame.md)
 
- 
+ 
 
- 
+ 
 
 
 

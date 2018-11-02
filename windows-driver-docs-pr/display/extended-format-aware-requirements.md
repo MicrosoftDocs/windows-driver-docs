@@ -59,9 +59,9 @@ The Direct3D runtime calls a driver's [**BltDXGI**](https://msdn.microsoft.com/l
 
 Because XR\_BIAS does not support Multiple Sample Anti Aliasing (MSAA), drivers are not required to resolve XR\_BIAS resources.
 
- 
+ 
 
- 
+ 
 
 
 

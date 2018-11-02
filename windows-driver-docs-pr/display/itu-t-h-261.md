@@ -24,9 +24,9 @@ All H.261 prediction blocks use forward-only prediction from the previous pictur
 
 Recommendation H.261 Annex D Graphic Transfer mode can be supported by reading four decoded pictures from the accelerator back onto the host and interleaving them there for display as a higher-resolution graphic picture.
 
- 
+ 
 
- 
+ 
 
 
 

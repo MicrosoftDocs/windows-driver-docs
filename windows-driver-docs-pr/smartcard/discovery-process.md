@@ -64,7 +64,7 @@ The following table lists the AID values that the different discovery processes 
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists the files used by the discovery process.
 
@@ -73,7 +73,7 @@ The following table lists the files used by the discovery process.
 | MF      | 0x3F00                  |
 | EF.ATR  | 0x2F01                  |
 
- 
+ 
 
 The following table lists the commands that the different discovery processes use.
 
@@ -83,7 +83,7 @@ The following table lists the commands that the different discovery processes us
 | GET DATA     | 0xCA                    |
 | GET RESPONSE | 0xC0                    |
 
- 
+ 
 
 ## <span id="Smart_Card_Plug_and_Play_Process"></span><span id="smart_card_plug_and_play_process"></span><span id="SMART_CARD_PLUG_AND_PLAY_PROCESS"></span>Smart Card Plug and Play Process
 
@@ -134,7 +134,7 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 
 **Note**  The following table describes the various registry keys that the Winscard discovery process uses.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -165,7 +165,7 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="_Windows_Smart_Card_Class_Minidriver_Discovery_Process"></span><span id="_windows_smart_card_class_minidriver_discovery_process"></span><span id="_WINDOWS_SMART_CARD_CLASS_MINIDRIVER_DISCOVERY_PROCESS"></span> Windows Smart Card Class Minidriver Discovery Process
 
@@ -189,9 +189,9 @@ The Windows smart card class minidriver performs the following discovery process
     | Crypto Provider                 | String | Microsoft Base Smart Card Crypto Provider |
     | Smart Card Key Storage Provider | String | Microsoft Smart Card Key Storage Provider |
 
-     
+     
 
- 
+ 
 
 ## <span id="Selection_Mechanisms"></span><span id="selection_mechanisms"></span><span id="SELECTION_MECHANISMS"></span>Selection Mechanisms
 
@@ -249,11 +249,11 @@ The GUID member is a 16-byte GUID that uniquely identifies the card/application 
 
 **Note**  The IHV or ISV that issues the application must create a unique GUID for its card/application combination.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

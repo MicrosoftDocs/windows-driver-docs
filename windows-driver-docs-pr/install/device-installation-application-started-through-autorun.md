@@ -29,9 +29,9 @@ However, this method also has the following disadvantages:
 
 -   The distribution media must be AutoRun-compatible, such as a CD or DVD. The [**INF HardwareId directive**](inf-hardwareid-directive.md) does not provide any capability for downloading an application installer from the Internet.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Like mediums, interfaces are also described as a set and as an element of that s
 
 The user-mode client then specifies the type of interface for a connection by using the **Interface** member of the relevant [**KSPIN\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff563531) structure. The client passes this KSPIN\_CONNECT instance in a call to [**KsCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff561652), which results in an IRP\_MJ\_CREATE being sent to the minidriver.
 
- 
+ 
 
- 
+ 
 
 
 

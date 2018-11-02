@@ -71,9 +71,9 @@ To avoid such problems, a driver should check for valid data, as follows:
 
 -   If your driver supports multiple kinds of file objects (such as the control channels, address objects, and connections of TDI drivers or Volume, Directory, and File objects of file systems), make sure you have a way to differentiate them.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -228,9 +228,9 @@ An alternative implementation of the preceding code example might create **IWDFI
 
 In addition, an alternative implementation might inspect the I/O status code from the I/O request if the **Send** call succeeds. For more information, see [**IWDFIoRequest::GetCompletionParams**](https://msdn.microsoft.com/library/windows/hardware/ff559084).
 
- 
+ 
 
- 
+ 
 
 
 

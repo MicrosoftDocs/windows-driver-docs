@@ -31,11 +31,11 @@ The INVALID\_PUSH\_LOCK\_FLAGS bug check has a value of 0x00000152. This indicat
 | 3         | Reserved                                 |
 | 4         | Reserved                                 |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

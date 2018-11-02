@@ -39,11 +39,11 @@ The user-mode display driver's *CreateDevice(D3D10)* function is called with a [
 
 **Note**   The number of display devices (graphics contexts) that can exist simultaneously is limited only by available system memory.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

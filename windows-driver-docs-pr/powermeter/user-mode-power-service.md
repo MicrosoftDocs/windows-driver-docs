@@ -27,9 +27,9 @@ When UPMS services PMB WMI requests, it calls into the Power Meter Interface (PM
 
 For more information about the PMB WMI classes, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

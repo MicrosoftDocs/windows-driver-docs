@@ -30,9 +30,9 @@ This section includes the following topics:
 
 The document devices include Printers, Scanners, and Multifunction Printers (MFP). In addition to providing the basics of the device stage platform, Windows 7 also includes a variety of printing and scanning specific features, which can easily be included in a Device Stage experience.
 
- 
+ 
 
- 
+ 
 
 
 

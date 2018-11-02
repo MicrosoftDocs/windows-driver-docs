@@ -21,9 +21,9 @@ A printer driver's *printer interface DLL*, which executes in user mode, is resp
 
 Providing a user interface to configuration options is not a printer interface DLL's only responsibility. The DLL also exports functions that the spooler can call to notify the driver of print-related system events, such as driver installations and upgrades, or printer additions and connections.
 
- 
+ 
 
- 
+ 
 
 
 

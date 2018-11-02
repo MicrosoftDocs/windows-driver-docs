@@ -23,9 +23,9 @@ This section describes the steps that are involved with the surprise removal of 
 
 [Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)](processing-the-surprise-removal-of-a-nic--windows-7-and-later-versions-.md)
 
- 
+ 
 
- 
+ 
 
 
 

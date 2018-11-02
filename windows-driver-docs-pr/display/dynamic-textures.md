@@ -23,9 +23,9 @@ Dynamic textures are almost exactly the same as [dynamic buffers](dynamic-vertex
 
 -   Set up multiple buffering similar to the description in [Dynamic Vertex and Index Buffers](dynamic-vertex-and-index-buffers.md). That is, set the DDLOCK\_OKTOSWAP bit to lock dynamic textures. Similarly, storing dynamic textures in local video memory can also cause system performance to suffer if the application writes to such textures in a nonsequential manner. Therefore, the driver should store dynamic textures in [AGP](agp-support.md) memory.
 
- 
+ 
 
- 
+ 
 
 
 

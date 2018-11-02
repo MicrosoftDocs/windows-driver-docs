@@ -23,9 +23,9 @@ NDIS versions might not be the same as the operating system versions. For exampl
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

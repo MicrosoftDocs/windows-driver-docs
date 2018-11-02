@@ -65,9 +65,9 @@ This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadapt
 
 [**GetPortAttributesByWWN**](getportattributesbywwn.md)
 
- 
+ 
 
- 
+ 
 
 
 

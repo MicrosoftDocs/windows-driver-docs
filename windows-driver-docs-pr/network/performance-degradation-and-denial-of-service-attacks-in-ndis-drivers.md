@@ -15,9 +15,9 @@ If an NDIS driver interrupt handler parses received packets, the interrupt handl
 
 Even if you are careful in how your driver handles received packets, the driver would perform receive operations at dispatch IRQL. Instead, you should let the driver stack handle the received packets. In this case, the overlying driver stack might copy the packet and operate on it later at passive IRQL.
 
- 
+ 
 
- 
+ 
 
 
 

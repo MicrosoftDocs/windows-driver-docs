@@ -45,9 +45,9 @@ The number of separate device capability descriptors in the BOS.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

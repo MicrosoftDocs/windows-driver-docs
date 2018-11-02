@@ -45,7 +45,7 @@ The **!qlocks** extension displays the state of all queued spin locks.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -83,9 +83,9 @@ CC   - Bcb
 MM   - MM NonPagedPool             
 ```
 
- 
+ 
 
- 
+ 
 
 
 

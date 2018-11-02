@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The operating system requires that a GFX driver meets the same requirements for handling DRM-protected content as any other driver in the WDM audio system. In order to support [Digital Rights Management](digital-rights-management.md) (DRM), the GFX/AVStream filter implements a property handler for [**KSPROPERTY\_DRMAUDIOSTREAM\_CONTENTID**](https://msdn.microsoft.com/library/windows/hardware/ff537351). This handler calls [**DrmForwardContentToDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff536351) to advise the [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver) of the connected downstream pin that receives the content. The GFX/AVStream filter calls [**KsPinGetConnectedPinFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff563508) and [**KsPinGetConnectedPinDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff563507) to retrieve the FILE\_OBJECT and DEVICE\_OBJECT parameters to pass to **DrmForwardContentToDeviceObject**.
 
- 
+ 
 
- 
+ 
 
 
 

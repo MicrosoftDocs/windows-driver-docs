@@ -30,9 +30,9 @@ This section includes the following topics:
 -   [Using NDIS 6.30 Data Structures](using-ndis-6-30-data-structures.md)
 -   [Compiling an NDIS 6.30 Driver](compiling-an-ndis-6-30-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

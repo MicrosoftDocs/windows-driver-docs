@@ -21,9 +21,9 @@ The offload target queries the state that is identified by the [**NDIS\_MINIPORT
 
 An NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure that references state to be queried is immediately followed in memory by an [offload state structure](offload-state-structures.md). The offload target writes the queried state into the offload state structure.
 
- 
+ 
 
- 
+ 
 
 
 

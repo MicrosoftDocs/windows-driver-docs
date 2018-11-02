@@ -22,9 +22,9 @@ In CDB, you can view and edit global variables by entering commands. The debugge
 
 In CDB you can view and edit local variables by entering commands. The debugger interprets the name of a local variable as an address. Therefore, all of the commands that are described in [Accessing Memory by Virtual Address](accessing-memory-by-virtual-address.md) can be used to read or write local variables. However, if it is necessary to indicate to a command that a symbol is local, precede the symbol with a dollar sign ( $ ) and an exclamation point ( ! ), as in `$!var`. For additional information about viewing and editing local variables, see [Accessing Local Variables](accessing-local-variables.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,7 +56,7 @@ The **ReportingMode** registry entry is a bitwise OR of the following flags.
 | LOCAL\_DUMP            | 0x2   | When silent exit is detected, a dump file is created for the monitored process. In the case of cross-process termination, a dump file is also created for the process that caused the termination. |
 | NOTIFICATION           | 0x4   | When silent exit is detected, a pop-up notification is displayed.                                                                                                                                  |
 
- 
+ 
 
 ## <span id="Ignore_Self_Exits"></span><span id="ignore_self_exits"></span><span id="IGNORE_SELF_EXITS"></span>Ignore Self Exits
 
@@ -70,7 +70,7 @@ The **IgnoreSelfExits** registry entry has one of the following values.
 | 0x0   | Detect and respond to both self termination and cross-process termination. |
 | 0x1   | Ignore self termination. Detect and respond to cross-process termination.  |
 
- 
+ 
 
 ## <span id="Monitor_Process"></span><span id="monitor_process"></span><span id="MONITOR_PROCESS"></span>Monitor Process
 
@@ -84,7 +84,7 @@ You can specify a monitor process by entering a process name, along with command
 | %t       | ID of the initiating thread. This is the thread that caused the termination.                                                                                                                                  |
 | %c       | The status code passed to **ExitThread** or **TerminateThread** .                                                                                                                                            |
 
- 
+ 
 
 For example, the following value for **Monitor Process** specifies that on silent exit, WinDbg is launched and attached to the exiting process.
 
@@ -124,7 +124,7 @@ For example, suppose you chose a dump type of **Micro**, and you see that the **
 | MiniDumpFilterModulePaths | 0x00000080 |
 | MiniDumpFilterMemory      | 0x00000008 |
 
- 
+ 
 
 If you choose a dump type of **Custom**, enter your own bitwise OR of **MINIDUMP\_TYPE** enumeration values in the **Custom Dump Type** box. Enter this value as a decimal integer.
 
@@ -142,9 +142,9 @@ When a monitored process exits silently, the monitor creates an entry in Event V
 
 ![event properties dialog box showing general tab displaying the source as process exit monitor](images/gflagssilentprocessexit02.png)
 
- 
+ 
 
- 
+ 
 
 
 

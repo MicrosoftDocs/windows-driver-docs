@@ -44,9 +44,9 @@ To add items to the hardware requirements list, a driver can do the following:
     -   [**WdfIoResourceListGetDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548510), to obtain access to a resource descriptor.
     -   [**WdfIoResourceListAppendDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548498) or [**WdfIoResourceListInsertDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548513), to add a resource descriptor.
 
- 
+ 
 
- 
+ 
 
 
 

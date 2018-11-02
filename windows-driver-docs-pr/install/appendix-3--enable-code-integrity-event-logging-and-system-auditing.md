@@ -74,9 +74,9 @@ The following screen shot shows an how to use Auditpol to enable security auditi
 
 ![screen shot of command-prompt window illustrating the use of auditpol to enable security auditing](images/tutorialauditpol.jpg)
 
- 
+ 
 
- 
+ 
 
 
 

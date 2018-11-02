@@ -28,9 +28,9 @@ A dialog box procedure can use the [**SetCPSUIUserData**](https://msdn.microsoft
 
 For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff547607).
 
- 
+ 
 
- 
+ 
 
 
 

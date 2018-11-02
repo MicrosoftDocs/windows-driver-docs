@@ -18,7 +18,7 @@ OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS specifies parameters that the adapter can
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 This command replaces the previously configured list of BSSID-specific association parameters.
 
@@ -29,7 +29,7 @@ This command replaces the previously configured list of BSSID-specific associati
 |-------------------------------------------------------------------------|--------------------------------|----------|---------------------------------|
 | [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926264) | X                              |          | The BSS entries and parameters. |
 
- 
+ 
 
 ## Set property results
 
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

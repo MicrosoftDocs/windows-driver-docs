@@ -14,9 +14,9 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 > [!IMPORTANT]
 > The certificate uploaded and used for all Hardware Dev Center dashboard submission packages has changed:
-* Extended validation (EV) code signing certificates are required for **all** submissions.  
-* All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch 
-* (for more information, see this [HLK Blog post](https://blogs.msdn.microsoft.com/windows_hardware_certification/2017/11/13/starting-in-february-2018-packages-signed-using-a-sha-1-digest-algorithm-and-certificate-chain-will-no-longer-be-accepted/)).
+> * Extended validation (EV) code signing certificates are required for **all** submissions.  
+> * All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch 
+> * (for more information, see this [HLK Blog post](https://blogs.msdn.microsoft.com/windows_hardware_certification/2017/11/13/starting-in-february-2018-packages-signed-using-a-sha-1-digest-algorithm-and-certificate-chain-will-no-longer-be-accepted/)).
 
 ## To update a code signing certificate
 

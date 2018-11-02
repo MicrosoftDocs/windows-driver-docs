@@ -48,7 +48,7 @@ Specifies the address of the extended error record.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ Parameter 0:(Long value) : -30976 (0xFFFF8700)
 Parameter 1:(Long value) : 16777343 (0x100007F)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

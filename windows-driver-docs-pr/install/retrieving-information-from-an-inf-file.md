@@ -22,9 +22,9 @@ Other functions, such as [**SetupGetSourceInfo**](https://msdn.microsoft.com/lib
 
 Functions such as [**SetupGetLineText**](https://msdn.microsoft.com/library/windows/desktop/aa377388) and [**SetupGetStringField**](https://msdn.microsoft.com/library/windows/desktop/aa377393) enable you to directly access information that is stored in a line or field of an INF file. These functions are used internally by the higher-level [SetupAPI](setupapi.md) functions but are available if you have to directly access information at the line or field level.
 
- 
+ 
 
- 
+ 
 
 
 

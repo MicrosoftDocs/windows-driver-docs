@@ -52,9 +52,9 @@ gflags /i notepad.exe
 
 Remember that the flag value displayed might not be the current, effective flag value. Changes to the system-wide flags are not effective until you restart Windows. Changes to image file flag settings are not effective until you restart the program.
 
- 
+ 
 
- 
+ 
 
 
 

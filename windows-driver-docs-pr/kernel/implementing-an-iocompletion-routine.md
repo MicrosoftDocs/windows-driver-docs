@@ -79,9 +79,9 @@ A higher-level driver's *IoCompletion* routine can check only the IRP's I/O stat
 
 The caller of **IoCompleteRequest** must not attempt to access the just-completed IRP. Such an attempt is a programming error that causes a system crash.
 
- 
+ 
 
- 
+ 
 
 
 

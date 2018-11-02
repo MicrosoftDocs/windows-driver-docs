@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|-----------------------------------------------------------------------------------------------------------------|
 | UINT8 | If (and only if) this is set to 1, all MIB attributes for the port being reset are set to their default values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

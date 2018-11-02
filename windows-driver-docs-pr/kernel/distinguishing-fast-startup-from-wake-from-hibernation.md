@@ -32,9 +32,9 @@ The **TargetSystemState** bit field specifies the last system power state transi
 
 For more information, see [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/jj835780).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ When PFA predicts an ECC memory page will fail, it saves (or *persists*) the res
 
 WHEA supports PFA on Windows 7 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

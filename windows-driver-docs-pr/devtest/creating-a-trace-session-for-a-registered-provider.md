@@ -54,9 +54,9 @@ The TMF file for the Windows Kernel Trace, system.tmf, is included in the WDK. C
 
 For more information, see [Creating an NT Kernel Logger trace session](creating-an-nt-kernel-logger-trace-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

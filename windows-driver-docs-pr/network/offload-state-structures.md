@@ -36,58 +36,58 @@ The following table indicates which structures a host stack uses to package offl
 <tr class="odd">
 <td align="left"><p>Neighbor</p></td>
 <td align="left"><p>Constant</p></td>
-<td align="left"><p>[<strong>NEIGHBOR_OFFLOAD_STATE_CONST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568324)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568324" data-raw-source="[&lt;strong&gt;NEIGHBOR_OFFLOAD_STATE_CONST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568324)"><strong>NEIGHBOR_OFFLOAD_STATE_CONST</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left"><p>Cached</p></td>
-<td align="left"><p>[<strong>NEIGHBOR_OFFLOAD_STATE_CACHED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568323)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568323" data-raw-source="[&lt;strong&gt;NEIGHBOR_OFFLOAD_STATE_CACHED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568323)"><strong>NEIGHBOR_OFFLOAD_STATE_CACHED</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><p>Delegated</p></td>
-<td align="left"><p>[<strong>NEIGHBOR_OFFLOAD_STATE_DELEGATED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568325)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568325" data-raw-source="[&lt;strong&gt;NEIGHBOR_OFFLOAD_STATE_DELEGATED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568325)"><strong>NEIGHBOR_OFFLOAD_STATE_DELEGATED</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Path</p></td>
 <td align="left"><p>Constant</p></td>
-<td align="left"><p>[<strong>PATH_OFFLOAD_STATE_CONST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569984)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569984" data-raw-source="[&lt;strong&gt;PATH_OFFLOAD_STATE_CONST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569984)"><strong>PATH_OFFLOAD_STATE_CONST</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><p>Cached</p></td>
-<td align="left"><p>[<strong>PATH_OFFLOAD_STATE_CACHED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569983)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569983" data-raw-source="[&lt;strong&gt;PATH_OFFLOAD_STATE_CACHED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569983)"><strong>PATH_OFFLOAD_STATE_CACHED</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left"><p>Delegated</p></td>
-<td align="left"><p>[<strong>PATH_OFFLOAD_STATE_CACHED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569983)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569983" data-raw-source="[&lt;strong&gt;PATH_OFFLOAD_STATE_CACHED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569983)"><strong>PATH_OFFLOAD_STATE_CACHED</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>TCP</p></td>
 <td align="left"><p>Constant</p></td>
-<td align="left"><p>[<strong>TCP_OFFLOAD_STATE_CONST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570938)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570938" data-raw-source="[&lt;strong&gt;TCP_OFFLOAD_STATE_CONST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570938)"><strong>TCP_OFFLOAD_STATE_CONST</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left"><p>Cached</p></td>
-<td align="left"><p>[<strong>TCP_OFFLOAD_STATE_CACHED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570937)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570937" data-raw-source="[&lt;strong&gt;TCP_OFFLOAD_STATE_CACHED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570937)"><strong>TCP_OFFLOAD_STATE_CACHED</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><p>Delegated</p></td>
-<td align="left"><p>[<strong>TCP_OFFLOAD_STATE_DELEGATED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570939)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570939" data-raw-source="[&lt;strong&gt;TCP_OFFLOAD_STATE_DELEGATED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570939)"><strong>TCP_OFFLOAD_STATE_DELEGATED</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When passed between the host stack and the offload target, an offload state structure is always associated with an [offload block list](offload-block-lists.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The following figure shows the relationships among the different levels of Print
 
 ![print ticket hierarchy](images/ptpcmerge1.gif)
 
- 
+ 
 
- 
+ 
 
 
 

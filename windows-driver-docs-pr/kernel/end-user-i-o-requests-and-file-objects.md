@@ -38,9 +38,9 @@ As shown in the previous figure, a subsystem and its native applications can acc
 
 The I/O manager, which exports these system services, is then responsible for locating or creating the file object that represents the device or data file and for locating the appropriate driver(s).
 
- 
+ 
 
- 
+ 
 
 
 

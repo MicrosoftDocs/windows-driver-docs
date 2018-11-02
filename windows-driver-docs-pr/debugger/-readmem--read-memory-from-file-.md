@@ -55,7 +55,7 @@ Specifies the address range for putting the data in memory. This parameter can c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +64,9 @@ The memory data is copied literally to the target computer. The debugger does no
 
 The **.readmem** command is the opposite of the [**.writemem (Write Memory to File)**](-writemem--write-memory-to-file-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ Specifies the lower 16 bits of the DWORD parameter. This parameter is a flag and
 </tbody>
 </table>
 
- 
+ 
 
 For more information about dynamic format change, see [Dynamic Format Change](https://msdn.microsoft.com/library/windows/hardware/ff536371).
 
@@ -96,9 +96,9 @@ Requirements
 
 [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698)
 
- 
+ 
 
- 
+ 
 
 
 

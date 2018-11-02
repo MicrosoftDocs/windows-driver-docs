@@ -49,9 +49,9 @@ Before the destination VM is brought online on the destination host, the extensi
 
     At this point, the underlying extensions can perform resource reservation and validation on the network adapter connection.
 
- 
+ 
 
- 
+ 
 
 
 

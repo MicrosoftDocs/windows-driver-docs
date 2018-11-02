@@ -33,7 +33,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------|
 | UINT32 | The wake-on-LAN pattern ID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858)
 
- 
+ 
 
- 
+ 
 
 
 

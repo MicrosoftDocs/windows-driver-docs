@@ -39,7 +39,7 @@ When it receives the OID set request of OID\_SWITCH\_NIC\_CREATE, the extension 
 
     **Note**  The extension may intercept send or receive packets for the specified port between the OID requests of OID\_SWITCH\_NIC\_CREATE and [OID\_SWITCH\_NIC\_CONNECT](oid-switch-nic-connect.md). In this case, the extension should forward the send or receive packet requests instead of canceling them.
 
-     
+     
 
 -   The extension can veto the creation notification by returning NDIS\_STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot satisfy its configured policies on the specified port, the extension should veto the creation notification.
 
@@ -49,13 +49,13 @@ When it receives the OID set request of OID\_SWITCH\_NIC\_CREATE, the extension 
 
     **Note**  The extension can only veto the OID request if the **Index** member of the [**NDIS\_SWITCH\_NIC\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598215) structure specifies a network adapter index value of zero.
 
-     
+     
 
 -   If the extension does not veto the creation notification, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID request to underlying extensions in the extensible switch driver stack.
 
     **Note**  The extension should monitor the completion status of this OID request. The extension does this to detect whether underlying extensions in the extensible switch driver stack have vetoed the creation notification.
 
-     
+     
 
 -   If the extension calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID request, the extension will not immediately receive any packet traffic to or from the extensible switch port. In addition, the extension cannot immediately inject send or receive traffic for the extensible switch port.
 
@@ -63,7 +63,7 @@ When it receives the OID set request of OID\_SWITCH\_NIC\_CREATE, the extension 
 
     **Note**  In some situations, packet traffic may be forwarded by the extensible switch to the port before an OID set request of [OID\_SWITCH\_NIC\_CONNECT](oid-switch-nic-connect.md) is issued.
 
-     
+     
 
 -   The extensible switch external network adapter can bind to one or more underlying physical adapters. For every physical network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of OID\_SWITCH\_NIC\_CREATE. Each OID set request specifies a different network adapter connection index value. For more information on these index values, see [Network Adapter Index Values](https://msdn.microsoft.com/library/windows/hardware/hh598258).
 
@@ -73,7 +73,7 @@ For more information about the states of extensible switch ports and network ada
 
 **Note**  The extension must not issue its own OID set requests of OID\_SWITCH\_NIC\_CREATE.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -106,11 +106,11 @@ If the extension completes the OID set request of OID\_SWITCH\_NIC\_CREATE, it r
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  If the extension completes the OID set request, it must not return NDIS\_STATUS\_SUCCESS.
 
- 
+ 
 
 If the extension does not complete the OID set request of OID\_SWITCH\_NIC\_CREATE, the request is completed by the underlying miniport edge of the extensible switch. The underlying miniport edge returns the following status code for this OID set request:
 
@@ -133,7 +133,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_NIC\_CREA
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -171,9 +171,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

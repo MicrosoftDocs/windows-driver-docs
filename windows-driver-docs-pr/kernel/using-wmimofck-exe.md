@@ -38,9 +38,9 @@ If the **-w** parameter is specified, a set of HTML files are generated that cre
 
 The **-y** and **-z** flags can only be used together. The **-y** specifies a file containing language-independent WMI class declarations, and **-z** specifies the class amendments for a particular language. The command *wmimofck localizedfile* **-y***mof* **-z***mfl* merges the *mof* and *mfl* files to form the complete localized version of MOF file. See [Building and Deploying the Localized MOF File](building-and-deploying-the-localized-mof-file.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

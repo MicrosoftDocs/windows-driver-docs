@@ -56,7 +56,7 @@ Causes the display to include all critical sections, even those that are not cur
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +89,9 @@ ContentionCount    0
 *** Locked
 ```
 
- 
+ 
 
- 
+ 
 
 
 

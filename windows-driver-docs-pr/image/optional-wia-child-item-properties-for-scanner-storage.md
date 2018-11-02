@@ -46,9 +46,9 @@ The WIA scanner storage child (file) item can optionally support the following W
 
 [**WIA\_IPS\_YRES**](https://msdn.microsoft.com/library/windows/hardware/ff552673)
 
- 
+ 
 
- 
+ 
 
 
 

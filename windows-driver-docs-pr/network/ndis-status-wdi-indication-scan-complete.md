@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SCAN\_COMPLETE to indicate t
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +54,9 @@ Requirements
 
 [OID\_WDI\_TASK\_SCAN](oid-wdi-task-scan.md)
 
- 
+ 
 
- 
+ 
 
 
 

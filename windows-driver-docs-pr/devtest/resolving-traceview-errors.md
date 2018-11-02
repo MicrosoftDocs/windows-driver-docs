@@ -48,9 +48,9 @@ This error occurs when you try to join an NT Kernel Logger trace session that is
 
 For more information, see [Joining a Trace Session](joining-a-trace-session.md) and [Creating an NT Kernel Logger trace session](creating-an-nt-kernel-logger-trace-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

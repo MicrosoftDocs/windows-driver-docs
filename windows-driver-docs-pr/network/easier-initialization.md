@@ -41,9 +41,9 @@ For more information about driver initialization, see the initialization topics 
 
 [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

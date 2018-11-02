@@ -65,9 +65,9 @@ Like filters, pins are kernel objects and are identified by kernel handles. The 
 
 When building an [audio filter graph](audio-filter-graphs.md), SysAudio links one filter to another by connecting their pins. A source pin from one filter can be connected to the sink pin of another filter. Data and IRPs from the source pin flow into the sink pin through this connection. To make the connection, a graph builder (typically SysAudio) creates the source pin first by calling [**KsCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff561652) and then creates the sink pin by calling **KsCreatePin** again. In the second call, however, the client specifies that the new sink pin is to be connected to the source pin that was created in the first call.
 
- 
+ 
 
- 
+ 
 
 
 

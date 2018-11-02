@@ -119,9 +119,9 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 
 * [Writing drivers for different versions of Windows](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554887)
 * [Building a Driver](building-a-driver.md)
- 
+ 
 
- 
+ 
 
 
 

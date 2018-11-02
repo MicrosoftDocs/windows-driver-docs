@@ -34,9 +34,9 @@ For example, consider two media playback applications, A and B. Each application
 
 Assume application A is the first to initiate a call to *DxgkDdiOPMGetInformation* or *DxgkDdiOPMGetCOPPCompatibleInformation* on its protected output. Application A then receives the DXGKMDT\_OPM\_STATUS\_LINK\_LOST flag and acts accordingly. If application A initiates a subsequent *DxgkDdiOPMGetInformation* or *DxgkDdiOPMGetCOPPCompatibleInformation* call, it should not receive the DXGKMDT\_OPM\_STATUS\_LINK\_LOST flag, unless the connector becomes unplugged again. When application B initiates a call to *DxgkDdiOPMGetInformation* or *DxgkDdiOPMGetCOPPCompatibleInformation* on its protected output, it receives the DXGKMDT\_OPM\_STATUS\_LINK\_LOST flag and acts accordingly. Again, application B should not receive the DXGKMDT\_OPM\_STATUS\_LINK\_LOST flag again until the connector becomes unplugged again.
 
- 
+ 
 
- 
+ 
 
 
 

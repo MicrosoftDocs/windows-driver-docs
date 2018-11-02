@@ -19,9 +19,9 @@ The figure below shows the overall architecture layout and a sample flow of mess
 
 Besides assisting with the Native Wi-Fi interface requirements, the Microsoft WLAN component also handles most of the common NDIS requirements. For example, it handles the [*MiniportPause*](https://msdn.microsoft.com/library/windows/hardware/ff559418) requirements from NDIS and converts them to WDI data and control path messages to ensure that NDIS requirements are met. However, it also provides the IHV miniport driver the ability to do additional work. The driver can register to be notified on *MiniportPause* call to do any additional cleanup it wants to do during *MiniportPause*.
 
- 
+ 
 
- 
+ 
 
 
 

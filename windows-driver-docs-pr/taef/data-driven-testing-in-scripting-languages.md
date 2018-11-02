@@ -288,9 +288,9 @@ te Examples\DataDrivenTest.wsc /select:"@Name='VBSampleTests::TestOne*' and @Dat
 
 Using PICT based and light weight data-driven tests in a script test is left as an exercise to the reader.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,9 +63,9 @@ G:\Debugging Tools> kd -k kdsrv:server=@{npipe:server=127.0.0.42,pipe=KernelPipe
 
 Notice that although the baud rate is specified, the port is not. This causes the debugger to default to the port specified by \_NT\_DEBUG\_PORT on the computer where KdSrv is running.
 
- 
+ 
 
- 
+ 
 
 
 

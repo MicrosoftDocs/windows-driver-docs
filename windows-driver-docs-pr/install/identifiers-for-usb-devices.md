@@ -29,11 +29,11 @@ For all USB devices, the USB bus driver generates a standard set of identifiers 
 
 **Note**  Starting with Microsoft Windows 2000, the numbers that are embedded in USB identifiers is in hexadecimal format.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

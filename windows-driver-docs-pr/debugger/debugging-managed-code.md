@@ -35,7 +35,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 | 4.0                    | 4.0         | clr.dll      |
 | 4.5                    | 4.0         | clr.dll      |
 
- 
+ 
 
 ## <span id="debugging-managed_code"></span><span id="DEBUGGING_MANAGED_CODE"></span>Debugging Managed Code
 
@@ -47,7 +47,7 @@ To debug managed code, the debugger must load these two components.
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
- 
+ 
 
 ### <span id="getting-the-sos-debugging-extension"></span><span id="GETTING_THE_SOS_DEBUGGING_EXTENSION"></span>Getting the SOS Debugging Extension (sos.dll)
 
@@ -124,7 +124,7 @@ Here we illustrate using Microsoft's public symbol server.
 
 Enter these commands.
 
-**.sympath+ srv\*** (Add symbol server to symbol path.)
+**.sympath+ srv\\*** (Add symbol server to symbol path.)
 
 **!sym noisy**
 
@@ -192,9 +192,9 @@ To test the SOS debugging extension, enter **!sos.help**. Then try one of the co
 
 Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](-cordll--control-clr-debugging-.md).
 
- 
+ 
 
- 
+ 
 
 
 

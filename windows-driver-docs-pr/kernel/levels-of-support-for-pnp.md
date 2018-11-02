@@ -43,7 +43,7 @@ The extent to which a device supports PnP depends on the PnP support in both the
 </tbody>
 </table>
 
- 
+ 
 
 Any device that supports PnP should have PnP support in its drivers.
 
@@ -53,9 +53,9 @@ If a driver does not support PnP, its devices behave as non-PnP devices regardle
 
 *Legacy drivers* (that is, drivers written before the operating system supported PnP) continue to work as they did previously, without any PnP capability. New drivers should include PnP support.
 
- 
+ 
 
- 
+ 
 
 
 

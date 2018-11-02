@@ -35,7 +35,7 @@ You can filter any set of results with the drop-down menus at the top of the lis
     **Note**  
     Selecting **Yes** on the **Device Stage** filter limits models to those with a Device Stage experience.
 
-     
+     
 
 2.  Click **Go** to apply the filter.
 
@@ -55,9 +55,9 @@ You can sort any set of results by **Model Name**, **Company**, **Locale**, **Ca
 
 To obtain a listing on the Windows Device Experience List, is to read and follow instructions in [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

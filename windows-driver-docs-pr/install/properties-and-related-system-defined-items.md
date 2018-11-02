@@ -31,9 +31,9 @@ For information about the correspondence between the system-defined items that a
 
 [Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff541409)
 
- 
+ 
 
- 
+ 
 
 
 

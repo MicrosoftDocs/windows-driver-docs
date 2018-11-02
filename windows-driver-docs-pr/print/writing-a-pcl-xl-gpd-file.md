@@ -89,9 +89,9 @@ An IHV can lessen printer memory usage by limiting the number of fonts to be dow
 
 Unidrv operates under the assumption that each GPD file contains its own dither matrix. It is also recommended that each device have its own dither matrix. The dither matrix is specified in a \*Feature: Dither [customized feature](customized-features.md).
 
- 
+ 
 
- 
+ 
 
 
 

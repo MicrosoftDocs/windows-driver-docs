@@ -21,9 +21,9 @@ To open a dump file using Visual Studio:
 2.  Navigate to the dump file you want to open.
 3.  Click **Open.**
 
- 
+ 
 
- 
+ 
 
 
 

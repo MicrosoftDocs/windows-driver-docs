@@ -43,9 +43,9 @@ Serial performs the following steps:
 
 6.  Starts the legacy COM port.
 
- 
+ 
 
- 
+ 
 
 
 

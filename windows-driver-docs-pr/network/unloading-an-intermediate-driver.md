@@ -23,9 +23,9 @@ To perform cleanup operations before a intermediate driver is uninstalled, an in
 
 A miniport-intermediate driver calls **NdisMDeregisterMiniportDriver** twice, once for its physical device interface, and again for its virtual device interface.
 
- 
+ 
 
- 
+ 
 
 
 

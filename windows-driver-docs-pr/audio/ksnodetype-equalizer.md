@@ -31,9 +31,9 @@ A KSNODETYPE\_EQUALIZER node should support the following required properties:
 
 [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md)
 
- 
+ 
 
- 
+ 
 
 
 

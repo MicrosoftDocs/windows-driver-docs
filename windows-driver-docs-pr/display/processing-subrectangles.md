@@ -29,9 +29,9 @@ The following topics show how to perform various subrectangular-process operatio
 
 [Stretching Subrectangles](stretching-subrectangles.md)
 
- 
+ 
 
- 
+ 
 
 
 

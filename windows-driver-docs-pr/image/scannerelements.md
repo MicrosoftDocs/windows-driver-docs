@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementData for ScannerElements Element</strong>](elementdata-for-scannerelements-element.md)</p></td>
+<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for ScannerElements Element&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData for ScannerElements Element</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetScannerElementsResponse</strong>](getscannerelementsresponse.md)</p></td>
+<td><p><a href="getscannerelementsresponse.md" data-raw-source="[&lt;strong&gt;GetScannerElementsResponse&lt;/strong&gt;](getscannerelementsresponse.md)"><strong>GetScannerElementsResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +82,9 @@ The WSD Scan Service returns the **ScannerElements** element in the [**GetScanne
 
 [**GetScannerElementsResponse**](getscannerelementsresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

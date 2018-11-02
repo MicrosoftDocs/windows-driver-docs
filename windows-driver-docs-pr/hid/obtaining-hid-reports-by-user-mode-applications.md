@@ -32,9 +32,9 @@ Returns a feature report from a HID collection.
 
 An application can request the return of a specific report. To retrieve a specific report using these routines, the application allocates the report output buffer, zero-initializes the buffer, and sets the first byte in the buffer to the specific report ID. For more information, see [Initializing HID Reports](initializing-hid-reports.md).
 
- 
+ 
 
- 
+ 
 
 
 

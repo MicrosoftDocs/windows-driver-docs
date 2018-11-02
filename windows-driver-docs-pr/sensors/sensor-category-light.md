@@ -44,7 +44,7 @@ This category includes the following platform-defined sensor types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="platform_defined_data_fields"></span><span id="PLATFORM_DEFINED_DATA_FIELDS"></span>Platform-defined Data Fields
 
@@ -85,11 +85,11 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**   Each platform-defined light data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_LIGHT\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 Requirements
 ------------
@@ -119,9 +119,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

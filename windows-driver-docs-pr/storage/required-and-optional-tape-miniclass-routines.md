@@ -42,9 +42,9 @@ The tape miniclass driver's **DriverEntry** routine must use that name exactly i
 
 See also the description of tape miniclass routines in [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970).
 
- 
+ 
 
- 
+ 
 
 
 

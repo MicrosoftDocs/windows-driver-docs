@@ -23,9 +23,9 @@ To add the WDI TLV generator/parser to your driver, follow these steps.
 
 4.  Start calling the APIs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,9 +62,9 @@ The following debugger extensions are especially useful for analyzing a kernel-m
 
 For techniques that can be used to read specific kinds of information from a dump file, see [Extracting Information from a Dump File](extracting-information-from-a-dump-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

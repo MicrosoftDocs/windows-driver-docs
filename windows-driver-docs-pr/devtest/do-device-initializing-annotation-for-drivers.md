@@ -33,7 +33,6 @@ DRIVER_ADD_DEVICE (
     _In_ struct _DEVICE_OBJECT *PhysicalDeviceObject
     );
 typedef DRIVER_ADD_DEVICE *PDRIVER_ADD_DEVICE;
- 
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -41,9 +40,9 @@ typedef DRIVER_ADD_DEVICE *PDRIVER_ADD_DEVICE;
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
 
- 
+
+
 
 
 

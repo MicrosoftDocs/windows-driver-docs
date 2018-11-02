@@ -23,9 +23,9 @@ The following diagram illustrates buffers used in isochronous transfer.
 
 ![diagram illustrating buffers used in isochronous transfer](images/1394lin.png)
 
- 
+ 
 
- 
+ 
 
 
 

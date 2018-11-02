@@ -23,9 +23,9 @@ DX8 runtimes now set another new flag, DDSCAPS2\_NOTUSERLOCKABLE, on the primary
 
 The driver can also determine whether the depth/stencil buffer is lockable by the presence of the DDSCAPS2\_NOTUSERLOCKABLE flag.
 
- 
+ 
 
- 
+ 
 
 
 

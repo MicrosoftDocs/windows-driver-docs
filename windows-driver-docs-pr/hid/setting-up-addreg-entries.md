@@ -106,7 +106,7 @@ Most of the flags are defined in Mmddk.h. The two new flags added in DirectX 3.0
 </tbody>
 </table>
 
- 
+ 
 
 The default behavior is:
 
@@ -153,7 +153,7 @@ The following flags are used to describe which features the device has:
 </tbody>
 </table>
 
- 
+ 
 
 The following flags are used to describe the device type:
 
@@ -182,7 +182,7 @@ The following flags are used to describe the device type:
 </tbody>
 </table>
 
- 
+ 
 
 Finally, the JOY\_HWS\_ISGAMEPORTDRIVER flag that was added in DirectX 3.0 indicates that this minidriver replaces the standard polling of a game port.
 
@@ -223,7 +223,7 @@ For example, if you have a digital joystick that has eight buttons and returns v
 </tbody>
 </table>
 
- 
+ 
 
 Putting this **DWORD** in little-endian format, followed by a **DWORD** for the number of buttons, gives you 03,00,08,00,08,00,00,00, which is the series of bytes required in your INF file.
 
@@ -304,9 +304,9 @@ This string instructs the user how to move the POV hat left for calibration.
 <a href="" id="regstr-val-joyoemcal12-"></a>REGSTR\_VAL\_JOYOEMCAL12   
 This string consists of a message that informs the user that the calibration process is finished.
 
- 
+ 
 
- 
+ 
 
 
 

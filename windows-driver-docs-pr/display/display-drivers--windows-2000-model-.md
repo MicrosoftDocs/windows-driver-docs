@@ -33,9 +33,9 @@ Display driver writers can also implement the following DDIs:
 
 For complete descriptions of the graphics DDI entry points and structures, as well as GDI service functions and objects, see [GDI Functions](https://msdn.microsoft.com/library/windows/hardware/ff566543).
 
- 
+ 
 
- 
+ 
 
 
 

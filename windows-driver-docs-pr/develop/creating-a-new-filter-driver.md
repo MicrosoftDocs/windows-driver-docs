@@ -83,9 +83,9 @@ If your device technology has a specific filter model or a minifilter model, and
 
 If you are not sure which template to use, consider reading or posting to the [Windows Hardware WDK and Driver Development](http://go.microsoft.com/fwlink/p?LinkID=252169) forum.
 
- 
+ 
 
- 
+ 
 
 
 

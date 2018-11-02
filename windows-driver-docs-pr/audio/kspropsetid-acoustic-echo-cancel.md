@@ -25,9 +25,9 @@ The `KSPROPSETID_Acoustic_Echo_Cancel` property set includes the following prope
 
 [**KSPROPERTY\_AEC\_STATUS**](ksproperty-aec-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

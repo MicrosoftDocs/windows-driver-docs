@@ -22,9 +22,9 @@ Mobile broadband devices that exhibit morphing behavior are referred to as morph
 
 [MB Identity Morphing Solution Overview](mb-identity-morphing-solution-overview.md)
 [MB Identity Morphing Solution Details](mb-identity-morphing-solution-details.md)
- 
+ 
 
- 
+ 
 
 
 

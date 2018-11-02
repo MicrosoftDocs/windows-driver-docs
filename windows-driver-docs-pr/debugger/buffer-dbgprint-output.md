@@ -41,7 +41,7 @@ The **Buffer DbgPrint Output** flag suppresses debugger output from **DbgPrint**
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +49,9 @@ When debugger output is suppressed, it does not automatically appear in the kern
 
 For information about the functions that communicate with the debugger, see [Sending Output to the Debugger](sending-output-to-the-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

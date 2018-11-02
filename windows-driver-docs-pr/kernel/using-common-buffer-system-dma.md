@@ -54,9 +54,9 @@ The adapter object pointer returned by **IoGetDmaAdapter** is a required paramet
 
 Individual drivers call this sequence of support routines at different points, depending on how each driver is implemented to service its device. For example, one driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine might make the call to **AllocateAdapterChannel**, another driver might make this call from a routine that removes IRPs from a driver-created interlocked queue, and still another driver might make this call when its subordinate DMA device indicates it is ready to transfer data.
 
- 
+ 
 
- 
+ 
 
 
 

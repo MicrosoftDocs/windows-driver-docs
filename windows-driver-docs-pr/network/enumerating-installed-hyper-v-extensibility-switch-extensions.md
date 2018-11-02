@@ -48,7 +48,7 @@ Enabled       : True
 
 **Note**  In order to minimize the amount of information, the example pipes the returned extension objects through the filter command "fl". This causes a subset of information to be displayed that matches the attributes of the **-property** switch.
 
- 
+ 
 
 ## Related topics
 
@@ -57,9 +57,9 @@ Enabled       : True
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 
- 
+ 
 
- 
+ 
 
 
 

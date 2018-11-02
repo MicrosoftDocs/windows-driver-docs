@@ -31,9 +31,9 @@ Applications navigate to the feeder item to perform document feeder scans. This 
 
 In standard acquisition and folder acquisition, the WIA feeder item property settings are used for all front pages. For more information about standard acquisition and folder acquisition, see [Advanced Duplex-Capable Document Feeder](advanced-duplex-capable-document-feeder.md).
 
- 
+ 
 
- 
+ 
 
 
 

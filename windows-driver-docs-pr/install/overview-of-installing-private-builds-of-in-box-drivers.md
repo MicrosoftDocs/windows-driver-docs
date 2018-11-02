@@ -29,13 +29,13 @@ The Microsoft signature types include the following:
 
 **Note**  Even if a driver that has a third-party signature is a better match for the device, Windows selects the driver that has a Microsoft signature. Using a publisher identity certificate \[PIC\] for the third-party signature does not change this behavior.
 
- 
+ 
 
 Starting with Windows Vista, the [**AllSignersEqual** Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) controls how Windows ranks Microsoft-signed drivers and third party-signed drivers. When **AllSignersEqual** is enabled, Windows treats all Microsoft signatures and third-party signatures as equal with respect to rank when selecting the driver that is the best match for a device.
 
 **Note**  In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. Starting with Windows 7, this Group Policy is enabled by default.
 
- 
+ 
 
 To install a private build of an inbox driver, you must do the following:
 
@@ -49,9 +49,9 @@ To install a private build of an inbox driver, you must do the following:
 
 For more information about how Windows ranks drivers, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

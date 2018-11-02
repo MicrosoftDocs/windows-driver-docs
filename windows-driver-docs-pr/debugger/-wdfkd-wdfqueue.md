@@ -61,9 +61,9 @@ Parallel, Power-managed, PowerOff, Can accept, Can dispatch, ExecutionLevelDispa
 
 The queue in the preceding example is configured for parallel dispatching, is power-managed but is currently in the Off state, and can both accept and dispatch requests.
 
- 
+ 
 
- 
+ 
 
 
 

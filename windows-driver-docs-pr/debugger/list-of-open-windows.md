@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 At the bottom of the **Window** menu, there is a list of all currently open debugging information windows. Click any window from this list to open the window.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,7 +35,6 @@ HRESULT
     IN IPrintAsyncNotifyCallback*,
     OUT HANDLE*
     );
- 
 ```
 
 **To register for notifications, specify**
@@ -61,9 +60,9 @@ HRESULT
     );
 ```
 
- 
 
- 
+
+
 
 
 

@@ -23,9 +23,9 @@ Allocating Link Bandwidth
 
 Striping
 
- 
+ 
 
- 
+ 
 
 
 

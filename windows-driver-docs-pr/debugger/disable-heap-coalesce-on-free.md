@@ -41,7 +41,7 @@ The **Disable heap coalesce on free** flag leaves adjacent blocks of heap memory
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +49,9 @@ By default, Windows combines ("coalesces") newly-freed adjacent blocks into a si
 
 This flag is used for maintaining compatibility with old applications.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -66,7 +66,7 @@ In Windows Server 2003, Windows XP with SP1, Windows 2000, and Windows Me/98, Ks
 </tbody>
 </table>
 
- 
+ 
 
 The two channel masks in the preceding table represent the 5.1 speaker configuration and the 7.1 speaker configuration. To identify the same two speaker configurations, Dsound.h defines the following speaker-configuration IDs:
 
@@ -104,7 +104,7 @@ In Windows XP with SP2 and later versions of Windows, Ksmedia.h defines the chan
 </tbody>
 </table>
 
- 
+ 
 
 By comparing the two preceding tables, the following points are apparent:
 
@@ -114,7 +114,7 @@ By comparing the two preceding tables, the following points are apparent:
 
 -   **Note**   In Windows Vista and later versions of Windows, the KSAUDIO\_SPEAKER\_7POINT1 speaker configuration is no longer supported. As a result, it is not an available option in Control Panel.
 
-     
+     
 
 To represent the same set of speaker configurations, Dsound.h defines the following speaker-configuration IDs:
 
@@ -129,9 +129,9 @@ DSSPEAKER\_7POINT1\_SURROUND represents the new 7.1 home theater speaker configu
 
 For more information about speaker configuration for DirectSound, see [DirectSound Speaker-Configuration Settings](directsound-speaker-configuration-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

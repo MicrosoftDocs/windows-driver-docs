@@ -23,7 +23,7 @@ This event is sent when a device transform needs input to generate output. Typic
 |------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Input stream index** | The input stream index is sent in the IMFMediaEvent attribute store as **MF\_EVENT\_MFT\_INPUT\_STREAM\_ID**. |
 
- 
+ 
 
 ## Remarks
 
@@ -33,9 +33,9 @@ This event will not be handled by device transform manager (DTM) for the followi
 -   Devproxy does not have any input pins
 -   Even though Device MFT has input pins, it is automatically fed samples when they are available on the output of Devproxy. Therefore, there is no need for Device MFT to request for samples. This request would be ignored by DTM.
 
- 
+ 
 
- 
+ 
 
 
 

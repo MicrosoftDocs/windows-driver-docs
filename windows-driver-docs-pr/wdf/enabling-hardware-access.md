@@ -15,9 +15,9 @@ To enable hardware access, a UMDF driver must set the **UmdfDirectHardwareAccess
 
 For more information about INF directives in UMDF, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

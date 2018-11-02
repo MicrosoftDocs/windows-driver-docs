@@ -23,9 +23,9 @@ If a filter driver obtained the handle in **NdisHandle** from the *NdisFilterHan
 
 After a driver is done accessing the configuration information, the driver must call the [**NdisCloseConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff561642) function to release the configuration handle and related resources.
 
- 
+ 
 
- 
+ 
 
 
 

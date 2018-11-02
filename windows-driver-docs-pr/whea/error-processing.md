@@ -85,9 +85,9 @@ The following describes the sequence of actions taken by WHEA in response to eac
 
 8.  The Windows kernel generates a bug check.
 
- 
+ 
 
- 
+ 
 
 
 

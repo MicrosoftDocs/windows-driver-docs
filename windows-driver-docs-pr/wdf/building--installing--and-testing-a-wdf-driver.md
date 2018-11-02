@@ -37,9 +37,9 @@ This section describes how you build a Windows Driver Frameworks (WDF) driver in
 -   [How UMDF Handles Application Failures](how-umdf-handles-application-failures.md)
 -   [How UMDF Reports Errors](how-umdf-reports-errors.md)
 
- 
+ 
 
- 
+ 
 
 
 

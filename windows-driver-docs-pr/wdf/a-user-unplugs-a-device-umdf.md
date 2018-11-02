@@ -31,9 +31,9 @@ Generally, the driver should avoid accessing the hardware in the remove path. Th
 
 ![surprise-removal sequence for a umdf driver](images/umdf-surprise-removal-sequence.png)
 
- 
+ 
 
- 
+ 
 
 
 

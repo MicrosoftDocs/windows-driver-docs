@@ -55,7 +55,7 @@ The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug ch
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +66,9 @@ Kernel components can extend watchdog timer functionality to user mode by period
 
 On the Microsoft Windows Server 2003, Enterprise Edition, Windows Server 2003, Datacenter Edition, and Windows 2000 with Service Pack 4 (SP4) operating systems, a user-mode hang can also cause this bug check. The bug check occurs in this situation only if the user has set **HangRecoveryAction** to a value of 3.
 
- 
+ 
 
- 
+ 
 
 
 

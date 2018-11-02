@@ -27,13 +27,13 @@ A **NetTrans**, **NetClient**, or **NetService** component can have a notify obj
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
 **Note**  **Net** components (adapters) do not support notify objects; therefore, these components should use a co-installer.
 
- 
+ 
 
 For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011).
 
@@ -55,9 +55,9 @@ HKR, Ndi, ComponentDll, 0, "notifyobject.dll"
 
 The *DDInstall* section for a component that has a notify object must also contain a **CopyFiles** directive which references a *file-list-section* that copies the notify object DLL to the destination directory specified by the **DestinationDirs** section. For more information about the **CopyFiles** directive and **DestinationDirs** sections, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
 
- 
+ 
 
- 
+ 
 
 
 

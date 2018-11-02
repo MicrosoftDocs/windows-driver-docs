@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 The **\*CodePage** entry that will be used is the most recently defined **\*CodePage** entry that is defined before the GDL data entry and is visible from the scope of the GDL data entry.
 
- 
+ 
 
- 
+ 
 
 
 

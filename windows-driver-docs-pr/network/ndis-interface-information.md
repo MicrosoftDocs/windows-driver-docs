@@ -27,9 +27,9 @@ NDIS provides enhanced support for Management Instrumentation (WMI). For more in
 
 [**NDIS\_INTERFACE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff565736)
 
- 
+ 
 
- 
+ 
 
 
 

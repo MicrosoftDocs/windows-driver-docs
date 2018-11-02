@@ -79,9 +79,9 @@ A KSNODETYPE\_3D\_EFFECTS node might implement an interaural time delay (ITD) al
 
 [**KSPROPERTY\_ITD3D\_PARAMS**](ksproperty-itd3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

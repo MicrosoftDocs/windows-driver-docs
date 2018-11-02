@@ -57,7 +57,7 @@ The table in the Tracelog enumguid display includes the following columns.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Guid</strong></p></td>
-<td align="left"><p>The [control GUID](control-guid.md) of the trace provider</p></td>
+<td align="left"><p>The <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> of the trace provider</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Enabled</strong></p></td>
@@ -78,7 +78,7 @@ The table in the Tracelog enumguid display includes the following columns.
 </tbody>
 </table>
 
- 
+ 
 
 If a provider is registered but not enabled, then it appears in the enumguid display but its entry in the **Enabled** column is **FALSE**.
 
@@ -124,9 +124,9 @@ d58c126e-b309-11d1-969e-0000f875a5bc     FALSE  0    0    0
 27246e9d-b4df-4f20-b969-736fa49ff6ff    FALSE  0    0    0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

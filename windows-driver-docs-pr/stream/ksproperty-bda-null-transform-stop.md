@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START**](ksproperty-bda-null-transform-start.md)
 
- 
+ 
 
- 
+ 
 
 
 

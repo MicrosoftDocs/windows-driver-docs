@@ -27,7 +27,7 @@ The internal structure and capability of a top-level collection is described by 
 
 -   [Button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) describe the capability of the controls supported by the top-level collection.
 
- 
+ 
 
 
 

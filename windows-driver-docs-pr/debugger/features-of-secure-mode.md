@@ -32,9 +32,9 @@ The specific effects of Secure Mode are as follows:
 
 After it has been activated, Secure Mode cannot be turned off. For more information see, [Activating Secure Mode](activating-secure-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

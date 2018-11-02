@@ -78,9 +78,9 @@ PTP.Connected="PTP Camera Connected"
 PTP.Disconnected="PTP Camera Disconnected"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ A virtual miniport driver is appropriate when it completely simulates one or mor
 
 A virtual miniport is inappropriate when it is directly controlling real hardware, for example, a host bus adapter.
 
- 
+ 
 
- 
+ 
 
 
 

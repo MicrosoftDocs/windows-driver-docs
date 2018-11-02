@@ -32,9 +32,9 @@ This render state enables use of a multisample buffer as an accumulation buffer,
 
 Each sample in a multisample render target contributes uniform intensity to the final presented image. Consider, for example, that the multisample mode is 3 and the number of samples that are enabled using multisample masking is 2. Therefore, the resulting intensity of the rendered image is 2/3. That is, the intensity of each red, green, and blue component of every pixel is factored by 2/3.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!ob**, **!od**, and **!ow** extension commands are obsolete. Use the [**ob, od, ow (Output to Port)**](ob--ow--od--output-to-port-.md) commands instead.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RetrieveImageResponse</strong>](retrieveimageresponse.md)</p></td>
+<td><p><a href="retrieveimageresponse.md" data-raw-source="[&lt;strong&gt;RetrieveImageResponse&lt;/strong&gt;](retrieveimageresponse.md)"><strong>RetrieveImageResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -64,9 +64,9 @@ The **ScanData** element contains an **xop:Include** element that specifies the 
 
 [**RetrieveImageResponse**](retrieveimageresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

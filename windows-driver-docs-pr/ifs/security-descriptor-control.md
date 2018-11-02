@@ -43,15 +43,15 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_DACL_DEFAULTED</p></td>
-<td align="left"><p>Indicates a security descriptor with a default DACL. For example, if an object's creator does not specify a DACL, the object receives the default DACL from the creator's access token. This flag can affect how the system treats the DACL, with respect to ACE inheritance. The system ignores this flag if the SE_DACL_PRESENT flag is not set.</p>
+<td align="left"><p>Indicates a security descriptor with a default DACL. For example, if an object&#39;s creator does not specify a DACL, the object receives the default DACL from the creator&#39;s access token. This flag can affect how the system treats the DACL, with respect to ACE inheritance. The system ignores this flag if the SE_DACL_PRESENT flag is not set.</p>
 <p>This flag is used to determine how the final DACL on the object is to be computed and is not stored physically in the security descriptor control of the securable object.</p>
-<p>To set this flag, use [<strong>RtlSetDaclSecurityDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562781).</p></td>
+<p>To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562781" data-raw-source="[&lt;strong&gt;RtlSetDaclSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562781)"><strong>RtlSetDaclSecurityDescriptor</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_DACL_PRESENT</p></td>
 <td align="left"><p>Indicates a security descriptor that has a DACL. If this flag is not set, or if this flag is set and the DACL is <strong>NULL</strong>, the security descriptor allows full access to everyone.</p>
 <p>This flag is used to hold the security information specified by a caller until the security descriptor is associated with a securable object. Once the security descriptor is associated with a securable object, the SE_DACL_PRESENT flag is always set in the security descriptor control.</p>
-<p>To set this flag, use [<strong>RtlSetDaclSecurityDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562781).</p></td>
+<p>To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562781" data-raw-source="[&lt;strong&gt;RtlSetDaclSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562781)"><strong>RtlSetDaclSecurityDescriptor</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_DACL_PROTECTED</p></td>
@@ -63,15 +63,15 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_GROUP_DEFAULTED</p></td>
-<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's group SID.</p></td>
+<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor&#39;s group SID.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_OWNER_DEFAULTED</p></td>
-<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's owner security identifier (SID). To set this flag, use [<strong>RtlSetOwnerSecurityDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553220).</p></td>
+<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor&#39;s owner security identifier (SID). To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553220" data-raw-source="[&lt;strong&gt;RtlSetOwnerSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553220)"><strong>RtlSetOwnerSecurityDescriptor</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_RM_CONTROL_VALID</p></td>
-<td align="left"><p>Indicates that the resource control manager bits in the security descriptor are valid. The resource manager control bits are eight bits in the <strong>Sbz1</strong> member of the [<strong>SECURITY_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556610) structure that contains information specific to the resource manager accessing the structure. (For more information, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 documentation.)</p></td>
+<td align="left"><p>Indicates that the resource control manager bits in the security descriptor are valid. The resource manager control bits are eight bits in the <strong>Sbz1</strong> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556610" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556610)"><strong>SECURITY_DESCRIPTOR</strong></a> structure that contains information specific to the resource manager accessing the structure. (For more information, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 documentation.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_SACL_AUTO_INHERIT_REQ</p></td>
@@ -105,7 +105,7 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
@@ -125,9 +125,9 @@ ntifs.h (include ntifs.h)
 
 [**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610)
 
- 
+ 
 
- 
+ 
 
 
 

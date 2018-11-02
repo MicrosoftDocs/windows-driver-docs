@@ -45,7 +45,7 @@ In the preceding image,
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
+     
 
 -   **USB role-switch drivers (URS)**
 
@@ -79,9 +79,9 @@ In the preceding image,
 
     The class driver defines the overall functionality of the batteries in the system and interacts with the power manager. The miniclass driver handles device-specific functions such as adding and removing a battery, and keeping track of its capacity and charge. The miniclass driver exports routines that the class driver calls to get information about the devices it controls.
 
- 
+ 
 
- 
+ 
 
 
 

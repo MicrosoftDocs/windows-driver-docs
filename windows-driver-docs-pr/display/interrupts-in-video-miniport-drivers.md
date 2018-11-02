@@ -34,9 +34,9 @@ A video miniport driver should adhere to the following two rules:
 
 2.  Because of Rule 1, a device driver ISR should *never* act on an interrupt if the power state is D3 (it should return **FALSE**).
 
- 
+ 
 
- 
+ 
 
 
 

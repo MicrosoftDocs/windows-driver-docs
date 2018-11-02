@@ -41,11 +41,11 @@ The driver should fill in the [**DDSCAPS**](https://msdn.microsoft.com/library/w
 
 **Note**   DirectDraw compares a new surface's capabilities against the entries in the [**HEAPALIGNMENT**](https://msdn.microsoft.com/library/windows/hardware/ff567265) structure in the order in which they are specified. For example, a surface with DDSCAPS\_MIPMAP | DDSCAPS\_TEXTURE | DDSCAPS\_FLIP set is aligned according to the **Texture** member of the HEAPALIGNMENT structure, because this is the first applicable capabilities bit for which an alignment is specified (that is, **Texture** appears before **FlipTarget** in the HEAPALIGNMENT structure). The **FlipTarget** member is not considered in this example. Because back buffers in a primary flipping chain are marked with DDSCAPS\_FLIP and no other bit for which an alignment can be specified, such surfaces are aligned according to the **FlipTarget** member. Surfaces that could potentially become members of a primary flipping chain (those with the same pixel format and size as the primary surface) are also aligned according to the **FlipTarget** member.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

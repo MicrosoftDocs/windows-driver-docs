@@ -50,7 +50,7 @@ Be aware that GFX filters should not be used to implement virtual audio devices.
 
 **Note**  Any modifications that a vendor makes to an adapter driver to support GFX filters should be compatible with any earlier version of Windows that the driver needs to support.
 
- 
+ 
 
 Windows Server 2003 and Windows XP support GFX filters only in 32-bit versions of the operating system. GFX filters do not work in 64-bit systems. For information about digital audio signal processing in Windows Vista, see the [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md) topic.
 
@@ -70,9 +70,9 @@ This section includes the following topics:
 
 [DRM Requirements for GFX Drivers](drm-requirements-for-gfx-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

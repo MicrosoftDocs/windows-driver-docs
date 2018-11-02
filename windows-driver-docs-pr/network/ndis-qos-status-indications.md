@@ -16,9 +16,9 @@ This section includes the reference topics of NDIS quality of service (QoS) stat
 
 [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](ndis-status-qos-remote-parameters-change.md)
 
- 
+ 
 
- 
+ 
 
 
 

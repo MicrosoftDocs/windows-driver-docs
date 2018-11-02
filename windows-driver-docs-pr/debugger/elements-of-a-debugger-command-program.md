@@ -28,15 +28,15 @@ You can add comments to a debugger command program by using two dollar signs ([*
 
 **Note**   You should not use an asterisk ([**\* (Comment Line Specifier)**](----comment-line-specifier-.md)). Because comments that are specified with an asterisk do not end with a semicolon, the rest of the program is disregarded.
 
- 
+ 
 
 Typically, you should use MASM syntax within a debugger command program. When you have to use C++ elements (such as specifying a member of a structure or class), you can use the **@@c++( )** token to switch to C++ syntax for that clause.
 
 The **$scmp**, **$sicmp**, and **$spat** string operators in MASM syntax are particularly useful. For more information about these operators, see [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ For more information, see the following topics:
 -   [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865)
 -   [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613)
 
- 
+ 
 
- 
+ 
 
 
 

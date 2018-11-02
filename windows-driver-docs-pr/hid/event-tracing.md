@@ -61,9 +61,9 @@ Logman delete -n HIDI2C_ETW
 
 The resulting trace log can parsed with tools like **Xperf** or **Windows Performance Analyzer** (WPA).
 
- 
+ 
 
- 
+ 
 
 
 

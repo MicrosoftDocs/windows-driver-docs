@@ -49,9 +49,9 @@ The GPD language also defines GPD file entries that control the following operat
 
 This introductory section also includes discussions of [master units](master-units.md), [using multiple GPD files in a minidriver](using-multiple-gpd-files-in-a-minidriver.md), and [using resource DLLs in a minidriver](using-resource-dlls-in-a-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

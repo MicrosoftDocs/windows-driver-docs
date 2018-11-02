@@ -47,13 +47,13 @@ The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565128)</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565128)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565128" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565128)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565128" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565128)"><strong>KSPROPERTY_CROSSBAR_ROUTE_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_CROSS\_ROUTE\_S structure that specifies a particular routing and whether that routing is possible.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_CROSSBAR\_ROUTE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565128)
 
- 
+ 
 
- 
+ 
 
 
 

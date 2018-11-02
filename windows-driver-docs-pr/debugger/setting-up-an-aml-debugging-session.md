@@ -18,9 +18,9 @@ The AMLI Debugger code is contained in Acpi.sys. In order to fully perform AML d
 
 To activate breaking into debugger on free builds, use the **!amli set dbgbrkon** command, that is part of the AMLI Debugger extensions. For more information, see [**!amli set**](-amli-set.md).
 
- 
+ 
 
- 
+ 
 
 
 

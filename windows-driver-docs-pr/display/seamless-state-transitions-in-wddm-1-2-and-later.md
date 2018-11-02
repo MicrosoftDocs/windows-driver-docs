@@ -34,7 +34,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>System.Client.Firmware.UEFI.GOP.Display</strong></p>
 <p><strong>Device.Graphics…PnpStopStartSupport</strong></p>
 <p><strong>Device.Graphics…DisplayOutputControl</strong></p></td>
@@ -42,7 +42,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Transition_from_firmware_to_operating_system"></span><span id="transition_from_firmware_to_operating_system"></span><span id="TRANSITION_FROM_FIRMWARE_TO_OPERATING_SYSTEM"></span>Transition from firmware to operating system
 
@@ -101,9 +101,9 @@ In addition, if a mode change occurs while the monitor is turned off, the operat
 
 This two-part calling sequence also occurs when the system resumes after hibernation and monitor sync generation is to remain enabled. In this case the driver should take no action when it receives the second call to [*DxgkDdiCommitVidPn*](https://msdn.microsoft.com/library/windows/hardware/ff559597).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
 **Note**  To suppress missing page error messages when debugging an Automatic Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -43,9 +43,9 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
 [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

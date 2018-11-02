@@ -34,9 +34,9 @@ Initiator miniport drivers must support the following WMI tool classes:
 
 [MSiSCSI\_TargetMappings WMI Class](msiscsi-targetmappings-wmi-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

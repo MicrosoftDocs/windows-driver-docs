@@ -19,9 +19,9 @@ This section covers the following topics:
 
 [Adding UI to a WIA Minidriver](adding-ui-to-a-wia-minidriver.md)
 
- 
+ 
 
- 
+ 
 
 
 

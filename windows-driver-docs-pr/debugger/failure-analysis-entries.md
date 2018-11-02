@@ -32,9 +32,9 @@ To get or set the data block of an FA entry, use the [**IDebugFailureAnalysis2**
 
 [**FA\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/jj991808)
 
- 
+ 
 
- 
+ 
 
 
 

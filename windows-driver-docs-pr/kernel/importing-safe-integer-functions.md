@@ -23,9 +23,9 @@ Include the header file, as shown.
 #include <ntintsafe.h>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

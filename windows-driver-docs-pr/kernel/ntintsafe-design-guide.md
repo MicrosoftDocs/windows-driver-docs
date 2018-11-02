@@ -29,9 +29,9 @@ The ntintsafe library has two categories of functions:
 
 [Importing Kernel-Mode Safe Integer Functions](importing-safe-integer-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

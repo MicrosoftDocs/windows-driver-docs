@@ -33,9 +33,9 @@ To prevent lower drivers from receiving an unequal amount of create-file and clo
 
 In situations where the driver cannot forward a create-file request, the driver can still generate a new create-file request for lower drivers by calling the [**IWDFDevice::CreateWdfFile**](https://msdn.microsoft.com/library/windows/hardware/ff558828) method to create a new WDF file. The driver can then complete the original create-file request based on the results of the newly generated create-file request (that is, from the results of **CreateWdfFile**).
 
- 
+ 
 
- 
+ 
 
 
 

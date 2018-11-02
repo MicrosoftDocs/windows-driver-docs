@@ -26,9 +26,9 @@ where *Value1* and *Value2* are [numeric values](numeric-values.md). For example
 *CursorOrigin: PAIR(120, 100)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

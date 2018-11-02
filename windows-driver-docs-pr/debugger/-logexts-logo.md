@@ -52,7 +52,7 @@ Specifies the output type. Three types of Logger output are possible: messages s
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +88,9 @@ To disable verbose logging, you would use the following command:
 
 Text file and .lgv files will be placed in the current output directory. To read an .lgv file, use LogViewer.
 
- 
+ 
 
- 
+ 
 
 
 

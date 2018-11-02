@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT32 elements. The array must contain 1 or
 |------------|----------------------------------------------------------|
 | UINT32\[\] | An array of UINT32 elements that specifies power levels. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

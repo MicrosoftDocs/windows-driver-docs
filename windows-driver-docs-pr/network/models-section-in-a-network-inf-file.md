@@ -34,9 +34,9 @@ The *hw-id* for a network software component should consist of a provider name, 
 
 A *provider name* identifies the provider of the INF file. A *manufacturer name* identifies the manufacturer of the software component. The *product name* identifies the software component.
 
- 
+ 
 
- 
+ 
 
 
 

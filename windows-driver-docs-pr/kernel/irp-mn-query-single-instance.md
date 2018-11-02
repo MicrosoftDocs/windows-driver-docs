@@ -128,9 +128,9 @@ Requirements
 
 [**WNODE\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff566377)
 
- 
+ 
 
- 
+ 
 
 
 

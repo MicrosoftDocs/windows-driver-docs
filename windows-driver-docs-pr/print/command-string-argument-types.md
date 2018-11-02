@@ -75,12 +75,12 @@ The following table lists all the argument type specifiers.
 </tr>
 <tr class="odd">
 <td><p>%v</p></td>
-<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable's value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
+<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable&#39;s value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 You can specify a range of acceptable values for any argument. To do so, include the argument's minimum and maximum values by placing them inside a set of square brackets ( \[, \] ), immediately following the argument type specifier, and separating the values by a comma. For example, the following command specifies 0 through 255 as an acceptable range for the value of LinefeedSpacing/2:
 
@@ -88,9 +88,9 @@ You can specify a range of acceptable values for any argument. To do so, include
 *Command:CmdSetLineSpacing{*Cmd:"<1B>3"%c[0,255]{(LinefeedSpacing/2)}}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

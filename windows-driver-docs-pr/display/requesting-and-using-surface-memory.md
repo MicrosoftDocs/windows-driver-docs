@@ -24,15 +24,15 @@ The user-mode display driver calls the [**pfnAllocateCb**](https://msdn.microsof
 
 **Note**   The user-mode display driver must call the **pfnAllocateCb** function once for each shared surface for each device. For example, if device 1 creates a shared surface that is also used by devices 2, 3, and 4, then devices 2, 3, and 4 must also call **pfnAllocateCb** once for the shared surface in order to retrieve the allocation handle.
 
- 
+ 
 
 The user-mode display driver must track each surface to each allocation handle, typically, by maintaining a surface-to-allocation handle table. The user-mode display driver should store each allocation handle within the driver-defined resource object.
 
 When the Direct3D runtime performs an operation on a previously allocated surface (for example, in a call to the user-mode display driver's [**Blt**](https://msdn.microsoft.com/library/windows/hardware/ff538251) function), the user-mode display driver receives the handle to the resource, possibly with a surface index. The user-mode display driver uses this resource handle to retrieve the driver-defined resource object. The driver obtains the allocation handles that are stored in the resource object and assembles them in the command buffer. The user-mode display driver uses the allocation handles that correspond to the surfaces when calling the [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) function to submit a command buffer to the display miniport driver. The display miniport driver can call the [**DxgkCbGetHandleData**](https://msdn.microsoft.com/library/windows/hardware/ff559515) function to determine to which surface allocations the user-mode display driver refers.
 
- 
+ 
 
- 
+ 
 
 
 

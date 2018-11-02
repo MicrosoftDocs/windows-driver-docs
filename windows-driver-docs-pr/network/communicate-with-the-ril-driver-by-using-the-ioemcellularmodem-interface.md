@@ -36,7 +36,7 @@ This code shows retrieving the [IOemCellular](https://msdn.microsoft.com/library
                                 nullptr, _countof(query), query);
     ...
 ```
-This code shows registering a pointer to [IOemCellularModemExistenceChange](https://msdn.microsoft.com/library/windows/hardware/dn946688) by using [IOemCellular::RegisterForOemModemExistenceChanges]()https://msdn.microsoft.com/library/windows/hardware/dn931023). In the code below, this is a pointer to **CModems** which provides the IOemCellularModemExistenceChange interface.
+This code shows registering a pointer to [IOemCellularModemExistenceChange](https://msdn.microsoft.com/library/windows/hardware/dn946688) by using [IOemCellular::RegisterForOemModemExistenceChanges]()<https://msdn.microsoft.com/library/windows/hardware/dn931023>). In the code below, this is a pointer to **CModems** which provides the IOemCellularModemExistenceChange interface.
 
 ```c++
     HRESULT hr;

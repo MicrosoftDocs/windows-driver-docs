@@ -24,9 +24,9 @@ If the wave format supports more than two channels, the [**WAVEFORMATEX**](https
 
 **sizeof**([**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)) - **sizeof**([**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799))
 
- 
+ 
 
- 
+ 
 
 
 

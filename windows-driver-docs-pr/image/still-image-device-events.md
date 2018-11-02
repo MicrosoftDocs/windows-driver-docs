@@ -62,7 +62,7 @@ Still image device events are represented by GUIDs. In *sti.h*, Microsoft define
 </tbody>
 </table>
 
- 
+ 
 
 Developers of user-mode minidrivers should use these predefined event GUIDs whenever possible. If these GUIDs are not appropriate, GUIDs for device-specific events must be defined.
 
@@ -82,9 +82,9 @@ If a driver supports asynchronous notification of events, the event monitor call
 
 If polling is required, the event monitor calls [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) to poll the driver, which must in turn poll the device and return results in an [**STI\_DEVICE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff548369) structure.
 
- 
+ 
 
- 
+ 
 
 
 

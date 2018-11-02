@@ -80,9 +80,9 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

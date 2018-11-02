@@ -55,14 +55,14 @@ The following table describes the constant that is valid with the WIA\_DPS\_PAGE
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   If duplex mode is enabled (that is, the [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](wia-dps-document-handling-select.md) property is set to FEEDER | DUPLEX), WIA\_DPS\_PAGES is still equal to the number of pages to scan.
 One sheet of paper will automatically contain two pages if DUPLEX is enabled, even if the back side of the page is blank.
 
 If you set WIA\_DPS\_PAGES to 1, the scanner will process one of the sides of the page. If a scanner is unable to scan only one side of a page while in duplex mode, you should change the WIA\_DPS\_PAGES value for the **Inc** member of the [**WIA\_PROPERTY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552751) structure to 2. This value signals to the application that it must request pages in multiples of two. If WIA\_DPS\_PAGES is zero, the scanner will scan *all* pages that are currently loaded into the document feeder.
 
- 
+ 
 
 Requirements
 ------------
@@ -93,9 +93,9 @@ Requirements
 
 [**WIA\_PROPERTY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552751)
 
- 
+ 
 
- 
+ 
 
 
 

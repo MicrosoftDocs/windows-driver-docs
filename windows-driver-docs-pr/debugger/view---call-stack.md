@@ -20,9 +20,9 @@ This command is equivalent to pressing ALT+6 or clicking the **Call stack (Alt+6
 
 For more information about this window and its uses, see [Calls Window](calls-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

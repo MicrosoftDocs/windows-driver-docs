@@ -26,9 +26,9 @@ Remarks
 
 This bug check occurs when there is an error in the system management interrupt (SMI) code, and an SMI interrupts an NMI and enables interrupts. Execution then continues with NMIs enabled, and another NMI interrupts the NMI in progress.
 
- 
+ 
 
- 
+ 
 
 
 

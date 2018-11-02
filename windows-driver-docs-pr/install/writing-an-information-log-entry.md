@@ -41,9 +41,9 @@ If the TXTLOG_VENDOR event category is enabled and the TXTLOG_DETAILS event leve
      2005/02/13 22:06:28.109:    :  Variable of interest: Abc = 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

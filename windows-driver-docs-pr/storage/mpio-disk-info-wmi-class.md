@@ -42,9 +42,9 @@ class MPIO_DISK_INFO
 
 When compiled by the WMI tool suite, this class definition produces the [**MPIO\_DISK\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff562367) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

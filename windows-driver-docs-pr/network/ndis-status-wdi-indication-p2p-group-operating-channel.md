@@ -26,7 +26,7 @@ For a Wi-Fi Direct GO port, this must be indicated during [OID\_WDI\_TASK\_START
 | [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://msdn.microsoft.com/library/windows/hardware/dn897869)                    |                                |          | The operating channel the given Wi-Fi Direct port is operating on. |
 | [**WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897867) |                                |          | The reason for sending the indication.                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -52,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

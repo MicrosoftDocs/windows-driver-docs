@@ -64,36 +64,36 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Systemwide settings (&quot;Registry&quot;)</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\\<strong>GlobalFlag</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Program-specific settings (&quot;Image file&quot;) for all users of the computer.</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>GlobalFlag</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Silent exit settings for a specific program (&quot;Silent Process Exit&quot;) for all users of the computer.</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\\<em>ImageFileName</em></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit&lt;em&gt;ImageFileName</em></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Page heap options for an image file for all users of the computer</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>PageHeapFlags</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;PageHeapFlags</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>User mode stack trace database size (<strong>tracedb</strong>)</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>StackTraceDatabaseSizeInMb</strong></p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;StackTraceDatabaseSizeInMb</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create user mode stack trace database (ust, 0x1000) for an image file</p></td>
-<td align="left"><p>Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<strong>USTEnabled</strong>).</p></td>
+<td align="left"><p>Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;strong&gt;USTEnabled</strong>).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Load image using large pages if possible</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>UseLargePages</strong>.</p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;UseLargePages</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Special Pool</p>
 <p>(Kernel Special Pool Tag)</p></td>
-<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\\<strong>PoolTag</strong></p></td>
+<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management&lt;strong&gt;PoolTag</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Verify Start / Verify End</p></td>
@@ -101,20 +101,20 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 </tr>
 <tr class="even">
 <td align="left"><p>Debugger for an image file</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>Debugger</strong></p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;Debugger</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Object Reference Tracing</p></td>
-<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\\<strong>ObTraceProcessName</strong>, <strong>ObTracePermanent</strong> and <strong>ObTracePoolTags</strong></p></td>
+<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel&lt;strong&gt;ObTraceProcessName</strong>, <strong>ObTracePermanent</strong> and <strong>ObTracePoolTags</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

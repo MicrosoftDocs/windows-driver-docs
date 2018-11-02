@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 
 This topic describes how to sign a driver using attestation signing.
- 
+ 
 
 > [!Note]  
 > Attestation signing has the following properties.
@@ -19,7 +19,7 @@ This topic describes how to sign a driver using attestation signing.
 > -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
 > -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
 > -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
- 
+ 
 
 ## Attestation signing a kernel mode driver
 
@@ -136,7 +136,7 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 C:\Echo\Echo.Inf
 C:\Echo\Echo.Sys
 ```
- 
+ 
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
@@ -173,16 +173,16 @@ C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http:
 > [!IMPORTANT]  
 > Remember to use industry best practices to manage the security of the EV code signing process.
 
- 
+ 
 
 ## Submit the EV signed Cab file using the Hardware Dev Center dashboard
 
 
 1. Submit the EV signed CAB file using the Hardware Dev Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
 
-  * As part of the submission process, you must specify whether you are submitting [universal drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
+   * As part of the submission process, you must specify whether you are submitting [universal drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
 
-  * The following screen shot shows the options for submitting the echo driver for signing.
+   * The following screen shot shows the options for submitting the echo driver for signing.
     ![a screenshot showing the options for submitting the echo driver for signing](images/attestation-driver-signing-submission-dashboard.png)
 
 2. When the signing process is complete, download your signed driver from the hardware dashboard.
@@ -267,7 +267,7 @@ C:\DriverFiles\DriverPackage2\Driver2.inf
 
 You can follow these steps to sign, submit and test the other driver files you wish to submit.
 
- 
+ 
 
- 
+ 
 

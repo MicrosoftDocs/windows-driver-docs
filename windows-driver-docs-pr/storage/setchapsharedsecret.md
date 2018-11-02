@@ -21,9 +21,9 @@ The **SetCHAPSharedSecret** WMI method belongs to the unpublished [MSiSCSI\_Oper
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support **SetCHAPSharedSecret**.
 
- 
+ 
 
- 
+ 
 
 
 

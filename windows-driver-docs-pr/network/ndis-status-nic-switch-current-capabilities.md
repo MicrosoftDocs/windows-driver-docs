@@ -70,9 +70,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES](oid-nic-switch-current-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

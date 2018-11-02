@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\***DriverName*. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. A driver can store global driver-defined data under its key in the **Services** tree. Information that is stored under this key is available to the driver during its initialization.
+The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\**<em>DriverName</em>. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. A driver can store global driver-defined data under its key in the **Services** tree. Information that is stored under this key is available to the driver during its initialization.
 
 The following keys and value entries are of particular interest:
 
@@ -25,9 +25,9 @@ A key that is used to store driver-specific data. For some types of drivers, the
 <a href="" id="performance"></a>**Performance**  
 A key that specifies information for optional performance monitoring. The values under this key specify the name of the driver's performance DLL and the names of certain exported functions in that DLL. You can add value entries to this subkey using **AddReg** entries in the driver's INF file.
 
- 
+ 
 
- 
+ 
 
 
 

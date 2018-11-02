@@ -53,7 +53,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!exca** extension is only available for an x86-based target computer.
 
@@ -61,9 +61,9 @@ The **!exca** extension is only available for an x86-based target computer.
 
 The [**!cbreg**](-cbreg.md) extension can be used to display CardBus Socket registers and CardBus ExCA registers by address.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ The following sections discuss the layout of command and vertex buffers and desc
 
 [Accelerated State Management](accelerated-state-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

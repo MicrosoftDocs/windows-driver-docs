@@ -16,7 +16,7 @@ This section describes the time travel navigation commands.
 ## </span><span id="P"></span> p- (Step Back)
 
 The *p-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step. You can invoke this command using the **Step Over Back**  button on the **Home** ribbon in WinDbg Preview.
- 
+ 
 
 ## </span><span id="T"></span> t- (Trace Back)
 

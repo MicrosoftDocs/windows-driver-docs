@@ -25,9 +25,9 @@ This section includes:
 
 [Incoming Request to Drop a Party from a Multipoint Call](incoming-request-to-drop-a-party-from-a-multipoint-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

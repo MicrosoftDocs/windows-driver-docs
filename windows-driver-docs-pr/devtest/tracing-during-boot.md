@@ -35,9 +35,9 @@ This section describes the following methods of tracing during boot:
 
 When using the Global Logger trace session, be sure that you are aware of its limitations. For information, see Limitations of the Global Logger trace session.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ All [GPD file entries](gpd-file-entries.md) contain a value specification. The G
 
 [Rectangles](rectangles.md)
 
- 
+ 
 
- 
+ 
 
 
 

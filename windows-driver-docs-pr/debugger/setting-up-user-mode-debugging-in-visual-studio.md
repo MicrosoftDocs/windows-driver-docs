@@ -38,9 +38,9 @@ You can do the rest of the configuration from the host computer:
 6.  To the right of **Configure Target Computer**, click the **Configure** button. The **Configure Target Computer** dialog box opens and displays the configuration progress.
 7.  When the configuration is complete, in the **Configure Computers** dialog box, click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

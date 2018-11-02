@@ -85,7 +85,7 @@ The buffer of data to write.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -97,9 +97,9 @@ In case of errors, the transmission will be terminated with the appropriate stat
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

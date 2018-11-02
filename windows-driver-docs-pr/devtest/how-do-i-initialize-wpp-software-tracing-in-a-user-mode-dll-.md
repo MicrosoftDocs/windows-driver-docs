@@ -26,9 +26,9 @@ To avoid errors, use the following method.
 
 You cannot initialize WPP software tracing in a **DllMain** function on Microsoft Windows 2000. Because WPP runs as part of a service on Windows 2000, initializing software tracing generates a remote procedure call, which is prohibited during DLL initialization.
 
- 
+ 
 
- 
+ 
 
 
 

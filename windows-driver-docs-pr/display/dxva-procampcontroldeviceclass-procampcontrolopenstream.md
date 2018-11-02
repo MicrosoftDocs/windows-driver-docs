@@ -58,9 +58,9 @@ The *ProcAmpControlOpenStream* function maps directly to a call to the CreateMoC
 
 [**ProcAmpControlQueryRange**](dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)
 
- 
+ 
 
- 
+ 
 
 
 

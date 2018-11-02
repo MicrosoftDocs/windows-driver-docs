@@ -21,9 +21,9 @@ A WIA camera driver developer can create any of the following three types of dri
 
 [WIA Camera Minidriver](wia-camera-minidriver.md)
 
- 
+ 
 
- 
+ 
 
 
 

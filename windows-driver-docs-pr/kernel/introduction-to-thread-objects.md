@@ -40,9 +40,9 @@ Usually, most drivers execute in the context of the currently running thread, th
 
 FSs (and other drivers) can set up device-dedicated (system-process) threads and/or FSs can use system worker threads if they need a driver-specific thread context in which to execute. Drivers use the kernel-mode **Ps*Xxx*** routines to create processes and/or device-dedicated threads. FSs call **Ex*Xxx*** routines to use system worker threads.
 
- 
+ 
 
- 
+ 
 
 
 

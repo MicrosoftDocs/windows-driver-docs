@@ -24,9 +24,9 @@ Topics in this section include:
 
 [ETW Kernel-Mode Reference](https://msdn.microsoft.com/library/windows/hardware/ff545650)
 
- 
+ 
 
- 
+ 
 
 
 

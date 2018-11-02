@@ -76,9 +76,9 @@ A child device of the display adapter that supplies a video output signal to an 
 <span id="video_output_codec"></span><span id="VIDEO_OUTPUT_CODEC"></span>**video output codec**  
 A hardware encoder/decoder on the display adapter that reads from a primary surface in video memory and places a video signal representation of that surface on one or more of the display adapter's video outputs.
 
- 
+ 
 
- 
+ 
 
 
 

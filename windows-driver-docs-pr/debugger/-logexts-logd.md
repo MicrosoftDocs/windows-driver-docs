@@ -45,7 +45,7 @@ The **!logexts.logd** extension disables logging.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -56,9 +56,9 @@ Remarks
 
 This will cause all API hooks to be removed in an effort to allow the program to run freely. COM hooks are not removed, because they cannot be re-enabled at will.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,7 +16,7 @@ The second level of threading and synchronization is the same as [the third leve
 
 **Note**   In order for some calls to be made under the second level, the **HardwareAccess** flag must be set within the **D3DDDI\_ESCAPEFLAGS** structure that is a member of **DXGKARG\_ESCAPE**. If this flag is not set, then the call will fail.
 
- 
+ 
 
 -   [*DxgkDdiCommitVidPn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_commitvidpn)
 
@@ -44,9 +44,9 @@ The second level of threading and synchronization is the same as [the third leve
 
 -   [*DxgkDdiUpdateActiveVidPnPresentPath*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updateactivevidpnpresentpath)
 
- 
+ 
 
- 
+ 
 
 
 

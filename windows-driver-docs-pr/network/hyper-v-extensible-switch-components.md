@@ -31,9 +31,9 @@ This section includes the following topics that describe the extensible switch c
 
 [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

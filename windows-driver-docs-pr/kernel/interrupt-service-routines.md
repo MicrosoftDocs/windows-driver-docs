@@ -29,9 +29,9 @@ This section contains the following sections:
 
 [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

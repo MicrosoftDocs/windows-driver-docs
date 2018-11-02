@@ -52,9 +52,9 @@ The preceding entry results in the following XML snapshot.
 
 A particular option is marked constrained depending on the supplied configuration and the set of constraints that are defined in the GDL instance data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ The following topics describe examples of how a notify object processes changes 
 
 [Changing Bindings for a Component](changing-bindings-for-a-component.md)
 
- 
+ 
 
- 
+ 
 
 
 

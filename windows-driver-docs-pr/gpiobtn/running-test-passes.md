@@ -39,11 +39,11 @@ Start with the system in laptop mode (keyboard accessible).
 **Note**  
 Repeat these steps for each of distinct ways that the system can be converted into the tablet mode.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -143,9 +143,9 @@ To support unloading, pausing, and restarting the miniport driver, add the [*Min
 
 For more information about pause and restart operations, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ Similarly, when allocating a DMA engine for a capture stream, the [**AllocateRen
 
 The Allocate*Xxx*DmaEngine routines are available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

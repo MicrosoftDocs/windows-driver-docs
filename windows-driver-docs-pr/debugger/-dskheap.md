@@ -51,7 +51,7 @@ Specifies a session. If this parameter is omitted, then the desktop heap informa
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,12 +89,11 @@ kd> !dskheap
 
                 Total Desktop: (    5312 KB -   7 desktops)
 #                 Session ID:  0
-
 ```
 
- 
 
- 
+
+
 
 
 

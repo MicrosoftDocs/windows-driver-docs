@@ -38,9 +38,9 @@ After Windows loads the Windows Sockets switch DLL into an application's process
 
 5.  The switch can create threads to support listening sockets as well as nonblocking connect requests, as described in [Setting Up a SAN Connection](setting-up-a-san-connection.md).
 
- 
+ 
 
- 
+ 
 
 
 

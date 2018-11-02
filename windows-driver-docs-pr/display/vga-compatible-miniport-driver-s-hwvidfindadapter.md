@@ -36,9 +36,9 @@ A VGA-compatible miniport driver's [*HwVidFindAdapter*](https://msdn.microsoft.c
 
 A VGA-compatible miniport driver's emulator access entries specify subsets of its access ranges array for the adapter. The emulator access entries can be and usually are all I/O ports in the mapped access ranges array set up by its [*HwVidFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff567332) function. The access ranges it passes in calls to [**VideoPortSetTrappedEmulatorPorts**](https://msdn.microsoft.com/library/windows/hardware/ff570366), defining the current IOPM and determining the I/O ports that are directly accessible by a full-screen MS-DOS application, specify subsets of the miniport driver's emulator access entries.
 
- 
+ 
 
- 
+ 
 
 
 

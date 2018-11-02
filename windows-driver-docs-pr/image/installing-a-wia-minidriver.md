@@ -21,9 +21,9 @@ This section covers the following topics on the installation of a WIA minidriver
 
 [Installing Scanning Functionality in an MFP with a Single PDO](installing-scanning-functionality-in-an-mfp-with-a-single-pdo.md)
 
- 
+ 
 
- 
+ 
 
 
 

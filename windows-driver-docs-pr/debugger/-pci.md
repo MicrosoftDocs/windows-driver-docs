@@ -101,7 +101,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+
 
 This extension command can only be used with an x86-based target computer.
 
@@ -171,7 +171,7 @@ This example displays the configuration space for segment 1, bus 0, device 1:
 
 ```dbgcmd
 0: kd> !pci 301 1 0 1
- 
+
 PCI Configuration Space (Segment:0001 Bus:00 Device:01 Function:00)
 Common Header:
     00: VendorID       14e4 Broadcom Corporation
@@ -185,7 +185,6 @@ Common Header:
     5c: MsgAddr        2d4bff00
     60: MsgAddrHi      1ae09097
     64: MsData         9891
- 
 ```
 
 To display all devices and buses on valid segments, issue the command **!pci 602 ffff ff**:
@@ -234,9 +233,9 @@ PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
 
- 
 
- 
+
+
 
 
 

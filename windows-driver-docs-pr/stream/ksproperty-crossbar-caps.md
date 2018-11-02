@@ -47,13 +47,13 @@ The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565120)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565120" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565120)"><strong>KSPROPERTY_CROSSBAR_CAPS_S</strong></a></p></td>
 <td><p>Pair of ULONGs</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a pair of ULONGs that specify the number of audio and video input pins on the crossbar, and the number of audio and video output pins on the crossbar.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_CROSSBAR\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565120)
 
- 
+ 
 
- 
+ 
 
 
 

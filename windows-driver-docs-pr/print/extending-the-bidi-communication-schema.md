@@ -21,9 +21,9 @@ The precise definition of the Bidi Extension Framework can be found in the tcpbi
 
 For more information about extending the schema, see [Customizing the Printer Port Monitors](customizing-the-printer-port-monitors.md).
 
- 
+ 
 
- 
+ 
 
 
 

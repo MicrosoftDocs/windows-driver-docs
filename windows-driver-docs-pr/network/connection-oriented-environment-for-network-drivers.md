@@ -22,9 +22,9 @@ Connection-oriented drivers are supported by the [Connection-Oriented NDIS (CoND
 
 For detailed information about the CoNDIS architecture, see [Connection-Oriented Environment](connection-oriented-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ A *comment* can appear anywhere that [non-literal whitespace](gdl-whitespace-cha
 
 The entire comment is treated as non-literal whitespace. The terminating linebreak sequence is not part of the comment. Comments can appear within a nested context, but no contexts are recognized within a comment.
 
- 
+ 
 
- 
+ 
 
 
 

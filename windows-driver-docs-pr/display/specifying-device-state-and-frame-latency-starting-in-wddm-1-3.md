@@ -18,9 +18,9 @@ These reference topics describe how to implement this capability in your user-mo
 -   [**D3DDDI\_FRAMELATENCYESCAPE**](https://msdn.microsoft.com/library/windows/hardware/dn482418)
 -   [**D3DDDI\_ESCAPEFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544541) (new **DeviceStatusQuery** and **ChangeFrameLatency** members)
 
- 
+ 
 
- 
+ 
 
 
 

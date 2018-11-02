@@ -35,9 +35,9 @@ The main difference between the entries that the various SetupAPI logging functi
 
 For information about how to set the *indentation* field to indent the *formatted-message* field, see [Writing Indented Log Entries](writing-indented-log-entries.md).
 
- 
+ 
 
- 
+ 
 
 
 

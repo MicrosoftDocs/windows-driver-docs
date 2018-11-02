@@ -50,7 +50,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +63,9 @@ The **!gle** extension displays the value of [**GetLastError**](https://msdn.mic
 
 In kernel mode, the **!gle** extension work only if the debugger can read the thread environment block (TEB).
 
- 
+ 
 
- 
+ 
 
 
 

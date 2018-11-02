@@ -26,9 +26,9 @@ The Microsoft Plotter Driver (MSPlot) provides the following capabilities:
 
 To provide support for a new HPGL/2-compliant device type, all you need to do is provide a minidriver that describes the device.
 
- 
+ 
 
- 
+ 
 
 
 

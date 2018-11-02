@@ -42,9 +42,9 @@ This section presents the following topics:
 
 [Macro Definitions for Obsolete Functions](macro-definitions-for-obsolete-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

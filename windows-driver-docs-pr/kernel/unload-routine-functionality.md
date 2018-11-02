@@ -20,9 +20,9 @@ Just as the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardwar
 
 A non-PnP driver's *Unload* routine must free device objects and release driver-allocated resources. In short, it must undo the work performed by its corresponding **DriverEntry** and [*Reinitialize*](https://msdn.microsoft.com/library/windows/hardware/ff561022) routines in initializing the driver, its devices, and its resources. See [A Non-PnP Driver's Unload Routine](non-pnp-driver-s-unload-routine.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

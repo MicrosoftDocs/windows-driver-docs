@@ -34,7 +34,7 @@ The Memory window displays data in several columns. The column on the left side 
 
 **Note**   By default, the Memory window displays virtual memory. This type of memory is the only type of memory that is available in user mode. In kernel mode, you can use the **Memory Options** dialog box to display physical memory and other data spaces. The **Memory Options** dialog box is described later in this topic.
 
- 
+ 
 
 In the Memory window, you can do the following:
 
@@ -47,7 +47,7 @@ In the Memory window, you can do the following:
 -   To change the memory location that is being viewed, enter a new address into the address box at the top of the Memory window. Note that the Memory window refreshes its display while you enter an address, so you could get error messages before you have completed typing the address.
     **Note**   The address that you enter into the box is interpreted in the current radix. If the current radix is not 16, you should prefix a hexadecimal address with **0x**. To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command in the Debugger Command window. The display within the Memory window itself is not affected by the current radix.
 
-     
+     
 
 -   To change the data type that the window uses to display memory, use the **Display format** menu in the Memory window toolbar. Supported data types include short words, double words, and quad-words; short, long, and quad integers and unsigned integers; 10-byte, 16-byte, 32-byte, and 64-byte real numbers; ASCII characters; Unicode characters; and hexadecimal bytes. The display of hexadecimal bytes includes ASCII characters as well.
 
@@ -91,17 +91,17 @@ In user mode, only the **Virtual Memory** tab is available.
 
 Each tab enables you to specify the memory that you want to display:
 
--   In the **Virtual Memory** tab, in the **Offset** box, specify the address or offset of the beginning of the memory range that you want to view.
+- In the **Virtual Memory** tab, in the **Offset** box, specify the address or offset of the beginning of the memory range that you want to view.
 
--   In the **Physical Memory** tab, in the **Offset** box, specify the physical address of the beginning of the memory range that you want to view. The Memory window can display only described, cacheable physical memory. If you want to display physical memory that has other attributes, use the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command or the [**!d\***](-db---dc---dd---dp---dq---du---dw.md) extension.
+- In the **Physical Memory** tab, in the **Offset** box, specify the physical address of the beginning of the memory range that you want to view. The Memory window can display only described, cacheable physical memory. If you want to display physical memory that has other attributes, use the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command or the [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extension.
 
--   In the **Bus Data** tab, in the **Bus Data Type** menu, specify the bus data type. Then, use the **Bus number**, **Slot number**, and **Offset** boxes to specify the bus data that you want to view.
+- In the **Bus Data** tab, in the **Bus Data Type** menu, specify the bus data type. Then, use the **Bus number**, **Slot number**, and **Offset** boxes to specify the bus data that you want to view.
 
--   In the **Control Data** tab, use the **Processor** and **Offset** text boxes to specify the control data that you want to view.
+- In the **Control Data** tab, use the **Processor** and **Offset** text boxes to specify the control data that you want to view.
 
--   In the **I/O** tab, in the **Interface Type** menu, specify the I/O interface type. Use the **Bus number**, **Address space**, and **Offset** boxes to specify the data that you want to view.
+- In the **I/O** tab, in the **Interface Type** menu, specify the I/O interface type. Use the **Bus number**, **Address space**, and **Offset** boxes to specify the data that you want to view.
 
--   In the **MSR** tab, in the **MSR** box, specify the model-specific register that you want to view.
+- In the **MSR** tab, in the **MSR** box, specify the model-specific register that you want to view.
 
 Each tab also includes a **Display format** menu. This menu has the same effect as the **Display format** menu in the Memory window.
 
@@ -112,9 +112,9 @@ Click **OK** in the **Memory Options** dialog box to cause your changes to take 
 
 For more information about memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
- 
+ 
 
- 
+ 
 
 
 

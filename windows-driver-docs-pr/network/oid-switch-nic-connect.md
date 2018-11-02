@@ -41,7 +41,7 @@ When it receives the OID set request of OID\_SWITCH\_NIC\_CONNECT, the extension
 
 **Note**  The extension must not issue its own OID set requests of OID\_SWITCH\_NIC\_CONNECT.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -68,7 +68,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -108,9 +108,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

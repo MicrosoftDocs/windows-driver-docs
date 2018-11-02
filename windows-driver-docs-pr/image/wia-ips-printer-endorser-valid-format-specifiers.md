@@ -111,7 +111,7 @@ The following table describes the constants that are valid for the **WIA\_IPS\_P
 </tbody>
 </table>
 
- 
+ 
 
 The special sequence L"$$" means the '$' character.
 
@@ -133,9 +133,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

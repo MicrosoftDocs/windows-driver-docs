@@ -25,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID _RxFreePool(
-   PVOID Buffer,
-   PSZ   FileName,
-   ULONG LineNumber
+   PVOID Buffer,
+   PSZ   FileName,
+   ULONG LineNumber
 );
 ```
 
@@ -88,9 +88,9 @@ Requirements
 
 [**\_RxCheckMemoryBlock**](-rxcheckmemoryblock.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ Required. One of the following string values.
 | Processing | The scanner is currently processing jobs.                    |
 | Stopped    | No jobs can be processed and intervention is needed.         |
 
- 
+ 
 
 ## Child elements
 
@@ -64,10 +64,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>StatusSummary</strong>](statussummary.md)</p></td>
+<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,9 +92,9 @@ You can both extend and subset the allowed values for this element.
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

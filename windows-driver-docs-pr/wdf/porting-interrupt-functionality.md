@@ -19,9 +19,9 @@ The [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff54
 
 For more information about framework interrupt objects, see [Handling Hardware Interrupts](handling-hardware-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

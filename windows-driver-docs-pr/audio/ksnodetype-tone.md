@@ -31,9 +31,9 @@ A KSNODETYPE\_TONE node should support at least one of the following properties:
 
 [**KSPROPERTY\_AUDIO\_BASS\_BOOST**](ksproperty-audio-bass-boost.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The following sections describe the Windows 2000 Kernel Streaming Model:
 
 [Kernel Streaming](kernel-streaming.md)
 
- 
+ 
 
- 
+ 
 
 
 

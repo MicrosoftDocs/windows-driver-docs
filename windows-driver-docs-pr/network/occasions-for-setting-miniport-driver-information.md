@@ -22,9 +22,9 @@ The [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/f
 
 NDIS calls *MiniportOidRequest* or *MiniportCoOidRequest* when a miniport driver's NIC is closed by a protocol's [**NdisCloseAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff561640) call. Such a miniport driver will be requested to update its addressing information.
 
- 
+ 
 
- 
+ 
 
 
 

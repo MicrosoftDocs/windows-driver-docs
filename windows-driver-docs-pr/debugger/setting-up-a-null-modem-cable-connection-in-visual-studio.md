@@ -75,7 +75,7 @@ The following tables show how null-modem cables are wired.
 | 1+6         | 4           | (CD+DSR) - DTR |
 | 5           | 5           | Signal ground  |
 
- 
+ 
 
 ### <span id="25-pin_connector"></span><span id="25-PIN_CONNECTOR"></span>25-pin connector
 
@@ -89,7 +89,7 @@ The following tables show how null-modem cables are wired.
 | 20          | 6           | DTR - DSR     |
 | 7           | 7           | Signal ground |
 
- 
+ 
 
 ### <span id="Signal_Abbreviations"></span><span id="signal_abbreviations"></span><span id="SIGNAL_ABBREVIATIONS"></span>Signal Abbreviations
 
@@ -103,16 +103,16 @@ The following tables show how null-modem cables are wired.
 | DSR          | Data set ready      |
 | CD           | Carrier detect      |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,9 +48,9 @@ Applications can request notification of the occurrences of print queue events b
 
 -   Provide a **FindClosePrinterChangeNotification** function (described in the Windows SDK documentation).
 
- 
+ 
 
- 
+ 
 
 
 

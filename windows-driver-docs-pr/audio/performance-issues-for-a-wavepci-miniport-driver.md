@@ -119,9 +119,9 @@ For some audio devices, wave streams with different attributes (3-D, stereo/mono
 
 The process is reversed when a heavyweight stream is closed. The available pin count might increase by more than one in order to reflect the fact that two or more lightweight streams can be created from the newly freed resources.
 
- 
+ 
 
- 
+ 
 
 
 

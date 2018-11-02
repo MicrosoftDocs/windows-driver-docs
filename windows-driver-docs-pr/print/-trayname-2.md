@@ -68,9 +68,9 @@ Data Type:BIDI\_INT
 
 Description:The amount of capacity remaining in the currently referenced output bin, expressed as a percentage. A full tray has a value of 100, while an empty tray has a value of 0. If the level is not measurable, a value of -1 (indicating an unknown level) should be returned.
 
- 
+ 
 
- 
+ 
 
 
 

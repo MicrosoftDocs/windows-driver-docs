@@ -52,7 +52,7 @@ After the preceding steps are completed successfully, DeviceInterfaceKey returns
 
 -   Calls ZwClose to close any handle created by calling ZwCreateKey
 
- 
+ 
 
 ## <span id="3._set_properties"></span><span id="3._SET_PROPERTIES"></span>3. Set properties
 

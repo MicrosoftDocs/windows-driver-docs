@@ -20,9 +20,9 @@ The call to **NdisCoOidRequest** can complete synchronously or asynchronously. T
 
 ![diagram illustrating setting information in a connection-oriented miniport driver](images/fig5-3.png)
 
- 
+ 
 
- 
+ 
 
 
 

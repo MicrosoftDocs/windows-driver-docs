@@ -24,9 +24,9 @@ If both the **SystemWake** and **DeviceWake** members are nonzero (that is, not 
 
 On non-ACPI hardware, this member always contains zero (**PowerSystemUnspecified**).
 
- 
+ 
 
- 
+ 
 
 
 

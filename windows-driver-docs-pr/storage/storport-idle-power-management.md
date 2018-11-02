@@ -20,9 +20,9 @@ Storport Idle Power Management (IPM) allows the classpnp and disk class drivers 
 
 [IPM Hard Disk Drive Idle Timeout](ipm-hard-disk-drive-idle-timeout.md)
 
- 
+ 
 
- 
+ 
 
 
 

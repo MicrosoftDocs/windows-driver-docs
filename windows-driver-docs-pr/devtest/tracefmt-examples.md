@@ -35,9 +35,9 @@ The following examples demonstrate Tracefmt commands.
 
 [Example 9: Create a TMF file](example-9--creating-a-tmf-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

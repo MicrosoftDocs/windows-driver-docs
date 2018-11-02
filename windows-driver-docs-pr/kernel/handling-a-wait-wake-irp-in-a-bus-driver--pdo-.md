@@ -48,9 +48,9 @@ If the device does not support wake-up, the bus driver (PDO) should proceed as f
 
 2.  Return from the *DispatchPower* routine, passing the value at **Irp-&gt;IoStatus.Status** as its return value.
 
- 
+ 
 
- 
+ 
 
 
 

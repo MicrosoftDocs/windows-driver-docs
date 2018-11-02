@@ -23,9 +23,9 @@ There are three mechanisms for extending WIA image application dialogs. These in
 
 The remainder of this section contains additional information about the [IWiaUIExtension COM interface](iwiauiextension-com-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

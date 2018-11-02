@@ -24,9 +24,9 @@ A device driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardwar
 
 To call any non-ISR critical section, a driver must use the [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302) routine. This routine accepts the address of a *SynchCritSection* routine as input, along with driver-defined context information and an interrupt object pointer. The system uses the interrupt object pointer to determine the DIRQL and spin lock to use with the *SynchCritSection* routine. (The driver previously supplied these values, using the [**IoConnectInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff548371) function's *SpinLock* and *SynchronizeIrql* parameters.)
 
- 
+ 
 
- 
+ 
 
 
 

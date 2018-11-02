@@ -31,9 +31,9 @@ The Defaultwpp.ini file includes the following:
 
 You can use the data types in the Defaultwpp.ini files and create your own custom configuration file that has simple and complex data types. For more information, see [How do you define custom data types?](how-do-you-define-custom-data-types-.md) and [What is the syntax of the complex types definition?](what-is-the-syntax-of-the-complex-types-definition-.md).
 
- 
+ 
 
- 
+ 
 
 
 

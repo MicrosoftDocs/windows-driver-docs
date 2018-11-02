@@ -131,7 +131,7 @@ The traditional INF files continue to be available in the SYSVAD sample.
 ### APO vendor specific tuning parameters and feature configuration
 
 All APO vendor system specific settings, parameters, and tuning values must be installed via an extension INF package. In many cases, this can be performed in a simple manner with the [INF AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In more complex cases, a tuning file can be used.  
- 
+ 
 Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
 
 
@@ -142,14 +142,14 @@ To programmatically launch a UWP Hardware Support App, based on a driver event (
 ### APO and device driver vendor use of the AudioModules API
 
 The Audio Modules API/DDI is designed to standardize the communication transport (but not the protocol) for commands passed between a UWP application or user-mode service to a kernel driver module or DSP processing block. Audio Modules requires a driver implementing the correct DDI to support module enumeration and communication. The commands are passed as binary and interpretation/definition is left up to the creator.  
- 
+ 
 Audio Modules is not currently designed to facilitate direct communication between a UWP app and a SW APO running in the audio engine. 
 
 For more information about audio modules, see [Implementing Audio Module Communication](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication) and [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules).
 
 
 ### APO HWID strings construction  
- 
+ 
 APO Hardware IDs incorporate both standard information and vendor-defined strings. 
 
 They are constructed as follows: 
@@ -178,10 +178,10 @@ To allow the latest driver to be used, be sure and update the date and version, 
 ### APO driver registry key
 
 For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet. 
- 
+ 
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
- 
+ 
 A Windows Service is not strictly required for management of user-mode components like APOs, however, if your design includes an RPC server to facilitate UWP <-> APO communication, we recommend implementing that functionality in a Windows Service that then controls the APO running in the audio engine.  
 
 
@@ -213,7 +213,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 | PropPageExt.dll            | A sample driver extension for a property page.                                    |
 | KeywordDetectorAdapter.dll | A sample keyword detector.                                                        |
 
- 
+ 
 
 ## <span id="Install_and_test_the_driver"></span><span id="install_and_test_the_driver"></span><span id="INSTALL_AND_TEST_THE_DRIVER"></span>Install and test the driver
 
@@ -254,9 +254,9 @@ Complete the following steps to build the sysvad sample for Windows 10 Mobile.
 
 6. After the OS image contains the driver package is running, play a sound clip and validate that the sysvad phone audio sample is functional. You can establish a kernel debugger connection to monitor the sysvad virtual driver on a mobile device.
 
- 
+ 
 
- 
+ 
 
 
 

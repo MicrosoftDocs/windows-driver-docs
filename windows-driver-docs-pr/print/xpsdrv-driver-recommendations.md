@@ -18,9 +18,9 @@ In addition to the [XPSDrv Driver Requirements](xpsdrv-driver-requirements.md), 
 
 -   **Map to public Print Schema keywords.** Whenever possible, you should map all print driver settings and print driver capabilitiesto their equivalent keywords in the public Print Schema. Mapping print driver settings to public Print Schema keywords makes it easier for applications to adopt new features. This mapping also provides better synchronization of printer settings between print drivers and applications and system.
 
- 
+ 
 
- 
+ 
 
 
 

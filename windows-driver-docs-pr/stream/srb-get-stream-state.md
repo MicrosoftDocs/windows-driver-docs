@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The class driver sends this request to get the stream state for this stream. The minidriver enters the stream state in *pSrb*-&gt;**CommandData**.**StreamState**. See [**KSPROPERTY\_CONNECTION\_STATE**](ksproperty-connection-state.md) for a description of stream states.
 
- 
+ 
 
- 
+ 
 
 
 

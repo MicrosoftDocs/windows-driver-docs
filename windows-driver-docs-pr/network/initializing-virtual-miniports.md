@@ -21,7 +21,7 @@ An intermediate driver initializes its virtual miniports after it has successful
 
 **Note**  An intermediate driver is not required to call **NdisIMInitializeDeviceInstanceEx** when it opens an underlying miniport adapter. There does not have to be a one-to-one relationship between virtual miniports and open adapters.
 
- 
+ 
 
 Set the *DriverInstance* parameter of **NdisIMInitializeDeviceInstanceEx** to the device name for the virtual miniport being initialized. The intermediate driver obtains the device name from the **UpperBindings** registry key.
 
@@ -35,9 +35,9 @@ An intermediate driver must operate as a deserialized driver. For more informati
 
 An intermediate driver should verify that the state information it maintains is properly initialized. If the driver requires send-related resources--for example, new [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures for network data that [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) will transmit to the next lower layer--the NET\_BUFFER\_LIST structure pool can be allocated at this time.
 
- 
+ 
 
- 
+ 
 
 
 

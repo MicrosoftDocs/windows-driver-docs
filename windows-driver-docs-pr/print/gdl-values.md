@@ -62,9 +62,9 @@ The following code examples show values that are acceptable to the GDL parser.
 +  not continuation chars, *% this is not a comment  <EndValue:anything>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

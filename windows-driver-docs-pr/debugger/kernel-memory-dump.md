@@ -35,9 +35,9 @@ To suppress missing page error messages when debugging a Kernel Memory Dump, use
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

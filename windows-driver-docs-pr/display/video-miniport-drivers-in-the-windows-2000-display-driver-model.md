@@ -20,9 +20,9 @@ This section describes the role of the video miniport driver, which is part of t
 
 For more information about the differences between the two display driver models, see [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ This section explains how to customize print spooler components. The following t
 
 [Displaying UI in Operating Systems Prior to Windows Vista](displaying-a-ui-in-operating-systems-prior-to-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

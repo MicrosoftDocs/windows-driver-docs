@@ -30,9 +30,9 @@ struct DXVA_COPPDeviceClass : public DXVA_DeviceBaseClass
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

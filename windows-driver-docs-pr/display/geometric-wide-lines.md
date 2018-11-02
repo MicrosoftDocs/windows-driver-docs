@@ -29,9 +29,9 @@ Styling of a geometric wide line is specified by an array of floating-point valu
 
 Styling can be thought of as the driver moving along a path before widening, "erasing" the parts of the path corresponding to the gaps. This breaks the path into many subpaths. The broken path is then widened as if it had no line style, applying end caps and joins as usual. Style arrays can be of odd length. For example, the style array {1.0} causes the driver to draw a line with alternating dashes. The style state (defined as the current distance into the styling array) is provided for the beginning of the first subpath in a path. It is considered to be reset to 0.0 at the beginning of each subsequent subpath, which occurs after any Win32 **MoveToEx** operation.
 
- 
+ 
 
- 
+ 
 
 
 

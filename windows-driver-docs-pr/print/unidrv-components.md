@@ -52,9 +52,9 @@ Optional, printer-specific, [user interface plug-in](user-interface-plug-ins.md)
 <a href="" id="rendering-plug-in"></a>**Rendering Plug-In**  
 Optional, printer-specific, [rendering plug-in](rendering-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

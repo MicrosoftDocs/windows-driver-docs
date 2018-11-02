@@ -32,9 +32,9 @@ The GUIDType simple type is a **xs:string** that is restricted by the following 
 
 The GUIDType XML simple type specifies a GUID that uniquely identifies components within the device metadata package, such as the device's [ExperienceID](experienceid.md), [LanguageNeutralIdentifier](languageneutralidentifier.md), and [ModelID](modelid.md) values.
 
- 
+ 
 
- 
+ 
 
 
 

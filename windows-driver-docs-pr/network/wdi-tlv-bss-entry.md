@@ -38,7 +38,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO**](wdi-tlv-bss-entry-age-info.md)                     |                                | X (Note: This TLV is mandatory if the BSS list is maintained by the IHV component.) | The age information for this BSS entry, including the timestamp of when this entry was most recently discovered.                                                                                                                                                  |
 | [**WDI\_TLV\_P2P\_DISCOVERED\_SERVICE\_ENTRY**](wdi-tlv-p2p-discovered-service-entry.md) | X                              | X                                                                                   | The list of services found on the remote device, including the service information retrieved with a GAS query if the discovery request specified WDI\_P2P\_SERVICE\_DISCOVERY\_TYPE\_SERVICE\_INFORMATION as the discovery type.                                  |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

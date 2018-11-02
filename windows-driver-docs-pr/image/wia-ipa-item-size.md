@@ -40,7 +40,7 @@ If WIA\_IPA\_ITEM\_SIZE is set to zero and TYMED is configured for a file transf
 
 **Note**   In Windows Vista and later versions of the operating system only set the WIA\_IPA\_ITEM\_SIZE property to 0 for the ADF item when automatic document size detection is enabled.
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

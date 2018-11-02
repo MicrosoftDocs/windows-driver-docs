@@ -78,13 +78,13 @@ For more info about these sections, see [CarrierControlSchema schema](https://ms
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
--   [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+- [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
   > [!NOTE]
   > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
   > If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
 
--   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
+- [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
 ### Activation
 
@@ -154,89 +154,89 @@ For more information on SMS notifications, see [Enabling mobile operator notific
 
 Each rule contains the following information:
 
--   **Silent** If this value is true, the message results in a [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event only. If this value is false, the message results in an **SmsMessageReceived** event.
+- **Silent** If this value is true, the message results in a [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event only. If this value is false, the message results in an **SmsMessageReceived** event.
 
--   **Allowed sender** Specifies the reserved sender address from which the notification is permitted to arrive. This number must exactly match the sender number that is received in the SMS message, including the international format.
+- **Allowed sender** Specifies the reserved sender address from which the notification is permitted to arrive. This number must exactly match the sender number that is received in the SMS message, including the international format.
 
--   **Pattern** The regular expression to identify and optionally extract data fields from the text message. This pattern will match all messages from a sender: `[^]*`
+- **Pattern** The regular expression to identify and optionally extract data fields from the text message. This pattern will match all messages from a sender: `[^]*`
 
--   **RuleId** An identifier for this rule, which is passed to the mobile broadband app as part of the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. This identifier enables the app to know which rule caused the SMS to trigger a MobileOperatorNotification event, and can reduce the app’s need to parse the message again.
+- **RuleId** An identifier for this rule, which is passed to the mobile broadband app as part of the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. This identifier enables the app to know which rule caused the SMS to trigger a MobileOperatorNotification event, and can reduce the app’s need to parse the message again.
 
--   **Fields and groups** Each capturing group in the regular expression pattern is tied to a named field. This is used to extract and transform the data into a set of usable values. For example, the first match-group can be tied to the **Usage** field and the second match-group can be tied to the **UsageDataLimit** field. This association indicates that the first value is the current usage information, and the second value is the maximum allowed usage.
+- **Fields and groups** Each capturing group in the regular expression pattern is tied to a named field. This is used to extract and transform the data into a set of usable values. For example, the first match-group can be tied to the **Usage** field and the second match-group can be tied to the **UsageDataLimit** field. This association indicates that the first value is the current usage information, and the second value is the maximum allowed usage.
 
-    -   **Usage, UsagePercentage, UsageOverage, UsageOveragePercentage**: Expresses the current usage as an absolute number, as a percentage of the data limit, as a number in excess of the data limit, or as a percentage in excess of the data limit. Absolute values can reference a group that specifies the unit in which the value is expressed.
+  - **Usage, UsagePercentage, UsageOverage, UsageOveragePercentage**: Expresses the current usage as an absolute number, as a percentage of the data limit, as a number in excess of the data limit, or as a percentage in excess of the data limit. Absolute values can reference a group that specifies the unit in which the value is expressed.
 
-    -   **UsageTimestamp**: The date and time at which the usage field is calculated. This information must be included if any **Usage\*** field is included. The format string contains the following identifiers to express how the substring should be interpreted:
+  - **UsageTimestamp**: The date and time at which the usage field is calculated. This information must be included if any **Usage\\*** field is included. The format string contains the following identifiers to express how the substring should be interpreted:
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th>Identifier</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><p>%d</p></td>
-        <td><p>Day of month as decimal number (01 – 31)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%H</p></td>
-        <td><p>Hour in 24-hour format (00 – 23)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%I</p></td>
-        <td><p>Hour in 12-hour format (01 – 12)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%m</p></td>
-        <td><p>Month as decimal number (01 – 12)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%M</p></td>
-        <td><p>Minute as decimal number (00 – 59)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%S</p></td>
-        <td><p>Second as decimal number (00 – 59)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%y</p></td>
-        <td><p>Year without century, as decimal number (00 – 99)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%Y</p></td>
-        <td><p>Year with century, as decimal number (0000-9999)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%p</p></td>
-        <td><p>AM/PM indicator</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y</p></td>
-        <td><p>Same as above but with no leading zeros</p></td>
-        </tr>
-        </tbody>
-        </table>
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Identifier</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td><p>%d</p></td>
+    <td><p>Day of month as decimal number (01 – 31)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%H</p></td>
+    <td><p>Hour in 24-hour format (00 – 23)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%I</p></td>
+    <td><p>Hour in 12-hour format (01 – 12)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%m</p></td>
+    <td><p>Month as decimal number (01 – 12)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%M</p></td>
+    <td><p>Minute as decimal number (00 – 59)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%S</p></td>
+    <td><p>Second as decimal number (00 – 59)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%y</p></td>
+    <td><p>Year without century, as decimal number (00 – 99)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%Y</p></td>
+    <td><p>Year with century, as decimal number (0000-9999)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%p</p></td>
+    <td><p>AM/PM indicator</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y</p></td>
+    <td><p>Same as above but with no leading zeros</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-         
+         
 
-    -   **DataLimit**: The absolute number of bytes that the user is allowed to use; this includes a group that specifies the unit in which the value is expressed.
+  - **DataLimit**: The absolute number of bytes that the user is allowed to use; this includes a group that specifies the unit in which the value is expressed.
 
-    -   **OverDataLimit, Congested**: Modifies flags that are reported to apps to indicate that the user has exceeded their data limit or that the network is under heavy load.
+  - **OverDataLimit, Congested**: Modifies flags that are reported to apps to indicate that the user has exceeded their data limit or that the network is under heavy load.
 
-    -   **InboundBandwidth, OutboundBandwidth**: If a maximum bandwidth is being imposed by the network, this specifies the groups that represent the value and the units.
+  - **InboundBandwidth, OutboundBandwidth**: If a maximum bandwidth is being imposed by the network, this specifies the groups that represent the value and the units.
 
-    -   **PlanType**: Specifies how the user is charged for future usage.
+  - **PlanType**: Specifies how the user is charged for future usage.
 
 **Caution**  
 Because SMS messages influence Windows behavior, only trusted SMS messages can be consumed. Security is maintained by restricting the sender address. This security method assumes that your network’s SMS Gateway ensures that messages from restricted senders cannot be spoofed.
 
- 
+ 
 
 ### Wi-Fi information
 
@@ -245,7 +245,7 @@ This section lets you provide any number of Wi-Fi network profiles for Windows t
 **Note**  
 One profile can contain multiple SSIDs, if all other settings are the same. If different networks vary in other ways (authentication method, encryption settings, plan, and so on), you must create additional profiles.
 
- 
+ 
 
 When you specify the WLAN section, you must also specify all profiles that should be configured on the computer. If those profiles reference a data plan, the plans section must also be included. The behavior that occurs when this section is processed is as follows:
 
@@ -522,7 +522,7 @@ Provisioning requirements:
 </tbody>
 </table>
 
- 
+ 
 
 ### Permitted combinations
 
@@ -622,7 +622,7 @@ You can define a provisioning XML document by using an **MBNProfile** section.
 **Note**  
 The child elements of **DefaultProfile** are required. See the provisioning XML schema reference for more details.
 
- 
+ 
 
 ### Provision the device to connect automatically to a Wi-Fi network
 
@@ -770,7 +770,7 @@ Optionally, you can specify these directives by using retry counts/intervals and
 **Note**  
 If the radio is successfully cycled on in a **ReregisterToNetwork** but the automatic connection back to the network using the default profile fails, then subsequent retries do not cycle the radio again.
 
- 
+ 
 
 ``` syntax
 <?xml version="1.0"?>
@@ -897,9 +897,9 @@ After you import this module, the following four PowerShell cmdlets are availabl
     Test-ValidProvisioningXml -InputFile <complete path to the input XML file>
     ```
 
- 
+ 
 
- 
+ 
 
 
 

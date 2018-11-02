@@ -27,7 +27,7 @@ warning C28141: The argument causes the IRQ Level to be set below the current IR
 </tbody>
 </table>
 
- 
+ 
 
 A function call that lowers the IRQL at which a caller is executing is being used inappropriately. Typically, the function call lowers the IRQL as part of a more general routine or is intended to raise the caller's IRQL.
 
@@ -47,9 +47,9 @@ KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
 KeLowerIrql(OldIrql);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

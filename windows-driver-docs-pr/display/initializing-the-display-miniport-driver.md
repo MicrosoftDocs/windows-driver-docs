@@ -21,9 +21,9 @@ After the operating system has loaded the display miniport driver, the following
 
 4.  After **DxgkInitialize** returns, **DriverEntry** propagates the return value of **DxgkInitialize** back to the operating system. Display miniport driver writers should make no assumptions about the value that **DxgkInitialize** returns.
 
- 
+ 
 
- 
+ 
 
 
 

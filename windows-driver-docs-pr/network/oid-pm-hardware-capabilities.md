@@ -66,9 +66,9 @@ Requirements
 
 [**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/ff567410)
 
- 
+ 
 
- 
+ 
 
 
 

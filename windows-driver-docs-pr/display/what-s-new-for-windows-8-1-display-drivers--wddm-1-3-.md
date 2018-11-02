@@ -47,9 +47,9 @@ Describes how a user-mode display driver can pass device status and frame latenc
 <span id="Supporting_Path-Independent_Rotation"></span><span id="supporting_path-independent_rotation"></span><span id="SUPPORTING_PATH-INDEPENDENT_ROTATION"></span>[Supporting Path-Independent Rotation](supporting-path-independent-rotation.md)  
 Supported starting with Windows 8.1 Update. Describes how a display miniport driver can support cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 
- 
+ 
 
- 
+ 
 
 
 

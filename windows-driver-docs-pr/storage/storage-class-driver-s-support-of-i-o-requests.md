@@ -32,9 +32,9 @@ The designer of a class driver for an entirely new type of storage device must d
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813)
 
- 
+ 
 
- 
+ 
 
 
 

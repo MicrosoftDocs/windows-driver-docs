@@ -34,9 +34,9 @@ If the user changes one of the component's parameters on one of the custom pages
 
 To apply the change, the network configuration subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method to modify information about the network component in the registry. To configure the component's driver with the modified information, the network configuration subsystem calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547726) method and passes the [**INetCfgPnpReconfigCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547935) interface.
 
- 
+ 
 
- 
+ 
 
 
 

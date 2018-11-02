@@ -32,9 +32,9 @@ This section covers the following topics:
 
 [Design Guidelines for Starting Devices](design-guidelines-for-starting-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

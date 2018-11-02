@@ -81,9 +81,9 @@ Because the sample rates at the GFX filter's input and output pins are the same,
 
 Although a vendor has the option of designing a GFX filter to support different sample rates at its input and output pins, this capability can be expensive in terms of both processing time and the complexity of the GFX implementation. In this case, the GFX filter contains an SRC node ([**KSNODETYPE\_SRC**](https://msdn.microsoft.com/library/windows/hardware/ff537190)) and uses separate buffers for the input and output streams. In addition, the GFX filter must play a more active role in the format negotiation with KMixer to ensure that it can support the requested sample rate.
 
- 
+ 
 
- 
+ 
 
 
 

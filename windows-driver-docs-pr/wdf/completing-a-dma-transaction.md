@@ -56,12 +56,11 @@ if (readComplete) {
         WdfRequestCompleteWithInformation(request, status, bytesTransferred);
     }
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

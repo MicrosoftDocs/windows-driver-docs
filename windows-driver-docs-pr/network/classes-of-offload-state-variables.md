@@ -33,9 +33,9 @@ The host stack provides initial values for delegated variables when it offloads 
 
 For a complete listing of the offload variables for each layer of offload state, see [Offload State Objects](offload-state-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,9 +48,9 @@ For information on the latest supported development boards, see [IoT Device Opti
 
     [Windows Hardware and Driver Developer Community](http://go.microsoft.com/fwlink/p/?linkid=393552)
 
- 
+ 
 
- 
+ 
 
 
 

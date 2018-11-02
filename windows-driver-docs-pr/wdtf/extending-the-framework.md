@@ -35,9 +35,9 @@ The following list describes the three extensibility methods, in order of diffic
 
     This method is the most difficult of the three methods because it requires [COM interface design skills](com-interface-design-skills.md). You must be able to design and implement simple abstractions of your functionality by using a COM-automation interface.
 
- 
+ 
 
- 
+ 
 
 
 

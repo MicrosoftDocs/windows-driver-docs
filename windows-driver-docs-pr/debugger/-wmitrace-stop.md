@@ -49,9 +49,9 @@ After using this extension, you must resume program execution (for example, by u
 
 To start the ETW logger, use [**!wmitrace.start**](-wmitrace-start.md).
 
- 
+ 
 
- 
+ 
 
 
 

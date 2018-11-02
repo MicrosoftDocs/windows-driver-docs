@@ -32,7 +32,7 @@ The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp whe
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_FILETIME</strong>](devprop-type-filetime.md)</p></td>
+<td align="left"><p><a href="devprop-type-filetime.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_FILETIME&lt;/strong&gt;](devprop-type-filetime.md)"><strong>DEVPROP_TYPE_FILETIME</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_Device_FirstInstallDate device property specifies the time stamp whe
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -54,7 +54,7 @@ Windows sets the value of DEVPKEY_Device_FirstInstallDate with the time stamp th
 
 **Note**   Unlike the [**DEVPKEY_Device_InstallDate**](devpkey-device-installdate.md) property, the value of the DEVPKEY_Device_FirstInstallDate property does not change with each successive update of the device driver. For example, a driver that was updated through Windows Update does not change the value of this property,
 
- 
+ 
 
 You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -78,11 +78,11 @@ When specifying **PINNAME\_VIDEO\_CC** pins, use the information listed in the f
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

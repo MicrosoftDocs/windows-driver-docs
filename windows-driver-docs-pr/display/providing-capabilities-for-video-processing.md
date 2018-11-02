@@ -45,9 +45,9 @@ The user-mode display driver returns the number and a list of sub-stream formats
 <span id="D3DDDICAPS_FILTERPROPERTYRANGE_request_type_"></span><span id="d3dddicaps_filterpropertyrange_request_type_"></span><span id="D3DDDICAPS_FILTERPROPERTYRANGE_REQUEST_TYPE_"></span>D3DDDICAPS\_FILTERPROPERTYRANGE request type   
 The user-mode display driver returns a pointer to a [**DXVADDI\_VALUERANGE**](https://msdn.microsoft.com/library/windows/hardware/ff562939) structure that contains the range of allowed values for a particular filter setting on a particular video stream when the D3DDDICAPS\_FILTERPROPERTYRANGE request type is passed. The Direct3D runtime specifies a [**DXVADDI\_QUERYFILTERPROPERTYRANGEINPUT**](https://msdn.microsoft.com/library/windows/hardware/ff562930) structure for the filter setting on a particular video stream in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to.
 
- 
+ 
 
- 
+ 
 
 
 

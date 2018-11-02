@@ -50,9 +50,9 @@ For paired display and video miniport drivers, the video port driver does the ma
 
 Drivers cannot use custom NTSTATUS values for IRPs that can be received in user mode, because only the system-defined values can be translated into Win32 error codes.
 
- 
+ 
 
- 
+ 
 
 
 

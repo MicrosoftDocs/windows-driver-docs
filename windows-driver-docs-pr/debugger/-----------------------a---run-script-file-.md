@@ -59,7 +59,7 @@ Specifies any number of string arguments for the debugger to pass to the script.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -134,7 +134,7 @@ The following table summarizes how you can use these tokens.
 </tbody>
 </table>
 
- 
+ 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, and **$$&gt;&lt;** commands echo the commands contained in the script file and display the output of these commands. The **$$&gt;a&lt;** command does not echo the commands found in the script file, but merely displays their output.
 
@@ -185,6 +185,6 @@ ecx=0021f4ac
 
 In the preceding example, the file name is enclosed in quotation marks because it contains a space, and arguments that contain spaces are enclosed in quotation marks as well. Although a fifth argument seems to be expected by the script, the semicolon terminates the **$$&gt;a&lt;** command after the fourth argument.
 
- 
+ 
 
 

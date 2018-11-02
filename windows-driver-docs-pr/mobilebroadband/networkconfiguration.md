@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MobileBroadbandProfiles](mobilebroadbandprofiles.md)</p></td>
+<td><p><a href="mobilebroadbandprofiles.md" data-raw-source="[MobileBroadbandProfiles](mobilebroadbandprofiles.md)">MobileBroadbandProfiles</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profiles to be used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[AllowStandardUserPinUnlock](allowstandarduserpinunlock.md)</p></td>
+<td><p><a href="allowstandarduserpinunlock.md" data-raw-source="[AllowStandardUserPinUnlock](allowstandarduserpinunlock.md)">AllowStandardUserPinUnlock</a></p></td>
 <td><p>Specifies whether standard users should be allowed to perform PIN unlock operations on their Mobile Broadband SIMs.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +70,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MobileBroadbandInfo](mobilebroadbandinfo.md)</p></td>
-<td><p>The [MobileBroadbandInfo](mobilebroadbandinfo.md) element is the parent element of the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md).</p></td>
+<td><p><a href="mobilebroadbandinfo.md" data-raw-source="[MobileBroadbandInfo](mobilebroadbandinfo.md)">MobileBroadbandInfo</a></p></td>
+<td><p>The <a href="mobilebroadbandinfo.md" data-raw-source="[MobileBroadbandInfo](mobilebroadbandinfo.md)">MobileBroadbandInfo</a> element is the parent element of the <a href="mobilebroadbandinfo-xml-schema.md" data-raw-source="[MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md)">MobileBroadbandInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -102,9 +102,9 @@ There are no attributes.
 
 -   Typically, only users in the Administrators security group are allowed to perform PIN unlock operations on their Mobile Broadband SIMs. However, setting the [AllowStandardUserPinUnlock](allowstandarduserpinunlock.md) element to true allows the mobile operator to specify whether standard users are allowed to perform this function.
 
- 
+ 
 
- 
+ 
 
 
 

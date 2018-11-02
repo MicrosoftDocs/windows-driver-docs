@@ -66,7 +66,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -138,9 +138,9 @@ fd581c38 8042d61c ntoskrnl!KiSwapThread+0xc5
 00001c60 00000000 ntoskrnl!KeWaitForSingleObject+0x1a1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

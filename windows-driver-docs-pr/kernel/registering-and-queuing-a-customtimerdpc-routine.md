@@ -42,7 +42,7 @@ As shown in the previous figure, the call to **KeSetTimer** or **KeSetTimerEx** 
 
     **Note**  The *CustomTimerDpc* routine, like all DPC routines, is called at IRQL = DISPATCH\_LEVEL. While a DPC routine runs, all threads are prevented from running on the same processor. Driver developers should carefully design their *CustomTimerDpc* routines to run for as brief a time as possible.
 
-     
+     
 
 The smallest time interval that can be specified to **KeSetTimer** and **KeSetTimerEx** is approximately ten milliseconds, so a driver can use a *CustomTimerDpc* routine when timing smaller intervals than an [*IoTimer*](https://msdn.microsoft.com/library/windows/hardware/ff550381) routine, which is run once per second, can handle.
 
@@ -50,9 +50,9 @@ Only one instantiation of a particular timer object can be queued at any moment.
 
 Setting up a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine is exactly like setting up a [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine, with an additional step to initialize the timer object. In fact, their prototypes are identical, but *CustomTimerDpc* routine cannot use the two *SystemArgument* pointers declared in its prototype.
 
- 
+ 
 
- 
+ 
 
 
 

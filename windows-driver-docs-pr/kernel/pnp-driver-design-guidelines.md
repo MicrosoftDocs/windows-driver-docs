@@ -42,9 +42,9 @@ To support PnP, a driver must follow these guidelines:
 
 Some drivers are insulated from the details of the PnP and power management by system-supplied port or class drivers. For example, a SCSI port driver insulates a SCSI miniport driver from many of the details of the power and PnP systems, so a SCSI miniport driver does not need to handle power and PnP IRPs directly. For such drivers, see the driver-specific documentation for details of the required PnP support.
 
- 
+ 
 
- 
+ 
 
 
 

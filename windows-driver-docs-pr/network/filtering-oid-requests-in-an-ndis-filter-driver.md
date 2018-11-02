@@ -35,7 +35,7 @@ To forward an OID request to underlying drivers, a filter driver calls the [**Nd
 
 **Note**  Before the driver calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830), the driver must allocate an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure and transfer the request information to the new structure by calling [**NdisAllocateCloneOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff560706).
 
- 
+ 
 
 The forwarded request proceeds the same as a request initiated by a filter driver. For more information, see [Generating OID Requests from an NDIS Filter Driver](generating-oid-requests-from-an-ndis-filter-driver.md).
 
@@ -45,15 +45,15 @@ A filter driver can receive OID requests from overlying drivers when it is in th
 
 **Note**  Like miniport drivers, filter drivers can receive only one OID request at a time. Because NDIS serializes requests that are sent to a filter module, a filter driver cannot be called at *FilterOidRequest* before it completes the previous request.
 
- 
+ 
 
 The following is an example of a filter driver modifying an OID request:
 
 -   A filter driver adds a header. In this case, after the driver receives a response to a query for [OID\_GEN\_MAXIMUM\_FRAME\_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569598) from the underlying drivers, the filter subtracts the size of its header from the response. The driver subtracts its header size because the driver inserts a header in front of each sent packet and removes the header in each received packet.
 
- 
+ 
 
- 
+ 
 
 
 

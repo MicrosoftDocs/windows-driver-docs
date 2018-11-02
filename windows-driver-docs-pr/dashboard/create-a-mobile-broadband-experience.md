@@ -32,7 +32,7 @@ You can also get for more information about service metadata packages and how to
 
 [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx)
 
- 
+ 
 
- 
+ 
 

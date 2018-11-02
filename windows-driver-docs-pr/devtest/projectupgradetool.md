@@ -1,6 +1,6 @@
 ---
 title: ProjectUpgradeTool
-description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 projects (*.vcxproj) and solution files (*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
+description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 projects (*.vcxproj) and solution files (*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
 ms.assetid: DEB7799C-D505-40E6-B2B0-CF774A99B1BE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -9,25 +9,25 @@ ms.localizationpriority: medium
 # ProjectUpgradeTool
 
 
-The ProjectUpgradeTool takes Microsoft Visual Studio 2012 project (\*.vcxproj) and solution files (\*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
+The ProjectUpgradeTool takes Microsoft Visual Studio 2012 project (\*.vcxproj) and solution files (\*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
 
-**Important**  The ProjectUpgradeTool does not change your source files. The tool only converts the project and solutions files. By default, the tool saves a backup copy of the original files.
+**Important**  The ProjectUpgradeTool does not change your source files. The tool only converts the project and solutions files. By default, the tool saves a backup copy of the original files.
 
- 
+
 
 **To upgrade a WDK 8 project or solution to WDK 8.1**
 
 1.  Open a Visual Studio Command Prompt window.
-2.  Type the command **ProjectUpgradeTool** and specify the root (or parent) directory that contains the Windows Driver Kit (WDK) 8 project or solution files that you want to upgrade to the Windows Driver Kit (WDK) 8.1 for Windows 8.1. For example, the following command upgrades all the files in C:\\myDriver directory and subdirectories.
+2.  Type the command **ProjectUpgradeTool** and specify the root (or parent) directory that contains the Windows Driver Kit (WDK) 8 project or solution files that you want to upgrade to the Windows Driver Kit (WDK) 8.1 for Windows 8.1. For example, the following command upgrades all the files in C:\\myDriver directory and subdirectories.
 
     ```
     ProjectUpgradeTool.exe  C:\myDriver
     ```
 
-3.  Open the WDK 8.1 project or solution files using Visual Studio 2013. The tool keeps the original names of the files. The previous versions are saved with the .backup file name extension.
-    **Note**  If you want to be able to build targets for Windows Vista, using Visual Studio 2013 and WDK 8.1, see [What to do if you are unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1](#build-vista-with-wdk-8-1).
+3.  Open the WDK 8.1 project or solution files using Visual Studio 2013. The tool keeps the original names of the files. The previous versions are saved with the .backup file name extension.
+    **Note**  If you want to be able to build targets for Windows Vista, using Visual Studio 2013 and WDK 8.1, see [What to do if you are unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1](#build-vista-with-wdk-8-1).
 
-     
+
 
 ## <span id="ProjectUpgradeTool_Syntax"></span><span id="projectupgradetool_syntax"></span><span id="PROJECTUPGRADETOOL_SYNTAX"></span>ProjectUpgradeTool Syntax
 
@@ -45,8 +45,6 @@ ProjectUpgradeTool.exe  < rootDir >
                           [-InPlaceUpgrade]
                           [-ForceUpgrade]
                           [-KeepObsoleteConfigs]   
-
-             
 ```
 
 <table>
@@ -69,11 +67,11 @@ ProjectUpgradeTool.exe  < rootDir >
 </tr>
 <tr class="even">
 <td align="left"><p><strong>-NoBackup</strong></p></td>
-<td align="left"><p>Tells the ProjectUpgradeTool not to make backup copy of the original project (.vcxproj) or solutions (.sln). When you select this option, the original project and solution files are overwritten and will only work with the WDK for Windows 8.1 and Visual Studio 2013.</p></td>
+<td align="left"><p>Tells the ProjectUpgradeTool not to make backup copy of the original project (.vcxproj) or solutions (.sln). When you select this option, the original project and solution files are overwritten and will only work with the WDK for Windows 8.1 and Visual Studio 2013.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>-NoToolsetUpgrade</strong></p></td>
-<td align="left"><p>Specify the <strong>-NoToolsetUpgrade</strong> option if you do not want to use the WDK 8.1 platform toolset when you specify build configurations for Windows versions prior to Windows 8.1. When you select this option, only the <strong>WinPreRel</strong> configurations will be built using the most recent WDK.</p></td>
+<td align="left"><p>Specify the <strong>-NoToolsetUpgrade</strong> option if you do not want to use the WDK 8.1 platform toolset when you specify build configurations for Windows versions prior to Windows 8.1. When you select this option, only the <strong>WinPreRel</strong> configurations will be built using the most recent WDK.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>-InPlaceUpgrade</strong></p></td>
@@ -85,12 +83,12 @@ ProjectUpgradeTool.exe  < rootDir >
 </tr>
 <tr class="even">
 <td align="left"><p><strong>-KeepObsoleteConfigs</strong></p></td>
-<td align="left"><p>Retains target configurations for operating systems that are no longer supported by the WDK (for example, Windows Vista). However, to build for these obsolete targets, you need to have Visual Studio 2012 and the WDK 8 installed on the computer, in addition to WDK 8.1 and Visual Studio 2013. For example, suppose you want to upgrade the driver project to use the WDK 8.1 for all supported target versions (Windows 7, Windows 8, and Windows 8.1). And you still want to use the same driver project to continue building for Windows Vista. To do that, you upgrade the project file using the <strong>-KeepObsoleteConfigs</strong> option to keep the Windows Vista target configuration in the project. The Windows Vista configuration will continue to use the <strong>WindowsKernelModeDriver8.0</strong> tool set (available in WDK 8), even if you build the project in Visual Studio 2013.</p></td>
+<td align="left"><p>Retains target configurations for operating systems that are no longer supported by the WDK (for example, Windows Vista). However, to build for these obsolete targets, you need to have Visual Studio 2012 and the WDK 8 installed on the computer, in addition to WDK 8.1 and Visual Studio 2013. For example, suppose you want to upgrade the driver project to use the WDK 8.1 for all supported target versions (Windows 7, Windows 8, and Windows 8.1). And you still want to use the same driver project to continue building for Windows Vista. To do that, you upgrade the project file using the <strong>-KeepObsoleteConfigs</strong> option to keep the Windows Vista target configuration in the project. The Windows Vista configuration will continue to use the <strong>WindowsKernelModeDriver8.0</strong> tool set (available in WDK 8), even if you build the project in Visual Studio 2013.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Comments"></span><span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -110,9 +108,9 @@ The platform toolset in the WDK 8 was **WindowsKernelModeDriver8.0**. To fix thi
 
 ### <span id="build_vista_with_WDK_8.1"></span><span id="build_vista_with_wdk_8.1"></span><span id="BUILD_VISTA_WITH_WDK_8.1"></span><a name="build-vista-with-wdk-8-1"></a>What to do if you are unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1
 
-**Issue:** Unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1.
+**Issue:** Unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1.
 
-**Scenario:** You have created a project using the WDK 8 and Visual Studio 2012. You’ve upgraded the project/solution using WDK 8.1 and Visual Studio 2013, using the ProjectUpgradeTool tool. You do this using the following command to preserve the Windows Vista configuration: **ProjectUpgradeTool.exe** *PathToProjectFolder* **-KeepObsoleteConfigs.**
+**Scenario:** You have created a project using the WDK 8 and Visual Studio 2012. You’ve upgraded the project/solution using WDK 8.1 and Visual Studio 2013, using the ProjectUpgradeTool tool. You do this using the following command to preserve the Windows Vista configuration: **ProjectUpgradeTool.exe** *PathToProjectFolder* **-KeepObsoleteConfigs.**
 
 You open the project in WDK 8.1. When you build a Win32 Windows Vista target, you might see the following error message:
 
@@ -210,7 +208,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
       </PropertyGroup>
     ```
 
-    After you make these changes and save the file you can open and build the project in Visual Studio 2013. The project should continue to work with Visual Studio 2012. Note that even after these changes, you still need to have WDK 8 and Visual Studio 2012 installed on the computer.
+    After you make these changes and save the file you can open and build the project in Visual Studio 2013. The project should continue to work with Visual Studio 2012. Note that even after these changes, you still need to have WDK 8 and Visual Studio 2012 installed on the computer.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -219,9 +217,9 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
 
 [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)
 
- 
 
- 
+
+
 
 
 

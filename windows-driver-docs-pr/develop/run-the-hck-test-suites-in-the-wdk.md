@@ -90,7 +90,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 <span id="RunMe"></span><span id="runme"></span><span id="RUNME"></span>
 **Note**  If the test computer is running Windows 7, you need to download and install the [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/p/?linkid=317996) before you can run the HCK Test Suite.
 
- 
+ 
 
 **To run the HCK Test Suite from a Command Prompt window**
 
@@ -110,7 +110,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
     **Note**  The Device.Graphics test suite does not make use of an INF file, however, the **RunMe.cmd** script requires an INF file. You can provide the name of substitute INF file if necessary.
 
-     
+     
 
 ## <span id="HCK_test_suites"></span><span id="hck_test_suites"></span><span id="HCK_TEST_SUITES"></span>HCT Test Suites
 
@@ -142,17 +142,17 @@ Use this test suite for general reliability testing of all device types. You mus
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p>[Device.Fundamentals Reliability Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309665)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309665" data-raw-source="[Device.Fundamentals Reliability Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309665)">Device.Fundamentals Reliability Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p>[DF - PNP (disable and enable) with IO Before and After (Basic)](http://go.microsoft.com/fwlink/p/?linkid=309669)</p>
-<p>[DF - Sleep with IO Before and After (Basic)](http://go.microsoft.com/fwlink/p/?linkid=309670)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309669" data-raw-source="[DF - PNP (disable and enable) with IO Before and After (Basic)](http://go.microsoft.com/fwlink/p/?linkid=309669)">DF - PNP (disable and enable) with IO Before and After (Basic)</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=309670" data-raw-source="[DF - Sleep with IO Before and After (Basic)](http://go.microsoft.com/fwlink/p/?linkid=309670)">DF - Sleep with IO Before and After (Basic)</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="HCK_graphics"></span><span id="hck_graphics"></span><span id="HCK_GRAPHICS"></span>HCK Tests.Basic.Device.Graphics Test Suite
 
@@ -172,16 +172,16 @@ Use this test suite to test graphics adapters or chipsets. You must follow the h
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left">[Graphic Adapter or Chipset Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309671)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=309671" data-raw-source="[Graphic Adapter or Chipset Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309671)">Graphic Adapter or Chipset Testing Prerequisites</a></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left">[Graphic Adapter or Chipset Tests](http://go.microsoft.com/fwlink/p/?linkid=309672)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=309672" data-raw-source="[Graphic Adapter or Chipset Tests](http://go.microsoft.com/fwlink/p/?linkid=309672)">Graphic Adapter or Chipset Tests</a></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="HCK_imaging"></span><span id="hck_imaging"></span><span id="HCK_IMAGING"></span>HCK Tests.Basic.Device.Imaging Test Suite
 
@@ -201,16 +201,16 @@ Use this test suite to test printers. The test suite uses tests that are part of
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p>[Printer Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309674)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309674" data-raw-source="[Printer Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309674)">Printer Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p>[Printer Tests](http://go.microsoft.com/fwlink/p/?linkid=309675)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309675" data-raw-source="[Printer Tests](http://go.microsoft.com/fwlink/p/?linkid=309675)">Printer Tests</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="HCK_CDMA"></span><span id="hck_cdma"></span>HCK Tests.Basic.Device.Network.MobileBroadband.CDMA Test Suite
 
@@ -230,16 +230,16 @@ Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p>[Mobile Broadband Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309676)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309676)">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p>[CDMA Tests](http://go.microsoft.com/fwlink/p/?linkid=309677)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309677" data-raw-source="[CDMA Tests](http://go.microsoft.com/fwlink/p/?linkid=309677)">CDMA Tests</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="HCK_GSM"></span><span id="hck_gsm"></span>HCK Tests.Basic.Device.Network.MobileBroadband.GSM Test Suite
 
@@ -259,16 +259,16 @@ Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines 
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p>[Mobile Broadband Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309676)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309676)">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p>[GSM Tests](http://go.microsoft.com/fwlink/p/?linkid=309678)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309678" data-raw-source="[GSM Tests](http://go.microsoft.com/fwlink/p/?linkid=309678)">GSM Tests</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="HCK_WLAN"></span><span id="hck_wlan"></span>HCK Tests.Basic.Device.Network.WLAN Test Suite
 
@@ -288,16 +288,16 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p>[Wireless LAN (802.11) Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309679)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309679" data-raw-source="[Wireless LAN (802.11) Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=309679)">Wireless LAN (802.11) Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
-<td align="left"><p>[WLAN L1 Tests](http://go.microsoft.com/fwlink/p/?linkid=309680)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=309680" data-raw-source="[WLAN L1 Tests](http://go.microsoft.com/fwlink/p/?linkid=309680)">WLAN L1 Tests</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -309,9 +309,9 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
+ 
 
- 
+ 
 
 
 

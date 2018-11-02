@@ -24,9 +24,9 @@ In addition to registering its base *MiniportXxx* and *ProtocolXxx* functions, a
 
 If an intermediate driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function returns NDIS\_STATUS\_SUCCESS, NDIS and the host stack query the operational characteristics of the offload target. For more information about this query, see [Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities](querying-and-setting-an-intermediate-driver-s-tcp-chimney-offload-capa.md).
 
- 
+ 
 
- 
+ 
 
 
 

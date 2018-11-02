@@ -28,9 +28,9 @@ This command uses the EtlFile parameter to specify the trace log file, mytrace.e
 
 In response, Tracefmt formats the trace messages in the mytrace.etl trace log file by using a TMF file in the c:\\tracing directory. It creates an output file named mytrace.txt and a summary file named mytrace.txt.sum.
 
- 
+ 
 
- 
+ 
 
 
 

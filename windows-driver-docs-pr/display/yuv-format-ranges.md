@@ -22,7 +22,7 @@ Apps can signal user-mode display drivers to take advantage of extended-range \[
 | *extended range*         | \[0, 255\]       | consumer equipment: webcams and point-and-shoot cameras | JFIF standard, and MJPEG video format uses as the default |
 | *studio luminance range* | \[16, 235\]      | professional cameras and video equipment                | ITU BT.601 and BT.709                                     |
 
- 
+ 
 
 Most video produced by the content and broadcast industry is in studio range, while video produced by individual consumers is in extended range. Extended range is also called *full luminance range*.
 
@@ -62,13 +62,13 @@ Before Windows 8.1, Media Foundation only supported studio luminance range, so 
 
 **Note**  WDDM 1.3 and greater user-mode display drivers must support all of these new and changed structures and enumerations.
 
- 
+ 
 
 See [YUV-RGB data range conversions](yuv-rgb-data-range-conversions.md) for details on how to convert between different input RGB and YUV formats.
 
- 
+ 
 
- 
+ 
 
 
 

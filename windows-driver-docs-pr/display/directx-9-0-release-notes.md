@@ -30,9 +30,9 @@ The [Updates for Windows DDK](updates-for-windows-ddk.md) section contains updat
 
 The [Updates for Earlier DirectX DDK Versions](updates-for-earlier-directx-ddk-versions.md) section contains update information that applies to version 9.0 as well as to prior versions.
 
- 
+ 
 
- 
+ 
 
 
 

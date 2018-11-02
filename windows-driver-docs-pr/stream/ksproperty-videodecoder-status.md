@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status information from t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEODECODER_STATUS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566061)</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEODECODER_STATUS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566061)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566061" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_STATUS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566061)"><strong>KSPROPERTY_VIDEODECODER_STATUS_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566061" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_STATUS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566061)"><strong>KSPROPERTY_VIDEODECODER_STATUS_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEODECODER\_STATUS\_S structure that specifies the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEODECODER\_STATUS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566061)
 
- 
+ 
 
- 
+ 
 
 
 

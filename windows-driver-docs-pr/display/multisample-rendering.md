@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 introduces support for multisample rendering with the number of samples per pixel under application control. The **IDirect3DDevice8** interface supports multisampling in both fullscreen and windowed modes of operation. Furthermore, there is sufficient flexibility to support hardware that performs the processing of samples into pixels at the back end (directly out of the frame buffer) or at the front end (via a special flip or blt call).For more information about **IDirect3DDevice8**, see the DirectX 8.0 documentation.
 
- 
+ 
 
- 
+ 
 
 
 

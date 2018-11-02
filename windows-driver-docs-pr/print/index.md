@@ -52,12 +52,12 @@ This section provides information on designing, testing, and debugging printer d
 -   [Print Spooler Components](print-spooler-components.md)
 -   [Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
 
- 
+ 
 ## Related sections
 
 
 -   [Print DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print)
- 
+ 
 
 
 

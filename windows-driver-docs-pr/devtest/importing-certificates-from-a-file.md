@@ -23,9 +23,9 @@ You can create this file by using one of the following methods:
 
 For more information about how to import a certificate from a file to an IEEE 1667-compliant USB storage device, see the **-File** parameter of the [**/Add**](enhstor-add-switch.md) and [**/Replace**](-replace-switch.md) switches of the Enhanced Storage Certificate Management tool.
 
- 
+ 
 
- 
+ 
 
 
 

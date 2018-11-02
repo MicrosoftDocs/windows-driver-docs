@@ -30,11 +30,11 @@ This section describes the members of a generic macroblock control command struc
 
 **Note**   Macroblock control commands are aligned with 16-byte memory boundaries and constructed as packed data structures with single-byte alignment packing.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

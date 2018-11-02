@@ -47,9 +47,9 @@ STDMETHODIMP CWIADevice::Diagnostic(LPSTI_DIAG pBuffer)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

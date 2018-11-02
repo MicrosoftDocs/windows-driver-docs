@@ -32,9 +32,9 @@ This section describes the features that are common to all of these windows:
 
 [Positioning the Windows](positioning-the-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ To report the size and type of acceptable values for a property, the class drive
 
 The class driver may append a list of KSPROPERTY\_MEMBERSHEADER structures to the KSPROPERTY\_DESCRIPTION structure.
 
- 
+ 
 
- 
+ 
 
 
 

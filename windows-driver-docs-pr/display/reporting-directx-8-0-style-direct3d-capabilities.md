@@ -23,9 +23,9 @@ Furthermore, the driver is required to continue to report legacy capability stru
 
 D3DCAPS8 is described in the DirectX 8.0 SDK documentation. The driver should not initialize the **DeviceType** or **AdapterOrdinal** fields. These are initialized to appropriate values by the runtime. The driver should set these fields to zero.
 
- 
+ 
 
- 
+ 
 
 
 

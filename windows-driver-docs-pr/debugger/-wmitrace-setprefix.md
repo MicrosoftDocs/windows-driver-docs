@@ -134,7 +134,7 @@ Each %n variable represents a parameter that is described in the following table
 </tbody>
 </table>
 
- 
+ 
 
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
@@ -189,9 +189,9 @@ The prefix that you set by using this extension command affects only the debugge
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension does not affect them.
 
- 
+ 
 
- 
+ 
 
 
 

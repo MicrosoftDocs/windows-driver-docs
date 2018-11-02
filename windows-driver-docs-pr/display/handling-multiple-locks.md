@@ -15,9 +15,9 @@ A user-mode display driver must not fail a call to its [**LockAsync**](https://m
 
 The user-mode display driver cannot fail a call to its [**UnlockAsync**](https://msdn.microsoft.com/library/windows/hardware/ff570105) function unless the resource that the [**D3DDDIARG\_UNLOCKASYNC**](https://msdn.microsoft.com/library/windows/hardware/ff543395) structure describes was not actually locked by a previous call to the driver's *LockAsync* function. Similarly, the driver cannot fail a call to its [**Unlock**](https://msdn.microsoft.com/library/windows/hardware/ff570104) function unless the resource that the [**D3DDDIARG\_UNLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff543394) structure describes was not actually locked by a previous call to the driver's *Lock* function. In situations in which the resources were not previously locked, *UnlockAsync* and *Unlock* return E\_INVALIDARG.
 
- 
+ 
 
- 
+ 
 
 
 

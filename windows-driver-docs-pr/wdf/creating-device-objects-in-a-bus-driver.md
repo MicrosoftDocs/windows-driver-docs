@@ -59,9 +59,9 @@ After the bus driver has created the device object, it typically calls [**WdfDev
 
 Each bus driver is also the function driver for the bus adapter. Therefore, the driver must also provide an [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function. This callback function creates a functional device object (FDO) for each bus adapter on the system. For more information about creating FDOs, see [Creating Device Objects in a Function Driver](creating-device-objects-in-a-function-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

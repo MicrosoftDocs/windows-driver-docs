@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 The process of creating a [catalog file](catalog-files.md) is the same for test-signing and release-signing a [driver package](driver-packages.md). For more information about this process, see [Creating a Catalog File for Test-Signing a Driver Package](creating-a-catalog-file-for-test-signing-a-driver-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

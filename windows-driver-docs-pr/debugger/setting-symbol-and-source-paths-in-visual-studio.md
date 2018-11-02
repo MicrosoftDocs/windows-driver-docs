@@ -34,9 +34,9 @@ In Visual Studio, in the Debugger Immediate Window, enter the [**.sympath (Set S
 
 In Visual Studio, in the Debugger Immediate Window, enter the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

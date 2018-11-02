@@ -1,6 +1,6 @@
 ---
 title: How to customize camera options with a UWP device app
-description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
+description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
 ms.assetid: 4BA34A3F-3C0D-4DDC-BA0A-E62AE9A6A93A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -9,17 +9,17 @@ ms.localizationpriority: medium
 # How to customize camera options with a UWP device app
 
 
-In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps. This topic introduces the **More options** flyout that's displayed by the CameraCatureUI API, and shows how the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps. This topic introduces the **More options** flyout that's displayed by the CameraCatureUI API, and shows how the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  In Windows 8.1, the built-in camera app does not display a **More options** button and therefore can't display a UWP device app to show more camera options. However, the [CameraCaptureUI class](http://go.microsoft.com/fwlink/p/?LinkId=317985), that's available to all UWP apps, does have a **More options** button and can display UWP device apps from it.
+**Note**  In Windows 8.1, the built-in camera app does not display a **More options** button and therefore can't display a UWP device app to show more camera options. However, the [CameraCaptureUI class](http://go.microsoft.com/fwlink/p/?LinkId=317985), that's available to all UWP apps, does have a **More options** button and can display UWP device apps from it.
 
- 
+
 
 The C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample uses the **DeviceAppPage.xaml** page to demonstrate the UI of a custom flyout for more camera options. The sample also applies camera effects using a camera driver MFT (media foundation transform). For more info about that, see [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
 
-**Note**  The code examples shown in this topic are based on the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample. This sample is also available in JavaScript and C++. Download the samples to see the latest versions of the code.
+**Note**  The code examples shown in this topic are based on the C# version of the [UWP device app for camera](http://go.microsoft.com/fwlink/p/?LinkID=227865) sample. This sample is also available in JavaScript and C++. Download the samples to see the latest versions of the code.
 
- 
+
 
 ## <span id="More_options_for_cameras"></span><span id="more_options_for_cameras"></span><span id="MORE_OPTIONS_FOR_CAMERAS"></span>More options for cameras
 
@@ -102,7 +102,7 @@ Before building your app, you should work with your designers and your marketing
 
 It's important to review the [UWP app flyout guidelines](http://go.microsoft.com/fwlink/p/?LinkId=317078) before designing your custom flyout. The guidelines help ensure that your flyout provides an intuitive experience that is consistent with other UWP apps.
 
-For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
+For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
 
 -   [Guidelines for window sizes and scaling to screens](http://go.microsoft.com/fwlink/p/?LinkId=311830)
 -   [Guidelines for resizing windows to tall and narrow layouts](http://go.microsoft.com/fwlink/p/?LinkId=311831)
@@ -113,9 +113,9 @@ The flyout that displays more camera options is 625 pixels high and 340 pixels w
 
 ![flyout dimensions for more camera options.](images/372776-camera-options-layout.png)
 
-**Note**  If your custom flyout is more than 560 pixels in height, the user may slide or scroll to view parts of the flyout that are above or below the viewable area.
+**Note**  If your custom flyout is more than 560 pixels in height, the user may slide or scroll to view parts of the flyout that are above or below the viewable area.
 
- 
+
 
 ### <span id="Suggested_effects"></span><span id="suggested_effects"></span><span id="SUGGESTED_EFFECTS"></span>Suggested effects
 
@@ -299,7 +299,6 @@ protected void OnEffectSliderValueChanged(object sender, RoutedEventArgs e)
 {
     lcWrapper.UpdateDsp(Convert.ToInt32(slEffect.Value));
 }
-
 ```
 
 ## <span id="Testing_your_app"></span><span id="testing_your_app"></span><span id="TESTING_YOUR_APP"></span>Testing your app
@@ -311,9 +310,9 @@ Before you can test your UWP device app, it must be linked to your camera using 
 
 -   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
-     
+
 
 The following steps build your app and install the device metadata.
 
@@ -326,9 +325,9 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-     
+
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
@@ -341,9 +340,9 @@ The following steps build your app and install the device metadata.
     -   If you have an external camera, simply connect the camera.
     -   If you have an internal camera, refresh the PC in the Devices and Printers folder. Use Device Manager to scan for hardware changes. Windows should read the updated metadata when the device is detected.
 
-**Note**  For info about installing a camera driver MFT, see the Testing section in [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
+**Note**  For info about installing a camera driver MFT, see the Testing section in [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
 
- 
+
 
 ## <span id="Testing_the_samples"></span><span id="testing_the_samples"></span><span id="TESTING_THE_SAMPLES"></span>Testing the samples
 
@@ -356,9 +355,9 @@ To test the camera options experience, first download these samples:
 
 Then, follow the sample testing instructions provided on the [Driver MFT sample](http://go.microsoft.com/fwlink/p/?LinkID=251566) page.
 
- 
 
- 
+
+
 
 
 

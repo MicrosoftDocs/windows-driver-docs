@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements. An array length of 0 is allo
 |-----------|----------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies an SSID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

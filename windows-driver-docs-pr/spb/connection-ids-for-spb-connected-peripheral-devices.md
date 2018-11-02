@@ -40,9 +40,9 @@ User-mode applications cannot open logical connections to SPB-connected peripher
 
 Only one driver can hold an open logical connection to an SPB-connected peripheral device at a time. An attempt by another driver to open a second connection to the same device fails.
 
- 
+ 
 
- 
+ 
 
 
 

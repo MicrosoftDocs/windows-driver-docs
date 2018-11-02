@@ -12,23 +12,23 @@ ms.localizationpriority: medium
 
 These steps along with the Install.cmd script below can help automate the installation of SymProxy to a default IIS installation. You will likely need to adapt these steps to the specific needs of your environment.
 
-1.  Create D:\\SymStore\\Symbols folder.
+1. Create D:\\SymStore\\Symbols folder.
 
-    - Grant Read to Everyone
+   - Grant Read to Everyone
 
-    - Grant Read\\Write to the SymProxy App Pool user account (Domain\\User)
+   - Grant Read\\Write to the SymProxy App Pool user account (Domain\\User)
 
-2.  Share D:\\SymStore\\Symbols as Symbols.
+2. Share D:\\SymStore\\Symbols as Symbols.
 
-    - Grant Read to Everyone (or be more specific)
+   - Grant Read to Everyone (or be more specific)
 
-3.  (Optionally) Create an empty file called index2.txt in D:\\SymStore\\Symbols.
-4.  (Optionally) Create an empty file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. This accepts the EULA for the Microsoft Public Symbol Store.
-5.  Determine the parameters for Install.cmd and run it.
-6.  Configure the clients symbol path using the server name that you created.
-    ```dbgcmd
-    SRV*\\MachineName\Symbols*https://MachineName/Symbols
-    ```
+3. (Optionally) Create an empty file called index2.txt in D:\\SymStore\\Symbols.
+4. (Optionally) Create an empty file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. This accepts the EULA for the Microsoft Public Symbol Store.
+5. Determine the parameters for Install.cmd and run it.
+6. Configure the clients symbol path using the server name that you created.
+   ```dbgcmd
+   SRV*\\MachineName\Symbols*https://MachineName/Symbols
+   ```
 
 The Install.cmd script requires 3 parameters:
 
@@ -138,9 +138,9 @@ Open the Event Viewer and view the Microsoft\\Windows\\SymProxy events.
 
 [Installing SymProxy](installing-symproxy.md)
 
- 
+ 
 
- 
+ 
 
 
 

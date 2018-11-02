@@ -31,7 +31,7 @@ The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://m
 |----------------------------------------------------------------------------|--------------------------------------|
 | [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897799)\[\] | An array of channel mapping entries. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

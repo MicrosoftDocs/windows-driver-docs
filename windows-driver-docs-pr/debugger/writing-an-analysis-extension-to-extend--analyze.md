@@ -33,7 +33,7 @@ The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate i
 
 **Note**  The last line of the metadata file must end with a newline character.
 
- 
+ 
 
 ## <span id="Skeleton_Example"></span><span id="skeleton-example"></span><span id="SKELETON_EXAMPLE"></span>Skeleton Example
 
@@ -100,7 +100,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **Note**  The last line of the metadata file must end with a newline character.
 
-     
+     
 
 3.  Establish a kernel-mode debugging session between a host and target computer.
 
@@ -230,9 +230,9 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 
 [IDebugFAEntryTags](https://msdn.microsoft.com/library/windows/hardware/jj983404)
 
- 
+ 
 
- 
+ 
 
 
 

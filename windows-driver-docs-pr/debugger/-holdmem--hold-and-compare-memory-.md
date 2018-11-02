@@ -68,7 +68,7 @@ Compares the specified range to all saved memory ranges. For more information ab
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,9 +81,9 @@ The **.holdmem** command compares memory ranges byte-for-byte.
 
 If any of the specified memory locations do not exist in the virtual address space, the command returns an error.
 
- 
+ 
 
- 
+ 
 
 
 

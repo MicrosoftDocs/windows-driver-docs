@@ -26,9 +26,9 @@ Every operating system has an implicit or explicit I/O model for handling the fl
 
 In addition to using IRPs to convey traditional I/O requests, the I/O manager works with the PnP and power managers to send IRPs containing PnP and power requests.
 
- 
+ 
 
- 
+ 
 
 
 

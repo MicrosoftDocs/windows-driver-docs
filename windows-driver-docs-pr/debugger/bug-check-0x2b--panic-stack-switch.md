@@ -55,16 +55,16 @@ The PANIC\_STACK\_SWITCH bug check has a value of 0x0000002B. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 This error normally appears when a kernel-mode driver uses too much stack space. It can also appear when serious data corruption occurs in the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

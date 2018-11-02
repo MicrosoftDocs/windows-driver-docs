@@ -24,9 +24,9 @@ Miniport drivers that returned VP\_FLAGS\_PROTECTED in [**VIDEOPARAMETERS**](htt
 
 Miniport drivers of devices that do not have copy protection hardware should simply return NO\_ERROR in the **Status** field of the [**VRP**](https://msdn.microsoft.com/library/windows/hardware/ff570547)'s **StatusBlock**.
 
- 
+ 
 
- 
+ 
 
 
 

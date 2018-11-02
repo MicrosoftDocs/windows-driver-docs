@@ -62,9 +62,9 @@ class ISCSI_PortalInfo
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561557) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

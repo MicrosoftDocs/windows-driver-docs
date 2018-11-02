@@ -29,9 +29,9 @@ If you want your audio device to take advantage of the improvements in audio off
 
 The main client of the WaveRT port driver is the audio engine running in shared mode. For more information about the Windows Vista audio engine, see the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

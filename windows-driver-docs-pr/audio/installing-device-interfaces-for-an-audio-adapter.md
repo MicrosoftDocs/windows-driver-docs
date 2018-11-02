@@ -39,7 +39,7 @@ The following table lists the topology categories that audio adapters are most l
 <tbody>
 <tr class="odd">
 <td align="left"><p>KSCATEGORY_ACOUSTIC_ECHO_CANCEL</p></td>
-<td align="left"><p>An audio device that can perform acoustic echo cancellation (see [DirectSound Capture Effects](directsound-capture-effects.md)) registers itself under this category.</p></td>
+<td align="left"><p>An audio device that can perform acoustic echo cancellation (see <a href="directsound-capture-effects.md" data-raw-source="[DirectSound Capture Effects](directsound-capture-effects.md)">DirectSound Capture Effects</a>) registers itself under this category.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>KSCATEGORY_AUDIO</p></td>
@@ -51,7 +51,7 @@ The following table lists the topology categories that audio adapters are most l
 </tr>
 <tr class="even">
 <td align="left"><p>KSCATEGORY_DATATRANSFORM</p></td>
-<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category (for example, see [Requirements for a GFX Filter Factory](requirements-for-a-gfx-filter-factory.md)).</p></td>
+<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category (for example, see <a href="requirements-for-a-gfx-filter-factory.md" data-raw-source="[Requirements for a GFX Filter Factory](requirements-for-a-gfx-filter-factory.md)">Requirements for a GFX Filter Factory</a>).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KSCATEGORY_MIXER</p></td>
@@ -63,20 +63,20 @@ The following table lists the topology categories that audio adapters are most l
 </tr>
 <tr class="odd">
 <td align="left"><p>KSCATEGORY_SYNTHESIZER</p></td>
-<td align="left"><p>An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)).</p></td>
+<td align="left"><p>An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see <a href="synthesizers-and-wave-sinks.md" data-raw-source="[Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)">Synthesizers and Wave Sinks</a>).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>KSCATEGORY_TOPOLOGY</p></td>
-<td align="left"><p>A device's [Topology miniport driver](topology-miniport-driver.md) registers itself under this category.</p></td>
+<td align="left"><p>A device&#39;s <a href="topology-miniport-driver.md" data-raw-source="[Topology miniport driver](topology-miniport-driver.md)">Topology miniport driver</a> registers itself under this category.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KSCATEGORY_DRM_DESCRAMBLE</p></td>
-<td align="left"><p>An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see [Digital Rights Management](digital-rights-management.md)).</p></td>
+<td align="left"><p>An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see <a href="digital-rights-management.md" data-raw-source="[Digital Rights Management](digital-rights-management.md)">Digital Rights Management</a>).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For a complete list of topology categories, see the KSCATEGORY\_*XXX* GUIDs that are defined in the header files Ks.h and Ksmedia.h.
 
@@ -156,9 +156,9 @@ The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*
 
 For the sake of uniformity, your proprietary driver should assign these same names to its corresponding device interfaces. If your driver supports additional device interfaces that are proprietary, you can invent your own proprietary names for these interfaces. Make sure that the names that the driver uses match those in your INF file. If the strings do not match, system setup will not load the driver.
 
- 
+ 
 
- 
+ 
 
 
 

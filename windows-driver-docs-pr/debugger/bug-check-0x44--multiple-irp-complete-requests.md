@@ -55,7 +55,7 @@ The MULTIPLE\_IRP\_COMPLETE\_REQUESTS bug check has a value of 0x00000044. This 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -69,9 +69,9 @@ This is a tough bug to find because the simplest case -- a driver that attempted
 
 Tracking down which drivers in the system caused the error is difficult, because the trail of the first driver has been covered by the second. However, the driver stack for the current request can be found by examining the device object fields in each of the stack locations.
 
- 
+ 
 
- 
+ 
 
 
 

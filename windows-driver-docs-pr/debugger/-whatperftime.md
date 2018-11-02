@@ -48,7 +48,7 @@ The performance counter clock value.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +62,9 @@ kd> !whatperftime 304589
 3163529 Performance Counter in Standard Time: .004.313s
 ```
 
- 
+ 
 
- 
+ 
 
 
 

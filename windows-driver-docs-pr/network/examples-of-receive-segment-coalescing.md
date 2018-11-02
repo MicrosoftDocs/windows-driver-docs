@@ -49,7 +49,7 @@ The 6th segment is a duplicate ACK segment with a TCP SACK option and generates 
 
 **Note**  In this case, the exception rule for handling a TCP option takes precedence and thus overrides the coalescing rule.
 
- 
+ 
 
 2 successive segments belonging to the same TCP connection are processed. All of the following conditions are true for each:
 
@@ -121,9 +121,9 @@ None of these segments generates an exception.
 
 A single SCU is formed out of the 5 segments. This is indicated as a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) in a single [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388). The SCU.ACK is set to the last SEG.ACK.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -71,9 +71,9 @@ An interrupt handled by the ACPI driver. Upon receipt of an SCI, the ACPI driver
 <a href="" id="service-processor--sp-"></a>Service Processor (SP)  
 A microcontroller, distinct from the main processor(s), which manages platform-specific functions such as monitoring environmental conditions and handling certain error conditions. A service processor is usually a component of the baseboard management controller hardware.
 
- 
+ 
 
- 
+ 
 
 
 

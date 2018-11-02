@@ -40,9 +40,9 @@ The following high-level queries are also available:
 
 [Get RPC Client Call Information](get-rpc-client-call-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

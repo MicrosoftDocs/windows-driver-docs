@@ -31,9 +31,9 @@ The framework supports both general I/O targets and specialized I/O targets:
 
 If the framework provides specialized I/O targets that support your device's data format, your driver should use the specialized I/O targets. Otherwise, the driver should use general I/O targets.
 
- 
+ 
 
- 
+ 
 
 
 

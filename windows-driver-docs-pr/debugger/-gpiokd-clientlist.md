@@ -56,7 +56,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -68,9 +68,9 @@ Gpiokd.dll
 
 [GPIO Extensions](gpio-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

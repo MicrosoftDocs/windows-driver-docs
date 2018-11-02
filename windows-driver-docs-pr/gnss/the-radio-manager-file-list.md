@@ -31,11 +31,11 @@ The following table describes the files that are found in the radio manager DLL.
 | SampleInstanceCollection.cpp | Implementation details for the Sample Instance Collection. Important concepts include: - Radio Instance discovery and retrieval                                                                                                             |
 | RadioMgr\_interface.cpp      | Helper source file to include the MIDL-generated files.                                                                                                                                                                                     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

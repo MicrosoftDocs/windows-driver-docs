@@ -21,9 +21,9 @@ A client system creates a connection to a print server by calling **AddPrinterCo
 
 These functions and the DRIVER\_INFO\_3 structure are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

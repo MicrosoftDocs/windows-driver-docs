@@ -33,7 +33,7 @@ The **X_containerId** XML element is required to be in the &lt;device&gt; sectio
 
 **Note**   This is not a complete UPnP device description document. For more information about UPnP, refer to the [UPnP Device Architecture specification.](http://go.microsoft.com/fwlink/p/?linkid=142402)
 
- 
+ 
 
 ```cpp
 <?xml version="1.0" ?> 
@@ -62,9 +62,9 @@ The **X_containerId** XML element is required to be in the &lt;device&gt; sectio
 
 If the UPnP device description document does not include the **X_containerId** XML element, the Plug and Play (PnP) manager generates a container ID through the device's Unique Device Name (UDN).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -106,11 +106,11 @@ The following template satisfies the conditions.
 
 **Note**   Using [inheritance](gdl-template-inheritance.md), you can further refine and derive variations on a base class without altering any of the previous templates or subverting the intent of the schema that the previous templates established. This feature is another strength of inheritance. Inheritance provides a third party the ability to extend the master schema without changing or violating the master schema.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The material in this section is divided into four major parts:
 
 [Customizing a WIA Driver](customizing-a-wia-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

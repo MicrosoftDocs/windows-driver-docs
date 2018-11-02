@@ -19,7 +19,7 @@ This INF file can be used to install the device on the following versions of Win
 
 **Note**  : This INF file cannot be used with Windows 2000, Windows Server 2003, or any versions of Windows XP that have not been upgraded to at least SP2. Also, a vendor-provided INF file is not necessary for Windows 7 because any USB device that has a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will install as a **Generic Bluetooth Adapter** in Windows 7.
 
- 
+ 
 
 For an explanation of the highlighted sections and directives, see the numbered notes after the following sample:
 
@@ -99,9 +99,9 @@ SourceDisk       = "Windows Vista CD"
 
 We strongly recommend that you run the latest WHQL tests on the device and INF file and publish the INF file package on Windows Update. This ensures that customers can automatically download the INF file from the Internet when they connect their new Bluetooth radio to their computer.
 
- 
+ 
 
- 
+ 
 
 
 

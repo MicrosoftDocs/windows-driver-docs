@@ -58,7 +58,7 @@ Specifies the starting directory for all child processes created by any target p
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -69,9 +69,9 @@ If **.createdir** has never been used, any created process will use its usual de
 
 The **.createdir** setting affects all processes created by [**.create (Create Process)**](-create--create-process-.md). It also affects processes created by WinDbg's [File | Open Executable](file---open-executable.md) menu command, unless the **Start directory** text box is used to override this setting.
 
- 
+ 
 
- 
+ 
 
 
 

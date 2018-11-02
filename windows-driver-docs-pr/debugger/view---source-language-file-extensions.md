@@ -17,9 +17,9 @@ Click **Source language file extensions** on the **View** menu to control the fi
 
 When you click **Source language file extensions**, the **File Extensions for Source Languages** dialog box appears. In this dialog box, you can add or delete file name extensions by inserting the cursor in the **Extensions and languages** box and typing the appropriate information. Make sure that you specify the appropriate programming language for each file name extension. For example, **cxx=C++** indicates that a .cxx file name extension is a source file and that the corresponding programming language of any file that has that extension is C++. Click **OK** to implement your changes, or click **Cancel** to discard any changes.
 
- 
+ 
 
- 
+ 
 
 
 

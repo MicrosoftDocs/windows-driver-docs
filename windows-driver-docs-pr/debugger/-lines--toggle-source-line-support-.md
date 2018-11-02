@@ -58,7 +58,7 @@ Turns source line support on or off. If you do not specify parameters for **.lin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +73,9 @@ You can enable source line support by using the **.lines** command or the [-line
 
 By default, if you do not use the **.lines** command, WinDbg turns on source line support, and console debuggers (KD, CDB, NTSD) turn off the support. For more information about how to change this setting, see [Setting Symbol Options](symbol-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

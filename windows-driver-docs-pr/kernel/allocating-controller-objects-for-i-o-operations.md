@@ -50,9 +50,9 @@ When a *ControllerControl* routine returns **KeepObject**, usually the driver's 
 
 Whenever the *ControllerControl* routine returns **KeepObject**, the routine that completes the IRP must call [**IoFreeController**](https://msdn.microsoft.com/library/windows/hardware/ff549104). Such a driver routine should call **IoFreeController** as soon as possible so that its next device I/O operation can be set up promptly.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,11 +29,11 @@ The granularity of a **KeStallExecutionProcessor** interval is one microsecond.
 
 If the device frequently requires more than 50 microseconds to update state, consider setting up a [device-dedicated thread](device-dedicated-threads.md) in the driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,7 +56,7 @@ If a downstream store is specified, SymChk will make copies of all valid symbol 
 SymChk always searches the downstream store before querying the symbol server. Therefore you should be careful about using a downstream store when someone else is maintaining the symbol store. If you run SymChk once and it finds symbol files, it will copy those to the downstream store. If you then run SymChk again after these files have been altered or deleted on the symbol store, SymChk will not notice this fact, since it will find what it is looking for on the downstream store and look no further.
 
 **Note**   SymChk always uses SymSrv (Symsrv.dll) as its symbol server DLL. On the other hand, the debuggers can choose a symbol server DLL other than SymSrv if one is available. (SymSrv is the symbol server included in the Debugging Tools for Windows package.)
- 
+ 
 
 ### <span id="Using_SymChk_to_determine_whether_symbols_are_private_or_public"></span><span id="using_symchk_to_determine_whether_symbols_are_private_or_public"></span><span id="USING_SYMCHK_TO_DETERMINE_WHETHER_SYMBOLS_ARE_PRIVATE_OR_PUBLIC"></span>Using SymChk to determine whether symbols are private or public
 
@@ -161,7 +161,7 @@ SYMCHK: PASSED + IGNORED files = 4809
 [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md)
 
 
- 
+ 
 
 
 

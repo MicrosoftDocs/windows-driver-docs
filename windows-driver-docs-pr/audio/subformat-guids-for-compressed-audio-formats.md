@@ -19,7 +19,7 @@ The GUIDs for the available compressed audio formats are listed in the following
 
 **Note**   Not all the available formats are supported by the Windows 7 HD audio class driver. The formats supported by Windows 7 are indicated in the tables with an asterisk (\*).
 
- 
+ 
 
 <table>
 <colgroup>
@@ -44,19 +44,19 @@ The GUIDs for the available compressed audio formats are listed in the following
 <td align="left"><p>0x01</p></td>
 <td align="left"><p>00000000-0000-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_WAVEFORMATEX</p></td>
-<td align="left"><p>IEC 60958 PCM*</p></td>
+<td align="left"><p>IEC 60958 PCM<em></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x02</p></td>
 <td align="left"><p>00000092-0000-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_DIGITAL</p></td>
-<td align="left"><p>AC-3*</p></td>
+<td align="left"><p>AC-3</em></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x03</p></td>
 <td align="left"><p>00000003-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_MPEG1</p></td>
-<td align="left"><p>MPEG-1 (Layer1 & 2)</p></td>
+<td align="left"><p>MPEG-1 (Layer1 &amp; 2)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x04</p></td>
@@ -80,13 +80,13 @@ The GUIDs for the available compressed audio formats are listed in the following
 <td align="left"><p>0x07</p></td>
 <td align="left"><p>00000008-0000-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_DTS</p></td>
-<td align="left"><p>Digital Theater Sound (DTS)*</p></td>
+<td align="left"><p>Digital Theater Sound (DTS)<em></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0a</p></td>
 <td align="left"><p>0000000a-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_DIGITAL_PLUS</p></td>
-<td align="left"><p>Dolby Digital Plus*</p></td>
+<td align="left"><p>Dolby Digital Plus</em></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x0f</p></td>
@@ -96,7 +96,7 @@ The GUIDs for the available compressed audio formats are listed in the following
 </tbody>
 </table>
 
- 
+ 
 
 The GUIDs for audio formats that are transmitted in high bit-rate audio sample packets are listed in the following table.
 
@@ -124,18 +124,18 @@ The GUIDs for audio formats that are transmitted in high bit-rate audio sample p
 <td align="left"><p>0x0c</p></td>
 <td align="left"><p>0000000c-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_MLP</p></td>
-<td align="left"><p>MAT(MLP)*- Meridian Lossless Packing (Dolby Digital True HD - 24-bit 196KHz/up to 18M bps, 8 channels)</p></td>
+<td align="left"><p>MAT(MLP)<em>- Meridian Lossless Packing (Dolby Digital True HD - 24-bit 196KHz/up to 18M bps, 8 channels)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0e</p></td>
 <td align="left"><p>00000164-0000-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_WMA_PRO</p></td>
-<td align="left"><p>Windows Media Audio (WMA) Pro*</p></td>
+<td align="left"><p>Windows Media Audio (WMA) Pro</em></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The GUIDs for compressed audio formats that can be implemented by third-party solutions are listed in the following table.
 
@@ -174,7 +174,7 @@ The GUIDs for compressed audio formats that can be implemented by third-party so
 </tbody>
 </table>
 
- 
+ 
 
 The following code example shows how an audio miniport driver defines and initializes a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure for use with an HDMI sink that has a fully functional Dolby Digital Plus decoder. A sink of this type supports transfer rates of 44.1 and 48 KHz.
 
@@ -218,9 +218,9 @@ drDDPlus44.MinimumSampleFrequency = 176400; // 44.1 KHz * 4
 drDDPlus44.MaximumSampleFrequency = 176400;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

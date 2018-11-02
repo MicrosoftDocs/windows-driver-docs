@@ -31,9 +31,9 @@ The following scenarios initiate a call to the display miniport driver's [**Dxgk
 
 -   Terminating the application unexpectedly--for example, through a page fault
 
- 
+ 
 
- 
+ 
 
 
 

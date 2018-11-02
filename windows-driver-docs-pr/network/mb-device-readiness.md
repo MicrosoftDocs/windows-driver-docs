@@ -43,9 +43,9 @@ Miniport drivers can specify that they support emergency call services even in s
 
 For more information about device readiness, see [OID\_WWAN\_READY\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569833).
 
- 
+ 
 
- 
+ 
 
 
 

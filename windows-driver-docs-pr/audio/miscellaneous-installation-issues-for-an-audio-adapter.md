@@ -34,9 +34,9 @@ Listed are the most common installation issues for an audio adapter:
 
 -   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](https://msdn.microsoft.com/library/windows/hardware/ff539263) topic.
 
- 
+ 
 
- 
+ 
 
 
 

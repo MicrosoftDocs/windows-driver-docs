@@ -48,9 +48,9 @@ In each docking location, a placeholder window is also included as a point of re
 
 ![screen shot of the multimon.reg theme](images/theme-multimon.jpg)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Clients can request to be notified of clock state events on a clock by registeri
 
 When a client submits the IOCTL\_KS\_ENABLE\_EVENT request to register for event notification, it submits as a data buffer the structure documented in the **EventData** section of each event reference page.
 
- 
+ 
 
- 
+ 
 
 
 

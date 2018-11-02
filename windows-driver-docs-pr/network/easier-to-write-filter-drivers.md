@@ -28,9 +28,9 @@ When compared to filter intermediate drivers, filter drivers provide the followi
 
 For more information about NDIS 6.0 filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

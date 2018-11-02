@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 **Important**  
 Lpc is now emulated in alpc, use the !alpc extension instead.
 
- 
+ 
 The **!lpc** extension displays information about all local procedure call (LPC) ports and messages in the target system.
 
 ```dbgcmd
@@ -79,7 +79,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -204,9 +204,9 @@ Scanning 225 objects
 Scanning 3 objects
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ When [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardwar
 
 If a miniport driver calls **ScsiPortInitialize** more than once, its **DriverEntry** routine *must propagate thelowest value* returned by **ScsiPortInitialize**. A miniport driver writer cannot make any assumptions about the values returned by **ScsiPortInitialize**.
 
- 
+ 
 
- 
+ 
 
 
 

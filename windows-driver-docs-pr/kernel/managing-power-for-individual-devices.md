@@ -34,9 +34,9 @@ This section covers the following topics related to device power management:
 
 [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ Specifies the address of the MSR.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +64,9 @@ The **rdmsr** command can display MSR's on x86-based, Itanium-based, and x64-bas
 
 [**wrmsr (Write MSR)**](wrmsr--write-msr-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,11 +25,11 @@ The following error codes are used in printer bidirectional communication.
 | ERROR\_BIDI\_STATUS\_WARNING        | The bidi call completed successfully, but there are one or more errors in the individual responses.    |
 | ERROR\_NO\_DATA                     | The bidi schema is unknown.                                                                            |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

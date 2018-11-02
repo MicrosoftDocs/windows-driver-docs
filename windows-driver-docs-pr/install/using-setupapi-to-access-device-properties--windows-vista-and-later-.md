@@ -21,9 +21,9 @@ In Windows Vista and later versions of Windows, the SetupAPI property functions
 
 For information about how to access device properties on Windows Server 2003, Windows XP, and Windows 2000, see [Using SetupAPI and Configuration Manager to Access Device Properties](using-setupapi-and-configuration-manager-to-access-device-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

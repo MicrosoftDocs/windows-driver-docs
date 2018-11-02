@@ -17,9 +17,9 @@ If the driver returns DXGI\_DDI\_PRIMARY\_DRIVER\_FLAG\_NO\_SCANOUT in the [**Cr
 
 If the runtime does not set the DXGI\_DDI\_PRIMARY\_OPTIONAL flag in the **Flags** member of DXGI\_DDI\_PRIMARY\_DESC to notify the driver about the possibility of opting out of using the resource in a flip-style presentation, the driver can still return the DXGI\_DDI\_ERR\_UNSUPPORTED error code along with the DXGI\_DDI\_PRIMARY\_DRIVER\_FLAG\_NO\_SCANOUT flag from a call to [**CreateResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540691). The driver's *CreateResource(D3D10)* passes DXGI\_DDI\_ERR\_UNSUPPORTED in a call to the [**pfnSetErrorCb**](https://msdn.microsoft.com/library/windows/hardware/ff568929) function if the driver cannot scan out such a primary. Returning DXGI\_DDI\_ERR\_UNSUPPORTED along with DXGI\_DDI\_PRIMARY\_DRIVER\_FLAG\_NO\_SCANOUT causes DXGI to interpose a proxy surface in the presentation path, between the back buffers and the primary surface. The proxy surface always matches the primary (scanned-out) surface in terms of size, multisample, and rotation. The first step in this process is for DXGI to determine which of the multisample or rotation settings cause the driver to refuse to scan out a surface with those settings. DXGI makes this determination by scaling back and trying to create a primary without rotation, without multisampling, or without both. After DXGI determines the driver's support for scan-out features, DXGI creates the primary and proxy surfaces, and the driver should be able to flip between these two surfaces. DXGI will still subsequently satisfy an application's requests for auto-rotated or multisampled back buffers by calling the driver's [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function to perform bitblts from back buffers to the proxy surface. These bitblts request the driver to perform multisample resolves or rotates. For more information about *BltDXGI*, see the **BltDXGI** reference page.
 
- 
+ 
 
- 
+ 
 
 
 

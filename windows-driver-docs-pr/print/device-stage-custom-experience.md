@@ -20,9 +20,9 @@ Device Stage experiences are distributed through Microsoft servers to Windows 7 
 
 Device Stage experiences may be distributed with manufacture's setup applications as well.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,9 +67,9 @@ TrackHandles: MULTI_SZ: WDFDEVICE WDFQUEUE
 
 When you enable handle tracking for an object type, the framework tracks the references that are taken on any object of that type. This setting is useful in finding driver memory leaks that unreleased references cause. **TrackHandles** works only if the KMDF verifier is enabled.
 
- 
+ 
 
- 
+ 
 
 
 

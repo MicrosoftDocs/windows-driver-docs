@@ -17,7 +17,7 @@ For all USB devices, the USB bus driver reports a [*device ID*](https://msdn.mic
 
 **Note**  *xxxx* and *yyyy* are taken directly from **idVendor** and **idProduct** fields of the device descriptor, respectively.
 
- 
+ 
 
 The bus driver also reports a compatible identifier (ID) of `USB\COMPOSITE`, if the device meets the following requirements:
 

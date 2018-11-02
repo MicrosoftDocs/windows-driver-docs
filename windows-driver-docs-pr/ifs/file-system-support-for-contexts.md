@@ -33,9 +33,9 @@ To support file contexts, a file system must:
 
 -   Call **FsRtlTeardownPerFileContexts** to free all file context structures that filter and minifilter drivers have associated with a file when the file system deletes its file context structure for the file.
 
- 
+ 
 
- 
+ 
 
 
 

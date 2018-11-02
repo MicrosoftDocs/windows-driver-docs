@@ -19,9 +19,9 @@ GDL has two types of special contexts:
 
 [GDL Arbitrary Value Contexts](gdl-arbitrary-value-contexts.md)
 
- 
+ 
 
- 
+ 
 
 
 

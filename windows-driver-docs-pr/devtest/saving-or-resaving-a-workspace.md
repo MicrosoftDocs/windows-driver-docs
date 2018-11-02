@@ -32,9 +32,9 @@ When you save a workspace, TraceView saves the current configuration of the trac
 
 3.  From the **Saved Workspaces** list, select the name of an existing workspace, and click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

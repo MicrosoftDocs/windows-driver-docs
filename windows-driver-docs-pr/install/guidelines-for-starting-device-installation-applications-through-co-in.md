@@ -31,9 +31,9 @@ The following guidelines must be followed for co-installers which supply [finish
 
 For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
- 
+ 
 
- 
+ 
 
 
 

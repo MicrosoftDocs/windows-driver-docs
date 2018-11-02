@@ -33,9 +33,9 @@ When IRP\_MJ\_DEVICE\_CONTROL is a fast I/O operation, it always uses neither bu
 
 Although IRP\_MJ\_LOCK\_CONTROL can be an IRP-based or fast I/O operation, it has no buffers.
 
- 
+ 
 
- 
+ 
 
 
 

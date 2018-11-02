@@ -60,9 +60,9 @@ A “WindowsMime:WriteTag.” publication is a means for an app to simply write 
 -   The common “\*:WriteTag” requirements described elsewhere apply.
 -   The “WindowsMime.&lt;SomeMimeType&gt;” publication requirements described elsewhere apply to “WindowsMime:WriteTag.&lt;SomeMimeType&gt;” publications.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

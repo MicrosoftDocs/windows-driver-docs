@@ -20,9 +20,9 @@ First, check that the boot options point to the correct path for the other opera
 
 On an x86 computer, you should also verify that boosect.ini exists. This file contains the boot record for the other operating system. To unhide this file, use the **attrib -r -s -h boosect.ini** command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ The DIRTY\_MAPPED\_PAGES\_CONGESTION bug check has a value of 0x000000EB. This i
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -80,9 +80,9 @@ This bug check can occur for any of the following reasons:
 
     If Parameter 3 is small, this is a possibility. Use [**!vm**](-vm.md) and [**!poolused 2**](-poolused.md).
 
- 
+ 
 
- 
+ 
 
 
 

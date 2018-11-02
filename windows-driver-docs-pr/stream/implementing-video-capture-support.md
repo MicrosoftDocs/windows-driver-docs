@@ -28,9 +28,9 @@ The following sections describe the general steps a Stream class minidriver foll
 
 [Capturing Video](capturing-video.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -66,7 +66,7 @@ The following table shows the device stack for a video output that has a connect
 </tbody>
 </table>
 
- 
+ 
 
 User-mode applications use WMI to invoke the services of the monitor class function driver. Those services include exposing a monitor's identification data and (in the case of an ACPI display) setting the brightness of the display.
 
@@ -88,9 +88,9 @@ You can download these standards from [vesa.org](https://vesa.org/vesa-standards
 
 For details about the I²C bus, see the [I²C Bus Specification](https://www.i2c-bus.org/specification/) published by Philips Semiconductors.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ Specifies that the extension should determine if there is enough space for a ful
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +78,9 @@ Page file size: 1572864 KB
 NO: Page file too small
 ```
 
- 
+ 
 
- 
+ 
 
 
 

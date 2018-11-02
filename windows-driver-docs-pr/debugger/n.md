@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 <span id="nonpaged_pool"></span><span id="NONPAGED_POOL"></span>**nonpaged pool**  
 A portion of system memory that will not be paged to disk.
 
- 
+ 
 
- 
+ 
 
 
 

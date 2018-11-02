@@ -93,7 +93,7 @@ The sort commands include:
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="using_the_poolmon_utility_to_find_a_memory_leak"></span><span id="USING_THE_POOLMON_UTILITY_TO_FIND_A_MEMORY_LEAK"></span>Using the PoolMon Utility to Find a Memory Leak
 
@@ -117,9 +117,9 @@ Typically, after an application reaches a stable running state, it allocates mem
 
 After you have determined which pool tag is associated with the leak, this might reveal all you need to know about the leak. If you need to determine which specific instance of the allocation routine is causing the leak, see [Using the Kernel Debugger to Find Kernel-Mode Memory Leaks](using-the-kernel-debugger-to-find-a-kernel-mode-memory-leak.md).
 
- 
+ 
 
- 
+ 
 
 
 

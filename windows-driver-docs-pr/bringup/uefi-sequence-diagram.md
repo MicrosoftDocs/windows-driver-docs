@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 ![sequence diagram](images/efi-usbfn-sequence.png)
 
- 
+ 
 
- 
+ 
 
 
 

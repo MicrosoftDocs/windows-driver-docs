@@ -21,7 +21,7 @@ Either the display miniport driver or ACPI methods that are exposed by the syste
 
 **Note**   In the Windows Display Driver Model (WDDM), an ACPI identifier is not used to identify an integrated display panel. This is different from the [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), which supports only display panels with an identifier of 0x0110.
 
- 
+ 
 
 If either the display miniport driver or BIOS-exposed ACPI methods support brightness controls, the monitor driver registers for ACPI notifications of brightness shortcut keys. No alternative mechanism exists to signal the monitor driver about shortcut key notifications. If the monitor driver cannot use either brightness-control mechanism or if the display miniport driver supplies the [brightness control interface](https://msdn.microsoft.com/library/windows/hardware/ff538260) but fails a call to the [**DxgkDdiGetPossibleBrightness**](https://msdn.microsoft.com/library/windows/hardware/ff559661) function, the monitor driver does not support brightness controls.
 
@@ -96,9 +96,9 @@ For the display miniport driver to support controlling integrated panel brightne
 
 [Supporting Display Output and ACPI Events](supporting-display-output.md)
 
- 
+ 
 
- 
+ 
 
 
 

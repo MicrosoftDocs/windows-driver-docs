@@ -29,9 +29,9 @@ The callback routines provide functionality that a typical function driver needs
 
 A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISCONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff544046) request.
 
- 
+ 
 
- 
+ 
 
 
 

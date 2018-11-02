@@ -46,9 +46,9 @@ Whether using the registry or an .ini file, if any of the trigger, count, or bla
 
 This feature of SymSrv is currently available only when running as a service. This means that the only practical application of this feature is when it is called from SymProxy.
 
- 
+ 
 
- 
+ 
 
 
 

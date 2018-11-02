@@ -41,9 +41,9 @@ The [pixel shader](pixel-shader-stage.md) stage takes one pixel as input and out
 
 The [output merger](output-merger-stage.md) stage performs fixed function render-target blend, depth, and stencil operations.
 
- 
+ 
 
- 
+ 
 
 
 

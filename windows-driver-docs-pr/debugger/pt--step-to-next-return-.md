@@ -74,7 +74,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,9 +95,9 @@ The following example demonstrates using the **pt** command along with the **kb*
 0:000> pt "kb"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

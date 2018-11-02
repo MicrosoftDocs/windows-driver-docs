@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The \*`Type` directive identifies the type of object that a template defines.
 
- 
+ 
 
- 
+ 
 
 
 

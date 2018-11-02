@@ -28,9 +28,9 @@ To successfully install and run starting with Windows 8, a remote display drive
 -   [**DrvResetPDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556276)
 -   [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,7 +24,7 @@ A WOL pattern that is specified with an offset and bitmap.
 
 **Note**  NDIS 6.20 and later versions of NDIS also support the *wake on magic packet* method. This method is separate from the *wake on pattern match* method.
 
- 
+ 
 
 Starting with NDIS 6.20, multiple protocol drivers can set WOL patterns on a network adapter. To ensure that the correct set of WOL patterns is set when the number of requested WOL patterns is higher than the number that the network adapter can support, protocol drivers assign a priority to each WOL pattern. When NDIS cannot add a new high-priority WOL pattern because the network adapter is out of resources, NDIS can delete the lower priority patterns.
 
@@ -32,9 +32,9 @@ For more information about managing WOL patterns, see [Adding and Deleting Wake 
 
 For more information about WOL methods supported in NDIS 6.20 and later versions, see [WOL Methods in NDIS 6.20](introduction-to-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Partners have the ability to create special use applications for things like the
 | [Mobile Broadband](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/index)                                                    | Learn more about mobile broadband and how to configure mobile broadband experiences for your customers.   |
 | [Wi-fi Direct](wi-fi-direct.md) | Learn more about Wi-Fi Direct and the Wi-Fi Direct Services API in Windows. 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 

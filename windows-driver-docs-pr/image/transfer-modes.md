@@ -31,9 +31,9 @@ For devices connected to dedicated ports, such as SCSI or USB bus devices, it is
 
 When a device is opened in data mode, [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) is typically called from within **IStiUSD:Initialize**, independent of the bus type.
 
- 
+ 
 
- 
+ 
 
 
 

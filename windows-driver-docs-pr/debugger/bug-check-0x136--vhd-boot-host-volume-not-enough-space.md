@@ -31,11 +31,11 @@ The VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE bug check has a value of 0x00000
 | 3         | Reserved                                    |
 | 4         | Reserved                                    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

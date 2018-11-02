@@ -56,7 +56,7 @@ The following table summarizes Windows support for platform extensions for x86-b
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to use platform extensions with x86-based systems, see the following sections:
 
@@ -72,11 +72,11 @@ Windows 2000 does not support platform extensions on an [**INF *Models* section*
 
 For sections that support optional platform extensions, Windows selects which section to process, as follows:
 
-1.  Windows checks for a *section-name***.ntx86** section and, if one exists, processes it. Windows checks for the **.ntx86** extension in the INF file that is being processed and in any included INF files (that is, any INF files that are included with **Include** entries).
+1. Windows checks for a <em>section-name</em>**.ntx86** section and, if one exists, processes it. Windows checks for the **.ntx86** extension in the INF file that is being processed and in any included INF files (that is, any INF files that are included with **Include** entries).
 
-2.  If a *section-name***.ntx86** section does not exist, Windows checks for a *section-name***.nt** section in the INF file or any included INF files. If one exists, Windows processes the *section-name***.nt** section.
+2. If a <em>section-name</em>**.ntx86** section does not exist, Windows checks for a <em>section-name</em>**.nt** section in the INF file or any included INF files. If one exists, Windows processes the <em>section-name</em>**.nt** section.
 
-3.  If a *section-name***.nt** section does not exist, Windows processes a *section-name* section that does not include a platform extension.
+3. If a <em>section-name</em>**.nt** section does not exist, Windows processes a *section-name* section that does not include a platform extension.
 
 ### <a href="" id="creating-inf-files-for-x86-based-systems--windows-2000-and-later-"></a> Creating INF Files for x86-Based Systems
 
@@ -119,9 +119,9 @@ For more information about INF file sections and directives, see [Summary of INF
 
 For information about how to create a single cross-platform INF file for all platform types, see [Cross-Platform INF Files](cross-platform-inf-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

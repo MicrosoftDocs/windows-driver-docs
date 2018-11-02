@@ -18,9 +18,9 @@ The ISCSI\_Persistent\_Login class is unpublished and is defined in *Operations.
 
 When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_Persistent\_Login**](https://msdn.microsoft.com/library/windows/hardware/ff561553) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

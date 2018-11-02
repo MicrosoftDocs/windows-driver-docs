@@ -23,9 +23,9 @@ The following topics describe the sections and directives that can appear in INF
 
 For more information about how to create and use INF files, see [Overview of INF Files](overview-of-inf-files.md). For examples of INF files, see the device driver samples that are included in the *src* directory of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

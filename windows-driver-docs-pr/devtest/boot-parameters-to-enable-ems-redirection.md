@@ -27,7 +27,7 @@ When a boot entry is configured for EMS on a computer with BIOS firmware, the bo
 
 To determine whether a computer has ACPI firmware, use Device Manager (devmgmt.msc). In Device Manager, expand the **Computer** node. On computers with ACPI firmware, the name of node under **Computer** includes the word, **ACPI**.
 
- 
+ 
 
 ### <span id="enabling_ems_on_a_computer_without_an_acpi_spcr_table_in_operating_sys"></span><span id="ENABLING_EMS_ON_A_COMPUTER_WITHOUT_AN_ACPI_SPCR_TABLE_IN_OPERATING_SYS"></span>Enabling EMS on a computer without an ACPI SPCR table in operating systems prior to Windows Server 2008
 
@@ -233,11 +233,11 @@ bcdedit /ems off
 
 **Note**   Each boot entry uses a GUID as an identifier. If you do not specify an identifier, the **BCDEdit** command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all the active boot entries, use the **bcdedit /enum** command.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

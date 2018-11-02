@@ -30,9 +30,9 @@ The exception record for the stored event. The type of the exception record is E
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

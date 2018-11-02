@@ -27,13 +27,13 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>NdisStallExecution_Delay</strong>](ndis-ndisstallexecution-delay.md)</p></td>
+<td align="left"><p><a href="ndis-ndisstallexecution-delay.md" data-raw-source="[&lt;strong&gt;NdisStallExecution_Delay&lt;/strong&gt;](ndis-ndisstallexecution-delay.md)"><strong>NdisStallExecution_Delay</strong></a></p></td>
 <td align="left"><p>The NdisStallExecution_Delay rule specifies that <strong>NdisStallExecution</strong> must never be called by using a value for <em>MicrosecondsToStall</em> that is greater than 50 microseconds.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the Warning rule set**
 
@@ -49,9 +49,9 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

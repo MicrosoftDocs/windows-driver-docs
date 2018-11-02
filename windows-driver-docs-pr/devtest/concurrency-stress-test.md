@@ -13,7 +13,7 @@ The Power Framework Delay Fuzzing option randomizes thread schedules to help det
 
 **Note**  This option is available starting with Windows 8.
 
- 
+ 
 
 When the option is selected, Driver Verifier inserts random delays at various points in the threads. The Power Framework Delay Fuzzing option uses an algorithm that provides probabilistic guarantees for finding errors in drivers. Power Framework Delay Fuzzing improves upon traditional stress testing, where the test program is run for days or even weeks in hopes of catching problems in that can occur in concurrent execution.
 
@@ -26,7 +26,7 @@ You can activate the Power Framework Delay Fuzzing feature for one or more drive
 
 **Note**  The Power Framework Delay Fuzzing option increases the probability of race conditions appearing at runtime by inserting randomized delays at various power API function calls. For these delays to be more effective, you can enable this option with other Driver Verifier options. Because of the delays that can be introduced, you can expect the computer to have slower response.
 
- 
+ 
 
 -   **At the command line**
 
@@ -46,9 +46,9 @@ You can activate the Power Framework Delay Fuzzing feature for one or more drive
     4.  Select (check) Power Framework Delay Fuzzing.
     5.  Restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

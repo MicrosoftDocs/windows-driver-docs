@@ -44,9 +44,9 @@ A driver writer uses custom notification with a procedure like the following:
 
     See [Guidelines for Writing PnP Notification Callback Routines](guidelines-for-writing-pnp-notification-callback-routines.md) for general guidelines for notification callback routines. In addition to those guidelines, a custom notification callback routine must not open a handle to a device from within the callback routine thread.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Immediately after the operating system instantiates the GFX filter, it queries t
 
 Similarly, just before it closes a GFX instance, the operating system queries the KSPROPERTY\_AUDIO\_FILTER\_STATE property to obtain the list of property sets to save. Again, the operating system uses KS serialization to review each property in each property set, get each value, and save the value persistently.
 
- 
+ 
 
- 
+ 
 
 
 

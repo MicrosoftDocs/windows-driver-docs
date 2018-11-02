@@ -13,11 +13,11 @@ This topic describes how Hyper-V extensions originate new packets and inject the
 
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about the extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
 
- 
+ 
 
 Extensible switch extensions can only inject new packets into the extensible switch ingress data path. This ensures that the extensible switch interface can filter and forward these packets correctly. Extensions must follow these guidelines for injecting new packets into the ingress data path:
 
@@ -39,7 +39,7 @@ Extensible switch extensions can only inject new packets into the extensible swi
 
     **Note**  A capturing or filtering extension cannot add new destination ports to the new packet.
 
-     
+     
 
 -   When the extension creates a new packet, the packet data is located in local, or *trusted*, memory in the parent operating system of the Hyper-V parent partition. This memory is not accessible by the child partition. Therefore, it is considered "safe" from unsynchronized updates by the guest operating system that runs in that partition.
 
@@ -51,9 +51,9 @@ Extensible switch extensions can only inject new packets into the extensible swi
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -90,7 +90,7 @@ All of these data structures are reference counted. The reference counts on a da
 </tbody>
 </table>
 
- 
+ 
 
 In each case, the dynamic value refers to the number of callers that have referenced the structure without dereferencing it. The static part of the reference count is maintained by the routines themselves. For example, [**RxCreateNetRoot**](https://msdn.microsoft.com/library/windows/hardware/ff554366) increments the reference count for the associated SRV\_CALL structure.
 
@@ -124,9 +124,9 @@ This section contains the following topics:
 
 [Connection and File Control Block Management Routines](connection-and-file-control-block-management-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

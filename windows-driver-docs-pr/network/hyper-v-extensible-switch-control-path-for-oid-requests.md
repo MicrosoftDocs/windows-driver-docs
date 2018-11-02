@@ -21,7 +21,7 @@ The following figure shows the extensible switch control path for OID requests f
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
- 
+ 
 
 Extensible switch extensions, such as filtering and forwarding extensions, are responsible for allowing or rejecting packet traffic based on port or switch policies. In order for these extensions to apply policy decisions, these extensions must be able to do the following:
 
@@ -37,17 +37,17 @@ The miniport edge of the extensible switch is responsible for completing the OID
 
 **Note**  If the extension does not veto an extensible switch OID request, it should monitor the status when the request is completed. The extension should do this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
- 
+ 
 
 **Note**  Stack restart requests using [**NdisFRestartFilter**](https://msdn.microsoft.com/library/windows/hardware/ff562611) will not complete while an extensible switch OID request is pending. For this reason, an extension that is waiting for a stack restart must complete any ongoing OID requests.
 
- 
+ 
 
 Most of the extensible switch OID requests can only be issued by the extensible switch interface. However, some extensible switch OID requests can be issued by an extension to obtain information about the configuration of the extensible switch, its ports, and its network adapter connections. For more information, see [Querying the Hyper-V Extensible Switch Configuration](querying-the-hyper-v-extensible-switch-configuration.md).
 
- 
+ 
 
- 
+ 
 
 
 

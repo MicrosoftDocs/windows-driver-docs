@@ -45,7 +45,7 @@ The **!rpcexts.rpctime** extension displays the current system time.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -59,9 +59,9 @@ Here is an example:
 Current time is: 059931.126  (0x00ea1b.07e)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

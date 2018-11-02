@@ -33,9 +33,9 @@ If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**]
 
 All system-defined, required device I/O control requests sent to NT-based operating system storage class drivers are mapped to SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
 
- 
+ 
 
- 
+ 
 
 
 

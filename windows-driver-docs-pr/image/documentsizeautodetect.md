@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>InputSize</strong>](inputsize.md)</p></td>
+<td><p><a href="inputsize.md" data-raw-source="[&lt;strong&gt;InputSize&lt;/strong&gt;](inputsize.md)"><strong>InputSize</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ If the specified text value is 1 or **true**, the scan device will automatically
 
 [**InputSize**](inputsize.md)
 
- 
+ 
 
- 
+ 
 
 
 

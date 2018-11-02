@@ -19,9 +19,9 @@ The event items in this set are specified as KSEVENT\_AUDIO\_CONTROL\_CHANGE enu
 
 The only event in this set is [**KSEVENT\_CONTROL\_CHANGE**](ksevent-control-change.md).
 
- 
+ 
 
- 
+ 
 
 
 

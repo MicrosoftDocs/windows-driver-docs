@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ## Description of the tests and configuration file
 You can find the data-driven SysFund tests at \<unzipped EWDK root>\Program Files\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund\DataDriven.  The data-driven test suite consists of the following files:
 
--	Five test DLL’s which use the XML configuration file WDTFTest.xml:
+- Five test DLL’s which use the XML configuration file WDTFTest.xml:
 
-    *	Sysfund_Device_IO_DataDriven.dll
-    *	Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
-    *	Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
-    *	Sysfund_RebootRestart_With_IO_During_DataDriven.dll
-    *	Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
--	Two utility DLL’s which use the XML configuration file WDTFTest.xml:
-    *	Utility_DeviceStatusCheck_DataDriven.dll
-    *	Utility_EnableDisableDriverVerifier_DataDriven.dll
--	The XML configuration file:
-        *	WDTFTest.xml
+  *   Sysfund_Device_IO_DataDriven.dll
+  *   Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
+  *   Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
+  *   Sysfund_RebootRestart_With_IO_During_DataDriven.dll
+  *   Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
+- Two utility DLL’s which use the XML configuration file WDTFTest.xml:
+  *   Utility_DeviceStatusCheck_DataDriven.dll
+  *   Utility_EnableDisableDriverVerifier_DataDriven.dll
+- The XML configuration file:
+      *   WDTFTest.xml
 
 **System - Device I/O Test**
 -	Binary: Sysfund_Device_IO_DataDriven.dll
@@ -175,8 +175,8 @@ After you fix the bugs in mydriver1.sys and mydriver2.sys, you can reset the **S
     <Parameter Name="SdelExcludeDrivers">(DriverBinaryNames!='')</Parameter>
 ```
 
-##Troubleshooting Problems
-###Malformed SDEL Query in the Configuration File
+## Troubleshooting Problems
+### Malformed SDEL Query in the Configuration File
 The following error message is indicative of a poorly formed SDEL query contained in the WDTFTest.xml configuration file:
 ```
     Error: Verify: SUCCEEDED(m_pDeviceDepot->Query(CComBSTR(DQ), &m_pTestTargets)) - Value (0x80070057) [File: onecore\base\tools\wdtf\tests\devfund\datadriven\sysfund_pnp_disableenable_with_io_beforeandafter_datadriven\test.cpp, Function: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test, Line: 231]
@@ -184,7 +184,7 @@ The following error message is indicative of a poorly formed SDEL query containe
 ```
 The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](https://msdn.microsoft.com/library/windows/hardware/ff538361%28v=vs.85%29.aspx) and look for a malformed query that could be causing this error.
 
-###Test is Blocked Because it Might Reboot the Machine
+### Test is Blocked Because it Might Reboot the Machine
 Certain SysFund tests can reboot the machine during testing. In order to run a test which can reboot the machine, the "/rebootstatefile" parameter must be used:
 ```
     te.exe <testname> /rebootstatefile=state.xml
@@ -195,7 +195,7 @@ If the /rebootstatefile parameter is not passed to the test, the following messa
     EndGroup: Sysfund_RebootRestart_With_IO_During::Sysfund_RebootRestart_With_IO_During_DataDriven_Test#0 [Blocked]
 ```
 
-###Test is Blocked Because the SDEL Query Contains '&' Characters
+### Test is Blocked Because the SDEL Query Contains '&' Characters
 When specifing an SDEL query which targets a device based on its Device Instance Path value, '&' characters in the path must be replace with "&amp\;". The following message is indicative of a WDTFTest.xml configuration file which contains '&' characters in the device instance path:
 ```
     TestBlocked: TAEF: [HRESULT: 0xC00CEE22] Error while getting value for 'SDEL' in table 'DataDrivenSysfundTable' in DataSource 'WDTFTest.xml' on line 24.
@@ -210,5 +210,5 @@ This is the well-formed value for deviceid which fixes the error:
     <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&amp;DEV_2B38&amp;SUBSYS_045E0003&amp;REV_00\4&amp;91A2562&amp;0&amp;00E8'</Parameter>
 ```
 
-###Other Issues
+### Other Issues
 For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).

@@ -31,11 +31,11 @@ The LOADER\_ROLLBACK\_DETECTED bug check has a value of 0x00000196. This indicat
 | 3         | Reserved                |
 | 4         | Reserved                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

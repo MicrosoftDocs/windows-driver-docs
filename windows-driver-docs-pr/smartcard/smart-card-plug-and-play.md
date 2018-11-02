@@ -34,7 +34,7 @@ For more detailed information on the smart card discovery process for Plug and P
 
 **Note**  To determine the device ID that Windows generates for a smart card, the recommended approach is to insert the smart card in a smart card reader that is attached to a computer that is running Windows 7 or later versions of Windows. The device ID can then be found by looking at the “Hardware Ids” property of the smart card device in Device Manager.
 
- 
+ 
 
 ## <span id="Sample_INF_for_x86_and_amd64"></span><span id="sample_inf_for_x86_and_amd64"></span><span id="SAMPLE_INF_FOR_X86_AND_AMD64"></span>Sample INF for x86 and amd64
 
@@ -43,7 +43,7 @@ The following is a sample INF file for smart card installation in Windows 8 and 
 
 **Note**  To avoid problems with deployments, it is strongly advised to test your driver package on clean installations of all targeted operating systems prior to submitting the driver package to Winqual.
 
- 
+ 
 
 ``` syntax
 ;
@@ -200,9 +200,9 @@ The following are required for this type of INF file:
 -   The hardware ID that is specified by the %FabrikamCardDeviceName% string must either be the ATR historical bytes of the device or the decoded value of the device’s smart card framework identifier. For more information about this identifier, see the “Windows Smart Card Framework Card Identifier” section in Smart Card Discovery Process.
 -   The DefaultInstall section is mandatory in INF files for smart card minidriver packages.
 
- 
+ 
 
- 
+ 
 
 
 

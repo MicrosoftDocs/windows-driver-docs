@@ -24,9 +24,9 @@ The host stack updates offloaded state objects if:
 
 Note that the host stack updates only path-to-neighbor links. It never updates TCP connection-to-path links.
 
- 
+ 
 
- 
+ 
 
 
 

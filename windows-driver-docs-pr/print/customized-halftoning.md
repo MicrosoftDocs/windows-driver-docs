@@ -56,9 +56,9 @@ If a rendering plug-in implements [**IPrintOemUni::ImageProcessing**](https://ms
 
 For more information about halftoning, see [Halftoning with Unidrv](halftoning-with-unidrv.md).
 
- 
+ 
 
- 
+ 
 
 
 

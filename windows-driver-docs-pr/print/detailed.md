@@ -18,9 +18,9 @@ Description:A comprehensive description of the current information about the dev
 
 The Detailed property is the parent of the [Event\#\#\#](event---.md) property.
 
- 
+ 
 
- 
+ 
 
 
 

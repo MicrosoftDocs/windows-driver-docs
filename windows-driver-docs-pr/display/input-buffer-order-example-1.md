@@ -43,11 +43,11 @@ Consider a device that does not require any previous output reference frames or 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

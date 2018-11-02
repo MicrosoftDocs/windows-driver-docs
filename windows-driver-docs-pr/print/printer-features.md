@@ -27,9 +27,9 @@ All features and their associated options are listed on either the printer prope
 
 This section explains GPD language support for both [standard features](standard-features.md) and [customized features](customized-features.md). Additional topics in this section include [Feature Entry Format](feature-entry-format.md), [Feature Attributes](feature-attributes.md), and [Feature Conflict Priority](feature-conflict-priority.md).
 
- 
+ 
 
- 
+ 
 
 
 

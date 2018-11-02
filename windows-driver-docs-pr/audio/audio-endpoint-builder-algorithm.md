@@ -113,15 +113,15 @@ If you develop your own audio device driver and INF file to work with your audio
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 If you use the MMDevice API to select a default endpoint and the available endpoints are ranked the same, the MMDevice API will alphabetize the Endpoint IDs to determine which endpoint to select as default. For example, if an audio adapter has both line-out and line-in connectors, and the associated INF file does not select either one to be the default at the time of installation, the MMDevice API identifies which Endpoint IDs is first alphabetically and sets that connector as the default. This selection persists after you restart the system because the Endpoint IDs are persistent. However, the selection does not persist if a higher-ranking endpoint (for example, a second adapter with a microphone connector) appears in the system.
 
- 
+ 
 
- 
+ 
 
 
 

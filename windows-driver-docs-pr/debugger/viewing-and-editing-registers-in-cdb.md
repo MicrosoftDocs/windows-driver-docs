@@ -18,9 +18,9 @@ Registers are also automatically displayed every time that the target stops. If 
 
 On an x86-based processor, the **r** option also controls several one-bit registers known as flags. To change these flags, you use a slightly different syntax than when changing regular registers. For more information about these flags and an explanation of this syntax, see [x86 Flags](x86-architecture.md#x86-flags).
 
- 
+ 
 
- 
+ 
 
 
 

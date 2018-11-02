@@ -70,7 +70,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -124,9 +124,9 @@ Requirements
 
 [**RxStopMinirdr**](https://msdn.microsoft.com/library/windows/hardware/ff554743)
 
- 
+ 
 
- 
+ 
 
 
 

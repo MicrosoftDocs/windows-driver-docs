@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |---------------------------------------------------------------------------|--------------------------------------------|
 | [**WDI\_PACKET\_FILTER\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926104) (UINT32) | Specifies the desired Wi-Fi packet filter. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

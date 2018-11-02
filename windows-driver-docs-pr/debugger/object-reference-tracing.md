@@ -35,9 +35,9 @@ The following rules apply to Object Reference Tracing:
 
 -   You can store the Object Reference Tracing configuration as a registry setting or a kernel flag (run-time) setting. If you have both registry and kernel flag settings, the run-time settings take precedence, but are lost when you shut down or restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

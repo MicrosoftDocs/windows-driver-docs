@@ -62,9 +62,9 @@ This section includes:
 
 [Exposing Your Synthesizer as a Legacy Device](exposing-your-synthesizer-as-a-legacy-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

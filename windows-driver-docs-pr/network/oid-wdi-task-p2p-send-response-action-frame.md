@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME is issued to the IHV componen
 |--------|---------------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | 3                                     | 5                               |
 
- 
+ 
 
 When port receives an acknowledgment for a request frame, it shall dwell on the same channel for 100ms and indicate any Wi-Fi Direct Public Action Frames it receives to the host.
 
@@ -33,7 +33,7 @@ While the maximum timeout has not expired, the port shall retry sending the Wi-F
 | Invitation Response          | Local Listen or Local GO Operational Channel          |
 | Provision Discovery Response | Local Listen Channel or Remote GO Operational Channel |
 
- 
+ 
 
 The task is complete either when local device receives an acknowledgment from the remote device for the action frame that was sent, the timeout expires, or the host aborts the operation. The device may indicate task completion after the same-channel dwell time has expired.
 
@@ -52,7 +52,7 @@ The host may decide to abort this operation and continue/retry the Wi-Fi Direct 
 | [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/dn897957)                |                                |          | Information that was indicated from the previously received P2P Action Frame. The received indication is provided back to the port.            |
 | [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://msdn.microsoft.com/library/windows/hardware/dn898076)                                         |                                | X        | One or more IEs that must be included in the frame sent by the port.                                                                           |
 
- 
+ 
 
 ## Task completion indication
 
@@ -82,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

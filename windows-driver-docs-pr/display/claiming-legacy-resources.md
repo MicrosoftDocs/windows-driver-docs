@@ -22,32 +22,32 @@ A video miniport driver must claim and report all legacy resources in its [**VID
 
 Miniport drivers must do the following to report such legacy resources:
 
--   If the legacy resource list for the device is known at compile time, fill in the following two fields of the [**VIDEO\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure that is created and initialized in the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556159) routine:
+- If the legacy resource list for the device is known at compile time, fill in the following two fields of the [**VIDEO\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure that is created and initialized in the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556159) routine:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Structure Member</th>
-    <th align="left">Definition</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>HwLegacyResourceList</strong></p></td>
-    <td align="left"><p>Points to an array of [<strong>VIDEO_ACCESS_RANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570498) structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>HwLegacyResourceCount</strong></p></td>
-    <td align="left"><p>Is the number of elements in the array to which <strong>HwLegacyResourceList</strong> points.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Structure Member</th>
+  <th align="left">Definition</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><strong>HwLegacyResourceList</strong></p></td>
+  <td align="left"><p>Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570498" data-raw-source="[&lt;strong&gt;VIDEO_ACCESS_RANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570498)"><strong>VIDEO_ACCESS_RANGE</strong></a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><strong>HwLegacyResourceCount</strong></p></td>
+  <td align="left"><p>Is the number of elements in the array to which <strong>HwLegacyResourceList</strong> points.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
+     
 
 <!-- -->
 
@@ -81,9 +81,9 @@ hwInitData.HwLegacyResourceCount = 3;
 
 The miniport driver can "reclaim" legacy resources again in subsequent call(s) to [**VideoPortVerifyAccessRanges**](https://msdn.microsoft.com/library/windows/hardware/ff570377); however, the video port driver will just ignore requests for any such previously claimed resources. Power management and docking will be disabled in the system if the miniport driver attempts to claim a legacy access range in **VideoPortVerifyAccessRanges** that was not previously claimed in the **HwLegacyResourceList** during [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556159) or returned in the *LegacyResourceList* parameter of [*HwVidLegacyResources*](https://msdn.microsoft.com/library/windows/hardware/ff567352).
 
- 
+ 
 
- 
+ 
 
 
 

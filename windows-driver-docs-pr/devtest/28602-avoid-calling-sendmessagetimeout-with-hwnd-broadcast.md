@@ -15,9 +15,9 @@ The Code Analysis tool reports this warning when applications use **SendMessageT
 
 To fix this, consider use **PostMessage** instead,so that it is not a blocking call. Alternatively, avoid the use of **HWND\_BROADCAST** to direct the message to a particular window.
 
- 
+ 
 
- 
+ 
 
 
 

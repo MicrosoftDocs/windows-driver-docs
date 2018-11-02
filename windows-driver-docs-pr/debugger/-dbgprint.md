@@ -45,7 +45,7 @@ The **!dbgprint** extension displays a string that was previously sent to the **
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -60,9 +60,9 @@ Generally, messages sent to this buffer are displayed automatically in the Debug
 
 The **!dbgprint** extension causes the contents of this buffer to be displayed (regardless of whether automatic printing has been disabled). It will not show messages that have been filtered out based on their component and importance level. (For details on this filtering, see [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).)
 
- 
+ 
 
- 
+ 
 
 
 

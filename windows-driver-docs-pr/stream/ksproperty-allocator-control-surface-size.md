@@ -47,13 +47,13 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE property informs client filter
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564280)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564280" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564280)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S</strong></a></p></td>
 <td><p>Pair of ULONGs</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a pair of ULONGs that specify the width and height of overlay surfaces.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**KSPROPERTY\_ALLOCATOR\_CONTROL\_SURFACE\_SIZE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564280)
 
- 
+ 
 
- 
+ 
 
 
 

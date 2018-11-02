@@ -21,9 +21,9 @@ To perform remote debugging using Visual Studio:
 1.  On the remote computer, in Visual Studio, choose **Connect to Remote Debugger** from the **Tools** menu.
 2.  In the **Connect to Remote Debugger** dialog box, enter a connection string, and click **Connect**.
 
- 
+ 
 
- 
+ 
 
 
 

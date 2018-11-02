@@ -24,9 +24,9 @@ Text printing attributes are [general attributes](general-attributes.md) that sp
 
 [Attributes for Simulated Fonts](attributes-for-simulated-fonts.md)
 
- 
+ 
 
- 
+ 
 
 
 

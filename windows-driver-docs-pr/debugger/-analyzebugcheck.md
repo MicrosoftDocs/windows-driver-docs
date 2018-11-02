@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!analyzebugcheck** extension command is obsolete. Use [**!analyze**](-analyze.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ The `KSPROPSETID_TelephonyTopology` property set contains the following properti
 
 -   [**KSPROPERTY\_TELEPHONY\_VOLUME**](ksproperty-telephony-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -215,7 +215,7 @@ The time that appears in the message label is always the time on the server comp
 
 The following examples demonstrate how to use the remote session commands to disconnect a client computer from a session and to end a remote session. Only the server computer that started the remote session can end it.
 
-To disconnect a client computer from a remote session, on the client computer, type **@q**.
+To disconnect a client computer from a remote session, on the client computer, type <strong>@q</strong>.
 
 In response, the following message appears on the client computer that disconnected.
 
@@ -229,11 +229,11 @@ On all other computers in the session, the Remote tool posts a message with the 
 **Remote:  Disconnected from SERVER04 User01  [Wed 12:01 PM]
 ```
 
-To end a remote session, on the server computer, type **@k**. This command automatically disconnects the clients, and then ends the session.
+To end a remote session, on the server computer, type <strong>@k</strong>. This command automatically disconnects the clients, and then ends the session.
 
- 
+ 
 
- 
+ 
 
 
 

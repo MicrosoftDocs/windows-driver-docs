@@ -28,9 +28,9 @@ To determine which properties are set for a device interface in Windows Vista an
 
 If the second call to **SetupDiGetDeviceInterfacePropertyKeys** succeeds, **SetupDiGetDeviceInterfacePropertyKeys** returns the requested property key array in the *PropertyKeyArray* buffer, sets \**RequiredPropertyKeyCount* to the number of property keys in the buffer, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfacePropertyKeys** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

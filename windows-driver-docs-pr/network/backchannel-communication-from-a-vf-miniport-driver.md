@@ -15,7 +15,7 @@ A VF configuration block is used for backchannel communication between the PF an
 
 **Note**  Data from each VF configuration block is used only by the PF and VF miniport drivers. The format and content of this data is opaque to components of the Windows operating system.
 
- 
+ 
 
 Each VF configuration block is assigned a unique identifier by the IHV. This allows the VF miniport driver to query or set information on specific VF configuration blocks.
 
@@ -39,9 +39,9 @@ The following figure shows the process involved in reading and writing VF config
 
 ![image shows various configuration blocks moving between vf miniport driver, ndis, and pf miniport driver](images/sriov-vf-backchannel.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ System-controlled color management is the default color management type. It is a
 
 No ICM-specific code needs to be added to a printer driver to support system-control color management, other than indicating support for CYMK color space (if appropriate), as described in [Supporting CMYK Color Space](supporting-cmyk-color-space.md).
 
- 
+ 
 
- 
+ 
 
 
 

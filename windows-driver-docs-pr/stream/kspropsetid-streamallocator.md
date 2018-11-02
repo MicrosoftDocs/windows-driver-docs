@@ -20,9 +20,9 @@ The KSPROPSETID\_StreamAllocator property set includes:
 
 [**KSPROPERTY\_STREAMALLOCATOR\_STATUS**](ksproperty-streamallocator-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

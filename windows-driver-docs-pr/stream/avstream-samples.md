@@ -26,9 +26,9 @@ A filter-centric capture driver that does not perform direct memory access (DMA)
 
 These samples demonstrate many of the concepts that are described in this documentation, and the samples can be tailored to a driver developer's needs.
 
- 
+ 
 
- 
+ 
 
 
 

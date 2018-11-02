@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume level of a chan
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type LONG and specifies the volume level of a channel in a given stream. Volume-level values use the following scale:
 
@@ -66,7 +66,7 @@ The property value is of type LONG and specifies the volume level of a channel i
 &gt; \[!Note\]
 &gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
- 
+ 
 
 If a value is specified beyond the range of the filter, the request to set this property will still be successful. But the actual value that was applied to the filter can only be determined by a subsequent Get call to this property.
 
@@ -106,9 +106,9 @@ Requirements
 
 [**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

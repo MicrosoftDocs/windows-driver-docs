@@ -25,9 +25,9 @@ The INF file must contain information to direct the operating system to copy the
 
 The Direct3D runtime obtains the user-mode display driver's DLL name from the registry in order to load the user-mode display driver in the runtime's process space.
 
- 
+ 
 
- 
+ 
 
 
 

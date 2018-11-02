@@ -27,9 +27,9 @@ When calling the **waveInMessage**, **waveOutMessage**, or **midiOutMessage** fu
 
 The DRVM\_MAPPER\_PREFERRED\_GET message is intercepted by the mapper for the target device (waveIn, waveOut, or midiOut). For information about mappers for wave and MIDI devices, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

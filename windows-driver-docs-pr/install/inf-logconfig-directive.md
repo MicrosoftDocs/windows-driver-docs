@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **LogConfig** directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources − the interrupt request lines, memory ranges, I/O ports, and DMA channels that can be used by the device. Each *log-config-section* specifies an alternative set of bus-relative hardware resources that can be used by the device.
 
@@ -52,7 +52,7 @@ ConfigPriority=priority-value[,config-type]
 ## Entries
 
 
-<a href="" id="configpriority-priority-value"></a>**ConfigPriority=***priority-value*  
+<a href="" id="configpriority-priority-value"></a>**ConfigPriority=**<em>priority-value</em>  
 Specifies the priority value for this logical configuration, as one of the following:
 
 <a href="" id="desired"></a>DESIRED  
@@ -84,7 +84,7 @@ Requires power cycle to take effect.
 <a href="" id="disabled"></a>DISABLED  
 Hardware/device is disabled.
 
-<a href="" id="dmaconfig--dmaattrs--dmanum--dmanum-----"></a>**DMAConfig=**\[*DMAattrs:*\]*DMANum*\[**,**DMANum\]...\]  
+<a href="" id="dmaconfig--dmaattrs--dmanum--dmanum-----"></a>**DMAConfig=**\[*DMAattrs:*\]*DMANum*\[<strong>,</strong>DMANum\]...\]  
 *DMAattrs* is optional if the device is connected on a bus that has only 8-bit DMA channels and the device uses standard system DMA. Otherwise, it can be one of the following letters:
 
 | Letter | Meaning    |
@@ -93,13 +93,13 @@ Hardware/device is disabled.
 | **W**  | 16-bit DMA |
 | **N**  | 8-bit DMA  |
 
- 
+ 
 
 If the device uses bus-master DMA, you must use **M** with one of the following (mutually exclusive) letters that indicates the type of DMA channel used: **A**, **B**, or **F**. If neither **A**, **B**, or **F** are specified, a standard DMA channel is assumed.
 
 *DMANum* specifies one or more bus-relative DMA channels as decimal numbers, each separated from the next by a comma (,).
 
-<a href="" id="ioconfig-io-range--io-range----"></a>**IOConfig=***io-range*\[**,***io-range*\]...  
+<a href="" id="ioconfig-io-range--io-range----"></a>**IOConfig=**<em>io-range</em>\[**,**<em>io-range</em>\]...  
 Specifies one or more I/O port ranges for the device, in either of the following forms:
 
 <a href="" id="start-end---decode-mask---alias-offset---attr------type-1-i-o-range-"></a>*start-end*\[**(**\[*decode-mask*\]\[*:alias-offset*\]\[*:attr*\]**)**\]  (Type 1 I/O range)  
@@ -120,7 +120,7 @@ Defines the alias type and can be any of the following:
 | **ffff**   | 16-bit decode   | 0x00             |
 | **0**      | Positive decode | 0xFF             |
 
- 
+ 
 
 <a href="" id="alias-offset-"></a>*alias-offset*   
 Not used.
@@ -128,7 +128,7 @@ Not used.
 <a href="" id="attr"></a>*attr*  
 Specifies the letter **M** if the given range is in system memory. If omitted, the given range is in I/O port space.
 
-<a href="" id="size-min-max--align-mask----decode-mask---alias-offset---attr------type-2-i-o-range-"></a>*size***@***min-max*\[**%***align-mask*\]\[**(**\[*decode-mask*\]\[**:***alias-offset*\]\[**:***attr*\])\]  (Type 2 I/O range)  
+<a href="" id="size-min-max--align-mask----decode-mask---alias-offset---attr------type-2-i-o-range-"></a><em>size</em>**@**<em>min-max</em>\[**%**<em>align-mask</em>\]\[**(**\[*decode-mask*\]\[**:**<em>alias-offset</em>\]\[**:**<em>attr</em>\])\]  (Type 2 I/O range)  
 
 <a href="" id="size"></a>*size*  
 Specifies the number of bytes required for the I/O port range as a 32-bit hexadecimal value.
@@ -152,7 +152,7 @@ Defines the alias type and can be any of the following:
 | **ffff**   | 16-bit decode   | 0x00             |
 | **0**      | Positive decode | 0xFF             |
 
- 
+ 
 
 <a href="" id="alias-offset-"></a>*alias-offset*   
 Not used.
@@ -160,7 +160,7 @@ Not used.
 <a href="" id="attr"></a>*attr*  
 Specifies the letter **M** if the given range is in system memory. If omitted, the given range is in I/O port space.
 
-<a href="" id="memconfig-mem-range--mem-range----"></a>**MemConfig=***mem-range*\[**,***mem-range*\]...  
+<a href="" id="memconfig-mem-range--mem-range----"></a>**MemConfig=**<em>mem-range</em>\[**,**<em>mem-range</em>\]...  
 Specifies one or more memory ranges for the device in one of the following forms:
 
 ```cpp
@@ -186,7 +186,7 @@ Specifies the attributes of the memory range as one or more of the following let
 | **F**  | Prefetchable                                        |
 | **D**  | Card decode addressing is 32-bit, instead of 24-bit |
 
- 
+ 
 
 If both **R** and **W** are specified or if neither is specified, read/write is assumed.
 
@@ -204,12 +204,12 @@ Optionally specifies a 64-bitmask that is used in a bitwise AND operation to ali
 
 If align-mask is omitted, the default memory alignment is on a 4K boundary (FFFFF000).
 
-<a href="" id="irqconfig--irqattrs--irqnum--irqnum----"></a>**IRQConfig=**\[*IRQattrs:*\]*IRQNum*\[**,***IRQNum*\]...  
+<a href="" id="irqconfig--irqattrs--irqnum--irqnum----"></a>**IRQConfig=**\[*IRQattrs:*\]*IRQNum*\[**,**<em>IRQNum</em>\]...  
 *IRQattrs* is omitted if the device uses a bus-relative, edge-triggered IRQ. Otherwise, specify **L** to indicate a level-triggered IRQ and **LS** if the device can share the IRQ lines listed in this entry.
 
 *IRQNum* specifies one or more bus-relative IRQs the device can use as decimal numbers, each separated from the next by a comma (,).
 
-<a href="" id="pccardconfig-configindex---memorycardbase1---memorycardbase2----attrs--"></a>**PcCardConfig=***ConfigIndex*\[**:**\[*MemoryCardBase1*\]\[**:***MemoryCardBase2*\]\]\[**(***attrs***)**\]  
+<a href="" id="pccardconfig-configindex---memorycardbase1---memorycardbase2----attrs--"></a>**PcCardConfig=**<em>ConfigIndex</em>\[**:**\[*MemoryCardBase1*\]\[**:**<em>MemoryCardBase2</em>\]\]\[**(**<em>attrs</em>**)**\]  
 Configures CardBus registers and/or creates up to two permanent memory windows that map to the attribute space of the device. A driver can use the memory windows to access the attribute space from an ISR. Specify all numeric values in hexadecimal format.
 
 The elements of a **PcCardConfig** entry are as follows:
@@ -286,7 +286,7 @@ The attributes include:
 </tbody>
 </table>
 
- 
+ 
 
 For example, an attrs value of (WB CA M XM1 XI0) translates to the following:
 
@@ -304,7 +304,7 @@ One wait state on memory windows
 
 Zero wait states on I/O windows
 
-<a href="" id="mfcardconfig-configregbase-configoptions--ioresourceindex---attrs-----"></a>**MfCardConfig=***ConfigRegBase***:***ConfigOptions*\[**:***IoResourceIndex*\]\[**(***attrs***)**\]...
+<a href="" id="mfcardconfig-configregbase-configoptions--ioresourceindex---attrs-----"></a>**MfCardConfig=**<em>ConfigRegBase</em>**:**<em>ConfigOptions</em>\[**:**<em>IoResourceIndex</em>\]\[**(**<em>attrs</em>**)**\]...
 Specifies the attribute-memory location of the set of configuration registers for one function of a multifunction device, as follows:
 
 <a href="" id="configregbase"></a>*ConfigRegBase*  
@@ -338,7 +338,7 @@ A given *log-config-section* name must be unique to the INF file, but it can be 
 
 Only one **ConfigPriority** entry can be used in each *log-config-section*. There can be more than one of each of the other entries, depending on the hardware resource requirements of the device.
 
-One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the *DDInstall***.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
+One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the <em>DDInstall</em>**.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
 
 ### LogConfig-Referenced Section Entries and Values
 
@@ -456,9 +456,9 @@ For some examples of how **MfCardConfig** entries are used, see [Supporting PC C
 
 [***DDInstall*.FactDef**](inf-ddinstall-factdef-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

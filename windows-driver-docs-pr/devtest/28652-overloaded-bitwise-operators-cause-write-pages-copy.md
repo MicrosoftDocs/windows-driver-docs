@@ -34,7 +34,6 @@ const ENUM_VALS rgValsRuntime[] = {
     ENUM_VAL_1 | ENUM_VAL_2,    // Runtime init!
     ENUM_VAL_3                  // Compile time init
 };  
-
 ```
 
 The following code example avoids this warning.
@@ -57,9 +56,9 @@ const ENUM_VALS rgValsRuntime[] = {
 };
 ```
 
- 
 
- 
+
+
 
 
 

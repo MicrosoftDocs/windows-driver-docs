@@ -52,7 +52,7 @@ Specifies the physical device object (PDO) for the LUN.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +65,9 @@ A LUN is typically referred to as a *device*. Thus, this extension displays info
 
 The LUN can be specified either by its address (which can be found in the **LUN** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display), or by its physical device object (which can be found in the **DevObj** field of the **!minipkd.adapters** display).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ Microsoft STI defines the following four COM interfaces:
 
 [IStiDeviceControl COM Interface](istidevicecontrol-com-interface.md) − Provides utility operations to minidrivers.
 
- 
+ 
 
- 
+ 
 
 
 

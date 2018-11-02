@@ -45,7 +45,7 @@ The Web Services for Devices (WSD) Installed construct indicates whether a print
 </tbody>
 </table>
 
- 
+ 
 
 The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
@@ -77,9 +77,9 @@ The preceding example results in the following query:
 \Printer.Configuration.HardDisk:Installed
 ```
 
- 
+ 
 
- 
+ 
 
 
 

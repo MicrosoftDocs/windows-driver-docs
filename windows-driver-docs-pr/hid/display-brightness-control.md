@@ -24,11 +24,11 @@ Windows 8 provides support for screen brightness increase/decrease as part of th
 | 0x006F   | Brightness Increment | Re-trigger Control (RTC) |
 | 0x0070   | Brightness Decrement | Re-trigger Control (RTC) |
 
- 
+ 
 
 **Note**  These HID usages operate only on mobile systems (battery powered) and require Windows 8.
 
- 
+ 
 
 ## Sample report descriptor
 
@@ -62,9 +62,9 @@ Tip \#1: Brightness increment/decrement HID usages only operate only on Mobile s
 
 Tip \#2: If the system is attached to an external monitor, the brightness increment/decrement will not function as legacy monitor transports do not support the ability to channel HID messages to them / from them.
 
- 
+ 
 
- 
+ 
 
 
 

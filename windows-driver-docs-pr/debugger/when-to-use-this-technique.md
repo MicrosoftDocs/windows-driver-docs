@@ -21,9 +21,9 @@ There are several situations in which it is useful, or even necessary, to [contr
 
 -   When your user-mode target is a service application. For a detailed description of how to debug these targets, see [Debugging a Service Application](debugging-a-service-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

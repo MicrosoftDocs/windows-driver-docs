@@ -18,9 +18,9 @@ The following topics describe how to initialize the use of a SAN:
 
 [Receiving and Translating NIC Addresses](receiving-and-translating-nic-addresses.md)
 
- 
+ 
 
- 
+ 
 
 
 

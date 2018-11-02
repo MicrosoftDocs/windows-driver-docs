@@ -22,9 +22,9 @@ An NDIS miniport driver can complete or cancel a pending send operation or pendi
 
 For more information, see [Canceling a Send Operation](canceling-a-send-operation.md), [OID Requests for an Adapter](miniport-adapter-oid-requests.md), [Protocol Driver OID Requests](protocol-driver-oid-requests.md), and [Filter Module OID Requests](filter-module-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

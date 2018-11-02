@@ -31,33 +31,33 @@ Driver writers can use the GDI driver-related services listed in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngCreateDriverObj</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564207)</p></td>
-<td align="left"><p>Creates a [<strong>DRIVEROBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556162) structure. This structure is used to track a device-managed resource that must be released if the resource-allocating process terminates without first cleaning it up.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564207" data-raw-source="[&lt;strong&gt;EngCreateDriverObj&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564207)"><strong>EngCreateDriverObj</strong></a></p></td>
+<td align="left"><p>Creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556162" data-raw-source="[&lt;strong&gt;DRIVEROBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556162)"><strong>DRIVEROBJ</strong></a> structure. This structure is used to track a device-managed resource that must be released if the resource-allocating process terminates without first cleaning it up.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngDeleteDriverObj</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564792)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564792" data-raw-source="[&lt;strong&gt;EngDeleteDriverObj&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564792)"><strong>EngDeleteDriverObj</strong></a></p></td>
 <td align="left"><p>Frees the handle used for tracking a device-managed resource.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngGetDriverName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564927)</p></td>
-<td align="left"><p>Returns the name of the driver's DLL.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564927" data-raw-source="[&lt;strong&gt;EngGetDriverName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564927)"><strong>EngGetDriverName</strong></a></p></td>
+<td align="left"><p>Returns the name of the driver&#39;s DLL.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngLockDriverObj</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564967)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564967" data-raw-source="[&lt;strong&gt;EngLockDriverObj&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564967)"><strong>EngLockDriverObj</strong></a></p></td>
 <td align="left"><p>Creates an exclusive lock on a driver object for the calling thread.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngUnlockDriverObj</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565044)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565044" data-raw-source="[&lt;strong&gt;EngUnlockDriverObj&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565044)"><strong>EngUnlockDriverObj</strong></a></p></td>
 <td align="left"><p>Unlocks the driver object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

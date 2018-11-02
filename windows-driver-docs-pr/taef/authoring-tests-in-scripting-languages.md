@@ -168,9 +168,9 @@ The **&lt;script&gt;** element identifies the test script language and encloses 
 
 The **&lt;!\[CDATA\[\]\]&gt;** section contains the actual implementation of the tests - the code written in the scripting language. In this section, you implement the test methods that you declared in the **&lt;public&gt; &lt;/public&gt;** section.
 
- 
+ 
 
- 
+ 
 
 
 

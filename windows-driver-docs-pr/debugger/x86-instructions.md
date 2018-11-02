@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_x86_instructions_dbg"></span><span id="DDK_X86_INSTRUCTIONS_DBG"></span>
 
 
-In the lists in this section, instructions marked with an asterisk (**\***) are particularly important. Instructions not so marked are not critical.
+In the lists in this section, instructions marked with an asterisk (**\\***) are particularly important. Instructions not so marked are not critical.
 
 On the x86 processor, instructions are variable-sized, so disassembling backward is an exercise in pattern matching. To disassemble backward from an address, you should start disassembling at a point further back than you really want to go, then look forward until the instructions start making sense. The first few instructions may not make any sense because you may have started disassembling in the middle of an instruction. There is a possibility, unfortunately, that the disassembly will never synchronize with the instruction stream and you will have to try disassembling at a different starting point until you find a starting point that works.
 
@@ -47,7 +47,7 @@ To save space, many of the instructions are expressed in combined form, as shown
 </tbody>
 </table>
 
- 
+ 
 
 means that the first parameter must be a register, but the second can be a register, a memory reference, or an immediate value.
 
@@ -70,7 +70,7 @@ To save even more space, instructions can also be expressed as shown in the foll
 </tbody>
 </table>
 
- 
+ 
 
 which means that the first parameter can be a register or a memory reference, and the second can be a register, memory reference, or immediate value.
 
@@ -102,7 +102,7 @@ Memory and data transfer instructions do not affect flags.
 </tbody>
 </table>
 
- 
+ 
 
 For example, **LEA eax, \[esi+4\]** means **eax** = **esi** + 4. This instruction is often used to perform arithmetic.
 
@@ -117,13 +117,13 @@ For example, **LEA eax, \[esi+4\]** means **eax** = **esi** + 4. This instructio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>MOV</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m = <strong>r</strong>/m/#n</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>MOVSX</p></td>
 <td align="left"><p><strong>r1</strong>, <strong>r</strong>/m</p></td>
 <td align="left"><p>Move with sign extension.</p></td>
@@ -137,7 +137,7 @@ For example, **LEA eax, \[esi+4\]** means **eax** = **esi** + 4. This instructio
 </tbody>
 </table>
 
- 
+ 
 
 **MOVSX** and **MOVZX** are special versions of the **mov** instruction that perform sign extension or zero extension from the source to the destination. This is the only instruction that allows the source and destination to be different sizes. (And in fact, they must be different sizes.
 
@@ -154,13 +154,13 @@ The stack is pointed to by the **esp** register. The value at **esp** is the top
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>PUSH</p></td>
 <td align="left"><p><strong>r</strong>/m/#n</p></td>
 <td align="left"><p>Push value onto stack.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>POP</p></td>
 <td align="left"><p><strong>r</strong>/m</p></td>
 <td align="left"><p>Pop value from stack.</p></td>
@@ -204,7 +204,7 @@ The stack is pointed to by the **esp** register. The value at **esp** is the top
 </tbody>
 </table>
 
- 
+ 
 
 The C/C++ compiler does not use the **enter** instruction. (The **enter** instruction is used to implement nested procedures in languages like Algol or Pascal.)
 
@@ -242,7 +242,7 @@ pop ebp
 </tbody>
 </table>
 
- 
+ 
 
 All conversions perform sign extension.
 
@@ -261,7 +261,7 @@ All arithmetic and bit manipulation instructions modify flags.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>ADD</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m += <strong>r2</strong>/m/#n</p></td>
@@ -273,7 +273,7 @@ All arithmetic and bit manipulation instructions modify flags.
 <td align="left"><p><strong>r1</strong>/m += <strong>r2</strong>/m/#n + carry</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>SUB</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m -= <strong>r2</strong>/m/#n</p></td>
@@ -285,25 +285,25 @@ All arithmetic and bit manipulation instructions modify flags.
 <td align="left"><p><strong>r1</strong>/m -= <strong>r2</strong>/m/#n + carry</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>NEG</p></td>
 <td align="left"><p><strong>r1</strong>/m</p></td>
 <td align="left"><p><strong>r1</strong>/m = -<strong>r1</strong>/m</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>INC</p></td>
 <td align="left"><p><strong>r</strong>/m</p></td>
 <td align="left"><p><strong>r</strong>/m += 1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>DEC</p></td>
 <td align="left"><p><strong>r</strong>/m</p></td>
 <td align="left"><p><strong>r</strong>/m -= 1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>CMP</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p>Compute <strong>r1</strong>/m - <strong>r2</strong>/m/#n</p></td>
@@ -311,7 +311,7 @@ All arithmetic and bit manipulation instructions modify flags.
 </tbody>
 </table>
 
- 
+ 
 
 The **cmp** instruction computes the subtraction and sets flags according to the result, but throws the result away. It is typically followed by a conditional **jump** instruction that tests the result of the subtraction.
 
@@ -336,7 +336,7 @@ The **cmp** instruction computes the subtraction and sets flags according to the
 <td align="left"><p><strong>dx</strong>:<strong>ax</strong> = <strong>ax</strong> * <strong>r</strong>/m16</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>MUL</p></td>
 <td align="left"><p><strong>r</strong>/m32</p></td>
 <td align="left"><p><strong>edx</strong>:<strong>eax</strong> = <strong>eax</strong> * <strong>r</strong>/m32</p></td>
@@ -354,19 +354,19 @@ The **cmp** instruction computes the subtraction and sets flags according to the
 <td align="left"><p><strong>dx</strong>:<strong>ax</strong> = <strong>ax</strong> * <strong>r</strong>/m16</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>IMUL</p></td>
 <td align="left"><p><strong>r</strong>/m32</p></td>
 <td align="left"><p><strong>edx</strong>:<strong>eax</strong> = <strong>eax</strong> * <strong>r</strong>/m32</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>IMUL</p></td>
 <td align="left"><p><strong>r1</strong>, <strong>r2</strong>/m</p></td>
 <td align="left"><p><strong>r1</strong> *= <strong>r2</strong>/m</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>IMUL</p></td>
 <td align="left"><p><strong>r1</strong>, <strong>r2</strong>/m, #n</p></td>
 <td align="left"><p><strong>r1</strong> = <strong>r2</strong>/m * #n</p></td>
@@ -374,7 +374,7 @@ The **cmp** instruction computes the subtraction and sets flags according to the
 </tbody>
 </table>
 
- 
+ 
 
 Unsigned and signed multiplication. The state of flags after multiplication is undefined.
 
@@ -399,7 +399,7 @@ Unsigned and signed multiplication. The state of flags after multiplication is u
 <td align="left"><p>(<strong>dx</strong>, <strong>ax</strong>) = <strong>dx</strong>:<strong>ax</strong> / <strong>r</strong>/m16</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>DIV</p></td>
 <td align="left"><p><strong>r</strong>/m32</p></td>
 <td align="left"><p>(<strong>edx</strong>, <strong>eax</strong>) = <strong>edx</strong>:<strong>eax</strong> / <strong>r</strong>/m32</p></td>
@@ -417,7 +417,7 @@ Unsigned and signed multiplication. The state of flags after multiplication is u
 <td align="left"><p>(<strong>dx</strong>, <strong>ax</strong>) = <strong>dx</strong>:<strong>ax</strong> / <strong>r</strong>/m16</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>IDIV</p></td>
 <td align="left"><p><strong>r</strong>/m32</p></td>
 <td align="left"><p>(<strong>edx</strong>, <strong>eax</strong>) = <strong>edx</strong>:<strong>eax</strong> / <strong>r</strong>/m32</p></td>
@@ -425,7 +425,7 @@ Unsigned and signed multiplication. The state of flags after multiplication is u
 </tbody>
 </table>
 
- 
+ 
 
 Unsigned and signed division. The first register in the pseudocode explanation receives the remainder and the second receives the quotient. If the result overflows the destination, a division overflow exception is generated.
 
@@ -448,7 +448,7 @@ The state of flags after division is undefined.
 </tbody>
 </table>
 
- 
+ 
 
 If the condition *cc* is true, then the 8-bit value is set to 1. Otherwise, the 8-bit value is set to zero.
 
@@ -476,7 +476,7 @@ You will not see these instructions unless you are debugging code written in COB
 </tbody>
 </table>
 
- 
+ 
 
 These instructions adjust the **al** register after performing a packed binary-coded decimal operation.
 
@@ -497,7 +497,7 @@ These instructions adjust the **al** register after performing a packed binary-c
 </tbody>
 </table>
 
- 
+ 
 
 These instructions adjust the **al** register after performing an unpacked binary-coded decimal operation.
 
@@ -518,7 +518,7 @@ These instructions adjust the **al** register after performing an unpacked binar
 </tbody>
 </table>
 
- 
+ 
 
 These instructions adjust the **al** and **ah** registers after performing an unpacked binary-coded decimal operation.
 
@@ -533,25 +533,25 @@ These instructions adjust the **al** and **ah** registers after performing an un
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>AND</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m = <strong>r1</strong>/m and <strong>r2</strong>/m/#n</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>OR</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m = <strong>r1</strong>/m or <strong>r2</strong>/m/#n</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>XOR</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>r2</strong>/m/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m = <strong>r1</strong>/m xor <strong>r2</strong>/m/#n</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>NOT</p></td>
 <td align="left"><p><strong>r1</strong>/m</p></td>
 <td align="left"><p><strong>r1</strong>/m = bitwise not <strong>r1</strong>/m</p></td>
@@ -565,7 +565,7 @@ These instructions adjust the **al** and **ah** registers after performing an un
 </tbody>
 </table>
 
- 
+ 
 
 The **test** instruction computes the logical AND operator and sets flags according to the result, but throws the result away. It is typically followed by a conditional jump instruction that tests the result of the logical AND.
 
@@ -578,13 +578,13 @@ The **test** instruction computes the logical AND operator and sets flags accord
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>SHL</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>cl</strong>/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m &lt;&lt;= <strong>cl</strong>/#n</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>SHR</p></td>
 <td align="left"><p><strong>r1</strong>/m, <strong>cl</strong>/#n</p></td>
 <td align="left"><p><strong>r1</strong>/m &gt;&gt;= <strong>cl</strong>/#n zero-fill</p></td>
@@ -598,7 +598,7 @@ The **test** instruction computes the logical AND operator and sets flags accord
 </tbody>
 </table>
 
- 
+ 
 
 The last bit shifted out is placed in the carry.
 
@@ -619,7 +619,7 @@ The last bit shifted out is placed in the carry.
 </tbody>
 </table>
 
- 
+ 
 
 Shift **r1** left by **cl**/\#n, filling with the top bits of **r2**/m. The last bit shifted out is placed in the carry.
 
@@ -638,7 +638,7 @@ Shift **r1** left by **cl**/\#n, filling with the top bits of **r2**/m. The last
 </tbody>
 </table>
 
- 
+ 
 
 Shift **r1** right by **cl**/\#n, filling with the bottom bits of **r2**/m. The last bit shifted out is placed in the carry.
 
@@ -672,7 +672,7 @@ Shift **r1** right by **cl**/\#n, filling with the bottom bits of **r2**/m. The 
 </tbody>
 </table>
 
- 
+ 
 
 Rotation is like shifting, except that the bits that are shifted out reappear as the incoming fill bits. The C-language version of the rotation instructions incorporate the carry bit into the rotation.
 
@@ -701,7 +701,7 @@ Rotation is like shifting, except that the bits that are shifted out reappear as
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Control_Flow"></span><span id="control_flow"></span><span id="CONTROL_FLOW"></span>Control Flow
 
@@ -714,25 +714,25 @@ Rotation is like shifting, except that the bits that are shifted out reappear as
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>J<em>cc</em></p></td>
 <td align="left"><p>dest</p></td>
 <td align="left"><p>Branch conditional.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>JMP</p></td>
 <td align="left"><p>dest</p></td>
 <td align="left"><p>Jump direct.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>JMP</p></td>
 <td align="left"><p><strong>r</strong>/m</p></td>
 <td align="left"><p>Jump indirect.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>CALL</p></td>
 <td align="left"><p>dest</p></td>
 <td align="left"><p>Call direct.</p></td>
@@ -746,7 +746,7 @@ Rotation is like shifting, except that the bits that are shifted out reappear as
 </tbody>
 </table>
 
- 
+ 
 
 The **call** instruction pushes the return address onto the stack then jumps to the destination.
 
@@ -767,7 +767,7 @@ The **call** instruction pushes the return address onto the stack then jumps to 
 </tbody>
 </table>
 
- 
+ 
 
 The **ret** instruction pops and jumps to the return address on the stack. A nonzero *\#n* in the **RET** instruction indicates that after popping the return address, the value *\#n* should be added to the stack pointer.
 
@@ -796,7 +796,7 @@ The **ret** instruction pops and jumps to the return address on the stack. A non
 </tbody>
 </table>
 
- 
+ 
 
 These instructions are remnants of the x86's CISC heritage and in recent processors are actually slower than the equivalent instructions written out the long way.
 
@@ -810,7 +810,7 @@ These instructions are remnants of the x86's CISC heritage and in recent process
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>MOVS<em>T</em></p></td>
 <td align="left"><p>Move <em>T</em> from <strong>esi</strong> to <strong>edi.</strong></p></td>
 </tr>
@@ -830,14 +830,14 @@ These instructions are remnants of the x86's CISC heritage and in recent process
 <td align="left"><p>Load <em>T</em> from <strong>esi</strong> into acc<em>T.</em></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>STOS<em>T</em></p></td>
 <td align="left"><p>Store <em>T</em> to <strong>edi</strong> from acc<em>T.</em></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 After performing the operation, the source and destination register are incremented or decremented by sizeof(*T*), according to the setting of the direction flag (up or down).
 
@@ -894,7 +894,7 @@ The **rep stos** instruction is used to fill a block of memory with acc*T*.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Interlocked_Instructions"></span><span id="interlocked_instructions"></span><span id="INTERLOCKED_INSTRUCTIONS"></span>Interlocked Instructions
 
@@ -923,7 +923,7 @@ The **rep stos** instruction is used to fill a block of memory with acc*T*.
 </tbody>
 </table>
 
- 
+ 
 
 The **cmpxchg** instruction is the atomic version of the following:
 
@@ -980,7 +980,7 @@ done:
 </tbody>
 </table>
 
- 
+ 
 
 Here is a special case of the **int** instruction.
 
@@ -999,7 +999,7 @@ Here is a special case of the **int** instruction.
 </tbody>
 </table>
 
- 
+ 
 
 The opcode for **INT 3** is 0xCC. The opcode for **NOP** is 0x90.
 
@@ -1016,13 +1016,13 @@ When debugging code, you may need to patch out some code. You can do this by rep
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong><em></strong></p></td>
 <td align="left"><p>XOR</p></td>
 <td align="left"><p><strong>r</strong>, <strong>r</strong></p></td>
 <td align="left"><p><strong>r</strong> = 0</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p><strong></em></strong></p></td>
 <td align="left"><p>TEST</p></td>
 <td align="left"><p><strong>r</strong>, <strong>r</strong></p></td>
 <td align="left"><p>Check if <strong>r</strong> = 0.</p></td>
@@ -1036,11 +1036,11 @@ When debugging code, you may need to patch out some code. You can do this by rep
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,9 +63,9 @@ The following illustration shows the video pipelines used by the VMR to process 
 
 The VMR uses the first pipeline if the application does not request any alpha blending or mirroring of the video image. The VMR uses the second pipeline if the application requests either alpha blending or mirroring of the video image.
 
- 
+ 
 
- 
+ 
 
 
 

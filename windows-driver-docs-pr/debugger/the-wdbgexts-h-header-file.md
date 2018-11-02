@@ -18,9 +18,9 @@ Routines in the wdbgexts.h header file are used to write DbgEng extensions and W
 
 For details on the wdbgexts.h header file and information about how to write debugger extensions, see [Writing WdbgExts Extensions](writing-wdbgexts-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

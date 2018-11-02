@@ -38,9 +38,9 @@ The Microsoft Windows 2000 and later print spooler is made up of a set of Micros
 
 -   For Windows 7, print drivers can run in a separate process from the spooler. This feature is called [Printer Driver Isolation](printer-configuration.md).
 
- 
+ 
 
- 
+ 
 
 
 

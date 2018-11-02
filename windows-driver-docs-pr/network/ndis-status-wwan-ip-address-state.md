@@ -48,9 +48,9 @@ Requirements
 
 [**NDIS\_WWAN\_IP\_ADDRESS\_STATE**](https://msdn.microsoft.com/library/windows/hardware/dn449746)
 
- 
+ 
 
- 
+ 
 
 
 

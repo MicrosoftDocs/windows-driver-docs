@@ -18,9 +18,9 @@ For an example of how to use unsigned provisioning metadata together with privil
 
 [Integrating Windows with wireless hotspots](integrating-windows-with-wireless-hotspots.md)
 
- 
+ 
 
- 
+ 
 
 
 

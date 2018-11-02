@@ -37,9 +37,9 @@ When tearing down a call, a call manager or MCM driver [deactivates the VC](deac
 
 After a call is torn down, the creator of the VC (a connection-oriented client, call manager, or MCM driver) can either initiate the [deletion of the VC](deleting-a-vc.md) or use the VC for another call.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -68,9 +68,9 @@ The only pin that the minidriver must interact with under normal circumstances i
 
 To simplify the diagrams above, requesters and allocators were omitted from the diagrams. The diagrams are intended to demonstrate only the frame splitting process.
 
- 
+ 
 
- 
+ 
 
 
 

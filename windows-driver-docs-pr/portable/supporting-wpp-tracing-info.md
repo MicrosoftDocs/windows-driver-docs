@@ -149,9 +149,9 @@ After you update the DllMain routine, update each .CPP source file and include t
 
 [WDK and Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286)
 
- 
+ 
 
- 
+ 
 
 
 

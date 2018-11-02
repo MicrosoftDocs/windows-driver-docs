@@ -54,13 +54,13 @@ If you do not use either [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or 
 
 **Note**  If your driver uses UMDF version 1.11 or later, you do not need to use [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or **!wmitrace.tmffile**.
 
- 
+ 
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension cannot be used with them.
 
- 
+ 
 
- 
+ 
 
 
 

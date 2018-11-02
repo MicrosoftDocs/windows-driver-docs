@@ -21,9 +21,9 @@ Therefore the most practical approach here is to implement a separate UI for con
 
 3.  Create or modify an [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) for installing and registering your DLL
 
- 
+ 
 
- 
+ 
 
 
 

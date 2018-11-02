@@ -33,9 +33,9 @@ The following list details the features that devices, adapters, and miniport dri
 
 -   RAID Adapters that expose virtual logical units are required to support SCSI Inquiry Vital Product Data pages 00h, 80h, and 83h. For example, a host-based RAID adapter must respond to a SCSI Inquiry command with Vital Product Data Page set to 01h for the following pages: 0 (supported vital product data pages), 80h (unit serial number page), and 83h (device identification page). These commands can be handled either by the adapter's firmware or synthesized in the miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

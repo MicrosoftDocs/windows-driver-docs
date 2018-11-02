@@ -17,9 +17,9 @@ For information about the **tracelog -enable** command, see [**Tracelog Command 
 
 You can also use [TraceView](traceview.md) to change the flags or levels in a trace session that you started by using TraceView. The graphical user interface makes it easy to see what properties can be changed while the session runs, and to change them.
 
- 
+ 
 
- 
+ 
 
 
 

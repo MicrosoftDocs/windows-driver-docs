@@ -41,13 +41,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Operator](operator.md)</p></td>
+<td><p><a href="operator.md" data-raw-source="[Operator](operator.md)">Operator</a></p></td>
 <td><p>Specifies the details of the operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -72,9 +72,9 @@ There are no parent elements.
 
 The OperatorList element is required.
 
- 
+ 
 
- 
+ 
 
 
 

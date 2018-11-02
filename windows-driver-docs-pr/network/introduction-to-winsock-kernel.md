@@ -18,11 +18,11 @@ Kernel-mode network modules targeted for Windows Vista and later versions of Mic
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ Windows provides two (standard) XPS filters to support built-in conversion from 
 
 The Windows-provided filters are available for both print class drivers and model-specific v4 print drivers. These XPS filters can be combined with IHV Feature Filters as well as IHV Post-processing filters, as needed in order to ensure compatibility with existing firmware implementations.
 
-**Note**  These Windows-provided XPS filters are not re-distributable, and are not available to v3 print drivers.
+**Note**  These Windows-provided XPS filters are not re-distributable, and are not available to v3 print drivers.
 
- 
+
 
 ## The Manifest file
 
@@ -53,7 +53,6 @@ Sample configuration file that specifies conversion to PostScript.
     <Output guid="{65bb7f1b-371e-4571-8ac7-912f510c1a38}" comment="IID_IPrintWriteStream" />
   </Filter>  
 </Filters>
-
 ```
 
 ## Supported Features
@@ -83,9 +82,9 @@ For more information about the PrintTicket features supported by standard XPS fi
 ## Retrieving PrintTicket in Post-processing Filters
 
 
-In the v4 driver model that was released with Windows 8, when you added a post-processing filter after one of the MSxps filters, you sometimes also had to add a pre-processing filter. Adding the pre-processing filter was necessary to capture the job-level print ticket. But this approach essentially added an object model-based filter, before one of the stream-based MSxps filters, resulting in deserialization, and then serialization of the print data to simply extract a PrintTicket.
+In the v4 driver model that was released with Windows 8, when you added a post-processing filter after one of the MSxps filters, you sometimes also had to add a pre-processing filter. Adding the pre-processing filter was necessary to capture the job-level print ticket. But this approach essentially added an object model-based filter, before one of the stream-based MSxps filters, resulting in deserialization, and then serialization of the print data to simply extract a PrintTicket.
 
-In Windows 8.1, the user default PrintTicket is merged with the Job-level PrintTicket in the MSxps filters, and the merged PrintTicket then is added to the Print Filter Pipeline’s property bag. The merged PrintTicket is added to Print Filter Pipeline’s property bag in the same manner as the User PrintTicket. The property is named as follows:
+In Windows 8.1, the user default PrintTicket is merged with the Job-level PrintTicket in the MSxps filters, and the merged PrintTicket then is added to the Print Filter Pipeline’s property bag. The merged PrintTicket is added to Print Filter Pipeline’s property bag in the same manner as the User PrintTicket. The property is named as follows:
 
 ```cpp
 #define XPS_FP_JOB_LEVEL_PRINTTICKET    "JobPrintTicket"
@@ -93,9 +92,9 @@ In Windows 8.1, the user default PrintTicket is merged with the Job-level Print
 
 During InitializeFilter, the MTI Filters will add an implementation of [IPrintReadStreamFactory](https://msdn.microsoft.com/library/windows/hardware/ff554338) into the property bag. This interface’s one method, **GetStream**, will block until the PrintTicket stream is available. This provides a means of synchronizing access to the property.
 
-**Important**  : If **GetStream** is called from InitializeFilter, it WILL cause a deadlock.
+**Important**  : If **GetStream** is called from InitializeFilter, it WILL cause a deadlock.
 
- 
+
 
 ## Other Features
 
@@ -171,7 +170,7 @@ By default, the XPS to PCL6 and XPS to PS filters handle duplex printing of docu
 | GPD       | \*SuppressExtraBacksidePages?: TRUE  |
 | PPD       | \*MSSuppressExtraBacksidePages: True |
 
- 
+
 
 ## Optimizing SetPageDevice commands
 

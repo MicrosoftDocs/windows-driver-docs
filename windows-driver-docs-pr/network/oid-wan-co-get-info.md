@@ -21,7 +21,6 @@ The OID\_WAN\_CO\_GET\_INFO OID requests the miniport driver to return informati
          OUT ULONG FramingBits;
          OUT ULONG DesiredACCM;
     } NDIS_WAN_CO_INFO, *PNDIS_WAN_CO_INFO;
-  
 ```
 
 
@@ -155,9 +154,9 @@ Requirements
 
 [**WAN\_CO\_LINKPARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff565819)
 
- 
 
- 
+
+
 
 
 

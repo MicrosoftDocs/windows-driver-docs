@@ -32,9 +32,9 @@ You can also learn more about porting send and receive operations in the followi
 
 [Porting CoNDIS Protocol Driver Receive Data Handling](porting-condis-protocol-driver-receive-data-handling.md)
 
- 
+ 
 
- 
+ 
 
 
 

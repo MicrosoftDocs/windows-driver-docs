@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -28,9 +28,9 @@ This section includes the following topics:
 
 [Specifying a NetDMA Provider Friendly Name](specifying-a-netdma-provider-friendly-name.md)
 
- 
+ 
 
- 
+ 
 
 
 

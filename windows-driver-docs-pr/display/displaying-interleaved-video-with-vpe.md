@@ -26,9 +26,9 @@ Many methods exist for deinterlacing. Professional television producers use devi
 
 Two simple methods are available for displaying interlace on a progressive computer monitor: [bob](bob-method.md) and [weave](weave-method.md). These terms are used here for simplicity, because computer and television industry terms are different.
 
- 
+ 
 
- 
+ 
 
 
 

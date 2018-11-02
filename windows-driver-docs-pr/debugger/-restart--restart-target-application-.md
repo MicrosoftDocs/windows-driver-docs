@@ -51,7 +51,7 @@ Do not confuse this command with the [**.restart (Restart Kernel Connection)**](
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,9 +68,9 @@ After the process is restarted, it immediately breaks into the debugger.
 
 In WinDbg, use the [View | WinDbg Command Line](view---windbg-command-line.md) command if you started your target from the WinDbg command prompt and you want to review this command line before you decide whether to use **.restart**.
 
- 
+ 
 
- 
+ 
 
 
 

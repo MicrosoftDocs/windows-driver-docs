@@ -26,9 +26,9 @@ To know when network connectivity changes, use the [**AccountUpdated**](https://
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

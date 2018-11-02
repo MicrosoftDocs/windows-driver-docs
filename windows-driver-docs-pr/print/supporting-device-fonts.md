@@ -26,9 +26,9 @@ If a printer provides device fonts, the printer graphics DLL must define a [**Dr
 [**DrvQueryFontTree**](https://msdn.microsoft.com/library/windows/hardware/ff556266)
 For more information about supporting device fonts, see [Supporting Graphics DDI Font and Text Functions](https://msdn.microsoft.com/library/windows/hardware/ff569868).
 
- 
+ 
 
- 
+ 
 
 
 

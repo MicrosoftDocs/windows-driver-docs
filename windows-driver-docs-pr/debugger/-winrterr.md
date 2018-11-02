@@ -57,7 +57,7 @@ The following table describes the possible values for *Mode*.
 </tbody>
 </table>
 
- 
+ 
 
 If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the debugger has broken in as a result of a Windows Runtime error, the error and related text are also displayed.
 
@@ -70,9 +70,9 @@ If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the 
 
 [**!hstring2**](-hstring2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ This section includes:
 
 [Critical Regions and Guarded Regions](critical-regions-and-guarded-regions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_FLOPPY [device interface class](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**FloppyClassGuid**](floppyclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,11 +43,11 @@ Following are examples of the frame-rate conversion modes that can be supported 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

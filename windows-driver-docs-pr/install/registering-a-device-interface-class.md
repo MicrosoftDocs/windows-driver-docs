@@ -34,9 +34,9 @@ The driver also uses the symbolic link name to access the registry key, in which
 
 A driver can call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) as many times as necessary to register instances of additional device interface classes.
 
- 
+ 
 
- 
+ 
 
 
 

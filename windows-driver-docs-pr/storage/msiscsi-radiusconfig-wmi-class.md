@@ -50,9 +50,9 @@ class MSiSCSI_RADIUSConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563112) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

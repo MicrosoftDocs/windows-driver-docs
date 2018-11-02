@@ -57,7 +57,7 @@ Allows execution commands to be used.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +70,9 @@ With no parameters, **.allow\_exec\_cmds** will display whether execution comman
 
 Execution commands include [**g (Go)**](g--go-.md), [**t (Trace)**](t--trace-.md), [**p (Step)**](p--step-.md), and any other command or WinDbg graphical interface action that would cause the target to execute.
 
- 
+ 
 
- 
+ 
 
 
 

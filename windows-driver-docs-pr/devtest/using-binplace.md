@@ -24,9 +24,9 @@ BinPlace is controlled through a combination of the BinPlace command line, vario
 -   [BinPlace Macros and Environment Variables](binplace-macros-and-environment-variables.md)
 -   [**Place File Syntax**](place-file-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

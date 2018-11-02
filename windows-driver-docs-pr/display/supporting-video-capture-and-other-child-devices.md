@@ -25,7 +25,7 @@ To initialize the private interface, the video capture driver sends a [**IRP\_MN
 
 **Note**   If video capture is implemented as part of the display miniport driver, the video capture might call *DxgkDdiQueryInterface* directly.
 
- 
+ 
 
 Each driver of a child device (including video capture devices) must return the adapter GUID that indicates the hardware that the device is associated with. The adapter GUID is supplied to the display miniport driver in the **AdapterGuid** member of the [**DXGK\_START\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff562055) structure that is pointed to by the *DxgkStartInfo* parameter of the [**DxgkDdiStartDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560775) function that is sent when the adapter is initialized. User-mode capture components can subsequently map this adapter GUID to a display adapter.
 
@@ -37,9 +37,9 @@ The capture driver can report whether it supports capturing to system memory dir
 
 Because AVStream controls video capture, the DirectX graphics kernel subsystem is not aware of when video capture occurs. However, the graphics kernel subsystem is aware of the allocations that are used as capture buffers. When a capture buffer is about to be destroyed, the graphics kernel subsystem calls the display miniport driver's [**DxgkDdiStopCapture**](https://msdn.microsoft.com/library/windows/hardware/ff560776) function to indicate that the capture operation must immediately stop using an allocation as the capture buffer. If the capture operation has already been stopped through the capture stack, the driver can safely ignore the call.
 
- 
+ 
 
- 
+ 
 
 
 

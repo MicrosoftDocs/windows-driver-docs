@@ -48,7 +48,7 @@ Specifies the address to track leaked objects. This address is displayed in the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +110,9 @@ WdfTypeMemoryObject    Object: 0x030ecfb0, Interface: 0x030ecff0
 WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -58,7 +58,7 @@ The USB-IF core team has devised a special class and protocol code set that noti
 </tbody>
 </table>
 
- 
+ 
 
 These code values also alert versions of Windows that do not support IADs to install a special-purpose bus driver that correctly enumerates the device. Without these codes in the device descriptor, the system might fail to enumerate the device, or the device might not work properly.
 
@@ -91,7 +91,7 @@ The class and subclass fields of the IAD are not required to match the class and
 </tbody>
 </table>
 
- 
+ 
 
 The *bFirstInterface* field of the IAD indicates the number of the first interface in the function. The *bInterfaceCount* field of the IAD indicates how many interfaces are in the interface collection. Interfaces in an IAD interface collection must be contiguous (there can be no gaps in the list of interface numbers), and so a count with a first interface number is sufficient to specify all of the interfaces in the collection.
 

@@ -15,10 +15,10 @@ The following table summarizes these property sheets and their use in terms of t
 
 **Note**  In the Windows Driver Kit (WDK) 8, the names of the driver property sheet files included the kit version number (8.0), for example, **WindowsDriver8.0.KernelMode.ExportDriver.props**.
 
- 
+ 
 
 <span id="__WDKContentRoot_"></span><span id="__wdkcontentroot_"></span><span id="__WDKCONTENTROOT_"></span>**$(WDKContentRoot)**  
-By default, WDKContentRoot is defined in the registry as: **$(Registry:HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Kits\\WDK@WDKContentRoot)** which points to **%programfiles%\\Windows Kits\\*version***.
+By default, WDKContentRoot is defined in the registry as: <strong>$(Registry:HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Kits\\WDK@WDKContentRoot)</strong> which points to **%programfiles%\\Windows Kits\\*version***.
 
 $(WDKContentRoot)\\build will have all the core build extensions that are needed to build a driver.
 
@@ -67,9 +67,9 @@ These property settings are the common settings that are required to build any u
 <span id="WindowsDriver.UserMode.UMDF"></span><span id="windowsdriver.usermode.umdf"></span><span id="WINDOWSDRIVER.USERMODE.UMDF"></span>**WindowsDriver.UserMode.UMDF**  
 These property settings are the special settings that you must apply when you build a UMDF driver. MSBuild uses the **$(DriverType)** property to specify the driver type as **UMDF**, as in the following example: *&lt;DriverType&gt;UMDF&lt;/DriverType&gt;*.
 
- 
+ 
 
- 
+ 
 
 
 

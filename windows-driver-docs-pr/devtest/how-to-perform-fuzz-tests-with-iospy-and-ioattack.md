@@ -46,7 +46,7 @@ To perform fuzz tests by using [IoSpy](iospy.md) and [IoAttack](ioattack.md), do
 
     **Note**  When you uninstall IoSpy, it will not delete the IoSpy data file. The location of this file is set by the *DFD* parameter to the **Enable I/O Spy** test. The default location is %SystemDrive%\\DriverTest\\IoSpy. For more information, see [IoSpy Data File](iospy.md).
 
-     
+     
 
 4.  Run [IoAttack](ioattack.md):
 
@@ -54,11 +54,11 @@ To perform fuzz tests by using [IoSpy](iospy.md) and [IoAttack](ioattack.md), do
 
     **Note**   In order to verify the access privileges of your driver's IOCTL and WMI interfaces, you should run [IoAttack](ioattack.md) accounts with different privileges, such as a guest account and an administrator account.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

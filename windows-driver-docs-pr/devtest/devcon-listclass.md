@@ -21,19 +21,17 @@ Lists all devices in the specified device setup classes. Valid on local and remo
 
 ```
     devcon [/m:\\computer] listclass class [class...] 
-
-   
 ```
 
 ## <span id="ddk_devcon_listclass_tools"></span><span id="DDK_DEVCON_LISTCLASS_TOOLS"></span>Parameters
 
 
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\***computer*   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
 Runs the command on the specified remote computer. The backslashes are required.
 
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
+**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
- 
+
 
 <span id="_______class______"></span><span id="_______CLASS______"></span> *class*   
 Specifies a device setup class. No equal sign (=) is required.
@@ -59,9 +57,9 @@ devcon /m:\\Server01 listclass SmartCardReader
 
 [Example 7: List the devices in multiple classes on a remote computer](devcon-examples.md#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
 
- 
 
- 
+
+
 
 
 

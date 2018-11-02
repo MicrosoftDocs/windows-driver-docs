@@ -32,9 +32,9 @@ When sleep, hibernation, or shutdown is required, the power manager requests the
 
 For more information, see [Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

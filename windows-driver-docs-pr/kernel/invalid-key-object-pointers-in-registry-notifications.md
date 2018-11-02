@@ -34,9 +34,9 @@ Because the **Object** member points to a key object that is not in a valid stat
 
 However, during a [*RegistryCallback*](https://msdn.microsoft.com/library/windows/hardware/ff560903) call to handle a **RegNtPreKeyHandleClose** or **RegNtPostKeyHandleClose** notification, a registry filter driver can call a [configuration manager routine](https://msdn.microsoft.com/library/windows/hardware/ff542038) (for example, [**CmGetBoundTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff541905)) that takes a registry object as a parameter.
 
- 
+ 
 
- 
+ 
 
 
 

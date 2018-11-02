@@ -55,9 +55,9 @@ The messages are copied in a tab-delimited format. You can paste them into a tex
 
 For more information about saving trace messages, see [Creating Text Versions of Trace Logs](creating-text-versions-of-trace-logs.md).
 
- 
+ 
 
- 
+ 
 
 
 

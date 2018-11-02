@@ -44,12 +44,12 @@ User-mode applications access keys relative to global handles, such as HKEY\_LOC
 </tr>
 <tr class="even">
 <td><p>HKEY_CURRENT_USER</p></td>
-<td><p>No simple kernel-mode equivalent, but see [Registry Run-Time Library Routines](registry-run-time-library-routines.md)</p></td>
+<td><p>No simple kernel-mode equivalent, but see <a href="registry-run-time-library-routines.md" data-raw-source="[Registry Run-Time Library Routines](registry-run-time-library-routines.md)">Registry Run-Time Library Routines</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A driver can manipulate a registry-key object by performing the following steps:
 
@@ -59,9 +59,9 @@ A driver can manipulate a registry-key object by performing the following steps:
 
 3.  Close the handle by calling [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417).
 
- 
+ 
 
- 
+ 
 
 
 

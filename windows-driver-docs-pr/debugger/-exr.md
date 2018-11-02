@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!exr** extension command is obsolete. Use the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

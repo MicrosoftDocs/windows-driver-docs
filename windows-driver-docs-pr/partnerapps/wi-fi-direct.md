@@ -23,7 +23,7 @@ Developers of desktop applications can use this sample to see how to replace the
 
 **Note**  In Classic Windows apps, you don’t need to set the WinRT device capabilities because there is no Package.appxmanifest file.
 
- 
+ 
 
 ## Resources
 
@@ -44,9 +44,9 @@ Developers of desktop applications can use this sample to see how to replace the
 -   [Ask the experts panel: Connected apps](http://go.microsoft.com/fwlink/?LinkId=617637)
 -   [Building Windows Apps That Use Wi-Fi Direct (Windows 8.1)](http://go.microsoft.com/fwlink/?LinkId=617638)
 
- 
+ 
 
- 
+ 
 
 
 

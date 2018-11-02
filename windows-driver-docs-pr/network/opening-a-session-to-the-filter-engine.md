@@ -33,9 +33,9 @@ status =
 
 After a callout driver has successfully opened a session to the filter engine, it can use the returned handle to call the other Windows Filtering Platform management functions.
 
- 
+ 
 
- 
+ 
 
 
 

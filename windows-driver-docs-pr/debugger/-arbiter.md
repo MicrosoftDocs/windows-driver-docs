@@ -66,7 +66,7 @@ Do not display aliases.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -118,7 +118,7 @@ The flags have the following meanings:
 </tbody>
 </table>
 
- 
+ 
 
 Here is an example:
 
@@ -155,9 +155,9 @@ AttachedDevice (Upper) 80d78b28 \Driver\i8042prt
 Device queue is not busy.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

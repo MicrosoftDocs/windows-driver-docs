@@ -35,9 +35,9 @@ Starting from the bottom of the figure, the following list describes each device
 
 5.  The partition manager creates an FDO for each disk partition.
 
- 
+ 
 
- 
+ 
 
 
 

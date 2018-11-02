@@ -55,7 +55,7 @@ The SYSTEM\_EXIT\_OWNED\_MUTEX bug check has a value of 0x00000039. This indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -71,9 +71,9 @@ kd&gt; ln address
 
 Where address is the worker routine given in Parameter 1.
 
- 
+ 
 
- 
+ 
 
 
 

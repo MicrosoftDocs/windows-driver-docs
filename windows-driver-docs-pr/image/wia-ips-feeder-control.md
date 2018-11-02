@@ -48,7 +48,7 @@ The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTR
 <tbody>
 <tr class="odd">
 <td><p>WIA_FEEDER_CONTROL_AUTO</p></td>
-<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job ([<strong>IWiaMiniDrv::drvAcquireItemData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543956) call). This is the required default value if the property is supported.</p></td>
+<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job (<a href="https://msdn.microsoft.com/library/windows/hardware/ff543956" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543956)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> call). This is the required default value if the property is supported.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_FEEDER_CONTROL_MANUAL</p></td>
@@ -57,7 +57,7 @@ The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTR
 </tbody>
 </table>
 
- 
+ 
 
 When the device supports this feature, the WIA application can use it to start the feeder motor before executing the first scan job (the first **IWiaTransfer::Download** call) and stop the feeder after the last scan job (the last **IWiaTransfer::Download** call in the current WIA application session) is complete. Between the individual jobs (**IWiaTransfer::Download** calls), the feeder is kept to its operating speed and is ready to continue the next job without delay.
 
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

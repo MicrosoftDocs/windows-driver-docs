@@ -29,9 +29,9 @@ The following topics provide more information about intermediate driver initiali
 -   [Initializing a Virtual Miniport](initializing-a-virtual-miniport.md)
 -   [Halting a Virtual Miniport](halting-a-virtual-miniport.md)
 
- 
+ 
 
- 
+ 
 
 
 

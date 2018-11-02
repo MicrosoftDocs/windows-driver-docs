@@ -19,11 +19,11 @@ If a device driver is affected by changes to the amount of physical memory, it m
 
 **Note**  Starting with Windows Server 2008, the size of the paged and nonpaged system memory pools do not change after the operating system has started. Therefore, if you add memory to the hardware partition, the amount of memory in these system memory pools does not change.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

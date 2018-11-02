@@ -27,7 +27,7 @@ The capabilities that are currently enabled can be a subset of the capabilities 
 
 **Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure, it issues the OID set request of OID\_PM\_PARAMETERS directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
 
- 
+ 
 
 NDIS or the miniport driver returns one of the following status codes for the request:
 
@@ -75,9 +75,9 @@ Requirements
 
 [OID\_PM\_HARDWARE\_CAPABILITIES](oid-pm-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

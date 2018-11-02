@@ -43,7 +43,7 @@ The KSMFT_CATEGORY_VIDEO_PROCESSOR [device interface class](https://msdn.microso
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

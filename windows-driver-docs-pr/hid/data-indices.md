@@ -26,9 +26,9 @@ Capability structures cross-reference usages and data indices in the following w
 
 For more information about how to use data indices, see [Extracting and Setting Control Data by Data Indices](extracting-and-setting-control-data-by-data-indices.md).
 
- 
+ 
 
- 
+ 
 
 
 

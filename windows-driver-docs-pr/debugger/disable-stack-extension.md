@@ -41,15 +41,15 @@ The **Disable stack extension** flag prevents the kernel from extending the stac
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 This feature is used to simulate low memory conditions (where stack extensions fail) and to test the strategic system processes that are expected to run well even with low memory.
 
- 
+ 
 
- 
+ 
 
 
 

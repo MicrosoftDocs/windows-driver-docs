@@ -50,7 +50,7 @@ The KSPROPERTY\_AUDIO\_BUFFER\_DURATION property allows the size of the client a
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type ULONG and represents the client buffer duration that is measured in milliseconds.
 
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

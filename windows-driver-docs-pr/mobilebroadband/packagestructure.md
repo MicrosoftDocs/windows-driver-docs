@@ -48,13 +48,13 @@ Four or more [Metadata](metadata-service-schema.md) elements are required.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Metadata](metadata-service-schema.md)</p></td>
-<td><p>The [Metadata](metadata-service-schema.md) element specifies the XML schemas that are referenced through the device metadata package.</p></td>
+<td><p><a href="metadata-service-schema.md" data-raw-source="[Metadata](metadata-service-schema.md)">Metadata</a></p></td>
+<td><p>The <a href="metadata-service-schema.md" data-raw-source="[Metadata](metadata-service-schema.md)">Metadata</a> element specifies the XML schemas that are referenced through the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -72,13 +72,13 @@ Four or more [Metadata](metadata-service-schema.md) elements are required.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element is the parent element of the [PackageInfo XML schema](packageinfo-xml-schema.md). The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element is the parent element of the <a href="packageinfo-xml-schema.md" data-raw-source="[PackageInfo XML schema](packageinfo-xml-schema.md)">PackageInfo XML schema</a>. The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -109,9 +109,9 @@ A minimum of four instances of the [Metadata](metadata-service-schema.md) elemen
 
 The PackageStructure element is required.
 
- 
+ 
 
- 
+ 
 
 
 

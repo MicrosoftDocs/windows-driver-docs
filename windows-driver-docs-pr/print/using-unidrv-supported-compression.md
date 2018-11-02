@@ -36,9 +36,9 @@ For more information about CmdEnableTIFF4, CmdEnableDRC, CmdEnableFE\_RLE, and C
 
 For more information about CmdSendBlockData, see [Raster Data Emission Commands](raster-data-emission-commands.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ For a description of the D3DTRANSFORMSTATE\_WORLD *n* transformation states, see
 
 Even though additional blending world matrices have been defined with the **IDirect3DDevice7::SetTransform** method (described in the Direct3D SDK documentation), the contributions (that is, weights) of any matrices beyond the number specified in this render state are set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

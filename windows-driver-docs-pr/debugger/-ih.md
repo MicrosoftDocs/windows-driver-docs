@@ -25,7 +25,7 @@ The **!ih** extension displays the interrupt history record for the specified pr
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -52,7 +52,7 @@ Specifies a processor. If *Processor* is omitted, the current processor is used.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium-based target computer.
 
@@ -96,9 +96,9 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

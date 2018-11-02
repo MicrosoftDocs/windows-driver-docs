@@ -20,9 +20,9 @@ If a hardware platform does not implement hardware or firmware that is compatibl
 
 Error record persistence is supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

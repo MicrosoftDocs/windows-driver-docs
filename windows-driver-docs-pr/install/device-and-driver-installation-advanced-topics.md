@@ -13,7 +13,7 @@ This section provides advanced information for device and driver installation.
 
 **Note**   Before you review the topics in this section, we recommend that you study and understand the information in the [Device and Driver Installation Fundamental Topics](device-and-driver-installation-fundamental-topics.md).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -33,9 +33,9 @@ This section includes the following topics:
 
 [Troubleshooting Device and Driver Installations](troubleshooting-device-and-driver-installations.md)
 
- 
+ 
 
- 
+ 
 
 
 

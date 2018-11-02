@@ -23,9 +23,9 @@ Clients close their handles to transaction objects by calling [**ZwClose**](http
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

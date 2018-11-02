@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The reason for sending an indication. See [**WDI\_P2P\_CHANNEL\_INDICATE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn926090) for possible reasons. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

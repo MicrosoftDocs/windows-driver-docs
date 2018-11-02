@@ -25,9 +25,9 @@ To open the **Call Stack** window in Visual Studio, from the **Debug** menu, cho
 
 In the Debugger Immediate Window, you can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands. If the Debugger Immediate window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
 
- 
+ 
 
- 
+ 
 
 
 

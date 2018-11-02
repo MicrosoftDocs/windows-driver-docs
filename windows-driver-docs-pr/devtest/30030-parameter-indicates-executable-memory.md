@@ -23,15 +23,15 @@ Use one of the following options:
 -   Specify the preprocessor definition [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) in the sources/project settings.
 -   Specify the pre-processor definition [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) in the sources/project settings and call **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** from the driver initialization function (**DriverEntry** or **DllInitialize**).
 
-**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) or [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
+**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) or [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
 
- 
 
-**Note**  You may see a false positive warning if one of the following conditions is true:
+
+**Note**  You may see a false positive warning if one of the following conditions is true:
 -   The driver initialization function calls another function that calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)**
 -   You are creating a **DRIVER\_LIBRARY** and have specified [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) but have no initialization function.
 
- 
+
 
 -   Change the allocation type to a non-executable type.
 
@@ -80,7 +80,7 @@ DriverEntry (
 
 **Example (Change the allocation type):**
 
-For the **MM\_PAGE\_PRIORITY** type you can fix this by adding the **MdlMappingNoExecute** flag to the priority type. This is only supported on Windows 8 and later.
+For the **MM\_PAGE\_PRIORITY** type you can fix this by adding the **MdlMappingNoExecute** flag to the priority type. This is only supported on Windows 8 and later.
 
 The following code generates a warning:
 
@@ -96,7 +96,7 @@ pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority | MdlMappingNoExec
 
 **Example (POOL\_TYPE)**
 
-For the **POOL\_TYPE** type you can fix this by changing the request type to the non-executable version of the type. This is only supported on Windows 8 and later.
+For the **POOL\_TYPE** type you can fix this by changing the request type to the non-executable version of the type. This is only supported on Windows 8 and later.
 
 The following code generates a warning:
 
@@ -162,7 +162,6 @@ Status = ZwMapViewOfSection(   handle,
                 MEM_LARGE_PAGES,
                 PAGE_EXECUTE_READWRITE
                 ); 
-
 ```
 
 The following code avoids this warning:
@@ -179,7 +178,6 @@ Status = ZwMapViewOfSection(   handle,
                 MEM_LARGE_PAGES,
                 PAGE_READWRITE
                 ); 
-
 ```
 
 ## <span id="For_defects_involving_cache_types_"></span><span id="for_defects_involving_cache_types_"></span><span id="FOR_DEFECTS_INVOLVING_CACHE_TYPES_"></span>For defects involving cache types:
@@ -255,9 +253,9 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 
 [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707)
 
- 
 
- 
+
+
 
 
 

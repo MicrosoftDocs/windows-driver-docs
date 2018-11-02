@@ -26,9 +26,9 @@ In the **Tracing Flags and Level Selection** dialog box, the **G** (GUID) icon r
     -   Right-click the **Flags** item, and then click **Set All Flags** or **Clear All Flags**.
 -   To save the changes, click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

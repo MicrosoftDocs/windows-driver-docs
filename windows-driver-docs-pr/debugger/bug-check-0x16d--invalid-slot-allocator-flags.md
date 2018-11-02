@@ -31,11 +31,11 @@ The INVALID\_SLOT\_ALLOCATOR\_FLAGS bug check has a value of 0x0000016D. This in
 | 3         | Reserved                                 |
 | 4         | Reserved                                 |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

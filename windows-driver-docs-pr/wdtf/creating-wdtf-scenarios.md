@@ -72,9 +72,9 @@ Set NonPhantomDevices = WDTF.DeviceDepot.Query ("IsAttached")
 
 For more attribute keywords, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
 
- 
+ 
 
- 
+ 
 
 
 

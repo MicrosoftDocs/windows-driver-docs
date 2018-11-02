@@ -40,9 +40,9 @@ The following command embeds a signature in *Toaster.sys* that is generated from
 SignTool sign /v /ac c:\lab\rsacertsrvcross.cer /s my /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

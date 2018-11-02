@@ -114,9 +114,9 @@ The spooler on MyClient performs the following operations:
 
 -   Calls the [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function in Mscms.dll, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
 
- 
+ 
 
- 
+ 
 
 
 

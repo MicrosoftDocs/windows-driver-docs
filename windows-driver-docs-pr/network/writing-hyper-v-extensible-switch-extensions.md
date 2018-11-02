@@ -27,11 +27,11 @@ The following topics provide information about how to write Hyper-V extensible s
 
 **Note**  Extensible switch extensions are based on the NDIS filter driver architecture. For more information, see [NDIS Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

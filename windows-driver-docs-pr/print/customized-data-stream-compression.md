@@ -31,9 +31,9 @@ If the printer minidriver contains GPD entries that also enable Unidrv-supported
 
 Only one customized compression method can be enabled at one time.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Specifies the 64-bit hexadecimal value to write to the MSR.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,9 +65,9 @@ The **wrmsr** command can display MSR's on x86-based, Itanium-based, and x64-bas
 
 [**rdmsr (Read MSR)**](rdmsr--read-msr-.md)
 
- 
+ 
 
- 
+ 
 
 
 

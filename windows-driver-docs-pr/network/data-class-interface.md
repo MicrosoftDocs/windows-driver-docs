@@ -56,11 +56,11 @@ The Data Class interface is described by a standard USB Interface Descriptor fol
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

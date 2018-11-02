@@ -32,7 +32,7 @@ Below is a short summary of how devices should behave during the connected stand
 | Rotation Lock                                                                                                                                                   | No                                           | Must not process                          | D3                                                        |
 | Generic Desktop Controls - Volume Up - Volume Down - Channel Down - Channel Up - Fast Forward - Track Forward - Track Back - Play - Pause - Record - Track Stop | No                                           | Must process                              | D0                                                        |
 
- 
+ 
 
 For more information about connected standby please refer to the [Understanding Connected Standby](http://go.microsoft.com/fwlink/p/?linkid=241608) video.
 
@@ -42,9 +42,9 @@ Devices on the I²C bus are enumerated by the Advanced Configuration and Power I
 
 The inbox HIDI²C miniport driver passes along the D-IRP from HIDClass. This allows ACPI to, in turn, power-manage the device.
 
- 
+ 
 
- 
+ 
 
 
 

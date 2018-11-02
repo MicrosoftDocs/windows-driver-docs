@@ -12,7 +12,7 @@ Using Microsoft Visual Studio to configure and set up driver deployment and driv
 
 **Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/Library/Windows/Hardware/Hh698272).
 
- 
+ 
 
 ## <span id="when_you_provision_a_computer_wdk_8_0"></span><span id="WHEN_YOU_PROVISION_A_COMPUTER_WDK_8_0"></span>When you provision a computer (WDK 8.0)
 
@@ -72,9 +72,9 @@ Removing provisioning does not change these items:
 -   Kernel debugging settings
 -   Test signing setting
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,7 +20,7 @@ This index value specifies the index for the network adapter that is connected t
 
 **Note**  NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX is defined to be zero.
 
- 
+ 
 
 <a href="" id="1-32"></a>1-32  
 This index value specifies the index for an underlying physical network adapter that is bound to the extensible switch external network adapter. Index values are assigned based on the following configurations:
@@ -31,15 +31,15 @@ This index value specifies the index for an underlying physical network adapter 
 
     **Note**  To extensible switch extensions, an underlying LBFO team appears as a single network adapter that is bound to the external network adapter.
 
-     
+     
 
 -   If the external network adapter is bound to an extensible switch team of physical network adapters, each adapter in the team is assigned a unique index value that is greater than or equal to one. An extensible switch team is a configuration in which a team of one or more physical network adapters is bound to the external network adapter.
 
 For more information about the different configurations in which physical network adapters can be bound to the external network adapter, see [Types of Physical Network Adapter Configurations](types-of-physical-network-adapter-configurations.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ If an application sends urgent data on a SAN, the Windows Sockets switch transfe
 
 7.  The switch at the remote peer delivers the data to an application in accordance with standard Windows Sockets procedures.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ This section includes the following topics:
 -   [Accessing INF Files from a Device Installation Application](accessing-inf-files-from-a-setup-application.md)
 -   [Providing Vendor Icons for the Shell and AutoPlay](providing-vendor-icons-for-the-shell-and-autoplay.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -77,9 +77,9 @@ for (i=0; i<ItemCount; i++) {
 WdfWaitLockRelease(CollectionLockHandle);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

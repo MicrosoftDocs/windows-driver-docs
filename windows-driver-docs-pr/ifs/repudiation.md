@@ -23,9 +23,9 @@ The concept of repudiation is that a user might perform a particular operation, 
 
 Additionally, the operating system can assign ownership of objects to specific security identifiers. The ownership information cannot be changed without appropriate privileges (**SeTakeOwnershipPrivilege**) in order to ensure that ownership of specific objects can be tracked. Object ownership provides another form of protection against repudiation.
 
- 
+ 
 
- 
+ 
 
 
 

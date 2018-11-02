@@ -32,9 +32,9 @@ REG\_SZ type containing the name of the vendor-supplied COM server implementing 
 <a href="" id="clsid--clsid-of-the-com-in-process-server--inprocserver32-threadingmodel"></a>CLSID\\&lt;CLSID of the COM in-process server&gt;\\InProcServer32\\ThreadingModel  
 REG\_SZ type containing the name of the threading model of the vendor-supplied COM server. Set this key to Apartment.
 
- 
+ 
 
- 
+ 
 
 
 

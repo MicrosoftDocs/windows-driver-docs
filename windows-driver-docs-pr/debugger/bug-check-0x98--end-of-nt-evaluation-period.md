@@ -55,16 +55,16 @@ The END\_OF\_NT\_EVALUATION\_PERIOD bug check has a value of 0x00000098. This bu
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 Your installation of the Windows operating system is an evaluation unit with an expiration date. The trial period is over.
 
- 
+ 
 
- 
+ 
 
 
 

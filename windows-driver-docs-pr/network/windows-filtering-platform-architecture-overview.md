@@ -26,9 +26,9 @@ The [filter engine](filter-engine.md) is the core of the Windows Filtering Platf
 
 The Windows Filtering Platform includes several built-in callouts. See [Built-in Callout Identifiers](https://msdn.microsoft.com/library/windows/hardware/ff543857) for a description of each of these callouts.
 
- 
+ 
 
- 
+ 
 
 
 

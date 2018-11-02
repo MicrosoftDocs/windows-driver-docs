@@ -153,7 +153,7 @@ Different types of device metadata packages must follow different rules. Additio
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Experience-rules"></span><span id="experience-rules"></span><span id="EXPERIENCE-RULES"></span>Experience rules
 
@@ -178,7 +178,7 @@ Device manufacturers are limited in the number of UWP apps that may be specified
 **Important**  
 There is no limit to the total number of UWP device apps that a device manufacturer can submit to the Microsoft Store; these limits apply only to a single device metadata package.
 
- 
+ 
 
 Mobile operators and OEMs have different limits on the number of apps that they can specify in device metadata. For more info, OEMs should contact their Microsoft OEM representative.
 
@@ -216,7 +216,7 @@ In each device metadata package, the following limits apply:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -227,9 +227,9 @@ In each device metadata package, the following limits apply:
 
 - [Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

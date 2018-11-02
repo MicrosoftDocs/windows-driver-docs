@@ -71,9 +71,9 @@ VID Xxxx PID Xxxx REV 0100  Xxxx Corporation
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ Because of similarities in the way both types of device classes are specified an
 
 [SetupAPI](setupapi.md) functions use [device information sets](device-information-sets.md) to expose the members of a class to user-mode code.
 
- 
+ 
 
- 
+ 
 
 
 

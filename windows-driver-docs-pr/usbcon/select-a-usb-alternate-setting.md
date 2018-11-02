@@ -61,7 +61,7 @@ Instructions
 
     **Note**  During device enumeration, the USB driver stack assigns numbers to the alternate settings. The interface numbers are zero-based and sequential. Those numbers might be different to the device-defined setting index. To obtain the device-defined setting index, call the [**WdfUsbInterfaceGetInterfaceNumber**](https://msdn.microsoft.com/library/windows/hardware/ff550065) method.
 
-     
+     
 
 2.  Initiate a select-interface request by calling the [**WdfUsbInterfaceSelectSetting**](https://msdn.microsoft.com/library/windows/hardware/ff550073) method. In the *Params* parameter of the call, choose one of these options:
 

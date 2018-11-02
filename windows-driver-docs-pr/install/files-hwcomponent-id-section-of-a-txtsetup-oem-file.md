@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # Files.HwComponent.ID Section of a TxtSetup.oem File
 
 
-A **Files.***HwComponent***.***ID* section lists the files to be copied if the user selects a particular component option. One of these sections must be present for each option listed in each *HwComponent* section.
+A **Files.**<em>HwComponent</em>**.**<em>ID</em> section lists the files to be copied if the user selects a particular component option. One of these sections must be present for each option listed in each *HwComponent* section.
 
 ``` syntax
 [Files.HwComponent.ID]
@@ -24,7 +24,7 @@ filetype = diskN,filename[,DriverKey]
 ...
 ```
 
-<a href="" id="files-hwcomponent-id"></a>**Files.***HwComponent***.***ID*  
+<a href="" id="files-hwcomponent-id"></a>**Files.**<em>HwComponent</em>**.**<em>ID</em>  
 *HwComponent* corresponds to the name of a *HwComponent* section in the file. *ID* corresponds to an *ID* entry in that *HwComponent* section.
 
 <a href="" id="filetype"></a>*filetype*  
@@ -57,9 +57,9 @@ Identifies the disk from which to copy the file. This value must match an entry 
 Specifies the name of the file, not including the directory path or drive. To form the full file name, Windows appends the *filename* to the directory specified for the disk in the **Disks** section. File names must not exceed eight characters, and extensions must not exceed three characters.
 
 <a href="" id="driverkey"></a>*DriverKey*  
-Specifies the name of the key to be created in the registry services tree for this file, if the file is of type **driver**. This value is used to form **Config.***DriverKey* section names. This value is required for components of type **scsi**.
+Specifies the name of the key to be created in the registry services tree for this file, if the file is of type **driver**. This value is used to form **Config.**<em>DriverKey</em> section names. This value is required for components of type **scsi**.
 
-The following example shows a **Files.***HwComponent***.***ID* section in a *TxtSetup.oem* file:
+The following example shows a **Files.**<em>HwComponent</em>**.**<em>ID</em> section in a *TxtSetup.oem* file:
 
 ``` syntax
 ; ...
@@ -71,9 +71,9 @@ catalog = d1, oemdrv.cat
 ; ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -61,9 +61,9 @@ Requirements
 
 [**WIA\_DPC\_THUMB\_HEIGHT**](wia-dpc-thumb-height.md)
 
- 
+ 
 
- 
+ 
 
 
 

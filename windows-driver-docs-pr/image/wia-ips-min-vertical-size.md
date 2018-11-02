@@ -51,9 +51,9 @@ Requirements
 
 [**WIA\_IPS\_MIN\_HORIZONTAL\_SIZE**](wia-ips-min-horizontal-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

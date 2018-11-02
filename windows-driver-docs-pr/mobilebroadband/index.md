@@ -20,9 +20,9 @@ Use the docs in this section to learn more about mobile broadband and how to con
 
 -   [Mobile operator scenarios](mobile-operator-scenarios-b-mb.md)
 
- 
+ 
 
- 
+ 
 
 
 

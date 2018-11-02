@@ -30,9 +30,9 @@ For more information about template data types, see the following sections:
 
 [Data Type Template Inheritance](data-type-template-inheritance.md)
 
- 
+ 
 
- 
+ 
 
 
 

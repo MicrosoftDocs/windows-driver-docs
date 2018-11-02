@@ -62,9 +62,9 @@ As shown in the figure, there are three basic types of kernel-mode drivers in a 
 
     -   [*Legacy drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556305#wdkgloss-legacy-driver) that directly control a physical device are lowest-level drivers.
 
- 
+ 
 
- 
+ 
 
 
 

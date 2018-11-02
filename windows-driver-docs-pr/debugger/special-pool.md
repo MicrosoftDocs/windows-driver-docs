@@ -39,7 +39,7 @@ The **Special Pool** feature configures Windows to request memory allocations fr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="selecting_a_pool_tag"></span><span id="SELECTING_A_POOL_TAG"></span>Selecting a Pool Tag
 
@@ -92,7 +92,7 @@ On a computer with an x86 processor, PAGE\_SIZE is 0x1000 and the allocation siz
 </tbody>
 </table>
 
- 
+ 
 
 On a computer with an AMD x86-64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16 bytes in length. To configure the Special Pool feature for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -131,9 +131,9 @@ On a computer with an AMD x86-64 processor, PAGE\_SIZE is 0x1000 and the allocat
 </tbody>
 </table>
 
- 
+ 
 
-On a computer with any processor, you can use an asterisk ( **\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
+On a computer with any processor, you can use an asterisk ( **\\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -153,9 +153,9 @@ On Windows Vista and later versions of Windows, you can configure the Special Po
 
 On Windows Vista and later versions of Windows, you can configure the Special Pool feature either by using the Global Flags dialog box or at the command line. In earlier version of Windows, this feature is available only in the Global Flags dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

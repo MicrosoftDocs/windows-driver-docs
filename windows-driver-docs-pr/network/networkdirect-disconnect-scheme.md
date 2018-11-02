@@ -36,9 +36,9 @@ A consumer should typically call *NdDisconnect* only after it gets completions f
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

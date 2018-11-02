@@ -124,9 +124,9 @@ The port class driver's [**PcRegisterSubdevice**](https://msdn.microsoft.com/lib
 
 For more information about designing drivers for multifunction audio cards, see [Multifunction Audio Devices](multifunction-audio-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

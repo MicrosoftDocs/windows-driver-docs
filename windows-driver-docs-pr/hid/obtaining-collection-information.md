@@ -30,9 +30,9 @@ This information includes the [HID usage](hid-usages.md) of the collection and a
 
 After obtaining this information, an application or driver has the information it requires to access control data in HID reports.
 
- 
+ 
 
- 
+ 
 
 
 

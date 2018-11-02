@@ -35,9 +35,9 @@ Here is an example that runs the srctool.exe file extraction command on all .pdb
 walk.cmd c:\symbols\*.pdb srctool.exe -x
 ```
 
- 
+ 
 
- 
+ 
 
 
 

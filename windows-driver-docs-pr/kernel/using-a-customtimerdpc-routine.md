@@ -50,9 +50,9 @@ In other words, suppose a driver's *StartIo* routine calls **KeSetTimer** or **K
 
 In addition, a DPC used by two standard driver routines with very different functionality would have poorer performance characteristics than separate *CustomTimerDpc* and *CustomDpc* routines. The DPC would have to determine which operations to carry out, depending on the conditions that caused the *StartIo* routine or ISR to queue it. Testing for these conditions in the DPC would use additional CPU cycles.
 
- 
+ 
 
- 
+ 
 
 
 

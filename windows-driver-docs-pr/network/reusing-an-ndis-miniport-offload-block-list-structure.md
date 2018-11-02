@@ -30,9 +30,9 @@ The intermediate driver writes a pointer into the **ImReserved** member of the N
 
 When calling the **Ndis*Xxx*Offload** function to propagate the operation to the underlying driver, the intermediate driver passes a pointer to the newly constructed NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure.
 
- 
+ 
 
- 
+ 
 
 
 

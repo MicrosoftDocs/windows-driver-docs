@@ -30,9 +30,9 @@ Second, implement a [data-intersection handler](proprietary-data-intersection-ha
 
 -   Miniport-stream method **SetFormat** (For example, see [**IMiniportWavePciStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536732).)
 
- 
+ 
 
- 
+ 
 
 
 

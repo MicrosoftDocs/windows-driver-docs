@@ -24,9 +24,9 @@ Some GPIO controllers implement, in hardware, interrupt-mask registers that are 
 
 However, other GPIO controllers provide a single set of hardware registers that combine the interrupt-mask and interrupt-enable functions. The drivers for these controllers emulate separate interrupt-mask and interrupt-enable registers in software. To do so, these drivers track the logical states of the interrupt-enable bits and interrupt-mask bits and manipulate the corresponding bits in the hardware register to accurately reflect the behavior of the combined logical interrupt-enable and interrupt-mask bits for each GPIO interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

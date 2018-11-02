@@ -45,7 +45,7 @@ The **!timer** extension displays a detailed listing of all system timer use.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -90,9 +90,9 @@ Current Hand: 226, Maximum Search: 0
 Wakeable timers:
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ When a user clicks on the properties for a device in Device Manager or in Contro
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -137,9 +137,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,9 +46,9 @@ Remarks
 
 The output of the **!wdfkd.wdfwmi** extension includes information about the WMI registration, provider, and instances.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -325,9 +325,9 @@ Note the implicit inproc added warning in the third line of the example above. T
 
 Trying out these and other selection queries at the command prompt is left as an exercise for the reader.
 
- 
+ 
 
- 
+ 
 
 
 

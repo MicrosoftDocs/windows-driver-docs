@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -36,9 +36,9 @@ A DCA-capable NetDMA engine provides an interface to control sending the DCA hin
 
 When the NET\_DMA\_OP\_TYPE\_CONTEXT\_CHANGE bit in the **ControlFlags** member is set, the DMA engine should identify the descriptor as a "Context Change" descriptor. The NetDMA interface submits a "Context Change" descriptor to a DCA-capable NetDMA provider to set the DCA target processor of the destination data for all the DMA transfers on a NetDMA channel. The NetDMA interface uses the **DCAContext8** member in a "Context Change" descriptor to specify the 8-bit advanced programmable interrupt controller (APIC) identifier of the target processor for the channel. A DCA-capable NetDMA provider must keep the DCA affinity of a DMA channel with a processor as long as it has not received a new "Context Change" descriptor. The NetDMA interface submits a "Context Change" descriptor one time after the channel is allocated and again when it detects that the DMA provider might have lost the hardware context (for example, after a suspend and resume operation).
 
- 
+ 
 
- 
+ 
 
 
 

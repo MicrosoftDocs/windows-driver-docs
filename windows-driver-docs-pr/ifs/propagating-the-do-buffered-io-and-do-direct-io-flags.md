@@ -35,9 +35,9 @@ if (FlagOn( DeviceObject->Flags, DO_DIRECT_IO )) {
 
 In the above code snippet, *DeviceObject* is a pointer to the device object to which the filter device object has just been attached; myLegacyFilter *DeviceObject* is a pointer to the filter device object itself.
 
- 
+ 
 
- 
+ 
 
 
 

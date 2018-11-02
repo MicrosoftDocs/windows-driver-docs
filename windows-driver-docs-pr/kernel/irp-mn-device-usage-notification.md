@@ -186,9 +186,9 @@ Requirements
 
 [**PoSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff559765)
 
- 
+ 
 
- 
+ 
 
 
 

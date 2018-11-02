@@ -31,7 +31,7 @@ Selecting the check box will not show this dialog box again in the computer if t
 
 **Note**  The system verifies that publisher information is accurate based on the SPC that was used to sign the catalog. If the publisher trust level is unknown—as will be true for Contoso.com—the system displays the dialog box. For the installation to proceed, the user must click Install. For more information on trust and driver installation, see [Code-Signing Best Practices](https://msdn.microsoft.com/library/windows/hardware/dn653556).
 
- 
+ 
 
 An unsigned driver on the other hand will show the following dialog, which allows a user to install an unsigned driver, which may not work in x64 version of Windows.
 
@@ -142,7 +142,7 @@ If the driver failed to load because it lacked a valid signature, audit failure 
 
 **Note**  The security audit log must be explicitly enabled. For more information, see [Appendix 3: Enable Code Integrity Event Logging and System Auditing](appendix-3--enable-code-integrity-event-logging-and-system-auditing.md).
 
- 
+ 
 
 To examine the security log:
 
@@ -193,9 +193,9 @@ To enable the Code Integrity verbose view:
 
 A few additional known driver signing issues are described in [Appendix 4: Driver Signing Issues](appendix-4--driver-signing-issues.md).
 
- 
+ 
 
- 
+ 
 
 
 

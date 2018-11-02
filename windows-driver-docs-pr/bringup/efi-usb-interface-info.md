@@ -42,9 +42,9 @@ The **USB\_INTERFACE\_DESCRIPTOR** and **USB\_ENDPOINT\_DESCRIPTOR** structures 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

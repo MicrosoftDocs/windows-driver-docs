@@ -20,7 +20,7 @@ In general, child partitions do not have direct access to the physical hardware 
 
 **Note**  Starting with Windows Server 2012, child partitions do have direct access to the resources of a physical network adapter that supports single root I/O virtualization (SR-IOV).
 
- 
+ 
 
 <a href="" id="emulated-network-adapter"></a>Emulated Network Adapter  
 A Hyper-V extensible switch Ethernet adapter that is exposed in the guest operating system that runs in a Hyper-V child partition. An emulated network adapter is a type of VM network adapter. The emulated network adapter mimics an Intel network adapter and uses hardware emulation to forward packets to and from the extensible switch port.
@@ -40,7 +40,7 @@ The external network adapter routes packets between the Hyper-V partitions and t
 
 **Note**  Each instance of an extensible switch supports no more than one external network adapter.
 
- 
+ 
 
 <a href="" id="extensible-switch-team"></a>Extensible Switch Team  
 This is a configuration in which the extensible switch external network adapter is bound to the virtual miniport edge of an NDIS multiplexer (MUX) intermediate driver. The MUX intermediate driver is bound to a team of one or more physical networks on the host.
@@ -64,7 +64,7 @@ For more information, see [Hyper-V Extensible Switch](hyper-v-extensible-switch.
 
 **Note**  The Hyper-V extensible switch is supported in NDIS 6.30 and later versions of NDIS.
 
- 
+ 
 
 <a href="" id="hyper-v-extensible-switch-extension"></a>Hyper-V Extensible Switch Extension  
 A Hyper-V extensible switch extension is an NDIS filter driver that attaches to the extensible switch driver stack. Once attached, the extension can capture, filter, or forward network packets and NDIS OIDs. Packets and OIDs can be forwarded to network adapters that are connected to extensible switch ports.
@@ -73,7 +73,7 @@ Hyper-V extensible switch extensions are supported in NDIS 6.30 and later versio
 
 **Note**  The Windows Filtering Platform (WFP) provides an in-box extensible switch filtering extension (Wfplwfs.sys ). This extension allows WFP filters or callout drivers to intercept packets along the Hyper-V extensible switch data path. This allows the filters or callout drivers to perform packet inspection or modification by using the WFP management and system functions. For an overview of WFP, see [Windows Filtering Platform](porting-packet-processing-drivers-and-apps-to-wfp.md).
 
- 
+ 
 
 <a href="" id="hyper-v-extensible-switch-network-adapter"></a>Hyper-V Extensible Switch Network Adapter  
 A network adapter that is managed by the Hyper-V extensible switch. These network adapters connect to ports on the extensible switch, and consist of the following adapter types:
@@ -126,7 +126,7 @@ There is only one parent partition that runs under Hyper-V on the host computer.
 
 **Note**  The parent partition is also known as the *root* partition.
 
- 
+ 
 
 <a href="" id="physical-function--pf-"></a>Physical Function (PF)  
 A PCI Express (PCIe) function that supports the single root I/O virtualization (SR-IOV) interface. SR-IOV extends the PCIe interface to enable multiple VMs to share the same PCIe physical hardware resources. The PF contains the PCIe SR-IOV Extended Capability structure in its PCI configuration space.
@@ -141,7 +141,7 @@ A virtual Ethernet switch over which packets are routed between one or more Hype
 
 **Note**  Applications and drivers that run in the management operating system cannot send or receive packets through this type of switch.
 
- 
+ 
 
 <a href="" id="single-root-i-o-virtualization--sr-iov-"></a>Single Root I/O Virtualization (SR-IOV)  
 SR-IOV is a method by which a PCIe network adapter can be partitioned into one Physical Function (PF) and one or more virtual functions (VF). Each function on the adapter is assigned a unique PCIe requester ID. This enables the adapter to apply memory and interrupt translations so that different network traffic streams can be delivered directly to the appropriate PF or VF. By avoiding the routing of network traffic through the Hyper-V extensible switch component, SR-IOV reduces the I/O overhead in the virtualized networking environment.
@@ -150,7 +150,7 @@ For more information, see [Single Root I/O Virtualization (SR-IOV)](single-root-
 
 **Note**  SR-IOV is supported in NDIS 6.30 and later versions of NDIS.
 
- 
+ 
 
 <a href="" id="synthetic-data-path"></a>Synthetic Data Path  
 The networking data path between a VM network adapter exposed in a guest operating system and the Hyper-V extensible switch component in the management operating system.
@@ -176,7 +176,7 @@ Each guest operating system runs in its own isolated software virtual machine.
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 <a href="" id="virtual-machine-bus--vmbus-"></a>Virtual Machine Bus (VMBus)  
 A virtual communications bus that passes control and data messages between the Hyper-V parent and child partitions. Access to the physical resources on the host computer by child partitions is made through messages that are passed over the VMBus between Virtual Service Client (VSC) and Virtual Service Provider (VSP) components.
@@ -199,7 +199,7 @@ For more information, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--v
 
 **Note**  VMQ is supported in NDIS 6.20 and later versions of NDIS.
 
- 
+ 
 
 <a href="" id="virtual-pci--vpci--driver"></a>Virtual PCI (VPCI) Driver  
 The PCI bus driver that runs in the guest operating system of a Hyper-V child partition. This driver exposes the VF as a virtual network adapter in the guest operating system.
@@ -211,9 +211,9 @@ For more information about the VPCI interface, see [GUID\_PCI\_VIRTUALIZATION\_I
 <a href="" id="virtualization-stack"></a>Virtualization Stack  
 A collection of software components that manages the creation and execution of child partitions under Hyper-V. The virtualization stack manages the access by child partitions to the hardware resources on the host computer. The virtualization stack runs in the Hyper-V parent partition.
 
- 
+ 
 
- 
+ 
 
 
 

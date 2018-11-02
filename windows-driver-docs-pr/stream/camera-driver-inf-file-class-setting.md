@@ -20,7 +20,6 @@ Class=Camera
 ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
 
 ...
-
 ```
 
 

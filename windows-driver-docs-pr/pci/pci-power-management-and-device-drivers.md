@@ -38,7 +38,7 @@ The OnNow architecture is a layered architecture, handling the integration of th
 
 **Note**  For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft Windows DDK.
 
- 
+ 
 
 ## Scenario 1: Turning off a device
 
@@ -76,9 +76,9 @@ The OnNow architecture is a layered architecture, handling the integration of th
 -   ACPI Specification available at <https://www.uefi.org/specifications>. This link leaves the Microsoft.com site.
 -   The ACPI Component Architecture (ACPICA) compiler can be found at <https://acpica.org/downloads/binary-tools>. This link leaves the Microsoft.com site.
 
- 
+ 
 
- 
+ 
 
 
 

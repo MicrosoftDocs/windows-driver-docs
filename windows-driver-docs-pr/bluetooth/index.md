@@ -35,9 +35,9 @@ This section describes Bluetooth profile drivers. The information in this sectio
 
 [Bluetooth LE Proximity Profile Devices and Apps](implementing-a-bluetooth-le-proximity-profile-device-and-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

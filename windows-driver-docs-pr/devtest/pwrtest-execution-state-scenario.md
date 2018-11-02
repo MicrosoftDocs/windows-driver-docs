@@ -14,7 +14,7 @@ The PwrTest Execution State Scenario (**/es**) monitors thread execution state c
 **Note**  
 This PwrTest Execution State Scenario is primarily used for applications that use legacy power request APIs, such as [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208)). To monitor applications that use newer power request APIs, such as [**PowerSetRequest function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/dd405534) use the [PwrTest Requests Scenario](pwrtest-requests-scenario.md) instead.
 
- 
+ 
 
 Applications and services may temporarily override power management settings such as the monitor and sleep idle timeouts by changing their thread execution state. The PwrTest Execution State Scenario monitors thread execution state and system state changes that applications and services have made using the Win32 [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208).
 
@@ -26,7 +26,7 @@ You can use the **/es** scenario together with [PwrTest Idle Scenario](pwrtest-i
 pwrtest /es  [/t:n] [/stes:{y|n}] [/rss:{y|n}] [/sss:{y|n}] [/all] [/user] [/kernel] [/idle] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 <span id="_stes_yn"></span><span id="_STES_YN"></span>**/stes:**{**y**|**n**}  
@@ -174,16 +174,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -78,11 +78,11 @@ When specifying **PINNAME\_VIDEO\_VIDEOPORT\_VBI** pins, use the information lis
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

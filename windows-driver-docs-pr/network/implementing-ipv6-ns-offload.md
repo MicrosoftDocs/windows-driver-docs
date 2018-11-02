@@ -18,11 +18,11 @@ A miniport driver sets the **NumNSOffloadIPv6Addresses** member of the [**NDIS\_
 
 **Note**  Despite its name, the **NumNSOffloadIPv6Addresses** member contains the number of supported requests, not the number of addresses.
 
- 
+ 
 
 **Note**  Some Windows Hardware Certification requirements, such as **Device.Network.LAN.PM.PowMgmtNDIS** and **Device.Network.WLAN.WoWLAN.ImplementWakeOnWLAN**, specify that the miniport adapter must support at least 2 NS offload requests. (In other words, to meet these requirements, the value of **NumNSOffloadIPv6Addresses** must be at least 2.) For more information, see the [Windows 8 Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=268621).
 
- 
+ 
 
 Each NS offload request can contain 1 or 2 target addresses.
 
@@ -104,7 +104,7 @@ The NS message format is specified in [RFC 4861](http://go.microsoft.com/fwlink/
 </tbody>
 </table>
 
- 
+ 
 
 ## Sending the NA Message
 
@@ -198,11 +198,11 @@ Upon receiving the NS message, device firmware should perform the validation ste
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ A minifilter driver's [**FilterUnloadCallback**](https://msdn.microsoft.com/libr
 
 -   Call [**PsRemoveCreateThreadNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559947) or [**PsRemoveLoadImageNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559949) to unregister a global callback routine that was registered by a previous call to [**PsSetCreateThreadNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559954) or [**PsSetLoadImageNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559957), respectively.
 
- 
+ 
 
- 
+ 
 
 
 

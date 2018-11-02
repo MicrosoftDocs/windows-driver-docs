@@ -63,7 +63,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -84,9 +84,9 @@ The **tb** command works only on the current processor. If you use **tb** on a m
 
 Usually, branch tracing is enabled after the processor control block (PRCB) has been initialized. (The PRCB is initialized early in the boot process.) However, if you have to use the **tb** command before this point, you can use [**.force\_tb (Forcibly Allow Branch Tracing)**](-force-tb--forcibly-allow-branch-tracing-.md) to enable branch tracing earlier. Use the **.force\_tb** command cautiously, because it can corrupt your processor state.
 
- 
+ 
 
- 
+ 
 
 
 

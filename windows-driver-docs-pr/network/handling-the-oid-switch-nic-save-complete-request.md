@@ -17,7 +17,7 @@ When every Hyper-V extensible switch extension has saved its run-time data, the 
 
 **Note**  When a run-time save operation is started for an extensible switch network adapter connection, another save operation for the same network adapter connection will not be performed until the [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269) request is issued. However, save operations for other network adapter connections could occur during this time.
 
- 
+ 
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for the [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269) request contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure. This structure is allocated by the protocol edge of the extensible switch.
 
@@ -29,13 +29,13 @@ When it receives the OID set request of [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](https
 
     **Note**  The extension should monitor the completion status of this OID request. The extension does this to detect whether the save operation has completed successfully.
 
-     
+     
 
 OID method requests of [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269) are ultimately handled by the underlying miniport edge of the extensible switch. Once this OID method request has been received by the miniport edge, it completes the OID request with NDIS\_STATUS\_SUCCESS. This notifies the protocol edge of the extensible switch that all extensions in the extensible switch driver stack have completed the save operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ A proprietary data-intersection handler has the option of handling data intersec
 
 The remainder of this section presents guidelines for implementing proprietary data-intersection handlers.
 
- 
+ 
 
- 
+ 
 
 
 

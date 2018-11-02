@@ -40,9 +40,9 @@ After the minifilter driver's postoperation callback routine returns FLT\_POSTOP
 
 The work routine that dequeues and performs completion processing for the I/O operation must call **FltCompletePendedPostOperation** to return control of the operation to the filter manager.
 
- 
+ 
 
- 
+ 
 
 
 

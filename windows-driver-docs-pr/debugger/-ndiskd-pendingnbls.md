@@ -96,7 +96,7 @@ Now, after hitting the minidriver's SendNetBufferListsHandler breakpoint, you ca
 **Note**  
 The debugee target machine in this example was loading a web page when it hit the breakpoint, so traffic was flowing through the miniport's datapath. Therefore, it had a pending NBL to send. Even after setting a breakpoint on one or more of the NBL handlers for the minidriver, you may not see any pending NBLs if there were no activity in the datapath.
 
- 
+ 
 
 ```console
 0: kd> !ndiskd.pendingnbls ffffe00bc3f701a0
@@ -133,9 +133,9 @@ Search complete.
 
 [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md)
 
- 
+ 
 
- 
+ 
 
 
 

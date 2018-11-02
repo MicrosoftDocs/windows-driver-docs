@@ -34,9 +34,9 @@ The following topics describe how command and DMA buffers are handled in the dis
 
 [Preparing DMA Buffers](preparing-dma-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

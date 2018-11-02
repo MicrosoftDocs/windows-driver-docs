@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 To end a debugging session in Microsoft Visual Studio, from the **Debug** menu, choose **Stop Debugging**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ For the operating system to treat an [AVStream](https://msdn.microsoft.com/libra
 
 -   Add a **Gfx** subkey to the filter's KSCATEGORY\_AUDIO device interface registry key. The device setup information file for the filter factory typically uses an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) to add the **Gfx** subkey to the registry path during driver installation.
 
- 
+ 
 
- 
+ 
 
 
 

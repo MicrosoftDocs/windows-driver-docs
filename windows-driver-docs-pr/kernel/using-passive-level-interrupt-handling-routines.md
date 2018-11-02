@@ -58,9 +58,9 @@ In rare cases, an interrupt might require so little processing that the passive-
 
 For information about using passive-level ISRs in KMDF drivers, see [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,7 +63,7 @@ A thread pool waiter thread will be displayed.
 <span id="worker"></span><span id="WORKER"></span>**worker**  
 A thread pool worker thread will be displayed.
 
-<span id="stats__Address_"></span><span id="stats__address_"></span><span id="STATS__ADDRESS_"></span>**stats** **\[***Address***\]**  
+<span id="stats__Address_"></span><span id="stats__address_"></span><span id="STATS__ADDRESS_"></span>**stats** **\[**<em>Address</em>**\]**  
 Causes the debug statistics of the current thread to be displayed. *Address* may be omitted, but if it is specified, it must equal -1 (negative one), to represent the current thread.
 
 <span id="_______wfac_______Address______"></span><span id="_______wfac_______address______"></span><span id="_______WFAC_______ADDRESS______"></span> **wfac** **** *Address*   
@@ -124,15 +124,15 @@ Displays a brief help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about thread pooling, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

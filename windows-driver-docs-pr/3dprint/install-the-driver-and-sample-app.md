@@ -124,9 +124,9 @@ Ad-hoc discovery can be performed by implementing a UDP server that listens to d
 
 For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](https://msdn.microsoft.com/library/windows/desktop/bb513677.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

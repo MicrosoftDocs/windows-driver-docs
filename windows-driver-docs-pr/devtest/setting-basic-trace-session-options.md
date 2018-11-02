@@ -24,9 +24,9 @@ This section includes:
 
 For information about advanced options, see [Setting Advanced Trace Session Options](setting-advanced-trace-session-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

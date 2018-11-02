@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,13 +65,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFResolutions</strong>](adfresolutions.md)</p></td>
+<td><p><a href="adfresolutions.md" data-raw-source="[&lt;strong&gt;ADFResolutions&lt;/strong&gt;](adfresolutions.md)"><strong>ADFResolutions</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>FilmResolutions</strong>](filmresolutions.md)</p></td>
+<td><p><a href="filmresolutions.md" data-raw-source="[&lt;strong&gt;FilmResolutions&lt;/strong&gt;](filmresolutions.md)"><strong>FilmResolutions</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenResolutions</strong>](platenresolutions.md)</p></td>
+<td><p><a href="platenresolutions.md" data-raw-source="[&lt;strong&gt;PlatenResolutions&lt;/strong&gt;](platenresolutions.md)"><strong>PlatenResolutions</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -98,9 +98,9 @@ The [**Widths**](widths.md) element contains the list of widths that the scanner
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

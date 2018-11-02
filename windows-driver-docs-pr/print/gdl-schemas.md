@@ -78,9 +78,9 @@ As the preceding example demonstrates, inheritance enables you to factor out com
 
 For more information about how to use inheritance-based schemas, see [GDL Templates](gdl-template-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

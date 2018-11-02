@@ -16,9 +16,9 @@ Storport is also responsible for translating the request sense data into the app
 
 When Storport completes the IRP\_MJ\_SCSI IRP associated with the SRB, it must indicate that it is returning request-sense information by logical-ORing the SRB\_STATUS\_AUTOSENSE\_VALID flag in with the **SrbStatus** member of the SRB.
 
- 
+ 
 
- 
+ 
 
 
 

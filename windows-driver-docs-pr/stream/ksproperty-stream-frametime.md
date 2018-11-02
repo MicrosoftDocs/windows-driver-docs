@@ -47,13 +47,13 @@ The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the dura
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSFRAMETIME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562558)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562558" data-raw-source="[&lt;strong&gt;KSFRAMETIME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562558)"><strong>KSFRAMETIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Requirements
 
 [**KSFRAMETIME**](https://msdn.microsoft.com/library/windows/hardware/ff562558)
 
- 
+ 
 
- 
+ 
 
 
 

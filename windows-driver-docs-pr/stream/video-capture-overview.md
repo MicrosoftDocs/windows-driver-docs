@@ -34,9 +34,9 @@ Video capture minidrivers interact with either the AVStream of Stream class inte
 
 -   Provide WDM streaming (for kernel mode) and DirectShow (for user mode) compatibility.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,13 +63,13 @@ After the printer confirms that it supports WS-Print v1.2, the client sends a Ge
 
 **WS-Print v1.1**
 
-**Namespace:** http://schemas.microsoft.com/windows/2010/06/wdp/printv11
-**XML Namespace Definition:** xmlns:wprt12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12"
+**Namespace:** <http://schemas.microsoft.com/windows/2010/06/wdp/printv11>
+**XML Namespace Definition:** xmlns:wprt12="<http://schemas.microsoft.com/windows/2012/10/wdp/printV12>"
 
 **WS-Print v1.2**
 
-**Namespace:** http://schemas.microsoft.com/windows/2012/10/wdp/printV12
-**XML Namespace Definition:** xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
+**Namespace:** <http://schemas.microsoft.com/windows/2012/10/wdp/printV12>
+**XML Namespace Definition:** xmlns:wprt11="<http://schemas.microsoft.com/windows/2010/06/wdp/printv11>"
 ## Specifying WS-Print 1.1 support
 
 

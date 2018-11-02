@@ -50,9 +50,9 @@ Requirements
 
 [**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](https://msdn.microsoft.com/library/windows/hardware/ff566745)
 
- 
+ 
 
- 
+ 
 
 
 

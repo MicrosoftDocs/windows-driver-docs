@@ -30,7 +30,7 @@ If duplicate volume names appear in a volume information list, each group of ide
 
 **Note**   The FILTER\_VOLUME\_STANDARD\_INFORMATION structure is only available starting with Windows Vista.
 
- 
+ 
 
 Routines and structures affected by this topic include the following:
 
@@ -48,9 +48,9 @@ Routines and structures affected by this topic include the following:
 
 [**FltGetVolumeInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543238)
 
- 
+ 
 
- 
+ 
 
 
 

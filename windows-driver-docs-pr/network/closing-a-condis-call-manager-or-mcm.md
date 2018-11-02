@@ -26,9 +26,9 @@ If a stand-alone call manager or MCM calls **NdisCmNotifyCloseAddressFamily** or
 
 For more information about closing an address family in a CoNDIS client, see [Closing an Address Family in a CoNDIS Client](closing-an-address-family-in-a-condis-client.md).
 
- 
+ 
 
- 
+ 
 
 
 

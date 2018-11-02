@@ -179,9 +179,9 @@ Formats an I/O request that contains a URB. The driver can call [**WdfRequestSen
 <a href="" id="---------wdfusbtargetpipewdmgetpipehandle--kmdf-only-"></a>[**WdfUsbTargetPipeWdmGetPipeHandle (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff551162)  
 Returns a device's USBD pipe handle. Some URBs require this handle.
 
- 
+ 
 
- 
+ 
 
 
 

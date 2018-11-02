@@ -23,9 +23,9 @@ If D3DPRESENT\_DONOTWAIT is not set, **Present** behaves as in DirectX 8.1 and e
 
 For more information about **IDirect3DSwapChain*Xxx*::Present**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ To install a WIA scanner driver with WSD, you should use the *WSDScan.sys* kerne
 
 A WIA minidriver for a web service scanner that is using *WSDScan.sys* has its **CreateFileName** value initialized when the device is installed. To initialize this value, the INF file for the WIA minidriver must reference **STI.WSDSection** and **STI.WSDSection.Services** from the *Sti.inf* file in the **Install** and **Services** sections of the minidriver INF file, as shown in [Sample INF File for a Web Services Scanner](sample-inf-file-for-a-web-services-scanner.md).
 
- 
+ 
 
- 
+ 
 
 
 

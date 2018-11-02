@@ -168,9 +168,9 @@ For historical reasons, a few audio properties have behavioral quirks that viola
 
 -   [**KSPROPERTY\_SYNTH\_VOLUME**](https://msdn.microsoft.com/library/windows/hardware/ff537409) and [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff537403) are properties of a synth node ([**KSNODETYPE\_SYNTHESIZER**](https://msdn.microsoft.com/library/windows/hardware/ff537203)). Although both are node properties, requests for these properties do not include node IDs. (Note that the property descriptor for the request is a structure of type [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262), not [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143).) This behavior violates the general rule that a node property requires a node ID. Despite this discrepancy, a miniport driver that supports either property should supply the property handler through the **Nodes** member of PCFILTER\_DESCRIPTOR (instead of the **Pins** member).
 
- 
+ 
 
- 
+ 
 
 
 

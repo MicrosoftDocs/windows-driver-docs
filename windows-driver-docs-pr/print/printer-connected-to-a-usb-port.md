@@ -42,9 +42,9 @@ The following example shows the entries in an [**INF Manufacturer section**](htt
 "Model Name XYZ" = Install_Section_XYZ, Company_NameModelNam1234, Company_NameModelNam1234 ; plus any other compatible IDs
 ```
 
- 
+ 
 
- 
+ 
 
 
 

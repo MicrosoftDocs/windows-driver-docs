@@ -48,9 +48,9 @@ Once a pin is instantiated, a user-mode client can determine the current data fo
 
 KS minidrivers and clients can dynamically negotiate data formats. When the data format of a stream changes, the minidriver specifies the KSSTREAM\_HEADER\_OPTIONSF\_DATADISCONTINUITY flag in the **OptionsFlags** member of a KSSTREAM\_HEADER. The minidriver passes the new data format itself, described in a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure, in the corresponding data buffer.
 
- 
+ 
 
- 
+ 
 
 
 

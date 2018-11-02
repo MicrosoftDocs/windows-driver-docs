@@ -20,9 +20,9 @@ Serialized NDIS miniport drivers are obsolete for Windows Vista and later versio
 
 If you are writing a new miniport driver, you should write a [deserialized driver](deserialized-ndis-miniport-drivers.md). If possible, you should also port older drivers to NDIS 6.0 or later. For more information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

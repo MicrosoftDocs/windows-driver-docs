@@ -13,9 +13,9 @@ Yes. You can do this by defining a custom WPP\_TRACE macro. You must define your
 
 For an example of how to define a custom WPP\_TRACE macro, see [Can I preserve the last-error code before TraceMessage is called?](can-i-preserve-the-last-error-code-before-tracemessage-is-called-.md).
 
- 
+ 
 
- 
+ 
 
 
 

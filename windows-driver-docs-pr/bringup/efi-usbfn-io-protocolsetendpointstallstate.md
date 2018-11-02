@@ -75,7 +75,7 @@ Requested stall state on the specified endpoint. Setting this parameter to **TRU
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +87,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ Specifies the C++ expression to evaluate. For more information about the syntax,
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ If you want to evaluate a part of the **Expression** expression according to MAS
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
 
- 
+ 
 
- 
+ 
 
 
 

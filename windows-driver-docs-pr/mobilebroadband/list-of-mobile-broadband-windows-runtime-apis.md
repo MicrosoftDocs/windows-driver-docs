@@ -24,37 +24,37 @@ The following table lists the APIs for authoring a mobile broadband app.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Connection Profile API](connection-profile-api.md)</p></td>
+<td><p><a href="connection-profile-api.md" data-raw-source="[Connection Profile API](connection-profile-api.md)">Connection Profile API</a></p></td>
 <td><p>Provides information about the connection status (for example, to the Internet)</p></td>
 </tr>
 <tr class="even">
-<td><p>[Device Services Extension API](device-services-extension-api.md)</p></td>
+<td><p><a href="device-services-extension-api.md" data-raw-source="[Device Services Extension API](device-services-extension-api.md)">Device Services Extension API</a></p></td>
 <td><p>Enables device-specific extensions, such as SIM Toolkit and Preferred Roaming List (PRL) download.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Provisioning API](provisioning-api.md)</p></td>
+<td><p><a href="provisioning-api.md" data-raw-source="[Provisioning API](provisioning-api.md)">Provisioning API</a></p></td>
 <td><p>Enables you to provision Windows with account provisioning data and data usage information.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SIM PIN API](sim-pin-api.md)</p></td>
+<td><p><a href="sim-pin-api.md" data-raw-source="[SIM PIN API](sim-pin-api.md)">SIM PIN API</a></p></td>
 <td><p>Enables you to enable, disable, or change the SIM PIN.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SMS API](sms-api.md)</p></td>
+<td><p><a href="sms-api.md" data-raw-source="[SMS API](sms-api.md)">SMS API</a></p></td>
 <td><p>Provides functions that are required to implement an SMS client.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Subscriber and Device Information API](subscriber-and-device-information-api.md)</p></td>
+<td><p><a href="subscriber-and-device-information-api.md" data-raw-source="[Subscriber and Device Information API](subscriber-and-device-information-api.md)">Subscriber and Device Information API</a></p></td>
 <td><p>Provides subscriber information for the SIM and device information for the mobile broadband device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[USSD API](ussd-api.md)</p></td>
+<td><p><a href="ussd-api.md" data-raw-source="[USSD API](ussd-api.md)">USSD API</a></p></td>
 <td><p>Enables you to establish an Unstructured Supplementary Service Data (USSD) session with a network (client and network initiated).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following sections are available in this topic:
 
@@ -80,7 +80,7 @@ Because it has methods that can be used to get personally identifiable informati
 **Note**  
 Applications that are not UWP apps (for example, Microsoft Win32 services or desktop apps) have unrestricted access to the Mobile Broadband Account API. This is because these applications can use existing Win32 and Component Object Model (COM) APIs to get full access to the mobile broadband network. These APIs cannot be used from UWP apps.
 
- 
+ 
 
 ## <span id="netid"></span><span id="NETID"></span>Network Account IDs
 
@@ -96,23 +96,23 @@ When Windows encounters one of the preceding network types for the first time, i
 **Important**  
 Even though getting the ICCID from a network account ID requires access to the computer and the network device that are used to map them together, network account IDs do uniquely identify individual users. Therefore, we recommend that you follow your organization’s policies for dealing with personally identifiable information when you're working with them.
 
- 
+ 
 
 Network account IDs are segregated by mobile network operator (MNO), so that if an end user has both Provider1 and Provider2 mobile broadband devices and their corresponding mobile broadband apps are installed, the Provider1 app will not be able to use any Provider2 network account IDs, and vice versa. The function that returns all network account IDs will return only the IDs of the network accounts for the MNO whose application is calling the function. An attempt to use a network account ID that belongs to a different MNO will result in an “access denied” error.
 
 **Note**  
 Apps that are not UWP apps (for example, Win32 services or desktop apps) have access to all network accounts regardless of network service provider.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

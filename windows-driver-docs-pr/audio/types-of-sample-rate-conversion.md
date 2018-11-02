@@ -54,13 +54,13 @@ The different kinds of sample-rate conversion (SRC) that the KMixer system drive
 </tbody>
 </table>
 
- 
+ 
 
 KMixer uses software emulation to implement all the SRC techniques described in the preceding table.
 
- 
+ 
 
- 
+ 
 
 
 

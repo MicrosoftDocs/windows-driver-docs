@@ -56,9 +56,9 @@ If the peripheral driver uses an **IOCTL\_SERIAL\_SET\_HANDFLOW** request to ena
 -   The SERIAL\_CTS\_HANDSHAKE flag in the **ControlHandShake** member of the structure. This flag enables the serial port to use flow control for receive operations.
 -   The SERIAL\_RTS\_CONTROL and SERIAL\_RTS\_HANDSHAKE flags in the **FlowReplace** member. These flags enable the serial port to use flow control for transmit operations.
 
- 
+ 
 
- 
+ 
 
 
 

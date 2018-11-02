@@ -28,9 +28,9 @@ Data Type:BIDI\_BOOL
 
 Description:Indicates whether a duplex print unit is installed on the device.
 
- 
+ 
 
- 
+ 
 
 
 

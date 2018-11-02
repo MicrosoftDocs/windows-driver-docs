@@ -48,7 +48,7 @@ Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

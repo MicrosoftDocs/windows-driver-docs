@@ -46,7 +46,7 @@ To register an extension interface, a WSK application calls the [**WskControlSoc
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_EXTENSION_CONTROL_IN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571167) structure. This structure contains a pointer to the [Network Programming Interface (NPI)](https://msdn.microsoft.com/library/windows/hardware/ff568373) identifier for the extension interface and pointers to the dispatch table and to the context for the WSK application's implementation of the extension interface.</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571167" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_IN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571167)"><strong>WSK_EXTENSION_CONTROL_IN</strong></a> structure. This structure contains a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568373" data-raw-source="[Network Programming Interface (NPI)](https://msdn.microsoft.com/library/windows/hardware/ff568373)">Network Programming Interface (NPI)</a> identifier for the extension interface and pointers to the dispatch table and to the context for the WSK application&#39;s implementation of the extension interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -54,7 +54,7 @@ To register an extension interface, a WSK application calls the [**WskControlSoc
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_EXTENSION_CONTROL_OUT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571168) structure. This structure receives a pointer to the dispatch table and a pointer to the context for the WSK subsystem's implementation of the extension interface.</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571168" data-raw-source="[&lt;strong&gt;WSK_EXTENSION_CONTROL_OUT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571168)"><strong>WSK_EXTENSION_CONTROL_OUT</strong></a> structure. This structure receives a pointer to the dispatch table and a pointer to the context for the WSK subsystem&#39;s implementation of the extension interface.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -90,9 +90,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

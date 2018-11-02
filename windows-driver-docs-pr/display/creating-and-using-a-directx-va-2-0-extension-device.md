@@ -20,9 +20,9 @@ The Direct3D runtime calls the user-mode display driver's [**DecodeExtensionExec
 
 The Direct3D runtime calls the user-mode display driver's [**ExtensionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff565604) function to perform nonstandard DirectX VA 2.0 operations on an extension device.
 
- 
+ 
 
- 
+ 
 
 
 

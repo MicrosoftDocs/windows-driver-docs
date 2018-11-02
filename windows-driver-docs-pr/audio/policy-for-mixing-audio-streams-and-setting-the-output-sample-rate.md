@@ -76,7 +76,7 @@ Following connection of the first input stream, KMixer applies a different polic
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="handling_special_cases"></span><span id="HANDLING_SPECIAL_CASES"></span>Handling Special Cases
 
@@ -84,9 +84,9 @@ Following connection of the first input stream, KMixer applies a different polic
 
 -   The Sound Blaster emulator ([SBEmul system driver](kernel-mode-wdm-audio-components.md#sbemul_system_driver)) makes dynamic adjustments to its sample rate. KMixer maintains an output rate greater than or equal to that of the Sound Blaster emulator.
 
- 
+ 
 
- 
+ 
 
 
 

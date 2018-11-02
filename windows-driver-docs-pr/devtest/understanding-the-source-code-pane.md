@@ -26,9 +26,9 @@ Similarly, when you select a line of *executed* code in the **Source Code** pane
 
 The **Source Code** pane is a component of the Defect Viewer.
 
- 
+ 
 
- 
+ 
 
 
 

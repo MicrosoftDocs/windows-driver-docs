@@ -33,7 +33,7 @@ Independent hardware vendors must follow the Windows 8 Direct3D rendering requ
 | D3D11.1                            | Required          | D3D11 HW Spec                    |
 | D3D11.1                            | Required          | D3D11.1 HW Spec                  |
 
- 
+ 
 
 The following tables describe the Direct3D hardware specification updates for Windows 8.
 
@@ -45,7 +45,7 @@ The following tables describe the Direct3D hardware specification updates for Wi
 | Required       | Same-surface blits \*              |
 | If implemented | Logic ops                          |
 
- 
+ 
 
 **Direct3D 10.1 hardware specification changes for Windows 8**
 
@@ -55,7 +55,7 @@ The following tables describe the Direct3D hardware specification updates for Wi
 | Required       | Same-surface blits \*              |
 | If implemented | Logic ops                          |
 
- 
+ 
 
 **Microsoft Direct3D 11 hardware specification changes for Windows 8**
 
@@ -69,7 +69,7 @@ The following tables describe the Direct3D hardware specification updates for Wi
 | If implemented | Double-precision support           |
 | If implemented | Logic ops                          |
 
- 
+ 
 
 **Direct3D 11.1 hardware specification for Windows 8**
 
@@ -85,13 +85,13 @@ The following tables describe the Direct3D hardware specification updates for Wi
 | If implemented | Threading Command Lists                |
 | If implemented | Double-precision support               |
 
- 
+ 
 
-**\*** Already exists in the Microsoft Direct3D 9 hardware specification, but is not previously exposed in Direct3D 10.
+**\\*** Already exists in the Microsoft Direct3D 9 hardware specification, but is not previously exposed in Direct3D 10.
 
- 
+ 
 
- 
+ 
 
 
 

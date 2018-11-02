@@ -24,9 +24,9 @@ NDIS calls the miniport driver's [**MiniportRestart**](https://msdn.microsoft.co
 
 For more information about pause and restart operations, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

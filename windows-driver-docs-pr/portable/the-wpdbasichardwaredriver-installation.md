@@ -41,7 +41,7 @@ To install the sample driver, complete the following steps:
 
 **Note**  The last argument to the devcon command corresponds to the following excerpt from the driver's INF file.
 
- 
+ 
 
 ```ManagedCPlusPlus
 [Microsoft.NTx86]
@@ -63,9 +63,9 @@ To remove the sample driver, complete the following steps:
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

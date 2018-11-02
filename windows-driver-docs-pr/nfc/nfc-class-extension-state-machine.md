@@ -31,11 +31,11 @@ The internal design of the NFC CX state machine is shown below. The various stat
 | StateRecovery     | This state is entered when the NFC device has sent a CORE\_RSET\_NTF to the host or if a fatal I/O error, timeout happens during NCI operation. The NFC CX tries to perform NCI recovery by resetting and reinitializing the controller. Normal operations resume if the recovery is successful, otherwise the state machine transitions to StateIdle.  |
 | StateShutdown     | The NFC device is about to be shut down. This is a transitional state. Upon completion of this state, the state machine transitions to StateIdle.                                                                                                                                                                                                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

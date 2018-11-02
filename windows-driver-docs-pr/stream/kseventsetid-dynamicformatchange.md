@@ -20,9 +20,9 @@ The KSEVENTSETID\_DynamicFormatChange event set includes a single event:
 
 [**KSEVENT\_DYNAMIC\_FORMAT\_CHANGE**](ksevent-dynamic-format-change.md)
 
- 
+ 
 
- 
+ 
 
 
 

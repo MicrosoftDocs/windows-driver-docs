@@ -20,9 +20,9 @@ The first six configurations in this set are for all [restricted profiles](restr
 
 The minimal interoperability configuration set of configurations for compressed picture decoding is defined by the third through the last members of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure.
 
- 
+ 
 
- 
+ 
 
 
 

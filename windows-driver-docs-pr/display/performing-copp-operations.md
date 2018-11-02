@@ -30,9 +30,9 @@ The following topics describe operations performed by using the COPP DDI:
 
 [COPP Status Events](copp-status-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

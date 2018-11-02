@@ -46,9 +46,9 @@ The "1" following the **ResourceMap** parameter specifies that the registry entr
 
 If there are no *DDInstall*.**LogConfigOverride** sections in the INF, the parent resources are numbered in the order that the resource requirements are constructed by the driver for the underlying bus. For PC Cards, the bus driver reports resources in this order: IRQ, I/O ports, memory addresses. For multiple I/O and memory requirements, they are numbered in the same order as the tuples on the card. Other bus drivers might list resources in other orders.
 
- 
+ 
 
- 
+ 
 
 
 

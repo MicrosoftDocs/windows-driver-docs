@@ -20,9 +20,9 @@ An extension based on the prototypes in the wdbgexts.h header file. These extens
 <span id="wow64"></span><span id="WOW64"></span>**WOW64**  
 An emulation layer in 64-bit Windows that can run 32-bit Windows applications. When debugging a 32-bit application running on 64-bit Windows, it is important to distinguish between the application itself and the WOW64 subsystem.
 
- 
+ 
 
- 
+ 
 
 
 

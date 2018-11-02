@@ -19,9 +19,9 @@ ms.date: 10/17/2018
 
 -   A WDM device driver's ISR should be capable of determining whether it has been called with a spurious interrupt even during device startup. On return from the call to [**IoConnectInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff548371) in the code path that handles **IRP\_MN\_START\_DEVICE**, the ISR can be called immediately if interrupts are enabled on the device.
 
- 
+ 
 
- 
+ 
 
 
 

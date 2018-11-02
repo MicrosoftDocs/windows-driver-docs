@@ -63,9 +63,9 @@ To access properties of a device interface class that have corresponding registr
 
 For information about how to install and use device interfaces, see [Device Interface Classes](device-interface-classes.md) and [**INF AddInterface Directive**](inf-addinterface-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

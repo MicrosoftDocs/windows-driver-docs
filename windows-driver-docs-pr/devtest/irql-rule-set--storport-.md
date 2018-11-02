@@ -29,29 +29,29 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>IrqlDispatch</strong>](storport-irqldispatch.md)</p></td>
+<td align="left"><p><a href="storport-irqldispatch.md" data-raw-source="[&lt;strong&gt;IrqlDispatch&lt;/strong&gt;](storport-irqldispatch.md)"><strong>IrqlDispatch</strong></a></p></td>
 <td align="left"><p>This rule verifies that the following routines are only called at <strong>IRQL = DISPATCH_LEVEL</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IrqlKeReleaseSpinLock</strong>](storport-irqlkereleasespinlock.md)</p></td>
+<td align="left"><p><a href="storport-irqlkereleasespinlock.md" data-raw-source="[&lt;strong&gt;IrqlKeReleaseSpinLock&lt;/strong&gt;](storport-irqlkereleasespinlock.md)"><strong>IrqlKeReleaseSpinLock</strong></a></p></td>
 <td align="left"><p>This rule verifies that <strong>KeReleaseSpinLock</strong> is called at <strong>IRQL = DISPATCH_LEVEL</strong> only. It must also set the IRQL to the previous IRQL level. Typically this call would be preceded by a call to <strong>KeAcquireSpinLock</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>SpChangeIrql</strong>](storport-spchangeirql.md)</p></td>
+<td align="left"><p><a href="storport-spchangeirql.md" data-raw-source="[&lt;strong&gt;SpChangeIrql&lt;/strong&gt;](storport-spchangeirql.md)"><strong>SpChangeIrql</strong></a></p></td>
 <td align="left"><p>This rule verifies that the StorPort callback routines return at the same IRQL level as the level at which they are called.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SpIrql</strong>](storport-spirql.md)</p></td>
+<td align="left"><p><a href="storport-spirql.md" data-raw-source="[&lt;strong&gt;SpIrql&lt;/strong&gt;](storport-spirql.md)"><strong>SpIrql</strong></a></p></td>
 <td align="left"><p>This rule verifies that the routines <strong>TdiRegisterPnPHandlers</strong> and <strong>TdiDeregisterPnPHandlers</strong> are only called at IRQL lower than <strong>DISPATCH_LEVEL</strong>. However, if <strong>ExFreeToNPagedLookasideList</strong> is called, the rule passes.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StorPortIrql</strong>](storport-storportirql.md)</p></td>
-<td align="left"><p>The [<strong>StorPortIrql</strong>](storport-storportirql.md) rule checks that StorPort routines are called at the correct IRQL levels.</p></td>
+<td align="left"><p><a href="storport-storportirql.md" data-raw-source="[&lt;strong&gt;StorPortIrql&lt;/strong&gt;](storport-storportirql.md)"><strong>StorPortIrql</strong></a></p></td>
+<td align="left"><p>The <a href="storport-storportirql.md" data-raw-source="[&lt;strong&gt;StorPortIrql&lt;/strong&gt;](storport-storportirql.md)"><strong>StorPortIrql</strong></a> rule checks that StorPort routines are called at the correct IRQL levels.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the Irql rule set**
 
@@ -67,9 +67,9 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,9 +51,9 @@ For more information about the high-level operation of [COM ports](configuration
 
 For more information about Serial I/O requests, see [Serial Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547476).
 
- 
+ 
 
- 
+ 
 
 
 

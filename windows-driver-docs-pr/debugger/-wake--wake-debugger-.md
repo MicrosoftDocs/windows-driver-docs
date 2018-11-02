@@ -52,7 +52,7 @@ The process ID of the user-mode debugger.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ This command is not issued in the user-mode debugger on the target machine, nor 
 
 This debugger can be started expressly for this purpose, or can be another debugger that happens to be running. However, if there is no other debugger already running, it is easier just to use CDB with the **-wake** [**command-line option**](cdb-command-line-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

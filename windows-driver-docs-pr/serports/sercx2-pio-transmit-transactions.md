@@ -75,9 +75,9 @@ When a *EvtSerCx2PioTransmitWriteBuffer* call ends because the transmit FIFO can
 
 If the ready notification is enabled when the write request times out or is canceled, SerCx2 calls the [*EvtSerCx2PioTransmitCancelReadyNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265216) event callback function to cancel the pending notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call **SerCx2PioTransmitReady**. A return value of **FALSE** indicates that the *EvtSerCx2PioTransmitDrainFifo* function has called or will call **SerCx2PioTransmitReady**.
 
- 
+ 
 
- 
+ 
 
 
 

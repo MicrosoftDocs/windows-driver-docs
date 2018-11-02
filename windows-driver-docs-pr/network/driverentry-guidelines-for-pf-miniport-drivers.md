@@ -13,7 +13,7 @@ This topic describes the guidelines for writing a [**DriverEntry**](https://msdn
 
 **Note**  These guidelines only apply to PF miniport drivers. For initialization guidelines for the miniport driver of a PCIe Virtual Function (VF) of the adapter, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
- 
+ 
 
 The SR-IOV network adapter must implement a hardware bridge that forwards network traffic over the physical port on the adapter and internal virtual ports (VPorts). This bridge is known as the *NIC switch*. For more information, see [NIC Switches](nic-switches.md).
 
@@ -33,9 +33,9 @@ The miniport driver must provide a [*MiniportSetOptions*](https://msdn.microsoft
 
 For more information on how NIC switches are created, see [Creating a NIC Switch](creating-a-nic-switch.md).
 
- 
+ 
 
- 
+ 
 
 
 

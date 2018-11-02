@@ -19,9 +19,9 @@ This section contains the following topics.
 
 [Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

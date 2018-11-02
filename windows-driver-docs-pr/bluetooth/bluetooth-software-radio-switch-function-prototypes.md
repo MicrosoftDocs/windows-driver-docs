@@ -38,7 +38,6 @@ C++
 DWORD WINAPI IsBluetoothRadioEnabled(
    BOOL* pfEnabled
 );
- 
 ```
 pfEnabled: Pointer to buffer describing if power to the radio is on or off.
 
@@ -231,5 +230,5 @@ C_DEFINES=-DWIN32 -DUNICODE -D_UNICODE
 SOURCES = RSupport.cpp 
 
 
- 
+
 

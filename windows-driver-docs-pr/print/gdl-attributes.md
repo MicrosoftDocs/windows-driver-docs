@@ -32,9 +32,9 @@ In the preceding example, "\*Weight" is the keyword, and the "330 pounds" string
 
 [GDL Values](gdl-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

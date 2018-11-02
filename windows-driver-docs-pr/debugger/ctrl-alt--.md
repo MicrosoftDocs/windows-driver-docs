@@ -53,7 +53,7 @@ CTRL+ALT+\
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +62,9 @@ This is equivalent to launching a new CDB through the [**remote.exe**](the-remot
 
 **CTRL+ALT+\\** is similar to the [**.dbgdbg (Debug Current Debugger)**](-dbgdbg--debug-current-debugger-.md) command, however **CTRL+ALT+\\** has the advantage that it can be used when no debugger command line is available.
 
- 
+ 
 
- 
+ 
 
 
 

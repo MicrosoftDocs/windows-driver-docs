@@ -31,9 +31,9 @@ This section includes:
 
 [Querying for an HD Audio DDI](querying-for-an-hd-audio-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ This section includes:
 
 [Other ACPI Debugging Extensions](other-acpi-debugging-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

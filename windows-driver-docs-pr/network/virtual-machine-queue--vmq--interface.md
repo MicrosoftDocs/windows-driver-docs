@@ -31,9 +31,9 @@ Under VMQ, the physical network adapter transfers the data that matches a receiv
 
 For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
- 
+ 
 
- 
+ 
 
 
 

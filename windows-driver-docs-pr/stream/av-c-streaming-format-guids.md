@@ -80,11 +80,11 @@ The following table describes the KS data format specifier GUIDs and their corre
 <tbody>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_DVINFO</p></td>
-<td><p>[<strong>DVINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559517)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559517" data-raw-source="[&lt;strong&gt;DVINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559517)"><strong>DVINFO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>KSDATAFORMAT_SPECIFIER_DV_AVC</p></td>
-<td><p>DVINFO and [<strong>AVCCONNECTINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554101)</p></td>
+<td><p>DVINFO and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554101" data-raw-source="[&lt;strong&gt;AVCCONNECTINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554101)"><strong>AVCCONNECTINFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_AVC</p></td>
@@ -97,7 +97,7 @@ The following table describes the KS data format specifier GUIDs and their corre
 </tbody>
 </table>
 
- 
+ 
 
 Microsoft Corporation introduced the *msdv.sys* subunit driver with Windows 98 SE. This driver supports most MiniDV camcorders in both camera mode and VTR (Video Tape Recorder) mode.
 
@@ -105,9 +105,9 @@ Microsoft Corporation introduced the *mstape.sys* tape subunit driver with Windo
 
 **Note** Microsoft does not supply a codec to support DVCPro format decoding.
 
- 
+ 
 
- 
+ 
 
 
 

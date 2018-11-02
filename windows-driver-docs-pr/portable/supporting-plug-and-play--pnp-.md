@@ -31,9 +31,9 @@ If your driver supports hardware, you'll want to add support for one, or both, o
 
 [PnP and Power Management Scenarios in UMDF](https://msdn.microsoft.com/library/windows/hardware/ff560452)
 
- 
+ 
 
- 
+ 
 
 
 

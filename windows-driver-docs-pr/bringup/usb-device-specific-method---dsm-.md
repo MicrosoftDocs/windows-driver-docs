@@ -75,17 +75,17 @@ An integer containing one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 When this function is used, the \_DSM method must appear under the USB port device.
 
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

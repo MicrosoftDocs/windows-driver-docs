@@ -20,9 +20,9 @@ This section includes the following reference topics for the data types used wit
 
 [**NDIS\_PM\_WAKE\_REASON\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh451607)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ There are two different types of debugger extensions:
 
 For information about how to write debugger extensions, see [Writing DbgEng Extensions](writing-dbgeng-extensions.md) and [Writing WdbgExts Extensions](writing-wdbgexts-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

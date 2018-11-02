@@ -46,13 +46,13 @@ In Windows 7 and later operating systems, this property can be supported on any
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via filter handle)</p></td>
-<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td align="left"><p>[<strong>KSJACK_SINK_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537140)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537140" data-raw-source="[&lt;strong&gt;KSJACK_SINK_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537140)"><strong>KSJACK_SINK_INFORMATION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (instance data) is a KSJACK\_SINK\_INFORMAITON structure.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSJACK\_SINK\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff537140)
 
- 
+ 
 
- 
+ 
 
 
 

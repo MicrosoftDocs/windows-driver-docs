@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A driver reports the ability to support pure devices by setting the new device capability D3DDEVCAPS\_PUREDEVICE in the **DevCaps** field of the D3DCAPS8 structure.
 
- 
+ 
 
- 
+ 
 
 
 

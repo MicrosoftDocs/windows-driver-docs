@@ -69,9 +69,9 @@ Internet Information Services (IIS) must be configured to use SymProxy as an Int
 
 7.  To exit **Default Web Site Properties,** click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

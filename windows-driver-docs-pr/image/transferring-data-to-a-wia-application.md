@@ -35,9 +35,9 @@ This section covers the following topics:
 
 For basic information about data transfers using TYMED( in-memory and file transfers) and stream-based transfers see [Data Transfers](data-transfers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ A print driver package may contain two kinds of manifest:
 
 For more information on theme manifests, see [Using Theme Manifests](using-theme-manifests.md).
 
- 
+ 
 
- 
+ 
 
 
 

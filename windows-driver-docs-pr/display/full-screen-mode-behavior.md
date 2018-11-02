@@ -25,9 +25,9 @@ Whenever a user-mode display driver must perform a bitblt that involves a rotate
 
 DirectX 9L applications can be rotation-aware, which means that they will render everything in the proper orientation and will properly handle locks to a rotated buffer. When the Direct3D runtime creates a swap chain for a rotation-aware application, the runtime always specifies the rotation as D3DDDI\_ROTATION\_IDENTITY in the **Rotation** member of the [**D3DDDIARG\_CREATERESOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff542963) structure because the user-mode display driver is not required to perform any special actions for the rotation-aware application to work.
 
- 
+ 
 
- 
+ 
 
 
 

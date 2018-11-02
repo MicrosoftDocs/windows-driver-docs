@@ -38,9 +38,9 @@ The WIA feeder scanner item can optionally support the following WIA item flag:
 <a href="" id="wiaitemtypefolder"></a>**WiaItemTypeFolder**  
 The item is a folder. This flag is required for the root item if the automatic document feeder supports front and back items. This flag allows enumeration of the front and back of a page as child items. Child items *cannot* have this flag.
 
- 
+ 
 
- 
+ 
 
 
 

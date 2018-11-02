@@ -164,7 +164,7 @@ On an x86 or x64 target computer, the status bits for the PDE and the PTE are sh
 </tbody>
 </table>
 
- 
+ 
 
 On an Itanium target computer, the status bits for the PDE and the PTE are slightly different from those of the PPE. The Itanium PPE bits are as follows:
 
@@ -220,11 +220,11 @@ On an Itanium target computer, the status bits for the PDE and the PTE are sligh
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

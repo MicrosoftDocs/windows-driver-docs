@@ -25,7 +25,7 @@ The **!fwver** extension displays the Itanium firmware version.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="ddk__fwver_dbg"></span><span id="DDK__FWVER_DBG"></span>
 
@@ -49,7 +49,7 @@ The **!fwver** extension displays the Itanium firmware version.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium target computer.
 
@@ -75,9 +75,9 @@ Firmware Version
    smbiosString:        W460GXBS2.86E.0117A.P08.200107261041
 ```
 
- 
+ 
 
- 
+ 
 
 
 

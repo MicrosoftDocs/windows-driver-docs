@@ -21,9 +21,9 @@ If the target is a user-mode Minidump, the dump file generator may store an addi
 
 Dump files may contain a static list of events. Each event represents a snapshot of the target at a particular point in time. The number of events in this list is returned by [**GetNumberEvents**](https://msdn.microsoft.com/library/windows/hardware/ff547906). For a description of each event in the list, use [**GetEventIndexDescription**](https://msdn.microsoft.com/library/windows/hardware/ff546630). To set an event from this list as the current event, use the method [**SetNextEventIndex**](https://msdn.microsoft.com/library/windows/hardware/ff556737); after calling [**WaitForEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561229), the event becomes the current event. To determine which event in the list is the current event, use [**GetCurrentEventIndex**](https://msdn.microsoft.com/library/windows/hardware/ff545755).
 
- 
+ 
 
- 
+ 
 
 
 

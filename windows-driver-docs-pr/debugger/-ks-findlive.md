@@ -54,7 +54,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ The **!ks.findlive** command may not find all possible specified live objects.
 
 This extension requires that the target computer be running a checked (debug) version of Ks.sys.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ The GPD language provides entries for describing [hardware-resident fonts](hardw
 
 You can optionally provide customized code for handling soft fonts. For information about this customized code, see [Customized Font Management](customized-font-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

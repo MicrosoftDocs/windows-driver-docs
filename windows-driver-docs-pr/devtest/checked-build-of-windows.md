@@ -30,9 +30,9 @@ This section describes how the Microsoft Windows *checked build* (also known as 
 
 This section does not cover Itanium-based systems, nor does it cover Windows 98/Me.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ When using GDI-supplied halftoning capabilities, you can provide [minidriver-sup
 
 For more information about color formats, see [Handling Color Formats](handling-color-formats.md).
 
- 
+ 
 
- 
+ 
 
 
 

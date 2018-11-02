@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The \*ArraySize directive accepts one integer or a range of integers. (A range is two integers separated by a hyphen (-) and optionally enclosed by parenthesis or square brackets \[for example, \*ArraySize: \[1-15\]\]). You can use the GPD wildcard (\*) to represent any integer value. For example, to define an array of any size, you could use \*ArraySize: \*.
 
- 
+ 
 
- 
+ 
 
 
 

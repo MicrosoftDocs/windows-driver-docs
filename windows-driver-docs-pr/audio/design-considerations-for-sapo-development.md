@@ -47,7 +47,7 @@ In addition to **IUnknown**, sAPOs must expose the following interfaces:
 
 **Important**   Custom sAPOs must not expose the **IAudioProcessingObjectVBR** interface.
 
- 
+ 
 
 For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the WinDDK\\&lt;build number&gt;\\inc\\API folder.
 
@@ -59,9 +59,9 @@ The following topics provide details about the two main tasks required for wrapp
 
 [Replacing System-supplied sAPOs](replacing-system-supplied-sapos.md)
 
- 
+ 
 
- 
+ 
 
 
 

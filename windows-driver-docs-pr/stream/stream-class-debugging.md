@@ -28,9 +28,9 @@ The following, additional tips can be used when debugging stream class minidrive
 
 -   Minidrivers can print their own messages, using *stream.sys* facilities previously described, by calling [**StreamClassDebugPrint**](https://msdn.microsoft.com/library/windows/hardware/ff568235). Note that the output level as previously described must be set to be greater than or equal to the output level chosen in the call.
 
- 
+ 
 
- 
+ 
 
 
 

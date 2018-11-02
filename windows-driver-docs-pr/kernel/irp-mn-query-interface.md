@@ -151,9 +151,9 @@ Requirements
 
 [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526)
 
- 
+ 
 
- 
+ 
 
 
 

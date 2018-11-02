@@ -22,7 +22,6 @@ For example, to specify the light sensor icon, you would add the following secti
 
 [DriverPropertiesSection]
 DeviceIcon,,,,"%SystemRoot%\system32\sensorscpl.dll,-1008"
-
 ```
 
 To specify a custom icon, replace the DLL path with the path of the DLL that contains your icon and replace the resource ID with the appropriate value.

@@ -16,10 +16,10 @@ This section describes the encoder and codec API-specific property sets that are
 
 The reference page for each property contains a table with the column headings that are shown below.
 
+
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-
- 
+|     |     |        |                          |                     |
 
 These headings have the following meanings:
 
@@ -81,9 +81,9 @@ The following property sets belong to the encoder API:
 
 [ENCAPIPARAM\_PEAK\_BITRATE](encapiparam-peak-bitrate.md)
 
- 
+ 
 
- 
+ 
 
 
 

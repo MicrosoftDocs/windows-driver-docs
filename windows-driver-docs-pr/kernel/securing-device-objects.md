@@ -28,9 +28,9 @@ There are two aspects of a device object that must be secured:
 
 -   Access to the device's namespace. This is documented in [Controlling Device Namespace Access](controlling-device-namespace-access.md).
 
- 
+ 
 
- 
+ 
 
 
 

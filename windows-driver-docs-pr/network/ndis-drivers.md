@@ -27,9 +27,9 @@ NDIS supports the following primary types of network drivers:
 
 -   [Intermediate drivers](ndis-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

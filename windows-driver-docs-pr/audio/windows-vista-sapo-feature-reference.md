@@ -24,7 +24,7 @@ This topic includes reference material that will give you more details about som
 
 -   [COM](https://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](https://go.microsoft.com/fwlink/p/?linkid=106294) tutorials and information.
 
- 
+ 
 
 
 

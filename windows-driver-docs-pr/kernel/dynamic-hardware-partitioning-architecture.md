@@ -25,9 +25,9 @@ For more information about how a device driver can register itself with the oper
 
 For more information about how an application can register itself with the operating system to receive notification when partition units are dynamically added to the hardware partition, see [Application Notification](application-notification.md).
 
- 
+ 
 
- 
+ 
 
 
 

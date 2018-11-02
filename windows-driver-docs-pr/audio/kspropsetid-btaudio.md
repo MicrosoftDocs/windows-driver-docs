@@ -17,9 +17,9 @@ The `KSPROPSETID_BtAudio` property set contains the following properties:
 
 [**KSPROPERTY\_ONESHOT\_RECONNECT**](ksproperty-oneshot-reconnect.md)
 
- 
+ 
 
- 
+ 
 
 
 

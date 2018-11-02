@@ -64,7 +64,7 @@ typedef enum _EFI_USBFN_PORT_TYPE
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -76,9 +76,9 @@ Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](http:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

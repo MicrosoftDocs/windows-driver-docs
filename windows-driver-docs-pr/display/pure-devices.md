@@ -21,9 +21,9 @@ Only vertex processing directly supported by the hardware is available to the ap
 
 In order to use a pure device the application must request it with the device creation flag D3DCREATE\_PUREDEVICE and the driver must report its ability to act as a pure device.
 
- 
+ 
 
- 
+ 
 
 
 

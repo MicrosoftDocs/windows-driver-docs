@@ -28,9 +28,9 @@ This example uses a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows
 
 Typically, a miniport driver uses this type of data range to describe the analog signal passing through a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin), which represents a hardwired connection on an audio adapter card. For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md). Also, see the code example in [Exposing Filter Topology](exposing-filter-topology.md).
 
- 
+ 
 
- 
+ 
 
 
 

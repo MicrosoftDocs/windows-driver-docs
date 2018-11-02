@@ -28,9 +28,9 @@ Use the following best practices to design your DPC routines:
 
 For more information about performance analysis tools, see [Measuring System Resume Performance on Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=69964).
 
- 
+ 
 
- 
+ 
 
 
 

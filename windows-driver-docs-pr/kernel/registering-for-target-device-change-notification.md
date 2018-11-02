@@ -32,9 +32,9 @@ The following information applies to calling this routine for target device chan
 
 A driver removes a notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**. If the driver took out a reference on the file object when it registered for notification and that reference is still outstanding, the driver must release the reference after it removes the registration.
 
- 
+ 
 
- 
+ 
 
 
 

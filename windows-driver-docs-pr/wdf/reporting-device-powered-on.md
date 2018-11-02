@@ -20,9 +20,9 @@ The driver can use the following procedure:
 2.  In [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848), if the flag is set, the driver clears the flag and calls [**PoFxReportDevicePoweredOn**](https://msdn.microsoft.com/library/windows/hardware/hh439526).
 3.  The driver also checks the flag in [*EvtDeviceSelfManagedIoFlush*](https://msdn.microsoft.com/library/windows/hardware/ff540901). If the flag is set, the device failed to return to D0 and the device has been removed. In this case, the driver calls [**PoFxReportDevicePoweredOn**](https://msdn.microsoft.com/library/windows/hardware/hh439526) and then unregisters with the power framework.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!ecs** extension is obsolete. To edit the PCI configuration space, use [**!ecb**](-ecb---ecd---ecw.md), **!ecd**, or **!ecw**.
 
- 
+ 
 
- 
+ 
 
 
 

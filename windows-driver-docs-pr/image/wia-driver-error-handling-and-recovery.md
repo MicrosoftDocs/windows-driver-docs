@@ -21,9 +21,9 @@ This section includes:
 
 [WIA Driver Error Recovery for Windows Vista](wia-driver-error-recovery-for-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

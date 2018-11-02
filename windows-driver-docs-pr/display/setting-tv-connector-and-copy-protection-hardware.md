@@ -25,9 +25,9 @@ For any bit set by a miniport driver in the **dwFlags** member of [**VIDEOPARAME
 
 A VIDEOPARAMETERS field contains undefined data if the corresponding bit is not set in **dwFlags**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ Details are given in the following topics:
 
 -   [Keeping a Log File in CDB](keeping-a-log-file-in-cdb.md)
 
- 
+ 
 
- 
+ 
 
 
 

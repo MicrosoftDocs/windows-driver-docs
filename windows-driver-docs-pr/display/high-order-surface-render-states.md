@@ -31,9 +31,9 @@ This render state gives the number of segments to be used for each edge of the p
 
 This render state notifies the driver that a patch is to be deleted. For more information, see [**D3DRENDERSTATETYPE**](https://msdn.microsoft.com/library/windows/hardware/ff549036).
 
- 
+ 
 
- 
+ 
 
 
 

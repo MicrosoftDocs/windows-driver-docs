@@ -84,7 +84,7 @@ The expression operators are included in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 Standard variable expressions do not modify the values assigned to the standard variables. The calculated value is placed in the escape sequence, using the format specified by the [command string argument type](command-string-argument-types.md) specifier.
 
@@ -110,9 +110,9 @@ The **max\_repeat** operator can be used only if the following conditions are me
 
 -   The argument includes a range specification.
 
- 
+ 
 
- 
+ 
 
 
 

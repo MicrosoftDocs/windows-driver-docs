@@ -30,9 +30,9 @@ For example, a device with four channels and a 16-bit sample size requires an au
 
 The Ac97 sample adapter driver in the Microsoft Windows Driver Kit (WDK) implements a [**GetAllocatorFraming**](https://msdn.microsoft.com/library/windows/hardware/ff536726) method. The miniport driver uses this method to communicate its preferred frame-allocation size. In Windows 2000 and Windows Me, the port driver calls this method only when the [Splitter system driver](kernel-mode-wdm-audio-components.md#splitter_system_driver) (Splitter.sys) is instantiated above the output pin. In Windows XP and later, the port driver calls this method for input streams as well. Remember that SysAudio might choose to ignore the miniport driver's preferences when deciding on a frame-allocation size.
 
- 
+ 
 
- 
+ 
 
 
 

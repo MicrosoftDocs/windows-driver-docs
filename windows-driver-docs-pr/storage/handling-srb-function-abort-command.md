@@ -33,9 +33,9 @@ Otherwise, the *HwScsiStartIo* routine does the following:
 
 2.  Programs the HBA to abort the given **NextSrb** request.
 
- 
+ 
 
- 
+ 
 
 
 

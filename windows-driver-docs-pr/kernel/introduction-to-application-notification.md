@@ -16,7 +16,7 @@ When a new processor or memory module is added to the hardware partition, the op
 
 **Note**   All PnP notifications are asynchronous. Therefore, these notifications might not be received by a user-mode application until sometime after the operating system has started the processor or memory module.
 
- 
+ 
 
 When a user-mode application receives this notification, it can adjust some or all of the following items accordingly:
 
@@ -32,9 +32,9 @@ A user-mode application can get the amount of physical memory that is in the har
 
 A user-mode application must register itself with the operating system to receive application notification. For more information, see [Registering for Application Notification](registering-for-application-notification.md).
 
- 
+ 
 
- 
+ 
 
 
 

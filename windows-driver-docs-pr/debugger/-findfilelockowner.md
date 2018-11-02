@@ -48,7 +48,7 @@ Specifies the address of a file object. If *FileObject* is omitted, the extensio
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ This extension is most useful after a critical section timeout in which the thre
 
 The extension takes some time to complete because it walks the stack of all threads in the system until it finds the offending thread.You can stop \` at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 >[!NOTE] 
 > The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
 
- 
+ 
 
 2. In the main menu in Notepad, click **File** &gt; **Save As**, then in the **Save As** dialog window, use the dropdown box to set the **Save as type** field to **All Files**.****
 

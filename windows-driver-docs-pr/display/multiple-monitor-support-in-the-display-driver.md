@@ -24,9 +24,9 @@ To track window changes in a multiple-monitor system, a driver can request GDI t
 
 In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.
 
- 
+ 
 
- 
+ 
 
 
 

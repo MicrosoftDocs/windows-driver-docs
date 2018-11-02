@@ -25,9 +25,9 @@ NDIS supports several basic types of miniport drivers. These NDIS miniport drive
 
 [NDIS Miniport Drivers with a WDM Lower Edge](ndis-miniport-drivers-with-a-wdm-lower-edge.md)
 
- 
+ 
 
- 
+ 
 
 
 

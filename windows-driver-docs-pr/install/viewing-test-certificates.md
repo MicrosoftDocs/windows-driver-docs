@@ -29,9 +29,9 @@ To view the details about the Contoso.com(Test) certificate, double-click the ce
 
 Notice that the Certificate dialog box states: "This CA Root certificate is not trusted. To enable trust, install this certificate in the Trusted Root Certification Authorities store." This is the expected behavior. The certificate cannot be verified because Windows does not trust the issuing authority, "Contoso.com(Test)" by default.
 
- 
+ 
 
- 
+ 
 
 
 

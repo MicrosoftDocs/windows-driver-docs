@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 The **!urb** extension command is obsolete. Use the [**dt URB**](dt--display-type-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

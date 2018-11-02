@@ -43,9 +43,9 @@ The following GDL directives apply to templates:
 
 For more information about how to use template directives, see [Template Directive Example](template-directive-example.md)
 
- 
+ 
 
- 
+ 
 
 
 

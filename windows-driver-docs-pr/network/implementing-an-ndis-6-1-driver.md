@@ -18,9 +18,9 @@ An NDIS 6.1 driver must report the correct NDIS version when it registers with N
 
 You must update the major and minor NDIS version number in the NDIS\_*Xxx*\_DRIVER\_CHARACTERISTICS structure to support NDIS 6.1. The **MajorNdisVersion** member must contain 0x06 and the **MinorNdisVersion** member must contain 0x01. This requirement applies to miniport, protocol, and filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

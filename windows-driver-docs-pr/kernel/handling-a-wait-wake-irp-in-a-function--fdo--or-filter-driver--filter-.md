@@ -52,9 +52,9 @@ If a function or filter driver receives a wait/wake IRP for a device that does n
 
 2.  Return the status set in **Irp-&gt;IoStatus.Status** from the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

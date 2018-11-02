@@ -15,11 +15,11 @@ The symbol proxy server must run from a security context with the appropriate pr
 
 **Note**   It is a good practice to limit privileges of this account to only those necessary to read files and copy them to c:\\symstore. This restriction prevents clients that access your HTTP store from corrupting the system.
 
- 
+ 
 
 **Note**  Make sure the options presented here make sense in your environment. Different organizations have different security needs and requirements. Modify the process outlined here to support the security requirements of your organization.
 
- 
+ 
 
 ### <span id="authenticate_as_a_network_service"></span><span id="AUTHENTICATE_AS_A_NETWORK_SERVICE"></span>Authenticate as a Network Service
 
@@ -101,9 +101,9 @@ For this example, the user account is named *SymProxyUser* on a domain named *co
 
 9.  Close the **Computer Management** console.
 
- 
+ 
 
- 
+ 
 
 
 

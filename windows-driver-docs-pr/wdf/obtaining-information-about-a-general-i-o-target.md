@@ -36,9 +36,9 @@ Returns a pointer to the WDM file object that is associated with a remote I/O ta
 <a href="" id="wdfiotargetwdmgettargetfilehandle"></a>[**WdfIoTargetWdmGetTargetFileHandle**](https://msdn.microsoft.com/library/windows/hardware/ff548683)  
 Returns a handle to the file that is associated with a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

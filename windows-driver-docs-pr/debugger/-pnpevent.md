@@ -48,7 +48,7 @@ Specifies the address of a device event to display. If this is zero or omitted, 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of th
 
 [Plug and Play and Power Debugger Commands](plug-and-play-and-power-debugger-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

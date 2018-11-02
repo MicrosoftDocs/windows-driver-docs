@@ -60,7 +60,7 @@ Specifies the value to be written. For the **!ecb** extension, *Data* must be 1 
 </tbody>
 </table>
 
- 
+ 
 
 These extension commands can only be used with an x86-based target computer.
 
@@ -75,9 +75,9 @@ You cannot use these extension commands to write a sequence of *Data* values. Th
 
 To display the PCI configuration space, use [**!pci 100**](-pci.md)*Bus Device Function*.
 
- 
+ 
 
- 
+ 
 
 
 

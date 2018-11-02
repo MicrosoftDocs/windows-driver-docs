@@ -34,9 +34,9 @@ Three common YUV color spaces are:
 
 There are many varieties of these color spaces and many other YUV formats in use today. For information about FOURCC, go to the [FOURCC](http://go.microsoft.com/fwlink/p/?linkid=8697) website.
 
- 
+ 
 
- 
+ 
 
 
 

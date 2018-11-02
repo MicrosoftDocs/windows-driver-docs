@@ -22,9 +22,9 @@ Note that programmatic control of a monitor through the Display Data Channel Com
 
 For a representation of a monitor device stack, see [Monitor Class Function Driver](monitor-class-function-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

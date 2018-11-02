@@ -22,9 +22,9 @@ In Windows Server 2003, Windows XP, and Windows 2000, the bus driver first calls
 
 After the bus driver completes the IRP, the power manager calls [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines set by other drivers as they passed the IRP down the stack.
 
- 
+ 
 
- 
+ 
 
 
 

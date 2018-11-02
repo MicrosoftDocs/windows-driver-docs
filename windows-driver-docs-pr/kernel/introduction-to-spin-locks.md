@@ -46,9 +46,9 @@ Every driver that has an ISR uses an *interrupt spin lock* to protect any data o
 
     -   Call an external routine that violates any of the preceding rules.
 
- 
+ 
 
- 
+ 
 
 
 

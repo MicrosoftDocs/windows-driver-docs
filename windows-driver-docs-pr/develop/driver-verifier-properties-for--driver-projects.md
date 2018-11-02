@@ -117,7 +117,7 @@ You can configure the following Driver Verifier options on the test computer.
 
     **Note**  You cannot combine [Stack Based Failure Injection](https://msdn.microsoft.com/Library/Windows/Hardware/Hh974664) with [Low resources simulation](https://msdn.microsoft.com/Library/Windows/Hardware/Ff548288).
 
-     
+     
 
 ## <span id="Driver_Verifier_options_that_require_I_O_Verification"></span><span id="driver_verifier_options_that_require_i_o_verification"></span><span id="DRIVER_VERIFIER_OPTIONS_THAT_REQUIRE_I_O_VERIFICATION"></span>Driver Verifier options that require I/O Verification
 
@@ -136,9 +136,9 @@ There are four options that require you to first enable [I/O Verification](https
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
+ 
 
- 
+ 
 
 
 

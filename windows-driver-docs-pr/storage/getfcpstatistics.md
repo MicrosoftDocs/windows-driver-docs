@@ -26,9 +26,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetFCPStatistics(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
-   [in] HBAScsiID                          ScsiId,
-   [out] MSFC_FC4STATISTICS                FC4Statistics
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
+   [in] HBAScsiID                          ScsiId,
+   [out] MSFC_FC4STATISTICS                FC4Statistics
 );
 ```
 
@@ -87,9 +87,9 @@ Requirements
 
 [**MSFC\_FC4STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff562492)
 
- 
+ 
 
- 
+ 
 
 
 

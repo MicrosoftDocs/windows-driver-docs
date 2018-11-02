@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT32 elements. The array must contain 1 or
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32\[\] | A list of non-WDI OIDs that the adapter wants to advertise to the operating system. The adapter should not assume that the operating system has already filtered non-WDI OIDs to match this list. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

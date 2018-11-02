@@ -54,7 +54,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PROPER
 </tbody>
 </table>
 
- 
+ 
 
 If the forwarding extension does not complete the OID set request of OID\_SWITCH\_PROPERTY\_DELETE, the request is completed by the underlying miniport edge of the extensible switch. The miniport edge returns the following status code.
 
@@ -77,7 +77,7 @@ If the forwarding extension does not complete the OID set request of OID\_SWITCH
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -111,9 +111,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

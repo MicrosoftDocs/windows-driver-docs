@@ -24,9 +24,9 @@ An IHV who intends to develop a port monitor must design it to support autoconfi
 
 An IHV is not required to develop a port monitor if in-box support is sufficient. (For details, see [In-box Support for Autoconfiguration](in-box-support-for-autoconfiguration.md).) Be aware that in-box support is provided only for the standard TCP/IP port monitor and the Web Services for Devices (WSD) port monitor. IHVs who intend to provide autoconfiguration for local printers must provide a port monitor.
 
- 
+ 
 
- 
+ 
 
 
 

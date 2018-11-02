@@ -61,7 +61,7 @@ Displays verbose information.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ MZ at 7c570000, prot 00000002, type 01000000 - size b8000
   Name: KERNEL32.dll
 ```
 
- 
+ 
 
- 
+ 
 
 
 

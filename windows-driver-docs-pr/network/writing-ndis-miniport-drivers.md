@@ -53,9 +53,9 @@ This section includes the following topics:
 
 [Miniport Adapter Shutdown](miniport-adapter-shutdown.md)
 
- 
+ 
 
- 
+ 
 
 
 

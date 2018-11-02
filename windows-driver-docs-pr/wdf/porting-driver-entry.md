@@ -35,9 +35,9 @@ DriverEntry(
 
 **DriverEntry** also initializes any global data or resources that the driver requires, such as creating a lookaside list or initializing tracing. Note that although [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) returns a handle to the WDFDRIVER object, the driver does not retain this handle, just as a WDM driver might not retain the DRIVER\_OBJECT pointer that was passed to its **DriverEntry** routine. The reason is the same: only a few drivers use the pointer to the driver object.
 
- 
+ 
 
- 
+ 
 
 
 

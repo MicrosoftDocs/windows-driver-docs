@@ -72,7 +72,7 @@ For example, suppose a device (with a port name of "usbscan0") has two endpoints
 </tbody>
 </table>
 
- 
+ 
 
 If you call [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) with a port name of "usbscan0", the function opens transfer pipes to endpoints with index values of 2, 4, and 5, as well as the control endpoint.
 
@@ -86,9 +86,9 @@ For descriptions of all I/O control codes, see [USB Still Image I/O Control Code
 
 The kernel-mode USB driver does not implement a package or message protocol. Read operations do not require any particular packet alignment, but better performance can be achieved if read requests are aligned to maximum packet size boundaries. The maximum packet size can be obtained using the [**IOCTL\_GET\_CHANNEL\_ALIGN\_RQST**](https://msdn.microsoft.com/library/windows/hardware/ff542849) I/O control code.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ Typically, the device's function driver is the *power policy owner* for the driv
 
 The power policy owner has two additional responsibilities: it controls a device's ability to enter a low-power state when it is idle and the system remains in its [working (S0) state](https://msdn.microsoft.com/library/windows/hardware/ff564591), and it controls the device's ability to generate a wake signal when it detects an external event from a low-power state. If your device has idle or wake capabilities, your function driver can provide additional callback functions. For more information about the responsibilities of the power policy owner, see [Power Policy Ownership](power-policy-ownership.md).
 
- 
+ 
 
- 
+ 
 
 
 

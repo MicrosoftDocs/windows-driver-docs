@@ -28,21 +28,21 @@ Starting with Windows 10, the run-time power management framework (PoFx) suppor
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Using PEPs for ACPI services](using-peps-for-acpi-services.md)</p></td>
+<td><p><a href="using-peps-for-acpi-services.md" data-raw-source="[Using PEPs for ACPI services](using-peps-for-acpi-services.md)">Using PEPs for ACPI services</a></p></td>
 <td><p>This topic provides information about using platform extension plug-ins (PEPs) for ACPI services.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Platform Performance Thresholds](platform-performance-thresholds.md)</p></td>
+<td><p><a href="platform-performance-thresholds.md" data-raw-source="[Platform Performance Thresholds](platform-performance-thresholds.md)">Platform Performance Thresholds</a></p></td>
 <td><p>There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

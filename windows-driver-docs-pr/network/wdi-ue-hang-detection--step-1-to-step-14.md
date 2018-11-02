@@ -48,9 +48,9 @@ The completion of NDIS OID\_SET\_POWER is necessary to avoid a deadlock of PnP o
 
 [UE hang detection and recovery flow](wdi-ue-hang-detection-and-recovery-flow.md)
 
- 
+ 
 
- 
+ 
 
 
 

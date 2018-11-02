@@ -84,15 +84,15 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about MUI and resource configuration data format, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the VPB.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +110,9 @@ RefCount: 14
 Volume Label:           MY-DISK-C
 ```
 
- 
+ 
 
- 
+ 
 
 
 

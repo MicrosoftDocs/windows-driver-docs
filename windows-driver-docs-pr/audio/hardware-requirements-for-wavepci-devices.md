@@ -78,9 +78,9 @@ Even if the preceding example is changed to align the buffer with the start of t
 
 A WavePci device whose scatter/gather DMA controller does not properly handle split audio frames is limited in the kinds of audio data formats it can handle, although software workarounds might help alleviate some hardware design flaws. For more information, see [WavePci Latency](wavepci-latency.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ To synchronize the entire data stream on a certain cycle time, client drivers mu
 
 To determine if the host controller supports synchronization on cycle times, the client driver should send a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the bus driver, with the **nLevel** member of the IRB set to 2. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](https://msdn.microsoft.com/library/windows/hardware/ff537147) structure in response to this request. If the bus driver sets the HOST\_INFO\_SUPPORTS\_START\_ON\_CYCLE flag in the **HostCapabilities** member of GET\_LOCAL\_HOST\_INFO2, this indicates that the host controller supports the synchronization of isochronous operations using cycle times.
 
- 
+ 
 
- 
+ 
 
 
 

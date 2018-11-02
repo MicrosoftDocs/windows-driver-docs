@@ -30,9 +30,9 @@ In addition, the figure shows the following components of the smart card environ
 
 -   Both native and vendor-supplied reader drivers must use the smart card driver library to perform many of their key operations, as explained in the section, [Smart Card Driver Library](smart-card-driver-library.md).
 
- 
+ 
 
- 
+ 
 
 
 

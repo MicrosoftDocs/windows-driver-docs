@@ -65,7 +65,6 @@ DriverUpdateCS(sensorID)
 
     effectiveCS[] = DriverUpdateSensorDeviceCS(sensorID, selectedCS[])
 }
-
 ```
 
 ```cpp
@@ -84,7 +83,6 @@ DriverUpdateLDA(sensorID)
 
     effectiveLDA = DriverUpdateSensorDeviceLDA(sensorID, selectedLDA)
 }
-
 ```
 
 ## Sensor state updates

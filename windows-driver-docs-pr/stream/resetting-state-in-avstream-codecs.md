@@ -24,9 +24,9 @@ A reset IOCTL is also sent in the following scenario. When the driver sets the K
 
 In this case, when the driver receives an end request without a preceding begin request, the driver should set [**KSPIN**](https://msdn.microsoft.com/library/windows/hardware/ff563483).**ResetState** to KSRESET\_END. This case applies only to output pins.
 
- 
+ 
 
- 
+ 
 
 
 

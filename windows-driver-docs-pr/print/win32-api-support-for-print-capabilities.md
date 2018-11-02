@@ -28,9 +28,9 @@ When a WPF application requests a PrintCapabilities document from a print driver
 
 For more information about how the **IPrintTicketProvider** interface is supported by Microsoft print drivers, see [Printer Driver and Plug-in Interface Design in Windows Vista](printer-driver-and-plug-in-helper-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

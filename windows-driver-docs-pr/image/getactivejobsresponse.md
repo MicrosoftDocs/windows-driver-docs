@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveJobs</strong>](activejobs.md)</p></td>
+<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,6 @@ The following code example shows how to return the fact that there are no active
     </wscn:GetActiveJobsResponse >
   </soap:Body>
 </soap:Envelope>
-
 ```
 
 The following code example reports two active scan jobs.
@@ -155,9 +154,9 @@ The following code example reports two active scan jobs.
 
 [**GetActiveJobsRequest**](getactivejobsrequest.md)
 
- 
 
- 
+
+
 
 
 

@@ -54,7 +54,7 @@ For each banding pass on a physical page{
 [*DrvQueryPerBandInfo*](https://msdn.microsoft.com/library/windows/hardware/ff556268)
 Rendering operations
 [**DrvNextBand**](https://msdn.microsoft.com/library/windows/hardware/ff556250) // Send raster data for this band, then clear surface to reuse with next band
-    }
+    }
 }
 [**DrvEndDoc**](https://msdn.microsoft.com/library/windows/hardware/ff556215)
 ### <a href="" id="banding-not-in-use"></a> Banding not in use
@@ -96,9 +96,9 @@ A printer graphics DLL can provide a [**DrvEscape**](https://msdn.microsoft.com/
 
 **CreateDC**, **ResetDC**, and **DeleteDC** are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

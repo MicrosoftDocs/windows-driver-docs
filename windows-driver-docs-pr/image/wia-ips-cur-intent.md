@@ -71,7 +71,7 @@ The following table contains the image-type flags and their definitions. These f
 </tbody>
 </table>
 
- 
+ 
 
 The following table contains the image size and quality flags and their definitions. These flags are used to set the size and quality of an image scan.
 
@@ -106,7 +106,7 @@ The following table contains the image size and quality flags and their definiti
 </tbody>
 </table>
 
- 
+ 
 
 The driver chooses the bit depth, in dots per inch, and other settings that it determines are appropriate for the selected intent. The application must read the current settings to determine which properties were changed.
 
@@ -130,9 +130,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

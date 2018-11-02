@@ -50,9 +50,9 @@ The FOBX flags are split into two groups:
 
 The flags visible to network mini-redirectors consist of the lower 16 bits of the possible FOBX flags. The upper 16 bits are reserved for use internally by RDBSS.
 
- 
+ 
 
- 
+ 
 
 
 

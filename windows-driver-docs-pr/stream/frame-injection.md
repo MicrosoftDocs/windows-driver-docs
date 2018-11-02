@@ -39,9 +39,9 @@ The diagram below shows an AVStream filter set composed of a source filter, an [
 
 ![diagram illustrating an avstream filter set](images/inject1.png)
 
- 
+ 
 
- 
+ 
 
 
 

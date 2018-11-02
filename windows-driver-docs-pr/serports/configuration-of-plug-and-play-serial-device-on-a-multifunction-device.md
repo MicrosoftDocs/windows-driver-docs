@@ -39,9 +39,9 @@ In these configurations, the Toaster device is a child device on the multifuncti
 
 The INF file and installers for the Toaster device install the Serial driver as lower-level device filter driver to provide a 16550 UART-compatible interface for the Toaster device. The Toaster driver creates and attaches an FDO to the Serial driver filter DO.
 
- 
+ 
 
- 
+ 
 
 
 

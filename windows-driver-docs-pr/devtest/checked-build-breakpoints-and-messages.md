@@ -46,9 +46,9 @@ The driver named *xxxxxx* supports IRP\_MJ\_PNP, but did not specify an unload r
 <span id="DO_DEVICE_INITIALIZING_flag_not_cleared_on_DO_0x_________________nnnnnnnn"></span><span id="do_device_initializing_flag_not_cleared_on_do_0x_________________nnnnnnnn"></span><span id="DO_DEVICE_INITIALIZING_FLAG_NOT_CLEARED_ON_DO_0X_________________NNNNNNNN"></span>**DO\_DEVICE\_INITIALIZING flag not cleared on DO 0x** *nnnnnnnn*  
 The device object at address 0x*nnnnnnnn* was created outside of **DriverEntry**, but the DO\_DEVICE\_INITIALIZING bit was not cleared before returning to the system.
 
- 
+ 
 
- 
+ 
 
 
 

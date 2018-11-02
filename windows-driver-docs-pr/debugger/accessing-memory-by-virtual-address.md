@@ -52,9 +52,9 @@ To change the default radix, use the [**n (Set Number Base)**](n--set-number-bas
 
 When you are performing user-mode debugging, the meaning of virtual addresses is determined by the current process. When you are performing kernel-mode debugging, the meaning of virtual addresses can be controlled by the debugger. For more information, see [Process Context](changing-contexts.md#process-context).
 
- 
+ 
 
- 
+ 
 
 
 

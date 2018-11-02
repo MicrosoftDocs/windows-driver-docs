@@ -53,11 +53,11 @@ See for code samples.
 -   If the ConvertibleSlateMode unattend setting is not present and the GPIO indicators are not implemented, the system defaults to slate mode.
 -   The ConvertibleSlateMode unattend setting is not available for Windows Server operating systems.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

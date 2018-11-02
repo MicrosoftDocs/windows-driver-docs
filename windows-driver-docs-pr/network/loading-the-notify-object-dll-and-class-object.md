@@ -30,9 +30,9 @@ The DLL for a particular notify object should be implemented to export a set of 
 
 In order for a notify object DLL to be a COM server, it must expose a class factory for the notify object the server supports. This class factory lets the network configuration subsystem create an instance of the notify object. The class factory should inherit from the **IClassFactory** interface. For more information about implementing classes that inherit from **IClassFactory**, see the Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

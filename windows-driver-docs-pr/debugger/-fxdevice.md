@@ -49,7 +49,7 @@ Provides the address of the FxDevice to display.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -133,9 +133,9 @@ Dumping idle D0 PoFx devices
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

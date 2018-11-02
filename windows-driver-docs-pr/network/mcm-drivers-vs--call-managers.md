@@ -35,9 +35,9 @@ The differences between an MCM driver and a call manager are further described i
 
 [Differences in Virtual Connections](differences-in-virtual-connections.md)
 
- 
+ 
 
- 
+ 
 
 
 

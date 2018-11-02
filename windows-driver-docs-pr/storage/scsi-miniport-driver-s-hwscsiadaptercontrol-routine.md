@@ -46,9 +46,9 @@ A miniport driver's *HwScsiAdapterControl* routine can support any or all of the
 
 See [**HwScsiAdapterControl**](https://msdn.microsoft.com/library/windows/hardware/ff557274) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

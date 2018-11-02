@@ -38,9 +38,9 @@ The following figure shows the control flow of probing and locking commands sent
 
 ![flowchart illustrating probing and locking to set driver configuration](images/probe-lock.png)
 
- 
+ 
 
- 
+ 
 
 
 

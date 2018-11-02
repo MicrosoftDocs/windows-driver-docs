@@ -48,9 +48,9 @@ For a list of obsolete display driver functions, see [Obsolete Graphics DDI Func
 
 -   MAXCHARSETS
 
- 
+ 
 
- 
+ 
 
 
 

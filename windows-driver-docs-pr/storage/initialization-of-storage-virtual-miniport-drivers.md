@@ -50,9 +50,9 @@ Without holding any locks and at PASSIVE\_LEVEL, the virtual miniport driver cal
 
 [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) appears in Storport.h.
 
- 
+ 
 
- 
+ 
 
 
 

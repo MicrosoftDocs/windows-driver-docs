@@ -27,9 +27,9 @@ AddReg = R200_R200_SoftwareDeviceSettings
 DelReg = R200_RemoveDeviceSettings 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

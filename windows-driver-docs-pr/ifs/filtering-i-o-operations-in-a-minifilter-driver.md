@@ -26,9 +26,9 @@ The following list describes several guidelines for filtering specific types of 
 
 -   Minifilter drivers cannot register a postoperation callback routine for IRP\_MJ\_SHUTDOWN.
 
- 
+ 
 
- 
+ 
 
 
 

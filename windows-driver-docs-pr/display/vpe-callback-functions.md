@@ -35,73 +35,73 @@ The following table lists the video port extensions (VPE) callback functions tha
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortCanCreate</em>](https://msdn.microsoft.com/library/windows/hardware/ff550375)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550375" data-raw-source="[&lt;em&gt;DdVideoPortCanCreate&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550375)"><em>DdVideoPortCanCreate</em></a></p></td>
 <td align="left"><p>Determines whether the driver can support a DirectDraw VPE object of the specified description.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortColorControl</em>](https://msdn.microsoft.com/library/windows/hardware/ff550383)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550383" data-raw-source="[&lt;em&gt;DdVideoPortColorControl&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550383)"><em>DdVideoPortColorControl</em></a></p></td>
 <td align="left"><p>Gets or sets the VPE object color controls.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortCreate</em>](https://msdn.microsoft.com/library/windows/hardware/ff550391)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550391" data-raw-source="[&lt;em&gt;DdVideoPortCreate&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550391)"><em>DdVideoPortCreate</em></a></p></td>
 <td align="left"><p>Notifies the driver that DirectDraw created a VPE object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortDestroy</em>](https://msdn.microsoft.com/library/windows/hardware/ff550406)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550406" data-raw-source="[&lt;em&gt;DdVideoPortDestroy&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550406)"><em>DdVideoPortDestroy</em></a></p></td>
 <td align="left"><p>Notifies the driver that DirectDraw destroyed the specified VPE object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortFlip</em>](https://msdn.microsoft.com/library/windows/hardware/ff550408)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550408" data-raw-source="[&lt;em&gt;DdVideoPortFlip&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550408)"><em>DdVideoPortFlip</em></a></p></td>
 <td align="left"><p>Performs a physical flip, causing the VPE object to start writing data to the new surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortGetBandwidth</em>](https://msdn.microsoft.com/library/windows/hardware/ff550413)</p></td>
-<td align="left"><p>Reports the bandwidth limitations of the device's frame buffer memory based on the specified VPE object output format.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550413" data-raw-source="[&lt;em&gt;DdVideoPortGetBandwidth&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550413)"><em>DdVideoPortGetBandwidth</em></a></p></td>
+<td align="left"><p>Reports the bandwidth limitations of the device&#39;s frame buffer memory based on the specified VPE object output format.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortGetConnectInfo</em>](https://msdn.microsoft.com/library/windows/hardware/ff550415)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550415" data-raw-source="[&lt;em&gt;DdVideoPortGetConnectInfo&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550415)"><em>DdVideoPortGetConnectInfo</em></a></p></td>
 <td align="left"><p>Returns the connections supported by the specified VPE object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortGetField</em>](https://msdn.microsoft.com/library/windows/hardware/ff550420)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550420" data-raw-source="[&lt;em&gt;DdVideoPortGetField&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550420)"><em>DdVideoPortGetField</em></a></p></td>
 <td align="left"><p>Determines whether the current field of an interlaced signal is even or odd.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortGetFlipStatus</em>](https://msdn.microsoft.com/library/windows/hardware/ff550425)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550425" data-raw-source="[&lt;em&gt;DdVideoPortGetFlipStatus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550425)"><em>DdVideoPortGetFlipStatus</em></a></p></td>
 <td align="left"><p>Determines whether the most recently requested flip on a surface has occurred.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortGetInputFormats</em>](https://msdn.microsoft.com/library/windows/hardware/ff550430)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550430" data-raw-source="[&lt;em&gt;DdVideoPortGetInputFormats&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550430)"><em>DdVideoPortGetInputFormats</em></a></p></td>
 <td align="left"><p>Determines the input formats that the DirectDraw VPE object can accept.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortGetLine</em>](https://msdn.microsoft.com/library/windows/hardware/ff550435)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550435" data-raw-source="[&lt;em&gt;DdVideoPortGetLine&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550435)"><em>DdVideoPortGetLine</em></a></p></td>
 <td align="left"><p>Returns the current line number of the hardware video port.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortGetOutputFormats</em>](https://msdn.microsoft.com/library/windows/hardware/ff550440)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550440" data-raw-source="[&lt;em&gt;DdVideoPortGetOutputFormats&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550440)"><em>DdVideoPortGetOutputFormats</em></a></p></td>
 <td align="left"><p>Determines the output formats that the VPE object supports.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortGetSignalStatus</em>](https://msdn.microsoft.com/library/windows/hardware/ff550441)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550441" data-raw-source="[&lt;em&gt;DdVideoPortGetSignalStatus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550441)"><em>DdVideoPortGetSignalStatus</em></a></p></td>
 <td align="left"><p>Retrieves the status of the video signal currently being presented to the hardware video port.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DdVideoPortUpdate</em>](https://msdn.microsoft.com/library/windows/hardware/ff550450)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550450" data-raw-source="[&lt;em&gt;DdVideoPortUpdate&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550450)"><em>DdVideoPortUpdate</em></a></p></td>
 <td align="left"><p>Starts and stops the VPE object and modifies the VPE object data stream.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DdVideoPortWaitForSync</em>](https://msdn.microsoft.com/library/windows/hardware/ff550455)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550455" data-raw-source="[&lt;em&gt;DdVideoPortWaitForSync&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550455)"><em>DdVideoPortWaitForSync</em></a></p></td>
 <td align="left"><p>Waits until the next vertical synch occurs.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

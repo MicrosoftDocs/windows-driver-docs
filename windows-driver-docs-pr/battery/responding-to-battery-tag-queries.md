@@ -35,9 +35,9 @@ If no battery is present, or if the miniclass driver cannot determine whether a 
 
 The class driver uses the battery tag internally and in calls to the miniclass driver to identify a specific instance of a battery. The miniclass driver should check the value of the battery tag that is passed to each of its standard routines to ensure that it corresponds to the current battery. If the tag is incorrect, the miniclass driver should return STATUS\_NO\_SUCH\_DEVICE.
 
- 
+ 
 
- 
+ 
 
 
 

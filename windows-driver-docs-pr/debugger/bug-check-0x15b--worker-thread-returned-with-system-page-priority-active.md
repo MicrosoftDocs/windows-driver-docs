@@ -31,11 +31,11 @@ The WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE bug check has
 | 3         | WorkItem parameter                                                             |
 | 4         | WorkItem address                                                               |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

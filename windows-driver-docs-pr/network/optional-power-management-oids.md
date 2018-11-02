@@ -30,27 +30,27 @@ For NDIS to consider a device power-management -- aware, it must respond to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774)</p></td>
-<td align="left"><p>The NIC's Power Management abilities</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569774" data-raw-source="[OID_PNP_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774)">OID_PNP_CAPABILITIES</a></p></td>
+<td align="left"><p>The NIC&#39;s Power Management abilities</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_QUERY_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569778" data-raw-source="[OID_PNP_QUERY_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778)">OID_PNP_QUERY_POWER</a></p></td>
 <td align="left"><p>A query to determine whether the device can transition to a specific power state.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569780" data-raw-source="[OID_PNP_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780)">OID_PNP_SET_POWER</a></p></td>
 <td align="left"><p>A command to set the device to specified power state</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

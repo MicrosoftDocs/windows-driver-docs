@@ -28,9 +28,9 @@ The type of protection that can be applied to a video signal that is passed thro
 <span id="Protection_level"></span><span id="protection_level"></span><span id="PROTECTION_LEVEL"></span>**Protection level**  
 The level of protection that is applied to a video signal that is passed through a graphics adapter's connector. The level value is dependent on the protection type. Some protection types (for example, High-bandwidth Digital Content Protection (HDCP)) have only two protection levels (for example, on and off).
 
- 
+ 
 
- 
+ 
 
 
 

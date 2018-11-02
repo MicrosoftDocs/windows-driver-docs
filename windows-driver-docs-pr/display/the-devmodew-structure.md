@@ -99,7 +99,7 @@ The following table lists several public DEVMODEW members that are used *only* b
 </tbody>
 </table>
 
- 
+ 
 
 The next table lists several public DEVMODEW members that are used *only* by display drivers:
 
@@ -133,12 +133,12 @@ The next table lists several public DEVMODEW members that are used *only* by dis
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dmDisplayFrequency</strong></p></td>
-<td align="left"><p>Specifies, in hertz, the display's refresh rate.</p></td>
+<td align="left"><p>Specifies, in hertz, the display&#39;s refresh rate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The third table lists several public DEVMODEW members that are used by both printer and display drivers:
 
@@ -156,9 +156,9 @@ The third table lists several public DEVMODEW members that are used by both prin
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>dmDeviceName</strong></p></td>
-<td align="left"><p>For displays, specifies the display driver's DLL.</p>
+<td align="left"><p>For displays, specifies the display driver&#39;s DLL.</p>
 <div>
- 
+ 
 </div>
 For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tr>
@@ -177,11 +177,11 @@ For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

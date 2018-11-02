@@ -87,9 +87,9 @@ The following software tracing tools are included in either the Windows Driver K
 
 -   On Windows XP with Service Pack 2 (SP2) and later, you can use [Tracelog](tracelog.md) to log deferred procedure call (DPC) and interrupt service routine (ISR) events in the NT Kernel Logger trace session and then use Tracerpt to create summary reports from the logs. For more information about how to use this tool, including an example, see Tracelog.
 
- 
+ 
 
- 
+ 
 
 
 

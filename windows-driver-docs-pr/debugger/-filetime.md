@@ -48,7 +48,7 @@ Specifies a 64-bit FILETIME structure.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -60,9 +60,9 @@ kd> !filetime 1c4730984712348
  7/26/2004 04:10:18.712 (Pacific Standard Time)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

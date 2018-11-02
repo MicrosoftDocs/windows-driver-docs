@@ -55,7 +55,7 @@ The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
- 
+ 
 
- 
+ 
 
 
 

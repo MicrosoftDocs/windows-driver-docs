@@ -16,9 +16,9 @@ In versions of Storport prior to Windows 7, Storport's system event log interfac
 
 [**StorPortLogSystemEvent**](https://msdn.microsoft.com/library/windows/hardware/ff567428) is implemented as a Storport extended function and is available to miniport drivers using the existing extended function interface. Use of the extended function interface avoids a direct dynamic link reference to the new function; by avoiding that direct reference, miniport drivers that use the new function load properly on operating systems that do not support the function, with the function returning STOR\_STATUS\_NOT\_IMPLEMENTED when not supported. In this way, vendors can create a single miniport driver that runs on multiple OS releases, taking advantage of the new event logging function where it is supported.
 
- 
+ 
 
- 
+ 
 
 
 

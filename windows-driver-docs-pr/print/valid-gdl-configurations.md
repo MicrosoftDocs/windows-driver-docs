@@ -31,9 +31,9 @@ A valid configuration satisfies the following conditions:
 
 To prevent loss of the intent of your configuration because of the parser's validation process, you should pass a valid configuration to the parser functions.
 
- 
+ 
 
- 
+ 
 
 
 

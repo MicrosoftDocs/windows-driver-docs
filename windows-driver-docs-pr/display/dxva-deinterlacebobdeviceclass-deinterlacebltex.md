@@ -109,7 +109,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of [<strong>DDMOCOMPBUFFERINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549652) structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff549652" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549652)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -117,7 +117,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Points to a filled [<strong>DXVA_DeinterlaceBltEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563915) structure.</p></td>
+<td align="left"><p>Points to a filled <a href="https://msdn.microsoft.com/library/windows/hardware/ff563915" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBltEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563915)"><strong>DXVA_DeinterlaceBltEx</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -126,7 +126,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tbody>
 </table>
 
- 
+ 
 
 For the DirectX VA device used for deinterlacing, the driver-supplied callback pointed to by **RenderMoComp** is called without calling the display driver-supplied **BeginMoCompFrame** or **EndMoCompFrame** function.
 
@@ -169,9 +169,9 @@ Requirements
 
 [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693)
 
- 
+ 
 
- 
+ 
 
 
 

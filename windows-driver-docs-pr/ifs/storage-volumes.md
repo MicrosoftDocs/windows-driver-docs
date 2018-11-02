@@ -55,9 +55,9 @@ The Mount Manager responds to the arrival of a new storage volume by querying th
 
 For more information about the interaction between storage drivers and the Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff567603).
 
- 
+ 
 
- 
+ 
 
 
 

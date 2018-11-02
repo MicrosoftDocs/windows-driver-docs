@@ -62,9 +62,9 @@ The following figure shows the same device stacks as the previous figure, but em
 
 A bus driver spans more than one device stack. A bus driver creates the FDO for its bus adapter/controller and creates a PDO for each of its child devices.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,11 +38,11 @@ Language monitors should always implement the **SendRecvBidiDataFromPort** funct
 
 In the event that the language monitor does not support Bidi, or the request contains Bidi Schema values that the Language Monitor does not support, the Language Monitor should forward the calls to the Port Monitor's **SendRecvBidiDataFromPort** function.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ This section includes the following topics that describe the characteristics of 
 
 [Network Adapter Index Values](network-adapter-index-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

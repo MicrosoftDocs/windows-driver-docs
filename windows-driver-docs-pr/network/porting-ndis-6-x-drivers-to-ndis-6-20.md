@@ -34,9 +34,9 @@ The following topics describe how to port miniport, protocol, and intermediate d
 -   [Summary of Changes Required to Port a Filter Driver to NDIS 6.20](summary-of-changes-required-to-port-a-filter-driver-to-ndis-6-20.md)
 -   [Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20](summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

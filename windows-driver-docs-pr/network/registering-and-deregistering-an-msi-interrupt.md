@@ -44,9 +44,9 @@ The line-interrupt functions include the following:
 
 Drivers should call the [**NdisMDeregisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563575) function to release resources that were previously allocated with **NdisMRegisterInterruptEx**.
 
- 
+ 
 
- 
+ 
 
 
 

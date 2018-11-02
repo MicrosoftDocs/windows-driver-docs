@@ -17,7 +17,7 @@ This topic describes how NDIS and overlying drivers determine the receive filter
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) of an SR-IOV network adapter can report receive filtering capabilities. Miniport drivers for PCIe Virtual Functions (VFs) must not report the receive filtering capabilities of the SR-IOV adapter.
 
- 
+ 
 
 ## Reporting Receive Filtering Capabilities during *MiniportInitializeEx*
 
@@ -89,9 +89,9 @@ NDIS passes the network adapter's currently-enabled receive filtering capabiliti
 
 NDIS also returns the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure when it handles object identifier (OID) query requests of [OID\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569786) and [OID\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569791) that are issued by overlying protocol or filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

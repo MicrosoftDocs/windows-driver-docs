@@ -21,9 +21,9 @@ Consider resources that are created through a call to the driver's [**CreateReso
 
 This change for Direct3D version 10.1 allows applications to re-view a DXGI\_FORMAT\_R8G8B8A8\_UNORM back buffer as DXGI\_FORMAT\_R8G8B8A8\_UNORM\_SRGB and vice versa. This change also allows applications to cast a DXGI\_FORMAT\_B8G8R8A8\_UNORM\_SRGB back buffer for DXGI\_FORMAT\_B8G8R8A8\_UNORM and to re-view DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM as DXGI\_FORMAT\_R10G10B10A2\_\* for rendering.
 
- 
+ 
 
- 
+ 
 
 
 

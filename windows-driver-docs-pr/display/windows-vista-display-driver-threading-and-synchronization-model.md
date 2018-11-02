@@ -25,9 +25,9 @@ The following topics describe the display driver threading and synchronization m
 
 [Threading Model of User-Mode Display Driver](threading-model-of-user-mode-display-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

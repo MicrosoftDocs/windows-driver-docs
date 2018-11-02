@@ -68,9 +68,9 @@ The method [**SetLogMask**](https://msdn.microsoft.com/library/windows/hardware/
 
 In an interactive debugging session, a prompt can be used to indicate to the user that the debugger is waiting for user input. The prompt is sent to the output callbacks using the [*OutputPrompt*](https://msdn.microsoft.com/library/windows/hardware/ff553227) and [*OutputPromptVaList*](https://msdn.microsoft.com/library/windows/hardware/ff553231) methods. The contents of the standard prompt are returned by [**GetPromptText**](https://msdn.microsoft.com/library/windows/hardware/ff548180).
 
- 
+ 
 
- 
+ 
 
 
 

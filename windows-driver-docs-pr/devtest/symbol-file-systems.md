@@ -43,9 +43,9 @@ If you have binaries that were built with the old symbol file system in the two-
 
 BinPlace can also strip private symbol information from files in the old symbol file system, but only if it is also splitting the files (in other words, only if it is changing the files from the two-file arrangement to the three-file arrangement). BinPlace cannot strip private symbols out of files in the old symbol file system and leave them in the two-file arrangement. And if the files are already in the three-file arrangement, BinPlace will not perform any stripping; indeed, it will not even move the symbol files if the executable file is named on the BinPlace command line. See [Public Symbols and Private Symbols](public-symbols-and-private-symbols.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

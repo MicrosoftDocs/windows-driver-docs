@@ -176,7 +176,7 @@ For example, consider the data flow for IRP\_MJ\_DEVICE\_CONTROL requests as sho
 </tbody>
 </table>
 
- 
+ 
 One threat is often related to another. For example, an attack that exploits an elevation-of-privilege threat can result in information disclosure or denial of service. Furthermore, some types of attacks depend on a sequence of events. A malicious user might start by exploiting an elevation-of-privilege threat. Then, with the added capabilities that come with elevated privilege, the user might find and exploit additional vulnerabilities.
 
 Threat trees and outlines can be useful in modeling such complex scenarios.
@@ -199,7 +199,7 @@ An outline simply lists in hierarchical order the steps to attack a particular t
 
 Either technique can help you to understand which threats are most dangerous and which vulnerabilities in your design are most critical.
 
- 
+ 
 
 ## <span id="Fast_path_threat_modeling"></span><span id="fast_path_threat_modeling"></span><span id="FAST_PATH_THREAT_MODELING"></span>Fast path threat modeling
 
@@ -355,7 +355,7 @@ To expand your knowledge of software threats, review the available public databa
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
 
 
- 
+ 
 
 
 

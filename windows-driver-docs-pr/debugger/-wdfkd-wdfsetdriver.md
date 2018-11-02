@@ -48,9 +48,9 @@ The **!wdfkd.wdfsetdriver** extension sets the default driver name. You can use 
 
 To obtain the name of the current default KMDF driver, use the [**!wdfkd.wdfgetdriver**](-wdfkd-wdfgetdriver.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ The following sections summarize how a caller uses each CCD API and provide scen
 
 [DisplayConfigSetDeviceInfo Summary and Scenarios](displayconfigsetdeviceinfo-summary-and-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

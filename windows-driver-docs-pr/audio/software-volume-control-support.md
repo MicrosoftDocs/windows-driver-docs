@@ -37,9 +37,9 @@ Since there is no physical volume control to be modeled, a KSNODETYPE\_VOLUME no
 
 For information about the volume ranges and the default volume levels for the different versions of Windows, see [Default Audio Volume Settings](default-audio-volume-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

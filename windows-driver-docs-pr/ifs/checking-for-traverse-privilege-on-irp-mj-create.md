@@ -104,9 +104,9 @@ This function performs a generic security check. This function must deal with th
 
 Note that for a simple traverse check, the requested access would be FILE\_TRAVERSE and the security descriptor would be that of the directory through which the caller is attempting to traverse, not the requested access from the original IRP\_MJ\_CREATE IRP.
 
- 
+ 
 
- 
+ 
 
 
 

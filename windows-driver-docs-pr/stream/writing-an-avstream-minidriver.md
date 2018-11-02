@@ -24,9 +24,9 @@ This material is relevant only for Microsoft Windows XP and Microsoft DirectX 8.
 
 [Writing AVStream Minidrivers for Hardware](writing-avstream-minidrivers-for-hardware.md)
 
- 
+ 
 
- 
+ 
 
 
 

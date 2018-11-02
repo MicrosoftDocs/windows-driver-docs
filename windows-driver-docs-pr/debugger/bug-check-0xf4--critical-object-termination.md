@@ -57,16 +57,16 @@ The CRITICAL\_OBJECT\_TERMINATION bug check has a value of 0x000000F4. This indi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 Several processes and threads are necessary for the operation of the system. When they are terminated for any reason, the system can no longer function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ GDL contains the following configuration directives:
 
 For more information about configuration directives, see [GDL Configurations](gdl-configurations.md).
 
- 
+ 
 
- 
+ 
 
 
 

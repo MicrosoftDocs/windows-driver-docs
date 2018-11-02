@@ -66,7 +66,7 @@ The current status of the UPS batteries. Values are listed in the following tabl
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
@@ -109,7 +109,7 @@ The status of the communication path to the UPS. Values are listed in the follow
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 1
@@ -194,14 +194,14 @@ Reports the status of utility-supplied power into the UPS. Values are listed in 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
 
- 
+ 
 
- 
+ 
 
 
 

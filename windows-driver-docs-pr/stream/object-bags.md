@@ -46,9 +46,9 @@ AVStream automatically removes items from an object bag if the owning object is 
 
 Minidrivers can remove individual items from an object bag by calling [**KsRemoveItemFromObjectBag**](https://msdn.microsoft.com/library/windows/hardware/ff566798) or [**KsDiscard**](https://msdn.microsoft.com/library/windows/hardware/ff561695).
 
- 
+ 
 
- 
+ 
 
 
 

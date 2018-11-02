@@ -55,9 +55,9 @@ A bus driver provides a device ID for one of its children in response to an [**I
 
 All audio bus drivers should set **UniqueID** = **FALSE** for their children. This causes the Plug and Play manager to extend the child's device ID string by adding information about the device's parent to make the ID unique on the machine.
 
- 
+ 
 
- 
+ 
 
 
 

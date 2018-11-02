@@ -21,9 +21,9 @@ If the driver does not allocate a vertex buffer in video memory but, instead, re
 
 Therefore, if you wish the runtime to allocate a vertex buffer in system memory on your behalf, set **ddRVal** to E\_FAIL and return DDHAL\_DRIVER\_HANDLED.
 
- 
+ 
 
- 
+ 
 
 
 

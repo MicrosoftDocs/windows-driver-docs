@@ -24,9 +24,9 @@ If the intermediate driver allocates new IRPs for lower-level removable-media dr
 
 Otherwise, the file system can neither maintain the integrity of cached file data nor cause the user to be prompted to remount the media that holds an open file.
 
- 
+ 
 
- 
+ 
 
 
 

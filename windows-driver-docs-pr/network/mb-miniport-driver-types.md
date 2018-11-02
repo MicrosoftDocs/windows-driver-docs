@@ -54,7 +54,7 @@ Based on data packet handling, DHCP Server and ARP emulations, multiple MB minip
 </tbody>
 </table>
 
- 
+ 
 
 During development or migration phases, miniport drivers can specify any of first three entries. However, production quality miniport drivers should use only the settings specified in the last entry of the table ("IP packet handling capability").
 
@@ -95,11 +95,11 @@ Production quality MB miniport drivers should specify the settings in the follow
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

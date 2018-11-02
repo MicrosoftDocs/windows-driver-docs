@@ -128,9 +128,9 @@ After a WSK application has called [**WskCloseSocket**](https://msdn.microsoft.c
 
 If a WSK application closes a connection-oriented socket that has not been previously disconnected in both directions, the WSK subsystem automatically performs an abortive disconnect of the socket before closing the socket. For more information about disconnecting a socket, see [Disconnecting a Socket from a Destination](disconnecting-a-socket-from-a-destination.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,11 +46,11 @@ This means that in a scenario where the audio driver has indicated its support f
 
 **Note**  In general, GFX processing is applied before volume adjustment. But there is an exception in cases where the GFX is encoded to a non-PCM format; in this case the GFX/volume control order is reversed so that volume control can be applied to uncompressed data before GFX processing takes place. The Windows 7 software audio engine follows the same model.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,7 +59,7 @@ Displays the remote sessions available on the specified computer. Only visible s
 
 The *Server* and *SessionName* parameters must appear in the order shown on the syntax line.
 
-To disconnect from a remote session, type **@q**. For more information, see [Remote Session Commands](remote-session-commands.md).
+To disconnect from a remote session, type <strong>@q</strong>. For more information, see [Remote Session Commands](remote-session-commands.md).
 
 **Keyword Color File.** The format of the keyword color file is as follows. The keyword interpreter is not case sensitive.
 
@@ -90,9 +90,9 @@ remote /c Server01 TestSession /L 50 /f black /b white /k c:\remote_file.txt
 remote /q Server01
 ```
 
- 
+ 
 
- 
+ 
 
 
 

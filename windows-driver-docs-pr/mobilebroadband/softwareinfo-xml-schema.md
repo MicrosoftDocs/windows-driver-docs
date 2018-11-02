@@ -17,7 +17,7 @@ The data within the Softwareinfo.xml document is formatted based on the Software
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For the complete definition of the SoftwareInfo XML schema, see [SoftwareInfo XML Schema Definition](softwareinfo-xml-schema-definition.md).
 
@@ -25,9 +25,9 @@ For information about the elements that are defined by the SoftwareInfo XML sche
 
 For an example of XML data in the format that is defined by the SoftwareInfo XML schema, see [SoftwareInfo XML Example](softwareinfo-xml-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

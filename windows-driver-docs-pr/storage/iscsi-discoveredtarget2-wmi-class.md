@@ -17,9 +17,9 @@ The ISCSI\_DiscoveredTarget2 class is unpublished and is defined in *Discover.mo
 
 When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget2**](https://msdn.microsoft.com/library/windows/hardware/ff561503) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

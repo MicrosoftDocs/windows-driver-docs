@@ -46,7 +46,7 @@ The **.eventlog** command displays the recent Microsoft Win32 debug events, such
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ The following example shows the **.eventlog** command.
 Last event: Break instruction exception - code 80000003 (first chance)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ The **Debug WinLogon** flag debugs the WinLogon service.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -53,9 +53,9 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
 
 [Debug initial command](debug-initial-command.md), [Enable debugging of Win32 subsystem](enable-debugging-of-win32-subsystem.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,9 +51,9 @@ Each of these events are notification events. They remain set as long as the tri
 
 To open a handle to any of these events, use the [**IoCreateNotificationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff549039) routine. A driver that waits for any of these events should create a dedicated thread to do the waiting. The thread can wait for one or more of these events by calling either [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) or [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324).
 
- 
+ 
 
- 
+ 
 
 
 
