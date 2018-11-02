@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
 > It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
 > For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).

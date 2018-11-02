@@ -93,7 +93,7 @@ Regardless of whether your app uses the extension, be sure to secure its data. S
 ## Best practices
 
 
-> [!NOTE]  
+> [!NOTE]
 > This section applies to a Kiosk application that uses the **windows.aboveLockScreen** extension.
 
  

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 

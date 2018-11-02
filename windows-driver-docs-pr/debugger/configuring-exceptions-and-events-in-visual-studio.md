@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Configuring Exceptions and Events in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 

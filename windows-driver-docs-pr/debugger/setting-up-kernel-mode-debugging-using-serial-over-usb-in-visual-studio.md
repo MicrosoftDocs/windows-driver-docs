@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_in_visual_studio"></span>Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 

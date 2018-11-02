@@ -36,7 +36,7 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 1.  Sign in to the dashboard with your Microsoft account and click **Hardware certification**.
 
 2.  On the **File Signing Services** page, click **Submit New UEFI** or **Submit New LSA**.
-    > [!NOTE]  
+    > [!NOTE]
     > You may be prompted to sign a legal agreement before creating a new file signing submission. Review and complete the agreement to continue. Every organization only needs to sign the agreement once.
 
 3.  On the submission page, upload the CAB file you want to submit, and click **Submit**.
