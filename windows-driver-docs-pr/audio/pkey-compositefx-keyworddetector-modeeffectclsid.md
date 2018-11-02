@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 In Windows 10 Version 1803 and later, the **PKEY\_CompositeFX\_KeywordDetector\_ModeEffectClsid** property key identifies the mode effect (MFX) supported by the driver for the keyword detector pin. The driver developer should specify the single supported processing mode that their driver supports for the keyword detector pin.
 
-This property key is identical to the [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](pkey-fx-keyworddetector-modeeffectclsid) property key, but it is a composite that uses VT_LPWSTR to allow multiple effects in a single position.  
+This property key is identical to the [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](pkey-fx-keyworddetector-modeeffectclsid.md) property key, but it is a composite that uses VT_LPWSTR to allow multiple effects in a single position.  
 
 The INF file property key instructs the audio endpoint builder to set the CLSIDs for endpoint APOs into the effects property store. This information is used to build the audio graph that will be used to inform upper level apps what effects are in place.
 

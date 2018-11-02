@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 In Windows 10, version 1803 and later, the **PKEY\_CompositeFX\_Offload\_StreamEffectClsid** property key identifies the stream effect (SFX) supported by the driver that will be loaded during offload playback. The driver developer should specify the list of supported stream effects that their driver supports for the offload pin.
 
-This property key is identical to the [PKEY\_FX\_Offload\_StreamEffectClsid](pkey-fx-offload-modeeffectclsid) property key, but it is a composite that uses VT_LPWSTR to allow multiple effects in a single position.  
+This property key is identical to the [PKEY\_FX\_Offload\_StreamEffectClsid](pkey-fx-offload-modeeffectclsid.md) property key, but it is a composite that uses VT_LPWSTR to allow multiple effects in a single position.  
 
 The INF file property key instructs the audio endpoint builder to set the CLSIDs for stream-effect APOs into the effects property store for offload. This information is used to build the audio graph that will be used to inform upper level apps what effects are in place.
 
