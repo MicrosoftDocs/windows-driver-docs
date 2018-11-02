@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetRingIteratorGetPacket method gets the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure pointed to by a [[**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md).
+The NetRingIteratorGetPacket method gets the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure pointed to by a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md).
 
 ## Syntax
 
