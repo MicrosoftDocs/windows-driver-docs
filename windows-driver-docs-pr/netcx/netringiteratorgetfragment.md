@@ -42,4 +42,4 @@ Returns a pointer to the **NET_FRAGMENT** pointed to by the **NET_RING_FRAGMENT_
 
 ## See Also
 
-[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
+[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)

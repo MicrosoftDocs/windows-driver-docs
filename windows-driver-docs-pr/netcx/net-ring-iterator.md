@@ -34,4 +34,4 @@ Remark
 | --- | --- |
 | Header | netringiterator.h |
 
-[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
+[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
