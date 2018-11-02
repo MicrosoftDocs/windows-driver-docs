@@ -52,7 +52,7 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 | [OID\_WWAN\_USSD](https://msdn.microsoft.com/library/windows/hardware/hh440100) uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh439846) | Not supported | A | Not supported | Not supported | GSM |
 | [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://msdn.microsoft.com/library/windows/hardware/hh440094) uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/hh439836) | Not supported | A | Not supported | A| GSM, CDMA |
 
-> [!NOTE] 
+> [!NOTE]
 > The following notes apply to the preceding table:
 > † represents optional OIDs that miniport drivers may support. Miniport drivers that do not support the optional OIDs must not return them in OID\_GEN\_SUPPORTED\_LIST.
 >

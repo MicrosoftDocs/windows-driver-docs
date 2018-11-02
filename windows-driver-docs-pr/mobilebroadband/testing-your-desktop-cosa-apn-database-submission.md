@@ -22,7 +22,7 @@ If you do not have a TAM:
 -   Provide the spreadsheet to the support engineer.
 -   If asked, specify Windows 8 or Windows 10 as the product, as appropriate.
 
-> [!NOTE] 
+> [!NOTE]
 > You will need to provide a credit card to open the incident, but you will not be charged. 
 
 ## Test your submission for desktop COSA
@@ -84,7 +84,7 @@ There are two ways that you can ensure that the APN entries work before submitti
 
 A simple way to test that an APN can connect to your network is to edit the current profile and insert the APN to test into the profile. To perform this test, follow these steps:
 
-> [!NOTE] 
+> [!NOTE]
 > This test does not simulate the full experience, which is described in the [Modify the local APN database](#modifydatabase) section. 
 
 1.  Insert a SIM into the PC that works with the APN value you want to test.

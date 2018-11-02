@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Planning your desktop COSA/APN database submission
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one.
