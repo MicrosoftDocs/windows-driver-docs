@@ -37,9 +37,7 @@ Remark
 |  |  |
 | --- | --- |
 | Target Platform | Universal |
-| Minimum KMDF version | ? |
-| Header | netringiterator.h (include netadaptercx.h) |
-| Library | NetAdapterCxStub.lib |
+| Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
 [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)

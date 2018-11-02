@@ -32,7 +32,6 @@ Remark
 
 |  |  |
 | --- | --- |
-| Minimum KMDF version | ? |
-| Header | netringiterator.h (include netadaptercx.h) |
+| Header | netringiterator.h |
 
 [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)

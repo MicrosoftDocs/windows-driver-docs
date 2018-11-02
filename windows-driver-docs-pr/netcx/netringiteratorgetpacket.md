@@ -37,8 +37,7 @@ Returns a pointer to the **NET_PACKET** structure pointed to by the **NET_RING_P
 |  |  |
 | --- | --- |
 | Target Platform | Universal |
-| Header | netringiterator.h (include netadaptercx.h) |
-| Library | NetAdapterCxStub.lib |
+| Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
 [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
