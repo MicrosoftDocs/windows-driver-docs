@@ -5,7 +5,7 @@ ms.assetid: 908AB4DE-A4C8-4758-9632-F7F7381FF737
 keywords:
 - Windows Mobile Plans prepaid experience, Mobile Plans prepaid experience mobile operators
 ms.author: windowsdriverdev
-ms.date: 09/17/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 [!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
 
-Enabling support for an enhanced prepaid experience is optional for mobile operators who onboard with Mobile Plans. This topic describes incremental changes to the primary postpaid experience described in the other topics in this section, focusing on the differences needed to light up the prepaid scenario. 
+Enabling support for an enhanced prepaid experience is optional for mobile operators (MOs) who onboard with *Mobile Plans*. This topic describes incremental changes to the primary postpaid experience described in the other topics in this section, focusing on the differences needed to light up the prepaid scenario. 
 
 ## Overview
 
@@ -23,19 +23,19 @@ By implementing the prepaid experience, you can offer these benefits to your con
 
 - Consumers can see how much data is available, and the amount of time left until their subscriptions expire, in the network flyout.
 - Consumers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
-- You can manage your network flyout offering based on the consumers’ subscription status.
+- You can manage your network flyout offering based on consumers’ subscription status.
 
 To implement prepaid, follow these steps:
 
 1. Update the Windows COSA database.
-2. Implement the Get Balance API.
+2. Implement the `GetBalance` API.
 3. Implement a Walled Garden.
-4. Validate the Get Balance API and Walled Garden.
+4. Validate the `GetBalance` API and Walled Garden.
 5. Comply with API load requirements.
 
 ## Update Windows COSA database
 
-To ensure that the Mobile Plans experience is properly shown in the Windows Connections Manager, also known as the network flyout, you first need to update the Windows COSA database.
+To ensure that the *Mobile Plans* experience is properly shown in the Windows Connections Manager, also known as the network flyout, you first need to update the Windows COSA database. If a mobile operator is implementing support for the `GetBalance` API, a Windows COSA update is **required**. Even if the MO does not implement support for `GetBalance`, however, a Windows COSA update could still be needed to ensure that users have a consistent experience.
 
 > [!TIP]
 > Updating COSA on Windows devices takes a considerable amount of time and might become a project constraint, so you should submit this request as early as possible.
@@ -56,7 +56,7 @@ For information on the COSA database submission process, see [Planning your desk
 
 ### COSA database settings details
 
-This section explains which settings in COSA are required for Mobile Plans onboarding and which are recommended.
+This section explains which settings in COSA are required for *Mobile Plans* onboarding and which are recommended.
 
 For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
@@ -70,26 +70,25 @@ The following COSA settings are required:
 
 The following settings might be applicable depending of your specific business needs:
 
-- AccountExperienceURL
+- AccountExperienceURL or AppID
 - BrandingName
 - BrandingIcon (icons should be provided along with spreadsheet)
-- UseBrandingNameOnRoaming
 
 The following image shows an example MO with branding in the network flyout:
 
 <img src="images/dynamo_prepaid_network_flyout_4_branding.png" alt="Windows Connection Manager showing MO branding" title="Windows Connection Manager showing MO branding" width="250" />
 
-## Get Balance API
+## GetBalance API
 
-The Get Balance API queries current subscription status, controls whether the Mobile Plans experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the Get Balance API. 
+The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API. 
 
-<img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="Get Balance API flow" title="Get Balance API flow" width="600" />
+<img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
 ### Resource model
 
-Communication between the Mobile Plans service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
+Communication between the *Mobile Plans* service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
-<img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="Get Balance API resource model diagram" title="Get Balance API resource model diagram" width="600" />
+<img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
 
 #### SIM resource
 
@@ -98,26 +97,23 @@ Communication between the Mobile Plans service and the MO service involves manip
 
 | JSON property | Type | Description |
 | --- | --- | --- |
-| activationCode | String | The activation code that LPA on the client can use to download and activate the profile. |
 | Iccid | String | The ICCID of the profile that has been created. |
-| eId | String | The eId of the eSIM. |
 
 #### Balance resource
 
 | JSON property | Type | Description |
 | --- | --- | --- |
-| Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the Mobile Plans experience. "NOTSUPPORTED" is used when the SIM should not be in the Mobile Plans supported range. We will turn off the Mobile Plans experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
+| Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the *Mobile Plans* experience. "NOTSUPPORTED" is used when the SIM should not be in the *Mobile Plans* supported range. We will turn off the *Mobile Plans* experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
 | dataRemainingInMB | Double | The data remaining in the current user plan, in MB. |
 | timeRemaining | String | The time duration specified in [ISO 8601](https://go.microsoft.com/fwlink/p/?linkid=866182). |
-| locations | Collection of Strings | An array of the location in two letter ISO code. This comes from MCC or reverse IP lookup when there is no Cellular network connection. |
 
 ### Headers
 
-The following headers may be included in every request from the Mobile Plans Service to the Mobile Provider’s endpoint.
+The following headers may be included in every request from the *Mobile Plans* service to the Mobile Provider’s endpoint.
 
 | Header name | Value | Description |
 | --- | --- | --- |
-| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the Mobile Plans service and the MO service. |
+| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the *Mobile Plans* service and the MO service. |
 | Authorization (optional) | String | A basic authentication string optionally provided by the MO. |
 
 ### Error codes
@@ -131,22 +127,22 @@ The following headers may be included in every request from the Mobile Plans Ser
 | HTTP 403 (Forbidden) | The client certificate is untrusted or invalid. If the client certificate included as a part of MTLS is invalid, HTTP 403 should be returned. |
 | HTTP 404 (Not Found) | The MO service should return this error when the resource doesn’t exist. This can occur when an incorrect ICCID is sent. This should not be used to indicate that the user doesn’t have a balance in the specified location, which is indicated with HTTP 200 (OK). |
 | HTTP 409 (Conflict) | Used if a TransactionId is repeated. |
-| HTTP 429 (Too many requests) | Used by the MO service to indicate that the Mobile Plans service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the Mobile Plans service should retry for the resource. In the response body, optional details can be provided. |
+| HTTP 429 (Too many requests) | Used by the MO service to indicate that the Mobile Plans service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the *Mobile Plans* service should retry for the resource. In the response body, optional details can be provided. |
 | HTTP 500 (Internal Error) | Something unexpected happened on the MO service. The MO service should include the cause of error whenever possible so that it can be used for further debugging as needed. |
 
-### Get Balance API specification
+### GetBalance API specification
 
-Mobile Plans must understand the status of the subscription for several reasons, the most important of which is that Mobile Plans decides where a user should be allowed to purchase a new plan based on their current balance. Users must also be able to check their current remaining balance at any time within the experience.
+*Mobile Plans* must understand the status of the subscription for several reasons, the most important of which is that Mobile Plans decides where a user should be allowed to purchase a new plan based on their current balance. Users must also be able to check their current remaining balance at any time within the experience.
 
-The Get Balance API is called when network flyout is displayed or when Mobile Plans app is launched.
+The `GetBalance` API is called when network flyout is displayed or when Mobile Plans app is launched.
 
-The following series of examples show the call flow for the Get Balance API.
+The following series of examples show the call flow for the `GetBalance` API.
 
 #### Example 1: Checking balance any time within the experience
 
 HTTP request, where *moBaseUrl* is the endpoint of the MO-hosted service and *sim id* is the ICCID:
 
-```html
+```HTTP
 GET https://{moBaseUrl}/sims/{sim id}/balances?fieldsTemplate=basic&limit=1&location=US HTTP/1.1
 ```
 
@@ -154,20 +150,20 @@ Query parameters:
 
 | Query parameter name | Value | Description |
 | --- | --- | --- |
-| location | String | Optional. The location where the user balance is being queried. If not specified, all active balances are expected. |
-| limit | Integer |Optional. The maximum count of balances to be returned. If not specified, all the balances should be returned. |
+| location | String | Optional. The location where the user balance is being queried. If not specified, all active balances are expected. **Note** The location parameter is case-sensitive. |
+| limit | Integer |Optional. The maximum count of balances to be returned. If not specified, all balances should be returned. |
 | fieldsTemplate | Enum |Specifies the list of fields that must be returned in the resource. <p>Possible values:</p><ul><li>Basic: *type*, *dataRemainingInMB*, and *timeRemaining* in the Balance resource must be returned.</li><li>Full: All properties in the Balance resource must be returned.</li></ul> |
 
 #### Example 2: Returning the first balance that is available for the user in US
 
-```html
+```HTTP
 GET https://moendpoint.com/v1/sims/iccid: 8988247000100003319/balances?fieldsTemplate=basic&limit=1&location=us HTTP/1.1
 X-MS-DM-TransactionId: “MSFT-12345678-1234-1234-1234-123456789abc”
 ```
 
 HTTP response:
 
-```html
+```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 X-MS-DM-TransactionId: “12345”
@@ -192,39 +188,7 @@ Response JSON:
 | --- | --- | --- |
 | Balances | Collection | A collection of Balances. |
 
-#### Example 3: The expected response when fieldsTemplate is set as full
-
-```html
-GET https://moendpoint.com/v1/sims/iccid: 8988247000100003319/balances?fieldsTemplate=full HTTP/1.1
-X-MS-DM-TransactionId: “MSFT-12345678-1234-1234-1234-123456789abc”
-
-HTTP/1.1 200 OK
-Content-type: application/json
-X-MS-DM-TransactionId: “MSFT-12345678-1234-1234-1234-123456789abc”
-
-{
-“balances”: [
-    {
-         “id”: “23445”,
-         “type”: “MODIRECTPAYG”,
-         “dataRemaininginMB”: 123.0,
-         “timeRemaining”: “P23DT23H”,
-         “locations”: [“US”, “CA”],
-         “ms-provisioningDataSet”: [“xxxxx”, “yyyyy”]
-    },
-    {
-         “id”: “12345”,
-         “type”: “MODIRECTPAYG”,
-         “dataRemaininginMB”: 1367.0,
-         “timeRemaining”: “P23DT23H”,
-         “locations”: [“UK”, “FR”],
-         “ms-provisioningDataSet”: [“xxxxx”, “yyyyy”]
-    }
-  ]
-}
-```
-
-#### Example 4: The expected response for a SIM that is in the COSA ICCID range but should not be supported by Mobile Plans
+#### Example 3: The expected response for a SIM that is in the COSA ICCID range but should not be supported by Mobile Plans
 
 HTTP request:
 
@@ -256,11 +220,47 @@ X-MS-DM-TransactionId: “12345”
 
 Communication between Microsoft services and your services must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft will provide a certificate that you will use to validate the identity of the requester to **moBaseUrl**.
 
+## Network flyout user experience
+
+Depending on how you configure the Windows COSA database and the information that is received from `GetBalance` API calls, the network flyout behaves differently, which enhances the user experience. The network flyout contains the following elements:
+
+1. Connect with a data plan  
+  This launches the Mobile Plans app.
+2. View my account  
+  Behaves based on the Windows COSA configuration
+3. Balance information  
+  Shows the balance available, which is provided in your `GetBalance` response.
+
+The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
+
+<img src="images/dynamo_prepaid_network_flyout_5_getbalance.png" alt="Windows Connection Manager showing behavior depending on GetBalance API calls" title="Windows Connection Manager showing behavior depending on GetBalance API calls" width="600" />
+
+To provide the right information in the network flyout, MOs provide *Type* and *Balance* (dataRemainingMB and timeRemaining) information as defined in the [GetBalance API](#getbalance-api) section.
+
+The network flyout experience changes depending on the `GetBalance` response:
+
+| `GetBalance` response type | Network flyout shows... |
+| --- | --- |
+| MODIRECT | "View my account" only with no balance information |
+| MODIRECTPAYG | "View my account" and balance information |
+| NONE | "Connect with a data plan" |
+| NOTSUPPORTED | "View my account" only |
+
+### Configuring "View my account" behavior
+
+The "View my account" control in the network flyout is configured in the Windows COSA database. It can be configured to launch a web portal in a web browser installed on the device, or it can launch a Universal Windows Platform (UWP) app. It is not possible to configure both options in the same COSA entry.
+
+The Mobile Plans app can be chosen as the UWP app to be used in "View my account." To achieve this, the **AppID** field in the COSA entry must use this string:
+
+**Microsoft.OneConnect_8wekyb3d8bbwe!App**
+
 ## Walled Garden
 
 Walled Garden is key to supporting your prepaid customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
 
-The MO Direct web portal and Get Balance API end-point must be part also of this Walled Garden.
+The MO Direct web portal and `GetBalance` API endpoint must also be part of this Walled Garden.
+
+### Walled Garden endpoints
 
 There are only a small number of required endpoints that are always accessible to end users. The following table defines the endpoints required for Walled Garden. 
 
@@ -270,9 +270,6 @@ There are only a small number of required endpoints that are always accessible t
 | dogfood.datamart.windows<span></span>.com | https |
 | windows.policies.live<span></span>.net | https |
 | ctldl.windowsupdate<span></span>.com | http |
-| msftncsi<span></span>.com | http |
-| login.live<span></span>.com | http + https |
-| storagetos.datamart.windows<span></span>.com | http + https |
 | cdp1.public-trust<span></span>.com | http |
 | ocsp.omniroot<span></span>.com | http |
 | vassg142.ocsp.omniroot<span></span>.com | http |
@@ -282,6 +279,12 @@ There are only a small number of required endpoints that are always accessible t
 | msftconnecttest<span></span>.com | http |
 | crl3.digicert<span></span>.com | http |
 | Ocsp.digicert<span></span>.com | http |
+| login.live<span></span>.com | http + https |
+| storagetos.datamart.windows<span></span>.com | http + https |
+| mps.datamart.windows<span></span>.com | http + https |
+| mps-service.datamart.windows<span></span>.com | http + https |
+| staging.datamart.windows<span></span>.com | http + https |
+| mps-staging.datamart.windows<span></span>.com | http + https |
 
 ## Prepaid implementation validation
 
@@ -301,9 +304,8 @@ This section describes testing and validation that you must do to ensure that yo
 #### Getting Balance
 
 1. When the user is in the Walled Garden state, the balance returned must be zero.
-2. When the user has been allocated Microbalance, the balance returned must be zero.
-3. As the user consumes data, the balance returned must decrement to reflect the data remaining.
-4. As the allotted time lapses after the Create Order API has been invoked, the time remaining must decrement to reflect the time remaining.
+2. As the user consumes data, the balance returned must decrement to reflect the data remaining.
+3. As the allotted time lapses after the Create Order API has been invoked, the time remaining must decrement to reflect the time remaining.
 
 #### Test with expired MTLS certificate
 
@@ -312,7 +314,7 @@ Expected Status: 401 Unauthorized.
 2. Validate with an expired MTLS certificate.
 Expected Status: 401 Unauthorized.
 
-#### Get balance negative tests
+#### GetBalance negative tests
 
 1. Validate with an invalid SIM.
 Expected Status: 404 Not Found.
@@ -321,13 +323,13 @@ Expected Status: 400 (Bad Request).
 3. Validate with filter limit as a negative number and exceeding the limit of an INT.
 Expected Status: 400 - Bad Request.
 Expected Status 200 OK for filter limit (integer).
-4. Validate to get balance without any *location* (or empty location), *fieldTemplate*, *limit*, and many more combination of parameters.
+4. Validate to `GetBalance` without any *location* (or empty location), *fieldTemplate*, *limit*, and many more combinations of parameters.
 Expected Status: 400 (Bad Request) with any bad parameter’s value.
 Expected Status 200 – OK.
 
-## Get Balance API load test
+## GetBalance API load test
 
-Before the Get Balance API is enabled in production, both Microsoft services and mobile operator services should be tested to see if they can handle the projected load. The mobile operator is expected to run a Load test.  Once that has passed, Mobile Plans will execute a load test for 6 hours as configured in the following section. 
+Before the `GetBalance` API is enabled in production, both Microsoft services and mobile operator services should be tested to see if they can handle the projected load. The mobile operator is expected to run a Load test.  Once that has passed, *Mobile Plans* executes a load test for 6 hours as configured in the following section. 
 
 This test configuration is generated from projected traffic of 10,000 SIMs. The Peak RPS is calculated based on 3 times this traffic projection.
 
@@ -340,6 +342,6 @@ This test configuration is generated from projected traffic of 10,000 SIMs. The 
 
 | API | Load distribution | Expected RPS | Peak RPS |
 | --- | --- | --- | --- |
-| GetBalance | 96% | 1 | 3 |
+| `GetBalance` | 96% | 1 | 3 |
 
-During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be enabled in the Mobile Plans production service.
+During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be enabled in the *Mobile Plans* production service.
