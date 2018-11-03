@@ -3,7 +3,7 @@ title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
-ms.date: 12/22/2017
+ms.date: 10/26/2018
 ms.localizationpriority: medium
 ---
 
@@ -896,7 +896,7 @@ In order to allow a debugger extension to maintain precision, a set of math func
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
 
-This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the **.scriptdebug** command.
+This section describes how to use the script debugging capabilities of the debugger. The debugger has integrated support for debugging JavaScript scripts using the [.scriptdebug (Debug JavaScript)](-scriptdebug--debug-javascript-.md) command.
 
 >[!NOTE] 
 > To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
@@ -1015,6 +1015,41 @@ Start actively debugging the script using the **.scriptdebug** command.
 Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
 inside the script debugger.  
 
+Use the **.help** command to display a list of commands in the JavaScript Debugging environment.
+
+```
+>>> Debug [DebuggableSample <No Position>] >.help
+Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
+    ? .................................. Get help
+    ? <expr>  .......................... Evaluate expression <expr> and display result
+    ?? <expr>  ......................... Evaluate expression <expr> and display result
+    |  ................................. List available scripts
+    |<scriptid>s  ...................... Switch context to the given script
+    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
+    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bl  ................................ List breakpoints
+    bp <line>:<column>  ................ Set breakpoint at the specified line and column
+    bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
+    bpc  ............................... Set breakpoint at current location
+    dv  ................................ Display local variables of current frame
+    g  ................................. Continue script
+    gu   ............................... Step out
+    k  ................................. Get stack trace
+    p  ................................. Step over
+    q  ................................. Exit script debugger (resume execution)
+    sx  ................................ Display available events/exceptions to break on
+    sxe <event>  ....................... Enable break on <event>
+    sxd <event>  ....................... Disable break on <event>
+    t  ................................. Step in
+    .attach <scriptId>  ................ Attach debugger to the script specified by <scriptId>
+    .detach [<scriptId>]  .............. Detach debugger from the script specified by <scriptId>
+    .frame <index>  .................... Switch to frame number <index>
+    .f+  ............................... Switch to next stack frame
+    .f-  ............................... Switch to previous stack frame
+    .help  ............................. Get help
+```
+
 Use the **sx** script debugger command to see the list of events we can trap.
                                                         
 ```dbgcmd
@@ -1121,12 +1156,17 @@ bl
        1 enabled  34:5                                      
 ```
 
-From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
+From here, we'll disable the entry (en) event using the **sxd** script debugger command. 
  
 ```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
 Event filter 'en' is now inactive                                                                                      
+```
+
+And then just go and let the script continue to the end.
+
+```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >g                                                                                   
 g                                                                                                                      
 This is a fun test                                                                                                     
@@ -1158,14 +1198,17 @@ k
    [02] outermost                        074:05 (var result = outer())                
 ```
 
-At this point, we want to stop debugging this script, so we detach from it and then type q to quit.  
-
+At this point, we want to stop debugging this script, so we detach from it.  
 
 ```dbgcmd
 >>> Debug [DebuggableSample 34:5] >.detach                  
 .detach                                                     
 Debugger has been detached from script!                     
->>> Debug [<NONE> ] >q                                      
+```
+
+And then type q to quit.
+
+```dbgcmd                             
 q                                                           
 This is a fun test                                          
 Of the script debugger                                      

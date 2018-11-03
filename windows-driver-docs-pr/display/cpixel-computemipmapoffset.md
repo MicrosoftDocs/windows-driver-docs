@@ -23,7 +23,7 @@ The **CPixel::ComputeMipMapOffset** method determines the sublevel offset of a m
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 static void  ComputeMipMapOffset(
    const D3DSURFACE_DESC *pDescTopLevel,
          UINT            iLevel,

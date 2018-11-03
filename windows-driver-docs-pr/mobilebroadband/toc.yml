@@ -324,12 +324,25 @@
 - name: "Mobile operator scenarios"
   href: mobile-operator-scenarios-b-mb.md
   items: 
-  - name: Mobile Plans
+  - name: "Mobile Plans"
+    href: mobile-plans.md
     items:
+    - name: "Configuration"
+      href: mobile-plans-configuration.md
+    - name: "Implementation"
+      href: mobile-plans-implementation.md
+    - name: "Integration"
+      href: mobile-plans-integration.md
+    - name: "Launch"
+      href: mobile-plans-launch.md
+    - name: "Prepaid experience"
+      href: mobile-plans-prepaid-experience.md
     - name: "Promotional content"
       href: mobile-plans-promotional-content.md
     - name: "Asynchronous fulfillment"
       href: mobile-plans-asynchronous-fulfillment.md
+    - name: "Appendix"
+      href: mobile-plans-appendix.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

@@ -29,7 +29,7 @@ The OpenGL runtime accesses the registry to determine which OpenGL installable c
 
 To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](https://msdn.microsoft.com/library/windows/hardware/ff547100) searches the registry in the following key:
 
-```cpp
+```registry
 HKLM/System/CurrentControlSet/Control/Class/{Adapter GUID}/0000/
 ```
 

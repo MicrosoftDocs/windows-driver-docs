@@ -21,9 +21,9 @@ A display driver whose display device supports a programmable pixel shader must 
 
 The exception for [source parameter tokens](https://msdn.microsoft.com/library/windows/hardware/ff569716) is with the following instruction:
 
-```cpp
+`
 // D3DSIO_DEF c#,f0,f1,f2,f2
-```
+`
 
 For this instruction, the source parameter tokens (f\#) are taken as 32-bit floats.
 
