@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Selective suspend for HID over USB devices
 
 
-Revision 2.0 of the *Universal Serial Bus Specification* specifies a USB selective suspend feature. By using this feature, the Windows operating system can selectively suspend idle USB devices. This allows Windows to efficiently manage the power requirements of the overall system. For more information about how Windows supports the USB selective suspend feature, see [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144). (This resource may not be available in some languages and countries.)
+Revision 2.0 of the *Universal Serial Bus Specification* specifies a USB selective suspend feature. By using this feature, the Windows operating system can selectively suspend idle USB devices. This allows Windows to efficiently manage the power requirements of the overall system. For more information about how Windows supports the USB selective suspend feature, see [USB selective suspend](../usbcon/usb-selective-suspend.md). (This resource may not be available in some languages and countries.)
 
 By default, USB selective suspend is disabled by Windows in order to provide a consistent user experience and to avoid resume latency from selective suspend.
 

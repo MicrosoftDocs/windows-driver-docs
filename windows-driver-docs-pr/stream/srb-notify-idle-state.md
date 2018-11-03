@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # SRB\_NOTIFY\_IDLE\_STATE
 
 
-The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144).
+The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
