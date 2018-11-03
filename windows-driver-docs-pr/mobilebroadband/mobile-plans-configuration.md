@@ -5,7 +5,7 @@ ms.assetid: 95122BBB-0466-4130-9209-7EC6545DFD4D
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators
 ms.author: windowsdriverdev
-ms.date: 09/17/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
