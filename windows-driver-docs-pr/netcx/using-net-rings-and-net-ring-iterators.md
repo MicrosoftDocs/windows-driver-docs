@@ -31,7 +31,7 @@ Each element in a **NET_RING** is owned by either the client driver or NetAdapte
 > [!NOTE] 
 > This section describes the **NET_RING** indices and their underlying post and drain concepts for transferring network data. To perform operations on a **NET_RING**, client drivers call into the Net Ring Iterator Interface, described in the [next section](#net-ring-iterator-interface-overview).
 
-| Index | Description | Modified by |
+| Post and drain index name | Description | Modified by |
 | --- | --- | --- |
 | BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When **BeginIndex** is incremented, the driver *drains* the elements from the ring and returns ownership of them to the OS. | NIC client driver, through Net Ring Iterator Interface API calls |
 | NextIndex | The beginning of the *post* section of the **NET_RING**. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver, through Net Ring Iterator Interface API calls |
@@ -57,13 +57,15 @@ Because the net ring is circular, eventually the index values wrap around the en
 
 ## Net Ring Iterator Interface overview
 
-NIC client drivers perform operations on net rings by calling into the *Net Ring Iterator Interface*. A *net ring iterator* is a small structure that contains references to the indices of a **NET_RING**, to which it belongs.
+NIC client drivers perform operations on net rings by calling into the *Net Ring Iterator Interface*. A [**NET_RING_ITERATOR**](net-ring-iterator.md) is a small structure that contains references to the post and drain indices of a **NET_RING** to which it belongs. 
 
-Each **NET_RING** has multiple iterators. For example, the packet ring has an iterator that iterates over the drain section of the ring (a *drain iterator*) and an iterator that iterates over the post section of the ring (a *post iterator*). Likewise, the fragment ring has the same iterators. 
+Each **NET_RING** has multiple iterators. For example, the packet ring has an iterator that covers the drain section of the ring (a *drain iterator*) and an iterator that covers the post section of the ring (a *post iterator*). Likewise, the fragment ring has the same iterators. 
 
-The Net Ring Iterator Interface provides methods for getting, setting, and advancing these iterators, which is how drivers post and drain network data from the rings. The interface also provides convenience methods for accessing elements in the rings and linking packets to their associated fragments.
+To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) and [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md). These are wrapper structures around the **NET_RING_ITERATOR** and are either passed as parameters to, or returned by, all Net Ring Iterator Interface methods.
 
-For a list of net ring iterator data structures and functions, see [Netringiterator.h](netringiterator-h.md).
+By advancing, getting, and setting packet and fragment iterators, client drivers post and drain network data in their packet queues' net rings. Client drivers also call methods on net ring iterators to access the ring's elements.
+
+For a list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
 
 ## Using the Net Ring Iterator Interface
 

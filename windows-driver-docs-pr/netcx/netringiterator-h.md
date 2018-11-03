@@ -55,6 +55,6 @@ Netringiterator.h contains the following programming interfaces:
 
 | Title | Description |
 | --- | --- |
-| [NET_RING_ITERATOR](net-ring-iterator.md) | x |
-| [NET_RING_PACKET_ITERATOR](net-ring-packet-iterator.md) | x |
-| [NET_RING_FRAGMENT_ITERATOR](net-ring-fragment-iterator.md) | x |
+| [NET_RING_ITERATOR](net-ring-iterator.md) | A NET_RING_ITERATOR is a small structure that contains references to the post and drain indices of a NET_RING to which it belongs. |
+| [NET_RING_PACKET_ITERATOR](net-ring-packet-iterator.md) | A NET_RING_PACKET_ITERATOR is a wrapper around a NET_RING_ITERATOR. The NET_RING_PACKET_ITERATOR is constrained to packet rings. |
+| [NET_RING_FRAGMENT_ITERATOR](net-ring-fragment-iterator.md) | A NET_RING_FRAGMENT_ITERATOR is a wrapper around a NET_RING_ITERATOR. The NET_RING_FRAGMENT_ITERATOR is constrained to fragment rings. |
