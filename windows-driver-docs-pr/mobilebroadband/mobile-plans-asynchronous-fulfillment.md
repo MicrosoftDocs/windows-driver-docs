@@ -97,7 +97,6 @@ When the MO Direct portal is ready for a profile download, install, and activati
 
 ### DataMartInlineProfile.notifyInlineProfileDownload
 
-
 | Parameter Name | Type | Description |
 | --- | --- | -- |
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
@@ -125,11 +124,22 @@ To listen for network registration changes, the `DataMartInlineProfile.registrat
 
 The registration args are a string that represents a JSON object.
 
-
+ProfileRegistrationCompleteArgs
 | Property Name | Type | Description |
 | --- | --- | -- |
-| networkRegistrationState | string | A string representing the current network registration state. The values of which can be see in `DataMartNetworkRegistrationState`. |
+| networkRegistrationState | string | A string representing the current network registration state. The values of which can be seen in `DataMartNetworkRegistrationState`. |
 | iccid | string | The iccid for which the network registration state has changed |
+
+DataMartNetworkRegistrationState
+| Property Name | Type | Description |
+| --- | --- | -- |
+| none | string | No connectivity |
+| deregistered | string | The device is not registered and is not searching for a network provider |
+| searching | string | The device is not registered and is searching for a network provider |
+| home | string | The device is on a home network provider |
+| roaming | string | The device is on a roaming network provider |
+| partner | string | The device is on a roaming partner network provider |
+| denied | string | The device was denied registration. |
 
 The below Javascript is an example of how to implement a listener for network registration changed events
 
@@ -143,12 +153,56 @@ function onRegistrationChanged(registrationArgs) {
         Log('Registration Successful!');
     }
 }
-
 ```
 
 # Listening for profile activation
 
 To listen for profile activation events the `DataMartInlineProfile.profileActivationCompleteScript` must be set to the name of a Javascript function which takes a string for the `activationArgs`
+
+The `activationArgs` is a string that represents a JSON object
+
+ProfileActivationCompleteArgs
+| Property Name | Type | Description |
+| --- | --- | -- |
+| activationResult | string | The result of activation. The values of which can be seen in `DataMartActivationErrors` |
+| iccid | string | The iccid of the profile that was activated |
+
+DataMartActivationErrors
+| Property Name | Type | Description |
+| --- | --- | -- |
+| success | string | Indicates that an operation was successful. |
+| notAuthorized | string | Indicates that the operation was not authorized. |
+| notFound | string | Indicates that the specified eSIM profile was not found. |
+| policyViolation | string | Indicates that the operation violates policy. |
+| insufficientSpaceOnCard | string | Indicates that there is not enough storage space on the card to complete the operation. |
+| serverFailure | string | Indicates that a server failure occurred during the operation. |
+| serverNotReachable | string | Indicates that the server could not be reached during the operation. |
+| timeoutWaitingForUserConsent | string | Indicates that user consent was not granted within the timeout period of the operation. |
+| incorrectConfirmationCode | string | Indicates that the wrong confirmation code was supplied during the operation. |
+| confirmationCodeMaxRetriesExceeded | string | Indicates that the wrong confirmation code was supplied during the operation, and that no more retries are permitted. |
+| cardRemoved | string | Indicates that the SIM card has been removed. |
+| cardBusy | string | Indicates that the SIM card is busy. |
+| other | string | Indicates a status that's not accounted for by a more specific status. |
+| cardGeneralFailure | string | Indicates that a card error occurred that prevented the download/install/other operation from completing successfully. |
+| confirmationCodeMissing | string | Indicates that a confirmation code is needed in order to download the eSIM profile. |
+| invalidMatchingId | string | Indicates that the matching ID from the activation code or discovered event was refused. |
+| noEligibleProfileForThisDevice | string | Indicates that an eSIM profile compatible with this device could not be found. For example, a profile was found that requires LTE support, but the device only supports 3G. |
+| operationAborted | string | Indicates that the operation aborted. |
+| eidMismatch | string | Indicates that an eSIM profile on the mobile operator (MO) server is already allocated for a different eSIM EID than the one the device has. |
+| profileNotAvailableForNewBinding | string | Indicates that the user is trying to download an eSIM profile that has already been claimed/downloaded. |
+| profileNotReleasedByOperator | string | Indicates that the eSIM profile is available, but it is not yet marked as released for download by the mobile operator (MO). You can only download a released profile, so the MO needs to mark the profile as released. |
+| operationProhibitedByProfileClass | string | Indicates that the operation is not allowed for the eSIM profile class. |
+| profileNotPresent | string | Indicates that an eSIM profile could not be found. |
+| noCorrespondingRequest | string | Indicates that no corresponding request could be found. |
+| unknownError | string | Indicates that LPA returned an error that is unknown. |
+| lpaInitializationError | string | Indicates that an error occurred when trying to initialize LPA. |
+| modemNotFound | string | Indicates that no Cellular modem was found on the device. |
+| localSettingsAccessFailed | string | Indicates that accessing app local settings failed. |
+| invalidCallback | string | Indicates that MO portal has given an invalid callback. |
+| invalidActivationCode | string | Indicates that MO portal has given invalid activation code. |
+| invalidIccid | string | Indicates that MO portal has given invalid iccid. |
+
+The below Javascript is an example of how to implement a listener for the profile activation event.
 
 ```Javascript
 function onActivationComplete(activationArgs) {
@@ -156,7 +210,6 @@ function onActivationComplete(activationArgs) {
     if(activationObj.activationResult == DataMartActivationErrors.success)
         Log('Activation Success');
 }
-
 ```
 
 ## Adding balance
