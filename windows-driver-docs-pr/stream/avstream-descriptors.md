@@ -40,9 +40,9 @@ There are other types of descriptors as well, such as the node descriptor [**KSN
 
 The dispatch table is common to each of the three main descriptor types. See [AVStream Dispatch Tables](avstream-dispatch-tables.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,9 +48,9 @@ Requirements
 
 [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

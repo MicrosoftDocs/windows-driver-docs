@@ -30,9 +30,9 @@ This provides the following benefits:
 
 For more information about NDIS 6.0 scatter/gather DMA, see [NDIS 6.0 Scatter/Gather DMA](ndis-scatter-gather-dma.md).
 
- 
+ 
 
- 
+ 
 
 
 

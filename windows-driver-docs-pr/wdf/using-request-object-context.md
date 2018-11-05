@@ -26,9 +26,9 @@ The framework allocates context space for request objects as follows:
 
 For more information about allocating and accessing context space for framework objects, see [Framework Object Context Space](framework-object-context-space.md).
 
- 
+ 
 
- 
+ 
 
 
 

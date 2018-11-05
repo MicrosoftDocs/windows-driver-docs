@@ -74,20 +74,20 @@ This topic includes:
 
 **Note**   Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
 
- 
+ 
 
 **Important**  Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows, including Windows Vista. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed and commands to enable or disable pool tagging fail.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

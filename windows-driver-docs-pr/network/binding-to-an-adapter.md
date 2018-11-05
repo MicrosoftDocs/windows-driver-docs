@@ -46,9 +46,9 @@ A protocol driver calls the [**NdisCloseAdapterEx**](https://msdn.microsoft.com/
 
 If after opening the adapter and before completing the bind request, *ProtocolBindAdapterEx* encounters a failure and must close the binding to the adapter, it can call **NdisCloseAdapterEx**. For more information about closing an adapter, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

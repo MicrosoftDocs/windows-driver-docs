@@ -71,9 +71,9 @@ HKR, Ndi\Interfaces,    LowerRange, 0,  "nolower"
 
 You should replace "ndis5" in the preceding code examples with the protocol bindings required by your driver. For more information about intermediate driver bindings and the **UpperRange**/**LowerRange** entries, see [Intermediate Driver UpperRange And LowerRange INF File Entries](intermediate-driver-upperrange-and-lowerrange-inf-file-entries.md).
 
- 
+ 
 
- 
+ 
 
 
 

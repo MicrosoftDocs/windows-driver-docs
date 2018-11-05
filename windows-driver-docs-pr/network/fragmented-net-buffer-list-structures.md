@@ -44,9 +44,9 @@ NDIS drivers call the [**NdisFreeFragmentNetBufferList**](https://msdn.microsoft
 
 [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ To use the default form of WPP software tracing in a [trace provider](trace-prov
 
 -   Use other tools for software tracing, such as [TraceView](traceview.md), [Tracelog](tracelog.md), [Tracefmt](tracefmt.md), and [Tracepdb](tracepdb.md) to configure, start, and stop tracing sessions and to display and filter trace messages. These tools are included in the Windows Driver Kit (WDK) in the \\tools\\tracing directory.
 
- 
+ 
 
- 
+ 
 
 
 

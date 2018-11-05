@@ -55,7 +55,7 @@ The DRIVER\_OVERRAN\_STACK\_BUFFER bug check has a value of 0x000000F7. This ind
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -71,9 +71,9 @@ Use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-st
 
 The last routine on the stack before the buffer overrun handlers and bug check call is the one that overran its local variable.
 
- 
+ 
 
- 
+ 
 
 
 

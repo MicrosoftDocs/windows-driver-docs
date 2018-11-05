@@ -26,9 +26,9 @@ The following sections describe the deferred context feature of Direct3D version
 
 [Using Context-Local DDI Handles](using-context-local-ddi-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

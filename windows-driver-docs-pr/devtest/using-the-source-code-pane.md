@@ -24,9 +24,9 @@ You can use the **Source Code** pane to read any file, but the cursor steps thro
 
 You can also copy the code from any tab of the **Source Code** pane and paste it into an application that supports rich text format (RTF) files, such as Microsoft Word or WordPad. To copy the code, from the **Edit** menu, select **Select All** and then, from the **Edit** menu, select **Copy**. Or, press CTRL+A (select all) and then CTRL+C (copy).
 
- 
+ 
 
- 
+ 
 
 
 

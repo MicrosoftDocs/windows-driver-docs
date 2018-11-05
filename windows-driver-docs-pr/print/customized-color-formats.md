@@ -24,9 +24,9 @@ If you implement [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/
 
 If a rendering plug-in implements [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261), it can also implement [**IPrintOemUni::MemoryUsage**](https://msdn.microsoft.com/library/windows/hardware/ff554264).
 
- 
+ 
 
- 
+ 
 
 
 

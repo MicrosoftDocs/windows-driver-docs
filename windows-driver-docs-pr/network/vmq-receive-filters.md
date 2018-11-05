@@ -32,9 +32,9 @@ This following figure shows how filters and queues affect the receive data flow.
 
 If an incoming packet matches a filter on a queue, it is assigned to that queue. Otherwise, the packet is tested against the filters on the next queue and so on. If there is no filter match on any of the queues, the network adapter assigns the packet to the default queue.
 
- 
+ 
 
- 
+ 
 
 
 

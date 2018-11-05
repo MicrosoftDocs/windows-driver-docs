@@ -47,13 +47,13 @@ The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KS_AMVPSIZE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567268)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567268" data-raw-source="[&lt;strong&gt;KS_AMVPSIZE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567268)"><strong>KS_AMVPSIZE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KS\_AMVPSIZE structure that specifies the width and height of the video port.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KS\_AMVPSIZE**](https://msdn.microsoft.com/library/windows/hardware/ff567268)
 
- 
+ 
 
- 
+ 
 
 
 

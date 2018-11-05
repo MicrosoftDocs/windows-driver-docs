@@ -78,7 +78,7 @@ The *Short Id* service IDs assigned for a Proximity profile service are:
 </tbody>
 </table>
 
- 
+ 
 
 The Bluetooth SIG maintains the most up to date [list of services](http://go.microsoft.com/fwlink/p/?linkid=320723).
 
@@ -99,13 +99,13 @@ Therefore, to establish a Bluetooth LE connection an app needs to register a han
 
 **Note**  In order to minimize power consumption, Windows does not actively monitor the RSSI value of the link by polling the local Bluetooth radio controller.
 
- 
+ 
 
 Power considerations are described in [Proximity Profile Implementation Details](proximity-profile-implementation-details.md).
 
- 
+ 
 
- 
+ 
 
 
 

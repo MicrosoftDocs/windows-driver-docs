@@ -34,9 +34,9 @@ Which of these behaviors is correct, or even possible, depends on the specific o
 
 For more information about returning status from a dispatch routine, see [Constraints on Dispatch Routines](constraints-on-dispatch-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

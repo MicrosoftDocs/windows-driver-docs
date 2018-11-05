@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 [Tracefmt](tracefmt.md) is a trace consumer. [TraceView](traceview.md) is both a [trace controller](trace-controller.md) and a trace consumer.
 
- 
+ 
 
- 
+ 
 
 
 

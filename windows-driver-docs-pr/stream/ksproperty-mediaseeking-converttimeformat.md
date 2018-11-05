@@ -47,13 +47,13 @@ The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>None</p></td>
-<td><p>[<strong>KSP_TIMEFORMAT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566726)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566726" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566726)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -83,9 +83,9 @@ Requirements
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
 
- 
+ 
 
- 
+ 
 
 
 

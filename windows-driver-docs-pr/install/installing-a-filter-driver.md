@@ -26,7 +26,7 @@ A PnP filter driver can support a specific device or all devices in a setup clas
 
 ### <a href="" id="ddk-installing-a-device-specific-filter-driver-dg"></a>Installing a Device-Specific Filter Driver
 
-To register a device-specific filter driver, create a registry entry through an **AddReg** entry in the *DDInstall***.HW** section of the device's INF file. For a device-specific upper filter, create an entry named **UpperFilters**. For a device-specific lower filter, create an entry named **LowerFilters**. For example, the following INF excerpt installs *cdaudio* as an upper filter on the *cdrom* driver:
+To register a device-specific filter driver, create a registry entry through an **AddReg** entry in the <em>DDInstall</em>**.HW** section of the device's INF file. For a device-specific upper filter, create an entry named **UpperFilters**. For a device-specific lower filter, create an entry named **LowerFilters**. For example, the following INF excerpt installs *cdaudio* as an upper filter on the *cdrom* driver:
 
 ```cpp
 :
@@ -100,9 +100,9 @@ The device installation application would:
 
 Each call would specify **SPINST_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -171,9 +171,9 @@ class MPIO_DSM_Path_V2
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff562386) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_WIDENESS property specifies the wideness (apparent width)
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and specifies the wideness. Wideness is expressed as an unsigned, fixed-point value with a 16-bit fraction. Wideness values follow a linear range from zero to 0xFFFFFFFF:
 
@@ -99,9 +99,9 @@ Requirements
 
 [**KSNODETYPE\_STEREO\_WIDE**](ksnodetype-stereo-wide.md)
 
- 
+ 
 
- 
+ 
 
 
 

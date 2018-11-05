@@ -23,9 +23,9 @@ During the automatic conversion of output from Microsoft Win32-based application
 
 Print fidelity from WPF applications that print to non-XPS-based printers is also improved because the XPS-to-GDI conversion path is better than similar implementations in GDI+ that any applications use. The XPS-to-GDI conversion path tries to algebraically remove transparency (that is, alpha channel in colors and images and opacity and opacity mask on Canvas) in WPF graphics as much as possible, without using GDI raster operations and PostScript bitmasks.
 
- 
+ 
 
- 
+ 
 
 
 

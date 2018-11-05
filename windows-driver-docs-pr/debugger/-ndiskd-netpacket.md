@@ -52,7 +52,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
@@ -167,9 +167,9 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
 
- 
+ 
 
- 
+ 
 
 
 

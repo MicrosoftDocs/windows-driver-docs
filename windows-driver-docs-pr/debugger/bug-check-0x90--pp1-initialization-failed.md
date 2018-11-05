@@ -33,9 +33,9 @@ An error occurred during Phase 1 initialization of the kernel-mode PnP manager.
 
 Phase 1 is where most of the initialization is done, including setting up the registry files and other environment settings for drivers to call during the subsequent I/O initialization.
 
- 
+ 
 
- 
+ 
 
 
 

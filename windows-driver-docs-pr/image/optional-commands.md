@@ -51,9 +51,9 @@ Called by the WIA Flatbed Driver to allow the microdriver to read registry entri
 
 Note: This key is opened and closed *only* by the WIA Flatbed Driver. It is also valid only during this command and CMD\_INITIALIZE (see [Required Commands](required-commands.md)). After those commands return, the key is no longer valid. The HKEY value *must not* be cached.
 
- 
+ 
 
- 
+ 
 
 
 

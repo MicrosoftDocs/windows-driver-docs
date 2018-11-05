@@ -17,7 +17,7 @@ The symbol path specifies the directories where the symbol files are located. Fo
 
 **Note**   If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the srv\* or symsrv\* string within your symbol path. For more information about symbol servers, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
- 
+ 
 
 To control the symbol path in KD, do one of the following:
 
@@ -29,7 +29,7 @@ To control the symbol path in KD, do one of the following:
 
     **Note**  If you use the **-sins** command-line option, the debugger ignores the symbol path environment variable.
 
-     
+     
 
 ## <span id="Executable_Image_Path"></span><span id="executable_image_path"></span><span id="EXECUTABLE_IMAGE_PATH"></span>Executable Image Path
 
@@ -41,7 +41,7 @@ An executable file is a binary file that the processor can run. These files typi
 **Note**   These terms are sometimes used imprecisely. For example, some documents might use "image" for the actual file on the disk. Also, Windows-based applications refer to the executable name, which typically includes the file name extension. But these applications refer to the module name, which does not include the file name extension.
 Also, the Windows kernel and HAL have special module names. For example, the **nt** module corresponds to the Ntoskrnl.exe file.
 
- 
+ 
 
 The executable image path specifies the directories that the binary executable files are located in.
 
@@ -61,11 +61,11 @@ To control the executable image path in KD, do one of the following:
 
     **Note**  If you use the **-sins** command-line option, the debugger ignores the executable image path environment variable.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,8 +21,6 @@ Use a **TraceView -process** command to format the binary trace messages in a [t
 
 ```
     traceview -process [EtlFile | -rt SessionName][Parameters]
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -105,9 +103,9 @@ If TraceView cannot format a trace message, it raises an exception and displays 
 *****FormatMessage Header(Header) of EventTrace, parameter 23 raised an exception*****
 ```
 
- 
 
- 
+
+
 
 
 

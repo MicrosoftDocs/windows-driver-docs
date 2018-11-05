@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal lev
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left">[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies the peak sample value at the node. If the peak value is negative, its absolute value is used.
 
@@ -80,7 +80,7 @@ A KSPROPERTY\_AUDIO\_PEAKMETER property request returns STATUS\_SUCCESS to indic
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -112,9 +112,9 @@ Requirements
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
 
- 
+ 
 
- 
+ 
 
 
 

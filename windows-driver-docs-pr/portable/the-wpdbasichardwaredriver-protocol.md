@@ -20,7 +20,7 @@ DEFINE_GUID (EVENT_SENSOR_READING_UPDATED, 0xada23b0b, 0xce13, 0x4e11, 0x9d, 0x2
 
 **Note**  The SENSOR\_READING and SENSOR\_UPDATE\_INTERVAL event parameters are not part of the WPD schema. It is necessary to edit the WpdInfo Properties file to add the following entries. (If these entries are not added, the WpdMon and WpdInfo tools will display raw PROPERTYKEYs rather than friendly names.)
 
- 
+ 
 
 ```cpp
 {a7ef4367-6550-4055-b66f-be6fdacf4e9f}.2, SENSOR_READING, VT_UI8
@@ -136,7 +136,7 @@ The following table specifies the packet format for each of the nine sensors tha
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -146,9 +146,9 @@ The following table specifies the packet format for each of the nine sensors tha
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -70,9 +70,9 @@ Requirements
 
 [**HS\_PLUGIN\_SEND\_KEEP\_ALIVE**](hs-plugin-send-keep-alive.md)
 
- 
+ 
 
- 
+ 
 
 
 

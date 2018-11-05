@@ -84,9 +84,9 @@ Requirements
 
 [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty-sounddetector-matchresult.md)
 
- 
+ 
 
- 
+ 
 
 
 

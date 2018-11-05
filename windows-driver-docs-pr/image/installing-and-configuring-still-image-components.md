@@ -25,9 +25,9 @@ This section provides the following topics:
 
 [Color Management for Still Image Devices](color-management-for-still-image-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

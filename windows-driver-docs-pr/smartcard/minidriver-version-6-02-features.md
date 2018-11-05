@@ -37,7 +37,7 @@ New APIs added in this version include:
 
 **Important**  Not all provisioning systems support multiple PINs; consequently, care must be taken when applying PINs on keys that can be updated in the field by a card provisioning system.
 
- 
+ 
 
 ## <span id="Support_for_Read-Only_Cards"></span><span id="support_for_read-only_cards"></span><span id="SUPPORT_FOR_READ-ONLY_CARDS"></span>Support for Read-Only Cards
 
@@ -66,9 +66,9 @@ Optionally, and subject to specific restrictions, the minidriver is allowed to d
 
 Cards that can return a temporary session PIN may return such a PIN to Windows for subsequent caching. In such a case, Windows presents the session PIN for any further card authentication until the card invalidates the session PIN. For more information, see [**CardAuthenticateEx**](https://msdn.microsoft.com/library/windows/hardware/dn468703).
 
- 
+ 
 
- 
+ 
 
 
 

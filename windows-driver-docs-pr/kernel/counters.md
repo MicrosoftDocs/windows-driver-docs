@@ -28,9 +28,9 @@ The system provides several driver support routines that return various count va
 
 [**KeQueryTimeIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff553075)
 
- 
+ 
 
- 
+ 
 
 
 

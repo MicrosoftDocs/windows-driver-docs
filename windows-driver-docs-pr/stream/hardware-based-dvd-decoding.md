@@ -25,9 +25,9 @@ Computers using Microsoft DVD support both DVD storage and, if the proper decodi
 
 ![diagram illustrating a hardware dvd decoding solution](images/hwdvddec.png)
 
- 
+ 
 
- 
+ 
 
 
 

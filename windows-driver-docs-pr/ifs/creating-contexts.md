@@ -42,9 +42,9 @@ This is a fixed-size context definition, because the **Size** member is a consta
 
 [**FltAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff541710) initializes the reference count on the new context to one. When the context is no longer needed, the minifilter driver must release this reference. Thus, every call to **FltAllocateContext** must be matched by a subsequent call to [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314).
 
- 
+ 
 
- 
+ 
 
 
 

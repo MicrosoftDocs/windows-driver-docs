@@ -29,9 +29,9 @@ DEVPROP_TYPE_SHORT can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](dev
 
 To set a property whose base data type is DEVPROP_TYPE_INT16, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP_TYPE_INT16, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one SHORT value, and set the *PropertyBufferSize* parameter to **sizeof(**SHORT**)**.
+- Set the *PropertyType* parameter to DEVPROP_TYPE_INT16, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one SHORT value, and set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>SHORT<strong>)</strong>.
 
--   Set the other function input parameters as appropriate to set the property.
+- Set the other function input parameters as appropriate to set the property.
 
 Requirements
 ------------
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

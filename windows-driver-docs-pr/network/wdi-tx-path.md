@@ -82,7 +82,7 @@ Frames injected by the IHV with extended TID in the IHV reserved range map to th
 | Extended TID | 17     | 18     | 19     | 20     | 21      | 22      | 23      | 24      |
 | Extended AC  | AC\_BK | AC\_BE | AC\_VI | AC\_VO | AC\_PR0 | AC\_PR1 | AC\_PR2 | AC\_PR3 |
 
- 
+ 
 
 For WDI port queuing, all injected frames are treated equally regardless of the extended TID.
 
@@ -126,9 +126,9 @@ For WDI port queuing, all injected frames are treated equally regardless of the 
 
 [**WDI\_TXRX\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/dn898187)
 
- 
+ 
 
- 
+ 
 
 
 

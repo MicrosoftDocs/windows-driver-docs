@@ -19,11 +19,11 @@ This section includes the following topics that describe the characteristics of 
 
 **Note**  NDIS ports and extensible switch ports are different objects. Packets that move through the extensible switch data path are always assigned to the NDIS port number of **NDIS\_DEFAULT\_PORT\_NUMBER**. However, the packet's source and destination extensible switch port number can be a value of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** or greater. For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

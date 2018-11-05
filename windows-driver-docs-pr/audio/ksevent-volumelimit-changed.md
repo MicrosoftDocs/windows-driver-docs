@@ -36,13 +36,13 @@ The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the au
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSEVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561744)</p></td>
-<td align="left"><p>[<strong>KSEVENTDATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561750)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561744" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561744)"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
@@ -62,9 +62,9 @@ Note that while KSEVENT\_PINCAPS\_FORMATCHANGE is implemented on the Wave filter
 
 [**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750)
 
- 
+ 
 
- 
+ 
 
 
 

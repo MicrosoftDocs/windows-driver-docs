@@ -72,9 +72,9 @@ Device morphs its Microsoft OS descriptor based on the new configuration. USBCCG
 
 Device does not return any CompatID. Based on the Class / Subclass / Protocol, USBCCGP loads USBSTOR and MBCD.
 
- 
+ 
 
- 
+ 
 
 
 

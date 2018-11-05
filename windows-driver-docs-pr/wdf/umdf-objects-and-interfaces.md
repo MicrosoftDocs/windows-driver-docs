@@ -29,9 +29,9 @@ The following topics describe the core framework objects, the subset of the Comp
 -   [UMDF DDI Programming Model](umdf-ddi-programming-model.md)
 -   [Managing the Lifetime of Objects](managing-the-lifetime-of-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

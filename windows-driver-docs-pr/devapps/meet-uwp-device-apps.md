@@ -13,7 +13,7 @@ Device manufacturers can create a UWP device app that serves as a companion to t
 
 **Note**  Each of these features is optional. A single device app doesn't need to use all of them. All of these features require device metadata.
 
- 
+ 
 
 For more info about what a UWP device app is and how to create one, see [Building UWP device apps](the-workflow.md).
 
@@ -28,7 +28,7 @@ To create a background task for device servicing (device updates), use the [Devi
 
 **Note**  Device background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization.
 
- 
+ 
 
 ## <span id="AutoPlay"></span><span id="autoplay"></span><span id="AUTOPLAY"></span>AutoPlay
 
@@ -79,7 +79,7 @@ UWP device apps can automatically install when a user connects the device to the
 
 **Warning**  It's important to consider that the automatic installation feature does not provide a notification to the user when the app is installed. Some users may find this experience confusing and frustrating, and give your app a bad rating.
 
- 
+ 
 
 For more info about automatic installation, see [Automatic installation for printers and cameras](auto-install-for-uwp-device-apps.md).
 
@@ -94,9 +94,9 @@ For more info about automatic installation, see [Automatic installation for prin
 
 [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

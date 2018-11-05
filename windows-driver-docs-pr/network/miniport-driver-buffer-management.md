@@ -26,9 +26,9 @@ The [*MiniportReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/
 
 A miniport driver should free all the NET\_BUFFER\_LIST structures and associated data when NDIS halts the adapter. A driver can call **NdisFreeNetBufferList** to free the structures and the [**NdisFreeNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff562590) function to free the NET\_BUFFER\_LIST pool.
 
- 
+ 
 
- 
+ 
 
 
 

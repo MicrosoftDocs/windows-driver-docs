@@ -26,11 +26,11 @@ Multiple instances of the COPP device are required so that different processes c
 
 **Note**   A video session consists of a video stream possibly combined with one or more video substreams. A video session is tied to a particular graphics adapter's output connector. Several video sessions can be active on a system and within a single process.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

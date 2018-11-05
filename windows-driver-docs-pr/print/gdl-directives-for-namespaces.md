@@ -28,9 +28,9 @@ GDL contains the following namespace directives:
 
 For more information about namespace directives, see [GDL Namespaces](gdl-namespaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

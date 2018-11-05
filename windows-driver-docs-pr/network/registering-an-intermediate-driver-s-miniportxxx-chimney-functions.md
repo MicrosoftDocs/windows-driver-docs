@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 A TCP chimney-capable intermediate driver registers the same *MiniportXxx* chimney functions that an offload target registers. For more information about registering these functions, see [Registering Chimney Offload Functions](registering-chimney-offload-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -58,9 +58,9 @@ A kernel-mode interface that is implemented as a kernel-mode export driver. The 
 <a href="" id="dma-client"></a>DMA.client  
 A kernel mode driver, such as the TCP/IP protocol ( Tcpip.sys), that uses the NetDMA memory-to-memory DMA services of a NetDMA provider. DMA clients access NetDMA providers through the NetDMA interface. Multiple DMA clients can coexist in the driver set that the NetDMA interface manages.
 
- 
+ 
 
- 
+ 
 
 
 

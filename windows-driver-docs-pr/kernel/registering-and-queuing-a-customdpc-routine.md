@@ -34,9 +34,9 @@ A *CustomDpc* routine is responsible for doing whatever is necessary to complete
 
 The ISR and *CustomDpc* routines can be run concurrently on an SMP machine. Therefore, when writing *CustomDpc* routines, follow the guidelines set out in the previous section, [Registering and Queuing a DpcForIsr Routine](registering-and-queuing-a-dpcforisr-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

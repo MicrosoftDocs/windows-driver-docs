@@ -29,9 +29,9 @@ When calling [**WdfDmaTransactionCancel**](https://msdn.microsoft.com/library/wi
 
     The driver can use the same technique to cancel a DMA transaction after some number of transfer operations have already completed. In this case, the driver calls [**WdfDmaTransactionCancel**](https://msdn.microsoft.com/library/windows/hardware/hh451127) after it calls [**WdfDmaTransactionDmaCompleted**](https://msdn.microsoft.com/library/windows/hardware/ff547039), but before the framework calls [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) to program the next transfer operation. If the driver happens to call **WdfDmaTransactionCancel** before it calls **WdfDmaTransactionDmaCompleted**, **WdfDmaTransactionDmaCompleted** returns **TRUE**, indicating that the DMA transaction has been completed.
 
- 
+ 
 
- 
+ 
 
 
 

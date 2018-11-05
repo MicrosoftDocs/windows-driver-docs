@@ -83,7 +83,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -119,9 +119,9 @@ Requirements
 
 [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021)
 
- 
+ 
 
- 
+ 
 
 
 

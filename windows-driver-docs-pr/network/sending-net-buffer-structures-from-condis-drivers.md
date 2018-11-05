@@ -30,9 +30,9 @@ Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LI
 
 Protocol drivers can cancel send requests by using the same mechanisms as connectionless drivers. For more information about canceling send requests, see [Canceling a Send Operation](canceling-a-send-operation.md).
 
- 
+ 
 
- 
+ 
 
 
 

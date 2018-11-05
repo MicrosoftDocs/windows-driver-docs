@@ -210,9 +210,9 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
 
 Note that this is an area in which implementation varies dramatically from file system to file system. For example, a file system that supports security descriptor sharing would need to add explicit logic to find a matching security descriptor. This sample is only an attempt to provide guidance to implementers.
 
- 
+ 
 
- 
+ 
 
 
 

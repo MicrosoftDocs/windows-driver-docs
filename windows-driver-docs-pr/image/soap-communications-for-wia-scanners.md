@@ -20,9 +20,9 @@ This section contains the following topics:
 
 [Reading Device Metadata](reading-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

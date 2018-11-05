@@ -52,7 +52,6 @@ DevExt->WriteCommonBufferBaseLA =
              WdfCommonBufferGetAlignedLogicalAddress(
                       DevExt->WriteCommonBuffer);
 RtlZeroMemory( DevExt->WriteCommonBufferBase, DevExt->WriteCommonBufferSize);
-
 ```
 
 If your driver calls [**WdfDeviceSetAlignmentRequirement**](https://msdn.microsoft.com/library/windows/hardware/ff546861) before calling [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), the buffers that **WdfDmaEnablerCreate** creates are aligned to the memory address boundary that the driver specified to **WdfDeviceSetAlignmentRequirement**. Otherwise, common buffers are aligned to word address boundaries. Alternatively, the driver can call [**WdfCommonBufferCreateWithConfig**](https://msdn.microsoft.com/library/windows/hardware/ff545805) to specify an alignment for a single buffer.
@@ -61,9 +60,9 @@ To obtain the length of a common buffer that your driver has allocated, the driv
 
 When the driver is finished using a common buffer, the driver calls [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734).
 
- 
 
- 
+
+
 
 
 

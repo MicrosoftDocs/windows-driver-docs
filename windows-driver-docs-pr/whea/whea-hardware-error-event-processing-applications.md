@@ -28,9 +28,9 @@ This section includes the following topics:
 
 [Registering for Notification of Hardware Error Events](registering-for-notification-of-hardware-error-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

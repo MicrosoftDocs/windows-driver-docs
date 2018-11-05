@@ -161,7 +161,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 Because DevCon operations use IDs and ID patterns to identify devices, a common first step in using DevCon is to create a hardware ID reference file for devices on the computer.
 
-The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\***) to represent all devices on the local computer.
+The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\\***) to represent all devices on the local computer.
 
 ```
 devcon hwids *
@@ -169,7 +169,7 @@ devcon hwids *
 
 Because the output is lengthy and used repeatedly, save the output in a text file for reference.
 
-The following command uses the wildcard character (**\***) to represent all devices on the computer. It uses the redirection character (**&gt;**) to save the command output in the hwids.txt file.
+The following command uses the wildcard character (**\\***) to represent all devices on the computer. It uses the redirection character (*<em>&gt;</em>*) to save the command output in the hwids.txt file.
 
 ```
 devcon hwids * > hwids.txt
@@ -179,7 +179,7 @@ The following command finds the hardware IDs of devices on a remote computer, Se
 
 **Note**   This command fails unless the user has the required permissions on the remote computer. To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows Driver Kit (WDK) 8.1 and Windows Driver Kit (WDK) 8, the remote access is unavailable.
 
- 
+ 
 
 ```
 devcon /m:\\server01 hwids * > server01_hwids.txt
@@ -189,7 +189,7 @@ devcon /m:\\server01 hwids * > server01_hwids.txt
 
 To find the hardware IDs of a particular device, enter the hardware ID or pattern, the compatible ID or pattern, the device instance ID or pattern, or the name of the device setup class.
 
-The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
+The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
 
 ```
 devcon hwids *floppy*
@@ -359,7 +359,7 @@ No devices for setup class "TapeDrive" (Tape drives) on \\server01.
 
 ### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span><a name="ddk_example_8_list_all_driver_files_tools"></a>Example 8: List all driver files
 
-The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (**&gt;**) to redirect the output to a reference file, driverfiles.txt.
+The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (*<em>&gt;</em>*) to redirect the output to a reference file, driverfiles.txt.
 
 ```
 devcon driverfiles * > driverfiles.txt
@@ -389,7 +389,7 @@ HID\VID_045E&PID_0039\6&DC36FDE&0&0000
 
 The following command uses the [**DevCon DriverNodes**](devcon-drivernodes.md) command and an ID pattern to list the driver nodes of software-enumerated devices. Patterns are useful for finding information about similar devices that might not be in the same setup class.
 
-The following command uses the ID pattern **sw\*** to specify devices whose hardware IDs or compatible IDs begin with "sw," that is, software-enumerated devices.
+The following command uses the ID pattern **sw\\*** to specify devices whose hardware IDs or compatible IDs begin with "sw," that is, software-enumerated devices.
 
 ```
 devcon drivernodes sw*
@@ -687,7 +687,7 @@ ROOT\MS_PTIMINIPORT\0000
 
 ### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices on the local computer
 
-The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\***) to represent all devices and the redirection character (**&gt;**) to redirect the output to the status.txt file.
+The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
 
 ```
 devcon status * > status.txt
@@ -814,7 +814,7 @@ ROOT\RDP_MOU\0000
 
 The following commands use the [**DevCon Find**](devcon-find.md) operation to display all legacy devices on the local computer. Because legacy devices do not have a hardware ID, you must search for them by their device instance ID (registry path), ROOT\\LEGACY, or their setup class, LegacyDriver.
 
-The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\***) to find all devices in the ROOT\\Legacy subkey.
+The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\\***) to find all devices in the ROOT\\Legacy subkey.
 
 ```
 devcon find @root\legacy*
@@ -963,7 +963,7 @@ The following list shows the filter drivers for the DiskDrive class before the c
     Disklog
 ```
 
-The first subcommand, **@Disklog**, uses the positioning operator (**@**) to place the virtual cursor on the Disklog filter driver. The second subcommand, **-MyFilter**, uses the add-before operator (**-**) to add MyFilter.sys before Disklog.sys.
+The first subcommand, <strong>@Disklog</strong>, uses the positioning operator (**@**) to place the virtual cursor on the Disklog filter driver. The second subcommand, **-MyFilter**, uses the add-before operator (**-**) to add MyFilter.sys before Disklog.sys.
 
 The command also uses the **/r** parameter, which reboots the system if it is necessary to make the class filter change effective.
 
@@ -978,7 +978,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
     Disklog
 ```
 
-You can also use the following command to add the MyFilter driver and to place it between PartMgr and Disklog. In this example, the first subcommand, **@PartMgr**, positions the virtual cursor on the PartMgr filter driver. The second subcommand, **+MyFilter**, uses the add-after operator (+) to add MyFilter.sys after PartMgr.
+You can also use the following command to add the MyFilter driver and to place it between PartMgr and Disklog. In this example, the first subcommand, <strong>@PartMgr</strong>, positions the virtual cursor on the PartMgr filter driver. The second subcommand, **+MyFilter**, uses the add-after operator (+) to add MyFilter.sys after PartMgr.
 
 ```
 devcon /r classfilter DiskDrive upper @PartMgr +MyFilter
@@ -1052,7 +1052,7 @@ The following list shows the filter drivers for the DiskDrive class before the c
 </tbody>
 </table>
 
- 
+ 
 
 The first subcommand uses the delete operator (**!)** to delete Disklog from the list. The second subcommand uses the start operator (**=)** to move the virtual cursor back to the starting position and then uses the positioning operator (**@)** to place the cursor on the PartMgr driver. The start operator is necessary because the virtual cursor moves only forward through the list. The final subcommand uses the add-after operator (**+)** to add Disklog after PartMgr.
 
@@ -1119,9 +1119,9 @@ LPTENUM\HEWLETT-PACKARDDESKJET_1120C\1&7530F08&0&LPT1.4        : Enabled
 
 The following command uses the [**DevCon Disable**](devcon-disable.md) operation to disable the USB devices on the local computer. It identifies the devices by a hardware ID pattern (USB\*). This pattern will match any device whose hardware ID or compatible ID begins with "USB." The command includes the **/r** parameter, which reboots the system if it is necessary to make the disabling effective.
 
-**Note**   Before using an ID pattern to disable a device, determine which devices will be affected. To do so, use the pattern in a display command, such as **devcon status USB\*** or **devcon hwids USB\***.
+**Note**   Before using an ID pattern to disable a device, determine which devices will be affected. To do so, use the pattern in a display command, such as **devcon status USB\\*** or **devcon hwids USB\\***.
 
- 
+ 
 
 ```
 devcon /r disable USB*
@@ -1233,9 +1233,9 @@ Finally, add network configuration settings to the unattended setup file and run
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to remove all USB devices from the computer. It identifies the devices by a device instance ID pattern that matches any device instance ID (registry path) that begins with the "USB\\" string. The at character (**@**) distinguishes the device instance ID from a hardware ID or compatible ID. The command also includes the **/r** parameter that reboots the system if it is required to make the remove procedure effective.
 
-**Warning**   Before removing any devices by using a pattern, determine which devices are affected. To do so, use the pattern in a display command, such as **devcon status @usb\\\*** or **devcon hwids @usb\\\***.
+**Warning**   Before removing any devices by using a pattern, determine which devices are affected. To do so, use the pattern in a display command, such as <strong>devcon status @usb\\\</strong>* or <strong>devcon hwids @usb\\\</strong>*.
 
- 
+ 
 
 ```
 devcon /r remove @usb\*
@@ -1254,9 +1254,9 @@ USB\VID_045E&PID_0039\5&29F428A4&0&2                  : Removed
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to uninstall the NDISWAN miniport driver from the local computer. The command specifies the Net class and then refines the search by specifying devices in the class whose hardware ID or compatible ID include "ndiswan." The command also includes the **/r** parameter, which reboots the system if rebooting is required to make the remove procedure effective.
 
-**Warning**   Before removing any devices by using a pattern, determine which devices will be affected. To do so, use the pattern in a display command, such as **devcon status =net \*ndiswan\*** or **devcon hwids =net \*ndiswan\***.
+**Warning**   Before removing any devices by using a pattern, determine which devices will be affected. To do so, use the pattern in a display command, such as **devcon status =net \*ndiswan\\*** or **devcon hwids =net \*ndiswan\\***.
 
- 
+ 
 
 ```
 devcon /r remove =net *ndiswan*
@@ -1342,7 +1342,7 @@ Modified 1 hardware ID(s).
 
 The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to add the hardware ID, legacy, to the list of hardware IDs for all legacy devices on the Server1 remote computer.
 
-The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It uses the **/m** parameter to specify the remote computer. It also uses a device instance ID pattern, **@ROOT\\LEGACY\***, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with **ROOT\\LEGACY**.
+The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It uses the **/m** parameter to specify the remote computer. It also uses a device instance ID pattern, <strong>@ROOT\\LEGACY\</strong><em>, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with **ROOT\\LEGACY</em>*.
 
 ```
 devcon /m:\\Server1 sethwid @ROOT\LEGACY* := -legacy
@@ -1483,9 +1483,9 @@ Updating drivers for acpiapic_mp from c:\windows\inf\hal.inf.
 Drivers updated successfully.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

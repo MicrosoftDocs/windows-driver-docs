@@ -86,9 +86,9 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

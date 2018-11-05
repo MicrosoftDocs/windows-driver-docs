@@ -57,7 +57,7 @@ The following table describes the required values for the **WIA\_IPS\_PATCH\_COD
 </tbody>
 </table>
 
- 
+ 
 
 The [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property is also required for all Patch Code Reader items.
 
@@ -86,7 +86,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -104,9 +104,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

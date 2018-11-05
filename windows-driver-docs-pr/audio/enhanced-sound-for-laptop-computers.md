@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 This Windows Vista feature allows laptop computer users to experience the quality of audio sound that is normally associated with home theater stereo sound systems.
 
- 
+ 
 
- 
+ 
 
 
 

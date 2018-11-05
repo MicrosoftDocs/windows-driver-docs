@@ -150,7 +150,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:log>c:\windows\temp\3DPrint\StandardGCode.log</psk3dx:log>
         </psk3dx:debug>
       -->  
-    
+
       <psk3dx:communication>
         <!-- communication parameters -->
         <psk3dx:connection name="serialport">
@@ -223,7 +223,7 @@ You can use the following example configuration XML to develop the configuration
         <psk3dx:layer>
           <psk3dx:command>M106 S$rampup$</psk3dx:command>
         </psk3dx:layer>
-        
+
       </psk3dx:customcommands>
 
       <psk3dx:print>
@@ -341,7 +341,6 @@ You can use the following example configuration XML to develop the configuration
   </psk3dx:MS3DPrinter>
 
 </PrintDeviceCapabilities>
-
 ```
 
 

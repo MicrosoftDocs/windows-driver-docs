@@ -37,9 +37,9 @@ To build an extension, use the following procedure:
 
 3.  Select **Build** and then **Build Solution** from the menu in Visual Studio.
 
- 
+ 
 
- 
+ 
 
 
 

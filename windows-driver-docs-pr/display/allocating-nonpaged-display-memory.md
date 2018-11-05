@@ -22,9 +22,9 @@ Windows 2000 and earlier only permitted allocations from the system's paged pool
 
 Although this feature of allocating from nonpaged pool was available in WindowsXP and later, it was not documented in the Windows XP and Windows XP with Service Pack 1 (SP1) DDKs.
 
- 
+ 
 
- 
+ 
 
 
 

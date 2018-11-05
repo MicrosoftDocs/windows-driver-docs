@@ -32,9 +32,9 @@ If you do not make these additions WIA will not recognize the device. Be sure to
 
 For an example of how to support WIA from a video camera using USBCAMD model with a still pin from your driver see [USB-Based Camera with a Capture Button](https://msdn.microsoft.com/library/windows/hardware/ff568643).
 
- 
+ 
 
- 
+ 
 
 
 

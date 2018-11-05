@@ -49,7 +49,7 @@ The **.breakin** command switches from user-mode debugging to kernel-mode debugg
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ This command is also useful if you use the kernel debugger to set a breakpoint i
 
 If the **.breakin** command is used on a system that was not booted with debugging enabled, it has no effect.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -145,9 +145,9 @@ ALL ALLOCATED NBs
 
 [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure)
 
- 
+ 
 
- 
+ 
 
 
 

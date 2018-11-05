@@ -48,7 +48,7 @@ Specifies the address of the power policy structure to display. If this is omitt
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,9 +82,9 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
 
 [Plug and Play and Power Debugger Commands](plug-and-play-and-power-debugger-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

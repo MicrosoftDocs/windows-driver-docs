@@ -51,9 +51,9 @@ In this example, the lower-right corner of the video stream is displayed in the 
 
 ![diagram illustrating processing subrectangles with intersection](images/trgrect6.png)
 
- 
+ 
 
- 
+ 
 
 
 

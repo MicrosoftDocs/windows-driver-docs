@@ -62,7 +62,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -124,9 +124,9 @@ Requirements
 
 [**MRxTruncate**](mrxtruncate.md)
 
- 
+ 
 
- 
+ 
 
 
 

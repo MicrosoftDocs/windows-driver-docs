@@ -19,7 +19,7 @@ Only a limited subset of configuration parameters for a VPort can be changed. Th
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*. The **SwitchId** member must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
-     
+     
 
 -   The **VPortId** member must be set to the identifier associated with the VPort. The overlying driver obtains the VPort identifier through one of the following ways:
 
@@ -50,7 +50,7 @@ The overlying driver must follow these guidelines for changing the **ProcessorAf
 
     **Note**  Nondefault VPorts are created through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816).
 
-     
+     
 
 <a href="" id="vportstate"></a>**VPortState**  
 This member specifies the current state of the VPort.
@@ -69,9 +69,9 @@ The overlying driver must follow these guidelines for changing the **VPortState*
 
 After the PF miniport driver receives the OID set request of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825), the driver configures the hardware with the configuration parameters. The driver can only change those configuration parameters identified by NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS\_*Xxx*\_CHANGED flags in the **Flags** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure.
 
- 
+ 
 
- 
+ 
 
 
 

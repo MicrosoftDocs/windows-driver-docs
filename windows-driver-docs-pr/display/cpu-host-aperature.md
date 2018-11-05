@@ -29,9 +29,9 @@ In the linked display adapter configuration things look similar except for the f
 This is illustrated below:
 ![cpu host aperture segment mapping for linked display adapter configuration](images/cpu-host-aperture.2.png)
 
- 
+ 
 
- 
+ 
 
 
 

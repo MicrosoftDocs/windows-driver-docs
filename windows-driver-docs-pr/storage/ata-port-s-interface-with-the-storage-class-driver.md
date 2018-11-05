@@ -21,8 +21,8 @@ ms.localizationpriority: medium
 
 The ATA port driver, SCSI port driver, and Storport driver all use SRBs to communicate with higher-level drivers, such as storage class drivers. For more information about the interface between storage class and storage port drivers, see [SCSI Port's Interface with the Storage Class Driver](scsi-port-s-interface-with-the-storage-class-driver.md).
 
- 
+ 
 
- 
+ 
 
 

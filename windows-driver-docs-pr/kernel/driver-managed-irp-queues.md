@@ -42,9 +42,9 @@ The following sections explain how to use device queues, interlocked queues, and
 
 [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

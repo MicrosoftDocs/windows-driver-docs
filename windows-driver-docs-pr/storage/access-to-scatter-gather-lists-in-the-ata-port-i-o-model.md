@@ -29,8 +29,8 @@ The miniport driver does not have to free the memory for the scatter/gather list
 
 The miniport driver's [**IdeHwBuildIo**](https://msdn.microsoft.com/library/windows/hardware/ff557462) routine should translate the scatter/gather list, if it is necessary.
 
- 
+ 
 
- 
+ 
 
 

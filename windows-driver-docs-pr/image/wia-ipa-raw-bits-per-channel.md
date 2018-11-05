@@ -89,7 +89,7 @@ The following table describes the required number of entries in WIA\_IPA\_RAW\_B
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -116,9 +116,9 @@ Requirements
 
 [**WIA\_IPA\_FORMAT**](wia-ipa-format.md)
 
- 
+ 
 
- 
+ 
 
 
 

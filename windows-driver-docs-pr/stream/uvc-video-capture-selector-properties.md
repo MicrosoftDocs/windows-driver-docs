@@ -29,21 +29,21 @@ The following table describes the properties that are part of the [PROPSETID\_VI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_SELECTOR_SOURCE_NODE_ID</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565221)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565221" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_SOURCE_NODE_ID&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565221)"><strong>KSPROPERTY_SELECTOR_SOURCE_NODE_ID</strong></a></p></td>
 <td><p>Specifies the source pin identifier for a particular node.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_NUM_SOURCES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565191)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565191" data-raw-source="[&lt;strong&gt;KSPROPERTY_NUM_SOURCES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565191)"><strong>KSPROPERTY_NUM_SOURCES</strong></a></p></td>
 <td><p>Specifies the number of source pins present on the selector unit.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

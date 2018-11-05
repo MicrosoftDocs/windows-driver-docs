@@ -16,9 +16,9 @@ This section contains an overview of mobile broadband in Windows 8, Windows 8.
 
 -   [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

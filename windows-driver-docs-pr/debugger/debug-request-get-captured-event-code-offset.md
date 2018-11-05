@@ -49,9 +49,9 @@ The memory at the instruction pointer for the current event can be read using th
 
 [**DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM**](debug-request-read-captured-event-code-stream.md)
 
- 
+ 
 
- 
+ 
 
 
 

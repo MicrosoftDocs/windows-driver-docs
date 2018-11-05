@@ -66,11 +66,11 @@ The Remote NDIS status values are generally equivalent to the 32-bit status valu
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

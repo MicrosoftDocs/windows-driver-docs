@@ -91,7 +91,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <tr class="odd">
 <td align="left"><p>0x0A</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Allocator's tag</p></td>
+<td align="left"><p>Allocator&#39;s tag</p></td>
 <td align="left"><p>Tag being used in the attempted free</p></td>
 <td align="left"><p>The current thread attempted to free pool memory by using the wrong tag.</p>
 <p>(The memory might belong to another component.)</p></td>
@@ -101,7 +101,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <p>0x0C,</p>
 <p>or 0x0D</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Pool allocation's tag</p></td>
+<td align="left"><p>Pool allocation&#39;s tag</p></td>
 <td align="left"><p>Bad quota process pointer</p></td>
 <td align="left"><p>The current thread attempted to release a quota on a corrupted pool allocation.</p></td>
 </tr>
@@ -190,7 +190,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9B</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag of 0</p>
 <p>(This would be untrackable, and possibly corrupt the existing tag tables.)</p></td>
 </tr>
@@ -198,7 +198,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9C</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag of &quot;BIG&quot;.</p>
 <p>(This would be untrackable and could possibly corrupt the existing tag tables.)</p></td>
 </tr>
@@ -206,7 +206,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9D</p></td>
 <td align="left"><p>Incorrect pool tag used</p></td>
 <td align="left"><p>Pool type</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag that does not contain any letters or digits. Using such tags makes tracking pool issues difficult.</p></td>
 </tr>
 <tr class="odd">
@@ -219,7 +219,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 </tbody>
 </table>
 
- 
+ 
 
 The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, 0 indicates nonpaged pool and 1 indicates paged pool.
 
@@ -241,9 +241,9 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 
 In particular, for situations with memory pool corruption, run the Windows Memory Diagnostics tool, to try and isolate the physical memory as a cause. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
- 
+ 
 
- 
+ 
 
 
 

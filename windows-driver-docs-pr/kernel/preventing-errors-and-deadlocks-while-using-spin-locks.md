@@ -48,9 +48,9 @@ In general, avoid using nested spin locks to protect overlapping subsets or disc
 
 For more information about acquiring nested spin locks, see [Locks, Deadlocks, and Synchronization](http://go.microsoft.com/fwlink/p/?linkid=57456 ).
 
- 
+ 
 
- 
+ 
 
 
 

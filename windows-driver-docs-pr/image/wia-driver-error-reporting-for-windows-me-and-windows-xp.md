@@ -25,9 +25,9 @@ A WIA minidriver should implement the following methods to perform error reporti
 
 The WIA service asks for error information if any of the [IWiaMiniDrv COM Interface](iwiaminidrv-com-interface.md) methods fail.
 
- 
+ 
 
- 
+ 
 
 
 

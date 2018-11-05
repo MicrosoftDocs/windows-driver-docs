@@ -60,9 +60,9 @@ On every Windows platform, each adapter object has an associated set of one or m
 
 The number of map registers available with an adapter object can vary for different devices and Windows platforms. For example, the HAL can make more map registers available to drivers that use system DMA on some platforms than on other platforms because the DMA controllers on different Windows platforms have different capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ Class and port drivers supplied with the system and by independent hardware vend
 
 -   The video port driver manages most of the PnP and power management requirements for the miniport. Video miniport drivers must support miniport-specific routines, which are described elsewhere in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

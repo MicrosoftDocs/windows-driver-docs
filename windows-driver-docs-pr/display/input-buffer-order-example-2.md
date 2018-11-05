@@ -59,11 +59,11 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

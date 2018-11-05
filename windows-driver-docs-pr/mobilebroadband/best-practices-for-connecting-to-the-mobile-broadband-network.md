@@ -26,9 +26,9 @@ Use the following best practices regarding connectivity to the mobile broadband 
 
 [Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-using-mobile-broadband-windows-runtime-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

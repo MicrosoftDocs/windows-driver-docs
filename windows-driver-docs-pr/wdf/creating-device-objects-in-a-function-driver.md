@@ -72,9 +72,9 @@ Creating a framework device object in a function driver typically includes the f
 
     The final step in creating a device object is to call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
- 
+ 
 
- 
+ 
 
 
 

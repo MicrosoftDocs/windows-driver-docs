@@ -26,7 +26,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 | 0x00C7   | Wireless Radio LED           | On/Off Control (OOC)       |
 | 0x00C8   | Wireless Radio Slider Switch | On/Off Control (OOC)       |
 
- 
+ 
 
 The following is an architectural diagram of the HID Client that provides support for Radio Management / Airplane Mode.
 
@@ -154,9 +154,9 @@ Tip \#3: For more information on the Airplane Mode radio management button, see 
 
 Tip \#4: For more information regarding the buttons, and to ensure that you are implementing the correct hardware, please review the Windows 8 System Logo Requirements.
 
- 
+ 
 
- 
+ 
 
 
 

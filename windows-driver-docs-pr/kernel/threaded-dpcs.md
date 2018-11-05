@@ -22,9 +22,9 @@ This section contains the following topics about threaded deferred procedure cal
 
 [Converting an Ordinary DPC to a Threaded DPC](converting-an-ordinary-dpc-to-a-threaded-dpc.md)
 
- 
+ 
 
- 
+ 
 
 
 

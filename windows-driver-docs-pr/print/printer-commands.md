@@ -40,9 +40,9 @@ The following topics describe how to specify printer commands in GPD files:
 
 [Command Execution Order](command-execution-order.md)
 
- 
+ 
 
- 
+ 
 
 
 

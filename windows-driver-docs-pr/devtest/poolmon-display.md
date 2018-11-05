@@ -19,7 +19,7 @@ PoolMon displays columns of data about pool memory allocations in a command wind
 
 **Note**  To see the entire PoolMon display, the Command Prompt window size must be at least 80 characters wide (width=80) and at least 53 rows high (height=53); and the Command Prompt window buffer must be at least 500 characters wide (width=500) and at least 2000 rows high (height=2000). Otherwise, the display might be truncated.
 
- 
+ 
 
 The following table describes the columns in the PoolMon display.
 
@@ -82,7 +82,7 @@ The following table describes the columns in the PoolMon display.
 </tbody>
 </table>
 
- 
+ 
 
 The following sample PoolMon output is sorted by number of allocations. (To sort your display this way, start PoolMon with the **/a** parameter.)
 
@@ -114,9 +114,9 @@ The data that PoolMon displays is collected and calculated by Windows whenever p
 
 All pool memory allocations have tags, but they do not all have characteristic tag values. Pool memory allocations have characteristic tag values when the driver that allocates the memory sets the tag value by using [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) or [**ExAllocatePoolWithQuotaTag**](https://msdn.microsoft.com/library/windows/hardware/ff544513). If the driver does not assign a tag value ([**ExAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff544501), [**ExAllocatePoolWithQuota**](https://msdn.microsoft.com/library/windows/hardware/ff544506)), Windows still creates a tag, but it assigns the default tag value None. As a result, you cannot distinguish the statistics for that driver's allocations from that of other pool allocations.
 
- 
+ 
 
- 
+ 
 
 
 

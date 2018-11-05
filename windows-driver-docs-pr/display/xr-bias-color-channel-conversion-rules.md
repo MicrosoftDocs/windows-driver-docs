@@ -30,11 +30,11 @@ These are some example converted values using the conversion rules:
 | 894 = 0x37e        | 1.0000         |
 | 1023 = 0x3ff       | 1.2529         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

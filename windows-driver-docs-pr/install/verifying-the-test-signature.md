@@ -33,7 +33,7 @@ Where:
 
     **Note**  When verifying the signature of an embedded-signed kernel-mode binary file, do not use the **/c** argument.
 
-     
+     
 
 -   *toastpkg.inf* specifies the name of the file to be verified.
 
@@ -45,9 +45,9 @@ Signtool verify /pa /v tstamd64.cat
 
 For more information about how to use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to verify a digital signature of a catalog file, see [Verifying the Signature of a Test-Signed Catalog File](verifying-the-signature-of-a-test-signed-catalog-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

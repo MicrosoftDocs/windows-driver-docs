@@ -34,9 +34,9 @@ HKR,"FX\\0",%PKEY_FX_KeywordDetector_EndpointEffectClsid%,,%FX_KEYWORD_ENDPOINT_
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

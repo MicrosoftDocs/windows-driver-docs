@@ -115,9 +115,9 @@ FsdNotifyTraverseCheck (
 
 This routine is likely to be substantially different for file systems that cache security information, or that have different data structures for tracking files and directories (for example, files that use a structure for tracking links between files and directories). File systems supporting links are not considered in this sample in an attempt to simplify the example.
 
- 
+ 
 
- 
+ 
 
 
 

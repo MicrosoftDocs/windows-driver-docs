@@ -61,9 +61,9 @@ The following steps explain how the VMR initiates calls to the COPP DDI:
 
 9.  The drivers then release any resources used by the DirectX VA COPP device.
 
- 
+ 
 
- 
+ 
 
 
 

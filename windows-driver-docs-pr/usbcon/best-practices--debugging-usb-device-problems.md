@@ -124,7 +124,7 @@ You can determine the required amount of time for a hub to resume from selective
 
 **Note**  Hub resume timing depends on resume timing of all devices below the hub and possibly some or all hubs above the hub that is being resumed.
 
- 
+ 
 
 ## Related topics
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  

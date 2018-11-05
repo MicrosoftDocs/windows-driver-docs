@@ -28,9 +28,9 @@ Usually, a driver with a *Reinitialize* routine is a higher-level driver that co
 
 If a driver has a *Reinitialize* routine, it initializes in the same basic steps described in [Writing a DriverEntry Routine](writing-a-driverentry-routine.md), and it also has the same basic requirements as its **DriverEntry** routine.
 
- 
+ 
 
- 
+ 
 
 
 

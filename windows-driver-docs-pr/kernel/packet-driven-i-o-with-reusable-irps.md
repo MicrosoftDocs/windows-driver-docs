@@ -40,9 +40,9 @@ As each driver processes an IRP, it can access its I/O stack location in the IRP
 
 For a detailed discussion of IRPs, see [Handling IRPs](handling-irps.md).
 
- 
+ 
 
- 
+ 
 
 
 

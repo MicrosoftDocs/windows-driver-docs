@@ -26,11 +26,11 @@ The following topics show the flow of operations that occur to and from UMDF dri
 
 **Note**   All I/O that is initiated by applications is routed through kernel mode as shown in the figures in the [Architecture of the UMDF](https://msdn.microsoft.com/library/windows/hardware/ff554461) section, even though the figures in the I/O Request Processing Operation Flow section do not show this situation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

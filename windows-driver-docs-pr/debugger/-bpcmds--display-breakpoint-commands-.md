@@ -46,7 +46,7 @@ The **.bpcmds** command displays the commands that were used to set each of the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -114,9 +114,9 @@ Notice that because breakpoint number 0 was originally set using **bp**, and the
 
 Notice also that breakpoints 3, 4, and 5, which were created by the **bm** commands shown in this example, are displayed as either type "bp" or type "bu", depending on whether the **/d** switch was included when **bm** was used.
 
- 
+ 
 
- 
+ 
 
 
 

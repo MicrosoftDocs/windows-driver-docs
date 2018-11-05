@@ -35,7 +35,7 @@ On behalf of a filter module that is in the *Pausing* state, the filter driver:
 
     **Note**  [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613) should not be called for NBLs indicated with NDIS\_RECEIVE\_FLAGS\_RESOURCES flag set in a corresponding [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960) call. Such NBLs are returned to NDIS synchronously by returning from the *FilterReceiveNetBufferLists* routine.
 
-     
+     
 
 -   Should not originate any new send requests.
 
@@ -85,9 +85,9 @@ On behalf of a filter module that is in the *Paused* state, the filter driver:
 
 NDIS does not initiate other Plug and Play operations, such as, attach, detach, or a restart requests, while the filter driver is in the *Pausing* state. NDIS can initiate detach or restart requests after a filter driver is in the *Paused* state. For more information about how to detach a filter module, see [Detaching a Filter Module](detaching-a-filter-module.md). For more information about how to restart a filter module, see [Starting a Filter Module](starting-a-filter-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

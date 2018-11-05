@@ -55,9 +55,9 @@ These topics discuss tips and requirements for implementing Windows Display Driv
 
 [Adaptive refresh for playing 24 fps video content](adaptive-refresh-for-playing-24-fps-content.md)
 
- 
+ 
 
- 
+ 
 
 
 

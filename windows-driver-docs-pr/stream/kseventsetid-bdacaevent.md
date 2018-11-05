@@ -36,9 +36,9 @@ Each event in this event set corresponds to a property in the KSPROPSETID\_BdaCA
 
 [KSPROPSETID\_BdaCA](kspropsetid-bdaca.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ In addition to providing the user interface, the vendor should provide property 
 
 The Multimedia applet in Control Panel passes a data object to the property pages by calling [**IPropertyPage::SetObjects**](https://msdn.microsoft.com/library/windows/desktop/ms678529). The vendor's property page object can call [**IDataObject::GetData**](https://msdn.microsoft.com/library/windows/desktop/ms678431) with the medium type specified as TYMED\_HGLOBAL. This call creates a new handle to the vendor's GFX filter. The vendor's property page objects can use this handle to access the GFX filter's [KS properties, events, and methods](https://msdn.microsoft.com/library/windows/hardware/ff567673). The property page object must make sure that the handle is eventually closed by calling [**CloseHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724211). For more information about **IDataObject::GetData** and **CloseHandle**, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

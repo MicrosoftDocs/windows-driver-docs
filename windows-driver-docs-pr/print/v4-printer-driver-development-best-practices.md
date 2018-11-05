@@ -22,9 +22,9 @@ This section discusses the following topics:
 
 For more information about printer driver development best practices, see [Best Practices Guide for Developing Printer Drivers](https://msdn.microsoft.com/library/windows/hardware/gg463348.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

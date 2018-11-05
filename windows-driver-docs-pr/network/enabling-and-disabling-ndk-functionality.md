@@ -26,7 +26,7 @@ After the miniport driver is installed, administrators can update the **\*Networ
 
 **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
- 
+ 
 
 ## When to enable or disable NDK functionality
 
@@ -51,9 +51,9 @@ The **NetEventNDKDisable** PnP event triggers NDIS and upper layer drivers to st
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ If the **DriverEntry** or *Reinitialize* routine called [**IoGetConfigurationInf
 
 Before it returns control, an *Unload* routine also is responsible for freeing any other driver-allocated resources that have not yet been freed by other driver routines.
 
- 
+ 
 
- 
+ 
 
 
 

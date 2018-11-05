@@ -73,9 +73,9 @@ The capture driver should:
 
 The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ This section describes the scanner elements of the Web Services for Devices (WSD
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

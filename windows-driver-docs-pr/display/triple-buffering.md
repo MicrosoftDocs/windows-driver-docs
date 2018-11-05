@@ -30,9 +30,9 @@ The following is a brief explanation of flipping and blitting in a triple-buffer
 
 The DirectDraw front buffer object can now change **fpVidMem** (the display memory pointer) to make the surface at 22 the primary surface. Because no flip is pending, the display pointers are exchanged (see the bottom half of the preceding figure), and the flip status is set to **TRUE**. The front buffer now points to surface pixel memory 22, the back buffer points to surface pixel memory 33, and the third buffer object points to surface pixel memory 11 (the old primary surface). Unlike with double buffering, DirectDraw is free to write to the back buffer at this time. In other words, DirectDraw can write to surface pixel memory 33 because no flip is pending. This circular flipping process continues endlessly to provide smooth animation and faster game play and video playback for applications that use DirectDraw.
 
- 
+ 
 
- 
+ 
 
 
 

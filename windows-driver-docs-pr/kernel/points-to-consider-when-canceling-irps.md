@@ -76,9 +76,9 @@ If a device driver maintains state information about cancelable IRPs that variou
 
 For more information, see [Synchronization Techniques](synchronization-techniques.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ The preceding code example results in the following two queries. Recall that an 
 \Printer.Finishing.OutputBins.BBB:Level
 ```
 
- 
+ 
 
- 
+ 
 
 
 

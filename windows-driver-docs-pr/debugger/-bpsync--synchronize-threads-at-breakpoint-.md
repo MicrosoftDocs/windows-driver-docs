@@ -57,7 +57,7 @@ Allows other threads to continue executing when one thread has reached a breakpo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ The temporary removal of breakpoints is a normal aspect of debugger operation. W
 
 Note that if you use **.bpsync 1**, there is a risk of deadlocks among the threads that have been frozen.
 
- 
+ 
 
- 
+ 
 
 
 

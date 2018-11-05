@@ -65,7 +65,7 @@ The Plug and Play (PnP) device IDs of the hardware devices that expose the rende
 \[REG\_SZ\]
 The reference string that is used by the hardware device to call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) when registering the rendering or capture device interface through which this GFX filter is managed.
 
- 
+ 
 
 The *GfxAutoLoadInst* key should also contain a subkey that is named **UserInterface\\CLSID**. This subkey contains the information that the operating system needs to identify the vendor's GFX user interface. The subkey's value is shown in the table below.
 
@@ -77,13 +77,13 @@ Description
 \[REG\_SZ\]
 String representation of the CLSID of the COM object that implements the GFX-specific user interface.
 
- 
+ 
 
 Given the registry information that is described in the previous tables, the operating system can find the device interfaces that it needs to load the hardware-specific GFX filter.
 
- 
+ 
 
- 
+ 
 
 
 

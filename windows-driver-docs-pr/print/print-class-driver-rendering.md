@@ -48,7 +48,7 @@ PrintPreferences=FAapp.exe,{GUID2}
 > [!NOTE]
 > The **RequiredClass** directive cannot be used by a class driver. When you use **RequiredClass**, you should avoid file name collisions between the printer driver and the print class driver to which you're linking. Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.
 
- 
+ 
 For more information about v4 printer driver manifest directives, see [V4 Driver Manifest](v4-driver-manifest.md).
 
 ## Related topics

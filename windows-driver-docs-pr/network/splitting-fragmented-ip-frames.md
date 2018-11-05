@@ -23,9 +23,9 @@ If a fragmented IPv6 frame does not contain the upper-layer-protocol header, the
 
 For more information about splitting frames at the beginning of the upper-layer-protocol header, see [Splitting Frames at the Beginning of the Upper-Layer-Protocol Headers](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md).
 
- 
+ 
 
- 
+ 
 
 
 

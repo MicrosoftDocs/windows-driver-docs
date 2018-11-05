@@ -17,9 +17,9 @@ The Microsoft DirectX graphics kernel subsystem supplies an identical fence iden
 
 -   The driver uses the fence identifier passed to *DxgkDdiSubmitCommand* to write into the ring buffer, which is the buffer where DMA buffers are queued for execution by the graphics processing unit (GPU) (most GPU types use a DMA buffer queuing model).
 
- 
+ 
 
- 
+ 
 
 
 

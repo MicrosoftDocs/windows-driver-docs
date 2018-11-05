@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available fra
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566041)</p></td>
-<td><p>[<strong>KSMULTIPLE_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563441) array</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566041" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566041)"><strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563441)"><strong>KSMULTIPLE_ITEM</strong></a> array</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSMULTIPLE\_ITEM array that describes available frame rates in 100-nanosecond units.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566041)
 
- 
+ 
 
- 
+ 
 
 
 

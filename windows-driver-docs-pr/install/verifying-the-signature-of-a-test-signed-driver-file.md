@@ -41,9 +41,9 @@ For example, the following command verifies the embedded signature in *Toaster.s
 SignTool verify /v /pa amd64\toaster.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

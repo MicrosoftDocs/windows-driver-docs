@@ -107,7 +107,7 @@ The v4 driver INF requires that **DestinationDir** is specified for all files in
 </tbody>
 </table>
 
- 
+ 
 
 ## INF Restrictions
 
@@ -154,7 +154,7 @@ V4 print drivers must not define other printer-specific directives or keywords c
 | UpdateIniFields             | Directive          |
 | UpdateInis                  | Directive          |
 
- 
+ 
 
 **NTPrint References**. NTPrint references are made in the manifest file. The INF file does not require any information about the NTPrint references in its DDInstall, CopyFiles, or SourceDisksFiles sections.
 
@@ -162,9 +162,9 @@ V4 print drivers must not define other printer-specific directives or keywords c
 
 For information about how to create an INF file for a basic v4 printer driver, see [Building a basic v4 Printer Driver](building-a-basic-v4-printer-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -69,7 +69,7 @@ The following table describes the valid values for the **WIA\_IPS\_JOB\_SEPARATO
 </tbody>
 </table>
 
- 
+ 
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
@@ -89,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ By using a common schema to describe print features and properties, applications
 
 The Print Schema is documented in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

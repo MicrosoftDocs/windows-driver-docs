@@ -25,9 +25,9 @@ An [**HwScsiDisableInterruptsCallback**](https://msdn.microsoft.com/library/wind
 
 Note that this routine must execute as quickly as possible to avoid using I/O operations for other devices in the machine. Consequently, an *HwScsiDisableInterruptsCallback* must do no more than reenable interrupts on the HBA before it returns control.
 
- 
+ 
 
- 
+ 
 
 
 

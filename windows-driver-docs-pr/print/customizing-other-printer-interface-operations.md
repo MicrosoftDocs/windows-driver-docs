@@ -29,9 +29,9 @@ A UI plug-in can optionally implement any of the following IPrintOemUI methods:
 
 The methods are equivalent to similarly named functions exported by the user-mode [printer interface DLL](printer-interface-dll.md) that is used by Unidrv and Pscript5. These customization methods do not replace the equivalent functions in the driver's printer interface DLL. In each case, the printer interface DLL function is called first, and then the driver calls the plug-in's customization method.
 
- 
+ 
 
- 
+ 
 
 
 

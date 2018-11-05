@@ -41,9 +41,9 @@ Note that the maximum transfer length is limited by the number of [map registers
 
 After your driver creates and initializes a DMA transaction, the driver must [start the transaction](starting-a-dma-transaction.md).
 
- 
+ 
 
- 
+ 
 
 
 

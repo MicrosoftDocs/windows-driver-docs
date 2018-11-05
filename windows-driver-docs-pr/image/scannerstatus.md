@@ -46,19 +46,19 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveConditions</strong>](activeconditions.md)</p></td>
+<td><p><a href="activeconditions.md" data-raw-source="[&lt;strong&gt;ActiveConditions&lt;/strong&gt;](activeconditions.md)"><strong>ActiveConditions</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ConditionHistory</strong>](conditionhistory.md)</p></td>
+<td><p><a href="conditionhistory.md" data-raw-source="[&lt;strong&gt;ConditionHistory&lt;/strong&gt;](conditionhistory.md)"><strong>ConditionHistory</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerCurrentTime</strong>](scannercurrenttime.md)</p></td>
+<td><p><a href="scannercurrenttime.md" data-raw-source="[&lt;strong&gt;ScannerCurrentTime&lt;/strong&gt;](scannercurrenttime.md)"><strong>ScannerCurrentTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerState</strong>](scannerstate.md)</p></td>
+<td><p><a href="scannerstate.md" data-raw-source="[&lt;strong&gt;ScannerState&lt;/strong&gt;](scannerstate.md)"><strong>ScannerState</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -77,7 +77,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementData Element for ScannerElements</strong>](elementdata-for-scannerelements-element.md)</p></td>
+<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData Element for ScannerElements&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData Element for ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,9 +97,9 @@ There are no attributes.
 
 [**ScannerStateReasons**](scannerstatereasons.md)
 
- 
+ 
 
- 
+ 
 
 
 

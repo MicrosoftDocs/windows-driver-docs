@@ -42,9 +42,9 @@ UMDF drivers can use the following methods to retrieve or modify [device interfa
 
 To retrieve or modify a device interface property, a KMDF driver must call [**IoGetDeviceInterfacePropertyData**](https://msdn.microsoft.com/library/windows/hardware/hh439313) or [**IoSetDeviceInterfacePropertyData**](https://msdn.microsoft.com/library/windows/hardware/hh439388) directly.
 
- 
+ 
 
- 
+ 
 
 
 

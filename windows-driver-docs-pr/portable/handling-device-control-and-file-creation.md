@@ -18,13 +18,13 @@ The following table describes the methods that are found in these modules.
 | **IQueueCallbackCreate::OnCreateFile**               | Opens the device as a result of an application that calls the Win32 **CreateFile** function.                  |
 | **IQueueCallbackDeviceIoControl::OnDeviceIoControl** | Performs a device operation as a result of an application that calls the **DeviceIOControl** function.        |
 
- 
+ 
 
 Refer to the [UMDF](http://go.microsoft.com/fwlink/p/?linkid=153678) documentation for a description of each interface and its methods.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ The NT-based operating system **ScsiPortNotification** routine calls the *HwScsi
 
 See [IRQL](https://msdn.microsoft.com/library/windows/hardware/ff551779) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

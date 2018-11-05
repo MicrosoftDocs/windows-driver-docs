@@ -44,13 +44,13 @@ The **KSPROPERTY\_TELEPHONY\_CALLINFO** property is used to retrieve current cal
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSTELEPHONY_CALLINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/mt169884)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt169884" data-raw-source="[&lt;strong&gt;KSTELEPHONY_CALLINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt169884)"><strong>KSTELEPHONY_CALLINFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type [**KSTELEPHONY\_CALLINFO**](https://msdn.microsoft.com/library/windows/hardware/mt169884), which specifies the state and the type of the phone call.
 
@@ -86,9 +86,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

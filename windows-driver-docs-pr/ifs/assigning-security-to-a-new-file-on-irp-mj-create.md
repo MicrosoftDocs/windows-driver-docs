@@ -107,9 +107,9 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
 
 Note that the logic of constructing the initial security descriptor (understanding inheritance, for example) is not handled within the file system. This is in keeping with the simple model for handling security descriptors within the file systems layer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ This section describes the PCMCIA\_INTERFACE\_STANDARD interface that Microsoft 
 
 [Special Considerations for PCMCIA Memory Card Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538196)
 
- 
+ 
 
- 
+ 
 
 
 

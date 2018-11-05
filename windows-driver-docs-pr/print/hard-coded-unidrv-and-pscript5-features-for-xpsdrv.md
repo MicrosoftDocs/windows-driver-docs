@@ -24,9 +24,9 @@ The hard-coded features are disabled in the following manner:
 
 The remaining topics in this section further describe the changes in Unidrv/PScript5-based XPSDrv in the preceding areas to disable hard-coded features.
 
- 
+ 
 
- 
+ 
 
 
 

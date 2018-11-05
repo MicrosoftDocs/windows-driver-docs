@@ -35,9 +35,9 @@ For example, a set of mappings to be revoked might contain a mapping that has ju
 
 For a working code example, see the Ac97 sample driver in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

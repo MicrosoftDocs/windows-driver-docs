@@ -61,7 +61,7 @@ This message is sent from a Remote NDIS device to a host to indicate a change in
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -101,7 +101,7 @@ In the specific case where this message is sent in response to a host message th
 </tbody>
 </table>
 
- 
+ 
 
 If the error condition was caused by an Remote NDIS message (for example, the device can't recognize a particular RNDIS message), then the device should append the original message at the end of the status message defined above.
 
@@ -131,9 +131,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

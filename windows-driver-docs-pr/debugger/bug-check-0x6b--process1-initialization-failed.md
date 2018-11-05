@@ -57,7 +57,7 @@ The following parameters appear on the blue screen.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +66,9 @@ Any part of the disk subsystem can cause the PROCESS1\_INITIALIZATION\_FAILED bu
 
 This bug check can also be caused by a missing file from the boot partition or by a driver that a user accidentally disabled in the **Drivers** tab.
 
- 
+ 
 
- 
+ 
 
 
 

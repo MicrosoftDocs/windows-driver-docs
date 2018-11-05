@@ -19,9 +19,9 @@ The following figure shows the flow of operations that occur when TMM restores a
 
 ![diagram illustrating restoring an existing monitor configuration](images/tmm-existconfig.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ In a PnP environment, drivers and applications need to react to changes in the c
 
 The PnP manager provides a mechanism for drivers and applications to be notified when certain PnP events occur. This section describes how to use PnP notification in kernel-mode code. Writers of user-mode applications should see the Microsoft Windows SDK documentation For information about the **RegisterDeviceNotification** function and related functions.
 
- 
+ 
 
- 
+ 
 
 
 

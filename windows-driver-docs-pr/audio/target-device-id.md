@@ -23,9 +23,9 @@ Just after instantiating a GFX filter, but before restoring the filter's persist
 
 If a GFX filter detects that the user has connected it to a render or capture device that it does not support (for example, a device made by another vendor), the GFX filter can choose not to perform global-effects processing on that device's stream. In this case, however, the GFX filter should simply pass the stream through unchanged. Under no circumstances should the GFX filter attempt to block or degrade the stream.
 
- 
+ 
 
- 
+ 
 
 
 

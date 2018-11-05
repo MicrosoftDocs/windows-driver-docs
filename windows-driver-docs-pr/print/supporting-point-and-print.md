@@ -23,9 +23,9 @@ This section provides the following topics that describe Windows 2000 and later 
 
 [Supporting Point and Print During Printer Connections](supporting-point-and-print-during-printer-connections.md)
 
- 
+ 
 
- 
+ 
 
 
 

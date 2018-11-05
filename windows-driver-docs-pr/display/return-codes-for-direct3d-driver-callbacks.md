@@ -45,11 +45,11 @@ A function in a Direct3D driver must return one of the two return codes: DDHAL\_
 </tr>
 <tr class="odd">
 <td align="left"><p>DDHAL_DRIVER_HANDLED</p></td>
-<td align="left"><p>The driver has performed the operation and returned a valid return code for that operation in the <strong>ddrval</strong> member of the structure passed to the driver's callback. If this code is D3D_OK, Direct3D proceeds with the function. Otherwise, Direct3D returns the error code provided by the driver and aborts the function.</p></td>
+<td align="left"><p>The driver has performed the operation and returned a valid return code for that operation in the <strong>ddrval</strong> member of the structure passed to the driver&#39;s callback. If this code is D3D_OK, Direct3D proceeds with the function. Otherwise, Direct3D returns the error code provided by the driver and aborts the function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DDHAL_DRIVER_NOTHANDLED</p></td>
-<td align="left"><p>The driver has no comment on the requested operation. If the driver is required to have implemented a particular callback, Direct3D reports an error condition. Otherwise, Direct3D handles the operation as if the driver callback had not been defined by executing the Direct3D device-independent implementation. Direct3D typically ignores any value returned in the <strong>ddrval</strong> member of that callback's parameter structure.</p></td>
+<td align="left"><p>The driver has no comment on the requested operation. If the driver is required to have implemented a particular callback, Direct3D reports an error condition. Otherwise, Direct3D handles the operation as if the driver callback had not been defined by executing the Direct3D device-independent implementation. Direct3D typically ignores any value returned in the <strong>ddrval</strong> member of that callback&#39;s parameter structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>D3DHAL_OUTOFCONTEXTS</p></td>
@@ -62,11 +62,11 @@ A function in a Direct3D driver must return one of the two return codes: DDHAL\_
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

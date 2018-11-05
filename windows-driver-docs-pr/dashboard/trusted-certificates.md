@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 Trusted certificates are used by Windows to validate the digital signature on a provisioning file delivered from either the mobile network operator’s webpage or from a captive portal during initial setup. This allows a user to purchase service before the mobile broadband app is installed.
 
- 
+ 
 
- 
+ 
 
 
 

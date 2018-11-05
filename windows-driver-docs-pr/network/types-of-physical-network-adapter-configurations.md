@@ -35,7 +35,7 @@ The Hyper-V extensible switch architecture supports the connection to a single e
 
     **Note**  To extensible switch extensions, an underlying LBFO team appears as a single virtual network adapter that is bound to the external network adapter.
 
-     
+     
 
 -   The external network adapter can be bound to the virtual miniport edge of an NDIS MUX intermediate driver. The MUX driver is bound to a team of one or more physical networks on the host. This configuration is known as an *extensible switch team*.
 
@@ -51,9 +51,9 @@ The Hyper-V extensible switch architecture supports the connection to a single e
 
 For more information on MUX drivers, see [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

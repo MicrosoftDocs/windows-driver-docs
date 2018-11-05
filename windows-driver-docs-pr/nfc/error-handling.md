@@ -28,9 +28,9 @@ This topic discusses error handling requirements for NFC clients.
 
 -   If the NFC client needs to trigger a user mode crash (for example, detecting a memory corruption), it is expected that the NFC client driver uses the WDF verifier APIs to trigger a crash using bug check codes in the reserved range for NFC client driver (see NfcCxBugCodes.h for more info). Because process-sharing is enabled by default, it is important the NFC client driver uses this mechanism only when absolutely required, otherwise it might bring down other drivers in the WUDF driver host process.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

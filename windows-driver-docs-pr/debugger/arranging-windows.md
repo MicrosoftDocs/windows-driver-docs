@@ -28,9 +28,9 @@ If you are using dual monitors, you can put the WinDbg window in one monitor and
 
 Some standard window arrangements for various debugging scenarios are included in the Debugging Tools for Windows package. For details on these arrangements, see [Using and Customizing WinDbg Themes](using-and-customizing-windbg-themes.md).
 
- 
+ 
 
- 
+ 
 
 
 

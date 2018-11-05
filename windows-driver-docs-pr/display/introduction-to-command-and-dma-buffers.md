@@ -33,9 +33,9 @@ A DMA buffer has the following characteristics:
 
 -   Before the GPU can read from a DMA buffer, the display miniport driver must page-lock the DMA buffer and map the DMA buffer through an aperture.
 
- 
+ 
 
- 
+ 
 
 
 

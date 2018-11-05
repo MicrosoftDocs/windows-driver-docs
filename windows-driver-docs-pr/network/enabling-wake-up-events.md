@@ -18,9 +18,9 @@ A protocol driver can send an [OID\_PNP\_ENABLE\_WAKE\_UP](https://msdn.microsof
 
 Before the miniport driver transitions to a low-power state (that is, before NDIS sends the miniport driver an OID\_PNP\_SET\_POWER request), NDIS sends the miniport driver an OID\_PNP\_ENABLE\_WAKE\_UP request to enable the network adapter's wake-up capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

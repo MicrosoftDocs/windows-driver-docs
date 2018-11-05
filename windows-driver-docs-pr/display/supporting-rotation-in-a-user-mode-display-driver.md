@@ -23,9 +23,9 @@ The following topics describe how a user-mode display driver supports rotation f
 
 [DirectX Runtime Behavior](directx-runtime-behavior.md)
 
- 
+ 
 
- 
+ 
 
 
 

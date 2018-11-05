@@ -66,9 +66,9 @@ For an activated POV hat, the direction should be represented as the angle, in d
 
 Because the poll routine call is the only positive indication that the device is still in use, minidrivers that use shared resources such as communications ports should keep track of the last time they were used. If usage time becomes significant , the minidrivers should stop to sample the device and free the resources in case the user has completed the device usage and is now trying to use the resource for another purpose. This is particularly important if there are occurrences of communications errors, because this could be an indication that the device is unplugged.
 
- 
+ 
 
- 
+ 
 
 
 

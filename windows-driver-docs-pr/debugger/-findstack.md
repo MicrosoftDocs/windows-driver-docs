@@ -64,7 +64,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,11 +82,11 @@ The following are some examples of the output from this extension:
 Thread 009, 2 frame(s) match
         * 06 03eaffac 771d9263 wininet!ICAsyncThread::SelectThread+0x22a
         * 07 03eaffb4 7c80b50b wininet!ICAsyncThread::SelectThreadWrapper+0xd
- 
+
 Thread 011, 2 frame(s) match
         * 04 03f6ffb0 771cda1d wininet!AUTO_PROXY_DLLS::DoThreadProcessing+0xa1
         * 05 03f6ffb4 7c80b50b wininet!AutoProxyThreadFunc+0xb
- 
+
 Thread 020, 6 frame(s) match
         * 18 090dfde8 771db73a wininet!CheckForNoNetOverride+0x9c
         * 19 090dfe18 771c5e4d wininet!InternetAutodialIfNotLocalHost+0x220
@@ -94,7 +94,7 @@ Thread 020, 6 frame(s) match
         * 21 090dfe98 771bcb2c wininet!CFsm_ParseUrlForHttp::RunSM+0x2b
         * 22 090dfeb0 771d734a wininet!CFsm::Run+0x39
         * 23 090dfee0 77f6ad84 wininet!CFsm::RunWorkItem+0x79
- 
+
 Thread 023, 9 frame(s) match
         * 16 0bd4fe00 771bd256 wininet!ICSocket::Connect_Start+0x17e
         * 17 0bd4fe0c 771bcb2c wininet!CFsm_SocketConnect::RunSM+0x42
@@ -105,7 +105,7 @@ Thread 023, 9 frame(s) match
         * 22 0bd4fe98 771bcb2c wininet!CFsm_OpenConnection::RunSM+0x33
         * 23 0bd4feb0 771d734a wininet!CFsm::Run+0x39
         * 24 0bd4fee0 77f6ad84 wininet!CFsm::RunWorkItem+0x79
- 
+
 0:023> !uext.findstack wininet!CFsm::Run 0
 Thread 020, 2 frame(s) match
 Thread 023, 3 frame(s) match
@@ -113,12 +113,11 @@ Thread 023, 3 frame(s) match
 0:023> !uext.findstack wininet!CFsm 0
 Thread 020, 3 frame(s) match
 Thread 023, 5 frame(s) match
- 
 ```
 
- 
 
- 
+
+
 
 
 

@@ -53,9 +53,9 @@ Any preview package submitted by the partner of a company will require the compa
 
 [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

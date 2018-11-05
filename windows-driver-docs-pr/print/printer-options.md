@@ -27,9 +27,9 @@ This section discusses GPD language support for both [standard options](standard
 
 Additional topics in this section include [Option Entry Format](option-entry-format.md), [Option Attributes](option-attributes.md), and [Option Constraints](option-constraints.md).
 
- 
+ 
 
- 
+ 
 
 
 

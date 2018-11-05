@@ -24,9 +24,9 @@ Mobile broadband accounts can be added or removed during the lifetime of the mob
 
 [Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-using-mobile-broadband-windows-runtime-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

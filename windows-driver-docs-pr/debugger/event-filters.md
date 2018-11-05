@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 **Note**   If more sophisticated event filtering is required, event callbacks can be used.
 
- 
+ 
 
 Event filters are divided into three categories.
 
@@ -78,7 +78,7 @@ Some specific filters take arguments that restrict which events the filter match
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 1.  The argument uses the [string wildcard syntax](string-wildcard-syntax.md) and is compared with the image name (ignoring path) when the event occurs. If the name of the module or process is not available, it is considered a match.
@@ -87,7 +87,7 @@ Some specific filters take arguments that restrict which events the filter match
 
 3.  The argument uses the string wildcard syntax and is compared with the debug output from the target. If the output is not known, it is considered a match.
 
- 
+ 
 
 ### <span id="index_and_exception_code"></span><span id="INDEX_AND_EXCEPTION_CODE"></span>Index and Exception Code
 
@@ -125,7 +125,7 @@ Each event filter has an index. The index is a number between zero and one less 
 </tbody>
 </table>
 
- 
+ 
 
 The indices for the specific event filters are found in the first table located in the topic [**DEBUG\_FILTER\_XXX**](https://msdn.microsoft.com/library/windows/hardware/ff541490). The index of the default exception filter (the first specific exception filter) is *SpecificEvents*. When an arbitrary exception filter is removed, the indices of the other arbitrary exception filters can change.
 
@@ -135,9 +135,9 @@ The exception filters are usually specified by exception code. However, some met
 
 When a system error occurs, the engine will break into the debugger or print the error to the output stream, if the error occurs at or below specified levels. These levels are returned by [**GetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff549215) and can be changed using [**SetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff556806).
 
- 
+ 
 
- 
+ 
 
 
 

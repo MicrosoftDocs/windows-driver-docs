@@ -31,9 +31,9 @@ This section presents a collection of typical audio configurations for rendering
 
 [Rendering Wave Content Using DirectSound Software and Hardware Buffers](rendering-wave-content-using-directsound-software-and-hardware-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

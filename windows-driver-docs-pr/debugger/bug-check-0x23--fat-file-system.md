@@ -55,7 +55,7 @@ The FAT\_FILE\_SYSTEM bug check has a value of 0x00000023. This indicates that a
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -73,9 +73,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

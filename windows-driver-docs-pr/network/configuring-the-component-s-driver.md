@@ -24,9 +24,9 @@ Alternatively, the notify object can call the Win32 [**CreateFile**](https://msd
 
 The notify object is not required to use **INetCfgPnpReconfigCallback**. But, if the notify object uses **INetCfgPnpReconfigCallback**, a user will not be required to reboot the operating system to cause configuration changes to take effect in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

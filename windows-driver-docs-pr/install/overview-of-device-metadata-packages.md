@@ -55,9 +55,9 @@ The *&lt;GUID&gt;* file prefix is a globally unique identifier (GUID) that is cr
 
 For more information, see [Building Device Metadata Packages](building-device-metadata-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

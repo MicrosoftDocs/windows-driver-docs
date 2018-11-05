@@ -24,7 +24,7 @@ For information about the boot parameters for DEP and PAE see the [**BCDEdit /se
 
 **Important**  DEP is a highly effective security feature that should not be disabled unless you have no alternative. The default settings for DEP and PAE are optimal for most systems. Do not change the default settings unless they interfere with essential processing tasks. This section is included to show you how to configure these features, but it should not be interpreted as a recommendation to change the default settings.
 
- 
+ 
 
 ### <span id="dep_and_pae_boot_parameters"></span><span id="DEP_AND_PAE_BOOT_PARAMETERS"></span>DEP and PAE Boot Parameters
 
@@ -50,9 +50,9 @@ The parameter combinations for each Windows operating system are summarized in t
 
 The following list describes the boot parameter combinations that can be used to configure DEP and PAE.
 
-**Note**   The optional **{***ID***}** is the GUID for the specific Windows boot loader boot entry that you want to configure. If you do not specify an **{***ID***}**, the command modifies the current operating system boot entry. For more information, see the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command .
+**Note**   The optional **{**<em>ID</em>**}** is the GUID for the specific Windows boot loader boot entry that you want to configure. If you do not specify an **{**<em>ID</em>**}**, the command modifies the current operating system boot entry. For more information, see the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command .
 
- 
+ 
 
 <table>
 <colgroup>
@@ -115,11 +115,11 @@ The following list describes the boot parameter combinations that can be used to
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

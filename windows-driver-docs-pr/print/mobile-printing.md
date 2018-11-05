@@ -14,9 +14,9 @@ The topics in this section describe the requirements to enable printing from Win
 
 [WS-Discovery Mobile Printing Support](ws-discovery-mobile-printing-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

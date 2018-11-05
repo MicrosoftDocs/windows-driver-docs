@@ -27,9 +27,9 @@ Before freeing these pools, the driver should ensure that all outstanding send o
 
 For more information about NDIS 6.0 data buffer management, see [Protocol Driver Buffer Management](protocol-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

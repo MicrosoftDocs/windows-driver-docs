@@ -40,9 +40,9 @@ The [**EXT\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff54450
 
 The [**EXT\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff544508) class can contain a number of methods that use the **ExtProvideValueMethod** prototype. The methods can be used by the engine to evaluate some pseudo-registers provided by the extension.
 
- 
+ 
 
- 
+ 
 
 
 

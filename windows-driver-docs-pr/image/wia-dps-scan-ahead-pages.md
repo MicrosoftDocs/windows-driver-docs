@@ -25,7 +25,7 @@ The WIA\_DPS\_SCAN\_AHEAD\_PAGES property contains a value that indicates whethe
 
 **Note**  This property is now obsolete. Use [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md) instead.
 
- 
+ 
 
 Property Type: VT\_I4
 
@@ -61,9 +61,9 @@ Requirements
 
 [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md)
 
- 
+ 
 
- 
+ 
 
 
 

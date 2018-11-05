@@ -45,12 +45,12 @@ The audio driver for the offload-capable hardware solution uses **KSPROPERTY\_AU
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p>[<strong>KSAUDIOENGINE_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450862)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450862" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450862)"><strong>KSAUDIOENGINE_DESCRIPTOR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type **KSAUDIOENGINE\_DESCRIPTOR** and it indicates the static properties of the audio engine node.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
- 
+ 
 
- 
+ 
 
 
 

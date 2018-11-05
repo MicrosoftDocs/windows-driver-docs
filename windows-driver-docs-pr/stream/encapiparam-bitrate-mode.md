@@ -42,7 +42,7 @@ The ENCAPIPARAM\_BITRATE property is used to describe the encoding mode of the d
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a VT\_I4 value specified in the **PropertyItem.Values** member of the [**KSPROPERTY\_SET**](https://msdn.microsoft.com/library/windows/hardware/ff565617) structure with a discrete list of supported values out of the [**VIDEOENCODER\_BITRATE\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff568695) enumeration.
 
@@ -60,9 +60,9 @@ The minidriver is required to either provide a static **PropertyItem.Values** de
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff568695)
 
- 
+ 
 
- 
+ 
 
 
 

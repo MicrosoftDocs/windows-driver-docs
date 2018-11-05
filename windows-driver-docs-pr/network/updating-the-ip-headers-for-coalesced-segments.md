@@ -43,11 +43,11 @@ When finalizing a single coalescing unit (SCU), a receive segment coalescing (RS
 </tr>
 <tr class="even">
 <td align="left"><p><strong>ECN bits</strong></p></td>
-<td align="left"><p>See Exception 8 in [Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md). Datagrams should be coalesced if they all have the same values for the ECN bits.</p></td>
+<td align="left"><p>See Exception 8 in <a href="exception-conditions-that-terminate-coalescing.md" data-raw-source="[Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md)">Exception Conditions that Terminate Coalescing</a>. Datagrams should be coalesced if they all have the same values for the ECN bits.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Total Length</strong></p></td>
-<td align="left"><p>The value of this field must be recomputed every time a new segment with non-zero TCP payload length is coalesced into an existing SCU. See [Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md) for special cases that arise from the value in this field.</p></td>
+<td align="left"><p>The value of this field must be recomputed every time a new segment with non-zero TCP payload length is coalesced into an existing SCU. See <a href="exception-conditions-that-terminate-coalescing.md" data-raw-source="[Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md)">Exception Conditions that Terminate Coalescing</a> for special cases that arise from the value in this field.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Identification</strong></p></td>
@@ -87,7 +87,7 @@ When finalizing a single coalescing unit (SCU), a receive segment coalescing (RS
 </tbody>
 </table>
 
- 
+ 
 
 ## Updating IPv6 header fields for coalesced segments
 
@@ -139,11 +139,11 @@ When finalizing a single coalescing unit (SCU), a receive segment coalescing (RS
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

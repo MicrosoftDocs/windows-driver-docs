@@ -38,9 +38,9 @@ Drivers should set the DDCAPS2\_TEXMANINNONLOCALVIDMEM flag as much as possible 
 
 The remainder of this section discusses the steps necessary to modify your existing driver to support AGP memory using DirectDraw nonlocal display memory features.
 
- 
+ 
 
- 
+ 
 
 
 

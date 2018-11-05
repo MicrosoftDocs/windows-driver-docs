@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_PARAMETERS\_REQ
 |--------|
 | Port   |
 
- 
+ 
 
 This indication can be sent by the adapter when it finds a BSS entry that is a candidate for association based on the current settings. Upon receiving this indication, the host checks if the association parameters are available, and if so, sends them with [OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS](oid-wdi-set-association-parameters.md).
 
@@ -30,7 +30,7 @@ This indication can be sent by the adapter when it finds a BSS entry that is a c
 | [**WDI\_TLV\_ASSOCIATION\_PARAMETERS\_REQUESTED\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926131) |                                |          | The list of requested association parameters. |
 | [**WDI\_TLV\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926162)                                                           | X                              | X        | The list of BSSIDs.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 
 [OID\_WDI\_TASK\_CONNECT](oid-wdi-task-connect.md)
 
- 
+ 
 
- 
+ 
 
 
 

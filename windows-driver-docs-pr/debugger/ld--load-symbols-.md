@@ -55,7 +55,7 @@ Changes the name selected for the match. By default the module name is matched, 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ The **ld** command, on the other hand, forces all symbols for the specified modu
 
 For more information about deferred (lazy) symbol loading, see [Deferred Symbol Loading](deferred-symbol-loading.md). For more information about other symbol options, see [Setting Symbol Options](symbol-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

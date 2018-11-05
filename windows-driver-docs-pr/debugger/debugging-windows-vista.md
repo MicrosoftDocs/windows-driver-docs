@@ -16,7 +16,7 @@ If you want to download only Debugging Tools for Windows, install the SDK, and, 
 
 **Note**  You might have to uninstall Microsoft Visual C++ 2010 Redistributable components before you install the SDK. For more information, see [the Microsoft Support website](https://support.microsoft.com/kb/2717426).
 
- 
+ 
 
 ## <span id="DEBUGGING_TOOLS__WINDBG__KD__CDB__NTSD__FOR_WINDOWS_WINDOWS_VISTA"></span>Debugging Tools (WinDbg, KD, CDB, NTSD) for Windows Vista
 
@@ -26,14 +26,14 @@ The Windows 7 Debugging Tools for Windows can run on x86-based or x64-based proc
 |               |                     |
 |---------------|---------------------|
 | Windows Vista | Windows Server 2008 |
- 
+ 
 
 If the target computer is running a more recent version of Windows, get the current [Debugging Tools for Windows](index.md).
 
 
- 
+ 
 
- 
+ 
 
 
 

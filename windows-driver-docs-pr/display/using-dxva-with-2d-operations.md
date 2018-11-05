@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 DirectX 9.0 and later drivers use the D3DDP2OP\_BLT operation code to perform blits between [DirectX Video Acceleration](directx-video-acceleration.md) (DXVA) surfaces. Therefore, if the runtime detects a DirectX 9.0 or later driver, the runtime must call the driver's [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) function to create any DXVA (or 2D-only) surface.
 
- 
+ 
 
- 
+ 
 
 
 

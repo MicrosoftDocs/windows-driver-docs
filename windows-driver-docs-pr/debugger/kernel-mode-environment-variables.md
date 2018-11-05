@@ -30,7 +30,7 @@ The following table lists the environment variables that are used only in kernel
 <tbody>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUG_PORT = <em>ComPort</em></p></td>
-<td align="left"><p>Specifies the COM port to be used in a kernel connection. For details, see [Getting Set Up for Debugging](getting-set-up-for-debugging.md).</p></td>
+<td align="left"><p>Specifies the COM port to be used in a kernel connection. For details, see <a href="getting-set-up-for-debugging.md" data-raw-source="[Getting Set Up for Debugging](getting-set-up-for-debugging.md)">Getting Set Up for Debugging</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_DEBUG_BAUD_RATE = <em>BaudRate</em></p></td>
@@ -52,9 +52,9 @@ The following table lists the environment variables that are used only in kernel
 <td align="left"><p>KDQUIET =<em>Anything</em></p></td>
 <td align="left"><p>If KDQUIET is defined, the debugger will run in <em>quiet mode</em>. Quiet mode involves three distinct effects:</p>
 <p>1. The debugger does not display messages each time an extension DLL is loaded or unloaded.</p>
-<p>2. The <strong>[r (Registers)](r--registers-.md)</strong> command no longer requires an equal sign in its syntax.</p>
+<p>2. The <strong><a href="r--registers-.md" data-raw-source="[r (Registers)](r--registers-.md)">r (Registers)</a></strong> command no longer requires an equal sign in its syntax.</p>
 <p>3. The debugger will not display a warning message when breaking into the target computer.</p>
-<p>Quiet mode can also be controlled by using the <strong>[sq (Set Quiet Mode)](sq--set-quiet-mode-.md)</strong> command.</p></td>
+<p>Quiet mode can also be controlled by using the <strong><a href="sq--set-quiet-mode-.md" data-raw-source="[sq (Set Quiet Mode)](sq--set-quiet-mode-.md)">sq (Set Quiet Mode)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
@@ -68,20 +68,20 @@ _NT_DEBUG_CACHE_SIZE
 <p>NOEXTWARNING tells the debugger not to output a warning when it cannot find an extension command.</p>
 <p>NOVERSIONCHECK tells the debugger not to check the version of debugger extensions.</p>
 <p></p>
-<p>These options can be modified or displayed by using the <strong>[so (Set Kernel Options)](so--set-kernel-debugging-options-.md)</strong> command.</p></td>
+<p>These options can be modified or displayed by using the <strong><a href="so--set-kernel-debugging-options-.md" data-raw-source="[so (Set Kernel Options)](so--set-kernel-debugging-options-.md)">so (Set Kernel Options)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_KD_FILES = <em>MapFile</em></p></td>
-<td align="left"><p>Specifies a driver replacement map file. For details and for other methods of controlling driver replacement, see [Mapping Driver Files](mapping-driver-files.md).</p></td>
+<td align="left"><p>Specifies a driver replacement map file. For details and for other methods of controlling driver replacement, see <a href="mapping-driver-files.md" data-raw-source="[Mapping Driver Files](mapping-driver-files.md)">Mapping Driver Files</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

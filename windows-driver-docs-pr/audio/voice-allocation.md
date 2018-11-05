@@ -116,15 +116,15 @@ The following table contains an example sequence of voice allocations that illus
 </tbody>
 </table>
 
- 
+ 
 
 Note that DirectSound buffers are actually allocated one by one, and are grouped together in the table for the purpose of readability.
 
 Immediately after a synthesizer pin instance is created, no voices should be allocated based on it. Shortly after creation, a [**KSPROPERTY\_SYNTH\_PORTPARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff537405) property item is received. This property item indicates, among other things, the number of voices that are to be associated with this instance. This item also gives the miniport driver the chance to report back the actual new size of the dynamic pool in case all requested voices could not be allocated.
 
- 
+ 
 
- 
+ 
 
 
 

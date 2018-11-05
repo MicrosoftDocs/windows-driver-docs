@@ -25,9 +25,9 @@ If you are careful to avoid situations that cause the unsuccessful return values
 
 If your driver provides a [*CompletionRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff540745) callback function for a request object that it reuses, the driver must call [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) after calling [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026).
 
- 
+ 
 
- 
+ 
 
 
 

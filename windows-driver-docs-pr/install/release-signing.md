@@ -100,7 +100,7 @@ The following describes the parameters that are used in the [**Pvk2Pfx**](https:
 
 **Important**  You should protect your pvk and pfx files with strong passwords.
 
- 
+ 
 
 ## Installing a .pfx File in the Personal Certificate Store
 
@@ -314,9 +314,9 @@ Number of files successfully Verified: 1 Number of warnings: 0 Number of errors:
 
 Again, note the presence of Microsoft Code Verification Root in the certificate chain.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 This section lists reserved device driver interfaces (DDIs) in D3dkmdt.h.
 
- 
+ 
 
- 
+ 
 
 
 

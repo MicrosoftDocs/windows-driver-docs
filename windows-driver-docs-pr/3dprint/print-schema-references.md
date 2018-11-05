@@ -74,9 +74,9 @@ Biron, Paul V. and Ashok Malhotra (editors). "XML Schema Part 2: Datatypes," Sec
 
 [http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/](http://go.microsoft.com/fwlink/p/?LinkId=780802)
 
- 
+ 
 
- 
+ 
 
 
 

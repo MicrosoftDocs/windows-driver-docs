@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 
 
-The **e\*** commands enter into memory the values that you specify.
+The **e\\*** commands enter into memory the values that you specify.
 
 This command should not be confused with the [**~E (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier.
 
@@ -64,7 +64,7 @@ Specifies a string to be entered into memory. The **ea** and **eza** commands wi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,7 +89,7 @@ This command exists in the following forms. The second characters of the **ed** 
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>e</strong></p></td>
-<td align="left"><p>This enters data in the same format as the most recent <strong>e*</strong> command. (If the most recent <strong>e*</strong> command was <strong>ea</strong>, <strong>eza</strong>, <strong>eu</strong>, or <strong>ezu</strong>, the final parameter will be <em>String</em> and may not be omitted.)</p></td>
+<td align="left"><p>This enters data in the same format as the most recent <strong>e<em></strong> command. (If the most recent <strong>e</em></strong> command was <strong>ea</strong>, <strong>eza</strong>, <strong>eu</strong>, or <strong>ezu</strong>, the final parameter will be <em>String</em> and may not be omitted.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>ea</strong></p></td>
@@ -113,7 +113,7 @@ This command exists in the following forms. The second characters of the **ed** 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ep</strong></p></td>
-<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>ed</strong> or <strong>eq</strong>, depending on whether the target computer's processor architecture is 32-bit or 64-bit, respectively.</p></td>
+<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>ed</strong> or <strong>eq</strong>, depending on whether the target computer&#39;s processor architecture is 32-bit or 64-bit, respectively.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>eq</strong></p></td>
@@ -138,13 +138,13 @@ This command exists in the following forms. The second characters of the **ed** 
 </tbody>
 </table>
 
- 
+ 
 
 Numeric values will be interpreted as numbers in the current radix (16, 10, or 8). To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command. The default radix can be overridden by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
 
 **Note**   The default radix behaves differently when C++ expressions are being used. See [Evaluating Expressions](evaluating-expressions.md) for details.
 
- 
+ 
 
 When entering byte values with the **eb** command, you can use single straight quotation marks to specify characters. If you want to include multiple characters, each must be surrounded with its own quotation marks. This allows you to enter a character string that is not terminated by a null character. For example:
 
@@ -162,9 +162,9 @@ If you omit the *Values* parameter, you will be prompted for input. The address 
 
 -   Exit from the command by pressing ENTER.
 
- 
+ 
 
- 
+ 
 
 
 

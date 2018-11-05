@@ -61,9 +61,9 @@ The 'loop' parameter controls looping at the *largest possible scope*; the entir
 
 When running in stress test mode, you also need to specify the "/inproc" switch - which means that all stress execution runs in the Te.exe process. This restriction removes the need for TAEF to launch and maintain the separate sandbox process for execution, thereby minimizing test failures due to failed memory allocations.
 
- 
+ 
 
- 
+ 
 
 
 

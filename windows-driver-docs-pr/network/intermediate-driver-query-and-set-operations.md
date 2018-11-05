@@ -26,7 +26,7 @@ An intermediate driver can also receive query and set requests from higher level
 
 **Note**  The behavior of intermediate drivers can also be affected by the power state of the virtual miniport and the underlying miniport driver. To learn more about the effects of the power state on query and set operations, see [Handling a Set Power Request](handling-a-set-power-request.md).
 
- 
+ 
 
 The Network Reference section contains information about all of the general, connection-oriented, nonmedia-specific OIDs and about required media-specific OIDs of interest to intermediate driver developers.
 
@@ -36,9 +36,9 @@ The following topics provide additional information about issuing and responding
 
 [Responding to Sets and Queries in an Intermediate Driver](responding-to-sets-and-queries-in-an-intermediate-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

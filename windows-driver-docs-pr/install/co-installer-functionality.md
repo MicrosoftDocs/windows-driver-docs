@@ -30,9 +30,9 @@ When called for postprocessing, a co-installer must check the **InstallResult** 
 
 Co-installers can sometimes obtain information from the user. Such information might include additional device parameters, or whether the user wants device-specific applications installed. Co-installers can create user interfaces by providing "finish install" pages and device property pages. No other form of user interface is allowed. Windows displays "finish install" pages at the end of the installation (within the Found New Hardware or Hardware Update). Device Manager displays property pages, and allows users with administrator privilege to modify parameters displayed on these pages.
 
- 
+ 
 
- 
+ 
 
 
 

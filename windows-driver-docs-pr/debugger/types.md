@@ -54,9 +54,9 @@ Typed data is described by instances of the [**DEBUG\_TYPED\_DATA**](https://msd
 
 For details on output callbacks, see [Input and Output](using-input-and-output.md).
 
- 
+ 
 
- 
+ 
 
 
 

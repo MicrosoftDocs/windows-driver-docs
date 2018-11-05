@@ -23,9 +23,9 @@ To register its physical miniport driver, a miniport-intermediate driver calls t
 
 For each virtual or physical device instance of a miniport-intermediate driver, if the **IMMiniport** registry key is set to **DWORD:0x0000001**, NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function that the driver registered for the virtual device. Otherwise, NDIS calls the driver's *MiniportInitializeEx* function that the driver registered for the physical device.
 
- 
+ 
 
- 
+ 
 
 
 

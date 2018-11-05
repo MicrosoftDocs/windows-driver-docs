@@ -31,9 +31,9 @@ NDIS Quality of Service (QoS) traffic classes are defined through OID method req
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ To ensure smooth operation of the PnP subsystem, a PnP notification callback rou
 
 4.  A notification callback routine should be paged code.
 
- 
+ 
 
- 
+ 
 
 
 

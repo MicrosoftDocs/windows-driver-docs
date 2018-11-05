@@ -38,9 +38,9 @@ For related information about the Print Ticket and Print Capabilities technologi
 
 [Methods for Print Ticket Providers and Consumers](https://msdn.microsoft.com/library/windows/hardware/ff556547)
 
- 
+ 
 
- 
+ 
 
 
 

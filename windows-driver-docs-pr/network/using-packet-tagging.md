@@ -48,9 +48,9 @@ A callout driver can retrieve the context for a packet outside of the [*FWPS\_NE
 
 [NDIS Filter Drivers](ndis-filter-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

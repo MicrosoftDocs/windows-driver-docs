@@ -49,11 +49,11 @@ After the user-mode display driver calls the Microsoft Direct3D runtime's [**pfn
 **Note**   After a swizzled allocation is under CPU access through a CPU aperture, it can still be evicted before the user-mode display driver terminates the CPU access. This case is handled as in number 2. The eviction is performed in such a way as to be invisible to the application and user-mode display driver.
 Also, a no-overwrite lock (that is, a lock obtained by setting the **IgnoreSync** member of [**D3DDDICB\_LOCKFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544214)) is not allowed on a swizzled allocation. Only the CPU or the GPU can access such an allocation at any given time.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

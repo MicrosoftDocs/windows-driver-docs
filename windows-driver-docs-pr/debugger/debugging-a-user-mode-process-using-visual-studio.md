@@ -57,11 +57,11 @@ After you have provisioned a target computer, you can use Visual Studio on the h
 **Note**  
 If you are using separate host and target computers, do not install Visual Studio and the WDK on the target computer. Debugging is not supported if Visual Studio and the WDK are installed on the target computer.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

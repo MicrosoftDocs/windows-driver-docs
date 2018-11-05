@@ -28,9 +28,9 @@ To close the AF, the client should:
 
 4.  Call the [**NdisClCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561626) function to close the AF.
 
- 
+ 
 
- 
+ 
 
 
 

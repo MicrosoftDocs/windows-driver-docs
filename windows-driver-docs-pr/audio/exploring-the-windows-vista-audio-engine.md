@@ -82,7 +82,7 @@ The following table shows the sAPOs that are available in the Windows Vista audi
 </tbody>
 </table>
 
- 
+ 
 
 When an audio application initiates audio processing, the audio engine configures the system-supplied APOs and the sAPOs into an audio graph to process the digital audio data. The mechanism the audio engine uses for building the audio graph is a system detail and will not be discussed.
 
@@ -118,9 +118,9 @@ In contrast, when an application opens a stream in exclusive mode, the applicati
 
 After an application initiates audio processing, the graph builder configures the sAPOs into an audio graph and also initializes the sAPOs. The audio service then negotiates with the LFX sAPO to establish the format for the audio data at the input and output of the sAPO. For more information, see [Format Negotiation](format-negotiation.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ The following table describes the sections of the WinDbg status bar.
 </tr>
 <tr class="even">
 <td align="left"><p>Ln, Col</p></td>
-<td align="left"><p>Displays the line number and column number at the cursor in the active [Source window](source-window.md).</p></td>
+<td align="left"><p>Displays the line number and column number at the cursor in the active <a href="source-window.md" data-raw-source="[Source window](source-window.md)">Source window</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sys</p></td>
@@ -85,7 +85,7 @@ The following table describes the sections of the WinDbg status bar.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="hiding_the_toolbar_or_status_bar"></span><span id="HIDING_THE_TOOLBAR_OR_STATUS_BAR"></span>Hiding the Toolbar or Status Bar
 
@@ -97,9 +97,9 @@ If you hide the toolbar or the status bar, you have more space for debugging inf
 
 You can change the title of the WinDbg window by using the [**.wtitle (Set Window Title)**](-wtitle--set-window-title-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

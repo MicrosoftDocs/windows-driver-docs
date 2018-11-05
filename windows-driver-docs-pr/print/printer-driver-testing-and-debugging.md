@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 [Testing Local Printer Connectivity](testing-local-printer-connectivity.md) explains how to test whether a printer that is locally connected is installed and functioning correctly.
 
- 
+ 
 
- 
+ 
 
 
 

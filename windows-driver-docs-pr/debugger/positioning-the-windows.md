@@ -34,9 +34,9 @@ This section includes the following topics:
 
 [Arranging Windows](arranging-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

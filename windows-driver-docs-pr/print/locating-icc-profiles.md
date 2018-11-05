@@ -26,9 +26,9 @@ When color management is enabled, GDI searches for an appropriate ICC profile, u
 
 For more information, see [Installing ICC Profiles](installing-icc-profiles.md). Additional information about ICC profiles can be found in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

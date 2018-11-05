@@ -69,7 +69,7 @@ The following table describes the constants that are valid with WIA\_IPA\_TYMED.
 </tbody>
 </table>
 
- 
+ 
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED\_FILE.
 
@@ -89,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

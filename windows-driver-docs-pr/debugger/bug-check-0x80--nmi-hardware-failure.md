@@ -36,9 +36,9 @@ Resolution
 
 Remove any hardware or drivers that have been recently installed. Make sure that all memory modules are of the same type.
 
- 
+ 
 
- 
+ 
 
 
 

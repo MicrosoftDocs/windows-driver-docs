@@ -46,9 +46,9 @@ Object security is a prime concern for kernel-mode programming. For more informa
 
 The kernel-mode environment stores objects in a virtual directory system, also known as the object namespace. This allows objects to be accessed in a hierarchical way with parent and child objects. This namespace is similar to a file system set of directories but does not exactly correspond to a particular file system on your computer. For more information about object directories, see [Object Directories](object-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

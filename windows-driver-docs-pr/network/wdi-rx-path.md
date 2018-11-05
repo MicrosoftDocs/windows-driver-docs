@@ -26,7 +26,7 @@ The RX Manager performs receive processing steps that are not offloaded to the t
 | MSDU discard           | Discard MSDUs with errors.                                                                                                                                                                      |
 | Queuing and throttling | Manage the DPC watchdog to prevent a bugcheck from too many indications per DPC, and too long at dispatch level. Provide backpressure to the RxEngine when appropriate to help with throttling. |
 
- 
+ 
 
 ## RxEngine
 
@@ -45,7 +45,7 @@ The RxEngine sends and receives data-synchronous messages to and from the target
 | MPDU PN chk                             | This is only done if it is not offloaded to the target.                                                                                                                                                                                                  |
 | MSDU Fragment Reassembly                | This is only done if it is not offloaded to the target.                                                                                                                                                                                                  |
 
- 
+ 
 
 ## RX path requests and indications
 
@@ -59,9 +59,9 @@ For RX path request and indication function reference, see [WDI RX Path Function
 
 [WDI RX Path Functions](https://msdn.microsoft.com/library/windows/hardware/mt269105)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -178,9 +178,9 @@ For information about objects and the object manager, see the Microsoft Windows 
 
 [Kernel-Mode Extension Commands](kernel-mode-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

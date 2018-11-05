@@ -23,12 +23,12 @@ However, in Windows Vista and later versions of Windows, you can add the followi
 | OriginalConfigurationValue | REG\_DWORD | USB configuration index. Usbccgp.sys uses OriginalConfigurationValue first for a select-configuration request. | 0             |
 | AltConfigurationValue      | REG\_DWORD | The configuration index to use if the select-configuration request with OriginalConfigurationValue fails.      | 0             |
 
- 
+ 
 
 **Note**  The preceding registry settings are not present, by default. They must be added under this node:
 HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\*&lt;device\_identifier&gt;*\\*&lt;instance\_identifier&gt;*\\DeviceParameters
 
- 
+ 
 
 The registry setting allows the CCGP driver to select an alternate configuration.
 

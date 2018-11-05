@@ -71,16 +71,16 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Component</strong>](component.md)</p></td>
+<td><p><a href="component.md" data-raw-source="[&lt;strong&gt;Component&lt;/strong&gt;](component.md)"><strong>Component</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Name Elementfor DeviceCondition and ConditionHistoryEntry</strong>](name-element-for-devicecondition-and-conditionhistoryentry.md)</p></td>
+<td><p><a href="name-element-for-devicecondition-and-conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;Name Elementfor DeviceCondition and ConditionHistoryEntry&lt;/strong&gt;](name-element-for-devicecondition-and-conditionhistoryentry.md)"><strong>Name Elementfor DeviceCondition and ConditionHistoryEntry</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Severity</strong>](severity.md)</p></td>
+<td><p><a href="severity.md" data-raw-source="[&lt;strong&gt;Severity&lt;/strong&gt;](severity.md)"><strong>Severity</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Time</strong>](time.md)</p></td>
+<td><p><a href="time.md" data-raw-source="[&lt;strong&gt;Time&lt;/strong&gt;](time.md)"><strong>Time</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveConditions</strong>](activeconditions.md)</p></td>
+<td><p><a href="activeconditions.md" data-raw-source="[&lt;strong&gt;ActiveConditions&lt;/strong&gt;](activeconditions.md)"><strong>ActiveConditions</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -128,9 +128,9 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 [**Time**](time.md)
 
- 
+ 
 
- 
+ 
 
 
 

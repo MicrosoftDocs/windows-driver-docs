@@ -82,13 +82,13 @@ Attributes
 <td><p>Any vendor-defined elements</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Documents</strong>](documents.md)</p></td>
+<td><p><a href="documents.md" data-raw-source="[&lt;strong&gt;Documents&lt;/strong&gt;](documents.md)"><strong>Documents</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanTicket</strong>](scanticket.md)</p></td>
+<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -107,7 +107,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobElements</strong>](jobelements.md)</p></td>
+<td><p><a href="jobelements.md" data-raw-source="[&lt;strong&gt;JobElements&lt;/strong&gt;](jobelements.md)"><strong>JobElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -130,9 +130,9 @@ The WSD Scan Service returns the **ElementData** element in a [**GetJobElementsR
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

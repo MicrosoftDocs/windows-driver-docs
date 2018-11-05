@@ -46,31 +46,31 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>AutoExposureSupported</strong>](autoexposuresupported.md)</p></td>
+<td><p><a href="autoexposuresupported.md" data-raw-source="[&lt;strong&gt;AutoExposureSupported&lt;/strong&gt;](autoexposuresupported.md)"><strong>AutoExposureSupported</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>BrightnessSupported</strong>](brightnesssupported.md)</p></td>
+<td><p><a href="brightnesssupported.md" data-raw-source="[&lt;strong&gt;BrightnessSupported&lt;/strong&gt;](brightnesssupported.md)"><strong>BrightnessSupported</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>CompressionQualityFactorSupported</strong>](compressionqualityfactorsupported.md)</p></td>
+<td><p><a href="compressionqualityfactorsupported.md" data-raw-source="[&lt;strong&gt;CompressionQualityFactorSupported&lt;/strong&gt;](compressionqualityfactorsupported.md)"><strong>CompressionQualityFactorSupported</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ContentTypesSupported</strong>](contenttypessupported.md)</p></td>
+<td><p><a href="contenttypessupported.md" data-raw-source="[&lt;strong&gt;ContentTypesSupported&lt;/strong&gt;](contenttypessupported.md)"><strong>ContentTypesSupported</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ContrastSupported</strong>](contrastsupported.md)</p></td>
+<td><p><a href="contrastsupported.md" data-raw-source="[&lt;strong&gt;ContrastSupported&lt;/strong&gt;](contrastsupported.md)"><strong>ContrastSupported</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentSizeAutoDetectSupported</strong>](documentsizeautodetectsupported.md)</p></td>
+<td><p><a href="documentsizeautodetectsupported.md" data-raw-source="[&lt;strong&gt;DocumentSizeAutoDetectSupported&lt;/strong&gt;](documentsizeautodetectsupported.md)"><strong>DocumentSizeAutoDetectSupported</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>FormatsSupported</strong>](formatssupported.md)</p></td>
+<td><p><a href="formatssupported.md" data-raw-source="[&lt;strong&gt;FormatsSupported&lt;/strong&gt;](formatssupported.md)"><strong>FormatsSupported</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>RotationsSupported</strong>](rotationssupported.md)</p></td>
+<td><p><a href="rotationssupported.md" data-raw-source="[&lt;strong&gt;RotationsSupported&lt;/strong&gt;](rotationssupported.md)"><strong>RotationsSupported</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScalingRangeSupported</strong>](scalingrangesupported.md)</p></td>
+<td><p><a href="scalingrangesupported.md" data-raw-source="[&lt;strong&gt;ScalingRangeSupported&lt;/strong&gt;](scalingrangesupported.md)"><strong>ScalingRangeSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +89,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerConfiguration</strong>](scannerconfiguration.md)</p></td>
+<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -124,9 +124,9 @@ The **DeviceSettings** element contains the supported values for many of the ima
 
 [**ScannerConfiguration**](scannerconfiguration.md)
 
- 
+ 
 
- 
+ 
 
 
 

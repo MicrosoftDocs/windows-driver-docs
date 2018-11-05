@@ -28,9 +28,9 @@ The following PnP and power management scenarios show the sequences in which the
 
 For information about PnP and power management callback sequences for KMDF drivers, see [PnP and Power Management Callback Sequences](pnp-and-power-management-callback-sequences.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ The offload target supplies this sum (*NicTime*+*NicDelta*) as the timestamp in 
 
 The host stack generates a timestamp in a similar way: it adds its delta to its current time and supplies this sum as the timestamp in a TCP segment to be transmitted.
 
- 
+ 
 
- 
+ 
 
 
 

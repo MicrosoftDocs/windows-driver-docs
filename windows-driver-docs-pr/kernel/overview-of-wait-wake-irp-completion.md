@@ -30,9 +30,9 @@ After calling *IoCompletion* routines set by drivers as they passed the IRP down
 
 Completing the child's IRP causes the I/O manager to call *IoCompletion* routines set by drivers in the child's device stack, and so on. Eventually, the policy owner that started the original wait/wake IRP on the devnode determines that its device asserted the wake-up signal, and all the pending wait/wake IRPs will be complete.
 
- 
+ 
 
- 
+ 
 
 
 

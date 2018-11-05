@@ -34,9 +34,9 @@ This section includes:
 
 [Controlling a KD Connection Server Session](controlling-a-kd-connection-server-session.md)
 
- 
+ 
 
- 
+ 
 
 
 

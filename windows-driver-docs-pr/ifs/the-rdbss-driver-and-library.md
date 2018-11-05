@@ -85,9 +85,9 @@ The routines exported by RDBSS and the RDBSS macros defined to call these routin
 
 -   [Connection Engine Management](connection-engine-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

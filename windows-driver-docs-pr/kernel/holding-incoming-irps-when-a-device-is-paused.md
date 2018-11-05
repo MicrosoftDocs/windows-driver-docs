@@ -40,9 +40,9 @@ To hold IRPs while a device is paused, a driver implements a procedure such as t
 
     Errors in processing IRPs from the IRP-holding queue do not affect the status returned for the start or cancel-stop IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCICreateOverlay** function creates an overlay surface for the display device.
 
- 
+ 
 
- 
+ 
 
 
 

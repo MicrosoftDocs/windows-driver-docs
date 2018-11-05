@@ -46,9 +46,9 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 5.  Look for the mismatched reference/dereference pair -- specifically, a missing dereference. (Note that **ObReferenceObject** is implemented as a macro inside the kernel.)
 
- 
+ 
 
- 
+ 
 
 
 

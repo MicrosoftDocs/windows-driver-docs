@@ -155,9 +155,9 @@ Returns a device's USBD configuration handle. Some URBs require this handle.
 
 For general conceptual background on URBs, see [Allocating and Building URBs](https://msdn.microsoft.com/library/windows/hardware/hh450844).
 
- 
+ 
 
- 
+ 
 
 
 

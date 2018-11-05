@@ -28,9 +28,9 @@ It is sometimes necessary to constrain the ability of users to install or select
 
 The driver's user interface code enforces constraints when the user chooses the **OK** button on the printer's property sheet dialog box. If invalid combinations of options have been selected, the user is given the choice of either correcting the conflicts by modifying the property sheet page or letting the driver attempt to make corrections automatically, based on [feature conflict priority](feature-conflict-priority.md).
 
- 
+ 
 
- 
+ 
 
 
 

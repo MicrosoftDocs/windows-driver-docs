@@ -50,9 +50,9 @@ Remarks
 
 This extension causes the tracing components to display verbose output. This feature is useful to troubleshoot software tracing.
 
- 
+ 
 
- 
+ 
 
 
 

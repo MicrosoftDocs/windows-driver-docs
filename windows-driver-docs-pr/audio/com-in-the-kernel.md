@@ -31,9 +31,9 @@ This section discusses the following topics:
 
 [Reference-Counting Conventions for COM Objects](reference-counting-conventions-for-com-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ OID\_WDI\_SET\_FLUSH\_BSS\_ENTRY is sent to the device to flush the list of BSS 
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -52,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

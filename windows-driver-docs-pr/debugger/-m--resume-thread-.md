@@ -54,7 +54,7 @@ Specifies the thread or threads to resume. For more information about the syntax
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 
 Every time that you use the **~m** command, the thread's suspend count is decreased by one.
 
- 
+ 
 
- 
+ 
 
 
 

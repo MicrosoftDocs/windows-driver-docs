@@ -19,9 +19,9 @@ Similarly, data that the device produces or stores can also be described with ch
 
 In WIA, characteristics that describe both devices and data are referred to as *properties*. Properties exist in sets; the WIA minidriver maintains them in a WIA driver item.
 
- 
+ 
 
- 
+ 
 
 
 

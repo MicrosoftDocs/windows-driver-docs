@@ -24,9 +24,9 @@ Alternatively, you can install a filter programmatically using **SetupDi*Xxx*** 
 
 The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707) interface.
 
- 
+ 
 
- 
+ 
 
 
 

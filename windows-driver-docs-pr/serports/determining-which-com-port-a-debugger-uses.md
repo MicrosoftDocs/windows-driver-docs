@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The **KdComportInUse** global variable contains the memory address that is assigned to the COM port that a kernel debugger uses.
 
- 
+ 
 
- 
+ 
 
 
 

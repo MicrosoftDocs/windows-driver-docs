@@ -25,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void AddPort(
-   [in, HBAType("HBA_WWN")] uint8          PortWWN[8],
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
+   [in, HBAType("HBA_WWN")] uint8          PortWWN[8],
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
 );
 ```
 
@@ -76,9 +76,9 @@ Requirements
 
 [**AddPort\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550132)
 
- 
+ 
 
- 
+ 
 
 
 

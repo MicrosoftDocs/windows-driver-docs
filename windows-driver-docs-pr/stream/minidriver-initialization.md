@@ -28,9 +28,9 @@ Once the minidriver completes that request, the class driver uses [*StrMiniRecei
 
 Once the class driver finishes processing the stream data, it uses [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463) to send the SRB\_INITIALIZATION\_COMPLETE request. At this point, the minidriver is ready to start handling requests on each stream.
 
- 
+ 
 
- 
+ 
 
 
 

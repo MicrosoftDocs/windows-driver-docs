@@ -55,7 +55,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_RESET\_MSG**](remote-ndi
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -77,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

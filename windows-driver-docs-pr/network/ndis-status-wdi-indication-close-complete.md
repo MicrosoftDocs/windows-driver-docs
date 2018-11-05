@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE to indicate 
 |---------|
 | Adapter |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

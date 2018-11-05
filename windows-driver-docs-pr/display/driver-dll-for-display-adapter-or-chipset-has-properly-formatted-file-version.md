@@ -46,9 +46,9 @@ For example:
 
 **Recommendation** (this will become a requirement in a future release): We highly recommend that the DriverVer in the display driver .INF file also conform to the above DLL version-numbering requirement, except that for Windows 8, WDDM 1.2 drivers, the BB field in the INF DriverVer must be set for the highest DirectX feature level that is supported by the driver on the graphics hardware listed in the INF.
 
- 
+ 
 
- 
+ 
 
 
 

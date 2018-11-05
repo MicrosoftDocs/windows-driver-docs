@@ -22,16 +22,16 @@ The following table shows the data fields. For more information about the types 
 |PKEY_SensorData_QuaternionY|VT_R4|Required|X-component of rotational axis vector.|
 |PKEY_SensorData_QuaternionZ|VT_R4|Required|X-component of rotational axis vector.|
 
- 
+ 
 
 ## Related topics
 
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

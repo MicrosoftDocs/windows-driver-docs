@@ -19,7 +19,7 @@ Syntax
 
 ```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH(
-    DataLength
+    DataLength
 );
 ```
 
@@ -64,9 +64,9 @@ Requirements
 
 [**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -183,7 +183,7 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
- 
+ 
 
 **&lt;- On the host system**
 
@@ -239,9 +239,9 @@ DML versions of commands on by default
 You can access reference command help using the **.hh** command.
 
 3. Type the following command to view the command reference help for **.prefer\_dml**.
-```dbgcmd
-0: kd> .hh .prefer_dml
-```
+   ```dbgcmd
+   0: kd> .hh .prefer_dml
+   ```
 
 The Debugger help file will display help for the **.prefer\_dml** command.
 
@@ -284,7 +284,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 **Note**  Output that has been omitted is indicated with "… " in this lab.
 
- 
+ 
 
 Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
@@ -331,7 +331,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
-     
+     
 
 4.  **Check driver signing**
 
@@ -366,7 +366,7 @@ To download and build the Sysvad sample audio driver, perform the following step
     | PropPageExt.pdb                   | The property page symbol file.                                                    |
     | TabletAudioSample.cer             | The TabletAudioSample certificate file.                                           |
 
-     
+     
 
 7.  Locate a USB thumb drive or set up a network share to copy the built driver files from the host to the target system.
 
@@ -493,7 +493,7 @@ To load the debugger, perform the following steps.
 
     **Note**  The **.reload** command with the **/f** force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
 
-     
+     
 
 **Note**  You must load the proper symbols to use advanced functionality that WinDbg provides. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols.
 
@@ -504,14 +504,14 @@ Private symbols (symbols.pri) are required for locals.
 Type “.hh dbgerr005” for details.
 ```
 
- 
+ 
 
 **Note**  
 **Symbol servers**
 
 There are a number of approaches that can be used to work with symbols. In many situations, you can configure the PC to access symbols from a symbol server that Microsoft provides when they are needed. This walkthrough assumes that this approach will be used. If the symbols in your environment are in a different location, modify the steps to use that location. For additional information, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
- 
+ 
 
 **Note**  
 **Understand source code symbol requirements**
@@ -524,7 +524,7 @@ set COMPILE_DEBUG=1
 
 set ENABLE_OPTIMIZER=0
 
- 
+ 
 
 1.  Type the following in the command area of the debugger to display information about the Sysvad driver.
 
@@ -612,152 +612,152 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 **&lt;-On the host system**
 
-1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time, "\*Busy" will be displayed in the status area of WinDbg.
+1. To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time, "\*Busy" will be displayed in the status area of WinDbg.
 
-    ```dbgcmd
-    0: kd> !devnode 0 1
-    Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
-    DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
-      InstancePath is "HTREE\ROOT\0"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-      DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
-        InstancePath is "ROOT\volmgr\0000"
-        ServiceName is "volmgr"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeEnumerateCompletion (0x30d)
-        DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
-    ...
-    ```
+   ```dbgcmd
+   0: kd> !devnode 0 1
+   Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
+   DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
+     InstancePath is "HTREE\ROOT\0"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+     DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
+       InstancePath is "ROOT\volmgr\0000"
+       ServiceName is "volmgr"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeEnumerateCompletion (0x30d)
+       DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
+   ...
+   ```
 
-2.  Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
+2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
 
-    ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
+   ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
 
-    A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for Syvad.
+   A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for Syvad.
 
-    ```dbgcmd
-      DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
-        InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
-        ServiceName is "sysvad_tabletaudiosample"
-        State = DeviceNodeStarted (0x308)
-    ...
-    ```
+   ```dbgcmd
+     DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
+       InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
+       ServiceName is "sysvad_tabletaudiosample"
+       State = DeviceNodeStarted (0x308)
+   ...
+   ```
 
-    Note that the PDO address and the DevNode address are displayed.
+   Note that the PDO address and the DevNode address are displayed.
 
-3.  Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display Plug and Play information associated with our Sysvad device driver.
+3. Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display Plug and Play information associated with our Sysvad device driver.
 
-    ```dbgcmd 
-    0: kd> !devnode 0 1 sysvad_TabletAudioSample
-    Dumping IopRootDeviceNode (= 0xffffe00082df8d30)
-    DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
-      InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
-      ServiceName is "sysvad_tabletaudiosample"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-      DevNode 0xffffe000897fb650 for PDO 0xffffe00089927e30
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{64097438-cdc0-4007-a19e-62e789062e20}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00086d2f5f0 for PDO 0xffffe00089939ae0
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{78880f4e-9571-44a4-a9df-960bde446487}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00089759bb0 for PDO 0xffffe000875aa060
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{7cad07f2-d0a0-4b9b-8100-8dc735e9c447}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00087735010 for PDO 0xffffe000872068c0
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{fc38551b-e69f-4b86-9661-ae6da78bc3c6}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00088457670 for PDO 0xffffe0008562b830
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{0894b831-c9fe-4c56-86a6-092380fc5628}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe000893dbb70 for PDO 0xffffe00089d68060
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{15eb6b5c-aa54-47b8-959a-0cff2c1500db}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00088e6f250 for PDO 0xffffe00089f6e990
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{778c07f0-af9f-43f2-8b8d-490024f87239}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe000862eb4b0 for PDO 0xffffe000884443a0
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{e4b72c7c-be50-45df-94f5-0f2922b85983}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-    ```
+   ```dbgcmd 
+   0: kd> !devnode 0 1 sysvad_TabletAudioSample
+   Dumping IopRootDeviceNode (= 0xffffe00082df8d30)
+   DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
+     InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
+     ServiceName is "sysvad_tabletaudiosample"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+     DevNode 0xffffe000897fb650 for PDO 0xffffe00089927e30
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{64097438-cdc0-4007-a19e-62e789062e20}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00086d2f5f0 for PDO 0xffffe00089939ae0
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{78880f4e-9571-44a4-a9df-960bde446487}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00089759bb0 for PDO 0xffffe000875aa060
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{7cad07f2-d0a0-4b9b-8100-8dc735e9c447}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00087735010 for PDO 0xffffe000872068c0
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{fc38551b-e69f-4b86-9661-ae6da78bc3c6}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00088457670 for PDO 0xffffe0008562b830
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{0894b831-c9fe-4c56-86a6-092380fc5628}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe000893dbb70 for PDO 0xffffe00089d68060
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{15eb6b5c-aa54-47b8-959a-0cff2c1500db}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00088e6f250 for PDO 0xffffe00089f6e990
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{778c07f0-af9f-43f2-8b8d-490024f87239}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe000862eb4b0 for PDO 0xffffe000884443a0
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{e4b72c7c-be50-45df-94f5-0f2922b85983}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+   ```
 
-4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the Sysvad device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
+4. The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the Sysvad device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
-    ```dbgcmd 
-    0: kd> !devobj 0xffffe00089c575a0
-    Device object (ffffe00089c575a0) is for:
-    0000004e \Driver\PnpManager DriverObject ffffe00082d47e60
-    Current Irp 00000000 RefCount 65 Type 0000001d Flags 00001040
-    SecurityDescriptor ffffc102b0f6d171 DevExt 00000000 DevObjExt ffffe00089c576f0 DevNode ffffe00086e68190 
-    ExtensionFlags (0000000000)  
-    Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
-    AttachedDevice (Upper) ffffe00088386a50 \Driver\sysvad_tabletaudiosample
-    Device queue is not busy.
-    ```
+   ```dbgcmd 
+   0: kd> !devobj 0xffffe00089c575a0
+   Device object (ffffe00089c575a0) is for:
+   0000004e \Driver\PnpManager DriverObject ffffe00082d47e60
+   Current Irp 00000000 RefCount 65 Type 0000001d Flags 00001040
+   SecurityDescriptor ffffc102b0f6d171 DevExt 00000000 DevObjExt ffffe00089c576f0 DevNode ffffe00086e68190 
+   ExtensionFlags (0000000000)  
+   Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
+   AttachedDevice (Upper) ffffe00088386a50 \Driver\sysvad_tabletaudiosample
+   Device queue is not busy.
+   ```
 
-5.  The output displayed in the **!devobj** command includes the name of the attached device: *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
+5. The output displayed in the **!devobj** command includes the name of the attached device: *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
 
-    ```dbgcmd 
-    0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2
-    Driver object (ffffe0008834f670) is for:
-    \Driver\sysvad_tabletaudiosample
-    DriverEntry:   fffff80114b45310  tabletaudiosample!FxDriverEntry
-    DriverStartIo: 00000000 
-    DriverUnload:  fffff80114b5fea0                tabletaudiosample!DriverUnload
-    AddDevice:     fffff80114b5f000  tabletaudiosample!AddDevice
+   ```dbgcmd 
+   0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2
+   Driver object (ffffe0008834f670) is for:
+   \Driver\sysvad_tabletaudiosample
+   DriverEntry:   fffff80114b45310  tabletaudiosample!FxDriverEntry
+   DriverStartIo: 00000000 
+   DriverUnload:  fffff80114b5fea0                tabletaudiosample!DriverUnload
+   AddDevice:     fffff80114b5f000  tabletaudiosample!AddDevice
 
-    Dispatch routines:
-    [00] IRP_MJ_CREATE                      fffff80117b49a20             portcls!DispatchCreate
-    [01] IRP_MJ_CREATE_NAMED_PIPE           fffff8015a949a00          nt!IopInvalidDeviceRequest
-    [02] IRP_MJ_CLOSE                       fffff80115e26f90                ks!DispatchCleanup
-    [03] IRP_MJ_READ                        fffff80115e32710                ks!DispatchRead
-    [04] IRP_MJ_WRITE                       fffff80115e327e0              ks!DispatchWrite
-    [05] IRP_MJ_QUERY_INFORMATION           fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [06] IRP_MJ_SET_INFORMATION             fffff8015a949a00              nt!IopInvalidDeviceRequest
-    [07] IRP_MJ_QUERY_EA                    fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [08] IRP_MJ_SET_EA                      fffff8015a949a00              nt!IopInvalidDeviceRequest
-    [09] IRP_MJ_FLUSH_BUFFERS               fffff80115e32640  ks!DispatchFlush
-    [0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff8015a949a00               nt!IopInvalidDeviceRequest
-    [0c] IRP_MJ_DIRECTORY_CONTROL           fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [0e] IRP_MJ_DEVICE_CONTROL              fffff80115e27480               ks!DispatchDeviceIoControl
-    [0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff8015a949a00   nt!IopInvalidDeviceRequest
-    [10] IRP_MJ_SHUTDOWN                    fffff8015a949a00      nt!IopInvalidDeviceRequest
-    [11] IRP_MJ_LOCK_CONTROL                fffff8015a949a00  nt!IopInvalidDeviceRequest
-    [12] IRP_MJ_CLEANUP                     fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [13] IRP_MJ_CREATE_MAILSLOT             fffff8015a949a00               nt!IopInvalidDeviceRequest
-    [14] IRP_MJ_QUERY_SECURITY              fffff80115e326a0 ks!DispatchQuerySecurity
-    [15] IRP_MJ_SET_SECURITY                fffff80115e32770      ks!DispatchSetSecurity
-    [16] IRP_MJ_POWER                       fffff80117b3dce0            portcls!DispatchPower
-    [17] IRP_MJ_SYSTEM_CONTROL              fffff80117b13d30              portcls!PcWmiSystemControl
-    [18] IRP_MJ_DEVICE_CHANGE               fffff8015a949a00 nt!IopInvalidDeviceRequest
-    [19] IRP_MJ_QUERY_QUOTA                 fffff8015a949a00  nt!IopInvalidDeviceRequest
-    [1a] IRP_MJ_SET_QUOTA                   fffff8015a949a00       nt!IopInvalidDeviceRequest
-    [1b] IRP_MJ_PNP                         fffff80114b5f7d0 tabletaudiosample!PnpHandler
-    ```
+   Dispatch routines:
+   [00] IRP_MJ_CREATE                      fffff80117b49a20             portcls!DispatchCreate
+   [01] IRP_MJ_CREATE_NAMED_PIPE           fffff8015a949a00          nt!IopInvalidDeviceRequest
+   [02] IRP_MJ_CLOSE                       fffff80115e26f90                ks!DispatchCleanup
+   [03] IRP_MJ_READ                        fffff80115e32710                ks!DispatchRead
+   [04] IRP_MJ_WRITE                       fffff80115e327e0              ks!DispatchWrite
+   [05] IRP_MJ_QUERY_INFORMATION           fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [06] IRP_MJ_SET_INFORMATION             fffff8015a949a00              nt!IopInvalidDeviceRequest
+   [07] IRP_MJ_QUERY_EA                    fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [08] IRP_MJ_SET_EA                      fffff8015a949a00              nt!IopInvalidDeviceRequest
+   [09] IRP_MJ_FLUSH_BUFFERS               fffff80115e32640  ks!DispatchFlush
+   [0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff8015a949a00               nt!IopInvalidDeviceRequest
+   [0c] IRP_MJ_DIRECTORY_CONTROL           fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [0e] IRP_MJ_DEVICE_CONTROL              fffff80115e27480               ks!DispatchDeviceIoControl
+   [0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff8015a949a00   nt!IopInvalidDeviceRequest
+   [10] IRP_MJ_SHUTDOWN                    fffff8015a949a00      nt!IopInvalidDeviceRequest
+   [11] IRP_MJ_LOCK_CONTROL                fffff8015a949a00  nt!IopInvalidDeviceRequest
+   [12] IRP_MJ_CLEANUP                     fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [13] IRP_MJ_CREATE_MAILSLOT             fffff8015a949a00               nt!IopInvalidDeviceRequest
+   [14] IRP_MJ_QUERY_SECURITY              fffff80115e326a0 ks!DispatchQuerySecurity
+   [15] IRP_MJ_SET_SECURITY                fffff80115e32770      ks!DispatchSetSecurity
+   [16] IRP_MJ_POWER                       fffff80117b3dce0            portcls!DispatchPower
+   [17] IRP_MJ_SYSTEM_CONTROL              fffff80117b13d30              portcls!PcWmiSystemControl
+   [18] IRP_MJ_DEVICE_CHANGE               fffff8015a949a00 nt!IopInvalidDeviceRequest
+   [19] IRP_MJ_QUERY_QUOTA                 fffff8015a949a00  nt!IopInvalidDeviceRequest
+   [1a] IRP_MJ_SET_QUOTA                   fffff8015a949a00       nt!IopInvalidDeviceRequest
+   [1b] IRP_MJ_PNP                         fffff80114b5f7d0 tabletaudiosample!PnpHandler
+   ```
 
-6.  Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver. In this example it is *0xffffe00089c575a0*. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
+6. Enter the **!devstack**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver. In this example it is *0xffffe00089c575a0*. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
-    ```dbgcmd
-    0: kd> !devstack 0xffffe00089c575a0
-      !DevObj           !DrvObj            !DevExt           ObjectName
-      ffffe00088d212e0  \Driver\ksthunk    ffffe00088d21430  0000007b
-      ffffe00088386a50  \Driver\sysvad_tabletaudiosampleffffe00088386ba0  0000007a
-    > ffffe00089c575a0  \Driver\PnpManager 00000000  0000004e
-    !DevNode ffffe00086e68190 :
-      DeviceInst is "ROOT\sysvad_TabletAudioSample\0000"
-      ServiceName is "sysvad_tabletaudiosample"
-    ```
+   ```dbgcmd
+   0: kd> !devstack 0xffffe00089c575a0
+     !DevObj           !DrvObj            !DevExt           ObjectName
+     ffffe00088d212e0  \Driver\ksthunk    ffffe00088d21430  0000007b
+     ffffe00088386a50  \Driver\sysvad_tabletaudiosampleffffe00088386ba0  0000007a
+   > ffffe00089c575a0  \Driver\PnpManager 00000000  0000004e
+   !DevNode ffffe00086e68190 :
+     DeviceInst is "ROOT\sysvad_TabletAudioSample\0000"
+     ServiceName is "sysvad_tabletaudiosample"
+   ```
 
 The output shows that we have a farily simple device driver stack. The sysvad\_TabletAudioSample driver is a child of the PnPManager node. The PnPManager is a root node.
 
@@ -767,7 +767,7 @@ This diagram shows a more complex device node tree.
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
- 
+ 
 
 ## <span id="workingwithbreakpoints"></span>Section 7: Working with breakpoints
 
@@ -801,7 +801,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 </tbody>
 </table>
 
- 
+ 
 
 1.  Use the WinDbg UI to confirm that **Debug** &gt; **Source Mode** is enabled in the current WinDbg session.
 
@@ -933,7 +933,7 @@ ba <access> <size> <address> {options}
 </tbody>
 </table>
 
- 
+ 
 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8)
 
@@ -972,7 +972,7 @@ You can modify existing breakpoints by using the following commands.
 </tbody>
 </table>
 
- 
+ 
 
 Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints**. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
@@ -1389,7 +1389,7 @@ To display the call stack, use the k\* commands:
 </tbody>
 </table>
 
- 
+ 
 
 If you want to keep the call stack available, you can click **View**&gt; **Call stack** to view it. Click the columns at the top of the window to toggle the display of additional information.
 
@@ -1755,7 +1755,7 @@ For more information about threads and processes, see the following references:
 
 [Changing Contexts](changing-contexts.md)
 
- 
+ 
 
 ## <span id="irqlregistersmemory"></span>Section 11: IRQL, registers, and disassembly
 
@@ -1843,12 +1843,12 @@ You may need to examine memory to identify an issue or to inspect variables, poi
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you attempt to display an invalid address, its contents are shown as question marks (?).
 
- 
+ 
 
 Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
@@ -2046,7 +2046,7 @@ Similar to the commands that are used for reading memory, you can use the e\* co
 </tbody>
 </table>
 
- 
+ 
 
 The following example shows how to overwrite memory.
 
@@ -2086,7 +2086,7 @@ Alternatively, you can modify the contents of the memory in a watch or locals wi
 
 To end a user-mode debugging session, return the debugger to dormant mode, and set the target application to run again, enter the **qd** (Quit and Detach) command.
 
-Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \***, so that the target computer won't break and try to connect to the host computer debugger.
+Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \\***, so that the target computer won't break and try to connect to the host computer debugger.
 
 ```dbgcmd
 0: kd> qd
@@ -2120,7 +2120,7 @@ OSR  - <https://www.osr.com/>
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) 
 
- 
+ 
 
 
 

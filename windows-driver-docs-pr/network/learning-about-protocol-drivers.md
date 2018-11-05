@@ -42,9 +42,9 @@ If you are writing a protocol that provides Winsock support, read:
 
 -   [Transport Helper DLLs for Windows Sockets](https://msdn.microsoft.com/library/windows/hardware/ff565691)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 
 **Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
- 
+ 
 
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
@@ -41,11 +41,11 @@ Some UWP device app and APIs require that your device supports a Microsoft-suppl
 | Bluetooth GATT APIs                    | To use the Windows Runtime Bluetooth GATT APIs, [Windows.Devices.Bluetooth.GenericAttributeProfile](http://go.microsoft.com/fwlink/p/?LinkId=306698), your device must be compatible with the BthLEEnum.sys driver.                                                                                                                                                                                                                                                                                   |
 | Bluetooth RFCOMM APIs                  | To use the Windows Runtime Bluetooth RFCOMM APIs, [Windows.Devices.Bluetooth.Rfcomm](http://go.microsoft.com/fwlink/p/?LinkId=306699), your device must be compatible with the Rfcomm.sys and BthEnum.sys drivers.                                                                                                                                                                                                                                                                                    |
 
- 
+ 
 
 **Important**  Device access using custom drivers requires approval from Microsoft. OEMs and IHVs that want to implement device access for a specialized device using a custom driver should first contact their Microsoft contact to discuss their scenario with the Windows Ecosystem team. For more info, see the Custom Driver Access Model section in the [UWP device app design guide for specialized devices internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693).
 
- 
+ 
 
 ## <span id="Create_a_Windows_Store_account"></span><span id="create_a_windows_store_account"></span><span id="CREATE_A_WINDOWS_STORE_ACCOUNT"></span>Create a Microsoft Store account
 
@@ -72,7 +72,7 @@ After you've created a Microsoft Store account and selected a publisher name, as
 **Note**  
 If you've already developed device metadata, after you associate the app with the Microsoft Store, you'll need to update the device metadata with the values from the app manifest.
 
- 
+ 
 
 **To associate your app with the Microsoft Store**
 
@@ -102,7 +102,7 @@ After you associate your app with the Microsoft Store, review your app's package
     **Note**  
     To see the same information in XML, right-click **package.appxmanifest** and select **Open With &gt; XML (Text) Editor**.
 
-     
+     
 
 3.  Take note of your Package Name, Publisher Name, and App ID. You'll need them for the next step, [Step 2: Create device metadata](step-2--create-device-metadata.md).
 
@@ -137,7 +137,7 @@ You can sync or update your device from a UWP device app by using device backgro
 | [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279)                                  | Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.                                                                                  |
 | [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md) | Lean how OEMs can write device apps for devices internal to the PC.                                                                                            |
 
- 
+ 
 
 ## <span id="Use_the_Windows_App_Certification_Kit"></span><span id="use_the_windows_app_certification_kit"></span><span id="USE_THE_WINDOWS_APP_CERTIFICATION_KIT"></span>Use the Windows App Certification Kit
 
@@ -149,9 +149,9 @@ To give your app the best chance of getting certified, validate and test it on y
 
 [Step 2: Create device metadata](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

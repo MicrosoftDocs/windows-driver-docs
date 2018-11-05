@@ -149,9 +149,9 @@ KTM supports other TPS scenarios. For example, the following scenarios describe 
 
     In this case, you typically have to modify the existing resource manager so that it becomes a [superior transaction manager](creating-a-superior-transaction-manager.md) that communicates with KTM.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,11 +39,11 @@ The vendor-named section referenced by the **AddSock** directive must contain th
 <tbody>
 <tr class="odd">
 <td align="left"><p>TransportService</p></td>
-<td align="left"><p>A REG_SZ value that specifies the service name of the protocol. This must be the same as the <strong>Ndi\Service</strong> value for the protocol. For more information, see [Adding Service-Related Values to the Ndi Key](adding-service-related-values-to-the-ndi-key.md).</p></td>
+<td align="left"><p>A REG_SZ value that specifies the service name of the protocol. This must be the same as the <strong>Ndi\Service</strong> value for the protocol. For more information, see <a href="adding-service-related-values-to-the-ndi-key.md" data-raw-source="[Adding Service-Related Values to the Ndi Key](adding-service-related-values-to-the-ndi-key.md)">Adding Service-Related Values to the Ndi Key</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HelperDllName</p></td>
-<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see [WSH DLL Function Summary](https://msdn.microsoft.com/library/windows/hardware/ff566260).</p></td>
+<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566260" data-raw-source="[WSH DLL Function Summary](https://msdn.microsoft.com/library/windows/hardware/ff566260)">WSH DLL Function Summary</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxSockAddrLength</p></td>
@@ -56,7 +56,7 @@ The vendor-named section referenced by the **AddSock** directive must contain th
 </tbody>
 </table>
 
- 
+ 
 
 If an optional **ProviderId** for a namespace provider is specified, the following values must also be specified:
 
@@ -95,7 +95,7 @@ If an optional **ProviderId** for a namespace provider is specified, the followi
 </tbody>
 </table>
 
- 
+ 
 
 The following namespace values can be assigned to SupportedNameSpace and are defined in Winsock2.h:
 
@@ -178,7 +178,7 @@ The following namespace values can be assigned to SupportedNameSpace and are def
 </tbody>
 </table>
 
- 
+ 
 
 For more information about namespace providers, see the Windows SDK documentation.
 
@@ -215,9 +215,9 @@ TransportService = nwlinkipx
 ProviderId = "GUID"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

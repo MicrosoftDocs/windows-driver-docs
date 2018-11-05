@@ -33,9 +33,9 @@ Your driver has two ways to detect the start of a client-implemented sequence. F
 
 The *EvtSpbControllerUnlock* callback is the only way that a driver can determine when a sequence ends. A driver that does not implement an *EvtSpbControllerUnlock* function cannot support client-implemented sequences.
 
- 
+ 
 
- 
+ 
 
 
 

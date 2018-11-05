@@ -38,9 +38,9 @@ An operation region handler typically uses the following parameters that the ACP
 
 In addition to the previously described parameters, the ACPI driver also passes to an operation region handler pointers to the following: an operation region object, a completion handler, and a completion context. However, the function driver does not use the operation region object in a handler, and the completion handler and context are reserved for internal use.
 
- 
+ 
 
- 
+ 
 
 
 

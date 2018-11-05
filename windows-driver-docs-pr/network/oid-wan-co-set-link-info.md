@@ -25,7 +25,6 @@ The OID\_WAN\_CO\_SET\_LINK\_INFO OID requests the miniport driver to set PPP fr
          IN ULONG SendACCM;
          IN ULONG RecvACCM;
     } NDIS_WAN_CO_SET_LINK_INFO,   *PNDIS_WAN_CO_SET_LINK_INFO;
-  
 ```
 
 
@@ -93,9 +92,9 @@ Requirements
 
 [OID\_WAN\_CO\_GET\_LINK\_INFO](oid-wan-co-get-link-info.md)
 
- 
 
- 
+
+
 
 
 

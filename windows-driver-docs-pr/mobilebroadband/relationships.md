@@ -48,17 +48,17 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ExperienceID](experienceid.md)</p></td>
-<td><p>The [ExperienceID](experienceid.md) element specifies a GUID that is managed by the Windows Dev Center Dashboard. This GUID is used to group one or more metadata packages for the same device identifiers independent of the packages’ locale.</p></td>
+<td><p><a href="experienceid.md" data-raw-source="[ExperienceID](experienceid.md)">ExperienceID</a></p></td>
+<td><p>The <a href="experienceid.md" data-raw-source="[ExperienceID](experienceid.md)">ExperienceID</a> element specifies a GUID that is managed by the Windows Dev Center Dashboard. This GUID is used to group one or more metadata packages for the same device identifiers independent of the packages’ locale.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LanguageNeutralIdentifier](languageneutralidentifier.md)</p></td>
-<td><p>The [LanguageNeutralIdentifier](languageneutralidentifier.md) element specifies a GUID that identifies the device metadata package independent of its locale.</p></td>
+<td><p><a href="languageneutralidentifier.md" data-raw-source="[LanguageNeutralIdentifier](languageneutralidentifier.md)">LanguageNeutralIdentifier</a></p></td>
+<td><p>The <a href="languageneutralidentifier.md" data-raw-source="[LanguageNeutralIdentifier](languageneutralidentifier.md)">LanguageNeutralIdentifier</a> element specifies a GUID that identifies the device metadata package independent of its locale.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -76,13 +76,13 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element specifies the attributes of the service metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element specifies the attributes of the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -104,9 +104,9 @@ If the Relationships element is specified, it must specify the [ExperienceID](ex
 
 The child elements of the Relationships element ([ExperienceID](experienceid.md) and [LanguageNeutralIdentifier](languageneutralidentifier.md)) provide separate search keys that the operating system uses to query device metadata packages that are installed within the device metadata cache.
 
- 
+ 
 
- 
+ 
 
 
 

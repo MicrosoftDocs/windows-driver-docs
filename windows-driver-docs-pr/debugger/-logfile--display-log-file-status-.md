@@ -49,11 +49,11 @@ The **.logfile** command determines whether a log file exists and displays the f
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

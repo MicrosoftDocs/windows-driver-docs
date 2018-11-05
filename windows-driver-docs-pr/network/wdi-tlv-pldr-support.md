@@ -16,7 +16,7 @@ WDI\_TLV\_PLDR\_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) i
 
 **Note**  This TLV was added in Windows 10, version 1511, WDI version 1.0.10.
 
- 
+ 
 
 ## TLV Type
 
@@ -35,7 +35,7 @@ The size (in bytes) of a UINT8.
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8 | Specifies if PLDR is supported. This value is set to 0 if the device or bus does not support reset functionality (usually by querying the ACPI or PCI methods). A non-zero value specifies that reset functionality is supported. |
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +66,9 @@ Requirements
 
 [PLDR](https://msdn.microsoft.com/library/windows/hardware/mt269098)
 
- 
+ 
 
- 
+ 
 
 
 

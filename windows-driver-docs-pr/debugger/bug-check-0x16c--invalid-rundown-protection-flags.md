@@ -31,11 +31,11 @@ The INVALID\_RUNDOWN\_PROTECTION\_FLAGS bug check has a value of 0x0000016C. Thi
 | 3         | Reserved                                 |
 | 4         | Reserved                                 |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

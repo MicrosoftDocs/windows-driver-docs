@@ -62,9 +62,9 @@ Requirements
 
 [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

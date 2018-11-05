@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_3D\_INTERFACE property specifies the 3D algorithm to use 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>GUID</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a GUID that specifies a 3D algorithm. This value can be one of the following GUIDs from header file Dsound.h:
 
@@ -94,9 +94,9 @@ Requirements
 
 [**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)
 
- 
+ 
 
- 
+ 
 
 
 

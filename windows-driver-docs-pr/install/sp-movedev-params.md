@@ -20,9 +20,9 @@ This structure is obsolete.
 
 This structure is associated with the [**DIF_MOVEDEVICE**](dif-movedevice.md) request, which is obsolete and cannot be used with any version of Microsoft Windows.
 
- 
+ 
 
- 
+ 
 
 
 

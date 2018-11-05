@@ -16,9 +16,9 @@ For more info on receiving notifications when mobile broadband accounts are adde
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

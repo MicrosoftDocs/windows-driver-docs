@@ -21,9 +21,9 @@ To prepare for powering down, the function driver first configures the codec to 
 
 Following a wake event, the bus driver determines which codec generated the wake-up signal and completes any pending IRP\_MN\_WAIT\_WAKE IRPs on that codec. However, if the codec contains both audio and modem function groups, for example, the bus driver has no way to determine which function group is the source of the wake-up signal. In this case, the function driver must send its own queries to the codec to verify the source of the wake-up signal.
 
- 
+ 
 
- 
+ 
 
 
 

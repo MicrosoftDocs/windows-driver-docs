@@ -15,7 +15,7 @@ The INF file for the miniport driver of an adapter that supports packet coalesci
 
 **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
- 
+ 
 
 The **\*PacketCoalescing** INF keyword is an enumeration keyword. The following table describes the possible INF entries for the **\*PacketCoalescing** INF keyword. The columns in this table describe the following attributes for an enumeration keyword:
 
@@ -27,7 +27,7 @@ The display text that is associated with SubkeyName.
 
 **Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
 
- 
+ 
 
 <a href="" id="value"></a>Value  
 The enumeration integer value that is associated with each SubkeyName in the list.
@@ -66,15 +66,15 @@ The display text that is associated with each value that appears in the menu.
 </tbody>
 </table>
 
- 
+ 
 
 The miniport driver must check the **\*PacketCoalescing** keyword value in the registry before it advertises its support for packet coalescing. If the **\*PacketCoalescing** keyword has a value of zero, the miniport must not advertise support for any packet coalescing capabilities. For more information, see [Reporting Packet Coalescing Capabilities](reporting-packet-coalescing-capabilities.md).
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

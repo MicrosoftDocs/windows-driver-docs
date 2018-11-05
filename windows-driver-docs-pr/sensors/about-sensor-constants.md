@@ -61,9 +61,9 @@ You can define custom values for categories, sensor types, data fields, properti
 
 For guidelines and an example of how to define custom values for constants, see [Defining Custom Values for Constants](defining-custom-values-for-constants.md).
 
- 
+ 
 
- 
+ 
 
 
 

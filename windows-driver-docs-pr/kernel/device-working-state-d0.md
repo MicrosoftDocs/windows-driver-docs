@@ -41,9 +41,9 @@ Not applicable.
 <a href="" id="wake-up-capability"></a>**Wake-up capability**  
 Not applicable.
 
- 
+ 
 
- 
+ 
 
 
 

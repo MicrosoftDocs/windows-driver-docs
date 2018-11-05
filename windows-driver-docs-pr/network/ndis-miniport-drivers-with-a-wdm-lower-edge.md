@@ -23,9 +23,9 @@ A miniport driver with a WDM lower edge must be deserialized. For more informati
 
 For more information about miniport drivers with a WDM lower edge, see [Miniport Drivers with a WDM Lower Interface](miniport-drivers-with-a-wdm-lower-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

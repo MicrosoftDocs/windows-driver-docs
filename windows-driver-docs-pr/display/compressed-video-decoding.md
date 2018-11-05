@@ -22,9 +22,9 @@ The following topics describe motion compensation, which is the most frequently 
 
 [DirectX Video Acceleration](directx-video-acceleration.md) uses the motion compensation callback functions to aid in the acceleration of digital video decoding processing.
 
- 
+ 
 
- 
+ 
 
 
 

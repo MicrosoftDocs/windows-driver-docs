@@ -96,7 +96,7 @@ The following options are available.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______FormatString______"></span><span id="_______formatstring______"></span><span id="_______FORMATSTRING______"></span> *FormatString*   
 Specifies the format string, as in **printf**. In general, conversion characters work exactly as in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the **l** modifier is used.
@@ -124,55 +124,55 @@ The %p conversion character is supported, but it represents a pointer in the tar
 <tr class="odd">
 <td align="left"><p>%p</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>A pointer in the target's virtual address space.</p></td>
+<td align="left"><p>A pointer in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The value of the pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%N</p></td>
-<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host's architecture)</p></td>
-<td align="left"><p>A pointer in the host's virtual address space.</p></td>
+<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host&#39;s architecture)</p></td>
+<td align="left"><p>A pointer in the host&#39;s virtual address space.</p></td>
 <td align="left"><p>The value of the pointer. (This is equivalent to the standard C %p character.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ma</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated ASCII string in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated ASCII string in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%mu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated Unicode string in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated Unicode string in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%msa</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of an ANSI_STRING structure in the target's virtual address space.</p></td>
+<td align="left"><p>The address of an ANSI_STRING structure in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%msu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a UNICODE_STRING structure in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a UNICODE_STRING structure in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%y</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ly</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any), as well as any available source line information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Arguments______"></span><span id="_______arguments______"></span><span id="_______ARGUMENTS______"></span> *Arguments*   
 Specifies arguments for the format string, as in **printf**. The number of arguments that are specified should match the number of conversion characters in *FormatString*. Each argument is an expression that will be evaluated by the default expression evaluator (MASM or C++). For details, see [Numerical Expression Syntax](numerical-expression-syntax.md).
@@ -200,9 +200,9 @@ The output shown in the preceding image has a link that you can click to execute
 
 For information about DML tags, see dml.doc in the installation folder for Debugging Tools for Windows.
 
- 
+ 
 
- 
+ 
 
 
 

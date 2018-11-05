@@ -68,9 +68,9 @@ Requirements
 
 [**DXVA\_COPPStatusOutput**](https://msdn.microsoft.com/library/windows/hardware/ff563903)
 
- 
+ 
 
- 
+ 
 
 
 

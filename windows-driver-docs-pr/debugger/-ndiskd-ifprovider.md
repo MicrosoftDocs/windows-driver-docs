@@ -51,7 +51,7 @@ You can see from the previous example that the debugee machine has four interfac
 
 **Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider).
 
- 
+ 
 
 The following example shows the details for the "wanarp" interface provider in the previous example, whose handle is ffffd20d14334180.
 
@@ -93,9 +93,9 @@ HANDLERS
 
 [Registering as an Interface Provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider)
 
- 
+ 
 
- 
+ 
 
 
 

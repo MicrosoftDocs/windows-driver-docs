@@ -72,9 +72,9 @@ Deletes the registration of a physical connection between two subdevices in the 
 
 Deletes the registration of a dynamic subdevice in an audio adapter.
 
- 
+ 
 
- 
+ 
 
 
 

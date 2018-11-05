@@ -66,9 +66,9 @@ windbg -remote npipe:server=\\BOXC,pipe=randomname
 
 Notice that the password must be supplied by the first non-repeater in the chain (the smart client on \\\\BOXC), not by the final debugger in the chain.
 
- 
+ 
 
- 
+ 
 
 
 

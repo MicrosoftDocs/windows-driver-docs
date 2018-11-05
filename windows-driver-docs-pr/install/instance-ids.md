@@ -26,9 +26,9 @@ An instance ID is persistent across system restarts.
 
 To obtain the bus-supplied instance ID for a device, use an [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request and set the **Parameters.QueryId.IdType** member to **BusQueryInstanceID**.
 
- 
+ 
 
- 
+ 
 
 
 

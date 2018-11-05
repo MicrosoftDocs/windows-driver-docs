@@ -176,9 +176,9 @@ Requirements
 
 [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/jj835780)
 
- 
+ 
 
- 
+ 
 
 
 

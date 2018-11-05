@@ -29,9 +29,9 @@ After completing all of the tabs in the wizard, review and save your package.
 3.  If you want to test the package on your PC, select **Copy packages to your system's local metadata store**.
 4.  Click **Finish**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ Specifies a substring in **HKLM\\Hardware\\Description\\System\\SystemBiosVersio
 
 This section is used only with PS/2 mouse devices and only in combination with an [INF **PS2\_Inst.NoInterruptInit** section](inf-ps2-inst-nointerruptinit-section.md).
 
- 
+ 
 
- 
+ 
 
 
 

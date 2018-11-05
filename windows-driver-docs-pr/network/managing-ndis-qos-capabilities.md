@@ -17,9 +17,9 @@ This section includes the following topics:
 
 [Querying NDIS QoS Capabilities](querying-ndis-qos-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

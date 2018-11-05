@@ -26,9 +26,9 @@ The following information applies to calling this routine for hardware profile c
 
 A driver removes notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
- 
+ 
 
- 
+ 
 
 
 

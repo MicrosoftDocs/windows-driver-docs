@@ -51,7 +51,7 @@ To request the GPD parser to ignore a group of GPD entries, you can create an ig
 </tbody>
 </table>
 
- 
+ 
 
 where *IgnoredEntries* is a set of GPD file entries, containing an equal number of left and right braces.
 
@@ -86,9 +86,9 @@ In the following example, the GPD parser ignores the GPD entries describing the 
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

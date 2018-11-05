@@ -70,40 +70,40 @@ Type of information to be set for the file. One of the following:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileAllocationInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_ALLOCATION_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540232) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540232" data-raw-source="[&lt;strong&gt;FILE_ALLOCATION_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540232)"><strong>FILE_ALLOCATION_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileBasicInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_BASIC_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545762) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545762" data-raw-source="[&lt;strong&gt;FILE_BASIC_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545762)"><strong>FILE_BASIC_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileDispositionInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_DISPOSITION_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545765) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545765" data-raw-source="[&lt;strong&gt;FILE_DISPOSITION_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545765)"><strong>FILE_DISPOSITION_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileEndOfFileInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_END_OF_FILE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545780) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545780" data-raw-source="[&lt;strong&gt;FILE_END_OF_FILE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545780)"><strong>FILE_END_OF_FILE_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileLinkInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_LINK_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540324) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540324" data-raw-source="[&lt;strong&gt;FILE_LINK_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540324)"><strong>FILE_LINK_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FilePositionInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_POSITION_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545848) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848" data-raw-source="[&lt;strong&gt;FILE_POSITION_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545848)"><strong>FILE_POSITION_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileRenameInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_RENAME_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540344) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344" data-raw-source="[&lt;strong&gt;FILE_RENAME_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540344)"><strong>FILE_RENAME_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileValidDataLengthInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_VALID_DATA_LENGTH_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545873) for the file.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545873" data-raw-source="[&lt;strong&gt;FILE_VALID_DATA_LENGTH_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545873)"><strong>FILE_VALID_DATA_LENGTH_INFORMATION</strong></a> for the file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **ParentOfTarget**  
 For rename or link operations. If **InfoBuffer-&gt;FileName** contains a fully qualified file name, or if **InfoBuffer-&gt;RootDirectory** is non-**NULL**, this member is a file object pointer for the parent directory of the file that is the target of the operation. Otherwise it is **NULL**.
@@ -184,9 +184,9 @@ Requirements
 
 [**IRP\_MJ\_SET\_INFORMATION**](irp-mj-set-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

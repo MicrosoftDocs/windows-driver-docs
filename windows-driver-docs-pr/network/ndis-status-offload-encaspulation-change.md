@@ -50,9 +50,9 @@ Requirements
 
 [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762)
 
- 
+ 
 
- 
+ 
 
 
 

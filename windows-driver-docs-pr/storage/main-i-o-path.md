@@ -14,9 +14,9 @@ One of the architectural improvements that Storport has to offer is the HwBuildI
 
 The LsiU3StartIo routine assigns driver queue tags to I/O requests. This is needed since Storport assigns queue tags on a per-LUN basis, not a per-adapter basis. The adapter hardware is limited to a maximum of 256 outstanding I/Os.
 
- 
+ 
 
- 
+ 
 
 
 

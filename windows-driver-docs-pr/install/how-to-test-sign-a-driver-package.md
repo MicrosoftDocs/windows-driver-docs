@@ -27,7 +27,7 @@ This section includes topics that describe these steps and provide examples, suc
 
     **Note**  You have to embed a digital signature within the driver if the driver is a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
 
-     
+     
 
 Each topic in this section describes a separate procedure in the test-signing process, and provides the general information that you need to understand the procedure. In addition, each topic points you to other topics that provide detailed information about the procedure.
 
@@ -43,7 +43,7 @@ The topics of this section use the *ToastPkg* sample driver package to introduce
 
 **Note**  The WDK contains a sample command script that shows the step-by-step procedure to correctly test-sign the *ToastPkg* sample [driver package](driver-packages.md). You can modify this script to test-sign your own driver package. Within the WDK installation directory, the example is located at *src\\general\\build\\driversigning\\selfsign_example.cmd*. Additional instructions for test-signing are described in *src\\general\\build\\driversigning\\selfsign_readme.htm*.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -65,9 +65,9 @@ This section includes the following topics:
 
 [Installing a Test-Signed Driver Package on the Test Computer](installing-a-test-signed-driver-package-on-the-test-computer.md)
 
- 
+ 
 
- 
+ 
 
 
 

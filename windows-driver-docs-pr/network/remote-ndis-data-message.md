@@ -19,9 +19,9 @@ The data message that is used to encapsulate data for transfer across the data c
 
 [**REMOTE\_NDIS\_PACKET\_MSG**](remote-ndis-packet-msg.md)
 
- 
+ 
 
- 
+ 
 
 
 

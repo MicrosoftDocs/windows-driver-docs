@@ -532,21 +532,21 @@ GetDevicePropertySpecificDeviceCfgmgr32(
 
 This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_DISABLE**.
 
-**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM_DISABLE_PERSIST** flag.
+**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM_DISABLE_PERSIST** flag.
 
- 
+
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Disable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -561,13 +561,13 @@ This example shows how to enable a device using CfgMgr32. To do this with SetupA
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Enable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -582,33 +582,32 @@ This example shows how to restart a device using CfgMgr32. To do this with Setup
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Query_And_Remove_SubTree(devinst,
                                      NULL,
                                      NULL,
                                      0,
                                      CM_REMOVE_NO_RESTART);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Setup_DevNode(devinst,
                           CM_SETUP_DEVNODE_READY);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
 ```
 
- 
 
- 
+
+
 
 
 

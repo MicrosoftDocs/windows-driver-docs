@@ -49,7 +49,7 @@ The **.bugcheck** command displays the data from a bug check on the target compu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +64,9 @@ You can also display bug check data on 32-bit systems by using **dd NT!KiBugChec
 
 The [**!analyze**](-analyze.md) extension command is also useful after a bug check occurs.
 
- 
+ 
 
- 
+ 
 
 
 

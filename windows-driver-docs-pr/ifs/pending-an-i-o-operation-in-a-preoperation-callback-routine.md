@@ -42,9 +42,9 @@ A minifilter driver can return FLT\_PREOP\_PENDING only for IRP-based I/O operat
 
 The work routine that dequeues and processes the I/O operation must call **FltCompletePendedPreOperation** to resume processing for the operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ This section describes the path taken by an IRP from creation by the operating s
 
 [Points to Consider about User I/O Requests](points-to-consider-about-user-i-o-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

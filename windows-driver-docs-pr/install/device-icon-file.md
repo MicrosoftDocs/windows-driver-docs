@@ -15,11 +15,11 @@ If the device metadata package does not contain a device icon file and [**Device
 
 **Note**  We highly recommend that the device metadata package contain a device icon file, which is used to display the photo-realistic image of the device in the Devices and Printers user interface. For more information about how to create icons that have the same display qualities of Windows graphical elements, refer to [Icons](http://go.microsoft.com/fwlink/p/?linkid=145422) in the Microsoft SDK.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

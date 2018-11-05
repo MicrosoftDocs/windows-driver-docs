@@ -35,11 +35,11 @@ An integer (DWORD) that has the following bit-field definitions:
 
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

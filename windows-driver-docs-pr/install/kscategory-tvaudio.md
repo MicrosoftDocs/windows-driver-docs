@@ -43,7 +43,7 @@ The KSCATEGORY_TVAUDIO [device interface class](https://msdn.microsoft.com/libra
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
- 
+ 
 
- 
+ 
 
 
 

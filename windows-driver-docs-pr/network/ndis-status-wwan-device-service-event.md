@@ -43,9 +43,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/hh439837)
 
- 
+ 
 
- 
+ 
 
 
 

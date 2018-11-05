@@ -73,7 +73,7 @@ This message is sent to a Remote NDIS device from a host when it needs to query 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -95,9 +95,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ The **Early critical section event creation** flag creates event handles when a 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +49,9 @@ When Windows cannot create an event, it generates the exception during initializ
 
 Because this flag uses a significant amount of nonpaged pool memory, use it only on very reliable systems that have sufficient memory.
 
- 
+ 
 
- 
+ 
 
 
 

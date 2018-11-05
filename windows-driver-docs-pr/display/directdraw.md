@@ -45,11 +45,11 @@ The *ddraw.h* header file is shipped with the Windows SDK; all other header file
 
 Reference pages for DirectDraw driver functions, callbacks, and structures can be found in [DirectDraw Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff553825) and [DirectDraw Driver Structures](https://msdn.microsoft.com/library/windows/hardware/ff553831).
 
-For more information about DirectDraw, see the Windows SDK. DirectDraw driver writers can send questions and comments by email to *directx@microsoft.com*.
+For more information about DirectDraw, see the Windows SDK. DirectDraw driver writers can send questions and comments by email to <em>directx@microsoft.com</em>.
 
- 
+ 
 
- 
+ 
 
 
 

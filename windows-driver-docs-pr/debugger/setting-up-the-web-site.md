@@ -42,9 +42,9 @@ Begin by selecting the directory in which your indexed source resides. In our ex
 
 The source directory can now be used for debugging by another computer with a source path of srv\*\\\\SrcMachineName\\source.
 
- 
+ 
 
- 
+ 
 
 
 

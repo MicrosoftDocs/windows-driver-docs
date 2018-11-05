@@ -36,9 +36,9 @@ VOID WpdBaseDriver::Uninitialize()
 
 If you wanted to port this sample to support an actual device—for example, a Bluetooth-enabled mobile phone—you would add functionality in the **Initialize** function to initialize the driver's I/O library. which issues the device commands. In the case of the mobile phone, this library might include commands to enumerate a phone book, or to set or retrieve files in the phone's storage. At a bare minimum, the **Initialize** function would establish the device's network address. The **WPDBaseDriver::Uninitialize** function would perform any required cleanup.
 
- 
+ 
 
- 
+ 
 
 
 

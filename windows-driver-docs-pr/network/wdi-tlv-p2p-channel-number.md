@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                         | The operating class/frequency band for the channel number.                         |
 | WDI\_CHANNEL\_NUMBER (UINT32) | The channel number for the Wi-Fi Direct Device or Group.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

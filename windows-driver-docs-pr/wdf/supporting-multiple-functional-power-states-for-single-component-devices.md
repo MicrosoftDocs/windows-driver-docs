@@ -78,9 +78,9 @@ Restart power-managed queues and self-managed I/O operations in [*ComponentActiv
 
 If the driver previously called [**WdfInterruptReportInactive**](https://msdn.microsoft.com/library/windows/hardware/hh439277), re-enable inactive interrupts by calling [**WdfInterruptReportActive**](https://msdn.microsoft.com/library/windows/hardware/hh439273) from either [*ComponentActiveConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406416) or [*ComponentIdleStateCallback*](https://msdn.microsoft.com/library/windows/hardware/hh450931).
 
- 
+ 
 
- 
+ 
 
 
 

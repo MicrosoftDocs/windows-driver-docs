@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 An NT-based operating system display driver must meet the requirements specified in the *PC 99 Design Guide*. If the driver is to be submitted for Windows Hardware Quality Lab (WHQL) testing, it must meet WHQL requirements as well.
 
- 
+ 
 
- 
+ 
 
 
 

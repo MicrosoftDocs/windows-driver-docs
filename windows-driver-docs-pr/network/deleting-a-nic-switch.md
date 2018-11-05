@@ -13,7 +13,7 @@ A network adapter that supports single root I/O virtualization (SR-IOV) must be 
 
 **Note**  Starting with NDIS 6.30 in Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*, and is referenced by the NDIS\_DEFAULT\_SWITCH\_ID identifier.
 
- 
+ 
 
 Prior to halting the PF miniport driver, NDIS deletes the NIC switch by issuing an object identifier (OID) set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_DELETE\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451575) structure that specifies the identifier of the switch being deleted.
 
@@ -41,11 +41,11 @@ When it receives the OID method request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](ht
 
     **Note**  If the PF miniport driver supports static creation and configuration of NIC switches, it must only call [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481) when [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) is called.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,15 +38,15 @@ DCBX consists of DCB type-length-value (TLV) settings that are carried over the 
 
 **Note**  DCBX specifies that the local peer maintain configuration parameters from only one remote peer at any given time. As a result, the network adapter maintains only one set of local, remote, and operational NDIS QoS parameters.
 
- 
+ 
 
 Each ETS traffic class and PFC configuration setting is associated with an IEEE 802.1p priority level. The priority level is specified as a 3-bit value within a packet's 802.1Q tag. For NDIS packets, the 802.1p priority level is specified by the **UserPriority** member of the [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff566565) structure that is associated with a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

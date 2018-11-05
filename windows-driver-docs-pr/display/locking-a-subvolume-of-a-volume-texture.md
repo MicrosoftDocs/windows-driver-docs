@@ -36,9 +36,9 @@ back = rArea.right >> 16;
 
 This feature is available on Windows Me and Windows XP and later versions. This feature is also available on Windows 2000 and Windows 98 operating system versions that have the DirectX 8.1 runtime installed on them.
 
- 
+ 
 
- 
+ 
 
 
 

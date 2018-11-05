@@ -48,7 +48,7 @@ The **KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID** retrieves the audio mo
 </tbody>
 </table>
 
- 
+ 
 
 The returned property value is a single GUID.
 
@@ -98,9 +98,9 @@ Requirements
 
 [**KSAUDIOMODULE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/mt808138)
 
- 
+ 
 
- 
+ 
 
 
 

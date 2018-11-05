@@ -38,9 +38,9 @@ The spooler closes a port if a job must be sent through a different language mon
 
 If a language monitor is not associated with a port, the spooler calls the port monitor's **ClosePort** function directly.
 
- 
+ 
 
- 
+ 
 
 
 

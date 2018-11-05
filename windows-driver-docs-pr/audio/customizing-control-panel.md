@@ -17,9 +17,9 @@ For more information about how to add a bitmap or an icon, or how to use an INF 
 
 [Adding New Digital Formats to Control Panel](adding-new-digital-formats-to-control-panel.md)
 
- 
+ 
 
- 
+ 
 
 
 

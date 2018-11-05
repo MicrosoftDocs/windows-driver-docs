@@ -74,9 +74,9 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 
 The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-error-messages) page for more information on errors and debugging.
 
- 
+ 
 
- 
+ 
 
 
 

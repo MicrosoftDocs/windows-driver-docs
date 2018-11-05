@@ -20,9 +20,9 @@ These control keys work in KD and, in some cases, CDB. Many of these also work i
 
 WinDbg also uses the CTRL key, the ALT key, and the F keys as shortcut keys to toggle the menu options. See [Shortcut Keys](keyboard-shortcuts.md) for a list of their meanings.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -94,11 +94,11 @@ For each state object in the preceding figure, the offload target writes the fol
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ The API enables an application to request Windows to provide access to the conte
 
 For detailed documentation and samples, see [Desktop Duplication API](https://msdn.microsoft.com/library/windows/desktop/hh404487).
 
- 
+ 
 
- 
+ 
 
 
 

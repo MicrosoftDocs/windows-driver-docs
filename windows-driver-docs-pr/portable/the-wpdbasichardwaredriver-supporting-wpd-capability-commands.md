@@ -25,7 +25,7 @@ The information in the following table describes each of the supported property 
 | WPD\_COMMAND\_CAPABILITIES\_GET\_EVENT\_OPTIONS                    | OnGetEventOptions              | Issued when an application attempts to retrieve the options that are associated with a given event.                                             |
 | WPD\_COMMAND\_CAPABILITIES\_GET\_SUPPORTED\_EVENTS                 | OnGetEventOptions              | Issued when an application attempts to retrieve the set of events that are supported by a device.                                               |
 
- 
+ 
 
 For the sample driver, the code remained intact for the handlers that are associated with the following commands:
 
@@ -427,9 +427,9 @@ HRESULT WpdCapabilities::OnGetEventOptions(
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

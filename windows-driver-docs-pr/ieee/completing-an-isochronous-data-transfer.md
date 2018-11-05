@@ -29,9 +29,9 @@ Drivers must follow these steps to clean up:
 
 5.  The driver must deallocate any bandwidth it has allocated by using the [**REQUEST\_ISOCH\_FREE\_BANDWIDTH**](https://msdn.microsoft.com/library/windows/hardware/ff537652) request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,7 +59,7 @@ The original scheme was that all network mini-redirectors would link dynamically
 </tbody>
 </table>
 
- 
+ 
 
 The RDBSS communicates with the I/O Manager, Cache Manager, Memory Manager, network mini-redirectors, and other kernel systems. RDBSS supports the following features:
 
@@ -105,9 +105,9 @@ RDBSS has very flexible support for buffering. RDBSS can be set to separately bu
 
 RDBSS will try to use access history to reduce the need for unnecessary network requests. For example, if an open request for a remote file fails, this information will be cached by RDBSS. If the client immediately requests to open a similar file, with a change of case in the file name, RDBSS will fail the request for remote file systems that ignore case in file names.
 
- 
+ 
 
- 
+ 
 
 
 

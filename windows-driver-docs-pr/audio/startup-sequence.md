@@ -68,9 +68,9 @@ The request handler supplies `MyStartDevice` with pointers to the device object,
 
 For more examples of driver startup code, see the sample audio adapter drivers in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

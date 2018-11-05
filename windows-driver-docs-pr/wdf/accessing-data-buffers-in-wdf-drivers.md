@@ -136,9 +136,9 @@ UMDF doesn't support neither buffered nor direct I/O type buffers, so a UMDF dri
 
 However, if the framework receives such buffers for read or write from the I/O manager, it makes them available to a UMDF driver as buffered I/O or direct I/O, depending on the access method selected by the driver. If the framework receives an IOCTL specifying the "neither" buffer method, it can optionally convert the buffer access method of the IOCTL request to buffered I/O or direct I/O based on the presence of an INF directive. See [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md) for more info.
 
- 
+ 
 
- 
+ 
 
 
 

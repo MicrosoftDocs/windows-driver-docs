@@ -43,9 +43,9 @@ For more information about send and receive operations in the miniport upper edg
 
 For more information about send and receive operations in the protocol lower edge of an intermediate driver, see [Porting Protocol Driver Send and Receive Operations to NDIS 6.0](porting-protocol-driver-send-and-receive-operations-to-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ Most Kernel-Mode Driver Framework (KMDF) drivers do not need to access Windows D
 -   [Handling WDM IRPs Outside of the Framework](handling-wdm-irps-outside-of-the-framework.md)
 -   [WDM Interface Restrictions](wdm-interface-restrictions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,8 +29,8 @@ Syntax
 DXGKDDI_UPDATEPAGETABLE DxgkDdiUpdatePageTable;
 
 NTSTATUS DxgkDdiUpdatePageTable(
-   IN_CONST_HANDLE                hDevice,
-   INOUT_PDXGKARG_UPDATEPAGETABLE pUpdatePageTable
+   IN_CONST_HANDLE                hDevice,
+   INOUT_PDXGKARG_UPDATEPAGETABLE pUpdatePageTable
 )
 { ... }
 ```
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

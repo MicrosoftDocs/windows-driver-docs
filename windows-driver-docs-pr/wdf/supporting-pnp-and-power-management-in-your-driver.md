@@ -26,9 +26,9 @@ Typically, each of the various drivers in a driver stack is responsible for supp
 -   [Supporting PnP and Power Management in Software-only Drivers](supporting-pnp-and-power-management-in-software-only-drivers.md)
 -   [Supporting PnP and Power Management in Function Drivers](supporting-pnp-and-power-management-in-function-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

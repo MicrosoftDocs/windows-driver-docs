@@ -81,11 +81,11 @@ When specifying **PINNAME\_VIDEO\_NABTS** pins, use the information listed in th
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

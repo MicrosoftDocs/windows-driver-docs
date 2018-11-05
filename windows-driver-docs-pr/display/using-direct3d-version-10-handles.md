@@ -15,9 +15,9 @@ Direct3D version 10 handles are strongly typed to prevent misusage and to enable
 
 [Direct3D Version 10 Kernel Handles](direct3d-version-10-kernel-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

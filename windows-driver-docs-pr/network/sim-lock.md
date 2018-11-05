@@ -41,11 +41,11 @@ Microsoft provides the SIM lock UI. OEM customization is not required for this U
 **Note**  
 SIM lock UI is not configurable by OEMs.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

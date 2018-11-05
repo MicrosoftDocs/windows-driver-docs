@@ -60,7 +60,7 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 </tbody>
 </table>
 
- 
+ 
 
 The MB Interface Model in described further in the following subtopics:
 
@@ -68,9 +68,9 @@ The MB Interface Model in described further in the following subtopics:
 [MB Union Function Descriptors](mb-union-function-descriptors.md)
 [MB Identity Morphing](mb-identity-morphing.md)
 [MB Interface Model Supplement](mb-interface-model-supplement.md)
- 
+ 
 
- 
+ 
 
 
 

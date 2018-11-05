@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_LOUDNESS property specifies whether loudness (overall dyn
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type BOOL and specifies whether loudness is turned on or off. The value **TRUE** indicates that loudness is on. **FALSE** indicates that it is off.
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSNODETYPE\_LOUDNESS**](ksnodetype-loudness.md)
 
- 
+ 
 
- 
+ 
 
 
 

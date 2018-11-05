@@ -66,9 +66,9 @@ For more information on integrating WER into applications, see [Using WER](https
 
 [VERSIONINFO resource](https://msdn.microsoft.com/library/aa381058.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

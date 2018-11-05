@@ -27,9 +27,9 @@ The GUIDType simple type is a **xs:string** that is restricted by the following 
 
 -   \[0-9a-fA-F\]{8}-\[0-9a-fA-F\]{4}-\[0-9a-fA-F\]{4}-\[0-9a-fA-F\]{4}-\[0-9a-fA-F\]{12}
 
- 
+ 
 
- 
+ 
 
 
 

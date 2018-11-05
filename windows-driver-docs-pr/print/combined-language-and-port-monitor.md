@@ -23,9 +23,9 @@ Specialized printer hardware can be supported by a single customized print monit
 
 A combined monitor's UI DLL must define [port monitor client DLL functions](port-monitor-client-dll-functions.md). Its server DLL must define both [port monitor server DLL functions](port-monitor-server-dll-functions.md) and [language monitor functions](language-monitor-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

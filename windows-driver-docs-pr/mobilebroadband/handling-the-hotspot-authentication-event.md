@@ -72,7 +72,7 @@ Windows disconnects from the network and does not reattempt a connection in the 
 **Note**  
 This method does not remove the profile from the system, and the app can be asked for credentials again if the user manually attempts to connect to the network. If the profile is completely removed, the app must supply a new provisioning file that removes the associated profile.
 
- 
+ 
 
 ## <span id="altauth"></span><span id="ALTAUTH"></span>Use alternate authentication methods
 
@@ -82,7 +82,7 @@ If the app can authenticate by using a method other than WISPr, it may do so. Af
 **Note**  
 The HotspotAuthentication event is not invoked for hotspots that do not advertise support for the WISPr protocol. However, this permits an app to choose a different protocol to use in response, or to use a custom version of WISPr if required.
 
- 
+ 
 
 ## <span id="userint"></span><span id="USERINT"></span>Interact with the user
 
@@ -104,9 +104,9 @@ The app’s request to open in the foreground is not guaranteed to succeed. The 
 
 [WISPr authentication](wispr-authentication.md)
 
- 
+ 
 
- 
+ 
 
 
 

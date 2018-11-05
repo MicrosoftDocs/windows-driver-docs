@@ -63,9 +63,9 @@ Requirements
 
 [**WIA\_IPC\_THUMBNAIL\_WIDTH**](wia-ipc-thumbnail-width.md)
 
- 
+ 
 
- 
+ 
 
 
 

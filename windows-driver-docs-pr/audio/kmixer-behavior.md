@@ -28,9 +28,9 @@ In the current KMixer implementation, KMixer's handling of the bits-per-sample a
 
 For more information, see [How KMixer Handles Set-Format Requests](how-kmixer-handles-set-format-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

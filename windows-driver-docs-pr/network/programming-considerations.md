@@ -431,11 +431,11 @@ Likewise, a provider module might use an implementation along the same lines as 
 
 **Note**  The above code example shows one possible method of tracking the number of in-progress calls to an attached network module's NPI functions. A network module might use an alternate method depending on the implementation details of the particular NPI that the network module supports.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,11 +17,11 @@ The following guidelines apply to driver package components when they access or 
 
 **Important**  The INF [**RenFiles**](inf-renfiles-directive.md) and [**DelFiles**](inf-delfiles-directive.md) directives must be used carefully. You should not use these directives in the INF file for a Plug and Play (PnP) function driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

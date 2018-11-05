@@ -56,9 +56,9 @@ Most drivers must handle the following *Dispatch* routines:
 
 The dispatch routines that a driver must provide vary according to the type and functionality of the underlying physical device. For device-type-specific information about IRP major function codes that drivers must handle, see the device-type specific documentation in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

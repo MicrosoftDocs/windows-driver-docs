@@ -48,7 +48,7 @@ Specifies the address of the private cache map.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ Remarks
 
 This extension is supported only in Windows 2000. In Windows XP and later versions of Windows, use the [**dt nt!\_PRIVATE\_CACHE\_MAP Address**](dt--display-type-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

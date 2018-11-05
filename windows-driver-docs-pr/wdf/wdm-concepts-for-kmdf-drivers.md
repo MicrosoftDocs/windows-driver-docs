@@ -64,9 +64,9 @@ Each time a driver receives an IRP, the driver also receives a pointer to the de
 
 WDF drivers typically do not directly access IRPs. The framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that Kernel-Mode Driver Framework (KMDF) and UMDF drivers receive in I/O queues. The framework handles PnP and power management IRPs internally and uses event callback functions to inform the driver of PnP and power events.
 
- 
+ 
 
- 
+ 
 
 
 

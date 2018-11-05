@@ -14,9 +14,9 @@ On some computer hardware architectures, the transfer of data from the CPU (cent
 
 For information on using caches with PIO, see [Flushing Cached Data during PIO Operations](flushing-cached-data-during-pio-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,13 +26,13 @@ SCSI\\t\*v(8)p(16)r(4)
 
 Where:
 
--   *t\** is a device type code of variable length.
+- *t\** is a device type code of variable length.
 
--   *v(8)* is an 8-character vendor identifier.
+- *v(8)* is an 8-character vendor identifier.
 
--   *p(16)* is a 16-character product identifier.
+- *p(16)* is a 16-character product identifier.
 
--   *r(4)* is a 4-character revision level value.
+- *r(4)* is a 4-character revision level value.
 
 The bus enumerator determines the device type by indexing an internal string table, using a numerically encoded SCSI device type code, obtained by querying the device, as shown in the following table. The remaining components are just strings returned by the device, but with special characters (including space, comma, and any nonprinting graphic) replaced with an underscore.
 
@@ -165,7 +165,7 @@ The SCSI Port driver currently returns the following device type strings, the fi
 </tbody>
 </table>
 
- 
+ 
 
 An example of a device ID for a disk drive would be as follows:
 
@@ -199,9 +199,9 @@ GenDisk
 
 The generic identifier is used in INF files for SCSI devices more than any other, because SCSI drivers are typically generic. Be aware that the SCSI Port driver returns no generic name at all for sequential access and "processor" devices.
 
- 
+ 
 
- 
+ 
 
 
 

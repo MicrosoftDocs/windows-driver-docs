@@ -47,15 +47,15 @@ You can override the default system scanning parameters by providing one or more
 | ConnectionIntervalMin     | DWORD 0x10001 | 0x0006    | 0x0C80. Shall be smaller or equal to ConnectionIntervalMax                     |
 | ConnectionIntervalMax     | DWORD 0x10001 | 0x0006    | 0x0C80                                                                         |
 
- 
+ 
 
 **Note**  Changes to scanning parameters make a global impact on the performance of the Bluetooth stack. Making changes to scanning parameters programmatically is not permitted. Using Low Duty Cycle scanning parameters that are too aggressive can not only have a negative impact to the available bandwidth for other Bluetooth Low Energy connections, but also for Bluetooth BR/EDR connections.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

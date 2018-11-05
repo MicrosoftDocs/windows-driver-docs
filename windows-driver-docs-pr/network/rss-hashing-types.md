@@ -204,9 +204,9 @@ If this flag combination is set, the NIC should perform the hash calculations as
 
 A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

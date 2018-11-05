@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 This section of the reference discusses the various debugger *meta-commands* that can be used in CDB, KD, and WinDbg. These commands are preceded by a period (.).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,9 +53,9 @@ If a surface will be directly accessible through the CPU by an application but w
 
 5.  The user-mode display driver returns the unswizzled allocation's virtual address to the application in the **pSurfData** member of D3DDDIARG\_LOCK.
 
- 
+ 
 
- 
+ 
 
 
 

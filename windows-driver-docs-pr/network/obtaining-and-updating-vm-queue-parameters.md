@@ -32,9 +32,9 @@ The overlying driver obtained the filter identifier from an earlier OID\_RECEIVE
 
 An application obtained the filter identifier from the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) OID request.
 
- 
+ 
 
- 
+ 
 
 
 

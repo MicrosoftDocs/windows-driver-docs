@@ -72,7 +72,7 @@ Displays the threadpool log. This log contains stack traces for various operatio
 <span id="-srw____Address___Address_Length_____-stats___"></span><span id="-srw____address___address_length_____-stats___"></span><span id="-SRW____ADDRESS___ADDRESS_LENGTH_____-STATS___"></span>**-srw \[** *Address* **|** *Address Length* **\] \[ -stats \]**   
 Displays the Slim Reader/Writer (SRW) log. If you specify *Address*, records for the SRW lock at that address are displayed. If you specify *Address* and *Length*, records for SRW locks in that address range are displayed. If you include the **-stats** option, the SRW lock statistics are displayed.
 
-<span id="-leak___-m_ModuleName____-r_ResourceType____-a_Address_____-t___"></span><span id="-leak___-m_modulename____-r_resourcetype____-a_address_____-t___"></span><span id="-LEAK___-M_MODULENAME____-R_RESOURCETYPE____-A_ADDRESS_____-T___"></span>**-leak \[ -m** *ModuleName***\] \[ -r** *ResourceType***\] \[ -a** *Address* **\] \[ -t \]**   
+<span id="-leak___-m_ModuleName____-r_ResourceType____-a_Address_____-t___"></span><span id="-leak___-m_modulename____-r_resourcetype____-a_address_____-t___"></span><span id="-LEAK___-M_MODULENAME____-R_RESOURCETYPE____-A_ADDRESS_____-T___"></span>**-leak \[ -m** <em>ModuleName</em>**\] \[ -r** <em>ResourceType</em>**\] \[ -a** *Address* **\] \[ -t \]**   
 Displays the outstanding resources log. These resources may or may not be leaks at any given point. If you specify *Modulename* (including the extension), all outstanding resources in the specified module are displayed. If you specify *ResourceType*, all outstanding resources of that resource type are displayed. If you specify *Address*, records of outstanding resources with that address are displayed. *ResourceType* can be one of the following:
 
 Heap: Displays heap allocations using Win32 Heap APIs
@@ -132,9 +132,9 @@ If an Application Verifier Stop has occurred, the **!avrf** extension with no pa
 
 If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Setting Up a Debugger for Application Verifier" in the Application Verifier documentation.
 
- 
+ 
 
- 
+ 
 
 
 

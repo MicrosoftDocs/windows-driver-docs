@@ -36,9 +36,9 @@ Video capture minidrivers may optionally implement the following properties:
 
 The DirectShow **IAMAnalogVideoDecoder** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

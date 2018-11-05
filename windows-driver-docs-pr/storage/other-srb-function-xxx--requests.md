@@ -47,9 +47,9 @@ Miniport driver designers can assume that their miniport drivers will *never* be
 
 See [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393) structure for more information.
 
- 
+ 
 
- 
+ 
 
 
 

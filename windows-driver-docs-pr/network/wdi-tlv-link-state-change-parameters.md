@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                            | Specifies the current RX link speed. This is a value, in kilobits per second, that is the current RX link speed for this virtualized port. The conversion is 1 kbps = 1000 bps. |
 | UINT8                                             | Specifies the current link quality. This is a value between 0 and 100 that is the current link quality for this virtualized port.                                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

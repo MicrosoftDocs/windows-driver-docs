@@ -21,9 +21,9 @@ You can configure the break status or handling status by doing one of the follow
 
 For a detailed discussion of exceptions and events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

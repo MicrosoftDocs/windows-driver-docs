@@ -17,9 +17,9 @@ The unshaded boxes in the diagram represent components that the Windows operatin
 
 The shaded boxes in the diagram represent DCB components that independent hardware vendors (IHVs) and original equipment manufacturers (OEMs) provide. For more information about these components, see [Vendor-Provided DCB Components](vendor-provided-dcb-components.md).
 
- 
+ 
 
- 
+ 
 
 
 

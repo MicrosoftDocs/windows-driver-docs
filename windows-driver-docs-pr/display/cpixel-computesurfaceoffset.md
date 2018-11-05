@@ -25,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 static void ComputeSurfaceOffset(
-   const D3DSURFACE_DESC *pDescTopLevel,
-         BYTE            *pBits,
-   const RECT            *pRect,
-         D3DLOCKED_RECT  *pLockedRectData
+   const D3DSURFACE_DESC *pDescTopLevel,
+         BYTE            *pBits,
+   const RECT            *pRect,
+         D3DLOCKED_RECT  *pLockedRectData
 );
 ```
 
@@ -79,9 +79,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

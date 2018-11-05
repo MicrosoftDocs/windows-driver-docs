@@ -47,11 +47,11 @@ The following only applies when a *stream* is being closed.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

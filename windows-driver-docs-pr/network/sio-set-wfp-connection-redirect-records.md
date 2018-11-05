@@ -71,7 +71,7 @@ To set the redirect record to the new TCP socket used for connecting to the fina
 </tbody>
 </table>
 
- 
+ 
 
 The Winsock client must allocate a buffer and specify a pointer to the buffer and its size in *InputBuffer* and *InputSize.*
 
@@ -79,7 +79,7 @@ A Winsock client must specify a pointer to an IRP and a completion routine when 
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859714).
 
- 
+ 
 
 For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](https://msdn.microsoft.com/library/windows/hardware/ff571006).
 
@@ -124,9 +124,9 @@ Requirements
 
 [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859714)
 
- 
+ 
 
- 
+ 
 
 
 

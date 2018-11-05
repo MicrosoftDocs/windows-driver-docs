@@ -34,8 +34,8 @@ To see a diagram of the device object stack corresponding to the driver stack in
 
 In Windows Vista and later versions of the operating system, the IDE stack is managed by the [ATA Port Driver](ata-port-driver.md).
 
- 
+ 
 
- 
+ 
 
 

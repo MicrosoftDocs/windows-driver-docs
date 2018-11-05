@@ -20,9 +20,9 @@ The Remote NDIS implementation in Windows Millennium Edition assumes that the Co
 
 If any portion of this sample contradicts a controlling specification, follow the specification.
 
- 
+ 
 
- 
+ 
 
 
 

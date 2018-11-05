@@ -55,7 +55,7 @@ Specifies the duration of the flush timer, in seconds. Starting in Windows 8, y
 
 **Note**  If you start a tracing session in KD filter mode (**-kd**), trace buffers on the target computer are sent to the debugger on the host computer for display. This parameter specifies how often the buffers on the target computer are flushed and sent to the host computer.
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -76,9 +76,9 @@ When the trace session is started, the system assigns it an ordinal number (the 
 
 To stop the ETW logger, use [**!wmitrace.stop**](-wmitrace-stop.md).
 
- 
+ 
 
- 
+ 
 
 
 

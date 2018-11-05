@@ -33,9 +33,9 @@ The path state is supplied by the network layer (OSI layer 3) of the host stack.
 <a href="" id="tcp-connection-state"></a>TCP connection state  
 The TCP state is supplied by the transport layer (OSI layer 4) of the host stack. This state contains all of the necessary TCP parameters for a specific TCP connection.
 
- 
+ 
 
- 
+ 
 
 
 

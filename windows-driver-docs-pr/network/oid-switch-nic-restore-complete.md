@@ -51,7 +51,7 @@ If the extension completes the OID set request of [OID\_SWITCH\_NIC\_RESTORE\_CO
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -81,9 +81,9 @@ Requirements
 
 [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216)
 
- 
+ 
 
- 
+ 
 
 
 

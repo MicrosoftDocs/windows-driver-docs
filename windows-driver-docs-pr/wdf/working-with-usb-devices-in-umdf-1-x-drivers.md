@@ -69,9 +69,9 @@ A UMDF driver can call the [**IWDFUsbTargetDevice::FormatRequestForControlTransf
 
 A UMDF driver can call the [**IWDFUsbTargetDevice::SetPowerPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff560385) method to set the power policy that is used by WinUsb for a USB device. The power policy for a USB device effects changes to power management states for the device.
 
- 
+ 
 
- 
+ 
 
 
 

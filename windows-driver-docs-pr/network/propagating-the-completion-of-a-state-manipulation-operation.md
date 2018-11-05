@@ -56,9 +56,9 @@ In response to an intermediate driver's call to the **NdisM*Xxx*OffloadComplete*
 
 NDIS converts the NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure that was supplied by the intermediate driver to an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure. NDIS passes a pointer to the NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure to the host stack's *ProtocolXxxOffloadComplete* function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ If you type **kdsrv** with no parameters, a message box with help text appears.
 
 For information about using KdSrv, see [KD Connection Servers (Kernel Mode)](kd-connection-servers--kernel-mode-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -205,9 +205,9 @@ If this GDL entry is interpreted by using the VACATION template, the resulting X
     </GDL_ATTRIBUTE>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

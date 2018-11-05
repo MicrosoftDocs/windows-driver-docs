@@ -23,7 +23,6 @@ The **/List** switch of the Enhanced Storage Certificate Management tool lists a
     EhStorCertMgrCmd /List [-Volume:
     VolumeName
     ]
-   
 ```
 
 ## <span id="Subparameters"></span><span id="subparameters"></span><span id="SUBPARAMETERS"></span>Subparameters
@@ -32,9 +31,9 @@ The **/List** switch of the Enhanced Storage Certificate Management tool lists a
 <span id="_______-Volume_______"></span><span id="_______-volume_______"></span><span id="_______-VOLUME_______"></span> **-Volume:**   
 The volume name of an IEEE 1667-compliant USB storage. For more information about the format of this parameter, see [Overview of the Enhanced Storage Certificate Management Tool](overview-of-the-enhanced-storage-certificate-management-tool.md).
 
-**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press Enter.
+**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press Enter.
 
- 
+
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -88,9 +87,9 @@ Certificate Expiration Date     : 5/31/2010
 Certificate Status              : Certificate is Valid
 ```
 
- 
 
- 
+
+
 
 
 

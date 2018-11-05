@@ -34,25 +34,25 @@ If the extension has run-time port data to save, it must follow these guidelines
 
     **Note**  The NDIS\_SWITCH\_EXTENSION\_FRIENDLYNAME data type is type-defined by the [**IF\_COUNTED\_STRING**](https://msdn.microsoft.com/library/windows/hardware/hh451419) structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the **Length** member of this structure. If the string is NULL-terminated, the **Length** member must not include the terminating NULL character.
 
-     
+     
 
 3.  If a feature class is associated with the saved run-time data, the extension sets the **FeatureClassId** with the GUID that uniquely identifies the class.
 
     **Note**  If a feature class is not associated with the saved run-time data, the extension sets the **FeatureClassId** to zero.
 
-     
+     
 
 4.  The extension copies the run-time data to the **SaveData** member and sets the **SaveDataSize** member to the size, in bytes, of the run-time data.
 
 **Note**  The extension must not change the **Header** or **PortId** members of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure.
 
- 
+ 
 
 OID method requests of [OID\_SWITCH\_NIC\_SAVE](https://msdn.microsoft.com/library/windows/hardware/hh598268) are ultimately handled by the underlying miniport edge of the extensible switch. Once this OID method request has been forwarded to the miniport driver through the extensible switch driver stack, the miniport driver completes the OID request with NDIS\_STATUS\_SUCCESS. This notifies the protocol edge of the extensible switch that all extensions in the extensible switch driver stack have been queried for run-time port data. The protocol edge of the extensible switch then issues an OID set request of [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269) to complete the save operation.
 
- 
+ 
 
- 
+ 
 
 
 

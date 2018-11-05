@@ -28,13 +28,13 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.mi
 
 **Note**  The overlying driver obtained the filter ID from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) or [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). The application can obtain the filter ID only from an earlier OID method request of OID\_RECEIVE\_FILTER\_ENUM\_FILTERS.
 
- 
+ 
 
 NDIS handles the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) and [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792) method OID requests for miniport drivers. NDIS obtained the information from an internal cache of the data that it received from the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) OID request.
 
- 
+ 
 
- 
+ 
 
 
 

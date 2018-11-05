@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCIBeginAccess** function obtains an access pointer to display frame buffer based on the given rectangle.
 
- 
+ 
 
- 
+ 
 
 
 

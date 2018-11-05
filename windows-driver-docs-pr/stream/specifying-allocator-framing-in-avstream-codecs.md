@@ -20,9 +20,9 @@ Although drivers cannot influence the frame size on input pins, the maximum numb
 
 In addition to providing allocator framing information in the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) at device initialization time, the driver should also update the relevant [**KSALLOCATOR\_FRAMING\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff560982) structure. This update should be based on the pin's connection media type in the vendor-supplied [*AVStrMiniPinSetDataFormat*](https://msdn.microsoft.com/library/windows/hardware/ff556355) callback routine.
 
- 
+ 
 
- 
+ 
 
 
 

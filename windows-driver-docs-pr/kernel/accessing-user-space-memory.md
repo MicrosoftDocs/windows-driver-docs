@@ -20,9 +20,9 @@ Only highest-level drivers, such as FSDs, can be sure their dispatch routines wi
 
 Lowest-level and intermediate drivers that set up their device objects for [buffered I/O](methods-for-accessing-data-buffers.md) or [direct I/O](methods-for-accessing-data-buffers.md) can rely on the I/O manager or a highest-level driver to pass valid access to locked-down user buffers or to system-space buffers in IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

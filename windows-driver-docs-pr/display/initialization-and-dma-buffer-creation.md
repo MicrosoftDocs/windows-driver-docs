@@ -22,9 +22,9 @@ When the display port driver of the DirectX graphics kernel subsystem (*Dxgkrnl.
 
 Similarly, when the display port driver calls the [**DxgkDdiCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff559615) function, it sets the [**pCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff557570)-&gt;[**Flags**](https://msdn.microsoft.com/library/windows/hardware/ff561039)-&gt;**GdiDevice** member to indicate the device that is used for GDI Hardware Acceleration.
 
- 
+ 
 
- 
+ 
 
 
 

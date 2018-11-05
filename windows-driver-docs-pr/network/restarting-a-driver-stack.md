@@ -29,9 +29,9 @@ NDIS restarts a driver stack after operations such as inserting a filter module 
 
     The binding enters the Restarting state. The protocol driver prepares to resume send and receive operations. If the preparation fails, the binding returns to the Paused state. After the protocol driver is ready to resume send and receive operations, the binding enters the Running state.
 
- 
+ 
 
- 
+ 
 
 
 

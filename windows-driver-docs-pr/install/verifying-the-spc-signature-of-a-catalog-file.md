@@ -47,9 +47,9 @@ In the next example, the following command verifies that *Toastpkg.inf*, which h
 SignTool verify /kp /c tstamd64.cat toastpkg.inf
 ```
 
- 
+ 
 
- 
+ 
 
 
 

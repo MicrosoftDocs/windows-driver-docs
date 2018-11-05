@@ -21,7 +21,7 @@ PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Win
 
 **Tip**  With Windows 10, version 1607 or later, you can use the UWP commands, such as .createpackageapp to debug UWP apps. For more information see [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
 
- 
+ 
 
 **Where to get PLMDebug**
 
@@ -166,9 +166,9 @@ Finally, decrement the debug reference count for the package.
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,12 +20,11 @@ To make the DMus port driver the default for all DirectMusic applications, gener
 ```inf
 Key:    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectMusic\Defaults
 String Value:    DefaultOutputPort
- 
 ```
 
- 
 
- 
+
+
 
 
 

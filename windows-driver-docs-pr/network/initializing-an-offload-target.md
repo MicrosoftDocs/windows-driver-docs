@@ -26,9 +26,9 @@ The following sections describe aspects of initialization that are specific to o
 
 [Allocating Buffer Pools](allocating-buffer-pools.md)
 
- 
+ 
 
- 
+ 
 
 
 

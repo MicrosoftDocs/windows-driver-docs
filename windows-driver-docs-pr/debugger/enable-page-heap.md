@@ -41,7 +41,7 @@ The **Enable page heap** flag turns on page heap verification, which monitors dy
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -53,9 +53,9 @@ This option enables full page heap verification when set for image files and sta
 
 Setting this flag for an image file is the same as typing **gflags /p /enable** *ImageFile* **/full** for the image file at the command line.
 
- 
+ 
 
- 
+ 
 
 
 

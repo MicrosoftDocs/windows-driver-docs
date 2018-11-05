@@ -119,7 +119,7 @@ TAEF's NetFX 4.5 binaries support the execution of async TAEF test methods. This
 
 **Note**  Do not attempt to leverage this functionality with TAEF's NetFX 2.0/3.5 binaries; only the NetFX 4.5 binaries support this feature.
 
- 
+ 
 
 TAEF supports both async **void** and async **Task** test methods (both will result in the same functionality):
 
@@ -145,9 +145,9 @@ Alternatively:
             }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

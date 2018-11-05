@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 Since WMI property qualifiers are often displayable strings, Windows XP and later versions of the operating system provide a mechanism for localizing these qualifiers.
 
- 
+ 
 
- 
+ 
 
 
 

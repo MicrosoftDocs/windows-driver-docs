@@ -33,7 +33,7 @@ The size (in bytes) of the following values.
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_BIP**. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_WEP40**, **WDI_CIPHER_ALGO_WEP104**, or **WDI_CIPHER_ALGO_WEP**. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is in the range of **WDI_CIPHER_ALGO_IHV_START** to **WDI_CIPHER_ALGO_IHV_END**. |
- 
+ 
 
 ## Requirements
 

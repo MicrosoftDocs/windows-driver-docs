@@ -21,7 +21,7 @@ Each miniport driver must have a routine explicitly named **DriverEntry** in ord
 &gt; \[!Note\]
 &gt;  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
 
- 
+ 
 
 Syntax
 ------
@@ -65,9 +65,9 @@ Next, **DriverEntry** calls **ScsiPortInitialize**. If a miniport driver support
 
 [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645)
 
- 
+ 
 
- 
+ 
 
 
 

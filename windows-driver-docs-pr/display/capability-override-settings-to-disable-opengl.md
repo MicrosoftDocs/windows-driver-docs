@@ -18,9 +18,9 @@ For example:
 HKR,, CapabilityOverride,                       %REG_DWORD%,    0x8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

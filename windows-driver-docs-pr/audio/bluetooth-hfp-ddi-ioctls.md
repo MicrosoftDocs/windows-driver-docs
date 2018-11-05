@@ -70,9 +70,9 @@ For information about the structures that work with these IOCTLs, see [Bluetooth
 
 [Bluetooth HFP DDI Structures](bluetooth-hfp-ddi-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ The following IRP-based I/O operations have no buffers and thus no buffering met
 
 -   IRP\_MJ\_LOCK\_CONTROL
 
- 
+ 
 
- 
+ 
 
 
 

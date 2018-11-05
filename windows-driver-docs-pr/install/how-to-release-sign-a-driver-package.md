@@ -33,7 +33,7 @@ Each topic in this section describes a separate procedure in the release-signing
 
 **Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](http://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
 
- 
+ 
 
 Throughout this section, separate computers are used for the various processes involved in release-signing a driver. These computers are referred to as follows:
 
@@ -61,9 +61,9 @@ This section contains the following topics:
 
 [Installing a Release-Signed Driver Package](installing-a-release-signed-driver-package.md)
 
- 
+ 
 
- 
+ 
 
 
 

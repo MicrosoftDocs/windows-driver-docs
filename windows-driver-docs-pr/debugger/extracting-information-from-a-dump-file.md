@@ -35,9 +35,9 @@ To determine the IP address of the computer on which the crash dump was made, fi
 
 To determine the process ID of the target application from a user-mode dump file, use the [**| (Process Status)**](---process-status-.md) command. This will display all the processes being debugged at the time the dump was written. The process marked with a period (**.**) is the current process. Its process ID is given in hexadecimal after the **id:** notation.
 
- 
+ 
 
- 
+ 
 
 
 

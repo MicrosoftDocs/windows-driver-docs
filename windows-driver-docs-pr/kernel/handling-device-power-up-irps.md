@@ -46,9 +46,9 @@ If the device is still present, the bus driver then performs the tasks required 
 
 For a list of best practices to achieve fast startup times from power-off, standby, and hibernation states, see [Improving System Startup Performance](improving-system-startup-performance.md).
 
- 
+ 
 
- 
+ 
 
 
 

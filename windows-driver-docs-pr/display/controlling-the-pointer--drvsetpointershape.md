@@ -29,9 +29,9 @@ If a display driver controls the pointer, then the driver must support [**DrvSet
 
 The driver can call [**EngSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff565017) to have GDI manage a software cursor.
 
- 
+ 
 
- 
+ 
 
 
 

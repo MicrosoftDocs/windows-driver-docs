@@ -90,9 +90,9 @@ The following figure shows the sequence of events in **SetupDiCallClassInstaller
 
 The operating system performs some operations for each DIF code. Vendor-supplied co-installers and class installers can participate in the installation activities. Note that **SetupDiCallClassInstaller** calls co-installers that registered for postprocessing even if the DIF code fails.
 
- 
+ 
 
- 
+ 
 
 
 

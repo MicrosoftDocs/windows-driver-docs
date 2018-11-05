@@ -26,9 +26,9 @@ Processes using tile resources get a second virtual address space associated wit
 
 When physical graphics adapters are linked to a linked display adapter chain, there is still a single GPU virtual address space per process (except the paging process). But the virtual address space on each physical adapter is mapped by its own set of page tables.
 
- 
+ 
 
- 
+ 
 
 
 

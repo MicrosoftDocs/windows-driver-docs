@@ -78,15 +78,15 @@ Microsoft provides four DirectShow filters that work with Stream class minidrive
 </tbody>
 </table>
 
- 
+ 
 
 Each of these filters, and the functionality they expose (video capture, TV/radio tuning, TV audio and crossbar) appears in a filter graph as a separate filter exposing unique interfaces.
 
 For more information about the DirectShow interfaces listed in the table above, see the DirectShow Software Development Kit (SDK). The DirectShow SDK documentation also includes a sample application (AMCAP) that demonstrates how to construct the full range of both WDM and VfW capture graphs.
 
- 
+ 
 
- 
+ 
 
 
 

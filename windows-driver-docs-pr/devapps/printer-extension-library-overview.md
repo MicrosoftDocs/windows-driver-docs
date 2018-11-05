@@ -47,7 +47,7 @@ In order to convert the C# interfaces, classes and methods to something supporte
 
 **Note**  The **Output type** for the PrinterExtensionHelperLibrary assembly is specified on **Application** page of the project properties window.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -68,9 +68,9 @@ In order to convert the C# interfaces, classes and methods to something supporte
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

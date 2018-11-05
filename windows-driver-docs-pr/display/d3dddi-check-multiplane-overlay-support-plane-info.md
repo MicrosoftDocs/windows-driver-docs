@@ -72,9 +72,9 @@ Requirements
 
 [**D3DDDI\_MULTIPLANE\_OVERLAY\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/hh780234)
 
- 
+ 
 
- 
+ 
 
 
 

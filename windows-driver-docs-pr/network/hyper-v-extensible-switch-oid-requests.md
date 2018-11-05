@@ -27,9 +27,9 @@ The Hyper-V extensible switch interface includes object identifier (OID) request
 
 For more information on how extensions and NDIS filter drivers handle OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

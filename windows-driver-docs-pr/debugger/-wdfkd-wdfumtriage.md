@@ -47,9 +47,9 @@ Here is an example of the output of **!wdfkd\_wdfumtriage**.
 
 ![driver object list output from !wdfkd.wdfumtriage](images/wdfumtriage2.png)
 
- 
+ 
 
- 
+ 
 
 
 

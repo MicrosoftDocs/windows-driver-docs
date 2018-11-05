@@ -27,9 +27,9 @@ When offloading a TCP connection that is in the FIN\_WAIT\_2 state, the host sta
 
 Similarly, when terminating the offload of a TCP connection that is in the FIN\_WAIT\_2 state, an offload target passes the value of its FIN\_WAIT\_2 timer for the connection to the host stack. The offload target passes this value in the retransmit **TimeoutDelta** member of the TCP\_OFFLOAD\_STATE\_DELEGATED structure.The host stack uses this value as the starting value for its FIN\_WAIT\_2 timer for the connection. If the offload target was not running the FIN\_WAIT\_2 timer, it should supply a value of -1 in the retransmit **TimeoutDelta** member. If the offload target supplies a value of 0 in the retransmit **TimeoutDelta** member, the host stack assumes that the offload target's FIN\_WAIT\_2 timer was running, and the host stack's FIN\_WAIT\_2 timer expires immediately.
 
- 
+ 
 
- 
+ 
 
 
 

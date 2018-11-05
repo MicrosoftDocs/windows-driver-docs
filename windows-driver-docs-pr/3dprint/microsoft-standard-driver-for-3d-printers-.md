@@ -61,7 +61,7 @@ The compatible ID for a 3D printer is shown in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 In the header file that is included in the 3D printer firmware, the IHV must specify the Compatible ID as shown here:
 
@@ -115,7 +115,7 @@ As stated in the above section, IHVs have access to several base configurations.
 | Job3DOutputAreaHeight | 270000 |
 | Filamentdiameter      | 2850   |
 
- 
+ 
 
 For more information about these parameters, please refer to the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375) documentation.
 
@@ -205,9 +205,9 @@ For more information, see the following documents and resources:
 
 You can also contact the Microsoft 3D Printing team at [Ask 3D Printing Questions](http://go.microsoft.com/fwlink/p/?LinkId=534751) (ask3dprint@microsoft.com).
 
- 
+ 
 
- 
+ 
 
 
 

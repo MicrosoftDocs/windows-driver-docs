@@ -25,9 +25,9 @@ GDI manages bitmaps in all [*DIB*](https://msdn.microsoft.com/library/windows/ha
 
 If the device has a [*frame buffer*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-frame-buffer) in a DIB format, GDI can perform any or all graphics output directly to the frame buffer, thereby reducing the size of the driver. If the device uses a nonstandard-format frame buffer, then the driver must implement all required [drawing functions](optional-display-driver-functions.md). GDI can still simulate most drawing functions, although a performance cost is incurred: the pixels must be copied into a standard format bitmap before they can be operated on by GDI, and then be copied back to the original format after drawing is complete.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -126,9 +126,9 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 [**AVC\_FUNCTION\_SEND\_RESPONSE**](avc-function-send-response.md), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -76,9 +76,9 @@ Requirements
 
 [**IRP\_MN\_QUERY\_STOP\_DEVICE**](irp-mn-query-stop-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

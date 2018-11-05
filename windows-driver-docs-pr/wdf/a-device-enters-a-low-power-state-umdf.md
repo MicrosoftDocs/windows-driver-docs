@@ -33,9 +33,9 @@ For each UMDF-based function and filter driver that supports the device, the fra
 
 To see a diagram that shows these steps, see the orderly removal figure in [A User Unplugs a Device](a-user-unplugs-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

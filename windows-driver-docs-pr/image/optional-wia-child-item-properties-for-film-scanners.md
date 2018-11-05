@@ -70,9 +70,9 @@ The WIA film scanner child item can optionally support the following WIA propert
 
 [**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
 
- 
+ 
 
- 
+ 
 
 
 

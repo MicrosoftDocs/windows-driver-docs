@@ -46,9 +46,9 @@ Executable files are loaded into the address space of a process using a memory m
 
 Thus, the file system ensures that a memory mapped file, including an executable image, cannot be deleted even though the file is not open.
 
- 
+ 
 
- 
+ 
 
 
 

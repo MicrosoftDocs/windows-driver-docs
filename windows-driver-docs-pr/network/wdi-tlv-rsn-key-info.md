@@ -28,7 +28,7 @@ The size (in bytes) of the following values.
 | UINT64 | A UINT64 value that specifies the replay counter. |
 | UINT8\[16\] | A UINT8 array that specifies the IEEE 802.11 key confirmation key (KCK). |
 | UINT8\[16\] | A UINT8 array that specifies the IEEE 802.11 key encryption key (KEK).  |
- 
+ 
 
 ## Requirements
 

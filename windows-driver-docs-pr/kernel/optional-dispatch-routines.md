@@ -42,9 +42,9 @@ The driver of a mass-storage device that caches data internally must provide *Di
 
 Any intermediate driver layered above a driver that handles [**IRP\_MJ\_FLUSH\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff550760) and [**IRP\_MJ\_SHUTDOWN**](https://msdn.microsoft.com/library/windows/hardware/ff550807) requests also provide *DispatchShutdown* and *DispatchFlushBuffers* routines.
 
- 
+ 
 
- 
+ 
 
 
 

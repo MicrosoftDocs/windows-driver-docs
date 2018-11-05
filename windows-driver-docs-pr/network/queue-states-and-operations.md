@@ -194,11 +194,11 @@ In the following table, the headings are the queue states. Major events are list
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  The events listed in the preceding table include some secondary events that do not result in a state change. These secondary events are included in the table to specify the states where these events are valid.
 
- 
+ 
 
 The primary queue events are defined as follows:
 
@@ -220,9 +220,9 @@ A miniport driver can only indicate receive packets for a queue that is in the R
 <a href="" id="oid-receive-filter-free-queue-set-request-"></a>OID\_RECEIVE\_FILTER\_FREE\_QUEUE set request.  
 An overlying driver freed a queue. The driver issues the DMA-stopped status indication (with [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567417)), the driver enters the Freeing state. When all of the outstanding receive indications are complete and the queue resources are freed, the queue is undefined.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_WPD [device interface class](https://msdn.microsoft.com/li
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -83,9 +83,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_WPD_PRIVATE**](guid-devinterface-wpd-private.md)
 
- 
+ 
 
- 
+ 
 
 
 

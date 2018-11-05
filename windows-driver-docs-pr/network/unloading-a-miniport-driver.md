@@ -24,9 +24,9 @@ A miniport driver's *MiniportDriverUnload* function should also release any driv
 
 The functionality of the *MiniportDriverUnload* function is driver-specific. As a general rule, *MiniportDriverUnload* should undo the operations that were performed during driver initialization. For more information about driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

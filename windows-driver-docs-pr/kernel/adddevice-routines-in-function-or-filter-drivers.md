@@ -60,9 +60,9 @@ An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) r
 
 A driver must not start controlling the device until it receives an **IRP\_MN\_START\_DEVICE** containing the list of hardware resources assigned to the device by the PnP manager.
 
- 
+ 
 
- 
+ 
 
 
 

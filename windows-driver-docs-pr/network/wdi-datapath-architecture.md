@@ -24,11 +24,11 @@ In addition to the TX/RX function, the TAL provides a Target Interface Layer (TI
 | Management of Host-Target communication | Example: Allocate and manage the DMA channels required for control and data paths.                                                                                               |
 | Bus adaptation/abstraction              | Provide a standard host/target communication API that abstracts the communication differences between different bus types, software/hardware bus endpoints, and bus DMA engines. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

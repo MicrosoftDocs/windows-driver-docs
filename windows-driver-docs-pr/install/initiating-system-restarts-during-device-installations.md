@@ -15,9 +15,9 @@ In the rare cases in which it is necessary for the system to be restarted to com
 
 -   During update installations, a device's installation application can call [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534), which determines whether a system restart is necessary.
 
- 
+ 
 
- 
+ 
 
 
 

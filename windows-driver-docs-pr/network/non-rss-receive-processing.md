@@ -48,9 +48,9 @@ The following process repeats for each non-RSS interrupt cycle:
 
 7.  The DPC enables the interrupts. This interrupt cycle is complete and the process starts again.
 
- 
+ 
 
- 
+ 
 
 
 

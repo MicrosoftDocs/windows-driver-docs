@@ -13,11 +13,13 @@ ms.localizationpriority: medium
 *TTD Event* objects are used to give information about important events that happened during a time travel trace.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Type | Describes the type of event that happened. Possible values are: ThreadCreated, ThreadTerminated, ModuleLoaded, ModuleUnloaded, Exception |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the event occurred. |

@@ -61,7 +61,7 @@ The following requirements and restrictions apply to Internet protocol security 
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -77,9 +77,9 @@ The following requirements and restrictions apply to Internet protocol security 
 
 -   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](https://msdn.microsoft.com/library/windows/hardware/ff549197).
 
- 
+ 
 
- 
+ 
 
 
 

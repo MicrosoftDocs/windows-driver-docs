@@ -61,9 +61,9 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

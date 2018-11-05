@@ -32,9 +32,9 @@ Determines the current change state for a filter.
 
 This method set is implemented on filters. The network provider filter can use this method set to begin a list of changes, make the changes, then commit them all at once.
 
- 
+ 
 
- 
+ 
 
 
 

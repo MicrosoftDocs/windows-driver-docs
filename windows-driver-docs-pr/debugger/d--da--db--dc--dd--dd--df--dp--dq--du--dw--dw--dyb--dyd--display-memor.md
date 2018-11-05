@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
 
 
-The **d\*** commands display the contents of memory in the given range.
+The **d\\*** commands display the contents of memory in the given range.
 
 ```dbgcmd
 d{a|b|c|d|D|f|p|q|u|w|W} [Options] [Range] 
@@ -72,7 +72,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -101,7 +101,7 @@ This command exists in the following forms. The second characters of the **dd**,
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>d</strong></p></td>
-<td align="left"><p>This displays data in the same format as the most recent <strong>d*</strong> command. If no previous <strong>d*</strong> command has been issued, <strong>d</strong> has the same effect as <strong>db</strong>.</p>
+<td align="left"><p>This displays data in the same format as the most recent <strong>d<em></strong> command. If no previous <strong>d</em></strong> command has been issued, <strong>d</strong> has the same effect as <strong>db</strong>.</p>
 <p>Notice that <strong>d</strong> repeats the most recent command that began with <strong>d</strong>. This includes <strong>dda</strong>, <strong>ddp</strong>, <strong>ddu</strong>, <strong>dpa</strong>, <strong>dpp</strong>, <strong>dpu</strong>, <strong>dqa</strong>, <strong>dqp</strong>, <strong>dqu</strong>, <strong>dds</strong>, <strong>dps</strong>, <strong>dqs</strong>, <strong>ds</strong>, <strong>dS</strong>, <strong>dg</strong>, <strong>dl</strong>, <strong>dt</strong>, and <strong>dv</strong>, as well as the display commands on this page. If the parameters given after <strong>d</strong> are not appropriate, errors may result.</p></td>
 </tr>
 <tr class="even">
@@ -138,7 +138,7 @@ This command exists in the following forms. The second characters of the **dd**,
 </tr>
 <tr class="even">
 <td align="left"><p><strong>dp</strong></p></td>
-<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>dd</strong> or <strong>dq</strong>, depending on whether the target computer's processor architecture is 32-bit or 64-bit, respectively.</p>
+<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>dd</strong> or <strong>dq</strong>, depending on whether the target computer&#39;s processor architecture is 32-bit or 64-bit, respectively.</p>
 <p>The default count is 32 DWORDs or 16 quad-words (128 bytes).</p></td>
 </tr>
 <tr class="odd">
@@ -176,13 +176,13 @@ This command exists in the following forms. The second characters of the **dd**,
 </tbody>
 </table>
 
- 
+ 
 
 If you attempt to display an invalid address, its contents are shown as question marks (**?**).
 
- 
+ 
 
- 
+ 
 
 
 

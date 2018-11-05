@@ -56,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobResponse</strong>](createscanjobresponse.md)</p></td>
+<td><p><a href="createscanjobresponse.md" data-raw-source="[&lt;strong&gt;CreateScanJobResponse&lt;/strong&gt;](createscanjobresponse.md)"><strong>CreateScanJobResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>RetrieveImageRequest</strong>](retrieveimagerequest.md)</p></td>
+<td><p><a href="retrieveimagerequest.md" data-raw-source="[&lt;strong&gt;RetrieveImageRequest&lt;/strong&gt;](retrieveimagerequest.md)"><strong>RetrieveImageRequest</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,9 +78,9 @@ The **JobToken** element is paired with the [**JobId**](jobid.md) element to uni
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

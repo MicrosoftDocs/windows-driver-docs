@@ -54,9 +54,9 @@ The finalization of a NET_ROOT structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the NET_ROOT structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

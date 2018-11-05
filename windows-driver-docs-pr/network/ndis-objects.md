@@ -19,9 +19,9 @@ Components that do not have an NDIS handle use the [**NdisAllocateGenericObject*
 
 For information about using generic objects, see [Obtaining Pool Handles](obtaining-pool-handles.md).
 
- 
+ 
 
- 
+ 
 
 
 

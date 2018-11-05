@@ -93,9 +93,9 @@ An adapter driver can use the system-supplied DMusUARTCapture miniport driver to
 
 A DirectMusic application can also run through a **midiOut***Xxx* device such as SWMidi (Swmidi.sys) if it chooses to. For simplicity, this path is omitted from the preceding figure. The DMusic driver (Dmusic.sys) requires an initial DLS download in order to operate correctly; using SWMidi avoids this requirement.
 
- 
+ 
 
- 
+ 
 
 
 

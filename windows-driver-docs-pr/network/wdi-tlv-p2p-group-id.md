@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_DEVICE\_ADDRESS**](wdi-tlv-p2p-device-address.md) |                                |          | Specifies the device address of the Wi-Fi Direct GO. |
 | [**WDI\_TLV\_SSID**](wdi-tlv-ssid-list.md)                          |                                |          | Specifies the Group SSID.                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

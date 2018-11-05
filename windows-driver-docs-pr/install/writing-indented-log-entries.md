@@ -53,7 +53,7 @@ To change the indentation depth for a section, call a SetupAPI logging function 
 </tbody>
 </table>
 
- 
+ 
 
 For example, the following sequence of calls to [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) writes a sequence of indented log entries after the section header whose *section_title* field is "Indentation Example" and whose *instance_identifier* field is "Instance 0".
 
@@ -109,9 +109,9 @@ In the following example, ellipsis (...) represents zero or more additional log 
 
 For another example of indented section entries that was taken from an actual text log, see [Format of a Text Log Section Body](format-of-a-text-log-section-body.md).
 
- 
+ 
 
- 
+ 
 
 
 

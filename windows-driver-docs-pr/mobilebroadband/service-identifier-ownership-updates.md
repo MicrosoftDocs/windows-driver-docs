@@ -37,9 +37,9 @@ If the ownership of an IMSI changes, the new operator must send an email to sysd
 
 You should receive an acknowledgement emails with 24 hours that your request was received. However, it could take up to 5 business days to process the request. If we have conflicts, we’ll send you an email asking for additional information.
 
- 
+ 
 
- 
+ 
 
 
 

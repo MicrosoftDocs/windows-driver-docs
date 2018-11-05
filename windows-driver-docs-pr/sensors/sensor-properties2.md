@@ -23,11 +23,11 @@ Each property is represented by a *property key*, a GUID value that identifies a
 |[Other sensor properties](other-sensor-properties.md)|In addition to the [Common sensor properties](common-sensor-properties.md) and the [Enumeration properties](enumeration-properties.md), there are other sensor properties that are specific to certain types of sensors. This section discusses these other properties.|
 |[Data field properties](data-field-properties.md)|This topic describes the sensor properties that are used for data fields only.|
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

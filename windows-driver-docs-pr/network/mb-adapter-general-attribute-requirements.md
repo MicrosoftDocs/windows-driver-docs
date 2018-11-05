@@ -27,15 +27,15 @@ The following table describes the values that miniport drivers should set the me
 <td align="left"><p>IfType</p></td>
 <td align="left"><p>GSM-based devices must specify IF_TYPE_WWANPP.</p>
 <p>CDMA-based devices specify IF_TYPE_WWANPP2.</p>
-<p>The value must match the *IfType value specified in the miniport driver's INF file.</p></td>
+<p>The value must match the *IfType value specified in the miniport driver&#39;s INF file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MediaType</p></td>
-<td align="left"><p>The value must match the *MediaType value specified in the miniport driver's INF file. For example, either <strong>NdisMediumWirelessWan</strong> or <strong>NdisMedium802_3</strong>.</p></td>
+<td align="left"><p>The value must match the *MediaType value specified in the miniport driver&#39;s INF file. For example, either <strong>NdisMediumWirelessWan</strong> or <strong>NdisMedium802_3</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PhysicalMediumType</p></td>
-<td align="left"><p>The value must match the *PhysicalMediaType value specified in the miniport driver's INF file. The value must be <strong>NdisPhysicalMediumWirelessWan</strong>.</p></td>
+<td align="left"><p>The value must match the *PhysicalMediaType value specified in the miniport driver&#39;s INF file. The value must be <strong>NdisPhysicalMediumWirelessWan</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AccessType</p></td>
@@ -44,11 +44,11 @@ The following table describes the values that miniport drivers should set the me
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

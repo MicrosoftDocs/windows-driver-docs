@@ -114,7 +114,7 @@ The following code example shows an ID string, which shows the optional command 
 
 **Note**   All of the text must be on one line.
 
- 
+ 
 
 ```cpp
 MANUFACTURER:ACME Manufacturing;
@@ -124,9 +124,9 @@ COMMENT:Anything you like;
 ACTIVE COMMAND SET:PCL;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

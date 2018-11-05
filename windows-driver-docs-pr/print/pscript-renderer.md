@@ -23,9 +23,9 @@ The renderer is also responsible for sending text rendered image data, along wit
 
 You can modify Pscript's rendering operations by providing a [rendering plug-in](rendering-plug-ins.md), which is described in the section entitled [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

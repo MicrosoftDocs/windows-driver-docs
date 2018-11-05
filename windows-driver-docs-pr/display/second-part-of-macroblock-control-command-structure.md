@@ -36,9 +36,9 @@ The **bNumCoef** structure member is an array of six elements. The *i*th element
 
 The **wTotalNumCoef** structure member indicates the total number of coefficients in the residual difference data buffer for the entire macroblock. This member is used only when *HostResidDiff* is zero and the **bChromaFormat** member of [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) is not equal to 1 (4:2:0).
 
- 
+ 
 
- 
+ 
 
 
 

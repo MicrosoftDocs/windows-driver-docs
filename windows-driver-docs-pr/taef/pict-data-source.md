@@ -94,18 +94,17 @@ As shown in the above examples, you need to specify the name of the model file a
 
 If you want to pass command options to PICT, you can use metadata for this purpose. Use the following table to map the command options of Pict.exe to TAEF metadata.
 
-| pict.exe command syntax | Native TAEF metadata syntax                               | Managed TAEF metadata syntax                      |
-|-------------------------|-----------------------------------------------------------|---------------------------------------------------|
-| /o:3                    | TEST\_METHOD\_PROPERTY(L"Pict:Order", L"3")               | \[TestProperty("Pict:Order", "3")\]               |
-| /d:,                    | TEST\_METHOD\_PROPERTY(L"Pict:ValueSeparator", L",")      | \[TestProperty("Pict:ValueSeparator", ",")\]      |
-| /a:|                    | TEST\_METHOD\_PROPERTY(L"Pict:AliasSeparator", L"|")      | \[TestProperty("Pict:AliasSeparator", "|")\]      |
-| /n:~                    | TEST\_METHOD\_PROPERTY(L"Pict:NegativeValuePrefix", L"~") | \[TestProperty("Pict:NegativeValuePrefix", "~")\] |
-| /e:test.seed            | TEST\_METHOD\_PROPERTY(L"Pict:SeedingFile", L"test.seed") | \[TestProperty("Pict:SeedingFile", "test.seed")\] |
-| /r                      | TEST\_METHOD\_PROPERTY(L"Pict:Random", L"true")           | \[TestProperty("Pict:Random", "true")\]           |
-| /r:33                   | TEST\_METHOD\_PROPERTY(L"Pict:RandomSeed", L"33")         | \[TestProperty("Pict:RandomSeed", "33")\]         |
-| /c                      | TEST\_METHOD\_PROPERTY(L"Pict:CaseSensitive", L"true")    | \[TestProperty("Pict:CaseSensitive", "true")\]    |
 
- 
+| pict.exe command syntax |                Native TAEF metadata syntax                |           Managed TAEF metadata syntax            |
+|-------------------------|-----------------------------------------------------------|---------------------------------------------------|
+|          /o:3           |        TEST\_METHOD\_PROPERTY(L"Pict:Order", L"3")        |        \[TestProperty("Pict:Order", "3")\]        |
+|          /d:,           |   TEST\_METHOD\_PROPERTY(L"Pict:ValueSeparator", L",")    |   \[TestProperty("Pict:ValueSeparator", ",")\]    |
+|           /a:           |                                                           | TEST\_METHOD\_PROPERTY(L"Pict:AliasSeparator", L" |
+|          /n:~           | TEST\_METHOD\_PROPERTY(L"Pict:NegativeValuePrefix", L"~") | \[TestProperty("Pict:NegativeValuePrefix", "~")\] |
+|      /e:test.seed       | TEST\_METHOD\_PROPERTY(L"Pict:SeedingFile", L"test.seed") | \[TestProperty("Pict:SeedingFile", "test.seed")\] |
+|           /r            |      TEST\_METHOD\_PROPERTY(L"Pict:Random", L"true")      |      \[TestProperty("Pict:Random", "true")\]      |
+|          /r:33          |     TEST\_METHOD\_PROPERTY(L"Pict:RandomSeed", L"33")     |     \[TestProperty("Pict:RandomSeed", "33")\]     |
+|           /c            |  TEST\_METHOD\_PROPERTY(L"Pict:CaseSensitive", L"true")   |  \[TestProperty("Pict:CaseSensitive", "true")\]   |
 
 Any of the above metadata can be set at the command prompt, in the DataSource property, or as test, class, or module level metadata, with precedence in that order. To set it at the command prompt, use the syntax:
 
@@ -308,9 +307,9 @@ MySeedingResourceName DATAFILE "seed.txt"
 
 The DataSource metadata value will remain the same as it did when the model was a file. Likewise in native code, you could make the resource name be the same as the file name. TAEF will first look for the presence of the actual file with the DataSource name. If the file is not found, it proceed by looking in the test module's resources. Since changing the DataSource stored in the resource requires recompiling, you can leverage this design by copying over the DataSource file to the same location as the test dll while developing (and naming the resource name to be the same as the file name). Once you are done testing, move (not copy) the file back to the code directory and recompile to embed the resource.
 
- 
 
- 
+
+
 
 
 

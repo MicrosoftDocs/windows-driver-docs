@@ -47,13 +47,13 @@ The KSPROPERTY\_WAVE\_VOLUME property specifies a wave device's volume setting.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSWAVE_VOLUME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567252)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567252" data-raw-source="[&lt;strong&gt;KSWAVE_VOLUME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567252)"><strong>KSWAVE_VOLUME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSWAVE\_VOLUME structure that describes the amount of left and right attenuation.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSWAVE\_VOLUME**](https://msdn.microsoft.com/library/windows/hardware/ff567252)
 
- 
+ 
 
- 
+ 
 
 
 

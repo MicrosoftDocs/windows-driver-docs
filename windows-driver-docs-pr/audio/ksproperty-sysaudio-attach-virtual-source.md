@@ -47,13 +47,13 @@ The KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE property attaches a virtual so
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>SYSAUDIO_ATTACH_VIRTUAL_SOURCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538480)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538480" data-raw-source="[&lt;strong&gt;SYSAUDIO_ATTACH_VIRTUAL_SOURCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538480)"><strong>SYSAUDIO_ATTACH_VIRTUAL_SOURCE</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a structure of type SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE that specifies the property and a virtual source index.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-create-virtual-source.md)
 
- 
+ 
 
- 
+ 
 
 
 

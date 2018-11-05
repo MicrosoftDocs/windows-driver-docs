@@ -17,11 +17,11 @@ Use the sections in this topic when you are planning to add a new APN to the bas
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
--   On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
+- On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
 
--   On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
+- On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
 
--   A username and password for the network connection.
+- A username and password for the network connection.
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 

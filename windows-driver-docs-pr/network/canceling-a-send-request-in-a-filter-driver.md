@@ -54,9 +54,9 @@ NDIS calls a filter driver's [*FilterCancelSendNetBufferLists*](https://msdn.mic
 
 4.  Calls the **NdisFCancelSendNetBufferLists** function to pass the cancel send request to underlying drivers. The filter driver passes on the cancellation identifier that it received from the overlying driver. The cancel operation proceeds as with a filter-driver-originated cancel send operation.
 
- 
+ 
 
- 
+ 
 
 
 

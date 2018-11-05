@@ -27,9 +27,9 @@ The folder structure of a zip file printed from 3D Builder is shown here:
 
 ![3d builder zip file layout](images/wsd-app-17.png)
 
- 
+ 
 
- 
+ 
 
 
 

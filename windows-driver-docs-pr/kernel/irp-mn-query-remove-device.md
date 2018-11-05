@@ -78,9 +78,9 @@ Requirements
 
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

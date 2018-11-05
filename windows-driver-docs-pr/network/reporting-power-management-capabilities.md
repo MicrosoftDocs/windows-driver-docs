@@ -49,7 +49,7 @@ For example, if your driver supports 8 flexible bitmap patterns, IPv4 TCP SYN (v
 
 **Note**  The total number of WOL patterns does not include the magic packet wake-up pattern.
 
- 
+ 
 
 For more information about WOL protocol patterns, see [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
 
@@ -98,9 +98,9 @@ Overlying drivers can use the [OID\_PM\_HARDWARE\_CAPABILITIES](https://msdn.mic
 
 Overlying drivers can use the [OID\_PM\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569765) OID to query the currently available power management capabilities of a network adapter. NDIS handles this OID request on behalf of the miniport driver. NDIS miniport drivers are not required to support the OID\_PM\_CURRENT\_CAPABILITIES OID request.
 
- 
+ 
 
- 
+ 
 
 
 

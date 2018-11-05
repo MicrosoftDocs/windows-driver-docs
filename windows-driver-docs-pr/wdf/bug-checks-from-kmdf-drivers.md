@@ -22,9 +22,9 @@ For information about the types of driver errors that the framework checks for, 
 
 Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](https://msdn.microsoft.com/library/windows/hardware/ff551166).
 
- 
+ 
 
- 
+ 
 
 
 

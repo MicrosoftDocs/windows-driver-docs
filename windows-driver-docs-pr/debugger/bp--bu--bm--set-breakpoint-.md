@@ -129,7 +129,7 @@ Specifies a pattern. The debugger tries to match this pattern to existing symbol
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -209,9 +209,9 @@ bu1 @!"myprog!openFilter";
 bp2 0x00421600 ;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

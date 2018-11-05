@@ -37,9 +37,9 @@ The RF discovery configuration can be set by the NFC client driver through the [
 
 The LLCP configuration can be set by the NFC client driver through the [**NfcCxSetLlcpConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905615) method provided by the NFC CX. The LLCP configuration should be done during initialization after [**NfcCxDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/dn905611), otherwise an error is returned.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

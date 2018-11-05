@@ -43,7 +43,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NETTXQUEUE and NETRXQUEUE objects with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 
@@ -113,9 +113,9 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,9 +15,9 @@ Miniport drivers that implement the [MSiSCSI\_Operations WMI class](msiscsi-oper
 
 The MSiSCSI\_Operations WMI Class is unpublished. For a description of the parameters of the **DeleteInitiatorNodeName** method, see the member descriptions for the [**DeleteInitiatorNodeName\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff552505) and [**DeleteInitiatorNodeName\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff552506) structures.
 
- 
+ 
 
- 
+ 
 
 
 

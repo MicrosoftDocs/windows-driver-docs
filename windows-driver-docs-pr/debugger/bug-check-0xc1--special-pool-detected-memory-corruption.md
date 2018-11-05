@@ -97,7 +97,7 @@ Parameter 4 indicates the type of violation.
 </tbody>
 </table>
 
- 
+ 
 
 The \_POOL\_TYPE codes are enumerated in ntddk.h. In particular, zero indicates nonpaged pool and one indicates paged pool.
 
@@ -113,9 +113,9 @@ Obtain a backtrace of the current thread. This backtrace will usually reveal the
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

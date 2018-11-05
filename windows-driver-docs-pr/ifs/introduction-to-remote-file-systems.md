@@ -36,7 +36,7 @@ Microsoft also includes support for several other remote file systems on Windows
 
 **Note**  In versions of the Windows operating system prior to Windows Server 2003 R2, you could obtain NFS by installing Microsoft Services for UNIX. With Windows Server 2003 R2 and later versions of the Windows operating system, NFS is included as an optional Windows component.
 
- 
+ 
 
 Remote file systems are implemented by a collection of software components. The number and complexity of the software components required varies based on the design and complexity of the remote file system.
 
@@ -50,9 +50,9 @@ This section contains the following topic:
 
 [Components of a Remote File System](components-of-a-remote-file-system.md)
 
- 
+ 
 
- 
+ 
 
 
 

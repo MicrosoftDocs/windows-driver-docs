@@ -34,9 +34,9 @@ If the **\*DefaultOption** directive is missing, the parser will assume that the
 
 You can also [change the default GDL configuration](changing-the-default-gdl-configuration.md).
 
- 
+ 
 
- 
+ 
 
 
 

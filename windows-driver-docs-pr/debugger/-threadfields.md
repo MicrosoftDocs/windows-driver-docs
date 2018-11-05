@@ -45,7 +45,7 @@ The **!threadfields** extension displays the names and offsets of the fields wit
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -94,9 +94,9 @@ kd> !threadfields
     HardErrorsAreDisabled:         0x239
 ```
 
- 
+ 
 
- 
+ 
 
 
 

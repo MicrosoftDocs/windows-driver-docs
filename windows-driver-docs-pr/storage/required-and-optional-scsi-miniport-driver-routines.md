@@ -48,9 +48,9 @@ The following sections describe the requirements for and functionality of each o
 
 [Error Handling in SCSI Miniport Drivers](error-handling-in-scsi-miniport-drivers.md) describes error-handling requirements for SCSI miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

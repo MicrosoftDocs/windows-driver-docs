@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 There are two major steps involved in testing the upgrade of network components. These are described in the following topics:
 
@@ -25,9 +25,9 @@ There are two major steps involved in testing the upgrade of network components.
 
 [Running the Upgrade Test and Examining the Results](running-the-upgrade-test-and-examining-the-results.md)
 
- 
+ 
 
- 
+ 
 
 
 

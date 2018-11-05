@@ -27,9 +27,9 @@ Versions of DirectDraw before DirectX 5.0 allowed the driver to express pitch al
 
 If a driver implemented the [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) callback, it could be assured that any incoming surface would have its **lPitch** member set to an aligned value. For backward-compatibility, this behavior still exists. Step three maintains exactly the same behavior, unless the driver has exposed a **GetHeapAlignment** entry point (see the [**DD\_GETHEAPALIGNMENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551572) structure). If, and only if, this entry point is defined, the previously calculated **lPitch** alignment is discarded, and all surface alignment conforms to the requirements reported using GUID\_GetHeapAlignment. Drivers can keep their [**VIDEOMEMORYINFO**](https://msdn.microsoft.com/library/windows/hardware/ff570172) structure alignment requirements as they are, and expect the same alignment behavior when run on older DirectDraw runtimes. This alignment behavior has been completely replaced for DirectX 5.0 and later versions of the DirectDraw runtime. It should be noted that exposing **GetHeapAlignment** turns off this legacy alignment procedure for all heaps, not just those for which GUID\_GetHeapAlignment reports alignment requirements.
 
- 
+ 
 
- 
+ 
 
 
 

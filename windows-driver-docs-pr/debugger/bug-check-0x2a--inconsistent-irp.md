@@ -55,7 +55,7 @@ The INCONSISTENT\_IRP bug check has a value of 0x0000002A. This indicates that a
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Remarks
 
 This bug check code is not currently being used in the system, but exists for debugging purposes.
 
- 
+ 
 
- 
+ 
 
 
 

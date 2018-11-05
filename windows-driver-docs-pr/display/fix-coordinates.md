@@ -22,9 +22,9 @@ Graphics DDIs use fractional coordinates that can specify a location on the devi
 
 FIX coordinates represent control points for lines and Bezier curves. For certain objects, such as rectangular clip regions, GDI uses signed 32-bit integers to represent coordinates. Because coordinates are 28-bit quantities, the highest 5 bits of an integer coordinate are either all cleared or all set.
 
- 
+ 
 
- 
+ 
 
 
 

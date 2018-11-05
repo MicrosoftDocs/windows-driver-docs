@@ -145,14 +145,13 @@ PCCardConfig = 49(W)                    ; ConfigIndex
 MSFT = "Microsoft"
 M_Supra = "Supra"
 Supra1 = "Supra Dual 56K modem"
- 
 ```
 
 An INF like the one shown above copies the ID and resource information for the child functions to the registry. The mf.sys driver retrieves the information from the registry when it enumerates the child functions of the device.
 
- 
 
- 
+
+
 
 
 

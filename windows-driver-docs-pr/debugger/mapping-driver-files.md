@@ -140,9 +140,9 @@ This special method applies only to boot drivers (that is, Acpi.sys, Classpnp.sy
 
 You cannot replace boot drivers on a computer that uses EFI firmware instead of the Boot.ini file.
 
- 
+ 
 
- 
+ 
 
 
 

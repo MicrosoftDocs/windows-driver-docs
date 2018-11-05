@@ -18,9 +18,9 @@ On Windows 98/Me, the PnP manager issues an [**IRP\_MN\_STOP\_DEVICE**](https://
 
 In response to the stop IRP, drivers release the device's hardware resources (such as its I/O ports), disable and deregister any user-mode interfaces, and fail any incoming I/O requests that require access to the device.
 
- 
+ 
 
- 
+ 
 
 
 

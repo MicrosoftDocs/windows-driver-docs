@@ -46,9 +46,9 @@ The parallel port function driver does the following:
 
     Each parallel port has its own work queue. The parallel port function driver queues only allocate and select device requests. If the port is already allocated when the parallel port function driver receives a new allocate request or select request, it queues the request.
 
- 
+ 
 
- 
+ 
 
 
 

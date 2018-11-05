@@ -38,9 +38,9 @@ When processing IOCTL codes within a driver, use the following rules:
 
 -   For METHOD\_NEITHER transfers, follow the rules that are provided in [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

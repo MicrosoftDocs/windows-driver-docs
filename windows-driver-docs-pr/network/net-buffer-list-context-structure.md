@@ -39,9 +39,9 @@ Drivers should use the following NDIS macros and functions to access and manipul
 
 [**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff568390)
 
- 
+ 
 
- 
+ 
 
 
 

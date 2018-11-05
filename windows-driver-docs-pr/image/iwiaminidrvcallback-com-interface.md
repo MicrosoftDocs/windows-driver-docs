@@ -17,9 +17,9 @@ The [IWiaMiniDrvCallBack Interface](https://msdn.microsoft.com/library/windows/h
 
 When the minidriver is ready to send image data from the imaging device or to transfer status messages (the percentage of data transferred, for example), it calls the WIA service's **IWiaMiniDrvCallBack**::**MiniDrvCallback**. The WIA service then passes the data or messages along to the application when it calls the application's callback.
 
- 
+ 
 
- 
+ 
 
 
 

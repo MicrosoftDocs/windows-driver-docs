@@ -16,9 +16,9 @@ In Windows 10, the sensor driver model has converged for both desktop and mobil
 
 -   [Universal sensor driver model for Windows 10](converged-sensor-driver-model-for-windows-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

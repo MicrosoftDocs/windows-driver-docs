@@ -46,9 +46,9 @@ To register its TCP chimney-specific *ProtocolXxx* functions, an offload target 
 
 -   [*ProtocolTcpOffloadReceiveIndicate*](https://msdn.microsoft.com/library/windows/hardware/ff570275)
 
- 
+ 
 
- 
+ 
 
 
 

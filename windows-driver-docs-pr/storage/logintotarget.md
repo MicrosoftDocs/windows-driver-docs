@@ -48,7 +48,7 @@ The following table describes the types of logon sessions that initiators can es
 </tbody>
 </table>
 
- 
+ 
 
 The identifier (ID) that the **LoginToTarget** method assigns to the session must remain constant for the lifetime of a session. Even if asynchronous logoffs or network events sever the connection to the target and force the miniport driver to reconnect, the miniport driver should continue to use the same session ID.
 
@@ -66,9 +66,9 @@ The **LoginToTarget** WMI method belongs to the [MSiSCSI\_Operations WMI class](
 
 For an explanation of the algorithm that the iSCSI user-mode library uses to establish a log, see **LoginIScsiTarget**.
 
- 
+ 
 
- 
+ 
 
 
 

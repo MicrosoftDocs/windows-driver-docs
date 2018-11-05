@@ -37,11 +37,11 @@ Specifies the name of a data structure.
 <span id="_______Field______"></span><span id="_______field______"></span><span id="_______FIELD______"></span> *Field*   
 Specifies the field containing the list link. This can actually be a sequence of fields separated by periods (in other words, **Type.Field.Subfield.Subsubfield**, and so on).
 
-<span id="_______-x__Commands_"></span><span id="_______-x__commands_"></span><span id="_______-X__COMMANDS_"></span> **-x "***Commands***"**  
+<span id="_______-x__Commands_"></span><span id="_______-x__commands_"></span><span id="_______-X__COMMANDS_"></span> **-x "**<em>Commands</em>**"**  
 Specifies the commands to execute. This can be any combination of debugger commands. It must be enclosed in quotation marks. If multiple commands are specified, separate them with semicolons, enclose the entire collection of **!list** arguments in quotation marks, and use an escape character ( \\ ) before each quotation mark inside these outer quotation marks. If *Commands* is omitted, the default is [**dp (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md).
 
-<span id="_______-a__Arguments_"></span><span id="_______-a__arguments_"></span><span id="_______-A__ARGUMENTS_"></span> **-a "***Arguments***"**  
-Specifies the arguments to pass to the *Commands* parameter. This must be enclosed in quotation marks. *Arguments* can be any valid argument string that would normally be allowed to follow this command, except that *Arguments* cannot contain quotation marks. If the pseudo-register **$extret** is included in *Commands*, the **-a "***Arguments***"** parameter can be omitted.
+<span id="_______-a__Arguments_"></span><span id="_______-a__arguments_"></span><span id="_______-A__ARGUMENTS_"></span> **-a "**<em>Arguments</em>**"**  
+Specifies the arguments to pass to the *Commands* parameter. This must be enclosed in quotation marks. *Arguments* can be any valid argument string that would normally be allowed to follow this command, except that *Arguments* cannot contain quotation marks. If the pseudo-register **$extret** is included in *Commands*, the **-a "**<em>Arguments</em>**"** parameter can be omitted.
 
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 Can be any number of the following options:
@@ -77,7 +77,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -123,9 +123,9 @@ dd @$extret l4; dt ntdll!_RTL_CRITICAL_SECTION_DEBUG @$extret-0x8
    +0x018 Spare            : [2] 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

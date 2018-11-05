@@ -24,9 +24,9 @@ No physical memory is allocated for a view until the virtual memory range is acc
 
 After a driver is no longer using a view, it unmaps it by making a call to [**ZwUnmapViewOfSection**](https://msdn.microsoft.com/library/windows/hardware/ff567119). After the driver is no longer using the section object, it closes the section handle with [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417). Note that after the view is mapped and no other views are going to be mapped, it is safe to immediately call **ZwClose** on the section handle; the view (and section object) continue to exist until the view is unmapped. This is the recommended practice because it reduces the risk of the driver failing to close the handle.
 
- 
+ 
 
- 
+ 
 
 
 

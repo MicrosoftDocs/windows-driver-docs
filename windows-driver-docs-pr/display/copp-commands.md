@@ -26,9 +26,9 @@ The video miniport driver can receive a request to perform an operation on the p
 
 -   [Instructing how to protect the signal](instructing-how-to-protect-the-signal.md)
 
- 
+ 
 
- 
+ 
 
 
 

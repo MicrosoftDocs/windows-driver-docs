@@ -56,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobRequest</strong>](createscanjobrequest.md)</p></td>
+<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -80,9 +80,9 @@ The client includes the **DestinationToken** token when it sends a [**CreateScan
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

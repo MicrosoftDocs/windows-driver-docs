@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The \*`Template` directive defines a template construct.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ Drivers for devices that do support namespaces can also use two methods to secur
 
 The FILE\_DEVICE\_SECURE\_OPEN characteristic is checked at the top of the stack, so filter device objects must copy the **Characteristics** member of the next-lower device object after attaching.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ This section contains information on the following topics:
 
 [Mapping for a Vista Application and Legacy Driver](mapping-for-a-vista-application-and-legacy-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

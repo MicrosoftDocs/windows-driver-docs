@@ -58,7 +58,7 @@ Displays information about pools (pool size, headers, and pool tags) and outstan
 
 **Warning**  In 64-bit versions of Windows, some of the kernel functions that raise or lower the IRQL are implemented as inline code rather than as exported functions. Driver Verifier does not report IRQL changes made by inline code, so it is possible for the IRQL transition log produced by Driver Verifier to be incomplete. See Remarks for an example of a missing IRQL transition entry.
 
- 
+ 
 
 <span id="Bit_6__0x40_"></span><span id="bit_6__0x40_"></span><span id="BIT_6__0X40_"></span>Bit 6 (0x40)  
 (Windows Vista and later) Displays information from the **Force Pending I/O Requests** option of Driver Verifier, including traces from the log of forced pending IRPs.
@@ -317,9 +317,9 @@ Pool block a2b1ce98, Size 00000164, Thread a2b1ce98
 8204d16a nt!KiFastCallEntry+0x127
 ```
 
- 
+ 
 
- 
+ 
 
 
 

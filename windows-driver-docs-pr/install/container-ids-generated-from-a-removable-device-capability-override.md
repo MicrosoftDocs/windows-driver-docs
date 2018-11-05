@@ -37,52 +37,52 @@ The override mechanism is a registry-based lookup table that consists of registr
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>[DeviceOverrides](deviceoverrides-registry-key.md)</p></td>
+<td align="left"><p><a href="deviceoverrides-registry-key.md" data-raw-source="[DeviceOverrides](deviceoverrides-registry-key.md)">DeviceOverrides</a></p></td>
 <td align="left"><p>Parent key for all removable device capability overrides.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>[HardwareID](hardwareid-registry-subkey.md)</p></td>
-<td align="left"><p>Specifies the [hardware ID](hardware-ids.md) of a device to which the removable device capability override applies.</p>
-<p>The name of this subkey is the actual hardware ID, with all backslash ('\') characters replaced by number ('#') characters.</p></td>
+<td align="left"><p><a href="hardwareid-registry-subkey.md" data-raw-source="[HardwareID](hardwareid-registry-subkey.md)">HardwareID</a></p></td>
+<td align="left"><p>Specifies the <a href="hardware-ids.md" data-raw-source="[hardware ID](hardware-ids.md)">hardware ID</a> of a device to which the removable device capability override applies.</p>
+<p>The name of this subkey is the actual hardware ID, with all backslash (&#39;&#39;) characters replaced by number (&#39;#&#39;) characters.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2</p></td>
-<td align="left"><p>[CompatibleID](compatibleid-registry-subkey.md)</p></td>
-<td align="left"><p>Specifies the [compatible ID](compatible-ids.md) of a device to which the removable device capability override applies.</p>
-<p>The name of this subkey is the actual hardware ID, with all backslash ('\') characters replaced by number ('#') characters.</p></td>
+<td align="left"><p><a href="compatibleid-registry-subkey.md" data-raw-source="[CompatibleID](compatibleid-registry-subkey.md)">CompatibleID</a></p></td>
+<td align="left"><p>Specifies the <a href="compatible-ids.md" data-raw-source="[compatible ID](compatible-ids.md)">compatible ID</a> of a device to which the removable device capability override applies.</p>
+<p>The name of this subkey is the actual hardware ID, with all backslash (&#39;&#39;) characters replaced by number (&#39;#&#39;) characters.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>3</p></td>
-<td align="left"><p>[LocationPaths](locationpaths-registry-subkey.md)</p></td>
-<td align="left"><p>Specifies that only the location path of the device's parent device node ([<em>devnode</em>](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) will have the removable device capability override applied.</p></td>
+<td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a></p></td>
+<td align="left"><p>Specifies that only the location path of the device&#39;s parent device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="[&lt;em&gt;devnode&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>[ChildLocationPaths](childlocationpaths-registry-subkey.md)</p></td>
-<td align="left"><p>Specifies that the location path of the device's child devnodes will have the removable device capability override applied.</p>
+<td align="left"><p><a href="childlocationpaths-registry-subkey.md" data-raw-source="[ChildLocationPaths](childlocationpaths-registry-subkey.md)">ChildLocationPaths</a></p></td>
+<td align="left"><p>Specifies that the location path of the device&#39;s child devnodes will have the removable device capability override applied.</p>
 <div class="alert">
-<strong>Note</strong>  The parent devnode of the specified device are not affected by the removable device capability override, unless a [LocationPaths](locationpaths-registry-subkey.md) registry subkey is also specified or a <strong>ChildLocationPaths</strong> registry subkey is specified for the parent devnode.
+<strong>Note</strong>  The parent devnode of the specified device are not affected by the removable device capability override, unless a <a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a> registry subkey is also specified or a <strong>ChildLocationPaths</strong> registry subkey is specified for the parent devnode.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>[LocationPath](locationpath-registry-subkey.md)</p></td>
+<td align="left"><p><a href="locationpath-registry-subkey.md" data-raw-source="[LocationPath](locationpath-registry-subkey.md)">LocationPath</a></p></td>
 <td align="left"><p>Specifies the discrete location path of the devnode to which the removable device capability override applies.</p>
 <p>The name of this subkey is the actual location path for a single devnode instance of a device installed in the computer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>4</p></td>
-<td align="left"><p>[*](--registry-subkey.md)</p></td>
+<td align="left"><p><a href="--registry-subkey.md" data-raw-source="[*](--registry-subkey.md)">*</a></p></td>
 <td align="left"><p>Specifies that the removable device capability override applies to all devnodes for the specified device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Within the [LocationPath](locationpath-registry-subkey.md) and [\*](--registry-subkey.md) registry subkeys, a DWORD value (**Removable**) specifies whether the applicable devnodes are considered removable (1) or not removable (0).
 
@@ -144,9 +144,9 @@ The following diagram shows the resulting device topology and associated contain
 
 ![diagram illustrating removable device capability override that marks a devnode as removable](images/containerid-5.png)
 
- 
+ 
 
- 
+ 
 
 
 

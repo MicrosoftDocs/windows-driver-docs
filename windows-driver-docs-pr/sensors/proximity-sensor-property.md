@@ -17,7 +17,7 @@ This property is an optional enumeration property.
 |--|--|--|--|--|
 |DEVPKEY_Sensor_ProximityType|VT_UI4|R/O|Optional|Describes the type of proximity being detected. It can be HumanProximity or ObjectProximity. For more information, see the ProximityType enumeration.|
 
- 
+ 
 
 ## Requirements
 
@@ -29,9 +29,9 @@ This property is an optional enumeration property.
 
 [Other sensor properties](other-sensor-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

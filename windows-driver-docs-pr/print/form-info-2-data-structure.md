@@ -52,9 +52,9 @@ Printer drivers that continue to use the FORM\_INFO\_1 structure when they call 
 
 For more information about adding printer forms and about using the FORM\_INFO\_1 and FORM\_INFO\_2 data structures, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

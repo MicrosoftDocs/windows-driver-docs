@@ -34,9 +34,9 @@ An [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/
 
 [**ACPI\_ENUM\_CHILD\_LENGTH\_FROM\_CHILD**](acpi-enum-child-length-from-child.md)
 
- 
+ 
 
- 
+ 
 
 
 

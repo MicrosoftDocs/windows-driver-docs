@@ -43,9 +43,9 @@ The following figure shows the data flow in autoconfiguration when a device is i
 
     The driver can determine when a change has occurred during device installation, because the notification message carries the changed value. However, if the notification is too large to be sent through the notification mechanism, the notification will have one or more ReducedSchema instances, each of which indicates that a device characteristic has changed, but without any details of its new value.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ Use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hard
 
 **Note**  For 32-bit versions of Windows Vista and later versions of Windows, only a commercial release certificate can be used to sign kernel-mode drivers to be released on these Windows versions.
 
- 
+ 
 
 ```cpp
 SignTool sign /v /s CertificateStore /n CertificateName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
@@ -33,9 +33,9 @@ Where:
 
 -   *CatalogFileName.cat* is the name of the catalog file.
 
- 
+ 
 
- 
+ 
 
 
 

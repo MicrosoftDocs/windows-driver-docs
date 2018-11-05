@@ -53,9 +53,9 @@ class MSiSCSI_NICPerformance : Win32_PerfRawData {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICPerformance**](https://msdn.microsoft.com/library/windows/hardware/ff563087) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ It is not recommended that a surface keep a pointer to a context, because one su
 
 The concept of *lost* surfaces was introduced in the DirectDraw SDK documentation. Lost surfaces have some implications in the DirectX 7.0 DDI model. For more information, see [Losing and Restoring DirectDraw Surfaces](losing-and-restoring-directdraw-surfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

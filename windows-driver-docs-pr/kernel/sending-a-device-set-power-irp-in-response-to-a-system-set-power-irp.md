@@ -54,9 +54,9 @@ The power-completion callback routine must do the following:
 
 4.  Return the status with which the set-power IRPs completed.
 
- 
+ 
 
- 
+ 
 
 
 

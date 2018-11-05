@@ -39,7 +39,7 @@ Members
 **dwPluginCapabilities**  
 Required.
 
-A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
+A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
 
 **dwNumNetworksSupported**  
 Required.
@@ -97,9 +97,9 @@ Requirements
 
 [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

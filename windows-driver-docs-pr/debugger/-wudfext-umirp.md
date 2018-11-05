@@ -48,7 +48,7 @@ Specifies the address of the UM IRP to display information about.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -96,9 +96,9 @@ UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
         Offset:               0x0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD sets a list of preferred SSIDs for the fir
 |--------------|--------------------------|---------------------------------|
 | Primary port | Yes                      | 1                               |
 
- 
+ 
 
 There are two types of Network List Offload (NLO). One type is offload to NICs on Always On Always Connected (AOAC) systems. The other is Instant Connect NLO which, in Windows 8 and Windows 8.1, was only used for non-AOAC systems to quickly reconnect Wi-Fi at resume from hibernation. For Instant Connect, the list is sent down before the system goes into hibernation. Going forward, Instant Connect is used for resume from hibernation on AOAC systems that support it.
 
@@ -60,7 +60,7 @@ Indicating NLO discovery has two cases.
 |------------------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------|
 | [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn897852) |                                |          | The NLO parameters. |
 
- 
+ 
 
 ## Set property results
 
@@ -90,9 +90,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

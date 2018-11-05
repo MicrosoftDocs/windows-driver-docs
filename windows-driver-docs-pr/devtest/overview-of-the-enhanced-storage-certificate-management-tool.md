@@ -37,7 +37,7 @@ The Enhanced Storage Certificate Management tool manages certificates within the
 
 **Note**  You cannot add, delete, or remove the ASCm certificate by using this tool.
 
- 
+ 
 
 The Enhanced Storage Certificate Management tool performs these functions by issuing IEEE 1667 commands to an ACT on a USB storage device. Each USB storage device is specified through a unique volume name in the following format:
 
@@ -59,13 +59,13 @@ For example, the following is an example of the volume name for a USB storage de
 
 **Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command-line.
 
- 
+ 
 
 In order to issue IEEE 1667 commands to an ACT on a USB storage device, the user might need to be authenticated to use the device. Authentication is based on the PCp certificate and private key that is available to the user. If the user does not have the correct PCp certificate and private key, the user will not have access to the device for provisioning through the Enhanced Storage Certificate Management tool.
 
- 
+ 
 
- 
+ 
 
 
 

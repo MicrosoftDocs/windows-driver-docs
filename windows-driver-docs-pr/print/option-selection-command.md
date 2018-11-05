@@ -34,19 +34,19 @@ The following table lists the option selection command. The command is specified
 <tbody>
 <tr class="odd">
 <td><p><strong>CmdSelect</strong></p></td>
-<td><p>Command to select a [printer option](printer-options.md).</p></td>
-<td><p>Required for each option. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Command to select a <a href="printer-options.md" data-raw-source="[printer option](printer-options.md)">printer option</a>.</p></td>
+<td><p>Required for each option. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

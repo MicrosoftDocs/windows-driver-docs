@@ -14,7 +14,7 @@ This section documents macros that support WDF general objects.
 
 ## In this section
 
- 
+ 
 * [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md)
 
 
@@ -56,7 +56,7 @@ This section documents macros that support WDF general objects.
 
 * [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md)
 
- 
+ 
 
 
 

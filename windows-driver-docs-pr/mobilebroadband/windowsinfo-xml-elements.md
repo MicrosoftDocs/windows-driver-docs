@@ -36,9 +36,9 @@ This section describes the XML elements defined by the [WindowsInfo XML schema](
 
         -   [DesktopAutoplayHandler](desktopautoplayhandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

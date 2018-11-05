@@ -28,9 +28,9 @@ If the HBA caches data internally, as indicated when [*HwScsiFindAdapter*](https
 
     Note that a miniport driver can be called with more than one shutdown request, possibly for the same logical unit or with several shutdown requests for different logical units, before the system itself is actually shut down.
 
- 
+ 
 
- 
+ 
 
 
 

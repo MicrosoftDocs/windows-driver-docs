@@ -31,16 +31,16 @@ The KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL bug check has a v
 | 3         | The IRQL at which the lock was acquired |
 | 4         | Reserved                                |
 
- 
+ 
 
 Cause
 -----
 
 The caller cannot be blocking on a lock above APC\_LEVEL because the lock may be held exclusively by the interrupted thread, which would cause a deadlock.
 
- 
+ 
 
- 
+ 
 
 
 

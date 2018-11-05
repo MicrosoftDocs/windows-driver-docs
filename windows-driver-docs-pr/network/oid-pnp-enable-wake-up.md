@@ -53,7 +53,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID_PM_PARAMETERS](oid-pm-parameters.md) instead).</p></td>
+<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="oid-pm-parameters.md" data-raw-source="[OID_PM_PARAMETERS](oid-pm-parameters.md)">OID_PM_PARAMETERS</a> instead).</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -77,9 +77,9 @@ Requirements
 
 [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](oid-pnp-add-wake-up-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

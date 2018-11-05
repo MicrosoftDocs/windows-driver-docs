@@ -31,7 +31,7 @@ The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/l
 |--------------------------------------------------------|-------------------------------------|
 | [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/mt269156) | A PMKR0Name or PMKR1Name (802.11r). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

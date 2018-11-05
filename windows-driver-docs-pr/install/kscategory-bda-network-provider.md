@@ -43,7 +43,7 @@ The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ The capability of a collection is defined by its usage, reports, link collection
 
 -   For each report type, the number of buttons and values supported by the collection, as specified by the **Number***Xxx***DataIndices** member.
 
- 
+ 
 
- 
+ 
 
 
 

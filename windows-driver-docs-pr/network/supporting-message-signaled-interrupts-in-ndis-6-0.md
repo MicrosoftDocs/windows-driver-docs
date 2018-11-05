@@ -22,9 +22,9 @@ The driver should provide entry points for the normal interrupt functions, even 
 
 MSI support can provide significant performance benefits. This is particularly true for NICs that support receive side scaling. For more information about receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,9 +53,9 @@ You can redirect trace messages to a kernel debugger when creating a trace sessi
 
 TraceView is located in the tools\\tracing\\*&lt;Platform&gt;* subdirectory of the WDK, where *&lt;Platform&gt;* is either i386, amd64, or ia64.
 
- 
+ 
 
- 
+ 
 
 
 

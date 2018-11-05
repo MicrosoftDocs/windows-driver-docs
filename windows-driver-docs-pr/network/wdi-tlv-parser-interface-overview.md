@@ -64,7 +64,7 @@ Some messages do not have any associated data. For completeness of the API, appr
 ## Message direction
 
 
-Most messages have a different format for their M1 versus their M0, M3, or M4. To accommodate for this, such messages have different parse and generate APIs. For M1 messages, the APIs follow the naming convention of Parse*&lt;MessageName&gt;*ToIhv or Generate*&lt;MessageName&gt;*ToIhv. For M0, M3, or M4 messages, the APIs follow the naming convention of Parse*&lt;MessageName&gt;*FromIhv or Generate*&lt;MessageName&gt;*FromIhv. However, to simplify code in the IHV miniport, defines are added to alias Parse*&lt;MessageName&gt;* to Parse*&lt;MessageName&gt;*ToIhv and Generate*&lt;MessageName&gt;* to Generate*&lt;MessageName&gt;*FromIhv. IHV code only needs to be aware of this aliasing if it needs to parse its own M3, or generate an M1.
+Most messages have a different format for their M1 versus their M0, M3, or M4. To accommodate for this, such messages have different parse and generate APIs. For M1 messages, the APIs follow the naming convention of Parse<em>&lt;MessageName&gt;</em>ToIhv or Generate<em>&lt;MessageName&gt;</em>ToIhv. For M0, M3, or M4 messages, the APIs follow the naming convention of Parse<em>&lt;MessageName&gt;</em>FromIhv or Generate<em>&lt;MessageName&gt;</em>FromIhv. However, to simplify code in the IHV miniport, defines are added to alias Parse<em>&lt;MessageName&gt;</em> to Parse<em>&lt;MessageName&gt;</em>ToIhv and Generate<em>&lt;MessageName&gt;</em> to Generate<em>&lt;MessageName&gt;</em>FromIhv. IHV code only needs to be aware of this aliasing if it needs to parse its own M3, or generate an M1.
 
 ## Error codes
 
@@ -84,7 +84,7 @@ The TLV parser generator can return several different NDIS\_STATUS codes. For mo
 <tr class="even">
 <td align="left"><p>NDIS_STATUS_BUFFER_OVERFLOW</p></td>
 <td align="left"><p>When generating, this indicates that due to the number of elements in an array (list), it overflows the 2 byte <strong>Length</strong> field within the TLV header. You should reduce the number of elements. This can also occur when an outer TLV has too many (or too large of) inner TLVs, again overflowing the 2 byte <strong>Length</strong> field of the header.</p>
-<p>When parsing, this indicates a TLV header's <strong>Length</strong> field is larger than the outer TLV or the byte stream.</p></td>
+<p>When parsing, this indicates a TLV header&#39;s <strong>Length</strong> field is larger than the outer TLV or the byte stream.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NDIS_STATUS_FILE_NOT_FOUND</p></td>
@@ -101,11 +101,11 @@ The TLV parser generator can return several different NDIS\_STATUS codes. For mo
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

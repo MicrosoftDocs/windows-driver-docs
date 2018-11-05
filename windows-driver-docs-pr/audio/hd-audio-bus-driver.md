@@ -43,9 +43,9 @@ The HD Audio bus driver does not provide:
 
 During device enumeration, the HD Audio bus driver detects the codecs that are attached to the HD Audio controller's HD Audio Link. For each codec, the bus driver loads one function driver (if available) for each function group that it finds within the codec. For information about function groups, see the Intel High Definition Audio Specification at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website.
 
- 
+ 
 
- 
+ 
 
 
 

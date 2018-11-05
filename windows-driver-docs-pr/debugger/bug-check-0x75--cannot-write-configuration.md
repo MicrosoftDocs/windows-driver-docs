@@ -55,7 +55,7 @@ The CANNOT\_WRITE\_CONFIGURATION bug check has a value of 0x00000075. This bug c
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ The CANNOT\_WRITE\_CONFIGURATION bug check typically occurs if the system is out
 
 This bug check should almost never occur, because the conversion of the hive file occurs early enough during system initialization so that enough pool should be available.
 
- 
+ 
 
- 
+ 
 
 
 

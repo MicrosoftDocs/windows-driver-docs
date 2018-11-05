@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE to indica
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE to indica
 |----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------|
 | [**WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn898072) |                                |          | The TKIP MIC failure information. |
 
- 
+ 
 
 Requirements
 ------------
@@ -53,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

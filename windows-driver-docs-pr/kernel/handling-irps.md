@@ -48,9 +48,9 @@ This section describes how kernel-mode drivers handle *I/O request packets* (IRP
 
 [IRP Processing Examples](irp-processing-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

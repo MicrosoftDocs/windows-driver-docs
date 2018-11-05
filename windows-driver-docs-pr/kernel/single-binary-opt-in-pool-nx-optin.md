@@ -38,9 +38,9 @@ You can use the POOL\_NX\_OPTIN opt-in mechanism for a .lib project, but project
 
 `ExInitializeDriverRuntime(DrvRtPoolNxOptIn);`
 
- 
+ 
 
- 
+ 
 
 
 

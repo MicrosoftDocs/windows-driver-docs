@@ -104,7 +104,7 @@ Determines the current Full Kernel Debugging setting and returns an appropriate 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="-td_ProcessID_File"></span><span id="-td_processid_file"></span><span id="-TD_PROCESSID_FILE"></span>**-td** *ProcessID* *File*  
 Obtains a kernel triage dump file. Enter the process ID and a name for the dump file.
@@ -116,9 +116,9 @@ Displays command-line help for KDbgCtrl.
 
 For a description of all the KDbgCtrl settings, see [Using KDbgCtrl](using-kdbgctrl.md).
 
- 
+ 
 
- 
+ 
 
 
 

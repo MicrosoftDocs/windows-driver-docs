@@ -35,11 +35,11 @@ To process notifications, a notify object performs the following general sequenc
 **Note**  The notifications mentioned in the preceding sequence can also include a call to the notify object's [**INetCfgComponentControl::CancelChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547728) method in which case the notify object should revert back to the original network configuration.
 Before modifying the original network configuration, the notify object should make two copies of the configuration. The notify object can modify one copy to include changes and leave the other copy in the original condition. The notify object can use the unmodified copy when reverting back to the original network configuration.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

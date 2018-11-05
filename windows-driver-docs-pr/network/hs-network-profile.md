@@ -36,7 +36,7 @@ Members
 -------
 
 **dwNetworkCapabilities**  
-A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
+A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
 
 **usPriority**  
 A unique priority value assigned to the associated network. It must be a value between 1 and 65000 (a hidden network must have a value of 1). A lower numeric value corresponds to a higher priority.
@@ -79,9 +79,9 @@ Requirements
 
 [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

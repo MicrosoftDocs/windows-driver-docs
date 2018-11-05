@@ -51,9 +51,9 @@ Another way to retrieve information about a device interface on Windows Server 2
 
 -   The **InterfaceClassGuild** member identifies the interface class GUID.
 
- 
+ 
 
- 
+ 
 
 
 

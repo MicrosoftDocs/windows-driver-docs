@@ -57,7 +57,7 @@ The following table lists the possible values for the WIA\_DPA\_CONNECT\_STATUS 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -75,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

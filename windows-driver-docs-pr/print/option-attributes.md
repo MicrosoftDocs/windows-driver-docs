@@ -45,9 +45,9 @@ This section contains the following topics:
 
 [Option Attributes for the Resolution Feature](option-attributes-for-the-resolution-feature.md)
 
- 
+ 
 
- 
+ 
 
 
 

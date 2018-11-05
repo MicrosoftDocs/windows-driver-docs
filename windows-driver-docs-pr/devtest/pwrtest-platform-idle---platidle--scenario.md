@@ -22,10 +22,10 @@ The **/platidle** scenario requires that the computer has support for the *Alway
 pwrtest /platidle  [/t:n] [/i:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
-<span id="_i_n"></span><span id="_I_N"></span>**/i:***n*  
+<span id="_i_n"></span><span id="_I_N"></span>**/i:**<em>n</em>  
 Specifies the polling interval (in seconds) for gathering platform idle statistics (the default value for *n* is 5 seconds).
 
 **Examples**
@@ -77,16 +77,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

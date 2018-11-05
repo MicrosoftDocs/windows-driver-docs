@@ -128,9 +128,9 @@ Data Type: BIDI\_STRING
 
 Description:An optional value that represents the vendor Model indicator for the referenced consumable. This value enables a client to distinguish exactly what version of a particular Type and Color combination Consumable is installed in the device.
 
- 
+ 
 
- 
+ 
 
 
 

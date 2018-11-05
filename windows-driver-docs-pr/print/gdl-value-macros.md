@@ -26,7 +26,7 @@ Value macros can reference other value macros. The instance name of the \*Macros
 **Note**  The declarations and references of arguments that will be used to pass value macro references are prefixed with the equal sign (=) to signify that the argument type is a value macro.
 All references to value macros are also prefixed with the equal sign (=) to signify the reference is to a value macro instead of a block macro. The equal sign must be immediately followed by the value macro name, and no intervening whitespace is allowed. References to value macros can nest parameter lists to arbitrary depth.
 
- 
+ 
 
 ### <a href="" id="macro-examples"></a> Macro Examples
 
@@ -123,9 +123,9 @@ The preceding macro will expand to the following code.
 
 Note that the expanded result is not syntactically legal GDL.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,9 +57,9 @@ The three structures are packed into adjacent locations in the buffer in the ord
 
 For an example of a basic-support request with an array of range descriptors, see the figure in [Exposing Multichannel Nodes](exposing-multichannel-nodes.md). For more information about basic-support property requests, see [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671). For code examples, refer to the property-handler implementations in the [sample audio drivers](sample-audio-drivers.md) in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

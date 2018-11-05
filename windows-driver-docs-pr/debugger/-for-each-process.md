@@ -56,7 +56,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ If no arguments are supplied, the debugger displays a list of all processes, alo
 
 To terminate execution at any point, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

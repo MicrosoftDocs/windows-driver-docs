@@ -25,9 +25,9 @@ You can extend a DirectSound application to use a non-PCM format by first creati
 
 DirectSound playback through VxD drivers or legacy waveOut drivers is still limited to PCM; non-PCM formats are not supported.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 6                                     | 1                               |
 
- 
+ 
 
 ## Task parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
 | [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926288) |                                |          | The delete port parameters. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ An offload target uses the following algorithm to determine whether to insert an
 
 -   If the neighbor **VlanId** is nonzero, the offload target inserts a tag header into the packet. In this tag header, the offload target specifies a VLAN identifier that is equal to the neighbor **VlanId** and a priority value that is equal to the value of **UserPriority** for the TCP connection.
 
- 
+ 
 
- 
+ 
 
 
 

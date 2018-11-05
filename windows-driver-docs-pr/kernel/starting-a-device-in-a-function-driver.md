@@ -66,9 +66,9 @@ When the driver receives an **IRP\_MN\_STOP\_DEVICE**, **IRP\_MN\_REMOVE\_DEVICE
 
 See [Mapping Bus-Relative Addresses to Virtual Addresses](mapping-bus-relative-addresses-to-virtual-addresses.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

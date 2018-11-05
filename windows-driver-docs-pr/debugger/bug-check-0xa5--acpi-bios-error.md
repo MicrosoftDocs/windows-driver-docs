@@ -48,8 +48,8 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x01</p></td>
-<td align="left"><p>ACPI's <strong>deviceExtension</strong></p></td>
-<td align="left"><p>ACPI's <strong>ResourceList</strong></p></td>
+<td align="left"><p>ACPI&#39;s <strong>deviceExtension</strong></p></td>
+<td align="left"><p>ACPI&#39;s <strong>ResourceList</strong></p></td>
 <td align="left"><p><strong>0:</strong> No resource list is found</p>
 <p><strong>1:</strong> No IRQ resource is found in list</p></td>
 <td align="left"><p>ACPI cannot find the System Control Interrupt (SCI) vector in the resources that are handed to it when ACPI is started.</p></td>
@@ -150,7 +150,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tr class="odd">
 <td align="left"><p>0x0F</p></td>
 <td align="left"><p>The current buffer that ACPI was parsing</p></td>
-<td align="left"><p>The buffer's tag</p></td>
+<td align="left"><p>The buffer&#39;s tag</p></td>
 <td align="left"><p>The specified length of the buffer</p></td>
 <td align="left"><p>ACPI could not parse the resource descriptor.</p></td>
 </tr>
@@ -171,7 +171,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tr class="even">
 <td align="left"><p>0x14</p></td>
 <td align="left"><p>The current buffer that ACPI was parsing</p></td>
-<td align="left"><p>The buffer's tag</p></td>
+<td align="left"><p>The buffer&#39;s tag</p></td>
 <td align="left"><p>A pointer to a variable that contains the ULONGLONG length of the buffer</p></td>
 <td align="left"><p>ACPI could not parse the resource descriptor. The length exceeds MAXULONG.</p></td>
 </tr>
@@ -195,7 +195,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 </tbody>
 </table>
 
- 
+ 
 
 If an interrupt routing failure or incompatibility has occurred, the following parameters are used.
 
@@ -257,7 +257,7 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <p>(This pointer is an index into the _PRT.)</p></td>
 <td align="left"><p>The device ID or function number.</p>
 <p>This DWORD is encoded as follows: bits 15:0 are the PCI function number, and bits 31:16 are the PCI device number</p></td>
-<td align="left"><p>ACPI found an entry in the _PRT that the function ID is not all F's for.</p>
+<td align="left"><p>ACPI found an entry in the _PRT that the function ID is not all F&#39;s for.</p>
 <p>(The generic format for a _PRT entry is that the device number is specified, but the function number is not.)</p></td>
 </tr>
 <tr class="even">
@@ -274,7 +274,7 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <td align="left"><p>The vector that could not be found</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The _PRT contained a reference to a vector that is not described in the I/O APIC entry's MAPIC table.</p></td>
+<td align="left"><p>The _PRT contained a reference to a vector that is not described in the I/O APIC entry&#39;s MAPIC table.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x10008</p></td>
@@ -311,12 +311,12 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <td align="left"><p>The I/O port in the Fixed Table</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The PM_TMR_BLK entry in the Fixed ACPI Description Table doesn't point to a working ACPI timer block.</p></td>
+<td align="left"><p>The PM_TMR_BLK entry in the Fixed ACPI Description Table doesn&#39;t point to a working ACPI timer block.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If a miscellaneous failure or incompatibility has occurred, the following parameters are used.
 
@@ -348,7 +348,7 @@ If a miscellaneous failure or incompatibility has occurred, the following parame
 </tbody>
 </table>
 
- 
+ 
 
 If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource list for the PCI root buses. In this case, Parameter 3 specifies the exact problem, and the remaining parameters have the following definitions.
 
@@ -372,13 +372,13 @@ If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource lis
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x0</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCES IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS&#39; resource list into the proper format. This probably represents an error in the BIOS&#39; list encoding procedure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCE_REQUIREMENTS IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS&#39; resource list into the proper format. This probably represents an error in the BIOS&#39; list encoding procedure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
@@ -401,7 +401,7 @@ If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource lis
 </tbody>
 </table>
 
- 
+ 
 
 If Parameter 1 equals **0x10**, the ACPI BIOS could not determine the system-to-device-state mapping correctly. In this situation, Parameter 3 specifies the exact problem, and the remaining parameters have the following definitions.
 
@@ -442,7 +442,7 @@ If Parameter 1 equals **0x10**, the ACPI BIOS could not determine the system-to-
 </tbody>
 </table>
 
- 
+ 
 
 If Parameter 1 equals **0x11**, the system could not enter ACPI mode. In this situation, Parameter 2 specifies the exact problem, and the remaining parameters have the following definitions.
 
@@ -537,7 +537,7 @@ If Parameter 1 equals **0x11**, the system could not enter ACPI mode. In this si
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -560,9 +560,9 @@ A PCI routing table (\_PRT) is the ACPI BIOS object that specifies how all the P
 
 You can display a \_PRT in the debugger by using the **!acpikd.nsobj** extension together with the address of the \_PRT object as its argument.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ The print spooler defines a set of registry functions for use by print monitors.
 
 In a server cluster, multiple instances of the spooler can coexist. Specifically, each cluster node possesses its own instance, and an additional instance exists for the cluster itself. One of the input parameters of the spooler registry functions is a spooler handle. This handle is received by the monitor's **InitializePrintMonitor2** function and identifies the spooler instance (node or cluster) that has opened the monitor. Using the spooler handle, the spooler registry functions maintain subkeys for each spooler instance.
 
- 
+ 
 
- 
+ 
 
 
 

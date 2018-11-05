@@ -55,7 +55,7 @@ The CNSS\_FILE\_SYSTEM\_FILTER bug check has a value of 0x000000A4. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This memory sincrease the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

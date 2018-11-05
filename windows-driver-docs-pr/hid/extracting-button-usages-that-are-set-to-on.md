@@ -38,9 +38,9 @@ After an application or driver has used these routines to obtain information abo
 
 [**HidP\_UsageAndPageListDifference**](https://msdn.microsoft.com/library/windows/hardware/ff539824)
 
- 
+ 
 
- 
+ 
 
 
 

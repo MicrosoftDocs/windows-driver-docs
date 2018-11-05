@@ -34,11 +34,11 @@ A driver can call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windo
 
 **Note**  A filter driver should keep track of OID requests that it originates and make sure that it does not call the [**NdisFOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561833) function when such requests are complete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

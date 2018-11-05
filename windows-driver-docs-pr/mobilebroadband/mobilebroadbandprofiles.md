@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Purchase](purchase.md)</p></td>
+<td><p><a href="purchase.md" data-raw-source="[Purchase](purchase.md)">Purchase</a></p></td>
 <td><p>Specifies the purchase mobile broadband profile file to use.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Internet](internet.md)</p></td>
+<td><p><a href="internet.md" data-raw-source="[Internet](internet.md)">Internet</a></p></td>
 <td><p>Specifies the Internet mobile broadband profile file to use.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +70,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[NetworkConfiguration](networkconfiguration.md)</p></td>
+<td><p><a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profiles to be used or whether standard user can perform PIN unlock operations.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -98,9 +98,9 @@ There are no attributes.
 
 The MobileBroadbandProfiles element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

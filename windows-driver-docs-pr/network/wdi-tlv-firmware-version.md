@@ -31,7 +31,7 @@ The size (in bytes) of the array of char elements. The array must contain 1 or m
 |----------|-----------------------------------------------------------------|
 | char\[\] | The firmware version, stored as a null-terminated ASCII string. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ The WDK includes three tools that you can use to test and debug a WPD driver. Th
 | *WpdDeviceInspector.exe* | Generates an HTML report that describes the device capabilities and content.                                                                                                                                     |
 | *WpdMon.exe*             | Traces messages and commands that are passed between a WPD driver and the operating system or a WPD application.                                                                                                 |
 
- 
+ 
 
 For more information about these tools and their use, see [WPD Driver Development Tools](familiarizing-yourself-with-the-sample-driver.md) in the WDK documentation.
 
@@ -64,7 +64,7 @@ After your driver is installed, you can create a debugging project in Visual Stu
 1.  Open Visual Studio 8 with elevated privileges (Run As Administrator) and navigate to the File &lt; New &gt; Project from Existing Code path.
     **Note**  You must open Visual Studio 8 with elevated privileges because the LocalService account requires these privileges. The WUDFHost process runs within the LocalService account. By using Visual Studio 8, you are able to debug the driver project.
 
-     
+     
 
 2.  Follow the steps in the **Welcome to the Create Project from Existing Code Files Wizard**. Make sure to specify the language, the location of your driver source files, a project name, and so on.
 3.  Open your newly created project.
@@ -84,9 +84,9 @@ Initialization code for a WPD driver, for example, the code found in **WpdBaseDr
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

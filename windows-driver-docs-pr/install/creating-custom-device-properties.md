@@ -29,7 +29,7 @@ A custom device property category is a logically-related collection of custom de
 
     **Note**  The system-defined property categories are reserved for operating system use only.
 
-     
+     
 
 -   Set the property identifier of each property key to an integer value that is unique within the property category and that is greater than or equal to two.
 
@@ -59,9 +59,9 @@ Use the [**INF DelProperty directive**](inf-delproperty-directive.md) to delete 
 
 For more information about how to use these directives, see the [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

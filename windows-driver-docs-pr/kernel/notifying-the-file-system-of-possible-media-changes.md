@@ -38,9 +38,9 @@ If its physical device indicates that the state of the media might have changed 
 
     If **IoIsErrorUserInduced** returns **TRUE**, the driver must call [**IoSetHardErrorOrVerifyDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549707) so the FSD can open a dialog box to the user, who can then choose to supply the correct media, retry the original request, or cancel the requested operation.
 
- 
+ 
 
- 
+ 
 
 
 

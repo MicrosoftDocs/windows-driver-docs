@@ -23,7 +23,7 @@ For more information, see [Transmission Selection Algorithms (TSAs)](transmissio
 
 **Note**  Bandwidth allocation is only supported for the Enhanced Transmission Selection (ETS) TSA. For more information, see [Enhanced Transmission Selection (ETS) Algorithm](enhanced-transmission-selection--ets--algorithm.md).
 
- 
+ 
 
 Traffic classes are specified through object identifier (OID) method requests of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure that specifies the following NDIS QoS parameters:
 
@@ -31,7 +31,7 @@ Traffic classes are specified through object identifier (OID) method requests of
 
     **Note**  Starting with NDIS 6.30, NDIS QoS supports a maximum of NDIS\_QOS\_MAXIMUM\_TRAFFIC\_CLASSES (8) traffic classes. The network adapter must support a minimum of three traffic classes.
 
-     
+     
 
 -   The 802.1p priority level associated with the traffic class.
 
@@ -41,9 +41,9 @@ Traffic classes are specified through object identifier (OID) method requests of
 
 OID method requests of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) also specify traffic classifications. These classifications define the relationship between egress packets and IEEE 802.1p priority levels. For more information, see [NDIS QoS Traffic Classifications](ndis-qos-traffic-classifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

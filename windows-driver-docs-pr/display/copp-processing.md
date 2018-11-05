@@ -43,9 +43,9 @@ The following topics describe the COPP DDI and how to support COPP:
 
 [Implementation Tips and Requirements for COPP](implementation-tips-and-requirements-for-copp.md)
 
- 
+ 
 
- 
+ 
 
 
 

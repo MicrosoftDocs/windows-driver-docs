@@ -53,9 +53,9 @@ When you set the session context, the process context is automatically changed t
 
 For more details and a list of all the session-related extensions that are affected by the session context, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

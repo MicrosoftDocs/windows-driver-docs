@@ -33,9 +33,9 @@ Traditional analog halftoning is a cellular process that uses a halftoning scree
 
 On a computer, most printing or screen shading also uses a fixed-cell pixel size. To simulate the variable dot size, a combination of cluster pixels simulates the halftone screen. In Windows NT-based operating systems, GDI includes halftoning default parameters that provide a good first approximation. Additional device-specific information can be added to the system to improve output.
 
- 
+ 
 
- 
+ 
 
 
 

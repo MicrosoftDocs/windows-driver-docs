@@ -65,9 +65,9 @@ Each SCSI miniport driver defines the internal structure and contents of its dev
 
 **ScsiPortInitialize** can be called only from a miniport driver's **DriverEntry** routine. For more information, see [**HW\_INITIALIZATION\_DATA (SCSI)**](https://msdn.microsoft.com/library/windows/hardware/ff557456) and [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645).
 
- 
+ 
 
- 
+ 
 
 
 

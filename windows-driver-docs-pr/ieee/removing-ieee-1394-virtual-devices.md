@@ -43,9 +43,9 @@ The first method (IRP\_MN\_REMOVE\_DEVICE) will remove the device, but if the de
 
 Note that an upper-level driver or user-mode service can determine, through the usual PnP mechanism, which virtual devices are present. This mechanism uses the class GUID that is provided in the virtual driver's INF file.
 
- 
+ 
 
- 
+ 
 
 
 

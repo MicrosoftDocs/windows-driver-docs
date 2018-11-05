@@ -18,7 +18,7 @@ OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY instructs the adapter to cancel 
 |-------|--------------------------|---------------------------------|---------------------------------|
 | Port  | No                       | 1                               | No                              |
 
- 
+ 
 
 ## Set property parameters
 
@@ -52,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

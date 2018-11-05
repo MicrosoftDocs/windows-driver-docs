@@ -52,7 +52,7 @@ Specifies the physical device object (PDO) for the Logical Unit Extension (LUN) 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +63,9 @@ Remarks
 
 The PDO for a LUN can be found in the **DevObj** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 
- 
+ 
 
- 
+ 
 
 
 

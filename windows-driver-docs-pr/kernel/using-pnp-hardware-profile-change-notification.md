@@ -22,9 +22,9 @@ The following subsections discuss how to register for hardware profile change no
 
 [Handling Hardware Profile Change Events](handling-hardware-profile-change-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

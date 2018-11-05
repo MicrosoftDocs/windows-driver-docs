@@ -32,9 +32,9 @@ The render module of an XPSDrv printer driver does not, necessarily, use the GDI
 
 For more information about installing XPSDrv drivers, see [XPSDrv Installation](xpsdrv-installation.md).
 
- 
+ 
 
- 
+ 
 
 
 

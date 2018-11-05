@@ -29,9 +29,9 @@ A KSNODETYPE\_CHORUS node should support the following required properties:
 
 [**KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE**](ksproperty-audio-chorus-modulation-rate.md)
 
- 
+ 
 
- 
+ 
 
 
 

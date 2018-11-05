@@ -72,7 +72,7 @@ This extension only works with time travel traces. For more information about ti
 
 -------
 
- 
+ 
 
 
 

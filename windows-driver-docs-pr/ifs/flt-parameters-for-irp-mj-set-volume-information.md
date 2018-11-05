@@ -61,20 +61,20 @@ Type of information to be set for the volume. One of the following:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_CONTROL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540258) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540258)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsLabelInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_LABEL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540271) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540271" data-raw-source="[&lt;strong&gt;FILE_FS_LABEL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540271)"><strong>FILE_FS_LABEL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_OBJECTID_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540274) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540274)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **VolumeBuffer**  
 Pointer to the input buffer that contains the values of the volume information to be set.
@@ -127,9 +127,9 @@ Requirements
 
 [**ZwSetVolumeInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567112)
 
- 
+ 
 
- 
+ 
 
 
 

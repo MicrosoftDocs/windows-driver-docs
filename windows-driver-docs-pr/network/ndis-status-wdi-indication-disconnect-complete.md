@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISCONNECT\_COMPLETE to indi
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

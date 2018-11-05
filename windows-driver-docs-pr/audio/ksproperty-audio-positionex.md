@@ -44,13 +44,13 @@ The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream p
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSAUDIO_POSITIONEX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537092)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537092" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITIONEX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537092)"><strong>KSAUDIO_POSITIONEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSAUDIO\_POSITIONEX that receives the position information from the property handler. The position information that is specified by the KSAUDIO\_POSITIONEX structure is the position information for the pin that was selected by the caller.
 
@@ -96,9 +96,9 @@ Requirements
 
 [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
 
- 
+ 
 
- 
+ 
 
 
 

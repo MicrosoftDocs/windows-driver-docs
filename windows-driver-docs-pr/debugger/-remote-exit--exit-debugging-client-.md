@@ -54,7 +54,7 @@ You can use the **.remote\_exit** command only in a script file. You can use it 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ If you are using KD or CDB directly, instead of using a script, you can exit fro
 
 You cannot exit from a debugging client through a script that is executed in WinDbg.
 
- 
+ 
 
- 
+ 
 
 
 

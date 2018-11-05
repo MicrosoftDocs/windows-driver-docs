@@ -60,11 +60,11 @@ The RAMDISK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000F8. T
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

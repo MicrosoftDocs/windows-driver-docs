@@ -22,7 +22,7 @@ This section describes the specific header-data split requirements that apply to
 
 **Note**  After you read the general requirements in this topic, you can use the subsequent topics to understand the specific requirements for each type of Ethernet frame. The later topics build on the requirements in the earlier topics. For example, if a frame contains IPv4 and UDP information, you should read the [Splitting IPv4 Frames](splitting-ipv4-frames.md) and [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md) topics.
 
- 
+ 
 
 If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
 
@@ -52,9 +52,9 @@ This section includes:
 
 [Splitting Frames Other Than TCP and UDP](splitting-frames-other-than-tcp-and-udp.md)
 
- 
+ 
 
- 
+ 
 
 
 

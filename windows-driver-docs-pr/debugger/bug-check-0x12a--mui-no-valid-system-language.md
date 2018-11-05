@@ -60,11 +60,11 @@ Parameter 2 - NT status code that describes the reason of failure.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

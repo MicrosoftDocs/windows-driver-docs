@@ -44,9 +44,9 @@ Thus, three of the types are used to control programmatic access to an object, w
 
 A driver may construct an access control entry of ACCESS\_ALLOWED\_ACE\_TYPE using the routine [**RtlAddAccessAllowedAce**](https://msdn.microsoft.com/library/windows/hardware/ff552092). For adding the other types of ACE entries, driver writers must construct their own functions because the WDK does not provide any other support routines.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ The following list indicates the port driver support library that each type of s
 
 -   ATA Port miniport drivers: [ATA Port Library Routines](ata-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

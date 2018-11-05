@@ -71,9 +71,9 @@ Assuming that the **NumIF** field of the system buffer specifies the number of i
 
 Remember that the I/O manager assumes that the value in the **Information** field is valid. If a caller passes in a valid kernel-mode address for the output buffer and a size of zero bytes, serious problems can occur if the driver does not check the output buffer size and thus find the error.
 
- 
+ 
 
- 
+ 
 
 
 

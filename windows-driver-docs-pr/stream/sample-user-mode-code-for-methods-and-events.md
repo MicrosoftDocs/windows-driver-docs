@@ -78,9 +78,9 @@ In the above example, notification continues until the minidriver disables the e
 
 If you are supporting events with USB Video Class Extension Units, see [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
- 
+ 
 
- 
+ 
 
 
 

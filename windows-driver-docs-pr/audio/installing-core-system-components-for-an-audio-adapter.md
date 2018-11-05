@@ -22,9 +22,9 @@ This section includes the following topics about installing the core system comp
 
 The [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) for each hardware ID specified in the manufacture's **MODEL** section should specify the inclusion of the **KS.Registration** section in Ks.inf and the **WDMAUDIO.Registration** section in Wdmaudio.inf. The Ks.inf file installs the core kernel streaming components. The Wdmaudio.inf file installs the core WDM audio components. Vendors should not modify or replace these system INF files.
 
- 
+ 
 
- 
+ 
 
 
 

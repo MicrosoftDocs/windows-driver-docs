@@ -64,7 +64,7 @@ Specifies a pattern that the extension must contain. *Pattern*can contain a vari
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -95,9 +95,9 @@ The following example lists all extension commands, so we can see which ones sup
 
 ![screen shot of .extmatch /d output](images/extmatch01.png)
 
- 
+ 
 
- 
+ 
 
 
 

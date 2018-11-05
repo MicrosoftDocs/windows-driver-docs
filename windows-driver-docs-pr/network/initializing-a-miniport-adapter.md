@@ -75,9 +75,9 @@ If [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/
 
 [Starting a Miniport Adapter](starting-an-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

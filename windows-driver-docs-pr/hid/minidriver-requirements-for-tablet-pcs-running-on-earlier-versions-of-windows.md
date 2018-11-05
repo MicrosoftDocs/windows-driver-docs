@@ -49,9 +49,9 @@ A Tablet PC button device supplements pen input on a Tablet PC. A button device 
 
 -   Provide a top-level collection whose usage page is Generic Desktop and whose usage is Tablet PC System Controls. Button events are reported by using a button array whose usage page is Button and the usage values range from 1 to the number of buttons.
 
- 
+ 
 
- 
+ 
 
 
 

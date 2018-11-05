@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process.
 
@@ -26,9 +26,9 @@ This section describes UEFI protocols that are defined by Windows. These protoco
 -   [UEFI battery charging protocol](uefi-battery-charging-protocol.md)
 -   [UEFI display power state protocol](uefi-display-power-state-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

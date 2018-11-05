@@ -31,9 +31,9 @@ CPrintTicketProvider::QueryDeviceNamespace(BSTR *pDefaultNamespace)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -103,9 +103,9 @@ The third data range specifies an AC-3-over-S/PDIF data format. For more informa
 
 The preceding example does not enable DirectSound to handle the non-PCM WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats on Microsoft Windows 2000 SP2 and Windows 98 SE + hotfix. To enable this capability, the sample code would need to be modified so that for each of the three data ranges that uses the specifier KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX, a second data range must be included that is identical except that it uses the specifier KSDATAFORMAT\_SPECIFIER\_DSOUND instead. For an example, see [Specifying AC-3 Data Ranges](specifying-ac-3-data-ranges.md).
 
- 
+ 
 
- 
+ 
 
 
 

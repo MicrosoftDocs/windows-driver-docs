@@ -26,7 +26,7 @@ The size (in bytes) of the array of WDI\_COUNTRY\_REGION\_LIST elements. The arr
 
 **Note**  WDI\_COUNTRY\_REGION\_LIST is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 ## Values
 
@@ -35,7 +35,7 @@ The size (in bytes) of the array of WDI\_COUNTRY\_REGION\_LIST elements. The arr
 |--------------------------------|--------------------------------------|
 | WDI\_COUNTRY\_REGION\_LIST\[\] | An array of country or region codes. |
 
- 
+ 
 
 WDI\_COUNTRY\_REGION\_LIST consists of the following elements.
 
@@ -43,7 +43,7 @@ WDI\_COUNTRY\_REGION\_LIST consists of the following elements.
 |------------|---------------------------|
 | UINT8\[3\] | A country or region code. |
 
- 
+ 
 
 Requirements
 ------------
@@ -69,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

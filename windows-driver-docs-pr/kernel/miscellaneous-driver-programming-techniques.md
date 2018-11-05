@@ -58,9 +58,9 @@ This section contains various topics of interest to driver writers. It includes 
 
 [Kernel Macros, Global Variables, and Opaque Structures](kernel-macros--global-variables--and-opaque-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

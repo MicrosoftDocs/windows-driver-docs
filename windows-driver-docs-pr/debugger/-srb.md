@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the SRB on the target computer.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ Remarks
 
 An SRB is a system-defined structure used to communicate I/O requests from a SCSI class driver to a SCSI port driver.
 
- 
+ 
 
- 
+ 
 
 
 

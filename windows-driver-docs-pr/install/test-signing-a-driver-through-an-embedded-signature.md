@@ -44,7 +44,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timestamp.dll*) which will time stamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
@@ -52,9 +52,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about how to test-sign a driver by using an embedded signature, see [Test-Signing a Driver File](test-signing-a-driver-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

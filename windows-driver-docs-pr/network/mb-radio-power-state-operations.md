@@ -25,9 +25,9 @@ Be aware that the radio power state may change on portable computers (laptops) b
 
 For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832).
 
- 
+ 
 
- 
+ 
 
 
 

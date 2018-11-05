@@ -42,9 +42,9 @@ The following flow chart describes how plan purchase works with Windows and UWP 
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

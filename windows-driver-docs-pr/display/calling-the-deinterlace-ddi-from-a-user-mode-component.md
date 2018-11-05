@@ -60,9 +60,9 @@ The following steps explain how the VMR initiates calls to the deinterlace DDI:
 
 9.  The driver then releases any resources used by the deinterlace mode device.
 
- 
+ 
 
- 
+ 
 
 
 

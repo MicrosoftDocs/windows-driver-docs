@@ -47,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALL property is used to set or get all th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSDS3D_LISTENER_ALL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537116)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537116" data-raw-source="[&lt;strong&gt;KSDS3D_LISTENER_ALL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537116)"><strong>KSDS3D_LISTENER_ALL</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSDS3D\_LISTENER\_ALL that specifies all the properties of a 3D listener. This structure is similar to the DS3DBUFFER structure, which is described in the Microsoft Windows SDK documentation.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSDS3D\_LISTENER\_ALL**](https://msdn.microsoft.com/library/windows/hardware/ff537116)
 
- 
+ 
 
- 
+ 
 
 
 

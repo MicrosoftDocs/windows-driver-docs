@@ -56,7 +56,7 @@ Specifies one or more commands which will be executed for each token. Whenever t
 
 **Note**   When the string *Variable* appears within *OutCommands*, it must be surrounded by spaces. If it is adjacent to any other text -- even a parenthesis -- it will not be replaced by the current token value, unless you use the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token.
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,9 +81,9 @@ The **/pS** and **/ps** flags can be used to pass only certain tokens to the spe
 
 For more examples that use the **.foreach** token, see [Debugger Command Program Examples](debugger-command-program-examples.md).
 
- 
+ 
 
- 
+ 
 
 
 

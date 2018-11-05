@@ -58,9 +58,9 @@ Here is a sample PrintCapabilities file to show how to specify personal ID numbe
 
 For more information about protected printing, see [Driver Support For Protected Printing](driver-support-for-protected-printing.md).
 
- 
+ 
 
- 
+ 
 
 
 

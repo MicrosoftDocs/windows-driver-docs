@@ -32,9 +32,9 @@ If the underlying driver should associate the OID request with a subsequent stat
 
 A driver can call **NdisOidRequest** when a binding is in the *Restarting*, *Running*, *Pausing*, or *Paused* state.
 
- 
+ 
 
- 
+ 
 
 
 

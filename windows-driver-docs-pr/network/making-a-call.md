@@ -53,9 +53,9 @@ If the client's attempt to establish an outgoing call was successful, *ProtocolC
 
 If the call parameters are acceptable, *ProtocolClMakeCallComplete* simply returns control. If the call parameters are not acceptable and if the signaling protocol allows renegotiation at this point, the client can call [**NdisClModifyCallQoS**](https://msdn.microsoft.com/library/windows/hardware/ff561636) to request a change in call parameters (see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md)). If the signaling protocol does not allow renegotiation of unacceptable call parameters, *ProtocolClMakeCallComplete* must tear down the call with **NdisClCloseCall**(see Client-Initiated Request to Close a Call).
 
- 
+ 
 
- 
+ 
 
 
 

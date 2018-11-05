@@ -52,9 +52,9 @@ Multiple NET\_BUFFER\_LIST structures can be attached to form a list of NET\_BUF
 
 [NET\_BUFFER\_LIST\_CONTEXT Structure](net-buffer-list-context-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

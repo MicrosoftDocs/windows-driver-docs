@@ -48,15 +48,15 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_DESCRIPTOR structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about the IO\_RESOURCE\_DESCRIPTOR structure, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

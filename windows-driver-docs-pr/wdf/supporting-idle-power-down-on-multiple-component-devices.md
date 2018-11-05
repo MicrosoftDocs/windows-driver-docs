@@ -50,9 +50,9 @@ If the driver has previously called [**WdfDeviceInitSetPowerPageable**](https://
 
 After [**WdfDeviceStopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546921) returns, even if the method returns an error, the driver must call [**PoFxReportDevicePoweredOn**](https://msdn.microsoft.com/library/windows/hardware/hh439526).
 
- 
+ 
 
- 
+ 
 
 
 

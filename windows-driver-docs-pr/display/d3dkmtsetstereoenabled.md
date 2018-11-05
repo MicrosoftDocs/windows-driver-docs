@@ -62,7 +62,7 @@ Returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -102,9 +102,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

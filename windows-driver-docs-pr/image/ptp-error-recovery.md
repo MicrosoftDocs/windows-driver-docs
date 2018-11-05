@@ -19,9 +19,9 @@ During later processing (for example, while retrieving an image), when an unreco
 
 If the Get Device Status request fails, the PTP minidriver attempts to reset the device using the Device Reset class-specific request (described in the USB Still Image Capture Device Definition). If the Device Reset class-specific request succeeds, it returns S\_FALSE instead of S\_OK. If resetting the device fails, the Device Reset class-specific request returns an error code.
 
- 
+ 
 
- 
+ 
 
 
 

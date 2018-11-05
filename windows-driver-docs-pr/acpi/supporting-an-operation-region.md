@@ -28,9 +28,9 @@ An operation region is the communication interface between an ACPI device and th
 
 [Accessing an Operation Region](accessing-an-operation-region.md)
 
- 
+ 
 
- 
+ 
 
 
 

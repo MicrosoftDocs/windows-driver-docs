@@ -31,11 +31,11 @@ The SECURE\_KERNEL\_ERROR bug check has a value of 0x0000018B. This indicates th
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

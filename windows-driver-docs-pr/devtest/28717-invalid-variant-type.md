@@ -31,9 +31,9 @@ VARIANT var;
 var.vt = VT_ARRAY | VT_INT;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

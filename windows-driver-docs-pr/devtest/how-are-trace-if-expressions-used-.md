@@ -20,21 +20,20 @@ If FAILED(HR) is true, assume that there is a source file that has status ULONG 
 //FUNC TRACE_RETURN{LEVEL=ERROR}(EXP);
 //USESUFFIX (TRACE_RETURN, "Function Return=%!HRESULT!",EXP);
 //end_wpp
- 
+
 #define WPP_LEVEL_EXP_PRE(LEVEL, HR) {if (FAILED(HR)) {
 #define WPP_LEVEL_EXP_POST(LEVEL, HR) ;}}
 #define WPP_LEVEL_EXP_ENABLED(LEVEL, HR) WPP_LEVEL_ENABLED(LEVEL)
 #define WPP_LEVEL_EXP_LOGGER(LEVEL, HR) WPP_LEVEL_LOGGER(ERROR)
- 
 ```
 
 In the previous example, notice that, TRACE\_RETURN is defined between the begin\_wpp config and end\_wpp lines. This definition is then followed by the PRE / POST macro and the ENABLED and LOGGER definitions.
 
 The begin\_wpp config and end\_wpp delimiters define a configuration block that is parsed by the preprocessor. The file that contains the configuration block definition must be scanned by WPP. This file is specified with the -scan:file.extension parameter.
 
-**Note**   For information about **-scan** and other **RUN\_WPP** options, see [WPP Preprocessor](wpp-preprocessor.md).
+**Note**   For information about **-scan** and other **RUN\_WPP** options, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
+
 
 The following list provides more information about each statement in the example configuration block:
 
@@ -49,9 +48,9 @@ Defines the name and signature of the trace function. In the example, the functi
 
 For another example of Trace-If expressions, see the [How do I include a trace statement in a C/C++ macro?](how-do-i-include-a-trace-statement-in-a-c-c---macro-.md) section.
 
- 
 
- 
+
+
 
 
 

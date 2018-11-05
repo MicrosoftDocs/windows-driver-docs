@@ -39,9 +39,9 @@ This sections provides additional information about the WIA minidriver and its c
 
 [WIA Components](wia-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

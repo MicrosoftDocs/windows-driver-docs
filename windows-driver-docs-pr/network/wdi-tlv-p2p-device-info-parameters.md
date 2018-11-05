@@ -35,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8\[4\] | Primary device type: OUI assigned to this device type. |
 | UINT16     | Primary device type: Subcategory type identifier.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

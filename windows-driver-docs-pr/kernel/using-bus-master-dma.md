@@ -22,9 +22,9 @@ Drivers of bus-master DMA devices can use the following kinds of system-supplied
 
 Depending on the nature of the bus-master adapter, some drivers use packet-based DMA exclusively, some use common-buffer DMA exclusively, and some use both. For example, the driver of a bus-master adapter that uses a mailbox scheme to communicate status information and commands might use a common buffer for the mailboxes shared between the driver and its adapter, together with packet-based DMA for data transfers.
 
- 
+ 
 
- 
+ 
 
 
 

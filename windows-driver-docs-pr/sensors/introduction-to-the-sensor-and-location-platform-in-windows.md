@@ -52,9 +52,9 @@ Built on the sensor platform, the Location API provides an easy way to retrieve 
 
 Windows includes a control panel that allows computer users to enable or disable location settings. Because thesesettings can expose sensitive data, this user interface gives users control over whether programs have access to their location.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ A video session that is set to protected mode must handle scenarios that cause t
 
 If one of the preceding scenarios occurs while output content protection for the video session is enabled, the display driver's *DdMoCompDestroy* function should initiate a call to the video miniport driver's [*COPPCloseVideoSession*](https://msdn.microsoft.com/library/windows/hardware/ff539638) function to decrement the global protection-level count by the current local protection-level count for the COPP device. The video miniport driver should then examine the modified global protection level and adjust the protection level applied to the output connector accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

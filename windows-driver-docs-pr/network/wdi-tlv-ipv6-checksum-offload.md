@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CHECKSUM\_OFFLOAD\_V6\_TX\_PARAMETERS**](wdi-tlv-checksum-offload-v6-tx-parameters.md) |                                |          | Parameters for Tx checksum offload for IPv6. |
 | [**WDI\_TLV\_CHECKSUM\_OFFLOAD\_V6\_RX\_PARAMETERS**](wdi-tlv-checksum-offload-v6-rx-parameters.md) |                                |          | Parameters for Rx checksum offload for IPv6. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

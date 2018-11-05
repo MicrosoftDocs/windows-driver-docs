@@ -37,9 +37,9 @@ The `KSPROPSETID_DirectSound3DBuffer` property set contains the following proper
 
 [**KSPROPERTY\_DIRECTSOUND3DBUFFER\_VELOCITY**](ksproperty-directsound3dbuffer-velocity.md)
 
- 
+ 
 
- 
+ 
 
 
 

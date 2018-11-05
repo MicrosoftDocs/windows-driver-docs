@@ -24,9 +24,9 @@ Upon completion of a IRP, the **Status** field indicates whether the drivers tha
 
 For more information, see [Setting the I/O Status Block in an IRP](processing-irps-in-a-lowest-level-driver.md#ddk-setting-the-i-o-status-block-in-an-irp-kg).
 
- 
+ 
 
- 
+ 
 
 
 

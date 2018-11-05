@@ -53,7 +53,7 @@ CTRL+B  ENTER
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +64,9 @@ In KD, the **q** command will end the debugging session and leave the target com
 
 In WinDbg, the equivalent command is [File | Exit](file---exit.md) or ALT+F4.
 
- 
+ 
 
- 
+ 
 
 
 

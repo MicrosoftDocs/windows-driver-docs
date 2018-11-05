@@ -91,9 +91,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864)
 
- 
+ 
 
- 
+ 
 
 
 

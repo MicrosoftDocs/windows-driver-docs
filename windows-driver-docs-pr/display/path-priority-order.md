@@ -30,9 +30,9 @@ The [**SetDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/f
 
 The [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215) CCD function always returns the paths in priority order. If the QDC\_ALL\_PATHS flag is set in the *Flags* parameter of **QueryDisplayConfig**, **QueryDisplayConfig** returns all of the inactive path combinations following all the active path combinations in the paths array that the *pPathInfoArray* parameter specifies.
 
- 
+ 
 
- 
+ 
 
 
 

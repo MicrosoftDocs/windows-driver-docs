@@ -22,7 +22,7 @@ The Triage.ini file is a text file that resides in the \\triage subdirectory of 
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including Triage.ini. After you modify or replace the sample Triage.ini file, save a copy of it to a different directory. After you reinstall the debuggers, you can copy the saved Triage.ini over the default version.
 
- 
+ 
 
 ### <span id="format_of_the_triage_ini_file"></span><span id="FORMAT_OF_THE_TRIAGE_INI_FILE"></span>Format of the Triage.ini File
 
@@ -63,7 +63,7 @@ The following example uses the previous sample Triage.ini file.
 Followup:  Person3
 ```
 
-According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\***. Both of these strings match the argument that is passed to **!owner**, so the more complete match is used.
+According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\\**<em>. Both of these strings match the argument that is passed to **!owner</em>*, so the more complete match is used.
 
 ### <span id="triage_ini_and__analyze"></span><span id="TRIAGE_INI_AND__ANALYZE"></span> Triage.ini and !analyze
 
@@ -79,7 +79,7 @@ Suppose the first frame on the stack is **MyModule!someFunction**. The debugger 
 
 Suppose the second frame is **module3!anotherFunction**. The debugger does see an entry for **module3**, but there is no match for **anotherFunction** in this module. Next, the debugger continues to the third frame.
 
-Suppose the third frame is **module2!functionC**. The debugger first looks for an exact match, but such a match does not exist. The debugger then trims the function name and discovers **module2!funct\*** in Triage.ini. This match ends the search, because the debugger determines that the owner is "Person4".
+Suppose the third frame is **module2!functionC**. The debugger first looks for an exact match, but such a match does not exist. The debugger then trims the function name and discovers **module2!funct\\*** in Triage.ini. This match ends the search, because the debugger determines that the owner is "Person4".
 
 The debugger then displays output that is similar to the following example.
 
@@ -99,13 +99,13 @@ Followup: Person4
 ---------
 ```
 
-A more complete match takes precedence over a shorter match. However, a module name match is always preferred to a function name match. If **module2!funct\*** had not been in this Triage.ini file, the debugger would have selected **module2!\*** as the match. And if both **module2!funct\*** and **module2!\*** were removed, **mod\*!functionC** would have been selected.
+A more complete match takes precedence over a shorter match. However, a module name match is always preferred to a function name match. If **module2!funct\\*** had not been in this Triage.ini file, the debugger would have selected **module2!\\*** as the match. And if both **module2!funct\\*** and **module2!\\*** were removed, **mod\*!functionC** would have been selected.
 
 ### <span id="special_triage_ini_syntax"></span><span id="SPECIAL_TRIAGE_INI_SYNTAX"></span>Special Triage.ini Syntax
 
-If you omit the exclamation point and function name or add **!\*** after a module name, all functions in that module are indicated. If a function within this module is also specified separately, the more precise specification takes precedence.
+If you omit the exclamation point and function name or add **!\\*** after a module name, all functions in that module are indicated. If a function within this module is also specified separately, the more precise specification takes precedence.
 
-If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\*** is the same as **nt!default**, and **default** is the same as **\*!\***.
+If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\\*** is the same as **nt!default**, and **default** is the same as **\*!\\***.
 
 If a match is made, but the word **ignore** appears to the right of the equal sign (=), the debugger continues to the next frame in the stack.
 
@@ -115,9 +115,9 @@ You can add **last\_** or **maybe\_** before an owner's name. This prefix gives 
 
 A sample Triage.ini template is included in the Debugging Tools for Windows package. You can add the owners of any modules and functions that you want to this file. If you want to have no global default, delete the **default=MachineOwner** line at the beginning of this file.
 
- 
+ 
 
- 
+ 
 
 
 

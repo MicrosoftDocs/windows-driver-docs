@@ -17,9 +17,9 @@ Certain data types such as **NTSTATUS** and **HRESULT** have associated macros t
 
 The proper way to fix this warning is to return a proper error code instead of a generic value such as -1.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ The following list contains precautions and guidelines you should follow when wo
 
 -   If a BOOL value is used to control locking, protect this value from multiple threads. When two drivers attempt to lock a single device at the same time, only one driver can succeed.
 
- 
+ 
 
- 
+ 
 
 
 

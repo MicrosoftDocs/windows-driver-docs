@@ -15,17 +15,17 @@ A forwarding extension has the same capabilities as a filtering extension, but i
 
     **Note**  If the packet is an NVGRE packet, the Hyper-V Network Virtualization (HNV) component of the extensible switch determines the destination ports and forwards the packet. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-     
+     
 
 -   Filtering packets by enforcing standard port policies, such as security, profile, or virtual LAN (VLAN) policies.
 
     **Note**  The extensible switch still performs filtering based on built-in policies. These policies include access control lists (ACLs) and quality of service (QoS).
 
-     
+     
 
 **Note**  If a forwarding extension is not installed and enabled in the extensible switch, the switch determines a packet's destination ports as well as filters packets based on standard port settings.
 
- 
+ 
 
 Forwarding extensions are layered immediately above the extensible switch extension miniport driver in the egress and ingress data path. For more information about these data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
@@ -55,7 +55,7 @@ A forwarding extension can do the following with packets that were obtained on t
 
     **Note**  The forwarding extension can only exclude packet delivery when it handles the packet on the egress data path. The extension can only add or modify destination ports for the packet on the ingress data path.
 
-     
+     
 
 -   It can modify the packet data. If the forwarding extension needs to modify the data in a packet, it must first clone the packet before it assigns port destinations. After the packet has been modified and port destinations assigned, the extension must inject the modified packet into the egress data path.
 
@@ -77,7 +77,7 @@ Besides inspecting OID requests and NDIS status indications, a forwarding extens
 
     **Note**  Forwarding extensions do not create or delete ports or network adapter connections. The protocol edge of the extensible switch issues OIDs to notify the underlying extensions about the creation or deletion of ports or network adapter connections. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md).
 
-     
+     
 
 -   It can veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the forwarding extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275).
 
@@ -117,9 +117,9 @@ For more information about forwarding extensions, see the following pages:
 
 [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ If a device has the limitations listed above, the PCMCIA bus driver can program 
 
 Cardbus devices essentially follow the PCI multifunction rules. See [Supporting Multifunction PCI Devices](supporting-multifunction-pci-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The KSCATEGORY_AUDIO_DEVICE [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -65,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ For a description of how the print spooler supports bidirectional communication,
 
 [Bidirectional Communication Error Codes](https://msdn.microsoft.com/library/windows/hardware/dd183367)
 
- 
+ 
 
- 
+ 
 
 
 

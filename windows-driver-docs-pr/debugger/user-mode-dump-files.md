@@ -43,7 +43,7 @@ It is possible to "shrink" a full user-mode dump file into a minidump. Simply lo
 **Note**   Despite their names, the largest "minidump" file actually contains more information than the full user-mode dump. For example, **.dump /mf** or **.dump /ma** will create a larger and more complete file than **.dump /f**.
 
 
-In user mode, **.dump /m\[***MiniOptions***\]** is the best choice. The dump files created with this switch can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included.
+In user mode, **.dump /m\[**<em>MiniOptions</em>**\]** is the best choice. The dump files created with this switch can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included.
 
 
 
@@ -91,7 +91,7 @@ If you are creating a minidump file with the debugger, you can choose exactly wh
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mt</strong></p></td>
-<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using <strong>[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)</strong> when debugging the minidump.</p></td>
+<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using <strong><a href="-ttime--display-thread-times-.md" data-raw-source="[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)">.ttime (Display Thread Times)</a></strong> when debugging the minidump.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/mi</strong></p></td>
@@ -99,7 +99,7 @@ If you are creating a minidump file with the debugger, you can choose exactly wh
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mp</strong></p></td>
-<td align="left"><p>Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application's processes and threads.</p></td>
+<td align="left"><p>Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application&#39;s processes and threads.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/mw</strong></p></td>
@@ -119,7 +119,7 @@ If you are creating a minidump file with the debugger, you can choose exactly wh
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/mR</strong></p></td>
-<td align="left"><p>Deletes the full module paths from the minidump. Only the module <em>names</em> will be included. This is a useful option if you wish to protect the privacy of the user's directory structure.</p></td>
+<td align="left"><p>Deletes the full module paths from the minidump. Only the module <em>names</em> will be included. This is a useful option if you wish to protect the privacy of the user&#39;s directory structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mk &quot;</strong> <em>FileName</em> <strong>&quot;</strong></p></td>
@@ -158,10 +158,10 @@ The following table shows the features of each tool.
 <thead>
 <tr class="header">
 <th align="left">Feature</th>
-<th align="left">[ADPlus](adplus.md)</th>
-<th align="left">[Windows Error Reporting](windows-error-reporting.md)</th>
-<th align="left">[CDB and WinDbg](#cdb-windbg)</th>
-<th align="left">[UserDump](#userdump)</th>
+<th align="left"><a href="adplus.md" data-raw-source="[ADPlus](adplus.md)">ADPlus</a></th>
+<th align="left"><a href="windows-error-reporting.md" data-raw-source="[Windows Error Reporting](windows-error-reporting.md)">Windows Error Reporting</a></th>
+<th align="left"><a href="#cdb-windbg" data-raw-source="[CDB and WinDbg](#cdb-windbg)">CDB and WinDbg</a></th>
+<th align="left"><a href="#userdump" data-raw-source="[UserDump](#userdump)">UserDump</a></th>
 </tr>
 </thead>
 <tbody>
@@ -210,7 +210,7 @@ The following table shows the features of each tool.
 </tbody>
 </table>
 
- 
+ 
 ## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
 
 
@@ -242,7 +242,7 @@ For more info and to download these tools, see [How to use the Userdump.exe tool
 
 
 
- 
+ 
 
 
 

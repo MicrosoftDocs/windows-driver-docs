@@ -96,9 +96,9 @@ Only specific processes should be allowed access to the shared resource.
 
 The driver should restrict shared access to this resource. The runtime can only call the driver's [**OpenResource**](https://msdn.microsoft.com/library/windows/hardware/ff568611) function to open this resource with display devices (**hDevice**) within the process that created the resource or by those devices that were explicitly granted access via the authenticated channel.
 
- 
+ 
 
- 
+ 
 
 
 

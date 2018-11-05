@@ -52,9 +52,9 @@ For more information about the power policy owner's responsibilities, see the fo
 -   [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md)
 -   [Supporting Functional Power States](supporting-functional-power-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

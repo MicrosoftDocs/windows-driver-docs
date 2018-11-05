@@ -160,13 +160,13 @@ Request
 
 Yes
 
- 
+ 
 
 The session variables specify properties of the "current" printer, that is, the printer for which an ASP page was invoked. To obtain additional printer properties for the current printer, or to obtain properties of a different printer, see [ActiveX Objects for Print Web Pages](activex-objects-for-print-web-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

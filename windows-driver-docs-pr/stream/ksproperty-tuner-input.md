@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_INPUT property describes the input of the tuner in the cu
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_INPUT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565856)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565856" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_INPUT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565856)"><strong>KSPROPERTY_TUNER_INPUT_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG that specifies the numeric index of the physical tuner inputs. This value should be in the range of 0 through (number of inputs-1).
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_INPUT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565856)
 
- 
+ 
 
- 
+ 
 
 
 

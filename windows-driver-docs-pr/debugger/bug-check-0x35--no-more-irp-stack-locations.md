@@ -55,7 +55,7 @@ The NO\_MORE\_IRP\_STACK\_LOCATIONS bug check has a value of 0x00000035. This bu
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ A higher-level driver has attempted to call a lower-level driver through the **I
 
 This is a disastrous situation, since the higher level driver is proceeding as if it has filled in the parameters for the lower level driver (as required). But since there is no stack location for the latter driver, the former has actually written off the end of the packet. This means that some other memory has been corrupted as well.
 
- 
+ 
 
- 
+ 
 
 
 

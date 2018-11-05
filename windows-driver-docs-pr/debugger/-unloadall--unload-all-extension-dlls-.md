@@ -49,15 +49,15 @@ The **.unloadall** command unloads all extension DLLs from the debugger on the h
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more details on loading, unloading, and controlling extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
- 
+ 
 
- 
+ 
 
 
 

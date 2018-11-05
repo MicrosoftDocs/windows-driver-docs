@@ -48,7 +48,7 @@ Specifies the hexadecimal number of the page frame to be displayed.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,9 +82,9 @@ kd> !pfn 154
     Modified          
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ When an offload target receives an in-order SYN segment in any state other than 
 
 For more information, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ The framework I/O target object is exposed to drivers by the [IWDFIoTarget](http
 
 UMDF drivers can also use the [IWDFIoTargetStateManagement](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface to manage and monitor the state of an I/O target object.
 
- 
+ 
 
- 
+ 
 
 
 

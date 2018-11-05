@@ -52,9 +52,9 @@ To obtain the filter descriptor from the miniport driver, the port driver calls 
 
 For an example of how a driver sets up its PCFILTER\_DESCRIPTOR structure, see the header file Table.h in the sb16 sample audio driver in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

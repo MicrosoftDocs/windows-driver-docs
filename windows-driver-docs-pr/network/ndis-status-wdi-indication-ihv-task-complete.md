@@ -18,7 +18,7 @@ NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE indicates the completion of [
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ The driver source code illustrates how drivers communicate with the upper edge o
 
 The system enumerates *1394vdev.sys* and *1394diag.sys* differently. The 1394vdev.sys driver is a virtual diagnostic driver that the IEEE 1394 bus driver loads when it receives an IOCTL\_IEEE1394\_API\_REQUEST request. The *1394diag.sys* driver is a physical diagnostic device driver that the IEEE 1394 bus driver loads when an IEEE 1394 hardware device is plugged into the PC. *1394vdev.inf*, which is included in the WDK, loads both of these drivers.
 
- 
+ 
 
- 
+ 
 
 
 

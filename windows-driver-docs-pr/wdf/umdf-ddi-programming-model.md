@@ -33,9 +33,9 @@ As an example of driver to framework communication, consider a device's default 
 
 The framework provides any synchronization required across driver callback methods. By default, the framework synchronizes at device object level; that is, the framework does not concurrently call the event callback methods at or below the device object level. A driver can override this default by requesting no synchronization. For more information, see [Specifying a Callback Synchronization Mode](specifying-a-callback-synchronization-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

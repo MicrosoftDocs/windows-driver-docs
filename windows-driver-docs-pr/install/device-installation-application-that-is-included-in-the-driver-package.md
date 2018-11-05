@@ -41,15 +41,15 @@ If you use this method, the following will occur whenever the user installs the 
 
 **Note**  Since the [driver package](driver-packages.md) has already been installed before the device installation application is launched, the application must detect that the drivers are already installed and only install the device-specific applications.
 
- 
+ 
 
 For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
 For more information about starting device installation applications through co-installers, see [Guidelines for Starting Device Installation Applications through Co-installers](guidelines-for-starting-device-installation-applications-through-co-in.md).
 
- 
+ 
 
- 
+ 
 
 
 

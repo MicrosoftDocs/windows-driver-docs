@@ -66,11 +66,11 @@ The BDA void transform property set controls when a node starts and stops operat
 
 **Note**   The BDA property, event, and method sets are available on Windows XP and later. These sets are available on the Windows 2000 platform only if DirectX 9.0 and later is installed on that platform.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

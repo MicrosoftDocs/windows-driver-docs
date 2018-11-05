@@ -61,7 +61,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!runaway** extension can only be used during live debugging or when debugging crash dump files created by [**.dump /mt**](-dump--create-dump-file-.md) or **.dump /ma**.
 
@@ -97,9 +97,9 @@ Here is an example:
  1:1a4        0:00:25.0876
 ```
 
- 
+ 
 
- 
+ 
 
 
 

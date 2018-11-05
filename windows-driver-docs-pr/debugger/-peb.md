@@ -50,7 +50,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -99,9 +99,9 @@ PEB at 7ffdf000
 
 The similar [**!teb**](-teb.md) extension displays the thread environment block.
 
- 
+ 
 
- 
+ 
 
 
 

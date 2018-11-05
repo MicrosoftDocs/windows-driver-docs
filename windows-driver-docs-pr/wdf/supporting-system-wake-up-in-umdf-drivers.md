@@ -33,9 +33,9 @@ Bus drivers also participate in waking up the system. The kernel-mode driver for
 
 For information about registry entries that control a device's wake capabilities, see [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

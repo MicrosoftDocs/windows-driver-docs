@@ -35,9 +35,9 @@ The filter manager model offers the following advantages over the existing legac
 
 -   **Better support for user-mode applications.** The filter manager provides common functionality for user-mode services and control programs that work with minifilter drivers. The filter manager user-mode library, Filterlib.dll, enables communication between a user-mode service or control program and a minifilter driver. Filterlib.dll also provides interfaces for management tools.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ For COM to load the [IViewHelper](https://msdn.microsoft.com/library/windows/har
 
 You should only copy and register the correctly compiled versions of [IViewHelper](https://msdn.microsoft.com/library/windows/hardware/ff568164) COM interface object DLLs in the system directory. That is, you should only copy and register the 64-bit **IViewHelper** DLL for 64-bit operating systems and the 32-bit **IViewHelper** DLL for 32-bit operating systems. The two DLL binaries should not be concurrently present on the same computer. TMM will not operate properly if the two binaries are concurrently present on the same computer, even with Windows on Windows (WOW).
 
- 
+ 
 
- 
+ 
 
 
 

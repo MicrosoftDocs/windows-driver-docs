@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE to indica
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +54,9 @@ Requirements
 
 [OID\_WDI\_TASK\_STOP\_AP](oid-wdi-task-stop-ap.md)
 
- 
+ 
 
- 
+ 
 
 
 

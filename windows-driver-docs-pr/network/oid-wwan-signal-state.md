@@ -97,9 +97,9 @@ Requirements
 
 [WWAN Signal Strength Operations](https://msdn.microsoft.com/library/windows/hardware/ff559125)
 
- 
+ 
 
- 
+ 
 
 
 

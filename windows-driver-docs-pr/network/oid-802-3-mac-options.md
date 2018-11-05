@@ -21,7 +21,7 @@ The underlying driver returns zero, indicating that it supports no options.
 
 **Note**  This OID is obsolete for NDIS 6 drivers.
 
- 
+ 
 
 Requirements
 ------------
@@ -39,9 +39,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

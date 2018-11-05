@@ -45,7 +45,7 @@ The **!pocaps** extension displays the power capabilities of the target computer
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ PopCapabilities @ 0x8016b100
     Default Wake:           Sx
 ```
 
- 
+ 
 
- 
+ 
 
 
 

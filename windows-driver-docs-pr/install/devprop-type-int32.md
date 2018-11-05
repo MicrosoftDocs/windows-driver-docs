@@ -29,9 +29,9 @@ DEVPROP_TYPE_INT32 can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](dev
 
 To set a property whose base data type is DEVPROP_TYPE_INT32, call the corresponding **SetupDiSet*Xxx*** property function, setting the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP_TYPE_INT32, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one LONG value, and set the *PropertyBufferSize* parameter to **sizeof(**LONG**)**.
+- Set the *PropertyType* parameter to DEVPROP_TYPE_INT32, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one LONG value, and set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>LONG<strong>)</strong>.
 
--   Set the other function input parameters as appropriate to set the property.
+- Set the other function input parameters as appropriate to set the property.
 
 Requirements
 ------------
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

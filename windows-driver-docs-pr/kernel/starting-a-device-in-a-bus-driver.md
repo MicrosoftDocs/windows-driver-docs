@@ -30,9 +30,9 @@ A bus driver starts a child device (child [*PDO*](https://msdn.microsoft.com/lib
 
 If a bus driver requires some time to start the device, it can mark the IRP as pending and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

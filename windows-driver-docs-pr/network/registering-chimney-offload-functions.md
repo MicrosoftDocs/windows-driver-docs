@@ -45,9 +45,9 @@ To register its TCP chimney-specific handlers, an offload target initializes an 
 
 -   [*MiniportTcpOffloadReceiveReturn*](https://msdn.microsoft.com/library/windows/hardware/ff559462)
 
- 
+ 
 
- 
+ 
 
 
 

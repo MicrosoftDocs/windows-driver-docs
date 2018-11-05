@@ -154,9 +154,9 @@ Some classes of device define the D3cold substate.
 
 For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ The address of the port.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Make sure that reading an I/O port does not affect the behavior of the device th
 
 [**ob, od, ow (Output to Port)**](ob--ow--od--output-to-port-.md)
 
- 
+ 
 
- 
+ 
 
 
 

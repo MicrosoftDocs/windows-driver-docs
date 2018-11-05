@@ -21,9 +21,9 @@ This section contains the following topics:
 
 For more information about device metadata packages, see [Device Metadata Packages](https://msdn.microsoft.com/library/windows/hardware/ff541439).
 
- 
+ 
 
- 
+ 
 
 
 

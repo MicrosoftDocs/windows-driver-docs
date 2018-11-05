@@ -67,7 +67,7 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -77,9 +77,9 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

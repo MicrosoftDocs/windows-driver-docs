@@ -21,9 +21,9 @@ To ensure that no Microsoft Direct3D display drivers are exposed to possible int
 HKR,, CapabilityOverride,    %REG_DWORD%, 0x8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

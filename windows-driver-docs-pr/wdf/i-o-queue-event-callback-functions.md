@@ -29,9 +29,9 @@ When drivers create I/O queues, or configure default I/O queues, they can regist
 
 [IQueueCallbackDefaultIoHandler](https://msdn.microsoft.com/library/windows/hardware/ff556843)
 
- 
+ 
 
- 
+ 
 
 
 

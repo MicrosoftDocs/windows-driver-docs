@@ -19,7 +19,7 @@ Only a limited subset of configuration parameters for a NIC switch can be change
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*. The **SwitchId** member must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
-     
+     
 
 -   The appropriate NDIS\_NIC\_SWITCH\_PARAMETERS\_*Xxx*\_CHANGED flags are set in the **Flags** member. Members of the [**NDIS\_NIC\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure can only be changed if a corresponding NDIS\_NIC\_SWITCH\_PARAMETERS\_*Xxx*\_CHANGED flag is defined in Ntddndis.h.
 
@@ -27,7 +27,7 @@ Only a limited subset of configuration parameters for a NIC switch can be change
 
     **Note**  Starting with Windows Server 2012, only the **SwitchName** member of the [**NDIS\_NIC\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure can be changed through an OID set request of [OID\_NIC\_SWITCH\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451823).
 
-     
+     
 
 The PF miniport driver must follow these guidelines when it receives the OID set request of [OID\_NIC\_SWITCH\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451823)
 
@@ -41,15 +41,15 @@ The PF miniport driver must follow these guidelines when it receives the OID set
 
     **Note**  PF miniport drivers that support static NIC creation and configuration can return NDIS\_STATUS\_REINIT\_REQUIRED to make sure that the adapter is reinitialized for the new parameters to take effect.
 
-     
+     
 
 -   If the PF miniport driver cannot apply the changes requested in the OID, it must fail the OID and return the appropriate NDIS\_STATUS\_*Xxx* code.
 
     In this case, NDIS does not update the NIC switch configuration information in the registry.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ Print driver plug-ins that provide additional or modified functionality to minid
 
 Plug-ins that do not support the **IPrintOemPrintTicketProvider** interface are limited to their existing [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) support, so some functions that the plug-in provides might not be included in the PrintTicket or PrintCapabilities documents.
 
- 
+ 
 
- 
+ 
 
 
 

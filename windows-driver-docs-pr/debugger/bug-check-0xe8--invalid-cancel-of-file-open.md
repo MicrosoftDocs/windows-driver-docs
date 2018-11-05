@@ -55,16 +55,16 @@ The INVALID\_CANCEL\_OF\_FILE\_OPEN bug check has a value of 0x000000E8. This in
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The file object passed to **IoCancelFileOpen** is invalid. It should have reference of one. The driver that called **IoCancelFileOpen** is at fault.
 
- 
+ 
 
- 
+ 
 
 
 

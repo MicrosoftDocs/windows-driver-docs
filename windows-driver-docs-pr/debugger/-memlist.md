@@ -51,7 +51,7 @@ Causes the zeroed pages list to be verified.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +62,9 @@ At present, this extension will only check the zeroed pages list to make sure th
 kd> !memlist 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

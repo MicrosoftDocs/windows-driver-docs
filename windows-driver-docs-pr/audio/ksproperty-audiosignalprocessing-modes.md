@@ -44,13 +44,13 @@ The **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** property returns the list of au
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter instance)</p></td>
-<td align="left"><p>[KSP_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)</p></td>
-<td align="left"><p>[KSMULTIPLE_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx" data-raw-source="[KSP_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)">KSP_PIN</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx" data-raw-source="[KSMULTIPLE_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)">KSMULTIPLE_ITEM</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is a structure, followed by zero (0) or more GUIDs.
 
@@ -105,9 +105,9 @@ Requirements
 
 [KSP\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

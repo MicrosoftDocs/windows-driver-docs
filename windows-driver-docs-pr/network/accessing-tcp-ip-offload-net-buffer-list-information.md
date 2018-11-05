@@ -51,9 +51,9 @@ If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q 
 
 If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q\_IN\_OOB flag in its capabilities, the driver can perform offload on NET\_BUFFER\_LIST structures that contain the VLAN header in the **Ieee8021QnetBufferListInfo** OOB data. In the receive checksum offload case, the miniport inserts the VLAN header into the **Ieee8021QnetBufferListInfo** OOB data.
 
- 
+ 
 
- 
+ 
 
 
 

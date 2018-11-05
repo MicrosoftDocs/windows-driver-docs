@@ -19,9 +19,9 @@ DirectX 8.0 has added an API to support high update frequency cursors without re
 
 The **CursorCaps** field should be set to D3DCURSORCAPS\_MONO, D3DCURSORCAPS\_COLOR, or both, to indicate support for monochrome and color hardware cursors. The **MaxCursorEdgeSize** field should be set to the minimum of the maximum width and maximum height of the hardware cursor (or zero if no hardware cursor is supported). It is not possible to express different maximum sizes for the width and height of the cursor.
 
- 
+ 
 
- 
+ 
 
 
 

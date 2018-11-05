@@ -23,9 +23,9 @@ This section includes:
 
 [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

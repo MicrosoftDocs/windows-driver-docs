@@ -33,9 +33,9 @@ This section includes:
 
 [Offloading TCP/IP Connections in NDIS 6.0](offloading-tcp-ip-connections-in-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

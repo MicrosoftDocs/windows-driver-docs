@@ -11,5 +11,6 @@ ms.localizationpriority: medium
 
 > [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 To end a debugging session in Microsoft Visual Studio, from the **Debug** menu, choose **Stop Debugging**.

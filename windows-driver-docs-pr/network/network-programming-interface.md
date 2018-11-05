@@ -37,9 +37,9 @@ A client module that supports a particular NPI uses the items defined by the NPI
 
 All of the items defined by an NPI are opaque to the NMR except for the NPI identifier. The NMR uses the NPI identifier to determine which client modules should be attached to which provider modules.
 
- 
+ 
 
- 
+ 
 
 
 

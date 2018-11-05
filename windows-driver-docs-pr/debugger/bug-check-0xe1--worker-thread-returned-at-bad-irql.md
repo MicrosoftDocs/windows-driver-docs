@@ -55,7 +55,7 @@ The WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL bug check has a value of 0x000000E1.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -73,9 +73,9 @@ kd> ln address
 
 where *address* is the worker routine address given in Parameter 1.
 
- 
+ 
 
- 
+ 
 
 
 

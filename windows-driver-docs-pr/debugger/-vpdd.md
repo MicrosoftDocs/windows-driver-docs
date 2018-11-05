@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The **!vpdd** extension is obsolete. Use [**!vtop**](-vtop.md) or [**!ptov**](-ptov.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

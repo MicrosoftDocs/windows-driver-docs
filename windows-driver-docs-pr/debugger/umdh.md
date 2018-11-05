@@ -30,9 +30,9 @@ This section includes:
 
 [Interpreting a Log Comparison](interpreting-a-log-comparison.md)
 
- 
+ 
 
- 
+ 
 
 
 

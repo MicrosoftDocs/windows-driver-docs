@@ -55,7 +55,7 @@ The DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO bug check has a value of 0x00000036. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +66,9 @@ This means there are still outstanding references to the device. (The reference 
 
 This is a bug in the calling device driver.
 
- 
+ 
 
- 
+ 
 
 
 

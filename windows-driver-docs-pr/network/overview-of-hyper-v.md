@@ -23,7 +23,7 @@ For network access to child partitions, a Network VSC (NetVSC) runs in a guest o
 
 **Note**  Hyper-V also supports another less-efficient virtualized network adapter that is known as an *emulated network adapter*. An emulated network adapter mimics an Intel network adapter and uses hardware emulation to forward packets to and from the NetVSP.
 
- 
+ 
 
 The following figure shows the networking data paths in Hyper-V over synthetic network adapters.
 
@@ -33,9 +33,9 @@ These data paths are extended by using NDIS virtualized networking interfaces, s
 
 For more information about Hyper-V, see [Hyper-V](http://go.microsoft.com/fwlink/p/?linkid=217079).
 
- 
+ 
 
- 
+ 
 
 
 

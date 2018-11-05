@@ -50,9 +50,9 @@ Requirements
 
 [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff567370)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The BUS1394_CLASS_GUID [device interface class](https://msdn.microsoft.com/libra
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Requirements
 
 [**GUID_61883_CLASS**](guid-61883-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

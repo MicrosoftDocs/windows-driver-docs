@@ -35,7 +35,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
     **Note**  
     **WQReady.xml** is the default file name, but you can rename it.
 
-     
+     
 
 ## Submitting your file
 

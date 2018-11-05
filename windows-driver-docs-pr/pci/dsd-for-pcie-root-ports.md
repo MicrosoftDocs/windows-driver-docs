@@ -17,11 +17,11 @@ In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support M
 
 ```cpp
 Name (_DSD, Package () {
- 
+
           ToUUID("FDF06FAD-F744-4451-BB64-ECD792215B10"),
- 
+
             Package () {
- 
+
                 Package (2) {"FundamentalDeviceResetTriggeredOnD3ToD0", 1},
             }
         }
@@ -64,7 +64,6 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
                    }
         }
 )
-
 ```
 ## See Also
 

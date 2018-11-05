@@ -32,9 +32,9 @@ To support 64-bit DMA, drivers should observe the following guidelines:
 
 The DMA routines in 32-bit Windows are 64-bit-ready. If your device driver uses these routines correctly, your DMA code should work without modification on 64-bit Windows.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -79,9 +79,9 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

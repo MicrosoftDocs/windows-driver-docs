@@ -43,9 +43,9 @@ If at any time the driver has less than two buffers, KMixer interprets this as a
 
 The parameter values in the preceding discussion are specific to the current implementation of KMixer and may change in future versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

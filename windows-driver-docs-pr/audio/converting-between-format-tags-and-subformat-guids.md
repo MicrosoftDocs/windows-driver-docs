@@ -72,9 +72,9 @@ if (IS_VALID_WAVEFORMATEX_GUID(aWaveFormatExGuidPtr)) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

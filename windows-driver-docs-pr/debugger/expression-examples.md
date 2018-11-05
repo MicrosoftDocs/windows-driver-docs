@@ -89,9 +89,9 @@ The C++ expression evaluator casts pseudo-registers to their appropriate types. 
 kd> ??  @$teb->ClientId.UniqueProcess 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

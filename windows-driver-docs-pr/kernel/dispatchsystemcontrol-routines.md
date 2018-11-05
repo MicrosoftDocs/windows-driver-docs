@@ -20,9 +20,9 @@ All drivers must provide a *DispatchSystemControl* routine. The purpose of this 
 
 To learn how to implement a *DispatchSystemControl* routine, and how to support WMI in general, see [Windows Management Instrumentation](implementing-wmi.md).
 
- 
+ 
 
- 
+ 
 
 
 

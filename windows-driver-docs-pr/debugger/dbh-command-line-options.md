@@ -34,7 +34,7 @@ dbh -??
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="-p_PID"></span><span id="-p_pid"></span><span id="-P_PID"></span>**-p:***PID*  
+<span id="-p_PID"></span><span id="-p_pid"></span><span id="-P_PID"></span>**-p:**<em>PID</em>  
 Specifies the process ID of the process whose symbols are to be loaded.
 
 <span id="_______ExecutableName______"></span><span id="_______executablename______"></span><span id="_______EXECUTABLENAME______"></span> *ExecutableName*   
@@ -49,7 +49,7 @@ Any combination of the following options.
 <span id="-d"></span><span id="-D"></span>**-d**  
 Causes decorated names to be used when displaying symbols and searching for symbols. When this option is used, [SYMOPT\_PUBLICS\_ONLY](symbol-options.md#symopt-publics-only) is turned on, and both SYMOPT\_UNDNAME and SYMOPT\_AUTO\_PUBLICS are turned off. This is equivalent to issuing the command symopt +4000 followed by symopt -10002 after DBH is running.
 
-<span id="-s_Path"></span><span id="-s_path"></span><span id="-S_PATH"></span>**-s:***Path*  
+<span id="-s_Path"></span><span id="-s_path"></span><span id="-S_PATH"></span>**-s:**<em>Path</em>  
 Sets the symbol path to the specified *Path* value.
 
 <span id="-n_"></span><span id="-N_"></span>**-n**   
@@ -68,9 +68,9 @@ Displays help text for the DBH command line, and displays a list of all DBH comm
 
 For more information about the DBH tool, see [Using DBH](using-dbh.md).
 
- 
+ 
 
- 
+ 
 
 
 

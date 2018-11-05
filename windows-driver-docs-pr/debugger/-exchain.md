@@ -57,7 +57,7 @@ Displays information that is obtained by walking the CRT function tables, even i
 </tbody>
 </table>
 
- 
+ 
 
 The **!exchain** extension is available only for an x86-based target computer.
 
@@ -79,9 +79,9 @@ The list begins with the first handler on the chain (the one that is given the f
 0012ffe0: KERNEL32!GetThreadContext+1c (77ea1856)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

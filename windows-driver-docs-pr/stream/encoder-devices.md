@@ -44,15 +44,15 @@ To support audio/video encoder devices, you must implement support for Microsoft
 
 **Note**   If you are writing a software-implemented encoder, then you should not write it as a kernel streaming filter. Instead, such filters should be written as Microsoft DirectShow filters or DirectX Media Objects. See the DirectShow SDK topic "Encoder API" for more information about software-based encoders.
 
- 
+ 
 
 Clients access encoder functionality through the [**ICodecAPI**](https://msdn.microsoft.com/library/windows/desktop/dd311953) COM interface. You specify which interface KsProxy exposes in the driver's INF file depending on the properties your minidriver implements. See [Encoder Implementation and Support](encoder-implementation-and-support.md) for information about the Microsoft-defined kernel streaming properties and event. See [Encoder Code Examples](encoder-code-examples.md) for examples of how to implement them. See [Encoder Installation and Registration](encoder-installation-and-registration.md) for information about how to install an encoder filter, including how to specify which COM interface KsProxy should expose.
 
 Encoder devices must conform to the Streaming Media and Broadcast requirements as described in the Windows Certification Program in addition to the generic logo requirements that cover all devices.
 
- 
+ 
 
- 
+ 
 
 
 

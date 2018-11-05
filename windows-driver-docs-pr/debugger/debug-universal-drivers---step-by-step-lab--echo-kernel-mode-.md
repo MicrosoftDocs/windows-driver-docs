@@ -29,7 +29,7 @@ In this lab, a live kernel debug connection is used to explore the following:
 -   Display the Plug and Play device tree
 -   Work with thread and process context
 
-**Note**  When working with the Windows debugger, there are two types of debugging that can be performed - user or kernel mode debugging.
+**Note**  When working with the Windows debugger, there are two types of debugging that can be performed - user or kernel mode debugging.
 
 *User mode* - Applications and subsystems run on the computer in user mode. Processes that run in user mode do so within their own virtual address spaces. They are restricted from gaining direct access to many parts of the system, including system hardware, memory that was not allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user mode processes, they cannot interfere with these resources.
 
@@ -37,7 +37,7 @@ In this lab, a live kernel debug connection is used to explore the following:
 
 This lab will focus on kernel mode debugging, as that is the method used to debug many device drivers.
 
- 
+
 This exercise covers debug commands that are frequently used during both user-mode and kernel-mode debugging. The exercise also covers debug extensions (sometimes called "!commands") that are used for kernel-mode debugging.
 
 ## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
@@ -45,8 +45,8 @@ This exercise covers debug commands that are frequently used during both user-mo
 
 You will need the following hardware to be able to complete the lab.
 
--   A laptop or desktop computer (host) running Windows 10
--   A laptop or desktop computer (target) running Windows 10
+-   A laptop or desktop computer (host) running Windows 10
+-   A laptop or desktop computer (target) running Windows 10
 -   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
@@ -55,7 +55,7 @@ You will need the following software to be able to complete the lab.
 -   Visual Studio 2017
 -   Windows Software Development Kit (SDK) for Windows 10
 -   Windows Driver Kit (WDK) for Windows 10
--   The sample echo driver for Windows 10
+-   The sample echo driver for Windows 10
 
 The lab has the following eleven sections.
 
@@ -137,7 +137,7 @@ Enable kernel mode debugging on the target system by completing the following st
     ```console
     C:\> bcdedit /set {default} DEBUG YES
     ```
-    
+
 2. Type this command to enable test signing.
 
     ```console
@@ -151,7 +151,7 @@ Enable kernel mode debugging on the target system by completing the following st
     C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
     ```
 
-**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
@@ -165,14 +165,14 @@ Enable kernel mode debugging on the target system by completing the following st
     The operation completed successfully.
     ```
 
-**Note**  
+**Note**  
 **Firewalls and debuggers**
 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, uand you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
- 
+
 
 **&lt;- On the host system**
 
@@ -223,7 +223,6 @@ Machine Name:
 Kernel base = 0xfffff800`9540d000 PsLoadedModuleList = 0xfffff800`95774110
 Debug session time: Wed Feb 28 17:16:23.816 2018 (UTC - 8:00)
 System Uptime: 0 days 0:00:20.534
-
 ```
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
@@ -304,9 +303,9 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 ...
 ```
 
-**Note**  Output that has been omitted is indicated with "… " in this lab.
+**Note**  Output that has been omitted is indicated with "… " in this lab.
 
- 
+
 
 7. To request detailed information about a specific module, use the v (verbose) option as shown.
 
@@ -416,7 +415,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     | File        | Description                                                                       |
     |-------------|-----------------------------------------------------------------------------------|
-    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |     
+    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |     
 
 8.  Locate a USB thumb drive or set up a network share to copy the built driver files and the test EchoApp from the host to the target system.
 
@@ -541,11 +540,11 @@ View information about the driver by performing the following steps.
     0: kd> .reload /f
     ```
 
-    **Note**  The **.reload** command with the **/f** force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
+    **Note**  The **.reload** command with the **/f** force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
 
-     
 
-**Note**  You must load the proper symbols to use advanced functionality that WinDbg provides. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols.
+
+**Note**  You must load the proper symbols to use advanced functionality that WinDbg provides. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols.
 
 ```dbgcmd
 0:000> dv
@@ -554,16 +553,16 @@ Private symbols (symbols.pri) are required for locals.
 Type “.hh dbgerr005” for details.
 ```
 
- 
 
-**Note**  
+
+**Note**  
 **Symbol servers**
 
 There are a number of approaches that can be used to work with symbols. In many situations, you can configure the PC to access symbols from a symbol server that Microsoft provides when they are needed. This walkthrough assumes that this approach will be used. If the symbols in your environment are in a different location, modify the steps to use that location. For additional information, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
- 
 
-**Note**  
+
+**Note**  
 **Understand source code symbol requirements**
 
 To perform source debugging, you must build a checked (debug) version of your binaries. The compiler will create symbol files (.pdb files). These symbol files will show the debugger how the binary instructions correspond to the source lines. The actual source files themselves must also be accessible to the debugger.
@@ -575,94 +574,94 @@ set COMPILE_DEBUG=1
 set ENABLE_OPTIMIZER=0
 ```
 
- 
 
-1.  Type the following in the command area of the debugger to display information about the echo driver :
 
-    ```dbgcmd
-    0: kd> lm m echo* v
-    Browse full module list
-    start             end                 module name
-    fffff801`4ae80000 fffff801`4ae89000   ECHO       (private pdb symbols)  C:\Samples\KMDF_ECHO_SAMPLE\echo.pdb
-        Loaded symbol image file: ECHO.sys
-        Image path: \SystemRoot\system32\DRIVERS\ECHO.sys
-        Image name: ECHO.sys
-    ...  
-    ```
+1. Type the following in the command area of the debugger to display information about the echo driver :
 
-    For information, see [**lm**](lm--list-loaded-modules-.md).
+   ```dbgcmd
+   0: kd> lm m echo* v
+   Browse full module list
+   start             end                 module name
+   fffff801`4ae80000 fffff801`4ae89000   ECHO       (private pdb symbols)  C:\Samples\KMDF_ECHO_SAMPLE\echo.pdb
+       Loaded symbol image file: ECHO.sys
+       Image path: \SystemRoot\system32\DRIVERS\ECHO.sys
+       Image name: ECHO.sys
+   ...  
+   ```
 
-2.  Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
+   For information, see [**lm**](lm--list-loaded-modules-.md).
 
-    ```dbgcmd
-    0: kd> x /D Echo!a*
-    ```
+2. Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 
-3.  As it turns out, the echo sample doesn’t contain any symbols that start with the letter “a”, so to display information about all of the symbols associated with echo driver that start with Echo, type **x ECHO!Echo\***.
+   ```dbgcmd
+   0: kd> x /D Echo!a*
+   ```
 
-    ```dbgcmd
-    0: kd> x ECHO!Echo*
-    fffff801`0bf95690 ECHO!EchoEvtIoQueueContextDestroy (void *)
-    fffff801`0bf95000 ECHO!EchoEvtDeviceSelfManagedIoStart (struct WDFDEVICE__ *)
-    fffff801`0bf95ac0 ECHO!EchoEvtTimerFunc (struct WDFTIMER__ *)
-    fffff801`0bf9b120 ECHO!EchoEvtDeviceSelfManagedIoSuspend (struct WDFDEVICE__ *)
-    ...
-    ```
+3. As it turns out, the echo sample doesn’t contain any symbols that start with the letter “a”, so to display information about all of the symbols associated with echo driver that start with Echo, type **x ECHO!Echo\\***.
 
-    For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
+   ```dbgcmd
+   0: kd> x ECHO!Echo*
+   fffff801`0bf95690 ECHO!EchoEvtIoQueueContextDestroy (void *)
+   fffff801`0bf95000 ECHO!EchoEvtDeviceSelfManagedIoStart (struct WDFDEVICE__ *)
+   fffff801`0bf95ac0 ECHO!EchoEvtTimerFunc (struct WDFTIMER__ *)
+   fffff801`0bf9b120 ECHO!EchoEvtDeviceSelfManagedIoSuspend (struct WDFDEVICE__ *)
+   ...
+   ```
 
-4.  The **!lmi** extension displays detailed information about a module. Type **!lmi echo**. Your output should be similar to the text shown below.
+   For information, see [**x (Examine Symbols)**](x--examine-symbols-.md).
 
-    ```dbgcmd
-    0: kd> !lmi echo
-    Loaded Module Info: [echo] 
-             Module: ECHO
-       Base Address: fffff8010bf94000
-         Image Name: ECHO.sys
-    … 
-    ```
+4. The **!lmi** extension displays detailed information about a module. Type **!lmi echo**. Your output should be similar to the text shown below.
 
-5.  Use the **!dh** extension to display header information as shown below.
+   ```dbgcmd
+   0: kd> !lmi echo
+   Loaded Module Info: [echo] 
+            Module: ECHO
+      Base Address: fffff8010bf94000
+        Image Name: ECHO.sys
+   … 
+   ```
 
-    ```dbgcmd
-    0: kd> !dh echo
+5. Use the **!dh** extension to display header information as shown below.
 
-    File Type: EXECUTABLE IMAGE
-    FILE HEADER VALUES
-         14C machine (i386)
-           6 number of sections
-    54AD8A42 time date stamp Wed Jan 07 11:34:26 2015
-    ...
-    ```
+   ```dbgcmd
+   0: kd> !dh echo
 
-6.  **Setting the debug mask**
+   File Type: EXECUTABLE IMAGE
+   FILE HEADER VALUES
+        14C machine (i386)
+          6 number of sections
+   54AD8A42 time date stamp Wed Jan 07 11:34:26 2015
+   ...
+   ```
 
-    Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
+6. **Setting the debug mask**
 
-    ```dbgcmd
-    0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
-    ```
+   Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
-    Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
+   ```dbgcmd
+   0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
+   ```
 
-    ```dbgcmd
-    0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
-    ```
-    
-    Use the dd command to display confirm the mask is set to display all of the debugger messages. 
+   Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
 
-    ```dbgcmd
-    0: kd> dd nt!kd_DEFAULT_MASK 
-    fffff802`bb4057c0  ffffffff 00000000 00000000 00000000
-    fffff802`bb4057d0  00000000 00000000 00000000 00000000
-    fffff802`bb4057e0  00000001 00000000 00000000 00000000
-    fffff802`bb4057f0  00000000 00000000 00000000 00000000
-    fffff802`bb405800  00000000 00000000 00000000 00000000
-    fffff802`bb405810  00000000 00000000 00000000 00000000
-    fffff802`bb405820  00000000 00000000 00000000 00000000
-    fffff802`bb405830  00000000 00000000 00000000 00000000
-    ```
-    
+   ```dbgcmd
+   0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
+   ```
+
+   Use the dd command to display confirm the mask is set to display all of the debugger messages. 
+
+   ```dbgcmd
+   0: kd> dd nt!kd_DEFAULT_MASK 
+   fffff802`bb4057c0  ffffffff 00000000 00000000 00000000
+   fffff802`bb4057d0  00000000 00000000 00000000 00000000
+   fffff802`bb4057e0  00000001 00000000 00000000 00000000
+   fffff802`bb4057f0  00000000 00000000 00000000 00000000
+   fffff802`bb405800  00000000 00000000 00000000 00000000
+   fffff802`bb405810  00000000 00000000 00000000 00000000
+   fffff802`bb405820  00000000 00000000 00000000 00000000
+   fffff802`bb405830  00000000 00000000 00000000 00000000
+   ```
+
 
 ## <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
 
@@ -674,66 +673,66 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 **&lt;-On the host system**
 
-1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command.
+1. To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command.
 
-    ```dbgcmd
-    0: kd> !devnode 0 1
-    Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
-    DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
-      InstancePath is "HTREE\ROOT\0"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-      DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
-        InstancePath is "ROOT\volmgr\0000"
-        ServiceName is "volmgr"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeEnumerateCompletion (0x30d)
-        DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
-    …
-    ```
+   ```dbgcmd
+   0: kd> !devnode 0 1
+   Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
+   DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
+     InstancePath is "HTREE\ROOT\0"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+     DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
+       InstancePath is "ROOT\volmgr\0000"
+       ServiceName is "volmgr"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeEnumerateCompletion (0x30d)
+       DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
+   …
+   ```
 
-2.  Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *echo*.
+2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *echo*.
 
-    ![find dialog box showing the term echo being searched for](images/debuglab-image-find-dialog.png)
+   ![find dialog box showing the term echo being searched for](images/debuglab-image-find-dialog.png)
 
-3.  The echo device driver should be loaded. Use the **!devnode 0 1 echo** command to display Plug and Play information associated with our echo device driver as shown below.
+3. The echo device driver should be loaded. Use the **!devnode 0 1 echo** command to display Plug and Play information associated with our echo device driver as shown below.
 
-    ```dbgcmd
-    0: Kd> !devnode 0 1 echo
-    Dumping IopRootDeviceNode (= 0xffffe0007b725d30)
-    DevNode 0xffffe0007b71a630 for PDO 0xffffe0007b71a960
-      InstancePath is "ROOT\SAMPLE\0000"
-      ServiceName is "ECHO"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-    …
-    ```
+   ```dbgcmd
+   0: Kd> !devnode 0 1 echo
+   Dumping IopRootDeviceNode (= 0xffffe0007b725d30)
+   DevNode 0xffffe0007b71a630 for PDO 0xffffe0007b71a960
+     InstancePath is "ROOT\SAMPLE\0000"
+     ServiceName is "ECHO"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+   …
+   ```
 
-4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the echo device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
+4. The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devobj**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the echo device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
-    ```dbgcmd
-    0: kd> !devobj 0xffffe0007b71a960
-    Device object (ffffe0007b71a960) is for:
-     0000000e \Driver\PnpManager DriverObject ffffe0007b727e60
-    Current Irp 00000000 RefCount 0 Type 00000004 Flags 00001040
-    Dacl ffffc102c9b36031 DevExt 00000000 DevObjExt ffffe0007b71aab0 DevNode ffffe0007b71a630 
-    ExtensionFlags (0x00000800)  DOE_DEFAULT_SD_PRESENT
-    Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
-    AttachedDevice (Upper) ffffe000801fee20 \Driver\ECHO
-    Device queue is not busy.
-    ```
+   ```dbgcmd
+   0: kd> !devobj 0xffffe0007b71a960
+   Device object (ffffe0007b71a960) is for:
+    0000000e \Driver\PnpManager DriverObject ffffe0007b727e60
+   Current Irp 00000000 RefCount 0 Type 00000004 Flags 00001040
+   Dacl ffffc102c9b36031 DevExt 00000000 DevObjExt ffffe0007b71aab0 DevNode ffffe0007b71a630 
+   ExtensionFlags (0x00000800)  DOE_DEFAULT_SD_PRESENT
+   Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
+   AttachedDevice (Upper) ffffe000801fee20 \Driver\ECHO
+   Device queue is not busy.
+   ```
 
-5.  The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
+5. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver, in this example it is *0xffffe0007b71a960*. Enter the **!devstack**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
-    ```dbgcmd
-    0: kd> !devstack 0xffffe0007b71a960
-      !DevObj           !DrvObj            !DevExt           ObjectName
-      ffffe000801fee20  \Driver\ECHO       ffffe0007f72eff0  
-    > ffffe0007b71a960  \Driver\PnpManager 00000000  0000000e
-    !DevNode ffffe0007b71a630 :
-      DeviceInst is "ROOT\SAMPLE\0000"
-      ServiceName is "ECHO"
-    ```
+   ```dbgcmd
+   0: kd> !devstack 0xffffe0007b71a960
+     !DevObj           !DrvObj            !DevExt           ObjectName
+     ffffe000801fee20  \Driver\ECHO       ffffe0007f72eff0  
+   > ffffe0007b71a960  \Driver\PnpManager 00000000  0000000e
+   !DevNode ffffe0007b71a630 :
+     DeviceInst is "ROOT\SAMPLE\0000"
+     ServiceName is "ECHO"
+   ```
 
 The output shows that we have a fairly simple device driver stack. The echo driver is a child of the PnPManager node. The PnPManager is a root node.
 
@@ -745,15 +744,15 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
+**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
- 
+
 
 ## <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
 
 *In Section 7, you will set breakpoints and single step through kernel mode source code.*
 
-**Note**  
+**Note**  
 **Setting breakpoints using commands**
 
 To be able to step through code and check the values of variables in real time, we need to enable breakpoints and set a path to the source code.
@@ -783,9 +782,9 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
 
@@ -829,10 +828,10 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
       1: fffff801`0bf9b1c0 @!"ECHO!EchoEvtDeviceAdd"
     ```
 
-    **Note**  
+    **Note**  
     You can use different syntax in conjunction with setting variables like &lt;module&gt;!&lt;symbol&gt;, &lt;class&gt;::&lt;method&gt;,‘&lt;file.cpp&gt;:&lt;line number&gt;’, or skip a number of times &lt;condition&gt; &lt;\#&gt;. For more information, see [Conditional breakpoints in WinDbg and other Windows debuggers](setting-a-conditional-breakpoint.md).
 
-     
+
 
 6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
 
@@ -865,7 +864,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 13. In the next section, we will examine the state of the variables after the DeviceAdd code has executed.
 
-**Note**  
+**Note**  
 **Modifying breakpoint state**
 
 You can modify existing breakpoints by using the following commands:
@@ -895,13 +894,13 @@ You can modify existing breakpoints by using the following commands:
 </tbody>
 </table>
 
- 
+
 
 Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints** in WinDbg. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
- 
 
-**Note**  
+
+**Note**  
 **Setting memory access breakpoints**
 
 You can also set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
@@ -937,7 +936,7 @@ ba <access> <size> <address> {options}
 </tbody>
 </table>
 
- 
+
 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
@@ -947,9 +946,9 @@ For example, to set a read/write breakpoint on a specific memory address, you co
 ba r 4 0x0003f7bf0
 ```
 
- 
 
-**Note**  
+
+**Note**  
 **Stepping through code from the Debugger Command window**
 
 The following are the commands that you can use to step through your code (with the associated keyboard short cuts shown in parentheses).
@@ -966,7 +965,7 @@ The following are the commands that you can use to step through your code (with 
 
 -   Step out (Shift+F11) – This command causes execution to run to and exit from the current routine (current place in the call stack). This is useful if you've seen enough of the routine.
 
- 
+
 
 For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
 
@@ -1001,7 +1000,7 @@ You can display the names and values of all local variables for a given frame by
 
 **Callstacks**
 
-**Note**  
+**Note**  
 The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, and the next function is the function that called the current function, and so on.
 
 To display the call stack, use the k\* commands.
@@ -1027,9 +1026,9 @@ To display the call stack, use the k\* commands.
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 **&lt;-On the host system**
 
@@ -1059,107 +1058,107 @@ The call stack shows that the kernel (nt) called into Plug and Play code (PnP), 
 
 *In Section 9, you will display information about the process and threads running in kernel mode.*
 
-**Note**  
+**Note**  
 You can display or set process information by using the [**!process**](-process.md) debugger extension. We will set a breakpoint to examine the process that are used when a sound is played.
 
- 
 
-1.  **&lt;- On the host system**
 
-    Type the **dv** command to examine the locale variables associated with the **EchoEvtIo** routine as shown.
+1. **&lt;- On the host system**
 
-    ```dbgcmd
-    0: kd> dv ECHO!EchoEvtIo*
-    ECHO!EchoEvtIoQueueContextDestroy
-    ECHO!EchoEvtIoWrite
-    ECHO!EchoEvtIoRead         
-    ```
+   Type the **dv** command to examine the locale variables associated with the **EchoEvtIo** routine as shown.
 
-2.  Clear the previous breakpoints using **bc \***.
+   ```dbgcmd
+   0: kd> dv ECHO!EchoEvtIo*
+   ECHO!EchoEvtIoQueueContextDestroy
+   ECHO!EchoEvtIoWrite
+   ECHO!EchoEvtIoRead         
+   ```
 
-    ```dbgcmd
-    0: kd> bc *  
-    ```
+2. Clear the previous breakpoints using **bc \\***.
 
-3.  3. Set a symbol breakpoint on the **EchoEvtIo** routines using the following command.
+   ```dbgcmd
+   0: kd> bc *  
+   ```
 
-    ```dbgcmd
-    0: kd> bm ECHO!EchoEvtIo*
-      2: aade5490          @!”ECHO!EchoEvtIoQueueContextDestroy”
-      3: aade55d0          @!”ECHO!EchoEvtIoWrite”
-      4: aade54c0          @!”ECHO!EchoEvtIoRead”
-    ```
+3. 3. Set a symbol breakpoint on the **EchoEvtIo** routines using the following command.
 
-4.  List the breakpoints to confirm that the breakpoint is set properly.
+   ```dbgcmd
+   0: kd> bm ECHO!EchoEvtIo*
+     2: aade5490          @!”ECHO!EchoEvtIoQueueContextDestroy”
+     3: aade55d0          @!”ECHO!EchoEvtIoWrite”
+     4: aade54c0          @!”ECHO!EchoEvtIoRead”
+   ```
 
-    ```dbgcmd
-    0: kd> bl
-    1 e aabf0490 [c:\Samples\kmdf echo sample\c++\driver\autosync\queue.c @ 197]    0001 (0001) ECHO!EchoEvtIoQueueContextDestroy
-    ...
-    ```
+4. List the breakpoints to confirm that the breakpoint is set properly.
 
-5.  Type **g** to restart code execution.
+   ```dbgcmd
+   0: kd> bl
+   1 e aabf0490 [c:\Samples\kmdf echo sample\c++\driver\autosync\queue.c @ 197]    0001 (0001) ECHO!EchoEvtIoQueueContextDestroy
+   ...
+   ```
 
-    ```dbgcmd
-    0: kd> g
-    ```
+5. Type **g** to restart code execution.
 
-6.  **-&gt; On the target system**
+   ```dbgcmd
+   0: kd> g
+   ```
 
-    Run the EchoApp.exe driver test program on the target system.
+6. **-&gt; On the target system**
 
-7.  **&lt;- On the host system**
+   Run the EchoApp.exe driver test program on the target system.
 
-    When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
+7. **&lt;- On the host system**
 
-    ```dbgcmd
-    Breakpoint 2 hit
-    ECHO!EchoEvtIoWrite:
-    fffff801`0bf95810 4c89442418      mov     qword ptr [rsp+18h],r8
-    ```
+   When the test app runs, the I/O routine in the driver will be called. This will cause the breakpoint to fire, and execution of the driver code on the target system will halt.
 
-8.  Use the **!process** command to display the current process that is involved in running echoapp.exe.
+   ```dbgcmd
+   Breakpoint 2 hit
+   ECHO!EchoEvtIoWrite:
+   fffff801`0bf95810 4c89442418      mov     qword ptr [rsp+18h],r8
+   ```
 
-    ```dbgcmd
-    0: kd> !process
-    PROCESS ffffe0007e6a7780
-        SessionId: 1  Cid: 03c4    Peb: 7ff7cfec4000  ParentCid: 0f34
-        DirBase: 1efd1b000  ObjectTable: ffffc001d77978c0  HandleCount:  34.
-        Image: echoapp.exe
-        VadRoot ffffe000802c79f0 Vads 30 Clone 0 Private 135. Modified 5. Locked 0.
-        DeviceMap ffffc001d83c6e80
-        Token                             ffffc001cf270050
-        ElapsedTime                       00:00:00.052
-        UserTime                          00:00:00.000
-        KernelTime                        00:00:00.000
-        QuotaPoolUsage[PagedPool]         33824
-        QuotaPoolUsage[NonPagedPool]      4464
-        Working Set Sizes (now,min,max)  (682, 50, 345) (2728KB, 200KB, 1380KB)
-        PeakWorkingSetSize                652
-        VirtualSize                       16 Mb
-        PeakVirtualSize                   16 Mb
-        PageFaultCount                    688
-        MemoryPriority                    BACKGROUND
-        BasePriority                      8
-        CommitCharge                      138
+8. Use the **!process** command to display the current process that is involved in running echoapp.exe.
 
-            THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
-    ```
+   ```dbgcmd
+   0: kd> !process
+   PROCESS ffffe0007e6a7780
+       SessionId: 1  Cid: 03c4    Peb: 7ff7cfec4000  ParentCid: 0f34
+       DirBase: 1efd1b000  ObjectTable: ffffc001d77978c0  HandleCount:  34.
+       Image: echoapp.exe
+       VadRoot ffffe000802c79f0 Vads 30 Clone 0 Private 135. Modified 5. Locked 0.
+       DeviceMap ffffc001d83c6e80
+       Token                             ffffc001cf270050
+       ElapsedTime                       00:00:00.052
+       UserTime                          00:00:00.000
+       KernelTime                        00:00:00.000
+       QuotaPoolUsage[PagedPool]         33824
+       QuotaPoolUsage[NonPagedPool]      4464
+       Working Set Sizes (now,min,max)  (682, 50, 345) (2728KB, 200KB, 1380KB)
+       PeakWorkingSetSize                652
+       VirtualSize                       16 Mb
+       PeakVirtualSize                   16 Mb
+       PageFaultCount                    688
+       MemoryPriority                    BACKGROUND
+       BasePriority                      8
+       CommitCharge                      138
 
-    The output shows that the process is associated with the echoapp.exe which was running when our breakpoint on the driver write event was hit. For more information, see [**!process**](-process.md).
+           THREAD ffffe00080e32080  Cid 03c4.0ec0  Teb: 00007ff7cfece000 Win32Thread: 0000000000000000 RUNNING on processor 1
+   ```
 
-9.  Use the **!process 0 0** to display summary information for all processes. In the output, use CTRL+F to locate the same process address for the process associated with the echoapp.exe image. In the example shown below, the process address is ffffe0007e6a7780.
+   The output shows that the process is associated with the echoapp.exe which was running when our breakpoint on the driver write event was hit. For more information, see [**!process**](-process.md).
 
-    ```dbgcmd
-    ...
+9. Use the **!process 0 0** to display summary information for all processes. In the output, use CTRL+F to locate the same process address for the process associated with the echoapp.exe image. In the example shown below, the process address is ffffe0007e6a7780.
 
-    PROCESS ffffe0007e6a7780
-        SessionId: 1  Cid: 0f68    Peb: 7ff7cfe7a000  ParentCid: 0f34
-        DirBase: 1f7fb9000  ObjectTable: ffffc001cec82780  HandleCount:  34.
-        Image: echoapp.exe
+   ```dbgcmd
+   ...
 
-    ...
-    ```
+   PROCESS ffffe0007e6a7780
+       SessionId: 1  Cid: 0f68    Peb: 7ff7cfe7a000  ParentCid: 0f34
+       DirBase: 1f7fb9000  ObjectTable: ffffc001cec82780  HandleCount:  34.
+       Image: echoapp.exe
+
+   ...
+   ```
 
 10. Record the process ID associated with echoapp.exe to use later in this lab. You can also use CTRL+C, to copy the address to the copy buffer for later use.
 
@@ -1195,10 +1194,10 @@ You can display or set process information by using the [**!process**](-process.
 
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 
-**Note**  
+**Note**  
 The commands to view and set threads are very similar to those of processes. Use the [**!thread**](-thread.md) command to view threads. Use [**.thread**](-thread--set-register-context-.md) to set the current threads.
 
- 
+
 
 1.  **&lt;- On the host system**
 
@@ -1284,9 +1283,9 @@ The commands to view and set threads are very similar to those of processes. Use
     …
     ```
 
-    **Note**  You can alternatively use **!process 0 17** to display detailed information about every process. The output from this command can be lengthy. The output can be searched using Ctrl+F.
+    **Note**  You can alternatively use **!process 0 17** to display detailed information about every process. The output from this command can be lengthy. The output can be searched using Ctrl+F.
 
-     
+
 
 7.  Use the **!process** command to list process information for both processes running your PC. Provide the process address from your **!process 0 0** output, not the address shown below.
 
@@ -1424,14 +1423,14 @@ The commands to view and set threads are very similar to those of processes. Use
 
     Call stack elements such as **KiCommitThreadWait** indicate that this thread is not running as is expected.
 
-**Note**  
+**Note**  
 For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 
 [Changing Contexts](changing-contexts.md)
 
- 
+
 
 ## <span id="Section_10__IRQL__Registers_and_Ending_the_WinDbg_session"></span><span id="section_10__irql__registers_and_ending_the_windbg_session"></span><span id="SECTION_10__IRQL__REGISTERS_AND_ENDING_THE_WINDBG_SESSION"></span>Section 10: IRQL, Registers and Ending the WinDbg session
 
@@ -1480,7 +1479,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 To end a user-mode debugging session, return the debugger to dormant mode, and set the target application to run again, enter the **qd** (Quit and Detach) command.
 
-Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \***, so that the target computer won't break and try to connect to the host computer debugger.
+Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \\***, so that the target computer won't break and try to connect to the host computer debugger.
 
 ```dbgcmd
 0: kd> qd
@@ -1518,9 +1517,9 @@ OSR <https://www.osr.com/>
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md)
 
- 
 
- 
+
+
 
 
 

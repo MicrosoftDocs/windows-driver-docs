@@ -50,9 +50,9 @@ If the minidriver successfully closes the stream, the minidriver returns STATUS\
 
 Note that a stream could be closed arbitrarily while streaming if an associated user-mode application crashes. Therefore, you must release all outstanding resources for the stream, complete all pending SRBs for the stream, and put the stream back into a quiescent state.
 
- 
+ 
 
- 
+ 
 
 
 

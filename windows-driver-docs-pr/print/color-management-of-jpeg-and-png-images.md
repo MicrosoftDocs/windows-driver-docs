@@ -29,9 +29,9 @@ For these compressed images, color space information is typically contained with
 
 For more information about supporting JPEG and PNG compressed images, see the Remarks section for [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ The Microsoft AMLI Debugger is a special debugging tool that can debug AML code.
 
 On Windows XP and later versions of Windows, the AMLI Debugger is completely 64-bit aware. No matter what processor is being used by the target computer or the host computer, the AMLI Debugger will function correctly.
 
- 
+ 
 
- 
+ 
 
 
 

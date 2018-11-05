@@ -31,7 +31,7 @@ Systems can be designed such that the dual-role USB controller needs Windows to 
 
 **Note**  Systems can be designed such that the dual-role USB port needs Windows to configure it to either Host or Function mode. These designs use the USB role switch stack. If the system does not use a Synopsys dual role controller, you need to write a USB role switch client driver for the system’s dual role controller.
 
- 
+ 
 
 The client driver handles hardware events and reports them to the class extension. In case of role-switch hardware events, URS decides the role and consequently loads the drivers for that role. If the controller is in host role, the [USB host-side drivers](usb-3-0-driver-stack-architecture.md) are loaded; for a the function role, the [device-side drivers](usb-device-side-drivers-in-windows.md) are loaded.
 

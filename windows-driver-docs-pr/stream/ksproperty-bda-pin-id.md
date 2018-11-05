@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_PIN\_ID to retrieve the BDA identifier (ID) for a p
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

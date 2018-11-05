@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>FormatValue</strong>](formatvalue.md)</p></td>
+<td><p><a href="formatvalue.md" data-raw-source="[&lt;strong&gt;FormatValue&lt;/strong&gt;](formatvalue.md)"><strong>FormatValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceSettings</strong>](devicesettings.md)</p></td>
+<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +82,9 @@ Each [**FormatValue**](formatvalue.md) element specifies a file format that desc
 
 [**FormatValue**](formatvalue.md)
 
- 
+ 
 
- 
+ 
 
 
 

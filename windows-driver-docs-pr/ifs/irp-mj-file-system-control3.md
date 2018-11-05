@@ -20,9 +20,9 @@ A file system control allows the file system to perform essentially any speciali
 
 The I/O manager will enforce FILE_READ_DATA and FILE_WRITE_DATA permissions on specific FSCTL operations, if the file system has set these bits in the file system operation definition using the CTL_CODE macro. All other permissions required must be checked by the file system (FILE_READ_ATTRIBUTES permissions, for example) if this is the policy of the file system.
 
- 
+ 
 
- 
+ 
 
 
 

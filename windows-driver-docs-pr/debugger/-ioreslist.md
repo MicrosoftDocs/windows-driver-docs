@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST struct
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -117,9 +117,9 @@ This resource list contains the following requests:
 
 Interrupts and DMA channels are represented as ranges with the same beginning and end.
 
- 
+ 
 
- 
+ 
 
 
 

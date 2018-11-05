@@ -34,10 +34,10 @@ The following table captures the key advantages and challenges associated with t
 
 
 ## See Also
-[**Getting Started with UMDF**](../wdf/getting-started-with-umdf-version-2.md) 
+[**Getting Started with UMDF**](../wdf/getting-started-with-umdf-version-2.md) 
 
 
- 
+ 
 
 
 

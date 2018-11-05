@@ -61,7 +61,7 @@ The following NDIS filter driver installation issues are associated with monitor
     -   The lower modifying optional LWF driver fails to attach to a lower component. This will cause the mandatory monitoring LWF driver’s [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905) handler not to be called.
     -   Because now an instance of a mandatory LWF driver is not loaded, NDIS will not bind any protocols (such as TCP/IP) to the interface or NIC, thus rendering the interface to be unusable.
 
-     
+     
 
 -   The following example shows how a filter driver INF file specifies the name of the service.
 
@@ -124,9 +124,9 @@ The following NDIS filter driver installation issues are associated with monitor
     HKR, FilterInstanceParams\InstanceParam, type,  ,"int"
     ```
 
- 
+ 
 
- 
+ 
 
 
 

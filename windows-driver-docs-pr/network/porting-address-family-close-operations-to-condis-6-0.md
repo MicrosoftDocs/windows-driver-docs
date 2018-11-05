@@ -26,9 +26,9 @@ CoNDIS 6.0 clients must register a [**ProtocolClNotifyCloseAf**](https://msdn.mi
 
 For more information about closing an address family in a call manager or MCM, see [Closing a CoNDIS 6.0 Call Manager or MCM](closing-a-condis-call-manager-or-mcm.md). For more information about closing an address family in a client, see [Closing an Address Family in a CoNDIS 6.0 Client](closing-an-address-family-in-a-condis-client.md).
 
- 
+ 
 
- 
+ 
 
 
 

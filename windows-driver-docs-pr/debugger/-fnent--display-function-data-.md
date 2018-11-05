@@ -52,7 +52,7 @@ Specifies the address of the function.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,9 +82,9 @@ Non-FPO
 No function entry for 01005a60
 ```
 
- 
+ 
 
- 
+ 
 
 
 

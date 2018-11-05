@@ -31,7 +31,7 @@ The size (in bytes) of an NDIS\_STATUS.
 |--------------|-------------------------|
 | NDIS\_STATUS | The NDIS\_STATUS value. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

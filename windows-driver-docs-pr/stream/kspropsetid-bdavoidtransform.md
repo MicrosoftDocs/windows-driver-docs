@@ -22,9 +22,9 @@ Starts operation of a node.
 <span id="KSPROPERTY_BDA_VOID_TRANSFORM_STOP"></span><span id="ksproperty_bda_void_transform_stop"></span>[**KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP**](ksproperty-bda-void-transform-stop.md)  
 Stops operation of a node.
 
- 
+ 
 
- 
+ 
 
 
 

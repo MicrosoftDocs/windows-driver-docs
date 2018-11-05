@@ -37,9 +37,9 @@ If a buffer is supplied, the *Count* parameter may not exceed MAXIMUM\_WAIT\_OBJ
 
 If the value of *Count* exceeds the allowable value, this bug check is issued.
 
- 
+ 
 
- 
+ 
 
 
 

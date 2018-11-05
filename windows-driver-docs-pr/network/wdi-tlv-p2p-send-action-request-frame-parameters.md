@@ -35,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                                                  | The send timeout. The maximum time, in milliseconds, to send the action frame.                                                 |
 | UINT32                                                                  | The post-ACK dwell time. The time, in milliseconds, to remain on the listen channel after the incoming packet is acknowledged. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

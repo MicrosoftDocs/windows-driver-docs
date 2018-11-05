@@ -23,9 +23,9 @@ These requirements apply to all GFX filters regardless of whether they are inten
 
 A GFX filter that processes a rendering stream might need to change to a different stream data format on the fly. For more information, see [How KMixer Handles Set-Format Requests](how-kmixer-handles-set-format-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

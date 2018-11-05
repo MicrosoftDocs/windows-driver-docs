@@ -65,9 +65,9 @@ The preceding routine could be made pageable (saving about 160 bytes) by moving 
 
 In addition, remember that driver code must not be marked as pageable if it calls any **Ke*Xxx*** support routines, such as [**KeReleaseMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553140) or [**KeReleaseSemaphore**](https://msdn.microsoft.com/library/windows/hardware/ff553143), in which the *Wait* parameter is set to **TRUE**. Such a call returns with IRQL at DISPATCH\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

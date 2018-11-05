@@ -34,7 +34,7 @@ When all details are complete, select **Save** to finalize your new user. This w
 
 **Note**  Make sure you print or save this page for the new user. You will not be able to recover this password after you leave this page.
 
- 
+ 
 
 ## <span id="Removing_Users"></span><span id="removing_users"></span><span id="REMOVING_USERS"></span>Removing Users
 
@@ -43,7 +43,7 @@ Removing a user is easy. On the **manage users** page, you will see a list of al
 
 ![an image showing the remove button on the manage users screen](images/remove-users.png)
 
- 
+ 
 
- 
+ 
 

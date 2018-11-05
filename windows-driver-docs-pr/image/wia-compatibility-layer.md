@@ -24,9 +24,9 @@ This section contains information on the following topics:
 
 [WIA Compatibility Layer Data Transfers](wia-compatibility-layer-data-transfers.md)
 
- 
+ 
 
- 
+ 
 
 
 

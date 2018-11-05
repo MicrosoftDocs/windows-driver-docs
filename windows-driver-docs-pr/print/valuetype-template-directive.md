@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The `*ValueType` directive assigns a data type that defines the value of an attribute.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements.
 |------------|------------------------------------------------------------------------------------------------|
 | UINT8\[6\] | Specifies the initial 48-bit value of Packet Number (PN), which is used for replay protection. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

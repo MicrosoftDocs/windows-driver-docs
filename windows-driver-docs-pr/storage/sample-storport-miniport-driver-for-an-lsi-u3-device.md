@@ -22,9 +22,9 @@ The LSI\_U3 Storport miniport driver sample code that is included in the WDK is 
 
 Adjustments were made in the LSI\_U3 miniport driver to match Storport advanced functionality to the limited hardware capabilities of the host bus adapters themselves.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,16 +55,16 @@ The UP\_DRIVER\_ON\_MP\_SYSTEM bug check has a value of 0x00000092. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 A driver that is compiled to work only on uniprocessor machines has been loaded, but the Microsoft Windows operating system is running on a multiprocessor system with more than one active processor.
 
- 
+ 
 
- 
+ 
 
 
 

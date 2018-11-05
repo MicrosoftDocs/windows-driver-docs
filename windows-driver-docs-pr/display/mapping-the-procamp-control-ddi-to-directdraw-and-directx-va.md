@@ -23,9 +23,9 @@ The following topics describe how the ProcAmp control DDI is mapped to the motio
 
 [Calling the ProcAmp Control DDI from a User-Mode Component](calling-the-procamp-control-ddi-from-a-user-mode-component.md)
 
- 
+ 
 
- 
+ 
 
 
 

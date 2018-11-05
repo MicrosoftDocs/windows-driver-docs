@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Exposure</strong>](exposure.md)</p></td>
+<td><p><a href="exposure.md" data-raw-source="[&lt;strong&gt;Exposure&lt;/strong&gt;](exposure.md)"><strong>Exposure</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ When the value is 0 or **false**, the device should use the default settings for
 
 [**Exposure**](exposure.md)
 
- 
+ 
 
- 
+ 
 
 
 

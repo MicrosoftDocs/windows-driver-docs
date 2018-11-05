@@ -23,9 +23,9 @@ The following requirements are new for display driver INF files starting with Wi
 
 [Encoding Windows 7 Display Driver INF Files in Unicode](encoding-windows-7-display-driver-inf-files-in-unicode.md)
 
- 
+ 
 
- 
+ 
 
 
 

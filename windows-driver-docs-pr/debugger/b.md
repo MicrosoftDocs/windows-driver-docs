@@ -46,9 +46,9 @@ For more information, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.
 <span id="bug_check_code"></span><span id="BUG_CHECK_CODE"></span>**bug check code**  
 The hexadecimal code indicating a specific type of bug check .
 
- 
+ 
 
- 
+ 
 
 
 

@@ -108,9 +108,9 @@ It is also possible to debug the callback routine itself. Breakpoints within cal
 
 If the callback routine causes a second bug check, this new bug check will be processed first. However, Windows will not repeat certain parts of the Stop process—for example, it will not write a second crash dump file. The Stop code displayed on the blue screen will be the second bug check code. If a kernel debugger is attached, messages about both bug checks will usually appear.
 
- 
+ 
 
- 
+ 
 
 
 

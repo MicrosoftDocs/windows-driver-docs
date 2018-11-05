@@ -35,9 +35,9 @@ After a CoNDIS WAN miniport driver has registered its miniport driver entry poin
 
 -   NDISWAN calls the [**NdisClRegisterSap**](https://msdn.microsoft.com/library/windows/hardware/ff561648) function to inform NDPROXY that NDISWAN can accept incoming calls on a particular Service Access Point (SAP). In this call, NDISWAN passes a [**CO\_SAP**](https://msdn.microsoft.com/library/windows/hardware/ff545392) structure that describes the SAP. NDISWAN sets the **SapType** member of CO\_SAP to AF\_TAPI\_SAP\_TYPE to specify that the SAP will be used for TAPI calls. NDISWAN sets the **Sap** member of CO\_SAP to a string for a particular TAPI device class. A TAPI application provides this string when the application calls the TAPI **lineGetID** function. NDPROXY should notify NDISWAN about all incoming calls addressed to the SAP.
 
- 
+ 
 
- 
+ 
 
 
 

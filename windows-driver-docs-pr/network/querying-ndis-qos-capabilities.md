@@ -19,9 +19,9 @@ NDIS handles these OID requests for the miniport driver. When the miniport drive
 
 For more information about how the miniport driver registers the NDIS QoS capabilities, see [Registering NDIS QoS Capabilities](registering-ndis-qos-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

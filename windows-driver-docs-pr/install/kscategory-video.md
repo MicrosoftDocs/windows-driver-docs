@@ -43,7 +43,7 @@ The KSCATEGORY_VIDEO [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Requirements
 
 [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
- 
+ 
 
- 
+ 
 
 
 

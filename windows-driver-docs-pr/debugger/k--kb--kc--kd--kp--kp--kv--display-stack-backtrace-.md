@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 
 
-The **k*\**** commands display the stack frame of the given thread, together with related information..
+The <strong>k*\\</strong>** commands display the stack frame of the given thread, together with related information..
 
 User-Mode, x86 Processor
 
@@ -147,7 +147,7 @@ Specifies the number of DWORD\_PTR values in the stack to dump. The default valu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="additional_information1"></span><span id="ADDITIONAL_INFORMATION1"></span>Additional Information
 
@@ -209,7 +209,7 @@ When you use the **kv** command, the FPO information is added at the end of the 
 </tbody>
 </table>
 
- 
+ 
 
 The **kd** command displays the raw stack data. Each DWORD value is displayed on a separate line. Symbol information is displayed for those lines together with associated symbols. This format creates a more detailed list than the other **k***\** commands. The **kd** command is equivalent to a [**dds (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command that uses the stack address as its parameter.
 
@@ -223,9 +223,9 @@ In kernel mode, the stack trace is based on the current [register context](chang
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

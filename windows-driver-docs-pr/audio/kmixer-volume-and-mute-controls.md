@@ -29,9 +29,9 @@ KMixer wakes up approximately every 10 milliseconds to mix another 10 millisecon
 
 When an application program calls **IDirectSoundBuffer::SetVolume** on an unaccelerated DirectSound buffer, for example, the call generates a [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309) set-property request to a KMixer sink (input) pin. KMixer applies the new volume setting just as soon as it wakes up and begins processing the next 10-millisecond buffer queued at the pin. Note that this buffer might have arrived at the pin before the volume-level property request but is still affected by the request. KMixer does not attempt to perform a gradual transition from the old volume setting to the new one. Instead, the full volume change takes effect with the very first sample that KMixer reads from the buffer.
 
- 
+ 
 
- 
+ 
 
 
 

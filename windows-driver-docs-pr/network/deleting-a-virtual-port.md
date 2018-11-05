@@ -23,7 +23,7 @@ Before it issues the OID set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https:
 
     **Note**  The overlying driver must not set the **VPortId** member to **NDIS\_DEFAULT\_PORT\_NUMBER**. This VPort identifier is reserved for the default VPort that is attached to the PCI Express (PCIe) Physical Function (PF) on the network adapter. The default VPort always exists and is not deleted explicitly though an OID set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818).
 
-     
+     
 
 The overlying driver calls [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) to issue the [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818) request to the underlying PF miniport driver. When the miniport driver receives the OID\_NIC\_SWITCH\_DELETE\_VPORT request, the driver must do the following:
 
@@ -45,9 +45,9 @@ The following points apply to the deletion of VPorts:
 
 -   Only nondefault VPorts can be explicitly deleted through OID requests of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817). The default VPort is implicitly deleted when the PF miniport driver deletes the default NIC switch. For more information, see [Deleting a NIC Switch](deleting-a-nic-switch.md).
 
- 
+ 
 
- 
+ 
 
 
 

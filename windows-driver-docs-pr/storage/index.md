@@ -34,7 +34,7 @@ This design guide includes the following sections:
 * [Changer Drivers](changer-drivers.md)  
 * [Storage Scenarios](storage-scenarios.md)  
 
-##Samples
+## Samples
 Studying samples is a practical way to see how working storage drivers are developed. [Sample storage drivers](http://go.microsoft.com/fwlink/p/?LinkId=616047) are available on GitHub.
 
 ## <span id="Driver_Verification_for_StorPort"></span><span id="driver_verification_for_storport"></span><span id="DRIVER_VERIFICATION_FOR_STORPORT"></span>Driver Verification for StorPort
@@ -44,9 +44,9 @@ Using code analysis tools during driver development and testing helps to catch p
 
 Tests for storage hardware certification are found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Test for storage devices are found in the [Devices.Storage](https://msdn.microsoft.com/library/windows/hardware/jj125097) category of the HCK.
 
- 
+ 
 
- 
+ 
 
 
 

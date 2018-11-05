@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -105,9 +105,9 @@ The following code example shows how the scan device notifies the client of the 
 
 [**JobEndState**](jobendstate.md)
 
- 
+ 
 
- 
+ 
 
 
 

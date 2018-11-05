@@ -62,9 +62,9 @@ The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** ret
 
 The record sequence number is a 9-bit number, so there are 2^9 (512) possible record sequence numbers, and they are in the range 0x0 through 0x1FF. A log I/O block can have at most 512 records.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of the array of WDI\_BAND\_ID (UINT32) elements. The array m
 |-------------------|-----------------------|
 | WDI\_BAND\_ID\[\] | An array of band IDs. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

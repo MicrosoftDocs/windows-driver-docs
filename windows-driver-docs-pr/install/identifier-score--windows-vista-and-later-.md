@@ -63,9 +63,9 @@ The following lists the identifier scores for the four types of identifier-match
 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -123,7 +123,7 @@ The following debugger extension points are integral to the debugger and availab
 | Debugger.Models.Parameters     | The parameters for a call within a stack frame                                               |
 | Debugger.Models.Module         | An individual module within the address space of a process                                   |
 
- 
+ 
 
 **Addtional Data Model Objects**
 
@@ -139,7 +139,7 @@ In addition, there are some additional data model objects that are defined by th
 | DataModel.Models.Concepts.Iterable          | Applied to every object which is iterable                     |
 | DataModel.Models.Concepts.StringDisplayable | Applied to every object which has a display string conversion |
 
- 
+ 
 
 **Example COM Debugger Object Extension Overview**
 
@@ -159,7 +159,7 @@ Going back to our example, we can define a prototype or ES6 class, *comProcessEx
 
 **Important**   The intent with the sub-namespace is to create a logically structured and naturally explorable paradigm. For example, avoid dumping unrelated items into the same sub-namespace. Carefully review the information discussed in [Debugger Data Model Design Considerations](#design-considerations) before creating a sub-namespace.
 
- 
+ 
 
 In this code snippet, we create add a sub-namespace called 'COM' on to the existing process debugger object.
 
@@ -190,7 +190,7 @@ There can be multiple processes (whether attached to such in user mode or under 
 
 `this.__process = process;`
 
- 
+ 
 
 ```javascript
 class comNamespace
@@ -498,7 +498,7 @@ The following properties (and methods) are projected onto native objects which e
 | removeParentModel  | .removeParentModel(object) | Removes a given parent model from the object                                                                                               |
 | runtimeTypedObject | Property                   | Performs analysis on the object and tries to convert it to the runtime (most derived) type                                                 |
 
- 
+ 
 
 If the object is a pointer, the following properties (and methods) are projected onto the pointer which enters JavaScript:
 
@@ -509,7 +509,7 @@ If the object is a pointer, the following properties (and methods) are projected
 | dereference   | .dereference() | Dereferences the pointer and returns the underlying object                     |
 | isNull        | Property       | Returns whether or not the pointer value is nullptr (0)                        |
 
- 
+ 
 
 **Special Types Pertaining to Native Debugger Objects**
 
@@ -522,7 +522,7 @@ The location object which is returned from the targetLocation property of a nati
 | add           | .add(value)      | Adds an absolute byte offset to the location.        |
 | subtract      | .subtract(value) | Subtracts an absolute byte offset from the location. |
 
- 
+ 
 
 **Additional Attributes**
 
@@ -591,25 +591,25 @@ As mentioned, a JavaScript script can get access to native objects by having the
 <td align="left"><p>getModuleSymbol(moduleName, symbolName, [contextInheritor])</p>
 <p>getModuleSymbol(moduleName, symbolName, [typeName], [contextInheritor])</p></td>
 <td align="left"><p>Returns an object for a global symbol within a particular module. The module name and symbol name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
 <p>If the optional <em>typeName</em> argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
 <td align="left"><p>createPointerObject(address, moduleName, typeName, [contextInheritor])</p></td>
 <td align="left"><p>Creates a pointer object at the specified address or location. The module name and type name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>host.createTypedObject</p></td>
 <td align="left"><p>createTypedObject(location, moduleName, typeName, [contextInheritor])</p></td>
 <td align="left"><p>Creates a object which represents a native typed object within the address space of a debug target at the specified location. The module name and type name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Host-APIs"></span><span id="host-apis"></span><span id="HOST-APIS"></span>Host APIs for JavaScript Extensions
 
@@ -629,7 +629,7 @@ A few key pieces of functionality are directly under the host object. The remain
 | diagnostics | Functionality to assist in the diagnosis and debugging of script code    |
 | memory      | Functionality to enable memory reading and writing within a debug target |
 
- 
+ 
 
 **Root Level**
 
@@ -697,7 +697,7 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">getModuleSymbol</td>
 <td align="left"><p>getModuleSymbol(moduleName, symbolName, [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">Returns an object for a global symbol within a particular module. The module name and symbol name are strings. If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off script should always supply an explicit context</td>
+<td align="left">Returns an object for a global symbol within a particular module. The module name and symbol name are strings. If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off script should always supply an explicit context</td>
 </tr>
 <tr class="odd">
 <td align="left">getNamedModel</td>
@@ -763,13 +763,13 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">typeSignatureExtension</td>
 <td align="left"><p>new typeSignatureExtension(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration &quot;adds fields&quot; to the debugger's visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration &quot;adds fields&quot; to the debugger&#39;s visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
 </tr>
 <tr class="even">
 <td align="left">typeSignatureRegistration</td>
 <td align="left"><p>new typeSignatureRegistration(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration &quot;takes over&quot; the debugger's visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration &quot;takes over&quot; the debugger&#39;s visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
 </tr>
 <tr class="odd">
 <td align="left">unregisterNamedModel</td>
@@ -792,7 +792,7 @@ Directly within the host object, the following properties, methods, and construc
 </tbody>
 </table>
 
- 
+ 
 
 **Diagnostics Functionality**
 
@@ -802,7 +802,7 @@ The diagnostics sub-namespace of the host object contains the following.
 |----------|---------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | debugLog | debugLog(object...) | 1             | This provides printf style debugging to a script extension. At present, output from debugLog is routed to the output console of the debugger. At a later point in time, there are plans to provide flexibility on routing this output. NOTE: This should not be used as a means of printing user output to console. It may not be routed there in the future. |
 
- 
+ 
 
 **Memory Functionality**
 
@@ -828,26 +828,26 @@ The memory sub-namespace of the host object contains the following.
 <td align="left">readMemoryValues</td>
 <td align="left"><p>readMemoryValues(location, numElements, [elementSize], [isSigned], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a raw array of values from the address space of the debug target and places a typed array on top of the view of this memory. The supplied location can be an address (a 64-bit value), a location object, or a native pointer. The size of the array is indicated by the <em>numElements</em> argument. The size (and type) of each element of the array is given by the optional <em>elementSize</em> and <em>isSigned</em> arguments. If no such arguments are supplied, the default is byte (unsigned / 1 byte). If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. Note that using this method on 8, 16, and 32-bit values results in a fast typed view being placed over the read memory. Using this method on 64-bit values results in an array of 64-bit library types being constructed which is significantly more expensive!</td>
+<td align="left">This reads a raw array of values from the address space of the debug target and places a typed array on top of the view of this memory. The supplied location can be an address (a 64-bit value), a location object, or a native pointer. The size of the array is indicated by the <em>numElements</em> argument. The size (and type) of each element of the array is given by the optional <em>elementSize</em> and <em>isSigned</em> arguments. If no such arguments are supplied, the default is byte (unsigned / 1 byte). If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. Note that using this method on 8, 16, and 32-bit values results in a fast typed view being placed over the read memory. Using this method on 64-bit values results in an array of 64-bit library types being constructed which is significantly more expensive!</td>
 </tr>
 <tr class="even">
 <td align="left">readString</td>
 <td align="left"><p>readString(location, [contextInheritor])</p>
 <p>readString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char\*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char<em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 <tr class="odd">
 <td align="left">readWideString</td>
 <td align="left"><p>readWideString(location, [contextInheritor])</p>
 <p>readWideString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t\*. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t</em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Data-Model"></span><span id="data-model"></span><span id="DATA-MODEL"></span>Data Model Concepts in JavaScript
 
@@ -863,7 +863,7 @@ The following data model concepts map to JavaScript.
 | Indexability            | IIndexableConcept            | protocol: getDimensionality(...) / getValueAt(...) / setValueAt(...) |
 | Runtime Type Conversion | IPreferredRuntimeTypeConcept | protocol: getPreferredRuntimeTypedObject(...)                        |
 
- 
+ 
 
 **String Conversion**
 
@@ -1074,9 +1074,9 @@ Investigate the use of test automation that can verify the functionality of your
 
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ When a NIC receives a UDP-encapsulated packet on port 4500, it checks whether th
 
 If the incoming ESP packet is a UDP-encapsulated transport-over-tunnel packet, as described in [UDP-ESP Encapsulation Types](udp-esp-encapsulation-types.md), the NIC first decrypts the ESP payload of tunnel-mode portion of the packet, which is not UDP-encapsulated. Then the NIC processes the UDP-encapsulated tunnel-mode portion of the packet.
 
- 
+ 
 
- 
+ 
 
 
 

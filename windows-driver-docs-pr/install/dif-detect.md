@@ -47,7 +47,7 @@ When the **Add Hardware Wizard** is detecting non-PnP devices.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -138,9 +138,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

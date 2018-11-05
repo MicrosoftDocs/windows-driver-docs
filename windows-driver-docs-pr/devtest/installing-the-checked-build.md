@@ -20,9 +20,9 @@ This section includes:
 
 [Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)](installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md)
 
- 
+ 
 
- 
+ 
 
 
 

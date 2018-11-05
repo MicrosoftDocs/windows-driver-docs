@@ -30,9 +30,9 @@ Microsoft-supplied printer drivers make use of data files to describe individual
 
     Describes [*plotter characterization data (PCD)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-plotter-characterization-data--pcd-) files.
 
- 
+ 
 
- 
+ 
 
 
 

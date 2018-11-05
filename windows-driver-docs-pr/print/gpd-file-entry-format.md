@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 All GPD file entries conform to the following format:
 
-**\*** *EntryName***:** *EntryValue* **{***GPD\_FileEntry, GPD\_FileEntry, ...***}**
+**\\*** <em>EntryName</em>**:** *EntryValue* **{**<em>GPD\_FileEntry, GPD\_FileEntry, ...</em>**}**
 
 *EntryName* is always a predefined keyword that Unidrv's GPD parser recognizes, preceded by an asterisk.
 
@@ -66,9 +66,9 @@ Following is a more complex example, describing a printer that can print pages i
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The AVStream class system driver (Ks.sys) lacks most of the audio-specific suppo
 
 For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](https://msdn.microsoft.com/library/windows/hardware/ff554240).
 
- 
+ 
 
- 
+ 
 
 
 

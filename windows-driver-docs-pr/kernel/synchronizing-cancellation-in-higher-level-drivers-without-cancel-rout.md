@@ -21,9 +21,9 @@ A higher-level driver can call [**IoCancelIrp**](https://msdn.microsoft.com/libr
 
 A higher-level driver must not call **IoCancelIrp** with an IRP that it did not allocate.
 
- 
+ 
 
- 
+ 
 
 
 

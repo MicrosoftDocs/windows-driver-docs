@@ -46,9 +46,9 @@ The CoNDIS WAN VC status indications are:
 
     NDISWAN monitors dropped packets by counting the number of fragment indications on each VC.
 
- 
+ 
 
- 
+ 
 
 
 

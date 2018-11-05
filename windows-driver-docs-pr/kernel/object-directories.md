@@ -40,9 +40,9 @@ The system creates other top-level directories, but they are reserved for system
 
 Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566421) routine.
 
- 
+ 
 
- 
+ 
 
 
 

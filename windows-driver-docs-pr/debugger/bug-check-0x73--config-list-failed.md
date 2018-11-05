@@ -55,7 +55,7 @@ The CONFIG\_LIST\_FAILED bug check has a value of 0x00000073. This bug check ind
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ The registry hive that cannot be linked might be SAM, SECURITY, SOFTWARE, or DEF
 
 Examine Parameter 2 to see why the hive could not be linked in the registry tree. One common cause of this error is that the Windows operating system is out of disk space on the system drive. (In this situation, this parameter is 0xC000017D, STATUS\_NO\_LOG\_SPACE.) Another common problem is that an attempt to allocate pool has failed. (In this situation, Parameter 2 is 0xC000009A, STATUS\_INSUFFICIENT\_RESOURCES.) You must investigate other status codes.
 
- 
+ 
 
- 
+ 
 
 
 

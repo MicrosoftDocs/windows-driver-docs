@@ -45,7 +45,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR,
 </tbody>
 </table>
 
- 
+ 
 
 The following are flags that can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control photo HDR, flash no flash, and ultra low light fusion. The default should be KSCAMERA\_EXTENDEDPROP\_ADVANCEDPHOTO\_OFF.
 
@@ -100,7 +100,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
+ 
 
 The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
@@ -143,7 +143,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 

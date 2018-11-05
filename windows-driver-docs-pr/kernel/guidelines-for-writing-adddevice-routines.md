@@ -38,9 +38,9 @@ Consider the following design guidelines when writing an [*AddDevice*](https://m
 
     If one driver for a device sets this characteristic, the PnP manager propagates it to all the device objects for the device.
 
- 
+ 
 
- 
+ 
 
 
 

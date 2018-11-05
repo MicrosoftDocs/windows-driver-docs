@@ -70,9 +70,9 @@ In the previous example, the value capability structure for such a usage value a
 
 If the report count for a usage is 1, use **HidP\_GetUsageValue** to extract the usage value. If the usage's report count is greater than 1, **HidP\_GetUsageValue** only returns the first data item in a usage value array. To extract all the data items in a usage value array, use [**HidP\_GetUsageValueArray**](https://msdn.microsoft.com/library/windows/hardware/ff539750).
 
- 
+ 
 
- 
+ 
 
 
 

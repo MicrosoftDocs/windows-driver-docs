@@ -21,9 +21,9 @@ This section discusses sending and receiving data over Winsock Kernel (WSK) sock
 -   [Sending Data over a Connection-Oriented Socket](sending-data-over-a-connection-oriented-socket.md)
 -   [Receiving Data over a Connection-Oriented Socket](receiving-data-over-a-connection-oriented-socket.md)
 
- 
+ 
 
- 
+ 
 
 
 

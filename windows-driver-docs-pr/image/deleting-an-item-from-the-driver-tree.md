@@ -17,9 +17,9 @@ In order to delete a driver item, the WIA service calls the minidriver entry poi
 
 After the root item has been deleted, the WIA service calls [**IWiaMiniDrv::drvFreeDrvItemContext**](https://msdn.microsoft.com/library/windows/hardware/ff543972) to free the resources used by the driver-specific context. The WIA service then deletes the item and the driver-specific context.
 
- 
+ 
 
- 
+ 
 
 
 

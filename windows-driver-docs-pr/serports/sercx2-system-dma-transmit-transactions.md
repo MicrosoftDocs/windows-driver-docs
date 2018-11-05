@@ -67,9 +67,9 @@ The *EvtSerCx2SystemDmaTransmitCancelDrainFifo* function enables SerCx2 to cance
 
 If the write request associated with a system-DMA-transmit transaction is canceled or times out before it completes, SerCx2 calls the *EvtSerCx2SystemDmaTransmitPurgeFifo* function, if it is implemented, to discard any unsent data that might remain the transmit FIFO. When the FIFO is purged, the *EvtSerCx2SystemDmaTransmitPurgeFifo* function calls the [**SerCx2SystemDmaTransmitPurgeFifoComplete**](https://msdn.microsoft.com/library/windows/hardware/dn265307) method to notify SerCx2. Only after receiving this notification does SerCx2 start a new I/O transaction.
 
- 
+ 
 
- 
+ 
 
 
 

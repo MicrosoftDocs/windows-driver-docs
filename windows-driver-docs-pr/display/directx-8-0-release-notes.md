@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The following section contains update information for DirectX 8.0 and it focuses on those areas of the DDI that have been modified or extended for DirectX 8.0.
 
- 
+ 
 
- 
+ 
 
 
 

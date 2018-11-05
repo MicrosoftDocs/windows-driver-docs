@@ -34,9 +34,9 @@ For more info about the Subscriber and Device Information API, see [**Windows.Ne
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

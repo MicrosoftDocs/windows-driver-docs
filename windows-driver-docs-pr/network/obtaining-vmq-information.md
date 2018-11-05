@@ -32,9 +32,9 @@ Overlying drivers and applications can issue the following OID query requests to
 
 For more information about obtaining VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

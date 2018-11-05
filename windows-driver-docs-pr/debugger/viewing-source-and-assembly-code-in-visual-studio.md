@@ -21,9 +21,9 @@ When you break in to the target computer, or when code running on the target com
 
 ![screen shot of source code in the visual studio debugger](images/sourcecodedebuggingvs01.png)
 
- 
+ 
 
- 
+ 
 
 
 

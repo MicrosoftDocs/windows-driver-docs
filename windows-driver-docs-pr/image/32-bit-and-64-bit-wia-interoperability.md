@@ -24,11 +24,11 @@ The WIA service will determine where UI extensions get physically loaded, depend
 
     **Note**   Even though *wiawow64.exe* is completely transparent to both WIA application writers and WIA driver developers, driver developers have to debug the *wiawow64.exe* process rather than the 32-bit application to debug 64-bit UI extensions.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

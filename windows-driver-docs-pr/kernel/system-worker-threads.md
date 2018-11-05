@@ -49,9 +49,9 @@ Do not call **IoQueueWorkItem** or **IoQueueWorkItemEx** to queue a work item th
 
 The system worker thread removes the work item from the queue before it calls the worker thread. Thus, a driver thread can safely queue the work item again as soon as the worker thread starts to run.
 
- 
+ 
 
- 
+ 
 
 
 

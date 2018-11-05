@@ -47,7 +47,7 @@ The size (in bytes) of a UINT8.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -73,9 +73,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

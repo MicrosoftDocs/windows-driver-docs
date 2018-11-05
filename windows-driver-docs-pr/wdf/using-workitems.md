@@ -50,9 +50,9 @@ Typically, the OnWorkItem callback function performs the following steps:
 
 A few drivers might need to call [**IWDFWorkItem::Flush**](https://msdn.microsoft.com/library/windows/hardware/hh463886) to flush their work items from the work-item queue. If a driver calls the **Flush** method, the method does not return until a worker thread has removed the specified work item from the work-item queue and called the driver's [*OnWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463909) callback function, and the *OnWorkItem* callback function has subsequently returned after processing the work item.
 
- 
+ 
 
- 
+ 
 
 
 

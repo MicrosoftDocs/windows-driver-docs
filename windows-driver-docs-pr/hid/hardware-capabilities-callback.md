@@ -26,9 +26,9 @@ pjhwc->dwMaxAxes = 4;       /* The largest axis number which may be requested */
 pjhwc->dwNumAxes = 3;       /* The number of axes the device has */
 ```
 
- 
+ 
 
- 
+ 
 
 
 

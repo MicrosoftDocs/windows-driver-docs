@@ -19,9 +19,9 @@ GDL uses two specific criteria for associating templates with keywords:
 
 [GDL template qualification](gdl-template-qualification.md)
 
- 
+ 
 
- 
+ 
 
 
 

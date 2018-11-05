@@ -31,9 +31,9 @@ HKR,Interrupt Management\MessageSignaledInterruptProperties,,0x00000010
 HKR,Interrupt Management\MessageSignaledInterruptProperties,MSISupported,0x00010001,1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

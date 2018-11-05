@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 Each level in a MIP map is associated with a different handle value. These handles might not be consecutive, however. The Direct3D DDI is designed so that only the top-level surface's handle is passed as an argument in the **IDirect3DDevice7::SetTexture** API method (described in the Direct3D SDK documentation), and then the current level-of-detail is specified by a texture stage state (D3DTSS\_MAXMIPLEVEL). The most natural way to work with MIP maps is to build one driver-side structure that represents the entire MIP map.
 
- 
+ 
 
- 
+ 
 
 
 

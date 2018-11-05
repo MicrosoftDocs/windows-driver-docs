@@ -52,9 +52,9 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC**](ndis-status-wwan-vendor-specific.md)
 
- 
+ 
 
- 
+ 
 
 
 

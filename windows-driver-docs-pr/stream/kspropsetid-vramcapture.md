@@ -25,9 +25,9 @@ The **KSPROPSETID\_VramCapture** property set includes the following properties:
 
 [**KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS**](ksproperty-map-capture-handle-to-vram-address.md)
 
- 
+ 
 
- 
+ 
 
 
 

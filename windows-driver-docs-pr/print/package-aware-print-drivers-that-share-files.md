@@ -75,7 +75,7 @@ Core print package files are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 More than one core driver section can be referenced; for example:
 
@@ -93,9 +93,9 @@ This section includes the following topics:
 
 [Core Driver Sample](core-driver-sample.md)
 
- 
+ 
 
- 
+ 
 
 
 

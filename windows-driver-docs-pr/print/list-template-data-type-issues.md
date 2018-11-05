@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 All template directives that accept a LIST data type expect a parentheses-bracketed, comma-delimited list of SYMBOLS. If the list consists of only one element, you can omit the parentheses.
 
- 
+ 
 
- 
+ 
 
 
 

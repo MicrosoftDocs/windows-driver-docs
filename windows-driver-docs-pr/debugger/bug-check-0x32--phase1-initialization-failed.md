@@ -55,11 +55,11 @@ The PHASE1\_INITIALIZATION\_FAILED bug check has a value of 0x00000032. This ind
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

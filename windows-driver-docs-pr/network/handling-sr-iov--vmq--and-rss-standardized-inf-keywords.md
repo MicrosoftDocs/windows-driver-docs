@@ -45,7 +45,7 @@ When NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/
 
     **Note**  If the miniport driver is configured for SR-IOV preference, it must not read any of the RSS standardized keywords. However, the driver must read the VMQ **\*VMQVlanFiltering** standardized keyword. This keyword specifies whether the miniport driver is enabled to filter network packets by using the virtual VLAN (VLAN) identifier in the media access control (MAC) header. The miniport driver reports this capability by setting the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in the **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure. For more information on the **\*VMQVlanFiltering** standardized keyword, see [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md).
 
-     
+     
 
 4.  If the miniport driver is configured for VMQ preference, it must read the **\*VMQ** keyword to determine whether VMQ is enabled on the network adapter. If the keyword is set to one, the driver reports the currently enabled VMQ settings. For more information on how the miniport driver reports VMQ settings, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
@@ -53,7 +53,7 @@ When NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/
 
     **Note**  If the miniport driver is configured for VMQ preference, it must not read any of the RSS or SR-IOV standardized keywords.
 
-     
+     
 
 5.  If the miniport driver is configured for RSS preference, it must read the **\*RSS** keyword to determine whether RSS is enabled on the network adapter. If the keyword is set to one, the driver reports the currently enabled RSS settings. For more information on how the miniport driver reports RSS settings, see [RSS Configuration](rss-configuration.md).
 
@@ -61,7 +61,7 @@ When NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/
 
     **Note**  If the miniport driver is configured for RSS preference, it must not read any of the VMQ or SR-IOV standardized keywords.
 
-     
+     
 
 The following table describes how the miniport driver determines SR-IOV, VMQ, or RSS preference in order to enable the correct interface in the network adapter.
 
@@ -76,10 +76,10 @@ The following table describes how the miniport driver determines SR-IOV, VMQ, or
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">*SriovPreferred</th>
-<th align="left">*RssOrVmqPreference</th>
-<th align="left">*SRIOV</th>
-<th align="left">*VMQ</th>
+<th align="left"><em>SriovPreferred</th>
+<th align="left"></em>RssOrVmqPreference</th>
+<th align="left"><em>SRIOV</th>
+<th align="left"></em>VMQ</th>
 <th align="left">*RSS</th>
 <th align="left">Enabled interface</th>
 </tr>
@@ -144,21 +144,21 @@ The following table describes how the miniport driver determines SR-IOV, VMQ, or
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  When the SR-IOV and VMQ interfaces are both enabled, SR-IOV nondefault virtual ports (VPorts) that are attached to the PCI Express (PCIe) Physical Function (PF) are used instead of VM queues for the VMQ interface. For more information, see [Nondefault Virtual Ports and VMQ](nondefault-virtual-ports-and-vmq.md).
 
- 
+ 
 
 The miniport driver must advertise the capabilities of the currently enabled interface. For example, if SR-IOV is enabled, the miniport driver must advertise the SR-IOV capabilities but not the capabilities for VMQ or RSS. However, the miniport driver must always report the complete RSS, VMQ, and SR-IOV hardware capabilities regardless of which interface is enabled on the network adapter.
 
 **Note**  The VMQ and SR-IOV interfaces use receive filtering over VM queues or SR-IOV virtual ports (VPorts). As a result, some receive filtering capabilities require the same or different settings when either of these interfaces are enabled. For more information on how to report the receive filtering capabilities for the SR-IOV interface, see [Determining Receive Filtering Capabilities](determining-receive-filtering-capabilities.md). For more information on how to report the receive filtering capabilities for the VMQ interface, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

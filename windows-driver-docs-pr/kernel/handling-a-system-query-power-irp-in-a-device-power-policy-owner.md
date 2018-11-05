@@ -56,9 +56,9 @@ After the IRP has been completed and all *IoCompletion* routines set during IRP 
 
 Remember that the device power policy owner not only sends the device query but also must handle it on its way down the device stack. For more information, see [Handling IRP\_MN\_QUERY\_POWER for Device Power States](handling-irp-mn-query-power-for-device-power-states.md).
 
- 
+ 
 
- 
+ 
 
 
 

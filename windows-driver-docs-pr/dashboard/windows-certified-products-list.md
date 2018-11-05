@@ -29,9 +29,9 @@ To find a product by searching (in this case, Arc Mouse), follow these steps:
 
 > [!Note]
 > Search is limited to **Product Name** and **Company**.
-
+> 
 > Search will run an AND operation on any word entered in the **Search** box.
-
+> 
 > Search treats multiple words enclosed in quotation marks as one search string.
 
 ## To find products by filtering

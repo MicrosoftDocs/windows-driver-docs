@@ -40,9 +40,9 @@ You can perform the following steps to determine why an application request does
 
 5.  If the IRP is beyond the UMDF stack (for example, if stack location 0 is where the IRP is currently being processed), determine why the corresponding kernel-mode IRP did not complete.
 
- 
+ 
 
- 
+ 
 
 
 

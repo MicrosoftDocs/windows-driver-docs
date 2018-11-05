@@ -106,7 +106,7 @@ Sensor drivers can specify one of a set of platform-defined icons, or a custom i
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -137,9 +137,9 @@ Requirements
 
 [Specifying an Icon](https://msdn.microsoft.com/library/windows/hardware/ff545876)
 
- 
+ 
 
- 
+ 
 
 
 

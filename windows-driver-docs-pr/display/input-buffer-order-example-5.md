@@ -71,13 +71,13 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
 The driver can ignore the surfaces at index 1 and index 3 because they are not required for the deinterlace operation. Progressive samples are marked with the DXVA\_SampleProgressiveFrame flag in the **SampleFormat** member of [**DXVA\_VideoSample2**](https://msdn.microsoft.com/library/windows/hardware/ff564092) structures for the samples. Substream samples are marked with the new DXVA\_SampleSubStream flag.
 
- 
+ 
 
- 
+ 
 
 
 

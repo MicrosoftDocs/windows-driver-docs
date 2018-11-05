@@ -74,9 +74,9 @@ Irp is active with 2 stacks 2 is current (= 0x81732a44)
 
 In this case, \\Driver\\TESTCAP is the likely cause of the bug check.
 
- 
+ 
 
- 
+ 
 
 
 

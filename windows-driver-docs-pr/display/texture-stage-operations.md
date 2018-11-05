@@ -34,9 +34,9 @@ The following operations, which are enumerated in D3DTEXTUREOP, are required for
 
 The default values are D3DTOP\_MODULATE for stage one, and D3DTOP\_DISABLE for all other stages. D3DTOP\_MODULATE is used for stage one for backward compatibility, but, by default, all texturing should be disabled.
 
- 
+ 
 
- 
+ 
 
 
 

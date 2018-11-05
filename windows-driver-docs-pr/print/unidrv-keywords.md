@@ -62,13 +62,13 @@ Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL v
 </tbody>
 </table>
 
- 
+ 
 
 Some GPD syntax is expanded at parse time to create features and options. The most common syntax that falls into this category is the \***MemConfigKB** keyword. Others include the \***MemConfigMB**, \***MemoryConfigKB**, and \***Installable** keywords.
 
- 
+ 
 
- 
+ 
 
 
 

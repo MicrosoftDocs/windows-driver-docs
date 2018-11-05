@@ -26,7 +26,6 @@ Providing the 'Activation context' enables users to choose a particular version 
     </dependentAssembly>
   </dependency>
 </assembly>
-            
 ```
 
 The manifest file, **'Comctlv6.manifest'**, that is shown above specifies that version 6 of the comctl32.dll is to be used during test execution. To learn more about manifest files, see [Manifest files reference](https://msdn.microsoft.com/library/aa375632(VS.85).aspx)
@@ -53,9 +52,9 @@ If you intend to run only specific test cases under a given activation context, 
 
 Note that the 'ActivationContext' property can be set at class and assembly levels like other metadata properties.
 
- 
 
- 
+
+
 
 
 

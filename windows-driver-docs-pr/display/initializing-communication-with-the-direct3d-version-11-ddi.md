@@ -18,7 +18,7 @@ To initialize communication with the user-mode display driver DLL's version 11 D
 
 **Note**   The [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) function is identical to the [**OpenAdapter10**](https://msdn.microsoft.com/library/windows/hardware/ff568602) function except that **OpenAdapter10\_2** returns a table of the driver's adapter-specific functions in the **pAdapterFuncs\_2** member of the [**D3D10DDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff541724) structure, and **OpenAdapter10** returns a table of the driver's adapter-specific functions in the pAdapterFuncs member of D3D10DDIARG\_OPENADAPTER. **pAdapterFuncs\_2** points to a [**D3D10\_2DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541900) structure; **pAdapterFuncs** points to a [**D3D10DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541811) structure.
 
- 
+ 
 
 [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) was designed to make initializing drivers more efficient. You must implement **OpenAdapter10\_2** in your Direct3D version 11 drivers. You can also implement **OpenAdapter10\_2** (rather than or in addition to [**OpenAdapter10**](https://msdn.microsoft.com/library/windows/hardware/ff568602)) in your Direct3D version 10.1 drivers to increase the initialization efficiency of those drivers. For more information about implementing **OpenAdapter10\_2** in Direct3D version 10.1 drivers, see [Version Discovery Support](version-discovery-support.md). **OpenAdapter10\_2** handles the exchange of versioning and other information between the runtime and the driver.
 
@@ -81,9 +81,9 @@ The user-mode display driver's CreateDevice(D3D10) function is called with a [**
 
 -   The runtime supplies a table of its core callback functions in the [**D3D11DDI\_CORELAYER\_DEVICECALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff542137) structure to which **p11UMCallbacks** points. The user-mode display driver calls the runtime-supplied core callback functions to refresh state.
 
- 
+ 
 
- 
+ 
 
 
 

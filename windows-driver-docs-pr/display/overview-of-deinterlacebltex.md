@@ -27,9 +27,9 @@ The *DeinterlaceBltEx* function also can be called with progressive video and mu
 
 If you implement the [**DeinterlaceBltEx**](https://msdn.microsoft.com/library/windows/hardware/ff563927) function in your driver, you must also implement the original [**DeinterlaceBlt**](https://msdn.microsoft.com/library/windows/hardware/ff563924) function. The VMR on Windows Server 2003 SP1 and later and Windows XP SP2 and later can initiate calls to either the driver's *DeinterlaceBltEx* or *DeinterlaceBlt* function; the application controls which function the VMR uses.
 
- 
+ 
 
- 
+ 
 
 
 

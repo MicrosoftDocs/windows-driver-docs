@@ -60,7 +60,7 @@ To use this method, you need to first do the following:
 |---------------|--------|---------------|------|
 | cabIdHash | string | The unique ID of the CAB file you want to download. To get this ID, use the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method to retrieve details for a specific error in your app, and use the **cabIdHash** value in the response body of that method. |  Yes  |
 
- 
+ 
 ### Request example
 
 The following example demonstrates how to download a CAB file using this method.

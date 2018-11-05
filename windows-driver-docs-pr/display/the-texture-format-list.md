@@ -34,9 +34,9 @@ The DirectX 8.0 runtime scans the texture format list reported by the driver exa
 
 All supported surface formats, such as textures, depth or stencil buffers, or render targets, should be reported through the **GetDriverInfo2** mechanism. The runtime ignores the texture and Z/Stencil formats returned through legacy mechanisms (D3DHAL\_GLOBALDRIVERDATA and GUID\_ZPixelFormats). No attempt is made to map these formats to DX8 style formats for DirectX 8.0 drivers. However, legacy formats are mapped to the new style for DirectX 7.0 or earlier drivers. Therefore, a driver must report all supported surface formats through the DirectX 8.0 DDI. Furthermore, because legacy runtimes do not map new style surface formats to old style formats it is essential that the driver continues to report DirectX 7.0 style surface and Z/Stencil formats through the legacy mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

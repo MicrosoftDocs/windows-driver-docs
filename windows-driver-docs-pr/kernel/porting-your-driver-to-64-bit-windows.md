@@ -20,11 +20,11 @@ For user-mode applications, 64-bit Windows includes a Windows on Windows (WOW64)
 
 **Note**  This thunking is only done for 32-bit *applications*; 32-bit *drivers* are not supported on 64-bit versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

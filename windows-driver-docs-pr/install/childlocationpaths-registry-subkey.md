@@ -37,21 +37,21 @@ The following table defines the format and requirements of the **ChildLocationPa
 <td align="left"><p><strong>ChildLocationPaths</strong></p></td>
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>None</p></td>
-<td align="left"><p>[HardwareID](hardwareid-registry-subkey.md) or [CompatibleID](compatibleid-registry-subkey.md)</p></td>
-<td align="left"><p>[LocationPath](locationpath-registry-subkey.md) or [*](--registry-subkey.md)</p></td>
+<td align="left"><p><a href="hardwareid-registry-subkey.md" data-raw-source="[HardwareID](hardwareid-registry-subkey.md)">HardwareID</a> or <a href="compatibleid-registry-subkey.md" data-raw-source="[CompatibleID](compatibleid-registry-subkey.md)">CompatibleID</a></p></td>
+<td align="left"><p><a href="locationpath-registry-subkey.md" data-raw-source="[LocationPath](locationpath-registry-subkey.md)">LocationPath</a> or <a href="--registry-subkey.md" data-raw-source="[*](--registry-subkey.md)">*</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Either the [**LocationPaths**](locationpaths-registry-subkey.md) or **ChildLocationPaths** registry subkeys must be present to indicate the parent/child relationship to which the removable device capability override applies.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

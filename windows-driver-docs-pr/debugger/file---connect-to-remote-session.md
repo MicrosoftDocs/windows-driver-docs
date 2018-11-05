@@ -66,7 +66,7 @@ If you use the COM protocol, *COMChannel* should match the channel number that y
 (Windows 2000 and later) If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=***Cert* or **machuser=***Cert* parameter that was used when the server was created.
+(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the server was created.
 
 <span id="clicon"></span><span id="CLICON"></span>**clicon**  
 Specifies that the debugging server will try to connect to the client through a reverse connection. The client must use **clicon** if and only if the server is using **clicon**. In most cases, the debugging client is started before the debugging server when a reverse connection is used.
@@ -85,7 +85,7 @@ In the **Browse Remote Servers** dialog box, in the **Machine** text box, enter 
 
 The **Servers** area lists all of the debugging servers that are running on that computer. Select any of the listed servers and then press ENTER or click **OK**. (You can also double-click one of the listed servers.) The proper connection string for the debugging server that you selected will now appear in the **Connection string** box in the **Connect to Remote Debugger Session** dialog box.
 
-If the server is password-protected, the connection string includes **Password=\***. You must replace the asterisk (**\***) with the actual password.
+If the server is password-protected, the connection string includes **Password=\\**<em>. You must replace the asterisk (</em>*\***) with the actual password.
 
 After you specify the server and password, click **OK** to open the connection.
 
@@ -97,9 +97,9 @@ The list of servers does not include process servers and KD connection servers; 
 
 For more information and for other methods of joining a remote debugging session, see [**Activating a Debugging Client**](activating-a-debugging-client.md).
 
- 
+ 
 
- 
+ 
 
 
 

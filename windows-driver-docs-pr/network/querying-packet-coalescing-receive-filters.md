@@ -27,7 +27,7 @@ To obtain a list of all the packet coalescing receive filters that have been dow
 
 **Note**  When the overlying driver or application initializes the [**NDIS\_RECEIVE\_FILTER\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff567179) structure, it must set the **QueueId** member to NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
- 
+ 
 
 After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer is formatted to contain the following:
 
@@ -42,7 +42,7 @@ To obtain the parameters of a specific packet coalescing receive filter that was
 
 **Note**  The overlying driver obtained the filter ID from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) or [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). The application can only obtain the filter ID from an earlier OID method request of OID\_RECEIVE\_FILTER\_ENUM\_FILTERS.
 
- 
+ 
 
 After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer is formatted to contain the following:
 
@@ -50,9 +50,9 @@ After a successful return from the OID method request, the **InformationBuffer**
 
 -   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567169) structures that specifies the filter test criterion for one field in a network packet header.
 
- 
+ 
 
- 
+ 
 
 
 

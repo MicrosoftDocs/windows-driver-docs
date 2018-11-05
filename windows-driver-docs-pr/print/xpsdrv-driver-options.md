@@ -25,9 +25,9 @@ One such plug-in, Mxdwdui.dll, is provided by Microsoft to enable configuration 
 <a href="" id="monolithic"></a>**Monolithic**  
 You completely define and implement the configuration module. The monolithic method is generally the most costly method because you must perform all print driver development and testing, but this method also offers the most opportunity for customization.
 
- 
+ 
 
- 
+ 
 
 
 

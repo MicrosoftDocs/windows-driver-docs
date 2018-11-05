@@ -88,9 +88,9 @@ Specifies IRP\_MJ\_CLOSE.
 
 [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724)
 
- 
+ 
 
- 
+ 
 
 
 

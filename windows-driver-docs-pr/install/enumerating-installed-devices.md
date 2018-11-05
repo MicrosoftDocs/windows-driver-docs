@@ -22,9 +22,9 @@ To enumerate installed devices safely, follow these steps:
 
 3.  Use [**SetupDiGetDeviceInstanceId**](https://msdn.microsoft.com/library/windows/hardware/ff551106) to retrieve unique [device instance identifiers (IDs)](device-instance-ids.md).
 
- 
+ 
 
- 
+ 
 
 
 

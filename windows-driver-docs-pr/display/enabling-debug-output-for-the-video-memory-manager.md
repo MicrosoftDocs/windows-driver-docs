@@ -24,9 +24,9 @@ The video memory manager has an extensive logging mechanism to help catch and de
 ed nt!Kd_VIDEOPRT_Mask ff
 ```
 
- 
+ 
 
- 
+ 
 
 
 

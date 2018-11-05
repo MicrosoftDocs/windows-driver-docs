@@ -32,13 +32,13 @@ Starting with Windows 8, GPU timeout detection and recovery (TDR) behavior has 
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics…TDRResiliency</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="TDR_device_driver_interface__DDI_"></span><span id="tdr_device_driver_interface__ddi_"></span><span id="TDR_DEVICE_DRIVER_INTERFACE__DDI_"></span>TDR device driver interface (DDI)
 
@@ -51,7 +51,7 @@ To accommodate this behavior change, display miniport drivers should implement t
 
 **Note**  A driver that supports these functions must also support level zero synchronization for the [*DxgkDdiCollectDbgInfo*](https://msdn.microsoft.com/library/windows/hardware/ff559595) function. This is to ensure that level zero miniport calls not affected be the reset operation can continue. See Remarks of *DxgkDdiCollectDbgInfo*.
 
- 
+ 
 
 These structures are associated with the new functions:
 
@@ -149,9 +149,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

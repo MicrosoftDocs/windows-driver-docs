@@ -25,9 +25,9 @@ For guidance about the standard methods of creating the RNG values used in this 
 
 -   [**EFI\_RNG\_ALGORITHM\_LIST**](efi-rng-algorithm-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

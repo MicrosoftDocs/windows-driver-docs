@@ -40,13 +40,13 @@ SDV is able to verify only drivers with the following characteristics:
 
 For SDV to verify a WDM driver, the driver must:
 
--   Include Wdm.h or Ntddk.h (Wdm.h is a subset of Ntddk.h).
+- Include Wdm.h or Ntddk.h (Wdm.h is a subset of Ntddk.h).
 
--   Create device objects by using methods that are described in [WDM Device Objects and Device Stacks](https://msdn.microsoft.com/library/windows/hardware/ff565639).
+- Create device objects by using methods that are described in [WDM Device Objects and Device Stacks](https://msdn.microsoft.com/library/windows/hardware/ff565639).
 
--   Have an Unload routine that is written as recommended in [Writing an Unload Routine](https://msdn.microsoft.com/library/windows/hardware/ff566400).
+- Have an Unload routine that is written as recommended in [Writing an Unload Routine](https://msdn.microsoft.com/library/windows/hardware/ff566400).
 
--   Declare each dispatch function using a function role type declaration, described in [Using Function Role Type Declarations](using-function-role-type-declarations.md). For information about the WDM role types and the **\_Dispatch\_type\_ (***type***)** annotations, see [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md).
+- Declare each dispatch function using a function role type declaration, described in [Using Function Role Type Declarations](using-function-role-type-declarations.md). For information about the WDM role types and the **\_Dispatch\_type\_ (**<em>type</em>**)** annotations, see [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md).
 
 For SDV to verify a KMDF driver, the driver must:
 
@@ -86,9 +86,9 @@ Specifically, SDV does not correctly interpret code if:
 
 If the driver code or library code includes these elements, SDV attempts to verify the driver or process the library, but the result is **Not Supported Feature (NSF)**. For more information about SDV results, see [Interpreting Static Driver Verifier Results](interpreting-static-driver-verifier-results.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ WMI events have some advantages over these other methods:
 
 WMI events do have the disadvantage that the user-mode code you must provide is considerably more complicated than that for the other methods.
 
- 
+ 
 
- 
+ 
 
 
 

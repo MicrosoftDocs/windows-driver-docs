@@ -31,11 +31,11 @@ The following table describes the types of debugging support that is specified b
 <tbody>
 <tr class="odd">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The device installation process will be debugged by using a user-mode debugger. For more information, see [Debugging Device Installations with a User-mode Debugger](debugging-device-installations-with-a-user-mode-debugger.md).</p></td>
+<td align="left"><p>The device installation process will be debugged by using a user-mode debugger. For more information, see <a href="debugging-device-installations-with-a-user-mode-debugger.md" data-raw-source="[Debugging Device Installations with a User-mode Debugger](debugging-device-installations-with-a-user-mode-debugger.md)">Debugging Device Installations with a User-mode Debugger</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1</p></td>
-<td align="left"><p>The device installation process will be debugged by using the kernel debugger (KD). For more information, see [Debugging Device Installations with the Kernel Debugger (KD)](debugging-device-installations-with-the-kernel-debugger--kd-.md).</p></td>
+<td align="left"><p>The device installation process will be debugged by using the kernel debugger (KD). For more information, see <a href="debugging-device-installations-with-the-kernel-debugger--kd-.md" data-raw-source="[Debugging Device Installations with the Kernel Debugger (KD)](debugging-device-installations-with-the-kernel-debugger--kd-.md)">Debugging Device Installations with the Kernel Debugger (KD)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0</p></td>
@@ -44,17 +44,17 @@ The following table describes the types of debugging support that is specified b
 </tbody>
 </table>
 
- 
+ 
 
 After the **DebugInstall** registry value is set you do not need to reboot the target system that you want to debug. However, **DebugInstall** registry value must be set before the start of the next device installation and remains in effect for each subsequent device installation until the value is set to zero.
 
 **Note**  Be sure to reset the **DebugInstall** registry value to zero (or delete the value) as soon as it is no longer necessary to debug a device installation on the target system.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

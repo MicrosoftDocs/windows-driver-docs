@@ -92,234 +92,234 @@ The following table lists the functions that a read-only card must support.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[<strong>CardAcquireContext</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468701)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468701" data-raw-source="[&lt;strong&gt;CardAcquireContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468701)"><strong>CardAcquireContext</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardDeleteContext</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468715)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468715" data-raw-source="[&lt;strong&gt;CardDeleteContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468715)"><strong>CardDeleteContext</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardAuthenticatePin</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468704)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468704" data-raw-source="[&lt;strong&gt;CardAuthenticatePin&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468704)"><strong>CardAuthenticatePin</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardGetChallenge</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468723)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468723" data-raw-source="[&lt;strong&gt;CardGetChallenge&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468723)"><strong>CardGetChallenge</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardAuthenticateChallenge</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468702)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468702" data-raw-source="[&lt;strong&gt;CardAuthenticateChallenge&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468702)"><strong>CardAuthenticateChallenge</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardDeauthenticate</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468712)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468712" data-raw-source="[&lt;strong&gt;CardDeauthenticate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468712)"><strong>CardDeauthenticate</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardUnblockPin</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468742)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468742" data-raw-source="[&lt;strong&gt;CardUnblockPin&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468742)"><strong>CardUnblockPin</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardChangeAuthenticator</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468705)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468705" data-raw-source="[&lt;strong&gt;CardChangeAuthenticator&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468705)"><strong>CardChangeAuthenticator</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardCreateDirectory</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468710)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468710" data-raw-source="[&lt;strong&gt;CardCreateDirectory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468710)"><strong>CardCreateDirectory</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardDeleteDirectory</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468716)</td>
-<td align="left">No</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">[<strong>CardReadFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468736)</td>
-<td align="left">Yes</td>
-<td align="left">Card minidriver must emulate a file system.</td>
-</tr>
-<tr class="even">
-<td align="left">[<strong>CardCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468711)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468716" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468716)"><strong>CardDeleteDirectory</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardGetFileInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468727)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468736" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468736)"><strong>CardReadFile</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardWriteFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468743)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468711" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468711)"><strong>CardCreateFile</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardDeleteFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468711)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468727" data-raw-source="[&lt;strong&gt;CardGetFileInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468727)"><strong>CardGetFileInfo</strong></a></td>
+<td align="left">Yes</td>
+<td align="left">Card minidriver must emulate a file system.</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468743" data-raw-source="[&lt;strong&gt;CardWriteFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468743)"><strong>CardWriteFile</strong></a></td>
+<td align="left">No</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468711" data-raw-source="[&lt;strong&gt;CardDeleteFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468711)"><strong>CardDeleteFile</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardEnumFiles</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468721)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468721" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468721)"><strong>CardEnumFiles</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardQueryFreeSpace</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468734)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468734" data-raw-source="[&lt;strong&gt;CardQueryFreeSpace&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468734)"><strong>CardQueryFreeSpace</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardQueryCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468733)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468733" data-raw-source="[&lt;strong&gt;CardQueryCapabilities&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468733)"><strong>CardQueryCapabilities</strong></a></td>
 <td align="left">Yes</td>
 <td align="left">Card minidriver must emulate a file system.</td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardCreateContainer</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468708)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468708" data-raw-source="[&lt;strong&gt;CardCreateContainer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468708)"><strong>CardCreateContainer</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardCreateContainerEx</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468709)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468709" data-raw-source="[&lt;strong&gt;CardCreateContainerEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468709)"><strong>CardCreateContainerEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardDeleteContainer</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468714)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468714" data-raw-source="[&lt;strong&gt;CardDeleteContainer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468714)"><strong>CardDeleteContainer</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardGetContainerInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468725)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468725" data-raw-source="[&lt;strong&gt;CardGetContainerInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468725)"><strong>CardGetContainerInfo</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardRSADecrypt</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468737)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468737" data-raw-source="[&lt;strong&gt;CardRSADecrypt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468737)"><strong>CardRSADecrypt</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardConstructDHAgreement</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468707)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468707" data-raw-source="[&lt;strong&gt;CardConstructDHAgreement&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468707)"><strong>CardConstructDHAgreement</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardDeriveKey</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468718)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468718" data-raw-source="[&lt;strong&gt;CardDeriveKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468718)"><strong>CardDeriveKey</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardDestroyDHAgreement</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468719)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468719" data-raw-source="[&lt;strong&gt;CardDestroyDHAgreement&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468719)"><strong>CardDestroyDHAgreement</strong></a></td>
 <td align="left">Yes (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardSignData</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468741)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468741" data-raw-source="[&lt;strong&gt;CardSignData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468741)"><strong>CardSignData</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardQueryKeySizes</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468735)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468735" data-raw-source="[&lt;strong&gt;CardQueryKeySizes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468735)"><strong>CardQueryKeySizes</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardAuthenticateEx</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468703)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468703" data-raw-source="[&lt;strong&gt;CardAuthenticateEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468703)"><strong>CardAuthenticateEx</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardChangeAuthenticatorEx</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468706)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468706" data-raw-source="[&lt;strong&gt;CardChangeAuthenticatorEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468706)"><strong>CardChangeAuthenticatorEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardDeauthenticateEx</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468713)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468713" data-raw-source="[&lt;strong&gt;CardDeauthenticateEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468713)"><strong>CardDeauthenticateEx</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardGetChallengeEx</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468724)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468724" data-raw-source="[&lt;strong&gt;CardGetChallengeEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468724)"><strong>CardGetChallengeEx</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardGetContainerProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468726)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468726" data-raw-source="[&lt;strong&gt;CardGetContainerProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468726)"><strong>CardGetContainerProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardSetContainerProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468738)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468738" data-raw-source="[&lt;strong&gt;CardSetContainerProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468738)"><strong>CardSetContainerProperty</strong></a></td>
 <td align="left">No</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardGetProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468729)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468729" data-raw-source="[&lt;strong&gt;CardGetProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468729)"><strong>CardGetProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardSetProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468740)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468740" data-raw-source="[&lt;strong&gt;CardSetProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468740)"><strong>CardSetProperty</strong></a></td>
 <td align="left">Yes</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MDImportSessionKey</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468757)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468757" data-raw-source="[&lt;strong&gt;MDImportSessionKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468757)"><strong>MDImportSessionKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MDEncryptData</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468756)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468756" data-raw-source="[&lt;strong&gt;MDEncryptData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468756)"><strong>MDEncryptData</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardImportSessionKey</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468731)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468731" data-raw-source="[&lt;strong&gt;CardImportSessionKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468731)"><strong>CardImportSessionKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardGetSharedKeyHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468730)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468730" data-raw-source="[&lt;strong&gt;CardGetSharedKeyHandle&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468730)"><strong>CardGetSharedKeyHandle</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardGetAlgorithmProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468722)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468722" data-raw-source="[&lt;strong&gt;CardGetAlgorithmProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468722)"><strong>CardGetAlgorithmProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardGetKeyProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468728)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468728" data-raw-source="[&lt;strong&gt;CardGetKeyProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468728)"><strong>CardGetKeyProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardSetKeyProperty</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468739)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468739" data-raw-source="[&lt;strong&gt;CardSetKeyProperty&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468739)"><strong>CardSetKeyProperty</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>CardDestroyKey</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468720)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468720" data-raw-source="[&lt;strong&gt;CardDestroyKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468720)"><strong>CardDestroyKey</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>CardProcessEncryptedData</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468732)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/dn468732" data-raw-source="[&lt;strong&gt;CardProcessEncryptedData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468732)"><strong>CardProcessEncryptedData</strong></a></td>
 <td align="left">No (Optional)</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -352,7 +352,7 @@ The following table lists the functions that a read-only card must support.
 </tbody>
 </table>
 
- 
+ 
 
 The following requirements should be considered when developing a minidriver for a read-only card:
 
@@ -596,7 +596,7 @@ Group Policy settings for the Microsoft Base Smart Card Crypto Service Provider 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="_Group_Policy_Settings_for_Microsoft_CNG_Smart_Card_KSP"></span><span id="_group_policy_settings_for_microsoft_cng_smart_card_ksp"></span><span id="_GROUP_POLICY_SETTINGS_FOR_MICROSOFT_CNG_SMART_CARD_KSP"></span> Group Policy Settings for Microsoft CNG Smart Card KSP
 
@@ -653,7 +653,7 @@ Group Policy Settings for Microsoft CNG Smart Card Key Storage Provider are loca
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Special_Considerations"></span><span id="special_considerations"></span><span id="SPECIAL_CONSIDERATIONS"></span>Special Considerations
 
@@ -667,7 +667,7 @@ Group Policy Settings for Microsoft CNG Smart Card Key Storage Provider are loca
     -   CRYPT\_VERIFYCONTEXT
 -   [**CardDeleteContext**](https://msdn.microsoft.com/library/windows/hardware/dn468715) can be called even after *DllMain* was called with DLL\_PROCESS\_DETACH.
 
- 
+ 
 
- 
+ 
 

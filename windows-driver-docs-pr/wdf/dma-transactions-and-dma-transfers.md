@@ -36,9 +36,9 @@ A single DMA transaction always consists of at least one DMA transfer, but a tra
 
 When a framework-based driver receives an I/O request, the driver typically creates a single DMA transaction object to represent the request. When the framework begins servicing the transaction, it determines if the device can handle the entire transaction in a single transfer. If the transaction is too large, the framework breaks the transaction into multiple transfers.
 
- 
+ 
 
- 
+ 
 
 
 

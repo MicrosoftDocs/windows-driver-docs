@@ -17,9 +17,9 @@ In most cases, the **NT\_SUCCESS** macro should be used to test the value of an 
 
 Also, occasionally a program may attempt to reuse a Boolean local variable to store **NTSTATUS** values. This practice is often error-prone; it is much safer (and likely more efficient) to use a separate **NTSTATUS** variable.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>search</strong>](search-xml-element.md)</p></td>
+<td align="left"><p><a href="search-xml-element.md" data-raw-source="[&lt;strong&gt;search&lt;/strong&gt;](search-xml-element.md)"><strong>search</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -61,7 +61,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -90,9 +90,9 @@ The following code example demonstrates a **search** element that contains a **s
 
 [**search**](search-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

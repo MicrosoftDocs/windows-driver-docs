@@ -61,7 +61,7 @@ CTRL+ALT+A
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ In WinDbg, this can also be accomplished by selecting [Debug | Kernel Connection
 
 You cannot actually use this control key to change the baud rate at which you are debugging. The baud rate of the host computer and the target computer must match, and the baud rate of the target computer cannot be changed without rebooting. Therefore, you only need to toggle through the baud rates if the two computers are attempting to communicate at different rates. In this case, you must change the host computer's baud rate to match that of the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

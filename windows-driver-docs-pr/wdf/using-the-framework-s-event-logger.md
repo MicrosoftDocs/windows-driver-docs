@@ -89,9 +89,9 @@ Starting in UMDF version 2, UMDF stores the UMDF trace log (or UMDF *IFR*) in ke
 
 For more information about the debugger extension commands, see [Debugger Extensions for Framework-based Drivers](debugger-extensions-for-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

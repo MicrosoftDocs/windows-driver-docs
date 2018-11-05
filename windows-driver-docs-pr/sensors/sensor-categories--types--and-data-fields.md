@@ -32,9 +32,9 @@ The sensor platform defines the following categories sensors. The following topi
 
 [**SENSOR\_CATEGORY\_SCANNER**](sensor-category-scanner.md)
 
- 
+ 
 
- 
+ 
 
 
 

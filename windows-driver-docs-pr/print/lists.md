@@ -27,9 +27,9 @@ where *Value1*, *Value2*, *Value3*, ..., *ValueN* represent a set of one or more
 *ColorPlaneOrder: LIST(YELLOW, MAGENTA, CYAN, BLACK)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

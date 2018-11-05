@@ -28,9 +28,9 @@ Calls by applications to the cursor methods of the **IDirect3DDevice8** interfac
 
 For more information about **IDirect3DDevice8**, see the DirectX 8.0 SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

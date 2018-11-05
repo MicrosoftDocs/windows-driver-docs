@@ -42,9 +42,9 @@ This RDBSS design change offers several of the following benefits:
 
 The RDBSS model was introduced with Windows 2000. This same model is also used on Windows Server 2003 and Windows XP.
 
- 
+ 
 
- 
+ 
 
 
 

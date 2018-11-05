@@ -24,9 +24,9 @@ With **PoSetSystemState**, a driver notifies the power manager of the same condi
 
 Using these routines, a driver can forestall many, but not all, transitions out of the working state. The power manager always shuts down the system when loss of power is imminent or when a user explicitly requests shutdown.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ A DirectX 9.0 version driver must report the version of the [DDI](direct3d-drive
 
 The driver sets the **dwDDIVersion** member of DD\_GETDDIVERSIONDATA to the DDI version that it supports for the DirectX 9.0 runtime. If the driver was built with a prereleased version of the DirectX 9.0 Driver Development Kit (DDK) in which the DDI version number was lower than the number in the final version of DirectX 9.0, the runtime treats the driver as DirectX 8.0 instead.
 
- 
+ 
 
- 
+ 
 
 
 

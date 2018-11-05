@@ -18,9 +18,9 @@ Generally, all references to out-of-box or production and retail binaries, servi
 
 Examples of these types of references cannot be listed because they vary so much per vendor. However, typically, you should not refer to anything that is required by your OpenGL installable client drivers' (ICDs) help files, out-of-box services, polling applications, and so on.
 
- 
+ 
 
- 
+ 
 
 
 

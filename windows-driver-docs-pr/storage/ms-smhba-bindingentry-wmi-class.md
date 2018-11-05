@@ -39,9 +39,9 @@ MS\_SMHBA\_BINDINGENTRY found in hbapiwmi.h.
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

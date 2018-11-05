@@ -76,7 +76,7 @@ The symbol for the current instruction. This symbol includes the current module,
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -105,9 +105,9 @@ Do not allow the following information to be displayed at the prompt:
    reg - Register state
 ```
 
- 
+ 
 
- 
+ 
 
 
 

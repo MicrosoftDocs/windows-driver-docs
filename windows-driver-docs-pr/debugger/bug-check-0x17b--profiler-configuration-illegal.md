@@ -23,9 +23,9 @@ The PROFILER_CONFIGURATION_ILLEGAL bug check has a value of 0x0000017B.
 ## PROFILER\_CONFIGURATION\_ILLEGAL Parameters
 
 None
- 
+ 
 
- 
+ 
 
 
 

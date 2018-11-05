@@ -52,9 +52,9 @@ If the minidriver is able to accept the new format, the class driver at some lat
 
 [SRB\_GET\_DATA\_FORMAT](srb-get-data-format.md)
 
- 
+ 
 
- 
+ 
 
 
 

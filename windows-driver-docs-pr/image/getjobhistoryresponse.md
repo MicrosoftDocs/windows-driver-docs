@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobHistory</strong>](jobhistory.md)</p></td>
+<td><p><a href="jobhistory.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory.md)"><strong>JobHistory</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -145,7 +145,6 @@ The following code example returns a list of jobs and associated data for the la
     </wscn:GetJobHistoryResponse >
   </soap:Body>
 </soap:Envelope>
-
 ```
 
 ## See also
@@ -155,9 +154,9 @@ The following code example returns a list of jobs and associated data for the la
 
 [**JobHistory**](jobhistory.md)
 
- 
 
- 
+
+
 
 
 

@@ -17,9 +17,9 @@ This section contains the following topics:
 
 [How Container IDs are Generated from the Removable Device Capability](how-container-ids-are-generated-from-the-removable-device-capability.md)
 
- 
+ 
 
- 
+ 
 
 
 

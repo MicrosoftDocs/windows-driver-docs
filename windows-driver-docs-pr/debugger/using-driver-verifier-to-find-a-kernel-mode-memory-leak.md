@@ -20,9 +20,9 @@ If the driver uses Direct Memory Access (DMA), the DMA Verification feature of D
 
 For information about Driver Verifier, see [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480) in the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

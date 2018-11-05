@@ -26,9 +26,9 @@ To change a rule in a filter:
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after changing the rule. Otherwise, the original rule remains in the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

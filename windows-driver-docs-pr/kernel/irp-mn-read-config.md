@@ -86,7 +86,7 @@ Specifies which memory area to access. This parameter can take the following val
 </tbody>
 </table>
 
- 
+ 
 
 The PCI\_*XXX* values are defined in Wdm.h. The PCCARD\_*XXX* values are defined in Ntddpcm.h.
 
@@ -167,9 +167,9 @@ Requirements
 
 [**IRP\_MN\_WRITE\_CONFIG**](irp-mn-write-config.md)
 
- 
+ 
 
- 
+ 
 
 
 

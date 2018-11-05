@@ -44,13 +44,13 @@ The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_SCAN_STATUS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565898)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565898" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_STATUS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565898)"><strong>KSPROPERTY_TUNER_SCAN_STATUS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_SCAN_STATUS_S</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_SCAN\_STATUS\_S structure that specifies the status of a scanning operation.
 
@@ -102,9 +102,9 @@ Requirements
 
 [**TUNER\_ANALOG\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff568547)
 
- 
+ 
 
- 
+ 
 
 
 

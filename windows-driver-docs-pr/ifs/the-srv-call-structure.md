@@ -50,9 +50,9 @@ The finalization of a SRV\_CALL structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the SRV\_CALL structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

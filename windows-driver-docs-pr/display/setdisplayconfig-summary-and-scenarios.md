@@ -56,9 +56,9 @@ The caller can use [**SetDisplayConfig**](https://msdn.microsoft.com/library/win
 
 -   The display control panel applet calls [**SetDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569533) to start or stop forced projection on a particular target.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ In response to an [OID\_CO\_TAPI\_LINE\_CAPS](https://msdn.microsoft.com/library
 
     This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes than can be detected on this line. For a description of the LINEDIGITMODE\_constants, see the description of **dwMonitorDigitModes** in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,7 +51,7 @@ Specifies the thread environment block (TEB). If this is 0 or omitted, the curre
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ TLS slots on thread: c08.f54
 c08.f54: 00000000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

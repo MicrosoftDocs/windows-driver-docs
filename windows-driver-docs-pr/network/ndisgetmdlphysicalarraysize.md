@@ -19,8 +19,8 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetMdlPhysicalArraySize(
-    _Mdl,
-    _ArraySize
+    _Mdl,
+    _ArraySize
 );
 ```
 
@@ -70,7 +70,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td>[<strong>Irql_NetBuffer_Function</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547985)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff547985" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547985)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -80,9 +80,9 @@ Requirements
 
 [**NdisGetBufferPhysicalArraySize**](https://msdn.microsoft.com/library/windows/hardware/ff552033)
 
- 
+ 
 
- 
+ 
 
 
 

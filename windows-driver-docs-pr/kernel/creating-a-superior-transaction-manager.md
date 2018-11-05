@@ -45,9 +45,9 @@ A TPS that includes a superior transaction manager cannot use [single-phase comm
 
 During a recovery operation, if KTM cannot determine the outcome of a transaction, it sends a TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification to the superior transaction manager. In response, the superior transaction manager must call **ZwCommitEnlistment** if the transaction can be committed or **ZwRollbackEnlistment** if the transaction should be rolled back. If the superior transaction manager cannot determine the outcome of a transaction, it should not respond to the TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification until it can determine an outcome.
 
- 
+ 
 
- 
+ 
 
 
 

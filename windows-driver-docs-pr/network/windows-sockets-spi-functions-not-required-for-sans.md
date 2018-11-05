@@ -65,9 +65,9 @@ The Windows Sockets switch does not call **WSPStartup** to start the operation o
 **WSPStringToAddress**
 The Windows Sockets switch uses the TCP/IP provider to convert a human-readable numeric string that represents the IP address of a socket into a socket address structure (SOCKADDR) that is suitable to pass to Windows Sockets routines that take such a structure.
 
- 
+ 
 
- 
+ 
 
 
 

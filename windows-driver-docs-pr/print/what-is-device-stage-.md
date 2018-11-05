@@ -30,9 +30,9 @@ Device Stage provides several advantages to device makers:
 
     Windows 7 Device Stage automatically retrieves the latest device experience metadata for the device from WMIS service. You can update the data on the service at anytime, ensuring that you retain complete control over the experience and that users are given the most current applications, services, and content for their device.
 
- 
+ 
 
- 
+ 
 
 
 

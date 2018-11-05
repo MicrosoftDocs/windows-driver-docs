@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 There are no parameters for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION.
 
- 
+ 
 
- 
+ 
 
 
 

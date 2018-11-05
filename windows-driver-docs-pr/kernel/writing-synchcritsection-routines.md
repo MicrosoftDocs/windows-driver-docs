@@ -28,9 +28,9 @@ For any received IRP, a device driver should do as much I/O processing as possib
 
 For additional information about how critical sections are synchronized, see [Using Spin Locks: An Example](using-spin-locks--an-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

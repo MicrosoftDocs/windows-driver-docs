@@ -25,9 +25,9 @@ The Direct3D runtime calls the following driver functions to create and set up t
 
 [**SoSetTargets**](https://msdn.microsoft.com/library/windows/hardware/ff569714)
 
- 
+ 
 
- 
+ 
 
 
 

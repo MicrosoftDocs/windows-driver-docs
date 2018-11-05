@@ -60,15 +60,15 @@ Causes the display to include the translated CM\_RESOURCE\_LIST.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about these list structures, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

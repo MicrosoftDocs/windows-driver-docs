@@ -24,11 +24,11 @@ If a separate transfer was called on each of the child items of "Flatbed", the d
 
 **Note**  We recommend that only more sophisticated drivers directly support folder acquisition, because the driver is responsible for walking the item tree and taking the appropriate action.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

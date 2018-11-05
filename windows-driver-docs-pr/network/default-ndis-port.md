@@ -21,9 +21,9 @@ For a good example of the default NDIS port, consider a load balancing and failo
 
 Miniport drivers do not have to allocate any ports or support any port numbers other than the default port. Even if a miniport driver does not allocate ports, NDIS allocates the default port and activates it after the miniport driver calls the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function to set the registration attributes in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934) structure. Miniport drivers can start operations on the default port when **NdisMSetMiniportAttributes** successfully returns. In this case, NDIS frees the default port when the miniport driver returns from the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function.
 
- 
+ 
 
- 
+ 
 
 
 

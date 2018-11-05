@@ -25,9 +25,9 @@ For NDIS 6.0, the [**ProtocolUnload**](https://msdn.microsoft.com/library/window
 
 For more information about unloading an NDIS 6.0 protocol driver, see [Initializing a Protocol Driver](initializing-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

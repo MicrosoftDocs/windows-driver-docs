@@ -22,11 +22,11 @@ To read all of the restart records in a Common Log File System (CLFS) stream (in
 
 **Note**  When you call [**ClfsWriteRestartArea**](https://msdn.microsoft.com/library/windows/hardware/ff541770) to write a restart record to a stream, CLFS automatically sets the previous LSN of that record to the LSN of the previous restart record in the stream. Those previous LSNs form the chain that is followed by repeated calls to **ClfsReadPreviousRestartArea**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

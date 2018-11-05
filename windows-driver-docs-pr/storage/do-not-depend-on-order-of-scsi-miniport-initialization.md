@@ -31,9 +31,9 @@ In this case, if the Twiddle HBA had a command that could be used to determine t
 
 If the order-dependent code of a miniport driver cannot be removed it must be run as a legacy driver on Windows 2000 and later platforms.
 
- 
+ 
 
- 
+ 
 
 
 

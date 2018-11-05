@@ -50,7 +50,7 @@ To coexist with other callouts that perform packet inspection, packet modificati
 
 The **FWPS\_RIGHT\_ACTION\_WRITE** flag should be set whenever a callout pends a classification. Your callout driver should test for the **FWPS\_RIGHT\_ACTION\_WRITE** flag to check the rights for your callout to return an action. If this flag is not set, your callout can still return a **FWP\_ACTION\_BLOCK** action in order to veto a **FWP\_ACTION\_PERMIT** action that was returned by a previous callout. In the example shown in [Using a Callout for Deep Inspection](using-a-callout-for-deep-inspection.md), the function just exits if the flag is not set.
 
-The [**FwpsPendOperation0**](https://msdn.microsoft.com/library/windows/hardware/ff551199) function is used to pend packets that originate from the **FWPM\_LAYER\_ALE\_RESOURCE\_ASSIGNMENT\_***XXX*, **FWPM\_LAYER\_ALE\_AUTH\_LISTEN\_***XXX*, or **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_***XXX* [management filtering layers](https://msdn.microsoft.com/library/windows/hardware/ff557101).
+The [**FwpsPendOperation0**](https://msdn.microsoft.com/library/windows/hardware/ff551199) function is used to pend packets that originate from the **FWPM\_LAYER\_ALE\_RESOURCE\_ASSIGNMENT\_**<em>XXX</em>, **FWPM\_LAYER\_ALE\_AUTH\_LISTEN\_**<em>XXX</em>, or **FWPM\_LAYER\_ALE\_AUTH\_CONNECT\_**<em>XXX</em> [management filtering layers](https://msdn.microsoft.com/library/windows/hardware/ff557101).
 
 The [**FwpsPendClassify0**](https://msdn.microsoft.com/library/windows/hardware/ff551197) function is used to pend packets that originate from the following [run-time filtering layers](https://msdn.microsoft.com/library/windows/hardware/ff570731):
 
@@ -60,9 +60,9 @@ FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V4
 FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V6
 FWPS\_LAYER\_ALE\_BIND\_REDIRECT\_V4
 FWPS\_LAYER\_ALE\_BIND\_REDIRECT\_V6
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The AGP\_INVALID\_ACCESS bug check has a value of 0x00000104. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 Check for display driver and computer BIOS updates.
 
- 
+ 
 
- 
+ 
 
 
 

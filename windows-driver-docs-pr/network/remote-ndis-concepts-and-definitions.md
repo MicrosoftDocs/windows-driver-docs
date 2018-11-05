@@ -80,9 +80,9 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
     There is no Remote NDIS specification for the way NDIS messages are encapsulated in native bus messages or primitives.
 
- 
+ 
 
- 
+ 
 
 
 

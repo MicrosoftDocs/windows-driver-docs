@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -33,9 +33,9 @@ The NetDMA interface calls the [**ProviderResumeDma**](https://msdn.microsoft.co
 
 When the DMA engine resumes transfers, the hardware reloads the DMA descriptor that it processed last to get the new next descriptor.
 
- 
+ 
 
- 
+ 
 
 
 

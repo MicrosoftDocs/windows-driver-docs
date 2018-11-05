@@ -50,9 +50,9 @@ This section includes the following topics:
 
 [Defining Accelerator Capabilities](defining-accelerator-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

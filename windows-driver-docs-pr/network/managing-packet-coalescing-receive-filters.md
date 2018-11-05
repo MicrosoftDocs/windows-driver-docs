@@ -23,9 +23,9 @@ This section describes how the miniport driver and adapter manage packet coalesc
 
 [Handling Packet Coalescing Receive Filters](handling-packet-coalescing-receive-filters.md)
 
- 
+ 
 
- 
+ 
 
 
 

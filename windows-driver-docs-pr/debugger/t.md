@@ -49,9 +49,9 @@ See bug check.
 <span id="type"></span><span id="TYPE"></span>**type**  
 See symbol type.
 
- 
+ 
 
- 
+ 
 
 
 

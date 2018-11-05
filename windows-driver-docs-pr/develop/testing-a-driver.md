@@ -38,26 +38,26 @@ For more information, see [Run the DevFund Tests via the command-line](https://r
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Tips for testing drivers during development](strategies-for-testing-drivers-during-development.md)</p></td>
+<td align="left"><p><a href="strategies-for-testing-drivers-during-development.md" data-raw-source="[Tips for testing drivers during development](strategies-for-testing-drivers-during-development.md)">Tips for testing drivers during development</a></p></td>
 <td align="left"><p><strong>When should you start testing?</strong> As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented. Studies show that finding and fixing defects in code becomes more expensive the longer the defects remain in the code. Finding and fixing defects early in the development cycle is less costly and disruptive than finding defects after the code has been released and distributed. Creating your test cases early can also help you find problems in your design.</p>
 <p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)</p></td>
+<td align="left"><p><a href="testing-a-driver-at-runtime.md" data-raw-source="[How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)">How to test a driver at runtime using Visual Studio</a></p></td>
 <td align="left"><p>The WDK extensions to Visual Studio provide a device testing interface that enables you to conveniently build, deploy, install, and test a driver on a test computer on your network. The WDK provides a collection of device driver tests that you can use to test the features and functions of your driver.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to write a driver test using a Driver Test template](how-to-write-a-driver-test-.md)</p></td>
+<td align="left"><p><a href="how-to-write-a-driver-test-.md" data-raw-source="[How to write a driver test using a Driver Test template](how-to-write-a-driver-test-.md)">How to write a driver test using a Driver Test template</a></p></td>
 <td align="left"><p>You can use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided. You can deploy the tests that you create to remote test computers using the driver testing framework that the WDK provides for Microsoft Visual Studio Ultimate 2012.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

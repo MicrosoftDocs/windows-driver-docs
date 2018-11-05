@@ -17,13 +17,13 @@ You can use the Wudfext.dll extension commands in Microsoft Windows XP and later
 
 **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h. If your driver name exceeds the maximum length, your driver will fail to load.
 
- 
+ 
 
 For ways to use these extensions, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

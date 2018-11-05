@@ -18,7 +18,7 @@ The information in the following table shows each of the supported property comm
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT  | OnFindNext  | Returns an object identifier for the requested object.                     |
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND   | OnEndFind   | Performs necessary cleanup at the conclusion of an enumeration.            |
 
- 
+ 
 
 For the sample driver, the code remains intact for the WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT and WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND handlers. However, a portion of the code was modified for the WPD\_COMMAND\_OBJECT\_ ENUMERATION\_START\_FIND handler.
 
@@ -73,9 +73,9 @@ VOID WpdObjectEnumerator::InitializeEnumerationContext(
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

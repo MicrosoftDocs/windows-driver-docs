@@ -50,7 +50,7 @@ The file must be an .ICO file with one of the following requirements:
 </tbody>
 </table>
 
- 
+ 
 
 The service icon is associated with the [ServiceIconFile](https://msdn.microsoft.com/library/windows/hardware/dn973162) element in the [ServiceInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/dn973167) of a service metadata package.
 
@@ -58,9 +58,9 @@ The service icon is associated with the [ServiceIconFile](https://msdn.microsoft
 
 - [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

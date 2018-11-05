@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Important**  The following **Ndi** registry keys and values are no longer used in the Windows operating system. If you are migrating network drivers from Windows 95/98/Me to later versions of the operating system, do not use these values.
 
- 
+ 
 
 **DeviceVxD**
 
@@ -36,7 +36,7 @@ ms.localizationpriority: medium
 
 **Ndi\\DeviceID**
 
-**Ndi\\***filename*\\...
+**Ndi\\**<em>filename</em>\\...
 
 **Ndi\\Install**
 
@@ -52,11 +52,11 @@ ms.localizationpriority: medium
 
 **Ndi\\NdiInstaller**
 
-**Ndi\\***param-key-name***\\resc**
+**Ndi\\**<em>param-key-name</em>**\\resc**
 
-**Ndi\\Params\\***param-key-name***\\flag**
+**Ndi\\Params\\**<em>param-key-name</em>**\\flag**
 
-**Ndi\\Params\\***param-key-name***\\location**
+**Ndi\\Params\\**<em>param-key-name</em>**\\location**
 
 **Ndi\\Remove**
 
@@ -64,11 +64,11 @@ ms.localizationpriority: medium
 
 **StaticVxD**
 
-Because Windows does not support **Ndi\\***param-key-name***\\resc** and **Ndi\\Params\\***param-key-name***\\flag** values, a user cannot specify adapter resources through the **Advanced** properties page.
+Because Windows does not support **Ndi\\**<em>param-key-name</em>**\\resc** and **Ndi\\Params\\**<em>param-key-name</em>**\\flag** values, a user cannot specify adapter resources through the **Advanced** properties page.
 
- 
+ 
 
- 
+ 
 
 
 

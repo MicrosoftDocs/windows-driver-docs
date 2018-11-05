@@ -35,7 +35,7 @@ WIA\_IPS\_PAGE\_WIDTH must be in sync with the value of WIA\_IPS\_XEXTENT, which
 
 **Note**   The compatibility layer within the WIA service does not add support for the WIA\_IPS\_PAGE\_WIDTH property to the ADF item that is translated from a Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect an ADF item to always support WIA\_IPS\_PAGE\_WIDTH and should always check if it is supported at run time. (Typically, applications should check the support for any property to be negotiated.)
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +66,9 @@ Requirements
 
 [**WIA\_IPS\_PAGE\_SIZE**](wia-ips-page-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ Here is a sample PrintTicket file to show how to specify PIN printing.
 
 For more information about protected printing, see [Driver support For Protected Printing](driver-support-for-protected-printing.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ The underlying network protocol might support additional socket I/O control oper
 -   [**SIO\_WSK\_SET\_SENDTO\_ADDRESS**](sio-wsk-set-sendto-address.md)
 -   [**SIO\_WSK\_SET\_TCP\_SILENT\_MODE**](sio-wsk-set-tcp-silent-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

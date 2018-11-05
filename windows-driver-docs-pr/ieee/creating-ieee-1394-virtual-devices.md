@@ -31,9 +31,9 @@ In order to expose a virtual device on the 1394 bus, an emulation driver must ad
 
 2.  Issue a bus reset to inform the 1394 nodes present on the bus that the system configuration ROM has changed.
 
- 
+ 
 
- 
+ 
 
 
 

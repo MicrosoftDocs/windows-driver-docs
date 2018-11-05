@@ -34,9 +34,9 @@ This following camera driver enumerations are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn936802)
 
- 
+ 
 
- 
+ 
 
 
 

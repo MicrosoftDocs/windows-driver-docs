@@ -48,9 +48,9 @@ The following figure shows the flow of operations that occur when TMM handles th
 
 ![diagram illustrating adding a monitor to make a two-monitor configuration](images/tmm-newconfig.png)
 
- 
+ 
 
- 
+ 
 
 
 

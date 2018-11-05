@@ -35,9 +35,9 @@ Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://msdn.mic
 -   [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md)
 -   [Reusing Framework Request Objects](reusing-framework-request-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

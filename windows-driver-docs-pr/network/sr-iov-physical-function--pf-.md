@@ -32,9 +32,9 @@ The PF also provides the mechanism for the management operating system to commun
 
 The PF miniport driver is responsible for managing resources on the network adapter that are used by one or more VFs. Because of this, the PF miniport driver is loaded in the management operating system before any resources are allocated for a VF. The PF miniport driver is halted after all resources that were allocated for VFs are freed.
 
- 
+ 
 
- 
+ 
 
 
 

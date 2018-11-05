@@ -130,11 +130,11 @@ The **DeviceData** registry subkey is open for read/write access to the driver o
 
 **Note**   The driver *must* close any registry keys it opened when they are no longer needed, and must close all registry keys prior to unloading.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------|
 | [**WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898186) |                                |          | WOL pattern ID. |
 
- 
+ 
 
 ## Set property results
 
@@ -62,9 +62,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](oid-wdi-set-add-wol-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

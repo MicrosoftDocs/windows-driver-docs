@@ -39,7 +39,7 @@ __except ((GetExceptionCode () == EXCEPTION_STACK_OVERFLOW)
 The following example also fails for similar reasons.
 
 ```
- 
+
 __try 
 {
  char *x = _alloca (i);
@@ -60,8 +60,6 @@ int SEHFilter (DWORD dwExceptionCode)
  return EXCEPTION_CONTINUE_SEARCH;
  }
 }
- 
- 
 ```
 
 The following example successfully avoids the error.
@@ -79,9 +77,9 @@ _resetstkoflw ();
 }
 ```
 
- 
 
- 
+
+
 
 
 

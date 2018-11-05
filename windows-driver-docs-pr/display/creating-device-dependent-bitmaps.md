@@ -23,11 +23,11 @@ When an application requests the creation of a bitmap, a driver can create and m
 
 **Note**   Graphics drivers can improve performance by supporting bitmaps in [*off-screen memory*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-off-screen-memory) and by drawing bitmaps using hardware. For an example of this, see the **Permedia** display driver sample.
 
- 
+ 
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 Within **DrvCreateDeviceBitmap**, the driver calls the GDI service [**EngCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff564204) to have GDI create a handle for the device bitmap.
 
@@ -37,9 +37,9 @@ The contents of the bitmap are undefined after creation. If the driver returns *
 
 If the driver creates bitmaps, it must also be able to delete them by implementing the [**DrvDeleteDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556187) function.
 
- 
+ 
 
- 
+ 
 
 
 

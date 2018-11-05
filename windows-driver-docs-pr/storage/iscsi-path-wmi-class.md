@@ -56,9 +56,9 @@ class ISCSI_Path
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Path**](https://msdn.microsoft.com/library/windows/hardware/ff561550) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ SmartcardSetDebugLevel(DebugLevel);
 
 **Important**   You must install the checked version of the operating system and the checked version of the driver to get debugging messages.
 
- 
+ 
 
 To write debugging messages from a reader driver, the driver must call the following routine:
 
@@ -65,9 +65,9 @@ While developing a driver, use the checked version of the smart card driver libr
 
 For information about setting up a remote debugging session, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
 
- 
+ 
 
- 
+ 
 
 
 

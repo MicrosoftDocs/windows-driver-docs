@@ -31,12 +31,12 @@ The following table gives the range of version numbers appropriate for IHV- or O
 <th align="left">Target System</th>
 <th align="left">Version Number
 <div>
- 
+ 
 </div>
 From:</th>
 <th align="left">Version Number
 <div>
- 
+ 
 </div>
 Up Through:</th>
 </tr>
@@ -120,14 +120,14 @@ Up Through:</th>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The DirectX 9.0 DDK documentation indicated that the version number for a Windows XP and later DirectX-compatible driver must be from 6.*nn*.01.0000 to 6.*nn*.01.9999. However, to support legacy WHQL manual test specifications, the documentation also indicated that the version number could be from 6.*nn*.10.0000 to 6.*nn*.10.9999.
 Because of this legacy WHQL requirement, some DirectX applications required a display driver version number of *n*.*nn*.10.*nnnn*. If a display driver's version number was switched from *n*.*nn*.10.*nnnn* to *n*.*nn*.01.*nnnn* so that it more accurately conformed to the DirectX 9.0 DDK documentation requirement, such applications might not run because they would interpret the driver as an earlier version.
 
 Therefore, a display driver's version number should be set to *n*.*nn*.10.*nnnn*.
 
- 
+ 
 
 For device drivers that do not support DirectX, the version number must be greater than 4.00.00.0095 and less than 4.02.00.0095. For example, if a display device driver is a Windows 3.1 display driver or a Windows 95-only display driver, a version number of 4.01.00.0000 would be correct.
 
@@ -147,9 +147,9 @@ For example, if "4.03.00.2100" is the version number for a DirectX-compliant dis
 
 When the customer checks the version number of the driver (by right-clicking on the file in Windows Explorer, choosing **Properties**, and then clicking the **Version** tab), Windows displays the string version. The vendor's product support should be able to identify the vendor-specific portion of the version number if it exists and take appropriate action.
 
- 
+ 
 
- 
+ 
 
 
 

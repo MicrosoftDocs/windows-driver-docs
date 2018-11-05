@@ -49,9 +49,9 @@ This extension is similar to the [**!wmitrace.logdump**](-wmitrace-logdump.md) e
 
 To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitrace-strdump.md) extension. Alternatively, you can use the Tracelog command tracelog -l to list the trace sessions and their basic properties, including the logger ID.
 
- 
+ 
 
- 
+ 
 
 
 

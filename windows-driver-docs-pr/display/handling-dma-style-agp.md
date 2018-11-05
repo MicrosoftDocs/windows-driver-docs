@@ -38,9 +38,9 @@ An application explicitly requests AGP memory by specifying DDSCAPS\_VIDEOMEMORY
 
 This means that if a driver exposes the DMA model, surfaces are not allocated from AGP memory. This is in contrast to a driver that exposes execute model, in which AGP memory is allocated even if the application does not explicitly request it. Drivers that expose the execute model are therefore much simpler for applications to use. Furthermore, an execute model driver allows a legacy application to gain the benefits of AGP, whereas a DMA model driver only accelerates new applications written explicitly for AGP. This should be considered when deciding whether to expose the execute or DMA models.
 
- 
+ 
 
- 
+ 
 
 
 

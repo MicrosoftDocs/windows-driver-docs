@@ -30,9 +30,9 @@ The following figure shows a visual representation of a linear aperture-space se
 
 ![diagram illustrating a linear aperture-space segment](images/aptrspac.png)
 
- 
+ 
 
- 
+ 
 
 
 

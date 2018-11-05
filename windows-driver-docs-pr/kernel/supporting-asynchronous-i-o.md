@@ -26,9 +26,9 @@ Drivers can maintain state information about their current I/O operations in a s
 
 For more information, see [Handling IRPs](handling-irps.md) and [Input/Output Techniques](i-o-programming-techniques.md).
 
- 
+ 
 
- 
+ 
 
 
 

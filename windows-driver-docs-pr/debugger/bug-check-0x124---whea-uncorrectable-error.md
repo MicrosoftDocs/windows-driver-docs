@@ -130,7 +130,7 @@ The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -160,9 +160,9 @@ For more information see the following topics:
 
 This bug check is not supported in Windows versions prior to Windows Vista. Instead, machine check exceptions are reported through [**bug check 0x9C**](bug-check-0x9c--machine-check-exception.md).
 
- 
+ 
 
- 
+ 
 
 
 

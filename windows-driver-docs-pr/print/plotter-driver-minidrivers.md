@@ -31,9 +31,9 @@ For both the source and destination files, you must explicitly specify file name
 
 A sample text file that can be used as input to plotgpc.exe is included in the [sample plotter driver files](sample-plotter-driver-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

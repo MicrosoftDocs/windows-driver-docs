@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 For DX8 the runtime no longer calls [*DdGetBltStatus*](https://msdn.microsoft.com/library/windows/hardware/ff549385) on blts involving system memory surfaces. This was always the behavior on Windows 2000. The result is that asynchronous DMA to or from system memory surfaces is no longer possible. DX8 drivers should not page lock system memory surfaces by themselves, and system memory to video memory transfers should be synchronous.
 
- 
+ 
 
- 
+ 
 
 
 

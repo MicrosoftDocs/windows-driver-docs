@@ -29,13 +29,13 @@ If the remote device accepts the profile driver's SCO connection request, the pr
 
 **Note**  Profile drivers should [build and send](building-and-sending-a-brb.md) a **BRB\_SCO\_GET\_SYSTEM\_INFO** request during initialization to determine if the underlying hardware supports SCO and, if so, what the global SCO settings are.
 
- 
+ 
 
 When the profile driver no longer requires the SCO connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_CLOSE\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/ff536622) request.
 
- 
+ 
 
- 
+ 
 
 
 

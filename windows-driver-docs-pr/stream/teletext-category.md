@@ -38,7 +38,7 @@ When specifying **PINNAME\_VIDEO\_TELETEXT** pins, use the information listed in
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p>[<strong>KS_DATARANGE_VIDEO_VBI</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567631)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567631" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567631)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
@@ -79,11 +79,11 @@ When specifying **PINNAME\_VIDEO\_TELETEXT** pins, use the information listed in
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

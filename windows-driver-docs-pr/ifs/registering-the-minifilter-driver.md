@@ -31,9 +31,9 @@ status = FltRegisterFilter(
 
 In addition, **FltRegisterFilter** has an output parameter, *RetFilter*, that receives an opaque filter pointer for the minifilter driver. This filter pointer is a required input parameter for many **Flt***Xxx* support routines, including [**FltStartFiltering**](https://msdn.microsoft.com/library/windows/hardware/ff544569) and [**FltUnregisterFilter**](https://msdn.microsoft.com/library/windows/hardware/ff544606).
 
- 
+ 
 
- 
+ 
 
 
 

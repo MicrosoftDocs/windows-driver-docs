@@ -22,9 +22,9 @@ This command is equivalent to pressing ALT+F4.
 
 For more information about exiting WinDbg or ending the debugging session, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

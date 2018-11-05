@@ -54,7 +54,7 @@ Specifies the process to display. If you omit this parameter, all processes that
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +110,9 @@ The previous command displays the following output.
 
 On the first line of this output, 0 is the decimal process number, 224 is the hexadecimal process ID, and *Myprog.exe* is the application name of the process. The period (.) before process 2 means that this process is the current process. The number sign (\#) before process 0 means that this process was the one that originally caused the exception or that the debugger attached to.
 
- 
+ 
 
- 
+ 
 
 
 

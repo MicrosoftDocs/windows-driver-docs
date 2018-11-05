@@ -33,11 +33,11 @@ This section includes the following topics:
 
 **Note**   Device metadata packages are supported on Windows 7 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The GUID_VIRTUAL_AVC_CLASS [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Requirements
 
 [**GUID_AVC_CLASS**](guid-avc-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

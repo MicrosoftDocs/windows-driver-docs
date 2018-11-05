@@ -61,7 +61,7 @@ CTRL+ALT+D
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ If the target is not responding, use CTRL+R ENTER CTRL+C. If time-out messages c
 
 This is also useful for debugging the KD debugger itself.
 
- 
+ 
 
- 
+ 
 
 
 

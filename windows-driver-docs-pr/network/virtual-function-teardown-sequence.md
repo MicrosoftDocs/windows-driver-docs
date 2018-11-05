@@ -39,9 +39,9 @@ NDIS, the virtualization stack, and the PF miniport driver follow these steps du
 
 4.  After the VF has been reset, the virtualization stack requests a deallocation of the VF resources by issuing an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451822) to the PF miniport driver. This causes the miniport driver to free the hardware resources associated with the VF.
 
- 
+ 
 
- 
+ 
 
 
 

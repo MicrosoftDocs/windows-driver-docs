@@ -36,9 +36,9 @@ The following sections will help you design the *HwScsiWmiExecuteMethod* callbac
 
 [Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields](designing-a-miniport-driver-callback-routine-that-handles-wmi-classes-.md)
 
- 
+ 
 
- 
+ 
 
 
 

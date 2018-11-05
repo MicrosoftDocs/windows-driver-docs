@@ -30,9 +30,9 @@ For more info about the SMS API, see [**Windows.Devices.Sms namespace**](https:/
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

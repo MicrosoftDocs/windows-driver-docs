@@ -37,7 +37,7 @@ The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://ms
 <tr class="even">
 <td><p>0x3001</p></td>
 <td><p>Association</p></td>
-<td><p>See [Mapping PTP Associations to WIA Folders](mapping-ptp-associations-to-wia-folders.md).</p></td>
+<td><p>See <a href="mapping-ptp-associations-to-wia-folders.md" data-raw-source="[Mapping PTP Associations to WIA Folders](mapping-ptp-associations-to-wia-folders.md)">Mapping PTP Associations to WIA Folders</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x3002</p></td>
@@ -182,13 +182,13 @@ The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://ms
 </tbody>
 </table>
 
- 
+ 
 
 (The WiaImgFmt\_XXX GUIDs are defined in *wiadef.h*.)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,9 +56,9 @@ This section includes the following topics:
 - [Using NDIS 6.40 Data Structures](using-ndis-6-40-data-structures.md)
 - [Compiling an NDIS 6.40 Driver](compiling-an-ndis-6-40-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

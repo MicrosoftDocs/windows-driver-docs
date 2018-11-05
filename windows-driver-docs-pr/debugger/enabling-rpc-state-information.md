@@ -45,9 +45,9 @@ If you want to simultaneously set these levels on a set of networked computers, 
 
 If the network includes computers running versions of Windows that are earlier than Windows XP, the settings will be ignored on those machines.
 
- 
+ 
 
- 
+ 
 
 
 

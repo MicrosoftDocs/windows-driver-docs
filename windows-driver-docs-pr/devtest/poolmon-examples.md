@@ -228,7 +228,7 @@ Printer drivers assign the Drsd tag when they allocate Graphical Device Interfac
 
 **Note**   Before running the steps in this example, ensure that the printer you are using will not be interrupted until you are finished. Otherwise, the results may be invalid.
 
- 
+ 
 
 At the command line, type the following:
 
@@ -452,7 +452,7 @@ poolmon
 </tbody>
 </table>
 
- 
+ 
 
 Only systems configured as a Terminal Server allocate memory from the session pool. If you use PoolMon to display the session pool on a computer that is not a Terminal Server, or if you type a session ID that does not exist on Windows, PoolMon does not display any allocations. Instead, it displays only the headings with general memory data.
 
@@ -471,9 +471,9 @@ The following figure shows the PoolMon display that would result if the **/s** c
  Tag  Type     Allocs            Frees            Diff   Bytes       Per Alloc
 ```
 
- 
+ 
 
- 
+ 
 
 
 

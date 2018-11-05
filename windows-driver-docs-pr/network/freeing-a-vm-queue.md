@@ -18,7 +18,7 @@ To free a receive queue, an overlying driver issues an [OID\_RECEIVE\_FILTER\_FR
 
 **Note**  The default queue, which has a queue identifier of **NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID**, is always allocated and cannot be freed.
 
- 
+ 
 
 An overlying driver must free all the filters that it sets on a queue before it frees the queue. Also, an overlying driver must free all the receive queues that it allocated on a network adapter before it calls the [**NdisCloseAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff561640) function to close a binding to the network adapter. NDIS frees all the queues that are allocated on a network adapter before it calls the miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function.
 
@@ -36,9 +36,9 @@ When a miniport driver receives an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://m
 
 After the miniport driver issues the [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567417) status indication, it must wait for all the pending receive indications to complete before it can free the associated shared memory. For more information about freeing shared memory, see [Shared Memory Resource Allocation](shared-memory-resource-allocation.md).
 
- 
+ 
 
- 
+ 
 
 
 

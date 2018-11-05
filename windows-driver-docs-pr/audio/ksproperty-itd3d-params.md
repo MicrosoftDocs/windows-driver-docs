@@ -47,13 +47,13 @@ The KSPROPERTY\_ITD3D\_PARAMS property is used to set the parameters used by a 3
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSDS3D_ITD_PARAMS_MSG</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537114)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537114" data-raw-source="[&lt;strong&gt;KSDS3D_ITD_PARAMS_MSG&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537114)"><strong>KSDS3D_ITD_PARAMS_MSG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSDS3D\_ITD\_PARAMS\_MSG that specifies the parameters for the ITD algorithm.
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSDS3D\_ITD\_PARAMS\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff537114)
 
- 
+ 
 
- 
+ 
 
 
 

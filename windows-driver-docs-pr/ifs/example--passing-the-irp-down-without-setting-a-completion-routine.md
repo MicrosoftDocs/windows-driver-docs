@@ -50,9 +50,9 @@ After [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 If you call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) for an IRP, you cannot set a completion routine for it.
 
- 
+ 
 
- 
+ 
 
 
 

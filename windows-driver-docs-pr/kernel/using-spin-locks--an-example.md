@@ -52,9 +52,9 @@ Although a driver could try to serialize all interrupt-driven I/O operations to 
 
 For example, an ISR can save operation-specific data in the IRP it passes to the *DpcForIsr*. A refinement of this technique is to implement a *DpcForIsr* that consults an ISR-augmented count, processes the count's number of IRPs using ISR-supplied data, and resets the count to zero before returning. Of course, the count must be protected by the driver's interrupt spin lock because its ISR and a *SynchCritSection* would maintain its value dynamically.
 
- 
+ 
 
- 
+ 
 
 
 

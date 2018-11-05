@@ -44,9 +44,9 @@ As part of chapter 4, "ACPI Hardware Specification", of the ACPI 5.0 specificati
 
 For more information about GPIO-signaled ACPI events, see section 5.6.5, "GPIO-Signaled ACPI Events", of the ACPI 5.0 specification. For more information about the ACPI software event handling, see section 5.6.4, "General Purpose Event Handling", of the ACPI 5.0 specification.
 
- 
+ 
 
- 
+ 
 
 
 

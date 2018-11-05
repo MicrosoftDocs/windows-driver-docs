@@ -46,7 +46,7 @@ The following table describes the grouped keywords that you can use to configure
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*TCPConnectionOffloadIPv4</strong></p></td>
+<td align="left"><p><strong><em>TCPConnectionOffloadIPv4</strong></p></td>
 <td align="left"><p>TCP Connection Offload (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -58,7 +58,7 @@ The following table describes the grouped keywords that you can use to configure
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*TCPConnectionOffloadIPv6</strong></p></td>
+<td align="left"><p><strong></em>TCPConnectionOffloadIPv6</strong></p></td>
 <td align="left"><p>TCP Connection Offload (IPv6)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -72,11 +72,11 @@ The following table describes the grouped keywords that you can use to configure
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

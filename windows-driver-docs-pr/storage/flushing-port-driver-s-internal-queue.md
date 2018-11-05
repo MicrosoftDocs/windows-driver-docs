@@ -19,9 +19,9 @@ Higher-level drivers can flush a host adapter's cache and SCSI Port's internal q
 
 For a discussion of how storage miniport drivers handle flush requests, see [Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN](handling-srb-function-flush-and-srb-function-shutdown.md).
 
- 
+ 
 
- 
+ 
 
 
 

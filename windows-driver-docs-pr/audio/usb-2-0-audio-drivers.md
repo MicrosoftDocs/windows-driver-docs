@@ -15,7 +15,7 @@ The driver will identify in device manager as "USB Audio Class 2 Device". This n
 
 The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver. 
 
- 
+ 
 ## Architecture
 
 USBAudio.Sys fits within the wider architecture of Windows USB Audio as shown. 
@@ -212,13 +212,13 @@ See the USB audio 2.0 specification for subclass types.
 USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI function as a separate multi-function device with usbaudio.sys (USB Audio 1.0 driver) loaded. 
 
 The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
- 
+ 
 ```inf
 USB\Class_01
 ```
- 
+ 
 And has these exclusions:
- 
+ 
 ```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20

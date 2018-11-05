@@ -42,9 +42,9 @@ The offload target calls either of the following:
 
 5.  The offload target frees all resources, such as memory, that are associated with the terminated state objects.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ The VI architecture defines a set of capabilities and characteristics for SAN in
 
 The Windows Sockets switch works with a broader class of SAN interconnects beyond those that use the VI architecture. SAN extensions to the Windows Sockets service provider interface (SPI) shield the switch from the hardware interface for a particular SAN NIC. That hardware interface is encapsulated within a SAN service provider DLL and its kernel-mode proxy driver. These components are supplied by a SAN vendor. For more information about SAN extensions, see [Windows Sockets SPI Extensions for SANs](windows-sockets-spi-extensions-for-sans.md).
 
- 
+ 
 
- 
+ 
 
 
 

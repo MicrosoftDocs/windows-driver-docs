@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_MODEM [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -96,9 +96,9 @@ Requirements
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md)
 
- 
+ 
 
- 
+ 
 
 
 

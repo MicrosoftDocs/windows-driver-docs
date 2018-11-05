@@ -15,7 +15,7 @@ All APIs that do any allocations take a parameter *Context* typed as PCTLV\_CONT
 
 **Warning**  Although you may be tempted to skip calling the library’s cleanup routines (such as FreeParsed, CleanupParsed, and FreeGenerated), do not skip calling them! It might work on some code paths, but will lead to hard-to-diagnose memory leaks.
 
- 
+ 
 
 Here is a sample overloaded operator.
 
@@ -58,9 +58,9 @@ void __cdecl operator delete(void* pData)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

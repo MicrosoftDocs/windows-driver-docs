@@ -63,4 +63,4 @@ Microsoft provides WDM-based, kernel-mode still image drivers for the USB, SCSI,
 
 A vendor must provide a kernel-mode still image driver *only* if its imaging device is incompatible with Microsoft-supplied, kernel-mode I/O drivers.
 
- 
+ 

@@ -48,9 +48,9 @@ The caller can use [**QueryDisplayConfig**](https://msdn.microsoft.com/library/w
 
 -   A third party application might call [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215) to query the current settings that are stored in the database for the set of connected displays.
 
- 
+ 
 
- 
+ 
 
 
 

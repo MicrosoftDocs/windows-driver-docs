@@ -81,9 +81,9 @@ HKR represents the driver's root key in the registry:
 
 Again, *xxxx* represents the Media class GUID and *yyyy* represents the name of the driver's subkey. The **PowerSettings** subkey is specified relative to the path name for the root key.
 
- 
+ 
 
- 
+ 
 
 
 

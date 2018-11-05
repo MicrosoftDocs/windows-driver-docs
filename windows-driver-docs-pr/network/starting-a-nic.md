@@ -29,9 +29,9 @@ The following steps describe how NDIS participates in the starting of a NIC:
 
 5.  NDIS completes the IRP\_MN\_START\_DEVICE request.
 
- 
+ 
 
- 
+ 
 
 
 

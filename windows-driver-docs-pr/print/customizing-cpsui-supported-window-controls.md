@@ -35,9 +35,9 @@ If you are customizing CPSUI-supported window controls, remember that CPSUI does
 
 Also, note that if radio buttons and icons are arranged top to bottom and some of these controls are hidden, CPSUI does not remove resulting white space in the y direction.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,9 +54,9 @@ For further information, see [Handling System Power State Requests](handling-sys
 
 Because some devices require an inrush of current when they power on, system inrush power IRPs are handled synchronously and serially throughout the system. Only one such IRP can be active at a time. For further information, see [Calling IoCallDriver vs. Calling PoCallDriver](calling-iocalldriver-versus-calling-pocalldriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ In addition, the miniport driver itself must support the following for NDIS QoS:
 
     **Note**  NDIS handles most of the NDIS QoS OID requests for the miniport driver with the exception of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835).
 
-     
+     
 
 -   The miniport driver must be able to resolve conflicting NDIS QoS parameter settings that were received over a DCBX frame that was sent from the remote peer. The driver resolves conflicts between its local and remote NDIS QoS parameters to determine its operational NDIS QoS parameters that the network adapter uses for prioritized packet transmission. For more information about this process, see [Resolving Operational NDIS QoS Parameters](resolving-operational-ndis-qos-parameters.md).
 
@@ -39,9 +39,9 @@ In addition, the miniport driver itself must support the following for NDIS QoS:
 
 -   The miniport driver must be able to issue NDIS status indications when it detects a change in the NDIS QoS parameters on the remote peer. For more information about this process, see [Indicating Changes to the Remote NDIS QoS Parameters](indicating-changes-to-the-remote-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

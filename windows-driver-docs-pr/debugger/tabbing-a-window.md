@@ -17,15 +17,15 @@ All Source windows can be grouped automatically into a tabbed collection by sele
 
 **Note**   If you want a window to join another window in a tabbed window collection, watch the outline of the window that moves as you drag the window. When this outline completely surrounds the window that you want to join, release the mouse button.
 
- 
+ 
 
 A set of tabs always controls the window immediately above the tabs. In the following illustration, the [Debugger Command window](debugger-command-window.md) is selected and is visible above the tabs.
 
 ![screen shot of docked and tabbed windows](images/windock.png)
 
- 
+ 
 
- 
+ 
 
 
 

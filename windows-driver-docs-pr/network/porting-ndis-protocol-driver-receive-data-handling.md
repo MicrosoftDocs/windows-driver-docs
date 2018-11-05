@@ -22,9 +22,9 @@ NDIS 6.0 does not necessarily call the protocol driver's receive entry point at 
 
 For an overview of receive operations, see [Receiving Network Data](receiving-network-data.md). For more information about protocol driver receive handling, see [Receiving Data in Protocol Drivers](receiving-data-in-protocol-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

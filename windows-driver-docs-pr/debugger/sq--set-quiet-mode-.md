@@ -50,7 +50,7 @@ sq{e|d}
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -69,9 +69,9 @@ You can set quiet mode in KD or kernel-mode WinDbg by using the KDQUIET [environ
 
 Do not confuse quiet mode with the effects of the **-myob** [command-line option](command-line-options.md) (in CDB and KD) or the **-Q** [**command-line option**](windbg-command-line-options.md) (in WinDbg).
 
- 
+ 
 
- 
+ 
 
 
 

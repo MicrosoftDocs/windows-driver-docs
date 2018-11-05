@@ -123,7 +123,7 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 </tbody>
 </table>
 
- 
+ 
 
 Audio device drivers need to support at least the Raw or Default mode. Supporting additional modes is optional.
 
@@ -149,7 +149,7 @@ In order to inform the system about the usage of an audio stream, applications h
 | Game Effects   | Balls bouncing, car engine sounds, bullets, etc.                                                      |
 | Other          | Uncategorized streams                                                                                 |
 
- 
+ 
 
 \* New in Windows 10.
 
@@ -197,9 +197,9 @@ PNP rebalancing is used in certain PCI scenarios where memory resources need to 
 2. PCI resizeable BARs: After a driver for a device is successfully loaded in memory, it requests additional resources. Some examples of devices include high-end graphics cards and storage devices.
 For more information, see [Implement PnP Rebalance for PortCls Audio Drivers](implement-pnp-rebalance-for-portcls-audio-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

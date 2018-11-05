@@ -21,7 +21,7 @@ After the TCP/IP transport determines that a NIC can perform IPsec offload versi
 
 **Note**  NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The [direct OID request path](https://msdn.microsoft.com/library/windows/hardware/ff564736) supports OID requests that are queried or set frequently.
 
- 
+ 
 
 To request that a miniport driver add one or more SAs to a NIC, the TCP/IP transport sets the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569812) OID. The miniport driver receives an [**IPSEC\_OFFLOAD\_V2\_ADD\_SA**](https://msdn.microsoft.com/library/windows/hardware/ff556977) structure and configures the NIC for IPsecOV2 processing on an SA. With a successful set to OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA, the miniport driver initializes a handle that identifies the offloaded SA in the IPSEC\_OFFLOAD\_V2\_ADD\_SA structure. The transport uses this handle in subsequent requests to the miniport driver (that is, on the send path or in the calls to modify or delete the SA). For more information about using the SA handle in the send path, see [Sending Network Data with IPsec Offload Version 2](sending-network-data-with-ipsec-offload-version-2.md).
 
@@ -33,9 +33,9 @@ The TCP/IP transport issues [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](htt
 
 The TCP/IP transport sets the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569814) OID to request that a miniport driver update a NIC with the higher order bits for an SA with extended sequence numbers (ESN). For NICs that support ESN, when the miniport driver receives this request, the driver should update the sequence number of the specified SA in the NIC in accordance with the [**IPSEC\_OFFLOAD\_V2\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff556984) enumeration value that is specified in the **Operation** member of the [**IPSEC\_OFFLOAD\_V2\_UPDATE\_SA**](https://msdn.microsoft.com/library/windows/hardware/ff556990) structure.
 
- 
+ 
 
- 
+ 
 
 
 

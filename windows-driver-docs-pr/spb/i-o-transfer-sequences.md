@@ -32,7 +32,7 @@ To improve performance, your SPB controller driver should implement an [*EvtSpbC
 
 **Note**  Implementation of an *EvtSpbControllerIoSequence* function is strongly recommended, and might become a requirement for Windows 8.
 
- 
+ 
 
 The implementation of a transfer sequence is similar to that of a simple read or write operation, but additionally requires updates to the stored state of the sequence operation between the individual transfers in the sequence. After the first transfer completes, the SPB controller driver updates the sequence state to select the next transfer in the sequence. The sequence state is stored in the device context and includes the [**SPBREQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh450925) handle that is passed to the *EvtSpbControllerIoSequence* callback. The SPB controller driver uses this handle to obtain the buffer, length, direction, and position parameters for the individual transfers in the sequence. For more information about obtaining these parameters, see [**SpbRequestGetTransferParameters**](https://msdn.microsoft.com/library/windows/hardware/hh450924).
 
@@ -57,9 +57,9 @@ SPB locks are used only to guarantee that a sequence of reads and writes is perf
 
 For more information, see [Handling Client-Implemented Sequences](https://msdn.microsoft.com/library/windows/hardware/jj191736).
 
- 
+ 
 
- 
+ 
 
 
 

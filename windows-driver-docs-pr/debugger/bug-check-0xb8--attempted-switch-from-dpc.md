@@ -55,7 +55,7 @@ The ATTEMPTED\_SWITCH\_FROM\_DPC bug check has a value of 0x000000B8. This indic
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 The stack trace will lead to the code in the original DPC routine that caused the error.
 
- 
+ 
 
- 
+ 
 
 
 

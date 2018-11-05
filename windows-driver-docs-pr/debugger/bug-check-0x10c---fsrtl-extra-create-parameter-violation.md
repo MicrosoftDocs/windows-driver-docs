@@ -55,7 +55,7 @@ The FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION bug check has a value of 0x000001
 </tbody>
 </table>
 
- 
+ 
 
 The value of Parameter 1 indicates the type of violation.
 
@@ -118,11 +118,11 @@ The value of Parameter 1 indicates the type of violation.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

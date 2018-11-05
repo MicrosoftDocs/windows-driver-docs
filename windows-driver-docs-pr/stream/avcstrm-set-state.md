@@ -62,7 +62,7 @@ Possible error return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -115,9 +115,9 @@ This function code must be called at IRQL = PASSIVE\_LEVEL.
 
 [**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194), [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**KSSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff566856), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120)
 
- 
+ 
 
- 
+ 
 
 
 

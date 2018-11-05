@@ -56,7 +56,7 @@ The TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE bug check has a
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -67,9 +67,9 @@ The driver is referencing session space addresses from the system process contex
 
 This driver needs to comply with Terminal Server's memory management rules.
 
- 
+ 
 
- 
+ 
 
 
 

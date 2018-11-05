@@ -49,9 +49,9 @@ An MCM driver's call to **NdisMCmDeleteVc** causes NDIS to call the [**ProtocolC
 
 When **NdisCoDeleteVc** or **NdisMCmDeleteVc** returns control, the *NdisVcHandle* is no longer valid.
 
- 
+ 
 
- 
+ 
 
 
 

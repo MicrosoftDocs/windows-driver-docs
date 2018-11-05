@@ -29,9 +29,9 @@ When you submit a device for certification, you can also submit a device metadat
 
 - [Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

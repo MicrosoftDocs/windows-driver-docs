@@ -21,9 +21,9 @@ The following screen shot shows how to change text size in the Defect Viewer win
 
 ![screen shot showing how to change text size in the defect viewer window](images/sdv-defectviewerbig.png)
 
- 
+ 
 
- 
+ 
 
 
 

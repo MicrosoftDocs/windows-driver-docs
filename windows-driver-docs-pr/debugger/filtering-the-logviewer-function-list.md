@@ -26,9 +26,9 @@ There are several ways to filter out function calls in LogViewer:
 
 -   Select **View | First Level Calls Only**. This will display only calls that have "d0" in the left column. It is often desirable to hide function calls that are made by other logged functions. (For example, it is usually not interesting to know that **ShellExecuteEx** makes thirty different registry calls during its course of execution.)
 
- 
+ 
 
- 
+ 
 
 
 

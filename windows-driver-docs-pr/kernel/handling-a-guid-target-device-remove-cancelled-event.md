@@ -28,9 +28,9 @@ When handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED event, a notification ca
 
     3.  Reregister for notification on the new handle with **IoRegisterPlugPlayNotification**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ If there are outstanding rundown references on the minifilter driver's opaque fi
 
 Outstanding rundown references can also happen if the minifilter driver has called any routines that add a rundown reference to the minifilter driver's opaque filter pointer, such as [**FltObjectReference**](https://msdn.microsoft.com/library/windows/hardware/ff543382) or [**FltGetFilterFromInstance**](https://msdn.microsoft.com/library/windows/hardware/ff543049), but did not subsequently call [**FltObjectDereference**](https://msdn.microsoft.com/library/windows/hardware/ff543378).
 
- 
+ 
 
- 
+ 
 
 
 

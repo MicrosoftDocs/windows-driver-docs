@@ -31,16 +31,16 @@ The VIDEO\_TDR\_APPLICATION\_BLOCKED bug check has a value of 0x00000142. This i
 | 3         | The secondary driver specific bucketing key.                                |
 | 4         | Id of the process being blocked from accessing the GPU.                     |
 
- 
+ 
 
 Remarks
 -------
 
 Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
- 
+ 
 
- 
+ 
 
 
 

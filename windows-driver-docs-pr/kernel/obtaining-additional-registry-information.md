@@ -25,9 +25,9 @@ Registry filtering drivers that run on Windows Vista and later operating system 
 
     The [**CmGetCallbackVersion**](https://msdn.microsoft.com/library/windows/hardware/ff541912) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
 
- 
+ 
 
- 
+ 
 
 
 

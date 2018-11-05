@@ -18,9 +18,9 @@ This section includes:
 
 [Cancellation of Data Transfers in Windows Vista](cancellation-of-data-transfers-in-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

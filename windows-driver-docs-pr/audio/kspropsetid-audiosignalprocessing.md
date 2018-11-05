@@ -26,9 +26,9 @@ The **KSPROPSETID\_AudioSignalProcessing** property set contains the following K
 
 This property name is defined in the [**KSPROPERTY\_AUDIOSIGNALPROCESSING**](ksproperty-audiosignalprocessing.md) enum.
 
- 
+ 
 
- 
+ 
 
 
 

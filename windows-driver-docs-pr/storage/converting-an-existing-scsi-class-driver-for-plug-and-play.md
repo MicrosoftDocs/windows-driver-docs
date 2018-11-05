@@ -33,9 +33,9 @@ To run successfully as a PnP driver, an existing SCSI class driver must be modif
 
 -   The driver must handle requests to change the power state of the device (IRP\_MJ\_POWER with [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) and [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)), and must block I/O to the device during power state transitions.
 
- 
+ 
 
- 
+ 
 
 
 

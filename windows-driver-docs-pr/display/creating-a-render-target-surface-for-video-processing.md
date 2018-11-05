@@ -22,9 +22,9 @@ The following are the only surface types that the driver should support as valid
 
 -   RGB textures that are created with the **RenderTarget** and **Texture** bit-field flags.
 
- 
+ 
 
- 
+ 
 
 
 

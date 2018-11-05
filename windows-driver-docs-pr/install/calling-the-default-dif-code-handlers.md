@@ -13,7 +13,7 @@ Default DIF code handlers perform system-defined default operations for [DIF cod
 
 **Note**  The operation of **SetupDiCallClassInstaller** cannot be configured to recall the class installer to post-process a DIF request.
 
- 
+ 
 
 In those situations where a [*class installer*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) must perform operations for a DIF request after the default handler is called, the class installer must directly call the default handler when it processes the DIF request, as follows:
 
@@ -23,7 +23,7 @@ In those situations where a [*class installer*](https://msdn.microsoft.com/libra
 
     **Note**   The class installer must not attempt to supersede the operation of the default handler.
 
-     
+     
 
 3.  Perform the operations that must be done after the default handler returns.
 
@@ -31,7 +31,7 @@ In those situations where a [*class installer*](https://msdn.microsoft.com/libra
 
 **Important**  [Co-installers](writing-a-co-installer.md) and [device installation applications](writing-a-device-installation-application.md) must not call the default DIF code handlers.
 
- 
+ 
 
 For an example of a situation where this method must be used, see the information about calling the default handler [**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039) on the [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) request reference page.
 
@@ -51,11 +51,11 @@ The following table lists the DIF codes that have default handlers.
 | [**DIF_SELECTDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543723)                    | [**SetupDiSelectDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552115)                             |
 | [**DIF_UNREMOVE**](https://msdn.microsoft.com/library/windows/hardware/ff543728)                            | [**SetupDiUnremoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552193)                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

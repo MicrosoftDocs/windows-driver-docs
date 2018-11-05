@@ -66,9 +66,9 @@ class MSiSCSI_RequestTimeStatistics : Win32_PerfRawData
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RequestTimeStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff563123) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

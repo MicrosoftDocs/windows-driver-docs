@@ -48,7 +48,7 @@ Specifies the address of the device for which to display the open handles.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Checking handle table for process 0x87e6f4f0
 00000000: Unable to read handle table
 ```
 
- 
+ 
 
- 
+ 
 
 
 

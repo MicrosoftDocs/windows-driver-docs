@@ -35,9 +35,9 @@ The following topics describe how to port miniport, protocol, and intermediate d
 
 [Porting Task Offload Services to NDIS 6.0](porting-task-offload-services-to-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

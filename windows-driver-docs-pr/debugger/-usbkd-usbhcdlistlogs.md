@@ -73,9 +73,9 @@ The command output shows two FDOs that represent UHCI host controlers and one FD
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

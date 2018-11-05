@@ -62,9 +62,9 @@ Now you are ready to register the driver and enable tracing so that you can view
 
 You should now see driver communication in the TraceView application.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Address of an <strong>[SOC_SUBSYSTEM_FAILURE_DETAILS](https://msdn.microsoft.com/library/windows/hardware/dn376404)</strong> structure.</p></td>
+<td align="left"><p>Address of an <strong><a href="https://msdn.microsoft.com/library/windows/hardware/dn376404" data-raw-source="[SOC_SUBSYSTEM_FAILURE_DETAILS](https://msdn.microsoft.com/library/windows/hardware/dn376404)">SOC_SUBSYSTEM_FAILURE_DETAILS</a></strong> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -55,7 +55,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 </tbody>
 </table>
 
- 
+ 
 
 Resolution
 ----------
@@ -113,9 +113,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

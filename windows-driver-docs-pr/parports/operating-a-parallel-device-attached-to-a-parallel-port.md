@@ -44,9 +44,9 @@ For more information about support for parallel devices attached to a parallel p
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
 

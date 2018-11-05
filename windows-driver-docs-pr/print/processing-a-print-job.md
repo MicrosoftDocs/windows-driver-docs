@@ -37,9 +37,9 @@ The **PrintDocumentOnPrintProcessor** function can be interrupted by asynchronou
 
 After **PrintDocumentOnPrintProcessor** finishes converting the data stream and returns, the spooler calls the print processor's [**ClosePrintProcessor**](https://msdn.microsoft.com/library/windows/hardware/ff545976) function.
 
- 
+ 
 
- 
+ 
 
 
 

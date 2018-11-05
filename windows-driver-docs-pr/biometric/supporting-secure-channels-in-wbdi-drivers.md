@@ -16,9 +16,9 @@ To support a secure channel between the host and the device in a WBDI driver, yo
 
 Security considerations should be transparent to WBF applications.
 
- 
+ 
 
- 
+ 
 
 
 

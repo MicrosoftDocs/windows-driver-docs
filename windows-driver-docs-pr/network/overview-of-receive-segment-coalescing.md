@@ -31,9 +31,9 @@ The following sections provide an overview of RSC.
 -   [Indicating Coalesced Segments](indicating-coalesced-segments.md)
 -   [Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md)
 
- 
+ 
 
- 
+ 
 
 
 

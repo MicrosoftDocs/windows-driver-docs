@@ -31,9 +31,9 @@ In its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardw
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

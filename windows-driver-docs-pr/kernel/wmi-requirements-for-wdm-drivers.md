@@ -24,9 +24,9 @@ Similarly, a connection-oriented NDIS miniport driver that defines custom data b
 
 The following sections describe how to support WMI in a driver that handles IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

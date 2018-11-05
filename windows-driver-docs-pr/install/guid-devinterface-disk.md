@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_DISK [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**DiskClassGuid**](diskclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

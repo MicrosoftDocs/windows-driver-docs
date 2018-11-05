@@ -13,9 +13,9 @@ The IAudioSystemEffects interface uses the basic methods that are inherited from
 
 Refer to the [**IAudioProcessingObject::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff536510) method for information about the structure and the parameters that are required to implement the **IAudioSystemEffects::Initialize** method.
 
- 
+ 
 
- 
+ 
 
 
 

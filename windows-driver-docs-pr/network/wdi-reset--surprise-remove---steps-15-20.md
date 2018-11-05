@@ -24,7 +24,7 @@ Cleanup commands flow to the LE to facilitate the return of resources. In this s
 | 19   | The LE returns WDI surprise-remove.                                                                                                                                  |
 | 20   | WDI returns NDIS PnP callbacks for surprise-remove.                                                                                                                  |
 
- 
+ 
 
 ## Related topics
 
@@ -33,9 +33,9 @@ Cleanup commands flow to the LE to facilitate the return of resources. In this s
 
 [UE hang detection and recovery flow](wdi-ue-hang-detection-and-recovery-flow.md)
 
- 
+ 
 
- 
+ 
 
 
 

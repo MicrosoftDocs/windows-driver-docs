@@ -29,7 +29,7 @@ When the user-mode display driver calls the Direct3D runtime's [**pfnAllocateCb*
 
 **Note**   Although user-mode resource handles are always unique for each user-mode resource creation, kernel-mode resource handles are not always unique. When the Direct3D runtime calls the user-mode display driver's [**OpenResource**](https://msdn.microsoft.com/library/windows/hardware/ff568611) function to open a view to an existing shared resource, the runtime passes the resource's kernel-mode handle in the **hKMResource** member of the [**D3DDDIARG\_OPENRESOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff543232) structure that the *pResource* parameter points to. The runtime previously created this kernel-mode handle after the runtime called the user-mode display driver's [**CreateResource**](https://msdn.microsoft.com/library/windows/hardware/ff540688) function.
 
- 
+ 
 
 To destroy a user-mode resource that *CreateResource* or *OpenResource* created, the Direct3D runtime passes the user-mode driver resource handle in the *hResource* parameter in a call to the user-mode display driver's [**DestroyResource**](https://msdn.microsoft.com/library/windows/hardware/ff552795) function. To release the kernel-mode resource handle and all of the allocations that are associated with the user-mode resource, the user-mode display driver passes the user-mode runtime resource handle in the **hResource** member of the [**D3DDDICB\_DEALLOCATE**](https://msdn.microsoft.com/library/windows/hardware/ff544161) structure that the *pData* parameter points to in a call to the [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) function.
 
@@ -40,13 +40,13 @@ Consider the following items when a user-mode display driver creates and destroy
 -   For allocations that the user-mode display driver creates in response to non-shared resources, the driver is not required to assign a non-**NULL** value to the **hResource** member of D3DDDICB\_ALLOCATE. If the driver assigns **NULL** to **hResource**, the allocations are associated with the device and not a particular resource (and kernel-mode resource handle). However, if allocations are truly related to a resource, the driver should associate the allocations with that resource.
     **Note**   A kernel-mode resource handle is created only if the user-mode display driver sets the **hResource** member of D3DDDICB\_ALLOCATE to the user-mode runtime resource handle that the driver received from the **hResource** member of the [**D3DDDIARG\_CREATERESOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff542963) structure in a call to [**CreateResource**](https://msdn.microsoft.com/library/windows/hardware/ff540688).
 
-     
+     
 
 -   When [**DestroyResource**](https://msdn.microsoft.com/library/windows/hardware/ff552795) is called to destroy a non-shared user-mode resource, the user-mode display driver can call [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) with the **hResource** member of [**D3DDDICB\_DEALLOCATE**](https://msdn.microsoft.com/library/windows/hardware/ff544161) set to **NULL** only if the driver never associated any allocations with the resource. If the user-mode display driver associated allocations with the resource, the driver must call **pfnDeallocateCb** with the **hResource** member of D3DDDICB\_DEALLOCATE set to a non-**NULL** value; otherwise, a memory leak will occur.
 
- 
+ 
 
- 
+ 
 
 
 

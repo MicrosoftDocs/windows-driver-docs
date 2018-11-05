@@ -60,10 +60,10 @@ Displays verbose information. This includes the file name of every program file 
 Enables quiet mode. All output will be suppressed (unless the **/ot** option is included).
 
 <span id="_______FileNames______"></span><span id="_______filenames______"></span><span id="_______FILENAMES______"></span> *FileNames*   
-Specifies the program files whose symbols are to be checked. Absolute paths, relative paths, and UNC paths are permitted. An asterisk (**\***) wildcard is permitted. If *FileNames* ends in a slash, it is taken to be a directory name, and all files within that directory are checked. If *FileNames* contains spaces, it must be enclosed in quotation marks.
+Specifies the program files whose symbols are to be checked. Absolute paths, relative paths, and UNC paths are permitted. An asterisk (**\\**<em>) wildcard is permitted. If *FileNames</em> ends in a slash, it is taken to be a directory name, and all files within that directory are checked. If *FileNames* contains spaces, it must be enclosed in quotation marks.
 
 <span id="________ie_______ExeFile______"></span><span id="________ie_______exefile______"></span><span id="________IE_______EXEFILE______"></span> **/ie** *ExeFile*   
-Specifies the name of a program that is currently executing. The symbols for this program will be checked. *ExeFile* must include the name of the file and file extension (usually .exe), but no path information. If there are two different executables with the same name, this option is not recommended. *ExeFile* can specify any program, including a kernel-mode driver. If *ExeFile* is a single asterisk ( **\*** ), SymChk will check the symbols for all running processes, including drivers.
+Specifies the name of a program that is currently executing. The symbols for this program will be checked. *ExeFile* must include the name of the file and file extension (usually .exe), but no path information. If there are two different executables with the same name, this option is not recommended. *ExeFile* can specify any program, including a kernel-mode driver. If *ExeFile* is a single asterisk ( **\\*** ), SymChk will check the symbols for all running processes, including drivers.
 
 <span id="________id_______DumpFile______"></span><span id="________id_______dumpfile______"></span><span id="________ID_______DUMPFILE______"></span> **/id** *DumpFile*   
 Specifies a memory dump file. The symbols for this dump file will be checked.
@@ -74,12 +74,12 @@ Specifies a self-extracting Hotfix CAB file.
 <span id="________ip_______ProcessID______"></span><span id="________ip_______processid______"></span><span id="________IP_______PROCESSID______"></span> **/ip** *ProcessID*   
 Specifies the process ID of a program that is currently executing. The symbols for this program will be checked. *ProcessID* must be specified as a decimal number. There are two special wildcards supported:
 
--   If *ProcessID* is zero ( **0** ), SymChk will check the symbols for all running drivers.
+- If *ProcessID* is zero ( **0** ), SymChk will check the symbols for all running drivers.
 
--   If *ProcessID* is a single asterisk ( **\*** ), SymChk will check the symbols for all running processes, including drivers.
+- If *ProcessID* is a single asterisk ( **\\*** ), SymChk will check the symbols for all running processes, including drivers.
 
 <span id="________it_______TextFileList______"></span><span id="________it_______textfilelist______"></span><span id="________IT_______TEXTFILELIST______"></span> **/it** *TextFileList*   
-Specifies a text file that contains a list of program files. The symbols for all these programs will be checked. *TextFileList* must specify exactly one file (by relative, absolute, or UNC path, but with no wildcards); if it contains spaces it should be enclosed in quotation marks. Within this file, each line indicates a program file (by relative, absolute, or UNC paths), and an asterisk wildcard (**\***) is permitted. However, any line using this wildcard must use a relative path.
+Specifies a text file that contains a list of program files. The symbols for all these programs will be checked. *TextFileList* must specify exactly one file (by relative, absolute, or UNC path, but with no wildcards); if it contains spaces it should be enclosed in quotation marks. Within this file, each line indicates a program file (by relative, absolute, or UNC paths), and an asterisk wildcard (**\\***) is permitted. However, any line using this wildcard must use a relative path.
 
 If a line in this file contains spaces, it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored.
 
@@ -140,7 +140,7 @@ The available options are divided into several classes. Each class of options co
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>/oe</strong></p></td>
-<td align="left"><p>Output will include individual errors. This option is only useful if <strong>/q</strong> is used, because individual errors are automatically displayed if quiet mode hasn't been activated.</p></td>
+<td align="left"><p>Output will include individual errors. This option is only useful if <strong>/q</strong> is used, because individual errors are automatically displayed if quiet mode hasn&#39;t been activated.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/op</strong></p></td>
@@ -156,7 +156,7 @@ The available options are divided into several classes. Each class of options co
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ot</strong></p></td>
-<td align="left"><p>Output will include result totals. This option is only useful if <strong>/q</strong> is used, because these totals are automatically displayed if quiet mode hasn't been activated.</p></td>
+<td align="left"><p>Output will include result totals. This option is only useful if <strong>/q</strong> is used, because these totals are automatically displayed if quiet mode hasn&#39;t been activated.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ob</strong></p></td>
@@ -173,7 +173,7 @@ The available options are divided into several classes. Each class of options co
 </tbody>
 </table>
 
- 
+ 
 
 **DBG file options.** These options control how SymChk checks *.dbg* symbol files. Only one of the following options can be specified.
 
@@ -204,7 +204,7 @@ The available options are divided into several classes. Each class of options co
 </tbody>
 </table>
 
- 
+ 
 
 **PDB file options.** These options control how SymChk checks .pdb symbol files. Only one of the following options can be specified.
 
@@ -235,7 +235,7 @@ The available options are divided into several classes. Each class of options co
 </tbody>
 </table>
 
- 
+ 
 
 **Filtering options.** These options control how module filtering is performed when SymChk is checking processes or dump files. Only one of the following options can be specified.
 
@@ -258,7 +258,7 @@ The available options are divided into several classes. Each class of options co
 </tbody>
 </table>
 
- 
+ 
 
 **Symbol checking options.** Any number of the following options can be specified.
 
@@ -276,7 +276,7 @@ The available options are divided into several classes. Each class of options co
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>/cs</strong></p></td>
-<td align="left"><p>SymChk won't verify that CodeView data is present. (By default, the presence of CodeView data is verified.)</p></td>
+<td align="left"><p>SymChk won&#39;t verify that CodeView data is present. (By default, the presence of CodeView data is verified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/cc</strong></p></td>
@@ -284,7 +284,7 @@ The available options are divided into several classes. Each class of options co
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ea</strong> <em>File</em></p></td>
-<td align="left"><p>SymChk won't verify symbols for the programs listed in the specified file. This allows you to veto certain programs that would otherwise be verified. <em>File</em> must specify exactly one file (by relative, absolute, or UNC path, but without wildcards); if it contains spaces it should be enclosed in quotation marks. Within <em>File</em>, each line indicates a program file (by relative, absolute, or UNC paths); no wildcards are permitted. If a line in this file contains spaces it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored. If a symbol server is being used, symbols for these programs will not be copied to the downstream store.</p></td>
+<td align="left"><p>SymChk won&#39;t verify symbols for the programs listed in the specified file. This allows you to veto certain programs that would otherwise be verified. <em>File</em> must specify exactly one file (by relative, absolute, or UNC path, but without wildcards); if it contains spaces it should be enclosed in quotation marks. Within <em>File</em>, each line indicates a program file (by relative, absolute, or UNC paths); no wildcards are permitted. If a line in this file contains spaces it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored. If a symbol server is being used, symbols for these programs will not be copied to the downstream store.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ee</strong> <em>File</em></p></td>
@@ -293,15 +293,15 @@ The available options are divided into several classes. Each class of options co
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about SymChk, see [Using SymChk](using-symchk.md).
 
- 
+ 
 
- 
+ 
 
 
 

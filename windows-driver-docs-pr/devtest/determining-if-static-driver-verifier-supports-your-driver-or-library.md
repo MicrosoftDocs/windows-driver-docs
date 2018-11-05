@@ -211,7 +211,7 @@ If you have a WDM driver or library and want to run SDV, the driver or library m
 </tbody>
 </table>
 
- 
+ 
 
 ## Utility libraries
 
@@ -230,11 +230,11 @@ Static Driver Verifier supports a driver or library that has links to multiple u
 | wmilib.lib          |
 | wdmsec.lib          |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

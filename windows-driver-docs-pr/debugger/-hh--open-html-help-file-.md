@@ -52,7 +52,7 @@ Specifies the text to find in the index of the Help documentation.
 </tbody>
 </table>
 
- 
+ 
 
 You cannot use this command when you are performing [remote debugging through Remote.exe](remote-debugging-through-remote-exe.md).
 
@@ -65,9 +65,9 @@ Remarks
 
 The **.hh** command opens the Debugging Tools for Windows documentation (Debugger.chm). If you specify *Text*, the debugger opens the **Index** pane in the documentation and searches for *Text* as a keyword in the index. If you do not specify *Text*, the debugger opens the **Contents** pane of the documentation.
 
- 
+ 
 
- 
+ 
 
 
 

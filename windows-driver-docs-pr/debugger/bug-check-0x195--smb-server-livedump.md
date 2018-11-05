@@ -39,7 +39,7 @@ The SMB\_SERVER\_LIVEDUMP bug check has a value of 0x00000195. This indicates th
 <tr class="odd">
 <td align="left">1</td>
 <td align="left"><p>0x1 : An I/O failed to complete in a reasonable amount of time.</p>
-2 - Pointer to the I/O's SRV2_WORK_ITEM</td>
+2 - Pointer to the I/O&#39;s SRV2_WORK_ITEM</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -56,11 +56,11 @@ The SMB\_SERVER\_LIVEDUMP bug check has a value of 0x00000195. This indicates th
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

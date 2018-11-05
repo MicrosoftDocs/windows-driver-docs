@@ -16,9 +16,9 @@ warning C28268: The function class on the function does not match the function c
 
 This warning indicates that an annotation on a function class does not match the function type, as specified by the type declaration. This warning indicates an error in the annotations, not in the code that is being analyzed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,13 +62,13 @@ The following table categorizes types of Windows audio applications and the syst
 </tbody>
 </table>
 
- 
+ 
 
 Note that in Windows 98/Me, the Windows Multimedia functions are implemented in Mmsystem.dll. In Windows 2000 and later, the Windows Multimedia functions are implemented in Winmm.sys, and calls from 16-bit applications to Mmsystem.dll thunk to 32-bit calls to Winmm.sys. For more information about thunking calls from 16-bit code to 32-bit functions, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

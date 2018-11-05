@@ -45,9 +45,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/hh439839)
 
- 
+ 
 
- 
+ 
 
 
 

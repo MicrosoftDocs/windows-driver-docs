@@ -30,7 +30,7 @@ For a full listing of all SymStore parameters, see [**SymStore Command-Line Opti
 
 **Note**   SymStore does not support simultaneous transactions from multiple users. It is recommended that one user be designated "administrator" of the symbol store and be responsible for all **add** and **del** transactions.
 
- 
+ 
 
 ### <span id="transaction_examples"></span><span id="TRANSACTION_EXAMPLES"></span>Transaction Examples
 
@@ -126,7 +126,7 @@ This is a comma-separated line. The fields are explained as follows:
 </tbody>
 </table>
 
- 
+ 
 
 Here are some sample lines from the transaction file 0000000096. Each line records the directory and the location of the file or pointer that was added to the directory.
 
@@ -174,11 +174,11 @@ The fields for the delete transaction are described as follows.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

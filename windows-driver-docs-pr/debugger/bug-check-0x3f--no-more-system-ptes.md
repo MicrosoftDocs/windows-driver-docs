@@ -56,7 +56,7 @@ The NO\_MORE\_SYSTEM\_PTES bug check has a value of 0x0000003F. This is the resu
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -103,9 +103,9 @@ eb41f1e4 eb110000       10 VIDEOPRT!pVideoPortGetDeviceBase+0x139/VIDEOPRT!Video
 
 If the system runs out of PTEs again after the **TrackPtes** registry value has been set, [**bug check 0xD8**](bug-check-0xd8--driver-used-excessive-ptes.md) (DRIVER\_USED\_EXCESSIVE\_PTES) will be issued instead of 0x3F. The name of the driver causing this error will be displayed as well.
 
- 
+ 
 
- 
+ 
 
 
 

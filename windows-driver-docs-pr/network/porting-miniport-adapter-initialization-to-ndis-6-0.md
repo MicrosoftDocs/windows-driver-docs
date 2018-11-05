@@ -29,9 +29,9 @@ As with NDIS 5.*x*, NDIS 6.0 miniport drivers can support multiple miniport adap
 
 [Updating Bus-Specific Configuration Space Access for NDIS 6.0](updating-bus-specific-configuration-space-access-for-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

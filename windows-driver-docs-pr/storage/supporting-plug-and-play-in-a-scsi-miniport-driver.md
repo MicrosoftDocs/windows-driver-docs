@@ -23,9 +23,9 @@ A Plug and Play miniport driver must implement an *HwScsiAdapterControl* routine
 
 The SCSI port driver creates PDOs for target devices and the FDO for the miniport driver, and handles requests to add, start or unload the device on behalf of the miniport driver. For general information about Plug and Play drivers, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
 

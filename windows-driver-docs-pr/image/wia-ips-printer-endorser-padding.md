@@ -37,7 +37,7 @@ The valid values for this property are shown in the following table.
 | WIA\_PRINT\_PADDING\_ZERO  | The zero (0) digit is used as a padding character. |
 | WIA\_PRINT\_PADDING\_BLANK | The space (blank) character is used for padding.   |
 
- 
+ 
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_PADDING** property is optional for the Imprinter/Endorser items. When this property is not supported, the printer/endorser device does not support padding.
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

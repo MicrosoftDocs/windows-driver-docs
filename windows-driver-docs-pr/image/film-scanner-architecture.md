@@ -21,9 +21,9 @@ The following topics describe the two types of film scanners:
 
 [Dedicated Film Scanners](dedicated-film-scanners.md)
 
- 
+ 
 
- 
+ 
 
 
 

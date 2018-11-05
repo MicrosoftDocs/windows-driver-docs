@@ -31,7 +31,7 @@ The HARDWARE\_INTERRUPT\_STORM bug check has a value of 0x000000F2. This indicat
 | 3         | Address of the interrupt object for the storming interrupt vector                         |
 | 4         | 0x1 if the ISR is not chained, 0x2 if the ISR is chained                                  |
 
- 
+ 
 
 Cause
 -----
@@ -65,9 +65,9 @@ Resolution
 
 A user experiencing this bugcheck repeatedly should try to isolate the problem by looking for devices that are on the same IRQ as the one for which the module is a driver for (in this case, the same IRQ that ACPI is using).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ The following table describes the commands that are supported by the service mod
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Supporting_the_Service-Capability_Commands"></span><span id="supporting_the_service-capability_commands"></span><span id="SUPPORTING_THE_SERVICE-CAPABILITY_COMMANDS"></span>Supporting the Service-Capability Commands
 
@@ -145,7 +145,7 @@ The following table describes the 14 capability commands that are supported by t
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Supporting_the_WPD_COMMAND_SERVICE_METHODS_START_INVOKE_Command"></span><span id="supporting_the_wpd_command_service_methods_start_invoke_command"></span><span id="SUPPORTING_THE_WPD_COMMAND_SERVICE_METHODS_START_INVOKE_COMMAND"></span>Supporting the WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE Command
 
@@ -163,7 +163,7 @@ In the sample driver, the WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE command 
 | **ServiceMethodContext::Initialize** | Creates a **CMethodTask** object and invokes the **CMethodTask::Run** method.                                                                                                                                         |
 | **CMethodTask::Run**                 | Creates a separate thread in which the invoked method can run.                                                                                                                                                        |
 
- 
+ 
 
 When the **WpdServiceMethods::OnStartInvoke** method is called, WPD passes a GUID identifier for the method being invoked. This GUID is passed in the data to which the *pParams* argument points.
 
@@ -181,7 +181,7 @@ When a method completes, the driver sends a WPD\_EVENT\_SERVICE\_COMPLETE event 
 | **WpdServiceMethods::OnEndInvoke** | Calls the **EndMethod** helper function and upon completion, returns the invoked method's results and status code. This method also performs any necessary clean up of resources that are associated with the method context. |
 | **WpdServiceMethods::EndMethod**   | Retrieves the invoked method's results and status code..                                                                                                                                                                      |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -191,9 +191,9 @@ When a method completes, the driver sends a WPD\_EVENT\_SERVICE\_COMPLETE event 
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

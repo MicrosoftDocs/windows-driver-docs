@@ -149,13 +149,13 @@ All of the AEC system filter's pins use the data-format parameter values shown i
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658). For an example of a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
 
- 
+ 
 
- 
+ 
 
 
 

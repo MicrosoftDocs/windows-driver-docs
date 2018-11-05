@@ -26,9 +26,9 @@ This diagram illustrates communication between user-mode and kernel-mode compone
 
 [Virtual Address Spaces](virtual-address-spaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

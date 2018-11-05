@@ -238,9 +238,9 @@ Microsoft advises that the display driver not call any GDI functions while holdi
 
 -   XLATEOBJ\_piVector
 
- 
+ 
 
- 
+ 
 
 
 

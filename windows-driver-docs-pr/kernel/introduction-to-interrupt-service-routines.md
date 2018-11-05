@@ -23,9 +23,9 @@ The system supports two different types of ISRs:
 
 -   The driver can register an [*InterruptMessageService*](https://msdn.microsoft.com/library/windows/hardware/ff547940) routine to handle message-signaled interrupts. The system passes both a driver-supplied context value and the message ID of the interrupt message.
 
- 
+ 
 
- 
+ 
 
 
 

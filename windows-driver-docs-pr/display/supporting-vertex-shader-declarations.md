@@ -23,9 +23,9 @@ A DirectX 9.0 version driver must support vertex shader declarations as describe
 
 [Handling Vertex Elements](handling-vertex-elements.md)
 
- 
+ 
 
- 
+ 
 
 
 

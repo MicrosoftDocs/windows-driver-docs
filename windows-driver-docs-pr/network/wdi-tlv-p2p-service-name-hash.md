@@ -31,7 +31,7 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.micros
 |-------------------------------------------------------------------------|----------------------------------|
 | [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) | The hash of a WFDS Service Name. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

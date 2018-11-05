@@ -78,9 +78,9 @@ After the switch has successfully used a SAN service provider to accept a connec
 
 6.  If the application cancels its own **accept** call, the switch calls the appropriate SAN service provider's [**WSPCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566273) function to close the accepting SAN socket.
 
- 
+ 
 
- 
+ 
 
 
 

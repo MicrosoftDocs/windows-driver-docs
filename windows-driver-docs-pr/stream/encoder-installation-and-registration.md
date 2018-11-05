@@ -78,7 +78,7 @@ In the **AddReg** section of your driver's INF file, specify one of the followin
 </tbody>
 </table>
 
- 
+ 
 
 For example:
 
@@ -140,7 +140,7 @@ Filters indicate their respective categories by specifying one or more of the fo
 </tbody>
 </table>
 
- 
+ 
 
 To register an encoder filter, specify the KSCATEGORY\_ENCODER GUID in your driver's *DDInstall*.**Interface** INF file section. For example:
 
@@ -164,9 +164,9 @@ MyEncoderDeviceFriendlyName="My Encoder Device"
 
 **Note:** The GUID specified for *KSNAME\_Filter* must match the **ReferenceGuid** member you specified in the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure that describes your filter.
 
- 
+ 
 
- 
+ 
 
 
 

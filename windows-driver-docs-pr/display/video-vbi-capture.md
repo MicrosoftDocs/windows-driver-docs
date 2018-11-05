@@ -26,9 +26,9 @@ When DirectDraw calls the *DxTransfer* function, it supplies a transfer ID in th
 
 When a bus master completes, the display hardware must generate an IRQ. The video miniport driver must then call the [**IRQCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568158) function that was specified in [*DxEnableIRQ*](https://msdn.microsoft.com/library/windows/hardware/ff557413). In this **IRQCallback** call, the video miniport driver specifies the DDIRQ\_BUSMASTER flag. DirectDraw then calls the [*DxGetTransferStatus*](https://msdn.microsoft.com/library/windows/hardware/ff557438) function to determine which bus master completed. The video miniport driver must return the transfer ID (**dwTransferID**) that DirectDraw passed to the driver in an earlier *DxTransfer* call. In this way, if the driver has five bus masters in the queue, DirectDraw can determine which one completed most recently.
 
- 
+ 
 
- 
+ 
 
 
 

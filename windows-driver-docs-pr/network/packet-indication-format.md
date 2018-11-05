@@ -35,11 +35,11 @@ For more information about data offsets that are used by WFP, see [Data Offset P
 
 **Note**  Callouts that work with decrypted IPSec ESP packets must use the data length of the [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure instead of MDL data to determine the packet length. To obtain the data length, use the [**NET\_BUFFER\_DATA\_LENGTH**](https://msdn.microsoft.com/library/windows/hardware/ff568382) macro. For more information, see [Developing IPsec-Compatible Callout Drivers](developing-ipsec-compatible-callout-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

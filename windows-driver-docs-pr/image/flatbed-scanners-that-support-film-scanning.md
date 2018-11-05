@@ -23,11 +23,11 @@ The film scanner item always represents the entire film scanning surface. The va
 
 **Note**   Overlapping frame selection areas are allowed in a film scanning session.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

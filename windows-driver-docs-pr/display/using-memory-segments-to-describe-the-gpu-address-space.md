@@ -32,11 +32,11 @@ The following figure shows how the driver can configure memory segments from the
 
 **Note**   Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

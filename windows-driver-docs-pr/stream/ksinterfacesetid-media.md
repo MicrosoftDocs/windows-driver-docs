@@ -22,9 +22,9 @@ The following interface types in the KSINTERFACESETID\_Media set are enumerated 
 
 [**KSINTERFACE\_MEDIA\_WAVE\_QUEUED**](ksinterface-media-wave-queued.md)
 
- 
+ 
 
- 
+ 
 
 
 

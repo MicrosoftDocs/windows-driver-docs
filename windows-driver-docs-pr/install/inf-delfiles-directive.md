@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelFiles** directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted in the context of operations on the section in which the referring **DelFiles** directive is specified.
 
@@ -60,7 +60,7 @@ Do not specify a file that is listed in a [**CopyFiles**](inf-copyfiles-directiv
 
 **Note**  You cannot use a %*strkey*% token to specify the destination-file-name entry. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
 
- 
+ 
 
 <a href="" id="flag"></a>*flag*  
 This optional value can be one of the following, expressed in hexadecimal notation as shown here or as a decimal value:
@@ -80,7 +80,7 @@ Remarks
 
 **Important**  This directive must be used carefully. We highly recommend that you do not use the **DelFiles** directive in the INF file for a Plug and Play (PnP) function driver.
 
- 
+ 
 
 Any *file-list-section* name must be unique to the INF file, but it can be referenced by [**CopyFiles**](inf-copyfiles-directive.md), **DelFiles**, or [**RenFiles**](inf-renfiles-directive.md) directives elsewhere in the same INF. Such an INF-writer-defined section name must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -129,9 +129,9 @@ VASPID.SYS ; name of file to be deleted, if it exists on target
 **RenFiles**
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

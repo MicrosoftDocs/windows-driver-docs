@@ -13,9 +13,9 @@ warning C28177: Function is annotated with more than one function class. All but
 
 This warning can be generated when there is a chain of typedefs.
 
- 
+ 
 
- 
+ 
 
 
 

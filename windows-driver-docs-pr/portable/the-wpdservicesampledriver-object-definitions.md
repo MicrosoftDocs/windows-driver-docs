@@ -19,7 +19,7 @@ The WpdHelloWorldDriver supports the objects that are shown in the following tab
 | Folder  | An object that exposes properties like a folder name.                                                             |
 | File    | An object that exposes properties like a file name and actual file contents.                                      |
 
- 
+ 
 
 Similar to the WpdHelloWorldDriver, the WpdServiceSampleDriver continues to support a Storage object. However, because the sample does not support a folder or file (for simplicity), we removed these objects and replaced them with a single object that corresponds to a Contact. The following table lists the objects that the new driver supports.
 
@@ -29,7 +29,7 @@ Similar to the WpdHelloWorldDriver, the WpdServiceSampleDriver continues to supp
 | Storage  | An object that exposes properties like a storage capacity, a file-system type, and a count of free bytes.              |
 | Contacts | A service object that contains properties like an object identifier, a persistent unique ID (PUID), a name, and so on. |
 
- 
+ 
 
 In WPD, objects are identified by strings. The string identifier for the Device Object is defined in the *Portabledevice.h* header file:
 
@@ -89,9 +89,9 @@ These object identifier constants are passed to a method in a source module that
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

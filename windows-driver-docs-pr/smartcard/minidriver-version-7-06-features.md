@@ -106,9 +106,9 @@ For more information about PIV, see the “About Personal Identity Verification 
 
 For more information about the process that Windows follows to identify and pair a PIV card with the inbox driver, see [Windows Inbox Smart Card Minidriver](windows-inbox-smart-card-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

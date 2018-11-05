@@ -47,7 +47,7 @@ After selecting the driver, registering any device co-installers, and registerin
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -78,7 +78,7 @@ If the class installer successfully handles this request, including directly cal
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler. For more information about calling a default DIF code handler, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
 
- 
+ 
 
 If the class installer encounters an error, the installer should return an appropriate Win32 error code and **SetupDiCallClassInstaller** will not subsequently call the default handler.
 
@@ -155,9 +155,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

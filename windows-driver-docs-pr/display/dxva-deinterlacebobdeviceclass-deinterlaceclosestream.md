@@ -47,9 +47,9 @@ The *DeinterlaceCloseStream* function maps directly to the **DestroyMoComp** mem
 
 [**DeinterlaceOpenStream**](dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

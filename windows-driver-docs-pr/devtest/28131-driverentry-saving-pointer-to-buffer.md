@@ -16,9 +16,9 @@ warning C28131: The DriverEntry routine should save a copy of the argument, not 
 
 The driver's *DriverEntry* routine is saving a copy of the pointer to the buffer instead of saving a copy of the buffer. Because the buffer is freed when the *DriverEntry* routine returns, the pointer to the buffer will soon be invalid.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,9 +43,9 @@ Remarks
 
 The *system trace fragment* is a copy of the contents of the last buffer of the System Context Log. Under normal conditions, this is the trace session whose logger ID is 2.
 
- 
+ 
 
- 
+ 
 
 
 

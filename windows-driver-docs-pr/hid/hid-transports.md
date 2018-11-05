@@ -28,7 +28,7 @@ HID transports supported in current and previous versions of Windows.
 | I²C          | Hidi2c.sys        | Windows 8 and later.  | Windows 8 introduces support for HID over I2C.                                                        |
 | GPIO         | Hidinterrupt.sys  | Windows 10 and later. | Windows Windows 10 introduces support for general-purpose I/O (GPIO) buttons.                         |
 
- 
+ 
 
 Microsoft recommends that whenever possible, you use in-box drivers for the transports listed in the preceding table.
 
@@ -57,11 +57,11 @@ If your device requires a transport other than USB, Bluetooth, Bluetooth LE, or 
 | HidBthLE          | 65535 bytes              | N/A                           | 64 KB                              |
 | Hidi2c            | 65535 bytes              | N/A                           | 64 KB                              |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

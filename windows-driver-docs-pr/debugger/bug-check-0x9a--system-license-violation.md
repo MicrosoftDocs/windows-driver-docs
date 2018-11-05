@@ -239,7 +239,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -248,9 +248,9 @@ The Microsoft Windows operating system detects a violation of the software licen
 
 A user might have tried to change the product type of an offline system or change the trial period of an evaluation unit of Windows. For more information about the specific violation, see the parameter list.
 
- 
+ 
 
- 
+ 
 
 
 

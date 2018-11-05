@@ -18,11 +18,11 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 **Note**  This property specifies data path quality of service hints, which may cause conflicts with other properties or tasks that are issued to the adapter.
 
- 
+ 
 
 ## Set property parameters
 
@@ -32,7 +32,7 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 | [**WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926259)                           |                                |          | The desired Wi-Fi connection quality hint.                                                                                                                                                     |
 | [**WDI\_TLV\_LOW\_LATENCY\_CONNECTION\_QUALITY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn897843) |                                | X        | The behavior for low latency connection quality. This is only required if the connection quality is set to [**WDI\_CONNECTION\_QUALITY\_LOW\_LATENCY**](https://msdn.microsoft.com/library/windows/hardware/dn897807). |
 
- 
+ 
 
 ## Set property results
 
@@ -62,9 +62,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

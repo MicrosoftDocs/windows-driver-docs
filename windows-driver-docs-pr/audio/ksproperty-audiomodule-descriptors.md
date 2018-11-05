@@ -49,7 +49,7 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
+ 
 
 The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/mt808137) structures.
 
@@ -92,9 +92,9 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
- 
+ 
 
- 
+ 
 
 
 

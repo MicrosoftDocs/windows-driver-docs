@@ -29,9 +29,9 @@ XPSDrv print drivers must support the [IPrintTicketProvider interface](https://m
 
 ![diagram illustrating the print capabilities support in print drivers](images/ptpcarch1.gif)
 
- 
+ 
 
- 
+ 
 
 
 

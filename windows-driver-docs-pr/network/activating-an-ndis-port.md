@@ -58,9 +58,9 @@ NDIS passes the authentication state of the default port to the [*MiniportInitia
 
 For more information about controlling the default port and allocating ports, see [Allocating NDIS Ports](allocating-an-ndis-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

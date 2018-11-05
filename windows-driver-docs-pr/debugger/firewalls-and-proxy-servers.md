@@ -30,7 +30,7 @@ If you refuse an authentication request, or if the debugger automatically refuse
 
 **Note**   If you are using KD or CDB, the authentication dialog box may appear behind an open window. If this occurs, you may have to move or minimize some windows in order to find this dialog box.
 
- 
+ 
 
 In WinDbg, authentication requests are allowed by default. In KD and CDB, authentication requests are automatically refused by default.
 
@@ -50,9 +50,9 @@ set _NT_SYMBOL_PROXY=myproxyserver:80
 
 When a proxy server is chosen in this way, it will be used by any Windows debugger that is using SymSrv to access a symbol server. It will also be used by any other debugging tool that uses DbgHelp as its symbol handler. No other programs will be affected by this setting.
 
- 
+ 
 
- 
+ 
 
 
 

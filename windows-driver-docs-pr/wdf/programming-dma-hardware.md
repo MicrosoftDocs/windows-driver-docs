@@ -69,7 +69,6 @@ Steps 1 and 4 are illustrated in the following code example, taken from the [PLX
                     "<-- PLxEvtProgramReadDma: errors ****");
         return FALSE;
     }
-
 ```
 
 The example calls the **PLxReadRequestComplete** function to perform steps 2 and 3:
@@ -120,9 +119,9 @@ Return Value:
 }
 ```
 
- 
 
- 
+
+
 
 
 

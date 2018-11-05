@@ -38,9 +38,9 @@ The Microsoft Windows operating system includes a PPP CoNDIS client, and CoNDIS 
 
 The CoNDIS WAN model is not restricted to PPP data. You can implement a custom WAN client driver and miniport driver to handle, for example, raw data streaming or proprietary encryption.
 
- 
+ 
 
- 
+ 
 
 
 

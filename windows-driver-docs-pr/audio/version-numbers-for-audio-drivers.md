@@ -64,7 +64,7 @@ Windows operating systems support three types of audio driver models: the VxD, W
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="driver_model__vxd_drivers_for_windows_98"></span><span id="DRIVER_MODEL__VXD_DRIVERS_FOR_WINDOWS_98"></span>Driver Model: VxD Drivers for Windows 98
 
@@ -91,7 +91,7 @@ Windows operating systems support three types of audio driver models: the VxD, W
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="driver_model__wdm_drivers_for_windows_me_98__and_windows_2000_and_late"></span><span id="DRIVER_MODEL__WDM_DRIVERS_FOR_WINDOWS_ME_98__AND_WINDOWS_2000_AND_LATE"></span>Driver Model: WDM Drivers for Windows Me/98, and Windows 2000 and Later
 
@@ -138,7 +138,7 @@ Windows operating systems support three types of audio driver models: the VxD, W
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="driver_model__nt4_drivers__windows_nt_4_0_only_"></span><span id="DRIVER_MODEL__NT4_DRIVERS__WINDOWS_NT_4_0_ONLY_"></span>Driver Model: NT4 Drivers (Windows NT 4.0 Only)
 
@@ -161,7 +161,7 @@ Windows operating systems support three types of audio driver models: the VxD, W
 </tbody>
 </table>
 
- 
+ 
 
 For device drivers that do not support DirectX, the version number should be greater than or equal to 4.00.00.0096 and less than or equal to 4.02.00.0094. Device drivers that support DirectX version 1.0 should have a version number in the range 4.02.00.0096 to 4.02.00.9999. Device drivers that support later versions of DirectX should have version numbers in the range appropriate for the distributed version of DirectX, as shown in the preceding tables.
 
@@ -181,9 +181,9 @@ This section includes:
 
 [DirectX File Version Numbers](directx-file-version-numbers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ The filter manager provides the following support routines for accessing user bu
 
 [**FltLockUserBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff543371)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,7 +59,7 @@ A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -71,9 +71,9 @@ This function is available starting in revision 0x00010001 of the **EFI\_USBFN\_
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

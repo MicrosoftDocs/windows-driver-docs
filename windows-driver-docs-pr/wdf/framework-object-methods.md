@@ -31,9 +31,9 @@ Each framework object exports a set of methods (functions). Each method serves o
 
 Each object method accepts an object handle as input. If a driver passes an invalid object handle to an object method, a system bug check occurs.
 
- 
+ 
 
- 
+ 
 
 
 

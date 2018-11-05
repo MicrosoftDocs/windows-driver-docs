@@ -49,9 +49,9 @@ After the system detects a networking device, the system starts an NDIS driver s
 
 8.  NDIS restarts the driver stack. For more information about restarting the driver stack, see [Restarting a Driver Stack](restarting-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 
