@@ -40,10 +40,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithDownload() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = "New";
-        metadata.purchaseInstrument = "New";
-        metadata.moDirectStatus = "Complete";
-        metadata.line = "New";
+        metadata.userAccount = DataMartUserAccount.new;
+        metadata.purchaseInstrument = DataMartPurchaseInstrment.new;
+        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
+        metadata.line = DataMartLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyPurchaseWithProfileDownload(metadata, "1$smdp.address$", 15);
 }
@@ -78,13 +78,85 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithSMDS() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = "New";
-        metadata.purchaseInstrument = "New";
-        metadata.moDirectStatus = "Complete";
-        metadata.line = "New";
+        metadata.userAccount = DataMartUserAccount.new;
+        metadata.purchaseInstrument = DataMartPurchaseInstrment.new;
+        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
+        metadata.line = DataMartLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyPurchaseDelayedProfile(metadata, 15);
 }
+```
+
+## Inline profile delivery
+
+The following diagram shows the high level flow for how the Mobile Plans program supports downloading a profile without control leaving the MODirect portal
+
+![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.png)
+
+When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `DataMartInlineProfile.notifyInlineProfileDownload`.
+
+### DataMartInlineProfile.notifyInlineProfileDownload
+
+| Parameter Name | Type | Description |
+| --- | --- | -- |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+| activationCode | String | The activation code for downloading the eSIM profile. The ICCID for the profile is inferred from the profile metadata. |
+
+The following Javascript function shows an example of the API to inform the application that an inline profile download should start.
+
+```Javascript
+function NotifyDataMart() { 
+    var purchaseMetaData = DataMart.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = DataMartUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = DataMartPurchaseInstrument.new; 
+    purchaseMetaData.lineType = DataMartLineType.new; 
+    purchaseMetaData.modirectStatus = DataMartMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    DataMartInlineProfile.registrationChangedScript = onRegistrationChanged;
+    DataMartInlineProfile.profileActivationCompleteScript = onActivationComplete;
+    DataMartInlineProfile.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$"); 
+}
+
+```
+
+### Listening for network registration changes
+
+To listen for network registration changes, the `DataMartInlineProfile.registrationChangedScript` must be set to the name of a Javascript function which takes a string for the `registrationArgs`.
+
+The registration args are a string that represents a JSON object.
+
+
+| Property Name | Type | Description |
+| --- | --- | -- |
+| networkRegistrationState | string | A string representing the current network registration state. The values of which can be see in `DataMartNetworkRegistrationState`. |
+| iccid | string | The iccid for which the network registration state has changed |
+
+The below Javascript is an example of how to implement a listener for network registration changed events
+
+```Javascript
+function onRegistrationChanged(registrationArgs) {
+    var registrationObj = JSON.parse(registrationArgs);
+    if(registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
+        registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
+        registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home)
+    {
+        Log('Registration Successful!');
+    }
+}
+
+```
+
+# Listening for profile activation
+
+To listen for profile activation events the `DataMartInlineProfile.profileActivationCompleteScript` must be set to the name of a Javascript function which takes a string for the `activationArgs`
+
+```Javascript
+function onActivationComplete(activationArgs) {
+    var activationObj = JSON.parse(activationArgs);
+    if(activationObj.activationResult == DataMartActivationErrors.success)
+        Log('Activation Success');
+}
+
 ```
 
 ## Adding balance
@@ -103,10 +175,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithBalanceAddition() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = "New";
-        metadata.purchaseInstrument = "New";
-        metadata.moDirectStatus = "Complete";
-        metadata.line = "New";
+        metadata.userAccount = DataMartUserAccount.new;
+        metadata.purchaseInstrument = DataMartPurchaseInstrment.none;
+        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
+        metadata.line = DataMartLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyBalanceAddition(metadata, "89000000000000000000");
     }
@@ -127,10 +199,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithCancellation() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = "New";
-        metadata.purchaseInstrument = "New";
-        metadata.moDirectStatus = "Cancelled";
-        metadata.line = "Bailed";
+        metadata.userAccount = DataMartUserAccount.new;
+        metadata.purchaseInstrument = DataMartPurchaseInstrment.new;
+        metadata.moDirectStatus = DataMartMoDirectStatus.cancelled;
+        metadata.line = DataMartLineType.bailed;
         metadata.planName = "";
         DataMart.notifyCancelledPurchase(metadata);
     }
