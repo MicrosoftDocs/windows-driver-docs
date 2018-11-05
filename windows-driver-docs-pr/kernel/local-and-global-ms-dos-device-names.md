@@ -10,10 +10,6 @@ ms.localizationpriority: medium
 
 # Local and Global MS-DOS Device Names
 
-
-
-
-
 The Microsoft Windows 2000 and later versions of the Windows NT-based operating system maintain multiple versions of the **DosDevices** directory.
 
 On these operating systems, there is one *global* **\\DosDevices** directory and multiple *local* **\\DosDevices** directories. The global **\\DosDevices** directory holds the MS-DOS device names that are visible system-wide. A local **\\DosDevices** directory holds MS-DOS device names that are visible only in a particular *local* **DosDevices** *context*.
@@ -42,7 +38,7 @@ UNICODE_STRING symbolicLinkName; // Initializing below.
 NTSTATUS status;
 
 if (IoIsWdmVersionAvailable(1, 0x10)) {
-    // We&#39;re on Windows 2000 or later, so we use \DosDevices\Global.
+    // We're on Windows 2000 or later, so we use \DosDevices\Global.
  
     RtlInitUnicodeString(&symbolicLinkName, L"\\DosDevices\\Global\\SymbolicLinkName");
 
