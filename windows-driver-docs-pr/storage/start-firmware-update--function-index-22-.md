@@ -68,7 +68,7 @@ This function initiates a firmware update to a particular firmware slot. There c
 <td align="left">0</td>
 <td align="left"><p>This function can return the following Function-Specific Error Code:</p>
 <p>1: There is a firmware update operation currently in progress.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output)">_DSM Method Output</a> for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>

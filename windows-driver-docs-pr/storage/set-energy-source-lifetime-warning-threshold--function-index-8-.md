@@ -74,7 +74,7 @@ This function sets the warning threshold for remaining Energy Source (ES) lifeti
 <td align="left">0</td>
 <td align="left"><p>This function can return the following Function-Specific Error Code:</p>
 <p>1: The platform does not support ES thresholds.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output)">_DSM Method Output</a> for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>

@@ -95,7 +95,7 @@ This function sends firmware data to the device.
 <p>3: Transfer failed due to data corruption.</p>
 <p>4: Operation timed out.</p>
 <p>5: The firmware commit operation failed.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output)">_DSM Method Output</a> for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>

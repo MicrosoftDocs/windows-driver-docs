@@ -46,7 +46,7 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output)">_DSM Method Output</a> for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>ES Lifetime Percentage Warning Threshold</strong></td>

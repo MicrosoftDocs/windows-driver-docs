@@ -44,7 +44,7 @@ None.
 <td align="left"><p>This function can return the following Function-Specific Error Codes:</p>
 <p>1: There is no firmware update operation in progress.</p>
 <p>2: Invalid firmware image.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output)">_DSM Method Output</a> for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>

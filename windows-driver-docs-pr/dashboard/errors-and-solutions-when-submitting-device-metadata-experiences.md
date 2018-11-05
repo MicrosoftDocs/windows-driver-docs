@@ -330,7 +330,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <p>For more information, see the <a href="http://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](http://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>The [FileName] icon file in [FolderName] folder is missing image <a href="compressed" data-raw-source="[MissingImageSize](compressed)">MissingImageSize</a>.</p></td>
+<td><p>The [FileName] icon file in [FolderName] folder is missing image <a href="http://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](http://go.microsoft.com/fwlink/p/?LinkId=241658)">MissingImageSize</a>.</p></td>
 <td><p>Verify that the image size is present. If not, add the image size to the icon, and then resubmit the package.</p>
 <div class="alert">
 <strong>Note</strong><br/><p>256x256 image layers must be in the PNG compressed format. BMP format for this size is not allowed. If this size is present but in the BMP format, create the image in a PNG format for the size, add this image to the icon, and then resubmit the package.</p>
