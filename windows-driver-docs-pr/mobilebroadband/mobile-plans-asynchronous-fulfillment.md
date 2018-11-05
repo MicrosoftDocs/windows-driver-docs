@@ -97,6 +97,7 @@ When the MO Direct portal is ready for a profile download, install, and activati
 
 ### DataMartInlineProfile.notifyInlineProfileDownload
 
+
 | Parameter Name | Type | Description |
 | --- | --- | -- |
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
@@ -116,7 +117,6 @@ function NotifyDataMart() { 
     DataMartInlineProfile.profileActivationCompleteScript = onActivationComplete;
     DataMartInlineProfile.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$"); 
 }
-
 ```
 
 ### Listening for network registration changes
