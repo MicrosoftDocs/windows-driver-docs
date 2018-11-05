@@ -86,7 +86,8 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                         </p>
                         <p>
                             <a href="https://developer.microsoft.com/windows/hardware/windows-driver-kit">Windows Driver Kit (WDK)</a>
-                        </p><br/>                    </div>
+                        </p>                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +133,8 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                         </p>
                         <p>
                             <a href="/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers">Concepts for all driver developers</a>
-                        </p><br/>                    </div>
+                        </p>                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,7 +161,8 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                         </p>
                         <p>
                             <a href="/windows-hardware/drivers/install/">Device and Driver Installation</a>
-                        </p><br/>                    </div>
+                        </p>                      
+                    </div>
                 </div>
             </div>
         </div>
@@ -241,7 +244,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
 </ul>
 
 <p><b>Run-time requirements for WDK 10</b></p>
-WDK requires Visual Studio. For more information, see <a href="https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs" data-raw-source="[Visual Studio 2017 System Requirements] (https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)">Visual Studio 2017 System Requirements</a>.
+WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements] (https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
 
 EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 
@@ -253,4 +256,3 @@ You can use WDK Insider Preview and the EWDK Insider Preview to develop drivers 
 | Windows 8.1 |   Windows Server 2012 R2   |
 |  Windows 8  |    Windows Server 2012     |
 |  Windows 7  | Windows Server 2008 R2 SP1 |
-
