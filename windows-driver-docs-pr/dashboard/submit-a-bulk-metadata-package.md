@@ -2,6 +2,8 @@
 title: Submit a Bulk Metadata Package
 description: Submit a Bulk Metadata Package
 ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
+author: EliotSeattle
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

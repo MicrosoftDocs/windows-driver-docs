@@ -2,6 +2,8 @@
 title: Get started with the Hardware program
 description: Get started with the Hardware program
 ms.assetid: 000B5BBB-61EF-4837-8E5E-EF1BBB65B14E
+author: EliotSeattle
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

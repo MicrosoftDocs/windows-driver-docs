@@ -3,6 +3,7 @@ title: Get all submissions
 description: This method in the Microsoft Hardware API retrieves data for all submissions of a product.
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---

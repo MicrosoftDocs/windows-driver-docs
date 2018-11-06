@@ -3,6 +3,7 @@ title: Download failure Cabs
 description: Use the report delivered as part of the Get Report Data API to retrieve the CabURL and then download the failure cab.
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 08/20/2018
 ms.localizationpriority: medium
 ---

@@ -1,9 +1,10 @@
 ---
-author: mcleanbyron
 ms.assetid: BAC79A64-445D-4702-8E96-7727FF180245
 description: Use this method in the Microsoft Store analytics API to get aggregate error reporting data for Windows 10 drivers for a given date range and other optional filters. This method is intended only for IHVs.
 title: Get error reporting data for Windows 10 drivers
-ms.author: mcleans
+ms.author: eliotgra
+author: EliotSeattle
+ms.topic: article
 ms.date: 08/28/2018
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors
 ms.localizationpriority: medium
