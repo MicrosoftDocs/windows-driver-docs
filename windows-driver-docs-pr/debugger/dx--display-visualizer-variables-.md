@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](http://msdn.microsoft.com/library/jj620914.aspx).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://msdn.microsoft.com/library/jj620914.aspx).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]

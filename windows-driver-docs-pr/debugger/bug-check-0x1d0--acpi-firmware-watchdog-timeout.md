@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Bug Check Bug Check 0x1D0: ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT 
 
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 The ACPI_FIRMWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001D0. 
 

@@ -69,7 +69,7 @@ When an active device is attached that already had an active SIM, the workflow i
 
 ### <span id="Windows_8__Windows_8.1__or_Windows_10_certified_mobile_broadband_devices"></span><span id="windows_8__windows_8.1__or_windows_10_certified_mobile_broadband_devices"></span><span id="WINDOWS_8__WINDOWS_8.1__OR_WINDOWS_10_CERTIFIED_MOBILE_BROADBAND_DEVICES"></span>Windows 8, Windows 8.1, or Windows 10 certified mobile broadband devices
 
-To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](http://msdn.microsoft.com/library/windows/hardware/hh748188).
+To take full advantage of the Windows mobile broadband platform, your mobile broadband device must meet the Windows 8, Windows 8.1, or Windows 10 hardware certification requirements. For a comprehensive description of the hardware certification requirements, see [Windows Hardware Certification Requirements](https://msdn.microsoft.com/library/windows/hardware/hh748188).
 
 For the end user, the most simplified connection experience is delivered with a USB-based mobile broadband device. As part of the hardware certification requirements, any mobile broadband device that manifests as a USB device must comply with the [Mobile Broadband Interface Model (MBIM) specification](https://msdn.microsoft.com/library/windows/hardware/dn265427) and the MBIM v1.0 Errata. This includes both external USB dongles and embedded modules that provide USB interfaces. For this class of devices, Windows 8, Windows 8.1, or Windows 10 includes a mobile broadband class driver, which eliminates the need for additional drivers from the IHV and simplifies the user’s connection experience. Other hardware that is not USB and driver models can receive Windows 8, Windows 8.1, and Windows 10 certification and will provide the Microsoft Store mobile broadband app experience, but these are not supported by the mobile broadband class driver.
 
@@ -166,7 +166,7 @@ Here are some options to consider when supporting an operator-specific OMA-DM:
 
     -   The mobile broadband device manufacturer may be able to provide 3rd party OMA-DM client solutions for integrating in their network adapter firmware if a natively supported solution does not exist.
 
-    -   Mobile broadband apps should continue to use [provisioning metadata](http://msdn.microsoft.com/library/windows/apps/windows.networking.networkoperators.provisioningagent) when configuring operating system specific parameters.
+    -   Mobile broadband apps should continue to use [provisioning metadata](https://msdn.microsoft.com/library/windows/apps/windows.networking.networkoperators.provisioningagent) when configuring operating system specific parameters.
 
 -   OMA-DM client in the mobile broadband app:
 

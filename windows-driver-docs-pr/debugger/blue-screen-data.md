@@ -58,7 +58,7 @@ Each bug check code has four associated parameters that provide additional infor
 
 There are multiple ways to gather the four stop code parameters.
 
--   Examine the Windows system log in the event viewer. The event properties for the BugCheck will list the four stop code parameters. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7).
+-   Examine the Windows system log in the event viewer. The event properties for the BugCheck will list the four stop code parameters. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7).
 
 -   Load the generated dump file and use the [**!analyze**](-analyze.md) command with the debugger attached. For more information, see [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
@@ -126,7 +126,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 

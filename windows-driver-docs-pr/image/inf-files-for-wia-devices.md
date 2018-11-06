@@ -300,7 +300,7 @@ The user interface (UI) entries are required only if the vendor supplies a custo
 
 **Remarks**
 
-When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](http://msdn.microsoft.com/library/windows/hardware/gg463179.aspx) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
+When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](https://msdn.microsoft.com/library/windows/hardware/gg463179.aspx) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
 
  
 

@@ -23,7 +23,7 @@ Built in Windows critical system services include csrss.exe, wininit.exe, logonu
 A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## CRITICAL\_PROCESS\_DIED Parameters
 
@@ -94,7 +94,7 @@ If you are not able to work with the debugger, these general troubleshooting tip
 
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Check with the manufacturer to see if an updated system BIOS or firmware is available.
 
@@ -106,7 +106,7 @@ If you are not able to work with the debugger, these general troubleshooting tip
 
 -   Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
-    ```
+    ```console
     SFC /scannow
     ```
 

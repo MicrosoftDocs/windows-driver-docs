@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 USBTCD is the combination of a user-mode application and kernel-mode driver. The tool performs read and write operations. It initiates control, bulk, isochronous, data transfers of various transfer lengths to and from the test device. For a SuperMUTT device, USBTCD transfers data to streams supported by a bulk endpoint. It can also send the transfer buffer as chained MDLs. In that case, you can specify the number of segments in the transfer buffer.
 
-The USBTCD files are included in the [MUTT Software Package](http://msdn.microsoft.com/windows/hardware/jj590752).
+The USBTCD files are included in the [MUTT Software Package](https://msdn.microsoft.com/windows/hardware/jj590752).
 
 ## USBTCD
 

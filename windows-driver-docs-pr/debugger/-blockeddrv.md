@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!blockeddrv** extension displays the list of blocked drivers on the target computer.
 
-```
+```dbgcmd
     !blockeddrv
 ```
 
@@ -52,7 +52,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !blockeddrv
 Driver:      Status    GUID
 afd.sys      0:        {00000008-0206-0001-0000-000030C964E1}

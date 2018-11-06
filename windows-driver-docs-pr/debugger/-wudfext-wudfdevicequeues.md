@@ -59,7 +59,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfdevicequeues** display:
 
-```
+```dbgcmd
 ## kd> !wudfdevicequeues 0xf2f80 
 --------------------------------------------------
 Queue: 1 (!wudfqueue 0x000f3500)

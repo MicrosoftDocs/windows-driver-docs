@@ -21,8 +21,9 @@ The **!acl** extension formats and displays the contents of an access control li
 
 Syntax
 
+```dbgcmd
     !acl Address [Flags] 
-
+```
 
 ## <span id="ddk__acl_dbg"></span><span id="DDK__ACL_DBG"></span>Parameters
 

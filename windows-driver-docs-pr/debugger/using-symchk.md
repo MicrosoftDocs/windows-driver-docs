@@ -15,8 +15,9 @@ ms.localizationpriority: medium
 
 The basic syntax for SymChk is as follows:
 
-    symchk [/r] FileNames /s SymbolPath 
-
+```console
+symchk [/r] FileNames /s SymbolPath 
+```
 
 *FileNames* specifies one or more program files whose symbols are needed. If *FileNames* is a directory and the **/r** flag is used, this directory is explored recursively, and SymChk will try to find symbols for all program files in this directory tree. *SymbolPath* specifies where SymChk is to search for symbols.
 
@@ -101,7 +102,7 @@ For more information, see [Public and Private Symbols](public-and-private-symbol
 
 Here are some examples. The following command searches for symbols for the program Myapp.exe:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\applications 
 
 SYMCHK: Myapp.exe           FAILED  - Myapp.pdb is missing
@@ -112,7 +113,7 @@ SYMCHK: PASSED + IGNORED files = 0
 
 You can try again with a different symbol path:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: FAILED files = 0
@@ -125,7 +126,7 @@ A program file is ignored if it contains no executable code. Many resource files
 
 If you prefer to see the file names of all program files, you can use the **/v** option to generate verbose output:
 
-```
+```console
 e:\debuggers> symchk /v f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: MyApp.exe           PASSED
@@ -136,7 +137,7 @@ SYMCHK: PASSED + IGNORED files = 1
 
 The following command searches for a huge number of Windows symbols in a symbol server. There are a great variety of possible error messages:
 
-```
+```console
 e:\debuggers> symchk /r c:\windows\system32 /s srv*\\manysymbols\windows 
 
 SYMCHK: msisam11.dll         FAILED  - MSISAM11.pdb is missing

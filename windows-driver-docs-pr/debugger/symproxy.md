@@ -48,7 +48,7 @@ In this example, a UNC path and two HTTP paths are associated with a Virtual Dir
 
 ```console
 \\MainOffice\Symbols;https://msdl.microsoft.com/download/symbols;
-http://symbols.contoso.com/symbols
+https://symbols.contoso.com/symbols
 ```
 
 The Main Office Symbol file share is queried first using a (generated) symbol path of:
@@ -63,10 +63,10 @@ If the symbol file is not found, the Microsoft Symbol Store is queried using a (
 SRV*D:\SymStore\Symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-If the file is still not found, the Contoso Symbol Store (http://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
+If the file is still not found, the Contoso Symbol Store (https://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
 
 ```dbgcmd
-SRV*D:\SymStore\Symbols*http://symbols.contoso.com/symbols
+SRV*D:\SymStore\Symbols*https://symbols.contoso.com/symbols
 ```
 
 This section includes:

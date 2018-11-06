@@ -6,7 +6,9 @@ ms.date: 09/23/2017
 ms.localizationpriority: medium
 ---
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time travel navigation commands
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+
+# Time travel navigation commands
 
 This section describes the time travel navigation commands.
 

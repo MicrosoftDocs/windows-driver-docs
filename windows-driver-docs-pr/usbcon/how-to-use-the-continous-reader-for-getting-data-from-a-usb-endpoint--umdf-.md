@@ -29,7 +29,7 @@ The continuous reader is not automatically power managed by the framework. This 
 
 Before the client driver can use the continuous reader, make sure that these requirements are met:
 
--   Your USB device must have an IN endpoint. Check the device configuration in [USBView](http://msdn.microsoft.com/library/ff560019(VS.85).aspx). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
+-   Your USB device must have an IN endpoint. Check the device configuration in [USBView](https://msdn.microsoft.com/library/ff560019(VS.85).aspx). Usbview.exe is an application that allows you to browse all USB controllers and the USB devices connected to them. Typically, USBView is installed in the **Debuggers** folder in the Windows Driver Kit (WDK).
 -   The client driver must have created the framework USB target device object.
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates that an unrecoverable error was encountered in a System on a Chip (SoC) subsystem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## Bug Check 0x14B SOC\_SUBSYSTEM\_FAILURE Parameters
 
@@ -62,7 +62,7 @@ Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
-```
+```dbgcmd
 2: kd> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -81,7 +81,7 @@ Arg4: a126c000, (Optional) address to vendor supplied general purpose data block
 
 Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failure data using the dt command and the address provided by Arg1.
 
-```
+```dbgcmd
 2: kd> dt nt!SOC_SUBSYSTEM_FAILURE_DETAILS 9aa8d630
    +0x000 SubsysType       : 1 ( SOC_SUBSYS_AUDIO_DSP )
    +0x008 FirmwareVersion  : 0

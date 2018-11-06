@@ -290,7 +290,7 @@
   - name: "Bluetooth Bypass Guidelines for Audio Drivers"
     href: bluetooth-bypass-guidelines-for-audio-drivers.md
     items: 
-    - name: "Architectural Overview"
+    - name: "Windows Bluetooth host controller interface (HCI) Architectural Overview"
       href: btth-architectural-overview.md
     - name: "Theory of Operation"
       href: theory-of-operation.md

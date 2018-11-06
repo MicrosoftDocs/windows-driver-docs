@@ -67,7 +67,7 @@ Usage: !storclass <class device> <level [0-2]>
 
 **1: kd&gt; !storagekd.storclass fffffa80043dc060 1**
 
-```
+```dbgcmd
 Storage class device fffffa80043dc060 with extension at fffffa80043dc1b0
 
 Classpnp Internal Information at fffffa8003bec360

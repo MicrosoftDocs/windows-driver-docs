@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.bpcmds** command displays the commands that were used to set each of the current breakpoints.
 
-```
+```dbgcmd
     .bpcmds
 ```
 
@@ -73,7 +73,7 @@ If the breakpoint was created by **bm** without the **/d** switch, the display i
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> bp notepad!winmain 
 
 0:000> .bpcmds 

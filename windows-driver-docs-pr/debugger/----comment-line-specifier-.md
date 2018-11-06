@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 If the asterisk ( **\*** ) character is at the start of a command, then the rest of the line is treated as a comment, even if a semicolon appears after it.
 
+```dbgcmd
     * [any text]
+```
 
 Remarks
 -------

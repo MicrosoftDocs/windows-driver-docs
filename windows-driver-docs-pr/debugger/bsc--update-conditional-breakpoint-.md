@@ -77,7 +77,7 @@ If the *CommandString* is not specified, any commands already set on the breakpo
 
 The same effect can be achieved by using the [**bs (Update Breakpoint Command)**](bs--update-breakpoint-command-.md) command with the following syntax:
 
-```
+```dbgcmd
 bs ID "j Condition 'CommandString'; 'gc'"
 ```
 

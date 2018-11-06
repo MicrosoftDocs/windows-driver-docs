@@ -21,8 +21,9 @@ The **!amli cl** extension clears the AML interpreter's event log.
 
 Syntax
 
+```dbgcmd
     !amli cl
-
+```
 
 ## <span id="ddk__amli_cl_dbg"></span><span id="DDK__AMLI_CL_DBG"></span>
 

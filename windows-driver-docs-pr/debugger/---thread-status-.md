@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The tilde (**~**) command displays status for the specified thread or for all threads in the current process.
 
-    ~ Thread
+```dbgcmd
+~ Thread
+```
 
 ## <span id="ddk_cmd_thread_status_dbg"></span><span id="DDK_CMD_THREAD_STATUS_DBG"></span>Parameters
 
@@ -49,7 +51,6 @@ Specifies the thread to display. If you omit this parameter, all threads are dis
 </tr>
 </tbody>
 </table>
-
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
@@ -65,37 +66,37 @@ You can add a thread symbol before many commands. For more information about the
 
 The following examples show you how to use this command. The following command displays all threads.
 
-```console
+```dbgcmd
 0:001> ~
 ```
 
 The following command also displays all threads.
 
-```console
+```dbgcmd
 0:001> ~*
 ```
 
 The following command displays the currently active thread.
 
-```console
+```dbgcmd
 0:001> ~.
 ```
 
 The following command displays the thread that originally caused the exception (or that was active when the debugger attached to the process).
 
-```console
+```dbgcmd
 0:001> ~#
 ```
 
 The following command displays thread number 2.
 
-```console
+```dbgcmd
 0:001> ~2
 ```
 
 The previous command displays the following output.
 
-```console
+```dbgcmd
 0:001> ~
    0 id: 4dc.470 Suspend: 0 Teb 7ffde000 Unfrozen
 . 1 id: 4dc.534 Suspend: 0 Teb 7ffdd000 Unfrozen

@@ -140,13 +140,13 @@ SYMSRV:  C:\ProgramData\dbg\sym\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll
    \5038768C95e000\mscordacwks_AMD64_AMD64_4.0.30319.18010.dll not found
 
 SYMSRV:  mscordacwks_AMD64_AMD64_4.0.30319.18010.dll from 
-   http://msdl.microsoft.com/download/symbols: 570542 bytes - copied         
+   https://msdl.microsoft.com/download/symbols: 570542 bytes - copied         
 ...
 SYMSRV:  C:\ProgramData\dbg\sym\SOS_AMD64_AMD64_4.0.30319.18010.dll
    \5038768C95e000\SOS_AMD64_AMD64_4.0.30319.18010.dll not found
 
 SYMSRV:  SOS_AMD64_AMD64_4.0.30319.18010.dll from 
-   http://msdl.microsoft.com/download/symbols: 297048 bytes - copied         
+   https://msdl.microsoft.com/download/symbols: 297048 bytes - copied         
 ...
 Automatically loaded SOS Extension
 ...

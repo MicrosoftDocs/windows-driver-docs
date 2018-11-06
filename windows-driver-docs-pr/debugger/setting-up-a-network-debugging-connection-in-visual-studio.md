@@ -46,8 +46,6 @@ The host computer can use any wired or wireless network adapter, but the target 
 
     **Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. There is no way to tell from the host computer what the limitations are. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
-     
-
     For **Key**, we strongly recommend that you use the automatically generated default value. However, you can enter your own key if you prefer. For more information, see [Creating your own key](#creating-your-own-key) later in this topic. For **Host IP**, accept the default value. This is the IP address of your host computer.
 
     If your target computer has only one network adapter, you can leave **Bus Parameters** empty. If there is more than one network adapter on the target computer, use Device Manager on the target computer to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. For **Bus Parameters**, enter *b*.*d*.*f* where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter.
@@ -113,7 +111,7 @@ For example:
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (Microsoft Visual Studio) through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. Respond to the prompt by checking the boxes for all three network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, use the check boxes to allow Visual Studio through the firewall. Restart Visual Studio.
 
-## <span id="creating_your_own_key"></span><span id="CREATING_YOUR_OWN_KEY"></span>Creating Your Own Key
+## <span id="creating-your-own-key"></span><span id="CREATING-YOUR-OWN-KEY"></span>Creating Your Own Key
 
 
 To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by the Visual Studio configuration wizard) when you configure the target computer). However, you can choose to create your own key. Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. The following list gives examples of valid (although not strong) keys:

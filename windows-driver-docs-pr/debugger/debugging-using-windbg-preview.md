@@ -6,7 +6,9 @@ ms.date: 10/18/2018
 ms.localizationpriority: medium
 ---
 
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Debugging Using WinDbg Preview 
+![Small logo on windbg preview](images/windbgx-preview-logo.png) 
+
+# Debugging Using WinDbg Preview 
 
 WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 

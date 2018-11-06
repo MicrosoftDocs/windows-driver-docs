@@ -115,7 +115,7 @@ width = (8.5 inches)x(600 DPI) = 5100 dots
 
 height = (11 inches)x(600 DPI) = 6600 dots
 
-To create a bitmap image of rectangular region of a fixed page, an XPSDrv filter calls the XPS rasterizer object's [**IXpsRasterizer::RasterizeRect**](https://msdn.microsoft.com/library/windows/hardware/ff556365) method. This method always produces a bitmap with a pixel size of 32 bits. The pixel format is specified by the GUID value **GUID\_WICPixelFormat32bppPBGRA**, which is defined in header file Wincodec.h. The format contains 8-bit red, green, and blue components and uses the standard (sRGB) color space. In addition, the format contains an 8-bit alpha component. The color components in each pixel value are premultiplied by the alpha component. For more information about this format, see [Native Pixel Formats Overview](http://msdn.microsoft.com/library/windows/desktop/ee719797.aspx).
+To create a bitmap image of rectangular region of a fixed page, an XPSDrv filter calls the XPS rasterizer object's [**IXpsRasterizer::RasterizeRect**](https://msdn.microsoft.com/library/windows/hardware/ff556365) method. This method always produces a bitmap with a pixel size of 32 bits. The pixel format is specified by the GUID value **GUID\_WICPixelFormat32bppPBGRA**, which is defined in header file Wincodec.h. The format contains 8-bit red, green, and blue components and uses the standard (sRGB) color space. In addition, the format contains an 8-bit alpha component. The color components in each pixel value are premultiplied by the alpha component. For more information about this format, see [Native Pixel Formats Overview](https://msdn.microsoft.com/library/windows/desktop/ee719797.aspx).
 
 Some XPSDrv filters might perform additional processing of a bitmap produced by an XPS rasterizer object. For example, a filter for a color printer might convert the bitmap to a CMYK pixel format before wrapping the bitmap in the printer's page description language and sending it to the printer.
 
@@ -124,7 +124,7 @@ For more information about the interfaces that the XPS rasterization service use
 ### XPSRas and High Precision Pixel Formats
 
 -   In Windows 8, the XPS rasterization service exposes a new interface, [IXpsRasterizationFactory1](https://msdn.microsoft.com/library/windows/hardware/hh802467), which is a new version of [IXpsRasterizationFactory](https://msdn.microsoft.com/library/windows/hardware/ff556356). **IXpsRasterizationFactory1** exposes a new method, [**IXpsRasterizationFactory1::CreateRasterizer1**](https://msdn.microsoft.com/library/windows/hardware/hh802468), that is identical to the Windows 7 version ([**IXpsRasterizationFactory::CreateRasterizer**](https://msdn.microsoft.com/library/windows/hardware/ff556350)), except that it takes one new parameter for output pixel format.
--   This feature exposes a new enumeration, [**XPSRAS\_PIXEL\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/hh802469), that allows a caller to select the pixel format used by the [IWICBitmap](http://msdn.microsoft.com/library/windows/desktop/ee719675.aspx) interface that is returned by the IXpsRasterizer::RasterizeRect method.
+-   This feature exposes a new enumeration, [**XPSRAS\_PIXEL\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/hh802469), that allows a caller to select the pixel format used by the [IWICBitmap](https://msdn.microsoft.com/library/windows/desktop/ee719675.aspx) interface that is returned by the IXpsRasterizer::RasterizeRect method.
 
 ### XPSRas and the GPU
 

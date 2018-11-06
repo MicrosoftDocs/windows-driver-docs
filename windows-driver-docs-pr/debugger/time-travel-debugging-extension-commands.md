@@ -6,8 +6,9 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time travel debugging extension commands
+#  Time travel debugging extension commands
 
 This section introduces the time travel debugger extension commands.
 

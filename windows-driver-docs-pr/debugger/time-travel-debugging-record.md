@@ -6,8 +6,9 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Record a trace 
+#  Time Travel Debugging - Record a trace 
 
 This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
 

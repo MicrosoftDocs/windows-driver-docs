@@ -18,12 +18,12 @@ WPP provides ways to trace the operation of software components known as trace p
 
 -   SensorsUtilsV2.pdb
 
-The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](http://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
+The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](https://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
 
 ## Tracing GUID
 
 
-The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
+The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
 
 ``` syntax
 c88b592b-6090-480f-a839-ca2434de5844

@@ -45,7 +45,7 @@ For more information about working with JavaScript, see these topics:
 Use **New Script** > **NatVis** to open the following blank NatVis template.
 
 ```xml
-<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+<AutoVisualizer xmlns="https://schemas.microsoft.com/vstudio/debugger/natvis/2010">
   <Type Name="">
   </Type>
 </AutoVisualizer>

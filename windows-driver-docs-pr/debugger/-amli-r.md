@@ -21,8 +21,9 @@ The **!amli r** extension displays information about the current context or the 
 
 Syntax
 
+```dbgcmd
    !amli r [ContextAddress]
-
+```
 
 ## <span id="ddk__amli_r_dbg"></span><span id="DDK__AMLI_R_DBG"></span>Parameters
 

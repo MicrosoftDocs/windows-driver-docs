@@ -432,8 +432,7 @@ To install the driver on the target system, perform the following steps.
     `root\\sysvad\_TabletAudioSample`
 
     On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\\sysvad\_TabletAudioSample`
-   
-    
+       
     Status information is displayed durring the devcon install.
 
 
@@ -891,8 +890,6 @@ To set a breakpoint using a debug command, use one of the following **b** comman
                 maxObjects,
                 0
             );
-
-
         return ntStatus;
     } // AddDevice
     ```
@@ -1248,7 +1245,6 @@ It can be useful to examine variables as the code executes to confirm that the c
         [+0x004] Data2            : 0xe000
         [+0x006] Data3            : 0xffff
         [+0x008] Data4            :  [Type: unsigned char [8]]
-
 
     0: kd> dx -r1 -n (*((tabletaudiosample!unsigned char (*)[8])0xffffd001c8acd350))
     (*((tabletaudiosample!unsigned char (*)[8])0xffffd001c8acd350)) :  [Type: unsigned char [8]]
@@ -1914,7 +1910,6 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
         LONG lVolume = VOLUME_NORMALIZE_IN_RANGE(_Volume); 
 
         ntStatus = SetChannelVolume(_uiChannel, lVolume);
-
     Exit:
         return ntStatus;
     }
@@ -2114,7 +2109,7 @@ Additional information is available on Windows debugging. Note that some of thes
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defrag-Tools>
+The Defrag Tools Show WinDbg Episodes 13-29 <https://channel9.msdn.com/Shows/Defrag-Tools>
 
 **Training Vendors:**
 

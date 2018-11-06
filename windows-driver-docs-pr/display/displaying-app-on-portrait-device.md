@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Here is code that you can use to make your app display correctly on a portrait device.
 
-```ManagedCPlusPlus
+```cpp
 //
 // This file contains utility functions for use in desktop applications for getting the current
 // orientation as Landscape/Portrait/LandscapeFlipped/PortraitFlipped (abbr: L/P/LF/PF). These

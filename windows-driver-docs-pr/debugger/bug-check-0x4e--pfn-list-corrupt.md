@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The PFN\_LIST\_CORRUPT bug check has a value of 0x0000004E. This indicates that the page frame number (PFN) list is corrupted.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PFN\_LIST\_CORRUPT Parameters
 
@@ -103,7 +103,7 @@ Cause
 
 This error is typically caused by a driver passing a bad memory descriptor list. For example, the driver might have called **MmUnlockPages** twice with the same list.
 
-If a kernel debugger is available, examine the stack trace.
+If a kernel debugger is available, examine the stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
 
  
 

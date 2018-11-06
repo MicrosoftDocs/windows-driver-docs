@@ -55,7 +55,7 @@ Remarks
 
 The following examples show the output of the **!wdfkd.wdffindobjects** extension. The 0x1 flag is set in the second example.
 
-```
+```dbgcmd
 1: kd> !wdffindobjects 0xfffffa600211b668 
   Address             Value               Object
   ------------------  ------------------  ------------------

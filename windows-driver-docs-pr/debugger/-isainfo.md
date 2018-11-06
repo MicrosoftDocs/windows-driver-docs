@@ -55,7 +55,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !isainfo
 ISA PnP FDO @ 0x867b9938, DevExt @ 0x867b99f0, Bus # 0
 Flags (0x80000000)  DF_BUS

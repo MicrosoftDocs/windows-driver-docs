@@ -72,7 +72,7 @@ Remarks
 
 Here is an example of the output from this extension on a free build:
 
-```
+```dbgcmd
 kd> !logonsession 0
 
 Dumping all logon sessions.

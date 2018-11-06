@@ -21,8 +21,9 @@ The **!amli ?** extension displays some Help text in the Debugger Command window
 
 Syntax
 
+```dbgcmd
     !amli ? [Command] 
-
+```
 
 ## <span id="ddk__amli__dbg"></span><span id="DDK__AMLI__DBG"></span>Parameters
 

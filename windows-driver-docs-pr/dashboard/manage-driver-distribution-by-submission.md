@@ -15,20 +15,13 @@ After you have created your hardware submissions and uploaded your driver packag
 
 -   Publish your drivers to Windows Update
 
-<!-- -->
-
 -   Share your drivers with partners
-
-<!-- -->
 
 -   Publish drivers that are shared with you
 
-<!-- -->
-
 -   Publish drivers on behalf of your partners
 
-## <span id="in_this_section"></span>In this section
-
+## In this section
 
 -   [Publishing restrictions](publishing-restrictions.md)
 -   [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md)
@@ -38,10 +31,6 @@ After you have created your hardware submissions and uploaded your driver packag
 -   [Using Computer Hardware IDs (CHIDs)](using-chids.md)
 -   [Publishing for test distribution](publishing-for-test-distribution.md)
 
-## <span id="related_topics"></span>Related topics
-
-
-- [Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374)
 
  
 

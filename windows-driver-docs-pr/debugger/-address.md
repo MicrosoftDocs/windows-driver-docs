@@ -21,18 +21,19 @@ The **!address** extension displays information about the memory that the target
 
 User-Mode
 
-
-    !address Address
-    !address -summary 
-    !address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
-    !address -? | -help
-
+```dbgcmd
+!address Address
+!address -summary 
+!address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
+!address -? | -help
+```
 
 Kernel-Mode
 
-    !address Address 
-    !address
-
+```dbgcmd
+!address Address 
+!address
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
