@@ -4,6 +4,7 @@ description: Use this method in the Microsoft Hardware API to create a new hardw
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
+ms.topic: article
 ms.localizationpriority: medium
 ---
 

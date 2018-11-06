@@ -3,6 +3,7 @@ title:
 description: 
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---

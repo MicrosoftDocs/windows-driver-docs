@@ -2,6 +2,8 @@
 title: Windows Certified Products List
 description: Windows Certified Products List
 ms.assetid: e03b18e3-5c5c-4636-89dc-ab15ae6b25a0
+author: EliotSeattle
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
