@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CLOSE
 
 
-Every driver must handle close requests in a [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255) routine, with the possible exception of a driver whose device cannot be disabled or removed from the machine without bringing down the system. A disk driver whose device holds the system page file is an example of such a driver. Note that the driver of such a device also cannot be unloaded dynamically.
+Every driver must handle close requests in a [*DispatchClose*](separate-dispatchcreate-and-dispatchclose-routines.md) routine, with the possible exception of a driver whose device cannot be disabled or removed from the machine without bringing down the system. A disk driver whose device holds the system page file is an example of such a driver. Note that the driver of such a device also cannot be unloaded dynamically.
 
 When Sent
 ---------
@@ -56,8 +56,7 @@ Requirements
 
 ## See also
 
-
-[*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255)
+[*DispatchClose*](separate-dispatchcreate-and-dispatchclose-routines.md)
 
 [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md)
 
