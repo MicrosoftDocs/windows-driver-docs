@@ -42,3 +42,4 @@ Starting with version 1709, Windows 10 Desktop (Pro and S editions) can run on m
 
 * [Debugging ARM64](../debugger/debugging-arm64.md)
 * [Windows 10 on ARM](https://docs.microsoft.com/windows/uwp/porting/apps-on-arm)
+* [HLK ARM64 Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/hlk-arm64-getting-started-guide)

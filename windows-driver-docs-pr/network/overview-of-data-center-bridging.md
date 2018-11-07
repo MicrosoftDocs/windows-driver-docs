@@ -18,7 +18,7 @@ PFC is specified in the IEEE 802.1Qbb draft standard. This standard is part of t
 
 PFC supports the reliable delivery of data by substantially reducing packet loss due to congestion. This allows loss-sensitive protocols, such as FCoE, to coexist with traditional loss-insensitive protocols over the same unified fabric.
 
-PFC specifies a link-level flow control mechanism between directlyconnected peers. PFC is similar to IEEE 802.3 PAUSE frames but operates on individual 802.1p priority levels instead. This allows a receiver to pause a transmitter on any priority level.
+PFC specifies a link-level flow control mechanism between directly connected peers. PFC is similar to IEEE 802.3 PAUSE frames but operates on individual 802.1p priority levels instead. This allows a receiver to pause a transmitter on any priority level.
 
 For more information on PFC, see [Priority-based Flow Control (PFC)](priority-based-flow-control--pfc.md).
 
