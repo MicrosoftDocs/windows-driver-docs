@@ -1,29 +1,31 @@
-Windows 10 - UVC Camera Implementation Guide
+---
+title: Windows 10 UVC camera implementation guide
+description: Outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
+ms.date: 11/07/2018
+ms.localizationpriority: medium
+---
 
-Windows USB Video Class driver
-==============================
+# Windows 10 UVC camera implementation guide
 
-Windows 10 provides an inbox driver for devices compliant with USB Video Class Specification (versions 1.0 to 1.5). This driver supports color and sensor type cameras. This document outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
+Windows 10 provides an inbox USB Video Class (UVC) driver for devices compliant with USB Video Class Specification (versions 1.0 to 1.5). This driver supports color and sensor type cameras. This document outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
 
-Glossary
-========
+## Glossary
 
 | Keyword              | Description                                                        |
 |----------------------|--------------------------------------------------------------------|
 | UVC                  | USB Video Class                                                    |
 | UVC driver           | USBVideo.sys driver that ships with the OS                         |
 | IR                   | Infra-Red                                                          |
-| Color Camera         | The camera that outputs color streams. E.g. RGB or YUV camera      |
-| Sensor Camera        | The camera that outputs non-color streams. E.g. IR or Depth camera |
+| Color Camera         | The camera that outputs color streams. For example, RGB or YUV camera      |
+| Sensor Camera        | The camera that outputs non-color streams. For example, IR or Depth camera |
 | BOS                  | Binary Device Object Store                                         |
 | MS OS 2.0 Descriptor | Microsoft platform specific BOS device capability descriptor       |
 
-Sensor Cameras 
-===============
+## Sensor Cameras 
 
 Windows supports two categories of cameras. One is a color camera and the other one is non-color (a.k.a sensor cameras) category. RGB or YUV cameras are categorized as color cameras and non-color cameras like gray scale, IR and Depth cameras are categorized as sensor cameras. The UVC driver supports both types of cameras. We recommend the camera firmware specify a value based on which the UVC driver would register the camera under one or both supported categories.
 
-A camera that supports color only format types should be registered under KSCATEGORY\_VIDEO\_CAMERA. A camera that supports IR or Depth only format types should be registered under KSCATEGOYR\_SENSOR\_CAMERA. A camera that supports both color and non-color format types should be registered under KSCATEGORY\_VIDEO\_CAMERA and KSCATEOGYR\_SENSOR\_CAMERA. This categorization helps applications to select the camera that they want to work with.
+A camera that supports color only format types should be registered under KSCATEGORY\_VIDEO\_CAMERA. A camera that supports IR or Depth only format types should be registered under KSCATEGORY\_SENSOR\_CAMERA. A camera that supports both color and non-color format types should be registered under KSCATEGORY\_VIDEO\_CAMERA and KSCATEGORY\_SENSOR\_CAMERA. This categorization helps applications to select the camera that they want to work with.
 
 A UVC camera can specify its category preference through attributes, “*SensorCameraMode*” and *“SkipCameraEnumeration”*, in its BOS [MS OS 2.0 Descriptor](https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx) detailed in following sections.
 
@@ -65,8 +67,7 @@ SkipCameraEnumeration: REG\_DWORD: 1 // make it available only for IR applicatio
 
 *If the SensorCameraMode and SkipCameraEnumeration attributes are not specified in the firmware or in the INF then, the camera will be registered as a color camera and will be visible only to color camera aware applications. *
 
-IR stream 
-==========
+## IR stream 
 
 Windows inbox USB Video Class driver supports cameras that capture the scene in YUV format and transmit the pixel data over USB as uncompressed YUV or as compressed MJPEG frames. Following are the format type GUIDs that should be specified in the stream’s video format descriptor:
 
@@ -90,7 +91,7 @@ When these format type GUIDs are specified in the guidFormat field of the frame 
 
 *Note: A stream exposing IR format types shall not expose RGB or Depth format types. *
 
-// e.g. Format Descriptor for UVC 1.1 frame based format
+// Example Format Descriptor for UVC 1.1 frame based format
 
 typedef struct \_VIDEO\_FORMAT\_FRAME
 
@@ -126,10 +127,9 @@ UCHAR bVariableSize;
 
 *Note: IR streams would show up as regular capture stream in DShow. *
 
-Depth stream
-============
+## Depth stream
 
-Windows inbox USB Video Class driver supports cameras that produce Depth streams. These cameras capture the depth information (e.g. time of flight) of the scene and transmit the depth map as uncompressed YUV frames over USB. Following are the format type GUIDs that should be specified in the stream’s video format descriptor:
+Windows inbox USB Video Class driver supports cameras that produce Depth streams. These cameras capture the depth information (For example, time of flight) of the scene and transmit the depth map as uncompressed YUV frames over USB. Following are the format type GUIDs that should be specified in the stream’s video format descriptor:
 
 Defined in, ddk header file ksmedia.h
 
@@ -143,7 +143,7 @@ When the format type GUID is specified in the guidFormat member of the frame des
 
 *Note: A stream exposing Depth format types shall not expose RGB or IR format types.*
 
-// e.g. Format Descriptor for UVC 1.1 frame based format
+// Example Format Descriptor for UVC 1.1 frame based format
 
 typedef struct \_VIDEO\_FORMAT\_FRAME
 
@@ -179,8 +179,7 @@ UCHAR bVariableSize;
 
 *Note: Depth streams would show up as regular capture stream in DShow. *
 
-Grouping cameras
-================
+## Grouping cameras
 
 Windows supports grouping of cameras based on their container ID to aid applications work with related cameras. For example, an IR camera and a Color camera present on the same physical device can be exposed to the OS as related cameras. This will make applications like Windows Hello to make use of the related cameras for their scenarios.
 
@@ -234,8 +233,7 @@ FSSensorGroupName: REG\_SZ: “your sensor group friendly name”
 
 *Note: Sensor Groups are not supported in DShow capture pipeline.*
 
-Method 2 or Method 3 Still Capture support
-==========================================
+## Method 2 or Method 3 Still Capture support
 
 UVC specification does provide a mechanism to specify if the video streaming interface supports Method 1/2/3 type still image capture. To make the OS take advantage of the device’s Method 2/3 still image capture support, through UVC driver, the device firmware could specify a value in the BOS descriptor.
 
@@ -279,8 +277,7 @@ EnableDependentStillPinCapture: REG\_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 >
 > *HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001*
 
-Device MFT Chaining
-===================
+## Device MFT Chaining
 
 Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to RS2, camera pipeline supported only one DMFT extension plugin. Starting from RS2, Windows camera pipeline supports an optional chain of DMFTs with maximum of three DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
 
@@ -300,8 +297,7 @@ Requirements on DMFTs:
 
 -   On 64-bit systems that don’t make use of Frame Server, both 32-bit and 64-bit DMFTs shall be registered. Given that a USB camera might get plugged into an arbitrary system, for “external” (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
 
-Configuring DMFT chain
-======================
+## Configuring DMFT chain
 
 > A camera device can optionally supply a DMFT COM object in a dll using a custom INF file that uses sections of the in-box USBVideo.INF. In the custom .INF file’s “Interface AddReg” section, specify the DMFT CLSIDs by adding following registry entry:
 
@@ -355,8 +351,7 @@ Configuring DMFT chain
 >
 > *HKR,,CameraDeviceMftCLSIDChain, 0x00010000,%Dmft0.CLSID%,%Dmft1.CLSID%*
 
-Platform Device MFT
-===================
+## Platform Device MFT
 
 Starting in RS2, Windows provides an in-box Device MFT for UVC cameras known as Platform DMFT (PDMFT) on an opt-in basis. This DMFT allows IHVs and OEMs to take advantage of Windows provided post processing algorithms.
 
@@ -410,8 +405,7 @@ EnablePlatformDmft: REG\_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 >
 > *In RS2 if a device opts in to use PDMFT then all features that are supported by the PDMFT are enabled (based on the device capabilities). Granular configuration of PDMFT features is not supported.*
 
-BOS and MS OS 2.0 descriptor
-============================
+## BOS and MS OS 2.0 descriptor
 
 UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware. Please refer the documentation on [MS OS 2.0 descriptor](https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx) to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS. When a valid MS OS 2.0 descriptor is specified in the firmware, the USB stack copies the configuration values into the device HW registry key show below:
 
@@ -423,8 +417,7 @@ Configuring UVC devices through platform BOS descriptor is a mechanism we enable
 
 Configuring UVC devices through custom INF is still supported and that takes precedence over BOS descriptor based mechanism. While specifying device properties through INF, you don’t need to add the prefix “UVC-“. This prefix is only needed for device properties that are specified through BOS descriptor and that are per interface instance specific. If your device needs user mode plugins like DMFT then you do need to supply an INF for installing the DMFT. It cannot be configured using firmware.
 
-Currently supported configuration values through BOS descriptor:\\
-==================================================================
+## Currently supported configuration values through BOS descriptor:\\
 
 | Configuration Name                     | Type       | Description                                     |
 |----------------------------------------|------------|-------------------------------------------------|
@@ -444,8 +437,7 @@ Note:
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\{e5323777-f976-4f5b-9b55-b94699c46e44}\\&lt;Device Symbolic Link&gt;\\Device Parameters
 *For the OS to make use of the BOS Platform Device Capability and MS OS2.0 descriptors the device descriptor shall specify the bcdUSB version to be 0x0210 or greater.*
 
-Appendix A
-==========
+## Appendix A
 
 This section gives an example BOS descriptor and a MS OS2.0 Descriptor for an imaginary composite device with two camera functions. One function is a UVC color camera and the second function is a UVC IR camera. The sample descriptors
 
@@ -499,7 +491,7 @@ USB\_DEVICE\_CAPABILITY\_PLATFORM, // bDevCapabilityType PLATFORM
 
 0xC8, 0x02, // wLength 0x2C8 (712)
 
-0x01, // bMS\_VendorCode - any value. e.g. 0x01
+0x01, // bMS\_VendorCode - any value. For example, 0x01
 
 0x00 // bAltEnumCmd 0
 
