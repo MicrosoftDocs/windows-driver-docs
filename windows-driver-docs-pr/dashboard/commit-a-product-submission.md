@@ -4,6 +4,7 @@ description: Use this method in the Microsoft Hardware API to commit a new submi
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
+ms.topic: article
 ms.localizationpriority: medium
 ---
 

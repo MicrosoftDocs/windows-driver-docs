@@ -67,7 +67,7 @@ If you do not use the UMDF-USB target, the driver should stop sending pending re
 
 ### <span id="selective_suspend"></span><span id="SELECTIVE_SUSPEND"></span>Selective Suspend
 
-A WBDI driver should support [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144).
+A WBDI driver should support [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
 A device that supports system wake and device idle should enable the registry settings for selective suspend in WinUsb, as shown in this code example from WudfBioUsbSample.inx:
 
