@@ -460,29 +460,6 @@
           href: installing-custom-sapos.md
         - name: "Troubleshooting sAPO Load Failures"
           href: troubleshooting-sapo-load-failures.md
-        - name: "Windows Vista Default sAPOs"
-          href: windows-vista-default-sapos.md
-          items: 
-          - name: "Bass Boost"
-            href: bass-boost.md
-          - name: "Bass Management"
-            href: bass-management.md
-          - name: "Enhanced Sound for Laptop Computers"
-            href: enhanced-sound-for-laptop-computers.md
-          - name: "Loudness Equalization DSP"
-            href: loudness-equalization-dsp.md
-          - name: "Low Frequency Protection"
-            href: low-frequency-protection.md
-          - name: "Room Correction"
-            href: room-correction.md
-          - name: "Speaker Fill"
-            href: speaker-fill.md
-          - name: "Speaker Phantoming"
-            href: speaker-phantoming.md
-          - name: "Virtual Surround"
-            href: virtual-surround.md
-          - name: "Virtualized Surround Sound over Headphones"
-            href: virtualized-surround-sound-over-headphones.md
         - name: "Windows Vista sAPO Feature Reference"
           href: windows-vista-sapo-feature-reference.md
 - name: "Windows Audio Processing Objects"
@@ -496,6 +473,29 @@
     href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
+  - name: "Windows Default APOs"
+    href: windows-vista-default-sapos.md
+    items: 
+    - name: "Bass Boost"
+      href: bass-boost.md
+    - name: "Bass Management"
+      href: bass-management.md
+    - name: "Enhanced Sound for Laptop Computers"
+      href: enhanced-sound-for-laptop-computers.md
+    - name: "Loudness Equalization DSP"
+      href: loudness-equalization-dsp.md
+    - name: "Low Frequency Protection"
+      href: low-frequency-protection.md
+    - name: "Room Correction"
+      href: room-correction.md
+    - name: "Speaker Fill"
+      href: speaker-fill.md
+    - name: "Speaker Phantoming"
+      href: speaker-phantoming.md
+    - name: "Virtual Surround"
+      href: virtual-surround.md
+    - name: "Virtualized Surround Sound over Headphones"
+      href: virtualized-surround-sound-over-headphones.md
 - name: "Audio Miniport Drivers"
   href: audio-miniport-drivers.md
   items: 
