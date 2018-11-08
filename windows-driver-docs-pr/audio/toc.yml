@@ -387,13 +387,13 @@
       href: wavepci-latency.md
     - name: "Avoiding Data Copying"
       href: avoiding-data-copying.md
-- name: "Exploring the Windows Vista Audio Engine"
-  href: exploring-the-windows-vista-audio-engine.md
-  items: 
-  - name: "Format Negotiation"
-  href: format-negotiation.md
-  - name: "Dynamic Format Change"
-  href: dynamic-format-change.md
+  - name: "Exploring the Windows Vista Audio Engine"
+    href: exploring-the-windows-vista-audio-engine.md
+    items: 
+    - name: "Format Negotiation"
+    href: format-negotiation.md
+    - name: "Dynamic Format Change"
+    href: dynamic-format-change.md
 - name: "Windows Audio Processing Objects"
   href: windows-audio-processing-objects.md
   items: 
