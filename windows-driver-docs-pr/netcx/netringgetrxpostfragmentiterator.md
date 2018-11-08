@@ -30,7 +30,11 @@ A pointer to the **NET_RING_COLLECTION** struture that describes the receive que
 
 ## Return Value
 
-Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that begins at the fragment ring's **NextIndex** and ends at the fragment ring's **EndIndex**. In other words, the iterator covers the fragment ring's current post section. Client drivers typically call this method to begin the process of posting fragments to hardware.
+Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that begins at the fragment ring's **NextIndex** and ends at the fragment ring's **EndIndex**. In other words, the iterator covers the fragment ring's current post section. 
+
+## Remarks
+
+Client drivers typically call this method to begin the process of posting fragments to hardware.
 
 For an animation and code example of posting fragments to hardware, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 

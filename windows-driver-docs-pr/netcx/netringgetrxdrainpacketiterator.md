@@ -1,10 +1,10 @@
 ---
 title: NetRingGetRxDrainPacketIterator function
-description: 
+description: The NetRingGetRxDrainPacketIterator method gets a packet iterator for the current drain section of a receive queue's packet ring.
 ms.assetid: 121A80A2-7FCC-453E-93C6-D66B7AA70C1F
 keywords:
 - NetAdapterCx NetRingGetRxDrainPacketIterator, NetCx NetRingGetRxDrainPacketIterator
-ms.date: 10/30/2018
+ms.date: 11/08/2018
 ms.localizationpriority: medium
 ---
 
@@ -12,21 +12,31 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Description
+The **NetRingGetRxDrainPacketIterator** method gets a packet iterator for the current drain section of a receive queue's packet ring.
 
 ## Syntax
 
 ```cpp
-
+NET_RING_PACKET_ITERATOR NetRingGetRxDrainPacketIterator(
+    NET_RING_COLLECTION const * Rings
+);
 ```
 
 ## Parameters
 
-Param
+`Rings`
+
+A pointer to the **NET_RING_COLLECTION** struture that describes the receive queue's net rings.
 
 ## Return Value
 
-Returns 
+Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begins at the packet ring's **BeginIndex** and ends at the packet ring's **EndIndex**. In other words, the iterator covers the packet ring's current drain section. 
+
+## Remarks
+
+Client drivers typically call this method to begin the process of draining packets from the ring to the OS. 
+
+For an animation and code example of draining packets from the ring back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
 ## Remarks
 
@@ -40,4 +50,10 @@ Remark
 | Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
+## See Also
+
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+
+[**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
+
+**NET_RING_COLLECTION**

@@ -30,7 +30,11 @@ A pointer to the **NET_RING_COLLECTION** struture that describes the receive que
 
 ## Return Value
 
-Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that begins at the fragment ring's **BeginIndex** and ends at the fragment ring's **NextIndex**. In other words, the iterator covers the fragment ring's current drain section. Client drivers typically call this method to begin the process of draining fragments from the ring to the OS.
+Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that begins at the fragment ring's **BeginIndex** and ends at the fragment ring's **NextIndex**. In other words, the iterator covers the fragment ring's current drain section. 
+
+## Remarks
+
+Client drivers typically call this method to begin the process of draining fragments from the ring to the OS.
 
 For an animation and code example of draining fragments from the ring back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
