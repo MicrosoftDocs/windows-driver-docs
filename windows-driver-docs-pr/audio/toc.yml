@@ -387,25 +387,13 @@
       href: wavepci-latency.md
     - name: "Avoiding Data Copying"
       href: avoiding-data-copying.md
-  - name: "Windows Vista Audio System Effects"
-    href: windows-vista-audio-system-effects.md
-    items: 
-    - name: "Audio System Effects"
-      href: audio-system-effects.md
-      items: 
-    - name: "System Effects Audio Processing Objects"
-      href: system-effects-audio-processing-objects.md
-      items: 
-      - name: "sAPOs and the Windows Vista Audio Architecture"
-        href: sapos-and-the-windows-vista-audio-architecture.md
-        items: 
-        - name: "Exploring the Windows Vista Audio Engine"
-          href: exploring-the-windows-vista-audio-engine.md
-          items: 
-          - name: "Format Negotiation"
-            href: format-negotiation.md
-          - name: "Dynamic Format Change"
-            href: dynamic-format-change.md
+- name: "Exploring the Windows Vista Audio Engine"
+  href: exploring-the-windows-vista-audio-engine.md
+  items: 
+  - name: "Format Negotiation"
+  href: format-negotiation.md
+  - name: "Dynamic Format Change"
+  href: dynamic-format-change.md
 - name: "Windows Audio Processing Objects"
   href: windows-audio-processing-objects.md
   items: 

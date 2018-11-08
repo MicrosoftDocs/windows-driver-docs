@@ -76,10 +76,6 @@ The type of miniport driver that you develop is determined by your target Window
 
 Each port driver implements an interface, which it presents to the miniport driver. To communicate with the port driver, the miniport driver must also implement an interface. For more information about the interfaces that are implemented by the miniport drivers, see [Miniport Interfaces](miniport-interfaces.md).
 
-**Note**   In Windows Vista, audio stream processing for system effects is not provided by the audio driver. Audio stream processing is provided by user mode components called [system effects audio processing objects](system-effects-audio-processing-objects.md) (sAPOS).
-
- 
-
 **Note**   When you develop audio drivers for Windows Vista and later operating systems, be aware of the following:
 -   You cannot obtain a logo qualification for a WaveCyclic- or a WavePci -based audio driver.
 
