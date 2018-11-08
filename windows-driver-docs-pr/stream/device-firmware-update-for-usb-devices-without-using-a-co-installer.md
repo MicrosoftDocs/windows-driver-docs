@@ -1,11 +1,11 @@
 ---
-title: Device Firmware Update For USB devices without using a Co-Installer
+title: Device firmware update For USB devices without using a co-installer
 description: Outlines a recommend way to update USB device firmware without a co-installer.
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
-# Device Firmware Update For USB devices without using a Co-Installer
+# Device firmware update For USB devices without using a co-installer
 
 USB Device vendors use co-installers to update device firmware for devices that use inbox USB device drivers. However, co-installers are not supported by the new "Universal INF" standard, which is a requirement on Windows 10. This poses a challenge to existing USB device firmware update process. This document outlines a recommend way to update USB device firmware without a co-installer.
 
@@ -128,76 +128,78 @@ Both methods of firmware update, the device function must be stopped before perf
 
 ## Sample INF
 
+```INF
 ;==============================================================================
 ; Microsoft Extension INF for USB Camera Firmware Update UMDF Filter Driver
-; Copyright (C) Microsoft Corporation. All rights reserved.
+; Copyright (C) Microsoft Corporation.  All rights reserved.
 ;==============================================================================
 
-\[Version\]
+[Version]
 Signature="$WINDOWS NT$"
 Class=Extension
-ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57} 
 Provider=%CONTOSO%
 ExtensionId = {BC6EE554-271C-48C8-B713-8078833962BD} ; replace with your own GUID
 CatalogFile.NT = SampleExtension.cat
 DriverVer=08/28/2017,10.0.1700.000
 
-\[SourceDisksFiles\]
+[SourceDisksFiles]
 ContosoFirmwareUpdateFilterDriver.dll=1
 ContosoFirmware.bin=1
 
-\[SourceDisksNames\]
+[SourceDisksNames]
 1 = %MediaDescription%
 
-\[DestinationDirs\]
-UMDriverCopy=12,UMDF ; copy to drivers\\UMDF
-ContosoFirmwareCopy=12,ContosoFirmware ; copy to drivers\\ContosoFirmware
+[DestinationDirs]
+UMDriverCopy=12,UMDF ; copy to drivers\UMDF
+ContosoFirmwareCopy=12,ContosoFirmware ; copy to drivers\ContosoFirmware
 DefaultDestDir = 12
 
-\[UMDriverCopy\]
+[UMDriverCopy]
 ContosoFirmwareUpdateFilterDriver.dll
 
-\[ContosoFirmwareCopy\]
+[ContosoFirmwareCopy]
 ContosoFirmware.bin
 
-\[Manufacturer\]
+[Manufacturer]
 %CONTOSO% = ContosoFirmwareUpdateFilterDriver,ntamd64
 
-\[ContosoFirmwareUpdateFilterDriver.ntamd64\]
+[ContosoFirmwareUpdateFilterDriver.ntamd64]
 ; replace with your camera device VID PID
-%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver\_Install, USB\\VID\_1234&PID\_1234&REV\_1234
+%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Install, USB\VID_1234&PID_1234&REV_1234
 
-\[ContosoFirmwareUpdateFilterDriver\_Install\]
+[ContosoFirmwareUpdateFilterDriver_Install]
 CopyFiles=UMDriverCopy, ContosoFirmwareCopy
 
-\[ContosoFirmwareUpdateFilterDriver\_Install.HW\]
+[ContosoFirmwareUpdateFilterDriver_Install.HW]
 AddReg = ContosoFirmwareUpdateFilterDriver.AddReg
 
-\[ContosoFirmwareUpdateFilterDriver.AddReg\]
+[ContosoFirmwareUpdateFilterDriver.AddReg]
 ; Load the redirector as an lower filter on this specific device.
-; 0x00010008 - FLG\_ADDREG\_TYPE\_MULTI\_SZ | FLG\_ADDREG\_APPEND
-HKR,,"LowerFilters",0x00010008,"WUDFRd"
+; 0x00010008 - FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
+HKR,,"LowerFilters",0x00010008,"WUDFRd" 
 
-\[ContosoFirmwareUpdateFilterDriver\_Install.Services\]
-AddService=WUDFRd,0x000001f8,WUDFRD\_ServiceInstall
+[ContosoFirmwareUpdateFilterDriver_Install.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
 
-\[WUDFRD\_ServiceInstall\]
+[WUDFRD_ServiceInstall]
 DisplayName = %WudfRdDisplayName%
 ServiceType = 1
 StartType = 3
 ErrorControl = 1
-ServiceBinary = %12%\\WUDFRd.sys
+ServiceBinary = %12%\WUDFRd.sys
 
-\[ContosoFirmwareUpdateFilterDriver\_Install.Wdf\]
+[ContosoFirmwareUpdateFilterDriver_Install.Wdf]
 UmdfService=ContosoFirmwareUpdateFilterDriver, ContosoFirmwareUpdateFilterDriver.UmdfFilter
 UmdfServiceOrder=ContosoFirmwareUpdateFilterDriver
 
-\[ContosoFirmwareUpdateFilterDriver.UmdfFilter\]
+[ContosoFirmwareUpdateFilterDriver.UmdfFilter]
 UmdfLibraryVersion=2.0.0
-ServiceBinary= "%12%\\UMDF\\ContosoFirmwareUpdateFilterDriver.dll"
+ServiceBinary= "%12%\UMDF\ContosoFirmwareUpdateFilterDriver.dll"
 
-\[Strings\]
+[Strings]
 CONTOSO = "Contoso Inc."
 ContosoCamera.DeviceDesc = "Contoso Camera Extension"
 MediaDescription="Contoso Camera Firmware Update Filter Driver Installation Media"
 WudfRdDisplayName = "WDF Reflector Driver"
+```
