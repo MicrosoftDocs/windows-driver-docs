@@ -149,8 +149,8 @@ The following Javascript example shows how to implement a listener for network r
 function onRegistrationChanged(registrationArgs) {
     var registrationObj = JSON.parse(registrationArgs);
     if(registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home)
+       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.roaming ||
+       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.partner)
     {
         Log('Registration Successful!');
     }
