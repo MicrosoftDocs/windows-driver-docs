@@ -281,7 +281,7 @@ EnableDependentStillPinCapture: REG\_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 
 Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows. Prior to RS2, camera pipeline supported only one DMFT extension plugin. Starting from RS2, Windows camera pipeline supports an optional chain of DMFTs with maximum of three DMFTs. This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. Following figure illustrates the architecture involving a chain of DMFTs.
 
-![DMFT chain](dmft-chain.png)
+![DMFT chain](images/dmft-chain.png)
 
 Capture samples flow from camera driver to DevProxy, then go through the DMFT chains. Every DMFT in the chain has a chance to process the sample. If the DMFT doesn’t want to process the sample, it can act as a pass-through just pass the sample to next DMFT.
 
@@ -323,7 +323,7 @@ Requirements on DMFTs:
 
     -   Here is a screen shot of the result registry key for an USB camera with Platform DMFT and an DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
 
-![Registry editor DMFT chain](dmft-registry-editor.png)
+![Registry editor DMFT chain](images/dmft-registry-editor.png)
 
 -   *IHV/OEM DMFT0 &lt;-&gt; IHV/OEM DMFT1*
 
@@ -495,7 +495,7 @@ Format of the control request to retrieve MS OS 2.0 vendor-specific descriptor:
 |---------------|---------------------|--------|--------|---------|----------------------------------------|
 | 1100 0000B    | **bMS\_VendorCode** | 0x00   | 0x07   | Length  | Returned MS OS 2.0 Descriptor Set blob |
 
-**bmRequestType **
+**bmRequestType**
 
 -   Data Transfer Direction – Device to Host
 
