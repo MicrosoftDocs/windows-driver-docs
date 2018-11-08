@@ -51,7 +51,7 @@ The following table lists the topology categories that audio adapters are most l
 </tr>
 <tr class="even">
 <td align="left"><p>KSCATEGORY_DATATRANSFORM</p></td>
-<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category (for example, see [Requirements for a GFX Filter Factory](requirements-for-a-gfx-filter-factory.md)).</p></td>
+<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KSCATEGORY_MIXER</p></td>
