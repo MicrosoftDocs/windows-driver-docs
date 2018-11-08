@@ -4,7 +4,7 @@ description: System Effects Audio Processing Objects
 ms.assetid: 54ac63b4-9846-44ce-8afb-ded52ae2cd71
 keywords:
 - sAPO WDK
-ms.date: 05/20/2018
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,10 +24,6 @@ This section contains the following topics:
 [Wrapping or Replacing Windows Vista sAPOs](wrapping-or-replacing-windows-vista-sapos.md)
 
 [Installing Custom sAPOs](installing-custom-sapos.md)
-
-[Troubleshooting sAPO Load failures](troubleshooting-sapo-load-failures.md)
-
-[Windows Vista Default sAPOs](windows-vista-default-sapos.md)
 
 [Windows Vista sAPO Feature Reference](windows-vista-sapo-feature-reference.md)
 
