@@ -89,7 +89,7 @@ The **Full** setting enables full acceleration of DirectSound secondary buffers.
 
 If the user adjusts either the hardware-acceleration or SRC setting to a value other than the default, DirectSound uses the new setting instead of the default.
 
-For more information about KMixer's SRC algorithms, see [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).
+
 
  
 
