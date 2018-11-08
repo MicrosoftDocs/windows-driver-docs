@@ -406,24 +406,6 @@
             href: format-negotiation.md
           - name: "Dynamic Format Change"
             href: dynamic-format-change.md
-      - name: "Wrapping or Replacing Windows Vista sAPOs"
-        href: wrapping-or-replacing-windows-vista-sapos.md
-        items: 
-        - name: "Design Considerations for sAPO Development"
-          href: design-considerations-for-sapo-development.md
-          items: 
-          - name: "Wrapping System-supplied sAPOs"
-            href: wrapping-system-supplied-sapos.md
-          - name: "Replacing System-supplied sAPOs"
-            href: replacing-system-supplied-sapos.md
-          - name: "Implementing a UI for Configuring sAPOs"
-            href: implementing-a-ui-for-configuring-sapos.md
-          - name: "Replacing the Default Property Page"
-            href: replacing-the-default-property-page.md
-          - name: "Custom UI Design Information"
-            href: custom-ui-design-information.md
-        - name: "Installing Custom sAPOs"
-          href: installing-custom-sapos.md
 - name: "Windows Audio Processing Objects"
   href: windows-audio-processing-objects.md
   items: 
@@ -435,8 +417,6 @@
     href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
-  - name: "Troubleshooting APO Load Failures"
-    href: troubleshooting-apo-load-failures.md
   - name: "Windows Default APOs"
     href: windows-default-apos.md
     items: 

@@ -2,7 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.date: 04/20/2017
+ms.date: 11/08/2017
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +50,7 @@ If you design the custom APO using the **CBaseAudioProcessingObject** base class
 
 Microsoft supplies an enhancements property page for the Sound applet on the Control Panel. This is the default property page that is associated with the system-supplied system effects APO. Vendors can replace this default property page with a custom page by implementing and registering a custom property page provider.
 
-See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) and [Replacing the Default Property Page](replacing-the-default-property-page.md) for information about how to replace the enhancements property page.
+See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for information about how to replace the enhancements property page.
 
 To design and implement the custom property page provider, perform the following steps.
 
