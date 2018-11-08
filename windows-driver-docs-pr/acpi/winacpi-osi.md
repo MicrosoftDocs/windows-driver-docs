@@ -97,7 +97,7 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 | Windows 2017        | Windows 10, version 1703      |
 | Windows 2017.2      | Windows 10, version 1709      |
 | Windows 2018        | Windows 10, version 1803      |
-
+| Windows 2018.2      | Windows 10, version 1809      |
 
 ### Implementation Note
 
