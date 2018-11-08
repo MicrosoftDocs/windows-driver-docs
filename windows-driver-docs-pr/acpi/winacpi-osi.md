@@ -13,6 +13,7 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
+- Windows 10, version 1809
 - Windows 10, version 1803
 - Windows 10, version 1709
 - Windows 10, version 1703
