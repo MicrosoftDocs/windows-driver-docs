@@ -4,7 +4,7 @@ description: Mobile Plans asynchronous fulfillment
 ms.assetid: 56AB67D6-59A9-4483-B455-2FCC309C8903
 keywords:
 - Windows Mobile Plans asynchronous fulfillment mobile operators
-ms.date: 10/24/2018
+ms.date: 11/08/2018
 ms.localizationpriority: medium
 ---
 
