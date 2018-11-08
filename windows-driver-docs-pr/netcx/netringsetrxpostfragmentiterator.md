@@ -1,6 +1,6 @@
 ---
 title: NetRingSetRxPostFragmentIterator function
-description: 
+description: The NetRingSetRxPostFragmentIterator method advances the beginning of the post section for a receive queue's fragment ring to the current index of the ring's post fragment iterator.
 ms.assetid: DBDFD3F8-CA1F-444C-84FB-DE9DBF4FC354
 keywords:
 - NetAdapterCx NetRingSetRxPostFragmentIterator, NetCx NetRingSetRxPostFragmentIterator
@@ -12,25 +12,31 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Description
+The **NetRingSetRxPostFragmentIterator** method advances the beginning of the post section for a receive queue's fragment ring to the current index of the ring's post fragment iterator.
 
 ## Syntax
 
 ```cpp
-
+void NetRingSetRxPostFragmentIterator(
+    NET_RING_FRAGMENT_ITERATOR const * Iterator
+);
 ```
 
 ## Parameters
 
-Param
+`Iterator`
+
+A pointer to the net fragment ring's post [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that the driver previously acquired through a call to [**NetRingGetRxPostFragmentIterator**](netringgetrxpostfragmentiterator.md).
 
 ## Return Value
 
-Returns 
+None.
 
 ## Remarks
 
-Remark
+Before calling this method, a client driver typically calls [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) for each fragment it would like to program to hardware. After calling this method, the fragment ring's **NextIndex** advances to the [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)'s current position in the ring. Therefore, the fragments between the old value of **NextIndex** and the iterator's **Index - 1** inclusive are posted to hardware and are transferred to the drain section of the ring.
+
+For an animation and code example of posting fragments to hardware, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -40,4 +46,12 @@ Remark
 | Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
+## See Also
+
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+
+[**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
+
+[**NetRingGetRxPostFragmentIterator**](netringgetrxpostfragmentiterator.md)
+
+[**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md)

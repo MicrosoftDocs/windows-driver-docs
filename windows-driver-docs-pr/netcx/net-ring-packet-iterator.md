@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-A NET_RING_PACKET_ITERATOR is a wrapper around a NET_RING_ITERATOR. The NET_RING_PACKET_ITERATOR is constrained to packet rings.
+A **NET_RING_PACKET_ITERATOR** is a wrapper around a [**NET_RING_ITERATOR**](net-ring-iterator.md) that client drivers use for net packet rings.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ The [**NET_RING_ITERATOR**](net-ring-iterator.md) structure around which this st
 
 ## Remarks
 
-For working with packet rings, client drivers must use a **NET_RING_PACKET_ITERATOR** instead of using a [**NET_RING_ITERATOR**](net-ring-iterator.md) directly.
+For packet rings, client drivers must use a **NET_RING_PACKET_ITERATOR** instead of using a [**NET_RING_ITERATOR**](net-ring-iterator.md) directly.
 
 ## Requirements
 
@@ -41,8 +41,6 @@ For working with packet rings, client drivers must use a **NET_RING_PACKET_ITERA
 ## See Also
 
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
-
-[Netringiterator.h](netringiterator-h.md)
 
 [**NET_RING_ITERATOR**](net-ring-iterator.md)
 

@@ -40,4 +40,10 @@ Returns a pointer to the **NET_PACKET** structure pointed to by the **NET_RING_P
 | Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
+## See Also
+
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+
+[**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet)
+
+[**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)

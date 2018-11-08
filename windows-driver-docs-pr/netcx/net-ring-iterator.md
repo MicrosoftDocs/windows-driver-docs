@@ -40,7 +40,7 @@ The end of the range of elements covered by this iterator.
 
 ## Remarks
 
-NetAdapterCx client drivers should not use the **NET_RING_ITERATOR** structure directly. Instead, they should either use a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) or a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md), which are wrappers for the **NET_RING_ITERATOR** that are constrained to the appropriate type of **NET_RING** with which the client driver is working. These wrapper structures are either passed as parameters to, or returned by, Net Ring Iterator Interface API calls.
+NetAdapterCx client drivers should not use the **NET_RING_ITERATOR** structure directly. Instead, they should either use a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) for a packet ring or a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) for a fragment ring. These wrapper structures are used in all Net Ring Iterator Interface API calls.
 
 ## Requirements
 
@@ -51,8 +51,6 @@ NetAdapterCx client drivers should not use the **NET_RING_ITERATOR** structure d
 ## See Also
 
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
-
-[Netringiterator.h](netringiterator-h.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 

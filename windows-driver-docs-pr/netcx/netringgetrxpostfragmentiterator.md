@@ -1,6 +1,6 @@
 ---
 title: NetRingGetRxPostFragmentIterator function
-description: 
+description: The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current post section of a receive queue's fragment ring.
 ms.assetid: 81CD9EB1-B1EE-4170-B4DD-89A8C80881A3
 keywords:
 - NetAdapterCx NetRingGetRxPostFragmentIterator, NetCx NetRingGetRxPostFragmentIterator
@@ -12,25 +12,27 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Description
+The **NetRingGetRxPostFragmentIterator** method gets a fragment iterator for the current post section of a receive queue's fragment ring.
 
 ## Syntax
 
 ```cpp
-
+NET_RING_FRAGMENT_ITERATOR NetRingGetRxPostFragmentIterator(
+    NET_RING_COLLECTION const * Rings
+);
 ```
 
 ## Parameters
 
-Param
+`Rings`
+
+A pointer to the **NET_RING_COLLECTION** struture that describes the receive queue's net rings.
 
 ## Return Value
 
-Returns 
+Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that begins at the fragment ring's **NextIndex** and ends at the fragment ring's **EndIndex**. In other words, the iterator covers the fragment ring's current post section. Client drivers typically call this method to begin the process of posting fragments to hardware.
 
-## Remarks
-
-Remark
+For an animation and code example of posting fragments to hardware, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -40,4 +42,10 @@ Remark
 | Header | netringiterator.h |
 | IRQL | PASSIVE_LEVEL |
 
+## See Also
+
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+
+[**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
+
+**NET_RING_COLLECTION**

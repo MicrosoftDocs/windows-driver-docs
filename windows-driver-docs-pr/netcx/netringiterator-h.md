@@ -24,10 +24,10 @@ Netringiterator.h contains the following programming interfaces:
 | --- | --- |
 | [NetRingIteratorGetFragment](netringiteratorgetfragment.md) | The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure pointed to by a NET_RING_FRAGMENT_ITERATOR. |
 | [NetRingIteratorGetPacket](netringiteratorgetpacket.md) | The NetRingIteratorGetPacket method gets the NET_PACKET structure pointed to by a NET_RING_PACKET_ITERATOR. |
-| [NetRingGetRxPostFragmentIterator](netringgetrxpostfragmentiterator.md) | x |
-| [NetRingSetRxPostFragmentIterator](netringsetrxpostfragmentiterator.md) | x |
-| [NetRingGetRxDrainFragmentIterator](netringgetrxdrainfragmentiterator.md) | x |
-| [NetRingSetRxDrainFragmentIterator](netringsetrxdrainfragmentiterator.md) | x |
+| [NetRingGetRxPostFragmentIterator](netringgetrxpostfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current post section of a receive queue's fragment ring. |
+| [NetRingSetRxPostFragmentIterator](netringsetrxpostfragmentiterator.md) | The NetRingSetRxPostFragmentIterator method advances the beginning of the post section for a receive queue's net fragment ring to the current index of the ring's post fragment iterator. |
+| [NetRingGetRxDrainFragmentIterator](netringgetrxdrainfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current drain section of a receive queue's fragment ring. |
+| [NetRingSetRxDrainFragmentIterator](netringsetrxdrainfragmentiterator.md) | The NetRingSetRxDrainFragmentIterator method advances the beginning of the drain section for a receive queue's fragment ring to the current index of the ring's drain fragment iterator. |
 | [NetRingGetRxDrainPacketIterator](netringgetrxdrainpacketiterator.md) | x |
 | [NetRingSetRxDrainPacketIterator](netringsetrxdrainpacketiterator.md) | x |
 | [NetRingGetTxPostPacketIterator](netringgettxpostpacketiterator.md) | x |
