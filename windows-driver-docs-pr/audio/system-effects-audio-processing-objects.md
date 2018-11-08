@@ -25,12 +25,3 @@ This section contains the following topics:
 
 [Installing Custom sAPOs](installing-custom-sapos.md)
 
-[Windows Vista sAPO Feature Reference](windows-vista-sapo-feature-reference.md)
-
- 
-
- 
-
-
-
-

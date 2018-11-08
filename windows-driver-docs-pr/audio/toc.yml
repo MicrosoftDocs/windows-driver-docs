@@ -458,8 +458,6 @@
             href: custom-ui-design-information.md
         - name: "Installing Custom sAPOs"
           href: installing-custom-sapos.md
-        - name: "Windows Vista sAPO Feature Reference"
-          href: windows-vista-sapo-feature-reference.md
 - name: "Windows Audio Processing Objects"
   href: windows-audio-processing-objects.md
   items: 

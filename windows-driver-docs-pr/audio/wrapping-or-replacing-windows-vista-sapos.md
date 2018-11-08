@@ -24,7 +24,7 @@ You can do any of the following:
 
 -   Option 3: Develop your own audio driver together with a complete set of custom sAPOs.
 
-Be aware that if you develop your own sAPOs, your sAPOs must match the set that is provided by default with Windows Vista before you add any new ones. For the list of system-supplied sAPOs, see the [Windows Vista Default sAPOs](windows-vista-default-sapos.md) topic.
+Be aware that if you develop your own sAPOs, your sAPOs must match the set that is provided by default with Windows Vista before you add any new ones. For the list of system-supplied sAPOs, see the [Windows Default APOs](windows-default-apos.md) topic.
 
 In Option 1, you develop your own audio driver but develop custom sAPOs to wrap the system-supplied sAPOs. So you must provide an INF file that installs your audio driver and calls the standard Windows Vista INF file to load the system-supplied sAPOs. After you develop your audio driver, you must perform the following steps to implement your custom sAPOs.
 

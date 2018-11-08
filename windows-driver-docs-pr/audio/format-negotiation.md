@@ -17,7 +17,7 @@ To initiate format negotiation, the audio service first sets the output of the L
 
 After a data format is selected to process the audio data, the audio processing graph builder calls the **IAudioProcessingObjectConfiguration::LockForProcess** method of the sAPOs, causing the format selection to be finalized.
 
-If the Windows Vista sAPO returns an error to the wrapping custom sAPO in response to a call to the **LockForProcess** method, the custom sAPO must handle the error the same way it handles an error from **CoCreateInstance** when an attempt to instantiate an sAPO fails. See the [Spkrfill sample](windows-vista-sapo-feature-reference.md) and refer to the Spkrfill.cpp file for details about how to overwrite the system-supplied LockForProcess method.
+If the Windows Vista sAPO returns an error to the wrapping custom sAPO in response to a call to the **LockForProcess** method, the custom sAPO must handle the error the same way it handles an error from **CoCreateInstance** when an attempt to instantiate an sAPO fails. Refer to the Spkrfill.cpp file for details about how to overwrite the system-supplied LockForProcess method.
 
 Because of the way that the audio service operates, the LFX and GFX sAPOs must be able to respond independently of each other to queries from the audio service regarding data formats.
 
