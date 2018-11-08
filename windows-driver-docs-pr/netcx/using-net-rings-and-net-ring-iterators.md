@@ -26,7 +26,7 @@ Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequen
 
 ## NET_RING post and drain operations
 
-Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**. Manipulating these indices during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and NIC hardware.
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**. Manipulating these indices during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
 
 > [!NOTE] 
 > This section describes the **NET_RING** indices and their underlying post and drain concepts for transferring network data. To perform operations on a **NET_RING**, client drivers call into the Net Ring Iterator Interface, described in the [next section](#net-ring-iterator-interface-overview).
@@ -47,11 +47,12 @@ Elements with index values between **NextIndex** and **EndIndex - 1** inclusive 
 
 After the hardware transmits or receives data, the client advances **BeginIndex**, transferring ownership of the packets and their fragments back to NetAdapterCx.
 
-The following animation illustrates the post and drain operations for a **NET_RING** during transmit (Tx). Note that each packet has one or more fragments during transmit.
+The following animations illustrate the post and drain operations for a **NET_RING**. The first shows posting and draining during transmit (Tx) operations, and the second shows posting and draining during receive (Rx) operations. Note that each packet has one or more fragments during transmit, but each packet has exactly one fragment during receive. Most NICs are configured this way, although some advanced NICs are capable of receiving more than one fragment per packet.
+
+> [!NOTE]
+> In these animations, the packets owned by the client driver are highlighted in light blue and dark blue, and fragments owned by the client driver are highlighted in yellow and orange. The lighter colors represent the *drain* subsection of the elements the driver owns, while the darker colors represent the *post* subsection of the elements the driver owns.
 
 ![Net ring post and drain operations for transmit (Tx)](images/net_ring_post_and_drain_operations_tx.gif "Net ring post and drain operations for transmit (Tx)")
-
-The following animation illustrates post and drain operations for a **NET_RING** during receive (Rx). Note that, unlike in the transmit animation, each packet corresponds to one fragment. This is typical for most (but not all) NICs. 
 
 ![Net ring post and drain operations for receive (Rx)](images/net_ring_post_and_drain_operations_rx.gif "Net ring post and drain operations for receive (Rx)")
 
