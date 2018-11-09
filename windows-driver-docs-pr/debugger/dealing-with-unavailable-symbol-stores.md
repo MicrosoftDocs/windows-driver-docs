@@ -19,7 +19,7 @@ If one of the symbol stores that SymSrv is configured to obtain files from is do
 
 2.  Add the values **trigger**, **count**, and **blackout** to this section.
 
-**Trigger** indicates the amount of time in minutes to watch for timeouts. **Count** indicates the number of timeouts to look for during the **trigger** period. **Blackout** indicates the length of time in minutes to disable the store after the threshhold is reached.
+**Trigger** indicates the amount of time in minutes to watch for timeouts. **Count** indicates the number of timeouts to look for during the **trigger** period. **Blackout** indicates the length of time in minutes to disable the store after the threshold is reached.
 
 For example, we recommend the following settings:
 
