@@ -36,7 +36,7 @@ None.
 
 Client drivers call **NetRingSetTxDrainFragmentIterator** to complete the process of draining a packet's transmitted fragments to the OS.
 
-After calling **NetRingSetTxDrainFragmentIterator**, the fragment ring's **NextIndex** advances to the [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)'s current position in the ring. Therefore, the fragments between the old value of **NextIndex** and the iterator's **Index - 1** inclusive are drained from the ring and ownership of them is transferred to the OS. This is how client drivers return completed transmit buffers.
+After calling **NetRingSetTxDrainFragmentIterator**, the fragment ring's **BeginIndex** advances to the [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)'s current position in the ring. Therefore, the fragments between the old value of **BeginIndex** and the iterator's **Index - 1** inclusive are drained from the ring and ownership of them is transferred to the OS. This is how client drivers return completed transmit buffers.
 
 For an animation and code example of draining transmitted fragments to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
