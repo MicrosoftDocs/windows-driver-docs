@@ -68,7 +68,7 @@ The target for this set-only property request is a GFX filter that is configured
 
 To determine the size of the buffer needed to hold the property value, see [Basic Support Queries for Audio Properties](https://msdn.microsoft.com/library/windows/hardware/ff536225).
 
-For additional information about GFX filters and device IDs, see [GFX Filters](https://msdn.microsoft.com/library/windows/hardware/ff536403) and [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
+For additional information about device IDs, see [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
 
 Requirements
 ------------

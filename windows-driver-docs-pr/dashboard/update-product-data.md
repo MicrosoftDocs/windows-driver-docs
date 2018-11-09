@@ -3,6 +3,7 @@ title: Update product data
 description: This method, in the Microsoft Hardware API, updates details of a product.
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---

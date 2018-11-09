@@ -87,8 +87,6 @@ The KMixer system driver (Kmixer.sys) is the KS filter that does the following:
 
 -   High-quality format conversion
 
--   Mixing and sample-rate conversion (See [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).)
-
 -   Bit-depth conversion
 
 -   Speaker configuration and channel mapping

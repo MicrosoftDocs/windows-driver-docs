@@ -3,7 +3,8 @@ author: mcleanbyron
 ms.assetid: E64030CA-EC00-4113-9939-26D5688C61BC
 description: Use this method in the Microsoft Store analytics API to download the CAB file for a hardware error. This method is intended only for OEMs.
 title: Download the CAB file for an OEM hardware error
-ms.author: mcleans
+author: EliotSeattle
+ms.topic: article
 ms.date: 03/17/2017
 keywords: windows 10, uwp, Microsoft Store analytics API, download CAB
 ms.localizationpriority: medium

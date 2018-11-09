@@ -6301,6 +6301,86 @@
       "source_path": "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
       "redirect_URL": "/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/drm-requirements-for-gfx-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/gfx-data-format-requirements.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/gfx-filters.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/how-kmixer-handles-set-format-requests.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/installing-a-device-specific-gfx-filter.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/kmixer-behavior.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/kmixer-driver-sample-rate-conversion-and-mixing-policy.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/kmixer-latency.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/kmixer-volume-and-mute-controls.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/persistence-of-gfx-settings.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/policy-for-mixing-audio-streams-and-setting-the-output-sample-rate.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/policy-for-sample-rate-conversion-of-audio-streams.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/requirements-for-a-gfx-filter-factory.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/target-device-id.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/types-of-sample-rate-conversion.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/vendor-s-gfx-user-interface.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/index",
+      "redirect_document_id": false
     }
   ]
 }

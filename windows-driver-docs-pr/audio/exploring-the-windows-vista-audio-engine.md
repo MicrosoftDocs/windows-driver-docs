@@ -2,7 +2,7 @@
 title: Exploring the Windows Vista Audio Engine
 description: Exploring the Windows Vista Audio Engine
 ms.assetid: 6301f6d7-57f5-4b9f-9567-57efb9dc58f3
-ms.date: 04/20/2017
+ms.date: 11/05/2018
 ms.localizationpriority: medium
 ---
 
@@ -20,10 +20,6 @@ As the diagram shows, system-supplied APOs and sAPOs are the basic building bloc
 -   Stream pipes are made up of APOs and sAPOs that perform digital audio processing that is local to the stream from a single application. The sAPO in this type of pipe is referred to as local effects sAPO (LFX sAPO).
 
 -   Device pipes are made up of APOs and sAPOs that perform digital audio processing that affects all the streams globally. The sAPO in this type of pipe is called a global effects sAPO (GFX sAPO).
-
-Be aware that a GFX sAPO is not the same as a [GFX Filter](gfx-filters.md). A GFX sAPO is an sAPO whose processing algorithm globally affects the audio streams from all the applications that channel their audio data through the audio engine.
-
-In contrast with a GFX sAPO, which is a COM-based component, a GFX filter is packaged as an [AVStream minidriver](https://msdn.microsoft.com/library/windows/hardware/ff560765) with an associated INF file. Additionally, a typical GFX filter implements a digital signal transformation that is designed for a specific audio hardware device (for example, to compensate for the response characteristics of a particular set of speakers).
 
 The following table shows the sAPOs that are available in the Windows Vista audio engine and the type of system effects that they apply.
 
