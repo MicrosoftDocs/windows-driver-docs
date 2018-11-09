@@ -1,6 +1,6 @@
 ---
 title: NetRingGetRxDrainPacketIterator function
-description: The NetRingGetRxDrainPacketIterator method gets a packet iterator for the current drain section of a receive queue's packet ring.
+description: The NetRingGetRxDrainPacketIterator method gets a packet iterator for the current drain section of a receive (Rx) queue's packet ring.
 ms.assetid: 121A80A2-7FCC-453E-93C6-D66B7AA70C1F
 keywords:
 - NetAdapterCx NetRingGetRxDrainPacketIterator, NetCx NetRingGetRxDrainPacketIterator
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetRxDrainPacketIterator** method gets a packet iterator for the current drain section of a receive queue's packet ring.
+The **NetRingGetRxDrainPacketIterator** method gets a packet iterator for the current drain section of a receive (Rx) queue's packet ring.
 
 ## Syntax
 
@@ -34,13 +34,9 @@ Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begin
 
 ## Remarks
 
-Client drivers typically call this method to begin the process of draining packets from the ring to the OS. 
+Client drivers typically call this method to begin the process of draining receive packets from the packet ring to the OS. Drivers later complete this process by calling [**NetRingSetRxDrainPacketIterator**](netringsetrxdrainpacketiterator.md).
 
 For an animation and code example of draining packets from the ring back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
-
-## Remarks
-
-Remark
 
 ## Requirements
 
@@ -57,3 +53,5 @@ Remark
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 
 **NET_RING_COLLECTION**
+
+[**NetRingSetRxDrainPacketIterator**](netringsetrxdrainpacketiterator.md)

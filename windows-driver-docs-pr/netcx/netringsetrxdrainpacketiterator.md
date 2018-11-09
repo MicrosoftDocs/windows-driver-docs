@@ -1,6 +1,6 @@
 ---
 title: NetRingSetRxDrainPacketIterator function
-description: The NetRingSetRxDrainPacketIterator method advances the beginning of the drain section for a receive queue's packet ring to the current index of the ring's drain packet iterator.
+description: The NetRingSetRxDrainPacketIterator method advances the beginning of the drain section for a receive (Rx) queue's packet ring to the current index of the ring's drain packet iterator.
 ms.assetid: DE28AAFC-BDD9-4025-B0A5-3778CA4581DB
 keywords:
 - NetAdapterCx NetRingSetRxDrainPacketIterator, NetCx NetRingSetRxDrainPacketIterator
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingSetRxDrainPacketIterator** method advances the beginning of the drain section for a receive queue's packet ring to the current index of the ring's drain packet iterator.
+The **NetRingSetRxDrainPacketIterator** method advances the beginning of the drain section for a receive (Rx) queue's packet ring to the current index of the ring's drain packet iterator.
 
 ## Syntax
 
@@ -34,7 +34,9 @@ None.
 
 ## Remarks
 
-Before calling this method, a client driver typically calls [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) for each packet it would like to drain from the ring to the OS. After calling this method, the packet ring's **BeginIndex** advances to the [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)'s current position in the ring. Therefore, the packets between the old value of **BeginIndex** and the iterator's **Index - 1** inclusive are drained from the ring and ownership of them is transferred to the OS. This is how client drivers indicate receives to the system.
+Client drivers call **NetRingSetRxDrainPacketIterator** to complete the process of draining receive packets from the packet ring to the OS.
+
+After calling this method, the packet ring's **BeginIndex** advances to the [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)'s current position in the ring. Therefore, the packets between the old value of **BeginIndex** and the iterator's **Index - 1** inclusive are drained from the ring and ownership of them is transferred to the OS. This is how client drivers indicate receives to the system.
 
 For an animation and code example of draining packets back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
@@ -53,5 +55,3 @@ For an animation and code example of draining packets back to the OS, see [Using
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 
 [**NetRingGetRxDrainPacketIterator**](netringgetrxdrainpacketiterator.md)
-
-[**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md)

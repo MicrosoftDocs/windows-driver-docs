@@ -1,6 +1,6 @@
 ---
 title: NetRingGetRxDrainFragmentIterator function
-description: The NetRingGetRxDrainFragmentIterator method gets a fragment iterator for the current drain section of a receive queue's fragment ring.
+description: The NetRingGetRxDrainFragmentIterator method gets a fragment iterator for the current drain section of a receive (Rx) queue's fragment ring.
 ms.assetid: DBDFD3F8-CA1F-444C-84FB-DE9DBF4FC354
 keywords:
 - NetAdapterCx NetRingGetRxDrainFragmentIterator, NetCx NetRingGetRxDrainFragmentIterator
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetRxDrainFragmentIterator** method gets a fragment iterator for the current drain section of a receive queue's fragment ring.
+The **NetRingGetRxDrainFragmentIterator** method gets a fragment iterator for the current drain section of a receive (Rx) queue's fragment ring.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 ## Remarks
 
-Client drivers typically call this method to begin the process of draining fragments from the ring to the OS.
+Client drivers call **NetRingGetRxDrainFragmentIterator** to begin the process of draining receive fragments from the ring to the OS. 
 
 For an animation and code example of draining fragments from the ring back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 

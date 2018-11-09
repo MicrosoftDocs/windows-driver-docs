@@ -24,23 +24,23 @@ Netringiterator.h contains the following programming interfaces:
 | --- | --- |
 | [NetRingIteratorGetFragment](netringiteratorgetfragment.md) | The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure pointed to by a NET_RING_FRAGMENT_ITERATOR. |
 | [NetRingIteratorGetPacket](netringiteratorgetpacket.md) | The NetRingIteratorGetPacket method gets the NET_PACKET structure pointed to by a NET_RING_PACKET_ITERATOR. |
-| [NetRingGetRxPostFragmentIterator](netringgetrxpostfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current post section of a receive queue's fragment ring. |
-| [NetRingSetRxPostFragmentIterator](netringsetrxpostfragmentiterator.md) | The NetRingSetRxPostFragmentIterator method advances the beginning of the post section for a receive queue's net fragment ring to the current index of the ring's post fragment iterator. |
-| [NetRingGetRxDrainFragmentIterator](netringgetrxdrainfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current drain section of a receive queue's fragment ring. |
-| [NetRingSetRxDrainFragmentIterator](netringsetrxdrainfragmentiterator.md) | The NetRingSetRxDrainFragmentIterator method advances the beginning of the drain section for a receive queue's fragment ring to the current index of the ring's drain fragment iterator. |
-| [NetRingGetRxDrainPacketIterator](netringgetrxdrainpacketiterator.md) | The NetRingGetRxDrainPacketIterator method gets a packet iterator for the current drain section of a receive queue's packet ring. |
-| [NetRingSetRxDrainPacketIterator](netringsetrxdrainpacketiterator.md) | The NetRingSetRxDrainPacketIterator method advances the beginning of the drain section for a receive queue's packet ring to the current index of the ring's drain packet iterator. |
-| [NetRingGetTxPostPacketIterator](netringgettxpostpacketiterator.md) | x |
-| [NetRingSetTxPostPacketIterator](netringsettxpostpacketiterator.md) | x |
-| [NetRingGetTxDrainPacketIterator](netringgettxdrainpacketiterator.md) | x |
-| [NetRingSetTxDrainPacketIterator](netringsettxdrainpacketiterator.md) | x |
-| [NetRingGetTxPostPacketFragmentIterator](netringgettxpostpacketfragmentiterator.md) | x |
-| [NetRingSetTxPostFragmentIterator](netringsettxpostfragmentiterator.md) | x |
-| [NetRingGetTxDrainPacketFragmentIterator](netringgettxdrainpacketfragmentiterator.md) | x |
-| [NetRingSetTxDrainFragmentIterator](netringsettxdrainfragmentiterator.md) | x |
-| [NetRingGetAllFragmentIterator](netringgetallfragmentiterator.md) | x |
+| [NetRingGetRxPostFragmentIterator](netringgetrxpostfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current post section of a receive (Rx) queue's fragment ring. |
+| [NetRingSetRxPostFragmentIterator](netringsetrxpostfragmentiterator.md) | The NetRingSetRxPostFragmentIterator method advances the beginning of the post section for a receive (Rx) queue's net fragment ring to the current index of the ring's post fragment iterator. |
+| [NetRingGetRxDrainFragmentIterator](netringgetrxdrainfragmentiterator.md) | The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current drain section of a receive (Rx) queue's fragment ring. |
+| [NetRingSetRxDrainFragmentIterator](netringsetrxdrainfragmentiterator.md) | The NetRingSetRxDrainFragmentIterator method advances the beginning of the drain section for a receive (Rx) queue's fragment ring to the current index of the ring's drain fragment iterator. |
+| [NetRingGetRxDrainPacketIterator](netringgetrxdrainpacketiterator.md) | The NetRingGetRxDrainPacketIterator method gets a packet iterator for the current drain section of a receive (Rx) queue's packet ring. |
+| [NetRingSetRxDrainPacketIterator](netringsetrxdrainpacketiterator.md) | The NetRingSetRxDrainPacketIterator method advances the beginning of the drain section for a receive (Rx) queue's packet ring to the current index of the ring's drain packet iterator. |
+| [NetRingGetTxPostPacketIterator](netringgettxpostpacketiterator.md) | The NetRingGetTxPostPacketIterator method gets a packet iterator for the current post section of a transmit (Tx) queue's packet ring. |
+| [NetRingSetTxPostPacketIterator](netringsettxpostpacketiterator.md) | The NetRingSetTxPostPacketIterator method advances the beginning of the post section for a transmit (Tx) queue's packet ring to the current index of the ring's post packet iterator. |
+| [NetRingGetTxDrainPacketIterator](netringgettxdrainpacketiterator.md) | The NetRingGetTxDrainPacketIterator method gets a packet iterator for the current drain section of a transmit (Tx) queue's packet ring. |
+| [NetRingSetTxDrainPacketIterator](netringsettxdrainpacketiterator.md) | The NetRingSetTxDrainPacketIterator method advances the beginning of the drain section for a transmit (Tx) queue's packet ring to the current index of the ring's drain packet iterator. |
+| [NetRingGetTxPostPacketFragmentIterator](netringgettxpostpacketfragmentiterator.md) | For a packet in the post section of a transmit (Tx) queue's packet ring, the NetRingGetTxPostPacketFragmentIterator method gets the post fragment iterator for that packet's fragments. |
+| [NetRingSetTxPostFragmentIterator](netringsettxpostfragmentiterator.md) | The NetRingSetTxPostFragmentIterator method advances the beginning of the post section for a transmit (Tx) queue's fragment ring to the current index of a post fragment iterator. |
+| [NetRingGetTxDrainPacketFragmentIterator](netringgettxdrainpacketfragmentiterator.md) | For a packet in the drain section of a transmit (Tx) queue's packet ring, the NetRingGetTxPostPacketFragmentIterator method gets the drain fragment iterator for that packet's fragments. |
+| [NetRingSetTxDrainFragmentIterator](netringsettxdrainfragmentiterator.md) | The NetRingSetTxDrainFragmentIterator method advances the beginning of the drain section for a transmit (Tx) queue's fragment ring to the current index of a drain fragment iterator. |
+| [NetRingGetAllFragmentIterator](netringgetallfragmentiterator.md) | The NetRingGetAllFragmentIterator method gets a fragment iterator for the entire range in a fragment ring that a client driver owns. |
 | [NetRingSetAllFragmentIterator](netringsetallfragmentiterator.md) | x |
-| [NetRingGetAllPacketIterator](netringgetallpacketiterator.md) | x |
+| [NetRingGetAllPacketIterator](netringgetallpacketiterator.md) | The NetRingGetAllPacketIterator method gets a packet iterator for the entire range in a packet ring that a client driver owns. |
 | [NetRingSetAllPacketIterator](netringsetallpacketiterator.md) | x |
 | [NetRingAdvancePacketIterator](netringadvancepacketiterator.md) | x |
 | [NetRingAdvanceFragmentIterator](netringadvancefragmentiterator.md) | x |
