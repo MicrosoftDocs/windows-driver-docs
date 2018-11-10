@@ -8,7 +8,7 @@ keywords:
 - media streaming WDK
 - data streaming WDK
 ms.author: windowsdriverdev
-ms.date: 10/2/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,6 +20,8 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## In this section
 
+-   [Device firmware update for USB devices without using a co-installer](device-firmware-update-for-usb-devices-without-using-a-co-installer.md)
+-   [USB Video Class (UVC) camera implementation guide](uvc-camera-implementation-guide.md)
 -   [Frame Server Custom Media Source](frame-server-custom-media-source.md)
 -   [360 camera video capture](360-camera-video-capture.md) (new for Windows 10, version 1803)
 -   [Camera intrinsics](camera-intrinsics.md)
