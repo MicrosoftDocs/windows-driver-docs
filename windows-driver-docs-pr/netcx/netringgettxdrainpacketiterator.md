@@ -30,7 +30,7 @@ A pointer to the **NET_RING_COLLECTION** struture that describes the transmit qu
 
 ## Return Value
 
-Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begins at the packet ring's **BeginIndex** and ends at the packet ring's **EndIndex**. In other words, the iterator covers the packet ring's current drain section. 
+Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begins at the packet ring's **BeginIndex** and ends at the packet ring's **NextIndex**. In other words, the iterator covers the packet ring's current drain section. 
 
 ## Remarks
 

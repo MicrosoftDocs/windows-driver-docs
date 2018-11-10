@@ -39,17 +39,17 @@ Netringiterator.h contains the following programming interfaces:
 | [NetRingGetTxDrainPacketFragmentIterator](netringgettxdrainpacketfragmentiterator.md) | For a packet in the drain section of a transmit (Tx) queue's packet ring, the NetRingGetTxPostPacketFragmentIterator method gets the drain fragment iterator for that packet's fragments. |
 | [NetRingSetTxDrainFragmentIterator](netringsettxdrainfragmentiterator.md) | The NetRingSetTxDrainFragmentIterator method advances the beginning of the drain section for a transmit (Tx) queue's fragment ring to the current index of a drain fragment iterator. |
 | [NetRingGetAllFragmentIterator](netringgetallfragmentiterator.md) | The NetRingGetAllFragmentIterator method gets a fragment iterator for the entire range in a fragment ring that a client driver owns. |
-| [NetRingSetAllFragmentIterator](netringsetallfragmentiterator.md) | x |
+| [NetRingSetAllFragmentIterator](netringsetallfragmentiterator.md) | The NetRingSetAllFragmentIterator method advances the beginning of the section of a fragment ring that a client driver owns to the current index of a fragment iterator. |
 | [NetRingGetAllPacketIterator](netringgetallpacketiterator.md) | The NetRingGetAllPacketIterator method gets a packet iterator for the entire range in a packet ring that a client driver owns. |
-| [NetRingSetAllPacketIterator](netringsetallpacketiterator.md) | x |
-| [NetRingAdvancePacketIterator](netringadvancepacketiterator.md) | x |
-| [NetRingAdvanceFragmentIterator](netringadvancefragmentiterator.md) | x |
-| [NetRingAdvanceEndPacketIterator](netringadvanceendpacketiterator.md) | x |
-| [NetRingAdvanceEndFragmentIterator](netringadvanceendfragmentiterator.md) | x |
-| [NetRingPacketIteratorGetCount](netringpacketiteratorgetcount.md) | x |
-| [NetRingFragmentIteratorGetCount](netringfragmentiteratorgetcount.md) | x |
-| [NetRingIteratorGetIndex](netringiteratorgetindex.md) | x |
-| [NetRingIteratorAny](netringiteratorany.md) | x |
+| [NetRingSetAllPacketIterator](netringsetallpacketiterator.md) | The NetRingSetAllPacketIterator method advances the beginning of the section of a packet ring that a client driver owns to the current index of a packet iterator. |
+| [NetRingAdvancePacketIterator](netringadvancepacketiterator.md) | The NetRingAdvancePacketIterator method advances the index of a NET_RING_PACKET_ITERATOR by one. |
+| [NetRingAdvanceFragmentIterator](netringadvancefragmentiterator.md) | The NetRingAdvanceFragmentIterator method advances the index of a NET_RING_FRAGMENT_ITERATOR by one. |
+| [NetRingAdvanceEndPacketIterator](netringadvanceendpacketiterator.md) | The NetRingAdvanceEndPacketIterator method advances the current index of a NET_RING_PACKET_ITERATOR to the iterator's End index. |
+| [NetRingAdvanceEndFragmentIterator](netringadvanceendfragmentiterator.md) | The NetRingAdvanceEndFragmentIterator method advances the current index of a NET_RING_FRAGMENT_ITERATOR to the iterator's End index. |
+| [NetRingPacketIteratorGetCount](netringpacketiteratorgetcount.md) | The NetRingPacketIteratorGetCount method gets the count of packets between a packet iterator's current Index inclusive and its End index. |
+| [NetRingFragmentIteratorGetCount](netringfragmentiteratorgetcount.md) | The NetRingFragmentIteratorGetCount method gets the count of fragments between a fragment iterator's current Index inclusive and its End index. |
+| [NetRingIteratorGetIndex](netringiteratorgetindex.md) | The NetRingIteratorGetIndex macro gets the current Index of a net ring iterator. |
+| [NetRingIteratorAny](netringiteratorany.md) | The NetRingIteratorAny macro determines whether a net ring iterator has reached its End index or not. |
 
 ## Structures
 

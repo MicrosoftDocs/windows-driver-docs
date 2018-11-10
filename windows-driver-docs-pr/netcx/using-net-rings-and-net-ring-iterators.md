@@ -90,8 +90,68 @@ Here is a typical transmit sequence for a driver that performs in-order completi
     3. Translate the hardware descriptor to the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet).
     4. Call [**NetRingBufferIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/nf-netringbuffer-netringbufferincrementindex).
 
+
+For example, to complete and drain a batch of packets and their fragments from a transmit queue's net rings, a client driver might do something like this:
+
 ```cpp
+void
+MyCompleteTxPacketBatch(
+    _In_ NET_RING_COLLECTION const * Rings,
+    _In_ UINT32                      BatchSize
+)
+{
+    UINT32 packetCount = 0;
+
+    // Retrieve the packet drain iterator
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetTxDrainPacketIterator(Rings);
+    while(NetRingIteratorAny(packetIterator))
+    {
+        // Get the packet
+        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+
+        // Test the packet for completion. You can either use the Scratch field of the packet or some other tracking method.
+        if(!myPacketCompletionTest)
+        {
+            break;
+        }
+
+        packetCount++;
+
+        // Get this packet's fragments
+        NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetTxDrainPacketFragmentIterator(&packetIterator);
+
+        // Drain the fragments
+        NetRingAdvanceEndFragmentIterator(&fragmentIterator);
+
+        // Move on to the next packet
+        NetRingAdvancePacketIterator(&packetIterator);
+
+        // Finish draining packets and fragments if desired batch is complete
+        if(packetCount >= BatchSize)
+        {
+            NetRingSetTxDrainPacketIterator(&packetIterator);
+            NetRingSetTxDrainFragmentIterator(&fragmentIterator);
+        }
+    }
+}
 ```
+
+To cancel and drain all fragments from the ring back to the OS, a client driver calls these three methods in order:
+
+1. [**NetRingGetAllFragmentIterator**](netringgetallfragmentiterator.md)
+2. **NetRingAdvanceEndFragmentIterator**
+3. [**NetRingSetAllFragmentIterator**](netringsetallfragmentiterator.md)
+
+```cpp
+
+```
+
+For example, to cancel and drain all packets from the ring back to the OS, a client driver calls these three methods in order:
+
+1. [**NetRingGetAllPacketIterator**](netringgetallpacketiterator.md)
+2. **NetRingAdvanceEndPacketIterator**
+3. [**NetRingSetAllPacketIterator**](netringsetallpacketiterator.md)
+
 
 Here is a typical receive sequence for a driver that performs in-order completions:
 

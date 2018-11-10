@@ -34,7 +34,15 @@ Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begin
 
 ## Remarks
 
-Client drivers call **NetRingGetAllPacketIterator** to perform operations on all packets that they own in a packet ring.
+Client drivers typically call **NetRingGetAllPacketIterator** to begin performing operations on all packets that they own in a packet ring. This might include processing a batch of receives that span all available packets in the ring, or draining the ring during data path cancelation.
+
+To cancel and drain all packets from the ring back to the OS, a client driver calls these three methods in order:
+
+1. **NetRingGetAllPacketIterator**
+2. [**NetRingAdvanceEndPacketIterator**](netringadvanceendpacketiterator.md)
+3. [**NetRingSetAllPacketIterator**](netringsetallpacketiterator.md)
+
+For a code example of using this method, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -51,3 +59,7 @@ Client drivers call **NetRingGetAllPacketIterator** to perform operations on all
 **NET_RING_COLLECTION**
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
+
+[**NetRingAdvanceEndPacketIterator**](netringadvanceendpacketiterator.md)
+
+[**NetRingSetAllPacketIterator**](netringsetallpacketiterator.md)
