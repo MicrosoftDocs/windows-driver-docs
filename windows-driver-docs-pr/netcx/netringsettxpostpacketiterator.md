@@ -46,7 +46,7 @@ For an animation and code example of posting hardware, see [Using net rings and 
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

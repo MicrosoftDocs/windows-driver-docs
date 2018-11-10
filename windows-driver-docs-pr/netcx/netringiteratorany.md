@@ -42,7 +42,7 @@ Client drivers can call **NetRingIteratorAny** to test whether the iterator has 
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

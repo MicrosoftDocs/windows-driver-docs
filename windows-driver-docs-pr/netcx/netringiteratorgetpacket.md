@@ -38,7 +38,7 @@ Returns a pointer to the **NET_PACKET** structure pointed to by the **NET_RING_P
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

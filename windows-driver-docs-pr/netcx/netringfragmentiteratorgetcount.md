@@ -38,7 +38,7 @@ Returns the number of fragments between this packet iterator's current index inc
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

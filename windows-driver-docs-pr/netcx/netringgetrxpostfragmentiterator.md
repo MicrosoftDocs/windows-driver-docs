@@ -44,7 +44,7 @@ For an animation and code example of posting fragments to hardware for Rx, see [
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

@@ -46,7 +46,7 @@ For an animation and code example of draining transmitted fragments to the OS, s
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 

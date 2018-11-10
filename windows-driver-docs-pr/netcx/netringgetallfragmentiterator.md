@@ -44,7 +44,7 @@ For a code example of using this method, see [Using net rings and net ring itera
 | --- | --- |
 | Target Platform | Universal |
 | Header | netringiterator.h |
-| IRQL | PASSIVE_LEVEL |
+| IRQL | Any level as long as target memory is resident |
 
 ## See Also
 
