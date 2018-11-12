@@ -23,9 +23,9 @@ On Windows Vista and later, **IoConnectInterruptEx** provides several different 
 
 On operating systems prior to Windows Vista, you can only use CONNECT\_FULLY\_SPECIFIED. If you specify CONNECT\_LINE\_BASED or CONNECT\_MESSAGE\_BASED, **IoConnectInterruptEx** returns an error. You can use this behavior to determine if you are running on Windows Vista or an earlier system. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
 
- 
+ 
 
- 
+ 
 
 
 

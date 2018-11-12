@@ -26,9 +26,9 @@ The [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware
 
 ![diagram illustrating the relationship of mode information to path information](images/displayconfigpathandmode.png)
 
- 
+ 
 
- 
+ 
 
 
 

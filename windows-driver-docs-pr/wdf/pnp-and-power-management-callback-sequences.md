@@ -20,9 +20,9 @@ The following topics show the sequence in which the framework calls a KMDF drive
 
 For information about UMDF callback sequences, see [PnP and Power Management Scenarios in UMDF](pnp-and-power-management-scenarios-in-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ For Windows Vista with SP1 and later versions of the Windows operating systems,
 
 **Important**   To avoid application compatibility problems, do not change the default registry setting in production drivers.
 
- 
+ 
 
 <span id="Key_Path_"></span><span id="key_path_"></span><span id="KEY_PATH_"></span>Key Path:  
 **RTL\_REGISTRY\_CONTROL\\GraphicsDrivers\\Scheduler**
@@ -71,9 +71,9 @@ For Windows Vista with SP1 and later versions of the Windows operating systems,
 <span id="Value_"></span><span id="value_"></span><span id="VALUE_"></span>Value:  
 0 = disable VSync control (produces the same behavior same as Windows Vista)
 
- 
+ 
 
- 
+ 
 
 
 

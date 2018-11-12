@@ -74,9 +74,9 @@ When a [device property page provider](types-of-device-property-page-providers.m
 
 Windows adds the newly created property pages to the property sheet for the device, and Device Manager makes Microsoft Win32 API calls to create the sheet. When the property page is displayed, the system calls the dialog box procedure that is specified in the PROPSHEETPAGE structure.
 
- 
+ 
 
- 
+ 
 
 
 

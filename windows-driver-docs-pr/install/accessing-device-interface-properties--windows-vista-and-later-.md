@@ -25,9 +25,9 @@ In Windows Vista and later versions of Windows, applications and installers can
 
 For information about how to access device interface properties on Windows Server 2003, Windows XP, and Windows 2000, see Accessing Device Interface Properties.
 
- 
+ 
 
- 
+ 
 
 
 

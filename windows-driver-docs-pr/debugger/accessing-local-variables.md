@@ -30,9 +30,9 @@ The debugger interprets local variables according to the [local context](changin
 
 When the local context is changed, the Locals window is immediately updated to reflect the new collection of local variables. The [**dv**](dv--display-local-variables-.md) command also shows the new variables. All of these variable names are then interpreted correctly by the memory commands that are described earlier. You can then read or write to these variables.
 
- 
+ 
 
- 
+ 
 
 
 

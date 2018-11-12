@@ -26,9 +26,9 @@ For queries concerning typical printer properties, you must create queries conta
 
 [Value](value.md)
 
- 
+ 
 
- 
+ 
 
 
 

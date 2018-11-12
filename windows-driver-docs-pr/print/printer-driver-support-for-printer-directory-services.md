@@ -31,9 +31,9 @@ These steps should be implemented within the printer driver's [**DrvPrinterEvent
 
 If a driver must obtain the current values for a printer's published properties, it should call **GetPrinterDataEx** or **EnumPrinterDataEx** to obtain the information from the registry, which is spooler-maintained and always up to date. An alternative way is to call **GetPrinter** to obtain the print queue's object identifier and then to call ADSI functions to obtain the values of the published properties. This technique is not recommended, both because it is more resource intensive and because returned data might not always be current.
 
- 
+ 
 
- 
+ 
 
 
 

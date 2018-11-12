@@ -47,9 +47,9 @@ class MSiSCSI_LB_Operations {
 
 When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_LB\_Operations](https://msdn.microsoft.com/library/windows/hardware/ff563059) data structures.
 
- 
+ 
 
- 
+ 
 
 
 

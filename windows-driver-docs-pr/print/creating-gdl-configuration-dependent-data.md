@@ -35,9 +35,9 @@ The following topics describe the steps to create and organize configuration-dep
 
 [Creating GDL Snapshots](creating-gdl-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

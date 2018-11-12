@@ -49,11 +49,11 @@ The **.logclose** command closes any open log file.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -124,9 +124,9 @@ The following diagram illustrates the different configurations described in the 
 
 Under normal circumstances the driver is supposed to read the hardware buffer at least once every time interval equal to *BatchLatencyMs*, to ensure that no data is dropped or lost. When the hardware FIFO buffer fills up, it should wrap around and behave like a circular buffer, overwriting older events.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The following list summarizes the kernel streaming event sets and their respecti
 
 [Video Capture Events](video-capture-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

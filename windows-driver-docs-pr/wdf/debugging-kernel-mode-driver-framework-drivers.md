@@ -34,9 +34,9 @@ This series of demonstrations is given at an advanced technical level. To get th
 
     This session shows you how to get detailed information about a KMDF device object including plug and play (PnP) and power state, power policy ownership, power configuration, PnP and power callbacks, and device properties. It also shows you how to get information on open handles, explore all the I/O queues configured for the device, and dump individual requests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ If the *HwScsiInitialize* routine enables interrupts on the HBA, the miniport dr
 
 If initializing the HBA causes a bus reset, the *HwScsiInitialize* routine must call [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657) with the *NotificationType* value **ResetDetected**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,11 +22,11 @@ The [deinterlace container device for deinterlacing](deinterlace-container-devic
 
 **Note**   The deinterlace container device is a software construct only and does not represent any functional hardware contained on a device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The KSCATEGORY_VPMUX [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**KSCATEGORY_VIDEO**](kscategory-video.md)
 
- 
+ 
 
- 
+ 
 
 
 

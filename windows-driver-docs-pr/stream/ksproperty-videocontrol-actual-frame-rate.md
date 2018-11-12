@@ -47,14 +47,14 @@ The KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE property retrieves the frame r
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566031)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566031" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566031)"><strong>KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S</strong></a></p></td>
 <td><p>KSPROPERTY_VIDEOCONTROL</p>
 <p>_ACTUAL_FRAME_RATE_S</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE\_S structure that specifies actual frame rate information at the time of query, such as the dimensions (width and height) of the image, current actual frame rate, and current maximum available frame rate.
 
@@ -81,9 +81,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566031)
 
- 
+ 
 
- 
+ 
 
 
 

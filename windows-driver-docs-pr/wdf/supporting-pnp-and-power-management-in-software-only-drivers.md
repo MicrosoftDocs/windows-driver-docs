@@ -24,9 +24,9 @@ If you are writing a software-only driver, your driver [creates device objects](
 
 A few software-only drivers are also [function drivers](supporting-pnp-and-power-management-in-function-drivers.md). In other words, a single driver might act as a software-only driver to support a virtual device that does not access hardware, and as a function driver to support a hardware device.
 
- 
+ 
 
- 
+ 
 
 
 

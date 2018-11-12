@@ -42,9 +42,9 @@ This section includes:
 
 [GDL Strings](gdl-strings.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ The following set of constants form the set of WIA microdriver commands. The com
 
 These commands are defined in *Wiamicro.h*, and are available in Windows Me and in Windows XP and later.
 
- 
+ 
 
- 
+ 
 
 
 

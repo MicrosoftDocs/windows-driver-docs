@@ -56,9 +56,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS**](ksproperty-bda-ca-smart-card-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

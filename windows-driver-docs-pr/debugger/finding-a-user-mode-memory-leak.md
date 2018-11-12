@@ -17,9 +17,9 @@ Use the following techniques to determine the cause of a user-mode memory leak:
 
 The first technique determines which process is leaking memory. After you know which process is involved, the second technique can determine the specific routine that is at fault.
 
- 
+ 
 
- 
+ 
 
 
 

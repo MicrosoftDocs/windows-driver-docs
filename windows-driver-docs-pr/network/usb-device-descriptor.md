@@ -56,11 +56,11 @@ The device returns a USB Device Descriptor as defined in the USB Specification. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

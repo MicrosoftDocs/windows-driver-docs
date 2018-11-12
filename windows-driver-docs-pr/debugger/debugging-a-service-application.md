@@ -27,9 +27,9 @@ The following sections describe how to debug a service application:
 
 For an overview of services, service applications, and the service control manager, see *Microsoft Windows Internals: Microsoft Windows Server 2003, Windows XP, and Windows 2000* by David A. Solomon and Mark E. Russinovich (4th edition, Microsoft Press, 2005).
 
- 
+ 
 
- 
+ 
 
 
 

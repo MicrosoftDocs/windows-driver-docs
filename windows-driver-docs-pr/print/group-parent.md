@@ -27,9 +27,9 @@ Additionally, a group parent handle is received as the **hComPropSheet** member 
 
 You can create additional group parents under each group parent that is created. The property sheet itself is considered to be the top-level group parent. If you do not explicitly create additional group parents, all added property sheet pages are assigned to the top-level parent.
 
- 
+ 
 
- 
+ 
 
 
 

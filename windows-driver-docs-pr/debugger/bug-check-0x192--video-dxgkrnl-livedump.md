@@ -56,11 +56,11 @@ The VIDEO\_DXGKRNL\_LIVEDUMP bug check has a value of 0x00000193. This indicates
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

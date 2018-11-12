@@ -67,9 +67,9 @@ To install a device and driver in Windows 7 and later versions of Windows, foll
 
 These are the basic steps. Additional steps might be necessary based on the installation needs of your individual device and driver.
 
- 
+ 
 
- 
+ 
 
 
 

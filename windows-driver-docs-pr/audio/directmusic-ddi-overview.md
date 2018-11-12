@@ -57,9 +57,9 @@ Custom DMus miniport drivers use the following kernel-mode interfaces:
 
 DMus miniport drivers implement the **IMiniportDMus**, **ISynthSinkDMus**, and **IMXF** interfaces. The DMus port driver implements the **IAllocatorMXF**, **IMasterClock**, and **IPortDMus** interfaces and exposes them to miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

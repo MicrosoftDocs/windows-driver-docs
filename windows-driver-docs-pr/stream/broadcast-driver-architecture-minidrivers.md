@@ -57,9 +57,9 @@ The following sections describe implementation details for a BDA minidriver, dis
 
 [Connecting Between Pins of Filters for BDA Minidrivers](connecting-between-pins-of-filters-for-bda-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

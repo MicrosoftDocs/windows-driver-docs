@@ -18,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_TVAUDIO enumeration.
 
 The only event in this set is [**KSEVENT\_TVAUDIO\_CHANGED**](ksevent-tvaudio-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

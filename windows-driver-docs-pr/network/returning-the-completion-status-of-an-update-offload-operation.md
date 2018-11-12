@@ -25,9 +25,9 @@ The offload target successfully updated the state object variables, successfully
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The update operation did not succeed. The host stack will terminate the offload of the state objects that could not be updated.
 
- 
+ 
 
- 
+ 
 
 
 

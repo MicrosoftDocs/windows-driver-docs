@@ -48,7 +48,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ Remarks
 
 This command initializes logging, but does not actually enable it. Logging can be enabled with the [**!logexts.loge**](-logexts-loge.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

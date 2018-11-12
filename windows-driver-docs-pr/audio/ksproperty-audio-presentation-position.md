@@ -45,12 +45,12 @@ The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a struc
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Pin instance</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p>[<strong>KSAUDIO_PRESENTATION_POSITION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450865)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450865" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450865)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSAUDIO\_PRESENTATION\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450865)
 
- 
+ 
 
- 
+ 
 
 
 

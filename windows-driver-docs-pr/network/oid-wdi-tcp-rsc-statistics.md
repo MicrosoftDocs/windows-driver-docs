@@ -18,7 +18,7 @@ OID\_WDI\_TCP\_RSC\_STATISTICS is a get command that queries the RSC statistics 
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 ## Get property parameters
 
@@ -31,7 +31,7 @@ No additional parameters. The data in the header is sufficient.
 |--------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
 | [**WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898070) |                                |          | TCP RSC statistics of the hardware. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

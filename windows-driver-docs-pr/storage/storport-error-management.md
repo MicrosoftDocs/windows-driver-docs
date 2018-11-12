@@ -19,9 +19,9 @@ The following sections describe how Storport manages errors, and, in particular,
 
 [Device Status for High-Performance Buses and Adapters](device-status-for-high-performance-buses-and-adapters.md)
 
- 
+ 
 
- 
+ 
 
 
 

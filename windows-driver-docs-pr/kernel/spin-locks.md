@@ -32,9 +32,9 @@ This section contains the following topics:
 
 [Reader/Writer Spin Locks](reader-writer-spin-locks.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ This object represents a swapchain that will provide desktop images to display o
 
 This object represents an active OPM context from a single application OPM context that the application can use to control output protection on a single monitor. Multiple OPM contexts can be active on a given monitor at the same time. The OS calls the driver to create and destroy the OPM contexts using the driver's EvtIddCxMonitorOPMCreateProtectedOutput and EvtIddCxMonitorOPMDestroyProtectedOutput DDI calls.
 
- 
+ 
 
- 
+ 
 
 
 

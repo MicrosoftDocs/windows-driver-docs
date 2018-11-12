@@ -19,9 +19,9 @@ The solution to this problem is to ensure that both components use the same name
 
 See "Kernel Object Name Spaces" in the Microsoft Windows SDK documentation for more information.
 
- 
+ 
 
- 
+ 
 
 
 

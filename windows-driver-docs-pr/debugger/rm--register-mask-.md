@@ -57,7 +57,7 @@ Specifies the mask to use when the debugger displays the registers. *Mask* is a 
 </tbody>
 </table>
 
- 
+
 
 Remarks
 -------
@@ -162,7 +162,7 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 </tr>
 </tbody>
 </table>
- 
+
 
 ## Examples
 
@@ -223,7 +223,6 @@ kd> rm
 Register output mask is a:
       2 - Integer state (64-bit)
        8 - Segment registers
-
 ```
 
 

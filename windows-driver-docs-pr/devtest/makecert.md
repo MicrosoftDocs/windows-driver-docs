@@ -45,7 +45,7 @@ If the /len switch is not specified, the default key length is 1024 bits.
 <span id="_m_nMonths"></span><span id="_m_nmonths"></span><span id="_M_NMONTHS"></span>**/m** *nMonths*  
 Specifies the number of months starting from the start date during which the certificate will remain valid.
 
-<span id="_n__Name_"></span><span id="_n__name_"></span><span id="_N__NAME_"></span>**/n** "*Name***"**  
+<span id="_n__Name_"></span><span id="_n__name_"></span><span id="_N__NAME_"></span>**/n** "<em>Name</em>**"**  
 Specifies a name for the certificate. This name must conform to the X.500 standard. The simplest method is to use the "CN=*MyName*" format.
 
 If the **/n** switch is not specified, the default name of the certificate is "Joe's Software Emporium".
@@ -98,9 +98,9 @@ In the following example, the MakeCert command generates a self-signed test cert
 MakeCert -r -pe -ss PrivateCertStore -n "CN=Contoso.com(Test)" testcert.cer
 ```
 
- 
+ 
 
- 
+ 
 
 
 

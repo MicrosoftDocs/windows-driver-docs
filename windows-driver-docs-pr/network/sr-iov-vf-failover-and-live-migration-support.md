@@ -43,9 +43,9 @@ The transition between the VF and synthetic data paths occurs with minimum loss 
 
 For more information about this process, see [Virtual Function Teardown Sequence](virtual-function-teardown-sequence.md).
 
- 
+ 
 
- 
+ 
 
 
 

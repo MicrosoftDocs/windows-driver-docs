@@ -48,7 +48,7 @@ Optional. Specifies the number of log entries to display. If *Entries* is zero o
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ You can stop the log display by pressing [**CTRL+C**](ctrl-c--break-.md).
 
 This extension requires that the target computer be running a checked (debug) version of Ks.sys.
 
- 
+ 
 
- 
+ 
 
 
 

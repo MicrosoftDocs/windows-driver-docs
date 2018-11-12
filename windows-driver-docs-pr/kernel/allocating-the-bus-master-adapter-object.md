@@ -70,9 +70,9 @@ Another driver routine (probably the [*DpcForIsr*](https://msdn.microsoft.com/li
 
 When the driver has satisfied the current IRP's transfer request or must fail the IRP due to a device or bus I/O error, it must call **FreeMapRegisters**. This call should occur immediately following the last call to **FlushAdapterBuffers** for the current IRP, so that the driver can service other DMA requests, possibly for other devices on the bus.
 
- 
+ 
 
- 
+ 
 
 
 

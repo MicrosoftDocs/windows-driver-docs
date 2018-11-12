@@ -100,7 +100,7 @@ Unicode string
 </tbody>
 </table>
 
- 
+ 
 
 If you omit *Type*, byte values are used. However, if you use *Flags*, you cannot omit *Type*.
 
@@ -145,7 +145,7 @@ Specifies the address of an object or the address of a pointer to an object. The
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -161,7 +161,7 @@ You must specify the *Pattern* parameter as a series of bytes, unless you specif
 -   Numeric values are interpreted as numbers in the current radix (16, 10, or 8). To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command. You can override the default radix by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
     **Note**   The default radix behaves differently when you use C++ expressions. For more information about these expressions and the radix, see [Evaluating Expressions](evaluating-expressions.md).
 
-     
+     
 
 -   You must enclose ASCII characters in single straight quotation marks. You cannot use C-style escape characters (such as '\\0' or '\\n').
 
@@ -223,9 +223,9 @@ The following example shows a search that uses the *Type* parameter. This comman
 
 On little-endian computers, 'VUTS' is the same as the byte pattern 'S' 'T' 'U' 'V'. However, searches for WORDs, DWORDs, and QWORDs return only results that are correctly byte-aligned.
 
- 
+ 
 
- 
+ 
 
 
 

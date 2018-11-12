@@ -68,9 +68,9 @@ Note that, in all cases, a SAN socket descriptor must remain valid until the swi
 
 An unexpected process exit or some other error condition can interrupt a SAN service provider's socket-duplication operation. For example, a shortage of resources can cause such an interruption. The switch treats such error conditions as it does any other error situation. If necessary, the switch closes all descriptors that are associated with the underlying socket in all processes to forcefully terminate the socket's connection. If at all possible, the SAN service provider at the remote peer should complete [**WSPRecv**](https://msdn.microsoft.com/library/windows/hardware/ff566309) calls that receive incoming data with an appropriate error code, such as WSAECONNRESET. This error code informs the remote peer of the connection termination. If the switch at the remote peer does not receive this connection-termination indication, the switch at the remote peer times out a suspended connection if the system that requested the suspension fails.
 
- 
+ 
 
- 
+ 
 
 
 

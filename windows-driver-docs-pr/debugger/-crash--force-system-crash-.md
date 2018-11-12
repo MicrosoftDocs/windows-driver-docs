@@ -49,7 +49,7 @@ The **.crash** command causes the target computer to issue a bug check.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +64,9 @@ If you are already in a bug check handler, do not use **.crash**. Use [**g (Go)*
 
 A kernel-mode dump file will be written if crash dumps have been enabled. See [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ Specifies the path to be used for trace format files when the **-:TMF** switch i
 <span id="_________NTTREE_______"></span><span id="_________nttree_______"></span> \_NTTREE   
 Specifies the root destination directory in which all files will be placed if the **-r** switch is not used. For more information, see [BinPlace Destination Directories](binplace-destination-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

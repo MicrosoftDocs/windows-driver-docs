@@ -97,9 +97,9 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 
 **Other H.263 Optional Features:** Other optional features of H.263 can be supported without any impact on the DirectX VA design. For example, Annexes I, K, S, and T can be easily handled by altering the software decoder without any impact on the accelerator.
 
- 
+ 
 
- 
+ 
 
 
 

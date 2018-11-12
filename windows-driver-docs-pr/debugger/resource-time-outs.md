@@ -97,9 +97,9 @@ fec6bef4 77f716ab 0012dd64 0012dd3c 00000000 ntoskrnl!_KiSystemService+0x83
 0012dd20 00000000 00000000 00000000 00000000 ntdll!_ZwQueryAttributesFile+0xb 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,9 +60,9 @@ To specify that you want paging files to be saved when Windows restarts, set the
 
 **HKLM**\\**SYSTEM**\\**CurrentControlSet**\\**Control**\\**CrashControl**\\**SavePageFileContents**
 
- 
+ 
 
- 
+ 
 
 
 

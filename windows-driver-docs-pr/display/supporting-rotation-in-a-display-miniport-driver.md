@@ -20,7 +20,7 @@ The Microsoft DirectX graphics kernel subsystem uses non-rotated surface dimensi
 
 **Note**   All rotation degrees are defined in the counter-clockwise direction, which is consistent with how GDI defines rotation.
 
- 
+ 
 
 When the DirectX subsystem notifies the display miniport driver to rotate the surface, the driver should rotate the surface data only if the **Rotate** bit-field flag was set in the **Flags** member of the [**DXGKARG\_PRESENT**](https://msdn.microsoft.com/library/windows/hardware/ff557618) structure that the *pPresent* parameter points to in a call to the driver's [**DxgkDdiPresent**](https://msdn.microsoft.com/library/windows/hardware/ff559743) function. Even if the driver determines that the current orientation of the screen is rotated from the presentation data and **Rotate** was not set, the driver should not rotate the data.
 
@@ -88,7 +88,7 @@ The following table shows how a display miniport driver behaves in clone mode fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="clone-mode_requirements"></span><span id="CLONE-MODE_REQUIREMENTS"></span>Clone-mode requirements starting with Windows 8.1 Update
 
@@ -119,9 +119,9 @@ If the source display is a portrait-first device and connects to a landscape-fir
 
 For more info, see [Supporting Path-Independent Rotation](supporting-path-independent-rotation.md).
 
- 
+ 
 
- 
+ 
 
 
 

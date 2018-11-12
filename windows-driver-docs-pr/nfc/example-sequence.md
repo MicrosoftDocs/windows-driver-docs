@@ -70,9 +70,9 @@ The Power reset is irrelevant since we do not support SCARD\_SWALLOWED, SCARD\_P
 
     -   Case SCARD\_ABSENT, SCARD\_UNKNOWN, do nothing
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Smart card DDI and command reference](https://msdn.microsoft.com/library/windows/hardware/dn905601)  

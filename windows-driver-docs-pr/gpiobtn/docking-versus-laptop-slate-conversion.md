@@ -31,11 +31,11 @@ Docking is considered to be the user action of attaching the portable system to 
 **Note**  
 USB based docking accessories are outside the scope of the GPIO dock indicator implementation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ When the Microsoft PTP WIA minidriver issues the **GetObjectHandles** command (s
 
     In other words, an ObjectRemoved event for an object should not occur until all of its children have been removed as a result of ObjectRemoved events. If the image inside an ancillary association is to be removed, the other objects in the association must be removed in response to ObjectRemoved events before the image itself is removed.
 
- 
+ 
 
- 
+ 
 
 
 

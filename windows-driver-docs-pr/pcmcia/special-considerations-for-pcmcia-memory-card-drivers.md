@@ -20,9 +20,9 @@ This section describes the following special considerations pertinent to the des
 
 -   Reading and writing attribute memory on a PCMCIA memory card
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ When a user attempts to view a printer's details page, the server uses the follo
 
 For more information, see [Installing Customized Print Web Pages](installing-customized-print-web-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

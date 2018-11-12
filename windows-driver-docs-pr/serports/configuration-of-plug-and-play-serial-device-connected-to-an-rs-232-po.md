@@ -27,9 +27,9 @@ Serial and Serenum are used in the previous configurations. Serial creates and a
 
 After Serenum detects a supported device, it creates a physical device object (PDO) and reports the device to the Plug and Play manager. The configuration manager uses the INF file and installers for the Toaster device to complete the Toaster device installation. A Toaster driver creates an FDO and attaches it to the Toaster device stack. Filter DOs can also be added to the Toaster device stack.
 
- 
+ 
 
- 
+ 
 
 
 

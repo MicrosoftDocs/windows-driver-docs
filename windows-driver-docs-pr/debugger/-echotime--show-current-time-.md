@@ -49,16 +49,16 @@ The **.echotime** command displays the current time.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The **.echotime** command displays the time to the computer that the debugger is running on.
 
- 
+ 
 
- 
+ 
 
 
 

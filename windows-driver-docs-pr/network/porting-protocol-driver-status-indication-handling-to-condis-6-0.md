@@ -22,9 +22,9 @@ To determine link status, use the status indications from underlying drivers ins
 
 For more information about handling status indications in a CoNDIS protocol driver, see [Handling Status Indications in a CoNDIS Protocol Driver](handling-status-indications-in-a-condis-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

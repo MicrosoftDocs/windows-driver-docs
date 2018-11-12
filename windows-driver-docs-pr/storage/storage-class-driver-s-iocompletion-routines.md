@@ -29,9 +29,9 @@ Storage class drivers are responsible for retrying requests that fail due to tar
 
 For general information about *IoCompletion* routines, see [Completing IRPs](https://msdn.microsoft.com/library/windows/hardware/ff542018).
 
- 
+ 
 
- 
+ 
 
 
 

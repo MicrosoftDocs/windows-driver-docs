@@ -72,7 +72,7 @@ Each function command is set in a **FIRMWARE\_REQUEST\_BLOCK** structure which i
 </tbody>
 </table>
 
- 
+ 
 
 The firmware functions and associated structures are defined in *ntddscsi.h*.
 
@@ -577,15 +577,15 @@ Exit:
 
 **Note**  Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
 
- 
+ 
 
 A firmware image already resident in a slot can be reactivated by using just the activate function command with the corresponding slot number.
 
 The **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** control code for SRB I/O control is available starting with Windows 8.1.
 
- 
+ 
 
- 
+ 
 
 
 

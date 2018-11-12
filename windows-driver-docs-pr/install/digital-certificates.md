@@ -38,9 +38,9 @@ Software publishers must obtain a certificate from a certification authority (CA
 
 Once a certificate is obtained from the CA, software publishers must store the certificate locally in the computer. For more information about this process, see [Certificate Stores](certificate-stores.md).
 
- 
+ 
 
- 
+ 
 
 
 

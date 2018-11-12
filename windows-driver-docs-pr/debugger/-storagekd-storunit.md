@@ -44,7 +44,7 @@ Specifies the address of a Storport unit device object. If *Address* is omitted,
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -98,9 +98,9 @@ IRP               SRB Type   SRB               XRB               Command        
 -----------------------------------------------------------------------------------------------------------------------------------
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_AC3\_BIT\_STREAM\_MODE property specifies the bit-stream mode, w
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSAC3_BIT_STREAM_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537077)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537077" data-raw-source="[&lt;strong&gt;KSAC3_BIT_STREAM_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537077)"><strong>KSAC3_BIT_STREAM_MODE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSAC3\_BIT\_STREAM\_MODE structure that specifies the bit-stream mode.
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSAC3\_BIT\_STREAM\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff537077)
 
- 
+ 
 
- 
+ 
 
 
 

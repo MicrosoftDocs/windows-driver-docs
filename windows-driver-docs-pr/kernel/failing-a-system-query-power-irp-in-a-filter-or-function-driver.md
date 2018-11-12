@@ -30,9 +30,9 @@ To fail an **IRP\_MN\_QUERY\_POWER** request for a system power state, a driver 
 
 4.  Return a failure status from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

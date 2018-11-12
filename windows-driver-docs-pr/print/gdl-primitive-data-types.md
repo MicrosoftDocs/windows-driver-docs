@@ -28,9 +28,9 @@ The following primitive datypes are used for GDL templates:
 
 [Filter](filter-template-data-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

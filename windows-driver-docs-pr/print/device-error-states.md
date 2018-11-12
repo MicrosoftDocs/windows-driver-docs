@@ -50,9 +50,9 @@ You should also perform the following additional test procedures for offline and
     -   Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
     -   Reload the device stack to allow the print job to recover gracefully.
 
- 
+ 
 
- 
+ 
 
 
 

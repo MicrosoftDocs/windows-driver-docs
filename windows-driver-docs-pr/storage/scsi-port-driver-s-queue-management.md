@@ -21,9 +21,9 @@ The SCSI Port driver is said to "freeze" its I/O request queue whenever it halts
 
 The following sections describe the conditions that cause SCSI Port to change the status of its queue. They also describe the SRBs that higher-level drivers can use to exert control over SCSI Port's internal I/O request queue.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ To get a more actionable breakdown of video memory, the Windows Display Driver M
 | Driver implementation—Full graphics and Render only                               | Mandatory                        |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦UMDLogging** |
 
- 
+ 
 
 For developers, UMD logging can clarify memory costs that are currently very hard to see, such as internal fragmentation or the impact of rapidly discarding surfaces. It enables Microsoft to better work with customers and partners who provide traces for analysis of performance problems. In particular, this feature can help to overcome a common blocking point in investigating memory-related performance issues: the application is using too large a working set, but you cannot determine which API resources or calls are causing the problem.
 
@@ -49,9 +49,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

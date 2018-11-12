@@ -31,7 +31,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Obsolete. Use [<strong>GUID_DEVINTERFACE_COMPORT</strong>](guid-devinterface-comport.md) instead.</p></td>
+<td align="left"><p>Obsolete. Use <a href="guid-devinterface-comport.md" data-raw-source="[&lt;strong&gt;GUID_DEVINTERFACE_COMPORT&lt;/strong&gt;](guid-devinterface-comport.md)"><strong>GUID_DEVINTERFACE_COMPORT</strong></a> instead.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -45,9 +45,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md)
 
- 
+ 
 
- 
+ 
 
 
 

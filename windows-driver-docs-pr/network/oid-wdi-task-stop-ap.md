@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_STOP\_AP requests that the IHV component disconnects all connect
 |--------|---------------|---------------------------------------|---------------------------------|
 | Port   | No            | 2                                     | 1                               |
 
- 
+ 
 
 ## Task parameters
 
@@ -52,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

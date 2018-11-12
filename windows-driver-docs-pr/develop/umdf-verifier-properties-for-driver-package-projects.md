@@ -89,7 +89,7 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -97,9 +97,9 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 * [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 * [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
+ 
 
- 
+ 
 
 
 

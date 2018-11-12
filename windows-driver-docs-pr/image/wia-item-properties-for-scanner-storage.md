@@ -22,9 +22,9 @@ This section includes:
 
 [Optional WIA Child Item Properties for Scanner Storage](optional-wia-child-item-properties-for-scanner-storage.md)
 
- 
+ 
 
- 
+ 
 
 
 

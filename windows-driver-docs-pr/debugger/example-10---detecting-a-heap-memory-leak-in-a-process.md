@@ -51,9 +51,9 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
 
     In response, UMDH writes a complete dump of all active heaps to the notepad.dmp file.
 
- 
+ 
 
- 
+ 
 
 
 

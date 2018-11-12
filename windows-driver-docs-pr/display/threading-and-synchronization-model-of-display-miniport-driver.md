@@ -29,9 +29,9 @@ Multiple threads can be present within the display miniport driver at the same t
 
 -   [Thread Synchronization and TDR](thread-synchronization-and-tdr.md)
 
- 
+ 
 
- 
+ 
 
 
 

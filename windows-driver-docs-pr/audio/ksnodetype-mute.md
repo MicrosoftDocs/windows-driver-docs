@@ -25,9 +25,9 @@ A KSNODETYPE\_MUTE node should support the following required property:
 
 [**KSPROPERTY\_AUDIO\_MUTE**](ksproperty-audio-mute.md)
 
- 
+ 
 
- 
+ 
 
 
 

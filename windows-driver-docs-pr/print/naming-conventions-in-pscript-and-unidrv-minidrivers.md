@@ -40,7 +40,7 @@ Hardware vendors who intend to support autoconfiguration in their Pscript5 or Un
 </tbody>
 </table>
 
- 
+ 
 
 An auxiliary printer description file contains bidi or autoconfiguration information.
 
@@ -72,7 +72,7 @@ To enable autoconfiguration, a Pscript5 driver must include &lt;printerModelName
 </tbody>
 </table>
 
- 
+ 
 
 An auxiliary printer description file, which is optional for Unidrv minidrivers, contains bidi or autoconfiguration information. Alternatively, autoconfiguration information can be contained in the main description file.
 
@@ -84,9 +84,9 @@ Stdschem.gdl
 
 Stdschmx.gdl
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------|
 | UINT32 | The ID of the filter. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

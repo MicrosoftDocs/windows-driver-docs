@@ -42,9 +42,9 @@ Each of these callback functions receives two input arguments: a handle to the I
 
 The framework calls your driver's request handlers in an arbitrary thread context. A driver should not wait for an extended period of time while executing in an arbitrary thread context. In some cases, your driver might use kernel dispatcher objects as synchronization mechanisms. For information about when your driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://msdn.microsoft.com/library/windows/hardware/ff548068).
 
- 
+ 
 
- 
+ 
 
 
 

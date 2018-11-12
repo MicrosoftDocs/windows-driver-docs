@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure and its associated architecture have been deprecated.
 
- 
+ 
 
 The **!ndiskd.pktpools** extension displays a list of all allocated packet pools.
 
@@ -55,9 +55,9 @@ ffffdf80131d5940  fffff80f1fbe3e71   0x1          0x1000     0xa           0x180
 
 [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086)
 
- 
+ 
 
- 
+ 
 
 
 

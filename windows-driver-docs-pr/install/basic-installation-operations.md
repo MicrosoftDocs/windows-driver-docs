@@ -31,9 +31,9 @@ You can install a new [device setup class](device-setup-classes.md) by using the
 
 You can remove a device from the system by using the [**SetupDiRemoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552097) function. This function deletes the device's registry entries and, if possible, stops the device. If the device cannot be dynamically stopped, the function sets flags that eventually cause the user to be prompted to shut down the system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Because thread objects are themselves a type of dispatcher object, a thread can 
 
 A thread can call [**KeDelayExecutionThread**](https://msdn.microsoft.com/library/windows/hardware/ff551986) to wait for an interval that could be a full time slice or longer. The granularity of a **KeDelayExecutionThread** interval is around 10 milliseconds. Because **KeDelayExecutionThread** is a timer-driven routine, the granularity of its interval is slightly faster or slower than 10 milliseconds, depending on the platform.
 
- 
+ 
 
- 
+ 
 
 
 

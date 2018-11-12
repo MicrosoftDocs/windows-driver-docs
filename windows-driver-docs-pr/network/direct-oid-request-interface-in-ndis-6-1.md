@@ -21,7 +21,7 @@ The direct OID request interface is optional for NDIS drivers. To support the di
 
 **Note**  NDIS supports specific OIDs for use with the direct OID request interface. To determine whether your driver can use an OID in the direct OIDs interface, see the notes in the OID reference page.
 
- 
+ 
 
 For NDIS 6.1, the only interface that uses the direct OID request interface is IPsecOV2. For more information about IPsecOV2, see [IPsec Task Offload Version 2 in NDIS 6.1](ipsec-task-offload-version-2-in-ndis-6-1.md).
 
@@ -43,9 +43,9 @@ For more information about how to implement the direct OID interface in drivers,
 
 -   [Filter Module OID Requests](filter-module-oid-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

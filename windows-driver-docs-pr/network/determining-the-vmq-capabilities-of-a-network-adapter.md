@@ -22,7 +22,7 @@ NDIS provides the interface to determine the VMQ capabilities of a network adapt
 
     **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported.
 
-     
+     
 
 Miniport drivers provide the following information to NDIS during network adapter initialization:
 
@@ -65,7 +65,7 @@ The number of receive queues that the network adapter supports. To support VMQ, 
 
 **Note**  The number of unicast MAC addresses or VM queues that a network adapter supports does not include the MAC address of the associated NIC.
 
- 
+ 
 
 <a href="" id="supportedqueueproperties"></a>**SupportedQueueProperties**  
 The queue properties that the network adapter supports. The NDIS\_RECEIVE\_FILTER\_VM\_QUEUE\_SUPPORTED flag specifies that the network adapter provides the minimum requirements to support VMQ filtering. A VMQ-capable NIC must provide an MSI-X table entry for each receive queue. Therefore, a VMQ miniport driver must set the NDIS\_RECEIVE\_FILTER\_MSI\_X\_SUPPORTED flag.
@@ -93,14 +93,14 @@ The minimum size, in bytes, that the network adapter supports for lookahead pack
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support NDIS 6.30 or later versions must set this member to zero.
 
- 
+ 
 
 <a href="" id="maxlookaheadsplitsize"></a>**MaxLookaheadSplitSize**  
 The maximum size, in bytes, that the network adapter supports for lookahead packet segments.
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support NDIS 6.30 or later versions must set this member to zero.
 
- 
+ 
 
 After a successful return from the [OID\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569791) OID query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an NDIS\_RECEIVE\_FILTER\_CAPABILITIES structure. These capabilities can include VMQ hardware capabilities that are currently disabled by INF file settings or through the **Advanced** properties page. For more information about VMQ INF files settings, see [VMQ Standard INF Entries](https://msdn.microsoft.com/library/windows/hardware/hh205410).
 
@@ -126,9 +126,9 @@ After a successful return from the [OID\_RECEIVE\_FILTER\_GLOBAL\_PARAMETERS](ht
 
 NDIS protocol drivers use OID\_RECEIVE\_FILTER\_GLOBAL\_PARAMETERS to query the current global configuration parameters for receive filtering on a network adapter. For example, protocol drivers can use this OID to determine whether types of receive filters or receive queues are enabled or disabled.
 
- 
+ 
 
- 
+ 
 
 
 

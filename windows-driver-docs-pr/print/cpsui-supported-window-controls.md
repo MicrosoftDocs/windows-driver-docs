@@ -36,9 +36,9 @@ This set of window controls must always be used when specifying [property sheet 
 
 CPSUI also defines two special controls, called an extended check box and an extended push button. These controls, which provide capabilities beyond those of standard check boxes and push buttons, can be specified using the [**EXTCHKBOX**](https://msdn.microsoft.com/library/windows/hardware/ff548781) and [**EXTPUSH**](https://msdn.microsoft.com/library/windows/hardware/ff548795) structures, respectively.
 
- 
+ 
 
- 
+ 
 
 
 

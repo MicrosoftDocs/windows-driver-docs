@@ -46,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>BytesPerLine</strong>](bytesperline.md)</p></td>
+<td><p><a href="bytesperline.md" data-raw-source="[&lt;strong&gt;BytesPerLine&lt;/strong&gt;](bytesperline.md)"><strong>BytesPerLine</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>NumberOfLines</strong>](numberoflines.md)</p></td>
+<td><p><a href="numberoflines.md" data-raw-source="[&lt;strong&gt;NumberOfLines&lt;/strong&gt;](numberoflines.md)"><strong>NumberOfLines</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PixelsPerLine</strong>](pixelsperline.md)</p></td>
+<td><p><a href="pixelsperline.md" data-raw-source="[&lt;strong&gt;PixelsPerLine&lt;/strong&gt;](pixelsperline.md)"><strong>PixelsPerLine</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ImageInformation</strong>](imageinformation.md)</p></td>
+<td><p><a href="imageinformation.md" data-raw-source="[&lt;strong&gt;ImageInformation&lt;/strong&gt;](imageinformation.md)"><strong>ImageInformation</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,9 +89,9 @@ There are no attributes.
 
 [**PixelsPerLine**](pixelsperline.md)
 
- 
+ 
 
- 
+ 
 
 
 

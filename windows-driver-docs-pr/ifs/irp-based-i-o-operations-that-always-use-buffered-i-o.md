@@ -29,9 +29,9 @@ The following IRP-based I/O operations always use buffered I/O, regardless of th
 
 Note that IRP\_MJ\_QUERY\_INFORMATION can also be a fast I/O operation. When it is a fast I/O operation, it uses neither buffered nor direct I/O. For more information about I/O operations that can be IRP-based or fast I/O operations, see [Operations That Can Be IRP-Based or Fast I/O](operations-that-can-be-irp-based-or-fast-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

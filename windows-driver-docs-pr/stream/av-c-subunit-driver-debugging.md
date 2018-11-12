@@ -68,7 +68,7 @@ The GENERIC category applies to all generic output. The most interesting class o
 </tbody>
 </table>
 
- 
+ 
 
 **Plug and Play Message Category**
 
@@ -105,7 +105,7 @@ The Plug and Play (PnP) category applies to all output related to PnP.
 </tbody>
 </table>
 
- 
+ 
 
 **Power Management Message Category**
 
@@ -142,7 +142,7 @@ The Power Management category applies to all output related to power management,
 </tbody>
 </table>
 
- 
+ 
 
 **I/O Message Category**
 
@@ -183,7 +183,7 @@ The I/O category applies to all output related to interdriver communication, inc
 </tbody>
 </table>
 
- 
+ 
 
 **AV/C Message Category**
 
@@ -224,7 +224,7 @@ The AV/C category applies to all output that is related to AV/C commands, plus s
 </tbody>
 </table>
 
- 
+ 
 
 **Connection Message Category**
 
@@ -265,11 +265,11 @@ The Connection category deals with all plug connection-related output.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -187,39 +187,39 @@ WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Dri
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Special Pool](special-pool.md)</p></td>
+<td align="left"><p><a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Force IRQL Checking](force-irql-checking.md)</p></td>
+<td align="left"><p><a href="force-irql-checking.md" data-raw-source="[Force IRQL Checking](force-irql-checking.md)">Force IRQL Checking</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Pool Tracking](pool-tracking.md)</p></td>
+<td align="left"><p><a href="pool-tracking.md" data-raw-source="[Pool Tracking](pool-tracking.md)">Pool Tracking</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[I/O Verification](i-o-verification.md)</p></td>
+<td align="left"><p><a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Deadlock Detection](deadlock-detection.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="deadlock-detection.md" data-raw-source="[Deadlock Detection](deadlock-detection.md)">Deadlock Detection</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Enhanced I/O Verification](enhanced-i-o-verification.md) (In Windows 7 and later, this option is automatically activated when you select I/O Verification)</p></td>
+<td align="left"><p><a href="enhanced-i-o-verification.md" data-raw-source="[Enhanced I/O Verification](enhanced-i-o-verification.md)">Enhanced I/O Verification</a> (In Windows 7 and later, this option is automatically activated when you select I/O Verification)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DMA Verification](dma-verification.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="dma-verification.md" data-raw-source="[DMA Verification](dma-verification.md)">DMA Verification</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Security Checks](security-checks.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="security-checks.md" data-raw-source="[Security Checks](security-checks.md)">Security Checks</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Miscellaneous Checks](miscellaneous-checks.md) (Windows Vista and later)</p></td>
+<td align="left"><p><a href="miscellaneous-checks.md" data-raw-source="[Miscellaneous Checks](miscellaneous-checks.md)">Miscellaneous Checks</a> (Windows Vista and later)</p></td>
 </tr>
 <tr class="even">
-<td align="left">[DDI compliance checking](ddi-compliance-checking.md) (Starting with Windows 8)</td>
+<td align="left"><a href="ddi-compliance-checking.md" data-raw-source="[DDI compliance checking](ddi-compliance-checking.md)">DDI compliance checking</a> (Starting with Windows 8)</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Driver Verifier options that require I/O Verification
 
@@ -231,9 +231,9 @@ There are four options that require you to first enable [I/O Verification](i-o-v
 -   [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md)
 -   [Invariant MDL Checking for Driver](invariant-mdl-checking-for-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

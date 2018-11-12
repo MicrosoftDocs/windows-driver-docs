@@ -22,7 +22,7 @@ The WIA driver should *not* free any driver resources in this method call unless
 
 To determine the current application connection count, the WIA driver should increment a class member variable as a reference counter to keep track of the method calls to **IWiaMiniDrv::drvInitializeWia** (incrementing the counter) and **IWiaMiniDrv::drvUnInitializeWia** (decrementing the counter).
 
- 
+ 
 
 The following example shows an implementation of the **IWiaMiniDrv::drvUnInitializeWia** method.
 
@@ -65,9 +65,9 @@ HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

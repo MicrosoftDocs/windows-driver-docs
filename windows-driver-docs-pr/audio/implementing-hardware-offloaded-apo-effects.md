@@ -74,7 +74,7 @@ Implement the following INF file entries to define the effects that will be load
 | [PKEY\_SFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt604871) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},11 |
 | [PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt604870) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},12 |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  

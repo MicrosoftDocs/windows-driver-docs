@@ -27,9 +27,9 @@ If the hardware does not support a render target that is also to be used as a te
 
 If the hardware does not support a particular combination of render target and depth-buffers, then the device must fail API calls that cause this scenario when it detects mismatches of this sort, such as in calls to the **IDirect3D7::CreateDevice** and **IDirectDrawSurface7::AddAttachedSurface** methods. These methods are described in the Direct3D and DirectDraw SDK documentation sets, respectively. An example of such a mismatch might be when the render target and depth buffer are of different bit depths. Do not transparently alter the format of either the render target or the depth-buffer to cause an invalid combination to work properly. Instead, allocate a higher-precision depth buffer without informing the DirectX runtime.
 
- 
+ 
 
- 
+ 
 
 
 

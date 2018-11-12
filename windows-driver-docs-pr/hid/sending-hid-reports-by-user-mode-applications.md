@@ -28,9 +28,9 @@ Sends an output report to a HID collection (Windows XP and later versions).
 <a href="" id="hidd-setfeature"></a>[**HidD\_SetFeature**](https://msdn.microsoft.com/library/windows/hardware/ff539684)  
 Sends a feature report to a HID collection.
 
- 
+ 
 
- 
+ 
 
 
 

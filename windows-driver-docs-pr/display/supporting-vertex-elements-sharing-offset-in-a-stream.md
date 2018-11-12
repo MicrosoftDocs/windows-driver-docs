@@ -39,9 +39,9 @@ If a DirectX 9.0 driver for a device that supports pixel shader 3.0 and later se
 
 -   Overlap arbitrarily. For example, one element can start at a location of a stream that is currently in the middle of another element.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -131,9 +131,9 @@ This allows a client to subscribe to an un-typed payload of data.
 
 The driver MUST match subscriptions for “NDEF:Unknown” ONLY with NDEF messages that have a TNF field value of 0x05 as specified in \[NDEF\].
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

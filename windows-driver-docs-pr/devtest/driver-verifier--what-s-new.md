@@ -172,9 +172,9 @@ Driver Verifier features also include:
     -   Right-click an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.
     -   Click the question mark (**?**) in the upper-right corner of the window and then click an item in the Driver Verifier Manager window.
 
- 
+ 
 
- 
+ 
 
 
 

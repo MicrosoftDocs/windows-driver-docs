@@ -13,25 +13,25 @@ This page describes how a Hyper-V extensible switch forwarding extension can for
 
 **Note**  Only the extensible switch forwarding extension or the extensible switch itself can forward packets to extensible switch ports.
 
- 
+ 
 
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
 
- 
+ 
 
 If a forwarding extension is installed and enabled in the extensible switch driver stack, it is responsible for making forwarding decisions for each packet that it obtains on the extensible switch ingress data path. Based on these forwarding decisions, the extension adds destination ports into the destination port array in the out-of-band (OOB) data of the packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure. After the packet has completed its traversal of the extensible switch data path, the extensible switch interface delivers the packet to the specified destination ports.
 
 **Note**  If a forwarding extension is not installed or enabled, the extensible switch makes the forwarding decisions for packets it obtains from the ingress data path. The switch adds the destination ports to the OOB data of the packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure before it forwards the packet up the extensible switch egress data path.
 
- 
+ 
 
 **Note**  If the packet is an NVGRE packet, the forwarding extension can add destination ports to the destination port array. However, the Hyper-V Network Virtualization (HNV) component of the extensible switch is responsible for determining the destination ports and forwarding the packet. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 The forwarding extension can add port destinations only to packets obtained from the ingress data path. After the packet is forwarded up the egress data path, filtering and forwarding extensions can exclude packet delivery to extensible switch ports. For more information, see [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md).
 
@@ -63,31 +63,31 @@ For each [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hard
 
     **Note**  If the packet is an NVGRE packet, the HNV component of the extensible switch is responsible for forwarding the packet. However, the forwarding extension can apply its own policy criteria in the ingress and egress paths. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-     
+     
 
 2.  If the extension determines that the packet can be forwarded to one or more extensible switch ports, it must add destination ports to the packet's OOB data. For more information about this procedure, see [Adding Extensible Switch Destination Port Data to a Packet](adding-extensible-switch-destination-port-data-to-a-packet.md).
 
     **Note**  If the packet is an NVGRE packet, the forwarding extension is not required to add destination ports. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-     
+     
 
 3.  If the extension determines that the packet cannot be forwarded to any extensible switch port, it must drop the packet.
 
     **Note**  This is not true if the packet is an NVGRE packet. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-     
+     
 
 4.  If the extension has added one or more destination ports for the packet, it must call [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616) to forward the packet on the egress data path.
 
     **Note**  If the packet is an NVGRE packet, the HNV component of the extensible switch is responsible for forwarding the packet. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-     
+     
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -112,8 +112,7 @@ This topic describes the smart card attributes currently supported. The only sup
                             <td>0xFXXX</td>
                             <td>Vendor-defined channel type</td>
                             <td>vendor-defined</td>
-                        </tr>                      
-                    </tbody>
+                        </tr><br/>                    </tbody>
                 </table>
             </td>
         </tr>

@@ -43,7 +43,7 @@ The KSCATEGORY_ACOUSTIC_ECHO_CANCEL [device interface class](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

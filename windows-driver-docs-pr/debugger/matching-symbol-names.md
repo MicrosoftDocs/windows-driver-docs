@@ -22,9 +22,9 @@ Files that have very long names are sometimes given auto-generated MS-DOS compat
 
 For example, suppose there are two files, Longfilename1.pdb and Longfilename2.pdb. If they are put in the same directory one will have an MS-DOS compatibility 8.3 name of Longfi~1.pdb and the other will be Longfi~2.pdb. If they are not put in the same directory they will both be Longfi~1.pdb. Thus, if the associated .pdb files are copied carelessly, the short filenames can change, causing symbol matching problems. For more details, see [File System References and Symbol Files](file-system-references-and-symbol-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

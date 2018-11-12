@@ -22,9 +22,9 @@ var mobileNumber = smsDevice.accountPhoneNumber;
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

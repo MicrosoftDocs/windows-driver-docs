@@ -50,9 +50,9 @@ In this case, the driver:
 
 3.  If the driver is registering blocks on behalf of another driver (as a class driver might on behalf of a miniclass driver), the driver fills in another [**WMIREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565832) structure and list of [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827) structures with registration information for the other driver's blocks, and sets **NextWmiRegInfo** in the first **WMIREGINFO** to the offset in bytes from the beginning of the first **WMIREGINFO** to the beginning of the second **WMIREGINFO** structure.
 
- 
+ 
 
- 
+ 
 
 
 

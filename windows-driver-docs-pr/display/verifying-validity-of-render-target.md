@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must verify whether its internal render target is valid before using the render target because the DirectX 9.0 runtime permits applications to set render targets to **NULL**. In contrast, DirectX 8.1 and earlier runtimes guarantee that render targets are always valid for a Direct3D context.
 
- 
+ 
 
- 
+ 
 
 
 

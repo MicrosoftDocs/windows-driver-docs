@@ -49,7 +49,7 @@ The **.noshell** command prevents you from using [**.shell**](-shell--command-sh
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,9 +62,9 @@ If you use the **.noshell** command, you cannot use [**.shell (Command Shell)**]
 
 If you are performing remote debugging, this command is useful for security purposes.
 
- 
+ 
 
- 
+ 
 
 
 

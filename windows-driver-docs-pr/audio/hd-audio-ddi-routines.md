@@ -175,9 +175,9 @@ This section describes the following DDI routines:
 
 The preceding list contains all the routines that appear in either or both versions of the DDI.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,11 +31,11 @@ The SOC\_CRITICAL\_DEVICE\_REMOVED bug check has a value of 0x0000014E. This ind
 | 3         | Reserved                                                                                   |
 | 4         | Reserved                                                                                   |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

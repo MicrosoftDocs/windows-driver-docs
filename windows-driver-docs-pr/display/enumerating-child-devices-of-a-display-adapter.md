@@ -48,9 +48,9 @@ The following sequence of steps describes how the display port driver, display m
 
     -   Call the display miniport driver's [**DxgkDdiEnumVidPnCofuncModality**](https://msdn.microsoft.com/library/windows/hardware/ff559649) function to determine the source and target modes that are available for the VidPN.
 
- 
+ 
 
- 
+ 
 
 
 

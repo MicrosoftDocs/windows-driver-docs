@@ -48,7 +48,7 @@ Specifies the address of the key control block.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +63,9 @@ In Windows XP and later versions of Windows, the [**!reg**](-reg.md) extension c
 
 Every registry key has a control block that contains properties, such as its permissions.
 
- 
+ 
 
- 
+ 
 
 
 

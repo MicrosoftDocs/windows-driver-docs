@@ -24,8 +24,8 @@ Even when an ATA miniport driver does unsynchronized processing of I/O requests 
 
 When an ATA miniport driver calls **AtaPortRequestSynchronizedRoutine**, it must supply a pointer to a callback routine. The callback routine processes the part of the I/O request that must be synchronized with the interrupt handler. For better performance, write your driver to spend as little time as possible to execute the callback routine.
 
- 
+ 
 
- 
+ 
 
 

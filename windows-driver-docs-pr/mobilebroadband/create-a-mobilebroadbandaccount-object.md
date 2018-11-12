@@ -44,9 +44,9 @@ This can happen if no network hardware is detected, or if the network hardware d
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

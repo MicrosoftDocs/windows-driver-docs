@@ -157,9 +157,9 @@ The following code example shows the HID input report for the same device. Again
     HID_INPUT(Data_Var_Abs),
 ```
 
- 
+ 
 
- 
+ 
 
 
 

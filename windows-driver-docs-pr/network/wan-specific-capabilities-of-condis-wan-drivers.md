@@ -31,9 +31,9 @@ CoNDIS WAN drivers differ from a non-WAN CoNDIS drivers as follows:
 
 -   CoNDIS WAN miniport drivers never attempt to loop back any packets; NDISWAN provides loop-back support.
 
- 
+ 
 
- 
+ 
 
 
 

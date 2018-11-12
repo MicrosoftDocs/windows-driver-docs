@@ -46,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ColorProcessing</strong>](colorprocessing.md)</p></td>
+<td><p><a href="colorprocessing.md" data-raw-source="[&lt;strong&gt;ColorProcessing&lt;/strong&gt;](colorprocessing.md)"><strong>ColorProcessing</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Resolution</strong>](resolution.md)</p></td>
+<td><p><a href="resolution.md" data-raw-source="[&lt;strong&gt;Resolution&lt;/strong&gt;](resolution.md)"><strong>Resolution</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanRegion</strong>](scanregion.md)</p></td>
+<td><p><a href="scanregion.md" data-raw-source="[&lt;strong&gt;ScanRegion&lt;/strong&gt;](scanregion.md)"><strong>ScanRegion</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaSides</strong>](mediasides.md)</p></td>
+<td><p><a href="mediasides.md" data-raw-source="[&lt;strong&gt;MediaSides&lt;/strong&gt;](mediasides.md)"><strong>MediaSides</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,9 +102,9 @@ If the input source is **ADFDuplex** and the **MediaBack** element is missing, a
 
 [**ScanRegion**](scanregion.md)
 
- 
+ 
 
- 
+ 
 
 
 

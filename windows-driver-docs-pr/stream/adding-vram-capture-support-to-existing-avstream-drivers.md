@@ -22,9 +22,9 @@ To add VRAM capture support to an existing pin-centric AVStream driver that uses
 
 4.  Implement StopCapture functionality. When the KMD sends a stop capture notification, the capture driver must stop all capture. To register for notification, the capture driver provides a [*DxgkDdiStopCapture*](https://msdn.microsoft.com/library/windows/hardware/ff560776) callback routine. The capture driver should fail any capture requests coming from user mode after receiving this notification.
 
- 
+ 
 
- 
+ 
 
 
 

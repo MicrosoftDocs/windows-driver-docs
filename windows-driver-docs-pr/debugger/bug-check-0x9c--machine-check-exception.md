@@ -59,7 +59,7 @@ If the processor is based on an older x86-based architecture and has the Machine
 </tbody>
 </table>
 
- 
+ 
 
 If the processor is based on a newer x86-based architecture and has the MCA feature and the MCE feature (for example, any Intel Processor of family 6 or higher, such as Pentium Pro, Pentium IV, or Xeon), or if the processor is an x64-based processor, the parameters have the following meaning.
 
@@ -94,13 +94,13 @@ If the processor is based on a newer x86-based architecture and has the MCA feat
 </tbody>
 </table>
 
- 
+ 
 
 On an Itanium-based processor, the parameters have the following meaning.
 
 **Note**  Parameter 1 indicates the type of violation.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -190,7 +190,7 @@ On an Itanium-based processor, the parameters have the following meaning.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -204,9 +204,9 @@ For other circumstances, this bug check has been replaced with [**bug Check 0x12
 
 For more information about Machine Check Architecture (MCA), see the Intel or AMD Web sites.
 
- 
+ 
 
- 
+ 
 
 
 

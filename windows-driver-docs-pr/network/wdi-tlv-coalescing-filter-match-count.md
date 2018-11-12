@@ -31,7 +31,7 @@ The size (in bytes) of the a UINT64.
 |--------|------------------------------------------------------------------------------|
 | UINT64 | The number of packets that have matched receive filters on the network port. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

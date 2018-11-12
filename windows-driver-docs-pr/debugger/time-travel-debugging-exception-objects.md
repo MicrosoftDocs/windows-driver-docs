@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Type | Describes the type of exception. Possible values are "Software" and "Hardware". |
@@ -22,6 +23,7 @@ ms.localizationpriority: medium
 | RecordAddress | Where in memory you can find the record of the exception.  |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the exception occurred. |

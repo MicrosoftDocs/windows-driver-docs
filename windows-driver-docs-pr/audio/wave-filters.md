@@ -130,9 +130,9 @@ The adapter driver's custom [IDmaChannel](https://msdn.microsoft.com/library/win
 
 For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
 
- 
+ 
 
- 
+ 
 
 
 

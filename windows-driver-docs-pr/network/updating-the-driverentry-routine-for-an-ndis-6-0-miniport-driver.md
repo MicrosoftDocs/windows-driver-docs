@@ -26,9 +26,9 @@ If the call to **NdisMRegisterMiniportDriver** succeeds, the miniport driver mus
 
 For more information about NDIS 6.0 driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ To advance a stream pointer within a frame, the minidriver calls [**KsStreamPoin
 
 Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](https://msdn.microsoft.com/library/windows/hardware/ff563394) structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -87,9 +87,9 @@ Displays the security cache for a hive. *HiveAddress* specifies the address of t
 <span id="_______hashindex_______HiveAddress_HashKey______"></span><span id="_______hashindex_______hiveaddress_hashkey______"></span><span id="_______HASHINDEX_______HIVEADDRESS_HASHKEY______"></span> **hashindex** **** \[*HiveAddress*\] **** *HashKey*   
 Computes the hash index entry for a hash key. *HiveAddress* specifies the address of the hive. *HashKey* specifies the key.
 
-**Note**  *HiveAddress* is required if the target computer is running Windows 7 or later.
+**Note**  *HiveAddress* is required if the target computer is running Windows 7 or later.
 
- 
+
 
 <span id="_______openkeys_HiveAddress0_"></span><span id="_______openkeys_hiveaddress0_"></span><span id="_______OPENKEYS_HIVEADDRESS0_"></span> **openkeys** {*HiveAddress*|**0**}   
 Displays all open keys in a hive. *HiveAddress* specifies the address of the hive. If zero is used instead, the entire registry hash table is displayed; this table contains all open keys in the registry.
@@ -176,7 +176,6 @@ Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 | fffff8a001b9b010 |     203000  | fffff8a001bc4000 |          0    |  0000000000000000  |     0| fffff8a001b9c000  | \Microsoft\Windows\UsrClass.dat
 | fffff8a001dc0010 |      30000  | fffff8a001dc00b0 |          0    |  0000000000000000  |     0| fffff8a001dc2000  | Volume Information\Syscache.hve
 ## | fffff8a0022dc010 |     175000  | fffff8a0022dc0b0 |          0    |  0000000000000000  |     0| fffff8a0022dd000  | \AppCompat\Programs\Amcache.hve
-
 ```
 
 Use the third hive address in the preceding output (fffff8a00004f010) as an argument to **!reg openkeys**.
@@ -192,7 +191,6 @@ Index 140:   d927b0d4 kcb=fffff8a00007ea70 cell=000001a8 f=00200000 \REGISTRY\MA
 Index 160:   96d26a30 kcb=fffff8a00007e6f8 cell=00000020 f=002c0000 \REGISTRY\MACHINE\HARDWARE
 
 # 0x4 keys found
-
 ```
 
 Use the first full key path in the preceding output (\\REGISTRY\\MACHINE\\HARDWARE\\DESCRIPTION\\SYSTEM) as an argument to **!reg querykey**.
@@ -260,9 +258,9 @@ Index 7a1:  48a30288 kcb=e13a3738 cell=00000020 f=002c0004 \REGISTRY\USER\S-1-5-
 
 To display formatted registry key information, use the [**!dreg**](-dreg.md) extension instead.
 
- 
 
- 
+
+
 
 
 

@@ -51,9 +51,9 @@ To determine the log file status, do one of the following:
 
 -   Enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

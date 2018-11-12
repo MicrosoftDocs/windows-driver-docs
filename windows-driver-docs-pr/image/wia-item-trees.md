@@ -27,9 +27,9 @@ This section contains more information in the following sections:
 
 [WIA Scanner Item Tree for Windows 7](wia-scanner-item-tree-for-windows-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

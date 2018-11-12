@@ -26,9 +26,9 @@ Click **OK** to save the file, or click **Cancel** to exit.
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

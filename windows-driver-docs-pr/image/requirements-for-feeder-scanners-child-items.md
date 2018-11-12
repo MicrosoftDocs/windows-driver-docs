@@ -22,11 +22,11 @@ Child items in a feeder scanner item tree (or front and back items) are required
 
 **Note**   The property item settings for the child items must match the settings for the parent item properties. The only exception is the [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property for child items; this property must be set to WIA\_CATEGORY\_FEEDER\_FRONT or WIA\_CATEGORY\_FEEDER\_BACK instead of to WIA\_CATEGORY\_FEEDER.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

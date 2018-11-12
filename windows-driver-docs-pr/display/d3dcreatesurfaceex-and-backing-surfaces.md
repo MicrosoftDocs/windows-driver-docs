@@ -24,9 +24,9 @@ The driver should not fail [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/l
 
 For these backing surfaces, [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) causes a failure code to be propagated to the application; the driver can then potentially affect the application in emulation-only mode. A driver's response to such situations can be tested by running the *ddtest.exe* application that is located on the DirectX 7.0 SDK. Run *ddtest.exe* and try to create a backing surface texture of a format unsupported by the driver, but supported by the DirectDraw emulation layer (a list of these formats can be found in the DirectDraw SDK documentation).
 
- 
+ 
 
- 
+ 
 
 
 

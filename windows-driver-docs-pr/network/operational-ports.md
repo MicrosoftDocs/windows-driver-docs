@@ -20,7 +20,7 @@ The external network adapter provides a connection to the physical network inter
 
 **Note**  An extensible switch supports only one external network adapter connection.
 
- 
+ 
 
 <a href="" id="ndisswitchporttypeinternal"></a>**NdisSwitchPortTypeInternal**  
 This is a port that is configured to be connected to the internal network adapter of the extensible switch. This adapter is exposed in the management operating system that runs in the Hyper-V parent partition.
@@ -29,25 +29,25 @@ The internal network adapter provides access to an extensible switch for process
 
 **Note**  An extensible switch supports only one internal network adapter.
 
- 
+ 
 
 <a href="" id="ndisswitchporttypesynthetic"></a>**NdisSwitchPortTypeSynthetic**  
 This is a port that is configured to be connected to a synthetic network adapter. This adapter is exposed in a guest operating system that runs in a Hyper-V child partition.
 
 **Note**  A synthetic network adapter is a type of virtual machine (VM) network adapter. This adapter is exposed in a guest operating system that is running Windows Vista or a later version of Windows.
 
- 
+ 
 
 <a href="" id="ndisswitchporttypeemulated"></a>**NdisSwitchPortTypeEmulated**  
 This value specifies a port that is configured to be connected to an emulated network adapter. This adapter is exposed in a guest operating system.
 
 **Note**  An emulated network adapter is a type of VM network adapter. This adapter can be exposed in a guest operating system that is running Windows XP or a non-Windows operating system.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

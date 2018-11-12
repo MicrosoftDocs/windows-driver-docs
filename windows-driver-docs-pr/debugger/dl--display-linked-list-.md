@@ -61,7 +61,7 @@ Size of each element. This is the number of consecutive ULONG\_PTRs that will be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +80,9 @@ If the list loops back on itself, the dump will stop. If a null pointer is encou
 
 If you want to execute some command for each element of the list, use the [**!list**](-list.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

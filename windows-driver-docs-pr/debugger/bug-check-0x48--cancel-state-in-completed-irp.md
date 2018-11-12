@@ -55,7 +55,7 @@ The CANCEL\_STATE\_IN\_COMPLETED\_IRP bug check has a value of 0x00000048. This 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -71,9 +71,9 @@ Resolution
 
 The cancel routine parameter can be used to determine which driver or stack caused the bug check.
 
- 
+ 
 
- 
+ 
 
 
 

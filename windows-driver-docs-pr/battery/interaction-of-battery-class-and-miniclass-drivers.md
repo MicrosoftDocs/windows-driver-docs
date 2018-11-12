@@ -25,9 +25,9 @@ The class driver receives information and status from all the miniclass drivers 
 
 The class driver is designed to handle the superset of possible battery information and conditions, including temperature, changes in capacity, and so forth; individual batteries vary in their ability to detect and report all these conditions. Each miniclass driver should be designed to manage its specific battery type and must respond appropriately to the class driver when asked for any information that the battery does not support.
 
- 
+ 
 
- 
+ 
 
 
 

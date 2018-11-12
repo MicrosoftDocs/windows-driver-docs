@@ -26,9 +26,9 @@ The ABNORMAL\_RESET\_DETECTED bug check has a value of 0x00000147. This indicate
 
 None
 
- 
+ 
 
- 
+ 
 
 
 

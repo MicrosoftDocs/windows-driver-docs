@@ -59,9 +59,9 @@ For network initiated operations, the **EventType** member of the [**WWAN\_USSD\
 
 -   The event **WwanUssdEventNetworkTimeOut** is used to indicate that the session was closed due to a session timeout either by the network or locally. The driver or device is responsible for timing out an inactive USSD session after an implementation specific timeout.
 
- 
+ 
 
- 
+ 
 
 
 

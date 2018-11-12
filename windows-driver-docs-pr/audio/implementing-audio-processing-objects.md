@@ -63,7 +63,7 @@ All custom APOs must have the following general characteristics:
 
 **Note**  For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the Windows Kits\\&lt;build number&gt;\\Include\\um folder.
 
- 
+ 
 
 ## <span id="Using_Sample_Code_to_Accelerate_the_Development_Process"></span><span id="using_sample_code_to_accelerate_the_development_process"></span><span id="USING_SAMPLE_CODE_TO_ACCELERATE_THE_DEVELOPMENT_PROCESS"></span>Using Sample Code to Accelerate the Development Process
 
@@ -107,7 +107,7 @@ There are five projects in the SYSVAD sample, one of which is of primary interes
 | **Project**        | **Description**                       |
 | SwapAPO            | Sample code for an example APO.       |
 
- 
+ 
 
 The other projects in the Sysvad sample are summarized below.
 
@@ -119,7 +119,7 @@ The other projects in the Sysvad sample are summarized below.
 | KeywordDetectorAdapter | Sample code for a keyword detector adapter |
 | EndpointsCommon        | Sample code for common endpoints.          |
 
- 
+ 
 
 The primary header files for the SwapAPO sample is swapapo.h. The other primary code elements are summarized below.
 
@@ -134,7 +134,7 @@ The primary header files for the SwapAPO sample is swapapo.h. The other primary 
 | SwapAPOInterface.idl | The interface and type definitions for Swap APO functionality.    |
 | swapapodll.def       | COM exports definitions                                           |
 
- 
+ 
 
 ## <span id="Implementing_the_COM_Object_Audio_Processing_Code"></span><span id="implementing_the_com_object_audio_processing_code"></span><span id="IMPLEMENTING_THE_COM_OBJECT_AUDIO_PROCESSING_CODE"></span>Implementing the COM Object Audio Processing Code
 
@@ -161,7 +161,7 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
 
     **Note**   Because the signal processing that is performed by an SFX APO is different from the signal processing that is performed by an MFX or an EFX APO, you must create separate classes for each.
 
-     
+     
 
 2.  Implement the following three methods:
 
@@ -197,7 +197,7 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
 
- 
+ 
 
 For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](implementing-a-ui-for-configuring-sapos.md).
 
@@ -423,19 +423,19 @@ This sample INF file illustrates the following combination of system effects:
 ```inf
 [MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%MyFilterName%,MyAudioInterface
- 
+ 
 [MyAudioInterface]
 AddReg=MyAudioInterface.AddReg
- 
+ 
 [MyAudioInterface.AddReg]
 ;To register an APO for discovery, use the following property keys in the .inf (or at runtime when registering the KSCATEGORY_AUDIO device interface):
 HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%FX_STREAM_CLSID%
 HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%FX_MODE_CLSID%
 HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_MODE_CLSID%
- 
+ 
 ;To register an APO for streaming and discovery, add the following property keys as well (to the same section):
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
- 
+ 
 ;To register an APO for streaming in multiple modes, use a REG_MULTI_SZ property and include all the modes:
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
 ```

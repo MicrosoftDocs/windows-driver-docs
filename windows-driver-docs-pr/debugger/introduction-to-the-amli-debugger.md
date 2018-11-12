@@ -24,9 +24,9 @@ In versions of Windows before Windows 10, version 1803 checked builds of the Win
 
 The AMLI Debugger is completely 64-bit aware. No matter what processor is being used by the target computer or the host computer, the AMLI Debugger will function correctly.
 
- 
+ 
 
- 
+ 
 
 
 

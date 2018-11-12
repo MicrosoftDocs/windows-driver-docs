@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 Storport does not validate, reject, or transform in any way the SCSI command descriptor blocks (CDBs) that pass through it. Likewise, there is also no filtering or transformation of the sense codes or other sense data that is received back from a device in response to a command that fails with Check Condition status.
 
- 
+ 
 
- 
+ 
 
 
 

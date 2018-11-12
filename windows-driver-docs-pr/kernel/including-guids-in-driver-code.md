@@ -29,21 +29,20 @@ The following code excerpt shows the sequence of statements for including GUIDs:
 ```cpp
 :
 // include system headers here such as wdm.h
- 
+
 #include <initguid.h>
- 
+
 // include system and driver-specific header files here that contain
 // GUID definitions
 
 ...
- 
 ```
 
 Put the above statements in one module of the driver; typically the main module. When the above statements are present, the driver refers to a GUID using its symbolic name.
 
- 
 
- 
+
+
 
 
 

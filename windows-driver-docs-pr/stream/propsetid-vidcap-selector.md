@@ -28,9 +28,9 @@ Clients of the USB video class driver can make the following requests of filters
 
 Properties in the PROPSETID\_VIDCAP\_SELECTOR property set are accessed through the DirectShow **ISelector** interface (see the DirectShow documentation in the Microsoft Windows SDK).
 
- 
+ 
 
- 
+ 
 
 
 

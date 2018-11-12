@@ -25,9 +25,9 @@ If you are [writing a device installation application](writing-a-device-installa
 
 The 32-bit version of the application must check the value returned by [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534). If the return value is ERROR_IN_WOW64, the 32-bit application is executing on a 64-bit platform and cannot update inbox drivers. Instead, it must call [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) (described in the Windows SDK documentation) to start the 64-bit version of the application. The 64-bit version can then call **UpdateDriverForPlugAndPlayDevices**, specifying a *FullInfPath* parameter that identifies the location of the 64-bit versions of all files.
 
- 
+ 
 
- 
+ 
 
 
 

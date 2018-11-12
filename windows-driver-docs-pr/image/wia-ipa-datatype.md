@@ -51,19 +51,19 @@ The following table describes the constants that are valid with WIA\_IPA\_DATATY
 <tr class="odd">
 <td><p>WIA_DATA_AUTO</p></td>
 <td><p>This value is valid for all programmable image data source items, including the Flatbed and Feeder. When this value is supported by the WIA mini-driver the WIA application client can set: <strong>WIA_IPA_DATATYPE</strong> in order to enable automatic color detection at the device.</p>
-<p>When WIA_DATA_AUTO is set, the WIA mini-driver must update [<strong>WIA_IPA_DEPTH</strong>](wia-ipa-depth.md) on the same item to WIA_DEPTH_AUTO (which must be a supported value if the device supports automatic color).</p>
-<p>When the [<strong>WIA_IPA_DEPTH</strong>](wia-ipa-depth.md) value WIA_DEPTH_AUTO is supported, the <strong>WIA_IPA_DATATYPE</strong> value WIA_DATA_AUTO is no longer optional and becomes a required value.</p></td>
+<p>When WIA_DATA_AUTO is set, the WIA mini-driver must update <a href="wia-ipa-depth.md" data-raw-source="[&lt;strong&gt;WIA_IPA_DEPTH&lt;/strong&gt;](wia-ipa-depth.md)"><strong>WIA_IPA_DEPTH</strong></a> on the same item to WIA_DEPTH_AUTO (which must be a supported value if the device supports automatic color).</p>
+<p>When the <a href="wia-ipa-depth.md" data-raw-source="[&lt;strong&gt;WIA_IPA_DEPTH&lt;/strong&gt;](wia-ipa-depth.md)"><strong>WIA_IPA_DEPTH</strong></a> value WIA_DEPTH_AUTO is supported, the <strong>WIA_IPA_DATATYPE</strong> value WIA_DATA_AUTO is no longer optional and becomes a required value.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_DATA_COLOR</p></td>
 <td><p>Scan data is red-green-blue (RGB). The full color format is described by using the following WIA properties:</p>
 <ul>
-<li><p>[<strong>WIA_IPA_CHANNELS_PER_PIXEL</strong>](wia-ipa-channels-per-pixel.md)</p></li>
-<li><p>[<strong>WIA_IPA_BITS_PER_CHANNEL</strong>](wia-ipa-bits-per-channel.md)</p></li>
-<li><p>[<strong>WIA_IPA_PLANAR</strong>](wia-ipa-planar.md)</p></li>
-<li><p>[<strong>WIA_IPA_PIXELS_PER_LINE</strong>](wia-ipa-pixels-per-line.md)</p></li>
-<li><p>[<strong>WIA_IPA_BYTES_PER_LINE</strong>](wia-ipa-bytes-per-line.md)</p></li>
-<li><p>[<strong>WIA_IPA_NUMBER_OF_LINES</strong>](wia-ipa-number-of-lines.md)</p></li>
+<li><p><a href="wia-ipa-channels-per-pixel.md" data-raw-source="[&lt;strong&gt;WIA_IPA_CHANNELS_PER_PIXEL&lt;/strong&gt;](wia-ipa-channels-per-pixel.md)"><strong>WIA_IPA_CHANNELS_PER_PIXEL</strong></a></p></li>
+<li><p><a href="wia-ipa-bits-per-channel.md" data-raw-source="[&lt;strong&gt;WIA_IPA_BITS_PER_CHANNEL&lt;/strong&gt;](wia-ipa-bits-per-channel.md)"><strong>WIA_IPA_BITS_PER_CHANNEL</strong></a></p></li>
+<li><p><a href="wia-ipa-planar.md" data-raw-source="[&lt;strong&gt;WIA_IPA_PLANAR&lt;/strong&gt;](wia-ipa-planar.md)"><strong>WIA_IPA_PLANAR</strong></a></p></li>
+<li><p><a href="wia-ipa-pixels-per-line.md" data-raw-source="[&lt;strong&gt;WIA_IPA_PIXELS_PER_LINE&lt;/strong&gt;](wia-ipa-pixels-per-line.md)"><strong>WIA_IPA_PIXELS_PER_LINE</strong></a></p></li>
+<li><p><a href="wia-ipa-bytes-per-line.md" data-raw-source="[&lt;strong&gt;WIA_IPA_BYTES_PER_LINE&lt;/strong&gt;](wia-ipa-bytes-per-line.md)"><strong>WIA_IPA_BYTES_PER_LINE</strong></a></p></li>
+<li><p><a href="wia-ipa-number-of-lines.md" data-raw-source="[&lt;strong&gt;WIA_IPA_NUMBER_OF_LINES&lt;/strong&gt;](wia-ipa-number-of-lines.md)"><strong>WIA_IPA_NUMBER_OF_LINES</strong></a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -80,16 +80,16 @@ The following table describes the constants that are valid with WIA\_IPA\_DATATY
 </tr>
 <tr class="even">
 <td><p>WIA_DATA_GRAYSCALE</p></td>
-<td><p>Scan data represents intensity. The palette is a fixed, equally spaced grayscale with a depth that the [<strong>WIA_IPA_DEPTH</strong>](wia-ipa-depth.md) property specifies.</p></td>
+<td><p>Scan data represents intensity. The palette is a fixed, equally spaced grayscale with a depth that the <a href="wia-ipa-depth.md" data-raw-source="[&lt;strong&gt;WIA_IPA_DEPTH&lt;/strong&gt;](wia-ipa-depth.md)"><strong>WIA_IPA_DEPTH</strong></a> property specifies.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_DATA_THRESHOLD</p></td>
-<td><p>The threshold is one bit per pixel of black-and-white data. Data over the current value of [<strong>WIA_IPS_THRESHOLD</strong>](wia-ips-threshold.md) is converted to white; data under this value is converted to black.</p></td>
+<td><p>The threshold is one bit per pixel of black-and-white data. Data over the current value of <a href="wia-ips-threshold.md" data-raw-source="[&lt;strong&gt;WIA_IPS_THRESHOLD&lt;/strong&gt;](wia-ips-threshold.md)"><strong>WIA_IPS_THRESHOLD</strong></a> is converted to white; data under this value is converted to black.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_IPA\_DATATYPE property is also used to describe the type of RAW data transfer to be used when the application sets the [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property to the value WiaImgFmt\_RAW. The driver should set the WIA\_IPA\_DATATYPE property to a list of allowed values from which the application can pick.
 
@@ -109,18 +109,18 @@ The following table lists the constants that are valid with WIA\_IPA\_DATATYPE w
 <tbody>
 <tr class="odd">
 <td><p>WIA_DATA_GRAYSCALE</p></td>
-<td><p>Scan data represents intensity. The palette is a fixed, equally spaced grayscale with a depth that the [<strong>WIA_IPA_DEPTH</strong>](wia-ipa-depth.md) property specifies.</p>
-<p>The [<strong>WIA_IPA_RAW_BITS_PER_CHANNEL</strong>](wia-ipa-raw-bits-per-channel.md) property must be set to 1.</p></td>
+<td><p>Scan data represents intensity. The palette is a fixed, equally spaced grayscale with a depth that the <a href="wia-ipa-depth.md" data-raw-source="[&lt;strong&gt;WIA_IPA_DEPTH&lt;/strong&gt;](wia-ipa-depth.md)"><strong>WIA_IPA_DEPTH</strong></a> property specifies.</p>
+<p>The <a href="wia-ipa-raw-bits-per-channel.md" data-raw-source="[&lt;strong&gt;WIA_IPA_RAW_BITS_PER_CHANNEL&lt;/strong&gt;](wia-ipa-raw-bits-per-channel.md)"><strong>WIA_IPA_RAW_BITS_PER_CHANNEL</strong></a> property must be set to 1.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_DATA_RAW_BGR</p></td>
 <td><p>Scan data is in the BGR (blue-green-red) colorspace. The full color format is described by using the following WIA properties:</p>
 <ul>
-<li><p>[<strong>WIA_IPA_CHANNELS_PER_PIXEL</strong>](wia-ipa-channels-per-pixel.md)</p></li>
-<li><p>[<strong>WIA_IPA_BITS_PER_CHANNEL</strong>](wia-ipa-bits-per-channel.md)</p></li>
-<li><p>[<strong>WIA_IPA_PIXELS_PER_LINE</strong>](wia-ipa-pixels-per-line.md)</p></li>
-<li><p>[<strong>WIA_IPA_BYTES_PER_LINE</strong>](wia-ipa-bytes-per-line.md)</p></li>
-<li><p>[<strong>WIA_IPA_NUMBER_OF_LINES</strong>](wia-ipa-number-of-lines.md)</p></li>
+<li><p><a href="wia-ipa-channels-per-pixel.md" data-raw-source="[&lt;strong&gt;WIA_IPA_CHANNELS_PER_PIXEL&lt;/strong&gt;](wia-ipa-channels-per-pixel.md)"><strong>WIA_IPA_CHANNELS_PER_PIXEL</strong></a></p></li>
+<li><p><a href="wia-ipa-bits-per-channel.md" data-raw-source="[&lt;strong&gt;WIA_IPA_BITS_PER_CHANNEL&lt;/strong&gt;](wia-ipa-bits-per-channel.md)"><strong>WIA_IPA_BITS_PER_CHANNEL</strong></a></p></li>
+<li><p><a href="wia-ipa-pixels-per-line.md" data-raw-source="[&lt;strong&gt;WIA_IPA_PIXELS_PER_LINE&lt;/strong&gt;](wia-ipa-pixels-per-line.md)"><strong>WIA_IPA_PIXELS_PER_LINE</strong></a></p></li>
+<li><p><a href="wia-ipa-bytes-per-line.md" data-raw-source="[&lt;strong&gt;WIA_IPA_BYTES_PER_LINE&lt;/strong&gt;](wia-ipa-bytes-per-line.md)"><strong>WIA_IPA_BYTES_PER_LINE</strong></a></p></li>
+<li><p><a href="wia-ipa-number-of-lines.md" data-raw-source="[&lt;strong&gt;WIA_IPA_NUMBER_OF_LINES&lt;/strong&gt;](wia-ipa-number-of-lines.md)"><strong>WIA_IPA_NUMBER_OF_LINES</strong></a></p></li>
 </ul>
 <p>WIA_IPA_RAW_BITS_PER_CHANNEL must be set to 3.</p></td>
 </tr>
@@ -152,7 +152,7 @@ The following table lists the constants that are valid with WIA\_IPA\_DATATYPE w
 </tbody>
 </table>
 
- 
+ 
 
 If you can set the device to only a single value, create a WIA\_PROP\_LIST type and place the valid value in it.
 
@@ -199,9 +199,9 @@ Requirements
 
 [**WIA\_IPS\_THRESHOLD**](wia-ips-threshold.md)
 
- 
+ 
 
- 
+ 
 
 
 

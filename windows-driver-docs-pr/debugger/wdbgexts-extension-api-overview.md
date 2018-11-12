@@ -24,9 +24,9 @@ Each WdbgExts extension DLL also exports a number of *callback functions*. These
 
 The debugger engine will place a **try / except** block around a call to an extension DLL. This protects the engine from some types of bugs in the extension code. However, since the extension calls are executed in the same thread as the engine, they can still cause the engine to crash.
 
- 
+ 
 
- 
+ 
 
 
 

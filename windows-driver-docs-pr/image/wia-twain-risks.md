@@ -25,9 +25,9 @@ When you write your driver, verify incoming values so only valid data is sent to
 
 For the proper validation sequence when using **IStiUSD::Escape**, see [Using the IStiUSD Escape Method](using-the-istiusd-escape-method.md). For additional information about proper locking, see [Locking and Unlocking Best Practices](locking-and-unlocking-best-practices.md).
 
- 
+ 
 
- 
+ 
 
 
 

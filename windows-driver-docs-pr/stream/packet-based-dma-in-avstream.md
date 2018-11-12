@@ -62,9 +62,9 @@ If necessary to resume processing, call [**KsPinAttemptProcessing**](https://msd
 
 Note that if a mapping is less than one physical page in length, it is not guaranteed to reside on a single physical page.
 
- 
+ 
 
- 
+ 
 
 
 

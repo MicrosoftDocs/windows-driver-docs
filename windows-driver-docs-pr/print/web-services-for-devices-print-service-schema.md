@@ -20,9 +20,9 @@ For more information about the specifications for the four Web Services, see [Im
 
 The WSD Print Service schema conforms to the WSD subset of the Printer Working Group (PWG) Semantic Model, which provides elemental descriptions for printers, jobs, and documents.
 
- 
+ 
 
- 
+ 
 
 
 

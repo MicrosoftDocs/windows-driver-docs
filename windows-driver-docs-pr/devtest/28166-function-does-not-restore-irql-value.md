@@ -20,9 +20,9 @@ Typically, the **\_IRQL\_requires\_same\_** annotation is used on callback funct
 
 To avoid this warning, the driver must properly save the initial IRQL value and restore the same IRQL value at function exit, which is what the **\_IRQL\_requires\_same\_** annotation asserts.
 
- 
+ 
 
- 
+ 
 
 
 

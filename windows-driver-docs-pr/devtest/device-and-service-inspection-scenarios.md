@@ -277,11 +277,11 @@ Nothing
 
 Corresponds to what was sent. For an example of the client output, see [Sample Metadata Response Output](sample-metadata-response-output.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

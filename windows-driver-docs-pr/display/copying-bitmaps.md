@@ -99,9 +99,9 @@ When the blt operation takes place, these four regions are not copied, which cau
 
 This is illustrated in the right-most image: the portions of the letter 'M' in the four corners and the center were overwritten with the colors in the source bitmap. The portions of the letter 'M' under the four regions whose color is the same as that in *iTransColor* remain visible.
 
- 
+ 
 
- 
+ 
 
 
 

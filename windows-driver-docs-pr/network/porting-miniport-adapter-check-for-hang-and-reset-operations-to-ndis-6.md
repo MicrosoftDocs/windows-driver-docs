@@ -26,9 +26,9 @@ An NDIS 6.0 miniport driver's *MiniportResetEx* function differs from the NDIS 5
 
 For more information about check-for-hang and reset operations, see [Adapter Check-for-Hang and Reset](miniport-adapter-check-for-hang-and-reset-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ During initialization, because memory is plentiful, memory for the paging buffer
 
 For more information about memory segments and working with paging buffers, see [Handling Memory Segments](handling-memory-segments.md) and [Paging Video Memory Resources](paging-video-memory-resources.md).
 
- 
+ 
 
- 
+ 
 
 
 

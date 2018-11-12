@@ -36,7 +36,7 @@ A property page extension DLL is installed by using the following directives in 
 
     **Important**  Both the name of the DLL and callback function must be enclosed together within quotation marks (" ").
 
-     
+     
 
 2.  Include an [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies the property page extension DLL to the *%SystemRoot%\\System32* directory.
 
@@ -44,9 +44,9 @@ A property page extension DLL is installed by using the following directives in 
 
     For more information, see [Specifying Custom Property Pages for Network Adapters](https://msdn.microsoft.com/library/windows/hardware/ff570843).
 
- 
+ 
 
- 
+ 
 
 
 

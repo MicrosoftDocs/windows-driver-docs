@@ -49,13 +49,13 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerInfo</strong>](scannerinfo.md)</p></td>
+<td><p><a href="scannerinfo.md" data-raw-source="[&lt;strong&gt;ScannerInfo&lt;/strong&gt;](scannerinfo.md)"><strong>ScannerInfo</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerLocation</strong>](scannerlocation.md)</p></td>
+<td><p><a href="scannerlocation.md" data-raw-source="[&lt;strong&gt;ScannerLocation&lt;/strong&gt;](scannerlocation.md)"><strong>ScannerLocation</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerName</strong>](scannername.md)</p></td>
+<td><p><a href="scannername.md" data-raw-source="[&lt;strong&gt;ScannerName&lt;/strong&gt;](scannername.md)"><strong>ScannerName</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,10 +74,10 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementChanges</strong>](elementchanges.md)</p></td>
+<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ElementData for parent ScannerElements</strong>](elementdata-for-scannerelements-element.md)</p></td>
+<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for parent ScannerElements&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData for parent ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -104,9 +104,9 @@ The **ScannerDescription** element contains information about the scanner that r
 
 [**ScannerName**](scannername.md)
 
- 
+ 
 
- 
+ 
 
 
 

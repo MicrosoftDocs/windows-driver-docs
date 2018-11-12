@@ -26,9 +26,9 @@ The routine **scsiport!scsiportnotification** is called right after a request is
 
 Placing a breakpoint in either **scsiport!spstartiosynchronized** or **miniport!HwStartIo** will cause a break just prior to sending a request to the miniport.
 
- 
+ 
 
- 
+ 
 
 
 

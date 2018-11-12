@@ -42,9 +42,9 @@ If you select a line and press CTRL+C, the whole line is copied to the clipboard
 
 Click **Close** to close this dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

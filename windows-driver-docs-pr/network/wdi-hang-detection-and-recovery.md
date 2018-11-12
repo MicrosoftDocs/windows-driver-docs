@@ -30,9 +30,9 @@ These are maximum upper bounds for the commands and processing that takes longer
 [Timings for diagnose call](wdi-timings-for-diagnose-call.md)
 [LE hang detection](wdi-le-hang-detection.md)
 [PLDR](wdi-pldr-and-fldr.md)
- 
+ 
 
- 
+ 
 
 
 

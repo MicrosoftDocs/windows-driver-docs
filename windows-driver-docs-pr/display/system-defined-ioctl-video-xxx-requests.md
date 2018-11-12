@@ -102,9 +102,9 @@ VGA-compatible SVGA miniport drivers are required to support the following addit
 
 Details for each IOCTL can be found in [Video Miniport Driver I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff570515). Miniport driver writers should not use undocumented system-defined IOCTLs.
 
- 
+ 
 
- 
+ 
 
 
 

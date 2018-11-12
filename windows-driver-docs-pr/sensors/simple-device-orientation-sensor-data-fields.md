@@ -19,16 +19,16 @@ The following table shows the data fields. For more information about the data t
 |--|--|--|--|
 |PKEY_SensorData_SimpleDeviceOrientation|VT_UI4|Required|The orientation of the device. For example, whether or not the device is Portrait Up/Down, Landscape Left/Right etc.|
 
- 
+ 
 
 ## Related topics
 
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

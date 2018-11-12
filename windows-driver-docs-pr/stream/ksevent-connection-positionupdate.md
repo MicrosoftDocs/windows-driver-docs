@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_POSITIONUPDATE** event allows a client to receive notification of changes in the current position. The margin of change is stream and filter dependent.
 
- 
+ 
 
- 
+ 
 
 
 

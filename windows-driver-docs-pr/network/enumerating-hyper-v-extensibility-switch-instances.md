@@ -40,9 +40,9 @@ Virtual Network - 2            2048      {OK}
 
 [**Msvm\_VirtualEthernetSwitch**](https://msdn.microsoft.com/library/hh850242)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuratio
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KS_AMVPDATAINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567261)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567261" data-raw-source="[&lt;strong&gt;KS_AMVPDATAINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567261)"><strong>KS_AMVPDATAINFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KS\_AMVPDATAINFO structure that describes the properties of the video port.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KS\_AMVPDATAINFO**](https://msdn.microsoft.com/library/windows/hardware/ff567261)
 
- 
+ 
 
- 
+ 
 
 
 

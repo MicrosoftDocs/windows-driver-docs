@@ -28,9 +28,9 @@ For each of these properties, a default value can be set when the device object 
 
 Values for device object properties can also be set in the registry. See [Setting Device Object Properties in the Registry](setting-device-object-properties-in-the-registry.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

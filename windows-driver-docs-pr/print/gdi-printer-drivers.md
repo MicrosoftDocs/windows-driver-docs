@@ -25,9 +25,9 @@ All Windows 2000 and later printer drivers consist of the following components:
 
 In addition, Microsoft-supplied printer drivers make use of [printer data files](printer-data-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

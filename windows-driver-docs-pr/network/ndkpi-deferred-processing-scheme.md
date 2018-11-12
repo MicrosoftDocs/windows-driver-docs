@@ -43,9 +43,9 @@ For example, consider a case where a consumer has a chain of two fast register r
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

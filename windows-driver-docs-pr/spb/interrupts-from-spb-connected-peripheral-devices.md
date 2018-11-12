@@ -31,9 +31,9 @@ Starting with Windows 8, the [User-Mode Driver Framework](https://msdn.microsof
 
 Starting with Windows 8, the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) supports passive-level ISRs. The KMDF driver for an SPB peripheral device calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect a passive-level ISR to the interrupt from the device. One of the input parameters to this method is a pointer to a [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure that contains configuration information for the interrupt. To configure the ISR to run at passive level, set the **PassiveHandling** member of this structure to **TRUE**. For more information, see [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035).
 
- 
+ 
 
- 
+ 
 
 
 

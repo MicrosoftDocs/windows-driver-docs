@@ -120,7 +120,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -141,7 +141,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>FormatsSupported</strong>](formatssupported.md)</p></td>
+<td><p><a href="formatssupported.md" data-raw-source="[&lt;strong&gt;FormatsSupported&lt;/strong&gt;](formatssupported.md)"><strong>FormatsSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -158,9 +158,9 @@ Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993)
 
 [**FormatsSupported**](formatssupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

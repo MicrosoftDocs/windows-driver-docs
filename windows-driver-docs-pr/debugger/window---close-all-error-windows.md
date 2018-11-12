@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 Click **Close All Error Windows** on the **Window** menu to close all error message boxes that have opened from source files that were not found.
 
- 
+ 
 
- 
+ 
 
 
 

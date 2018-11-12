@@ -30,7 +30,7 @@ The Miracast target should remain in a disconnected state until Dxgkrnl starts a
 | **Miracast**.**Connected**                                  | **TRUE**                                                                                                                                                                                                                                                                   |
 | **Miracast**.**MiracastMonitorType**                        | Value that indicates the connection type. If the Miracast sink is embedded in the monitor or TV, this should be set to the **D3DKMDT\_VOT\_MIRACAST** constant value of the [**D3DKMDT\_VIDEO\_OUTPUT\_TECHNOLOGY**](https://msdn.microsoft.com/library/windows/hardware/ff546605) enumeration. |
 
- 
+ 
 
 These are the Miracast functions that the display miniport driver implements:
 
@@ -105,9 +105,9 @@ If the driver knows the EDID of the monitor, it should report this EDID when the
 
 Depending on hardware capabilities, the Miracast sink mode list, and network bandwidth, the driver should reports the correct source mode, target mode, rotation mode, and scaling mode. For the target mode, driver should report the correct **VSyncFreqDivider** member value in [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff546625). The operating system matches the target mode against the monitor mode and prunes any mode that isn't supported by the monitor.
 
- 
+ 
 
- 
+ 
 
 
 

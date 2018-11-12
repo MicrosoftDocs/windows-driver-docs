@@ -17,9 +17,9 @@ Even when a miniport driver executes in full-duplex mode or does unsynchronized 
 
 When the miniport driver calls **StorPortSynchronizeAccess**, it must supply the routine with a pointer to a callback routine. The callback routine contains the part of the SRB's processing that must be synchronized with the host bus adapter's interrupt handler. For better performance, write your driver to spend as little time as possible executing the callback routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ A miniport driver's *MiniportCancelSend* function performs the following operati
 
 3.  Calls the [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668) function for all canceled NET\_BUFFER\_LIST structures to return the structures.The miniport driver sets the status field of the NET\_BUFFER\_LIST structures to NDIS\_STATUS\_SEND\_ABORTED.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ In addition, the user-mode driver must expose certain capabilities in Direct3D f
 
 -   [Required DXGI formats](required-dxgi-formats.md)
 
- 
+ 
 
- 
+ 
 
 
 

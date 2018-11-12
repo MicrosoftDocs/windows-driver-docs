@@ -67,7 +67,7 @@ Memory address containing the type.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -129,9 +129,9 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
 
 [**dt (Display Type)**](dt--display-type-.md)
 
- 
+ 
 
- 
+ 
 
 
 

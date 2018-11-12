@@ -45,9 +45,9 @@ The following diagram illustrates the interactions from the perspective of the c
 
 ![client driver arch](images/oem-hwnclx-clientarch.png)
 
- 
+ 
 
- 
+ 
 
 
 

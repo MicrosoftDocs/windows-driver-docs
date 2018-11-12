@@ -31,11 +31,11 @@ In operating systems before Windows Vista, the following WIA properties were loc
 
 **Note**   The duplication of WIA properties is needed only for scanners that support flatbed platen scanning or document feeder scanning. The paired properties have the same property identifier for compatibility. The driver can add WIA\_DPS\_*Xxx* properties for the root item and WIA\_IPS\_*Xxx* for other items.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

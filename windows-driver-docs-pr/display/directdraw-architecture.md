@@ -38,13 +38,13 @@ When DirectDraw is invoked, it accesses the graphics card directly through the D
 
 **Note**   If the DirectDraw driver fails an operation, DirectDraw does not pass the operation to the DirectDraw HEL, but instead passes the DirectDraw driver's error code back to the application.
 
- 
+ 
 
 At initialization time and during mode changes, the display driver returns capability (caps) bits to DirectDraw. This enables DirectDraw to access information about the available driver functions, their addresses, and the capabilities of the display card and driver (such as stretching, transparent blits, display pitch, and other advanced characteristics). Once DirectDraw has this information, it can use the DirectDraw driver to access the display card directly, without making GDI calls or using the GDI specific portions of the display driver.
 
- 
+ 
 
- 
+ 
 
 
 

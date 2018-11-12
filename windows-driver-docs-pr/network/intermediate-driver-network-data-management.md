@@ -36,9 +36,9 @@ An intermediate driver with a connectionless lower edge always receives incoming
 
 An intermediate driver with a connection-oriented lower edge always receives incoming data from an underlying miniport adapter from its [**ProtocolCoReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570256) function.
 
- 
+ 
 
- 
+ 
 
 
 

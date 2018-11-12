@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## What is Time Travel Debugging?
 
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
- 
+ 
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
@@ -31,13 +31,13 @@ TTD includes a set of debugger data model objects to allow you to query the trac
 
 This table summarizes the pros and cons of the different debugging solutions available.
 
-Approach​ | Pros | Cons​
-|---------|------|-------|
-| Live debugging | Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.​ | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.​ With repro difficult to work back from point of failure to determine cause.
-| Dumps​ | No coding upfront, low-intrusiveness, based on triggers.  | Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.​  | Often no pre-defect state, limited data, many developers struggle to root cause after the fact.​  | 
-| Telemetry & logs​  |Lightweight, often tied to business scenarios / user actions, machine learning friendly.​  | Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code. 
-| Time Travel Debugging (TTD)​ | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. | Large overhead at record time. May collect more data that is needed. Data files can become large.​ |
 
+|          Approach           |                                                      Pros                                                       |                                                                                                               Cons                                                                                                                |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       Live debugging        |   Interactive experience, sees flow of execution, can change target state, familiar tool in familiar setting.   | Disrupts the user experience, may require effort to reproduce the issue repeatedly, may impact security, not always an option on production systems.  With repro difficult to work back from point of failure to determine cause. |
+|            Dumps            |                            No coding upfront, low-intrusiveness, based on triggers.                             |                                                          Successive snapshot or live dumps provide a simple “over time” view. Overhead is essentially zero if not used.                                                           |
+|      Telemetry & logs       |            Lightweight, often tied to business scenarios / user actions, machine learning friendly.             |                                                         Issues arise in unexpected code paths (with no telemetry). Lack of data depth, statically compiled into the code.                                                         |
+| Time Travel Debugging (TTD) | Great at complex bugs, no coding upfront, offline repeatable debugging, analysis friendly, captures everything. |                                                                 Large overhead at record time. May collect more data that is needed. Data files can become large.                                                                 |
 
 ## TTD Availability 
 

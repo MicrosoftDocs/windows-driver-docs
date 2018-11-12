@@ -49,7 +49,7 @@ The first four members of a generic macroblock control command structure are alw
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="wMBaddress"></span><span id="wmbaddress"></span><span id="WMBADDRESS"></span>wMBaddress
 
@@ -86,7 +86,7 @@ The **wMBaddress** structure member specifies the macroblock address of the curr
 </tbody>
 </table>
 
- 
+ 
 
 The **wPicWidthInMBminus1** and **wPicHeightInMBminus1** addresses are members of the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure.
 
@@ -176,7 +176,7 @@ The **wMBtype** structure member specifies the type of macroblock being processe
 </tbody>
 </table>
 
- 
+ 
 
 When macroblocks are predictively coded, they have associated motion vector values. The values are generated based on whether macroblocks are used for field-coded or frame-coded pictures. It is important for any implementation to properly account for every utilized macroblock type (especially for field-structured pictures or dual-prime motion).
 
@@ -228,7 +228,7 @@ The following table shows the valid combinations of element settings for frame-s
 <tbody>
 <tr class="odd">
 <td align="left"><p>1,0,0 (intra)</p></td>
-<td align="left"><p>'00' (intra)</p></td>
+<td align="left"><p>&#39;00&#39; (intra)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>-</p>
@@ -240,7 +240,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,0,0 (no motion)</p></td>
-<td align="left"><p>'10' (no motion)</p></td>
+<td align="left"><p>&#39;10&#39; (no motion)</p></td>
 <td align="left"><p>0</p>
 <p>-</p></td>
 <td align="left"><p>-</p>
@@ -252,7 +252,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'10' (frame MC)</p></td>
+<td align="left"><p>&#39;10&#39; (frame MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>-</p></td>
 <td align="left"><p>-</p>
@@ -264,7 +264,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,0,1</p></td>
-<td align="left"><p>'10' (frame MC)</p></td>
+<td align="left"><p>&#39;10&#39; (frame MC)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -276,7 +276,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,1</p></td>
-<td align="left"><p>'10' (frame MC)</p></td>
+<td align="left"><p>&#39;10&#39; (frame MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>-</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -288,7 +288,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>-</p>
@@ -300,7 +300,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,0,1</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -312,7 +312,7 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,1,1</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -324,34 +324,34 @@ The following table shows the valid combinations of element settings for frame-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'11' (dual-prime)</p></td>
+<td align="left"><p>&#39;11&#39; (dual-prime)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <div>
- 
+ 
 </div>
 <p>0 (top)</p></td>
-<td align="left"><p>vector'[2][0][0],</p>
+<td align="left"><p>vector&#39;[2][0][0],</p>
 <div>
- 
+ 
 </div>
-vector'[2][0][1]&lt;&lt;1
+vector&#39;[2][0][1]&lt;&lt;1
 <p>1 (bottom)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <div>
- 
+ 
 </div>
 <p>1</p></td>
-<td align="left"><p>vector'[3][0][0],</p>
+<td align="left"><p>vector&#39;[3][0][0],</p>
 <div>
- 
+ 
 </div>
-vector'[3][0][1]&lt;&lt;1
+vector&#39;[3][0][1]&lt;&lt;1
 <p>0</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Field-Structured_Pictures"></span><span id="field-structured_pictures"></span><span id="FIELD-STRUCTURED_PICTURES"></span>Field-Structured Pictures
 
@@ -379,7 +379,7 @@ The following table shows the valid combinations of element settings for field-s
 <tbody>
 <tr class="odd">
 <td align="left"><p>1,0,0 (intra)</p></td>
-<td align="left"><p>'00' (intra)</p></td>
+<td align="left"><p>&#39;00&#39; (intra)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>-</p>
@@ -391,7 +391,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,0,0 (no motion)</p></td>
-<td align="left"><p>'01' (no motion)</p></td>
+<td align="left"><p>&#39;01&#39; (no motion)</p></td>
 <td align="left"><p>0</p>
 <p><em>PicCurrentField</em></p></td>
 <td align="left"><p>-</p>
@@ -403,7 +403,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>-</p>
@@ -415,7 +415,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,0,1</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -427,7 +427,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,1</p></td>
-<td align="left"><p>'01' (field MC)</p></td>
+<td align="left"><p>&#39;01&#39; (field MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -439,7 +439,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'10' (16x8 MC)</p></td>
+<td align="left"><p>&#39;10&#39; (16x8 MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>-</p>
@@ -451,7 +451,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,0,1</p></td>
-<td align="left"><p>'10' (16x8 MC)</p></td>
+<td align="left"><p>&#39;10&#39; (16x8 MC)</p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -463,7 +463,7 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="even">
 <td align="left"><p>0,1,1</p></td>
-<td align="left"><p>'10' (16x8 MC)</p></td>
+<td align="left"><p>&#39;10&#39; (16x8 MC)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p>sel[0][0]</p></td>
 <td align="left"><p>PMV[0][1]</p>
@@ -475,10 +475,10 @@ The following table shows the valid combinations of element settings for field-s
 </tr>
 <tr class="odd">
 <td align="left"><p>0,1,0</p></td>
-<td align="left"><p>'11' (dual-prime)</p></td>
+<td align="left"><p>&#39;11&#39; (dual-prime)</p></td>
 <td align="left"><p>PMV[0][0]</p>
 <p><em>PicCurrentField</em></p></td>
-<td align="left"><p>vector'[2][0]</p>
+<td align="left"><p>vector&#39;[2][0]</p>
 <p><em>PicCurrentField</em></p></td>
 <td align="left"><p>-</p>
 <p>-</p></td>
@@ -488,7 +488,7 @@ The following table shows the valid combinations of element settings for field-s
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Valid_Element_Settings_for_Field_and_Frame_Pictures"></span><span id="additional_valid_element_settings_for_field_and_frame_pictures"></span><span id="ADDITIONAL_VALID_ELEMENT_SETTINGS_FOR_FIELD_AND_FRAME_PICTURES"></span>Additional Valid Element Settings for Field and Frame Pictures
 
@@ -534,15 +534,15 @@ The remaining allowed cases for frame-structured and field-structured pictures a
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The average operator is mathematically identical ((s1+s2+1)&gt;&gt;1) for MPEG-1, MPEG-2 half-sample prediction filtering, bidirectional averaging, and dual prime same-opposite parity combining. The H.263 bidirectional averaging operator does not add the offset of +1 prior to right-shifting. The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) determines which of these methods is used.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

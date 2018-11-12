@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCIEnum** function enumerates parts of a surface.
 
- 
+ 
 
- 
+ 
 
 
 

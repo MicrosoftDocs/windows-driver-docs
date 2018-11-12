@@ -27,16 +27,16 @@ If you implement your own marshaling helper functions, remember that helper func
 |[Collection list serialization helpers](collection-list-serialization-helpers.md)|The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on [SENSOR_COLLECTION_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.|
 |[Collection list legacy helpers](collection-list-legacy-helpers.md)|The collection list legacy helper functions are used by v2 sensor drivers for interacting with [SENSOR_COLLECTION_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.|
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** Sensorsutils.h
 
- 
+ 
 
- 
+ 
 
 
 

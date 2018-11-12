@@ -39,7 +39,7 @@ The VHD\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x0000012F. This 
 <tr class="odd">
 <td align="left">1</td>
 <td align="left"><p>Action that failed</p>
-1 : Couldn't extract VHD information from boot device.
+1 : Couldn&#39;t extract VHD information from boot device.
 2 : Timeout waiting for VHD parent device to surface.
 3 : VHD path string memory allocation error.
 4 : VHD path construction failed.
@@ -63,11 +63,11 @@ The VHD\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x0000012F. This 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

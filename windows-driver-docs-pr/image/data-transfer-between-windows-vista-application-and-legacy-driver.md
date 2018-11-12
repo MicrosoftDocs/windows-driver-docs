@@ -34,9 +34,9 @@ A legacy driver can send "out-of-band" messages during transfers (for example fo
 
 For more information on the TYMED constants, please see [Understanding TYMED](understanding-tymed.md).
 
- 
+ 
 
- 
+ 
 
 
 

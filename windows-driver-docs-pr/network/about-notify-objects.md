@@ -29,7 +29,7 @@ A notify object processes notifications that the network configuration subsystem
 **Note**  Network cards do not support and cannot own notify objects. Physical or virtual network cards that participate in either configuring the network or installing and uninstalling must use INF files or the device co-installer mechanism.
 For more information, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011).
 
- 
+ 
 
 A notify object performs the following actions:
 
@@ -59,9 +59,9 @@ The following topics describe the types of notifications that notify objects rec
 
 [Configuring the Network](configuring-the-network.md)
 
- 
+ 
 
- 
+ 
 
 
 

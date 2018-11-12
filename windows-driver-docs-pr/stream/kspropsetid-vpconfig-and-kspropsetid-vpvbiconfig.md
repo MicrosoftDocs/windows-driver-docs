@@ -48,9 +48,9 @@ Minidrivers that use video ports should implement support for the following prop
 
 [**KSPROPERTY\_VPCONFIG\_SURFACEPARAMS**](ksproperty-vpconfig-surfaceparams.md)
 
- 
+ 
 
- 
+ 
 
 
 

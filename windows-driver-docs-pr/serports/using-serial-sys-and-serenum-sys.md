@@ -74,9 +74,9 @@ These samples demonstrates serial drivers.
     -   [The Virtual serial driver sample (UMDF 1.0)](http://go.microsoft.com/fwlink/p/?LinkId=617963)
     -   [The Virtual serial2 driver sample (KMDF)](http://go.microsoft.com/fwlink/p/?LinkId=722209)
 
- 
+ 
 
- 
+ 
 
 
 

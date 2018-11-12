@@ -27,9 +27,9 @@ NDIS interface providers provide an [**NDIS\_INTERFACE\_INFORMATION**](https://m
 
 NDIS can also query providers with other OIDs. For more information about NDIS provider OIDs, see [NDIS Network Interface to OID Mapping](mapping-of-ndis-network-interfaces-to-ndis-oids.md). For more information about handling OID requests in interface providers, see [Handling OID Query and Set Requests in an NDIS Interface Provider](handling-oid-query-and-set-requests-in-an-ndis-interface-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

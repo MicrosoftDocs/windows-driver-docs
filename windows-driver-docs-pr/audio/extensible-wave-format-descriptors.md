@@ -78,7 +78,7 @@ The four wave-format structures--WAVEFORMAT, PCMWAVEFORMAT, WAVEFORMATEX, and WA
 </tbody>
 </table>
 
- 
+ 
 
 In fact, KMixer supports only a subset of the PCM formats that can be described by these tag values (and it supports no non-PCM formats). USB audio devices (see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver)) are restricted to this subset because all PCM-formatted USB audio streams pass through KMixer. (Some non-PCM USB audio streams can bypass KMixer; for more information, see [USB Audio Support for Non-PCM Formats](usb-audio-support-for-non-pcm-formats.md).) However, in Windows XP and earlier, DirectSound applications can overcome KMixer's restrictions by connecting directly to hardware pins on WaveCyclic and WavePci devices that support formats not supported by KMixer. For more information, see [DirectSound Hardware Acceleration in WDM Audio](directsound-hardware-acceleration-in-wdm-audio.md).
 
@@ -159,7 +159,7 @@ The subset of WAVEFORMATEX PCM formats that KMixer supports differs between Wind
 </tbody>
 </table>
 
- 
+ 
 In WAVEFORMATEXTENSIBLE, **dwBitsPerSample** is the container size, and **wValidBitsPerSample** is the number of valid data bits per sample. Containers are always byte-aligned in memory, and the container size must be specified as a multiple of eight bits.
 
 Before the WAVEFORMATEXTENSIBLE structure was defined, vendors had to register each new wave format with Microsoft so that an official, 16-bit format tag could be assigned to the format. (The format tag is contained in the **wFormatTag** member of the WAVEFORMATEX structure.) A list of registered format tags appears in public header file Mmreg.h (for example, WAVE\_FORMAT\_MPEG).
@@ -168,9 +168,9 @@ With WAVEFORMATEXTENSIBLE, registering formats is no longer necessary. Vendors c
 
 When using WAVEFORMATEXTENSIBLE, set **wFormatTag** to WAVE\_FORMAT\_EXTENSIBLE and **SubFormat** to the appropriate format GUID. For integer PCM formats, set **SubFormat** to KSDATAFORMAT\_SUBTYPE\_PCM. For PCM formats that encode sample values as floating-point numbers, set **SubFormat** to KSDATAFORMAT\_SUBTYPE\_IEEE\_FLOAT. For either of these formats, set **cbSize** to **sizeof**(WAVEFORMATEXTENSIBLE)**-sizeof**(WAVEFORMATEX). For information about using WAVEFORMATEXTENSIBLE to describe non-PCM data formats, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md).
 
- 
+ 
 
- 
+ 
 
 
 

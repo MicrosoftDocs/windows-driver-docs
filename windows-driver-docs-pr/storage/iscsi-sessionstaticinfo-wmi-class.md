@@ -163,9 +163,9 @@ class ISCSI_SessionStaticInfo {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_SessionStaticInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561565) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

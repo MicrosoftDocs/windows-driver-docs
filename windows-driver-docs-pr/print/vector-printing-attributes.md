@@ -20,9 +20,9 @@ Vector printing attributes are [general attributes](general-attributes.md) that 
 
 [Rectangle Area Fill Attributes](rectangle-area-fill-attributes.md)
 
- 
+ 
 
- 
+ 
 
 
 

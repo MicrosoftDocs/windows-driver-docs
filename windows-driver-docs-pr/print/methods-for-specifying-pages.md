@@ -40,9 +40,9 @@ An application can use any of three methods to specify property sheet pages to C
 
 Whichever method is used for specifying new pages, the pages must be assigned to a [group parent](group-parent.md) by passing a group parent handle to the **ComPropSheet** function.
 
- 
+ 
 
- 
+ 
 
 
 

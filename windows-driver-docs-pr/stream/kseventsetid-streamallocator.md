@@ -24,9 +24,9 @@ The KSEVENTSETID\_StreamAllocator event set includes:
 
 [**KSEVENT\_STREAMALLOCATOR\_FREEFRAME**](ksevent-streamallocator-freeframe.md)
 
- 
+ 
 
- 
+ 
 
 
 

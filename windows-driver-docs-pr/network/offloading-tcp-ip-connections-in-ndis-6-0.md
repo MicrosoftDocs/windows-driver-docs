@@ -23,9 +23,9 @@ The NDIS TCP/IP connection offload interface enables services such as TCP chimne
 
 For more information about offloading TCP/IP connections, see [Offloading TCP/IP Connections](offloading-tcp-ip-connections.md).
 
- 
+ 
 
- 
+ 
 
 
 

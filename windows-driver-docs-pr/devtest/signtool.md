@@ -32,7 +32,7 @@ Configures SignTool to update a catalog database. SignTool either adds catalog f
 
 **Note**  Catalog databases are used for automatic lookup of catalog files.
 
- 
+ 
 
 <span id="sign"></span><span id="SIGN"></span>**sign**  
 Configures SignTool to digitally-sign the files whose names are specified by the *FileName* argument.
@@ -198,7 +198,7 @@ Configures SignTool to verify that the digital signature of each of the files sp
 Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](https://msdn.microsoft.com/library/windows/desktop/aa388208) call on Windows 8 and above.
 
 <span id="_o_Version"></span><span id="_o_version"></span><span id="_O_VERSION"></span>**/o** *Version*  
-Verifies the file as per the operating system version. The format for the *Version* argument is *PlatformID***:***VerMajor***.***VerMinor***.***BuildNumber*
+Verifies the file as per the operating system version. The format for the *Version* argument is <em>PlatformID</em>**:**<em>VerMajor</em>**.**<em>VerMinor</em>**.**<em>BuildNumber</em>
 
 The use of the **/o** option is recommended. If **/o** is not specified, SignTool might return unexpected results. For example, if you do not include the **/o** option, system catalogs that validate correctly on an older operating systems might not validate correctly on a newer operating system.
 
@@ -210,14 +210,14 @@ Configures SignTool to verify that the digital signature of each of the files sp
 
 **Note**  This option cannot be used with the **catdb** options.
 
- 
+ 
 
 <span id="_pg__PolicyGUID"></span><span id="_pg__policyguid"></span><span id="_PG__POLICYGUID"></span>**/pg** *PolicyGUID*  
 Specifies a verification policy by GUID. The PolicyGUID corresponds to the ActionID of the verification policy.
 
 **Note**  This option cannot be used with the **catdb** options.
 
- 
+ 
 
 <span id="_ph__"></span><span id="_PH__"></span>**/ph**   
 Specifies that Sign Tool should print and verify page hash values.
@@ -314,9 +314,9 @@ The following is an example of how to use SignTool to add the catalog file Catal
 SignTool catdb /v /u CatalogFileName.cat
 ```
 
- 
+ 
 
- 
+ 
 
 
 

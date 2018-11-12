@@ -20,9 +20,9 @@ The call to *MiniportOidRequest* can complete synchronously or asynchronously. T
 
 ![diagram illustrating setting information in a connectionless miniport driver (per binding)](images/fig5-4.png)
 
- 
+ 
 
- 
+ 
 
 
 

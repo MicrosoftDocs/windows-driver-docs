@@ -20,9 +20,9 @@ If a framework-based driver is using the [manual](dispatching-methods-for-i-o-re
 
 After the driver receives a request, it [owns](request-ownership.md) the request until it [requeues](requeuing-i-o-requests.md), [completes](completing-i-o-requests.md), [cancels](canceling-i-o-requests.md), or [forwards](forwarding-i-o-requests.md) the request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ class MSiSCSI_PortalInfoClass {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_PortalInfoClass**](https://msdn.microsoft.com/library/windows/hardware/ff563097) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

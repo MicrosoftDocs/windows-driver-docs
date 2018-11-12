@@ -21,7 +21,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID WDFVERIFY(
-    exp
+    exp
 );
 ```
 
@@ -66,7 +66,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -84,9 +84,9 @@ Requirements
 
 [**VERIFY_IS_IRQL_PASSIVE_LEVEL**](verify-is-irql-passive-level.md)
 
- 
+ 
 
- 
+ 
 
 
 

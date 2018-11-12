@@ -71,7 +71,7 @@ The !fltkd debugger extension is provided in the [Windows Debugging](https://msd
 </tbody>
 </table>
 
- 
+ 
 
 For additional debugging help, test the minifilter driver with the debug version of Fltmgr.sys, which contains numerous ASSERT statements to catch common errors.
 
@@ -107,9 +107,9 @@ Filter Verifier tracks the following filter manager objects:
 
 -   Volume Objects
 
- 
+ 
 
- 
+ 
 
 
 

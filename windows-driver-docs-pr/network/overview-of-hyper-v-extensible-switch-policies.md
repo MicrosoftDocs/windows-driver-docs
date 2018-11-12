@@ -122,9 +122,9 @@ This example highlights the following points that occur when a MOF class is seri
 
 -   All variable-length strings are serialized into offsets within the buffer that contains the serialized C structure. Each variable-length string is formatted as a **VARIABLE\_LENGTH\_STRING** structure within this buffer offset.
 
- 
+ 
 
- 
+ 
 
 
 

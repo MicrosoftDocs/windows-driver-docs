@@ -85,9 +85,9 @@ Kdexts.dll (Windows XP and later)</td>
 
 [**!vad**](-vad.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ Each property sheet page typically contains several options. For each property s
 
 To use these CPSUI structures to describe property sheet options, the page containing the option must be defined using a [**COMPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff546211) structure.
 
- 
+ 
 
- 
+ 
 
 
 

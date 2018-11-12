@@ -78,9 +78,9 @@ Your file system filter driver can call the following routines to allocate ECPs 
 
 -   Call the [**FltFreeExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff542957) or [**FsRtlFreeExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545989) routine to free the memory for the ECP context structures.
 
- 
+ 
 
- 
+ 
 
 
 

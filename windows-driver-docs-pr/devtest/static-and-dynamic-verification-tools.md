@@ -20,9 +20,9 @@ There are two basic types of verification tools:
 
 The best practice is to use a combination of static and dynamic verification tools. Static tools allow you to check code paths that are difficult to exercise in practice, while the dynamic tools find serious errors that are occurring in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

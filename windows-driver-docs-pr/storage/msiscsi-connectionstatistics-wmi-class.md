@@ -83,9 +83,9 @@ targetname_#:#
 
 The first number sign (\#) is the value in the **USID** member of the [**MSiSCSI\_ConnectionStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562986) structure, and the second number sign (\#) is the value in the **CID** member of this class.
 
- 
+ 
 
- 
+ 
 
 
 

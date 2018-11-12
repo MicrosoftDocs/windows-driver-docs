@@ -30,9 +30,9 @@ DxApi interface support is useful for the following operations:
 
 -   Capturing video and VBI. In the miniport driver, it is easy to capture video that is based on a hardware video port IRQ or graphics IRQ.
 
- 
+ 
 
- 
+ 
 
 
 

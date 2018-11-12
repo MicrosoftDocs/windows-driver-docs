@@ -20,9 +20,9 @@ The following Soft AP required features are ported to Wi-Fi Direct.
 -   Added 802.11b.
 -   Moved all tethering requirements for Soft AP to Wi-Fi Direct.
 
- 
+ 
 
- 
+ 
 
 
 

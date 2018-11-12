@@ -56,9 +56,9 @@ These device driver interfaces (DDIs) support these extensions and are new or up
 -   [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) (new **FrameCompletionNumber** member)
 -   Note also the additional [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) property set listed in [Video Capture Minidriver Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff568714).
 
- 
+ 
 
- 
+ 
 
 
 

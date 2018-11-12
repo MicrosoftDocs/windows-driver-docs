@@ -26,7 +26,7 @@ The state supported by the sample driver corresponds to a constant found in the 
 |----------------------|----------------------------------------------------------------|
 | SENSOR\_STATE\_READY | Indicates that the sensor is connected and ready to send data. |
 
- 
+ 
 
 As noted earlier, the sensor class extension handles the event-linkage between the sample driver and the Sensor API. Each time the driver invokes the **ISensorClassExtension::PostStateChange** method, the class extension forwards the notification to the API. The sample driver invokes this method within **CSensorManager::SetState**. When the driver invokes the **ISensorClassExtension::PostEvent** method and supplies the property key for the data-updated event, the class extension forwards the notification to the Sensor API. The sample driver invokes this method within **CSensorManager::PostDataEvent**.
 

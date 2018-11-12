@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>RequestedElements</strong>](requestedelements.md)</p></td>
+<td><p><a href="requestedelements.md" data-raw-source="[&lt;strong&gt;RequestedElements&lt;/strong&gt;](requestedelements.md)"><strong>RequestedElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The specified JobId was not found. |
     | \[Detail\]     | JobId: Incorrect JobId             |
 
-     
+     
 
 Examples
 --------
@@ -124,9 +124,9 @@ The following code example requests the status of the scan job that Fault proper
 
 [**RequestedElements**](requestedelements.md)
 
- 
+ 
 
- 
+ 
 
 
 

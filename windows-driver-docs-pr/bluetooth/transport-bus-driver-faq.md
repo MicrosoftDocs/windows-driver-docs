@@ -50,9 +50,9 @@ In this situation, the bus driver should complete the D2 transition, and then pr
 
 There is no way to tag a resource, GPIO or otherwise. This is why the resource order is important. The device driver should establish a convention (e.g. first GPIO resource to appear in the list is for BT\_WAKE and the second one to appear is for HOST\_WAKE).
 
- 
+ 
 
- 
+ 
 
 
 

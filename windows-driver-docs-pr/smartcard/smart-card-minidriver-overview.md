@@ -41,7 +41,7 @@ The *Cardmod.h* C header file provides additional information that is relevant t
 
             **Note**  The [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx) offers the only method for digitally signing drivers for Windows. So it is important to refer to the web site for this information.
 
-             
+             
 
     -   Adherence to Microsoft Security Development Lifecycle (SDL) Process Guidance.
 
@@ -87,7 +87,7 @@ If a file cannot be read from a card due to I/O errors, or some other unrecovera
 
 Returning SCARD\_E\_FILE\_NOT\_FOUND as an umbrella error code in such situations, provides misleading debugging information.
 
- 
+ 
 
 ## <span id="Authentication_and_Authorization"></span><span id="authentication_and_authorization"></span><span id="AUTHENTICATION_AND_AUTHORIZATION"></span>Authentication and Authorization
 
@@ -146,7 +146,7 @@ The following sample code shows the expected card minidriver behavior when check
 
 **Note**  If the version that the card minidriver returns is not suitable for the purposes of the calling application, it is the responsibility of the calling application to handle this appropriately.
 
- 
+ 
 
 After **dwVersion** is set in the call to [**CardAcquireContext**](https://msdn.microsoft.com/library/windows/hardware/dn468701), assume that it will not be changed by either the caller or the card minidriver while it is in the same context.
 
@@ -156,9 +156,9 @@ For other versioned structures and other card minidriver API methods, version ha
 
 The [**CardRSADecrypt**](https://msdn.microsoft.com/library/windows/hardware/dn468737) and [**CardSignData**](https://msdn.microsoft.com/library/windows/hardware/dn468741) functions have special handling for version numbers for the data structures that are passed in.
 
- 
+ 
 
- 
+ 
 
 
 

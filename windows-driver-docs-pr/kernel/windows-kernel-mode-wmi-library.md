@@ -20,9 +20,9 @@ For a list of WMI callbacks, see [WMI Library Callback Routines](https://msdn.mi
 
 Communication with WMI is done with IRPs. For a list of routines that your driver can use to receive IRPs, see [WMI IRP Processing Routines](https://msdn.microsoft.com/library/windows/hardware/ff566353). For a list of routines that your driver can use to send WMI IRPs, see [WMI IRP Sending Routines](https://msdn.microsoft.com/library/windows/hardware/ff566355). For a list of IRPs that are used with WMI, see [WMI Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff566361).
 
- 
+ 
 
- 
+ 
 
 
 

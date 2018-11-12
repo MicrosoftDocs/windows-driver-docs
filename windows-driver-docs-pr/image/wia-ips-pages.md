@@ -52,14 +52,14 @@ The following table describes the constant that is valid with WIA\_IPS\_PAGES.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   If duplex mode is enabled (that is, if WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER | DUPLEX), WIA\_IPS\_PAGES is still equal to the number of pages to scan.
 One sheet of paper will automatically contain two pages if DUPLEX is enabled, even if the back side of the page is blank.
 
 If you set WIA\_IPS\_PAGES to 1, the scanner will process one of the sides of the page. We recommend that, if a scanner is unable to scan only one side of a page while in duplex mode, you should change the WIA\_IPS\_PAGES value for the **Inc** member of the [**WIA\_PROPERTY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552751) structure to 2. With this value, the application must request pages in multiples of two. A value of zero means that *all* pages that are currently loaded into the document feeder are to be scanned.
 
- 
+ 
 
 Requirements
 ------------
@@ -88,9 +88,9 @@ Requirements
 
 [**WIA\_PROPERTY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552751)
 
- 
+ 
 
- 
+ 
 
 
 

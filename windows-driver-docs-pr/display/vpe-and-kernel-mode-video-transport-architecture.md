@@ -32,15 +32,15 @@ The preceding figure shows the kernel-mode video transport architecture in relat
 
 **Note**   This architecture also supports using the PCI bus for data flow between the MPEG device and VGA device.
 
- 
+ 
 
 In Windows 2000 and later, the client then passes these handles to the miniport driver. These handles are specified in the calls to the kernel-mode video transport. The following figure shows a simple version of how the handles are passed in user- and kernel-mode video transport.
 
 ![diagram illustrating handle passing in windows 2000 video transport](images/ddfg012.png)
 
- 
+ 
 
- 
+ 
 
 
 

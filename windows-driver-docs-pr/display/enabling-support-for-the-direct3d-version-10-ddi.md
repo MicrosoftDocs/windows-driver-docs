@@ -29,9 +29,9 @@ The following example shows how support for the version 10 DDI is enabled if the
  HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, umd, umd 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

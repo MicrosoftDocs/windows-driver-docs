@@ -25,9 +25,9 @@ Unlike an NDIS 5.*x* miniport driver, an NDIS 6.0 miniport driver can request de
 
 For more information about handling interrupts, see [Handling Interrupts](handling-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

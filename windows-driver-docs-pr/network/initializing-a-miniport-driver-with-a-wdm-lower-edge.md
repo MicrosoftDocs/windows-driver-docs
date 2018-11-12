@@ -29,9 +29,9 @@ A miniport driver with a WDM lower edge must be a deserialized miniport driver. 
 
 Note that an NDIS-WDM miniport driver cannot be an intermediate driver (a driver that exposes a miniport driver interface at the top and a protocol driver interface at the bottom).
 
- 
+ 
 
- 
+ 
 
 
 

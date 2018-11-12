@@ -86,9 +86,9 @@ To get the buffers themselves, the driver calls one of the following methods:
 -   [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014), which returns the **Parameters.DeviceIoControl.Type3InputBuffer** field of the IRP.
 -   [**WdfRequestRetrieveOutputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550018), which returns the **UserBuffer** field of the IRP.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ The Mobile Broadband SMS platform provides the ability to get the first SMS-capa
 **Note**  
 In apps that use C# or C++ in Windows 8, Windows 8.1, or Windows 10, the first use of the [**SmsDevice**](https://msdn.microsoft.com/library/windows/apps/br206511) object to call [**GetDefaultAsync**](https://msdn.microsoft.com/library/windows/apps/br211915) or [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/br211914) should be on the STA thread. Calls from an MTA thread can result in undefined behavior.
 
- 
+ 
 
 **JavaScript code example to use the default SMS device**
 
@@ -103,9 +103,9 @@ function hex(nmb)
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ The following sections discuss issues that affect miniport drivers of graphics a
 
 [Using I2C to Communicate with a Child Device](using-i2c-to-communicate-with-a-child-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

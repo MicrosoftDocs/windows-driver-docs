@@ -18,7 +18,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898037) |                                |          | Protocol offload ID. |
 
- 
+ 
 
 ## Set property results
 
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD](oid-wdi-set-add-pm-protocol-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

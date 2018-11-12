@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND to inform the RF tuner node ab
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

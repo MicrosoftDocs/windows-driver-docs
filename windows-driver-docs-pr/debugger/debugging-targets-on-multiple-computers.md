@@ -22,9 +22,9 @@ The *current* or *active* system is the system currently being debugged. If you 
 
 For details on how to control such a debugging session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

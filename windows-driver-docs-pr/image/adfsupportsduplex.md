@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADF</strong>](adf.md)</p></td>
+<td><p><a href="adf.md" data-raw-source="[&lt;strong&gt;ADF&lt;/strong&gt;](adf.md)"><strong>ADF</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ You cannot extend the allowed values for this element.
 
 [**ADF**](adf.md)
 
- 
+ 
 
- 
+ 
 
 
 

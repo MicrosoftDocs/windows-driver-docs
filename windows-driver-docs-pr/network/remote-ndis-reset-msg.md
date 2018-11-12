@@ -49,7 +49,7 @@ This message is sent to a Remote NDIS device from a host to reset the device and
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +71,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

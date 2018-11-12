@@ -43,9 +43,9 @@ The section contains the following sections:
 
 [Debugging Still Image Components](debugging-still-image-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

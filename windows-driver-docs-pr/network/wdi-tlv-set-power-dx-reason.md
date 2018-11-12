@@ -45,13 +45,13 @@ The size (in bytes) of a UINT32.
 <p>Valid values are:</p>
 <ul>
 <li><p>WDI_SET_POWER_DX_REASON_SELETIVE_SUSPEND (1)</p>
-<p>When this value is set, it implies waking on any interesting external events without explicit [<strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong>](wdi-tlv-enable-wake-events.md). This is an idle low power where the device functions transparently to end users as if it were in D0. See [WDI USB remote wake sequence](https://msdn.microsoft.com/library/windows/hardware/mt269159) for more information.</p></li>
+<p>When this value is set, it implies waking on any interesting external events without explicit <a href="wdi-tlv-enable-wake-events.md" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](wdi-tlv-enable-wake-events.md)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a>. This is an idle low power where the device functions transparently to end users as if it were in D0. See <a href="https://msdn.microsoft.com/library/windows/hardware/mt269159" data-raw-source="[WDI USB remote wake sequence](https://msdn.microsoft.com/library/windows/hardware/mt269159)">WDI USB remote wake sequence</a> for more information.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -77,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

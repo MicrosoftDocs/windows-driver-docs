@@ -45,7 +45,7 @@ The **!ubl** extension lists all user-space breakpoints and their current status
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Each line in this listing contains the breakpoint number, the status (**e** for 
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

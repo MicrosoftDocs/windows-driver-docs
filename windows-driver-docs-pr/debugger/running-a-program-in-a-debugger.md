@@ -34,9 +34,9 @@ This feature configures the program so that it always runs in a debugger with th
 
 5.  Click **Apply**.
 
- 
+ 
 
- 
+ 
 
 
 

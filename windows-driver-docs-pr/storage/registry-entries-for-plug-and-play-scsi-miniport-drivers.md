@@ -46,9 +46,9 @@ The values preceding REG\_DWORD correspond to the INTERFACE\_TYPE enumerated typ
 
 After the **PnPInterface** values are set in the registry and the system is restarted, the miniport driver can be initialized as a Plug and Play driver. During initialization, the SCSI port driver checks the registry to determine whether the miniport driver should be run as a Plug and Play or legacy driver. The SCSI port driver checks the registry for each interface type that the miniport driver supports (for example, PCI and ISA). This is intended primarily to simplify debugging for writers of multiple-interface miniport drivers. The miniport driver writer should make sure that a miniport driver is capable of being run as a Plug and Play driver for all interfaces that driver supports.
 
- 
+ 
 
- 
+ 
 
 
 

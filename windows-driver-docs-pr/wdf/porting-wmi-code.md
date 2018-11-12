@@ -18,9 +18,9 @@ For KMDF drivers, the framework provides default handling for [**IRP\_MJ\_SYSTEM
 
 For implementation details, see [Supporting WMI in KMDF Drivers](supporting-wmi-in-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,11 +30,11 @@ Scanners and cameras have a set of required properties. These properties are lis
 
 Some properties have dependencies on other properties. For example, the [**format**](https://msdn.microsoft.com/library/windows/hardware/ff551553) property is dependent on the [**tymed**](https://msdn.microsoft.com/library/windows/hardware/ff551656) property. These inter-property dependencies are covered in [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

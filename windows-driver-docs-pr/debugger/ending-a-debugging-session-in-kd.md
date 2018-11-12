@@ -27,9 +27,9 @@ When you are performing remote debugging, [**q**](q--qq--quit-.md) ends the debu
 
 If the [**q (Quit)**](q--qq--quit-.md) command does not work, press [**CTRL+R**](ctrl-r--re-synchronize-.md) and then press ENTER on the host computer's keyboard, and then retry the **q** command. If this procedure does not work, you must use CTRL+B to exit the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

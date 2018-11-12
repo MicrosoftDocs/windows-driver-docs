@@ -26,13 +26,13 @@ When you write an [INF file](inf-files.md) for your [driver package](driver-pack
 
     **Note**  Do not use the [**INF CopyFiles directive**](inf-copyfiles-directive.md) to copy INF files.
 
-     
+     
 
 -   The components of a driver package must never directly copy or delete INF files directly into a system's *%SystemRoot%/Inf* directory. This results in the driver's digital signature to be invalidated, and this causes the driver not to load successfully.
 
- 
+ 
 
- 
+ 
 
 
 

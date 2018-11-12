@@ -18,9 +18,9 @@ This section describes how a Windows Driver Frameworks (WDF) driver can customiz
 -   [Using Automatic Synchronization](using-automatic-synchronization.md)
 -   [Using Framework Locks](using-framework-locks.md)
 
- 
+ 
 
- 
+ 
 
 
 

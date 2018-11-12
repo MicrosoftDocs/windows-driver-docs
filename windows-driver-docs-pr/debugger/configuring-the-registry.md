@@ -38,7 +38,6 @@ This will add entries for the settings that will be prefixed with an "x" so that
 "xFailurePeriod"=dword:00000078
 "xFailureTimeout"=dword:00002d
 "xFailureBlackout"=dword:0000384
-
 ```
 
 The symproxy.reg registry file assumes a virtual directory name of Symbols and configures the Symbol Path to use the Microsoft Public Symbol Server.
@@ -82,7 +81,7 @@ For example, if one of the virtual directories is called Symbols, and the symbol
 HKLM/Software/Microsoft/Symbol Server Proxy/Web Directories/Symbols
 ```
 
-After this key is created, edit its **SymbolPath** to be \\\\symbols\\symbols;https://msdl.microsoft.com/download/symbols. This can be seen in the following screenshot of the Registry Editor.
+After this key is created, edit its **SymbolPath** to be \\\\symbols\\symbols;<https://msdl.microsoft.com/download/symbols>. This can be seen in the following screenshot of the Registry Editor.
 
 ![screen shot of the registry editor showing a revised symbolpath](images/symproxy-registry.png)
 
@@ -186,7 +185,7 @@ SymProxy logs the following events:
 | 104          | General Analytic Message          | Analytic    |
 | 105          | General Debug Message             | Debug       |
 
- 
+
 
 ### <span id="Symbol_Server_Proxy_Configuration"></span><span id="symbol_server_proxy_configuration"></span><span id="SYMBOL_SERVER_PROXY_CONFIGURATION"></span>Symbol Server Proxy Configuration
 
@@ -246,7 +245,7 @@ The Symbol Server Proxy registry key supports the following global settings (all
 <p>The first request for the file after N seconds causes the upstream symbol stores to be re-queried.</p>
 <p>On success, the symbol file is returned and the miss is deleted.</p>
 <p>On failure, the miss is moved forward to the current time (in UTC) to start a new timeout period.</p>
-<p>Use the “Miss Cache *” counters to monitor the misses.</p>
+<p>Use the “Miss Cache <em>” counters to monitor the misses.</p>
 <p>• Unspecified - (default) 300 seconds/5 minutes</p>
 <p>• 0 – Feature disabled</p>
 <p>• N – Timeout lasts N seconds</p></td>
@@ -266,7 +265,7 @@ The Symbol Server Proxy registry key supports the following global settings (all
 <p>MissFileCache causes an I/O operation on the first request for a missing symbol (Miss File Read), the download of a symbol (Miss File Delete), and a failed symbol lookup (Miss File Write).</p>
 <p>Use the “Miss File XXX/sec” counters to monitor the operations.</p>
 <p>It is safe to delete .miss files while the SymProxy is running:</p>
-<p>C:\&gt; del C:\SymStore\Symbols\*.miss /s</p></td>
+<p>C:&amp;gt; del C:\SymStore\Symbols</em>.miss /s</p></td>
 </tr>
 <tr class="even">
 <td align="left">MissFileThreads</td>
@@ -285,7 +284,7 @@ The Symbol Server Proxy registry key supports the following global settings (all
 </tbody>
 </table>
 
- 
+
 
 ### <span id="accessing_outside_network_resources"></span><span id="ACCESSING_OUTSIDE_NETWORK_RESOURCES"></span>Accessing Outside Network Resources
 
@@ -301,9 +300,9 @@ Consequently, you may need to set up HTTP proxy settings so that this service ca
 
 The default behavior of SymProxy is to use whatever HTTP proxy is designated by either ProxyCfg or Netsh. If no HTTP proxy is configured, SymProxy uses a dummy proxy to allow access to secure HTTP sites within your intranet. As a side effect, this technique prevents SymProxy from working with direct connections to the external Internet. If you wish to permit SymProxy to operate with a direct connection to the Internet, create a REG\_DWORD value named **NoInternetProxy** in the **Symbol Server Proxy** key of your registry. Set the value of **NoInternetProxy** to 1 and verify that there is no HTTP proxy indicated by ProxyCfg.
 
- 
 
- 
+
+
 
 
 

@@ -28,9 +28,9 @@ Click **Cancel** to cancel changes to the font.
 
 For more information about how to change the character display of the debugging information windows, see [Changing Text Properties](changing-text-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

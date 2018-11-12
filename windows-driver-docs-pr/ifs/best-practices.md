@@ -19,9 +19,9 @@ If a minifilter driver creates only one minifilter driver instance per volume, i
 
 A minifilter driver can also improve performance by storing a pointer to the minifilter driver instance context inside its stream or stream handle contexts.
 
- 
+ 
 
- 
+ 
 
 
 

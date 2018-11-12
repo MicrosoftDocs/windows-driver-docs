@@ -20,9 +20,9 @@ Vertex blending operations are supported for the latest Direct X release. Vertex
 
 Next, the view matrix is applied, which effectively compresses the space relative to a particular viewpoint; much like a camera renders the real world onto a two-dimensional picture.
 
- 
+ 
 
- 
+ 
 
 
 

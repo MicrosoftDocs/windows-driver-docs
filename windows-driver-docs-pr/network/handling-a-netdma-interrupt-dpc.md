@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -23,9 +23,9 @@ Dynamic memory access (DMA) providers call the [**NetDmaInterruptDpc**](https://
 
 The NetDMA provider driver passes the physical address of the last completed DMA descriptor at the *DmaDescriptor* parameter of **NetDmaInterruptDpc**. If the NetDMA provider calls **NetDmaInterruptDpc** when there is an error, the NetDMA provider sets*DmaDescriptor* to **NULL**.
 
- 
+ 
 
- 
+ 
 
 
 

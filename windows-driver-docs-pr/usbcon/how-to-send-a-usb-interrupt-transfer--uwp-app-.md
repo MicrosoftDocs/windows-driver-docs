@@ -31,19 +31,21 @@ For interrupt endpoints, the descriptor exposes these properties. Those values a
 
     Get that information by getting the **Interval** value of the endpoint descriptor (see [**UsbInterruptOutEndpointDescriptor.Interval**](https://msdn.microsoft.com/library/windows/apps/dn278422) or [**UsbInterruptInEndpointDescriptor.Interval**](https://msdn.microsoft.com/library/windows/apps/dn278411)). That value indicates how often data is sent to or received from the device in each frame on the bus.
 
-    **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
+    **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
 
-     
 
-    That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
+
+~~~
+That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
+~~~
 
 -   How much data can be transmitted in each service interval?
 
     Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see UsbInterruptOutEndpointDescriptor.MaxPacketSize or UsbInterruptInEndpointDescriptor.MaxPacketSize. The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
 
-    **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property and then parse that buffer by using [**DataReader**](https://msdn.microsoft.com/library/windows/apps/br208119) methods.
+    **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property and then parse that buffer by using [**DataReader**](https://msdn.microsoft.com/library/windows/apps/br208119) methods.
 
-     
+
 
 **Interrupt OUT transfers**
 
@@ -128,9 +130,9 @@ To register the event handler for the [**DataReceived**](https://msdn.microsoft.
 -   [**UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe**](https://msdn.microsoft.com/library/windows/apps/dn264292) for enumerating interrupt IN pipes defined by settings of an interface.
 -   [**UsbEndpointDescriptor.AsInterruptInEndpointDescriptor.Pipe**](https://msdn.microsoft.com/library/windows/apps/dn278413) for getting the pipe object from the endpoint descriptor for the interrupt IN endpoint.
 
-**Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.
+**Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.
 
- 
+
 
 ## Step 3: Register the event handler to start receiving data (Interrupt IN)
 
@@ -158,7 +160,7 @@ private void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, Usb
 void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterruptInEventArgs> eventHandler)
     // Search for the correct pipe that has the specified endpoint number
     interruptInPipe = usbDevice.DefaultInterface.InterruptInPipes.GetAt(pipeIndex);
-        
+
     // Save the token so we can unregister from the event later
     interruptEventHandler = interruptInPipe.DataReceived += eventHandler;
 
@@ -202,9 +204,9 @@ void UnregisterFromInterruptEvent(void)
 
 After the event handler is unregistered, the app stops receiving data from the interrupt pipe because the event handler is not invoked on interrupt events. This does not mean that the interrupt pipe stops getting data.
 
- 
 
- 
+
+
 
 
 

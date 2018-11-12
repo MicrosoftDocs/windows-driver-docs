@@ -58,11 +58,11 @@ To enable Remote Wake in software, verify that the Bluetooth module can support 
 
 **Note**  If the Bluetooth radio’s property page in Device Manager has a **Power Management** tab, the radio can support wake. If no **Power Management** tab exists, the radio might support wake, but it is unlikely.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

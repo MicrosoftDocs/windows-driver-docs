@@ -13,9 +13,9 @@ You can initialize WPP tracing in a user-mode application by calling the [WPP\_I
 
 To avoid errors, you should call the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro at a point in your source code where no tracing attempts have been previously made.
 
- 
+ 
 
- 
+ 
 
 
 

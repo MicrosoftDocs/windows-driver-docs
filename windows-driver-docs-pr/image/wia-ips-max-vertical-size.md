@@ -51,9 +51,9 @@ Requirements
 
 [**WIA\_IPS\_MAX\_HORIZONTAL\_SIZE**](wia-ips-max-horizontal-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

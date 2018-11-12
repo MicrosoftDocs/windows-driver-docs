@@ -26,9 +26,9 @@ To unregister an ISR, a driver can call **IoDisconnectInterruptEx** regardless o
 
 An **IoReportInterruptActive** call that occurs when the ISR is already active has no effect, but is not treated as an error. Similarly, an **IoReportInterruptInactive** call that occurs when the ISR is already inactive has no effect, but is not treated as an error.
 
- 
+ 
 
- 
+ 
 
 
 

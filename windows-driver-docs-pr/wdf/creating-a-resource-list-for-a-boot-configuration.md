@@ -26,9 +26,9 @@ After the driver's *EvtDeviceResourcesQuery* callback function returns, the fram
 
 Device installers can specify additional resource lists. For more information about additional resource lists, see [Hardware Resources](https://msdn.microsoft.com/library/windows/hardware/ff547012).
 
- 
+ 
 
- 
+ 
 
 
 

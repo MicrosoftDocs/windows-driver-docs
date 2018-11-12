@@ -89,19 +89,19 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Heights</strong>](heights.md)</p></td>
+<td><p><a href="heights.md" data-raw-source="[&lt;strong&gt;Heights&lt;/strong&gt;](heights.md)"><strong>Heights</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenMaximumSize</strong>](platenmaximumsize.md)</p></td>
+<td><p><a href="platenmaximumsize.md" data-raw-source="[&lt;strong&gt;PlatenMaximumSize&lt;/strong&gt;](platenmaximumsize.md)"><strong>PlatenMaximumSize</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>PlatenMinimumSize</strong>](platenminimumsize.md)</p></td>
+<td><p><a href="platenminimumsize.md" data-raw-source="[&lt;strong&gt;PlatenMinimumSize&lt;/strong&gt;](platenminimumsize.md)"><strong>PlatenMinimumSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenOpticalResolution</strong>](platenopticalresolution.md)</p></td>
+<td><p><a href="platenopticalresolution.md" data-raw-source="[&lt;strong&gt;PlatenOpticalResolution&lt;/strong&gt;](platenopticalresolution.md)"><strong>PlatenOpticalResolution</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -132,9 +132,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

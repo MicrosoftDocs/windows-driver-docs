@@ -58,7 +58,7 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -130,7 +130,7 @@ Set this to the desired time-out in 100-ns units. For example, the default time-
 <span id="Retries"></span><span id="retries"></span><span id="RETRIES"></span>**Retries**  
 Set this to the desired number of times *avc.sys* should attempt to retry requests after each time-out without a response. Note that a retry count of zero means that the request is tried once. The total amount of time spent trying to process a command without getting a response is calculated by the following formula:
 
-***Timeout*** *\* (****Retries*** *+ 1)*
+***Timeout*** *\* (***<em>Retries</em>** *+ 1)*
 
 This parameter is ignored if **RetryFlag** is zero.
 
@@ -161,9 +161,9 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**AvcCommandType**](https://msdn.microsoft.com/library/windows/hardware/ff554099), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION\_FIND\_PEER\_DO**](avc-function-find-peer-do.md), [**AVC\_FUNCTION\_PEER\_DO\_LIST**](avc-function-peer-do-list.md), [**AVC\_FUNCTION\_GET\_SUBUNIT\_INFO**](avc-function-get-subunit-info.md)
 
- 
+ 
 
- 
+ 
 
 
 

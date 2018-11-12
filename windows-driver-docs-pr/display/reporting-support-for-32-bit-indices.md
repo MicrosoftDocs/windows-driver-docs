@@ -19,12 +19,12 @@ Before DirectX 8.0, vertex indices were restricted to 16-bit quantities. DirectX
 
 **DirectX 9.0 and later versions only.**
 
- 
+ 
 
 In order for a driver to expose its Direct3D hardware abstraction layer (HAL) device to applications through DirectX 9.0 interfaces, the driver must set the value of **MaxVertexIndex** to a value greater than or equal to 0xFFFF.
- 
+ 
 
- 
+ 
 
 
 

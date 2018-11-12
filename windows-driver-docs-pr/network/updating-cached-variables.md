@@ -63,7 +63,7 @@ The following table lists some of the events that require updates to cached vari
 </tbody>
 </table>
 
- 
+ 
 
 Note that, if an offloaded TCP connection's TCP\_FLAG\_MAX\_RT\_RESTART flag is set (in the **Flags** member of [**TCP\_OFFLOAD\_STATE\_CACHED**](https://msdn.microsoft.com/library/windows/hardware/ff570937)), the offload target must:
 
@@ -71,9 +71,9 @@ Note that, if an offloaded TCP connection's TCP\_FLAG\_MAX\_RT\_RESTART flag is 
 
 -   Reset that connection's delegated *KeepaliveTimeoutDelta* variable when the host stack updates that connection's cached *KaTimeout* variable or *KaInterval* variable or both.
 
- 
+ 
 
- 
+ 
 
 
 

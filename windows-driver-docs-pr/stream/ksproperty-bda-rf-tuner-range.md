@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_RANGE to control the tuner range, that i
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,9 +91,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

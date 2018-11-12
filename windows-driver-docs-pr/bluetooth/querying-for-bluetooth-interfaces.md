@@ -30,22 +30,22 @@ The Bluetooth driver stack exposes the following interfaces that profile drivers
 <tr class="odd">
 <td align="left"><p>GUID_BTHDDI_SDP_NODE_INTERFACE</p></td>
 <td align="left"><p>Profile drivers query for the GUID_BTHDDI_SDP_NODE_INTERFACE to obtain pointers to functions that allow them to create Service Discovery Protocol (SDP) records.</p>
-<p>This interface corresponds to the [<strong>BTHDDI_SDP_NODE_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536635) structure.</p></td>
+<p>This interface corresponds to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635" data-raw-source="[&lt;strong&gt;BTHDDI_SDP_NODE_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536635)"><strong>BTHDDI_SDP_NODE_INTERFACE</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GUID_BTHDDI_SDP_PARSE_INTERFACE</p></td>
 <td align="left"><p>Profile drivers query for the GUID_BTHDDI_SDP_PARSE_INTERFACE to obtain pointers to functions that allow them to parse SDP records.</p>
-<p>This interface corresponds to the [<strong>BTHDDI_SDP_PARSE_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536636) structure.</p></td>
+<p>This interface corresponds to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536636" data-raw-source="[&lt;strong&gt;BTHDDI_SDP_PARSE_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536636)"><strong>BTHDDI_SDP_PARSE_INTERFACE</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GUID_BTHDDI_PROFILE_DRIVER_INTERFACE</p></td>
 <td align="left"><p>Profile drivers query for the BTHDDI_PROFILE_DRIVER_INTERFACE to obtain pointers to functions that allow them to create, allocate, reuse, and free BRBs.</p>
-<p>This interface corresponds to the [<strong>BTH_PROFILE_DRIVER_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536645) structure.</p></td>
+<p>This interface corresponds to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536645" data-raw-source="[&lt;strong&gt;BTH_PROFILE_DRIVER_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536645)"><strong>BTH_PROFILE_DRIVER_INTERFACE</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 To obtain any of these interfaces, a profile driver must first build and send an [**IRP\_MN\_QUERY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) IRP to the Bluetooth driver stack.
 
@@ -67,7 +67,7 @@ The following pseudocode example demonstrates how to set up an IRP\_MN\_QUERY\_I
 
 **Note**  For readability, the following pseudocode example does not demonstrate error handling.
 
- 
+ 
 
 ```cpp
 #include <bthddi.h>
@@ -104,9 +104,9 @@ Status = IoCallDriver( DeviceExtension->NextLowerDriver, Irp );
 
 If the IRP returns successfully, the profile driver can then access and use the function pointers that are contained in the interface.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The \_DSM control method parameters for the battery charging thermal limit funct
 ### Return
 
 None. Firmware is responsible for taking the current thermal limit into account when engaging charging.
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ Kernel-mode components refer to a file by its object name, which is **\\DosDevic
 
 Every time that you open a handle to a file, the Windows executive creates a file object that represents the file, and it returns an open handle to that object. Therefore, multiple file objects can exist for a single file. (Because a user-mode application can copy a handle, multiple handles can also exist for the same file object.) After all the open handles to a file object are closed, the Windows executive deletes the file object.
 
- 
+ 
 
- 
+ 
 
 
 

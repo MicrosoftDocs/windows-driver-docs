@@ -56,9 +56,9 @@ When an MCM driver calls **NdisMCmCreateVc**, NDIS calls, as a synchronous opera
 
 Note that when an MCM driver creates a VC for exchanging signaling messages with a network component, it does not use **Ndis*Xxx*** calls to create a VC. In fact, an MCM driver does not use **Ndis*Xxx*** calls to create, activate, deactivate, or delete such VCs. Instead, an MCM driver performs these operations internally. Such VCs are therefore opaque to NDIS.
 
- 
+ 
 
- 
+ 
 
 
 

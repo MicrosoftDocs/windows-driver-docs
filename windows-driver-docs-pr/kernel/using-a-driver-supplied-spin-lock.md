@@ -190,9 +190,9 @@ The I/O manager always acquires the global cancel spin lock before it calls a *C
 
 For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
 
- 
+ 
 
- 
+ 
 
 
 

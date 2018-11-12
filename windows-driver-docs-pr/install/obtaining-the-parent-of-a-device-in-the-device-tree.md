@@ -44,9 +44,9 @@ This topic describes how to obtain an [**SP_DEVINFO_DATA**](https://msdn.microso
 
 For information about how to work with nonpresent devices, see [Determining the Parent of a Nonpresent Device](determining-the-parent-of-a-nonpresent-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

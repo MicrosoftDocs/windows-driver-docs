@@ -84,9 +84,9 @@ If a driver sends an I/O request synchronously, it typically calls [**WdfRequest
 
 For more information about completing I/O requests, see [Synchronizing Cancel and Completion Code](synchronizing-cancel-and-completion-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

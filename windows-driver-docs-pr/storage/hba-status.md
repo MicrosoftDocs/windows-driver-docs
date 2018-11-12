@@ -50,7 +50,7 @@ The following table lists the qualifier names and the meaning of each name:
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_STATUS_ERROR_ILLEGAL_WWN</p></td>
-<td align="left"><p>Worldwide name not recognized. For information concerning worldwide names, see the T11 committee's <em>Fibre Channel HBA API</em> specification.</p></td>
+<td align="left"><p>Worldwide name not recognized. For information concerning worldwide names, see the T11 committee&#39;s <em>Fibre Channel HBA API</em> specification.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HBA_STATUS_ERROR_ILLEGAL_INDEX</p></td>
@@ -94,7 +94,7 @@ The following table lists the qualifier names and the meaning of each name:
 </tr>
 <tr class="odd">
 <td align="left"><p>HBA_STATUS_ERROR_AMBIGUOUS_WWN</p></td>
-<td align="left"><p>Multiple adapters have a matching worldwide name (WWN). This could occur if the NodeWWN of multiple adapters is identical. For information concerning worldwide names in general and NodeWWN in particular, see the T11 committee's <em>Fibre Channel HBA API</em> specification.</p></td>
+<td align="left"><p>Multiple adapters have a matching worldwide name (WWN). This could occur if the NodeWWN of multiple adapters is identical. For information concerning worldwide names in general and NodeWWN in particular, see the T11 committee&#39;s <em>Fibre Channel HBA API</em> specification.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_STATUS_ERROR_LOCAL_BUS</p></td>
@@ -114,7 +114,7 @@ The following table lists the qualifier names and the meaning of each name:
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_STATUS_ERROR_TARGET_FCID</p></td>
-<td align="left"><p>A persistent binding request included an invalid FCP target FCID. For a definition of an FCP target FCID, see the T11 committee's <em>Fibre Channel HBA API</em> specification.</p></td>
+<td align="left"><p>A persistent binding request included an invalid FCP target FCID. For a definition of an FCP target FCID, see the T11 committee&#39;s <em>Fibre Channel HBA API</em> specification.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HBA_STATUS_ERROR_TARGET_NODE_WWN</p></td>
@@ -138,11 +138,11 @@ The following table lists the qualifier names and the meaning of each name:
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_STATUS_ERROR_NOT_A_TARGET</p></td>
-<td align="left"><p>A SCSI command was sent to an Nx_Port that was not a SCSI target port. For a definition of Nx_Port, see the T11 committee's <em>Fibre Channel HBA API</em> specification.</p></td>
+<td align="left"><p>A SCSI command was sent to an Nx_Port that was not a SCSI target port. For a definition of Nx_Port, see the T11 committee&#39;s <em>Fibre Channel HBA API</em> specification.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HBA_STATUS_ERROR_UNSUPPORTED_FC4</p></td>
-<td align="left"><p>A request was made concerning an unsupported FC-4 protocol. For an explanation of the FC-4 protocol, see the T11 committee's <em>Fibre Channel HBA API</em> specification.</p></td>
+<td align="left"><p>A request was made concerning an unsupported FC-4 protocol. For an explanation of the FC-4 protocol, see the T11 committee&#39;s <em>Fibre Channel HBA API</em> specification.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HBA_STATUS_ERROR_INCAPABLE</p></td>
@@ -155,13 +155,13 @@ The following table lists the qualifier names and the meaning of each name:
 </tbody>
 </table>
 
- 
+ 
 
 By including *Hbaapi.h* your software will have access to a series of symbolic constants that correspond to the type names in the previous table. The definitions for these symbolic constants are not included in *Hbapiwmi.h* (the file that the WMI tool suite generates when it compiles).
 
- 
+ 
 
- 
+ 
 
 
 

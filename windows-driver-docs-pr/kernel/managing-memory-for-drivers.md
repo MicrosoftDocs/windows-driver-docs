@@ -38,9 +38,9 @@ The memory-management capabilities of kernel-mode drivers are different from tho
 -   [Section Objects and Views](section-objects-and-views.md)
 -   [Using MDLs](using-mdls.md)
 
- 
+ 
 
- 
+ 
 
 
 

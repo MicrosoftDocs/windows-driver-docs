@@ -17,9 +17,9 @@ The **DeviceID** command returns the device identifier (ID) in the form of the f
 
 For more information about function discovery keys, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

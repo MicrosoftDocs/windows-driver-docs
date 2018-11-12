@@ -33,11 +33,11 @@ This section discusses platform-specific hardware error driver (PSHED) plug-ins 
 
 **Note**  PSHED plug-ins are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

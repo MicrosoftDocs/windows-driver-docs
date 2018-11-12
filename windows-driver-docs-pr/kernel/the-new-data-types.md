@@ -77,7 +77,7 @@ Fixed-precision data types are the same length for 32-bit and 64-bit programming
 </tbody>
 </table>
 
- 
+ 
 
 ### Pointer-Precision Integer Types
 
@@ -134,7 +134,7 @@ As the pointer precision changes (that is, as it becomes 32 bits when compiled f
 </tbody>
 </table>
 
- 
+ 
 
 ### Fixed-Precision Pointer Types
 
@@ -164,7 +164,7 @@ There are also new pointer types that explicitly size the pointer. Be cautious w
 </tbody>
 </table>
 
- 
+ 
 
 ### Helper Functions
 
@@ -188,11 +188,11 @@ void * ULongToPtr( const unsigned long ul )
 
 **Warning**  **IntToPtr** sign-extends the **int** value, **UIntToPtr** zero-extends the unsigned **int** value, **LongToPtr** sign-extends the **long** value, and **ULongToPtr** zero-extends the **unsigned long** value.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

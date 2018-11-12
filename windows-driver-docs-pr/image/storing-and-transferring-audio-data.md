@@ -25,9 +25,9 @@ These properties are obsolete and should no longer be used.
 
 Audio for a picture item should be represented as an attachment. This provides easy access to all audio formats that the WIA minidriver supports. Audio content is transferred in the same way that other items in the WIA item tree are transferred.
 
- 
+ 
 
- 
+ 
 
 
 

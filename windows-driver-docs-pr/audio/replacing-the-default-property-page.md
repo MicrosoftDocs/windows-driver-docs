@@ -53,9 +53,9 @@ HKLM
 
 The CLSID of the default property page is replaced with the CLSID of your custom property page.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,9 +43,9 @@ In the D3DGDI2\_TYPE\_DEFER\_AGP\_FREES and D3DGDI2\_TYPE\_FREE\_DEFERRED\_AGP n
 
 Note that an application can terminate without the runtime sending the D3DGDI2\_TYPE\_FREE\_DEFERRED\_AGP notification to the driver. Therefore, the driver should free all of the user-mode mappings of the AGP memory when it receives a call to its [**D3dDestroyDDLocal**](https://msdn.microsoft.com/library/windows/hardware/ff544685) function.
 
- 
+ 
 
- 
+ 
 
 
 

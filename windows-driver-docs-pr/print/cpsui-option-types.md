@@ -37,9 +37,9 @@ When using CPSUI to create a property sheet page, user-selectable options must b
 
 An option's type is specified in the **Type** member of an [**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670) structure.
 
- 
+ 
 
- 
+ 
 
 
 

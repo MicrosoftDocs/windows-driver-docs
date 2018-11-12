@@ -62,11 +62,11 @@ The D3DDMAPSAMPLER sampler, which is also new for DirectX 9.0, is used in the te
 
 **Note**   DirectX 9.0 and later applications can use the D3DSAMP\_DMAPOFFSET value in the D3DSAMPLERSTATETYPE enumeration to control the offset, in vertices, into the presampled displacement map. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that DirectX 9.0 and later drivers are not required to process user-mode sampler states. Therefore, drivers must instead process the D3DTSS\_DMAPOFFSET value in the **TSState** member of the [**D3DHAL\_DP2TEXTURESTAGESTATE**](https://msdn.microsoft.com/library/windows/hardware/ff545878) structure for D3DDP2OP\_TEXTURESTAGESTATE operations. For more information about D3DSAMPLERSTATETYPE and presampled displacement mapping, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

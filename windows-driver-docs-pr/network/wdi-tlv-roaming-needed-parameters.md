@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_ASSOC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn897725) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://msdn.microsoft.com/library/windows/hardware/dn925958) is triggered, this reason is forwarded to it. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

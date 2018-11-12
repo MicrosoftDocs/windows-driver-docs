@@ -41,9 +41,9 @@ SDV also increases control by providing:
 
 SDV is an essential unit-testing tool for device drivers. It places a driver in a hostile environment and systematically tests code paths through the driver by looking for violations of driver model usage rules.
 
- 
+ 
 
- 
+ 
 
 
 

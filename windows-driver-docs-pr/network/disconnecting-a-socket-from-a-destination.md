@@ -122,9 +122,9 @@ If a WSK application performs a graceful disconnect of a socket, the application
 
 If a WSK application closes a connection-oriented socket without first disconnecting the socket from the remote transport address to which it is connected, the WSK subsystem automatically performs an abortive disconnect of the socket prior to closing the socket. For more information about closing a socket, see [Closing a Socket](closing-a-socket.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Candidate buffer : ps 0013e268 to 0013e2a7
 0:000>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

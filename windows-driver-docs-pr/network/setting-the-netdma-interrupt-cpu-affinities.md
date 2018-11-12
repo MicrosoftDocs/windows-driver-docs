@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -31,9 +31,9 @@ The NetDMA provider driver must be prepared to handle IRP\_MN\_FILTER\_RESOURCE\
 
 A NetDMA provider driver can modify the interrupt affinity policy for each resource of type **CmResourceTypeInterrupt** that describes an MSI-X message. If an affinity policy requests targeting for a specific set of processors, the NetDMA provider driver also sets a [**KAFFINITY**](https://docs.microsoft.com/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity) mask at **Interrupt.TargetedProcessors** in the IO\_RESOURCE\_DESCRIPTOR structure.
 
- 
+ 
 
- 
+ 
 
 
 

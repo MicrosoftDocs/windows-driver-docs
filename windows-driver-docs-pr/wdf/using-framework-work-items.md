@@ -90,9 +90,9 @@ Drivers can use one of the following two techniques to create and delete work it
 
 A few drivers might need to call [**WdfWorkItemFlush**](https://msdn.microsoft.com/library/windows/hardware/ff551204) to flush their work items from the work-item queue. For an example use of **WdfWorkItemFlush**, see the method's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

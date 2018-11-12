@@ -56,7 +56,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x64-based or x86-based target computer.
 
@@ -99,9 +99,9 @@ e3:806baca8 hal!HalpLocalApicErrorService
 fd:806bb460 hal!HalpProfileInterrupt
 ```
 
- 
+ 
 
- 
+ 
 
 
 

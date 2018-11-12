@@ -21,9 +21,9 @@ You can provide a customized printer details page for use with printers that do 
 
 The page's initial ASP file must be named Page1.asp. All ASP file names with a format of Page*N*.asp, where *N* is 1, 2, 3, and so on, are reserved by Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

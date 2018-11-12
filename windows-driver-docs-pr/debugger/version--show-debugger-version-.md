@@ -49,7 +49,7 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -58,9 +58,9 @@ Do not confuse this command with the [**!version (Show DLL Version)**](-version.
 
 [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
 
- 
+ 
 
- 
+ 
 
 
 

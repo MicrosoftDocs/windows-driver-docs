@@ -56,9 +56,9 @@ CErrHandler::ReportStatus(
 
 Removing the *HandleMessageNow* routine would make this a valid error handler.
 
- 
+ 
 
- 
+ 
 
 
 

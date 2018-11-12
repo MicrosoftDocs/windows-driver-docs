@@ -16,10 +16,10 @@ This section describes DVD decoder-specific property sets that are available for
 
 The reference page for each property contains a table with the column headings that are shown below.
 
+
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-
- 
+|     |     |        |                          |                     |
 
 These headings have the following meanings:
 
@@ -73,9 +73,9 @@ The following property sets are defined for DVD decoder minidrivers:
 
 [KSPROPSETID\_Wave](kspropsetid-wave.md)
 
- 
+ 
 
- 
+ 
 
 
 

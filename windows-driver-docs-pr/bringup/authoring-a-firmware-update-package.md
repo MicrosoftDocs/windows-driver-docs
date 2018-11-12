@@ -21,7 +21,7 @@ It is recommended that each firmware update package target a single firmware res
 
 **Note**  A device cannot be targeted by more than one firmware update package. If a device is targeted by a firmware update package which also includes system firmware, it cannot be targeted by a second firmware update package which only targets the device.
 
- 
+ 
 
 1.  To allow a firmware update package to target a firmware update to the appropriate system hardware, Windows surfaces a device instance for each entry in the ESRT, where such a device instance exposes a Hardware ID that identifies it as belonging to the ESRT entry.
 

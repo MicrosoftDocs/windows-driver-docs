@@ -38,9 +38,9 @@ Informs the tuner node about the value with which to multiply the value of the K
 
 The KSPROPSETID\_BdaFrequencyFilter property set is generic across almost all tuners. It is used to inform the tuner node how to tune the RF signal.
 
- 
+ 
 
- 
+ 
 
 
 

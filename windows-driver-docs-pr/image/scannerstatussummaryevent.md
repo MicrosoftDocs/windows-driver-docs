@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>StatusSummary</strong>](statussummary.md)</p></td>
+<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,9 +102,9 @@ The following code example indicates that the scan device is stopped because of 
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ The [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware
 
 An [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778) request is always followed by an OID\_PNP\_SET\_POWER request. The [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request can immediately follow the OID\_PNP\_QUERY\_POWER request or can arrive at an unspecified interval after the OID\_PNP\_QUERY\_POWER request. A device state of D0, which is specified in the OID\_PNP\_SET\_POWER request, effectively cancels a preceding OID\_PNP\_QUERY\_POWER request.
 
- 
+ 
 
- 
+ 
 
 
 

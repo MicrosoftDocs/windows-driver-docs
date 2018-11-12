@@ -21,9 +21,9 @@ Port management activities consist of [adding a port](adding-a-port.md), [config
 
 One additional, optional management activity involves [setting port time-out values](setting-port-time-out-values.md).
 
- 
+ 
 
- 
+ 
 
 
 

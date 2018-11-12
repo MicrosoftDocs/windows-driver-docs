@@ -30,9 +30,9 @@ The following sections clarify when each type of driver should call this routine
 
 [Calling PoStartNextPowerIrp from a Bus Driver](calling-postartnextpowerirp-from-a-bus-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

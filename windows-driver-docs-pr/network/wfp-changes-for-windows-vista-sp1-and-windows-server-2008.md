@@ -35,9 +35,9 @@ Several changes have been made in the available functions and behavior of the Wi
     [**FWPS\_CALLOUT0**](https://msdn.microsoft.com/library/windows/hardware/ff551224)
     [**FWPS\_INCOMING\_METADATA\_VALUES0**](https://msdn.microsoft.com/library/windows/hardware/ff552397)
 
- 
+ 
 
- 
+ 
 
 
 

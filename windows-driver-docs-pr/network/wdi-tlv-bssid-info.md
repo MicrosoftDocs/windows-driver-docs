@@ -41,7 +41,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | This is set to 1 if the AP represented by this BSSID includes an MDE in its Beacon frames.                                                                                                                                                                                                                                                |
 | UINT8 | This is set to 1 to indicate that the AP represented by this BSSID is an HT AP, including the HT Capabilities element in its Beacon.                                                                                                                                                                                                      |
 
- 
+ 
 
 Requirements
 ------------
@@ -67,9 +67,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

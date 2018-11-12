@@ -28,9 +28,9 @@ See also [specific exception filter](https://msdn.microsoft.com/library/windows/
 
 For more information, see [Event Filters](event-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

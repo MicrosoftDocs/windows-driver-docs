@@ -31,9 +31,9 @@ If the pin allows degradation strategies, the minidriver supports the [**KSPROPE
 
 For more information, see [**KSDEGRADE**](https://msdn.microsoft.com/library/windows/hardware/ff561671) and [**KSDEGRADE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff561673).
 
- 
+ 
 
- 
+ 
 
 
 

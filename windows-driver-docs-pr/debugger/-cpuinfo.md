@@ -71,9 +71,9 @@ Other columns will also appear, depending on your machine's specific architectur
 
 For details on how to interpret specific values for each entry, as well as any additional columns, consult the processor manual.
 
- 
+ 
 
- 
+ 
 
 
 

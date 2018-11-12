@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|-------------------------------------------------------------------|
 | UINT8 | The Service transaction ID to be used for the ANQP query request. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

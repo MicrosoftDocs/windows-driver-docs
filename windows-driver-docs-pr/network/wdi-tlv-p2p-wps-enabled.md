@@ -47,7 +47,7 @@ The size (in bytes) of a UINT8.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 
 [OID\_WDI\_SET\_P2P\_WPS\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/dn925938)
 
- 
+ 
 
- 
+ 
 
 
 

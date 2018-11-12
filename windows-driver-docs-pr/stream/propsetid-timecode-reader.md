@@ -28,9 +28,9 @@ Support for this property set is optional and should be implemented only by mini
 
 The DirectShow **IAMTimecodeReader** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

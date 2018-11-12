@@ -31,9 +31,9 @@ All DirectX VA decoders must operate with all DirectX VA accelerators to use a [
 
 For each set the decoder and accelerator must support the same DirectX VA restricted-mode GUID.
 
- 
+ 
 
- 
+ 
 
 
 

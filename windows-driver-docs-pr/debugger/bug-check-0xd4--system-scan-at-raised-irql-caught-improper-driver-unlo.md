@@ -56,7 +56,7 @@ The SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD bug check h
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -72,9 +72,9 @@ To begin debugging, use a kernel debugger to get a stack trace. If the driver th
 
 For full details on Driver Verifier, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

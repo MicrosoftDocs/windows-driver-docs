@@ -72,9 +72,9 @@ Requirements
 
 [**HS\_PLUGIN\_CHECK\_FOR\_UPDATES**](hs-plugin-check-for-updates.md)
 
- 
+ 
 
- 
+ 
 
 
 

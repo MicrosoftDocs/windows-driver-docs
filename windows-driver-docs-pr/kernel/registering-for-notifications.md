@@ -19,9 +19,9 @@ For most operations, your driver can receive notification before the configurati
 
 After a driver has called **CmRegisterCallback** or **CmRegisterCallbackEx**, the driver will receive notifications until it calls [**CmUnRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541928) or is unloaded.
 
- 
+ 
 
- 
+ 
 
 
 

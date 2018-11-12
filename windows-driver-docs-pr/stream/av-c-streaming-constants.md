@@ -16,9 +16,9 @@ An AV/C Streaming subunit minidriver uses the following constants:
 
 [AV/C Streaming Format GUIDs](av-c-streaming-format-guids.md)
 
- 
+ 
 
- 
+ 
 
 
 

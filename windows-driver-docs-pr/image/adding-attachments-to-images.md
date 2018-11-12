@@ -23,9 +23,9 @@ An item cannot be both of type **WiaItemTypeHasAttachments** and type **WiaItemT
 
 ![diagram illustrating a wia camera item tree with attachments](images/camera-tree-attachments.png)
 
- 
+ 
 
- 
+ 
 
 
 

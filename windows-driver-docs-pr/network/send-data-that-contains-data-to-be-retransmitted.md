@@ -33,9 +33,9 @@ The data from the byte that is indicated by **SndNxt** up to the byte that is in
 
 The data to the right of the byte that is indicated by **SndMax** is unsent data that the offload target must send after sending the data to be retransmitted.
 
- 
+ 
 
- 
+ 
 
 
 

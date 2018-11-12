@@ -300,9 +300,9 @@ D3DDTCAPS\_UDEC3
 
 D3DDTCAPS\_DEC3N
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,9 +67,9 @@ A connection-oriented client:
 
     A client can input [status indicated by a connection-oriented miniport driver](indicating-miniport-driver-status.md) or an MCM driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -88,7 +88,7 @@ After the DirectX3D runtime receives shader code from an application, the runtim
 </tbody>
 </table>
 
- 
+ 
 
 Note that in all vertex shader versions, the **sub** assembler instruction is implemented as a D3DSIO\_ADD operation with the source modifier (bits 27:24) of the second source set to negate (0x1).
 
@@ -103,9 +103,9 @@ The runtime converts the **tex** and **texld** assembler instructions to the D3D
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

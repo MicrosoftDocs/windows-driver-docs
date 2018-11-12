@@ -22,9 +22,9 @@ Typically, drivers use the device extension to store pointers to each of the dev
 
 (Alternatively, interrupt object pointers can be stored in nonpaged pool that the driver allocates.)
 
- 
+ 
 
- 
+ 
 
 
 

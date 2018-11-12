@@ -26,9 +26,9 @@ All magnitude and gain values used by DirectInput are uniform and linear across 
 
 The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](https://msdn.microsoft.com/library/windows/hardware/ff540050)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.
 
- 
+ 
 
- 
+ 
 
 
 

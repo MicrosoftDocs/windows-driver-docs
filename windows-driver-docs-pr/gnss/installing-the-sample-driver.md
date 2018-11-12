@@ -29,7 +29,7 @@ The following steps outline the installation process.
 
     **Note**  Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
 
-     
+     
 
 ## Related topics
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  

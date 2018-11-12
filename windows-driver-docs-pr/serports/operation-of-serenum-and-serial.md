@@ -59,9 +59,9 @@ For more information about operating Serenum and Serial, see the following resou
 
 -   Communications resources that are supported by the Windows Base Services in the Microsoft Windows SDK
 
- 
+ 
 
- 
+ 
 
 
 

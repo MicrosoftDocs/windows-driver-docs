@@ -22,9 +22,9 @@ ValueType : REG_DWORD
 ValueData : 0 to disable preemption, 1 to enable preemption (default).
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,7 +56,7 @@ Specifies the modules to be included or excluded. This list is not cumulative; e
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ Remarks
 
 With no parameters, the **!logexts.logm** extension displays the current inclusion list or exclusion list.
 
-The extensions **!logexts.logm x \*** and **!logexts.logm i** are equivalent: they result in a completely empty inclusion list.
+The extensions **!logexts.logm x \\*** and **!logexts.logm i** are equivalent: they result in a completely empty inclusion list.
 
-The extensions **!logexts.logm i \*** and **!logexts.logm x** are equivalent: they result in an exclusion list that contains only Logexts.dll and kernel32.dll. These two modules are always excluded, because Logger is not permitted to log itself.
+The extensions **!logexts.logm i \\*** and **!logexts.logm x** are equivalent: they result in an exclusion list that contains only Logexts.dll and kernel32.dll. These two modules are always excluded, because Logger is not permitted to log itself.
 
 Here are some examples:
 
@@ -101,9 +101,9 @@ Included modules:
   mymodule2.dll
 ```
 
- 
+ 
 
- 
+ 
 
 
 

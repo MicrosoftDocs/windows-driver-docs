@@ -45,9 +45,9 @@ The WIA feeder scanner item can optionally support the following WIA properties:
 
 [**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
 
- 
+ 
 
- 
+ 
 
 
 

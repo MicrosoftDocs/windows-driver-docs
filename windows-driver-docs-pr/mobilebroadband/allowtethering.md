@@ -15,7 +15,7 @@ The AllowTethering element specifies whether the user is always allowed, never a
 **Note**  
 If this element is configured to allow after an entitlement check, you must specify a [DeviceNotificationHandler](devicenotificationhandler.md) in your app that will handle the entitlement check.
 
- 
+ 
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -57,13 +57,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[NetworkConfiguration](networkconfiguration.md)</p></td>
+<td><p><a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profiles to be used or whether standard user can perform PIN unlock operations.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -87,9 +87,9 @@ This element is only applicable to Windows 8.1 and Windows 10.
 
 The AllowTethering element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ The following figure shows the inheritance tree for the COM interfaces used in r
 
 ![diagram illustrating the inheritance tree for the com interfaces used in render plug-ins](images/rendintf.png)
 
- 
+ 
 
- 
+ 
 
 
 

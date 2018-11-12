@@ -53,9 +53,9 @@ The following topics present examples of the key sections in the INF file that i
 
 [Miscellaneous Installation Issues for an Audio Adapter](miscellaneous-installation-issues-for-an-audio-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

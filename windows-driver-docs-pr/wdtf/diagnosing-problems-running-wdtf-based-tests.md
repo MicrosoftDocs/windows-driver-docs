@@ -56,9 +56,9 @@ You can diagnose problems with these commands.
 [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) (for WDF driver information)
 After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the component owners from looking at the stacks of the stuck threads).
 
- 
+ 
 
- 
+ 
 
 
 

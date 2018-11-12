@@ -74,7 +74,7 @@ Specifies the type of access that satisfies the breakpoint. This parameter can b
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Specifies the size of the location, in bytes, to monitor for access. On an x86-based processor, this parameter can be 1, 2, or 4. However, if *Access* equals **e**, *Size* must be 1.
@@ -135,7 +135,7 @@ This parameter is optional.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -178,9 +178,9 @@ The following command adds a breakpoint on all serial ports with addresses from 
 kd> ba i4 3f8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

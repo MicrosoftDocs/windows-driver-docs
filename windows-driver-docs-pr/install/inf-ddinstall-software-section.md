@@ -35,7 +35,7 @@ This directive references an INF-writer-defined *software-install-section* elsew
 
 *DDInstall*.**Software** sections should have the same platform and operating system decorations as their related *DDInstall* sections.  For example, an *install-section-name*.**ntx86** section would have a corresponding *install-section-name*.**ntx86.Software** section.
 	
-The specified *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a *DDInstall***.Software** section name in cross-platform INF files.
+The specified *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.Software** section name in cross-platform INF files.
 
 For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 

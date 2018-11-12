@@ -41,7 +41,7 @@ The **Enable pool tagging** flag collects data and calculates statistics about p
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -54,11 +54,11 @@ In Windows XP and earlier systems, this flag also directs Windows to attach a po
 **Note**   To display the data that Windows collects about a tagged allocation, use PoolMon, a tool that is included in the Windows Driver Kit.
 The description of the **Enable Pool Tagging** flag in the Windows XP Support Tools documentation is incomplete. This flag directs Windows to collect and process data by tag value.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

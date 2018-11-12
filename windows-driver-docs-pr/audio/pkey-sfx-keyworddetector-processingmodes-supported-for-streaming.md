@@ -38,9 +38,9 @@ HKR,"FX\\0",%PKEY_SFX_KeywordDetector_ProcessingModes_Supported_For_Streaming%,%
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

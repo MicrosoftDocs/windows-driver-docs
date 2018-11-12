@@ -63,7 +63,7 @@ To query the current list of local transport addresses for a socket's address fa
 </tbody>
 </table>
 
- 
+ 
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to query the current list of local transport addresses for a socket's address family.
 
@@ -93,9 +93,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

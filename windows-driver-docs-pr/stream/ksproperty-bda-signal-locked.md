@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
 
- 
+ 
 
- 
+ 
 
 
 

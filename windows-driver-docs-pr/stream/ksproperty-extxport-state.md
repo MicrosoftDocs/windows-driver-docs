@@ -47,13 +47,13 @@ The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's trans
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_EXTXPORT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565167)</p></td>
-<td><p>[<strong>TRANSPORT_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568546)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565167" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565167)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568546" data-raw-source="[&lt;strong&gt;TRANSPORT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568546)"><strong>TRANSPORT_STATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a TRANSPORT\_STATE structure that describes the current mode and state of the external transport. For example when the mode is set to play, the state might be set to freeze (paused).
 
@@ -87,9 +87,9 @@ Requirements
 
 [**TRANSPORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff568546)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ The call stack is the chain of function calls that have led to the current locat
 
 In CDB, you can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ When choosing a common format from the intersection between two data ranges, the
 
 If the default handler selects a format that is unsatisfactory, the adapter driver has the option of rejecting the format by failing the **NewStream** call (for example, see [**IMiniportWavePci::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536735)) when SysAudio attempts to create a sink pin with the format. If the call fails, SysAudio will not continue looking for data intersections. Instead, it will attempt to create a connection by iterating through a list of the PCM formats that are supported by system filters such as KMixer until it finds one that the adapter's sink pin can support as well. The list is ordered with higher quality formats first. As before, the adapter rejects unsatisfactory formats in the list by failing the **NewStream** calls for those formats.
 
- 
+ 
 
- 
+ 
 
 
 

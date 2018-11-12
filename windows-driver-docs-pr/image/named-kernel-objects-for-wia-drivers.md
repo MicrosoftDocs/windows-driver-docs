@@ -21,9 +21,9 @@ The two most common problems that prevent WIA drivers and external components (s
 
 There are other serious security-related problems, such as "name squatting," which are not covered here. Driver developers should refer to security-related resources for more complete coverage of those topics.
 
- 
+ 
 
- 
+ 
 
 
 

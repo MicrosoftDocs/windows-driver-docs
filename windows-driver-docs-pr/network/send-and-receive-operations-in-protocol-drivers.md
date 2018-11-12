@@ -25,9 +25,9 @@ Connection-oriented NDIS (CoNDIS) protocol drivers call the [**NdisCoSendNetBuff
 
 For an introduction to send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

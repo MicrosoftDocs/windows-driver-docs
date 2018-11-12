@@ -15,9 +15,9 @@ A UNC symbol store supports placing the actual files to be served in a separate 
 
 Because this feature is automatically applied, an option exists to turn it off in case you must use the proxy for serving some files and regular file pointer implementation for others. To do this, create a REG\_DWORD called "NoFilePointerHandler" in **HKLM\\Software\\Microsoft\\Symbol Server**. Set this value to 1 (or anything other than 0) to turn off the internal file pointer handler in SymProxy.
 
- 
+ 
 
- 
+ 
 
 
 

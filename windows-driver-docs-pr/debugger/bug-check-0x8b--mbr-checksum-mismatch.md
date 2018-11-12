@@ -55,7 +55,7 @@ The MBR\_CHECKSUM\_MISMATCH bug check has a value of 0x0000008B. This bug check 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -69,9 +69,9 @@ Resolution
 
 There are many forms of viruses and not all can be detected. Typically, the newer viruses usually can be detected only by a virus scanner that has recently been upgraded. You should boot with a write-protected disk that contains a virus scanner and try to clean out the infection.
 
- 
+ 
 
- 
+ 
 
 
 

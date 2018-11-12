@@ -31,9 +31,9 @@ The WSK subsystem supports the following WSK client control operations:
 
 [**WSK\_TRANSPORT\_LIST\_QUERY**](wsk-transport-list-query.md)
 
- 
+ 
 
- 
+ 
 
 
 

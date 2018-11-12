@@ -38,9 +38,9 @@ Data Type: BIDI\_BOOL
 
 Description: This value represents a command to perform a head cleaning procedure on the device. This value is a write-only value. An attempt to read this value should be rejected. If the value is set to 1, the device should perform the command.
 
- 
+ 
 
- 
+ 
 
 
 

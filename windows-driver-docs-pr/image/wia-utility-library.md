@@ -23,9 +23,9 @@ The remainder of this section contains the following topics:
 
 [WIA Utility Classes](wia-utility-classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the stru
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -213,9 +213,9 @@ Last event: 153c.5d0: Break instruction exception - code 80000003 (first chance)
   debugger time: Thu Sep  8 12:55:08.968 2016 (UTC - 7:00)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

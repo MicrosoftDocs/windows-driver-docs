@@ -18,7 +18,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 |-------------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------------|
 | [**WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926281) |                                |          | The default key ID for packet transmission on the port. |
 
- 
+ 
 
 ## Set property results
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

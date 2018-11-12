@@ -67,11 +67,11 @@ If you are porting your driver from Direct3D version 10.0 to Direct3D version 10
 
 **Note**  [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) has the same function signature as [**OpenAdapter10**](https://msdn.microsoft.com/library/windows/hardware/ff568602) (that is, PFND3D10DDI\_OPENADAPTER as defined in the *D3d10umddi.h* header). You can implement both functions in the same user-mode display driver DLL.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

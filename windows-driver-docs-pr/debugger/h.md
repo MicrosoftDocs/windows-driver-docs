@@ -24,9 +24,9 @@ The host computer is the computer that runs the debugging session. All debugger 
 
 In a typical two-system kernel debugging session, the debugger is running on the host computer, which is connected to the target computer being debugged.
 
- 
+ 
 
- 
+ 
 
 
 

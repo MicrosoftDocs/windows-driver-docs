@@ -18,9 +18,9 @@ When a bus driver handles a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.micros
 
 When a device has been powered down to conserve power, its drivers should power it up when an I/O request arrives. In this case, the device power policy owner must send an **IRP\_MN\_SET\_POWER** to return the device to the working state. When the IRP completes, the drivers for the device stop queuing I/O and begin to process requests off the queue.
 
- 
+ 
 
- 
+ 
 
 
 

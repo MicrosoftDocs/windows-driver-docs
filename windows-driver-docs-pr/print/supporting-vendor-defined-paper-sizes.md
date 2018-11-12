@@ -30,9 +30,9 @@ The following option attributes can be used, but are not required:
 \*CursorOrigin
 \*RotateSize?
 \*PageProtectMem
- 
+ 
 
- 
+ 
 
 
 

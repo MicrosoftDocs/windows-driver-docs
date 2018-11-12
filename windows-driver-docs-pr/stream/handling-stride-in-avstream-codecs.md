@@ -46,9 +46,9 @@ Minidrivers should use the **biWidth** member of the [**KS\_BITMAPINFOHEADER**](
 
 If KS\_FRAME\_INFO.**lSurfacePitch** has a nonzero value, the minidriver must use **lSurfacePitch** as the width/stride for the buffer that is specified in the related KSSTREAM\_HEADER. Otherwise, the output image appears garbled.
 
- 
+ 
 
- 
+ 
 
 
 

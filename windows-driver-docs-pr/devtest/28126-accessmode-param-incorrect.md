@@ -22,9 +22,9 @@ This warning is intended for the top-level driver in the driver stack. You can i
 
 The top-level driver in the driver stack should use **Irp-&gt;RequestorMode**, rather than specifying **UserMode** or **KernelMode**. This allows the senders of kernel-mode IRP to supply kernel-mode handles safely. All other drivers in the stack should specify **KernelMode**, which skips the access check and leaves responsibility for the access check to the top-level driver.
 
- 
+ 
 
- 
+ 
 
 
 

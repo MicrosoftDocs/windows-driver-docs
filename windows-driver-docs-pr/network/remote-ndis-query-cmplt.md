@@ -67,7 +67,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_QUERY\_MSG**](remote-ndi
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -89,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

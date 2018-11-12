@@ -58,9 +58,9 @@ An object can be made permanent at the time of its creation by specifying the OB
 
 To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566477) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
 
- 
+ 
 
- 
+ 
 
 
 

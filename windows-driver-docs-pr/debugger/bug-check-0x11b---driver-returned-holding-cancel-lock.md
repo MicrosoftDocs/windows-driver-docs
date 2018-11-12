@@ -47,7 +47,7 @@ The DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK bug check has a value of 0x0000011B.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,9 +56,9 @@ The cancel spin lock should have been released by the *cancel* routine.
 
 The driver calls the IoCancelIrpIoCancelIrp function to cancel an individual I/O request packet (IRP). This function acquires the cancel spin lock, sets the cancel flag in the IRP, and then calls the *cancel* routine specified by the appropriate field in the IRP, if a routine was specified. The *cancel* routine is expected to release the cancel spin lock. If there is no *cancel* routine, the cancel spin lock is released.
 
- 
+ 
 
- 
+ 
 
 
 

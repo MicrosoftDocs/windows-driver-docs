@@ -37,9 +37,9 @@ myD3DCaps8.MaxVertexShaderConst = 96;
 
 *d3d8types.h* defines a symbol for the minimum number of constant registers required by version 1.0 of the vertex shader specification. This symbol is D3DVS\_CONSTREG\_MAX\_V1\_0 and it is recommended that the driver use this symbol unless it supports more than 96 constant registers.
 
- 
+ 
 
- 
+ 
 
 
 

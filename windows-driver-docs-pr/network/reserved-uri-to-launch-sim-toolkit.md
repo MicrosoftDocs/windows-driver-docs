@@ -29,9 +29,9 @@ Windows.System.Launcher.LaunchUriAsync("ms-settings-uicctoolkit:");
 
 [SIM toolkit](sim-toolkit.md)
 
- 
+ 
 
- 
+ 
 
 
 

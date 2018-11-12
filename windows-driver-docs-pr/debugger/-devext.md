@@ -83,7 +83,7 @@ Specifies the type of object that owns the device extension to be displayed. Typ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -104,7 +104,7 @@ Specifies the type of object that owns the device extension to be displayed. Typ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -155,9 +155,9 @@ PDO Extension, Bus 0x0, Device 0, Function 0.
   Requirements: <none>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

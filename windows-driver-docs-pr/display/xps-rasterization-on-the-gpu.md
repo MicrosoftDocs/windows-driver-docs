@@ -18,7 +18,7 @@ XML Paper Specification (XPS) rasterization on the GPU does not require any inde
 | Driver implementation—Full graphics and Display only                              | Mandatory                                         |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦XPSRasterizationConformance** |
 
- 
+ 
 
 ## <span id="xps"></span><span id="XPS"></span>XPS rasterization conformance
 
@@ -34,9 +34,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

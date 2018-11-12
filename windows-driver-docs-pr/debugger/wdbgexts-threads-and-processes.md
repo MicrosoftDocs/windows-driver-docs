@@ -33,9 +33,9 @@ The method [**GetCurrentProcessHandle**](https://msdn.microsoft.com/library/wind
 
 For a more powerful thread manipulation and process manipulation API, see [Controlling Threads and Processes](controlling-threads-and-processes.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

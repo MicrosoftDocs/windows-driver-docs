@@ -41,9 +41,9 @@ The following diagram illustrates an item tree that a minidriver creates for a s
 
 For more information about driver items, see [Developing a WIA Driver: Basic Concepts](developing-a-wia-driver--basic-concepts.md), [Developing a WIA Scanner Driver](developing-a-wia-scanner-driver.md) and [Developing a WIA Camera Driver](developing-a-wia-camera-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

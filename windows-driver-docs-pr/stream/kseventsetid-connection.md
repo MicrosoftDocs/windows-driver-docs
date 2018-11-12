@@ -28,9 +28,9 @@ The KSEVENTSETID\_Connection event set specifies the general events that can be 
 
 [**KSEVENT\_CONNECTION\_ENDOFSTREAM**](ksevent-connection-endofstream.md)****
 
- 
+ 
 
- 
+ 
 
 
 

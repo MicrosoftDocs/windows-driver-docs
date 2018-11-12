@@ -66,7 +66,7 @@ Restores the output mask to the default value. This parameter is equivalent to *
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -144,11 +144,11 @@ The following flag values exist.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

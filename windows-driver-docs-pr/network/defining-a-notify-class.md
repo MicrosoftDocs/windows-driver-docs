@@ -42,9 +42,9 @@ Define a constructor and a destructor for your notify class. Also consider defin
 
 All the **IUnknown** interface methods should be implemented for a notify class. If a notify class inherits from any of the optional interfaces noted in the preceding list, all the methods of those interfaces must be implemented. Note that E\_NOTIMPL is not a valid return type for any of the methods of the notify object interfaces. If a notify object does not require an implementation for a particular method, simply implement the method to return S\_OK.
 
- 
+ 
 
- 
+ 
 
 
 

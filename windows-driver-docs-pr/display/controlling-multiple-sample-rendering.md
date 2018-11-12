@@ -21,9 +21,9 @@ The following topics describe how drivers support operations that control multip
 
 [Dynamically Controlling Multiple-Sample Rendering](dynamically-controlling-multiple-sample-rendering.md)
 
- 
+ 
 
- 
+ 
 
 
 

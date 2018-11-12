@@ -25,9 +25,9 @@ When the application requests to create a surface, it uses a combination of surf
 
 For more information about **IDirect3D9::CheckDeviceMultiSampleType**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

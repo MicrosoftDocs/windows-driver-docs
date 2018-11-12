@@ -62,7 +62,7 @@ Causes the display to suppress pool header information for all pools, except the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,7 +75,7 @@ In Windows XP and later versions of Windows, the **!pool** extension displays th
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including pooltag.txt. If you modify or replace the sample pooltag.txt file, be sure to save a copy of it to a different directory. After reinstalling the debuggers, you can copy the saved pooltag.txt over the default version.
 
- 
+ 
 
 If the **!pool** extension reports pool corruption, you should use [**!poolval**](-poolval.md) to investigate.
 
@@ -118,9 +118,9 @@ kd> !pool e1001050 1
 ......
 ```
 
- 
+ 
 
- 
+ 
 
 
 

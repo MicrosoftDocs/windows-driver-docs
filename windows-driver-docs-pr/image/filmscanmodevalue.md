@@ -68,7 +68,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -89,7 +89,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>FilmScanModesSupported</strong>](filmscanmodessupported.md)</p></td>
+<td><p><a href="filmscanmodessupported.md" data-raw-source="[&lt;strong&gt;FilmScanModesSupported&lt;/strong&gt;](filmscanmodessupported.md)"><strong>FilmScanModesSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -106,9 +106,9 @@ You can both extend and subset the allowed values for this element.
 
 [**FilmScanModesSupported**](filmscanmodessupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

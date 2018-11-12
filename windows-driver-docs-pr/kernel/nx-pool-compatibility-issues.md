@@ -45,9 +45,9 @@ By using one of these three approaches, most drivers can be ported quickly and w
 
 Avoid simply replacing all instances of **NonPagedPool** in your driver code with **NonPagedPoolExecute**. Use the **NonPagedPoolExecute** pool type only for pool allocations that must be executable (for example, to run code produced by a just-in-time, or JIT, compiler).
 
- 
+ 
 
- 
+ 
 
 
 

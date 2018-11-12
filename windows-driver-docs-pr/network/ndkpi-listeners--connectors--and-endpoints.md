@@ -29,7 +29,7 @@ When the consumer calls the *NdkListen* ([*NDK\_FN\_LISTEN*](https://msdn.micros
 -   Remove a reference when the listener itself is closed.
     **Note**  You can't close the listener until all the connectors are closed.
 
-     
+     
 
 -   Release the endpoint when its reference count returns to zero. (This is the case only when the listener and all the connectors accepted over the listener have been closed.)
 -   Simply closing the listener does not release the endpoint as long as there are previously accepted connectors that are not yet closed. This means that new *NdkListen*, *NdkConnect*, and *NdkConnectWithSharedEndpoint* requests for the same local address and port will fail until all such connections are closed. Note that the close request on the listener will also remain pending until all such connections are closed (due to the antecedent/successor rules outlined in [NDKPI Object Lifetime Requirements](ndkpi-object-lifetime-requirements.md)). The provider must reject further incoming connections on the listener as soon as a close request is issued (so that no new connections are accepted while the close request is pending).
@@ -57,9 +57,9 @@ When the consumer calls *NdkConnectWithSharedEndpoint*, the provider creates an 
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

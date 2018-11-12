@@ -27,9 +27,9 @@ A vendor should specify the following entries in the **Version** section of an I
 
 For a description of additional version requirements and options for all device classes, see [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
 
- 
+ 
 
- 
+ 
 
 
 

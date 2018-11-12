@@ -24,9 +24,9 @@ In Microsoft DirectX, there are two ways for your driver to enumerate pixel form
 
 Because DXT formats are primarily intended to be used as textures, your driver enumerates DXT formats only through the first method. There is no need to add DXT formats to the **lpdwFourCC** array.
 
- 
+ 
 
- 
+ 
 
 
 

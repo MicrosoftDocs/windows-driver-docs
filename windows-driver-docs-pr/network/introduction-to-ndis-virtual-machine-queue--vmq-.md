@@ -22,7 +22,7 @@ VMQ provides the following features:
 
     **Note**  In Hyper-V, a child partition is also known as a VM.
 
-     
+     
 
 -   Reduces CPU utilization by offloading receive packet filtering to network adapter hardware.
 
@@ -32,7 +32,7 @@ VMQ provides the following features:
 
     **Note**  Starting with NDIS 6.30 and Windows Server 2012, splitting network data into separate lookahead buffers is no longer supported.
 
-     
+     
 
 -   Supports live migration. For more information about live migration, see [NDIS VMQ Live Migration Support](ndis-vmq-live-migration-support.md).
 
@@ -44,9 +44,9 @@ To introduce high-level VMQ concepts, this section includes the following additi
 
 [VMQ Receive Filters](vmq-receive-filters.md)
 
- 
+ 
 
- 
+ 
 
 
 

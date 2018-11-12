@@ -22,9 +22,9 @@ A page-file-backed section is backed by the page files instead of by any explici
 
 Any section, file-backed or not, can be shared between two processes. The same physical memory address range is mapped to a virtual memory address range within each process (though not necessarily to the same virtual address).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ When Serial is used as a lower-level device filter driver, the following conside
 
     A client should initialize the filter device to a known state before using it. A user-mode client can use the [IOCTL\_SERIAL\_SET\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547466) requests. Note, however, that a Win32-compliant application must use the communication functions that are supported by the Windows Base Services in the Microsoft Windows SDK. A kernel-mode client can use the IOCTL\_SERIAL\_Xxx and the [IOCTL\_SERIAL\_INTERNAL\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547480) requests.
 
- 
+ 
 
- 
+ 
 
 
 

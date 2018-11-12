@@ -73,9 +73,9 @@ You can activate the Force IRQL Checking feature for one or more drivers by usin
 
     The Force IRQL Checking feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

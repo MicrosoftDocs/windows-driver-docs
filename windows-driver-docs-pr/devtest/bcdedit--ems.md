@@ -45,9 +45,9 @@ The following command enables EMS for a boot entry with the identifier of {49916
 bcdedit /ems {49916baf-0e08-11db-9af4-000bdbd316a0} on
 ```
 
- 
+ 
 
- 
+ 
 
 
 

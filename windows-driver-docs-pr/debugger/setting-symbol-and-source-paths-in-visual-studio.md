@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Setting Symbol and Executable Image Paths in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -34,9 +34,9 @@ In Visual Studio, in the Debugger Immediate Window, enter the [**.sympath (Set S
 
 In Visual Studio, in the Debugger Immediate Window, enter the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ Specifies the PTE.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +66,9 @@ kd> !pte2va 9230
 000800000248c000 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

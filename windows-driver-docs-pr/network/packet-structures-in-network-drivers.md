@@ -26,9 +26,9 @@ In NDIS 6.0 and later versions, a higher layer driver allocates [**NET\_BUFFER**
 
 For more information about the structure of network data buffers in NDIS drivers, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

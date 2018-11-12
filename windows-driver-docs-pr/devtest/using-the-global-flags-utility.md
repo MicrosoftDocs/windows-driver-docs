@@ -70,7 +70,7 @@ For an x86 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 8 
 </tbody>
 </table>
 
- 
+ 
 
 For an x64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16 bytes in length. To activate special pool for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -109,7 +109,7 @@ For an x64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16
 </tbody>
 </table>
 
- 
+ 
 
 For an Itanium-based processor, PAGE\_SIZE is 0x2000 and the allocation size ranges are 16 bytes in length. To activate special pool for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -148,19 +148,19 @@ For an Itanium-based processor, PAGE\_SIZE is 0x2000 and the allocation size ran
 </tbody>
 </table>
 
- 
+ 
 
 It is best to avoid using pool tags lower than PAGE\_SIZE. For example, if you put 0x30 into this text box on an Itanium-based processor, special pool will be used for all allocations between 17 and 32 bytes in size, and for allocations with the pool tag 0x0030.
 
 **Note**   If Driver Verifier has enabled the special pool for a driver and the Global Flags utility has enabled the special pool for a pool tag or allocation size, the special pool will be used for all allocations meeting any of these criteria (subject to pool availability).
 
- 
+ 
 
 See [Special Pool](special-pool.md) for full details on the use of the special pool.
 
- 
+ 
 
- 
+ 
 
 
 

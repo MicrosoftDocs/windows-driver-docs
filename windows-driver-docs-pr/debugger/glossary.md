@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 This glossary contains terms and acronyms related to the Microsoft Debugging Tools for Windows.
 
- 
+ 
 
- 
+ 
 
 
 

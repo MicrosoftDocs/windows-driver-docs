@@ -24,9 +24,9 @@ The intermediate driver copies the **ImReserved** and **SourceHandle** members t
 
 When calling the **NdisM*Xxx*Complete** function, the intermediate driver passes a pointer to the newly constructed NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure.
 
- 
+ 
 
- 
+ 
 
 
 

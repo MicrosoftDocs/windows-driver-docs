@@ -43,7 +43,7 @@ The KSCATEGORY_AUDIO_GFX [device interface class](https://msdn.microsoft.com/lib
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

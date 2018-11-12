@@ -15,9 +15,9 @@ This warning indicates that a function is being used that has been deprecated, a
 
 The Core System binaries provide much of the functionality that kernel32 and advapi32 do, but in many cases a different API call is required. Calling Core System APIs is faster and requires a smaller memory footprint than calling legacy kernel32 or advapi32 APIs.
 
- 
+ 
 
- 
+ 
 
 
 

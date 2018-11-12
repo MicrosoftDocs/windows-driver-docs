@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 An **Ini2Reg** directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 
@@ -63,7 +63,7 @@ Specifies the name of the key in the INI file to copy to the registry. If this v
 Identifies the root of the registry tree for other values supplied in this entry. For specifics, see the reference for the [**AddReg directive**](inf-addreg-directive.md).
 
 <a href="" id="subkey"></a>*subkey*  
-Identifies the subkey to receive the value, expressed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as an explicit registry path (*key1***\\***key2***\\***key3*...) from the given *reg-root*.
+Identifies the subkey to receive the value, expressed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as an explicit registry path (<em>key1</em>**\\**<em>key2</em>**\\**<em>key3</em>...) from the given *reg-root*.
 
 <a href="" id="flags"></a>*flags*  
 Specifies (in bit 0) how to handle the INI file after transferring the given information to the registry and/or (in bit 1) whether to overwrite existing registry information, as follows:
@@ -121,9 +121,9 @@ The INF provides the full path of the given *ini-file* on the distribution media
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

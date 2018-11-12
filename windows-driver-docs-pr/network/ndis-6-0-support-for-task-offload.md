@@ -44,9 +44,9 @@ The TCP/IP transport in NDIS 6.0 and later supports task offload for both IPv4 a
 
 Unlike NDIS 5.1 and earlier drivers, NDIS 6.0 and later miniport drivers support task offload in a multiple-protocol driver environment. Multiple NDIS 6.0 and later protocol drivers that are bound to a task offload-capable miniport adapter can configure task offload services.
 
- 
+ 
 
- 
+ 
 
 
 

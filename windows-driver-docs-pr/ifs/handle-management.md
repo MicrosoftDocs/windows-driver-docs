@@ -40,9 +40,9 @@ No driver should ever rely on handles or parameters passed from a user-mode appl
 
 Note that if the Nt variant is used to open a file, then the Nt variant must also be used to close the file.
 
- 
+ 
 
- 
+ 
 
 
 

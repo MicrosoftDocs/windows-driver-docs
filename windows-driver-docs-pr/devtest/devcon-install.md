@@ -21,8 +21,6 @@ Creates a new, root-enumerated devnode for a non-Plug and Play device and instal
 
 ```
     devcon [/r] install INFfile HardwareID 
-
-   
 ```
 
 ## <span id="ddk_devcon_install_tools"></span><span id="DDK_DEVCON_INSTALL_TOOLS"></span>Parameters
@@ -71,9 +69,9 @@ devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 
 [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224)
 
- 
 
- 
+
+
 
 
 

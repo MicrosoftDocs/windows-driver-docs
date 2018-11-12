@@ -83,9 +83,9 @@ To determine device state, use the following steps:
 
 6.  Use [**!wudfext.wudfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff566207) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff565724) (UMDF 2) to display additional information about the driver, including its device tree.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,9 +60,9 @@ An exception to this is the SCSI port driver, which has a *StartIo* routine and 
 
 The SCSI port driver uses its supplemental device queues to hold IRPs sent down from the SCSI class drivers in LU-specific queues whenever any device on a SCSI bus is particularly busy. In effect, this driver's supplemental, LU-specific device queues allow the SCSI port driver to serialize operations for heterogeneous SCSI devices through an HBA while keeping each device on that HBA's SCSI buses as busy as possible.
 
- 
+ 
 
- 
+ 
 
 
 

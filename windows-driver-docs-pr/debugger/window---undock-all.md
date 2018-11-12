@@ -22,9 +22,9 @@ WinDbg returns each docked window to the position that it occupied the last time
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -64,9 +64,9 @@ If the preceding entry is interpreted by using the earlier example template, the
 
 If you want to validate the PASSTHROUGH instances by using an XML schema, you should use the [XSD\_DEFINED data type](xsd-template-data-types.md) instead of PASSTHROUGH, because the XSD\_DEFINED data type allows the XSD schema to be explicitly defined in the template and is integrated into the schema output by the parser.
 
- 
+ 
 
- 
+ 
 
 
 

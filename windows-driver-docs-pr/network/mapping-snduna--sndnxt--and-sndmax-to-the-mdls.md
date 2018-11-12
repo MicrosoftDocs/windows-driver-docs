@@ -43,9 +43,9 @@ To locate the first byte of send data to be transmitted, the offload target subt
 
 To find the byte that is indicated by **SndMax**, the offload target subtracts the sequence number in **SndUna** from the sequence number in **SndMax** and then traverses the MDL chain ( **SndMax**- **SndUna**) bytes from the byte that is indicated by **SndUna**. For example, if **SndMax**- **SndUna**= 1600, the offload target traverses the MDL chain **SndUna**+ 1600 bytes to find the byte that is indicated by **SndMax**.
 
- 
+ 
 
- 
+ 
 
 
 

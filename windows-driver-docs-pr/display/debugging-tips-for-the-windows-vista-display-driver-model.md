@@ -31,9 +31,9 @@ These topics discuss debugging tips for the Windows Display Driver Model (WDDM):
 
 [Timeout Detection and Recovery (TDR)](timeout-detection-and-recovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](https:/
 
 For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](http://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
 
- 
+ 
 
- 
+ 
 
 
 

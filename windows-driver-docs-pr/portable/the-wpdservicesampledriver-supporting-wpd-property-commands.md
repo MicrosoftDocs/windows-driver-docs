@@ -21,7 +21,7 @@ The following table describes each of the supported property commands, together 
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_ATTRIBUTES | OnGetPropertyAttributes  | Returns a collection of attributes for one or more properties on a given object.                              |
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_DELETE          | OnDeleteProperties       | Deletes the properties that are identified by the given property keys.                                        |
 
- 
+
 
 ## <span id="Using_Access_Scope_when_Setting_and_Retrieving_Properties_"></span><span id="using_access_scope_when_setting_and_retrieving_properties_"></span><span id="USING_ACCESS_SCOPE_WHEN_SETTING_AND_RETRIEVING_PROPERTIES_"></span>Using Access Scope when Setting and Retrieving Properties
 
@@ -131,7 +131,6 @@ bool FakeContent::CanAccess(
 {
     return ((Scope & RequiredScope) == RequiredScope);
 }
-
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -142,9 +141,9 @@ bool FakeContent::CanAccess(
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
+
+
 
 
 

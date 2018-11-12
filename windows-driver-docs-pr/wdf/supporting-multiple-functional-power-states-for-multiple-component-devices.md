@@ -30,9 +30,9 @@ In addition, the driver can call [power framework routines](https://msdn.microso
 
 For more information about PoFx, see [Overview of the Power Management Framework](https://msdn.microsoft.com/library/windows/hardware/hh406637).
 
- 
+ 
 
- 
+ 
 
 
 

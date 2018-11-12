@@ -71,9 +71,9 @@ If the **Code Analysis Results** shows errors that you determine, after careful 
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

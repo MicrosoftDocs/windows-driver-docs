@@ -24,9 +24,9 @@ CPSUI communicates with applications by callback functions. A CPSUI application 
 
 [Page event callbacks](page-event-callbacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

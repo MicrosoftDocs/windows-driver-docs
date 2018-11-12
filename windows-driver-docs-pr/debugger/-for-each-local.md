@@ -56,7 +56,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ If you do not specify any arguments, the **!for\_each\_local** extension lists l
 
 If you enable verbose debugger output, the display includes the total number of local variables when the extension is called, and every time that *CommandString* is executed for a local variable, that variable and the text of *CommandString* are echoed.
 
- 
+ 
 
- 
+ 
 
 
 

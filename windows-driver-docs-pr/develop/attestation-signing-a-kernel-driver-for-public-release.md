@@ -70,22 +70,22 @@ To create a CAB file submission for the dashboard complete the following steps.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
-  Open a Command Prompt window as Administrator. Then enter the following command to view the MakeCab options:
+   Open a Command Prompt window as Administrator. Then enter the following command to view the MakeCab options:
 
-  MakeCab /?
+   MakeCab /?
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; MakeCab /?
-  Cabinet Maker - Lossless Data Compression Tool
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; MakeCab /?
+   Cabinet Maker - Lossless Data Compression Tool
 
-  MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
-  MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
+   MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
+   MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 
     source         File to compress.
     destination    File name to give compressed file.  If omitted, the
@@ -96,82 +96,82 @@ To create a CAB file submission for the dashboard complete the following steps.
     /D var=value   Defines variable with specified value.
     /L dir         Location to place destination (default is current directory).
     /V[n]          Verbosity level (1..3).</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   </tr>
+   </tbody>
+   </table>
 
 3. Prepare a cab file DDF input file. For our Echo driver it might look something like this.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>; *** Echo.ddf example ***
-  ;
-  .OPTION EXPLICIT     ; Generate errors
-  .Set CabinetFileCountThreshold=0
-  .Set FolderFileCountThreshold=0
-  .Set FolderSizeThreshold=0
-  .Set MaxCabinetSize=0
-  .Set MaxDiskFileCount=0
-  .Set MaxDiskSize=0
-  .Set CompressionType=MSZIP
-  .Set Cabinet=on
-  .Set Compress=on
-  ; Specify file name for new cab file
-  .Set CabinetNameTemplate=Echo.cab
-  ; Specify the subdirectory for the files.  
-  ; Your cab file should not have files at the root level, 
-  ; and each driver package must be in a separate subfolder.
-  .Set DestinationDir=Echo
-  ; Specify files to be included in cab file
-  C:\Echo\Echo.Inf
-  C:\Echo\Echo.Sys</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>; *** Echo.ddf example ***
+   ;
+   .OPTION EXPLICIT     ; Generate errors
+   .Set CabinetFileCountThreshold=0
+   .Set FolderFileCountThreshold=0
+   .Set FolderSizeThreshold=0
+   .Set MaxCabinetSize=0
+   .Set MaxDiskFileCount=0
+   .Set MaxDiskSize=0
+   .Set CompressionType=MSZIP
+   .Set Cabinet=on
+   .Set Compress=on
+   ; Specify file name for new cab file
+   .Set CabinetNameTemplate=Echo.cab
+   ; Specify the subdirectory for the files.  
+   ; Your cab file should not have files at the root level, 
+   ; and each driver package must be in a separate subfolder.
+   .Set DestinationDir=Echo
+   ; Specify files to be included in cab file
+   C:\Echo\Echo.Inf
+   C:\Echo\Echo.Sys</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
-  **Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
+   **Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; MakeCab /f &quot;C:\Echo\Echo.ddf</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; MakeCab /f &quot;C:\Echo\Echo.ddf</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
-  The output of makecab should display the number of files in the created cabinet, in our example 2.
+   The output of makecab should display the number of files in the created cabinet, in our example 2.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; MakeCab /f Echo.ddf
-  Cabinet Maker - Lossless Data Compression Tool
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; MakeCab /f Echo.ddf
+   Cabinet Maker - Lossless Data Compression Tool
 
-  17,682 bytes in 2 files
-  Total files:              2
-  Bytes before:        17,682
-  Bytes after:          7,374
-  After/Before:            41.70% compression
-  Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
-  Throughput:              86.77 Kb/second</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   17,682 bytes in 2 files
+   Total files:              2
+   Bytes before:        17,682
+   Bytes after:          7,374
+   After/Before:            41.70% compression
+   Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
+   Throughput:              86.77 Kb/second</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
 5. Locate the cab file in the Disk1 subdirectory. You can click the cab file in File Explorer to verify that it contains the expected files.
 
@@ -180,19 +180,19 @@ To create a CAB file submission for the dashboard complete the following steps.
 
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, you might use the signtool and if you are using Verisign, you might specify their timestamp server.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /s MY /n &quot;Subject Name of the Signing Certificate&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /s MY /n &quot;Subject Name of the Signing Certificate&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
-  **Note**  Use industry best practices to mange the security of the EV cert signing process.
+   **Note**  Use industry best practices to mange the security of the EV cert signing process.
 
 
 
@@ -216,7 +216,7 @@ The following screen shot shows the options for submitting the echo driver for s
 ![driver signing submittal options](images/attestation-driver-signing-submission-dashboard.png)
 
 2. When the signing process is complete, download your signed driver from the Hardware Dev Center Dashboard.
-## <span id="Validate_that_the_driver_was_properly_signed"></span><span id="validate_that_the_driver_was_properly_signed"></span><span id="VALIDATE_THAT_THE_DRIVER_WAS_PROPERLY_SIGNED"></span>Validate that the driver was properly signed
+   ## <span id="Validate_that_the_driver_was_properly_signed"></span><span id="validate_that_the_driver_was_properly_signed"></span><span id="VALIDATE_THAT_THE_DRIVER_WAS_PROPERLY_SIGNED"></span>Validate that the driver was properly signed
 
 
 Complete the following steps to validate that the driver was properly signed.
@@ -225,41 +225,41 @@ Complete the following steps to validate that the driver was properly signed.
 
 2. Open a Command Prompt window as Administrator. Then enter the following command to verify that the driver was signed as expected.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; SignTool verify Echo.Sys</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; SignTool verify Echo.Sys</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
 3. To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; SignTool verify /pa /ph /v /d Echo.Sys</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; SignTool verify /pa /ph /v /d Echo.Sys</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
 4. To confirm the EKUs of the driver complete the following steps.
 
-  a. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
+   a. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
 
-  b. On the **Digital Signatures** tab, select the listed item in the Signature list.
+   b. On the **Digital Signatures** tab, select the listed item in the Signature list.
 
-  c. Select the **Details** button, and then select **View Certificate**.
+   c. Select the **Details** button, and then select **View Certificate**.
 
-  d. On the **Details** tab, select the **Enhanced Key Usage** field.
+   d. On the **Details** tab, select the **Enhanced Key Usage** field.
 
 When the driver is resigned by the dashboard the following process is used.
 
@@ -272,23 +272,23 @@ When the driver is resigned by the dashboard the following process is used.
 
 Use the following instructions to install the sample driver.
 
-  1. Open Device Manager, right click on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
+1. Open Device Manager, right click on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
 
-  2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
+2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
 
-  <span codelanguage=""></span>
-  <table>
-  <colgroup>
-  <col width="100%" />
-  </colgroup>
-  <tbody>
-  <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; devcon install echo.inf root\ECHO</code></pre></td>
-  </tr>
-  </tbody>
-  </table>
+   <span codelanguage=""></span>
+   <table>
+   <colgroup>
+   <col width="100%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><pre><code>C:\Echo&gt; devcon install echo.inf root\ECHO</code></pre></td>
+   </tr>
+   </tbody>
+   </table>
 
-  3. Confirm that the driver install process does not display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
+3. Confirm that the driver install process does not display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
 
 ## <span id="Create_a_Multiple_Driver_Submission"></span><span id="create_a_multiple_driver_submission"></span><span id="CREATE_A_MULTIPLE_DRIVER_SUBMISSION"></span>Create a Multiple Driver Submission
 

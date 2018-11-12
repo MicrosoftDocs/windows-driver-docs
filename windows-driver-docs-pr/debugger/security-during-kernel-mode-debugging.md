@@ -36,9 +36,9 @@ If you are not performing remote debugging, you should still beware of bad symbo
 
 Only users who have debug privileges can start a local kernel debugging session. If you are the administrator of a machine that has multiple user accounts, you should be aware that any user with these privileges can start a local kernel debugging session, effectively giving them control of all processes on the computer -- and therefore giving them access to all peripherals as well.
 
- 
+ 
 
- 
+ 
 
 
 

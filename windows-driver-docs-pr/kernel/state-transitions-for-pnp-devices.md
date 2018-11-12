@@ -36,9 +36,9 @@ When a PnP device is being physically removed from the system or has already bee
 
 At some point after all of a driver's devices have been removed, the PnP manager calls the driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine and unloads the driver.
 
- 
+ 
 
- 
+ 
 
 
 

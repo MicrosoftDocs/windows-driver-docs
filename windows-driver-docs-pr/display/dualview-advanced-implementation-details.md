@@ -55,9 +55,9 @@ In DualView mode, however, each child can be assigned to a different view; the q
 
 One additional point remains. When DualView is enabled, the primary view may automatically switch children. In SingleView mode, only the CRT, which is associated with the primary (and only) view, is active. All other display devices are inactive. After DualView has been enabled, the preceding figure shows the primary view has switched to display on the LCD device, while the CRT is a child of the secondary view. This switch might be necessary for a laptop computer due to the fact that the secondary view is removable, which means that the LCD device cannot be associated with that view. Whether and how to make this switch is totally under the control of miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

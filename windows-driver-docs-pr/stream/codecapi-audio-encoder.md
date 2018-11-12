@@ -42,7 +42,7 @@ Audio encoders use the support of this GUID (queried by the user-mode KsProperty
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type BOOL and specifies whether the minidriver supports audio encoding. A value of **TRUE** indicates that the minidriver supports audio encoding. The filter should not support this GUID if it is not an audio encoder.
 
@@ -54,9 +54,9 @@ The property value (operation data) is of type BOOL and specifies whether the mi
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

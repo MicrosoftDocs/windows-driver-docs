@@ -34,9 +34,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 [**MSFC\_PortEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562516)
 
- 
+ 
 
- 
+ 
 
 
 

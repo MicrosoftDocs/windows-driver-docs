@@ -56,9 +56,9 @@ Requirements
 
 [**NDIS\_WWAN\_SMS\_RECEIVE**](https://msdn.microsoft.com/library/windows/hardware/ff567942)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 Use the Sensor Diagnostic Tool to test whether your driver and firmware support property retrieval. The tool invokes properties in the Sensor API to determine whether you support property retrieval.
- 
+ 
 
 ## Configuring the Sensor Diagnostic Tool to Retrieve Sensor Properties
 

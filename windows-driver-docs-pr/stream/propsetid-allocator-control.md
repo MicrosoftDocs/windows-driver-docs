@@ -30,9 +30,9 @@ Support for this property set is optional and should be implemented only by devi
 
 There is no DirectShow interface that provides access to this property set.
 
- 
+ 
 
- 
+ 
 
 
 

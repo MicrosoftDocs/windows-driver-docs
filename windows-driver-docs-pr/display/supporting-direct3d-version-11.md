@@ -32,9 +32,9 @@ The following sections describe the new features of Direct3D version 11 and how 
 
 [Conforming to the DXGI DDI](conforming-to-the-dxgi-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

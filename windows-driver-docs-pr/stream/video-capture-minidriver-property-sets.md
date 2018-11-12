@@ -16,10 +16,10 @@ This section describes the video capture-specific property sets that are availab
 
 The reference page for each property contains a table with the following column headings.
 
+
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-
- 
+|     |     |        |                          |                     |
 
 These headings have the following meanings:
 
@@ -97,9 +97,9 @@ The following property sets can be used with the [USB Video Class Driver](https:
 
 [PROPSETID\_VIDCAP\_SELECTOR](propsetid-vidcap-selector.md)
 
- 
+ 
 
- 
+ 
 
 
 

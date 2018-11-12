@@ -104,7 +104,7 @@ The following table summarizes an example for three aliased usages.
 </tbody>
 </table>
 
- 
+ 
 
 For information about how usages and data indices are cross-referenced, see [Data Indices](data-indices.md).
 
@@ -151,11 +151,11 @@ The HID parser assigns a [data index](data-indices.md) to each usage associated 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

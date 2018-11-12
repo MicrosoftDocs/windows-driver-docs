@@ -46,7 +46,7 @@ The **IStiUSD::GetNotificationData** method is called for polled events and inte
 **Note**  **** Always clear the STI\_EVENTHANDLING\_PENDING flag in the **dwEventHandlingState** member to ensure that it is properly set when a device event occurs.
 This WIA driver should set the *m\_guidLastEvent* class member variable to the proper event GUID when an event is detected. The *m\_guidLastEvent* is checked at a later time when the WIA service calls the **IStiUSD::GetNotificationData** method. The *m\_guidLastEvent* member variable is defined in the **CWIADevice** class (in the following code snippet), used to cache the last event signaled. After this member variable has been requested by the WIA service, it is always set to GUID\_NULL.
 
- 
+ 
 
 The following example shows an implementation of the [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) method.
 
@@ -127,9 +127,9 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

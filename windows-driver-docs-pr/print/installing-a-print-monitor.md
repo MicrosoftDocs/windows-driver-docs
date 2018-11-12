@@ -72,9 +72,9 @@ To install a port monitor, open the Printers folder in Control Panel. On the Pri
 
 Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](https://msdn.microsoft.com/library/windows/desktop/dd162825.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

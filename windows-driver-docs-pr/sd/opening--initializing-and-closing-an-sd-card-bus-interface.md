@@ -69,9 +69,9 @@ if (pDevExt->BusInterface.InterfaceDereference) {
 
 The **SdBusOpenInterface** call stores a pointer to the interface dereference routine in the SDBUS\_INTERFACE\_STANDARD structure. However, drivers should verify that the pointer is not **NULL** before attempting to call the routine.
 
- 
+ 
 
- 
+ 
 
 
 

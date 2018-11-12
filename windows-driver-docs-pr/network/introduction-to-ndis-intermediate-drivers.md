@@ -50,9 +50,9 @@ There are two types of NDIS intermediate drivers: filter intermediate drivers an
 
 [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

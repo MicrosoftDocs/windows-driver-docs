@@ -46,11 +46,11 @@ Drivers that do not interact directly with the PnP manager, such as certain mini
 
 ### Using the Registry
 
-A **DriverEntry** routine might use the registry to get some of the information it needs to initialize the driver, or it might set information in the registry for other drivers or protected subsystems to use. The nature of the information depends on the type of device. Drivers can access the registry using **Zw*Xxx*** and **Rtl*Xxx*** routines. The **DriverEntry** routine's *RegistryPath* parameter points to a counted Unicode string that specifies a path to the driver's registry key, **\\Registry\\Machine\\System\\CurrentControlSet\\Services\\*DriverName***. The routine should save a copy of the string, not the pointer itself, since the pointer is no longer valid after **DriverEntry** returns.
+A **DriverEntry** routine might use the registry to get some of the information it needs to initialize the driver, or it might set information in the registry for other drivers or protected subsystems to use. The nature of the information depends on the type of device. Drivers can access the registry using **Zw*Xxx*** and **Rtl*Xxx*** routines. The **DriverEntry** routine's *RegistryPath* parameter points to a counted Unicode string that specifies a path to the driver's registry key, <strong>\\Registry\\Machine\\System\\CurrentControlSet\\Services\\*DriverName</strong><em>. The routine should save a copy of the string, not the pointer itself, since the pointer is no longer valid after **DriverEntry</em>* returns.
 
- 
+ 
 
- 
+ 
 
 
 

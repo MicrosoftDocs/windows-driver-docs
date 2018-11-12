@@ -22,7 +22,7 @@ This topic discusses the potential security issues involved with allocating shar
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 ### <a href="" id="overview"></a>Overview of the Security Issues with VM Shared Memory
 
@@ -88,9 +88,9 @@ The following points apply to VMQ miniport drivers that run on Windows Server 2
 
     For more information about how to register VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

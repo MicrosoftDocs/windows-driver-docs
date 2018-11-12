@@ -24,9 +24,9 @@ The driver determines how to obtain the fog value by verifying if the D3DFVF\_FO
 
 When the driver sets D3DPMISCCAPS\_FOGINFVF, the runtime in turn sets the D3DPMISCCAPS\_FOGANDSPECULARALPHA capability bit in the **PrimitiveMiscCaps** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ This section discusses the elements of the WinDbg graphical user interface. Thes
 
 [Shortcut Keys](keyboard-shortcuts.md)
 
- 
+ 
 
- 
+ 
 
 
 

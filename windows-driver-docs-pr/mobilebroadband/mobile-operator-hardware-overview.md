@@ -80,7 +80,7 @@ The mobile broadband class driver reduces the burden on device manufacturers to 
 **Note**  
 While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broadband class driver, they are optional components of the Windows 8, Windows 8.1, or Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) hardware certification requirements. Multiple PDP contexts are required for Windows 10 Mobile for hardware certification, however.
 
- 
+ 
 
 Additional device functionality can be implemented using custom device service extensions, which will be exposed directly to the mobile broadband app through the WinRT Device Services API.
 
@@ -101,7 +101,7 @@ Each device service has a corresponding GUID. All control messages and non-IP pa
 **Note**  
 The COM-based Device Services API is accessible to any desktop application or service. The WinRT projected Device Services API is available only to a privileged UWP device app that is authorized by a mobile broadband operator. Developers should carefully consider privacy and security when communicating information this way.
 
- 
+ 
 
 The Windows wireless platform supports APIs for the following functionality that is available to apps:
 
@@ -136,7 +136,7 @@ A summary of mobile broadband device support inWindows 8, Windows RT, Windows�
     **Note**  
     Windows RT and Windows RT 8.1 systems do not support mobile broadband devices designed for Windows 7 and earlier versions.
 
-     
+     
 
 To ensure that Windows 8 and Windows 8.1 certified devices are useful on older platforms, Windows provides an identity morphing solution that enables the device to exhibit behavior that is appropriate for the operating system to which it is connected.
 
@@ -189,7 +189,7 @@ Your device must implement the following:
 **Note**  
 Since this is an optional Windows feature for devices to support, there is no HCK test or automated test case to validate this scenario on the system. It is our expectation that the operator certification will handle the validation to confirm that the device conforms to the operator requirements.
 
- 
+ 
 
 For more info about the APN database, see [APN database overview](apn-database-overview.md).
 
@@ -202,11 +202,11 @@ The device must report [**WWAN\_READY\_INFO**](https://msdn.microsoft.com/librar
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

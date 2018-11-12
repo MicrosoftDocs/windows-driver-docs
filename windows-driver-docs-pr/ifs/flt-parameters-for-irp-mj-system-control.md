@@ -138,9 +138,9 @@ Requirements
 
 [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734)
 
- 
+ 
 
- 
+ 
 
 
 

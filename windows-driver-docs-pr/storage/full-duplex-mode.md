@@ -17,9 +17,9 @@ The Storport driver supports an I/O model tailored specifically for high-perform
 
 A miniport driver must configure Storport to operate in full-duplex mode while executing its [**HwStorFindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff557390) routine. It does this by initializing the **SynchronizationModel** member of the miniport driver's [**PORT\_CONFIGURATION\_INFORMATION (STORPORT)**](https://msdn.microsoft.com/library/windows/hardware/ff563901) structure to **StorSynchronizeFullDuplex**.
 
- 
+ 
 
- 
+ 
 
 
 

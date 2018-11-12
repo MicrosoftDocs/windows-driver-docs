@@ -19,9 +19,9 @@ This section contains additional information about SCSI control codes and the st
 
 [Still Image USB I/O Structures](still-image-usb-i-o-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

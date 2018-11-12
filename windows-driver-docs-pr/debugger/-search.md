@@ -107,9 +107,9 @@ The columns in the display are as follows: **Pfn** is the page frame number (PFN
 
 To calculate the physical address, shift the PFN left three hexadecimal digits (12 bits) and add the offset. For example, the last line in the table is virtual address 0x0237D000 + 0x428 = 0x02347D428.
 
- 
+ 
 
- 
+ 
 
 
 

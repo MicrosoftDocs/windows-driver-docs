@@ -43,7 +43,7 @@ The GUID_DEVICE_LID [device interface class](https://msdn.microsoft.com/library/
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ Enables the debugging session to end. *Password* must match the password that yo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,13 +70,13 @@ When you use **.quit\_lock /q**, the lock is removed. This command does not clos
 
 **Note**   The password is not "secret". Any remote user who is attached to the debugging session can use **.quit\_lock** to determine the password. The purpose of this command is to prevent accidental use of the [**q (Quit)**](q--qq--quit-.md) command. This command is especially useful if restarting the debugging session might be difficult (for example, during remote debugging).
 
- 
+ 
 
 You cannot use the **.quit\_lock /s** command in [Secure Mode](activating-secure-mode.md). If you use this command before Secure Mode is activated, the password protection remains, but you cannot change or remove the password.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ In the CoNDIS environment, the system handles many of the complex TAPI requireme
 
 The separation of the call manager and miniport driver functions enables you to implement two simple drivers. The simplified drivers should be easier to maintain and debug than one large and complex driver.
 
- 
+ 
 
- 
+ 
 
 
 

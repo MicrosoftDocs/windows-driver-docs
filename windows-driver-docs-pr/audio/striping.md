@@ -24,9 +24,9 @@ The function driver enables striping through the [**AllocateRenderDmaEngine**](h
 
 For more information about striping, see the *Intel High Definition Audio Specification* at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website.
 
- 
+ 
 
- 
+ 
 
 
 

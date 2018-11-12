@@ -71,7 +71,7 @@ The following table describes the constants that are valid with WIA\_DPS\_DOCUME
 </tbody>
 </table>
 
- 
+ 
 
 The values DUPLEX and FRONT\_ONLY are mutually exclusive--set one or the other, but not both.
 
@@ -112,7 +112,7 @@ The following table describes the constants that are valid with this property wi
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -139,9 +139,9 @@ Requirements
 
 [**WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT**](wia-ips-document-handling-select.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,11 +59,11 @@ You should refer to the [Overview of INF Files](https://msdn.microsoft.com/libra
 
 **Note**   There are no INF sections and directives for uninstalling display drivers that are specific to graphic devices.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -91,7 +91,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -135,9 +135,9 @@ Requirements
 
 [**FSCTL\_GET\_EXTERNAL\_BACKING**](fsctl-get-external-backing.md)
 
- 
+ 
 
- 
+ 
 
 
 

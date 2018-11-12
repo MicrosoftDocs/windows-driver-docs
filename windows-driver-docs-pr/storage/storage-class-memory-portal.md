@@ -22,9 +22,9 @@ The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function 
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

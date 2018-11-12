@@ -41,7 +41,7 @@ The **Enable heap tagging by DLL** flag assigns a unique tag to heap allocations
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +51,9 @@ You can display the tag by using the [**!heap**](-heap.md) debugger extension wi
 
 [Enable heap tagging](enable-heap-tagging.md)
 
- 
+ 
 
- 
+ 
 
 
 

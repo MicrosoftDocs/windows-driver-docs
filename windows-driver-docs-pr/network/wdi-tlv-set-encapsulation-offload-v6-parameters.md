@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8 | Specifies if IPv6 offloading should be started. This value is set to NDIS\_OFFLOAD\_SET\_ON if enabled, and set to NDIS\_OFFLOAD\_SET\_OFF if disabled. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +62,9 @@ Requirements
 
 [**NDIS\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566706)
 
- 
+ 
 
- 
+ 
 
 
 

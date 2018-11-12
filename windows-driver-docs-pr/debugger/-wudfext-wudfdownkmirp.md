@@ -48,7 +48,7 @@ Specifies the address of the UM IRP whose corresponding kernel-mode IRP is to be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ Remarks
 
 You can use the [**!wudfext.umirps**](-wudfext-umirps.md) extension command to display a list of all outstanding UM IRPs in the host process.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ The previous figure illustrates how drivers can use the IRP's **MdlAddress** to 
 
 Drivers should always check buffer lengths. Note that the I/O manager does not create an MDL for a zero-length buffer.
 
- 
+ 
 
- 
+ 
 
 
 

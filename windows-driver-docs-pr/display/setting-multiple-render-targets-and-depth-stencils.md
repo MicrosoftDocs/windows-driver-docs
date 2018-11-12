@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must process D3DDP2OP\_SETRENDERTARGET2 and D3DDP2OP\_SETDEPTHSTENCIL operation codes in its [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) function even if it does not support [rendering to multiple targets simultaneously](rendering-to-multiple-targets-simultaneously.md). [**D3DHAL\_DP2SETRENDERTARGET2**](https://msdn.microsoft.com/library/windows/hardware/ff545785) and [**D3DHAL\_DP2SETDEPTHSTENCIL**](https://msdn.microsoft.com/library/windows/hardware/ff545724) structures respectively follow these codes in the [command stream](command-stream.md).
 
- 
+ 
 
- 
+ 
 
 
 

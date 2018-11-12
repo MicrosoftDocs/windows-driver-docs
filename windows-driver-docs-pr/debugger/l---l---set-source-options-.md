@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # l+, l- (Set Source Options)
 
 
-The **l+**and **l-** commands set the source line options that control source display and program stepping options.
+The <strong>l+</strong>and **l-** commands set the source line options that control source display and program stepping options.
 
 ```dbgcmd
 l+Option 
@@ -46,7 +46,7 @@ Displays source lines and source line numbers at the command prompt.
 <span id="t"></span><span id="T"></span>**t**  
 Starts [source mode](debugging-in-source-mode.md). If this mode is not set, the debugger is in [assembly mode](debugging-in-assembly-mode.md).
 
-<span id="_"></span>**\***  
+<span id="_"></span>**\\***  
 Turns on or turns off all options.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -72,7 +72,7 @@ Turns on or turns off all options.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +89,9 @@ When you specify the **s** option, source lines and line numbers are displayed w
 
 Source line options do not take effect unless you enable line number loading by using the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command or the [-lines command-line option](command-line-options.md). By default, if you have not used these commands, WinDbg turns on source line support and CDB turns it off.
 
- 
+ 
 
- 
+ 
 
 
 

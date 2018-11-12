@@ -47,7 +47,7 @@ After Windows installs a device (on successful completion of [**DIF_INSTALLDEVIC
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -120,9 +120,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

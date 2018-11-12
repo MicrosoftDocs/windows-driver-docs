@@ -85,9 +85,9 @@ The slider is in the far left position. The panning driver (part of kernel-mode 
 
 Another way to limit display hardware acceleration is to set flags in the **CapabilityOverride** registry entry. For example, setting the 0x2 flag in the **CapabilityOverride** entry is equivalent to placing the hardware acceleration slider at level 3. For a description of the **CapabilityOverride** registry entry, see [Display INF File Sections](display-inf-file-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

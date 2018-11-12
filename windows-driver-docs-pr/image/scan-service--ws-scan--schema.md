@@ -21,9 +21,9 @@ The following sections describe the XML elements:
 
 [WSD Scan Service Operation Elements and Error Codes](wsd-scan-service-operation-elements-and-error-codes.md)
 
- 
+ 
 
- 
+ 
 
 
 

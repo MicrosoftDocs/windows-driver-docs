@@ -47,7 +47,7 @@ When a root-enumerated, non-PnP device is reinstated to a hardware profile.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -77,7 +77,7 @@ If the class installer successfully handles this request, including directly cal
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
- 
+ 
 
 For more information about calling the default handler, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
 
@@ -124,9 +124,9 @@ Requirements
 
 [**SP_UNREMOVEDEVICE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553349)
 
- 
+ 
 
- 
+ 
 
 
 

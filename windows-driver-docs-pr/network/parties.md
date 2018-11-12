@@ -21,9 +21,9 @@ A *party* represents one of possibly many leaves of a *point-to-multipoint conne
 
 For more information about adding parties to a point-to-multipoint call, see [Adding a Party to a Multipoint Call](adding-a-party-to-a-multipoint-call.md). For information about deleting parties from a point-to-multipoint call, see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md).
 
- 
+ 
 
- 
+ 
 
 
 

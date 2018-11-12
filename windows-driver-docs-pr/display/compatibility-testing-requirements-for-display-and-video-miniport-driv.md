@@ -27,9 +27,9 @@ This section lists some of the requirements for NT-based operating system graphi
 
 [Control Panel Requirements](control-panel-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

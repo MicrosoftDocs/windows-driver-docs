@@ -21,9 +21,9 @@ The following figure of a sample DirectShow filter graph shows one possible way 
 
 ![diagram illustrating a directshow filter graph with a tuner and demodulator combined in one filter](images/smpdshw1.png)
 
- 
+ 
 
- 
+ 
 
 
 

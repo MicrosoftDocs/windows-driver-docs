@@ -26,9 +26,9 @@ For more information about Plug and Play events in the miniport upper edge of an
 
 For more information about status indications in the protocol lower edge of an intermediate driver, see [Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md).
 
- 
+ 
 
- 
+ 
 
 
 

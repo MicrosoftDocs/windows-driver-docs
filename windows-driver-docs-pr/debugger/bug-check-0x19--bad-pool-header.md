@@ -72,7 +72,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>One incorrectly-calculated entry</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The bad entry that caused the miscalculation</p></td>
-<td align="left"><p>The pool block header's previous size is too large.</p></td>
+<td align="left"><p>The pool block header&#39;s previous size is too large.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x7</p></td>
@@ -133,7 +133,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -161,9 +161,9 @@ If this Bug Check appears inconsistently, it could be related to faulty physical
 
 Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
- 
+ 
 
- 
+ 
 
 
 

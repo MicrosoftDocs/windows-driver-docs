@@ -56,7 +56,7 @@ Displays all long integers in the default radix.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,13 +71,13 @@ This command affects only the display of long integers. To control whether stand
 
 **Note**   The [**dv (Display Local Variables)**](dv--display-local-variables-.md) command always displays long integers in the current number base.
 
- 
+ 
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_PRESENT to determine whether a signal carri
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -83,9 +83,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

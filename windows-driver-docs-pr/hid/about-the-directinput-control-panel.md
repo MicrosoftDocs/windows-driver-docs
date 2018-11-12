@@ -18,9 +18,9 @@ DirectInput provides support for game controllers such as game pads, joysticks, 
 
 Game controller hardware vendors are encouraged to use this extensibility feature to provide customized property sheets for their game controllers instead of creating a separate control panel. This allows the user to open a single control panel to configure and test their game controllers.
 
- 
+ 
 
- 
+ 
 
 
 

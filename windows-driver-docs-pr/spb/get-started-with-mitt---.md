@@ -37,7 +37,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 -   The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063.aspx).
     **Note**  Windbg can be installed as a standalone tool set.
 
-     
+     
 
 -   ![applies to windows phone](images/Phone.png)
 
@@ -99,7 +99,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
 **Note**  The **UpdateFirmware** option cannot restore the factory firmware image installed on the MITT board.
 
- 
+ 
 
 If MuttUtil returns an error while updating or installing the firmware,
 

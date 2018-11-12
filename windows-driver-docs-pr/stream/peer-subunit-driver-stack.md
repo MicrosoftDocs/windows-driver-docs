@@ -45,9 +45,9 @@ In the context of the peer subunit driver stack, target functionality is limited
 
 To use the built-in extension mechanism, specify the unit address as 0xff in the **SubunitAddress** member of the AVC\_COMMAND\_IRB structure. The **SubunitAddress** member is left alone in for unit commands (the unit address provided by the subunit driver still exists). The virtual subunit driver is always able to key off of the **SubunitAddress** member.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ Click **Set Current Instruction** on the **Edit** menu to change the value of th
 
 This command is equivalent to pressing CTRL+SHIFT+I or clicking **Set instruction pointer to current line** on the Source window's shortcut menu.
 
- 
+ 
 
- 
+ 
 
 
 

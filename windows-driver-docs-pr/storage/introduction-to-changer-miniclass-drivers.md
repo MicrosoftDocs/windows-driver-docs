@@ -29,9 +29,9 @@ Before starting to implement a new miniclass driver, you should ensure that:
 
 Microsoft operating systems do not support write-once optical drives or changers with more than one type of drive.
 
- 
+ 
 
- 
+ 
 
 
 

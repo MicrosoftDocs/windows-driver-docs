@@ -23,9 +23,9 @@ In its *FilterDetach* function, the driver frees its context areas and other res
 
 After the filter module returns from *FilterDetach*, NDIS can start the paused driver stack. For more information about starting a driver stack, see [Starting a Driver Stack](starting-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

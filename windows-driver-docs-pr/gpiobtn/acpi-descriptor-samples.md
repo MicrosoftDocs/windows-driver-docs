@@ -14,7 +14,7 @@ This topic contains ACPI descriptor samples.
 
 **Note**  Use only 4 chars length for ACPI descriptors for device definitions (such as CONV).
 
- 
+ 
 
 ## <span id="ACPI_description_for_button_array"></span><span id="acpi_description_for_button_array"></span><span id="ACPI_DESCRIPTION_FOR_BUTTON_ARRAY"></span>ACPI description for button array
 
@@ -101,9 +101,9 @@ Device(DOCK)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

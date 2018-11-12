@@ -43,7 +43,7 @@ For example, the IOCTL (FSCTL) control codes used in 32-bit drivers contain four
 </tbody>
 </table>
 
- 
+ 
 
 As long as none of the existing driver-defined control codes set the MSB in the Function field, these control codes can continue to be used by 32-bit user-mode applications.
 
@@ -77,7 +77,7 @@ To accommodate 64-bit callers, the driver defines a Function field that is short
 </tbody>
 </table>
 
- 
+ 
 
 The following code example shows how to define a "64Bit" field in a driver header file:
 
@@ -101,9 +101,9 @@ typedef struct _IOCTL_PARAMETERS {
 } IOCTL_PARAMETERS, *PIOCTL_PARAMETERS;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

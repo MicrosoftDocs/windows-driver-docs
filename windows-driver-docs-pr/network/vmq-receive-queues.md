@@ -48,7 +48,7 @@ For NDIS 6.20 in Windows Server 2008 R2, if the miniport driver supports split
 
     **Note**  The Hyper-V child partition is also known as a VM.
 
-     
+     
 
 The following figure shows the shared memory in the queues, the management operating system, and the guest operating systems.
 
@@ -60,9 +60,9 @@ In the figure, each packet in a queue is shown with header information that was 
 
 Starting with NDIS 6.30, splitting VMQ receive buffers into separate lookahead buffers is no longer supported. The miniport driver must allocate memory for each receive buffer from the address space of the management operating system.
 
- 
+ 
 
- 
+ 
 
 
 

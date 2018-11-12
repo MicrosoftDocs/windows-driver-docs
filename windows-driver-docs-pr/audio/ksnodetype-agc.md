@@ -33,9 +33,9 @@ A KSNODETYPE\_AGC node can also support the following optional properties:
 
 The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to both enable and disable the node. When disabled, the node operates in pass-through mode (that is, it allows the input stream to pass through to the output without modification).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -37,9 +37,9 @@ Before a NetDMA provider driver calls [**NetDmaProviderStart**](https://msdn.mic
 
 DMA provider drivers call the [**NetDmaProviderStop**](https://msdn.microsoft.com/library/windows/hardware/ff568335) function to notify the NetDMA interface that a previously started NetDMA provider is no longer available. For more information about stopping a NetDMA provider, see [Stopping a NetDMA Provider](stopping-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

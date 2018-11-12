@@ -33,9 +33,9 @@ To start the protected video session, calls should be made to the COPP device's 
 
 After the video session is set to protected mode, the video miniport driver can process [COPP commands](copp-commands.md) and requests for [COPP status](copp-status.md), and pass [COPP status events](copp-status-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

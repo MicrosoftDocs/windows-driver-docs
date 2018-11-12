@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  This directive is not used in INF files that install devices that do not require any drivers, such as modems or display monitors.
 
- 
+ 
 
 An **AddService** directive is used within an [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) or [**INF DefaultInstall.Services section**](inf-defaultinstall-services-section.md). It specifies characteristics of the services associated with drivers, such as how and when the services are loaded, and any dependencies on other underlying legacy drivers or services. Optionally, this directive also sets up event-logging services for the device.
 
@@ -92,7 +92,7 @@ Optionally specifies a name to use for the event log. If omitted, this defaults 
 Remarks
 -------
 
-The system-defined and case-insensitive extensions can be inserted into a *DDInstall***.Services** section that contains an **AddService** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
+The system-defined and case-insensitive extensions can be inserted into a <em>DDInstall</em>**.Services** section that contains an **AddService** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
 
 Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -164,7 +164,7 @@ Indicates a driver started on demand, either by the PnP manager when the corresp
 
 This value should be used in the INF files for all WDM drivers of devices that are not required to load the system and for all PnP device drivers that are neither required to load the system nor engaged in device detection.
 
-<a href="" id="0x4--service-disabled-"></a>**0x4 (**SERVICE_DISABLED)  
+<a href="" id="0x4--service-disabled-"></a><strong>0x4 (</strong>SERVICE_DISABLED)  
 Indicates a driver that cannot be started.
 
 This value can be used to temporarily disable the driver services for a device. However, a device/driver cannot be installed if this value is specified in the service-install section of its INF file.
@@ -196,17 +196,17 @@ The *dirid* number is either a custom directory identifier or one of the system-
 <a href="" id="startname-driver-object-name"></a>**StartName**=*driver-object-name*  
 This optional entry specifies the name of the driver object that represents this device/driver. If *type-code* specifies **1** (SERVICE_KERNEL_DRIVER) or **2** (SERVICE_FILE_SYSTEM_DRIVER), this name is the driver object name that the I/O manager uses to load the driver.
 
-<a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg**=*add-registry-section*\[**,***add-registry-section*\]...  
+<a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg**=*add-registry-section*\[**,**<em>add-registry-section</em>\]...  
 References one or more INF-writer-defined *add-registry-sections* in which any registry information pertinent to the newly installed services is set up. An **HKR** specification in such an *add-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\ServiceName** registry key. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
 This directive is rarely used in a service-install-section.
 
-<a href="" id="delreg-del-registry-section--del-registry-section----"></a>**DelReg**=*del-registry-section*\[**,***del-registry-section*\]...  
+<a href="" id="delreg-del-registry-section--del-registry-section----"></a>**DelReg**=*del-registry-section*\[**,**<em>del-registry-section</em>\]...  
 References one or more INF-writer-defined *del-registry-sections* in which pertinent registry information for an already installed services is removed. An **HKR** specification in such a *del-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\ServiceName** registry key. For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
 This directive is almost never used in a *service-install-section*, but it might be used in an INF that "updates" the registry for a previous installation of the same device/driver services.
 
-<a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg**=*bit-registry-section*\[**,***bit-registry-section*\]...  
+<a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg**=*bit-registry-section*\[**,**<em>bit-registry-section</em>\]...  
 Is valid in a *service-install-section* but almost never used. An **HKR** specification in such a *bit-registry-section* also designates the **HKLM\\System\\CurrentControlSet\\Services\\ServiceName** registry key.
 
 <a href="" id="loadordergroup-load-order-group-name"></a>**LoadOrderGroup**=*load-order-group-name*  
@@ -216,7 +216,7 @@ In general, this entry is unnecessary for devices with WDM drivers or for exclus
 
 For more information about **LoadOrderGroup**, see [Specifying Driver Load Order](specifying-driver-load-order.md).
 
-<a href="" id="dependencies-depend-on-item-name--depend-on-item-name----"></a>**Dependencies**=*depend-on-item-name*\[**,***depend-on-item-name*\]...  
+<a href="" id="dependencies-depend-on-item-name--depend-on-item-name----"></a>**Dependencies**=*depend-on-item-name*\[**,**<em>depend-on-item-name</em>\]...  
 Each *depend-on-item-name* item in a dependencies list specifies the name of a service or load-order group on which the device/driver depends.
 
 If the *depend-on-item-name* specifies a service, the service that must be running before this driver is started. For example, the INF for the system-supplied Win32 TCP/IP print services depends on the support of the underlying (kernel-mode) TCP/IP transport stack. Consequently, the INF for the TCP/IP print services specifies this entry as **Dependencies=TCPIP**.
@@ -284,7 +284,7 @@ AddReg=add-registry-section[, add-registry-section]...
  ...
 ```
 
-For a typical device/driver INF file, the *event-log-install-section* uses only the **AddReg** directive to set up an event-logging message file for the driver. An **HKR** specification in an *add-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\EventLog\\***EventLogType***\\***EventName* registry key. This event-logging *add-registry-section* has the following general form:
+For a typical device/driver INF file, the *event-log-install-section* uses only the **AddReg** directive to set up an event-logging message file for the driver. An **HKR** specification in an *add-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\EventLog\\**<em>EventLogType</em>**\\**<em>EventName</em> registry key. This event-logging *add-registry-section* has the following general form:
 
 ```cpp
 [drivername_EventLog_AddReg]
@@ -379,9 +379,9 @@ The example in the reference for the [***DDInstall*.HW**](inf-ddinstall-hw-secti
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

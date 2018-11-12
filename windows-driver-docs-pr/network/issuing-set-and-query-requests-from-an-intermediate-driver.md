@@ -21,9 +21,9 @@ To cancel an OID request, call the [**NdisCancelOidRequest**](https://msdn.micro
 
 For more information about responding to set and query requests, see [Responding to Sets and Queries in an Intermediate Driver](responding-to-sets-and-queries-in-an-intermediate-driver.md). For more information about issuing OID requests, see [OID Request Operations in a Protocol Driver](oid-request-operations-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

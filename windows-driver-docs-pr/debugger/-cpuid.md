@@ -48,7 +48,7 @@ Specifies the processor whose information will be displayed. If you omit this pa
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -76,9 +76,9 @@ For an x86-based processor or an x64-based processor, the **F** column displays 
 
 For an Itanium-based processor, the **M** column displays the processor model number, the R column displays the processor revision number, the **F** column displays the processor family number, and the **A** column displays the architecture revision number.
 
- 
+ 
 
- 
+ 
 
 
 

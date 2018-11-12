@@ -62,9 +62,9 @@ The NewMyObject function creates and initializes an object, and then passes a po
 
 For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712).
 
- 
+ 
 
- 
+ 
 
 
 

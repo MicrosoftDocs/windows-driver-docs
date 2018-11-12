@@ -28,9 +28,9 @@ This section includes the following topics:
 
 [Differences from Previous Versions of Microsoft Windows](differences-from-previous-versions-of-microsoft-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

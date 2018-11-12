@@ -38,9 +38,9 @@ Data Type:BIDI\_STRING
 
 Description:A string that contains the current TCP/IP address of the device. This address could be in either IPV4 or IPV6 format. This address is an address that the port monitor is currently using to communicate with the print device.
 
- 
+ 
 
- 
+ 
 
 
 

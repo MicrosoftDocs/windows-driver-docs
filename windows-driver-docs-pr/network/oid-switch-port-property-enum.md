@@ -22,7 +22,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.mi
 
     **Note**  If the **NumProperties** member of the [**NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598236) structure is set to zero, no [**NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598233) structures are returned.
 
-     
+     
 
 Remarks
 -------
@@ -39,7 +39,7 @@ The OID\_SWITCH\_PORT\_PROPERTY\_ENUM OID must only be issued when the Hyper-V e
 
 **Note**  If the extension receives the OID method request of OID\_SWITCH\_PORT\_PROPERTY\_ENUM, it must not complete the OID request. Instead, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the OID request down the extensible switch driver stack.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -64,7 +64,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -104,9 +104,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

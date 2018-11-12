@@ -40,9 +40,9 @@ A DirectX 9.0 version driver that supports rendering to multiple targets simulta
 
 -   The D3DDP2OP\_CLEAR operation code clears all elements of a multiple render target group.
 
- 
+ 
 
- 
+ 
 
 
 

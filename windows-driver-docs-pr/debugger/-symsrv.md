@@ -45,7 +45,7 @@ The **!symsrv** extension closes the symbol server client.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,9 +56,9 @@ This can be useful if you need to re-synchronize your connection.
 
 If you have previously refused an internet authentication request, you will need to use **!symsrv close** to reconnect to the symbol store. See [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

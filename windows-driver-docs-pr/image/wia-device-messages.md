@@ -90,9 +90,9 @@ Currently, the WIA default error handler supports the following device messages:
 
 -   WIA\_ERROR\_PAPER\_EMPTY
 
- 
+ 
 
- 
+ 
 
 
 

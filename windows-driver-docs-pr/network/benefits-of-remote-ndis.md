@@ -24,9 +24,9 @@ Remote NDIS is an extension of the well-understood and time-tested NDIS architec
 
 Value-added mechanisms that already exist in the NDIS network stack are supported for Remote NDIS devices.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,11 +39,11 @@ The following table describes the ISCSI\_PORTAL\_TYPE\_QUALIFIERS values.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

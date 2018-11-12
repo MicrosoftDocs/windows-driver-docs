@@ -46,7 +46,7 @@ The Tcpbidi.xsd file, which is used to extend the bidi schema, defines two const
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
@@ -76,9 +76,9 @@ This section includes the following topics.
 
 [Driver-Specific Bins](driver-specific-bins.md)
 
- 
+ 
 
- 
+ 
 
 
 

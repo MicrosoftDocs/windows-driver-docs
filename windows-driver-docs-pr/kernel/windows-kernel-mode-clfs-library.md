@@ -16,9 +16,9 @@ Routines that provide a direct interface for CLFS are prefixed with the letters 
 
 CLFS is a technology that is related to transacted file systems; for more information about transactions, see [Windows Kernel-Mode Transaction Manager](windows-kernel-mode-kernel-transaction-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

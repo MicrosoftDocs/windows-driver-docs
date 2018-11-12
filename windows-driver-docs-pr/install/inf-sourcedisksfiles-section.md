@@ -65,7 +65,7 @@ During installation, SetupAPI functions look for architecture-specific **SourceD
 
 **Important**  Do not use a **SourceDisksFiles** section to copy INF files. For more information about how to copy INF files, see [Copying INFs](copying-inf-files.md).
 
- 
+ 
 
 Examples
 --------
@@ -100,9 +100,9 @@ aha154x.sys = 1,\x86 ; on distribution disk 1, in subdir \WinNT\x86
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

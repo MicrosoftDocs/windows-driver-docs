@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_NET [device interface class](https://msdn.microsoft.com/li
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

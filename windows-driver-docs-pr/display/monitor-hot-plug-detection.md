@@ -82,9 +82,9 @@ The following list describes the steps followed when the lid is closed on a lapt
 
 2.  *DxgkDdiNotifyAcpiEvent* passes a DXGK\_CHILD\_STATUS structure to the display port driver's **DxgkCbIndicateChildStatus** function to report the status of the child device associated with the built-in display panel. Specifically, *DxgkDdiNotifyAcpiEvent* sets the **HotPlug.Connected** member of the DXGK\_CHILD\_STATUS structure to **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ The template topology in the preceding figure contains five different node types
 
 The network provider must examine this topology and determine the transformations that the filter performs on a signal in any particular graph. For more information about the data structures that describe the template topology, see [Broadcast Driver Architecture Minidrivers](broadcast-driver-architecture-minidrivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

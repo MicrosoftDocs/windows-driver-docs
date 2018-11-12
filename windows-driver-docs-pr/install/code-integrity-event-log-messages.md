@@ -39,9 +39,9 @@ The following are informational events that are logged to the Code Integrity ver
 
 -   Code Integrity successfully loaded the &lt;*file name*&gt; catalog.
 
- 
+ 
 
- 
+ 
 
 
 

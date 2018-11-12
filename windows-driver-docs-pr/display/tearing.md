@@ -27,9 +27,9 @@ A tear may also occur if the surface being flipped to is having data written to 
 
 A tear occurs when a page flip or blt happens at the wrong time. For example, if a page flips while the monitor scan line is in the middle of displaying a surface, as represented by the dashed line in the preceding figure, a tear occurs. The tear can be avoided by timing the flip to occur only after the entire surface has been displayed (as in the lower example of the figure). A tear can also occur when blitting to a surface that is in the process of being displayed.
 
- 
+ 
 
- 
+ 
 
 
 

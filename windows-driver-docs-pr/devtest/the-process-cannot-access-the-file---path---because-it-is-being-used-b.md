@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 SDV displays this message when it tries to delete files in response to **staticdv /clean**, **staticdv /clean /force**, or **staticdv /cleanalllibs** commands, but it cannot gain access to the files because they are being accessed by another application. To resolve the problem, close any applications that might be using the files and submit the command again.
 
- 
+ 
 
- 
+ 
 
 
 

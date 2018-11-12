@@ -52,9 +52,9 @@ When these steps are completed, the user-mode DirectMusic port should be open an
 
 A user-mode software synthesizer can be implemented as an object with an [IDirectMusicSynth](https://msdn.microsoft.com/library/windows/hardware/ff536519) interface. A user-mode wave sink can be implemented as an object with an [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520) interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).
 
- 
+ 
 
- 
+ 
 
 
 

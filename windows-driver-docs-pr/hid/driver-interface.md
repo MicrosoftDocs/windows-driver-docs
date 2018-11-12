@@ -38,9 +38,9 @@ If the force-feedback driver is COM-based, an instance of the driver is created 
 
 This functionality is supported by all force feedback devices.
 
- 
+ 
 
- 
+ 
 
 
 

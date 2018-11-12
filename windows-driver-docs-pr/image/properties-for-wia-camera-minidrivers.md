@@ -135,9 +135,9 @@ A WIA minidriver supplies the following properties:
 
 [**WIA\_IPC\_TIMEDELAY**](https://msdn.microsoft.com/library/windows/hardware/ff552560)
 
- 
+ 
 
- 
+ 
 
 
 

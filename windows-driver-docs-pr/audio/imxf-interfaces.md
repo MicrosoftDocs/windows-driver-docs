@@ -47,9 +47,9 @@ The [IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491
 
 For more information about the use of these interfaces, see [Allocator](allocator.md).
 
- 
+ 
 
- 
+ 
 
 
 

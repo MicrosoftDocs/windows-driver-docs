@@ -138,9 +138,9 @@ These additional kernel-mode structures and enumerations support Miracast displa
 -   [**DXGK\_CHILD\_STATUS\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff561015) (**StatusMiracast** constant added)
 -   [**DXGKARGCB\_NOTIFY\_INTERRUPT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff557538) (**MiracastEncodeChunkCompleted** child structure added)
 
- 
+ 
 
- 
+ 
 
 
 

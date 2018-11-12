@@ -23,9 +23,9 @@ This section describes the format of an individual shader code and the tokens th
 
 [Shader Relative Addressing](shader-relative-addressing.md)
 
- 
+ 
 
- 
+ 
 
 
 

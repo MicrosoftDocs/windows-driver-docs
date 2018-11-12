@@ -31,9 +31,9 @@ The code for the WDFVERIFY and VERIFY\_IS\_IRQL\_PASSIVE\_LEVEL macros is includ
 
 For more information about project configurations, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
 
- 
+ 
 
- 
+ 
 
 
 

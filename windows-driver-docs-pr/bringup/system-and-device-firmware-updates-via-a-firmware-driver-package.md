@@ -38,9 +38,9 @@ A device driver package contains an INF file describing the devices to which the
 -   [Certifying and signing the update package](certifying-and-signing-the-update-package.md)
 -   [Installing the update](installing-the-update.md)
 
- 
+ 
 
- 
+ 
 
 
 

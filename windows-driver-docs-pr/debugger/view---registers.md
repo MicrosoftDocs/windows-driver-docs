@@ -20,9 +20,9 @@ This command is equivalent to pressing ALT+4 or clicking the **Registers (Alt+4)
 
 For more information about this window and its uses, see [Registers Window](registers-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

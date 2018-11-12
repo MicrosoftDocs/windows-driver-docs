@@ -20,7 +20,7 @@ For more information about these identifiers (IDs), see [Device Identification S
 
 **Note**  Function drivers and filter drivers do not handle this IRP.
 
- 
+ 
 
 Major Code
 ----------
@@ -160,9 +160,9 @@ Requirements
 
 [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203)
 
- 
+ 
 
- 
+ 
 
 
 

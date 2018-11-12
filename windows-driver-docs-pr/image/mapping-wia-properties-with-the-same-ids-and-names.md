@@ -579,7 +579,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="note-a-"></a>Note a:  
 FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER).
@@ -640,11 +640,11 @@ If these properties are not supplied by the Windows Vista driver, the compatibil
 
 **Note**   When possible, applications should always parse the image header data to get accurate information on the image. They should not rely on this property since it is not accurate.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

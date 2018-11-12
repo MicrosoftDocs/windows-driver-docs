@@ -56,9 +56,9 @@ To obtain a request from a manual queue, the driver can call [**WdfIoQueueRetrie
 
 After the driver obtains a request from the queue, it must [process the request](processing-i-o-requests.md). The driver must eventually [complete](completing-i-o-requests.md) or [cancel](canceling-i-o-requests.md) each request.
 
- 
+ 
 
- 
+ 
 
 
 

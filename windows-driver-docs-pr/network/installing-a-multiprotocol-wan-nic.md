@@ -37,9 +37,9 @@ After the WAN NIC has been installed, the user can reconfigure the NIC, using th
 
 Note that the **LowerRange** binding interface for a multiprotocol WAN NIC that supports ISDN must be set to **isdn**. For more information, see [Specifying Binding Interfaces](specifying-binding-interfaces.md). If the **ShowIsdnPages** registry value is not present and if the NIC's **LowerRange** is set to **isdn**, the ISDN Wizard is displayed during installation and configuration of the NIC. If **ShowIsdnPages** is set to zero, the ISDN Wizard is not displayed. If **ShowIsdnPages** is set to 1, the ISDN Wizard is displayed during configuration of the NIC.
 
- 
+ 
 
- 
+ 
 
 
 

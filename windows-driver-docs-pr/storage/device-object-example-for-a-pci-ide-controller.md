@@ -40,9 +40,9 @@ Starting from the bottom of the figure, the following describes each device obje
 
 7.  The disk class driver creates an FDO and attaches it to the associated disk PDO, exactly as in the case of the SCSI, and the CD-ROM driver creates an FDO and attaches it to the associated CD-ROM PDO. As in the case of the SCSI, a filter driver DO can be inserted between the device PDO and the device FDO. The figure showing a device object tree for a CD-ROM device on an IEEE 1394 controller illustrates this using a CD Audio Filter DO that can be optionally placed just above the CD-ROM PDO.
 
- 
+ 
 
- 
+ 
 
 
 

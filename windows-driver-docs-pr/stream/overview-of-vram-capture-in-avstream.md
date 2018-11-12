@@ -22,9 +22,9 @@ The following diagram shows how a VRAM capture-enabled AVStream minidriver inter
 
 ![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules](images/lddmcapturearchitectureoverview.gif)
 
- 
+ 
 
- 
+ 
 
 
 

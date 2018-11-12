@@ -48,15 +48,15 @@ When BinPlace strips a symbol file, the stripped and full versions of the file a
 
 **Note**   BinPlace will strip private symbols out of a symbol file when the symbol file is in the same directory as the executable file, and you specify the name of the *executable* file (along with the appropriate options) on the BinPlace command line. You should not specify the name of the symbol file itself -- doing so will result in BinPlace moving the file without altering it.
 
- 
+ 
 
 If you need to determine whether a symbol file contains private symbols, you can use the [SymChk](https://msdn.microsoft.com/library/windows/hardware/ff558844) tool. SymChk is part of the Debugging Tools for Windows package. See SymChk and [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for details.
 
 If you are submitting your driver to the [Windows Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016), you can submit stripped symbol files if you prefer not to share your private symbols with Microsoft. Symbol files that have been stripped by BinPlace do not expose any parts of your driver's architecture that normally would be considered confidential. For more information, see the [Windows Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016).
 
- 
+ 
 
- 
+ 
 
 
 

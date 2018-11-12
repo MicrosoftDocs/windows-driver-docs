@@ -22,9 +22,9 @@ For rendering operations, the driver must first enable a [*surface*](https://msd
 
 For information about enabling [*PDEVs*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) and surfaces, refer to the [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) and [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) functions.
 
- 
+ 
 
- 
+ 
 
 
 

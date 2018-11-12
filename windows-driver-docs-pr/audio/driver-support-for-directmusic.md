@@ -37,9 +37,9 @@ This design guide contains the following sections:
 
 [Kernel Mode Hardware Acceleration DDI](kernel-mode-hardware-acceleration-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

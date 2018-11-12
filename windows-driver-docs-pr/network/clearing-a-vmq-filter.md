@@ -20,9 +20,9 @@ A protocol driver must clear all the filters that it set on a queue before it fr
 
 A miniport driver must not indicate packets on a nondefault queue if it has completed the OID\_RECEIVE\_FILTER\_CLEAR\_FILTER OID request to clear the last filter on the queue or if it has completed an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569789) OID request to free the queue.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 Handles do not completely insulate a DirectX 7.0 driver from the DirectDraw-managed DDRAWI\_DDSURFACE\_MORE and DDRAWI\_DDSURFACE\_LCL structures. These structure names are essentially aliases for the structures [**DD\_SURFACE\_MORE**](https://msdn.microsoft.com/library/windows/hardware/ff551737) and [**DD\_SURFACE\_LOCAL**](https://msdn.microsoft.com/library/windows/hardware/ff551733). In DirectDraw DDIs such as [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) and [*DdFlip*](https://msdn.microsoft.com/library/windows/hardware/ff549306), the driver is passed surface structure pointers, and must be able to use these structures instead of its private representations.
 
- 
+ 
 
- 
+ 
 
 
 

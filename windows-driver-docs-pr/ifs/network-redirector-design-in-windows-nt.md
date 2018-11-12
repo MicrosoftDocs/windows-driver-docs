@@ -21,9 +21,9 @@ The architecture that implements a kernel-mode driver for network redirectors ha
 
 ![diagram illustrating network redirector design in windows nt](images/redir-01.png)
 
- 
+ 
 
- 
+ 
 
 
 

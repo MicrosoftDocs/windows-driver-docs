@@ -27,9 +27,9 @@ X64:
 HKR,, InstalledDisplayDrivers,              %REG_MULTI_SZ%, r200umd, r200umdva, r200umd64, r200umd64va
 ```
 
- 
+ 
 
- 
+ 
 
 
 

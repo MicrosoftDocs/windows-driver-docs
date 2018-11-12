@@ -28,9 +28,9 @@ GDI offers improved definitions of lines and curves. Lines are not required to h
 
 GDI can download regions to be filled in the form of paths, as well as rectangles. Drivers can decompose paths into trapezoids or spans for filling.
 
- 
+ 
 
- 
+ 
 
 
 

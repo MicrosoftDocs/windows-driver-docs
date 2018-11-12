@@ -22,9 +22,9 @@ When the network configuration subsystem calls **SetContext**, it passes an **IU
 
 For example, the network configuration subsystem can supply the [**INetLanConnectionUiInfo**](https://msdn.microsoft.com/library/windows/hardware/ff548005) interface when it calls **SetContext**. **SetContext** can use the [**GetDeviceGuid**](https://msdn.microsoft.com/library/windows/hardware/ff548012) method of **INetLanConnectionUiInfo** to retrieve the GUID of a LAN device. The notify object can subsequently display properties for its network component in the context of this LAN device. For example, the notify object for the TCP/IP protocol can display an IP address that is associated with a particular LAN adapter in the context of that adapter. Doing so enables users to specify an IP address for that adapter.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,11 +30,11 @@ See [Autoconfiguration in an IHV Port Monitor](autoconfiguration-in-an-ihv-port-
 
 **Note**   "Microsoft printer class driver" refers to the Unidrv-based or Pscript5-based printer driver. "Microsoft port monitor" refers to the standard TCP/IP port monitor or the Web Services for Devices (WSD) port monitor.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

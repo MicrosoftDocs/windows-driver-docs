@@ -28,9 +28,9 @@ This section provides the following topics:
 
 [Details of the IPrintCoreHelper Interface](details-of-the-iprintcorehelper-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

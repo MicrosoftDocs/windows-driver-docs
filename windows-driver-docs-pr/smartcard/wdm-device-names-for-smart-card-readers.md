@@ -33,9 +33,9 @@ Because every driver must communicate with the smart card resource manager, the 
 
 The unit number for the device in the Win32 name space does not have to be the same as the one used to form the kernel device name. It should be the first available unit number. Use [**SmartcardCreateLink (WDM)**](https://msdn.microsoft.com/library/windows/hardware/ff548935) to automatically generate a symbolic-link name.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ If the OID query request completes successfully, the **InformationBuffer** membe
 
     **Note**  If no ports have been created on the extensible switch, the driver sets the **NumElements** member of the [**NDIS\_SWITCH\_PORT\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598221) structure to zero and no [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structures are returned.
 
-     
+     
 
 Remarks
 -------
@@ -33,7 +33,7 @@ When the extension handles the returned [**NDIS\_SWITCH\_PORT\_PARAMETERS**](htt
 
 **Note**  If the string is null-terminated, the **Length** member must not include the terminating null character.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -57,7 +57,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to return the [<strong>NDIS_SWITCH_PORT_ARRAY</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598221) and its array of [<strong>NDIS_SWITCH_PORT_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598229) elements. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598221" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_PORT_ARRAY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598221)"><strong>NDIS_SWITCH_PORT_ARRAY</strong></a> and its array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598229" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_PORT_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598229)"><strong>NDIS_SWITCH_PORT_PARAMETERS</strong></a> elements. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -66,7 +66,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -100,9 +100,9 @@ Requirements
 
 [Querying the Hyper-V Extensible Switch Configuration](https://msdn.microsoft.com/library/windows/hardware/hh598293)
 
- 
+ 
 
- 
+ 
 
 
 

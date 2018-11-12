@@ -19,7 +19,7 @@ Set requests are not applicable.
 
 ## Remarks
 
-For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_STATUS](mb-lte-attach-operations.md#mbimcidmslteattachstatus).
+For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_STATUS](mb-lte-attach-operations.md).
 
 ## Requirements
 

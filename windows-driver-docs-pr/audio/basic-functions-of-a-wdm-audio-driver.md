@@ -25,9 +25,9 @@ A Microsoft Windows Driver Model (WDM) audio driver provides the following funct
 
 -   The driver optionally supports other media interfaces, such as [**KSINTERFACE\_STANDARD\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563384), [**KSINTERFACE\_MEDIA\_WAVE\_QUEUED**](https://msdn.microsoft.com/library/windows/hardware/ff563377), or [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563381).
 
- 
+ 
 
- 
+ 
 
 
 

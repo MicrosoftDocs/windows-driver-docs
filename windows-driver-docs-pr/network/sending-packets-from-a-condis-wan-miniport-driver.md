@@ -33,9 +33,9 @@ Packets that a WAN miniport driver sends contain simple HDLC PPP framing if PPP 
 
 A WAN miniport driver must not attempt to provide software loopback or promiscuous-mode loopback. Both of these loopback types are fully supported by the NDISWAN driver.
 
- 
+ 
 
- 
+ 
 
 
 

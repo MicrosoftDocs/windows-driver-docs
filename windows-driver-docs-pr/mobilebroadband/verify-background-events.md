@@ -32,9 +32,9 @@ Next, check that you can successfully authenticate to the network. In particular
 
 [Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

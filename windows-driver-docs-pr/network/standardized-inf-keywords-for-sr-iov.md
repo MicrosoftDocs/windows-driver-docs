@@ -29,7 +29,7 @@ After the driver is installed, administrators can update the **\*SRIOV** keyword
 
 **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
- 
+ 
 
 <a href="" id="-sriovpreferred"></a>**\*SriovPreferred**  
 A value that defines whether SR-IOV capabilities should be enabled instead of virtual machine queue (VMQ) or receive side scaling (RSS) capabilities.
@@ -48,7 +48,7 @@ The display text that is associated with the**SubkeyName** keyword.
 
 **Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
 
- 
+ 
 
 <a href="" id="value"></a>Value  
 The enumeration integer value that is associated with each **SubkeyName** keyword in the list.
@@ -73,7 +73,7 @@ The display text that is associated with each value that appears in the menu.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*SRIOV</strong></p></td>
+<td align="left"><p><strong><em>SRIOV</strong></p></td>
 <td align="left"><p>SR-IOV</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -85,11 +85,11 @@ The display text that is associated with each value that appears in the menu.
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*SriovPreferred</strong></p></td>
+<td align="left"><p><strong></em>SriovPreferred</strong></p></td>
 <td align="left"><p>The ParamDesc and EnumDesc entries for this subkey cannot be used in either INF files or a user interface.</p></td>
 <td align="left"><p>0 (Default)</p></td>
-<td align="left"><p>Report RSS or VMQ capabilities based on the <strong>*VmqOrRssPreferrence</strong> keyword. Do not report SR-IOV capabilities,</p>
-<p>For more information about the <strong>*VmqOrRssPreferrence</strong> keyword, see [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md).</p></td>
+<td align="left"><p>Report RSS or VMQ capabilities based on the <strong><em>VmqOrRssPreferrence</strong> keyword. Do not report SR-IOV capabilities,</p>
+<p>For more information about the <strong></em>VmqOrRssPreferrence</strong> keyword, see <a href="standardized-inf-keywords-for-vmq.md" data-raw-source="[Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md)">Standardized INF Keywords for VMQ</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -100,7 +100,7 @@ The display text that is associated with each value that appears in the menu.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
@@ -141,25 +141,25 @@ The type of the data value.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*Flags</strong></p></td>
+<td align="left"><p><strong><em>Flags</strong></p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p>The keyword must be assigned this value.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*SwitchType</strong></p></td>
+<td align="left"><p><strong></em>SwitchType</strong></p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p>The keyword must be assigned this value.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*SwitchId</strong></p></td>
+<td align="left"><p><strong><em>SwitchId</strong></p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p>The keyword must be assigned this value.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*SwitchName</strong></p></td>
+<td align="left"><p><strong></em>SwitchName</strong></p></td>
 <td align="left"><p>“Default Switch”</p></td>
 <td align="left"><p>REG_SZ</p></td>
 <td align="left"><p>The keyword must be assigned this value.</p></td>
@@ -170,16 +170,16 @@ The type of the data value.
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p><em>n</em> is the maximum number of PCIe Virtual Functions (VFs) that are supported by the SR-IOV network adapter.</p>
 <div class="alert">
-<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls [<strong>NdisMSetMiniportAttributes</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563672), it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see [Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md).
+<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563672" data-raw-source="[&lt;strong&gt;NdisMSetMiniportAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563672)"><strong>NdisMSetMiniportAttributes</strong></a>, it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see <a href="determining-nic-switch-capabilities.md" data-raw-source="[Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md)">Determining NIC Switch Capabilities</a>.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following is an example of **AddReg** directives for the default NIC switch configuration of an SR-IOV network adapter:
 
@@ -192,9 +192,9 @@ For more information about the syntax of the **AddReg** directive, see [**INF Ad
 
 For more information about the default NIC switch, see [NIC Switches](nic-switches.md).
 
- 
+ 
 
- 
+ 
 
 
 

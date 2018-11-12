@@ -15,7 +15,7 @@ This section covers how to get started with Windows Debugging. If your goal is t
 To get started with Windows Debugging, complete the following tasks.
 
 1. Determine which devices will serve as the host system and the target system.
-The debugger runs on the host system and the code that you want to debug runs on the target system.
+   The debugger runs on the host system and the code that you want to debug runs on the target system.
 
    **Host &lt;--------------------------------------------------&gt; Target**
 
@@ -36,11 +36,11 @@ The debugger runs on the host system and the code that you want to debug runs on
    Depending on what mode you decide to debug in, you will need to configure and use the debuggers in different ways. Some debug commands operate the same, and some commands operate differently in different modes.
 
    For information about using the debugger in kernel mode, see the following topics:
-    -  [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
-    - [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md) 
-    - [Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)](debug-universal-drivers--kernel-mode-.md). 
+   - [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md) 
+   - [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md) 
+   - [Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)](debug-universal-drivers--kernel-mode-.md). 
     
-    For information about using the debugger in user mode, see [Getting Started with WinDbg (User-Mode)](getting-started-with-windbg.md).
+     For information about using the debugger in user mode, see [Getting Started with WinDbg (User-Mode)](getting-started-with-windbg.md).
 
 3. Chose your debugger environment.
 
@@ -72,18 +72,18 @@ The debugger runs on the host system and the code that you want to debug runs on
    [Standard Debugging Techniques](standard-debugging-techniques.md) apply to most debugging scenarios, and examples include setting breakpoints, inspecting the call stack, and finding a memory leak. [Specialized Debugging Techniques](specialized-debugging-techniques.md) apply to particular technologies or types of code. Examples are Plug and Play debugging, Kernel Mode Driver Framework debugging, and RPC debugging.
 
 10. Use the debugger reference commands.
-   Over time, you will use different debug commands as you work in the debugger. Use the [.hh (Open HTML Help File)](-hh--open-html-help-file-.md) command in the debugger to display help information about any debug command. For more information about the available commands, see [Debugger Reference](debugger-reference.md).
+    Over time, you will use different debug commands as you work in the debugger. Use the [.hh (Open HTML Help File)](-hh--open-html-help-file-.md) command in the debugger to display help information about any debug command. For more information about the available commands, see [Debugger Reference](debugger-reference.md).
 
 11. Use debugging extensions for specific technologies.
-  There are a number of debugging extensions that provide parsing of domain specific data structures. For more information, see [Specialized Extensions](specialized-extensions.md).
+    There are a number of debugging extensions that provide parsing of domain specific data structures. For more information, see [Specialized Extensions](specialized-extensions.md).
 
 12. Learn about related Windows internals, such as memory usage, context, threads and processes. This documentation assumes a knowledge of Windows internals. Review resources such as this book to learn more about Windows Internals. 
-  -   Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+    -   Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
 
 13. Review additional debugging resources.
-   -   Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
-   -   Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
-   -   [The Defrag Tools Show WinDbg Episodes 13-29](https://channel9.msdn.com/Shows/Defrag-Tools)
+    -   Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
+    -   Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
+    -   [The Defrag Tools Show WinDbg Episodes 13-29](https://channel9.msdn.com/Shows/Defrag-Tools)
 
 
 ## See Also

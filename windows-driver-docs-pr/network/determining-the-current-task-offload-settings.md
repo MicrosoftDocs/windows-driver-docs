@@ -19,9 +19,9 @@ A protocol driver can determine the current task offload encapsulation settings 
 
 For more information about issuing an OID request, see [Generating OID Requests from an NDIS Protocol Driver](generating-oid-requests-from-an-ndis-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

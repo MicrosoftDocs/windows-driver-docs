@@ -24,17 +24,17 @@ If the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter 
 
 **Note**  NDIS can change the flags that an underlying driver indicates. For example, if a miniport driver sets the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function, NDIS can copy the indicated data and pass the copy to [*ProtocolReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff570267) with the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag cleared.
 
- 
+ 
 
 **Note**  If the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag is set, the protocol driver must retain the original set of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures in the linked list. For example, when this flag is set the driver might process the structures and indicate them up the stack one at a time but before the function returns it must restore the original linked list.
 
- 
+ 
 
 Protocol drivers call the [**NdisReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564534) function to release ownership of a list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures, along with the associated [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures, and network data.
 
- 
+ 
 
- 
+ 
 
 
 

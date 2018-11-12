@@ -19,9 +19,9 @@ For more information about the WIA samples, see the [Windows Image Acquisition (
 
 You can also find an additional sample in [Creating a 'Hello World' WIA Minidriver](creating-a---hello-world---wia-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

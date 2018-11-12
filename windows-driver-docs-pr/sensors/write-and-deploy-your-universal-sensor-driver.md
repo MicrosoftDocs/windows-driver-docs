@@ -39,9 +39,9 @@ After updating the generic files to customize them for your sensor, see the foll
 -   [Build the sensor driver](build-the-sensor-driver.md)
 -   [Install the sensor driver](install-the-sensor-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -87,7 +87,7 @@ A pointer to a buffer to return the requested endpoint policy value. For more in
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -99,9 +99,9 @@ There are no associated calling restrictions for this function. This function is
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

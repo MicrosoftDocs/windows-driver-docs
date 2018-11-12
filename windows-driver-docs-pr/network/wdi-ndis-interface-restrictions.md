@@ -21,7 +21,7 @@ Function | Restrictions | Alternative
 [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) | Disallowed | The WDI data path receive handler to indicate received packets. 
 [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668) | Disallowed | The WDI data path send handler to complete sent packets.
 
- 
+ 
 
 
 

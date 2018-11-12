@@ -34,9 +34,9 @@ The second example combines the value into one line but still uses the curly bra
 *Person: FlorenceF{*Company:Contoso Pharmaceuticals{*Location: Redmond, WA}}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

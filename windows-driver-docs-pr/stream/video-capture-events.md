@@ -29,25 +29,25 @@ The [KSEVENTSETID\_VIDCAPNotify](https://msdn.microsoft.com/library/windows/hard
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSEVENT_VIDCAPTOSTI_EXT_TRIGGER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561912)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561912" data-raw-source="[&lt;strong&gt;KSEVENT_VIDCAPTOSTI_EXT_TRIGGER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561912)"><strong>KSEVENT_VIDCAPTOSTI_EXT_TRIGGER</strong></a></p></td>
 <td><p>Signals to a registered client when a button on a video capture device is triggered.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSEVENT_VIDCAP_AUTO_UPDATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561916)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561916" data-raw-source="[&lt;strong&gt;KSEVENT_VIDCAP_AUTO_UPDATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561916)"><strong>KSEVENT_VIDCAP_AUTO_UPDATE</strong></a></p></td>
 <td><p>Signals to a registered client when a property value changes.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSEVENT_VIDCAP_SEARCH</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561923)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561923" data-raw-source="[&lt;strong&gt;KSEVENT_VIDCAP_SEARCH&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561923)"><strong>KSEVENT_VIDCAP_SEARCH</strong></a></p></td>
 <td><p>Signals to a registered client when a search completes.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

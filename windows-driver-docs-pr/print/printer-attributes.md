@@ -30,9 +30,9 @@ The following topics describe how to specify printer attributes in GPD files:
 
 [General Attributes](general-attributes.md)
 
- 
+ 
 
- 
+ 
 
 
 

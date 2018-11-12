@@ -24,9 +24,9 @@ Miniport call managers (MCMs) also register *ProtocolXxx* functions in *Miniport
 
 For more information about configuring optional miniport driver services, see [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The `ResetCommunication` command attempts to make sure that the communication between the printer and the operating system is working properly.
 
- 
+ 
 
- 
+ 
 
 
 

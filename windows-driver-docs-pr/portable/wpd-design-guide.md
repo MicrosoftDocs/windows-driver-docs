@@ -14,9 +14,9 @@ The following sections describe the Windows Portable Devices (WPD) Driver platfo
 
 [WPD Drivers Overview](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ In *MiniportDriverUnload*, a miniport driver must call the [**NdisMDeregisterMin
 
 For more information about unloading an NDIS 6.0 miniport driver, see [Unloading a Miniport Driver](unloading-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

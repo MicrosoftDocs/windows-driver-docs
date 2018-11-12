@@ -32,9 +32,9 @@ The preceding command calls Cv2http.cmd on every .pdb file in a tree, using Http
 
 After this command is executed on a tree of .pdb files, they are ready for installation into the Web site or whatever location in which you want to put them. Remember that you can use SrcTool and PDBStr to examine the changes to the .pdb files.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ The WDK includes three tools that you can use to test and debug a WPD driver. Th
 | *WpdDeviceInspector.exe* | Generates an HTML report that describes the device capabilities and content.                                                                                                                                     |
 | *WpdMon.exe*             | Traces messages and commands that are passed between a WPD driver and the operating system or a WPD application.                                                                                                 |
 
- 
+ 
 
 For more information about these tools and their use, see [WPD Driver Development Tools](familiarizing-yourself-with-the-sample-driver.md) in the WDK documentation.
 
@@ -39,7 +39,7 @@ When you start *WpdInfo.exe*, it prompts you to select a portable device from th
 
 When the sensor reading event fired in the previous example, the following information was true:
 
--   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees farenheit, and a relative humidity of 41.7%.
+-   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees fahrenheit, and a relative humidity of 41.7%.
 -   Its interval property, SENSOR\_UPDATE\_INTERVAL, was set to 2,000.
 
 ## <span id="updating_the_interval_property_by_using_wpdinfo.exe"></span><span id="UPDATING_THE_INTERVAL_PROPERTY_BY_USING_WPDINFO.EXE"></span>Updating the Interval Property by Using WpdInfo.exe
@@ -64,7 +64,7 @@ After your driver is installed, you can create a debugging project in Visual Stu
 1.  Open Visual Studio 8 with elevated privileges (Run As Administrator) and navigate to the File &lt; New &gt; Project from Existing Code path.
     **Note**  You must open Visual Studio 8 with elevated privileges because the LocalService account requires these privileges. The WUDFHost process runs within the LocalService account. By using Visual Studio 8, you are able to debug the driver project.
 
-     
+     
 
 2.  Follow the steps in the **Welcome to the Create Project from Existing Code Files Wizard**. Make sure to specify the language, the location of your driver source files, a project name, and so on.
 3.  Open your newly created project.
@@ -84,9 +84,9 @@ Initialization code for a WPD driver, for example, the code found in **WpdBaseDr
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

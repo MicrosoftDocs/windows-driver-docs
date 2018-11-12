@@ -17,7 +17,7 @@ The **runtest** option executes simple disable and enable operations on a driver
 
 **Note**   The **runtest** option requires that you copy the [DevCon](devcon.md) (Devcon.exe) tool and place it in the same directory as other Wdftester files. The Devcon.exe application is located in the *%WDKRoot%*\\tools\\*&lt;platform&gt;* directory.
 
- 
+ 
 
 **The runtest option:**
 
@@ -41,9 +41,9 @@ The **runtest** option executes simple disable and enable operations on a driver
 
 8.  Unregisters the driver.
 
- 
+ 
 
- 
+ 
 
 
 

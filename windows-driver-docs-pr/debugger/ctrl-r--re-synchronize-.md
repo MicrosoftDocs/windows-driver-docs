@@ -61,7 +61,7 @@ CTRL+ALT+R
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ This attempts to synchronize the host computer with the target computer. Use thi
 
 If you are using a 1394 kernel connection, resynchronization may not always be successful.
 
- 
+ 
 
- 
+ 
 
 
 

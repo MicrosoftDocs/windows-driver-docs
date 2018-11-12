@@ -47,13 +47,13 @@ The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include a
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>SYSAUDIO_SELECT_GRAPH</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538500)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538500" data-raw-source="[&lt;strong&gt;SYSAUDIO_SELECT_GRAPH&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538500)"><strong>SYSAUDIO_SELECT_GRAPH</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a structure of type SYSAUDIO\_SELECT\_GRAPH that specifies the property, pin ID, and node ID. The property is specified by an embedded structure of type [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262). The pin ID is an index identifying a pin factory in the KS filter that wraps the virtual audio device. The node ID is an index identifying an optional node in the specified pin's data path. For more information, see the following Remarks section.
 
@@ -97,9 +97,9 @@ Requirements
 
 [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
 
- 
+ 
 
- 
+ 
 
 
 

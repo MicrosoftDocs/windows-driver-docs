@@ -26,9 +26,9 @@ A driver might create a new I/O request in a thread other than the I/O dispatch 
 
 If the driver calls the Win32 API to send an I/O request, it can retrieve the activity ID from the original request and propagate it to the thread. The I/O manager then applies the activity ID that is associated with the thread to any I/O request packets (IRPs) that it generates in response to the request.
 
- 
+ 
 
- 
+ 
 
 
 

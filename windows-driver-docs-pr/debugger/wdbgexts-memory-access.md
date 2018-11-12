@@ -52,9 +52,9 @@ The [**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084) op
 
 For a more powerful memory access API, see [Memory Access](memory-access.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

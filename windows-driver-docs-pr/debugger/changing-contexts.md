@@ -108,9 +108,9 @@ The local context is reset if any of the following events occur:
 
 The [**!for\_each\_frame**](-for-each-frame.md) extension enables you to execute a single command repeatedly, once for each frame in the stack. This command changes the local context for each frame, executes the specified command, and then returns the local context to its original value.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ This section contains descriptions of the common bug checks, including the param
 
 **Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
- 
+ 
 
 If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension command (in kernel mode) with the following syntax:
 
@@ -393,11 +393,11 @@ The following table shows the code and name of each bug check.
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

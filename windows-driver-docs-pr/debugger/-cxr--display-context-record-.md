@@ -63,7 +63,7 @@ Omitting the address does not display any context record information, but it doe
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +80,9 @@ The **.cxr** command is often used to debug bug check 0x1E. For more information
 
 The **.cxr /w** command writes the context to memory and displays the address where it has been stored. This address can be passed to [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) if you need to apply data breakpoints to this context.
 
- 
+ 
 
- 
+ 
 
 
 

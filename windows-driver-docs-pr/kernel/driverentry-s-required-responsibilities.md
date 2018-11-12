@@ -38,9 +38,9 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
 
 4.  Return NTSTATUS indicating whether the driver successfully loaded and can accept and process requests from the PnP manager to configure, add, and start its devices. (See [DriverEntry Return Values](driverentry-return-values.md).)
 
- 
+ 
 
- 
+ 
 
 
 

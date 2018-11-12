@@ -84,7 +84,7 @@ Specifies how to modify the display. You can use any of the following options.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Specifies the address where the debugger begins execution. If you do not use *StartAddress*, execution begins at the instruction that the instruction pointer points to. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
@@ -117,7 +117,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -208,9 +208,9 @@ In the preceding example, note also that **ILT+1440 (\_\_isatty)** is called 21 
 
 If any system calls are made, they appear in the counter and are listed again at the end of the command output.
 
- 
+ 
 
- 
+ 
 
 
 

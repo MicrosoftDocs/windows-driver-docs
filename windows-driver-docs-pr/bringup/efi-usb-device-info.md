@@ -42,9 +42,9 @@ The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** struct
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

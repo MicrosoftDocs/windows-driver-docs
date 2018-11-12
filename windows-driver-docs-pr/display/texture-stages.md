@@ -32,9 +32,9 @@ For example, if two textures, Texture0 and Texture1, are blended together, the r
 
 Each texture stage introduces one texture into the pipeline. The pixel pipeline is separate and comes after multiple texture operations. This may include fog application or frame buffer alpha blending.
 
- 
+ 
 
- 
+ 
 
 
 

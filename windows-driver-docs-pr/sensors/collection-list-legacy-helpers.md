@@ -90,16 +90,16 @@ Comments
 | Minimum supported server | Windows Server 2012 R2 |
 | Header                   | Sensorsutils.h         |
 
- 
+ 
 
 ## Related topics
 
 
 [Marshalling helper functions](marshalling-helper-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

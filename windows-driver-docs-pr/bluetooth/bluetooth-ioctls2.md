@@ -34,9 +34,9 @@ A profile driver uses [**IOCTL\_INTERNAL\_BTHENUM\_GET\_ENUMINFO**](https://msdn
 
 For more information about using Bluetooth IOCTLs and BRBs, see [Building and Sending a BRB](building-and-sending-a-brb.md).
 
- 
+ 
 
- 
+ 
 
 
 

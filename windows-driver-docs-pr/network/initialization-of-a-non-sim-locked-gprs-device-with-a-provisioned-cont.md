@@ -40,9 +40,9 @@ To initialize a non-SIM-locked GSM-based device, implement the following steps:
 
 13. The miniport driver sends an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) notification to indicate that the media connect state is **MediaConnectStateConnected**.
 
- 
+ 
 
- 
+ 
 
 
 

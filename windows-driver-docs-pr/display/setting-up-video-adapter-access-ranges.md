@@ -53,9 +53,9 @@ The miniport driver of hardware that decodes legacy resources must claim these r
 
 After a miniport driver is loaded and its [*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345) function is run, the miniport driver's [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) function is called to map any access range of video memory that the miniport driver makes visible to its corresponding display driver.
 
- 
+ 
 
- 
+ 
 
 
 

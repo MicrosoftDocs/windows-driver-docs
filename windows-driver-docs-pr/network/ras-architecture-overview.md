@@ -97,7 +97,7 @@ The serial driver component is a standard device driver for internal serial port
 **Note**  X.25 vendors can implement serial driver emulators for an X.25 interface card. In this case, each virtual circuit on the X.25 card appears as a serial port with an X.25 packet assembler/disassembler (PAD) attached to it. The connection interface must correctly emulate serial signals such as DTR, DCD, CTS, RTS, and DSR.
 X.25 vendors who implement a serial driver emulator for their X.25 card must also make an entry for their PAD in the Pad.inf file. This file contains the command/response script required to make a connection through the X.25 PAD. For more information about the Pad.inf file, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
 ### WAN Miniport Driver
 
@@ -105,9 +105,9 @@ A WAN miniport driver provides the interface between [NDISWAN](#ddk-ndiswan-ng) 
 
 A WAN miniport driver can be implemented as an NDIS WAN miniport driver or a CoNDIS WAN miniport driver. For more information about choosing the miniport driver model that is most appropriate for your application, see [Choosing a WAN Driver Model](choosing-a-wan-driver-model.md).
 
- 
+ 
 
- 
+ 
 
 
 

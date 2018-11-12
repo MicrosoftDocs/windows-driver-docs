@@ -72,7 +72,7 @@ Refer to the following table for the expected radio state programming by minipor
 </tbody>
 </table>
 
- 
+ 
 
 For devices that do not provide a hardware radio power switch, the **RadioState.HwRadioState** member of the NDIS\_WWAN\_RADIO\_STATE structure must always be set to *WwanRadioOn*.
 
@@ -115,9 +115,9 @@ Requirements
 
 [**WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff571225)
 
- 
+ 
 
- 
+ 
 
 
 

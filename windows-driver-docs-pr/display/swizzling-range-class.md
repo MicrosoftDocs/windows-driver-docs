@@ -17,9 +17,9 @@ The Windows Display Driver Model (WDDM) does not permit a call into one of the s
 
 -   [*DxgkDdiReleaseSwizzlingRange*](https://msdn.microsoft.com/library/windows/hardware/ff559786)
 
- 
+ 
 
- 
+ 
 
 
 

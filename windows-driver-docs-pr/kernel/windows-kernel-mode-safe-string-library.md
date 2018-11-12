@@ -18,9 +18,9 @@ For more information about using safe strings, see [Using Safe String Functions]
 
 Note that there is also a separate run-time library for general C programming in the kernel that has string functionality as well. For more information about the run-time library (RTL), see [Windows Kernel-Mode Run-Time Library](windows-kernel-mode-run-time-library.md). Note that even though both libraries are prefixed with "**Rtl**" they are not the same library.
 
- 
+ 
 
- 
+ 
 
 
 

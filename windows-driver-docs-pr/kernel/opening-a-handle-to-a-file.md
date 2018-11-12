@@ -53,23 +53,23 @@ Whichever routine you call, you must pass the access rights you need as the *Des
 <td><p>FILE_APPEND_DATA</p></td>
 </tr>
 <tr class="even">
-<td><p>Read the file's metadata, such as the file's creation time.</p></td>
+<td><p>Read the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
 <td><p>FILE_READ_ATTRIBUTES or GENERIC_READ</p></td>
 </tr>
 <tr class="odd">
-<td><p>Write the file's metadata, such as the file's creation time.</p></td>
+<td><p>Write the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
 <td><p>FILE_WRITE_ATTRIBUTES or GENERIC_WRITE</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
 
- 
+ 
 
- 
+ 
 
 
 

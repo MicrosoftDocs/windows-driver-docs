@@ -27,9 +27,9 @@ WppDebug(level,(format,...));
 
 Do not confuse the **WppDebug** macro, which traces WPP actions, with the **WPP\_DEBUG** macro, which sends trace messages to a debugger.
 
- 
+ 
 
- 
+ 
 
 
 

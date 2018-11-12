@@ -28,9 +28,9 @@ The following sections discuss the guidelines for the development and installati
 
 [Sample IDE Controller Minidrivers](sample-ide-controller-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

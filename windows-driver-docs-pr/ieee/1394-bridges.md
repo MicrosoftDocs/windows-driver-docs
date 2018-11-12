@@ -22,9 +22,9 @@ The 1394 base stack (*ohci1394.sys* and *1394bus.sys*) does not support 1394 bri
 
 Since bridges require that the operating system support multiple bus numbers in order to function properly, Microsoft does not guarantee that 1394 devices attached to a bridge will work.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,7 +34,7 @@ This is an extensible switch network adapter that is exposed in the guest operat
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 The VM network adapter supports the following virtualization types:
 
@@ -67,7 +67,7 @@ For more information on NDIS\_SWITCH\_NIC\_INDEX values, see [Network Adapter In
 
 **Note**  The extension cannot generate or forward packets over the network adapter connection until the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262).
 
- 
+ 
 
 <a href="" id="oid-switch-nic-connect"></a>[OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262)  
 The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262) to notify extensible switch extensions that an extensible switch network adapter connection is fully operational.
@@ -99,7 +99,7 @@ The protocol edge of the extensible switch issues an OID set request of [OID\_SW
 
 **Note**  The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
- 
+ 
 
 After this OID request is completed, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://msdn.microsoft.com/library/windows/hardware/hh598279) to start the deletion process for the port that was used for the network adapter connection.
 
@@ -118,16 +118,16 @@ The extension should call [*ReferenceSwitchNic*](https://msdn.microsoft.com/libr
 
 **Note**  The extension must not call [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) for a network adapter connection after it receives an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265) for that connection.
 
- 
+ 
 
 <a href="" id="dereferenceswitchnic"></a>[*DereferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598141)  
 The extensible switch extension calls this function to decrement a port's reference counter.
 
 If the extension calls [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294), it must call [*DereferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598141) after the [OID\_SWITCH\_NIC\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266) or [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/hh598205) indication have completed.
 
- 
+ 
 
- 
+ 
 
 
 

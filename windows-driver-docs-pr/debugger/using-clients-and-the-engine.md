@@ -22,11 +22,11 @@ An extension library may create its own client object upon initialization by usi
 
 **Note**   Care should be taken when modifying the client passed to an extension function. In particular, registering callbacks with this client could disrupt the input, output, or event handling of the debugger. It is recommended that a new client be created to register callbacks.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ The following topics describe how the deinterlace DDI is mapped to the motion co
 
 [Calling the Deinterlace DDI from a User-Mode Component](calling-the-deinterlace-ddi-from-a-user-mode-component.md)
 
- 
+ 
 
- 
+ 
 
 
 

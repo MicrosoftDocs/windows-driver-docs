@@ -22,9 +22,9 @@ In general, an *HwScsiFindAdapter* routine is responsible for using the supplied
 
 See [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563900) and [*HwScsiFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff557300) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ A driver can use the WMI Library to handle [**IRP\_MN\_REGINFO**](https://msdn.m
 
 A driver must initialize entry points for its *DpWmiXxx* callback routines in the **WMILIB\_CONTEXT** structure before calling **WmiSystemControl**, but can postpone initialization of **GuidCount** and **GuidList** in the **WMILIB\_CONTEXT** structure until WMI calls the driver's *DpWmiQueryReginfo* routine.
 
- 
+ 
 
- 
+ 
 
 
 

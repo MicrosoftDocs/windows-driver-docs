@@ -42,9 +42,9 @@ In most cases, static instance names are preferable to dynamic instance names fo
 
 A driver indicates whether a block uses static or dynamic instance names, and the type of static instance names, by setting or clearing WMIREG\_FLAG\_*XXX* in the [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827) or [**WMIGUIDREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565811) structure it passes to WMI when it registers the block. For more information, see [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

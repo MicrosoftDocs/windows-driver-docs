@@ -34,9 +34,9 @@ When the driver's *Cancel* routine is called, it typically does the following:
 
 Drivers with *Cancel* routines can handle [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) requests as well. See [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) for more information about **IRP\_MJ\_CLEANUP** requests.
 
- 
+ 
 
- 
+ 
 
 
 

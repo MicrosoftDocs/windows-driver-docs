@@ -48,9 +48,9 @@ The device power policy owner is responsible for the following:
 
     The device power policy owner sends and cancels wait/wake IRPs, as described in [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

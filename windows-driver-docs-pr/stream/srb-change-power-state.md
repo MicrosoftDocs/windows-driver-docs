@@ -40,9 +40,9 @@ If the minidriver needs to save or restore device-specific data it should do so 
 
 For more information about power states, see [Managing Power for Individual Devices](https://msdn.microsoft.com/library/windows/hardware/ff554397).
 
- 
+ 
 
- 
+ 
 
 
 

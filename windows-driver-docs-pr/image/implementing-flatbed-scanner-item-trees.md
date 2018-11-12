@@ -25,9 +25,9 @@ This section includes:
 
 [Advanced Scanning for Flatbed Scanners](basic-scanning-for-flatbed-scanners.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ The following sections describe connection-oriented NDIS:
 
 [Connection-Oriented Operations](connection-oriented-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

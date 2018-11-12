@@ -53,7 +53,7 @@ You can use the **.restart** command only in KD.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +66,9 @@ The **.restart** command is similar to the [**CTRL+R (Re-synchronize)**](ctrl-r-
 
 The **.restart** command is most useful when you are performing [remote debugging through remote.exe](remote-debugging-through-remote-exe.md) and ending and restarting the debugger might be difficult. However, you cannot use **.restart** from a debugging client if you are performing remote debugging through the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ Timeout expiration is the most common reason for the reflector to terminate the 
 
 You can extend the timeout period by using the [WDF Verifier Control Application](https://msdn.microsoft.com/library/windows/hardware/ff556129).
 
- 
+ 
 
- 
+ 
 
 
 

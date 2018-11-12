@@ -26,9 +26,9 @@ DirectShow or another client accesses the DxApi interface callback functions sup
 
 To use the kernel-mode video transport interface, the video capture driver must first receive user-mode handles for each DirectDraw object, surface, and VPE object that it needs to use. For the capture and MPEG models, these handles are passed down using their existing APIs. If a driver requires this functionality but is not a stream-class driver, a user-mode component can retrieve the handles using the [IDirectDrawKernel](https://msdn.microsoft.com/library/windows/hardware/ff567398) and [IDirectDrawSurfaceKernel](https://msdn.microsoft.com/library/windows/hardware/ff567409) COM interfaces and pass them down to the driver. The COM interfaces and their methods are identified in *ddkernel.h*.
 
- 
+ 
 
- 
+ 
 
 
 

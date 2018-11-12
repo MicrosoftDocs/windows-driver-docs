@@ -92,7 +92,7 @@ A pointer to the [**SECURITY\_INFORMATION**](security-information.md) structure 
 </tbody>
 </table>
 
- 
+ 
 
 ## See also
 
@@ -113,9 +113,9 @@ A pointer to the [**SECURITY\_INFORMATION**](security-information.md) structure 
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -103,7 +103,7 @@ Lists all settings in the given namespace and their description.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -118,9 +118,9 @@ Remarks
 
 You can exchange debug xml settings files with others to duplicate their debug settings.
 
- 
+ 
 
- 
+ 
 
 
 

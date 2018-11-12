@@ -15,7 +15,7 @@ This article discusses different ways that a driver can send IRPs to a lower dri
 
 * Scenarios 1-5 are about how to forward an IRP to a lower driver from a dispatch routine.
 * Scenarios 6-12 discuss different ways of creating an IRP and sending it to another driver.
- 
+
 Before you examine the various scenarios, note that an IRP completion routine can return either STATUS_MORE_PROCESSING_REQUIRED or STATUS_SUCCESS.
 
 The I/O manager uses the following rules when it examines the status:
@@ -37,12 +37,11 @@ As you read the following code, note that STATUS_CONTINUE_COMPLETION is aliased 
 // Completion routines can also use this enumeration instead of status codes.
 // 
 typedef enum _IO_COMPLETION_ROUTINE_RESULT {
-    
+
     ContinueCompletion = STATUS_CONTINUE_COMPLETION,
     StopCompletion = STATUS_MORE_PROCESSING_REQUIRED
 
 } IO_COMPLETION_ROUTINE_RESULT, *PIO_COMPLETION_ROUTINE_RESULT;
-
 ```
 
 ## Forwarding an IRP to another driver
@@ -100,7 +99,7 @@ DispatchRoutine_2(
     status = IoCallDriver(TopOfDeviceStack, Irp);
 
     if (status == STATUS_PENDING) {
-        
+
        KeWaitForSingleObject(&event,
                              Executive, // WaitReason
                              KernelMode, // must be Kernelmode to prevent the stack getting paged out
@@ -109,7 +108,7 @@ DispatchRoutine_2(
                              );
        status = Irp->IoStatus.Status;
     }
-    
+
     // <---- Do your own work here.
 
 
@@ -170,7 +169,7 @@ DispathRoutine_3(
                            TRUE,
                            TRUE
                            );
-    
+
     return IoCallDriver(TopOfDeviceStack, Irp);
 }
 ```
@@ -197,10 +196,10 @@ CompletionRoutine_31 (
     // as is, you must do the following:
     // 
     if (Irp->PendingReturned) {
-        
+
         IoMarkIrpPending( Irp );
     }
-    
+
     return STATUS_CONTINUE_COMPLETION ; // Make sure of same synchronicity 
 }
 
@@ -216,10 +215,10 @@ CompletionRoutine_32 (
     // as is, you must do the following:
     // 
     if (Irp->PendingReturned) {
-        
+
         IoMarkIrpPending( Irp );
     }
-    
+
     //    
     // To make sure of the same synchronicity, complete the IRP here.
     // You cannot complete the IRP later in another thread because the 
@@ -369,7 +368,7 @@ MakeSynchronousIoctl(
 Arguments:
 
     TopOfDeviceStack- 
-    
+
     IoctlControlCode              - Value of the IOCTL request
 
     InputBuffer        - Buffer to be sent to the TopOfDeviceStack
@@ -383,19 +382,19 @@ Arguments:
 Return Value:
 
     NT status code
-    
+
 --*/ 
 {
     KEVENT              event;
     PIRP                irp;
     IO_STATUS_BLOCK     ioStatus;
     NTSTATUS status;
-    
+
     // 
     // Creating Device control IRP and send it to the another
     // driver without setting a completion routine.
     // 
-    
+
     KeInitializeEvent(&event, NotificationEvent, FALSE);
 
     irp = IoBuildDeviceIoControlRequest (
@@ -446,12 +445,12 @@ This scenario is similar to the previous scenario except that instead of waiting
 
 ```cpp
 typedef enum {
- 
+
    IRPLOCK_CANCELABLE,
    IRPLOCK_CANCEL_STARTED,
    IRPLOCK_CANCEL_COMPLETE,
    IRPLOCK_COMPLETED
- 
+
 } IRPLOCK;
 // 
 // An IRPLOCK allows for safe cancellation. The idea is to protect the IRP
@@ -511,7 +510,7 @@ Arguments:
 Return Value:
 
     NT status code
-    
+
 --*/ 
 {
     NTSTATUS status;
@@ -636,7 +635,7 @@ MakeSynchronousNonIoctlRequest (
 Arguments:
 
     TopOfDeviceStack - 
-    
+
     WriteBuffer       - Buffer to be sent to the TopOfDeviceStack.
 
     NumBytes  - Size of buffer to be sent to the TopOfDeviceStack.
@@ -654,7 +653,7 @@ Return Value:
     KEVENT          event;
     IO_STATUS_BLOCK     ioStatus;
     PVOID context;
-    
+
     startingOffset.QuadPart = (LONGLONG) 0;
     // 
     // Allocate memory for any context information to be passed
@@ -678,7 +677,7 @@ Return Value:
                 &event,
                 &ioStatus
                 ); 
-    
+
     if (NULL == irp) {
         ExFreePool(context);
         return STATUS_INSUFFICIENT_RESOURCES;
@@ -843,7 +842,7 @@ MakeAsynchronousRequest (
 Arguments:
 
     TopOfDeviceStack - 
-    
+
     WriteBuffer       - Buffer to be sent to the TopOfDeviceStack.
 
     NumBytes  - Size of buffer to be sent to the TopOfDeviceStack.
@@ -855,7 +854,7 @@ Arguments:
     LARGE_INTEGER   startingOffset;
     PIO_STACK_LOCATION  nextStack;
     PVOID context;
-    
+
     startingOffset.QuadPart = (LONGLONG) 0;
 
     irp = IoBuildAsynchronousFsdRequest(
@@ -866,9 +865,9 @@ Arguments:
                 &startingOffset, // Optional
                 NULL
                 ); 
-    
+
     if (NULL == irp) {
-       
+
         return STATUS_INSUFFICIENT_RESOURCES;
     }
 
@@ -911,7 +910,7 @@ MakeAsynchronousRequestCompletion(
     )
 {
     PMDL mdl, nextMdl;
-    
+
     // 
     // If the target device object is set up to do buffered i/o 
     // (TopOfDeviceStack->Flags and DO_BUFFERED_IO), then 
@@ -923,14 +922,14 @@ MakeAsynchronousRequestCompletion(
     if(Irp->AssociatedIrp.SystemBuffer && (Irp->Flags & IRP_DEALLOCATE_BUFFER) ) {
             ExFreePool(Irp->AssociatedIrp.SystemBuffer);
     }
-    
+
     // 
     // If the target device object is set up do direct i/o (DO_DIRECT_IO), then 
     // IoBuildAsynchronousFsdRequest creates an MDL to describe the buffer
     // and locks the pages. If you stop the completion of the IRP, you must unlock
     // the pages and free the MDL.
     // 
-    
+
     else if (Irp->MdlAddress != NULL) {
         for (mdl = Irp->MdlAddress; mdl != NULL; mdl = nextMdl) {
             nextMdl = mdl->Next;
@@ -942,7 +941,7 @@ MakeAsynchronousRequestCompletion(
     if(Context) {
         ExFreePool(Context);
     }
-    
+
 
 
     // 
@@ -950,7 +949,7 @@ MakeAsynchronousRequestCompletion(
     // make sure you call IoReuseIrp(Irp, STATUS_SUCCESS) before you reuse.
     // 
     IoFreeIrp(Irp);
-   
+
     // 
     // NOTE: this is the only status that you can return for driver-created asynchronous IRPs.
     // 
@@ -973,7 +972,7 @@ MakeAsynchronousRequest2(
 Arguments:
 
     TopOfDeviceStack - 
-    
+
     WriteBuffer       - Buffer to be sent to the TopOfDeviceStack.
 
     NumBytes  - Size of buffer to be sent to the TopOfDeviceStack.
@@ -987,7 +986,7 @@ Arguments:
     PIO_STACK_LOCATION  nextStack;
 
     startingOffset.QuadPart = (LONGLONG) 0;
-    
+
     // 
     // Start by allocating the IRP for this request.  Do not charge quota
     // to the current process for this IRP.
@@ -995,7 +994,7 @@ Arguments:
 
     irp = IoAllocateIrp( TopOfDeviceStack->StackSize, FALSE );
     if (NULL == irp) {
-       
+
         return STATUS_INSUFFICIENT_RESOURCES;
     }
 
@@ -1009,12 +1008,12 @@ Arguments:
     nextStack->Parameters.Write.Length = NumBytes;
     nextStack->Parameters.Write.ByteOffset= startingOffset;
 
- 
+
     if(TopOfDeviceStack->Flags & DO_BUFFERED_IO) {
-        
+
         irp->AssociatedIrp.SystemBuffer = WriteBuffer;
         irp->MdlAddress = NULL;
-        
+
     } else if (TopOfDeviceStack->Flags & DO_DIRECT_IO) {
         // 
         // The target device supports direct I/O operations.  Allocate
@@ -1032,19 +1031,19 @@ Arguments:
         }
 
         try {
-            
+
             MmProbeAndLockPages( irp->MdlAddress,
                                  KernelMode,
                                  (LOCK_OPERATION) (nextStack->MajorFunction == IRP_MJ_WRITE ? IoReadAccess : IoWriteAccess) );
-            
+
         } except(EXCEPTION_EXECUTE_HANDLER) {
-        
+
               if (irp->MdlAddress != NULL) {
                   IoFreeMdl( irp->MdlAddress );
               }
               IoFreeIrp( irp );
               return  GetExceptionCode();
-              
+
         }
     }   
 
@@ -1072,7 +1071,7 @@ MakeAsynchronousRequestCompletion2(
     // 
     // Free any associated MDL.
     // 
-      
+
     if (Irp->MdlAddress != NULL) {
         for (mdl = Irp->MdlAddress; mdl != NULL; mdl = nextMdl) {
             nextMdl = mdl->Next;
@@ -1085,9 +1084,9 @@ MakeAsynchronousRequestCompletion2(
     // If you intend to queue the IRP and reuse it for another request,
     // make sure you call IoReuseIrp(Irp, STATUS_SUCCESS) before you reuse.
     // 
-    
+
     IoFreeIrp(Irp);
-    
+
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
 ```
@@ -1108,7 +1107,7 @@ typedef struct _DEVICE_EXTENSION{
     KEVENT IrpEvent; // You need this to synchronize various threads.
     ..
 } DEVICE_EXTENSION, *PDEVICE_EXTENSION;
-				 </pre><pre class="code">
+                 </pre><pre class="code">
 InitializeDeviceExtension( PDEVICE_EXTENSION  DeviceExtension)
 {
     KeInitializeEvent(&DeviceExtension->IrpEvent, SynchronizationEvent, TRUE); 
@@ -1124,7 +1123,7 @@ MakeASynchronousRequest3(
 Arguments:
 
     DeviceExtension - 
-    
+
     WriteBuffer       - Buffer to be sent to the TargetDeviceObject.
 
     NumBytes  - Size of buffer to be sent to the TargetDeviceObject.
@@ -1166,9 +1165,9 @@ Arguments:
                 &startingOffset, // Optional
                 NULL
                 ); 
-    
+
     if (NULL == irp) {
-       
+
         return STATUS_INSUFFICIENT_RESOURCES;
     }
 
@@ -1260,7 +1259,7 @@ MakeASynchronousRequestCompletion3(
     // can send the next request.
     // 
     KeSetEvent (&deviceExtension->IrpEvent, IO_NO_INCREMENT, FALSE);
-    
+
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
 
@@ -1296,7 +1295,7 @@ CancelPendingIrp(
         }
 
      }
-     
+
     return ;
 }
 ```

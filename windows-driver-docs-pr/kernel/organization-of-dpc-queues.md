@@ -25,9 +25,9 @@ For ordinary (non-threaded) DPCs, **KeSetImportanceDpc** also determines whether
 
 -   Processing of the DPC queue begins immediately on the target processor if the DPC is assigned to a processor that is different than the current processor and *Importance* equals **MediumHighImportance** or **HighImportance**, or if the DPC queue depth of the target processor exceeds a system-defined limit. Otherwise, processing of the DPC is deferred until the appropriate queue depth and rate requirements are met.
 
- 
+ 
 
- 
+ 
 
 
 

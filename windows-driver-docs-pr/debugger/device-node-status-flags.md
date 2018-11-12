@@ -114,9 +114,9 @@ There is no Registry entry of the upper-class-filters type for the device.
 <span id="DNF_WAITING_FOR_FDO__0x80000000_"></span><span id="dnf_waiting_for_fdo__0x80000000_"></span><span id="DNF_WAITING_FOR_FDO__0X80000000_"></span>**DNF\_WAITING\_FOR\_FDO (0x80000000)**  
 Enumeration of the device is waiting until the driver attaches its FDO.
 
- 
+ 
 
- 
+ 
 
 
 

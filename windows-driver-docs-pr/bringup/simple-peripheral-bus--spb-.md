@@ -33,9 +33,9 @@ Also similar to GPIO, ACPI 5.0 defines an OpRegion for use with SPB controllers,
 
 Often with SPBs, it is necessary for ASL control methods to share access to a SPB target device with the operating system driver for that device. To ensure synchronization of these accesses, ACPI 5.0 defines the Device Lock Mutex (\_DLM) object. For more information, see section 5.7.5 of the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
- 
+ 
 
- 
+ 
 
 
 

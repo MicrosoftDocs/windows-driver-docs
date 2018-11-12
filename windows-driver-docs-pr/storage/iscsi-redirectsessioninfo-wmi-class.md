@@ -44,9 +44,9 @@ class ISCSI_RedirectSessionInfo
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectSessionInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561563) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

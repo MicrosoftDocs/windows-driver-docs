@@ -42,7 +42,7 @@ Video encoders use the support of this GUID (queried by the user-mode KsProperty
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type BOOL and specifies whether the minidriver supports video encoding. A value of **TRUE** indicates that the minidriver supports video encoding. The filter should not support this GUID if it is not a video encoder.
 
@@ -58,9 +58,9 @@ Declared in *ksmedia.h*. Include *ksmedia.h*.
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

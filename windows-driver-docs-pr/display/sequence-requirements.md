@@ -42,11 +42,11 @@ Examples that show the decoding of conventional I, B, and P-structured video fra
 
 **Note**   For compressed buffers, as well as for uncompressed surfaces, it is generally better to cycle through the allocated and available buffers rather than to keep reusing the same buffer, or the same subset of allocated buffers. This can reduce the possibility of added delays caused by waiting on unnecessary dependencies. The allocation of multiple buffers by a driver should be taken as an indication that cycling through these buffers for double or triple buffering is the proper way to operate and to avoid artifacts, such as temporary picture freezes. This applies to alpha-blend data loading in particular.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

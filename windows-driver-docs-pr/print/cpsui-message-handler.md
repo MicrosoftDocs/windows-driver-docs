@@ -22,9 +22,9 @@ When a user interacts with a property sheet page and causes an event to occur, C
 
 The callback function must handle the event, and then return a status value to CPSUI that indicates if the page needs to be redisplayed or reinitialized.
 
- 
+ 
 
- 
+ 
 
 
 

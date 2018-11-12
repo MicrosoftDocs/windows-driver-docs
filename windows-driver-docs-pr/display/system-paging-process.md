@@ -62,9 +62,9 @@ As you see, the virtual address range from 0 to 4095 will be invalid.
 
 ![page table initialization](images/system-paging-process.2.png)
 
- 
+ 
 
- 
+ 
 
 
 

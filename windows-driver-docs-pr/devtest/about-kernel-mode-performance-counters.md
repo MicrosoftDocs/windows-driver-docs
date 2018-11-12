@@ -17,11 +17,11 @@ Providers running in kernel-mode register their counter sets by using the kernel
 
 **Note**   The kernel-mode PCW provider API (PERFLIB version 2), introduced in Windows 7, does not currently support session-space drivers.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

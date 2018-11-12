@@ -36,11 +36,11 @@ The following list shows the current "Harness Result Values" and their interpret
 | 8                    | 0x08000000 (134217728) | TAEF session timed out.                                                                                   |
 | 9                    | 0x09000000 (150994944) | Version information was requested ("/version") - no tests were executed.                                  |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,9 +43,9 @@ To initialize a CDMA-based packet device with a provisioned context, implement t
 
 14. The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

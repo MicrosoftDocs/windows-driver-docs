@@ -24,9 +24,9 @@ Kernel-mode memory dumps come in three sizes, and the smaller sizes do not inclu
 
 User-mode memory dumps also come in various sizes. See [User-Mode Dump Files](user-mode-dump-files.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

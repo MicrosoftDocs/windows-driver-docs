@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions. Similar to HTML, the debugger’s markup support allows output to include display directives and extra non-display information in the form of tags. The debugger user interfaces, such as WinDbg parse out the extra information provided in DML to enhance the display of information and provide new behaviors, such as grid displays and sorting. This topic describes how you can customize your debug output using DML. For general information on enabling and using DML in the debuggers, see [Using Debugger Markup Language](debugger-markup-language-commands.md).
 
-DML is available in Windows 10 and later.
+DML is available in Windows 10 and later.
 
 ## <span id="DML_Overview"></span><span id="dml_overview"></span><span id="DML_OVERVIEW"></span>DML Overview
 
@@ -284,7 +284,7 @@ Request foreground and background colors for the text. The colors are given as n
 </tbody>
 </table>
 
- 
+
 
 **Source Code Single Element Tags**
 
@@ -343,7 +343,7 @@ Request foreground and background colors for the text. The colors are given as n
 </tbody>
 </table>
 
- 
+
 
 ## <span id="DML_Example_Code"></span><span id="dml_example_code"></span><span id="DML_EXAMPLE_CODE"></span>DML Example Code
 
@@ -384,7 +384,7 @@ This example code illustrates the following.
 <link cmd="dt nt!_CONTEXT" alt="This link displays information about nt_CONTEXT">dt nt!_CONTEXT<altlink name="Help about the dt command" cmd=".hh dt" /></link> - Display information about nt_CONTEXT
 <link cmd="dt nt!_PEB" alt="This link calls the dt command to display nt!_PEB">dt nt!_PEB<altlink name="Help about dt command" cmd=".hh dt" /></link> - Display information about the nt!_PEB
 <link cmd="ub" alt="This link unassembles backwards">ub<altlink name="Help about ub command" cmd=".hh u, ub, uu (Unassemble)" /></link> - Unassemble Backwards
- 
+
 <col fg="srcchar" bg="wbg"><i>
 **** Note: Not all of the following commands will work with all crash dump data ****
 </i></col>
@@ -409,7 +409,6 @@ This example code illustrates the following.
 <link cmd=".tlist" alt="This link displays a process list using TList ">tlist<altlink name="Help about the TList command" cmd=".hh .tlist" /></link> - Display a process list using tlist
 <link cmd="!process" alt="This link displays process ">!process<altlink name="Help about the !process command" cmd=".hh !process" /></link> - Display process information
 <link cmd="!dml_proc" alt="This link displays process information with DML rendering.">!dml_proc<altlink name="Help about the !dml_proc command" cmd=".hh !dml_proc" /></link> - Display process information with DML rendering
-
 ```
 
 This example code illustrates the use of color and formatting tags.
@@ -506,7 +505,7 @@ The following table summarizes the use of the %Y format specifier.
 | %Y{ps} | ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).                                                                                                             |
 | %Y{l}  | ULONG64. Address as source line information.                                                                                                                                                                                       |
 
- 
+
 
 This code snippet illustrates the use of the %Y format specifier.
 
@@ -631,9 +630,9 @@ The dbgeng will automatically convert between plain text and DML as necessary. F
 
 [Using Debugger Markup Language](debugger-markup-language-commands.md)
 
- 
 
- 
+
+
 
 
 

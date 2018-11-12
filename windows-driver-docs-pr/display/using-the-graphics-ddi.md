@@ -45,9 +45,9 @@ The topics contained in this section are as follows:
 
 [The DEVMODEW Structure](the-devmodew-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

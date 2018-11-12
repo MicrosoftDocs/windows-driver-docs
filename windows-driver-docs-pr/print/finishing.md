@@ -38,9 +38,9 @@ Data Type:BIDI\_BOOL
 
 Description:Determines whether the printer supports placing separate copies of a print job or separate print jobs in the output trays in staggered groups. If **TRUE**, the printer supports jog offset; if **FALSE**, the printer does not support this capability.
 
- 
+ 
 
- 
+ 
 
 
 

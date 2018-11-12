@@ -28,9 +28,9 @@ After a call is complete or a VC is otherwise not needed, the call manager can d
 
 For more information about miniport driver operations on VCs, see [Operations on VCs](operations-on-vcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

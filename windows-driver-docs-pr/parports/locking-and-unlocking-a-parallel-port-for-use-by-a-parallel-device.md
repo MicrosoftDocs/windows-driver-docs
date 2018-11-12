@@ -37,9 +37,9 @@ Clients can send individual I/O requests to parallel devices without the need to
 
 If the parallel port bus driver can allocate the port to the parallel device within a set time-out period, the device's worker thread completes the request. Otherwise, the parallel port bus driver completes the pending request with a status of STATUS\_DEVICE\_BUSY.
 
- 
+ 
 
- 
+ 
 
 
 

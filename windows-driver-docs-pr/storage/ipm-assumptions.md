@@ -20,9 +20,9 @@ REPORT LUNS
 
 Miniport drivers are expected to complete all SRBs except SRB\_FUNCTION\_IO\_CONTROL, SRB\_FUNCTION\_FLUSH, and SRB\_FUNCTION\_SHUTDOWN when the LUN is in a low power state.
 
- 
+ 
 
- 
+ 
 
 
 

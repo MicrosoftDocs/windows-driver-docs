@@ -50,9 +50,9 @@ The topics in this section describe common tasks for which you can use the mobil
 
 [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

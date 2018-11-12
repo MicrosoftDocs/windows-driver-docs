@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 Swizzling ranges are no longer supported in Windows Display Driver Model (WDDM) v2.
 
- 
+ 
 
- 
+ 
 
 
 

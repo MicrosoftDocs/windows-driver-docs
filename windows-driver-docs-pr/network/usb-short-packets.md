@@ -24,9 +24,9 @@ If the last REMOTE\_NDIS\_PACKET\_MSG of a device-send Remote NDIS data message 
 
 Similarly, some device-side USB chipsets do not detect the end of a received USB transfer that ends with a USB packet whose length is the **wMaxPacketSize** for that endpoint. For this reason, the host must append a one-byte zero packet to a data transfer that otherwise would have a length that is a multiple of the **wMaxPacketSize** of the receiving endpoint. USB Remote NDIS devices must tolerate the appended byte. The **MessageLength** field of the final REMOTE\_NDIS\_PACKET\_MSG does not include this appended byte.
 
- 
+ 
 
- 
+ 
 
 
 

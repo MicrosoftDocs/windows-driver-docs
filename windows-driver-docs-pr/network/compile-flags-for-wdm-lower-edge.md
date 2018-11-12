@@ -26,9 +26,9 @@ You must include the following compile flags in the Sources file for an NDIS-WDM
 
 Alternatively, you can embed compile flags at the start of the miniport driver's source code before the Ndis.h header file is included.
 
- 
+ 
 
- 
+ 
 
 
 

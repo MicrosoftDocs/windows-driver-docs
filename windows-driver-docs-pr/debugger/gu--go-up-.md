@@ -60,7 +60,7 @@ gu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,13 +75,13 @@ If the current function is called recursively, the **gu** command will not halt 
 
 **Note**   The **gu** command distinguishes different instances of a function by measuring the call stack depth. Executing this command in assembly mode after the arguments have been pushed to the stack and just before the call is made may cause this measurement to be incorrect. Function returns that are optimized away by the compiler may similarly cause this command to stop at the wrong instance of this return. These errors are rare, and can only happen during recursive function calls.
 
- 
+ 
 
 If *Thread* is specified, then the **gu** command is executed with the specified thread unfrozen and all others frozen. For example, if the **~123gu**, **~\#gu**, or **~\*gu** command is specified, the specified threads are unfrozen and all others are frozen.
 
- 
+ 
 
- 
+ 
 
 
 

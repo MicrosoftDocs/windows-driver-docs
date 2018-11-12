@@ -47,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DBUFFER\_ALL property is used to get or set all the 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
-<td align="left"><p>[<strong>KSDS3D_BUFFER_ALL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537101)</p></td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537101" data-raw-source="[&lt;strong&gt;KSDS3D_BUFFER_ALL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537101)"><strong>KSDS3D_BUFFER_ALL</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSDS3D\_BUFFER\_ALL that specifies the 3D characteristics of the buffer.
 
@@ -91,9 +91,9 @@ Requirements
 
 [**KSDS3D\_BUFFER\_ALL**](https://msdn.microsoft.com/library/windows/hardware/ff537101)
 
- 
+ 
 
- 
+ 
 
 
 

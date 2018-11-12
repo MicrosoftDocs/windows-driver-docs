@@ -65,7 +65,7 @@ The following table describes the constants that are valid with WIA\_IPA\_COMPRE
 <td><p>Group 4 compression</p></td>
 </tr>
 <tr class="odd">
-<td><p>WIA_COMPRESSION_JBIG*</p></td>
+<td><p>WIA_COMPRESSION_JBIG<em></p></td>
 <td><p>IS 11544 (ITU-T T.82) compression</p></td>
 </tr>
 <tr class="even">
@@ -73,7 +73,7 @@ The following table describes the constants that are valid with WIA\_IPA\_COMPRE
 <td><p>JPEG compression</p></td>
 </tr>
 <tr class="odd">
-<td><p>WIA_COMPRESSION_JPEG2K*</p></td>
+<td><p>WIA_COMPRESSION_JPEG2K</em></p></td>
 <td><p>JPEG 2000 compression</p></td>
 </tr>
 <tr class="even">
@@ -87,13 +87,13 @@ The following table describes the constants that are valid with WIA\_IPA\_COMPRE
 </tbody>
 </table>
 
- 
+ 
 
 Values that are marked with an asterisk (\*) are for Windows Vista and later operating systems only.
 
 **Note**   When the file format is WiaImgFmt\_XPS or WiaImgFmt\_PDFA, WIA\_COMPRESSION\_NONE means "not defined"; the device cannot choose the internal compression (if any) for images that are stored in these two document formats.
 
- 
+ 
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WIA\_COMPRESSION\_NONE.
 
@@ -115,9 +115,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

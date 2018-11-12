@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -26,9 +26,9 @@ The NetDMA provider driver calls the [**NetDmaProviderStop**](https://msdn.micro
 
 A NetDMA provider driver typically calls the [**NetDmaDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568328) function in the context of processing the [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) IRP for the NetDMA provider.
 
- 
+ 
 
- 
+ 
 
 
 

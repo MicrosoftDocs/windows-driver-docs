@@ -143,9 +143,9 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](https://msdn.microsof
 
 [NDIS OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff566713)
 
- 
+ 
 
- 
+ 
 
 
 

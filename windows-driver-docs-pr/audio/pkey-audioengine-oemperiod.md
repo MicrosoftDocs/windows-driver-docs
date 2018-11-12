@@ -55,9 +55,9 @@ The periodicity of 8ms is represented in HNSTIME units as 80000. In hexadecimal 
 
 Periodicity is specified as a VT\_BLOB data type. This is represented by a decimal value of 65. In hexadecimal format 65 is represented by the value 41 and the preceding INF file excerpt shows the REG\_BINARY data sequence with its first value of 41.
 
- 
+ 
 
- 
+ 
 
 
 

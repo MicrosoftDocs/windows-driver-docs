@@ -36,9 +36,9 @@ Drivers that call [NdisMRegisterMiniportDriver](https://msdn.microsoft.com/libra
 
 The miniport driver must eventually call [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578) to release resources that it allocated by calling [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654). If the driver initialization fails after the call to **NdisMRegisterMiniportDriver** succeeded, the driver can call **NdisMDeregisterMiniportDriver** from within [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113). Otherwise, the miniport driver must release the driver-specific resources that it allocates in its [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function. In other words, if NdisMRegisterMiniportDriver does not return NDIS_STATUS_SUCCESS, **DriverEntry** must release any resources that it allocated before it returns control. The driver will not be loaded if this occurs. For more information, see [Unloading a Miniport Driver](unloading-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

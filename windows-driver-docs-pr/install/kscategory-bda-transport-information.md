@@ -43,7 +43,7 @@ The KSCATEGORY_BDA_TRANSPORT_INFORMATION [device interface class](https://msdn.m
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

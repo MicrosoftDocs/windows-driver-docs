@@ -29,9 +29,9 @@ Additional information about WDM platform differences is available elsewhere in 
 
 -   For information about how the support for WDM drivers in general differs among Windows versions, including a discussion of floating-point issues for drivers, see [Differences in WDM Versions](https://msdn.microsoft.com/library/windows/hardware/ff543216).
 
- 
+ 
 
- 
+ 
 
 
 

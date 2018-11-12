@@ -44,9 +44,9 @@ The following two examples start with the laptop mode and describe the optimal t
 
 **Figure 2 Screen Swivel Convertible**
 
- 
+ 
 
- 
+ 
 
 
 

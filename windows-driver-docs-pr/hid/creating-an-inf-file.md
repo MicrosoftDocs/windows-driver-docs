@@ -33,9 +33,9 @@ The INF file contains the elements described in the following topics:
 
 [Setting Up AddReg Entries](setting-up-addreg-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

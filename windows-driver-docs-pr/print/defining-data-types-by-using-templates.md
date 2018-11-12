@@ -55,7 +55,7 @@ A template is designated as a *data type template* (one that defines a data type
 
 **Note**   Not all directives are recognized within all data type templates.
 
- 
+ 
 
 In general, if no template can be bound to the GDL attribute entry, the value of that attribute will be emitted in the snapshot without any change within a CDATA section. The CDATA shall reside as element content (that is, the child element) of the ATTRIBUTE element.
 
@@ -72,9 +72,9 @@ Then, the entry will appear in the snapshot as follows.
         <![CDATA["OEMName LaserJet "]]></GDL_ATTRIBUTE>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

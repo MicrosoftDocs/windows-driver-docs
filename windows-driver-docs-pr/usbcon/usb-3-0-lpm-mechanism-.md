@@ -41,9 +41,9 @@ U1 and U2 states are designed to complement Selective Suspend, which can lead to
 
 For example, a device with isochronous endpoints can put the link to U1 or U2 between service intervals. To save some power, when the device is idle, it can send its upstream link to those states even before Selective Suspend gets invoked. There are no restrictions on how much power the device can draw when the link is in U1 or U2. A device could remain fully powered when the link is in U1 or U2. Therefore, unlike Selective Suspend, a device can send its link to U1 or U2 without losing any capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

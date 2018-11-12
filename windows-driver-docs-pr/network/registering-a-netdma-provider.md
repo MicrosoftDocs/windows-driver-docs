@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -43,9 +43,9 @@ If a computer supports MSI-X, the NetDMA interface, while in the context of the 
 
 To deregister a NetDMA provider, a NetDMA provider driver calls the [**NetDmaDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568328) function. For more information about deregistering a NetDMA provider, see [Deregistering a NetDMA Provider](deregistering-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

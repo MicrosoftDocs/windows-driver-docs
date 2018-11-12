@@ -46,21 +46,21 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p></p>
-<p>For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **verifier /domain ks** \[*options*\] **/driver** *&lt;yourdriver&gt;*
 See also
 --------
 
 [Filter Control Mutex in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff559603)
- 
+ 
 
- 
+ 
 
 
 

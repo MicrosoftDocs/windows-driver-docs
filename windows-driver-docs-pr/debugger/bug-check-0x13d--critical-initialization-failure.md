@@ -31,11 +31,11 @@ The CRITICAL\_INITIALIZATION\_FAILURE bug check has a value of 0x0000013D. This 
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

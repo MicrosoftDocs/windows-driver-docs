@@ -36,29 +36,29 @@ The following table lists functions associated with the default queue callback r
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupDefaultQueueCallback</strong>](https://msdn.microsoft.com/library/windows/desktop/aa376993)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa376993" data-raw-source="[&lt;strong&gt;SetupDefaultQueueCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa376993)"><strong>SetupDefaultQueueCallback</strong></a></p></td>
 <td align="left"><p>Handles notifications sent by the system when queued file operations are performed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupInitDefaultQueueCallback</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377395)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377395" data-raw-source="[&lt;strong&gt;SetupInitDefaultQueueCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377395)"><strong>SetupInitDefaultQueueCallback</strong></a></p></td>
 <td align="left"><p>Initializes context information that is needed by <strong>SetupDefaultQueueCallback</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupInitDefaultQueueCallbackEx</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377396)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377396" data-raw-source="[&lt;strong&gt;SetupInitDefaultQueueCallbackEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377396)"><strong>SetupInitDefaultQueueCallbackEx</strong></a></p></td>
 <td align="left"><p>Initializes context information that is needed by <strong>SetupDefaultQueueCallback</strong>, and provides a separate window for displaying progress messages.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupTermDefaultQueueCallback</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377442)</p></td>
-<td align="left"><p>Notifies the system that the [<em>device installation application</em>](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) will not commit any additional file queue operations.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377442" data-raw-source="[&lt;strong&gt;SetupTermDefaultQueueCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377442)"><strong>SetupTermDefaultQueueCallback</strong></a></p></td>
+<td align="left"><p>Notifies the system that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application" data-raw-source="[&lt;em&gt;device installation application&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application)"><em>device installation application</em></a> will not commit any additional file queue operations.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

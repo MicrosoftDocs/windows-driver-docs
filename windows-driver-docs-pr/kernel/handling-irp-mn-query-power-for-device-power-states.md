@@ -64,9 +64,9 @@ Even if the target device is already in the queried power state, each function o
 
 While handling an **IRP\_MN\_QUERY\_POWER** request, a driver should return from the *DispatchPower* routine as quickly as possible. A driver must not wait in its *DispatchPower* routine for a kernel event signaled by code that handles the same IRP. Because power IRPs are synchronized throughout the system, a deadlock might occur.
 
- 
+ 
 
- 
+ 
 
 
 

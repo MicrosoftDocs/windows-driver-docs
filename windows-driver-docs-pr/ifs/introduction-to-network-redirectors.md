@@ -27,9 +27,9 @@ This section introduces fundamental concepts that are important to developers im
 [Granting Oplocks](granting-oplocks.md)  
 [Breaking Oplocks](breaking-oplocks.md)  
 [Acknowledging Oplock Breaks](acknowledging-oplock-breaks.md)
- 
+ 
 
- 
+ 
 
 
 

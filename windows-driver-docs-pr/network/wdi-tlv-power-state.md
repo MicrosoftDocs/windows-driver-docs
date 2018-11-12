@@ -52,7 +52,7 @@ The size (in bytes) of a UINT32.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -241,9 +241,9 @@ The following example GPD file segment describes acceptable customized paper siz
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The framework memory object is exposed to drivers by the [IWDFMemory](https://msdn.microsoft.com/library/windows/hardware/ff559249) interface. It provides access to a memory block.
 
- 
+ 
 
- 
+ 
 
 
 

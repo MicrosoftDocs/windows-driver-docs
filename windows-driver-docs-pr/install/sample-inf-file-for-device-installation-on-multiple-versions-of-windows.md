@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 The sample INF file (*MultiOS.inf*), which is included in the Windows Driver Kit (WDK), shows how a single INF file can be used to install a device on multiple versions of Windows. This file is in the *src\\print\\infs\\MultiOS* directory of the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

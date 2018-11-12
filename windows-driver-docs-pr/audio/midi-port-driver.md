@@ -33,9 +33,9 @@ The MIDI port and miniport driver objects communicate with each other through th
 
 In Windows XP and later, the **IPortMidi** and [IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879) interfaces are both implemented in a single internal driver module. This consolidation is facilitated by the similarity of these two interfaces. For example, the same methods are defined for both interfaces. Applications written for previous versions of Windows should see no change in the behavior of the **IPortMidi** and **IPortDMus** interfaces resulting from consolidation of the MIDI and DMus port drivers.
 
- 
+ 
 
- 
+ 
 
 
 

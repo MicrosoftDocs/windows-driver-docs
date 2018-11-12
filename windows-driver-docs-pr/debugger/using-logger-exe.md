@@ -69,9 +69,9 @@ The output file will always be placed in LogExts subdirectory of the desktop; th
 
 These limitations will not apply if you are running Logger through the debugger and Logexts.dll.
 
- 
+ 
 
- 
+ 
 
 
 

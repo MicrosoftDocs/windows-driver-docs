@@ -19,9 +19,9 @@ Clear **MDI Emulation** on the **Window** menu to return WinDbg to docking mode.
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_COMPORT [device interface class](https://msdn.microsoft.co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**GUID_CLASS_COMPORT**](guid-class-comport.md)
 
- 
+ 
 
- 
+ 
 
 
 

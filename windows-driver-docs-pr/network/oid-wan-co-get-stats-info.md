@@ -31,7 +31,6 @@ The OID\_WAN\_CO\_GET\_STATS\_INFO OID requests the miniport driver to return st
          OUT ULONG BytesTransmittedCompressed;
          OUT ULONG BytesReceivedCompressed;
     } NDIS_WAN_CO_GET_STATS_INFO,   *PNDIS_WAN_CO_GET_STATS_INFO;
-  
 ```
 
 
@@ -106,9 +105,9 @@ Requirements
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

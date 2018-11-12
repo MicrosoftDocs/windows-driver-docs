@@ -35,9 +35,9 @@ If a device is removed, NDIS stops a driver stack. A driver stack stop operation
 
 6.  If all the miniport adapters that a miniport driver manages are halted, the system can unload the miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

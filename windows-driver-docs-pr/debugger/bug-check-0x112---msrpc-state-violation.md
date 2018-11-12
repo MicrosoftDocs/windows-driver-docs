@@ -125,16 +125,16 @@ Parameters 1 and 2 are the only parameters of interest. Parameter 1 indicates th
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The most common cause of this bug check is that the caller of the Msrpc.sys driver violated the state semantics for such a call.
 
- 
+ 
 
- 
+ 
 
 
 

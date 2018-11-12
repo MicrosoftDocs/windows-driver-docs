@@ -36,9 +36,9 @@ Each of the property items contained in the four property sets above has a corre
 
 USB Video Class devices can support some or all of the property sets listed above.
 
- 
+ 
 
- 
+ 
 
 
 

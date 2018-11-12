@@ -17,7 +17,7 @@ Each query object instance exists in one of three states: *building*, *issued*, 
 
 **Note**   All query types support *QueryBegin* except for D3D10DDI\_QUERY\_EVENT and D3D10DDI\_QUERY\_TIMESTAMP. The building concept does not exist for D3D10DDI\_QUERY\_EVENT and D3D10DDI\_QUERY\_TIMESTAMP.
 
- 
+ 
 
 The runtime calls the driver's [**QueryEnd**](https://msdn.microsoft.com/library/windows/hardware/ff569217) function to transition the query object to the issued state. Transitions to the signaled state occur asynchronously some time later. The runtime calls the driver's [**QueryGetData**](https://msdn.microsoft.com/library/windows/hardware/ff569218) function to detect whether the query has transitioned to the signaled state. If the query is in the signaled state, *QueryGetData* can pass back data that applies to the query in the memory region that the *pData* parameter points to.
 
@@ -25,9 +25,9 @@ All query objects of the same type are FIFO (that is, first-in, first-out). For 
 
 When the runtime no longer requires the query object, the runtime frees the memory region that the runtime previously allocated for the object and calls the driver's [**DestroyQuery(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552785) function to notify the driver that the driver can no longer access this memory region.
 
- 
+ 
 
- 
+ 
 
 
 

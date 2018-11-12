@@ -78,9 +78,9 @@ Most DirectDraw and Direct3D callback functions that perform floating-point oper
 
 For information about floating-point services provided by GDI, see [GDI Floating-Point Services](gdi-floating-point-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

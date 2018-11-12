@@ -44,7 +44,7 @@ The D3DRENDERSTATE\_ZENABLE render state supports three settings from the D3DZBU
 </tbody>
 </table>
 
- 
+ 
 
 Because the exact format used for storing *w* varies widely, it should be assumed to be opaque.
 
@@ -52,9 +52,9 @@ Surface allocations and depth-fill operations work identically when using w-buff
 
 For more information, see the DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

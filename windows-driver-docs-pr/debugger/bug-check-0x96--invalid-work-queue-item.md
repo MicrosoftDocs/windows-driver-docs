@@ -55,7 +55,7 @@ The INVALID\_WORK\_QUEUE\_ITEM bug check has a value of 0x00000096. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -68,9 +68,9 @@ An entry on a queue can be inserted on the list only one time. When an item is r
 
 In most situations, the queue that is being referenced is an **ExWorkerQueue** (executive worker queue). To help identify the driver that caused the error, Parameter 4 displays the address of the worker routine that would have been called if this work item had been valid. However, if the queue that is being referenced is not an **ExWorkerQueue**, this parameter is not useful.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,21 +27,21 @@ Use these rules to verify that your driver correctly processes OID requests.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DoubleComplete</strong>](ndis-doublecomplete.md)</p></td>
-<td align="left"><p>The [DoubleComplete](ndis-doublecomplete.md) rule specifies that NDIS drivers must not complete an object identifier (OID) request multiple times.</p></td>
+<td align="left"><p><a href="ndis-doublecomplete.md" data-raw-source="[&lt;strong&gt;DoubleComplete&lt;/strong&gt;](ndis-doublecomplete.md)"><strong>DoubleComplete</strong></a></p></td>
+<td align="left"><p>The <a href="ndis-doublecomplete.md" data-raw-source="[DoubleComplete](ndis-doublecomplete.md)">DoubleComplete</a> rule specifies that NDIS drivers must not complete an object identifier (OID) request multiple times.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DoubleCompleteWorkItem</strong>](ndis-doublecompleteworkitem.md)</p></td>
+<td align="left"><p><a href="ndis-doublecompleteworkitem.md" data-raw-source="[&lt;strong&gt;DoubleCompleteWorkItem&lt;/strong&gt;](ndis-doublecompleteworkitem.md)"><strong>DoubleCompleteWorkItem</strong></a></p></td>
 <td align="left"><p>The DoubleCompleteWorkItem rule specifies that NDIS drivers must not complete an OID request multiple times when the completion is deferred in a work item.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NdisMNetPnPEventInOIDRequest</strong>](ndis-ndismnetpnpeventinoidrequest.md)</p></td>
-<td align="left"><p>This rule checks that [<strong>NdisMNetPnPEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563616) is not called in the context of an OID request.</p></td>
+<td align="left"><p><a href="ndis-ndismnetpnpeventinoidrequest.md" data-raw-source="[&lt;strong&gt;NdisMNetPnPEventInOIDRequest&lt;/strong&gt;](ndis-ndismnetpnpeventinoidrequest.md)"><strong>NdisMNetPnPEventInOIDRequest</strong></a></p></td>
+<td align="left"><p>This rule checks that <a href="https://msdn.microsoft.com/library/windows/hardware/ff563616" data-raw-source="[&lt;strong&gt;NdisMNetPnPEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563616)"><strong>NdisMNetPnPEvent</strong></a> is not called in the context of an OID request.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the OidProcessing rule set**
 
@@ -57,9 +57,9 @@ Use these rules to verify that your driver correctly processes OID requests.
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

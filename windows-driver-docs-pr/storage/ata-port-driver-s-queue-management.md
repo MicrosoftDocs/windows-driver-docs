@@ -33,8 +33,8 @@ Nevertheless, the ATA port driver *does* limit the number of requests that it pu
 
 The ATA miniport driver can also control the flow of requests that it receives from the port driver by calling the [**AtaPortDeviceBusy**](https://msdn.microsoft.com/library/windows/hardware/ff550155) and [**AtaPortDeviceReady**](https://msdn.microsoft.com/library/windows/hardware/ff550157) routines.
 
- 
+ 
 
- 
+ 
 
 

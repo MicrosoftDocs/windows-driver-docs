@@ -46,7 +46,7 @@ The name of the keyword that you must specify in the INF file and that appears i
 The display text that is associated with SubkeyName.
 
 <a href="" id="value"></a>Value  
-The enumeration integer value that is associated with each option in the list. This value is stored in **NDI\\params\\***SubkeyName\\Value.*
+The enumeration integer value that is associated with each option in the list. This value is stored in **NDI\\params\\**<em>SubkeyName\\Value.</em>
 
 <a href="" id="enumdesc"></a>EnumDesc  
 The display text that is associated with each value that appears in the menu.
@@ -70,7 +70,7 @@ The following table describes the possible INF entries for the Power Management 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*WakeOnPattern</strong></p></td>
+<td align="left"><p><strong><em>WakeOnPattern</strong></p></td>
 <td align="left"><p>Wake on pattern match</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -82,7 +82,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*WakeOnMagicPacket</strong></p></td>
+<td align="left"><p><strong></em>WakeOnMagicPacket</strong></p></td>
 <td align="left"><p>Wake on magic packet</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -94,7 +94,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*DeviceSleepOnDisconnect</strong></p></td>
+<td align="left"><p><strong><em>DeviceSleepOnDisconnect</strong></p></td>
 <td align="left"><p>Device sleep on disconnect</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -106,7 +106,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*PMARPOffload</strong></p></td>
+<td align="left"><p><strong></em>PMARPOffload</strong></p></td>
 <td align="left"><p>ARP offload</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -118,7 +118,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*PMNSOffload</strong></p></td>
+<td align="left"><p><strong><em>PMNSOffload</strong></p></td>
 <td align="left"><p>NS offload</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -130,7 +130,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*PMWiFiRekeyOffload</strong></p></td>
+<td align="left"><p><strong></em>PMWiFiRekeyOffload</strong></p></td>
 <td align="left"><p>WiFi rekeying offload</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -156,13 +156,13 @@ The following table describes the possible INF entries for the Power Management 
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

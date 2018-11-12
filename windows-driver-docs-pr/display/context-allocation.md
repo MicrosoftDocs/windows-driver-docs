@@ -25,7 +25,7 @@ Context allocations are mapped into the application GPU virtual address space as
 
 **Note**  The driver should be careful not to expose privileged information when a context allocation is to be mapped directly to an application GPU virtual address space.
 
- 
+ 
 
 These services behave like their user mode counterpart.
 
@@ -38,9 +38,9 @@ For this purpose a new [*DxgkCbUpdateContextAllocation*](https://msdn.microsoft.
 
 The kernel mode driver can pass some private driver data between its calls to [*DxgkCbUpdateContextAllocation*](https://msdn.microsoft.com/library/windows/hardware/dn906336) and the resulting *UpdateContextAllocation* paging operation.
 
- 
+ 
 
- 
+ 
 
 
 

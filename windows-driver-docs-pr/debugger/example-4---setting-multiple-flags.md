@@ -46,9 +46,9 @@ gflags /k +hfc +hpc +hvc
 
 Kernel (run time) flags are effective immediately and remain effective until Windows shuts down.
 
- 
+ 
 
- 
+ 
 
 
 

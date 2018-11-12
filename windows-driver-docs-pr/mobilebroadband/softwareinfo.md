@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceCompanionApplications](devicecompanionapplications.md)</p></td>
+<td><p><a href="devicecompanionapplications.md" data-raw-source="[DeviceCompanionApplications](devicecompanionapplications.md)">DeviceCompanionApplications</a></p></td>
 <td><p>Specifies the app that will be downloaded when the operator’s Mobile Broadband hardware is detected on the PC.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PrivilegedApplications](privilegedapplications.md)</p></td>
+<td><p><a href="privilegedapplications.md" data-raw-source="[PrivilegedApplications](privilegedapplications.md)">PrivilegedApplications</a></p></td>
 <td><p>Specifies the app that will be allowed to access privileged Mobile Broadband interfaces.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -82,9 +82,9 @@ There are no parent elements.
 
 The SoftwareInfo element is required.
 
- 
+ 
 
- 
+ 
 
 
 

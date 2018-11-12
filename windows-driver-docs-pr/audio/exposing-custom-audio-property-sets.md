@@ -19,7 +19,7 @@ DirectSound supports the use of custom properties on sound cards and provides an
 
 **Note**   Header files Dsound.h and Ksproxy.h define similar but incompatible versions of the **IKsPropertySet** interface. DirectSound applications should use the version defined in Dsound.h. The DirectSound version of **IKsPropertySet** is defined in the DirectSound reference pages in the Microsoft Windows SDK documentation. For the KSProxy version, see [IKsPropertySet](https://msdn.microsoft.com/library/windows/hardware/ff560718).
 
- 
+ 
 
 Custom audio property sets are enabled by default in Windows 98 Second Edition and Windows Me, and in Windows XP and later. By default, DirectSound ignores custom property sets in Windows 2000, and in Windows Server 2003 and later server versions of Windows. For DirectSound to recognize a custom property set in one of these operating systems, users must first enable custom property sets on their systems.
 
@@ -49,9 +49,9 @@ Four settings are available on the **Hardware Acceleration** slider:
 
 Custom property sets are enabled only when the slider is set to **Full**. For more information, see [DirectSound Hardware-Acceleration and SRC Sliders](directsound-hardware-acceleration-and-src-sliders.md).
 
- 
+ 
 
- 
+ 
 
 
 

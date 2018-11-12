@@ -22,7 +22,7 @@ The miniport driver sets the IPsecOV2 out-of-band (OOB) information before indic
 
 **Note**  A miniport driver should indicate all received packets to overlying drivers even if an error occurs while processing the IPsec data in the NIC. The driver must indicate packets with errors to enable the driver stack to monitor and troubleshoot the network traffic.
 
- 
+ 
 
 Before the miniport driver indicates the received data packet up the driver stack, the miniport driver:
 
@@ -44,9 +44,9 @@ A miniport driver can set **SaDeleteReq**, in the [**NDIS\_IPSEC\_OFFLOAD\_V2\_N
 
 After the miniport driver indicates the NET\_BUFFER\_LIST structure to the TCP/IP transport, the TCP/IP transport examines the results of the IPsec checks that the NIC performed on the packet, checks the sequence numbers for the packet, and determines what to do with a packet that fails the checksum or sequencing tests.
 
- 
+ 
 
- 
+ 
 
 
 

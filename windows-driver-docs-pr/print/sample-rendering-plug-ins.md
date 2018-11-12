@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 Source code for sample rendering plug-ins are provided with the WDK. Code is contained in the \\src\\print\\oemdll\\oemuni and \\src\\print\\oemdll\\oemps source code subdirectories. The code in the first subdirectory creates a plug-in that you can use with [*Unidrv*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv). The code in the second subdirectory creates a plug-in that you can use with [*Pscript*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pscript).
 
- 
+ 
 
- 
+ 
 
 
 

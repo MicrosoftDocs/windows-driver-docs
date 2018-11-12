@@ -30,9 +30,9 @@ When synchronization is off, the minidriver is responsible for performing synchr
 
 Multiple requests can be simultaneously issued to the same or different streams when stream class synchronization is off. The minidriver must queue its own requests and handle any hardware synchronization with other threads and the ISR. Spin locks, mutexes, and [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302) are some of the synchronization objects available to stream minidrivers running without stream class synchronization.
 
- 
+ 
 
- 
+ 
 
 
 

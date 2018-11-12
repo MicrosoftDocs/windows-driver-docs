@@ -63,9 +63,9 @@ When compiled this class definition produces the following data structure:
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

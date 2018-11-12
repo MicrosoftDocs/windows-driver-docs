@@ -30,9 +30,9 @@ To enable motion compensation functionality, the driver must perform the followi
 
 -   Fill in a [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure with the appropriate driver callback pointers and callback type flags set when the *DdGetDriverInfo* function is called with the GUID\_MotionCompCallbacks GUID. The driver must then copy this initialized structure into the Microsoft DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](https://msdn.microsoft.com/library/windows/hardware/ff551550) structure points, and return the number of bytes written into the buffer in **dwActualSize**.
 
- 
+ 
 
- 
+ 
 
 
 

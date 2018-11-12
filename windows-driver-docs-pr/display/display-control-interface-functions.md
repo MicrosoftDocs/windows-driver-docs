@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 This section provides reference pages for Display Control Interface (DCI) functions that applications use to control a display's device context. These functions are declared in the *dciman.h* header file. Do not use these functions in new applications; use the latest DirectX Graphics interfaces to communicate with your DirectDraw-supported driver instead. For information about DirectX Graphics interfaces, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

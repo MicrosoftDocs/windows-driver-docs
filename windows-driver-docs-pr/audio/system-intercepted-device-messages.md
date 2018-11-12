@@ -97,9 +97,9 @@ For more information, see [Preferred Voice-Communications Device ID](preferred-v
 
 For more information, see [Accessing the Preferred Device ID](accessing-the-preferred-device-id.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ This section includes:
 
 [**NdisQueryMdlOffset**](ndisquerymdloffset.md)
 
- 
+ 
 
- 
+ 
 
 
 

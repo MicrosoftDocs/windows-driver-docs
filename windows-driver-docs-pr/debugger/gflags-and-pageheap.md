@@ -30,9 +30,9 @@ Use care in interpreting the **Enable page heap** check box for an image file in
 
 To determine whether full or standard page heap verification is enabled for a program, at the command line, type **gflags /p**. In the resulting display, **traces** indicates that standard page heap verification is enabled for the program and **full traces** indicates that full page heap verification is enabled for the program.
 
- 
+ 
 
- 
+ 
 
 
 

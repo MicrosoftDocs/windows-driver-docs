@@ -22,9 +22,9 @@ This command cycles through all available baud rates for the kernel debugging co
 
 You cannot use this command to change the baud rate at which you are debugging. The baud rate of the host computer and the target computer must match, and you cannot change the baud rate of the target computer without restarting the computer. Therefore, you must change the baud rate only if the two computers are trying to communicate at different rates. In this case, you must change the host computer's baud rate to match that of the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

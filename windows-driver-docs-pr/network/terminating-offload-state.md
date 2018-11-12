@@ -44,9 +44,9 @@ This section includes:
 
 [Returning the Completion Status of a Terminate Offload Operation](returning-the-completion-status-of-a-terminate-offload-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

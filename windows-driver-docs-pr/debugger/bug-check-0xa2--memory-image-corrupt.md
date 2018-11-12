@@ -62,7 +62,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -71,9 +71,9 @@ A cyclic redundancy check (CRC) check on the memory range has failed.
 
 On a system wake operation, various regions of memory might be checked to guard against memory failures.
 
- 
+ 
 
- 
+ 
 
 
 

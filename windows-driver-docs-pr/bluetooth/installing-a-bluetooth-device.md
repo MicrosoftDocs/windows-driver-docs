@@ -50,7 +50,7 @@ The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SI
 
 **Note**  You can use the *Guidgen.exe* tool that is provided with the Microsoft Windows SDK to create custom GUIDs.
 
- 
+ 
 
 To expose computer functionality that remote Bluetooth devices can use, you must write a user-mode installation application.
 
@@ -116,9 +116,9 @@ You can restrict the Bluetooth driver stack to load profile driver and software 
 
 BTHENUM\\{00001124-0000-1000-8000-00805F9B34FB}\_LOCALMFG& *nnnn*
 
- 
+ 
 
- 
+ 
 
 
 

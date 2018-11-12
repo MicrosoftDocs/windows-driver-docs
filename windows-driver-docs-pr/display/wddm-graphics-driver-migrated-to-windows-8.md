@@ -13,9 +13,9 @@ When there is no Window 8 in-box coverage for the graphics hardware in a Windows
 
 The Windows 8 installer can block certain problem drivers. Such drivers are not migrated to Windows 8. Drivers are identified for such blocks based on issues that are reported by using Windows telemetry. In such cases, Windows 8 uses the MSBDD until a newer driver is installed by Windows Update or by the user from an OEM/IHV support site.
 
- 
+ 
 
- 
+ 
 
 
 

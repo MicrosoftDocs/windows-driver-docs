@@ -25,13 +25,13 @@ The display driver can access the hardware directly. This is because there is a 
 -   For especially time-critical operations, the display driver has direct access to video hardware registers. For example, the VGA display driver for *x*86 systems uses optimized assembly code to implement direct access to hardware registers for some drawing and text operations.
     **Note**   The video miniport driver must manage all resources (for example, memory resources) shared between the video miniport driver and the display driver. The system does not guarantee that resources acquired in the display driver will always be accessible to the video miniport driver.
 
-     
+     
 
 The display driver is discussed in detail in [Display Drivers (Windows 2000 Model)](display-drivers--windows-2000-model-.md).
 
- 
+ 
 
- 
+ 
 
 
 

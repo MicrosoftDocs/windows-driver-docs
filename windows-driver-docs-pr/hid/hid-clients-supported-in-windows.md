@@ -35,7 +35,7 @@ Sharing mode allows multiple applications to access the device. For example, mul
 
 *Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a Biometric sensor; 0x40 indicates a Light sensor. Those allocations are not contiguous. For the list of sensor usages, see  [Review Request 39:HID Usage Table Sensor Page](https://go.microsoft.com/fwlink/?linkid=830659). For information about  sensors usages that are supported in Windows, [HID Sensors Usages](https://go.microsoft.com/fwlink/?linkid=830658).
 
- 
+ 
 
 
 

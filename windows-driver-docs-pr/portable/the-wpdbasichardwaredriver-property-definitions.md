@@ -83,7 +83,6 @@ The values that are assigned to the various static properties in this array are 
 #define DEVICE_MANUFACTURER_VALUE        L"Windows Portable Devices Group"
 #define DEVICE_SERIAL_NUMBER_VALUE       L"01234567890123-45676890123456"
 #define DEVICE_SUPPORTS_NONCONSUMABLE_VALUE    FALSE
-
 ```
 
 These values are assigned in the **WpdObjectProperties::GetPropertyValuesForObject** method.
@@ -119,9 +118,9 @@ These values are also assigned in the **WpdObjectProperties::GetPropertyValuesFo
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
+
+
 
 
 

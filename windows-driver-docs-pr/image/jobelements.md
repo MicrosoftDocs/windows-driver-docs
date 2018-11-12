@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementData for parent JobElements</strong>](elementdata-for-jobelements-element.md)</p></td>
+<td><p><a href="elementdata-for-jobelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for parent JobElements&lt;/strong&gt;](elementdata-for-jobelements-element.md)"><strong>ElementData for parent JobElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetJobElementsResponse</strong>](getjobelementsresponse.md)</p></td>
+<td><p><a href="getjobelementsresponse.md" data-raw-source="[&lt;strong&gt;GetJobElementsResponse&lt;/strong&gt;](getjobelementsresponse.md)"><strong>GetJobElementsResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,9 +84,9 @@ The WSD Scan Service returns the **JobElements** element in [**GetJobElementsRes
 
 [**GetJobElementsResponse**](getjobelementsresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

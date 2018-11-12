@@ -55,9 +55,9 @@ Both a MUX and a SUM node terminate a source line; therefore, any nodes between 
 
 2.  A *split* in the topology is a case where a node has more than a single child. This is useful when a single pin routes to two separate destinations but shares some common controls, such as volume or a mute. Any time a split is encountered, the WDMAud driver creates a new line and duplicates all the controls parsed up to the split. This happens unconditionally whenever a split is encountered, even after encountering a SUM node that terminates a source line.
 
- 
+ 
 
- 
+ 
 
 
 

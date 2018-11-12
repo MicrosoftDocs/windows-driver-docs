@@ -32,9 +32,9 @@ IoGetDmaAdapter(
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

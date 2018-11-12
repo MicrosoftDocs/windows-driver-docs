@@ -15,7 +15,7 @@ The C# version of the [Print settings and print notifications](http://go.microso
 
 **Note**  The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
- 
+ 
 
 ## <span id="Print_notifications"></span><span id="print_notifications"></span><span id="PRINT_NOTIFICATIONS"></span>Print notifications
 
@@ -24,7 +24,7 @@ Print notifications let your UWP device app inform the user of important printer
 
 **Note**  Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their UWP device apps. For more info, see [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192).
 
- 
+ 
 
 When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898).
 
@@ -51,7 +51,7 @@ Before you get started:
 6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
-     
+     
 
 ## <span id="Step_1__Register_background_task"></span><span id="step_1__register_background_task"></span><span id="STEP_1__REGISTER_BACKGROUND_TASK"></span>Step 1: Register background task
 
@@ -140,7 +140,7 @@ If your app registers a background task for print notifications, it must supply 
 
 **Note**  If your printer status doesn't require immediate user intervention, update a tile rather than show a toast. For example, for a low ink condition, a tile update is sufficient. But if the printer is completely out of ink, the app may show a toast notification.
 
- 
+ 
 
 ### <span id="Saving_notification_details"></span><span id="saving_notification_details"></span><span id="SAVING_NOTIFICATION_DETAILS"></span>Saving notification details
 
@@ -213,7 +213,7 @@ To enable toast notifications, the app needs to register that it is toast-capabl
 
 **Important**  We do not recommended always showing a toast, especially for non-actionable events. This may become annoying for users and cause them to turn off all toasts from an app. For events that do not require user's immediate attention, we recommended updating only the tile and badge, and not showing a toast.
 
- 
+ 
 
 This example shows the `ToastCapable` attribute in the `VisualElements` element, as it appears in the app package manifest file, **Package.appxmanifest**.
 
@@ -357,7 +357,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
-     
+     
 
 The following steps build your app and install the device metadata.
 
@@ -372,7 +372,7 @@ The following steps build your app and install the device metadata.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
     **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-     
+     
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
@@ -436,9 +436,9 @@ If no default print notification appears when expected...
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

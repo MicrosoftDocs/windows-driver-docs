@@ -22,9 +22,9 @@ NDIS calls a miniport driver's [*MiniportSendNetBufferLists*](https://msdn.micro
 
 Miniport drivers call the [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668) function to return a linked list of NET\_BUFFER\_LIST structures to an overlying driver and to return the final status of a send request.
 
- 
+ 
 
- 
+ 
 
 
 

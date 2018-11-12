@@ -22,11 +22,11 @@ The AVStream driver samples in this directory provide a starting point for writi
 | Driver Device Transform Sample | [sampledevicemft](http://go.microsoft.com/fwlink/p/?LinkId=620187) | Illustrative example for a Driver Device Transform which loads in a process streaming an Avstream-based camera device using Media Foundation.                         |
 | Driver MFT                     | [SampleMft0](http://go.microsoft.com/fwlink/p/?LinkId=617126)      | A driver MFT for use with a camera's UWP device app. A driver MFT is a Media Foundation Transform that is used with a specific camera when capturing video. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,7 +29,6 @@ AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS = "{98951333-B9CD-48B1-A0A3-FF40682D73
 [SWAPAPO.I.Association0.AddReg]
 ;To register an APO for streaming in multiple modes, use a REG_MULTI_SZ property and include all the desired modes:
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
- 
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -37,9 +36,9 @@ HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNA
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
 
- 
+
+
 
 
 

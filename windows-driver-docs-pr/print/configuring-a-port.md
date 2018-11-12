@@ -30,9 +30,9 @@ The port monitor UI DLL's [**ConfigurePortUI**](https://msdn.microsoft.com/libra
 
 For more information about these operations, see the description of [**ConfigurePortUI**](https://msdn.microsoft.com/library/windows/hardware/ff546290). Also see [Storing Port Configuration Information](storing-port-configuration-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

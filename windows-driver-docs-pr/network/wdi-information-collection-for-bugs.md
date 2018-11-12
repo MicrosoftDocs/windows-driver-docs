@@ -71,9 +71,9 @@ Powercfg /SleepStudy
 
 A report file named SleepStudy-report.html is generated. It should be opened outside %windiir%\\system. The report breaks down what modules are keeping the system out of very low power state (DRIPS). It can also further break down which components are keeping the Wi-Fi NIC up (out of Dx).
 
- 
+ 
 
- 
+ 
 
 
 

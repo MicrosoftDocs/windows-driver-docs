@@ -190,9 +190,9 @@ The following lists contain all the functions and interfaces that the PortCls sy
 
 [IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
 
- 
+ 
 
- 
+ 
 
 
 

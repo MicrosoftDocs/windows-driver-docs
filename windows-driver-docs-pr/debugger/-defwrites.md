@@ -45,7 +45,7 @@ The **!defwrites** extension displays the values of the kernel variables used by
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -76,9 +76,9 @@ Write throttles not engaged
 
 In this case, there are no dirty pages. If **CcTotalDirtyPages** reaches 1538 (the value of **CcDirtyPageThreshold**), writing will be delayed until the number of dirty pages is reduced.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,9 +56,9 @@ UTK is supported on both UICCs. UTK UI is supported on only one UICC at a time.
 
 The UICC REFRESH with RESET UTK command is supported for both UICC slots.
 
- 
+ 
 
- 
+ 
 
 
 

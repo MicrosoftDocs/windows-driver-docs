@@ -26,9 +26,9 @@ When you open a workspace for a trace session, TraceView starts a new trace sess
 
 Because the paths and file names that are associated with a trace session are saved in the workspace, the files are reused and overwritten each time you open the workspace. To preserve your files, move or rename them after each trace session.
 
- 
+ 
 
- 
+ 
 
 
 

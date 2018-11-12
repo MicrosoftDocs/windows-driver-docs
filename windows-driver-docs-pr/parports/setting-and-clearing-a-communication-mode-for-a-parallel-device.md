@@ -39,9 +39,9 @@ A kernel-mode driver can also use the system-supplied [parallel device callback 
 
 For more information about the communication modes that the parallel port bus driver supports, see the modes NONE through ECP\_ANY that are defined in the header file *ntddpar.h* in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

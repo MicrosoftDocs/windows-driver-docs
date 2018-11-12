@@ -44,13 +44,13 @@ The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities o
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565892)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565892" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565892)"><strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_SCAN_CAPS_S</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_SCAN\_CAPS\_S structure that specifies the supported network types and whether the driver or firmware for the tuning device can support hardware-assisted scanning operations.
 
@@ -92,9 +92,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_SCAN\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565892)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,14 +42,14 @@ TAEF runs the fixture as Local System.
 
 **Note**  The test fixtures that you run as Local System should not create any UI. If your fixtures need to create or interact with UI, you need to move your UI-related code into separate executables that are launched on a desktop from your tests using CreateProcessAsUser.
 
- 
+ 
 
 <span id="Elevated"></span><span id="elevated"></span><span id="ELEVATED"></span>**Elevated**  
 TAEF ensures that the fixture is run in an elevated process by spawning an elevated process in which to run the fixture if necessary.
 
 **Note**  The user executing TAEF must be a member of the administrators group in order to execute fixtures marked with RunFixtureAs=Elevated. This is due to the fact that non-administrators do not have a split token to elevate.
 
- 
+ 
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Default**  
 TAEF runs the fixture in the same context as Te.exe (but still within a different process than the test).
@@ -63,7 +63,7 @@ TAEF runs the fixture in an 'Immersive Broker' process.
 -   Running tests remotely with 'RunFixtureAs=Broker' is not currently supported.
 -   When executing with 'RunFixtureAs=Broker' TAEF will use the "TE.ProcessHost.Broker.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
- 
+ 
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
 TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/library/bb625963).
@@ -74,14 +74,14 @@ TAEF runs the fixture in a process marked-up with the UIAccess execution level. 
 -   Running tests remotely with 'RunFixtureAs=UIAccess' is not currently supported.
 -   When executing with 'RunFixtureAs=UIAccess' TAEF will use the "TE.ProcessHost.UIAccess.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
- 
+ 
 
 <span id="Test"></span><span id="test"></span><span id="TEST"></span>**Test**  
 TAEF runs the fixture in the same process or context as the test.
 
 **Note**  This is the default TAEF behavior when no RunFixtureAs settings are specified.
 
- 
+ 
 
 ## <span id="RunFixtureAs__scope_"></span><span id="runfixtureas__scope_"></span><span id="RUNFIXTUREAS__SCOPE_"></span>RunFixtureAs:\[scope\]
 
@@ -413,9 +413,9 @@ The above example will run tests and fixtures as follows:
 -   MyClassSetup and MyClassCleanup run as Elevated
 -   MyModuleSetup and MyModuleCleanup run as System (within a different process than MyTestMethod)
 
- 
+ 
 
- 
+ 
 
 
 

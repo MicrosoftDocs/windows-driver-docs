@@ -26,9 +26,9 @@ The [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/ha
 "Model Name XYZ" = Install_Section_XYZ, HWP9876, Model_Name_XYZ
 ```
 
- 
+ 
 
- 
+ 
 
 
 

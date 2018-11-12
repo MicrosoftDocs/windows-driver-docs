@@ -99,11 +99,11 @@ For such output, look at the "suspects" list. These suspect filters are those th
 
 **Note**   This functionality should only be used on stalled graphs! The analyzer has no way of knowing how long the graph has been in this state. Breaking into the debugger and analyzing a running graph as a stalled graph still displays a suspect filter.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

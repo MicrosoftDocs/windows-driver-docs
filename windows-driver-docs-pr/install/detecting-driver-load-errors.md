@@ -21,9 +21,9 @@ The following screen shot shows the type of device status message that indicates
 
 ![screen shot of an unsigned driver error message](images/signing-driver-load-error-message.png)
 
- 
+ 
 
- 
+ 
 
 
 

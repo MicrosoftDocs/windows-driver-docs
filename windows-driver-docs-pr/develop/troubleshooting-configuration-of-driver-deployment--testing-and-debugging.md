@@ -60,7 +60,7 @@ Make sure you can ping the target computer from the host computer. On the host c
 **Note**  
 You might see several messages before you see the message **The network path was not found**. Some of those messages might make you think that the network path was found and the first steps of provisioning were succeeding. In fact, the network path was not found and no portion of provisioning succeeded. For example, you might see this:
 
- 
+ 
 
 ```cpp
 Connecting to computer "MyComputer"
@@ -78,7 +78,7 @@ When you start to provision a target computer, you might see a message that says
 **Note**  
 You might see several messages before you see the message **The network name cannot be found**. Some of those messages might make you think that the computer name was found and the first steps of provisioning were succeeding. In fact, the computer name was not found, and no portion of provisioning succeeded. For example, you might see this:
 
- 
+ 
 
 ```cpp
 Connecting to computer "NonExistentComputer"
@@ -91,7 +91,7 @@ The network name cannot be found.
 **Note**  
 The messages that are displayed when you enter an incorrect target computer name can vary. For example, you might see a message about enabling network discovery.
 
- 
+ 
 
 ```cpp
 Connecting to computer "NonExistentComputer"
@@ -116,14 +116,14 @@ When you start to provision a target computer, you might see a message that says
 ## Debugger breakpoints are not triggered for kernel-mode driver
 
 
-1.  Deploy the driver with breakpoints disabled. 
-2.  Manually break into the kernel-mode debugger. 
-3.  Set an exception on load of the module:
-```cpp
-sxe ld <DriverName>
-``` 
-4.  Enable the breakpoint and resume execution. 
-5.  On the target computer, disable the device node and then re-enable it. 
+1. Deploy the driver with breakpoints disabled. 
+2. Manually break into the kernel-mode debugger. 
+3. Set an exception on load of the module:
+   ```cpp
+   sxe ld <DriverName>
+   ``` 
+4. Enable the breakpoint and resume execution. 
+5. On the target computer, disable the device node and then re-enable it. 
 
 ## <span id="debugger_wont_connect_network"></span><span id="DEBUGGER_WONT_CONNECT_NETWORK"></span>Debugger won't connect or break in: Network connection
 
@@ -146,9 +146,9 @@ If the target computer has more than one 1394 controller, you must specify the b
 
 Check the COM port numbers on the host and target computer. Verify that you have configured the same baud rate for debugging on both the host and target computers. For more information, see [Troubleshooting Tips for Debugging over a Serial Cable](https://msdn.microsoft.com/windows/hardware/hh439359)
 
- 
+ 
 
- 
+ 
 
 
 

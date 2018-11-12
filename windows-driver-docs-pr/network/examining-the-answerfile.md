@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 Immediately before the "Setup is Copying Files" progress bar is displayed on a system being upgraded, the AnswerFile is created. NetSetup and vendor-supplied network migration DLLs create sections in the AnswerFile and then write entries to these sections during the Winnt32 upgrade phase.
 
@@ -61,11 +61,11 @@ The following table lists the top-level sections in the AnswerFile and the corre
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 For each network component that it finds during the Winnt32 phase, NetSetup writes an entry to the appropriate top-level section of the AnswerFile. Each entry has the following format:
 
@@ -117,9 +117,9 @@ OemDllToLoad=c:\temp\oem0001\migration.dll
 
 Note the **OemDllToLoad** entry in the **params.adapter2** section. Also note that the migration DLL did not create a **params.adapter2.OemSection**. When the migration DLL is to be loaded during the GUI mode phase, it typically does not write an **InfToRunAfterInstall** key to the AnswerFile. The DLL performs the postinstallation upgrade; therefore, it does not need to create an *Oem-Section* name that contains directives for NetSetup to perform during the GUI mode phase.
 
- 
+ 
 
- 
+ 
 
 
 

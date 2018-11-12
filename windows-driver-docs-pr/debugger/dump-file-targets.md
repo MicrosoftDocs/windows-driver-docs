@@ -22,7 +22,7 @@ To open a crash dump file for use as a debugger target, use [**OpenDumpFile**](h
 
 **Note**   The engine doesn't completely attach to the dump file until the [**WaitForEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561229) method has been called. When a dump file is created from a process or kernel, information about the last event is stored in the dump file. After the dump file is opened, the next time execution is attempted, the engine will generate this event for the event callbacks. Only then does the dump file become available in the debugging session. See [Debugging Session and Execution Model](debugging-session-and-execution-model.md) for more details.
 
- 
+ 
 
 Additional files can be used to assist in debugging a crash dump file. The methods [**AddDumpInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff537865) and [**AddDumpInformationFileWide**](https://msdn.microsoft.com/library/windows/hardware/ff537874) register files containing page-file information to be used when the next dump file is opened. These methods must be called before the dump file is opened. [**GetNumberDumpFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547887) will return the number of such files that were used when the current dump file was opened and [**GetDumpFile**](https://msdn.microsoft.com/library/windows/hardware/ff546586) will return a description of these files.
 
@@ -32,9 +32,9 @@ User-mode minidump files contain several streams of information. These streams c
 
 To create a crash dump file of the current target -- user-mode or kernel-mode -- use [**WriteDumpFile2**](https://msdn.microsoft.com/library/windows/hardware/ff561382). This method is similar to the [**.dump**](-dump--create-dump-file-.md) debugger command.
 
- 
+ 
 
- 
+ 
 
 
 

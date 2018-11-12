@@ -24,9 +24,9 @@ Use this command if the target is not responding.
 
 For more information about reestablishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 
- 
+ 
 
- 
+ 
 
 
 

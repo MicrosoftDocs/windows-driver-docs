@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -43,9 +43,9 @@ The source of the DMA transfer is a linked list of DMA descriptors. The **NextDe
 
 After the initial DMA transfer is started, the NetDMA interface can call the [**ProviderAppendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570394) function to append additional descriptors to the transfer. For more information about appending descriptors to a DMA transfer, see [Appending DMA Descriptors to a DMA Channel](appending-dma-descriptors-to-a-dma-channel.md).
 
- 
+ 
 
- 
+ 
 
 
 

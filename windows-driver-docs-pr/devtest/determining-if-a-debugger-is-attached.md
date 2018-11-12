@@ -26,9 +26,9 @@ To determine the status of kernel debugging, the following variables and routine
 
 -   (Microsoft Windows Server 2003 and later) The [**KdRefreshDebuggerNotPresent**](https://msdn.microsoft.com/library/windows/hardware/ff548109) routine refreshes the value of KD\_DEBUGGER\_NOT\_PRESENT.
 
- 
+ 
 
- 
+ 
 
 
 

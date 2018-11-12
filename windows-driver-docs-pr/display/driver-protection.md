@@ -13,7 +13,7 @@ Along with every virtual address, the video memory manager allows independent ha
 
 **Note**  Driver protection is optional and can be left at zero on any platform that doesn't require this functionality.
 
- 
+ 
 
 When mapping or reserving a GPU virtual address range the driver may specify a 64-bit driver protection value. The specified driver protection is used by the video memory manager when initializing the page table entry corresponding to that specific virtual address. In particular, driver protection is given back to the driver for any [*BuildPagingBuffer*](https://msdn.microsoft.com/library/windows/hardware/ff559587)**DXGK\_OPERATION\_UPDATE\_PAGE\_TABLE** corresponding to the specified virtual address.
 
@@ -59,9 +59,9 @@ For example, consider a case when the current allocation mapping set is M1 and t
 
 For tiled resources, driver protection is specified when reserving a virtual address range. A user mode driver call to [*UpdateGpuVirtualAddress*](https://msdn.microsoft.com/library/windows/hardware/dn906365) will inherit the virtual address current driver protection.
 
- 
+ 
 
- 
+ 
 
 
 

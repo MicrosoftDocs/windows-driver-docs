@@ -45,15 +45,15 @@ The **!acpikd.help** extension displays a Help text in the Debugger Command wind
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [ACPI Debugging](acpi-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ ms.localizationpriority: medium
 
 **Dual-Prime MC**: Like field (16x8) motion compensation, dual-prime motion compensation has each plane (parity) consisting of a top and bottom 16x8 shape. The same and opposite parity planes are combined together in the averaging operation. This averaging operation is identical to the bidirectional interpolation that is used for other motion types in MPEG-2. Unlike the other motion compensation types, a dual-prime macroblock always consists of two sets of prediction blocks (of the same and opposite parity) for a total of four prediction blocks per macroblock.
 
- 
+ 
 
- 
+ 
 
 
 

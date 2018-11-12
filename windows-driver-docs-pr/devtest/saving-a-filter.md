@@ -21,9 +21,9 @@ There is no specific procedure to save a filter. Instead, you can save the trace
 
 When saving the filter in a workspace, be careful not to overwrite files that you want to save. Because the path and file name of the trace log are saved in the workspace, if you open a workspace, the existing trace log file is overwritten. For more information, see [Using TraceView Workspaces](using-traceview-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

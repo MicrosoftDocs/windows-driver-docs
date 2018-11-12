@@ -21,9 +21,9 @@ A display driver that implements deinterlacing must support bob-style deinterlac
 
 [Bob Deinterlacing Algorithm](bob-deinterlacing-algorithm.md)
 
- 
+ 
 
- 
+ 
 
 
 

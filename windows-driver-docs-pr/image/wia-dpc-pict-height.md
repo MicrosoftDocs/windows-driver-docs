@@ -59,9 +59,9 @@ Requirements
 
 [**WIA\_DPC\_PICT\_WIDTH**](wia-dpc-pict-width.md)
 
- 
+ 
 
- 
+ 
 
 
 

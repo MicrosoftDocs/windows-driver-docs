@@ -67,11 +67,11 @@ An NDIS miniport driver that acts as a receiver for a network adapter for the da
 
 **Note**   Starting with Windows Vista, the IPSink filter is not supported.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

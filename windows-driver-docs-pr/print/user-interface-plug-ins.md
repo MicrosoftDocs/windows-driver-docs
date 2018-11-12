@@ -42,9 +42,9 @@ This section contains the following topics that explain how to develop a user in
 
 [Customizing Other Printer Interface Operations](customizing-other-printer-interface-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

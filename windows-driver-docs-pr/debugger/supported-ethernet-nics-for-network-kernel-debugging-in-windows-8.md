@@ -16,7 +16,7 @@ During kernel debugging, the computer that runs the debugger is called the *host
 
 **Note**  For a list of network adapters supported by Windows 8.1 for kernel debugging, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
- 
+ 
 
 ## <span id="System_Requirements"></span><span id="system_requirements"></span><span id="SYSTEM_REQUIREMENTS"></span>System Requirements
 
@@ -282,9 +282,9 @@ E0F1
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

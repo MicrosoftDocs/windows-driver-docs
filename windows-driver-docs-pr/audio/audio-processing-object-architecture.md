@@ -20,7 +20,7 @@ Audio processing objects (APOs), provide software based digital signal processin
 
 **Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
 
- 
+ 
 
 **Software APOs vs. Hardware DSP**
 
@@ -125,7 +125,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
- 
+ 
 
 **Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
 

@@ -72,9 +72,9 @@ Implementing the clone view with two CRTCs has some advantages over implementing
 
 The important point is that the VidPN manager never knows anything about how the video output codecs on a display adapter are assigned to the video present sources and targets. The VidPN manager knows only the associations between sources and targets. The underlying composite associations that involve the video output codecs are known only to the display miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

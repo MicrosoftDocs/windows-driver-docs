@@ -63,7 +63,7 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -164,9 +164,9 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
               No Children
 ```
 
- 
+ 
 
- 
+ 
 
 
 

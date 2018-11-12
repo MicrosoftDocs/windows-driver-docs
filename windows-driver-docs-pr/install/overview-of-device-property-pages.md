@@ -27,15 +27,15 @@ An IHV should supply a provider of custom device property pages in its driver pa
 
 **Note**  In versions of Windows earlier than Windows 2000, users set such information in Control Panel. Driver software that is written for Windows 2000 and later versions of Windows should provide property pages instead.
 
- 
+ 
 
 For more information about property page providers, see [Types of Device Property Page Providers](types-of-device-property-page-providers.md).
 
 The Windows SDK for Windows 7 and .NET Framework 4.0 documentation provides comprehensive guidance about property pages and the Microsoft Win32 functions that manipulate them. For more information about property pages and property sheets, see [Property Sheet](http://go.microsoft.com/fwlink/p/?linkid=180781) in the Windows SDK for Windows 7 and .NET Framework 4.0 documentation.
 
- 
+ 
 
- 
+ 
 
 
 

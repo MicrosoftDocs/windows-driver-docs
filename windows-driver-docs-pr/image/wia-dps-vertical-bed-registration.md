@@ -61,7 +61,7 @@ The following table describes the constants that are valid with the WIA\_DPS\_VE
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -88,9 +88,9 @@ Requirements
 
 [**WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION**](wia-dps-horizontal-bed-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

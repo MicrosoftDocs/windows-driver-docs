@@ -18,7 +18,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 |-------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------|
 | [**WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn898041) | X                              | X        | List of privacy exemption entries. |
 
- 
+ 
 
 ## Set property results
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

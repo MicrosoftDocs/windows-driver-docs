@@ -34,9 +34,9 @@ The caller can use [**DisplayConfigSetDeviceInfo**](https://msdn.microsoft.com/l
 
 -   Suppose that a user used a switchbox or KVM switch and that the operating system is unable to read the EDID from the monitor. The display control panel applet can call [**DisplayConfigSetDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff553909) to force the output on the connector and set a resolution.
 
- 
+ 
 
- 
+ 
 
 
 

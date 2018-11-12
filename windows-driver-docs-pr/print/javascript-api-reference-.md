@@ -49,7 +49,7 @@ Return values
 | 0            | The script completed successfully.                                                                                                                                                      |
 | 1            | The attached device was not ready to provide some requested information. Indicates that the print system should call the function again using any Requery Keys added during processing. |
 
- 
+
 
 ## setSchema method
 
@@ -76,7 +76,7 @@ Return values
 | 0            | The script completed successfully.                                                                                                                                                   |
 | 1            | The attached device was not ready to provide some requested information. Indicates that the print system should call the function again using the supplied printerBidiSchemaElement. |
 
- 
+
 
 ## getStatus method
 
@@ -103,7 +103,7 @@ Return values
 | 0            | The script completed successfully.                                                                      |
 | 2            | The attached device no longer supports unsolicited status and this function should not be called again. |
 
- 
+
 
 ## startPrintJob method
 
@@ -131,12 +131,13 @@ Parameters
 *printerBidiSchemaResponses*
 
 \[out\] An [**IPrinterBidiSchemaResponses**](https://msdn.microsoft.com/library/windows/hardware/hh920397) object that the manufacturer's JavaScript code can use to return any Bidi Schema value changes/updates.
+
 | Return value | Description                                                                             |
 |--------------|-----------------------------------------------------------------------------------------|
 | 0            | Success.                                                                                |
 | 1            | Failure – Cleanup the Job Context object and return an error code to the print spooler. |
 
- 
+
 
 ## writePrintData method
 
@@ -190,7 +191,7 @@ Parameters
 </tr>
 <tr class="odd">
 <td>2</td>
-<td><p>Retry - Process any Bidi Schema updates (including Bidi Events) in <em>printerBidiSchemaResponses</em>, and then call the JavaScript function again to allow the manufacturer's code to continue processing the data.</p>
+<td><p>Retry - Process any Bidi Schema updates (including Bidi Events) in <em>printerBidiSchemaResponses</em>, and then call the JavaScript function again to allow the manufacturer&#39;s code to continue processing the data.</p>
 <p>The number of bytes processed from the print data stream (<em>printData</em>) is returned via <em>writePrintDataProgress</em>.</p></td>
 </tr>
 <tr class="even">
@@ -205,7 +206,7 @@ Parameters
 </tbody>
 </table>
 
- 
+
 
 ## endPrintJob method
 
@@ -233,13 +234,14 @@ Parameters
 *printerBidiSchemaResponses*
 
 \[out\] An IPrinterBidiSchemaResponses object that the manufacturer's JavaScript code can use to return any Bidi Schema value changes or updates.
+
 | Return value | Description                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0            | Success – Cleanup the Job Context object and return success to the print spooler.                                                                                                                                         |
 | 1            | Failure – Cleanup the Job Context object and return an error code to the print spooler.                                                                                                                                   |
 | 2            | Retry - Process any Bidi Schema updates (including Bidi Events) in *printerBidiSchemaResponses*, and then call the JavaScript function again to allow the manufacturer's JavaScript code to continue processing the data. |
 
- 
+
 
 ## Bidi over secondary USB
 
@@ -275,7 +277,7 @@ Return values
 | 0            | The script completed successfully.                                                                    |
 | 2            | The attached device no longer supports solicited status and this function should not be called again. |
 
- 
+
 
 ## Related topics
 [**IPrinterScriptContext**](https://msdn.microsoft.com/library/windows/hardware/hh768279)  

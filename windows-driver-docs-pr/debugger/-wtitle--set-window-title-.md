@@ -54,7 +54,7 @@ This command cannot be used in script files.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ When **.wtitle** is used, *Title* replaces all this information. Even if a debug
 
 The WinDbg version number is always displayed in the window title bar, regardless of whether this command is used.
 
- 
+ 
 
- 
+ 
 
 
 

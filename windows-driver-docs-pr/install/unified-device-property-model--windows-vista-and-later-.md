@@ -33,9 +33,9 @@ Windows Vista and later versions of Windows support a unified device property m
 
 Many of the system-defined device properties in the unified device property model have corresponding representations that can be used to access the same information on Microsoft Windows Server 2003, Windows XP, and Windows 2000. To maintain compatibility with these earlier Windows versions, Windows Vista and later versions of Windows also support these representations. However, you should use the unified device property model of Windows Vista and later to access device properties.
 
- 
+ 
 
- 
+ 
 
 
 

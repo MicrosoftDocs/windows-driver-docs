@@ -52,7 +52,7 @@ Specifies the locale that you want. If you omit this parameter, the debugger dis
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -79,9 +79,9 @@ kd> .locale C
 Locale: C
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -148,9 +148,9 @@ Requirements
 
 [**HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS**](hs-plugin-query-supported-sims.md)
 
- 
+ 
 
- 
+ 
 
 
 

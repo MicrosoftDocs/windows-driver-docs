@@ -47,13 +47,13 @@ The KSPROPERTY\_MEDIASEEKING\_POSITIONS property sets the media time and/or the 
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSPROPERTY_POSITIONS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565207)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565207" data-raw-source="[&lt;strong&gt;KSPROPERTY_POSITIONS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565207)"><strong>KSPROPERTY_POSITIONS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Requirements
 
 [**KSPROPERTY\_POSITIONS**](https://msdn.microsoft.com/library/windows/hardware/ff565207)
 
- 
+ 
 
- 
+ 
 
 
 

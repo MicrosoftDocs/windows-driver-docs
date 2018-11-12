@@ -50,9 +50,9 @@ The KSPROPSETID\_Pin property set includes:
 
 [**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**](ksproperty-pin-proposedataformat2.md)
 
- 
+ 
 
- 
+ 
 
 
 

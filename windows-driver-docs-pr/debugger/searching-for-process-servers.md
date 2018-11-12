@@ -36,23 +36,23 @@ In WinDbg, you can use the **Connect to Remote Stub Server** dialog box to brows
 
 **Note**  For a process server to be discoverable, it must be activated with elevated privileges. For more information, see [Activating a Process Server](activating-a-process-server.md).
 
- 
+ 
 
 **Note**  
 If you are not logged on to the client computer with an account that has access to the server computer, you might need to provide a user name and password. On the client computer, in a Command Prompt window, enter the following command.
 
-**net use \\\\***Server***\\ipc$ /user:***UserName*
+**net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>
 where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
 
 When you are prompted, enter the password for *UserName*.
 
 After this command succeeds, you can discover process servers (running on the server computer) by using **-QR** or **Connect to Remote Stub**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

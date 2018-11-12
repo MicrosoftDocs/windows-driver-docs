@@ -200,7 +200,7 @@ nBottom 300</td>
 </tbody>
 </table>
 
- 
+ 
 
 Type definitions in manifest files work like C/C++ typedefs. For example, the following statement defines PLONG as a pointer to a LONG:
 
@@ -291,9 +291,9 @@ DDRESULT DirectDrawCreateClipper( DWORD dwFlags, [out] LPDIRECTDRAWCLIPPER *lplp
 
 In this example, LPDIRECTDRAWCLIPPER is defined as a pointer to the **IDirectDrawClipper** interface. Since Logger can identify which interface type is being returned in the *lplpDDClipper* parameter, there is no need for an \[iid\] modifier on any of the other parameters.
 
- 
+ 
 
- 
+ 
 
 
 

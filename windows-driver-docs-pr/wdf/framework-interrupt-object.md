@@ -18,9 +18,9 @@ When drivers create interrupts, they can provide interfaces for callback functio
 
 For more information about interrupt objects, see [Handling Interrupts](handling-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

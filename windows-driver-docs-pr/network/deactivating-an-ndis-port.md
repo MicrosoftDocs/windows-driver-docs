@@ -59,9 +59,9 @@ When a miniport driver deactivates the default port, NDIS closes all of the bind
 
 After a port is successfully deactivated, the port is in the allocated state. Miniport drivers cannot indicate received data or status for the port in the allocated state.
 
- 
+ 
 
- 
+ 
 
 
 

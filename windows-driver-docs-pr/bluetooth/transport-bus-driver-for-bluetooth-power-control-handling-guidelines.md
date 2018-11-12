@@ -23,9 +23,9 @@ The information in this section and its subtopics provides guidelines and sample
 
 While different transports are being used to support Bluetooth, the Bluetooth DDIs remain the same for Bluetooth profile drivers. This means that Bluetooth profile drivers and applications remain agnostic to the transport or power control handling being implemented.
 
- 
+ 
 
- 
+ 
 
 
 

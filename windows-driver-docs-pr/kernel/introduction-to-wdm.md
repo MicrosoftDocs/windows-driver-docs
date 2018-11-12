@@ -40,15 +40,15 @@ If you are writing new kernel-mode drivers, they should be WDM drivers, *unless*
 
 **Note**  All new driver stacks should consist of WDM drivers.
 
- 
+ 
 
 There are cross-platform issues to consider, whether you are developing WDM or non-WDM drivers. For more information, see [Writing Drivers for Different Versions of Windows](https://msdn.microsoft.com/library/windows/hardware/ff554887).
 
 If you are writing a new WDM driver, you should also consider using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/dn265580) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

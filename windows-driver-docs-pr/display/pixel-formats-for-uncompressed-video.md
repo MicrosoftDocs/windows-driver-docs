@@ -23,9 +23,9 @@ ms.localizationpriority: medium
 
 In order for applications to use uncompressed decoded pictures, pictures must be produced in a known video pixel format. The list of uncompressed picture formats supported by any DirectX VA accelerator must contain at least one of the pixel formats described in [4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md) or [4:2:0 Video Pixel Formats](4-2-0-video-pixel-formats.md).
 
- 
+ 
 
- 
+ 
 
 
 

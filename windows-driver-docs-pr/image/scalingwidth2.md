@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MaxValue</strong>](maxvalue.md)</p></td>
+<td><p><a href="maxvalue.md" data-raw-source="[&lt;strong&gt;MaxValue&lt;/strong&gt;](maxvalue.md)"><strong>MaxValue</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MinValue</strong>](minvalue.md)</p></td>
+<td><p><a href="minvalue.md" data-raw-source="[&lt;strong&gt;MinValue&lt;/strong&gt;](minvalue.md)"><strong>MinValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScalingRangeSupported</strong>](scalingrangesupported.md)</p></td>
+<td><p><a href="scalingrangesupported.md" data-raw-source="[&lt;strong&gt;ScalingRangeSupported&lt;/strong&gt;](scalingrangesupported.md)"><strong>ScalingRangeSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -91,9 +91,9 @@ The **ScalingWidth** element contains [**MinValue**](minvalue.md) and [**MaxValu
 
 [**ScalingRangeSupported**](scalingrangesupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,21 +28,21 @@ Add the following annotations to function parameters to indicate what they do wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="_Kernel_float_saved_"></span><span id="_kernel_float_saved_"></span><span id="_KERNEL_FLOAT_SAVED_"></span>_Kernel_float_saved_</p></td>
+<td align="left"><p><span id="_Kernel_float_saved_"></span><span id="_kernel_float_saved_"></span><span id="_KERNEL_FLOAT_SAVED_"></span><em>Kernel_float_saved</em></p></td>
 <td align="left"><p>The annotated function saves the floating-point hardware state, when the function returns successfully.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="_Kernel_float_restored_"></span><span id="_kernel_float_restored_"></span><span id="_KERNEL_FLOAT_RESTORED_"></span>_Kernel_float_restored_</p></td>
+<td align="left"><p><span id="_Kernel_float_restored_"></span><span id="_kernel_float_restored_"></span><span id="_KERNEL_FLOAT_RESTORED_"></span><em>Kernel_float_restored</em></p></td>
 <td align="left"><p>The annotated function restores the floating-point hardware state when the function returns successfully.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="_Kernel_float_used_"></span><span id="_kernel_float_used_"></span><span id="_KERNEL_FLOAT_USED_"></span>_Kernel_float_used_</p></td>
-<td align="left"><p>If the function is called safely by a calling function, you can use the _Kernel_float_used_ annotation to suppress the reporting of errors. However, if the calling function is not also annotated with _Kernel_float_used_ or the function call does not occur between functions annotated with _Kernel_float_saved and _Kernel_float_restored_, respectively, the code analysis tools will report an error.</p></td>
+<td align="left"><p><span id="_Kernel_float_used_"></span><span id="_kernel_float_used_"></span><span id="_KERNEL_FLOAT_USED_"></span><em>Kernel_float_used</em></p></td>
+<td align="left"><p>If the function is called safely by a calling function, you can use the <em>Kernel_float_used</em> annotation to suppress the reporting of errors. However, if the calling function is not also annotated with <em>Kernel_float_used</em> or the function call does not occur between functions annotated with <em>Kernel_float_saved and _Kernel_float_restored</em>, respectively, the code analysis tools will report an error.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 These annotations are already applied to KeSaveFloatingPoint state and KeRestoreFloatingPointState system functions, in addition to annotations for acquiring and releasing resources to prevent leaks. The similar EngXxx functions are also annotated in this way. However, functions that wrap these functions should also use these annotations.
 
@@ -69,7 +69,6 @@ In the following example, the \_Kernel\_float\_used\_ annotation suppresses warn
 _Kernel_float_used_
 void
     MyDoesFloatingPoint(arguments);
- 
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -77,9 +76,9 @@ void
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
 
- 
+
+
 
 
 

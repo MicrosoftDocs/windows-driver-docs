@@ -22,9 +22,9 @@ A miniport driver communicates with its NICs and with higher-level drivers throu
 
 The following send and receive operations illustrate the interaction of miniport drivers with NDIS and with higher-level drivers:
 
--   When a transport driver has a packet to transmit, it calls an **Ndis*Xxx*** function exported by the NDIS library. NDIS then passes the packet to the miniport driver by calling the appropriate *MiniportXxx* function exported by the miniport driver. The miniport driver then forwards the packet to the NIC for transmission by calling the appropriate **Ndis*Xxx*** functions.
+- When a transport driver has a packet to transmit, it calls an **Ndis*Xxx*** function exported by the NDIS library. NDIS then passes the packet to the miniport driver by calling the appropriate *MiniportXxx* function exported by the miniport driver. The miniport driver then forwards the packet to the NIC for transmission by calling the appropriate **Ndis*Xxx*** functions.
 
--   When a NIC receives a packet addressed to itself, it can post a hardware interrupt that is handled by NDIS or the NIC's miniport driver. NDIS notifies the NIC's miniport driver by calling the appropriate *MiniportXxx* function. The miniport driver sets up the transfer of data from the NIC and then indicates the presence of the received packet to bound higher-level drivers by calling the appropriate **Ndis*Xxx*** function.
+- When a NIC receives a packet addressed to itself, it can post a hardware interrupt that is handled by NDIS or the NIC's miniport driver. NDIS notifies the NIC's miniport driver by calling the appropriate *MiniportXxx* function. The miniport driver sets up the transfer of data from the NIC and then indicates the presence of the received packet to bound higher-level drivers by calling the appropriate **Ndis*Xxx*** function.
 
 ## Connectionless and Connection-Oriented Miniport Drivers
 
@@ -34,7 +34,7 @@ NDIS supports miniport drivers for both connectionless environments and connecti
 
 **Note**  All NDIS 6.0 and later drivers are deserialized.
 
- 
+ 
 
 -   *Deserialized drivers* serialize the operation of their own *MiniportXxx* functions and that internally queue all incoming send packets. This results in significantly better full-duplex performance, provided that the driver's critical sections (code that only a single thread at a time can run) are kept small.
 
@@ -55,9 +55,9 @@ Through its non-NDIS lower edge, a miniport driver uses the class interface for 
 
 [NDIS Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff565969)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,9 +60,9 @@ In particular, a TOE NIC must:
 
 A TOE NIC can optionally support the selective acknowledgment (SACK) option for both transmit and receive operations. If the NIC does not support the SACK option, it must be able to ignore the SACK option in a TCP segment and process the rest of the segment normally.
 
- 
+ 
 
- 
+ 
 
 
 

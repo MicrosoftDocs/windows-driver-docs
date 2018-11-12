@@ -35,11 +35,11 @@ The deblocking filter operations can be performed in the accelerator in one of t
 
 **Note**   The destination picture surface for the deblocked picture could differ from that of the picture reconstructed prior to deblocking. This would then support "outside the loop" deblocking as a postdecoding process that did not affect the sample values used for prediction of the next picture.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

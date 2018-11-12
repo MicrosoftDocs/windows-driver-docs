@@ -54,7 +54,7 @@ The **!irql** extension is only available in Windows Server 2003 and later versi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -97,9 +97,9 @@ kd> !irql
 Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

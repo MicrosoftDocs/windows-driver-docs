@@ -43,9 +43,9 @@ This topic lists available User-Mode Driver Framework (UMDF) sample drivers that
 -   [WPD WUDF sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/wpd/WpdWudfSampleDriver)
 -   [WPDHelloWorld sample driver for portable devices](https://github.com/Microsoft/Windows-driver-samples/tree/master/wpd/WpdHelloWorldDriver)
 
- 
+ 
 
- 
+ 
 
 
 

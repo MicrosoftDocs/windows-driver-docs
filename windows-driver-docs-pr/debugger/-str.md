@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the ANSI\_STRING or OEM\_STRING structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ typedef STRING OEM_STRING;
 
 If the string is null-terminated, **Length** does not include the trailing null.
 
- 
+ 
 
- 
+ 
 
 
 

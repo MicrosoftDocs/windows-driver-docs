@@ -31,9 +31,9 @@ For more information about the read and write time-outs, see the following:
 
 -   The [**SetCommTimeouts**](https://msdn.microsoft.com/library/windows/desktop/aa363437) function and the [**COMMTIMEOUTS**](https://msdn.microsoft.com/library/windows/desktop/aa363190) structure that are supported by the Windows Base Services in the Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

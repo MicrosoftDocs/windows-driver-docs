@@ -42,7 +42,7 @@ The CODECAPI\_ALLSETTINGS property is used to pass back and forth a minidriver-g
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type PVOID, which is a pointer to a user-mode buffer for the minidriver-generated block of data.
 
@@ -70,9 +70,9 @@ The minidriver must verify the data's integrity and check that the data block si
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
 
- 
+ 
 
- 
+ 
 
 
 

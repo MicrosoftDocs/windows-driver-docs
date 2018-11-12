@@ -57,7 +57,7 @@ The thread identifier can be one of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 Threads are assigned indexes as they are created. Note that this number differs from the thread ID that the Microsoft Windows operating system uses.
 
@@ -73,11 +73,11 @@ In kernel mode, you cannot control threads by using thread identifiers. For more
 
 **Note**  You can use the tilde character ( ~ ) to specify threads during user-mode debugging. In kernel-mode debugging, you can use the tilde to specify processors. For more information about how to specify processors, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

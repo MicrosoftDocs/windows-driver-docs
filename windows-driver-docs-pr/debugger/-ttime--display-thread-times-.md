@@ -49,7 +49,7 @@ The **.ttime** command displays the running times for a thread.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ Kernel:  0 days 0:00:00.131
 User:    0 days 0:00:02.109
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ Note that bit 31 of the DWORDs in the comment that follows is not required to be
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ The following topics describe how to port a CoNDIS 5.*x* driver to CoNDIS 6.0 in
 
 [Porting Status Indication Operations to CoNDIS 6.0](porting-status-indication-operations-to-condis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

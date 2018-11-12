@@ -69,7 +69,7 @@ F12
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -114,11 +114,11 @@ If you are debugging KD with CDB, then CTRL+C will be intercepted by the host de
 
 **Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use [CTRL+BREAK](debug---break.md) or select Debug | Break from the menu.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

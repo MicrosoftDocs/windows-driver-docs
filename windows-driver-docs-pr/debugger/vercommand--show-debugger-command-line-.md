@@ -47,11 +47,11 @@ The **vercommand** command displays the command that opened the debugger.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

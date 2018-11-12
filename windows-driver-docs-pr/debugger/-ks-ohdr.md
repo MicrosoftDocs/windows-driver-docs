@@ -54,7 +54,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ Levels and flags for **!ks.ohdr** are identical to those described in [**!ks.dum
 
 If the data you are querying is not paged out, consider using [**!ks.dump**](-ks-dump.md) instead of **!ks.ohdr**.
 
- 
+ 
 
- 
+ 
 
 
 

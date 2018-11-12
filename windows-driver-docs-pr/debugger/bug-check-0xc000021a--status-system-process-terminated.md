@@ -55,7 +55,7 @@ The STATUS\_SYSTEM\_PROCESS\_TERMINATED bug check has a value of 0xC000021A. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -99,9 +99,9 @@ Consider using Safe Mode to isolate elements for troubleshooting and if necessar
 
 Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
- 
+ 
 
- 
+ 
 
 
 

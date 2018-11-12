@@ -21,7 +21,7 @@ This table lists the requirements for a driver to specify to Windows the WDDM dr
 | Display-Only     | Implement all the Display-specific DDIs and return a null pointer for all the Render-specific DDIs                                                                                                                                                         |
 | Render-Only      | Implement all the Render-specific DDIs and return a null pointer for all the Display-specific DDIs, or implement all the DDIs for a full WDDM driver but report DISPLAY\_ADAPTER\_INFO.NumVidPnSources = 0 and DISPLAY\_ADAPTER\_INFO.NumVidPnTargets = 0. |
 
- 
+ 
 
 This table lists all the feature capabilities visible to the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) that WDDM 1.2 drivers are required to set. "M" indicates a mandatory feature, "O" indicates optional, and "NA" indicates not applicable. To read details about each feature, follow the link in the left column.
 
@@ -41,11 +41,11 @@ This table lists all the feature capabilities visible to the Microsoft DirectX g
 | [GDI Hardware Acceleration](gdi-hardware-acceleration.md): A required feature starting with WDDM 1.1                                            | M                    | M                  | NA                  | [**DXGK\_PRESENTATIONCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562004).**SupportKernelModeCommandBuffer**                                                                                                                                 |
 | [GPU power management of idle states and active power](gpu-power-management-of-idle-and-active-power.md)                                        | O                    | O                  | O                   | If this feature is supported, the [*DxgkDdiSetPowerComponentFState*](https://msdn.microsoft.com/library/windows/hardware/hh451422) and [*DxgkDdiPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451396) functions must be supported. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

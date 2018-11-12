@@ -41,9 +41,9 @@ The **.continue** token can be used within any [**.for**](-for.md), [**.while**]
 
 Since there is no control flow token equivalent to the C goto statement, you will usually use the **.continue** token within an [**.if**](-if.md) conditional, as shown in the syntax examples above. However, this is not actually required.
 
- 
+ 
 
- 
+ 
 
 
 

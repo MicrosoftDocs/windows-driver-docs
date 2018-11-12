@@ -84,9 +84,9 @@ SP\_BAD\_FW\_WARNING
 
 [**ScsiPortLogError**](https://msdn.microsoft.com/library/windows/hardware/ff564652) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
 
- 
+ 
 
- 
+ 
 
 
 

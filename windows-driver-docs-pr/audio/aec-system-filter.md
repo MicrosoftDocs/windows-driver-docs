@@ -16,7 +16,7 @@ keywords:
 - connections WDK audio
 - filter graphs WDK audio , AEC system filters
 - audio filter graphs WDK
-ms.date: 04/20/2017
+ms.date: 11/05/2018
 ms.localizationpriority: medium
 ---
 
@@ -38,19 +38,17 @@ An audio filter graph that incorporates a capture effect that is implemented in 
 
 -   The AEC system filter performs all internal processing at 16 kHz. The input and output streams are source-rate converted as necessary.
 
--   In Windows XP, the capture and render streams must have the same sample rate. In Windows XP SP1, Windows Server 2003, and later, the AEC system filter's capture-out and render-in pins (see the following figure) must have the same sample rate, but the sample rates at the capture-in and render-out pins can each be selected independently of the other pins. The sample rate at the capture-in pin can be (in order of preference) 16 kHz, 48 kHz, 44.1 kHz, or 8 kHz. (The order of preference is based on processing time and audio quality.) The sample rate at the render-out pin can be (in order of preference) 16 kHz, 48 kHz, or 44.1 kHz. Note that the render-out pin does not support a sample rate of 8 kHz.
+-   In Windows XP SP1, Windows Server 2003, and later, the AEC system filter's capture-out and render-in pins (see the following figure) must have the same sample rate, but the sample rates at the capture-in and render-out pins can each be selected independently of the other pins. The sample rate at the capture-in pin can be (in order of preference) 16 kHz, 48 kHz, 44.1 kHz, or 8 kHz. (The order of preference is based on processing time and audio quality.) The sample rate at the render-out pin can be (in order of preference) 16 kHz, 48 kHz, or 44.1 kHz. Note that the render-out pin does not support a sample rate of 8 kHz.
 
 ![diagram illustrating an aec system filter's pins and connections](images/aecfilt.png)
 
 -   The AEC and NS nodes (see figure in [Exposing Hardware-Accelerated Capture Effects](exposing-hardware-accelerated-capture-effects.md)) can handle only monophonic streams. If the capture stream is multichannel (for example, two-channel stereo), all channels other than the first are ignored (and discarded). Only monophonic streams can be processed by the render side.
 
--   In Windows XP, the clock rate must be matched between the capture and render streams. The AEC system filter implements no mechanism for matching sample rates across devices. This limitation precludes using AEC when the capture and render functions are performed by different devices. In Windows XP SP1, Windows Server 2003, and later, this limitation does not exist. The AEC system filter correctly handles mismatches between the clocks for the capture and render streams, and separate devices can be used for capture and rendering.
+-   In Windows XP SP1, Windows Server 2003, and later, this limitation does not exist. The AEC system filter correctly handles mismatches between the clocks for the capture and render streams, and separate devices can be used for capture and rendering.
 
 -   When the AEC system filter is used, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) turns off hardware acceleration for mixing, sample-rate conversion, 3D spatialization, and so on. All mixing of streams is done in software emulation by the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). This restriction is necessary to ensure that all audio that is played by the rendering device can be canceled out of the capture stream by the AEC system filter.
 
 -   Any signal processing that is done before the AEC or NS node on the capture side of the graph or after the AEC or NS node on the render side must be linear time-invariant. Performing any nonlinear or time-varying signal processing in either of these locations prevents AEC from canceling the echo in the capture signal.
-
--   SysAudio never inserts a [GFX filter](gfx-filters.md) into the same graph as the AEC system filter. As a result, GFX filtering cannot be performed on a render or capture stream that uses the AEC system filter.
 
 -   AEC filtering cancels only echoes coming from the AEC-filtered channels in your computer. Audio that is output through channels that do not pass through AEC is not echo-canceled. Echoes in a non-AEC audio channel are functionally equivalent to echoes in the audio that is playing on a radio in the office next to your computer. AEC has no way of canceling (and no effect on) echoes from either a radio or a non-AEC channel.
 
@@ -149,13 +147,13 @@ All of the AEC system filter's pins use the data-format parameter values shown i
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the **MajorFormat**, **SubFormat**, and **Specifier** members, see [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658). For an example of a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) data-range descriptor that uses these three parameter values, see [PCM Stream Data Range](pcm-stream-data-range.md).
 
- 
+ 
 
- 
+ 
 
 
 

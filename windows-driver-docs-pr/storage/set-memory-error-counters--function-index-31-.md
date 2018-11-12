@@ -37,19 +37,19 @@ This function sets the counters that track correctable and uncorrectable memory 
 <td align="left">1</td>
 <td align="left">0</td>
 <td align="left"><p>The number of uncorrectable ECC errors detected by the platform from the NVDIMM-N module.</p>
-<p>The platform shall write this value to the <em>*DRAM_ECC_ERROR_COUNT</em> (2, 0x80) register.</p></td>
+<p>The platform shall write this value to the <em><em>DRAM_ECC_ERROR_COUNT</em> (2, 0x80) register.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Count of DRAM Correctable ECC Error Above Threshold Events</strong></td>
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left"><p>The number of correctable ECC threshold-exceeded events detected by the platform from the NVDIMM-N module.</p>
-<p>The platform shall write this value to the <em>*DRAM_THRESHOLD_ECC_COUNT</em> (2, 0x81) register.</p></td>
+<p>The platform shall write this value to the <em></em>DRAM_THRESHOLD_ECC_COUNT</em> (2, 0x81) register.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -74,12 +74,12 @@ This function sets the counters that track correctable and uncorrectable memory 
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for more information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -88,9 +88,9 @@ This function sets the counters that track correctable and uncorrectable memory 
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

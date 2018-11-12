@@ -83,7 +83,7 @@ The following table describes the registry values that the new 1394 bus driver s
 <strong>Note</strong>  Enabling gap count optimization improves the gap count for all 1394 bus topologies, including 1394b. The gap count value that is used is based on the table method, as specified in the IEEE-1394a specification. End-users must make sure that the gap count that is used is valid for their 1394 bus topology.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -96,13 +96,13 @@ The following table describes the registry values that the new 1394 bus driver s
 <strong>Note</strong>  The 1394ohci.sys bus driver disables and enables cycle start packets only if the local node is the bus manager.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  

@@ -21,9 +21,9 @@ DPC object contents should not be directly referenced by drivers. The object's s
 
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

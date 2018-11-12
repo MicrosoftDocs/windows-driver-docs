@@ -22,9 +22,9 @@ The following events are defined in this set:
 
 [**KSEVENT\_VIDCAP\_SEARCH**](ksevent-vidcap-search.md)
 
- 
+ 
 
- 
+ 
 
 
 

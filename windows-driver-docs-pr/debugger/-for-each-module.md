@@ -129,7 +129,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 <tr class="odd">
 <td align="left"><p>@#TimeDateStamp</p></td>
 <td align="left"><p>ULONG</p></td>
-<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong>[.formats (Show Number Formats)](-formats--show-number-formats-.md)</strong> command.</p></td>
+<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong><a href="-formats--show-number-formats-.md" data-raw-source="[.formats (Show Number Formats)](-formats--show-number-formats-.md)">.formats (Show Number Formats)</a></strong> command.</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -154,7 +154,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 </tbody>
 </table>
 
- 
+ 
 
 These aliases are all replaced before *CommandString* is executed for each module and before any other parsing occurs. These aliases are case sensitive. You must add a space before the alias and a space after it, even if the alias is enclosed in parentheses. If you use C++ expression syntax, you must reference these aliases as @@( @\#*alias*).
 
@@ -182,7 +182,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -240,9 +240,9 @@ ADVAPI32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 COMDLG32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,11 +28,11 @@ The DDCAPS2\_SYSTONONLOCAL\_AS\_SYSTOLOCAL flag is valid only if the DDCAPS2\_NO
 
 **Note**   This feature is intended to enable the driver itself to do efficient reordering of textures. This is *not* meant to imply that hardware can write into AGP memory. Hardware writing directly into AGP memory is not currently supported.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

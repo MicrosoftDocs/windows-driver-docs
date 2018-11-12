@@ -48,9 +48,9 @@ A set of kernel-mode threads can synchronize access to shared data or resources 
 
 For more information, see [Spin Locks](spin-locks.md), [Managing Hardware Priorities](managing-hardware-priorities.md), and [Kernel Dispatcher Objects](kernel-dispatcher-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

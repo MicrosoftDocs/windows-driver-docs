@@ -89,22 +89,22 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFOpticalResolution</strong>](adfopticalresolution.md)</p></td>
+<td><p><a href="adfopticalresolution.md" data-raw-source="[&lt;strong&gt;ADFOpticalResolution&lt;/strong&gt;](adfopticalresolution.md)"><strong>ADFOpticalResolution</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenMaximumSize</strong>](platenmaximumsize.md)</p></td>
+<td><p><a href="platenmaximumsize.md" data-raw-source="[&lt;strong&gt;PlatenMaximumSize&lt;/strong&gt;](platenmaximumsize.md)"><strong>PlatenMaximumSize</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>PlatenMinimumSize</strong>](platenminimumsize.md)</p></td>
+<td><p><a href="platenminimumsize.md" data-raw-source="[&lt;strong&gt;PlatenMinimumSize&lt;/strong&gt;](platenminimumsize.md)"><strong>PlatenMinimumSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenOpticalResolution</strong>](platenopticalresolution.md)</p></td>
+<td><p><a href="platenopticalresolution.md" data-raw-source="[&lt;strong&gt;PlatenOpticalResolution&lt;/strong&gt;](platenopticalresolution.md)"><strong>PlatenOpticalResolution</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Widths</strong>](widths.md)</p></td>
+<td><p><a href="widths.md" data-raw-source="[&lt;strong&gt;Widths&lt;/strong&gt;](widths.md)"><strong>Widths</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -135,9 +135,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,7 +16,7 @@ WDI\_TLV\_SUPPORTED\_GUIDS is a TLV that contains a supported NDIS GUID.
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -35,7 +35,7 @@ The size (in bytes) of a [NDIS\_GUID](https://msdn.microsoft.com/library/windows
 |------------|------------------------|
 | NDIS\_GUID | A supported NDIS GUID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +66,9 @@ Requirements
 
 [OID\_WDI\_GET\_ADAPTER\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/dn925838)
 
- 
+ 
 
- 
+ 
 
 
 

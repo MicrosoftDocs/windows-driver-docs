@@ -24,9 +24,9 @@ As soon as AC power becomes available, the computer hardware automatically start
 
 Regardless of any other settings, the power manager carries out the DC power policy for a critical battery if a battery that is rechargeable or supplies system power reports the hardware condition "critical" and is in the discharging state for two seconds or longer. Power policy in this situation typically requires a transition to the hibernate or shutdown state.
 
- 
+ 
 
- 
+ 
 
 
 

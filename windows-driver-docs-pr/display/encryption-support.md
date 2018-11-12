@@ -30,7 +30,7 @@ In order for the host decoder to use encryption, it must determine what types of
 
 **Note**   All DirectX VA accelerators must be able to operate without using encryption. Support for operating without encryption, therefore, does not need to be declared, and the DXVA\_NoEncrypt "no encryption" GUID must never be sent in the video accelerator format GUID list.
 
- 
+ 
 
 The host selects the type of encryption protocol to apply and indicates this choice by sending a GUID to the accelerator. In a typical encryption scenario, two more steps take place before encrypted data can be successfully transferred:
 
@@ -44,9 +44,9 @@ Each data set that is exchanged between the host and accelerator to pass the nec
 
 The [**DXVA\_EncryptProtocolHeader**](https://msdn.microsoft.com/library/windows/hardware/ff563965) structure is used to indicate that an encryption protocol is being used as well as the type of encryption being used.
 
- 
+ 
 
- 
+ 
 
 
 

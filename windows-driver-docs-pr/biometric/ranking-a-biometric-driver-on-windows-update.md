@@ -46,9 +46,9 @@ FeatureScore=x20
 
 For more information about how to set the feature score on drivers, see [Feature Score (Windows Vista)](http://go.microsoft.com/fwlink/p/?linkid=132806).
 
- 
+ 
 
- 
+ 
 
 
 

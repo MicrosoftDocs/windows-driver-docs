@@ -23,7 +23,7 @@ Upon completion of the build, set the current working directory to be the root o
 
 SSIndex accepts parameters that allow you to run the script from anywhere and to specify the location of the source files and .pdb files separately. This is most useful if the source is kept in another location from the output .pdb files. For example:
 
-**ssindex.cmd -server=vss -source=c:\\***source* **-symbols=c:\\***outputdir*
+**ssindex.cmd -server=vss -source=c:\\**<em>source</em> **-symbols=c:\\**<em>outputdir</em>
 
 These directories can also be specified with environment variables. Use the -? or -?? command line options for more information.
 
@@ -54,7 +54,6 @@ switch overrides env).
 Using '/debug' will turn on verbose output.
 Use "SSIndex.cmd -??" for verbose help information.
 ## See SrcSrv documentation for more information.
-
 ```
 
 You can also use one of the provided wrapper scripts (Vssindex.cmd) to avoid specifying the version control system. The script source-indexes all .pdb files found in the current directory and below with version control information to locate all source files found in the current directory and below. You can specify different locations for these files by using environment variables and command-line switches.
@@ -97,9 +96,9 @@ Causes *VSSDump* to format output for use with script files.
 <span id="-c"></span><span id="-C"></span>**-c**  
 Causes *VSSDump* to display only the Virtual SourceSafe configuration information.
 
- 
 
- 
+
+
 
 
 

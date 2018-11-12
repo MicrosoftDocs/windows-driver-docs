@@ -76,9 +76,9 @@ f50beb00  f943f6f1 ks!CKsPipeSection::DistributeDeviceStateChange+0x1d
 f50beb24  f943fb1e ks!CKsPipeSection::SetDeviceState+0xb2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

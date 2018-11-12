@@ -14,11 +14,11 @@ Synchronous programming simply waits for a call to return. This is fast and effi
 
 **Note**  For driver developers using Microsoft Vista, this is not as serious a problem. For more information about synchronous programming in Vista, see [Restricting Waits in Vista](restricting-waits-in-vista.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

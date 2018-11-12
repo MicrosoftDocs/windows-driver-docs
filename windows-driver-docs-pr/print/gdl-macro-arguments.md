@@ -76,9 +76,9 @@ Then, the following macro reference will be interpreted as three separate and un
 
 The parser will not interpret (=Macro2, =Macro3) to be a parameter list for =Macro1. This behavior preserves backward compatibility with current GPDs.
 
- 
+ 
 
- 
+ 
 
 
 

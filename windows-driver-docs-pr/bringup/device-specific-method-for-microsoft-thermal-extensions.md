@@ -53,11 +53,11 @@ If a temperature sensor device is reported via \_DSM function index 2, the therm
 
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", of the ACPI 5.0 specification.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ The virtual miniport driver interface frees the miniport from relying on the por
 
 Use caution when you implement VMiniport drivers. Though the expansions give greater flexibility, they demand greater care in detecting errors, validating paths, and I/O timing. Some examples are provided here, but it is impossible to anticipate all possible results of using kernel interfaces incorrectly.
 
- 
+ 
 
- 
+ 
 
 
 

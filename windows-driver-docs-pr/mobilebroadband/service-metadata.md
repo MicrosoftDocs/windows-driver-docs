@@ -41,43 +41,43 @@ For reference information about the XML documents in a service metadata package,
 
 The following summary describes some of the most interesting fields that are contained and defined inside a service metadata package:
 
--   **Hardware IDs**  
-For a GSM network, you can submit a metadata package that describes the IMSI or ICCID ranges against which you want your service metadata package to match. If you are an MVNO, you can specify one or more ranges of IMSIs or SIM ICC IDs that you have leased from an MNO. For a CDMA network, you can submit a package by using Provider ID (SID/NID) or Provider Name. The hardware IDs correspond to the [HardwareID](hardwareid.md) element in the service metadata package schema. For more information about how to plan your Hardware Identification (HWID) ranges for MNO and MVNO scenarios, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md)
+- **Hardware IDs**  
+  For a GSM network, you can submit a metadata package that describes the IMSI or ICCID ranges against which you want your service metadata package to match. If you are an MVNO, you can specify one or more ranges of IMSIs or SIM ICC IDs that you have leased from an MNO. For a CDMA network, you can submit a package by using Provider ID (SID/NID) or Provider Name. The hardware IDs correspond to the [HardwareID](hardwareid.md) element in the service metadata package schema. For more information about how to plan your Hardware Identification (HWID) ranges for MNO and MVNO scenarios, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md)
 
--   **Service number**  
-The unique ID for the mobile broadband service provider. This GUID is also used to identify the operator when using Account Provisioning Metadata. If you update the device metadata package, this GUID must remain the same. The service number corresponds to the [ServiceNumber](servicenumber.md) element in the service metadata package schema.
+- **Service number**  
+  The unique ID for the mobile broadband service provider. This GUID is also used to identify the operator when using Account Provisioning Metadata. If you update the device metadata package, this GUID must remain the same. The service number corresponds to the [ServiceNumber](servicenumber.md) element in the service metadata package schema.
 
--   **Operator logo**   
-A custom logo that appears in Windows Connection Manager next to your network entry. (The logo is hidden when the user is on a roaming network.) The operator logo corresponds to the [ServiceIconFile](serviceiconfile.md) element in the service metadata package schema. For more information about the logo requirements, see [Service Icon Requirements](https://msdn.microsoft.com/library/windows/hardware/dn236416).  
-> [!IMPORTANT]
-> In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
+- **Operator logo**   
+  A custom logo that appears in Windows Connection Manager next to your network entry. (The logo is hidden when the user is on a roaming network.) The operator logo corresponds to the [ServiceIconFile](serviceiconfile.md) element in the service metadata package schema. For more information about the logo requirements, see [Service Icon Requirements](https://msdn.microsoft.com/library/windows/hardware/dn236416).  
+  > [!IMPORTANT]
+  > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
 
--   **Mobile broadband app**  
-A UWP device app that is automatically downloaded and applied to the computer. This app can provide key experiences such as plan purchase, data usage, and help and support, and can highlight value-added services.
+- **Mobile broadband app**  
+  A UWP device app that is automatically downloaded and applied to the computer. This app can provide key experiences such as plan purchase, data usage, and help and support, and can highlight value-added services.
 
--   **MB Purchase Profile**  
-Purchase profile that is used for establishing limited connectivity for purchasing a subscription.
+- **MB Purchase Profile**  
+  Purchase profile that is used for establishing limited connectivity for purchasing a subscription.
 
-    If you are a GSM operator who has only one Purchase APN for all subscribers, you can use the service metadata to provision that to the computer. If you have multiple Purchase APNs, you should use account provisioning metadata to set the appropriate purchase APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
+  If you are a GSM operator who has only one Purchase APN for all subscribers, you can use the service metadata to provision that to the computer. If you have multiple Purchase APNs, you should use account provisioning metadata to set the appropriate purchase APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
 
--   **MB Internet profile**  
-Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. The Windows Connection Manager uses this profile for auto-connecting to the network.
+- **MB Internet profile**  
+  Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. The Windows Connection Manager uses this profile for auto-connecting to the network.
 
-    If you are a GSM operator who has only one Internet APN for all subscribers, you can use the service metadata to provision the computer. If you have multiple Internet APNs, you should use account provisioning metadata to set the appropriate internet APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
+  If you are a GSM operator who has only one Internet APN for all subscribers, you can use the service metadata to provision the computer. If you have multiple Internet APNs, you should use account provisioning metadata to set the appropriate internet APN. Or, you can do nothing and use the entries that are stored in the APN database to provide APN connectivity information.
 
--   **Certificate data**  
-Certificate information used for provisioning. This includes Certificate Issuer Name and Subject Name. This information is used to ensure that account provisioning operations that are initiated by a website are issued by a trusted operator.
+- **Certificate data**  
+  Certificate information used for provisioning. This includes Certificate Issuer Name and Subject Name. This information is used to ensure that account provisioning operations that are initiated by a website are issued by a trusted operator.
 
--   **Custom operator name**  
-The mobile broadband device typically provides the operator name, which Windows shows in Windows Connection Manager. You can override this name by specifying a custom name in metadata. This name displays only if the user is on a home network and is not on a roaming network. A displayed roaming network name is based on information that is received from the device. This corresponds to the [ServiceProvider](serviceprovider.md) element in the service package metadata schema.  
-> [!IMPORTANT]
-> In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
+- **Custom operator name**  
+  The mobile broadband device typically provides the operator name, which Windows shows in Windows Connection Manager. You can override this name by specifying a custom name in metadata. This name displays only if the user is on a home network and is not on a roaming network. A displayed roaming network name is based on information that is received from the device. This corresponds to the [ServiceProvider](serviceprovider.md) element in the service package metadata schema.  
+  > [!IMPORTANT]
+  > In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
 
--   **Device notification handler**  
-In general, an app must be run by the user at least one time before it can register work items with the System Event broker. However, mobile broadband apps might need to receive important events before the user can run the app. You can specify the [DeviceNotificationHandler](devicenotificationhandler.md) element in service metadata, which Windows will use to register some critical events. For more information about SMS notifications, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md).
+- **Device notification handler**  
+  In general, an app must be run by the user at least one time before it can register work items with the System Event broker. However, mobile broadband apps might need to receive important events before the user can run the app. You can specify the [DeviceNotificationHandler](devicenotificationhandler.md) element in service metadata, which Windows will use to register some critical events. For more information about SMS notifications, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md).
 
--   **List of privileged apps with access to mobile broadband restricted interfaces**  
-Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Microsoft Store.
+- **List of privileged apps with access to mobile broadband restricted interfaces**  
+  Mobile Broadband APIs and interfaces (including Account Provisioning and SMS) are restricted and available to mobile broadband apps only. A list of privileged apps that have access to these privileged APIs can be specified in the service metadata package in the [PrivilegedApplications](privilegedapplications.md) element. Privileged apps can be debugging or test apps; they are not required to be distributed through the Microsoft Store.
 
 ## <span id="Service_Metadata_Package_Structure"></span><span id="service_metadata_package_structure"></span><span id="SERVICE_METADATA_PACKAGE_STRUCTURE"></span>Service Metadata Package Structure
 
@@ -87,7 +87,7 @@ The components of a service metadata package are stored in a compressed cabinet 
 **Note**  
 Although the usual file extension of a cabinet file is **.cab**, the file extension for a service metadata package file must be **.devicemetadata-ms**. This is intended to underscore the fact that end-users must not decompress or modify these packages.
 
- 
+ 
 
 There are two types of service metadata packages: a single locale service metadata package and a multiple locale service metadata package.
 
@@ -146,9 +146,9 @@ The app should be designed to deal with a previous version of the metadata to wh
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md) provides guidelines about how to design the user experience to address common error cases, such as when the device is missing or not recognized.
 
- 
+ 
 
- 
+ 
 
 
 

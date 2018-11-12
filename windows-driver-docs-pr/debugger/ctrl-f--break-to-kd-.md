@@ -53,7 +53,7 @@ CTRL+F  ENTER
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ However, if you are debugging KD with CDB, these two keys will work differently.
 
 [**.breakin (Break to the Kernel Debugger)**](-breakin--break-to-the-kernel-debugger-.md)
 
- 
+ 
 
- 
+ 
 
 
 

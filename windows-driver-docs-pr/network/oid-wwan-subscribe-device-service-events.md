@@ -47,9 +47,9 @@ Requirements
 
 [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/hh439843)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ Where:
 
 Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to release-sign [driver packages](driver-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

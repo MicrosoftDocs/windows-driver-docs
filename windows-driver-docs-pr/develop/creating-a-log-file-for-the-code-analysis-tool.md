@@ -53,9 +53,9 @@ For the most up-to-date information about the requirements for the Driver Verifi
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
 * [How to run Code Analysis for drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454219)
- 
+ 
 
- 
+ 
 
 
 

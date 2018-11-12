@@ -54,9 +54,9 @@ If the client passed in call parameters that did not match those already establi
 
 The call to **Ndis(M)CmAddPartyComplete** causes NDIS to call the client's [**ProtocolClAddPartyComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570221) function. If the client's request to add the party succeeded and if the signaling protocol allows the call manager or MCM driver to modify the call parameters, *ProtocolClAddPartyComplete* should test the CALL\_PARAMETERS\_CHANGED flag in the buffered CO\_CALL\_PARAMETERS structure to determine whether the call parameters were modified. The signaling protocol determines what the client can do if it finds the modifications to CO\_CALL\_PARAMETERS unacceptable. Usually, a client calls [**NdisClDropParty**](https://msdn.microsoft.com/library/windows/hardware/ff561629) in this case (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).
 
- 
+ 
 
- 
+ 
 
 
 

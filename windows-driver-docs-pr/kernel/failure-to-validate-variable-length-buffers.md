@@ -80,9 +80,9 @@ The following shows a more complicated overflow problem:
 
 In this example, an integer overflow can occur during multiplication. If the size of the **SET\_VALUE\_INFO** structure is a multiple of 2, a **NumEntries** value such as 0x80000000 results in an overflow, when the bits are shifted left during multiplication. However, the buffer size will nevertheless pass the validation test, because the overflow causes **dwSize** to appear quite small. To avoid this problem, subtract the lengths as in the previous example, divide by **sizeof**(**SET\_VALUE\_INFO**), and compare the result with **NumEntries**.
 
- 
+ 
 
- 
+ 
 
 
 

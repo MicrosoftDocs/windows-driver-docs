@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -29,9 +29,9 @@ In *ProviderAbortDma*, the NetDMA provider should terminate the transfer immedia
 
 After the abort operation completes, the DMA channel must be ready for the NetDMA interface to call the [**ProviderStartDma**](https://msdn.microsoft.com/library/windows/hardware/ff570404) function. The NetDMA interface will not call the [**ProviderAppendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570394) function until after the transfer is restarted.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ This section describes the following audio port object interfaces:
 
 [IPortWMIRegistration](https://msdn.microsoft.com/library/windows/hardware/ff536935)
 
- 
+ 
 
- 
+ 
 
 
 

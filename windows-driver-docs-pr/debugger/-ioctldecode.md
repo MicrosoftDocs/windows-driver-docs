@@ -42,7 +42,7 @@ Specifies the hexadecimal IOCTL Code. The [**!irp**](-irp.md) command displays t
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -115,9 +115,9 @@ For more information about IOCTLs see [Introduction to I/O Control Codes](https:
 
 For more general information about IRPs and IOCTLs, refer to *Windows Internals* by Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -122,7 +122,7 @@ Capabilities of any of the following are accepted by the MF pipeline.
 </tbody>
 </table>
 
- 
+ 
 
 The following table contains the descriptions and requirements for the KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING structure fields for the ISO DDI. This structure is defined in ksmedia.h.
 
@@ -158,7 +158,7 @@ The following table contains the descriptions and requirements for the KSCAMERA\
 </tbody>
 </table>
 
- 
+ 
 
 **GET call**
 

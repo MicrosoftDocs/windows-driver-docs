@@ -20,9 +20,9 @@ The power policy owner for each device is responsible for determining when the d
 
 [Perform device-specific idle detection](performing-device-specific-idle-detection.md)
 
- 
+ 
 
- 
+ 
 
 
 

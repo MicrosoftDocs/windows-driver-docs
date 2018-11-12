@@ -30,7 +30,7 @@ The following steps show what happens when there is an audio device plugged into
 
 **Note**   If the audio device lacks jack presence detection, the **IsConnected** member must always be **TRUE**. To confirm whether the device supports jack presence detection, a client application can call [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](https://msdn.microsoft.com/library/windows/hardware/ff537138) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint supports jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
 
- 
+ 
 
 The following steps explain what happens if there is no audio device plugged into the jack when the driver is loaded:
 
@@ -49,7 +49,7 @@ To comply with the preceding description of the subdevice registration and unreg
 1.  Driver must call **PcRegisterSubdevice** to register a wave filter with Portcls.
     **Note**   The driver already called **PcRegisterSubdevice** on the topology filter when the driver was loaded with no device plugged into the jack.
 
-     
+     
 
 2.  The driver must call **PcRegisterPhysicalConnection** to register the "wave to topology filter" connection with Portcls.
 
@@ -63,9 +63,9 @@ To comply with the preceding description of the subdevice registration and unreg
 
 3.  Driver must set the **IsConnected** member of the **KSJACK\_DESCRIPTION** structure **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

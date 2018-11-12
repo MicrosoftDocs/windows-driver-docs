@@ -42,9 +42,9 @@ In such a case, you should examine the following:
 
     If the device is concurrently connected to the computer by two or more buses, two or more instances of the device can appear in the Devices and Printers UI. These instances can have one or more device instances for each bus to which the device is attached. To resolve this problem, make sure that the device reports a container ID or a device-specific unique identifier, and reports the same value on each bus.
 
- 
+ 
 
- 
+ 
 
 
 

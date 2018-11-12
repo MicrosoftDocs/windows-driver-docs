@@ -28,9 +28,9 @@ After an intermediate driver calls **NdisCloseAdapterEx**, it should fail any se
 
 For additional information about intermediate driver unbinding operations, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

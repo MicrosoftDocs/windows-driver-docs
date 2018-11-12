@@ -55,7 +55,7 @@ A caller can also call **DiInstallDriver** to do the following:
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
@@ -87,7 +87,7 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Suppress copying, renaming, or deleting installation files.
 
@@ -95,9 +95,9 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
- 
+ 
 
- 
+ 
 
 
 

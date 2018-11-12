@@ -48,7 +48,7 @@ The following table describes the three constants that are valid with the WIA\_D
 <tbody>
 <tr class="odd">
 <td><p>CAPTUREMODE_BURST</p></td>
-<td><p>Capture more than one image in quick succession as defined by the values of the [<strong>WIA_DPC_BURST_NUMBER</strong>](wia-dpc-burst-number.md) and [<strong>WIA_DPC_BURST_INTERVAL</strong>](wia-dpc-burst-interval.md) properties.</p></td>
+<td><p>Capture more than one image in quick succession as defined by the values of the <a href="wia-dpc-burst-number.md" data-raw-source="[&lt;strong&gt;WIA_DPC_BURST_NUMBER&lt;/strong&gt;](wia-dpc-burst-number.md)"><strong>WIA_DPC_BURST_NUMBER</strong></a> and <a href="wia-dpc-burst-interval.md" data-raw-source="[&lt;strong&gt;WIA_DPC_BURST_INTERVAL&lt;/strong&gt;](wia-dpc-burst-interval.md)"><strong>WIA_DPC_BURST_INTERVAL</strong></a> properties.</p></td>
 </tr>
 <tr class="even">
 <td><p>CAPTUREMODE_NORMAL</p></td>
@@ -56,12 +56,12 @@ The following table describes the three constants that are valid with the WIA\_D
 </tr>
 <tr class="odd">
 <td><p>CAPTUREMODE_TIMELAPSE</p></td>
-<td><p>Capture more than one image in succession as defined by the [<strong>WIA_DPC_TIMELAPSE_NUMBER</strong>](wia-dpc-timelapse-number.md) and [<strong>WIA_DPC_TIMELAPSE_INTERVAL</strong>](wia-dpc-timelapse-interval.md) properties.</p></td>
+<td><p>Capture more than one image in succession as defined by the <a href="wia-dpc-timelapse-number.md" data-raw-source="[&lt;strong&gt;WIA_DPC_TIMELAPSE_NUMBER&lt;/strong&gt;](wia-dpc-timelapse-number.md)"><strong>WIA_DPC_TIMELAPSE_NUMBER</strong></a> and <a href="wia-dpc-timelapse-interval.md" data-raw-source="[&lt;strong&gt;WIA_DPC_TIMELAPSE_INTERVAL&lt;/strong&gt;](wia-dpc-timelapse-interval.md)"><strong>WIA_DPC_TIMELAPSE_INTERVAL</strong></a> properties.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -94,9 +94,9 @@ Requirements
 
 [**WIA\_DPC\_TIMELAPSE\_NUMBER**](wia-dpc-timelapse-number.md)
 
- 
+ 
 
- 
+ 
 
 
 

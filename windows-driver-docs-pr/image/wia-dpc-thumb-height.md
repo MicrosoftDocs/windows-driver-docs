@@ -61,9 +61,9 @@ Requirements
 
 [**WIA\_DPC\_THUMB\_WIDTH**](wia-dpc-thumb-width.md)
 
- 
+ 
 
- 
+ 
 
 
 

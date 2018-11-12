@@ -53,9 +53,9 @@ Starting from the bottom of the figure, the following describes each device obje
 
     This figure shows a filter DO created by a disk-encryption filter driver and attached to the disk PDO for partition 1.
 
- 
+ 
 
- 
+ 
 
 
 

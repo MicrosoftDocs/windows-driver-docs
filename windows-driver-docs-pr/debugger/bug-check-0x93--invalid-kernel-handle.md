@@ -56,16 +56,16 @@ The INVALID\_KERNEL\_HANDLE bug check has a value of 0x00000093. This bug check 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The INVALID\_KERNEL\_HANDLE bug check indicates that some kernel code (for example, a server, redirector, or another driver) tried to close an invalid handle or a protected handle.
 
- 
+ 
 
- 
+ 
 
 
 

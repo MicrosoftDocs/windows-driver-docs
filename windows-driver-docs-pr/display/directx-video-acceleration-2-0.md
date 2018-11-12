@@ -26,7 +26,7 @@ The following topics discuss Microsoft DirectX Video Acceleration (VA) version 2
 
 [Extended Support for DirectX VA 2.0](extended-support-for-directx-va-2-0.md)
 
- 
+ 
 ## DirectX Video Acceleration 2.0 Structures and Enumerations
 
 This section describes structures and enumeration types that are used by the DirectX Video Acceleration (VA) 2.0 user-mode display driver functions.
@@ -71,7 +71,7 @@ DXVAHDDDI_STREAM_STATE_ROTATION_DATA|DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
 DXVAHDDDI_SURFACE|DXVAHDDDI_VPCAPS
 DXVAHDDDI_VPDEVCAPS|
 
- 
+ 
 
 
 

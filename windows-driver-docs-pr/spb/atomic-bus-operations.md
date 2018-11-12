@@ -70,9 +70,9 @@ Other patterns of requests might be used instead to perform this read-modify-wri
 
 To perform a read-modify-write on function address 0 in this device, the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request in step 1 of the previous list can be replaced by a simple read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794)) request.
 
- 
+ 
 
- 
+ 
 
 
 

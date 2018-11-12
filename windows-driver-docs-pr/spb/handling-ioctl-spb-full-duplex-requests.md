@@ -141,9 +141,9 @@ MyDriverPerformFullDuplexTransfer(
 
 After checking the parameter values, the preceding code example calls a driver-internal routine, named `MyDriverPerformFullDuplexTransfer`, to initiate the full-duplex I/O transfer.
 
- 
+ 
 
- 
+ 
 
 
 

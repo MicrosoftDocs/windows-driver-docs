@@ -34,37 +34,37 @@ The type of miniport driver that you develop is determined by your target Window
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[WaveCyclic](wavecyclic-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavecyclic-miniport-driver.md" data-raw-source="[WaveCyclic](wavecyclic-miniport-driver.md)">WaveCyclic</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[WavePci](wavepci-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavepci-miniport-driver.md" data-raw-source="[WavePci](wavepci-miniport-driver.md)">WavePci</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[WaveRT](wavert-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavert-miniport-driver.md" data-raw-source="[WaveRT](wavert-miniport-driver.md)">WaveRT</a></p></td>
 <td align="left"></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Topology](topology-miniport-driver.md)</p></td>
+<td align="left"><p><a href="topology-miniport-driver.md" data-raw-source="[Topology](topology-miniport-driver.md)">Topology</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[MIDI](midi-miniport-driver.md)</p></td>
+<td align="left"><p><a href="midi-miniport-driver.md" data-raw-source="[MIDI](midi-miniport-driver.md)">MIDI</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DMus](dmus-miniport-driver.md)</p></td>
+<td align="left"><p><a href="dmus-miniport-driver.md" data-raw-source="[DMus](dmus-miniport-driver.md)">DMus</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
@@ -72,24 +72,24 @@ The type of miniport driver that you develop is determined by your target Window
 </tbody>
 </table>
 
- 
+ 
 
 Each port driver implements an interface, which it presents to the miniport driver. To communicate with the port driver, the miniport driver must also implement an interface. For more information about the interfaces that are implemented by the miniport drivers, see [Miniport Interfaces](miniport-interfaces.md).
 
 **Note**   In Windows Vista, audio stream processing for system effects is not provided by the audio driver. Audio stream processing is provided by user mode components called [system effects audio processing objects](system-effects-audio-processing-objects.md) (sAPOS).
 
- 
+ 
 
 **Note**   When you develop audio drivers for Windows Vista and later operating systems, be aware of the following:
 -   You cannot obtain a logo qualification for a WaveCyclic- or a WavePci -based audio driver.
 
 -   There is no support for kernel-mode software synthesizers for DMus. However, support is provided for hardware MIDI I/O.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

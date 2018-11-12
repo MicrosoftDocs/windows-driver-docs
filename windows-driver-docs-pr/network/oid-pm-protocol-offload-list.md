@@ -64,9 +64,9 @@ Requirements
 
 [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760)
 
- 
+ 
 
- 
+ 
 
 
 

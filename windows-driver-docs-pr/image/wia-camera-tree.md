@@ -33,9 +33,9 @@ Through the WIA service, an application can request the following from a camera 
 
 In the preceding diagram, the camera root item has three child items: two pictures and one folder. The folder has two child items that are both pictures. Camera items can also represent sound data or any other data on the camera that the device presents to the application.
 
- 
+ 
 
- 
+ 
 
 
 

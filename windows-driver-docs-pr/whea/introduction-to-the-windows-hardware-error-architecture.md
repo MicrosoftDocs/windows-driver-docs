@@ -32,9 +32,9 @@ As a result, WHEA provides the following benefits:
 
 -   Provides extensibility, so that as hardware vendors add new and better hardware error reporting mechanisms to their devices, WHEA allows the operating system to gracefully accommodate the new mechanisms.
 
- 
+ 
 
- 
+ 
 
 
 

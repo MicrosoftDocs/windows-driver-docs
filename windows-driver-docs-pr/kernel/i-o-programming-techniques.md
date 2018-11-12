@@ -28,9 +28,9 @@ This section describes programming techniques that can be used to work with obje
 
 For architectural information on the I/O manager, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md). For reference information on I/O manager, see [I/O Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff551797).
 
- 
+ 
 
- 
+ 
 
 
 

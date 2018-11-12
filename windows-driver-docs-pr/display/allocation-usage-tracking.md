@@ -61,9 +61,9 @@ On some ARM platforms, I/O coherency is not supported directly in hardware. On t
 
 On platform with no I/O coherency, the responsibility to track CPU and GPU access to allocations falls to the user mode driver. The graphics kernel exposes a new *Invalidate Cache*DDI that the user mode driver may use to write back and invalidate the virtual address range associated with a cacheable allocation. On platforms which do not have support for I/O coherency, the user mode driver will be required to call this function after CPU write and before GPU read as well as after write and before CPU read. The latter may seem unintuitive at first, but since the CPU could have speculatively read data prior to the GPU write making it to memory, it is necessary to invalidate all CPU caches to ensure the CPU re-reads data from RAM.
 
- 
+ 
 
- 
+ 
 
 
 

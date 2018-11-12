@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -37,9 +37,9 @@ This section includes the following topics:
 
 [Invoking a Device Properties Dialog Box](invoking-a-device-properties-dialog-box.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 To make a smart card reader driver visible to Device Manager, you must put the indicated registry values under the following key:
 
-**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\***SmartCardDriver*
+**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\**<em>SmartCardDriver</em>
 
 The required values are listed in the following table.
 
@@ -60,11 +60,11 @@ The required values are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

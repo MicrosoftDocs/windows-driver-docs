@@ -61,7 +61,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -80,9 +80,9 @@ The WSD Scan Service sends a **JobCompletedState** element to the client within 
 
 [**JobState**](jobstate.md)
 
- 
+ 
 
- 
+ 
 
 
 

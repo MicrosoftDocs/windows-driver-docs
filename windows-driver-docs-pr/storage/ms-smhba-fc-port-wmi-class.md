@@ -54,9 +54,9 @@ When this class definition is compiled by the WMI tool suite, it produces the fo
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

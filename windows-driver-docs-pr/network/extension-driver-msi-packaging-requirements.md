@@ -32,11 +32,11 @@ The MSI file must meet the following requirements:
 | **MinApplicableOSVersion**      | Required | **String** | The minimum version of the Windows operating system that this extension will run on. See Operating System Version for operating system version numbers. Note that the Hyper-V Extensible Switch feature was added in Windows Server 2012, so the lowest valid value for this field is "6.2".                                                                                                                                                                                                                    |
 | **MaxApplicableOSVersion**      | Optional | **String** | The maximum version of the Windows operating system that this extension will run on. See [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832) for operating system version numbers. Note that the Hyper-V Extensible Switch feature was added in Windows Server 2012, so the lowest valid value for this field is "6.2" or the value of **MinApplicableOSVersion**, whichever is higher. This field is optional. If no value is specified, the extension will run on **MinApplicableOSVersion** and later. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

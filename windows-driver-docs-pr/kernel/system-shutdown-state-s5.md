@@ -32,9 +32,9 @@ Long and undefined. Only physical interaction, such as the user pressing the ON 
 <a href="" id="system-hardware-context"></a>**System hardware context**  
 None retained.
 
- 
+ 
 
- 
+ 
 
 
 

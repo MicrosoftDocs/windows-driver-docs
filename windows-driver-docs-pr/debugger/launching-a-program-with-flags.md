@@ -35,11 +35,11 @@ This feature runs a program once with the specified flags. These settings affect
 **Note**   Flags set in the registry do not affect the instance of the program that is launched.
 Flags set in the dialog box are used for the launched instance even when they are not image file flags.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

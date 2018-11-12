@@ -82,7 +82,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -148,9 +148,9 @@ Requirements
 
 [**RxReleaseFcbResourceForThreadInMRx**](https://msdn.microsoft.com/library/windows/hardware/ff554694)
 
- 
+ 
 
- 
+ 
 
 
 

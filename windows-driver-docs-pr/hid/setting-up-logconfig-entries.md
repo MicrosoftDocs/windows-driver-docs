@@ -22,9 +22,9 @@ In DirectX 3.0, changes were implemented to allow an OEM VxD to be called in pla
 
 If the first four devices during boot are all handled by minidrivers (which may be an OEM global driver), VJoyD does not check for -- and is not able to use -- any game ports, even if these devices are no longer handled by minidrivers. If VJoyD cannot use its ports (or if no game ports exist), returning JOY\_OEMPOLLRC\_YOUPOLL to a poll request does not cause the standard polling to be used. Reconfiguring back to devices using this polling takes effect only after the game port resources have been reallocated (probably not until a reboot).
 
- 
+ 
 
- 
+ 
 
 
 

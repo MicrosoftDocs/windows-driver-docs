@@ -54,7 +54,7 @@ A neighbor state object contains the following constant, cached, and delegated v
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -74,12 +74,12 @@ A neighbor state object contains the following constant, cached, and delegated v
 </tr>
 <tr class="even">
 <td align="left"><p><em>HostReachabilityDelta</em></p></td>
-<td align="left"><p>The host stack's current time minus the value of <em>HostReachabilityDelta</em>, in units of clock ticks, is the last time that the host stack confirmed neighbor reachability (see forward reachability in RFC 2461). For more information about how the offload target uses this variable, see [<strong>NdisMOffloadEventIndicate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563619).</p></td>
+<td align="left"><p>The host stack&#39;s current time minus the value of <em>HostReachabilityDelta</em>, in units of clock ticks, is the last time that the host stack confirmed neighbor reachability (see forward reachability in RFC 2461). For more information about how the offload target uses this variable, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619" data-raw-source="[&lt;strong&gt;NdisMOffloadEventIndicate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563619)"><strong>NdisMOffloadEventIndicate</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -95,12 +95,12 @@ A neighbor state object contains the following constant, cached, and delegated v
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>NicReachabilityDelta</em></p></td>
-<td align="left"><p>The NIC's current time minus the value of <em>NicReachabilityDelta</em>, in units of clock ticks, is the last time that the offload target confirmed neighbor reachability (see forward reachability in RFC 2461). For more information about how the offload target uses this variable, see [<strong>NdisMOffloadEventIndicate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563619).</p></td>
+<td align="left"><p>The NIC&#39;s current time minus the value of <em>NicReachabilityDelta</em>, in units of clock ticks, is the last time that the offload target confirmed neighbor reachability (see forward reachability in RFC 2461). For more information about how the offload target uses this variable, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619" data-raw-source="[&lt;strong&gt;NdisMOffloadEventIndicate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563619)"><strong>NdisMOffloadEventIndicate</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Path State Object
 
@@ -119,17 +119,17 @@ A path state object contains the following constant, cached, and delegated varia
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><em>*SourceAddress</em></p></td>
+<td align="left"><p><em><em>SourceAddress</em></p></td>
 <td align="left"><p>A pointer to the source IP address of a TCP connection. If the TCP connection is over IPv4, the address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6 address. The source address bytes are always in network byte order.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>*DestinationAddress</em></p></td>
+<td align="left"><p><em></em>DestinationAddress</em></p></td>
 <td align="left"><p>A pointer to the destination IP address of a TCP connection. If the TCP connection is over IPv4, the address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6 address. The destination address bytes are always in network byte order.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -150,7 +150,7 @@ A path state object contains the following constant, cached, and delegated varia
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -171,7 +171,7 @@ A path state object contains the following constant, cached, and delegated varia
 </tbody>
 </table>
 
- 
+ 
 
 ### TCP State Object
 
@@ -218,12 +218,12 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>HashValue</em></p></td>
-<td align="left"><p>A 32-bit hash value that the offload target uses for [Receive Side Scaling](ndis-receive-side-scaling2.md) processing if the offload target supports RSS</p></td>
+<td align="left"><p>A 32-bit hash value that the offload target uses for <a href="ndis-receive-side-scaling2.md" data-raw-source="[Receive Side Scaling](ndis-receive-side-scaling2.md)">Receive Side Scaling</a> processing if the offload target supports RSS</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -252,7 +252,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>RcvIndicationSize</em></p></td>
-<td align="left"><p>The optimum number of data bytes that the offload target should supply in a single call to the [<strong>NdisTcpOffloadReceiveHandler</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564606) function</p></td>
+<td align="left"><p>The optimum number of data bytes that the offload target should supply in a single call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564606" data-raw-source="[&lt;strong&gt;NdisTcpOffloadReceiveHandler&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564606)"><strong>NdisTcpOffloadReceiveHandler</strong></a> function</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>KaProbeCount</em></p></td>
@@ -289,7 +289,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -321,15 +321,15 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>SndUna</em></p></td>
-<td align="left"><p>The sequence number for the first byte of unacknowledged data (SND.UNA in RFC 793). For more information, see [Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md).</p></td>
+<td align="left"><p>The sequence number for the first byte of unacknowledged data (SND.UNA in RFC 793). For more information, see <a href="send-data-that-contains-data-to-be-retransmitted.md" data-raw-source="[Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md)">Send Data That Contains Data to Be Retransmitted</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>SndNxt</em></p></td>
-<td align="left"><p>The sequence number for the next byte to send on the connection (SND.NXT in RFC 793). For more information, see [Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md).</p></td>
+<td align="left"><p>The sequence number for the next byte to send on the connection (SND.NXT in RFC 793). For more information, see <a href="send-data-that-contains-data-to-be-retransmitted.md" data-raw-source="[Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md)">Send Data That Contains Data to Be Retransmitted</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>SndMax</em></p></td>
-<td align="left"><p>The maximum sequence number that has been sent on the connection. For more information, see [Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md).</p></td>
+<td align="left"><p>The maximum sequence number that has been sent on the connection. For more information, see <a href="send-data-that-contains-data-to-be-retransmitted.md" data-raw-source="[Send Data That Contains Data to Be Retransmitted](send-data-that-contains-data-to-be-retransmitted.md)">Send Data That Contains Data to Be Retransmitted</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>SndWnd</em></p></td>
@@ -381,7 +381,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="even">
 <td align="left"><p><em>SndWndProbeCount</em></p></td>
-<td align="left"><p>The current send window probe round. For a description of the send window probe round, see [Persist Timer](persist-timer.md)</p></td>
+<td align="left"><p>The current send window probe round. For a description of the send window probe round, see <a href="persist-timer.md" data-raw-source="[Persist Timer](persist-timer.md)">Persist Timer</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>Keepalive ProbeCount</em></p></td>
@@ -401,11 +401,11 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>SendDataHead</em></p></td>
-<td align="left"><p>A pointer to the first [<strong>NET_BUFFER_LIST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure whose [<strong>NET_BUFFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure has send data associated with it. This variable is used only in an initiate offload or terminate offload operation. For more information about handling such send data, see [Handling Outstanding Send Data During and After an Offload Operation](handling-outstanding-send-data-during-and-after-an-offload-operation.md) and [Handling Outstanding Send Data During a Terminate Offload Operation](handling-outstanding-send-data-during-a-terminate-offload-operation.md).</p></td>
+<td align="left"><p>A pointer to the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388" data-raw-source="[&lt;strong&gt;NET_BUFFER_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568388)"><strong>NET_BUFFER_LIST</strong></a> structure whose <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376" data-raw-source="[&lt;strong&gt;NET_BUFFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568376)"><strong>NET_BUFFER</strong></a> structure has send data associated with it. This variable is used only in an initiate offload or terminate offload operation. For more information about handling such send data, see <a href="handling-outstanding-send-data-during-and-after-an-offload-operation.md" data-raw-source="[Handling Outstanding Send Data During and After an Offload Operation](handling-outstanding-send-data-during-and-after-an-offload-operation.md)">Handling Outstanding Send Data During and After an Offload Operation</a> and <a href="handling-outstanding-send-data-during-a-terminate-offload-operation.md" data-raw-source="[Handling Outstanding Send Data During a Terminate Offload Operation](handling-outstanding-send-data-during-a-terminate-offload-operation.md)">Handling Outstanding Send Data During a Terminate Offload Operation</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>SendDataTail</em></p></td>
-<td align="left"><p>A pointer to the last NET_BUFFER_LIST structure whose NET_BUFFER structure has send data associated with it. This variable is used only in an initiate offload or terminate offload operation. For more information about handling such send data, see [Handling Outstanding Send Data During and After an Offload Operation](handling-outstanding-send-data-during-and-after-an-offload-operation.md) and [Handling Outstanding Send Data During a Terminate Offload Operation](handling-outstanding-send-data-during-a-terminate-offload-operation.md).</p></td>
+<td align="left"><p>A pointer to the last NET_BUFFER_LIST structure whose NET_BUFFER structure has send data associated with it. This variable is used only in an initiate offload or terminate offload operation. For more information about handling such send data, see <a href="handling-outstanding-send-data-during-and-after-an-offload-operation.md" data-raw-source="[Handling Outstanding Send Data During and After an Offload Operation](handling-outstanding-send-data-during-and-after-an-offload-operation.md)">Handling Outstanding Send Data During and After an Offload Operation</a> and <a href="handling-outstanding-send-data-during-a-terminate-offload-operation.md" data-raw-source="[Handling Outstanding Send Data During a Terminate Offload Operation](handling-outstanding-send-data-during-a-terminate-offload-operation.md)">Handling Outstanding Send Data During a Terminate Offload Operation</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>SendBacklogSize</em></p></td>
@@ -413,7 +413,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="even">
 <td align="left"><p><em>BufferedData</em></p></td>
-<td align="left"><p>A pointer to buffered receive data. The host stack can pass such data to the offload target when offloading a TCP connection. (For more information about handling such buffered receive data, see [Handling Buffered Receive Data During and After an Offload Operation](handling-buffered-receive-data-during-and-after-an-offload-operation.md).) The offload target can pass such data to the host stack when uploading a TCP connection. (For more information about handling such buffered receive data, see [Handling Buffered Receive Data During a Terminate Offload Operation](handling-buffered-receive-data-during-a-terminate-offload-operation.md).) This variable is used only in an initiate offload or terminate offload operation.</p></td>
+<td align="left"><p>A pointer to buffered receive data. The host stack can pass such data to the offload target when offloading a TCP connection. (For more information about handling such buffered receive data, see <a href="handling-buffered-receive-data-during-and-after-an-offload-operation.md" data-raw-source="[Handling Buffered Receive Data During and After an Offload Operation](handling-buffered-receive-data-during-and-after-an-offload-operation.md)">Handling Buffered Receive Data During and After an Offload Operation</a>.) The offload target can pass such data to the host stack when uploading a TCP connection. (For more information about handling such buffered receive data, see <a href="handling-buffered-receive-data-during-a-terminate-offload-operation.md" data-raw-source="[Handling Buffered Receive Data During a Terminate Offload Operation](handling-buffered-receive-data-during-a-terminate-offload-operation.md)">Handling Buffered Receive Data During a Terminate Offload Operation</a>.) This variable is used only in an initiate offload or terminate offload operation.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>ReceiveBacklogSize</em></p></td>
@@ -422,11 +422,11 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

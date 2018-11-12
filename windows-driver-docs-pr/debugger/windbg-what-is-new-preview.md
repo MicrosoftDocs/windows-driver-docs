@@ -85,14 +85,14 @@ This version includes these updates.
 - Minor changes and bug fixes
 
 ---
- 
+ 
 ## See Also
 
 
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

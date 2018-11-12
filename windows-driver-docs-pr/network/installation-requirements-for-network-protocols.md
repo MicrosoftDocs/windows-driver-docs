@@ -29,39 +29,39 @@ This topic summarizes the installation requirements for network protocols.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Version Section](version-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="version-section-in-a-network-inf-file.md" data-raw-source="[Version Section](version-section-in-a-network-inf-file.md)">Version Section</a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p><strong>Class</strong>= NetTrans</p>
 <p><strong>ClassGuid</strong>= {4D36E975-E325-11CE-BFC1-08002BE10318}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>INF SourceDisksNames Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547478) and [<strong>INF SourceDisksFiles Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547472)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547478" data-raw-source="[&lt;strong&gt;INF SourceDisksNames Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547478)"><strong>INF SourceDisksNames Section</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547472" data-raw-source="[&lt;strong&gt;INF SourceDisksFiles Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547472)"><strong>INF SourceDisksFiles Section</strong></a></p></td>
 <td align="left"><p>Required if ...</p></td>
 <td align="left"><p>Required if the INF file is not distributed with Windows 2000. If the INF file is distributed with Windows 2000, a <strong>LayoutFile</strong> entry must be specified in the <strong>Version</strong> section, and the <strong>SourceDisksNames</strong> and <strong>SourceDisksFiles</strong> sections are not used.</p>
 <p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>INF DestinationDirs Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547383)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547383" data-raw-source="[&lt;strong&gt;INF DestinationDirs Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547383)"><strong>INF DestinationDirs Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[ControlFlags Section](controlflags-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="controlflags-section-in-a-network-inf-file.md" data-raw-source="[ControlFlags Section](controlflags-section-in-a-network-inf-file.md)">ControlFlags Section</a></p></td>
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>INF Manufacturer Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547454)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547454" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547454)"><strong>INF Manufacturer Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Models Section](models-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="models-section-in-a-network-inf-file.md" data-raw-source="[Models Section](models-section-in-a-network-inf-file.md)">Models Section</a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>The <em>hw-id</em> should consist of a provider name followed by an underscore and a manufacturer name or the product name, for example: MS_DLC.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DDInstall Section](ddinstall-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="ddinstall-section-in-a-network-inf-file.md" data-raw-source="[DDInstall Section](ddinstall-section-in-a-network-inf-file.md)">DDInstall Section</a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p><strong>Characteristics</strong> entry</p>
 <p>Allowable values:</p>
@@ -71,16 +71,16 @@ This topic summarizes the installation requirements for network protocols.
 <p>NCF_HAS_UI</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="ddinstall-services-section-in-a-network-inf-file.md" data-raw-source="[DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md)">DDInstall.Services Section</a></p></td>
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Add-registry-sections](add-registry-sections-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="add-registry-sections-in-a-network-inf-file.md" data-raw-source="[Add-registry-sections](add-registry-sections-in-a-network-inf-file.md)">Add-registry-sections</a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>Required:</p>
 <p>Creating the Ndi Key</p>
-<p>[Specifying Binding Interfaces](specifying-binding-interfaces.md)</p>
+<p><a href="specifying-binding-interfaces.md" data-raw-source="[Specifying Binding Interfaces](specifying-binding-interfaces.md)">Specifying Binding Interfaces</a></p>
 <p>Allowable binding interfaces:</p>
 <p><strong>UpperRange</strong>:</p>
 <p>netbios, ipx, tdi, winsock, noupper</p>
@@ -90,35 +90,35 @@ This topic summarizes the installation requirements for network protocols.
 <tr class="even">
 <td align="left"></td>
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[Setting static parameters for the component](setting-static-parameters.md)</p>
-<p>[Requiring the Installation of Another Network Component](requiring-the-installation-of-another-network-component.md)</p>
-<p>[Specifying service-related values](adding-service-related-values-to-the-ndi-key.md)</p>
-<p>[Adding a HelpText Value](adding-a-helptext-value.md)</p>
-<p>[Adding Registry Values for a Notify Object](adding-registry-values-for-a-notify-object.md)</p></td>
+<td align="left"><p><a href="setting-static-parameters.md" data-raw-source="[Setting static parameters for the component](setting-static-parameters.md)">Setting static parameters for the component</a></p>
+<p><a href="requiring-the-installation-of-another-network-component.md" data-raw-source="[Requiring the Installation of Another Network Component](requiring-the-installation-of-another-network-component.md)">Requiring the Installation of Another Network Component</a></p>
+<p><a href="adding-service-related-values-to-the-ndi-key.md" data-raw-source="[Specifying service-related values](adding-service-related-values-to-the-ndi-key.md)">Specifying service-related values</a></p>
+<p><a href="adding-a-helptext-value.md" data-raw-source="[Adding a HelpText Value](adding-a-helptext-value.md)">Adding a HelpText Value</a></p>
+<p><a href="adding-registry-values-for-a-notify-object.md" data-raw-source="[Adding Registry Values for a Notify Object](adding-registry-values-for-a-notify-object.md)">Adding Registry Values for a Notify Object</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Remove Section](remove-section-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="remove-section-in-a-network-inf-file.md" data-raw-source="[Remove Section](remove-section-in-a-network-inf-file.md)">Remove Section</a></p></td>
 <td align="left"><p>Optional</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Winsock Sections](winsock-sections-in-a-network-inf-file.md)</p></td>
+<td align="left"><p><a href="winsock-sections-in-a-network-inf-file.md" data-raw-source="[Winsock Sections](winsock-sections-in-a-network-inf-file.md)">Winsock Sections</a></p></td>
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>For a protocol that provides a Winsock interface, a <strong>Winsock-install</strong> section is required and a <strong>Winsock-remove</strong> section is optional.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>INF Strings Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547485)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547485" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547485)"><strong>INF Strings Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

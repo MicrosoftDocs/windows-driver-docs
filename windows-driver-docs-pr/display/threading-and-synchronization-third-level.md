@@ -32,9 +32,9 @@ The Windows Display Driver Model (WDDM) guarantees that the following calls into
 
 -   [*DxgkDdiUnload*](https://msdn.microsoft.com/library/windows/hardware/ff560801)
 
- 
+ 
 
- 
+ 
 
 
 

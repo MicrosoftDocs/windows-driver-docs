@@ -35,17 +35,17 @@ The [KSEVENTSETID\_VPNotify](https://msdn.microsoft.com/library/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSEVENT_VPNOTIFY_FORMATCHANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561933)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561933" data-raw-source="[&lt;strong&gt;KSEVENT_VPNOTIFY_FORMATCHANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561933)"><strong>KSEVENT_VPNOTIFY_FORMATCHANGE</strong></a></p></td>
 <td><p>Notifies DirectShow of a change in the video port configuration, such as a change in resolution from 640x480 to 720x480.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

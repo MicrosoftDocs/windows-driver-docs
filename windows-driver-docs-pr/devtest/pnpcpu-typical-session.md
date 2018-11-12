@@ -32,9 +32,9 @@ Restart the system either by executing shutdown from the command line, or from a
 
 After you restart your computer, Windows will only be using one logical processor. You can confirm this in Device Manager by finding processors with error code 28.
 
- 
+ 
 
- 
+ 
 
 
 

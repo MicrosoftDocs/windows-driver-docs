@@ -32,9 +32,9 @@ Because WOW64 cannot process opaque or untyped data structures such as the [**D3
 
 -   Even if variable width members are not present, you might need to consider architecture-specific alignment requirements. For instance, on x64, a UINT64 (or QWORD) should be 8-byte aligned. Because a 32-bit user-mode display driver compiled by a standard 32-bit compiler might not align these native 64-bit types correctly, the 64-bit display miniport driver might not be able to accurately access data from the 32-bit user-mode display driver. However, you can force alignment by using the appropriate **pragma** compiler directives. Although using **pragma** compiler directives might cause a slight waste of space on 32-bit operating systems, this lets you use identical 32-bit user-mode display drivers on 32-bit and 64-bit operating systems. If you cannot force alignment by using the appropriate **pragma** compiler directives, the 32-bit user-mode display driver that runs using WOW64 on a 64-bit operating system must be different from the 32-bit user-mode display driver running on a 32-bit operating system.
 
- 
+ 
 
- 
+ 
 
 
 

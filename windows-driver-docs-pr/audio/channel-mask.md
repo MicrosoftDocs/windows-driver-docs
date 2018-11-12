@@ -113,7 +113,7 @@ The following table shows the meaning of each mask bit in the preceding figure.
 </tbody>
 </table>
 
- 
+ 
 
 For example, the **7.1 home theater speakers** configuration is described by a channel mask value of 0x63F, which indicates that the eight channels in the stream are assigned to the following speaker positions (and in the following order): FL, FR, FC, LFE, BL, BR, SL, and SR. For another example, the **7.1 wide configuration speakers** configuration is described by a channel mask value of 0xFF, which indicates that the eight channels in the stream are assigned to the following speaker positions: FL, FR, FC, LFE, BL, BR, FLC, and FRC.
 
@@ -125,9 +125,9 @@ The left side of the preceding figure shows the recording of audio content into 
 
 The right side of the preceding figure shows the same 7.1-channel stream being played back through an eight-speaker surround configuration. In this case, each small, black rectangle represents a speaker. Seven of the speakers are mapped to positions on the grid surrounding the listener. The mapping does not assign a grid position to the LFE speaker (subwoofer); this omission is based on the assumption that these speakers typically produce only low-frequency sounds, which are nondirectional.
 
- 
+ 
 
- 
+ 
 
 
 

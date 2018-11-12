@@ -55,9 +55,9 @@ The DMus miniport driver in the preceding figure identifies its DirectMusic inpu
 
 In addition, if the driver were to support a MIDI input pin for the synthesizer, its definition would be similar to that of the DirectMusic input pin, but the pin definition would specify a subformat of type KSDATAFORMAT\_SUBTYPE\_MIDI, and the pin would accept a raw MIDI stream rather than a time-stamped MIDI stream.
 
- 
+ 
 
- 
+ 
 
 
 

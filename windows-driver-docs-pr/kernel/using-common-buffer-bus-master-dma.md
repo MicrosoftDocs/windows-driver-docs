@@ -46,9 +46,9 @@ Otherwise, the driver can use the allocated common buffer as a driver- and adapt
 
 When the PnP manager sends an IRP that stops or removes the device, the driver must call [**FreeCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff546511) to release each common buffer it has allocated.
 
- 
+ 
 
- 
+ 
 
 
 

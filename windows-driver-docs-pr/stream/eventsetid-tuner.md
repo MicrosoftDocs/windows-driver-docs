@@ -22,11 +22,11 @@ The following event items in this set are specified in the KSEVENT\_TUNER enumer
 
 **Note**   The KSEVENT\_TUNER\_INITIATE\_SCAN event is new for Windows Vista.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

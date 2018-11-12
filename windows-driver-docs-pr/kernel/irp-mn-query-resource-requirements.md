@@ -82,9 +82,9 @@ Requirements
 
 [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff550609)
 
- 
+ 
 
- 
+ 
 
 
 

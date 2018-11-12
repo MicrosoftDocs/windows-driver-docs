@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT32 elements. The array must contain 1 or
 |------------|---------------------------------------------|
 | UINT32\[\] | A list of channel widths, specified in MHz. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

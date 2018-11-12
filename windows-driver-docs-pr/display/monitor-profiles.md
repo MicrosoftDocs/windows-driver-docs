@@ -92,7 +92,7 @@ Although you can create custom monitor profiles using third-party tools, you may
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Installing_a_Monitor_Profile"></span><span id="installing_a_monitor_profile"></span><span id="INSTALLING_A_MONITOR_PROFILE"></span>Installing a Monitor Profile
 
@@ -124,9 +124,9 @@ A monitor profile, unlike a printer profile, supports very little communication 
 
 7.  The display driver (or video hardware) performs gamma correction to the image.
 
- 
+ 
 
- 
+ 
 
 
 

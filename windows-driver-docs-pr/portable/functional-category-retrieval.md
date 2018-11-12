@@ -63,9 +63,9 @@ HRESULT WpdCapabilities::OnGetFunctionalCategories(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

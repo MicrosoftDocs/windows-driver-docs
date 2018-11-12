@@ -30,9 +30,9 @@ When certain SCSI errors occur, the system port driver freezes the appropriate L
 
 If an HBA supports command queuing, as indicated in the returned STORAGE\_ADAPTER\_DESCRIPTOR data, the class driver sets SRB\_FLAGS\_QUEUE\_ENABLE and uses the **QueueAction** member of the SRBs it creates to control how its requests are queued.
 
- 
+ 
 
- 
+ 
 
 
 

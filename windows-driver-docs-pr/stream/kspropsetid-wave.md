@@ -32,9 +32,9 @@ The following properties are defined:
 
 [**KSPROPERTY\_WAVE\_PAN**](ksproperty-wave-pan.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Heights</strong>](heights.md)</p></td>
+<td><p><a href="heights.md" data-raw-source="[&lt;strong&gt;Heights&lt;/strong&gt;](heights.md)"><strong>Heights</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Widths</strong>](widths.md)</p></td>
+<td><p><a href="widths.md" data-raw-source="[&lt;strong&gt;Widths&lt;/strong&gt;](widths.md)"><strong>Widths</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -68,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFBack</strong>](adfback.md)</p></td>
+<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFFront</strong>](adffront.md)</p></td>
+<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,9 +102,9 @@ The WSD Scan Service should list all possible widths that the scan device suppor
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ This section describes the network environments that are used with Microsoft Win
 -   [Connectionless Environment for Network Drivers](connectionless-environment-for-network-drivers.md)
 -   [Connection-Oriented Environment for Network Drivers](connection-oriented-environment-for-network-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

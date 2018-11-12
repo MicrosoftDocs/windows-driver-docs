@@ -19,9 +19,9 @@ There are two bass management modes: forward bass management and reverse bass ma
 
     The bass management mode that is used depends on the availability of a subwoofer and the bass-handling capability of the main speakers. In Windows Vista, the user provides this information via the Sound applet in Control Panel.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Combining a particular [queue dispatch mode](configuring-dispatch-mode-for-an-i-
 
 ![combining dispatch and synchronization modes](images/combine.gif)
 
- 
+ 
 
- 
+ 
 
 
 

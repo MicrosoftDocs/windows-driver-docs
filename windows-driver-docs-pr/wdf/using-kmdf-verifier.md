@@ -77,9 +77,9 @@ As a general rule, if you set the above registry values, delete them when they a
 
 For full descriptions of these registry values, see [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

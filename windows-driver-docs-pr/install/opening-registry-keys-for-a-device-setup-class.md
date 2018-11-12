@@ -19,9 +19,9 @@ To safely open the registry keys of a [device setup class](device-setup-classes.
 -   [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065)
 -   [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) with the *Flags* parameter set to DIOCR_INSTALLER
 
- 
+ 
 
- 
+ 
 
 
 

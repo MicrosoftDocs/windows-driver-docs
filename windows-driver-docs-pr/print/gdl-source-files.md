@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 GDL source files are ANSI text files that contain a sequence of [GDL entries](gdl-source-file-structure.md) and [GDL preprocessor directives](gdl-source-file-preprocessor-directives.md).
 
- 
+ 
 
- 
+ 
 
 
 

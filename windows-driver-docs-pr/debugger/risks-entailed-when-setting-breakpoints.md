@@ -39,9 +39,9 @@ When you put a breakpoint at 0x770000F5, the debugger saves this byte and a brea
 
 Therefore, when you put breakpoints by using a **bp**, **bu**, or **ba** command, make sure that you always put the breakpoints at the proper address. If you are using the WinDbg graphical interface to add breakpoints, you do not have to be concerned about this situation because the correct address is chosen automatically.
 
- 
+ 
 
- 
+ 
 
 
 

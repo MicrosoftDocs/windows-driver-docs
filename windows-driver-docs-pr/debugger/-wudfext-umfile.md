@@ -48,15 +48,15 @@ Specifies the address of the UMDF intra-stack file to display information about.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

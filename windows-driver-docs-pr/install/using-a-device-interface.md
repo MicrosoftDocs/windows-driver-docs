@@ -29,9 +29,9 @@ Before a kernel-mode component can use a specific device or file object, it must
 
     To access a specific device object, the driver must call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198), passing the Unicode string for the required interface in the *ObjectName* parameter. To access a file object, the driver must call [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804), passing the Unicode string in the *ObjectName* parameter, and then pass the successfully initialized attribute structure in a call to [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
 
- 
+ 
 
- 
+ 
 
 
 

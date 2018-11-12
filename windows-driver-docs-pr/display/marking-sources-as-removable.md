@@ -13,7 +13,7 @@ To prevent a display application from making a video present source the primary 
 
 **Note**   You cannot mark source 0 in the DWORD bit-field value as removable.
 
- 
+ 
 
 The n<sup>th</sup> bit in the bit-field value specifies whether source n-1 is removable. For example, to mark source 1 as removable, you can add the following line to a display miniport driver's INF file:
 
@@ -24,9 +24,9 @@ HKR,, RemovableSources, %REG_DWORD%, 2
 
 For more information about installing display drivers, see [Installation Requirements for Display Miniport and User-Mode Display Drivers](installing-display-miniport-and-user-mode-display-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

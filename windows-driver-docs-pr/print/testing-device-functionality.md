@@ -24,9 +24,9 @@ You should also perform the following additional functionality tests.
 
 3.  **Job Control:** Verify that print jobs can be paused, canceled, resumed, and restarted. Also verify that multiple print jobs can be started, printed, canceled, and restarted at the same time.
 
- 
+ 
 
- 
+ 
 
 
 

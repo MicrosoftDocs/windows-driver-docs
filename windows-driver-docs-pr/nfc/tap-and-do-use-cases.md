@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Windows provides several use cases to support the *Tap and Do* gesture. Each use case initiates a particular action between devices. The following table lists the use cases available.
 
- 
+ 
 
 | Use case          | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -30,7 +30,7 @@ Windows provides several use cases to support the *Tap and Do* gesture. Each use
 | Tap and Send      | Tap and send content you have selected to another device.                   |
 | Tap and Receive   | Tap and receive content from another device or poster.                      |
 
- 
+ 
 
 ## Categorization
 
@@ -155,9 +155,9 @@ Use category: personal or interpersonal.
 2.  She is invited to receive the content. If she declines the invitation, nothing happens. If she accepts the invitation, she is presented with the progress of the receive action.
 3.  Once the content is received, she is then invited to launch an app to handle the content. The app is launched and handed the content.
 
- 
+ 
 
- 
+ 
 
 
 

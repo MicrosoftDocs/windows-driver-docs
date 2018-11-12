@@ -45,9 +45,9 @@ Requirements
 
 [NDIS\_WWAN\_AUTH\_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/hh439834)
 
- 
+ 
 
- 
+ 
 
 
 

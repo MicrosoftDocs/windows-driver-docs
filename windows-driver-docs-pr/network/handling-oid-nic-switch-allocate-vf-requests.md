@@ -33,11 +33,11 @@ If the PF miniport driver can successfully allocate the necessary software resou
 
 **Note**  When resources for the VF are allocated, the VF is in an unattached state because a virtual port (VPort) is not attached to the VF. The overlying driver can issue an OID request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816) to create and attach a VPort to the VF. For more information, see [Creating a Virtual Port](creating-a-virtual-port.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

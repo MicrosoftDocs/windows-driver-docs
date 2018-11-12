@@ -24,9 +24,9 @@ If your framework-based driver accesses WDM interfaces, you must be aware of the
 
 -   Framework-based drivers must not use the **Tail.Overlay.DriverContext** member of the [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) structure, because the framework uses this member.
 
- 
+ 
 
- 
+ 
 
 
 

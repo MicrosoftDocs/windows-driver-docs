@@ -26,9 +26,9 @@ If you are debugging a live target on Windows 2000, the **Detach Debuggee** comm
 
 For more information about how to exit the debugger or detach from the target, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

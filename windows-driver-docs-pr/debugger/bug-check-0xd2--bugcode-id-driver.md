@@ -68,7 +68,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 <td align="left"><p>Address of the packet that is incorrectly included in the packet array</p></td>
 <td align="left"><p>Address of the packet array</p></td>
 <td align="left"><p>Number of packets in the array</p></td>
-<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport's packet array is corrupt.</p></td>
+<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport&#39;s packet array is corrupt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Address of the MiniBlock</p></td>
@@ -79,7 +79,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 </tr>
 <tr class="even">
 <td align="left"><p>Address of the MiniBlock</p></td>
-<td align="left"><p>The MiniBlock's reference count</p></td>
+<td align="left"><p>The MiniBlock&#39;s reference count</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p><strong>NdisMUnload: MiniBlock</strong> is getting unloaded but it is still on <strong>NdisMiniDriverList</strong>.</p></td>
@@ -94,7 +94,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 </tbody>
 </table>
 
- 
+ 
 
 In the following instances of this bug check, the meaning of the parameters depends on the message and on the value of Parameter 4.
 
@@ -147,7 +147,7 @@ In the following instances of this bug check, the meaning of the parameters depe
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -156,9 +156,9 @@ This bug check code only occurs on Windows 2000 and Windows XP. In Windows Serve
 
 On the checked build of Windows, only the **Allocating Shared Memory at Raised IRQL** and **Completing Reset When One is Not Pending** instances of this bug check can occur. All the other instances of bug check 0xD2 are replaced with ASSERTs. See [Breaking Into the Debugger](breaking-into-the-debugger.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

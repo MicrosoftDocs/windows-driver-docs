@@ -62,9 +62,9 @@ Note that values used in the property sets are multiplied by 100 to give improve
 
 The DirectShow **IAMVideoProcAmp** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

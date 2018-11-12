@@ -110,9 +110,9 @@ NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 
 There are numerous variants of this impersonation code that are available to file systems developers, but this provides a basic illustration of the technique.
 
- 
+ 
 
- 
+ 
 
 
 

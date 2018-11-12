@@ -48,7 +48,7 @@ Specifies the environment variable whose value is displayed. *Variable* is not c
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +64,9 @@ The **!envvar** extension works both in user mode and in kernel mode. However, i
         _nt_symbol_path = srv*C:\mysyms*https://msdl.microsoft.com/download/symbols
 ```
 
- 
+ 
 
- 
+ 
 
 
 

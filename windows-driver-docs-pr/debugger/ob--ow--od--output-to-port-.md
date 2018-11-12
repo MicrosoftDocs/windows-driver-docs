@@ -57,7 +57,7 @@ Specifies the hexadecimal value to write to the port.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +71,9 @@ Make sure that you do not send a word or a double-word to a port that does not s
 
 [**ib, id, iw (Input from Port)**](ib--iw--id--input-from-port-.md)
 
- 
+ 
 
- 
+ 
 
 
 

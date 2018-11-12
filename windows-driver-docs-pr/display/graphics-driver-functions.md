@@ -22,9 +22,9 @@ The topics that follow describe the driver entry point functions, categorizing t
 
 When a device driver returns an error, it should typically call the GDI [**EngSetLastError**](https://msdn.microsoft.com/library/windows/hardware/ff565015) function to report an extended error code. The application program can then retrieve the error code.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,11 +20,11 @@ The SpbAccelerometer sample shows how to write a driver for the ADXL345 accelero
 | AccelerometerDevice.h   | Rename the file. Replace the private methods that correspond to specific ADXL345 functionality with methods that correspond to functionality on your device. For example, if your device does not use registers and interrupts, replace the ReadRegister, WriterRegister, and ConnectInterrupt methods. Replace the private members that no longer reflect your device functionality. |
 | AccelerometerDevice.cpp | Rename the file. Remove the methods you’d pulled from the header file and insert the definitions for the new methods that correspond to your device’s functionality.                                                                                                                                                                                                                  |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

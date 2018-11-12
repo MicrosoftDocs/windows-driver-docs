@@ -36,9 +36,9 @@ Replace code that uses obsolete interfaces with the NDIS 6.20 equivalents. For m
 
 Use NDIS interfaces that support more than 64 processors, for example, use the NDIS 6.20 read and write lock interface. For more information about support for more than 64 processors, see [Support for More than 64 Processors in NDIS 6.20](support-for-more-than-64-processors-in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

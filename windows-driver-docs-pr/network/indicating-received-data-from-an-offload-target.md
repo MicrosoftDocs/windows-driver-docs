@@ -22,9 +22,9 @@ If no preposted receive requests (buffers that are supplied by a client applicat
 
 NDIS calls the [*MiniportTcpOffloadReceiveReturn*](https://msdn.microsoft.com/library/windows/hardware/ff559462) function to return ownership of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures and associated structures that the offload target passed in one or more previous calls to the **NdisTcpOffloadReceiveHandler** function. For more information about processing returned NET\_BUFFER\_LIST structures, see *MiniportTcpOffloadReceiveReturn*.
 
- 
+ 
 
- 
+ 
 
 
 

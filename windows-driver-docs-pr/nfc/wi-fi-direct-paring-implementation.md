@@ -20,11 +20,11 @@ This section provides design guidelines and requirements for a peripheral device
 
 **Note**  The pairing implementation described in this topic is currently supported in Windows 8.1, for pairing to printer devices only.
 
- 
+ 
 
 **Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](http://www.wi-fi.org).
 
- 
+ 
 
 ## Peripheral Wi-Fi Direct Device Pairing
 
@@ -66,7 +66,7 @@ In the sample use cases that follow, NFC type 2 tags are used as an illustrative
 | Size of OOB data      | WORD                                             | Up to 64 KB of OOB data supported.                                        |
 | Wi-Fi Direct OOB data | &lt;blob of size indicated by previous field&gt; | Wi-Fi Direct OOB data as defined below.                                   |
 
- 
+ 
 
 ### Wi-Fi Direct OOB format
 
@@ -119,7 +119,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 </tbody>
 </table>
 
- 
+ 
 
 ### OOB Header attribute format
 
@@ -132,7 +132,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | OUI               | 0 or 3        | Variable | Vendor-specific OUI. This is an optional value. Must only be present when OOB Type is Vendor Specific.         |
 | OUI Type          | 0 or 1        | Variable | Vendor-specific Type. This is an optional value. Must only be present when OOB Type is Vendor Specific.        |
 
- 
+ 
 
 ### OOB Transaction Types
 
@@ -146,7 +146,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | 0xDD           | Vendor-Specific                      |
 | 0xDE-0xFF      | Reserved                             |
 
- 
+ 
 
 ### OOB Device info attribute format
 
@@ -193,7 +193,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Config Methods field shall be big-endian.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -205,7 +205,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Primary Device Type field shall be big-endian.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -223,13 +223,13 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 <strong>Note</strong>  Byte ordering within the Device Name field shall be big-endian.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### P2P OOB Attributes
 
@@ -245,7 +245,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | 0xDD           | Vendor specific attribute |
 | 0xDE-0xFF      | Reserved                  |
 
- 
+ 
 
 ### OOB Provisioning Info attribute format
 
@@ -258,7 +258,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | Pin Length                   | 1             | 0 - 8                   | Number of bytes in the following PIN Data field. This field set to 0 indicates no additional PIN data.                                                                  |
 | Pin Data                     | Variable      | n                       | This field is optional. This field is present only if the PIN Length field is not 0, and contains an array of octets which represent a PIN to be used for provisioning. |
 
- 
+ 
 
 ### Provisioning settings
 
@@ -299,7 +299,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 </tbody>
 </table>
 
- 
+ 
 
 ### OOB Configuration Timeout attribute format
 
@@ -309,7 +309,7 @@ The following table describes the format of the WiFi Direct OOB data. OOB Unidir
 | Length                         | 2             | 1       | Length of the following fields in the attribute.                                                                                                                   |
 | Listener Configuration Timeout | 1             | 0 - 255 | Amount of time this P2P device will spend waiting for Wi-Fi Direct communication after OOB data transfer, in units of 100 milliseconds. (Maximum of 25.5 seconds). |
 
- 
+ 
 
 ### Windows Device Pairing Record
 
@@ -339,7 +339,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 </tr>
 <tr class="even">
 <td align="left">Type</td>
-<td align="left">'application/vnd.ms-windows.devicepairing'</td>
+<td align="left">&#39;application/vnd.ms-windows.devicepairing&#39;</td>
 <td align="left">0x28 bytes</td>
 <td align="left">New type string we define for this scenario.</td>
 </tr>
@@ -365,7 +365,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 <strong>Note</strong>  Values 0x0002 through 0x0064 are reserved.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -383,7 +383,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="wi-fi-direct--just-works--ceremony--static-connection-handover-tag-format"></a>Wi-Fi Direct “Just Works” ceremony, Static Connection Handover tag format
 
@@ -524,7 +524,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <p>0x66 0x64 0x2E 0x6F</p>
 <p>0x6F 0x62</p></td>
 <td align="left">34</td>
-<td align="left">Record Type Name: 'application/vnd.ms-windows.wfd.oob'</td>
+<td align="left">Record Type Name: &#39;application/vnd.ms-windows.wfd.oob&#39;</td>
 </tr>
 <tr class="odd">
 <td align="left">53</td>
@@ -574,7 +574,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <td align="left"><p>0x01 0x23 0x34 0xab</p>
 <p>0xcd 0xef</p></td>
 <td align="left">6</td>
-<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34:ab:cd:ef”</td>
+<td align="left">Wi-Fi Direct P2P device MAC address: “01:23:34<span class="emoji" shortCode="ab">🆎</span>cd:ef”</td>
 </tr>
 <tr class="odd">
 <td align="left">69</td>
@@ -675,7 +675,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 </tbody>
 </table>
 
- 
+ 
 
 This second table illustrates the format of the network printer pairing portion of the tag.
 
@@ -740,12 +740,12 @@ This second table illustrates the format of the network printer pairing portion 
 <p>0x72 0x4e 0x61 0x6d</p>
 <p>0x65</p></td>
 <td align="left">25</td>
-<td align="left">Printer name: “\\printServer\printerName&quot;</td>
+<td align="left">Printer name: “\printServer\printerName&quot;</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This third table illustrates the format of the MS-Device pairing portion of the tag.
 
@@ -829,7 +829,7 @@ This third table illustrates the format of the MS-Device pairing portion of the 
 </tbody>
 </table>
 
- 
+ 
 
 ## Wi-Fi Direct Connectivity Requirements
 
@@ -849,9 +849,9 @@ If a user taps two devices at approximately the same time, only the pairing for 
 
 Any attempt to tap the device on a system running an operating system that doesn’t support Tap to Setup or Tap to Reconnect may result in the device going into connectable mode but pairing will not take place. Users will need to use a pairing UI provided for Bluetooth and use the pairing button to initiate pairing.
 
- 
+ 
 
- 
+ 
 ## Related topics
  [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
- 
+ 

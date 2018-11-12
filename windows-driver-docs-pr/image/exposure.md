@@ -71,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>AutoExposure</strong>](autoexposure.md)</p></td>
+<td><p><a href="autoexposure.md" data-raw-source="[&lt;strong&gt;AutoExposure&lt;/strong&gt;](autoexposure.md)"><strong>AutoExposure</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ExposureSettings</strong>](exposuresettings.md)</p></td>
+<td><p><a href="exposuresettings.md" data-raw-source="[&lt;strong&gt;ExposureSettings&lt;/strong&gt;](exposuresettings.md)"><strong>ExposureSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -93,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -121,9 +121,9 @@ The client can specify the optional **MustHonor** attribute only when the **Expo
 
 [**ExposureSettings**](exposuresettings.md)
 
- 
+ 
 
- 
+ 
 
 
 

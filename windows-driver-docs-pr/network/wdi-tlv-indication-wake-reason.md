@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------|
 | UINT32 | Specifies the wake reason. |
 
- 
+ 
 
 Valid wake reason values are:
 
@@ -49,7 +49,7 @@ Valid wake reason values are:
 | WDI\_WAKE\_REASON\_CODE\_FIRMWARE\_STALLED        | 0x1010 | Firmware hang is detected (for example, by the watchdog timer) and wake logic is still functioning to wake the host. |
 | WDI\_WAKE\_REASON\_CODE\_GTK\_HANDSHAKE\_REQUEST  | 0x1020 | Group Key rekey request.                                                                                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -75,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

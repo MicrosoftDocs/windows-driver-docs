@@ -83,9 +83,9 @@ You define a new GUID for an item the driver exports to other system components,
 
         For device interface classes, use the format GUID\_DEVINTERFACE\_*XXX*.
 
- 
+ 
 
- 
+ 
 
 
 

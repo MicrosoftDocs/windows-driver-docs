@@ -25,7 +25,7 @@ IHV_DeviceName.XXX = "My Device Name (Microsoft Corporation - WDDM v1.2)"
 **Note**  
 To easily highlight drivers for testing only, that are going to enable Windows 8-specific optional features that are optimized for Windows 8, we recommend the following input so that users can easily determine that it is not a standard Windows 8 driver. (This should also make bugs easier to triage).
 
- 
+ 
 
 For example: WDDM 1.2 specific work
 
@@ -51,9 +51,9 @@ For WDDM 1.0 drivers that were tested on Windows 8 and that are included in the
 IHV_DeviceName.XXX = "My Device Name (Microsoft Corporation - WDDM v1.0)"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -44,9 +44,9 @@ Support for this property set is optional and should be implemented only by mini
 
 The DirectShow **IAMExtTransport** interface (see the DirectShow documentation in the Microsoft Windows SDK). provides access to the properties of this set. The interface defines many methods, but only a subset for external device control are implemented.
 
- 
+ 
 
- 
+ 
 
 
 

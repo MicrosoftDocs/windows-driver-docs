@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 The **!wmitrace.tfp** extension command is obsolete. Use [**!wmitrace.setprefix**](-wmitrace-setprefix.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

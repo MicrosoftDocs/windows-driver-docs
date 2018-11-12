@@ -52,9 +52,9 @@ Requirements
 
 [**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff567260)
 
- 
+ 
 
- 
+ 
 
 
 

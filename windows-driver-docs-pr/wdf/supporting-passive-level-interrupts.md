@@ -317,9 +317,9 @@ To prevent deadlock, follow these guidelines when writing a driver that implemen
 
 For more information about using interrupt locks, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

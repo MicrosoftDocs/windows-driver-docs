@@ -84,9 +84,9 @@ Your driver's *DdBlt* function must support copying the FOURCC destination surfa
 
 The destination surface for the bit-block transfer operations can be the primary surface or a Direct3D texture.
 
- 
+ 
 
- 
+ 
 
 
 

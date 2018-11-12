@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The **\*ElementTags** directive defines the tags that are used for elements in the template.
 
- 
+ 
 
- 
+ 
 
 
 

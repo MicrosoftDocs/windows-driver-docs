@@ -44,9 +44,9 @@ The following sections describe how drivers support multiple-head hardware.
 
 [Using Multiple Multiple-Head Adapters](using-multiple-multiple-head-adapters.md)
 
- 
+ 
 
- 
+ 
 
 
 

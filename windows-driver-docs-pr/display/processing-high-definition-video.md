@@ -22,9 +22,9 @@ To more efficiently process video, including high-definition video, a user-mode 
 
 [YUV format ranges in Windows 8.1](yuv-format-ranges.md)
 
- 
+ 
 
- 
+ 
 
 
 

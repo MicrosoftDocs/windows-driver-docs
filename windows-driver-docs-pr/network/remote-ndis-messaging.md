@@ -50,9 +50,9 @@ There are two types of Remote NDIS messages: *control messages* and *data messag
 
     Both connectionless (for example, 802.3) and connection-oriented (for example, ATM) devices use the same **REMOTE\_NDIS\_PACKET\_MSG** message structure, in order to facilitate common code for packet processing.
 
- 
+ 
 
- 
+ 
 
 
 

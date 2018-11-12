@@ -19,9 +19,9 @@ Although Microsoft Windows 2000 and later versions of the NT-based operating sys
 -   [Determining the WDM Version](determining-the-wdm-version.md)
 -   [Differences in WDM Versions](differences-in-wdm-versions.md)
 
- 
+ 
 
- 
+ 
 
 
 

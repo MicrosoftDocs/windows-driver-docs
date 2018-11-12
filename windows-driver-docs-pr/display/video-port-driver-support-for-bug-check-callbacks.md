@@ -23,9 +23,9 @@ For information about registering *HwVidBugcheckCallback*, see the following top
 
 [**VideoPortRegisterBugcheckCallback**](https://msdn.microsoft.com/library/windows/hardware/ff570353)
 
- 
+ 
 
- 
+ 
 
 
 

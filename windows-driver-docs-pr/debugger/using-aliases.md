@@ -49,7 +49,7 @@ Use the [**r (Registers)**](r--registers-.md) command to define the alias equiva
 
 **Note**   Do not be confused by using the **r (Registers)** command for fixed-name aliases. These aliases are not registers or pseudo-registers, even though you use the **r** command to set their alias equivalents. You do not have to add an at (**@**) sign before these aliases, and you cannot use the **r** command to *display* the value of one of these aliases.
 
- 
+ 
 
 By default, if you do not define a fixed-name alias, it is an empty string.
 
@@ -71,7 +71,7 @@ The debugger sets the following automatic aliases.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>$ntnsym</strong></p></td>
-<td align="left"><p>The most appropriate module for NT symbols on the computer's native architecture. This alias can equal either <strong>ntdll</strong> or <strong>nt</strong>.</p></td>
+<td align="left"><p>The most appropriate module for NT symbols on the computer&#39;s native architecture. This alias can equal either <strong>ntdll</strong> or <strong>nt</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$ntwsym</strong></p></td>
@@ -100,7 +100,7 @@ The debugger sets the following automatic aliases.
 </tbody>
 </table>
 
- 
+ 
 
 Automatic aliases are similar to [automatic pseudo-registers](pseudo-register-syntax.md), except that you can use automatic aliases with alias-related tokens (such as **${ }**), while you cannot use pseudo-registers with these tokens.
 
@@ -114,7 +114,7 @@ A user-named alias is recognized only if its name is separated from other charac
 
 **Note**   Any text that you enter into the [Debugger Command window](debugger-command-window.md) that begins with "as", "aS", "ad", or "al" does not receive alias replacement. This restriction prevents the alias commands from being rendered inoperable. However, this restriction also means that commands that follow **ad** or **al** on a line do not have their aliases replaced. If you want aliases to be replaced in a line that begins with one of these strings, add a semicolon before the alias.
 
- 
+ 
 
 However, you can use the **${ }** token to expand a user-named alias even when it is next to other text. You can also use this token together with certain switches to prevent an alias from being expanded or to display certain alias-related values. For more information about these situations, see [**${ } (Alias Interpreter)**](-------alias-interpreter-.md).
 
@@ -306,9 +306,9 @@ Fixed-named aliases are replaced if they are used next to other text. To make a 
 
 Fixed-name alias replacement occurs before user-named alias replacement.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,7 +47,7 @@ You can add a processor number before several commands. This number is not prece
 
 **Note**   In user-mode debugging, the tilde is used to specify threads. For more information about this syntax, see [Thread Syntax](thread-syntax.md).
 
- 
+ 
 
 Processor IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a processor ID. To indicate that the expression should be interpreted as a processor, use the following syntax.
 
@@ -101,9 +101,9 @@ You can use the [**!running**](-running.md) extension to display the status of e
 
 You can use the [**!cpuinfo**](-cpuinfo.md) and [**!cpuid**](-cpuid.md) extensions to display information about the processors themselves.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ For example, the following command signs the *Tstamd64.cat* catalog file with th
 SignTool sign /v /ac c:\lab\rsacertsrvcross.cer /s my /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

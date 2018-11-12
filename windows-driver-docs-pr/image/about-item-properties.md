@@ -21,11 +21,11 @@ Certain properties are mandatory for some device types. For example, a device wi
 
 **Note**   If you are more familiar with TWAIN than you are with WIA, it may be helpful to know that WIA properties are synonymous with TWAIN capabilities.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

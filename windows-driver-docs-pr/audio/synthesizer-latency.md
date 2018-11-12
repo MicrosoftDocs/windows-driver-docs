@@ -32,9 +32,9 @@ In the preceding figure, the latency clock points to the first place in the PCM 
 
 Messages can be scheduled to play at, or any time after, this latency time. Therefore, messages that are to be rendered immediately are stamped with the latency time (not the current time) before being placed in the synthesizer's input buffer.
 
- 
+ 
 
- 
+ 
 
 
 

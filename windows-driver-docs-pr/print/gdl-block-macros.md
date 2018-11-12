@@ -28,7 +28,7 @@ Block macros can contain references to other block or value macros . The instanc
 
 **Note**  The declarations and references of arguments that will be used to pass value macro references are prefixed with the equal sign (=) to signify that the argument type is value macro. All references to value macros are also prefixed with the equal sign to signify the reference is to a value macro instead of a block macro.
 
- 
+ 
 
 References to block macros can nest parameter lists to arbitrary depth. Block macros are referenced by using \*InsertBlock: NameOfBlockMacro. The name of the block macro is not prefixed with an equal sign because it is not a reference to a value macro. This syntax differs from the GPD syntax.
 
@@ -56,9 +56,9 @@ The following code example shows how to use block macros.
 *InsertBlock: PaperOption(LetterSize, =LetterName)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

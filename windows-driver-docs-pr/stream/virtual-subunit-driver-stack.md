@@ -34,9 +34,9 @@ The virtual IEEE 1394 device provides the following support:
 
 -   Ability to implement extensions to AV/C subunit target functionality, such as Authentication and Key Exchange (AKE) and the Connection and Compatibility Management (CCM) protocol by third parties on the computer.
 
- 
+ 
 
- 
+ 
 
 
 

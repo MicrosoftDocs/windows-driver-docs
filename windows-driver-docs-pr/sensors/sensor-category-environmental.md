@@ -33,7 +33,7 @@ This category includes the following platform-defined sensor types.
 |SENSOR_TYPE_ENVIRONMENTAL_WIND_DIRECTION|Weather vanes.|
 |SENSOR_TYPE_ENVIRONMENTAL_WIND_SPEED|Anemometers.|
 
- 
+ 
 
 ### Platform-defined Data Fields
 
@@ -47,12 +47,12 @@ This category includes the following platform-defined data fields.
 |SENSOR_DATA_TYPE_WIND_DIRECTION_DEGREES_ANTICLOCKWISE|VT_R4|Wind direction relative to magnetic north, in degrees. North is represented as 0.0 (top of the x-axis), with values increasing in an anticlockwise rotation. The z-axis points upwards.|
 |SENSOR_DATA_TYPE_WIND_SPEED_METERS_PER_SECOND|VT_R4|Wind speed in meters per second.|
 
- 
+ 
 
 >[!IMPORTANT]
 > Each platform-defined environmental data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_ENVIRONMENTAL\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 ## Requirements
 
@@ -65,9 +65,9 @@ This category includes the following platform-defined data fields.
 |Header|Sensors.h|
 
 
- 
+ 
 
- 
+ 
 
 
 

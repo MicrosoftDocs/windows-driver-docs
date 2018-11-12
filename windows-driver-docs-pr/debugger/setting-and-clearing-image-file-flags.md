@@ -32,9 +32,9 @@ Image file settings affect instances of the specified program that start after t
 
 4.  When you have selected or cleared all of the flags you want, click **Apply**.
 
- 
+ 
 
- 
+ 
 
 
 

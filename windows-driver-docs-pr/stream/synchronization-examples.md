@@ -49,9 +49,9 @@ The following examples illustrate what a minidriver needs to do regarding synchr
 
     -   When the minidriver is a bus-on-bus type driver (for example, a USB or 1394 peripheral driver) that does not really worry about synchronization of the actual hardware, but just calls requests down to the next layer at PASSIVE\_LEVEL and receives callbacks typically at DISPATCH\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

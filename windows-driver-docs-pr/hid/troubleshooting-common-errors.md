@@ -61,9 +61,9 @@ This section highlights questions frequently asked by hardware vendors and drive
 5.  What is the required I²C transfer limit in order for HIDI²C devices to leverage the Windows inbox HIDI²C driver?
     -   All I²C controllers are required to support transfers up to 4 KB. The maximum HID report descriptor length is 4 KB.
 
- 
+ 
 
- 
+ 
 
 
 
