@@ -61,7 +61,7 @@ The following table describes the valid values for the **WIA\_IPS\_AUTO\_CROP** 
 </tbody>
 </table>
 
- 
+ 
 
 This property is valid and optional for the Feeder (WIA\_CATEGORY\_FEEDER) item, where it can be implemented with or without the WIA\_PAGE\_AUTO value for the [**WIA\_IPS\_PAGE\_SIZE**](wia-ips-page-size.md) property. This property is also valid (and optional) for the Flatbed (WIA\_CATEGORY\_FLATBED) and Film (WIA\_CATEGORY\_FILM) items, but only if segmentation is not supported by the WIA mini-driver for the WIA\_CATEGORY\_FLATBED and WIA\_CATEGORY\_FILM input sources. If WIA\_IPS\_SEGEMENTATION is supported then WIA\_IPS\_AUTO\_CROP is invalid and cannot be supported at the same time.
 
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

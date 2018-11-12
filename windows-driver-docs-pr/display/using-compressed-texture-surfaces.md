@@ -36,7 +36,7 @@ The DDCAPS2\_COPYFOURCC flag has some additional implications. Your driver must 
 
 **Note**   Microsoft DirectShow uses the DDCAPS2\_COPYFOURCC flag to accelerate some video functionality; the requirement for this flag implies that all FOURCC formats can be copied.
 
- 
+ 
 
 If a blt operation requires compression to a DXT format, the DirectDraw HEL always performs the blt. This means that DirectDraw never requests the driver to perform a blt for which:
 
@@ -120,9 +120,9 @@ The following three items should be observed when implementing reference rasteri
 
 3.  Because hardware implementations of reference rasterizers can perform the rounding of calculations to better approximate the original value in slightly different ways, testing should allow for slight variations in the color and alpha values obtained from the decompression logic.
 
- 
+ 
 
- 
+ 
 
 
 

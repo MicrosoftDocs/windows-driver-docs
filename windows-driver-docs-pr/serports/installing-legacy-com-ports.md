@@ -33,9 +33,9 @@ The **IoReportDetectedDevice** call marks the port as a root-enumerated device. 
 
 The Plug and Play manager creates the following [compatible IDs](https://msdn.microsoft.com/library/windows/hardware/ff539950) for a legacy COM port: DETECTEDInternal\\Serial and DETECTED\\Serial.
 
- 
+ 
 
- 
+ 
 
 
 

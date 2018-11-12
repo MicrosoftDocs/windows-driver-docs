@@ -33,9 +33,9 @@ Vendors and developers should observe the following cautions in order to avoid p
 
 -   Computer manufacturers should ensure that the BIOS code sets CardBus controllers to PCIC mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ A client uses the following internal device control requests to obtain the above
 
 A client releases parallel port information by using an [**IOCTL\_INTERNAL\_RELEASE\_PARALLEL\_PORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff544047) request.
 
- 
+ 
 
- 
+ 
 
 
 

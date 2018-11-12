@@ -48,7 +48,7 @@ This bug check appears very infrequently.
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The value of the thread's APC state index.</p></td>
+<td align="left"><p>The value of the thread&#39;s APC state index.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
@@ -57,16 +57,16 @@ This bug check appears very infrequently.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 This bug check can occur if the driver calls the **KeAttachProcess** function and the thread is already attached to another process. It is better to use the **KeStackAttachProcess** function. If the current thread was already attached to another process, the **KeStackAttachProcess** function saves the current APC state before it attaches the current thread to the new process.
 
- 
+ 
 
- 
+ 
 
 
 

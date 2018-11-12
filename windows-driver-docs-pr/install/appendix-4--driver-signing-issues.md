@@ -35,15 +35,15 @@ Where XX...XX is the hash of the certificate you are using for the secondary sig
 
 **Note**  Please review Microsoft Security Advisory ([2880823](https://technet.microsoft.com/library/security/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
 
- 
+ 
 
 Use of SHA1 certificate will be deprecated by Microsoft starting from January 1, 2016. All CA vendors must to issue signing certificates with the SHA256 hash algorithm.
 
 Windows will stop accepting SHA1 code signing certificates without time stamps after 1 January 2016.
 
- 
+ 
 
- 
+ 
 
 
 

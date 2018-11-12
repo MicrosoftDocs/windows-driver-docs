@@ -28,9 +28,9 @@ for details. The KD connection server will remain in operation and can be re-use
 
 The KD connection server can be terminated from either computer. To terminate it from the smart client, use the [**.endpsrv (End Process Server)**](-endpsrv--end-process-server-.md) command. To terminate the KD connection server from the computer it is running on, use Task Manager to end the kdsrv.exe process.
 
- 
+ 
 
- 
+ 
 
 
 

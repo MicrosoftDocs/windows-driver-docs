@@ -31,9 +31,9 @@ For more information about template data types, see [GDL Template Data Types](gd
 
 For troubleshooting information about parsing, see [Troubleshooting GDL Parsing](troubleshooting-gdl-parsing.md).
 
- 
+ 
 
- 
+ 
 
 
 

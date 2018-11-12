@@ -60,7 +60,7 @@ Eventing
 
 X
 
- 
+ 
 
 The test device should host three kinds of services:
 
@@ -106,7 +106,7 @@ However, if you want to implement only some of these services, see the table at 
 
 **Note**  To attempt any of the advanced interoperability scenarios (such as [Device control](device-control-scenarios.md), [Attachments](attachments-scenarios.md), and [Eventing](eventing-scenarios.md)), the test device has to at least support the [Device and Service inspection test cases](device-and-service-inspection-scenarios.md). If the device fails this test case, you might be unable to continue with the advanced test cases.
 
- 
+ 
 
 The test device and the WSDBIT device (WSDBIT\_server) must be able to do the following:
 
@@ -122,9 +122,9 @@ The test device and the WSDBIT device (WSDBIT\_server) must be able to do the fo
 
 -   Use the **xs:anyURI testdevice** as the **wsd:Scopes** element for discovery.
 
- 
+ 
 
- 
+ 
 
 
 

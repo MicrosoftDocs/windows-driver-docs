@@ -71,7 +71,7 @@ The following table lists the possible values.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="supported"></span><span id="SUPPORTED"></span> Supported
 
@@ -83,9 +83,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all values supported for Direction.
 
- 
+ 
 
- 
+ 
 
 
 

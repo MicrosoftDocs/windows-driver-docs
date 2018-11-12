@@ -47,9 +47,9 @@ For each UMDF-based function and filter driver that supports the device, the fra
 
 To see a diagram that shows these steps, see [A User Plugs in a Device](a-user-plugs-in-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

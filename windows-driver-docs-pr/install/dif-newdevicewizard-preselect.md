@@ -47,7 +47,7 @@ After the user has selected the class for the device but before Windows displays
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -130,9 +130,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

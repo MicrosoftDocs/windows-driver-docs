@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_MOUSE [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md)
 
- 
+ 
 
- 
+ 
 
 
 

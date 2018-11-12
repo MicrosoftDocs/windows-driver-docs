@@ -34,9 +34,9 @@ If your service is running on Windows Vista or a later version of Windows, there
 
 In other words, on Windows Vista and later, you cannot use local debugging unless you plan to attach the debugger manually after the service is already running. This restriction results from the fact that in these versions of Windows, services run in session 0, and any debugger that is automatically launched and attached to the service is also in session 0, and does not have a user interface on the computer that the service is running on.
 
- 
+ 
 
- 
+ 
 
 
 

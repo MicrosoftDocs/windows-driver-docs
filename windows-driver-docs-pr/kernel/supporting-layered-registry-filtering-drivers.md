@@ -17,9 +17,9 @@ When a thread makes a registry call, the configuration manager calls each *Regis
 
 Registry filtering drivers that were written before Windows Vista and therefore do not have an altitude assignment are inserted near the top of the Windows Vista filter stack, in the order that they call [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918).
 
- 
+ 
 
- 
+ 
 
 
 

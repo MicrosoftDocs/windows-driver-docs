@@ -32,9 +32,9 @@ This section describes internal routines that a writer of a storage class driver
 
 [Storage Class Driver's RemoveDevice Routine](storage-class-driver-s-removedevice-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeSurfaceSize(
-   UINT      cpWidth,
-   UINT      cpHeight,
-   D3DFORMAT Format
+   UINT      cpWidth,
+   UINT      cpHeight,
+   D3DFORMAT Format
 );
 ```
 
@@ -73,9 +73,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

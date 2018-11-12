@@ -26,9 +26,9 @@ The method that is used by miniport drivers to report the support status of NDIS
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

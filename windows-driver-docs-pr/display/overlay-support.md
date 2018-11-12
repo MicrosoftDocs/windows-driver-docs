@@ -26,9 +26,9 @@ The overlay surface can have a different pixel depth than the primary surface. F
 
 Overlays flip in exactly the same way as the primary surface. The DirectDraw surface objects swap pointers so that the new overlay surface is read when the scan line reaches the rectangle bounding the overlay. The same flipping algorithm described in [Timing a Flip](timing-a-flip.md) prevents tearing.
 
- 
+ 
 
- 
+ 
 
 
 

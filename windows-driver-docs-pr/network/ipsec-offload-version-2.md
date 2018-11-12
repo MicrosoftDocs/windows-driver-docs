@@ -32,9 +32,9 @@ This section includes:
 
 [Receiving Network Data with IPsec Offload Version 2](receiving-network-data-with-ipsec-offload-version-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

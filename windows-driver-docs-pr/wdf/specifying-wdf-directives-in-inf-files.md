@@ -68,7 +68,7 @@ Starting with UMDF version 2.15, a UMDF driver does not need to specify **AllowD
 
 If the device is assigned one or more connection resources (**CmResourceTypeConnection**) and one or more interrupt resources (**CmResourceTypeInterrupt**), the driver can call [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) from its [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback routine (but not from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693)).
 
- 
+ 
 
 For information about connecting a UMDF driver to particular types of resources, see:
 
@@ -212,9 +212,9 @@ CopyFiles=UMDriverCopy
 Virtualserial.dll,,,0x00004000  ; COPYFLG_IN_USE_RENAME
 ```
 
- 
+ 
 
- 
+ 
 
 
 

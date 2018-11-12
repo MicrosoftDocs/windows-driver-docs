@@ -36,9 +36,9 @@ When SDV finds an entry point, it creates a **\#define** directive in the follow
 #define fun_Function_RoleType EntryPoint
 ```
 
- 
+ 
 
- 
+ 
 
 
 

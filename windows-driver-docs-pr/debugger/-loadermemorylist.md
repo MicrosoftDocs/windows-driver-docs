@@ -53,7 +53,7 @@ Specifies the address of a list header.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +62,9 @@ This extension is designed to be used at the beginning of the system boot proces
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

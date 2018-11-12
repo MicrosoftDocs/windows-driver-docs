@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!cxr** extension command is obsolete. Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

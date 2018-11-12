@@ -29,7 +29,7 @@ The following screen shot shows a report of available memory through the **Displ
 
 **Note**   The single "Memory Size" number that the preceding screen shot shows is just the dedicated on-board graphics memory, which is not an accurate representation of the total amount of available graphics memory.
 
- 
+ 
 
 ### <span id="example_2__32_mb_dedicated_on_board_graphics_memory_on_a_mobile_comput"></span><span id="EXAMPLE_2__32_MB_DEDICATED_ON_BOARD_GRAPHICS_MEMORY_ON_A_MOBILE_COMPUT"></span>Example 2: 32-MB Dedicated On-Board Graphics Memory on a Mobile Computer
 
@@ -49,7 +49,7 @@ The following screen shot shows a report of available memory through the **Displ
 
 **Note**   For TurboCache computers like the one shown in the preceding screen shot, the single "Memory Size" number is a combination, but not a total, of dedicated graphics memory and shared system memory. Again, this is not an accurate representation of the total amount of available graphics memory.
 
- 
+ 
 
 ### <span id="example_3__256_mb_shared_graphics_memory_on_a_mobile_computer"></span><span id="EXAMPLE_3__256_MB_SHARED_GRAPHICS_MEMORY_ON_A_MOBILE_COMPUTER"></span>Example 3: 256-MB Shared Graphics Memory on a Mobile Computer
 
@@ -67,9 +67,9 @@ The following screen shot shows a report of available memory through the **Displ
 
 ![screen shot of the windows xp display application](images/reportmemmobxp2.png)
 
- 
+ 
 
- 
+ 
 
 
 

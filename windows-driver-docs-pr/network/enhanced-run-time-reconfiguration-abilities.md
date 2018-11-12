@@ -27,9 +27,9 @@ Miniport and filter drivers handle pause and restart services through function i
 
 For more information about pause and restart operations, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

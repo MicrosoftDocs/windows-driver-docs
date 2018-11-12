@@ -55,7 +55,7 @@ The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -209,9 +209,9 @@ Remarks
 
 For information on requirements that hardware devices must meet when they implement TDR, refer to the WHCK documentation on *Device.Graphics…TDRResiliency*.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ Specifies a pointer to the object for which to display automation items. (Automa
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -160,9 +160,9 @@ Filter 829493c4 has the following automation items:
         NO SETS FOUND!
 ```
 
- 
+ 
 
- 
+ 
 
 
 

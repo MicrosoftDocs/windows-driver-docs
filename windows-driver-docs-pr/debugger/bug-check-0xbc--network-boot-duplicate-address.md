@@ -55,11 +55,11 @@ The NETWORK\_BOOT\_DUPLICATE\_ADDRESS bug check has a value of 0x000000BC. This 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   When Parameter 4 equals zero, this indicates an Ethernet connection. In that case, the MAC address will be stored in Parameter 2 and Parameter 3. An Ethernet MAC address of the form *aa-bb-cc-dd-ee-ff* will cause Parameter 2 to equal 0xAABBCCDD, and Parameter 3 to equal 0xEEFF0000.
 
- 
+ 
 
 Cause
 -----
@@ -68,9 +68,9 @@ This error indicates that when TCP/IP sent out an ARP for its IP address, it got
 
 When Windows is booting off a network, this is a fatal error.
 
- 
+ 
 
- 
+ 
 
 
 

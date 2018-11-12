@@ -33,9 +33,9 @@ In addition, it is possible that the new object to be drawn contains complex cli
 
 The pseudovector graphics feature may alter the z-ordering in certain situations, particularly when text is downloaded directly to the device and subsequent objects with complex clipping must interact with that text.
 
- 
+ 
 
- 
+ 
 
 
 

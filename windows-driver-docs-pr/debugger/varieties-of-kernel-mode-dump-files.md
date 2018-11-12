@@ -38,7 +38,7 @@ After a Complete Memory Dump or Kernel Memory Dump has been created, it is possi
 
 **Note**   Much information can be obtained by analyzing a kernel-mode dump file. However, no kernel-mode dump file can provide as much information as actually debugging the crash directly with a kernel debugger.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -47,9 +47,9 @@ After a Complete Memory Dump or Kernel Memory Dump has been created, it is possi
 
 [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

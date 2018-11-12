@@ -12,21 +12,24 @@ ms.localizationpriority: medium
 *TTD Calls* objects are used to give information about function calls that occur over the course of a trace.
 
 ## Parameters
+
 | Property | Description |
 | --- | --- |
 | Function!SymbolName | One or more contained in double quotes, separated by a comma. For example dx @$cursession.TTD.Calls("module!symbol1", "module!symbol2", ...) |
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
-| EventType  |	The type of event. This is "Call" for all TTD Calls objects. |
-| ThreadId   |	The OS thread ID of thread that made the request. |
-| UniqueThreadId |	 A unique ID for the thread across the trace. Regular thread IDs can get reused over the lifetime of a process but UniqueThreadIds cannot. |
+| EventType  |  The type of event. This is "Call" for all TTD Calls objects. |
+| ThreadId   |  The OS thread ID of thread that made the request. |
+| UniqueThreadId |   A unique ID for the thread across the trace. Regular thread IDs can get reused over the lifetime of a process but UniqueThreadIds cannot. |
 | Function | The symbolic name of the function. |
 | FunctionAddress | The function's address in memory. |
 | ReturnValue | The return value of the function. If the function has a void type, this property will not be present. |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | Parameters[] | An array containing the parameters passed to the function. The number of elements varies based on the type signature of the function. |

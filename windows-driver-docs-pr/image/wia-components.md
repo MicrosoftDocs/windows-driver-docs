@@ -75,12 +75,12 @@ The WIA service is a system-supplied component that communicates with imaging ap
 </tr>
 <tr class="even">
 <td><p><strong>IWiaPropertyStorage</strong></p></td>
-<td><p>Provides access to information about an <strong>IWiaItem</strong> object's properties.</p></td>
+<td><p>Provides access to information about an <strong>IWiaItem</strong> object&#39;s properties.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### WIA Driver Services Library
 
@@ -116,11 +116,11 @@ A vendor must provide a kernel-mode still image driver only if its imaging devic
 
 **Note**   On Windows XP and later, you can retrieve version information from the driver. The [**WIA\_DIP\_WIA\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/ff550296) property contains the WIA version, and the [**WIA\_DIP\_DRIVER\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/ff550263) property contains the driver DLL version. The WIA service creates and maintains these properties; they are added automatically by the WIA service when the driver is loaded. Windows Me does not include these properties.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

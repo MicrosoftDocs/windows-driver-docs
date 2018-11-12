@@ -60,7 +60,7 @@ The following table describes the constants that are valid with WIA\_IPS\_SHEET\
 </tbody>
 </table>
 
- 
+ 
 
 For scanners that support more than one scanning head, the WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property is relative to the topmost scanning head. This property is mandatory for sheet-fed, scroll-fed, and handheld scanners.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](wia-dps-sheet-feeder-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

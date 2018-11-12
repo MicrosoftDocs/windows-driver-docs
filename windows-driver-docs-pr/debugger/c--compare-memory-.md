@@ -55,7 +55,7 @@ The starting address of the second memory range to be compared. The size of this
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +89,9 @@ To compare **rgBuf1** and **rgBuf2**, use either of the following commands:
 0:000> c rgBuf1 L 0n100 rgBuf2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

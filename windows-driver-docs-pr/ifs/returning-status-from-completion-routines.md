@@ -32,9 +32,9 @@ If any other NTSTATUS value is returned, the I/O Manager resets it to STATUS\_SU
 
 For more information about returning STATUS\_MORE\_PROCESSING\_REQUIRED, see [Constraints on Completion Routines](constraints-on-completion-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

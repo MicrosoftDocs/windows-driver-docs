@@ -51,9 +51,9 @@ FeatureScore=xFD
 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

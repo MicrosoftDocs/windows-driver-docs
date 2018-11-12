@@ -29,9 +29,9 @@ The miniport driver should be ready to accept send requests after it completes t
 
 After the driver is ready to handle send and receive operations, the adapter is in the Running state.
 
- 
+ 
 
- 
+ 
 
 
 

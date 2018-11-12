@@ -58,11 +58,11 @@ The INVALID\_HIBERNATED\_STATE bug check has a value of 0x000000BD. This indicat
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

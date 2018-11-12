@@ -27,7 +27,7 @@ Before the protocol edge of the extensible switch issues the OID\_SWITCH\_NIC\_D
 
 **Note**  If the extension had incremented an extensible switch reference counter for the network adapter by calling [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294), the OID\_SWITCH\_NIC\_DELETE request is not issued while the reference counter is nonzero. The extension decrements the extensible switch reference counter by calling [*DereferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598141).
 
- 
+ 
 
 The extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_NIC\_DELETE:
 
@@ -66,7 +66,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -104,9 +104,9 @@ Requirements
 
 [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ Enter the name of the workspace that you want to open in the **Workspace** box o
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,9 +54,9 @@ This section describes the following commands on the **Edit** menu of WinDbg:
 
 [Edit | Open/Close Log File](edit---open-close-log-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

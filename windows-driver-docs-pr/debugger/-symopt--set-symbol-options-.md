@@ -60,7 +60,7 @@ Specifies the symbol options to be changed. *Flags* must be the sum of the bit f
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ Remarks
 
 Without any arguments, **.symopt** displays the current symbol options.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,9 +13,9 @@ The loudness equalization DSP ensures that the volume level across different sou
 
 Versions of Windows with this audio effect can maintain a more uniform perceived loudness across different digital audio files or sources than earlier Windows technologies. This means that loudness always stays within a specified range, even for different digital signals.
 
- 
+ 
 
- 
+ 
 
 
 

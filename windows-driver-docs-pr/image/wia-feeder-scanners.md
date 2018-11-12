@@ -23,9 +23,9 @@ This section includes:
 
 [WIA Feeder Scanner Compatibility for Windows Me and Windows XP](wia-feeder-scanner-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

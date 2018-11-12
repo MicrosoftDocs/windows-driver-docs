@@ -49,13 +49,13 @@ On matrix change, update the following four matrices:
 </tbody>
 </table>
 
- 
+ 
 
 In some cases it may be more efficient to blend the matrices first using the vertex's weights, and then do only one (matrix)X(vertex) multiplication.
 
- 
+ 
 
- 
+ 
 
 
 

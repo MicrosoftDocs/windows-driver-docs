@@ -35,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT16     | Specifies the TCP source port number in the TCP SYN packet.      |
 | UINT16     | Specifies the TCP destination port number in the TCP SYN packet. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ Before offloading a TCP connection, the host stack stops its SWS prevention time
 
 Before terminating the offload of a TCP connection, an offload target stops its SWS prevention timer for the connection. In addition to uploading the connection, the offload target can also upload send data for the connection. (For more information about such send data, see [Handling Outstanding Send Data During a Terminate Offload Operation](handling-outstanding-send-data-during-a-terminate-offload-operation.md).) After the connection has been uploaded, the host stack always restarts its SWS prevention timer for the connection.
 
- 
+ 
 
- 
+ 
 
 
 

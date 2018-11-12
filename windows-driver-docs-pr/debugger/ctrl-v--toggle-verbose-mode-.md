@@ -61,7 +61,7 @@ CTRL+ALT+V
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ When verbose mode is turned on, some display commands (such as register dumping)
 
 In WinDbg, this can also be accomplished by selecting [View | Verbose Output](view---verbose-output.md).
 
- 
+ 
 
- 
+ 
 
 
 

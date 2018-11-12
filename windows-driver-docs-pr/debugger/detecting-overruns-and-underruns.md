@@ -37,9 +37,9 @@ In Windows Vista and later versions of Windows, this option is available on the 
 
 The **Verify Start** and **Verify End** alignment settings apply to all allocations from the special pool, including special pool allocation requests set in Driver Verifier. If you set the alignment without specifying a pool tag or allocation size, then the settings apply only to requests set in Driver Verifier.
 
- 
+ 
 
- 
+ 
 
 
 

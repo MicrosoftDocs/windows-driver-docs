@@ -30,9 +30,9 @@ Given the preceding information, driver is initialized properly either when the 
 
 Another issue is that all configuration manager callbacks for currently serviced joystick devices are sent to all loaded minidrivers. However, you can use the *dnToDevNode* parameter to look up the device identifier, and you can check this against the devices that this driver can handle.
 
- 
+ 
 
- 
+ 
 
 
 

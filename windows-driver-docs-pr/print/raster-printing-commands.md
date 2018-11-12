@@ -22,9 +22,9 @@ Raster printing commands are those that are associated with printing rasterized 
 
 [Raster Data Emission Commands](raster-data-emission-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ Data Type:BIDI\_BOOL
 
 Description:Determines whether the print device has a hole punch mechanism installed. If **TRUE**, the hole punch mechanism is installed; if **FALSE**, the hole punch mechanism is not installed.
 
- 
+ 
 
- 
+ 
 
 
 

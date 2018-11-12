@@ -26,7 +26,7 @@ The size (in bytes) of the array of WDI\_P2P\_DEVICE\_TYPE elements. An array le
 
 **Note**  WDI\_P2P\_DEVICE\_TYPE is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 ## Values
 
@@ -35,7 +35,7 @@ The size (in bytes) of the array of WDI\_P2P\_DEVICE\_TYPE elements. An array le
 |----------------------------|----------------------------------------|
 | WDI\_P2P\_DEVICE\_TYPE\[\] | An array of Wi-Fi Direct device types. |
 
- 
+ 
 
 WDI\_P2P\_DEVICE\_TYPE consists of the following elements.
 
@@ -45,7 +45,7 @@ WDI\_P2P\_DEVICE\_TYPE consists of the following elements.
 | UINT8\[4\] | The OUI that is assigned to this device type. |
 | UINT16     | The subcategory ID.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +71,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

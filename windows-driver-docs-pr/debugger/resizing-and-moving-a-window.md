@@ -24,9 +24,9 @@ If you move the mouse pointer to the border between two docked windows, the mous
 
 The WinDbg window is always filled with docked windows. There is never any empty area in the window unless there are no windows docked. The same situation applies to independent docks.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,29 +42,29 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageIdentity](packageidentity.md)</p></td>
+<td><p><a href="packageidentity.md" data-raw-source="[PackageIdentity](packageidentity.md)">PackageIdentity</a></p></td>
 <td><p>Specifies the package identity (name and publisher) for the app.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Application](application-windowsinfo-v2.md)</p></td>
+<td><p><a href="application-windowsinfo-v2.md" data-raw-source="[Application](application-windowsinfo-v2.md)">Application</a></p></td>
 <td><p>Specifies the application ID for the app.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Verb](verb.md)</p></td>
+<td><p><a href="verb.md" data-raw-source="[Verb](verb.md)">Verb</a></p></td>
 <td><p>Specifies the verb that the app registers.</p></td>
 </tr>
 <tr class="even">
-<td><p>[AutoplayType](autoplaytype.md)</p></td>
+<td><p><a href="autoplaytype.md" data-raw-source="[AutoplayType](autoplaytype.md)">AutoplayType</a></p></td>
 <td><p>Specifies whether the AutoPlay event is a device event or a content event. AutoPlay determines the type of device and raises either a Device event for non-volume devices, or a Content event for volume devices.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EnableAutoPlayForRegisteredApps](enableautoplayforregisteredapps.md)</p></td>
+<td><p><a href="enableautoplayforregisteredapps.md" data-raw-source="[EnableAutoPlayForRegisteredApps](enableautoplayforregisteredapps.md)">EnableAutoPlayForRegisteredApps</a></p></td>
 <td><p>Specifies whether AutoPlay is enabled for registered apps.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -82,13 +82,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[LaunchApplicationOnDeviceConnect](launchapplicationondeviceconnect.md)</p></td>
+<td><p><a href="launchapplicationondeviceconnect.md" data-raw-source="[LaunchApplicationOnDeviceConnect](launchapplicationondeviceconnect.md)">LaunchApplicationOnDeviceConnect</a></p></td>
 <td><p>Specifies an app that should appear as the recommended AutoPlay action when a user plugs in the device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -121,9 +121,9 @@ There are no attributes.
 
 The AutoplayHandler element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

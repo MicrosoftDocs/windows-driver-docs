@@ -20,9 +20,9 @@ You can use these extensions only with Windows 2000 targets.
 
 These extensions are not described in this documentation. For descriptions of these extensions, see the OEM Support Tools documentation. To get this documentation, along with the entire OEM Support Tools package, go to [Microsoft Support Article 253066](https://go.microsoft.com/fwlink/p/?LinkId=241339) and follow the instructions on that page.
 
- 
+ 
 
- 
+ 
 
 
 

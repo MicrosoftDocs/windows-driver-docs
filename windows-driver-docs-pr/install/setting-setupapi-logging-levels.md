@@ -30,7 +30,7 @@ To specify logging levels for individual device installation applications, creat
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\AppLogLevels
 ```
 
-Under this key, create a value name representing the application's executable file name, and assign the desired logging level to that name (using the values listed in the tables below), such as **service.exe=***LoggingLevel*.
+Under this key, create a value name representing the application's executable file name, and assign the desired logging level to that name (using the values listed in the tables below), such as **service.exe=**<em>LoggingLevel</em>.
 
 The logging level is a DWORD value. If this value is not specified or is zero, SetupAPI uses a default behavior, as indicated in the tables below.
 
@@ -93,7 +93,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -150,7 +150,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -170,7 +170,7 @@ The following tables contain the general logging levels, device installation log
 </tr>
 <tr class="even">
 <td align="left"><p>0x20000000</p></td>
-<td align="left"><p>(<em>Windows XP and later</em>) Don't flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
+<td align="left"><p>(<em>Windows XP and later</em>) Don&#39;t flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40000000</p></td>
@@ -183,7 +183,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 For example, SetupAPI interprets some sample *LoggingFlags* values as follows:
 
@@ -233,9 +233,9 @@ To modify the default SetupAPI logging levels during a clean installation, edit 
 
 12. To verify this change, press SHIFT+F10 in GUI-mode Setup, then run *regedit.exe* and check the logging level.
 
- 
+ 
 
- 
+ 
 
 
 

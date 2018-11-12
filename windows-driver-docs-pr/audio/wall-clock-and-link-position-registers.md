@@ -33,9 +33,9 @@ The HD Audio controller hardware mirrors the wall clock and link position regist
 
 Register mirroring must accommodate the host processor's page size. Depending on the host processor architecture, a typical page size might be 4,096 or 8,192 bytes.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of the array of [**WDI\_PHY\_TYPE**](https://msdn.microsoft.
 |-------------------------------------------------|------------------------------|
 | [**WDI\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926105)\[\] | An array of PHY type values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

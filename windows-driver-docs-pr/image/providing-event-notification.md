@@ -25,9 +25,9 @@ The WIA service uses this method to notify the driver of events that may require
 
 For a sample implementation of the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method, illustrating how it should respond to various kinds of events, see [Adding Interrupt Event Support](adding-interrupt-event-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

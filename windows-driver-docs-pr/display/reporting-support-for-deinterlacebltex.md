@@ -32,9 +32,9 @@ Support for the DXVA\_VideoProcess\_YUV2RGBExtended flag indicates that the disp
 
 Support for the DXVA\_VideoProcess\_AlphaBlendExtended flag indicates that the display driver can perform an alpha-blend operation with the destination surface when the deinterlaced and composited pixels are written to the destination surface. The driver must handle background color based on the alpha value of the *fAlpha* parameter in the [**DeinterlaceBltEx**](https://msdn.microsoft.com/library/windows/hardware/ff563927) call. When the alpha value is 1.0f, the background color is drawn opaque (without transparency). When the alpha value is 0.0f, the background should not be drawn (transparent).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | WDI\_CHANNEL\_NUMBER (UINT32) | The logical channel number on which the peer was discovered. |
 | UINT32                        | The band ID for the BSS entry.                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

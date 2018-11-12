@@ -23,9 +23,9 @@ Resource managers close their handles to enlistment objects by calling [**ZwClos
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

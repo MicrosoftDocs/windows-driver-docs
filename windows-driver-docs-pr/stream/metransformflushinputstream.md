@@ -25,7 +25,7 @@ When Device MFT’s output is changed or flushed, the related input streams may 
 |------------------------|---------------------------------------------------------------------------------|
 | **Input stream index** | The input stream index must be set on the attribute store of the IMFMediaEvent. |
 
- 
+ 
 
 ## Remarks
 
@@ -34,9 +34,9 @@ When Device MFT’s input stream’s connected stream needs to be flushed, it ge
 
 In general, this event would be called when the stream itself is in running state or about to be stopped.
 
- 
+ 
 
- 
+ 
 
 
 

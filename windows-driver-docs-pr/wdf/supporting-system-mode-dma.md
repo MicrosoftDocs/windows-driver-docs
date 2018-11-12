@@ -58,9 +58,9 @@ If your device does not raise an interrupt to signal DMA transfer completion, yo
 
 To register this callback function, a driver calls [**WdfDmaTransactionSetTransferCompleteCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439261) from one of its [request handlers](request-handlers.md).
 
- 
+ 
 
- 
+ 
 
 
 

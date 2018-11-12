@@ -47,9 +47,9 @@ The driver must use the WIA properties on the flatbed scanner item as settings t
 
 Multiregion scanning from the flatbed is possible either though manual configuration or by automatically using the [WIA Segmentation Filter](wia-segmentation-filter.md). Note that the segmentation filter is no different from an application in what it can and cannot do. The same procedures that are described for the segmentation filter can be run directly by the application to create child items for new scan regions.
 
- 
+ 
 
- 
+ 
 
 
 

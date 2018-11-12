@@ -40,7 +40,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>WDI_INTERCONNECT_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926068) (UINT32)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926068" data-raw-source="[&lt;strong&gt;WDI_INTERCONNECT_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926068)"><strong>WDI_INTERCONNECT_TYPE</strong></a> (UINT32)</td>
 <td>Interconnect type.</td>
 </tr>
 <tr class="even">
@@ -85,7 +85,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -111,9 +111,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

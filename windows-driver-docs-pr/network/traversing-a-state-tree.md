@@ -60,9 +60,9 @@ It is extremely important that an offload target offload the state from a state 
 
 Note that a TCP connection is enabled as soon as it is offloaded.
 
- 
+ 
 
- 
+ 
 
 
 

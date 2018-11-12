@@ -20,9 +20,9 @@ When this command is issued, the system will call **KeBugCheck** and issue [**bu
 
 After the crash dump file has been written, the kernel debugger on the host computer will be alerted and can be used to actively debug the crashed target.
 
- 
+ 
 
- 
+ 
 
 
 

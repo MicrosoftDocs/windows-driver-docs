@@ -23,7 +23,7 @@ An NDIS driver that runs in the management operating system of the Hyper-V paren
 
 **Note**  Starting with Windows Server 2008, the Hyper-V extensible switch component provides NetVSP support to the NetVSC components that run in the guest operating system. For more information about this component, see [Hyper-V Extensible Switch](hyper-v-extensible-switch.md).
 
- 
+ 
 
 <a href="" id="network-virtual-service-client--netvsc-"></a>**Network Virtual Service Client (NetVSC)**  
 An NDIS driver that runs in the guest operating system of a Hyper-V child partition. NetVSC exposes a virtualized view of the physical network adapter on the host computer. This virtualized device is known as the *VM network adapter*.
@@ -39,7 +39,7 @@ A virtual communications bus that passes control and data messages between the H
 
 **Note**  In Hyper-V, a child partition is also known as a virtual machine (VM).
 
- 
+ 
 
 <a href="" id="vm-bus-channel"></a>**VM Bus Channel**  
 A communications channel on the VMBus between a NetVSC in a Hyper-V child partition and the NetVSP in the Hyper-V parent partition.
@@ -50,9 +50,9 @@ A queue for received data. A network adapter that supports VMQ has hardware to r
 <a href="" id="vmq-filter"></a>**VMQ Filter**  
 A filter to test incoming data. A network adapter that supports VMQ uses filters to test packet data in order to assign the packet to a queue.
 
- 
+ 
 
- 
+ 
 
 
 

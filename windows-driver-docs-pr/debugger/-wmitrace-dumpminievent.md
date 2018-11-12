@@ -43,9 +43,9 @@ Remarks
 
 The *system event log trace fragment* is a copy of the contents of the last buffer of the System Event Log. The **!wmitrace.dumpminievent** extension displays its contents in event log format.
 
- 
+ 
 
- 
+ 
 
 
 

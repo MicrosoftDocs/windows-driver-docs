@@ -34,9 +34,9 @@ After the *MiniportUpdateOffload* function has returned, the offload target uses
 
 -   The tree might indicate that path-to-neighbor links must be updated. (For more information about how these links are updated, see [Linking Path State Objects to a New Neighbor State Object](linking-path-state-objects-to-a-new-neighbor-state-object.md).) In this situation, the offload target must update its internal representation of offloaded state to reflect the updated links.
 
- 
+ 
 
- 
+ 
 
 
 

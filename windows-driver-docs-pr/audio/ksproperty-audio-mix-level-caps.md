@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_CAPS property specifies the mix-level capabil
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSAUDIO_MIXCAP_TABLE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537088)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537088" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXCAP_TABLE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537088)"><strong>KSAUDIO_MIXCAP_TABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSAUDIO\_MIXCAP\_TABLE, which specifies the capabilities of all *m*\**n* input-output pathways in a supermixer node with *m* input channels and *n* output channels.
 
@@ -86,9 +86,9 @@ Requirements
 
 [**KSNODETYPE\_SUPERMIX**](ksnodetype-supermix.md)
 
- 
+ 
 
- 
+ 
 
 
 

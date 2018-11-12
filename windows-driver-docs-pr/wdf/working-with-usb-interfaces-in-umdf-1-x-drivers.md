@@ -57,11 +57,11 @@ The device's alternate settings must be numbered contiguously, starting with zer
 
 **Important**   Selecting a setting invalidates any information about the interface and endpoints. Therefore, the driver should obtain this information again. The driver must also discard any USB pipe objects that it previously retrieved and recreate them.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

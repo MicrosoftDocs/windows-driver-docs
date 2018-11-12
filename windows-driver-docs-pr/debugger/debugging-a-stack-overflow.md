@@ -220,9 +220,9 @@ ChildEBP RetAddr
 
 This shows that **Header\_Draw** allocated 0x58 bytes of stack space.
 
- 
+ 
 
- 
+ 
 
 
 

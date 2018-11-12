@@ -18,9 +18,9 @@ A function that contains a PAGED\_CODE or PAGED\_CODE\_LOCKED macro has not been
 
 This error usually occurs when the function was intended to be paged, but one of the pragmas was omitted or misplaced, or when a function changed from paged to non-paged. For more information, see [Warning C28170](28170-pageable-code-macro-not-found.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ In CoNDIS 6.0, the [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/libr
 
 For more information about status indications in CoNDIS miniport drivers, see [CoNDIS Miniport Driver Status Indications](condis-miniport-driver-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

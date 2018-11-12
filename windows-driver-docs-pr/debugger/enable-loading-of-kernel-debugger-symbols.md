@@ -41,15 +41,15 @@ The **Enable loading of kernel debugger symbols** flag loads kernel symbols into
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The kernel symbols are used in kernel profiling and by advanced kernel debugging tools.
 
- 
+ 
 
- 
+ 
 
 
 

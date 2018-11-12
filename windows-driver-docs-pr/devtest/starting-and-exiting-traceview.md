@@ -38,9 +38,9 @@ To start the TraceView at the command line, open a Command Prompt window, naviga
 
 For information about the TraceView commands, see [TraceView Command-Line Interface](traceview-command-line-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ This section of the INF defines a set of files to be embedded-signed as part of 
 <a href="" id="sourcedisksnames-section"></a>[**SourceDisksNames Section**](inf-sourcedisksnames-section.md)  
 This section is required if the INF file has a corresponding **SourceDisksFiles** section. This section is required to install IHV/OEM-supplied devices and their drivers from distribution media included in packaged products. It is also required in such an INF file that installs either of the following:
 
--   A co-installer DLL to supplement the operations of a system-supplied device class installer or co-installers (see also *DDInstall***.CoInstallers** later in this list)
+- A co-installer DLL to supplement the operations of a system-supplied device class installer or co-installers (see also <em>DDInstall</em>**.CoInstallers** later in this list)
 
--   A new class installer DLL to supplement the operations of the OS's device installer (see also **ClassInstall32**)
+- A new class installer DLL to supplement the operations of the OS's device installer (see also **ClassInstall32**)
 
 This section identifies the individual source distribution disks or CD-ROM discs for the installation. By contrast, the system-supplied INF files each specify a **LayoutFile** entry in their **Version** sections and provide at least one other INF file detailing the source distribution contents and layout of all software components to be installed.
 
@@ -48,7 +48,7 @@ Generally, most INF files for device drivers and for the system class installers
 <a href="" id="manufacturer-section"></a>[**Manufacturer Section**](inf-manufacturer-section.md)  
 This section is required in INF files for devices and their drivers.
 
-The **Manufacturer** section of a system device class INF is sometimes called a "Table of Contents," because each of its entries references an INF-writer-defined *Models* section, which, in turn, references additional INF-writer-defined sections, such as a per-models-entry *DDInstall* section, *DDInstall***.Services** section, and so forth.
+The **Manufacturer** section of a system device class INF is sometimes called a "Table of Contents," because each of its entries references an INF-writer-defined *Models* section, which, in turn, references additional INF-writer-defined sections, such as a per-models-entry *DDInstall* section, <em>DDInstall</em>**.Services** section, and so forth.
 
 <a href="" id="models-section--per-manufacturer-entry--"></a>[**Models Section**](inf-models-section.md) (per **Manufacturer** entry)   
 This section is required to identify the devices for which the INF file installs drivers. It specifies a set of mappings between the generic name (string) for a device, the device ID, and the name of the *DDInstall* section, elsewhere in the INF file that contains the installation instructions for the device.
@@ -67,7 +67,7 @@ This optional section adds device-specific (and typically, driver-independent) i
 <a href="" id="ddinstall-coinstallers-section"></a>[***DDInstall*.CoInstallers Section**](inf-ddinstall-coinstallers-section.md)  
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of the system's device installer or of an existing device class installer.
 
@@ -76,14 +76,14 @@ A co-installer is an IHV/OEM-provided Win32 DLL that typically writes additional
 <a href="" id="ddinstall-factdef-section"></a>[***DDInstall*.FactDef Section**](inf-ddinstall-factdef-section.md)  
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section should be included in the INF file of any manually installed non-PnP device. It specifies the factory default hardware configuration settings, such as the bus-relative I/O ports, IRQ (if any), and so forth, for the card.
 
 <a href="" id="ddinstall-logconfigoverride-section"></a>[***DDInstall*.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md)  
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section is used to create an [override configuration](https://msdn.microsoft.com/library/windows/hardware/ff547012#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
@@ -100,7 +100,7 @@ An INF file's **DefaultInstall** section will be accessed if a user selects the 
 This section is the same as the [**INF DDInstall.Services section**](inf-ddinstall-services-section.md), and is used in association with an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
 
 <a href="" id="strings-section"></a>[**Strings Section**](inf-strings-section.md)  
-This section is required in every INF file to define each **%***strkey***%** token specified in the INF. By convention, the **Strings** section (or sections if the INF provides a set of locale-specific **Strings** sections) appears last in all system-supplied INF files for ease of maintenance and localization.
+This section is required in every INF file to define each **%**<em>strkey</em>**%** token specified in the INF. By convention, the **Strings** section (or sections if the INF provides a set of locale-specific **Strings** sections) appears last in all system-supplied INF files for ease of maintenance and localization.
 
 Some sections listed here, especially those with *Install* in their names, can contain directives that reference additional INF-writer-defined sections. Each directive causes particular operations to be performed on the items listed under the appropriate type of INF-writer-defined section during the installation process.
 
@@ -110,13 +110,13 @@ Optional entries and directives within each such section are shown enclosed in u
 
 **\[Version\]**
 ...
-\[**Provider=%***INF-creator***%**\]
+\[**Provider=%**<em>INF-creator</em>**%**\]
 ...
 The **Provider** entry in a **\[Version\]** section is optional in the sense that it is not a mandatory entry in every INF file.
 
- 
+ 
 
- 
+ 
 
 
 

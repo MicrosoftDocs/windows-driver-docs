@@ -105,9 +105,9 @@ After the resource manager calls **ZwCommitComplete**, it should call [**ZwClose
 
 If a resource manager encounters an error while it is processing a TRANSACTION\_NOTIFY\_COMMIT notification, it should shut itself down. The next time that the operating system reloads the resource manager, the resource manager's [recovery process](handling-recovery-operations.md) should restore the transaction to a state that was known to be good before the error occurred.
 
- 
+ 
 
- 
+ 
 
 
 

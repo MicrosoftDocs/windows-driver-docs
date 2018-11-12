@@ -13,7 +13,7 @@ This section introduces the concepts and practices that you need to understand t
 
 **Note**   Before you review the topics in the [Device and Driver Installation Advanced Topics](device-and-driver-installation-advanced-topics.md) section, we recommend that you study and understand the information in this section first.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -31,9 +31,9 @@ This section includes the following topics:
 
 [Updating Driver Files](updating-driver-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

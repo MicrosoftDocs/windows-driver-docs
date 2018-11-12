@@ -54,9 +54,9 @@ A miniclass driver should be prepared to handle requests for the following:
 
 Some batteries are not capable of reporting all this information. A miniclass driver should return STATUS\_INVALID\_DEVICE\_REQUEST for any information that its device cannot supply.
 
- 
+ 
 
- 
+ 
 
 
 

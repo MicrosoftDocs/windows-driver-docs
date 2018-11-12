@@ -33,9 +33,9 @@ This property set contains only a single property:
 
 [**KSPROPERTY\_ITD3D\_PARAMS**](ksproperty-itd3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

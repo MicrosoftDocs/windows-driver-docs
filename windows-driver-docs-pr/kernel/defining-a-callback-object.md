@@ -26,9 +26,9 @@ When the callback condition occurs, the driver calls [**ExNotifyCallback**](http
 
 After all operations have been completed with the callback object, the driver that created the callback should call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to decrement its reference count and ensure that the object is deleted.
 
- 
+ 
 
- 
+ 
 
 
 

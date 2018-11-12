@@ -24,9 +24,9 @@ If it has an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardw
 
 The driver can provide the necessary storage in a device extension, in a controller extension, or in nonpaged pool allocated by the driver.
 
- 
+ 
 
- 
+ 
 
 
 

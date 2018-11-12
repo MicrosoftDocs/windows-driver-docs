@@ -67,7 +67,7 @@ The maximum supported packet size, in bytes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -77,9 +77,9 @@ The maximum supported packet size, in bytes.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

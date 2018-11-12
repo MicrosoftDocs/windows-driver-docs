@@ -28,7 +28,7 @@ The XPS Rasterization Service can also provide rasterization in several pixel fo
 | GUID\_WICPixelFormat64bppPRGBAHalf   | 4             | 16               | 64             | Float        |
 | GUID\_WICPixelFormat128bppPRGBAFloat | 4             | 32               | 128            | Float        |
 
- 
+ 
 
 **IPrintCoreHelperUni2**
 

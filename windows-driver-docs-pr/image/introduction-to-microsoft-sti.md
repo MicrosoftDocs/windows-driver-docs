@@ -29,9 +29,9 @@ Microsoft STI defines several [Still Image COM Interfaces](still-image-com-inter
 
 The next section provides more information about these and other [Microsoft STI Components](microsoft-sti-components.md).
 
- 
+ 
 
- 
+ 
 
 
 

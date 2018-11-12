@@ -14,7 +14,7 @@ This function selects which firmware image is active. The selected image shall b
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -46,12 +46,12 @@ This function selects which firmware image is active. The selected image shall b
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]   
 &gt;The firmware shall write the **Firmware Slot** value to the lower 4 bits of the \**FW\_SLOT\_INFO* (3, 0x42) register.
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -79,12 +79,12 @@ This function selects which firmware image is active. The selected image shall b
 <td align="left"><p>This function can return the following Function-Specific Error Codes:</p>
 <p>1: Invalid slot number.</p>
 <p>2: There is no image in this slot.</p>
-<p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -99,9 +99,9 @@ This function selects which firmware image is active. The selected image shall b
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

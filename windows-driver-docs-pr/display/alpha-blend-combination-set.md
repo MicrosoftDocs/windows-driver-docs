@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The minimal interoperability configuration set for alpha-blend combination consists of the **bConfigBlendType** member of the [**DXVA\_ConfigAlphaCombine**](https://msdn.microsoft.com/library/windows/hardware/ff563126) structure having a choice of values according to the [restricted profile](restricted-profiles.md) being implemented.
 
- 
+ 
 
- 
+ 
 
 
 

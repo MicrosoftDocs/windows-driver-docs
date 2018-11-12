@@ -63,9 +63,9 @@ NDIS miniport drivers that support network wake-up events can optionally support
 
     Protocol drivers query this OID to determine the number of valid wake-ups that are signaled by the miniport driver's network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

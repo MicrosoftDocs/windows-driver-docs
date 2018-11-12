@@ -34,9 +34,9 @@ For more information about which versions of UMDF are available in specific vers
 -   [Architecture of the User-Mode Driver Framework](https://msdn.microsoft.com/windows/hardware/gg463289)
 -   [A COM QuickStart for UMDF Developers](https://msdn.microsoft.com/windows/hardware/gg463299)
 
- 
+ 
 
- 
+ 
 
 
 

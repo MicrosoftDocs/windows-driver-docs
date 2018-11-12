@@ -31,9 +31,9 @@ ms.localizationpriority: medium
 -   [Determining Why a UMDF Driver Consumes an Excessive Amount of Memory](determining-why-a-umdf-driver-consumes-an-excessive-amount-of-memory.md)
 -   [Summary of Debugger Extensions in Wudfext.dll](using-umdf-debugger-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ This function returns information about errors currently being injected.
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -46,22 +46,22 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Operation Failures Injected</strong></td>
 <td align="left">2</td>
 <td align="left">4</td>
 <td align="left"><p>Information about which operation or non-volatile memory errors are currently injected.</p>
-<p>*Byte 0 – <em>INJECT_OPS_FAILURES</em> (2, 0x60)</p>
-<p>*Byte 1 – If <em>INJECT_BAD_BLOCKS</em> is ‘1’ (bit 7 of Byte 0), this is *<em>INJECT_BAD_BLOCK_CAP</em> (2, 0x67). Otherwise, this shall be 0.</p></td>
+<p><em>Byte 0 – <em>INJECT_OPS_FAILURES</em> (2, 0x60)</p>
+<p></em>Byte 1 – If <em>INJECT_BAD_BLOCKS</em> is ‘1’ (bit 7 of Byte 0), this is <em><em>INJECT_BAD_BLOCK_CAP</em> (2, 0x67). Otherwise, this shall be 0.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Energy Source Failures Injected</strong></td>
 <td align="left">1</td>
 <td align="left">6</td>
 <td align="left"><p>Information about which Energy Source (ES) errors are currently injected.</p>
-<p>*Byte 0 – <em>INJECT_ES_FAILURES</em> (2, 0x64)</p></td>
+<p></em>Byte 0 – <em>INJECT_ES_FAILURES</em> (2, 0x64)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Firmware Update Failures Injected</strong></td>
@@ -73,7 +73,7 @@ None.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -89,9 +89,9 @@ If the platform disabled error injections, this function shall succeed and retur
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

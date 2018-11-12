@@ -32,9 +32,9 @@ If your UMDF driver calls [**WdfDeviceMapIoSpace**](https://msdn.microsoft.com/l
 
 For an example that shows how a driver finds and maps memory-mapped register resources, see [Reading and Writing to Device Registers](reading-and-writing-to-device-registers.md).
 
- 
+ 
 
- 
+ 
 
 
 

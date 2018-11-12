@@ -20,9 +20,9 @@ This topic applies to DirectX 7.0 and later.
 
 To prevent memory leaks, a display driver must release all objects associated with a Direct3D context when the driver's [**D3dContextDestroy**](https://msdn.microsoft.com/library/windows/hardware/ff542180) function is called. These objects include, for example, vertex and pixel [shaders](direct3d-shaders.md), [declarations and code for vertex shaders](separating-declarations-and-code-for-vertex-shaders.md), resources for [asynchronous queries](supporting-asynchronous-query-operations.md), and texture resources.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ For more information about initializing a virtual miniport, see [Initializing a 
 
 NDIS 6.0 filter drivers do not require a virtual miniport. For more information about filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

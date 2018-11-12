@@ -48,7 +48,7 @@ Specifies the number of the breakpoint to be disabled. An asterisk (\*) indicate
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Disabled breakpoints will be ignored. Use [**!ube**](-ube.md) to re-enable the b
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

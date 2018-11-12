@@ -48,9 +48,9 @@ Requirements
 
 [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567948)
 
- 
+ 
 
- 
+ 
 
 
 

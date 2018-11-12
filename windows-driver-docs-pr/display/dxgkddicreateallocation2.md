@@ -29,8 +29,8 @@ Syntax
 DXGKDDI_CREATEALLOCATION2 DxgkDdiCreateAllocation2;
 
 NTSTATUS DxgkDdiCreateAllocation2(
-   IN_CONST_HANDLE                  hAdapter,
-   INOUT_PDXGKARG_CREATEALLOCATION2 pCreateAllocation
+   IN_CONST_HANDLE                  hAdapter,
+   INOUT_PDXGKARG_CREATEALLOCATION2 pCreateAllocation
 )
 { ... }
 ```
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

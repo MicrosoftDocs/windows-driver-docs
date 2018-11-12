@@ -23,17 +23,17 @@ The computer that runs the debugger is called the *host computer*, and the compu
 > You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
 
 
-1.  On the target computer, open a Command Prompt window as Administrator, and enter the following commands, where *n* is the number of the COM port used for debugging on the target computer, and *rate* is the baud rate used for debugging:
+1. On the target computer, open a Command Prompt window as Administrator, and enter the following commands, where *n* is the number of the COM port used for debugging on the target computer, and *rate* is the baud rate used for debugging:
 
-    **bcdedit /debug on**
+   **bcdedit /debug on**
 
-    **bcdedit /dbgsettings serial debugport:***n* **baudrate:***rate*
+   **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:**<em>rate</em>
 
-    **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
+   **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
 
-     
+     
 
-2.  Reboot the target computer.
+2. Reboot the target computer.
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
@@ -46,21 +46,21 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window; *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
-**windbg -k com:port=COM***n***,baud=***rate*
+**windbg -k com:port=COM**<em>n</em>**,baud=**<em>rate</em>
 
 ### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
 
 On the host computer, open a Command Prompt window, and enter the following command, where *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
-**kd -k com:port=COM***n***,baud=***rate*
+**kd -k com:port=COM**<em>n</em>**,baud=**<em>rate</em>
 
 ## <span id="Using_Environment_Variables"></span><span id="using_environment_variables"></span><span id="USING_ENVIRONMENT_VARIABLES"></span>Using Environment Variables
 
 
 On the host computer, you can use environment variables to specify the COM port and the baud rate. Then you do not have to specify the port and baud rate each time you start a debugging session. To use environment variables to specify the COM port and baud rate, open a Command Prompt window and enter the following commands, where *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
--   **set \_NT\_DEBUG\_PORT=COM***n*
--   **set \_NT\_DEBUG\_BAUD\_RATE=***rate*
+- **set \_NT\_DEBUG\_PORT=COM***n*
+- **set \_NT\_DEBUG\_BAUD\_RATE=**<em>rate</em>
 
 To start a debugging session, open a Command Prompt window, and enter one of the following commands:
 
@@ -113,7 +113,7 @@ The following tables show how null-modem cables are wired.
 | 1+6         | 4           | (CD+DSR) - DTR |
 | 5           | 5           | Signal ground  |
 
- 
+ 
 
 ### <span id="25-pin_connector"></span><span id="25-PIN_CONNECTOR"></span>25-pin connector
 
@@ -127,7 +127,7 @@ The following tables show how null-modem cables are wired.
 | 20          | 6           | DTR - DSR     |
 | 7           | 7           | Signal ground |
 
- 
+ 
 
 ### <span id="Signal_Abbreviations"></span><span id="signal_abbreviations"></span><span id="SIGNAL_ABBREVIATIONS"></span>Signal Abbreviations
 
@@ -141,7 +141,7 @@ The following tables show how null-modem cables are wired.
 | DSR          | Data set ready      |
 | CD           | Carrier detect      |
 
- 
+ 
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -153,9 +153,9 @@ For complete documentation of the **bcdedit** command, see Boot Options for Driv
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

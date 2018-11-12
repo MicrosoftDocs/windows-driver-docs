@@ -22,9 +22,9 @@ A DirectX 9.0 version driver for a device that supports any nonstandard display 
 
 [Handling Nonstandard Display Modes](handling-nonstandard-display-modes.md)
 
- 
+ 
 
- 
+ 
 
 
 

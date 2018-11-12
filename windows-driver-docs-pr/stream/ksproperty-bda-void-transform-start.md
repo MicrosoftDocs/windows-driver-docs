@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_START to start operation of a node
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -76,9 +76,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

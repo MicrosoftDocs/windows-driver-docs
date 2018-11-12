@@ -13,7 +13,7 @@ This section provides a glimpse of what's new for UWP device apps. For more info
 
 **Tip**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth GATT, Bluetooth RFCOMM, Wi-Fi Direct devices, and more. For more info, see [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279).
 
- 
+ 
 
 ## <span id="What_s_new_for_Windows_10"></span><span id="what_s_new_for_windows_10"></span><span id="WHAT_S_NEW_FOR_WINDOWS_10"></span>What's new for Windows 10
 
@@ -27,7 +27,7 @@ Windows 8.1 introduces a new device metadata wizard. Easily create device metad
 
 **Note**  To get the Device Metadata Authoring Wizard, you must install the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
- 
+ 
 
 ## <span id="_Background_tasks_for_device_sync_and_update"></span><span id="_background_tasks_for_device_sync_and_update"></span><span id="_BACKGROUND_TASKS_FOR_DEVICE_SYNC_AND_UPDATE"></span> Background tasks for device sync and update
 
@@ -36,7 +36,7 @@ In Windows 8.1, UWP device apps can perform multi-step device operations in a b
 
 **Note**  The [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967), for device sync, doesn't require device metadata.
 
- 
+ 
 
 ## <span id="AutoPlay_for_Windows_Store_device_apps"></span><span id="autoplay_for_windows_store_device_apps"></span><span id="AUTOPLAY_FOR_WINDOWS_STORE_DEVICE_APPS"></span>AutoPlay for UWP device apps
 
@@ -57,9 +57,9 @@ To provide an experience consistent with other UWP apps installed on Windows 8.
 
 The Windows 8.1 built-in Camera app no longer includes an **Options** button. This means that a customized camera-options flyout from a UWP device app won't appear in that app. However, any other UWP app that uses the **Windows.Media.Capture.CameraCaptureUI** class can still expose a customized flyout for **More options**, when installed.
 
- 
+ 
 
- 
+ 
 
 
 

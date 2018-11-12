@@ -54,7 +54,6 @@ AddReg = Xxx_AddReg
 ...
 [HKR,,DeviceCharacteristics,0x10001,0x00000001
 ] 
- 
 ```
 
 The **DeviceCharacteristics** registry entry value corresponds to the [**DEVPKEY_Device_Characteristics**](https://msdn.microsoft.com/library/windows/hardware/ff542375) property in the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) in Windows Vista and later versions of Windows.
@@ -74,14 +73,13 @@ AddReg = Xxx_AddReg
 ...
 [HKR,,CustomPropertyName,0x10001,0x00000001
 ] 
- 
 ```
 
 For more information about how to access custom device properties that have corresponding custom registry entry values, see [Accessing Custom Device Properties](accessing-custom-device-properties.md).
 
- 
 
- 
+
+
 
 
 

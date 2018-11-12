@@ -39,11 +39,11 @@ For more information about event tracing, see the Microsoft Windows SDK document
 
 **Note**   The features of Tracefmt are included in [TraceView](traceview.md). You can use TraceView to display trace messages from a log file or a real-time trace session in the TraceView dialog box or in a Command Prompt window. TraceView is included in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

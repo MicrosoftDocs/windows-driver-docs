@@ -53,14 +53,14 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 
 For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
- 
+ 
 ---
 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
- 
+ 
 
 
 

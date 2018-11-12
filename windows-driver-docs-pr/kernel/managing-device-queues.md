@@ -72,9 +72,9 @@ Note that the preceding sequence implies that the *DpcForIsr* routine also must 
 
 If the port driver attempts to wait until its shared controller/adapter is idle before dequeuing IRPs held in its supplemental device queues, the driver might starve a device for which there was heavy I/O demand while it promptly serviced every other device for which the current I/O demand was actually much lighter.
 
- 
+ 
 
- 
+ 
 
 
 

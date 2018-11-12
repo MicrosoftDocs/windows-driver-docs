@@ -37,15 +37,15 @@ Direct Draw surfaces are created in a four-stage process. These stages are:
 **Note**   A DirectDraw driver must never directly allocate user-mode memory for a surface (for example, by calling the [**EngAllocUserMem**](https://msdn.microsoft.com/library/windows/hardware/ff564178) function). Instead, the driver can have the DirectDraw runtime allocate user-mode memory for a surface.
 If the driver allocates the memory directly, a subsequent request to change the video mode by a process other than the one that created the surface, could cause an operating system crash or memory leaks. To have the DirectDraw runtime allocate user-mode memory, the driver should return the DDHAL\_PLEASEALLOC\_USERMEM value from its [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) function. For more information, see the Remarks section on the *DdCreateSurface* reference page.
 
- 
+ 
 
 Surfaces are destroyed by a single call to the driver's [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) entry point only if the driver allocated or was involved in allocating the memory for the surface during surface creation. If the DirectDraw runtime allocated the memory and the driver was not involved, the runtime does not call *DdDestroySurface*.
 
 Surfaces persist only as long as the mode in which they are created persists. Where there is a mode change, all the surfaces under the driver's control are destroyed, as far as the driver is concerned. There are also other events that can cause all surfaces to be destroyed in this way. It is not necessary for the driver to determine the cause of a [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) call.
 
- 
+ 
 
- 
+ 
 
 
 

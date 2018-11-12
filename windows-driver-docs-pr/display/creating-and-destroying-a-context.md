@@ -30,9 +30,9 @@ The driver must be able to reference all texture handles created by [**D3dCreate
 
 Direct3D calls [**D3dContextDestroy**](https://msdn.microsoft.com/library/windows/hardware/ff542180) when an application requests that a Direct3D HAL device be destroyed. The driver should free all resources that it allocated to the specified context. These resources include, for example, texture resources, vertex and pixel [shaders](direct3d-shaders.md), [declarations and code for vertex shaders](separating-declarations-and-code-for-vertex-shaders.md), and resources for [asynchronous queries](supporting-asynchronous-query-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

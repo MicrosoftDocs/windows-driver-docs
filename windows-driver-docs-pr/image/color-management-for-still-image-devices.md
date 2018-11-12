@@ -21,9 +21,9 @@ A still-image device must be made aware of the color space it sends its data to.
 
 For more information about color management, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

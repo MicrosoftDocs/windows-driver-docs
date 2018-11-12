@@ -24,13 +24,13 @@ NDIS initiates the transition to the working power state (D0) by sending the min
 
 **Note**  Starting with NDIS 6.30, the miniport driver that support [NDIS packet coalescing](ndis-packet-coalescing.md) must clear its coalesced packet counter. The driver must also configure the network adapter to flush any packets that it coalesced before the low-power transition. For more information, see [Handling Packet Coalescing Receive Filters](handling-packet-coalescing-receive-filters.md).
 
- 
+ 
 
 Before the miniport driver returns NDIS\_STATUS\_SUCCESS in response to the OID\_PNP\_SET\_POWER request, the miniport driver and a network adapter must be ready for normal operation.
 
- 
+ 
 
- 
+ 
 
 
 

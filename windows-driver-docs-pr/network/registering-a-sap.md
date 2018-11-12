@@ -36,9 +36,9 @@ If the client's call to **NdisClRegisterSap** is successful, NDIS returns to the
 
 After a call manager registers a SAP on behalf of a connection-oriented client, it notifies that client of an incoming call offer directed to that SAP by calling [**NdisCmDispatchIncomingCall**](https://msdn.microsoft.com/library/windows/hardware/ff561664). An MCM driver calls [**NdisMCmDispatchIncomingCall**](https://msdn.microsoft.com/library/windows/hardware/ff562830)(see [Indicating an Incoming Call](indicating-an-incoming-call.md)). A client can receive incoming calls on a SAP even while SAP registration is still pending; that is, before its *ProtocolClRegisterSapComplete* function is called.
 
- 
+ 
 
- 
+ 
 
 
 

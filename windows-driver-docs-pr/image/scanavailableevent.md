@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ClientContext</strong>](clientcontext.md)</p></td>
+<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanIdentifier</strong>](scanidentifier.md)</p></td>
+<td><p><a href="scanidentifier.md" data-raw-source="[&lt;strong&gt;ScanIdentifier&lt;/strong&gt;](scanidentifier.md)"><strong>ScanIdentifier</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -190,9 +190,9 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 
 [**ScanIdentifier**](scanidentifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

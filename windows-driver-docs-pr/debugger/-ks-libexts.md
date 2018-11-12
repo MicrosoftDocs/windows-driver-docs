@@ -66,7 +66,7 @@ Specifies the name of a library extension. Required only for *Command* values of
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -79,9 +79,9 @@ The extension module contains an extensibility framework that allows separate co
 
 The **!ks.libexts** command allows viewing of statistics about those library extensions as well as control over them. For details, issue **!ks.libexts** with no arguments.
 
- 
+ 
 
- 
+ 
 
 
 

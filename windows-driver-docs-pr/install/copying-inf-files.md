@@ -31,9 +31,9 @@ Doing so will:
 
 Installation software must never copy INF files directly into a system's *%SystemRoot%/inf* directory. Copying INF files by using techniques not described in this section will invalidate a driver's digital signature.
 
- 
+ 
 
- 
+ 
 
 
 

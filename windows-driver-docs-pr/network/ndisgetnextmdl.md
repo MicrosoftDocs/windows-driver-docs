@@ -19,8 +19,8 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetNextMdl(
-    _CurrentMdl,
-    _NextMdl
+    _CurrentMdl,
+    _NextMdl
 );
 ```
 
@@ -76,9 +76,9 @@ Requirements
 
 [**NdisGetNextBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff552070)
 
- 
+ 
 
- 
+ 
 
 
 

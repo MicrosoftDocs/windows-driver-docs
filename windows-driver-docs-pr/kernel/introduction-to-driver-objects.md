@@ -31,9 +31,9 @@ The I/O manager defines the driver object type and uses driver objects to regist
 
 The I/O manager routes each IRP first to a driver-supplied dispatch routine. A lowest-level driver's dispatch routine usually calls an I/O support routine ([**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370)) to queue (or pass on) each IRP that has valid arguments to the driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine. The *StartIo* routine starts the requested I/O operation on a particular device. Higher-level drivers usually do not have *StartIo* routines, but they can.
 
- 
+ 
 
- 
+ 
 
 
 

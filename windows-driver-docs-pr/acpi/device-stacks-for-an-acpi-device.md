@@ -40,9 +40,9 @@ Microsoft supplies the root bus driver and the [ACPI driver](https://msdn.micros
 
 A vendor can supply an optional WDM function driver for an ACPI device. The function driver implements the device's operation region and the related device-specific operation.
 
- 
+ 
 
- 
+ 
 
 
 

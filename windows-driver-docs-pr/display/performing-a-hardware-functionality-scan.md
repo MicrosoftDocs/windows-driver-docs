@@ -22,9 +22,9 @@ A display miniport driver must start performing an HFS whenever the Microsoft Di
 
 The HFS can be asynchronous and is not required to complete before [**DxgkDdiStartDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560775) or [**DxgkDdiSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff560764) returns. However, no [OPM DDI](https://msdn.microsoft.com/library/windows/hardware/ff568627) function can return until the HFS completes.
 
- 
+ 
 
- 
+ 
 
 
 

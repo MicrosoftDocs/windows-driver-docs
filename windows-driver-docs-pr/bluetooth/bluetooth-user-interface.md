@@ -16,7 +16,7 @@ The Bluetooth File Transfer Wizard enables users to transfer files between a com
 
 **Note**  The default GUI that the Bluetooth File Transfer Wizard uses is implemented in the Fsquirt.exe file. This file can be unhooked from the underlying transfer wizard mechanism to enable replacement of the default Bluetooth File Transfer Wizard GUI. For more information, see the following question.
 
- 
+ 
 
 ## <span id="how_do_i_unhook_fsquirt.exe_"></span><span id="HOW_DO_I_UNHOOK_FSQUIRT.EXE_"></span>How do I unhook Fsquirt.exe?
 
@@ -43,7 +43,7 @@ If users want a persistent Bluetooth notification area icon, they can select the
 
 **Note**  Even if no Bluetooth icon is in the notification area, you can still use the Control Panel Bluetooth Settings application to perform related tasks such as adding new Bluetooth devices, making the computer discoverable, and so on.
 
- 
+ 
 
 ## <span id="Can_vendors_add_tabs_to_the_Control_Panel_Bluetooth_Settings_application_"></span><span id="can_vendors_add_tabs_to_the_control_panel_bluetooth_settings_application_"></span><span id="CAN_VENDORS_ADD_TABS_TO_THE_CONTROL_PANEL_BLUETOOTH_SETTINGS_APPLICATION_"></span>Can vendors add tabs to the Control Panel Bluetooth Settings application?
 
@@ -69,11 +69,11 @@ For more information about Device Stage, see **“Device Stage General Developme
 
 **Note**  To take advantage of Device Stage, the Device ID Profile must be implemented, which includes the Hardware ID, Vendor ID, and PID.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ If you can reproduce the problem, attach a debugger at this point to determine w
 
 3.  Determine if the processing routine is being called. This can be done by attaching a kernel-mode debugger and setting a breakpoint in this routine.
 
- 
+ 
 
- 
+ 
 
 
 

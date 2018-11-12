@@ -71,9 +71,9 @@ Support for the following extended controls is required for a camera driver to s
 
     Control: [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567575)
 
- 
+ 
 
- 
+ 
 
 
 

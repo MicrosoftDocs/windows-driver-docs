@@ -21,9 +21,9 @@ Each device metadata package must contain only one WindowsInfo XML document. The
 
 The data in the WindowsInfo XML document is formatted based on the [WindowsInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff553992).
 
- 
+ 
 
- 
+ 
 
 
 

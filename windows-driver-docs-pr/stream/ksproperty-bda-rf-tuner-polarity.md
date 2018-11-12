@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_POLARITY to control the polarity setting
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Requirements
 
 [**Polarization**](https://msdn.microsoft.com/library/windows/hardware/ff567780)
 
- 
+ 
 
- 
+ 
 
 
 

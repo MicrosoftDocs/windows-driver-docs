@@ -99,7 +99,7 @@ The following table describes the constants that are valid with WIA\_IPA\_PROP\_
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -117,9 +117,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

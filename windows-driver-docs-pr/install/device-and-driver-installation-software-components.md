@@ -13,7 +13,7 @@ This section contains the following topics which describe the various software c
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 -   [Writing a Co-installer](writing-a-co-installer.md)
 -   [Calling the Default DIF Code Handlers](calling-the-default-dif-code-handlers.md)
@@ -21,9 +21,9 @@ This section contains the following topics which describe the various software c
 -   [Providing Device Property Pages](providing-device-property-pages.md)
 -   [Writing a Device Installation Application](writing-a-device-installation-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

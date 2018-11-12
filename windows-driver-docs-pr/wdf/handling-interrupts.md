@@ -28,9 +28,9 @@ Framework-based drivers manage hardware interrupts by using framework interrupt 
 -   [Synchronizing Interrupt Code](synchronizing-interrupt-code-umdf.md)
 -   [Deleting an Interrupt Object](deleting-an-interrupt-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

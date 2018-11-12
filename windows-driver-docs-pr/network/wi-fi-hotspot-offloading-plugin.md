@@ -64,7 +64,7 @@ The plugin should return its version information, to verify that the plugin vers
 
 This is the main initialization function. It provides the following information to the plugin:
 
-* A context handle for the plugin to use whenever it calls any of the hotspot plugin host (**HS_HOST_\*\***) functions
+* A context handle for the plugin to use whenever it calls any of the hotspot plugin host (**HS_HOST_\*\\***) functions
 * The version number currently used by the host (**dwVerNumUsed**)
 * Information about the device (**pDeviceIdentity**)
 * The OS capabilities available to the plugin, specified as a HS_FLAG_CAPABILITY_NETWORK_** type (**dwHostCapabilities**)

@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentName</strong>](documentname.md)</p></td>
+<td><p><a href="documentname.md" data-raw-source="[&lt;strong&gt;DocumentName&lt;/strong&gt;](documentname.md)"><strong>DocumentName</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,10 +65,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Document</strong>](document.md)</p></td>
+<td><p><a href="document.md" data-raw-source="[&lt;strong&gt;Document&lt;/strong&gt;](document.md)"><strong>Document</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>RetrieveImageRequest</strong>](retrieveimagerequest.md)</p></td>
+<td><p><a href="retrieveimagerequest.md" data-raw-source="[&lt;strong&gt;RetrieveImageRequest&lt;/strong&gt;](retrieveimagerequest.md)"><strong>RetrieveImageRequest</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +82,9 @@ There are no attributes.
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The Storport driver has been designed to report some transport-specific errors and conditions that the SCSI Port driver does not report. For example, Storport reports error conditions that occur on a fibre channel, such as "link-down" errors, where the connection between a fibre channel host bus adapter (HBA) is lost or the fibre channel HBA ceases to transmit signals. Storport supports fibre channel's extended link service and is capable of reporting registered state change notifications (RSCNs) and errors associated with fibre channel's loop initialization protocol (LIP).
 
- 
+ 
 
- 
+ 
 
 
 

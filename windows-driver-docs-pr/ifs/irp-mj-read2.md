@@ -112,7 +112,7 @@ The following only applies when a *stream* is being read. If a TxF transacted re
 </tr>
 </table>
 
- 
+ 
 
 
 

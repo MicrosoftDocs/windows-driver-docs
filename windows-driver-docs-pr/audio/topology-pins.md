@@ -132,7 +132,7 @@ No
 
 MIXERLINE\_TARGETTYPE\_WAVEOUT
 
- 
+ 
 
 The following table shows how the input pin **KS pin category GUID**s map to the associated MIXERLINE component types.
 
@@ -200,7 +200,7 @@ The following table shows how the input pin **KS pin category GUID**s map to the
 </tbody>
 </table>
 
- 
+ 
 
 In the preceding tables, the left column specifies the pin category GUID from the pin's PCPIN\_DESCRIPTOR structure, and the right columns specify the corresponding target type and component type for the MIXERLINE structure.
 
@@ -277,7 +277,7 @@ No
 
 MIXERLINE\_TARGETTYPE\_WAVEIN
 
- 
+ 
 
 The following table shows how the output pin **KS pin category GUID**s map to the associated MIXERLINE component types.
 
@@ -339,7 +339,7 @@ The following table shows how the output pin **KS pin category GUID**s map to th
 </tbody>
 </table>
 
- 
+ 
 
 For all pin categories that do not appear in the preceding tables, WDMAud translates the output pins to destination mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_DST\_UNDEFINED.
 
@@ -355,9 +355,9 @@ Note that two streams on the right side of the audio device in the figure are in
 
 The SndVol32 application is a client of the mixer API. The mixer API converts each pin found in the topology to either a source or destination mixer line, but the line might not be shown in SndVol32, which recognizes only a subset of the mixer-line component types that header file Mmsystem.h defines for the mixer API. For more information about SndVol32, see [SysTray and SndVol32](systray-and-sndvol32.md).
 
- 
+ 
 
- 
+ 
 
 
 

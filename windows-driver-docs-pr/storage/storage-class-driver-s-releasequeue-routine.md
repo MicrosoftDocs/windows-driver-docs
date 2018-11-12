@@ -38,9 +38,9 @@ Failing to release a frozen queue makes the device inaccessible, so a driver's *
 
 Note that a class driver's *ReleaseQueue* routine is called asynchronously, generally from its *IoCompletion* routine. A class driver's *IoCompletion* routine cannot call *ReleaseQueue* to flush a queue that is not frozen. However, it can call *ReleaseQueue* to release an unfrozen queue, and the port driver simply ignores such a request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ If an error occurs after a successful call to **NdisRegisterProtocolDriver**, th
 
 For more information about NDIS 6.0 driver initialization, see [Initializing a Protocol Driver](initializing-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ Autoconfiguration follows the following sequence:
 
 7.  Your plug-in will update the driver UI according to the latest configuration.
 
- 
+ 
 
- 
+ 
 
 
 

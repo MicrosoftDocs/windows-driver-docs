@@ -25,9 +25,9 @@ A wideness node should support the following required property:
 
 [**KSPROPERTY\_AUDIO\_WIDENESS**](ksproperty-audio-wideness.md)
 
- 
+ 
 
- 
+ 
 
 
 

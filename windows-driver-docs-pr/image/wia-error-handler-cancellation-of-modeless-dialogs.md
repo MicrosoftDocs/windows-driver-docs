@@ -28,9 +28,9 @@ Drivers should not send the WIA\_STATUS\_CLEAR message themselves.
 
 The **IWiaTransferCallback** interface is described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

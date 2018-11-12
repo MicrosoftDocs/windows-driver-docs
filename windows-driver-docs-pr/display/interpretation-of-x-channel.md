@@ -19,9 +19,9 @@ The user-mode display driver should read the X channel in all formats that inclu
 
 The X channel must be copied unmodified when data is moved outside of the 3-D pipeline (that is, when an application calls the **ID3D10Device::CopyResource**, **ID3D10Device::CopySubresourceRegion**, or **ID3D10Device::UpdateSubResource** method). For more information about these methods, see the DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

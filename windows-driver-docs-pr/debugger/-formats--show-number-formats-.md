@@ -52,7 +52,7 @@ Specifies the expression to evaluate. For more information about the syntax, see
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -83,9 +83,9 @@ The **Time** field displays a 32-bit value in CRT time stamp format and displays
 
 [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
 
- 
+ 
 
- 
+ 
 
 
 

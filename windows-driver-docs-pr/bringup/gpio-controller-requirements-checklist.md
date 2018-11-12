@@ -52,9 +52,9 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
 -   Set the **EmulateDebouncing** flag in the **CONTROLLER\_BASIC\_INFORMATION** structure. This significantly increases noise immunity for devices whose interrupts are subject to electrostatic discharge (such as buttons, plugs, and so on).
 -   Set the **EmulateActiveBoth** flag in the **CONTROLLER\_BASIC\_INFORMATION** structure, and implement the [*CLIENT\_ReconfigureInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh698243) callback function. This ensures reliable edge detection for ActiveBoth interrupts.
 
- 
+ 
 
- 
+ 
 
 
 

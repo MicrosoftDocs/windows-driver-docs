@@ -46,9 +46,9 @@ Bit (11- *i*) of **wPatternCode** (where bit zero is the least significant bit) 
 
 If the **bConfigSpatialResidInterleaved** member of [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) is 1, host-based residual differences are sent in a chroma-interleaved form matching that of the YUV pixel format in use. In this case, each Cb and spatially corresponding Cr pair of blocks is treated as a single residual difference structure unit. This does not alter the value or meaning of **wPatternCode**, but it implies that both members of each pair of Cb and Cr data blocks are sent whenever either of these data blocks has the corresponding bit (bit 7 or bit 6) set in **wPatternCode**. If the bit in **wPatternCode** for a particular data block is zero, the corresponding residual difference data values must be sent as zero whenever the pairing of the Cb and Cr blocks necessitates sending a residual difference data block for a block with a **wPatternCode** bit equal to zero.
 
- 
+ 
 
- 
+ 
 
 
 

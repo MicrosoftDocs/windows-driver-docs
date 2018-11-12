@@ -23,9 +23,9 @@ Going through the WIA service, an application uses an item to perform such tasks
 
 Applications can call the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method to acquire data from an item by requesting a data transfer from the item.
 
- 
+ 
 
- 
+ 
 
 
 

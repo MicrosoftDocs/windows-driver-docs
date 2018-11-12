@@ -94,7 +94,7 @@ The IHV device will implement and report the following device service when queri
 </tbody>
 </table>
 
- 
+ 
 
 Specifically, the following CIDs are defined for UUID\_MULTICARRIER device service.
 
@@ -155,7 +155,7 @@ Specifically, the following CIDs are defined for UUID\_MULTICARRIER device servi
 </tbody>
 </table>
 
- 
+ 
 
 ## CID\_MBIM\_MULTICARRIER\_CAPABILITIES
 
@@ -195,7 +195,7 @@ Unsolicited Event = **Unsupported**
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -222,7 +222,7 @@ Unsolicited Event = **Unsupported**
 </tbody>
 </table>
 
- 
+ 
 
 ## CID\_MBIM\_LOCATION\_INFO
 
@@ -262,7 +262,7 @@ The country code specified by the host will be based on the Geographical Locatio
 </tbody>
 </table>
 
- 
+ 
 
 ## CID\_MBIM\_MULTICARRIER\_CURRENT\_CID\_LIST
 
@@ -310,11 +310,11 @@ Unsolicited Event = **Unsupported**
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

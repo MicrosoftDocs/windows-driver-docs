@@ -13,7 +13,7 @@ This section introduces UWP device apps for printers. UWP device apps can highli
 
 **Important**  To use UWP device app features, your printer must support the v4 print driver model. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
 
- 
+ 
 
 ## <span id="in_this_section"></span>In this section
 
@@ -31,33 +31,33 @@ This section introduces UWP device apps for printers. UWP device apps can highli
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[How to display printer status](how-to-display-printer-status.md)</p></td>
-<td align="left"><p>This topic uses the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample to demonstrate how to query the printer status and display it.</p></td>
+<td align="left"><p><a href="how-to-display-printer-status.md" data-raw-source="[How to display printer status](how-to-display-printer-status.md)">How to display printer status</a></p></td>
+<td align="left"><p>This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample to demonstrate how to query the printer status and display it.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to customize print settings](how-to-customize-print-settings.md)</p></td>
-<td align="left"><p>This topic introduces the advanced print settings flyout, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample replaces the default flyout with a custom flyout.</p></td>
+<td align="left"><p><a href="how-to-customize-print-settings.md" data-raw-source="[How to customize print settings](how-to-customize-print-settings.md)">How to customize print settings</a></p></td>
+<td align="left"><p>This topic introduces the advanced print settings flyout, and shows how the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample replaces the default flyout with a custom flyout.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Working with print notifications](working-with-print-notifications.md)</p></td>
-<td align="left"><p>This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge.</p></td>
+<td align="left"><p><a href="working-with-print-notifications.md" data-raw-source="[Working with print notifications](working-with-print-notifications.md)">Working with print notifications</a></p></td>
+<td align="left"><p>This topic introduces print notifications, and shows how the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to manage print jobs](how-to-manage-print-jobs.md)</p></td>
-<td align="left"><p>In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job.</p></td>
+<td align="left"><p><a href="how-to-manage-print-jobs.md" data-raw-source="[How to manage print jobs](how-to-manage-print-jobs.md)">How to manage print jobs</a></p></td>
+<td align="left"><p>In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=299829" data-raw-source="[Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829)">Print job management and printer maintenance</a> sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to do printer maintenance](how-to-do-printer-maintenance.md)</p></td>
-<td align="left"><p>In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance.</p></td>
+<td align="left"><p><a href="how-to-do-printer-maintenance.md" data-raw-source="[How to do printer maintenance](how-to-do-printer-maintenance.md)">How to do printer maintenance</a></p></td>
+<td align="left"><p>In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=299829" data-raw-source="[Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829)">Print job management and printer maintenance</a> sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Printer extension library overview](printer-extension-library-overview.md)</p></td>
+<td align="left"><p><a href="printer-extension-library-overview.md" data-raw-source="[Printer extension library overview](printer-extension-library-overview.md)">Printer extension library overview</a></p></td>
 <td align="left"><p>This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Should_I_create_a_Windows_Store_device_app_for_my_printer_"></span><span id="should_i_create_a_windows_store_device_app_for_my_printer_"></span><span id="SHOULD_I_CREATE_A_WINDOWS_STORE_DEVICE_APP_FOR_MY_PRINTER_"></span>Should I create a UWP device app for my printer?
 
@@ -103,9 +103,9 @@ The UWP device app samples for printers demonstrate the printer-related features
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

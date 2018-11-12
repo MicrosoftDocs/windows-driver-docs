@@ -30,9 +30,9 @@ When handling a GUID\_DEVICE\_INTERFACE\_REMOVAL event, a notification callback 
 
 When the device is removed, the driver should close the file handle that it opened during the GUID\_DEVICE\_INTERFACE\_ARRIVAL event callback. For an orderly device removal, the driver should close the file handle during the GUID\_TARGET\_DEVICE\_QUERY\_REMOVE event callback. For a surprise removal, the driver should close the file handle during the GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE event callback. Do not close the file handle during the GUID\_DEVICE\_INTERFACE\_REMOVAL event callback.
 
- 
+ 
 
- 
+ 
 
 
 

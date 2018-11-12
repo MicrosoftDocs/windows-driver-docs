@@ -72,7 +72,7 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -109,9 +109,9 @@ The following will display the value Start in the specified registry key:
 
 Typing **!dreg** without any arguments will display some brief Help text for this extension in the Debugger Command window.
 
- 
+ 
 
- 
+ 
 
 
 

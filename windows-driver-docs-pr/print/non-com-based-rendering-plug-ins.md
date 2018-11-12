@@ -68,9 +68,9 @@ evaluates to the address of the core driver's **DrvLineTo** DDI. The (**PFN\_Drv
 
 Note that when an **OEM***Xxx* DDI calls back to the Unidrv core driver and the surface involved is a device-managed surface, Unidrv can simply ignore the call by returning **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

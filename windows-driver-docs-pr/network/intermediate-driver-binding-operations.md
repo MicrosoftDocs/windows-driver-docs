@@ -22,9 +22,9 @@ Intermediate drivers are not required to allocate separate [**NET\_BUFFER\_LIST*
 
 For information about the requirements to allocate and manage network data, see [Intermediate Driver Network Data Management](intermediate-driver-network-data-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

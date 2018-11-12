@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -29,9 +29,9 @@ A NetDMA provider driver can call [**NetDmaProviderStop**](https://msdn.microsof
 
 The NetDMA interface waits for outstanding DMA operations to complete and frees all of the allocated DMA channels before it returns from the **NetDmaProviderStop** function. For more information about freeing DMA channels, see [Freeing a NetDMA Channel](freeing-a-netdma-channel.md).
 
- 
+ 
 
- 
+ 
 
 
 

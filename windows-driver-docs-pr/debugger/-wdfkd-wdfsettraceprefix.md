@@ -48,9 +48,9 @@ The trace prefix string is prepended to each trace message in the Kernel-Mode Dr
 
 The format of the trace prefix string is defined by the Microsoft Windows tracing tools. For more information about the format of this string and how to customize it, see the "Trace Message Prefix" topic in the Driver Development Tools section of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

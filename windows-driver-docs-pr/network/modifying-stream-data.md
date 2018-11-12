@@ -20,9 +20,9 @@ For a callout driver to inject data into a data stream, it must first create an 
 
 For information about how to modify stream data, see the "Windows Filtering Platform Stream Edit Sample" in the [Hardware Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) code gallery.
 
- 
+ 
 
- 
+ 
 
 
 

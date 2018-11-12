@@ -63,9 +63,9 @@ To end a kernel-mode debugging session, return the debugger to dormant mode, and
 
 When a WinDbg session ends, you are prompted to save the workspace for the current session, and then WinDbg returns to dormant mode. At this point, you can use all starting options. That is, you can start to debug a running process, spawn a new process, attach to a target computer, open a crash dump, or connect to a remote debugging session.
 
- 
+ 
 
- 
+ 
 
 
 

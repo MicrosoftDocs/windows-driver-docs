@@ -26,9 +26,9 @@ If the command did not include a session name, Tracelog would have started an NT
 
 Because the command does not include a **-guid** parameter, no providers are enabled for the trace session, but you can use a **tracelog -enable** command to add providers to this session after it starts.
 
- 
+ 
 
- 
+ 
 
 
 

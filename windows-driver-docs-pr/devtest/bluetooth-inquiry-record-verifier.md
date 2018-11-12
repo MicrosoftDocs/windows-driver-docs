@@ -47,9 +47,9 @@ Use the **View** menu to display results and to view errors.
 -   Extended Inquiry Response record parsing does not work.
 -   **LanguageBaseAttributeIDList** may be marked incorrectly as invalid.
 
- 
+ 
 
- 
+ 
 
 
 

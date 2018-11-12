@@ -17,7 +17,7 @@ Local NDIS Quality of Service (QoS) parameters specify the locally provisioned Q
 
     **Note**  Starting with Windows Server 2012, the DCB component is installed and enabled with the Microsoft Data Center Bridging (DCB) server feature. This feature is not installed by default.
 
-     
+     
 
 -   Through proprietary settings that are stored in the system registry and defined by the independent hardware vendor (IHV) for the network adapter. The miniport driver reads these settings when its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called by NDIS.
 
@@ -35,7 +35,7 @@ When the DCB component issues an OID method request of [OID\_QOS\_PARAMETERS](ht
 
     **Note**  If the local DCBX Willing state is disabled, the miniport driver can still accept the remote QoS parameters but cannot use them to resolve its operational QoS parameters.
 
-     
+     
 
 If the local DCBX Willing state is disabled, the miniport driver must follow these guidelines when it manages its local QoS parameters:
 
@@ -45,7 +45,7 @@ If the local DCBX Willing state is disabled, the miniport driver must follow the
 
     **Note**  NDIS guarantees that both the **NDIS\_QOS\_PARAMETERS\_ETS\_CONFIGURED** and **NDIS\_QOS\_PARAMETERS\_PFC\_CONFIGURED** flags are set or cleared together.
 
-     
+     
 
 -   The miniport driver should *apply* the local QoS parameters that are contained in the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure when it resolves its operational NDIS QoS parameters. If the driver applies these local QoS parameters, it must not use any remote QoS parameters that it received from the remote peer.
 
@@ -53,9 +53,9 @@ If the local DCBX Willing state is disabled, the miniport driver must follow the
 
 For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](managing-the-local-dcbx-willing-state.md).
 
- 
+ 
 
- 
+ 
 
 
 

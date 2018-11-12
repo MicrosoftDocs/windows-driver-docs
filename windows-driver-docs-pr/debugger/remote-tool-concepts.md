@@ -42,9 +42,9 @@ To make a session visible, add the **/v** parameter to the [**Remote Server**](r
 
 For help with the Remote Server query command, see [**Remote Server Query Command**](remote-server-query-command.md).
 
- 
+ 
 
- 
+ 
 
 
 

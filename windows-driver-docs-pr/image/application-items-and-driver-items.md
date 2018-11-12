@@ -43,9 +43,9 @@ The remainder of this section contains the following topics:
 
 [Common, Camera, and Scanner Properties](common--camera--and-scanner-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

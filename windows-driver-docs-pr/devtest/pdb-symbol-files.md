@@ -26,9 +26,9 @@ The [trace consumers](trace-consumer.md) in the WDK, [TraceView](traceview.md) a
 
 Other trace consumers, such as Tracerpt, a tool included in Windows, do not use PDB files or TMF files. Instead, they use the information in Managed Object Format (MOF) files to format trace events. These tools cannot format trace messages.
 
- 
+ 
 
- 
+ 
 
 
 

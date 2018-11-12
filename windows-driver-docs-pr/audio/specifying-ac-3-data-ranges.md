@@ -90,9 +90,9 @@ For each data range that the miniport driver specifies with KSDATAFORMAT\_SPECIF
 
 As explained in [S/PDIF Pass-Through Transmission of Non-PCM Streams](s-pdif-pass-through-transmission-of-non-pcm-streams.md), the two AC-3-over-S/PDIF data ranges both use the following PCM parameters: two channels and 16 bits per channel.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ Each device queue object is protected by a built-in executive spin lock (not sho
 
 See [Managing Hardware Priorities](managing-hardware-priorities.md) and [Spin Locks](spin-locks.md) for more information. For IRQL requirements for a specific support routine, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

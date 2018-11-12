@@ -50,9 +50,9 @@ It is possible to chain several computers together to take advantage of more tha
 
 You can even perform remote debugging on a single computer. For example, it might be useful to start a low-privilege process server and then connect to it with a high-privilege smart client. And on a Windows 2000 terminal server computer you can debug one session from another.
 
- 
+ 
 
- 
+ 
 
 
 

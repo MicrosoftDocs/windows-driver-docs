@@ -46,7 +46,7 @@ To prevent deadlock after initiating a completion request, the provider must eit
 -   Not perform other operations on the object until the completion callback returns.
 -   Take the necessary measures to keep the object intact, if the provider absolutely must touch the object.
 
- 
+ 
 
 ## Example: Consumer-Provider Interaction
 
@@ -98,16 +98,16 @@ The provider must guarantee that no more callbacks will happen after the close c
 
 **Note**  It logically follows from the above that an NDK consumer must not call *NdkCloseObject* for an [**NDK\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/hh439848) object (which is a blocking call) from inside a consumer callback function.
 
- 
+ 
 
 ## Related topics
 
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

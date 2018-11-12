@@ -29,9 +29,9 @@ In addition to the standard [Bluetooth Profile Driver functions](https://msdn.mi
 
 These functions allows for the enumeration of services and their objects (including services, characteristics and their descriptors) as well as read and write capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

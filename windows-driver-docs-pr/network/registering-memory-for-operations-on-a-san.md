@@ -50,9 +50,9 @@ The switch typically registers RDMA buffers only if it transfers application dat
 
 Before the switch closes a socket, the switch calls either **WSPDeregisterMemory** or **WSPDeregisterRdmaMemory** functions of a SAN service provider to release any memory that a pending data transfer operation is not currently using. The SAN service provider must also release memory associated with outstanding data transfer operations.
 
- 
+ 
 
- 
+ 
 
 
 

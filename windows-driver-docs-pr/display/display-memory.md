@@ -27,9 +27,9 @@ Usually, display cards have the pitch set to the width of the display so that no
 
 If the pitch is greater than the width of the primary surface, memory to the conceptual right of the front buffer is wasted. This has to be reclaimed as a separate rectangular heap, regardless of whether the memory on the card is linear or rectangular. (Even if the memory is linear, some display drivers fix the pitch to speed up the blitter. Rather than rewrite the driver, the memory can simply be reclaimed as a separate heap.)
 
- 
+ 
 
- 
+ 
 
 
 

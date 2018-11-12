@@ -29,9 +29,9 @@ To retrieve a pointer to its DMA **AllocateCommonBuffer** function, the proxy dr
 
 2.  Calls [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220) to retrieve a pointer to the DMA adapter structure for its SAN NIC. In this call, the driver passes a pointer to the filled-in DEVICE\_DESCRIPTION structure. **IoGetDmaAdapter** returns a pointer to a DMA adapter structure that contains a pointer to a [**DMA\_OPERATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff544071) structure. DMA\_OPERATIONS contains pointers to a system-defined set of DMA functions. One of these functions is **AllocateCommonBuffer**, which allocates a physically contiguous DMA buffer.
 
- 
+ 
 
- 
+ 
 
 
 

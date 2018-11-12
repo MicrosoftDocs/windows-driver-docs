@@ -99,7 +99,7 @@ When a new process is created, the DirectX graphics kernel will:
 -   Create the initial page table allocations.
 -   Initialize the page table allocations when the first allocation from the process is made resident.
 
- 
+ 
 
- 
+ 
 

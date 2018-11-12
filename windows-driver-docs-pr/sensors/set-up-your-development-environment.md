@@ -36,9 +36,9 @@ If you successfully completed the steps suggested in the preceding paragraph, th
 
 Follow the guidance in the next topic to [prepare your sensor test board](prepare-your-sensor-test-board.md) to be connected to the Sharks Cove board.
 
- 
+ 
 
- 
+ 
 
 
 

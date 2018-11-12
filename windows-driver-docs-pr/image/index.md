@@ -39,9 +39,9 @@ This section contains information about Windows Image Acquisition (WIA) drivers,
 -   [Still Image Drivers](still-image-drivers.md)
 -   [Web Services on Devices](web-services-on-devices.md)
 -   [Web Services on Devices Reference](web-services-on-devices-reference.md)
- 
+ 
 ## Related sections
 
- 
+ 
 -   [Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image)
 

@@ -20,11 +20,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Barcode Scanner Driver Sample        | [BarcodeScanner](http://go.microsoft.com/fwlink/p/?LinkId=620201)       | This UMDF 2 sample serves as a template for creating a barcode scanner driver and demonstrates basic functionality such as claiming and enabling the device for exclusive access.        |
 | Magnetic Stripe Reader Driver Sample | [MagneticStripeReader](http://go.microsoft.com/fwlink/p/?LinkId=620202) | This UMDF 2 sample serves as a template for creating a magnetic stripe reader driver and demonstrates basic functionality such as claiming and enabling the device for exclusive access. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

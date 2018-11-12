@@ -35,9 +35,9 @@ Through the WIA service, an application can perform the following actions:
 
 -   Request a data transfer.
 
- 
+ 
 
- 
+ 
 
 
 

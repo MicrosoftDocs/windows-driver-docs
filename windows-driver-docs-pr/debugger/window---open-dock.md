@@ -20,9 +20,9 @@ Click **Open Dock** on the **Window** menu to create a new dock. A *dock* is an 
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

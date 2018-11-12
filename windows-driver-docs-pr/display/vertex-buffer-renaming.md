@@ -25,9 +25,9 @@ Note that the D3DLOCK\_DISCARD flag will not be passed to the driver by the init
 
 In DirectX 7.0, vertex buffer renaming could also be accomplished via *LockExecuteBuffer* using the flag DDLOCK\_DISCARDCONTENTS. However, the synchronization between runtime and driver on the original release of DirectX 7.0 prevents this mechanism from working correctly. However, the version of DirectX 7.0 released with DirectX 8.0 corrects this problem and vertex buffer renaming at lock time are functional through DirectX 7.0 interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,9 +62,9 @@ If the underlying miniport adapter is not power management-aware, the miniport d
 
 If an underlying miniport adapter is not power management-aware, the intermediate driver should return NDIS\_STATUS\_NOT\_SUPPORTED in response to a query or set of these OIDs.
 
- 
+ 
 
- 
+ 
 
 
 

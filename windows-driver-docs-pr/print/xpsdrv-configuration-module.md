@@ -36,9 +36,9 @@ XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**
 
 XPSDrv drivers have specific requirements for installation. For more information about XPSDrv driver installation, see [XPSDrv Installation](xpsdrv-installation.md).
 
- 
+ 
 
- 
+ 
 
 
 

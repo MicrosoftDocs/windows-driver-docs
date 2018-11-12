@@ -47,13 +47,13 @@ The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSSTATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566856)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566856" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566856)"><strong>KSSTATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,7 +91,7 @@ This property returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 The pin only reads or writes data in the **KSSTATE\_RUN** state. Both individual pins and the KS filter as a whole may support this property.
 
@@ -116,9 +116,9 @@ Requirements
 
 [**KSSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff566856)
 
- 
+ 
 
- 
+ 
 
 
 

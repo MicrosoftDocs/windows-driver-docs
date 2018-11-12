@@ -63,9 +63,9 @@ Note that in this section, the phrase "PPD feature is not currently available" m
 
 For example, "Duplex feature is not currently available" means either the PPD does not specify the \***Duplex** feature keyword, or the \***Duplex** feature keyword's non-None options are currently constrained by the fact that the duplex unit is not installed.
 
- 
+ 
 
- 
+ 
 
 
 

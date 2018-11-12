@@ -46,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DefaultScanTicket</strong>](defaultscanticket.md)</p></td>
+<td><p><a href="defaultscanticket.md" data-raw-source="[&lt;strong&gt;DefaultScanTicket&lt;/strong&gt;](defaultscanticket.md)"><strong>DefaultScanTicket</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerConfiguration</strong>](scannerconfiguration.md)</p></td>
+<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerDescription</strong>](scannerdescription.md)</p></td>
+<td><p><a href="scannerdescription.md" data-raw-source="[&lt;strong&gt;ScannerDescription&lt;/strong&gt;](scannerdescription.md)"><strong>ScannerDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerElementsChangeEvent</strong>](scannerelementschangeevent.md)</p></td>
+<td><p><a href="scannerelementschangeevent.md" data-raw-source="[&lt;strong&gt;ScannerElementsChangeEvent&lt;/strong&gt;](scannerelementschangeevent.md)"><strong>ScannerElementsChangeEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,9 +92,9 @@ The WSD Scan Service must include an **ElementChanges** element when it generate
 
 [**ScannerElementsChangeEvent**](scannerelementschangeevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

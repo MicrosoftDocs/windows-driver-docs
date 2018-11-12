@@ -24,9 +24,9 @@ The following topics are available in this section:
 
 [Mobile operator scenarios](mobile-operator-scenarios-b-mb.md)
 
- 
+ 
 
- 
+ 
 
 
 

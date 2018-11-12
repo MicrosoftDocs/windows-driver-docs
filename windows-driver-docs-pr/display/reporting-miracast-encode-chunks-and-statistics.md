@@ -30,7 +30,7 @@ If the desktop image is not updated but the driver needs to encode the desktop i
 
 **Note**  The last slice of each frame must have a frame part number of zero. Doing this indicates to performance tools that this is the last slice of the frame.
 
- 
+ 
 
 To ensure correct synchronization of the primary surface, if the encoding is performed by the pixel pipeline, any requested flip operation at a VSync interval should not be reported before the encoding has finished accessing the primary surface. This prevents the presenter from rendering to the primary surface while the encode engine is reading from it.
 
@@ -92,7 +92,7 @@ Just before call to send data to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -144,7 +144,7 @@ Just before call to send slice 2 data to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber** (See Note above.)
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -196,7 +196,7 @@ Just before call to send data for re-encoded frame to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -214,9 +214,9 @@ While a Miracast connected session is in progress, if a Miracast user-mode drive
 
 Note that although the operating system merely logs the [**ReportSessionStatus**](https://msdn.microsoft.com/library/windows/hardware/dn265502)*Status* parameter for diagnostics and doesn't take any action based on its value. However, we recommend that the driver use this parameter to differentiate between different causes of the error.
 
- 
+ 
 
- 
+ 
 
 
 

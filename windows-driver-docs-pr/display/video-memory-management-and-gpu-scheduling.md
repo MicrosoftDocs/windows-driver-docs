@@ -35,9 +35,9 @@ The following sections describe the video memory management and graphics process
 
 [GPU preemption](gpu-preemption.md)
 
- 
+ 
 
- 
+ 
 
 
 

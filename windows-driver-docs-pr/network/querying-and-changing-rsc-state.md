@@ -48,15 +48,15 @@ RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](ht
 </tbody>
 </table>
 
- 
+ 
 
 After the miniport driver processes the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569807) OID request, it must give an [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff567424) status indication with the updated offload state.
 
 When a miniport driver receives a [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805) OID request in which the **NDIS\_OFFLOAD\_PARAMETERS\_RSC\_DISABLED** flag is specified, the driver must indicate any existing coalesced segments up the stack before completing the OID request.
 
- 
+ 
 
- 
+ 
 
 
 

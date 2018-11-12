@@ -65,7 +65,7 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tbody>
 </table>
 
- 
+ 
 
 All integer registers are 32 bit. However, many of them have 16-bit or 8-bit subregisters.
 
@@ -142,11 +142,11 @@ All integer registers are 32 bit. However, many of them have 16-bit or 8-bit sub
 </tbody>
 </table>
 
- 
+ 
 
 Operating on a subregister affects only the subregister and none of the parts outside the subregister. For example, storing to the **ax** register leaves the high 16 bits of the **eax** register unchanged.
 
-When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use **? @ax** rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
+When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
 
 However, the (@) is not required in the [**r (Registers)**](r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
 
@@ -169,7 +169,7 @@ Two other registers are important for the processor's current state.
 </tbody>
 </table>
 
- 
+ 
 
 The instruction pointer is the address of the instruction being executed.
 
@@ -320,7 +320,7 @@ I/O Privilege Level
 
 This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications.
 
- 
+ 
 
 When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](r--registers-.md) command, you should refer to it by the *flag code*.
 
@@ -399,7 +399,7 @@ The assembler uses a one or two letter abbreviation to represent a condition. A 
 </tbody>
 </table>
 
- 
+ 
 
 Conditions can also be used to compare two values. The **cmp** instruction compares its two operands, and then sets flags as if subtracted one operand from the other. The following conditions can be used to check the result of **cmp** *value1*, *value2*.
 
@@ -488,7 +488,7 @@ NAE</td>
 </tbody>
 </table>
 
- 
+ 
 
 Conditions are typically used to act on the result of a **cmp** or **test** instruction. For example,
 
@@ -568,7 +568,7 @@ The following table indicates the notation used to describe assembly language in
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes
 
@@ -610,9 +610,9 @@ A memory access is considered aligned if the address is an integer multiple of t
 
 The **lock** prefix should not be used for unaligned memory accesses.
 
- 
+ 
 
- 
+ 
 
 
 

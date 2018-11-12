@@ -28,9 +28,9 @@ When a user interacts with a property sheet page, the operation system sends not
 
 A CPSUI application supplies CPSUI with the address of a page event callback when it calls the [**ComPropSheet**](https://msdn.microsoft.com/library/windows/hardware/ff546207) function.
 
- 
+ 
 
- 
+ 
 
 
 

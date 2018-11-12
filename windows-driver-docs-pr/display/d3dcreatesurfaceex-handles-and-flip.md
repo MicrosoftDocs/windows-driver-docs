@@ -25,9 +25,9 @@ Consider two surface objects, A and B, that have associated handles H<sub>A</sub
 
 A drawing command is issued to the driver, which looks up the handle associated with that surface (which is now H<sub>B</sub>, not H<sub>A</sub>). What would happen if the driver merely stores a pointer to the DirectDraw surface structure? The driver looks up H<sub>B</sub>, then follows the stored pointer to surface B, which now has an **fpVidMem** value of F<sub>A</sub>. Drawing begins on the video memory at F<sub>A</sub>. This is not what the application is expecting. If, on the other hand, the driver stores surface data in its own structures, rather than following a pointer to the DirectDraw surface structure, then H<sub>B</sub> still resolves to F<sub>B</sub>, and drawing occurs on the correct surface. This latter case is the way the current DDI is implemented.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -109,9 +109,9 @@ The driver-implemented `GetTargetSettings` routine in the preceding code example
 
 At the end of the preceding code example, the \*`Settings` structure contains the connection settings (bus address, address width, and bus clock frequency) for the target device. The I2C controller driver uses these connection settings to configure the controller to access the device.
 
- 
+ 
 
- 
+ 
 
 
 

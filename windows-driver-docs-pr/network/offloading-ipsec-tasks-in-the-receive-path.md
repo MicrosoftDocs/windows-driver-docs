@@ -25,9 +25,9 @@ Note that, if the miniport driver is not decrypting an incoming packet, it clear
 
 After the miniport driver indicates the NET\_BUFFER\_LIST structure to the TCP/IP transport, the transport examines the results of the IPsec checks that the NIC performed, checks the sequence numbers for the packet, and determines what to do with a packet that fails the checksum or sequencing tests.
 
- 
+ 
 
- 
+ 
 
 
 

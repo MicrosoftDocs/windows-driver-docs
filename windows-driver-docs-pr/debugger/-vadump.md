@@ -48,7 +48,7 @@ Causes the display to include information about each original allocation region 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -102,9 +102,9 @@ Type:              00020000  MEM_PRIVATE
 
 When **-v** is used, the AllocationProtect line shows the default protection that the entire region was created with. The Protect line shows the actual protection for this specific address.
 
- 
+ 
 
- 
+ 
 
 
 

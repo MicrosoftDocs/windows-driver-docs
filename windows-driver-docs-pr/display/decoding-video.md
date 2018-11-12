@@ -18,7 +18,7 @@ In protected mode and in the call to [**DecodeBeginFrame**](https://msdn.microso
 
 **Note**   The Direct3D runtime sets the **pPVPSetKey** pointer only to change or set the key. To keep the previously set key in use, the runtime sets the pointer to **NULL** to avoid potentially time consuming reloading of the same key. The driver does not eliminate the redundant settings. A decoder application must avoid redundant settings.
 
- 
+ 
 
 After the render target surface for decode operations is set, the user-mode display driver can receive calls to its [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551808) function to perform video decode operations between the begin-frame and end-frame time period.
 
@@ -26,9 +26,9 @@ In calls to [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardw
 
 In protected mode, the buffers that were encrypted for a protected transfer with a content key contain a pointer to initial counter values in their buffer descriptors (that is, in variables that the **pCipherCounter** members of the [**DXVADDI\_DECODEBUFFERDESC**](https://msdn.microsoft.com/library/windows/hardware/ff562896) structures point to). Each call to the user-mode display driver's [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551808) function must perform a protected transfer of such buffers to local video memory before **DecodeExecute** uses the buffers' data in the decode operation. However, no plans exist to encrypt DirectX VA compressed buffers of types other than residual-difference (D3DDDIFMT\_RESIDUALDIFFERENCEDATA) and bit-stream (D3DDDIFMT\_BITSTREAMDATA) types.
 
- 
+ 
 
- 
+ 
 
 
 

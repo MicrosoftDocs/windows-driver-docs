@@ -32,9 +32,9 @@ To support the new frequency-based scanning functionality, the minidriver must i
 
 [**KSEVENT\_TUNER\_INITIATE\_SCAN**](https://msdn.microsoft.com/library/windows/hardware/ff561898) (Optional)
 
- 
+ 
 
- 
+ 
 
 
 

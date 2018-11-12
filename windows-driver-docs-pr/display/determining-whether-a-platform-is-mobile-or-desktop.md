@@ -55,9 +55,9 @@ Hardware vendors can use the following code to determine if a platform is mobile
 
 For information about the functions that are called in the preceding code, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

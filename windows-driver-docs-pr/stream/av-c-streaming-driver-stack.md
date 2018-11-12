@@ -40,9 +40,9 @@ Currently, each subunit driver must implement the preceding operations.
 
 The AV/C Streaming filter driver does not timestamp data at this time. A clock provider needs to timestamp the data as well as provide the current stream time. The subunit driver must timestamp the data if it is a clock provider.
 
- 
+ 
 
- 
+ 
 
 
 

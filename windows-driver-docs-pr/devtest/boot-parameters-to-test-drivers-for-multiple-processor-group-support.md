@@ -18,7 +18,7 @@ Starting with Windows 7, an application or driver can make use of functions that
 
 For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](http://go.microsoft.com/fwlink/p/?linkid=147914).
 
- 
+ 
 
 To help identify potential processor group-related problems in drivers and components, you can use the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) options. The two BCD boot configuration settings, **groupsize** and **maxgroup**, can configure any computer that has multiple logical processors to support multiple processor groups. The **groupaware** option modifies the behavior of certain DDIs and manipulates the group environment for testing purposes.
 
@@ -28,7 +28,7 @@ The **groupsize** option specifies the maximum number of logical processors in a
 
 **Note**   A physical processor, or processor package, can have one or more cores, or processor units, each of which can contain one or more logical processors. The operating system considers a logical processor as one logical computing engine.
 
- 
+ 
 
 To create multiple processor groups, run [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) in an elevated Command Prompt window and specify a new *maxsize* value for **groupsize** that is less than the total number of logical processors. Note that the group size setting is for testing and you should not configure shipping systems with this setting. The *maxsize* value can be set to any power of 2 between 1 and 64 inclusive. The command uses the following syntax:
 
@@ -137,7 +137,7 @@ bcdedit.exe /set groupaware on
 </tbody>
 </table>
 
- 
+ 
 
 To reset the computer to the default setting, use the following **BCDEdit** command.
 
@@ -145,9 +145,9 @@ To reset the computer to the default setting, use the following **BCDEdit** comm
 bcdedit.exe /set groupaware off
 ```
 
- 
+ 
 
- 
+ 
 
 
 

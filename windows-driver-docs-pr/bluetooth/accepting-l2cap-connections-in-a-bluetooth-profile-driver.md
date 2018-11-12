@@ -41,7 +41,7 @@ An L2CAP server profile driver responds to incoming Logical Link Control and Ada
 
 -   Multiple profile drivers cannot register to receive incoming L2CAP connection requests from any remote device for the same PSM. The Bluetooth driver stack only permits one profile driver to receive incoming L2CAP connection requests from any remote device for a particular PSM.
 
- 
+ 
 
 After the profile driver accepts a connection request, it can use other BRBs to send and receive data over the newly established L2CAP connection.
 
@@ -49,9 +49,9 @@ To stop receiving notifications of remote device L2CAP connection attempts, prof
 
 For more information about notifications and callback functions, see [Supporting Bluetooth Event Notifications](supporting-bluetooth-event-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

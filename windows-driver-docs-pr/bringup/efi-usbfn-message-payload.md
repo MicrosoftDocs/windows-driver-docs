@@ -41,9 +41,9 @@ A [EFI\_USB\_BUS\_SPEED](efi-usb-bus-speed.md) enumeration value that indicates 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

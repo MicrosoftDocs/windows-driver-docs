@@ -152,9 +152,9 @@ Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver s
 
 [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187)
 
- 
+ 
 
- 
+ 
 
 
 

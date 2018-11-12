@@ -55,7 +55,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -79,9 +79,9 @@ Searching for thread info ...
 
 For a similar example using the DbgRpc tool, see [Get RPC Thread Information](get-rpc-thread-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

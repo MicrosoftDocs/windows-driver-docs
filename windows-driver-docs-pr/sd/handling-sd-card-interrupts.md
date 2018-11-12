@@ -24,9 +24,9 @@ SD device drivers have two options with respect to the IRQ levels (IRQLs) at whi
 
 An SD device driver specifies the IRQL at which it will run when it initializes the SD bus interface. To run at DISPATCH\_LEVEL in the interrupt notification callback routine, the driver must set the **CallbackAtDpcLevel** member of the [**SDBUS\_INTERFACE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff537919) structure to **TRUE** and pass this structure to the interface initialization routine. For a description of the interface routine, see [**PSDBUS\_INITIALIZE\_INTERFACE\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff537618). To run exclusively at PASSIVE\_LEVEL, the driver must set **CallbackAtDpcLevel** to **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

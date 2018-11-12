@@ -76,9 +76,9 @@ The following list describes the members of this structure:
 
 -   **PrivateData** points to a co-installer-allocated buffer. If a co-installer sets this pointer and requests postprocessing, **SetupDiCallClassInstaller** passes the pointer to the co-installer when it calls the co-installer for postprocessing.
 
- 
+ 
 
- 
+ 
 
 
 

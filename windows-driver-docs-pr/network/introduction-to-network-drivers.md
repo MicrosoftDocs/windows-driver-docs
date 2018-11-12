@@ -24,9 +24,9 @@ This section discusses introductory concepts for kernel-mode network drivers and
 -   [NET\_BUFFER Architecture](net-buffer-architecture.md)
 -   [Introduction to NDIS PDPI](introduction-to-ndis-pdpi.md)
 
- 
+ 
 
- 
+ 
 
 
 

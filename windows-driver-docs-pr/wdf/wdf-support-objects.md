@@ -24,9 +24,9 @@ The topics in this section describe how a Windows Driver Frameworks (WDF) driver
 -   [Using the Registry in WDF Drivers](using-the-registry-in-wdf-drivers.md)
 -   [Security Issues for KMDF Drivers](security-issues-for-kmdf-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

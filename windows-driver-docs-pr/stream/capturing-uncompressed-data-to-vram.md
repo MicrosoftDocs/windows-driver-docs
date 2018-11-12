@@ -25,9 +25,9 @@ AVStream minidrivers that are VRAM-enabled can capture uncompressed data by prov
 
 The *Capture.cpp* file of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) contains examples of the items in the preceding list.
 
- 
+ 
 
- 
+ 
 
 
 

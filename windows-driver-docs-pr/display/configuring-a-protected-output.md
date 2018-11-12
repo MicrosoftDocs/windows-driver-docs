@@ -15,7 +15,7 @@ The display miniport driver can receive requests to configure the protected outp
 
 **Note**   Before **DxgkDdiOPMConfigureProtectedOutput** returns, the display miniport driver must verify that the One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) that is specified in the **omac** member of DXGKMDT\_OPM\_CONFIGURE\_PARAMETERS is correct. For more information about verifying OMAC, see [OMAC-1 algorithm](http://go.microsoft.com/fwlink/p/?linkid=70417). The driver must also verify that the sequence number that is specified in the **ulSequenceNumber** member of DXGKMDT\_OPM\_CONFIGURE\_PARAMETERS matches the sequence number that the driver currently has stored. The driver must then increment the stored sequence number.
 
- 
+ 
 
 The display miniport driver should support the following configuration requests:
 
@@ -25,9 +25,9 @@ The display miniport driver should support the following configuration requests:
 
 -   [Setting the HDCP SRM Version](setting-the-hdcp-srm-version.md)
 
- 
+ 
 
- 
+ 
 
 
 

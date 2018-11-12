@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEODECODER\_CAPS property describes the basic capabilities of 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEODECODER_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566047)</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEODECODER_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566047)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566047" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566047)"><strong>KSPROPERTY_VIDEODECODER_CAPS_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566047" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEODECODER_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566047)"><strong>KSPROPERTY_VIDEODECODER_CAPS_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEODECODER\_CAPS\_S structure that specifies the hardware capabilities of the video decoder device, such as supported standards, settling time, and horizontal sync pulses the video decoder produces during the vertical sync period.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEODECODER\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566047)
 
- 
+ 
 
- 
+ 
 
 
 

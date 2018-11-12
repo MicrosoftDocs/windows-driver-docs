@@ -25,9 +25,9 @@ The following GUIDs support header-data split:
 
 -   GUID\_NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG
 
- 
+ 
 
- 
+ 
 
 
 

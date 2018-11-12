@@ -55,9 +55,9 @@ Here is an example of a **.for** statement with multiple increment commands:
 
 The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
- 
+ 
 
- 
+ 
 
 
 

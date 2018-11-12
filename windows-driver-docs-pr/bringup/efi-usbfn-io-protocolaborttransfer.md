@@ -71,7 +71,7 @@ Direction of the endpoint. For more information see [EFI\_USBFN\_ENDPOINT\_DIREC
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -83,9 +83,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

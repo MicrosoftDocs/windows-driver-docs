@@ -40,9 +40,9 @@ Always release any spin lock(s) the driver is holding before calling **IoComplet
 
 It takes an indeterminate amount of time to complete an IRP, particularly in a chain of layered drivers. Moreover, a deadlock can occur if a higher-level driver's *IoCompletion* routine sends an IRP back down to a lower driver that is holding a spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

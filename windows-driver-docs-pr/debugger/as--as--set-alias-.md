@@ -109,7 +109,7 @@ Specifies the commands whose outputs become the alias equivalent. This string ca
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -144,9 +144,9 @@ You can use the **as** or **aS** command to create or change any user-named alia
 
 You can use the **/ma**, **/mu**, **/msa**, **/msu**, **/f**, and **/c** switches to create an alias that contains carriage returns. However, you cannot use an alias that contains carriage returns to execute multiple commands in sequence. Instead, you must use semicolons.
 
- 
+ 
 
- 
+ 
 
 
 

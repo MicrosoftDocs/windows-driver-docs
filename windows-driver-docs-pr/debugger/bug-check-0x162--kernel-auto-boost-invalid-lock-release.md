@@ -31,16 +31,16 @@ The KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE bug check has a value of 0x00000
 | 3         | The session ID of the thread |
 | 4         | Reserved                     |
 
- 
+ 
 
 Cause
 -----
 
 This is typically caused when some thread releases a lock on behalf of another thread (which is not legal with AutoBoost tracking enabled) or when some thread tries to release a lock it no longer owns.
 
- 
+ 
 
- 
+ 
 
 
 

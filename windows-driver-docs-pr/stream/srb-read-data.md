@@ -44,9 +44,9 @@ The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array o
 
 2.  Place the SRB in the queue.
 
- 
+ 
 
- 
+ 
 
 
 

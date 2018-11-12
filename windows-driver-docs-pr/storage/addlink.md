@@ -25,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void AddLink(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
 );
 ```
 
@@ -70,9 +70,9 @@ Requirements
 
 [**AddLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550129)
 
- 
+ 
 
- 
+ 
 
 
 

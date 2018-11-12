@@ -30,9 +30,9 @@ The [Hotspot Authentication Sample](http://go.microsoft.com/fwlink/p/?linkid=313
 
 [Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

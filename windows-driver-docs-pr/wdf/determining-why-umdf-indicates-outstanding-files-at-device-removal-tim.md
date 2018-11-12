@@ -33,9 +33,9 @@ To determine why UMDF indicates outstanding files, use the following steps:
     -   Determine if the IRP completed.
     -   Determine if a driver-created request was not deleted either explicitly by the driver or implicitly by the object tree.
 
- 
+ 
 
- 
+ 
 
 
 

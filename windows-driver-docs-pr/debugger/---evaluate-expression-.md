@@ -54,7 +54,7 @@ Specifies the expression to evaluate.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -83,7 +83,7 @@ Syntax error at '( "c:\dir\", "*filename*" )
 
 In the first two examples, even though the string does match the pattern, the evaluator is returning a value of **FALSE**. In the third, the evaluator cannot make a comparison because the string ends in a backslash ( \\ ), and so the **\\"** is translated by the evaluator.
 
-To get the evaluator to interpret a string literally, you must use the **@"***String***"** syntax. The following code example shows the correct results:
+To get the evaluator to interpret a string literally, you must use the <strong>@"</strong>*String*<strong>"</strong> syntax. The following code example shows the correct results:
 
 ```console
 0:000> ? $spat( @"c:\dir\name.txt", "*name*" )
@@ -103,9 +103,9 @@ In the preceding examples, the **$spat** MASM operator checks the first string t
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ Each call to **KeEnterGuardedRegion** must have a matching call to **KeLeaveGuar
 
 Drivers that were developed for Windows Server 2003 and later versions of Windows can use guarded regions to disable special kernel APCs. Drivers that were developed for earlier operating systems can disable special kernel APCs by raising the current IRQL to APC\_LEVEL by calling [**KeRaiseIrql**](https://msdn.microsoft.com/library/windows/hardware/ff553079). Use [**KeLowerIrql**](https://msdn.microsoft.com/library/windows/hardware/ff552968) to lower the current IRQL to the previous value.
 
- 
+ 
 
- 
+ 
 
 
 

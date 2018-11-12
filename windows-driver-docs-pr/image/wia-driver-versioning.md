@@ -16,9 +16,9 @@ In the Windows Driver Kit (WDK) for Windows Vista, the value of STI\_VERSION is 
 
 A Windows Vista driver that adheres to the new Windows Vista WIA model must return STI\_VERSION\_3 in the version field that is returned from **IStiUSD::GetCapabilities**.
 
- 
+ 
 
- 
+ 
 
 
 

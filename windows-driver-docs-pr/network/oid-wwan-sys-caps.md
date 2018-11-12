@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md)
 
- 
+ 
 
- 
+ 
 
 
 

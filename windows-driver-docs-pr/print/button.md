@@ -99,7 +99,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>buttons</strong>](buttons.md)</p></td>
+<td><p><a href="buttons.md" data-raw-source="[&lt;strong&gt;buttons&lt;/strong&gt;](buttons.md)"><strong>buttons</strong></a></p></td>
 <td><p></p>
 <p>A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer.</p></td>
 </tr>

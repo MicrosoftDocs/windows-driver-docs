@@ -40,9 +40,9 @@ The values in the **Flags** and **Level** columns represent the [trace flags](tr
 
 A value of **SET** indicates that the trace flags and trace level are set in the **Tracing Flags and Level Selection** dialog box. To open the **Tracing Flags and Level Selection** dialog box, click the **SET** value.
 
- 
+ 
 
- 
+ 
 
 
 

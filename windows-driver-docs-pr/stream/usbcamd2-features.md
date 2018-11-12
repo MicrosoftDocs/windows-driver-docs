@@ -39,9 +39,9 @@ The following features are present in USBCAMD2 (the original USBCAMD minidriver 
 
     USBCAMD2 provides support for Plug and Play in Windows 2000 and later versions, such as surprise device removal. USBCAMD2 also supports system hibernation in Windows XP and later (hibernation support is not present in Windows 98 with no service packs installed, Windows 98 SE, or Windows 2000) and Windows Millennium Edition and later.
 
- 
+ 
 
- 
+ 
 
 
 

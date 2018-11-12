@@ -25,7 +25,7 @@ The **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS** property lists the charac
 
 **Note**  This property replaces [**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md), which is now obsolete.
 
- 
+ 
 
 Property Type: VT\_BSTR
 
@@ -63,9 +63,9 @@ Requirements
 
 [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS**](wia-ips-printer-endorser-valid-format-specifiers.md)
 
- 
+ 
 
- 
+ 
 
 
 

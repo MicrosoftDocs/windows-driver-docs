@@ -240,9 +240,9 @@ NTSTATUS
 
 For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](https://msdn.microsoft.com/library/windows/hardware/ff571183).
 
- 
+ 
 
- 
+ 
 
 
 

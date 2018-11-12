@@ -31,9 +31,9 @@ If in DirectX VA an accelerator is used without strict conformance to a restrict
 
 All defined values of the **bDXVA\_Func** variable are allowed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ GetSupportedVersions(THIS_ HANDLE hPrinter,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,9 +57,9 @@ If this value is equal to zero, the gate is closed. If **Count** is greater than
 
 AND gates have a valid **Count** range of one or less; OR gates have a valid **Count** range of zero or greater. Do not set **Count** to invalid values; *AVStream does not verify that a minidriver has set the gate to a valid state.*
 
- 
+ 
 
- 
+ 
 
 
 

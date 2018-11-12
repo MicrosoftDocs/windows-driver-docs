@@ -67,7 +67,7 @@ In order to issue the **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indicati
 
     **Note**  If the forwarding extension has received an [OID\_SWITCH\_NIC\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265) set request for the VM adapter, it must not call [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) nor forward the status indication.
 
-     
+     
 
 5.  The forwarding extension calls [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824) to forward the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) to overlying extensions in the extensible switch driver stack. When the forwarding extension calls this function, it sets the *StatusIndication* parameter to a pointer to the **NDIS\_STATUS\_INDICATION** structure for the [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](ndis-status-switch-nic-status.md) indication.
 
@@ -75,7 +75,7 @@ In order to issue the **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indicati
 
 **Note**  The forwarding extension must follow the previous steps for each VF assignment that the forwarding extension is removing.
 
- 
+ 
 
 For more information on how a forwarding extension forwards status indications, see [Filter Module Status Indications](https://msdn.microsoft.com/library/windows/hardware/ff550020).
 
@@ -135,9 +135,9 @@ Requirements
 
 [OID\_SWITCH\_NIC\_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598261)
 
- 
+ 
 
- 
+ 
 
 
 

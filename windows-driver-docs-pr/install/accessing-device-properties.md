@@ -38,9 +38,9 @@ To safely access device properties, follow these guidelines:
 
 -   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) to access device properties.
 
- 
+ 
 
- 
+ 
 
 
 

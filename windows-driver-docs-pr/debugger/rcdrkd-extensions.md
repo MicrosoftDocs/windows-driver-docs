@@ -16,7 +16,7 @@ Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Tra
 
 **Note**  You cannot use the RCDRKD commands to view UMDF driver logs, UMDF framework logs, and KMDF framework logs. To view those logs, use [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) commands.
 
- 
+ 
 
 The RCDRKD debugger extension commands are implemented in Rcdrkd.dll. To load the RCDRKD commands, enter **.load rcdrkd.dll** in the debugger.
 
@@ -45,9 +45,9 @@ The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD com
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

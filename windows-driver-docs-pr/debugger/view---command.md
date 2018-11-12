@@ -20,9 +20,9 @@ This command is equivalent to pressing ALT+1 or clicking the **Command (Alt+1)**
 
 For more information about this window and its uses, see [Debugger Command Window](debugger-command-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

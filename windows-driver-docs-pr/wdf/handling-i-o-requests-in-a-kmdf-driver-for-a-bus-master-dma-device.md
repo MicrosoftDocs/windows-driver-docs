@@ -44,9 +44,9 @@ Your driver can provide a set of callback functions that handle [DMA-specific po
 
 Some drivers [use common buffers](using-common-buffers.md) that both a device and the driver can access.
 
- 
+ 
 
- 
+ 
 
 
 

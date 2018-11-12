@@ -30,9 +30,9 @@ NDIS provides the following mapping functions:
 
 These functions return NDIS\_STATUS\_INTERFACE\_NOT\_FOUND if the given NET\_LUID or interface index is not present in the list of registered interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

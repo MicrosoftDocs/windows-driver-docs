@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 Before you upgrade the system to Windows 2000 or later, note the parameter values in the registry for each network component to be upgraded.
 
@@ -32,9 +32,9 @@ Before you upgrade the system to Windows 2000 or later, note the parameter value
 
 3.  After Windows 2000 or later is installed, verify that the upgraded network component's parameters have been correctly migrated to the new operating system.
 
- 
+ 
 
- 
+ 
 
 
 

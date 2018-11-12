@@ -37,7 +37,7 @@ For more information, see [Creating a Virtual Port](https://msdn.microsoft.com/l
 
 **Note**  The default VPort always exists and is not created though an OID request of OID\_NIC\_SWITCH\_CREATE\_VPORT. The default VPort has an identifier of NDIS\_DEFAULT\_VPORT\_ID. When the PF miniport driver creates a NIC switch, the driver automatically attaches the default VPort to the PF of the network adapter.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -65,11 +65,11 @@ NDIS or the PF miniport driver returns one of the following status codes for the
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451597" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VPORT_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451597)"><strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451597)). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451597" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VPORT_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451597)"><strong>NDIS_NIC_SWITCH_VPORT_PARAMETERS</strong></a>). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -78,7 +78,7 @@ NDIS or the PF miniport driver returns one of the following status codes for the
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -122,9 +122,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](oid-nic-switch-vport-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

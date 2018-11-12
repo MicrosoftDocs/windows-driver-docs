@@ -54,9 +54,9 @@ Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WA
 
 For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

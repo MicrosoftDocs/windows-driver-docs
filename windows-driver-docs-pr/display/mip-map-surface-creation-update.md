@@ -33,11 +33,11 @@ Each unit bias (+/-1.0) biases the selection by exactly one MIP map level. A neg
 
 **Note**   DirectX 9.0 and later applications can use the D3DSAMP\_MIPMAPLODBIAS value in the D3DSAMPLERSTATETYPE enumeration to control the level of detail bias for mipmaps. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that drivers are not required to process user-mode sampler states. Drivers still should process the D3DTSS\_MIPMAPLODBIAS value. For more information about D3DSAMPLERSTATETYPE, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,7 @@ Before you use TraceView, you need to gather information about event tracing and
 
 By default, TraceView.exe is located in the tools\\*&lt;Platform&gt;* subdirectory of the Windows Driver Kit (WDK), where *&lt;Platform&gt;* is either i386, amd64, or ia64. The Dbghelp.dll is installed, by default, in the \\bin\\x86 subdirectory.
 
- 
+ 
 
 ### <span id="understand_event_tracing"></span><span id="UNDERSTAND_EVENT_TRACING"></span>Understand Event Tracing
 
@@ -49,9 +49,9 @@ The [NT Kernel Logger Trace Session](nt-kernel-logger-trace-session.md) uses the
 
 These files, and their use in TraceView, are described in [Creating an NT Kernel Logger Trace Session](creating-an-nt-kernel-logger-trace-session.md). You will use this information when you create a trace session.
 
- 
+ 
 
- 
+ 
 
 
 

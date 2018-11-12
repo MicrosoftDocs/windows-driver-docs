@@ -35,9 +35,9 @@ In standard acquisition or non-folder acquisition, the WIA feeder item property 
 
 In folder acquisition, the WIA feeder item's image settings are ignored and settings for the front and back items are used instead. Advanced applications use the individual configurable settings for the document feeder transfer. On a feeder scanner, the image data is always acquired off the feeder item, even when there are child items (front and back items).
 
- 
+ 
 
- 
+ 
 
 
 

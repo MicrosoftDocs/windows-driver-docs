@@ -13,7 +13,7 @@ This topic describes the guidelines for writing a [*MiniportInitializeEx*](https
 
 **Note**  These guidelines only apply to PF miniport drivers. For initialization guidelines for the miniport driver of a PCIe Virtual Function (VF) of the adapter, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
- 
+ 
 
 The PF miniport driver follows the same steps as any NDIS miniport driver when its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. For more information about these steps, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
@@ -23,13 +23,13 @@ In addition to these steps, the PF miniport driver must follow these additional 
 
     **Note**  If the partition type is reported as **NdisHypervisorPartitionMsHvChild**, the miniport driver is running in the Hyper-V child partition that is attached to a VF on the adapter. In this case, the miniport driver must not initialize as a PF driver. If possible, the driver must initialize as a VF driver as described in [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
-     
+     
 
 2.  The PF miniport driver must read the SR-IOV standardized keywords to determine whether SR-IOV is enabled and obtain the NIC switch configuration settings. For more information about these keywords, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
     **Note**  If the PF miniport driver registered an entry point to a [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function, the driver may have previously obtained these settings from the registry when NDIS called *MiniportSetOptions*.
 
-     
+     
 
 3.  If the network adapter supports SR-IOV, virtual machine queue (VMQ), or RSS, the miniport driver must determine which feature to enable on the network adapter. For more information on how to determine this, see [Handling SR-IOV, VMQ, and RSS Standardized INF Keywords](handling-sr-iov--vmq--and-rss-standardized-inf-keywords.md).
 
@@ -61,11 +61,11 @@ In addition to these steps, the PF miniport driver must follow these additional 
 
     **Note**  If the miniport driver supports dynamic NIC switch creation, it creates the switch and enables virtualization when it handles an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451815). For more information, see [Dynamic Creation of a NIC Switch](dynamic-creation-of-a-nic-switch.md).
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

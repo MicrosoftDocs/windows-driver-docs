@@ -30,9 +30,9 @@ As another example, if the 4.0 version of the miniport driver uses *HwContext* t
 
 Another possible miniport driver modification might be to provide this information in a registry string passed in the *ArgumentString* parameter. The registry string could be set by the miniport driver's INF file during initialization to information that pertains to the model of the card detected. This provides more flexibility than hardcoding the parameters in the miniport driver because such a miniport driver could handle new models of cards using an updated INF file instead of requiring the miniport driver to be recompiled.
 
- 
+ 
 
- 
+ 
 
 
 

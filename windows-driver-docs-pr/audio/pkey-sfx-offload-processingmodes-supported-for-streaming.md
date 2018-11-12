@@ -38,9 +38,9 @@ HKR,"FX\\0",%PKEY_SFX_Offload_ProcessingModes_Supported_For_Streaming%,%REG_MULT
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

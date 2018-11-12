@@ -47,9 +47,9 @@ For example, to propagate a call to the **NdisTcpOffloadReceiveHandler** functio
 
 -   The *EventType* and *EventSpecificInformation* parameters that NDIS passed to the intermediate driver's *ProtocolTcpOffloadReceiveIndicate* function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ Chrominance prediction blocks usually have half the size in both horizontal and 
 
 Exceptions to the method of scaling chrominance block dimensions are often made when the luminance prediction block becomes too small. For example, in the H.263 Advanced Prediction mode, the chrominance prediction block remains 8x8 in shape, and the chrominance motion vector is derived from a scaled average of the four 8x8 luminance motion vectors.
 
- 
+ 
 
- 
+ 
 
 
 

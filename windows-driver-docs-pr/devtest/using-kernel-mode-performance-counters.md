@@ -33,9 +33,9 @@ Use the following steps to develop new counters:
 
 For an example of a kernel-mode PCW provider, see the [Kernel Counter Sample (Kcs)](http://go.microsoft.com/fwlink/p/?LinkId=617718) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
- 
+ 
 
- 
+ 
 
 
 

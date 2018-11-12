@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 It is possible to see where SymProxy is configured to acquire symbols by using a web browser. Add *\\status* to the server URL get the status information. For example, if the symbols Web site is https://symbols.contoso.com, go to https://symbols.contoso.com/status. You can also use this to cause symproxy to re-read its configuration information after making a change to the registry. This changes the paths without having to restart the IIS service.
 
- 
+ 
 
- 
+ 
 
 
 

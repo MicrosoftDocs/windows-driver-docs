@@ -13,9 +13,9 @@ warning C28636: Calling LocalFree on non-allocated pointer obtained from calls t
 
 These functions do not allocate any memory—they set the pointer that is passed in. For this reason, it is wrong to free memory using that pointer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ In the **Browse For Folder** dialog box, you can browse through the folders on y
 
 Click **OK** to append the selected folder to the executable image path and return to the **Executable Image Search Path** dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

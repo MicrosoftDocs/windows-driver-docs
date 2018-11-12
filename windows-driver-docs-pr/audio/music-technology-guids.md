@@ -74,7 +74,7 @@ A MIDI or DMus miniport driver must specify the range of stream formats that eac
 </tbody>
 </table>
 
- 
+ 
 
 The **midiOutGetDevCaps** function translates the technology GUID that it receives from the driver to an index that it writes to the **wTechnology** member of the MIDIOUTCAPS structure that it outputs to the caller. The preceding table shows the **wTechnology** value (center column) corresponding to each technology GUID. For more information about **midiOutGetDevCaps** and MIDIOUTCAPS, see the Microsoft Windows SDK documentation.
 
@@ -117,7 +117,7 @@ As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md),
 </tbody>
 </table>
 
- 
+ 
 
 The right column of the preceding table indicates the technology GUID that the corresponding miniport driver specifies in its pins' data ranges. For example, the FmSynth miniport driver assigns the technology GUID KSMUSIC\_TECHNOLOGY\_FMSYNTH to its pins.
 
@@ -154,9 +154,9 @@ By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/
 
 As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](https://msdn.microsoft.com/library/windows/hardware/ff536778) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

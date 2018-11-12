@@ -19,7 +19,7 @@ For example, this configuration is useful when your user-mode symbols are locate
 
 **Note**   In describing this scenario, *target application* refers to the user-mode application that is being debugged, *target computer* refers to the computer that contains the target application and the CDB or NTSD process, and *host computer* refers to the computer that contains the kernel debugger.
 
- 
+ 
 
 To use this technique, you must do the following:
 
@@ -81,9 +81,9 @@ The four modes and the methods of switching between them described in the topic 
 
 Internally, a user-mode debugger started with -ddefer gives first priority to input from the debugging client, and second priority to input from the kernel debugger. However, there can never be a conflict between simultaneous inputs, because when the kernel debugger has broken in to the target computer, the remote connection is unavailable.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,11 +25,11 @@ Syntax
 
 ```ManagedCPlusPlus
 static void  ComputeMipVolumeOffset(
-   const D3DVOLUME_DESC *pDescTopLevel,
-         UINT           iLevel,
-         BYTE           *pBits,
-   const D3DBOX         *pBox,
-   const D3DLOCKED_BOX  *pLockedBoxData
+   const D3DVOLUME_DESC *pDescTopLevel,
+         UINT           iLevel,
+         BYTE           *pBits,
+   const D3DBOX         *pBox,
+   const D3DLOCKED_BOX  *pLockedBoxData
 );
 ```
 
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

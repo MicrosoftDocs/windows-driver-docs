@@ -50,9 +50,9 @@ Consider the following implementation guidelines for device drivers' *DispatchDe
 
 If the *DispatchDeviceControl* routine can complete the IRP, it should call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with a *PriorityBoost* of IO\_NO\_INCREMENT. If the *DispatchDeviceControl* routine must queue the IRP for further processing, it must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

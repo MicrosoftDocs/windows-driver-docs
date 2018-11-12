@@ -101,7 +101,7 @@ The Bluetooth stack that is included with Windows provides in-box support for on
 
 **Note**  The Bthport key is added to the registry only after you install a Bluetooth device.
 
- 
+ 
 
 The following table lists the profiles in Bth.inf that Windows supports.
 
@@ -134,7 +134,7 @@ The following table lists the profiles in Bth.inf that Windows supports.
 </tbody>
 </table>
 
- 
+ 
 
 **Windows XP Bluetooth Profiles**
 The following table lists the unsupported Bluetooth profiles and protocols. Note that, in this context, “unsupported” means that Windows does not automatically generate a PDO or devnode or display the Add New Hardware Wizard. Therefore, some in-box profiles and protocols are handled as if they are unsupported. For example, SDP is an in-box protocol that has a Bluetooth service ID but does not require a PDO. The SDP protocol is therefore marked as unsupported in Bth.inf to prevent the creation of a PDO
@@ -249,7 +249,7 @@ The following table lists the unsupported Bluetooth profiles and protocols. Note
 </tbody>
 </table>
 
- 
+ 
 
 If IHVs do not want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 
@@ -264,7 +264,7 @@ USB\\Class\_E0 (for USB based radios)
 MS\_BTHX\_BTHMINI (for non-USB radios)
 **Note**  This won’t remove Bluetooth driver support if it has already been installed. Also, this policy needs to be applied to the preinstall image.
 
- 
+ 
 
 ## <span id="targ12"></span><span id="TARG12"></span>How do I change the Device ID Profile record published by Windows 8 and Windows 8.1?
 
@@ -315,11 +315,11 @@ Beginning with Windows 8, Windows will also publish a local Device ID record to 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

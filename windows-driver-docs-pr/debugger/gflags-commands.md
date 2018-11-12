@@ -116,7 +116,7 @@ Use one of the following flag formats:
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______ImageFile______"></span><span id="_______imagefile______"></span><span id="_______IMAGEFILE______"></span> *ImageFile*   
 Specifies the name of an executable file, including the file name extension (for example, notepad.exe or mydll.dll).
@@ -147,7 +147,7 @@ Sets the maximum size of the user-mode stack trace database for the process. To 
 <span id="_______PoolTag______"></span><span id="_______pooltag______"></span><span id="_______POOLTAG______"></span> *PoolTag*   
 (Windows Vista and later.) Specifies a pool tag for the [Special Pool](special-pool.md) feature. Use only with the **spp** flag.
 
-Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
+Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
 
 <span id="0xSize______"></span><span id="0xsize______"></span><span id="0XSIZE______"></span>**0x***Size*   
 (Windows Vista and later.) Specifies a size range for the Special Pool feature. Use only with the **spp** flag. For guidance on selecting a size value, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
@@ -191,7 +191,7 @@ The following table lists the subparameters that are valid with **/ro**.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________ko______"></span><span id="________KO______"></span> **/ko**   
 Enables, disables, and displays kernel flag (run time) [Object Reference Tracing](object-reference-tracing.md) settings. Changes to this setting are effective immediately, but are lost when the system is shut down or restarted. For details, see [Example 15: Using Object Reference Tracing](example-15--using-object-reference-tracing.md).
@@ -232,7 +232,7 @@ The following table lists the subparameters that are valid with **/ko**.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________p______"></span><span id="________P______"></span> **/p**   
 Sets page heap verification options for a process.
@@ -292,7 +292,7 @@ For information about NTSD, see [Debugging Using CDB and NTSD](debugging-using-c
 
 This option is useful for programs that are difficult to start from a command prompt and those that are started by other processes.
 
-<span id="_DebuggerCommand_______"></span><span id="_debuggercommand_______"></span><span id="_DEBUGGERCOMMAND_______"></span>**"***DebuggerCommand***"**   
+<span id="_DebuggerCommand_______"></span><span id="_debuggercommand_______"></span><span id="_DEBUGGERCOMMAND_______"></span>**"**<em>DebuggerCommand</em>**"**   
 Specifies a debugger and the command sent to the debugger. This quoted string can include a fully qualified path to the debugger, the debugger name, and command parameters that the debugger interprets. The quotation marks are required.
 
 If the command includes a path to the debugger, the path cannot contain any other quotation marks. If other quotation marks appear, the command shell (*cmd.exe*) will misinterpret the command.
@@ -340,7 +340,7 @@ This parameter inserts heap allocation errors into the image file being tested (
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________leaks______"></span><span id="________LEAKS______"></span> **/leaks**   
 Checks for heap leaks when a process ends.
@@ -389,9 +389,9 @@ By default, on Windows Vista and later versions of Windows, program-specific set
 
 This version of GFlags includes the **-v** options, which enable features being developed for GFlags. However, these features are not yet complete and, therefore, are not documented.
 
- 
+ 
 
- 
+ 
 
 
 

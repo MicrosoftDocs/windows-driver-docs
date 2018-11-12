@@ -29,7 +29,7 @@ The processor selection and load-balancing profile.
 
 **Note**  Changes to the **\*RSSProfile** setting require an adapter restart.
 
- 
+ 
 
 Enumeration standardized INF keywords have the following attributes:
 
@@ -67,7 +67,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*RSS</strong></p></td>
+<td align="left"><p><strong><em>RSS</strong></p></td>
 <td align="left"><p>Receive Side Scaling</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -79,7 +79,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*RSSProfile</strong></p></td>
+<td align="left"><p><strong></em>RSSProfile</strong></p></td>
 <td align="left"><p>RSS load balancing profile</p></td>
 <td align="left"><p>1</p></td>
 <td align="left"><p><strong>ClosestProcessor</strong>: Default behavior is consistent with that of Windows Server 2008 R2.</p></td>
@@ -88,7 +88,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>2</p></td>
-<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don't load-balance at runtime.</p></td>
+<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don&#39;t load-balance at runtime.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -112,7 +112,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 </tbody>
 </table>
 
- 
+ 
 
 NDIS 6.30 added support for **\*RSSProfile**.
 
@@ -128,11 +128,11 @@ A driver for a PCI expansion card should not specify the NUMA node ID statically
 
 **Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567274) structure.
 
- 
+ 
 
 **Note**  In Windows 8 the **\*NumaNodeId** value is ignored if the NIC RSS profile is set to **NUMAScaling**(2) or **NUMAScalingStatic**(3).
 
- 
+ 
 
 <a href="" id="---------rssbaseprocnumber"></a> **\*RssBaseProcNumber**  
 The number of the base RSS processor in the specified group.
@@ -207,7 +207,7 @@ The following table describes all of the RSS keywords that can be edited.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*RssBaseProcGroup</strong></p></td>
+<td align="left"><p><strong><em>RssBaseProcGroup</strong></p></td>
 <td align="left"><p>RSS Base Processor Group</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>0</p></td>
@@ -215,7 +215,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_GROUPS-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*NumaNodeId</strong></p></td>
+<td align="left"><p><strong></em>NumaNodeId</strong></p></td>
 <td align="left"><p>Preferred NUMA node</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>65535 (Any node)</p></td>
@@ -223,7 +223,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>System specific - cannot exceed 65534</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*RssBaseProcNumber</strong></p></td>
+<td align="left"><p><strong><em>RssBaseProcNumber</strong></p></td>
 <td align="left"><p>RSS Base Processor Number</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>0</p></td>
@@ -231,7 +231,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*MaxRssProcessors</strong></p></td>
+<td align="left"><p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>Maximum number of RSS Processors</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>Windows Server 2008 defaults:</p>
@@ -243,7 +243,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_SYSTEM</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*RssMaxProcNumber</strong></p></td>
+<td align="left"><p><strong><em>RssMaxProcNumber</strong></p></td>
 <td align="left"><p>Maximum RSS Processor Number</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1 (Default)</p></td>
@@ -251,7 +251,7 @@ The following table describes all of the RSS keywords that can be edited.
 <td align="left"><p>MAXIMUM_PROC_PER_GROUP-1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>*NumRSSQueues</strong></p></td>
+<td align="left"><p><strong></em>NumRSSQueues</strong></p></td>
 <td align="left"><p>Maximum Number of RSS Queues</p></td>
 <td align="left"><p>Int</p></td>
 <td align="left"><p>Device-specific</p></td>
@@ -269,11 +269,11 @@ The following table describes all of the RSS keywords that can be edited.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Although the valid range for **\*RssBaseProcGroup** is zero to MAXIMUM\_GROUPS-1, in Windows 7 it must be zero. Otherwise, the TCP/IP protocol will not use any processors for RSS.
 
- 
+ 
 
 **Note**  The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
 If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects the closest node based on hints from ACPI.
@@ -281,9 +281,9 @@ If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

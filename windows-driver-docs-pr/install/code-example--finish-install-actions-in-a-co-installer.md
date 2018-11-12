@@ -28,7 +28,7 @@ In this example, a co-installer performs the following operations to support fin
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 -   If the finish-install actions fail and the co-installer determines that the finish-install actions cannot succeed, the co-installer notifies the user of this situation.
 
@@ -36,7 +36,7 @@ In this example, a co-installer performs the following operations to support fin
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 The following co-installer code example shows the basic structure of co-installer code that implements finish-install actions:
 
@@ -112,9 +112,9 @@ SampleCoInstaller(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

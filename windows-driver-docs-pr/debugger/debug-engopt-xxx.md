@@ -37,7 +37,7 @@ The following global options affect the behavior of the debugger engine.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Disable version checking for extensions.  This suppresses the debugger engine's call to CheckVersion.</p>
+<p>Disable version checking for extensions.  This suppresses the debugger engine&#39;s call to CheckVersion.</p>
 </td>
 </tr>
 <tr VALIGN="top">
@@ -84,7 +84,7 @@ The following global options affect the behavior of the debugger engine.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Break into the debugger at the target's initial event.</p>
+<p>Break into the debugger at the target&#39;s initial event.</p>
 </td>
 </tr>
 <tr VALIGN="top">
@@ -102,7 +102,7 @@ The following global options affect the behavior of the debugger engine.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Break into the debugger at the target's final event. In a live user-mode target, this is when the process exits. It has no effect in kernel mode.</p>
+<p>Break into the debugger at the target&#39;s final event. In a live user-mode target, this is when the process exits. It has no effect in kernel mode.</p>
 </td>
 </tr>
 <tr VALIGN="top">
@@ -131,7 +131,7 @@ The following global options affect the behavior of the debugger engine.
 </td>
 <td align="left" width="60%">
 <p>Allow the debugger engine to manipulate page protections on the target to allow for setting software breakpoints in a read-only section of memory.</p>
-<p>When setting software breakpoints, the engine transparently alters the target's memory to insert an interrupt instruction.</p>
+<p>When setting software breakpoints, the engine transparently alters the target&#39;s memory to insert an interrupt instruction.</p>
 </td>
 </tr>
 <tr VALIGN="top">
@@ -239,4 +239,4 @@ Requirements
 </tbody>
 </table>
 
- 
+ 

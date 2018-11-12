@@ -31,9 +31,9 @@ There are two kinds of permissions associated with out-of-process COM components
 
 A good practice is to store the launch and access permissions for your COM servers in the appropriate place under the component's **AppId** registry subkey. This allows Administrators to change those permissions if needed, using the Component Services management tool. To make your COM server use those access permissions at run time, be sure to call **CoInitializeSecurity** (described in the Windows SDK documentation) with the EOAC\_APPID flag, passing in the component's **AppId**. This causes COM to go to the component's **AppId** subkey in the registry and to use the permissions set in the **AccessPermission** and **LaunchPermission** entries.
 
- 
+ 
 
- 
+ 
 
 
 

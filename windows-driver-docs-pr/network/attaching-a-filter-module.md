@@ -37,15 +37,15 @@ While a filter module is in the *Attaching* state, the driver:
 
 **Note**  The registry can contain a flag, which specifies that a filter module is optional. If an optional filter module does not attach, NDIS does not terminate the rest of the driver stack.
 
- 
+ 
 
 A filter driver cannot make send requests, indicate received data, make OID requests, or make status indications from the *Attaching* state. Send and receive operations are supported in the *Running* and *Pausing* states. OID requests and status indications are supported in the *Paused*, *Restarting*, *Running*, and *Pausing* states.
 
 NDIS calls the [*FilterDetach*](https://msdn.microsoft.com/library/windows/hardware/ff549918) function to detach a filter module that NDIS attached with [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905). For more information, see [Detaching a Filter Module](detaching-a-filter-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

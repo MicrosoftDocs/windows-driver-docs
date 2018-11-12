@@ -28,7 +28,7 @@ Filter drivers do not provide direct support for legacy send and receive operati
 
 **Note**  A filter driver can change the send and receive *FliterXxx* functions for a filter module dynamically. For more information, see [Data Bypass Mode](data-bypass-mode.md).
 
- 
+ 
 
 The following topics provide additional information about filter driver send and receive operations:
 
@@ -40,9 +40,9 @@ The following topics provide additional information about filter driver send and
 
 [Receiving Data in a Filter Driver](receiving-data-in-a-filter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

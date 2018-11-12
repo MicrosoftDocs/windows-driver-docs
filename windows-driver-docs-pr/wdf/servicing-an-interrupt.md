@@ -43,9 +43,9 @@ Sometimes a driver must perform some interrupt-servicing operations at IRQL = PA
 
 For an example of a driver that uses work items while servicing device interrupts, see the [PCIDRV](sample-kmdf-drivers.md) sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ This section discusses the Hyper-V extensible switch data path that packets move
 
 [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md)
 
- 
+ 
 
- 
+ 
 
 
 

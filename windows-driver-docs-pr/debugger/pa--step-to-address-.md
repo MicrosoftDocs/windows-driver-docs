@@ -74,7 +74,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -87,7 +87,7 @@ The **pa** command causes the target to begin executing. This execution continue
 
 **Note**   If you use this command in kernel mode, execution stops when an instruction is encountered at the specified virtual address in any virtual address space.
 
- 
+ 
 
 During this execution, all steps are displayed explicitly. Called functions are treated as a single unit. Therefore, the display of this command is similar to what you see if you execute [**p (Step)**](p--step-.md) repeatedly until the program counter reaches the specified address.
 
@@ -103,9 +103,9 @@ The following example demonstrates using the **pa** command along with the **kb*
 0:000> pa 70b5d2f1 "kb"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

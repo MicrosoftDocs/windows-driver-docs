@@ -56,7 +56,7 @@ The DRIVER\_PORTION\_MUST\_BE\_NONPAGED bug check has a value of 0x000000D3. Thi
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -70,9 +70,9 @@ Resolution
 
 To begin debugging, use a kernel debugger to get a stack trace.
 
- 
+ 
 
- 
+ 
 
 
 

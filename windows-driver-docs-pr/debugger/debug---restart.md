@@ -22,9 +22,9 @@ This command is equivalent to pressing CTRL+SHIFT+F5 or clicking the **Restart (
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md). For more information about how to exit WinDbg or end the debugging session, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

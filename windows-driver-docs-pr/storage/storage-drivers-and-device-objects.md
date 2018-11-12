@@ -26,9 +26,9 @@ Storage port drivers create physical device objects (PDOs) of type FILE\_DEVICE\
 
 For information about designing PnP drivers, see the [PnP Driver Design Guidelines](https://msdn.microsoft.com/library/windows/hardware/ff559623). For information about PnP-related **Io***Xxx* routines, see the [Plug and Play Routines](https://msdn.microsoft.com/library/windows/hardware/ff558809).
 
- 
+ 
 
- 
+ 
 
 
 

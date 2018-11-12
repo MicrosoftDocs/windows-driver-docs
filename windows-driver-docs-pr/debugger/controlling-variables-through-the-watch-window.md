@@ -20,9 +20,9 @@ The Watch window can display any list of variables that you want. These variable
 
 Unlike the Locals window, the Watch window is not affected by changes to the local context. Only those variables that are defined in the scope of the current program counter can have their values displayed or modified.
 
- 
+ 
 
- 
+ 
 
 
 

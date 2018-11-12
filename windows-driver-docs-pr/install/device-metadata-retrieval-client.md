@@ -22,9 +22,9 @@ The [PackageInfo XML document](packageinfo-xml-document.md) (Packageinfo.xml), w
 
 For more information about the XML schema that is referenced by the [PackageInfo XML document](packageinfo-xml-document.md), see [PackageInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
 
- 
+ 
 
- 
+ 
 
 
 

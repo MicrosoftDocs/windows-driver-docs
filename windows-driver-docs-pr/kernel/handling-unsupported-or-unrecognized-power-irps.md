@@ -24,9 +24,9 @@ To pass an unsupported or unrecognized power IRP, a driver should call the follo
 
 The driver should not change anything in the IRP before passing the IRP down a device stack.
 
- 
+ 
 
- 
+ 
 
 
 

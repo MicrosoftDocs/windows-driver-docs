@@ -97,9 +97,9 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
+ 
 
- 
+ 
 
 
 

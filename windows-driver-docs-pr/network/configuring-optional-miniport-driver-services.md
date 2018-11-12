@@ -39,9 +39,9 @@ Starting with NDIS 6.30, the valid characteristics structures also include the f
 
 [**NDIS\_NDK\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/hh451566)
 
- 
+ 
 
- 
+ 
 
 
 

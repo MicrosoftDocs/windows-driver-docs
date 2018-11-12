@@ -25,9 +25,9 @@ After you share a driver with a partner, the partner can create shipping labels 
 
 - [Publish a shared driver to Windows Update](https://msdn.microsoft.com/library/windows/hardware/mt786464)
 
- 
+ 
 
- 
+ 
 
 
 

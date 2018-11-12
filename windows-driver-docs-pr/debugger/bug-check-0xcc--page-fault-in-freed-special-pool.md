@@ -56,7 +56,7 @@ The PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000000CC. T
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -72,9 +72,9 @@ Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 
- 
+ 
 
- 
+ 
 
 
 

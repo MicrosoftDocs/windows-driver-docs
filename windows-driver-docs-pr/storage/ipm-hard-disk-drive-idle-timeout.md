@@ -57,13 +57,13 @@ By default, Windows Vista specifies moderately long HDD idle timeout values. Sys
 </tbody>
 </table>
 
- 
+ 
 
 For more information see [Mobile Battery Life Solutions - A Guide for Mobile Platform Professionals.](http://go.microsoft.com/fwlink/p/?linkid=144534)
 
- 
+ 
 
- 
+ 
 
 
 

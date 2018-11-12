@@ -56,7 +56,7 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,9 +78,9 @@ Debugging this error in an interactive manner such as this will enable you to fi
 
 On multiprocessor machines (OS build 3790 or earlier), you can hit a time out if the spinning thread is interrupted by a hardware interrupt and an ISR or DPC routine is running at the time of the bug check. This is because the time out's work item can be delivered and handled on the second CPU and the same time. If this occurs, you must look deeper at the offending thread's stack to determine the spinning code which caused the time out to occur. Use the [**dds (Display Words and Symbols)**](dds--dps--dqs--display-words-and-symbols-.md) command to do this.
 
- 
+ 
 
- 
+ 
 
 
 

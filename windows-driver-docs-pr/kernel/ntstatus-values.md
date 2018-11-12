@@ -20,9 +20,9 @@ This section discusses how to use the NTSTATUS values that are returned by syste
 
 [Defining New NTSTATUS Values](defining-new-ntstatus-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,10 +29,10 @@ A **DestinationDirs** section specifies the target destination directory or dire
 ## Entries
 
 
-<a href="" id="defaultdestdir-dirid--subdir-"></a>**DefaultDestDir=***dirid*\[**,***subdir*\]  
+<a href="" id="defaultdestdir-dirid--subdir-"></a>**DefaultDestDir=**<em>dirid</em>\[**,**<em>subdir</em>\]  
 Specifies the default destination directory for all copy, delete, and/or rename operations on files that are not explicitly listed in a *file-list-section* referenced by other entries here. To ensure that file operations always occur in the correct directory, an INF file that includes **Include** and **Needs** entries should not specify a default destination directory. For more information, see the following Remarks section.
 
-<a href="" id="file-list-section-dirid--subdir--------------"></a>*file-list-section***=***dirid*\[**,***subdir*\]\] ...   
+<a href="" id="file-list-section-dirid--subdir--------------"></a><em>file-list-section</em>**=**<em>dirid</em>\[**,**<em>subdir</em>\]\] ...   
 Specifies the INF-writer-determined name of a section referenced by a [**CopyFiles**](inf-copyfiles-directive.md), [**RenFiles**](inf-renfiles-directive.md), or [**DelFiles**](inf-delfiles-directive.md) directive elsewhere in the INF file. Such an entry is optional if this section has a **DefaultDestDir** entry and all copy-file operations specified in this INF have the same target destination. However, any *file-list-section* referenced by a **RenFiles** or **DelFiles** directive elsewhere in the INF must be listed here.
 
 <a href="" id="dirid"></a>*dirid*  
@@ -107,9 +107,9 @@ xga.Display      = 11
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

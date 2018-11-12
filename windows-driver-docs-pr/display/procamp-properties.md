@@ -65,7 +65,7 @@ A display driver must supply minimum, maximum, step size, and default values whe
 </tbody>
 </table>
 
- 
+ 
 
 It is important that the default values result in a *null* transform of the video stream. This allows the VMR to bypass the ProcAmp adjustment stage in its video pipeline if an application has not altered any of the ProcAmp control properties.
 
@@ -92,9 +92,9 @@ The driver should ensure that the following relationships hold:
 
 -   For ProcAmp properties that are not supported by your hardware, the driver should return the maximum value, minimum value, and default value with a step size increment of 0.0.
 
- 
+ 
 
- 
+ 
 
 
 

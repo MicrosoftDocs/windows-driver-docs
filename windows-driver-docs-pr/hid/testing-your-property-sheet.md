@@ -28,9 +28,9 @@ Debugging a control panel application can be tricky. Use the following steps to 
 
 Once that is done, set your breakpoints and, from the build menu, select **Start Debug**, then **Go**. You are now ready to debug a custom property sheet page.
 
- 
+ 
 
- 
+ 
 
 
 

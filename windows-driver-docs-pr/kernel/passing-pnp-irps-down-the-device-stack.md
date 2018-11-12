@@ -44,9 +44,9 @@ If a function or filter driver did not fail the IRP, it passes the IRP to the ne
 
 The parent bus driver completes the IRP after performing any tasks to respond to the IRP. After the bus driver calls **IoCompleteRequest**, the I/O manager calls any *IoCompletion* routines registered by the function or filter drivers for the device.
 
- 
+ 
 
- 
+ 
 
 
 

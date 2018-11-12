@@ -27,9 +27,9 @@ The order of the surfaces within the **lpBufferInfo** array conforms to the foll
 
 -   The next sequence of surfaces in the array is the collection of video substream surfaces, which are in Z order.
 
- 
+ 
 
- 
+ 
 
 
 

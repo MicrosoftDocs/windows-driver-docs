@@ -34,9 +34,9 @@ The support of font functions depends on the driver's abilities. The general typ
 
 [TrueType functions](truetype-font-driver-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

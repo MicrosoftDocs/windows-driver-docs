@@ -33,9 +33,9 @@ The following topics provide information about the interfaces and the methods th
 
 [Audio Processing Objects Utility Functions](https://msdn.microsoft.com/library/windows/hardware/ff536213)
 
- 
+ 
 
- 
+ 
 
 
 

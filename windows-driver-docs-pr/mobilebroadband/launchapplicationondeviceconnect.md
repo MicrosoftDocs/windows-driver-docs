@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
+<td><p><a href="autoplayhandler.md" data-raw-source="[AutoplayHandler](autoplayhandler.md)">AutoplayHandler</a></p></td>
 <td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DesktopAutoplayHandler](desktopautoplayhandler.md)</p></td>
+<td><p><a href="desktopautoplayhandler.md" data-raw-source="[DesktopAutoplayHandler](desktopautoplayhandler.md)">DesktopAutoplayHandler</a></p></td>
 <td><p>Specifies a desktop app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +70,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WindowsInfo](windowsinfo.md)</p></td>
-<td><p>The parent element of the [WindowsInfo XML schema](windowsinfo-xml-schema.md).</p></td>
+<td><p><a href="windowsinfo.md" data-raw-source="[WindowsInfo](windowsinfo.md)">WindowsInfo</a></p></td>
+<td><p>The parent element of the <a href="windowsinfo-xml-schema.md" data-raw-source="[WindowsInfo XML schema](windowsinfo-xml-schema.md)">WindowsInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -100,9 +100,9 @@ You must specify either a UWP device app or a desktop app. Use [AutoplayHandler]
 
 The LaunchApplicationOnDeviceConnect element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

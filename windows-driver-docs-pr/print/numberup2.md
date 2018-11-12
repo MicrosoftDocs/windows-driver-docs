@@ -18,9 +18,9 @@ Description:Provides information about how many logical pages should be placed o
 
 The NumberUp property is the parent of the [PagesPerSheet](pagespersheet2.md) and [Direction](direction2.md) properties.
 
- 
+ 
 
- 
+ 
 
 
 

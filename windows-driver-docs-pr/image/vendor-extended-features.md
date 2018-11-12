@@ -43,11 +43,11 @@ EventCodeC002="Vendorevent2",{8162F5ED-62B7-42c5-9C2B-B1625AC0DB93},*
 
 **Note**   In INF files for WIA devices, vendor property names must be a single word, with no spaces, and comprised of only alphanumeric values.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

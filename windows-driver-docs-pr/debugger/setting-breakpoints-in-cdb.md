@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 You can set, view, and manipulate breakpoints in CDB by entering commands. For a list of commands, see [Methods of Controlling Breakpoints](methods-of-controlling-breakpoints.md).
 
- 
+ 
 
- 
+ 
 
 
 

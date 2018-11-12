@@ -32,9 +32,9 @@ Closes an instance COM object that defines the **IStiDeviceControl** interface, 
 <a href="" id="istidevicecontrol--writetoerrorlog"></a>[**IStiDeviceControl::WriteToErrorLog**](https://msdn.microsoft.com/library/windows/hardware/ff543727)  
 Allows a still image minidriver to write a message into the still image error log.
 
- 
+ 
 
- 
+ 
 
 
 

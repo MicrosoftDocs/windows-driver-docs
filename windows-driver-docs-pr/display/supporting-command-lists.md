@@ -118,9 +118,9 @@ The following state diagram shows the validity of an immediate-context DDI comma
 
 ![diagram illustrating a command-list handle validity state](images/d3d11ddi2.png)
 
- 
+ 
 
- 
+ 
 
 
 

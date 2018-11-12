@@ -43,9 +43,9 @@ As an example, suppose that an application intends to perform a duplex scan of t
 
 It is important to remember that if the device has an ADF, it must support the ADF properties.
 
- 
+ 
 
- 
+ 
 
 
 

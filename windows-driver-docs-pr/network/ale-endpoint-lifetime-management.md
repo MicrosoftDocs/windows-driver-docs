@@ -29,9 +29,9 @@ Callouts registered for an ALE endpoint closure layer can pend classification. T
 
 When applicable, the engine will indicate a unique handle for the parent endpoint in the FWPS\_METADATA\_FIELD\_PARENT\_ENDPOINT\_HANDLE metadata field. This enables the callout driver to track parent/child relationships, if required.
 
- 
+ 
 
- 
+ 
 
 
 

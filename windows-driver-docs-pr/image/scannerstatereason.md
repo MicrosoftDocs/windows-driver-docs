@@ -96,7 +96,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -117,7 +117,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -136,9 +136,9 @@ You can extend the allowed values, but there are implications when you extend th
 
 [**ScannerStateReasons**](scannerstatereasons.md)
 
- 
+ 
 
- 
+ 
 
 
 

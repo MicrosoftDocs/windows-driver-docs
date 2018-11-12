@@ -19,7 +19,7 @@ After the idle notification is issued, the miniport driver completes the NDIS se
 
 **Note**  The miniport driver cannot explicitly cancel the idle notification. When NDIS cancels the idle notification, the miniport driver must complete the notification as described in this topic. For more information, see [Canceling the NDIS Selective Suspend Idle Notification](canceling-the-ndis-selective-suspend-idle-notification.md).
 
- 
+ 
 
 In either case, the miniport driver must complete the idle notification to resume the adapter to a full-power state. To complete the idle notification, the miniport driver must cancel any bus-specific I/O request packets (IRPs) that it may have previously issued for the idle notification. Finally, the driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) to notify NDIS that the network adapter can be transitioned to a full-power state.
 
@@ -33,7 +33,7 @@ For example, the miniport driver for a USB network adapter completes an idle not
 
 **Note**  Depending on the dependencies for canceling bus-specific idle requests, the miniport driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) either synchronously in the context of the call to [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) or asynchronously after *MiniportCancelIdleNotification* returns.
 
- 
+ 
 
 After the miniport driver cancels any bus-specific IRPs for the idle notification, it calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491). This call notifies NDIS that the idle notification has been completed. NDIS then completes the selective suspend operation by transitioning the network adapter to a full-power state.
 
@@ -51,11 +51,11 @@ The following figure shows the steps that are involved when the miniport driver 
 
 **Note**  When the miniport driver completes an idle notification, it must not call [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492) for an idle notification that was previously completed through a call to [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

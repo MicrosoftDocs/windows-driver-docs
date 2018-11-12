@@ -20,9 +20,9 @@ This section includes various obsolete and reserved programming interfaces. It i
 
 [Windows kernel run-time library obsolete routines](rtlenlargedintegermultiply.md)
 
- 
+ 
 
- 
+ 
 
 
 

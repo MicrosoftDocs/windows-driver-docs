@@ -27,7 +27,7 @@ warning C28111: The IRQL where the floating-point state was saved does not match
 </tbody>
 </table>
 
- 
+ 
 
 The IRQL at which the driver is executing when it restores a floating-point state is different than the IRQL at which it was executing when it saved the floating-point state.
 
@@ -68,9 +68,9 @@ void driver_utility()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

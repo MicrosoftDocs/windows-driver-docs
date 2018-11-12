@@ -24,9 +24,9 @@ After disabling interrupts, file system and legacy drivers must release resource
 
 [Releasing Device and Controller Objects](releasing-device-and-controller-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="odd">
 <td align="left"><p>0x403</p></td>
-<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 & 4 differ by only a single bit.</p></td>
+<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 &amp; 4 differ by only a single bit.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x411</p></td>
@@ -187,11 +187,11 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

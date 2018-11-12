@@ -22,9 +22,9 @@ This section describes the basic structure of the DirectInput control panel exte
 
 [Integration with Windows](integration-with-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

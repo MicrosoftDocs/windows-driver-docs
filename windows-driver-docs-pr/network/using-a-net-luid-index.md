@@ -28,9 +28,9 @@ To allocate a NET\_LUID index, an interface provider calls the [**NdisIfAllocate
 
 To register a network interface, an interface provider must pass a valid NET\_LUID value to the [**NdisIfRegisterInterface**](https://msdn.microsoft.com/library/windows/hardware/ff562715) function. For more information about registering network interfaces, see [Registering a Network Interface](registering-a-network-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ No clipping of the residual difference values can be assumed to have been perfor
 
 **Note**   The accelerator must work with at least a 15-bit range of values. Although video-coding standards typically specify clipping of a difference value prior to adding it to a prediction value (that is, 9-bit clipping in 8-bit-per-sample video), this clipping stage is actually unnecessary because it has no effect on the resulting decoded output picture. It is not assumed that this clipping occurs unless necessary for the accelerator hardware as indicated by the **bConfigSpatialHost8or9Clipping** member of the DXVA\_ConfigPictureDecode structure being set to 1.
 
- 
+ 
 
 ### <span id="8-8_Overflow_Host-Based_IDCT_Processing_"></span><span id="8-8_overflow_host-based_idct_processing_"></span><span id="8-8_OVERFLOW_HOST-BASED_IDCT_PROCESSING_"></span>8-8 Overflow Host-Based IDCT Processing
 
@@ -72,11 +72,11 @@ These rules allow the sample to be added to the prediction picture with 8-bit cl
 
 **Note**   Using 8-bit differences with overflow blocks with **bConfigResid8Subtraction** equal to zero (which results in adding two 8-bit differences for each overflow block) cannot represent a residual difference value of +255 if *IntraMacroblock* is zero. (The largest difference value that can be represented this way is 127+127=254.) This makes the 8-8 overflow host-based IDCT method not strictly compliant with video-coding standards when **bConfigResid8Subtraction** is zero. However, this format is supported because it is used in some existing implementations, is more efficient than 16-bit sample use in terms of the amount of data needed to represent a picture, and does not generally result in any meaningful degradation of video quality.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

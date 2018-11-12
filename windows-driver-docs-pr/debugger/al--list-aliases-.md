@@ -49,7 +49,7 @@ al
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -60,9 +60,9 @@ Remarks
 
 The **al** command lists all user-named aliases. But this command does not list fixed-name aliases ($u0 to $u9).
 
- 
+ 
 
- 
+ 
 
 
 

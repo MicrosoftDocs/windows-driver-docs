@@ -112,11 +112,11 @@ The following table lists the MOF data types that can be used to define items in
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

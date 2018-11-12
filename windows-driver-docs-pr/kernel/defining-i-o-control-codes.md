@@ -99,7 +99,7 @@ Other system-defined I/O control codes require the caller to have read access ri
 
 **Note**   Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
 
- 
+ 
 
 Drivers can use [**IoValidateDeviceIoControlAccess**](https://msdn.microsoft.com/library/windows/hardware/ff550418) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
 
@@ -115,9 +115,9 @@ The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit
 
 These macros are defined in Wdm.h and Ntddk.h.
 
- 
+ 
 
- 
+ 
 
 
 

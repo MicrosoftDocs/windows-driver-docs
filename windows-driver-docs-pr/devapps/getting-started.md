@@ -17,7 +17,7 @@ Device manufacturers can create a UWP device app that serves as a companion to t
 
 **Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279).
 
- 
+ 
 
 If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](http://go.microsoft.com/fwlink/p/?LinkID=301754).
 
@@ -28,7 +28,7 @@ To develop a UWP device app: you need Microsoft Visual Studio, for developing UW
 
 **Note**  To develop UWP device apps in Windows 10, download Microsoft Visual Studio 2017 and Windows Driver Kit (WDK) 10. [Become a Windows Insider to get kits and tools](http://go.microsoft.com/fwlink/p/?LinkId=526775)
 
- 
+ 
 
 ### <span id="If_you_re_also_developing_drivers"></span><span id="if_you_re_also_developing_drivers"></span><span id="IF_YOU_RE_ALSO_DEVELOPING_DRIVERS"></span>If you're also developing drivers
 
@@ -71,9 +71,9 @@ You can find device-related samples with the [Devices and sensors](http://go.mic
 
 To begin, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
 
- 
+ 
 
- 
+ 
 
 
 

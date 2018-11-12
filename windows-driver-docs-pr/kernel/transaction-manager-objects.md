@@ -25,9 +25,9 @@ Resource managers close their handles to transaction manager objects by calling 
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

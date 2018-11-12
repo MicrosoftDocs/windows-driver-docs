@@ -57,7 +57,7 @@ A block diagram that shows all of the drivers for a particular technology or a p
 
 **Note**  The USB core block diagram in this topic shows one of several possible ways to illustrate the technology driver stacks for USB 1.0 and 2.0. For the official diagrams of the USB 1.0, 2.0, and 3.0 driver stacks, see [USB Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/hh406256).
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -68,9 +68,9 @@ A block diagram that shows all of the drivers for a particular technology or a p
 
 [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)
 
- 
+ 
 
- 
+ 
 
 
 

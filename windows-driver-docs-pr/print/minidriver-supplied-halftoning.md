@@ -77,9 +77,9 @@ In the example, both the ColorFormat1 and ColorFormat2 ColorMode options represe
 
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
- 
+ 
 
- 
+ 
 
 
 

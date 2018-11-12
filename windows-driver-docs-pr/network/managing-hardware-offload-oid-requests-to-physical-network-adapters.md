@@ -25,7 +25,7 @@ The following figure shows an example of an extensible switch team for NDIS 6.30
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
- 
+ 
 
 By handling the OID request of [OID\_SWITCH\_NIC\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266), a forwarding extension can participate in the configuration of the extensible switch team for hardware offloads. For example, if the extension manages the physical network adapters of an extensible switch team, it can forward the OID\_SWITCH\_NIC\_REQUEST request to a physical adapter that supports the hardware offload.
 
@@ -104,7 +104,7 @@ The forwarding extension must follow these guidelines for handling hardware offl
 
     **Note**  The extension can only originate its own encapsulated hardware offload OID request if it is filtering the same OID request that was issued by overlying drivers. In this case, the extension must not forward the original OID request. Instead, the extension must call [**NdisFOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561833) to complete this request when NDIS calls its [*FilterOidRequestComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549956) to complete the originated OID request.
 
-     
+     
 
 -   If the extension is forwarding a hardware offload OID request to an underlying physical network adapter, the **DestinationNicIndex** member of the [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214) structure must be set to the nonzero index value of the adapter. For more information on these index values, see [Network Adapter Index Values](network-adapter-index-values.md).
 
@@ -120,9 +120,9 @@ For more information on how the extension filters OID requests, see [Filtering O
 
 For more information on MUX drivers, see [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

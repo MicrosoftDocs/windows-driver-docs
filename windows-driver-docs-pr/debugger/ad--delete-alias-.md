@@ -56,7 +56,7 @@ Specifies the name of the alias to delete. If you specify an asterisk (\*), all 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ Remarks
 
 You can use the **ad** command to delete any user-named alias. But you cannot use this command to delete a fixed-name alias ($u0 to $u9).
 
- 
+ 
 
- 
+ 
 
 
 

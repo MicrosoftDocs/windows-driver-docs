@@ -20,9 +20,9 @@ This command is equivalent to pressing ALT+9 or clicking the **Processes and Thr
 
 For more information about this window and its uses, see [Processes and Threads Window](processes-and-threads-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

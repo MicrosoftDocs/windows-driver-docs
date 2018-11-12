@@ -30,9 +30,9 @@ Most drivers' dispatch routines are called in an arbitrary thread context at IRQ
 
 For additional information, see [Managing Hardware Priorities](managing-hardware-priorities.md).
 
- 
+ 
 
- 
+ 
 
 
 

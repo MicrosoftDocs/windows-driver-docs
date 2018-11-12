@@ -38,9 +38,9 @@ Drivers call the [**NdisFreeCloneNetBufferList**](https://msdn.microsoft.com/lib
 
 [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

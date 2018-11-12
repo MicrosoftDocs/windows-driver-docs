@@ -38,9 +38,9 @@ Client objects facilitate communication to remote instances of the host engine. 
 
 For details about creating and using client objects, see [Using Callback Objects](using-callback-objects.md). For details about registering callback objects, see Using Callback Objects.
 
- 
+ 
 
- 
+ 
 
 
 

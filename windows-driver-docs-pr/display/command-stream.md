@@ -22,9 +22,9 @@ In other words, the D3DHAL\_DP2OPERATION operation code specifies what type of s
 
 For an example of how a driver process operation codes, see [Processing Texture Stages](processing-texture-stages.md).
 
- 
+ 
 
- 
+ 
 
 
 

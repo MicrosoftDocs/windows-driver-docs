@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobDescription</strong>](jobdescription.md)</p></td>
+<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,9 +71,9 @@ The **JobInformation** value is useful when the client will reuse the scan ticke
 
 [**JobDescription**](jobdescription.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ Eventually, every miniport driver must call **ScsiPortNotification** twice for e
 
 The *HwScsiStartIo* routine of a miniport driver that manages its HBA exclusively by polling calls **ScsiPortNotification** with the *NotificationType***RequestTimerCall** and a pointer to its *HwScsiTimer* routine. For more information about the *HwScsiTimer* routine, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

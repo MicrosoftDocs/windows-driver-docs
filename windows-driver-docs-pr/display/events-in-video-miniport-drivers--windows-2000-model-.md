@@ -36,41 +36,41 @@ The following table lists the event-related functions that the video port driver
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>VideoPortClearEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570284)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570284" data-raw-source="[&lt;strong&gt;VideoPortClearEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570284)"><strong>VideoPortClearEvent</strong></a></p></td>
 <td align="left"><p>Sets a given event object to the nonsignaled state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>VideoPortCreateEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570287)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570287" data-raw-source="[&lt;strong&gt;VideoPortCreateEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570287)"><strong>VideoPortCreateEvent</strong></a></p></td>
 <td align="left"><p>Creates an event object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>VideoPortDeleteEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570292)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570292" data-raw-source="[&lt;strong&gt;VideoPortDeleteEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570292)"><strong>VideoPortDeleteEvent</strong></a></p></td>
 <td align="left"><p>Deletes the specified event object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>VideoPortReadStateEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570352)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570352" data-raw-source="[&lt;strong&gt;VideoPortReadStateEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570352)"><strong>VideoPortReadStateEvent</strong></a></p></td>
 <td align="left"><p>Returns the current state of a given event object: signaled or nonsignaled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>VideoPortSetEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570364)</p></td>
-<td align="left"><p>Sets an event object to the signaled state if it was not already in that state, and returns the event object's previous state.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570364" data-raw-source="[&lt;strong&gt;VideoPortSetEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570364)"><strong>VideoPortSetEvent</strong></a></p></td>
+<td align="left"><p>Sets an event object to the signaled state if it was not already in that state, and returns the event object&#39;s previous state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>VideoPortWaitForSingleObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570378)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570378" data-raw-source="[&lt;strong&gt;VideoPortWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570378)"><strong>VideoPortWaitForSingleObject</strong></a></p></td>
 <td align="left"><p>Puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 GDI also provides support for events to display drivers. See [Using Events in Display Drivers](using-events-in-display-drivers.md) for more information.
 
 For a broader perspective on events, see [Event Objects](https://msdn.microsoft.com/library/windows/hardware/ff544323) in the *Kernel-Mode Drivers Design Guide*.
 
- 
+ 
 
- 
+ 
 
 
 

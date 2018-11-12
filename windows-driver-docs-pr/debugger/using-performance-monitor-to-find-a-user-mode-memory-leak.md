@@ -27,9 +27,9 @@ Some memory leaks appear in the data file as an increase in private bytes alloca
 
 After you have determined which process is leaking memory, use the UMDH tool to determine the specific routine that is at fault. For details, see [Using UMDH to Find User-Mode Memory Leaks](using-umdh-to-find-a-user-mode-memory-leak.md).
 
- 
+ 
 
- 
+ 
 
 
 

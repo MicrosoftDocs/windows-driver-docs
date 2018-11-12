@@ -34,9 +34,9 @@ This section includes the following topics:
 
 [Requirements for TCP Chimney NICs for Blind-Reset Attacks](requirements-for-tcp-chimney-nics-for-blind-reset-attacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

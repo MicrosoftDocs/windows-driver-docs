@@ -70,9 +70,9 @@ Requirements
 
 [MB device Readiness](https://msdn.microsoft.com/library/windows/hardware/ff557164)
 
- 
+ 
 
- 
+ 
 
 
 

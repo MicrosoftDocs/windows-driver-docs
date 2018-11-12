@@ -25,8 +25,8 @@ ATA miniport drivers work with the ATA port Driver. The following sections descr
 
 [ATA Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff551343)
 
- 
+ 
 
- 
+ 
 
 

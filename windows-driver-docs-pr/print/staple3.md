@@ -28,9 +28,9 @@ Data Type:BIDI\_BOOL
 
 Description:Determines whether the print device has a stapler feature installed. If **TRUE**, the stapler feature is installed; if **FALSE**, the stapler feature is not installed.
 
- 
+ 
 
- 
+ 
 
 
 

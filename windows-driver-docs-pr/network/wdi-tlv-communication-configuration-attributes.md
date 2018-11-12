@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |-------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------|
 | [**WDI\_TLV\_COMMUNICATION\_CAPABILITIES**](wdi-tlv-communication-capabilities.md) |                                | X        | The communication capabilities. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

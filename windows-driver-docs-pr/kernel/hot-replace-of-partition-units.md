@@ -21,9 +21,9 @@ For more information about how to implement support for power management in a de
 
 A device driver must not bind itself to a uniquely identifiable instance of system hardware such as a specific processor. Otherwise, the driver might fail if the partition unit that contains that hardware is replaced in the hardware partition.
 
- 
+ 
 
- 
+ 
 
 
 

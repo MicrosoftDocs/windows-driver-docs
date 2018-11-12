@@ -46,9 +46,9 @@ The BDA support library provides default methods to handle this property set. Th
 
 The properties in this property set define what the filter can do. Typically, filters are not required to intercept any of these properties. For more information, see [Broadcast Driver Architecture Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff556588) on how the BDA minidriver for a filter can use the BDA support library of functions to provide default handling of these properties. A driver writer should create static structures that enable handling of this property set. Once these structures are created and registered with the BDA support library, the driver writer is not required to do anything further to support this property set.
 
- 
+ 
 
- 
+ 
 
 
 

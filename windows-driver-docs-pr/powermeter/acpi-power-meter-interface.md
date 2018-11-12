@@ -22,9 +22,9 @@ This section includes the following topics:
 
 [ACPI IPMI Operation Region](acpi-ipmi-operation-region.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------|--------------------------------------|
 | UINT16 | Specifies the port number to delete. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

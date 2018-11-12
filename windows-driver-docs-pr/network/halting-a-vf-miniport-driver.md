@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 The VF miniport driver follows the same steps as any NDIS miniport driver when its [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function is called. For more information about these steps, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

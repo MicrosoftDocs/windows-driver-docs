@@ -24,7 +24,7 @@ This section describes a method of using BCDEdit, a tool included with the opera
 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 
 For help on editing boot entry parameters to enable and disable Windows features, see [Using Boot Parameters](using-boot-parameters.md).
 
@@ -42,9 +42,9 @@ Then, to make testing quicker and easier:
 
 -   [Change the boot menu time-out](changing-the-boot-menu-time-out.md). You can shorten the boot menu time-out so that Windows boots quickly. Or, lengthen the boot menu time-out so that you have ample time to select the preferred boot entry.
 
- 
+ 
 
- 
+ 
 
 
 

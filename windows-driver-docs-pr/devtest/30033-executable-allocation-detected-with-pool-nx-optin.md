@@ -87,9 +87,9 @@ The following code avoids this warning:
 ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
- 
+ 
 
- 
+ 
 
 
 

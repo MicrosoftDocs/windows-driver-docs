@@ -26,9 +26,9 @@ For a list of obsolete GDI functions and structures, see [Obsolete GDI Functions
 
 -   **DrvQuerySpoolType**
 
- 
+ 
 
- 
+ 
 
 
 

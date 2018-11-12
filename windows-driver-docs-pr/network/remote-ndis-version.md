@@ -41,11 +41,11 @@ The following table defines the Remote NDIS protocol version identifiers exchang
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

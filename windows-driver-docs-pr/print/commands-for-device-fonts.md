@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 There are no commands associated with device fonts. For information about device font attributes, see [Attributes for Device Fonts](attributes-for-device-fonts.md).
 
- 
+ 
 
- 
+ 
 
 
 

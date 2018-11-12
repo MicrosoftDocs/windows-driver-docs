@@ -20,9 +20,9 @@ To determine whether its device supports wake-up, the device power states from w
 
 For more information about enabling, disabling, and responding to wake-up signals in a driver, see [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

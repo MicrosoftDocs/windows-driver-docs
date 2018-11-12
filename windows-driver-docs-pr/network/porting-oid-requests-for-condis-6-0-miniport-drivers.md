@@ -26,9 +26,9 @@ The [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware
 
 For more information about handling OID requests in a CoNDIS miniport driver, see [CoNDIS Miniport Driver OID Requests](condis-miniport-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

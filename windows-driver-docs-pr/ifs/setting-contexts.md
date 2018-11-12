@@ -46,9 +46,9 @@ return status;
 
 Note that after the call to [**FltSetInstanceContext**](https://msdn.microsoft.com/library/windows/hardware/ff544521), there is a call to **FltReleaseContext** to release the reference count that was set by [**FltAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff541710) (*not* **FltSetInstanceContext**). This is explained in [Releasing Contexts](releasing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

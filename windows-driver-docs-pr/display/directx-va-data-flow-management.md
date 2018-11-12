@@ -32,9 +32,9 @@ This section describes how data flow is managed in the DirectX Video Acceleratio
 
 [Sequence Requirements](sequence-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

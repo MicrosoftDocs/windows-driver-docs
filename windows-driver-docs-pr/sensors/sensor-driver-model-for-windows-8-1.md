@@ -17,9 +17,9 @@ The topics in this section provide information about the sensor driver model for
 -   [Programming Guide](programming-guide.md)
 -   [SpbAccelerometer driver cookbook](spbaccelerometer-driver-cookbook.md)
 
- 
+ 
 
- 
+ 
 
 
 

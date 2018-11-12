@@ -18,9 +18,9 @@ All drivers that support the DirectX 8.0 DDI may support the new DP2 token D3DDP
 
 D3DDP2OP\_SETPIXELSHADER can be used to notify the driver of the handle of the current programmable pixel shader to use. A pixel shader handle refers to a programmable pixel shader handle previously created by means of the D3DDP2OP\_CREATEPIXELSHADER DP2 token.
 
- 
+ 
 
- 
+ 
 
 
 

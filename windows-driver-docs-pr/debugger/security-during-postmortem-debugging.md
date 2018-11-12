@@ -22,9 +22,9 @@ Also, a postmortem debugger inherits the same privileges as the application that
 
 You should take this into account when choosing to enable postmortem debugging.
 
- 
+ 
 
- 
+ 
 
 
 

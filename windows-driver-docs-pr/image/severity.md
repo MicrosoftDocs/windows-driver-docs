@@ -64,7 +64,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -85,10 +85,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistoryEntry</strong>](conditionhistoryentry.md)</p></td>
+<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DeviceCondition</strong>](devicecondition.md)</p></td>
+<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -107,9 +107,9 @@ You can both extend and subset the allowed values for this element.
 
 [**DeviceCondition**](devicecondition.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ When the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/
 
 For more information on how to handle idle notifications for NDIS selective suspend, see [NDIS Selective Suspend Idle Notifications](ndis-selective-suspend-idle-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ If no arguments are supplied, the debugger displays a list of all threads, along
 
 You can terminate execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

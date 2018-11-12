@@ -17,9 +17,9 @@ The following sections describe features of Direct3D version 10.1:
 
 [Supporting Extended Format Awareness](supporting-extended-format-awareness.md)
 
- 
+ 
 
- 
+ 
 
 
 

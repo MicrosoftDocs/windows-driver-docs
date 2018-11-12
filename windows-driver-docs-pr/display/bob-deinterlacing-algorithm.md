@@ -35,9 +35,9 @@ Each definition uses a finite impulse response (FIR) filter with an impulse resp
 
 The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)-(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
 
- 
+ 
 
- 
+ 
 
 
 

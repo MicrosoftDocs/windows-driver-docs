@@ -27,9 +27,9 @@ Because MCM driver is both a call manager and a miniport driver, certain connect
 
 An MCM driver must supply a [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function for a client to use in querying or setting miniport driver information, and a [**MiniportCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff559365) function to handle send operations from a client.
 
- 
+ 
 
- 
+ 
 
 
 

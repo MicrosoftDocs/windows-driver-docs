@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 
 In general, data is moved downstream only by triggering events, the minidriver's processing, and buffer completions. To isolate the cause of a hang or stall:
 
--   Check for mismatched **KsGate*Xxx*** calls.
+- Check for mismatched **KsGate*Xxx*** calls.
 
--   Check for omitted **Ks*Xxx*AttemptProcessing** calls.
+- Check for omitted **Ks*Xxx*AttemptProcessing** calls.
 
--   Look for problems in code related to triggering events, including code that either references the pin flags for the problem stream or that calls **KsPinAttemptProcessing**.
+- Look for problems in code related to triggering events, including code that either references the pin flags for the problem stream or that calls **KsPinAttemptProcessing**.
 
--   Look for problems in the code related to the processing dispatch, in particular where it queues to hardware and where clone pointers are created.
+- Look for problems in the code related to the processing dispatch, in particular where it queues to hardware and where clone pointers are created.
 
--   Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](https://go.microsoft.com/fwlink/p/?linkid=56550).
+- Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](https://go.microsoft.com/fwlink/p/?linkid=56550).
 
--   Look for problems in the startup code for the stream.
+- Look for problems in the startup code for the stream.
 
 The most effective way to collect this information is by logging everything in the affected region, including processing, buffer acquisition (such as cloning and programming hardware), buffer release (such as deleting clones), and any gate manipulations. Most of this information is highly timing dependent and requires memory-based logging or ETW.
 
@@ -89,7 +89,7 @@ The following example uses the above memory-based scheme to determine the cause 
 </tbody>
 </table>
 
- 
+ 
 
 Log excerpts are as follows:
 
@@ -129,9 +129,9 @@ In this example, several buffers are being completed (indicated by the repeated 
 
 The problem is that the KSPIN\_FLAG\_DO\_NOT\_INITIATE\_PROCESSING flag has been set. When this flag is set, processing occurs only through a call to *Start* or *CallOnDPC*. If this flag is not set, processing will be initiated whenever new buffers are added to the queue.
 
- 
+ 
 
- 
+ 
 
 
 

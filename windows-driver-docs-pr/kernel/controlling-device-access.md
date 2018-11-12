@@ -56,9 +56,9 @@ Use the **IoCreateDeviceSecure** routine to create the named device object and t
 
 The system overrides the default security descriptor with any security settings in the registry for the specified class GUID. The driver must specify its own unique GUID for the device. Use the GuidGen tool to generate a unique GUID. (GuidGen is included in the Microsoft Windows SDK.)
 
- 
+ 
 
- 
+ 
 
 
 

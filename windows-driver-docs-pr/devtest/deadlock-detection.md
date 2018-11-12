@@ -53,7 +53,7 @@ The most common form of deadlock occurs when two or more threads wait for a reso
 </tbody>
 </table>
 
- 
+ 
 
 If both sequences happen at the same time, Thread 1 will never get Lock B because it is owned by Thread 2, and Thread 2 will never get Lock A because it is owned by Thread 1. At best this causes the threads involved to halt, and at worst causes the system to stop responding.
 
@@ -83,7 +83,7 @@ Driver Verifier will issue a bug check when one of these violations is discovere
 
 **Note**   Even if the conflicting code paths can never happen simultaneously, they should still be rewritten if they involve lock hierarchy violations. Such code is a "deadlock waiting to happen" that could cause real deadlocks if the code is rewritten slightly.
 
- 
+ 
 
 When Deadlock Detection finds a violation, it will issue bug check 0xC4. The first parameter of this bug check will indicate the exact violation. Possible violations include:
 
@@ -150,9 +150,9 @@ You can activate the Deadlock Detection feature for one or more drivers by using
 
     The Deadlock Detection feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

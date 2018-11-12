@@ -47,13 +47,13 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE property informs the Ove
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564274)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564274" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564274)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG the specifies whether interleaved capture is possible.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_INTERLEAVE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564274)
 
- 
+ 
 
- 
+ 
 
 
 

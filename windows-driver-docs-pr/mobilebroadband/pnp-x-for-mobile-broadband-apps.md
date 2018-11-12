@@ -28,9 +28,9 @@ Although the app does not have access to the same privileged APIs as a mobile br
 
 [Communication channels](communication-channels.md)
 
- 
+ 
 
- 
+ 
 
 
 

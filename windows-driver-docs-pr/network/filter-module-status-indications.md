@@ -33,9 +33,9 @@ In this case, the filter driver should set the **SourceHandle** member to the ha
 
 After a filter driver calls [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824), NDIS calls the status function ([**ProtocolStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570270) or *FilterStatus*) of the next overlying driver.
 
- 
+ 
 
- 
+ 
 
 
 

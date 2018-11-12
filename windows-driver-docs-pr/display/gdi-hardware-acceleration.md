@@ -87,9 +87,9 @@ For more details on how to implement GDI Hardware Acceleration in your display m
 
 [Specifying GDI Hardware-Accelerated Rendering Operations](specifying-gdi-hardware-accelerated-rendering-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

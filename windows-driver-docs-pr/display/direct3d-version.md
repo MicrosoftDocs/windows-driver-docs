@@ -20,9 +20,9 @@ A DirectX display driver must support DirectX 7.0 and earlier versions of the Di
 
 To avoid this, define DIRECT3D\_VERSION to 0x0800 before including any header files. In order to get all the necessary symbols in header files, include d3d8.h before *winddi.h* or *d3dnthal.h*.
 
- 
+ 
 
- 
+ 
 
 
 

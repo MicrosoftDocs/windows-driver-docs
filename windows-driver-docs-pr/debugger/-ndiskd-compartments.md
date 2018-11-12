@@ -67,9 +67,9 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 
 [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832)
 
- 
+ 
 
- 
+ 
 
 
 

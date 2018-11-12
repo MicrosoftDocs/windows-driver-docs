@@ -22,9 +22,9 @@ If the intermediate driver allows neither task offload nor TCP chimney offload, 
 
 OID\_TCP\_TASK\_OFFLOAD to enable the offload target's task offload and TCP chimney offload capabilities. An intermediate driver should always pass such a set request to the underlying driver.
 
- 
+ 
 
- 
+ 
 
 
 

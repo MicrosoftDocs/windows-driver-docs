@@ -56,9 +56,9 @@ Several other directives are used within the template construct to complete the 
 
 For more information about template directives, see [GDL Template Directives](gdl-template-directives.md)
 
- 
+ 
 
- 
+ 
 
 
 

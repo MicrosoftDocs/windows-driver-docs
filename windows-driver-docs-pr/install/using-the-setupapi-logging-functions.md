@@ -23,9 +23,9 @@ SetupAPI supports functions that installation applications, class installers, an
 
     For more information about how to use log tokens, see [Setting and Getting a Log Token for a Thread](setting-and-getting-a-log-token-for-a-thread.md).
 
- 
+ 
 
- 
+ 
 
 
 

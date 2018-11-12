@@ -35,9 +35,9 @@ The following topics provide more information about advance and retreat operatio
 
 [Advance Operations](advance-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

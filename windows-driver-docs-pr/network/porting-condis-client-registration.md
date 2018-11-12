@@ -26,9 +26,9 @@ NDIS 6.0 protocol drivers do not call [**NdisClOpenAddressFamily**](https://msdn
 
 For more information about CoNDIS client registration, see [CoNDIS Client Registration](condis-client-registration.md).
 
- 
+ 
 
- 
+ 
 
 
 

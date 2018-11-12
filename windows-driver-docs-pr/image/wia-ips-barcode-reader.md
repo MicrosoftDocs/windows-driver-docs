@@ -57,7 +57,7 @@ The following table describes the required values for the **WIA\_IPS\_BARCODE\_R
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the optional values for the **WIA\_IPS\_BARCODE\_READER** property.
 
@@ -92,11 +92,11 @@ The following table describes the optional values for the **WIA\_IPS\_BARCODE\_R
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  The WIA minidriver is allowed to accept property configuration for the optional values but at scan time ignore requests to enable barcode detection to an inactive scan input source.
 
- 
+ 
 
 This property is required for all Barcode Reader items. The WIA\_BARCODE\_READER\_DISABLED and WIA\_BARCODE\_READER\_AUTO values are required. WIA\_BARCODE\_READER\_DISABLED is the required default value.
 
@@ -127,7 +127,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -145,9 +145,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

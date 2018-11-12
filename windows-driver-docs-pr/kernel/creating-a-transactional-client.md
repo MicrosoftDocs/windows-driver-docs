@@ -59,9 +59,9 @@ If your TPS includes a *superior transaction manager*, transactional clients typ
 
 Transactional clients can call [**ZwSetInformationTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff567104) to set transaction-specific information. For example, a client can set a time-out value for the transaction or supply a descriptive character string. Clients can call [**ZwQueryInformationTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff567057) to retrieve information about a transaction. For example, a client can call this routine to determine whether a transaction has been committed or rolled back.
 
- 
+ 
 
- 
+ 
 
 
 

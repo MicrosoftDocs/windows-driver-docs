@@ -44,7 +44,7 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
+ 
 
 The following bit flags control face authentication in the driver:
 
@@ -86,7 +86,7 @@ The following table describes the flag capabilities:
 </tbody>
 </table>
 
- 
+ 
 
 By default, the driver should have **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE** set to **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_DISABLED** if it is a general purpose IR camera. Otherwise it should be set to **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION** or **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_ALTERNATIVE\_FRAME\_ILLUMINATION**.
 
@@ -118,7 +118,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>([<strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567566)).</p></td>
+<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>(<a href="https://msdn.microsoft.com/library/windows/hardware/dn567566" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn567566)"><strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong></a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -136,7 +136,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------

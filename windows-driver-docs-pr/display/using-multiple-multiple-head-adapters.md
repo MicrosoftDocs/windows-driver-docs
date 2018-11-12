@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The driver can provide multiple-head support if the system is equipped with more than one multiple-head card. If the driver owns more than one multiple-head card, then the driver must ensure that the separate multiple-head cards remain independent.
 
- 
+ 
 
- 
+ 
 
 
 

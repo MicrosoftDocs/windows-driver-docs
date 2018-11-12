@@ -17,9 +17,9 @@ The WPD MTP driver also supports Picture Transfer Protocol (PTP) devices. PTP de
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

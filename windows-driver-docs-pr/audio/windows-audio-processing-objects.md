@@ -20,7 +20,7 @@ This section contains the following topics.
  
 APOs were first introduced in Windows Vista and you may see references to the earlier system APOs - sAPOs. For more information, see [Custom Audio Effects in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=106024). This white paper may reference older [COM](https://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](https://go.microsoft.com/fwlink/p/?linkid=106294) topics.
 
- 
+ 
 
 
 

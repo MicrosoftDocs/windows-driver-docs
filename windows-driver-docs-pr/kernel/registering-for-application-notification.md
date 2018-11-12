@@ -79,7 +79,7 @@ MemoryNotifyHandle =
 
 **Note**   If an application only has to be notified about processors, it does not have to register for notification of memory events. Similarly, if an application only has to be notified about memory, it does not have to register for notification of processor events.
 
- 
+ 
 
 When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
 
@@ -95,9 +95,9 @@ UnregisterDeviceNotification(MemoryNotifyHandle);
 
 For more information about the **RegisterDeviceNotification** and **UnregisterDeviceNotification** functions, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

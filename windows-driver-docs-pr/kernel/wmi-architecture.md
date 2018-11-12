@@ -26,9 +26,9 @@ The following figure shows this data flow:
 
 ![diagram illustrating wmi architecture data flow](images/wmi1a.png)
 
- 
+ 
 
- 
+ 
 
 
 

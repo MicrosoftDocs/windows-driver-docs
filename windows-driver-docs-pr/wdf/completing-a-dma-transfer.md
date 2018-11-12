@@ -65,9 +65,9 @@ If the [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/f
 
 To restart the transaction's current transfer, the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function can call [**WdfDmaTransactionDmaCompletedWithLength**](https://msdn.microsoft.com/library/windows/hardware/ff547052) with the *TransferredLength* parameter set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

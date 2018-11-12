@@ -17,9 +17,9 @@ A value that describes whether the device has enabled or disabled the VMQ featur
 <a href="" id="-vmqlookaheadsplit"></a>**\*VMQLookaheadSplit**  
 A value that describes whether the device has enabled or disabled the ability to split receive buffers into lookahead and post-lookahead buffers. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure. For more information about this feature, see [Shared Memory in Receive Buffers](shared-memory-in-receive-buffers.md).
 
-**Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, this INF keyword is obsolete.
+**Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, this INF keyword is obsolete.
 
- 
+
 
 <a href="" id="-vmqvlanfiltering"></a>**\*VMQVlanFiltering**  
 A value that describes whether the device has enabled or disabled the ability to filter network packets by using the VLAN identifier in the media access control (MAC) header. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure.
@@ -48,7 +48,7 @@ VMQ standardized INF keywords are enumeration keywords. The following table desc
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*VMQ</strong></p></td>
+<td align="left"><p><strong><em>VMQ</strong></p></td>
 <td align="left"><p>Virtual Machine Queues</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -60,15 +60,15 @@ VMQ standardized INF keywords are enumeration keywords. The following table desc
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*VMQLookaheadSplit</strong></p></td>
+<td align="left"><p><strong></em>VMQLookaheadSplit</strong></p></td>
 <td align="left"><p>VMQ Lookahead Split</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p>
 <div class="alert">
-<strong>Note</strong>  Starting with NDIS 6.30, this keyword is no longer supported.
+<strong>Note</strong>  Starting with NDIS 6.30, this keyword is no longer supported.
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -78,7 +78,7 @@ VMQ standardized INF keywords are enumeration keywords. The following table desc
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*VMQVlanFiltering</strong></p></td>
+<td align="left"><p><strong><em>VMQVlanFiltering</strong></p></td>
 <td align="left"><p>VMQ VLAN Filtering</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -90,14 +90,14 @@ VMQ standardized INF keywords are enumeration keywords. The following table desc
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*RssOrVmqPreference</strong></p></td>
-<td align="left"><p>Note: The ParamDesc and EnumDesc entries for this subkey cannot be used in either INF files or a user interface. For more information, see [Handling VMQ and RSS INF Keywords](#vmq-rss).</p></td>
+<td align="left"><p><strong></em>RssOrVmqPreference</strong></p></td>
+<td align="left"><p>Note: The ParamDesc and EnumDesc entries for this subkey cannot be used in either INF files or a user interface. For more information, see <a href="#vmq-rss" data-raw-source="[Handling VMQ and RSS INF Keywords](#vmq-rss)">Handling VMQ and RSS INF Keywords</a>.</p></td>
 <td align="left"><p>0 (Default)</p></td>
 <td align="left"><div class="alert">
-<strong>Note</strong>  Report RSS capabilities
+<strong>Note</strong>  Report RSS capabilities
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -105,17 +105,16 @@ VMQ standardized INF keywords are enumeration keywords. The following table desc
 <td align="left"></td>
 <td align="left"><p>1</p></td>
 <td align="left"><div class="alert">
-<strong>Note</strong>  
-<p>Report VMQ capabilities</p>
+<strong>Note</strong><br/><p>Report VMQ capabilities</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The columns in this table describe the following attributes for an enumeration keyword:
 
@@ -125,9 +124,9 @@ The name of the keyword that you must specify in the INF file. This name also ap
 <a href="" id="paramdesc"></a>ParamDesc  
 The display text that is associated with the SubkeyName INF entry.
 
-**Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
+**Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
 
- 
+
 
 <a href="" id="value"></a>Value  
 The enumeration integer value that is associated with each SubkeyName in the list.
@@ -161,17 +160,17 @@ When NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/
 
     For more information about the VMQ keywords, see Standardized INF Keywords for VMQ.
 
-    **Note**  If the miniport driver is configured for VMQ preference, it must not read any of the RSS standardized keywords.
+    **Note**  If the miniport driver is configured for VMQ preference, it must not read any of the RSS standardized keywords.
 
-     
+
 
 3.  If the miniport driver is configured for RSS preference, it must read the **\*RSS** keyword to determine if RSS is enabled on the network adapter. If the keyword is set to 1, the driver reports the currently-enabled RSS settings. For more information on how the miniport driver reports RSS settings, see [RSS Configuration](rss-configuration.md).
 
     For more information about the RSS keywords, see [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md).
 
-    **Note**  If the miniport driver is configured for RSS preference, it must not read any of the VMQ standardized keywords.
+    **Note**  If the miniport driver is configured for RSS preference, it must not read any of the VMQ standardized keywords.
 
-     
+
 
 The following table describes how the miniport driver determines RSS or VMQ preference and advertises capabilities based on registry keywords:
 
@@ -184,8 +183,8 @@ The following table describes how the miniport driver determines RSS or VMQ pref
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">*RssOrVmqPreference</th>
-<th align="left">*VMQ</th>
+<th align="left"><em>RssOrVmqPreference</th>
+<th align="left"></em>VMQ</th>
 <th align="left">*RSS</th>
 <th align="left">VMQ or RSS capabilities advertised</th>
 </tr>
@@ -218,11 +217,11 @@ The following table describes how the miniport driver determines RSS or VMQ pref
 </tbody>
 </table>
 
- 
 
-**Note**  The miniport driver must always report the complete RSS and VMQ hardware capabilities regardless of the values of these keywords. These keyword settings only affect how the driver reports the currently-enabled RSS and VMQ capabilities.
 
- 
+**Note**  The miniport driver must always report the complete RSS and VMQ hardware capabilities regardless of the values of these keywords. These keyword settings only affect how the driver reports the currently-enabled RSS and VMQ capabilities.
+
+
 
 ### Reserved Registry Keywords
 
@@ -244,20 +243,20 @@ If the miniport driver supports VMQ and the VMQ interface is enabled on the netw
 <tbody>
 <tr class="odd">
 <td align="left"><p></p>
-<p><strong>*RssMaxProcNumber</strong></p></td>
+<p><strong><em>RssMaxProcNumber</strong></p></td>
 <td align="left"><p>The maximum processor number of the RSS interface.</p></td>
 <td align="left"><p>0 through (MAXIMUM_PROC_PER_GROUP-1),</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p>
-<p><strong>*MaxRssProcessors</strong></p></td>
+<p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>The maximum number of RSS processors.</p></td>
 <td align="left"><p>1 through MAXIMUM_PROC_PER_SYSTEM.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The miniport driver that supports VMQ must not read the following subkeys under the **HKEY\_LOCAL\_MACHINE**\\**SYSTEM**\\**CurrentControlSet**\\**services**\\**VMSMP**\\**Parameters** registry key.
 
@@ -279,7 +278,7 @@ The miniport driver that supports VMQ must not read the following subkeys under 
 <td align="left"><p></p>
 <p><strong>TenGigVmqEnabled</strong></p></td>
 <td align="left"><p>Enable or disable VMQ on all 10 gigabits per second (Gbps) network adapters.</p></td>
-<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
+<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
 <p>1=Enabled.</p>
 <p>2=Explicitly disabled.</p></td>
 </tr>
@@ -287,30 +286,30 @@ The miniport driver that supports VMQ must not read the following subkeys under 
 <td align="left"><p></p>
 <p><strong>BelowTenGigVmqEnabled</strong></p></td>
 <td align="left"><p>Enable or disable VMQ on all network adapters that support less than 10 Gbps.</p></td>
-<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
+<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
 <p>1=Enabled.</p>
 <p>2=Explicitly disabled.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
-<p><strong>*RssMaxProcNumber</strong></p></td>
+<p><strong><em>RssMaxProcNumber</strong></p></td>
 <td align="left"><p>The maximum processor number of the RSS interface.</p></td>
 <td align="left"><p>0 through (MAXIMUM_PROC_PER_GROUP-1),</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p>
-<p><strong>*MaxRssProcessors</strong></p></td>
+<p><strong></em>MaxRssProcessors</strong></p></td>
 <td align="left"><p>The maximum number of RSS processors.</p></td>
 <td align="left"><p>1 through MAXIMUM_PROC_PER_SYSTEM.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

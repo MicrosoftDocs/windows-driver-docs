@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -29,7 +29,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 | [**WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926155) |                                |          | The logical channel number and band ID for the BSS entry. |
 | [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)            |                                |          | The incoming Action Frame body.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION](oid-wdi-set-advertisement-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

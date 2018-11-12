@@ -37,9 +37,9 @@ In particular, a *RetryRequest* routine should do the following:
 
 6.  Pass the request on to the next-lower driver with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
 
- 
+ 
 
- 
+ 
 
 
 

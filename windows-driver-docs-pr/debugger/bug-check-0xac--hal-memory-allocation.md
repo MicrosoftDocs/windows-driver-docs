@@ -55,7 +55,7 @@ The HAL\_MEMORY\_ALLOCATION bug check has a value of 0x000000AC. This bug check 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ The HAL could not obtain non-paged memory pool for a system critical requirement
 
 These critical memory allocations are made early in system initialization, and the HAL\_MEMORY\_ALLOCATION bug check is not expected. This bug check probably indicates some other critical error such as pool corruption or massive consumption.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ It is important to have symbols on the faulting machine before starting the debu
 
 7.  By looking at a stack trace you can see the module and function names involved in the call.
 
- 
+ 
 
- 
+ 
 
 
 

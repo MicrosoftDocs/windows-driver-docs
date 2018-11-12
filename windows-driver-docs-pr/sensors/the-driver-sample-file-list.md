@@ -39,7 +39,7 @@ The following source files are in the src\\SPB\\SpbAccelerometer folder and are 
 | SpbRequest.cpp          | Implementation of register-based device accesses via SPB.                                                                                                                |
 | Trace.h                 | Sets up WPP tracing.                                                                                                                                                     |
 
- 
+ 
 
 ## Related topics
 [SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)  

@@ -26,9 +26,9 @@ When PortCls calls the adapter driver's **IAdapterPowerManagement::PowerChangeSt
 
 Before powering down in response to a **PowerChangeState** call, the adapter driver should place the audio outputs in a state that prevents speaker noise from occurring when the power switches off. For example, the shutdown process might include ramping the DAC outputs to zero, turning off the DACs, and muting the MIDI lines.
 
- 
+ 
 
- 
+ 
 
 
 

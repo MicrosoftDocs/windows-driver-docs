@@ -22,7 +22,7 @@ When a Windows-based application calls one of the methods in the **IPortableDevi
 | WpdObjectResources::OnOpenResource           | Called in response to an application invoking the **IPortableDeviceResources::GetStream** method.                                      |
 | WpdObjectResources::OnReadResource           | Called in response to an application invoking the **IStream::Read** method on the **IStream** object that **OnOpenResource** returned. |
 
- 
+ 
 
 The WpdObjectResources command handlers are invoked by the **WpdObjectResources::DispatchWpdMessage** method. The following excerpt from the sample driver contains the code for **WpdObjectResources::DispatchWpdMessage**.
 
@@ -80,9 +80,9 @@ HRESULT WpdObjectResources::DispatchWpdMessage(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

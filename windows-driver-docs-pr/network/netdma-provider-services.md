@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -68,9 +68,9 @@ The following topics describe the NetDMA provider services and the preceding *Pr
 
 [Resetting a DMA Channel](resetting-a-dma-channel.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,9 +56,9 @@ Routines that provide a direct interface to the object manager are usually prefi
 
 Note that Windows uses objects as an abstraction for resources. However, Windows is not object-oriented in the classical C++ meaning of the term. Windows is *object-based*. For more information on what object-based means for Windows, see [Object-Based](object-based.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,15 +14,15 @@ ms.date: 10/17/2018
 
 
 
-Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\***CONTROLLER\_NAME* entry uses this default property sheet. This property sheet contains the following two pages:
+Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\**<em>CONTROLLER\_NAME</em> entry uses this default property sheet. This property sheet contains the following two pages:
 
 -   **Test:** This page demonstrates that the device is responding properly. It returns a graphical representation of the registry settings that are associated with the device attributes and allows the user to view them.
 
 -   **Settings:** This page allows the user to write specific information about the device to the system. Services are provided for calibration and for a rudder or pedals.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -61,11 +61,11 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execu
 
 **Tip**   Type the **reg query** command into Notepad, then save the file as tracedb.bat. Thereafter, to display the value of **StackTraceDatabaseSizeInMB**, just type **TraceDb**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

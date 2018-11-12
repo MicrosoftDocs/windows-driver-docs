@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897818)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897818) elements that specifies the Ethertype encapsulations for the association. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ This section discusses advanced architectural features of Microsoft Windows Driv
 
 [High Definition Audio DDI](high-definition-audio-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

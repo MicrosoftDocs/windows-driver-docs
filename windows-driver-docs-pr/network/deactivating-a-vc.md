@@ -33,9 +33,9 @@ An MCM driver's call to **NdisMCmDeactivateVc** informs NDIS that it has deactiv
 
 An MCM driver does not call **NdisMCmDeactivateVc** to deactivate VCs used for exchanging signaling messages between the MCM driver and network components such as a switch. An MCM driver deactivates a signaling VC internally without calling any **Ndis*Xxx*** function.
 
- 
+ 
 
- 
+ 
 
 
 

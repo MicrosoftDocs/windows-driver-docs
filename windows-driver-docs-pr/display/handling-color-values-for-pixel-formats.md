@@ -155,9 +155,9 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ The IRQL at which a driver function runs affects which NDIS functions it can cal
 
 Any driver function that shares resources with the driver's interrupt service routine (ISR) must be able to raise its IRQL to DIRQL to prevent race conditions. NDIS provides such a mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

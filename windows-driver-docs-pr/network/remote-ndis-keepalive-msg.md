@@ -49,7 +49,7 @@ The host sends this message periodically when there has been no other control or
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -84,9 +84,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

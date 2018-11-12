@@ -50,9 +50,9 @@ A driver that never retries I/O operations can use [**ExInterlockedPushEntrySLis
 
 For more information, see [Managing Hardware Priorities](managing-hardware-priorities.md) and [Spin Locks](spin-locks.md). For IRQL requirements for a specific support routine, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ NDIS\_CLIENT\_CHIMNEY\_OFFLOAD\_GENERIC\_CHARACTERISTICS (see [NDIS 6.0 TCP chim
 
 NDIS\_CLIENT\_CHIMNEY\_OFFLOAD\_TCP\_CHARACTERISTICS (see [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md))
 
- 
+ 
 
- 
+ 
 
 
 

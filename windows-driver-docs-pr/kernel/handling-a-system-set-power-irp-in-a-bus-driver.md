@@ -24,9 +24,9 @@ When a bus driver receives a system set-power IRP, it must take the following st
 
 The bus driver does not change device power settings until it receives a power IRP that requests a device power state.
 
- 
+ 
 
- 
+ 
 
 
 

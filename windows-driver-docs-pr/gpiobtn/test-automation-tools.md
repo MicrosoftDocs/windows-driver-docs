@@ -26,11 +26,11 @@ The MITT tool can directly generate the GPIO impulses that are needed to simulat
 **Note**  
 The MITT platform can easily accommodate customized input patterns. See the MITT Readme file for instructions on how to generate these.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

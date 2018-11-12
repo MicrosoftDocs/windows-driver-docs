@@ -21,9 +21,9 @@ Two sets of reference pages are presented:
 
 [HD Audio DDI Enumerations](hd-audio-ddi-enumerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

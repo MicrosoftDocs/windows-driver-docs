@@ -65,7 +65,7 @@ Address in the virtual address range of a user-mode module.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -102,9 +102,9 @@ VAD @ 824bc2f8
 SecNoChange 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

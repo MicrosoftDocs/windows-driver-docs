@@ -32,7 +32,7 @@ To support KSPROPSETID\_OPMVideoOutput, implement the following methods:
 
 The remainder of this topic includes a sample implementation of these three methods.
 
-To use this code, you must include the following header files*:*
+To use this code, you must include the following header files<em>:</em>
 
 ```cpp
 #include <initguid.h>
@@ -1099,9 +1099,9 @@ const BYTE TestCert[] =
 #endif //_TESTCERT_H_
 ```
 
- 
+ 
 
- 
+ 
 
 
 

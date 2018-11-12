@@ -35,9 +35,9 @@ To hand off packet data service, use the following procedure:
 
 8.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567850) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

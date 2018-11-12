@@ -46,9 +46,9 @@ In the previous example, opcode 0x2A indicates a write operation, and 0x28 indic
 
 As always, miniport driver developers are responsible for associating error codes from their hardware to the SRB status codes. Typically, timeouts are associated with SRB 0x0A, the code for a selection timeout. SRB 0x0e is typically associated with a full bus reset, but it can also be associated with controller errors.
 
- 
+ 
 
- 
+ 
 
 
 

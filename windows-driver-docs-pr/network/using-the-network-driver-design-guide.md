@@ -77,75 +77,75 @@ The following additional driver models are available to use particular hardware 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Scalable Networking](https://msdn.microsoft.com/library/windows/hardware/ff570735)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570735" data-raw-source="[Scalable Networking](https://msdn.microsoft.com/library/windows/hardware/ff570735)">Scalable Networking</a></p></td>
 <td align="left"><p>Networking technologies that support the offload of tasks to a network adapter, such as the following:</p>
 <ul>
-<li><p>[Header-Data Split](header-data-split.md), a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
-<li><p>[Receive Side Scaling](ndis-receive-side-scaling2.md), a network driver technology that improves network performance on multiprocessor systems.</p></li>
-<li><p>[TCP Chimney Offload](ndis-tcp-chimney-offload.md), an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
-<li><p>[TCP/IP Offload](tcp-ip-offload.md), an offload of tasks or connections to a network adapter that has the appropriate capabilities.</p></li>
-<li><p>[Network Direct Kernel Provider Interface (NDKPI)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md), which enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).</p></li>
-<li><p>[Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md), which makes it possible to use Generic Routing Encapsulation (GRE)-encapsulated packets with:</p>
+<li><p><a href="header-data-split.md" data-raw-source="[Header-Data Split](header-data-split.md)">Header-Data Split</a>, a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
+<li><p><a href="ndis-receive-side-scaling2.md" data-raw-source="[Receive Side Scaling](ndis-receive-side-scaling2.md)">Receive Side Scaling</a>, a network driver technology that improves network performance on multiprocessor systems.</p></li>
+<li><p><a href="ndis-tcp-chimney-offload.md" data-raw-source="[TCP Chimney Offload](ndis-tcp-chimney-offload.md)">TCP Chimney Offload</a>, an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
+<li><p><a href="tcp-ip-offload.md" data-raw-source="[TCP/IP Offload](tcp-ip-offload.md)">TCP/IP Offload</a>, an offload of tasks or connections to a network adapter that has the appropriate capabilities.</p></li>
+<li><p><a href="overview-of-network-direct-kernel-provider-interface--ndkpi-.md" data-raw-source="[Network Direct Kernel Provider Interface (NDKPI)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md)">Network Direct Kernel Provider Interface (NDKPI)</a>, which enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).</p></li>
+<li><p><a href="network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md" data-raw-source="[Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>, which makes it possible to use Generic Routing Encapsulation (GRE)-encapsulated packets with:</p>
 <ul>
 <li>Large Send Offload (LSO)</li>
 <li>Virtual Machine Queue (VMQ)</li>
 <li>Transmit (Tx) checksum offload</li>
 <li>Receive (Rx) checksum offload</li>
 </ul></li>
-<li>[NetDMA](netdma-drivers.md), an interface for drivers to perform memory-to-memory direct memory access (DMA) transfers.
+<li><a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a>, an interface for drivers to perform memory-to-memory direct memory access (DMA) transfers.
 <div class="alert">
-<strong>Note</strong>  The [NetDMA](netdma-drivers.md) interface is not supported in Windows 8, Windows Server 2012, and later.
+<strong>Note</strong>  The <a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a> interface is not supported in Windows 8, Windows Server 2012, and later.
 </div>
 <div>
- 
+ 
 </div></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Virtualized Networking](virtualized-networking.md)</p></td>
+<td align="left"><p><a href="virtualized-networking.md" data-raw-source="[Virtualized Networking](virtualized-networking.md)">Virtualized Networking</a></p></td>
 <td align="left"><p>Networking technologies that support Hyper-V virtualization environments, such as the following:</p>
 <ul>
-<li><p>[Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md)</p></li>
-<li><p>[Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq--in-ndis-6-20.md)</p></li>
-<li><p>[Hyper-V Extensible Switch](hyper-v-extensible-switch.md)</p></li>
+<li><p><a href="single-root-i-o-virtualization--sr-iov-.md" data-raw-source="[Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md)">Single Root I/O Virtualization (SR-IOV)</a></p></li>
+<li><p><a href="virtual-machine-queue--vmq--in-ndis-6-20.md" data-raw-source="[Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq--in-ndis-6-20.md)">Virtual Machine Queue (VMQ)</a></p></li>
+<li><p><a href="hyper-v-extensible-switch.md" data-raw-source="[Hyper-V Extensible Switch](hyper-v-extensible-switch.md)">Hyper-V Extensible Switch</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Wireless Networking](https://msdn.microsoft.com/library/windows/hardware/ff571095)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571095" data-raw-source="[Wireless Networking](https://msdn.microsoft.com/library/windows/hardware/ff571095)">Wireless Networking</a></p></td>
 <td align="left"><p>Networking capabilities that include Native 802.11 Wireless LAN.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Network Module Registrar](https://msdn.microsoft.com/library/windows/hardware/ff568366)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568366" data-raw-source="[Network Module Registrar](https://msdn.microsoft.com/library/windows/hardware/ff568366)">Network Module Registrar</a></p></td>
 <td align="left"><p>A system facility that allows a driver to attach network modules to one another.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571083" data-raw-source="[Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083)">Winsock Kernel</a></p></td>
 <td align="left"><p>A kernel-mode Network Programming Interface (NPI).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IP Helper](ip-helper.md)</p></td>
+<td align="left"><p><a href="ip-helper.md" data-raw-source="[IP Helper](ip-helper.md)">IP Helper</a></p></td>
 <td align="left"><p>A set of utility functions that enable drivers to retrieve and modify information about the network configuration of the local computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)</p></td>
+<td align="left"><p><a href="windows-filtering-platform-callout-drivers2.md" data-raw-source="[Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)">Windows Filtering Platform Callout Drivers</a></p></td>
 <td align="left"><p>A kernel-mode interface that enables deep inspection, packet modification, stream modification, and logging of network data.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[System Area Networks](system-area-networks.md)</p></td>
+<td align="left"><p><a href="system-area-networks.md" data-raw-source="[System Area Networks](system-area-networks.md)">System Area Networks</a></p></td>
 <td align="left"><p>A type of network connection that uses Windows Sockets Direct to support a high-performance, connection-oriented network.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Remote NDIS (RNDIS)](https://msdn.microsoft.com/library/windows/hardware/ff570659)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570659" data-raw-source="[Remote NDIS (RNDIS)](https://msdn.microsoft.com/library/windows/hardware/ff570659)">Remote NDIS (RNDIS)</a></p></td>
 <td align="left"><p>A class specification that defines a system-provided, bus-independent message set over a USB bus.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

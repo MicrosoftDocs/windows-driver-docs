@@ -33,25 +33,25 @@ TraceLogging is built on ETW and is compatible with existing tools. Providers th
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[TraceLogging for kernel-mode drivers and components](tracelogging-for-kernel-mode-drivers-and-components.md)</p></td>
-<td align="left"><p>This topic describes how to use the [TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636) API from within kernel-mode drivers and components.</p></td>
+<td align="left"><p><a href="tracelogging-for-kernel-mode-drivers-and-components.md" data-raw-source="[TraceLogging for kernel-mode drivers and components](tracelogging-for-kernel-mode-drivers-and-components.md)">TraceLogging for kernel-mode drivers and components</a></p></td>
+<td align="left"><p>This topic describes how to use the <a href="https://msdn.microsoft.com/library/windows/desktop/dn904636" data-raw-source="[TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636)">TraceLogging</a> API from within kernel-mode drivers and components.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[TraceLogging Examples](tracelogging-examples.md)</p></td>
+<td align="left"><p><a href="tracelogging-examples.md" data-raw-source="[TraceLogging Examples](tracelogging-examples.md)">TraceLogging Examples</a></p></td>
 <td align="left"><p>The source code in this topic demonstrates how to use TraceLogging.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to fix TraceLogging build errors](how-to-fix-tracelogging-build-errors.md)</p></td>
+<td align="left"><p><a href="how-to-fix-tracelogging-build-errors.md" data-raw-source="[How to fix TraceLogging build errors](how-to-fix-tracelogging-build-errors.md)">How to fix TraceLogging build errors</a></p></td>
 <td align="left"><p>This topic describes some common build errors and how to resolve them.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

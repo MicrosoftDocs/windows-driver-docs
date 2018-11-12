@@ -28,9 +28,9 @@ This section describes the operations that printer drivers must perform to suppo
 
 [Installing ICC Profiles](installing-icc-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

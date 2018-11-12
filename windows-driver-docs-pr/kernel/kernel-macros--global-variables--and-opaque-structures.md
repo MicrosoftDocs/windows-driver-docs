@@ -18,9 +18,9 @@ This section describes macros, global variables, and opaque structures. It conta
 
 [Windows kernel opaque structures](eprocess.md)
 
- 
+ 
 
- 
+ 
 
 
 

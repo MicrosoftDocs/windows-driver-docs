@@ -29,9 +29,9 @@ NDIS maps many of the system-defined OIDs for miniport drivers to globally uniqu
 
 For more information about querying and setting OIDs, creating custom OIDs, and NDIS support for WMI, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
 
- 
+ 
 
- 
+ 
 
 
 

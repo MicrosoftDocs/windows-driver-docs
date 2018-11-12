@@ -117,9 +117,9 @@ NTSTATUS
 
 A WSK application is not required to call **NmrRegisterClient** from within its **DriverEntry** function. For example, if a WSK application is a subcomponent of a complex driver, the registration of the application might occur only when the WSK application subcomponent is activated.
 
- 
+ 
 
- 
+ 
 
 
 

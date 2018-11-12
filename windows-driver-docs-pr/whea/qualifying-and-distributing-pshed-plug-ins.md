@@ -22,7 +22,7 @@ To ensure the quality and integrity of the driver, a PSHED plug-in must be digit
 
     **Note**  You must obtain a WHQL digital signature for the driver package regardless of whether the PSHED plug-in was embedded with an [Authenticode](https://msdn.microsoft.com/library/windows/hardware/ff686697) digital signature.
 
-     
+     
 
 For more information about how to digitally sign a PSHED plug-in, see [Signing Drivers for Public Release](https://msdn.microsoft.com/library/windows/hardware/ff552289).
 
@@ -34,11 +34,11 @@ PSHED plug-ins should be distributed to customers by hardware vendors in a manne
 
 **Note**  PSHED plug-ins are not distributed to customers through Windows Update.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

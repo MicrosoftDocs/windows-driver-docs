@@ -41,9 +41,9 @@ The driver ignores the setting of a stream's frequency divisor either for indexe
 
 For more information about **IDirect3DDevice*Xxx*::SetStreamSourceFreq** and **IDirect3DDevice*Xxx*::CreateStateBlock**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

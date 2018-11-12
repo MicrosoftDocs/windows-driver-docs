@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the whi
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>node</p></td>
-<td>[<strong>KSPROPERTY_VIDEOPROCAMP_NODE_S2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566082)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff566082" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_NODE_S2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566082)"><strong>KSPROPERTY_VIDEOPROCAMP_NODE_S2</strong></a></td>
 <td><p>Pair of LONG integers</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a pair of LONG integers that specify the red and blue components of a camera's white balance setting. The values indicate the current red and blue component values of the camera.
 
@@ -91,9 +91,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOPROCAMP\_NODE\_S2**](https://msdn.microsoft.com/library/windows/hardware/ff566082)
 
- 
+ 
 
- 
+ 
 
 
 

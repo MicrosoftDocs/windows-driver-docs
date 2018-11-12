@@ -38,9 +38,9 @@ A debugger session in which the target is running in user mode.
 <span id="user_mode_target"></span><span id="USER_MODE_TARGET"></span>**user-mode target**  
 See target application.
 
- 
+ 
 
- 
+ 
 
 
 

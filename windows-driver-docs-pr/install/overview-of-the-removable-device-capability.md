@@ -23,9 +23,9 @@ The following Device Manager screen shot shows the devnode topology for a generi
 
 ![screen shot of device manager window showing devnode topology for a usb mouse](images/containerid-2.png)
 
- 
+ 
 
- 
+ 
 
 
 

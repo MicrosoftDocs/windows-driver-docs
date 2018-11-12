@@ -17,7 +17,8 @@ The syntax for the PwrTest tool is:
 pwrtest /scenario [/scenario_options] [/common_options]
 ```
 
-<span id="_scenario"></span><span id="_SCENARIO"></span>**/***scenario*  
+<span id="_scenario"></span><span id="_SCENARIO"></span>**/**<em>scenario</em>  
+
 | Scenarios   | Description                                                                                                                                                        |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | sleep       | Cycles the computer through sleep/resume transitions. (Windows 7 and later)                                                                                        |
@@ -35,27 +36,26 @@ pwrtest /scenario [/scenario_options] [/common_options]
 | processidle | Forces background maintenance tasks to execute (now rather than at their scheduled time) and monitors their progress. (Windows 7 and later)                        |
 | cs          | Cycles the computer through connected standby transitions if they are supported by the system. (Windows 8 and later)                                               |
 | platidle    | Monitors and attempts to log platform idle transition counts if they are supported by the system. (Windows 8 and later)                                            |
+ 
 
- 
+ 
 
- 
 
-<span id="_scenario_options"></span><span id="_SCENARIO_OPTIONS"></span>**/***scenario\_options*  
-To see the options available for each Pwrtest scenario, type: **pwrtest.exe /***scenario* **/?**
+<span id="_scenario_options"></span><span id="_SCENARIO_OPTIONS"></span>**/**<em>scenario\_options</em>  
+To see the options available for each Pwrtest scenario, type: **pwrtest.exe /**<em>scenario</em> **/?**
 
 For example: **pwrtest.exe /sleep /?**
 
 <span id="_common_options"></span><span id="_COMMON_OPTIONS"></span>/*common\_options*  
-| *common\_options*      | Description                                                                                                                                                                                                                                |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **/lf:***folder*       | Specifies the folder for the log files. For example, c:\\myfolder or \\\\server\\share. The default log location is the same folder as pwrtest.exe.                                                                                        |
-| **/ln:***name*         | Specifies the name for the log files and the name for the Event Tracing for Windows (ETW) trace session. The log file extensions are added automatically (.wtl, .xml, etc.). The default name is pwrtestlog.                               |
-| **/etwbuffersize:***n* | Specifies the ETW buffer size in KB if it is larger than default size. Default is the current page size or 256KB (whichever is greater).                                                                                                   |
-| **/etwminbuffers:***n* | Specifies the minimum number of buffers allocated for the ETW session if larger than the minimum of 2 per logical processor. The default is 2 buffers per logical processor.                                                               |
-| **/etwmaxbuffers:***n* | Specifies the maximum number of buffers allocated for the ETW session if that number is larger than the minimum of 2 per logical processor and larger than the **etwminbuffers** setting. The default is the **etwminbuffers** value + 20. |
-| **/delaywrite**        | Specifies that log data is buffered in memory to reduce disk writes. This option affects all log types including ETL.                                                                                                                      |
 
- 
+|       *common\_options*       |                                                                                                                Description                                                                                                                 |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    **/lf:**<em>folder</em>    |                                            Specifies the folder for the log files. For example, c:\\myfolder or \\\\server\\share. The default log location is the same folder as pwrtest.exe.                                             |
+|     **/ln:**<em>name</em>     |                Specifies the name for the log files and the name for the Event Tracing for Windows (ETW) trace session. The log file extensions are added automatically (.wtl, .xml, etc.). The default name is pwrtestlog.                |
+| **/etwbuffersize:**<em>n</em> |                                                  Specifies the ETW buffer size in KB if it is larger than default size. Default is the current page size or 256KB (whichever is greater).                                                  |
+| **/etwminbuffers:**<em>n</em> |                                Specifies the minimum number of buffers allocated for the ETW session if larger than the minimum of 2 per logical processor. The default is 2 buffers per logical processor.                                |
+| **/etwmaxbuffers:**<em>n</em> | Specifies the maximum number of buffers allocated for the ETW session if that number is larger than the minimum of 2 per logical processor and larger than the **etwminbuffers** setting. The default is the **etwminbuffers** value + 20. |
+|        **/delaywrite**        |                                                           Specifies that log data is buffered in memory to reduce disk writes. This option affects all log types including ETL.                                                            |
 
 **Examples**
 
@@ -92,9 +92,9 @@ To be able to use all PwrTest Scenarios, you must first provision a test compute
 
 [PwrTest Log File](pwrtest-log-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

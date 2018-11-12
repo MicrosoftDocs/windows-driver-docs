@@ -23,16 +23,16 @@ In addition to the [Common sensor properties](common-sensor-properties.md) and t
 |[Activity sensor properties](activity-sensor-properties.md)|The property keys for the activity sensor.|
 |[Pedometer sensor property](pedometer-sensor-property.md)|The property key for the pedometer.|
 
- 
+ 
 
 ## Related topics
 
 
 [Sensor properties](sensor-properties2.md)
 
- 
+ 
 
- 
+ 
 
 
 

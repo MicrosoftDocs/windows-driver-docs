@@ -16,9 +16,9 @@ Windows uses an access control list (ACL) to determine which objects have what s
 
 Routines that provide a direct interface to the security reference monitor are prefixed with the letters "**Se**"; for example, **SeAccessCheck**. For a list of security reference monitor routines, see [Security Reference Monitor Routines](https://msdn.microsoft.com/library/windows/hardware/ff563711).
 
- 
+ 
 
- 
+ 
 
 
 

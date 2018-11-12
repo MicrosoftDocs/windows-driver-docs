@@ -100,28 +100,28 @@ For Microsoft Windows 2000 and later drivers that also support computers running
 <tbody>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 [<strong>VIDEO_PORT_CONFIG_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570531)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure. If [<strong>VideoPortInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570320) fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure. If <a href="https://msdn.microsoft.com/library/windows/hardware/ff570320" data-raw-source="[&lt;strong&gt;VideoPortInitialize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570320)"><strong>VideoPortInitialize</strong></a> fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_W2K_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows 2000 and later [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows 2000 and later <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista and later [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista and later <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista [<strong>VIDEO_PORT_CONFIG_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570531)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **DriverEntry** should be made pageable.
 
@@ -168,9 +168,9 @@ Requirements
 
 [**VideoPortZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570493)
 
- 
+ 
 
- 
+ 
 
 
 

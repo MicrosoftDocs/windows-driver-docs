@@ -56,9 +56,9 @@ The Scratch Pad window has a shortcut menu with additional commands. To access t
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md). For more information about all techniques that you can use to control debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

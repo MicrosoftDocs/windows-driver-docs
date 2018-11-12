@@ -46,7 +46,7 @@ The *active portion* of a stream is the portion of a stream that begins with the
 
 **Note**   If a stream has an archive tail, the active portion of the stream begins at the record pointed to by the base LSN or the archive tail, whichever is smaller. For more information about archiving, see [CLFS Support for Archiving](clfs-support-for-archiving.md).
 
- 
+ 
 
 ### Previous LSN
 
@@ -70,9 +70,9 @@ The arrows in the following diagram illustrate how the undo-next LSN provides a 
 
 ![diagram illustrating previous lsn and undo-next lsn pointers](images/clfsundonext.gif)
 
- 
+ 
 
- 
+ 
 
 
 

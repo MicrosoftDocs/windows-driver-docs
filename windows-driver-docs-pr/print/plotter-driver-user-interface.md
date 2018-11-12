@@ -27,9 +27,9 @@ These property sheets contain the plotter features and options specified by a pl
 
 The plotter's user interface is implemented as a user-mode [printer interface DLL](printer-interface-dll.md). Code within this DLL, in conjunction with CPSUI, specifies the contents of the property sheet pages. The DLL enforces constraints on which plotter options can be combined, based on information in the minidriver. It also ensures that users do not select options not installed on the plotter.
 
- 
+ 
 
- 
+ 
 
 
 

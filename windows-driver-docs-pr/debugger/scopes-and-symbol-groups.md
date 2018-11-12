@@ -20,13 +20,13 @@ There are two ways to create a symbol group. An empty symbol group is returned b
 
 **Note**   The symbol group generated from the current scope is a snapshot of the local variables. If any execution occurs in the target, the symbols may no longer be accurate. Also, if the current scope changes, the symbol group will no longer represent the *current* scope (because it will continue to represent the scope for which it was created).
 
- 
+ 
 
 Symbols can be added to a symbol group using [**AddSymbol**](https://msdn.microsoft.com/library/windows/hardware/ff537925), and removed using [**RemoveSymbolByIndex**](https://msdn.microsoft.com/library/windows/hardware/ff554510) or [**RemoveSymbolByName**](https://msdn.microsoft.com/library/windows/hardware/ff554518). The method [**OutputAsType**](https://msdn.microsoft.com/library/windows/hardware/ff553191) tells the debugger to use a different symbol type when handling a symbol's data.
 
 **Note**   The values for scoped symbols may not be accurate. In particular, the machine architecture and compiler optimizations may prevent the debugger from accurately determining a symbol's value.
 
- 
+ 
 
 The *symbol entry information* is a description of a symbol, including its location and its type. To find this information for a symbol in a module, use the [**IDebugSymbols3::GetSymbolEntryInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548484). To find this information for a symbol in a symbol group, use [**IDebugSymbolGroup2::GetSymbolEntryInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548487). See [**DEBUG\_SYMBOL\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff541662) for details of the symbol entry information.
 
@@ -74,9 +74,9 @@ The *thread context* is the state preserved by Windows when switching threads. T
 
 The thread context is represented by the CONTEXT structure defined in ntddk.h. This structure is platform-dependent and its interpretation depends on the effective processor type. The methods [**GetThreadContext**](https://msdn.microsoft.com/library/windows/hardware/ff549291) and [**SetThreadContext**](https://msdn.microsoft.com/library/windows/hardware/ff556829) can be used to get and set the thread context.
 
- 
+ 
 
- 
+ 
 
 
 

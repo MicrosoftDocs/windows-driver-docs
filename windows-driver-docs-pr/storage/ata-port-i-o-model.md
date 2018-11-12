@@ -27,8 +27,8 @@ For more information about the I/O model of the Storport driver, see [Storport I
 
 For more information about the I/O model of the SCSI port driver, see [SCSI Port I/O Model](scsi-port-i-o-model.md).
 
- 
+ 
 
- 
+ 
 
 

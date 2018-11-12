@@ -33,9 +33,9 @@ When returning NULL_GUID as a container ID, a bus driver declares to PnP that th
 
 Aside from very special cases, a bus driver should never return NULL_GUID when reporting a hardware device and bus drivers should guard against faulty hardware that reports a NULL_GUID value from their bus. In these cases the bus driver should either threat this as a device error, or treat it as if the device did not report a value.
 
- 
+ 
 
- 
+ 
 
 
 

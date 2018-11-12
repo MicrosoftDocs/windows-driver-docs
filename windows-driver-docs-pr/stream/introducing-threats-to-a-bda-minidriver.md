@@ -29,9 +29,9 @@ The following diagram shows how BDA minidriver threats can be introduced:
 
 ![diagram illustrating how bda minidriver threats can be introduced](images/bdathret.png)
 
- 
+ 
 
- 
+ 
 
 
 

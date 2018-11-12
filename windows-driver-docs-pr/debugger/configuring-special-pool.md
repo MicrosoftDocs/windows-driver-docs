@@ -34,11 +34,11 @@ This section includes the following topics.
 
 **Note**   Use *Driver Verifier* to request special pool for allocations by a particular driver. For more information, see the "Special Pool" topic in the "Driver Verifier" section of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

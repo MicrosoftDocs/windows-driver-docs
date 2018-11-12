@@ -28,9 +28,9 @@ This section provides information about creating property sheets for the Microso
 
 [DirectInput Control Panel Essentials](directinput-control-panel-essentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

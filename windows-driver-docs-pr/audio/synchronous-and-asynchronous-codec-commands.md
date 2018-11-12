@@ -62,9 +62,9 @@ For example, the hardware interface for writing a sequence of data bytes to a co
 
 The [*TransferCodecVerbs*](https://msdn.microsoft.com/library/windows/hardware/ff538596) routine is available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

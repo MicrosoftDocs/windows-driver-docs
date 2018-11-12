@@ -15,7 +15,7 @@ The USB miniport driver must provide an IRP callback routine for the USB idle re
 
 **Note**  After the USB bus driver handles the USB idle request IRP, it calls the callback routine either synchronously in the context of the call to [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) or asynchronously after [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) returns.
 
- 
+ 
 
 The callback routine only has to call [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492) in order to notify NDIS that it can continue with the low-power state transition of the network adapter. When the driver calls **NdisMIdleNotificationConfirm**, it must also specify the lowest device power state that the network adapter can transition to.
 
@@ -45,9 +45,9 @@ VOID MiniportUsbIdleRequestCallback(PVOID AdapterContext)
 
 For more information about the USB idle request callback routine, see USB Idle Request IRP Callback Routine.
 
- 
+ 
 
- 
+ 
 
 
 

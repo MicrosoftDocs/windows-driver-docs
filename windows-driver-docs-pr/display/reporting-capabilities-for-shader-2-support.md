@@ -30,9 +30,9 @@ If a device supports pixel shader 2.0 and later, its driver must configure the f
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 0 (that is, do not set these bits) to indicate unconditional support.
 
- 
+ 
 
- 
+ 
 
 
 

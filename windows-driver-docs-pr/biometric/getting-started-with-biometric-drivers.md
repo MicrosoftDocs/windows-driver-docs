@@ -43,9 +43,9 @@ The following list shows the different ways that you can develop a driver for WB
 
 This documentation describes how to use UMDF to write a WBDI-based user-mode USB biometric driver.
 
- 
+ 
 
- 
+ 
 
 
 

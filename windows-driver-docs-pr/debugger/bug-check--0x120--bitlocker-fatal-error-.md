@@ -31,11 +31,11 @@ The BITLOCKER\_FATAL\_ERROR bug check has a value of 0x00000120. This indicates 
 | 3         | Reserved        |
 | 4         | Reserved        |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

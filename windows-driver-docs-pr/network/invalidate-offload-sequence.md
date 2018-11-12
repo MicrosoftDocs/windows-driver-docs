@@ -32,9 +32,9 @@ Note that the tree that is passed to the *MiniportInvalidateOffload* function co
 
 The NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structures in the tree indicate the state to be invalidated. A non-NULL value in the **MiniportOffloadContext** member points to a memory location that contains a PVOID value that was supplied by the offload target when the state was offloaded. (For more information about the **MiniportOffloadContext** member, see [Storing and Referencing Offloaded State](storing-and-referencing-offloaded-state.md).) This PVOID value references the miniport offload context in which the offload target stores the state to be invalidated.
 
- 
+ 
 
- 
+ 
 
 
 

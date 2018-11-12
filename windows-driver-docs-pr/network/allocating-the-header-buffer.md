@@ -24,9 +24,9 @@ If an IP header contains IPv4 options, IPsec headers, or IPv6 extension headers,
 
 If a header that includes the UDP header, TCP header, or TCP options exceeds the **MaxHeaderSize** value, the NIC must either split the frame at the [beginning of the upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md) or must not split the frame.
 
- 
+ 
 
- 
+ 
 
 
 

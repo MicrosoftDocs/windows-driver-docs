@@ -34,9 +34,9 @@ Unlike the files listed under the **Files** registry key (see [Installing Queue-
 
 One method for installing the Point and Print DLL on a client is to specify its name in a [printer INF file](printer-inf-files.md) as a dependent file, so the file can be copied to the client's driver directory during [downloading of driver-specific files](downloading-driver-specific-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

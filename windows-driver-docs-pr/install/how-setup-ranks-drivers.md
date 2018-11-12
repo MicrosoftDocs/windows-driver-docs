@@ -13,9 +13,9 @@ This section includes the following topics:
 
 [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

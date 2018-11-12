@@ -21,9 +21,9 @@ GDL provides two miscellaneous directives:
 
 -   \*% (asterisk plus the percent sign) causes the parser to ignore the remainder of the line. You can use this directive for adding a comment.
 
- 
+ 
 
- 
+ 
 
 
 

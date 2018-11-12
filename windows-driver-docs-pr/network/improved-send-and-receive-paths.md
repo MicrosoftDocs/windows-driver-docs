@@ -26,9 +26,9 @@ The NDIS 6.0 send and receive paths have been improved as follows to enhance per
 
 For more information about send and receive data handling in NDIS 6.0, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

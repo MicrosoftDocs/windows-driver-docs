@@ -44,9 +44,9 @@ Use these steps to convert the projects in a driver solution.
 
     To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](windows-10-editions-for-universal-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

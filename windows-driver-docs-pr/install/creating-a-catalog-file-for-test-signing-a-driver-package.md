@@ -32,9 +32,9 @@ For these types of drivers, you have to embed a digital signature within the dri
 
 For more information about how to create catalog files, see [Creating a Catalog File for a Test-Signed Driver Package](creating-a-catalog-file-for-a-test-signed-driver-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

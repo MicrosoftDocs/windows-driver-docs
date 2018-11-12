@@ -18,7 +18,7 @@ You can use any edition of Microsoft Visual Studio 2015, including Microsoft Vi
 
 **Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe). The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more info, see [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md) and [WDK and the Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286).
 
- 
+ 
 
 ## <span id="building_a_driver_using_visual_studio"></span><span id="BUILDING_A_DRIVER_USING_VISUAL_STUDIO"></span>Building a Driver Using Visual Studio
 
@@ -27,7 +27,7 @@ You build a driver the same way you build any project or solution in Visual Stud
 
 **Note**  You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2015. Before you open the projects or solutions, run the [ProjectUpgradeTool](https://msdn.microsoft.com/Library/Windows/Hardware/Dn265174). The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK 10.
 
- 
+ 
 
 For information about managing and editing build configurations, see [Building in Visual Studio](http://go.microsoft.com/fwlink/p/?linkid=227872).
 
@@ -98,33 +98,33 @@ You can set properties for an individual driver or for an entire driver package.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Signing properties for individual driver files (see [Signing a Driver](signing-a-driver.md))</p></td>
-<td align="left"><p>Signing properties for driver packages (see [Signing a Driver](signing-a-driver.md))</p></td>
+<td align="left"><p>Signing properties for individual driver files (see <a href="signing-a-driver.md" data-raw-source="[Signing a Driver](signing-a-driver.md)">Signing a Driver</a>)</p></td>
+<td align="left"><p>Signing properties for driver packages (see <a href="signing-a-driver.md" data-raw-source="[Signing a Driver](signing-a-driver.md)">Signing a Driver</a>)</p></td>
 </tr>
 <tr class="even">
-<td align="left">[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md) (for [CTRPP](https://msdn.microsoft.com/library/windows/desktop/aa372128))</td>
-<td align="left"><p>[Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md) (see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md))</p></td>
+<td align="left"><a href="counters-manifest-preprocessor-properties-for-driver-projects.md" data-raw-source="[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md)">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="https://msdn.microsoft.com/library/windows/desktop/aa372128" data-raw-source="[CTRPP](https://msdn.microsoft.com/library/windows/desktop/aa372128)">CTRPP</a>)</td>
+<td align="left"><p><a href="deployment-properties-for-driver-projects.md" data-raw-source="[Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md)">Deployment Properties for Driver Package Projects</a> (see <a href="deploying-a-driver-to-a-test-computer.md" data-raw-source="[Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)">Deploying a Driver to a Test Computer</a>)</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Driver Model Settings Properties for Driver Projects](driver-model-settings-properties-for-driver-projects.md)</td>
-<td align="left"><p>[Driver Verifier Properties for Driver Package Projects](driver-verifier-properties-for--driver-projects.md)</p></td>
+<td align="left"><a href="driver-model-settings-properties-for-driver-projects.md" data-raw-source="[Driver Model Settings Properties for Driver Projects](driver-model-settings-properties-for-driver-projects.md)">Driver Model Settings Properties for Driver Projects</a></td>
+<td align="left"><p><a href="driver-verifier-properties-for--driver-projects.md" data-raw-source="[Driver Verifier Properties for Driver Package Projects](driver-verifier-properties-for--driver-projects.md)">Driver Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left">[Message Compiler Properties for Driver Projects](message-compiler-properties-for-driver-projects.md)</td>
-<td align="left"><p>[KMDF Verifier Properties for Driver Package Projects](kmdf-verifier-properties-for-driver-package-projects.md)</p></td>
+<td align="left"><a href="message-compiler-properties-for-driver-projects.md" data-raw-source="[Message Compiler Properties for Driver Projects](message-compiler-properties-for-driver-projects.md)">Message Compiler Properties for Driver Projects</a></td>
+<td align="left"><p><a href="kmdf-verifier-properties-for-driver-package-projects.md" data-raw-source="[KMDF Verifier Properties for Driver Package Projects](kmdf-verifier-properties-for-driver-package-projects.md)">KMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left">[Stampinf Properties for Driver Projects](stampinf-properties-for-driver-projects.md)</td>
-<td align="left"><p>[UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)</p></td>
+<td align="left"><a href="stampinf-properties-for-driver-projects.md" data-raw-source="[Stampinf Properties for Driver Projects](stampinf-properties-for-driver-projects.md)">Stampinf Properties for Driver Projects</a></td>
+<td align="left"><p><a href="umdf-verifier-properties-for-driver-package-projects.md" data-raw-source="[UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)">UMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left">[WPP Preprocessor (WPP Tracing)](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201)</td>
-<td align="left"><p>[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md) (see the [<strong>Inf2Cat</strong>](../devtest/inf2cat.md) tool)</p></td>
+<td align="left"><a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201" data-raw-source="[WPP Preprocessor (WPP Tracing)](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201)">WPP Preprocessor (WPP Tracing)</a></td>
+<td align="left"><p><a href="inf2cat-properties-for-driver-package-projects.md" data-raw-source="[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="../devtest/inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](../devtest/inf2cat.md)"><strong>Inf2Cat</strong></a> tool)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting tip for building a driver
 

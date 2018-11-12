@@ -125,9 +125,9 @@ The following steps describes the process as shown in the previous figure:
 30. The minidriver returns success from [**CardProcessEncryptedData**](https://msdn.microsoft.com/library/windows/hardware/dn468732).
 31. The client application returns success and the process is complete.
 
- 
+ 
 
- 
+ 
 
 
 

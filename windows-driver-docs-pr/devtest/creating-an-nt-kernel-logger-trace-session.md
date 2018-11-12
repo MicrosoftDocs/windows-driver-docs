@@ -46,9 +46,9 @@ When you create an NT Kernel Logger trace session, you can select a category of 
 
 The NT Kernel Logger trace session appears in the list of the **Named Provider Selection** dialog box as "Windows Kernel Trace." You can use either the **Named Provider Selection** dialog box or the **Kernel Logger** option on the **Provider Control GUID Setup** dialog box to create an NT Kernel Logger trace session. However, only the **Provider Control GUID Setup** dialog box lets you select the kernel components that are traced. For more information about using the **Named Provider Selection** dialog box, see [Creating a trace session for a registered provider](creating-a-trace-session-for-a-registered-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ To enable VPE functionality, the driver must do the following:
 
 -   When [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) is called with the GUID\_VideoPortCaps GUID, fill in the array of [**DDVIDEOPORTCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff550376) structures with the capabilities of each hardware video port. Each hardware video port has an entry in the array, with hardware video port zero specified first, hardware video port one specified next, and so on. If the device supports only one hardware video port, there will only be one DDVIDEOPORTCAPS structure in the array. The driver must then copy this data to the DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](https://msdn.microsoft.com/library/windows/hardware/ff551550) structure points and return the number of bytes written into the buffer in **dwActualSize**.
 
- 
+ 
 
- 
+ 
 
 
 

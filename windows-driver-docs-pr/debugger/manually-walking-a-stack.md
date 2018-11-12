@@ -220,9 +220,9 @@ fe4cced0 80136039 NT!_NtCreateFile+0x2d
 
 The first entry was the current location based on the stack trace, but otherwise, the stack was correct up to the point where **RdrReconnectConnection** was called. The same process could have been used to trace the entire stack. For a more exact method of manual stack walking, you would need to unassemble each potential function and follow each **push** and **pop** to identify each DWORD on the stack.
 
- 
+ 
 
- 
+ 
 
 
 

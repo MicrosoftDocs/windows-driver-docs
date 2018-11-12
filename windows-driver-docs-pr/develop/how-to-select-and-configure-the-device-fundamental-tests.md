@@ -61,18 +61,18 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="DQ"></span><span id="dq"></span><em>DQ</em></p></td>
-<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a [<strong>WDTF</strong>](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547)[SDEL](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539571) query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
+<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547)"><strong>WDTF</strong></a><a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff539571" data-raw-source="[SDEL](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539571)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
 <p>Common examples:</p>
 <p></p>
 <dl>
 <dt><span id="To_test_all_devices_that_were_installed_with_a_specific_INF_File_"></span><span id="to_test_all_devices_that_were_installed_with_a_specific_inf_file_"></span><span id="TO_TEST_ALL_DEVICES_THAT_WERE_INSTALLED_WITH_A_SPECIFIC_INF_FILE_"></span>To test all devices that were installed with a specific INF File:</dt>
 <dd><p><strong>INF::FileName=</strong><em>INF_File_Name</em></p>
-<p>For example, <strong>INF::OriginalInfFileName='%InfFileName%'</strong></p>
+<p>For example, <strong>INF::OriginalInfFileName=&#39;%InfFileName%&#39;</strong></p>
 <p>This is the default value.</p>
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_Device_Id__"></span><span id="to_test_a_device_with_a_specific_device_id__"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DEVICE_ID__"></span>To test a device with a specific Device Id: </dt>
 <dd><p><strong>DeviceId=’</strong><em>DeviceId</em><strong>’</strong></p>
-<p>For example, <strong>DeviceID=’USB\ROOT_HUB\4&1CD5D022&0’</strong></p>
+<p>For example, <strong>DeviceID=’USB\ROOT_HUB\4&amp;1CD5D022&amp;0’</strong></p>
 </dd>
 <dt><span id="_To_test_a_device_with_a_specific_interface_"></span><span id="_to_test_a_device_with_a_specific_interface_"></span><span id="_TO_TEST_A_DEVICE_WITH_A_SPECIFIC_INTERFACE_"></span> To test a device with a specific interface:</dt>
 <dd><p><strong>Interfaces::</strong><em>InterfaceGUID</em></p>
@@ -92,7 +92,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tr>
 <tr class="even">
 <td align="left"><p><span id="DoPoolCheck"></span><span id="dopoolcheck"></span><span id="DOPOOLCHECK"></span><em>DoPoolCheck</em></p></td>
-<td align="left"><p>True or False. Monitors the driver's use of the paged and nonpaged system memory pools by using pool tags and lookaside lists. This option also monitors changes in the number of exceptions handled which might indicate errors in exception handling.</p></td>
+<td align="left"><p>True or False. Monitors the driver&#39;s use of the paged and nonpaged system memory pools by using pool tags and lookaside lists. This option also monitors changes in the number of exceptions handled which might indicate errors in exception handling.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="ChangeBufferProtectionFlags"></span><span id="changebufferprotectionflags"></span><span id="CHANGEBUFFERPROTECTIONFLAGS"></span><em>ChangeBufferProtectionFlags</em></p></td>
@@ -104,7 +104,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="DoConcurrentIO"></span><span id="doconcurrentio"></span><span id="DOCONCURRENTIO"></span><em>DoConcurrentIO</em></p></td>
-<td align="left"><p>True or False. Uses [WDTF](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547) concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
+<td align="left"><p>True or False. Uses <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547" data-raw-source="[WDTF](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547)">WDTF</a> concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FillZeroPageWithNull"></span><span id="fillzeropagewithnull"></span><span id="FILLZEROPAGEWITHNULL"></span><em>FillZeroPageWithNull</em></p></td>
@@ -208,7 +208,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="utility_tests"></span><span id="UTILITY_TESTS"></span>Utility tests
 
@@ -240,7 +240,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="dvrf_tests"></span><span id="DVRF_TESTS"></span>Driver Verifier
 
@@ -259,18 +259,18 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Disable_Driver_Verifier"></span><span id="disable_driver_verifier"></span><span id="DISABLE_DRIVER_VERIFIER"></span>Disable Driver Verifier</p></td>
-<td align="left"><p>Disables [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) on the test computer.</p>
+<td align="left"><p>Disables <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)">Driver Verifier</a> on the test computer.</p>
 <p><strong>Parameters:</strong> None</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
-<td align="left"><p>You can use this test to enable [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See [Driver Verifier Options](https://msdn.microsoft.com/library/windows/hardware/ff545470).</p></td>
+<td align="left"><p>You can use this test to enable <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
+<p><strong>Parameters:</strong> - See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545470" data-raw-source="[Driver Verifier Options](https://msdn.microsoft.com/library/windows/hardware/ff545470)">Driver Verifier Options</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -279,9 +279,9 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 * [Device Fundamentals Tests](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673011)
 * [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/Library/Windows/Hardware/Hh781398)
 * [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/Library/Windows/Hardware/Hh706277)
- 
+ 
 
- 
+ 
 
 
 

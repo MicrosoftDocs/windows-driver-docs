@@ -29,11 +29,11 @@ For more information about WMI, see the [Windows Management Instrumentation](htt
 
 **Note**  The WHEA WMI provider classes are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ Buffer sizes are supplied by **Parameters.DeviceIoControl.InputBufferLength** an
 
 For more information about the **CTL\_CODE** macro and the transfer types listed above, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
- 
+ 
 
- 
+ 
 
 
 

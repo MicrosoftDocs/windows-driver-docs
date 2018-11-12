@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -34,9 +34,9 @@ Class = System
 
 For general information about installing drivers, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

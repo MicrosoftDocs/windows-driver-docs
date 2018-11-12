@@ -54,9 +54,9 @@ The process by which kernel-mode drivers log information is integrated into the 
 
 The driver should continue logging trace events associated with the control GUID until the driver receives notification to disable event logging via an **IRP\_MN\_DISABLE\_EVENTS** request.
 
- 
+ 
 
- 
+ 
 
 
 

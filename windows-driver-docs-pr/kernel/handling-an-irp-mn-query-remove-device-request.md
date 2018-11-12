@@ -90,9 +90,9 @@ If any driver in the device stack fails an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, t
 
 Once a driver succeeds an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** and it considers the device to be in the remove-pending state, the driver must fail any subsequent create requests for the device. The driver processes all other IRPs as usual, until the driver receives an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** or an **IRP\_MN\_REMOVE\_DEVICE**.
 
- 
+ 
 
- 
+ 
 
 
 

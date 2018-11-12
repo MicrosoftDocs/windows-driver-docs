@@ -29,9 +29,9 @@ In the preceding figure, the tree on the left represents the scanner item tree. 
 
 It is important to note that the film item must be able to return a representation of the film scanning surface. Applications that are written for Microsoft Windows XP or Windows Me that have no knowledge of film scanning should still be able to scan by using a dedicated film scanner.
 
- 
+ 
 
- 
+ 
 
 
 

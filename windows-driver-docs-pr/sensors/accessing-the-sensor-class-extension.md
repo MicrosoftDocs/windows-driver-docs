@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 |------------|-----------------|
 | Device.cpp | CMyDevice       |
 
- 
+ 
 
 Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving data, and setting properties:
 
@@ -70,9 +70,9 @@ When a sensor app registers an event handler for state-change events, the sample
 HRESULT hr = m_spClassExtension->PostStateChange(SensorId, state);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

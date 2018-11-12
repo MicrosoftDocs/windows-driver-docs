@@ -59,7 +59,7 @@ The following table describes the constants that are valid with WIA\_IPA\_PLANAR
 </tbody>
 </table>
 
- 
+ 
 
 If a device can be set to only a single value, you can implement the WIA\_IPA\_PLANAR property as WIA\_PROP\_NONE and read-only.
 
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

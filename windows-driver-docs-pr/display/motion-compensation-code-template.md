@@ -40,9 +40,9 @@ This section includes:
 
 [Deleting Instances of DirectX VA Device Objects](deleting-instances-of-directx-va-device-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

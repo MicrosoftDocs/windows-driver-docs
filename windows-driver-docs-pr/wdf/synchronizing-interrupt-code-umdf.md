@@ -34,9 +34,9 @@ The driver then sets the **AutomaticSerialization** member of its [**WUDF\_INTER
 
 As a result, UMDF serializes the driver's [*OnInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463905) callbacks with I/O queue, request cancellation, and file object callback routines. In this scenario, UMDF uses the callback lock instead of a per-interrupt object lock.
 
- 
+ 
 
- 
+ 
 
 
 

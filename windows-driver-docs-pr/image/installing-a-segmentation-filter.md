@@ -46,9 +46,9 @@ The COM **ThreadingModel** must be **Both**.
 
 For more information about INF files, see [INF Files for WIA Devices](inf-files-for-wia-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

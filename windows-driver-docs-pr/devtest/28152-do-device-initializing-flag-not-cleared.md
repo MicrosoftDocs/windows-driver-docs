@@ -24,9 +24,9 @@ FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 
 For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540529)
 
- 
+ 
 
- 
+ 
 
 
 

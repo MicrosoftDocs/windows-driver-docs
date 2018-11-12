@@ -32,9 +32,9 @@ If the port driver's I/O stack location for an IOCTL\_SCSI\_PASS\_THROUGH or IOC
 
 The port driver does not check the validity of the SCSI command embedded in such a pass-through request.
 
- 
+ 
 
- 
+ 
 
 
 

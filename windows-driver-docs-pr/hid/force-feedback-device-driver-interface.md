@@ -27,9 +27,9 @@ This section covers the interface between DirectInput and the device-specific fo
 
 [User-Mode Functions](user-mode-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

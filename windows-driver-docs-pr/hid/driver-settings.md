@@ -15,9 +15,9 @@ ms.date: 10/17/2018
 
 These registry settings are set up during installation from the INF file, as described in [Creating an INF File](creating-an-inf-file.md), and during the device enumeration at boot time.
 
- 
+ 
 
- 
+ 
 
 
 

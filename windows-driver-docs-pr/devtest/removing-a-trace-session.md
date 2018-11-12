@@ -25,9 +25,9 @@ You can remove a real-time trace session or a trace log session from the Trace S
 
 To remove a real-time trace session, the session must be [stopped](stopping-a-trace-session.md) (that is, all providers must be disabled). If any providers in the session are still running (that is, are enabled), the **Remove Log Session** command is dimmed.
 
- 
+ 
 
- 
+ 
 
 
 

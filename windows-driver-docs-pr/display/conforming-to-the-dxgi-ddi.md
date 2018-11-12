@@ -40,9 +40,9 @@ There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_US
 
 Note that no CPU access flags are allowed for back buffers.
 
- 
+ 
 
- 
+ 
 
 
 

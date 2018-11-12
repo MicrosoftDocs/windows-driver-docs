@@ -37,9 +37,9 @@ Windows provides an **Enhancements** tab with the Sound applet on the Control Pa
 
 [Virtualized Surround Sound over Headphones](virtualized-surround-sound-over-headphones.md)
 
- 
+ 
 
- 
+ 
 
 
 

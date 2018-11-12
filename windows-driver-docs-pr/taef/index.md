@@ -14,9 +14,9 @@ ms.technology: windows-devices
 
 The Test Authoring and Execution Framework (TAEF) provides a consistent mechanism for developers and testers to write and run automation. The framework provides a single infrastructure that allows them to share tests across disciplines and teams.
 
- 
+ 
 
- 
+ 
 
 
 

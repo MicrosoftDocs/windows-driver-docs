@@ -30,13 +30,13 @@ The child items of a WIA flatbed scanner item are required to support the follow
 
 **Note**   The [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property must be set to WIA\_CATEGORY\_FLATBED for both flatbed items and flatbed child items.
 
- 
+ 
 
 Child items can optionally support any other property that is supported by the parent item, except for the [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://msdn.microsoft.com/library/windows/hardware/ff552653) and [**WIA\_IPS\_SEGMENTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552649) properties.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ Enabled       : True
 
 **Note**  The Windows Filtering Platform (WFP) in-box filtering extension (Wfplwfs.sys ) is enabled by default on each extensible switch instance.
 
- 
+ 
 
 ## Related topics
 
@@ -51,9 +51,9 @@ Enabled       : True
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 
- 
+ 
 
- 
+ 
 
 
 

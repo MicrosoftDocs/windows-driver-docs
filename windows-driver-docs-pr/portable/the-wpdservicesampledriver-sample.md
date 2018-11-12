@@ -17,9 +17,9 @@ The WpdServiceSampleDriver shows how to extend the WpdHelloWorldDriver sample so
 
 This driver was written in the simplest way to demonstrate concepts. Therefore, the sample driver might perform operations or be structured in a way that are inefficient in a production driver. Additionally, this sample does not use real hardware. Instead, it simulates a device by using data structures in memory. Therefore the driver might be implemented in a way that is unrealistic for production hardware.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Planning your desktop COSA/APN database submission
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one.
@@ -17,11 +17,11 @@ Use the sections in this topic when you are planning to add a new APN to the bas
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
--   On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
+- On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
 
--   On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
+- On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
 
--   A username and password for the network connection.
+- A username and password for the network connection.
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 
@@ -66,7 +66,7 @@ Note the following for both COSA and APN database.
 
 - The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
-    >[!NOTE]  
+    >[!NOTE]
     >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
     For example, when the following values are entered in a row in the spreadsheet:

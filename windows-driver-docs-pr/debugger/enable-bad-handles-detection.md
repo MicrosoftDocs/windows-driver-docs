@@ -41,11 +41,11 @@ The **Enable bad handles detection** flag raises a user-mode exception (STATUS\_
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

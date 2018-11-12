@@ -41,7 +41,7 @@ The **Enable debugging of Win32 subsystem** flag debugs the Client Server Run-ti
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +51,9 @@ This flag is effective only when the [Debug initial command](debug-initial-comma
 
 For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-ntsd.md).
 
- 
+ 
 
- 
+ 
 
 
 

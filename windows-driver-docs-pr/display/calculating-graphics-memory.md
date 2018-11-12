@@ -56,9 +56,9 @@ The total amount of video memory. This number is calculated as follows:
 TotalVideoMemory = DedicatedVideoMemory + DedicatedSystemMemory + SharedSystemMemory
 ```
 
- 
+ 
 
- 
+ 
 
 
 

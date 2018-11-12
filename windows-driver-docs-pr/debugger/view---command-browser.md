@@ -17,9 +17,9 @@ This command is equivalent to pressing CTRL+N or clicking the **Command Browser 
 
 For more information about this window and its uses, see [Command Browser Window](command-browser-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

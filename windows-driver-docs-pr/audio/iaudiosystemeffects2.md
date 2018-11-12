@@ -28,9 +28,9 @@ The **IAudioSystemEffects2** interface inherits from [IAudioSystemEffects](iaudi
 
 [IAudioSystemEffects](iaudiosystemeffects.md)
 
- 
+ 
 
- 
+ 
 
 
 

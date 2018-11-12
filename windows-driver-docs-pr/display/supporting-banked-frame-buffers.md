@@ -30,7 +30,7 @@ The *Permedia* sample display drivers that shipped with the Driver Development K
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 The following figure shows a sample accelerator's frame buffer, a 1024-by-768 VGA display buffer, divided into several banks. This figure is provided for the purpose of illustration only. The display driver does not specifically use the physical address A000 but uses a logical address passed to it by the miniport driver.
 
@@ -70,9 +70,9 @@ The next time the display driver calls GDI to draw that part of the object that 
 
 Consequently, when the display driver requests GDI to write the data that is to appear in the second and subsequent banks of the frame buffer, the driver must decrement the value of **pvScan0** so that GDI calculates a starting point that is still referenced to the example address of 0x100000. Continuing in the example, this means decrementing the value of **pvScan0** to a value of 0x090000 when drawing to the second bank of the frame buffer. As a result of this change to **pvScan0**, GDI still draws with a reference to address 0x100000. That is, 0x090000 + (64\*1024) + 0 is equal to 0x100000, where GDI must begin to draw in order for the data to be mapped into the second bank of the frame buffer.
 
- 
+ 
 
- 
+ 
 
 
 

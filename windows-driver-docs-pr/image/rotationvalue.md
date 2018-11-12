@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RotationsSupported</strong>](rotationssupported.md)</p></td>
+<td><p><a href="rotationssupported.md" data-raw-source="[&lt;strong&gt;RotationsSupported&lt;/strong&gt;](rotationssupported.md)"><strong>RotationsSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ All WSD Scan Services must support the value of 0. You can both extend and subse
 
 [**RotationsSupported**](rotationssupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

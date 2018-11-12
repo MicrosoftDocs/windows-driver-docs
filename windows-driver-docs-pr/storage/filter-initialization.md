@@ -18,9 +18,9 @@ After the filter driver is loaded into memory, the crash dump driver calls the f
 
 To complete the initialization process, the filter driver should initialize the [**FILTER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553865) structure and return it to the crash dump driver.
 
- 
+ 
 
- 
+ 
 
 
 

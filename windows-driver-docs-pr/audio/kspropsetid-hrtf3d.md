@@ -35,9 +35,9 @@ The `KSPROPSETID_Hrtf3d` property set contains the following three members:
 
 [**KSPROPERTY\_HRTF3D\_PARAMS**](ksproperty-hrtf3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

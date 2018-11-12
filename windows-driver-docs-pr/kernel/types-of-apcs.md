@@ -21,9 +21,9 @@ The Windows operating system uses three kinds of APCs:
 
 -   *Special kernel APCs* run in kernel mode at IRQL = APC\_LEVEL. A special kernel APC preempts user-mode code and kernel-mode code that executes at IRQL = PASSIVE\_LEVEL, including both user APCs and normal kernel APCs. The operating system uses special kernel APCs to handle operations such as I/O request completion.
 
- 
+ 
 
- 
+ 
 
 
 

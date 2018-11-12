@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 
@@ -43,7 +43,7 @@ ConfigPriority=Priority-Value
 ## Entries
 
 
-<a href="" id="configpriority-priority-value"></a>**ConfigPriority=***Priority-Value*  
+<a href="" id="configpriority-priority-value"></a>**ConfigPriority=**<em>Priority-Value</em>  
 Specifies one of the following priority values for this factory-default logical configuration.
 
 | Priority value | Meaning                                                                                                                                                                                                   |
@@ -59,12 +59,12 @@ Specifies one of the following priority values for this factory-default logical 
 | HARDWIRED      | Cannot be changed.                                                                                                                                                                                        |
 | DISABLED       | Indicates that the device is disabled.                                                                                                                                                                    |
 
- 
+ 
 
-<a href="" id="dmaconfig--dmaattrs--dmanum"></a>**DMAConfig=**\[*DMAattrs***:**\]*DMANum*  
+<a href="" id="dmaconfig--dmaattrs--dmanum"></a>**DMAConfig=**\[<em>DMAattrs</em>**:**\]*DMANum*  
 Specifies the bus-relative DMA channel as a decimal number. *DMAattrs* is optional if the device is connected on a bus that has only 8-bit DMA channels and the device uses standard system DMA. Otherwise, it can be one of the letters **D** for 32-bit DMA, **W** for 16-bit DMA, and **N** for 8-bit DMA, with **M** if the device uses bus-master DMA, and with one of the following (mutually exclusive) letters that indicate the type of DMA channel used: **A**, **B**, or **F**. If none of **A**, **B**, or **F** is specified, a standard DMA channel is assumed.
 
-<a href="" id="ioconfig-io-range"></a>**IOConfig=***io-range*  
+<a href="" id="ioconfig-io-range"></a>**IOConfig=**<em>io-range</em>  
 Specifies the I/O port range for the device in the following form:
 
 ```cpp
@@ -87,7 +87,7 @@ Defines the alias type and can be any of the following.
 | **ffff**   | 16-bit decode   | 0x00             |
 | **0**      | Positive decode | 0xFF             |
 
- 
+ 
 
 <a href="" id="alias-offset"></a>*alias-offset*  
 Not used.
@@ -95,7 +95,7 @@ Not used.
 <a href="" id="attr"></a>*attr*  
 Specifies the letter **M** if the specified range is in system memory. If omitted, the specified range is in I/O port space.
 
-<a href="" id="memconfig-mem-range"></a>**MemConfig=***mem-range*  
+<a href="" id="memconfig-mem-range"></a>**MemConfig=**<em>mem-range</em>  
 Specifies the memory range for the device in the following form:
 
 ```cpp
@@ -121,19 +121,19 @@ Specifies the attributes of the memory range as one or more of the following let
 
 If both **R** and **W** are specified or if neither is specified, read/write is assumed.
 
-<a href="" id="irqconfig--irqattrs--irqnum"></a>**IRQConfig=**\[*IRQattrs***:**\]*IRQNum*  
+<a href="" id="irqconfig--irqattrs--irqnum"></a>**IRQConfig=**\[<em>IRQattrs</em>**:**\]*IRQNum*  
 Specifies the bus-relative IRQ that the device uses as a decimal number. *IRQattrs* is omitted if the device uses a bus-relative, edge-triggered IRQ. Otherwise, specify **L** to indicate a level-triggered IRQ, and **LS** if the device can share the IRQ line listed in this entry.
 
 Remarks
 -------
 
-The specified *DDInstall* section must be referenced in a device-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a *DDInstall***.FactDef** section name in cross-operating system and/or cross-platform INF files. For more information about these system-defined extensions, see [Creating an INF File](overview-of-inf-files.md).
+The specified *DDInstall* section must be referenced in a device-specific entry under the per-manufacturer *Models* section of the INF file. The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.FactDef** section name in cross-operating system and/or cross-platform INF files. For more information about these system-defined extensions, see [Creating an INF File](overview-of-inf-files.md).
 
 This section must contain complete factory-default information for installing one device. The INF should specify this set of entries in the order best suited to how the driver initializes its device. If necessary, it can have more than one of any particular kind of entry.
 
-For example, the INF for a device that used two DMA channels would have two **DMAConfig=** lines in its *DDInstall***.FactDef** section.
+For example, the INF for a device that used two DMA channels would have two **DMAConfig=** lines in its <em>DDInstall</em>**.FactDef** section.
 
-The INF files of manually installed devices for which the factory-default logical configuration settings can be changed should also use the **LogConfig** directive in their *DDInstall* sections. In general, such an INF should specify the entries in each of its log config sections and in its *DDInstall***.FactDef** section in the same order.
+The INF files of manually installed devices for which the factory-default logical configuration settings can be changed should also use the **LogConfig** directive in their *DDInstall* sections. In general, such an INF should specify the entries in each of its log config sections and in its <em>DDInstall</em>**.FactDef** section in the same order.
 
 Examples
 --------
@@ -157,9 +157,9 @@ MemConfig=D0000-D7FFF
 
 [**LogConfig**](inf-logconfig-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

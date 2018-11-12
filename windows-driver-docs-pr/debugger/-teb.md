@@ -74,9 +74,9 @@ TEB at 7FFDD000
 
 The similar [**!peb**](-peb.md) extension displays the process environment block.
 
- 
+ 
 
- 
+ 
 
 
 

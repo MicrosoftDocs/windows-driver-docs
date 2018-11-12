@@ -164,9 +164,9 @@ Adapter Extension:
 [**!scsikd.srbdata Address**](-scsikd-srbdata.md)  
 The **!scsikd.srbdata** extension displays detailed information about a specified SRB\_DATA tracking block.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ This policy specifies how the network adapter selects egress traffic for deliver
 
 For more information about NDIS QoS support for DCB, see [NDIS QoS for Data Center Bridging](ndis-qos-for-data-center-bridging.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,7 +50,7 @@ The **KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION** property request allows th
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -88,9 +88,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
- 
+ 
 
- 
+ 
 
 
 

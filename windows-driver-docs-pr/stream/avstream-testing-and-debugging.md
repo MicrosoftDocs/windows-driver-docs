@@ -51,7 +51,7 @@ This is a complex, yet elegant, and very handy development tool for multimedia d
 
 **Note**  In the Windows 7 WDK, this tool is titled UVCView.
 
- 
+ 
 
 USBView includes one binary component: *USBView.exe*. In the WDK, this executable is located in the *tools\\avstream* folder hierarchy. For documentation, see the USBView sample in *WDKPath\\src\\usb\\usbview*.
 
@@ -81,7 +81,7 @@ All the functionality of AMCap2 is still available in the existing GraphEdt tool
 
 **Warning**  MCStream does not work with all audio renderers.
 
- 
+ 
 
 MCStream includes two binary components: *MCStream.exe* (the application) and *MCStream.txt* (the help documentation).
 
@@ -91,9 +91,9 @@ The *MCstream.exe* tool is not included in the Windows 7 WDK for both x86-based 
 
 This tool uses legacy technology that is no longer recommended for driver development in Windows 7 and later operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

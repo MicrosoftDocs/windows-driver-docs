@@ -65,9 +65,9 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
     If a DS port of a hub or controller is in U1 or U2 and the software initiates a U3 transition on the port, the parent hub or controller is responsible for first transitioning the link to U0 and then to U3. Some hubs and controllers do not handle that requirement properly. This can cause the link to enter an error state and can cause re-enumeration of the device.  
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,11 +23,11 @@ Because of the way that the audio service operates, the LFX and GFX sAPOs must b
 
 **Important**   When you implement a custom sAPO that wraps a Windows Vista LFX sAPO, do not specify the APO\_FLAG\_FRAMESPERSECOND\_MUST\_MATCH flag in the registration properties of the custom sAPO. If you specify this flag, the Windows Vista LFX sAPO will be unable to perform speaker fill, headphone virtualization, or virtual surround. Additionally, your custom sAPO will not be able to down-mix any audio streams. For example, your custom sAPO will not be able to mix a 5.1 audio stream down to a two-channel stereo audio stream.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

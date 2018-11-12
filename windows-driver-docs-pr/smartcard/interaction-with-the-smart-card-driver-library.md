@@ -39,9 +39,9 @@ The following numbers correspond with the numbers in the previous figure. Starti
 
 The smart card library synchronizes access to the reader driver. No two callback functions will be called at the same time. However, the event handling for card insertion and removal must be processed asynchronously.
 
- 
+ 
 
- 
+ 
 
 
 

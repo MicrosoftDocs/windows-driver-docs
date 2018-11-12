@@ -64,7 +64,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,9 +81,9 @@ The same effect can be achieved by using the [**bs (Update Breakpoint Command)**
 bs ID "j Condition 'CommandString'; 'gc'"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

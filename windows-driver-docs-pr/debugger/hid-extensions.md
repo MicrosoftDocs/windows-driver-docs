@@ -35,33 +35,33 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>[!hidkd.help](-hidkd-help.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.help](-hidkd-help.md)</strong> command displays help for the HID debugger extension commands.</p></td>
+<td align="left"><p><strong><a href="-hidkd-help.md" data-raw-source="[!hidkd.help](-hidkd-help.md)">!hidkd.help</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-help.md" data-raw-source="[!hidkd.help](-hidkd-help.md)">!hidkd.help</a></strong> command displays help for the HID debugger extension commands.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!hidkd.hidfdo](-hidkd-hidfdo.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.hidfdo](-hidkd-hidfdo.md)</strong> command displays HID information associated with a functional device object (FDO).</p></td>
+<td align="left"><p><strong><a href="-hidkd-hidfdo.md" data-raw-source="[!hidkd.hidfdo](-hidkd-hidfdo.md)">!hidkd.hidfdo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidfdo.md" data-raw-source="[!hidkd.hidfdo](-hidkd-hidfdo.md)">!hidkd.hidfdo</a></strong> command displays HID information associated with a functional device object (FDO).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!hidkd.hidpdo](-hidkd-hidpdo.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.hidpdo](-hidkd-hidpdo.md)</strong> command displays HID information associated with a physical device object (PDO).</p></td>
+<td align="left"><p><strong><a href="-hidkd-hidpdo.md" data-raw-source="[!hidkd.hidpdo](-hidkd-hidpdo.md)">!hidkd.hidpdo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidpdo.md" data-raw-source="[!hidkd.hidpdo](-hidkd-hidpdo.md)">!hidkd.hidpdo</a></strong> command displays HID information associated with a physical device object (PDO).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!hidkd.hidtree](-hidkd-hidtree.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.hidtree](-hidkd-hidtree.md)</strong> command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.</p></td>
+<td align="left"><p><strong><a href="-hidkd-hidtree.md" data-raw-source="[!hidkd.hidtree](-hidkd-hidtree.md)">!hidkd.hidtree</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidtree.md" data-raw-source="[!hidkd.hidtree](-hidkd-hidtree.md)">!hidkd.hidtree</a></strong> command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node&#39;s HID function driver.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!hidkd.hidppd](-hidkd-hidppd.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.hidppd](-hidkd-hidppd.md)</strong> command displays HID preparsed data.</p></td>
+<td align="left"><p><strong><a href="-hidkd-hidppd.md" data-raw-source="[!hidkd.hidppd](-hidkd-hidppd.md)">!hidkd.hidppd</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidppd.md" data-raw-source="[!hidkd.hidppd](-hidkd-hidppd.md)">!hidkd.hidppd</a></strong> command displays HID preparsed data.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!hidkd.hidrd](-hidkd-hidrd.md)</strong></p></td>
-<td align="left"><p>The <strong>[!hidkd.hidrd](-hidkd-hidrd.md)</strong> command displays a HID report descriptor in both raw and parsed format.</p></td>
+<td align="left"><p><strong><a href="-hidkd-hidrd.md" data-raw-source="[!hidkd.hidrd](-hidkd-hidrd.md)">!hidkd.hidrd</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidrd.md" data-raw-source="[!hidkd.hidrd](-hidkd-hidrd.md)">!hidkd.hidrd</a></strong> command displays a HID report descriptor in both raw and parsed format.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -70,9 +70,9 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 
 [Specialized Extension Commands](specialized-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

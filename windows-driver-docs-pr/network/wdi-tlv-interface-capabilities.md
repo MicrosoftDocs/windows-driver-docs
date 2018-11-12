@@ -87,7 +87,7 @@ UINT8
 Added in Windows 10, version 1607, WDI version 1.0.21.
 
 Specifies if the device supports IP docking capability. Valid values are 0 (not supported) and 1 (supported).
- 
+ 
 
 Requirements
 ------------
@@ -113,9 +113,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

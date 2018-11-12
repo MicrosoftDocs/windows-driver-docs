@@ -54,9 +54,9 @@ By using these commands to select the current system, and by using the standard 
 
 However, you cannot separate execution of these processes. The [**g (Go)**](g--go-.md) command always causes all targets to execute together.
 
-**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
+**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
- 
+
 Example
 -------
 
@@ -98,7 +98,6 @@ This dump file has a breakpoint exception stored in it.
 The stored exception information can be accessed via .ecxr.
 ntdll!DbgBreakPoint:
 00007ff8`aada8d70 cc              int     3
-
 ```
 
 Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to set the current system to system 1 and then display the current system.
@@ -109,7 +108,6 @@ Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to
    0 User mini dump: c:\notepad.dmp
 .  1 User mini dump: c:\paint.dmp
    2 User mini dump: c:\calc.dmp
-
 ```
 
 You can use the [.detach](-detach--detach-from-process-.md) command when you are done looking at the current dump file.
@@ -144,7 +142,7 @@ The Defrag Tools Show WinDbg Episodes 13-29 [https://channel9.msdn.com/Shows/Def
 
 
 
- 
+
 
 
 

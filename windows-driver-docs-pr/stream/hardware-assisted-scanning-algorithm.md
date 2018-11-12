@@ -20,9 +20,9 @@ A driver sets the **fSupportsHardwareAssistedScanning** member of the [**KSPROPE
 
 For hardware-assisted scanning, depending on whether the tuning device has locked onto a signal, the driver returns either Tuner\_LockType\_None or Tuner\_LockType\_Locked status from a call to its [**KSPROPERTY\_TUNER\_SCAN\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff565893) property. If the driver has locked onto a signal, the driver also returns the frequency of the locked signal.
 
- 
+ 
 
- 
+ 
 
 
 

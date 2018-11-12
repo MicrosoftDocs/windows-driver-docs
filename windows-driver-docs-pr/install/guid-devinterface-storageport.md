@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_STORAGEPORT [device interface class](https://msdn.microsof
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**StoragePortClassGuid**](storageportclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

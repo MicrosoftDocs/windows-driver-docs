@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_EXEMPTION\_ACTION\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897820) | Specifies the action type of the exemption.                 |
 | [**WDI\_EXEMPTION\_PACKET\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897823) | Specifies the type of packet that the exemption applies to. |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

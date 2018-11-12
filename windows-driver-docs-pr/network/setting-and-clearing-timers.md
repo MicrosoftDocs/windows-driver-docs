@@ -25,9 +25,9 @@ If the *MillisecondsPeriod* parameter of **NdisSetTimerObject** is not zero, the
 
 Your driver can call the [**NdisCancelTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561624) function to cancel a timer that is associated with a previous call to the **NdisSetTimerObject** function. NDIS might still call *NetTimerCallback* if the timeout has already expired before the call to **NdisCancelTimerObject**.
 
- 
+ 
 
- 
+ 
 
 
 

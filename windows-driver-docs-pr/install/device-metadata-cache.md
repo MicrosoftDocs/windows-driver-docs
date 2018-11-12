@@ -29,11 +29,11 @@ When the [Device Metadata Retrieval Client](device-metadata-retrieval-client.md)
 
 **Note**   The device metadata cache is reserved for only the operating system to use. Device metadata packages that are not installed by DMRC, such as through an application that is provided by an OEM, must be copied to the [device metadata store](device-metadata-store.md) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

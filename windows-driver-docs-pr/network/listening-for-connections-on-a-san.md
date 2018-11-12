@@ -38,9 +38,9 @@ The switch accepts incoming connections only in nonblocking mode. The switch cal
 
 If a connection request arrives and the SAN service provider's backlog of connection requests is full, the SAN service provider should immediately indicate to the remote peer that it refuses the connection request. In this case, the SAN service provider does not signal the event object to inform the switch to accept or reject the connection request. The SAN service provider on the remote peer must then fail its connection operation that was initiated by a **WSPConnect** call with the WSAECONNREFUSED error code.
 
- 
+ 
 
- 
+ 
 
 
 

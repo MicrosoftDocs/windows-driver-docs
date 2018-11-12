@@ -69,9 +69,9 @@ In RGB mode, fog factor **f** is scaled to be in the range 0 through 255, and is
 
 In Ramp mode, diffuse and specular components are multiplied by the fog factor **f** and are clamped to be in the range 0.0 through 1.0.
 
- 
+ 
 
- 
+ 
 
 
 

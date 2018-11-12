@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT16 | A bitwise OR value of the operation modes the host may configure on the port being created. The operation modes are defined in [**WDI\_OPERATION\_MODE**](https://msdn.microsoft.com/library/windows/hardware/dn926085). |
 | UINT32 | The NDIS\_PORT\_NUMBER that will be associated with the created port. Unless the adapter wants to handle non-WDI OIDs, it does not need to do anything with this field.                 |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

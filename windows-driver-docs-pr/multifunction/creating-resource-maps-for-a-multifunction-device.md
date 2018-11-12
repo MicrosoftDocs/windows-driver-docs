@@ -27,9 +27,9 @@ There are two types of resource maps − *standard* resource maps and *varying* 
 
 Some multifunction devices can be described using only standard resource maps. Others require varying resource maps, or a combination of standard and varying maps. Still others require no resource maps at all. See [Supporting Multifunction PC Card Devices](supporting-multifunction-pc-card-devices.md) to determine which multifunction devices require resource maps.
 
- 
+ 
 
- 
+ 
 
 
 

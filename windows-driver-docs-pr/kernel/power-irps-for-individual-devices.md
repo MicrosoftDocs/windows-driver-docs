@@ -64,9 +64,9 @@ As the previous figure shows, a device power IRP is sent, forwarded, and complet
 
 For more information about device power IRPs, see [Managing Power for Individual Devices](managing-power-for-individual-devices.md) and [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md). For details on the power sequence IRP, see [**IRP\_MN\_POWER\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/ff551644).
 
- 
+ 
 
- 
+ 
 
 
 

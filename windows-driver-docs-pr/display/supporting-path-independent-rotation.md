@@ -70,9 +70,9 @@ If, in the **Display** control panel's **Orientation** drop-down box, the user c
 
 If the Desktop Window Manager (DWM) has already rotated the content 180 degrees, the driver must still rotate it another 270 degrees in the secondary clone path. Otherwise, the driver must rotate the content 180 degrees for the TV and 90 degrees for the device. Note that to rotate the content, the driver must set the **Rotate** member of the [**DXGK\_PRESENTFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff562005) structure.
 
- 
+ 
 
- 
+ 
 
 
 

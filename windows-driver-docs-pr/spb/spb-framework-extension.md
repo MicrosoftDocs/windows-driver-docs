@@ -28,9 +28,9 @@ SPB controller drivers statically link to the DDI entry points in the SpbCx stub
 
 Although a hardware vendor has the option of writing a monolithic SPB controller driver that does not use SpbCx, a significant effort is required to do so. By comparison, a controller driver that uses SpbCx is easier to develop and is typically more reliable.
 
- 
+ 
 
- 
+ 
 
 
 

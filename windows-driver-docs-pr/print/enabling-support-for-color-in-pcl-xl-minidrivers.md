@@ -82,9 +82,9 @@ Developing a GPD file for color PCL XL is similar to developing a GPD file for m
 
     For example, if you modify the p6sample.gpd sample GPD file to add color information, you might want to remove the \*Feature: Dither [customized feature](customized-features.md) or constrain it so that it is used only when printing in monochrome mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ The offload target's internal query function, which is labeled "NicQuery" in the
 
 Note that the host stack can query a state object while a query of that state object is in progress.
 
- 
+ 
 
- 
+ 
 
 
 

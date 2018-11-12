@@ -59,9 +59,9 @@ To indicate that the hardware supports component-level power management, the dri
 
 The [*CLIENT\_PreProcessControllerInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh439392), [*CLIENT\_ReconfigureInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh698243), and [*CLIENT\_ControllerSpecificFunction*](https://msdn.microsoft.com/library/windows/hardware/hh698237) callback functions are optional and are supported by GpioClx to address hardware-specific issues in some GPIO controller implementations. Only GPIO controller drivers with special requirements implement these functions.
 
- 
+ 
 
- 
+ 
 
 
 

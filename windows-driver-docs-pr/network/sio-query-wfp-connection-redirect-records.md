@@ -18,7 +18,7 @@ A WFP redirect record is a buffer of opaque data that WFP must set on an outboun
 
 **Note**  The **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** query can only be used if the connection was redirected at the **FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V4** or **FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V6** layer by a WFP client.
 
- 
+ 
 
 For more information about redirection, see [Using Bind or Connect Redirection](https://msdn.microsoft.com/library/windows/hardware/ff571005).
 
@@ -75,7 +75,7 @@ To query the redirect record for the redirected connection, a Winsock client cal
 </tbody>
 </table>
 
- 
+ 
 
 The caller can perform this query in either of the following ways:
 
@@ -84,7 +84,7 @@ The caller can perform this query in either of the following ways:
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859713).
 
- 
+ 
 
 For this type of request, the Winsock client must specify a pointer to an IRP and a pointer to its completion routine. The IRP can be passed to the client by a higher driver or the client can choose to allocate the IRP. To specify the completion routine, the client must call [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679). For more details, see [Using IRPs with Winsock Kernel Functions](https://msdn.microsoft.com/library/windows/hardware/ff571006).
 
@@ -133,9 +133,9 @@ Requirements
 
 [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](sio-set-wfp-connection-redirect-records.md)
 
- 
+ 
 
- 
+ 
 
 
 

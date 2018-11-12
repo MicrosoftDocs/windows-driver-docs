@@ -45,9 +45,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt782401)
 
- 
+ 
 
- 
+ 
 
 
 

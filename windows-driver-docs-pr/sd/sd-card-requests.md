@@ -103,9 +103,9 @@ This section contains two code examples: a command request that reads a byte of 
 
 [Secure Digital Requests That Do Use Extended I/O](https://msdn.microsoft.com/library/windows/hardware/ff538055)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,7 @@ The following table shows the data fields. For more information about the data t
 |PKEY_SensorData_SubscribedActivityStates|VT_UI4|Required|An indication of the subscribed activity state, expressed as a value of type [<strong>ACTIVITY_STATE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-activity_state).|
 |PKEY_SensorData_ActivityStream|VT_BOOL|Required|Boolean value that is set to TRUE, if an activity stream is available.|
 |PKEY_SensorData_ConfidenceThreshold_Percentage|VT_UI2|Required|A threshold value for the sensor's confidence level.|
- 
+ 
 
 ## Related topics
 
@@ -30,9 +30,9 @@ The following table shows the data fields. For more information about the data t
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

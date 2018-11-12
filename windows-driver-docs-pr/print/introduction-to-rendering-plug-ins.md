@@ -27,11 +27,11 @@ It supports following two types of customization:
 
 **Note**   Rendering plug-ins should never spawn a window directly. For Windows Vista and later, you can provide asynchronous event notification messages to a client computer by using the Asynchronous User Notification XML schema, asyncui.xsd. For more information, see [Asynchronous User Notification Schema](https://msdn.microsoft.com/library/windows/hardware/ff545066)..
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

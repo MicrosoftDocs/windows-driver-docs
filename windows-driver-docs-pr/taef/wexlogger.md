@@ -99,7 +99,7 @@ There are equivalent versions available to managed code and script.
 | Xml(const wchar\_t\* pszXml, const wchar\_t\* pszContext)                                                                           | Log xml data, with context. No check is made to verify that it is well-formed.                                                                                                               |
 | MiniDump()                                                                                                                          | Log the current process mini dump.                                                                                                                                                           |
 
- 
+
 
 **Note:** "Context" is an extra string that you can optionally provide with a **WexLogger** API call to provide more context or detail. For example, you may choose to always pass in "ImageComparator" as your context when making any **WexLogger** API calls from your ImageComparator class methods.
 
@@ -113,7 +113,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 | Blocked                                    | The test was blocked |
 | Failed                                     | The test failed      |
 
- 
+
 
 **Here is the list of native C++ LogContoller methods available:**
 
@@ -127,7 +127,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 | static const unsigned short\* GetLogName()                                                             | Returns the name that was specified for the log in the InitializeLogging call (if any).                                                                                                                                                                                                                         |
 | static HRESULT FinalizeLogging()                                                                       | Finish logging functionality.                                                                                                                                                                                                                                                                                   |
 
- 
+
 
 **Note:** See the C++ Error Handling section below for more information on the **WexLoggerErrorCallback** mechanism and how to use it outside the TAEF framework.
 
@@ -143,7 +143,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 | static HRESULT GenerateConnectionData(const wchar\_t\* pszMachineName, WEX::Common::NoThrowString& connectionData) | Used when launching child processes on a remote machine. Generates the connection data that must be used within the parent and child processes to allow the child process to log back to the parent process. |
 | static HRESULT InitializeLogging(WEX::Common::NoThrowString connectionData)                                        | Initializes logging functionality within the parent process so the child process can log back to it.                                                                                                         |
 
- 
+
 
 **Note:** See the [Remote Logging From Child Processes](#remote-logging-from-child-processes) section below for more information on remote logging.
 
@@ -195,7 +195,7 @@ Here is the list of managed Log methods available.
 | Xml(string xmlData)                                                             | Log xml data. No check is made to verify that it is well-formed.                                                                                                             |
 | Xml(string xmlData, string context)                                             | Log xml data, with context. No check is made to verify that it is well-formed.                                                                                               |
 
- 
+
 
 **Here is the list of managed LogContoller methods available:**
 
@@ -207,7 +207,7 @@ Here is the list of managed Log methods available.
 | static String GetLogName()                    | Returns the name that was specified for the log in the InitializeLogging call (if any).                                                                                                             |
 | static void FinalizeLogging()                 | Finish logging functionality.                                                                                                                                                                       |
 
- 
+
 
 **Note:** See the Managed Code Error and Exception section below for more information on how to handle errors and exceptions when using the managed layer of the **WexLogger** outside the TAEF framework.
 
@@ -223,7 +223,7 @@ Here is the list of managed Log methods available.
 | static String GenerateConnectionData(string machineName) | Used when launching child processes on a remote machine. Generates the connection data that must be used within the parent and child processes to allow the child process to log back to the parent process. |
 | static void InitializeLogging(String connectionData)     | Initializes logging functionality within the parent process so the child process can log back to it.                                                                                                         |
 
- 
+
 
 **Note:** See the [Remote Logging From Child Processes](#remote-logging-from-child-processes) section below for more information on remote logging.
 
@@ -245,7 +245,7 @@ The following steps are necessary to set up each remote logging connection:
     ```cpp
         NoThrowString connectionData;
         Throw::IfFailed(RemoteLogController::GenerateConnectionData(connectionData));
-                            
+
     ```
 
 2.  Communicate the connection data with the child process either by setting it in its environment block, or by passing it as an argument at the command prompt. For example:
@@ -368,7 +368,7 @@ The following table lists how WexLogger TestResults map to WttLogger results:
 | Blocked   | WTT\_TESTCASE\_RESULT\_BLOCKED |
 | Failed    | WTT\_TESTCASE\_RESULT\_FAIL    |
 
- 
+
 
 ## Logger Dependencies
 
@@ -432,7 +432,6 @@ Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be load
         <supportedRuntime version="v4.0"/>
     </startup>
 </configuration>
-                
 ```
 
 ## Managed Code Error and Exception Handling
@@ -458,9 +457,9 @@ static void LogController_WexLoggerError(object sender, WexLoggerErrorEventArgs 
 
 Additionally, the **LogController::InitializeLogging()** and **LogController::FinalizeLogging()** methods themselves throw WexLoggerException in the event of failure. This provides detailed information on the error, and also allows you to abort the test run before it begins. Test case authors will never need to worry about catching these exceptions - they should be expected/handled during WexLogger initializaiton/completion only.
 
- 
 
- 
+
+
 
 
 

@@ -20,9 +20,9 @@ Click **Index** on the **Help** menu to open the **Index** tab in this Help docu
 
 For more information about how to use this Help file, see [Using the Help File](using-the-help-documentation.md).
 
- 
+ 
 
- 
+ 
 
 
 

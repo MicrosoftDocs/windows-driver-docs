@@ -23,9 +23,9 @@ This section includes the following topics:
 
 [WHEA Management Applications](whea-management-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

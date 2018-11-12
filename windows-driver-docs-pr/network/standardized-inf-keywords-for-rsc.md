@@ -63,7 +63,7 @@ The following table describes the possible INF entries for the RSC enumeration k
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>*RscIPv4</strong></p></td>
+<td align="left"><p><strong><em>RscIPv4</strong></p></td>
 <td align="left"><p>Recv Segment Coalescing (IPv4)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -75,7 +75,7 @@ The following table describes the possible INF entries for the RSC enumeration k
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>*RscIPv6</strong></p></td>
+<td align="left"><p><strong></em>RscIPv6</strong></p></td>
 <td align="left"><p>Recv Segment Coalescing (IPv6)</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>Disabled</p></td>
@@ -89,15 +89,15 @@ The following table describes the possible INF entries for the RSC enumeration k
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
 For more information about using enumeration keywords, see [Enumeration Keywords](enumeration-keywords.md).
 
- 
+ 
 
- 
+ 
 
 
 

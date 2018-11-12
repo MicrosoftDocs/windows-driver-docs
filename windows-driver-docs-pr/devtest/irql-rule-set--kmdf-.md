@@ -29,37 +29,37 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>KmdfIrql</strong>](kmdf-kmdfirql.md)</p></td>
-<td align="left"><p>The [<strong>KmdfIrql</strong>](kmdf-kmdfirql.md) rule specifies that a driver calls a framework method at an IRQL that is less than or equal to the maximum IRQL for that method.</p></td>
+<td align="left"><p><a href="kmdf-kmdfirql.md" data-raw-source="[&lt;strong&gt;KmdfIrql&lt;/strong&gt;](kmdf-kmdfirql.md)"><strong>KmdfIrql</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-kmdfirql.md" data-raw-source="[&lt;strong&gt;KmdfIrql&lt;/strong&gt;](kmdf-kmdfirql.md)"><strong>KmdfIrql</strong></a> rule specifies that a driver calls a framework method at an IRQL that is less than or equal to the maximum IRQL for that method.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>KmdfIrql2</strong>](kmdf-kmdfirql2.md)</p></td>
-<td align="left"><p>The [<strong>KmdfIrql2</strong>](kmdf-kmdfirql2.md) rule specifies that a driver calls a framework method at an IRQL that is less than or equal to the maximum IRQL for that method.</p></td>
+<td align="left"><p><a href="kmdf-kmdfirql2.md" data-raw-source="[&lt;strong&gt;KmdfIrql2&lt;/strong&gt;](kmdf-kmdfirql2.md)"><strong>KmdfIrql2</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-kmdfirql2.md" data-raw-source="[&lt;strong&gt;KmdfIrql2&lt;/strong&gt;](kmdf-kmdfirql2.md)"><strong>KmdfIrql2</strong></a> rule specifies that a driver calls a framework method at an IRQL that is less than or equal to the maximum IRQL for that method.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>UsbKmdfIrql</strong>](kmdf-usbkmdfirql.md)</p></td>
-<td align="left"><p>The [<strong>UsbKmdfIrql</strong>](kmdf-usbkmdfirql.md) rule specifies that a KMDF driver does not call USB-specific device driver interfaces (DDI) at the incorrect IRQL level.</p></td>
+<td align="left"><p><a href="kmdf-usbkmdfirql.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrql&lt;/strong&gt;](kmdf-usbkmdfirql.md)"><strong>UsbKmdfIrql</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-usbkmdfirql.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrql&lt;/strong&gt;](kmdf-usbkmdfirql.md)"><strong>UsbKmdfIrql</strong></a> rule specifies that a KMDF driver does not call USB-specific device driver interfaces (DDI) at the incorrect IRQL level.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>UsbKmdfIrql2</strong>](kmdf-usbkmdfirql2.md)</p></td>
-<td align="left"><p>The [<strong>UsbKmdfIrql2</strong>](kmdf-usbkmdfirql2.md) rule specifies that a KMDF driver should not call USB-specific DDIs at the incorrect IRQL level.</p></td>
+<td align="left"><p><a href="kmdf-usbkmdfirql2.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrql2&lt;/strong&gt;](kmdf-usbkmdfirql2.md)"><strong>UsbKmdfIrql2</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-usbkmdfirql2.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrql2&lt;/strong&gt;](kmdf-usbkmdfirql2.md)"><strong>UsbKmdfIrql2</strong></a> rule specifies that a KMDF driver should not call USB-specific DDIs at the incorrect IRQL level.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>UsbKmdfIrqlExplicit</strong>](usbkmdfirqlexplicit.md)</p></td>
-<td align="left"><p>The [<strong>UsbKmdfIrqlExplicit</strong>](usbkmdfirqlexplicit.md) rule verifies that KMDF DDIs are called at the correct IRQL level. This rule applies to all EvtIoCallback functions.</p></td>
+<td align="left"><p><a href="usbkmdfirqlexplicit.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrqlExplicit&lt;/strong&gt;](usbkmdfirqlexplicit.md)"><strong>UsbKmdfIrqlExplicit</strong></a></p></td>
+<td align="left"><p>The <a href="usbkmdfirqlexplicit.md" data-raw-source="[&lt;strong&gt;UsbKmdfIrqlExplicit&lt;/strong&gt;](usbkmdfirqlexplicit.md)"><strong>UsbKmdfIrqlExplicit</strong></a> rule verifies that KMDF DDIs are called at the correct IRQL level. This rule applies to all EvtIoCallback functions.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WdfRequestSendSyncAtDispatch</strong>](wdfrequestsendsyncatdispatch.md)</p></td>
-<td align="left"><p>The [<strong>WdfRequestSendSyncAtDispatch</strong>](wdfrequestsendsyncatdispatch.md) rule verifies that the [<strong>WdfRequestSend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550027) function is sent at the correct IRQL priority level.</p></td>
+<td align="left"><p><a href="wdfrequestsendsyncatdispatch.md" data-raw-source="[&lt;strong&gt;WdfRequestSendSyncAtDispatch&lt;/strong&gt;](wdfrequestsendsyncatdispatch.md)"><strong>WdfRequestSendSyncAtDispatch</strong></a></p></td>
+<td align="left"><p>The <a href="wdfrequestsendsyncatdispatch.md" data-raw-source="[&lt;strong&gt;WdfRequestSendSyncAtDispatch&lt;/strong&gt;](wdfrequestsendsyncatdispatch.md)"><strong>WdfRequestSendSyncAtDispatch</strong></a> rule verifies that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550027" data-raw-source="[&lt;strong&gt;WdfRequestSend&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550027)"><strong>WdfRequestSend</strong></a> function is sent at the correct IRQL priority level.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WdfRequestSendSyncAtDispatch2</strong>](wdfrequestsendsyncatdispatch2.md)</p></td>
-<td align="left"><p>The [<strong>WdfRequestSendSyncAtDispatch2</strong>](wdfrequestsendsyncatdispatch2.md) rule verifies that the [<strong>WdfRequestSend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550027) function is sent at the correct IRQL priority level.</p></td>
+<td align="left"><p><a href="wdfrequestsendsyncatdispatch2.md" data-raw-source="[&lt;strong&gt;WdfRequestSendSyncAtDispatch2&lt;/strong&gt;](wdfrequestsendsyncatdispatch2.md)"><strong>WdfRequestSendSyncAtDispatch2</strong></a></p></td>
+<td align="left"><p>The <a href="wdfrequestsendsyncatdispatch2.md" data-raw-source="[&lt;strong&gt;WdfRequestSendSyncAtDispatch2&lt;/strong&gt;](wdfrequestsendsyncatdispatch2.md)"><strong>WdfRequestSendSyncAtDispatch2</strong></a> rule verifies that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550027" data-raw-source="[&lt;strong&gt;WdfRequestSend&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550027)"><strong>WdfRequestSend</strong></a> function is sent at the correct IRQL priority level.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the Irql rule set**
 
@@ -75,9 +75,9 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

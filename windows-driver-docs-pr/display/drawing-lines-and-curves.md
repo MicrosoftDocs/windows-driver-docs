@@ -31,9 +31,9 @@ When the path or clipping is too complex for the driver to process on the device
 
 By calling the CLIPOBJ\_*Xxx* services from GDI, a driver can have GDI enumerate all the lines in the path and perform all of the line clipping calculations. In addition, a driver can use the PATHOBJ\_*Xxx*, CLIPOBJ\_*Xxx*, or XFORMOBJ\_*Xxx* services to simplify the graphics operations. For example, a driver can use [**CLIPOBJ\_cEnumStart**](https://msdn.microsoft.com/library/windows/hardware/ff539421) and [**CLIPOBJ\_bEnum**](https://msdn.microsoft.com/library/windows/hardware/ff539420) to enumerate the rectangles in a [*clip region*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region), send this region down to the printer, and clip to it. The driver can also use [**PATHOBJ\_vEnumStart**](https://msdn.microsoft.com/library/windows/hardware/ff568856) and [**PATHOBJ\_bEnum**](https://msdn.microsoft.com/library/windows/hardware/ff568851) to enumerate lines or curves in the path. It can then send the path to the device, and stroke it.
 
- 
+ 
 
- 
+ 
 
 
 

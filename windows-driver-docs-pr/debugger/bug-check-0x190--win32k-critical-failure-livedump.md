@@ -63,11 +63,11 @@ The WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP bug check has a value of 0x00000190. Thi
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

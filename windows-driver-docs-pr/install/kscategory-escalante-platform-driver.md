@@ -43,7 +43,7 @@ The KSCATEGORY_ESCALANTE_PLATFORM_DRIVER [device interface class](https://msdn.m
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

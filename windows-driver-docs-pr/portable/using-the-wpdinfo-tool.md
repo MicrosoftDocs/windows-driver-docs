@@ -36,9 +36,9 @@ You can right-click a given object, resource, or property to display a menu of o
 
 ![wpdinfo options](images/wpdinfo3.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ For a complete list of the extension commands in Ks.dll, see [Kernel Streaming E
 
 If you wish to use these extensions with Windows 2000, you must copy Ks.dll from the kdexts directory to the w2kfre directory.
 
- 
+ 
 
- 
+ 
 
 
 

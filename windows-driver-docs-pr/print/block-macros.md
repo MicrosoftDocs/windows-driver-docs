@@ -49,7 +49,7 @@ To define a block macro in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *BlockMacroName* is a unique name, and *BlockMacroBody* is a set of one or more [GPD file entries](gpd-file-entries.md). If *BlockMacroBody* contains braces, equal numbers of left and right braces ( {, } ) must be included.
 
@@ -79,7 +79,7 @@ To reference a block macro, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *BlockMacroName* is a unique name, previously specified in the **\*BlockMacro** entry that defines the macro.
 
@@ -92,9 +92,9 @@ For example, to reference the EnvelopeDefaults macro within an option specificat
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

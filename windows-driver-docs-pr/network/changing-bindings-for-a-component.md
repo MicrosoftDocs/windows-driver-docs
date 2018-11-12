@@ -69,9 +69,9 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

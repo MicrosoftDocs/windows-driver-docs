@@ -22,9 +22,9 @@ The event items in this set are specified as KSEVENT\_LOOPEDSTREAMING enumeratio
 
 The only event in this set is [**KSEVENT\_LOOPEDSTREAMING\_POSITION**](ksevent-loopedstreaming-position.md).
 
- 
+ 
 
- 
+ 
 
 
 

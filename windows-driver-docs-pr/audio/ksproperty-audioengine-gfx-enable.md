@@ -50,7 +50,7 @@ The **KSPROPERTY\_AUDIOENGINE\_GFXENABLE** property request allows the audio dri
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type **BOOL** and indicates whether global effect processing in the audio engine node is enabled. A value of **TRUE** indicates that processing is enabled. **FALSE** indicates that it is disabled.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE\_LFXENABLE**](ksproperty-audioengine-lfx-enable.md)
 
- 
+ 
 
- 
+ 
 
 
 

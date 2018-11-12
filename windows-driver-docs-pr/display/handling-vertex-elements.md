@@ -23,9 +23,9 @@ If the device supports fixed-function vertex processing, the driver must handle 
 
 If the device supports programmable vertex processing, the driver must handle up to 64 vertex elements and skip over those elements that it does not use. Because each channel (4 maximum) of an input register (16 maximum) for a device that supports vertex shader 3\_0 and later can be declared separately, up to 64 (16 \* 4) vertex elements are possible. This maximum number of 64 does not include the end element, which is formed from the D3DDECL\_END macro.
 
- 
+ 
 
- 
+ 
 
 
 

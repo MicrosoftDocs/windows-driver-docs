@@ -46,7 +46,7 @@ PoRequestPowerIrp (
     );
 ```
 
-To send the IRP, the driver calls **PoRequestPowerIrp**, specifying a pointer to the target device object in *DeviceObject*, the minor IRP code IRP\_MN\_SET\_POWER or IRP\_MN\_QUERY\_POWER in *MinorFunction*, the value **DevicePowerState** in the *PowerState***.Type**, and a device power state in *PowerState***.State**. In Windows 98/Me, *DeviceObject* must specify the PDO of the underlying device; in Windows 2000 and later versions of Windows, this value can point to either the PDO or an FDO of a driver in the same device stack.
+To send the IRP, the driver calls **PoRequestPowerIrp**, specifying a pointer to the target device object in *DeviceObject*, the minor IRP code IRP\_MN\_SET\_POWER or IRP\_MN\_QUERY\_POWER in *MinorFunction*, the value **DevicePowerState** in the <em>PowerState</em>**.Type**, and a device power state in <em>PowerState</em>**.State**. In Windows 98/Me, *DeviceObject* must specify the PDO of the underlying device; in Windows 2000 and later versions of Windows, this value can point to either the PDO or an FDO of a driver in the same device stack.
 
 If the driver must perform additional tasks after all other drivers have completed the IRP, it should pass a pointer to a power completion function in *CompletionFunction*. The I/O manager calls the *CompletionFunction* after calling all the *IoCompletion* routines set by drivers as they passed the IRP down the stack.
 
@@ -64,9 +64,9 @@ Requests to power up a device must be handled first by the underlying bus driver
 
 When powering off a device (**PowerDeviceD3**), each driver in the device stack must save all of its necessary context and do any necessary clean-up before sending the IRP to the next-lower driver. The extent of the context information and clean-up depends on the type of driver. A function driver must save hardware context; a filter driver might need to save its own software context. A *CompletionFunction* set in this situation can take actions associated with a completed power IRP, but the driver cannot access the device.
 
- 
+ 
 
- 
+ 
 
 
 

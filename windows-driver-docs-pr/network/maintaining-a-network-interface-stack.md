@@ -27,9 +27,9 @@ To remove a stack table entry, a driver passes *HigherLayerIfIndex* and *LowerLa
 
 For an example of maintaining the interface stack, see the MUX 6.0 sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,29 +36,29 @@ The following table lists functions that provide dialog boxes for requesting ins
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupCopyError</strong>](https://msdn.microsoft.com/library/windows/desktop/aa376989)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa376989" data-raw-source="[&lt;strong&gt;SetupCopyError&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa376989)"><strong>SetupCopyError</strong></a></p></td>
 <td align="left"><p>Generates a dialog box that informs the user of a copy error.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupDeleteError</strong>](https://msdn.microsoft.com/library/windows/desktop/aa376994)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa376994" data-raw-source="[&lt;strong&gt;SetupDeleteError&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa376994)"><strong>SetupDeleteError</strong></a></p></td>
 <td align="left"><p>Generates a dialog box that informs the user of a delete error.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupPromptForDisk</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377412)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377412" data-raw-source="[&lt;strong&gt;SetupPromptForDisk&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377412)"><strong>SetupPromptForDisk</strong></a></p></td>
 <td align="left"><p>Generates a dialog box that prompts the user for an installation medium or source file location.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupRenameError</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377434)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377434" data-raw-source="[&lt;strong&gt;SetupRenameError&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377434)"><strong>SetupRenameError</strong></a></p></td>
 <td align="left"><p>Generates a dialog box that informs the user of a rename error.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

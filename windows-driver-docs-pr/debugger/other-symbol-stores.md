@@ -20,9 +20,9 @@ Since SymStore transactions are all logged in CSV-format text files, you can lev
 
 If you plan to use the SymSrv program provided with Debugging Tools for Windows package, it is recommended that you use SymStore as well. Updates to these two programs will always be released together, and therefore their versions will always match.
 
- 
+ 
 
- 
+ 
 
 
 

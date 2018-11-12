@@ -35,9 +35,9 @@ Indicates one buffer containing a single image or multiple images separated by I
 <a href="" id="tymed-multipage-callback"></a>TYMED\_MULTIPAGE\_CALLBACK  
 Indicates one buffer containing multiple images separated by IT\_MSG\_NEW\_PAGE messages. This results in a single file containing multiple images. This is used primarily in document feeder acquisition.
 
- 
+ 
 
- 
+ 
 
 
 

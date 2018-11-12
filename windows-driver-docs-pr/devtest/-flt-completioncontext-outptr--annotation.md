@@ -25,7 +25,6 @@ SwapPreReadBuffers(
     _In_ PCFLT_RELATED_OBJECTS FltObjects,
     _Flt_CompletionContext_Outptr_ PVOID *CompletionContext
     );
-
 ```
 
 The **\_Flt\_CompletionContext\_Outptr\_** annotation is defined in specstrings.h. Using the annotation can add valuable error checking without adding overhead or complexity to your code.
@@ -39,7 +38,7 @@ The **\_Flt\_CompletionContext\_Outptr\_** annotation is defined in specstrings.
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
 
- 
+
+
 

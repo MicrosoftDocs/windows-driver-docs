@@ -60,7 +60,7 @@ Lists with detailed information the device objects owned by the driver (requires
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -96,9 +96,9 @@ Device Object list:
 
 You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the device object.
 
- 
+ 
 
- 
+ 
 
 
 

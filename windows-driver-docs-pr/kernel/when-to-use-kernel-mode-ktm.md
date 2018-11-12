@@ -19,9 +19,9 @@ For example, you might use KTM in the following situations:
 
 -   You are designing a new data storage system that stores information in one or more databases. Components of your system will access the databases in kernel mode, or possibly in both user mode and kernel mode. Transactional clients of your system will encapsulate their database operations within transactions so that all modifications to all databases either succeed or fail as a unit.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -58,16 +58,16 @@ The NETWORK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000BB. T
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 This error is caused when Windows is booting off a network, and a critical function fails during I/O initialization.
 
- 
+ 
 
- 
+ 
 
 
 

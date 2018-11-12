@@ -27,9 +27,9 @@ The decoder stages that are depicted in the following figure show the operation 
 
 ![diagram illustrating decoder stages](images/decstages.png)
 
- 
+ 
 
- 
+ 
 
 
 

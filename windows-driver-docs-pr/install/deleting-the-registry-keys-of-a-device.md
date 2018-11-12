@@ -34,9 +34,9 @@ You can safely create and delete registry subkeys under the hardware or software
 
 For more information about the standard registry functions, see [Registry Functions](http://go.microsoft.com/fwlink/p/?linkid=194529).
 
- 
+ 
 
- 
+ 
 
 
 

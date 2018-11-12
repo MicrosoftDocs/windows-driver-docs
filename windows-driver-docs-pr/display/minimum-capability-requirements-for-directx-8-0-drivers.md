@@ -33,9 +33,9 @@ A DirectX 8.0 driver must explicitly:
 
 It should be noted that a driver is not required to support any of the new features of DirectX 8.0 such as pixel or vertex shaders, volume textures, point sprites (beyond the nonzero maximum point size), multisampling or even multiple vertex streams (as the driver can set the maximum number of simultaneous vertex streams to one) in order to be considered a DirectX 8.0 driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ This section describes how drivers for PCMCIA devices in Microsoft Windows 2000 
 
 These methods are supported by *pcmcia.sys*, the system driver for a PCMCIA bus in Windows 2000 and later operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ Requirements
 
 [OID\_WWAN\_RADIO\_STATE](oid-wwan-radio-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

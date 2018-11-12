@@ -42,7 +42,7 @@ Color management for a printer can be controlled by an application, the system (
 </tbody>
 </table>
 
- 
+ 
 
 The following topics describe driver support for these color management scenarios:
 
@@ -54,9 +54,9 @@ The following topics describe driver support for these color management scenario
 
 [Color Management of JPEG and PNG Images](color-management-of-jpeg-and-png-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

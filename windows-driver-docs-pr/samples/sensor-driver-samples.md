@@ -23,11 +23,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Pedometer                     | [Pedometer](http://go.microsoft.com/fwlink/p/?LinkId=617959)                     | Demonstrates how to write a UMDF v2 driver to control a virtual pedometer sensor.             |
 | SimpleDeviceOrientationSensor | [SimpleDeviceOrientationSensor](http://go.microsoft.com/fwlink/p/?LinkId=617960) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

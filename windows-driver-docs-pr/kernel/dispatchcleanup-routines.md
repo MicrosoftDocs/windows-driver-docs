@@ -28,9 +28,9 @@ In general, a *DispatchCleanup* routine must process an **IRP\_MJ\_CLEANUP** req
 
 While processing an **IRP\_MJ\_CLEANUP** request, a driver can receive additional requests, such as [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) or [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819). Therefore, a driver that must deallocate resources must also synchronize execution of its *DispatchCleanup* routine with other dispatch routines, such as [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034).
 
- 
+ 
 
- 
+ 
 
 
 

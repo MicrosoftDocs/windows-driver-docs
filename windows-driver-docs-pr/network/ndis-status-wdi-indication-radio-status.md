@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate ch
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate ch
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
 | [**WDI\_TLV\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/dn898043) |                                |          | The current state of the radio in hardware and software. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 
 [WDI\_TASK\_SET\_RADIO\_STATE](oid-wdi-task-set-radio-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

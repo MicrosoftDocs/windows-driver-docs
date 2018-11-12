@@ -23,9 +23,9 @@ If the set request is successful, the miniport driver uses the receive port dire
 
 The miniport should generate an [**NDIS\_STATUS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567415) status indication to notify overlying drivers of any state changes.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,9 +60,9 @@ Requirements
 
 [**NDIS\_WWAN\_SET\_DEVICE\_SLOT\_MAPPING\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt782405)
 
- 
+ 
 
- 
+ 
 
 
 

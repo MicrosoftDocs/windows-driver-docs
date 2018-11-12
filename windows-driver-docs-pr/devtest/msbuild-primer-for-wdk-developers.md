@@ -50,9 +50,9 @@ If you have worked with Build.exe and previous versions of the WDK (prior to WDK
 -   MSBuild has a number of [built-in properties](http://go.microsoft.com/fwlink/p/?linkid=236149) that you can also reference in a project file.
 -   For more information about MSBuild and build tasks, see [MSBuild Concepts](http://go.microsoft.com/fwlink/p/?linkid=236157) and [MSBuild Reference](http://go.microsoft.com/fwlink/p/?linkid=236161).
 
- 
+ 
 
- 
+ 
 
 
 

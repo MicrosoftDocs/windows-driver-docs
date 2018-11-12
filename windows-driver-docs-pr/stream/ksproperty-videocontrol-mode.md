@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEOCONTROL\_MODE property controls the mode of image productio
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_MODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566043)</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_MODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566043)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566043" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_MODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566043)"><strong>KSPROPERTY_VIDEOCONTROL_MODE_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566043" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_MODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566043)"><strong>KSPROPERTY_VIDEOCONTROL_MODE_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_CAPS\_S structure that specifies the video-control capabilities of a minidriver, such as image flipping or event triggering abilities.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOCONTROL\_MODE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566043)
 
- 
+ 
 
- 
+ 
 
 
 

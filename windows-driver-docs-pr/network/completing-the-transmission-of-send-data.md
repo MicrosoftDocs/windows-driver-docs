@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The host stack must complete the transmission of all of the send data with one or more calls to the [**NdisTcpOffloadSendComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564609) function.
 
- 
+ 
 
- 
+ 
 
 
 

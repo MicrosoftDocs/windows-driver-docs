@@ -22,11 +22,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | HIDUSBFX2           | [hidusbfx2](http://go.microsoft.com/fwlink/p/?LinkId=620190) | Demonstrates mapping of a non-HID USB device to a HID device.                                                                                                                                                                                                                                                                               |
 | UMDF HID Minidriver | [vhidmini2](http://go.microsoft.com/fwlink/p/?LinkId=617731) | A sample demonstrating how to write a HID minidriver using the User-Mode Driver Framework (UMDF).                                                                                                                                                                                                                                           |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

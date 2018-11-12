@@ -229,7 +229,7 @@ The following table describes the valid values for the **WIA\_IPS\_SUPPORTED\_BA
 </tbody>
 </table>
 
- 
+ 
 
 The WIA minidriver can extend this list with additional custom values defined as WIA\_BARCODE\_CUSTOM\_BASE + N, where N is a positive integer.
 
@@ -251,9 +251,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

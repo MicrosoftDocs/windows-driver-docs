@@ -22,9 +22,9 @@ Vertex stream zero is treated differently from the other streams because it is t
 
 Stream zero is also the implied vertex source when one of the special, fixed-function vertex shaders is the current vertex shader handle.
 
- 
+ 
 
- 
+ 
 
 
 

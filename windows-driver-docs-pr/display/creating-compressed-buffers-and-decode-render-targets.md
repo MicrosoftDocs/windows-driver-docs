@@ -33,9 +33,9 @@ D3DDDIFMT_BITSTREAMDATA           = 156
 
 The Direct3D runtime creates each decode render target independently in a call to the user-mode display driver's [**CreateResource**](https://msdn.microsoft.com/library/windows/hardware/ff540688) function. Each of the targets is referenced as a subresource index of a single resource. The user-mode display driver determines to create a decode render target if the **DecodeRenderTarget** bit-field flag in the **Flags** member of D3DDDIARG\_CREATERESOURCE is set.
 
- 
+ 
 
- 
+ 
 
 
 

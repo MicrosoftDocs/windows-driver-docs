@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Name for RequestedElements Element</strong>](name-for-requestedelements-element.md)</p></td>
+<td><p><a href="name-for-requestedelements-element.md" data-raw-source="[&lt;strong&gt;Name for RequestedElements Element&lt;/strong&gt;](name-for-requestedelements-element.md)"><strong>Name for RequestedElements Element</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,10 +65,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetJobElementsRequest</strong>](getjobelementsrequest.md)</p></td>
+<td><p><a href="getjobelementsrequest.md" data-raw-source="[&lt;strong&gt;GetJobElementsRequest&lt;/strong&gt;](getjobelementsrequest.md)"><strong>GetJobElementsRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GetScannerElementsRequest</strong>](getscannerelementsrequest.md)</p></td>
+<td><p><a href="getscannerelementsrequest.md" data-raw-source="[&lt;strong&gt;GetScannerElementsRequest&lt;/strong&gt;](getscannerelementsrequest.md)"><strong>GetScannerElementsRequest</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -87,9 +87,9 @@ The **RequestedElements** element contains one or more **Name** elements for par
 
 [**Name for RequestedElements Element**](name-for-requestedelements-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

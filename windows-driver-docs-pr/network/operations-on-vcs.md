@@ -25,9 +25,9 @@ All connection-oriented communication over the network occurs on virtual connect
 
 [Deleting a VC](deleting-a-vc.md)
 
- 
+ 
 
- 
+ 
 
 
 

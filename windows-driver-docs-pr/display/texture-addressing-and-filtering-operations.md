@@ -67,20 +67,20 @@ Although addressing and sampling operations are defined in conjunction with blen
 </tr>
 <tr class="even">
 <td align="left"><p>D3DTSS_TEXCOORDINDEX</p></td>
-<td align="left"><p>Specifies the index of a texture coordinate set. This integer indicates the index of the set of texture coordinates from which the addressing unit should sample. These coordinates are listed in the incoming flexible vertex format ([FVF](fvf--flexible-vertex-format-.md)) vertex data in numerical order, with zero being the standard DirectX set of texture coordinates, one being a second texture coordinate set, and so on. This allows textures to share sets of texture coordinates as desired.</p></td>
+<td align="left"><p>Specifies the index of a texture coordinate set. This integer indicates the index of the set of texture coordinates from which the addressing unit should sample. These coordinates are listed in the incoming flexible vertex format (<a href="fvf--flexible-vertex-format-.md" data-raw-source="[FVF](fvf--flexible-vertex-format-.md)">FVF</a>) vertex data in numerical order, with zero being the standard DirectX set of texture coordinates, one being a second texture coordinate set, and so on. This allows textures to share sets of texture coordinates as desired.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   To be Direct3D-compliant, drivers are required to properly parse up to eight texture coordinate sets, even if the device can only iterate and use the number of coordinates defined in **dwFVFCaps**. The driver must use D3DTSS\_TEXCOORDINDEX to grab the right coordinates to use for texturing.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

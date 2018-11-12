@@ -36,11 +36,11 @@ In the preceding example, the GUID shown in the \[Strings\] section is used to i
 
 **Important**  The two HKLM line entries for Mycion.ico and Testfile.wav are required. The "c:\\Program Files\\MyVendor\\" folder has been used to show that you must create an appropriate folder for your driver-related icon and test wave files.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

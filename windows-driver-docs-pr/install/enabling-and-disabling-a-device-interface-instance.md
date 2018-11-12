@@ -29,9 +29,9 @@ A driver should disable a device's interfaces when it handles an [**IRP_MN_SURPR
 
 A driver should not disable the interfaces when the device is stopped ([**IRP_MN_STOP_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755)); instead, it should leave any device interfaces enabled and queue I/O requests until it receives another [**IRP_MN_START_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. Similarly, a driver should not disable its interfaces when the device is put in a sleep state. It should queue I/O requests until the device wakes up. For more information, see [Supporting Devices that Have Wake-Up Capabilities](https://msdn.microsoft.com/library/windows/hardware/ff563907).
 
- 
+ 
 
- 
+ 
 
 
 

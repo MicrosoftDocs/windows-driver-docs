@@ -61,9 +61,9 @@ Then use the **dir** command to make sure that the file is now listed as *ssdt-o
 Perform the following tasks to update the SSDT, and load it to replace the factory default version. The updated SSDT will be stored in a potion of memory called *battery-backed RAM*. So make sure that the button cell (battery) that came with your Sharks Cove is plugged into its socket.
 
 1. Copy the following updated SSDT and paste it into a new instance of Notepad.
-```Text
-// CreatorID=INTL  CreatorRev=20.14.805
-// FileLength=177   FileChkSum=0x88
+   ```Text
+   // CreatorID=INTL  CreatorRev=20.14.805
+   // FileLength=177   FileChkSum=0x88
 
 DefinitionBlock("SSDT.AML", "SSDT", 0x01, "Intel_", "ADebTabl", 0x00001000)
 {

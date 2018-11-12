@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfpooltracker** extension is obsolete.
 
- 
+ 
 
- 
+ 
 
 
 

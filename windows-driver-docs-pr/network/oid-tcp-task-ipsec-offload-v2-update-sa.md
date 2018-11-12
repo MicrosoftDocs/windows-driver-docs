@@ -18,7 +18,7 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDA
 
 **Note**  NDIS supports this OID with the direct OID request interface. For more information about the direct OID request interface, see [NDIS 6.1 Direct OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff564736).
 
- 
+ 
 
 Remarks
 -------
@@ -54,9 +54,9 @@ Requirements
 
 [**IPSEC\_OFFLOAD\_V2\_UPDATE\_SA**](https://msdn.microsoft.com/library/windows/hardware/ff556990)
 
- 
+ 
 
- 
+ 
 
 
 

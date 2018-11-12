@@ -88,7 +88,7 @@ Causes the command to only display local variables that match the specified *Pat
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -103,9 +103,9 @@ Data structures and unfamiliar data types are not displayed in full; rather, the
 
 The *local context* determines which set of local variables will be displayed. By default, this context matches the current position of the program counter. For information about how this can be changed, see [Local Context](changing-contexts.md#local-context).
 
- 
+ 
 
- 
+ 
 
 
 

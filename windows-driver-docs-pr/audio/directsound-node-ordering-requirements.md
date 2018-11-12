@@ -57,9 +57,9 @@ The optional 3D node is required to manage hardware-accelerated 3D effects (see 
 
 The input stream to the 3D node typically contains a single channel. In DirectSound 8.0 and later, only mono PCM buffers can be created with 3D effects. Earlier versions of DirectSound, however, support 3D nodes with both mono and stereo input streams, and drivers should support both to ensure compatibility with older applications.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,11 +19,11 @@ The driver sample in this directory provides a starting point for writing a cust
 |---------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Near Field Proximity Sample Driver (UMDF 1) | [netnfp](http://go.microsoft.com/fwlink/p/?LinkId=620200) | Demonstrates how to write a UMDF 1 near field proximity driver that uses a TCP/IPv6 network connection and a static configuration between two machines to simulate near field interaction. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

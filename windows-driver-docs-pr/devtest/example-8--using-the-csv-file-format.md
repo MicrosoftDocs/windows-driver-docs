@@ -24,9 +24,9 @@ The command uses the **-o** parameter to specify the name and location of the ou
 
 In response, Tracefmt formats the trace messages by using commas between the prefix and message fields, and saves them in the mytrace.csv file.
 
- 
+ 
 
- 
+ 
 
 
 

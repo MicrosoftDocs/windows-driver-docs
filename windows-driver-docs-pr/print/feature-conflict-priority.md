@@ -30,9 +30,9 @@ Features within each feature type are assigned a relative priority based on the 
 
 For more information about the \***FeatureType** and \***ConflictPriority** attributes, see [Feature Attributes](feature-attributes.md).
 
- 
+ 
 
- 
+ 
 
 
 

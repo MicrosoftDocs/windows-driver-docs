@@ -42,9 +42,9 @@ The provider must be able to handle an **NdkCloseConnector** call (on the succes
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

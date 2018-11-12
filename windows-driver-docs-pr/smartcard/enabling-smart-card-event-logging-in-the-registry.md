@@ -44,7 +44,7 @@ The registry values that enable event logging are listed in the following table.
 <strong>Important</strong>   The file name extension must be included in the <strong>EventMessageFile</strong> value name, but it must never appear in any other part of the registry path.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -54,13 +54,13 @@ The registry values that enable event logging are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about specifying these registry entries, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
 
- 
+ 
 
- 
+ 
 
 
 

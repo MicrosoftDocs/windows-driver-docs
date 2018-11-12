@@ -65,9 +65,9 @@ Here is an example of a secure server. This server uses secure sockets layer wit
 D:\> cdb -server "ssl:proto=tls1,machuser=ab 38 f7 ae 13 20 ac da 05 14 65 60 30 83 7b 83 09 2c d2 34,port=1234" notepad.exe
 ```
 
- 
+ 
 
- 
+ 
 
 
 

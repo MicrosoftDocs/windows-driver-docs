@@ -15,9 +15,9 @@ This warning indicates that a function is being used that has been banned or dep
 
 To find the replacement, search for the name of the deprecated function in the [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573) documentation. The documentation lists the name of the deprecated function and suggests replacements.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ When a hardware interrupt occurs, the SD bus library intercepts the interrupt, m
 
 The *ntddsd.h* header file, which is provided in the Windows Driver Kit (WDK), declares the prototypes for the routines exposed by the SD bus library.
 
- 
+ 
 
- 
+ 
 
 
 

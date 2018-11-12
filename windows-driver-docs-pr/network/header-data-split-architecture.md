@@ -39,11 +39,11 @@ An *upper-layer protocol* is an IP transport protocol such as TCP, UDP, or ICMP.
 
 **Note**  IPsec is not considered an upper-layer protocol for the purposes of defining header-data split requirements. For more information about splitting IPsec frames, see [Splitting IPsec Frames](splitting-ipsec-frames.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

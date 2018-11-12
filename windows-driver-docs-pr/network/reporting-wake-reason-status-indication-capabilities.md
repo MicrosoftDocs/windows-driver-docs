@@ -15,7 +15,7 @@ Starting with NDIS 6.30, the miniport driver must report whether it can issue an
 
     **Note**  For this type of wake reason status indication, the network adapter must be able to save the received packet. The driver must return the received packet within the status indication.
 
-     
+     
 
 -   The network adapter detected a media-specific event, such as a disassociation from an 802.11 access point (AP) or the receipt of a mobile broadband (MB) Short Message Service (SMS) message.
 
@@ -23,7 +23,7 @@ Starting with NDIS 6.30, the miniport driver must report whether it can issue an
 
 **Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
 
- 
+ 
 
 When NDIS calls the driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the miniport driver reports its wake reason status indication capabilities by following these steps:
 
@@ -58,9 +58,9 @@ For more information about the adapter initialization process, see [Initializing
 
 For more information about how to report power management capabilities, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

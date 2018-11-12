@@ -50,9 +50,9 @@ Requirements
 
 [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
 
- 
+ 
 
- 
+ 
 
 
 

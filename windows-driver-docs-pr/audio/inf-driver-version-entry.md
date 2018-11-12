@@ -34,9 +34,9 @@ When the operating system searches for drivers, it chooses a driver with a more 
 
 In Windows 2000, Windows XP and later, the INF file for a driver package must provide a **DriverVer** directive.
 
- 
+ 
 
- 
+ 
 
 
 

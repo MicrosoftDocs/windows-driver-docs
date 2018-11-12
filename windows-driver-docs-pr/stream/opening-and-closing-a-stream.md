@@ -54,9 +54,9 @@ else {
 
 The Stream class interface sends an [**SRB\_CLOSE\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568165) request to the minidriver to close a stream. The minidriver should then return all outstanding stream SRBs to the Stream class interface.
 
- 
+ 
 
- 
+ 
 
 
 

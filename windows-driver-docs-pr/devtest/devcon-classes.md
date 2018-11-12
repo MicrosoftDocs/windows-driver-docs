@@ -21,8 +21,6 @@ Lists all [device setup classes](https://msdn.microsoft.com/library/windows/hard
 
 ```
     devcon [/m:\\computer] classes 
-
-   
 ```
 
 ## <span id="ddk_devcon_classes_tools"></span><span id="DDK_DEVCON_CLASSES_TOOLS"></span>Parameters
@@ -31,9 +29,9 @@ Lists all [device setup classes](https://msdn.microsoft.com/library/windows/hard
 <span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\computer**   
 Runs the command on the specified remote computer. The backslashes are required.
 
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
+**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
- 
+
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -57,9 +55,9 @@ devcon /m:\\Server01 classes
 
 [Example 5: List classes on the remote computer](devcon-examples.md#ddk_example_5_list_classes_on_the_remote_computer_tools)
 
- 
 
- 
+
+
 
 
 

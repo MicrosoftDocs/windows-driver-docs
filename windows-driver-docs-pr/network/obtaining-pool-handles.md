@@ -42,9 +42,9 @@ NDIS calls the [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardw
 <a href="" id="other-drivers"></a>Other drivers  
 If a driver cannot obtain a handle through one of the preceding methods, the driver can call the [**NdisAllocateGenericObject**](https://msdn.microsoft.com/library/windows/hardware/ff561603) function to get a handle.
 
- 
+ 
 
- 
+ 
 
 
 

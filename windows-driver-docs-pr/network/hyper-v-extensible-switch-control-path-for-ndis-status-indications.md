@@ -17,7 +17,7 @@ In this configuration, the extensible switch extensions are exposed to every net
 
 **Note**  Operations of this sort can only be performed by a forwarding extension. For more information about this type of driver, see [Forwarding Extensions](forwarding-extensions.md).
 
- 
+ 
 
 The following figure shows the extensible switch control path for NDIS status indications issued by an underlying extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
@@ -29,7 +29,7 @@ The following figure shows the extensible switch control path for NDIS status in
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
- 
+ 
 
 The extensible switch supports NDIS status indications from the underlying physical adapter or extensible switch team in the following ways:
 
@@ -49,13 +49,13 @@ The extensible switch supports NDIS status indications from the underlying physi
 
 **Note**  The extensible switch extension must follow the same guidelines for filtering NDIS status indications that applies to all NDIS filter drivers. For more information, see [Filter Module Status Indications](filter-module-status-indications.md).
 
- 
+ 
 
 For more information on how forwarding extensions can initiate [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/hh598205) indications, see [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md).
 
- 
+ 
 
- 
+ 
 
 
 

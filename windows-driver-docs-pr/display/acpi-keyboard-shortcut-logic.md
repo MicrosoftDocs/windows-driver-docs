@@ -23,9 +23,9 @@ The behavior of calls to the following functions has changed for drivers running
 
 -   This function is not supported on Windows 7 and later for display miniport drivers with version &gt;= DXGKDDI\_INTERFACE\_VERSION\_WIN7. If called, the status code STATUS\_NOT\_SUPPORTED is returned.
 
- 
+ 
 
- 
+ 
 
 
 

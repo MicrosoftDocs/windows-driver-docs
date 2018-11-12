@@ -58,9 +58,9 @@ For information about how the operating system determines which security descrip
 
 When the framework creates a device object, it always sets the FILE\_DEVICE\_SECURE\_OPEN flag so that the operating system will check a device's security descriptor before allowing an application to access any names within the device's namespace. For more information about the FILE\_DEVICE\_SECURE\_OPEN flag and device namespace, see [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068).
 
- 
+ 
 
- 
+ 
 
 
 

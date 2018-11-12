@@ -28,9 +28,9 @@ You can also drag a docked window by clicking its title bar. This action enables
 
 When you try to undock or drag a tabbed window by any of these methods, only the active window in the tabbed collection is moved.
 
- 
+ 
 
- 
+ 
 
 
 

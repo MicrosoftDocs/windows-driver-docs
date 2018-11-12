@@ -22,9 +22,9 @@ The *function signature* (the arguments and result type) are used to identify th
 
 To suppress this warning when it is redundant, you can explicitly declare the function to be of a particular function type. The functions that are detected this way are typically callback functions. The proper action is to declare them using a function typedef. For more information, see [Using Function Role Type Declarations](using-function-role-type-declarations.md).
 
- 
+ 
 
- 
+ 
 
 
 

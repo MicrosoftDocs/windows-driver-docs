@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_CPU\_RESOURCES property specifies whether a node's functi
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and indicates whether the node's functionality is implemented in hardware or software. The miniport driver sets this value to one of the following two constants from header file Ksmedia.h:
 
@@ -105,9 +105,9 @@ Requirements
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -78,9 +78,9 @@ The following example code shows a function, `RegisterSynth`, that can be called
 
 `CLSIDToStr` is a locally defined function (not shown in the preceding code example) that converts a CLSID value to a character string. It is similar to the [**StringFromCLSID**](https://msdn.microsoft.com/library/windows/desktop/ms683917) function that is described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ The following flow diagram shows the suspend sequence.
 
 [**WDI\_TLV\_SET\_POWER\_DX\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn898060)
 
- 
+ 
 
- 
+ 
 
 
 

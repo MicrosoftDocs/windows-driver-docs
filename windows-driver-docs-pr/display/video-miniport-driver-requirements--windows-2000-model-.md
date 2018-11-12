@@ -34,9 +34,9 @@ The following are some of the requirements for video miniport drivers.
 
     Panning must be disabled by default. The miniport driver should enable it only when it is requested through a control panel. OEMs can enable panning by default as a part of their preinstall.
 
- 
+ 
 
- 
+ 
 
 
 

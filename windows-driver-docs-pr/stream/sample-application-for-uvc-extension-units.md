@@ -81,9 +81,9 @@ In this case, **pUnkOuter** should be a pointer to the capture filter that repre
 
 Write the code for the **FindExtensionNode** function to locate the necessary extension unit node and to return its ID in *dwExtensionNode*. This ID is used in this sample code's subsequent call to the **IKsTopologyInfo::CreateNodeInstance** method.
 
- 
+ 
 
- 
+ 
 
 
 

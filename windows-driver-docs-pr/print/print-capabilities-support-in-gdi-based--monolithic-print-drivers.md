@@ -18,11 +18,11 @@ To provide complete Print Ticket and Print Capabilities support, GDI-based, mono
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

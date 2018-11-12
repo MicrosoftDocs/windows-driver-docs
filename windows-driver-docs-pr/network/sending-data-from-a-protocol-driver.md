@@ -34,9 +34,9 @@ When NDIS calls *ProtocolSendNetBufferListsComplete*, the protocol driver regain
 
 Although NDIS always submits protocol-supplied network data to the underlying miniport driver in the protocol-determined order as passed to **NdisSendNetBufferLists**, the underlying driver can complete the send requests in random order. That is, every bound protocol driver can rely on NDIS to submit the network data that the protocol driver passes to **NdisSendNetBufferLists** in FIFO order to the underlying driver. However, no protocol driver can rely on the underlying driver to call **NdisMSendNetBufferListsComplete** in the same order.
 
- 
+ 
 
- 
+ 
 
 
 

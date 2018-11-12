@@ -25,9 +25,9 @@ A KSNODETYPE\_DELAY node should support the following required property:
 
 [**KSPROPERTY\_AUDIO\_DELAY**](ksproperty-audio-delay.md)
 
- 
+ 
 
- 
+ 
 
 
 

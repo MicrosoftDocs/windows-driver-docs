@@ -31,9 +31,9 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/
   MaximumSampleFrequency = 48000;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ This section describes the following commands on the **Debug** menu of WinDbg:
 
 [Debug | Kernel Connection | Resynchronize](debug---kernel-connection---resynchronize.md)
 
- 
+ 
 
- 
+ 
 
 
 

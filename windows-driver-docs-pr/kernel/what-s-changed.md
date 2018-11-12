@@ -20,9 +20,9 @@ On 64-bit Windows, however, this assumption of uniformity is no longer valid. Po
 
 On 32-bit Windows platforms, the operating system automatically fixes kernel-mode memory alignment faults and makes them invisible to the application. It does this for the calling process and any descendant processes. This feature, which often dramatically reduces performance, has not been implemented in 64-bit Windows. Thus, if your 32-bit driver contains misalignment bugs, you will need to fix them when porting to 64-bit Windows.
 
- 
+ 
 
- 
+ 
 
 
 

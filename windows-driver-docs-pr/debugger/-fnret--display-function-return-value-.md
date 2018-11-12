@@ -58,7 +58,7 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ If you include the *Value* parameter, the **.fnret** command only casts this val
 
 If you omit *Value*, the debugger uses the return value registers to determine this value. If a function has returned more recently than the function that the *Address* parameter specifies, the value that is displayed will probably not be a value that this function returned.
 
- 
+ 
 
- 
+ 
 
 
 

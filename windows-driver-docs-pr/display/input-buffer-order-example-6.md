@@ -83,11 +83,11 @@ Consider an even more sophisticated deinterlace device that requires two previou
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

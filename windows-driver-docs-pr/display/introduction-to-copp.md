@@ -29,9 +29,9 @@ The following topics describe COPP:
 
 [Graphics Adapter Output Requirements to Support COPP](graphics-adapter-output-requirements-to-support-copp.md)
 
- 
+ 
 
- 
+ 
 
 
 

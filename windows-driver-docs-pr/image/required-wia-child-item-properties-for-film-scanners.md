@@ -32,9 +32,9 @@ The WIA film scanner child item is required to support the following WIA propert
 
 [**WIA\_IPS\_YPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552671)
 
- 
+ 
 
- 
+ 
 
 
 

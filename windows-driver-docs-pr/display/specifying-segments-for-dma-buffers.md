@@ -24,9 +24,9 @@ When the Microsoft DirectX graphics kernel subsystem calls the display miniport 
 
 Note that the basic video memory manager model does not support DMA buffers in local video memory.
 
- 
+ 
 
- 
+ 
 
 
 

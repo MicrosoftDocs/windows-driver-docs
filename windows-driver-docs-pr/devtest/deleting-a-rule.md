@@ -23,9 +23,9 @@ To delete a rule from a filter:
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after deleting the rule. Otherwise, the rule is not deleted from the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ After the minidriver is initialized, it must create the driver item tree in the 
 
 3.  Calling the [**IWiaDrvItem::AddItemToFolder**](https://msdn.microsoft.com/library/windows/hardware/ff543856) method on each child item to add the item to the driver item tree.
 
- 
+ 
 
- 
+ 
 
 
 

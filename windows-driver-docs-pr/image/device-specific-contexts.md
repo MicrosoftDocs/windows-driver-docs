@@ -17,9 +17,9 @@ Minidrivers can optionally make use of a private context for storing device-spec
 
 For example, when a camera driver retrieves thumbnail data from the device, it usually caches the data in the driver context associated with the appropriate driver item. Note that the WIA service frees the context. The driver's responsibility is simply to free any resources held by their context. If the thumbnail data of the previous example was stored in memory allocated on the device-specific context, the memory holding that cached data should be freed here, but not the context itself.
 
- 
+ 
 
- 
+ 
 
 
 

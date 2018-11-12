@@ -226,7 +226,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -259,9 +259,9 @@ Requirements
 
 [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn925945)
 
- 
+ 
 
- 
+ 
 
 
 

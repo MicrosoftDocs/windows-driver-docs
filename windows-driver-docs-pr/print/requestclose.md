@@ -54,7 +54,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>asyncPrintUIRequest</strong>](asyncprintuirequest.md)</p></td>
+<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
 <td><p></p>
 <p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
 </tr>

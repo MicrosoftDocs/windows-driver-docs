@@ -26,9 +26,9 @@ A hardware vendor's clone-view [IViewHelper](https://msdn.microsoft.com/library/
 
 -   The [**IViewHelper::Commit**](https://msdn.microsoft.com/library/windows/hardware/ff568167) method must not be used in place of a call to the Win32 **ChangeDisplaySettingsEx**(**NULL**, **NULL**, **NULL**, 0, **NULL**) function with the indicated arguments. For more information about **ChangeDisplaySettingsEx**, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

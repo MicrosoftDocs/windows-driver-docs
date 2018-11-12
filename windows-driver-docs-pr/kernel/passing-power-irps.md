@@ -76,9 +76,9 @@ Finally, the driver passes down the system IRP from the callback routine. The dr
 
 In a similar situation, when the system is going to sleep, a power policy owner might need to complete some pending I/O before it sends the device IRP to power down its device. Instead of signaling an event when the I/O completes and waiting in its *DispatchPower* routine, the driver should queue a work item and return STATUS\_PENDING from the *DispatchPower* routine. In the worker thread, it waits for I/O to complete and then sends the device power IRP. For more information, see [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276).
 
- 
+ 
 
- 
+ 
 
 
 

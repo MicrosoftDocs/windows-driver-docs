@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
- 
+ 
 
 ## Configuring the Sensor Diagnostic Tool to Capture Event Data
 

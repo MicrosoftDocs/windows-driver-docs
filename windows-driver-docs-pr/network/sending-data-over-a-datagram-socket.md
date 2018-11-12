@@ -130,9 +130,9 @@ For more information about setting a fixed remote transport address for a datagr
 
 For more information about setting a fixed destination transport address for a datagram socket, see [**SIO\_WSK\_SET\_SENDTO\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff570821).
 
- 
+ 
 
- 
+ 
 
 
 

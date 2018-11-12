@@ -44,13 +44,13 @@ The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indic
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_STANDARD_MODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565913)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565913" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STANDARD_MODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565913)"><strong>KSPROPERTY_TUNER_STANDARD_MODE_S</strong></a></p></td>
 <td><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a BOOL that indicates whether the tuning device can automatically detect the tuner standard from the signal itself.
 
@@ -86,9 +86,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_STANDARD\_MODE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565913)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ Specifies the beginning of the block in memory where the resulting codes are put
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ If you do not specify an address, the assembly starts at the address that the cu
 
 Because the assembler searches for all of the symbols that are referred to in the code, this command might take time to complete. During this time, you cannot press [**CTRL+C**](ctrl-c--break-.md)to end the **a** command.
 
- 
+ 
 
- 
+ 
 
 
 

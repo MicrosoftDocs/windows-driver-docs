@@ -48,7 +48,7 @@ The following Verify Macros are available for Native C++ Tests:
 | VERIFY\_WIN32\_BOOL\_FAILED(win32Bool, \[optional message\])                              | Verifies that the specified Win32 BOOL failed (== FALSE). Does not log the result of GetLastError(). Also logs a custom message if provided.                                                                          |
 | VERIFY\_WIN32\_BOOL\_FAILED\_RETURN(win32Bool, \[optional message\])                      | Verifies that the specified Win32 BOOL failed (== FALSE) and returns the BOOL that was passed into the macro. Does not log the result of GetLastError(). Also logs a custom message if provided.                      |
 
- 
+
 
 ### <span id="exception_cplusplus"></span><span id="EXCEPTION_CPLUSPLUS"></span>Exception Based Verify Usage
 
@@ -257,7 +257,7 @@ The following Verify methods are available for C# tests:
 | NoThrow(VerifyOperation operation)                                                          | Verifies that the specified operation does not throw an exception.                                                                                                                  |
 | NoThrow(VerifyOperation operation, string message)                                          | Verifies that the specified operation does not throw an exception; logs a custom message on verification success or failure.                                                        |
 
- 
+
 
 ### <span id="exception_csharp"></span><span id="EXCEPTION_CSHARP"></span>Exception Based Verify Usage
 
@@ -345,7 +345,6 @@ using (new SetVerifyOutput(VerifyOutputSettings.LogFailuresAsBlocked | VerifyOut
 {
 ...
 }
-        
 ```
 
 ## <span id="script"></span><span id="SCRIPT"></span>Using Verify From Script
@@ -426,7 +425,7 @@ The methods for validation on the scriptable Verify API are as follows:
 | bool Verify.Throws(function, \[optional message\])                                    | Verifies that the given function throws and exception.                                                                                                                                                                                                                                                                         |
 | bool Verify.NoThrow(function, \[optional message\])                                   | Verifies that the given function does not throw and exception.                                                                                                                                                                                                                                                                 |
 
- 
+
 
 There are two methods on the Verify class for controlling the settings:
 
@@ -435,7 +434,7 @@ There are two methods on the Verify class for controlling the settings:
 | object Verify.EnableSettings(settings)  | The specified setting flag or flags will be enabled.  |
 | object Verify.DisableSettings(settings) | The specified setting flag or flags will be disabled. |
 
- 
+
 
 The settings value passed to the Verify.EnableSettings or Verify.DisableSettings methods can be any of the following values:
 
@@ -562,9 +561,9 @@ Summary: Total=2, Passed=1, Failed=1, Blocked=0, Not Run=0, Skipped=0
 
 The ['WEX.Logger.Log' API](wexlogger.md) can be used to configure the WEX Logger as needed (for example, as a child process), and the scriptable Verify API will take advantage of that configuration.
 
- 
 
- 
+
+
 
 
 

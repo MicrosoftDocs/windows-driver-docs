@@ -45,9 +45,9 @@ This section contains additional information about the following topics:
 
 [TWAIN Compatibility](twain-compatibility.md)
 
- 
+ 
 
- 
+ 
 
 
 

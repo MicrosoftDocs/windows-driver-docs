@@ -349,9 +349,9 @@ A device that fails to meet either requirement might, after entering D3cold, be 
 
 For more information, see [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ After all of your workspace data has been cleared, run one of the themes. These 
 
 After you have loaded a theme, you may alter it to more closely suit your preferences. For more details on some common options, see [Customizing a Theme](customizing-a-theme.md).
 
- 
+ 
 
- 
+ 
 
 
 

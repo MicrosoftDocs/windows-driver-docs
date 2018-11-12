@@ -28,9 +28,9 @@ Click **OK** to save the workspace, or click **Cancel** to not save the workspac
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ A KSNODETYPE\_ADC node can support the following optional properties:
 
 [**KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE**](ksproperty-audio-dynamic-sampling-rate.md)
 
- 
+ 
 
- 
+ 
 
 
 

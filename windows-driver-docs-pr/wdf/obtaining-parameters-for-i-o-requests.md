@@ -25,9 +25,9 @@ When a driver receives an I/O request, the driver can use the following methods 
 
 -   [**IWDFIoRequest::GetWriteParameters**](https://msdn.microsoft.com/library/windows/hardware/ff559130)
 
- 
+ 
 
- 
+ 
 
 
 

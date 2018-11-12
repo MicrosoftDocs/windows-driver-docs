@@ -50,7 +50,7 @@ The **KSPROPERTY\_AUDIOENGINE\_LFXENABLE** property request retrieves or alters 
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type **BOOL** and indicates whether local effect processing on the specified stream is enabled. A value of **TRUE** indicates that processing is enabled. **FALSE** indicates that it is disabled.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE\_GFXENABLE**](ksproperty-audioengine-gfx-enable.md)
 
- 
+ 
 
- 
+ 
 
 
 

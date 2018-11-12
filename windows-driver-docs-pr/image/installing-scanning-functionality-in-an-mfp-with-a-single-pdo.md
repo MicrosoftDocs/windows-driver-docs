@@ -70,11 +70,11 @@ All kernel-mode portions must be installed by the original [**INF DDInstall Sect
 
 If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface (in addition to any other class device interfaces, such as the Print class device interface). The kernel-mode component enables an Image class device interface on the device's devnode by means of a call to the [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

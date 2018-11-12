@@ -38,9 +38,9 @@ To enumerate the device interfaces in a device information set, call [**SetupDiE
 
 **SetupDiEnumDeviceInterfaces** returns an [**SP_DEVICE_INTERFACE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure. SP_DEVICE_INTERFACE_DATA contains the interface class GUID and other information about the interface, including a reserved field that has encoded information that can be used to obtain the name of the interface. To get the interface name, one further step is required: [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) must be called. **SetupDiGetDeviceInterfaceDetail** returns a structure of type [**SP_DEVICE_INTERFACE_DETAIL_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552343) that contains the path in the system object tree that defines the interface.
 
- 
+ 
 
- 
+ 
 
 
 

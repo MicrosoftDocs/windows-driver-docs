@@ -55,7 +55,7 @@ The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This ind
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -131,7 +131,7 @@ The error that generates this message can occur after the first restart during W
 
 **Note**  This procedure assumes that you can locate **NT!PspUnhandledExceptionInSystemThread**. However, in some cases (such as an access violation crash) you will not be able to do this. In that case, look for **ntoskrnl!KiDispatchException**. The third parameter passed to this function is a trap frame address. Use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command with this address to set the Register Context to the proper value. You can then perform stack traces and issue other commands.
 
- 
+ 
 
 Here is an example of bug check 0x1E on an x86 processor:
 
@@ -183,9 +183,9 @@ fe40cf4c 80133184 ff6ce388 00000000 00000000 QIC117!_kdi_ThreadRun@4+0xa9
 fe40cf7c 8013cb8e fe43a44c ff6ce388 00000000 NT!_PspSystemThreadStartup@8+0x40
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 
@@ -94,9 +94,9 @@ UnregisterDlls = DialerRegSvr
 
 [**RegisterDlls**](inf-registerdlls-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

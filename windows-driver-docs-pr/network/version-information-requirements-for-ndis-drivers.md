@@ -20,7 +20,7 @@ NDIS can support drivers that support a higher or lower NDIS version than the *c
 
 **Note**  A driver is not required to support all the features in a later revision of a structure. For example, a miniport driver can create a version 2 structure and supply values that are appropriate for a version 1 structure.
 
- 
+ 
 
 To access the members in structures that have version information, NDIS drivers must complete the following process:
 
@@ -44,9 +44,9 @@ To access the members in structures that have version information, NDIS drivers 
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

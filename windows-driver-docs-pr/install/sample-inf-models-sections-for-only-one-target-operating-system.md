@@ -34,9 +34,9 @@ In this example, the [**INF Manufacturer section**](inf-manufacturer-section.md)
 
 -   An empty INF *Models* section for Windows 7 and later versions of Windows on any hardware platform. Windows will select this section for device installation on these platforms. However, because the section contains no specific device descriptions or hardware IDs, Windows will not install any devices through this INF file.
 
- 
+ 
 
- 
+ 
 
 
 

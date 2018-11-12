@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -22,7 +22,7 @@ NetDMA 2.0 extends the NetDMA 1.0 interface to version 1.1. NetDMA 1.1 provider 
 
 **Note**  The [**NetDmaGetVersion**](https://msdn.microsoft.com/library/windows/hardware/ff568329) function is not available in NetDMA version 1.0. To avoid using a function import that might stop the driver from loading, a NetDMA 1.1 or later provider driver must verify the presence of **NetDmaGetVersion** before it calls **NetDmaGetVersion** to obtain the NetDMA version. To call **NetDmaGetVersion**, first call the [**NdisGetRoutineAddress**](https://msdn.microsoft.com/library/windows/hardware/ff562665) function to get the entry point and then, if **NetDmaGetVersion** is available, call **NetDmaGetVersion** at the entry point that **NdisGetRoutineAddress** provided. If the provider driver cannot get the address of **NetDmaGetVersion**, the supported NetDMA interface must be version 1.0.
 
- 
+ 
 
 NetDMA 2.0 includes power management extensions for NetDMA 1.1 and later NetDMA providers. Because a NetDMA 1.0 provider cannot notify the NetDMA interface or NetDMA clients that it is entering a low-power state, the NetDMA 1.0 driver must ensure that the DMA engine remains available while a client continues posting DMA copy requests.
 
@@ -40,9 +40,9 @@ A **NetDmaNotificationProviderPowerDown** notification before the DMA device tra
 
 A **NetDmaNotificationProviderPowerUp** notification after the DMA device is in the working power state enables the NetDMA interface to re-initialize the DMA engine with a "Start" operation on all of the allocated channels on that provider and then notify the NetDMA clients that they can start using the DMA services on all of the channels that are allocated on that provider.
 
- 
+ 
 
- 
+ 
 
 
 

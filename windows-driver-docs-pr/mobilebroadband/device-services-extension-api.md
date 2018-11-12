@@ -32,9 +32,9 @@ The Windows wireless platform supports APIs for the following app functions:
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

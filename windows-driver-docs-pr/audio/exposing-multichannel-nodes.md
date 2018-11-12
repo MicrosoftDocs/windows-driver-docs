@@ -46,7 +46,7 @@ In particular, no mechanism exists for explicitly querying a node for the number
 
     **Note**   The KSPROPERTY\_MEMBER\_FLAG\_BASICSUPPORT\_UNIFORM flag is not used by the Windows Vista operating system.
 
-     
+     
 
 In miniport drivers for Windows XP and later, the property handler for a multichannel volume node should set the KSPROPERTY\_MEMBER\_FLAG\_BASICSUPPORT\_MULTICHANNEL bit in response to a KSPROPERTY\_AUDIO\_VOLUMELEVEL basic-support query. The handler returns an array of [**KSPROPERTY\_STEPPING\_LONG**](https://msdn.microsoft.com/library/windows/hardware/ff565631) structures--one for each channel exposed by the node--and sets **MembersSize** to **sizeof**(KSPROPERTY\_STEPPING\_LONG). Each array element describes a channel's minimum and maximum volume levels and the delta between successive values in the range. A different range can be specified for each individual channel so that channels with non-uniform ranges can be exposed correctly. For example, a subwoofer channel might have a range that differs from that of the other channels.
 
@@ -160,9 +160,9 @@ Either mask contains four bits that specify the speaker positions of the four ch
 
 If the node's basic-support handler sets the KSPROPERTY\_MEMBER\_FLAG\_BASICSUPPORT\_UNIFORM flag bit, the sliders shown in the **Speaker Volume** dialog move in unison with changes made to any single slider.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,7 +51,7 @@ Specifies the number of the desired callback frame. This frame is noted in the d
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -64,9 +64,9 @@ Remarks
 
 If the system has not experienced a system trap, this extension will not produce useful data.
 
- 
+ 
 
- 
+ 
 
 
 

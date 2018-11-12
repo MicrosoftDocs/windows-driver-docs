@@ -33,7 +33,6 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
          NDIS_SUPPORTED_PAUSE_FUNCTIONS PauseFunctions;
          ULONG AutoNegotiationFlags;
     } NDIS_LINK_PARAMETERS, *PNDIS_LINK_PARAMETERS;
-  
 ```
 
 
@@ -86,9 +85,9 @@ The miniport driver should auto-negotiate the support for pause frames with the 
 Remarks
 -------
 
-**Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
+**Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
 
- 
+
 
 If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication to notify NDIS and overlying drivers of the new link state.
 
@@ -117,9 +116,9 @@ Requirements
 
 [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md)
 
- 
 
- 
+
+
 
 
 

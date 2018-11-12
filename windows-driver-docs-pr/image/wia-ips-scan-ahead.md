@@ -25,7 +25,7 @@ The **WIA\_IPS\_SCAN\_AHEAD** property is used to enable scan ahead in the hardw
 
 **Note**  This property replaces [**WIA\_DPS\_SCAN\_AHEAD\_PAGES**](wia-dps-scan-ahead-pages.md), which is now obsolete.
 
- 
+ 
 
 Property Type: VT\_I4
 
@@ -61,7 +61,7 @@ The following table describes the valid values for the **WIA\_IPS\_SCAN\_AHEAD**
 </tbody>
 </table>
 
- 
+ 
 
 This property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER) and is optional.
 
@@ -86,9 +86,9 @@ Requirements
 
 [**WIA\_DPS\_SCAN\_AHEAD\_PAGES**](wia-dps-scan-ahead-pages.md)
 
- 
+ 
 
- 
+ 
 
 
 

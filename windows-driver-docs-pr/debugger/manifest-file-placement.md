@@ -30,9 +30,9 @@ LogViewer is more flexible than Logger. It will search for Main.h in the followi
 
 All additional manifest files must reside in the same directory as Main.h.
 
- 
+ 
 
- 
+ 
 
 
 

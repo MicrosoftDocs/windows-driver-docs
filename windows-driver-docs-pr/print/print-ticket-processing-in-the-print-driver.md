@@ -22,9 +22,9 @@ GDI-based print drivers continue to use the [**DEVMODEW**](https://msdn.microsof
 
 For more information about implementing Print Ticket processing in the print driver, see [Print Ticket Support in the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The device address of the target Wi-Fi Direct device. |
 | UINT8                                             | The Wi-Fi Direct Dialog Token for this transaction.   |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,7 +72,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -93,7 +93,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ContentTypesSupported</strong>](contenttypessupported.md)</p></td>
+<td><p><a href="contenttypessupported.md" data-raw-source="[&lt;strong&gt;ContentTypesSupported&lt;/strong&gt;](contenttypessupported.md)"><strong>ContentTypesSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -108,9 +108,9 @@ You can both extend and subset the allowed values for this element.
 
 [**ContentTypesSupported**](contenttypessupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

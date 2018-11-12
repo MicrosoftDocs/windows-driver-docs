@@ -23,11 +23,11 @@ Starting with Windows Vista, User Account Control (UAC) enables users to run at
 
 **Note**   Starting with Windows 7, if UAC is set to the default setting (Notify me only when programs try to make changes to my computer) or a lower setting, the operating system does not display the prompt for users with administrative privileges when it processes finish-install actions.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

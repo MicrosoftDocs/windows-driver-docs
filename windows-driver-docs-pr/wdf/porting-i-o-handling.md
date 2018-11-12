@@ -24,9 +24,9 @@ KMDF drivers handle I/O requests by creating one or more queues and associating 
 
 -   [Revise code that issues I/O requests](revise-code-that-issues-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

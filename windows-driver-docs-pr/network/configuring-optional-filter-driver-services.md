@@ -25,9 +25,9 @@ Filter drivers can also call **NdisSetOptionalHandlers** to set the some *Filter
 
 If the filter driver calls **NdisSetOptionalHandlers** from *FilterRestart*, the configuration changes only affect the filter module that NDIS is restarting. The configuration of other filter modules is not affected.
 
- 
+ 
 
- 
+ 
 
 
 

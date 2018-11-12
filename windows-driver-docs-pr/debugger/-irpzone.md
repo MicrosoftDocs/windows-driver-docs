@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!irpzone** extension command is obsolete. Use [**!irpfind**](-irpfind.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

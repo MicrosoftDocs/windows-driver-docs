@@ -52,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ServiceCategoryList](servicecategorylist.md)</p></td>
-<td><p>The [ServiceCategoryList](servicecategorylist.md) element specifies the functional categories that apply to the service.</p></td>
+<td><p><a href="servicecategorylist.md" data-raw-source="[ServiceCategoryList](servicecategorylist.md)">ServiceCategoryList</a></p></td>
+<td><p>The <a href="servicecategorylist.md" data-raw-source="[ServiceCategoryList](servicecategorylist.md)">ServiceCategoryList</a> element specifies the functional categories that apply to the service.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -98,9 +98,9 @@ The following discusses the use of the [ServiceCategoryList](servicecategorylist
 
 The ServiceCategory element is required.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ NDIS drivers call the [**NdisFreeReassembledNetBufferList**](https://msdn.micros
 
 [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

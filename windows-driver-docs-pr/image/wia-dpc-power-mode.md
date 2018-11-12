@@ -59,7 +59,7 @@ The following table describes the constants that are valid with WIA\_DPC\_POWER\
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -81,9 +81,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

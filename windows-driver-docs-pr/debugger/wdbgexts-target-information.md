@@ -23,9 +23,9 @@ The debugger caches some information obtained from the target. The function [**G
 
 For a more powerful target API, see [Target Information](target-information.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

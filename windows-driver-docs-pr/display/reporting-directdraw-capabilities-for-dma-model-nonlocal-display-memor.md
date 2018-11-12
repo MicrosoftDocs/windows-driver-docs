@@ -25,9 +25,9 @@ A DMA model driver has different capabilities for nonlocal display memory than f
 
 It is important to note that for this release of DirectDraw, a driver can only specify the capabilities for blts from nonlocal display memory to local display memory. Transfers from local display memory to nonlocal display memory, and from nonlocal display memory to nonlocal display memory, are always emulated by the DirectDraw HEL. This restriction may be relaxed in a future release.
 
- 
+ 
 
- 
+ 
 
 
 

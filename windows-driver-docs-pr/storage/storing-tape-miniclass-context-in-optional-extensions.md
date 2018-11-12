@@ -36,9 +36,9 @@ A tape miniclass driver can store context in two optional extensions:
 
     All tape miniclass routines that handle device-specific aspects of device-control requests are given a pointer to the command extension when they are called. The tape class driver allocates storage for the command extension before calling such a miniclass routine. The miniclass routine initializes the command extension on the first call to process a given request; that is, when the *CallNumber* parameter to the routine equals zero. The command extension remains valid until the tape miniclass routine returns either TAPE\_STATUS\_SUCCESS or an error status.
 
- 
+ 
 
- 
+ 
 
 
 

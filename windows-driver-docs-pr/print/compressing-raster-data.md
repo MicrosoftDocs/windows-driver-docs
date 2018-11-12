@@ -37,9 +37,9 @@ For more information about raster data compression, see the following topics:
 
 [Using Customized Compression](using-customized-compression.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,9 +57,9 @@ For additional rules pertaining to strings defined in resource files, refer to t
 
 For more information about specifying printer command escape sequences, see [Command String Format](command-string-format.md).
 
- 
+ 
 
- 
+ 
 
 
 

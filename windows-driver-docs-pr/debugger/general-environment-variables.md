@@ -30,7 +30,7 @@ The following table lists the environment variables that can be used in both use
 <tbody>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUGGER_EXTENSION_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies the path that the debugger will first search for extension DLLs. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).</p></td>
+<td align="left"><p>Specifies the path that the debugger will first search for extension DLLs. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see <a href="loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_EXECUTABLE_IMAGE_PATH = <em>Path</em></p></td>
@@ -38,23 +38,23 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_SOURCE_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies the path containing the source files for the target. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, and for other ways to change this path, see [Source Path](source-path.md).</p></td>
+<td align="left"><p>Specifies the path containing the source files for the target. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, and for other ways to change this path, see <a href="source-path.md" data-raw-source="[Source Path](source-path.md)">Source Path</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_SYMBOL_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies the root of a directory tree containing the symbol files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).</p></td>
+<td align="left"><p>Specifies the root of a directory tree containing the symbol files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, and for other ways to change this path, see <a href="symbol-path.md" data-raw-source="[Symbol Path](symbol-path.md)">Symbol Path</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_ALT_SYMBOL_PATH = <em>Path</em></p></td>
-<td align="left"><p>Specifies an alternate symbol path searched before _NT_SYMBOL_PATH. This is useful for keeping private versions of symbol files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see [Symbol Path](symbol-path.md).</p></td>
+<td align="left"><p>Specifies an alternate symbol path searched before _NT_SYMBOL_PATH. This is useful for keeping private versions of symbol files. <em>Path</em> can contain a drive letter followed by a colon (<strong>:</strong>). Separate multiple directories with semicolons (<strong>;</strong>). For details, see <a href="symbol-path.md" data-raw-source="[Symbol Path](symbol-path.md)">Symbol Path</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_SYMBOL_PROXY = <em>Proxy</em><strong>:</strong><em>Port</em></p></td>
-<td align="left"><p>Specifies the proxy server to be used by SymSrv. For details, see [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).</p></td>
+<td align="left"><p>Specifies the proxy server to be used by SymSrv. For details, see <a href="firewalls-and-proxy-servers.md" data-raw-source="[Firewalls and Proxy Servers](firewalls-and-proxy-servers.md)">Firewalls and Proxy Servers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUG_HISTORY_SIZE = <em>Number</em></p></td>
-<td align="left"><p>Specifies the number of commands in the command history that can be accessed during remote debugging. Because commands vary in length, the number of lines available may not exactly match <em>Number</em>. For details, and for other ways to change this number, see [Using Debugger Commands](using-debugger-commands.md).</p></td>
+<td align="left"><p>Specifies the number of commands in the command history that can be accessed during remote debugging. Because commands vary in length, the number of lines available may not exactly match <em>Number</em>. For details, and for other ways to change this number, see <a href="using-debugger-commands.md" data-raw-source="[Using Debugger Commands](using-debugger-commands.md)">Using Debugger Commands</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_DEBUG_LOG_FILE_OPEN = <em>Filename</em></p></td>
@@ -66,7 +66,7 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_EXPR_EVAL = {<strong>masm</strong> | <strong>c++</strong>}</p></td>
-<td align="left"><p>Specifies the default expression evaluator. If <strong>masm</strong> is specified, MASM expression syntax will be used. If <strong>c++</strong> is specified, C++ expression syntax will be used. MASM expression syntax is the default. See [Evaluating Expressions](evaluating-expressions.md) for details.</p></td>
+<td align="left"><p>Specifies the default expression evaluator. If <strong>masm</strong> is specified, MASM expression syntax will be used. If <strong>c++</strong> is specified, C++ expression syntax will be used. MASM expression syntax is the default. See <a href="evaluating-expressions.md" data-raw-source="[Evaluating Expressions](evaluating-expressions.md)">Evaluating Expressions</a> for details.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NO_DEBUG_HEAP</p></td>
@@ -86,16 +86,16 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="odd">
 <td align="left"><p>SRCSRV_INI_FILE</p></td>
-<td align="left"><p>Specifies the path and name of the configuration file used by [SrcSrv](srcsrv.md). By default, the path is the srcsrv subdirectory of the Debugging Tools for Windows installation directory, and the file name is Srcsrv.ini. See [Source Indexing](source-indexing.md) for details.</p></td>
+<td align="left"><p>Specifies the path and name of the configuration file used by <a href="srcsrv.md" data-raw-source="[SrcSrv](srcsrv.md)">SrcSrv</a>. By default, the path is the srcsrv subdirectory of the Debugging Tools for Windows installation directory, and the file name is Srcsrv.ini. See <a href="source-indexing.md" data-raw-source="[Source Indexing](source-indexing.md)">Source Indexing</a> for details.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

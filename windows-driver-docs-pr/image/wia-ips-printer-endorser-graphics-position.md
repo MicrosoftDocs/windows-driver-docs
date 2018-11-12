@@ -93,7 +93,7 @@ The following table describes the constants that are valid with **WIA\_IPS\_PRIN
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_PRINTER\_ENDORSER\_ GRAPHICS\_DEVICE\_DEFAULT value is the required default value that all Imprinter/Endorser items must support when this property is supported.
 
@@ -115,9 +115,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

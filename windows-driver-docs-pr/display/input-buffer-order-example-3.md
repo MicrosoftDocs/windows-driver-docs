@@ -65,13 +65,13 @@ The VMR initiates a call to the driver's *DeinterlaceBltEx* function to use the 
 </tbody>
 </table>
 
- 
+ 
 
 In the change from example 2 to 3, the video stream changed from interlaced to progressive and an additional video substream became active.
 
- 
+ 
 
- 
+ 
 
 
 

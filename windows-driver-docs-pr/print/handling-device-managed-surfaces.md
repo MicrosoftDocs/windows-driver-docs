@@ -72,9 +72,9 @@ The steps involved in displaying text on a device-managed surface are as follows
 
 6.  After [**IPrintOemDriverUni::DrvUniTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff553132) returns, the [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277) hooking function must draw underlines and strike-throughs, based on the rectangles specified by the **DrvTextOut** function's *prclExtra* parameter, using vector commands (if supported).
 
- 
+ 
 
- 
+ 
 
 
 

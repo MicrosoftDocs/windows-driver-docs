@@ -62,9 +62,9 @@ If the driver determines that it is safe for the user to remove the device, the 
 
 For information about the order in which the framework calls a driver's event callback functions when stopping a device for removal, see [A User Unplugs a Device](a-user-unplugs-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

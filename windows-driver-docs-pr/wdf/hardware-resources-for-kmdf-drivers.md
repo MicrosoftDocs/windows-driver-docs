@@ -32,9 +32,9 @@ A system's hardware resources are the I/O ports, interrupt vectors, direct memor
 -   [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md)
 -   [Reading and Writing to Device Registers](reading-and-writing-to-device-registers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ In some cases, the sequences defined by the NFC CX might not be sufficient for N
 
 -   Because per-channel flow control is performed in the NFC CX’s logical channel management, the NFC client driver shouldn’t perform any logic that would impact this. Therefore, it is recommended that the NFC client driver doesn’t send any additional data packets on logical channels opened by CX without its knowledge.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

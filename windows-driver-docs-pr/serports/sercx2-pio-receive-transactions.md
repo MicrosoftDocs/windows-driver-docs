@@ -54,9 +54,9 @@ SerCx2 additionally uses ready notifications to efficiently manage time-outs dur
 
 If the ready notification is enabled when the read request times out or is canceled, SerCx2 calls the [*EvtSerCx2PioReceiveCancelReadyNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265210) event callback function to cancel the pending notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call [**SerCx2PioReceiveReady**](https://msdn.microsoft.com/library/windows/hardware/dn265266). A return value of **FALSE** indicates that the controller driver has already called or will soon call **SerCx2PioReceiveReady**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ Setting up a direct I/O transfer varies slightly, depending on whether DMA or PI
 
 Drivers must take steps to maintain cache coherency during DMA and PIO transfers. For more information, see [Maintaining Cache Coherency](maintaining-cache-coherency.md).
 
- 
+ 
 
- 
+ 
 
 
 

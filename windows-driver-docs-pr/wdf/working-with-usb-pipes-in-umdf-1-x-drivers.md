@@ -111,9 +111,9 @@ If your driver's USB target [completes](completing-i-o-requests.md) an I/O reque
 
 5.  Resend the I/O request that failed, and all I/O requests that followed the failed request.
 
- 
+ 
 
- 
+ 
 
 
 

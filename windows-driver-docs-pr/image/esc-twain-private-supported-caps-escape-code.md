@@ -17,7 +17,7 @@ In order to determine private TWAIN-supported capabilities, a TWAIN application 
 
 **Note**   The **Escape** method in this example is the same as the one shown in [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md), although the focus of each sample is a different escape code.
 
- 
+ 
 
 ```cpp
 STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
@@ -168,9 +168,9 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

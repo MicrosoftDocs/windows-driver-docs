@@ -41,7 +41,7 @@ The **Show loader snaps** flag captures detailed information about the loading a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +49,9 @@ For system-wide (registry or kernel flag), this flag displays information about 
 
 For per-process (image file), this flag displays information about loading and unloading of DLLs.
 
- 
+ 
 
- 
+ 
 
 
 

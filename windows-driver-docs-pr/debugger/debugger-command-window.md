@@ -18,7 +18,7 @@ The Debugger Command window is the primary debugging information window in WinDb
 
 **Note**   This window displays "Command" in the title bar. However, this documentation always refers to this window as "the Debugger Command window" to avoid confusing it with the Command Prompt windows that are used to issue Microsoft MS-DOS commands.
 
- 
+ 
 
 ### <span id="opening_the_debugger_command_window"></span><span id="OPENING_THE_DEBUGGER_COMMAND_WINDOW"></span>Opening the Debugger Command Window
 
@@ -52,9 +52,9 @@ The Debugger Command window contains a shortcut menu with additional commands. T
 
 -   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

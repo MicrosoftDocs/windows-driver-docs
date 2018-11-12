@@ -93,7 +93,7 @@ A number that represents the major version number for the operating system. The 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="osminorversion"></a>*OSMinorVersion*  
 A number that represents the minor version number for the operating system. The following table defines the minor version for the Windows operating systems.
@@ -157,7 +157,7 @@ A number that represents the minor version number for the operating system. The 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="producttype"></a>*ProductType*
 
@@ -229,9 +229,9 @@ The following topics provide samples of how to decorate platform extensions for 
 
 [Sample INF File for Device Installation on Multiple Versions of Windows](sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

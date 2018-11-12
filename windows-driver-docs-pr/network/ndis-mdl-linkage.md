@@ -19,7 +19,7 @@ Syntax
 
 ```ManagedCPlusPlus
 PVOID NDIS_MDL_LINKAGE(
-   PMDL _Mdl
+   PMDL _Mdl
 );
 ```
 
@@ -72,9 +72,9 @@ Requirements
 
 [**NDIS\_BUFFER\_LINKAGE**](https://msdn.microsoft.com/library/windows/hardware/ff556919)
 
- 
+ 
 
- 
+ 
 
 
 

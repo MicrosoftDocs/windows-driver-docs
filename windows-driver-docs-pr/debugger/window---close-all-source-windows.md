@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 Click **Close All Source Windows** on the **Window** menu to close all [Source windows](source-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

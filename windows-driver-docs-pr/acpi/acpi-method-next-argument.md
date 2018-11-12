@@ -19,7 +19,7 @@ Syntax
 
 ```cpp
  ACPI_METHOD_NEXT_ARGUMENT(
-    Argument
+    Argument
 );
 ```
 

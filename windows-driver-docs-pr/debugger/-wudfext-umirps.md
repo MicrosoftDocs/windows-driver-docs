@@ -54,7 +54,7 @@ Displays details about the pending IRPs.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +88,9 @@ Number of pending IRPS: 0xc8
 
 To determine the corresponding kernel-mode IRP, use the [**!wudfext.wudfdownkmirp**](-wudfext-wudfdownkmirp.md) extension. Alternatively, you can use the values in the **UniqueId** and **KernelIrp** columns to match a UMDF IRP (or UM IRP) to a corresponding kernel IRP. You can pass the values in the **CWudfIrp** column to the [**!wudfext.umirp**](-wudfext-umirp.md) extension to determine the framework **IWDFRequest** objects that each layer in the device stack can access.
 
- 
+ 
 
- 
+ 
 
 
 

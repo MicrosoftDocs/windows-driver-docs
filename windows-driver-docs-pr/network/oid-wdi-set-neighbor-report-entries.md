@@ -18,7 +18,7 @@ OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports rece
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports rece
 |---------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------|
 | [**WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/mt269133) | X                              |          | The list of neighbor reports. |
 
- 
+ 
 
 ## Set property results
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

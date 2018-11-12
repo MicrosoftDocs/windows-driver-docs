@@ -57,9 +57,9 @@ The key Windows routines for managing privileges within a file system are:
 
 -   [**SeAppendPrivileges**](https://msdn.microsoft.com/library/windows/hardware/ff554762)--this routine adds enabled privileges to an ACCESS\_STATE structure. Typically, a file system would use the ACCESS\_STATE passed to it during IRP\_MJ\_CREATE processing.
 
- 
+ 
 
- 
+ 
 
 
 

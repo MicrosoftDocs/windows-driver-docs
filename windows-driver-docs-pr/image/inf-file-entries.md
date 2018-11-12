@@ -31,13 +31,13 @@ The [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardw
 
 **Note**  It is not necessary to include *wiafbdrv.dll* in your **CopyFiles** directive.
 
- 
+ 
 
 The INF included with the WIA microdriver on the Windows Driver Kit (WDK) CD uses this new method to reference the microdriver.
 
- 
+ 
 
- 
+ 
 
 
 

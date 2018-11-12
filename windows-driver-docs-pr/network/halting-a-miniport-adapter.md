@@ -40,9 +40,9 @@ After [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

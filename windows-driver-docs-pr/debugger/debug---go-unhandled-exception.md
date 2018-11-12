@@ -20,9 +20,9 @@ Click **Go Unhandled Exception** on the **Debug** menu to resume execution on th
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md). For more information about exceptions and other events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

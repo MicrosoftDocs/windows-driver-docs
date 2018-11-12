@@ -34,37 +34,37 @@ GDI provides several services a driver can use to query the system about device 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngQueryDeviceAttribute</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564986)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564986" data-raw-source="[&lt;strong&gt;EngQueryDeviceAttribute&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564986)"><strong>EngQueryDeviceAttribute</strong></a></p></td>
 <td align="left"><p>Allows the driver to query the system about particular attributes of the device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngQueryFileTimeStamp</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564988)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564988" data-raw-source="[&lt;strong&gt;EngQueryFileTimeStamp&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564988)"><strong>EngQueryFileTimeStamp</strong></a></p></td>
 <td align="left"><p>Returns the time stamp of a file.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngQueryLocalTime</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564990)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564990" data-raw-source="[&lt;strong&gt;EngQueryLocalTime&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564990)"><strong>EngQueryLocalTime</strong></a></p></td>
 <td align="left"><p>Queries the local time.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngQueryPerformanceCounter</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564994)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564994" data-raw-source="[&lt;strong&gt;EngQueryPerformanceCounter&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564994)"><strong>EngQueryPerformanceCounter</strong></a></p></td>
 <td align="left"><p>Queries the performance counter.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngQueryPerformanceFrequency</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564996)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564996" data-raw-source="[&lt;strong&gt;EngQueryPerformanceFrequency&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564996)"><strong>EngQueryPerformanceFrequency</strong></a></p></td>
 <td align="left"><p>Queries the frequency of the performance counter.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngQuerySystemAttribute</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564997)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564997" data-raw-source="[&lt;strong&gt;EngQuerySystemAttribute&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564997)"><strong>EngQuerySystemAttribute</strong></a></p></td>
 <td align="left"><p>Queries processor or system-specific capabilities.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

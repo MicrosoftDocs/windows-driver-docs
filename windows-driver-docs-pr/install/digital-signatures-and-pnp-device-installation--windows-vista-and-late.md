@@ -67,7 +67,7 @@ Windows Vista and later versions of Windows include the following features that 
 
     **Note**  Starting with Windows 7, the [AllSignersEqual group policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** group policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** group policy.
 
-     
+     
 
 Before installing a driver, Windows analyzes the [driver package's](driver-packages.md) digital signature. If a signature is present, Windows uses the signature to validate the files in the driver package. Based on the results of this analysis, Windows categorizes the digital signature as follows:
 
@@ -97,9 +97,9 @@ Whether Windows will preinstall a [driver package](driver-packages.md) depends o
 
 For more information about driver signatures and installation, see [Signature Categories and Driver Installation](signature-categories-and-driver-installation.md).
 
- 
+ 
 
- 
+ 
 
 
 

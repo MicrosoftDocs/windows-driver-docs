@@ -29,9 +29,9 @@ The WIA device driver interface (DDI) supplies the following interfaces and func
 
 -   [IWiaLog COM interface](iwialog-com-interface.md), which provides methods and macros that enable WIA minidrivers to log messages to a diagnostic log file.
 
- 
+ 
 
- 
+ 
 
 
 

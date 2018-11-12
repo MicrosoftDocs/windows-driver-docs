@@ -47,13 +47,13 @@ The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length inf
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564408) or [<strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564418)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564408" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564408)"><strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564418" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564418)"><strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a LONG that specifies a camera's focal length.
 
@@ -97,9 +97,9 @@ Requirements
 
 [**KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE**](ksproperty-cameracontrol-zoom-relative.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ All *Cancel* routines must follow these guidelines:
 -   Never call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with an IRP while holding a spin lock. Attempting to complete an IRP while holding a spin lock can cause deadlocks.
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 Source code for Plotui.dll, the printer interface DLL for the [Microsoft plotter driver](microsoft-plotter-driver.md), is provided with the Windows Driver Kit (WDK). The code is located in the \\src\\print\\msplot subdirectory of the directory tree that contains the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

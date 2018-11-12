@@ -18,9 +18,9 @@ The MSiSCSI\_AdapterEvent class is unpublished and is defined in *Operations.mof
 
 When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_AdapterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562968) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

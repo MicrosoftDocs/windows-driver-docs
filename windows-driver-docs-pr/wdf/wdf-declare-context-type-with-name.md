@@ -21,8 +21,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(
-    _contexttype,
-    _castingfunction
+    _contexttype,
+    _castingfunction
 );
 ```
 
@@ -95,7 +95,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -119,9 +119,9 @@ Requirements
 
 [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

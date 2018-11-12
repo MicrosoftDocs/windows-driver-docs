@@ -32,9 +32,9 @@ if (volCtx != NULL) {
 
 If the call to [**FltGetVolumeContext**](https://msdn.microsoft.com/library/windows/hardware/ff543189) is successful, the *Context* parameter receives the address of the caller's volume context. **FltGetVolumeContext** increments the reference count on the *Context* pointer. Thus, when this pointer is no longer needed, the minifilter driver must release it by calling [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # <span id="debugger.performing_kernel-mode_debugging_using_visual_studio"></span>Kernel-Mode Debugging in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -26,9 +26,9 @@ To perform kernel-mode debugging in Microsoft Visual Studio:
 
 [Debugging Using Visual Studio](debugging-using-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ A device metadata package that is localized for the Japanese language must be co
 
 For more information, see [Device Metadata Store](device-metadata-store.md).
 
- 
+ 
 
- 
+ 
 
 
 

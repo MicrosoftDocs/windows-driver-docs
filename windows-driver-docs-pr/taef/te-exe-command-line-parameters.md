@@ -127,7 +127,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Setup: Test1Setup
    Teardown: Test1Teardown
    Property[ThreadingModel] = STA
-            
+
  WEX::UnitTests::Test2
   WEX::UnitTests::Test2::Example1
    Property[ThreadingModel] = MTA
@@ -180,7 +180,6 @@ You can grab x as one of several supported types in your test code. For example,
                 String xString;
                 RuntimeParameters::TryGetValue(L"x", x);
                 RuntimeParameters::TryGetValue(L"x", xString);
-            
 ```
 
 For more information, please visit the [TAEF.Runtime Parameters](runtime-parameters.md) help page.
@@ -507,9 +506,9 @@ In 'stress' test mode, TAEF will run tests indefinitely, until Ctrl+C is entered
 
 For detailed information and other parameters supported in this mode, see the documentation [here](test-modes.md).
 
- 
 
- 
+
+
 
 
 

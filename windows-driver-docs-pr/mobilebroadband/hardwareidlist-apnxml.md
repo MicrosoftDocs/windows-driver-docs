@@ -41,13 +41,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareId](hardwareid-apnxml.md)</p></td>
+<td><p><a href="hardwareid-apnxml.md" data-raw-source="[HardwareId](hardwareid-apnxml.md)">HardwareId</a></p></td>
 <td><p>An operator hardware ID.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -65,13 +65,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Operator](operator.md)</p></td>
+<td><p><a href="operator.md" data-raw-source="[Operator](operator.md)">Operator</a></p></td>
 <td><p>Specifies the details for an operator in the APN database.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -91,9 +91,9 @@ There are no attributes.
 
 The HardwareIdList element is required.
 
- 
+ 
 
- 
+ 
 
 
 

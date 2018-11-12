@@ -24,9 +24,9 @@ This section includes the following topics:
 
 For information about using GUIDs in user-mode applications, see Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

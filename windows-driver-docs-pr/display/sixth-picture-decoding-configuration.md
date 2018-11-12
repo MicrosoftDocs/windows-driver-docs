@@ -40,11 +40,11 @@ The sixth configuration in this set (a configuration preferred over the fifth in
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

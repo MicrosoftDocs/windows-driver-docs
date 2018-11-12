@@ -46,9 +46,9 @@ The Microsoft Symbol Server provides compressed versions of the symbol files. Th
 
 Refer to the Debugger topic [SymStore](symstore.md) for information on using SymStore.exe /compress to store your own symbols compressed on your symbol server.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ Because the **removememory** option makes more efficient use of system memory, i
 
 When you are finished testing, you can remove the **removememory** and **truncatememory** boot entry options using the [**BCDEdit /deletevalue**](https://msdn.microsoft.com/library/windows/hardware/jj856916) command.
 
- 
+ 
 
- 
+ 
 
 
 

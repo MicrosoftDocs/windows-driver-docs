@@ -52,9 +52,9 @@ Even if a driver that supports the Direct3D version 11 DDI does not support the 
 
 The Direct3D version 11 API also informs the driver whether the application uses multiple threads through the D3D11DDI\_CREATEDEVICE\_FLAG\_SINGLETHREADED flag. If this flag is present in the **Flags** member of the [**D3D10DDIARG\_CREATEDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff541664) structure when a display device is created through a call to the driver's [**CreateDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540635) function, the driver can determine that no deferred contexts are created and that the driver is not required to synchronize, as concurrent creates do not occur.
 
- 
+ 
 
- 
+ 
 
 
 

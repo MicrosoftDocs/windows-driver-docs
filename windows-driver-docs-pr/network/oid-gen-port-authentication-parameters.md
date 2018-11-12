@@ -52,9 +52,9 @@ Requirements
 
 [**NDIS\_PORT\_AUTHENTICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566788)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Image acquisition software can call [**IStiDevice::Subscribe**](https://msdn.mic
 
 When the image acquisition software has finished using the **IStiDevice** interface, it must call [**IStiDevice::Release**](https://msdn.microsoft.com/library/windows/hardware/ff543765).
 
- 
+ 
 
- 
+ 
 
 
 

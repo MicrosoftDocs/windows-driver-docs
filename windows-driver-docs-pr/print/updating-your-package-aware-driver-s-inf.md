@@ -29,9 +29,9 @@ Second, use the [**INF CopyINF directive**](https://msdn.microsoft.com/library/w
 
 After completing these steps, the driver should be ready to test. During PnP installation, the installer will discover the new package-aware driver and read the associated INF file. The CopyINF directive will force the updated core driver package to be loaded into the driver store, and the rest of the package-aware driver installation will proceed.
 
- 
+ 
 
- 
+ 
 
 
 

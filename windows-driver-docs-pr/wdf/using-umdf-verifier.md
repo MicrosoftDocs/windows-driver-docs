@@ -20,7 +20,7 @@ UMDF Verifier causes failures in UMDF driver code to *bug check* the host proces
 
     **Note**  Starting in UMDF 2.15, the log directory is *%ProgramData%*\\Microsoft\\WDF.
 
-     
+     
 
 -   Creates an [error report](how-umdf-reports-errors.md) for Microsoft (opt-in).
 
@@ -47,7 +47,7 @@ You can manually enable UMDF Verifier by setting **VerifierOn** to a nonzero val
 
 **Note**  The existence of a **VerifierOn** value at all, even set to zero, overrides the linkage with Application Verifier. As a result, we recommend deleting the value if you're not forcing it on, rather than setting it to zero.
 
- 
+ 
 
 To determine whether UMDF Verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) and use the [**!wdfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff565724) debugger extension command:
 
@@ -85,9 +85,9 @@ This value is located in the *DefaultHostProcessGuid* subkey of the **HKEY\_LOCA
 
 In addition to the registry values listed above, UMDF 2.0 and later drivers can also use many of the registry values listed in [Using KMDF Verifier](using-kmdf-verifier.md).
 
- 
+ 
 
- 
+ 
 
 
 

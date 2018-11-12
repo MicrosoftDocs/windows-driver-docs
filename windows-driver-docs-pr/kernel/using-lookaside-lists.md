@@ -82,9 +82,9 @@ Calls to **ExFreeToLookasideListEx** store previously allocated entries in the l
 
 Similar guidelines apply to a lookaside list that uses a **PAGED\_LOOKASIDE\_LIST** or **NPAGED\_LOOKASIDE\_LIST** structure.
 
- 
+ 
 
- 
+ 
 
 
 

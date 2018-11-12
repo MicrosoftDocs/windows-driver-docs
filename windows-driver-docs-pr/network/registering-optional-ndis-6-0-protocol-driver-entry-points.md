@@ -19,9 +19,9 @@ NDIS calls the [*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows
 
 For more information about optional services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

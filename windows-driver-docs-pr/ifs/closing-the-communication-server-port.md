@@ -21,9 +21,9 @@ If the minifilter driver previously opened a kernel-mode communication server po
 
 If a user-mode application has an open connection to the communication server port, any client port for that connection will remain open after [**FltCloseCommunicationPort**](https://msdn.microsoft.com/library/windows/hardware/ff541871) returns. However, the filter manager will close any client ports when the minifilter driver is unloaded.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ For send operations, NDIS allocates memory if there isn't enough *unused data sp
 
 For the receive return case, NDIS simply adjusts the **DataOffset** and **DataLength** accordingly. The retreat operation reverses the advance operation that took place during receive processing. After the retreat operation, the *used data space* contains the header data that underlying drivers used during receive processing.
 
- 
+ 
 
- 
+ 
 
 
 

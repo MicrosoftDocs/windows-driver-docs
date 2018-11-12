@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPE to retrieve the value that specifies the 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,11 +59,11 @@ Use the settings menu to set the source and symbol path as well as choose the li
 Use *About* to display build version information for the debugger. You can use also use this screen to view the Microsoft privacy statement.
 
 ---
- 
+ 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

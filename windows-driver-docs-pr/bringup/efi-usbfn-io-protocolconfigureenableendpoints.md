@@ -73,7 +73,7 @@ The function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +87,9 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

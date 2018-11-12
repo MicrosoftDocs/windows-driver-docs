@@ -28,9 +28,9 @@ If you have an existing kernel debugging session and need to discover whether yo
 
 After Secure Mode has been activated, it cannot be turned off. Even ending the debugging session will not turn it off. Secure Mode persists as long as the debugger itself is running.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ Requirements
 
 [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](ndis-status-receive-filter-current-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

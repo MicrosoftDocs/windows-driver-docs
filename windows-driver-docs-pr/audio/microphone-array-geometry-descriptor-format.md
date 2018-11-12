@@ -169,7 +169,7 @@ Information about USB audio device geometry must be provided in a standard forma
 <td align="left"><p>Microphone definitions 1 to n-2.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>34+((n-1)*12)</p></td>
+<td align="left"><p>34+((n-1)<em>12)</p></td>
 <td align="left"><p>wMicType(n-1)</p></td>
 <td align="left"></td>
 <td align="left"><p>Number</p></td>
@@ -183,35 +183,35 @@ Information about USB audio device geometry must be provided in a standard forma
 <p>0F - FF: Vendor defined</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>36+((n-1)*12)</p></td>
+<td align="left"><p>36+((n-1)</em>12)</p></td>
 <td align="left"><p>wXCoordinate(n-1)</p></td>
 <td align="left"></td>
 <td align="left"><p>Number</p></td>
 <td align="left"><p>The x-coordinate of microphone n-1.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>38+((n-1)*12)</p></td>
+<td align="left"><p>38+((n-1)<em>12)</p></td>
 <td align="left"><p>wYCoordinate(n-1)</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Number</p></td>
 <td align="left"><p>The y-coordinate of microphone n-1.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>40+((n-1)*12)</p></td>
+<td align="left"><p>40+((n-1)</em>12)</p></td>
 <td align="left"><p>wZCoordinate(n-1)</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Number</p></td>
 <td align="left"><p>The z-coordinate of microphone n-1.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>42+((n-1)*12)</p></td>
+<td align="left"><p>42+((n-1)<em>12)</p></td>
 <td align="left"><p>wMicVertAngle(n-1)</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Number</p></td>
 <td align="left"><p>The MRA vertical angle of microphone n-1.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>44+((n-1)*12)</p></td>
+<td align="left"><p>44+((n-1)</em>12)</p></td>
 <td align="left"><p>wMicHorAngle(n-1)</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Number</p></td>
@@ -220,13 +220,13 @@ Information about USB audio device geometry must be provided in a standard forma
 </tbody>
 </table>
 
- 
+ 
 
 For a detailed example about how to use this information format in a descriptor for a 4-element microphone array, see Appendix A of the [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=306613) white paper.
 
 **Note**  
 
- 
+ 
 
 -   When you include a version number in the microphone array information, it allows the descriptor to be updated after the original specifications are implemented. The version number is a BCD value. For example, the current version (1.0) is represented as 0x0100.
 
@@ -240,9 +240,9 @@ For a detailed example about how to use this information format in a descriptor 
 
 -   Frequency values are expressed in Hz. The range of frequency values is bounded only by the size of the field from **wWorkFreqBandLo** to **wWorkFreqBandHi**.
 
- 
+ 
 
- 
+ 
 
 
 

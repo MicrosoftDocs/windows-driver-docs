@@ -31,7 +31,7 @@ A *set* operation should not require the user to unlock the device regardless if
 | Locked               | -                   | Source PIN not required for setting home provider            |
 | Locked               | Locked              | Source and Target PIN not required for setting home provider |
 
- 
+ 
 
 For more information about using this OID, see [WWAN Provider Operations](https://msdn.microsoft.com/library/windows/hardware/ff559101).
 
@@ -66,9 +66,9 @@ Requirements
 
 [WWAN Provider Operations](https://msdn.microsoft.com/library/windows/hardware/ff559101)
 
- 
+ 
 
- 
+ 
 
 
 

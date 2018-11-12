@@ -21,7 +21,7 @@ The following table shows the data fields. For more information about the data t
 |PKEY_SensorData_PedometerStepDuration_Ms|VT_I8|Required|The duration over which the pedometer counted steps. This value is expressed in milliseconds.|
 |PKEY_SensorData_PedometerReset|VT_BOOL|Required|Indicates that the pedometer has been reset.|
 
- 
+ 
 
 ## Related topics
 
@@ -30,9 +30,9 @@ The following table shows the data fields. For more information about the data t
 
 [**PEDOMETER\_STEP\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-pedometer_step_type)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ Filter drivers have the following characteristics:
 
 -   NDIS guarantees the availability of context space (see [NET\_BUFFER\_LIST\_CONTEXT structure](net-buffer-list-context-structure.md)) for filter drivers. Therefore, filter drivers are not required to include the code to copy buffers to obtain context space. For more information about how to manage buffers, see [Filter Driver Buffer Management](filter-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

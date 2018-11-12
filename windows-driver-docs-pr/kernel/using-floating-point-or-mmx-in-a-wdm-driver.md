@@ -86,9 +86,9 @@ The preceding calls are unnecessary on an x64 system and harmless when the XSTAT
 
 On x86-based systems, the FPU is reset to its default state by a call to FNINIT, upon return from [**KeSaveExtendedProcessorState**](https://msdn.microsoft.com/library/windows/hardware/ff553238).
 
- 
+ 
 
- 
+ 
 
 
 

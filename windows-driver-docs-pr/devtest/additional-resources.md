@@ -25,9 +25,9 @@ For more information about UWP device apps, see:
 -   [Printers: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241444)
 -   [Specialized devices: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241447)
 
- 
+ 
 
- 
+ 
 
 
 

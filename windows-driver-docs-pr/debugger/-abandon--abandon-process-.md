@@ -57,15 +57,15 @@ This command is only supported in Windows XP and later versions of Windows.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 If the target is left in a debugging state, a new debugger can be attached to it. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details. However, after a process has been abandoned once, it can never be restored to a running state without a debugger attached.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ Definitions used in this topic and its subtopics:
 </tbody>
 </table>
 
- 
+ 
 
 General information about Wi-Fi Direct Printing support is described in the [Wi-Fi Direct Printing Overview](wfd-overview.md). See [Wi-Fi Direct Printing Implementation](wfd-implementation.md) for details about how to implement Wi-Fi Direct Printing.
 
@@ -72,7 +72,7 @@ All existing Certification Requirements for Print devices apply including requir
 
 **Note**  The Wi-Fi Alliance Certification requirement is for Wi-Fi Direct. Wi-Fi Alliance Wi-Fi Direct Services is a separate specification and is not supported in Windows at this time.
 
- 
+ 
 
 ## Related Documents
 
@@ -82,9 +82,9 @@ Please see the following topics for related information:
 [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids)
 [PnP-X: Plug and Play Extensions for Windows Specification](https://msdn.microsoft.com/windows/hardware/gg463082)
 [Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](http://go.microsoft.com/fwlink/p/?LinkId=784967)
- 
+ 
 
- 
+ 
 
 
 

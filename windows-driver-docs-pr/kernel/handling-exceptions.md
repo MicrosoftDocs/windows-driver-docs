@@ -78,9 +78,9 @@ Note that structured exception handling is distinct from C++ exceptions. The ker
 
 For more information about structured exception handling, see the Microsoft Windows SDK, and the Visual Studio documentation.
 
- 
+ 
 
- 
+ 
 
 
 

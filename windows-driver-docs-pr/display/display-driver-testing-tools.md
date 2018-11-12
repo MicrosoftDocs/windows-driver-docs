@@ -21,9 +21,9 @@ In addition to providing a debugger, Windows 2000 and later operating system ver
 
 -   Slider control in Control Panel's Display program -- lets you dynamically change the accelerations that GDI will call in your driver. See [Dynamic Change of Permitted Driver Accelerations](dynamic-change-of-permitted-driver-accelerations.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

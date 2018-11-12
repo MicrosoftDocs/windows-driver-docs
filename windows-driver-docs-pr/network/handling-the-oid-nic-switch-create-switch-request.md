@@ -31,7 +31,7 @@ The PF miniport driver advertises its support of the SR-IOV interface when NDIS 
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface only supports the default NIC switch on the network adapter.
 
-     
+     
 
 -   NDIS sets the **NumVFs** member that specifies the number of PCIe Virtual Function (VFs) that can be allocated on the NIC switch.
 
@@ -49,7 +49,7 @@ When it receives the OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](ht
 
     **Note**  The default VPort is always created through an OID request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451815) and deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817). OID requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816) and [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818) are used for the creation and deletion of nondefault VPorts on the NIC switch.
 
-     
+     
 
 4.  The PF miniport driver that supports dynamic switch creation and configuration must enable SR-IOV virtualization on the switch by calling [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481). This call configures the **NumVFs** member and the **VF Enable** bit in the SR-IOV Extended Capability structure of the adapter's PCI Express (PCIe) configuration space.
 
@@ -57,7 +57,7 @@ When it receives the OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](ht
 
     **Note**  If the PF miniport driver supports static switch creation, it enables SR-IOV virtualization after it creates the switch when [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) is called.
 
-     
+     
 
 If the PF miniport driver successfully completesthe OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, it allows the following to occur:
 
@@ -69,11 +69,11 @@ If the PF miniport driver successfully completesthe OID method request of OID\_N
 
     **Note**  The network adapter must always create a default VPort from its pool for the PF.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

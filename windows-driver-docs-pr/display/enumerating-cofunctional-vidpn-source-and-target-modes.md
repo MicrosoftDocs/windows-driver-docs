@@ -149,9 +149,9 @@ The enumeration pivot can be one of the following:
 
 If the enumeration pivot is a mode set, then *DxgkDdkEnumVidPnCofuncModality* must leave that mode set unchanged. If the enumeration pivot is the scaling (rotation) transformation of a path, then *DxgkDdiEnumVidPnCofuncModality* must not change the scaling (rotation) support flags for that path.
 
- 
+ 
 
- 
+ 
 
 
 

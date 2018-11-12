@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  The instructions to enable this feature only apply to the WDK for Windows 8. For Windows 8.1, this feature has been integrated into Driver Verifier. On computers running Windows 8.1, use the [Systematic low resources simulation](systematic-low-resource-simulation.md) option.
 
- 
+ 
 
 The Stack Based Failure Injection option injects resource failures in kernel mode drivers. This option uses a special driver, KmAutoFail.sys, in conjunction with [Driver Verifier](driver-verifier.md) to penetrate driver error handling paths. Testing these paths has historically been very difficult. The Stack Based Failure Injection option injects resource failures in a predictable manner, which makes the issues it finds reproducible. Because the error paths are easy to reproduce, it also makes it easy to verify fixes to these issues.
 
@@ -26,7 +26,7 @@ You can activate the Stack Based Failure Injection feature for one or more drive
 
 **Important**  When you activate Stack Based Failure Injection on the test computer, make sure do not also select [Low Resources Simulation](low-resources-simulation.md).
 
- 
+ 
 
 -   **Using Driver Verifier Property page**
 
@@ -61,11 +61,11 @@ Most of the issues found with Stack Based Failure Injection result in bug checks
 
 **To run the debugger extension**
 
--   From the debugger command prompt, type the following command: **!***&lt;path&gt;\\***kmautofaildbg.dll.autofail**. For example, assuming debugger extensions are installed at c:\\dbgext and that kmautofail.pdb is in the symbol path, you would enter the following command:
+- From the debugger command prompt, type the following command: **!**<em>&lt;path&gt;\\</em>**kmautofaildbg.dll.autofail**. For example, assuming debugger extensions are installed at c:\\dbgext and that kmautofail.pdb is in the symbol path, you would enter the following command:
 
-    ```
-    !c:\dbgext\kmautofaildbg.dll.autofail
-    ```
+  ```
+  !c:\dbgext\kmautofaildbg.dll.autofail
+  ```
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected. Each entry looks something like the following, taken from a real test run. In the following example, Stack Based Failure Injection is enabled on Mydriver.sys
 
@@ -124,9 +124,9 @@ The second most common bug check occurs during cleanup. In this case, the driver
 
 Errors that cause the computer to become unresponsive are more difficult to diagnose, but the procedure to debug them is similar. These errors are often caused by reference count or spin lock issues. Fortunately, [Driver Verifier](driver-verifier.md) will catch many spin lock issues before they would lead to problems. In these cases, break into the debugger and use the debugger extension to dump the list of faults that have been injected by Stack Based Failure Injection. A quick look at the code around the latest failures might show a reference count that is taken before the failure but not released after. If not, look for a thread in your driver that is waiting on a spin lock, or for any reference count that is obviously wrong.
 
- 
+ 
 
- 
+ 
 
 
 

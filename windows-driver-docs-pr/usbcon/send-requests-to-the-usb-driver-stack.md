@@ -160,7 +160,6 @@ NTSTATUS SyncCompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 
     return STATUS_MORE_PROCESSING_REQUIRED;
 } 
-
 ```
 
 ## Complete example

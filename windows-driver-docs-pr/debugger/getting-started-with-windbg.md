@@ -345,9 +345,9 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -88,9 +88,9 @@ If the ***SubunitType*** field is available, the ***SubunitID*** field also is a
 
 For AV/C units that do not provide a ***SubunitType*** or ***SubunitID***, the device identifier string then consists of only the ***Vendor*** and ***Model*** fields, with no trailing ampersand (&).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,16 +48,16 @@ Specifies the processor. If *Processor* is omitted, information is displayed for
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The watchdog timer shuts down or restarts Windows if Windows stops responding. The times are displayed in seconds.
 
- 
+ 
 
- 
+ 
 
 
 

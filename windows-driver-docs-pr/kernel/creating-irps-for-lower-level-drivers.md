@@ -62,9 +62,9 @@ Instead, if an intermediate driver creates IRPs for lower drivers, it should cal
 
 However, a driver is more likely to call **IoBuildDeviceIoControlRequest** to allocate device control IRPs than **IoBuildSynchronousFsdRequest**.
 
- 
+ 
 
- 
+ 
 
 
 

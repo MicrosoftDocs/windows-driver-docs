@@ -18,9 +18,9 @@ ms.date: 10/17/2018
 
 This DIF code is obsolete and no longer supported in Microsoft Windows 2000 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

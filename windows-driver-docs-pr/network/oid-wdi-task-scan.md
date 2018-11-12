@@ -40,7 +40,7 @@ OID\_WDI\_TASK\_SCAN requests a survey of BSS networks. The port performs a scan
 </tbody>
 </table>
 
- 
+ 
 
 A task started message containing a [**WDI\_TLV\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn898068) is indicated once the port has started the scan and is ready to receive other commands.
 
@@ -70,7 +70,7 @@ The adapter must not violate regulatory restrictions when performing a scan.
 | [**WDI\_TLV\_SCAN\_DWELL\_TIME**](https://msdn.microsoft.com/library/windows/hardware/dn898051)       |                                |          | Dwell time parameters.                                                                                                                                                                                                                                                                        |
 | [**WDI\_TLV\_BAND\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/dn926144)              | X                              | X        | A list of recommended channels to scan. The adapter can perform a scan on a subset or superset of the channel list as long as it meets the Maximum Scan Time requirements. If this list is empty, the port must scan on all supported channels.                                               |
 
- 
+ 
 
 ## Task completion indication
 
@@ -106,9 +106,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

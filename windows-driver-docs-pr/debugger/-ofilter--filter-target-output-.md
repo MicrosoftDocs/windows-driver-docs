@@ -59,7 +59,7 @@ You can enclose *String* in quotation marks. However, if *String* includes a sem
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ To clear the existing filter, use **.ofilter ""**. This command filters any data
 
 The **DbgPrintEx** and **KdPrintEx** routines supply another method of filtering debugging messages that you do not want.
 
- 
+ 
 
- 
+ 
 
 
 

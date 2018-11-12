@@ -23,9 +23,9 @@ The KSNODETYPE\_SUM node represents a simple summation (SUM) function. The SUM n
 
 A KSNODETYPE\_SUM node is not required to support any properties.
 
- 
+ 
 
- 
+ 
 
 
 

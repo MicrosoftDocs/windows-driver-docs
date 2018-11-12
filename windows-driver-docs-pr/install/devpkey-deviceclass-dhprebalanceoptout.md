@@ -32,7 +32,7 @@ The DEVPKEY_DeviceClass_DHPRebalanceOptOut device property represents a value th
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_BOOLEAN</strong>](devprop-type-boolean.md)</p></td>
+<td align="left"><p><a href="devprop-type-boolean.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_BOOLEAN&lt;/strong&gt;](devprop-type-boolean.md)"><strong>DEVPROP_TYPE_BOOLEAN</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_DeviceClass_DHPRebalanceOptOut device property represents a value th
 </tbody>
 </table>
 
- 
+ 
 
 **Remarks**
 
@@ -94,9 +94,9 @@ Requirements
 
 [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128)
 
- 
+ 
 
- 
+ 
 
 
 

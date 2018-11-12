@@ -76,9 +76,9 @@ Expanding all allocations to 64KB can have a significant memory impact. It is th
 
 When mapping a GPU virtual address to a large 64KB memory segment page, the video memory manager will map 4KB page table entries to 16 contiguous 4KB pages in the memory segment. Both the virtual address and the physical address are guaranteed to share the same 64KB alignment (i.e. the bottom 16bits of the virtual address and the physical address are guaranteed to match.).
 
- 
+ 
 
- 
+ 
 
 
 

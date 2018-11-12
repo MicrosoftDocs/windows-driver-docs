@@ -33,9 +33,9 @@ The display mode where only one view is shown on one monitor.
 <span id="Topology"></span><span id="topology"></span><span id="TOPOLOGY"></span>**Topology**  
 Information that specifies which sources are shown on which targets for a graphics adapter.
 
- 
+ 
 
- 
+ 
 
 
 

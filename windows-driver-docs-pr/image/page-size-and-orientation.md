@@ -26,9 +26,9 @@ For more information about working with page size and orientation, see the follo
 
 [Scanner Page Size and Orientation Code Examples](page-size-and-orientation-code-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ Most higher-level drivers simply send IRPs to lower-level drivers from their dis
 
 However, higher-level drivers can set up internal queues for IRPs that request particular kinds of operations, or set up internal queues to hold IRPs bound for a set of heterogeneous underlying devices like the SCSI port driver. For more information, see [Queuing and Dequeuing IRPs](queuing-and-dequeuing-irps.md).
 
- 
+ 
 
- 
+ 
 
 
 

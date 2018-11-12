@@ -71,7 +71,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -135,9 +135,9 @@ Requirements
 
 [**\_\_RxSynchronizeBlockingOperations**](https://msdn.microsoft.com/library/windows/hardware/ff557377)
 
- 
+ 
 
- 
+ 
 
 
 

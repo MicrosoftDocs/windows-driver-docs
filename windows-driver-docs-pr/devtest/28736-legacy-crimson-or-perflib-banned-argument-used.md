@@ -13,9 +13,9 @@ warning C28736: Banned API Argument Usage
 
 This warning indicates that a legacy Crimson or Perflib consumer API with a banned argument is being used. These APIs and arguments have been replaced by the Event Tracing for Windows model, which improves both performance and security.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -58,9 +58,9 @@ To propagate the I/O operation to the underlying driver or offload target, the i
 
 From the intermediate driver's NDIS\_OFFLOAD\_HANDLE structure, NDIS extracts the **MiniportOffloadContext** pointer and passes it, as the *MiniportOffloadContext* parameter, to the offload target's *MiniportTcpOffloadXxx* function. This pointer references the offload target's context for the offloaded TCP connection. NDIS also passes the same PNET\_BUFFER\_LIST pointer that the intermediate driver passed to the **NdisOffloadTcp*Xxx*** function.
 
- 
+ 
 
- 
+ 
 
 
 

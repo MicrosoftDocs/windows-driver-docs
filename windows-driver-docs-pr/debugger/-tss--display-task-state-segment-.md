@@ -52,16 +52,16 @@ Address of the TSS.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The address of the TSS can be found by examining the output of the [**!pcr**](-pcr.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

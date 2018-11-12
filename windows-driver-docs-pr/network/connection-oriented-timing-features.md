@@ -22,7 +22,7 @@ Connection-oriented NDIS supports using a NIC's local time for scheduling the tr
 
 **Note**  These connection-oriented timing features are optional. These features are not supported by all CoNDIS NICs.
 
- 
+ 
 
 A connection-oriented protocol driver can call [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) to query the local timing capabilities of a connection-oriented miniport driver or an MCM driver with [OID\_GEN\_CO\_GET\_TIME\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569451). In response to such a query, the miniport driver or MCM driver returns information about:
 
@@ -42,9 +42,9 @@ To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOi
 
 Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388).
 
- 
+ 
 
- 
+ 
 
 
 

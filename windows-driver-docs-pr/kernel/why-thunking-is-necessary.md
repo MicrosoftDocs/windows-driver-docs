@@ -39,7 +39,7 @@ PWSTR Buffer
 (2 bytes)
 32 bits
 (4 bytes)
- 
+ 
 
 On 64-bit Windows, the size of the DRIVER\_DATA structure is 24 bytes. (The 4 bytes of structure padding are required so that the **Buffer** member can be aligned on an 8-byte boundary.)
 
@@ -59,7 +59,7 @@ PWSTR Buffer
 (4 bytes)
 64 bits
 (8 bytes)
- 
+ 
 
 If a 64-bit driver receives 12 bytes of DRIVER\_DATA when it expected 24 bytes, the size validation will fail. To prevent this, the driver must detect whether a DRIVER\_DATA structure was sent by a 32-bit application, and if so, thunk it appropriately before performing the validation.
 
@@ -88,11 +88,11 @@ ULONG Buffer
 (2 bytes)
 32 bits
 (4 bytes)
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

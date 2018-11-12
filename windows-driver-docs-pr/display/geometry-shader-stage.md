@@ -37,7 +37,7 @@ The geometry shader stage can implement the following algorithms:
 
 **Note**   Because each call to the geometry shader can produce a varying number of outputs, parallel calls to hardware are more difficult at this stage than when running other pipeline stages (such as vertex or pixel shader stages) in parallel. While hardware implementations will run geometry shader calls in parallel, the complex buffering that is required to accomplish parallel geometry shader calls means that applications should not require the level of parallelism achievable at the geometry shader stage to be as much as other pipeline stages. In other words, the geometry shader could become a bottleneck in the pipeline depending on the program load that the geometry shader has. However, the goal is that algorithms that use the geometry shader's capability will still run more efficiently than the application that has to emulate the behavior on hardware that is not able to generate geometry programmatically.
 
- 
+ 
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the geometry shader:
 
@@ -59,9 +59,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**GsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff566860)
 
- 
+ 
 
- 
+ 
 
 
 

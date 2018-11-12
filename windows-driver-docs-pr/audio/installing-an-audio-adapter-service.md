@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 This section includes the following topics about installing a port-class adapter service:
 
 [Installing an Audio Adapter Service in Windows](installing-an-audio-adapter-service-in-windows.md)
- 
+ 
 
- 
+ 
 
 
 

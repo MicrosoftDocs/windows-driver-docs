@@ -14,9 +14,9 @@ The WIA scanner storage (folder) item can optionally support the following WIA p
 
 [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://msdn.microsoft.com/library/windows/hardware/ff552653)
 
- 
+ 
 
- 
+ 
 
 
 

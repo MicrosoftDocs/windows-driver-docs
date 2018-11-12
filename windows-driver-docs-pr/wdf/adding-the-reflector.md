@@ -96,9 +96,9 @@ UMDF drivers cannot specify a unique service name for the reflector on operating
 
 If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.
 
- 
+ 
 
- 
+ 
 
 
 

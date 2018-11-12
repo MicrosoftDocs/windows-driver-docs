@@ -51,7 +51,7 @@ Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +64,9 @@ For this extension to display useful information, you must first create a triage
 
 For details on the triage.ini file and an example of the **!owner** extension, see [Specifying Module and Function Owners](specifying-module-and-function-owners.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,11 +31,11 @@ For more information about WHQL, see the [Windows Hardware Quality Labs](http://
 
 **Note**  WHQL does not embed signatures in driver files. You can embed a signature in a driver file using a third-party commercial [release certificate](release-certificates.md). Embed the signature in the driver file before submitting the driver package to WHQL.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ This code ensures that the driver does not call [**WdfRequestComplete**](https:/
 
 For more information about the rules that your driver must follow when it calls **WdfRequestUnmarkCancelable**, see [**WdfRequestUnmarkCancelable**](https://msdn.microsoft.com/library/windows/hardware/ff550035).
 
- 
+ 
 
- 
+ 
 
 
 

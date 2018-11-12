@@ -56,9 +56,9 @@ A call manager performs:
 
     A call manager inputs [status indications from a bound connection-oriented miniport driver](indicating-miniport-driver-status.md).
 
- 
+ 
 
- 
+ 
 
 
 

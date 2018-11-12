@@ -22,9 +22,9 @@ Note that there are no routines that provide a direct interface to the PnP manag
 
 The Windows Driver Frameworks (WDF) provide a set of libraries to make PnP management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The following subsections discuss how to register for target device change notif
 
 [Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event](handling-a-guid-target-device-remove-cancelled-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

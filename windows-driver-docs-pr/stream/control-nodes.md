@@ -38,9 +38,9 @@ Note that some functions in receiver topology that acquire content, such as the 
 
 The blocks in the preceding figure correspond to BDA control nodes. Each control node combines network and program-specific parameter data with the input signal, or signal component, using a standard algorithm. The result produces a new signal component that is useful to the control nodes connected immediately downstream.
 
- 
+ 
 
- 
+ 
 
 
 

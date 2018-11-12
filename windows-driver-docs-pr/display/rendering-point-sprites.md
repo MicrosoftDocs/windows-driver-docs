@@ -47,9 +47,9 @@ It is important to remember that point sprites should have no dependencies on th
 
 Also it is important that in point fill mode with flat shading that the rules for flat shading a primitive are complied with. This means that the first vertex of a primitive dictates the color of that primitive and hence the color for each vertex of the primitive. This is not what occurs with version 8.0 of the reference rasterizer or the sample driver and is fixed in version 8.1.
 
- 
+ 
 
- 
+ 
 
 
 

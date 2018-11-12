@@ -47,9 +47,9 @@ The **Property** member of STREAM\_PROPERTY\_DESCRIPTOR describes the property i
 
 [**STREAM\_PROPERTY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568442)
 
- 
+ 
 
- 
+ 
 
 
 

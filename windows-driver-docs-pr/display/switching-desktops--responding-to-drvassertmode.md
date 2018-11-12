@@ -25,9 +25,9 @@ GDI calls *DrvAssertMode* to set the mode of a specified hardware device. This f
 
 GDI also calls [**DrvAssertMode**](https://msdn.microsoft.com/library/windows/hardware/ff556178), with the enable parameter set to **FALSE**, when the user switches from a windowed application to a full-screen application in *x*86 applications, or when the user switches desktops (on all platforms). The display driver must restore the video hardware to a default mode by sending [**IOCTL\_VIDEO\_RESET\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567834) in an [**EngDeviceIoControl**](https://msdn.microsoft.com/library/windows/hardware/ff564838) call to the video miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

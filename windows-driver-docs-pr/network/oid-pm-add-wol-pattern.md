@@ -27,7 +27,7 @@ Before NDIS sends this OID request down to the underlying NDIS drivers or comple
 
 **Note**  The pattern identifier is a unique value for each of the patterns that are set on a network adapter. However, the pattern identifier is not globally unique across all miniport adapters.
 
- 
+ 
 
 If NDIS or an underlying network adapter removes a WOL pattern, it generates an [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567414) status indication. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains the ULONG WOL pattern identifier of the rejected WOL pattern.
 
@@ -92,9 +92,9 @@ Requirements
 
 [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](oid-pnp-add-wake-up-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

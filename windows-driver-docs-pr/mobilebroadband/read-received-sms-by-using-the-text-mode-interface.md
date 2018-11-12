@@ -52,7 +52,7 @@ The following table lists the character encodings supported by the text-mode API
 </tbody>
 </table>
 
- 
+ 
 
 **JavaScript code example for reading received SMS messages using the text-mode interface**
 
@@ -90,16 +90,16 @@ catch (err)
 **Note**  
 SMS client apps can use the decoded segmentation information that is provided by Windows to concatenate multiple segments of a long message and reconstruct the full message. For more info about segmented SMS messages, see [Windows automatically segments long messages](windows-automatically-segments-long-messages.md).
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

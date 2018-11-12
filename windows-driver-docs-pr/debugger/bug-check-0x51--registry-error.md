@@ -55,7 +55,7 @@ The REGISTRY\_ERROR bug check has a value of 0x00000051. This indicates that a s
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +66,9 @@ This error may indicate that the registry encountered an I/O error while trying 
 
 It may also occur due to a failure in a refresh operation, which is used only in by the security system, and then only when resource limits are encountered.
 
- 
+ 
 
- 
+ 
 
 
 

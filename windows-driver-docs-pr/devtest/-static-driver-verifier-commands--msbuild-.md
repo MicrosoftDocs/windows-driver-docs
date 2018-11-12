@@ -33,7 +33,7 @@ Scans the driver's source code for function role type declarations. For informat
 
 For more information, see [Preparing your source code](using-static-driver-verifier-to-find-defects-in-drivers.md#preparing_your_source_code).
 
-<span id="________check_Rule____Rule_..._"></span><span id="________check_rule____rule_..._"></span><span id="________CHECK_RULE____RULE_..._"></span> **/check:***Rule* | *Rule*,...  
+<span id="________check_Rule____Rule_..._"></span><span id="________check_rule____rule_..._"></span><span id="________CHECK_RULE____RULE_..._"></span> **/check:**<em>Rule</em> | *Rule*,...  
 Starts a verification with the specified rule(s). You can specify more than one rule by separating each rule with a comma. Run the **/check:** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
 *Rule* is the name of one [rule](static-driver-verifier-rule.md) or a rule name pattern that includes wildcard characters (\*) to represent one or more characters. When used alone, the wildcard character (\*) represents all rules.
@@ -41,7 +41,7 @@ Starts a verification with the specified rule(s). You can specify more than one 
 <span id="________check_rulelist.sdv______"></span><span id="________CHECK_RULELIST.SDV______"></span> **/check:*RuleList*.sdv**   
 Starts a verification with the rules in the specified rule list file. You can list only one file with this parameter. In the rule list file, each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules.  Run **/check:*RuleList*.sdv** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
-*RuleList***.sdv** is the fully qualified path and file name of a [rule list file](static-driver-verifier-rule-list-file.md). The file must have the **.sdv** file name extension. Unless the file is in the local directory, the path is required. If the path or file name includes spaces, you must enclose *RuleList.***sdv** in quotation marks.
+<em>RuleList</em>**.sdv** is the fully qualified path and file name of a [rule list file](static-driver-verifier-rule-list-file.md). The file must have the **.sdv** file name extension. Unless the file is in the local directory, the path is required. If the path or file name includes spaces, you must enclose <em>RuleList.</em>**sdv** in quotation marks.
 
 If you specify the **/check:** option without specifying a rule, SDV runs with the default rule set for the driver model.
 

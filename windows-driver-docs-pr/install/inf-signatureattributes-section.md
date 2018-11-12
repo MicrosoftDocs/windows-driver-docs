@@ -30,7 +30,7 @@ Attribute = Value
 ## Entries
 
 
-<a href="" id="sigtype-signature-type"></a>**SigType=***signature-type*  
+<a href="" id="sigtype-signature-type"></a>**SigType=**<em>signature-type</em>  
 Defines which signature or catalog attribute needs to be applied to the file. Should be one of the following:
 
 -   Elam
@@ -39,7 +39,7 @@ Defines which signature or catalog attribute needs to be applied to the file. Sh
 -   DRM
 -   WindowsHello
 
-<a href="" id="attribute-attribute-name"></a>**Attribute=***attribute-name*  
+<a href="" id="attribute-attribute-name"></a>**Attribute=**<em>attribute-name</em>  
 Each Signature Type has a corresponding attribute and value, as listed below. Use these definitions for your SignatureAttributes subsections:
 
 -   **SignatureAttributes.Elam**: Elam = true
@@ -118,9 +118,9 @@ WindowsHello=true
 
 [Dashboard Help](https://msdn.microsoft.com/library/windows/hardware/br230803)
 
- 
+ 
 
- 
+ 
 
 
 

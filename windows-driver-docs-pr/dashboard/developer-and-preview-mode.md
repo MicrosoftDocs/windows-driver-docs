@@ -17,9 +17,9 @@ There are two options that you can use when submitting your service metadata pac
 
 -   **Preview mode**. The package is signed and automatically downloaded from Microsoft to test computers with the appropriate registry settings configured. The package is signed by the Dashboard and runs through all the production validation checks. But preview mode does not check to ensure that the app is published to the Microsoft Store.
 
- 
+ 
 
- 
+ 
 
 
 

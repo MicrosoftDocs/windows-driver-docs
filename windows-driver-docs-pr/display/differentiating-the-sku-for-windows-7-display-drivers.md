@@ -39,9 +39,9 @@ The following example shows the **Manufacturer** directive, and the section that
 
 For more information about the **Manufacturer** section, see [**INF Manufacturer Section**](https://msdn.microsoft.com/library/windows/hardware/ff547454).
 
- 
+ 
 
- 
+ 
 
 
 

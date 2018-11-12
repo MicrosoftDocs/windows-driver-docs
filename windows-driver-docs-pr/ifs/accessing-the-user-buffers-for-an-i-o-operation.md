@@ -38,9 +38,9 @@ The following topics provide guidelines for handling buffer addresses and MDLs f
 
 [Accessing User Buffers in a Postoperation Callback Routine](accessing-user-buffers-in-a-postoperation-callback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

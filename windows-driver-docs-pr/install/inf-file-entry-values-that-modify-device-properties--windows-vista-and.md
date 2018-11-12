@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # INF File Entry Values That Modify Device Properties
 
 
-The following are the INF file entry values that modify device properties on Windows Vista and later:
+The following are the INF file entry values that modify device properties on Windows Vista and later:
 
 -   INF file entry values that set corresponding [system-defined device properties](system-defined-device-properties2.md).
 
@@ -54,16 +54,15 @@ AddReg = Xxx_AddReg
 ...
 [HKR,,DeviceCharacteristics,0x10001,0x00000001
 ] 
- 
 ```
 
 ### <a href="" id="inf-addreg-directives-and-inf-delreg-directives-that-modify-custom-reg"></a>INF AddReg Directives and INF DelReg Directives That Modify Custom Registry Entry Values
 
-Windows Vista and later versions support using the [**INF AddReg directive**](inf-addreg-directive.md) and the [**INF DelReg directive**](inf-delreg-directive.md) to modify custom registry entry values that represent custom device properties. However, creating custom registry entry values to represent device properties is not supported by the unified device property model. If you create custom registry entry values for a device, you must manage the registry entry values in the same manner as you manage them on Windows Server 2003, Windows XP, and Windows 2000. To simplify the management of custom device properties, you should create device property keys to represent custom device properties instead of creating custom registry entry values.
+Windows Vista and later versions support using the [**INF AddReg directive**](inf-addreg-directive.md) and the [**INF DelReg directive**](inf-delreg-directive.md) to modify custom registry entry values that represent custom device properties. However, creating custom registry entry values to represent device properties is not supported by the unified device property model. If you create custom registry entry values for a device, you must manage the registry entry values in the same manner as you manage them on Windows Server 2003, Windows XP, and Windows 2000. To simplify the management of custom device properties, you should create device property keys to represent custom device properties instead of creating custom registry entry values.
 
- 
 
- 
+
+
 
 
 

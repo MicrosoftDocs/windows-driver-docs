@@ -69,9 +69,9 @@ When you create a WDF driver, you will typically do the following:
 
     The framework provides additional objects that your driver can use. For more information about these objects, see [WDF Support Objects](wdf-support-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

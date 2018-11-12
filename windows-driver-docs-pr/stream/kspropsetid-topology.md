@@ -30,9 +30,9 @@ The KSPROPSETID\_Topology property set includes:
 
 [**KSPROPERTY\_TOPOLOGY\_NODES**](ksproperty-topology-nodes.md)
 
- 
+ 
 
- 
+ 
 
 
 

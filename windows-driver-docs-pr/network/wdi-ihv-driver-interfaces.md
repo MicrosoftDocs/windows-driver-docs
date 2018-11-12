@@ -274,9 +274,9 @@ The [*MiniportWdiOpenAdapter*](https://msdn.microsoft.com/library/windows/hardwa
 
 The [*MiniportWdiCloseAdapter*](https://msdn.microsoft.com/library/windows/hardware/mt297561) handler is used by the Microsoft component to initiate the Close Task operation on the IHV driver. This call must complete quickly and if the open operation has been successfully started, the IHV must return NDIS\_STATUS\_SUCCESS on this call and call the [**CloseAdapterComplete**](https://msdn.microsoft.com/library/windows/hardware/mt297598) handler that is passed into the [**NDIS\_WDI\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt297621) parameter of the [*MiniportWdiAllocateAdapter*](https://msdn.microsoft.com/library/windows/hardware/mt297559).
 
- 
+ 
 
- 
+ 
 
 
 

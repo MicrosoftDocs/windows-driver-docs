@@ -40,9 +40,9 @@ Some notes about the preceding figure:
 
     However, PnP IRPs ([**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff549268)) can be sent to either stack. Filter drivers chained above a file system volume should always pass these IRPs down to the next lower driver by default so that the file system's volume device can pass the IRPs down to the storage device stack.
 
- 
+ 
 
- 
+ 
 
 
 

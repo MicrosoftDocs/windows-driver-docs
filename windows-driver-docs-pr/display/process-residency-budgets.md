@@ -15,9 +15,9 @@ For Direct3D 12 applications, the budget is handled completely by the applicatio
 
 To properly manage these budgets, the kernel needs to know what memory should participate in the budget. There is a new **ApplicationTarget** bit in [**DXGK\_SEGMENTFLAGS2**](https://msdn.microsoft.com/library/windows/hardware/ff562044) structure that needs to be set on segments that the kernel mode driver wishes to be included in the budgeting logic. For example, on a discrete graphics processing unit (GPU) with 1 segment of VRAM that's suitable for application usage, and 1 segment of VRAM that's used for special-purpose resources automatically, the driver would likely only mark the primary VRAM segment as **ApplicationTarget**. For integrated GPUs, the main aperture segment will usually be the one marked. There is no limit to how many segments can be marked as **ApplicationTarget**. The kernel will aggregate these together and present the application with a unified size.
 
- 
+ 
 
- 
+ 
 
 
 

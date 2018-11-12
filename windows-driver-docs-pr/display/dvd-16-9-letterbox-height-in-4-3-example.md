@@ -31,9 +31,9 @@ The following rectangle values are used in the **PictureDestinationRect** member
 
 -   **bottom** = 7 X *vertical\_size* / 8 = 420 or 504
 
- 
+ 
 
- 
+ 
 
 
 

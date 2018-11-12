@@ -27,9 +27,9 @@ This sample shows how to write a WIA user-mode minidriver for a scanner. It simu
 
     Run the small application, *Scanpanl.exe* (which is provided with the Windows DDK) to simulate button presses.
 
- 
+ 
 
- 
+ 
 
 
 

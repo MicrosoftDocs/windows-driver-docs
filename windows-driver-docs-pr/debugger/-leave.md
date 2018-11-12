@@ -37,9 +37,9 @@ When a **.leave** token is encountered within a [**.catch**](-catch.md) block, t
 
 Since there is no control flow token equivalent to the C **goto** statement, you will usually use the **.leave** token within an [**.if**](-if.md) conditional, as shown in the syntax examples above. However, this is not actually required.
 
- 
+ 
 
- 
+ 
 
 
 

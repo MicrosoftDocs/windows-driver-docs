@@ -31,9 +31,9 @@ This equation contains the following:
 
 The host stack calculates the MRTT in a similar way: it adds its timestamp delta to its current time and, from this sum, subtracts the timestamp that is echoed by the remote TCP peer.
 
- 
+ 
 
- 
+ 
 
 
 

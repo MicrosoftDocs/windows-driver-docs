@@ -75,7 +75,7 @@ Boolean; **TRUE** value indicates that the endpoint is in a stalled state, **FAL
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +87,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The DRIVER\_USED\_EXCESSIVE\_PTES bug check has a value of 0x000000D8. This indi
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -69,9 +69,9 @@ Resolution
 
 Both drivers may need to be fixed. The total number of system PTEs may also need to be increased.
 
- 
+ 
 
- 
+ 
 
 
 

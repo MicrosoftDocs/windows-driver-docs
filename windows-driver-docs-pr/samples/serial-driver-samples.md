@@ -22,11 +22,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Virtual Serial   | [VirtualSerial](http://go.microsoft.com/fwlink/p/?LinkId=617963) | This sample demonstrates serial drivers. It includes a simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem). |
 | Virtual Serial 2 | [VirtualSerial](http://go.microsoft.com/fwlink/p/?LinkId=617965) | This sample demonstrates serial drivers. It includes a simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem). |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

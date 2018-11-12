@@ -35,9 +35,9 @@ After you make your selections, click **OK**.
 
 For more information and other methods of attaching to a process, see [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md) and [Noninvasive Debugging (User Mode)](noninvasive-debugging--user-mode-.md).
 
- 
+ 
 
- 
+ 
 
 
 

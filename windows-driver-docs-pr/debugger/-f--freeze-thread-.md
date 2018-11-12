@@ -54,7 +54,7 @@ Specifies the thread to freeze. For more information about the syntax, see [Thre
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -91,9 +91,9 @@ The following command unfreezes thread number 123.
 0:000> ~123 u
 ```
 
- 
+ 
 
- 
+ 
 
 
 

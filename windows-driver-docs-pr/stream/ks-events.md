@@ -34,9 +34,9 @@ Some event types require additional parameters to register for event notificatio
 
 In such a case, a minidriver passes additional data parameters in the data buffer after the [**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750) structure. Minidrivers that support such an event type use an extended data structure, of which the first member is of type KSEVENTDATA, to hold the notification data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,9 +43,9 @@ MiniportAttributes.InterfaceType = NdisInterfacePci;
 
 For more information about setting miniport driver attributes, see [Initializing an Adapter](initializing-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

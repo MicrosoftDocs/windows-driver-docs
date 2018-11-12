@@ -16,9 +16,9 @@ If the user starts the mobile broadband app directly from its tile, the mobile b
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

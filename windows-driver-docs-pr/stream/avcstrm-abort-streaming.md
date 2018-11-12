@@ -62,7 +62,7 @@ Possible error return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -107,9 +107,9 @@ This function code must be called at PASSIVE\_LEVEL. When a data IRP is being ca
 
 [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120)
 
- 
+ 
 
- 
+ 
 
 
 

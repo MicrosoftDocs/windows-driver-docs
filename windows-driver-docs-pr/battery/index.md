@@ -23,9 +23,9 @@ This design guide focuses on [Writing Battery Miniclass Drivers](writing-battery
 
 In addition this section includes information on [Writing UPS Minidrivers](writing-ups-minidrivers.md) that were used with older versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

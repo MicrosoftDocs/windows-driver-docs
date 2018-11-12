@@ -18,7 +18,7 @@ OID\_WDI\_SET\_MULTICAST\_LIST specifies the multicast address list for a given 
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 The IHV component should only fail the command if the list size exceeds the limit specified in [**WDI\_TLV\_INTERFACE\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897835).
 
@@ -31,7 +31,7 @@ After the host enables multicast packet filtering on the port using [OID\_WDI\_S
 |------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------|
 | [**WDI\_TLV\_MULTICAST\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn897849) |                                | X        | List of multicast MAC addresses. The list must not be empty. |
 
- 
+ 
 
 ## Set property results
 
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

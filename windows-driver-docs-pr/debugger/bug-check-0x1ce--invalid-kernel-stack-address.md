@@ -23,9 +23,9 @@ The INVALID_KERNEL_STACK_ADDRESS bug check has a value of 0x000001CE. An invalid
 ## INVALID\_KERNEL\_STACK\_ADDRESS Parameters
 
 None
- 
+ 
 
- 
+ 
 
 
 

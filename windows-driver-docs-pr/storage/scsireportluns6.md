@@ -15,9 +15,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI Class](msisc
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class must support **ScsiReportLuns**.
 
- 
+ 
 
- 
+ 
 
 
 

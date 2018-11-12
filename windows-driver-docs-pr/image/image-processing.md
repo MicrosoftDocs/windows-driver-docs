@@ -27,9 +27,9 @@ To use GDI+ in the WIA minidriver, make sure that GDI+ is properly initialized. 
 
 For more information about GDI+, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

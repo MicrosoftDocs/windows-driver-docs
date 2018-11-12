@@ -26,9 +26,9 @@ The PnP manager sends an IRP code (see [IRP Major Function Codes](https://msdn.m
 
 [Changing State on the Adapter](changing-state-on-the-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

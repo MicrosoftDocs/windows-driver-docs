@@ -19,15 +19,14 @@ ms.localizationpriority: medium
 
 The **/Initialize** switch of the Enhanced Storage Certificate Management tool initializes the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device to its original manufacturer's state.
 
-**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the *target device*.
+**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the *target device*.
 
- 
+
 
 ```
     EhStorCertMgrCmd /Initialize  -Volume:
     VolumeName 
     [-Quiet]
-   
 ```
 
 ## <span id="Subparameters"></span><span id="subparameters"></span><span id="SUBPARAMETERS"></span>Subparameters
@@ -36,9 +35,9 @@ The **/Initialize** switch of the Enhanced Storage Certificate Management tool i
 <span id="_______-Volume_______"></span><span id="_______-volume_______"></span><span id="_______-VOLUME_______"></span> **-Volume:**   
 The volume name of the target device. For more information about the format of this parameter, see [Overview of the Enhanced Storage Certificate Management Tool](overview-of-the-enhanced-storage-certificate-management-tool.md).
 
-**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press Enter.
+**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command prompt and then press Enter.
 
- 
+
 
 <span id="_______-Quiet______"></span><span id="_______-quiet______"></span><span id="_______-QUIET______"></span> **-Quiet**   
 Suppresses verbose output when the USB storage device is initialized.
@@ -57,9 +56,9 @@ The following example shows how to initialize a target device:
 EhStorCertMgrCmd /Initialize -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}"
 ```
 
- 
 
- 
+
+
 
 
 

@@ -74,9 +74,9 @@ class MSSerial_SendEvent : MSSerialEvent
 
 For more information about defining base classes in MOF format, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

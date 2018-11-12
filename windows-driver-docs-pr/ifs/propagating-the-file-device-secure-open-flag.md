@@ -30,9 +30,9 @@ if (FlagOn( DeviceObject->Characteristics, FILE_DEVICE_SECURE_OPEN )) {
 
 In the above code snippet, *DeviceObject* is a pointer to the device object to which the filter device object has just been attached; myLegacyFilter *DeviceObject* is a pointer to the filter device object itself.
 
- 
+ 
 
- 
+ 
 
 
 

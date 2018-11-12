@@ -61,7 +61,7 @@ For all IOCTL requests except [**IOCTL\_SMARTCARD\_IS\_ABSENT**](https://msdn.mi
 </tbody>
 </table>
 
- 
+ 
 
 The structure pointed to by **SmartcardExtension-&gt;OsData** is set up as described in the following table.
 
@@ -79,7 +79,7 @@ The structure pointed to by **SmartcardExtension-&gt;OsData** is set up as descr
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>CurrentIrp</strong></p></td>
-<td align="left"><p>Receives a pointer to the requesting IRP for every control request except [<strong>IOCTL_SMARTCARD_IS_ABSENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548905) and [<strong>IOCTL_SMARTCARD_IS_PRESENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548906).</p></td>
+<td align="left"><p>Receives a pointer to the requesting IRP for every control request except <a href="https://msdn.microsoft.com/library/windows/hardware/ff548905" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_ABSENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548905)"><strong>IOCTL_SMARTCARD_IS_ABSENT</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548906" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_PRESENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548906)"><strong>IOCTL_SMARTCARD_IS_PRESENT</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>NotificationIrp</strong></p></td>
@@ -88,11 +88,11 @@ The structure pointed to by **SmartcardExtension-&gt;OsData** is set up as descr
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

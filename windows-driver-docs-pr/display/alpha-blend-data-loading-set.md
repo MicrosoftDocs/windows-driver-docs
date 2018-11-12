@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The minimal interoperability configuration set for alpha-blend data loading consists of all defined values of the **bConfigDataType** member of the [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) structure.
 
- 
+ 
 
- 
+ 
 
 
 

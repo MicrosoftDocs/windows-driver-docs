@@ -77,7 +77,7 @@ The following table provides verification data for the IPv4 versions of the **Nd
 </tbody>
 </table>
 
- 
+ 
 
 The following table contains verification data for the IPv6 versions of the RSS hash algorithm. The destination and source columns contain the input data and the IPv6 columns contain the resulting hash value. Note that the IPv6 addresses are provided for verification of the algorithm only; they might not make sense as actual addresses.
 
@@ -118,11 +118,11 @@ The following table contains verification data for the IPv6 versions of the RSS 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

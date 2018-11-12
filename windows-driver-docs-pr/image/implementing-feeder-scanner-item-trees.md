@@ -23,9 +23,9 @@ This section includes:
 
 [Basic Scanning with a Feeder Scanner](basic-scanning-with-a-feeder-scanner.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ The **SENSOR\_PROPERTY\_DEVICE\_ID** property, which the tool displays in the pr
 
 The tool returns ALR curve values as \[Offset, LUX\] pairs (rather than \[LUX, Offset\] pairs).
 
- 
+ 
 
- 
+ 
 
 
 

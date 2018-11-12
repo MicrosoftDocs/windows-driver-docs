@@ -21,7 +21,7 @@ The page size of the target's computer is returned by [**GetPageSize**](https://
 
 **Note**  Internally, the debugger engine always uses 64-bit addresses for the target. If the target only uses 32-bit addresses, the engine automatically converts them when communicating with the target.
 
- 
+ 
 
 The number of processors in the target's computer is returned by [**GetNumberProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff547950).
 
@@ -47,9 +47,9 @@ The current time on the target's computer is returned by [**GetCurrentTimeDate**
 
 The Windows version running on the target's computer is returned by [**GetSystemVersionValues**](https://msdn.microsoft.com/library/windows/hardware/ff549258) and the [**Request**](https://msdn.microsoft.com/library/windows/hardware/ff554564) operation [**DEBUG\_REQUEST\_GET\_WIN32\_MAJOR\_MINOR\_VERSIONS**](https://msdn.microsoft.com/library/windows/hardware/ff541563), and a description of the Windows version is returned by [**GetSystemVersionString**](https://msdn.microsoft.com/library/windows/hardware/ff549245). Some of this information is also returned by [**GetSystemVersion**](https://msdn.microsoft.com/library/windows/hardware/ff549234).
 
- 
+ 
 
- 
+ 
 
 
 

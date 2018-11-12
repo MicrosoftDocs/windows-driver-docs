@@ -38,11 +38,11 @@ NTSTATUS values are defined in ntstatus.h. These values fall into four categorie
 
 **Note**   Although STATUS\_PENDING is a success NTSTATUS value, it is a programming error to complete an IRP with STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,7 +26,7 @@ To find the name of a symbol given its location, use [**GetNameByOffset**](https
 
 **Note**   Whenever possible, qualify the symbol with the module name -- for example **mymodule!main**. Otherwise, if the symbol does not exist (for example, because of a typographical error) the engine will have to load and search the symbols for every module; this can be a slow process, especially for kernel-mode debugging. If the symbol name was qualified with a module name, the engine will only need to search the symbols for that module.
 
- 
+ 
 
 A symbol is uniquely identified using the structure [**DEBUG\_MODULE\_AND\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff541511). This structure is returned by the methods [**GetSymbolEntriesByName**](https://msdn.microsoft.com/library/windows/hardware/ff548458) and [**GetSymbolEntriesByOffset**](https://msdn.microsoft.com/library/windows/hardware/ff548476), which search for symbols based on their name and location, respectively.
 
@@ -56,9 +56,9 @@ After loading symbol files, the engine stores the symbol information in an inter
 
 To add a directory or symbol server to the symbol path, use the method [**AppendSymbolPath**](https://msdn.microsoft.com/library/windows/hardware/ff538110). The whole symbol path is returned by [**GetSymbolPath**](https://msdn.microsoft.com/library/windows/hardware/ff549155) and can be changed using [**SetSymbolPath**](https://msdn.microsoft.com/library/windows/hardware/ff556802).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ The NDIS network interfaces programming interface provides services to:
 
 -   Query and set interface properties and tables that NDIS drivers manage and that RFCs 2863 and 2864 specify.
 
- 
+ 
 
- 
+ 
 
 
 

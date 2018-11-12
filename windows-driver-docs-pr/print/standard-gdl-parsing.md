@@ -24,9 +24,9 @@ In this processing, the SPF interprets the raw value CDATA as a data type that i
 
 The processing also includes existence checking of members, parsing of attribute values, handling of multiply defined attributes, default initialization attributes, and generation of an XML representation of the resultant tree that contains the additional elements. Warning and error messages are also generated if needed. The processing that is performed is directed by specific template directives.
 
- 
+ 
 
- 
+ 
 
 
 

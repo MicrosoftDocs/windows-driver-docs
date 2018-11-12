@@ -27,9 +27,9 @@ Driver writers typically use the Microsoft Windows registry to store and retriev
 -   [Using Framework Registry-Key Objects](using-framework-registry-key-objects.md)
 -   [Accessing the Unified Device Property Model](accessing-the-unified-device-property-model.md)
 
- 
+ 
 
- 
+ 
 
 
 

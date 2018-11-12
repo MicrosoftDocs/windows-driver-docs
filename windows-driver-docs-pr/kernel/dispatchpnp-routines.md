@@ -58,9 +58,9 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 You should test your drivers with a checked build of the operating system. The checked build of the system verifies whether a driver follows many of the PnP rules listed above.
 
- 
+ 
 
- 
+ 
 
 
 

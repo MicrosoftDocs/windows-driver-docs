@@ -104,9 +104,9 @@ This code can be used for both the rename and hard link creation case.
 
 Note that it is outside the scope of this document to discuss policy level code where the file system decides to disallow the delete based upon the type of file being deleted.
 
- 
+ 
 
- 
+ 
 
 
 

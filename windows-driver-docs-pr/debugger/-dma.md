@@ -70,7 +70,7 @@ Causes the display to include Wait context block information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -178,9 +178,9 @@ Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters
 
 This is fairly straightforward; there are four common buffers of varying lengths. The physical and virtual addresses are all given.
 
- 
+ 
 
- 
+ 
 
 
 

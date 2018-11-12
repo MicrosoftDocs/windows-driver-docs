@@ -26,9 +26,9 @@ First, the client should verify, by looking at the default snapshot, that the To
 
 In other cases, the configuration is obtained from user input or it is retrieved from persistent storage. The client could also use these configurations to obtain a snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

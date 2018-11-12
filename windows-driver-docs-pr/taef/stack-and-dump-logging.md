@@ -52,24 +52,23 @@ HRESULT hr = Debug::GetStack(CallStackFormat::ColumnNames | CallStackFormat::Fra
 
 Correlation of stack option flags to debugger commands. If you use windbg family of debuggers the following approximate correlation list may come in handy:
 
-| Debugger Syntax | Corresponding Flags                                                                                         |
-|-----------------|-------------------------------------------------------------------------------------------------------------|
-| k               | CallStackFormat::ColumnNames | CallStackFormat::FrameAddress | CallStackFormat::SourceLine (with .lines on) |
-| kv              | k + CallStackFormat::FunctionInfo                                                                           |
-| kp / kP         | k + CallStackFormat::Parameters                                                                             |
-| kn              | k + CallStackFormat::FrameNumbers                                                                           |
-| kf              | k + CallStackFormat::FrameMemoryUsage                                                                       |
 
- 
+| Debugger Syntax |          Corresponding Flags          |
+|-----------------|---------------------------------------|
+|        k        |     CallStackFormat::ColumnNames      |
+|       kv        |   k + CallStackFormat::FunctionInfo   |
+|     kp / kP     |    k + CallStackFormat::Parameters    |
+|       kn        |   k + CallStackFormat::FrameNumbers   |
+|       kf        | k + CallStackFormat::FrameMemoryUsage |
 
 ## <span id="Technical_Reference"></span><span id="technical_reference"></span><span id="TECHNICAL_REFERENCE"></span>Technical Reference
 
 
 If you are interested in more information about the dump and stack optional parameters, please refer to the documentation provided with [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=8708). For documentation on the 'dump flags' see the [DEBUG\_FORMAT\_XXX documentation](https://msdn.microsoft.com/library/cc267446.aspx). For documentation on the 'stack flags' please see the ['OutputStackTrace' method documentation](https://msdn.microsoft.com/library/cc266034.aspx).
 
- 
 
- 
+
+
 
 
 

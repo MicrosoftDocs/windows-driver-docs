@@ -34,9 +34,9 @@ The following topics provide additional information about WAN packet framing:
 
 [ISDN and Switched-56K Framing](isdn-and-switched-56k-framing.md)
 
- 
+ 
 
- 
+ 
 
 
 

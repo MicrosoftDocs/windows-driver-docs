@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Controlling Threads and Processes in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -17,9 +17,9 @@ The procedures shown in this topic require that you have the Windows Driver Kit 
 
 To open the Threads Window in Visual Studio, from the **Debug** menu, choose **Windows&gt;Threads**.
 
- 
+ 
 
- 
+ 
 
 
 

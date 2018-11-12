@@ -20,9 +20,9 @@ Click **Clear Command Output** on the **Edit** menu to clear all of the text fro
 
 For more information about other features of the Debugger Command window, see [Using Debugger Commands](using-debugger-commands.md).
 
- 
+ 
 
- 
+ 
 
 
 

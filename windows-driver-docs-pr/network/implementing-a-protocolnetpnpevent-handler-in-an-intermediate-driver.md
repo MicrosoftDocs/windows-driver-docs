@@ -18,9 +18,9 @@ The implementation of a [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/libra
 
 NDIS intermediate drivers pass on PnP events to higher layer drivers by calling the [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) function.
 
- 
+ 
 
- 
+ 
 
 
 

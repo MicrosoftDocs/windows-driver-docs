@@ -61,11 +61,11 @@ The following table describes the values in the preceding figure.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

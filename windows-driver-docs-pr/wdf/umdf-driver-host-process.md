@@ -38,9 +38,9 @@ However, you cannot load UMDF version 1 and 2 drivers in the same device stack. 
 
 For a diagram that shows how the driver host relates to other UMDF components, see [Overview of UMDF](overview-of-the-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

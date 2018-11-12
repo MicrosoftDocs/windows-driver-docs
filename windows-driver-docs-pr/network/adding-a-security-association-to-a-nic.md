@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 After the TCP/IP transport determines that a NIC can perform Internet protocol security (IPsec) operations (see [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md)), the transport must request the NIC's miniport driver to add one or more inbound and outbound security associations (SAs) to the NIC before the transport can offload IPsec tasks to the NIC. To request that a miniport driver add one or more SAs to the NIC, the TCP/IP transport sets [OID\_TCP\_TASK\_IPSEC\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569808).
 
- 
+ 
 
- 
+ 
 
 
 

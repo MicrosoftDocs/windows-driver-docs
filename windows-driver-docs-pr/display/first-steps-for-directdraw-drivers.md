@@ -20,9 +20,9 @@ A good way to begin implementing DirectDraw functionality is to modify an existi
 
 The minimum driver functionality DirectDraw requires is the ability to lock, unlock, and flip a surface. Assuming the hardware supports the related operations, driver support should also be added for blts (including transparent blts, which are important for speed in games), stretching, and overlays, which are critical for video playback.
 
- 
+ 
 
- 
+ 
 
 
 

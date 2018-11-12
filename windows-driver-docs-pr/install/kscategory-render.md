@@ -43,7 +43,7 @@ The KSCATEGORY_RENDER [device interface class](https://msdn.microsoft.com/librar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

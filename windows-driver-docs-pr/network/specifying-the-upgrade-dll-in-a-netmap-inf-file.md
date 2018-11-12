@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 A netmap.inf file must have an **OemUpgradeSupport** section. For each network component to be upgraded, the **OemUpgradeSupport** section must contain an entry that has the following format:
 
@@ -37,9 +37,9 @@ where:
 
 *Inf-file-name* is the name of the INF file that installs the network component.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ If the file system supports opening handles to its control device object, filter
 
 File system filter device objects attached to file systems are required to pass all unrecognized or unwanted IRPs to the next-lower driver on the driver stack by default.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,9 +46,9 @@ To add the default form of WPP software tracing to a [trace provider](trace-prov
 
 -   [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro calls to log trace messages.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ Requirements
 
 [**NDIS\_WWAN\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567935)
 
- 
+ 
 
- 
+ 
 
 
 

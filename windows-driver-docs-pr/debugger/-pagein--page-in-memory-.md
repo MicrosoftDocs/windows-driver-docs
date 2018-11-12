@@ -61,7 +61,7 @@ Specifies the address to page in.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,7 +76,7 @@ In Windows Server 2003 and Windows XP, you can page in only user-mode addresses 
 
 **Warning**   If you use **.pagein** on an address in a kernel stack in Windows Server 2003 or Windows XP, a bug check might occur.
 
- 
+ 
 
 Requirements
 ------------
@@ -94,9 +94,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

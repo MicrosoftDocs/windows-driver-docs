@@ -51,7 +51,7 @@ reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
 "security-descriptor-string"]
 ```
 
-An *add-registry-section* can have any number of entries, each on a separate line. An INF can also contain one or more optional *add-registry-section***.security** sections, each specifying a security descriptor that is applied to all registry values described within a named *add-registry-section*.
+An *add-registry-section* can have any number of entries, each on a separate line. An INF can also contain one or more optional <em>add-registry-section</em>**.security** sections, each specifying a security descriptor that is applied to all registry values described within a named *add-registry-section*.
 
 ## Entries
 
@@ -85,19 +85,19 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 **Note**  **HKR** cannot be used in an *add-registry-section* referenced from an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
 
- 
+ 
 
 For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 <a href="" id="subkey"></a>*subkey*  
-This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (*key1***\\***key2***\\***key3*...), specifies one of the following:
+This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (<em>key1</em>**\\**<em>key2</em>**\\**<em>key3</em>...), specifies one of the following:
 
 -   A new subkey to be added to the registry at the end of the given registry path.
 -   An existing subkey in which the additional values specified in this entry is written (possibly replacing the value of an existing named value entry of the given subkey).
 -   Both a new subkey to be added to the registry together with its initial value entry.
 
 <a href="" id="value-entry-name"></a>*value-entry-name*  
-This optional value either names an existing value entry in the given (existing) *subkey* or creates the name of a new value entry to be added in the specified *subkey*, whether it already exists or is a new key to be added to the registry. This value can be expressed either as **"***quoted string***"** or as a %*strkey*% token that is defined in the INF's [**Strings**](inf-strings-section.md) section. (If this is omitted for a string-type value, the *value-entry-name* is the default "unnamed" value entry for this key.)
+This optional value either names an existing value entry in the given (existing) *subkey* or creates the name of a new value entry to be added in the specified *subkey*, whether it already exists or is a new key to be added to the registry. This value can be expressed either as **"**<em>quoted string</em>**"** or as a %*strkey*% token that is defined in the INF's [**Strings**](inf-strings-section.md) section. (If this is omitted for a string-type value, the *value-entry-name* is the default "unnamed" value entry for this key.)
 
 The operating system supports some system-defined special *value-entry-name* keywords. See the end of this **Remarks** section for more information.
 
@@ -138,7 +138,7 @@ The given value entry and/or value is of type [REG_SZ](https://docs.microsoft.co
 
 **Note**  This value is the default type for a specified value entry, so the flags value can be omitted from any r*eg-root=* line in an *add-registry-section* that operates on a value entry of this type.
 
- 
+ 
 
 <a href="" id="0x00010000--flg-addreg-type-multi-sz-"></a>**0x00010000** (FLG_ADDREG_TYPE_MULTI_SZ)  
 The given value entry and/or value is of the registry type [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
@@ -163,9 +163,9 @@ The expression of such a *value* depends on the registry type specified for the 
 <a href="" id="security-descriptor-string"></a>*security-descriptor-string*  
 Specifies a security descriptor, to be applied to all registry entries created by the named *add-registry-section*. The *security-descriptor-string* is a string with tokens to indicate the DACL (**D:**) security component.
 
-If an *add-registry-section***.security** section is not specified, registry entries inherit the security settings of the parent key.
+If an <em>add-registry-section</em>**.security** section is not specified, registry entries inherit the security settings of the parent key.
 
-If an *add-registry-section***.security** section is specified, the following ACE's must be included so that installations and upgrades of devices and system service packs can occur:
+If an <em>add-registry-section</em>**.security** section is specified, the following ACE's must be included so that installations and upgrades of devices and system service packs can occur:
 
 -   (A;;GA;;;SY) − Grants all access to the local system.
 -   (A;;GA;;;BA) − Grants all access to built-in administrators.
@@ -189,7 +189,7 @@ Each *add-registry-section* name must be unique to the INF file, but it can be r
 
 **Note**  The lower-order bit of the low word in a flag value distinguishes between character and binary data.
 
- 
+ 
 
 To represent a number of a registry type other than one of the predefined REG_*XXX* types, specify a new type number in the high word of the *flag* ORed with FLG_ADDREG_BINVALUETYPE in its low word. The data for such a *value* must be specified in binary format as a sequence of bytes separated by commas. For example, to store 16 bytes of data of a new registry data type, such as 0x38, as a value entry, the add-registry section entry would be something like the following:
 
@@ -257,7 +257,7 @@ For more information about how to specify security descriptors, see [Creating Se
 An **UpperFilters** HKR **AddReg** entry specifies a PnP upper-filter driver. This entry in a [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section defines one or more device-specific upper-filter drivers. In a [**ClassInstall32**](inf-classinstall32-section.md) section, this entry defines one or more class-wide upper-filter drivers.
 
 <a href="" id="lowerfilters"></a>**LowerFilters**  
-A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a *DDInstall***.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
+A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a <em>DDInstall</em>**.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
 
 <a href="" id="exclusive"></a>**Exclusive**  
 An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an [*exclusive device*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exclusive-device). Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
@@ -267,7 +267,7 @@ An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link
 
 **Important**  Both the name of the DLL and **ExtensionPropSheetPageProc** callback function must be enclosed together within quotation marks (" ").
 
- 
+ 
 
 <a href="" id="locationinformationoverride"></a>**LocationInformationOverride**  
 (Windows XP and later versions of Windows) A **LocationInformationOverride** HKR **AddReg** entry can be used to specify a text string that describes a device's physical location. It overrides the **LocationInformation** string that the device's bus driver supplies in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674) request.
@@ -281,7 +281,7 @@ A **ResourcePickerExceptions** HKR **AddReg** entry specifies the resource confl
 Examples
 --------
 
-An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a *DDInstall***.Services** section of this INF.
+An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a <em>DDInstall</em>**.Services** section of this INF.
 
 ```cpp
 [Miniport_EventLog_AddReg]
@@ -319,9 +319,9 @@ HKR,,TypesSupported,0x00010001,7
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

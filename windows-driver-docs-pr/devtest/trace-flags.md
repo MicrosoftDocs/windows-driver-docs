@@ -22,9 +22,9 @@ When running a [trace session](trace-session.md), you can use the trace flags to
 
 You can change the trace flags while a trace session is running by reenabling the trace provider.
 
- 
+ 
 
- 
+ 
 
 
 

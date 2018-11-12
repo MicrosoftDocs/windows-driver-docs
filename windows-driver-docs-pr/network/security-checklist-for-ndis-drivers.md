@@ -22,9 +22,9 @@ To make sure that your driver follows good security practices, do the following:
 
 -   Run random packet generation tests to make sure that your drivers can resist bad packet information. In the future, such tests will be mandatory for device logo certification.
 
- 
+ 
 
- 
+ 
 
 
 

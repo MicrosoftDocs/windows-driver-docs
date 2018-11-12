@@ -32,9 +32,9 @@ For simplicity, edit the **MS3DPrinterDeviceConfig.xml** file as an **Administra
 
 Now you are ready to 3D print from an application like the 3D Builder app in Windows, or any store or desktop application that implements Windows native 3D printing.
 
- 
+ 
 
- 
+ 
 
 
 

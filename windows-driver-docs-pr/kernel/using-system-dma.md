@@ -22,9 +22,9 @@ Drivers of subordinate DMA devices use one of the following types of system-prov
 
 In addition, any driver that uses packet-based DMA can use support routines intended to streamline scatter/gather DMA, regardless of whether its device has built-in scatter/gather support. See [Using Scatter/Gather DMA](using-scatter-gather-dma.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

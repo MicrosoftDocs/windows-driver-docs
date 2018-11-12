@@ -35,9 +35,9 @@ ed videoprt!VpDisableRecovery 1
 
 After you have disabled EA recovery, put breakpoints in your display driver where you suspect the code is looping, and resume execution.
 
- 
+ 
 
- 
+ 
 
 
 

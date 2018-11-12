@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 A PSHED plug-in is installed like any other Windows [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840). For more information about how to install a driver package, see [Device Installation](https://msdn.microsoft.com/library/windows/hardware/ff541156).
 
- 
+ 
 
- 
+ 
 
 
 

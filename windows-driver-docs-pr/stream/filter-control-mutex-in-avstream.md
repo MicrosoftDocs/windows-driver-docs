@@ -59,9 +59,9 @@ To manipulate the filter control mutex, use the following functions:
 
 [**KsAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff560908), [**KsFilterAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff562523), [**KsPinAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff563485), [**KsReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff566780), [**KsFilterReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff562551), [**KsPinReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff563526)
 
- 
+ 
 
- 
+ 
 
 
 

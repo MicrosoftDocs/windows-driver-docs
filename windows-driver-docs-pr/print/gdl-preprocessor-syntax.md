@@ -27,11 +27,11 @@ GDL preprocessor directives must adhere to the following rules:
 
 **Note**   GDL syntax is more relaxed than GPD syntax. If you are writing for both parsers, you should follow the stricter syntax that is required for GPD.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

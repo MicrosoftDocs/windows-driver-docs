@@ -29,9 +29,9 @@ When [Driver Verifier](driver-verifier.md) issues a [**Bug Check 0xC4: DRIVER\_V
 
 For more information see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) and [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984).
 
- 
+ 
 
- 
+ 
 
 
 

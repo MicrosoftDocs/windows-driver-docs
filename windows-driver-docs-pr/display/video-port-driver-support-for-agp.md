@@ -52,7 +52,7 @@ Then, for an application to be able to see and use the committed pages in system
 
 **Note**   Whenever you use the AGP functions to commit or reserve an address range (physical or virtual), the size of the range must be a multiple of 64 kilobytes.
 
- 
+ 
 
 The video miniport driver is responsible for releasing and freeing all memory that it has reserved and committed by calling the following functions:
 
@@ -64,9 +64,9 @@ The video miniport driver is responsible for releasing and freeing all memory th
 
 -   [**AgpReleasePhysical**](https://msdn.microsoft.com/library/windows/hardware/ff538220) releases physical addresses that were reserved by a prior call to [**AgpReservePhysical**](https://msdn.microsoft.com/library/windows/hardware/ff538223).
 
- 
+ 
 
- 
+ 
 
 
 

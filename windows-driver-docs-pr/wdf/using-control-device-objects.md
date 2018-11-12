@@ -107,9 +107,9 @@ Some drivers have to delete their control device objects before the driver unloa
 
     In this case, the framework deletes the control device objects after the driver's [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694) callback function returns.
 
- 
+ 
 
- 
+ 
 
 
 

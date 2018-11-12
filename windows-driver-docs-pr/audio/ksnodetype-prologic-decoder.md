@@ -33,9 +33,9 @@ A KSNODETYPE\_PROLOGIC\_DECODER node should support the following required prope
 
 The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property sets and gets the channel configuration of the node's output stream.
 
- 
+ 
 
- 
+ 
 
 
 

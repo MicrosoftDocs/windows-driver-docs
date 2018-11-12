@@ -55,16 +55,16 @@ The CLOCK\_WATCHDOG\_TIMEOUT bug check has a value of 0x00000101. This indicates
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The specified processor is not processing interrupts. Typically, this occurs when the processor is nonresponsive or is deadlocked.
 
- 
+ 
 
- 
+ 
 
 
 

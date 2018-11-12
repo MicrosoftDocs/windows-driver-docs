@@ -129,11 +129,11 @@ Type of file information to be queried. This member can be one of the following 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileAttributeTagInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_ATTRIBUTE_TAG_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545750) structure for the file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545750" data-raw-source="[&lt;strong&gt;FILE_ATTRIBUTE_TAG_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545750)"><strong>FILE_ATTRIBUTE_TAG_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileBasicInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_BASIC_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545762) structure for the file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545762" data-raw-source="[&lt;strong&gt;FILE_BASIC_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545762)"><strong>FILE_BASIC_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileCompressionInformation</strong></p></td>
@@ -145,36 +145,36 @@ Type of file information to be queried. This member can be one of the following 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileInternalInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_INTERNAL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540318) structure for the file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540318" data-raw-source="[&lt;strong&gt;FILE_INTERNAL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540318)"><strong>FILE_INTERNAL_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileNameInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_NAME_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545817) structure for the file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817" data-raw-source="[&lt;strong&gt;FILE_NAME_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545817)"><strong>FILE_NAME_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileNetworkOpenInformation</strong></p></td>
-<td align="left"><p>Return a single [<strong>FILE_NETWORK_OPEN_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545822) structure for the file.</p></td>
+<td align="left"><p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545822" data-raw-source="[&lt;strong&gt;FILE_NETWORK_OPEN_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545822)"><strong>FILE_NETWORK_OPEN_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FilePositionInformation</strong></p></td>
-<td align="left"><p>Return a single [<strong>FILE_POSITION_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545848) structure for the file.</p></td>
+<td align="left"><p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848" data-raw-source="[&lt;strong&gt;FILE_POSITION_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545848)"><strong>FILE_POSITION_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileStandardInformation</strong></p></td>
-<td align="left"><p>Return a single [<strong>FILE_STANDARD_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545855) structure for the file.</p></td>
+<td align="left"><p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545855" data-raw-source="[&lt;strong&gt;FILE_STANDARD_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545855)"><strong>FILE_STANDARD_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileStreamInformation</strong></p></td>
-<td align="left"><p>Return a single [<strong>FILE_STREAM_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540364) structure for the file.</p></td>
+<td align="left"><p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff540364" data-raw-source="[&lt;strong&gt;FILE_STREAM_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540364)"><strong>FILE_STREAM_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileHardLinkInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_LINKS_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff728841) structure for the file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff728841" data-raw-source="[&lt;strong&gt;FILE_LINKS_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff728841)"><strong>FILE_LINKS_INFORMATION</strong></a> structure for the file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--parameters-queryfile-length"></a>*IrpSp-&gt;Parameters.QueryFile.Length*
 Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
@@ -223,9 +223,9 @@ The *Irp-&gt;AssociatedIrp.UserBuffer* is used internally by the I/O manager and
 
 [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052)
 
- 
+ 
 
- 
+ 
 
 
 

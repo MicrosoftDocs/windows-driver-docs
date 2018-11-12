@@ -66,9 +66,9 @@ If the three instances of the MFT0 can communicate with each other, this may sol
 
 Although communication between instances of the MFT0 solves the major user experience issues, three instances of video effects must still be running concurrently. Some video effects can use most available CPU resources, particularly when full screen video is being previewed and captured at the same time. These are serious issues. For performance reasons, each ISV should consider what processing may be performed once, such as face detection, and shared with all instances of MFT0.
 
- 
+ 
 
- 
+ 
 
 
 

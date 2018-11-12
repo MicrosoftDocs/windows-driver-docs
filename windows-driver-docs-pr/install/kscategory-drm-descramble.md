@@ -43,7 +43,7 @@ The KSCATEGORY_DRM_DESCRAMBLE [device interface class](https://msdn.microsoft.co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

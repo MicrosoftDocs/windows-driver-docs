@@ -60,9 +60,9 @@ If UMDF Verifier is on, memory leaks are detected at driver unload, just as in K
 
 For additional information about using reference counts in KMDF and UMDF version 2 drivers, see [Framework Object Life Cycle](framework-object-life-cycle.md).
 
- 
+ 
 
- 
+ 
 
 
 

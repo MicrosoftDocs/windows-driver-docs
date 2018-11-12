@@ -39,9 +39,9 @@ If a changer does not support the functionality implied by a given routine, its 
 
 For more information about the required **Changer***Xxx* routines for changer miniclass drivers, see [Changer Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff551472). For more information about the changer-specific I/O control codes for device control requests, see [Changer I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff551469).
 
- 
+ 
 
- 
+ 
 
 
 

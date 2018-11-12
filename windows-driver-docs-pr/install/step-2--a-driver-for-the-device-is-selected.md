@@ -38,8 +38,8 @@ Depending on the operating system version, Windows searches for matching driver 
 <td align="left">Before a driver is installed</td>
 <td align="left"><p>DevicePath</p>
 <p>Windows Update</p>
-<p>[Driver store](driver-store.md)</p></td>
-<td align="left">[Driver store](driver-store.md)</td>
+<p><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></p></td>
+<td align="left"><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></td>
 </tr>
 <tr class="even">
 <td align="left">After initial driver is selected</td>
@@ -50,7 +50,7 @@ Depending on the operating system version, Windows searches for matching driver 
 </tbody>
 </table>
 
- 
+ 
 
 For example, if a user plugs a wireless local area network (WLAN) adapter into a port of a USB hub on a computer that is running Windows 7, the following steps occur:
 
@@ -68,7 +68,7 @@ For example, if a user plugs a wireless local area network (WLAN) adapter into a
 
 **Note**  Starting with Windows Vista, the operating system always installs a [driver package](driver-packages.md) from the [driver store](driver-store.md). If a matching driver package is found in another location, Windows first stages the package to the driver store before it installs the driver for the device.
 
- 
+ 
 
 As another example, if a user plugs a WLAN adapter into a port of a USB hub on a computer that is running Windows 8, the following steps occur:
 
@@ -98,9 +98,9 @@ Once Windows has selected a driver for the device, Windows installs the driver a
 
 For more information about how drivers are selected for a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

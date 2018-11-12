@@ -38,9 +38,9 @@ Resolution
 
 Ensure that you are not recursively acquiring the lock. And, for threads that hold a spin lock, ensure that you are not decreasing the thread IRQL to a level below the IRQL of the spin lock that it is holding.
 
- 
+ 
 
- 
+ 
 
 
 

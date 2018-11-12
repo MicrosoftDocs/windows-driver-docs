@@ -25,9 +25,9 @@ The following sections discuss the issues involved in developing a minidriver th
 
 [WIA-TWAIN Risks](wia-twain-risks.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ Blocks of commands are surrounded by braces. When each block is entered, all ali
 
 Each block must begin with a control flow token. If you wish to create a block for the sole purpose of evaluating aliases, you should prefix it with the **.block** token, since this token has no effect other than to allow a block to be introduced.
 
- 
+ 
 
- 
+ 
 
 
 

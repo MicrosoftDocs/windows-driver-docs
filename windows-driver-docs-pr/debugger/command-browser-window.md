@@ -51,9 +51,9 @@ A command that you enter in a Command Browser window executes synchronously, so 
 
 Command Browser windows are saved in the WinDbg workspace, but the command histories are not saved. Only the current command for each Command Browser window is saved in the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

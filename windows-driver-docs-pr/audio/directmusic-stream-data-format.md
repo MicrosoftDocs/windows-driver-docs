@@ -26,9 +26,9 @@ This example uses a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/window
   DataFormat.Specifier   = STATICGUIDOF(KSDATAFORMAT_SPECIFIER_NONE);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 State block handling is different for a device operating in pure device mode. In this mode, the state block control DP2 token (D3DDP2OP\_STATESET) is sent to the driver with a new operation type (in the **dwOperations** field). This new operation type is D3DHAL\_STATESETCREATE.
 
- 
+ 
 
- 
+ 
 
 
 

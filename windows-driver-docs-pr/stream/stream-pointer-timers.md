@@ -21,9 +21,9 @@ To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](ht
 
 To cancel a timeout, call [**KsStreamPointerCancelTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff567128).
 
- 
+ 
 
- 
+ 
 
 
 

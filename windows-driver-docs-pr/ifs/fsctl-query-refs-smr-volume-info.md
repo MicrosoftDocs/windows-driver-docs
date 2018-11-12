@@ -109,9 +109,9 @@ Requirements
 
 [**REFS\_SMR\_VOLUME\_GC\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt842918)
 
- 
+ 
 
- 
+ 
 
 
 

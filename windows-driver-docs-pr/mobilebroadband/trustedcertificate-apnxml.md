@@ -53,7 +53,7 @@ The TrustedCertificate element specifies a trusted certificate for the specified
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -76,13 +76,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificateList](trustedcertificatelist.md)</p></td>
+<td><p><a href="trustedcertificatelist.md" data-raw-source="[TrustedCertificateList](trustedcertificatelist.md)">TrustedCertificateList</a></p></td>
 <td><p>Specifies a list of trusted certificates for the operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -103,9 +103,9 @@ There are no child elements.
 
 The TrustedCertificate element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -44,9 +44,9 @@ This section includes:
 
 [Managing NetDMA Interrupts](managing-netdma-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

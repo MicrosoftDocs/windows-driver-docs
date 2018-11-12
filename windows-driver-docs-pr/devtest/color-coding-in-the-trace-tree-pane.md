@@ -23,9 +23,9 @@ SDV uses colors to help you quickly interpret what you see.
 
 -   **Blue highlight** indicates the **Trace Tree** pane element that is associated with a line of code that is selected in the **Source Code** pane. The blue highlight appears only when a line of code is selected in the **Source Code** pane.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ The following example is taken from the *wiascanr* sample (which is included in 
      WiaItemTypeRoot | WiaItemTypeFolder|WiaItemTypeDevice;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ System-wide registry settings affect all processes running on Windows. They are 
 
 4.  Restart Windows to make the changes effective.
 
- 
+ 
 
- 
+ 
 
 
 

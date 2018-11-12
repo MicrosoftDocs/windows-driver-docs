@@ -19,9 +19,9 @@ This section contains the following topics:
 
 [Performing Diagnostics on a WIA Device](performing-diagnostics-on-a-wia-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

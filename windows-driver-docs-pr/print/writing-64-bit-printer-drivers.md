@@ -68,9 +68,9 @@ ulSlotPhysAddr
 ```
 
 might represent the value of a hardware register that is only 32 bits long rather than 64 bits long. For a list of all the new Win64 helper functions for converting between pointer and integer types, see [The New Data Types](https://msdn.microsoft.com/library/windows/hardware/ff564619).
- 
+ 
 
- 
+ 
 
 
 

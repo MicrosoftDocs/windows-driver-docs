@@ -27,9 +27,9 @@ GDI also manages all attributes. GDI passes attributes to the driver as brushes;
 
 Whenever a driver needs to use a brush not yet realized, it calls back to GDI. GDI allocates memory for the brush and calls the driver to realize it and, if necessary, dither it.
 
- 
+ 
 
- 
+ 
 
 
 

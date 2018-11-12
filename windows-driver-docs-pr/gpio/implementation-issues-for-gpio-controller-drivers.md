@@ -20,9 +20,9 @@ The *CLIENT\_ReadGpioPins* and *CLIENT\_WriteGpioPins* functions receive a bank 
 
 The *CLIENT\_ReadGpioPinsUsingMask* and *CLIENT\_WriteGpioPinsUsingMask* callback functions can read or write a bank of up to 64 pins in one call. The *CLIENT\_ReadGpioPinsUsingMask* function reads the GPIO pin values into a 64-bit mask. The *CLIENT\_WriteGpioPinsUsingMask* function uses two 64-bit masks. One mask indicates which GPIO pins to set, and the other mask indicates which GPIO pins to clear. This implementation is typically used for memory-mapped GPIO controllers.
 
- 
+ 
 
- 
+ 
 
 
 

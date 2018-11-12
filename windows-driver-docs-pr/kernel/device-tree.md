@@ -34,9 +34,9 @@ There are other relationships between devices on the machine besides the hierarc
 
 You cannot make any assumptions about the order in which the device tree is built, except that a bus device is configured before any of its child devices. For example, you should not assume that one device on a bus is configured before another device on the bus.
 
- 
+ 
 
- 
+ 
 
 
 

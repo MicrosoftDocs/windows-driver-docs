@@ -31,9 +31,9 @@ If you are writing a driver for a device that does not support Plug and Play (Pn
 
 If your device does not support PnP, your driver does *not* provide an [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function. Instead, the driver must determine if its device is present.
 
- 
+ 
 
- 
+ 
 
 
 

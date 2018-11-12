@@ -30,15 +30,15 @@ The underlying miniport adapter must use the most recent OID\_GEN\_RECEIVE\_SCAL
 
 **Note**  An overlying driver can use the [OID\_GEN\_RECEIVE\_HASH](oid-gen-receive-hash.md) OID to enable and configure hash calculations on received frames without enabling RSS.
 
- 
+ 
 
 **Note**  Protocol drivers must disable receive hash calculations ([OID\_GEN\_RECEIVE\_HASH](oid-gen-receive-hash.md)) before they enable RSS. If RSS is enabled, a protocol driver disables RSS before it enables receive hash calculations. A miniport driver should fail a set request with **NDIS\_STATUS\_INVALID\_OID** or **NDIS\_STATUS\_NOT\_SUPPORTED** to enable RSS if OID\_GEN\_RECEIVE\_HASH is currently enabled.
 
- 
+ 
 
 **Note**  The indirection table and secret key are appended after the [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567228) structure members. For more information about the indirection table and secret key, see **NDIS\_RECEIVE\_SCALE\_PARAMETERS**.
 
- 
+ 
 
 Requirements
 ------------
@@ -67,9 +67,9 @@ Requirements
 
 [OID\_GEN\_RECEIVE\_HASH](oid-gen-receive-hash.md)
 
- 
+ 
 
- 
+ 
 
 
 

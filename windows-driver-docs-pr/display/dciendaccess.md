@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCIEndAccess** function releases access to display frame buffer.
 
- 
+ 
 
- 
+ 
 
 
 

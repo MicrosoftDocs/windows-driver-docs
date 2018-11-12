@@ -32,9 +32,9 @@ The Printer property has the following child properties:
 
 [Status Section](status-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

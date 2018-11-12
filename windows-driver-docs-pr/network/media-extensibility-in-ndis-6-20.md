@@ -25,9 +25,9 @@ NDIS 6.20 introduces enhanced support for media specific out of band (OOB) data.
 
 For more information about media specific information, for more information about media extensibility, see [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](https://msdn.microsoft.com/library/windows/hardware/ff569622) and [**NDIS\_NBL\_MEDIA\_SPECIFIC\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff566518).
 
- 
+ 
 
- 
+ 
 
 
 

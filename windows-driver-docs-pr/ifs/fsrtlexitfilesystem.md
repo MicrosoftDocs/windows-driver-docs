@@ -25,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID FsRtlExitFileSystem(
-   VOID 
+   VOID 
 );
 ```
 
@@ -114,9 +114,9 @@ Requirements
 
 [**KeRaiseIrqlToDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553084)
 
- 
+ 
 
- 
+ 
 
 
 
