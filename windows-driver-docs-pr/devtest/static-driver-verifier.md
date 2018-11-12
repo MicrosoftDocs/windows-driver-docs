@@ -32,6 +32,8 @@ ms.localizationpriority: medium
 <p><strong>Visual Studio Integration</strong></p>
 <p>Static Driver Verifier is integrated into Visual Studio. You can run static analysis on your Visual Studio driver project. You can launch, configure, and control Static Driver Verifier from the <strong>Driver</strong> menu in Visual Studio.</p>
 <p><strong>Static Driver Verifier Documentation</strong></p>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/develop/static-driver-verifier-known-issues">Static Driver Verifier Known Issues</a>
+<p>Lists latest known issues for Static Driver Verifier</p>
 <a href="using-static-driver-verifier-to-find-defects-in-drivers.md" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](using-static-driver-verifier-to-find-defects-in-drivers.md)">Using Static Driver Verifier to Find Defects in Drivers</a>
 <p>Tells you what you need to get started analyzing your driver code in the Visual Studio environment.</p>
 <a href="-static-driver-verifier-commands--msbuild-.md" data-raw-source="[Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md)">Static Driver Verifier commands (MSBuild)</a>
