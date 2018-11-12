@@ -26,7 +26,7 @@ UINT32 NetRingPacketIteratorGetCount(
 
 `Iterator`
 
-A pointer to a [**NET_PACKET_ITERATOR**](net-packet-iterator.md).
+A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md).
 
 ## Return Value
 
@@ -44,4 +44,4 @@ Returns the number of packets between this packet iterator's current index inclu
 
 [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
 
-[**NET_PACKET_ITERATOR**](net-packet-iterator.md)
+[**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
