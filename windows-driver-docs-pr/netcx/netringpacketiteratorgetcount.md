@@ -30,7 +30,7 @@ A pointer to a [**NET_PACKET_ITERATOR**](net-packet-iterator.md).
 
 ## Return Value
 
-Returns the number of packets between this packet iterator's current index inclusive and its **End** index. For example, if the iterator's **Index** is **1** and its **End** index is **5**, the iterator currently covers **4** packets.
+Returns the number of packets between this packet iterator's current index inclusive and its **End** index. For example, if the iterator's **Index** is **1** and its **End** index is **5**, the iterator currently covers **4** packets: **1**, **2**, **3**, and **4**.
 
 ## Requirements
 

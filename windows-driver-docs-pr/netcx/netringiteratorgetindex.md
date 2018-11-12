@@ -30,7 +30,7 @@ Either a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) or a [**NET
 
 ## Return Value
 
-Returns the iterator's current **Index**.
+Returns the iterator's current **Index** in the **NET_RING** over which it is iterating.
 
 ## Requirements
 
@@ -47,3 +47,5 @@ Returns the iterator's current **Index**.
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
+
+**NET_RING**

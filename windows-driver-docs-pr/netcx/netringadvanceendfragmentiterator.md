@@ -1,6 +1,6 @@
 ---
 title: NetRingAdvanceEndFragmentIterator function
-description: The NetRingAdvanceEndFragmentIterator method advances the index of a NET_RING_FRAGMENT_ITERATOR to the end index of the range in a fragment ring that a client driver owns.
+description: The NetRingAdvanceEndFragmentIterator method advances the current index of a NET_RING_FRAGMENT_ITERATOR to the iterator's End index.
 ms.assetid: D1D7BDF5-219B-406B-9CDE-92FC67C4D148
 keywords:
 - NetAdapterCx NetRingAdvanceEndFragmentIterator, NetCx NetRingAdvanceEndFragmentIterator
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingAdvanceEndFragmentIterator** method advances the index of a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) to the end index of the range in a fragment ring that a client driver owns.
+The **NetRingAdvanceEndFragmentIterator** method advances the current index of a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) to the iterator's **End** index.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ None.
 
 ## Remarks
 
-After calling **NetRingAdvanceEndFragmentIterator**, the fragment iterator's index advances to the fragment ring's **EndIndex**. Therefore, the fragments between the old value of iterator's **Index** and the ring's **EndIndex** inclusive are transferred to the OS. This means the client driver no longer owns any fragments.
+After calling **NetRingAdvanceEndFragmentIterator**, the fragment iterator's current **Index** advances to the iterator's **End** index. Therefore, the fragments between the old value of iterator's **Index** and the iterator's **End - 1** inclusive are transferred to the OS.
 
 Client drivers typically call **NetRingAdvanceEndFragmentIterator** to either process a batch of fragments in a range or cancel all fragments in the ring.
 
