@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 The user or system administrator starts the upgrade process by taking either of the following actions:
 
@@ -54,9 +54,9 @@ NetSetup generates the AnswerFile as follows:
 
 5.  After the AnswerFile is completely generated, NetSetup copies the vendor-supplied upgrade files to the appropriate directories and then boots into the text mode phase of the upgrade process.
 
- 
+ 
 
- 
+ 
 
 
 

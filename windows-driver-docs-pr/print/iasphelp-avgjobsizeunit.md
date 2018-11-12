@@ -63,7 +63,7 @@ A caller-supplied pointer to a memory location that receives one of the values i
 </tbody>
 </table>
 
- 
+ 
 
 Return value
 ------------

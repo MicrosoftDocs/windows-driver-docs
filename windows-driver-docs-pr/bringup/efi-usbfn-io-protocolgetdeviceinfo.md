@@ -81,7 +81,7 @@ A pointer to a buffer in which the requested information will be returned as a U
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -93,9 +93,9 @@ If the supplied Buffer is too small or NULL, the method fails with **EFI\_BUFFER
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

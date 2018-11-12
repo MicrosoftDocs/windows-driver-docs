@@ -18,9 +18,9 @@ A *GDL keyword* is a token that consists of characters from the set \[A-Z, a-z, 
 
 A GDL keyword is required for any GDL entry. The keyword is followed by an optional [value](gdl-values.md). If a value is supplied, the keyword and value must be separated by a colon (:). Optional [whitespace characters](gdl-whitespace-characters.md) can also appear between the keyword and value.
 
- 
+ 
 
- 
+ 
 
 
 

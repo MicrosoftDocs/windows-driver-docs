@@ -54,9 +54,9 @@ Windows also provides a hardware error management API so that user-mode error ma
 
 For more information about how to implement a WHEA management application, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

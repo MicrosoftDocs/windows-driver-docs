@@ -24,9 +24,9 @@ The topics in this section address the interaction between a Wi-Fi hotspot opera
 
 [Mobile operator scenarios](mobile-operator-scenarios-b-mb.md)
 
- 
+ 
 
- 
+ 
 
 
 

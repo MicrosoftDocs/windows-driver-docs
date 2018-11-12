@@ -27,11 +27,13 @@ When the miniport driver issues the **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARA
 
 1.  The miniport driver initializes an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure with the current VM queue parameters on the network adapter. The driver must also set the **Flags** member of this structure with the appropriate NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_*Xxx*\_CHANGED flags to report on **NDIS\_RECEIVE\_QUEUE\_PARAMETERS** member values that have changed.
 
-    **Note**  Starting with NDIS 6.30, the miniport driver can only issue an **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS** status indication to report on changes to the **InterruptCoalescingDomainId** member.
+    **Note**  Starting with NDIS 6.30, the miniport driver can only issue an **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS** status indication to report on changes to the **InterruptCoalescingDomainId** member.
 
-     
 
-    When the miniport driver initializes the **Header** member of this structure, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT. The miniport driver sets the **Revision** member of **Header** to NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2 and the **Size** member to NDIS\_SIZEOF\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2.
+
+~~~
+When the miniport driver initializes the **Header** member of this structure, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT. The miniport driver sets the **Revision** member of **Header** to NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2 and the **Size** member to NDIS\_SIZEOF\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2.
+~~~
 
 2.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure in the following way:
 
@@ -75,9 +77,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
 
- 
 
- 
+
+
 
 
 

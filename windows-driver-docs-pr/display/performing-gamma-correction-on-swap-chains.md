@@ -23,9 +23,9 @@ The driver sets the D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION capability bit in t
 
 For more information about **IDirect3DSwapChain*Xxx*::Present**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

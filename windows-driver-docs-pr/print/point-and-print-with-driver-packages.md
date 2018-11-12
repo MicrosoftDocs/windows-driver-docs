@@ -24,9 +24,9 @@ The point and print process is different in Windows Vista from earlier versions 
 
 Driver package installation requires a driver store, which is not available on versions of Windows earlier than Windows Vista. When a client that is running an earlier version of Windows connects to a Windows Vista print server, the print server uses point and print without packages to install the printer on the client computer.
 
- 
+ 
 
- 
+ 
 
 
 

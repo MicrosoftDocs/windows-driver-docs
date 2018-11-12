@@ -57,9 +57,9 @@ The greatest number of bytes allocated at any single time since the last boot to
 
 Allocations whose size is one page or larger are not tracked by Pool Tracking and cannot be allocated from the special pool. These individual counters do not reflect these large allocations. A count of all such allocations can be seen in the [global counters](monitoring-global-counters.md).
 
- 
+ 
 
- 
+ 
 
 
 

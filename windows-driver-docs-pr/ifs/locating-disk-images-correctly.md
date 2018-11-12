@@ -40,11 +40,11 @@ Image Data Area
 0 (byte offset)
 4096
 8192
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

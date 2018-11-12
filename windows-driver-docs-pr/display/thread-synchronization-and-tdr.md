@@ -37,11 +37,11 @@ After the cleanup period is over, the operating system calls the driver's [*Dxgk
 
 **Note**  TDR functionality has been updated for Windows 8. See [TDR changes in Windows 8](tdr-changes-in-windows-8.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ This section describes the properties and values of the bidirectional communicat
 
 [Status Section](status-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

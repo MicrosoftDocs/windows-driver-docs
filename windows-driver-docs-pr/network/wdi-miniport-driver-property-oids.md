@@ -60,11 +60,11 @@ Indicates that support for the object is optional. The miniport driver can eithe
 | [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md)                   |     |     | O   |
 | [OID\_WDI\_TCP\_RSC\_STATISTICS](oid-wdi-tcp-rsc-statistics.md)                                    |     |     | O   |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START to disable any transform tha
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -76,9 +76,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

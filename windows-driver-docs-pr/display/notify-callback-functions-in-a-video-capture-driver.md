@@ -32,9 +32,9 @@ The video capture driver supplies a *NotifyCallback* function to the DirectDraw 
 
 Thereafter, when an event that is associated with the function identifier occurs, the DirectDraw runtime calls the *NotifyCallback* function. The video capture driver's *NotifyCallback* is implemented to perform operations related to the event.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 A 64-bit WIA minidriver is loaded into the WIA service's process, which is a 64-bit process in 64-bit editions of the Windows operating system. As a result, a WIA driver for the x64-based versions of Windows XP, Windows Server 2003, and Windows Vista can contain only 64-bit driver components. For example, it must contain a 64-bit minidriver, 64-bit WIA minidriver UI extensions, and potentially a 64-bit kernel-mode driver.
 
- 
+ 
 
- 
+ 
 
 
 

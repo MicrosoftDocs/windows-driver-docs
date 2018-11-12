@@ -48,7 +48,7 @@ Specifies the address of the shared cache map.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ Remarks
 
 In Windows XP and later versions of Windows, use the [**dt nt!\_SHARED\_CACHE\_MAP Address**](dt--display-type-.md) command instead of **!scm**.
 
- 
+ 
 
- 
+ 
 
 
 

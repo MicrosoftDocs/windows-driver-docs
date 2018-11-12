@@ -45,7 +45,7 @@ If DXGI\_DDI\_PRIMARY\_OPTIONAL is not set for a front buffer or the proxy surfa
 
 **Note**   Failing the create call without setting DXGI\_DDI\_PRIMARY\_DRIVER\_FLAG\_NO\_SCANOUT is reserved for real failure cases, like out of memory.
 
- 
+ 
 
 DXGI exploits this opt-out methodology when it attempts to create a full-screen presentation chain for an MSAA or rotated back buffer. If the driver will not scan-out any or both of these types, the driver will opt out. DXGI will then attempt to create a non-rotated surface, a non-MSAA surface, or both until the driver accepts the resource creation. Therefore, DXGI will fall back progressively until the non-optional surface exactly matches the front buffer format, sample count, rotation, and size.
 
@@ -61,9 +61,9 @@ Also, note that applications can resize their back buffers dynamically while the
 
 Finally, you should be aware of the situation that occurs with respect to MSAA back buffers if the driver does not opt out of MSAA scan-out. In this situation, the driver opts in the scan-out of MSAA. Therefore, DXGI interchanges the MSAA back buffer and MSAA front buffer through flip operations, and performs a resolve operation by what is equivalent to the digital-to-analog converter (DAC). In this situation, the application can resize its back buffers dynamically while in full-screen mode, which forces DXGI to switch to calling the driver's [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function. Because the MSAA characteristics of the back buffer and front buffer still match, DXGI will specify that the driver perform a non-resolving, possibly color-converting, stretch bitblt. The driver should then replicate, without resolve, multisamples to the front buffer, which is necessary if a driver chooses to scan-out MSAA.
 
- 
+ 
 
- 
+ 
 
 
 

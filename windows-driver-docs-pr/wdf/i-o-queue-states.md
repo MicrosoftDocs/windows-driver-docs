@@ -50,9 +50,9 @@ Your driver can change an I/O queue's state by:
 
 To obtain an I/O queue's current state, your driver can call [**WdfIoQueueGetState**](https://msdn.microsoft.com/library/windows/hardware/ff548437).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,21 +48,21 @@ Parameter 1 is the only parameter of interest; this identifies the nature of the
 </tr>
 <tr class="odd">
 <td align="left"><p>0x03</p></td>
-<td align="left"><p>A driver has written to Windows-controlled portions of a PCI device's configuration space.</p></td>
+<td align="left"><p>A driver has written to Windows-controlled portions of a PCI device&#39;s configuration space.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The PCI driver detected an error in a device or BIOS being verified.
 
- 
+ 
 
- 
+ 
 
 
 

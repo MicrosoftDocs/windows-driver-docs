@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 
 **Dual-Prime MC**: At the lowest layer, there is virtually no distinction between dual-prime and the field-structured field motion compensation with bidirectional prediction. The differences are manifested in the frame-buffer selections from which reference blocks are formed. Dual-prime motion compensation in field-structured pictures always consists of two 16x16 prediction blocks (the same and opposite parity predictions).
 
- 
+ 
 
- 
+ 
 
 
 

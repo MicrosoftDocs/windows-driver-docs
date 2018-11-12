@@ -31,7 +31,7 @@ The following list includes system-defined classes and class GUIDs for file syst
 
 **Note**   Three load order groups do not appear in the list, because they are not considered setup classes and thus do not have class GUIDs assigned to them: Filter, FSFilter Top, and FSFilter Bottom.
 
- 
+ 
 
 <span id="FSFilter_Activity_Monitor"></span><span id="fsfilter_activity_monitor"></span><span id="FSFILTER_ACTIVITY_MONITOR"></span>FSFilter Activity Monitor<br/>
 Class = ActivityMonitor<br/>
@@ -100,9 +100,9 @@ ClassGuid = {5d1b9aaa-01e2-46af-849f-272b3f324c46}
 <span id="FSFilter_Infrastructure"></span><span id="fsfilter_infrastructure"></span><span id="FSFILTER_INFRASTRUCTURE"></span>FSFilter Infrastructure<br/>
 Class = Infrastructure<br/>
 ClassGuid = {e55fa6f9-128c-4d04-abab-630c74b1453a}
- 
+ 
 
- 
+ 
 
 
 

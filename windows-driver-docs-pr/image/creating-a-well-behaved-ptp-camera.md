@@ -23,9 +23,9 @@ The following points must be considered to create a PTP camera that works proper
 
 [Image Geometry Properties](image-geometry-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ The following operations occur when a CoNDIS WAN miniport driver receives a netw
 
 4.  To forward the packet, NDIS calls the [**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267) function of bound overlying protocol drivers.
 
- 
+ 
 
- 
+ 
 
 
 

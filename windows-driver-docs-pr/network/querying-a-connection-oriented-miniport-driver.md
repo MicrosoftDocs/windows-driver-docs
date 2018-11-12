@@ -62,9 +62,9 @@ A miniport driver must never use the NDIS\_MAC\_OPTION\_RESERVED flag, which is 
 
 For more information, see [OIDs for Connection-Oriented Call Managers and Clients](https://msdn.microsoft.com/library/windows/hardware/ff569067) and [General Objects](https://msdn.microsoft.com/library/windows/hardware/ff546510).
 
- 
+ 
 
- 
+ 
 
 
 

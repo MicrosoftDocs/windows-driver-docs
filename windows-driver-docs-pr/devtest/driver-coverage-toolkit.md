@@ -13,7 +13,7 @@ The Driver Coverage toolkit monitors and reports on the various I/O request pack
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The Driver Coverage toolkit is included in the Windows Driver Kit (WDK) and is run from Visual Studio as part of the [Device Fundamentals Tests](device-fundamentals-tests.md).
 
@@ -37,9 +37,9 @@ This section contains the following topics:
 
 [How to Analyze IRP Coverage Data](how-to-analyze-irp-coverage-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

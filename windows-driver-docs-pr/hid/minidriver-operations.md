@@ -254,9 +254,9 @@ In compliance with WDM requirements, a HID minidriver sends power requests down 
 
 Typically, the HID minidriver passes power requests down the device stack without additional processing.
 
- 
+ 
 
- 
+ 
 
 
 

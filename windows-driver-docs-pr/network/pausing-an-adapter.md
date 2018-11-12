@@ -32,9 +32,9 @@ After a miniport driver completes all outstanding send and receive operations, t
 
 NDIS does not initiate other Plug and Play operations, such as halt, initialize, power change, or restart operations, while the miniport driver is in the Pausing state. NDIS can initiate these Plug and Play operations after a miniport driver is in the Paused state.
 
- 
+ 
 
- 
+ 
 
 
 

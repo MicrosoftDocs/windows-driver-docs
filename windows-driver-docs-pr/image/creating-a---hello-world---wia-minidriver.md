@@ -25,9 +25,9 @@ The following files are used to create the "Hello World" WIA Minidriver:
 
 For information about how to add a custom UI to a minidriver, see, [Creating a "Hello World" WIA Minidriver UI Extension](creating-a--hello-world--wia-minidriver-ui-extension.md).
 
- 
+ 
 
- 
+ 
 
 
 

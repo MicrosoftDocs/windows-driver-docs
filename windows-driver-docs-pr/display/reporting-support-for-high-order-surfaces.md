@@ -33,9 +33,9 @@ When this device capability is set, the hardware architecture does not require c
 
 Device supports n-patches.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The following screen shot shows an example of a Watch window.
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 
- 
+ 
 
- 
+ 
 
 
 

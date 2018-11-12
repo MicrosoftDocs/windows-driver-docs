@@ -32,9 +32,9 @@ Support for **IRP\_MN\_POWER\_SEQUENCE** is optional. This IRP provides an optim
 
 A power IRP can specify a system power operation or a device power operation. [Power IRPs for the system](power-irps-for-the-system.md) and [power IRPs for individual devices](power-irps-for-individual-devices.md) take slightly different paths through a device stack, as explained in the following sections.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,9 +48,9 @@ Data Type:BIDI\_INT
 
 Description:The currently available free space, in megabytes (MB), of the installed hard disk.
 
- 
+ 
 
- 
+ 
 
 
 

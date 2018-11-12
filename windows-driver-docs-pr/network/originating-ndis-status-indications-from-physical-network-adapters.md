@@ -29,13 +29,13 @@ The following figure shows the Hyper-V extensible switch control path for NDIS s
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensions* and the driver stack is known as the *extensible switch driver stack*.
 
- 
+ 
 
 A forwarding extension can originate encapsulated hardware offload status indications to overlying drivers in the extensible switch driver stack. This also allows the extension to change the current offload capabilities of the underlying team of physical adapters that are bound to the external network adapter of the extensible switch. When a team of adapters are bound to the external network adapter, only the common capabilities of the team are advertised to NDIS or overlying protocol and filter drivers. The extension can extend the advertised capabilities by originating encapsulated status indications to advertise capabilities that are supported by some adapters in the team. For example, the extension can issue an encapsulated [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh439814) indication to change the currently enabled receive filter capabilities for the entire team.
 
 **Note**  Only forwarding extensions can originate encapsulated status indications. For more information about this type of extension, see [Forwarding Extension](forwarding-extensions.md).
 
- 
+ 
 
 Typically, the forwarding extension originates encapsulated NDIS status indications to change the advertised hardware offload capabilities of the underlying physical adapter. For example, the extension can originate status indications for the following types of hardware offloads:
 
@@ -58,7 +58,7 @@ If the forwarding extension originates an encapsulated NDIS status indication fo
 
     **Note**  The forwarding extension must also set this member to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX** if only a single physical network adapter is bound to the external network adapter.
 
-     
+     
 
 -   The **StatusIndication** member must be set to a pointer to an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure. This structure contains the data for the encapsulated NDIS status indication.
 
@@ -84,19 +84,19 @@ When the extension issues the encapsulated NDIS status indication, it must follo
 
     **Note**  If [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) does not return NDIS\_STATUS\_SUCCESS, the encapsulated NDIS status indication cannot be issued.
 
-     
+     
 
 2.  The extension calls [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824) to forward the encapsulated status notification.
 
     **Note**  If the extension is forwarding a filtered OID request, it must call [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824) within the context of the call to its [*FilterStatus*](https://msdn.microsoft.com/library/windows/hardware/ff549973) function.
 
-     
+     
 
 3.  After [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824) returns, the extension calls [*DereferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598141) to clear the reference counter for the source or destination network adapter connection. The extension sets the *SwitchPortId* and *SwitchNicIndex* parameters to the same values that it used in the call to [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,8 +25,8 @@ The miniport driver can begin a power state transition by calling [**AtaPortRequ
 
 Doing idle detection from a miniport driver is strongly discouraged.
 
- 
+ 
 
- 
+ 
 
 

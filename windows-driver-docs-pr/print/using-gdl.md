@@ -21,9 +21,9 @@ The following sections show how to use GDL to create configurations and snapshot
 
 [GDL Snapshots](gdl-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

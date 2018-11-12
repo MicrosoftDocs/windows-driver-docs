@@ -35,9 +35,9 @@ All driver handles for a rendering device object and its children objects underg
 
 2.  If the runtime can allocate enough space to satisfy the size required by the user-mode display driver, the runtime will then call a *Create***ObjType** function (for example, [**CreateResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540691)) with the same creation parameters, along with the new unique value for the driver handle. The pointer value of the driver handle will be unique and constant for the life span of the handle, as it points to a region of memory the size of which was returned by *CalcPrivate***ObjType***Size*. The user-mode display driver can use this region of memory as required. The driver should gain an increase in efficiency by locating any frequently accessed data into the region of memory provided by the runtime.
 
- 
+ 
 
- 
+ 
 
 
 

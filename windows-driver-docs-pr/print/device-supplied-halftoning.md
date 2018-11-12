@@ -35,9 +35,9 @@ If your printer provides halftoning capabilities internally, your minidriver mus
 
 ColorMode feature entries must also be specified, and they must include \*DevBPP and \*DevNumOfPlanes entries describing the input formats expected by the printer.
 
- 
+ 
 
- 
+ 
 
 
 

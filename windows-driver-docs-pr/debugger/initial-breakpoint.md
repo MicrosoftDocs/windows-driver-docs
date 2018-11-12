@@ -21,9 +21,9 @@ If you want to start a new target and break into it when the execution of the ac
 
 For more information about automatic breakpoints in kernel mode, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
- 
+ 
 
- 
+ 
 
 
 

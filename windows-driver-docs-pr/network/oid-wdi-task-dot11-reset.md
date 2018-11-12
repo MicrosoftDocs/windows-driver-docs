@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_DOT11\_RESET requests that the IHV component resets the MAC and 
 |--------|---------------|---------------------------------------|---------------------------------|
 | Port   | No            | 1                                     | 1                               |
 
- 
+ 
 
 Prior to issuing a dot11 reset command, the WDI driver stops issuing new commands to IHV component and aborts any task in progress on the port. It also flushes its Rx and TX queues.
 
@@ -41,7 +41,7 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 | [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926302) |                                |          | Parameters for the dot11 reset.                   |
 | [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926257) |                                | X        | The MAC address that should be used for the port. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -71,9 +71,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

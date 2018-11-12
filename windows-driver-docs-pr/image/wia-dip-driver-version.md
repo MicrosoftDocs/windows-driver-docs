@@ -41,7 +41,7 @@ Also beginning with Windows Vista, if the **IPAutoconfigurationEnabled** registr
 
 **HKEY\_LOCAL\_MACHINE\\SYSTEM\\Current Control Set\\Services\\Tcpip\\Parameters\\Interfaces\\*GUID*\\IPAutoconfigurationEnabled**
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

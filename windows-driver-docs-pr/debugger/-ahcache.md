@@ -54,11 +54,11 @@ Verbose display: includes all entry details, not just the names.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

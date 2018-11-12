@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_STATUS property retrieves information about the tuning pr
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_STATUS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565925)</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_STATUS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565925)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565925" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STATUS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565925)"><strong>KSPROPERTY_TUNER_STATUS_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565925" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STATUS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565925)"><strong>KSPROPERTY_TUNER_STATUS_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_STATUS\_S structure that specifies the current frequency, PLL offset, and signal strength.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_STATUS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565925)
 
- 
+ 
 
- 
+ 
 
 
 

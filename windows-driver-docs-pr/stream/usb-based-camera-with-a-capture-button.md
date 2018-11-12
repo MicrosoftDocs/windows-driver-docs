@@ -44,9 +44,9 @@ Some still pin implementations can only be rendered after the capture pin becaus
 
 For more information about WIA driver development, see the [still imaging technologies](http://go.microsoft.com/fwlink/p/?linkid=8768) website.
 
- 
+ 
 
- 
+ 
 
 
 

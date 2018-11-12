@@ -38,9 +38,9 @@ This section includes the following topics:
 
 [Fast Startup from a Low-Power State](fast-startup-from-a-low-power-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

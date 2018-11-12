@@ -30,9 +30,9 @@ To ensure that two inrush devices do not attempt to power up simultaneously, the
 
 Because of these restrictions on inrush IRPs, a device power IRP might block while an inrush IRP for another device completes. Driver writers should be aware of this behavior while debugging.
 
- 
+ 
 
- 
+ 
 
 
 

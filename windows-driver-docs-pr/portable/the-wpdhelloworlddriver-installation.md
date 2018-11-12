@@ -42,9 +42,9 @@ The following list identifies the steps you should accomplish to remove the samp
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

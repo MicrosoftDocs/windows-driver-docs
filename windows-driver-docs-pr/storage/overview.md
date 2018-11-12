@@ -18,9 +18,9 @@ This topic describes the underlying design and architecture of the storage silo 
 
 3.  The Windows shell and any installed third party applications can discover, access, manage, and interact with the device in accordance with the IEEE 1667 specification.
 
- 
+ 
 
- 
+ 
 
 
 

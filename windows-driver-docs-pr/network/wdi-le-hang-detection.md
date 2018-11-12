@@ -58,9 +58,9 @@ This is informational for IHVs. In addition to UE and LE detected hangs, other O
 
 [**WDI\_TLV\_INDICATION\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897834)
 
- 
+ 
 
- 
+ 
 
 
 

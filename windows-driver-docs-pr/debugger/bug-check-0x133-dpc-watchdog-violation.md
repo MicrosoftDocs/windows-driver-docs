@@ -61,7 +61,7 @@ The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -141,9 +141,9 @@ If you are not equipped to use the Windows debugger to this problem, you should 
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

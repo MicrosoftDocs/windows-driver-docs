@@ -31,7 +31,7 @@ For example, if you create a GUID that has the value of {20f001a99-4675-8707-248
 
 **Note**  The operating system recognizes device metadata packages only if it has a suffix of .*devicemetadata-ms*.
 
- 
+ 
 
 The following rules apply to device metadata package files:
 
@@ -41,7 +41,7 @@ The following rules apply to device metadata package files:
 
     **Note**  If you require multiple locale-specific device metadata package files for your device, you can group all the files by creating a language-neutral identifier. This identifier is a GUID, and the same GUID can be specified in the [**LanguageNeutralIdentifier**](https://msdn.microsoft.com/library/windows/hardware/ff548617) XML element within all metadata packages for the same device.
 
-     
+     
 
 -   The *&lt;GUID&gt;* prefix of the device metadata package file name must specify the GUID without the '{' or '}' delimiters.
 
@@ -76,11 +76,11 @@ Cabarc.exe -r -p -P .\MyMetadataPackage\
 
 **Note**  Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

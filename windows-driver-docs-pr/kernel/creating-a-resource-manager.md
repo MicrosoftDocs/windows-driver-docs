@@ -118,9 +118,9 @@ If you have to add an additional resource manager to an existing TPS, you have t
 
 After you have added your resource manager to the TPS, clients that are aware of your resource manager can call the resource manager's client interface.
 
- 
+ 
 
- 
+ 
 
 
 

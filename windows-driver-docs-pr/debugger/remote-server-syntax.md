@@ -65,7 +65,7 @@ Makes a remote debugger session invisible. For more information, see [Visible Se
 
 The *Command* and *SessionName* parameters must appear in the order shown on the syntax line.
 
-To end a remote session, type **@k**. For more information, see [Remote Session Commands](remote-session-commands.md).
+To end a remote session, type <strong>@k</strong>. For more information, see [Remote Session Commands](remote-session-commands.md).
 
 The Remote tool will not create a session that the current user does not have permission to join.
 
@@ -80,9 +80,9 @@ remote /s "ntsd -d -g -x" DebugIt /-v
 remote /q Server01
 ```
 
- 
+ 
 
- 
+ 
 
 
 

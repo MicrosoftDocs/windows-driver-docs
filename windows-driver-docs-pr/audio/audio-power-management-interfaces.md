@@ -30,9 +30,9 @@ An optional interface that a miniport driver can expose if it requires advance n
 
 [IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
 
- 
+ 
 
- 
+ 
 
 
 

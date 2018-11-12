@@ -42,7 +42,7 @@ The maximum length of the Protocol component is 250 characters (not including th
 ## Subtype Component
 
 
-The subtype component of *messageType* is defined as everything after the first dot. As an example, the highlighted portion of Windows**.contoso.com:t** shows the subtype component.
+The subtype component of *messageType* is defined as everything after the first dot. As an example, the highlighted portion of Windows<strong>.contoso.com:t</strong> shows the subtype component.
 
 The subtype component may be defined by Windows or by apps. The NFP provider should use it to deliver messages only to subscribers of the specified *messageType*.
 
@@ -62,9 +62,9 @@ For the “Windows” protocol, the subtype string should follow the URI naming 
 
 The maximum length of the subtype component is 250 characters (not including the NULL terminator). However, shorter type names are RECOMMENDED due to the short-message nature of typical proximity technologies.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

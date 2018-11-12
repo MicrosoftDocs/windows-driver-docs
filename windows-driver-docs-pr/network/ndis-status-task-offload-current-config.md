@@ -26,7 +26,7 @@ The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.m
 
 **Note**  The contents of the [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure reflect only the NIC's current task offload configuration, not its actual hardware capabilities.
 
- 
+ 
 
 For more information about the current task offload configuration, see [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805).
 
@@ -69,9 +69,9 @@ Requirements
 
 [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569807)
 
- 
+ 
 
- 
+ 
 
 
 

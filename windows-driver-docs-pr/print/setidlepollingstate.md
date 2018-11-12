@@ -37,11 +37,11 @@ The `SetIdlePollingState` command enables or disables polling for ports without 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

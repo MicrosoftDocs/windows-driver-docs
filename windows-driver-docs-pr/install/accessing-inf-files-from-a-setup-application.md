@@ -22,9 +22,9 @@ This section contains the following topics:
 
 [Retrieving Information from an INF File](retrieving-information-from-an-inf-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

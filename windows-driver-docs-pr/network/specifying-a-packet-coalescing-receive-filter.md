@@ -13,7 +13,7 @@ An overlying driver can set one or more receive filters on a miniport driver tha
 
 **Note**  The overlying protocol driver obtains the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure within the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure. The overlying filter driver obtains the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure within the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure.
 
- 
+ 
 
 The overlying driver downloads receive filters to the miniport driver by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for this OID request contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
 
@@ -36,7 +36,7 @@ An overlying driver specifies a packet coalescing receive filter by initializing
 
     **Note**  Starting with NDIS 6.30, packet coalescing receive filter are only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
-     
+     
 
 -   If the overlying driver is creating a new receive filter, it must set the **FilterId** member to NDIS\_DEFAULT\_RECEIVE\_FILTER\_ID.
 
@@ -75,9 +75,9 @@ The miniport driver must follow these guidelines when it handles an OID method r
 
 -   If the overlying driver sets a MAC address filter and a VLAN identifier filter in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
 
- 
+ 
 
- 
+ 
 
 
 

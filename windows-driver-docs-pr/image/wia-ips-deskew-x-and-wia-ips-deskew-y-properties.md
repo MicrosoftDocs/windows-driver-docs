@@ -19,9 +19,9 @@ The valid values for WIA\_IPS\_DESKEW\_X must be between 0 and (WIA\_IPS\_XEXTEN
 
 Only rectangular scanning areas are supported, so these two values uniquely define the position of the image to be deskewed. A deskew angle can be calculated from these two values.
 
- 
+ 
 
- 
+ 
 
 
 

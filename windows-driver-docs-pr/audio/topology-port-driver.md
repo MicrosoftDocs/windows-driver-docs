@@ -23,9 +23,9 @@ The Topology port driver exposes an [IPortTopology](https://msdn.microsoft.com/l
 
 The Topology port and miniport driver objects communicate with each other through their respective [IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896) and [IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712) interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

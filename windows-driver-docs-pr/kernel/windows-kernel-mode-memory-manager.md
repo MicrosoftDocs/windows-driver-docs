@@ -24,9 +24,9 @@ Routines that provide a direct interface to the memory manager are usually prefi
 
 For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/#memory-allocation-and-buffer-management).
 
- 
+ 
 
- 
+ 
 
 
 

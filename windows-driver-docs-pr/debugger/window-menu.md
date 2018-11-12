@@ -38,9 +38,9 @@ This section describes the following commands on the **Window** menu of WinDbg:
 
 [List of Open Windows](list-of-open-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

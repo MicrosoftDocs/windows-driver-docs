@@ -26,9 +26,9 @@ MOF classes for standard blocks are published in system-supplied MOF files. A dr
 
 Currently, class definitions of standard blocks are published in the file wmicore.mof, which is included in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

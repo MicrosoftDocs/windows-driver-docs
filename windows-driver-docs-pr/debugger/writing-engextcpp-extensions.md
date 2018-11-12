@@ -24,11 +24,11 @@ When an EngExtCpp extension is used with remote DbgEng interfaces, the WDbgExts 
 
 **Note**   You must not attempt to call any DbgHelp or ImageHlp routines from any debugger extension. Calling these routines is not supported and may cause a variety of problems.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

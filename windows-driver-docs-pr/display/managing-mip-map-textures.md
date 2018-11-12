@@ -22,9 +22,9 @@ The following topics describe how a DirectX 9.0 version driver can manage MIP-ma
 
 [Generating Sublevels of MIP Map Textures](generating-sublevels-of-mip-map-textures.md)
 
- 
+ 
 
- 
+ 
 
 
 

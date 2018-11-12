@@ -20,9 +20,9 @@ This command is equivalent to pressing CTRL+F4.
 
 You can also close a debugging information window by clicking the **Close** button in the upper-right corner of the information window inside the WinDbg window.
 
- 
+ 
 
- 
+ 
 
 
 

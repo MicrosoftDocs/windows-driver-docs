@@ -44,32 +44,32 @@ The following table summarizes the OIDs used to get or set operational character
 <tbody>
 <tr class="odd">
 <td align="left"><p></p>
-[OID_WAN_CO_GET_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569818)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569818" data-raw-source="[OID_WAN_CO_GET_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569818)">OID_WAN_CO_GET_INFO</a>
 Get information about virtual connections (VCs).</td>
 <td align="left"><p>Required</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p>
-[OID_WAN_CO_GET_LINK_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569819)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569819" data-raw-source="[OID_WAN_CO_GET_LINK_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569819)">OID_WAN_CO_GET_LINK_INFO</a>
 Get information about a VC.</td>
 <td align="left"><p>Required</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
-[OID_WAN_CO_GET_STATS_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569820)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569820" data-raw-source="[OID_WAN_CO_GET_STATS_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569820)">OID_WAN_CO_GET_STATS_INFO</a>
 Get statistics information for a VC.</td>
 <td align="left"><p>Optional</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A CoNDIS WAN miniport driver can support all of the NDIS [General Objects](https://msdn.microsoft.com/library/windows/hardware/ff546510). To learn more about setting information in a CoNDIS miniport driver, see [Querying or Setting Information](querying-or-setting-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

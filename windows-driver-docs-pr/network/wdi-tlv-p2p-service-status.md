@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|----------------------------------|
 | UINT8 | The Service Status of a service. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

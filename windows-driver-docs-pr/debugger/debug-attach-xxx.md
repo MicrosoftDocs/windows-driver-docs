@@ -31,7 +31,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Attach to the target noninvasively.  For more information about noninvasive debugging, see [Noninvasive Debugging (User Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-).</p>
+<p>Attach to the target noninvasively.  For more information about noninvasive debugging, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-" data-raw-source="[Noninvasive Debugging (User Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/noninvasive-debugging--user-mode-)">Noninvasive Debugging (User Mode)</a>.</p>
 <p>If this flag is set, then the flags DEBUG_ATTACH_EXISTING, DEBUG_ATTACH_INVASIVE_NO_INITIAL_BREAK, and DEBUG_ATTACH_INVASIVE_RESUME_PROCESS must not be set.</p>
 </td>
 </tr>
@@ -41,7 +41,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see [.attach (Attach to Process)](https://docs.microsoft.com/windows-hardware/drivers/debugger/-attach--attach-to-process-).</p>
+<p>Re-attach to an application to which a debugger has already attached (and possibly abandoned).  For more information about re-attaching to targets, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/-attach--attach-to-process-" data-raw-source="[.attach (Attach to Process)](https://docs.microsoft.com/windows-hardware/drivers/debugger/-attach--attach-to-process-)">.attach (Attach to Process)</a>.</p>
 <p>If this flag is set, then the other DEBUG_ATTACH_<i>XXX</i> flags must not be set.</p>
 </td>
 </tr>
@@ -51,7 +51,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Do not suspend the target's threads when attaching noninvasively.</p>
+<p>Do not suspend the target&#39;s threads when attaching noninvasively.</p>
 <p>If this flag is set, then the flag DEBUG_ATTACH_NONINVASIVE must also be set.</p>
 </td>
 </tr>
@@ -71,7 +71,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>Resume all of the target's threads when attaching invasively.</p>
+<p>Resume all of the target&#39;s threads when attaching invasively.</p>
 <p>If this flag is set, then the flags DEBUG_ATTACH_NONINVASIVE and DEBUG_ATTACH_EXISTING must not be set.</p>
 </td>
 </tr>
@@ -94,9 +94,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

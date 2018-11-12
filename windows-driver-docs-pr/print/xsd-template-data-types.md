@@ -113,7 +113,7 @@ The following code example shows the additional data type definition.
 
 **Note**   The **GDLW\_USAddress** data type is declared as &lt;complexContent&gt; because the template for **USAddress** set \*ComplexType?: **TRUE**.
 
- 
+ 
 
 Consider the following GDL entry.
 
@@ -152,9 +152,9 @@ If the earlier GDL entry is interpreted by using the ADDRESS template, the resul
 
 The XML attribute xsi:type defines this instance of the ATTRIBUTE element to hold an XSD-defined data type named **GDLW\_USAddress**. The entire value of the GDL attribute instance is inserted as element content into the &lt;GDL\_ATTRIBUTE&gt; element in the XML snapshot without any modification. Thus, the value must be valid XML and must follow all XML syntax rules, like representation of special characters.
 
- 
+ 
 
- 
+ 
 
 
 

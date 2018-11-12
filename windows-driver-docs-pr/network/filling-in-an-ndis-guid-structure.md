@@ -63,13 +63,13 @@ When this flag is set, all users are allowed to use this GUID to set information
 
 **Note**  By default, custom WMI GUIDs that a miniport driver supplies are accessible only to users with administrator privileges. A user with administrator privileges can always read or write to a custom GUID if the miniport driver supports the read or write operation for that GUID. You can set the fNDIS\_GUID\_ALLOW\_READ and fNDIS\_GUID\_ALLOW\_WRITE flags to allow all users to access a custom GUID.
 
- 
+ 
 
 Note that for all custom GUIDs that a driver registers, the driver must set fNDIS\_GUID\_TO\_OID. Miniport drivers should never set fNDIS\_GUID\_TO\_STATUS. All of the other flags can be combined by using a bitwise OR operation.
 
- 
+ 
 
- 
+ 
 
 
 

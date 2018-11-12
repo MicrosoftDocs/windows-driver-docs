@@ -50,9 +50,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio
 
 Also, if the failure count value for an LFX or a GFX sAPO reaches a system-specified limit, both the LFX and the GFX sAPOs are disabled by setting the PKEY\_Endpoint\_Disable\_SysFx registry key to '1'. The system-specified limit is currently a value of 10.
 
- 
+ 
 
- 
+ 
 
 
 

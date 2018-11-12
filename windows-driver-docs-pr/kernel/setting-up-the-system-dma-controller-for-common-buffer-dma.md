@@ -34,9 +34,9 @@ The driver can call [**ReadDmaCounter**](https://msdn.microsoft.com/library/wind
 
 When the transfer is complete or if the driver must return an error status for the IRP, the driver calls [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) to ensure that any data cached in the system DMA controller is read into system memory or written out to the device. Then the driver should call [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) promptly to release the system DMA controller for use by any driver (including itself).
 
- 
+ 
 
- 
+ 
 
 
 

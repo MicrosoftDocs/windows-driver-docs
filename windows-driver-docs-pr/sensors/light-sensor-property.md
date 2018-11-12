@@ -53,7 +53,7 @@ The property key for the light sensor.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
@@ -90,9 +90,9 @@ For a complete example of sensor properties being set by using their related pro
 
 [Other sensor properties](other-sensor-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

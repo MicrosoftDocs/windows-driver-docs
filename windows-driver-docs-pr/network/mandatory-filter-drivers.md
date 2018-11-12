@@ -26,9 +26,9 @@ When a computer restarts, NDIS will not bind any protocol drivers to a miniport 
 
 To install a mandatory filter driver, you must specify a value of 0x00000001 for **FilterRunType** in the INF file. To install an optional filter driver, you must specify a value of 0x00000002 for **FilterRunType** in the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

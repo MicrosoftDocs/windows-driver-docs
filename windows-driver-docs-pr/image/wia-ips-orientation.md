@@ -67,7 +67,7 @@ The following table describes the constants that are valid with WIA\_IPS\_ORIENT
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_IPS\_ORIENTATION property describes the orientation of the document to scan. This property affects the current scan frame and available page sizes.
 
@@ -77,7 +77,7 @@ The WIA\_IPS\_ORIENTATION property is required for ADF items and optional for al
 
 **Note**   The compatibility layer within the WIA service does not add support for WIA\_IPS\_ORIENTATION to the ADF item that is translated from a Microsoft Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect that an ADF item will always support this property and should always check if WIA\_IPS\_ORIENTATION is supported at run time.
 
- 
+ 
 
 Requirements
 ------------
@@ -102,9 +102,9 @@ Requirements
 
 [**WIA\_IPS\_ROTATION**](wia-ips-rotation.md)
 
- 
+ 
 
- 
+ 
 
 
 

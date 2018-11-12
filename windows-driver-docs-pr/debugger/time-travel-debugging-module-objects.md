@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 *TTD Module* objects are used to give information about modules that were loaded and unloaded during a trace session.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Name | The name and path of the module. |

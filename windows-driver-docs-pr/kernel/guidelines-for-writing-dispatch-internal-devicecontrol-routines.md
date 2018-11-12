@@ -44,9 +44,9 @@ The particular I/O control codes a device driver handles must include any device
 
 The class driver of a closely coupled class/port driver pair can process and complete a subset of device control requests without passing them on to the underlying port driver. However, such a class driver must pass on all valid device control requests that require a change of state for the device and those that require the return of volatile information about the device, such as its current baud rate, volume, or video mode.
 
- 
+ 
 
- 
+ 
 
 
 

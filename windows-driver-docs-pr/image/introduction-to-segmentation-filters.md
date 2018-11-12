@@ -23,9 +23,9 @@ The following figure shows the segmentation filter component running in the appl
 
 ![diagram illustrating a segmentation filter component running in an application's process](images/wia-components-app-process.png)
 
- 
+ 
 
- 
+ 
 
 
 

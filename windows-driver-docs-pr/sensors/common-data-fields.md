@@ -22,16 +22,16 @@ For more information about the types shown in the type column, see [PROPVARIANT 
 | --- | --- | --- | --- |
 |PKEY_SensorData_Timestamp|VT_FILETIME|Required|The file time computed by the driver in UTC format. The class extension (CX) provides a helper function to convert ticks from boot to FILETIME so that remote systems don’t have to synchronize to the system clock.|
 
- 
+ 
 
 ## Related topics
 
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

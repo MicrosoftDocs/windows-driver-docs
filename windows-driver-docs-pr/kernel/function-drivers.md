@@ -22,9 +22,9 @@ The function driver for a device can be implemented as a driver/minidriver pair,
 
 If a device is being driven in raw mode, it has no function driver and no upper or lower-level filter drivers. All raw-mode I/O is done by the bus driver and optional bus filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

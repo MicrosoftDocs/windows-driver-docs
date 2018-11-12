@@ -27,9 +27,9 @@ This section includes:
 
 For more information about the DbgHelp API, see the Debug Help Library documentation, which is installed as part of Debugging Tools for Windows if you perform a custom install and select the **SDK** feature and its subfeatures.
 
- 
+ 
 
- 
+ 
 
 
 

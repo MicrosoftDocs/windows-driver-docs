@@ -22,9 +22,9 @@ When a function driver registers an operation region handler, the driver must sp
 
 Only the system-supplied ACPI driver modifies the data in an operation region. The function driver can read the data in an operation region. However, it must not modify the data. When called, an operation region handler transfers bytes in the operation region to and from the ACPI driver's data buffer. The ACPI driver manages accessing the correct bytes to read and write a data field in an operation region.
 
- 
+ 
 
- 
+ 
 
 
 

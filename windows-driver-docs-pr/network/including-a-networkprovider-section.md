@@ -20,7 +20,7 @@ A **NetworkProvider** section specifies either a substitute device name for a **
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 To create a **NetworkProvider** section, add the **NetworkProvider** extension to the *DDInstall* section for the component, as shown in the following example:
 ```INF
@@ -58,9 +58,9 @@ The **ShortName** is easier to remember and type than the entire name of the net
 
 The **ShortName** is optional and should only be specified if needed.
 
- 
+ 
 
- 
+ 
 
 
 

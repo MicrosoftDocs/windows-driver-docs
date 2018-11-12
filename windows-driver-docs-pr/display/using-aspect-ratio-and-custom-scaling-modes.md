@@ -54,7 +54,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">[<strong>SetDisplayConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569533) API Scaling Value</th>
+<th align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff569533" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569533)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
 <th align="left">DDI Scaling Value</th>
 </tr>
 </thead>
@@ -86,7 +86,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </tbody>
 </table>
 
- 
+ 
 
 This mapping can be used with the tables in [Scaling the Desktop Image](scaling-the-desktop-image.md) to understand how user-mode scaling types are translated into DDI scaling types that are sent to the display miniport driver.
 
@@ -117,13 +117,13 @@ The operating system clears the values of the **AspectRatioCenteredMax** and **C
 
 The driver should support the **AspectRatioCenteredMax** member, and the operating system uses it from Control Panel applications. The driver can optionally implement customized functionality by setting the **Custom** member.
 
- 
+ 
 
 DMM will always confirm that the driver interface &gt;= **DXGKDDI\_INTERFACE\_VERSION\_WIN7** before it attempts to check and use the **AspectRatioCenteredMax** or **Custom** members of [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/ff546712).
 
 **Important**   A display miniport driver that supports the **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** or **D3DKMDT\_VPPS\_CUSTOM** values should never set a value of **D3DKMDT\_VPPS\_NOTSPECIFIED**.
 
- 
+ 
 
 ### <span id="scaling_with_multiple_adapters"></span><span id="SCALING_WITH_MULTIPLE_ADAPTERS"></span> Scaling With Multiple Adapters
 
@@ -131,9 +131,9 @@ The values of the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **
 
 If both GPUs support the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **D3DKMDT\_VPPS\_CUSTOM**, and the driver for the first GPU implements the **D3DKMDT\_VPPS\_CUSTOM** custom scaling request, then if the user switches the monitor to the second GPU, the driver for the second GPU will probably not know how to interpret the custom scaling request. In this case the second driver should fail a call to the [**DxgkDdiCommitVidPn**](https://msdn.microsoft.com/library/windows/hardware/ff559597) function and should return the **STATUS\_GRAPHICS\_VIDPN\_MODALITY\_NOT\_SUPPORTED** status code; the operating system will map this scaling type to the system default scaling.
 
- 
+ 
 
- 
+ 
 
 
 

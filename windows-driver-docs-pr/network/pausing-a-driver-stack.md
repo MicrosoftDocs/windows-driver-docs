@@ -31,11 +31,11 @@ NDIS pauses a driver stack to complete operations such as inserting a filter mod
 
 **Note**  NDIS drivers cannot fail a pause request. You should log any errors that occur.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

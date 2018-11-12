@@ -43,9 +43,9 @@ To support UDP-ESP encapsulation, a miniport driver or the NIC (or both) must:
     -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809)
     -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569811)
 
- 
+ 
 
- 
+ 
 
 
 

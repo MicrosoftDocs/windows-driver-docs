@@ -21,9 +21,9 @@ In Windows 7 and earlier versions of Windows, all memory allocated from the non
 
 For backward compatibility, driver binaries that run on Windows 7 and earlier versions of Windows, and that allocate memory from the executable nonpaged pool, will run on Windows 8 and later versions of Windows without modification. However, these drivers do not take advantage of the improved security of the NX nonpaged pool.
 
- 
+ 
 
- 
+ 
 
 
 

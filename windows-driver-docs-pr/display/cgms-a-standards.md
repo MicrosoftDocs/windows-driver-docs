@@ -58,9 +58,9 @@ This standard applies only to Japan.
 
 This standard is published by ARIB. For more information about ARIB, see the [ARIB English](http://go.microsoft.com/fwlink/p/?linkid=71283) website.
 
- 
+ 
 
- 
+ 
 
 
 

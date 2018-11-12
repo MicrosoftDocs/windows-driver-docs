@@ -60,9 +60,9 @@ The supported data formats are a data range that specifies what format a pin can
 
 The DirectMusic format (STATIC\_KSDATAFORMAT\_SUBTYPE\_DIRECTMUSIC) must be defined in the miniport driver's topology so that DirectMusic can send its data to the miniport driver. This format is defined by the DMUS\_EVENTHEADER structure (see the Microsoft Windows SDK documentation) in dmusbuff.h. When the miniport driver specifies that it supports this particular data range, DirectMusic can expose that data range to the user (through a pin on the port itself).
 
- 
+ 
 
- 
+ 
 
 
 

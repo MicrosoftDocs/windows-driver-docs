@@ -26,9 +26,9 @@ However, by including *Hbaapi.h* your driver or application can use a set of sym
 
 For a general discussion of WMI class qualifiers, see [WMI Class Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566348).
 
- 
+ 
 
- 
+ 
 
 
 

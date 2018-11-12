@@ -22,9 +22,9 @@ You can close one of the debugging information windows by pressing ALT+SHIFT+*nu
 
 To close all [Source windows](source-window.md) at the same time, click [Close All Source Windows](window---close-all-source-windows.md) on the **Window** menu. This command will not close a Source window that has been designated as a tab-dock target. For more information on this setting, see the Source Window topic.
 
- 
+ 
 
- 
+ 
 
 
 

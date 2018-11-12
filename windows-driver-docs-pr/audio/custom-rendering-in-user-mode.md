@@ -46,9 +46,9 @@ The remainder of this section discusses various aspects of customizing the rende
 
 [Registering Your Synthesizer](registering-your-synthesizer.md)
 
- 
+ 
 
- 
+ 
 
 
 

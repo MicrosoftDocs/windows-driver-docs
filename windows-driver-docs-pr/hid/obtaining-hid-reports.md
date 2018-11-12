@@ -27,9 +27,9 @@ This section includes the following topics:
 
 [Obtaining HID Reports by Kernel-Mode Drivers](obtaining-hid-reports-by-kernel-mode-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

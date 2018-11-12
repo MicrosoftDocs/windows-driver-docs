@@ -20,9 +20,9 @@ This command is equivalent to pressing ALT+3 or clicking the **Locals (Alt+3)** 
 
 For more information about this window and its uses, see [Locals Window](locals-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

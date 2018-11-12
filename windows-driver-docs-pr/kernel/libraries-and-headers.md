@@ -28,9 +28,9 @@ For descriptions of the **Nt** routines that can be called by applications, see 
 
 A user-mode application cannot call the entry points in Ntoskrnl.exe, and a kernel-mode driver cannot call the entry points in Ntdll.dll.
 
- 
+ 
 
- 
+ 
 
 
 

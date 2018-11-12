@@ -48,7 +48,7 @@ Specifies the number of the breakpoint to be cleared. An asterisk (\*) indicates
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ This will permanently delete a breakpoint set with [**!ubp**](-ubp.md).
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

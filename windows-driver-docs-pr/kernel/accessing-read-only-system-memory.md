@@ -42,9 +42,9 @@ CHAR myString[] = "This string can be modified.";
 
 This declaration makes sure that the string is put in writable memory.
 
- 
+ 
 
- 
+ 
 
 
 

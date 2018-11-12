@@ -228,7 +228,6 @@ MORE INFORMATION
     Hardware resources                     Selective suspend
     NDIS ports                             WMI guids
     Diagnostic log
-
 ```
 
 As example of using **!ndiskd.netadapter** as a starting place for further debugging, click on the "Driver handlers" link at the bottom of the report to see a list of all registered driver callback handlers for this net adapter's miniport driver. In the following example, clicking the link causes !ndiskd to run the [**!ndiskd.minidriver**](-ndiskd-minidriver.md) extension with the handle of this net adapter's miniport driver. The miniport driver is the kdnic 4.2 and its handle is ffffdf801418d650.
@@ -281,9 +280,9 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
 
- 
 
- 
+
+
 
 
 

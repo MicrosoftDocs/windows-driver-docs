@@ -40,9 +40,9 @@ Specifies the serial baud rate to use for EMS. This command should not be specif
 
 To properly enable EMS console redirection after Windows is installed, Windows needs to know the port and transmission rate that the computer uses for out-of-band communication. Windows uses these same settings for EMS console redirection.
 
-On computers with BIOS firmware and an ACPI Serial Port Console Redirection (SPCR) table, Windows can find the out-of-band settings established in the BIOS by reading entries in the SPCR table. On these systems, you can use the **BIOS** parameter to direct Windows to look in the SPCR table for the port settings, or you can use the **emsport:***port* and **emsbaudrate:***baudrate* parameters to override the settings in the SPCR table.
+On computers with BIOS firmware and an ACPI Serial Port Console Redirection (SPCR) table, Windows can find the out-of-band settings established in the BIOS by reading entries in the SPCR table. On these systems, you can use the **BIOS** parameter to direct Windows to look in the SPCR table for the port settings, or you can use the **emsport:**<em>port</em> and **emsbaudrate:**<em>baudrate</em> parameters to override the settings in the SPCR table.
 
-On computers that have BIOS firmware, but do not have an SPCR table, use BCDEdit and the **/emssettings** command with the **emsport:***port* parameter to specify the port and with the **emsbaudrate:***baudrate* parameter to specify the transmission rate.
+On computers that have BIOS firmware, but do not have an SPCR table, use BCDEdit and the **/emssettings** command with the **emsport:**<em>port</em> parameter to specify the port and with the **emsbaudrate:**<em>baudrate</em> parameter to specify the transmission rate.
 
 On all systems, use the [**BCDEdit /ems**](bcdedit--ems.md) command and specify the boot entry to enable EMS console redirection on the operating system that the boot entry loads.
 
@@ -50,9 +50,9 @@ The boot parameters described in this section enable EMS console redirection aft
 
 For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://msdn.microsoft.com/library/windows/hardware/ff542282).
 
- 
+ 
 
- 
+ 
 
 
 

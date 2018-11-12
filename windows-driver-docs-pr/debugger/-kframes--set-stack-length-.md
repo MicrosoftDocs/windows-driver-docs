@@ -52,7 +52,7 @@ Specifies the number of stack frames to display when a stack trace command is us
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ If you never issue the **.kframes** command, the default count is 20 (0x14).
 
 [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
 
- 
+ 
 
- 
+ 
 
 
 

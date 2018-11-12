@@ -30,9 +30,9 @@ The results of the connect attempt are returned by using the [**IMbnConnectionEv
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

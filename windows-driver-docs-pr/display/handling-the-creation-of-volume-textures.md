@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 introduces a new surface capability bit DDSCAPS2\_VOLUME. This flag is set in the **ddsCapsEx.dwCaps2** field of the surface's [**DD\_SURFACE\_MORE**](https://msdn.microsoft.com/library/windows/hardware/ff551737) structure. In the [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) and [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) callbacks the depth of the volume texture can be found in the low word of the **dwCaps4** field of the extended surface capabilities (**ddsCapsEx**) of the surface's DD\_SURFACE\_MORE structure. The driver should return the "slice pitch" (that is, the number of bytes to add to move from one 2D slice of the volume to the next) of the volume texture in the **dwBlockSizeY** field of the surface global structure.
 
- 
+ 
 
- 
+ 
 
 
 

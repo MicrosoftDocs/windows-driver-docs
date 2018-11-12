@@ -29,9 +29,9 @@ Some of the framework's object methods, such as [**WdfRegistryQueryString**](htt
 
 To access the string that is assigned to a string object, your driver can call [**WdfStringGetUnicodeString**](https://msdn.microsoft.com/library/windows/hardware/ff550049).
 
- 
+ 
 
- 
+ 
 
 
 

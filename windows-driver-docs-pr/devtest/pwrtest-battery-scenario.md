@@ -19,10 +19,10 @@ PwrTest is capable of logging battery capacity, voltage, rate of drain, and gene
 pwrtest /battery [/c:n] [/i:n] [/?] 
 ```
 
-<span id="_c_n"></span><span id="_C_N"></span>**/c:***n*  
+<span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
 Specifies the number of cycles (100 is the default) to run.
 
-<span id="_i_n"></span><span id="_I_N"></span>**/i:***n*  
+<span id="_i_n"></span><span id="_I_N"></span>**/i:**<em>n</em>  
 Specifies the polling interval in milliseconds (the default is 5000).
 
 **Examples**
@@ -159,16 +159,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

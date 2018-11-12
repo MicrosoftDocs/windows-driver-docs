@@ -56,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CompressionQualityFactorSupported</strong>](compressionqualityfactorsupported.md)</p></td>
+<td><p><a href="compressionqualityfactorsupported.md" data-raw-source="[&lt;strong&gt;CompressionQualityFactorSupported&lt;/strong&gt;](compressionqualityfactorsupported.md)"><strong>CompressionQualityFactorSupported</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScalingHeight</strong>](scalingheight2.md)</p></td>
+<td><p><a href="scalingheight2.md" data-raw-source="[&lt;strong&gt;ScalingHeight&lt;/strong&gt;](scalingheight2.md)"><strong>ScalingHeight</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScalingWidth</strong>](scalingwidth2.md)</p></td>
+<td><p><a href="scalingwidth2.md" data-raw-source="[&lt;strong&gt;ScalingWidth&lt;/strong&gt;](scalingwidth2.md)"><strong>ScalingWidth</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -83,9 +83,9 @@ The value of the **MinValue** element depends on its parent element. For the pos
 
 [**ScalingWidth**](scalingwidth2.md)
 
- 
+ 
 
- 
+ 
 
 
 

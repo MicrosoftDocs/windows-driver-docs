@@ -94,22 +94,20 @@ The data comes from the EVENT\_TRACE\_PROPERTIES structure for the log session. 
 <p>(Real Time mode enabled, Log File mode, Buffering mode only)</p></td>
 <td align="left"><p>The logging modes that are enabled for this session. For a complete list of logging mode constants, see the Windows SDK documentation.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>The <strong>Log File Mode</strong> entry appears even when a log file is not being written. It displays the log file format.</p>
+<strong>Note</strong><br/><p>The <strong>Log File Mode</strong> entry appears even when a log file is not being written. It displays the log file format.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Enabled tracing</strong></p></td>
 <td align="left"><p>The NT Kernel Logger events that are being traced. This field appears only when tracing the NT Kernel Logger session.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>DPC, ISR, and context switch events do not appear in this field, even when they are being traced.</p>
+<strong>Note</strong><br/><p>DPC, ISR, and context switch events do not appear in this field, even when they are being traced.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -125,11 +123,11 @@ The data comes from the EVENT\_TRACE\_PROPERTIES structure for the log session. 
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

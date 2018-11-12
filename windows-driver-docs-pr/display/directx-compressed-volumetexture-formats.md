@@ -52,9 +52,9 @@ block_byte_address = block_size *
 subblock_byte_address = block_byte_address + ((p & 3) * subblock_size)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

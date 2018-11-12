@@ -22,9 +22,9 @@ The driver writer determines the size and internal structure of the *ControllerO
 
 A controller object, which cannot be given a name, cannot be the target of an I/O request. The hardware it represents usually controls a set of homogeneous devices that are the actual targets of I/O requests.
 
- 
+ 
 
- 
+ 
 
 
 

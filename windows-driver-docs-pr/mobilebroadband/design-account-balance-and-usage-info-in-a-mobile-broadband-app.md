@@ -53,7 +53,7 @@ Appropriate design for displaying account info:
     **Tip**  
     You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://msdn.microsoft.com/library/windows/apps/hh465428).
 
-     
+     
 
 -   When remaining usage is low, show a link to the Plans page to upgrade the plan
 
@@ -66,9 +66,9 @@ Inappropriate design for displaying account information:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

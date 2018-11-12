@@ -39,9 +39,9 @@ if (oldContext != NULL) {
 
 In this example, [**FltDeleteStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff541997) removes the stream context from the stream, but it does not decrement the context's reference count, because the *OldContext* parameter is non-**NULL**. **FltDeleteStreamContext** returns the address of the deleted context in the *OldContext* parameter. After performing any needed processing, the caller must release the deleted context by calling **FltReleaseContext**.
 
- 
+ 
 
- 
+ 
 
 
 

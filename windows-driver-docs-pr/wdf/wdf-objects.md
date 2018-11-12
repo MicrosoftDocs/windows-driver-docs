@@ -28,9 +28,9 @@ This section describes common characteristics of framework objects and how a Win
 -   [WDF General Object Macros](wdf-general-object-macros.md)
 -   [Framework Object Creation Errors](framework-object-creation-errors.md)
 
- 
+ 
 
- 
+ 
 
 
 

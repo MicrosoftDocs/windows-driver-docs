@@ -25,9 +25,9 @@ Most of the Windows Filtering Platform management functions require a handle to 
 
 For a list of the other Windows Filtering Platform functions that can be called from a callout driver, see [Other Windows Filtering Platform Functions](https://msdn.microsoft.com/library/windows/hardware/ff569961). For more information about how to use these functions, see the [Windows Filtering Platform](http://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

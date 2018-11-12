@@ -26,9 +26,9 @@ A device might not require the ability to signal a wake event from D3cold. The d
 
 For more information about ACPI support for D3cold, see [Firmware Requirements for D3cold](https://msdn.microsoft.com/library/windows/hardware/dn605829).
 
- 
+ 
 
- 
+ 
 
 
 

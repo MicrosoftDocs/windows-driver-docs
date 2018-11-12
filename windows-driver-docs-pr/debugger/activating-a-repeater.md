@@ -110,7 +110,7 @@ When TCP or SSL protocol is used, *Socket* is the socket port number.
 
 It is also possible to specify a range of ports separated by a colon. DbEngPrx will check each port in this range to see if it is free. If it finds a free port and no error occurs, the repeater will be created. The client will have to specify the actual port being used to connect to the repeater. To determine the actual port, search for the repeater; when this repeater is displayed, the port will be followed by two numbers separated by a colon. The first number will be the actual port used; the second can be ignored. For example, if the port was specified as **port=51:60**, and port 53 was actually used, the search results will show "port=53:60". (If you are using the **clicon** parameter to establish a reverse connection, the client can specify a range of ports in this manner, while the repeater must specify the actual port used.)
 
-<span id="clicon_Client"></span><span id="clicon_client"></span><span id="CLICON_CLIENT"></span>**clicon=***Client*  
+<span id="clicon_Client"></span><span id="clicon_client"></span><span id="CLICON_CLIENT"></span>**clicon=**<em>Client</em>  
 When TCP or SSL protocol is used and the **clicon** parameter is specified, a *reverse connection* will be opened. This means that the repeater will try to connect to the client, instead of letting the client initiate the contact. This can be useful if you have a firewall that is preventing a connection in the usual direction. *Client* specifies the network name or IP address of the computer on which the client exists or will be created. The two initial backslashes (\\\) are optional.
 
 Since the repeater is looking for one specific client, you cannot connect multiple clients to the repeater if you use this method. If the connection is refused or is broken you will have to restart the repeater.
@@ -141,9 +141,9 @@ The client should be a debugging client or a smart client -- whichever correspon
 
 If the server rejects the connection (for example, if you supply an incorrect password), both the repeater and the client will be shut down. You will have to restart both of them to reestablish contact with the server.
 
- 
+ 
 
- 
+ 
 
 
 

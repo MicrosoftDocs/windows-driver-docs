@@ -29,9 +29,9 @@ To manipulate the processing mutex, use the following functions:
 
 [**KsFilterAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562524), [**KsPinAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563488), [**KsFilterReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562552), [**KsPinReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563527)
 
- 
+ 
 
- 
+ 
 
 
 

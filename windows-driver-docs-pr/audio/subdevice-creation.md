@@ -32,11 +32,11 @@ The term *subdevice* is used to describe the binding of the four components that
 <tbody>
 <tr class="odd">
 <td align="left"><p>Miniport object</p></td>
-<td align="left"><p>An object that exposes the miniport driver's IMiniport<em>Xxx</em> interface</p></td>
+<td align="left"><p>An object that exposes the miniport driver&#39;s IMiniport<em>Xxx</em> interface</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Port object</p></td>
-<td align="left"><p>An object that exposes the port driver's IPort<em>Xxx</em> interface</p></td>
+<td align="left"><p>An object that exposes the port driver&#39;s IPort<em>Xxx</em> interface</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Resource list object</p></td>
@@ -49,7 +49,7 @@ The term *subdevice* is used to describe the binding of the four components that
 </tbody>
 </table>
 
- 
+ 
 
 A subdevice's IMiniport*Xxx* and IPort*Xxx* interfaces inherit from base interfaces [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698) and [IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842), respectively.
 
@@ -120,9 +120,9 @@ The following code example shows how the adapter driver performs these actions:
 
 For information about the PortCls function calls in the preceding code example, see [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715), [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714), and [**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -44,9 +44,9 @@ The following notes correspond to the circled numbers in the previous figure:
 
 Rebalancing the hardware resources of a PnP device must be transparent to applications and end users. Users might experience a temporary delay in operation, but data must not be lost. You must take that into consideration when you handle stop IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

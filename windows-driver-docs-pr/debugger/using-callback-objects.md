@@ -39,11 +39,11 @@ For details on how the engine manages output, see [Input and Output](using-input
 
 **Note**   As is typical for COM objects, the engine will call **IUnknown::AddRef** on a callback COM object when it is registered with a client, and **IUnknown::Release** when the object is replaced or the client is deleted.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

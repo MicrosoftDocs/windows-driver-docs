@@ -27,7 +27,7 @@ warning C28122: The function is not permitted to be called at a low IRQ level. P
 </tbody>
 </table>
 
- 
+ 
 
 The driver is executing at an IRQL that is too low for the function that it is calling, and the highest permissible IRQL for prior calls in the current function is below the minimum IRQL that is required for this call.
 
@@ -37,9 +37,9 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 
 For a description of a similar situation, see[Warning 28123](28123-inconsistent-irq-level-calls-high.md).
 
- 
+ 
 
- 
+ 
 
 
 

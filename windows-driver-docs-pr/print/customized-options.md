@@ -24,9 +24,9 @@ You can also specify customized options for some of the [standard features](stan
 
 Customized option names must be unique within a feature, but option names can be reused in different features. Also, you can use standard option names within customized features. Thus, for example, you can use the standard option names ON and OFF within several \*[Feature](feature-entry-format.md) entries for customized features.
 
- 
+ 
 
- 
+ 
 
 
 

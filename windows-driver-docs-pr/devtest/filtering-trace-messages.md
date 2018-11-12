@@ -44,9 +44,9 @@ Filter rules are applied in the order that they appear in the filter. If more th
 
 The rules in a filter are implicitly connected by OR operations; that is, they are all applied. To connect rules with AND operations, select the **AND** action.
 
- 
+ 
 
- 
+ 
 
 
 

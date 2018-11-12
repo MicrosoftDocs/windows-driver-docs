@@ -76,9 +76,9 @@ This section includes:
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

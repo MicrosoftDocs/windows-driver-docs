@@ -24,9 +24,9 @@ The **-v** option (verbose mode) is also useful. For more information about the 
 
 You can also open a dump file after the debugger is running by entering the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
 
- 
+ 
 
- 
+ 
 
 
 

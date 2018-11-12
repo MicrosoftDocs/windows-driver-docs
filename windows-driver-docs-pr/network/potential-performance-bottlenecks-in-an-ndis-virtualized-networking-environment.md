@@ -42,7 +42,7 @@ To address performance issues, the virtual machine queue (VMQ) interface allows:
 
 **Note**  Packets that are received from the external network still have to be forwarded by the management operating system to the guest operating system over the VMBus.
 
- 
+ 
 
 For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
@@ -62,9 +62,9 @@ In all cases, the SR-IOV interface eliminates the need for any involvement of th
 
 For more information about the SR-IOV interface, see [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md).
 
- 
+ 
 
- 
+ 
 
 
 

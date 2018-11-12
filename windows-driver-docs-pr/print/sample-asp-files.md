@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 Sample ASP files are provided in the Windows Driver Kit (WDK). The samples are located in the \\Src\\Print\\QueueASP subdirectory of the directory tree that contains the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ To impose a limit on the length of the renaming list for an allocation, the driv
 
 Note that when the user-mode display driver sets the **Discard** member of [**D3DDDICB\_LOCKFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544214), the video memory manager does not call the display miniport driver to allocate extra allocations for the original allocation. The video memory manager creates all extra allocations using the creation parameters of the original allocation. From the perspective of the display miniport driver, the same allocation is paged in at potentially multiple simultaneous segment locations.
 
- 
+ 
 
- 
+ 
 
 
 

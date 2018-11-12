@@ -36,7 +36,7 @@ remote /s "KD -v" debug
 
 **Note**   If this batch file is not in the same directory as Remote.exe, and Remote.exe is not in a directory listed in the system path, then you should give the full path to the utility when invoking Remote.exe in this batch file.
 
- 
+ 
 
 After this batch file is run, anyone with a Windows computer that is networked to the local host computer can connect to the debug session by using the following command:
 
@@ -46,9 +46,9 @@ remote /c computername debug
 
 where *computername* is the NetBIOS name of the local host computer.
 
- 
+ 
 
- 
+ 
 
 
 

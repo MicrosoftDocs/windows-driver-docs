@@ -26,9 +26,9 @@ The XPS print path and the XPSDrv printer drivers offer the following advantages
 
 [Extensible Architecture](extensible-architecture.md)
 
- 
+ 
 
- 
+ 
 
 
 

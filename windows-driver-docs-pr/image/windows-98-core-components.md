@@ -23,9 +23,9 @@ On the server side, three core components communicate with *sti.dll*: *stimon.ex
 
 On the client application side, an IHV must supply a TWAIN data source, which is shown in the preceding figure as *vendor.ds*, a generic name for this component. The TWAIN data source is a component of the TWAIN Scanning architecture, and communicates with an instance of *sti.dll* on the client side. In turn, *sti.dll* communicates with a user-mode still image driver (USD1 in the figure), which communicates with one of the kernel-mode drivers discussed earlier.
 
- 
+ 
 
- 
+ 
 
 
 

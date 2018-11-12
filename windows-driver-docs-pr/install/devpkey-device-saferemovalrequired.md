@@ -32,7 +32,7 @@ The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean valu
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_BOOLEAN</strong>](devprop-type-boolean.md)</p></td>
+<td align="left"><p><a href="devprop-type-boolean.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_BOOLEAN&lt;/strong&gt;](devprop-type-boolean.md)"><strong>DEVPROP_TYPE_BOOLEAN</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean valu
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -54,7 +54,7 @@ If this property for a hot-plug device instance has a value of DEVPROP_TRUE, the
 
 **Note**   If the device instance is a removable media device, such as an optical disk drive, the device instance must have media inserted and must have the DEVPKEY_Device_SafeRemovalRequired property value of DEVPROP_TRUE. If both are true, the device instance is displayed in the **Safely Remove Hardware** program.
 
- 
+ 
 
 Windows Plug and Play (PnP) determines that the hot-plug device instance requires safe removal from the system if the following are true:
 
@@ -68,7 +68,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
     **Note**   PnP unconditionally determines that the hot-plug device requires safe removal if the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE.
 
-     
+     
 
 -   The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
 
@@ -103,9 +103,9 @@ Requirements
 
 [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967)
 
- 
+ 
 
- 
+ 
 
 
 

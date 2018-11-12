@@ -55,7 +55,7 @@ The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000008E. T
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -110,9 +110,9 @@ The error that generates this message can occur after the first restart during W
 
 You can resolve BIOS problems by upgrading the system BIOS version.
 
- 
+ 
 
- 
+ 
 
 
 

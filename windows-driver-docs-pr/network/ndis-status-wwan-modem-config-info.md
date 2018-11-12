@@ -50,5 +50,5 @@ Requirements
 [OID_WWAN_MODEM_CONFIG_INFO](oid-wwan-modem-config-info.md)
 
 [**NDIS_WWAN_MODEM_CONFIG_INFO**](https://msdn.microsoft.com/library/windows/hardware/07C2BAED-157A-459C-B558-115C0091ECE5)
- 
+ 
 

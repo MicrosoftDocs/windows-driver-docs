@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).WakeUpFlags.                                    |
 | UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).MediaSpecificWakeUpEvents.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

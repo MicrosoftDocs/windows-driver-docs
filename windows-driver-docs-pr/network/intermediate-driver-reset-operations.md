@@ -34,9 +34,9 @@ After *ProtocolStatusEx*(or *ProtocolCoStatusEx*) receives NDIS\_STATUS\_RESET\_
 
 An intermediate driver does not provide a [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.
 
- 
+ 
 
- 
+ 
 
 
 

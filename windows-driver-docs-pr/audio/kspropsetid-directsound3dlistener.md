@@ -37,9 +37,9 @@ The `KSPROPSETID_DirectSound3DListener` property set contains the following prop
 
 [**KSPROPERTY\_DIRECTSOUND3DLISTENER\_VELOCITY**](ksproperty-directsound3dlistener-velocity.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ Before attempting to cancel a request that the driver has forwarded to an I/O ta
 
 This sequence ensures that if the I/O target completes the request before the driver calls [**WdfRequestCancelSentRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549941), the request's handle is still valid (because of the incremented reference count) even if the driver's [*CompletionRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff540745) callback function calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).
 
- 
+ 
 
- 
+ 
 
 
 

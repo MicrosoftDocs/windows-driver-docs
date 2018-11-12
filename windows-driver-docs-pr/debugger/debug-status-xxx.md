@@ -131,12 +131,12 @@ The values in the following table are reverse ordered by precedence; the values 
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]
 &gt;   The precedence of the status codes does not follow the numeric values of the constants.
 
- 
+ 
 
 Requirements
 ------------
@@ -154,9 +154,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

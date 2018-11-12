@@ -53,13 +53,13 @@ To simplify implementation of **D3dDrawPrimitives2**, driver writers can copy th
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 Direct3D is not always informed of the current render states. For example, execute buffers are not inspected by the runtime before they reach the driver. The driver can keep track of the render state array with the **lpdwRStates** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545957) structure. This is a pointer to the internal render states array that the driver keeps up to date as state changes occur.
 
- 
+ 
 
- 
+ 
 
 
 

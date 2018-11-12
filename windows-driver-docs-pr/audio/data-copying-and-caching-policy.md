@@ -40,9 +40,9 @@ For codec function drivers that use the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https
 
 For more information about write-combining, see the IA-32 Intel Architecture Software Developer's Manual at the [Intel](https://go.microsoft.com/fwlink/p/?linkid=38518) website.
 
- 
+ 
 
- 
+ 
 
 
 

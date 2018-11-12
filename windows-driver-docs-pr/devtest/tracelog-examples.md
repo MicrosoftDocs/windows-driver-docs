@@ -51,9 +51,9 @@ The examples in this section show how to use Tracelog commands to control trace 
 
 [Example 16: Viewing Trace Messages in a Debugger](example-16--viewing-trace-messages-in-a-debugger.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,9 +62,9 @@ For more information, see the *Intel High Definition Audio Specification*.
 
 However, nearly all clients will use the HDAUDIO\_BUS\_INTERFACE version of the DDI. Only a few clients that require precise control over the timing of interrupts will use the HDAUDIO\_BUS\_INTERFACE\_BDL version.
 
- 
+ 
 
- 
+ 
 
 
 

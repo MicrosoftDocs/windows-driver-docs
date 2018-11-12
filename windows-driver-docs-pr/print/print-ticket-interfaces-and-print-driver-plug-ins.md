@@ -25,9 +25,9 @@ This section discusses the context of the following Microsoft Win32 functions:
 
 [ValidatePrintTicket](validateprintticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

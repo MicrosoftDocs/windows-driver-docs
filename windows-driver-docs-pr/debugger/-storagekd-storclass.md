@@ -47,7 +47,7 @@ Specifies the amount of detail to display. This parameter can be set to 0, 1, or
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -100,9 +100,9 @@ Classpnp External Information at fffffa80043dc1b0
     -- dt classpnp!_FUNCTIONAL_DEVICE_EXTENSION fffffa80043dc1b0 --
 ```
 
- 
+ 
 
- 
+ 
 
 
 

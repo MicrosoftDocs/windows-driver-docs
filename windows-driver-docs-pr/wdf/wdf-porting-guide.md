@@ -24,9 +24,9 @@ Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM driv
 -   [Steps in Porting](how-to-port.md)
 -   [Summary of KMDF and WDM Equivalents](summary-of-kmdf-and-wdm-equivalents.md)
 
- 
+ 
 
- 
+ 
 
 
 

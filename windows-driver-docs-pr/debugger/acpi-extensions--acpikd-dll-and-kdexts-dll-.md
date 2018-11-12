@@ -20,9 +20,9 @@ The Windows 2000 versions of these extension commands appear in the Acpikd.dll m
 
 For Windows XP and later versions of Windows, some of the ACPI debugging extensions can be found in Winxp\\Acpikd.dll, while others can be found in Winxp\\Kdexts.dll.
 
- 
+ 
 
- 
+ 
 
 
 

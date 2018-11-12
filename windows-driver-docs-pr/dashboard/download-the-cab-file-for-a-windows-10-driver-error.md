@@ -62,7 +62,7 @@ To use this method, you need to first do the following:
 | applicationId | string | The product ID value of the driver for which you want to retrieve error data. |  Yes  |
 | cabIdHash | string | The unique ID of the CAB file you want to download. To get this ID, use the [get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md) method to retrieve details for a specific error in your app, and use the **cabIdHash** value in the response body of that method. |  Yes  |
 
- 
+ 
 ### Request example
 
 The following example demonstrates how to download a CAB file using this method.

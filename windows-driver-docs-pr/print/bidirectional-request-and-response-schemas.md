@@ -32,9 +32,9 @@ For more information about constructing requests, see [Constructing a Bidi Commu
 
 For detailed information about the Bidirectional Communication Schema, see the [Bidirectional Communications Schema Hierarchy](bidirectional-communication-schema-hierarchy.md) and [Bidi Communications Schema Reference](https://msdn.microsoft.com/library/windows/hardware/ff545175) topics.
 
- 
+ 
 
- 
+ 
 
 
 

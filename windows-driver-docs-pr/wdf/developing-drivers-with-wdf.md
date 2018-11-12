@@ -23,9 +23,9 @@ You can purchase the book from O'Reilly using the following link:
 
 -   [Preview or read entire content](http://safari.oreilly.com/9780735623743) with a Safari subscription
 
- 
+ 
 
- 
+ 
 
 
 

@@ -67,7 +67,7 @@ When you set the driver package properties for production signing, remember to a
 
 **Note**  To see the hash (also called the thumb print) of a certificate, open a Command Prompt window and navigate to the directory that contains your certificate. Enter the command **certutil -dump** *CertName.pfx*, where *CertName.pfx* is the name of your certificate.
 
-     
+     
 
 ## <span id="related_topics"></span>Related topics
 
@@ -83,9 +83,9 @@ When you set the driver package properties for production signing, remember to a
 * [Driver Signing](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544865)
 * [Installing a Boot-Start Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547570)
 * [Tools for Signing Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552958)
- 
+ 
 
- 
+ 
 
 
 

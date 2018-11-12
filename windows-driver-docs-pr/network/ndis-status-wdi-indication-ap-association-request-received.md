@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_AP\_ASSOCIATION\_REQUEST\_RE
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_AP\_ASSOCIATION\_REQUEST\_RE
 |----------------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------|
 | [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926315) |                                |          | The incoming Association Request information. |
 
- 
+ 
 
 Requirements
 ------------
@@ -53,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

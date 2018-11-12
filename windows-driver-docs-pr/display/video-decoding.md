@@ -22,9 +22,9 @@ DirectX VA permits one or more stages of the video decoding process to be divide
 
 The DirectX VA API decodes a single video stream. Support of multiple video streams requires a separate DirectX VA session for each video stream (for example, a separate pair of output and input pins for the video decoder and acceleration driver to use in filter graph operation). For more information about a filter graph, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,11 +22,11 @@ After you launch the **Authoring** tool, the **Welcome to the Metadata Authoring
 -   To update an existing device metadata package, select **Update existing device metadata package**, click **Browse** to select the package, and then click **Next**.
     **Note**  You can't edit Device Stage experiences with the tool. However, the Device Stage folder isn't changed if you update the package by using this tool. For more information about Device Stage, please see [Windows 7 Device Experience](http://go.microsoft.com/fwlink/p/?linkid=221801).
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

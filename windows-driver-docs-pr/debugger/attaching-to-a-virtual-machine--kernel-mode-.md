@@ -23,15 +23,15 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
 > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
-1.  In the virtual machine, in an elevated Command Prompt window, enter the following commands.
+1. In the virtual machine, in an elevated Command Prompt window, enter the following commands.
 
-    **bcdedit /debug on**
+   **bcdedit /debug on**
 
-    **bcdedit /dbgsettings serial debugport:***n* **baudrate:115200**
+   **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:115200**
 
-    where *n* is the number of a COM port on the virtual machine.
+   where *n* is the number of a COM port on the virtual machine.
 
-2.  In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
+2. In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
 
 3. Once the debugger is attached and running, reboot the target machine.
 
@@ -42,32 +42,32 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 If the debugger is running on the same computer as the virtual machine, enter the following for **Port**.
 
-**\\\\.\\pipe\\***PipeName*.
+**\\\\.\\pipe\\**<em>PipeName</em>.
 
 If the debugger is running on a different computer from the virtual machine, enter the following for **Port**.
 
-**\\\\***VMHost***\\pipe\\***PipeName*
+**\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>
 
 Click **OK**.
 
 You can also start WinDbg at the command line. If the debugger is running on the same physical computer as the virtual machine, enter the following command in a Command Prompt window.
 
-**windbg -k com:pipe,port=\\\\.\\pipe\\***PipeName***,resets=0,reconnect**
+**windbg -k com:pipe,port=\\\\.\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
 If the debugger is running on a different physical computer from the virtual machine, enter the following command in a Command Prompt window.
 
-**windbg -k com:pipe,port=\\\\***VMHost***\\pipe\\***PipeName***,resets=0,reconnect**
+**windbg -k com:pipe,port=\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
 ## <span id="Starting_the_Debugging_Session_Using_KD"></span><span id="starting_the_debugging_session_using_kd"></span><span id="STARTING_THE_DEBUGGING_SESSION_USING_KD"></span>Starting the Debugging Session Using KD
 
 
 To debug a virtual machine that is running on the same physical computer as the debugger, enter the following command in a Command Prompt window.
 
-**kd -k com:pipe,port=\\\\.\\pipe\\***PipeName***,resets=0,reconnect**
+**kd -k com:pipe,port=\\\\.\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
 To debug a virtual machine that is running on a different physical computer from the debugger, enter the following command in a Command Prompt window.
 
-**kd -k com:pipe,port=\\\\***VMHost***\\pipe\\***PipeName***,resets=0,reconnect**
+**kd -k com:pipe,port=\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -93,19 +93,19 @@ By default, COM ports are not presented in generation 2 virtual machines. You ca
 
 To enable kernel debugging using a COM port on a generation 2 virtual machine, follow these steps:
 
-1.  Disable Secure Boot by entering this PowerShell command:
+1. Disable Secure Boot by entering this PowerShell command:
 
-    **Set-VMFirmware –Vmname** *VmName* **–EnableSecureBoot Off**
+   **Set-VMFirmware –Vmname** *VmName* **–EnableSecureBoot Off**
 
-    where *VmName* is the name of your virtual machine.
+   where *VmName* is the name of your virtual machine.
 
-2.  Add a COM port to the virtual machine by entering this PowerShell command:
+2. Add a COM port to the virtual machine by entering this PowerShell command:
 
-    **Set-VMComPort –VMName** *VmName* **1 \\\\.\\pipe\\***PipeName*
+   **Set-VMComPort –VMName** *VmName* **1 \\\\.\\pipe\\**<em>PipeName</em>
 
-    For example, the following command configures the first COM port on virtual machine TestVM to connect to named pipe TestPipe on the local computer.
+   For example, the following command configures the first COM port on virtual machine TestVM to connect to named pipe TestPipe on the local computer.
 
-    **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
+   **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
 
 
 3. Once the debugger is attached and running, stop and cold start the VM to activate the COM ports in the VM.　The emulated UARTS aren’t available for debugging unless at least one is actually configured with a pipe name and they cannot be hot-added.
@@ -141,7 +141,7 @@ You can use Control Panel to allow access through the Windows firewall. Open Con
 **VMWare**  
 If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMWare often consumes 100% of the CPU.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -150,7 +150,7 @@ If you restart the virtual machine by using the VMWare facilities (for example, 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
- 
+ 
 
 
 

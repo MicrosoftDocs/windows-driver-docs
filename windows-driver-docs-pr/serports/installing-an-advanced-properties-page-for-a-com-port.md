@@ -37,9 +37,9 @@ To override the default dialog box displayed by **SerialDisplayAdvancedSettings*
 
 2.  Install the custom dialog DLL by setting an **EnumAdvancedDialog** entry value in an *add-registry-section* that is referenced by a device's [**DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The type and format of the value entry is the same as that used for a **EnumPropPages32** value entry.
 
- 
+ 
 
- 
+ 
 
 
 

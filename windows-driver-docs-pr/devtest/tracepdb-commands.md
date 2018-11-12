@@ -23,16 +23,12 @@ Use the following parameters to specify the location of the PDB files.
 
 ```
     tracepdb [-f PDBFiles] [-s] [-p TMFDirectory] [-v] [-c]
-
-   
 ```
 
 Use the following parameters to specify an image file for the [trace provider](trace-provider.md).
 
 ```
     tracepdb -i ImageFiles [-r SymbolPaths] [-p TMFDiretory]  [-v]
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -89,9 +85,9 @@ If you submit a PDB symbol file that does not include trace formatting instructi
 
 If Tracefmt cannot find any PDB files in the path specified, it returns to the command prompt without comment. To get processing details, resubmit the command with the **-v** parameter.
 
- 
 
- 
+
+
 
 
 

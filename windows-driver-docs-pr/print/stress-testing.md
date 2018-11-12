@@ -37,9 +37,9 @@ For Bluetooth-enabled printers, run stress tests on print jobs as follows:
 
 3.  Send a job to a printer outside the maximum range of the Bluetooth radio. Wait for an error state to occur, and then move the printer back within range to verify that it recovers gracefully.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,6 @@ DEBUG_FLR_IMAGE_TIMESTAMP:  5229c857
 MODULE_NAME: NdisTimedOidComplete
 
 FAULTING_MODULE: 9fee1000 NdisTimedOidComplete
-
 ```
 
 Further down this analysis output, you can click on the link under the DV\_RULE\_INFO section for additional rule descriptions. For time-out type of rules, the current stack might not contain relevant information.
@@ -155,9 +154,9 @@ When the crash dump has been generated for a timed rule, there is a possibility 
 
 [Debugging with NDISKD (part 3)](http://go.microsoft.com/fwlink/p/?linkid=327571)
 
- 
 
- 
+
+
 
 
 

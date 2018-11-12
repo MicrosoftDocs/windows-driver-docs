@@ -15,7 +15,7 @@ The C# version of the [Print settings and print notifications](http://go.microso
 
 **Note**  The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
- 
+ 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -29,7 +29,7 @@ Before you get started:
 5.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
-     
+     
 
 ## <span id="Step_1__Find_the_printer"></span><span id="step_1__find_the_printer"></span><span id="STEP_1__FIND_THE_PRINTER"></span>Step 1: Find the printer
 
@@ -38,7 +38,7 @@ Before a device context can be created, the app needs to determine the device ID
 
 **Note**  The System.Devices.AppPackageFamilyName for devices that are associated with your app can be found under the **Packaging** tab on the Manifest Designer in Microsoft Visual Studio.
 
- 
+ 
 
 This example shows the `EnumerateAssociatedPrinters` method from the **InkLevel.xaml.cs** file:
 
@@ -136,7 +136,7 @@ The `GetInkStatus` method uses an asynchronous event-based pattern to request in
 
 **Note**   This C# example follows a different pattern than the JavaScript sample, because C# lets you send a dispatcher to the PrintHelperClass so that it can post the event messages back onto the UI thread.
 
- 
+ 
 
 This example shows the `GetInkStatus` and `OnInkLevelReceived` methods from the **InkLevel.xaml.cs** file:
 
@@ -251,7 +251,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
-     
+     
 
 The following steps build your app and install the device metadata.
 
@@ -266,7 +266,7 @@ The following steps build your app and install the device metadata.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
     **Note**  If you haven't created your device metadata yet, see [Step 2: Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-     
+     
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
@@ -319,9 +319,9 @@ If your printer was found when enumerating the associated printers, but a Bidi q
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

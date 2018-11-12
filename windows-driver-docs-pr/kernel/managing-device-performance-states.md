@@ -70,9 +70,9 @@ The active power scheme setting and the power scheme personality setting use the
 
 When the power source changes, the power manager calls the callback routine and passes the GUID that represents the power source setting and the value of the power source setting that indicates whether the computer is being powered by an AC power source, a DC power source, or a short-term DC power source.
 
- 
+ 
 
- 
+ 
 
 
 

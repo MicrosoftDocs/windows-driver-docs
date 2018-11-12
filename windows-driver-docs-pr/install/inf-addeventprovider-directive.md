@@ -38,7 +38,7 @@ References an INF-writer-defined section that contains information for registeri
 Remarks
 -------
 
-The system-defined and case-insensitive extensions can be inserted into a *DDInstall***.Events** section that contains an **AddEventProvider** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
+The system-defined and case-insensitive extensions can be inserted into a <em>DDInstall</em>**.Events** section that contains an **AddEventProvider** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
 
 Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 

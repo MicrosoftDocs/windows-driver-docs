@@ -26,9 +26,9 @@ Returns state information for a local I/O target.
 <a href="" id="iwdfremotetarget--getstate"></a>[**IWDFRemoteTarget::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff560265)  
 Returns state information for a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The **AVCSTRM\_GET\_PROPERTY** function code is not currently implemented.
 
- 
+ 
 
- 
+ 
 
 
 

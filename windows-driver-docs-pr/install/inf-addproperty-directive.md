@@ -141,9 +141,9 @@ DeviceModel,,,,"Sample Device Model Name"
 
 [**DelProperty**](inf-delproperty-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

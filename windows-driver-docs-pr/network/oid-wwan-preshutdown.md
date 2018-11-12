@@ -47,9 +47,9 @@ Requirements
 
 [**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt593235)
 
- 
+ 
 
- 
+ 
 
 
 

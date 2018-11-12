@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 introduces some changes to the required processing of the D3DDP2OP\_CLEAR token. Specifically a new flag D3DCLEAR\_COMPUTERECTS has been added to the **dwFlags** field of the [**D3DHAL\_DP2CLEAR**](https://msdn.microsoft.com/library/windows/hardware/ff545441) data structure. This new flag is only passed to the driver when a pure device type is being used (that is, D3DCREATE\_PUREDEVICE was specified when creating the device and the driver exports the D3DDEVCAPS\_PUREDEVICE device cap). Furthermore, this flag is never passed to non-DirectX 8.0 drivers and it is not specified by using the legacy **Clear** or **Clear2** driver callbacks.
 
- 
+ 
 
- 
+ 
 
 
 

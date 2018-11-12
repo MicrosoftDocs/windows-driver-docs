@@ -50,9 +50,9 @@ These TAPI-function calls cause the NDPROXY driver to first create a virtual con
 
 -   After NDISWAN accepts the outgoing call, NDPROXY calls the [**NdisCoGetTapiCallId**](https://msdn.microsoft.com/library/windows/hardware/ff561700) function to retrieve a string that identifies NDISWAN's context for the VC. NDPROXY passes this string back to the TAPI application. The TAPI application uses this VC-context string to complete its call to **lineGetID**.
 
- 
+ 
 
- 
+ 
 
 
 

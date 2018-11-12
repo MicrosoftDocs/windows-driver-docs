@@ -34,9 +34,9 @@ The MOF syntax for each method that belongs to this class is described in the re
 
 [**SetPersistentEntry**](setpersistententry.md)
 
- 
+ 
 
- 
+ 
 
 
 

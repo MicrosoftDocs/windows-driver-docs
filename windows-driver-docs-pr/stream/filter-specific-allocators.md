@@ -36,9 +36,9 @@ When a free request is submitted to the allocator, the allocator signals the str
 
 It is possible for both the DISPATCH\_LEVEL interface and the IRP-based interface to contend for free frames. KS synchronizes this queue using the cancel spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

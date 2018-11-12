@@ -45,9 +45,9 @@ For more information about property sets, see [KS Properties](https://msdn.micro
 
 [**STREAM\_PROPERTY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568442)
 
- 
+ 
 
- 
+ 
 
 
 

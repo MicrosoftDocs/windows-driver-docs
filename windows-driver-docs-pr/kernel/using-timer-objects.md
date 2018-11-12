@@ -44,9 +44,9 @@ However, higher-level drivers generally use another synchronization mechanism in
 
 Similarly, PnP drivers should not wait for other actions to occur, but instead should use the PnP manager's [notification](using-pnp-notification.md) mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

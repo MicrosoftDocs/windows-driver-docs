@@ -210,7 +210,7 @@ Note that certificates and keys are logically grouped by the Base CSP/KSP into s
 <td align="left">File</td>
 <td align="left">E(R) U(R) A(RW)</td>
 <td align="left"><p>Directory index by application name.</p>
-<p>For more information, see 'Application Directory'.</p></td>
+<p>For more information, see &#39;Application Directory&#39;.</p></td>
 </tr>
 <tr class="even">
 <td align="left">mscp</td>
@@ -257,11 +257,11 @@ Note that certificates and keys are logically grouped by the Base CSP/KSP into s
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Interoperability with msroots: mscp\\msroots file is a PKCS \#7 formatted certificate store.
 
- 
+ 
 
 ## <span id="File_Access_Control"></span><span id="file_access_control"></span><span id="FILE_ACCESS_CONTROL"></span>File Access Control
 
@@ -276,7 +276,7 @@ Known principals are identifiers for the various types of users that can attempt
 | User          | A user client of the card, who proves his identity to the card by use of a PIN.                                                                                                                                                                                                             | U        | ROLE\_USER (1)     |
 | Administrator | Card issuer or other party with an administrative relationship to the card or data on the card. Uses a special PIN or KEY (that may or may not be unique to the card or user) to perform administrative tasks that the user cannot perform without using this data, such as PIN unblocking. | A        | ROLE\_ADMIN (2)    |
 
- 
+ 
 
 When “everyone” is used in the following discussion, it typically means any user of the card, whether authenticated or not. “Everyone can read a file,” for example, means that the user or administrator can automatically read the file.
 
@@ -300,30 +300,30 @@ Principals can create directories in the card file system with two sets of permi
 <tbody>
 <tr class="odd">
 <td align="left">UserCreateDeleteDirAc</td>
-<td align="left"><p>The user and administrator can create files in the directory by using [<strong>CardCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468711).</p>
-<p>The user and administrator can delete the Directory (if it is not empty) by calling [<strong>CardDeleteDirectory</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468716).</p>
-<p>Everyone can list the contents of the directory by using [<strong>CardEnumFiles</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468721).</p></td>
+<td align="left"><p>The user and administrator can create files in the directory by using <a href="https://msdn.microsoft.com/library/windows/hardware/dn468711" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468711)"><strong>CardCreateFile</strong></a>.</p>
+<p>The user and administrator can delete the Directory (if it is not empty) by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn468716" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468716)"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="https://msdn.microsoft.com/library/windows/hardware/dn468721" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468721)"><strong>CardEnumFiles</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">AdminCreateDeleteDirAc</td>
-<td align="left"><p>The administrator can create files in the directory by using [<strong>CardCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468711).</p>
-<p>The administrator can delete the Directory by using [<strong>CardDeleteDirectory</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468716).</p>
-<p>Everyone can list the contents of the directory by using [<strong>CardEnumFiles</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468721).</p>
+<td align="left"><p>The administrator can create files in the directory by using <a href="https://msdn.microsoft.com/library/windows/hardware/dn468711" data-raw-source="[&lt;strong&gt;CardCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468711)"><strong>CardCreateFile</strong></a>.</p>
+<p>The administrator can delete the Directory by using <a href="https://msdn.microsoft.com/library/windows/hardware/dn468716" data-raw-source="[&lt;strong&gt;CardDeleteDirectory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468716)"><strong>CardDeleteDirectory</strong></a>.</p>
+<p>Everyone can list the contents of the directory by using <a href="https://msdn.microsoft.com/library/windows/hardware/dn468721" data-raw-source="[&lt;strong&gt;CardEnumFiles&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468721)"><strong>CardEnumFiles</strong></a>.</p>
 <div class="alert">
 <strong>Note</strong>  This ACL is optional. It may be removed from future revisions of the smart card minidriver specification.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  When creating a directory, everyone automatically has permissions to list the files in the directory. There are no separate “list” permissions for directories.
 
- 
+ 
 
 ### <span id="File_Access_Operations"></span><span id="file_access_operations"></span><span id="FILE_ACCESS_OPERATIONS"></span>File Access Operations
 
@@ -361,7 +361,7 @@ Principals can use the contents of files in various ways. Valid operations are l
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="_File_Access_Conditions"></span><span id="_file_access_conditions"></span><span id="_FILE_ACCESS_CONDITIONS"></span> File Access Conditions
 
@@ -390,7 +390,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadUserWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information ([<strong>CardReadFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468727) or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://msdn.microsoft.com/library/windows/hardware/dn468727" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468727)"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, and that the user and administrator can read the file, write the file, and delete the file.</p></td>
 <td align="left">E(R), U(RW), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -400,7 +400,7 @@ The following table lists the access conditions that are available through [**Ca
 </tr>
 <tr class="even">
 <td align="left">EveryoneReadAdminWriteAc</td>
-<td align="left"><p>This means that everyone can read the file or get the file information ([<strong>CardReadFile</strong>](https://msdn.microsoft.com/library/windows/hardware/dn468727) or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
+<td align="left"><p>This means that everyone can read the file or get the file information (<a href="https://msdn.microsoft.com/library/windows/hardware/dn468727" data-raw-source="[&lt;strong&gt;CardReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn468727)"><strong>CardReadFile</strong></a> or <strong>CardGetFileInfo</strong>), respectively, but that only the administrator can write the file and delete the file.</p></td>
 <td align="left">E(R), U(R), A(RW)</td>
 </tr>
 <tr class="odd">
@@ -424,7 +424,7 @@ The following table lists the access conditions that are available through [**Ca
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists some sample access conditions for common items.
 
@@ -455,7 +455,7 @@ The following table lists some sample access conditions for common items.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Notes_on_the_Directory_and_File_Access_Conditions"></span><span id="notes_on_the_directory_and_file_access_conditions"></span><span id="NOTES_ON_THE_DIRECTORY_AND_FILE_ACCESS_CONDITIONS"></span>Notes on the Directory and File Access Conditions
 
@@ -469,9 +469,9 @@ The following table lists some sample access conditions for common items.
 -   It is not possible through the smart card minidriver interface to query directory access conditions.
 -   It is only possible through the smart card minidriver interface to create files with a subset of the access condition combinations that are available.
 
- 
+ 
 
- 
+ 
 
 
 

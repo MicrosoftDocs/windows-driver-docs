@@ -21,7 +21,7 @@ The information in the following table describes each of the supported property 
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_ATTRIBUTES | OnGetPropertyAttributes  | Returns a collection of attributes for one or more properties on a given object.                     |
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_DELETE          | OnDeleteProperties       | Deletes the properties that are identified by the given property keys.                               |
 
- 
+
 
 ## <span id="WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED"></span><span id="wpd_command_object_properties_get_supported"></span>WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_SUPPORTED
 
@@ -69,7 +69,6 @@ HRESULT AddSupportedPropertyKeys(
 
     return hr;
 }
-
 ```
 
 ## <span id="WPD_COMMAND_OBJECT_PROPERTIES_GET"></span><span id="wpd_command_object_properties_get"></span>WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET
@@ -105,7 +104,7 @@ The following table lists the definitions in *WpdObjectProperties.h*, the origin
 | DEVICE\_SERIAL\_NUMBER\_VALUE          | 012345678901234567890123456 | 012345678901234567890123456 |
 | DEVICE\_SUPPORTS\_NONCONSUMABLE\_VALUE | **FALSE**                   | **FALSE**                   |
 
- 
+
 
 The most significant changes to the **GetPropertyValuesForObject** method occurred in the section that retrieves the sensor properties. This code retrieves several values that are defined in *WpdObjectProperties.h* such as the object name, its format, its content type, and whether it can be deleted.
 
@@ -237,9 +236,9 @@ LONGLONG WpdObjectProperties::GetSensorReading()
 }
 ```
 
-**Note**  A critical section is necessary to prevent concurrent accesses of the *m\_llSensorReading* member variable. This value is overwritten when each RS232 read completes asynchronously, and is read whenever the SENSOR\_READING property is retrieved by a WPD application.
+**Note**  A critical section is necessary to prevent concurrent accesses of the *m\_llSensorReading* member variable. This value is overwritten when each RS232 read completes asynchronously, and is read whenever the SENSOR\_READING property is retrieved by a WPD application.
 
- 
+
 
 The **GetUpdateInterval** helper function performs an identical operation: it accesses the *m\_dwUpdateInterval* member variable and returns the value in numeric (DWORD) format if it is available:
 
@@ -340,9 +339,9 @@ In the original WpdHelloWorldSample driver, the attributes for every property we
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
+
+
 
 
 

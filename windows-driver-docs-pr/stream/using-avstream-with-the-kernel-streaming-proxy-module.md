@@ -30,9 +30,9 @@ As in kernel mode, the proxy either asks a data handler to determine whether the
 
 Before the connection is complete, AVStream calls the minidriver's [*AVStrMiniPinSetDataFormat*](https://msdn.microsoft.com/library/windows/hardware/ff556355) dispatch to inform the minidriver of the data format being set. This format corresponds to the user-mode media type that was suggested to the proxied pin. AVStream also provides the data range that was determined to be a partial match for the format.
 
- 
+ 
 
- 
+ 
 
 
 

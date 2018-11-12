@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT16 | The GO Configuration Timeout, in milliseconds.                                 |
 | UINT16 | The Client Configuration Timeout, in milliseconds.                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

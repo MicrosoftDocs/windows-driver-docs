@@ -111,9 +111,9 @@ To support system uninstall of a driver, replace the [**ProtocolUnload**](https:
     ProtocolChar.UninstallHandler                = ProtocolUninstall;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

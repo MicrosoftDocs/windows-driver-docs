@@ -121,9 +121,9 @@ The default time period for an installation process to complete is 5 minutes. If
 
 If a user-mode debugger is attached to the target system during the device installation process, the system will not enforce this timeout period. This allows a [driver package](driver-packages.md) developer to spend the time needed to debug the installation process.
 
- 
+ 
 
- 
+ 
 
 
 

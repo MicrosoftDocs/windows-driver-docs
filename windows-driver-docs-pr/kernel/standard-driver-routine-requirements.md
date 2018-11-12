@@ -30,9 +30,9 @@ Keep the following points in mind when designing a kernel-mode driver:
 
 -   Whether a driver has any other kind of standard routine depends on its functionality and on how that driver fits into the system (for example, whether it interoperates with system-supplied drivers). See the device-type specific documentation in the WDK for details.
 
- 
+ 
 
- 
+ 
 
 
 

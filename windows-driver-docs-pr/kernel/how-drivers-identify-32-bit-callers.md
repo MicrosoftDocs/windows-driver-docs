@@ -22,9 +22,9 @@ The second technique permits 32- and 64-bit applications to continue using the s
 
 The first technique is more efficient, because the driver checks a bit flag instead of calling a kernel-mode routine. However, the second technique requires no changes to user-mode code. Which technique you should use depends on the requirements of your driver and the applications that send I/O requests to it.
 
- 
+ 
 
- 
+ 
 
 
 

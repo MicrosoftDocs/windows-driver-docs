@@ -31,7 +31,6 @@ symstore query [/r] /f File /s Store [/o] [/d LogFile]
 symstore del /i ID /s Store [/o] [/d LogFile] 
 
 symstore /? 
-   
 ```
 
 ## <span id="ddk_symstore_command_line_options_dbg"></span><span id="DDK_SYMSTORE_COMMAND_LINE_OPTIONS_DBG"></span>Parameters
@@ -113,9 +112,9 @@ Displays help text for the SymStore command.
 
 For more information about SymStore, see [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md).
 
- 
 
- 
+
+
 
 
 

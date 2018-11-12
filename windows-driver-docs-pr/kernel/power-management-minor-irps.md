@@ -25,9 +25,9 @@ All power IRPs have the major code [**IRP\_MJ\_POWER**](irp-mj-power.md) and one
 
 This section provides reference information for the individual IRPs in alphabetical order. For more information about when the IRPs are sent and how drivers should handle them, see [Power Management](https://msdn.microsoft.com/library/windows/hardware/ff547131). The Power Management section also includes a general introduction to power management and terminology.
 
- 
+ 
 
- 
+ 
 
 
 

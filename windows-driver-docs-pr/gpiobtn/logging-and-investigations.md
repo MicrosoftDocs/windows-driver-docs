@@ -52,9 +52,9 @@ For example, if a dock indicator change is expected, the following entry should 
 12: Indicator_UpdateRegistryValue - Indicator state update : DockMode_Indicator : new state : Docked
 ```
 
- 
+ 
 
- 
+ 
 
 
 

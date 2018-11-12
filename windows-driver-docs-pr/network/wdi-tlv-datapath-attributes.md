@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |---------------------------------------------------------------------------|--------------------------------|----------|----------------------------|
 | [**WDI\_TLV\_DATAPATH\_CAPABILITIES**](wdi-tlv-datapath-capabilities.md) |                                | X        | The datapath capabilities. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

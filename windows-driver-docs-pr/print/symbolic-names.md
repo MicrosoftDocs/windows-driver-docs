@@ -31,9 +31,9 @@ The GPD language predefines a large number of symbolic names. Predefined names e
 
 You can define symbolic names for [customized features](customized-features.md), [customized options](customized-options.md), and [macros](macros.md).
 
- 
+ 
 
- 
+ 
 
 
 

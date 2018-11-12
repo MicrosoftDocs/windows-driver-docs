@@ -113,16 +113,13 @@ Use this method to edit an existing report template.
     </tr>
     <tr>
       <td>Sample payload</td>
-      <td><pre>{  
-   "view":"IHVDriver",
-   "projection":[  
-      "EventType",
-      "DriverName"
+      <td><pre>{<br/>   &quot;view&quot;:&quot;IHVDriver&quot;,
+   &quot;projection&quot;:[<br/>      &quot;EventType&quot;,
+      &quot;DriverName&quot;
    ],
-   "dateRange":{  
-      "reportPeriod":"Yesterday"
+   &quot;dateRange&quot;:{<br/>      &quot;reportPeriod&quot;:&quot;Yesterday&quot;
    },
-   "condition":{  
+   &quot;condition&quot;:{  
 
    },
    "aggregation":{  
@@ -175,14 +172,14 @@ Use this method to view the list of scheduled reports.
     <tr>
       <td>Sample Response Payload</td>
       <td><pre>{
-    "data": [
+    &quot;data&quot;: [
         {
-            "reportId": 2,
-            "templateId": 7,
-            "schedule": "{report details}",
-            "isActive": true,
-            "createdDatetime": "2018-06-24T17:04:18.487",
-            "modifiedDatetime": "2018-06-25T08:28:42.063"
+            &quot;reportId&quot;: 2,
+            &quot;templateId&quot;: 7,
+            &quot;schedule&quot;: &quot;{report details}&quot;,
+            &quot;isActive&quot;: true,
+            &quot;createdDatetime&quot;: &quot;2018-06-24T17:04:18.487&quot;,
+            &quot;modifiedDatetime&quot;: &quot;2018-06-25T08:28:42.063&quot;
         },
 
                   {

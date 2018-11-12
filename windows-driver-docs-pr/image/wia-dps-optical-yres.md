@@ -56,9 +56,9 @@ Requirements
 
 [**WIA\_IPS\_OPTICAL\_YRES**](wia-ips-optical-yres.md)
 
- 
+ 
 
- 
+ 
 
 
 

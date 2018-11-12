@@ -20,9 +20,9 @@ An offload target indicates the following types of chimney-related events:
 
 -   Events that are TCP chimney-specific. For more information about indicating these events, see [Indicating TCP Chimney-Specific Events](indicating-tcp-chimney-specific-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

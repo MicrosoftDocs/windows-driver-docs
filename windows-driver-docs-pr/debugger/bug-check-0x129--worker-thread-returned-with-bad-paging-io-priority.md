@@ -39,7 +39,7 @@ The WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY bug check has a va
 <tr class="odd">
 <td align="left">1</td>
 <td align="left"><p>Address of worker routine</p>
-<p>Use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command on this address to find the offending driver.</p></td>
+<p>Use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command on this address to find the offending driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -56,11 +56,11 @@ The WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY bug check has a va
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ This function arms the NVDIMM-N for save operations in the event of a power loss
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -48,26 +48,26 @@ None.
 <td align="left">0</td>
 <td align="left"><p>This function can return the following Function-Specific Error Code:</p>
 <p>1: The operation timed out.</p>
-<p>Go to [_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)</a> for information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]   
 &gt;This is a synchronous function. It returns only when the arm operation has finished or timed out. If the operation takes longer than the timeout defined in \**ARM\_TIMEOUT0* (0, 0x20) and \**ARM\_TIMEOUT1* (0, 0x21), the platform shall abort this function before it returns.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

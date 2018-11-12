@@ -343,9 +343,9 @@ The NotifyDestruct method on a dynamic concept provider is a callback made by th
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

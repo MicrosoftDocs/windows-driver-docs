@@ -61,7 +61,7 @@ Displays the list of possible expression types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command,
 
 For more information about how to control which syntax is used, see [Evaluating Expressions](evaluating-expressions.md). For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
- 
+ 
 
- 
+ 
 
 
 

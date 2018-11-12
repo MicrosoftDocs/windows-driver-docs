@@ -19,9 +19,9 @@ The Microsoft Windows 2000 and later and Windows 98/Me Direct3D DDI types are no
 
 If your code will be portable between Windows 2000 and later and Windows 98/Me, use *dx95type.h*, a utility file that is included in the Windows Driver Kit (WDK) and previous Driver Development Kits (DDKs). It contains type definitions and macros that map some naming differences that occur between the Windows 98/Me and Windows 2000 and later platforms, enabling common driver code to be used between them.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,10 +29,10 @@ None
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
- kedexts.dll
+ kedexts.dll
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
- 
+ 
 
 
 

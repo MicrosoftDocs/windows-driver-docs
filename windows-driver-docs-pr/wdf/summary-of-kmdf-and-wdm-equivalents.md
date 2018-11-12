@@ -15,9 +15,9 @@ This section provides tables that compare Windows Driver Frameworks (WDF) object
 -   [WDM Equivalents for WDF Buffer Pointers](wdm-equivalents-for-kmdf-buffer-pointers.md)
 -   [WDM IRPs and WDF Event Callback Functions](wdm-irps-and-kmdf-event-callback-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

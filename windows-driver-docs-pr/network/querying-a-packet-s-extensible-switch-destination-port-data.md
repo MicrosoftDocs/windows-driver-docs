@@ -17,11 +17,11 @@ To improve performance, a forwarding extension can call the [*GrowNetBufferListD
 
 **Note**  Only packets obtained from the extensible switch egress data path will contain destination port information. For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

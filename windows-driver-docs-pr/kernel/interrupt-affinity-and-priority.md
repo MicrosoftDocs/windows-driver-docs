@@ -63,7 +63,7 @@ The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
@@ -122,11 +122,11 @@ The [**GROUP_AFFINITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi
 
 Kernel routines that use the KAFFINITY type include [**IoConnectInterrupt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterrupt), [**KeQueryActiveProcessorCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessorcount), and [**KeQueryActiveProcessors**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessors). 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

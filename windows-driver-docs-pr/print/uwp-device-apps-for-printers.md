@@ -16,9 +16,9 @@ UWP device apps are distributed by the Microsoft Store and automatically install
 
 Printers that are installed using v4 print drivers can provide a customized printer preferences experience by supporting the printTaskSettings contract or support printer notifications by supporting the backgroundTasks contract. For more information, see [Developing a UWP device app for printing](https://msdn.microsoft.com/library/windows/hardware/br259129.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -58,7 +58,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -137,9 +137,9 @@ SLIST CONTENTS:
    +0x008 Description      : [260]  "Signature is: 1"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

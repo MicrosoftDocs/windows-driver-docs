@@ -52,7 +52,7 @@ Parameter 1 indicates the type of violation.
 </tr>
 <tr class="even">
 <td align="left"><p>0x2</p></td>
-<td align="left"><p>The target device's device object, if it is available</p></td>
+<td align="left"><p>The target device&#39;s device object, if it is available</p></td>
 <td align="left"><p>The device object</p></td>
 <td align="left"><p>The driver object, if it is available</p></td>
 <td align="left"><p>The device object completed the I/O request packet (IRP) for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
@@ -60,7 +60,7 @@ Parameter 1 indicates the type of violation.
 <tr class="odd">
 <td align="left"><p>0x3</p></td>
 <td align="left"><p>The physical device object (PDO) of the stack</p></td>
-<td align="left"><p>The functional device object (FDO) of the stack. In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>The functional device object (FDO) of the stack. In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
 <td align="left"><p>The blocked IRP</p></td>
 <td align="left"><p>A device object has been blocking an IRP for too long a time.</p></td>
 </tr>
@@ -68,19 +68,19 @@ Parameter 1 indicates the type of violation.
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Time-out value, in seconds.</p></td>
 <td align="left"><p>The thread currently holding onto the Plug-and-Play (PnP) lock.</p></td>
-<td align="left"><p>In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
+<td align="left"><p>In Windows 7 and later, nt!TRIAGE_9F_POWER.</p></td>
 <td align="left"><p>The power state transition timed out waiting to synchronize with the PnP subsystem.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x500</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The target device's device object, if available</p></td>
+<td align="left"><p>The target device&#39;s device object, if available</p></td>
 <td align="left"><p>Device object</p></td>
 <td align="left"><p>The device object completed the IRP for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
 </tr>
 </tbody>
 </table>
- 
+
 
 Cause
 -----
@@ -158,8 +158,6 @@ kd>!analyze -v
                 0  0 00000000 00000000 00000000-fffffa800ad00170    
 
                 Args: 00000000 00000000 00000000 00000000
-
-    
 ```
 
 -   Use the [**!devstack**](-devstack.md) command with the PDO address in Arg2, to display information associated with the faulting driver.
@@ -225,21 +223,21 @@ kd>!analyze -v
       THREAD: ffffe0000ef5e040 (static), IRP: ffffe00013d07420, DEVICE: ffffe00012dd5040
 ```
 
--   If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
+- If you are working with a KMDF driver, use the [Windows Driver Framework Extensions](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) (!wdfkd) to gather additional information.
 
-   Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
+  Use [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) &lt;your driver name&gt;, to see if KMDF is waiting for you to ACK any pending requests.
 
-   Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
+  Use [**!wdfkd.wdfdevicequeues**](-wdfkd-wdfdevicequeues.md) &lt;your WDFDEVICE&gt; to examine all outstanding requests and what state they are in.
 
--   Use the [**!stacks**](-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
+- Use the [**!stacks**](-stacks.md) extension to examine the state of every thread and look for a thread that might be holding up the power state transition.
 
--   To help you determine the cause of the error, consider the following questions:
+- To help you determine the cause of the error, consider the following questions:
 
-    -   What are the characteristics of the physical device object (PDO) driver (Arg2)?
-    -   Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
-    -   Is there IO associated with the thread that is blocking it? What symbols are on the stack?
-    -   When you examine the blocked power IRP, what do you notice?
-    -   What is the PnP minor function code of the power IRP?
+  -   What are the characteristics of the physical device object (PDO) driver (Arg2)?
+  -   Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
+  -   Is there IO associated with the thread that is blocking it? What symbols are on the stack?
+  -   When you examine the blocked power IRP, what do you notice?
+  -   What is the PnP minor function code of the power IRP?
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x4**
 
@@ -261,7 +259,7 @@ kd>!analyze -v
     Arg2: 00000258, Timeout in seconds.
     Arg3: 84e01a70, The thread currently holding on to the Pnp lock.
     Arg4: 82931b24, nt!TRIAGE_9F_PNP on Win7
-     
+
     ```
 
     The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that might help you determine the cause of the error. The nt!TRIAGE\_9F\_PNP structure provides a pointer to a structure that contains the list of dispatched (but not completed) PnP IRPs and provides a pointer to the delayed system worker queue.
@@ -274,7 +272,7 @@ kd>!analyze -v
        +0x002 Revision         : 1
        +0x004 CompletionQueue  : 0x82970e20 _TRIAGE_PNP_DEVICE_COMPLETION_QUEUE
        +0x008 DelayedWorkQueue : 0x829455bc _TRIAGE_EX_WORK_QUEUE
-    
+
     ```
 
     The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding PnP IRPs.

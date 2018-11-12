@@ -40,9 +40,9 @@ The class driver sets the **CommandData**.**MasterClockHandle** member pointed t
 
 The minidriver should retain the **CommandData.MasterClockHandle** field value in the SRB that points to the handle of the master clock.
 
- 
+ 
 
- 
+ 
 
 
 

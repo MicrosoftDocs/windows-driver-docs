@@ -23,9 +23,9 @@ The renderer is also responsible for sending rendered image data, along with pri
 
 You can modify Unidrv's rendering operations by providing a [rendering plug-in](rendering-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ When an application fails, the following events occur:
 
 -   The host process and UMDF driver complete pending I/O requests.
 
- 
+ 
 
- 
+ 
 
 
 

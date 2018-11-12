@@ -32,9 +32,9 @@ For more information about supporting PnP and power management in a framework-ba
 -   [Supporting PnP and Power Management in Your Driver](supporting-pnp-and-power-management-in-your-driver.md)
 -   [Power Policy Ownership](power-policy-ownership.md)
 
- 
+ 
 
- 
+ 
 
 
 

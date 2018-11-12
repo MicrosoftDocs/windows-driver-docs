@@ -37,9 +37,9 @@ Requirements
 
 [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536150)
 
- 
+ 
 
- 
+ 
 
 
 

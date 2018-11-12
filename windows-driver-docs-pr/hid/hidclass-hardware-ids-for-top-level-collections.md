@@ -43,7 +43,7 @@ Based on these factors, there are 4 categories of hardware IDs
 | Single-Function | Case 1     | Case 2       |
 | Multi-Function  | Case 3     | Case 4       |
 
- 
+ 
 
 ## Case 1: Single-function device with single TLC
 
@@ -177,7 +177,7 @@ The following are hardware IDs (for internal use only) that Windows uses to prov
 </tbody>
 </table>
 
- 
+ 
 
 Important notes:
 
@@ -199,11 +199,11 @@ Legend:
 | p(4)  | four hex digits | 0x0000-0xFFFF     | Usage Page Number for TLC                                |
 | u(4)  | four hex digits | 0x0000-0xFFFF     | Usage Number of TLC                                      |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

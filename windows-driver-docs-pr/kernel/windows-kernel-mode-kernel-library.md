@@ -16,11 +16,11 @@ Routines that provide a direct interface to the kernel library are usually prefi
 
 **Note**  The term *microkernel* does not apply to the current kernel used in the Windows operating system.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

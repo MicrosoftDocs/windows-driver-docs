@@ -26,9 +26,9 @@ By making your driver a WMI provider, you can:
 
 -   Annotate data and event blocks with descriptive driver-defined class names and optional descriptions that WMI clients can then enumerate and display to users.
 
- 
+ 
 
- 
+ 
 
 
 

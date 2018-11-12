@@ -16,9 +16,9 @@ These requests merely represent notifications that PnP events are occurring and 
 
 If the function member of an SRB is set to SRB\_FUNCTION\_PNP, the SRB is a structure of type SCSI\_PNP\_REQUEST\_BLOCK.
 
- 
+ 
 
- 
+ 
 
 
 

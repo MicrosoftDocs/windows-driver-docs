@@ -52,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificate](trustedcertificate.md)</p></td>
+<td><p><a href="trustedcertificate.md" data-raw-source="[TrustedCertificate](trustedcertificate.md)">TrustedCertificate</a></p></td>
 <td><p>Specifies a trusted certificate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -72,9 +72,9 @@ There are no child elements.
 
 The IssuerName element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

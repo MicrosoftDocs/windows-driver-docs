@@ -30,7 +30,7 @@ The name of the section must be one of the following system-defined values: **co
 <a href="" id="id"></a>*ID*  
 Specifies a string, unique within this section, that identifies the option.
 
-For each entry in this section, there must be a corresponding **Files.***HwComponent***.***ID* section in the file.
+For each entry in this section, there must be a corresponding **Files.**<em>HwComponent</em>**.**<em>ID</em> section in the file.
 
 For the **computer** component, the last three characters of the string determine which kernel Windows copies. If this string ends in "_up", Windows copies the uniprocessor kernel. If this string ends in "_mp", Windows copies the multiprocessor kernel. If the string does not end in "_Xp", Windows copies one or the other kernel, but does not guarantee which one.
 
@@ -48,9 +48,9 @@ oemscsi2 = "OEM Fast SCSI Controller 2"
 ; ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

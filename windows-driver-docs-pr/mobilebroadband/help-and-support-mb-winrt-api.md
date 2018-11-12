@@ -22,9 +22,9 @@ You can simplify the user experience by showing help for the user’s device onl
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

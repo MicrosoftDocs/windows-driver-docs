@@ -82,9 +82,9 @@ WIADevice.DeviceDesc="Hello World WIA Minidriver"
 Location="Hello World WIA Minidriver Installation Source"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

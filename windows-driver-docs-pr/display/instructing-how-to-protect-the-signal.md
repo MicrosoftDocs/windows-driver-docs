@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The COPP command can provide instructions about how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device. To set signal protection, the video miniport driver's [*COPPCommand*](https://msdn.microsoft.com/library/windows/hardware/ff539642) function receives a pointer to a [**DXVA\_COPPCommand**](https://msdn.microsoft.com/library/windows/hardware/ff563141) structure with the **guidCommandID** member set to the DXVA\_COPPSetSignaling GUID and the **CommandData** member set to a pointer to a [**DXVA\_COPPSetSignalingCmdData**](https://msdn.microsoft.com/library/windows/hardware/ff563146) structure that specifies how to protect the signal.
 
- 
+ 
 
- 
+ 
 
 
 

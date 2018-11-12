@@ -19,9 +19,9 @@ For information about debugging a computer as it boots, see the following topics
 -   [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183)
 -   [BCD Boot Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205)
 
- 
+ 
 
- 
+ 
 
 
 

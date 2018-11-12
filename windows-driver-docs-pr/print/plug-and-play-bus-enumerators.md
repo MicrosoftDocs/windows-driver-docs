@@ -26,9 +26,9 @@ The following sections provide information about Plug and Play bus enumeration o
 
 [Printer Connected to an Infrared Port](printer-connected-to-an-infrared-port.md)
 
- 
+ 
 
- 
+ 
 
 
 

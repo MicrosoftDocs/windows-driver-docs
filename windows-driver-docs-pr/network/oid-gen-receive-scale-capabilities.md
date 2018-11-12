@@ -46,9 +46,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff567220)
 
- 
+ 
 
- 
+ 
 
 
 

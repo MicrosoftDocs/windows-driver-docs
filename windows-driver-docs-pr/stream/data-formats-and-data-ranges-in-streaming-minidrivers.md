@@ -25,9 +25,9 @@ Each stream details the data ranges it supports in the **StreamFormatsArray** me
 
 For more information about formats and range intersection, see [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,15 +48,15 @@ Specifies the hexadecimal address of the HIDP\_PREPARSED\_DATA structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about human input devices (HID), see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ NDIS Quality of Service (QoS) parameters specify the policies and settings of tr
 
     **Note**  Traffic classifications are also known as "application priorities" in the IEEE 802.1 specifications.
 
-     
+     
 
 NDIS QoS defines the following types of parameters:
 
@@ -54,9 +54,9 @@ The miniport driver must issue an NDIS status indication when its operational Qo
 
 For more information about how the miniport driver resolves its operational NDIS QoS parameters, see [Resolving Operational NDIS QoS Parameters](resolving-operational-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

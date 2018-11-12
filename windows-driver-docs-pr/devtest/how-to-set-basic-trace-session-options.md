@@ -23,9 +23,9 @@ Use this procedure to set basic trace session options while creating a trace ses
 
 4.  On the **Log Session Options** page, set the basic trace session options.
 
- 
+ 
 
- 
+ 
 
 
 

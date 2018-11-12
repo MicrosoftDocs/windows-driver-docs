@@ -51,7 +51,7 @@ The valid values for this property are shown in the following table.
 | WIA\_ALARM\_BEEP9  | Another audible alarm (beep) is played at the device. |
 | WIA\_ALARM\_BEEP10 | Another audible alarm (beep) is played at the device. |
 
- 
+ 
 
 The WIA mini-driver can implement one or more WIA\_ALARM\_BEEP values, each one for a different beep sound or signal supported by the device. If the device can only produce one beep sound, the WIA mini-driver must only implement the WIA\_ALARM\_NONE and WIA\_ALARM\_BEEP1 values.
 
@@ -73,9 +73,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,31 +59,31 @@ Te.exe automatically determines all of your test's native and managed module dep
 
 You can manually specify additional test dependencies via the **/TestDependencies** command line parameter in the form of a semicolon-delimited list of files or directories to copy.
 
--   **Files**
+- **Files**
 
-    Each file specification can contain wildcard characters (test.txt; test\*.dll; etc.). For example:
+  Each file specification can contain wildcard characters (test.txt; test\*.dll; etc.). For example:
 
-    ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
-    ```
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
--   **Directories**
+  ``` syntax
+  te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
+  ```
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
+- **Directories**
 
-    TAEF supports recursive directory searches for directories that exist *at or below* the directory that contains the test binary. For example:
+  TAEF supports recursive directory searches for directories that exist *at or below* the directory that contains the test binary. For example:
 
-    ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\...
-    ```
+  ``` syntax
+  te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\...
+  ```
 
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
-    ``` syntax
-_    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
-    ```
+  ``` syntax
+  _    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
+  ```
 
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
-    **Note:**If you specify a recursive or non-recursive directory search for a directory that does not exist *at or below* the test directory, all files will be copied to the remote machine but the directory hierarchy will be flattened.
+  <strong>Note:</strong>If you specify a recursive or non-recursive directory search for a directory that does not exist *at or below* the test directory, all files will be copied to the remote machine but the directory hierarchy will be flattened.
 
 You can aso specify test dependencies via [DeploymentItem metadata](deploymentitem-metadata.md)
 
@@ -128,9 +128,9 @@ te unittests\wex.common.tests.dll /runon:TAEFTest1 /runas:system
 -   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#user-context).
 -   Te.exe connects to the remote Te.ProcessHost.exe instance and begins executing the tests.
 
- 
+ 
 
- 
+ 
 
 
 

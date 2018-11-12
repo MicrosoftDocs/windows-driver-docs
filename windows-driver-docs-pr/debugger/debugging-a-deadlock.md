@@ -148,9 +148,9 @@ When a deadlock occurs in kernel mode, use the **!kdexts.locks** extension to li
 
 You can usually pinpoint the deadlock by finding one non-executing thread that holds an exclusive lock on a resource that is required by an executing thread. Most of the locks are shared.
 
- 
+ 
 
- 
+ 
 
 
 

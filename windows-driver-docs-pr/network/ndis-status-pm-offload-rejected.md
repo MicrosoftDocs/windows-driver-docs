@@ -60,9 +60,9 @@ Requirements
 
 [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768)
 
- 
+ 
 
- 
+ 
 
 
 

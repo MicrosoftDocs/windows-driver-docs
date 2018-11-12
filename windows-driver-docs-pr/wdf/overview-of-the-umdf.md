@@ -43,9 +43,9 @@ The following diagram shows how driver host processes, driver manager, and refle
 
 ![umdf components including up and down device objects in reflector](images/umdfarch3.gif)
 
- 
+ 
 
- 
+ 
 
 
 

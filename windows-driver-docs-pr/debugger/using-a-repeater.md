@@ -28,9 +28,9 @@ Actions that terminate the connection itself will affect the repeater. For examp
 
 If the server is shut down, the repeater will automatically exit (unless it was started with the **-p** option). When the repeater shuts down, this will cause a debugging client to exit as well, although a smart client will not. If for some reason you need to terminate the repeater directly, you can use Task Manager or the kill.exe tool.
 
- 
+ 
 
- 
+ 
 
 
 

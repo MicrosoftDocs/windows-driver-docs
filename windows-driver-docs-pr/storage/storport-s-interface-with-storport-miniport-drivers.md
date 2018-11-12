@@ -28,9 +28,9 @@ SRB\_ORDERED\_QUEUE\_TAG\_REQUEST
 
 For an explanation of these values, see the SCSI-3 specification.
 
- 
+ 
 
- 
+ 
 
 
 

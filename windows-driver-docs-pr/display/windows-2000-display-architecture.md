@@ -31,9 +31,9 @@ The following sections describe the key responsibilities of display and video mi
 
 [Windows 2000 Video Miniport Driver Responsibilities](windows-2000-video-miniport-driver-responsibilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

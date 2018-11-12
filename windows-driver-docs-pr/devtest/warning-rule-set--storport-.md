@@ -27,17 +27,17 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>PagedCode</strong>](storport-pagedcode.md)</p></td>
-<td align="left"><p>This rule verifies that when the [<strong>PAGED_CODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558773) macro is called, the driver is at <strong>IRQL &lt; DISPATCH_LEVEL</strong>. Any code executing at <strong>IRQL &gt;= DISPATCH_LEVEL</strong> must be in non-paged memory to avoid causing page faults.</p></td>
+<td align="left"><p><a href="storport-pagedcode.md" data-raw-source="[&lt;strong&gt;PagedCode&lt;/strong&gt;](storport-pagedcode.md)"><strong>PagedCode</strong></a></p></td>
+<td align="left"><p>This rule verifies that when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558773" data-raw-source="[&lt;strong&gt;PAGED_CODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff558773)"><strong>PAGED_CODE</strong></a> macro is called, the driver is at <strong>IRQL &lt; DISPATCH_LEVEL</strong>. Any code executing at <strong>IRQL &gt;= DISPATCH_LEVEL</strong> must be in non-paged memory to avoid causing page faults.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StorPortStatusPending</strong>](storport-storportstatuspending.md)</p></td>
+<td align="left"><p><a href="storport-storportstatuspending.md" data-raw-source="[&lt;strong&gt;StorPortStatusPending&lt;/strong&gt;](storport-storportstatuspending.md)"><strong>StorPortStatusPending</strong></a></p></td>
 <td align="left"><p>This rule checks that an SRB is not completed with status <strong>SRB_STATUS_PENDING</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the Warning rule set**
 
@@ -53,9 +53,9 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

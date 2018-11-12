@@ -55,7 +55,7 @@ The DATA\_BUS\_ERROR bug check has a value of 0x0000002E. This typically indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -85,11 +85,11 @@ For additional error messages that might help pinpoint the device or driver that
 
 **Warning**   If your system partition is formatted with the file allocation table (FAT) file system, the long filenames used by Windows can be damaged if Scandisk or another Microsoft MS-DOS-based hard disk tool is used to verify the integrity of your hard disk from MS-DOS. Always use the version of Chkdsk that matches your Windows version.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

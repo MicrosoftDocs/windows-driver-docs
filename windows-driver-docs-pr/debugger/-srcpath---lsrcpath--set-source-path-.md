@@ -58,7 +58,7 @@ The **.srcpath** command is available on all debuggers. The **.lsrcpath** comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ If you include `srv*` in your source path, the debugger uses [SrcSrv](srcsrv.md)
 
 When this command is issued from a debugging client, **.srcpath** sets the source path on the debugging server, while **.lsrcpath** sets the source path on the local machine.
 
- 
+ 
 
- 
+ 
 
 
 

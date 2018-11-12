@@ -40,11 +40,11 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
-<td align="left"><p>[<strong>subDirectory</strong>](subdirectory-xml-element.md) (zero or more)</p></td>
+<td align="left"><p><a href="subdirectory-xml-element.md" data-raw-source="[&lt;strong&gt;subDirectory&lt;/strong&gt;](subdirectory-xml-element.md)"><strong>subDirectory</strong></a> (zero or more)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data contents</strong></p></td>
@@ -57,7 +57,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -75,7 +75,7 @@ The following code example demonstrates a **search** element that contains one *
 
 **Note**  Because duplicate child elements are not permitted, each **subDirectory** child element of a **search** element must be unique.
 
- 
+ 
 
 ## See also
 
@@ -84,9 +84,9 @@ The following code example demonstrates a **search** element that contains one *
 
 [**subDirectory**](subdirectory-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

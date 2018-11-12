@@ -28,9 +28,9 @@ A [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware/f
 
 See [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware/ff557278) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

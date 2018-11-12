@@ -54,7 +54,7 @@ Displays some brief Help text for this command in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ When verifying drivers that are not graphics drivers, the standard kernel-mode e
 
 Regardless of which flags are selected, this extension will display the Driver Verifier options that are active. It will also display statistics on the frequency of random failure.
 
- 
+ 
 
- 
+ 
 
 
 

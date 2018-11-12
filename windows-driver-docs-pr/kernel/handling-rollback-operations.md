@@ -33,9 +33,9 @@ After calling **ZwRollbackComplete**, the resource manager should call [**ZwClos
 
 If a resource manager initiated the rollback operation, it must use its client interface to inform the client that the transaction failed.
 
- 
+ 
 
- 
+ 
 
 
 

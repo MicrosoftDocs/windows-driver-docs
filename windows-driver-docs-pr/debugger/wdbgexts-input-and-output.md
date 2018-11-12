@@ -19,9 +19,9 @@ To check for a user-initiated interrupt, use [**CheckControlC**](https://msdn.mi
 
 For a more powerful input and output API, see [Using Input and Output](using-input-and-output.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

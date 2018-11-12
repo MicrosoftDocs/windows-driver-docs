@@ -51,7 +51,7 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReason</strong>](scannerstatereason.md)</p></td>
+<td><p><a href="scannerstatereason.md" data-raw-source="[&lt;strong&gt;ScannerStateReason&lt;/strong&gt;](scannerstatereason.md)"><strong>ScannerStateReason</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,10 +70,10 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>StatusSummary</strong>](statussummary.md)</p></td>
+<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -98,9 +98,9 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

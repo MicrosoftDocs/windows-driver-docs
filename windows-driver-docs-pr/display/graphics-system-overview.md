@@ -32,9 +32,9 @@ Microsoft Windows NTâˆ’based operating systems provide a robust graphics ar
 
     This section describes the drivers and print spooler that make up the printing environment in Windows NTâˆ’based operating systems. Sections within this part of the Windows Driver Kit (WDK) specify how to provide customized driver and spooler components, so that new printer hardware and network configurations can be supported.
 
- 
+ 
 
- 
+ 
 
 
 

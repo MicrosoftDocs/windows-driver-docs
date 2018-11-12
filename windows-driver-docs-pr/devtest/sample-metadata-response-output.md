@@ -16,7 +16,7 @@ If wsdbit\_client was used with wsdbit\_server, the following code example shows
 
 **Note**   The host address endpoints will be different every time that the server is run.
 
- 
+ 
 
 ```
 -Dialect:       http://schemas.xmlsoap.org/ws/2006/02/devprof/ThisDevice
@@ -65,9 +65,9 @@ Relationship Metadata
 End Relationship Metadata
 ```
 
- 
+ 
 
- 
+ 
 
 
 

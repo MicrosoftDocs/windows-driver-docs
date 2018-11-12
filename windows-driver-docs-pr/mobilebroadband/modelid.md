@@ -15,7 +15,7 @@ The ModelID element specifies the GUID of a physical device.
 **Caution**  
 The [ModelIDList](modelidlist.md) and ModelID elements are not supported for service metadata packages. You must use the [HardwareIDList](hardwareidlist.md) and [HardwareID](hardwareid.md) elements instead.
 
- 
+ 
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -57,13 +57,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ModelIDList](modelidlist.md)</p></td>
-<td><p>The [ModelIDList](modelidlist.md) element specifies the GUID of each hardware model supported by the device specified within the device metadata package.</p></td>
+<td><p><a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a></p></td>
+<td><p>The <a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a> element specifies the GUID of each hardware model supported by the device specified within the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,7 +76,7 @@ The ModelID element specifies a model ID for a hardware model supported by a dev
 **Caution**  
 The [ModelIDList](modelidlist.md) and ModelID elements are not supported for service metadata packages. You must use the [HardwareIDList](hardwareidlist.md) and [HardwareID](hardwareid.md) elements instead.
 
- 
+ 
 
 Model IDs are based on the business definition or SKU of the physical device. Each model ID must be unique for all makes and models of the physical device.
 
@@ -90,9 +90,9 @@ The following list describes the differences between hardware and model IDs for 
 
 -   Model IDs map device metadata packages to physical devices, regardless of how the device is connected to the computer.
 
- 
+ 
 
- 
+ 
 
 
 

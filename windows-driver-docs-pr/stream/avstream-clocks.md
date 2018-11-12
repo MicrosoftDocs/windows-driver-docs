@@ -35,9 +35,9 @@ To verify that the clock has been selected, verify that calls to [IKsReferenceCl
 
 The filter graph manager selects a clock when a graph transitions into the pause state. Any filter that is a push source, for instance a capture filter, is given preference as a clock provider.
 
- 
+ 
 
- 
+ 
 
 
 

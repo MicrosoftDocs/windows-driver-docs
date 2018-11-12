@@ -30,9 +30,9 @@ This example uses a [**KSDATARANGE\_MUSIC**](https://msdn.microsoft.com/library/
   ChannelMask           = 0xFFFF;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

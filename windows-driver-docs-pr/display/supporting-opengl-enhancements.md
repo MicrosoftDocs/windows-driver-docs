@@ -103,9 +103,9 @@ You can use these functions and their associated structures to access objects an
 -   [**D3DKMT\_OPENRESOURCEFROMNTHANDLE**](https://msdn.microsoft.com/library/windows/hardware/hh406496)
 -   [**D3DKMT\_OPENSYNCOBJECTFROMNTHANDLE**](https://msdn.microsoft.com/library/windows/hardware/hh780268)
 
- 
+ 
 
- 
+ 
 
 
 

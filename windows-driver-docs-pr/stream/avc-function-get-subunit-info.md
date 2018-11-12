@@ -61,9 +61,9 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_SUBUNIT\_INFO\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554199), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 
- 
+ 
 
- 
+ 
 
 
 

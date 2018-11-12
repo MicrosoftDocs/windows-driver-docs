@@ -20,9 +20,9 @@ Overlying drivers and user-mode applications can use the OID\_RECEIVE\_FILTER\_E
 
 If a protocol driver issues the request, the request type in the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure is set to **NdisRequestQueryInformation** and this OID returns an array of all the receive queues that the protocol driver allocated on the network adapter. If a user-mode application issued the request, the request type in the NDIS\_OID\_REQUEST is set to **NdisRequestQueryStatistics**, and this OID returns an array of information for all the receive queues on the miniport adapter.
 
- 
+ 
 
- 
+ 
 
 
 

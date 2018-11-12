@@ -48,9 +48,9 @@ Requirements
 
 [**NDIS\_WWAN\_SMS\_SEND\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567944)
 
- 
+ 
 
- 
+ 
 
 
 

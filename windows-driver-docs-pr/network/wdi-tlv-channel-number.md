@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|---------------------|
 | UINT8 | The channel number. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

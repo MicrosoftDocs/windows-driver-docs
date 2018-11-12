@@ -17,7 +17,7 @@ The data in the ServiceInfo.xml document is formatted based on the ServiceInfo X
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For the complete definition of the ServiceInfo XML schema, see [ServiceInfo XML Schema Definition](serviceinfo-xml-schema-definition.md).
 
@@ -27,9 +27,9 @@ For information about the data types that are defined by the ServiceInfo XML sch
 
 For an example of XML data in the format that is defined by the ServiceInfo XML schema, see [ServiceInfo XML Example](serviceinfo-xml-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

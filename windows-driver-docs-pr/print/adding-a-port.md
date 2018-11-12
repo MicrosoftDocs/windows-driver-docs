@@ -33,9 +33,9 @@ For more information about these operations, see the description of [**AddPortUI
 
 A port monitor's [**EnumPorts**](https://msdn.microsoft.com/library/windows/hardware/ff548754) function must enumerate all ports that have been added. The spooler can call each port monitor's **EnumPorts** function to determine the set of ports supported on a print server.
 
- 
+ 
 
- 
+ 
 
 
 

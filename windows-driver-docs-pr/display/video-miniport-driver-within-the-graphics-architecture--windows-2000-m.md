@@ -29,9 +29,9 @@ The video port driver is a system-supplied module provided to support video mini
 
 For more information about NT-based operating system display drivers, see [Introduction to Display (Windows 2000 Model)](introduction-to-display--windows-2000-model-.md) and [Display Drivers (Windows 2000 Model)](display-drivers--windows-2000-model-.md).
 
- 
+ 
 
- 
+ 
 
 
 

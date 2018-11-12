@@ -38,9 +38,9 @@ The kernel-mode video transport also ensures enhanced capture support. Under Mic
 
 Although the primary purpose of the kernel-mode driver is to enhance hardware video port autoflipping capabilities, it also supports video bus masters, which can write data while in kernel mode. The bus master can be notified before losing the surface because of a mode change, or because a full-screen Command Prompt instance is launched. Because the new driver support allows a bus master to be called before the changes occur, the bus master can shut off without causing a problem.
 
- 
+ 
 
- 
+ 
 
 
 

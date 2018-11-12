@@ -32,9 +32,9 @@ This section provides the following topics:
 
 [Details of the IPrintCoreHelperPS Interface](details-of-the-iprintcorehelperps-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

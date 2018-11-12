@@ -140,9 +140,9 @@ class MPIO_PATH_HEALTH_CLASS
 
 When compiled by the WMI tool suite, this class definition produces the [**MPIO\_PATH\_HEALTH\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff562424) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shi
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

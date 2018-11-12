@@ -80,9 +80,9 @@ The user-mode display driver returns the number of and information about the com
 <span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_and_D3DDDICAPS_GETDECODECONFIGURATIONS_request_types"></span><span id="d3dddicaps_getdecodeconfigurationcount_and_d3dddicaps_getdecodeconfigurations_request_types"></span><span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_AND_D3DDDICAPS_GETDECODECONFIGURATIONS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODECONFIGURATIONCOUNT and D3DDDICAPS\_GETDECODECONFIGURATIONS request types  
 The user-mode display driver returns the number and a list of accelerated decode configurations that it supports for a particular DirectX VA decode type. The Direct3D runtime specifies a DXVADDI\_DECODEINPUT structure for a particular DirectX VA decode type in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to. The user-mode display driver returns accelerated decode configurations in an array of [**DXVADDI\_CONFIGPICTUREDECODE**](https://msdn.microsoft.com/library/windows/hardware/ff562894) structures that the **pData** member of D3DDDIARG\_GETCAPS specifies.
 
- 
+ 
 
- 
+ 
 
 
 

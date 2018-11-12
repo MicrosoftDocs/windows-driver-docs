@@ -33,9 +33,9 @@ For the following two scenarios, interlaced video must be integrated for playbac
 
 -   Existing interlaced content that is authored for display on an interlaced television, which also needs to be displayed with the best-possible quality on a progressive scan (proscan) computer monitor.
 
- 
+ 
 
- 
+ 
 
 
 

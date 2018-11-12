@@ -34,9 +34,9 @@ To end a user-mode debugging session, return the debugger to dormant mode, but l
 
 For more information about reattaching to the target, see [Reattaching to the Target Application](reattaching-to-the-target-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

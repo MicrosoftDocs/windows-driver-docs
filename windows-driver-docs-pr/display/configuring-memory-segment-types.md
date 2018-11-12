@@ -25,9 +25,9 @@ The display miniport driver can configure the following types of memory segments
 
 -   [AGP-Type Aperture-Space Segments](agp-type-aperture-space-segments.md)
 
- 
+ 
 
- 
+ 
 
 
 

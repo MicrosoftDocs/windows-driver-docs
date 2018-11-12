@@ -66,11 +66,11 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_BUFFER_OVERFLOW</strong></p></td>
-<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only the fixed portion of the reparse point data is returned in the <em>OutputBuffer</em> buffer. The <em>LengthReturned</em> parameter to [<strong>FltFsControlFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542988) receives the actual length, in bytes, of data returned. This is a warning code.</p></td>
+<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only the fixed portion of the reparse point data is returned in the <em>OutputBuffer</em> buffer. The <em>LengthReturned</em> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff542988" data-raw-source="[&lt;strong&gt;FltFsControlFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542988)"><strong>FltFsControlFile</strong></a> receives the actual length, in bytes, of data returned. This is a warning code.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
-<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is not large enough to hold the reparse point data. The <em>LengthReturned</em> parameter to [<strong>FltFsControlFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542988) (or the <strong>Information</strong> member of the <em>IoStatus</em> parameter to [<strong>ZwFsControlFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566462)) receives the required buffer size. In this case, no reparse point data is returned. This is an error code.</p></td>
+<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is not large enough to hold the reparse point data. The <em>LengthReturned</em> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff542988" data-raw-source="[&lt;strong&gt;FltFsControlFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542988)"><strong>FltFsControlFile</strong></a> (or the <strong>Information</strong> member of the <em>IoStatus</em> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566462" data-raw-source="[&lt;strong&gt;ZwFsControlFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566462)"><strong>ZwFsControlFile</strong></a>) receives the required buffer size. In this case, no reparse point data is returned. This is an error code.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_IO_REPARSE_DATA_INVALID</strong></p></td>
@@ -83,7 +83,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -132,9 +132,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

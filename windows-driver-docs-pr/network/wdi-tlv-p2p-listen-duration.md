@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The duration, in milliseconds, of the listen cycle. The adapter is in listen state during this time.                                                           |
 | UINT32 | The duration, in milliseconds, that the adapter is expected to actively listen during the listen cycle. This duration must be less than listen cycle duration. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Configuring Exceptions and Events in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -28,9 +28,9 @@ You can configure the break status or the handling status by entering the follow
 
 For a detailed discussion of exceptions and events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,9 +51,9 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
     -   If you are converting a KMDF driver that calls WDM routines such as [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520), replace these with the corresponding WDF methods, such as [**WdfMemoryCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548706). Similarly, if you are converting a UMDF driver that calls user-mode functions, replace these with equivalent kernel-mode routines.
     -   Some methods are supported only in KMDF, while others are supported only in UMDF. For a list of all Windows Driver Frameworks (WDF) methods and their framework applicability, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
- 
+ 
 
- 
+ 
 
 
 

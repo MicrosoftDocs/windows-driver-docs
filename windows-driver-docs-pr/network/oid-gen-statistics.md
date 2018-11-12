@@ -47,7 +47,6 @@ The NDIS\_STATISTICS\_INFO structure is defined as follows:
          ULONG64 ifHCOutMulticastOctets;
          ULONG64 ifHCOutBroadcastOctets;
     } NDIS_STATISTICS_INFO, *PNDIS_STATISTICS_INFO;
-  
 ```
 
 
@@ -61,9 +60,9 @@ The [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardwa
 <a href="" id="supportedstatistics"></a>**SupportedStatistics**  
 The set of statistics that the miniport driver supports.
 
-**Note**  NDIS 6.0 and later drivers must support all statistics and must report them when queried for OID\_GEN\_STATISTICS.
+**Note**  NDIS 6.0 and later drivers must support all statistics and must report them when queried for OID\_GEN\_STATISTICS.
 
- 
+
 
 The value is the bitwise OR of the following flags:
 
@@ -237,9 +236,9 @@ Requirements
 
 [OID\_GEN\_XMIT\_ERROR](oid-gen-xmit-error.md)
 
- 
 
- 
+
+
 
 
 

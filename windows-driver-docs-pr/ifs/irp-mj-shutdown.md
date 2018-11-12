@@ -58,9 +58,9 @@ Specifies IRP\_MJ\_SET\_SHUTDOWN.
 
 [**IRP\_MJ\_SHUTDOWN (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550807)
 
- 
+ 
 
- 
+ 
 
 
 

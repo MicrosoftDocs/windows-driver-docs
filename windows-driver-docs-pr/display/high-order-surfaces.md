@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 DirectX 8 introduces support for a class for high order surfaces. This section describes the mechanics of the DDI for these patch surfaces but it does not describe the algorithms used. Refer to the reference rasterizer source code in the Driver Development Kit (DDK) for the details of the algorithms that are used.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ This reference describes the flags that GFlags sets.
 
 **Note**   The symbolic name of each flag is provided for reference only. Because symbolic names change, they are not a reliable identifier of a global flag.
 
- 
+ 
 
 The global flags include:
 
@@ -88,9 +88,9 @@ The global flags include:
 
 [Stop on unhandled user-mode exception](stop-on-unhandled-user-mode-exception.md)
 
- 
+ 
 
- 
+ 
 
 
 

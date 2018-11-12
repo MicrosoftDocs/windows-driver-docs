@@ -31,11 +31,11 @@ An excerpt of the output file appears as follows:
 
 **Note**   If you view a trace message file on a computer running Windows XP, the display might show trace messages that are out of sequence trace messages. To correct this problem, you can use the sequence number option when you start the trace session and view the trace using Tracefmt. You can then view the trace with Traceview and sort according to sequence number. You can also view the trace on a computer running Windows Server 2003 or later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

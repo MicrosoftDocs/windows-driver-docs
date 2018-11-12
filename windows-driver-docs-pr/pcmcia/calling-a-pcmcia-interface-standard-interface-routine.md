@@ -20,9 +20,9 @@ Each interface routine requires a context pointer. The driver must use the **Con
 
 The PCMCIA\_INTERFACE\_STANDARD interface routines can be called at IRQL &lt;= DISPATCH\_LEVEL. To maintain overall system performance, it is strongly recommended that a driver call these routines at IRQL &lt; DISPATCH\_LEVEL. Calling an interface routine at IRQL DISPATCH\_LEVEL can cause the caller to block system operation for a significant period of time.
 
- 
+ 
 
- 
+ 
 
 
 

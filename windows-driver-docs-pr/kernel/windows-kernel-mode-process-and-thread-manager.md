@@ -54,9 +54,9 @@ Here are the changes to the [Process and Thread Manager Routines](https://msdn.m
 -   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](https://msdn.microsoft.com/library/windows/hardware/mt805891) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](https://msdn.microsoft.com/library/windows/hardware/dn957857), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
 -   The [**PS\_CREATE\_NOTIFY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff559960) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/mt805892).
 
- 
+ 
 
- 
+ 
 
 
 

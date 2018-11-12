@@ -53,9 +53,9 @@ The system-supplied SCSI port driver can also act as an interface between a stor
 
 For more detailed information about SRBs, see the Kernel-Mode Driver Architecture Reference. For device-type-specific information about CDBs, consult appropriate command sets in the INCITS SCSI-3 standards.
 
- 
+ 
 
- 
+ 
 
 
 

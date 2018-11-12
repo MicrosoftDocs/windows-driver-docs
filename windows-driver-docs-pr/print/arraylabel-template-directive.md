@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The **\*ArrayLabel** directive defines the label for an array in the template.
 
- 
+ 
 
- 
+ 
 
 
 

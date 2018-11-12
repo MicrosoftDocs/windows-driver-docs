@@ -40,9 +40,9 @@ Predefined error codes (of the form IO\_ERR\_*XXX*) are defined in the ntiologc.
 
 Drivers can also define their own custom error types, and associated error messages. For further information, see [Defining Custom Error Types](defining-custom-error-types.md).
 
- 
+ 
 
- 
+ 
 
 
 

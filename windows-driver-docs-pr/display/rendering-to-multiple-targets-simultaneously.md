@@ -28,9 +28,9 @@ If the DirectX 9.0 driver supports rendering to multiple targets simultaneously,
 
 [Optional Features for Multiple Render Targets](optional-features-for-multiple-render-targets.md)
 
- 
+ 
 
- 
+ 
 
 
 

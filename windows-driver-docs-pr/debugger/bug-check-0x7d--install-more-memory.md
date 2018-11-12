@@ -55,7 +55,7 @@ The INSTALL\_MORE\_MEMORY bug check has a value of 0x0000007D. This bug check in
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 Install more memory.
 
- 
+ 
 
- 
+ 
 
 
 

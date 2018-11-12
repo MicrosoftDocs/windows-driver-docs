@@ -54,7 +54,7 @@ The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff
 &gt; \[!Note\]   The file object associated with IRP\_MJ\_NETWORK\_QUERY\_OPEN is a stack-based object.
 &gt;A filter registered for the NetworkQueryOpen callback must not reference this object. That is, do not call ObReferenceObject or ObDereferenceObject on this stack-based file object. Also, do not save a pointer to the object.
 
- 
+ 
 
 IRP\_MJ\_NETWORK\_QUERY\_OPEN is a fast I/O operation. It is the equivalent of the FastIoQueryOpen (not FastIoQueryNetworkOpenInfo) operation. A filter must register for this operation.
 
@@ -97,9 +97,9 @@ Requirements
 
 [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052)
 
- 
+ 
 
- 
+ 
 
 
 

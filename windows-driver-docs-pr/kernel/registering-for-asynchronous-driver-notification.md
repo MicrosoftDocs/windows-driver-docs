@@ -71,7 +71,7 @@ Status =
 
 **Note**   If a device driver only has to be notified about processors, it does not have to implement a callback function for memory or register for notification about memory. Similarly, if a device driver only has to be notified about memory, it does not have to implement a callback function for processors or register for notification about processors.
 
- 
+ 
 
 When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) function. The following code example shows how to unregister the callback functions:
 
@@ -88,9 +88,9 @@ Status =
     );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

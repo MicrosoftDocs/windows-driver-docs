@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Source Code Debugging in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -21,9 +21,9 @@ When you break in to the target computer, or when code running on the target com
 
 ![screen shot of source code in the visual studio debugger](images/sourcecodedebuggingvs01.png)
 
- 
+ 
 
- 
+ 
 
 
 

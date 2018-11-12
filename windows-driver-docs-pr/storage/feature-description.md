@@ -16,9 +16,9 @@ Crash dump filter drivers can be made part of the dump stack by adding the servi
 
 The filter model does not allow filter drivers to be loaded only in either the hibernation or crash dump stack. After the service name is added to the filter driver list, the list will be loaded in both stacks. When the callback routines are called, a parameter is passed to indicate the callback reason. The filter driver can then determine what to do based on this parameter.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The INACCESSIBLE\_BOOT\_DEVICE bug check has a value of 0x0000007B. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 To determine the meaning of Parameter 1, look at the data that it points to. If the first word (USHORT) at this address is even, Parameter 1 is the beginning of a Unicode string. If the first word (USHORT) at this address is 0x3, Parameter 1 is the first field (Type) of a device object.
 
@@ -87,11 +87,11 @@ Resolution
 
 This error always occurs while the system is starting. This error frequently occurs before the debugger connection is established, so debugging can be difficult. In addition, the OS may not be accessible and the error logs may be empty as the OS has not booted far enough to start those sub-systems.
 
-**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
+**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\\***
 
 **If you are unable to boot Windows**
 
-**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
+**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\\***
 
 If you receive this stop code and Windows doesn't boot forward into the OS, try the following:
 
@@ -133,11 +133,11 @@ The BIOS setup key varies per manufacturer, these keys are commonly used. Check 
 ESC
 DEL
 F2
-**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
+**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\\***
 
 **If you can boot Windows**
 
-**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\***
+**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\\***
 
 -   **Boot to Safe Mode and then Boot Normally**
 
@@ -282,9 +282,9 @@ DevNode 0xffffb9053e8dea50 for PDO 0xffffb9053e8da060
     Previous State = DeviceNodeEnumerateCompletion (0x30d)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

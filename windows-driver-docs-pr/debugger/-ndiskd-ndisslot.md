@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable. If you run this extension with no parameters, !ndiskd will display a list of all NDIS per-processor variables on the system.
 
@@ -104,9 +104,9 @@ Clicking on one of the handles for the per-processor slot variables will show yo
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ A driver that opens a handle to a device in response to a device interface arriv
 
 A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!time** extension command is obsolete. Use the [**.time (Display System Time)**](-time--display-system-time-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

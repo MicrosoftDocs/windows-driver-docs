@@ -22,9 +22,9 @@ The following topics contain update information for DirectX 7.0, concerning flex
 
 [MIP Map Surface Creation Update](mip-map-surface-creation-update.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,13 +27,13 @@ warning C28162: Exiting while holding the right to use floating-point hardware
 </tbody>
 </table>
 
- 
+ 
 
 The **\_Kernel\_float\_restored\_** annotation was used to release the right to use floating point, but a path through the function was detected where no function known to perform that operation was successfully called. This warning might indicate that a conditional (**\_When\_**) annotation is needed, or it might indicate a coding error.
 
- 
+ 
 
- 
+ 
 
 
 

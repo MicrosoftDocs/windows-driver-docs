@@ -37,7 +37,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | Specifies the Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi P2P technical specification. |
 | UINT8                                             | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

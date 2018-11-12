@@ -33,7 +33,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Enable_KMDF_Verifier"></span><span id="enable_kmdf_verifier"></span><span id="ENABLE_KMDF_VERIFIER"></span><strong>Enable KMDF Verifier</strong></p></td>
-<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) if KMDF version is 1.9 or higher.</p></td>
+<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Service_Names"></span><span id="kmdf_service_names"></span><span id="KMDF_SERVICE_NAMES"></span><strong>KMDF Service Names</strong></p></td>
@@ -51,7 +51,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <td align="left"><p><span id="Forward_Progress_Handler_Testing"></span><span id="forward_progress_handler_testing"></span><span id="FORWARD_PROGRESS_HANDLER_TESTING"></span><strong>Forward Progress Handler Testing</strong></p></td>
 <td align="left"><p>Specifies options for testing forward progress handling of your driver.</p>
 <p><strong>No Allocation Failures</strong> No faults will be simulated to test the forward progress handling of your driver.</p>
-<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver's forward progress handling.</p>
+<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver&#39;s forward progress handling.</p>
 <p><strong>Randomly Fail Allocations</strong> Randomly fail I/O requests destined for a forward progress queue.</p></td>
 </tr>
 <tr class="even">
@@ -78,7 +78,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -86,9 +86,9 @@ For more information about the framework verifier, see [Using the Framework's Ve
 * [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 * [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
+ 
 
- 
+ 
 
 
 

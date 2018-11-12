@@ -18,7 +18,7 @@ The OpenGL installable client driver (ICD) can obtain the same level of support 
 
 **Note**   To obtain a license for the OpenGL ICD Development Kit, contact the [OpenGL Issues](mailto:opengl@microsoft.com) team.
 
- 
+ 
 
 ```cpp
 #include "d3dkmthk.h"
@@ -312,9 +312,9 @@ HRESULT InitKernelTHunks()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

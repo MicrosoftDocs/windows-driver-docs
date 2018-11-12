@@ -38,9 +38,9 @@ In general, a miniport driver should *not* call **VideoPortSynchronizeExecution*
 
 A *HwVidSynchronizeExecutionCallback* function, like a *HwVidInterrupt* function, cannot be pageable and cannot call certain **VideoPort***Xxx* functions without bringing down the system. For a summary of **VideoPort***Xxx* functions that the *HwVidSynchronizeExecutionCallback* function can call safely, see [*HwVidInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff567349).
 
- 
+ 
 
- 
+ 
 
 
 

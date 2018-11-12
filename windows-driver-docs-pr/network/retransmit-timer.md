@@ -25,9 +25,9 @@ When offloading a TCP connection, the host stack passes its current retransmit v
 
 Similarly, when terminating the offload of a TCP connection, an offload target passes its current retransmit values for the connection to the host stack. The host stack uses these values to resume retransmit processing on the uploaded connection. If the offload target was not running the retransmit timer, it should supply a value of -1 in the **TimeoutDelta** member. If the offload target supplies a value of 0 in the **TimeoutDelta** member, the host stack assumes that the retransmit timer was running, and the host stack's retransmit timer expires immediately.
 
- 
+ 
 
- 
+ 
 
 
 

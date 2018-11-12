@@ -23,7 +23,7 @@ The WPD AutoPlay scheme integrates with the Windows Vista AutoPlay feature. It d
 | Sink     | A WPD device can be treated as a destination for content, that is, the content can be transferred to the device.    |
 | Function | A WPD device supports a programmable or controllable capability, for example, it can send and receive SMS messages. |
 
- 
+ 
 
 Devices that support these categories should set the appropriate entries in the Device\_AddReg section of the setup information (.inf) file. The following table lists the two AutoPlay directives that are supported by the WPD Class Installer.
 
@@ -70,7 +70,7 @@ Devices that support these categories should set the appropriate entries in the 
 </tbody>
 </table>
 
- 
+ 
 
 Most devices will specify the EnableDefaultAutoPlaySupport directive in their setup information files. The AutoPlaySourceOnly directive is provided only for legacy devices that do not support bi-directional transfers.
 
@@ -78,9 +78,9 @@ If you do not want your device to participate in AutoPlay, either set the Enable
 
 If you need to create a custom AutoPlay scheme, you can do so by creating a private DeviceHandlers value in the Device\_Parameters section of the setup information (.inf) file.
 
- 
+ 
 
- 
+ 
 
 
 

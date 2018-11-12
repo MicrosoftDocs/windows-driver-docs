@@ -61,7 +61,7 @@ Specifies the amount of memory to be allocated, in bytes. The amount of memory a
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ The **.dvalloc** command calls **VirtualAllocEx** to allocate new memory for the
 
 To free this memory, use [**.dvfree (Free Memory)**](-dvfree--free-memory-.md).
 
- 
+ 
 
- 
+ 
 
 
 

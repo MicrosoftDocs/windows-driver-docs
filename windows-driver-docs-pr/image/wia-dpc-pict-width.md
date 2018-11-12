@@ -59,9 +59,9 @@ Requirements
 
 [**WIA\_DPC\_PICT\_HEIGHT**](wia-dpc-pict-height.md)
 
- 
+ 
 
- 
+ 
 
 
 

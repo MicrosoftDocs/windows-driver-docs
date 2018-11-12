@@ -52,7 +52,7 @@ The psk3d:Job3DOutputArea Property SHOULD be used to define the size of the area
 </tbody>
 </table>
 
- 
+ 
 
 Job3DOutputArea keyword usage
 
@@ -128,7 +128,7 @@ Describes the width of the output area along the X axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.2. Job3DOutputAreaDepth
 
@@ -169,7 +169,7 @@ Describes the depth of the output area along the Y axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.3. Job3DOutputAreaHeight
 
@@ -210,7 +210,7 @@ Describes the height of the output area along the Z axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.4. Job3DOutputAreaMesh
 
@@ -251,7 +251,7 @@ Describes the shape of the output volume if not a rectangular prism. The string 
 </tbody>
 </table>
 
- 
+ 
 
 ## 2.2. Job3DAppName
 
@@ -293,7 +293,7 @@ The device MAY identify a workflow app other than the default (the example conta
 </tbody>
 </table>
 
- 
+ 
 
 Job3DAppName keyword usage
 
@@ -343,7 +343,7 @@ The device MAY identify a UWP device app, which the print dialog will launch whe
 </tbody>
 </table>
 
- 
+ 
 
 Job3DWSDAPackageFamilyName keyword usage
 
@@ -356,7 +356,7 @@ Job3DWSDAPackageFamilyName keyword usage
 ## 2.4. Job3D3MFVersion
 
 
-The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “http://schemas.microsoft.com/3dmanufacturing/2013/01”, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
+The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “<http://schemas.microsoft.com/3dmanufacturing/2013/01”>, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
 
 <table>
 <colgroup>
@@ -393,7 +393,7 @@ The device MUST identify the version of 3MF file that it expects to receive from
 </tbody>
 </table>
 
- 
+ 
 
 Job3D3MFVersion keyword usage
 
@@ -443,7 +443,7 @@ The device MAY specify 3MF extensions (by namespace, forming a space-delimited l
 </tbody>
 </table>
 
- 
+ 
 
 Job3D3MFExtensions keyword usage
 
@@ -453,9 +453,9 @@ Job3D3MFExtensions keyword usage
 </psf:Property>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

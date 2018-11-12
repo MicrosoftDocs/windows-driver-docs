@@ -55,7 +55,7 @@ The AGP\_GART\_CORRUPTION bug check has a value of 0x00000105. This indicates th
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 Enable Driver Verifier for any unsigned drivers. Remove them or disable them one by one until the erring driver is identified.
 
- 
+ 
 
- 
+ 
 
 
 

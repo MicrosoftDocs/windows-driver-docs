@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------------------------------|
 | UINT32 | Specifies the wake-on-LAN magic packet pattern ID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

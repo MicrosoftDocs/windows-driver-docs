@@ -37,7 +37,7 @@ This table summarizes the WDDM 1.2 feature set. "M" indicates mandatory, "O" ind
 | [Disabling Frame Pointer Omission (FPO) optimization](disabling-frame-pointer-omission--fpo--optimization.md) | Improves debugging of performance problems related to FPO in the field                                                     | M                               | M                             | M                              |
 | [User-mode driver logging](user-mode-driver-logging.md)                                                       | Improves ability to diagnose and investigate memory-related issues by providing better view into memory usage              | M                               | M                             | NA                             |
 
- 
+ 
 
 \*This feature is mandatory for all WDDM 1.2 drivers with Microsoft Direct3D 10-, 10.1-, 11-, or 11.1-capable hardware (or later).
 
@@ -46,7 +46,7 @@ This table summarizes the WDDM 1.2 feature set. "M" indicates mandatory, "O" ind
 **Note**  
 A new set of APIs is available starting with Windows 8 for duplicating the desktop for collaboration scenarios. For more details, see [Desktop duplication](desktop-duplication-api.md).
 
- 
+ 
 
 ## <span id="Additional_new_features_in_Windows_8"></span><span id="additional_new_features_in_windows_8"></span><span id="ADDITIONAL_NEW_FEATURES_IN_WINDOWS_8"></span>Additional new features in Windows 8
 
@@ -59,7 +59,7 @@ Provides a limited set of display functions without rendering capability.
 
 **Note**  Refer also to the [Kernel mode display-only miniport driver](http://go.microsoft.com/fwlink/p/?linkid=258742) sample.
 
- 
+ 
 
 [**Support for system on a chip (SoC) architecture through the SPB interface**](https://msdn.microsoft.com/library/windows/hardware/jj658947)
 
@@ -127,9 +127,9 @@ Also see [Windows 8 brightness control for integrated displays](https://msdn.mic
 
 OpenGL installable client drivers (ICDs) can call new functions to control access to resources and to map between objects and identifiers.
 
- 
+ 
 
- 
+ 
 
 
 

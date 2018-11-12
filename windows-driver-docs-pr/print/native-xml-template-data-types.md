@@ -80,9 +80,9 @@ If the earlier GDL entry is interpreted by using the PHRASE template, the follow
 
 The XML attribute **xsi:type** is used to specify the data type that is held by this attribute element because the schema contains no declaration for this element.
 
- 
+ 
 
- 
+ 
 
 
 

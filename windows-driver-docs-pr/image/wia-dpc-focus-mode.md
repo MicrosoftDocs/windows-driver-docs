@@ -63,7 +63,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_FO
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -85,9 +85,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

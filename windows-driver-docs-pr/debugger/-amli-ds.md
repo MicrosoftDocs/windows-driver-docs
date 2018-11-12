@@ -42,9 +42,9 @@ The !stacks extension displays information about the kernel stacks.
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

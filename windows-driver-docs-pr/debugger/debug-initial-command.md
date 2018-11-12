@@ -41,7 +41,7 @@ The **Debug initial command** flag debugs the Client Server Run-time Subsystem (
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -53,9 +53,9 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
 
 [Enable debugging of Win32 subsystem](enable-debugging-of-win32-subsystem.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -45,7 +45,7 @@ Strict NDEF encoding rules are used in accordance with NFC Forum specifications.
 
 **Note**  For NFC tags, if a tag is not NDEF formatted and a message is published for \*.WriteTag, the provider MUST format the tag to NDEF and then write the payload.
 
- 
+ 
 
 ## All Tag Writing
 
@@ -62,9 +62,9 @@ If tag writing is supported at all by the NFP provider, the driver must meet all
 -   The driver MUST write to tags in such a way that the previous contents are overwritten.
 -   If a “\*:WriteTag” payload is successfully written to a tag, the driver MUST trigger the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853320) handling (as specified above) for that publication.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

@@ -48,7 +48,7 @@ destination-file-name[,[source-file-name][,[unused][,flag]]]
 
 An INF-writer-defined *file-list-section* can have any number of entries, each on a separate line.
 
-Each *file-list-section* can have an optional, associated *file-list-section***.security** section of the following form:
+Each *file-list-section* can have an optional, associated <em>file-list-section</em>**.security** section of the following form:
 
 ```cpp
 [file-list-section.security]
@@ -119,9 +119,9 @@ Specifies a security descriptor, to be applied to all files copied by the named 
 
 For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa379567). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
-If an *file-list-section***.security** section is not specified, files inherit the security characteristics of the directory into which the files are copied.
+If an <em>file-list-section</em>**.security** section is not specified, files inherit the security characteristics of the directory into which the files are copied.
 
-If an *file-list-section***.security** section is specified, the following ACE's must be included so that installations and upgrades of devices and system service packs can occur:
+If an <em>file-list-section</em>**.security** section is specified, the following ACE's must be included so that installations and upgrades of devices and system service packs can occur:
 
 -   (A;;GA;;;SY) − Grants all access to the local system.
 -   (A;;GA;;;BA) − Grants all access to built-in administrators.
@@ -139,15 +139,15 @@ The INF file writer must also supply path specifications for files that are copi
 
 The destination of copy operations is controlled by the [**INF DestinationDirs section**](inf-destinationdirs-section.md). This section controls the destination for all file-copy operations, as follows:
 
--   If a named section referenced by a **CopyFiles** directive has a corresponding entry in the [**DestinationDirs**](inf-destinationdirs-section.md) section of the same INF, that entry explicitly specifies the target destination directory into which all files that are listed in the named section are copied. If the named section is not listed in the **DestinationDirs** section, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
--   If a **CopyFiles** directive uses the **@***filename* syntax, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
+- If a named section referenced by a **CopyFiles** directive has a corresponding entry in the [**DestinationDirs**](inf-destinationdirs-section.md) section of the same INF, that entry explicitly specifies the target destination directory into which all files that are listed in the named section are copied. If the named section is not listed in the **DestinationDirs** section, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
+- If a **CopyFiles** directive uses the **@**<em>filename</em> syntax, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
 
 The following points apply to the INF **CopyFiles** directive:
 
--   Every *file-list-section* name must be unique to the INF file, but it can be referenced by **CopyFiles**, [**DelFiles**](inf-delfiles-directive.md), or [**RenFiles**](inf-renfiles-directive.md) directives elsewhere in the same INF file. The section name must follow the general rules that are described in [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
--   File names that are specified in either the **@***filename* or *file-list-section* entries must be the exact name of a file on the source media. You cannot use a %*strkey*% token to specify the file name. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
--   The **CopyFiles** directive does not support decorating a *file-list-section* name with a system-defined platform extension (**.nt**, **.ntx86**, **.ntia64**, or **.ntamd64**).
--   Do not use **CopyFiles** directives to copy INF files. For more information, see [Copying INF Files](copying-inf-files.md).
+- Every *file-list-section* name must be unique to the INF file, but it can be referenced by **CopyFiles**, [**DelFiles**](inf-delfiles-directive.md), or [**RenFiles**](inf-renfiles-directive.md) directives elsewhere in the same INF file. The section name must follow the general rules that are described in [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
+- File names that are specified in either the **@**<em>filename</em> or *file-list-section* entries must be the exact name of a file on the source media. You cannot use a %*strkey*% token to specify the file name. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
+- The **CopyFiles** directive does not support decorating a *file-list-section* name with a system-defined platform extension (**.nt**, **.ntx86**, **.ntia64**, or **.ntamd64**).
+- Do not use **CopyFiles** directives to copy INF files. For more information, see [Copying INF Files](copying-inf-files.md).
 
 Starting with Windows Vista, the following points also apply to the INF **CopyFiles** directive:
 
@@ -234,9 +234,9 @@ For additional examples of how to use the INF **CopyFiles** directive, see the I
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

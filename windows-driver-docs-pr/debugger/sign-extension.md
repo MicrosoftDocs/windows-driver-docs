@@ -59,9 +59,9 @@ The debugger uses the following criteria to determine how to display numbers:
 
 Because of these display rules, when a number is displayed as a 32-bit number from 0x80000000 through 0xFFFFFFFF, you cannot confirm whether the high 32 bits are all ones or all zeros. To distinguish between these two cases, you must perform an additional computation on the number (such as masking one or more of the high bits and displaying the result).
 
- 
+ 
 
- 
+ 
 
 
 

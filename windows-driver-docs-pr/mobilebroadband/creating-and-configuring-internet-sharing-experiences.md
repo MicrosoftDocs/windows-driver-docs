@@ -33,7 +33,7 @@ Internet Sharing can be turned on by using the Settings charm on the mobile broa
     **Note**  
     The icon for the mobile broadband network is automatically updated throughout Windows to help customers remember that the network is being shared by other people.
 
-     
+     
 
 6.  After Internet Sharing is turned on, from the **Mobile Broadband** page, click **Edit** to change the network name and password.
 
@@ -71,7 +71,7 @@ You can connect to a tethered network using a Wi-Fi device in the same way you c
 **Note**  
 Users can also connect to a tethering access point if they have paired their devices by using Bluetooth.
 
- 
+ 
 
 ## <span id="Configure_Internet_Sharing"></span><span id="configure_internet_sharing"></span><span id="CONFIGURE_INTERNET_SHARING"></span>Configure Internet Sharing
 
@@ -113,9 +113,9 @@ For most operators, the Windows user interface will provide the best experience 
 
 -   Receive and react to notifications about a change in the Internet Sharing status or number of connected devices
 
- 
+ 
 
- 
+ 
 
 
 

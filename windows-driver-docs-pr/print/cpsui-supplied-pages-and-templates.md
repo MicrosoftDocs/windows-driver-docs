@@ -43,9 +43,9 @@ CPSUI also supplies three predefined page templates. CPSUI uses these templates 
 
 To use a predefined page template, an application must identify it using the **DlgTemplateID** member of a [**DLGPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff547607) structure.
 
- 
+ 
 
- 
+ 
 
 
 

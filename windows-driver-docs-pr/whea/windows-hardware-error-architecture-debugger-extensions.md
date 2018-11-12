@@ -27,9 +27,9 @@ Displays the contents of an error record.
 
 The WHEA debugger extensions are included in the *Kdexts.dll* file.
 
- 
+ 
 
- 
+ 
 
 
 

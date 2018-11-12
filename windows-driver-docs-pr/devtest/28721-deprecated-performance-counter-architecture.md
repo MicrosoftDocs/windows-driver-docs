@@ -15,9 +15,9 @@ A deprecated performance counter architecture is used: &lt;*symptom*&gt;.
 
 The code uses an old performance counter architecture to expose performance metrics of your application or component. A new performance counter architecture was introduced for Windows Vista. You should migrate to the new architecture unless your application has simultaneous down-level requirements (must run on both Windows Vista and prior version of Windows).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -61,9 +61,9 @@ A call manager or an MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY fami
 
 For a description of the members in the LINE\_CALL\_INFO structure, see the LINECALLINFO structure in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

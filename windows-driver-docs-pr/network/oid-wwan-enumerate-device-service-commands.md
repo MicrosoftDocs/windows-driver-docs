@@ -47,9 +47,9 @@ Requirements
 
 [**NDIS\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS**](https://msdn.microsoft.com/library/windows/hardware/hh831862)
 
- 
+ 
 
- 
+ 
 
 
 

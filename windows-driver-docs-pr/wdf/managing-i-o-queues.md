@@ -114,9 +114,9 @@ To obtain properties of a framework queue object, the driver can call the follow
 
 -   [**WdfIoQueueGetState**](https://msdn.microsoft.com/library/windows/hardware/ff548437), to obtain [state information](i-o-queue-states.md) about the queue.
 
- 
+ 
 
- 
+ 
 
 
 

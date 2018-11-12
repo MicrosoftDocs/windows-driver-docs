@@ -19,15 +19,15 @@ If a minifilter driver's [**preoperation callback routine**](https://msdn.micros
 
 **Note**   If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK but the minifilter driver has not registered a postoperation callback routine for the operation, the system asserts on a checked build.
 
- 
+ 
 
 If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK, it can return a non-NULL value in its *CompletionContext* output parameter. This parameter is an optional context pointer that is passed to the corresponding postoperation callback routine. The postoperation callback routine receives this pointer in its *CompletionContext* input parameter.
 
 The FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK status value can be returned for all types of I/O operations.
 
- 
+ 
 
- 
+ 
 
 
 

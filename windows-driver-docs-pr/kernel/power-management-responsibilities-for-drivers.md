@@ -34,9 +34,9 @@ Not every driver in every device stack performs all of these tasks. Typically, t
 
 With few exceptions, drivers power on and power off their devices, and they enable devices for wake-up in response to power IRPs, that is, IRPs with the major code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784). Power IRPs can be sent by the power manager and, in some cases, by a driver.
 
- 
+ 
 
- 
+ 
 
 
 

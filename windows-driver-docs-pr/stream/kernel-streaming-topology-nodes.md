@@ -25,9 +25,9 @@ This section describes the following kernel streaming topology node types:
 
 [KSNODETYPE\_VIDEO\_OUTPUT\_MTT](ksnodetype-video-output-mtt.md)
 
- 
+ 
 
- 
+ 
 
 
 

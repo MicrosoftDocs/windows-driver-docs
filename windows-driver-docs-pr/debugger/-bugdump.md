@@ -48,7 +48,7 @@ Specifies the component whose callback data is to be examined. If omitted, all b
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +65,9 @@ The buffers that hold callback data are not available in a Small Memory Dump. Th
 
 If you are performing live debugging of a crashed system, all callback data will be present.
 
- 
+ 
 
- 
+ 
 
 
 

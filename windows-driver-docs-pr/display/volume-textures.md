@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 adds support for volume or 3D textures. Such textures have depth in addition to width and height.
 
- 
+ 
 
- 
+ 
 
 
 

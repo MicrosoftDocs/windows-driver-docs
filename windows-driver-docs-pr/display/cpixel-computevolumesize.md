@@ -25,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeVolumeSize(
-   UINT      cpWidth,
-   UINT      cpHeight,
-   UINT      cpDepth,
-   D3DFORMAT Format
+   UINT      cpWidth,
+   UINT      cpHeight,
+   UINT      cpDepth,
+   D3DFORMAT Format
 );
 ```
 
@@ -77,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ All Bluetooth devices must include a MAC address. Therefore, a container ID for 
 
 To ensure that a unique container ID is generated for every device, developers of Bluetooth devices must configure each device with a unique MAC address.
 
- 
+ 
 
- 
+ 
 
 
 

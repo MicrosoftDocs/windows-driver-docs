@@ -43,7 +43,7 @@ The KSCATEGORY_DATATRANSFORM [device interface class](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

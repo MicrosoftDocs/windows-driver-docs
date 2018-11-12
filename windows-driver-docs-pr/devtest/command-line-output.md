@@ -124,16 +124,16 @@ The following table describes the results that can appear in the results summary
 <tr class="odd">
 <td align="left"><p><strong>Not Applicable</strong></p></td>
 <td align="left"><p>The number of rules that SDV could not verify, either because the driver did not support the entry point that is required for the analysis, or because the driver did not call the function that the rule monitors.</p>
-<p>If this value is greater than 0, verify that the [Sdv-map.h](sdv-map-h.md) file content is correct.</p></td>
+<p>If this value is greater than 0, verify that the <a href="sdv-map-h.md" data-raw-source="[Sdv-map.h](sdv-map-h.md)">Sdv-map.h</a> file content is correct.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Timeouts</strong></p></td>
-<td align="left"><p>The number of rules that SDV stopped verifying because it exceeded its time limit for verifying each rule. The time limit is set in the [Static Driver Verifier Options File](static-driver-verifier-options-file.md), Sdv-default.xml.</p>
+<td align="left"><p>The number of rules that SDV stopped verifying because it exceeded its time limit for verifying each rule. The time limit is set in the <a href="static-driver-verifier-options-file.md" data-raw-source="[Static Driver Verifier Options File](static-driver-verifier-options-file.md)">Static Driver Verifier Options File</a>, Sdv-default.xml.</p>
 <p>This result is caused by limitations in SDV. It does not indicate an error in the driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Spaceouts</strong></p></td>
-<td align="left"><p>The number of rules that SDV stopped verifying because it exceeded the memory limit for verifying the rule. The memory limit is set in the [Static Driver Verifier Options File](static-driver-verifier-options-file.md), Sdv-default.xml.</p>
+<td align="left"><p>The number of rules that SDV stopped verifying because it exceeded the memory limit for verifying the rule. The memory limit is set in the <a href="static-driver-verifier-options-file.md" data-raw-source="[Static Driver Verifier Options File](static-driver-verifier-options-file.md)">Static Driver Verifier Options File</a>, Sdv-default.xml.</p>
 <p>This result is caused by limitations in SDV. It does not indicate an error in the driver.</p></td>
 </tr>
 <tr class="even">
@@ -143,11 +143,11 @@ The following table describes the results that can appear in the results summary
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ This trace will include only objects that were created by the notepad.exe proces
 
 2.  In the Object Reference Tracing section, clear the **Enable** check box.
 
- 
+ 
 
- 
+ 
 
 
 

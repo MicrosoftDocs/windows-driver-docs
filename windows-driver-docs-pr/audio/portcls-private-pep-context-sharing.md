@@ -66,9 +66,9 @@ After the miniport establishes access to an **IPortClsRuntimePower** interface, 
 
 With the exception of the *DeviceObject* parameter, all other parameters are defined identically to those for the runtime power framework’s [PoFxPowerControl](https://msdn.microsoft.com/library/windows/hardware/hh439518.aspx) method.
 
- 
+ 
 
- 
+ 
 
 
 

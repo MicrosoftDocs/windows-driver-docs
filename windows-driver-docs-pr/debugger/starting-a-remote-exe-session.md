@@ -86,13 +86,13 @@ Anyone on the network with appropriate permission can connect to this debug sess
 
 Commands are issued through the Remote.exe Client and are sent to the Remote.exe Server. You can enter any command into the client as if you were directly entering it into the debugger.
 
-To exit from the remote.exe session on the Remote.exe Client, enter the **@Q** command. This leaves the Remote.exe Server and the debugger running.
+To exit from the remote.exe session on the Remote.exe Client, enter the <strong>@Q</strong> command. This leaves the Remote.exe Server and the debugger running.
 
-To end the server session, enter the **@K** command on the Remote.exe Server.
+To end the server session, enter the <strong>@K</strong> command on the Remote.exe Server.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,7 +35,7 @@ When it handles the OID method request of [OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE](
 
     **Note**  If an independent hardware vendor (IHV) provides a virtual bus driver (VBD) as part of its SR-IOV [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840), its miniport driver must not call [**NdisMGetVirtualFunctionBusData**](https://msdn.microsoft.com/library/windows/hardware/hh451484). Instead, the driver must interface with the VBD through a private communication channel, and request that the VBD call [*ReadVfConfigBlock*](https://msdn.microsoft.com/library/windows/hardware/hh439637). This function is exposed from the [GUID\_VPCI\_INTERFACE\_STANDARD](https://msdn.microsoft.com/library/windows/hardware/hh451146) interface that is supported by the underlying virtual PCI (VPCI) bus driver.
 
-     
+     
 
 After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
 
@@ -43,9 +43,9 @@ After a successful return from this OID method request, the **InformationBuffer*
 
 -   Additional buffer space for the data to be read from the PCIe configuration space. The driver copies the data to the buffer at the offset specified by the**BufferOffset** member of the [**NDIS\_SRIOV\_READ\_VF\_CONFIG\_SPACE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451681) structure.
 
- 
+ 
 
- 
+ 
 
 
 

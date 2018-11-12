@@ -86,9 +86,9 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

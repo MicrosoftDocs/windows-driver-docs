@@ -26,9 +26,9 @@ Either the DbgRpc tool or the RPC debugger extensions can be used in any of thes
 
 [Identifying the Caller From the Server Thread](identifying-the-caller-from-the-server-thread.md)
 
- 
+ 
 
- 
+ 
 
 
 

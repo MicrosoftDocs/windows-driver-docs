@@ -19,10 +19,9 @@ If your miniport driver maps more than 8 MB of device memory, include a **Genera
 
 ```inf
 [GeneralConfigData]
- 
+
 [MaximumDeviceMemoryConfiguration = n]
 [MaximumNumberOfDevices = n]
- 
 ```
 
 The following are **GeneralConfigData** entries and values:
@@ -35,9 +34,9 @@ Specifies how many video devices (as enumerated by PCI and driven by your minipo
 
 For information about supporting more than one monitor, see [Supporting DualView (Windows 2000 Model)](supporting-dualview--windows-2000-model-.md) and [Multiple-Monitor Support in the Display Driver](multiple-monitor-support-in-the-display-driver.md).
 
- 
 
- 
+
+
 
 
 

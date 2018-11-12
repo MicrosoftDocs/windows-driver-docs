@@ -69,9 +69,9 @@ PS C:\> $switchData$customSwitchData.Data.CurrentStatus
 
 For more information on how extensible switch extensions manage switch feature status information, see [Managing Custom Switch Feature Status Information](managing-custom-switch-feature-status-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

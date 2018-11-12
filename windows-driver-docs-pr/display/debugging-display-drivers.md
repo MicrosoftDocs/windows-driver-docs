@@ -21,9 +21,9 @@ The following topics in this section describe debugging and testing techniques t
 
 [Disabling the Watchdog Timer While Testing Display Drivers](disabling-the-watchdog-timer-while-testing-display-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

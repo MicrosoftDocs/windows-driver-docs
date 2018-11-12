@@ -21,9 +21,9 @@ Support for closed captioning is required. The DVD decoder minidriver must provi
 
 When a group of pictures (GOP) start code is processed in the video stream, the DVD decoder minidriver looks for user data (closed captioning information) and returns that information using one of the stream request blocks (SRBs) present on the closed captioning stream queue. All data discontinuity and format block changes should be propagated from the video pin to the closed captioning pin.
 
- 
+ 
 
- 
+ 
 
 
 

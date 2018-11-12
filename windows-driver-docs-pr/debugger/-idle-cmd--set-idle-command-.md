@@ -59,7 +59,7 @@ This command cannot be used in script files.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +76,9 @@ Execute when idle: r eax
 eax=003b0de8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

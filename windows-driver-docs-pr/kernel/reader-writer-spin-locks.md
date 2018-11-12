@@ -32,13 +32,13 @@ The following is a list of the routines that are available to manage reader/writ
 | [**ExReleaseSpinLockSharedFromDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/hh451064)      | Releases a spin lock that the caller acquired for shared access, and does not lower the IRQL.                         |
 | [**ExTryConvertSharedSpinLockExclusive**](https://msdn.microsoft.com/library/windows/hardware/hh451070)      | Tries to convert the access state of a spin lock that the caller already holds for shared access to exclusive access. |
 
- 
+ 
 
 The reader/writer spin lock routines all take, as their first parameter, a pointer to a spin lock, which is an **EX\_SPIN\_LOCK** structure. This structure is opaque to drivers. A driver should allocate the storage for the spin lock from nonpaged system memory, and initialize the lock to zero.
 
- 
+ 
 
- 
+ 
 
 
 

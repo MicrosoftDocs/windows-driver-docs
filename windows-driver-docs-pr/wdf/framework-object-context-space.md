@@ -72,9 +72,9 @@ After an object has been created, the driver can obtain a pointer to the object'
 
 If your driver has a context space pointer, it can find the object that the context space belongs to by calling [**WdfObjectContextGetObject**](https://msdn.microsoft.com/library/windows/hardware/ff548727).
 
- 
+ 
 
- 
+ 
 
 
 

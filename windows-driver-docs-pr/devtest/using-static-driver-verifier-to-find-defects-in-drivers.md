@@ -17,8 +17,7 @@ SDV can analyze kernel-mode drivers that conform to one of the following driver 
 
 | Preparing your source code |
 |----------------------------|
-
- 
+|                            |
 
 Use the following steps to prepare your code for analysis.
 
@@ -86,14 +85,13 @@ Use the following steps to prepare your code for analysis.
     | C28169                          | The dispatch function &lt;function&gt; does not have any \_Dispatch\_type\_ annotations                                             |
     | C28208                          | Function signature doesn’t match with the function declarations                                                                     |
 
-     
+
 
 ### <span id="running_static_driver_verifier"></span><span id="RUNNING_STATIC_DRIVER_VERIFIER"></span>
 
 | Running Static Driver Verifier |
 |--------------------------------|
-
- 
+|                                |
 
 1.  Open your driver project (.vcxProj) file in Visual Studio. From the **Driver** menu, click **Launch Static Driver Verifier…**.
 
@@ -111,9 +109,9 @@ Use the following steps to prepare your code for analysis.
 
     **Schedule** Select a start time for the verification to begin. The default setting is to begin the analysis immediately after you click **Start** on the **Main** tab. Depending upon the size of the driver and its complexity, the static analysis can take a long time to run. You might want to schedule the analysis to begin when it is most convenient for you; for example, at the end of the day.
 
-    **Note**  Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
+    **Note**  Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 
-     
+
 
 4.  Click the **Rules** tab to select which driver API usage rules to verify when you start the analysis.
 
@@ -127,8 +125,7 @@ Use the following steps to prepare your code for analysis.
 
 | Viewing and Analyzing the Results |
 |-----------------------------------|
-
- 
+|                                   |
 
 As the static analysis proceeds, SDV reports the status of the analysis. When the analysis is complete, SDV reports the results and statistics. If the driver fails to satisfy an API usage rule, the result is reported as a defect.
 
@@ -136,9 +133,9 @@ If any problems were encountered, SDV displays those on the **Warnings** and **E
 
 To view specific defects in the [Static Driver Verifier Report](static-driver-verifier-report.md), click the Defect in the **Results** pane. This opens the [Trace Viewer](defect-viewer.md), which displays a trace of the code path to the rule violation. For more information, see [Interpreting Static Driver Verifier Results](interpreting-static-driver-verifier-results.md).
 
-**Note**  Static Driver Verifier retains the results and settings from the analysis. To clear the results, click **Clean**.
+**Note**  Static Driver Verifier retains the results and settings from the analysis. To clear the results, click **Clean**.
 
- 
+
 
 ### <span id="troubleshooting_sdv_results"></span><span id="TROUBLESHOOTING_SDV_RESULTS"></span>Troubleshooting Static Driver Verifier Results
 
@@ -157,9 +154,9 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Code Analysis tool](http://go.microsoft.com/fwlink/p/?linkid=226836)
 
- 
 
- 
+
+
 
 
 

@@ -15,9 +15,9 @@ Throughout the TDR process (that is, the process of detecting and recovering fro
 
 The operating system also logs the preceding message in the Event Viewer application and collects diagnosis information in the form of a debug report. If the end user opted in to provide feedback, the operating system returns this debug report to Microsoft through the Online Crash Analysis (OCA) mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

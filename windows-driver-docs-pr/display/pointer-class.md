@@ -17,9 +17,9 @@ The Windows Display Driver Model (WDDM) does not permit a call into one of the p
 
 -   [*DxgkDdiSetPointerShape*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_setpointershape)
 
- 
+ 
 
- 
+ 
 
 
 

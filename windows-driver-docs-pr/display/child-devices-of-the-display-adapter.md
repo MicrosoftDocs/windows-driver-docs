@@ -69,7 +69,7 @@ The following table gives some examples of devices that have various types and H
 </tbody>
 </table>
 
- 
+ 
 
 The operating system uses one of several strategies, depending on the HPD awareness value, to determine whether an external device is connected to a child device. The following table briefly describes how the operating system determines the connection status of devices with various HPD awareness values.
 
@@ -100,11 +100,11 @@ The operating system uses one of several strategies, depending on the HPD awaren
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

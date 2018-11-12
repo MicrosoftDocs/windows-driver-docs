@@ -52,9 +52,9 @@ To improve performance and ease of use of custom WMI data blocks, consider the f
 
 WMI does not support versioning, so a driver writer must define a new MOF class and generate a new GUID to revise an existing custom block.
 
- 
+ 
 
- 
+ 
 
 
 

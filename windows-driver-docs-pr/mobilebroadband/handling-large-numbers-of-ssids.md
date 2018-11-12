@@ -87,9 +87,9 @@ This section shows an example profile containing an SSID in the v1 and v2 namesp
 
 [WISPr authentication](wispr-authentication.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ GDI calls the [**DrvDisableSurface**](https://msdn.microsoft.com/library/windows
 
 Once created, a surface must be deleted when it is no longer in use. Failure to properly match surface creation with deletion can cause stray objects to accumulate and degrade system performance.
 
- 
+ 
 
- 
+ 
 
 
 

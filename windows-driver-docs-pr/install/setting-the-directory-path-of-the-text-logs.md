@@ -21,9 +21,9 @@ The **LogPath** registry value must be a fully qualified directory path. The pat
 
 If the **LogPath** registry value is not present, the path does not exist, or the path includes a file name, SetupAPI locates the text logs in the *%SystemRoot%/Inf* directory.
 
- 
+ 
 
- 
+ 
 
 
 

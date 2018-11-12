@@ -50,9 +50,9 @@ In addition to controlling NIC hardware, a connection-oriented miniport driver:
 
     At the request of NDIS, a connection-oriented miniport driver [resets](reset.md) a NIC.
 
- 
+ 
 
- 
+ 
 
 
 

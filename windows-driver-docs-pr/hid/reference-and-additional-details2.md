@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 For additional information, refer to the [HID over I²C Protocol Specification](https://msdn.microsoft.com/library/windows/hardware/dn642101) on MSDN.
 
- 
+ 
 
- 
+ 
 
 
 

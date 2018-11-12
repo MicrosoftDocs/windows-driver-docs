@@ -41,9 +41,9 @@ As the preceding figure shows, multiple state objects at one level in the tree c
 
 -   More than one path state object can share the same neighbor state object. For example, the Path1 and Path2 state objects share the Neighbor1 state object. All of the paths that share the same neighbor have the same next hop destination.
 
- 
+ 
 
- 
+ 
 
 
 

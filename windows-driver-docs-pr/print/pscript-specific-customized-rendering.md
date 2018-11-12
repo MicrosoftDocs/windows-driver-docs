@@ -20,9 +20,9 @@ Pscript5 allows device-specific customized code to inject Postscript commands in
 
 Pscript5 calls the **IPrintOemPS::Command** method at a variety of points within the print job's data stream. One of the function's arguments specifies an index value that represents the current point in the data stream. Each time the function is called, it can check the index value and either provide additional stream data or not.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ The NO\_PAGES\_AVAILABLE bug check has a value of 0x0000004D. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -90,9 +90,9 @@ This bug check can occur for any of the following reasons:
 
 If the problem cannot be found, then try booting with a kernel debugger attached from the beginning, and monitor the situation.
 
- 
+ 
 
- 
+ 
 
 
 

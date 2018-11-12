@@ -57,9 +57,9 @@ Logging a warning message is almost identical to logging an error message. The d
 
 The *entry_prefix* field of the log entry is "! ", which indicates that this is a warning message, as opposed to "!!! ", which would indicate an error message.
 
- 
+ 
 
- 
+ 
 
 
 

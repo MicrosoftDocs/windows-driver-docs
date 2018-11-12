@@ -50,9 +50,9 @@ For code examples that show how to send I/O requests to SPB-connected peripheral
 
 [Hardware Resources for User-Mode SPB Peripheral Drivers](https://msdn.microsoft.com/library/windows/hardware/hh450837)
 [Hardware Resources for Kernel-Mode SPB Peripheral Drivers](https://msdn.microsoft.com/library/windows/hardware/hh698217)
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ class PDOSCSI_ADDR
 
 When this class definition iscompiled by the WMI tool suite, it produces the [**PDOSCSI\_ADDR**](https://msdn.microsoft.com/library/windows/hardware/ff563809) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

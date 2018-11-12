@@ -17,9 +17,9 @@ A single provider module can attach to more than one client module. In order to 
 
 A [Network Programming Interface (NPI)](network-programming-interface.md) typically defines the provider module functions such that they include either a pointer to the provider module's binding context or some other NPI-specific identifier as one of the function parameters. As a result, a provider module can determine which client module is the caller when one of it's NPI functions is called.
 
- 
+ 
 
- 
+ 
 
 
 

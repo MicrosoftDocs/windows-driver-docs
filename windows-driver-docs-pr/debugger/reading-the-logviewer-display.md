@@ -62,7 +62,7 @@ Each row of the display contains several columns. The significance of each colum
 </tbody>
 </table>
 
- 
+ 
 
 Double-clicking on a row in the viewer will expand the row to reveal the parameters to the function and their values "going in" to the function. If they are designated as OUT parameters, their value "coming out" is shown on the right.
 
@@ -70,9 +70,9 @@ You can also use the ENTER key or the right and left arrow keys to expand and co
 
 Function calls that returned failure status codes are shaded in pink.
 
- 
+ 
 
- 
+ 
 
 
 

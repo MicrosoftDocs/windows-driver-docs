@@ -43,9 +43,9 @@ Requirements
 
 [**NDIS\_WWAN\_NETWORK\_IDLE\_HINT**](https://msdn.microsoft.com/library/windows/hardware/dn931088)
 
- 
+ 
 
- 
+ 
 
 
 

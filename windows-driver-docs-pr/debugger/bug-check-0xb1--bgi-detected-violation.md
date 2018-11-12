@@ -26,9 +26,9 @@ The BGI\_DETECTED\_VIOLATION bug check has a value of 0x000000B1.
 
 None
 
- 
+ 
 
- 
+ 
 
 
 

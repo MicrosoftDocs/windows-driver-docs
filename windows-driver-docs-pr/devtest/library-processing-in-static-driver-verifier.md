@@ -35,9 +35,9 @@ This section includes:
 
 SDV includes processed library files for system libraries. You do not need to direct SDV to process these libraries. When SDV detects that a driver depends on these libraries, it uses its processed files for these libraries without displaying a warning message. For information about library requirements, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
 
- 
+ 
 
- 
+ 
 
 
 

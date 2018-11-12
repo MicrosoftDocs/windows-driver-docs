@@ -68,9 +68,9 @@ For additional routine-specific requirements, see the following topics:
 
 [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255)
 
- 
+ 
 
- 
+ 
 
 
 

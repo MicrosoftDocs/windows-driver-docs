@@ -29,7 +29,7 @@ Following are examples of the deinterlace modes that can be supported by the DDI
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Bob](bob-deinterlacing.md) (line doubling)</p></td>
+<td align="left"><p><a href="bob-deinterlacing.md" data-raw-source="[Bob](bob-deinterlacing.md)">Bob</a> (line doubling)</p></td>
 <td align="left"><p>This mode uses a bit-block transfer (blt). This mode should always be available.</p></td>
 </tr>
 <tr class="even">
@@ -47,11 +47,11 @@ Following are examples of the deinterlace modes that can be supported by the DDI
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

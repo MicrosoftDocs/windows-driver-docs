@@ -22,9 +22,9 @@ The following figure shows an overview of how the framework adds a new device:
 
 ![call sequence when umdf adds a device](images/adddevice.gif)
 
- 
+ 
 
- 
+ 
 
 
 

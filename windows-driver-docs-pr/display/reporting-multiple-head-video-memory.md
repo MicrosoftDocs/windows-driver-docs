@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 In multiple-head mode, the master head must respond to a call to the driver's [*DdGetAvailDriverMemory*](https://msdn.microsoft.com/library/windows/hardware/ff549377) function as if the master head were the only head controlling the multiple-head card. The amount of free memory that the driver returns must include the video memory of any subordinate head whose video memory was surrendered to the master head (that is, any subordinate head that received *DdCreateSurface* calls with the DDSCAPS2\_ADDITIONALPRIMARY bit set).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ For the most up-to-date information about Static Driver Verifier and the Driver 
 
 **Important**   Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the Static Tools test in HCK to fail. For HCK 2.0, the Static Tools Test only requires the presence of DVL file to show Code Analysis and SDV had been run, and does not require all rules to pass.
 
- 
+ 
 
 You can also run Static Driver Verifier from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
@@ -55,9 +55,9 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 * [Static Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552808)
 * [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281)
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
- 
+ 
 
- 
+ 
 
 
 

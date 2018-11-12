@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The Windows Sockets switch uses its session protocol to handle almost all synchronization between a SAN service provider and applications. That is, the switch, in conjunction with the TCP/IP provider, handles most **WSPAsyncSelect**, **WSPEventSelect**, and **WSPSelect** calls from applications. The switch does not forward these calls to a SAN service provider except when specifying the FD\_ACCEPT and FD\_CONNECT network event codes in calls to a SAN service provider's [**WSPEventSelect**](https://msdn.microsoft.com/library/windows/hardware/ff566287) function, as described in [Setting Up a SAN Connection](setting-up-a-san-connection.md).
 
- 
+ 
 
- 
+ 
 
 
 

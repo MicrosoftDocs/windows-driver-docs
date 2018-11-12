@@ -25,9 +25,9 @@ The scan-out bit is turned on for the DXGI\_FORMAT\_B8G8R8A8\_UNORM and DXGI\_FO
 
 -   Handle calls to its [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function to copy these formats through stretch, rotate, and resolve (in fact, all the bitblt operations that are expected for the RGBA variants).
 
- 
+ 
 
- 
+ 
 
 
 

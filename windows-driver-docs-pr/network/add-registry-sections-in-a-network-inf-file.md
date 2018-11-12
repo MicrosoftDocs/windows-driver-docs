@@ -42,7 +42,7 @@ An *add-registry-section* in an INF file for a **NetClient** component must add 
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 ### <a href="" id="ddk-creating-the-ndi-key-ng"></a>Creating the Ndi Key
 
@@ -62,9 +62,9 @@ Each network INF file must contain at least one *add-registry-section* that adds
 
 For a list of **Ndi** registry keys and values that are available in Windows 95/98/Me but not used in Windows 2000 and later versions, see [Ndi Values and Keys Not Used in Windows 2000 and Later Versions](ndi-values-and-keys-not-used-in-windows-2000-and-later-versions.md).
 
- 
+ 
 
- 
+ 
 
 
 

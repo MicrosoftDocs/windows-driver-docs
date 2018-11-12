@@ -53,7 +53,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!cbreg** extension is only available for an x86-based target computer.
 
@@ -61,9 +61,9 @@ The **!cbreg** extension is only available for an x86-based target computer.
 
 The [**!exca**](-exca.md) extension can be used to display PCIC ExCA registers by socket number.
 
- 
+ 
 
- 
+ 
 
 
 

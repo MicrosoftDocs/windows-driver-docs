@@ -56,7 +56,7 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Address of purported PDO</p></td>
 <td align="left"><p>Address of driver object</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p><strong>Invalid PDO:</strong> An API which requires a PDO has been called with random memory, or with an FDO, or with a PDO which hasn't been initialized.</p>
+<td align="left"><p><strong>Invalid PDO:</strong> An API which requires a PDO has been called with random memory, or with an FDO, or with a PDO which hasn&#39;t been initialized.</p>
 <p>(An uninitialized PDO is one that has not been returned to Plug and Play by <strong>QueryDeviceRelation</strong> or <strong>QueryBusRelations</strong>.)</p></td>
 </tr>
 <tr class="odd">
@@ -67,7 +67,7 @@ Parameter 1 identifies the type of violation.
 <p><strong>2:</strong> UniqueID</p>
 <p><strong>3:</strong> HardwareIDs</p>
 <p><strong>4:</strong> CompatibleIDs</p></td>
-<td align="left"><p><strong>Invalid ID:</strong> An enumerator has returned an ID which contains illegal characters or isn't properly terminated. (IDs must contain only characters in the ranges 0x20 - 0x2B and 0x2D - 0x7F.)</p></td>
+<td align="left"><p><strong>Invalid ID:</strong> An enumerator has returned an ID which contains illegal characters or isn&#39;t properly terminated. (IDs must contain only characters in the ranges 0x20 - 0x2B and 0x2D - 0x7F.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x4</p></td>
@@ -102,7 +102,7 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>Driver object</p></td>
 <td align="left"><p>IRQL after returning from driver callback</p></td>
 <td align="left"><p>Combined APC disable count after returning from driver callback</p></td>
-<td align="left"><p><strong>Incorrect notify callback behavior:</strong> A driver failed to preserve IRQL or combined APC disable count across a Plug 'n' Play notification.</p></td>
+<td align="left"><p><strong>Incorrect notify callback behavior:</strong> A driver failed to preserve IRQL or combined APC disable count across a Plug &#39;n&#39; Play notification.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0xB</p></td>
@@ -114,11 +114,11 @@ Parameter 1 identifies the type of violation.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

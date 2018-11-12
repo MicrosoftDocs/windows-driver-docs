@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 The network upgrade process is divided into three distinct phases, which can be briefly summarized as follows:
 
@@ -42,9 +42,9 @@ The phases of the network upgrade process are described in more detail in the fo
 
 [GUI Mode Phase of the Network Upgrade Process](gui-mode-phase-of-the-network-upgrade-process.md)
 
- 
+ 
 
- 
+ 
 
 
 

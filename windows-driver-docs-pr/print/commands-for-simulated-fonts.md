@@ -115,13 +115,13 @@ The following table lists the commands for controlling simulated fonts. All comm
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

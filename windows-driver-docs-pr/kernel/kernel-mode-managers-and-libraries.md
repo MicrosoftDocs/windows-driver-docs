@@ -46,9 +46,9 @@ Windows has several components that export routines device drivers can call. The
 
 [Windows Kernel-Mode WMI Library](windows-kernel-mode-wmi-library.md)
 
- 
+ 
 
- 
+ 
 
 
 

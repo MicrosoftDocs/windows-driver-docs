@@ -25,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 static UINT  ComputeMipMapSize(
-   UINT      cpWidth,
-   UINT      cpHeight,
-   UINT      cLevels,
-   D3DFORMAT Format
+   UINT      cpWidth,
+   UINT      cpHeight,
+   UINT      cLevels,
+   D3DFORMAT Format
 );
 ```
 
@@ -77,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

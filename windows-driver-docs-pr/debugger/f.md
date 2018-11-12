@@ -22,9 +22,9 @@ Distribution media containing the free build of the operating system do not have
 <span id="first_chance_exception"></span><span id="FIRST_CHANCE_EXCEPTION"></span>**first-chance exception**  
 The first opportunity to handle an exception. If an exception is not handled by any handler on the first opportunity, the handlers are given a second chance.
 
- 
+ 
 
- 
+ 
 
 
 

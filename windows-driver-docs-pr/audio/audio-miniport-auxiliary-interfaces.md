@@ -24,9 +24,9 @@ The following interfaces are discussed in this section:
 
 [IAdapterPnpManagement](https://msdn.microsoft.com/library/windows/hardware/mt604850) - Allows adapters to register to receive PnP management messages.
 
- 
+ 
 
- 
+ 
 
 
 

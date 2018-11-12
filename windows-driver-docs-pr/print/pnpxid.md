@@ -17,9 +17,9 @@ The `PnPXID` command returns the Plug and Play (PnP) identifier (ID) in the form
 
 For more information about function discovery keys, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

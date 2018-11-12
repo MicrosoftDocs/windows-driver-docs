@@ -37,9 +37,9 @@ Windows 10 continues to support Opportunistic Key Caching (OKC) when 802.11r is
 
 All three features require AP-side support and will not work without those features enabled on the APs.
 
- 
+ 
 
- 
+ 
 
 
 

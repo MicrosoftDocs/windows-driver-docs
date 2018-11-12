@@ -23,9 +23,9 @@ A miniport driver calls [**NdisMRegisterInterruptEx**](https://msdn.microsoft.co
 
 Drivers call the [**NdisMDeRegisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563575) function to release resources that were previously allocated with **NdisMRegisterInterruptEx**.
 
- 
+ 
 
- 
+ 
 
 
 

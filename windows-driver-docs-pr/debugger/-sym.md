@@ -61,7 +61,7 @@ Suppresses all authentication dialog boxes when SymSrv receives an authenticatio
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,11 +74,11 @@ The **!sym prompts** and **!sym prompts off** extensions control whether authent
 
 **Note**   Noisy symbol loading should not be confused with noisy source loading -- that is controlled by the [**.srcnoisy (Noisy Source Loading)**](-srcnoisy--noisy-source-loading-.md) command.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

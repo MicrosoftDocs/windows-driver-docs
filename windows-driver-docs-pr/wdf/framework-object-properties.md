@@ -26,9 +26,9 @@ For each writable property, the framework defines a "set" method that a driver c
 
 For example, the framework device object defines two methods, [**WdfDeviceGetDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff545994) and [**WdfDeviceSetDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff546884), that a driver can call to get or set a device's Plug and Play (PnP) state.
 
- 
+ 
 
- 
+ 
 
 
 

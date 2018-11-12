@@ -39,11 +39,11 @@ The [**DrvDitherColor**](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 **Note**   Windows 2000 and later do not support halftoning on 24-bit (or higher) devices.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

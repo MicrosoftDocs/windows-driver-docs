@@ -75,7 +75,7 @@ Displays to include the platform bus section.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based or Itanium target computer.
 
@@ -617,9 +617,9 @@ CP F/M/S Manufacturer  MHz Update Signature Features
  0 6,5,1 GenuineIntel  334 0000004000000000 00001fff
 ```
 
- 
+ 
 
- 
+ 
 
 
 

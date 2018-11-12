@@ -19,9 +19,9 @@ tracefmt
 
 In response, Tracefmt formats the trace messages in the default C:\\logfile.etl file by using a TMF file in the path specified by the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable. It creates an output file named Fmtfile.txt and a summary message file named Fmtfile.txt.sum in the local directory.
 
- 
+ 
 
- 
+ 
 
 
 

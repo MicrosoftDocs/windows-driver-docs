@@ -57,9 +57,9 @@ Since the buffer memory is managed by the target application, the automatic writ
 <span id="_LOGEXTS.LOGM"></span>[**!logexts.logm**](-logexts-logm.md)  
 Displays or creates a module inclusion/exclusion list. It is often desirable to only log those API calls that are made from a certain module or set of modules. To facilitate that, Logger allows you to specify a module inclusion list or, alternatively, a module exclusion list. For instance, you would use an inclusion list if you only wanted to log calls from one or two modules. If you wanted to log calls made from all modules except a short list of modules, you would use an exclusion list. The modules Logexts.dll and Kernel32.dll are always excluded, since Logger is not permitted to log itself.
 
- 
+ 
 
- 
+ 
 
 
 

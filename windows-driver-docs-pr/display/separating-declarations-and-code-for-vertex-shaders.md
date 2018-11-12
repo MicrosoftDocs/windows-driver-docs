@@ -25,9 +25,9 @@ The DirectX 9.0 driver receives vertex shader code when it processes the D3DDP2O
 
 The DirectX 9.0 driver processes the D3DDP2OP\_SETVERTEXSHADERDECL and D3DDP2OP\_SETVERTEXSHADERFUNC operation codes to make particular vertex shader declaration and code current in the vertex shader assembler. The driver processes the D3DDP2OP\_DELETEVERTEXSHADERDECL and D3DDP2OP\_DELETEVERTEXSHADERFUNC operation codes to remove these vertex shader declaration and code from the vertex shader assembler. For each of these operations codes, a [**D3DHAL\_DP2VERTEXSHADER**](https://msdn.microsoft.com/library/windows/hardware/ff545925) structure follows in the command stream. This structure contains just one member that identifies the handle to the declaration or code to set or delete.
 
- 
+ 
 
- 
+ 
 
 
 

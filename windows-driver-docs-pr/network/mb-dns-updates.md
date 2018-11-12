@@ -46,15 +46,15 @@ Miniport drivers should set the **NameServer** registry key to update Windows ab
 </tbody>
 </table>
 
- 
+ 
 
 These operations should be used only when the miniport driver specifies **EnableDhcp** to equal zero in its INF file. That is, the miniport driver does not implement DHCP.
 
 For more information about processing IP address notifications, see [Guidelines for MB Miniport driver IP Address Notifications](guidelines-for-mb-miniport-driver-ip-address-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

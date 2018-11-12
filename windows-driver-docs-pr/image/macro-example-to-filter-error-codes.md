@@ -26,7 +26,7 @@ The following macro example filters communication failure error codes.
     ((HRESULT_FROM_WIN32(ERROR_WINHTTP_NAME_NOT_RESOLVED)) == hr))
 ```
 
- 
+ 
 
 
 

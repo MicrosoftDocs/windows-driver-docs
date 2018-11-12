@@ -14,7 +14,7 @@ Automatic connection management, introduced in Windows 8, makes connection deci
 **Note**  
 Windows responds to Ethernet connections but does not automatically manage Ethernet connections.
 
- 
+ 
 
 This topic describes how Windows automatically manages physical wireless connectivity, and does not consider these connections:
 
@@ -210,9 +210,9 @@ When multiple profiles exist for the same network, Windows 8 and Windows 8.1 us
 
 2.  **Interface Arrival** The profile on the most recently installed interface will be used.
 
- 
+ 
 
- 
+ 
 
 
 

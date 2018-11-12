@@ -33,9 +33,9 @@ To set device setup class properties on Windows Server 2003, Windows XP, and Win
 
 If this call to [**SetupDiSetClassRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552135) succeeds, **SetupDiSetClassRegistryProperty** sets the device setup class property and returns **TRUE**. If the function call fails, **SetupDiSetClassRegistryProperty** will return **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

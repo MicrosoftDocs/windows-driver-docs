@@ -44,9 +44,9 @@ This section includes the following topics on synchronizing IRP cancellation.
 
 [Using a Driver-Supplied Spin Lock](using-a-driver-supplied-spin-lock.md)
 
- 
+ 
 
- 
+ 
 
 
 

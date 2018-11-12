@@ -27,7 +27,7 @@ NDIS ensures that the buffer size is at least **sizeof**(**ULONG**) and contains
 
 **Note**  If the miniport driver is resetting, its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function should return NDIS\_STATUS\_NOT\_ACCEPTED.
 
- 
+ 
 
 ### Return status codes
 
@@ -74,9 +74,9 @@ Requirements
 
 [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](oid-pm-add-protocol-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

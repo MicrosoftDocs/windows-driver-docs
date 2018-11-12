@@ -18,7 +18,7 @@ OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS is sent down to the device from the OS t
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 This command is sent in some cases such as when there is a need to turn off the offloads due to a performance issue.
 
@@ -31,7 +31,7 @@ The lower edge driver (LE) must use the contents of [**WDI\_TLV\_TCP\_SET\_OFFLO
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------|
 | [**WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898071) |                                |          | The TCP offload parameters to be set. |
 
- 
+ 
 
 ## Set property results
 
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -89,7 +89,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ExposureSettings</strong>](exposuresettings.md)</p></td>
+<td><p><a href="exposuresettings.md" data-raw-source="[&lt;strong&gt;ExposureSettings&lt;/strong&gt;](exposuresettings.md)"><strong>ExposureSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -112,9 +112,9 @@ You can subset the allowed values for this element.
 
 [**ExposureSettings**](exposuresettings.md)
 
- 
+ 
 
- 
+ 
 
 
 

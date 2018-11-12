@@ -51,9 +51,9 @@ The framework starts an internal watchdog timer every time it calls a power poli
 
 If the time-out period elapses, the framework issues bug check 0x10D (WDF\_VIOLATION). For details, see [**Bug Check 0x10D**](bug-check-0x10d---wdf-violation.md).
 
- 
+ 
 
- 
+ 
 
 
 

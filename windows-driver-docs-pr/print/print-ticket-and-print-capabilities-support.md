@@ -18,9 +18,9 @@ This section contains information about print ticket and print capabilities supp
 
 [Print Ticket Interfaces and Print Driver Plug-ins](print-ticket-interfaces-and-print-driver-plug-ins.md)
 
- 
+ 
 
- 
+ 
 
 
 

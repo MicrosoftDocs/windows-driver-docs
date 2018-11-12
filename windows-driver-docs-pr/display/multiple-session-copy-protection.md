@@ -21,9 +21,9 @@ The miniport driver of a device that has copy protection can optionally support 
 
 -   Keep copy protection enabled until all sessions have been temporarily turned off (through VP\_CP\_CMD\_CHANGE) or deactivated (VP\_CP\_CMD\_DEACTIVATE). For example, the miniport driver could increment or decrement a reference count every time copy protection is activated (VP\_CP\_CMD\_ACTIVATE) or deactivated/turned off, disabling copy protection entirely only when the reference count is zero.
 
- 
+ 
 
- 
+ 
 
 
 

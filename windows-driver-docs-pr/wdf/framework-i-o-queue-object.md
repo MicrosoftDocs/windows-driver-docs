@@ -24,9 +24,9 @@ When the driver creates an I/O queue, it specifies a dispatch model that control
 
 When drivers create I/O queues, they can provide interfaces for callback functions that the framework calls to notify the driver when events related to the interfaces occur. For more information, see [I/O Queue Event Callback Functions](i-o-queue-event-callback-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

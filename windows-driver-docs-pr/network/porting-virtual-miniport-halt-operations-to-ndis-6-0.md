@@ -33,9 +33,9 @@ For more information about halting a virtual miniport, see [Halting a Virtual Mi
 
 NDIS 6.0 filter drivers do not require a virtual miniport. For more information about filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

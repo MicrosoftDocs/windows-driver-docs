@@ -126,9 +126,9 @@ If you are disabling all kernel debugging, you may also wish to increase the siz
 kdbgctrl -sdb 0x100000 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

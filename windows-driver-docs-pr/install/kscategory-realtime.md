@@ -43,7 +43,7 @@ The KSCATEGORY_REALTIME [device interface class](https://msdn.microsoft.com/libr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

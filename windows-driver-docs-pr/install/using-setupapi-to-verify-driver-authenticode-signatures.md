@@ -63,9 +63,9 @@ However, be aware that the version is not set in the **Version** member.
 
 **SetupScanFileQueue** sets the ERROR_AUTHENTICODE_Xxx error code in the same way as described earlier in this topic for **SetupVerifyInfFile**.
 
- 
+ 
 
- 
+ 
 
 
 

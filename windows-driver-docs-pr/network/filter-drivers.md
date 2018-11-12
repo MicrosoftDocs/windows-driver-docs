@@ -27,9 +27,9 @@ The NDIS 6.x filter driver model supersedes the NDIS 5.x filter intermediate dri
 
 For more information about NDIS 6.0 filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

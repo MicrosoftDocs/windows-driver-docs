@@ -54,7 +54,7 @@ The following properties are available for the current network device for the ac
 </tbody>
 </table>
 
- 
+ 
 
 ``` syntax
 account.currentDeviceInformation.mobileEquipmentId
@@ -65,9 +65,9 @@ account.currentDeviceInformation.mobileEquipmentId
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

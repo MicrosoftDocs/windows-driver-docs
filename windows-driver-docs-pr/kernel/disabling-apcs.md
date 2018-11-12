@@ -35,9 +35,9 @@ The following mutex operations have the same effect as entering or leaving a cri
 
 For more information about mutex objects, see [Mutex Objects](mutex-objects.md). For more information about fast and guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ BYTE  baSourceID[0]:     0x01
 
 For more detailed information on hardware requirements for USB Video Class, see the *Universal Serial Bus Device Class Definition for Video DevicesSpecification*. This specification is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
- 
+ 
 
- 
+ 
 
 
 

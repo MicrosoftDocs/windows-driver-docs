@@ -22,9 +22,9 @@ If you need to split up your DMA operations into smaller chunks, see [Splitting 
 
 Version 3 of the DMA operations interface is available starting with Windows 8. For more information about this interface, see [Version 3 of the DMA Operations Interface](version-3-of-the-dma-operations-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Causes the display to include memory management thread stacks.
 |-------|------------------|
 | Modes | kernel mode only |
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -74,7 +74,7 @@ Causes the display to include memory management thread stacks.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -145,11 +145,11 @@ All memory use is listed in pages and in kilobytes. The most useful information 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

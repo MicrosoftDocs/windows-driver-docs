@@ -17,9 +17,9 @@ This section describes the following NDIS status indications that can be issued 
 
 For more information on how extensions issue or handle extensible switch extension status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](https://msdn.microsoft.com/library/windows/hardware/hh598165).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ KS\_DVDCOPYSTATE\_AUTHENTICATION\_NOT\_REQUIRED indicates that the given stream 
 
 To allow for other applications besides DVD playback ones, in the case where a decoder needs to perform copyright protection on only one stream, the decoder performs negotiation on the first stream to receive a **Get** property call for **KS\_DVDCOPY\_SET\_COPY\_STATE** after stream opening. Do not hardcode the copyright protection properties to work with only one stream.
 
- 
+ 
 
- 
+ 
 
 
 

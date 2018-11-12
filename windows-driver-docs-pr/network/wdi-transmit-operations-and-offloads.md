@@ -41,7 +41,7 @@ The following is a list of TX operations and offloads.
 <td align="left"><p>Checksum, LSO.</p></td>
 <td align="left"><p>Checksum is a configurable offload at boot-up. Each frame has flags to specify the applicable checksum operations.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
-<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see [<strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567878).</p>
+<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567878" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_CHECKSUM_OFFLOAD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567878)"><strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong></a>.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
 </tr>
 <tr class="even">
@@ -97,7 +97,7 @@ The following is a list of TX operations and offloads.
 <td align="left"><p>Encryption</p></td>
 <td align="left"><p>Encrypt the frame contents using the security type and security key specified for the recipient (or sender, for multicast frames). Add security encapsulation where applicable.</p></td>
 <td align="left"><p>Target</p></td>
-<td align="left"><p>For systems supporting FIPS, the encryption is done within the host software. The target's encryption is bypassed.</p></td>
+<td align="left"><p>For systems supporting FIPS, the encryption is done within the host software. The target&#39;s encryption is bypassed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>A-MPDU aggregation</p></td>
@@ -114,7 +114,7 @@ The following is a list of TX operations and offloads.
 </tbody>
 </table>
 
- 
+ 
 
 ## Operation in Host-Implemented FIPS mode
 
@@ -165,9 +165,9 @@ The network data is submitted in 802.11 packet format to the port (target device
 
 [**WDI\_TXRX\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/dn898187)
 
- 
+ 
 
- 
+ 
 
 
 

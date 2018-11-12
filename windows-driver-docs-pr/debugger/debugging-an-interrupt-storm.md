@@ -212,9 +212,9 @@ Note that the audio chip's CMD register is zero. This means the audio chip is ef
 
 In this case, the audio chip needs to be manually re-enabled.
 
- 
+ 
 
- 
+ 
 
 
 

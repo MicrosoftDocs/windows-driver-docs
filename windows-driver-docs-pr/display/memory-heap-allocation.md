@@ -43,9 +43,9 @@ pitch = bpp * width + ( 4 - ( bpp * width) % 4 )
 // that is, pitch = 97 + (4 - 1) = 100
 ```
 
- 
+ 
 
- 
+ 
 
 
 

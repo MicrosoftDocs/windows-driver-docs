@@ -21,11 +21,11 @@ This section includes the following topics:
 
 **Note**  The NDIS 6.30 power management interface is an extension to the NDIS 6.20 power management interface. For more information about the NDIS 6.20 power management interface, see [Power Management (NDIS 6.20)](power-management--ndis-6-20-.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

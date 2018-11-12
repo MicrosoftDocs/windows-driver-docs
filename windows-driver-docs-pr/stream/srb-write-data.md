@@ -39,9 +39,9 @@ Indicates that a hardware failure occurred.
 
 [**SRB\_SET\_STREAM\_STATE**](srb-set-stream-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ The Network Module Registrar (NMR) is an operating system module that facilitate
 
 Although the NMR was developed for use by network modules, the design of the NMR architecture is sufficiently generic so that it can also be used by software modules in other technology areas.
 
- 
+ 
 
- 
+ 
 
 
 

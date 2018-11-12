@@ -102,9 +102,9 @@ If you encountered this error while upgrading to a new version of the Windows op
 
 Finally, if all the above steps do not resolve the error, take the system motherboard to a repair facility for diagnostic testing. A crack, a scratched trace, or a defective component on the motherboard can also cause this error.
 
- 
+ 
 
- 
+ 
 
 
 

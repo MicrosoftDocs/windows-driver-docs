@@ -39,7 +39,7 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
     **Note**  Many EHCI host controllers support debugging on port 1, but some EHCI host controllers support debugging on port 2.
 
-     
+     
 
 4.  Make a note of the bus, device, and function numbers for the EHCI controller that you intend to use for debugging. UsbView displays these number. In the preceding example, the bus number is 0, the device number is 29, and the function number is 7.
 
@@ -51,31 +51,31 @@ Debugging over a USB 2.0 cable requires the following hardware:
 > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
 > You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
 
-   
+   
 
-6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
+6. On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
-    -   **bcdedit /debug on**
-    -   **bcdedit /dbgsettings usb targetname:***TargetName*
+   - **bcdedit /debug on**
+   - **bcdedit /dbgsettings usb targetname:**<em>TargetName</em>
 
-    where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
+   where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-    -   The maximum length of the string is 24 characters.
-    -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
+   -   The maximum length of the string is 24 characters.
+   -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 
-7.  If there is more than one USB host controller on the target computer, enter this command:
+7. If there is more than one USB host controller on the target computer, enter this command:
 
-    <span id="Windows_7_or_later"></span><span id="windows_7_or_later"></span><span id="WINDOWS_7_OR_LATER"></span>Windows 7 or later  
-    **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
+   <span id="Windows_7_or_later"></span><span id="windows_7_or_later"></span><span id="WINDOWS_7_OR_LATER"></span>Windows 7 or later  
+   **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
 
-    where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in decimal format (for example, **busparams 0.29.7**).
+   where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in decimal format (for example, **busparams 0.29.7**).
 
-    <span id="Windows_Vista"></span><span id="windows_vista"></span><span id="WINDOWS_VISTA"></span>Windows Vista  
-    **bcdedit /set "{current}" loadoptions busparams=***f.d.f*
+   <span id="Windows_Vista"></span><span id="windows_vista"></span><span id="WINDOWS_VISTA"></span>Windows Vista  
+   **bcdedit /set "{current}" loadoptions busparams=**<em>f.d.f</em>
 
-    where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in hexadecimal format (for example, **busparams=0.1D.7**).
+   where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in hexadecimal format (for example, **busparams=0.1D.7**).
 
-8.  Reboot the target computer.
+8. Reboot the target computer.
 
 ## <span id="Setting-Up-the-Host-Computer"></span><span id="setting_up_the_host_computer"></span><span id="SETTING_UP_THE_HOST_COMPUTER"></span>Setting Up the Host Computer
 
@@ -95,7 +95,7 @@ At this point, the USB debug driver gets installed on the host computer. This is
 
 **Note**  The USB 2.0 debug cable is actually two cables with a dongle in the middle. The direction of the dongle is important; one side powers the device, and the other side does not. If USB debugging doesn’t work, try swapping the direction of the dongle. That is, unplug both cables from the dongle, and swap the sides that the cables are connected to.
 
- 
+ 
 
 ## <span id="Starting-a-Debugging-Session"></span><span id="starting_a_debugging_session"></span><span id="STARTING_A_DEBUGGING_SESSION"></span>Starting a Debugging Session
 
@@ -106,13 +106,13 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window, where *TargetName* is the target name you created when you set up the target computer:
 
-**windbg /k usb:targetname=***TargetName*
+**windbg /k usb:targetname=**<em>TargetName</em>
 
 ### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
 
 On the host computer, open a Command Prompt window and enter the following command, where *TargetName* is the target name you created when you set up the target computer:
 
-**kd /k usb:targetname=***TargetName*
+**kd /k usb:targetname=**<em>TargetName</em>
 
 ## <span id="what-if-usbview-shows-a-debug-capable-port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
 
@@ -156,9 +156,9 @@ For troubleshooting tips and detailed instructions on setting up kernel debuggin
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

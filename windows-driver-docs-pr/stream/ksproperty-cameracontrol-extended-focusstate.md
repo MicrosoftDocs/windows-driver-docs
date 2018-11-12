@@ -69,7 +69,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value))</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>)</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -81,7 +81,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="even">
 <td><p>Flags</p></td>
-<td><p>This is a read-only field. This contains the focus state returned by the driver. For more information about focus states, see the [<strong>KSCAMERA_EXTENDEDPROP_FOCUSSTATE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn925132) topic.</p></td>
+<td><p>This is a read-only field. This contains the focus state returned by the driver. For more information about focus states, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925132" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_FOCUSSTATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn925132)"><strong>KSCAMERA_EXTENDEDPROP_FOCUSSTATE</strong></a> topic.</p></td>
 </tr>
 </tbody>
 </table>

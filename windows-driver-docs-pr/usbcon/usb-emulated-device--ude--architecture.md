@@ -31,9 +31,9 @@ Here are the device stacks loaded for the UDE client driver:
 
 ![usb device emulation (ude) device nodes](images/ude-dev-nodes.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ This property name is defined in the [**KSPROPERTY\_AUDIOMODULE**](ksproperty-au
 
 For more information about audio modules, see [Implementing Audio Module Discovery](https://msdn.microsoft.com/windows/hardware/drivers/audio/implementing-audio-module-communication).
 
- 
+ 
 
- 
+ 
 
 
 

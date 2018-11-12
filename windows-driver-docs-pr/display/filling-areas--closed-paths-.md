@@ -27,9 +27,9 @@ The following figure shows how the pixels included in the fill region are determ
 
 The convention described above for the x-axis of the fill region also applies to the y-axis by substituting the left border with the top border and the right border with the bottom border.
 
- 
+ 
 
- 
+ 
 
 
 

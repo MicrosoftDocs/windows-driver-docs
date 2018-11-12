@@ -26,9 +26,9 @@ This diagram shows how *characteristics* are structured inside a typical GATT se
 
 An example proximity profile is described further in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md).
 
- 
+ 
 
- 
+ 
 
 
 

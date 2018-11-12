@@ -40,9 +40,9 @@ As another example, suppose a driver calls [**ZwEnumerateKey**](https://msdn.mic
 
 As a final example, suppose a driver sends an IRP that causes a lower-level driver to read information from a device. If the requesting driver specifies a buffer that is too small to receive any information, the lower-level driver might respond by returning STATUS\_BUFFER\_TOO\_SMALL, which is an error code. If the first driver specifies a buffer that can receive some, but not all, of the requested information, the lower-level driver might respond by supplying as much data as possible and then returning STATUS\_BUFFER\_OVERFLOW, which is a warning code. Note that if the first driver tests the status value using NT\_SUCCESS or NT\_ERROR incorrectly, it might inadvertently drop some of the information received.
 
- 
+ 
 
- 
+ 
 
 
 

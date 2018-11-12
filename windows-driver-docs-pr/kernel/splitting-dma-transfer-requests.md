@@ -68,9 +68,9 @@ A monolithic driver (that is, a driver not part of a class/port pair) for a DMA 
 
 If a transfer request is too large for the underlying device driver to handle, a higher-level driver can call [**MmGetMdlVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554539) and [**IoBuildPartialMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548324), then set up a sequence of partial-transfer IRPs for underlying device drivers.
 
- 
+ 
 
- 
+ 
 
 
 

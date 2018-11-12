@@ -14,9 +14,9 @@ The WIA minidriver must ensure that the WIA\_IPS\_ORIENTATION property agrees wi
 
 Note that if [**WIA\_IPS\_ORIENTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552625) is set to LANSCAPE, the extent settings will be "flipped." For example, if an application sets WIA\_IPS\_PAGE\_SIZE to WIA\_PAGE\_A4, the minidriver should set [**WIA\_IPS\_PAGE\_WIDTH**](https://msdn.microsoft.com/library/windows/hardware/ff552636) to 11692 and [**WIA\_IPS\_PAGE\_HEIGHT**](https://msdn.microsoft.com/library/windows/hardware/ff552632) to 8267. (The minidriver should also set [**WIA\_IPS\_XEXTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552661) and [**WIA\_IPS\_YEXTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552669) accordingly.) Note that if WIA\_IPS\_PAGE\_SIZE is set to WIA\_PAGE\_CUSTOM, the orientation setting is not used to determine the extent dimensions of the page to be scanned.
 
- 
+ 
 
- 
+ 
 
 
 

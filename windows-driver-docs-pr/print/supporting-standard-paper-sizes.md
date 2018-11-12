@@ -30,9 +30,9 @@ The following option attributes can be used, but are not required:
 \*PageProtectMem
 For all standard paper sizes, the RCID\_DMPAPER\_SYSTEM\_NAME resource identifier (defined in stdnames.gpd) should be used as the argument to \***rcNameID**.
 
- 
+ 
 
- 
+ 
 
 
 

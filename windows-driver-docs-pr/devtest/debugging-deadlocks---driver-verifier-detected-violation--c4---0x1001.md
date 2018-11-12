@@ -13,11 +13,11 @@ When [Driver Verifier](driver-verifier.md) detects a spin lock hierarchy violati
 
 When the Deadlock Detection option is active (Deadlock Detection is part of the Driver Verifier Standard Options), [Driver Verifier](driver-verifier.md) keeps track of each spin lock allocated and the order in which it was acquired and freed. A lock hierarchy violation means that Driver Verifier has detected a situation where, in at least one case, *LockA* is acquired and held before *LockB* is acquired, and in another, *LockB* is acquired and held before *LockA* is required.
 
-**Important**  This bug check occurs whenever [Driver Verifier](driver-verifier.md) detects that the hierarchy violation has occurred, not when an actual deadlock situation is occurring. This violation enforces strongly enforces that any locks that are shared among the various component of a driver should always be acquired and released in an order which makes the deadlocking of two threads impossible.
+**Important**  This bug check occurs whenever [Driver Verifier](driver-verifier.md) detects that the hierarchy violation has occurred, not when an actual deadlock situation is occurring. This violation enforces strongly enforces that any locks that are shared among the various component of a driver should always be acquired and released in an order which makes the deadlocking of two threads impossible.
 
- 
 
-**New in Windows 8.1** When [Driver Verifier](driver-verifier.md) encounters this violation, if the debugger is attached, the debugger will ask you for input about the error. In Windows 8 and previous versions of Windows, this violation result in an immediate bug check.
+
+**New in Windows 8.1** When [Driver Verifier](driver-verifier.md) encounters this violation, if the debugger is attached, the debugger will ask you for input about the error. In Windows 8 and previous versions of Windows, this violation result in an immediate bug check.
 
 ```
 ************ Verifier Detected a Potential Deadlock *************
@@ -30,7 +30,7 @@ When the Deadlock Detection option is active (Deadlock Detection is part of the 
 (B)reak, (I)gnore, (W)arn only, (R)emove assert?
 ```
 
-To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326)):
+To debug this violation on a computer running Windows 8.1, choose **B** (Break), and enter the suggested debugger command ([**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326)):
 
 ```
 kd> !deadlock
@@ -106,7 +106,6 @@ Lock B =     97dd8008 (MyTestDriver!BravoLock+0x00000000) - Type 'Spinlock'.
 Lock A =     97dd800c (MyTestDriver!AlphaLock+0x00000000) - Type 'Spinlock'.
 
     Stack:   << Current stack trace - use kb to display it >>
-
 ```
 
 The debugger suggests using the [**kb (Display Stack Backtrace)**](https://msdn.microsoft.com/library/windows/hardware/ff551943) command to display the current stack trace.
@@ -151,18 +150,18 @@ NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
     // <<Other local variable declarations removed>>
 
     // <<Various lines of code not shown>>
-    
+
     KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
-    
+
     // <<Various lines of code not shown>>
-    
+
     KeAcquireSpinLock (&BravoLock, &IrqlBravo);
-    
+
     // <<Various lines of code not shown>>
-    
+
     KeReleaseSpinLock (&BravoLock, IrqlBravo);
     KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
-    
+
     // <<Various lines of code not shown>>
 }
 ```
@@ -185,13 +184,13 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
         //
         KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
     }
-    
+
     // <<Various lines of code not shown>>
-    
+
     KeAcquireSpinLock (&BravoLock, &IrqlBravo);
 
     // <<Various lines of code not shown>>
-    
+
     if (bSomeCondition == TRUE)
     { 
         //
@@ -200,12 +199,12 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
         KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
 
         // <<Various lines of code not shown>>
-        
+
         KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
     }
-    
+
     // <<Various lines of code not shown>>
-    
+
     KeReleaseSpinLock (&BravoLock, IrqlBravo);
 
     if (bSomeCondition == FALSE)
@@ -215,7 +214,7 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
         //
         KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
     }
-    
+
     // <<Various lines of code not shown>>
 }
 ```
@@ -233,9 +232,9 @@ For more information about spin locks and other synchronization techniques, see 
 
 [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326)
 
- 
 
- 
+
+
 
 
 

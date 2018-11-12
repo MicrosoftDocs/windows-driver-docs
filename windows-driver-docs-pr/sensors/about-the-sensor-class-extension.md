@@ -16,9 +16,9 @@ To make it easier to write a device driver that exposes a sensor to Windows (and
 
 -   Provides a standard way to retrieve data from the driver and to raise event notifications through the API layers.
 
- 
+ 
 
- 
+ 
 
 
 

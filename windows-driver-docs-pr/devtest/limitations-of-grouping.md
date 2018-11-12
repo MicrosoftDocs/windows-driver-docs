@@ -30,9 +30,9 @@ You cannot remove a trace session group from the [Trace Session List](trace-sess
 
 Because the arrival of trace messages in the Trace Session List is affected by the message rate, the buffer size, and the flush timer for each trace session, trace messages from different sessions that arrive at the same time might actually have occurred at quite different times. For a more accurate view, combine the output files for each trace session and sort them by the **System Time** column.
 
- 
+ 
 
- 
+ 
 
 
 

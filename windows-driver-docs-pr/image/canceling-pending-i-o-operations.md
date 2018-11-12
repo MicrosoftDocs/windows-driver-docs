@@ -17,9 +17,9 @@ WIA applications can use the **IWiaItemExtras::CancelPendingIO** method (describ
 
 The **IWiaItemExtras::CancelPendingIO** method can be called at any time. It is recommended that all kernel-mode read or write operations use [overlapped I/O](https://msdn.microsoft.com/library/windows/hardware/ff546911). This allows an immediate cancellation to occur. WIA applications that are experiencing unexpected delays, or appear to be hanging, can call the **IWiaItemExtras::CancelPendingIO** method to attempt to return control back to the end user.
 
- 
+ 
 
- 
+ 
 
 
 

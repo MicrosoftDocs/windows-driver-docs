@@ -28,7 +28,7 @@ This property initializes the [**WIA\_DPA\_FIRMWARE\_VERSION**](https://msdn.mic
 
 **Note**   Minidrivers that use *WSDScan.sys* can also retrieve the PNPX ID value by calling [**IStiDeviceControl::GetMyDevicePortName**](https://msdn.microsoft.com/library/windows/hardware/ff542944); the returned device path is the current PKEY\_PNPX\_ID.
 
- 
+ 
 
 For a description of these PKEY\_PNPX\_*Xxx* properties, see the [PNP-X Implementer's Guide](http://go.microsoft.com/fwlink/p/?linkid=242570).
 
@@ -40,9 +40,9 @@ The following code examples show how to open a Property Store for the current Fu
 
 [Code Example for Initializing Device Properties](code-example-for-initializing-device-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

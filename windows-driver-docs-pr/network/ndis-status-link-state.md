@@ -76,9 +76,9 @@ Requirements
 
 [OID\_GEN\_LINK\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569595)
 
- 
+ 
 
- 
+ 
 
 
 

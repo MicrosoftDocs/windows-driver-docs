@@ -51,9 +51,9 @@ With these conventions, a particular node on a particular data path can be ident
 
 For information about using the mixer API to traverse the nodes in a data path, see [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md).
 
- 
+ 
 
- 
+ 
 
 
 

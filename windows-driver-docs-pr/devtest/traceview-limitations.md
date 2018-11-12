@@ -49,9 +49,9 @@ TraceView automatically enables the trace providers that you add to the trace se
 To enable or disable providers, use a **traceview -enable** command. For more information about this command, see [**TraceView Control Commands**](traceview-control-commands.md).
 
 
- 
+ 
 
- 
+ 
 
 
 

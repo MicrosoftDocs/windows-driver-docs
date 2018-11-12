@@ -35,9 +35,9 @@ The topics in this section describe how a Windows Driver Frameworks (WDF) driver
 -   [Using an Interrupt to Wake a Device](using-an-interrupt-to-wake-a-device.md)
 -   [Handling Active-Both Interrupts](handling-active-both-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

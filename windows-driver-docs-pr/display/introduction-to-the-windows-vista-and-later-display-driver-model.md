@@ -22,9 +22,9 @@ The following topics introduce the display driver model for Windows Display Driv
 
 [Windows Display Driver Model (WDDM) Operation Flow](windows-vista-and-later-display-driver-model-operation-flow.md)
 
- 
+ 
 
- 
+ 
 
 
 

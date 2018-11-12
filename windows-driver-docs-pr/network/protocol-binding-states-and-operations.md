@@ -191,11 +191,11 @@ In the following table, the headings represent the binding states, and events ar
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  The events listed in the preceding table are the primary events for an NDIS protocol binding. Additional events will be added to this table as the information becomes available.
 
- 
+ 
 
 The primary binding events are defined as follows:
 
@@ -222,7 +222,7 @@ After the driver has completed all operations that are required to stop send and
 
 **Note**  The driver must wait for all its outstanding send requests to complete before the pause operation is complete.
 
- 
+ 
 
 <a href="" id="pnp-restart"></a>PnP Restart  
 After NDIS sends the protocol driver a network PnP restart event notification, the binding enters the Restarting state. For more information, see [Restarting a Binding](restarting-a-binding.md).
@@ -244,9 +244,9 @@ A protocol driver can initiate OID requests to set or query information in under
 
 [Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

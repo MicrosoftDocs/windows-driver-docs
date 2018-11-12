@@ -39,9 +39,9 @@ All framework objects can have a parent object. The framework designates a defau
 
 For an overview of all of the objects that are defined by WDF, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

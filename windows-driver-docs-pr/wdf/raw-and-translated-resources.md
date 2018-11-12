@@ -33,9 +33,9 @@ If a device's translated resource list contains a resource with the **Type** mem
 
 For more information about mapping bus-relative addresses, see [Mapping Bus-Relative Addresses to Virtual Addresses](https://msdn.microsoft.com/library/windows/hardware/ff554399).
 
- 
+ 
 
- 
+ 
 
 
 

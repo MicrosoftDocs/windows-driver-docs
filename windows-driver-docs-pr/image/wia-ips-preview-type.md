@@ -54,11 +54,11 @@ The following table describes the constants that are valid with the WIA\_IPS\_PR
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   WIA\_IPS\_PREVIEW\_TYPE should describe only the [**WIA\_IPA\_DATATYPE**](wia-ipa-datatype.md) and [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md) properties.
 
- 
+ 
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 
 [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md)
 
- 
+ 
 
- 
+ 
 
 
 

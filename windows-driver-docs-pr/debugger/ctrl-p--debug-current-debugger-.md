@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **CTRL+P** command is obsolete and has been replaced by [**CTRL+\\**](ctrl--.md) and [**CTRL+ALT+\\**](ctrl-alt--.md).
 
- 
+ 
 
- 
+ 
 
 
 

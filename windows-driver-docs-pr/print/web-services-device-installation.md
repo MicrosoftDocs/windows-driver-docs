@@ -20,9 +20,9 @@ For an example of device enumeration and pairing that uses **Windows.Devices.Enu
 
 For more information, see the [Enumerate devices over a network](https://msdn.microsoft.com/windows/uwp/devices-sensors/enumerate-devices-over-a-network) article in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

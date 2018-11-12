@@ -40,7 +40,7 @@ An application can read WIA\_IPA\_MIN\_BUFFER\_SIZE to determine the driver-spec
 
 **Note**   The value that the WIA\_IPA\_MIN\_BUFFER\_SIZE property contains is the minimum amount of data that an application can request at any given time. The larger the buffer size, the larger the requests to the device will be. This larger buffer size can make the device appear slow and unresponsive, can slow the overall computer performance, and can consume excessive resources. Buffer sizes that are too small can slow performance of the data transfer by requiring many smaller requests. Choose a reasonable buffer size by considering the typical size of a data request to your device, the number of requests, and the size of those requests.
 
- 
+ 
 
 Requirements
 ------------
@@ -67,9 +67,9 @@ Requirements
 
 [**WIA\_IPA\_BUFFER\_SIZE**](wia-ipa-buffer-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

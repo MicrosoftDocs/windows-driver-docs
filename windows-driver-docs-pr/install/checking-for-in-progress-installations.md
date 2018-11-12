@@ -67,9 +67,9 @@ Use of this code is based on the premise that if a platform does not support **C
 
 For a sample usage of this code, see the toaster installation package under the *src\\general\\toaster* subdirectory of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

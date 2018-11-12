@@ -18,11 +18,11 @@ At a minimum, you will need the Direct X Direct Development Kit (DDK) header fil
 
 **Note**   When testing your control panel, make sure to test it on a system whose primary display is set to a resolution of 640 x 480 pixels. Make sure that all the controls are still visible at this reduced resolution.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

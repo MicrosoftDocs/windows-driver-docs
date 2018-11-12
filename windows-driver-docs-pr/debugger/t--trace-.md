@@ -74,7 +74,7 @@ Specifies a debugger command to execute after the trace is performed. This comma
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -93,9 +93,9 @@ You can use the **t** command to trace instructions in ROM.
 
 When you are quickly tracing many times in WinDbg, the debugging information windows are updated after each trace. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the updating of these windows.
 
- 
+ 
 
- 
+ 
 
 
 

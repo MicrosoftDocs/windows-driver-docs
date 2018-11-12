@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 Opening an adapter underlying an intermediate driver is the same as opening an underlying adapter in a protocol driver. For more information about opening an underlying adapter in an intermediate driver, see [Binding to an Adapter](binding-to-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

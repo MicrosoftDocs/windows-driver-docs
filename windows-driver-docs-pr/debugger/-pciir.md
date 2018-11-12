@@ -47,7 +47,7 @@ The **!pciir** extension displays the contents of the hardware routing of periph
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer that does not have the Advanced Configuration and Power Interface (ACPI) enabled.
 
@@ -57,9 +57,9 @@ For similar information on any ACPI-enabled computer, use the [**!acpiirqarb**](
 
 For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

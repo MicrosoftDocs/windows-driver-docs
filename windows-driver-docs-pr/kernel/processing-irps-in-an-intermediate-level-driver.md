@@ -72,9 +72,9 @@ Assuming the I/O status block in DupIRP2 also is set with STATUS\_SUCCESS, the *
 
 If either set of lower-level drivers does not complete the mirror driver's IRPs successfully, the mirror driver's *IoCompletion* routine should log an error and attempt appropriate mirrored-data recovery. For more information, see [Logging Errors](logging-errors.md).
 
- 
+ 
 
- 
+ 
 
 
 

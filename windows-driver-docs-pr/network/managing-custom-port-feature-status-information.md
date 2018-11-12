@@ -20,7 +20,7 @@ After a successful return from this OID method request, the **InformationBuffer*
 
     **Note**  For a custom feature status, the **FeatureStatusType** member is set to **NdisSwitchPortPropertyTypeCustom**.
 
-     
+     
 
 -   An [**NDIS\_SWITCH\_PORT\_FEATURE\_STATUS\_CUSTOM**](https://msdn.microsoft.com/library/windows/hardware/hh598226) structure that contains the status information about a custom property assigned to an extensible switch port.
 
@@ -42,9 +42,9 @@ The extensible switch extension must follow these guidelines when it receives an
 
 For more information about how to define and register port feature status information, see [Custom Port Feature Status](custom-port-feature-status.md).
 
- 
+ 
 
- 
+ 
 
 
 

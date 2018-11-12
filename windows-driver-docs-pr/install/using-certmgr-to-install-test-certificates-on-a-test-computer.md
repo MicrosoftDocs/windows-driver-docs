@@ -30,9 +30,9 @@ The following CertMgr command adds the certificate in the certificate file *Cert
 CertMgr.exe /add CertificateFileName.cer /s /r localMachine trustedpublisher
 ```
 
- 
+ 
 
- 
+ 
 
 
 

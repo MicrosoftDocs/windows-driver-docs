@@ -15,7 +15,7 @@ This section provides implementation details about the Windows fusion sensor dri
 >[!NOTE]
 >Microsoft provides fusion driver binaries on some platforms and these cannot be replaced by partners.
 
- 
+ 
 
 The following diagram shows the sensor fusion software stack.
 
@@ -57,9 +57,9 @@ The following structures and enumerations are used by the fusion data part of th
 
 -   [Fusion sensor enumerations](https://go.microsoft.com/fwlink/p/?linkid=839352) and [Fusion sensor structures](https://go.microsoft.com/fwlink/p/?linkid=839355) provide information about the entire sensor fusion data structure, which include the attitude (in multiple formats) and the linear acceleration, and the compass data.
 -->
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ The following table describes the constants that are valid with [**WIA\_IPS\_PAG
 </tr>
 <tr class="even">
 <td><p>WIA_PAGE_CUSTOM</p></td>
-<td><p>The page size is defined by the values of the [<strong>WIA_DPS_PAGE_HEIGHT</strong>](wia-dps-page-height.md) and [<strong>WIA_DPS_PAGE_WIDTH</strong>](wia-dps-page-width.md) properties.</p></td>
+<td><p>The page size is defined by the values of the <a href="wia-dps-page-height.md" data-raw-source="[&lt;strong&gt;WIA_DPS_PAGE_HEIGHT&lt;/strong&gt;](wia-dps-page-height.md)"><strong>WIA_DPS_PAGE_HEIGHT</strong></a> and <a href="wia-dps-page-width.md" data-raw-source="[&lt;strong&gt;WIA_DPS_PAGE_WIDTH&lt;/strong&gt;](wia-dps-page-width.md)"><strong>WIA_DPS_PAGE_WIDTH</strong></a> properties.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_PAGE_LETTER</p></td>
@@ -63,7 +63,7 @@ The following table describes the constants that are valid with [**WIA\_IPS\_PAG
 </tbody>
 </table>
 
- 
+ 
 
 The value of the [**WIA\_IPS\_ORIENTATION**](wia-ips-orientation.md) property determines the orientation of the currently selected page. The WIA\_DPS\_PAGE\_WIDTH and WIA\_DPS\_PAGE\_HEIGHT properties report the page's dimensions, in thousandths of an inch (.001). These properties must have values that are equivalent to the [**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md) and [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md) properties, which contain the page's dimensions, in pixels.
 

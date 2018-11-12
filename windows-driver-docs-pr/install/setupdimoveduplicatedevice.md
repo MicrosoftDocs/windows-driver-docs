@@ -18,9 +18,9 @@ ms.date: 10/17/2018
 
 This function is obsolete and no longer supported in any version of the Microsoft Windows operating system.
 
- 
+ 
 
- 
+ 
 
 
 

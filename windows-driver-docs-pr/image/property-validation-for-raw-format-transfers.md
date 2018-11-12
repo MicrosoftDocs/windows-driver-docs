@@ -39,9 +39,9 @@ Must be updated by the minidriver according to the WIA\_IPA\_FORMAT and WIA\_IPA
 <a href="" id="wia-ipa-item-size"></a>[**WIA\_IPA\_ITEM\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551594)  
 Must be zero.
 
- 
+ 
 
- 
+ 
 
 
 

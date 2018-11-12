@@ -22,9 +22,9 @@ DirectX 8.0 includes support for programmable vertex and pixel shaders. The foll
 
 [Pixel Shaders](pixel-shaders.md)
 
- 
+ 
 
- 
+ 
 
 
 

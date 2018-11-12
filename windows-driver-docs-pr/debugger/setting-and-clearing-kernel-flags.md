@@ -30,9 +30,9 @@ Kernel settings take precedence over registry settings during run time, but when
 
 3.  When you have selected or cleared all of the flags that you want, click **Apply**.
 
- 
+ 
 
- 
+ 
 
 
 

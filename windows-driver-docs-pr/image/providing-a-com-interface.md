@@ -25,9 +25,9 @@ The minidriver exports these interface identifiers in response to the WIA servic
 
 For examples of how these interfaces are implemented, see the *wiascanr* scanner sample minidriver files *wiascanr.h*, *iwiaminidrv.cpp* and *istiusd.cpp or s*ee the *wiacam* camera sample minidriver files *IWiaMiniDrv.cpp* and *IStiUSD.cpp*.
 
- 
+ 
 
- 
+ 
 
 
 

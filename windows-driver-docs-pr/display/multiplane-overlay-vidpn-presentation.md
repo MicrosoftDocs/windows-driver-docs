@@ -23,9 +23,9 @@ When [**DXGKARG\_SETVIDPNSOURCEVISIBILITY**](https://msdn.microsoft.com/library/
 <span id="DxgkDdiSetVidPnSourceAddress"></span><span id="dxgkddisetvidpnsourceaddress"></span><span id="DXGKDDISETVIDPNSOURCEADDRESS"></span>[*DxgkDdiSetVidPnSourceAddress*](https://msdn.microsoft.com/library/windows/hardware/ff560767)  
 When this function is called, the driver should disable all non-primary overlay planes. The primary surface is flipped using [*DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay*](https://msdn.microsoft.com/library/windows/hardware/hh780298) when in multiplane overlay mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -98,9 +98,9 @@ typedef struct D3D11_1DDI_DEVICEFUNCS {
 } D3D11DDI_DEVICEFUNCS;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ Display drivers and hardware are not required to support multiplane overlays. Ho
 
     5.  Black color must be displayed at the area where not covered by any of destination rectangles from any layers. Hardware can assume that there is a conceptual virtual bottom-most black layer that is the size of the screen.
 
- 
+ 
 
- 
+ 
 
 
 

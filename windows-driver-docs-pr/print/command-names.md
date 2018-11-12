@@ -32,9 +32,9 @@ The following topics list all of the defined command names:
 
 [Vector Printing Commands](vector-printing-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

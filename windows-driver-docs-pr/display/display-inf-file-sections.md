@@ -91,20 +91,20 @@ The value of the **CapabilityOverride** registry entry is a bitwise OR of one or
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
-<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to [<strong>DdGetDriverInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549404)<em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549404" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549404)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
-<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to [<strong>DrvSetPixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556285), [<strong>DrvDescribePixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556190), and [<strong>DrvSwapBuffers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556322) from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556285" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556285)"><strong>DrvSetPixelFormat</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556190" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556190)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556322" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556322)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10</p></td>
-<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to [<strong>DrvEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556217) and [<strong>DrvDrawEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556203) from reaching the driver.</p></td>
+<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556217" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556217)"><strong>DrvEscape</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556203" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556203)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For display drivers that are shipped with Windows, **CapabilityOverride** is typically set to 0x8, which disables OpenGL. Note that it is not necessary to set the 0x10 flag to disable OpenGL, and you should not set the 0x10 flag unless you intend to disable all escapes.
 
@@ -158,7 +158,7 @@ The *regstr.h* header file, which is shipped with the Windows Driver Kit (WDK), 
 </tbody>
 </table>
 
- 
+ 
 
 Two types of settings exist: global and platform-specific. The registry contains the global entries at the following location:
 
@@ -190,7 +190,7 @@ The preceding entry indicates that the subkey identified by the string following
 
 **Important**   The bytes in the value entry are in the opposite order from those of the AGP\_FLAG\_NO\_SBA\_ENABLE flag's definition in the preceding table.
 
- 
+ 
 
 Suppose you determine that AGP 4X is broken on every chipset for this same device. To indicate this fact, add a second entry to the Nuclear3D\_Reg section:
 
@@ -202,9 +202,9 @@ HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00
 
 The second entry in the preceding code indicates that the subkey identified by the string following HKLM is to be added to the registry, under the HKEY\_LOCAL\_MACHINE root. As in the previous entry, the value name associated with this subkey is a string that is composed of the device's DeviceID and VendorID. The flag value is also the same. The value entry is AGP\_FLAG\_NO\_4X\_RATE, which disables the AGP 4X transfer rate. Notice that, as before, the bytes in this value entry are in the opposite order as those of the flag's value in the preceding table.
 
- 
+ 
 
- 
+ 
 
 
 

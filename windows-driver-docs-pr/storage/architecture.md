@@ -99,7 +99,7 @@ The advantages and disadvantages of using a silo driver versus leaving the silo 
 </tbody>
 </table>
 
- 
+ 
 
 These considerations may inform the vendor's decision about whether to deploy a silo driver for their particular silo. In some cases, remaining with driverless, raw silo access is sufficient for a single client application that has detailed knowledge of the operation of that silo. To make this approach suitable, vendors must also ensure that simultaneous access from multiple applications does not pose a problem for their devices.
 

@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentDescription</strong>](documentdescription.md)</p></td>
+<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,9 +71,9 @@ The WSD Scan Service must supply a value to store the document on the client.
 
 [**DocumentDescription**](documentdescription.md)
 
- 
+ 
 
- 
+ 
 
 
 

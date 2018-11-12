@@ -144,9 +144,9 @@ Note, that if all that is needed are bus, function, and device numbers, it is us
     DeviceNumber = (USHORT)(((propertyAddress) >> 16) & 0x0000FFFF);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ The *target computer* is the system on which the driver you are testing runs. It
 
 The debugger running on the host computer controls the target computer through the debugging connection you establish.
 
- 
+ 
 
- 
+ 
 
 
 

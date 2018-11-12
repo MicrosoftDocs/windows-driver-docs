@@ -33,9 +33,9 @@ GPD files are made up of entries, using the GPD language, that describe device-s
 
 [Standard Variables](standard-variables.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED is used to indicate that the fi
 |---------|
 | Adapter |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +49,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

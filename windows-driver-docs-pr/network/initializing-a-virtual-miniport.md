@@ -25,9 +25,9 @@ NDIS passes initialization parameters to *MiniportInitializeEx* in an [**NDIS\_M
 
 In *MiniportInitializeEx*, the intermediate driver performs the operations required to initialize a virtual miniport. This initialization is similar to the initialization of any other miniport adapter.
 
- 
+ 
 
- 
+ 
 
 
 

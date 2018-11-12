@@ -55,15 +55,15 @@ Resolutions="75, 100, 300, 600, 1200"
 **Note**   Remember to put a space after each comma.
 It is possible to use the **IWiaItem::DeviceDlg** method (described in the Microsoft Windows SDK documentation) to get user input on selecting a "custom" resolution.
 
- 
+ 
 
 ### ADF
 
 Only simple Automatic Document Feeder (ADF) control is supported.
 
- 
+ 
 
- 
+ 
 
 
 

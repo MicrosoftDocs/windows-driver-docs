@@ -31,9 +31,9 @@ The TraceView window and the TraceView command-line interface operate independen
 
 When you submit a TraceView command in a Command Prompt window, TraceView opens a new Command Prompt windows for its output. You cannot suppress the additional windows.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,9 +46,9 @@ The driver creates and works with heads as described in the following sequence:
 
     The application can either allocate a Z buffer with each head or allocate one Z buffer to use with each head sequentially. In the former case, the runtime calls the driver's [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) function on each head (master and subordinates) as described in step one. In the latter case, the runtime calls the driver's *DdCreateSurface* function only on the master head. In either case, the runtime calls the driver's [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) function to supply handles to all Z buffers that are unique across all heads in the group.
 
- 
+ 
 
- 
+ 
 
 
 

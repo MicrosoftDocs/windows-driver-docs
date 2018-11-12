@@ -47,13 +47,13 @@ The KSPROPERTY\_CAMERACONTROL\_PANTILT\_RELATIVE property specifies horizontal o
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_CAMERACONTROL_NODE_S2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564421) or [<strong>KSPROPERTY_CAMERACONTROL_S2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564451) depending on whether the request is for a filter or a node</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564421" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564421)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S2</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564451" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564451)"><strong>KSPROPERTY_CAMERACONTROL_S2</strong></a> depending on whether the request is for a filter or a node</p></td>
 <td><p>Pair of LONG integers</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a pair of LONG integers that specify a camera's relative pan and tilt settings. The size of the value represents the desired pan speed; a higher value represents a higher speed.
 
@@ -84,7 +84,7 @@ The property value (operation data) is a pair of LONG integers that specify a ca
 </tbody>
 </table>
 
- 
+ 
 
 The size of the value represents the desired tilt speed; a higher value represents a higher speed.
 
@@ -115,7 +115,7 @@ The size of the value represents the desired tilt speed; a higher value represen
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -157,9 +157,9 @@ Requirements
 
 [**KSPROPERTY\_CAMERACONTROL\_NODE\_S2**](https://msdn.microsoft.com/library/windows/hardware/ff564421)
 
- 
+ 
 
- 
+ 
 
 
 

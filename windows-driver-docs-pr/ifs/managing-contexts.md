@@ -107,24 +107,24 @@ The following callback routines are stored in the [**FLT\_REGISTRATION**](https:
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>ContextAllocateCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_CONTEXT_ALLOCATE_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551075)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551075" data-raw-source="[&lt;strong&gt;PFLT_CONTEXT_ALLOCATE_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551075)"><strong>PFLT_CONTEXT_ALLOCATE_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>ContextCleanupCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_CONTEXT_CLEANUP_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551078)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551078" data-raw-source="[&lt;strong&gt;PFLT_CONTEXT_CLEANUP_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551078)"><strong>PFLT_CONTEXT_CLEANUP_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>ContextFreeCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_CONTEXT_FREE_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551082)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551082" data-raw-source="[&lt;strong&gt;PFLT_CONTEXT_FREE_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551082)"><strong>PFLT_CONTEXT_FREE_CALLBACK</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

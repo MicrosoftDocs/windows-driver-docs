@@ -17,7 +17,7 @@ After the miniport driver has enabled NDIS selective suspend and registered its 
 
     **Note**  NDIS monitors only those object identifier (OID) requests to the underlying miniport driver that are not handled directly by NDIS.
 
-     
+     
 
 NDIS determines that the network adapter is idle if it does not detect any activity on the adapter for an idle time-out period. The duration of this time-out period is specified by the value of the **\*SSIdleTimeout** standardized INF keyword. For more information about this keyword, see [Standardized INF Keywords for NDIS Selective Suspend](standardized-inf-keywords-for-ndis-selective-suspend.md).
 
@@ -31,9 +31,9 @@ For more information about how NDIS cancels the idle notification, see [Cancelin
 
 For more information about how the miniport driver completes the idle notification, see [Completing the NDIS Selective Suspend Idle Notification](completing-the-ndis-selective-suspend-idle-notification.md).
 
- 
+ 
 
- 
+ 
 
 
 

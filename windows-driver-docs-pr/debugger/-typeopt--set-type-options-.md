@@ -89,16 +89,16 @@ Causes the debugger to choose the matching symbol with the largest size when the
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Without any arguments, **.typeopt** displays the current symbol options.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,9 +15,9 @@ The **RemoveiSNSServer** method removes an iSNS server from the list of iSNS ser
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support this method.
 
- 
+ 
 
- 
+ 
 
 
 

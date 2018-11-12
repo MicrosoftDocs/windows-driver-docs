@@ -78,9 +78,9 @@ UmdfLibraryVersion=$UMDFVERSION$
 
 [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) also supports a -*u* option to replace UMDF string variables in an INX file. If your driver package includes both UMDF-based drivers and KMDF-based drivers, you can use the -*k* and -*u* options with a single Stampinf command and a single INX file.
 
- 
+ 
 
- 
+ 
 
 
 

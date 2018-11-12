@@ -52,9 +52,9 @@ Requirements
 
 [**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791)
 
- 
+ 
 
- 
+ 
 
 
 

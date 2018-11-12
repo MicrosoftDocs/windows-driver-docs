@@ -33,9 +33,9 @@ When an IRP is canceled, AVStream calls the cancellation callbacks for all unloc
 
 Unlock the leading and trailing edge stream pointers only when they are not in use.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ Properties in this property set correspond to events in the KSEVENTSETID\_BdaCAE
 
 [KSEVENTSETID\_BdaCAEvent](kseventsetid-bdacaevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

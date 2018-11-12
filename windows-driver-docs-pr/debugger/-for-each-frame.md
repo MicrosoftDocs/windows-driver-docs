@@ -52,7 +52,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +73,9 @@ The following command displays all local variables for the current stack.
 !for_each_frame !for_each_local dt @#Local
 ```
 
- 
+ 
 
- 
+ 
 
 
 

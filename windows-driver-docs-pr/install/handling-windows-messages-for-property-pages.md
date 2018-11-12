@@ -70,9 +70,9 @@ When it receives the PSN_APPLY notification, the provider must do the following:
 
 The property sheet sends a PSN_RESET notification message when the user clicks **Cancel**. In response to this message, the dialog box procedure should discard any changes that were made by the user.
 
- 
+ 
 
- 
+ 
 
 
 

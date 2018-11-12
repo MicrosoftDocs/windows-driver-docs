@@ -22,9 +22,9 @@ Video capture minidrivers are required to implement the following property:
 
 There is no DirectShow interface that provides access to this property set.
 
- 
+ 
 
- 
+ 
 
 
 

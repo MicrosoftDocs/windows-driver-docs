@@ -171,9 +171,9 @@ A quick inspection reveals the cause of the problem: The program tries to write 
 *((PCHAR)Block + 0x100) = 0;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

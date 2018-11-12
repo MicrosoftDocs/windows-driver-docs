@@ -15,9 +15,9 @@ For more information about the DID Profile, refer to the [Bluetooth Device Ident
 
 For information about supporting Bluetooth Low Energy (LE) Device IDs, refer to the [Device Information Service version 1.1](http://go.microsoft.com/fwlink/p/?linkid=242771).
 
- 
+ 
 
- 
+ 
 
 
 

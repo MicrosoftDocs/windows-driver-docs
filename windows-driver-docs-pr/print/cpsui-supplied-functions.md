@@ -38,9 +38,9 @@ For a detailed description of when these functions are called, see [Using CPSUI 
 
 Two additional CPSUI-supplied functions, [**SetCPSUIUserData**](https://msdn.microsoft.com/library/windows/hardware/ff562624) and [**GetCPSUIUserData**](https://msdn.microsoft.com/library/windows/hardware/ff549922), can be used by application-supplied dialog box procedures to store and retrieve an application-supplied value.
 
- 
+ 
 
- 
+ 
 
 
 

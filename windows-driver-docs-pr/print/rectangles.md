@@ -22,9 +22,9 @@ To describe a rectangle in a GPD file, use the RECT keyword. The format is:
 
 where *left*, *top*, *right*, and *bottom* represent [numeric values](numeric-values.md), in [master units](master-units.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -75,9 +75,9 @@ An *enlistment* is an association between a resource manager and a transaction. 
 <a href="" id="ktm-term-transaction-processing-system"></a>**transaction processing system**  
 A *transaction processing system* (TPS) is a collection of a transaction manager, one or more resource managers, one or more log streams, and one or more transactional clients that access the resource managers' resources.
 
- 
+ 
 
- 
+ 
 
 
 

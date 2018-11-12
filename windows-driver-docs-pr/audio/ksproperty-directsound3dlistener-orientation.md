@@ -47,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ORIENTATION property specifies the orient
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSDS3D_LISTENER_ORIENTATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537119)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537119" data-raw-source="[&lt;strong&gt;KSDS3D_LISTENER_ORIENTATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537119)"><strong>KSDS3D_LISTENER_ORIENTATION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSDS3D\_LISTENER\_ORIENTATION that specifies the listener's orientation.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSDS3D\_LISTENER\_ORIENTATION**](https://msdn.microsoft.com/library/windows/hardware/ff537119)
 
- 
+ 
 
- 
+ 
 
 
 

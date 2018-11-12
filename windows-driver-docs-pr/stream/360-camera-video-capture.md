@@ -194,7 +194,6 @@ MediaDescription="Contoso Camera Sample Device MFT Installation Media"
 SampleDeviceMFT.CLSID = "{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}" ; replace with your Device MFT COM object's CoClass ID
 SampleDeviceMFT.FriendlyName = "Contoso Camera Device MFT"
 KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
-
 ```
 
 ## Example frame flow with a UVC device

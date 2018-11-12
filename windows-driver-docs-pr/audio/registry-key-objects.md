@@ -39,20 +39,20 @@ When querying a registry key object for information about a registry entry under
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>KeyBasicInformation</strong></p></td>
-<td align="left"><p>[<strong>KEY_BASIC_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553355)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553355" data-raw-source="[&lt;strong&gt;KEY_BASIC_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553355)"><strong>KEY_BASIC_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>KeyFullInformation</strong></p></td>
-<td align="left"><p>[<strong>KEY_FULL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553367)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553367" data-raw-source="[&lt;strong&gt;KEY_FULL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553367)"><strong>KEY_FULL_INFORMATION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>KeyNodeInformation</strong></p></td>
-<td align="left"><p>[<strong>KEY_NODE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553392)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553392" data-raw-source="[&lt;strong&gt;KEY_NODE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553392)"><strong>KEY_NODE_INFORMATION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 To open an existing registry key or create a new registry key, an adapter driver can call the [**PcNewRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff537716) function, and a miniport driver can call the port driver's [**IPort::NewRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff536945) method. The two calls are similar, except that the **PcNewRegistryKey** function requires two additional parameters, *DeviceObject* and *SubDevice*. For more information, see **PcNewRegistryKey**.
 
@@ -76,9 +76,9 @@ The [IRegistryKey](https://msdn.microsoft.com/library/windows/hardware/ff536965)
 
 [**IRegistryKey::SetValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff536975)
 
- 
+ 
 
- 
+ 
 
 
 

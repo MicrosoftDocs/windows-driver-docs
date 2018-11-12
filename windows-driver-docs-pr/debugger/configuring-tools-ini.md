@@ -38,7 +38,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>$u0:</strong> <em>value</em> ... <strong>$u9:</strong> <em>value</em></p></td>
-<td align="left"><p>Assign values to fixed-name aliases. You can specify numeric values <em>n</em> or <em>0xn</em> or any other string. See [Using Aliases](using-aliases.md) for details. No command-line equivalent.</p></td>
+<td align="left"><p>Assign values to fixed-name aliases. You can specify numeric values <em>n</em> or <em>0xn</em> or any other string. See <a href="using-aliases.md" data-raw-source="[Using Aliases](using-aliases.md)">Using Aliases</a> for details. No command-line equivalent.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>DebugChildren:</strong> <em>flag</em></p></td>
@@ -50,17 +50,17 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tr>
 <tr class="even">
 <td align="left"><p><strong>IniFile:</strong> <em>file</em></p></td>
-<td align="left"><p>Specifies the name of the script file that CDB or KD takes commands from at startup. The default is the ntsd.ini file in the current directory. Command-line equivalent is <strong>-cf</strong>. For details, see [Using Script Files](using-script-files.md).</p></td>
+<td align="left"><p>Specifies the name of the script file that CDB or KD takes commands from at startup. The default is the ntsd.ini file in the current directory. Command-line equivalent is <strong>-cf</strong>. For details, see <a href="using-script-files.md" data-raw-source="[Using Script Files](using-script-files.md)">Using Script Files</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>LazyLoad:</strong> <em>flag</em></p></td>
 <td align="left"><p><strong>TRUE</strong> or <strong>FALSE</strong>. If <strong>TRUE</strong>, CDB performs lazy symbol loading; that is, symbols are not loaded until required. Command-line equivalent is <strong>-s</strong>.</p>
-<p>For details, and other methods of setting this option, see [Deferred Symbol Loading](deferred-symbol-loading.md).</p></td>
+<p>For details, and other methods of setting this option, see <a href="deferred-symbol-loading.md" data-raw-source="[Deferred Symbol Loading](deferred-symbol-loading.md)">Deferred Symbol Loading</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>SetDll:</strong> <em>filename</em></p></td>
 <td align="left"><p>Set extension DLL. The .dll filename extension should be omitted. Default is userexts.dll. Command-line equivalent is <strong>-a</strong>.</p>
-<p>For details, and other methods of setting this default, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).</p></td>
+<p>For details, and other methods of setting this default, see <a href="loading-debugger-extension-dlls.md" data-raw-source="[Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md)">Loading Debugger Extension DLLs</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>StopFirst:</strong> <em>flag</em></p></td>
@@ -81,7 +81,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 <em>n</em>: Exception <em>n</em> (decimal)
 <em>0xn</em>: Exception <em>0xn</em> (hexadecimal)
 (other): Event code
-<p>See [Controlling Exceptions and Events](controlling-exceptions-and-events.md) for details of this process and for other methods of controlling these settings.</p></td>
+<p>See <a href="controlling-exceptions-and-events.md" data-raw-source="[Controlling Exceptions and Events](controlling-exceptions-and-events.md)">Controlling Exceptions and Events</a> for details of this process and for other methods of controlling these settings.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>VerboseOutput:</strong> <em>flag</em></p></td>
@@ -93,11 +93,11 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tr>
 <tr class="even">
 <td align="left"><p><strong>srcopt:</strong> <em>options</em></p></td>
-<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see <strong>[l+, l- (Set Source Options)](l---l---set-source-options-.md)</strong>.</p></td>
+<td align="left"><p>Sets the source line options that control source display and program stepping options. For more information see <strong><a href="l---l---set-source-options-.md" data-raw-source="[l+, l- (Set Source Options)](l---l---set-source-options-.md)">l+, l- (Set Source Options)</a></strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>srcpath:</strong> <em>directory</em></p></td>
-<td align="left"><p>Sets the source file search path. For more information see <strong>[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)</strong>.</p></td>
+<td align="left"><p>Sets the source file search path. For more information see <strong><a href="-srcpath---lsrcpath--set-source-path-.md" data-raw-source="[.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)">.srcpath, .lsrcpath (Set Source Path)</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>enable_unicode:</strong> <em>flag</em></p></td>
@@ -120,7 +120,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 </tbody>
 </table>
 
- 
+ 
 
 A sample \[NTSD\] section in the tools.ini file follows:
 
@@ -132,9 +132,9 @@ $u0: VeryLongName
 VerboseOutput:true
 ```
 
- 
+ 
 
- 
+ 
 
 
 

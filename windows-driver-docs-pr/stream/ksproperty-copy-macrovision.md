@@ -47,13 +47,13 @@ The KSPROPERTY\_COPY\_MACROVISION property indicates the Macrovision level of th
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KS_COPY_MACROVISION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567316)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567316" data-raw-source="[&lt;strong&gt;KS_COPY_MACROVISION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567316)"><strong>KS_COPY_MACROVISION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KS\_COPY\_MACROVISION structure the specifies the Macrovision level of the data stream.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**KS\_COPY\_MACROVISION**](https://msdn.microsoft.com/library/windows/hardware/ff567316)
 
- 
+ 
 
- 
+ 
 
 
 

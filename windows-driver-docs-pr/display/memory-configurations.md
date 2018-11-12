@@ -32,9 +32,9 @@ The following sections contain three different types of memory configurations: [
 
 Alignment requirements as described in the [Memory Heap Allocation](memory-heap-allocation.md) topic can apply to any of the three types of memory configuration. Linear memory is generally used more efficiently by the application than rectangular memory because the rows are stored sequentially. Any location can be accessed easily by moving forward or backward along this linear range.
 
- 
+ 
 
- 
+ 
 
 
 

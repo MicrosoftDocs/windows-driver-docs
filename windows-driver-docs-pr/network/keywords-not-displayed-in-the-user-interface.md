@@ -34,11 +34,11 @@ The type of the device. The default value is zero, which indicates a standard ne
 
 **Note**  Windows Vista automatically identifies and monitors the networks a computer connects to. If the NDIS\_DEVICE\_TYPE\_ENDPOINT flag is set, the device is an endpoint device and is not a connection to a true external network. Consequently, Windows ignores the endpoint device when it identifies networks. The Network Awareness APIs indicate that the device does not connect the computer to a network. For end users in this situation, the Network and Sharing Center and the network icon in the notification area do not show the NDIS endpoint device as connected. However, the connection is shown in the Network Connections Folder.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

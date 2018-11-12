@@ -13,9 +13,9 @@ The **AddRADIUSServer** method adds a RADIUS server to the list of RADIUS server
 
 This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **AddRADIUSServer** method, see the member descriptions for the [**AddRADIUSServer\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff550134) and [**AddRADIUSServer\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550135) structures.
 
- 
+ 
 
- 
+ 
 
 
 

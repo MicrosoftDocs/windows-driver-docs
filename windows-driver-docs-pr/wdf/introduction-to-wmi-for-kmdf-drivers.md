@@ -60,9 +60,9 @@ Executes a driver-supplied method, at the request of a client.
 
 The FIREFLY, PCIDRV, and Toaster [sample drivers](sample-kmdf-drivers.md) are WMI data providers.
 
- 
+ 
 
- 
+ 
 
 
 

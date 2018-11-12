@@ -254,9 +254,9 @@ These interfaces add the following capabilities to UMDF-based drivers:
 
 -   Enhanced access to the [registry](https://msdn.microsoft.com/library/windows/hardware/ff561381)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ When you create a new action interface, you should design your object model with
 
 5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204).
 
- 
+ 
 
- 
+ 
 
 
 

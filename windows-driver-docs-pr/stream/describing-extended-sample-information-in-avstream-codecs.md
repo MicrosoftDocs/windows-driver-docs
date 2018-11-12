@@ -20,9 +20,9 @@ Encoders should include extended sample information in the extended KSSTREAM\_HE
 
 Surface stride is specified in KS\_FRAME\_INFO's lSurfacePitch member (union with **Reserved1** member). For more information about surface stride, see [Handling Stride in AVStream Codecs](handling-stride-in-avstream-codecs.md).
 
- 
+ 
 
- 
+ 
 
 
 

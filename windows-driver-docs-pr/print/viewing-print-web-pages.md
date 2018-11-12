@@ -62,9 +62,9 @@ The following figure illustrates the process by which a printer URL is sent from
 
 ![diagram illustrating sending a print url from the client to the print server](images/prnturl.png)
 
- 
+ 
 
- 
+ 
 
 
 

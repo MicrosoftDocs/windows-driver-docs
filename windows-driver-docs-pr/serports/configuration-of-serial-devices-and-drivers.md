@@ -30,9 +30,9 @@ This section includes the following topics about the configuration of serial dev
 
 [Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface](configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

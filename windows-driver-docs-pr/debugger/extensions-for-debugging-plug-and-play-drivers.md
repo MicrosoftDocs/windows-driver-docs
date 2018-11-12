@@ -213,9 +213,9 @@ Displays the PnP device event queue.
 [**!rellist**](-rellist.md)  
 Displays a PnP relation list and any related CM\_RESOURCE\_LIST and IO\_RESOURCE\_LIST structures.
 
- 
+ 
 
- 
+ 
 
 
 

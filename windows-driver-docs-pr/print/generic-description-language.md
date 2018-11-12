@@ -59,9 +59,9 @@ The following sections provide more information about GDL:
 
 [GDL Examples](gdl-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

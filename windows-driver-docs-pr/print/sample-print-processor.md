@@ -19,11 +19,11 @@ Source code for Genprint.dll, a sample print processor that accepts [EMF data](e
 
 **Note**   When you compile this print processor, set the Unicode flag with \#define UNICODE.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

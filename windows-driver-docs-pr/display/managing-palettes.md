@@ -22,9 +22,9 @@ As described in [GDI Support for Graphics Drivers](gdi-support-for-graphics-driv
 
 Drivers that support settable palettes also must support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function. This function is used exclusively by display drivers.
 
- 
+ 
 
- 
+ 
 
 
 

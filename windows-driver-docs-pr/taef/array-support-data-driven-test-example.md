@@ -224,9 +224,9 @@ This command runs the data driven tests with index \#0 and \#3 in both of the ab
 
 You can build more complex queries which say, for example, select only the test in which the **color** array contains **white** and the **color** array contains **black**, which would only select data driven tests with index \#3. As an exercise, try writing and executing this query yourself.
 
- 
+ 
 
- 
+ 
 
 
 

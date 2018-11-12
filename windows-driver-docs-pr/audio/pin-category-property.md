@@ -72,7 +72,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="output_terminal_types"></span><span id="OUTPUT_TERMINAL_TYPES"></span> Output Terminal Types
 
@@ -119,7 +119,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="bidirectional_terminal_types"></span><span id="BIDIRECTIONAL_TERMINAL_TYPES"></span> Bidirectional Terminal Types
 
@@ -158,7 +158,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="telephony_terminal_types"></span><span id="TELEPHONY_TERMINAL_TYPES"></span> Telephony Terminal Types
 
@@ -189,7 +189,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="external_terminal_types"></span><span id="EXTERNAL_TERMINAL_TYPES"></span> External Terminal Types
 
@@ -236,7 +236,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="embedded_function_terminal_types"></span><span id="EMBEDDED_FUNCTION_TERMINAL_TYPES"></span> Embedded Function Terminal Types
 
@@ -331,7 +331,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 For more information about USB terminal type identifiers, see the *Universal Serial Bus Device Class Definition for Terminal Types* (release 1.0), which is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
@@ -347,9 +347,9 @@ In Windows Vista and later, the operating system uses pin categories to associat
 
 In Windows XP, Windows 2000, and Windows Millennium Edition, the operating system makes only limited use of pin categories. The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) acts on behalf of the mixer API to translate pin category GUIDs into MIXERLINE\_COMPONENTTYPE\_*XXX* values for use by client applications. WDMAud recognizes only a subset of the pin category GUIDs that appear in the preceding six tables. In addition, for historical reasons, WDMAud recognizes two pin category GUIDs, KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, that do not appear in the tables. For more information about the translation of pin categories to mixer lines, see [Topology Pins](topology-pins.md). For information about the mixer API, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ Requirements
 
 [**HS\_HOST\_ALLOCATE\_MEMORY**](hs-host-allocate-memory.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ This flow diagram applies generically to all NDIS OIDs and callbacks to miniport
 
 [Reset (surprise remove): steps 15-20](wdi-reset--surprise-remove---steps-15-20.md)
 
- 
+ 
 
- 
+ 
 
 
 

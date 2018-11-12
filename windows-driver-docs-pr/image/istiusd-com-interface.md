@@ -64,9 +64,9 @@ Specifies an event handle that the minidriver should use to inform the caller of
 <a href="" id="istiusd--unlockdevice"></a>[**IStiUSD::UnLockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543843)  
 Unlocks a device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRE
 
 [Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ The following example shows that the debugee machine has a Checked Ndis build.
 Checked Ndis
 ```
 
- 
+ 
 
- 
+ 
 
 
 

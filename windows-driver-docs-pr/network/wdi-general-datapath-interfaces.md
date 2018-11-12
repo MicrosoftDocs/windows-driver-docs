@@ -30,9 +30,9 @@ For datapath management request and indication function reference, see [WDI Data
 
 [**WDI\_FRAME\_METADATA**](https://msdn.microsoft.com/library/windows/hardware/dn897827)
 
- 
+ 
 
- 
+ 
 
 
 

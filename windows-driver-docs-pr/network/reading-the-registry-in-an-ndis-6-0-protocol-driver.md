@@ -24,9 +24,9 @@ If the driver obtained the handle from the pointer at the *BindParameters* param
 
 The protocol driver uses the configuration handle in subsequent calls to the [**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511) and [**NdisWriteConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564659) functions. For more information about configuration functions, see [NDIS 6.0 Configuration Functions](ndis-configuration-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

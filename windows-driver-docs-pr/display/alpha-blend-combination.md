@@ -36,25 +36,25 @@ The following structures are used to implement alpha-blend combination.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DXVA_BufferDescription</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563122)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563122" data-raw-source="[&lt;strong&gt;DXVA_BufferDescription&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563122)"><strong>DXVA_BufferDescription</strong></a></p></td>
 <td align="left"><p>Specifies the alpha-blend combination buffer to be used. This buffer governs the generation of a blended picture from a source picture and alpha-blending information.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DXVA_BlendCombination</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563120)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563120" data-raw-source="[&lt;strong&gt;DXVA_BlendCombination&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563120)"><strong>DXVA_BlendCombination</strong></a></p></td>
 <td align="left"><p>Specifies how a blended picture is generated from an alpha-blend combination buffer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DXVA_ConfigAlphaCombine</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563126)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563126" data-raw-source="[&lt;strong&gt;DXVA_ConfigAlphaCombine&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563126)"><strong>DXVA_ConfigAlphaCombine</strong></a></p></td>
 <td align="left"><p>Establishes the configuration for how alpha-blending combination operations are to be performed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

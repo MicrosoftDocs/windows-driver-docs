@@ -32,9 +32,9 @@ The following topics provide step-by-step details on handling each of the stop I
 
 [Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 98/Me)](handling-an-irp-mn-cancel-stop-device-request--windows-98-me-.md)
 
- 
+ 
 
- 
+ 
 
 
 

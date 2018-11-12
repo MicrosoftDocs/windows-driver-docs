@@ -39,103 +39,103 @@ It is more common for a printer driver than a display driver to define or draw f
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvCopyBits</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556182)</p></td>
-<td align="left"><p>[<em>Device-managed surfaces</em>](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556182" data-raw-source="[&lt;strong&gt;DrvCopyBits&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556182)"><strong>DrvCopyBits</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="[&lt;em&gt;Device-managed surfaces&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface)"><em>Device-managed surfaces</em></a></p></td>
 <td align="left"><p>Translates between device-managed raster surfaces and GDI standard-format bitmaps.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvDescribePixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556190)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556190" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556190)"><strong>DrvDescribePixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Describes a PDEV's pixel format.</p></td>
+<td align="left"><p>Describes a PDEV&#39;s pixel format.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvGetTrueTypeFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556235)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556235" data-raw-source="[&lt;strong&gt;DrvGetTrueTypeFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556235)"><strong>DrvGetTrueTypeFile</strong></a></p></td>
 <td align="left"><p>TrueType font drivers</p></td>
 <td align="left"><p>Gives GDI access to a memory-mapped TrueType font file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvLoadFontFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556247)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556247" data-raw-source="[&lt;strong&gt;DrvLoadFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556247)"><strong>DrvLoadFontFile</strong></a></p></td>
 <td align="left"><p>Font drivers</p></td>
 <td align="left"><p>Specifies file to use for font realizations.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFont</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556262" data-raw-source="[&lt;strong&gt;DrvQueryFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556262)"><strong>DrvQueryFont</strong></a></p></td>
 <td align="left"><p>Printer drivers</p></td>
 <td align="left"><p>Retrieves a GDI structure for a given font.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvQueryFontCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556263)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556263" data-raw-source="[&lt;strong&gt;DrvQueryFontCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556263)"><strong>DrvQueryFontCaps</strong></a></p></td>
 <td align="left"><p>Font drivers</p></td>
 <td align="left"><p>Asks driver for font driver capabilities.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFontData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556264)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556264" data-raw-source="[&lt;strong&gt;DrvQueryFontData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556264)"><strong>DrvQueryFontData</strong></a></p></td>
 <td align="left"><p>Printer drivers</p></td>
 <td align="left"><p>Retrieves information about a realized font.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvQueryFontFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556265)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556265" data-raw-source="[&lt;strong&gt;DrvQueryFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556265)"><strong>DrvQueryFontFile</strong></a></p></td>
 <td align="left"><p>Font drivers</p></td>
 <td align="left"><p>Asks driver for font file information.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFontTree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556266)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556266" data-raw-source="[&lt;strong&gt;DrvQueryFontTree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556266)"><strong>DrvQueryFontTree</strong></a></p></td>
 <td align="left"><p>Printer drivers</p></td>
 <td align="left"><p>Queries a tree structure defining one of three types of font mapping.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvQueryTrueTypeOutline</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556269)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556269" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeOutline&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556269)"><strong>DrvQueryTrueTypeOutline</strong></a></p></td>
 <td align="left"><p>TrueType font drivers</p></td>
 <td align="left"><p>Returns TrueType glyph handles to GDI.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryTrueTypeTable</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556271)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556271" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeTable&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556271)"><strong>DrvQueryTrueTypeTable</strong></a></p></td>
 <td align="left"><p>TrueType font drivers</p></td>
 <td align="left"><p>Gives GDI access to TrueType font files.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvResetPDEV</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556276)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556276" data-raw-source="[&lt;strong&gt;DrvResetPDEV&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556276)"><strong>DrvResetPDEV</strong></a></p></td>
 <td align="left"><p>Devices that allow mode changes in documents</p></td>
 <td align="left"><p>Transfers driver state from old PDEV to new PDEV.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvSetPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556282)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556282" data-raw-source="[&lt;strong&gt;DrvSetPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556282)"><strong>DrvSetPalette</strong></a></p></td>
 <td align="left"><p>Displays that support settable palettes</p></td>
 <td align="left"><p>Realizes the palette for a specified device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvSetPixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556285)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556285" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556285)"><strong>DrvSetPixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Sets a window's pixel format.</p></td>
+<td align="left"><p>Sets a window&#39;s pixel format.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvStrokePath</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556316)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556316" data-raw-source="[&lt;strong&gt;DrvStrokePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556316)"><strong>DrvStrokePath</strong></a></p></td>
 <td align="left"><p>Device-managed surfaces</p></td>
 <td align="left"><p>Renders a path on the display.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvSwapBuffers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556322)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556322" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556322)"><strong>DrvSwapBuffers</strong></a></p></td>
 <td align="left"><p>Drivers that support a pixel format with double buffering</p></td>
-<td align="left"><p>Displays contents of a surface's hidden buffer.</p></td>
+<td align="left"><p>Displays contents of a surface&#39;s hidden buffer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvTextOut</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557277)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557277" data-raw-source="[&lt;strong&gt;DrvTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557277)"><strong>DrvTextOut</strong></a></p></td>
 <td align="left"><p>Device-managed surfaces or drivers that define fonts</p></td>
 <td align="left"><p>Renders a set of character images (glyphs) at specified positions.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvUnloadFontFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557287)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557287" data-raw-source="[&lt;strong&gt;DrvUnloadFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557287)"><strong>DrvUnloadFontFile</strong></a></p></td>
 <td align="left"><p>Font drivers</p></td>
 <td align="left"><p>Informs driver that a font file is not needed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

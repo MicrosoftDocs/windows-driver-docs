@@ -89,9 +89,9 @@ ErrorControl   = 1 ;    SERVICE_ERROR_NORMAL%
 ServiceBinary  = %12%\NewBatt.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

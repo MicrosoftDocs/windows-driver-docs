@@ -48,9 +48,9 @@ The Processes and Threads window has a shortcut menu with additional commands. T
 
 For other methods of displaying or controlling systems, see [Debugging Multiple Targets](debugging-multiple-targets.md). For other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
- 
+ 
 
- 
+ 
 
 
 

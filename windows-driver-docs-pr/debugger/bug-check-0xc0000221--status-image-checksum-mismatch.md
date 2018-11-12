@@ -44,7 +44,7 @@ If you want to replace the file on a single-boot system with an NTFS partition, 
 
 **Note**   If the original file from the product CD has a filename extension ending in an \_ (underscore), the file needs to be uncompressed before it can be used. The Recovery Console's **Copy** command automatically detects compressed files and expands them as they are copied to the target location. If you are using Safe Mode to access a drive, use the **Expand** command to uncompress and copy the file to the target folder. You can use the **Expand** command in the command line environment of Safe Mode.
 
- 
+ 
 
 **Resolving a disk error problem:** Disk errors can be a source of file corruption. Run **Chkdsk /f /r** to detect and resolve any file system structural corruption. You must restart the system before the disk scan begins on a system partition.
 
@@ -72,9 +72,9 @@ When you can log on to the system again, check the System Log in Event Viewer fo
 
 Disabling memory caching of the BIOS might also resolve this error.
 
- 
+ 
 
- 
+ 
 
 
 

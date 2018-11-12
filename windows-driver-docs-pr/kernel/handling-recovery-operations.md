@@ -55,9 +55,9 @@ Resource managers can call [**ZwSetInformationEnlistment**](https://msdn.microso
 
 [Superior transaction managers](creating-a-superior-transaction-manager.md) sometimes receive TRANSACTION\_NOTIFY\_RECOVER\_QUERY notifications during a recover operation.
 
- 
+ 
 
- 
+ 
 
 
 

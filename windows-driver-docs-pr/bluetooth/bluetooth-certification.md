@@ -21,9 +21,9 @@ For general information about the Windows Hardware Certification Program, see th
 
 For Windows 8.1 and Windows 8, the Windows Hardware Certification Program requires Bluetooth radios to support Bluetooth version 4.0 to qualify for a Windows logo. Updated tests are included in the latest version of the HCK. For more information about where to download the HCK, see [Windows Hardware Certification Requirements and Policies](http://go.microsoft.com/fwlink/p/?linkid=317937).
 
- 
+ 
 
- 
+ 
 
 
 

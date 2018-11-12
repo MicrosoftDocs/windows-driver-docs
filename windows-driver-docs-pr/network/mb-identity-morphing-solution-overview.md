@@ -49,7 +49,7 @@ The functions present in the device are grouped into the following logical sets.
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows the USB configurations listed in the previous table along with possible interfaces and functions. Additional requirements for each configuration are described in the remaining subtopics.
 
@@ -101,7 +101,7 @@ The following table shows the USB configurations listed in the previous table al
 </tbody>
 </table>
 
- 
+ 
 
 Goals of the solution
 
@@ -181,9 +181,9 @@ In Windows 7, the user can install the driver package from the mass storage fun
 
 Driver stack and device configuration in Windows 7 after user installs IHV driver package
 
- 
+ 
 
- 
+ 
 
 
 

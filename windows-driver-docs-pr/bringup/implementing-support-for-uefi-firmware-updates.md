@@ -23,9 +23,9 @@ This section describes the steps necessary for a firmware vendor to implement su
 -   [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)
 -   [Firmware update status](firmware-update-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -150,7 +150,7 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 </tbody>
 </table>
 
- 
+ 
 
 ## XPS Page Rules
 

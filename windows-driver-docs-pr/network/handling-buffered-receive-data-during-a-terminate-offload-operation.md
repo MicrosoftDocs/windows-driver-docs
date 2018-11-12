@@ -25,9 +25,9 @@ The host stack copies the buffered data into its own buffer and indicates the re
 
 Note that the offload target releases ownership of the NET\_BUFFER\_LIST structures that it passes up as buffered data. The offload target does not regain ownership of these NET\_BUFFER\_LIST structures until they are returned to its *MiniportTcpOffloadReceiveReturn* function.
 
- 
+ 
 
- 
+ 
 
 
 

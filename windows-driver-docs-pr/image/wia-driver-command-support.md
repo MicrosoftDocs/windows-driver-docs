@@ -56,7 +56,7 @@ The following is a list of WIA device commands that can be issued to a minidrive
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_CMD\_XXX commands are described in the Microsoft Windows SDK documentation. You can include your own custom list of commands.
 

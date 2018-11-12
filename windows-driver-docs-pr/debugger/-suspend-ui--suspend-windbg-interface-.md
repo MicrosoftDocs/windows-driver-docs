@@ -59,7 +59,7 @@ This command is available only in WinDbg and cannot be used in script files.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ By default, debugging information windows are refreshed every time the informati
 
 Suspending the refresh of these windows can speed up WinDbg during a sequence of quick operations -- for example, when tracing or stepping many times in quick succession.
 
- 
+ 
 
- 
+ 
 
 
 

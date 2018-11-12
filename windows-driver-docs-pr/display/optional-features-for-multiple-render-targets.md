@@ -32,9 +32,9 @@ A DirectX 9.0 version driver that supports rendering to multiple targets simulta
 
 Note that a driver for a display device that supports pixel shader version 3.0 and later must indicate that it supports the extended features for multiple render targets. For more information, see [Reporting Capabilities for Shader 3 Support](reporting-capabilities-for-shader-3-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

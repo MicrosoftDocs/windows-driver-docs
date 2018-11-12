@@ -32,10 +32,10 @@ sxr
 ## <span id="ddk_cmd_set_exceptions_dbg"></span><span id="DDK_CMD_SET_EXCEPTIONS_DBG"></span>Parameters
 
 
-<span id="-c__Cmd1_"></span><span id="-c__cmd1_"></span><span id="-C__CMD1_"></span>**-c "***Cmd1***"**  
+<span id="-c__Cmd1_"></span><span id="-c__cmd1_"></span><span id="-C__CMD1_"></span>**-c "**<em>Cmd1</em>**"**  
 Specifies a command that is executed if the exception or event occurs. This command is executed when the first chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd1* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c and the quoted command string is optional.
 
-<span id="-c2_Cmd2_"></span><span id="-c2_cmd2_"></span><span id="-C2_CMD2_"></span>**-c2"***Cmd2***"**  
+<span id="-c2_Cmd2_"></span><span id="-c2_cmd2_"></span><span id="-C2_CMD2_"></span>**-c2"**<em>Cmd2</em>**"**  
 Specifies a command that is executed if the exception or event occurs and is not handled on the first chance. This command is executed when the second chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd2* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c2 and the quoted command string is optional.
 
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
@@ -47,7 +47,7 @@ Specifies the exception number that the command acts on, in the current radix.
 <span id="_______Event______"></span><span id="_______event______"></span><span id="_______EVENT______"></span> *Event*   
 Specifies the event that the command acts on. These events are identified by short abbreviations. For a list of the events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-<span id="______________"></span> **\***   
+<span id="______________"></span> **\\***   
 Affects all exceptions that are not otherwise explicitly named for **sx**. For a list of explicitly named exceptions, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -73,7 +73,7 @@ Affects all exceptions that are not otherwise explicitly named for **sx**. For a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -134,7 +134,7 @@ When you are setting the break status, these commands have the following effects
 </tbody>
 </table>
 
- 
+ 
 
 When you are setting the handling status, these commands have the following effects:
 
@@ -165,7 +165,7 @@ When you are setting the handling status, these commands have the following effe
 </tbody>
 </table>
 
- 
+ 
 
 You can use the **-h** option together with exceptions, not events. Using this option with **ch**, **bpe**, or **sse** sets the handling status for **hc**, **bpec**, or **ssec**, respectively. If you use the -h option with any other event, it has no effect.
 
@@ -184,9 +184,9 @@ In the following example, the **sxe** command is used to set the break status of
   . . .  
 ```
 
- 
+ 
 
- 
+ 
 
 
 

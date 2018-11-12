@@ -46,9 +46,9 @@ If a driver requires platform-dependent definitions, it is best to isolate those
 
 Kernel-mode drivers can use kernel-mode **Rtl*Xxx*** routines that are documented in the WDK. Kernel-mode drivers cannot call user-mode **Rtl*Xxx*** routines.
 
- 
+ 
 
- 
+ 
 
 
 

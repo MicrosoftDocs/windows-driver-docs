@@ -18,9 +18,9 @@ You can create your own command-line tool to create device metadata packages. Fo
 -   [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753)
 -   [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755)
 
- 
+ 
 
- 
+ 
 
 
 

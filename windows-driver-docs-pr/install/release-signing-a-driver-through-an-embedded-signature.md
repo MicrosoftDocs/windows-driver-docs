@@ -49,7 +49,7 @@ Where:
 
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
@@ -57,9 +57,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about release-signing a driver through an embedded signature, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Release-Signing a Driver File](release-signing-a-driver-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

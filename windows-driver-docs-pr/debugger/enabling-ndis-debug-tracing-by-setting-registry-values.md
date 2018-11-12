@@ -69,7 +69,7 @@ Selects the level or amount of debug tracing in the NDIS components that you sel
 </tbody>
 </table>
 
- 
+ 
 
 <span id="DebugSystems"></span><span id="debugsystems"></span><span id="DEBUGSYSTEMS"></span>**DebugSystems**  
 Enables debug tracing for specified NDIS components. This corresponds to using the [**!ndiskd.dbgsystems**](-ndiskd-dbgsystems.md) extension. The following values specify the NDIS components that you can select:
@@ -196,7 +196,7 @@ Enables debug tracing for specified NDIS components. This corresponds to using t
 </tbody>
 </table>
 
- 
+ 
 
 You can select more than one NDIS component. If more than one component is selected, combine the data values with an OR operator. For example, to select DBG\_COMP\_PNP, DBG\_COMP\_PM, DBG\_COMP\_INIT and DBG\_COMP\_CONFIG, you would combine the corresponding values (0x1000, 0x2000, 0x1, and 0x2) to obtain the value 0x3003, and then set it in the registry thus:
 
@@ -206,9 +206,9 @@ You can select more than one NDIS component. If more than one component is selec
 
 Whenever you change registry values for debug tracing, you must restart your computer for the new settings to take effect.
 
- 
+ 
 
- 
+ 
 
 
 

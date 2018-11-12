@@ -22,9 +22,9 @@ This command is equivalent to pressing F7 or CTRL+F10 or clicking the **Run to c
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

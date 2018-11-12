@@ -23,9 +23,9 @@ If the miniport driver is a connectionless miniport driver, NDIS can call the mi
 
 Miniport drivers generate status indications with the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) or [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) function. If a WMI client registers for a WMI event and a miniport driver generates an associated status indication, NDIS maps that status indication to a WMI GUID and passes a WMI event indication to WMI. WMI then passes the WMI event indication to all of the WMI clients that have registered for the WMI event.
 
- 
+ 
 
- 
+ 
 
 
 

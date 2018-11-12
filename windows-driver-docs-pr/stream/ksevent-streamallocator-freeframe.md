@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_STREAMALLOCATOR\_FREEFRAME** event can be used to receive notification when a free frame is available for allocation. This event can be used by clients using a direct call interface instead of an IRP interface, which typically queues pending requests that cannot be fulfilled.
 
- 
+ 
 
- 
+ 
 
 
 

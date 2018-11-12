@@ -52,7 +52,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>The saved IRQL</p></td>
 <td align="left"><p>The current IRQL</p></td>
-<td align="left"><p>The current processor's IRQL is not the same as when the floating-point context was saved.</p></td>
+<td align="left"><p>The current processor&#39;s IRQL is not the same as when the floating-point context was saved.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2</p></td>
@@ -63,7 +63,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -72,9 +72,9 @@ While restoring the previously-saved floating-point state for a thread, the stat
 
 Parameter 1 indicates which validity check failed.
 
- 
+ 
 
- 
+ 
 
 
 

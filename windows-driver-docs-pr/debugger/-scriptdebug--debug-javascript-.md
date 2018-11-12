@@ -52,7 +52,7 @@ Specifies the name of the debugger JavaScript script to debug.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Additional_Information"></span>Additional Information
 
@@ -132,7 +132,7 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
 ### Events
 
 Use the **sx** script debugger command to see the list of events that can be trapped.
-                                                        
+
 ```
 >>> Debug [DebuggableSample <No Position>] >sx              
 sx                                                          
@@ -143,15 +143,15 @@ sx
 ```
 
 Use the **sxe** script debugger command to enable any of the break beahaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
-                                                            
+
 ```
 >>> Debug [DebuggableSample <No Position>] >sxe en          
 sxe en                                                      
 Event filter 'en' is now active                             
 ```
-                                                            
+
 Use the **sxd** script debugger command to disable any of the breakpoint behaviors.
- 
+
 ```                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
@@ -189,20 +189,20 @@ someObj          : {...}
 
 Use the following breakpoint commands to work with additional breakpoints.
 
-|          |                                  |
-|----------|----------------------------------|
-|bp <bpid> | Set a breakpoint                 |
-|bd <bpid> | Disable the breakpoint           |
-|be <bpid> | Enable the breakpoint            |
-|bc <bpid> | Clear the breakpoint             |
-|bpc       | Set breakpoint on current line   |
-|bl        | List the breakpoint(s)           |
 
-
+|           |                                |
+|-----------|--------------------------------|
+| bp <bpid> |        Set a breakpoint        |
+| bd <bpid> |     Disable the breakpoint     |
+| be <bpid> |     Enable the breakpoint      |
+| bc <bpid> |      Clear the breakpoint      |
+|    bpc    | Set breakpoint on current line |
+|    bl     |     List the breakpoint(s)     |
 
 ### Flow control - navigation
 
 Use the following commands to move forward in the script.
+
 |   |                           |
 |---|---------------------------|
 |p  | Step over                 |
@@ -216,13 +216,12 @@ Use the following commands to move forward in the script.
 
 Use the following commands to work with frames.
 
-|               |                           |
-|---------------|---------------------------|
-|.frame <index> | Switch to frame number <index>   |
-|.f+            | Switch to next stack frame       |
-|.f+            | Switch to previous stack frame   |
 
-
+|                |                                |
+|----------------|--------------------------------|
+| .frame <index> | Switch to frame number <index> |
+|      .f+       |   Switch to next stack frame   |
+|      .f+       | Switch to previous stack frame |
 
 ### Quiting
 
@@ -242,9 +241,9 @@ q
 ```
 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.crash%20%28Force%20System%20Crash%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger/debugger]:%20.crash%20%28Force%20System%20Crash%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

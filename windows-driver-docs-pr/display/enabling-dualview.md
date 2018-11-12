@@ -42,9 +42,9 @@ For a minimal DualView implementation, perform the following actions:
 
 -   For laptop computers supporting multichild devices, the miniport driver should handle [**IOCTL\_VIDEO\_GET\_CHILD\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567801) requests and return logical child relationships (discussed in the following section).
 
- 
+ 
 
- 
+ 
 
 
 

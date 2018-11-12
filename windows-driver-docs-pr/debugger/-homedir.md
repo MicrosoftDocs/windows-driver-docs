@@ -49,7 +49,7 @@ Specifies the new directory to use as the home directory.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -60,9 +60,9 @@ The cache for a source server is located in the src subdirectory of the home dir
 
 When WinDbg is started, the home directory is the directory where Debugging Tools for Windows was installed. The **!homedir** extension can be used to change this value.
 
- 
+ 
 
- 
+ 
 
 
 

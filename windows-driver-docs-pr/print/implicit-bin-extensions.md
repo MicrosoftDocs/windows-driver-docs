@@ -38,9 +38,9 @@ The preceding OutputBin construct results in the following two queries:
 \Printer.Finishing.OutputBins.TopBin:Level
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ When processing an initiate offload request in its [*MiniportInitiateOffload*](h
     -   If the neighbor **VlanId** is nonzero and matches one of the interface VLAN identifiers, the offload target must not fail the initiate offload request because of the neighbor **VlanId** unless it has run out of VLAN identifiers resources.
     -   If the neighbor **VlanId** is nonzero and does not match one of the interface VLAN identifiers, the offload target must fail the initiate offload request with the **Status** member set to NDIS\_STATUS\_VLAN\_MISMATCH.
 
- 
+ 
 
- 
+ 
 
 
 

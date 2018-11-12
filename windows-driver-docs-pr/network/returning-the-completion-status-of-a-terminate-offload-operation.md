@@ -37,9 +37,9 @@ If corrupted hardware state prevents the offload target from completing the term
 
 5.  Call the [**NdisMTerminateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563685) function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ Miniport drivers can use the NDIS\_PORT\_CHAR\_USE\_DEFAULT\_AUTH\_SETTINGS flag
 
 For more information about NDIS port states, see [NDIS Port States](ndis-port-states.md). For more information about activating ports, see [Activating NDIS Ports](activating-an-ndis-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

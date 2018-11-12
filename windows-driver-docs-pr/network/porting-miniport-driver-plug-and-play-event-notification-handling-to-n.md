@@ -22,9 +22,9 @@ In NDIS 6.0 miniport drivers, replace the NDIS 5.x [**MiniportPnPEventNotify**](
 
 For more information about NDIS 6.0 Plug and Play notifications, see [Adapter PnP Event Notifications](miniport-adapter-device-pnp-event-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ Starting with NDIS 6.30, miniport drivers issue an NDIS wake reason status indic
 
 **Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -23,9 +23,9 @@ This section includes the following topics:
 
 [Issuing NDIS Wake Reason Status Indications](issuing-ndis-wake-reason-indications.md)
 
- 
+ 
 
- 
+ 
 
 
 

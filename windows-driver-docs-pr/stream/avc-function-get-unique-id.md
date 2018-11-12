@@ -54,7 +54,7 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -105,9 +105,9 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_UNIQUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff554200), [**AVCPRECONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554103), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 
- 
+ 
 
- 
+ 
 
 
 

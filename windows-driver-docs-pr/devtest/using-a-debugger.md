@@ -19,9 +19,9 @@ Debugging Tools for Windows provides debuggers and other tools that you can use 
 -   [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 -   [Setting Up Debugging (Kernel-Mode and User-Mode)](https://msdn.microsoft.com/library/windows/hardware/hh450944)
 
- 
+ 
 
- 
+ 
 
 
 

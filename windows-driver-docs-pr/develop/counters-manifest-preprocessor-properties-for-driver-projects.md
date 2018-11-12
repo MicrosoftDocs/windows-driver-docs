@@ -37,7 +37,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span>Additional Options</p></td>
-<td align="left"><p>Specifies additional options to the [<strong>CTRPP</strong>](https://msdn.microsoft.com/Library/Windows/Desktop/aa372128) tool.</p></td>
+<td align="left"><p>Specifies additional options to the <a href="https://msdn.microsoft.com/Library/Windows/Desktop/aa372128" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](https://msdn.microsoft.com/Library/Windows/Desktop/aa372128)"><strong>CTRPP</strong></a> tool.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Backward_Compatibility"></span><span id="backward_compatibility"></span><span id="BACKWARD_COMPATIBILITY"></span>Backward Compatibility</p></td>
@@ -45,7 +45,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Legacy"></span><span id="enable_legacy"></span><span id="ENABLE_LEGACY"></span>Enable Legacy</p></td>
-<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes [<strong>CTRPP</strong>](https://msdn.microsoft.com/Library/Windows/Desktop/aa372128) to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
+<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes <a href="https://msdn.microsoft.com/Library/Windows/Desktop/aa372128" data-raw-source="[&lt;strong&gt;CTRPP&lt;/strong&gt;](https://msdn.microsoft.com/Library/Windows/Desktop/aa372128)"><strong>CTRPP</strong></a> to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Generate_header_file_for_containing_counter_names_and_GUIDs"></span><span id="generate_header_file_for_containing_counter_names_and_guids"></span><span id="GENERATE_HEADER_FILE_FOR_CONTAINING_COUNTER_NAMES_AND_GUIDS"></span>Generate header file for containing counter names and GUIDs</p></td>
@@ -92,7 +92,7 @@ If you want to add this property page to your project so that you can run the CT
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Comment"></span><span id="comment"></span><span id="COMMENT"></span>Comment
 
@@ -105,9 +105,9 @@ The default names of the files that the tool generates are based on the name of 
 * [**CTRPP**](https://msdn.microsoft.com/Library/Windows/Desktop/aa372128)
 * [Performance Counters](https://msdn.microsoft.com/Library/Windows/Desktop/aa373083)
 * [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/Library/Windows/Hardware/Ff548159)
- 
+ 
 
- 
+ 
 
 
 

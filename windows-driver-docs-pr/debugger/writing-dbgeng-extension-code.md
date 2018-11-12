@@ -32,11 +32,11 @@ If you include wdbgexts.h in your DbgEng extension, you should call [**GetWindbg
 
 **Note**   You must not attempt to call any DbgHelp or ImageHlp routines from any debugger extension. Calling these routines is not supported and may cause a variety of problems.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

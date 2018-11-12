@@ -16,13 +16,13 @@ To support live migration, a virtual machine (VM) can be paused at any instructi
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 When the VM is restarted on another host, the network VSP on the new host handles the receive packets that the resumed VM returns and does not pass them down to the new underlying in miniport driver. After the migration is complete, the receive queue that was associated with the VM is freed and it can be reused for another VM.
 
 **Note**  The new network adapter might not support VMQ.
 
- 
+ 
 
 When NDIS requests a miniport driver to free a VMQ receive queue, it follows these steps:
 
@@ -38,9 +38,9 @@ When NDIS requests a miniport driver to free a VMQ receive queue, it follows the
 
 For more information about queue states, see [NDIS VM Queue States](ndis-virtual-machine-queue-states.md).
 
- 
+ 
 
- 
+ 
 
 
 

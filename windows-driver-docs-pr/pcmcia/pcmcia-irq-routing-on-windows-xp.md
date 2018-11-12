@@ -35,9 +35,9 @@ This section discusses ISA-to-PCI interrupt routing and the problems associated 
 
 Prior to the invention of CardBus controllers, most systems used a PCI-to-PCMCIA bridge, known as a "PCIC bridge," in order to connect 16-bit PC Cards to the computer. These bridges do not support CardBus cards, nor do they support ISA-to-PCI interrupt routing. Therefore, the information in this section does not apply to PCIC bridges.
 
- 
+ 
 
- 
+ 
 
 
 

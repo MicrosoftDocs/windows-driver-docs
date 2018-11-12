@@ -70,9 +70,9 @@ class ISCSI_ConnectionStaticInfo {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_ConnectionStaticInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561489) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

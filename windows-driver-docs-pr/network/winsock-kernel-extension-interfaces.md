@@ -19,9 +19,9 @@ A WSK application can register for an extension interface that is supported by t
 
 For more information about registering an extension interface, see [Registering an Extension Interface](registering-an-extension-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

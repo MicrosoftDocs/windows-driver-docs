@@ -25,9 +25,9 @@ The following sections contain more information about GDL snapshots.
 
 [XML Structure of GDL Snapshots](xml-structure-of-gdl-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

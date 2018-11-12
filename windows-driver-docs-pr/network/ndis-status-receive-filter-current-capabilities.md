@@ -16,7 +16,7 @@ The miniport driver issues an **NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILI
 
 **Note**  This status indication should only be made by miniport drivers that support NDIS receive filters.
 
- 
+ 
 
 When the miniport driver makes this status indication, it sets the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure to a pointer to an [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure. The driver initializes this structure with its currently enabled receive filter capabilities.
 
@@ -55,7 +55,7 @@ The miniport driver follows these steps when it issues the **NDIS\_STATUS\_RECEI
 
 **Note**  Overlying drivers can use the **NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES** status indication to determine the currently enabled receive filter capabilities of the network adapter. Alternatively, these drivers can also issue OID query requests of [OID\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569786) to obtain the currently enabled receive filter capabilities at any time.
 
- 
+ 
 
 Requirements
 ------------
@@ -89,9 +89,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569786)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ After these resources are defined, additional ACPI resources, of other types, ma
 -   The HID I²C driver enables devices and system manufacturers to reduce the total number of drivers they have to develop to support common device types like keyboards, touchpads, touch screens, sensors, and so on.
 -   The HID I²C driver is available on all client SKUs of Windows and is included in WinPE.
 
- 
+ 
 
- 
+ 
 
 
 

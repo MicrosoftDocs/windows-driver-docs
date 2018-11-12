@@ -67,7 +67,7 @@ AncillaryData
 
 See accompanying text.
 
- 
+ 
 
 The **SequenceNumber** field of the ObjectInfo dataset is put into the WIA\_IPC\_SEQUENCE property. The PTP driver does not currently use the WIA\_IPC\_XCOORDINATE and WIA\_IPC\_YCOORDINATE properties. The **AssociationDesc** member of the ObjectInfo dataset is currently not used.
 
@@ -79,9 +79,9 @@ When an AncillaryData association is mapped to a WIA folder, the nonimage object
 
 ![wia item with attachments](images/wiaattch.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ The schema includes the following device settings elements:
 
 [**ScalingWidth**](scalingwidth2.md)
 
- 
+ 
 
- 
+ 
 
 
 

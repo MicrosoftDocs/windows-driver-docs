@@ -26,9 +26,9 @@ Drivers can safely reuse IRPs that they have created, as follows:
 
 3.  If a driver allocates an IRP by calling **IoAllocateIrp** with the *ChargeQuota* parameter set to **FALSE**, then it can safely use **IoInitializeIrp** to reinitialize the IRP. Drivers that must work on Windows 98/Me can use this method as a work-around. Drivers designed strictly for Windows 2000 and later operating systems should use the previous method.
 
- 
+ 
 
- 
+ 
 
 
 

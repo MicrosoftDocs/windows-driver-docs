@@ -21,9 +21,9 @@ If an NDIS port is the source of a status indication, a miniport driver should u
 
 Miniport drivers should use the [**NDIS\_STATUS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567415) status indication to indicate changes in the state of an NDIS port. For this status indication, miniport drivers must set the port number in the **PortNumber** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure. The **StatusBuffer** member of the NDIS\_STATUS\_INDICATION structure contains a pointer to an [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800) structure.
 
- 
+ 
 
- 
+ 
 
 
 

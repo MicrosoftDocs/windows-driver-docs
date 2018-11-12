@@ -56,7 +56,7 @@ The DRIVER\_CORRUPTED\_EXPOOL bug check has a value of 0x000000C5. This indicate
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -74,9 +74,9 @@ To debug this error, use the special pool option of Driver Verifier. If this fai
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

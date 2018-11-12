@@ -33,9 +33,9 @@ When implementing an NDIS-WDM miniport driver, keep the following in mind:
 
     For the preceding scenarios, the NDIS-WDM miniport driver should call the appropriate WDM routines to allocate or release resources for the non-NDIS entity.
 
- 
+ 
 
- 
+ 
 
 
 

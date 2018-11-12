@@ -90,7 +90,7 @@ RUN_WPP -km -ini:localwpp.ini
 
 **Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
 
- 
+ 
 
 ### <span id="using_the_custom_data_type"></span><span id="USING_THE_CUSTOM_DATA_TYPE"></span>Using the Custom Data Type
 
@@ -106,9 +106,9 @@ The resulting trace message uses the constant that you defined to represent the 
 DiskState is Offline.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

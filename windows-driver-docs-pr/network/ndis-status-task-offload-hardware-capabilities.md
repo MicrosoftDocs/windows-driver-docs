@@ -54,9 +54,9 @@ Requirements
 
 [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806)
 
- 
+ 
 
- 
+ 
 
 
 

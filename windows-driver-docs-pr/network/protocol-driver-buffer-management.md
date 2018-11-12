@@ -44,9 +44,9 @@ Protocol drivers use the following functions to free the structures allocated fr
 
 Drivers should free NET\_BUFFER structures allocated with **NdisAllocateNetBuffer** before freeing the associated NET\_BUFFER\_LIST structure. NET\_BUFFER structures allocated with **NdisAllocateNetBufferAndNetBufferList** are freed when the driver calls **NdisFreeNetBufferList** for the associated NET\_BUFFER\_LIST structure.
 
- 
+ 
 
- 
+ 
 
 
 

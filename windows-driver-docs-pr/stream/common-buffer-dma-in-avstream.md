@@ -57,9 +57,9 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 AVStream then manages the queue based on the flags set by the minidriver in the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure.
 
- 
+ 
 
- 
+ 
 
 
 

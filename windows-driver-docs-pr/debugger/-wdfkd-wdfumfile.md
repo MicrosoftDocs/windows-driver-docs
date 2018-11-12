@@ -51,9 +51,9 @@ You can use this command in a kernel-mode debugging session or in a user-mode de
 
 This command displays the same information as the user-mode command [**!wudfext.umfile**](-wudfext-umfile.md).
 
- 
+ 
 
- 
+ 
 
 
 

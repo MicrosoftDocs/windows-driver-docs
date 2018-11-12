@@ -28,9 +28,9 @@ To open and retrieve a component's registry key to modify information about the 
 
 For more information about the registry, writing data to it, and retrieving data from it, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

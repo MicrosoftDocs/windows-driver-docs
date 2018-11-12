@@ -47,9 +47,9 @@ After setting up this structure, the miniclass driver attaches itself to the bat
 
 After calling **BatteryClassInitializeDevice**, the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine might also need to initialize other device-specific data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ class MPIO_PATH_INFORMATION
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_PATH\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff562441) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

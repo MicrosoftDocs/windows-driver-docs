@@ -30,9 +30,9 @@ The following are requirements for extensions to the display Control Panel:
 
 -   Control panel state must be stored in the registry. No *.ini* files are allowed. Any state that is maintained by your Control Panel extension must be stored in the SOFTWARE key in the registry, accessible through HKR in the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

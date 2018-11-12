@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 The display miniport driver must prepare DMA buffers in a timely manner. While the GPU processes a DMA buffer, the display miniport driver is typically called upon to prepare the next DMA buffer for submission to the GPU. To prevent GPU starvation, the display miniport driver must spend less time preparing and submitting subsequent DMA buffers than the GPU takes to process the current DMA buffer.
 
- 
+ 
 
- 
+ 
 
 
 

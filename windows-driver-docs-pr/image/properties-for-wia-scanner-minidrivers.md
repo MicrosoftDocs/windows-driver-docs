@@ -131,9 +131,9 @@ A WIA minidriver supplies the following properties:
 
 [**WIA\_DPS\_TRANSPARENCY\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551437)
 
- 
+ 
 
- 
+ 
 
 
 

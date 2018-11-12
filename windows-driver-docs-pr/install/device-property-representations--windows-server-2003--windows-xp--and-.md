@@ -29,11 +29,11 @@ The following topics provide information about how to access device properties o
 
 **Note**   To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support these mechanisms. However, you should use the unified device property model to access device properties on Windows Vista and later versions.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

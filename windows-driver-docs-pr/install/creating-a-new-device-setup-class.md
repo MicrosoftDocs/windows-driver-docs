@@ -37,9 +37,9 @@ Before creating a new device setup class, contact Microsoft to find out if a new
 
 You can create a new device setup class by using an INF file. In addition to installing support for a device, an INF file can initialize a new device setup class for the device. Such an INF file has an [**INF ClassInstall32 section**](inf-classinstall32-section.md).
 
- 
+ 
 
- 
+ 
 
 
 

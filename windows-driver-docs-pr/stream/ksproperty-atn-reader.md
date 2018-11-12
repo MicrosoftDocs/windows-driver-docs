@@ -47,13 +47,13 @@ The KSPROPERTY\_ATN\_READER property retrieves the absolute track number (ATN) o
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_TIMECODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565781)</p></td>
-<td><p>[<strong>TIMECODE_SAMPLE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568528)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565781" data-raw-source="[&lt;strong&gt;KSPROPERTY_TIMECODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565781)"><strong>KSPROPERTY_TIMECODE_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568528" data-raw-source="[&lt;strong&gt;TIMECODE_SAMPLE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568528)"><strong>TIMECODE_SAMPLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a TIMECODE\_SAMPLE structure that specifies the absolute track number of the current tape position.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**TIMECODE\_SAMPLE**](https://msdn.microsoft.com/library/windows/hardware/ff568528)
 
- 
+ 
 
- 
+ 
 
 
 

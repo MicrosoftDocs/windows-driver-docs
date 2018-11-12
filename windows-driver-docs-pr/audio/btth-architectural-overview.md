@@ -25,9 +25,9 @@ The following diagram shows the software and hardware components that work toget
 
 Note that this Windows feature does not support bypass audio streaming using advanced audio distribution profile (A2DP). Windows 8 provides a separate A2DP profile driver that completely supports audio functionality through the standard Bluetooth HCI without requiring any additional audio drivers.
 
- 
+ 
 
- 
+ 
 
 
 

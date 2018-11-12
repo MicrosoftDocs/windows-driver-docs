@@ -29,9 +29,9 @@ It is also possible for the miniport driver itself to emit time-stamped messages
 
 When the packer pulls the data out of a DMUS\_KERNEL\_EVENT structure, it discards the used DMUS\_KERNEL\_EVENT structure into the allocator with **IMXF::PutMessage**. When the IRP buffer is full, it is passed up to dmusic.dll. The packer receives empty IRPs from dmusic.dll, fills them, and completes them. More IRPs keep trickling down so that it always has one to fill.
 
- 
+ 
 
- 
+ 
 
 
 

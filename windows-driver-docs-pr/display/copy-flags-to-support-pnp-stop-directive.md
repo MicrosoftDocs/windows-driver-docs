@@ -14,7 +14,7 @@ The Plug and Play (PnP) stop directive file section flag is required for the Win
 **Note**  
 This is required only for the user-mode driver binaries, not for the kernel-mode driver entry.
 
- 
+ 
 
 For example:
 
@@ -31,9 +31,9 @@ r200umd.dll,,,0x00004000             ; COPYFLG_IN_USE_TRY_RENAME
 r200umd2.dll,,,0x00004000           ; COPYFLG_IN_USE_TRY_RENAME
 ```
 
- 
+ 
 
- 
+ 
 
 
 

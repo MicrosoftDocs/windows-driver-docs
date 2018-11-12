@@ -70,11 +70,11 @@ If remote named pipes are used as the transport, no information will be availabl
 
 **Note**   The previous example shows how to find the client thread if you know the server thread. For an example of the reverse technique, see [Analyzing a Stuck Call Problem](analyzing-a-stuck-call-problem.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

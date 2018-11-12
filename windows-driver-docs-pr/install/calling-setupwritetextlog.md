@@ -35,9 +35,9 @@ For an example on how to call [**SetupWriteTextLog**](https://msdn.microsoft.com
 
 For an example on how to call **SetupWriteTextLog** to log information about an error or a warning, see [Writing an Error or Warning Log Entry](writing-an-error-or-warning-log-entry.md).
 
- 
+ 
 
- 
+ 
 
 
 

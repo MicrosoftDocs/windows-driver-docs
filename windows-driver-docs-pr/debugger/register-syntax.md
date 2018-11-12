@@ -42,9 +42,9 @@ In user mode, any reference to a register is interpreted as the register that is
 
 In kernel mode, any reference to a register is interpreted as the register that is associated with the current register context. You can set the register context to match a specific thread, context record, or trap frame. You can display only the most important registers for the specified register context, and you cannot change their values.
 
- 
+ 
 
- 
+ 
 
 
 

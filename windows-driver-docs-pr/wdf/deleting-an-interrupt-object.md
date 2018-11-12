@@ -22,9 +22,9 @@ The framework uses the following rules:
 
 Optionally, the driver can call [**IWDFObject::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) to delete an interrupt object at any time. Because a driver cannot create a new interrupt object outside of [**OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) or [**OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/hh439734), manual deletion of the object should not be used unless the driver must remove the object before the framework deletes it.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -77,9 +77,9 @@ Requirements
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
 
- 
+ 
 
- 
+ 
 
 
 

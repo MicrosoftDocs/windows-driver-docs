@@ -31,11 +31,11 @@ To the PnP manager, a storage class driver is a [Function Drivers](https://msdn.
 
 **Note**   A driver for a SCSI device such as a printer or a scanner should be implemented as described in this section. A driver for such a SCSI device utilizes the same SCSI class/port interface to control its device and has the same responsibilities to handle IRPs, build SRBs, and send them to the underlying port driver as does a driver for a storage device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

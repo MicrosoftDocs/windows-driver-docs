@@ -17,9 +17,9 @@ Selective Suspend also imposes strict power consumption limits on the device in 
 
 For example, at a certain current limit, a mouse might not be able to wake up from Selective Suspend when a user moves the mouse, because there is not enough power for the optical sensors. The same mouse might be able to wake up as a result of a button press. Such a mouse cannot be sent to Selective Suspend without compromising the user experience.
 
- 
+ 
 
- 
+ 
 
 
 

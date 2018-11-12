@@ -37,9 +37,9 @@ Drivers that are designed to use multiple messages should check that the expecte
 
 -   When **IoConnectInterruptEx** returns, it sets *Parameters*-&gt;**MessageBased.ConnectContext.InterruptMessageTable-&gt;MessageCount** to the number of allocated messages.
 
- 
+ 
 
- 
+ 
 
 
 

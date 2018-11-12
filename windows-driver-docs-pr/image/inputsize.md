@@ -71,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentSizeAutoDetect</strong>](documentsizeautodetect.md)</p></td>
+<td><p><a href="documentsizeautodetect.md" data-raw-source="[&lt;strong&gt;DocumentSizeAutoDetect&lt;/strong&gt;](documentsizeautodetect.md)"><strong>DocumentSizeAutoDetect</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -93,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -121,9 +121,9 @@ The client can specify the optional **MustHonor** attribute only when the **Inpu
 
 [**InputMediaSize**](inputmediasize.md)
 
- 
+ 
 
- 
+ 
 
 
 

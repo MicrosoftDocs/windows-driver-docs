@@ -31,9 +31,9 @@ Follow these guidelines when you write NDIS drivers:
 
 -   Use **\#ifdef** and **\#endif** statements to encapsulate code that is used to support platform-specific features.
 
- 
+ 
 
- 
+ 
 
 
 

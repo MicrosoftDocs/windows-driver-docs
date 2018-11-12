@@ -31,7 +31,7 @@ Local, remote, and operational NDIS QoS parameters consist of the following type
 
     **Note**  Traffic classifications are also known as "application priorities" in the IEEE 802.1 specifications.
 
-     
+     
 
 The miniport driver resolves its operational settings from its local or remote NDIS QoS parameters by following these guidelines:
 
@@ -51,9 +51,9 @@ For more information about the local DCBX Willing state, see [Managing the Local
 
 For more information on the methods used to resolve QoS operational parameters, refer to the IEEE 802.1Qaz draft standard.
 
- 
+ 
 
- 
+ 
 
 
 

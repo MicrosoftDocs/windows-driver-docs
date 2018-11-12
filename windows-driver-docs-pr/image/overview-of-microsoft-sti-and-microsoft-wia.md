@@ -29,9 +29,9 @@ Some differences between STI and WIA include the following:
 
 For more information about the WIA architecture, see [WIA Architecture Overview](wia-architecture-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

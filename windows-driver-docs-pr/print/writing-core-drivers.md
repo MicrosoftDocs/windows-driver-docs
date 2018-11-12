@@ -54,9 +54,9 @@ AlwaysExcludeFromSelect = {GUID1}
 
 The core driver must include version information in the install section, by using the **DriverVer** keyword. The install section must also list all the files that the core driver requires. Use the new **AlwaysExcludeFromSelect** keyword to ensure that the core driver is not displayed to the user in the UI.
 
- 
+ 
 
- 
+ 
 
 
 

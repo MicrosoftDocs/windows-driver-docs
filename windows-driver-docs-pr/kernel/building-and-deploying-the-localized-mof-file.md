@@ -89,9 +89,9 @@ class MyClass
 
 Using this approach, building the binary MOF file is identical to the nonlocalized approach. See [Compiling a Driver's MOF File](compiling-a-driver-s-mof-file.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

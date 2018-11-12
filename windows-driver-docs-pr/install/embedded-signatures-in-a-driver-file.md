@@ -19,7 +19,7 @@ In 64-bit versions of Windows Vista and later versions of Windows, the [kernel-m
 
 **Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx).
 
- 
+ 
 
 Having an embedded signature saves significant time during system startup because there is no need for the system loader to locate the [catalog file](catalog-files.md) for the driver at system startup. A typical computer, which is running Windows Vista or a later version of Windows, might have many different catalog files in the catalog root store (*%System%\\CatRoot*). Locating the correct catalog file to verify the thumbprint of a driver file can require a substantial amount of time.
 
@@ -29,9 +29,9 @@ Embedded signatures do not interfere with the signature of a catalog file becaus
 
 Driver files are signed by using the [SignTool](installing-a-catalog-file-by-using-signtool.md) tool.
 
- 
+ 
 
- 
+ 
 
 
 

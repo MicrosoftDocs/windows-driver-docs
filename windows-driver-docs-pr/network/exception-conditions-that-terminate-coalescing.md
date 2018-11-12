@@ -25,7 +25,7 @@ If a check fails, an exception is triggered, and the miniport driver must termin
 
 **Note**  For exceptions 7 and 8 below, the miniport driver should resume coalescing starting with the segment that triggered the exception.
 
- 
+ 
 
 Receiving a segment that meets any of the following criteria must trigger an exception:
 
@@ -53,9 +53,9 @@ Receiving a segment that meets any of the following criteria must trigger an exc
 
     2.  The segment has a different value for the ECN flags (ECE and CWR) in the TCP header than the previous segment.
 
- 
+ 
 
- 
+ 
 
 
 

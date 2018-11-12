@@ -33,9 +33,9 @@ A vendor-supplied controller minidriver must provide a set of standard minidrive
 
 For more information about the PciIdeX library and a description of the minidriver routine interface between the system-supplied controller driver and a vendor-supplied controller minidriver, see [Initializing and Calling IDE Minidriver Routines](initializing-and-calling-ide-minidriver-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

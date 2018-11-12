@@ -60,9 +60,9 @@ Device drivers are responsible for determining a PnP-compatible device's basic c
 
 A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](https://msdn.microsoft.com/library/windows/hardware/ff537921).)
 
- 
+ 
 
- 
+ 
 
 
 

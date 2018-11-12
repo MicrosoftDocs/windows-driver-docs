@@ -35,9 +35,9 @@ The KSNODETYPE\_AUDIO\_KEYWORDDETECTOR audio endpoint must support the following
 
 [KSPROPSETID\_SoundDetector](kspropsetid-sounddetector.md)
 
- 
+ 
 
- 
+ 
 
 
 

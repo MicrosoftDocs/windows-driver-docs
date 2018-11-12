@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_IMAGE [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

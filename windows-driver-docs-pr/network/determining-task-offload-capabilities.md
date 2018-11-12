@@ -44,9 +44,9 @@ The following topics contain specific information for each type of offload servi
 -   [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md)
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,83 +51,83 @@ After you have set up your host and target computer and connected them with a de
 ## <span id="Get_started_using_WinDbg"></span><span id="get_started_using_windbg"></span><span id="GET_STARTED_USING_WINDBG"></span>Get started using WinDbg
 
 
-1.  On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
-2.  In WinDbg, choose **Contents** from the **Help** menu. This opens the debugger documentation CHM file. The debugger documentation is also available on line [here](index.md).
-3.  When you establish a kernel-mode debugging session, WinDbg might break in to the target computer automatically. If WinDbg has not already broken in, choose **Break** from the **Debug** menu.
+1. On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
+2. In WinDbg, choose **Contents** from the **Help** menu. This opens the debugger documentation CHM file. The debugger documentation is also available on line [here](index.md).
+3. When you establish a kernel-mode debugging session, WinDbg might break in to the target computer automatically. If WinDbg has not already broken in, choose **Break** from the **Debug** menu.
 
-4.  Near the bottom of the WinDbg window, in the command line, enter this command:
+4. Near the bottom of the WinDbg window, in the command line, enter this command:
 
-    [**.sympath srv\***](https://go.microsoft.com/fwlink/p?linkid=399238)
+   [**.sympath srv\\***](https://go.microsoft.com/fwlink/p?linkid=399238)
 
-    The output is similar to this:
+   The output is similar to this:
 
-    ```dbgcmd
-    Symbol search path is: srv*
-    Expanded Symbol search path is: cache*;SRV*https://msdl.microsoft.com/download/symbols
-    ```
+   ```dbgcmd
+   Symbol search path is: srv*
+   Expanded Symbol search path is: cache*;SRV*https://msdl.microsoft.com/download/symbols
+   ```
 
-    The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to obtain information about code modules (function names, variable names, and the like).
+   The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to obtain information about code modules (function names, variable names, and the like).
 
-    Enter this command, which tells WinDbg to do its initial finding and loading of symbol files:
+   Enter this command, which tells WinDbg to do its initial finding and loading of symbol files:
 
-    [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239)
+   [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239)
 
-5.  To see a list of loaded modules, enter this command:
+5. To see a list of loaded modules, enter this command:
 
-    [**lm**](https://go.microsoft.com/fwlink/p?linkid=399237)
+   [**lm**](https://go.microsoft.com/fwlink/p?linkid=399237)
 
-    The output is similar to this:
+   The output is similar to this:
 
-    ```dbgcmd
-    0:000>3: kd> lm
-    start             end                 module name
-    fffff800`00000000 fffff800`00088000   CI         (deferred)             
-    ...         
-    fffff800`01143000 fffff800`01151000   BasicRender   (deferred)             
-    fffff800`01151000 fffff800`01163000   BasicDisplay  (deferred)             
-    ...      
-    fffff800`02a0e000 fffff800`03191000   nt  (pdb symbols) C:\...\ntkrnlmp.pdb
-    fffff800`03191000 fffff800`03200000   hal (deferred)             
-    ...
-    ```
+   ```dbgcmd
+   0:000>3: kd> lm
+   start             end                 module name
+   fffff800`00000000 fffff800`00088000   CI         (deferred)             
+   ...         
+   fffff800`01143000 fffff800`01151000   BasicRender   (deferred)             
+   fffff800`01151000 fffff800`01163000   BasicDisplay  (deferred)             
+   ...      
+   fffff800`02a0e000 fffff800`03191000   nt  (pdb symbols) C:\...\ntkrnlmp.pdb
+   fffff800`03191000 fffff800`03200000   hal (deferred)             
+   ...
+   ```
 
-6.  To start target computer running, enter this command:
+6. To start target computer running, enter this command:
 
-    [**g**](https://go.microsoft.com/fwlink/p?linkid=399388)
+   [**g**](https://go.microsoft.com/fwlink/p?linkid=399388)
 
-7.  To break in again, choose **Break** from the **Debug** menu.
+7. To break in again, choose **Break** from the **Debug** menu.
 
-8.  Enter this command to examine the \_FILE\_OBJECT data type in the nt module:
+8. Enter this command to examine the \_FILE\_OBJECT data type in the nt module:
 
-    [**dt nt!\_FILE\_OBJECT**](https://go.microsoft.com/fwlink/p?linkid=399397)
+   [**dt nt!\_FILE\_OBJECT**](https://go.microsoft.com/fwlink/p?linkid=399397)
 
-    The output is similar to this:
+   The output is similar to this:
 
-    ```dbgcmd
-    0:000>0: kd> dt nt!_FILE_OBJECT
-       +0x000 Type             : Int2B
-       +0x002 Size             : Int2B
-       +0x008 DeviceObject     : Ptr64 _DEVICE_OBJECT
-       +0x010 Vpb              : Ptr64 _VPB
-       ...
-       +0x0c0 IrpList          : _LIST_ENTRY
-       +0x0d0 FileObjectExtension : Ptr64 Void
-    ```
+   ```dbgcmd
+   0:000>0: kd> dt nt!_FILE_OBJECT
+      +0x000 Type             : Int2B
+      +0x002 Size             : Int2B
+      +0x008 DeviceObject     : Ptr64 _DEVICE_OBJECT
+      +0x010 Vpb              : Ptr64 _VPB
+      ...
+      +0x0c0 IrpList          : _LIST_ENTRY
+      +0x0d0 FileObjectExtension : Ptr64 Void
+   ```
 
-9.  Enter this command to examine some of the symbols in the nt module:
+9. Enter this command to examine some of the symbols in the nt module:
 
-    [**x nt!\*CreateProcess\***](https://go.microsoft.com/fwlink/p?linkid=399240)
+   [**x nt!\*CreateProcess\\***](https://go.microsoft.com/fwlink/p?linkid=399240)
 
-    The output is similar to this:
+   The output is similar to this:
 
-    ```dbgcmd
-    0:000>0: kd> x nt!*CreateProcess*
-    fffff800`030821cc nt!ViCreateProcessCallbackInternal (<no parameter info>)
-    ...
-    fffff800`02e03904 nt!MmCreateProcessAddressSpace (<no parameter info>)
-    fffff800`02cece00 nt!PspCreateProcessNotifyRoutine = <no type information>
-    ...
-    ```
+   ```dbgcmd
+   0:000>0: kd> x nt!*CreateProcess*
+   fffff800`030821cc nt!ViCreateProcessCallbackInternal (<no parameter info>)
+   ...
+   fffff800`02e03904 nt!MmCreateProcessAddressSpace (<no parameter info>)
+   fffff800`02cece00 nt!PspCreateProcessNotifyRoutine = <no type information>
+   ...
+   ```
 
 10. Enter this command to put a breakpoint at **MmCreateProcessAddressSpace**:
 
@@ -172,7 +172,7 @@ After you have set up your host and target computer and connected them with a de
 
 13. Clear your breakpoint by entering this command:
 
-    [**bc \***](https://go.microsoft.com/fwlink/p?linkid=399401)
+    [**bc \\***](https://go.microsoft.com/fwlink/p?linkid=399401)
 
     Enter [**g**](https://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run. Break in again by choosing **Break** from the **Debug** menu or pressing **CTRL-Break**.
 
@@ -323,7 +323,7 @@ After you have set up your host and target computer and connected them with a de
 
     [**!devstack** *PdoAddress*](https://go.microsoft.com/fwlink/p?linkid=399245)
 
-    For example: *PdoAddress***!devstack 0xffffe00001159610**
+    For example: <em>PdoAddress</em>**!devstack 0xffffe00001159610**
 
     ```dbgcmd
     0:000>0: kd> !devstack 0xffffe00001159610
@@ -424,9 +424,9 @@ After you have set up your host and target computer and connected them with a de
 
 [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
 
- 
+ 
 
- 
+ 
 
 
 

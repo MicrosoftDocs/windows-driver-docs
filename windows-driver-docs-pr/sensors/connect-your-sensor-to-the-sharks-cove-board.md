@@ -41,9 +41,9 @@ For more detailed technical information about the Sharks Cove board, see [Sharks
 
 After successfully connecting your sensor test board to Sharks Cove, read the next topic for guidance on how to [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

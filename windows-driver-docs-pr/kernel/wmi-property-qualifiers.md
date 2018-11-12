@@ -76,7 +76,7 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 </tr>
 <tr class="even">
 <td><p><strong>WmiDataId(</strong><em>data-item-ID</em><strong>)</strong></p></td>
-<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item's data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
+<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item&#39;s data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>WmiMethodId(</strong><em>method-item-ID</em><strong>)</strong></p></td>
@@ -113,11 +113,11 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

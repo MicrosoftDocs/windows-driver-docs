@@ -35,9 +35,9 @@ Protocol drivers set the **SourceHandle** member in the NET\_BUFFER\_LIST struct
 
 Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LIST structure to the *NdisBindingHandle* value that NDIS provided in a call to **NdisOpenAdapterEx**. If an intermediate driver forwards a send request, the driver must save the **SourceHandle** value that the overlying driver provided before it writes to the **SourceHandle** member. When NDIS returns a forwarded NET\_BUFFER\_LIST structure to the intermediate driver, the intermediate driver must restore the **SourceHandle** that it saved.
 
- 
+ 
 
- 
+ 
 
 
 

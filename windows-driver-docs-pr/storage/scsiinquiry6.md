@@ -26,16 +26,16 @@ Syntax
 
 ```ManagedCPlusPlus
 void ScsiInquiry(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS      HBAStatus,
-   [in] uint8                                   Cdb[6],
-   [in, HBAType("HBA_WWN")] uint8               HbaPortWWN[8],
-   [in, HBAType("HBA_WWN")] uint8               DiscoveredPortWWN[8],
-   [in] uint64                                  FcLun,
-   [out] uint32                                 ResponseBufferSize,
-   [out] uint32                                 SenseBufferSize,
-   [out] uint8                                  ScsiStatus,
-   [out, WmiSizeIs("ResponseBufferSize")] uint8 ResponseBuffer[],
-   [out, WmiSizeIs("SenseBufferSize")] uint8    SenseBuffer[]
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS      HBAStatus,
+   [in] uint8                                   Cdb[6],
+   [in, HBAType("HBA_WWN")] uint8               HbaPortWWN[8],
+   [in, HBAType("HBA_WWN")] uint8               DiscoveredPortWWN[8],
+   [in] uint64                                  FcLun,
+   [out] uint32                                 ResponseBufferSize,
+   [out] uint32                                 SenseBufferSize,
+   [out] uint8                                  ScsiStatus,
+   [out, WmiSizeIs("ResponseBufferSize")] uint8 ResponseBuffer[],
+   [out, WmiSizeIs("SenseBufferSize")] uint8    SenseBuffer[]
 );
 ```
 
@@ -115,9 +115,9 @@ Requirements
 
 [**ScsiInquiry\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff564604)
 
- 
+ 
 
- 
+ 
 
 
 

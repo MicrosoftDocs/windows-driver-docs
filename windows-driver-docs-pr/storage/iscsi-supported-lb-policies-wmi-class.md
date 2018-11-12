@@ -59,9 +59,9 @@ class ISCSI_Supported_LB_Policies {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Supported\_LB\_Policies**](https://msdn.microsoft.com/library/windows/hardware/ff561570) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -71,9 +71,9 @@ None of the create functions return an error code, which would have been ideal f
 
 Deferred contexts can return E\_OUTOFMEMORY through a call to [**pfnSetErrorCb**](https://msdn.microsoft.com/library/windows/hardware/ff568929) from DDI functions that previously only allowed D3DDDIERR\_DEVICEREMOVED (like [**Draw**](https://msdn.microsoft.com/library/windows/hardware/ff556120), [**SetBlendState**](https://msdn.microsoft.com/library/windows/hardware/ff569527), and so on), since deferred context memory demands perpetually grow with each call to a DDI function. The Direct3D API triggers a local context removal, to assist the driver with such a failure case, which effectively tosses out the partially built command list. The application continues to determine that it is recording a command list; however, when the application eventually calls the **FinishCommandList** function, **FinishCommandList** returns a failure code of E\_OUTOFMEMORY.
 
- 
+ 
 
- 
+ 
 
 
 

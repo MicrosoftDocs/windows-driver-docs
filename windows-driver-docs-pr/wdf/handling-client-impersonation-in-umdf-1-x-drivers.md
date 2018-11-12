@@ -45,7 +45,7 @@ UMDF does not allow a driver's **OnImpersonate** callback function to call any o
 
 **Note**   In versions 1.0 through 1.7 of UMDF, [**IWDFIoRequest::Impersonate**](https://msdn.microsoft.com/library/windows/hardware/ff559136) grants the highest impersonation level that the client application and INF file allow, even if the impersonation level that the driver requests is lower. In UMFD versions 1.9 and later, the **Impersonate** method grants only the impersonation level that the driver requests.
 
- 
+ 
 
 ### Passing Credentials down the Driver Stack
 
@@ -73,9 +73,9 @@ To reduce the chance of an "elevation of privilege" attack, you should:
 
     Your **OnImpersonate** callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
 
- 
+ 
 
- 
+ 
 
 
 

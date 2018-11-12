@@ -70,7 +70,7 @@ The endpoint builder creates endpoints with any of the following KSNODETYPE valu
 </tbody>
 </table>
 
- 
+ 
 
 In Windows 7 and later versions of Windows, endpoints with a form factor of LineLevel but with a KSNODETYPE not equal to KSNODETYPE\_LINE\_CONNECTOR are also created as disabled and hidden. The following endpoints fall into this category.
 
@@ -169,7 +169,7 @@ In Windows 7 and later versions of Windows, endpoints with a form factor of Line
 </tbody>
 </table>
 
- 
+ 
 
 The following INF file snippet shows how to use **PKEY\_AudioDevice\_EnableEndpointByDefault** to enable or disable an endpoint by default.
 
@@ -274,11 +274,11 @@ In the preceding example, the bitwise OR combination of FLOW\_MASK\_CAPTURE and 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

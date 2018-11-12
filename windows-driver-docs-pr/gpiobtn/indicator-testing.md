@@ -46,7 +46,7 @@ Various form factors allow for different methods of conversion, such as the foll
 
 **Figure 2 Screen Swivel Conversion**
 
- 
+ 
 
 **Slate examples:**
 
@@ -68,9 +68,9 @@ It is important to perform end-to-end indicator testing for convertibles to expo
 -   Various timings when converting the system from one mode to another mode.
 -   Mechanical specifics of the convertible.
 
- 
+ 
 
- 
+ 
 
 
 

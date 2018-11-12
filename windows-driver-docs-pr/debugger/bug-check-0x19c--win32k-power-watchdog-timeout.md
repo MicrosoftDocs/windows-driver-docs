@@ -40,8 +40,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 <td align="left">1</td>
 <td align="left"><p>Failure type (win32kbase!POWER_WATCHDOG_TYPE)</p>
 <div class="code">
-```
-          0x10 : The power request queue is not making progress
+<code>0x10 : The power request queue is not making progress
               2 - Pointer to the thread processing power requests, if any
               3 - Pointer to the win32k user lock
               4 - Pointer to the power request (win32kbase!PPOWERREQUEST) being
@@ -61,8 +60,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
           0x50 : Calling monitor driver to power on
               2 - Pointer to the power request worker thread
               3 - Reserved
-              4 - Reserved
-```
+              4 - Reserved</code>
 </div></td>
 </tr>
 <tr class="even">
@@ -80,11 +78,11 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

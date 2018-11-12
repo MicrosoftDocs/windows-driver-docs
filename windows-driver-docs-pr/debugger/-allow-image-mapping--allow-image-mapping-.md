@@ -60,7 +60,7 @@ Allows image files to be mapped.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -69,9 +69,9 @@ With no parameters, **.allow\_image\_mapping** will display whether image file m
 
 Image mapping is most common when a minidump is being debugged. Image mapping can also occur if DbgHelp is unable to access debug records (for example, during kernel debugging when memory has been paged out).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -75,16 +75,16 @@ The following table shows the resulting arm type if *NdkArmCq* is called a secon
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

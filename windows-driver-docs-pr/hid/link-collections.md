@@ -85,7 +85,7 @@ As indicated in the previous figure, link collections are linked together in a t
 </tbody>
 </table>
 
- 
+ 
 
 In a link collection array, the following definitions hold:
 
@@ -127,9 +127,9 @@ An application or driver can determine which collections are aliased by repeated
 
 [Button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) identify, for each usage they describe, the link collection that contains the usage. If a link collection is aliased, the capability arrays specify the preferred usage.
 
- 
+ 
 
- 
+ 
 
 
 

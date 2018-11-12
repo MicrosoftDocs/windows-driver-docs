@@ -65,7 +65,7 @@ The following table describes the valid values for the **WIA\_IPS\_OVER\_SCAN** 
 </tbody>
 </table>
 
- 
+ 
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is optional. When the property is supported, WIA\_OVER\_SCAN\_DISABLED is the required default value.
 
@@ -85,9 +85,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ The following topics provide more information about miniport driver buffer manag
 
 [Indicating Received Data from a Miniport Driver](indicating-received-data-from-a-miniport-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

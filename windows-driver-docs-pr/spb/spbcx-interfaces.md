@@ -63,9 +63,9 @@ In addition to the I/O control (IOCTL) codes that are supported by SpbCx, the SP
 
 Kernel-mode clients of the SpbCx I/O request interface can send I/O requests at an interrupt request level (IRQL) of either PASSIVE\_LEVEL or DISPATCH\_LEVEL. User-mode clients can send I/O requests only at PASSIVE\_LEVEL. I/O completion can occur at PASSIVE\_LEVEL or DISPATCH\_LEVEL. All I/O requests can return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

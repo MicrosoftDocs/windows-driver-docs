@@ -39,9 +39,9 @@ This section includes the following topics:
 
 [Device Stage for Document Devices](device-stage-for-document-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

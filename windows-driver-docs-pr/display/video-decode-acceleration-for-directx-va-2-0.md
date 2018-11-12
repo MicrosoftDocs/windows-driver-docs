@@ -30,9 +30,9 @@ The following topics discuss video decoding for DirectX VA 2.0:
 
 [Synchronizing Video Decode Operations](synchronizing-video-decode-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

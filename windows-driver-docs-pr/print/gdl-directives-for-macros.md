@@ -33,9 +33,9 @@ GDL contains the following macro directives:
 
 For more information about macro directives, see [GDL Macros](gdl-macros.md).
 
- 
+ 
 
- 
+ 
 
 
 

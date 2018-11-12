@@ -27,9 +27,9 @@ The following figure shows GDI's calling sequence for disabling the video hardwa
 
 ![diagram illustrating disabling the video hardware](images/202-02.png)
 
- 
+ 
 
- 
+ 
 
 
 

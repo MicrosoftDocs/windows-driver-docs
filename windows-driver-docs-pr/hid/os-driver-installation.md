@@ -63,9 +63,9 @@ Notes:
 
 For additional details, please refer to the MSDN whitepaper titled “Hardware IDs for PS/2 Input Devices on Laptops ”.
 
- 
+ 
 
- 
+ 
 
 
 

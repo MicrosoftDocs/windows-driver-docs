@@ -64,9 +64,9 @@ The target that the debugger engine is currently controlling. When an event occu
 <span id="current_thread"></span><span id="CURRENT_THREAD"></span>**current thread**  
 The thread that the debugger engine is currently controlling. When an event occurs, the current thread is set to the event thread.
 
- 
+ 
 
- 
+ 
 
 
 

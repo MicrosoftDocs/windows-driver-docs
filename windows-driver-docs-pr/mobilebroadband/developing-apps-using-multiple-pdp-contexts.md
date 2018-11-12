@@ -56,7 +56,7 @@ HTTP-based APIs, such as [**XMLHTTPRequest**](https://msdn.microsoft.com/library
 **Note**  
 [**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](https://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
 
- 
+ 
 
 ![figure 3](images/mb-pdp-fig4.jpg)
 
@@ -458,7 +458,7 @@ Some operators have indicated that special PDP contexts have limited bandwidth. 
 **Note**  
 This is just to avoid extra traffic on special PDP contexts. You cannot rely on this as a security mechanism for restricting apps to special PDP contexts. If you would like to restrict access to special PDP contexts, you must implement some authentication or security mechanism on your network. For example, you could use a filter that allows only certain IP addresses for a specific PDP context.
 
- 
+ 
 
 Some mobile networks do not support multiple PDP contexts. You can provision whether your network supports multiple PDP context or not. If your network doesn’t support multiple PDP contexts, Windows should not allow apps to create on-demand connections on special APNs. By default, Windows assumes you support multiple PDP contexts.
 
@@ -589,9 +589,9 @@ Since this feature is operator specific, it is optional for mobile broadband dev
 
 -   The device firmware should continue to abstract SMS PDP contexts and route them through the SMS CIDs regardless of the bearer used underneath.
 
- 
+ 
 
- 
+ 
 
 
 

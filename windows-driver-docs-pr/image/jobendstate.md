@@ -46,25 +46,25 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobCompletedState</strong>](jobcompletedstate.md)</p></td>
+<td><p><a href="jobcompletedstate.md" data-raw-source="[&lt;strong&gt;JobCompletedState&lt;/strong&gt;](jobcompletedstate.md)"><strong>JobCompletedState</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobCompletedStateReasons</strong>](jobcompletedstatereasons.md)</p></td>
+<td><p><a href="jobcompletedstatereasons.md" data-raw-source="[&lt;strong&gt;JobCompletedStateReasons&lt;/strong&gt;](jobcompletedstatereasons.md)"><strong>JobCompletedStateReasons</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobCompletedTime</strong>](jobcompletedtime.md)</p></td>
+<td><p><a href="jobcompletedtime.md" data-raw-source="[&lt;strong&gt;JobCompletedTime&lt;/strong&gt;](jobcompletedtime.md)"><strong>JobCompletedTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobName</strong>](jobname.md)</p></td>
+<td><p><a href="jobname.md" data-raw-source="[&lt;strong&gt;JobName&lt;/strong&gt;](jobname.md)"><strong>JobName</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobOriginatingUserName</strong>](joboriginatingusername.md)</p></td>
+<td><p><a href="joboriginatingusername.md" data-raw-source="[&lt;strong&gt;JobOriginatingUserName&lt;/strong&gt;](joboriginatingusername.md)"><strong>JobOriginatingUserName</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScansCompleted</strong>](scanscompleted.md)</p></td>
+<td><p><a href="scanscompleted.md" data-raw-source="[&lt;strong&gt;ScansCompleted&lt;/strong&gt;](scanscompleted.md)"><strong>ScansCompleted</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -83,7 +83,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndStateEvent</strong>](jobendstateevent.md)</p></td>
+<td><p><a href="jobendstateevent.md" data-raw-source="[&lt;strong&gt;JobEndStateEvent&lt;/strong&gt;](jobendstateevent.md)"><strong>JobEndStateEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -112,9 +112,9 @@ The **JobEndState** element contains child elements that describe various aspect
 
 [**ScansCompleted**](scanscompleted.md)
 
- 
+ 
 
- 
+ 
 
 
 

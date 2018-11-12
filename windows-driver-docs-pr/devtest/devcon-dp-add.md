@@ -21,8 +21,6 @@ Adds a third-party (OEM) driver package to the driver store on the local compute
 
 ```
     devcon dp_add inf
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -50,9 +48,9 @@ r\inf\i386\toaster.inf
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
- 
 
- 
+
+
 
 
 

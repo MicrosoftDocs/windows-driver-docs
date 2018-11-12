@@ -41,7 +41,7 @@ The **Disable paging of kernel stacks** flag prevents paging of the kernel-mode 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +49,9 @@ Generally, the kernel-mode stack cannot be paged; it is guaranteed to be residen
 
 The kernel debugger can provide information about a thread only when its stack is in physical memory. This flag is particularly important when debugging deadlocks and in other cases when every thread must be tracked.
 
- 
+ 
 
- 
+ 
 
 
 

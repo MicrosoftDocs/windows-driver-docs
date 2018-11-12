@@ -18,7 +18,7 @@ Windows on Windows (WOW64) enables Microsoft Win32 user-mode applications to run
 
 **Note**   Although the buffer *contents* are not thunked, the buffer *pointers* are converted into 64-bit pointers.
 
- 
+ 
 
 User-mode applications call [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) to send an I/O request directly to a specified kernel-mode driver. This request contains an I/O control code (IOCTL) or file system control code (FSCTL) and pointers to input and output data buffers. The format of these data buffers is specific to the IOCTL or FSCTL, which in turn is defined by the kernel-mode driver. Because the buffer format is arbitrary, and because it is known to the driver and not WOW64, the task of thunking the data is left to the driver.
 
@@ -30,9 +30,9 @@ Your 64-bit driver must support 32-bit I/O if all of the following are true:
 
 -   Your IOCTL code cannot easily be rewritten to eliminate the use of pointer-precision buffer data types.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ These tools are located in the following directories:
 
 **Note**  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\10.
 
- 
+ 
 
 The Microsoft Windows SDK includes information about the services, components, and tools that enable you to add cryptographic security to your applications. This includes the [**CertMgr**](certmgr.md), [**MakeCert**](makecert.md), and [**SignTool**](signtool.md) tools.
 
@@ -39,9 +39,9 @@ For more information on signing drivers and [driver packages](https://msdn.micro
 
 For information on test-signing a driver package, see [Signing Drivers during Development and Test](https://msdn.microsoft.com/library/windows/hardware/ff552264).
 
- 
+ 
 
- 
+ 
 
 
 

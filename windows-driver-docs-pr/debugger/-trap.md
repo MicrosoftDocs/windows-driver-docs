@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!trap** extension command is obsolete. Use the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

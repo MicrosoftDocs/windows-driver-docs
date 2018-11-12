@@ -22,9 +22,9 @@ Note that each allocated NET\_BUFFER\_LIST structure must have only one NET\_BUF
 
 For more information about creating buffer pools, see [Miniport Driver Buffer Management](miniport-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

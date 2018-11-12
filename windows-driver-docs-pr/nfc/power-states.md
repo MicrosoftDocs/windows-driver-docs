@@ -40,9 +40,9 @@ The client driver can choose to be the power policy owner of the stack through t
 
 ![power management operations](images/powermanagementoperations.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

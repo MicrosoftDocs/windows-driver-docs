@@ -20,9 +20,9 @@ Deblocking filter control commands, if present, are sent once for each luminance
 
 The filtering for each block is done by specifying deblocking across the top edge of the block, followed by deblocking across the left edge of the block. Deblocking is specified for chrominance only once, and the same deblocking commands are used for both the Cb and Cr components. For example, deblocking of a 16x16 macroblock that contains 4:2:0 data using 8x8 blocks is done by sending four sets of two (top and left) edge-filtering commands for the luminance blocks, followed by one set of two edge-filtering commands for the two chrominance blocks.
 
- 
+ 
 
- 
+ 
 
 
 

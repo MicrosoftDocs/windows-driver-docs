@@ -21,9 +21,9 @@ The `KSPROPSETID_Jack` property set includes the [**KSPROPERTY\_JACK**](ksproper
 
 [**KSPROPERTY\_JACK\_CONTAINERID**](ksproperty-jack-containerid.md)
 
- 
+ 
 
- 
+ 
 
 
 

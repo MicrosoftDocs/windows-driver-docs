@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerElements</strong>](scannerelements.md)</p></td>
+<td><p><a href="scannerelements.md" data-raw-source="[&lt;strong&gt;ScannerElements&lt;/strong&gt;](scannerelements.md)"><strong>ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -381,9 +381,9 @@ The following code example shows a response to a GetScannerElementsRequest opera
 
 [**ScannerElements**](scannerelements.md)
 
- 
+ 
 
- 
+ 
 
 
 

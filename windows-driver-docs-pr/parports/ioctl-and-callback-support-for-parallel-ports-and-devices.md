@@ -60,9 +60,9 @@ For more information about how to operate parallel ports and devices attached to
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
 

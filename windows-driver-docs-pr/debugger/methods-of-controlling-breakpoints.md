@@ -67,7 +67,7 @@ You can include a command in a breakpoint that is automatically executed when th
 
 **Note**  If you are controlling the user-mode debugger from the kernel debugger, do not use [**g (Go)**](g--go-.md) in the breakpoint command string. The serial interface might be unable to keep up with this command, and you will be unable to break back into CDB. For more information about this situation, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
 
- 
+ 
 
 ### <span id="number_of_breakpoints"></span><span id="NUMBER_OF_BREAKPOINTS"></span>Number of Breakpoints
 
@@ -79,9 +79,9 @@ The number of processor breakpoints that are supported depends on the target pro
 
 You can set a breakpoint that is triggered only under certain conditions. For more information about these kinds of breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
- 
+ 
 
- 
+ 
 
 
 

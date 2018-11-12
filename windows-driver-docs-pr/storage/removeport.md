@@ -25,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void RemovePort(
-   [in, HBAType("HBA_WWN")] uint8          PortWWN[8],
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
+   [in, HBAType("HBA_WWN")] uint8          PortWWN[8],
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
 );
 ```
 
@@ -76,9 +76,9 @@ Requirements
 
 [**RemovePort\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff564017)
 
- 
+ 
 
- 
+ 
 
 
 

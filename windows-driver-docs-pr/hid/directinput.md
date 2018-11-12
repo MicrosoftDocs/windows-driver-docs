@@ -30,9 +30,9 @@ This documentation includes the following topics:
 
 [Extending the DirectInput Game Controller Control Panel](extending-the-directinput-game-controller-control-panel.md)
 
- 
+ 
 
- 
+ 
 
 
 

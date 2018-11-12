@@ -39,9 +39,9 @@ If you want your storage device to be supported on Windows Server 2003 and later
 
 The sections that follow describe the SCSI Port, Storport, and ATA port drivers and how they differ.
 
- 
+ 
 
- 
+ 
 
 
 

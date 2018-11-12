@@ -52,7 +52,7 @@ Hexadecimal address of the trap frame on the target system. Omitting the address
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +67,9 @@ This command also instructs the kernel debugger to use the specified context rec
 
 This extension is commonly used when debugging bug check 0xA and 0x7F. For details and an example, see [**Bug Check 0xA**](bug-check-0xa--irql-not-less-or-equal.md) (IRQL\_NOT\_LESS\_OR\_EQUAL).
 
- 
+ 
 
- 
+ 
 
 
 

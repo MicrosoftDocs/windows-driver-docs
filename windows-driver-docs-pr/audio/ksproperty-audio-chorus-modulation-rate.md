@@ -50,7 +50,7 @@ The KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE property specifies the chorus mo
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type ULONG and it specifies the chorus modulation rate. It is expressed in Hz. The value can range from 0 to 255.9961 in 1/256th increments. To accommodate this, the property value should be expressed as a fixed-point 16.16 value, where the following is true:
 
@@ -86,9 +86,9 @@ Requirements
 
 [**KSNODETYPE\_CHORUS**](ksnodetype-chorus.md)
 
- 
+ 
 
- 
+ 
 
 
 

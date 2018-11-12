@@ -80,7 +80,7 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -92,9 +92,9 @@ The call to this function is synchronous.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

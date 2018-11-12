@@ -20,19 +20,19 @@ ms.localizationpriority: medium
 
 Creating installations for international markets requires providing locale-specific INF files and, possibly, locale-specific driver files.
 
-An INF file that will be used in an international market should use **%***strkey***%** tokens for all user-viewable text. The strings are defined in an INF **Strings** section, which is typically at the end of the INF file.
+An INF file that will be used in an international market should use **%**<em>strkey</em>**%** tokens for all user-viewable text. The strings are defined in an INF **Strings** section, which is typically at the end of the INF file.
 
 ### Locale-Specific INF Files
 
 You can create a single INF file that supports several locales, or you can create a separate INF file for each locale, by following these guidelines:
 
--   To create a single international INF file, you should include a set of locale-specific **Strings.***LanguageID* sections, as described in the reference page for the [**INF Strings section**](inf-strings-section.md). Use this technique if you intend to supply a single installation medium for all international markets.
+- To create a single international INF file, you should include a set of locale-specific **Strings.**<em>LanguageID</em> sections, as described in the reference page for the [**INF Strings section**](inf-strings-section.md). Use this technique if you intend to supply a single installation medium for all international markets.
 
-    For installations on Windows 2000 and later versions of Windows, this is the recommended method for supporting international markets.
+  For installations on Windows 2000 and later versions of Windows, this is the recommended method for supporting international markets.
 
--   To create a separate INF file for each locale, start with a main INF file that contains all the necessary sections and entries, except for the **Strings** section. Then create a second set of files, where each file contains just the **Strings** section for a supported locale. Concatenate the main file with each strings file to generate the locale-specific INF files.
+- To create a separate INF file for each locale, start with a main INF file that contains all the necessary sections and entries, except for the **Strings** section. Then create a second set of files, where each file contains just the **Strings** section for a supported locale. Concatenate the main file with each strings file to generate the locale-specific INF files.
 
-    For installations on Windows 2000 and later versions of Windows, use this technique *only* if you intend to supply a separate installation medium for each international market. You cannot provide multiple versions of an INF file, for a particular operating system version, on a single installation medium because Windows cannot determine which INF file to use.
+  For installations on Windows 2000 and later versions of Windows, use this technique *only* if you intend to supply a separate installation medium for each international market. You cannot provide multiple versions of an INF file, for a particular operating system version, on a single installation medium because Windows cannot determine which INF file to use.
 
 ### Locale-Specific Versions of Driver Files
 
@@ -83,9 +83,9 @@ If an INF file contains characters that fall outside the ASCII range (that is, o
 
 Some applications, such as Notepad, allow you to create a Unicode file in either little-endian or big-endian format. Windows supports INF files that use either format.
 
- 
+ 
 
- 
+ 
 
 
 

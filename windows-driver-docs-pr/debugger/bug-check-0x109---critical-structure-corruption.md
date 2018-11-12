@@ -55,7 +55,7 @@ The CRITICAL\_STRUCTURE\_CORRUPTION bug check has a value of 0x00000109. This in
 </tbody>
 </table>
 
- 
+ 
 
 The value of Parameter 4 indicates the type of corrupted region.
 
@@ -250,7 +250,7 @@ The value of Parameter 4 indicates the type of corrupted region.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -290,9 +290,9 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

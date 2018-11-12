@@ -33,7 +33,7 @@ The primary differences between the WpdHelloWorldDriver and the WpdMultiTranspor
 | Device Arrival         | The new multitransport driver creates a Functional Unique Identifier (FUID) for the given device, enables the multitransport option, sets the necessary Plug and Play (PnP) values, and sets the current transport bandwidth. |
 | Multiple queue support | The new multitransport driver supports two I/O queues. (The WpdHelloWorldDriver supports a single queue.)                                                                                                                     |
 
- 
+ 
 
 To explore the capabilities of a multitransport driver and to test actual transport switching, you can install the [Media Transfer Protocol Porting Kit](https://www.microsoft.com/download/details.aspx?id=19153) and use the MTP simulator (*MtpSimUi.exe)* application. By using this application, you can install Microsoft's MTP driver, connect or disconnect from the emulated device, and switch transports.
 
@@ -42,9 +42,9 @@ To explore the capabilities of a multitransport driver and to test actual transp
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

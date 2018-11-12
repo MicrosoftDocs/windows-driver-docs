@@ -23,9 +23,9 @@ An INF file that installs a Net component (adapter) can specify adapter configur
 
 Note that if an adapter supports an **Advanced** properties page, the **Characteristics** entry in the *DDInstall* section for the adapter must include the NCF\_HAS\_UI value.
 
-A network INF file specifies configuration parameters for display in the Advanced page through an *add-registry-section* that is referenced by the *DDInstall* section for the component. Such an *add-registry-section* adds one or more configuration subkeys to the **Ndi\\params** key. The format for a configuration parameter subkey is **Ndi\\params\\***SubKeyName*, where *SubKeyName* is a REG\_SZ value that specifies a vendor-specific parameter name. For example, the key for a parameter that specifies a transceiver type could be named **Ndi\\params\\TransceiverType**.
+A network INF file specifies configuration parameters for display in the Advanced page through an *add-registry-section* that is referenced by the *DDInstall* section for the component. Such an *add-registry-section* adds one or more configuration subkeys to the **Ndi\\params** key. The format for a configuration parameter subkey is **Ndi\\params\\**<em>SubKeyName</em>, where *SubKeyName* is a REG\_SZ value that specifies a vendor-specific parameter name. For example, the key for a parameter that specifies a transceiver type could be named **Ndi\\params\\TransceiverType**.
 
-The following keywords are reserved and cannot be used as an **Ndi\\params\\***SubKeyName*: **BundleId**, **BusType**, **Characteristics**, **ComponentId**, **Description**, **DeviceInstanceId**, **DriverDate**, **DriverDesc**, **DriverVersion**, **InfPath**, **InfSection**, **InfSectionExt**,** *IfType** **InstallTimeStamp**, **Manufacturer**,** *MediaType**, **NetCfgInstanceId**, **NetLuidIndex**,** *PhysicalMediaType**, **Provider**, and **ProviderName**.
+The following keywords are reserved and cannot be used as an **Ndi\\params\\**<em>SubKeyName</em>: **BundleId**, **BusType**, **Characteristics**, **ComponentId**, **Description**, **DeviceInstanceId**, **DriverDate**, **DriverDesc**, **DriverVersion**, **InfPath**, **InfSection**, **InfSectionExt**,** *IfType** **InstallTimeStamp**, **Manufacturer**,** *MediaType*<em>, **NetCfgInstanceId</em>*, **NetLuidIndex*<em>,</em>* *PhysicalMediaType*<em>, **Provider</em><em>, and **ProviderName</em>*.
 
 For each parameter subkey that is added to **Ndi\\params**, the *add-registry-section* must add **ParamDesc**(parameter description) and **Type** values. The *add-registry-section* can also add **Default** and **Optional** values for the parameter and, if the parameter is numeric, **Min**, **Max**, and **Step** values. The following table describes the values that can be added to each **Ndi\\params** key.
 
@@ -83,11 +83,11 @@ For each parameter subkey that is added to **Ndi\\params**, the *add-registry-se
 </tbody>
 </table>
 
- 
+ 
 
 The range of values for an **enum** parameter are specified with a subkey that has the following format:
 
-**Ndi\\params\\***SubKeyName***\\enum**
+**Ndi\\params\\**<em>SubKeyName</em>**\\enum**
 
 Each enumerated value must have a subkey. Each **enum** subkey specifies a numeric value (starting with zero for the first enumerated value) and a description for that value.
 
@@ -105,9 +105,9 @@ HKR, Ndi\params\TransType\enum, "2",       0, "Thin Net (BNC/COAX)"
 HKR, Ndi\params\TransType\enum, "3",       0, "Twisted-Pair (TPE)"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

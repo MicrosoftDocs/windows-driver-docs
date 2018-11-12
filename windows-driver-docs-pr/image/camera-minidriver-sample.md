@@ -17,9 +17,9 @@ The wiadriverex directory in [WIA Driver Samples](http://go.microsoft.com/fwlink
 
 This sample shows how to write a WIA user-mode minidriver for a camera. It simulates a camera by reading images from a directory on the hard disk. This sample driver can be used as a starting point for your development, but your driver should access the camera hardware through one of the kernel-mode drivers provided with Windows.
 
- 
+ 
 
- 
+ 
 
 
 

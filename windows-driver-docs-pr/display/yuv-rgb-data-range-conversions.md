@@ -150,15 +150,15 @@ If you want to convert from RGB or YUV inputs to YUV or RGB outputs, the expecte
 </tbody>
 </table>
 
- 
+ 
 
 In this case the "nominal range" is the constant value from the [**DXVAHDDDI\_NOMINAL\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/dn265432) enumeration.
 
 See [YUV format ranges in Windows 8.1](yuv-format-ranges.md) for definitions of YUV format ranges.
 
- 
+ 
 
- 
+ 
 
 
 

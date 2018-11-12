@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must report support of the UBYTE4 vertex element type by setting the D3DDTCAPS\_UBYTE4 bit in the **DeclTypes** member of the D3DCAPS9 structure. To indicate nonsupport of the UBYTE4 vertex element type, the driver does not set the D3DDTCAPS\_UBYTE4 bit. In contrast, A DirectX 8.1 and earlier driver sets the D3DVTXPCAPS\_NO\_VSDT\_UBYTE4 bit to indicate nonsupport of the UBYTE4 vertex element type.
 
- 
+ 
 
- 
+ 
 
 
 

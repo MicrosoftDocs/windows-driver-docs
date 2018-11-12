@@ -45,12 +45,12 @@ The **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property indicates the mini
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p>[<strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450864)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450864" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_BUFFER_SIZE_RANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450864)"><strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -90,9 +90,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
- 
+ 
 
- 
+ 
 
 
 

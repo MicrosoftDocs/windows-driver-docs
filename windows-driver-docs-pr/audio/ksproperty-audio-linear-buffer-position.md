@@ -50,7 +50,7 @@ The KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION property request retrieves a num
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -79,9 +79,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

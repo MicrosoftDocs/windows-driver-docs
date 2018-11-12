@@ -23,7 +23,7 @@ The interfaces allow the state of the buttons or indicators to be toggled by cal
 **Note**  
 To prevent potential conflicts between multiple providers, a handle to the device provides exclusive access to the device.
 
- 
+ 
 
 ``` syntax
 typedef enum {
@@ -35,9 +35,9 @@ typedef enum {
 } GPIOBUTTONS_BUTTON_TYPE;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

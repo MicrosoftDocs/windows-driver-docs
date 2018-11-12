@@ -14,7 +14,7 @@ A [**ConnectionProfile**](https://msdn.microsoft.com/library/windows/apps/br2072
 **Note**  
 A list of all [**ConnectionProfile**](https://msdn.microsoft.com/library/windows/apps/br207249) objects can be retrieved from [**Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles**](https://msdn.microsoft.com/library/windows/apps/br207294).
 
- 
+ 
 
 ``` syntax
 var myConnectionProfileList = myNetworkAccountObject.getConnectionProfiles();
@@ -38,9 +38,9 @@ else
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

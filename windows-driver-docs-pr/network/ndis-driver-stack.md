@@ -57,9 +57,9 @@ The protocol edge of the intermediate driver should implement the same binding s
 
 [NDIS Protocol Drivers](ndis-protocol-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

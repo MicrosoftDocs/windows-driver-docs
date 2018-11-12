@@ -35,9 +35,9 @@ After an application or driver has connected to a HID collection, it can obtain 
 
 [Troubleshooting HID Reports](troubleshooting-hid-reports.md)
 
- 
+ 
 
- 
+ 
 
 
 

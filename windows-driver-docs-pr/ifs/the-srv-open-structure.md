@@ -48,9 +48,9 @@ A SRV\_OPEN structure contains the following:
 
 -   Additional storage requested by the network mini-redirector or the creator of the SRV\_OPEN structure
 
- 
+ 
 
- 
+ 
 
 
 

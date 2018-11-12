@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 When the class driver receives an IRP for a stream of a type it does not handle, it hands it off to the minidriver with the SRB\_UNKNOWN\_STREAM\_COMMAND code.
 
- 
+ 
 
- 
+ 
 
 
 

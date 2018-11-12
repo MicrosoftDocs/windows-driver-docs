@@ -85,9 +85,9 @@ The WSD Scan Service Schema defines the following operation elements and operati
 
 [**ValidTicket**](validticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

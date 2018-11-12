@@ -31,11 +31,11 @@ The power metering information that is accessed from PMI is generally read-only.
 
 For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://msdn.microsoft.com/library/windows/hardware/ff543884).
 
- 
+ 
 **Note**   The PMB infrastructure is supported on Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
 
 
- 
+ 
 
 
 

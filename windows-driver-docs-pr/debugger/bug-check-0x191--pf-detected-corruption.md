@@ -31,11 +31,11 @@ The PF\_DETECTED\_CORRUPTION bug check has a value of 0x00000191.
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

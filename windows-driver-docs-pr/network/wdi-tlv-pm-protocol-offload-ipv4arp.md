@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8\[4\]                                        | Specifies the host IPv4 address the network adapter uses for the Source Protocol Address (SPA) field when sending an ARP response.                                                                                                                                                                                                                                            |
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | Specifies the MAC address that the network adapter must use for the Source Hardware Address (SHA) field of the ARP response packet that it generates. However, it should use the current MAC address of the network adapter as the source address in the MAC header.                                                                                                          |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

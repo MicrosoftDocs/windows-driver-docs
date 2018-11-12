@@ -56,7 +56,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -85,7 +85,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 ### **Scenario 8**
 
@@ -124,7 +124,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -153,7 +153,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 The following list describes the meaning of values that appear in the preceding tables:
 
@@ -167,9 +167,9 @@ The following list describes the meaning of values that appear in the preceding 
 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ This section describes the following system-defined WMI minor function codes:
 
 If the driver receives an IRP containing any other IRP minor function code, it should forward the IRP to the next-lower driver.
 
- 
+ 
 
- 
+ 
 
 
 

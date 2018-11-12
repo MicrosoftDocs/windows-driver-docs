@@ -428,9 +428,9 @@ This table summarizes which functions are called by the script commands
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">.<strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
-<td align="left"><strong>[.scriptrun (Run Script)](-scriptrun--run-script-.md)</strong></td>
-<td align="left"><strong>[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)</strong></td>
+<td align="left">.<strong><a href="-scriptload--load-script-.md" data-raw-source="[.scriptload](-scriptload--load-script-.md)">.scriptload</a></strong></td>
+<td align="left"><strong><a href="-scriptrun--run-script-.md" data-raw-source="[.scriptrun (Run Script)](-scriptrun--run-script-.md)">.scriptrun (Run Script)</a></strong></td>
+<td align="left"><strong><a href="-scriptunload--unload-script-.md" data-raw-source="[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)">.scriptunload (Unload Script)</a></strong></td>
 </tr>
 <tr class="even">
 <td align="left">root</td>
@@ -459,7 +459,7 @@ This table summarizes which functions are called by the script commands
 </tbody>
 </table>
 
- 
+
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
 
@@ -512,7 +512,7 @@ Consider an example of a C++ class which represents a single dimensional array. 
 class Simple1DArray
 {
 private:
- 
+
     ULONG64 m_size;
     int *m_pValues;
 };
@@ -549,7 +549,7 @@ function initializeScript()
             for (var i = 0; i < size; ++i)
             {
                 yield ptr.dereference();
- 
+
                 //
                 // Note that the .add(1) method here is effectively doing pointer arithmetic on
                 // the underlying pointer.  It is moving forward by the size of 1 object.
@@ -558,7 +558,7 @@ function initializeScript()
             }
         }
     }
- 
+
     return [new host.typeSignatureRegistration(myVisualizer, "Simple1DArray")];
 }
 ```
@@ -661,16 +661,16 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
 ```javascript
  // Use JavaScript strict mode 
 "use strict";
- 
+
 // Define the invokeScript method to handle breakpoints
- 
+
  function invokeScript()
  {
     var ctl = host.namespace.Debugger.Utility.Control;
- 
+
     //Get the address of my string
     var address = host.evaluateExpression("pszCaption");
- 
+
     // The open and save dialogs use the same function
     // When we hit the open dialog, continue.
     // When we hit the save dialog, break.
@@ -735,7 +735,7 @@ function playWith64BitValues(a64, b64)
     //
     var sum = a64 + b64;
     host.diagnostics.debugLog("Sum   >> ", sum, "\n");
- 
+
 }
 
 function performOp64BitValues(a64, b64, op)
@@ -892,7 +892,7 @@ In order to allow a debugger extension to maintain precision, a set of math func
 | bitwiseShiftRight | .bitwiseShiftRight(value) | Shifts the 64-bit value right by the given amount and returns the result                                      |
 | toString          | .toString(\[radix\])      | Converts the 64-bit value to a display string in the default radix (or the optionally supplied radix)         |
 
- 
+
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
 
@@ -1051,7 +1051,7 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
 ```
 
 Use the **sx** script debugger command to see the list of events we can trap.
-                                                        
+
 ```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sx              
 sx                                                          
@@ -1062,13 +1062,13 @@ sx
 ```
 
 Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
-                                                            
+
 ```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sxe en          
 sxe en                                                      
 Event filter 'en' is now active                             
 ```
-                                                            
+
 
 Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
 
@@ -1088,7 +1088,7 @@ Now, you are back in the script debugger and broken in on the first line of the 
 >>> ****** SCRIPT BREAK DebuggableSample [BreakIn] ******   
            Location: line = 73, column = 5                  
            Text: var x = 99                                 
-                                                            
+
 >>> Debug [DebuggableSample 73:5] >                         
 ```
 
@@ -1113,7 +1113,6 @@ At this point, you should be broken into the throwAndCatch method on line 34.
 >>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
            Location: line = 34, column = 5                                            
            Text: var curProc = host.currentProcess                                    
-                                                                                      
 ```
 
 You can verify this by executing a stack trace.
@@ -1157,7 +1156,7 @@ bl
 ```
 
 From here, we'll disable the entry (en) event using the **sxd** script debugger command. 
- 
+
 ```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
@@ -1178,7 +1177,7 @@ Test
 ```
 
 Execute the script method again and watch our breakpoint be hit.
-                                                                                     
+
 ```dbgcmd
 0:000> dx @$scriptContents.outermost()                                                
 inside outer!                                                                         
@@ -1227,7 +1226,6 @@ Of the script debugger
 foo.a = 99
 Caught and returned!
 Test
-
 ```
 
 
@@ -1254,9 +1252,9 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
- 
 
- 
+
+
 
 
 

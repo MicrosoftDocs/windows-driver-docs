@@ -30,15 +30,15 @@ For complete documentation of this routine, see the Microsoft Windows SDK.
 
 **Note**   In Windows Vista and later versions of Windows, **DbgPrint** produces tagged messages as well. This is a change from previous versions of Windows.
 
- 
+ 
 
 **KdPrint** and **KdPrintEx** are identical to **DbgPrint** and **DbgPrintEx**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
 For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ When the network configuration subsystem installs, upgrades, or removes a networ
 
 -   The component's notify object can be implemented so that when the subsystem upgrades the component, the notify object will change the order of the component's binding path. To change this order, a notify object's [**INetCfgComponentSetup::Upgrade**](https://msdn.microsoft.com/library/windows/hardware/ff547783) method calls either the [**INetCfgComponentBindings::MoveBefore**](https://msdn.microsoft.com/library/windows/hardware/ff547722) or the [**INetCfgComponentBindings::MoveAfter**](https://msdn.microsoft.com/library/windows/hardware/ff547721) methods.
 
- 
+ 
 
- 
+ 
 
 
 

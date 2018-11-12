@@ -56,9 +56,9 @@ The resulting wrapped hardware media processing function is called a Device Prox
     -   [**KSMFT\_CATEGORY\_OTHER**](https://msdn.microsoft.com/library/windows/hardware/ff548601)
 -   Media foundation applications can then use the [MFTEnumEx](http://go.microsoft.com/fwlink/p/?linkid=155058) function to enumerate the devices that are registered as MFTs by using the categories mentioned previously.
 
- 
+ 
 
- 
+ 
 
 
 

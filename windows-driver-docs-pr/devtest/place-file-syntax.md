@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 # Place File Syntax
 
 
-**Note**   Place files are now obsolete and should not be used. .
+**Note**   Place files are now obsolete and should not be used. .
 
- 
+
 
 The place file is a text file that BinPlace reads to determine the class subdirectories that are associated with a file it is placing.
 
@@ -28,10 +28,8 @@ The path and name of this file are specified by the -p PlaceFile command-line pa
 Each line of a place file has the same format.
 
 ```
-    
-     FileName Class[:Class[...]   [ ; Comment ] 
 
-   
+     FileName Class[:Class[...]   [ ; Comment ] 
 ```
 
 Each line in the place file follows these rules:
@@ -100,23 +98,23 @@ On an x64-based computer: <strong>AMD64</strong>.</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>drivers</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\drivers</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\drivers</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>drvetc</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\drivers\\etc</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\drivers\etc</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>config</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\config</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\config</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For x86 builds:
 
@@ -141,18 +139,18 @@ For x86 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32x86</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32x86</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32x86</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32x86</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For AMD64 builds:
 
@@ -177,18 +175,18 @@ For AMD64 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32amd64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32amd64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32amd64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32amd64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For IA64 builds:
 
@@ -213,18 +211,18 @@ For IA64 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32ia64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32ia64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32ia64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32ia64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Unless otherwise noted, the symbol path is truncated to include only the first directory in the path. For example, if you were using BinPlace to move an x86 file called Build.exe that has the target class of **printer**, you might use the following command syntax:
 
@@ -251,9 +249,9 @@ someprogram.exe   dir1\dir2\dir3:otherdir1\otherdir2   ; To two locations
 <span id="_______Comment______"></span><span id="_______comment______"></span><span id="_______COMMENT______"></span> *Comment*   
 Any text after a semicolon will be ignored by BinPlace.
 
- 
 
- 
+
+
 
 
 

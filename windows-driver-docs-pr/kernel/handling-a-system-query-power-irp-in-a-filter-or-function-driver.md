@@ -32,9 +32,9 @@ A filter or function driver (that is not the power policy owner for a device) sh
 
 7.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

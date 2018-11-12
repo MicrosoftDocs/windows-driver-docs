@@ -68,9 +68,9 @@ ACL is: ->Ace[1]: ->Mask : 0x10000000
 ACL is: ->Ace[1]: ->SID: S-1-5-18 (Well Known Group: NT AUTHORITY\SYSTEM)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

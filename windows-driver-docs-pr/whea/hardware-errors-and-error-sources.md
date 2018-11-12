@@ -47,7 +47,7 @@ A single hardware error source might handle the error reporting for more than on
 
 **Note**   The system management interrupt (SMI) is handled by the firmware, not by the operating system.
 
- 
+ 
 
 A hardware error source is typically represented by the following:
 
@@ -63,11 +63,11 @@ Starting with Windows Vista, the operating system maintains a list of all of the
 
 **Note**   Windows Vista does not collect hardware error source information from ACPI tables. However, starting with Windows Server 2008 and Windows Vista SP1, the operating system uses ACPI tables to collect hardware error source information.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

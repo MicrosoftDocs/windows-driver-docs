@@ -18,7 +18,7 @@ OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION configures the Information Elements (I
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 When this command is received by the device, it shall update any relevant Wi-Fi Direct IEs, and append any necessary additional IEs in future outgoing messages sent by this port.
 
@@ -36,7 +36,7 @@ WDI can provide a pre-configured set of prefix hashes for the advertised service
 | [**WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn897991) |                                | X        | List of Wi-Fi Direct secondary device types.    |
 | [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICES**](https://msdn.microsoft.com/library/windows/hardware/dn897860)                 |                                | X        | Wi-Fi Direct advertised services.               |
 
- 
+ 
 
 ## Set property results
 
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

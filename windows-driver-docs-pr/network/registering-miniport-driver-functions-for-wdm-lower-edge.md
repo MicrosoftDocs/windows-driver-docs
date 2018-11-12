@@ -31,9 +31,9 @@ A miniport driver that has a WDM lower edge must call the [**NdisMRegisterMinipo
 
     The miniport driver can rely on NDIS to determine if its miniport instance has stopped responding, based on sends and requests that time out, so this routine is not typically required.
 
- 
+ 
 
- 
+ 
 
 
 

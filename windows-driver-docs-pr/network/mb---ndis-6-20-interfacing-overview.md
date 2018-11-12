@@ -93,7 +93,7 @@ MB miniport drivers must report the maximum data rate of the currently connected
 </tbody>
 </table>
 
- 
+ 
 
 **For CDMA-based MB device speed links**
 
@@ -106,11 +106,11 @@ MB miniport drivers must report the maximum data rate of the currently connected
 | 1xEV-DV        | 1.8 mbps                 | 3.1 mbps                |
 | 1xEvDO Rev. B. | 27 mbps                  | 3.1 mbps to 73.5 mbps   |
 
- 
+ 
 
 **Note**  MB devices should report the speed in the range of speed shown in the previous tables.
 
- 
+ 
 
 Unlike NDIS 5.1, different link state change indications are consolidated into a single NDIS\_STATUS\_LINK\_STATE indication by using the NDIS\_LINK\_STATE data structure. NDIS 5.1 indications can be mapped to this structure according to the information in the following table. In the case of link speed change, the consumer of the indication should compare the transmitting and receiving speed values with the ones it recorded for a previous indication to decide whether the link speed change has occurred or not.
 
@@ -142,11 +142,11 @@ RcvLinkSpeed
 
 Receiving speed (bps)
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

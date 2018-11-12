@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME requests that the device sends an A
 |--------|---------------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | 3                                     | 5                               |
 
- 
+ 
 
 This command is different from [OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME](oid-wdi-task-send-response-action-frame.md), which is a significantly more time-sensitive operation.
 
@@ -38,7 +38,7 @@ The host may decide to abort this operation and continue/retry the public action
 | [**WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898053) |                                |          | Parameters for sending an Action Frame Request. |
 | [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)                                         |                                |          | The Action Frame body.                          |
 
- 
+ 
 
 ## Task completion indication
 
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

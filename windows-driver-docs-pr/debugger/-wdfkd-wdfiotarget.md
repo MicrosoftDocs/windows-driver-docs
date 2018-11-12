@@ -73,9 +73,9 @@ Requests sent with ignore-target-state: 0
 
 The output in the preceding example includes the address of the I/O target's parent framework device object, along with the addresses of the WDM DEVICE\_OBJECT structures that represent the target driver's device object and the target device's physical device object (PDO).
 
- 
+ 
 
- 
+ 
 
 
 

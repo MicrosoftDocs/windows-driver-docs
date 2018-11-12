@@ -31,9 +31,9 @@ The routines in the two versions of the [HD Audio DDI](hd-audio-ddi-routines.md)
 
 [**HDAUDIO\_STREAM\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff536430)
 
- 
+ 
 
- 
+ 
 
 
 

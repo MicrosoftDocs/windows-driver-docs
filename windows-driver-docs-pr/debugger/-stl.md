@@ -61,7 +61,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ The verbose options will only take effect if the debugger's verbose mode is enab
 
 This extension currently supports STL templates of the following types: string, wstring, vector&lt;*string*&gt;, vector&lt;*wstring*&gt;, list&lt;*string*&gt;, list&lt;*wstring*&gt;, and pointers to any of the preceding types.
 
- 
+ 
 
- 
+ 
 
 
 

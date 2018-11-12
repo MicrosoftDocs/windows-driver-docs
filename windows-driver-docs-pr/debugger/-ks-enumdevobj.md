@@ -48,7 +48,7 @@ Specifies a pointer to a WDM device object.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ WDM device object 8241c020:
         829493c4 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

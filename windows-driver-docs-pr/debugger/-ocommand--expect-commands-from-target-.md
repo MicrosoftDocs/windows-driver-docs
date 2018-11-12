@@ -57,7 +57,7 @@ Deletes the command prefix string.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -100,11 +100,11 @@ There are no commands executed from the preceding example because the command st
 
 **Note**   You should choose a command string prefix that will not likely appear in any target output other than your own commands.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

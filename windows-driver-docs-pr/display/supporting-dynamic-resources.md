@@ -20,9 +20,9 @@ A DirectX 9.0 version driver must support the following dynamic resources:
 
 [Dynamic Textures](dynamic-textures.md)
 
- 
+ 
 
- 
+ 
 
 
 

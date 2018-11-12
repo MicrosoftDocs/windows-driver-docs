@@ -23,7 +23,7 @@ The second part of this section details the steps need to display trace messages
 
 **Note**   There are special considerations for [debugging XPSDrv printer drivers](debugging-xpsdrv-printer-drivers.md).
 
- 
+ 
 
 ### Displaying Trace Messages in a Spooler Component
 
@@ -41,9 +41,9 @@ To display trace messages in a spooler component:
 
 5.  Click Go.
 
- 
+ 
 
- 
+ 
 
 
 

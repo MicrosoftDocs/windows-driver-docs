@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 When removing a device, a filter driver must undo any operations it performed to add and start the device. A filter driver follows essentially the same procedure as a function driver when removing a device.
 
- 
+ 
 
- 
+ 
 
 
 

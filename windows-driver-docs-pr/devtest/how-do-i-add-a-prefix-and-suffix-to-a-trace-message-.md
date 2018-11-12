@@ -27,7 +27,7 @@ If you put configuration data in a header file, specify the name of the header f
 
 ### <span id="configuration_block_syntax"></span><span id="CONFIGURATION_BLOCK_SYNTAX"></span>Configuration block syntax
 
-<span id="__USEPREFIX__Function_Name___Format_string___"></span><span id="__useprefix__function_name___format_string___"></span><span id="__USEPREFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USEPREFIX (***Function\_Name***, "***Format string***");**  
+<span id="__USEPREFIX__Function_Name___Format_string___"></span><span id="__useprefix__function_name___format_string___"></span><span id="__USEPREFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USEPREFIX (**<em>Function\_Name</em>**, "**<em>Format string</em>**");**  
 Defines a format string prefix to use when the event is logged. The first parameter is the name of the function to which this prefix applies. The second parameter is the format string to use. To use the default value, specify %!STDPREFIX!. The default trace message prefix specifies the CPU number, process ID, thread ID, time stamp in Coordinated Universal Time (UTC) format, and the control GUID friendly name.
 
 ```
@@ -41,7 +41,7 @@ Defines the name and the signature of the trace function. The braces **{ }** are
 //FUNC TRACE_RETURN{LEVEL=ERROR}(EXP);
 ```
 
-<span id="__USESUFFIX__Function_Name___Format_string___"></span><span id="__usesuffix__function_name___format_string___"></span><span id="__USESUFFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USESUFFIX (***Function\_Name***, "***Format string***");**  
+<span id="__USESUFFIX__Function_Name___Format_string___"></span><span id="__usesuffix__function_name___format_string___"></span><span id="__USESUFFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USESUFFIX (**<em>Function\_Name</em>**, "**<em>Format string</em>**");**  
 Defines the format string suffix to use when the event is logged. The first parameter is the name of the function to which this suffix applies. The second parameter is the format string to use. You can use variable names in your code.
 
 ```
@@ -75,9 +75,9 @@ The following example defines a trace macro that uses the format string prefix a
 [0]0F78.0460::06/24/2006-15:54:54.880 [tracedrv]Function Return=0x8000000f(STATUS_DEVICE_POWERED_OFF)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

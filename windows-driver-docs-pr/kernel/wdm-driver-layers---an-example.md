@@ -48,9 +48,9 @@ Starting at the bottom of the previous figure, the drivers in the sample stack i
 
 -   The kernel-mode and user-mode HID clients and the application are not drivers but are shown for completeness.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ Furthermore, although DirectDraw manages the allocation and freeing of nonlocal 
 
 Nonlocal display memory is [lost](losing-and-restoring-directdraw-surfaces.md) in exactly the same way as local display memory, that is, when a mode switch occurs or when exclusive mode changes, all local and nonlocal display memory surfaces are lost and the [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) driver callback is invoked for each surface. However, DirectDraw does not guarantee that the actual reserved address ranges and committed memory are preserved. DirectDraw may choose to discard all committed memory and the reserved address ranges, or it may choose to decommit memory but preserve the address range. It may also preserve both and simply mark the surfaces as lost. A driver should not make assumptions based on any one of these scenarios.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,9 +56,9 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Windows Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597729)
 -   [Windows SideShow Devices](https://msdn.microsoft.com/library/windows/hardware/ff548077)
 
- 
+ 
 
- 
+ 
 
 
 

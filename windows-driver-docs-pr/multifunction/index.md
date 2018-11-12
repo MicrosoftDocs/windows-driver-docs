@@ -76,9 +76,9 @@ The rest of this section describes how to support multifunction devices on Windo
 
 The Windows Driver Kit (WDK) includes a separate section that describes how to support [multifunction audio devices](https://msdn.microsoft.com/library/windows/hardware/ff537574).
 
- 
+ 
 
- 
+ 
 
 
 

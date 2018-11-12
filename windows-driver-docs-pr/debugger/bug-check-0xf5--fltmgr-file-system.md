@@ -88,14 +88,14 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tr>
 <tr class="odd">
 <td align="left"><p>0x6D</p></td>
-<td align="left"><p>Address of the minifilter's context structure</p></td>
+<td align="left"><p>Address of the minifilter&#39;s context structure</p></td>
 <td align="left"><p>Address of the CONTEXT_NODE structure</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The context structure was dereferenced too many times. This means that the reference count on the Filter Manager's CONTEXT_NODE structure went to zero while it was still attached to its associated object.</p></td>
+<td align="left"><p>The context structure was dereferenced too many times. This means that the reference count on the Filter Manager&#39;s CONTEXT_NODE structure went to zero while it was still attached to its associated object.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x6E</p></td>
-<td align="left"><p>Address of the minifilter's context structure</p></td>
+<td align="left"><p>Address of the minifilter&#39;s context structure</p></td>
 <td align="left"><p>Address of the CONTEXT_NODE structure</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>The context structure was referenced after being freed.</p></td>
@@ -103,7 +103,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -125,9 +125,9 @@ If Parameter 1 equals **0x6D**, make sure that your minifilter driver does not c
 
 If Parameter 1 equals 0x6E, make sure that your minifilter driver does not call **FltReferenceContext** after the given context has been deleted (see Parameter 2).
 
- 
+ 
 
- 
+ 
 
 
 

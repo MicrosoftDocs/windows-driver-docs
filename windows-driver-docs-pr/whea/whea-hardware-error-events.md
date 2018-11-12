@@ -28,9 +28,9 @@ Regardless of whether a particular hardware error event was obtained by querying
 
 Each hardware error event contains an [error record](error-records.md) that describes the error condition that occurred. The error record can be retrieved from each event for further analysis.
 
- 
+ 
 
- 
+ 
 
 
 

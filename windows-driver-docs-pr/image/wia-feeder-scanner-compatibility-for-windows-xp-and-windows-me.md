@@ -55,9 +55,9 @@ There is very limited support for using Windows Vista drivers on a Windows XP co
 
 For more information on the compatibility layer and Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

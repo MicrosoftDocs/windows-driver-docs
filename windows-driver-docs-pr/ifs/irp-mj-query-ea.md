@@ -86,7 +86,7 @@ Specifies one or more of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_QUERY\_EA.
@@ -111,7 +111,7 @@ When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS r
 &gt; \[!Note\]
 &gt;   On Windows Vista and later, FAT16 no longer supports extended attributes.
 
- 
+ 
 
 ## See also
 
@@ -132,9 +132,9 @@ When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS r
 
 [**IRP\_MJ\_SET\_EA**](irp-mj-set-ea.md)
 
- 
+ 
 
- 
+ 
 
 
 

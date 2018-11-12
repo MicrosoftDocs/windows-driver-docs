@@ -46,29 +46,29 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareIDList](hardwareidlist.md)</p></td>
-<td><p>The [HardwareIDList](hardwareidlist.md) element specifies one or more hardware identification strings for the device.</p></td>
+<td><p><a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a></p></td>
+<td><p>The <a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a> element specifies one or more hardware identification strings for the device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LastModifiedDate](lastmodifieddate.md)</p></td>
-<td><p>The [LastModifiedDate](lastmodifieddate.md) element specifies the time stamp on which the service metadata package was last changed.</p></td>
+<td><p><a href="lastmodifieddate.md" data-raw-source="[LastModifiedDate](lastmodifieddate.md)">LastModifiedDate</a></p></td>
+<td><p>The <a href="lastmodifieddate.md" data-raw-source="[LastModifiedDate](lastmodifieddate.md)">LastModifiedDate</a> element specifies the time stamp on which the service metadata package was last changed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Locale](locale.md)</p></td>
-<td><p>The [Locale](locale.md) element specifies the localized version of the service metadata package.</p></td>
+<td><p><a href="locale.md" data-raw-source="[Locale](locale.md)">Locale</a></p></td>
+<td><p>The <a href="locale.md" data-raw-source="[Locale](locale.md)">Locale</a> element specifies the localized version of the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ModelIDList](modelidlist.md)</p></td>
-<td><p>The [ModelIDList](modelidlist.md) element specifies the GUID of each device type or model that is specified within the service metadata package.</p></td>
+<td><p><a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a></p></td>
+<td><p>The <a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a> element specifies the GUID of each device type or model that is specified within the service metadata package.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MultipleLocale](multiplelocale.md)</p></td>
-<td><p>The [MultipleLocale](multiplelocale.md) element specifies whether the service metadata package supports multiple locales.</p></td>
+<td><p><a href="multiplelocale.md" data-raw-source="[MultipleLocale](multiplelocale.md)">MultipleLocale</a></p></td>
+<td><p>The <a href="multiplelocale.md" data-raw-source="[MultipleLocale](multiplelocale.md)">MultipleLocale</a> element specifies whether the service metadata package supports multiple locales.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -86,13 +86,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element is the parent element of the [PackageInfo XML schema](packageinfo-xml-schema.md). The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element is the parent element of the <a href="packageinfo-xml-schema.md" data-raw-source="[PackageInfo XML schema](packageinfo-xml-schema.md)">PackageInfo XML schema</a>. The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -150,9 +150,9 @@ The MetadataKey element must contain:
 
 The MetadataKey element is required.
 
- 
+ 
 
- 
+ 
 
 
 

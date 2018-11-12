@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 To keep the graphics processing unit (GPU) from stalling, a preparation worker thread locks memory while the GPU is busy with other operations. However, if a large allocation is completely paged to disk, the GPU might stall while the driver waits for the GPU scheduler to page in the allocation.
 
- 
+ 
 
- 
+ 
 
 
 

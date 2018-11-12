@@ -44,13 +44,13 @@ The **KSPROPERTY\_SOUNDDETECTOR\_ARMED** property is the current arming state of
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -71,7 +71,7 @@ Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTO
 &gt; \[!Note\]
 &gt;  If this property is true, subsequently setting [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) automatically resets this to false, as mentioned above.
 
- 
+ 
 
 Requirements
 ------------
@@ -104,9 +104,9 @@ Requirements
 
 [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
 
- 
+ 
 
- 
+ 
 
 
 

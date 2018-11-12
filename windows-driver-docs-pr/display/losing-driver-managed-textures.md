@@ -23,9 +23,9 @@ Driver-managed texture surfaces, which consume video memory, need the ability to
 
 When a driver-managed texture surface (marked with the DDSCAPS2\_TEXTUREMANAGE flag) is lost, the driver receives a special *DdDestroySurface* call with DDRAWISURF\_INVALID specified in the **dwFlags** member of the texture surface structure. The driver should free video memory associated with the managed texture surface, but should not free any other private surface information including the backing (system memory) image of the video memory copy of the surface. There will be no new [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) call to restore the lost driver-managed texture surfaces because they are not really lost from the driver's point of view. For the most part, this special *DdDestroySurface* call is used to inform the driver that it should evict its video memory copy.
 
- 
+ 
 
- 
+ 
 
 
 

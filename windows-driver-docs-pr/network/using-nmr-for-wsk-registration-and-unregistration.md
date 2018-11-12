@@ -24,9 +24,9 @@ A WSK application can register itself with the NMR as a client of the WSK [Netwo
 
 Using the [**WskRegister**](https://msdn.microsoft.com/library/windows/hardware/ff571143) and [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) functions is the preferred method for registering and unregistering WSK applications. The [Network Module Registrar](network-module-registrar2.md) remains available for compatibility.
 
- 
+ 
 
- 
+ 
 
 
 

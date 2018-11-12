@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8  | A bitmap of the Wi-Fi Direct capabilities in the above device capability bitmap that are currently set by the operating system. |
 | UINT32 | A bitmask that indicates which WPS versions are enabled.                                                                        |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

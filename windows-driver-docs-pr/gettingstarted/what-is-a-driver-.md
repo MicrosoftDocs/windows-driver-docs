@@ -53,9 +53,9 @@ Our explanation so far over simplifies the definition of *function driver*. We s
 
 ![diagram that shows usb toaster drivers and usb host controller driver](images/whatisadriver04.png)
 
- 
+ 
 
- 
+ 
 
 
 

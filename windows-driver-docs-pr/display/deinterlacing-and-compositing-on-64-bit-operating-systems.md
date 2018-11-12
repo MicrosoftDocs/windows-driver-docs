@@ -20,7 +20,7 @@ To ensure that [deinterlacing with substream-compositing operations](performing-
 **Note**   When the driver code is compiled for 64-bit, the [**DXVA\_VideoSample2**](https://msdn.microsoft.com/library/windows/hardware/ff564092) structure contains two extra DWORD members to make the size of the 32-bit version of DXVA\_VideoSample2 different from the 64-bit version. Because of an 8-byte alignment, the 32-bit compiler adds 4 bytes of padding to the end of the 32-bit version, which--without these two extra DWORD members--makes the 32-bit version the same size as the 64-bit version, even accounting for the pointer-size difference between 32 bit and 64 bit.
 With two extra DWORD members included in DXVA\_VideoSample2 for 64-bit compile, the driver can differentiate between the 32-bit and 64-bit versions based on the **Size** member of the [**DXVA\_DeinterlaceBltEx**](https://msdn.microsoft.com/library/windows/hardware/ff563915) structure.
 
- 
+ 
 
 The following example code demonstrates how the driver should handle the thunk:
 
@@ -44,9 +44,9 @@ case DXVA_DeinterlaceBltExFnCode:
       }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

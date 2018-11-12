@@ -48,7 +48,7 @@ Specifies the directory base for the process. To determine the directory base, u
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -117,9 +117,9 @@ For 64-bit Windows, the directory base is the physical address of the Page Map L
 
 For related topics, see [**!vtop**](-vtop.md) and [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). For information about virtual address translation, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

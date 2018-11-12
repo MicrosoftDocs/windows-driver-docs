@@ -53,9 +53,9 @@ However, if there is no parent whose lifetime closely matches your object's life
 
 Similarly, if you are creating an object that does not allow you to override the default parent and if you want the object to be deleted before the default parent is deleted, the driver must explicitly delete the object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The rest of this section consists of the following topics:
 
 [User Interface Extension Registry Entries](user-interface-extension-registry-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

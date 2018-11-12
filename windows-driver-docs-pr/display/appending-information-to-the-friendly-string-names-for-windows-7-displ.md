@@ -19,9 +19,9 @@ New Driver Model Foo Device Name (Microsoft Corporation - WDDM v1.1)
 
 The text appended to the graphics adapter's friendly name specifies the WDDM version that the driver uses.
 
- 
+ 
 
- 
+ 
 
 
 

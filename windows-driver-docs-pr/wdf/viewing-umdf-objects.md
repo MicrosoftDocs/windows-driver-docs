@@ -78,9 +78,9 @@ You can perform the following steps to view information about UMDF version 1 obj
     <a href="" id="-wudfext-umdevstacks-and--wudfext-umdevstack"></a>**!wudfext.umdevstacks** and **!wudfext.umdevstack**  
     Use the output from the **!wudfext.umdevstacks** and **!wudfext.umdevstack** UMDF debugger extensions to view outstanding UMDF intra-stack files that correspond to driver-created files.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ The driver includes code to handle only those events for which its device requir
 
 In addition, a driver can configure its I/O request queues so that the framework stops dispatching requests while the device is in a low-power state and resumes dispatching after the device has returned to the operational state. Similarly, if an I/O request arrives while the device is in a low-power state, the framework can automatically turn on the device.
 
- 
+ 
 
- 
+ 
 
 
 

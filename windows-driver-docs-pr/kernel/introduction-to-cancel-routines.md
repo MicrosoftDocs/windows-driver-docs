@@ -34,9 +34,9 @@ Some highest-level drivers for interactive devices, such as keyboard, mouse, sou
 
 Mass-storage device drivers, along with intermediate drivers layered over them, are unlikely to have *Cancel* routines. It is the responsibility of a file system driver to handle the cancellation of file I/O requests, while the IRPs input to lower-level mass-storage drivers are usually processed to completion too quickly to be cancelable.
 
- 
+ 
 
- 
+ 
 
 
 

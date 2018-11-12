@@ -24,9 +24,9 @@ If a *CustomTimerDpc* routine shares context information with the driver's ISR, 
 
 If the *CustomTimerDpc* shares the context information with other non-ISR driver routines, the area at *DeferredContext* must be protected by an executive spin lock. For more information, see [Spin Locks](spin-locks.md).
 
- 
+ 
 
- 
+ 
 
 
 

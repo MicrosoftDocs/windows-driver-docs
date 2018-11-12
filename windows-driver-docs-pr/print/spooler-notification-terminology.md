@@ -41,9 +41,9 @@ Refers to components loaded by Spoolsv.exe, such as print processors, drivers, a
 <a href="" id="service"></a>service  
 Refers to the functionality implemented by the spooler, either as part of the service itself (Spoolsv.exe) or as part of the client side (Winspool.drv).
 
- 
+ 
 
- 
+ 
 
 
 

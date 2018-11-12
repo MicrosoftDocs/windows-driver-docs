@@ -16,9 +16,9 @@ This section applies only to Windows Server 2003 with SP1 and later, and Windows
 
 This section provides reference pages for sample Certified Output Protection Protocol (COPP) I/O control (IOCTL) requests that are handled by the video miniport driver. Your driver can either reuse these COPP IOCTLs or create news ones, as appropriate.
 
- 
+ 
 
- 
+ 
 
 
 

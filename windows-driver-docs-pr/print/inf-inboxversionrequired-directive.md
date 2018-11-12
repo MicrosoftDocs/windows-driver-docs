@@ -31,9 +31,9 @@ The following example shows how you set **InboxVersionRequired** to a specific v
 InboxVersionRequired=09/28/1999,5.00.2136.1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

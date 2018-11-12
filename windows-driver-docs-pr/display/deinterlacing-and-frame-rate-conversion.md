@@ -52,9 +52,9 @@ This section covers the following topics:
 
 [Sample Functions for Deinterlacing](sample-functions-for-deinterlacing.md)
 
- 
+ 
 
- 
+ 
 
 
 

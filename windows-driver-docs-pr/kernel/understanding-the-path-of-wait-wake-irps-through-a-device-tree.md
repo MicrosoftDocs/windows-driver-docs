@@ -86,9 +86,9 @@ When a wake-up signal arrives from either the keyboard or modem, the USB hub dri
 
 A driver does not, however, send itself an IRP to reenable wait/wake on the same device on which a wake-up signal just arrived. Only the device power policy manager can do that. Reenabling wait/wake is not automatic.
 
- 
+ 
 
- 
+ 
 
 
 

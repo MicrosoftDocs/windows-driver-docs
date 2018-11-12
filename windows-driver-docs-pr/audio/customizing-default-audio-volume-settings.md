@@ -19,7 +19,7 @@ The ability to customize the in box HD audio default audio volume and microphone
 
 **Note**  The process described here can only be used if the default Microsoft HD Audio driver is being used.
 
- 
+ 
 
 By default, the HD Audio class function driver sets the audio volume and the microphone boost levels at predetermined values to ensure a pleasant “out of the box” experience for the user.
 

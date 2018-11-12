@@ -18,7 +18,7 @@ Windows 8 offers optimizations to the graphics stack that your driver can optio
 | Driver implementation—Full graphics and Render only                               | Optional                                    |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦StandbyHibernateFlags** |
 
- 
+ 
 
 ## <span id="Standby_hibernate_device_driver_interface__DDI_"></span><span id="standby_hibernate_device_driver_interface__ddi_"></span><span id="STANDBY_HIBERNATE_DEVICE_DRIVER_INTERFACE__DDI_"></span>Standby hibernate device driver interface (DDI)
 
@@ -60,9 +60,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

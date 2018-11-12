@@ -36,37 +36,37 @@ The following table lists the functions that can be used to manipulate source li
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupAddToSourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa376981)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa376981" data-raw-source="[&lt;strong&gt;SetupAddToSourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa376981)"><strong>SetupAddToSourceList</strong></a></p></td>
 <td align="left"><p>Adds an entry to a source list.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupCancelTemporarySourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa376983)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa376983" data-raw-source="[&lt;strong&gt;SetupCancelTemporarySourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa376983)"><strong>SetupCancelTemporarySourceList</strong></a></p></td>
 <td align="left"><p>Cancels use of a temporary list.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupFreeSourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377241)</p></td>
-<td align="left"><p>Frees resources allocated by a previous call to [<strong>SetupSetSourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377441).</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377241" data-raw-source="[&lt;strong&gt;SetupFreeSourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377241)"><strong>SetupFreeSourceList</strong></a></p></td>
+<td align="left"><p>Frees resources allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/desktop/aa377441" data-raw-source="[&lt;strong&gt;SetupSetSourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377441)"><strong>SetupSetSourceList</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupQuerySourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377419)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377419" data-raw-source="[&lt;strong&gt;SetupQuerySourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377419)"><strong>SetupQuerySourceList</strong></a></p></td>
 <td align="left"><p>Queries the current list of installation sources.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupRemoveFromSourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377431)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377431" data-raw-source="[&lt;strong&gt;SetupRemoveFromSourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377431)"><strong>SetupRemoveFromSourceList</strong></a></p></td>
 <td align="left"><p>Removes an entry from an installation source list.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>SetupSetSourceList</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377441)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377441" data-raw-source="[&lt;strong&gt;SetupSetSourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377441)"><strong>SetupSetSourceList</strong></a></p></td>
 <td align="left"><p>Sets the installation source list to the system MRU list, the user MRU list, or a temporary list.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -177,9 +177,9 @@ The output DCL instructions must declare all registers that are written by a ver
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

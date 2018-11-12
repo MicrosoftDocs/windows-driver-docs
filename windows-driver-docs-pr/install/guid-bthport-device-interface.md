@@ -43,7 +43,7 @@ The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://msdn.microsof
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

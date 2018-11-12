@@ -22,9 +22,9 @@ References to GDI in this section are implicit references to kernel-mode GDI; Mi
 
 GDI function and structure references are documented in the [Display Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff554046) section. Most of the GDI function declarations and structure definitions can be found in *Winddi.h*. For display drivers, the Microsoft DirectDraw heap manager functions are declared in *Dmemmgr.h*. Both files are shipped with the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

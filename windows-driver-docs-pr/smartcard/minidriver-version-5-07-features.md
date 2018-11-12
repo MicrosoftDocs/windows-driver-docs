@@ -40,9 +40,9 @@ Registration of a recognized card ATRs is now handled through the manifest, not 
 
 Interfaces for Secret Agreement Changes to ECDH are updated.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ Specifies a new number that becomes the ID of the breakpoint.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,9 +68,9 @@ You can use the **br** command to renumber any number of breakpoints at the same
 
 If there is already a breakpoint with an ID equal to *NewID*, the command fails and an error message is displayed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ To install a Plug and Play device that uses Serial as a lower-level device filte
 
 -   Set the **SerialSkipExternalNaming** entry value for the device to a nonzero value -- see [Registry Settings for a Plug and Play Serial Device](registry-settings-for-a-plug-and-play-serial-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_PHY\_TX\_POWER\_LEVEL\_LIST**](wdi-tlv-phy-tx-power-level-list.md) |                                |          | A list of TX power levels. |
 | [**WDI\_TLV\_PHY\_DATA\_RATE\_LIST**](wdi-tlv-phy-data-rate-list.md)            |                                |          | A list of data rates.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

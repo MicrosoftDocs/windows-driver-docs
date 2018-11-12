@@ -21,7 +21,7 @@ The DebugBaseEventCallbacks class provides a base implementation of the [IDebugE
 A program can derive an event callbacks class from DebugBaseEventCallbacks and implement only the methods needed. 
 
 Be careful to implement GetInterestMask appropriately.
- 
+ 
 ### Requirements
 
 Header
@@ -32,9 +32,9 @@ Dbgeng.h (include Dbgeng.h)
 ### See Also
 [DebugBaseEventCallbacksWide](debugbaseeventcallbackswide.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ The following sections describe how the video memory manager calculates graphics
 
 [Retrieving Graphics Memory Numbers](retrieving-graphics-memory-numbers.md)
 
- 
+ 
 
- 
+ 
 
 
 

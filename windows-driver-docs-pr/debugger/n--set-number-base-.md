@@ -58,7 +58,7 @@ Specifies the default number base that is used for numeric display and entry. Yo
 </tbody>
 </table>
 
- 
+ 
 
 If you omit *Radix*, the current default number base is displayed.
 
@@ -85,7 +85,7 @@ If you omit *Radix*, the current default number base is displayed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -96,9 +96,9 @@ The default radix is set to 16 when the debugger is started.
 
 In all MASM expressions, numeric values are interpreted as numbers in the current radix (16, 10, or 8). You can override the default radix by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
 
- 
+ 
 
- 
+ 
 
 
 

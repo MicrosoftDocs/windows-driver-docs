@@ -23,7 +23,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
     **Note**  Only overlying drivers can obtain the VF identifier in this manner.
 
-     
+     
 
 After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451593) structure. This structure contains the configuration parameters for the specified VF.
 
@@ -33,9 +33,9 @@ NDIS handles the [OID\_NIC\_SWITCH\_VF\_PARAMETERS](https://msdn.microsoft.com/l
 
 -   OID set requests of [OID\_NIC\_SWITCH\_VF\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451824).
 
- 
+ 
 
- 
+ 
 
 
 

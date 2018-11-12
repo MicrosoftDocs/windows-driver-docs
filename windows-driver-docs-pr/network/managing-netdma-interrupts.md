@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -36,9 +36,9 @@ This section includes:
 
 [Handling a NetDMA Interrupt DPC](handling-a-netdma-interrupt-dpc.md)
 
- 
+ 
 
- 
+ 
 
 
 

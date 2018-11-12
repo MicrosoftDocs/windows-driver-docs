@@ -33,9 +33,9 @@ The following topics describe two cases where exceptions need to be addressed fo
 
 [Resolving GDL Configuration Conflicts](resolving-gdl-configuration-conflicts.md)
 
- 
+ 
 
- 
+ 
 
 
 

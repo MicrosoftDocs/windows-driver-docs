@@ -19,9 +19,9 @@ The section includes the following topics:
 
 [Best Practices for Testing the Download of Device Metadata Packages](best-practices-for-testing-the-download-of-device-metadata-packages.md)
 
- 
+ 
 
- 
+ 
 
 
 

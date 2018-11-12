@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER along with KSPROPE
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -76,9 +76,9 @@ In this formula,
 
 If **f**, the fog blending factor, is 0.0, then the final fogged color is identical to the fog color. If **f** is 1.0, there is no fog effect.
 
- 
+ 
 
- 
+ 
 
 
 

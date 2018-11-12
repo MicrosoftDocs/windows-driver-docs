@@ -62,7 +62,7 @@ Each device manifest submission package consists of the following components:
 **Note**  
 The XML documents must be saved by using UTF-8 encoding.
 
- 
+ 
 
 ### <span id="Structure_of_a_PC_Device_Manifest_Submission_Package"></span><span id="structure_of_a_pc_device_manifest_submission_package"></span><span id="STRUCTURE_OF_A_PC_DEVICE_MANIFEST_SUBMISSION_PACKAGE"></span>Structure of a PC Device Manifest Submission Package
 
@@ -133,7 +133,7 @@ The data in the PcMetadataSubmission.xml document is formatted based on the PcMe
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For more information about ComputerHardwareID, see [How to Create a Device Metadata Package for Devices and Printers](http://go.microsoft.com/fwlink/p/?LinkId=253559).
 
@@ -228,7 +228,7 @@ The following table describes the metadata elements and attributes of the PcMeta
 </tbody>
 </table>
 
- 
+ 
 
 **PcMetadataSubmission XML Schema Definition**
 
@@ -425,7 +425,7 @@ The value specified by the SystemManufacturer attribute must be identical with t
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -482,7 +482,7 @@ The value specified by the SystemFamily attribute must be identical with the val
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the dmiStrucBuffer array and the SMBIOS fields, refer to [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -539,7 +539,7 @@ The value specified by the SystemProductName attribute must be identical with th
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -596,7 +596,7 @@ The value specified by the BIOSVendor attribute must be identical with the value
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -653,7 +653,7 @@ The value specified by the BIOSVersion attribute must be identical with the valu
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -710,7 +710,7 @@ The value specified by the SystemBIOSMajorRelease attribute must be identical wi
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -767,7 +767,7 @@ The value specified by the SystemBIOSMinorRelease attribute must be identical wi
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -823,7 +823,7 @@ The value specified by the Enclosuretype attribute must be identical with the va
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -880,7 +880,7 @@ The value specified by the SKUNumber element must be identical with the value in
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
 
@@ -912,9 +912,9 @@ The following XML document uses the PcMetadataSubmission XML schema to specify t
 
 For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://msdn.microsoft.com/library/windows/hardware/hh801885.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

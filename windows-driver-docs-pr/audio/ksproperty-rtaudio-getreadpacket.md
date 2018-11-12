@@ -44,13 +44,13 @@ KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio pack
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_GETREADPACKET_INFO</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info" data-raw-source="[&lt;strong&gt;KSRTAUDIO_GETREADPACKET_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)"><strong>KSRTAUDIO_GETREADPACKET_INFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
 
@@ -98,9 +98,9 @@ Requirements
 
 [UsePositionLock](usepositionlock.md)
 
- 
+ 
 
- 
+ 
 
 
 

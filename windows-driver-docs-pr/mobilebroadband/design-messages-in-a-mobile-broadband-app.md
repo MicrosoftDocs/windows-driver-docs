@@ -31,7 +31,7 @@ The following table shows some example operator messages and alerts.
 <tbody>
 <tr class="odd">
 <td><p>International roaming</p></td>
-<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it's $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
+<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it&#39;s $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
 </tr>
 <tr class="even">
 <td><p>Data usage overage</p></td>
@@ -52,7 +52,7 @@ The following table shows some example operator messages and alerts.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -81,9 +81,9 @@ Inappropriate design for showing operator messages:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ By default, before the first call to the *ActiveCooling* routine, active cooling
 
 A driver can implement one or both of these routines, depending on the capabilities of the device hardware. For more information, see [Passive and Active Cooling Modes](passive-and-active-cooling-modes.md).
 
- 
+ 
 
- 
+ 
 
 
 

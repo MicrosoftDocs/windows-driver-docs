@@ -32,9 +32,9 @@ You can register filters to be notified about creations, deletions, the need to 
 
 For more information about dispatch functions, see [**KSFILTER\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff562554), [**KSPIN\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff563535), and [**KSALLOCATOR\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff560976).
 
- 
+ 
 
- 
+ 
 
 
 

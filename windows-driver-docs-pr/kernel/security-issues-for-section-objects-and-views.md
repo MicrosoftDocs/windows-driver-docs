@@ -42,9 +42,9 @@ A driver that must share a section object with a user-mode application (that mus
 
 On systems that run Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions, only kernel-mode drivers can open \\**Device**\\**PhysicalMemory**. However, drivers can decide to give a handle to a user application. To prevent security issues, only user applications that the driver trusts should be given access to \\**Device**\\**PhysicalMemory**.
 
- 
+ 
 
- 
+ 
 
 
 

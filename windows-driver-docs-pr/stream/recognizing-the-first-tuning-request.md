@@ -26,9 +26,9 @@ Thereafter, for each tuning request during fine-tuning mode, there will be a fiv
 
 If you want *KsTvTune.ax* to retry at least once after an initial request, always return a **PLLOffset** value of 1 on the first tuning request. *KsTvTune.ax* immediately tries the next step higher, as specified by the **TuningGranularity** member of the [**KSPROPERTY\_TUNER\_MODE\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565872) structure. At that point, you could return a **PLLOffset** value greater than 1 or less than -1 if your minidriver determines that there is no signal, or a **PLLOffset** value of -1 or 0 if your minidriver determines that the signal is good.
 
- 
+ 
 
- 
+ 
 
 
 

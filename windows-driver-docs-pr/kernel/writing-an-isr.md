@@ -54,9 +54,9 @@ An ISR must run at DIRQL for the shortest possible interval. Following this guid
 
 The *SynchronizeIrql* of the driver's interrupt objects, specified when the driver called **IoConnectInterrupt**, determines the DIRQL at which the driver's ISR executes. For more information, see [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

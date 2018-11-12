@@ -42,9 +42,9 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

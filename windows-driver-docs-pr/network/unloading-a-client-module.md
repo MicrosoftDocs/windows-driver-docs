@@ -61,9 +61,9 @@ A network module must wait until all of the deregistrations are complete before 
 
 A client module is not required to call [**NmrDeregisterClient**](https://msdn.microsoft.com/library/windows/hardware/ff568774) from within its [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function. For example, in the situation where a client module is a subcomponent of a complex driver, the deregistration of the client module might occur when the client module subcomponent is deactivated. However, in such a situation the driver must still ensure that the client module has been completely deregistered from the NMR before returning from its **Unload** function.
 
- 
+ 
 
- 
+ 
 
 
 

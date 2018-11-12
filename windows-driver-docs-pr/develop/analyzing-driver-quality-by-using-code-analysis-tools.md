@@ -27,7 +27,7 @@ For information about the Code Analysis tool in Visual Studio, see:
 
 **Note**  In previous versions of the WDK, the driver-specific module for code analysis was part of a standalone tool called PREfast for Drivers (PFD). PREfast for Drivers was also integrated into the WDK Build environment, as part of Microsoft Automated Code Review (OACR).
 
- 
+ 
 
 ## <span id="Static_Driver_Verifier"></span><span id="static_driver_verifier"></span><span id="STATIC_DRIVER_VERIFIER"></span>Static Driver Verifier
 
@@ -42,11 +42,11 @@ For information about Static Driver Verifier, see:
 -   How to: [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281)
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

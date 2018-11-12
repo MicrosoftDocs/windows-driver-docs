@@ -17,9 +17,9 @@ This section describes the enumerations that are used by various HD audio proper
 
 [**HDAUDIO\_STREAM\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt845423)
 
- 
+ 
 
- 
+ 
 
 
 

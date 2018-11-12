@@ -48,7 +48,7 @@ Specifies the address of a [FILE_OBJECT](https://msdn.microsoft.com/library/wind
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ Remarks
 
 If the FILE\_OBJECT structure has an associated cache, **!fileobj** tries to parse and display cache information..
 
- 
+ 
 
- 
+ 
 
 
 

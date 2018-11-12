@@ -59,9 +59,9 @@ The following sections provide implementation details for multimatrix vertex ble
 
 [D3DRENDERSTATETYPE Changes](d3drenderstatetype-changes.md)
 
- 
+ 
 
- 
+ 
 
 
 

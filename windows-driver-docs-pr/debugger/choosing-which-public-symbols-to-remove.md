@@ -60,7 +60,7 @@ However, let us suppose that your driver occupies memory in the following layout
 </tbody>
 </table>
 
- 
+ 
 
 If the debugger finds an address on the stack, it selects the symbol with the next lower address. Since the public symbol table contains the address of each symbol but no size information, there is no way for the debugger to know if an address actually falls within the boundaries of any specific symbol.
 
@@ -117,15 +117,15 @@ Consequently, you must include in your stripped symbol file not only the functio
 </tbody>
 </table>
 
- 
+ 
 
 If you include all four of these functions in the stripped symbol file, then the Microsoft OCA analysis will not mistakenly treat the address 0x2052 as part of **FunctionOne**. In this example it will assume that this address is part of **FunctionTwo**, but that is not important because you have not registered **FunctionTwo** with OCA as an inert function. The important thing is that the address 0x2052 is recognized as not falling within an inert function, and therefore OCA will recognize this as a meaningful fault within your driver and can inform you of the fault.
 
 If you do not wish to publicize the names of the functions following each inert function, you can insert unimportant functions into your code following each inert function so that the names of these functions can be included in your public symbol file. Be sure to verify that these added functions do indeed follow your inert functions in your binary's address space, since some optimization routines may alter this, or even remove some functions entirely.
 
- 
+ 
 
- 
+ 
 
 
 

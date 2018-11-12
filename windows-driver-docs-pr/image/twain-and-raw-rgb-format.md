@@ -41,9 +41,9 @@ The data must be transferred with no image header. The **IWiaDataCallback::Bande
 
 The TWAIN compatibility layer (see [Support for TWAIN-Compatible Applications](support-for-twain-compatible-applications.md)) supports the WiaImgFmt\_RAWRGB format GUID. This enables TWAIN applications to transfer images with pixel depths greater than 32 bits, using a memory-callback transfer.
 
- 
+ 
 
- 
+ 
 
 
 

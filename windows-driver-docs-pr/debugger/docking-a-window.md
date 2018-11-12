@@ -46,9 +46,9 @@ However, multiple instances of [Memory windows](memory-window.md) and [Source wi
 
 If you load a workspace that includes one or more Source windows when the source files are inaccessible, those Source windows are not reopened. When this situation occurs, other windows that were tabbed together with those windows might return to the floating state. If you want to keep all of your Source windows tabbed together, you should include at least one source file that is always present, or include an additional window in the tabbed collection.
 
- 
+ 
 
- 
+ 
 
 
 

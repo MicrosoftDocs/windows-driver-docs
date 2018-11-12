@@ -18,7 +18,7 @@ To query a miniport driver's current NVGRE task offload state, an NDIS protocol 
 
 **Note**  To determine whether a miniport driver supports NVGRE task offload, use the [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806) OID request as described in [Determining the NVGRE Task Offload Capabilities of a Network Adapter](determining-the-nvgre-task-offload-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
 ## Changing NVGRE Task Offload State
 
@@ -52,7 +52,7 @@ An NDIS protocol or filter driver can enable or disable NVGRE task offload by is
 </tbody>
 </table>
 
- 
+ 
 
 After the miniport driver processes the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569807) OID request, it must issue an [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff567424) status indication with the updated offload state.
 
@@ -60,9 +60,9 @@ When a miniport driver receives a [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.m
 
 Base task offloads for normal packets are enabled by existing OIDs such as [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762) and [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569784). The **EncapsulatedPacketTaskOffload** member setting supplements these OIDs and instructs the NIC to also do these offloads for encapsulated packets.
 
- 
+ 
 
- 
+ 
 
 
 

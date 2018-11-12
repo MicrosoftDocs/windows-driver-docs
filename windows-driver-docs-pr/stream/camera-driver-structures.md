@@ -104,9 +104,9 @@ The following camera driver structures are new for Windows 10.
 
 [**MF\_MDL\_SHARED\_PAYLOAD\_KEY**](https://msdn.microsoft.com/library/windows/hardware/mt186399)
 
- 
+ 
 
- 
+ 
 
 
 

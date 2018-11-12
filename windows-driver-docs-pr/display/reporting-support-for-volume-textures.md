@@ -28,9 +28,9 @@ A driver notifies the runtime of the volume texture filtering and texture addres
 
 Finally, the driver notifies the runtime about what surface formats can be used with volume textures by setting the D3DFORMAT\_OP\_VOLUMETEXTURE in the **dwOperations** field of the surface format's [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274).
 
- 
+ 
 
- 
+ 
 
 
 

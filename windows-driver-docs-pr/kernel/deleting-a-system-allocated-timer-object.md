@@ -44,9 +44,9 @@ As an option, a driver can implement an *ExTimerDeleteCallback* callback routine
 
 For more information, see [Ex*Xxx*Timer Routines and EX\_TIMER Objects](exxxxtimer-routines-and-ex-timer-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

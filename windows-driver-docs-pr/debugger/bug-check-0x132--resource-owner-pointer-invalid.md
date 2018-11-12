@@ -31,11 +31,11 @@ The RESOURCE\_OWNER\_POINTER\_INVALID bug check has a value of 0x00000132. This 
 | 3         | CurrentThread           |
 | 4         | OwnerPointer            |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

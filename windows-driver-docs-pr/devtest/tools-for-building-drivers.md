@@ -29,9 +29,9 @@ ms.localizationpriority: medium
 -   [Nmake2MsBuild](nmake2msbuild.md)
 -   [ProjectUpgradeTool](projectupgradetool.md)
 
- 
+ 
 
- 
+ 
 
 
 

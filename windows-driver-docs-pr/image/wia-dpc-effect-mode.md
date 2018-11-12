@@ -61,7 +61,7 @@ The following table describes the constants that are valid with the WIA\_DPC\_EF
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

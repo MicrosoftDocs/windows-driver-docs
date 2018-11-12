@@ -31,7 +31,7 @@ The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](https://msdn.mi
 |-----------------------------------------------------------------|------------------------------------------|
 | [**WDI\_CIPHER\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897802)\[\] | An array of multicast cipher algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

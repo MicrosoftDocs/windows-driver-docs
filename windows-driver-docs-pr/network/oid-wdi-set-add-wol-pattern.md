@@ -18,7 +18,7 @@ OID\_WDI\_SET\_ADD\_WOL\_PATTERN adds a wake-on-LAN (WOL) pattern to the firmwar
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 The host defines the packet pattern types to add to the firmware. The firmware detects matching packets that arrive in Dx. If detected, the firmware asserts the wake interrupt.
 
@@ -33,7 +33,7 @@ The host defines the packet pattern types to add to the firmware. The firmware d
 | [**WDI\_TLV\_WAKE\_PACKET\_IPv6\_TCP\_SYNC**](https://msdn.microsoft.com/library/windows/hardware/dn898091)                        | X                              | X        | WOL IPv4 TCP sync packet information.         |
 | [**WDI\_TLV\_WAKE\_PACKET\_EAPOL\_REQUEST\_ID\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/dn898087) |                                | X        | WOL pattern ID of a EAPOL request ID message. |
 
- 
+ 
 
 ## Set property results
 
@@ -68,9 +68,9 @@ Requirements
 
 [OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN](oid-wdi-set-remove-wol-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -83,9 +83,9 @@ pfiCollection->Item(0, &m_pFunctionInstance);
 
 For a code example that contains the declaration of a sample class (CWSDDevice), see [Code Sample for Obtaining a Function Instance Object](code-example-for-obtaining-a-function-instance-object.md).
 
- 
+ 
 
- 
+ 
 
 
 

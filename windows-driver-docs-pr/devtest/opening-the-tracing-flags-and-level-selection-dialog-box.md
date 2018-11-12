@@ -42,9 +42,9 @@ You can use the **Tracing Flags and Level Selection** dialog box to select and c
 
 The **Set Flags and Level** option is enabled only when TraceView can find a [PDB symbol file](pdb-symbol-files.md) for the provider or when it can find a [trace message control (.tmc) file](trace-message-control-file.md) for the provider in the TMF path (specified by using the **Set TMF Search Path** option).
 
- 
+ 
 
- 
+ 
 
 
 

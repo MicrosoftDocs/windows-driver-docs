@@ -22,9 +22,9 @@ The following topics provide more information about starting and pausing a bindi
 
 [Pausing a Binding](pausing-a-binding.md)
 
- 
+ 
 
- 
+ 
 
 
 

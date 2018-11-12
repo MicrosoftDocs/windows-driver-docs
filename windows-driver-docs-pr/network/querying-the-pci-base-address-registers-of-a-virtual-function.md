@@ -30,7 +30,7 @@ Because access to the PCI configuration space is a privileged operation, it can 
 
 **Note**  OID requests of OID\_SRIOV\_BAR\_RESOURCES can only be issued by NDIS. The OID request must not be issued by overlying drivers, such as protocol or filter drivers.
 
- 
+ 
 
 The OID\_SRIOV\_PROBED\_BARS query request contains an [**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451679) structure. When the PF miniport driver handles this OID, the driver must return the PCI BAR values within the array referenced by the **BaseRegisterValuesOffset** member of the **NDIS\_SRIOV\_PROBED\_BARS\_INFO** structure. For each offset within the array, the PF miniport driver must set the array element to the ULONG value of the BAR at the same offset within the physical network adapter's PCI configuration space.
 
@@ -38,9 +38,9 @@ Each BAR value returned by the driver must be the same value that would follow a
 
 For more information about the base address registers of a PCI device, see the *PCI Local Bus Specification*.
 
- 
+ 
 
- 
+ 
 
 
 

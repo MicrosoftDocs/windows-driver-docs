@@ -48,7 +48,7 @@ Specifies the device object or device extension of a SCSI port extension.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -121,9 +121,9 @@ Logical Unit Extension:
   Request List @0x816ea1f0 is empty
 ```
 
- 
+ 
 
- 
+ 
 
 
 

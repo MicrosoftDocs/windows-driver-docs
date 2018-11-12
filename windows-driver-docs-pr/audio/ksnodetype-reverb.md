@@ -27,9 +27,9 @@ A KSNODETYPE\_REVERB node should support the following required properties:
 
 [**KSPROPERTY\_AUDIO\_REVERB\_TIME**](ksproperty-audio-reverb-time.md)
 
- 
+ 
 
- 
+ 
 
 
 

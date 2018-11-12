@@ -57,9 +57,9 @@ An FCB structure contains the following:
 
 -   Any additional storage requested by the network mini-redirector or the creator of the FCB structure
 
- 
+ 
 
- 
+ 
 
 
 

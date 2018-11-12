@@ -48,15 +48,15 @@ Verbose. Displays detailed information about the table.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about the ACPI and ACPI tables, see [Other ACPI Debugging Extensions](other-acpi-debugging-extensions.md) and the [ACPI Specification](https://go.microsoft.com/fwlink/p/?linkid=57185) Web site. Also see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

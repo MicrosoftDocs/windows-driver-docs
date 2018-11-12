@@ -166,7 +166,7 @@ When Driver Verifier is active and **I/O Verification** is selected, various I/O
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the errors mentioned in the previous table, there are a number of **I/O Verification** errors that will cause Driver Verifier to halt the system, but which are not actually bug checks.
 
@@ -210,7 +210,7 @@ If a kernel debugger is attached to the system which has caused this violation, 
 
 **Note**   No other bug checks can be ignored in this manner. Only this kind of **I/O Verification** errors can be ignored, and even these errors can only be ignored if a kernel debugger is attached.
 
- 
+ 
 
 The following table lists those **I/O Verification** errors that can appear.
 
@@ -266,7 +266,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x207</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>The caller has manually copied the stack and has inadvertently copied the upper layer's completion routine. The driver should use <strong>IoCopyCurrentIrpStackLocationToNext</strong>. (IRP specified.)</p></td>
+<td align="left"><p>The caller has manually copied the stack and has inadvertently copied the upper layer&#39;s completion routine. The driver should use <strong>IoCopyCurrentIrpStackLocationToNext</strong>. (IRP specified.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x208</p></td>
@@ -321,7 +321,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x212</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has trashed or has not properly copied the IRP's stack. (IRP specified.)</p></td>
+<td align="left"><p>The caller has trashed or has not properly copied the IRP&#39;s stack. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x213</p></td>
@@ -401,7 +401,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x222</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A Bus Filter's IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p></td>
+<td align="left"><p>A Bus Filter&#39;s IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x223</p></td>
@@ -411,12 +411,12 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x224</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP's <strong>IoStatus.Status</strong> field. (Dispatch handler routine, IRP, IRP's IoStatus.Status, and returned Status specified.)</p></td>
+<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP&#39;s <strong>IoStatus.Status</strong> field. (Dispatch handler routine, IRP, IRP&#39;s IoStatus.Status, and returned Status specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x225</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command with the specified address.</p></td>
+<td align="left"><p>An IRP dispatch handler has returned a status that is illegal (0xFFFFFFFF). This is probably due to an uninitialized stack variable. To debug this error, use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command with the specified address.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x226</p></td>
@@ -431,7 +431,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x228</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver's completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. (Routine and IRP specified.)</p></td>
+<td align="left"><p>A driver&#39;s completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. (Routine and IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x229</p></td>
@@ -456,7 +456,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x22D</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has completed a IRP_MJ_PNP it didn't understand instead of passing it down. (IRP specified.)</p></td>
+<td align="left"><p>The caller has completed a IRP_MJ_PNP it didn&#39;t understand instead of passing it down. (IRP specified.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x22E</p></td>
@@ -471,7 +471,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x230</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has completed an IRP_MJ_POWER it didn't understand instead of passing it down. (IRP specified.)</p></td>
+<td align="left"><p>The caller has completed an IRP_MJ_POWER it didn&#39;t understand instead of passing it down. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x231</p></td>
@@ -531,7 +531,7 @@ The following table lists those **I/O Verification** errors that can appear.
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists additional **I/O Verification** errors that can appear in Windows XP and later. Some of these errors will only be revealed if **Enhanced I/O Verification** is activated. In Windows Vista and later, the **Enhanced I/O Verification** settings are included as part of **I/O Verification**.
 
@@ -562,7 +562,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x23E</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver has marked an IRP pending but didn't return STATUS_PENDING. (IRP specified.)</p></td>
+<td align="left"><p>A driver has marked an IRP pending but didn&#39;t return STATUS_PENDING. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x23F</p></td>
@@ -683,7 +683,7 @@ The following table lists additional **I/O Verification** errors that can appear
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -699,9 +699,9 @@ If you are the driver writer, use the information obtained through this bug chec
 
 For full details on Driver Verifier, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

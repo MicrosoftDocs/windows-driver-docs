@@ -67,9 +67,9 @@ To unregister with NDIS, a protocol driver calls [NdisDeregisterProtocolDriver](
 
 To perform cleanup operations before a protocol driver is uninstalled, a protocol driver can register a [*ProtocolUninstall*](https://msdn.microsoft.com/library/windows/hardware/ff570279) function. The *ProtocolUninstall* function is optional. For example, the protocol lower edge of an intermediate driver might require a *ProtocolUninstall* function. The intermediate driver can release its protocol edge resources in *ProtocolUninstall* before NDIS calls its [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function.
 
- 
+ 
 
- 
+ 
 
 
 

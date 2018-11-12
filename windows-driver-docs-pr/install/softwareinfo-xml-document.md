@@ -13,9 +13,9 @@ For Windows 8 or later, a metadata package may contain one Softwareinfo.xml fil
 
 The data within the Softwareinfo.xml file is formatted based on the [**SoftwareInfo XML schema**](https://msdn.microsoft.com/library/windows/hardware/jj159075).
 
- 
+ 
 
- 
+ 
 
 
 

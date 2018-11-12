@@ -205,9 +205,9 @@ If you decide to set up network debugging after the Hyper-V role has been instal
 
 [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md)
 
- 
+ 
 
- 
+ 
 
 
 

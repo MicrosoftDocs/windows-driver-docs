@@ -34,9 +34,9 @@ If the NIC runs out of receive buffers, each buffer must be returned as soon as 
 
 For more information about receiving network data, see [Receiving Network Data](receiving-network-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,16 +63,16 @@ The following files are used by the smart card driver library and by drivers tha
 </tr>
 <tr class="even">
 <td align="left"><p><em>Smclib.sys</em></p></td>
-<td align="left"><p>The library's binary file for WDM drivers.</p></td>
+<td align="left"><p>The library&#39;s binary file for WDM drivers.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,7 +38,7 @@ The following example displays the same values.
 
 **Note**  If you want to operate on the variable name in the *OutCommands* portion of the command, you must add a space after the variable name. For example, in the preceeding example, there is a space between the variable *place* and the subtraction operator.
 
- 
+ 
 
 The **-\[1\]** option together with the [**s (Search Memory)**](s--search-memory-.md) command causes its output to include only the addresses it finds, not the values that are found at those addresses.
 
@@ -99,13 +99,13 @@ Like the preceding example, this program should be saved in a file and executed 
 
 This example illustrates the following features:
 
--   This program uses the MASM expression evaluator. However, in two places, the **@@c++( )** token appears. This token causes the program to use the C++ expression evaluator to parse the expression within the parentheses. This usage enables the program to use C++ structure tokens directly.
+- This program uses the MASM expression evaluator. However, in two places, the **@@c++( )** token appears. This token causes the program to use the C++ expression evaluator to parse the expression within the parentheses. This usage enables the program to use C++ structure tokens directly.
 
--   The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\***, so the program can make direct member references.
+- The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\\***, so the program can make direct member references.
 
--   The user-named aliases **$Base** and **$Mod** are used in this program. The dollar signs reduce the possibility that these aliases have been used previously in the current debugger session. The dollar signs are not necessary. The [**${/v: }**](-------alias-interpreter-.md) token interprets the alias literally, preventing it from being replaced if it was defined before the script is run. You can also use this token together with any block to prevent alias definitions before the block from being used.
+- The user-named aliases **$Base** and **$Mod** are used in this program. The dollar signs reduce the possibility that these aliases have been used previously in the current debugger session. The dollar signs are not necessary. The [**${/v: }**](-------alias-interpreter-.md) token interprets the alias literally, preventing it from being replaced if it was defined before the script is run. You can also use this token together with any block to prevent alias definitions before the block from being used.
 
--   The [**.block**](-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
+- The [**.block**](-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
 
 ```dbgcmd
 $$ Get module list LIST_ENTRY in $t0.
@@ -132,9 +132,9 @@ $$ Iterate over all modules in list.
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

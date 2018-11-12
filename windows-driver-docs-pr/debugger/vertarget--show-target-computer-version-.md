@@ -47,7 +47,7 @@ The **vertarget** command displays the current version of the Microsoft Windows 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -56,9 +56,9 @@ The **vertarget** command displays the current version of the Microsoft Windows 
 
 [**version (Show Debugger Version)**](version--show-debugger-version-.md)
 
- 
+ 
 
- 
+ 
 
 
 

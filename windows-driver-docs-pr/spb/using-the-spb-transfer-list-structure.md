@@ -104,9 +104,9 @@ In the preceding code example, the **switch** statement verifies that the reques
 
 For a [code example](https://msdn.microsoft.com/library/windows/hardware/hh974773#code-example) that shows parameter checking by an *EvtSpbControllerIoOther* function, see [Handling **IOCTL\_SPB\_FULL\_DUPLEX** Requests](https://msdn.microsoft.com/library/windows/hardware/hh974773).
 
- 
+ 
 
- 
+ 
 
 
 

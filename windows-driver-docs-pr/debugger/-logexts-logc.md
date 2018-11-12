@@ -63,7 +63,7 @@ Specifies the category whose APIs will be displayed. Only one category can be sp
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -102,9 +102,9 @@ The following command will display all APIs belonging to category 3:
 0:000> !logexts.logc p 3
 ```
 
- 
+ 
 
- 
+ 
 
 
 

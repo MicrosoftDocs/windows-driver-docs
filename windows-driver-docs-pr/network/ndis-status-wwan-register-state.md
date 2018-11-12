@@ -98,9 +98,9 @@ Requirements
 
 [OID\_WWAN\_REGISTER\_STATE](oid-wwan-register-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

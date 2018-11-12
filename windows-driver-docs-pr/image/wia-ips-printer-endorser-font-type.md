@@ -52,7 +52,7 @@ The accepted values for the **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property
 | WIA\_PRINT\_FONT\_LARGE\_ITALIC\_EXTRA\_BOLD | Large italic and extra bold font. |
 | WIA\_PRINT\_FONT\_LARGE\_ITALIC              | Large italic font.                |
 
- 
+ 
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property is optional for the Imprinter/Endorser items. When this is not supported, the printer/endorser device does not support font configuration.
 
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

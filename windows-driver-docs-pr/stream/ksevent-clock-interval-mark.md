@@ -30,9 +30,9 @@ Remarks
 
 For information about how to register for events, see [KS Events](https://msdn.microsoft.com/library/windows/hardware/ff567643).
 
- 
+ 
 
- 
+ 
 
 
 

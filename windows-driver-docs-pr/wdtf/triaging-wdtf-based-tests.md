@@ -23,9 +23,9 @@ WDTF provides support for [WPP Software Tracing](https://msdn.microsoft.com/libr
 -   [Enabling and Viewing WDTF Traces](viewing-wdtf-traces.md)
 -   [Diagnosing problems running WDTF-based tests](diagnosing-problems-running-wdtf-based-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

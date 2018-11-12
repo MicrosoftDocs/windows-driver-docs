@@ -26,9 +26,9 @@ When source mode is active, ASM is unavailable on the status bar. When assembly 
 
 For more information about source-mode debugging, see [Debugging in Source Mode](debugging-in-source-mode.md). For more information about assembly-mode debugging, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

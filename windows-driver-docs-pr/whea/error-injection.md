@@ -24,9 +24,9 @@ For more information about how to implement a PSHED plug-in that participates in
 
 User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](https://msdn.microsoft.com/library/windows/hardware/ff560556). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

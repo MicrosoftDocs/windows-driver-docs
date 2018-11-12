@@ -44,7 +44,7 @@ Specifies the session that owns the desired process. *Session* is always interpr
 </tr>
 <tr class="even">
 <td align="left"><p>-2</p></td>
-<td align="left"><p>Use [session context](changing-contexts.md#session-context).</p></td>
+<td align="left"><p>Use <a href="changing-contexts.md#session-context" data-raw-source="[session context](changing-contexts.md#session-context)">session context</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>-4</p></td>
@@ -53,7 +53,7 @@ Specifies the session that owns the desired process. *Session* is always interpr
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Flags______"></span><span id="_______flags______"></span><span id="_______FLAGS______"></span> *Flags*   
 Specifies the level of detail in the display. *Flags* can be any combination of the following bits. The default is 0.
@@ -91,7 +91,7 @@ Specifies the level of detail in the display. *Flags* can be any combination of 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______ImageName______"></span><span id="_______imagename______"></span><span id="_______IMAGENAME______"></span> *ImageName*   
 Specifies the name of the process to be displayed. All processes whose executable image names match *ImageName* are displayed. The image name must match that in the EPROCESS block. In general, this is the executable name that was invoked to start the process, including the file extension (usually .exe), and truncated after the fifteenth character. There is no way to specify an image name that contains a space.
@@ -118,7 +118,7 @@ Displays help for this extension in the Debugger Command window. This help text 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -129,9 +129,9 @@ Remarks
 
 The output of this extension is similar to that of [**!process**](-process.md), except that the addresses of \_MM\_SESSION\_SPACE and \_MMSESSION are displayed as well.
 
- 
+ 
 
- 
+ 
 
 
 

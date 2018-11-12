@@ -50,9 +50,9 @@ This section includes the following topics.
 
 The examples in the second section apply to features available only in Windows Vista and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

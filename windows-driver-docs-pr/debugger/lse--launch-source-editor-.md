@@ -46,7 +46,7 @@ lse
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +63,9 @@ c:\my\path\myeditor.exe -file %f -line %l
 
 This value indicates that Myeditor.exe opens to the one-based line number of the current source file. The **%l** option indicates that line numbers should be read as one-based, and **%f** indicates that the current source file should be used. You could also include **%L** to indicate that line numbers are zero-based or **%p** to indicate that the current source file should be used.
 
- 
+ 
 
- 
+ 
 
 
 

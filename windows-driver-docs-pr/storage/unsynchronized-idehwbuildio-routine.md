@@ -27,8 +27,8 @@ The Storport I/O model uses a similar technique to minimize the time that is spe
 
 All processing of an I/O request that requires access to critical system structures, such as the device extension, should be done within the [**IdeHwStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff559003) routine.
 
- 
+ 
 
- 
+ 
 
 

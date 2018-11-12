@@ -24,9 +24,9 @@ The WIA architecture does not permit a scanner device operating in auto-configur
 
 A WIA minidriver for a scanner device that supports auto-configured scanning should set the AUTO\_SOURCE flag bit in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551379) property value implemented by the root item in the WIA tree. A WIA application can query this property to determine whether the WIA item tree for the device contains an auto item.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,17 +28,17 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 The miniport driver reports the SR-IOV hardware capabilities of the underlying network adapter through an [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure that is initialized in the following way:
 
-1.  The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT.
+1. The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT.
 
-    Starting with NDIS 6.30, the miniport driver sets the **Revision** member of **Header** to NDIS\_SRIOV\_CAPABILITIES \_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_SRIOV\_CAPABILITIES\_REVISION\_1.
+   Starting with NDIS 6.30, the miniport driver sets the **Revision** member of **Header** to NDIS\_SRIOV\_CAPABILITIES \_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_SRIOV\_CAPABILITIES\_REVISION\_1.
 
-2.  The miniport driver sets the appropriate flags in the **SriovCapabilities** member to report SR-IOV capabilities.
+2. The miniport driver sets the appropriate flags in the **SriovCapabilities** member to report SR-IOV capabilities.
 
-    If the network adapter supports SR-IOV, the miniport driver for the PCI Express (PCIe) Physical Function of the adapter must set the following flags:
+   If the network adapter supports SR-IOV, the miniport driver for the PCI Express (PCIe) Physical Function of the adapter must set the following flags:
 
-    -   NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED
+   -   NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED
 
-    -   NDIS\_SRIOV\_CAPS\_PF\_MINIPORT
+   -   NDIS\_SRIOV\_CAPS\_PF\_MINIPORT
 
    > [!NOTE]
    > The miniport driver for a PCIe Virtual Function (VF) of the network adapter must set both the NDIS\_SRIOV\_CAPS\_VF\_MINIPORT flag and the NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED flag.    
@@ -70,9 +70,9 @@ NDIS passes the network adapter's currently enabled SR-IOV capabilities to overl
 
 NDIS also returns the [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure when it handles object identifier (OID) query requests of [OID\_SRIOV\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/hh451862) and [OID\_SRIOV\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/hh451859) that are issued by overlying protocol or filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

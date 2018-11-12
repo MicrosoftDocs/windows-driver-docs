@@ -47,29 +47,29 @@ Any driver that provides fonts must support the [**DrvQueryFont**](https://msdn.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvDestroyFont</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556192)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556192" data-raw-source="[&lt;strong&gt;DrvDestroyFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556192)"><strong>DrvDestroyFont</strong></a></p></td>
 <td align="left"><p>Notifies the driver that a font realization is no longer needed so the driver can free any data structures that it allocated. GDI calls this function once for the font producer and once for the font consumer. Optional--should be supported only if the driver must free allocated resources.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvFree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556226)</p></td>
-<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver's memory management requires this information.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556226" data-raw-source="[&lt;strong&gt;DrvFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556226)"><strong>DrvFree</strong></a></p></td>
+<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver&#39;s memory management requires this information.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFont</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556262)</p></td>
-<td align="left"><p>Returns a pointer to the [<strong>IFIMETRICS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567418) structure for a font. Required by all drivers that deal with fonts.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556262" data-raw-source="[&lt;strong&gt;DrvQueryFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556262)"><strong>DrvQueryFont</strong></a></p></td>
+<td align="left"><p>Returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418" data-raw-source="[&lt;strong&gt;IFIMETRICS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567418)"><strong>IFIMETRICS</strong></a> structure for a font. Required by all drivers that deal with fonts.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvQueryFontData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556264)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556264" data-raw-source="[&lt;strong&gt;DrvQueryFontData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556264)"><strong>DrvQueryFontData</strong></a></p></td>
 <td align="left"><p>Returns information about a realized font. Required (for selected <em>iMode</em> values) by all drivers that deal with fonts.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFontTree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556266)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556266" data-raw-source="[&lt;strong&gt;DrvQueryFontTree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556266)"><strong>DrvQueryFontTree</strong></a></p></td>
 <td align="left"><p>Returns pointers to structures that define either the mapping from Unicode to glyph handles or the mapping of kerning pairs to kerning handles. Required by all drivers that deal with fonts.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The function *DrvQueryFontTree* allows GDI to obtain pointers to tree structures that define one of the following:
 
@@ -85,9 +85,9 @@ In particular, the driver returns an identifier in the *pid* parameter. GDI pass
 
 *DrvDestroyFont* notifies the driver that a font realization is no longer needed so the driver can free any data structures it allocated. GDI calls this function once for the font producer and once for the font consumer. It should be implemented only if the driver must free allocated resources when the font instance is destroyed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Opening a Dump File Using Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -21,9 +21,9 @@ To open a dump file using Visual Studio:
 2.  Navigate to the dump file you want to open.
 3.  Click **Open.**
 
- 
+ 
 
- 
+ 
 
 
 

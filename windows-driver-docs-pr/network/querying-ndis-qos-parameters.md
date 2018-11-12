@@ -17,7 +17,7 @@ Overlying protocol and filter drivers can query the NDIS Quality of Service (QoS
 
 **Note**  Overlying drivers cannot query the local NDIS QoS parameters.
 
- 
+ 
 
 For more information about local, remote, and operational NDIS QoS parameters, see [Overview of NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
@@ -29,7 +29,7 @@ NDIS handles these OID requests for the miniport driver and returns the requeste
 
     **Note**  NDIS also returns this structure if the miniport driver issues an [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439810) status indication with an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure whose members (with the exception of the **Header** member) are set to zero.
 
-     
+     
 
 -   When NDIS handles the OID query request of [OID\_QOS\_REMOTE\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451841), it returns the remote NDIS QoS parameters that it had cached from the previous [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439812) status indication that was issued by the miniport driver. The driver issues this status indication when its remote QoS parameters are either resolved for the first time or change later.
 
@@ -37,11 +37,11 @@ NDIS handles these OID requests for the miniport driver and returns the requeste
 
     **Note**  NDIS also returns this structure if the miniport driver issues an [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439810) status indication with an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure whose members (with the exception of the **Header** member) are set to zero.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

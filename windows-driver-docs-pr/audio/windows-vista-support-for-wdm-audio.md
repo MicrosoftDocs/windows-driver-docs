@@ -22,9 +22,9 @@ Windows Vista supports the following WDM audio capabilities:
     -   AUX devices are not supported, and the [**auxGetNumDevs**](https://msdn.microsoft.com/library/windows/desktop/dd756713) function in Mmsystem.h will always return a count of zero.
     -   Windows NT4-style mixer drivers (DRIVERS32) are not supported.
 
- 
+ 
 
- 
+ 
 
 
 

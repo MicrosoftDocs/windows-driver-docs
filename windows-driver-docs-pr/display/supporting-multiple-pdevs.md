@@ -75,19 +75,19 @@ An implication of this is that Direct3D or OpenGL drivers can be called to destr
 
 2.  The [**DrvDisableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556200), [**DrvDisablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556198), and [**DrvDisableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff556196) routines must be implemented in the graphics driver so that an application can create and destroy additional PDEVs, and in some cases load more than one driver.
 
- 
+ 
 
 **Note**   If the driver's version number is 1.0, GDI will not call the driver to create a second PDEV. The version number of the driver is returned in [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206).
 
- 
+ 
 
 **Note**   Occasionally, the Display program's test bitmap will be displayed using a different driver than the currently-loaded driver. For example, if a system is running in 16-color mode with the VGA driver and testing a 64K-color mode with the VGA64K display driver, the VGA64K driver will be loaded dynamically and unloaded when the test is complete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

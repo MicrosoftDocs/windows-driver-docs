@@ -28,7 +28,7 @@ During initialization, a proxy driver typically registers with Transport Driver 
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571067) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
 ### Registering for Address Change Notification
 
@@ -50,7 +50,7 @@ The preceding structure definitions are defined in the tdi.h header file. The pr
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571067) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
 ### Maintaining a List of IP Addresses
 
@@ -58,9 +58,9 @@ A SAN service provider's proxy driver uses add-address and delete-address notifi
 
 The Windows Sockets switch maintains a list of all IP addresses assigned to each SAN NIC. To retrieve IP addresses for this inclusive list, the switch calls each SAN service provider 's [**WSPIoctl**](https://msdn.microsoft.com/library/windows/hardware/ff566296) function, passing the SIO\_ADDRESS\_LIST\_QUERY control code. Each SAN service provider, in turn, queries its associated proxy driver for its individual list of IP addresses assigned to its SAN NICs. After the switch is notified of an address change, it again queries each SAN service provider for updates in each individual list.
 
- 
+ 
 
- 
+ 
 
 
 

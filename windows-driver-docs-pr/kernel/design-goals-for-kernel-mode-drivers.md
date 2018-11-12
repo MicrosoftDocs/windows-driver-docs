@@ -30,9 +30,9 @@ Kernel-mode drivers share many of the design goals of the operating system, part
 
 -   Capable of [supporting asynchronous I/O](supporting-asynchronous-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

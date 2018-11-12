@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 Most drivers are not involved in authentication or identification issues, leaving this task to individual services. One case where a driver might become involved in authentication or identification processing is in access management. In this case, the authentication step is usually handled through calls to the Security Reference Monitor. Authentication and identification information is normally tracked by the operating system by the security token, an internal data structure that encapsulates the security credentials for a given thread or process.
 
- 
+ 
 
- 
+ 
 
 
 

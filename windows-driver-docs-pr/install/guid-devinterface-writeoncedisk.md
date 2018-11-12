@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Requirements
 
 [**WriteOnceDiskClassGuid**](writeoncediskclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

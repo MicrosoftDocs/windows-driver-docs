@@ -36,9 +36,9 @@ Remote kernel-mode debugging involves three computers: the *client*, the *server
 
 [Remote Debugging on Workgroup Computers](remote-debugging-on-workgroup-computers.md)
 
- 
+ 
 
- 
+ 
 
 
 

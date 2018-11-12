@@ -42,9 +42,9 @@ A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as t
 
 A driver cannot start any IRPs that access the device while the device is stopped. A driver must fail such IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -210,7 +210,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
         The PnP manager sends this IRP to determine whether the device has any child devices. If so, the PnP manager configures each child device.
 
- 
+ 
 ## Using GUID_PNP_LOCATION_INTERFACE
 
 The GUID_PNP_LOCATION_INTERFACE interface supplies the SPDRP_LOCATION_PATHS Plug and Play (PnP) device property for a device.
@@ -219,7 +219,7 @@ To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IR
 
 
 
- 
+ 
 
 
 

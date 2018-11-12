@@ -17,9 +17,9 @@ A **PropCode** entry in the **DeviceData** INF file section (see the example in 
 
 The WIA property codes should be between 0x9802 and 0x11802, which is the range defined for vendor-defined WIA device properties. The properties can be accessed through the **IWiaPropertyStorage::GetPropertyStream** and **IWiaPropertyStorage::SetPropertyStream** methods, which are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

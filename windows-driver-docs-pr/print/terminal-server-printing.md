@@ -59,7 +59,7 @@ For more information about co-installers and class installers, see [Writing Clas
 
 **Note**   Before writing custom setup code, it is important to read the Terminal Services programming guidelines provided in the Windows SDK documentation.
 
- 
+ 
 
 ### User Interface Considerations
 
@@ -73,9 +73,9 @@ Almost all printer driver code runs in the spooler's execution context and there
 
 All other printer driver code executes in the spooler's context. From this context, calling **MessageBox** or **MessageBoxEx** is allowed, but you must set MB\_SERVICE\_NOTIFICATION. These functions are described in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

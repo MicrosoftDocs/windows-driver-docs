@@ -72,9 +72,9 @@ On return from the driver-supplied *AdapterListControl* routine, **GetScatterGat
 
 When the driver has satisfied the current IRP's transfer request or must fail the IRP due to a device or bus I/O error, it must call **PutScatterGatherList** before it can access the transferred data in the buffer. **PutScatterGatherList** flushes the adapter buffers and frees the map registers and scatter/gather list.
 
- 
+ 
 
- 
+ 
 
 
 

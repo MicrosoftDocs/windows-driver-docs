@@ -29,9 +29,9 @@ When a driver [receives](receiving-i-o-requests.md) an I/O request, it can:
 
 The driver cannot ignore or delete the request.
 
- 
+ 
 
- 
+ 
 
 
 

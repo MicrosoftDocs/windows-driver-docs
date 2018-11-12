@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **Important**  The examples in this topic discuss the use of the BINPLACE\_PLACEFILE macro and the [BinPlace](binplace.md)[**place file**](place-file-syntax.md). This macro and file are obsolete in the Windows 7 version of the Windows Driver Kit and may not be supported in future versions of the WDK.
 
- 
+ 
 
 This topic provides examples of using BinPlace from the command-line.
 
@@ -51,7 +51,7 @@ When you pass an executable file name to BinPlace, it looks for its symbol files
 
 **Note**   If you specify a symbol file name explicitly, BinPlace will merely move it, not process it.
 
- 
+ 
 
 ```
 binplace -a -x -s d:\stripped -n g:\full g:\builddir\application.exe
@@ -77,9 +77,9 @@ binplace -a -x -s d:\stripped g:\builddir\mydriver.sys
 
 Here the class subdirectory is **\*/drivertree**. For the executable file, the asterisk (\*) is replaced with the processor type. Assuming you are running on an x86 computer, the executable file is placed in d:\\projectroot\\i386\\drivertree\\application.exe. The stripped symbol file is placed in g:\\full\\drivertree\\sys\\application.pdb, because the asterisk is ignored for a symbol file. Because the **-n** switch was omitted, the full symbol file is not placed anywhere.
 
- 
+ 
 
- 
+ 
 
 
 

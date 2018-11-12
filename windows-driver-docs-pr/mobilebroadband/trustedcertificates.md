@@ -42,13 +42,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificate](trustedcertificate.md)</p></td>
+<td><p><a href="trustedcertificate.md" data-raw-source="[TrustedCertificate](trustedcertificate.md)">TrustedCertificate</a></p></td>
 <td><p>Specifies the trusted certificate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -66,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ProvisioningEngine](provisioningengine.md)</p></td>
+<td><p><a href="provisioningengine.md" data-raw-source="[ProvisioningEngine](provisioningengine.md)">ProvisioningEngine</a></p></td>
 <td><p>Specifies the trusted certificates.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -93,9 +93,9 @@ There are no attributes.
 
 The TrustedCertificates element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

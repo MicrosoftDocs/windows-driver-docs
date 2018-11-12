@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -20,39 +20,39 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 ## <span id="Configuring_the_Target_Virtual_Machine"></span><span id="configuring_the_target_virtual_machine"></span><span id="CONFIGURING_THE_TARGET_VIRTUAL_MACHINE"></span>Configuring the Target Virtual Machine
 
 
-1.  In the virtual machine, in an elevated Command Prompt window, enter the following commands.
+1. In the virtual machine, in an elevated Command Prompt window, enter the following commands.
 
-    **bcdedit /debug on**
+   **bcdedit /debug on**
 
-    **bcdedit /dbgsettings serial debugport:***n* **baudrate:115200**
+   **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:115200**
 
-    where *n* is the number of a COM port on the virtual machine.
+   where *n* is the number of a COM port on the virtual machine.
 
-2.  Reboot the virtual machine.
-3.  In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
+2. Reboot the virtual machine.
+3. In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
 
 ## <span id="Configuring_the_Host_Computer"></span><span id="configuring_the_host_computer"></span><span id="CONFIGURING_THE_HOST_COMPUTER"></span>Configuring the Host Computer
 
 
 The host computer can be the same physical computer that is running the virtual machine, or it can be a separate computer.
 
-1.  On the host computer, in Visual Studio, on the **Driver** menu, choose **Test &gt; Configure Computer**.
-2.  Click **Add New Computer**.
-3.  For **Computer name**, enter the name of the physical computer that is running the target virtual machine.
-4.  Select **Manually configure debuggers and do not provision**, and click **Next**.
-5.  For **Connection Type**, select **Serial**.
-6.  Check **Pipe**, and check **Reconnect**.
-7.  If the debugger is running on the same computer as the virtual machine, enter the following for **Pipe name**:
+1. On the host computer, in Visual Studio, on the **Driver** menu, choose **Test &gt; Configure Computer**.
+2. Click **Add New Computer**.
+3. For **Computer name**, enter the name of the physical computer that is running the target virtual machine.
+4. Select **Manually configure debuggers and do not provision**, and click **Next**.
+5. For **Connection Type**, select **Serial**.
+6. Check **Pipe**, and check **Reconnect**.
+7. If the debugger is running on the same computer as the virtual machine, enter the following for **Pipe name**:
 
-    **\\\\.\\pipe\\***PipeName*.
+   **\\\\.\\pipe\\**<em>PipeName</em>.
 
-    If the debugger is running on a different computer from the virtual machine, enter the following for **Pipe name**:
+   If the debugger is running on a different computer from the virtual machine, enter the following for **Pipe name**:
 
-    **\\\\***VMHost***\\pipe\\***PipeName*
+   **\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>
 
-    where, *VMHost* is the name of the physical computer that is running the target virtual machine, and *PipeName* is the name of the pipe that you associated with the COM port on the target virtual machine.
+   where, *VMHost* is the name of the physical computer that is running the target virtual machine, and *PipeName* is the name of the pipe that you associated with the COM port on the target virtual machine.
 
-8.  Click **Next**. Click **Finish**.
+8. Click **Next**. Click **Finish**.
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
@@ -72,19 +72,19 @@ By default, COM ports are not presented in generation 2 virtual machines. You ca
 
 To enable kernel debugging using a COM port on a generation 2 virtual machine, follow these steps:
 
-1.  Disable Secure Boot by entering this PowerShell command:
+1. Disable Secure Boot by entering this PowerShell command:
 
-    **Set-VMFirmware –Vmname** *VmName* **–EnableSecureBoot Off**
+   **Set-VMFirmware –Vmname** *VmName* **–EnableSecureBoot Off**
 
-    where *VmName* is the name of your virtual machine.
+   where *VmName* is the name of your virtual machine.
 
-2.  Add a COM port to the virtual machine by entering this PowerShell command:
+2. Add a COM port to the virtual machine by entering this PowerShell command:
 
-    **Set-VMComPort –VMName** *VmName* **1 \\\\.\\pipe\\***PipeName*
+   **Set-VMComPort –VMName** *VmName* **1 \\\\.\\pipe\\**<em>PipeName</em>
 
-    For example, the following command configures the first COM port on virtual machine TestVM to connect to named pipe TestPipe on the local computer.
+   For example, the following command configures the first COM port on virtual machine TestVM to connect to named pipe TestPipe on the local computer.
 
-    **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
+   **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
 
 3. Restart the VM so that the new settings are in effect.
 
@@ -113,9 +113,9 @@ You can use Control Panel to allow access through the Windows firewall.
 
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
- 
+ 
 
- 
+ 
 
 
 

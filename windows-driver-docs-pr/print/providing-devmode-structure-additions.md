@@ -29,9 +29,9 @@ If your UI plug-in adds private DEVMODE members, the [**OEM\_DMEXTRAHEADER**](ht
 
 You are not required to add members to the DEVMODE structure, but if you do, your UI plug-in must implement the [**IPrintOemUI::DevMode**](https://msdn.microsoft.com/library/windows/hardware/ff554167) method. This method's purpose, depending on input arguments, is to return the size of, initialize, convert, or validate the additional DEVMODE members.
 
- 
+ 
 
- 
+ 
 
 
 

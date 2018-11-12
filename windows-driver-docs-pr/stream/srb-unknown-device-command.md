@@ -18,9 +18,9 @@ This request can be used as an IRP pass-through mechanism for IRPs that the stre
 
 If the minidriver does not support SRB\_UNKNOWN\_DEVICE\_COMMAND or does not handle the IRP, it should set pSRB-&gt;Status to STATUS\_NOT\_IMPLEMENTED.
 
- 
+ 
 
- 
+ 
 
 
 

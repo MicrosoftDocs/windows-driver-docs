@@ -63,9 +63,9 @@ For example, the PCMCIA bus driver creates child function hardware IDs such as t
 
 An INF file for a child function of a multifunction PC Card device must specify the hardware ID that is reported by the PCMCIA bus driver and mf.sys.
 
- 
+ 
 
- 
+ 
 
 
 

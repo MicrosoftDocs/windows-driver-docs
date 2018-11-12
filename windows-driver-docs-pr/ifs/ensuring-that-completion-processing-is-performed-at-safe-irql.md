@@ -24,9 +24,9 @@ The first technique is for the postoperation callback routine to pend the I/O op
 
 The second technique is for the minifilter driver's postoperation callback routine to call [**FltDoCompletionProcessingWhenSafe**](https://msdn.microsoft.com/library/windows/hardware/ff542047). **FltDoCompletionProcessingWhenSafe** pends the I/O operation only if the current IRQL is &gt;= DISPATCH\_LEVEL. Otherwise, this routine executes the minifilter driver's **SafePostCallback** routine immediately. This technique is described in **FltDoCompletionProcessingWhenSafe**.
 
- 
+ 
 
- 
+ 
 
 
 

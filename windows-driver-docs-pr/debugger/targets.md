@@ -49,9 +49,9 @@ When acquiring a target, the acquisition of the target is not complete until the
 
 For details about attaching to targets, see [Connecting to Targets](connecting-to-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

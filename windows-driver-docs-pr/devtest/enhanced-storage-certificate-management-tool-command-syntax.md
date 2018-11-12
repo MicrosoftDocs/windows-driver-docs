@@ -56,7 +56,6 @@ The Enhanced Storage Certificate Management tool is run from the command line.
     /Replace 
     ReplaceParameters
     ]
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -101,9 +100,9 @@ All the switches of the Enhanced Storage Certificate Management tool must start 
 
 .
 
- 
 
- 
+
+
 
 
 

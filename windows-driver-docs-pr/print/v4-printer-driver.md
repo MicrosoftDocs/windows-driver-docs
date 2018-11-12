@@ -14,7 +14,7 @@ The v4 printer driver model was designed to address known issues with the versio
 
 **Note**  To help to better explain some of the concepts in this section, a fictional company called Fabrikam is used.
 
- 
+ 
 
 **Introduction**
 
@@ -54,9 +54,9 @@ This section discusses the following aspects of the v4 printer driver:
 
 [Build a v4 Printer Driver in Visual Studio](build-a-v4-print-driver-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

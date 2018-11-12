@@ -30,9 +30,9 @@ The following topics cover details of handling system power state requests:
 
 [Handling IRP\_MN\_SET\_POWER for System Power States](handling-irp-mn-set-power-for-system-power-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

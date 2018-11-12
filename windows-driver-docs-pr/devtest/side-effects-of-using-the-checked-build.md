@@ -18,9 +18,9 @@ The checked components of the operating system contain fewer optimizations and m
 
 It is important for driver writers to remember that this slower execution can cause changes in the timing relationships among code paths. Therefore, the checked build can hide timing problems (such as race conditions or deadlocks) that might be revealed in the free build. Thus, you must test all of your drivers on both the free build and the checked build of the operating system before release.
 
- 
+ 
 
- 
+ 
 
 
 

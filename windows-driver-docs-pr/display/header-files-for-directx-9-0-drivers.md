@@ -20,9 +20,9 @@ To support DirectX 8.1 and earlier versions of the DirectX runtime, the driver's
 
 To avoid problems when building a DirectX 9.0 version driver, define DIRECT3D\_VERSION as 0x0900 in the driver's source code before including any header files. Doing so prevents the possibility of DirectX 9.0 features being missed as described in the [DIRECT3D\_VERSION](direct3d-version.md) topic. To ensure that the build process retrieves all the necessary symbols in header files, include *d3d9.h* and *d3d8.h* before *winddi.h* or *d3dnthal.h*.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ The following topics contain update information for vertex buffer creation and u
 
 [Handling Renaming on Windows 2000](handling-renaming-on-windows-2000.md)
 
- 
+ 
 
- 
+ 
 
 
 

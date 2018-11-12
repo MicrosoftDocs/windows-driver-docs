@@ -43,9 +43,9 @@ The mobile broadband device can determine which apps it trusts to send and recei
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

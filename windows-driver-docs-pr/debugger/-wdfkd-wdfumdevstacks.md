@@ -97,9 +97,9 @@ Number of device stacks: 1
 
 The preceding output shows that there is one UMDF device stack in the implicit process. You can also see that the device stack has one device object (Number of UM devices: 1).
 
- 
+ 
 
- 
+ 
 
 
 

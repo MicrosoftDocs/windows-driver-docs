@@ -42,9 +42,9 @@ Provides info about the next encode chunk.
 <span id="ReportSessionStatus"></span><span id="reportsessionstatus"></span><span id="REPORTSESSIONSTATUS"></span>[**ReportSessionStatus**](https://msdn.microsoft.com/library/windows/hardware/dn265502)  
 The driver calls this function to report the status of the current Miracast connected session.
 
- 
+ 
 
- 
+ 
 
 
 

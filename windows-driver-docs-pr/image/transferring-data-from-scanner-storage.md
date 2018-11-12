@@ -18,11 +18,11 @@ To transfer data to one of the scanner storage folder items, a WIA application s
 
 **Note**  This enumeration operation should not be permitted outside the root storage folder.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

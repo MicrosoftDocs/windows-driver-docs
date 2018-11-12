@@ -28,9 +28,9 @@ This API also includes a status change event that notifies the application whene
 
 [**NetworkStatusChangedEventHandler delegate**](https://msdn.microsoft.com/library/windows/apps/br207303)
 
- 
+ 
 
- 
+ 
 
 
 

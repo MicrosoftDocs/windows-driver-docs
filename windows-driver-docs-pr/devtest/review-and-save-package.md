@@ -30,9 +30,9 @@ After completing all of the tabs in the wizard, review and save your package.
 4.  If you want to install and test the metadata package on your PC, select **Copy packages to your system's local metadata store**.
 5.  Click **Finish**.
 
- 
+ 
 
- 
+ 
 
 
 

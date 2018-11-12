@@ -116,9 +116,9 @@ An offload target can call the **NdisMIndicateStatusEx** function to request the
 
 -   Resume offloading state objects to the offload target.
 
- 
+ 
 
- 
+ 
 
 
 

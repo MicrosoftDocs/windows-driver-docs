@@ -15,9 +15,9 @@ This section includes the following topics that describe custom properties for H
 
 [Custom Switch Property Definition and Registration](custom-switch-property-definition-and-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

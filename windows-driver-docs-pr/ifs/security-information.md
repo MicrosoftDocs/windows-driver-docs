@@ -46,7 +46,7 @@ Each item of security information is designated by a bit flag. The following val
 <tbody>
 <tr class="odd">
 <td align="left"><p>DACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object's DACL is being set or queried.</p>
+<td align="left"><p>Indicates that the object&#39;s DACL is being set or queried.</p>
 <p>For the following items, the DACL is queried:</p>
 <p>IRP_MJ_QUERY_SECURITY</p>
 <p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
@@ -124,7 +124,7 @@ Each item of security information is designated by a bit flag. The following val
 </tr>
 <tr class="even">
 <td align="left"><p>SACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object's SACL is being set or queried.</p>
+<td align="left"><p>Indicates that the object&#39;s SACL is being set or queried.</p>
 <p>For the following items, the SACL is queried:</p>
 <p>IRP_MJ_QUERY_SECURITY</p>
 <p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
@@ -146,7 +146,7 @@ Each item of security information is designated by a bit flag. The following val
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
@@ -170,9 +170,9 @@ Wdm.h (include Wdm.h)
 
 [**ZwSetSecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567106)
 
- 
+ 
 
- 
+ 
 
 
 

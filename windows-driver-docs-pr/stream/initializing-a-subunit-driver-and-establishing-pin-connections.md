@@ -66,9 +66,9 @@ AV/C external plug connections are not directly supported by *Avc.sys*, but *Avc
 
 An approach that allows *Avc.sys* to make the proper internal plug connections and exposes possible external plug connections to applications is to have filter factories for each possible external plug. The resulting filter instances expose an appropriate input or output pin, which in turn provides AVCCONNECTINFO structures.
 
- 
+ 
 
- 
+ 
 
 
 

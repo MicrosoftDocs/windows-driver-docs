@@ -30,9 +30,9 @@ If you click **OK** when no log file name appears in the **Log file name** box, 
 
 However, if a log file is already active and you click **OK** without clearing its name or selecting **Append**, WinDbg deletes the log file and uses a new file that has the same name.
 
- 
+ 
 
- 
+ 
 
 
 

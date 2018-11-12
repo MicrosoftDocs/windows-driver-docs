@@ -59,7 +59,7 @@ Before you use this extension, use [**!wmitrace.searchpath**](-wmitrace-searchpa
 
 **Note**  If your driver uses UMDF version 1.11 or later, you do not need to use [**!wmitrace.searchpath**](-wmitrace-searchpath.md) or [**!wmitrace.tmffile**](-wmitrace-tmffile.md).
 
- 
+ 
 
 When you use Tracelog to start a trace session with circular buffering (-buffering), use this extension to display the buffer contents.
 
@@ -71,9 +71,9 @@ This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlog
 
 For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561391#viewing-the-umdf-trace-log).
 
- 
+ 
 
- 
+ 
 
 
 

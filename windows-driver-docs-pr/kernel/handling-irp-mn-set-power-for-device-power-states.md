@@ -44,9 +44,9 @@ The exact steps a driver must take to handle a power IRP depend upon whether the
 
 [Handling Device Power-Up IRPs](handling-device-power-up-irps.md)
 
- 
+ 
 
- 
+ 
 
 
 

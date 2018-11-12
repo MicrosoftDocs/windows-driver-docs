@@ -41,15 +41,15 @@ The **Enable close exception** flag raises a user-mode exception whenever an inv
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   This flag is still supported, but the [Enable bad handles detection](enable-bad-handles-detection.md) flag (bhd), which performs a more comprehensive check of handle use, is preferred.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

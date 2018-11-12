@@ -27,9 +27,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**VsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff570576)
 
- 
+ 
 
- 
+ 
 
 
 

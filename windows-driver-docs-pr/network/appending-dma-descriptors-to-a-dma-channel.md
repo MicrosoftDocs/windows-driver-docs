@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -28,9 +28,9 @@ The NetDMA interface sets the **NextDescriptor** member of the last descriptor t
 
 If the current descriptor in an active DMA transfer is the last descriptor, the DMA engine must reread the last descriptor. The **NextDescriptor** member in the current [**NET\_DMA\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568734) structure has a new address, and the DMA engine should continue with the next descriptor. If the current descriptor is not the last descriptor, the DMA engine can continue processing DMA descriptors with no additional tasks.
 
- 
+ 
 
- 
+ 
 
 
 
