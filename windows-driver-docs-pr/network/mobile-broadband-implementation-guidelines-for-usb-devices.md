@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Mobile Broadband Implementation Guidelines for USB Devices
 
 
-This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows. It should be used in conjunction with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](http://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
+This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows. It should be used in conjunction with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement) released by the USB-IF Device Working Group.
 
 The information in this topic applies to:
 
