@@ -10,27 +10,15 @@ ms.localizationpriority: medium
 # Attestation signing a kernel driver for public release
 
 This topic describes how to sign a driver using attestation signing.
-<<<<<<< HEAD
-=======
- 
->>>>>>> markdig-migration-old
 
 > [!Note]
 > Attestation signing has the following properties.
-<<<<<<< HEAD
-> - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
-> - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
-> - Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
-> - An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-> - Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
-=======
 > -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > -   Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
 > -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
 > -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
  
->>>>>>> markdig-migration-old
 
 ## Attestation signing a kernel mode driver
 
