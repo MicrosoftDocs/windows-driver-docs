@@ -19,7 +19,6 @@ This topic describes how to sign a driver using attestation signing.
 > -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
 > -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
  
-
 ## Attestation signing a kernel mode driver
 
 To attestation sign a kernel mode driver complete the following steps:
