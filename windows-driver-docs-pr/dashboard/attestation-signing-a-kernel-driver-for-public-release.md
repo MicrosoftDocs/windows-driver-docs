@@ -164,11 +164,6 @@ C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http:
 > [!IMPORTANT]
 > Remember to use industry best practices to manage the security of the EV code signing process.
 
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> markdig-migration-old
 ## Submit the EV signed Cab file using the Hardware Dev Center dashboard
 
 1. Submit the EV signed CAB file using the Hardware Dev Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
@@ -257,13 +252,4 @@ C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
 ```
 
-<<<<<<< HEAD
 You can follow these steps to sign, submit and test the other driver files you wish to submit.
-=======
-You can follow these steps to sign, submit and test the other driver files you wish to submit.
-
- 
-
- 
-
->>>>>>> markdig-migration-old
