@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
@@ -72,16 +72,16 @@ Relative root, in which keys that are specified by using this abbreviation are r
 | INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
 | INF [***DDInstall*.Services**](inf-ddinstall-services-section.md) section | The **Services** key                                                                  |
 
- 
+ 
 
 **Note**  **HKR** cannot be used in an *del-registry-section* referenced from an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
 
- 
+ 
 
 For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 <a href="" id="subkey"></a>*subkey*  
-This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (*key1***\\***key2***\\***key3*...), specifies one of the following:
+This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (<em>key1</em>**\\**<em>key2</em>**\\**<em>key3</em>...), specifies one of the following:
 
 -   A subkey to be deleted from the registry at the end of the given registry path
 -   An existing subkey from which the given value-entry-name is to be deleted
@@ -181,9 +181,9 @@ HKR,,UpperFilters
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

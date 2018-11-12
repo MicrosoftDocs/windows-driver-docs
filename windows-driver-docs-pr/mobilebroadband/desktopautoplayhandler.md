@@ -52,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WindowsInfo](windowsinfo.md)</p></td>
-<td><p>The parent element of the [WindowsInfo XML schema](windowsinfo-xml-schema.md).</p></td>
+<td><p><a href="windowsinfo.md" data-raw-source="[WindowsInfo](windowsinfo.md)">WindowsInfo</a></p></td>
+<td><p>The parent element of the <a href="windowsinfo-xml-schema.md" data-raw-source="[WindowsInfo XML schema](windowsinfo-xml-schema.md)">WindowsInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -78,9 +78,9 @@ HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handler
 
 The DesktopAutoplayHandler element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

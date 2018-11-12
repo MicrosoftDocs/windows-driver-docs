@@ -28,11 +28,11 @@ Use the [**NET\_BUFFER\_SHARED\_MEM\_NEXT\_SEGMENT**](https://msdn.microsoft.com
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, the overlying protocol driver will not set the **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED** flag in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

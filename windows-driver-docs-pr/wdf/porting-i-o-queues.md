@@ -19,9 +19,9 @@ WDF drivers create queues and register I/O event callbacks in the [*EvtDriverDev
 
 For more information about creating queues, see [Creating I/O Queues](creating-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

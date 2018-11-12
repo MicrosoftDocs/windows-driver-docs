@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_CONTROLLING\_PIN\_ID to retrieve the controlling pi
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -89,9 +89,9 @@ Requirements
 
 [**KSTOPOLOGY\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff567148)
 
- 
+ 
 
- 
+ 
 
 
 

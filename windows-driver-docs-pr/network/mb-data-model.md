@@ -52,7 +52,7 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 | [OID\_WWAN\_USSD](https://msdn.microsoft.com/library/windows/hardware/hh440100) uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh439846) | Not supported | A | Not supported | Not supported | GSM |
 | [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://msdn.microsoft.com/library/windows/hardware/hh440094) uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/hh439836) | Not supported | A | Not supported | A| GSM, CDMA |
 
-> [!NOTE] 
+> [!NOTE]
 > The following notes apply to the preceding table:
 > † represents optional OIDs that miniport drivers may support. Miniport drivers that do not support the optional OIDs must not return them in OID\_GEN\_SUPPORTED\_LIST.
 >
@@ -85,163 +85,163 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 <p><strong>Windows 8 Revision</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567845)</p>
-<p>uses [<strong>NDIS_WWAN_DEVICE_CAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567907)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567845" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567845)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567907" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567907)"><strong>NDIS_WWAN_DEVICE_CAPS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_CAPS_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_CAPS_REVISION_2</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_READY_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567856)</p>
-<p>uses [<strong>NDIS_WWAN_READY_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567916)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567856" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567856)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567916" data-raw-source="[&lt;strong&gt;NDIS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567916)"><strong>NDIS_WWAN_READY_INFO</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_READY_INFO_REVISION_1</p>
 <p>NDIS_WWAN_READY_INFO_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_RADIO_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567855)</p>
-<p>uses [<strong>NDIS_WWAN_RADIO_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567915)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567855" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567855)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567915" data-raw-source="[&lt;strong&gt;NDIS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567915)"><strong>NDIS_WWAN_RADIO_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_RADIO_STATE_REVISION_1</p>
 <p>NDIS_WWAN_RADIO_STATE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PIN_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567851)</p>
-<p>uses [<strong>NDIS_WWAN_PIN_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567911)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567851" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567851)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567911" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567911)"><strong>NDIS_WWAN_PIN_INFO</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PIN_INFO_REVISION_1</p>
 <p>NDIS_WWAN_PIN_INFO_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PIN_LIST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567852)</p>
-<p>uses [<strong>NDIS_WWAN_PIN_LIST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567912)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567852" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567852)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567912" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567912)"><strong>NDIS_WWAN_PIN_LIST</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PIN_LIST_REVISION_1</p>
 <p>NDIS_WWAN_PIN_LIST_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567858)†</p>
-<p>uses [<strong>NDIS_WWAN_SERVICE_ACTIVATION_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567919)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567858" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567858)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a>†</p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567919" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SERVICE_ACTIVATION_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567919)"><strong>NDIS_WWAN_SERVICE_ACTIVATION_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SERVICE_ACTIVATION_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SERVICE_ACTIVATION_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567848)</p>
-<p>uses [<strong>NDIS_WWAN_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567909)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567909" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567909)"><strong>NDIS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_HOME_PROVIDER_REVISION_1</p>
 <p>NDIS_WWAN_HOME_PROVIDER_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567853)†</p>
-<p>uses [<strong>NDIS_WWAN_PREFERRED_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567913)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567853" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567853)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a>†</p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567913" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567913)"><strong>NDIS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PREFERRED_PROVIDERS_REVISION_1</p>
 <p>NDIS_WWAN_PREFERRED_PROVIDERS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567866)</p>
-<p>uses [<strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567948)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1</p>
 <p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567857)</p>
-<p>uses [<strong>NDIS_WWAN_REGISTRATION_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567917)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567857" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567857)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567917" data-raw-source="[&lt;strong&gt;NDIS_WWAN_REGISTRATION_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567917)"><strong>NDIS_WWAN_REGISTRATION_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_REGISTRATION_STATE_REVISION_1</p>
 <p>NDIS_WWAN_REGISTRATION_STATE_REVISION_2</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567859)</p>
-<p>uses [<strong>NDIS_WWAN_SIGNAL_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567931)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567859" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567859)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567931" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567931)"><strong>NDIS_WWAN_SIGNAL_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SIGNAL_STATE_REVISION_1</p>
 <p>NDIS_WWAN_SIGNAL_STATE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567850)</p>
-<p>uses [<strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567910)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567850" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567850)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567910" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567910)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PACKET_SERVICE_STATE_REVISION_1</p>
 <p>NDIS_WWAN_PACKET_SERVICE_STATE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567854)</p>
-<p>uses [<strong>NDIS_WWAN_PROVISIONED_CONTEXTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567914)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567854" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567854)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567914" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567914)"><strong>NDIS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PROVISIONED_CONTEXTS_REVISION_1</p>
 <p>NDIS_WWAN_PROVISIONED_CONTEXTS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567843)</p>
-<p>uses [<strong>NDIS_WWAN_CONTEXT_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567906)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567843" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567843)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567906" data-raw-source="[&lt;strong&gt;NDIS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567906)"><strong>NDIS_WWAN_CONTEXT_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_CONTEXT_STATE_REVISION_1</p>
 <p>NDIS_WWAN_CONTEXT_STATE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567860)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_CONFIGURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567935)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567860" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567860)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567935" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567935)"><strong>NDIS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_CONFIGURATION_REVISION_1</p>
 <p>NDIS_WWAN_SMS_CONFIGURATION_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567862)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_RECEIVE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567942)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567862" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567862)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567942" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567942)"><strong>NDIS_WWAN_SMS_RECEIVE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_RECEIVE_REVISION_1</p>
 <p>NDIS_WWAN_SMS_RECEIVE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_SEND</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567863)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_SEND_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567944)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567863" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567863)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567944" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567944)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_SEND_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_SEND_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_DELETE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567861)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_DELETE_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567940)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567861" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567861)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567940" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_DELETE_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567940)"><strong>NDIS_WWAN_SMS_DELETE_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_DELETE_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_DELETE_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567864)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567945)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567864" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567864)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567945" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567945)"><strong>NDIS_WWAN_SMS_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567865)†</p>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567865" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567865)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a>†</p>
 <p>uses a vendor-defined structure</p></td>
 <td align="left"><p>N/A</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_USSD</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439822)</p>
-<p>uses [<strong>NDIS_WWAN_USSD_EVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439844)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439822" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439822)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439844" data-raw-source="[&lt;strong&gt;NDIS_WWAN_USSD_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439844)"><strong>NDIS_WWAN_USSD_EVENT</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_USSD_EVENT_REVISION_1</p>
 <p>NDIS_WWAN_USSD_EVENT_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846210)</p>
-<p>uses [<strong>NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846214)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846210" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846210)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh846214" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846214)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICES_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICES_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846205)</p>
-<p>uses [<strong>NDIS_WWAN_DEVICE_SERVICE_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439838)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846205" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846205)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439838" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439838)"><strong>NDIS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_RESPONSE_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_RESPONSE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846204)</p>
-<p>uses [<strong>NDIS_WWAN_DEVICE_SERVICE_EVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439837)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846204" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846204)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439837" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439837)"><strong>NDIS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_EVENT_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_EVENT_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846209)</p>
-<p>uses [<strong>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439839)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846209" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846209)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439839" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439839)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439821)</p>
-<p>uses [<strong>NDIS_WWAN_AUTH_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439834)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439821" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439821)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439834" data-raw-source="[&lt;strong&gt;NDIS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439834)"><strong>NDIS_WWAN_AUTH_RESPONSE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_AUTH_RESPONSE_REVISION_1</p>
 <p>NDIS_WWAN_AUTH_RESPONSE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846212)</p>
-<p>uses [<strong>NDIS_WWAN_SET_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439841)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846212" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846212)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439841" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439841)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>N/A</p>
 <p>NDIS_WWAN_HOME_PROVIDER_REVISION_2</p></td>
 </tr>
@@ -271,165 +271,165 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 <p><strong>allowed?</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567845)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567845" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567845)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_READY_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567856)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567856" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567856)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_RADIO_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567855)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567855" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567855)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PIN_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567851)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567851" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567851)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PIN_LIST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567852)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567852" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567852)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567858)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567858" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567858)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567848)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567853)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567853" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567853)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567866)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567857)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567857" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567857)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567859)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567859" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567859)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567850)</p>
-<p>uses [<strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567910)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567850" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567850)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567910" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567910)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567854)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567854" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567854)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567843)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567843" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567843)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567860)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567860" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567860)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567862)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567862" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567862)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_SEND</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567863)</p>
-<p>uses [<strong>NDIS_WWAN_SMS_SEND_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567944)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567863" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567863)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567944" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567944)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_DELETE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567861)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567861" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567861)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SMS_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567864)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567864" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567864)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567865)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567865" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567865)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_USSD</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439822)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439822" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439822)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846210)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846210" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846210)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846205)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846205" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846205)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846204)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846204" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846204)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846209)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846209" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846209)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439821)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439821" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439821)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846212)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846212" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846212)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
@@ -456,15 +456,15 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p><strong>GSM/CDMA</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[OID_WWAN_HOME_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826)</p>
-<p>uses [<strong>NDIS_WWAN_SET_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439841)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569826" data-raw-source="[OID_WWAN_HOME_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826)">OID_WWAN_HOME_PROVIDER</a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439841" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439841)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>GSM, CDMA</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)</p>
-<p>uses [<strong>NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh831866). The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the structure is WWAN_PROVIDER2.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569830" data-raw-source="[OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)">OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh831866" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh831866)"><strong>NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS</strong></a>. The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the structure is WWAN_PROVIDER2.</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>GSM, CDMA</p></td>
@@ -485,18 +485,18 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p><strong>Windows 8 Revision</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567848)</p>
-<p>uses [<strong>NDIS_WWAN_HOME_PROVIDER2</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439840)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439840" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439840)"><strong>NDIS_WWAN_HOME_PROVIDER2</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_HOME_PROVIDER_REVISION_2</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846211)</p>
-<p>uses [<strong>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh831864)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846211" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846211)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh831864" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh831864)"><strong>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS_REVISION_1. The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the list should contain WWAN_PROVIDER2 structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567866)</p>
-<p>uses [<strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567948)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1. The <strong>VisibleListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the list should contain WWAN_PROVIDER2 structure.</p></td>
 </tr>
 </tbody>
@@ -521,20 +521,20 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <p><strong>allowed?</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567848)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh846211)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846211" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846211)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567866)</p>
-<p>uses [<strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567948)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>

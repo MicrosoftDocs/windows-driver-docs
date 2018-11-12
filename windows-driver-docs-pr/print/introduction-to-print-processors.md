@@ -53,7 +53,7 @@ Microsoft Windows 2000 and later includes the print processors listed in the fol
 </tbody>
 </table>
 
- 
+ 
 
 \* Beginning with Windows 2000, Localmon.dll and Winprint.dll are included in Localspl.dll.
 
@@ -73,11 +73,11 @@ Print processors are associated with printer drivers during driver installation,
 
 **Note**   When you compile a print processor, set the Unicode flag with \#define UNICODE. Print processor code should use only wide strings, of type LPWSTR, for example.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

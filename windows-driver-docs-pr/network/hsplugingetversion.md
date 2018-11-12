@@ -56,9 +56,9 @@ Requirements
 
 [**HS\_PLUGIN\_VERSION**](hs-plugin-version.md)
 
- 
+ 
 
- 
+ 
 
 
 

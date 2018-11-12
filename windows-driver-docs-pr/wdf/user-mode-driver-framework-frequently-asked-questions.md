@@ -99,9 +99,9 @@ You can find discussion of all aspects of Windows drivers on the following forum
 
 -   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](http://www.osronline.com/showlists.cfm?list=ntdev) forum.
 
- 
+ 
 
- 
+ 
 
 
 

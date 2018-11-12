@@ -84,9 +84,9 @@ The following support routines are provided for responding to communication init
 
 [**FilterReplyMessage**](https://msdn.microsoft.com/library/windows/hardware/ff541508)
 
- 
+ 
 
- 
+ 
 
 
 

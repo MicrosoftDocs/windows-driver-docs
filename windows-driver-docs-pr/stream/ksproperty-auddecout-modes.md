@@ -49,13 +49,13 @@ This property is read-only.
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a DWORD that represents a bitmask of the audio output modes that the audio decoder supports.
 
@@ -94,9 +94,9 @@ Requirements
 
 [**KSPROPERTY\_AUDDECOUT\_CUR\_MODE**](ksproperty-auddecout-cur-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

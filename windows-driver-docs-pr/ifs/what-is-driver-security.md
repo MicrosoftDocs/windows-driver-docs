@@ -21,9 +21,9 @@ However, after a product release, there are users who attempt to probe and ident
 
 Achieving secure drivers requires the cooperation of the designer (consciously thinking of potential threats to the driver), the implementer (defensively coding common operations that can be the source of exploits), and the test team (proactively attempting to find exploits). By properly coordinating all of these activities, the security of the driver will be dramatically enhanced.
 
- 
+ 
 
- 
+ 
 
 
 

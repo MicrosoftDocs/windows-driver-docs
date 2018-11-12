@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RequestedElements</strong>](requestedelements.md)</p></td>
+<td><p><a href="requestedelements.md" data-raw-source="[&lt;strong&gt;RequestedElements&lt;/strong&gt;](requestedelements.md)"><strong>RequestedElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -163,9 +163,9 @@ In the following code example, a client specifies two QName values. The first QN
 
 [**RequestedElements**](requestedelements.md)
 
- 
+ 
 
- 
+ 
 
 
 

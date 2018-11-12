@@ -108,18 +108,17 @@ The following file, shows an example workspaces configuration file.
     </Option>
   </TargetOptions>
 </TargetConfig>
-
 ```
 
 Note that this file format will continue to evolve as more features are added to the WinDbg Preview debugger.
 
 
 ---
- 
+
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+
 
 
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 DirectSound keeps track of its current speaker-configuration setting in the registry and applies that setting to the audio hardware each time a new DirectSound device is created.
 
@@ -60,9 +60,9 @@ At boot time, an audio adapter driver initializes the hardware's speaker configu
 
 Immediately after installing an audio device or when a speaker-configuration error occurs, the DirectSound speaker configuration defaults to stereo.
 
- 
+ 
 
- 
+ 
 
 
 

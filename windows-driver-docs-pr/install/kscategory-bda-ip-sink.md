@@ -43,7 +43,7 @@ The KSCATEGORY_BDA_IP_SINK [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

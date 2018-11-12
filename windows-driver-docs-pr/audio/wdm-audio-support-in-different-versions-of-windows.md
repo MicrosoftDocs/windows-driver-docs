@@ -30,15 +30,13 @@ This section describes the operating system support for audio devices and driver
 
 [Typical Audio Configurations](typical-audio-configurations.md)
 
-[KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md)
-
 [Factors Governing Wave-Output Latency](factors-governing-wave-output-latency.md)
 
 [Windows Vista Audio System Effects](audio-system-effects.md)
 
- 
+ 
 
- 
+ 
 
 
 

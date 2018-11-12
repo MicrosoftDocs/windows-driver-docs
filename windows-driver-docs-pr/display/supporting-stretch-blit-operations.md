@@ -36,9 +36,9 @@ Because stretch factor is a floating-point calculation, not all graphics devices
 
 For more information about extended blit flags, see [Extended Blt Flags](extended-blt-flags.md).
 
- 
+ 
 
- 
+ 
 
 
 

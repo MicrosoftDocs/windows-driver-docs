@@ -20,9 +20,9 @@ If the driver is a [*boot-start driver*](https://msdn.microsoft.com/library/wind
 
 The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](http://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. To comply with the [PnP device installation requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of 32-bit versions of Windows Vista and later versions of Windows, you should obtain a WHQL release signature if the HCK has a test category for the device type. If you cannot obtain a WHQL release signature, you must use either an SPC or a [commercial release certificate](commercial-release-certificate.md) to sign a PnP kernel-mode driver.
 
- 
+ 
 
- 
+ 
 
 
 

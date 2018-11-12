@@ -30,9 +30,9 @@ These topics explain what symbols are, how to access them during a debugging ses
 
 If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Using a Symbol Server](using-a-symbol-server.md).
 
- 
+ 
 
- 
+ 
 
 
 

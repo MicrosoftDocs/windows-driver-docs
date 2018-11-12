@@ -30,9 +30,9 @@ If the device supports buttons that do not use interrupts from the device and a 
 
 This command is required if the device supports polled events or you want the device to display on-line status.
 
- 
+ 
 
- 
+ 
 
 
 

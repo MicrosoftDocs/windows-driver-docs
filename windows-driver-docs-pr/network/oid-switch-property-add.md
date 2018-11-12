@@ -22,7 +22,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.mi
 
     **Note**  Starting with Windows Server 2012, the **PropertyType** member must be set to **NdisSwitchPropertyTypeCustom** and the property buffer must contain an [**NDIS\_SWITCH\_PROPERTY\_CUSTOM**](https://msdn.microsoft.com/library/windows/hardware/hh598247) structure.
 
-     
+     
 
 Remarks
 -------
@@ -33,7 +33,7 @@ The extension can veto the addition of the switch property by returning NDIS\_ST
 
 **Note**  If the extension returns other NDIS\_STATUS\_*Xxx* error status codes, the creation notification is also vetoed. However, returning status codes for transitory scenarios, such as returning NDIS\_STATUS\_RESOURCES, could result in a retry of the creation notification.
 
- 
+ 
 
 If the extension does not veto the OID request, it should monitor the status when the request is completed. The extension should do this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
@@ -66,7 +66,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PROPER
 </tbody>
 </table>
 
- 
+ 
 
 If the extension does not complete the OID set request of OID\_SWITCH\_PROPERTY\_ADD, the request is completed by the underlying miniport edge of the extensible switch. The miniport edge returns the following status code.
 
@@ -89,7 +89,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_PROPERTY\
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -123,9 +123,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

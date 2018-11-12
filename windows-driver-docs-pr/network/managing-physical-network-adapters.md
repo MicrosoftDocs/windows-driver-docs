@@ -15,7 +15,7 @@ These operations allow an extension to forward or originate object identifier (O
 
 **Note**  Operations of this sort can only be performed by an extensible switch forwarding extension. For more information about this type of extension, see [Forwarding Extensions](forwarding-extensions.md).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -27,9 +27,9 @@ This section includes the following topics:
 
 [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md)
 
- 
+ 
 
- 
+ 
 
 
 

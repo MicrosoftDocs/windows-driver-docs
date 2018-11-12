@@ -22,9 +22,9 @@ To disable timeout recovery, create the following REG\_DWORD entry in the regist
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\EaRecovery
 ```
 
- 
+ 
 
- 
+ 
 
 
 

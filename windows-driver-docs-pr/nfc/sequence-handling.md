@@ -35,9 +35,9 @@ The following are the requirements for the NFC client driver in implementing any
 -   [P2P RF data exchange sequence](p2p-rf-data-exchange-sequence.md)
 -   [Card emulation RF sequence](card-emulation-rf-sequence.md)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

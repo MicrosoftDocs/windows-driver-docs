@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCISendCommand** function sends commands to a surface.
 
- 
+ 
 
- 
+ 
 
 
 

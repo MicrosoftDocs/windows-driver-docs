@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The **SRB\_PROPOSE\_STREAM\_RATE** command proposes a new rate but does not change it.
 
- 
+ 
 
- 
+ 
 
 
 

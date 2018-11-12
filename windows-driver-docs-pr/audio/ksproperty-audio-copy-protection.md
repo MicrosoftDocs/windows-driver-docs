@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property specifies the copy-protection s
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSAUDIO_COPY_PROTECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537084)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537084" data-raw-source="[&lt;strong&gt;KSAUDIO_COPY_PROTECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537084)"><strong>KSAUDIO_COPY_PROTECTION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSAUDIO\_COPY\_PROTECTION. The structure specifies whether a stream is copyrighted; it also specifies whether the stream is an original stream or a copy of the original stream.
 
@@ -99,9 +99,9 @@ Requirements
 
 [**KSAUDIO\_COPY\_PROTECTION**](https://msdn.microsoft.com/library/windows/hardware/ff537084)
 
- 
+ 
 
- 
+ 
 
 
 

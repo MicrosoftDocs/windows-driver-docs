@@ -40,9 +40,9 @@ When the remote client is finished with the process server, it can disconnect us
 
 The communication between a process server and a smart client typically consists of low-level memory, processor, and operating system operations and requests that are sent from the remote client to the server. Their results are then sent back to the client.
 
- 
+ 
 
- 
+ 
 
 
 

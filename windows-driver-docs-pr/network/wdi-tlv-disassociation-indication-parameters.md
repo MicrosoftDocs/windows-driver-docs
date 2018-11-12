@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)            | The MAC address of the peer associated with the disassociation indication. |
 | [**WDI\_ASSOC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn897725) (UINT32) | The trigger for the disassociation indication.                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

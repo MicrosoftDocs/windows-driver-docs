@@ -31,11 +31,11 @@ The EXCEPTION\_SCOPE\_INVALID bug check has a value of 0x0000014D. This indicate
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

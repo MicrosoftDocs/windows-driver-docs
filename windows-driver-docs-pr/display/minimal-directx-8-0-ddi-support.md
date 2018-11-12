@@ -28,9 +28,9 @@ Reporting DirectX 8.0 style capabilities involves the following steps:
 
 These various requirements are discussed in the following sections.
 
- 
+ 
 
- 
+ 
 
 
 

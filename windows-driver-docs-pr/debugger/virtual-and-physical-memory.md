@@ -48,9 +48,9 @@ An address in the target's virtual address space can be translated to a physical
 
 When the virtual or physical memory of the target is changed, the [**IDebugEventCallbacks::ChangeDebuggeeState**](https://msdn.microsoft.com/library/windows/hardware/ff550678) callback method is called.
 
- 
+ 
 
- 
+ 
 
 
 

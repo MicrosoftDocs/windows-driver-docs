@@ -23,11 +23,11 @@ This section includes the following topics:
 
 **Note**  WHEA management applications are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

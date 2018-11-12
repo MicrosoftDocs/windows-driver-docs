@@ -72,9 +72,9 @@ Number of pending IRPS: 0x4
 0003  1ab9eae370   Power (WAIT_WAKE)          0     ffffe00000c53010  1ab9eaa6d0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

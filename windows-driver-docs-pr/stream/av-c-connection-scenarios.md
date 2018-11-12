@@ -41,7 +41,7 @@ The improved connection management that is implemented for Windows Vista in *Avc
 
 **Note**  *Avc.sys* does not support the second type of connection (memory-buffer). However, the memory-buffer type of connection follows the [IEC 61883](https://msdn.microsoft.com/library/windows/hardware/ff537188) protocol and is supported by the underlying *61883.sys* driver in the same stack (where the computer is involved in memory-buffer connections).
 
- 
+ 
 
 ### Supported Connection Scenarios in Windows Vista
 
@@ -57,9 +57,9 @@ The following topics discuss the eight different AV/C connection management scen
 
 [Connections Between Two Unit Plugs in Different AV/C Units](connections-between-two-unit-plugs-in-different-av-c-units.md)
 
- 
+ 
 
- 
+ 
 
 
 

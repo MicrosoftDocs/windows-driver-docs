@@ -61,7 +61,7 @@ CTRL+ALT+K
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -85,9 +85,9 @@ When CTRL+K is used, the new break state is displayed.
 
 In WinDbg, this can also be accomplished by selecting [Debug | Kernel Connection | Cycle Initial Break](debug---kernel-connection---cycle-initial-break.md).
 
- 
+ 
 
- 
+ 
 
 
 

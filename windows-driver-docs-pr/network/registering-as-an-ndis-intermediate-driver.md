@@ -22,9 +22,9 @@ Note that the intermediate driver controls when its virtual miniports are initia
 
 To register its *ProtocolXxx* functions, an intermediate driver must call the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function. For more information about registering *ProtocolXxx* functions, see [Registering an Intermediate Driver as a Protocol Driver](registering-an-intermediate-driver-as-a-protocol.md).
 
- 
+ 
 
- 
+ 
 
 
 

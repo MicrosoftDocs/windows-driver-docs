@@ -18,7 +18,7 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 |-------|--------------------------|---------------------------------|
 | Port  | Not applicable           | 1                               |
 
- 
+ 
 
 ## Get property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 |--------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET**](https://msdn.microsoft.com/library/windows/hardware/dn898034) |                                |          | Protocol offload ID. |
 
- 
+ 
 
 ## Get property results
 
@@ -38,7 +38,7 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](https://msdn.microsoft.com/library/windows/hardware/dn898036)                  |                                | X        | IPv6 NS protocol offload parameters.   |
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](https://msdn.microsoft.com/library/windows/hardware/dn898033) |                                | X        | RSN Rekey protocol offload parameters. |
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +71,9 @@ Requirements
 
 [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](oid-wdi-set-remove-pm-protocol-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

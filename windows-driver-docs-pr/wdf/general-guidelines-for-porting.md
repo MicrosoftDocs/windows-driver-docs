@@ -40,9 +40,9 @@ The answers to these questions determine how the core of the WDF driver is struc
 
 Finally, if the driver supports WMI (also KMDF only), you must understand how to gather the data it exports and which WMI callbacks the driver requires.
 
- 
+ 
 
- 
+ 
 
 
 

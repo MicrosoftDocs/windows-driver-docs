@@ -19,7 +19,7 @@ After a Winsock Kernel (WSK) application has successfully created a socket, it c
 
 **Note**  Basic sockets do not support sending or receiving network data. Therefore, a WSK application cannot bind a basic socket to a local transport address.
 
- 
+ 
 
 A WSK application binds a socket to a local transport address by calling the [**WskBind**](https://msdn.microsoft.com/library/windows/hardware/ff571121) function. The **WskBind** function is pointed to by the **WskBind** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://msdn.microsoft.com/library/windows/hardware/ff571182)) that was returned by the WSK subsystem during the creation of the socket.
 
@@ -128,9 +128,9 @@ NTSTATUS
 
 For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create, bind, and connect a socket in a single function call.
 
- 
+ 
 
- 
+ 
 
 
 

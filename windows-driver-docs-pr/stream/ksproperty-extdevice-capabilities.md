@@ -47,13 +47,13 @@ The KSPROPERTY\_EXTDEVICE\_CAPABILITIES property retrieves the capabilities of a
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_EXTDEVICE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565156)</p></td>
-<td><p>[<strong>DEVCAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558699)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565156" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTDEVICE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565156)"><strong>KSPROPERTY_EXTDEVICE_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff558699" data-raw-source="[&lt;strong&gt;DEVCAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff558699)"><strong>DEVCAPS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a DEVCAPS structure that describes the capabilities of the external device.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**DEVCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff558699)
 
- 
+ 
 
- 
+ 
 
 
 

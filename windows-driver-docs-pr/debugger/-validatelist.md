@@ -48,16 +48,16 @@ The address of the doubly-linked list.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 To stop execution, press Ctrl+Break (in WinDbg) or Ctrl+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

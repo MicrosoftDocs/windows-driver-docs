@@ -25,13 +25,13 @@ In order to use the [driver signing tools](https://msdn.microsoft.com/library/wi
 
 **Note**  You must use the version of the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of the SignTool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
 
- 
+ 
 
 To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) and the [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of Windows Vista and later versions of Windows, you must sign a driver during the development and test of that driver. You can sign the driver on the signing computer as follows, based on the driver type.
 
 **Note**   The Windows code-signing policy requires that a signed [catalog file](catalog-files.md) for a [driver package](driver-packages.md) be installed in the system component and driver database. PnP device installation automatically installs the catalog file of a PnP driver in the driver database. However, if you use a signed catalog file to sign a non-PnP driver, the installation application that installs the driver must also install the catalog file in the driver database.
 
- 
+ 
 
 ### <a href="" id="pnp-kernel-mode-boot-start-driver"></a> PnP Kernel-Mode Boot-Start Driver
 
@@ -85,7 +85,7 @@ The PnP device installation signing requirements do not apply to non-PnP drivers
 
 **Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
 
- 
+ 
 
 ### To embed a test signature in a file for a non-PnP kernel-mode driver that is not a boot-start driver
 
@@ -101,9 +101,9 @@ The PnP device installation signing requirements do not apply to non-PnP drivers
 
 3.  [Verify the signature of the test-signed catalog file](verifying-the-signature-of-a-test-signed-catalog-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

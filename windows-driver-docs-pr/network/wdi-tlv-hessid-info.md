@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_HESSID**](wdi-tlv-hessid.md)                                           |                                |          | The list of HESSIDs that the port is allowed to connect to.                              |
 | [**WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT**](wdi-tlv-hotspot-indication-element.md) |                                |          | The Hotspot Indication Element to be used in the Association Request.                    |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

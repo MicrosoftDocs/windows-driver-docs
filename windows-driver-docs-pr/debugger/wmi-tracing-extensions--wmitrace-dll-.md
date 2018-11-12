@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The extension commands for software tracing sessions can be found in Wmitrace.dll, a library of functions designed to use Windows Management Instrumentation (WMI) for event tracing.
 
- 
+ 
 
- 
+ 
 
 
 

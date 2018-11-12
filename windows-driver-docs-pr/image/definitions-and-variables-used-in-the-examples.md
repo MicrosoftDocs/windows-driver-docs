@@ -44,9 +44,9 @@ PFN_WSDCHNR_INITIALIZE m_pfnInitializeChallenge;
 PFN_WSDCHNR_SHUTDOWN m_pfnShutdownChallenge;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

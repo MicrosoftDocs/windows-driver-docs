@@ -52,7 +52,7 @@ Specifies the base address for a page directory of a desired process. The user-m
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -122,9 +122,9 @@ PEB at 7FFDF000
         Environment:  0x10000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

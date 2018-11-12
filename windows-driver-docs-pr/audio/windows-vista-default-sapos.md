@@ -37,9 +37,9 @@ Windows Vista provides an **Enhancements** tab with the Sound applet on the Cont
 
 [Virtualized Surround Sound over Headphones](virtualized-surround-sound-over-headphones.md)
 
- 
+ 
 
- 
+ 
 
 
 

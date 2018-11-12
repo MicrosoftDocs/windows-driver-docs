@@ -40,9 +40,9 @@ In addition, GDL enables selected configurations to be excluded as "not allowed"
 
 For more information about creating data that is configuration-dependent, see [Creating GDL Configuration-Dependent Data](creating-gdl-configuration-dependent-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

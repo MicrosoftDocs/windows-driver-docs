@@ -44,7 +44,7 @@ A driver must also to update the WIA\_IPS\_XEXTENT, WIA\_IPS\_XPOS, WIA\_IPS\_YE
 
 **Note**   Flatbed and Film child items must support only the WIA\_IPS\_XEXTENT, WIA\_IPS\_XPOS, WIA\_IPS\_XRES, WIA\_IPS\_YEXTENT, WIA\_IPS\_YPOS, and WIA\_IPS\_YRES properties. All other properties, required or optional for their parent (the base Flatbed or Film items), are only optional for these items. The only exceptions are the WIA\_IPA\_ITEM\_*Xxx* properties, which are required for all items.
 
- 
+ 
 
 Requirements
 ------------
@@ -85,9 +85,9 @@ Requirements
 
 [**WIA\_IPS\_YRES**](wia-ips-yres.md)
 
- 
+ 
 
- 
+ 
 
 
 

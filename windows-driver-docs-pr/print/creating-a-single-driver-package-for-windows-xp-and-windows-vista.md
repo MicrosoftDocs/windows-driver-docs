@@ -54,9 +54,9 @@ If your driver requires updated versions of the core driver package to work prop
 
 6.  In your install section for Windows operating systems earlier than Windows Vista, copy the required files directly out of the included core driver package as if they were part of your driver.
 
- 
+ 
 
- 
+ 
 
 
 

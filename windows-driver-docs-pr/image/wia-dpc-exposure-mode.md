@@ -79,7 +79,7 @@ The following table describes the constants that are valid with WIA\_DPC\_EXPOSU
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -101,9 +101,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

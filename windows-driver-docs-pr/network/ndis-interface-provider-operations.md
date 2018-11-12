@@ -30,15 +30,15 @@ If an interface provider detects that an interface is being shut down, it should
 
 **Note**  The NDIS proxy provider deregisters interfaces for miniport adapters when they are uninstalled and filter modules when they are detached.
 
- 
+ 
 
 If an interface provider detects that an interface is being removed completely (for example, the NDIS proxy provider is notified that a miniport adapter is being uninstalled), the interface provider deregisters the interface and releases the NET\_LUID index. The NDIS proxy provider also releases the NET\_LUID index when a filter module is detached.
 
 During run time, interface providers handle OID requests for the interfaces that they registered. The NDIS proxy interface provider might issue OID requests to underlying drivers to obtain interface information.
 
- 
+ 
 
- 
+ 
 
 
 

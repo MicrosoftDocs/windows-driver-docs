@@ -71,9 +71,9 @@ In addition to the [**IPnpCallbackRemoteInterfaceNotification::OnRemoteInterface
 
 -   The [**IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent**](https://msdn.microsoft.com/library/windows/hardware/ff556889) callback function notifies the driver when a device's custom events arrive.
 
- 
+ 
 
- 
+ 
 
 
 

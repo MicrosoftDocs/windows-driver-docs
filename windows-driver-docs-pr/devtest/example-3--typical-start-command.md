@@ -29,9 +29,9 @@ It uses the **-guid** parameter to indicate the MyProvider.guid file, a simple t
 
 The command includes the **-f** parameter to specify the name and location of the event trace log file. It includes the **-flag** parameter to specify the flags set and the **-level** parameter to specify the level setting. You can omit these parameters, but some trace providers do not generate any trace messages unless you set the flag or the level.
 
- 
+ 
 
- 
+ 
 
 
 

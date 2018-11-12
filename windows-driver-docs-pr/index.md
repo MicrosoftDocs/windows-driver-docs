@@ -244,14 +244,16 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
 </ul>
 
 <p><b>Run-time requirements for WDK 10</b></p>
-WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements] (https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+
+WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
 
 EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 
 You can use WDK Insider Preview and the EWDK Insider Preview to develop drivers that run on these operating systems:
-Client OS | Server OS
---------- | ---------
-Windows 10 | Windows Server 2016
-Windows 8.1 | Windows Server 2012 R2
-Windows 8 | Windows Server 2012
-Windows 7 | Windows Server 2008 R2 SP1
+
+|  Client OS  |         Server OS          |
+|-------------|----------------------------|
+| Windows 10  |    Windows Server 2016     |
+| Windows 8.1 |   Windows Server 2012 R2   |
+|  Windows 8  |    Windows Server 2012     |
+|  Windows 7  | Windows Server 2008 R2 SP1 |

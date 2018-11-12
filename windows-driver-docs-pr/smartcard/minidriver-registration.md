@@ -50,9 +50,9 @@ If the minidriver supports loading under CNG, the following line should be inclu
 "Smart Card Key Storage Provider"="Microsoft Smart Card Key Storage Provider"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

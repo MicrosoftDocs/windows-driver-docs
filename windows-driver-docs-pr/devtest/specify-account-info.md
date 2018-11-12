@@ -35,9 +35,9 @@ To specify your mobile broadband account information, fill out the following opt
 
     For more information about provisioning, see [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755).
 
- 
+ 
 
- 
+ 
 
 
 

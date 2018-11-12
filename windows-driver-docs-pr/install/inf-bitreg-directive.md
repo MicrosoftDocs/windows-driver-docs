@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 
@@ -79,11 +79,11 @@ Relative root − that is, keys that are specified by using this abbreviation ar
 | INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
 | INF [***DDInstall*.Service**](inf-ddinstall-services-section.md)s section | The **Services** key                                                                  |
 
- 
+ 
 
 **Note**  **HKR** cannot be used in a bit-registry-section referenced from an INF [***DefaultInstall***](inf-defaultinstall-section.md) section.
 
- 
+ 
 
 For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
@@ -161,9 +161,9 @@ HKLM,Software\AppX,ProgramData,1,0x06,1
 
 [**InterfaceInstall32**](inf-interfaceinstall32-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ PSCRIPT1 data is Postscript data that is targeted for printing on a non-Postscri
 
 For more information about the PSCRIPT1 data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

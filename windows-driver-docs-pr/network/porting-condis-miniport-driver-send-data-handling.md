@@ -28,9 +28,9 @@ If a miniport driver uses scatter/gather direct memory access (SGDMA), the drive
 
 For more information about how CoNDIS miniport drivers handle send data, see [Sending NET\_BUFFER Structures from CoNDIS Drivers](sending-net-buffer-structures-from-condis-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

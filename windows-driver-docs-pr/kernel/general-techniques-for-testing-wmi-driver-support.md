@@ -53,9 +53,9 @@ WMI errors that occur while being handled by the WMI WDM provider (Wmiprov.dll) 
 
 In versions of Windows earlier than Windows Vista, you can change the logging settings for all WMI providers by using the Wmimgmt.msc application. (In Windows 98/Me, use Wbemcntl instead.) You can disable or reenable logging, change the directory where WMI log files are kept, as well as set the maximum size for such files. For more information, see [WMI Log Files](https://msdn.microsoft.com/library/aa394564).
 
- 
+ 
 
- 
+ 
 
 
 

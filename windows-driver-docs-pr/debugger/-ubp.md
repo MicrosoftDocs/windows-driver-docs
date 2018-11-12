@@ -48,7 +48,7 @@ Specifies the hexadecimal virtual address of the location in user space where th
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +76,9 @@ Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint nu
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

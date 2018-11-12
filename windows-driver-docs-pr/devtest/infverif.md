@@ -42,17 +42,17 @@ The InfVerif tool reports the following types of errors/warnings:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Running InfVerif from the command line](running-infverif-from-the-command-line.md)</p></td>
+<td align="left"><p><a href="running-infverif-from-the-command-line.md" data-raw-source="[Running InfVerif from the command line](running-infverif-from-the-command-line.md)">Running InfVerif from the command line</a></p></td>
 <td align="left"><p>This topic lists the options that are available when you run InfVerif.exe from the command line.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[INF Validation Errors and Warnings](inf-validation-errors-and-warnings.md)</p></td>
+<td align="left"><p><a href="inf-validation-errors-and-warnings.md" data-raw-source="[INF Validation Errors and Warnings](inf-validation-errors-and-warnings.md)">INF Validation Errors and Warnings</a></p></td>
 <td align="left"><p>This topic describes driver installation errors and warnings that can appear as a result of the automatic INF verification that Visual Studio performs, or when you run the InfVerif tool.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -61,9 +61,9 @@ The InfVerif tool reports the following types of errors/warnings:
 
 [Using a Universal INF File](https://msdn.microsoft.com/library/windows/hardware/dn941087)
 
- 
+ 
 
- 
+ 
 
 
 

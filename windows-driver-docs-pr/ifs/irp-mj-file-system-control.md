@@ -50,7 +50,7 @@ File system drivers should handle the following minor function codes:
 </tr>
 <tr class="odd">
 <td align="left"><p>IRP_MN_USER_FS_REQUEST</p></td>
-<td align="left"><p>Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called [<strong>ZwDeviceIoControlFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566441) or [<strong>IoBuildDeviceIoControlRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548318).</p>
+<td align="left"><p>Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566441" data-raw-source="[&lt;strong&gt;ZwDeviceIoControlFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566441)"><strong>ZwDeviceIoControlFile</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548318" data-raw-source="[&lt;strong&gt;IoBuildDeviceIoControlRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548318)"><strong>IoBuildDeviceIoControlRequest</strong></a>.</p>
 <p>For detailed information about FSCTL requests, see &quot;Device Input and Output Control Codes&quot; in the Microsoft Windows SDK documentation.</p></td>
 </tr>
 <tr class="even">
@@ -60,7 +60,7 @@ File system drivers should handle the following minor function codes:
 </tbody>
 </table>
 
- 
+ 
 
 File system recognizers must handle the following minor function code:
 
@@ -83,7 +83,7 @@ File system recognizers must handle the following minor function code:
 </tbody>
 </table>
 
- 
+ 
 
 After performing the requested operation, the file system driver or recognizer should complete the IRP.
 
@@ -179,9 +179,9 @@ Pointer to the VPB for the volume to be verified.
 
 [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441)
 
- 
+ 
 
- 
+ 
 
 
 

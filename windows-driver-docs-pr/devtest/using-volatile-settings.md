@@ -32,7 +32,7 @@ You can activate and deactivate all of the Driver Verifier options, except for [
 
 -   [Low Resources Simulation](low-resources-simulation.md)
 
- 
+ 
 
 ### <span id="changing_drivers_without_rebooting"></span><span id="CHANGING_DRIVERS_WITHOUT_REBOOTING"></span>Changing Drivers Without Rebooting
 
@@ -155,9 +155,9 @@ Each of these screens shows the Driver Verifier options currently in effect, inc
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

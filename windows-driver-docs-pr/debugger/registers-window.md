@@ -102,9 +102,9 @@ The following screen shot shows an example of a Watch window.
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

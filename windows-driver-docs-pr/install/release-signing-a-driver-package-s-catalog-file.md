@@ -46,7 +46,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will timestamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
@@ -54,9 +54,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about release-signing driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ For more information about how to write an AV/C subunit driver, see [AV/C Overvi
 
 AV/C protocol support is built on the IEEE 1394 driver stack and the IEC-61883 standards. For more information about the IEC-61883 driver stack, see [IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188).
 
- 
+ 
 
- 
+ 
 
 
 

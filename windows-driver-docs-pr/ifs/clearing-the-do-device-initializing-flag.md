@@ -29,11 +29,11 @@ When the filter device object is created, [**IoCreateDevice**](https://msdn.micr
 
 **Note**   It is not necessary to clear the DO\_DEVICE\_INITIALIZING flag on device objects that are created in DriverEntry, because this is done automatically by the I/O Manager. However, your driver should clear this flag on all other device objects that it creates.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

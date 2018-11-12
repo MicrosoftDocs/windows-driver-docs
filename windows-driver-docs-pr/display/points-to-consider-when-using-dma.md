@@ -39,9 +39,9 @@ The video port driver's DMA implementation uses the concept of logical addresses
 
 For devices that support concurrent DMA transfers, either on a DMA controller that supports simultaneous reads and writes, or on two separate DMA controllers, miniport drivers should obtain a separate DMA adapter object for each concurrent path. For example, if a device has two DMA controllers that work in parallel, the miniport driver should make two calls to **VideoPortGetDmaAdapter**, thereby obtaining pointers to two VP\_DMA\_ADAPTER structures. After that, whenever the miniport driver makes a DMA transfer request of a particular DMA controller, it should use the appropriate pointer in that request.
 
- 
+ 
 
- 
+ 
 
 
 

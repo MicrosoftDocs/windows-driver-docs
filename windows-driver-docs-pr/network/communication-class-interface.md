@@ -58,11 +58,11 @@ The Communication Class interface is described by a USB interface descriptor, th
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

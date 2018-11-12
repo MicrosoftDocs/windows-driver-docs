@@ -65,11 +65,11 @@ A WSK application must map combinations of address family, socket type, and prot
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571067) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

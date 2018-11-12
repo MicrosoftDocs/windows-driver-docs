@@ -52,7 +52,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -82,9 +82,9 @@ Requirements
 
 [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -70,7 +70,7 @@ Clears any existing call on the current thread, and resets the context of the cu
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -101,9 +101,9 @@ The following code example shows how the **.call /s** command is used.
 
 In this example, you have private symbols for **KnownFunction**, which takes an integer as its only argument and returns, for example, a pointer to an array. You do not have symbols, or possibly you only have public symbols for **UnknownFunction**, but you do know that it takes an integer as its only argument and returns a pointer to an array. By using the **/s** option, you can specify that **UnknownFunction** will work the same way that **KnownFunction** does. Thus, you can successfully generate a call to **UnknownFunction**.
 
- 
+ 
 
- 
+ 
 
 
 

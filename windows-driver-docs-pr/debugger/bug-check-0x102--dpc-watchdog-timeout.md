@@ -31,7 +31,7 @@ The DPC\_WATCHDOG\_TIMEOUT bug check has a value of 0x00000102. This indicates t
 | 3         | Reserved                                               |
 | 4         | Reserved                                               |
 
- 
+ 
 
 Cause
 -----
@@ -45,9 +45,9 @@ Resolution
 
 A kernel driver in the storage stack can reduce the problem's likelihood by efficient coding of the driver's I/O completion routine. If it is still not possible to do all necessary processing in the completion routine in enough time, the routine can create a work element for the I/O work, queue up the element to a work queue and return STATUS\_MORE\_PROCESSING\_REQUIRED; a worker thread of the driver should then find the work element, do the work and do IoCallerDriver for the IRP to ensure the IRP's further I/O processing.
 
- 
+ 
 
- 
+ 
 
 
 

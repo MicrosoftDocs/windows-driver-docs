@@ -18,9 +18,9 @@ The Status property contains information about the current state of the print de
 
 The Status property is the parent of the [Summary](summary.md) and [Detailed](detailed.md) properties.
 
- 
+ 
 
- 
+ 
 
 
 

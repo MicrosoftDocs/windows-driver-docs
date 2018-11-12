@@ -49,7 +49,7 @@ qd
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -58,9 +58,9 @@ The **qd** command detaches from a target application and ends the debugging ses
 
 When you are performing remote debugging through the debugger, you cannot use the **qd** command from a debugging client.
 
- 
+ 
 
- 
+ 
 
 
 

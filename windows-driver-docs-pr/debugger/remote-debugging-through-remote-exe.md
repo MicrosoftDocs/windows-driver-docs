@@ -20,7 +20,7 @@ The remote computer and the local computer can be running any Windows operating 
 
 **Note**   Since remote.exe only works for console applications, it cannot be used to remotely control WinDbg.
 
- 
+ 
 
 This section includes:
 
@@ -30,9 +30,9 @@ This section includes:
 
 [Remote.exe Batch Files](remote-exe-batch-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

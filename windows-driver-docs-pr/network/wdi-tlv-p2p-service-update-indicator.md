@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT16 | The service update indicator to include in ANQP responses if the driver supports responding to service information discovery ANQP requests. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

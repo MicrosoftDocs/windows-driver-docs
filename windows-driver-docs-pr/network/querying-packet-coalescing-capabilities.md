@@ -21,9 +21,9 @@ NDIS handles these OID query requests for miniport drivers and returns the packe
 
 For more information about how the miniport driver registers its packet coalescing capabilities, see [Determining Receive Filtering Capabilities](determining-receive-filtering-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

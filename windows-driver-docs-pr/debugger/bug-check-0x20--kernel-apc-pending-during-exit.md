@@ -42,7 +42,7 @@ The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The thread's APC disable count</p></td>
+<td align="left"><p>The thread&#39;s APC disable count</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
@@ -55,7 +55,7 @@ The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -72,9 +72,9 @@ If you ever see this error, be very suspicious of all drivers installed on the m
 
 This current IRQL (Parameter 3) should be zero. If it is not, the driver's cancellation routine may have caused this bug check by returning at an elevated IRQL. In this case, carefully note what was running (and what was closing) at the time of the crash, and note all of the installed drivers at the time of the crash. The cause in this case is usually a severe bug in a driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -90,9 +90,9 @@ The following rules apply when you use **RunOnce** registry keys for device inst
 
     For more information, see [Developing Applications that Run at Logon on Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=133224).
 
- 
+ 
 
- 
+ 
 
 
 

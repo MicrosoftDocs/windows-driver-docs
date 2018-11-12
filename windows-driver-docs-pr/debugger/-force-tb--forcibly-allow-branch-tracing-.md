@@ -49,7 +49,7 @@ The **.force\_tb** command forces the processor to trace branches early in the b
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -58,9 +58,9 @@ Typically, branch tracing is enabled after the debugger initializes the processo
 
 However, if you have to use the [**tb (Trace to Next Branch)**](tb--trace-to-next-branch-.md) command before this initialization, you can use the **.force\_tb** command to enable branch tracing earlier. Use this command carefully because it can corrupt your processor state.
 
- 
+ 
 
- 
+ 
 
 
 

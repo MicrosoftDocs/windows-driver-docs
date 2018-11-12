@@ -34,9 +34,9 @@ TraceView cancels the attempt to start the trace session.
 
 The TraceView window displays only those running trace sessions that it started. To list all trace sessions that are running on the system, type **traceview -l** in a Command Prompt window. To stop trace sessions that TraceView did not start, type **traceview -stop***SessionName* in a Command Prompt window. For more information about these commands, see [TraceView Command-Line Interface](traceview-command-line-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

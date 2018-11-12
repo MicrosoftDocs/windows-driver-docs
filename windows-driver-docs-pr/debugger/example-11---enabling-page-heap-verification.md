@@ -39,11 +39,11 @@ gflags /i myapp.exe -02000000
 
 **Note**   When using the **/debug** or **/kdebug** parameters, use the **/p /disable** parameters to turn off the page heap verification (not the **/i -hpa** parameters). The **/p /disable** parameters disable page heap verification and delete registry entries that the debugger reads.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

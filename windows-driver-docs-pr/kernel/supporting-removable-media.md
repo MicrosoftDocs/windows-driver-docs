@@ -26,9 +26,9 @@ Drivers that work with removable-media devices therefore should be capable of do
 
 [Setting up IRPs in intermediate drivers](setting-up-irps-in-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

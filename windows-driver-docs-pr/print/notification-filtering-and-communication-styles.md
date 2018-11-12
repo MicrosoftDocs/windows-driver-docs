@@ -109,9 +109,9 @@ When a client registers for notifications, the server-side spooler maintains an 
 
 The client can unregister for receiving notifications only by using this handle.
 
- 
+ 
 
- 
+ 
 
 
 

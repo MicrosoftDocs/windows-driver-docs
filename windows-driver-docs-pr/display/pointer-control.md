@@ -27,9 +27,9 @@ The display driver can control the pointer in situations for which the processor
 
 To write a display driver and miniport driver pair, you must include IOCTLs for passing pointer information between the two drivers, and to allow the miniport driver to assume the drawing of any or all pointers, if necessary.
 
- 
+ 
 
- 
+ 
 
 
 

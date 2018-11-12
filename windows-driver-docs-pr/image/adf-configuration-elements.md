@@ -31,9 +31,9 @@ The schema contains the following ADF configuration elements:
 
 [**ADFSupportsDuplex**](adfsupportsduplex.md)
 
- 
+ 
 
- 
+ 
 
 
 

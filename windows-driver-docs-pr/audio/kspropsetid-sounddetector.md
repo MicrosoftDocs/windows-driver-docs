@@ -32,9 +32,9 @@ The `KSPROPSETID_SoundDetector` property set contains the following properties:
 
 -   [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](ksproperty-sounddetector-supportedpatterns.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8  | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 | UINT32 | Maximum client count for this Group Owner.                                                                                                                                      |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

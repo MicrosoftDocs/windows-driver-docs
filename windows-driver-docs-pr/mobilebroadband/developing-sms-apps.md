@@ -14,7 +14,7 @@ Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) 
 **Note**  
 A mobile broadband app requires SMS support to show notifications to the end user when text messages are received. SMS might also be required to conform to regulatory requirements or best practices in certain markets.
 
- 
+ 
 
 The Mobile Broadband SMS platform provides the following functionality:
 
@@ -97,7 +97,7 @@ Users running Windows 8, Windows 8.1, or Windows 10 can control access to SMS
 **Note**  
 Together with user consent, the app must also have access granted by the device by adding the app name in the device or service metadata.
 
- 
+ 
 
 ## <span id="Filtering"></span><span id="filtering"></span><span id="FILTERING"></span>SMS notifications filtering
 
@@ -116,7 +116,7 @@ You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**]
 **Note**  
 The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.
 
- 
+ 
 
 -   [SMS device storage limits](sms-device-storage-limits.md)
 
@@ -134,9 +134,9 @@ The Windows 7 Mobile Broadband SMS API provided only a low-level modem interfac
 
 -   [Set SMS declarations](set-sms-declarations.md)
 
- 
+ 
 
- 
+ 
 
 
 

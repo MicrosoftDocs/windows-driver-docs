@@ -55,7 +55,7 @@ The ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY bug check has a value of 0x000000BE. 
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -64,7 +64,7 @@ Remarks
 -------
 
 The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT bug check has a value of 0x00000159. This i
 | 3         | Vendor specific fault packet data |
 | 4         | Vendor specific fault packet data |
 
- 
+ 
 
 | Parameter | Description                           |
 |-----------|---------------------------------------|
@@ -40,11 +40,11 @@ The HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT bug check has a value of 0x00000159. This i
 | 3         | PASID                                 |
 | 4         | DirectoryBase                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,11 +21,11 @@ A WIA application calls **IWiaItem::CreateChildItem** (described in the Microsof
 
 **Note**   WIA film items must have only one level of WIA child items. The film item can be set to be a folder, but folder items *cannot* be created under the film scanner item.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

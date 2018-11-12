@@ -62,9 +62,9 @@ The spooler defines a special notification type GUID named NOTIFICATION\_RELEASE
 
 A call to the **IPrintAsyncNotifyDataObject::AcquireData** method against this notification returns with the BYTE\*\* parameter set to **NULL**, the ULONG\* parameter set to 0, and the GUID\* parameter set to NOTIFICATION\_RELEASE.
 
- 
+ 
 
- 
+ 
 
 
 

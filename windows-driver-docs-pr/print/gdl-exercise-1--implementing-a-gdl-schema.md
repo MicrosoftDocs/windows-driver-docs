@@ -32,7 +32,7 @@ Do not define any keywords in your schema; just include the framework for the fu
 
 **Note**   By using templates, you can create a virtual schema--that is, a schema that does not define any GDL entries. The base schema that is defined in this way exerts its influence no matter how this schema is extended in the future.
 
- 
+ 
 
 ### <a href="" id="solution"></a> Solution
 
@@ -78,11 +78,11 @@ The following code example demonstrates one way to complete this exercise.
 
 **Note**   You can place the templates in the preceding example in a MasterTemplate.gdl file for use by the next exercise.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

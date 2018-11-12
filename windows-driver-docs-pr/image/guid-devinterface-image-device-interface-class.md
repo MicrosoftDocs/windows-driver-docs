@@ -34,7 +34,7 @@ The image [device interface class](https://msdn.microsoft.com/library/windows/ha
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="headers"></span><span id="HEADERS"></span>Headers
 
@@ -46,9 +46,9 @@ The system-supplied kernel-mode drivers for still image devices register an inst
 
 This interface is applicable to both still image drivers and WIA drivers and is available for Microsoft Windows XP and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

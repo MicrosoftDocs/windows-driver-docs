@@ -88,7 +88,7 @@ For each parallel port enumerated in the system and for each parallel device enu
 </tbody>
 </table>
 
- 
+ 
 
 For example, the following device names and symbolic links are assigned to "\\Device\\ParallelPort0", which has two IEEE 1284.3 daisy chain devices and an IEEE 1284 end-of-chain device attached to it.
 
@@ -135,11 +135,11 @@ For example, the following device names and symbolic links are assigned to "\\De
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

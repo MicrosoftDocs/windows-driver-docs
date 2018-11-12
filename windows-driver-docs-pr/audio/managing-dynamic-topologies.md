@@ -52,9 +52,9 @@ Audio adapters that support dynamic topologies have the following benefits:
 
     After removing a subdevice, the driver can use the hardware resources that were bound to the subdevice's internal topology to create a new subdevice with a possibly different topology.
 
- 
+ 
 
- 
+ 
 
 
 

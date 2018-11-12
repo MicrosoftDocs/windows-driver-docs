@@ -53,7 +53,7 @@ The name and path of the extension DLL. If the full path was specified when the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +66,9 @@ The debugger maintains a default extension DLL that is implicitly loaded when th
 
 When a command is issued, the debugger looks for it in the default extension first. If a match is not found, all other loaded extension DLLs are searched in the order they were loaded.
 
- 
+ 
 
- 
+ 
 
 
 

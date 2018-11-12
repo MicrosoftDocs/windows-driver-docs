@@ -50,7 +50,7 @@ Extension for Reading the PPD File
 
 **Note**  For USB devices, whether you're using a GPD or a PPD file, the Bidi extension XML file must specify the drvPrinterEvent attribute and set its value to "true". This ensures that the element is updated after Bidi cache refreshes.
 
- 
+ 
 
 The following XML fragment demonstrates the correct syntax for using the drvPrinterEvent attribute:
 

@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The **SRB\_SET\_STREAM\_RATE** command sets the rate at which a stream should run.
 
- 
+ 
 
- 
+ 
 
 
 

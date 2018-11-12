@@ -49,11 +49,11 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
 |                             | 3.2.1, 4.8.2.2.1.2, 4.8.2.2.1.3                                                      | Buttons                                                            |
 |                             |                                                                                      | Dock and convertible PC sensors                                    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

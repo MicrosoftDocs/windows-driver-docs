@@ -32,7 +32,7 @@ After a WSK application has an IRP to use for calling a WSK function, it can set
 
 **Note**  If the WSK application sets an **IoCompletion** routine for an IRP that was passed down to it by a higher level driver or by the I/O manager, then the **IoCompletion** routine must check the **PendingReturned** member of the IRP and call the [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) function if the **PendingReturned** member is **TRUE**. For more information, see [Implementing an IoCompletion Routine](https://msdn.microsoft.com/library/windows/hardware/ff547084).
 
- 
+ 
 
 A WSK application does not initialize the IRPs that it passes to the WSK functions other than setting an **IoCompletion** routine. When a WSK application passes an IRP to a WSK function, the WSK subsystem sets up the next I/O stack location on behalf of the application.
 
@@ -235,9 +235,9 @@ NTSTATUS
 
 For more information about using IRPs, see [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847).
 
- 
+ 
 
- 
+ 
 
 
 

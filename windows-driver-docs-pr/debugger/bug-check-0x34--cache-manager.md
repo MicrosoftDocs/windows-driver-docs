@@ -55,7 +55,7 @@ The CACHE\_MANAGER bug check has a value of 0x00000034. This indicates that a pr
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +67,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

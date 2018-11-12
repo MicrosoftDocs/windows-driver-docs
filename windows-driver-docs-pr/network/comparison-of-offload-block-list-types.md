@@ -31,9 +31,9 @@ When propagating a state-manipulation operation, an intermediate driver must con
 
 When propagating the completion of a state-manipulation operation, an intermediate driver must convert an incoming NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure to an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST. For more information about this conversion, see [Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-protocol-offload-block-list-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

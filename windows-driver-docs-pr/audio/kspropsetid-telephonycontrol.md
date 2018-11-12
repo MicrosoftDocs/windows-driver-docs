@@ -25,9 +25,9 @@ The `KSPROPSETID_TelephonyControl` property set contains the following propertie
 
 -   [**KSPROPERTY\_TELEPHONY\_PROVIDERID**](ksproperty-telephony-providerid.md)
 
- 
+ 
 
- 
+ 
 
 
 

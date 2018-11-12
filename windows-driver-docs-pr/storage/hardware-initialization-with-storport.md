@@ -19,9 +19,9 @@ For the most part, the Storport version of the HW\_INITIALIZATION\_DATA structur
 
 As indicated in the section [Use of Mapping Buffers in the Storport I/O Model](use-of-mapping-buffers-in-the-storport-i-o-model.md), the **MapBuffers** member of both HW\_INITIALIZATION and PORT\_CONFIGURATION\_INFORMATION has a different meaning in the Storport case from that in the SCSI Port case.
 
- 
+ 
 
- 
+ 
 
 
 

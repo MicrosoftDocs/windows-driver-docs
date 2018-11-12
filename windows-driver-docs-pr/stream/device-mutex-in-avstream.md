@@ -46,9 +46,9 @@ To manipulate the device mutex, use the following functions:
 
 [**KsAcquireDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560911), [**KsReleaseDevice**](https://msdn.microsoft.com/library/windows/hardware/ff566783)
 
- 
+ 
 
- 
+ 
 
 
 

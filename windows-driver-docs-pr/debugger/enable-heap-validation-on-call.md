@@ -41,7 +41,7 @@ The **Enable heap validation on call** flag validates the entire heap each time 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +51,9 @@ To avoid the high overhead associated with this flag, use the **HeapValidate** f
 
 [Enable heap parameter checking](enable-heap-parameter-checking.md)
 
- 
+ 
 
- 
+ 
 
 
 

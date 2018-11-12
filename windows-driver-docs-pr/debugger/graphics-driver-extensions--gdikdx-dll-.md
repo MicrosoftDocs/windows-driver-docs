@@ -18,9 +18,9 @@ Extension commands that are useful for debugging the Graphics Driver Interface (
 
 The Windows 2000 version of this extension DLL appears in the w2kfre and w2kchk directories. There is no version of this DLL for Windows XP or later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

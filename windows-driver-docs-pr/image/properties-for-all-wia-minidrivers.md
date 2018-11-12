@@ -127,9 +127,9 @@ A WIA minidriver supplies the following properties:
 
 [**WIA\_IPA\_SUPPRESS\_PROPERTY\_PAGE**](https://msdn.microsoft.com/library/windows/hardware/ff551653)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,7 +50,7 @@ While the device driver may implement several or many functions, it exports only
     </tbody>
     </table>
 
-     
+     
 
 For more information about how these constants are used, see [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206).
 
@@ -66,9 +66,9 @@ GDI calls the [**DrvDisableDriver**](https://msdn.microsoft.com/library/windows/
 
 If the hardware needs to be reset, GDI calls the driver's [**DrvAssertMode**](https://msdn.microsoft.com/library/windows/hardware/ff556178) function.
 
- 
+ 
 
- 
+ 
 
 
 

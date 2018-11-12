@@ -50,11 +50,11 @@ This configuration is defined the same way as the [first picture decoding config
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

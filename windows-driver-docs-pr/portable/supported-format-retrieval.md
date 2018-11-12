@@ -69,9 +69,9 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

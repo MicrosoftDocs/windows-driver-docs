@@ -19,9 +19,9 @@ This section includes the following topics:
 
 For more information on how to manage NDIS status indications over the Hyper-V extensible switch control path, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](hyper-v-extensible-switch-control-path-for-ndis-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

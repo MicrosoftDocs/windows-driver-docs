@@ -16,11 +16,11 @@ A USB Remote NDIS device is implemented as a USB Communication Device Class (CDC
 >[!NOTE]
 > An understanding of the Universal Serial Bus (USB) Specification versions 1.1 and 2.0 is required. The USB Communication Device Class (CDC) Specifications are suggested as references. These documents can be found at http://www.usb.org.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

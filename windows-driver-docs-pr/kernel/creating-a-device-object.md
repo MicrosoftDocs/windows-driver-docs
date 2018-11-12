@@ -62,9 +62,9 @@ The following rules determine if a bus driver calls **IoCreateDevice** or **IoCr
 
 A non-WDM driver uses **IoCreateDevice** to create unnamed device objects, and **IoCreateDeviceSecure** to create named device objects. Note the unnamed device objects of a non-WDM driver are not accessible from user mode, so the driver usually must create at least one named object.
 
- 
+ 
 
- 
+ 
 
 
 

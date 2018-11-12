@@ -21,9 +21,9 @@ The Windows Display Driver Model (WDDM) does not permit a call into one of the o
 
 -   [*DxgkDdiUpdateOverlay*](https://msdn.microsoft.com/library/windows/hardware/ff560804)
 
- 
+ 
 
- 
+ 
 
 
 

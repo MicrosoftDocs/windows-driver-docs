@@ -44,9 +44,9 @@ You can provide halftone pattern resources, an **IPrintOemUni::HalftonePattern**
 
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
- 
+ 
 
- 
+ 
 
 
 

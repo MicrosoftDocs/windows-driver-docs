@@ -23,7 +23,7 @@ This topic provides guidelines about error recovery through these operations.
 
 To clear an error condition, start with the reset-pipe operation and perform more complex operations, such as reset-port and cycle-port, only if it is necessary.
 
-****About coordinating various recovery mechanisms**:  **
+<em>***About coordinating various recovery mechanisms</em>*:  **
 
 <table>
 <colgroup>
@@ -38,7 +38,7 @@ To clear an error condition, start with the reset-pipe operation and perform mor
 </tbody>
 </table>
 
- 
+ 
 
 ## What you need to know
 
@@ -101,7 +101,7 @@ Start the error recovery by resetting the pipe. You can send a reset-pipe reques
 
 **Note**  Do not send any new transfer requests until the reset-pipe operation is complete.
 
- 
+ 
 
 The reset-pipe request clears the error condition in the device and the host controller hardware. To clear the device error, the USB driver stack sends a CLEAR\_FEATURE control request to the device by using the ENDPOINT\_HALT feature selector. The recipient for the request is the endpoint that is associated with the pipe. If the error condition occurred on an isochronous pipe, then the driver stack takes no action to clear the device because, in case of errors, isochronous endpoints are cleared automatically.
 

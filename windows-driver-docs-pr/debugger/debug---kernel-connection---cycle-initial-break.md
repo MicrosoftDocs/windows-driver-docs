@@ -35,9 +35,9 @@ When you use the **Cycle Initial Break** command, the new break state is display
 
 For more information about related commands and an explanation of how the restart process affects the debugger, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
- 
+ 
 
- 
+ 
 
 
 

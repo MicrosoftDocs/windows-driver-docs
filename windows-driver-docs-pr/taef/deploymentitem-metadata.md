@@ -46,7 +46,6 @@ public class UnitTest1
 {
     ...
 }
-                
 ```
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
@@ -78,7 +77,6 @@ public  static AssemblySetup(TestContext testContext)
 {
     ...
 }
-                
 ```
 
 ## <span id="Native_Tests"></span><span id="native_tests"></span><span id="NATIVE_TESTS"></span>Native Tests
@@ -90,7 +88,6 @@ For native tests, the property format is similar to the managed code format. How
 BEGIN_TEST_CLASS(TestClassExample)
     TEST_CLASS_PROPERTY(L"DeploymentItem", L"C:\\Dependencies\\>Dependencies")
 END_TEST_CLASS()
-                
 ```
 
 ## <span id="Script_Tests"></span><span id="script_tests"></span><span id="SCRIPT_TESTS"></span>Script Tests
@@ -102,12 +99,11 @@ For script tests, the property format is the same as for native tests:
 <method name="TestOne">
     <TestMethodProperty name="DeploymentItem" value="C:\\Dependencies\\>Dependencies"/>
 </method>
-                
 ```
 
- 
 
- 
+
+
 
 
 

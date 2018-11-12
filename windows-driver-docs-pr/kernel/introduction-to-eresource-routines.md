@@ -50,9 +50,9 @@ A driver can also determine the current state of an ERESOURCE, as follows:
 
 -   Use [**ExGetSharedWaiterCount**](https://msdn.microsoft.com/library/windows/hardware/ff545290) to determine the number of shared waiters for the ERESOURCE, and use [**ExGetExclusiveWaiterCount**](https://msdn.microsoft.com/library/windows/hardware/ff544618) to determine the number of exclusive waiters for the ERESOURCE.
 
- 
+ 
 
- 
+ 
 
 
 

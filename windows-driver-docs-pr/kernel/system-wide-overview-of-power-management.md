@@ -30,9 +30,9 @@ When the power manager requests a change to the system power state, drivers resp
 
 Although ACPI hardware realizes the greatest power savings, the hardware need not be ACPI-compliant for power management in drivers to be effective.
 
- 
+ 
 
- 
+ 
 
 
 

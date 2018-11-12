@@ -21,7 +21,7 @@ A driver package is a separate project which collects output from one or more pr
 
 **Note**  
 
- 
+ 
 
 If you use a driver template to create a driver solution, then the template should automatically create a solution that contains two projects. One for the driver, and another for the driver package.
 ## <span id="Manually_creating_a_driver_package"></span><span id="manually_creating_a_driver_package"></span><span id="MANUALLY_CREATING_A_DRIVER_PACKAGE"></span>Manually creating a driver package
@@ -61,9 +61,9 @@ See the "Toaster Sample Driver" sample for an example of a single solution that 
 
 
 * [Signing a Driver](signing-a-driver.md)
- 
+ 
 
- 
+ 
 
 
 

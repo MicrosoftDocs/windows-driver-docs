@@ -54,7 +54,7 @@ Displays the error log according to processor.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based or an x64-based target computer.
 
@@ -62,9 +62,9 @@ This extension command can only be used with an x86-based or an x64-based target
 
 For information about APICs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

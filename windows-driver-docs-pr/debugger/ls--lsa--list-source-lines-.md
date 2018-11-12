@@ -64,7 +64,7 @@ Specifies the quantity of lines to display. The default value is 20 (0x14), unle
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +78,9 @@ After you run the **ls** or **lsa** command, the current line is redefined as th
 
 [**lsf, lsf- (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md)
 
- 
+ 
 
- 
+ 
 
 
 

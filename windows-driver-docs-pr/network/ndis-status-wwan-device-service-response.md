@@ -45,9 +45,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](https://msdn.microsoft.com/library/windows/hardware/hh439838)
 
- 
+ 
 
- 
+ 
 
 
 

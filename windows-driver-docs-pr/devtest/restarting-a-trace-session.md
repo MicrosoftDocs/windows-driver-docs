@@ -25,9 +25,9 @@ After a brief pause, the value of the **State** column changes from **STOPPED** 
 
 TraceView uses the **EnableTrace** function to restart the trace session. **EnableTrace** is described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

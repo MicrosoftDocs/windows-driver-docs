@@ -52,9 +52,9 @@ Whenever a callout driver that has not opted in to handle large packets is regis
 
 If there is active TCP traffic during callout registration, TCP/IP will notify WFP. WFP will delay calling the registered filters until RSC is disabled. This will protect callout drivers from large packets.
 
- 
+ 
 
- 
+ 
 
 
 

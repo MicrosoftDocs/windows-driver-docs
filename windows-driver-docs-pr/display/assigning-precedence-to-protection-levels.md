@@ -58,7 +58,7 @@ When different protected outputs instruct the physical output to use different A
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="cgms_a_protection_level_precedence"></span><span id="CGMS_A_PROTECTION_LEVEL_PRECEDENCE"></span>CGMS-A Protection Level Precedence
 
@@ -99,11 +99,11 @@ When different protected outputs instruct the physical output to use different C
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The redistribution control flag (DXGKMDT\_OPM\_REDISTRIBUTION\_CONTROL\_REQUIRED) does not affect the CGMS-A precedence value. For example, (DXGKMDT\_OPM\_CGMSA\_COPY\_ONE\_GENERATION | DXGKMDT\_OPM\_REDISTRIBUTION\_CONTROL\_REQUIRED) has the same precedence value as DXGKMDT\_OPM\_CGMSA\_COPY\_ONE\_GENERATION.
 
- 
+ 
 
 ### <span id="hdcp_protection_level_precedence"></span><span id="HDCP_PROTECTION_LEVEL_PRECEDENCE"></span>HDCP Protection Level Precedence
 
@@ -132,7 +132,7 @@ When different protected outputs instruct the physical output to use different H
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="dpcp_protection_level_precedence"></span><span id="DPCP_PROTECTION_LEVEL_PRECEDENCE"></span>DPCP Protection Level Precedence
 
@@ -161,11 +161,11 @@ When different protected outputs instruct the physical output to use different D
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

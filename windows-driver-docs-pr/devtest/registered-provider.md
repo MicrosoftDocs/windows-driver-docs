@@ -30,9 +30,9 @@ To display trace messages from a registered provider, use [TraceView](traceview.
 
 For more information about registered providers, see [Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803) in the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

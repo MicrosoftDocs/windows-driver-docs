@@ -24,9 +24,9 @@ This section describes the kernel-mode interfaces of the kernel transaction mana
 
 For information about the routines, structures, and enumerations that KTM supports, see the [Kernel Transaction Manager Reference](https://msdn.microsoft.com/library/windows/hardware/ff553232).
 
- 
+ 
 
- 
+ 
 
 
 

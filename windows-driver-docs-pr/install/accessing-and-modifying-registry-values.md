@@ -23,9 +23,9 @@ This section provides guidelines that components of a [driver package](driver-pa
 
 [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

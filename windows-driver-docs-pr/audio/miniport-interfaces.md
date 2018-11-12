@@ -59,44 +59,44 @@ Each port driver implements an **IPortXxx** interface, which it presents to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>WaveCyclic</p></td>
-<td align="left"><p>[IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899)</p></td>
-<td align="left"><p>[IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536899" data-raw-source="[IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899)">IPortWaveCyclic</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536714" data-raw-source="[IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714)">IMiniportWaveCyclic</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WavePci</p></td>
-<td align="left"><p>[IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905)</p></td>
-<td align="left"><p>[IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536905" data-raw-source="[IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905)">IPortWavePci</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536724" data-raw-source="[IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724)">IMiniportWavePci</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WaveRT</p></td>
-<td align="left"><p>[IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920)</p></td>
-<td align="left"><p>[IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536920" data-raw-source="[IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920)">IPortWaveRT</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536737" data-raw-source="[IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737)">IMiniportWaveRT</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Topology</p></td>
-<td align="left"><p>[IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896)</p></td>
-<td align="left"><p>[IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536896" data-raw-source="[IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896)">IPortTopology</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536712" data-raw-source="[IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712)">IMiniportTopology</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MIDI</p></td>
-<td align="left"><p>[IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891)</p></td>
-<td align="left"><p>[IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536891" data-raw-source="[IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891)">IPortMidi</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536703" data-raw-source="[IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703)">IMiniportMidi</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DirectMusic</p></td>
-<td align="left"><p>[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)</p></td>
-<td align="left"><p>[IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536879" data-raw-source="[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)">IPortDMus</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536699" data-raw-source="[IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699)">IMiniportDMus</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In the preceding table, all **IPortXxx** interfaces are derived from base interface [IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842), and all **IMiniportXxx** interfaces are derived from [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698).
 
- 
+ 
 
- 
+ 
 
 
 

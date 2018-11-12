@@ -23,11 +23,11 @@ There is an FVF update for Microsoft DirectX 7.0 that includes 1D, 3D, and 4D te
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

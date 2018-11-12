@@ -25,7 +25,7 @@ The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) uses the OPM DDI
 2.  The DirectX graphics kernel subsystem calls the [**DxgkDdiOPMGetCertificateSize**](https://msdn.microsoft.com/library/windows/hardware/ff559715) and [**DxgkDdiOPMGetCertificate**](https://msdn.microsoft.com/library/windows/hardware/ff559711) functions to get the display miniport driver's OPM certificate or COPP certificate and its size.
     **Note**  *DxgkDdiOPMCreateProtectedOutput*, *DxgkDdiOPMGetCertificateSize*, and *DxgkDdiOPMGetCertificate* are the only OPM DDI functions that the DirectX graphics kernel subsystem does not pass a protected output handle to.
 
-     
+     
 
 3.  The DirectX graphics kernel subsystem calls the [**DxgkDdiOPMGetRandomNumber**](https://msdn.microsoft.com/library/windows/hardware/ff559730) function to get the protected output's random number.
 
@@ -53,9 +53,9 @@ The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) uses the OPM DDI
 
 6.  The DirectX graphics kernel subsystem calls [**DxgkDdiOPMDestroyProtectedOutput**](https://msdn.microsoft.com/library/windows/hardware/ff559708) when it finishes using the protected output object.
 
- 
+ 
 
- 
+ 
 
 
 

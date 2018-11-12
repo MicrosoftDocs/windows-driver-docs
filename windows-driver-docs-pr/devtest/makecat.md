@@ -17,11 +17,11 @@ For more information about how to use the MakeCat tool, see [Creating a Catalog 
 
 **Note**   You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](https://msdn.microsoft.com/library/windows/hardware/ff553618).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

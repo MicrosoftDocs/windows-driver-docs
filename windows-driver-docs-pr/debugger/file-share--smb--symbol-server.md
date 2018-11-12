@@ -114,9 +114,9 @@ If the DBGHELP\_HOMEDIR variable is not set, DBGHELP\_HOMEDIR defaults to the de
 
 [Symbol Store Folder Tree](symbol-store-folder-tree.md)
 
- 
+ 
 
- 
+ 
 
 
 

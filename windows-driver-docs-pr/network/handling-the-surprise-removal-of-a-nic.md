@@ -25,9 +25,9 @@ For Windows Vista and later versions, a miniport driver (such as a miniport driv
 
 A miniport driver that supports surprise removal should itself attempt to detect a surprise removal during normal operations--outside of the context of [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369). After a NIC is removed, an attempt to read a NIC's I/O ports typically results in return values that have all bits set to one. If a miniport driver reads such a value, it should check for the presence of the hardware with a more conclusive test. For example, the miniport driver could write a value to an I/O port and then try to read the value from that port. The miniport driver could also check for valid values in the NIC's I/O registers. Detecting a surprise removal in such a way prevents the miniport driver from hanging in an infinite loop when it attempts to read a removed NIC's registers in an interrupt DPC.. A miniport driver that stops responding in this way stops NDIS from calling the driver's *MiniportDevicePnPEventNotify* function.
 
- 
+ 
 
- 
+ 
 
 
 

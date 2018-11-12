@@ -234,7 +234,7 @@ The following table shows registration, packet-attach, and packet-detach cause c
 </tbody>
 </table>
 
- 
+ 
 
 For example, if the network initiates a deactivate context event because roaming is not allowed in the location area, miniport drivers should set the **uNwError** member to 13 as per the 3GPP TS 24.008 Cause codes for GSM-based networks.
 
@@ -357,7 +357,7 @@ The following table lists the WWAN\_STATUS codes that MB miniport drivers can sp
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows SMS specific status values.
 
@@ -424,11 +424,11 @@ The following table shows SMS specific status values.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  These WWAN-specific status codes are used only for asynchronous transactions in the **uStatus** member of the NDIS\_WWAN\_XXX structures.
 
- 
+ 
 
 Miniport drivers use event notifications to inform the MB Service about an object state change in their MB device without first having received an OID request. The MB Service uses event notifications to update its state machine only.
 
@@ -446,9 +446,9 @@ In general, miniport drivers should always notify the MB Service about the updat
 
 4.  Miniport drivers do not need to respond with the current WWAN\_SMS\_CONFIGURATION value for OID\_WWAN\_SMS\_CONFIGURATION *set* operations.
 
- 
+ 
 
- 
+ 
 
 
 

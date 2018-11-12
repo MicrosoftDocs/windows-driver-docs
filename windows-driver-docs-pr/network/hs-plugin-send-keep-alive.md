@@ -21,7 +21,7 @@ Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_SEND_KEEP_ALIVE)(
-    
+    
 );
 ```
 
@@ -62,9 +62,9 @@ Requirements
 
 [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

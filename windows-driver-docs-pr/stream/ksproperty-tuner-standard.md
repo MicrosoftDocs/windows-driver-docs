@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_STANDARD property retrieves the current analog video stan
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_STANDARD_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565918)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565918" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_STANDARD_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565918)"><strong>KSPROPERTY_TUNER_STANDARD_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG that specifies the tuning standard of the tuner.
 
@@ -91,9 +91,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_MODE**](ksproperty-tuner-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

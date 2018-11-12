@@ -26,9 +26,9 @@ The filter provides a description of its internal connections in the form of an 
 
 The nodes and connections that the filter exposes together define the filter's internal topology. The topology is a map of the audio device's internal layout and should accurately reflect the organization of the hardware that it represents. The Microsoft Windows Multimedia mixer API, for example, translates the filter's internal connections into mixer lines and its nodes into controls on the mixer lines (see [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md)). Any inaccuracies in the filter's internal topology are reflected in the mixer-line representation and may cause errors or unexpected behavior in an application that uses the mixer API.
 
- 
+ 
 
- 
+ 
 
 
 

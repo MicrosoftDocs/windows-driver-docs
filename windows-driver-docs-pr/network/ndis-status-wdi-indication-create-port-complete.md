@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 |--------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
 | [**WDI\_TLV\_PORT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn898038) |                                |          | The attributes of the created port. |
 
- 
+ 
 
 Requirements
 ------------
@@ -53,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

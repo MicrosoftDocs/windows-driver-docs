@@ -32,9 +32,9 @@ Unidrv and PScript5 print drivers validate the Print Ticket by using the sequenc
 
 8.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553184) method to validate the PrintTicket.
 
- 
+ 
 
- 
+ 
 
 
 

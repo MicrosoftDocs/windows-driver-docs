@@ -45,13 +45,13 @@ The KSEVENT\_VPNOTIFY\_FORMATCHANGE event is used to propagate an event, such as
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSE_NODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561937)</p></td>
-<td><p>[<strong>KSEVENTDATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561750)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561937" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561937)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The minidriver can detect a change in the video-format, for example a resolution change from 640x480 to 720x480. User-mode components must be notified of this format change so that the necessary actions can take place between DirectShow filters and KsProxy.
 
@@ -63,9 +63,9 @@ The KsProxy VPE filter disables the event notification by sending the IOCTL\_KS\
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://msdn.microsoft.com/library/windows/hardware/ff560877). For more information about handling stream changes, such as a video resolution change, see [Stream Changes](https://msdn.microsoft.com/library/windows/hardware/ff568284).
 
- 
+ 
 
- 
+ 
 
 
 

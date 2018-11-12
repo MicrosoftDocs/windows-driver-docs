@@ -85,14 +85,14 @@ Perform various functional and stress tests on systems and devices that expose a
 
 Certification/Compliance
 Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.
- 
+ 
 ## See also
 
 
 -   [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
 -   [Troubleshoot messages in UI](http://go.microsoft.com/fwlink/?LinkId=526894) 
 
- 
+ 
 
 
 

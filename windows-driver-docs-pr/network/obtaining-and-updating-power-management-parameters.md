@@ -18,11 +18,11 @@ Protocol drivers can also use OID\_PM\_PARAMETERS as a set request to enable or 
 
 **Note**  Protocol drives cannot disable capabilities that were enabled by other protocol drivers. If none of the protocol drivers enable a capability, that capability is unused.
 
- 
+ 
 
 **Note**  NDIS enables magic packet and low power on disconnect capabilities based on the user settings, and these capabilities cannot be disabled by protocol drivers.
 
- 
+ 
 
 NDIS\_PM\_PARAMETERS includes the following information:
 
@@ -45,9 +45,9 @@ Before NDIS transitions the network adapter to the low power state, NDIS sends a
 
 The capabilities that are currently enabled can be a subset of the capabilities that the hardware supports. For more information about the capabilities that the hardware supports, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

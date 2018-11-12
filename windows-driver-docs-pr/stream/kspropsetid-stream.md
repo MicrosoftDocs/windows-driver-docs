@@ -38,9 +38,9 @@ The KSPROPSETID\_Stream property set is enumerated by KSPROPERTY\_STREAM and inc
 
 [**KSPROPERTY\_STREAM\_PIPE\_ID**](ksproperty-stream-pipe-id.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ Indicates that the installation failed and there is no driver selected for this 
 <span id="Code_31__CM_FAILED_ADD_"></span><span id="code_31__cm_failed_add_"></span><span id="CODE_31__CM_FAILED_ADD_"></span>**Code 31 (CM\_FAILED\_ADD)**  
 Indicates that the device was not added. Reasons for the failure may include: a driver's **AddDevice** routine returned an error, there is no service listed for the device in the registry, there is more than one service listed, or the controlling driver could not be loaded. (Corresponds to DNF\_ADD\_FAILED.)
 
- 
+ 
 
- 
+ 
 
 
 

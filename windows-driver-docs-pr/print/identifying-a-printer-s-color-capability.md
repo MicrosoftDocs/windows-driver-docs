@@ -32,9 +32,9 @@ It is very important for drivers to implement the [**DrvDeviceCapabilities**](ht
 
 -   The value of the **dmColor** member of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure is not a reliable indicator of whether the device is a color or noncolor device. Certain printer drivers set this member to DMCOLOR\_COLOR even for devices that are not capable of producing color.
 
- 
+ 
 
- 
+ 
 
 
 

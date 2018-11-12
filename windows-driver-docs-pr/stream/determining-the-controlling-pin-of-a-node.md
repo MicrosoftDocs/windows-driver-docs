@@ -36,9 +36,9 @@ The following figure shows how the support library determines the filter pin tha
 
 ![diagram illustrating how the support library determines the filter pin that controls a specific node](images/bdajoint.png)
 
- 
+ 
 
- 
+ 
 
 
 

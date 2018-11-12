@@ -70,9 +70,9 @@ Sets the value of an option for a socket.
 <a href="" id="wspsocket"></a>[**WSPSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566319)  
 Creates a socket that uses the TCP/IP protocol and asynchronous (overlapped) data transfer.
 
- 
+ 
 
- 
+ 
 
 
 

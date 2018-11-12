@@ -26,9 +26,9 @@ The Configuration property is the parent of the following properties:
 
 [DuplexUnit](duplexunit.md)
 
- 
+ 
 
- 
+ 
 
 
 

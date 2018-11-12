@@ -20,9 +20,9 @@ For in-box and the [Windows Hardware Certification Kit (HCK)](https://go.microso
 
 For the complete list of configuration module requirements, see [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
- 
+ 
 
- 
+ 
 
 
 

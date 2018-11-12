@@ -22,9 +22,9 @@ If you are writing a port monitor for a port that has modifiable time-out values
 
 Additionally, a port monitor can optionally provide a [**SetPortTimeOuts**](https://msdn.microsoft.com/library/windows/hardware/ff562630) function, which can be called by language monitors. The function is called by Pjlmon.dll, the [sample language monitor](sample-language-monitor.md). The print spooler does not call **SetPortTimeOuts**.
 
- 
+ 
 
- 
+ 
 
 
 

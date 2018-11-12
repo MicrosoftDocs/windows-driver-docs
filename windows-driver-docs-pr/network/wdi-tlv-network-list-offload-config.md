@@ -35,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The number of iterations in the fast scan phase.                                                                      |
 | UINT32 | The period (in seconds) to scan in the slow scan phase. This phase lasts indefinitely until a new NLO command is set. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

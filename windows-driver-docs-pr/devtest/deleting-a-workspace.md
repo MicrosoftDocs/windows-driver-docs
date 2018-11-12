@@ -28,9 +28,9 @@ For information about stopping a workspace session or removing it from the displ
 
 You can delete only one workspace at a time.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ This section includes:
 
 [COPP Video Miniport Driver Close Template Code](copp-video-miniport-driver-close-template-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

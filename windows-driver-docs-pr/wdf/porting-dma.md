@@ -20,9 +20,9 @@ The framework determines the number of map registers that are required for the t
 
 For implementation details, see [Handling DMA Operations in KMDF Drivers](handling-dma-operations-in-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,9 +63,9 @@ Setting a completion routine allows the driver to further process the IRP after 
 
 Because it runs in an arbitrary thread context at IRQL &lt;= DISPATCH\_LEVEL, a completion routine can perform only limited processing on the IRP.
 
- 
+ 
 
- 
+ 
 
 
 

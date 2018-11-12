@@ -23,9 +23,9 @@ The use of ACPI to indicate the computer configuration has several advantages:
 
 For more information about how to use ACPI object settings for device container grouping, see the [Container Groupings in Windows 7](http://go.microsoft.com/fwlink/p/?linkid=158386) white paper
 
- 
+ 
 
- 
+ 
 
 
 

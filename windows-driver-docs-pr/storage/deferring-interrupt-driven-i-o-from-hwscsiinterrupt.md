@@ -38,9 +38,9 @@ Such a miniport driver's *HwScsiFindAdapter* routine should reset the **MaximumT
 
 Such a miniport driver also might call **ScsiPortNotification** with a miniport driver-supplied *HwScsiTimer* routine. For more information about *HwScsiTimer* routines, which are synchronized with *HwScsiInterrupt* routines, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

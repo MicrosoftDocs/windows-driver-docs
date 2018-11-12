@@ -40,9 +40,9 @@ How a driver handles this IRP depends upon its role in the device stack, as desc
 
 A driver cannot fail an **IRP\_MN\_SET\_POWER** request to set the system power state. The power manager ignores any failure status returned for this IRP.
 
- 
+ 
 
- 
+ 
 
 
 

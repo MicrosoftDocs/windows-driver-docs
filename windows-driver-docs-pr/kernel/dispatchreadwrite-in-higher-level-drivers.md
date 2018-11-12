@@ -26,9 +26,9 @@ If the underlying device driver returns an IRP for a partial transfer with an er
 
 If a higher-level driver's *DispatchReadWrite* routine allocates memory for partial-transfer operations and its allocation will be accessed by the driver's *IoCompletion* routine (or by the underlying device driver), the *DispatchReadWrite* routine must allocate that memory from nonpaged pool.
 
- 
+ 
 
- 
+ 
 
 
 

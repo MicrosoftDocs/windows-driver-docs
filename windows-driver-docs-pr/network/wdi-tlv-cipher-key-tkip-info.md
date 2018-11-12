@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY**](wdi-tlv-cipher-key-tkip-key.md) |                                |          | Specifies the TKIP key material. |
 | [**WDI\_TLV\_CIPHER\_KEY\_TKIP\_MIC**](wdi-tlv-cipher-key-tkip-mic.md) |                                |          | Specifies the TKIP MIC material. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

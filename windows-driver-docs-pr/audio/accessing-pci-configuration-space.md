@@ -22,9 +22,9 @@ In Windows 2000 and later, PCI driver stacks export the [**BUS\_INTERFACE\_STAND
 
 For more information, see [Accessing Device Configuration Space](https://msdn.microsoft.com/library/windows/hardware/ff540450).
 
- 
+ 
 
- 
+ 
 
 
 

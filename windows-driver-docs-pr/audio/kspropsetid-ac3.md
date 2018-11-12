@@ -39,9 +39,9 @@ The KSPROPSETID\_AC3 property set contains the following properties:
 
 [**KSPROPERTY\_AC3\_ROOM\_TYPE**](ksproperty-ac3-room-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

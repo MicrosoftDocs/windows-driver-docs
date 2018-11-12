@@ -38,7 +38,7 @@ The WMI kernel-mode component sends WMI IRPs any time following a driver's succe
 
 For a list of the WMI minor IRPs, see [WMI Minor IRPs](wmi-minor-irps.md). 
 
- 
+ 
 
 
 

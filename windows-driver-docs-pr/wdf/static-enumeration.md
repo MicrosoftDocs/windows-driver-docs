@@ -60,9 +60,9 @@ If you need to retrieve the contents of a static child list, the driver can trav
 
 3.  Calling [**WdfFdoUnlockStaticChildListFromIteration**](https://msdn.microsoft.com/library/windows/hardware/ff547297).
 
- 
+ 
 
- 
+ 
 
 
 

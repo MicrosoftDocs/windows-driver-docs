@@ -36,16 +36,16 @@ The Indirect Display driver is a user mode only model with no support for kernel
 
 **Note**  The Indirect Display driver should be built as a universal windows driver so it can be used on multiple Windows platforms.
 
- 
+ 
 
 At build time, the UMDF Indirect Display driver declares the version of IddCx it was built against and the OS ensures that the correct version of IddCx is loaded when the driver is loaded.
 
 The following sections describe the Indirect Display Driver Model:
 
 [IddCx Objects](iddcx-objects.md)
- 
+ 
 
- 
+ 
 
 
 

@@ -59,7 +59,7 @@ If *Flags* is set to 1, the error code is read as an NTSTATUS code.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Error code: (Win32) 0x2 (2) - The system cannot find the file specified.
 Error code: (NTSTATUS) 0x2 - STATUS_WAIT_2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

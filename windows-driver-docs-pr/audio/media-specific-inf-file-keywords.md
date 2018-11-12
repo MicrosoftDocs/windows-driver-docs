@@ -24,9 +24,9 @@ The list of INF file keywords at [INF File Sections and Directives](https://msdn
 
 The **SetupPreferredAudioDevices** keyword is supported in Windows 2000 and later. For more information, see [Media-Class INF Extensions](https://msdn.microsoft.com/library/windows/hardware/ff537513).
 
- 
+ 
 
- 
+ 
 
 
 

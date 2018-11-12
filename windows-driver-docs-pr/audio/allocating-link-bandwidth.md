@@ -26,9 +26,9 @@ A function driver can call [**ChangeBandwidthAllocation**](https://msdn.microsof
 
 The Allocate*Xxx*DmaEngine and [**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229) routines are available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

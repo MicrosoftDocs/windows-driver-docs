@@ -47,13 +47,13 @@ KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequenc
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_IF_MEDIUM_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565848)</p></td>
-<td><p>[<strong>KSPIN_MEDIUM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563538)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565848" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_IF_MEDIUM_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565848)"><strong>KSPROPERTY_TUNER_IF_MEDIUM_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563538" data-raw-source="[&lt;strong&gt;KSPIN_MEDIUM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563538)"><strong>KSPIN_MEDIUM</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPIN\_MEDIUM structure that specifies the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_IF\_MEDIUM\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565848)
 
- 
+ 
 
- 
+ 
 
 
 

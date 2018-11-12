@@ -49,9 +49,9 @@ Now you can implement Get and Set methods in your class that call [**IKsProperty
 
 Alternatively, you can query the outer unknown for a pointer to its **IKsObject** interface. Then call [**IKsObject::KsGetObjectHandle**](https://msdn.microsoft.com/library/windows/hardware/ff559890) to obtain a file handle. Now you manipulate device properties by calling [**KsSynchronousIoControlDevice**](https://msdn.microsoft.com/library/windows/hardware/ff567143) with this file handle.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -80,9 +80,9 @@ On Windows XP and Windows Server 2003, you can start and stop the verification o
 
 Beginning in Windows Vista, you can start and stop the verification of drivers that are not loaded without rebooting the computer. You can also start the verification of a driver that is already loaded without rebooting. However, you cannot stop the verification of a driver that is already loaded until you reboot the system. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

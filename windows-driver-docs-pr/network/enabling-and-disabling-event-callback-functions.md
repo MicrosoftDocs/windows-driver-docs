@@ -235,9 +235,9 @@ NTSTATUS
 
 If a WSK application uses the WSK\_SET\_STATIC\_EVENT\_CALLBACKS client control operation to automatically enable certain event callback functions, it must do so before it creates any sockets.
 
- 
+ 
 
- 
+ 
 
 
 

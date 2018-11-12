@@ -21,9 +21,9 @@ The following properties are not implemented at this time. They are reserved by 
 
 [**WIA\_DPV\_LAST\_PICTURE\_TAKEN**](https://msdn.microsoft.com/library/windows/hardware/ff551452)
 
- 
+ 
 
- 
+ 
 
 
 

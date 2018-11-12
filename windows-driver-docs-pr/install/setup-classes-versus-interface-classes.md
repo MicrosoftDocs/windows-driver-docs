@@ -33,9 +33,9 @@ When defining a new setup class or interface class, *do not use a single GUID to
 
 For more information about GUIDs, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392).
 
- 
+ 
 
- 
+ 
 
 
 

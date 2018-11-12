@@ -17,9 +17,9 @@ The WIA architecture enables a still image device to notify the WIA minidriver w
 
 The WIA architecture supports interrupt events and polled events. For more information about these events, see [WIA Driver Event Support](wia-driver-event-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

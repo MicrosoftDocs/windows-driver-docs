@@ -39,9 +39,9 @@ The **PictureDestinationRect** member of the DXVA\_BlendCombination structure wo
 
 -   **bottom** = **top** + *display\_vertical\_size*
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,7 +25,7 @@ The sample driver supports a device object that exposes ten read-only properties
 | WPD\_DEVICE\_TYPE                 | Integer       | WPD\_DEVICE\_TYPE\_GENERIC         |
 | WPD\_FUNCTIONAL\_OBJECT\_CATEGORY | GUID          | WPD\_FUNCTIONAL\_CATEGORY\_STORAGE |
 
- 
+ 
 
 The driver supports a storage object that exposes six read-only properties. These properties, their types, and their values are listed in the following table.
 
@@ -39,7 +39,7 @@ The driver supports a storage object that exposes six read-only properties. Thes
 | WPD\_STORAGE\_TYPE                | Integer        | WPD\_STORAGE\_TYPE\_FIXED\_ROM     |
 | WPD\_FUNCTIONAL\_OBJECT\_CATEGORY | GUID           | WPD\_FUNCTIONAL\_CATEGORY\_STORAGE |
 
- 
+ 
 
 The driver supports a folder object that exposes three read-only properties. These properties, their types, and their values are listed in the following table.
 
@@ -49,7 +49,7 @@ The driver supports a folder object that exposes three read-only properties. The
 | WPD\_OBJECT\_DATE\_CREATED               | Date          | 2006/1/25 12:0:0.0 |
 | WPD\_OBJECT\_ORIGINAL\_FILE\_NAME\_VALUE | String        | Documents          |
 
- 
+ 
 
 The driver supports a file object that exposes three read-only properties. These properties, their types, and their values are listed in the following table.
 
@@ -59,7 +59,7 @@ The driver supports a file object that exposes three read-only properties. These
 | WPD\_OBJECT\_DATE\_CREATED        | Date          | 2006/1/25 12:0:0.0 |
 | WPD\_OBJECT\_ORIGINAL\_FILE\_NAME | String        | Readme.txt         |
 
- 
+ 
 
 In addition to the above properties, every object (for example, device, storage, folder, or file) also supports seven common WPD object properties. These are read-only properties that contain object-specific values for the most part. These properties, their types, and their values are listed in the following table.
 
@@ -74,11 +74,11 @@ In addition to the above properties, every object (for example, device, storage,
 | WPD\_OBJECT\_CONTENT\_TYPE          | GUID          | Object-specific |
 | WPD\_OBJECT\_CAN\_DELETE            | Bool          | False           |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

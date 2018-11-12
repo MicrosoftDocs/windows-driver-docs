@@ -49,9 +49,9 @@ These topics describe the TDR process and registry keys that enable TDR debuggin
 
 [TDR changes in Windows 8](tdr-changes-in-windows-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

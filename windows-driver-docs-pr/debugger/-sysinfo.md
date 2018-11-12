@@ -109,7 +109,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -130,9 +130,9 @@ Microsoft makes every effort to remove personally identifiable information (PII)
 
 To stop execution of commands that include the **cpuinfo**, **gbl**, **registers**, or **smbios** parameters at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -129,9 +129,9 @@ For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &
 
 If you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), you cannot use conditional breakpoints or any other breakpoint command string that contains the [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) or [**g (Go)**](g--go-.md) commands. If you use these commands, the serial interface might not be able to keep up with the number of breakpoint passes, and you will be unable to break back into CDB.
 
- 
+ 
 
- 
+ 
 
 
 

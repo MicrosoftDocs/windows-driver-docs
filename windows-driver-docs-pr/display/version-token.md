@@ -31,9 +31,9 @@ For a vertex shader, the value is 0xFFFE.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

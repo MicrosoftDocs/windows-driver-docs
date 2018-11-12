@@ -20,9 +20,9 @@ A *file system filter driver* is an optional driver that adds value to or modifi
 
 A file system filter driver can filter I/O operations for one or more file systems or file system volumes. Depending on the nature of the driver, *filter* can mean *log*, *observe*, *modify*, or even *prevent*. Typical applications for file system filter drivers include antivirus utilities, encryption programs, and hierarchical storage management systems.
 
- 
+ 
 
- 
+ 
 
 
 

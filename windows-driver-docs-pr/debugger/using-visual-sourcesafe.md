@@ -90,9 +90,9 @@ Again, this label is required for SrcSrv indexing to work. Note that if you pass
 
 If your Visual SourceSafe database requires a user and optional password for access, these values must be set through the SSUSER and SSPWD environment variables. This applies not only at the time the build is indexed, but also on the debugger client.
 
- 
+ 
 
- 
+ 
 
 
 

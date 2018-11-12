@@ -60,9 +60,9 @@ Beginning in Windows Vista, you can activate and deactivate all options without 
 
 On systems prior to Windows Vista, you can activate and deactivate certain options without rebooting, but only after you have enabled Driver Verifier on at least one driver then rebooted the computer. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

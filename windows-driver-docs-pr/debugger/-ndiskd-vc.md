@@ -109,9 +109,9 @@ VIRTUAL CALL
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

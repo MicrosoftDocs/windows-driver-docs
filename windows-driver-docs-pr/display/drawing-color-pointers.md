@@ -27,9 +27,9 @@ Defining the color pointer in the same way as the monochrome pointer (that is, a
 
 These conventions allow applications to use a single pointer definition for both color and monochrome displays.
 
- 
+ 
 
- 
+ 
 
 
 

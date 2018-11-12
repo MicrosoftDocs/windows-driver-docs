@@ -50,9 +50,9 @@ If the framework cannot allocate memory for the new object, it can return STATUS
 
 Individual object creation methods might also return additional [NTSTATUS values](https://msdn.microsoft.com/library/windows/hardware/ff557697). For more information about each creation method's additional return values, see the method's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

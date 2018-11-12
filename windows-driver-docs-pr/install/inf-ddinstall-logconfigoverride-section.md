@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
-*DDInstall***.LogConfigOverride** sections are used to create an [override configuration](https://msdn.microsoft.com/library/windows/hardware/ff547012#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
+<em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](https://msdn.microsoft.com/library/windows/hardware/ff547012#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
 ```cpp
 [install-section-name.LogConfigOverride] |
@@ -38,7 +38,7 @@ LogConfig=log-config-section[,log-config-section]...]
 ## Entries
 
 
-The section entries and values that are used with *DDInstall***.LogConfigOverride** sections are specified within *log-config-sections* referenced by [**INF LogConfig directives**](inf-logconfig-directive.md).
+The section entries and values that are used with <em>DDInstall</em>**.LogConfigOverride** sections are specified within *log-config-sections* referenced by [**INF LogConfig directives**](inf-logconfig-directive.md).
 
 Remarks
 -------
@@ -48,7 +48,7 @@ The configuration data that is specified in a *log-config-section* for a Plug an
 Examples
 --------
 
-The following example shows a *DDInstall***.LogConfigOverride** section and a corresponding *log-config-section* for a PCMCIA device.
+The following example shows a <em>DDInstall</em>**.LogConfigOverride** section and a corresponding *log-config-section* for a PCMCIA device.
 
 ```cpp
 [XYZDevice.LogConfigOverride]
@@ -69,9 +69,9 @@ For more information about the hardware resource configuration data values that 
 
 [***DDInstall***](inf-ddinstall-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

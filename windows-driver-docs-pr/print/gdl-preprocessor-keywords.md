@@ -38,9 +38,9 @@ The GDL preprocessor uses the following keyword commands, which should be consid
 
 The preprocessor also uses [GDL preprocessor conditional directives](gdl-preprocessor-conditional-directives.md) to perform conditional tests on syntax blocks of code.
 
- 
+ 
 
- 
+ 
 
 
 

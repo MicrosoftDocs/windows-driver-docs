@@ -23,7 +23,7 @@ The Winsock Kernel (WSK) subsystem can asynchronously notify a WSK application w
 
 **Note**  A WSK application is not required to implement or use event callback functions. A WSK application can perform most WSK socket operations by calling the appropriate WSK socket functions. The only WSK feature that requires using event callback functions is conditional-accept mode on listening sockets. For more information about the advantages and disadvantages between using WSK functions versus using event callback functions, see [Using Winsock Kernel Functions vs. Event Callback Functions](using-winsock-kernel-functions-vs--event-callback-functions.md).
 
- 
+ 
 
 Each WSK [socket category](winsock-kernel-socket-categories.md) supports a different set of socket events.
 
@@ -47,20 +47,20 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>An incoming connection has been accepted.</p></td>
-<td align="left"><p>[<em>WskAcceptEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571120)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571120" data-raw-source="[&lt;em&gt;WskAcceptEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571120)"><em>WskAcceptEvent</em></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>An incoming connection request has arrived.*</p></td>
-<td align="left"><p>[<em>WskInspectEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571137)</p></td>
+<td align="left"><p>An incoming connection request has arrived.<em></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571137" data-raw-source="[&lt;em&gt;WskInspectEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571137)"><em>WskInspectEvent</em></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>An incoming connection request has been dropped.*</p></td>
-<td align="left"><p>[<em>WskAbortEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571108)</p></td>
+<td align="left"><p>An incoming connection request has been dropped.</em></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571108" data-raw-source="[&lt;em&gt;WskAbortEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571108)"><em>WskAbortEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 \* Applies only to listening sockets that have conditional-accept mode enabled. For more information about using conditional accept mode with listening sockets, see [Listening for and Accepting Incoming Connections](listening-for-and-accepting-incoming-connections.md).
 
@@ -80,12 +80,12 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>One or more new datagrams have been received.</p></td>
-<td align="left"><p>[<em>WskReceiveFromEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571142)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571142" data-raw-source="[&lt;em&gt;WskReceiveFromEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571142)"><em>WskReceiveFromEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Connection-oriented sockets**
 
@@ -103,20 +103,20 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>New data has been received.</p></td>
-<td align="left"><p>[<em>WskReceiveEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571140)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571140" data-raw-source="[&lt;em&gt;WskReceiveEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571140)"><em>WskReceiveEvent</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The socket has been disconnected.</p></td>
-<td align="left"><p>[<em>WskDisconnectEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571130)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571130" data-raw-source="[&lt;em&gt;WskDisconnectEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571130)"><em>WskDisconnectEvent</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>The ideal send backlog size has changed.</p></td>
-<td align="left"><p>[<em>WskSendBacklogEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571147)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571147" data-raw-source="[&lt;em&gt;WskSendBacklogEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571147)"><em>WskSendBacklogEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When a WSK application creates a socket, the socket's event callback functions are disabled by default. A WSK application must enable a socket's event callback functions in order for the WSK subsystem to call the socket's event callback functions when socket events occur. For more information about enabling and disabling a socket's event callback functions, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
 
@@ -126,9 +126,9 @@ The WSK subsystem can also notify a WSK application of events that are not speci
 
 A WSK application's event callback functions must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH\_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

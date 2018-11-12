@@ -37,9 +37,9 @@ Read WIA properties that are strings of unsigned bytes (type VT\_VECTOR | VT\_UI
 
 A WIA item property contains attributes that define the type of container and access rights. (For further information, see [Adding WIA Properties to a WIA Item](adding-wia-properties-to-a-wia-item.md).) The container types are WIA\_PROP\_NONE, WIA\_PROP\_LIST, and WIA\_PROP\_RANGE. The access rights are WIA\_PROP\_READ and WIA\_PROP\_RW. During validation of an existing property, a WIA minidriver should check the internal update setting to determine if it should read the valid values. A WIA minidriver should use the [**wiasGetPropertyAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff549257) service function to read the current valid values for its WIA properties.
 
- 
+ 
 
- 
+ 
 
 
 

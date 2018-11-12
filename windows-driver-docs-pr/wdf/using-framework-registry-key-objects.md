@@ -72,9 +72,9 @@ To obtain WDM information about the registry, a driver can call [**WdfRegistryWd
 
 After your driver has finished accessing a registry key, it must call [**WdfRegistryClose**](https://msdn.microsoft.com/library/windows/hardware/ff549914) or [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) to close the key and delete the registry-key object.
 
- 
+ 
 
- 
+ 
 
 
 

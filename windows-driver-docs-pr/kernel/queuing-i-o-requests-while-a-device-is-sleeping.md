@@ -18,9 +18,9 @@ While a device is asleep, its drivers should queue any I/O requests directed to 
 
 A driver can access its device only when the device is in the Working (D0) state. A driver cannot touch any device registers when the device is in a sleep state; the device must first be returned to the Working state.
 
- 
+ 
 
- 
+ 
 
 
 

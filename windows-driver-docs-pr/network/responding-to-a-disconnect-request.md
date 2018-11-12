@@ -30,9 +30,9 @@ The offload target must not free resources for the connection on which it has se
 
 For more information about responding to an abortive or graceful disconnect request, see [**MiniportTcpOffloadDisconnect**](https://msdn.microsoft.com/library/windows/hardware/ff559457) and [**NdisTcpOffloadDisconnectComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564590).
 
- 
+ 
 
- 
+ 
 
 
 

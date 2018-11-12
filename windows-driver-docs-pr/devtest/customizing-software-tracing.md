@@ -27,9 +27,9 @@ This section includes the following topics:
 
 [Do I need to call WPP\_CHECK\_FOR\_NULL\_STRING?](do-i-need-to-call-wpp-check-for-null-string-.md)
 
- 
+ 
 
- 
+ 
 
 
 

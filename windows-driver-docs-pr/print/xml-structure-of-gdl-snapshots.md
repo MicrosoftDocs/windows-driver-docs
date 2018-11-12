@@ -51,9 +51,9 @@ For information about character data in XML snapshots, see the following topics:
 
 [XML Restrictions on Allowed Characters in Snapshots](xml-restrictions-on-allowed-characters-in-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

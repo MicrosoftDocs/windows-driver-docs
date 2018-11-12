@@ -130,7 +130,7 @@ The following table lists the properties that can be included. If a property val
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Configure_the_computer"></span><span id="configure_the_computer"></span><span id="CONFIGURE_THE_COMPUTER"></span>Configure the computer
 
@@ -151,11 +151,11 @@ For more info about account provisioning metadata, see [Account provisioning](ac
 **Note**  
 Account provisioning metadata must be signed with an extended validation (EV) certificate when provided by the web site.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -74,9 +74,9 @@ To track each piece of the transfer, *SplitTransferRequest* registers an *IoComp
 
 Such an *IoCompletion* routine must free any IRPs and/or SRBs the driver has allocated and must complete the original IRP when all requested data has been transferred or when the class driver has exhausted retries of the IRP and must fail it due to device transfer errors.
 
- 
+ 
 
- 
+ 
 
 
 

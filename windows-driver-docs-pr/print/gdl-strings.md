@@ -20,9 +20,9 @@ GDL uses two types of strings:
 
 [GDL HexSubStrings](gdl-hexsubstrings.md)
 
- 
+ 
 
- 
+ 
 
 
 

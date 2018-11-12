@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                 | Specifies the transaction ID from the original task.    |
 | WDI\_PORT\_ID (UINT16) | Specifies the port ID from the original task.           |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

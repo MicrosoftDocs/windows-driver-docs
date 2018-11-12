@@ -72,7 +72,7 @@ The hardware-acceleration slider has four settings that range from **None** (lev
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Emulation_Setting"></span><span id="emulation_setting"></span><span id="EMULATION_SETTING"></span>**Emulation Setting**  
 The **Emulation** setting above forces DirectSound into emulation mode. In this mode, DirectSound applications run as though no DirectSound driver is present. All mixing is done by DirectSound in user mode, and the resulting audio data is played back through the waveOut API. The result is typically a large increase in latency. 
@@ -89,11 +89,11 @@ The **Full** setting enables full acceleration of DirectSound secondary buffers.
 
 If the user adjusts either the hardware-acceleration or SRC setting to a value other than the default, DirectSound uses the new setting instead of the default.
 
-For more information about KMixer's SRC algorithms, see [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).
 
- 
 
- 
+ 
+
+ 
 
 
 

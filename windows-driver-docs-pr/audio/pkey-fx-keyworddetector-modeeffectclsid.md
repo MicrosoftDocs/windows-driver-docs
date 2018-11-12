@@ -34,9 +34,9 @@ HKR,"FX\\0",%PKEY_FX_KeywordDetector_ModeEffectClsid%,,%FX_KEYWORD_MODE_CLSID%
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

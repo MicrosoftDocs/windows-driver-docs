@@ -80,9 +80,9 @@ The operating system USB stack cannot guarantee the timing between system wake a
 
 Ideally, the device should be left in a state ready to capture a scan when the system is suspended. If a scan occurs while the system is suspended, the device should cache the input data for an entire fingerprint scan. When the system wakes up, the driver then reads in the data from the device. By supporting this scenario, you can enable system wake and unlock/login scenarios.
 
- 
+ 
 
- 
+ 
 
 
 

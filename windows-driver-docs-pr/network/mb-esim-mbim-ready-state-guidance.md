@@ -26,7 +26,7 @@ When enabling a new profile or switching between profiles, the ready state shoul
 
 ![eSIM MBIM ready state flow when switching profiles](images/esim_mbim_ready_state_flow.png "eSIM MBIM ready state flow when switching profiles")
 
-For more info about MBIM_MS_UICCSLOT_STATE, see the MBIM_MS_UICCSLOT_STATE table on [MB Multi-SIM Operations (MBIM_CID_MS_SLOT_INFO_STATUS)](mb-multi-sim-operations.md#mbimcidmsslotinfostatus).
+For more info about MBIM_MS_UICCSLOT_STATE, see the MBIM_MS_UICCSLOT_STATE table on [MB Multi-SIM Operations (MBIM_CID_MS_SLOT_INFO_STATUS)](mb-multi-sim-operations.md).
 
 For more info about MBIM_SUBSCRIBER_READY_STATE, see Section 10.5.2.3 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064).
 

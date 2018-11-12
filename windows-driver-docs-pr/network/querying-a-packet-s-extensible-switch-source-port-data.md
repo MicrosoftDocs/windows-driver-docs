@@ -21,9 +21,9 @@ fwdDetail = NET_BUFFER_LIST_SWITCH_FORWARDING_DETAIL(NetBufferList);
 sourcePortId = fwdDetail->SourcePortId;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

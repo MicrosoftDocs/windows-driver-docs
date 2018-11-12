@@ -52,9 +52,9 @@ If the device can wake itself from a low-power state, the driver for the device'
 
 For information about registry entries that control a device's idle capabilities, see [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

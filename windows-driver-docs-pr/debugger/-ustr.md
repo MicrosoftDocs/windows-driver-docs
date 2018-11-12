@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the UNICODE\_STRING structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ If the string is null-terminated, **Length** does not include the trailing null.
 
 Most Win32 character string arguments are converted to Unicode strings before any real work is done.
 
- 
+ 
 
- 
+ 
 
 
 

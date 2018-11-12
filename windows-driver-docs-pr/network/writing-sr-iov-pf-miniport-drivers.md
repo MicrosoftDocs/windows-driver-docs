@@ -27,11 +27,11 @@ This section includes the following topics:
 
 **Note**  For information on how to write a miniport driver for a PCIe Virtual Function (VF) of the SR-IOV network adapter, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

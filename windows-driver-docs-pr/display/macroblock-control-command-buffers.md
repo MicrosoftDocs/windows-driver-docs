@@ -39,9 +39,9 @@ If the **bConfigMBcontrolRasterOrder** member of the [**DXVA\_ConfigPictureDecod
 
 ![diagram illustrating the relationship between the mb control command buffer and residual difference data buffer](images/formula3.png)
 
- 
+ 
 
- 
+ 
 
 
 

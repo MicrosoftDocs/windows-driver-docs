@@ -66,7 +66,7 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_SUCCESS</strong></p></td>
-<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a [<strong>BOOT_AREA_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff728836) structure.</p></td>
+<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff728836" data-raw-source="[&lt;strong&gt;BOOT_AREA_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff728836)"><strong>BOOT_AREA_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
@@ -83,7 +83,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -115,9 +115,9 @@ Requirements
 
 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216)
 
- 
+ 
 
- 
+ 
 
 
 

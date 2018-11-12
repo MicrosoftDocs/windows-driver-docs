@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_PARTITION [device interface class](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Requirements
 
 [**PartitionClassGuid**](partitionclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

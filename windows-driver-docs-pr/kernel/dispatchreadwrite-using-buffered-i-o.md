@@ -36,9 +36,9 @@ Drivers that buffer data internally should support [**IRP\_MJ\_FLUSH\_BUFFERS**]
 
 The highest-level driver in a chain is usually responsible for checking the input IRP's parameters before passing a read/write request on to lower drivers. Consequently, many lower-level drivers can assume that their I/O stack locations in a read/write IRP have valid parameters. If a lowest-level driver in a chain is aware of device-specific constraints on data transfers, that driver is required to check the validity of the parameters in its I/O stack location.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ A certified output must prevent unauthorized software or hardware components fro
 <span id="Switch_to_a_failure_mode_if_the_output_fails"></span><span id="switch_to_a_failure_mode_if_the_output_fails"></span><span id="SWITCH_TO_A_FAILURE_MODE_IF_THE_OUTPUT_FAILS"></span>Switch to a failure mode if the output fails  
 If the certified output can no longer enforce the configuration profile specified at configuration time, then the output should cease decrypting incoming content and should send a status message to the application. The status message should indicate that the output can no longer perform as configured.
 
- 
+ 
 
- 
+ 
 
 
 

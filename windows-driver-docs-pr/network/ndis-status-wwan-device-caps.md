@@ -48,9 +48,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907)
 
- 
+ 
 
- 
+ 
 
 
 

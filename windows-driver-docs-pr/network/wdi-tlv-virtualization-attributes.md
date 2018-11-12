@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |---------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------|
 | [**WDI\_TLV\_VIRTUALIZATION\_CAPABILITIES**](wdi-tlv-virtualization-capabilities.md) |                                |          | The virtualization capabilities. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

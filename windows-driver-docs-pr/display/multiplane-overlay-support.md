@@ -119,9 +119,9 @@ This user-mode enumeration constant value supports multiplane overlays and is ne
 
 -   [**D3DDDICAPS\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff544132) (**D3DDDICAPS\_GET\_MULTIPLANE\_OVERLAY\_GROUP\_CAPS** constant value)
 
- 
+ 
 
- 
+ 
 
 
 

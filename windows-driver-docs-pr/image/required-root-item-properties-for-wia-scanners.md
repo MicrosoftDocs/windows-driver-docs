@@ -16,9 +16,9 @@ The root item in the WIA item tree is required to support the following properti
 
 [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff551386)
 
- 
+ 
 
- 
+ 
 
 
 

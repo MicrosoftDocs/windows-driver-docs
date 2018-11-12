@@ -42,9 +42,9 @@ int __cdecl ToggleConversionIndicator(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

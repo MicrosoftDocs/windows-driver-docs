@@ -18,9 +18,9 @@ Description:The InputBins property contains all of the information about the dev
 
 The InputBins property is the parent of the [\[TrayName\]](-trayname-.md) property.
 
- 
+ 
 
- 
+ 
 
 
 

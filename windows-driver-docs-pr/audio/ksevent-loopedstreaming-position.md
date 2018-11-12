@@ -38,13 +38,13 @@ The KSEVENT\_LOOPEDSTREAMING\_POSITION event indicates that the audio stream has
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSEVENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561744)</p></td>
-<td align="left"><p>[<strong>LOOPEDSTREAMING_POSITION_EVENT_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537505)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561744" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561744)"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537505" data-raw-source="[&lt;strong&gt;LOOPEDSTREAMING_POSITION_EVENT_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537505)"><strong>LOOPEDSTREAMING_POSITION_EVENT_DATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The event value type (operation data) is a LOOPEDSTREAMING\_POSITION\_EVENT\_DATA structure that contains the following information:
 
@@ -90,9 +90,9 @@ Requirements
 
 [**LOOPEDSTREAMING\_POSITION\_EVENT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff537505)
 
- 
+ 
 
- 
+ 
 
 
 

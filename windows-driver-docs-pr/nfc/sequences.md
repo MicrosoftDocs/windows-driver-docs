@@ -33,11 +33,11 @@ This topic describes NFC CX driver sequences.
 | SequencePreRecovery         | Invoked by CX if it needs to perform a recovery sequence due to a fatal failure. The client driver can use this sequence to capture RAM dumps for diagnostic purposes.                                                                                                                                                                                                                                    |
 | SequenceRecoveryComplete    | Invoked by the CX after the completion of the recovery sequence and when the driver is back to the work-state                                                                                                                                                                                                                                                                                             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

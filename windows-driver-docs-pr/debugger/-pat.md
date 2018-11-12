@@ -49,13 +49,13 @@ If *Flag* is set, the debugger verifies that the PAT feature is present before t
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

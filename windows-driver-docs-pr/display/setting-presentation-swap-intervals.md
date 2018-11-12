@@ -22,9 +22,9 @@ A driver should always set the **PresentationIntervals** member of the D3DCAPS8 
 
 -   If the driver specifies the DDCAPS2\_FLIPINTERVAL bit, the runtime also sets **PresentationIntervals** to D3DPRESENT\_INTERVAL\_TWO, D3DPRESENT\_INTERVAL\_THREE, and D3DPRESENT\_INTERVAL\_FOUR.
 
- 
+ 
 
- 
+ 
 
 
 

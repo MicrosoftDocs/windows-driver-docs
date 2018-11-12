@@ -45,13 +45,13 @@ The **!mtrr** extension displays the contents of the MTRR register.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

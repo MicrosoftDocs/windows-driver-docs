@@ -19,7 +19,7 @@ Syntax
 
 ```ManagedCPlusPlus
 int NDIS_MDL_TO_SPAN_PAGES(
-   PMDL _Mdl
+   PMDL _Mdl
 );
 ```
 
@@ -72,9 +72,9 @@ Requirements
 
 [**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](https://msdn.microsoft.com/library/windows/hardware/ff556922)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -79,9 +79,9 @@ ms.localizationpriority: medium
 
 15. It is possible for TrueType outline fonts to be downloaded as raster fonts even when the GPD file specifies that the device supports outline fonts. This can occur for a variety of reasons (for example, insufficient memory on the printer).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ A context encapsulates the state information for an application-created Microsof
 
 A Direct3D driver is responsible for creating and managing its own rendering contexts.
 
- 
+ 
 
- 
+ 
 
 
 

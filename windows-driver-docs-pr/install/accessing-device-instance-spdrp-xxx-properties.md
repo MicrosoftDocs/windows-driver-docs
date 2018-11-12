@@ -68,9 +68,9 @@ To set a device property on Windows Server 2003, Windows XP, and Windows 2000, c
 
 If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

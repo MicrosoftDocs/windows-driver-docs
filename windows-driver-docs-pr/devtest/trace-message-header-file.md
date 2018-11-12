@@ -27,9 +27,9 @@ This include statement must appear after the definition of the [WPP\_CONTROL\_GU
 
 For more information, see [Adding WPP Macros to a Trace Producer](adding-wpp-macros-to-a-trace-provider.md) and see [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing. The TraceDrv sample is available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
- 
+ 
 
- 
+ 
 
 
 

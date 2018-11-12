@@ -42,9 +42,9 @@ If a front buffer has one or more back buffers attached, it is a flippable surfa
 
 Flipping solves most screen flicker problems. The ability to render to a surface that is not being displayed allows smooth, tear-free animation for game play and video playback.
 
- 
+ 
 
- 
+ 
 
 
 

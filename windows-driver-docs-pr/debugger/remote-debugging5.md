@@ -23,15 +23,15 @@ A debugging server is an engine instance that communicates directly with the tar
 
 **Note**   A typical two-computer setup for kernel debugging--where one computer is the target and the other the host computer--is not considered to be remote debugging as there is only one instance of the engine (on the host computer) and it communicates directly with the target.
 
- 
+ 
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For details about performing remote debugging, see [Remote Targets](remote-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

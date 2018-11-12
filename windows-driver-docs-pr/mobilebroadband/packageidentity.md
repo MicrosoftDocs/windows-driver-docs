@@ -42,18 +42,18 @@ The PackageIdentity element specifies a UWP device app that should appear as the
 <td><p>Name</p></td>
 <td><p>tns:PackageNameType</p></td>
 <td><p>Yes</p></td>
-<td><p>Copy this element from the Name attribute of the app manifest's Identity element, described in Remarks.</p></td>
+<td><p>Copy this element from the Name attribute of the app manifest&#39;s Identity element, described in Remarks.</p></td>
 </tr>
 <tr class="even">
 <td><p>Publisher</p></td>
 <td><p>tns:PublisherType</p></td>
 <td><p>Yes</p></td>
-<td><p>Copy this element from the Publisher attribute of the app manifest's Identity element, described in Remarks.</p></td>
+<td><p>Copy this element from the Publisher attribute of the app manifest&#39;s Identity element, described in Remarks.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -76,13 +76,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
+<td><p><a href="autoplayhandler.md" data-raw-source="[AutoplayHandler](autoplayhandler.md)">AutoplayHandler</a></p></td>
 <td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -122,9 +122,9 @@ Here is an example of how the &lt;Identity&gt; element may look inside an app ma
 
 The PackageIdentity element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

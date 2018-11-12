@@ -62,9 +62,9 @@ The Calls window has a toolbar that contains several buttons and has a shortcut 
 
 For more information about the register context and the local context, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

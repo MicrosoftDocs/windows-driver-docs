@@ -29,7 +29,7 @@ The vendor must communicate the chosen value through a method other than the con
 |[HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement](#hcivsmsftlecancelmonitoradvertisement) | HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement cancels a previously-issued HCI_VS_MSFT_LE_Monitor_Advertisement command.|
 [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable](#hcivsmsftlesetadvertisementfilterenable) | HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertisement filters.|
 |[HCI_VS_MSFT_Read_Absolute_RSSI](#hcivsmsftreadabsoluterssi) | HCI_VS_MSFT_Read_Absolute_RSSI reads the absolute Received Signal Strength Indication (RSSI) value for a BR/EDR connection from the controller.|
- 
+
 
 
 ### Notifying Windows Bluetooth stack of the vendor specific command code
@@ -45,7 +45,6 @@ This example command adds the registry value from the command line.
 
 ```cpp
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>\Device Parameters" /v VsMsftOpCode /t REG_DWORD /d <Vendor specific command code>
-
 ```
 
 ### Using INF to set the VsMsftOpCode registry key
@@ -110,11 +109,13 @@ The controller shall always complete this command promptly with a Command Comple
 |0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
 
 **Microsoft_event_prefix_length** (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x00&#160;-&#160;0x20|Number of bytes in the Microsoft event prefix field as specified in the returned _Microsoft_event_prefix_. This is the number of bytes of constant information at the beginning of every Microsoft-specified HCI event.|
 
 **Microsoft_event_prefix** (variable length):
+
 | Value  |  Parameter description |
 |---|---|
 |Event&#160;prefix&#160;value| The constant information to expect at the beginning of each Microsoft-defined event. This information is used to distinguish Microsoft-defined events from other custom events.|
@@ -164,17 +165,20 @@ RSSI_threshold_high (1 octet):
 |N_ = _High&#160;RSSI threshold&#160;value |  The maximum expected RSSI value. The controller will generate an event if the observed RSSI becomes greater than or equal to this value. For BR/EDR: <ul><li>Range: -128 &lt;= _N_ &lt;= 127 (signed integer)</li><li>Unit: dBm</li></ul>For LE:<ul><li>Range: -127 to 20 (signed integer)</li><li>Unit: dBm</li></ul>|
 
 RSSI_threshold_low (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |N_ = _Low&#160;RSSI threshold&#160;value|The minimum expected RSSI value. The controller will generate an event if the observed RSSI becomes less than or equal to this value. For BR/EDR:<ul><li>Range: -128 &lt;= _N_ &lt;= 127 (signed integer)</li><li>Unit: dBm</li></ul>For LE:<ul><li>Range: -127 to 20 (signed integer)</li><li>Unit: dBm</li></ul>|
 
 RSSI_threshold_low_time_interval (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
 |N_&#160;=&#160;0x01&#160;-&#160;0x3C|Time period = _N_ * 1 secondThe time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event](#hcivsmsftrssievent) is generated.
 
 RSSI_sampling_period (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
@@ -205,7 +209,7 @@ The controller shall promptly generate a Command Complete event when the HCI_VS_
 -    The observed RSSI for the device becomes greater than or equal to the specified _RSSI_threshold_high_ value. 
 
 -    The _RSSI_sampling_period_ is valid and the sampling period expires.
- 
+
 The controller should do all necessary cleanup if connectivity with the specified device is lost. In this case, an [HCI_VS_MSFT_Cancel_Monitor_Rssi](#hcivsmsftcancelmonitorrssi) command is not sent to the controller.
 
 ### HCI_VS_MSFT_Cancel_Monitor_Rssi
@@ -265,7 +269,7 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 |HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li>|<ul><li>Status</li><li>Subcommand_opcode<li>Monitor_handle</li></ul>|
 
 
- 
+
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a non-zero status otherwise.
 If the controller does not support RSSI monitoring for LE Advertisements, it shall ignore the _RSSI_threshold_high_, _RSSI_threshold_low_, _RSSI_threshold_low_time_interval_, and _RSSI_sampling_period_ parameter values.
 
@@ -332,17 +336,20 @@ RSSI_threshold_high (1 octet):
 |High RSSI threshold value|  The maximum expected RSSI value. The controller will generate an event if the observed RSSI becomes greater than or equal to this value. For LE:<ul><li>Range: -127 to 20 (signed integer)</li><li>Unit: dBm</li></ul>|
 
 RSSI_threshold_low (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |Low RSSI threshold value|The minimum expected RSSI value. The controller will generate an event if the observed RSSI becomes less than or equal to this value. For LE:<ul><li>Range: -127 to 20 (signed integer)</li><li>Unit: dBm</li></ul>|
 
 RSSI_threshold_low_time_interval (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
 |N_&#160;=&#160;0x01&#160;-&#160;0x3C|Time period = _N_ * 1 second. The time in seconds over which the RSSI value should be below _RSSI_threshold_low_ before an [HCI_VS_MSFT_Rssi_Event](#hcivsmsftrssievent) is generated.
 
 RSSI_sampling_period (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x00|Reserved value.|
@@ -350,6 +357,7 @@ RSSI_sampling_period (1 octet):
 |0xFF|The controller should not propagate any of the received advertisements to the host.|
 
 Condition_type (1 octet):
+
 | Value  |  Parameter description |
 |---|---|
 |0x01|The condition is a pattern that has to be matched on the advertisement.|
@@ -365,15 +373,16 @@ Number_of_patterns (1 octet):
 |Value | Parameter description| 
 |---|---|
 |0xXX| The number of patterns specified within the Pattern_data parameter.|
- 
+
 Pattern_data (>3 octets):
+
 |Value | Parameter description| 
 |---|---|
 |Length|Length of this pattern.|
 |Data type| Data Type of the advertisement section. The values are listed in the Bluetooth Assigned Numbers document.|
 |Start byte| Starting position of the pattern to be matched for the specified Data Type.|
 |Pattern| Pattern to be matched (size of Length – 0x2 bytes).|
- 
+
 UUID_type (1 octet):
 
 |Value | Parameter description| 
@@ -381,7 +390,7 @@ UUID_type (1 octet):
 |0x01| The UUID is a 16-bit service.|
 |0x02| The UUID is a 32-bit service.| 
 |0x03| The UUID is a 128-bit service.|
- 
+
 UUID (2, 4, or 16 octets):
 
 |Value | Parameter description| 
@@ -401,7 +410,7 @@ Address_type (1 octet):
 |0x00| Public Device Address.|
 |0x01| Random Device Address.| 
 |0x02 - 0xFF| Reserved values for future use.|
- 
+
 Address_type (1 octet):
 
 | Value  |  Parameter description |
@@ -433,7 +442,7 @@ Monitor_handle (1 octet):
 
 When the HCI_VS_MSFT_LE_Monitor_Advertisement command is received, the controller shall generate a Command Complete event.
 
- 
+
 
 ### HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement
 
@@ -459,7 +468,7 @@ Connection_handle (1 octet):
 | Value  |  Parameter description |
 |---|---|
 |0xXX| The handle to the filter that is being cancelled.|
- 
+
 
 #### Return_parameters
 
@@ -520,6 +529,7 @@ Enable (1 octet):
 #### Return_parameter
 
 Status (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x00|The command succeeded.|
@@ -527,6 +537,7 @@ Status (1 octet):
 |Error&#160;code|The command failed. See _Error Codes_ in the Bluetooth Core specification for details.|
 
 Subcommand_opcode (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x05|The subcommand opcode for HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable.|
@@ -534,7 +545,7 @@ Subcommand_opcode (1 octet):
 #### Events_generated__unless_masked_away
 
 The controller shall generate a Command Complete event when the HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable command is received.
- 
+
 
 #### HCI_VS_MSFT_Read_Absolute_RSSI
 
@@ -544,7 +555,7 @@ HCI_VS_MSFT_Read_Absolute_RSSI reads the **absolute** Received Signal Strength I
 |---|---|---|---|
 |HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |<ul><li>Subcommand_opcode</li><li>Handle</li>|<ul><li>Status</li><li>Subcommand_opcode</li><li>Handle</li><li>RSSI</li></ul>|
 
- 
+
 A connection handle is provided as both a command and return parameter to identify the ACL connection whose RSSI is being read. The RSSI metric is the **absolute** receiver signal strength in dBm to ± 6 dB accuracy. If the RSSI cannot be read, the RSSI metric shall be set to 127.
 The controller shall always complete this command promptly with a Command Completed event.
 
@@ -557,10 +568,11 @@ Subcommand_opcode (1 octet):
 |0x06|  The subcommand opcode for HCI_VS_MSFT_Read_Absolute_RSSI.|
 
 Handle (2 octets):
+
 | Value  |  Parameter description |
 |---|---|
 |0x_XXXX_|The handle for the BR/EDR connection whose RSSI has to be read.|
- 
+
 #### Return_parameters
 
 Status (1 octet):
@@ -581,15 +593,16 @@ Handle (2 octets):
 |Value|Parameter description|
 |---|---|
 |0xXXXX| The handle for the BR/EDR connection whose RSSI was read.|
- 
+
 RSSI (1 octet):
 
-|Value|Parameter description|
-|---|---|
-|N = RSSI value|The RSSI value for the BR/EDR connection.<ul><li>Range: -128 &lt;= _N_ &lt;= 127 (signed integer)</li><li>Unit: dBm</li>|</ul>|
+
+|     Value      |                                                  Parameter description                                                   |
+|----------------|--------------------------------------------------------------------------------------------------------------------------|
+| N = RSSI value | The RSSI value for the BR/EDR connection.<ul><li>Range: -128 &lt;= *N* &lt;= 127 (signed integer)</li><li>Unit: dBm</li> |
 
 #### Events_generated__unless_masked_away
-The controller shall generate a Command Complete event when the HCI_VS_MSFT_Read_Absolute_RSSI command has completed. 
+The controller shall generate a Command Complete event when the HCI_VS_MSFT_Read_Absolute_RSSI command has completed. 
 
 ## Microsoft-defined Bluetooth HCI events
 
@@ -609,32 +622,37 @@ If the _Status_ parameter is zero, the command completed because the RSSI value 
 |Event|Event Code|Microsoft event code|Event parameters|
 |---|---|---|---|
 |HCI_VS_MSFT_RSSI_Event|0xFF|0x01|<p>Event_prefix</p><p>Microsoft_event_code</p><p>Status</p><p>Connection_handle</p><p>RSSI</p>
- 
+
 #### Event_parameters
 
 Event_prefix (variable size):
+
 |Value|Parameter description|
 |---|---|
 |Event prefix|The event prefix that flags this event as Microsoft-defined. The size and value are as returned by the [HCI_VS_MSFT_Read_Supported_Features](#hcivsmsftreadsupportedfeatures) command.|
- 
+
 Microsoft_event_code (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x01|The event code for HCI_VS_MSFT_RSSI_Event.|
- 
+
 
 Status (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x00|Success. The RSSI value of the connection has met one of the following conditions.<ul><li>The RSSI reached or exceeded _RSSI_threshold_high_.</li><li>The RSSI reached or dropped below _RSSI_threshold_low_ over _RSSI_threshold_low_time_interval_ seconds.</li><li>The _RSSI_sampling_period_ has expired and this event was generated to notify the host of the RSSI value.</li></ul>|
 |0x01&#160;-&#160;0xFF|Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost.|
 
 Connection_handle (2 octets):
+
 |Value|Parameter description|
 |---|---|
 |0x_XXXX_|The handle for the connection whose RSSI is to be monitored.|
 
 RSSI (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |_N_ = _RSSI&#160;value_|The measured link RSSI value for the connection. For BR/EDR:<ul><li>Range: -128 &lt;= _N_ &lt;= 127 (signed integer)</li><li>Unit: dBm</li></ul>For LE:<ul><li>Range: -127 to 20 (signed integer)</li><li>Unit: dBm</li></ul>|
@@ -654,39 +672,45 @@ The controller shall not generate an HCI_VS_MSFT_LE_Monitor_Device_Event with th
 #### Event_parameters
 
 Event_prefix (variable size):
+
 |Value|Parameter description|
 |---|---|
 |Event prefix|The event prefix that flags this event as Microsoft-defined. The size and value are as returned by the [HCI_VS_MSFT_Read_Supported_Features](#hcivsmsftreadsupportedfeatures) command.
 
 
 Microsoft_event_code (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x02|The event code for HCI_VS_MSFT_LE_Monitor_Device_Event.|
- 
+
 Address_type (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x00|Public Device Address.|
 |0x01|Random Device Address.|
 |0x02&#160;-&#160;0xFF|Reserved values for future use.|
- 
+
 
 BD_ADDR (6 octets):
+
 |Value|Parameter description|
 |---|---|
 |0x_XXXXXXXXXXXX_|The Bluetooth address of the device.|
- 
+
 Monitor_handle (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x_XX_|The handle to the filter that was specified for the [HCI_VS_MSFT_LE_Monitor_Advertisement](#hcivsmsftlemonitoradvertisement) command.|
 
 Monitor_state (1 octet):
+
 |Value|Parameter description|
 |---|---|
 |0x00|The controller stopped monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
 |0x01|The controller started monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
- 
+
 
 

@@ -38,9 +38,9 @@ Indicates that the minidriver cannot uninitialize at this time.
 
 The minidriver should deallocate any resources it allocated, and disable the device's interrupts. (The class driver automatically deallocates any resources it allocated on behalf of the minidriver.)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ This example uses a [**KSDATAFORMAT\_DSOUND**](https://msdn.microsoft.com/librar
   BufferDesc.WaveFormatEx.cbSize          = 0;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

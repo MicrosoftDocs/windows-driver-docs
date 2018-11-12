@@ -86,9 +86,9 @@ Child WDFHANDLEs of 0x7ca7b1c0:
 
 In the preceding example, the input handle refers to a WDFDEVICE object. This particular device object has five child objects--two WDFCMRESLIST objects, two WDFCHILDLIST objects, and one WDFIOTARGET object.
 
- 
+ 
 
- 
+ 
 
 
 

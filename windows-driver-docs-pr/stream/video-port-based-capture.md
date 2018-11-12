@@ -62,9 +62,9 @@ Video port child devices, such as TV tuner and display combination adapters, can
 
 A WHQL waiver is available for devices that meet this criteria, so vendors can still obtain a logo.
 
- 
+ 
 
- 
+ 
 
 
 

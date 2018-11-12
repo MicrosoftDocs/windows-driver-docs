@@ -86,9 +86,9 @@ Your driver must not call [**IoCopyCurrentIrpStackLocationToNext**](https://msdn
 
 For more information about when to call [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387), [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355), and [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), see [Passing IRPs down the Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff558781).
 
- 
+ 
 
- 
+ 
 
 
 

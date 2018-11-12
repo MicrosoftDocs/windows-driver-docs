@@ -19,9 +19,9 @@ Because all adapters managed by Storport are PnP devices, *HwStorFindAdapter* do
 
 For more information, see [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://msdn.microsoft.com/library/windows/hardware/ff563900) and [**PORT\_CONFIGURATION\_INFORMATION (STORPORT)**](https://msdn.microsoft.com/library/windows/hardware/ff563901).
 
- 
+ 
 
- 
+ 
 
 
 

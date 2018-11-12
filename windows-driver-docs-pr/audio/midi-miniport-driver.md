@@ -60,9 +60,9 @@ The MIDI port driver handles all timing issues in both directions and relies on 
 
 PortCls contains built-in MIDI miniport drivers for MIDI devices that have FM synth and UART functions. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
 
- 
+ 
 
- 
+ 
 
 
 

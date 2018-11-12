@@ -64,9 +64,9 @@ During device initialization, the driver issues the following control requests t
 
 The value returned by GET\_INFO tells the driver which GET and SET requests are valid for a given control. In addition, GET\_INFO tells the driver whether the control is asynchronous. Asynchronous requests are supported by Status Interrupt Endpoints.
 
- 
+ 
 
- 
+ 
 
 
 

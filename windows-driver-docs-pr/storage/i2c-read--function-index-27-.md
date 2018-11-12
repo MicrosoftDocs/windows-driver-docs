@@ -47,7 +47,7 @@ This function reads an Inter-Integrated Circuit (I2C) register. This functionali
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -74,7 +74,7 @@ This function reads an Inter-Integrated Circuit (I2C) register. This functionali
 <td align="left">0</td>
 <td align="left"><p>This function can return the following Function-Specific Error Code:</p>
 <p>1: Invalid page.</p>
-<p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Data</strong></td>
@@ -85,7 +85,7 @@ This function reads an Inter-Integrated Circuit (I2C) register. This functionali
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -94,9 +94,9 @@ This function reads an Inter-Integrated Circuit (I2C) register. This functionali
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ For [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/ha
 
 All drivers in a driver stack must use the same buffer access method for each request, except possibly for the highest-level driver (which can use the "neither" method, regardless of the method used by lower drivers).
 
- 
+ 
 
- 
+ 
 
 
 

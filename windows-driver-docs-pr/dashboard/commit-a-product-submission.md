@@ -4,6 +4,7 @@ description: Use this method in the Microsoft Hardware API to commit a new submi
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
+ms.topic: article
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +22,10 @@ Another prerequisite to commit a submission is to complete the upload of the dri
 
 This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-| Method | Request URI |
-|:--|:--|
-| POST | https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
+
+| Method | Request URI                                                                                                    |
+|:-------|:---------------------------------------------------------------------------------------------------------------|
+| POST   | https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
 
 The productId in the method is the product for which the submission is intended. The submssionID in the method is the submission which is being committed.
 

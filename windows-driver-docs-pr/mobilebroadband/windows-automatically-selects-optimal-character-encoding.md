@@ -81,7 +81,7 @@ The following table lists the character encodings supported by the text-mode API
 </tbody>
 </table>
 
- 
+ 
 
 GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](http://www.3gpp.org/ftp/Specs/html-info/23038.md). CDMA character sets are defined in [3GPP2 C.R1001-D](http://www.3gpp2.org/Public_html/specs/C.R1001-D_v1.0_110403.pdf).
 
@@ -90,9 +90,9 @@ GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific
 
 [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

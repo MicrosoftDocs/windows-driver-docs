@@ -42,7 +42,7 @@ For greatest efficiency, you should save settings in lower-level workspaces if y
 
 **Note**   The layout of the debugging information windows is one exception to the cumulative behavior of workspaces. The position, docking status, and size of each window are determined by only the most recent workspace that you opened. This behavior includes the contents of the Watch window and the locations that you viewed in each [Memory window](memory-window.md). The command history in the [Debugger Command window](debugger-command-window.md) is not cleared when a new workspace is opened, but all other window states are reset.
 
- 
+ 
 
 To access the base workspace, start WinDbg with no target, or click [Stop Debugging](debug---stop-debugging.md) on the **Debug** menu after your session is complete. You can then make any edits that are allowed in the base workspace.
 
@@ -76,9 +76,9 @@ To control workspaces, you can do the following:
 
 -   Save a workspace to a file by clicking [Save Workspace to File](file---save-workspace-to-file.md) on the **File** menu.
 
- 
+ 
 
- 
+ 
 
 
 

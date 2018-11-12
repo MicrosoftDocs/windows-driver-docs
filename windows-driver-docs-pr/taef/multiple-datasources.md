@@ -94,9 +94,9 @@ Just to re-iterate: **the test method will be run once for each n-way combinator
 
 The constraints are applicable only when you want to specify a Table based DataSource in the multiple DataSource specifications. **Table DataSource** must be specified as Table:&lt;reative path to XML file&gt;\#&lt;TableId&gt;. If TAEF discovers that "TableId" is provided as a separate metadata, it will assume that the DataSource is a single Table-based DataSource and proceed.
 
- 
+ 
 
- 
+ 
 
 
 

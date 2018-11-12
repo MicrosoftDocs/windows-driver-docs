@@ -27,13 +27,13 @@ warning: C28114: Copying a whole IRP stack entry leaves certain fields initializ
 </tbody>
 </table>
 
- 
+ 
 
 The driver is copying an IRP improperly. Improperly copying an IRP can cause serious problems with a driver, including loss of data and system crashes. If an IRP must be copied and [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387) does not suffice, then certain members of the IRP should not be copied or should be zeroed after copying.
 
- 
+ 
 
- 
+ 
 
 
 

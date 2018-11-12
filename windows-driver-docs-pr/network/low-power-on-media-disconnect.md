@@ -78,11 +78,11 @@ For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason
 
 **Note**  If the miniport driver issues an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication, it must do this before it issues the [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ You must follow these steps to set up ECPs and attach the ECPs to an [**IRP\_MJ\
 
 7.  Call the [**FltFreeExtraCreateParameterList**](https://msdn.microsoft.com/library/windows/hardware/ff542964) or [**FsRtlFreeExtraCreateParameterList**](https://msdn.microsoft.com/library/windows/hardware/ff546005) routine to free the [ECP\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff540148) structure.
 
- 
+ 
 
- 
+ 
 
 
 

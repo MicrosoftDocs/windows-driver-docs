@@ -22,9 +22,9 @@ If the driver receives memory-mapped registers, the driver must call [**IWDFDevi
 
 For an example that shows how a driver finds and maps memory-mapped register resources, see [**IWDFDevice3::MapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/hh451225).
 
- 
+ 
 
- 
+ 
 
 
 

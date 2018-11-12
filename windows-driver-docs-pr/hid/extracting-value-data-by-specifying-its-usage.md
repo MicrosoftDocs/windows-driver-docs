@@ -27,9 +27,9 @@ Returns a usage value array.
 
 To use **HidP\_GetUsageValueArray**, applications and drivers must allocate a zero-initialized buffer, which is large enough to hold the usage value array. The required size, in bytes, is the product of the **BitSize** and **ReportCount** members of the usage value array's [**HIDP\_VALUE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539832) structure, rounded up to the nearest byte.
 
- 
+ 
 
- 
+ 
 
 
 

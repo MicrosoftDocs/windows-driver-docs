@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 If a completion routine does not signal an event, it must check the **Irp‑&gt;PendingReturned** flag. If this flag is set, the completion routine must mark the IRP pending by calling [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422).
 
- 
+ 
 
- 
+ 
 
 
 

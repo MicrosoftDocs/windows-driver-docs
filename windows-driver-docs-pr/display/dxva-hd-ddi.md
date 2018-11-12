@@ -52,9 +52,9 @@ The DXVA-HD DDI is an extension to the [Direct3D version 9 DDI](https://msdn.mic
 
 -   The [**DestroyVideoProcessor**](https://msdn.microsoft.com/library/windows/hardware/ff552817) function releases resources for a previously created video processor.
 
- 
+ 
 
- 
+ 
 
 
 

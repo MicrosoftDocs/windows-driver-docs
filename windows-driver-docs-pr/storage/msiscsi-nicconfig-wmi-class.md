@@ -47,9 +47,9 @@ class MSiSCSI_NICConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563079) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

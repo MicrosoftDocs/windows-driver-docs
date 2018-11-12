@@ -22,9 +22,9 @@ The DDLOCK\_OKTOSWAP bit can only be set to lock dynamic buffers and never to lo
 
 Note that drivers should store dynamic buffers in [AGP](agp-support.md) memory because if dynamic buffers are stored in local video memory and an application writes data into those buffers in a nonsequential manner, bus performance might be seriously affected.
 
- 
+ 
 
- 
+ 
 
 
 

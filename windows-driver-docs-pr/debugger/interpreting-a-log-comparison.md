@@ -60,9 +60,9 @@ Suppose you have two computers: a *logging computer* where you create a UMDH log
 
 [Using UMDH to Find a User-Mode Memory Leak](using-umdh-to-find-a-user-mode-memory-leak.md)
 
- 
+ 
 
- 
+ 
 
 
 

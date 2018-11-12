@@ -28,9 +28,9 @@ If a miniport driver uses scatter gather DMA, it must call the [**NdisMAllocateN
 
 For more information about miniport driver send handling, see [Sending Data from a Miniport Driver](sending-data-from-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

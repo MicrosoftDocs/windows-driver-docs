@@ -36,9 +36,9 @@ This section contains the following topics:
 
 [Boot Parameters to Configure DEP and PAE](boot-parameters-to-configure-dep-and-pae.md)
 
- 
+ 
 
- 
+ 
 
 
 

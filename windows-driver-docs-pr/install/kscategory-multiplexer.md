@@ -43,7 +43,7 @@ The KSCATEGORY_MULTIPLEXER [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

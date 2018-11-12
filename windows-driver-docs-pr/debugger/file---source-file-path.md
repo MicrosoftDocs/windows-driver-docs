@@ -40,9 +40,9 @@ Click **OK** to append the selected folder to the source path and return to the 
 
 For more information and for other ways to change this path, see [Source Path](source-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

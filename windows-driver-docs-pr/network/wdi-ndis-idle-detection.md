@@ -15,9 +15,9 @@ This following diagram shows a simple state diagram of NDIS idle detection, whic
 
 If the WDI device/driver supports USB selective suspend, NDIS detects its idle state to send the device into low power state (D2).
 
- 
+ 
 
- 
+ 
 
 
 

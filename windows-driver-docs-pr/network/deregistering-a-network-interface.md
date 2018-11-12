@@ -25,11 +25,11 @@ An NDIS interface provider calls the [**NdisIfDeregisterInterface**](https://msd
 
 **Note**  The NDIS proxy provider deregisters interfaces for miniport adapters when they are uninstalled and filter modules when they are detached.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

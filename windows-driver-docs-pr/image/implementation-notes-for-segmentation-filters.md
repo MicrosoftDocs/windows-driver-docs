@@ -31,9 +31,9 @@ Note that, in most cases, WIA\_IPS\_XPOS and WIA\_IPS\_YPOS will be set to zero,
 
 Also note that while an application can pass in an image to the segmentation filter that has been rotated by the driver, it must not pass in an image on which deskewing has already been performed.
 
- 
+ 
 
- 
+ 
 
 
 

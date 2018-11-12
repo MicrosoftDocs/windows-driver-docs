@@ -15,7 +15,7 @@ This feature is available in Windows 7 and later.
 
 **Note**  The ClassifyFunctions\_ProxyCallouts.cpp module in the [WFP driver sample](http://go.microsoft.com/fwlink/p/?LinkId=618934) includes code that demonstrates connect/bind redirection.
 
- 
+ 
 
 A WFP connection redirection callout redirects an application's connection request so that the application connects to a proxy service instead of the original destination. The proxy service has two sockets: one for the redirected original connection and one for the new proxied outbound connection.
 
@@ -227,9 +227,9 @@ Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WF
 
 [WFP Version-Independent Names and Targeting Specific Versions of Windows](https://msdn.microsoft.com/library/windows/desktop/gg176678)
 
- 
+ 
 
- 
+ 
 
 
 

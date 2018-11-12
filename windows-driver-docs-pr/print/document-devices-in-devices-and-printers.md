@@ -40,9 +40,9 @@ If an MFP has a fax function that does not enumerate as a print queue, the Devic
 
 Device manufacturers may author Device Stage for printers, scanners, and multi-function printers. Both locally attached printers (such as a printer that has a USB connection) and network-connected printers can have customized device experiences.
 
- 
+ 
 
- 
+ 
 
 
 

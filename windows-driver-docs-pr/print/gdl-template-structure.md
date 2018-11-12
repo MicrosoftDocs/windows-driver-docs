@@ -34,9 +34,9 @@ For more information about GDL template structures, see the following topics:
 
 [GDL Template Tutorial](gdl-tutorials.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ Setting **IoStatus.Information** to the output buffer size causes the whole outp
 
 Some drivers use the **Information** field to return codes that provide extra details about I/O requests. Before doing so, such drivers should check the IRP flags to ensure that IRP\_INPUT\_OPERATION is not set. When this flag is not set, the IOCTL or FSCTL does not have an output buffer, so the **Information** field need not supply a buffer size. In this case. the driver can safely use the **Information** field to return its own code.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -70,9 +70,9 @@ For any generic test case, the test result depends on whether the Verify calls m
 
 You can find explantions for all command options available by specifying the **"/?"** option for TE.exe. For extended explanations, see [Te.exe Command Options](te-exe-command-line-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

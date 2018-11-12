@@ -108,9 +108,9 @@ Ntifs.h</td>
 
 [**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://msdn.microsoft.com/library/windows/hardware/mt827087)
 
- 
+ 
 
- 
+ 
 
 
 

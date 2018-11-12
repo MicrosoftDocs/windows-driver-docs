@@ -23,9 +23,9 @@ The information in this section is divided into the following topics:
 
 For information about scanner item trees in Windows Vista and later, see [WIA Scanner Item Tree for Windows Vista](wia-scanner-item-tree-for-windows-vista.md). This topic also contains information about how to develop Windows Vista WIA minidrivers that are compatible with Windows Me and Windows XP.
 
- 
+ 
 
- 
+ 
 
 
 

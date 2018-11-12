@@ -62,9 +62,9 @@ The next example is an excerpt from the GDL file, and shows the DuplexUnit featu
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

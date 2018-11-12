@@ -31,9 +31,9 @@ This section includes:
 
 For information about the Windows Vista error macros, see [WIA Diagnostic Log Macros](wia-diagnostic-log-macros.md).
 
- 
+ 
 
- 
+ 
 
 
 

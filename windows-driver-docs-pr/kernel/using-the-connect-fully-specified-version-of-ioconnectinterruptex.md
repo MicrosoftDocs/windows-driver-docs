@@ -60,8 +60,8 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tr>
 <tr class="even">
 <td><p><strong>InterruptMode</strong></p></td>
-<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
-<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ProcessorEnableMask</strong></p></td>
@@ -71,7 +71,7 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tbody>
 </table>
 
- 
+ 
 
 A driver will only receive **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structures for message-signaled interrupts on Windows Vista and later versions of Windows.
 
@@ -122,9 +122,9 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

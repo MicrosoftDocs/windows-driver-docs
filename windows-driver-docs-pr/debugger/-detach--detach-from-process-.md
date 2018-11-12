@@ -57,7 +57,7 @@ For live user-mode debugging, this command is only supported in Windows XP and l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ If you are only debugging a single target, the debugger will return to dormant m
 
 If you are [debugging multiple targets](debugging-multiple-targets.md), the debugging session will continue with the remaining targets.
 
- 
+ 
 
- 
+ 
 
 
 

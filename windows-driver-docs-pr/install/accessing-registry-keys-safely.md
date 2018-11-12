@@ -62,9 +62,9 @@ Follow these guidelines to safely access registry keys:
 
 For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](http://go.microsoft.com/fwlink/p/?linkid=194542).
 
- 
+ 
 
- 
+ 
 
 
 

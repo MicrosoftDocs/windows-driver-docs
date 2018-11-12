@@ -67,9 +67,9 @@ The constructor receives a pointer to the outer unknown interface, which in this
 
 The property page's **OnDisconnect** method is called when the property page should release the associated object. This callback should decrement the reference count on the pointer to the interface to KS proxy by calling its **Release** method.
 
- 
+ 
 
- 
+ 
 
 
 

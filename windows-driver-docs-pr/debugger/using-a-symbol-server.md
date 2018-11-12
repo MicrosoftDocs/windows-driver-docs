@@ -16,7 +16,7 @@ A symbol server enables the debugger to automatically retrieve the correct symbo
 
 SymSrv can be used with WinDbg, KD, NTSD, or CDB.
 
-To use this symbol server with the debugger, simply include the text **srv\*** in the symbol path. For example:
+To use this symbol server with the debugger, simply include the text **srv\\*** in the symbol path. For example:
 
 ```console
 set _NT_SYMBOL_PATH = srv*DownstreamStore*SymbolStoreLocation
@@ -38,9 +38,9 @@ If you plan to create a symbol store, configure a symbol store for web (HTTP) ac
 
 Any symbol files downloaded by SymSrv will remain on your hard drive after the debugging session is over. To control the size of the symbol cache, the AgeStore tool can be used to delete cached files that are older than a specified date, or to reduce the contents of the cache below a specified size. For details, see [AgeStore](agestore.md).
 
- 
+ 
 
- 
+ 
 
 
 

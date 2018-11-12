@@ -25,9 +25,9 @@ Microsoft provides a class installer for still image devices, with the following
 
 If necessary, vendors can provide customized installation programs that can be used instead of the Microsoft-supplied class installer.
 
- 
+ 
 
- 
+ 
 
 
 

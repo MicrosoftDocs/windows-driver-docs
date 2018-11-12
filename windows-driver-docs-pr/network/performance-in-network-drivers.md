@@ -111,9 +111,9 @@ To minimize disruptions during media playback in multimedia applications, NDIS 6
 
 [Receive Side Throttle in NDIS 6.20](receive-side-throttle-in-ndis-6-20.md)
 "Send and Receive Code Paths" in [Summary of Changes Required to Port a Miniport Driver to NDIS 6.20](summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-20.md)
- 
+ 
 
- 
+ 
 
 
 

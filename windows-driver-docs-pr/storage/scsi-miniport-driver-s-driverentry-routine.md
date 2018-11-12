@@ -39,9 +39,9 @@ A [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654
 
 5.  Call [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645) with the pointers that were input to the **DriverEntry** routine, the address of the filled-in HW\_INITIALIZATION\_DATA, and the address of the context data, if any.
 
- 
+ 
 
- 
+ 
 
 
 

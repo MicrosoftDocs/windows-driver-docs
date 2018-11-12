@@ -21,9 +21,9 @@ For a list of interface provider-specific OID requests, see [NDIS Network Interf
 
 The handle at the *ProviderIfContext* parameter of [**ProviderSetObject**](https://msdn.microsoft.com/library/windows/hardware/ff570403) identifies the context area that the interface provider passed to NDIS when it called the [**NdisIfRegisterInterface**](https://msdn.microsoft.com/library/windows/hardware/ff562715) function to register the interface. The *ObjectId* parameter specifies the OID for the object that is being set. The *InputBufferLength* and *pInputBuffer* parameters provide the length of the input buffer and a pointer to the input buffer, respectively.
 
- 
+ 
 
- 
+ 
 
 
 

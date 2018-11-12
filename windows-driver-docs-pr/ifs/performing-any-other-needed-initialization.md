@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 After registering IRP and fast I/O dispatch routines, your file system filter driver's **DriverEntry** routine can initialize additional global driver variables and data structures as needed.
 
- 
+ 
 
- 
+ 
 
 
 

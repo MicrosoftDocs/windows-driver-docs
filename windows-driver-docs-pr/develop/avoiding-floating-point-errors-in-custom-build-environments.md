@@ -39,9 +39,9 @@ Here are the recommended solutions based on the type of development environment 
 -   **Microsoft VC++ Compiler** - Add the **/kernel** flag to prevent compiler from emitting SSE2.
 -   **Custom Tooling/Non-Microsoft Compiler** - You must manually account for the assembly instructions used in the resulting binary.
 
- 
+ 
 
- 
+ 
 
 
 

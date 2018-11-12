@@ -41,15 +41,15 @@ The **Enable heap free checking** flag validates each heap allocation when it is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
 
 [Enable heap tail checking](enable-heap-tail-checking.md), [Enable heap parameter checking](enable-heap-parameter-checking.md)
 
- 
+ 
 
- 
+ 
 
 
 

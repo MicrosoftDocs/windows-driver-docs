@@ -19,9 +19,9 @@ This section describes completing IRPs in dispatch routines, and contains the fo
 
 [When to Complete an IRP in a Dispatch Routine](when-to-complete-an-irp-in-a-dispatch-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

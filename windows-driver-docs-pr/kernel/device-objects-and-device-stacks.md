@@ -34,9 +34,9 @@ This section discusses device objects and their arrangement in device stacks. It
 
 [Points to Consider About Device Objects](points-to-consider-about-device-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

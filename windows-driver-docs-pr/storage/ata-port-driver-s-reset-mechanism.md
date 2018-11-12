@@ -30,8 +30,8 @@ If the miniport driver fails the reset IRB (that is, completes the reset IRB wit
 
 The ATA port driver does not support target resets for devices that have multiple LUNs.
 
- 
+ 
 
- 
+ 
 
 

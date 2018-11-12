@@ -32,9 +32,9 @@ Design considerations include the following:
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

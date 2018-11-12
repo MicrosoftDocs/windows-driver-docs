@@ -29,9 +29,9 @@ The following steps occur when the extensible switch with an internal network ad
 
 4.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598273) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the port that was used for the internal network adapter connection has been torn down and deleted.
 
- 
+ 
 
- 
+ 
 
 
 

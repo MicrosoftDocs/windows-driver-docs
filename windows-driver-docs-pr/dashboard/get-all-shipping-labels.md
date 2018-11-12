@@ -3,6 +3,7 @@ title: Get all shipping labels for a submission
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Hardware dashboard Account.
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 08/21/2018
 ---
 

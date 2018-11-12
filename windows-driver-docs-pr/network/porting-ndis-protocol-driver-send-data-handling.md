@@ -22,9 +22,9 @@ NDIS 6.0 does not provide loopback of send data by default. NDIS 6.0 protocol dr
 
 NDIS 6.0 protocol drivers can cancel send operations. For more information about canceling send operations, see [Canceling a Send Operation](canceling-a-send-operation.md). For an overview of send operations, see [Sending Network Data](sending-network-data.md). For more information about protocol driver send operations, see [Sending Data from a Protocol Driver](sending-data-from-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

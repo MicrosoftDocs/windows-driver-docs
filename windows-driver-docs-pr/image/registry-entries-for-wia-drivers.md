@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 For registry entries used by WIA and Still Image drivers see [Registry Entries for Still Image Devices](registry-entries-for-still-image-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

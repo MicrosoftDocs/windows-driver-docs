@@ -42,7 +42,6 @@ InitPropVariantFromBuffer(responseCurve, 10 * sizeof (UINT), &pvCurve);
 hr = m_pSensorProperties->SetValue(SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE, &pvCurve);
 
 PropVariantClear(&pvCurve);
-
 ```
 
 ## Related topics

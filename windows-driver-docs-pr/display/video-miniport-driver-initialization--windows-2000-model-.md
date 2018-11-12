@@ -33,9 +33,9 @@ Video miniport driver initialization occurs after the NT kernel, [*HAL*](https:/
 
 At this point, the system has loaded and initialized the video miniport driver. The next step is for the PnP manager to start the device. See [Starting the Device of the Video Miniport Driver](starting-the-device-of-the-video-miniport-driver.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
     For more information about this process, see [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,13 +33,13 @@ The following sequence and figure describe the data flow for IP data that is par
 
 **Note**   Starting with Windows Vista, the IPSink filter is not supported.
 
- 
+ 
 
 ![diagram illustrating ip data flow](images/ipdata.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 If the minidriver has a UI plug-in, this plug-in must be written so that it can correctly display any configuration information. Unidrv automatically updates any in-box UI according to the device configuration.
 
- 
+ 
 
- 
+ 
 
 
 

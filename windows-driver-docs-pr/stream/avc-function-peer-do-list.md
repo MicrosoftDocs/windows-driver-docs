@@ -46,7 +46,7 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -87,9 +87,9 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PEER\_DO\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff554179), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147), [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724), [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_SPECTRAL\_INVERSION to control the setting for spec
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**SpectralInversion**](https://msdn.microsoft.com/library/windows/hardware/ff568154)
 
- 
+ 
 
- 
+ 
 
 
 

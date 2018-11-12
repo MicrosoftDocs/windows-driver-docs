@@ -45,7 +45,7 @@ The **!threadtoken** extension displays the impersonation state of the current t
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -129,9 +129,9 @@ Here is an example:
                SeEnableDelegationPrivilege ( Enabled )
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 
 You can use the Sensor Diagnostic Tool to test your sensor's functionality. Use the tool to ensure that your driver and firmware correctly forwards data from the device, and correctly responds to requests from applications. In addition, you can use the tool to verify that your driver correctly supports changes to the current report interval and change sensitivity.
- 
+ 
 
 The Sensor platform (API and DDI) supports both event notifications and property retrieval.
 

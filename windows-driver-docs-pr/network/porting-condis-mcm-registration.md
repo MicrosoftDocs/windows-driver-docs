@@ -30,9 +30,9 @@ NDIS 6.0 MCMs do not call [**NdisMCmRegisterAddressFamily**](https://msdn.micros
 
 For more information about MCM registration, see [CoNDIS MCM Registration](condis-mcm-registration.md).
 
- 
+ 
 
- 
+ 
 
 
 

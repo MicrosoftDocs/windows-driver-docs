@@ -58,9 +58,9 @@ The miniport driver:
 
 -   Returns NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) or [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function.
 
- 
+ 
 
- 
+ 
 
 
 

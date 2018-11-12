@@ -21,8 +21,6 @@ Forcibly replaces the current device drivers for a specified device with drivers
 
 ```
     devcon [/r] update INFfile HardwareID 
-
-   
 ```
 
 ## <span id="ddk_devcon_update_tools"></span><span id="DDK_DEVCON_UPDATE_TOOLS"></span>Parameters
@@ -62,9 +60,9 @@ devcon /r update c:\windows\inf\newdvc.inf *PNP030b
 
 [Example 44: Forcibly update the HAL](devcon-examples.md#ddk_example_44_forcibly_update_the_hal_tools)
 
- 
 
- 
+
+
 
 
 

@@ -25,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void ClearMpioDiskHealthCounters(
-   [in, Description("MPIO Disk Ordinal"):amended] uint32 DiskOrdinal
+   [in, Description("MPIO Disk Ordinal"):amended] uint32 DiskOrdinal
 );
 ```
 
@@ -65,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

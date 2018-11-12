@@ -21,9 +21,9 @@ Windows 8 uses the following driver stack for non-HID keyboard, mouse, and touch
 
 ![non-hid driver stack](images/non-hid-driver-stack.png)
 
- 
+ 
 
- 
+ 
 
 
 

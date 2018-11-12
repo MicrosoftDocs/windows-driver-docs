@@ -20,9 +20,9 @@ Use the following topics to learn more about the best practices for using the Mo
 
 [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

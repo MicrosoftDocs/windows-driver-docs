@@ -44,9 +44,9 @@ This extension command will not work on Windows XP and later versions of Windows
 
 The original purpose of this extension was to ensure that the DLL version matched the target version, since a mismatch would result in inaccurate results for many extensions. Newer DLLs are no longer restricted to working with only one version of Windows, so this extension is obsolete.
 
- 
+ 
 
- 
+ 
 
 
 

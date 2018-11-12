@@ -12,7 +12,7 @@ The Windows Portable Devices Driver Kit includes five sample WPD drivers. These 
 
 **Note**  If you are not familiar with the WPD driver model, begin with the WpdHelloWorldDriver.
 
- 
+ 
 
 | Sample                                                            | Description                                                                                                                                                                                    |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -22,7 +22,7 @@ The Windows Portable Devices Driver Kit includes five sample WPD drivers. These 
 | [WpdWudfSampleDriver](the-wpdwudfsampledriver-sample.md)         | A comprehensive sample driver that demonstrates the WPD device driver interface (DDI). This sample driver simulates hardware interaction.                                                      |
 | [WpdServiceSampleDriver](the-wpdservicesampledriver-sample.md)   | A sample driver that demonstrates support for a Contacts service. (Services are an extension of the functional objects that are supported by WPD.) This driver simulates hardware interaction. |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -37,9 +37,9 @@ The Windows Portable Devices Driver Kit includes five sample WPD drivers. These 
 
 [WPD WUDF Sample Driver download page](http://go.microsoft.com/fwlink/p/?linkid=256224)
 
- 
+ 
 
- 
+ 
 
 
 

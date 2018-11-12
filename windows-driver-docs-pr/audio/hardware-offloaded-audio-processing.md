@@ -21,9 +21,9 @@ With Windows 8 and later operating systems, the audio driver model has been upd
 
 [PortCls Power Management Updates for SoC](portcls-power-management-updates-for-soc.md)
 
- 
+ 
 
- 
+ 
 
 
 

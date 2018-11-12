@@ -24,9 +24,9 @@ Text printing commands are those that are associated with printing text. These c
 
 [Commands for Simulated Fonts](commands-for-simulated-fonts.md)
 
- 
+ 
 
- 
+ 
 
 
 

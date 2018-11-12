@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_USB_DEVICE [device interface class](https://msdn.microsoft
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
 
- 
+ 
 
- 
+ 
 
 
 

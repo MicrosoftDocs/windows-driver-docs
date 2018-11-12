@@ -46,9 +46,9 @@ Because [request handlers](request-handlers.md) run in an arbitrary thread conte
 
 For more information about when a driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://msdn.microsoft.com/library/windows/hardware/ff548068).
 
- 
+ 
 
- 
+ 
 
 
 

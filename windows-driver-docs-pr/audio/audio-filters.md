@@ -42,9 +42,9 @@ For the sake of simplicity, the figure omits the filter's pin factories, which c
 
 In addition to being data sinks and data sources, pins and filters can also be IRP sinks and IRP sources. Not only can pins and filters receive IRPs--they can send IRPs as well. The three dark arrows in the figure represent IRPs. The pin on the left side of the figure is an IRP sink. The pin on the right is an IRP source. The figure also shows an IRP being sent to the filter object itself.
 
- 
+ 
 
- 
+ 
 
 
 

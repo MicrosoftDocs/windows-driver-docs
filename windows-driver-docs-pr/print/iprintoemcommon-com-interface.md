@@ -32,18 +32,18 @@ The following table lists and describes all the methods that the `IPrintOemCommo
 </tr>
 <tr class="even">
 <td><p><strong>IPrintOemCommon::GetInfo</strong></p></td>
-<td><p>Returns a plug-in's identification information.</p></td>
+<td><p>Returns a plug-in&#39;s identification information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For information about how these methods are implemented for UI plug-ins, see [IPrintOemUI COM Interface](iprintoemui-com-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

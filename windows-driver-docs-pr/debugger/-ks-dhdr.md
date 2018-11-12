@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The **!ks.dhdr** extension command is obsolete; use [**!ks.dump**](-ks-dump.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

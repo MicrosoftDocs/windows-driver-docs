@@ -48,7 +48,7 @@ Specifies the address of the file mapping. If *Address* is not in a mapping, the
 </tbody>
 </table>
 
- 
+ 
 
 The **!mapped\_file** extension can only be used during live, nonremote debugging.
 
@@ -72,9 +72,9 @@ Mapped file name for 77150000: '\Device\HarddiskVolume2\Windows\System32\kernel3
 No information found for 80310000: error 87
 ```
 
- 
+ 
 
- 
+ 
 
 
 

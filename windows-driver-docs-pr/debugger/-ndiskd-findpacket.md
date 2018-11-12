@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure and its associated architecture have been deprecated.
 
- 
+ 
 
 The **!ndiskd.findpacket** extension finds the specified packets.
 
@@ -49,9 +49,9 @@ Ndiskd.dll
 
 [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086)
 
- 
+ 
 
- 
+ 
 
 
 

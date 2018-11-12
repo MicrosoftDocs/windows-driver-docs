@@ -46,7 +46,7 @@ Scatter/gather DMA is a shortcut method that sets up several packet DMA transfer
 
 **Note**  *Scatter/gather capability* does not mean that the device can use the scatter/gather routines. Scatter/gather capability refers to a flag in the device description that indicates that the device is able to read or write from any area in memory, instead of just a certain range.
 
- 
+ 
 
 <span id="System_DMA"></span><span id="system_dma"></span><span id="SYSTEM_DMA"></span>*System DMA*  
 System DMA is performed by programming the system DMA controller on the motherboard to do the transfer directly. Only ISA cards can use system DMA.
@@ -150,9 +150,9 @@ You can activate the DMA Verification feature for one or more drivers by using D
 
     The DMA Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

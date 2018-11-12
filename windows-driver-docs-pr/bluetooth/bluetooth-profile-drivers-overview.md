@@ -51,9 +51,9 @@ For more information about L2CAP and SDP, see [Creating a L2CAP Client Connectio
 
 For more information about the Bluetooth driver stack, see [Bluetooth Driver Stack](bluetooth-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

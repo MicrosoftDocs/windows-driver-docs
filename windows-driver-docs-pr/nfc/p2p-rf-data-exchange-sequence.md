@@ -20,9 +20,9 @@ The following figure illustrates the state sequences for StateRfDiscovered and S
 
 ![nfc-dep rf data exchange sequence](images/nfc-dep-rfdataexchangesequence.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

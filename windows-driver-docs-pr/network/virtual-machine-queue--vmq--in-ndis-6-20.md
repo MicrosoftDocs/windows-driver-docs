@@ -30,9 +30,9 @@ Microsoft Hyper-V network performance enhancements also provide chimney support 
 
 For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ All filter drivers and any function driver that does not own power policy for it
 
 6.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

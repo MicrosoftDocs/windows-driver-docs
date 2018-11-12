@@ -23,9 +23,9 @@ The following properties are part of the `KSPROPSETID_AudioGfx` property set:
 
 [**KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID**](ksproperty-audiogfx-rendertargetdeviceid.md)
 
- 
+ 
 
- 
+ 
 
 
 

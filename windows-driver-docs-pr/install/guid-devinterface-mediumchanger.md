@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_MEDIUMCHANGER [device interface class](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Requirements
 
 [**MediumChangerClassGuid**](mediumchangerclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

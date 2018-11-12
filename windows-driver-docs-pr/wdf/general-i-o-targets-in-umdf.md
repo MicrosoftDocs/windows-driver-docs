@@ -39,9 +39,9 @@ The following sections describe how to initialize and use a general I/O target:
 -   [Controlling a General I/O Target's State in UMDF](controlling-a-general-i-o-target-s-state-in-umdf.md)
 -   [Obtaining Information About a General I/O Target in UMDF](obtaining-information-about-a-general-i-o-target-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

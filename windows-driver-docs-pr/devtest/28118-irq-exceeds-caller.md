@@ -26,7 +26,7 @@ use of that function
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Additional information</strong></p></td>
-<td align="left"><p>The current function may need _IRQL_requires_max_, or it may be that the limit is set by some prior call.</p></td>
+<td align="left"><p>The current function may need <em>IRQL_requires_max</em>, or it may be that the limit is set by some prior call.</p></td>
 </tr>
 </tbody>
 </table>

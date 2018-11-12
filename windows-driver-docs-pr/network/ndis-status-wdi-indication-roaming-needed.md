@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 |-----------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898049) |                                |          | The reason for the roam trigger. When a [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md) is triggered, this reason is forwarded to it. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
- 
+ 
 
- 
+ 
 
 
 

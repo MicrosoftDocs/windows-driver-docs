@@ -24,9 +24,9 @@ After a call to [**VideoPortStartTimer**](https://msdn.microsoft.com/library/win
 
 Note that a *HwVidTimer* function cannot disable calls to itself with **VideoPortStopTimer**. Another video miniport driver function must control the enabling or disabling of calls to a *HwVidTimer* function through the use of **VideoPortStartTimer** and **VideoPortStopTimer**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ This section describes an NDIS miniport driver's reset and halt functions. These
 -   [Miniport Driver Hardware Reset](hardware-reset.md)
 -   [Miniport Driver Halt Handler](halt-handler.md)
 
- 
+ 
 
- 
+ 
 
 
 

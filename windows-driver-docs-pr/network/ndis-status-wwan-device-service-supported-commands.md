@@ -45,9 +45,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://msdn.microsoft.com/library/windows/hardware/hh846214)
 
- 
+ 
 
- 
+ 
 
 
 

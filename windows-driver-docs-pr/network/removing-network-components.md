@@ -28,9 +28,9 @@ Network components are removed by the network configuration subsystem.
 
 3.  The subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method to remove information about the network component from the registry.
 
- 
+ 
 
- 
+ 
 
 
 

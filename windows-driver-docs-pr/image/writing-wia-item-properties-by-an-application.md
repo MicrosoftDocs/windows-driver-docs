@@ -29,9 +29,9 @@ The **IWiaMiniDrv::drvValidateItemProperties** method should perform the followi
 
 5.  Call the [**wiasValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff549454) service function to let the WIA service validate all other property requests. This is a "catch-all" case; the WIA service has built-in property validation.
 
- 
+ 
 
- 
+ 
 
 
 

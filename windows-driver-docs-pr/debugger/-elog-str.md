@@ -48,16 +48,16 @@ Specifies the string to add to the event log.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Because a registered event source does not send *String*, the string appears in the event log with a warning that no event ID was determined.
 
- 
+ 
 
- 
+ 
 
 
 

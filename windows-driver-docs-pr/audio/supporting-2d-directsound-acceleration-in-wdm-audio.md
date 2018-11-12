@@ -25,9 +25,9 @@ DirectSound exposes hardware-accelerated 2D mixing for WDM audio miniport driver
 
 -   The pin should meet the [DirectSound node-ordering requirements](directsound-node-ordering-requirements.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,15 +29,15 @@ HKR, NetworkProvider, ProviderPath, 0x20000, "%11%\nwprovau.dll"
 
 **Note**  An INF file that installs a **NetClient** component does not have to update the **ProviderOrder** value under the component's ... **Control\\Network\\Provider\\Order** key. This is done automatically by the network class installer.
 
- 
+ 
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

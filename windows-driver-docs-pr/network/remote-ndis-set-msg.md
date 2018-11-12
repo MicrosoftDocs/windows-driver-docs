@@ -74,7 +74,7 @@ This message is sent to a Remote NDIS device from a host, when it requires to se
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -96,9 +96,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

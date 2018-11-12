@@ -132,9 +132,9 @@ The following code example to handle a rename operation mimics the file system c
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

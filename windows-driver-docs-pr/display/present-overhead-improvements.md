@@ -35,18 +35,18 @@ These reference topics describe how to implement this capability in your display
 
 Drivers should support both sharing resources and shareable backbuffers for these additional texture formats from the [**DXGI\_FORMAT**](https://msdn.microsoft.com/library/windows/desktop/bb173059) enumeration:
 
--   **DXGI\_FORMAT\_A8\_UNORM**
--   **DXGI\_FORMAT\_R8\_UNORM**
--   **DXGI\_FORMAT\_R8G8\_UNORM**
--   **DXGI\_FORMAT\_BC1\_TYPELESS\***
--   **DXGI\_FORMAT\_BC1\_UNORM**
--   **DXGI\_FORMAT\_BC1\_UNORM\_SRGB**
--   **DXGI\_FORMAT\_BC2\_TYPELESS\***
--   **DXGI\_FORMAT\_BC2\_UNORM**
--   **DXGI\_FORMAT\_BC2\_UNORM\_SRGB**
--   **DXGI\_FORMAT\_BC3\_TYPELESS\***
--   **DXGI\_FORMAT\_BC3\_UNORM**
--   **DXGI\_FORMAT\_BC3\_UNORM\_SRGB**
+- **DXGI\_FORMAT\_A8\_UNORM**
+- **DXGI\_FORMAT\_R8\_UNORM**
+- **DXGI\_FORMAT\_R8G8\_UNORM**
+- **DXGI\_FORMAT\_BC1\_TYPELESS\\***
+- **DXGI\_FORMAT\_BC1\_UNORM**
+- **DXGI\_FORMAT\_BC1\_UNORM\_SRGB**
+- **DXGI\_FORMAT\_BC2\_TYPELESS\\***
+- **DXGI\_FORMAT\_BC2\_UNORM**
+- **DXGI\_FORMAT\_BC2\_UNORM\_SRGB**
+- **DXGI\_FORMAT\_BC3\_TYPELESS\\***
+- **DXGI\_FORMAT\_BC3\_UNORM**
+- **DXGI\_FORMAT\_BC3\_UNORM\_SRGB**
 
 In addition, drivers should support the **DXGI\_FORMAT\_L8\_UNORM** placeholder format if they support Microsoft Direct3D 11 and later on Direct3D feature level 9 hardware. **DXGI\_FORMAT\_L8\_UNORM** is functionally equivalent to the **D3DDDIFMT\_L8** format.
 
@@ -55,9 +55,9 @@ Drivers should also support additional texture formats from the [**D3DDDIFORMAT*
 -   **D3DDDIFMT\_G8R8**
 -   **D3DDDIFMT\_R8**
 
- 
+ 
 
- 
+ 
 
 
 

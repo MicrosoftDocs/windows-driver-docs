@@ -47,7 +47,7 @@ After Windows registers the device, which makes the devnode "live," but before W
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -128,9 +128,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

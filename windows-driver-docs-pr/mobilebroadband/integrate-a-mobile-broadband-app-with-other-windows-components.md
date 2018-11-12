@@ -97,7 +97,7 @@ Your app should be adaptive and be able to fit a number of layouts, including:
     **Note**  
     When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
-     
+     
 
 The following examples show how some pages look when side by side with another app.
 
@@ -177,9 +177,9 @@ Inappropriate design for operator notifications:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

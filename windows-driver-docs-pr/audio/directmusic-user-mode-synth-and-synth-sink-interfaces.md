@@ -24,9 +24,9 @@ Interface for a user-mode synth sink
 
 [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520)
 
- 
+ 
 
- 
+ 
 
 
 

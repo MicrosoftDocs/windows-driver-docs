@@ -41,9 +41,9 @@ The first entry in the **AddReg** section is to register the error handler as a 
 
 The *ThreadingModel* value for the error handling extension must be **Both**.
 
- 
+ 
 
- 
+ 
 
 
 

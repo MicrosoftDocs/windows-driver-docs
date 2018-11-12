@@ -45,15 +45,15 @@ The QIM component also processes networking QoS policies from the policy store i
 
 **Note**  The policies that are created by the QIM component go into the active store and do not persist through a system restart.
 
- 
+ 
 
 **Note**  Starting with Windows Server 2012, the DCB and DCB WMI provider components are not installed by default. These components are installed and enabled through the installation of the Microsoft DCB server feature. This feature is installed by using the Add Roles and Features wizard of the Server Manager.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

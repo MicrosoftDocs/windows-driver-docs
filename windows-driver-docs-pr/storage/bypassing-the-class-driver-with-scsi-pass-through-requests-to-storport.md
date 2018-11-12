@@ -19,9 +19,9 @@ Storport does not check the validity of the SCSI command that is embedded in a p
 
 For a discussion of SCSI pass-through requests from the perspective of a storage class driver, see [Handling SCSI Pass-Through Requests](handling-scsi-pass-through-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

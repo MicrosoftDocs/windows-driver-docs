@@ -33,10 +33,10 @@ Represents one or more of the following options
 <span id="_o"></span><span id="_O"></span>**/o**  
 Overwrites an existing dump file with the same name. If this option is not used and there is a file with the same file name, the dump file is not written.
 
-<span id="_f_FullOptions_"></span><span id="_f_fulloptions_"></span><span id="_F_FULLOPTIONS_"></span>**/f\[***FullOptions***\]**  
+<span id="_f_FullOptions_"></span><span id="_f_fulloptions_"></span><span id="_F_FULLOPTIONS_"></span>**/f\[**<em>FullOptions</em>**\]**  
 (Kernel mode:) Creates a [complete memory dump](complete-memory-dump.md).
 
-(User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[***MiniOptions***\]** is always preferable to **.dump /f**.
+(User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[**<em>MiniOptions</em>**\]** is always preferable to **.dump /f**.
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
@@ -57,9 +57,9 @@ You can add the following *FullOptions* to change the contents of the dump file;
 </tbody>
 </table>
 
- 
+ 
 
-<span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[***MiniOptions***\]**  
+<span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[**<em>MiniOptions</em>**\]**  
 Creates a *small memory dump* (in kernel mode) or a *minidump* (in user mode) For more information, see [User-Mode Dump Files](user-mode-dump-files.md). If neither **/f** nor **/m** is specified, **/m** is the default.
 
 In user mode, **/m** can be followed with additional *MiniOptions* specifying extra data that is to be included in the dump. If no *MiniOptions* are included, the dump will include module, thread, and stack information, but no additional data. You can add any of the following *MiniOptions* to change the contents of the dump file; they are case-sensitive.
@@ -102,7 +102,7 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>t</strong></p></td>
-<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using the <strong>[!runaway](-runaway.md)</strong> extension or the <strong>[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)</strong> command when debugging the minidump.</p></td>
+<td align="left"><p>Adds additional thread information to the minidump. This includes thread times, which can be displayed by using the <strong><a href="-runaway.md" data-raw-source="[!runaway](-runaway.md)">!runaway</a></strong> extension or the <strong><a href="-ttime--display-thread-times-.md" data-raw-source="[.ttime (Display Thread Times)](-ttime--display-thread-times-.md)">.ttime (Display Thread Times)</a></strong> command when debugging the minidump.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>i</strong></p></td>
@@ -110,7 +110,7 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>p</strong></p></td>
-<td align="left"><p>Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application's processes and threads.</p></td>
+<td align="left"><p>Adds process environment block (PEB) and thread environment block (TEB) data to the minidump. This can be useful if you need access to Windows system information regarding the application&#39;s processes and threads.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>w</strong></p></td>
@@ -130,7 +130,7 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 </tr>
 <tr class="even">
 <td align="left"><p><strong>R</strong></p></td>
-<td align="left"><p>Deletes the full module paths from the minidump. Only the module names will be included. This is a useful option if you want to protect the privacy of the user's directory structure.</p></td>
+<td align="left"><p>Deletes the full module paths from the minidump. Only the module names will be included. This is a useful option if you want to protect the privacy of the user&#39;s directory structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>y</strong></p></td>
@@ -139,7 +139,7 @@ In user mode, **/m** can be followed with additional *MiniOptions* specifying ex
 </tbody>
 </table>
 
- 
+ 
 
 These *MiniOptions* can only be used when creating a user-mode minidump. They should follow the **/m** specifier.
 
@@ -152,7 +152,7 @@ Generates dumps for all currently-debugged processes. If **/a** is used, the **/
 <span id="_ba"></span><span id="_BA"></span>**/b**\[**a**\]  
 Creates a .cab file. If this option is included, *FileName* is interpreted as the CAB file name, not the dump file name. A temporary dump file will be created, this file will be packaged into a CAB, and then the dump file will be deleted. If the **b** option is followed by **a**, all symbol and image files also will be packaged into the CAB.
 
-<span id="_c__Comment_"></span><span id="_c__comment_"></span><span id="_C__COMMENT_"></span>**/c "***Comment***"**  
+<span id="_c__Comment_"></span><span id="_c__comment_"></span><span id="_C__COMMENT_"></span>**/c "**<em>Comment</em>**"**  
 Specifies a comment string that will be written to the dump file. If *Comment* contains spaces, it must be enclosed in double quotes. When the dump file is loaded, the *Comment* string will be displayed.
 
 <span id="_xc_Address"></span><span id="_xc_address"></span><span id="_XC_ADDRESS"></span>**/xc** *Address*  
@@ -202,7 +202,7 @@ Displays help for this command. This text is different in kernel mode and in use
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -221,9 +221,9 @@ This command can be used in a variety of situations:
 
 You can control what type of dump file will be produced:
 
--   In kernel mode, to produce a [complete memory dump](complete-memory-dump.md), use the **/f** option. To produce a [small memory dump](small-memory-dump.md), use the **/m** option (or no options). The .dump command cannot produce a [kernel memory dump](kernel-memory-dump.md).
+- In kernel mode, to produce a [complete memory dump](complete-memory-dump.md), use the **/f** option. To produce a [small memory dump](small-memory-dump.md), use the **/m** option (or no options). The .dump command cannot produce a [kernel memory dump](kernel-memory-dump.md).
 
--   In user mode, **.dump** **/m\[***MiniOptions***\]** is the best choice. Although "m" stands for "minidump", the dump files created by using this *MiniOption* can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included. For example, **.dump /ma** produces a dump with a great deal of information. The older command, **.dump /f**, produces a moderately large "standard dump" file and cannot be customized.
+- In user mode, **.dump** **/m\[**<em>MiniOptions</em>**\]** is the best choice. Although "m" stands for "minidump", the dump files created by using this *MiniOption* can vary in size from very small to very large. By specifying the proper *MiniOptions* you can control exactly what information is included. For example, **.dump /ma** produces a dump with a great deal of information. The older command, **.dump /f**, produces a moderately large "standard dump" file and cannot be customized.
 
 You cannot specify which process is dumped. All running processes will be dumped.
 
@@ -237,9 +237,9 @@ The following example will create a user-mode minidump, containing full memory a
 
 Handle information can be read by using the [**!handle**](-handle.md) extension command.
 
- 
+ 
 
- 
+ 
 
 
 

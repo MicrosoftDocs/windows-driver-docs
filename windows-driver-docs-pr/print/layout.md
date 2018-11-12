@@ -26,9 +26,9 @@ The Layout property is the parent of the following properties:
 
 [InputBins](inputbins2.md)
 
- 
+ 
 
- 
+ 
 
 
 

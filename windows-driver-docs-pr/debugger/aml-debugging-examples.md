@@ -4,7 +4,7 @@ description: AML Debugging Examples
 ms.assetid: 3a9f760f-f511-412f-aca0-3c415b3e5dc2
 keywords: ["AMLI Debugger, debugging examples"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +29,7 @@ If no contexts are displayed, the error is probably not ACPI-related.
 
 If there are contexts shown, look for the one marked with an asterisk. This is the *current context* (the one that is being executed by the interpreter at the present moment).
 
-In this example, the target computer is running Windows XP or Windows Server 2003 on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
+In this example, the target computer is running Windows on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
 
 You can use the [**!amli u**](-amli-u.md) command to disassemble the \_CRS method as follows:
 
@@ -121,7 +121,7 @@ Running \_WAK method
 Hit Breakpoint 0.
 ```
 
-Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is taken from a Windows 2000 system, so the addresses are shown in 32-bit form:
+Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is showing addresses in 32-bit form:
 
 ```dbgcmd
 kd> !amli ln
@@ -204,9 +204,11 @@ PCI OpRegion Access on region c29b2268 device c29b2120
 Integer(:Value=0x0000000b[11])
 ```
 
- 
+## See Also
 
- 
+ [The AMLI Debugger](the-amli-debugger.md)
+
+ 
 
 
 

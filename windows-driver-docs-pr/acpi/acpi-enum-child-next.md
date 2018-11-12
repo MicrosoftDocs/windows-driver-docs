@@ -19,7 +19,7 @@ Syntax
 
 ```cpp
 void ACPI_ENUM_CHILD_NEXT(
-    Child
+    Child
 );
 ```
 
@@ -68,9 +68,9 @@ Requirements
 
 [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147)
 
- 
+ 
 
- 
+ 
 
 
 

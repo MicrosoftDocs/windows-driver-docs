@@ -29,9 +29,9 @@ The spooler notification mechanism solves the problem that occurs when printing 
 
 [Public Interfaces](public-interfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ Note that the PCMCIA bus driver manages the standard PCMCIA configuration regist
 <a href="" id="operate-a-device"></a>**Operate a device**  
 Some PCMCIA devices use control registers located in attribute memory. Drivers must typically directly access these registers within an ISR. Accesses of this type can be relatively high in frequency, and require fast direct memory access.
 
- 
+ 
 
- 
+ 
 
 
 

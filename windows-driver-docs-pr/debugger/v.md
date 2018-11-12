@@ -17,9 +17,9 @@ In kernel-mode debugging the debugger engine creates a single *virtual process* 
 <span id="virtual_thread"></span><span id="VIRTUAL_THREAD"></span>**virtual thread**  
 In kernel-mode debugging the debugger engine creates a *virtual thread* for each processor in the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

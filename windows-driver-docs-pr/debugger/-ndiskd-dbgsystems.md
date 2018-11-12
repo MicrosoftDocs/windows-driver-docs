@@ -46,7 +46,7 @@ If you click on the link at the bottom of the warning, !ndiskd will give you mor
     !wmitrace.enable ndis {DD7A21E6-A651-46D4-B7C2-66543067B869} -level 4 -flag 0x31f3
 ```
 
- 
+ 
 
 For more information about WPP, see [WPP Software Tracing](https://msdn.microsoft.com/windows/hardware/drivers/devtest/wpp-software-tracing).
 
@@ -159,7 +159,7 @@ If multiple components are selected, separate them with spaces. If a previously-
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -191,9 +191,9 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [WMI Tracing Extensions (Wmitrace.dll)](https://msdn.microsoft.com/library/windows/hardware/ff561362)
 
- 
+ 
 
- 
+ 
 
 
 

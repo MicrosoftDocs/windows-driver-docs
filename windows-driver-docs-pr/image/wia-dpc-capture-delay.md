@@ -61,9 +61,9 @@ Requirements
 
 [**WIA\_DPC\_TIMELAPSE\_INTERVAL**](wia-dpc-timelapse-interval.md)
 
- 
+ 
 
- 
+ 
 
 
 

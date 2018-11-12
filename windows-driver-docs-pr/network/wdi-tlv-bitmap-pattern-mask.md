@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the byte array of the pattern mask. The mask must have 1 bit per pattern byte, therefore the mask length should equal (pattern length + 7) / 8. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

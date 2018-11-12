@@ -21,7 +21,7 @@ The **/dbgsettings** option sets or displays the current global debugger setting
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 
 ``` syntax
 bcdedit /dbgsettings SERIAL [DEBUGPORT:port] [BAUDRATE:baud] [/start startpolicy] [/noumex] 
@@ -60,23 +60,23 @@ For information on setting up local kernel mode debugging manually, see [Setting
 
 The LOCAL option is available in Windows 8.0 and Windows Server 2012 and later.
 
-**BAUDRATE:***baud*   
+**BAUDRATE:**<em>baud</em>   
 (Only used when the connection type is **SERIAL**.) Specifies the baud rate to use. This parameter is optional. Valid values for *baud* are 9600, 19200, 38400, 57600, and 115200. The default baud rate is 115200 bps.
 
 > [!NOTE]
 > If the Windows Special Administration Console (SAC) application is running on a target machine that is configured for kernel mode debug through a serial port, the SAC application may cause the debugger connection to drop. This event occurs because the COM port baud value changes after the debugger connection is established. Either close the SAC application before running the debugger or change the debugger COM port baud value to 9600.
 
- 
-**CHANNEL:***channel*   
+ 
+**CHANNEL:**<em>channel</em>   
 (Only used when the connection type is **1394**.) Specifies the 1394 channel to use. The value for *channel* must be a decimal integer between 0 and 62, inclusive, and must match the channel number used by the host computer. The channel specified in this parameter does not depend on the physical 1394 port chosen on the adapter. The default value for *channel* is 0.
 
-**DEBUGPORT:***port*   
+**DEBUGPORT:**<em>port</em>   
 (Only used when the connection type is **SERIAL**.) Specifies the serial port to use as the debugging port. This is an optional setting. The default port is **1** (COM 1).
 
-**HOSTIP:***ip*   
+**HOSTIP:**<em>ip</em>   
 (Only used when the connection type is **NET**.) For network debugging, specifies the IPv4 address of the host debugger.
 
-**KEY:***key*   
+**KEY:**<em>key</em>   
 For network debugging, specifies the key with which to encrypt the connection. \[0-9\] and \[a-z\] allowed only. Do not specify this parameter if you have specified the **newkey** parameter.
 
 **newkey**   
@@ -121,7 +121,7 @@ This option specifies the debugger start policy. The following table shows the o
 </tbody>
 </table>
 
- 
+ 
 
 If a start policy is not specified, ACTIVE is the default.
 
@@ -161,7 +161,7 @@ The default values for the global settings are serial communications using COM1,
 </tbody>
 </table>
 
- 
+ 
 
 For information about Windows debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063). For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](https://msdn.microsoft.com/library/windows/hardware/hh439378).
 
@@ -198,7 +198,7 @@ See also
 [Setting Up Kernel-Mode Debugging Manually](https://msdn.microsoft.com/library/windows/hardware/hh439378)
 
 
- 
+ 
 
 
 

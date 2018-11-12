@@ -139,9 +139,9 @@ Requirements
 
 [**HS\_PLUGIN\_DEINIT**](hs-plugin-deinit.md)
 
- 
+ 
 
- 
+ 
 
 
 

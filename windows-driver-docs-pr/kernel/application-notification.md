@@ -21,9 +21,9 @@ This section includes the following topics:
 
 [Processing an Application Notification](processing-an-application-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

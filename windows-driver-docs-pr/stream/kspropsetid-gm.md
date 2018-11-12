@@ -24,9 +24,9 @@ This section contains the following topics:
 
 [**KSPROPERTY\_GM\_RENDER\_CLOCK**](ksproperty-gm-render-clock.md)
 
- 
+ 
 
- 
+ 
 
 
 

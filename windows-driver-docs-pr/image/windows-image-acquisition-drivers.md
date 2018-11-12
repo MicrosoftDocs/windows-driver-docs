@@ -31,4 +31,4 @@ This section contains the following topics:
 
 [Installing a WIA Minidriver](installing-a-wia-minidriver.md)
 
- 
+ 

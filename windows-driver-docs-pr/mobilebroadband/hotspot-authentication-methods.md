@@ -22,9 +22,9 @@ The topics in this section include the following:
 
 [Integrating Windows with wireless hotspots](integrating-windows-with-wireless-hotspots.md)
 
- 
+ 
 
- 
+ 
 
 
 

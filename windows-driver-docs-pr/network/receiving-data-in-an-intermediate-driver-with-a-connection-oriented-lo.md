@@ -21,9 +21,9 @@ An underlying connection-oriented miniport driver indicates network data by call
 
 For more information about receiving data in an intermediate driver with a connection-oriented lower edge, see [Connection-Oriented Operations](connection-oriented-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

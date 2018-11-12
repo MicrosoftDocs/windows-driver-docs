@@ -17,9 +17,9 @@ PortCls can now use a new power management interface to generate a new D3 exit l
 
 For more information about the new power management interface, see [**IAdapterPowerManagement3**](https://msdn.microsoft.com/library/windows/hardware/jj200330)
 
- 
+ 
 
- 
+ 
 
 
 

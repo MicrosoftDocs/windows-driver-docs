@@ -22,9 +22,9 @@ The PnP manager calls the [*AddDevice*](https://msdn.microsoft.com/library/windo
 
 For information about a storage class driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, see [Storage Class Drivers](storage-class-drivers.md). For general information about a PnP driver's *AddDevice* routine, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
 

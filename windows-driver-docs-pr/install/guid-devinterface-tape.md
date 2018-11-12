@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_TAPE [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Requirements
 
 [**TapeClassGuid**](tapeclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

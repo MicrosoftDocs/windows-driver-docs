@@ -30,9 +30,9 @@ The operation region memory buffer must comply with the following:
 
 For detailed information about constraints on operation regions, see the [Advanced Configuration and Power Interface Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
 
- 
+ 
 
- 
+ 
 
 
 

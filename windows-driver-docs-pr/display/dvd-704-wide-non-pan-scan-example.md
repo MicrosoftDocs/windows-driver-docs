@@ -39,9 +39,9 @@ In the second case, the rectangle indicated by the **GraphicDestinationRect** me
 
 The second of these two alternatives creates only the destination area that is used for the display.
 
- 
+ 
 
- 
+ 
 
 
 

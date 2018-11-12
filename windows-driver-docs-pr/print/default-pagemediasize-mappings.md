@@ -90,7 +90,7 @@ This section shows the default mappings between the PageMediaSize option of the 
 | PrintTicket NorthAmericaTabloid               | GPD TABLOID                 |
 | PrintTicket NorthAmericaTabloidExtra          | GPD TABLOID\_EXTRA          |
 
- 
+ 
 
 ## Related topics
 [Standard XPS Filters](standard-xps-filters.md)  

@@ -26,9 +26,9 @@ By calling these routines, an application or driver can most efficiently obtain 
 
 An application or driver uses the data indices specified in a collection's [button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) to identify HID usages.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -80,9 +80,9 @@ Because the gate count is one, the And gate is open. In this case, investigate t
 
 -   The data availability case is missing a [KsPinAttemptProcessing](https://go.microsoft.com/fwlink/p/?linkid=56545) call.
 
- 
+ 
 
- 
+ 
 
 
 

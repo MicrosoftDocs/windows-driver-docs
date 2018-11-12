@@ -33,9 +33,9 @@ The client accepts the proposed modifications to the call parameters for the VC 
 
 After **ProtocolClIncomingCallQoS** returns, the call manager or MCM driver communicates the client's acceptance or rejection of the proposed change to the remote party that originated the request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ GDL uses the following types of directives:
 
 [Miscellaneous](miscellaneous-gdl-directives.md)
 
- 
+ 
 
- 
+ 
 
 
 

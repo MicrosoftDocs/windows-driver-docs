@@ -36,9 +36,9 @@ When the *HwScsiInterrupt* routine (or an internal miniport driver routine) comp
 
 For better overall system performance, a miniport driver's *HwScsiInterrupt* routine should do only the minimum necessary to process I/O requests. That is, the miniport driver should be designed to return control from the *HwScsiInterrupt* routine as quickly as possible. An *HwScsiInterrupt* routine must not call [**ScsiPortStallExecution**](https://msdn.microsoft.com/library/windows/hardware/ff564757) with large intervals, thereby monopolizing a processor and preventing other drivers from servicing their device interrupts.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|----------------------------------------------------------------|
 | UINT8\[\] | A Fast Transition Element that contains the R0KHID and SNonce. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

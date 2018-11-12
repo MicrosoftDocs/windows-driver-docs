@@ -105,7 +105,7 @@ The standard features are identified by predefined names that the PPD language r
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Pscript Minidrivers](pscript-minidrivers.md)  

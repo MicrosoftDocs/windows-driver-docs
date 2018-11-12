@@ -80,9 +80,9 @@ The right mouse button has several effects that can make copying and pasting muc
 
 -   If you put the cursor in any box and then press the right mouse button, a menu with **Undo**, **Cut**, **Copy**, **Paste**, and **Select All** options appears. You can choose any of these options.
 
- 
+ 
 
- 
+ 
 
 
 

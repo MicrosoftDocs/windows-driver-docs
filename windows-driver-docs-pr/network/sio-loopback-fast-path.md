@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Important**  The **SIO\_LOOPBACK\_FAST\_PATH** is deprecated and is not recommended to be used in your code.
 
- 
+ 
 
 The **SIO\_LOOPBACK\_FAST\_PATH** socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
 
@@ -71,7 +71,7 @@ To use this IOCTL, a WSK application calls the [**WskControlSocket**](https://ms
 </tbody>
 </table>
 
- 
+ 
 
 An application can use the **SIO\_LOOPBACK\_FAST\_PATH** IOCTL to improve the performance of loopback operations on a TCP socket. This IOCTL requests that the TCP/IP stack use a special fast path for loopback operations on this socket. The **SIO\_LOOPBACK\_FAST\_PATH** IOCTL can be used only with TCP sockets. This IOCTL must be used on both sides of the loopback session. The TCP loopback fast path is supported using either the IPv4 or IPv6 loopback interface.
 
@@ -145,9 +145,9 @@ Requirements
 
 [Using IRPs with Winsock Kernel Functions](https://msdn.microsoft.com/library/windows/hardware/ff571006)
 
- 
+ 
 
- 
+ 
 
 
 

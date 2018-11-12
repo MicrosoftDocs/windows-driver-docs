@@ -68,7 +68,7 @@ DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &IPAddressV6);
 
 **Note**  You can create a complex type (MACADDR) for tracing fixed-length media access control (MAC) addresses. This complex type can be specified by following the procedure that was used for the IPV6ADDDR complex type.
 
- 
+ 
 
 ## Trace variable-length strings through custom WPP extended format specification strings
 
@@ -147,7 +147,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
 
     **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) through the LOG\_LENSTR macro.
 
-     
+     
 
 In Visual Studio, open the properties page for your project. Under **WPP Tracing**, **File Options**, specify LocalWpp.ini as the **Additional Configuration file**. See [WPP Preprocessor](wpp-preprocessor.md) for more information.
 

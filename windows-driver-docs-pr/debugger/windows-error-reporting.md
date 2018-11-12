@@ -14,9 +14,9 @@ Windows Error Reporting (WER) is included in Windows Vista and later versions of
 
 WER replaced Dr. Watson, which was included in Windows XP.
 
- 
+ 
 
- 
+ 
 
 
 

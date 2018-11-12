@@ -34,9 +34,9 @@ Video capture minidrivers may optionally implement the following properties:
 
 There is no DirectShow interface that provides access to this property set.
 
- 
+ 
 
- 
+ 
 
 
 

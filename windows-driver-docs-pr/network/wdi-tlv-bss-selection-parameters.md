@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------------------------------------------------------|
 | UINT32 | [**WDI\_BSS\_SELECTION\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/mt297629) that are used by the host for BSS selection. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

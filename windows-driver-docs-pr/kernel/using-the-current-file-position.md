@@ -24,9 +24,9 @@ To create a handle that has an associated current file-position pointer, specify
 
 You can examine or change the current file position by calling [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052) or [**ZwSetInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567096), respectively. In either case, set the *FileInformationClass* parameter to **FilePositionInformation**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_EXTXPORT\_TIMECODE\_SEARCH property searches to a specific timec
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_EXTXPORT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565167)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565167" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565167)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
 <td><p>Embedded <strong>TIMECODE</strong> structure</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is an embedded **TIMECODE** structure member of the KSPROPERTY\_EXTXPORT\_S structure that describes the specific timecode to search to, including frame, second, minute and hour.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_EXTXPORT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565167)
 
- 
+ 
 
- 
+ 
 
 
 

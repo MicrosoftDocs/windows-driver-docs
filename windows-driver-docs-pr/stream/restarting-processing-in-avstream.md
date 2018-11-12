@@ -30,9 +30,9 @@ AVStream initiates processing when new data arrives into a previously empty queu
 
 Do not return STATUS\_SUCCESS from the processing dispatch if the minidriver does not actually process data. This causes AVStream to immediately call the minidriver again, resulting in an infinite loop between AVStream and the processing dispatch.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,9 +54,9 @@ Tab-dock every window type above the wanted placeholder window.
 
 For further information about adjusting window position in WinDbg, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

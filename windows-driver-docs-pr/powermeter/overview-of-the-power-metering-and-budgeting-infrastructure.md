@@ -58,9 +58,9 @@ The ACPI 4.0 Power Metering objects are modeled after the ACPI Control Method ba
 
 For more information, see [ACPI Power Meter Interface](acpi-power-meter-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

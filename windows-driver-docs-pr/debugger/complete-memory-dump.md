@@ -29,9 +29,9 @@ If a second bug check occurs and another Complete Memory Dump (or Kernel Memory 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

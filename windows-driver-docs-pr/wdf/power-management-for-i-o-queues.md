@@ -56,9 +56,9 @@ For more information about power-managed I/O queues, see [Using Power-Managed I/
 
 A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use *self-managed I/O*. For more information, see [Using Self-Managed I/O](using-self-managed-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

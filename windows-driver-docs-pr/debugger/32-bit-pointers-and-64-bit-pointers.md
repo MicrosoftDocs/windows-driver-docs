@@ -4,7 +4,7 @@ description: 32-Bit Pointers and 64-Bit Pointers
 ms.assetid: 641443b9-465f-4c7e-a13d-47a991304b46
 keywords: ["WdbgExts extensions, 32-bit pointers", "WdbgExts extensions, 64-bit pointers"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/02/2018
 ms.localizationpriority: medium
 ---
 
@@ -28,10 +28,13 @@ If you intend to use your extension only on 32-bit platforms, you can write a 32
 ```cpp
 #include wdbgexts.h 
 ```
+For additional information on working with the 64 bit pointers see [Using the DECLARE_API Macro](using-the-declare-api-macro.md) and [Writing WdbgExts Extension Code](writing-wdbgexts-extension-code.md). In addition, examine the sample code that is included as part of the WDK.
 
- 
 
- 
+
+ 
+
+ 
 
 
 

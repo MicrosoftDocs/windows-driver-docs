@@ -28,23 +28,23 @@ Hardware buttons let users perform many common tasks that do not have a convenie
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Button behavior](button-behavior.md)</p></td>
+<td align="left"><p><a href="button-behavior.md" data-raw-source="[Button behavior](button-behavior.md)">Button behavior</a></p></td>
 <td align="left"><p>This topic describes the expected behavior of hardware buttons.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Button reporting](button-reporting.md)</p></td>
+<td align="left"><p><a href="button-reporting.md" data-raw-source="[Button reporting](button-reporting.md)">Button reporting</a></p></td>
 <td align="left"><p>The in-box general-purpose I/O (GPIO) button driver reports to Windows, based on the interrupts that are received on the defined GPIO resources of the button array.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 See also [Button implementation](button-implementation.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,41 +32,41 @@ For your driver to use the following **CPixel** class methods, you must include 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeSurfaceSize</strong>](cpixel-computesurfacesize.md)</p></td>
+<td align="left"><p><a href="cpixel-computesurfacesize.md" data-raw-source="[&lt;strong&gt;ComputeSurfaceSize&lt;/strong&gt;](cpixel-computesurfacesize.md)"><strong>ComputeSurfaceSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeVolumeSize</strong>](cpixel-computevolumesize.md)</p></td>
+<td align="left"><p><a href="cpixel-computevolumesize.md" data-raw-source="[&lt;strong&gt;ComputeVolumeSize&lt;/strong&gt;](cpixel-computevolumesize.md)"><strong>ComputeVolumeSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a volume.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeMipMapSize</strong>](cpixel-computemipmapsize.md)</p></td>
+<td align="left"><p><a href="cpixel-computemipmapsize.md" data-raw-source="[&lt;strong&gt;ComputeMipMapSize&lt;/strong&gt;](cpixel-computemipmapsize.md)"><strong>ComputeMipMapSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a MIP-map texture.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeMipVolumeSize</strong>](cpixel-computemipvolumesize.md)</p></td>
+<td align="left"><p><a href="cpixel-computemipvolumesize.md" data-raw-source="[&lt;strong&gt;ComputeMipVolumeSize&lt;/strong&gt;](cpixel-computemipvolumesize.md)"><strong>ComputeMipVolumeSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a MIP-map texture volume.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeMipMapOffset</strong>](cpixel-computemipmapoffset.md)</p></td>
+<td align="left"><p><a href="cpixel-computemipmapoffset.md" data-raw-source="[&lt;strong&gt;ComputeMipMapOffset&lt;/strong&gt;](cpixel-computemipmapoffset.md)"><strong>ComputeMipMapOffset</strong></a></p></td>
 <td align="left"><p>Determines the sublevel offset of a MIP-map texture.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeMipVolumeOffset</strong>](cpixel-computemipvolumeoffset.md)</p></td>
+<td align="left"><p><a href="cpixel-computemipvolumeoffset.md" data-raw-source="[&lt;strong&gt;ComputeMipVolumeOffset&lt;/strong&gt;](cpixel-computemipvolumeoffset.md)"><strong>ComputeMipVolumeOffset</strong></a></p></td>
 <td align="left"><p>Determines the subvolume offset of a MIP-map volume texture.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeSurfaceOffset</strong>](cpixel-computesurfaceoffset.md)</p></td>
+<td align="left"><p><a href="cpixel-computesurfaceoffset.md" data-raw-source="[&lt;strong&gt;ComputeSurfaceOffset&lt;/strong&gt;](cpixel-computesurfaceoffset.md)"><strong>ComputeSurfaceOffset</strong></a></p></td>
 <td align="left"><p>Determines the subrectangular offset of a surface.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

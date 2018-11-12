@@ -18,7 +18,7 @@ OID\_WDI\_GET\_BSS\_ENTRY\_LIST is used to ask the adapter to indicate the list 
 |-------|--------------------------|---------------------------------|
 | Port  | Set not supported        | 1                               |
 
- 
+ 
 
 This is only used for an adapter that perform BSS list caching. When acting as a client, the port must report the BSS entry for the access point. In addition, if the port is performing background scans, it should report BSS entries that it has discovered in its scan.
 
@@ -33,7 +33,7 @@ The Microsoft component uses the list of indicated entries to report the BSS lis
 |---------------------------------------------|--------------------------------|----------|-------------------------------------------------------|
 | [**WDI\_TLV\_SSID**](https://msdn.microsoft.com/library/windows/hardware/dn898064) |                                |          | The SSID that the host needs the BSS list update for. |
 
- 
+ 
 
 ## Get property results
 
@@ -67,9 +67,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

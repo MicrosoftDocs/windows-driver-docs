@@ -19,11 +19,11 @@ ms.localizationpriority: medium
 
 **Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
- 
+ 
 
 **Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/troubleshoot-blue-screen-or-stop-error-problems-before-you-contact-microsoft-support).
 
- 
+ 
 
 When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a *bug check*. It is also commonly referred to as a *system crash*, a *kernel error*, or a *stop error*.
 
@@ -166,9 +166,9 @@ Safe Mode may be available by pressing a function key on boot, for example F8. R
 
 To deliberately cause a bug check from a kernel-mode driver, you need to pass the bug check's symbolic name to the **KeBugCheck** or **KeBugCheckEx** function. This should only be done in circumstances where no other option is available. For more details on these functions, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

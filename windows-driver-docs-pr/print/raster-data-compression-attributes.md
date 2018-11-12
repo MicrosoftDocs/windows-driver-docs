@@ -20,9 +20,9 @@ There are no attributes associated with raster data compression.
 
 For information about commands associated with raster data compression, see [Raster Data Compression Commands](raster-data-compression-commands.md).
 
- 
+ 
 
- 
+ 
 
 
 

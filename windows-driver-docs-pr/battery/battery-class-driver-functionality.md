@@ -32,9 +32,9 @@ The battery class driver takes care of the following tasks for miniclass drivers
 
 See [Battery Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff536286) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
 
- 
+ 
 
- 
+ 
 
 
 

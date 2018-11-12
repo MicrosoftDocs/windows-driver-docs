@@ -36,15 +36,15 @@ The **Enable silent process exit monitoring** flag enables silent exit monitorin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 For more information about monitoring a process for silent exit, see [Monitoring Silent Process Exit](registry-entries-for-silent-process-exit.md).
 
- 
+ 
 
- 
+ 
 
 
 

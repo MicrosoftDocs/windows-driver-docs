@@ -26,9 +26,9 @@ Your MUX intermediate driver should use the **UpperRange**/**LowerRange** entrie
 
 Your notify object can optionally provide a user interface that allows the user to change or view your driver's configuration. The MUX intermediate driver sample includes an example user interface for a notify object.
 
- 
+ 
 
- 
+ 
 
 
 

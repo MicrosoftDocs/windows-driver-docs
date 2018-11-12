@@ -21,9 +21,9 @@ This section introduces the concepts and components of the DirectInput control p
 
 [Testing Your Property Sheet](testing-your-property-sheet.md)
 
- 
+ 
 
- 
+ 
 
 
 

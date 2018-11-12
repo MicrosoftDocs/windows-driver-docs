@@ -46,7 +46,7 @@ This directory contains the following files, for x86 and x64:
 ## Co-installer Naming and Versioning
 
 
-The co-installer is named **WdfCoInstaller***MMmmm***.dll**.
+The co-installer is named **WdfCoInstaller**<em>MMmmm</em>**.dll**.
 
 -   *MM* is the major version number.
 -   *mmm* is the minor version number.
@@ -57,9 +57,9 @@ The version of the co-installer that you include with your driver package must m
 
 Note that the framework library's file name includes only the major version number. For more information about library file names, see [Framework Library Versioning](framework-library-versioning.md).
 
- 
+ 
 
- 
+ 
 
 
 

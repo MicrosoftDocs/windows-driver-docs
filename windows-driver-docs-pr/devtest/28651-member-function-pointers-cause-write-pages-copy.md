@@ -53,12 +53,11 @@ const StructType MyStruct[] = {
     &MyClass::memberFuncWrap,
     ...
 };  
-
 ```
 
- 
 
- 
+
+
 
 
 

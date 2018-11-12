@@ -31,9 +31,9 @@ For more information about initializing the protocol lower edge of an intermedia
 
 For more information about NDIS 6.0 intermediate driver initialization, see [Initializing an Intermediate Driver](initializing-an-intermediate-driver.md) and [Initializing a Miniport-Intermediate Driver](initializing-a-miniport-intermediate-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

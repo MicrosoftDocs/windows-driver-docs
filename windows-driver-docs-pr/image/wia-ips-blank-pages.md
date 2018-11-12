@@ -56,12 +56,12 @@ The following table describes the valid values for the **WIA\_IPS\_BLANK\_PAGES*
 </tr>
 <tr class="odd">
 <td><p>WIA_BLANK_PAGE_JOB_SEPARATOR</p></td>
-<td><p>The device detects blank pages and acts as configured through the [<strong>WIA_IPS_JOB_SEPARATORS</strong>](wia-ips-job-separators.md) property. This value is valid only when the Feeder item supports the <strong>WIA_IPS_JOB_SEPARATORS</strong> property.</p></td>
+<td><p>The device detects blank pages and acts as configured through the <a href="wia-ips-job-separators.md" data-raw-source="[&lt;strong&gt;WIA_IPS_JOB_SEPARATORS&lt;/strong&gt;](wia-ips-job-separators.md)"><strong>WIA_IPS_JOB_SEPARATORS</strong></a> property. This value is valid only when the Feeder item supports the <strong>WIA_IPS_JOB_SEPARATORS</strong> property.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
@@ -81,9 +81,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

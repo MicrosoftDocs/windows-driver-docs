@@ -20,9 +20,9 @@ A driver should be ready for [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/li
 
 For example, suppose a driver creates overall control device objects in [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113), and then creates another set of device objects in its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. Suppose the *AddDevice* routine initializes the device extension with information about lower-level drivers, but the control device objects do not contain this information. In this case, all dispatch routines must be careful to check each device object that they receive. Otherwise, the driver might crash when trying to use device extension information.
 
- 
+ 
 
- 
+ 
 
 
 

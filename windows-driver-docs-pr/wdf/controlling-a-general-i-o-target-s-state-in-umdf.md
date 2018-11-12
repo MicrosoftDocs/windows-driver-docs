@@ -73,9 +73,9 @@ Informs the driver that an attempt to remove a remote I/O target's device has be
 
 Drivers can call [**IWDFRemoteTarget::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff560265) to obtain the current state of a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

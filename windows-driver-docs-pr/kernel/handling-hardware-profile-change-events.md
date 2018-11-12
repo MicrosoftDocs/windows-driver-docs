@@ -28,9 +28,9 @@ For a GUID\_HWPROFILE\_CHANGE\_COMPLETE event the PnP manager calls kernel-mode 
 
 For a GUID\_HWPROFILE\_CHANGE\_CANCELLED event the PnP manager calls kernel-mode callback routines and then user-mode routines. In response to such an event, a driver's callback routine typically just returns STATUS\_SUCCESS. If the driver performed any operations in response to the GUID\_HWPROFILE\_QUERY\_CHANGE event, the driver would undo those operations in response to the cancellation event.
 
- 
+ 
 
- 
+ 
 
 
 

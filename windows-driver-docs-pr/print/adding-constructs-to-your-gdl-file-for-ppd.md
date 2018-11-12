@@ -30,9 +30,9 @@ The following examples show how to add the appropriate constructs to your GDL fi
 
 [Autodetect the Printer's Hard Drive for PPD](autodetect-the-printer-s-hard-drive-for-ppd.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ However, only a specific display-and-miniport driver pair can use privately defi
 
 For more information about defining private I/O control codes, see [Using I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff565406).
 
- 
+ 
 
- 
+ 
 
 
 

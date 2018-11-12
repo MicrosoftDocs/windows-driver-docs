@@ -24,9 +24,9 @@ To address the more complex requirements of high performance buses, Storport imp
 
 Finally, the bus reset operation is effected through a synchronous callback routine, [**HwStorResetBus**](https://msdn.microsoft.com/library/windows/hardware/ff557415).
 
- 
+ 
 
- 
+ 
 
 
 

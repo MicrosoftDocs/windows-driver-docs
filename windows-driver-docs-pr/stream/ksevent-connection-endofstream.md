@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_ENDOFSTREAM** event allows a client to receive notification of an end of stream event. This event occurs when a standard streaming header is used, when a buffer whose header has the KSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM variable completes processing. *Rendering* points must support this event so the end of stream event can be detected by the client.
 
- 
+ 
 
- 
+ 
 
 
 

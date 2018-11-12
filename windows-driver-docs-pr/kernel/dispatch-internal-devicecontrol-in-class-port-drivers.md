@@ -32,9 +32,9 @@ For a closely coupled pair of port/class drivers, the class driver might handle 
 
 SCSI class drivers have special requirements for handling device control requests. For more information about these requirements, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976).
 
- 
+ 
 
- 
+ 
 
 
 

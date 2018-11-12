@@ -21,9 +21,9 @@ The *HwStorBuildIo* routine should translate the SRB to a more convenient data s
 
 To achieve maximum performance, the *HwStorBuildIo* routine should be used in conjunction with the full-duplex mode.
 
- 
+ 
 
- 
+ 
 
 
 

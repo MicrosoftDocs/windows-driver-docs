@@ -22,7 +22,7 @@ The Windows driver print samples on GitHub include several examples of GPD files
 -   [XPSDrv driver and filter sample](http://go.microsoft.com/fwlink/p/?LinkId=617950)
 
 
- 
+ 
 
 
 

@@ -58,9 +58,9 @@ For more information about the power policy owner's responsibilities, see the fo
 
 -   [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

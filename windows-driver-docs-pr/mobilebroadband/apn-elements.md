@@ -27,9 +27,9 @@ This section describes the XML elements defined by the [APN XML schema](apn-xml-
 
         -   [TrustedCertificate](trustedcertificate-apnxml.md)
 
- 
+ 
 
- 
+ 
 
 
 

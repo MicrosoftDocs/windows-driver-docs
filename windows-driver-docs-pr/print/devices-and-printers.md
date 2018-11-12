@@ -20,9 +20,9 @@ The following screen shot shows a Devices and Printers view and Device Stage.
 
 ![screen shot illustrating devices and printers view and device stage](images/devicestage003.png)
 
- 
+ 
 
- 
+ 
 
 
 

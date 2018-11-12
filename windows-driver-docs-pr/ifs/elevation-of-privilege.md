@@ -30,9 +30,9 @@ For file systems and file system filter drivers, the possibility of an elevation
 
 This type of exploit is most important for those implementing file systems. This exploit can be an issue to file system filter drivers that are actively managing data storage (encryption filters, for example) that might circumvent or bypass normal file system security operations.
 
- 
+ 
 
- 
+ 
 
 
 

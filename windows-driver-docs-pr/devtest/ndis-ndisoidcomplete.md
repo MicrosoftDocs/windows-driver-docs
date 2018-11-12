@@ -56,7 +56,7 @@ The miniport driver must complete the OID request operations with the allowable 
 </tbody>
 </table>
 
- 
+ 
 
 A miniport driver must not call the [**NdisMOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622) function with the final status of the request operation as NDIS\_STATUS\_PENDING.
 
@@ -94,7 +94,7 @@ A miniport driver must not call the [**NdisMOidRequestComplete**](https://msdn.m
 </tbody>
 </table>
 
- 
+ 
 
 |              |      |
 |--------------|------|
@@ -118,12 +118,12 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128) option. This rule is also tested with the [DDI compliance checking](https://msdn.microsoft.com/library/windows/hardware/hh454208) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/dn312128" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128)">NDIS/WIFI verification</a> option. This rule is also tested with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh454208" data-raw-source="[DDI compliance checking](https://msdn.microsoft.com/library/windows/hardware/hh454208)">DDI compliance checking</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
@@ -131,9 +131,9 @@ Applies to
 [**MiniportDevicePnPEventNotify**](https://msdn.microsoft.com/library/windows/hardware/ff559369)
 [**MiniportOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559416)
 [**NdisMOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622)
- 
+ 
 
- 
+ 
 
 
 

@@ -50,9 +50,9 @@ If a GPD file does not include empty \*Feature and \*Option entries specifying t
 
 Including empty \*Feature and \*Option entries to explicitly specify display order is recommended over allowing the parser to create the order.
 
- 
+ 
 
- 
+ 
 
 
 

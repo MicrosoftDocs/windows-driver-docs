@@ -20,7 +20,7 @@ The following table shows each of the supported enumeration commands, together w
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT  | OnFindNext  | Returns an object identifier for the requested object.                     |
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND   | OnEndFind   | Performs necessary cleanup when the enumeration is complete.               |
 
- 
+ 
 
 For the sample driver, the code intact for the WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND handler is almost identical to the code that is found in the WpdHellowWorldDriver sample. However, we modified a portion of the code for the WPD\_COMMAND\_OBJECT\_ ENUMERATION\_START\_FIND and the WPD\_OBJECT\_ENUMERATION\_FIND\_NEXT handlers to support service-level access.
 
@@ -86,9 +86,9 @@ The following code example shows the **FakeDevice::FindNext** method calling the
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

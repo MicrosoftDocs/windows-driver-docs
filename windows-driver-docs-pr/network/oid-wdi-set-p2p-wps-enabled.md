@@ -18,7 +18,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +27,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 |---------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
 | [**WDI\_TLV\_P2P\_WPS\_ENABLED**](https://msdn.microsoft.com/library/windows/hardware/dn898018) |                                |          | Specifies whether to enable or disable WPS. |
 
- 
+ 
 
 ## Set property results
 
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

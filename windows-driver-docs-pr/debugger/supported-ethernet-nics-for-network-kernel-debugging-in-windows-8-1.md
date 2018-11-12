@@ -16,7 +16,7 @@ During kernel debugging, the computer that runs the debugger is called the *host
 
 **Note**  Support for kernel debugging over selected 10 gigabit network adapters is a new feature in Windows 8.1. Debugging over 10 gigabit network adapters is not supported in Windows 8. For a list of network adapters supported by Windows 8 for kernel debugging, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md).
 
- 
+ 
 
 ## <span id="System_Requirements"></span><span id="system_requirements"></span><span id="SYSTEM_REQUIREMENTS"></span>System Requirements
 
@@ -397,9 +397,9 @@ For vendor ID 15B3, these device IDs are supported:
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

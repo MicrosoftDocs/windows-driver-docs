@@ -42,9 +42,9 @@ The structure **USB\_CONFIG\_DESCRIPTOR** is defined in UEFI specification 2.3. 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

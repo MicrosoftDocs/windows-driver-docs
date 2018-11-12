@@ -37,9 +37,9 @@ An NDIS driver that provides the NDISIF provider services for interfaces that th
 
 The NDIS proxy interface provider uses the standard NDIS miniport driver and NDIS filter driver interfaces to provide NDISIF services for miniport adapters and filter modules. Therefore, miniport drivers and filter drivers are not required to provide any additional support for NDISIF.
 
- 
+ 
 
- 
+ 
 
 
 

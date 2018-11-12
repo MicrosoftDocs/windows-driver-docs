@@ -33,9 +33,9 @@ Through the XPS spool file, the XPS print path delivers this advanced color info
 
 -   Improved communication of color capabilities and settings. Applications can control color processing by enabling or disabling system color management in the new print path. Drivers can more completely express color capabilities of their devices.
 
- 
+ 
 
- 
+ 
 
 
 

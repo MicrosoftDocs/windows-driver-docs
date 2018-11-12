@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                               | Specifies if live updates are needed and discovered entries must be reported when they are found, with the recommended throttling logic above. This value is always true when the Microsoft component manages the BSS list cache. |
 | [**WDI\_SCAN\_TRIGGER**](https://msdn.microsoft.com/library/windows/hardware/dn926114) | Specifies the trigger for the scan.                                                                                                                                                                                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

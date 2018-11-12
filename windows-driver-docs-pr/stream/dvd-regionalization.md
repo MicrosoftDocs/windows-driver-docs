@@ -22,9 +22,9 @@ If the decoder is limited to a certain region (by hardware or other consideratio
 
 If the decoder provides a region, the system region change application still functions. It changes the system region in case there are other decoders in the system. Note that Windows DVD playback only functions if the system region and the decoder region match.
 
- 
+ 
 
- 
+ 
 
 
 

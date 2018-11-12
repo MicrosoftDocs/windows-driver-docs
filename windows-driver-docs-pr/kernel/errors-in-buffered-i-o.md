@@ -22,9 +22,9 @@ The following topics describe some common problems that occur in drivers that pe
 
 [Failure to Validate Variable-length Buffers](failure-to-validate-variable-length-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ This document presents several examples of data ranges that use the KSDATARANGE\
 
 -   For example declarations of data ranges for non-PCM formats, see [Specifying AC-3 Data Ranges](specifying-ac-3-data-ranges.md) and [Specifying WMA Pro Data Ranges](specifying-wma-pro-data-ranges.md).
 
- 
+ 
 
- 
+ 
 
 
 

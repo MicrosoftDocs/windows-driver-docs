@@ -54,7 +54,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to deint
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in [<strong>DXVA_SampleFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564045)</p></td>
+<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564045)"><strong>DXVA_SampleFormat</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -79,7 +79,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to deint
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Deinterlacing_and_Frame-Rate_Conversion_of_720_x_480i_Content_Example"></span><span id="deinterlacing_and_frame-rate_conversion_of_720_x_480i_content_example"></span><span id="DEINTERLACING_AND_FRAME-RATE_CONVERSION_OF_720_X_480I_CONTENT_EXAMPLE"></span>Deinterlacing and Frame-Rate Conversion of 720 x 480i Content Example
 
@@ -108,7 +108,7 @@ The **OutputFrameFreq** member of the DXVA\_VideoDesc structure is filled as fol
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Deinterlacing_a_Single_Field_to_a_Progressive_Frame_Example"></span><span id="deinterlacing_a_single_field_to_a_progressive_frame_example"></span><span id="DEINTERLACING_A_SINGLE_FIELD_TO_A_PROGRESSIVE_FRAME_EXAMPLE"></span>Deinterlacing a Single Field to a Progressive Frame Example
 
@@ -137,7 +137,7 @@ The **OutputFrameFreq** member of the DXVA\_VideoDesc structure is filled as fol
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Frame-Rate_Conversion_of__480p_Content_Example"></span><span id="frame-rate_conversion_of__480p_content_example"></span><span id="FRAME-RATE_CONVERSION_OF__480P_CONTENT_EXAMPLE"></span>Frame-Rate Conversion of 480p Content Example
 
@@ -165,7 +165,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the [<strong>DXVA_SampleFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564045) enumeration</p></td>
+<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564045)"><strong>DXVA_SampleFormat</strong></a> enumeration</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -190,11 +190,11 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

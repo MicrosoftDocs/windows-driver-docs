@@ -75,9 +75,9 @@ Replace the preprocessor definition NDIS51 with NDIS60.
 <a href="" id="binding-states"></a>**Binding States**  
 -   Include NDIS 6.0 protocol binding pause and restart functionality. For more information about binding states, see [Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations](supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

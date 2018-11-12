@@ -48,9 +48,9 @@ This new interface is used when a camera device has been removed from the system
 -   [**KSEVENT\_DEVICE\_LOST**](https://msdn.microsoft.com/library/windows/hardware/jj156039)
 -   [**KSEVENT\_DEVICE\_PREEMPTED**](https://msdn.microsoft.com/library/windows/hardware/jj156040)
 
- 
+ 
 
- 
+ 
 
 
 

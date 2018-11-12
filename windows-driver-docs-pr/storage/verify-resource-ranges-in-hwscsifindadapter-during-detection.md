@@ -24,9 +24,9 @@ Although detection of devices by drivers is usually unnecessary under Plug and P
 
 The miniport driver should call [**ScsiPortValidateRange**](https://msdn.microsoft.com/library/windows/hardware/ff564761) before calling [**ScsiPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff564629) to ensure that the miniport driver-supplied range is safe to use. The miniport driver must be prepared for **ScsiPortGetDeviceBase** to fail and return a **NULL** pointer. The miniport driver should also avoid mapping memory starting at address zero, which makes it impossible to detect the failure of **ScsiPortGetDeviceBase** on some systems.
 
- 
+ 
 
- 
+ 
 
 
 

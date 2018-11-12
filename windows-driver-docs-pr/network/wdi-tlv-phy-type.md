@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |------------------------------------------------------|---------------|
 | [**WDI\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926105) (UINT32) | The PHY type. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

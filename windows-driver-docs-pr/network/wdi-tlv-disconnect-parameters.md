@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The MAC address of the peer to disassociate.                                                                                                                                        |
 | UINT16                                            | The reason for the host-triggered disassociation. This value is provided in little endian byte order and should be appropriately copied into the reason code of the outgoing frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

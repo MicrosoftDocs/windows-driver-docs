@@ -36,11 +36,11 @@ For example, the following command will display **eax** and **ebx**, but not **e
 0:000> r eax; $$ some text; r ebx; * more text; r ecx 
 ```
 
-Text prefixed by the [**\***](----comment-line-specifier-.md) or **$$** tokens is not processed in any way. If you are performing remote debugging, a comment entered in the debugging server will not be visible in the debugging client, nor vice-versa. If you wish to make comment text appear in the Debugger Command window in a way visible to all parties, you should use [**.echo (Echo Comment)**](-echo--echo-comment-.md).
+Text prefixed by the [**\\***](----comment-line-specifier-.md) or **$$** tokens is not processed in any way. If you are performing remote debugging, a comment entered in the debugging server will not be visible in the debugging client, nor vice-versa. If you wish to make comment text appear in the Debugger Command window in a way visible to all parties, you should use [**.echo (Echo Comment)**](-echo--echo-comment-.md).
 
- 
+ 
 
- 
+ 
 
 
 

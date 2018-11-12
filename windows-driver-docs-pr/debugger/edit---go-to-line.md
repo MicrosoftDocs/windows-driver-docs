@@ -28,9 +28,9 @@ The **Go to Line** command only changes the WinDbg display. This command does no
 
 For more information about other ways of finding text in debugging information windows, see [Moving Through a Window](moving-through-a-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

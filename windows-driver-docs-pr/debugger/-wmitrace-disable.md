@@ -52,9 +52,9 @@ After using this extension, you must resume program execution (for example, by u
 
 To enable a provider, use [**!wmitrace.enable**](-wmitrace-enable.md).
 
- 
+ 
 
- 
+ 
 
 
 

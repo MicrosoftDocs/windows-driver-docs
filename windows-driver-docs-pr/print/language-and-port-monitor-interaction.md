@@ -32,9 +32,9 @@ Because language monitors and port monitors are discrete components of the print
 
 You can also provide a single print monitor consisting of a [combined language and port monitor](combined-language-and-port-monitor.md).
 
- 
+ 
 
- 
+ 
 
 
 

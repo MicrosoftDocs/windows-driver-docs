@@ -32,7 +32,7 @@ The DEVPKEY_DeviceClass_Security device property represents a security descripto
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong>](devprop-type-security-descriptor.md)</p></td>
+<td align="left"><p><a href="devprop-type-security-descriptor.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR&lt;/strong&gt;](devprop-type-security-descriptor.md)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -49,7 +49,7 @@ The DEVPKEY_DeviceClass_Security device property represents a security descripto
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,9 +91,9 @@ Requirements
 
 [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132)
 
- 
+ 
 
- 
+ 
 
 
 

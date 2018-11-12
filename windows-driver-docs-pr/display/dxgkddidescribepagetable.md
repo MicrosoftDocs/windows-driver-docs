@@ -29,8 +29,8 @@ Syntax
 DXGKDDI_DESCRIBEPAGETABLE DxgkDdiDescribePageTable;
 
 NTSTATUS DxgkDdiDescribePageTable(
-   IN_CONST_HANDLE                  hDevice,
-   INOUT_PDXGKARG_DESCRIBEPAGETABLE pDescribePageTable
+   IN_CONST_HANDLE                  hDevice,
+   INOUT_PDXGKARG_DESCRIBEPAGETABLE pDescribePageTable
 )
 { ... }
 ```
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

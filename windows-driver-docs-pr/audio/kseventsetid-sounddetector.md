@@ -15,9 +15,9 @@ The event item in this set is specified as the following **KSEVENT\_SOUNDDETECTO
 
 -   [**KSEVENT\_SOUNDDETECTOR\_MATCHDETECTED**](ksevent-sounddetector-matchdetected.md)
 
- 
+ 
 
- 
+ 
 
 
 

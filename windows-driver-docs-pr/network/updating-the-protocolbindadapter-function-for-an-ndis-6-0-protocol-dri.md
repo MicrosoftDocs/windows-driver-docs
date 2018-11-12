@@ -32,9 +32,9 @@ The *ProtocolBindAdapterEx* function must:
 
 -   Optionally, read configuration parameters from the registry. For more information, see [Reading the Registry in NDIS 6.0 Protocol Drivers](reading-the-registry-in-an-ndis-6-0-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

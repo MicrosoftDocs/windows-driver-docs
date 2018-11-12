@@ -28,9 +28,9 @@ For more information about pause and restart operations, see [Driver Stack Manag
 
 For more information about NDIS 6.0 protocol driver Plug and Play events, see [Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md).
 
- 
+ 
 
- 
+ 
 
 
 

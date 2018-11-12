@@ -21,7 +21,7 @@ This topic describes how to use the asynchronous notification feature in a print
 
 **Note**  Throwing asynchronous notifications from a print filter is not supported in the v4 print driver model.
 
- 
+ 
 
 ### IPrintClassObjectFactory
 
@@ -111,7 +111,7 @@ The filter must not impersonate the user account when it calls the IPrintAsyncNo
 
 **Note**  Even though the notification call is made while in the Local Service context, kPerUser notifications are still sent to the user who submitted the job based on the user association of the job ID.
 
- 
+ 
 
 ### Adapting the WDK Sample Code
 
@@ -136,9 +136,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

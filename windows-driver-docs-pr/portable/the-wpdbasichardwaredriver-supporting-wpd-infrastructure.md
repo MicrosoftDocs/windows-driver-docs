@@ -66,9 +66,9 @@ The **WpdObjectProperties::OnGetPropertyAttributes** method returns the collecti
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,11 +21,11 @@ This section includes the following topics:
 
 **Note**  If multiple extensions of the same type are bound to an extensible switch instance, the order in which they are layered within the extensible switch driver stack can be modified. For more information, see [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

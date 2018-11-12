@@ -59,16 +59,16 @@ The **.flash\_on\_break** command is available only in WinDbg. You cannot use th
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 If you use the **.flash\_on\_break** command without parameters, the debugger displays the current flash setting.
 
- 
+ 
 
- 
+ 
 
 
 

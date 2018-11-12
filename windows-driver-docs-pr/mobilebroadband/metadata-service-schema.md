@@ -50,7 +50,7 @@ The Metadata element specifies the namespaces of the XML schemas that are refere
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Text_value"></span><span id="text_value"></span><span id="TEXT_VALUE"></span>Text value
 
@@ -78,13 +78,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageStructure](packagestructure.md)</p></td>
-<td><p>The [PackageStructure](packagestructure.md) element specifies the XML schemas which are referenced by the service metadata package.</p></td>
+<td><p><a href="packagestructure.md" data-raw-source="[PackageStructure](packagestructure.md)">PackageStructure</a></p></td>
+<td><p>The <a href="packagestructure.md" data-raw-source="[PackageStructure](packagestructure.md)">PackageStructure</a> element specifies the XML schemas which are referenced by the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -139,9 +139,9 @@ Each folder name can be changed to an arbitrary name as long as the name is set 
 <Metadata MetadataID="http://schemas.microsoft.com/windows/DeviceMetadata/WindowsInfo/2007/11/">WindowsInfo</Metadata>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

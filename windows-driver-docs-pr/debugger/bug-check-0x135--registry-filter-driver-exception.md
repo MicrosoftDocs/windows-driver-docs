@@ -31,7 +31,7 @@ The REGISTRY\_FILTER\_DRIVER\_EXCEPTION bug check has a value of 0x00000135. Thi
 | 3         | The driver's callback routine address                                    |
 | 4         | Reserved                                                                 |
 
- 
+ 
 
 Cause
 -----
@@ -43,9 +43,9 @@ Resolution
 
 Identify the offending driver by using the 3rd parameter.
 
- 
+ 
 
- 
+ 
 
 
 

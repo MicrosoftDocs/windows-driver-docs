@@ -29,9 +29,9 @@ The GDL parser associates every data entry in a GDL file with a template. If a d
 
 GDL uses specific [directives](gdl-template-directives.md) for templates.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,9 +52,9 @@ Combined, these advantages result in greater power conservation and more efficie
 
 The industry-wide OnNow initiative defines the hardware and software requirements for power management. For more information, see [Industry Initiatives for Power Management](industry-initiatives-for-power-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

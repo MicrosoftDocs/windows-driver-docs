@@ -18,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_VIDEODECODER enumeration
 
 The only event in this set is [**KSEVENT\_VIDEODECODER\_CHANGED**](ksevent-videodecoder-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

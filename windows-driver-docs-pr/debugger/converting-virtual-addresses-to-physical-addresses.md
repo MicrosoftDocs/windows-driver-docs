@@ -55,7 +55,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 6.  Add the byte index to the address of the beginning of the page: 0x09DE9000 + 0x980 = 0x09DE9980. This is the desired physical address.
 
-You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\***](-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
+You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
 
 ```dbgcmd
 kd> !dc 9de9980
@@ -188,9 +188,9 @@ This PTE has value 0x09DE9067. It is made of two fields:
 
 The first physical address on the physical page is the PFN multiplied by 0x1000 (shifted left 12 bits). The byte index is the offset on this page. Thus,the physical address you are looking for is 0x09DE9000 + 0x980 = 0x09DE9980. This is the same result obtained by the earlier methods.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ Specifies a pointer to a WDM driver object.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ Remarks
 
 Since **!ks.enumdrvobj** enumerates every device chained off a WDM driver object, it is equivalent to invoking [**!ks.enumdevobj**](-ks-enumdevobj.md) on every device chained off a given driver.
 
- 
+ 
 
- 
+ 
 
 
 

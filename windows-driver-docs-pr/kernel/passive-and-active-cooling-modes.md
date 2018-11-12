@@ -26,9 +26,9 @@ Passive cooling is the only cooling mode available to many mobile devices. In pa
 
 Handheld computing platforms typically use System on a Chip (SoC) chips that contain processors and GPUs, and the SoC hardware vendors supply the thermal management software for these devices. However, peripheral devices, such as battery chargers and display backlights, are external to SoC chips. The vendors for these devices must supply device drivers, and these drivers must provide any thermal management support that might be required for the devices. A relatively simple way for a device driver to support thermal management is to implement the GUID\_THERMAL\_COOLING\_INTERFACE driver interface.
 
- 
+ 
 
- 
+ 
 
 
 

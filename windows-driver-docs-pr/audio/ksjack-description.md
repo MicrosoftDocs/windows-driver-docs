@@ -44,7 +44,7 @@ Specifies the mapping of the audio channels to the corresponding speaker positio
 &gt; \[!Note\]
 &gt;  Devicetopology.h originally defined **ChannelMapping** as an enumeration of type **EChannelMapping**. The **EChannelMapping** enumeration has since been deprecated and is no longer used in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
 **Color**  
 Specifies the jack color. The color is expressed as a 32-bit RGB value that is formed by concatenating the 8-bit blue, green, and red color components. The blue component occupies the 8 least-significant bits (bits 0-7), the green component occupies bits 8-15, and the red component occupies bits 16-23. The 8 most-significant bits are zeros. If the jack color is unknown or the physical connector has no identifiable color, the value of this member is 0x00000000, which represents black.
@@ -115,7 +115,7 @@ Specifies the physical connection type for this jack. The value of this member i
 </tbody>
 </table>
 
- 
+ 
 
 **GeoLocation**  
 The geometric location of the jack. The value of this member is one of the **EPcxGeoLocation** enumeration values shown in the following table.
@@ -191,7 +191,7 @@ The geometric location of the jack. The value of this member is one of the **EPc
 </tbody>
 </table>
 
- 
+ 
 
 **GenLocation**  
 Specifies the general location of the jack. The value of this member is one of the **EPcxGenLocation** enumeration values shown in the following table.
@@ -227,7 +227,7 @@ Specifies the general location of the jack. The value of this member is one of t
 </tbody>
 </table>
 
- 
+ 
 
 **PortConnection**  
 Specifies the type of port represented by the jack. The value of this member is one of the **EPxcPortConnection** enumeration values shown in the following table.
@@ -263,7 +263,7 @@ Specifies the type of port represented by the jack. The value of this member is 
 </tbody>
 </table>
 
- 
+ 
 
 **IsConnected**  
 Indicates whether there is an external device connected to the jack. If the audio controller supports jack detection on this pin, the value of **IsConnected** should accurately indicate whether the jack is occupied by a plug at any given time. This value should always be set to **TRUE** for devices that do not support jack detection.
@@ -296,9 +296,9 @@ Requirements
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
 
- 
+ 
 
- 
+ 
 
 
 

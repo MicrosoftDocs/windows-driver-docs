@@ -79,9 +79,9 @@ A driver can enable a device-managed non-DIB surface by calling the [**EngCreate
 
 A device-dependent bitmap (DDB), which is sometimes called a device-format bitmap, is another type of non-DIB, device-managed surface. The DDB is supported to allow certain drivers, such as the VGA driver, to implement faster bitmap-to-screen block transfers. The DDB also allows drivers to draw to banked or non-DIB bitmaps in offscreen display memory. If a DDB is required, the driver can support the [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185) function and call the [**EngCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff564204) function to have the engine return a handle to the bitmap.
 
- 
+ 
 
- 
+ 
 
 
 

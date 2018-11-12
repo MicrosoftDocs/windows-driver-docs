@@ -48,7 +48,7 @@ Specifies a loaded module, either by name or by base address.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -94,9 +94,9 @@ Debug Data Dirs: Type Size     VA  Pointer
 
 For an explanation of the abbreviations shown on the **Characteristics** line of this example, see [Symbol Status Abbreviations](symbol-status-abbreviations.md).
 
- 
+ 
 
- 
+ 
 
 
 

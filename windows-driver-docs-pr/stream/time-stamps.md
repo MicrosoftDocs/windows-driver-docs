@@ -28,9 +28,9 @@ PStreamObject->HWClockFunction = (PHW_CLOCK_FUNCTION)StreamClockRoutine;
 PStreamObject->ClockSupportFlags = CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK | CLOCK_SUPPORT_CAN_RETURN_STREAM_TIME;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

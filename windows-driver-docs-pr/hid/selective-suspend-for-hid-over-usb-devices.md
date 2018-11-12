@@ -110,9 +110,9 @@ Where:
 
 4.  4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ For information about setting these properties in a [trace controller](trace-con
 
 The default values that TraceView sets might differ from the default values set by other trace controllers, such as [Tracelog](tracelog.md).
 
- 
+ 
 
- 
+ 
 
 
 

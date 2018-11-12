@@ -38,9 +38,9 @@ The bus driver does not power up the device until it or higher drivers must comm
 
 When its device enters a sleeping state, a driver should set an *IoCompletion* routine that calls [**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776) (Windows Server 2003, Windows XP, and Windows 2000 only) and releases the remove lock. Remember that a driver cannot access its device while the device is in a sleeping state.
 
- 
+ 
 
- 
+ 
 
 
 

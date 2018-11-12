@@ -26,9 +26,9 @@ At system shutdown, the power manager sends an **IRP\_MN\_SET\_POWER** for a sys
 
 A driver can optionally perform idle detection for its device, or can request that the power manager perform idle detection, so that the device can be powered down when not in use. For further information, see [Detecting an Idle Device](detecting-an-idle-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

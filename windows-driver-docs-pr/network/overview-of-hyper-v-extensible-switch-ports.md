@@ -47,7 +47,7 @@ The protocol edge of the extensible switch issues this OID request when the prev
 
 **Note**  This OID request could be issued if a network adapter connection was not previously made to the port.
 
- 
+ 
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
@@ -56,7 +56,7 @@ The protocol edge of the extensible switch issues an OID set request of [OID\_SW
 
 **Note**  This OID request could be issued if a network adapter connection was not previously made to the port.
 
- 
+ 
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
@@ -102,7 +102,7 @@ The extension must call [*ReferenceSwitchPort*](https://msdn.microsoft.com/libra
 
 **Note**  The extension must not call [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295) for a port after it receives an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](https://msdn.microsoft.com/library/windows/hardware/hh598279) for that port.
 
- 
+ 
 
 <a href="" id="dereferenceswitchport"></a>[*DereferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)  
 The extensible switch extension calls this function to decrement a port's reference counter.
@@ -111,11 +111,11 @@ The extension must call [*DereferenceSwitchPort*](https://msdn.microsoft.com/lib
 
 **Note**  NDIS ports and extensible switch ports are different objects. Packets that move through the extensible switch data path are always assigned to the NDIS port number of **NDIS\_DEFAULT\_PORT\_NUMBER**. However, the packet's source and destination extensible switch port number can be a value of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** or greater. For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

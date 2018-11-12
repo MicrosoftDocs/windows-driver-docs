@@ -29,9 +29,9 @@ Graphics adapters that run on NT-based operating systems require a paired *displ
 
 [Compatibility Testing Requirements for Display and Video Miniport Drivers](compatibility-testing-requirements-for-display-and-video-miniport-driv.md)
 
- 
+ 
 
- 
+ 
 
 
 

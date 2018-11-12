@@ -31,9 +31,9 @@ The following topics show how to display various samples with background color i
 
 [Combining Two Streams with Different Heights and Widths](combining-two-streams-with-different-heights-and-widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

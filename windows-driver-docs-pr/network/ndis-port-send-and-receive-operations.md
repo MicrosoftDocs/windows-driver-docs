@@ -25,9 +25,9 @@ If the miniport driver allocates ports, overlying drivers can use the ports to s
 
 When NDIS calls the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function of a protocol driver, NDIS provides a list of all currently active ports in the **ActivePorts** member of the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure that the *BindParameters* parameter points to. NDIS also informs protocol drivers with a PnP event when ports are activated and deactivated. For more information about PnP port activation and deactivation notifications, see [Handling NDIS Ports PnP Notifications](handling-ndis-ports-pnp-event-notifications.md). For more general information about send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

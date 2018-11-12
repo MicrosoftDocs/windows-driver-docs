@@ -130,9 +130,9 @@ After you complete the file modifications, complete the following procedure to b
 
 For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=306613).
 
- 
+ 
 
- 
+ 
 
 
 

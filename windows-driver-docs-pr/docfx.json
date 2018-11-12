@@ -1,37 +1,55 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/**.md", "**/**.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**", "**/*.json", "**/*.png", "CONTRIBUTING"],
-          "exclude": ["**/obj/**", "**/README.md"]
-        }
+      {
+        "files": [
+          "**/images/**",
+          "**/*.json",
+          "**/*.png",
+          "CONTRIBUTING"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/README.md"
+        ]
+      }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW",
-        "Search.Product": "eADQiWindows 10XVcnh",
-        "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
-        "searchScope": ["Drivers"],
-        "feedback_system": "GitHub",
-        "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
-        "feedback_product_url": "https://wpdev.uservoice.com/",
-        "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"],
-        "titleSuffix": "Windows drivers",
-        "ms.prod": "windows-hardware",
-        "ms.technology": "windows-devices",
-        "ms.author": "windowsdriverdev",
-        "ms.topic": "article"
+      "ROBOTS": "INDEX, FOLLOW",
+      "Search.Product": "eADQiWindows 10XVcnh",
+      "uhfHeaderId": "MSDocsHeader-WinHW",
+      "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
+      "searchScope": [
+        "Drivers"
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
+      "feedback_product_url": "https://wpdev.uservoice.com/",
+      "contributors_to_exclude": [
+        "barrygolden",
+        "PageWriter-MSFT",
+        "tedhudek"
+      ],
+      "titleSuffix": "Windows drivers",
+      "ms.prod": "windows-hardware",
+      "ms.technology": "windows-devices",
+      "ms.author": "windowsdriverdev",
+      "ms.topic": "article"
     },
-    "externalReference": [
-    ],
+    "externalReference": [],
     "template": "op.html",
-    "dest": "windows-driver-docs-pr"
+    "dest": "windows-driver-docs-pr",
+    "markdownEngineName": "markdig"
   }
 }

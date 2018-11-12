@@ -41,9 +41,9 @@ For information about the interfaces that these objects export, see:
 
 [Framework Common Buffer Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265627)
 
- 
+ 
 
- 
+ 
 
 
 

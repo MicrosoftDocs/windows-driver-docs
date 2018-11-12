@@ -15,9 +15,9 @@ This section describes the XML operation elements, operation-specific child elem
 
 [WSD Scan Service Operation Error Reporting](wsd-scan-service-operation-error-reporting.md)
 
- 
+ 
 
- 
+ 
 
 
 

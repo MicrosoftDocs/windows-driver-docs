@@ -318,7 +318,7 @@ For a PEP_NOTIFY_PPM_QUERY_LP_SETTINGS notification, the AcceptProcessorNotifica
 
 PASSIVE_LEVEL
  
-##PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 
+## PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 
 Handle
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 

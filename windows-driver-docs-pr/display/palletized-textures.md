@@ -22,9 +22,9 @@ It cannot be assumed, because an association between a surface and a palette has
 
 Furthermore, DirectDraw's palette DDI entry points are not called for these palettes. All DDI notifications of texture palette operations are done through the DP2 stream.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_SELECTOR_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565219) or [<strong>KSPROPERTY_SELECTOR_NODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565217)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565219" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565219)"><strong>KSPROPERTY_SELECTOR_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff565217" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_NODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565217)"><strong>KSPROPERTY_SELECTOR_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

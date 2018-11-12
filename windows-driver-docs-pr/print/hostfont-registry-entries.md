@@ -68,7 +68,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 </tbody>
 </table>
 
- 
+ 
 
 ### Additional Notes on Hostfont Registry Entry Names
 
@@ -78,9 +78,9 @@ The existence of the HostFontHasMostFonts key with any value assigned to it mean
 
 HostFontIncludesFonts is similar to HostFontExceptFonts except that it explicitly lists PostScript font names that are available on the target interpreter.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,11 +32,11 @@ ms.localizationpriority: medium
 |[Relative orientation sensor data fields](relative-orientation-data-fields.md)|This topic provides information about the data fields that are specific to the relative orientation sensor.|
 |[Custom sensor data fields](custom-sensor-data-fields.md)|This topic provides information about the data fields that can be used by a custom sensor.|
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

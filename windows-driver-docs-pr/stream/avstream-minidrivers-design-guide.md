@@ -45,9 +45,9 @@ This Design Guide describes how to design AVStream minidrivers that control stre
 
 [Using Hardware Codec Support in AVStream](hardware-codec-support-in-avstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

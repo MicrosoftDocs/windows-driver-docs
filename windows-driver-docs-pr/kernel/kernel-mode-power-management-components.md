@@ -24,9 +24,9 @@ The following topics provide a brief introduction to the kernel-mode components 
 -   [Power Manager](power-manager.md)
 -   [Driver Role in Power Management](driver-role-in-power-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

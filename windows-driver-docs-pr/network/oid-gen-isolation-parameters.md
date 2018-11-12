@@ -58,7 +58,7 @@ The VM network adapter miniport driver returns one of the following status codes
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The length of the information buffer is too small to return the requested information. The VM network adapter miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size, in bytes, that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the requested information. The VM network adapter miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size, in bytes, that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_FAILURE</strong></p></td>
@@ -67,7 +67,7 @@ The VM network adapter miniport driver returns one of the following status codes
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -102,9 +102,9 @@ Requirements
 
 [**NDIS\_STATUS\_ISOLATION\_PARAMETERS\_CHANGE**](ndis-status-isolation-parameters-change.md)
 
- 
+ 
 
- 
+ 
 
 
 

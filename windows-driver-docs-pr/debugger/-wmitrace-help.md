@@ -36,9 +36,9 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

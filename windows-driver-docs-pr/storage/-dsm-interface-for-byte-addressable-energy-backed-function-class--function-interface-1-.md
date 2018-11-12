@@ -59,7 +59,7 @@ The following table specifies the functions & fields that are mandatory.
 | 30             | [Write Typed Data (Function Index 30)](write-typed-data--function-index-30-.md)                                                             | Yes                                                    | Yes                                                  |
 | 31             | [Set Memory Error Counters (Function Index 31)](set-memory-error-counters--function-index-31-.md)                                           | Yes                                                    | Yes                                                  |
 
- 
+ 
 
 ## <span id="DSM_METHOD_INPUT"></span><span id="dsm_method_input"></span>\_DSM Method Input
 
@@ -116,7 +116,7 @@ All methods will return a buffer of length greater than or equal to 4 bytes. The
 </tbody>
 </table>
 
- 
+ 
 
 Any non-zero **General Status Code** indicates that the function failed. No function defined in this version of the specification shall return the **General Status Code** of **Not Supported**. All mandatory functions shall return valid data or an error code indicating a runtime error. Non-mandatory functions may return a Function-Specific Error Code to signal that there is no valid data to be returned.
 
@@ -129,7 +129,7 @@ All reserved bits and bytes shall have a value of 0. Unless specifically stated 
 
 &gt;
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -138,9 +138,9 @@ All reserved bits and bytes shall have a value of 0. Unless specifically stated 
 
 [JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)](jedec-byte-addressable-energy-backed-interface-nvdimms-device-specific-method---dsm-.md)
 
- 
+ 
 
- 
+ 
 
 
 

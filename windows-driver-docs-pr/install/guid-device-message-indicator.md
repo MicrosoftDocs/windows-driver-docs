@@ -43,7 +43,7 @@ The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](https://msdn.microsof
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

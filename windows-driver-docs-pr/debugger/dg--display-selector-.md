@@ -55,7 +55,7 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -141,11 +141,11 @@ Common selector values are:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

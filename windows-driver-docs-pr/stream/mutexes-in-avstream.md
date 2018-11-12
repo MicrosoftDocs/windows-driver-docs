@@ -32,9 +32,9 @@ Use the device mutex to synchronize hierarchy objects from device to filter. Use
 
 Several AVStream API functions require that particular mutexes be held. Relevant function reference pages state if a specific mutex should be held when calling that particular function.
 
- 
+ 
 
- 
+ 
 
 
 

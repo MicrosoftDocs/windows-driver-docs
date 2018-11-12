@@ -39,9 +39,9 @@ This information is also returned to the *Context* parameter by the [**GetStored
 
 [**GetStoredEventInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548431)
 
- 
+ 
 
- 
+ 
 
 
 

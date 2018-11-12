@@ -50,9 +50,9 @@ See the following for more detail about the filter graphs located above the port
 
 [Rendering and Capturing MIDI Content](rendering-and-capturing-midi-content.md)
 
- 
+ 
 
- 
+ 
 
 
 

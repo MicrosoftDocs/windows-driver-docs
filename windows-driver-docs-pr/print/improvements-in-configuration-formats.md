@@ -25,7 +25,7 @@ Due to historical implementations using v3 printer drivers, some devices may req
 | GPD       | \*NoPunctuationCharSubstitute? | True           |
 | PPD       | \*MSPunctuationCharSubstitute  | True           |
 
- 
+ 
 
 ## Related topics
 [V4 Driver Configuration](v4-driver-configuration.md)  

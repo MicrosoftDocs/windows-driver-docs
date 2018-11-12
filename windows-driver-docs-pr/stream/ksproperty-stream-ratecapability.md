@@ -47,13 +47,13 @@ The KSPROPERTY\_STREAM\_RATECAPABILITY property allows a graph manager to query 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSRATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566752)</p></td>
-<td><p>[<strong>KSRATE_CAPABILITY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566754)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566752" data-raw-source="[&lt;strong&gt;KSRATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566752)"><strong>KSRATE</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566754" data-raw-source="[&lt;strong&gt;KSRATE_CAPABILITY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566754)"><strong>KSRATE_CAPABILITY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -93,9 +93,9 @@ Requirements
 
 [**KSRATE\_CAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/ff566754)
 
- 
+ 
 
- 
+ 
 
 
 

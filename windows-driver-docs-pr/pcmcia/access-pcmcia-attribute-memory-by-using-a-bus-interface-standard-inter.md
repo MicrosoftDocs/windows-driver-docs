@@ -25,9 +25,9 @@ A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initial
 
 After the driver obtains the standard bus interface, the driver can call the interface routines **GetBusData** or **SetBusData** to access attribute memory.
 
- 
+ 
 
- 
+ 
 
 
 

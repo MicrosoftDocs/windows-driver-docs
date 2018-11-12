@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------------------------------------------------------------------------------|
 | UINT32 | The desired operation mode, as defined in [**WDI\_OPERATION\_MODE**](https://msdn.microsoft.com/library/windows/hardware/dn926085). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

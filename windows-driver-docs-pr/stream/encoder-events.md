@@ -16,9 +16,9 @@ The following event sets are defined for video encoder minidrivers:
 
 [CODECAPI\_CHANGELISTS](codecapi-changelists.md)
 
- 
+ 
 
- 
+ 
 
 
 

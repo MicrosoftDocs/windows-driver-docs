@@ -26,7 +26,7 @@ In order to make a symbol store accessible over the Internet, you must configure
 
 **Note**  Because of the way IIS will be configured to serve symbol files, it is not recommended that the same server instance be used for any other purpose. Typically the desired security settings for a symbol server will not make sense for other uses, for example for an external facing commerce server. Make sure that the sample configuration described here makes sense for your environment and adapt it as appropriate for your specific needs.
 
- 
+ 
 
 ### <span id="configuring_the_directories"></span><span id="CONFIGURING_THE_DIRECTORIES"></span>Creating the Symbol Directory
 
@@ -82,21 +82,21 @@ The MIME Type for the downloaded content needs to be set to application/octet-st
 
 **Configuring MIME types**
 
-1.  Right-click the **Symbols** virtual directory and choose **Properties**.
+1. Right-click the **Symbols** virtual directory and choose **Properties**.
 
-2.  Select **HTTP Headers**.
+2. Select **HTTP Headers**.
 
-3.  Click **MIME Types**.
+3. Click **MIME Types**.
 
-4.  Click **New**.
+4. Click **New**.
 
-5.  For **Extension**, type **\***.
+5. For **Extension**, type **\\***.
 
-6.  For **MIME type**, type **application/octet-stream**.
+6. For **MIME type**, type **application/octet-stream**.
 
-7.  To exit the **MIME Types** dialog box, click **OK**.
+7. To exit the **MIME Types** dialog box, click **OK**.
 
-8.  To exit **Symbols Properties**, click **OK**.
+8. To exit **Symbols Properties**, click **OK**.
 
 You can edit the web.config file to configure MIME types for Symbols. This approach clears the inherited MIME Types and adds a catch-all wild card \* MIME Type. This approach may be necessary when MIME types are being inherited in certain IIS configurations.
 
@@ -129,7 +129,7 @@ It is possible to configure IIS to use “Integrated Windows Authentication” s
 
 **Note**  Only configure Windows Authentication on IIS to control access to the symbol server if that is appropriate for your environment. There are other security options available to further control access to IIS if that is required for your environment.
 
- 
+ 
 
 **To configure the authentication method as Anonymous**
 
@@ -156,7 +156,7 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
 
 **Note**  Only disable Kerberos security if that is appropriate for your environment.
 
- 
+ 
 
 **Disable Kerberos Support Using appcmd.exe**
 
@@ -191,9 +191,9 @@ To check the current setting, use this command.
 
 For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
 
- 
+ 
 
- 
+ 
 
 
 

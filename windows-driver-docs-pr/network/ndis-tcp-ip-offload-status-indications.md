@@ -23,9 +23,9 @@ This section includes:
 
 [**NDIS\_STATUS\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES**](ndis-status-tcp-connection-offload-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

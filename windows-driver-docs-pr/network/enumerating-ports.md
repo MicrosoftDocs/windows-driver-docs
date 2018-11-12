@@ -21,9 +21,9 @@ NDIS protocol drivers and filter drivers can use an [OID\_GEN\_ENUMERATE\_PORTS]
 
 If the query succeeds, NDIS provides the results of the query in an [**NDIS\_PORT\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff566786) structure. The **NumberOfPorts** member of NDIS\_PORT\_ARRAY contains the number of active ports that are associated with the miniport adapter. The **Ports** member of NDIS\_PORT\_ARRAY contains a list of pointers to [**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791) structures. Each NDIS\_PORT\_CHARACTERISTICS structure defines the characteristics of a single port.
 
- 
+ 
 
- 
+ 
 
 
 

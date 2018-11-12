@@ -21,7 +21,7 @@ Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_RESET)(
-    
+    
 );
 ```
 
@@ -64,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Keeping a Log File in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -39,9 +39,9 @@ To close an open log file, enter the [**.logclose (Close Log File)**](-logclose-
 
 To determine the log file status, enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

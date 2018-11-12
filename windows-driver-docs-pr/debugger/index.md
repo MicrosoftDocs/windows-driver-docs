@@ -46,7 +46,7 @@ After you install Visual Studio and the WDK, you'll have six available [debuggin
 
 **Note**  Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Visual Studio debugger](https://go.microsoft.com/fwlink/p/?LinkID=238333). If you are looking to debug managed code such as C#, using the Visual Studio debugger is often the easiest way to get started.
 
- 
+ 
 
 ## <span id="Windows_debuggers"></span><span id="windows_debuggers"></span><span id="WINDOWS_DEBUGGERS"></span>Windows debuggers
 
@@ -93,9 +93,9 @@ For additional information related to Debugging Tools for Windows, see [Debuggin
 -   [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
 -   [Debugger Reference](debugger-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

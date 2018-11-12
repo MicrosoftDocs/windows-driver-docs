@@ -42,7 +42,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | A flag indicating if a Persistent Group will be used for the connection. The flag is set to 1 if a Persistent Group will be used.                  |
 | UINT8                                             | A flag indicating if this frame is part of a follow-on provision discovery. The flag is set to 1 if it is part of a follow-on provision discovery. |
 
- 
+ 
 
 Requirements
 ------------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ This parameter specifies a pointer to a WDM device object. If *DeviceObject* is 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ Device Header 824ca1e0
             Flags = 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

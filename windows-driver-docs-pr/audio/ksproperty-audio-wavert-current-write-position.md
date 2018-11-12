@@ -50,7 +50,7 @@ The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property request specifi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -99,9 +99,9 @@ Requirements
 
 [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799)
 
- 
+ 
 
- 
+ 
 
 
 

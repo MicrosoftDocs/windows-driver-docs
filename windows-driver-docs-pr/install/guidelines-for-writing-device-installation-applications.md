@@ -30,7 +30,7 @@ Device installation applications *can* do the following:
 
     **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) for software. See the [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
 
-     
+     
 
 -   [Preload driver packages](preloading-driver-packages.md)
 
@@ -58,9 +58,9 @@ Device installation applications *must not* do the following:
 
 -   Force the user to install any device-specific applications, unless the device will not operate without the application. Examples might include utilities for setting configurable keyboard keys or for setting a modem's country/region code, if an inbox application does not support such a capability.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -97,15 +97,15 @@ The sum (in bytes) of the sizes of all contained elements.
 <td>Specifies the number of NS offload IPv6 addresses.</td>
 </tr>
 <tr class="even">
-<td>[<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/gg602135" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/gg602135)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum magic packet wake-up.</td>
 </tr>
 <tr class="odd">
-<td>[<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/gg602135" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/gg602135)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum pattern wake-up.</td>
 </tr>
 <tr class="even">
-<td>[<strong>NDIS_DEVICE_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/gg602135)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/gg602135" data-raw-source="[&lt;strong&gt;NDIS_DEVICE_POWER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/gg602135)"><strong>NDIS_DEVICE_POWER_STATE</strong></a></td>
 <td>Specifies the minimum link change wake-up.</td>
 </tr>
 <tr class="odd">
@@ -131,7 +131,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -157,9 +157,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

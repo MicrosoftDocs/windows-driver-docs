@@ -14,7 +14,7 @@ Your mobile broadband app can include a purchase flow for users to use to purcha
 **Note**  
 Do not use an iframe to host these flows in your app.
 
- 
+ 
 
 1.  Show users the plan details and allow them to select a plan before you forwarding them into a complete purchase flow.
 
@@ -91,9 +91,9 @@ Inappropriate design for the purchase, recharge, refill, and billing pages:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

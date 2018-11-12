@@ -27,8 +27,8 @@ Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS APIENTRY DxgkDdiUpdatePageDirectory(
-   IN_CONST_HANDLE                    hDevice,
-   INOUT_PDXGKARG_UPDATEPAGEDIRECTORY pUpdatePageDirectory
+   IN_CONST_HANDLE                    hDevice,
+   INOUT_PDXGKARG_UPDATEPAGEDIRECTORY pUpdatePageDirectory
 );
 ```
 
@@ -69,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

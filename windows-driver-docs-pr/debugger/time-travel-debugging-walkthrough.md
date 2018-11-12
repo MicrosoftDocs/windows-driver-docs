@@ -176,7 +176,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
  
 10. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
-   Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
+    Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
 
 In the next section of this lab we will analyze the trace file to locate the issue with our code.
 
@@ -385,7 +385,7 @@ ba <access> <size> <address> {options}
 </tbody>
 </table>
 
- 
+ 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 

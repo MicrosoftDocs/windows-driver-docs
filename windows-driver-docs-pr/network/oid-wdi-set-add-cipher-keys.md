@@ -18,7 +18,7 @@ OID\_WDI\_SET\_ADD\_CIPHER\_KEYS adds or overwrites cipher keys in the key table
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 Cipher keys that are marked as Static should not be cleared on a roam. They can only be cleared on a [OID\_WDI\_TASK\_DOT11\_RESET](oid-wdi-task-dot11-reset.md) or if they are overwritten with a new OID\_WDI\_SET\_ADD\_CIPHER\_KEYS.
 
@@ -29,7 +29,7 @@ Cipher keys that are marked as Static should not be cleared on a roam. They can 
 |------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------|
 | [**WDI\_TLV\_SET\_CIPHER\_KEY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn898056) | X                              |          | The cipher keys to be added or overwritten in the key table of the port. |
 
- 
+ 
 
 ## Set property results
 
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](oid-wdi-set-delete-cipher-keys.md)
 
- 
+ 
 
- 
+ 
 
 
 

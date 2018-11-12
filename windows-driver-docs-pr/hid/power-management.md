@@ -23,9 +23,9 @@ HID devices don't automatically wake up a system from a low- power state. Only s
 
 If an end user wishes to disarm a device from waking up the system, the user can specify this via the properties/power management tab in device manager.
 
- 
+ 
 
- 
+ 
 
 
 

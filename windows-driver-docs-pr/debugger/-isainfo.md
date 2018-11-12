@@ -48,7 +48,7 @@ Specifies a PNPISA Card. If *Card* is 0 or omitted, all the devices and cards on
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,9 +65,9 @@ Flags (0x80000000)  DF_BUS
                       DF_REQ_TRIMMED, DF_READ_DATA_PORT
 ```
 
- 
+ 
 
- 
+ 
 
 
 

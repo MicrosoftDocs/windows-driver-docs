@@ -144,7 +144,7 @@ The following table provides an example of timestamp processing. This processing
 </tbody>
 </table>
 
- 
+ 
 
 1.  The host stack [generates a timestamp](generating-a-timestamp.md) of 100 for a TCP segment and then sends the segment.
 
@@ -339,13 +339,13 @@ The following table provides an example of timestamp processing that handles dri
 </tbody>
 </table>
 
- 
+ 
 
 Note the drift in the host stack clock changes from 105 to 200 and from 255 to 400. (Without the drift, these intervals would be 105 to 205 and 320 to 420.) The calculations for the generation of *TsTime*, the timestamp delta, and the MRTT properly handle this drift.
 
- 
+ 
 
- 
+ 
 
 
 

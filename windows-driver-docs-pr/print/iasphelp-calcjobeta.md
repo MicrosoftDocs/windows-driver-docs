@@ -68,7 +68,7 @@ The following table shows possible return values for this method.
 </tbody>
 </table>
 
- 
+ 
 
 ## VBScript Example
 

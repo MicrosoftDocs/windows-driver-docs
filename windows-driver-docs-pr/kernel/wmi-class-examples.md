@@ -114,9 +114,9 @@ class Vendor_SerialSendEvent : WMIEvent
       boolean Active;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

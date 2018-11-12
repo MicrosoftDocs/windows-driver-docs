@@ -44,7 +44,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | WDI\_BAND\_ID (UINT32)                                      | The band ID on which the association is established.                                                                                                                                                                                                |
 | UINT32                                                      | The IHV association status. If the association failed, this can contain an IHV-defined status code. This is only used for debugging purpose.                                                                                                        |
 
- 
+ 
 
 Requirements
 ------------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

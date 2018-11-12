@@ -27,7 +27,7 @@ The UVC class driver Usbvideo.sys queries the video camera directly to obtain it
 
 **Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](http://go.microsoft.com/fwlink/p/?linkid=516989).
 
- 
+ 
 
 ## Related topics
 [**KS\_DATAFORMAT\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh463996)  

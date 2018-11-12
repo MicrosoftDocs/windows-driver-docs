@@ -52,7 +52,7 @@ Specifies the name of the script file to unload. *ScriptFile* should include the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,9 +82,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
- 
+ 
 
- 
+ 
 
 
 

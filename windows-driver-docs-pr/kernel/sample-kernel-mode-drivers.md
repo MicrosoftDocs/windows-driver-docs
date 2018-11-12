@@ -33,9 +33,9 @@ Shows how to use [WPP software tracing](https://msdn.microsoft.com/library/windo
 
 Other subdirectories of the \\src directory contain sample code for kernel-mode drivers for various types of hardware.
 
- 
+ 
 
- 
+ 
 
 
 

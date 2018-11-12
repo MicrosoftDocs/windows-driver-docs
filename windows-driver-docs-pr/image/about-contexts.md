@@ -23,9 +23,9 @@ Much of the information that is passed between the WIA service, a WIA minidriver
 
 [Device-Specific Contexts](device-specific-contexts.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ In the preceding image,
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
+     
 
 -   **USB connector manager**
 
@@ -104,7 +104,7 @@ The examples given in this section describe interaction between the USB Type-C h
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
     3.  The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
-   ​
+    
 3.  The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
 
 ## How to test UCSI
@@ -202,7 +202,7 @@ Here are the common commands:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)  

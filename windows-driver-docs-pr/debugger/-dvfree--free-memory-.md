@@ -58,7 +58,7 @@ Specifies the amount of memory to be freed, in bytes. The actual memory freed wi
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +67,9 @@ The **.dvfree** command calls **VirtualFreeEx** to free an existing memory alloc
 
 This command can be used to free an allocation made by [**.dvalloc (Allocate Memory)**](-dvalloc--allocate-memory-.md). It can also be used to free any block of memory owned by the target process, but freeing memory that was not acquired through **.dvalloc** will naturally pose risks to the stability of the target process.
 
- 
+ 
 
- 
+ 
 
 
 

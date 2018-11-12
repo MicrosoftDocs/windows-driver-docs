@@ -22,9 +22,9 @@ The GDL reference contains the following sections:
 
 [GDL Template Structure](gdl-template-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

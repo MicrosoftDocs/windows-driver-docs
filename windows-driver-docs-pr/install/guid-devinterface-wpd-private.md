@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_WPD_PRIVATE [device interface class](https://msdn.microsof
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_WPD**](guid-devinterface-wpd.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ Notice that the driver's behavior does not change; the driver receives a stream 
 
 The **IStream** interface and its methods are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

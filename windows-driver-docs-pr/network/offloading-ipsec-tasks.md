@@ -18,7 +18,7 @@ This section describes the offloading of Internet protocol security (IPsec) task
 
 **Note**  IPsec offload out-of-band (OOB) data is stored in the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) information array. For more information about OOB data, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
 
- 
+ 
 
 [IPsec Offload Version 2](ipsec-offload-version-2.md) is supported in NDIS 6.1 and later.
 
@@ -29,9 +29,9 @@ This section includes the following topics:
 -   [IPsec Offload Version 1](ipsec-offload-version-1.md)
 -   [IPsec Offload Version 2](ipsec-offload-version-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

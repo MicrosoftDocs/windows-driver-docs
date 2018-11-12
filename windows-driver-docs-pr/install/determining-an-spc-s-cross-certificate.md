@@ -40,9 +40,9 @@ Once the *.pfx* file is imported into the Personal store on the signing computer
 
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
- 
+ 
 
- 
+ 
 
 
 

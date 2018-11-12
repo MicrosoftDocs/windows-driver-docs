@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ValidationInfo</strong>](validationinfo.md)</p></td>
+<td><p><a href="validationinfo.md" data-raw-source="[&lt;strong&gt;ValidationInfo&lt;/strong&gt;](validationinfo.md)"><strong>ValidationInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -77,9 +77,9 @@ A client submits a [**ScanTicket**](scanticket.md) for validation through the [*
 
 [**ValidationInfo**](validationinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ If you are designing a WaveCyclic device, however, you can improve its performan
 
 Also, if your device requires an audio format with a channel ordering that is incompatible with the standard WDM audio formats, the driver might have to perform in-place conversion of each audio frame in an intermediate buffer before the hardware can process it. This can degrade performance. For additional information, see the white paper titled Multiple Channel Audio Data and WAVE Files at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
- 
+ 
 
- 
+ 
 
 
 

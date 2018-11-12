@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE property specifies the dynamic range of th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSAUDIO_DYNAMIC_RANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537085)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537085" data-raw-source="[&lt;strong&gt;KSAUDIO_DYNAMIC_RANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537085)"><strong>KSAUDIO_DYNAMIC_RANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSAUDIO\_DYNAMIC\_RANGE, which specifies the dynamic range for the loudness node's output stream.
 
@@ -93,9 +93,9 @@ Requirements
 
 [**KSAUDIO\_DYNAMIC\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff537085)
 
- 
+ 
 
- 
+ 
 
 
 

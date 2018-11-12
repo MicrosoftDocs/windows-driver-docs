@@ -102,9 +102,9 @@ Requirements
 
 [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095)
 
- 
+ 
 
- 
+ 
 
 
 

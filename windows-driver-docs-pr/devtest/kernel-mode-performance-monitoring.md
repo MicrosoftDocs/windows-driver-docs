@@ -19,9 +19,9 @@ The section includes the following topics:
 
 [Kernel Mode Performance Counter Reference](https://msdn.microsoft.com/library/windows/hardware/ff548144)
 
- 
+ 
 
- 
+ 
 
 
 

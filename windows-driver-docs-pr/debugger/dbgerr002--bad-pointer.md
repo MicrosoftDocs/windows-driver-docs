@@ -26,9 +26,9 @@ Two common causes of this problem are:
 
 If your symbol store was created by using SymStore, you can find the full path to this file by examining file.ptr. For details, see [Using SymStore](symstore.md).
 
- 
+ 
 
- 
+ 
 
 
 

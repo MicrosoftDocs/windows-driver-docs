@@ -74,7 +74,7 @@ memory modules</td>
 </tbody>
 </table>
 
- 
+ 
 
 We suggest that you consider the following guidelines when you develop your device drivers:
 
@@ -88,9 +88,9 @@ Drivers that you develop for Windows XP and later versions of Windows that corre
 
 Most existing user-mode applications should continue to run on dynamically partitionable servers without any modification. However, if an application allocates threads for each processor or performs memory allocations that are based on how much physical memory is available, the application can register with the operating system to be notified of changes to the hardware configuration. When the application is notified about a change to the hardware configuration, it can adjust its resource allocation accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

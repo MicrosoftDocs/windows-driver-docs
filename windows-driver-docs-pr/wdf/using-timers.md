@@ -90,15 +90,15 @@ The following table shows examples of timer behavior based on different values t
 </tbody>
 </table>
 
- 
+ 
 
 For more information about high resolution timers, see [High-Resolution Timers](https://msdn.microsoft.com/library/windows/hardware/dn265247).
 
 For more information about how timer accuracy is related to the granularity of the system clock, see [Timer Accuracy](https://msdn.microsoft.com/library/windows/hardware/jj602805).
 
- 
+ 
 
- 
+ 
 
 
 

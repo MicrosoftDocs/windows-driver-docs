@@ -46,9 +46,9 @@ If the driver loads correctly, Device Manager should have a Generic Bluetooth Ad
 
 If the driver failed to start, for example, if Windows returned a start error code, examine the event log to help determine the cause.
 
- 
+ 
 
- 
+ 
 
 
 

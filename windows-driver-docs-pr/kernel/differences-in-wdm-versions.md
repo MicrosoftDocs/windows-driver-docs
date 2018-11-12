@@ -56,9 +56,9 @@ Kernel-mode WDM drivers for Windows 98/Me must follow certain guidelines for usi
 
 Windows 98/Me provides a fixed number of worker threads that might not be adequate for some drivers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -239,7 +239,6 @@ public:
     ULONG  m_AppendBufferChars;
     PSTR  m_AppendAt;
 };
-
 ```
 
 ## <span id="Members"></span><span id="members"></span><span id="MEMBERS"></span>Members
@@ -352,9 +351,9 @@ A character buffer used to return strings from the extension library to the engi
 <span id="m_AppendBufferChars"></span><span id="m_appendbufferchars"></span><span id="M_APPENDBUFFERCHARS"></span>**m\_AppendBufferChars**  
 The size, in characters, of the buffer **m\_AppendBuffer**.
 
- 
 
- 
+
+
 
 
 

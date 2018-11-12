@@ -25,11 +25,11 @@ WIA properties can be divided into the following functional categories:
 > [!NOTE]
 > The properties of any device that have no effect should be marked either read-only (required properties) or removed (all others).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

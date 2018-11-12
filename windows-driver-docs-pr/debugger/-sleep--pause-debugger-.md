@@ -52,7 +52,7 @@ Specifies the length of the pause, in milliseconds.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ The sleep time is in milliseconds and interpreted according to the default radix
 0:000> .sleep 10000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

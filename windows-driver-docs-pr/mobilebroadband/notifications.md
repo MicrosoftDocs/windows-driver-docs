@@ -27,9 +27,9 @@ Your app can receive background events to process SMS or USSD notifications. For
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

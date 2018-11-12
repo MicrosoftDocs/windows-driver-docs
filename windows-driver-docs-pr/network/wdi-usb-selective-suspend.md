@@ -22,9 +22,9 @@ In this section:
 [WDI USB resume sequence](wdi-usb-resume-sequence.md)
 
 [WDI USB remote wake sequence](wdi-usb-remote-wake-sequence.md)
- 
+ 
 
- 
+ 
 
 
 

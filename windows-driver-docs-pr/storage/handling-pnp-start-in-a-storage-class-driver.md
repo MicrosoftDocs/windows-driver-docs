@@ -30,9 +30,9 @@ A driver of a device of type FILE\_DEVICE\_DISK or FILE\_DEVICE\_MASS\_STORAGE c
 
 For more information about a storage class driver's *DispatchPnP* routine, see [Handling PnP Requests to Storage Peripherals](handling-pnp-requests-to-storage-peripherals.md). For more information about handling PnP start requests, see [Starting a Device](https://msdn.microsoft.com/library/windows/hardware/ff563849).
 
- 
+ 
 
- 
+ 
 
 
 

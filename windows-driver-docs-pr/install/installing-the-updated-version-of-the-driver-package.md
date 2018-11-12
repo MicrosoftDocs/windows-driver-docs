@@ -27,7 +27,7 @@ After you [configure Windows to rank driver signatures equally](configuring-wind
 
     **Note**  The [DevCon](https://msdn.microsoft.com/library/windows/hardware/ff544707) tool is provided in the WDK. For more information about its commands, see [DevCon Commands](https://msdn.microsoft.com/library/windows/hardware/ff544766).
 
-     
+     
 
 An alternative to the DevCon Remove command is to update the [driver package](driver-packages.md) by using one of the following:
 
@@ -37,9 +37,9 @@ An alternative to the DevCon Remove command is to update the [driver package](dr
 
 -   The DevCon Update command. For more information about this command, see [**DevCon Commands**](https://msdn.microsoft.com/library/windows/hardware/ff544766).
 
- 
+ 
 
- 
+ 
 
 
 

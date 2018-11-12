@@ -78,9 +78,9 @@ Starting with Windows 8, these additional properties are supported for user-mod
 
 [**KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY**](ksproperty-cameracontrol-video-stabilization-mode-property.md)
 
- 
+ 
 
- 
+ 
 
 
 

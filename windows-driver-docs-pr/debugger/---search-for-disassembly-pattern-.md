@@ -58,7 +58,7 @@ Specifies the number of instructions to search. If you omit *Size*, the search c
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,7 +88,7 @@ The **\#** command can search for text within any single part of the disassembly
 #  116d  0040116b 
 ```
 
-However, you cannot search for **mov eax\*** as a single unit, because **mov** and **eax** appear in different parts of the display. Instead, use **mov\*eax**.
+However, you cannot search for **mov eax\\*** as a single unit, because **mov** and **eax** appear in different parts of the display. Instead, use **mov\*eax**.
 
 As an additional example, you could issue the following command to search for the first reference to the **strlen** function after the entry point **main**.
 
@@ -106,9 +106,9 @@ When you omit *Pattern* or *Address*, their values are based on the previous use
 
 If you include *Pattern* or *Address*, its value is set to the entered value. If you omit *Address*, it is initialized to the current value of the program counter. If you omit *Pattern*, it is initialized to an empty pattern.
 
- 
+ 
 
- 
+ 
 
 
 

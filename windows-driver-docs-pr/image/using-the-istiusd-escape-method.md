@@ -45,9 +45,9 @@ The code samples in the following sections illustrate the use of pass-though fun
 
 [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Halftoning operations can be controlled by either GDI or driver software, or by 
 
 [Device-Supplied Halftoning](device-supplied-halftoning.md)
 
- 
+ 
 
- 
+ 
 
 
 

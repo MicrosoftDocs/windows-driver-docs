@@ -26,9 +26,9 @@ If you are running a debugging server,you might want to disable shell commands. 
 
 In WinDbg, you can use the [File | Map Network Drive](file---map-network-drive.md) and [File | Disconnect Network Drive](file---disconnect-network-drive.md) commands to control the network drive mappings. These changes always occur on the computer that WinDbg is running on, never on any computer that is remotely connected to WinDbg.
 
- 
+ 
 
- 
+ 
 
 
 

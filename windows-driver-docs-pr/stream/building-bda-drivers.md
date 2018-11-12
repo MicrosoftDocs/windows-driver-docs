@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 **Note**  Beginning with Windows 8, the WDK build environment no longer uses Build.exe. See [WDK and Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286). The following discussion applies only if you build your driver using the WDK Windows 7 version or earlier.
 
- 
+ 
 
 You can use the Microsoft Windows Driver Kit (WDK) to build your Broadcast Driver Architecture (BDA) driver. To build a BDA driver, open a WDK build environment window, change to the appropriate BDA driver's source code subdirectory of the WDK's main source directory, and use the **build** command. The **build** command gets instructions on how to build the BDA driver from the *Sources* file that resides in the BDA driver's source code subdirectory.
 

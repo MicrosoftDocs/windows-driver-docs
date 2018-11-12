@@ -31,65 +31,65 @@ The following table lists the kernel-mode video transport callback functions tha
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>DxBobNextField</em>](https://msdn.microsoft.com/library/windows/hardware/ff557409)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557409" data-raw-source="[&lt;em&gt;DxBobNextField&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557409)"><em>DxBobNextField</em></a></p></td>
 <td align="left"><p>Bobs the next field of interleaved data.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxEnableIRQ</em>](https://msdn.microsoft.com/library/windows/hardware/ff557413)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557413" data-raw-source="[&lt;em&gt;DxEnableIRQ&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557413)"><em>DxEnableIRQ</em></a></p></td>
 <td align="left"><p>Indicates to the miniport driver which IRQs should be enabled or disabled.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxFlipOverlay</em>](https://msdn.microsoft.com/library/windows/hardware/ff557417)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557417" data-raw-source="[&lt;em&gt;DxFlipOverlay&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557417)"><em>DxFlipOverlay</em></a></p></td>
 <td align="left"><p>Flips the overlay.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxFlipVideoPort</em>](https://msdn.microsoft.com/library/windows/hardware/ff557420)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557420" data-raw-source="[&lt;em&gt;DxFlipVideoPort&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557420)"><em>DxFlipVideoPort</em></a></p></td>
 <td align="left"><p>Flips the video port extensions (VPE) object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxGetCurrentAutoflip</em>](https://msdn.microsoft.com/library/windows/hardware/ff557427)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557427" data-raw-source="[&lt;em&gt;DxGetCurrentAutoflip&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557427)"><em>DxGetCurrentAutoflip</em></a></p></td>
 <td align="left"><p>Determines which surface is receiving the current field of video data for capture purposes.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxGetIRQInfo</em>](https://msdn.microsoft.com/library/windows/hardware/ff557428)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557428" data-raw-source="[&lt;em&gt;DxGetIRQInfo&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557428)"><em>DxGetIRQInfo</em></a></p></td>
 <td align="left"><p>Indicates that the driver manages the interrupt request.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxGetPolarity</em>](https://msdn.microsoft.com/library/windows/hardware/ff557431)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557431" data-raw-source="[&lt;em&gt;DxGetPolarity&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557431)"><em>DxGetPolarity</em></a></p></td>
 <td align="left"><p>Returns the polarity (even or odd) of the current field being written by the VPE object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxGetPreviousAutoflip</em>](https://msdn.microsoft.com/library/windows/hardware/ff557437)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557437" data-raw-source="[&lt;em&gt;DxGetPreviousAutoflip&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557437)"><em>DxGetPreviousAutoflip</em></a></p></td>
 <td align="left"><p>Determines which surface received the previous field of video data for capture purposes.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxGetTransferStatus</em>](https://msdn.microsoft.com/library/windows/hardware/ff557438)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557438" data-raw-source="[&lt;em&gt;DxGetTransferStatus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557438)"><em>DxGetTransferStatus</em></a></p></td>
 <td align="left"><p>Determines which hardware bus master completed.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxLock</em>](https://msdn.microsoft.com/library/windows/hardware/ff562880)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562880" data-raw-source="[&lt;em&gt;DxLock&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562880)"><em>DxLock</em></a></p></td>
 <td align="left"><p>Locks the frame buffer so that it can be accessed.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxSetState</em>](https://msdn.microsoft.com/library/windows/hardware/ff562882)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562882" data-raw-source="[&lt;em&gt;DxSetState&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562882)"><em>DxSetState</em></a></p></td>
 <td align="left"><p>Switches from bob mode to weave mode, and vice versa.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>DxSkipNextField</em>](https://msdn.microsoft.com/library/windows/hardware/ff562885)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562885" data-raw-source="[&lt;em&gt;DxSkipNextField&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562885)"><em>DxSkipNextField</em></a></p></td>
 <td align="left"><p>Skips or reenables the next field.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>DxTransfer</em>](https://msdn.microsoft.com/library/windows/hardware/ff562887)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562887" data-raw-source="[&lt;em&gt;DxTransfer&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562887)"><em>DxTransfer</em></a></p></td>
 <td align="left"><p>Bus masters data from a surface to the buffer specified in the memory descriptor list (MDL).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

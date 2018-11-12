@@ -54,13 +54,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Relationships](relationships.md)</p></td>
-<td><p>The [Relationships](relationships.md) element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
+<td><p><a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a></p></td>
+<td><p>The <a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a> element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,9 +76,9 @@ In Windows 8.1 and Windows 10, the ExperienceID is created by the Service Meta
 
 In Windows 8 the ExperienceID can be specified by the service metadata developer, or automatically generated and added to the service metadata using the [Device Metadata Authoring Wizard](https://go.microsoft.com/fwlink/?linkid=620032). If the ExperienceID is not specified in the service metadata package, the Windows Dev Center Dashboard creates a GUID and updates the ExperienceID element within the metadata package when the mobile network operator or mobile virtual network operator submits the service metadata package.
 
- 
+ 
 
- 
+ 
 
 
 

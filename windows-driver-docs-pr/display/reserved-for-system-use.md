@@ -18,9 +18,9 @@ The following headers contain functions, structures, and enumerations that are r
 * [D3dumddi.h](d3dumddi-h---reserved.md)
 * [Dispmprt.h](dispmprt-h---reserved.md)
 * [Dxgiddi.h](dxgiddi-h---reserved.md)
- 
+ 
 
- 
+ 
 
 
 

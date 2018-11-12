@@ -205,9 +205,9 @@ In this example, the first bit is 0 and therefore the critical section is locked
 
 For information about how to debug critical section time outs, see [Critical Section Time Outs](critical-section-time-outs.md). For general information about critical sections, see the Microsoft Windows SDK, the Windows Driver Kit (WDK), or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

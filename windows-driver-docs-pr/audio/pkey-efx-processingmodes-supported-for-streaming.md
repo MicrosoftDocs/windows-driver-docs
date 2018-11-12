@@ -34,9 +34,9 @@ HKR,FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SI
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

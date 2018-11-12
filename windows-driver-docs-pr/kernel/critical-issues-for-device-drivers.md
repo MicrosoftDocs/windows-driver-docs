@@ -19,9 +19,9 @@ When you develop device drivers, you should consider the following critical issu
 
 [Hot Replace of Partition Units](hot-replace-of-partition-units.md)
 
- 
+ 
 
- 
+ 
 
 
 

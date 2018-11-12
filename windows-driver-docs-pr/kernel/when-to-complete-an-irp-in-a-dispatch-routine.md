@@ -44,9 +44,9 @@ A dispatch routine in a lowest-level driver should complete an IRP according to 
 
 Otherwise, the dispatch routine must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422), queue the IRP to other driver routines for further processing, and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

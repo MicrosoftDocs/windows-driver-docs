@@ -76,9 +76,9 @@ This procedure gives you the most control over the display. You can copy the mes
 
 The messages are copied in a tab-delimited format. You can paste them into a text file or spreadsheet file for saving and analysis.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ An APO commonly provides a UI that allows a user to configure the effects. This 
 
 **Note**   Manufacturers can replace this property page with a custom property page that is designed to support their APOs. Manufacturers can also opt to not have any UI at all, if their custom APO does not have user-accessible settings.
 
- 
+ 
 
 The standard enhancements tab is shown below.
 
@@ -145,7 +145,7 @@ There are six projects in the SYSVAD sample The PropPageExtensions project conta
 | **Project**        | **Description**                                            |
 | PropPageExtensions | Sample code for example custom property page UI extensions |
 
- 
+ 
 
 The following code samples are useful to look at as you work on developing your custom UI.
 
@@ -159,7 +159,7 @@ The following code samples are useful to look at as you work on developing your 
 | Parts.cpp               | Implementation of CPart and derived classes.                                                         |
 | TopologyExaminers.cpp   | Implementation of methods to support examining the audio topology, such as connectors and endpoints. |
 
- 
+ 
 
 The following header files are used in the property page extensions sample.
 
@@ -172,7 +172,7 @@ The following header files are used in the property page extensions sample.
 | parts.h               |
 | topologyexaminers.h   |
 
- 
+ 
 
 To become familiar with the PropPageExtensions sample, you might want to review the headers and then examine the source code related to defining the text on the properties page. If your requirements are similar to what the sample code provides, you may be able to reuse much of the code that creates and updates the custom UI page.
 

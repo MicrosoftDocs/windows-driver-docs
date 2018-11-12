@@ -15,7 +15,7 @@ Breakpoints that are controlled by the processor at the request of the debugger 
 
 **Note**   Although the term *data breakpoint* is commonly used as a synonym for *processor breakpoint*, this term can be misleading. There are two fundamental types of breakpoints: processor breakpoints, which are controlled by the processor, and software breakpoints, which are controlled by the debugger. Processor breakpoints are usually set on program data -- this is the reason they are called "data breakpoints" -- but they can also be set on executable code. Software breakpoints are usually set on executable code, but they can also be set on program data. Unfortunately, it is common in debugging literature to refer to processor breakpoints as "data breakpoints", even when they are set on executable code.
 
- 
+ 
 
 ### <span id="processor_breakpoints"></span><span id="PROCESSOR_BREAKPOINTS"></span>Processor Breakpoints
 
@@ -52,7 +52,7 @@ A processor breakpoint is triggered when a specific memory location is accessed.
 </tbody>
 </table>
 
- 
+ 
 
 Each processor breakpoint has a size associated with it. For example, a **w** (write) processor breakpoint could be set at the address 0x70001008 with a size of four bytes. This would monitor the block of addresses from 0x70001008 to 0x7000100B, inclusive. If this block of memory is written to, the breakpoint will be triggered.
 
@@ -98,9 +98,9 @@ The WinDbg **Breakpoints** dialog box displays all breakpoints, indicating proce
 
 Processor breakpoints are stored in the processor's debug registers. It is possible to set a breakpoint by manually editing a debug register value, but this is strongly discouraged.
 
- 
+ 
 
- 
+ 
 
 
 

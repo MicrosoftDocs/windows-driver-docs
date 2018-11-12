@@ -29,9 +29,9 @@ These topics discuss solutions for tasks you can perform by using the Windows Di
 
 [Registering Hardware Information](registering-hardware-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ The current event's instruction pointer is returned by the [**Request**](request
 
 [**DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET**](debug-request-get-captured-event-code-offset.md)
 
- 
+ 
 
- 
+ 
 
 
 

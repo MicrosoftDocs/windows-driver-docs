@@ -30,9 +30,9 @@ The caller can use [**GetDisplayConfigBufferSizes**](https://msdn.microsoft.com/
 
 [**GetDisplayConfigBufferSizes**](https://msdn.microsoft.com/library/windows/hardware/ff566772) is always called before calling [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215).
 
- 
+ 
 
- 
+ 
 
 
 

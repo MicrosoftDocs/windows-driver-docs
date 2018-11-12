@@ -25,9 +25,9 @@ The proper default value is shown in this figure:
 
 ![save as dialog box that has unicode encoding](images/saveasdialogunicode.jpg)
 
- 
+ 
 
- 
+ 
 
 
 

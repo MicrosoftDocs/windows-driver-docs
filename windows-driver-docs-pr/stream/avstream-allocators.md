@@ -53,9 +53,9 @@ A kernel-mode allocator is only chosen if the connection is in kernel mode. In a
 
 Also see [AVStream DMA Services](avstream-dma-services.md) and [Stream Pointers](stream-pointers.md).
 
- 
+ 
 
- 
+ 
 
 
 

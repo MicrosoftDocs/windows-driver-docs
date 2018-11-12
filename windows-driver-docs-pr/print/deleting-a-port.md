@@ -32,9 +32,9 @@ The port monitor UI DLL's **DeletePortUI** function should perform the following
 
 For more information about these operations, see the description of [**DeletePortUI**](https://msdn.microsoft.com/library/windows/hardware/ff547432).
 
- 
+ 
 
- 
+ 
 
 
 

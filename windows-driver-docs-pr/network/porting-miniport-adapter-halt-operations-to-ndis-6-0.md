@@ -27,9 +27,9 @@ For more information about halting an adapter, see [Halting a Miniport Adapter](
 
 [Miniport Adapter States and Operations](miniport-adapter-states-and-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ Serenum\\*XxxxYyyy*
 
 Where: *Xxxx* is a field of four ASCII characters that specify the EISA Manufacturing ID; *Yyyy* is a field of four ASCII characters that specify the Product ID. Serenum IDs are documented in the [Plug and Play External COM Device Specification](https://msdn.microsoft.com/windows/hardware/gg463189.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

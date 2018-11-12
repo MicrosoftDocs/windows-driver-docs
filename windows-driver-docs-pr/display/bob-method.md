@@ -28,9 +28,9 @@ The bob method produces 60 (NTSC) progressive frames per second and retains all 
 
 By default, DirectShow uses the bob method for correcting interlaced display.
 
- 
+ 
 
- 
+ 
 
 
 

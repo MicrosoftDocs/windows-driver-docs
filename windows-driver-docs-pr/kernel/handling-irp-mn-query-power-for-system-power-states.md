@@ -42,9 +42,9 @@ Because the power manager sends the system query IRP to each device stack on the
 
 Usually, however, a driver receives a system set-power IRP following a system query IRP. Regardless, a driver must be ready to change the system power state even if the driver fails a query-power IRP.
 
- 
+ 
 
- 
+ 
 
 
 

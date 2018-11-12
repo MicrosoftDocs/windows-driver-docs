@@ -20,9 +20,9 @@ A DirectX 9.0 version driver must support new operation codes that set the rende
 
 [Verifying Validity of Render Target](verifying-validity-of-render-target.md)
 
- 
+ 
 
- 
+ 
 
 
 

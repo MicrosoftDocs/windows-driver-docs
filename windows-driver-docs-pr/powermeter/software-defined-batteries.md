@@ -42,7 +42,7 @@ The topic starts by introducing the Simple Age Balancing SDB algorithm for a hyp
 The MSR research paper on Software Defined Batteries can be found here: [https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf](https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf). 
 
 This topic reprises select ideas described in this paper and presents them with a view of productizing software based battery age balancing feature in laptops and other mobile devices. 
- 
+
 Imagine a two battery system. Where one battery is a non removable battery, situated next to the SOC – let’s call this *internal battery*. The other battery is hot swappable battery, situated next to a removable keyboard – let’s call this *external battery*. 
 
 *A Multi-Battery System*
@@ -69,8 +69,8 @@ The simple age balancing algorithm may be put to use only when there is enough c
 
 The OEM is free to choose the constraints and conditions when the simple age balancing algorithm is not put into effect, besides when either internal or external batteries are out of power. For example the OEM may choose to not perform any age balancing when:
 
-1.	The SOC/Processor is running in high performance mode
-2.	The system is thermally unstable
+1.  The SOC/Processor is running in high performance mode
+2.  The system is thermally unstable
 
 When the simple age balancing algorithm is not put in use (because of one or more conditions described above), the logic will revert back to OEM’s proprietary battery usage policy as depicted by process box (3) in the above flowchart. Process box (3) is the logic OEM would have put into effect if SDB was not supported.
 
@@ -81,9 +81,9 @@ The simple age balancing SDB algorithm attempts to use the battery that is healt
 
 In the two battery system described above, consider the following situation:
 
-1.	The user is expected to use the system long enough until charge in both internal and external Batteries is exhausted.
+1.  The user is expected to use the system long enough until charge in both internal and external Batteries is exhausted.
 
-2.	The external battery has aged more compared to the internal battery.
+2.  The external battery has aged more compared to the internal battery.
 
 When the simple age balancing algorithm is exercised on this system it will attempt to deplete the charge stored in the internal battery first (based on condition #1 and #2 listed above). When user decides to detach the external battery after a while, it would result in a bad user experience because the battery capacity made available for use would dramatically decrease once external battery is detached as the internal battery would be used up.
 
@@ -137,9 +137,9 @@ HPMI has intimate knowledge of the underlying hardware configuration and state, 
 
 To implement the SDB feature, the HPMI driver will:
 
-1.	Register itself with Windows.
-2.	Advertise SDB Support.
-3.	Consume SDB control parameters provided by Windows.
+1.  Register itself with Windows.
+2.  Advertise SDB Support.
+3.  Consume SDB control parameters provided by Windows.
 
 Multi-battery systems that support SDB are required to implement HPMI interface going forward. The HPMI API protocol is a new standard for implementing multiple battery systems.
 
@@ -217,7 +217,6 @@ Windows will issue this IOCL to HPMI once after a new HPMI driver instance is di
 #define IOCTL_HPMI_QUERY_CAPABILITIES                     
     CTL_CODE(FILE_DEVICE_BATTERY, 0x200, 
              METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
-
 ```
 
 ```cpp
@@ -234,7 +233,6 @@ typedef struct _HPMI_QUERY_CAPABILITIES {
     ULONG Version;
 
 } HPMI_QUERY_CAPABILITIES, *PHPMI_QUERY_CAPABILITIES;
-
 ```
 
 ```cpp
@@ -258,7 +256,6 @@ typedef struct _HPMI_QUERY_CAPABILITIES {
     (0x00000000)    // HPMI supports no capabilities.
 #define HPMI_CAPABILITY_SDB_OEM_SIMPLE_AGE_BALANCING        
     (0x00000001)    // OEM device specific age balancing SDB support
-
 ```
 
 ```cpp
@@ -271,7 +268,6 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
     ULONG Version;
 
     //
-
 ```
 
 
@@ -307,7 +303,7 @@ HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adap
 // HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS service.
 //
 
-#define IOCTL_HPMI_BATTERY_UTILIZATION_HINT             	
+#define IOCTL_HPMI_BATTERY_UTILIZATION_HINT                 
     CTL_CODE(FILE_DEVICE_BATTERY, 0x201, 
              METHOD_BUFFERED, FILE_READ_ACCESS | FILE_WRITE_ACCESS)
 
@@ -329,7 +325,6 @@ typedef enum _HPMI_HINT_BOOL {
     HpmiBoolMax
 
 } HPMI_HINT_BOOL, *PHPMI_HINT_BOOL;
-
 ```
 
 ```cpp
@@ -365,7 +360,6 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
     HPMI_HINT_BOOL PreserveNonHotSwappableBatteries;
 
 } HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT;
-
 ```
 
 ```cpp
@@ -373,7 +367,6 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
     (1)
 #define HPMI_BATTERY_UTILIZATION_HINT_SIZEOF_VERSION_1       
     sizeof(HPMI_BATTERY_UTILIZATION_HINT)
-
 ```
 
 

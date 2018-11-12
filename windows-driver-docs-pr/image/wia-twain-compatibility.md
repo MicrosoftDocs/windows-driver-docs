@@ -29,11 +29,11 @@ Either way, you should rebuild your tree so that it reflects any changes made to
 
 **Note**   While your TWAIN and WIA drivers may exist in the same DLL, WIA and TWAIN drivers cannot share the same UI. Each driver must have its own UI.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

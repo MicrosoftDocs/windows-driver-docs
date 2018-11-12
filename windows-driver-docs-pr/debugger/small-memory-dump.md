@@ -51,9 +51,9 @@ If a second bug check occurs and a second Small Memory Dump file is created, the
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

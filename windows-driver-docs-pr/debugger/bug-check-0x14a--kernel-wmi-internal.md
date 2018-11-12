@@ -58,11 +58,11 @@ Parameter 2: Pointer to the kernel WMI datasource.</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

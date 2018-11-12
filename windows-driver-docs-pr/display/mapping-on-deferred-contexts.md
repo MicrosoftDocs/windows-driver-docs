@@ -24,9 +24,9 @@ Each resource map can provide the pointers directly to the aliased resource. The
 
 A call to the driver's [**ResourceCopy**](https://msdn.microsoft.com/library/windows/hardware/ff569489) function to copy a resource to a dynamic resource must still be supported both on the deferred context, after map-discard calls, and on the immediate context after a call to the driver's [**CommandListExecute**](https://msdn.microsoft.com/library/windows/hardware/ff539476) function, where the local deferred context resource is ideally swapped into the immediate context version of the "current" resource. A call to the driver's **ResourceCopy** function with dynamic-resource destinations is not frequently used, so you should use a copy-on-write mechanism. If **ResourceCopy** is called that would affect either the dynamic resource on the deferred context after a map-discard call or on the immediate context that holds a command list local resource as current, a new resource should be conceptually allocated to provide the new destination of the copy, and the old resource must be copied to the new resource (if the operation is a [**ResourceCopyRegion**](https://msdn.microsoft.com/library/windows/hardware/ff569490)).
 
- 
+ 
 
- 
+ 
 
 
 

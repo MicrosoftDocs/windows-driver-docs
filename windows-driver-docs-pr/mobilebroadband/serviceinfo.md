@@ -42,48 +42,47 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ServiceCategoryList](servicecategorylist.md)</p></td>
+<td><p><a href="servicecategorylist.md" data-raw-source="[ServiceCategoryList](servicecategorylist.md)">ServiceCategoryList</a></p></td>
 <td><p>Specifies one or more functional categories that apply to the service.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ServiceName](servicename.md)</p></td>
+<td><p><a href="servicename.md" data-raw-source="[ServiceName](servicename.md)">ServiceName</a></p></td>
 <td><p>Not used.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ServiceDescription1](servicedescription1.md)</p></td>
+<td><p><a href="servicedescription1.md" data-raw-source="[ServiceDescription1](servicedescription1.md)">ServiceDescription1</a></p></td>
 <td><p>Specifies descriptive information about the service. This is applied to the description field of the wireless wide area network (WWAN) connection profile. It is not displayed in the user interface to the end user.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ServiceDescription2](servicedescription2.md)</p></td>
+<td><p><a href="servicedescription2.md" data-raw-source="[ServiceDescription2](servicedescription2.md)">ServiceDescription2</a></p></td>
 <td><p>Not used.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ServiceNumber](servicenumber.md)</p></td>
+<td><p><a href="servicenumber.md" data-raw-source="[ServiceNumber](servicenumber.md)">ServiceNumber</a></p></td>
 <td><p>This is a self-generated GUID that identifies the operator that is submitting this package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ServiceProvider](serviceprovider.md)</p></td>
+<td><p><a href="serviceprovider.md" data-raw-source="[ServiceProvider](serviceprovider.md)">ServiceProvider</a></p></td>
 <td><p>This appears in Windows Connection Manager as the home network display name.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ServiceIconFile](serviceiconfile.md)</p></td>
+<td><p><a href="serviceiconfile.md" data-raw-source="[ServiceIconFile](serviceiconfile.md)">ServiceIconFile</a></p></td>
 <td><p>Specifies the name of the service icon file in the service metadata package.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This is listed as optional in the schema. However, it is required in order to pass validation when the package is submitted to the Windows Dev Center Dashboard.</p>
+<strong>Note</strong><br/><p>This is listed as optional in the schema. However, it is required in order to pass validation when the package is submitted to the Windows Dev Center Dashboard.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[ServiceSpecificExtension](servicespecificextension.md)</p></td>
-<td><p>References the location of the file that is specific to this ServiceCategory. For Windows 8, Windows 8.1, or Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) service metadata packages, this is the location of MobileBroadbandInfo.xml.</p></td>
+<td><p><a href="servicespecificextension.md" data-raw-source="[ServiceSpecificExtension](servicespecificextension.md)">ServiceSpecificExtension</a></p></td>
+<td><p>References the location of the file that is specific to this ServiceCategory. For Windows 8, Windows 8.1, or Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) service metadata packages, this is the location of MobileBroadbandInfo.xml.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -118,9 +117,9 @@ The ServiceInfo element must contain one instance of the [ServiceCategoryList](s
 
 The ServiceInfo element is required.
 
- 
 
- 
+
+
 
 
 

@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementChanges</strong>](elementchanges.md)</p></td>
+<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -279,9 +279,9 @@ The following code example shows how the device reports updated scanner configur
 
 [**ScannerDescription**](scannerdescription.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,11 +40,11 @@ If this registry value does not exist in the registry or has a value that is not
 
 **Note**  This registry value does not exist in the registry by default. You must create the value in order to debug the kernel-mode signature verification.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

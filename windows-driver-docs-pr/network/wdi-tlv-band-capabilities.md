@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The identifier for the band.                  |
 | UINT8  | Specifies whether the band is enabled or not. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ The User Mode Monitor has a set of 'Actions' that it can take when a given debug
 | Minidump   | Writes out a minidump and saves it to the Log.                         |
 | Ignore     | Does nothing.                                                          |
 
- 
+ 
 
 ## <span id="Supported_User_Mode_Monitor__Events_"></span><span id="supported_user_mode_monitor__events_"></span><span id="SUPPORTED_USER_MODE_MONITOR__EVENTS_"></span>Supported User Mode Monitor 'Events'
 
@@ -97,7 +97,7 @@ The User Mode Monitor surfaces 'events' that can apply one of the 'actions' that
 | WOW64 single step exception          | LogError (Ignore)                             |
 | Other exception                      | LogError (LogError)                           |
 
- 
+ 
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -165,9 +165,9 @@ The 'test' is very straight forward, let's look at possible outcomes:
 
 With UMM enabled, the errant behavior is reported immediately, and directly affects the test result. This is a much better testing pattern since errors are reported as early as possible and extra context is provided to help with debugging or understanding test failures.
 
- 
+ 
 
- 
+ 
 
 
 

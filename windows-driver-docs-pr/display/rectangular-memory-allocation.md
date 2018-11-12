@@ -71,9 +71,9 @@ The following pseudocode shows how rectangular memory heaps are set up:
 
 The memory heap starting point is set to the starting address of the primary surface plus the width of the primary surface. The width is determined by the pitch minus the width of the primary surface. The height is set to the height of the primary surface. The surface capabilities are set to zero to indicate that there are no imposed surface use restrictions (therefore, the surface can be used for sprites or any other type of surface).
 
- 
+ 
 
- 
+ 
 
 
 

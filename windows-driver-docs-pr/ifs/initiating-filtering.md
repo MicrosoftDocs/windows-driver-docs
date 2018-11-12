@@ -30,9 +30,9 @@ if( !NT_SUCCESS( status )) {
 
 If the call to [**FltStartFiltering**](https://msdn.microsoft.com/library/windows/hardware/ff544569) does not return STATUS\_SUCCESS, the minifilter driver must call [**FltUnregisterFilter**](https://msdn.microsoft.com/library/windows/hardware/ff544606) to unregister itself.
 
- 
+ 
 
- 
+ 
 
 
 

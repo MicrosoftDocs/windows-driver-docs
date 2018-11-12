@@ -24,7 +24,7 @@ A *DDInstall*.**Services** section is required in an INF file that installs a Ne
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 An **AddService** directive in a *DDInstall*.**Services** section can also reference an *error-log-install-section* that installs an error log for a component. An error log is optional for all network components.
 
@@ -54,9 +54,9 @@ HKR,,TypesSupported,0x00010001,7
 
 The *ServiceName* parameter of the **AddService** directive, which in the above example is **a1**(the first **AddService** parameter), must match the component's **Ndi\\Service** value. For more information, see [Adding Service-Related Values to the Ndi Key](adding-service-related-values-to-the-ndi-key.md).
 
- 
+ 
 
- 
+ 
 
 
 

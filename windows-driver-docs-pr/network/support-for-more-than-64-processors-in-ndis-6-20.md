@@ -30,9 +30,9 @@ To support more than 64 processors, NDIS 6.20 and later provide updated versions
 
 Some of the NDIS device driver interface elements are obsolete for NDIS 6.20 and later drivers. For more information about obsolete interfaces, see [Obsolete Interfaces in NDIS 6.20](obsolete-interfaces-in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

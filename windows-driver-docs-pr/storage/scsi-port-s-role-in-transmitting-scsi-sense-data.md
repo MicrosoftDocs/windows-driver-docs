@@ -19,9 +19,9 @@ SCSI Port is also responsible for translating the request sense data into the ap
 
 When SCSI Port completes the IRP\_MJ\_SCSI IRP associated with the SRB, it must indicate that it is returning request-sense information by setting the **SrbStatus** member of the SRB to SRB\_STATUS\_AUTOSENSE\_VALID.
 
- 
+ 
 
- 
+ 
 
 
 

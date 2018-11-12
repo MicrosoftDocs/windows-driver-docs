@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The [**IPrintTicketProvider::ConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/hardware/ff554363) method is called by the print subsystem to convert the PrintTicket object to a [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.
 
- 
+ 
 
- 
+ 
 
 
 

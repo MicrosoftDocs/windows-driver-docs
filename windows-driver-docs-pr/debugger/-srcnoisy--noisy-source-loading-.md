@@ -64,7 +64,7 @@ Displays all information displayed by options 1 and 2.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ With no parameters, **.srcnoisy** will display the current status of noisy sourc
 
 Noisy source loading should not be confused with noisy symbol loading -- that is controlled by the [**!sym noisy**](-sym.md) extension and by other means of controlling the [SYMOPT\_DEBUG](symbol-options.md#symopt-debug) setting.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The NTFS\_FILE\_SYSTEM bug check has a value of 0x00000024. This indicates a pro
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -92,9 +92,9 @@ Resolution
 
 In the past, another possible cause of this stop code is depletion of nonpaged pool memory. If the nonpaged pool memory is completely depleted, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver requiring nonpaged pool memory can also trigger this error.
 
- 
+ 
 
- 
+ 
 
 
 

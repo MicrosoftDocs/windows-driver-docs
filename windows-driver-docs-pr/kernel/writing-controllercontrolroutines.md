@@ -22,11 +22,11 @@ When a driver calls [**IoAllocateController**](https://msdn.microsoft.com/librar
 
 **Note**  WDM drivers cannot use controller objects and *ControllerControl* routines.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

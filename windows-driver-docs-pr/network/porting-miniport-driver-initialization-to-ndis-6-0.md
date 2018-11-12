@@ -25,9 +25,9 @@ To support NDIS 6.0, update the miniport driver's [**DriverEntry**](https://msdn
 
 [Registering Optional NDIS 6.0 Entry Points for Miniport Drivers](registering-optional-ndis-6-0-entry-points-for-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

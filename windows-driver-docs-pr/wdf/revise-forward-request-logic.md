@@ -14,9 +14,9 @@ If a driver cannot complete a request by itself, it passes the request down the 
 
 For information about how a WDF driver passes a request down to the next lower driver in the stack, see [Forwarding I/O Requests](forwarding-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

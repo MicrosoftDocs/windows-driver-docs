@@ -20,7 +20,7 @@ An INF file that installs a **NetClient** component that is a print provider mus
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 To create a **PrintProvider** section, add the **PrintProvider** extension to the *DDInstall* section for the component, as shown in the following example:
 ```cpp
@@ -50,9 +50,9 @@ PrintProviderDll  = "nwprovau.dll"
 DisplayName       = "%NWC_Network_Display_Name%"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

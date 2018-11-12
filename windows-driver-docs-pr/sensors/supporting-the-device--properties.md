@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 | SensorDdi.cpp           | CSensorDdi           |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The Windows sensor platform supports three categories of sensor properties:
 
@@ -28,7 +28,7 @@ Per data-field properties
 Properties that apply to the sensor’s data fields. For the accelerometer, these are the minimum, maximum, and resolution for each axis. The properties in this category are read only.
 Settable device properties
 Properties that an application can set. For the accelerometer, these are the change sensitivity and report interval.
- 
+ 
 
 The source file, SensorDdi.cpp, has three arrays of **PROPERTYKEY** structures that correspond to the three categories in the table above.
 
@@ -90,11 +90,11 @@ When a desktop, or WinRT, app sets the current report-interval, or, the change-s
 | **CSensorDevice::SetProperties**          | **CSensorDdi::OnSetProperties**  | Applies the new property using the property-key and value supplied by the app.       |
 | **CSensorDevice::ApplyUpdatedProperties** | **CSensorDevice::SetProperties** | Reapplies the new value since it may have altered the minimums stored by the driver. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

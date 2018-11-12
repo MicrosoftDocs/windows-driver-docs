@@ -35,7 +35,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 
 **Important**  Before you run IoAttack, you must have previously run IoSpy and then removed it from the test system. For more information, see [How to Perform Fuzz tests with IoSpy and IoAttack](how-to-perform-fuzz-tests-with-iospy-and-ioattack.md).
 
- 
+ 
 
 <table>
 <colgroup>
@@ -54,7 +54,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Disable I/O Spy on 1 or more devices. Uninstalls IoSpy and disables IOCTL and WMI filtering for all devices on the test system.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisableSupport.wsc</p>
 <p><strong>Test method:</strong> DisableIoSpy</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -68,14 +68,14 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Installs IoSpy on the test system and enables IOCTL and WMI filtering on one or more devices. The DQ parameter controls which devices the IoSpy filter driver will get installed on.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_EnableSupport.wsc</p>
 <p><strong>Test method:</strong> EnableIoSpy</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## IoSpy data file
 
@@ -83,9 +83,9 @@ After IoSpy is installed in a test system, it records the data sent through IOCT
 
 The *DFD* parameter for the **Enable I/O Spy** test specifies the path to the IoSpy data file. The default location is %SystemDrive%\\DriverTest\\IoSpy
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The driver can only specify the D3DFORMAT\_MEMBEROFGROUP\_ARGB flag for target s
 
 Note that although D3DFORMAT\_OP\_CONVERT\_TO\_ARGB and D3DFORMAT\_MEMBEROFGROUP\_ARGB indicate ARGB formats, the runtime also lets the driver specify surfaces with XRGB formats (for example, D3DFMT\_X1R5G5B5). If the driver specifies D3DFORMAT\_MEMBEROFGROUP\_ARGB or D3DFORMAT\_OP\_CONVERT\_TO\_ARGB with an invalid format, the runtime prevents the Direct3D HAL from loading.
 
- 
+ 
 
- 
+ 
 
 
 

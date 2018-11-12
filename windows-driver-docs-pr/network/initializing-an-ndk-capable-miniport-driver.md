@@ -33,7 +33,7 @@ The NDK-capable miniport driver must do the following when initializing the [**N
 
         **Note**  For a list of these mandatory OIDs, see [Mandatory OIDs for Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff557139).
 
-         
+         
 
 -   In the **SetOptionsHandler** member, the miniport driver must register a [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function as described in [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md) and the following MiniportSetOptions function section.
 
@@ -54,7 +54,7 @@ To register NDKPI entry points for these functions, the miniport driver's [*Mini
 
     **Note**  Pay particular attention to the **Header** member description. The miniport driver must set this member correctly to identify itself as an NDK-capable miniport driver.
 
-     
+     
 
 2.  Store the function entry points in the **OpenNDKAdapterHandler** and **CloseNDKAdapterHandler** members of the structure.
 
@@ -65,9 +65,9 @@ To register NDKPI entry points for these functions, the miniport driver's [*Mini
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

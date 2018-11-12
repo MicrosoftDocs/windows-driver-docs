@@ -16,7 +16,7 @@ The property key for the pedometer.
 |--|--|--|--|--|
 |PKEY_SensorData_SupportedStepTypes|VT_UI4|R/O|Required|The supported step types.|
 
- 
+ 
 
 For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
@@ -30,9 +30,9 @@ For more information about the data type shown in the **Type** column, see [PROP
 
 [Other sensor properties](other-sensor-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

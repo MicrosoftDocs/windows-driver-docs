@@ -142,9 +142,9 @@ class MPIO_DISK_HEALTH_CLASS
 
 When the class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DISK\_HEALTH\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff562350) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

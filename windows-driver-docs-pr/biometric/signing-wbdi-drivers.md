@@ -28,9 +28,9 @@ Boot-start drivers have the following characteristics:
 
 This topic does not cover the details of driver-signing requirements or procedures. For general information about signature requirements for drivers, see [Driver Signing](http://go.microsoft.com/fwlink/p/?linkid=201836).
 
- 
+ 
 
- 
+ 
 
 
 

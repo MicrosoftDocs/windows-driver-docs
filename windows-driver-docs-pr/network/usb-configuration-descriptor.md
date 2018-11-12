@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The device returns a Configuration Descriptor as defined in the USB Specification. See the USB Specification for details.
 
- 
+ 
 
- 
+ 
 
 
 

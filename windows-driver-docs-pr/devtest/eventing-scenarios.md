@@ -35,9 +35,9 @@ Pass-Fail criteria
 
 Subscribes to SimpleEvent with:
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
 
 The client can include an expiration of type **xs:duration**.
 
@@ -97,11 +97,11 @@ No event is received at the client.
 
 Subscribes to SimpleEvent with an expiration with:
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
 
--   The expiration duration must be long enough to complete step 4.2.2. The expiration must be of **xs:duration**.
+- The expiration duration must be long enough to complete step 4.2.2. The expiration must be of **xs:duration**.
 
 wsdbit\_client uses 60 minutes as the duration.
 
@@ -147,9 +147,9 @@ Event is received at client.
 
 Subscribes to SimpleEvent with
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
 
 The client can choose to include an expiration of type **xs:duration**.
 
@@ -163,9 +163,9 @@ Client receives the response and can go to step 4.3.3.
 
 Subscribes to SimpleEvent with:
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/IntegerEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/IntegerEvent**
 
 The client can choose to include an expiration of type **xs:duration**.
 
@@ -249,19 +249,19 @@ No event is received at the client.
 
 Subscribes to FaultingEvent with:
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/FaultingEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/FaultingEvent**
 
 Because this event is not supported, a **wsdp:FilterActionNotSupported** SOAP Fault must be sent.
 
 The failure to subscribe is observed at the client.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

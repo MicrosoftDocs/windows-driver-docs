@@ -31,9 +31,9 @@ This section contains the following topics:
 
 [Windows Vista sAPO Feature Reference](windows-vista-sapo-feature-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

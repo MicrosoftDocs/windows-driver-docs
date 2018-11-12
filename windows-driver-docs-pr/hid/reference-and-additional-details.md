@@ -16,9 +16,9 @@ The following references may prove helpful when creating your HID device:
 -   [HID USB homepage]( http://go.microsoft.com/fwlink/p/?LinkId=620758)
 -   [HID Usage Pages](http://go.microsoft.com/fwlink/p/?LinkId=620759)
 
- 
+ 
 
- 
+ 
 
 
 

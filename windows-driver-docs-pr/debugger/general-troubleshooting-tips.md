@@ -15,9 +15,9 @@ If your computer stops working and displays a blue screen, the computer has shut
 
 If you have experience with computers and want to try to recover from this error, follow the steps described in [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
- 
+ 
 
- 
+ 
 
 
 

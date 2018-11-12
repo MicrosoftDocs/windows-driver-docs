@@ -54,9 +54,9 @@ This section presents the following topics:
 
 [DRM Functions and Interfaces](drm-functions-and-interfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

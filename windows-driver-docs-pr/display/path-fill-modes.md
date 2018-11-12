@@ -34,9 +34,9 @@ The following figure shows how to apply both rules to the more complex situation
 
 In alternate fill mode, point A is inside because ray 1 passes through an odd number of line segments, while points B and C are outside, because rays 2 and 3 pass through an even number of segments. In winding-fill mode, points A and C are inside, because the sum of the forward (positive) and reverse (negative) line segments crossed by their rays, 1 and 3 respectively, is not zero, while point B is outside, because the sum of the forward and reverse line segments that ray 2 crosses is zero.
 
- 
+ 
 
- 
+ 
 
 
 

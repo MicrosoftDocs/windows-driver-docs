@@ -32,9 +32,9 @@ Because **KeAcquireSpinLockForDpc** and **KeAcquireInStackQueuedSpinLockForDpc**
 
 For more information about spin locks, see [Spin Locks](spin-locks.md).
 
- 
+ 
 
- 
+ 
 
 
 

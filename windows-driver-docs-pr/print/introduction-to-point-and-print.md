@@ -33,9 +33,9 @@ When a user application calls the **AddPrinterConnection** function (described i
 
 For more information, see [Supporting Point and Print During Printer Connections](supporting-point-and-print-during-printer-connections.md).
 
- 
+ 
 
- 
+ 
 
 
 

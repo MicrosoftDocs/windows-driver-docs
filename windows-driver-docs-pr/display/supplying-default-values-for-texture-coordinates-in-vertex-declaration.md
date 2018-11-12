@@ -27,9 +27,9 @@ The exception for [source parameter tokens](https://msdn.microsoft.com/library/w
 
 For this instruction, the source parameter tokens (f\#) are taken as 32-bit floats.
 
- 
+ 
 
- 
+ 
 
 
 

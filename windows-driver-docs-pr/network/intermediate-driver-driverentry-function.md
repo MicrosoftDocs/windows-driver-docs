@@ -47,9 +47,9 @@ The following topics further describe how to register intermediate drivers:
 
 [Registering an Intermediate Driver as a Protocol Driver](registering-an-intermediate-driver-as-a-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

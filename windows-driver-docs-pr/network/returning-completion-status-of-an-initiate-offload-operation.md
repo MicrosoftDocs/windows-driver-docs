@@ -72,9 +72,9 @@ The path maximum transmission unit (MTU) for the TCP connection is larger than w
 <a href="" id="ndis-status-offload-connection-rejected"></a>NDIS\_STATUS\_OFFLOAD\_CONNECTION\_REJECTED  
 The offload target failed to offload the connection because the offload target determined this connection is not a good candidate for offload.
 
- 
+ 
 
- 
+ 
 
 
 

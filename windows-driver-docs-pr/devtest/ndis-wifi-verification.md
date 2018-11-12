@@ -13,7 +13,7 @@ The NDIS/WIFI verification option determines whether an NDIS or WIFI driver corr
 
 **Note**  This option is available starting with Windows 8.1.
 
- 
+ 
 
 The NDIS/WIFI verification option applies rules to verify that your driver correctly processes OIDs in various contexts and follows Microsoft recommended best practices.
 
@@ -72,9 +72,9 @@ You can activate the NDIS/WIFI verification feature for one or more drivers by u
     4.  Select (check) **NDIS/WIFI verification**.
     5.  Restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

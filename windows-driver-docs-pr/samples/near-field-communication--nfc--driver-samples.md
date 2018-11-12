@@ -19,11 +19,11 @@ The driver sample in this directory provides a starting point for writing a cust
 |-----------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | NFC Simulator Driver Sample | [NfcSimulator](http://go.microsoft.com/fwlink/p/?LinkId=620199) | Demonstrates how to use User-Mode Driver Framework (UMDF) to write a Near-Field Communication (NFC) universal driver along with best practices. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

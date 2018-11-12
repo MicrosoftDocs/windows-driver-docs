@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 
 The SieExtPub.dll extension module is not part of Microsoft Debugging Tools for Windows, and SieExtPub.dll is no longer included in Debug Diagnostic Tool. Many of the extension commands that were in SieExtPub.dll are now in ext.dll. To see a list of extension commands in ext.dll, enter the following command in the debugger.
 
-**.extmatch /e ext \***
+**.extmatch /e ext \\***
 
 **Note**  The **!critlist** extension command is no longer available.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ If you want to explore the mechanics of how this information is stored, or if yo
 
 These tools and techniques do not work on Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

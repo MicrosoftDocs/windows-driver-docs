@@ -60,9 +60,9 @@ Only the following limited number of driver functions can be called with a disab
 
 -   [**DrvResetPDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556276)
 
- 
+ 
 
- 
+ 
 
 
 

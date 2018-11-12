@@ -74,7 +74,7 @@ Specifies an additional quantity of frames past the base pointer. For example, i
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,9 +95,9 @@ You can set the local context to a different stack frame to enable you to view n
 
 The local context is reset to the scope of the program counter if any application execution occurs. The local context is reset to the top stack frame if the register context is changed.
 
- 
+ 
 
- 
+ 
 
 
 

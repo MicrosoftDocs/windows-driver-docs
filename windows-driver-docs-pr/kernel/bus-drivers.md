@@ -38,9 +38,9 @@ Because a bus driver acts as the function driver for its controller, adapter, or
 
 A bus driver can be implemented as a driver/minidriver pair, the way a SCSI port/miniport driver pair drives a SCSI host bus adapter (HBA). In such driver pairs, the minidriver is linked to the second driver, which is a DLL.
 
- 
+ 
 
- 
+ 
 
 
 

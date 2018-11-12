@@ -28,9 +28,9 @@ By using this extended MIB, you can manage updates to printer information withou
 
 For more information about the extended MIB specification, see the [Printer Port Monitor MIB v1.0](http://go.microsoft.com/fwlink/p/?linkid=526286) Printer Working Group document.
 
- 
+ 
 
- 
+ 
 
 
 

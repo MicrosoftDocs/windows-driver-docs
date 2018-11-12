@@ -49,9 +49,9 @@ Each input buffer contains time-stamped messages. Each of these messages is put 
 
 One of the important things about this model is that there is no particular order other than the time stamp. These events are streamed in, so they can be added into the queue at any time before rendering. Everything is event-based with regard to time. For example, if the reference time is currently at 400 time units, then everything time-stamped to happen at time 400 is happening now. Events time-stamped to happen 10 units from now will happen at time 410.
 
- 
+ 
 
- 
+ 
 
 
 

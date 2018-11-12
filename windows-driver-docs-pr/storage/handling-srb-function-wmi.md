@@ -64,9 +64,9 @@ On receipt of an SRB in which the **Function** member is set to SRB\_FUNCTION\_W
 
 For more information about WMI, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,13 +31,13 @@ You can combine DEVPROP_TYPE_NTSTATUS only with the [**DEVPROP_TYPEMOD_ARRAY**](
 
 To set a property whose base data type is DEVPROP_TYPE_NTSTATUS, call the corresponding **SetupDiSet***Xxx* property function and set the function input parameters as follows:
 
--   Set the *PropertyType* parameter to DEVPROP_TYPE_NTSTATUS.
+- Set the *PropertyType* parameter to DEVPROP_TYPE_NTSTATUS.
 
--   Set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one NTSTATUS value.
+- Set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one NTSTATUS value.
 
--   Set the *PropertyBufferSize* parameter to **sizeof(**NTSTATUS**)**.
+- Set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>NTSTATUS<strong>)</strong>.
 
--   Set the remaining function parameters as appropriate to set the property.
+- Set the remaining function parameters as appropriate to set the property.
 
 ### Retrieving the Descriptive Text for a NTSTATUS Error Code Value
 
@@ -78,9 +78,9 @@ Requirements
 
 [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md)
 
- 
+ 
 
- 
+ 
 
 
 

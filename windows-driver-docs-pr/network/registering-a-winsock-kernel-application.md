@@ -89,7 +89,7 @@ Because the WSK subsystem might not yet be ready when a WSK application attempts
 
 **Important**  To avoid adversely affecting the start of other drivers and services, a WSK application that calls **WskCaptureProviderNPI** from its **DriverEntry** function should not set the *WaitTimeout* parameter to WSK\_INFINITE\_WAIT or an excessive wait time. Also, if a WSK application starts very early in the system startup phase, it should wait for the WSK subsystem to become ready in a different worker thread than the one in which **DriverEntry** runs.
 
- 
+ 
 
 If the call to **WskCaptureProviderNPI** fails with STATUS\_NOINTERFACE, the WSK application can use the [**WskQueryProviderCharacteristics**](https://msdn.microsoft.com/library/windows/hardware/ff571138) function to discover the range of WSK NPI versions supported by the WSK subsystem. The WSK application can call **WskDeregister** to unregister its current registration instance, and then register again by using a different [**WSK\_CLIENT\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff571159) instance that uses a supported WSK NPI version.
 
@@ -149,9 +149,9 @@ NTSTATUS
 
 A WSK application can call [**WskCaptureProviderNPI**](https://msdn.microsoft.com/library/windows/hardware/ff571122) more than once. For each call to **WskCaptureProviderNPI** that returns successfully, there must be a corresponding call to [**WskReleaseProviderNPI**](https://msdn.microsoft.com/library/windows/hardware/ff571145). A WSK application must not make any further calls to the functions in [**WSK\_PROVIDER\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff571175) after calling **WskReleaseProviderNPI**.
 
- 
+ 
 
- 
+ 
 
 
 

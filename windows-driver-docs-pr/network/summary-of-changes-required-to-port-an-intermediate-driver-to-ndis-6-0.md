@@ -69,9 +69,9 @@ To run in the NDIS 6.0 environment, NDIS 5.*x* intermediate drivers must be modi
 <a href="" id="binding-and-adapter--------states-------"></a>**Binding and Adapter States**   
 -   Include NDIS 6.0 pause and restart functionality. Optionally include support for pause and restart of virtual miniports when NDIS pauses an underlying driver stack. For more information about pause and restart, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ The **IWiaMiniDrv** interface, which is defined in *Wiamindr.h*, exposes most of
 
 For more information about these interfaces, see [Developing a WIA Driver: Basic Concepts](developing-a-wia-driver--basic-concepts.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ The DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM format has only the display sca
 
 For full functionality, the display miniport driver must support XR\_BIAS as a display format. The new D3DDDIFMT\_A2B10G10R10\_XR\_BIAS value was added to the [**D3DDDIFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff544312) enumeration for XR\_BIAS support.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ A reciprocal close request originates from a user-mode subsystem's close of the 
 
 Each of these requests is inherently synchronous.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ The following table describes the constants that are valid with the WIA\_DPS\_PR
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -84,9 +84,9 @@ Requirements
 
 [**WIA\_IPS\_PREVIEW**](wia-ips-preview.md)
 
- 
+ 
 
- 
+ 
 
 
 

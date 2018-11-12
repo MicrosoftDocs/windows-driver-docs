@@ -22,9 +22,9 @@ Pscript5 does not have an equivalent to the GDL parser, so for Pscript5 drivers,
 
 Because the PPD information does not depend on the configuration, you do not need to supply an input [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) parameter to these methods.
 
- 
+ 
 
- 
+ 
 
 
 

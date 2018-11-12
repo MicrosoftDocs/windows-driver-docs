@@ -178,9 +178,9 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)
 
- 
+ 
 
- 
+ 
 
 
 

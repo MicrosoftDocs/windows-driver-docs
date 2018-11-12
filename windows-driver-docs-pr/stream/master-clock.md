@@ -38,9 +38,9 @@ Indicates this stream can return the current stream time being processed in the 
 
 For more information, see [Master Clocks](master-clocks.md).
 
- 
+ 
 
- 
+ 
 
 
 

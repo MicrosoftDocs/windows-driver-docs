@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------------------------------|
 | UINT32 | An ID that uniquely identifies a service instance. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

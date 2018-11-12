@@ -38,9 +38,9 @@ A driver should not send events until WMI has enabled the event. After the event
 
 After **WmiFireEvent** returns, the driver resumes monitoring the event's trigger condition and sends the event each time its trigger condition occurs until WMI disables that event.
 
- 
+ 
 
- 
+ 
 
 
 

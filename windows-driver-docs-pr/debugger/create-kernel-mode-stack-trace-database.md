@@ -41,15 +41,15 @@ The **Create kernel mode stack trace database** flag creates a run-time stack tr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 GFlags displays this flag as a kernel flag setting, but it is not effective at run time, because the kernel is already started.
 
- 
+ 
 
- 
+ 
 
 
 

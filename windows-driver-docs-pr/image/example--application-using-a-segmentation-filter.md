@@ -89,9 +89,9 @@ pChildItem->QueryInterface(IID_IWiaTransfer,
 pWiaTransferChild->Download(lFlags, pMyWiaTransferCallback); 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

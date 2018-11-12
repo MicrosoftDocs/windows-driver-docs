@@ -74,7 +74,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -91,9 +91,9 @@ Each step executes a single assembly instruction or a single source line, depend
 
 When you are quickly stepping many times in WinDbg, the debugging information windows are updated after each step. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the refreshing of these windows.
 
- 
+ 
 
- 
+ 
 
 
 

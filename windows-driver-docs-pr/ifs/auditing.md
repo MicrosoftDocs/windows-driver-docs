@@ -32,9 +32,9 @@ Key routines for auditing include:
 
 There is no requirement for auditing. None of the sample file systems (FAT or CDFS, for example) in the IFS section of the WDK implement auditing. However, from a security perspective, auditing is important because it allows administrators to monitor the security behavior of the system.
 
- 
+ 
 
- 
+ 
 
 
 

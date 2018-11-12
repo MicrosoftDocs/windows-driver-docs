@@ -69,9 +69,9 @@ if (0 == (AccessState->Flags & TOKEN_HAS_RESTORE_PRIVILEGE)) {
 
 This code sample is a good example of where file system policy takes precedence. The caller did not request DELETE access or FILE\_WRITE\_DATA access, but such access is inherent in the operation being performed based upon the semantics of the file system.
 
- 
+ 
 
- 
+ 
 
 
 

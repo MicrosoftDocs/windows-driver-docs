@@ -13,10 +13,10 @@ Traditionally, LTE attach has been considered part of registration and Windows h
 
 To establish a default EPS bearer with the network the device must request a PDP context activation during the LTE attach procedure, which requires Access Point Name (APN) specification. Per the 3GPP standard, there are four scenarios where a device can specify APN when it is trying LTE attach:
 
-1.	The device specifies a specific LTE attach APN.
-2.	The device specifies a specific LTE attach APN but the network decides to let the device attach on another APN instead during roaming.
-3.	The device does not specify a LTE attach APN and lets network assign one back to the device.
-4.	The device registered from a 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
+1.  The device specifies a specific LTE attach APN.
+2.  The device specifies a specific LTE attach APN but the network decides to let the device attach on another APN instead during roaming.
+3.  The device does not specify a LTE attach APN and lets network assign one back to the device.
+4.  The device registered from a 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
 
 Today, all LTE attach APN information is provided by IHVs and OEMs directly in the modem for each provider for which it has configuration. However, it is not a fully scalable model for IHVs and OEMs to have all possible LTE attach APN settings for all operators around the globe. Starting in Windows 10, version 1703, new interfaces are defined for both NDIS OIDs and MBIM Microsoft proprietary CIDs to support LTE attach APN configuration from the OS. 
 
@@ -49,9 +49,9 @@ Although the LTE attach APN could be technically considered as a context, it dif
 
 LTE attach context activation with the network does not require an OS-explicit connection request as the OS is not aware of any modem self-initiated context activation. Default LTE attach context falls into this category. When the OS issues a MBIM_CID_CONNECT request to enable a PDP context and the given PDP context matches all the following, the modem should complete the CID activation request with success without bringing up a new over-the-air bearer with the network:
 
-1.	There is an existing enabled PDP context that is initiated by the modem and not made available to the OS.
-2.	The PDP context matches the specified APN in the CID request.
-3.	The IP type of the enabled PDP context is compatible with the requested IP type in the CID.
+1.  There is an existing enabled PDP context that is initiated by the modem and not made available to the OS.
+2.  The PDP context matches the specified APN in the CID request.
+3.  The IP type of the enabled PDP context is compatible with the requested IP type in the CID.
 
 This is important as the OS is not aware of all the PDP contexts that were initiated by the modem. This will reduce network noise and load. Otherwise, the modem should bring up a new over-the-air bearer matching OS APN specification as per a normal context activation request. The IP type compatibility is specified here:
 
@@ -66,8 +66,8 @@ This is important as the OS is not aware of all the PDP contexts that were initi
 
 When the OS issues a MBIM_CID_CONNECT request to deactivate a PDP context then the modem should check the following:
 
-1.	Whether the device is LTE attached and the context to be deactivated is the only enabled PDP context to maintain LTE registration
-2.	Whether the context to be deactivated is also used by the modem internally for any services that are not exposed to the OS
+1.  Whether the device is LTE attached and the context to be deactivated is the only enabled PDP context to maintain LTE registration
+2.  Whether the context to be deactivated is also used by the modem internally for any services that are not exposed to the OS
 
 If either of these are true, then the modem should complete the CID deactivation request but continue to maintain the over-the-air bearer with the network. Otherwise the modem should deactivate the context as per normal deactivation requests.
 
@@ -201,20 +201,20 @@ For Set operations only:
 
 Per 3GPP requirement, although a device can specify the default LTE attach context to be used when LTE attaching to the network without any enabled PDP context, there might be situations where the device will LTE-attach on a PDP context that differs from the default LTE attach context configured on the device. The following is a list of all possible scenarios:
 
-1.	The UE specifies a specific LTE attach APN.
-2.	The UE specifies a specific LTE attach APN but the network decides to let the device attach on another APN instead during roaming.
-3.	The UE does not specify a LTE attach APN and lets network assign one back to the device.
-4.	The UE registered from 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
+1.  The UE specifies a specific LTE attach APN.
+2.  The UE specifies a specific LTE attach APN but the network decides to let the device attach on another APN instead during roaming.
+3.  The UE does not specify a LTE attach APN and lets network assign one back to the device.
+4.  The UE registered from 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
 
 When the device default LTE attaches, it should send a notification of MBIM_CID_MS_LTE_ATTACH_STATUS to the OS to provide details of the PDP context on the latest LTE attachment. Default LTE attach occurs when one of the following scenarios is fulfilled:
 
-1.	Device initially attaches to the LTE network.
-2.	Device hands up from 2G/3G to LTE without any prior enabled PDP context.
+1.  Device initially attaches to the LTE network.
+2.  Device hands up from 2G/3G to LTE without any prior enabled PDP context.
 
 The LTE attach context returned from MBIM_CID_LTE_ATTACH_STATUS could be one of the following:
 
-1.	Default LTE attach context stored in the modem.
-2.	Default LTE attach context that was assigned back from the network.
+1.  Default LTE attach context stored in the modem.
+2.  Default LTE attach context that was assigned back from the network.
 
 During runtime, the OS should also be able to query what the last used attach information was for default LTE attach. The modem is expected to return the last known default LTE attach context.  If the device was handed off from LTE to 2G/3G network, it is expected for the modem to return the context that was used for the previous LTE attach. Every time that the device deregisters from the network, it is expected for the APN to become empty.
 
@@ -255,19 +255,20 @@ Set operations are not supported.
 
 The following MBIM_MS_LTE_ATTACH_STATUS structure shall be used in the InformationBuffer.
 
-| Offset | Size | Field | Type | Description |
-| --- | --- | --- | --- | --- |
-| 0 | 4 | LteAttachState | MBIM_MS_LTE_ATTACH_STATE | Indicates whether the device is currently attached to a LTE network or not.  For more information, see the  MBIM_MS_LTE_ATTACH_STATE table. |
-| 4 | 4 | IPType | MBIM_CONTEXT_IP_TYPES | For more information, see the MBIM_CONTEXT_IP_TYPE table. |
-| 8 | 4 | AccessStringOffset | OFFSET | Offset in data buffer to a string, AccessString, to access the network. For GSM-based networks, this would be an Access Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a special dial code such as "#777" or a Network Access Identifier (NAI) such as "foo@thephone-company.com". This member can be NULL to request that the network assign the default APN. Note: Not all networks support this NULL APN convention. Therefore, a connect failure caused by an invalid APN is a possible outcome. The size of the string should not exceed 100 characters. |
-| 12 | 4 | AccessStringSize | SIZE(0..200) | Size in bytes used for AccessString. |
-| 16 | 4 | UserNameOffset | OFFSET | Offset in bytes, calculated from the beginning of this structure, to a string, UserName, that represents the username to authenticate. This member can be NULL. |
-| 20 | 4 | UserNameSize | SIZE(0..510) | Size in bytes used for UserName. |
-| 24 | 4 | PasswordOffset | OFFSET | Offset in bytes, calculated from the beginning of this structure, to a string, Password, that represents the username's password. This member can be NULL. |
-| 28| 4 | PasswordSize | SIZE(0..510) | Size in bytes used for Password. |
-| 32 | 4 | Compression | MBIM_COMPRESSION | Specifies the compression to be used in the data connection for header and data. This member applies only to GSM-based devices. The Host sets this member to MBIMCompressionNone for CDMA-based devices. For more information, see the MBIM_COMPRESSION table. |
-| 36 | 4 | AuthProtocol | MBIM_AUTH_PROTOCOL | Authentication type to use for the PDP activation. For more information, see the MBIM_AUTH_PROTOCOL table. |
-| 40 | 4 |  | DataBuffer | DATABUFFER | The data buffer that contains AccessString, UserName, and Password. |
+
+| Offset | Size |       Field        |           Type           |                                                                                                                                                                                                                                                                                                    Description                                                                                                                                                                                                                                                                                                     |
+|--------|------|--------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   0    |  4   |   LteAttachState   | MBIM_MS_LTE_ATTACH_STATE |                                                                                                                                                                                                                                    Indicates whether the device is currently attached to a LTE network or not.  For more information, see the  MBIM_MS_LTE_ATTACH_STATE table.                                                                                                                                                                                                                                     |
+|   4    |  4   |       IPType       |  MBIM_CONTEXT_IP_TYPES   |                                                                                                                                                                                                                                                                             For more information, see the MBIM_CONTEXT_IP_TYPE table.                                                                                                                                                                                                                                                                              |
+|   8    |  4   | AccessStringOffset |          OFFSET          | Offset in data buffer to a string, AccessString, to access the network. For GSM-based networks, this would be an Access Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a special dial code such as "#777" or a Network Access Identifier (NAI) such as "foo@thephone-company.com". This member can be NULL to request that the network assign the default APN. Note: Not all networks support this NULL APN convention. Therefore, a connect failure caused by an invalid APN is a possible outcome. The size of the string should not exceed 100 characters. |
+|   12   |  4   |  AccessStringSize  |       SIZE(0..200)       |                                                                                                                                                                                                                                                                                        Size in bytes used for AccessString.                                                                                                                                                                                                                                                                                        |
+|   16   |  4   |   UserNameOffset   |          OFFSET          |                                                                                                                                                                                                                          Offset in bytes, calculated from the beginning of this structure, to a string, UserName, that represents the username to authenticate. This member can be NULL.                                                                                                                                                                                                                           |
+|   20   |  4   |    UserNameSize    |       SIZE(0..510)       |                                                                                                                                                                                                                                                                                          Size in bytes used for UserName.                                                                                                                                                                                                                                                                                          |
+|   24   |  4   |   PasswordOffset   |          OFFSET          |                                                                                                                                                                                                                             Offset in bytes, calculated from the beginning of this structure, to a string, Password, that represents the username's password. This member can be NULL.                                                                                                                                                                                                                             |
+|   28   |  4   |    PasswordSize    |       SIZE(0..510)       |                                                                                                                                                                                                                                                                                          Size in bytes used for Password.                                                                                                                                                                                                                                                                                          |
+|   32   |  4   |    Compression     |     MBIM_COMPRESSION     |                                                                                                                                                                           Specifies the compression to be used in the data connection for header and data. This member applies only to GSM-based devices. The Host sets this member to MBIMCompressionNone for CDMA-based devices. For more information, see the MBIM_COMPRESSION table.                                                                                                                                                                           |
+|   36   |  4   |    AuthProtocol    |    MBIM_AUTH_PROTOCOL    |                                                                                                                                                                                                                                                     Authentication type to use for the PDP activation. For more information, see the MBIM_AUTH_PROTOCOL table.                                                                                                                                                                                                                                                     |
+|   40   |  4   |                    |        DataBuffer        |                                                                                                                                                                                                                                                                                                     DATABUFFER                                                                                                                                                                                                                                                                                                     |
 
 The following data structure is used in the preceding table.
 

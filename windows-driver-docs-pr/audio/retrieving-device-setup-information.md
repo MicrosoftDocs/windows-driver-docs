@@ -63,9 +63,9 @@ For either of these calls, the caller selects the type of setup information to r
 
 For a description of the DeviceProperty*Xxx* values above, see [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203).
 
- 
+ 
 
- 
+ 
 
 
 

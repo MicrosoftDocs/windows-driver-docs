@@ -28,9 +28,9 @@ When the IRP completes, *ClaimDevice* should release the reference to the device
 
 A *ClaimDevice* routine can serve double duty as a routine to be called from a class driver's *RemoveDevice* routine, or from *AddDevice* if the driver succeeds in claiming the device but cannot create a device object. In such cases, *ClaimDevice* sends an SRB with the **Function** value SRB\_FUNCTION\_RELEASE\_DEVICE.
 
- 
+ 
 
- 
+ 
 
 
 

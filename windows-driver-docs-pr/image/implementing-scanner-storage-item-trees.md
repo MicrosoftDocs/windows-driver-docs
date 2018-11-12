@@ -20,9 +20,9 @@ This section includes:
 
 [Transferring Data from Scanner Storage](transferring-data-from-scanner-storage.md)
 
- 
+ 
 
- 
+ 
 
 
 

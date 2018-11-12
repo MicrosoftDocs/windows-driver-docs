@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 
 Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
-**Note**  
+**Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
 
- 
+
 ## <span id="cortana_end_user_experience">Cortana End User Experience
 
 
@@ -26,7 +26,7 @@ To understand the voice interaction experience available in Windows, review thes
 | [What is Cortana?](https://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
 | [Make Cortana yours](https://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
- 
+
 
 ## <span id="introduction_to__hey_cortana__voice_activation_and__learn_my_voice_"></span>Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
 
@@ -63,6 +63,7 @@ Voice activation is powered by a keyword spotter (KWS) which reacts if the key p
 ## <span id="glossary_of_terms"></span><span id="Glossary_Of_Terms"></span>Glossary of Terms
 
 This glossary summarizes terms related to voice activation.
+
 |                      |                                                                                                                                                           |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Staged Command        | Example: Hey Cortana <pause, wait for earcon> What’s the weather? This is sometimes referred to as “Two-shot command” or “Keyword-only” |
@@ -93,28 +94,28 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
     -   [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244264)
 -   Review the hardware recommendations in [Cortana Device Recommendation](https://msdn.microsoft.com/library/windows/hardware/dn957008). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
 -   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
--	Support both staged and chained commands.
--	Support “Hey Cortana” for each of the supported Cortana locales. 
--	The APOs (Audio Processing Objects) must provide the following effects: 
-    -	AEC
-    -	AGC
-    -	NS
+-   Support both staged and chained commands.
+-   Support “Hey Cortana” for each of the supported Cortana locales. 
+-   The APOs (Audio Processing Objects) must provide the following effects: 
+    -   AEC
+    -   AGC
+    -   NS
 -   Effects for Speech processing mode must be reported by the MFX APO.
--	The APO may perform format conversion as MFX.   
--	The APO must output the following format: 
-    -	16 kHz, mono, FLOAT.
+-   The APO may perform format conversion as MFX.   
+-   The APO must output the following format: 
+    -   16 kHz, mono, FLOAT.
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 
 Hardware-offloaded keyword spotter (HW KWS) WoV Requirements
 - HW KWS WoV is supported during S0 Working state and S0 sleep state also known as Modern Standby.  
 - HW KWS WoV is not supported from S3.  
- 
+
 AEC Requirements for HW KWS
 
 - For Windows Version 1709
     - To support HW KWS WoV for S0 sleep state (Modern Standby) AEC is not required.  
     - HW KWS WoV for S0 working state is not supported in Windows Version 1709.
- 
+
 - For Windows Version 1803 
     - HW KWS WoV for S0 working state is supported.
     - To enable HW KWS WoV for S0 working state, the APO must support AEC.
@@ -287,7 +288,7 @@ Audio is processed in a unique way for voice activation training. The following 
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Keyword_Recognition_System_Overview"></span><span id="keyword_recognition_system_overview"></span><span id="KEYWORD_RECOGNITION_SYSTEM_OVERVIEW"></span>Keyword Recognition System Overview
 
@@ -358,11 +359,11 @@ To burst data that has been captured prior to transition to KSSTATE\_RUN, the dr
 
 1. After the stream transitions to KSSTATE\_RUN, the driver immediately sets the buffer notification event because it already has data available.
 2. On this event, the OS calls GetReadPacket() to get information about the available data.
-    
+
     a. The driver returns the packet number of the valid captured data (0 for the first packet after the transition from KSSTATE\_STOP to KSSTATE\_RUN), from which the OS can derive the packet position within the WaveRT buffer as well as the packet position relative to start of stream.
-    
+
     b. The driver also returns the performance counter value that corresponds to the sampling instant of the first sample in the packet. Note that this performance counter value might be relatively old, depending on how much capture data has been buffered within the hardware or driver (outside of the WaveRT buffer).
-    
+
     c. If there is more unread buffered data available the driver either:
        i. Immediately transfers that data into the available space of WaveRT buffer (i.e. space not used by the packet returned from GetReadPacket), returns true for MoreData, and sets the buffer notification event before returning from this routine. Or,
        ii. Programs hardware to burst the next packet into the available space of the WaveRT buffer, returns false for MoreData, and later sets the buffer event when the transfer completes.
@@ -381,7 +382,7 @@ This feature allows for the device to be always listening for the user’s voice
 
 The audio stack is responsible for communicating the wake data (speaker ID, keyword trigger, confidence level) as well as notifying interested clients that the keyword has been detected.
 
-  
+
 
 
 

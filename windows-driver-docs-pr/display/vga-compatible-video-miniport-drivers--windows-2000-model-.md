@@ -32,9 +32,9 @@ VGA-compatible miniport drivers in x86-based machines replace the system-supplie
 
 The designer of a new VGA-compatible SVGA miniport driver should adapt one of the system-supplied SVGA miniport driver's *SvgaHwIoPortXxx* functions to the adapter's features. Miniport drivers for other types of adapters in x86-based machines can have a set of *SvgaHwIoPortXxx* routines and provide the same support at the discretion of the miniport driver designer or if the miniport driver cannot be loaded while the system VGA miniport driver is loaded.
 
- 
+ 
 
- 
+ 
 
 
 

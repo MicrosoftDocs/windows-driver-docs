@@ -28,9 +28,9 @@ This section includes:
 
 [Incoming Request to Close a Call](incoming-request-to-close-a-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

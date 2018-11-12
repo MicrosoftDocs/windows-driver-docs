@@ -16,9 +16,9 @@ GpioClx implements an ISR to service interrupt requests that the GPIO controller
 
 Typically, this second ISR belongs to the driver for the peripheral device that asserted the interrupt on the GPIO pin. For information about how a peripheral device driver logically connects its ISR to a GPIO interrupt pin, see [GPIO-Based Interrupt Resources](https://msdn.microsoft.com/library/windows/hardware/hh698246).
 
- 
+ 
 
- 
+ 
 
 
 

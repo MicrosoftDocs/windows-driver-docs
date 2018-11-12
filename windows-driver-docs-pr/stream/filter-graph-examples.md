@@ -27,9 +27,9 @@ Video capture minidrivers can expose a variety of filters that correspond to the
 
 [Video port based capture](video-port-based-capture.md)
 
- 
+ 
 
- 
+ 
 
 
 

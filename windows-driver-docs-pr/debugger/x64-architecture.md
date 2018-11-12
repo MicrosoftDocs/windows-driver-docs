@@ -139,7 +139,7 @@ The lower 32 bits, 16 bits, and 8 bits of each register are directly addressable
 </tbody>
 </table>
 
- 
+ 
 
 Operations that output to a 32-bit subregister are automatically zero-extended to the entire 64-bit register. Operations that output to 8-bit or 16-bit subregisters are *not* zero-extended (this is compatible x86 behavior).
 
@@ -179,15 +179,15 @@ The calling convention for C++ is very similar: the **this** pointer is passed a
 
 The addressing modes in 64-bit mode are similar to, but not identical to, x86.
 
--   Instructions that refer to 64-bit registers are automatically performed with 64-bit precision. (For example **mov rax, \[rbx\]** moves 8 bytes beginning at **rbx** into **rax**.)
+- Instructions that refer to 64-bit registers are automatically performed with 64-bit precision. (For example **mov rax, \[rbx\]** moves 8 bytes beginning at **rbx** into **rax**.)
 
--   A special form of the **mov** instruction has been added for 64-bit immediate constants or constant addresses. For all other instructions, immediate constants or constant addresses are still 32 bits.
+- A special form of the **mov** instruction has been added for 64-bit immediate constants or constant addresses. For all other instructions, immediate constants or constant addresses are still 32 bits.
 
--   x64 provides a new **rip**-relative addressing mode. Instructions that refer to a single constant address are encoded as offsets from **rip**. For example, the **mov rax, \[***addr***\]** instruction moves 8 bytes beginning at *addr* + **rip** to **rax**.
+- x64 provides a new **rip**-relative addressing mode. Instructions that refer to a single constant address are encoded as offsets from **rip**. For example, the **mov rax, \[**<em>addr</em>**\]** instruction moves 8 bytes beginning at *addr* + **rip** to **rax**.
 
 Instructions, such as **jmp**, **call**, **push**, and **pop**, that implicitly refer to the instruction pointer and the stack pointer treat them as 64 bits registers on x64.
 
- 
+ 
 ## See Also
 
 [X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)

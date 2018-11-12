@@ -33,9 +33,9 @@ To retrieve a device instance identifier on Windows Server 2003, Windows XP, and
 
 If the second call to **SetupDiGetDeviceInstanceId** succeeds, **SetupDiGetDeviceInstanceId** sets the *DeviceInstanceId* buffer to the device instance identifier, sets \**RequiredSize* to the size, in characters, of the device instance identifier that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInstanceId** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) returns the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

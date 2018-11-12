@@ -35,9 +35,9 @@ This section discusses typical callout driver operations and includes the follow
 
 In addition to these operations, callout drivers can perform other Windows Filtering Platform management tasks, such as adding filters to the base filtering engine. For more information about the tasks that a callout driver can perform, see [Calling Other Windows Filtering Platform Functions](calling-other-windows-filtering-platform-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

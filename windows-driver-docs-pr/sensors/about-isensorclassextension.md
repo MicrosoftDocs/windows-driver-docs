@@ -28,9 +28,9 @@ Sensor drivers forward two kinds of UMDF calls to the class extension:
 
 -   Notifications about clients closing file handles that are received through [**IFileCallbackCleanup::OnCleanupFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ifilecallbackcleanup-oncleanupfile). To forward an I/O request cancellation, the driver must call [**ISensorClassExtension::CleanupFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-cleanupfile).
 
- 
+ 
 
- 
+ 
 
 
 

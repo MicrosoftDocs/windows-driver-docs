@@ -46,12 +46,12 @@ The OS uses the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** property to determine if
 <td><p>No</p></td>
 <td><p>Filter</p></td>
 <td><p>See remarks</p></td>
-<td><p>[<strong>KSDATAFORMAT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561656)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561656" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561656)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,7 +78,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 | PinProperty.PinId          | The PinProperty.PinId identifies the target pin for the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** request.                                                                           |
 | PinProperty.Reserved       | The PinProperty.Reserved is reserved for future use and should always be set to zero (0).                                                                                          |
 
- 
+ 
 
 The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2 input structure *Attributes* elements.
 
@@ -100,7 +100,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 </tbody>
 </table>
 
- 
+ 
 
 The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2 input structure *SignalProcessingModeAttribute* elements.
 
@@ -120,7 +120,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 </tr>
 <tr class="odd">
 <td>SignalProcessingModeAttribute.AttributeHeader.Size</td>
-<td>The AttributeHeader.Size indicates the size of [<strong>KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/mt727947). It can be calculated like this:
+<td>The AttributeHeader.Size indicates the size of <a href="https://msdn.microsoft.com/library/windows/hardware/mt727947" data-raw-source="[&lt;strong&gt;KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt727947)"><strong>KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE</strong></a>. It can be calculated like this:
 <p>sizeof(KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE)</p></td>
 </tr>
 <tr class="even">
@@ -130,7 +130,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 </tbody>
 </table>
 
- 
+ 
 
 To use **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** define the following structure.
 
@@ -190,9 +190,9 @@ Requirements
 
 [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656)
 
- 
+ 
 
- 
+ 
 
 
 

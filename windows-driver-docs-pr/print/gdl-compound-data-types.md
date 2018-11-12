@@ -26,9 +26,9 @@ The following compound data types are used for GDL templates:
 
 For more information about issues that relate to compound data types, see [GDL Template Data Type Issues](compound-template-data-type-issues.md).
 
- 
+ 
 
- 
+ 
 
 
 

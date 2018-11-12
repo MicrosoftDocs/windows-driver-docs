@@ -20,9 +20,9 @@ Because the Smart Card is sharing the driver with NFP, when a smart card approac
 
 ![A flowchart describing the hierarchical reading and writing of NDEF messages upon smart card discovery.](images/smartcardfunctionalflow.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Smart card DDI and command reference](https://msdn.microsoft.com/library/windows/hardware/dn905601)  

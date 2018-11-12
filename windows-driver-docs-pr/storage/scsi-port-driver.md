@@ -36,9 +36,9 @@ A general discussion of SCSI Port miniport drivers is provided in [SCSI Miniport
 
 The Windows storage architecture also provides the [Storport Driver](storport-driver.md), an alternative to SCSI Port for high-performance devices.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,7 +55,7 @@ The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates t
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -89,9 +89,9 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

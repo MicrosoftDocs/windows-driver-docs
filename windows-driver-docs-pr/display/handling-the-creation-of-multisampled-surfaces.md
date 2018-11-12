@@ -20,9 +20,9 @@ When a multisampled surface is being created, the number of samples can be found
 
 When determining whether a creation request for a multisample surface can be satisfied or not, the driver should not take into account the current value of the D3DRS\_MULTISAMPLEANTIALIAS render state. It is not permissible for a driver to fail a request to set D3DRS\_MULTISAMPLEANTIALIAS **FALSE**. Therefore, any restriction that affects the ability to perform multisample rendering should be enforced at context create time even if D3DRS\_MULTISAMPLEANTIALIAS is **FALSE** at that time.
 
- 
+ 
 
- 
+ 
 
 
 

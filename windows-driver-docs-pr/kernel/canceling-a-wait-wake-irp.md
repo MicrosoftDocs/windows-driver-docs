@@ -62,9 +62,9 @@ In its wait/wake *Cancel* routine, a driver should take the following steps:
 
     For example, a driver that acts as a bus driver for a device and owns power policy driver for its parent should cancel a related wait/wake IRP that it earlier sent to its parent. Calling [**IoCancelIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548338) would invoke the parent's *Cancel* routine, and so on down the device stack.
 
- 
+ 
 
- 
+ 
 
 
 

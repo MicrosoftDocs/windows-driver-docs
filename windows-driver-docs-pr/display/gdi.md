@@ -29,9 +29,9 @@ Display adapter drivers that run on Windows Vista can adhere to one of two model
 
 [GDI Support for Graphics Drivers](gdi-support-for-graphics-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

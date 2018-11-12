@@ -27,9 +27,9 @@ Beginning with Windows Server 2003 with SP1 and the 64-bit version of Windows XP
 
 [How to Use Decorations in INF Files for Printer Drivers](how-to-use-decorations-in-inf-files-for-printer-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

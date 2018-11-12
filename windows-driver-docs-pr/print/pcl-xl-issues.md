@@ -23,9 +23,9 @@ ms.localizationpriority: medium
 
 -   The GPD \*TextHalftoneThreshold attribute name is not supported on a PCL XL minidriver. Text in any resolution is grayscaled in PCL XL mode.
 
- 
+ 
 
- 
+ 
 
 
 

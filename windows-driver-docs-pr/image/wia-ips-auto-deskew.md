@@ -54,7 +54,7 @@ The following table describes the constants that are valid with the WIA\_IPS\_AU
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -76,9 +76,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

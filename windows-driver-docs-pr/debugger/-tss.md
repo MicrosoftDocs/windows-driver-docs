@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!tss** extension command is obsolete. Use the [**.tss (Display Task State Segment)**](-tss--display-task-state-segment-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

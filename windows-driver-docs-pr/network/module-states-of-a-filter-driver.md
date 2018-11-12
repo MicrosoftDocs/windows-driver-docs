@@ -64,9 +64,9 @@ In the *Pausing* state, a filter driver completes any operations that are requir
 
 [NDIS Filter Drivers](ndis-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

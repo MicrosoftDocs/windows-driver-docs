@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistoryEntry</strong>](conditionhistoryentry.md)</p></td>
+<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,9 +71,9 @@ The specified time is according to the internal clock of the scanner.
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
- 
+ 
 
- 
+ 
 
 
 

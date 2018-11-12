@@ -28,9 +28,9 @@ When handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE event, a notification cal
 
     If a device is surprise-removed, the PnP manager sends registered drivers a remove-complete notification without a prior query-remove notification. In this case a driver has to perform any necessary cleanup, such as closing any handles to the device and removing any outstanding references to the file object.
 
- 
+ 
 
- 
+ 
 
 
 

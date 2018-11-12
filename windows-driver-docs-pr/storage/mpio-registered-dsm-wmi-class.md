@@ -41,9 +41,9 @@ class MPIO_REGISTERED_DSM
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_REGISTERED\_DSM**](https://msdn.microsoft.com/library/windows/hardware/ff562449) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_PIN\_TYPES to retrieve a list of pin types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

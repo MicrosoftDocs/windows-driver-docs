@@ -34,9 +34,9 @@ To stop receiving notifications of remote device SCO connection attempts, profil
 
 For more information about notifications and callback functions, see [Supporting Bluetooth Event Notifications](supporting-bluetooth-event-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

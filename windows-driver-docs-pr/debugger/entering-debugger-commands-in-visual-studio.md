@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Entering Debugger Commands in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -17,9 +17,9 @@ The procedures shown in this topic require that you have the Windows Driver Kit 
 
 In Visual Studio, you can enter debugger commands in the Debugger Immediate Window. To open the Debugger Immediate Window, from the **Debug** menu, choose **Windows&gt;Immediate**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,28 +53,30 @@ Use these steps to build the control:
     USE_STATIC_ATL=1
 
 
-    USER_INCLUDES= $(O)
+~~~
+USER_INCLUDES= $(O)
 
-    INCLUDES=
+INCLUDES=
 
-    SOURCES= interface.idl \
-     uvcxuplgn.cpp \
-             stdafx.cpp    \
-             interface_i.c \
-             vidcap_i.c    \
-             xuproxy.cpp
+SOURCES= interface.idl \
+ uvcxuplgn.cpp \
+         stdafx.cpp    \
+         interface_i.c \
+         vidcap_i.c    \
+         xuproxy.cpp
 
-    TARGETLIBS= \
-            $(SDK_LIB_PATH)\kernel32.lib          \
-            $(SDK_LIB_PATH)\user32.lib            \
-            $(SDK_LIB_PATH)\gdi32.lib             \
-            $(SDK_LIB_PATH)\advapi32.lib          \
-            $(SDK_LIB_PATH)\comdlg32.lib          \
-            $(SDK_LIB_PATH)\ole32.lib             \
-            $(SDK_LIB_PATH)\oleaut32.lib          \
-            $(SDK_LIB_PATH)\uuid.lib              \
-            $(SDK_LIB_PATH)\comctl32.lib
-    ```
+TARGETLIBS= \
+        $(SDK_LIB_PATH)\kernel32.lib          \
+        $(SDK_LIB_PATH)\user32.lib            \
+        $(SDK_LIB_PATH)\gdi32.lib             \
+        $(SDK_LIB_PATH)\advapi32.lib          \
+        $(SDK_LIB_PATH)\comdlg32.lib          \
+        $(SDK_LIB_PATH)\ole32.lib             \
+        $(SDK_LIB_PATH)\oleaut32.lib          \
+        $(SDK_LIB_PATH)\uuid.lib              \
+        $(SDK_LIB_PATH)\comctl32.lib
+```
+~~~
 
 4.  Create a *makefile* file as follows:
 

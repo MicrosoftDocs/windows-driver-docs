@@ -40,9 +40,9 @@ Device drivers assist the PnP manager in creating these lists, which are maintai
 
 The system's hardware abstraction layer (HAL) component, which is implemented as a dynamic-link library, is responsible for some of the hardware-level, platform-specific support that is needed by other system components, including kernel-mode drivers.
 
- 
+ 
 
- 
+ 
 
 
 

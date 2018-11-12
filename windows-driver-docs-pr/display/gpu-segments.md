@@ -58,7 +58,7 @@ Primary surfaces are understood to be accessed physically by the display control
 <td align="left"></td>
 <td align="left">AccessedPhysically==0</td>
 <td align="left">AccessedPhysically==1</td>
-<td align="left">Primary && AccessedPhysically==0</td>
+<td align="left">Primary &amp;&amp; AccessedPhysically==0</td>
 </tr>
 <tr class="even">
 <td align="left">Memory Segment</td>
@@ -82,11 +82,11 @@ Primary surfaces are understood to be accessed physically by the display control
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

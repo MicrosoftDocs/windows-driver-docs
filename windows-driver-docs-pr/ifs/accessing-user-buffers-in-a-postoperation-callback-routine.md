@@ -97,9 +97,9 @@ if (*DirectoryControlMdl == NULL)
 
 For operations that can be either fast I/O or IRP-based, all buffer references should be enclosed in **try**/**except** blocks. Although you do not have to enclose these references for IRP-based operations that use buffered I/O, the **try**/**except** blocks are a safe precaution.
 
- 
+ 
 
- 
+ 
 
 
 

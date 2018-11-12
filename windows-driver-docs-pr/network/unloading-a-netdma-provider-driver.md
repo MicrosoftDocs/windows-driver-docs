@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -23,9 +23,9 @@ The Plug and Play (PnP) manager calls a NetDMA provider driver's [**Unload**](ht
 
 In [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886), the NetDMA provider driver releases any resources that it allocated in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. For more information about the NetDMA provider driver's **DriverEntry** routine, see [Initializing a NetDMA Provider Driver](initializing-a-netdma-provider-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

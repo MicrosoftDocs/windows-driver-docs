@@ -64,9 +64,9 @@ Any standard driver routine that runs at an IRQL greater than PASSIVE\_LEVEL can
 
 For a summary of the IRQLs at which standard driver routines run, see [Managing Hardware Priorities](managing-hardware-priorities.md). For IRQL requirements of a specific support routine, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

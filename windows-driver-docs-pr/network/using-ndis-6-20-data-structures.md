@@ -19,11 +19,11 @@ NDIS can support multiple versions of the same data structure. NDIS 6.20 and lat
 
 **Note**  To determine the correct version and size information see the reference pages for each structure that includes a **Header** member. The reference pages for structures that contain a **Header** member and that have been updated for NDIS 6.20 include new information for NDIS 6.20 and later drivers. If there is no update to the structure for NDIS 6.20, the information that is provided for NDIS 6.0 or NDIS 6.1 drivers also applies to NDIS 6.20 and later drivers.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

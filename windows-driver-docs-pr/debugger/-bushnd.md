@@ -48,11 +48,11 @@ Specifies the hexadecimal address of the HAL BUS\_HANDLER structure. If omitted,
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

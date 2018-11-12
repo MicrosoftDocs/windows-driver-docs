@@ -40,9 +40,9 @@ In its callback routine, a driver can perform whatever tasks it requires for the
 
 When the driver no longer requires notification, it should call [**ExUnregisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff545649) to remove its routine from the list of registered callbacks and to remove its reference to the callback object.
 
- 
+ 
 
- 
+ 
 
 
 

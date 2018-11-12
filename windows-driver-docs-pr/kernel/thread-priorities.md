@@ -22,9 +22,9 @@ Threads, whatever their respective run-time priorities, are run at IRQL = PASSIV
 
 For more information about thread priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
- 
+ 
 
- 
+ 
 
 
 

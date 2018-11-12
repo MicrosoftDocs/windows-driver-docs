@@ -27,7 +27,7 @@ Before you read about the WSD interoperability tool, you should be familiar with
 
 **Note**  WSDBIT may be used to assist with the implementation of DPWS on a device, but it is not intended to be a generic debugging tool. Other [WSDAPI development tools](http://go.microsoft.com/fwlink/p/?linkid=163866) (such as the [WSDAPI debugging tools](http://go.microsoft.com/fwlink/p/?linkid=163867)) are better suited to observing traffic and diagnosing failures. These tools are available in the Windows SDK for desktop apps, see [Downloads for developing desktop apps]( http://go.microsoft.com/fwlink/p/?linkid=309790).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -49,9 +49,9 @@ For more information about WSD and WSDAPI, see the following topics in the Windo
 
 -   [WSDAPI Troubleshooting Guide](http://go.microsoft.com/fwlink/p/?linkid=163870)
 
- 
+ 
 
- 
+ 
 
 
 

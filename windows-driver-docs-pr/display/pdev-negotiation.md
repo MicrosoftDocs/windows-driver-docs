@@ -33,9 +33,9 @@ If *DrvStrokePath* is to report an error, it must return DDI\_ERROR.
 
 This kind of negotiation between GDI and the driver, for functions that depend on the PDEV, permits GDI and the driver to produce high quality output without excess communication.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ The left side of the following illustration depicts the sample driver as it exis
 
 ![multiple sensor support](images/multi-sensor.png)
 
- 
+ 
 
- 
+ 
 
 
 

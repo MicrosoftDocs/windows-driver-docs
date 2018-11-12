@@ -168,9 +168,9 @@ If a connection-oriented socket's [*WskReceiveEvent*](https://msdn.microsoft.com
 
 If a connection-oriented socket's *WskReceiveEvent* event callback function only accepts a portion of the total number of bytes of received data, it must set the variable pointed to by the *BytesAccepted* parameter to the number of bytes of data that were actually accepted. However, if the socket's *WskReceiveEvent* event callback function accepts all of the received data, it does not need to set the variable pointed to by the *BytesAccepted* parameter.
 
- 
+ 
 
- 
+ 
 
 
 

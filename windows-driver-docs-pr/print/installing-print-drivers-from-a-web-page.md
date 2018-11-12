@@ -26,13 +26,13 @@ As an alternative to selecting a print queue's installation page, a user can ins
 
 **Note**  This installation method must be used when installing printers that contain their own network cards and are therefore not connected to a server.
 
- 
+ 
 
 The installation process is not customizable beyond specifying the contents of the [printer INF file](printer-inf-files.md), which is the same INF file used to install the printer on the print server.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ In the AVStream driver model, vendors provide a minidriver that interacts with a
 
 ![diagram illustrating the relationship between the avstream and ks services](images/avstream.png)
 
- 
+ 
 
- 
+ 
 
 
 

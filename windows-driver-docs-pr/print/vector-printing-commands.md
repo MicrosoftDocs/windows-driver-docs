@@ -20,9 +20,9 @@ Vector printing commands are those that are associated with printing vector grap
 
 [Rectangle Area Fill Commands](rectangle-area-fill-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

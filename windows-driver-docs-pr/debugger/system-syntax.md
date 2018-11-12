@@ -49,7 +49,7 @@ Two vertical bars ( || ) appear before the system identifier. The system identif
 </tbody>
 </table>
 
- 
+
 
 Systems are assigned ordinals in the order that the debugger attaches to them.
 
@@ -64,7 +64,6 @@ This example shows three dump files are loaded. System 1 is active and system 2 
    0 User mini dump: c:\notepad.dmp
 .  1 User mini dump: c:\paint.dmp
 #  2 User mini dump: c:\calc.dmp
-
 ```
 
 
@@ -73,7 +72,7 @@ Remarks
 
 To work with multiple systems, you can use the [.opendump](-opendump--open-dump-file-.md) to debug multiple crash dumps at the same time. For more information about how to control a multiple-target session, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
-**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
+**Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
 
 

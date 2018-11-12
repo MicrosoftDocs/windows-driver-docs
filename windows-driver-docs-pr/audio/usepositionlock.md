@@ -55,9 +55,9 @@ This means that the following miniport’s callbacks are not serialized with the
 
 -   [**IMiniportWaveRTStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536749)
 
- 
+ 
 
- 
+ 
 
 
 

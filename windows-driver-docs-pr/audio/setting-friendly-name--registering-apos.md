@@ -50,7 +50,7 @@ HKR,"EPFX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 **Note**  The syntax shown in the preceding snippet doesn't include instructions for registering the COM server of the APO.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 [Related Design Guidelines](related-design-guidelines.md)  

@@ -20,9 +20,9 @@ The **KSEVENTSETID\_Device** event set specifies device events that can be enabl
 
 [**KSEVENT\_DEVICE\_LOST**](ksevent-device-lost.md)
 [**KSEVENT\_DEVICE\_PREEMPTED**](ksevent-device-preempted.md)
- 
+ 
 
- 
+ 
 
 
 

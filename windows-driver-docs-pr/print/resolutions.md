@@ -38,9 +38,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for Resolutions, in dots per inch (dpi).
 
- 
+ 
 
- 
+ 
 
 
 

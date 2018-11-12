@@ -30,9 +30,9 @@ If a UI plug-in or rendering plug-in is installed, the printer driver (Unidrv or
 
 6.  If the plug-in has implemented the [IPrintOemUni](iprintoemuni-com-interface.md) interface, the driver calls [**IPrintOemUni::GetImplementedMethod**](https://msdn.microsoft.com/library/windows/hardware/ff554253) to determine which interface methods have been implemented. Similarly, if the plug-in has implemented the [IPrintOemUni2](iprintoemuni2-com-interface.md) interface, the driver calls **IPrintOemUni2::GetImplementedMethod** for the same purpose.
 
- 
+ 
 
- 
+ 
 
 
 

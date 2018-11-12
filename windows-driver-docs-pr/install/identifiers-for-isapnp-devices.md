@@ -42,9 +42,9 @@ The second of the two hardware identifiers is also a compatible ID. The ISAPNP e
 
 PNP0501
 
- 
+ 
 
- 
+ 
 
 
 

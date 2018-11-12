@@ -1,6 +1,6 @@
 ---
 title: What's new in driver development
-description: This section describes new features for driver development in Windows 10.
+description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
 ms.date: 10/02/2018
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This section provides information about the new features and updates to Windows driver development in Windows 10.
 
-The following is a list of new feature highlights for driver development in Windows 10.
+The following is a list of new feature highlights for driver development in Windows 10.
 
 * [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
 * [Open publishing](#open-publishing)
@@ -28,41 +28,42 @@ The following is a list of new feature highlights for driver development in Wind
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-| Driver |[1809](#whats-new-in-windows-10-version-1809-latest)| [1803](#whats-new-in-windows-10-version-1803) | [1709](#whats-new-in-windows-10-version-1709) | [1703](#whats-new-in-windows-10-version-1703) |  [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507) |
-|---|:---:|:---:|:---:|:---:|:--:|:--:|
-| Audio |[![details](checkmark.png)](#audio-1809) | [![details](checkmark.png)](#audio-1803)| [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
-| ACPI |![not available](minus.png)|[![details](checkmark.png)](#acpi-1803) | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) |
-| Biometric |![not available](minus.png)|![not available](minus.png) |[![details](checkmark.png)](#biometric-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Bluetooth |[![details](checkmark.png)](#bluetooth-1809)| [![details](checkmark.png)](#bluetooth-1803)|![not available](minus.png) | [![details](checkmark.png)](#bluetooth-1703) | ![not available](minus.png) | [![details](checkmark.png)](#bluetooth) |
-| Buses and Ports |![not available](minus.png)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#buses-and-ports) |
-| Camera |![not available](minus.png)| [![details](checkmark.png)](#camera-1803)|![not available](minus.png) | [![details](checkmark.png)](#camera-1703) |[![details](checkmark.png)](#camera-1607) |[![details](checkmark.png)](#camera-1507)|
-| Cellular |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) | [![details](checkmark.png)](#cellular)|
-| Display |[![details](checkmark.png)](#display-1809)| [![details](checkmark.png)](#display-1803)|[![details](checkmark.png)](#display-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#display)|
-| Driver security |![not available](minus.png)| [![details](checkmark.png)](#security-1803)| ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#display)|
-| Hardware notifications |![not available](minus.png)| ![not available](minus.png)|[![details](checkmark.png)](#hardware-notifications-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Human Interface Device (HID)|![not available](minus.png)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#human-interface-device)|
-| Kernel |[![details](checkmark.png)](#kernel-1809)| [![details](checkmark.png)](#kernel-1803)|[![details](checkmark.png)](#kernel-1709) | [![details](checkmark.png)](#kernel-1703) |![not available](minus.png) |![not available](minus.png) |
-| Location |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#location-1607) |[![details](checkmark.png)](#location-1507) |
-|Mobile broadband |[![details](checkmark.png)](#mobilebroadband-1809)|[![details](checkmark.png)](#mobilebroadband-1803)|[![details](checkmark.png)](#mobilebroadband-1709)|[![details](checkmark.png)](#mobilebroadband-1703)|![not available](minus.png)|![not available](minus.png)|
-| Near Field Communication |![not available](minus.png)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#near-field-communication)|
-| Networking |[![details](checkmark.png)](#networking-1809) | [![details](checkmark.png)](#networking-1803)|[![details](checkmark.png)](#networking-1709) | [![details](checkmark.png)](#networking-1703)| ![not available](minus.png) |[![details](checkmark.png)](#networking-1507) |
-| POS |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) |[![details](checkmark.png)](#pos-1703) | ![not available](minus.png) | ![not available](minus.png) |
-| PCI |![not available](minus.png)| [![details](checkmark.png)](#pci-1803)|[![details](checkmark.png)](#pci-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Print |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) |![not available](minus.png) |[![details](checkmark.png)](#print-1607) |[![details](checkmark.png)](#print-1507)|
-| Pulse Width Modulation |![not available](minus.png)| ![not available](minus.png)|[![details](checkmark.png)](#pwm-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Sensors |[![details](checkmark.png)](#sensors-1809)|[![details](checkmark.png)](#sensors-1803)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|
-| Smart Card |![not available](minus.png)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#smart-card) |
-| Storage |![not available](minus.png)| ![not available](minus.png)|[![details](checkmark.png)](#storage-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#storage) |
-| System-Supplied Driver Interfaces |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#system-supplied-driver-interfaces) |
-| USB |[![details](checkmark.png)](#usb-1809)| [![details](checkmark.png)](#usb-1803)|[![details](checkmark.png)](#usb-1709) | [![details](checkmark.png)](#usb-1703) | ![not available](minus.png) |[![details](checkmark.png)](#usb)|
-|WI-FI|[![details](checkmark.png)](#wifi-1809)|[![details](checkmark.png)](#wifi-1803)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|
-| WLAN |![not available](minus.png)| ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#wlan-1607) |[![details](checkmark.png)](#wlan-1507)|
+
+|              Driver               | [1809](#whats-new-in-windows-10-version-1809-latest) |   [1803](#whats-new-in-windows-10-version-1803)    |       [1709](#whats-new-in-windows-10-version-1709)       |   [1703](#whats-new-in-windows-10-version-1703)    | [1607](#whats-new-in-windows-10-version-1607) |          [1507](#whats-new-in-windows-10-version-1507)          |
+|-----------------------------------|:----------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------:|:---------------------------------------------------------------:|
+|               Audio               |       [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio)      |                   ![not available](minus.png)                   |
+|               ACPI                |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Biometric             |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Bluetooth             |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
+|          Buses and Ports          |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
+|              Camera               |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
+|             Cellular              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
+|              Display              |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
+|          Driver security          |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
+|      Hardware notifications       |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|   Human Interface Device (HID)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
+|              Kernel               |      [![details](checkmark.png)](#kernel-1809)       |     [![details](checkmark.png)](#kernel-1803)      |         [![details](checkmark.png)](#kernel-1709)         |     [![details](checkmark.png)](#kernel-1703)      |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Location              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |  [![details](checkmark.png)](#location-1607)  |           [![details](checkmark.png)](#location-1507)           |
+|         Mobile broadband          |  [![details](checkmark.png)](#mobilebroadband-1809)  | [![details](checkmark.png)](#mobilebroadband-1803) |    [![details](checkmark.png)](#mobilebroadband-1709)     | [![details](checkmark.png)](#mobilebroadband-1703) |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|     Near Field Communication      |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |     [![details](checkmark.png)](#near-field-communication)      |
+|            Networking             |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
+|                POS                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|                PCI                |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               Print               |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
+|      Pulse Width Modulation       |             ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|              Sensors              |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|            Smart Card             |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
+|              Storage              |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage)              |
+| System-Supplied Driver Interfaces |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
+|                USB                |        [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb)                |
+|               WI-FI               |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               WLAN                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
 
 ## What's new in driver development for Windows 10
 
 [Back to Top](#top)
 
-This section provides highlights of new features for driver development in Windows 10.
+This section provides highlights of new features for driver development in Windows 10.
 
 ### Windows Hardware Dev Center dashboard
 
@@ -210,9 +211,9 @@ The following is a list of updates to Universal Drivers in Windows 10, version 1
 
 **Universal Drivers in Windows 10**
 
-Starting in Windows 10, you can write a single driver that works on OneCoreUAP-based editions of Windows, such as Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, and Windows 10 IoT Core (IoT Core). Such a driver is called a Universal Windows driver. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. For information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
+Starting in Windows 10, you can write a single driver that works on OneCoreUAP-based editions of Windows, such as Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, and Windows 10 IoT Core (IoT Core). Such a driver is called a Universal Windows driver. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. For information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
-When you build a Universal Windows driver using Microsoft Visual Studio 2015, Visual Studio automatically checks if the APIs that your driver calls are valid for a Universal Windows driver. You can also use the ApiValidator.exe as a standalone tool to perform this task. The ApiValidator.exe tool is part of the Windows Driver Kit (WDK) for Windows 10. For info, see [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers).
+When you build a Universal Windows driver using Microsoft Visual Studio 2015, Visual Studio automatically checks if the APIs that your driver calls are valid for a Universal Windows driver. You can also use the ApiValidator.exe as a standalone tool to perform this task. The ApiValidator.exe tool is part of the Windows Driver Kit (WDK) for Windows 10. For info, see [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers).
 
 Universal Windows drivers also require a special kind of INF file called a *universal INF*. A universal INF can use a subset of the directives and sections available to a legacy INF file. To learn more, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file). To see which sections and directives apply, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
@@ -245,7 +246,7 @@ The power management framework (PoFx) enables a driver to define one or more set
 
 ## What's new in Windows 10, version 1809 (latest)
 
-This section describes new features and updates for driver development in Windows 10, version 1809 (Windows 10 October 2018 Update).
+This section describes new features and updates for driver development in Windows 10, version 1809 (Windows 10 October 2018 Update).
 
 [Back to Top](#top)
 
@@ -268,7 +269,7 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 * **Universal Driver Requirements** WDDM 2.5 drivers will need to ensure their DirectX11 UMD, DirectX12 UMD, KMDs, and any other DLL loaded by these components, adhere to the Universal API.
 
 * **SRV-Only Tiled Resource Tier 3** In Windows 10, version 1809, Tiled Resource Tier 3 capabilities can be supported less-orthogonally by GPUs. Direct3D12 now supports sparse volume textures without requiring unordered-access and render-target operations. SRV-Only Tiled Resource Tier 3 is a conceptual tier that fits between Tier 2 and Tier 3. Hardware support is optional, just like orthogonal Tiled Resource Tier 3 support currently is. But, supporting SRV-Only Tiled Resource Tier 3 is a super-set tier that requires support for Tiled Resource Tier 2.
-<br/>Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
+  <br/>Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
 
 * **Render Pass** The Render Pass feature was added to:
 
@@ -282,17 +283,17 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 
 * **HDR Brightness Compensation** A new SDR brightness boost was introduced to raise the reference white of SDR content to the user-desired value, allowing SDR content to be reproduced to a typical 200-240 nits, which is equivalent to what users have expected for SDR displays. SDR brightness boost affects overall Brightness3 behavior in two ways:
 
-    1. This boost is applied pre-blend only on SDR content. HDR content is not affected. Meanwhile, for most laptop/brightness3 scenarios, users expect all content (SDR and HDR) to be adjusted.
-    2. When the Brightness3 stack in the OS determines the desired nits value, it is not aware of the already applied SDR boost.
- 
-    The driver must then apply a compensation to the desired nits value coming from Brightness3 DDIs for HDR. Since Graphics drivers (and downstream TCON etc.) will be modifying the pixel values of the content to get desired nits value, there should also be a compensation applied to the HDR content metadata as provided by the applications via [D3DDDI_HDR_METADATA_HDR10](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_hdr_metadata_hdr10) or OS defaults via [DxgkDdiSetTargetAdjustedColorimetry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_settargetadjustedcolorimetry). Since Graphics driver (TCONs) are responsible for modifying the pixel data, it is the driver’s responsibility to compensate the HDR content metadata.
+  1. This boost is applied pre-blend only on SDR content. HDR content is not affected. Meanwhile, for most laptop/brightness3 scenarios, users expect all content (SDR and HDR) to be adjusted.
+  2. When the Brightness3 stack in the OS determines the desired nits value, it is not aware of the already applied SDR boost.
+
+     The driver must then apply a compensation to the desired nits value coming from Brightness3 DDIs for HDR. Since Graphics drivers (and downstream TCON etc.) will be modifying the pixel values of the content to get desired nits value, there should also be a compensation applied to the HDR content metadata as provided by the applications via [D3DDDI_HDR_METADATA_HDR10](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_hdr_metadata_hdr10) or OS defaults via [DxgkDdiSetTargetAdjustedColorimetry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_settargetadjustedcolorimetry). Since Graphics driver (TCONs) are responsible for modifying the pixel data, it is the driver’s responsibility to compensate the HDR content metadata.
 
 
 * **HDR Pixel Format Support** This kernel mode device driver interface (DDI) change is part of WDDM 2.5 to expose new capabilities to be reported by driver/device, providing information regarding the HDR functionality supported by the driver/device. <br/>Currently, OS determines if the driver/device supports HDR based on the *HighColorSpace* bit of the [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) structure as read from [DdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo). The *HighColorSpace* bit gives a combination of driver/link/monitor capability to run in HDR mode. <br/>The HDR capabilities reporting by the driver now includes a Driver/Device level capabilities, which will let OS know if the Driver/Device supports true HDR (i.e. FP16HDR), or only supports a limited form of HDR (i.e. ARGB10HDR), as defined below:
 
-    * FP16HDR: Driver/device can take FP16 pixel format surfaces with scRGB/CCCS colorspace and apply PQ/2084 encoding and BT.2020 primaries during scanout pipeline to convert output signal to HDR10.
-    * ARGB10HDR: Driver/device can take ARGB10 pixel format surfaces which are already PQ/2084 encoded and scan out HDR10 signal. Driver/device can’t handle FP16HDR as defined above or cannot handle the extended numeric range of scRGB FP16.
- 
+  * FP16HDR: Driver/device can take FP16 pixel format surfaces with scRGB/CCCS colorspace and apply PQ/2084 encoding and BT.2020 primaries during scanout pipeline to convert output signal to HDR10.
+  * ARGB10HDR: Driver/device can take ARGB10 pixel format surfaces which are already PQ/2084 encoded and scan out HDR10 signal. Driver/device can’t handle FP16HDR as defined above or cannot handle the extended numeric range of scRGB FP16.
+
     Graphics drivers can only report support for either FP16HDR or ARGB10HDR as they are not really superset/subset configurations and OS will fail the Start Adapter if both are reported as supported at the same time. See [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) and [_DXGK_DISPLAY_DRIVERCAPS_EXTENSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_display_drivercaps_extension).
 
 
@@ -308,7 +309,7 @@ Several new APIs have been added in the core kernel:
     * FileLinkInformationExBypassAccessCheck
     * FileCaseSensitiveInformationForceAccessCheck
     * FileStorageReserveIdInformation
-		○ FileLinkInformationEx
+        ○ FileLinkInformationEx
 * Extended version of NtCreateSection added [NtCreateSectionEx function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatesectionex) to indicate that this is actually an AWE section. 
 * New Ex macros grant direct access to actual push lock APIs exported by Ntoskernel. 
     * [ExAcquirePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockexclusive)
@@ -380,7 +381,7 @@ For example, control their device’s charging based on thermal conditions, so t
 
 * [Write a USB Type-C Policy Manager client driver](https://microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
 *  New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
- 
+
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**
 
 Emulated devices now support better reset recovery through function (FLDR) and platform (PLDR) resets. The client driver can now inform the system that the device needs a reset  and the type of reset: function or platform.
@@ -390,7 +391,7 @@ Emulated devices now support better reset recovery through function (FLDR) and p
 The host controller can also opt for FLDR and PLDR resets through: 
 
 * [EVT_UCX_USBDEVICE_DISABLE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_disable)
- 
+
 
 
 
@@ -403,7 +404,7 @@ The WLAN device driver interface (WDI) spec has been updated to version 1.1.7.
 
 ## What's new in Windows 10, version 1803
 
-This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
+This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
 
 ### <a name="acpi-1803"></a>ACPI
 
@@ -443,7 +444,7 @@ The following are updates to Display driver development in Windows 10, version 1
 
 * **D3D11 bitstream encryption** - Additional GUIDS and parameters to D3D11 to support exposing CENC, CENS, CBC1, and CBCS with 8 or 16 byte initialization vectors.
 
-* **D3D11 and D3D12 video decode histogram** - A luminance histogram allows the media team to leverage fixed function hardware for histogram to improve tone mapping quality for HDR/EDR scenarios. Fixed function hardware is useful when GPU is already saturated in these scenarios and to enable parallel processing. This feature is optional and should only be implemented if fixed function hardware is available. This feature should not be implemented with 3D or Compute.
+* **D3D11 and D3D12 video decode histogram** - A luminance histogram allows the media team to leverage fixed function hardware for histogram to improve tone mapping quality for HDR/EDR scenarios. Fixed function hardware is useful when GPU is already saturated in these scenarios and to enable parallel processing. This feature is optional and should only be implemented if fixed function hardware is available. This feature should not be implemented with 3D or Compute.
 
 * **D3D12 video decode** now supports Decode Tier II, indicating driver supports *Array of Textures* that enable applications to amortize allocation cost and reduce peak memory usage during resolution change.
 
@@ -454,9 +455,9 @@ The following are updates to Display driver development in Windows 10, version 1
 * **Post-processing color enhancement override** - Adds the ability for the OS to request that the driver temporarily disable any post-processing that enhances or alters display colors. This is to support scenarios where specific applications want to enforce colorimetrically accurate color behavior on the display, and safely coexist with OEM or IHV-proprietary display color enhancements.
 
 * **Direct3D12 and Video** - New API and DDI to provide access to the following capabilities:
-	* Hardware accelerated video decoding
-	* Content Protection
-	* Video processing
+    * Hardware accelerated video decoding
+    * Content Protection
+    * Video processing
 
 * **DisplayID** - A new DDI, designed to allow the VESA’s DisplayID descriptor to be queried from a display controlled by a graphics adapter and shall support DisplayID v1.3 and DisplayID v2.0. The DDI is an extension of existing DxgkDdiQueryAdapterInfo DDI and shall be supported by all drivers with DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_3, including kernel mode display only drivers and indirect display drivers.
 
@@ -468,7 +469,7 @@ The following are updates to Display driver development in Windows 10, version 1
 
 * **Display Diagnostics** - Kernel mode device driver interface (DDI) changes to allow the driver for a display controller to report diagnostic events to the OS.  This provides a channel through which the driver can log events which would otherwise be invisible to the OS as the events are not a response to an OS request or something the OS needs to react to.
 
-* **Shared graphics power components** - Allows non-graphics drivers to participate in the power management of a graphics device.  A non-graphics driver will use a driver interface to manage one or more of these shared power components in coordination with the graphics driver.
+* **Shared graphics power components** - Allows non-graphics drivers to participate in the power management of a graphics device.  A non-graphics driver will use a driver interface to manage one or more of these shared power components in coordination with the graphics driver.
 
 * **Shared texture improvements** - Includes increasing the types of textures that can be shared across processes and D3D devices. This design enables the frame server OS component to support monochrome with minimal memory copying.
 
@@ -558,7 +559,7 @@ Updates to Wi-fi driver development include a new [TLV for the Nic Auto Power Sa
 
 ## What's new in Windows 10, version 1709
 
-This section describes new features and updates for driver development in Windows 10, version 1709.
+This section describes new features and updates for driver development in Windows 10, version 1709.
 
 [Back to Top](#top)
 
@@ -769,7 +770,7 @@ Here are the structures that support the IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYP
 
 ## What's new in Windows 10, version 1703
 
-This section describes new and improved features for driver development in Windows 10, version 1703.
+This section describes new and improved features for driver development in Windows 10, version 1703.
 
 [Back to Top](#top)
 
@@ -841,11 +842,11 @@ There is a new Gs1DWCode symbology to the [BarcodeSymbology enumeration](https:/
 
 Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
 
-## What's new in Windows 10, version 1607
+## What's new in Windows 10, version 1607
 
 [Back to Top](#top)
 
-This section describes new features and improvements for driver development in Windows 10, version 1607.
+This section describes new features and improvements for driver development in Windows 10, version 1607.
 
 ### Audio
 
@@ -889,11 +890,11 @@ Printer driver development in Windows 10, version 1607 includes [JSConstraintsDe
 
 In Windows 10, version 1607, there are new and updated topics for WLAN Device Driver Interface (WDI) version 1.0.21. For details, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history).
 
-## What's new in Windows 10, version 1507
+## What's new in Windows 10, version 1507
 
 [Back to Top](#top)
 
-This section describes new and updated features for driver development in Windows 10.
+This section describes new and updated features for driver development in Windows 10.
 
 ### Bluetooth
 
@@ -901,7 +902,7 @@ In Windows 10, new [Microsoft-defined Bluetooth HCI extensions](https://docs.mic
 
 ### Buses and Ports
 
-Driver programming interfaces and in-box drivers for Simple Peripheral Bus (SPB) such as I2C and SPI, and GPIO are part of OneCoreUAP-based editions of Windows. Those drivers will run on both Windows 10 for desktop editions and Windows 10 Mobile, as well as other Windows 10 versions.
+Driver programming interfaces and in-box drivers for Simple Peripheral Bus (SPB) such as I2C and SPI, and GPIO are part of OneCoreUAP-based editions of Windows. Those drivers will run on both Windows 10 for desktop editions and Windows 10 Mobile, as well as other Windows 10 versions.
 
 ### <a name="camera-1507"></a>Camera
 
@@ -920,11 +921,11 @@ The camera driver DDIs have converged into a Universal Windows driver model, inc
 
 ### Cellular
 
-[Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
+[Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
 
 ### Display
 
-The [display driver model](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_display/) from Windows 8.1 and Windows Phone have converged into a unified model for Windows 10.
+The [display driver model](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_display/) from Windows 8.1 and Windows Phone have converged into a unified model for Windows 10.
 
 A new memory model is implemented that gives each GPU a per-process virtual address space. Direct addressing of video memory is still supported by WDDMv2 for graphics hardware that requires it, but that is considered a legacy case. IHVs are expected to develop new hardware that supports virtual addressing. Significant changes have been made to the DDI to enable this new memory model.
 
@@ -954,7 +955,7 @@ The new [PacketDirect Provider Interface (PDPI)](https://docs.microsoft.com/wind
 The print driver is updated with v4 Print driver improvements and changes to support wireless printing from mobile devices, as well as the following:
 
 * [V4 Driver Manifest](https://docs.microsoft.com/windows-hardware/drivers/print/v4-driver-manifest) &ndash; Provides information on changes to the v4 print driver manifest to support the PWG Raster rendering filter, including updated DriverConfig and DriverRender directives, and an updated example manifest.
-* [WS-Discovery Mobile Printing Support](https://docs.microsoft.com/windows-hardware/drivers/print/ws-discovery-mobile-printing-support) &ndash; Describes the WS-Discovery requirements to enable mobile printing from Windows 10 Mobile devices to Windows 10 Mobile compatible printers.
+* [WS-Discovery Mobile Printing Support](https://docs.microsoft.com/windows-hardware/drivers/print/ws-discovery-mobile-printing-support) &ndash; Describes the WS-Discovery requirements to enable mobile printing from Windows 10 Mobile devices to Windows 10 Mobile compatible printers.
 * [**IXpsRasterizationFactory2 interface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/xpsrassvc/nn-xpsrassvc-ixpsrasterizationfactory2) &ndash; Supports printer content conversion from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs.
 * [**Print Pipeline Property Bag**](https://docs.microsoft.com/windows-hardware/drivers/print/print-pipeline-property-bag) &ndash; New PrintDeviceCapabilities property to enable XPS rendering filters to retrieve the new PrintDeviceCapabilities XML files from the Print filter pipeline property bag.
 * [GetWithArgument Request and Response Schemas](https://docs.microsoft.com/windows-hardware/drivers/print/getwithargument-request-and-response-schemas) &ndash; Provides support for mobile printing with a formal definition and example for the GetWithArgument request and response bidirectional communications schemas.
@@ -980,7 +981,7 @@ The [GUID\_DEVICE\_RESET\_INTERFACE\_STANDARD](https://docs.microsoft.com/window
 
 ### USB
 
-Here are the new features for USB in Windows 10. For more information, see [Windows 10: What's new for USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/windows-10--what-s-new-for-usb).
+Here are the new features for USB in Windows 10. For more information, see [Windows 10: What's new for USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/windows-10--what-s-new-for-usb).
 
 * Native support for USB Type-C as defined in the USB 3.1 specification. If you are building a system with USB Type-C connectors, you can use the in-box [USB Type-C Connector System Software Interface (UCSI) driver](https://docs.microsoft.com/windows-hardware/drivers/usbcon/ucsi) or [write a USB Type-C connector driver.](https://docs.microsoft.com/windows-hardware/drivers/usbcon/bring-up-a-usb-type-c-connector-on-a-windows-system).
 * The dual role feature allows a mobile device, such as a phone, a phablet or a tablet, to designate itself as being a *device* or a *host*. See [USB Dual Role Driver Stack Architecture](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-dual-role-driver-stack-architecture) for more information.
@@ -990,9 +991,9 @@ Here are the new features for USB in Windows 10. For more information, see [Win
 
 ### <a name="wlan-1507"></a>WLAN
 
-WDI (WLAN Device Driver Interface) is a new [WLAN Universal Windows driver model](https://docs.microsoft.com/windows-hardware/drivers/network/wifi-universal-driver-model) that converges the WLAN drivers on Windows 10 for desktop editions and Windows 10 Mobile.
+WDI (WLAN Device Driver Interface) is a new [WLAN Universal Windows driver model](https://docs.microsoft.com/windows-hardware/drivers/network/wifi-universal-driver-model) that converges the WLAN drivers on Windows 10 for desktop editions and Windows 10 Mobile.
 
-[Back to Top](#top) 
+[Back to Top](#top) 
 
 ## Deprecated features
 

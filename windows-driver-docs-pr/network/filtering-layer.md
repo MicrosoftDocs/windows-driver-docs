@@ -19,9 +19,9 @@ When a [filter](filter.md) is added to the filter engine, it is added at a desig
 
 The FWPS data types are smaller than their FWPM counterparts: the FWPM filtering layer identifiers are GUIDs (128 bits), whereas the FWPS filtering layer identifiers are [**LUIDs**](https://msdn.microsoft.com/library/windows/hardware/ff557080)(64 bits). The smaller size for FWPS data types improves system performance because integer comparisons are faster than GUID comparisons for real-time traffic, and the kernel memory handles FWPS types more efficiently.
 
- 
+ 
 
- 
+ 
 
 
 

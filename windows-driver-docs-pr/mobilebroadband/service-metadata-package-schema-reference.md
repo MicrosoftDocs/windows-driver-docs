@@ -22,9 +22,9 @@ This section describes the XML schemas that are used to specify a service metada
 
 -   [WindowsInfo XML schema](windowsinfo-xml-schema.md)
 
- 
+ 
 
- 
+ 
 
 
 

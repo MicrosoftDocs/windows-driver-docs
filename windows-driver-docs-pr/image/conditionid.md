@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceConditionCleared</strong>](deviceconditioncleared.md)</p></td>
+<td><p><a href="deviceconditioncleared.md" data-raw-source="[&lt;strong&gt;DeviceConditionCleared&lt;/strong&gt;](deviceconditioncleared.md)"><strong>DeviceConditionCleared</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,9 +75,9 @@ The **ConditionId** element must be the **Id** attribute of a **DeviceCondition*
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

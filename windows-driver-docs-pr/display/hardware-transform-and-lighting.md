@@ -62,7 +62,7 @@ Other flags are listed in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 Because the feature sets of hardware geometry accelerators may differ (such as the number of light sources supported), the caps structures indicate which subset of geometry operations this device performs. Zero is a valid value for the number of light sources supported, indicating that the hardware does transformations only.
 
@@ -89,9 +89,9 @@ D3DRENDERSTATE_SPECULARMATERIALSOURCE
 D3DRENDERSTATE_VERTEXBLEND
 ```
 
- 
+ 
 
- 
+ 
 
 
 

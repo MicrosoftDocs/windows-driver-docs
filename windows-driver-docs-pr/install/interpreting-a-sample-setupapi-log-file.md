@@ -61,7 +61,7 @@ For Windows XP, each log entry includes a message identifier consisting of a let
 </tbody>
 </table>
 
- 
+ 
 
 The following segments are from a Windows XP error log:
 
@@ -191,9 +191,9 @@ The following segments are from a Windows XP error log:
 @ 20:15:42.116 #V156 Completed default installer.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

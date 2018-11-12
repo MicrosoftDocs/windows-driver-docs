@@ -69,9 +69,9 @@ When a capture request is completed or canceled, this value is set to **NULL**:
 IWDFIoRequest *FxRequest = (IWDFIoRequest *)InterlockedExchangePointer((PVOID *)&m_PendingRequest, NULL);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

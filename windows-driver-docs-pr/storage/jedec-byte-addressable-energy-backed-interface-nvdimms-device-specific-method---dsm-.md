@@ -11,9 +11,9 @@ ms.date: 10/17/2018
 
 This section describes the Device-Specific Method (\_DSM) interface associated with NVDIMM ACPI Namespace Devices that implement the JEDEC Byte Addressable Energy Backed Interface standard. A NVDIMM-N that supports the JEDEC Byte Addressable Energy Backed Interface standard has a function class of Byte Addressable Energy Backed (0x1) and a function interface value of 0x1.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,11 +53,11 @@ A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\
 
 **Note**  The above listed per-operation topics describe the details of when a break of a Read-Handle oplock results in the pending of the operation that broke the oplock. For example, the [IRP\_MJ\_CREATE](irp-mj-create2.md) topic contains the associated Read-Handle details.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -95,9 +95,9 @@ The following algorithm retrieves the default system locale and then uses countr
         -   Greater than or equal to 500, but less than 600
     -   Metric otherwise.
 
- 
+ 
 
- 
+ 
 
 
 

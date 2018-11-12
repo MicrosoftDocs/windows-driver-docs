@@ -13,7 +13,7 @@ The Windows Driver Kit (WDK) includes tools that are often used in the build pro
 
 **Note**  The WDK tools listed here are typically used in the build process and have MSBuild tasks, for a complete list of the tools included in the WDK and tools that are useful for driver development, see the [Index of Windows Driver Kit Tools](index-of-windows-driver-kit-tools.md).
 
- 
+ 
 
 The WDK command-line tools support a large number of options. Each option is exposed as a task parameter. When the tasks run, they can also receive inputs from the project file. MSBuild sets these properties immediately before executing the task. Each of the individual WDK task-wrapper classes create .NET properties that are available as input and output parameters for these tasks in the project file.
 
@@ -31,7 +31,7 @@ The following table lists the tools and their corresponding task, target, and it
 | mc.exe       | Mc        | MessageCompile | MessageCompile |
 | Ctrpp.exe    | Ctrpp     | Ctrpp          | Ctrpp          |
 
- 
+ 
 
 The following example shows how to invoke the tools.
 
@@ -62,33 +62,33 @@ The example above invokes **tracewpp.exe** on the file **b.c** as if you issued 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[TraceWPP task](tracewpp-task.md)</p></td>
-<td align="left"><p>The WDK provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild. The tracewpp.exe tool is used to implement [WPP Software Tracing](wpp-software-tracing.md).</p></td>
+<td align="left"><p><a href="tracewpp-task.md" data-raw-source="[TraceWPP task](tracewpp-task.md)">TraceWPP task</a></p></td>
+<td align="left"><p>The WDK provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild. The tracewpp.exe tool is used to implement <a href="wpp-software-tracing.md" data-raw-source="[WPP Software Tracing](wpp-software-tracing.md)">WPP Software Tracing</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Stampinf task](stampinf-task.md)</p></td>
-<td align="left"><p>The WDK provides the StampInf task so that you can run the stampinf.exe tool when you build your driver using MSBuild. For information about the stampinf.exe tool, see [Stampinf](stampinf.md).</p></td>
+<td align="left"><p><a href="stampinf-task.md" data-raw-source="[Stampinf task](stampinf-task.md)">Stampinf task</a></p></td>
+<td align="left"><p>The WDK provides the StampInf task so that you can run the stampinf.exe tool when you build your driver using MSBuild. For information about the stampinf.exe tool, see <a href="stampinf.md" data-raw-source="[Stampinf](stampinf.md)">Stampinf</a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Wmimofck task](wmimofck-task.md)</p></td>
+<td align="left"><p><a href="wmimofck-task.md" data-raw-source="[Wmimofck task](wmimofck-task.md)">Wmimofck task</a></p></td>
 <td align="left"><p>The WDK provides the Wmimofck task so you can run the wmimofck.exe tool when you build a driver using MSBuild.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Mofcomp task](mofcomp-task.md)</p></td>
+<td align="left"><p><a href="mofcomp-task.md" data-raw-source="[Mofcomp task](mofcomp-task.md)">Mofcomp task</a></p></td>
 <td align="left"><p>The WDK provides the Mofcomp task so that you can run the Mofcomp.exe tool when you build your driver using MSBuld.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Message compiler task](message-compiler-task.md)</p></td>
-<td align="left"><p>The WDK provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [<strong>Message Compiler (MC.exe)</strong>](https://msdn.microsoft.com/library/windows/desktop/aa385638).</p></td>
+<td align="left"><p><a href="message-compiler-task.md" data-raw-source="[Message compiler task](message-compiler-task.md)">Message compiler task</a></p></td>
+<td align="left"><p>The WDK provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see <a href="https://msdn.microsoft.com/library/windows/desktop/aa385638" data-raw-source="[&lt;strong&gt;Message Compiler (MC.exe)&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa385638)"><strong>Message Compiler (MC.exe)</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Ctrpp task](ctrpp-task.md)</p></td>
+<td align="left"><p><a href="ctrpp-task.md" data-raw-source="[Ctrpp task](ctrpp-task.md)">Ctrpp task</a></p></td>
 <td align="left"><p>The WDK provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -105,9 +105,9 @@ The example above invokes **tracewpp.exe** on the file **b.c** as if you issued 
 
 [WPP Preprocessor](wpp-preprocessor.md)
 
- 
+ 
 
- 
+ 
 
 
 

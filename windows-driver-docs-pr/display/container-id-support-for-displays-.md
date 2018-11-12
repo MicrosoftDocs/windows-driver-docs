@@ -18,7 +18,7 @@ This topic describes Container ID support for displays—visual representation o
 | Driver implementation—Full graphics and Display only                              | Mandatory                                |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests |  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4) |
 
- 
+ 
 
 ## <span id="Container_ID_device_driver_interface__DDI_"></span><span id="container_id_device_driver_interface__ddi_"></span><span id="CONTAINER_ID_DEVICE_DRIVER_INTERFACE__DDI_"></span>Container ID device driver interface (DDI)
 
@@ -64,9 +64,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

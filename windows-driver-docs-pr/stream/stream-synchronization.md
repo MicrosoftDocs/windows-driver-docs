@@ -30,9 +30,9 @@ DVD stream inputs may be composed of two or more streams. The stream class drive
 
 If a decoder provides decoding capabilities for both audio and video, the decoder may use hardware synchronization only when the audio stream is opened as the system master clock. If the audio stream is not the master clock, the video stream must synchronize video decoding to the stream class master clock.
 
- 
+ 
 
- 
+ 
 
 
 

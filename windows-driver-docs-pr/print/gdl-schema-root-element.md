@@ -32,9 +32,9 @@ The XSD schema does not allow &lt;any&gt; elements to coexist with defined eleme
 
 The &lt;SnapshotRoot&gt; element is the outermost element in the snapshot document and it contains all of the other elements in the snapshot. There is only one &lt;SnapshotRoot&gt; element in each snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

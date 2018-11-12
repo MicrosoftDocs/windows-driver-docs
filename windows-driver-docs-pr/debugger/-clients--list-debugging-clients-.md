@@ -49,15 +49,15 @@ The **.clients** command lists all debugging clients currently connected to the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more details and other commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

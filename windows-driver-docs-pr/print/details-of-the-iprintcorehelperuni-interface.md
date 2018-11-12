@@ -18,9 +18,9 @@ The **IPrintCoreHelperUni** interface is the version of the helper interface tha
 
 -   [**IPrintCoreHelperUni::CreateGDLSnapshot**](https://msdn.microsoft.com/library/windows/hardware/ff552923)
 
- 
+ 
 
- 
+ 
 
 
 

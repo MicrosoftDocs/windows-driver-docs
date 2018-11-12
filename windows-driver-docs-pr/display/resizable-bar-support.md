@@ -19,9 +19,9 @@ For the most part this renegotiation will be invisible to the kernel mode driver
 
 Upon successful resizing, the kernel mode driver should expose a single, *CPUVisible*, memory segment to the video memory manager. The video memory manager will map CPU virtual addresses directly to this range when the CPU need to access the content of the memory segment.
 
- 
+ 
 
- 
+ 
 
 
 

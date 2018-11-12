@@ -70,9 +70,9 @@ For additional hardware error data that does not fit into one of the section typ
 
 If there is additional hardware error data that does not fit into one of the section types in the previous list or into a defined platform-specific error record section, a generic error record section is used to contain the data.
 
- 
+ 
 
- 
+ 
 
 
 

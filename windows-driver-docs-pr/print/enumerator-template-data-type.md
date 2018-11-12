@@ -97,9 +97,9 @@ If the earlier GDL entry is interpreted by using the ACOLOR template, the result
 
 The XML attribute **xsi:type** defines this instance of the GDL\_ATTRIBUTE element to hold a template-defined value type that represents an enumeration that is defined in the XML default namespace.
 
- 
+ 
 
- 
+ 
 
 
 

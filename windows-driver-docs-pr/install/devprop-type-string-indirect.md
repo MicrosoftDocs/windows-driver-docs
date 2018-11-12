@@ -25,10 +25,10 @@ Remarks
 
 An indirect string reference describes a string resource that contains the actual string. The indirect string reference can appear in one of the following formats:
 
-<a href="" id="--path--filename--resourceid"></a>**@**\[*path***\\**\]*FileName***,-***ResourceID*  
+<a href="" id="--path--filename--resourceid"></a>**@**\[<em>path</em>**\\**\]<em>FileName</em>**,-***ResourceID*  
 Windows extracts the string from the module that is specified by the *path* and *FileName* entries, and the resource identifier of the string is supplied by the *ResourceID* entry (excluding the required minus sign). The string resource is loaded from the module resource section that best matches one of the caller's preferred UI languages. The *path* entry is optional. If you specify the *path* entry, the module must be located in a directory that is in the system-defined search path.
 
-<a href="" id="-infname--strkey-"></a>**@***InfName***,%***strkey***%**  
+<a href="" id="-infname--strkey-"></a>**@**<em>InfName</em>**,%**<em>strkey</em>**%**  
 Windows extracts the string from the INF **Strings** section of the INF file in the %SystemRoot%\\*inf* directory whose name is supplied by the *InfName* entry. The *strkey* token identifier should match the key of a line in the **Strings** section that best matches one of the caller's preferred UI languages. If no language-specific **Strings** sections exist, Windows uses the default **Strings** section.
 
 You cannot combine DEVPROP_TYPE_STRING_INDIRECT with any of the property-data-type modifiers.
@@ -55,7 +55,7 @@ Starting with Windows Vista you can localize custom and standard string-type PnP
 
 Strings located in a PE image's STRINGTABLE resource (as typically performed by LoadString) should use the following format:
 
-"@System32\\mydll.dll,-21\[;Fallback String\]"
+"@"System32\\mydll.dll,-21\[;Fallback" String\]"
 
 "@System32\\mydll.dll,-21\[;Fallback String with %1, %2, … to %n\[;(Arg1,Arg2,…,ArgN)\]\]"
 
@@ -100,9 +100,9 @@ Requirements
 
 [**DEVPROP_TYPE_STRING**](devprop-type-string.md)
 
- 
+ 
 
- 
+ 
 
 
 

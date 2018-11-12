@@ -45,9 +45,9 @@ If a resource manager or superior transaction manager passes a new clock value t
 
 Resource managers and superior transaction managers can obtain a transaction manager object's virtual clock value by calling the [**ZwQueryInformationTransactionManager**](https://msdn.microsoft.com/library/windows/hardware/ff567058) routine.
 
- 
+ 
 
- 
+ 
 
 
 

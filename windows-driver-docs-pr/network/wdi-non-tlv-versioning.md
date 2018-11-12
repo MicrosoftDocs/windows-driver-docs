@@ -15,9 +15,9 @@ All data structures without an [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft
 
 For example, if WDI sets **WdiVersion** in [**NDIS\_WDI\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt297621) to **WDI\_VERSION\_1\_0**, and the miniport sets **WdiVersion** in [**NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/mt297617) to **WDI\_VERSION\_2\_0**, then both WDI and the miniport should use the structure sizes and definitions compatible with **WDI\_VERSION\_1\_0** for all structures without [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) fields. However, in the same situation but with structures that have an **NDIS\_OBJECT\_HEADER** field, WDI and the miniport may use a larger or newer structure as long as the **Revision** and **Size** fields are correctly set.
 
- 
+ 
 
- 
+ 
 
 
 

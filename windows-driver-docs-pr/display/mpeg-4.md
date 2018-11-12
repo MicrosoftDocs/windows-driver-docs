@@ -20,11 +20,11 @@ MPEG-4 can support a sample accuracy of more than 8 bits. DirectX VA includes a 
 
 **Note**   The features most unique to MPEG-4, such as shape coding, object orientation, face modeling, mesh objects, and sprites, are not supported in DirectX VA.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

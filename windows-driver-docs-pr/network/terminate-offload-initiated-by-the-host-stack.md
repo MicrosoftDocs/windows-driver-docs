@@ -38,9 +38,9 @@ Note that the preceding list of reasons is not complete.
 
 For each neighbor state object and path state object, the host stack maintains a reference count of dependent state objects. The host stack terminates the offload of a neighbor state object and path state object only when the reference count for that object is zero. The host stack never terminates the offload of a state object that still has dependent state objects linked to it.
 
- 
+ 
 
- 
+ 
 
 
 

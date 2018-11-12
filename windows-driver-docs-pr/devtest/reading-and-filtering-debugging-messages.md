@@ -30,7 +30,7 @@ The [**DbgPrintEx**](https://msdn.microsoft.com/library/windows/hardware/ff54363
 
 **Note**   In Microsoft Windows Server 2003 and earlier versions of Windows, the [**DbgPrint**](https://msdn.microsoft.com/library/windows/hardware/ff543632) and [**KdPrint**](https://msdn.microsoft.com/library/windows/hardware/ff548092) routines send messages to the kernel debugger unconditionally. In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**. Whichever version of Windows you are using, you should use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, and **KdPrintEx**, because these routines enable you to control the conditions under which the message is sent.
 
- 
+ 
 
 **To filter debugging messages**
 
@@ -44,7 +44,7 @@ For a full explanation, see the following section.
 
 **Note**   All references on this page to **DbgPrintEx** apply equally to **KdPrintEx**, **vDbgPrintEx**, and **vDbgPrintExWithPrefix**.
 
- 
+ 
 
 -   [Identifying the Component Name](#identifying-the-component-name)
 -   [Choosing the Correct Level](#choosing-the-correct-level)
@@ -102,7 +102,7 @@ There are six component names that are reserved for independent hardware vendors
 </tbody>
 </table>
 
- 
+ 
 
 For example, if you are writing a video driver, you would use DPFLTR\_IHVVIDEO\_ID as the *ComponentId* parameter of **DbgPrintEx**, use the value name IHVVIDEO in the registry, and refer to **Kd\_IHVVIDEO\_Mask** in the debugger.
 
@@ -142,9 +142,9 @@ In Windows Vista and later versions of Windows, all messages sent by **DbgPrint*
 
 There are two ways to set a component filter mask:
 
--   On the target computer, you can access the component filter mask in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase letters (for example, **DEFAULT** or **IHVDRIVER**). Set this value equal to the DWORD value that you want to use as the component filter mask (for example, 0x8 to display DPFLTR\_INFO\_LEVEL messages, in addition to DPFLTR\_ERROR\_LEVEL, or set the mask to 0xF to display all messages).
+- On the target computer, you can access the component filter mask in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase letters (for example, **DEFAULT** or **IHVDRIVER**). Set this value equal to the DWORD value that you want to use as the component filter mask (for example, 0x8 to display DPFLTR\_INFO\_LEVEL messages, in addition to DPFLTR\_ERROR\_LEVEL, or set the mask to 0xF to display all messages).
 
--   If a kernel debugger is active, it can access the component filter mask value by dereferencing the address that is stored in the symbol **Kd\_***XXXX***\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you might want to specify this symbol as **nt!Kd\_***XXXX***\_Mask**.
+- If a kernel debugger is active, it can access the component filter mask value by dereferencing the address that is stored in the symbol **Kd\_**<em>XXXX</em>**\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you might want to specify this symbol as **nt!Kd\_**<em>XXXX</em>**\_Mask**.
 
 Filter masks that are stored in the registry take effect during boot. Filter masks that are created by the debugger take effect immediately and persist until the target computer is restarted. The debugger can override a value that is set in the registry, but the component filter mask returns to the value that is specified in the registry if the target computer is restarted.
 
@@ -156,7 +156,7 @@ When **DbgPrintEx** is called in kernel-mode code, Windows compares the message 
 
 **Note**   Recall that when the *Level* parameter is between 0 and 31, the importance bitfield is equal to 1 &lt;&lt; *Level*. But when the *Level* parameter is 32 or higher, the importance bitfield is simply equal to *Level*.
 
- 
+ 
 
 Windows performs an AND operation on the importance bitfield and the component filter mask. If the result is nonzero, the message is sent to the debugger.
 
@@ -206,9 +206,9 @@ Any single call to **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExW
 
 If a message is filtered out because of its *ComponentId* and *Level* values, it is not transmitted across the debugging connection. Therefore, there is no way to display this message in the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

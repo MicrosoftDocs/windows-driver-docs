@@ -17,9 +17,9 @@ WudfBioUsbSample is based on the [umdf\_fx2](https://github.com/Microsoft/Window
 
 This documentation refers to WudfBioUsbSample to show some of the requirements of a WBDI driver.
 
- 
+ 
 
- 
+ 
 
 
 

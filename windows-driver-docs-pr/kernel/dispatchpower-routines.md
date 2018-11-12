@@ -42,9 +42,9 @@ In their *DispatchPower* routines, drivers of removable devices should check to 
 
 -   Return STATUS\_DELETE\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

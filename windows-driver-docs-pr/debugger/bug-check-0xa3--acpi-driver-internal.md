@@ -55,7 +55,7 @@ The ACPI\_DRIVER\_INTERNAL bug check has a value of 0x000000A3. This bug check i
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ An inconsistency in the ACPI driver is so severe that continuing to run would ca
 
 One possible source of this problem is a BIOS error.
 
- 
+ 
 
- 
+ 
 
 
 

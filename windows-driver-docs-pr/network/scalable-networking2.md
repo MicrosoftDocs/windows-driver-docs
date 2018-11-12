@@ -24,9 +24,9 @@ This section describes the following components of scalable networking.
     - \[The TCP chimney offload feature is deprecated and should not be used.\]
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

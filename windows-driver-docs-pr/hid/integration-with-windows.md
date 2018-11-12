@@ -61,15 +61,15 @@ Your device must also be properly registered as a gaming device. This may be don
     </tbody>
     </table>
 
-     
+     
 
 **Note**   These two entries are the minimum you need to get started. Refer to the DirectX DDK for additional information about all of the available entries and their associated services.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

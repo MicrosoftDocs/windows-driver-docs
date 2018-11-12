@@ -43,9 +43,9 @@ When a bus driver determines that a device has triggered a wake signal, it must 
 
 For information about registry entries that control a device's wake capabilities, see [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md).
 
- 
+ 
 
- 
+ 
 
 
 

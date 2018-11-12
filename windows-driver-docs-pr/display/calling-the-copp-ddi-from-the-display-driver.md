@@ -46,9 +46,9 @@ typedef struct {
 
 If you do not use the preceding IOCTLs, then you can define your own private IOCTLs, which must be formatted as described in [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -51,7 +51,7 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,9 +85,9 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 [**JobId**](jobid.md)
 
- 
+ 
 
- 
+ 
 
 
 

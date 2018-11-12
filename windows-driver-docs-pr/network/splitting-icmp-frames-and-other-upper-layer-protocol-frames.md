@@ -18,9 +18,9 @@ A NIC must split IP frames with upper-layer-protocols other than TCP or UDP (for
 
 For more information about splitting at the upper-layer-protocol header, see [Splitting Frames at the Beginning of the Upper-Layer-Protocol Headers](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md).
 
- 
+ 
 
- 
+ 
 
 
 

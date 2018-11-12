@@ -63,9 +63,9 @@ The minidriver must provide two additional routines for manipulating stream requ
 
 When a hardware interrupt occurs, the operating system signals the class driver, which then calls the minidriver's [*StrMiniInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff568459) routine to handle the interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

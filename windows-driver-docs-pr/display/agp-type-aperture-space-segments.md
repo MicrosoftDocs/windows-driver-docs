@@ -20,9 +20,9 @@ An AGP-type aperture-space segment is similar to a linear aperture-space segment
 
 The driver must set the **Agp** bit-field flag in the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562035) structure to specify an AGP-type aperture-space segment.
 
- 
+ 
 
- 
+ 
 
 
 

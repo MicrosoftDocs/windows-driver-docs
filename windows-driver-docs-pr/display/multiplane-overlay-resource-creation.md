@@ -44,9 +44,9 @@ When the [*CreateResource2*](https://msdn.microsoft.com/library/windows/hardware
 -   The **VidPnSourceId** member of the [**D3DDDIARG\_CREATERESOURCE2**](https://msdn.microsoft.com/library/windows/hardware/hh451074) structure is properly initialized.
 -   The **RefreshRate** member of the [**D3DDDIARG\_CREATERESOURCE2**](https://msdn.microsoft.com/library/windows/hardware/hh451074) structure contains zero.
 
- 
+ 
 
- 
+ 
 
 
 

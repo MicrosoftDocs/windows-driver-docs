@@ -101,9 +101,9 @@ The third example includes commands for halftone rendering while printing bitmap
 *Endif:
 ```
 
- 
+ 
 
- 
+ 
 
 
 

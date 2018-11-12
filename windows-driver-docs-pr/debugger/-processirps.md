@@ -96,9 +96,9 @@ Checking file objects for IRPs.
     IRP fffffa8006659010 - Owned by \Driver\DeviceApi for device DeviceApi (fffffa800363ae40)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ The KSINTERFACE\_STANDARD\_STREAMING interface is used between most KS audio fil
 
 [KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff563537), [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533), [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138)
 
- 
+ 
 
- 
+ 
 
 
 

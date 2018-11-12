@@ -34,9 +34,9 @@ In addition to these four routines, there is one routine that can only be called
 
 For more information about these **ScsiPort***Xxx* routines, see [SCSI Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff565375).
 
- 
+ 
 
- 
+ 
 
 
 

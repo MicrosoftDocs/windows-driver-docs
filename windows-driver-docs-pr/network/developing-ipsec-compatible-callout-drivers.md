@@ -94,9 +94,9 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
 
 When the engine indicates decrypted encapsulating security payload (ESP) packets, it truncates them to exclude trailing ESP data. Because of the way the engine handles such packets, the MDL data in the [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure does not reflect the correct packet length. The correct length can be obtained by using the [**NET\_BUFFER\_DATA\_LENGTH**](https://msdn.microsoft.com/library/windows/hardware/ff568382) macro to retrieve the data length of the **NET\_BUFFER** structure.
 
- 
+ 
 
- 
+ 
 
 
 

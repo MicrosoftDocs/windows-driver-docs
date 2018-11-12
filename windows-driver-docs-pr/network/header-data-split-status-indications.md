@@ -17,9 +17,9 @@ This section includes:
 
 [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](ndis-status-hd-split-current-config.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,11 +21,11 @@ This section includes the following topics:
 
 **Note**  For information on initializing miniport drivers for a PCIe Virtual Function (VF) on the SR-IOV network adapter, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

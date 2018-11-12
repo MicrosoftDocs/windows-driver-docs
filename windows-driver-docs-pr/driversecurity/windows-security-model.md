@@ -114,7 +114,7 @@ Example 1 shows how the system compares an ACL to the access token for a caller�
 | Deny       | Legal      | Append, write, delete |
 | Allow      | Everyone   | Read                  |
 
- 
+ 
 
 This ACL has four ACEs, which apply specifically to the Accounting, Sales, Legal, and Everyone groups.
 
@@ -155,7 +155,7 @@ Privileges are different from access rights because they apply to system-related
 
 The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
 
- 
+ 
 
 ## <span id="Creating-A-File"></span><span id="CREATING-A-FILE"></span><span id="creating-a-file"></span>Windows security model scenario: Creating a file
 
@@ -191,14 +191,14 @@ If the handle is duplicated, rights can be removed from the copy, but not added 
 
 When the I/O Manager creates an object, it converts generic Win32 access modes to object-specific rights. For example, the following rights apply to files and directories:
 
-| Win32 access mode | Object-specific rights                |
-|-------------------|---------------------------------------|
-| GENERIC\_READ     | ReadData | ReadAttributes | ReadEA    |
-| GENERIC\_WRITE    | WriteData | WriteAttributes | WriteEA |
-| GENERIC\_EXECUTE  | ReadAttributes | Execute/Traverse     |
-| GENERIC\_ALL      | All                                   |
 
- 
+| Win32 access mode | Object-specific rights |
+|-------------------|------------------------|
+|   GENERIC\_READ   |        ReadData        |
+|  GENERIC\_WRITE   |       WriteData        |
+| GENERIC\_EXECUTE  |     ReadAttributes     |
+|   GENERIC\_ALL    |          All           |
+ 
 To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\CDROM0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\CDROM0, and \\Device\\CDROM0\\Directory. The I/O Manager checks only the traversal rights for these directories.
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.

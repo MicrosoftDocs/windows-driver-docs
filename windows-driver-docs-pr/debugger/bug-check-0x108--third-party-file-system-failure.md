@@ -56,7 +56,7 @@ The THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE bug check has a value of 0x00000108. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -74,9 +74,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

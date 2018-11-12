@@ -53,8 +53,8 @@ Partner settings apps have the following characteristics:
 > [!NOTE] 
 > Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/hh465424.aspx) for more information.
 
-1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx). 
-    > If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
+1. Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx). 
+   > If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
 
 2. In the application manifest below:
     
@@ -78,12 +78,12 @@ Partner settings apps have the following characteristics:
 	    </rescap:Extension>
     </Extensions>
     ```cpp
- Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
-  ```
+   Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
+   ```
      <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"
        ....
      </uap:VisualElements>
-  ```cpp
+   ```cpp
 3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
 ## <span id="Updating_system_settings_applications"></span><span id="updating_system_settings_applications"></span><span id="UPDING_SYSTEM_SETTINGS_APPLICATIONS"></span>Updating system settings applications

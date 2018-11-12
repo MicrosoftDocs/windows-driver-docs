@@ -22,9 +22,9 @@ This section discusses the following v4 printer driver connectivity topics:
 
 [Web Services on Devices for Printing (WS-Print)](ws-print-v1-1.md)
 
- 
+ 
 
- 
+ 
 
 
 

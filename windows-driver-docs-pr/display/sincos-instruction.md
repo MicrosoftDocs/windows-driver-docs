@@ -125,9 +125,9 @@ mad r0.x, r0.x, c0.z, -c0.x
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ However, not every authentication negotiation uses preshared keys. The **GetPres
 
 This WMI method belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **GetPresharedKeyForId** method, see the member descriptions for the [**GetPresharedKeyForId\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff554973) and [**GetPresharedKeyForId\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554975) structures.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -54,7 +54,7 @@ A palette can be defined for GDI in either of the two different formats listed i
 </tbody>
 </table>
 
- 
+ 
 
 GDI typically uses the palette mapping in reverse. That is, an application specifies an RGB color for drawing and GDI must locate the color index that causes the device to display that color. As indicated in the next table, GDI provides two primary palette service functions for creating and deleting the palette, as well as some service functions related to the [**PALOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff568844) and the [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) used to translate color indexes between two palettes.
 
@@ -71,49 +71,49 @@ GDI typically uses the palette mapping in reverse. That is, an application speci
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngCreatePalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564212)</p></td>
-<td align="left"><p>Creates a palette. The driver associates the palette with a device by returning a handle to the palette in the [<strong>DEVINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564212" data-raw-source="[&lt;strong&gt;EngCreatePalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564212)"><strong>EngCreatePalette</strong></a></p></td>
+<td align="left"><p>Creates a palette. The driver associates the palette with a device by returning a handle to the palette in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552835" data-raw-source="[&lt;strong&gt;DEVINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552835)"><strong>DEVINFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngDeletePalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564808)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564808" data-raw-source="[&lt;strong&gt;EngDeletePalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564808)"><strong>EngDeletePalette</strong></a></p></td>
 <td align="left"><p>Deletes the given palette.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngDitherColor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564842)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564842" data-raw-source="[&lt;strong&gt;EngDitherColor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564842)"><strong>EngDitherColor</strong></a></p></td>
 <td align="left"><p>Returns a standard 8x8 dither that approximates the specified RGB color.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngQueryPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564993)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564993" data-raw-source="[&lt;strong&gt;EngQueryPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564993)"><strong>EngQueryPalette</strong></a></p></td>
 <td align="left"><p>Queries a palette for its attributes.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>PALOBJ_cGetColors</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568845)</p></td>
-<td align="left"><p>Allows a driver to download RGB colors from an indexed palette. Called by the display driver in the [<strong>DrvSetPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568845" data-raw-source="[&lt;strong&gt;PALOBJ_cGetColors&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568845)"><strong>PALOBJ_cGetColors</strong></a></p></td>
+<td align="left"><p>Allows a driver to download RGB colors from an indexed palette. Called by the display driver in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556282" data-raw-source="[&lt;strong&gt;DrvSetPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556282)"><strong>DrvSetPalette</strong></a> function.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>XLATEOBJ_cGetPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570637)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570637" data-raw-source="[&lt;strong&gt;XLATEOBJ_cGetPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570637)"><strong>XLATEOBJ_cGetPalette</strong></a></p></td>
 <td align="left"><p>Retrieves the 24-bit RGB colors or the bitfield format for the colors in an indexed source palette. The driver can use this function to obtain information from the palette to perform color blending.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>XLATEOBJ_hGetColorTransform</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570639)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570639" data-raw-source="[&lt;strong&gt;XLATEOBJ_hGetColorTransform&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570639)"><strong>XLATEOBJ_hGetColorTransform</strong></a></p></td>
 <td align="left"><p>Returns the color transform for the specified translation object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>XLATEOBJ_iXlate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570642)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570642" data-raw-source="[&lt;strong&gt;XLATEOBJ_iXlate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570642)"><strong>XLATEOBJ_iXlate</strong></a></p></td>
 <td align="left"><p>Translates a single source color index to a destination color index.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>XLATEOBJ_piVector</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570644)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570644" data-raw-source="[&lt;strong&gt;XLATEOBJ_piVector&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570644)"><strong>XLATEOBJ_piVector</strong></a></p></td>
 <td align="left"><p>Retrieves a translation vector from an indexed source palette. The driver can use this vector to perform its own translation of the source indexes to destination indexes.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

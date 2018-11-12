@@ -26,9 +26,9 @@ Click **OK** to load the workspace, or click **Cancel** to close the dialog box.
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

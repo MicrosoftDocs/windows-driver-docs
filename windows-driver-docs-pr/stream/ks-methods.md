@@ -28,9 +28,9 @@ A driver requests a specific method by providing a [**KSMETHOD**](https://msdn.m
 
 AVStream filters and pins describe methods that they support by supplying a [**KSAUTOMATION\_TABLE**](https://msdn.microsoft.com/library/windows/hardware/ff560990) structure in the **AutomationTable** member of either a [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure or a [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure. For more information, see [Defining Automation Tables](defining-automation-tables.md).
 
- 
+ 
 
- 
+ 
 
 
 

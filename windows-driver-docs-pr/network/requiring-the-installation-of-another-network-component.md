@@ -34,7 +34,7 @@ HKR, Ndi, RequiredAll, 0, "component1 id, component2 id"
 
 **Note**  The **RequiredAll** value should only be used to install hidden network components that cannot be installed by the user. Such components should not support a user interface. Any network components specified by **RequiredAll** cannot be removed until the network component that required their installation through **RequiredAll** is itself removed.
 
- 
+ 
 
 For example, if the INF file for component A specifies, through **RequiredAll**, a dependency on component B, component B cannot be removed until component A is removed. **RequiredAll** should therefore install only network components that are absolutely required for the operation of another network component. For example, if an INF file for a Net component (an adapter) uses **RequiredAll** to specify that TCP/IP must be installed, the user will not be able to remove TCP/IP until that adapter is removed. Since the adapter does not require TCP/IP to operate, the INF for the adapter should not use **RequiredAll** to specify a dependency on TCP/IP.
 
@@ -42,9 +42,9 @@ The INF file that specifies a **RequiredAll** dependency must ensure that the IN
 
 If the installation of a network component specified by a **RequiredAll** entry fails, the installation of the network component that requires the specified component fails as well.
 
- 
+ 
 
- 
+ 
 
 
 

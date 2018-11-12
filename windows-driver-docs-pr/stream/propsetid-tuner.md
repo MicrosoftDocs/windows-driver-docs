@@ -50,9 +50,9 @@ Tuner capture minidrivers can optionally implement the following properties:
 
 The DirectShow **IAMTVTuner** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

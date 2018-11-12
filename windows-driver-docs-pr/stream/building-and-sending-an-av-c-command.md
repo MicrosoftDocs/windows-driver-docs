@@ -20,14 +20,16 @@ ms.localizationpriority: medium
 The following procedure outlines the process to build and send an AV/C command:
 
 1.  The subunit driver must allocate and initialize an IRP that is appropriate for the number of drivers below itself (as specified in the next lower driver's DEVICE\_OBJECT-&gt;**StackSize** member). The style of IRP management that is implemented by the driver writer influences how to obtain an IRP to use with *Avc.sys*. Typically, a minidriver calls [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) to allocate a new IRP for an AV/C Command. Do not call [**IoInitializeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549315) on an IRP allocated in a subunit driver by **IoAllocateIrp**. Rather than trying to reinitialize and reuse an old IRP, call [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113) on the existing IRP, and then call **IoAllocateIrp** to allocate a new IRP.
-    **Note**  : For readability, the following code examples do not demonstrate error handling.
+    **Note**  : For readability, the following code examples do not demonstrate error handling.
 
-     
 
-    ```cpp
-    PIRP Irp;
-    Irp = IoAllocateIrp(DeviceExtension->ParentDeviceObject->StackSize, FALSE);
-    ```
+
+~~~
+```cpp
+PIRP Irp;
+Irp = IoAllocateIrp(DeviceExtension->ParentDeviceObject->StackSize, FALSE);
+```
+~~~
 
 2.  The subunit driver then allocates an AVC\_COMMAND\_IRB or AVC\_MULTIFUNC\_IRB structure that is appropriate for the type of AV/C function desired and fills in the block with the desired AV/C request parameters. The reference page for each IOCTL\_AVC\_CLASS function describes which IRB the function requires. The IRB is a block of data that describes the AV/C opcode and operation to perform. Each function supported by *Avc.sys* is associated with a specific IRB structure. The memory for the IRB must be allocated from nonpaged pool. When the memory for the IRB has been allocated, fill in the parameters for the function according to its associated structure definition.
 
@@ -118,7 +120,7 @@ Repeat Steps 1 through 5 as necessary.
 <tbody>
 <tr class="odd">
 <td><p>STATUS_SUCCESS</p></td>
-<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the [<strong>AVC_COMMAND_IRB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554140) structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
+<td><p>The request was made, and a final response was received within the bounds of the AV/C specification&#39;s time-out and retry parameters. The subunit&#39;s response code (the <strong>ResponseCode</strong> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554140" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554140)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_TIMEOUT</p></td>
@@ -126,7 +128,7 @@ Repeat Steps 1 through 5 as necessary.
 </tr>
 <tr class="odd">
 <td><p>STATUS_PENDING</p></td>
-<td><p>The request was made, and an interim response was received. It is the responsibility of the subunit driver's I/O completion routine to handle the final response and then free the IRP and IRB resources.</p></td>
+<td><p>The request was made, and an interim response was received. It is the responsibility of the subunit driver&#39;s I/O completion routine to handle the final response and then free the IRP and IRB resources.</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_REQUEST_ABORTED</p></td>
@@ -139,7 +141,7 @@ Repeat Steps 1 through 5 as necessary.
 </tbody>
 </table>
 
- 
+
 
 Any other return value from **IoCallDriver** indicates that an error occurred that was beyond the scope of the AV/C protocol. For example:
 
@@ -170,7 +172,7 @@ Any other return value from **IoCallDriver** indicates that an error occurred th
 </tbody>
 </table>
 
- 
+
 
 Basic IRP processing allows for a lower driver to either complete the IRP synchronously (immediately), or defer its completion until later. When the operation is deferred, the IRP is marked pending, and the lower driver returns STATUS\_PENDING from that driver's respective dispatch routine, which comes back to the subunit driver as the return code from **IoCallDriver**. *Avc.sys* translates the AV/C command/response protocol to this model.
 
@@ -182,9 +184,9 @@ Some *control* and all *notify* requests acknowledge, but may not necessarily co
 
 For more information about IRPs and IOCTLs, see [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847).
 
- 
 
- 
+
+
 
 
 

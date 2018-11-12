@@ -32,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_CAPABILITIES**](wdi-tlv-p2p-capabilities.md)                       |                                |          | The Wi-Fi Direct capabilities.                    |
 | [**WDI\_TLV\_P2P\_INTERFACE\_ADDRESS\_LIST**](wdi-tlv-p2p-interface-address-list.md) |                                |          | An array of Wi-Fi Direct interface MAC addresses. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ You can specify source file line numbers as all or part of an MASM expression. T
 
 **Note**   You cannot use source line numbers as part of a C++ expression. For more information about when MASM and C++ expression syntax is used, see [Evaluating Expressions](evaluating-expressions.md).
 
- 
+ 
 
 You must enclose source file and line number expressions by grave accents ( **\`** ). The following example shows the full format for source file line numbers.
 
@@ -36,9 +36,9 @@ Source line expressions are not evaluated in CDB unless you issue a [**.lines (T
 
 For more information about source debugging, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

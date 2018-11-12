@@ -39,9 +39,9 @@ The following topics describe how to create a notify object:
 
 [Retrieving Network Configuration Interface Pointers](retrieving-network-configuration-interface-pointers.md)
 
- 
+ 
 
- 
+ 
 
 
 

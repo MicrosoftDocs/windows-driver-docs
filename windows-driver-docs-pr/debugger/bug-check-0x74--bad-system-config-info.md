@@ -55,7 +55,7 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug chec
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,9 +78,9 @@ Try booting into safe mode and then restart the OS normally. If the restart does
 
 For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options#).
 
- 
+ 
 
- 
+ 
 
 
 

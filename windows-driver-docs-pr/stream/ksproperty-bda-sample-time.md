@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over whic
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,9 +91,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_SIGNAL\_STRENGTH**](ksproperty-bda-signal-strength.md)
 
- 
+ 
 
- 
+ 
 
 
 

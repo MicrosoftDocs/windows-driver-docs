@@ -57,7 +57,7 @@ The following table is a simplification of the information listed above.
 | User Mode   | HidD\_Xxx                    | HidP\_Xxx    |
 | Kernel Mode | HidD\_Xxx OR IOCTL\_HID\_xxx | N/A          |
 
- 
+ 
 
 For more information, see [Opening HID collections](opening-hid-collections.md).
 
@@ -70,9 +70,9 @@ The HID class driver is designed to use HID minidrivers to access a hardware inp
 
 For a list of the HID Transports provided in Windows, see [HID Transports Supported in Windows](hid-transports-supported-in-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

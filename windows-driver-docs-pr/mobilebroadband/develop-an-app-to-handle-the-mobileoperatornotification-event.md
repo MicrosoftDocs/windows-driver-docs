@@ -338,7 +338,7 @@ The foreground app can also register a completion handler to be notified when th
 **Important**  
 Although the mobile operator background event is registered automatically by the system to the app, the app still needs to run at least one time to register to the background completion or progress handlers.
 
- 
+ 
 
 **C#**
 
@@ -474,7 +474,7 @@ In Event Viewer, under **Application and Services Logs\\Microsoft\\Windows \\Mob
 
 If received SMS are not detected as operator notifications, verify the custom filtering rules for administrative SMS notifications in the account provisioning metadata. For more info about provisioning metadata, see [Account provisioning](account-provisioning.md).
 
-In particular, if account provisioning metadata specifies the sender phone number, verify that the number formatting specified matches that in the received message by using the SMS APIs. To verify that this is matching correctly, temporarily change the Pattern to **\[^\]\*** to match all messages from this sender.
+In particular, if account provisioning metadata specifies the sender phone number, verify that the number formatting specified matches that in the received message by using the SMS APIs. To verify that this is matching correctly, temporarily change the Pattern to **\[^\]\\*** to match all messages from this sender.
 
 ## <span id="samp"></span><span id="SAMP"></span>Sample backgroundtask.js file
 
@@ -611,9 +611,9 @@ In particular, if account provisioning metadata specifies the sender phone numbe
 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
- 
+ 
 
- 
+ 
 
 
 

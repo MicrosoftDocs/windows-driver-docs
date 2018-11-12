@@ -18,9 +18,9 @@ Select or clear **Status Bar** on the **View** menu to cause the status bar to b
 
 For more information about how to use the status bar, see [Using the Toolbar and Status Bar](using-the-toolbar-and-status-bar.md).
 
- 
+ 
 
- 
+ 
 
 
 

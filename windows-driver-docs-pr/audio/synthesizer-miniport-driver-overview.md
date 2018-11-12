@@ -58,9 +58,9 @@ The miniport driver object is created by the IHV's adapter driver. While there i
 
 The section [DirectMusic Miniport Driver Interface](directmusic-miniport-driver-interface.md) presents the details of a DirectMusic miniport driver implementation.
 
- 
+ 
 
- 
+ 
 
 
 

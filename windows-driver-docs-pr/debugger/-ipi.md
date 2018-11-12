@@ -48,7 +48,7 @@ Specifies a processor. If *Processor* is omitted, the IPI state for every proces
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -88,9 +88,9 @@ IPI State for Processor 1
   Packet Barrier:  0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

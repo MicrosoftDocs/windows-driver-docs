@@ -26,9 +26,9 @@ If a driver will fail initialization, the **DriverEntry** routine also should lo
 
 Note that a driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine is not called if a driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine returns a failure status.
 
- 
+ 
 
- 
+ 
 
 
 

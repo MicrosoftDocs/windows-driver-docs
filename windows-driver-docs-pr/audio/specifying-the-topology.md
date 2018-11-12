@@ -58,12 +58,12 @@ Each port driver is paired with a corresponding miniport driver to form a [KS fi
 </tr>
 <tr class="odd">
 <td align="left"><p>Topology filter</p></td>
-<td align="left"><p>Represents the adapter's mixer circuitry.</p></td>
+<td align="left"><p>Represents the adapter&#39;s mixer circuitry.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The miniport driver implements the filter's device-specific functions, including the definition of the portion of the adapter topology that the device encompasses. The port driver takes care of the generic filter operations, including communication with the operating system, for each type of filter.
 
@@ -92,42 +92,42 @@ In the preceding figure, the topology at the top level consists of the connectio
 <tr class="odd">
 <td align="left"><p>Synth</p></td>
 <td align="left"><p>Synthesizer node</p></td>
-<td align="left">[<strong>KSNODETYPE_SYNTHESIZER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537203)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537203" data-raw-source="[&lt;strong&gt;KSNODETYPE_SYNTHESIZER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537203)"><strong>KSNODETYPE_SYNTHESIZER</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DAC</p></td>
 <td align="left"><p>Digital-to-audio converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_DAC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537158)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537158" data-raw-source="[&lt;strong&gt;KSNODETYPE_DAC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537158)"><strong>KSNODETYPE_DAC</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ADC</p></td>
 <td align="left"><p>Analog-to-digital converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_ADC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537153)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537153" data-raw-source="[&lt;strong&gt;KSNODETYPE_ADC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537153)"><strong>KSNODETYPE_ADC</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Volume</p></td>
 <td align="left"><p>Volume-level control node</p></td>
-<td align="left">[<strong>KSNODETYPE_VOLUME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537208)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537208" data-raw-source="[&lt;strong&gt;KSNODETYPE_VOLUME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537208)"><strong>KSNODETYPE_VOLUME</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mute</p></td>
 <td align="left"><p>Mute control node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUTE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537178)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537178" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUTE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537178)"><strong>KSNODETYPE_MUTE</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sum</p></td>
 <td align="left"><p>Summation node</p></td>
-<td align="left">[<strong>KSNODETYPE_SUM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537196)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537196" data-raw-source="[&lt;strong&gt;KSNODETYPE_SUM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537196)"><strong>KSNODETYPE_SUM</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MUX</p></td>
 <td align="left"><p>Multiplexer node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537180)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537180" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537180)"><strong>KSNODETYPE_MUX</strong></a></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In the preceding figure, the pins on the left side of the audio adapter represent the logical connections (not physical connections) through which data streams enter the adapter from the system bus or enter the system bus from the adapter. These pins are logically connected to source and sink pins on other filters (not shown) that are external to the adapter. Typically, these filters are software modules that, together with the adapter topology, form a larger filter graph whose topology can be explored by applications using the mixer*Xxx* functions. For example, the pin labeled "PCM Wave Out" in the preceding figure is logically connected to the user-mode audio engine in Windows. These logical connections are maintained by DMA transfers over the system bus.
 
@@ -149,9 +149,9 @@ The miniport driver presents its topology to the port driver in the form of a [*
 
 Instead of designing a monolithic topology filter, as shown in the preceding figure, the mixer circuitry in the audio adapter can be partitioned into several topology filters. For example, in the preceding figure, the data paths that drive the speakers might be implemented as one topology filter, and the data paths that capture audio data from input devices can be implemented as a separate topology filter. When the data paths in a particular topology filter are not in use, that portion of the adapter can be powered down without disabling the entire adapter. For more information, see [Dynamic Audio Subdevices](dynamic-audio-subdevices.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,16 +25,16 @@ The Active Memory Dump is available in Windows 10 and later.
 
 **Note**  To suppress missing page error messages when debugging an Active Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

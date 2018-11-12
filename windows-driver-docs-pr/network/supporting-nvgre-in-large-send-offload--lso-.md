@@ -13,7 +13,7 @@ NDIS 6.30 (Windows Server 2012) introduces [Network Virtualization using Generi
 
 **Note**  This page assumes that you are familiar with the information in [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md).
 
- 
+ 
 
 If [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/jj991957).**IsEncapsulatedPacket** is **TRUE** and the **TcpIpChecksumNetBufferListInfo** out-of-band (OOB) information is valid, this indicates that NVGRE support is required and the NIC must perform LSOV2 offload on the NVGRE-formatted packet, with the following conditions:
 
@@ -45,9 +45,9 @@ Miniport drivers must do the following:
 
 [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

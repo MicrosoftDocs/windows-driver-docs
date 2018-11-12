@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the MPS table in the BIOS. If this is omitt
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -56,9 +56,9 @@ This extension command can only be used with an x86-based target computer.
 
 For more information about BIOS debugging, see [Debugging BIOS Code](debugging-bios-code.md). For more information about the MPS, refer to the appropriate version of the Intel MultiProcessor Specification.
 
- 
+ 
 
- 
+ 
 
 
 

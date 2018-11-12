@@ -25,9 +25,9 @@ A KSNODETYPE\_DEV\_SPECIFIC node should support the following required property:
 
 [**KSPROPERTY\_AUDIO\_DEV\_SPECIFIC**](ksproperty-audio-dev-specific.md)
 
- 
+ 
 
- 
+ 
 
 
 

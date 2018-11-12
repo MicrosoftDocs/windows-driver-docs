@@ -15,9 +15,9 @@ The KSEVENTSETID\_CameraAsyncControl event set specifies the camera asynchronous
 
 [**KSEVENT\_CAMERACONTROL\_ZOOM**](ksevent-cameracontrol-zoom.md)
 
- 
+ 
 
- 
+ 
 
 
 

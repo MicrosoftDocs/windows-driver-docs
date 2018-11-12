@@ -33,9 +33,9 @@ A WIA minidriver should be able to do the following:
 
 The following sections describe how a WIA minidriver performs these tasks.
 
- 
+ 
 
- 
+ 
 
 
 

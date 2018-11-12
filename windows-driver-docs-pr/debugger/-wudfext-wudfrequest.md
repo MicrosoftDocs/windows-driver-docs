@@ -48,7 +48,7 @@ Specifies the address of the **WDFIoRequest** interface to display information a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,9 +95,9 @@ UM IRP: 0x00429108  UniqueId: 0xf4  Kernel Irp: 0x0x936ef160
         Offset:               0x0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

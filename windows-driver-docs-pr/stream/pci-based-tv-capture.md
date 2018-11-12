@@ -29,9 +29,9 @@ The video capture minidriver then can retain ownership of the buffers indefinite
 
 If your video capture hardware includes an FM radio tuner, see [Video Capture Devices with Radio Tuners](video-capture-devices-with-radio-tuners.md).
 
- 
+ 
 
- 
+ 
 
 
 

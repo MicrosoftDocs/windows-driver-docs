@@ -42,9 +42,9 @@ A driver indicates an event block by setting WMIREG\_FLAG\_EVENT\_ONLY\_GUID. Th
 
 A driver instructs WMI to remove a previously registered block by setting WMIREG\_FLAG\_REMOVE\_GUID. This flag is valid only in response to a request to update registration information ([**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) or [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) with WMIUPDATE). For more information, see [Updating WMI Registration Information](updating-wmi-registration-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

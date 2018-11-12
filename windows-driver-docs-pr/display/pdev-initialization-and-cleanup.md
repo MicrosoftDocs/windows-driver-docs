@@ -66,9 +66,9 @@ A call to the driver's [**DrvDisablePDEV**](https://msdn.microsoft.com/library/w
 
 Refer also to [Enabling and Disabling the Surface](enabling-and-disabling-the-surface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ Kernel-mode code can determine the status of kernel debugging by using the follo
 
 For complete documentation, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

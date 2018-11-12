@@ -29,9 +29,9 @@ If the *MiniportCoOidRequest* function returns NDIS\_STATUS\_PENDING, NDIS can c
 
 NDIS can call a miniport driver's [*MiniportCancelOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559339) function to cancel a CoNDIS OID request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -94,9 +94,9 @@ To reduce the chance of an "elevation of privilege" attack, you should:
 
     Your [*EvtRequestImpersonate*](https://msdn.microsoft.com/library/windows/hardware/dn265581) callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
 
- 
+ 
 
- 
+ 
 
 
 

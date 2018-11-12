@@ -170,7 +170,7 @@ This class includes network and/or print providers.
   
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.  
   
-   
+   
   
 **Network Service**  
 Class = NetService  
@@ -269,9 +269,9 @@ Class = SideShow
 ClassGuid = {997b5d8d-c442-4f2e-baf3-9c8e671e9e21}  
 (Windows Vista and later versions of Windows) This class includes all devices that are compatible with Windows SideShow.  
   
-   
+   
   
-   
+   
   
 
   

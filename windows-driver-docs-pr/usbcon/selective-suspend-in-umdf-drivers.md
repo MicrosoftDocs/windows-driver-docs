@@ -83,7 +83,6 @@ hr = __super::Initialize(WdfIoQueueDispatchParallel,
                          true,
                          powerManaged,
                          );
-
 ```
 
 **CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) to create the queue as follows:

@@ -56,7 +56,7 @@ Specifies the address of the error record.
 </tbody>
 </table>
 
- 
+ 
 
 This extension can be used only in Windows Vista and later versions of Windows.
 
@@ -156,9 +156,9 @@ Bank Number      : 0
    Misc    : 0000000000000000 (I)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

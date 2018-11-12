@@ -16,9 +16,9 @@ Beginning with Windows 7, a display miniport driver can set additional members i
 
 For further information about available rendering capability settings, see [**DXGK\_PRESENTATIONCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562004).
 
- 
+ 
 
- 
+ 
 
 
 

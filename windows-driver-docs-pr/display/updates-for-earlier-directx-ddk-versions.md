@@ -22,9 +22,9 @@ The following topics describe features that were not previously documented and t
 
 [Supplying Default Values for Texture Coordinates in Vertex Declarations](supplying-default-values-for-texture-coordinates-in-vertex-declaration.md)
 
- 
+ 
 
- 
+ 
 
 
 

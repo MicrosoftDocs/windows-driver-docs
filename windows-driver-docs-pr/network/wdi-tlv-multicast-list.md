@@ -31,7 +31,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microso
 |-------------------------------------------------------|--------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | An array of multicast MAC addresses. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

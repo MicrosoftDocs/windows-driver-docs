@@ -33,9 +33,9 @@ ms.localizationpriority: medium
 
 -   Devices that use bus-master DMA need only to use the scatter/gather DMA list supplied in the stream request block structure ([**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702)). No locking or mapping of the DMA buffers is necessary. See the **HW\_STREAM\_REQUEST\_BLOCK** structure for more information. Additionally, if minidrivers need to break up DMA requests, the [**StreamClassGetPhysicalAddress**](https://msdn.microsoft.com/library/windows/hardware/ff568247) function can be used to get the physical address of the offset within the virtual buffer pointers.
 
- 
+ 
 
- 
+ 
 
 
 

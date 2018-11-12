@@ -18,9 +18,9 @@ For a listing of DMA routines, see [Direct Memory Access (DMA) Library Routines]
 
 Note that DMA is a technology for communicating directly between device and memory and is not the same as [Device Memory Access](https://msdn.microsoft.com/library/windows/hardware/ff543138), which is a set of macros provided to read and write to I/O ports and CPU registers.
 
- 
+ 
 
- 
+ 
 
 
 

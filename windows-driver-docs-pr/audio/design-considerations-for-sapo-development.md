@@ -31,9 +31,7 @@ All system-supplied and custom sAPOs must have the following general characteris
 
 -   An sAPO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) routine. The sAPO cannot change the settings of the underlying logical device, including its KS topology.
 
--   GFX sAPOs must process data by using a format with a fixed frame size. The frame size is specified by the audio engine. The format is static for both input and output.
-
--   GFX sAPOs should not introduce more than 10 ms of latency into the audio processing chain. An sAPO reports this latency through the [**IAudioProcessingObject::GetLatency**](https://msdn.microsoft.com/library/windows/hardware/ff536509) API.
+-  An sAPO reports this latency through the [**IAudioProcessingObject::GetLatency**](https://msdn.microsoft.com/library/windows/hardware/ff536509) API.
 
 In addition to **IUnknown**, sAPOs must expose the following interfaces:
 
@@ -47,7 +45,7 @@ In addition to **IUnknown**, sAPOs must expose the following interfaces:
 
 **Important**   Custom sAPOs must not expose the **IAudioProcessingObjectVBR** interface.
 
- 
+ 
 
 For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the WinDDK\\&lt;build number&gt;\\inc\\API folder.
 
@@ -59,9 +57,9 @@ The following topics provide details about the two main tasks required for wrapp
 
 [Replacing System-supplied sAPOs](replacing-system-supplied-sapos.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ The device's alternate settings must be numbered contiguously, starting with zer
 
 For related information, see [How to select an alternate setting in a USB interface](https://msdn.microsoft.com/library/windows/hardware/hh968309).
 
- 
+ 
 
- 
+ 
 
 
 

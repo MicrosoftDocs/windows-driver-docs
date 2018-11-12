@@ -21,9 +21,9 @@ If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SUC
 
 The FLT\_PREOP\_SUCCESS\_NO\_CALLBACK status value can be returned for all types of I/O operations.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -133,7 +133,7 @@ Displays some brief Help text for this extension or one of its options in the De
 </tbody>
 </table>
 
- 
+ 
 
 The **!evlog** extension can only be used during live debugging.
 
@@ -240,9 +240,9 @@ Please look for more details in TroubleShooting section in Security Help.
 WARNING: Max record count (4) exceeded, increase record count to view more
 ```
 
- 
+ 
 
- 
+ 
 
 
 

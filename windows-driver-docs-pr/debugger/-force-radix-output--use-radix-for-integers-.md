@@ -56,7 +56,7 @@ Displays all integers (except for long integers) in the default radix.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -69,9 +69,9 @@ The **.force\_radix\_output** command affects only the display of standard integ
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

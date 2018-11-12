@@ -169,9 +169,9 @@ NTSTATUS WSKAPI
 
 If a datagram socket's [*WskReceiveFromEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571142) event callback function does not retrieve all of the datagrams from the list of [**WSK\_DATAGRAM\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff571164) structures pointed to by the *DataIndication* parameter, it can retain the list for further processing by returning STATUS\_PENDING. In this situation, the WSK application must call the [**WskRelease**](https://msdn.microsoft.com/library/windows/hardware/ff571144) function to release the list of WSK\_DATAGRAM\_INDICATION structures back to the WSK subsystem after it has completed retrieving all of the datagrams from the structures in the list.
 
- 
+ 
 
- 
+ 
 
 
 

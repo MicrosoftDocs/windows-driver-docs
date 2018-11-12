@@ -33,9 +33,9 @@ The following topics introduce memory segments and describe how they are used in
 
 [Reporting Graphics Memory](reporting-graphics-memory.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -55,9 +55,9 @@ class ISCSI_IP_Address {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](https://msdn.microsoft.com/library/windows/hardware/ff561536) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

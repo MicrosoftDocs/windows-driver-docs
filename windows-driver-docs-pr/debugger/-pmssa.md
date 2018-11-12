@@ -27,7 +27,7 @@ This extension can only be used with an Itanium-based target computer.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -54,11 +54,11 @@ Specifies the address of a processor Min-StateSave Area.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

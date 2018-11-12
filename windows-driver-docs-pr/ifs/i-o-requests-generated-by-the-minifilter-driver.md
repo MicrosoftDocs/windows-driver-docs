@@ -74,9 +74,9 @@ The filter manager also provides the following general-purpose routines:
 
 [**FltSetSecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff544538)
 
- 
+ 
 
- 
+ 
 
 
 

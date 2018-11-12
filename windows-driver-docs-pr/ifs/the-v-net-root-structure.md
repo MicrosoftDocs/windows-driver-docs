@@ -53,9 +53,9 @@ The finalization of a V\_NET\_ROOT structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the V\_NET\_ROOT structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

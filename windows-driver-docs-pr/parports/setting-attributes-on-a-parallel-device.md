@@ -26,9 +26,9 @@ A client uses following device control requests to set the indicated operations 
 
 -   [**IOCTL\_PAR\_SET\_WRITE\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff544115) sets an ECP or EPP write address (channel) for a parallel device.
 
- 
+ 
 
- 
+ 
 
 
 

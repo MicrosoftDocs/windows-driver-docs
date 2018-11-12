@@ -41,9 +41,9 @@ class DSM_QuerySupportedLBPolicies
 
 When this class definition compiled by the WMI tool suite, this class definition produces the [**DSM\_QuerySupportedLBPolicies**](https://msdn.microsoft.com/library/windows/hardware/ff552733) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

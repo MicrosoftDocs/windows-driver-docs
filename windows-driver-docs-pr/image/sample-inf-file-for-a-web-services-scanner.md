@@ -14,7 +14,7 @@ The following INF file, *Sti.inf*, shows how to install a WIA driver. Entries th
 
 **Note**   The requirements for the device hardware IDs and the **PKEY\_Device\_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide](http://go.microsoft.com/fwlink/p/?linkid=242570).
 
- 
+ 
 
 ```INF
 ;
@@ -132,9 +132,9 @@ ScanToOCREvent.Desc="Scan To OCR"
 ScanToEmailEvent.Desc="Scan To E-mail"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

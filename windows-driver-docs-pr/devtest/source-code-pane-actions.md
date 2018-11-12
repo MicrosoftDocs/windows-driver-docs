@@ -32,9 +32,9 @@ You can perform the following actions in the **Source Code** pane:
     2.  From the **Edit** menu, select **Select All** (or press CTRL + A).
     3.  From the **Edit** menu, select **Copy** (or press CTRL+C).
 
- 
+ 
 
- 
+ 
 
 
 

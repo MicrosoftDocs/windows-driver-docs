@@ -40,9 +40,9 @@ IP packet fragments are not indicated; inspection of outgoing IP fragments is cu
 
 IP packets or fragments that do not originate from, or are not destined for, an address that is assigned to the local computer are available for inspection at the forwarding layer. For example, if a packet that is destined for a local client is modified to have a nonlocal destination address and then is injected into the receive path, it will be injected into the forwarding layer. Similarly, if a packet that originates from a local source address is modified to have a nonlocal source address, it will be delivered to the forwarding layer after it is injected into the send path.
 
- 
+ 
 
- 
+ 
 
 
 

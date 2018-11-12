@@ -89,9 +89,9 @@ The platform can indicate to the operating system that processor cores in the th
 
 OEMs can include a Device-Specific Method (\_DSM) to support the Microsoft thermal extensions for Windows. For more information, see [Device-Specific Method for Microsoft Thermal Extensions](device-specific-method-for-microsoft-thermal-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

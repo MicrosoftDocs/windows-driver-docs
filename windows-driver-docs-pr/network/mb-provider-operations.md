@@ -13,9 +13,9 @@ This topic describes the operations related to *home*, *preferred*, *multicarrie
 
 For more information about provider operations, see [OID\_WWAN\_HOME\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826), [OID\_WWAN\_PREFERRED\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830), [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/hh831868), and [OID\_WWAN\_VISIBLE\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569843).
 
- 
+ 
 
- 
+ 
 
 
 

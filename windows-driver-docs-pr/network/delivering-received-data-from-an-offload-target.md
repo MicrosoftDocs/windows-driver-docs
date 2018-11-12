@@ -24,9 +24,9 @@ An offload target can deliver received data through the TCP chimney in either of
 
 The [delivery algorithm](delivery-algorithm.md) specifies the conditions under which an offload target must use a preposted receive request or make an receive indication.
 
- 
+ 
 
- 
+ 
 
 
 

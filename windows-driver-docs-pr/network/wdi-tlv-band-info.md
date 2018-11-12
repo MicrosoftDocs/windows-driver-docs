@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CHANNEL\_LIST**](wdi-tlv-channel-list.md)              |                                |          | A list of valid channel numbers in this band. |
 | [**WDI\_TLV\_CHANNEL\_WIDTH\_LIST**](wdi-tlv-channel-width-list.md) |                                |          | A list of channel widths in MHz               |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

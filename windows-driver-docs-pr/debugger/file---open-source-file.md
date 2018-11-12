@@ -27,7 +27,7 @@ When you click **Open Source File**, the **Open Source File** dialog box appears
 2.  In the **Files of type** list, select the type of file that you want to open. Only files with the chosen extensions are displayed in the **Open Source File** dialog box.
     **Note**  You can also use wildcard patterns in the **File name** box to display only files with a certain extension. The new wildcard pattern is retained in a session until you change it. You can use any combination of wildcard patterns, separated by semicolons. For example, entering **\*.INC; \*.H; \*.CPP** displays all files with these extensions. The maximum number of characters in a line is 251.
 
-     
+     
 
 3.  If you find the file you want, double-click the file name, or click the file name and click **Open**.
 
@@ -41,9 +41,9 @@ The names of the four files that you opened most recently in WinDbg are displaye
 
 For more information about source files and source paths and for other ways to load source files, see [Source Path](source-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

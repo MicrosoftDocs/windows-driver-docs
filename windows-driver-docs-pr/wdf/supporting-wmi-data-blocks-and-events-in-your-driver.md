@@ -73,9 +73,9 @@ For more information about event tracing, see:
 
 -   [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)
 
- 
+ 
 
- 
+ 
 
 
 

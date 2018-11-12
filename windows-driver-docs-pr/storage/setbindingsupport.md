@@ -26,9 +26,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void SetBindingSupport(
-   [in, HBAType("HBA_WWN")] uint8               PortWWN[8],
-   [in, HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE BindType,
-   [out, HBA_STATUS_QUALIFIERS ] HBA_STATUS     HBAStatus
+   [in, HBAType("HBA_WWN")] uint8               PortWWN[8],
+   [in, HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE BindType,
+   [out, HBA_STATUS_QUALIFIERS ] HBA_STATUS     HBAStatus
 );
 ```
 
@@ -87,9 +87,9 @@ Requirements
 
 [**SetBindingSupport\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565575)
 
- 
+ 
 
- 
+ 
 
 
 

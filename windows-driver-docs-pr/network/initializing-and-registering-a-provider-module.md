@@ -166,9 +166,9 @@ A provider module is not required to call [**NmrRegisterProvider**](https://msdn
 
 For more information about implementing a provider module's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function, see [Unloading a Provider Module](unloading-a-provider-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

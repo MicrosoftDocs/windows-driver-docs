@@ -60,9 +60,9 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE](ndis-status-wdi-indication-tkip-mic-failure.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](ndis-status-wdi-indication-wake-reason.md)
 
- 
+ 
 
- 
+ 
 
 
 

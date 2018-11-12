@@ -16,9 +16,9 @@ This section discusses the [KSMETHODSETID\_StreamAllocator](ksmethodsetid-stream
 
 Also see [KS Methods](https://msdn.microsoft.com/library/windows/hardware/ff567655).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -104,9 +104,9 @@ The following structure members and flags must equal the indicated values:
 
 -   **bConfigResidDiffHost** must equal zero (off-host residual difference decoding).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Regardless of whether color management is being handled by the application, syst
 
 Note that if the driver supports CMYK color space, it must also support halftoning. Thus if the driver sets the GCAPS\_CMYKCOLOR flag in DEVINFO, it must also set GCAPS\_HALFTONE.
 
- 
+ 
 
- 
+ 
 
 
 

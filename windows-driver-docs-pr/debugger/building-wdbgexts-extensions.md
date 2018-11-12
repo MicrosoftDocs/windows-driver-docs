@@ -59,7 +59,7 @@ Note the following points:
     </tbody>
     </table>
 
-     
+     
 
  If \_NT\_TARGET\_VERSION is not set, the extension will only run on the version of Windows for which the build window was opened (and later versions). For example, putting the following line in your Sources file will build an extension that will run on Windows:
     ```console
@@ -85,9 +85,9 @@ Note the following points:
 
 For a full explanation of these steps, and for a description of how to create a Dirs file and a Sources file, see the Build utility documentation in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

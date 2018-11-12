@@ -56,9 +56,9 @@ for (UINT32 i = 0;
 
 The third field, **MemoryInternallyAllocated**, is used internally by the parser/generator. It should not be modified by the IHV.
 
- 
+ 
 
- 
+ 
 
 
 

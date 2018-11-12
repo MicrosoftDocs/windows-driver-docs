@@ -21,13 +21,13 @@ Call [**KeFlushIoBuffers**](https://msdn.microsoft.com/library/windows/hardware/
 
 For example, a driver making a PIO transfer from its device to system memory should call **KeFlushIoBuffers** at the end of each device transfer operation. As another example, a driver that reads a sequence of device registers into system memory should call **KeFlushIoBuffers** at the end of the sequence. Otherwise, such a driver might attempt to access data that is still in the processor's data cache, rather than in system memory, on some platforms.
 
- 
+ 
 
 **KeFlushIoBuffers** does nothing if the processor can be relied on to maintain cache coherency, so calls to this support routine have almost no overhead in such a platform.
 
- 
+ 
 
- 
+ 
 
 
 

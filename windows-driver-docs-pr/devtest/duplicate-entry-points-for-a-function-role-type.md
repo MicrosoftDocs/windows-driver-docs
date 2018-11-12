@@ -59,9 +59,9 @@ Some function role types support multiple entries. When the number of entries ex
 
 See [Static Driver Verifier KMDF Annotations](static-driver-verifier-kmdf-function-declarations.md) for a list of function role types that can have more than one callback function. The list shows the maximum number of callback functions that SDV supports for those role types.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ In addition to [connecting to a parallel device](connecting-to-a-parallel-device
 
 [**IOCTL\_SERIAL\_GET\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/ff544120)
 
- 
+ 
 
- 
+ 
 
 
 

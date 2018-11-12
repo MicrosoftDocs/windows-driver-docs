@@ -32,7 +32,7 @@ Assuming that the 32-bit application has passed a valid value for **Irp-&gt;User
 
 **Note**   Removing the **ProbeForRead** call does not fix the problem, but only makes it harder to diagnose.
 
- 
+ 
 
 ```cpp
 typedef struct _IOCTL_PARAMETERS2 {
@@ -139,9 +139,9 @@ typedef struct _IOCTL_PARAMETERS3 {
 } IOCTL_PARAMETERS3, *PIOCTL_PARAMETERS3;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

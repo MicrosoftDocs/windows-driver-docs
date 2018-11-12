@@ -46,7 +46,7 @@ Unless otherwise specified, all parameters will follow the International System 
 </tbody>
 </table>
 
- 
+ 
 
 ## Error reporting
 
@@ -72,9 +72,9 @@ Every structure specified for the GNSS DDI contains a driver version field, and 
 
 -   Any Windows 8.1 or older GNSS sensor drivers will not be supported by the GNSS adapter. These drivers would continue to function in Windows 10 through the legacy stack. In presence of another Windows 10 GNSS driver the usage of the legacy GNSS sensor driver is undefined.
 
- 
+ 
 
- 
+ 
 
 
 

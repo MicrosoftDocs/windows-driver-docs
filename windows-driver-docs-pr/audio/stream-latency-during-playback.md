@@ -37,9 +37,9 @@ After the client determines the amount of separation to maintain between the wri
 
 If the audio device has a position register as shown in the preceding diagram, the property request maps the register to a virtual memory address that is accessible to the user-mode client. After the position register is mapped, the client can read the contents of the memory address to determine the current play position.
 
- 
+ 
 
- 
+ 
 
 
 

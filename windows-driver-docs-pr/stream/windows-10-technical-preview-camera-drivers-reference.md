@@ -20,9 +20,9 @@ The following sections contain information about new camera driver interfaces fo
 
 [New camera driver structures for Windows 10](camera-driver-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,16 +26,16 @@ To register support for these functions, the miniport driver stores their entry 
 | [**NDK\_SHARED\_ENDPOINT**](https://msdn.microsoft.com/library/windows/hardware/hh439937) | [*NDK\_FN\_CREATE\_SHARED\_ENDPOINT*](https://msdn.microsoft.com/library/windows/hardware/hh439882)                                                  | [**NDK\_SHARED\_ENDPOINT\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/hh439938) |
 | [**NDK\_SRQ**](https://msdn.microsoft.com/library/windows/hardware/hh439939)                          | [*NDK\_FN\_CREATE\_SRQ*](https://msdn.microsoft.com/library/windows/hardware/hh439883) or [*NDK\_FN\_CREATE\_QP\_WITH\_SRQ*](https://msdn.microsoft.com/library/windows/hardware/hh439880) | [**NDK\_SRQ\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/hh439940)                          |
 
- 
+ 
 
 ## Related topics
 
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

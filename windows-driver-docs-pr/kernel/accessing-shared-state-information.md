@@ -46,9 +46,9 @@ In this scenario, the driver has more than one *SynchCritSection* routine, each 
 
 Note that the driver has a single SynchCritSection\_1 routine which, along with the driver's ISR, maintains the state to the timer counter. Thus, there is no contention for access to the timer counter among several *SynchCritSection* routines and the ISR.
 
- 
+ 
 
- 
+ 
 
 
 

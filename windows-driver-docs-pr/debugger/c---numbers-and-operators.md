@@ -22,7 +22,7 @@ Numbers in C++ expressions are interpreted as decimal numbers, unless you specif
 
 The default debugger radix does not affect how you enter C++ expressions. You cannot directly enter a binary number (except by nesting a MASM expression within the C++ expression).
 
-You can enter a hexadecimal 64-bit value in the *xxxxxxxx***\`***xxxxxxxx* format. (You can also omit the grave accent ( **\`** ).) Both formats produce the same value.
+You can enter a hexadecimal 64-bit value in the <em>xxxxxxxx</em>**\`**<em>xxxxxxxx</em> format. (You can also omit the grave accent ( **\`** ).) Both formats produce the same value.
 
 You can use the **L**, **U**, and **I64** suffixes with integer values. The actual size of the number that is created depends on the suffix and the number that you enter. For more information about this interpretation, see a C++ language reference.
 
@@ -114,8 +114,8 @@ You can use the following operators. The operators in each cell take precedence 
 <p><strong>!</strong> <em>Value</em></p>
 <p><em>Value</em></p>
 <p><strong>+</strong> <em>Value</em></p>
-<p><strong>&</strong> <em>LValue</em></p>
-<p><strong>*</strong> <em>Value</em></p></td>
+<p><strong>&amp;</strong> <em>LValue</em></p>
+<p><strong><em></strong> <em>Value</em></p></td>
 <td align="left"><p>Typecast (always performed)</p>
 <p>Size of expression</p>
 <p>Size of data type</p>
@@ -129,13 +129,13 @@ You can use the following operators. The operators in each cell take precedence 
 <p>Dereference</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><em>Structure</em> <strong>. *</strong> <em>Pointer</em></p>
+<td align="left"><p><em>Structure</em> <strong>. <em></strong> <em>Pointer</em></p>
 <p><em>Pointer</em> <strong>-&gt; *</strong> <em>Pointer</em></p></td>
 <td align="left"><p>Pointer to member of structure</p>
 <p>Pointer to member of referenced structure</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>Value</em> <strong>*</strong> <em>Value</em></p>
+<td align="left"><p><em>Value</em> <strong></em></strong> <em>Value</em></p>
 <p><em>Value</em> <strong>/</strong> <em>Value</em></p>
 <p><em>Value</em> <strong>%</strong> <em>Value</em></p></td>
 <td align="left"><p>Multiplication</p>
@@ -171,7 +171,7 @@ You can use the following operators. The operators in each cell take precedence 
 <p>Not equal (comparison)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><em>Value</em> <strong>&</strong> <em>Value</em></p></td>
+<td align="left"><p><em>Value</em> <strong>&amp;</strong> <em>Value</em></p></td>
 <td align="left"><p>Bitwise AND</p></td>
 </tr>
 <tr class="even">
@@ -183,7 +183,7 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p>Bitwise OR</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>Value</em> <strong>&&</strong> <em>Value</em></p></td>
+<td align="left"><p><em>Value</em> <strong>&amp;&amp;</strong> <em>Value</em></p></td>
 <td align="left"><p>Logical AND</p></td>
 </tr>
 <tr class="odd">
@@ -192,14 +192,14 @@ You can use the following operators. The operators in each cell take precedence 
 </tr>
 <tr class="even">
 <td align="left"><p><em>LValue</em> <strong>=</strong><em>Value</em></p>
-<p><em>LValue</em> <strong>*=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong></em>=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>/=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>%=</strong><em>Value</em></p>
 <p><em>LValue</em> <strong>+=</strong><em>Value</em></p>
 <p><em>LValue</em> <strong>-=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&lt;&lt;=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&gt;&gt;=</strong> <em>Value</em></p>
-<p><em>LValue</em> <strong>&=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>&amp;=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>|=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>^=</strong> <em>Value</em></p></td>
 <td align="left"><p>Assign</p>
@@ -225,7 +225,7 @@ You can use the following operators. The operators in each cell take precedence 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="registers_and_pseudo_registers_in_c___expressions"></span><span id="REGISTERS_AND_PSEUDO_REGISTERS_IN_C___EXPRESSIONS"></span>Registers and Pseudo-Registers in C++ Expressions
 
@@ -282,11 +282,11 @@ You can use the following macros. These macros have the same definitions as the 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

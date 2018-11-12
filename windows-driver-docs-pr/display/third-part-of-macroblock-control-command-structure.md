@@ -83,15 +83,15 @@ If the **bPicIntra** member of [**DXVA\_PictureParameters**](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The number of motion vectors specified in the **MVector** arrays for the macroblock control command structures defined in the *dxva.h* file is four, as this is the most commonly used form of the structure.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

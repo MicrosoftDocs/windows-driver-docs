@@ -23,7 +23,7 @@ Starting with NDIS 6.30, drivers that support [NDIS packet coalescing](https://m
 
 **Note**  Drivers that support the [single root I/O virtualization (SR-IOV)](https://msdn.microsoft.com/library/windows/hardware/hh440235) or [virtual machine queue (VMQ)](https://msdn.microsoft.com/library/windows/hardware/ff571035) interfaces are not required to support OID query requests of this OID.
 
- 
+ 
 
 A miniport driver that supports packet coalescing must increment a ULONG64 counter for each received packet that was coalesced on the network adapter. Packets are coalesced if they match a receive filter, which overlying drivers download to the miniport driver through OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md).
 
@@ -81,9 +81,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

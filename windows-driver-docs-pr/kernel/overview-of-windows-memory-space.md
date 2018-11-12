@@ -24,9 +24,9 @@ Note that any noncurrent process's virtual addresses are not visible, so its mem
 
 For an extensive discussion of memory management, see the *Inside Microsoft Windows Internals* book from Microsoft Press.
 
- 
+ 
 
- 
+ 
 
 
 

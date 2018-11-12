@@ -37,9 +37,9 @@ To facilitate the use of [SrcSrv](srcsrv.md) from tools other than the debuggers
 
 Any source files downloaded by [SrcSrv](srcsrv.md) remain on your hard drive after the debugging session is over. To control the size of the source cache, the AgeStore tool can be used to delete cached files that are older than a specified date or to reduce the contents of the cache below a specified size. For details, see [AgeStore](agestore.md).
 
- 
+ 
 
- 
+ 
 
 
 

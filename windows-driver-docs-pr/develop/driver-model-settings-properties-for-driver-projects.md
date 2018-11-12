@@ -80,9 +80,9 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 * [UMDF Version History](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561356)
 * [Building UMDF Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff540730)
 * [Creating Export Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542891)
- 
+ 
 
- 
+ 
 
 
 

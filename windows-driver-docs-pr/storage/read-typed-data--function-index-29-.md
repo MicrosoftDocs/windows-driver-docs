@@ -14,7 +14,7 @@ This function reads a 32-byte block inside a typed block data region. This funct
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -58,7 +58,7 @@ This function reads a 32-byte block inside a typed block data region. This funct
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -85,7 +85,7 @@ This function reads a 32-byte block inside a typed block data region. This funct
 <td align="left">0</td>
 <td align="left"><p>This function can return the following Function-Specific Error Code:</p>
 <p>1: Invalid data type.</p>
-<p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Data</strong></td>
@@ -96,7 +96,7 @@ This function reads a 32-byte block inside a typed block data region. This funct
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -110,9 +110,9 @@ The platform shall use Typed Block Data registers to implement this function.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

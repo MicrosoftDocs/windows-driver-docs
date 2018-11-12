@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RotationValue</strong>](rotationvalue.md)</p></td>
+<td><p><a href="rotationvalue.md" data-raw-source="[&lt;strong&gt;RotationValue&lt;/strong&gt;](rotationvalue.md)"><strong>RotationValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceSettings</strong>](devicesettings.md)</p></td>
+<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +82,9 @@ The WSD Scan Service must apply all rotation values to the scan data after data 
 
 [**RotationValue**](rotationvalue.md)
 
- 
+ 
 
- 
+ 
 
 
 

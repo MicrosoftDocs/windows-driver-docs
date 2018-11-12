@@ -42,9 +42,9 @@ To deliver the data from either queue, the offload target calls either the [**Nd
 
 The preceding example is not prescriptive. An offload target can implement another way of accomplishing the task. The only requirement is that the offload target deliver the data in the order in which it received the data.
 
- 
+ 
 
- 
+ 
 
 
 

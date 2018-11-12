@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |---------------------------------------------|----------------------------|
 | [**WDI\_TLV\_FT\_MDE**](wdi-tlv-ft-mde.md) | The MDIE of the BSS entry. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

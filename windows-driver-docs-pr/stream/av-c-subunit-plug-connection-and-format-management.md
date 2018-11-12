@@ -36,9 +36,9 @@ The AV/C peer subunit driver stack provides functions for IEEE 1394 and AV/C sub
 
 The mediums and formats together help to determine whether a KS pin connection represents data to and from the computer over the IEEE 1394 serial bus or internal to a device.
 
- 
+ 
 
- 
+ 
 
 
 

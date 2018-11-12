@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 NT-based operating system display and video miniport drivers must be installed using an INF file. To ensure that all registry entries associated with a video driver are properly initialized, this INF must be interpreted by the system-supplied display class installer and marked as **Class=Display**.
 
- 
+ 
 
- 
+ 
 
 
 

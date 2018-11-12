@@ -75,7 +75,7 @@ Specifies one or more byte values with which to fill memory.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -92,7 +92,7 @@ Numeric values will be interpreted as numbers in the current radix (16, 10, or 8
 
 **Note**   The default radix behaves differently when C++ expressions are being used. For more information, see the [Evaluating Expressions](evaluating-expressions.md) topic.
 
- 
+ 
 
 If ASCII characters are used, each character must be enclosed in single straight quotation marks. C-style escape characters (such as '\\0' or '\\n') may not be used.
 
@@ -126,9 +126,9 @@ kd> fp [uc] 0012ff40 L20 'A' 'B' 'C'
 kd> fp [wc] 0012ff40 L20 'A' 'B' 'C'
 ```
 
- 
+ 
 
- 
+ 
 
 
 

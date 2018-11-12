@@ -19,7 +19,7 @@ Syntax
 
 ```cpp
 void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
-    Child
+    Child
 );
 ```
 
@@ -66,9 +66,9 @@ Requirements
 
 [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff536112)
 
- 
+ 
 
- 
+ 
 
 
 

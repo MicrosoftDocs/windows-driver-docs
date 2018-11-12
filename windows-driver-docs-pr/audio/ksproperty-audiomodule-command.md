@@ -44,13 +44,13 @@ The *Set* value is provided as part of the command. When the *Get* is used, it r
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter or Pin</p></td>
-<td align="left"><p>[<strong>KSAUDIOMODULE_PROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/mt808139) + [optional custom module arguments]</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt808139" data-raw-source="[&lt;strong&gt;KSAUDIOMODULE_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt808139)"><strong>KSAUDIOMODULE_PROPERTY</strong></a> + [optional custom module arguments]</p></td>
 <td align="left"><p>UNDEFINED</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value type is a undefined. The implementer can create a module specific custom command structure.
 
@@ -94,9 +94,9 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
- 
+ 
 
- 
+ 
 
 
 

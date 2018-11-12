@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | A filter ID with a value from 1 to the number of filters supported. |
 | UINT32 | The maximum coalescing delay in milliseconds.                       |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WDI\_SET\_RECEIVE\_COALESCING](https://msdn.microsoft.com/library/windows/hardware/dn925941)
 
- 
+ 
 
- 
+ 
 
 
 

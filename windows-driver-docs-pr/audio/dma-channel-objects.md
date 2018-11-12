@@ -109,9 +109,9 @@ The **IDmaChannelSlave** interface extends **IDmaChannel** by adding the followi
 
 [**IDmaChannelSlave::WaitForTC**](https://msdn.microsoft.com/library/windows/hardware/ff536552)
 
- 
+ 
 
- 
+ 
 
 
 

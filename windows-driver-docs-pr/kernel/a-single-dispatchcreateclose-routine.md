@@ -42,9 +42,9 @@ To handle a create request to open a file object representing a logical or physi
 
 Following the preceding steps ensures that no attempt to open a pseudofile on a device can cause problems later. For example, this prevents attempts to open a nonexistent \\\\device\\parallel0\\temp.dat.
 
- 
+ 
 
- 
+ 
 
 
 

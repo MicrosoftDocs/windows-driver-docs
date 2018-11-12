@@ -38,9 +38,9 @@ The following [HIDClass support routines](https://msdn.microsoft.com/library/win
 
 [**HidP\_SetUsageValueArray**](https://msdn.microsoft.com/library/windows/hardware/ff539801)
 
- 
+ 
 
- 
+ 
 
 
 

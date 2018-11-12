@@ -54,7 +54,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <tr class="odd">
 <td align="left"><strong>Source</strong>
 <p>Required ITaskItem parameter. Specifies a list of source files.</p></td>
-<td align="left">%(Inf.OutputPath)\%(Inf.FileName).inf</td>
+<td align="left">%(Inf.OutputPath)%(Inf.FileName).inf</td>
 <td align="left"><strong>-f</strong><em>[source]</em></td>
 </tr>
 <tr class="even">
@@ -85,7 +85,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <td align="left"><strong>DriverVerDirectiveDate</strong>
 <p>Optional string</p></td>
 <td align="left">%(Inf.DateStamp)</td>
-<td align="left"><strong>-d</strong><em>[date|*]</em></td>
+<td align="left"><strong>-d</strong><em>[date|<em>]</em></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>DriverVerDirectiveSection</strong>
@@ -103,7 +103,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <td align="left"><strong>DriverVerDirectiveVersion</strong>
 <p>Optional string parameter. Specifies the version number in the driver directive.</p></td>
 <td align="left">%(Inf.TimeStamp)</td>
-<td align="left"><strong>-v</strong><em>[time|*]</em></td>
+<td align="left"><strong>-v</strong><em>[time|</em>]</em></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KmdfVersion</strong>
@@ -150,11 +150,11 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

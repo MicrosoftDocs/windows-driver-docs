@@ -51,13 +51,13 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationToken</strong>](destinationtoken.md)</p></td>
+<td><p><a href="destinationtoken.md" data-raw-source="[&lt;strong&gt;DestinationToken&lt;/strong&gt;](destinationtoken.md)"><strong>DestinationToken</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanIdentifier</strong>](scanidentifier.md)</p></td>
+<td><p><a href="scanidentifier.md" data-raw-source="[&lt;strong&gt;ScanIdentifier&lt;/strong&gt;](scanidentifier.md)"><strong>ScanIdentifier</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanTicket</strong>](scanticket.md)</p></td>
+<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The service is temporarily blocked and cannot accept new job or document requests. |
     | \[Detail\]     | None                                                                               |
 
-     
+     
 
 -   **ClientErrorFormatNotSupported** The scanner does not support the supplied Format value.
 
@@ -110,7 +110,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The Document Format parameter value is not supported.                                                                                           |
     | \[Detail\]     | Optional. The Scan Service can return a list of supported formats. The data in this element should be of type &lt;wscn:FormatSupportedType&gt;. |
 
-     
+     
 
 -   **ClientErrorInvalidScanIdentifier** The supplied ScanIdentifier value is not currently valid within the scan device.
 
@@ -121,7 +121,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The ScanIdentifier parameter value is not currently valid. |
     | \[Detail\]     | None                                                       |
 
-     
+     
 
 -   **ClientErrorInvalidDestinationToken** The supplied DestinationToken value is not valid for the scan device.
 
@@ -132,7 +132,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The DestinationToken parameter value is not currently valid. |
     | \[Detail\]     | None                                                         |
 
-     
+     
 
 -   **ClientErrorNoImagesAvailable** The server can’t accept a new scan job because there is no media to be scanned. For example, this error is generated when a scan job is executed from the Automatic Document Feeder attached to the scanner, and the feeder is empty. The client can try the unmodified request again later, with the expectation that the condition was fixed and the scanner now has media to be scanned.
 
@@ -143,7 +143,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The server has no images available to acquire. |
     | \[Detail\]     | None                                           |
 
-     
+     
 
 Examples
 --------
@@ -302,9 +302,9 @@ The following code example shows a scan job request when the scan is initiated f
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

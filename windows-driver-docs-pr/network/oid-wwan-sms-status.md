@@ -56,9 +56,9 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](ndis-status-wwan-sms-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ If the call to **VideoPortQueryServices** is successful, the video port driver f
 
 *I2CRead* reads a specified number of bytes from the child device; *I2CWrite* writes a specified number of bytes to it.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ The Power Options control panel applet shown in the following screen shot is use
 
 A command line tool (*Powercfg.exe*) can also be used. Type **powercfg /?** for usage information at the command prompt.
 
- 
+ 
 
- 
+ 
 
 
 

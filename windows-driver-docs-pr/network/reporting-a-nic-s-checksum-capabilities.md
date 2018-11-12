@@ -38,9 +38,9 @@ A miniport driver indicates the following checksum information for IPv4 and IPv6
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

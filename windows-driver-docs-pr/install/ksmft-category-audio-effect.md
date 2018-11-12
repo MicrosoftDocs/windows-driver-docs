@@ -43,7 +43,7 @@ The KSMFT_CATEGORY_AUDIO_EFFECT [device interface class](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

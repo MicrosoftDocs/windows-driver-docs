@@ -31,9 +31,9 @@ On these earlier versions of Windows, [SetupAPI functions](setupapi.md), [config
 
 [Accessing Custom Device Properties](accessing-custom-device-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

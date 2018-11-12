@@ -32,7 +32,7 @@ For information about how to obtain a WHQL test signature, email <winqual@micros
 
 **Note**  To disable UAC on the test computer, you must be able to log on with or provide the credentials of a member of the local **Administrators** group.
 
- 
+ 
 
 You can disable UAC on Windows 7 by following these steps:
 
@@ -61,7 +61,7 @@ The WHQL test root certificate is installed on the test computer by following th
 
     **Note**  If UAC was not previously disabled on the test computer, the Local Computer folder is not displayed.
 
-     
+     
 
 5.  Complete the Certificate Import Wizard and accept all the default settings to install the certificate.
 
@@ -77,9 +77,9 @@ The Microsoft Test Root Authority is accepted when test-signing is enabled by se
 
 3.  Restart the test computer to apply the change.
 
- 
+ 
 
- 
+ 
 
 
 

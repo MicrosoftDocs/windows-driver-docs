@@ -27,9 +27,9 @@ WSK applications discover and attach to the WSK subsystem by using a set of [WSK
 
 Alternately, WSK applications can attach to the WSK subsystem by using the [Network Module Registrar (NMR)](network-module-registrar2.md). For more information, see [Using NMR for WSK Registration and Unregistration](using-nmr-for-wsk-registration-and-unregistration.md).
 
- 
+ 
 
- 
+ 
 
 
 

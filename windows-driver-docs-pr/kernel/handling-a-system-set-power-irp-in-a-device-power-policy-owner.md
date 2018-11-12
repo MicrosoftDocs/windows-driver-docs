@@ -38,9 +38,9 @@ For more detail on handling system set-power IRPs, see the following:
 
 [Sending a Device Set-Power IRP in Response to a System Set-Power IRP](sending-a-device-set-power-irp-in-response-to-a-system-set-power-irp.md)
 
- 
+ 
 
- 
+ 
 
 
 

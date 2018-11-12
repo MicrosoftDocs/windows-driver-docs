@@ -53,7 +53,7 @@ The Identity element specifies the publisher identity and application manifest n
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -76,13 +76,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceCompanionApplications](devicecompanionapplications.md)</p></td>
+<td><p><a href="devicecompanionapplications.md" data-raw-source="[DeviceCompanionApplications](devicecompanionapplications.md)">DeviceCompanionApplications</a></p></td>
 <td><p>Specifies the app that will be downloaded when the operator’s Mobile Broadband hardware is detected on the PC.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -140,9 +140,9 @@ There are no child elements.
 
 The Identity element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

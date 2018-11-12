@@ -37,9 +37,9 @@ After a channel is opened and a notification is sent, the listener client receiv
 
 The notification mechanism is asynchronous. The order of notifications is guaranteed.
 
- 
+ 
 
- 
+ 
 
 
 

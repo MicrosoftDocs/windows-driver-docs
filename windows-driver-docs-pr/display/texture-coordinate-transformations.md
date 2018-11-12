@@ -54,9 +54,9 @@ D3DTSS\_TEXTURETRANSFORMFLAGS defaults to D3DTFF\_DISABLED with no D3DTTFF\_PROJ
 
 On nontransform-and-lighting HAL devices (that is, those that require transformation operations on the host processor), the output vertices are provided to the driver with the appropriate DDI-level FVF code that may differ from the one specified at the API level. Devices that do not support hardware-accelerated transform and lighting may still do projected textures, and therefore the drivers must still respond to the D3DTSS\_TEXTURETRANSFORMFLAGS.
 
- 
+ 
 
- 
+ 
 
 
 

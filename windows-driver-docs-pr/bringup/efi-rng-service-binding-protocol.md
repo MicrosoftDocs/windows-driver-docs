@@ -37,9 +37,9 @@ Before an application terminates execution, every successful call to the EFI\_RN
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

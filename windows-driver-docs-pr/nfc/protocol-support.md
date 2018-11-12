@@ -27,9 +27,9 @@ ms.localizationpriority: medium
 -   [Windows protocol](windows-protocol.md)
 -   [Peer-to-peer](peer-to-peer.md)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

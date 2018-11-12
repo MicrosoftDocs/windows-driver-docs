@@ -35,11 +35,11 @@ The lower half of the IPv4 IP ID space and the lower half of the IPv6 fragment I
 
 **Note**  An offload target should always set the Don't Fragment (DF) flag in the IP header of an IPv4 datagram that is to be sent.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

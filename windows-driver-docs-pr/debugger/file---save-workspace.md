@@ -20,9 +20,9 @@ Click **Save Workspace** on the **File** menu to save the current workspace unde
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

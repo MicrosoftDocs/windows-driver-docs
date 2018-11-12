@@ -52,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataBuilderInformation](metadatabuilderinformation.md)</p></td>
-<td><p>The [MetadataBuilderInformation](metadatabuilderinformation.md) element specifies the application that created the service metadata package.</p></td>
+<td><p><a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a></p></td>
+<td><p>The <a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a> element specifies the application that created the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -79,9 +79,9 @@ There are no child elements.
 
 The Application element is not used by the Windows 7 operating system. It is reserved for use by OEMs and developers.
 
- 
+ 
 
- 
+ 
 
 
 

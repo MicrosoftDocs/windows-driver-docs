@@ -30,14 +30,14 @@ Windows 8 provides a consistent API and device driver interface (DDI) platform 
 <td align="left">Optional</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics ¦ ProcessingStereoscopicVideoContent</strong></p>
 <p><strong>Device.Display.Monitor.Stereoscopic3DModes</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Stereoscopic 3-D rendering is only enabled on systems that have all the components that are stereoscopic 3-D-capable. These components include 3-D-capable display hardware, graphics hardware, peripherals, and software applications. The stereo design in the graphics stack is such that the particular visualization or display technology that is used is agnostic to the operating system. The display driver communicates directly to the graphics display and has knowledge about the display capabilities through the standardized Extended Display Identification Data (EDID) structure. The driver enumerates stereo capabilities only when it recognizes that such a display is connected to the system.
 
@@ -97,9 +97,9 @@ For more info on requirements that hardware devices must meet when they implemen
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

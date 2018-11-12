@@ -34,11 +34,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | SimRep           | [simrep](http://go.microsoft.com/fwlink/p/?LinkId=617656)          | Demonstrates how a file system filter can simulate file-system like reparse-point behavior to redirect a file open to an alternate path.                                                                                                                                               |
 | SwapBuffer       | [swapBuffers](http://go.microsoft.com/fwlink/p/?LinkId=617657)     | Demonstrates how to switch buffers between reads and writes of data. This technique is particularly useful for encryption filters.                                                                                                                                                     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ The WIA service in Windows Vista contains an internal compatibility layer so tha
 
 For additional notes on Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_CROSSBAR\_PININFO property retrieves the type of physical connec
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_PININFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565123)</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_PININFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565123)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565123" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565123)"><strong>KSPROPERTY_CROSSBAR_PININFO_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565123" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565123)"><strong>KSPROPERTY_CROSSBAR_PININFO_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_CROSSBAR\_PININFO\_S structure.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_CROSSBAR\_PININFO\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565123)
 
- 
+ 
 
- 
+ 
 
 
 

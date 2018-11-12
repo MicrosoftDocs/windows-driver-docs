@@ -83,12 +83,11 @@ private async void SetInterfaceSetting(UsbDevice device, Byte settingNumber)
 
     MainPage.Current.NotifyUser("Interface Setting is set to " + settingNumber, NotifyType.StatusMessage);
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

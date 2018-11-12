@@ -28,7 +28,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798).</p>
+<td align="left"><p>Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="http://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8</strong> (installation path)</p>
 <p>%WindowsSdkDir%\tools\x64\tracelog.exe</p>
 <p>%WindowsSdkDir%\tools\x86\tracelog.exe</p>
@@ -39,13 +39,13 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 <strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\8.1.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="What_you_can_do_with_Tracelog"></span><span id="what_you_can_do_with_tracelog"></span><span id="WHAT_YOU_CAN_DO_WITH_TRACELOG"></span>What you can do with Tracelog
 
@@ -54,7 +54,7 @@ You can use Tracelog in a Command Prompt window as an event tracing controller.
 
 **Note**  To control a trace session on Windows Server 2003 and later versions of Windows, you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
 
- 
+ 
 
 Tracelog features include:
 
@@ -87,9 +87,9 @@ Many of the features of Tracelog are also available in [TraceView](traceview.md)
 -   [Tracelog Displays](tracelog-displays.md)
 -   [Tracelog Examples](tracelog-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

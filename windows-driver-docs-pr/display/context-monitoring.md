@@ -41,7 +41,7 @@ Upon creation, the graphics kernel returns a fence object composed of the follow
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FenceValueCPUVirtualAddress"></span><span id="fencevaluecpuvirtualaddress"></span><span id="FENCEVALUECPUVIRTUALADDRESS"></span>FenceValueCPUVirtualAddress</p></td>
-<td align="left"><p>Read-only mapping of the fence value (64bits) for the CPU. This address is mapped WB (cacheable) from the point of view of the CPU on platforms supporting I/O coherency, UC (uncached) on other platforms. Allows the CPU to keep track of the fence progress by simply reading this memory location. The CPU is not allowed to write to this memory location. To signal the fence, the CPU is required to call the [<em>SignalSynchronizationObjectFromCpuCb</em>](https://msdn.microsoft.com/library/windows/hardware/dn906360).</p>
+<td align="left"><p>Read-only mapping of the fence value (64bits) for the CPU. This address is mapped WB (cacheable) from the point of view of the CPU on platforms supporting I/O coherency, UC (uncached) on other platforms. Allows the CPU to keep track of the fence progress by simply reading this memory location. The CPU is not allowed to write to this memory location. To signal the fence, the CPU is required to call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906360" data-raw-source="[&lt;em&gt;SignalSynchronizationObjectFromCpuCb&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/dn906360)"><em>SignalSynchronizationObjectFromCpuCb</em></a>.</p>
 <p>Adapters which support <em>IoMmu</em> should use this address for GPU access. The address is mapped as read-write in this case.</p></td>
 </tr>
 <tr class="odd">
@@ -52,7 +52,7 @@ Upon creation, the graphics kernel returns a fence object composed of the follow
 </tbody>
 </table>
 
- 
+ 
 
 The fence value is a 64-bit value with their respective virtual addresses aligned on a 64-bit boundary. GPUs should declare whether they are capable of atomically updating 64-bit values as visible by the CPU via a new [**DXGK\_VIDSCHCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562863)::**No64BitAtomics** flag. If a GPU is capable of only updating 32-bit values atomically, the OS will handle the fence wraparound case automatically. However it will place a restriction that outstanding wait and signal fence values cannot be more than **UINT\_MAX**/2 away from the last signaled fence value.
 ## <span id="GPU_signal"></span><span id="gpu_signal"></span><span id="GPU_SIGNAL"></span>GPU signal
@@ -79,9 +79,9 @@ A new [*SignalSynchronizationObjectFromCpuCb*](https://msdn.microsoft.com/librar
 
 A new [*WaitForSynchronizationObjectFromCpuCb*](https://msdn.microsoft.com/library/windows/hardware/dn906366) has been added to allow the CPU to wait on a monitored fence object. Two forms of wait operations are available. In the first form, the *WaitForSynchronizationObjectFromCpuCb* callback blocks until the wait has been satisfied. In the second form, *WaitForSynchronizationObjectFromCpuCb* takes a handle to a CPU event that will be signaled once the waiting condition has been satisfied.
 
- 
+ 
 
- 
+ 
 
 
 

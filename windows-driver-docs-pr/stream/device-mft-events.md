@@ -18,11 +18,11 @@ This section contains information about the Device Transform Manager events.
 | [METransformInputStreamStateChanged](metransforminputstreamstatechanged.md) | Indicates that the input stream state or media type must be changed.                                                      |
 | [METransformNeedInput](metransformneedinput.md)                             | Indicates that a device transform needs an input.                                                                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

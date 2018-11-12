@@ -23,9 +23,9 @@ If [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/
 
 The driver should call [**EngMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff564977) to have GDI move an engine-managed pointer on the device. The driver requests that GDI manage the cursor by calling [**EngSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff565017).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,9 +13,9 @@ Because applications can alter analog content protection (ACP) levels by calling
 
 For more information about the **ChangeDisplaySettingsEx** function, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

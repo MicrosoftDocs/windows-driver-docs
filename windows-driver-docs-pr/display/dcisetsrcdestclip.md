@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCISetSrcDestClip** function sets source and destination drawing areas.
 
- 
+ 
 
- 
+ 
 
 
 

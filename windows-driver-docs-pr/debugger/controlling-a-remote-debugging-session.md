@@ -54,9 +54,9 @@ To exit from one debugging client without terminating the server, you must issue
 
 To terminate the entire session and exit the debugging server, use the [**q (Quit)**](q--qq--quit-.md) command. This command can be entered from any server or client, and it will terminate the entire session for all users.
 
- 
+ 
 
- 
+ 
 
 
 

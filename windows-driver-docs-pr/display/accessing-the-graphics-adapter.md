@@ -23,9 +23,9 @@ To ensure display performance, display drivers can access the graphics card in t
 
 -   Directly--by reading and writing to video memory (the [*frame buffer*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-frame-buffer)) or hardware registers. See [Accessing the Frame Buffer and Hardware Registers](accessing-the-frame-buffer-and-hardware-registers.md).
 
- 
+ 
 
- 
+ 
 
 
 

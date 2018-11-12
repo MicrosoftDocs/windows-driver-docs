@@ -18,7 +18,7 @@ Kernel-mode code can use the **DbgPrintEx** and **KdPrintEx** routines to send a
 
 **Note**   In Windows Server 2003 and earlier versions of Windows, **DbgPrint** and **KdPrint** send messages to the kernel debugger unconditionally. In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**. Whichever version of Windows you are using, it is recommended that you use **DbgPrintEx** and **KdPrintEx**, since these allow you to control the conditions under which the message will be sent.
 
- 
+ 
 
 For complete documentation of these routines, see the Windows Driver Kit.
 
@@ -83,7 +83,7 @@ There are six component names reserved for independent hardware vendors. To avoi
 </tbody>
 </table>
 
- 
+ 
 
 For example, if you are writing a video driver, you would use DPFLTR\_IHVVIDEO\_ID as the *ComponentId* parameter of **DbgPrintEx**, use the value name **IHVVIDEO** in the registry, and refer to **Kd\_IHVVIDEO\_Mask** in the debugger.
 
@@ -123,9 +123,9 @@ In Windows Vista and later versions of Windows, all messages sent by **DbgPrint*
 
 There are two ways to set a component filter mask:
 
--   The component filter mask can be accessed in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase. Set it equal to the DWORD value that you wish to use as the component filter mask.
+- The component filter mask can be accessed in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase. Set it equal to the DWORD value that you wish to use as the component filter mask.
 
--   If a kernel debugger is active, it can access the component filter mask value by dereferencing the address stored in the symbol **Kd\_***XXXX***\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you may wish to specify this symbol as **nt!Kd\_***XXXX***\_Mask**.
+- If a kernel debugger is active, it can access the component filter mask value by dereferencing the address stored in the symbol **Kd\_**<em>XXXX</em>**\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you may wish to specify this symbol as **nt!Kd\_**<em>XXXX</em>**\_Mask**.
 
 Filter masks stored in the registry take effect during boot. Filter masks created by the debugger take effect immediately, and persist until Windows is rebooted. A value set in the registry can be overridden by the debugger, but the component filter mask will return to the value specified in the registry if the system is rebooted.
 
@@ -137,7 +137,7 @@ When **DbgPrintEx** is called in kernel-mode code, Windows compares the message 
 
 **Note**   Recall that when the *Level* parameter is between 0 and 31, the importance bit field is equal to 1 &lt;&lt; *Level*, but when the *Level* parameter is 32 or higher, the importance bit field is simply equal to *Level*.
 
- 
+ 
 
 Windows performs an AND operation on the importance bit field and the component filter mask. If the result is nonzero, the message is sent to the debugger.
 
@@ -189,9 +189,9 @@ Any single call to **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** w
 
 If a message is filtered out because of its *ComponentId* and *Level* values, it is not transmitted across the debugging connection. Therefore there is no way to display this message in the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

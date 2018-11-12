@@ -16,9 +16,9 @@ The following extensions are useful for debugging Plug and Play and power issues
 -   [**!pocaps**](-pocaps.md)
 -   [**!popolicy**](-popolicy.md)
 
- 
+ 
 
- 
+ 
 
 
 

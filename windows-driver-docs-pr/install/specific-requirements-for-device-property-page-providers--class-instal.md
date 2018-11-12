@@ -25,9 +25,9 @@ If the user changes any properties, Device Manager sends a [**DIF_PROPERTYCHANGE
 
 For more information about how to create a custom device property page by a [co-installer](writing-a-co-installer.md), see [General Requirements for Device Property Page Providers](general-requirements-for-device-property-page-providers.md).
 
- 
+ 
 
- 
+ 
 
 
 

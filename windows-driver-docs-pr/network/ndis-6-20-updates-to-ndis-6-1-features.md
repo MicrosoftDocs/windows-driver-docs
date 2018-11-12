@@ -34,9 +34,9 @@ After NDIS 6.20 [IPsec task offload version 1](ipsec-offload-version-1.md) will 
 
 NetDMA 1.1 and 2.0 were introduced with NDIS 6.1. NetDMA 2.1 is introduced with NDIS 6.20 to provide support for more than 64 processors.
 
- 
+ 
 
- 
+ 
 
 
 

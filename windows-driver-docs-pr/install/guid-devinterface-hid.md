@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_HID [device interface class](https://msdn.microsoft.com/li
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_MOUSE**](guid-devinterface-mouse.md)
 
- 
+ 
 
- 
+ 
 
 
 

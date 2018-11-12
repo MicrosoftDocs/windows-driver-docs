@@ -34,9 +34,9 @@ The following topics are covered:
 
 [HP-GL/2 Caveats](hp-gl-2-caveats.md)
 
- 
+ 
 
- 
+ 
 
 
 

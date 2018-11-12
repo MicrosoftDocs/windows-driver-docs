@@ -34,9 +34,9 @@ The KSPROPSETID\_Connection property set includes:
 
 [**KSPROPERTY\_CONNECTION\_STATE**](ksproperty-connection-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

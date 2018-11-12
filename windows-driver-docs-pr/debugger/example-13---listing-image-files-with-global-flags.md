@@ -40,11 +40,11 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execu
 
 **Tip**   Type the **Reg** command into Notepad, then save the file as imageflags.bat. Thereafter, to find image files for which flags have been set, just type **ImageFlags**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

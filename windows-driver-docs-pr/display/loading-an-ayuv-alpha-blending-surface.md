@@ -54,9 +54,9 @@ The *SampleAlpha4* field for both *DXVA\_IA44sample* and *DXVA\_AI44sample* cont
 
 The width and height of the IA44 alpha-blending surface are specified in the associated [buffer description list](buffer-description-list.md).
 
- 
+ 
 
- 
+ 
 
 
 

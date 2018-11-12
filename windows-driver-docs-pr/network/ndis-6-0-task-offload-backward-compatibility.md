@@ -31,9 +31,9 @@ The following compatibility restrictions apply to NDIS 5.*x* drivers:
 
 -   Protocol drivers must handle the case where a miniport driver reports offload capabilities but all of the values are zero. All values set to zero does not indicate that there is an error.
 
- 
+ 
 
- 
+ 
 
 
 

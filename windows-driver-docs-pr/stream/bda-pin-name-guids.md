@@ -40,9 +40,9 @@ Pin name for an input pin to a BDA IP sink node (KSNODE\_BDA\_IP\_SINK).
 <span id="PINNAME_MPE"></span><span id="pinname_mpe"></span>PINNAME\_MPE  
 Pin name for a multiprotocol encapsulation (MPE) pin.
 
- 
+ 
 
- 
+ 
 
 
 

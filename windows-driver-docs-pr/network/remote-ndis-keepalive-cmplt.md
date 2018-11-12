@@ -50,12 +50,12 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_KEEPALIVE\_MSG**](remote
 <td><p>12</p></td>
 <td><p>4</p></td>
 <td><p>Status</p></td>
-<td><p>Specifies the current status of the device. If the returned <em>Status</em> is not RNDIS_STATUS_SUCCESS, the host will send an [<strong>REMOTE_NDIS_RESET_MSG</strong>](remote-ndis-reset-msg.md) message to reset the device.</p></td>
+<td><p>Specifies the current status of the device. If the returned <em>Status</em> is not RNDIS_STATUS_SUCCESS, the host will send an <a href="remote-ndis-reset-msg.md" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_RESET_MSG&lt;/strong&gt;](remote-ndis-reset-msg.md)"><strong>REMOTE_NDIS_RESET_MSG</strong></a> message to reset the device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

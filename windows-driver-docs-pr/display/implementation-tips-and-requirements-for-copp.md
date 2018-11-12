@@ -19,9 +19,9 @@ The following topics discuss tips and requirements for implementing COPP functio
 
 [COPP and Display Modes](copp-and-display-modes.md)
 
- 
+ 
 
- 
+ 
 
 
 

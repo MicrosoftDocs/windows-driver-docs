@@ -38,9 +38,9 @@ Each TCP timer must be large enough so that it takes at least several weeks of r
 
 If an offloaded connection enters the TIME\_WAIT state, the offload target should initiate termination of the offload of that connection (upload).
 
- 
+ 
 
- 
+ 
 
 
 

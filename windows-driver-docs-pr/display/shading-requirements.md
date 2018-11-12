@@ -88,9 +88,9 @@ Colorkeying is enabled if the D3DRENDERSTATE\_COLORKEYENABLE render state is set
 
 Color-key is enabled if the D3DRENDERSTATE\_COLORKEYENABLE render state is set to **TRUE** and the texture surface has the DDRAWISURF\_HASCKEYSRCBLT bit set. (See the **dwFlags** member of the [**DD\_SURFACE\_LOCAL**](https://msdn.microsoft.com/library/windows/hardware/ff551733) structure for more information.) Applications create a texture surface that uses DDSD\_CKSRCBLT and then call the **IDirect3DDevice7::SetRenderState** method with D3DRENDERSTATE\_COLORKEYENABLE and **TRUE**. Both of these must be true for color-key to occur, and applications must be permitted to leave the render state **TRUE** all the time and still selectively use color-key for a subset of a frame's textures (that is, those that have the DDRAWISURF\_HASCKEYSRCBLT bit set). It is up to the driver to correctly handle this behavior. For more information about **IDirect3DDevice7::SetRenderState**, see the Direct3D SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

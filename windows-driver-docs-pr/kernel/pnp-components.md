@@ -26,9 +26,9 @@ All drivers should support PnP and power management. If a single driver does not
 
 See [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455) for information about device and driver setup, including (INF) files, CAT files, and the registry.
 
- 
+ 
 
- 
+ 
 
 
 

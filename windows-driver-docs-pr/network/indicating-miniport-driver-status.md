@@ -27,9 +27,9 @@ This section includes the following topics:
 
 [Handling Status Indications in a CoNDIS Protocol Driver](handling-status-indications-in-a-condis-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

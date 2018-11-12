@@ -29,7 +29,7 @@ To specify a printer feature entry in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of either one of the predefined [standard features](standard-features.md) or a customized feature name, and *FeatureAttributes* is a set of [feature attributes](feature-attributes.md).
 
@@ -71,9 +71,9 @@ If you repeat a feature specification by, for example, including two or more Inp
 
 You can control the order in which features are displayed to the user. See [Specifying Feature and Option Display Order](specifying-feature-and-option-display-order.md).
 
- 
+ 
 
- 
+ 
 
 
 

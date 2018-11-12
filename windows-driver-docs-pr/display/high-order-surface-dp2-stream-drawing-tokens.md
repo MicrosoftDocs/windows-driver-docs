@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The D3DDP2OP\_DRAWRECTPATCH token is sent to the driver to draw a rectangular patch. The D3DDP2OP\_DRAWTRIPATCH token is sent to the driver to draw a triangular patch.
 
- 
+ 
 
- 
+ 
 
 
 

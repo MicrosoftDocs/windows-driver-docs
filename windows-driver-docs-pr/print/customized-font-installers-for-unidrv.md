@@ -44,9 +44,9 @@ Unidrv uses the following algorithm for locating a font installer:
 
 2.  If an installer executable file is not available, Unidrv enables selection of font installation operations from the printer's property sheet. Unidrv determines if a user interface plug-in has been installed. If so, its font installation methods are called. If a user interface plug-in has not been installed, or if its font installation methods return E\_NOTIMPL, the driver uses its own fault installer.
 
- 
+ 
 
- 
+ 
 
 
 

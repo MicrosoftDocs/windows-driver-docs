@@ -22,9 +22,9 @@ The following diagram shows how client applications that install or control netw
 
 ![diagram illustrating how client applications that install or control networking call the network configuration subsystem](images/netcfg.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ To release a previously claimed device, higher-level drivers must send a release
 
 For a discussion of claim device requests from the point of view of the storage class driver, see [Storage Class Driver's ClaimDevice Routine](storage-class-driver-s-claimdevice-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

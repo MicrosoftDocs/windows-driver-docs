@@ -48,7 +48,7 @@ Specifies the address of the **IWDFDevice** interface to display PnP or power-ma
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -117,9 +117,9 @@ Power Policy State Machine:
       WdfDevStatePwrPolStartingSucceeded
 ```
 
- 
+ 
 
- 
+ 
 
 
 

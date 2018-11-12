@@ -13,7 +13,7 @@ This section provides information about writing NDIS virtual machine queue (VMQ)
 
 **Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
- 
+ 
 
 
 
@@ -33,9 +33,9 @@ This section includes the following topics:
 -   [VMQ Send and Receive Operations](vmq-send-and-receive-operations.md)
 -   [Obtaining VMQ Information](obtaining-vmq-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

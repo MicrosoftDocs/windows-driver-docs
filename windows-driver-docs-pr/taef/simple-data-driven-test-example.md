@@ -134,7 +134,6 @@ In addition to the above, you need some extra steps for data driven tests in man
     3     get;
     4     set;
     5 }
-   
 ```
 
 ## <span id="Retrieving_data_in_the_Test_method"></span><span id="retrieving_data_in_the_test_method"></span><span id="RETRIEVING_DATA_IN_THE_TEST_METHOD"></span>Retrieving data in the Test method
@@ -312,7 +311,7 @@ f:\Examples\CPP.DataDriven.Example.dll
                     Property[Data:Color] = {Red, Green, Blue}
 
                     Data[Color] = Blue
-    
+
 ```
 
 For now, let's ignore the SetsOfMetadataTest and SetsOfDataTest listed above. If you are curious about these, read more on [Light-weight data-driven testing](light-weight-data-driven-testing.md). Now that you know the various properties and Data parameter name and values, you can select specific tests based on that. Try them out and follow along to confirm what you select.
@@ -325,7 +324,7 @@ Now, to run only those data driven tests, where color is specified as "Black", r
 
 <span id="TE.exe_Examples_CSharp.DataDriven.Example.dll_Examples_CPP.DataDriven.Example.dll__________________________select___Name___Simple___And__Data_Color__Black__"></span><span id="te.exe_examples_csharp.datadriven.example.dll_examples_cpp.datadriven.example.dll__________________________select___name___simple___and__data_color__black__"></span><span id="TE.EXE_EXAMPLES_CSHARP.DATADRIVEN.EXAMPLE.DLL_EXAMPLES_CPP.DATADRIVEN.EXAMPLE.DLL__________________________SELECT___NAME___SIMPLE___AND__DATA_COLOR__BLACK__"></span>TE.exe Examples\\CSharp.DataDriven.Example.dll Examples\\CPP.DataDriven.Example.dll /select:"@Name='\*Simple\*' And @Data:Color='Black'"  
 
-Just like you did with "Color", **@Data:&lt;DataDrivenParameterName&gt;=&lt;DataDrivenParameterValue&gt;** will run specific data based on the DataDriven parameter value specified. In the above case, it will run WEX::TestExecution::Examples::SimpleDataDrivenExample::DataDrivenTest\#1 and WEX.Examples.CSharpDataDrivenSimpleExample.DataDrivenTest\#1
+Just like you did with "Color", <strong>@Data:&lt;DataDrivenParameterName&gt;=&lt;DataDrivenParameterValue&gt;</strong> will run specific data based on the DataDriven parameter value specified. In the above case, it will run WEX::TestExecution::Examples::SimpleDataDrivenExample::DataDrivenTest\#1 and WEX.Examples.CSharpDataDrivenSimpleExample.DataDrivenTest\#1
 
 Notice the **test indices** in the listproperties above. You can select the above based on the index as well.
 
@@ -335,9 +334,9 @@ The above will run the same two tests that @Data:Color='Black' selected. You eve
 
 If you understand the basics of data driven testing with TAEF, follow along with the next class in the same examples: [Overriding metadata at the Row level](metadata-overriding-data-driven-test-example.md), [Specifying array parameter types](array-support-data-driven-test-example.md).
 
- 
 
- 
+
+
 
 
 

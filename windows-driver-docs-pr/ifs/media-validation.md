@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 
 A major concern when developing a file system that supports removable media (FASTFAT, for example) is guarding against the "disk of death" attack. When implementing a file system, the driver must guard against maliciously malformed structures since anyone can insert a removable disk (CD-ROM, DVD-ROM, or USB flash memory disk, for example) into the system.
 
- 
+ 
 
- 
+ 
 
 
 

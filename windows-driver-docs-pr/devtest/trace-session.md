@@ -65,9 +65,9 @@ You cannot send the trace messages from a private trace session to the debugger.
 
 For more information about private event tracing sessions, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

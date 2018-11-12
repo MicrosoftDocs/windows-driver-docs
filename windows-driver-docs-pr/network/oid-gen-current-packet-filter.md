@@ -168,7 +168,7 @@ A miniport driver operating in other Native 802.11 modes besides NetMon must not
 
 **Note**  When the miniport driver is in Native 802.11 modes other than NetMon, and OID\_GEN\_CURRENT\_PACKET\_FILTER is set, the driver must not fail the set request if any promiscuous or raw filter settings are enabled in the OID data.
 
- 
+ 
 
 For more information about the NetMon and ExtAP operating modes, see the following topics:
 
@@ -203,9 +203,9 @@ Requirements
 
 [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 The CleanupPort command can be called to delete a specified port if it is not used for any printers in the system.
 
- 
+ 
 
- 
+ 
 
 
 

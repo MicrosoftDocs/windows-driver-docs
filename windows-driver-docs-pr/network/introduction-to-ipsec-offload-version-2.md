@@ -29,7 +29,7 @@ When reporting hardware capabilities during initialization, the miniport driver 
 
 **Note**  NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The [direct OID request path](https://msdn.microsoft.com/library/windows/hardware/ff564736) supports OID requests that are queried or set frequently.
 
- 
+ 
 
 IPsecOV2 provides the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569812), [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569814), and [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569813) direct OID requests to enable protocol drivers to add, update, and delete security associations (SAs). For more information about SAs, see [Managing Security Associations in IPsec Offload Version 2](managing-security-associations-in-ipsec-offload-version-2.md).
 
@@ -41,9 +41,9 @@ On the receive path, after the SA is offloaded, the NIC must perform the IPsec p
 
 For more information about send and receive processing in IPsecOV2, see [Sending Network Data with IPsec Offload Version 2](sending-network-data-with-ipsec-offload-version-2.md) and [Receiving Network Data with IPsec Offload Version 2](receiving-network-data-with-ipsec-offload-version-2.md).
 
- 
+ 
 
- 
+ 
 
 
 

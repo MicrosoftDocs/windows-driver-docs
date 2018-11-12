@@ -18,7 +18,7 @@ PFC is specified in the IEEE 802.1Qbb draft standard. This standard is part of t
 
 PFC supports the reliable delivery of data by substantially reducing packet loss due to congestion. This allows loss-sensitive protocols, such as FCoE, to coexist with traditional loss-insensitive protocols over the same unified fabric.
 
-PFC specifies a link-level flow control mechanism between directlyconnected peers. PFC is similar to IEEE 802.3 PAUSE frames but operates on individual 802.1p priority levels instead. This allows a receiver to pause a transmitter on any priority level.
+PFC specifies a link-level flow control mechanism between directly connected peers. PFC is similar to IEEE 802.3 PAUSE frames but operates on individual 802.1p priority levels instead. This allows a receiver to pause a transmitter on any priority level.
 
 For more information on PFC, see [Priority-based Flow Control (PFC)](priority-based-flow-control--pfc.md).
 
@@ -38,15 +38,15 @@ DCBX consists of DCB type-length-value (TLV) settings that are carried over the 
 
 **Note**  DCBX specifies that the local peer maintain configuration parameters from only one remote peer at any given time. As a result, the network adapter maintains only one set of local, remote, and operational NDIS QoS parameters.
 
- 
+ 
 
 Each ETS traffic class and PFC configuration setting is associated with an IEEE 802.1p priority level. The priority level is specified as a 3-bit value within a packet's 802.1Q tag. For NDIS packets, the 802.1p priority level is specified by the **UserPriority** member of the [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff566565) structure that is associated with a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

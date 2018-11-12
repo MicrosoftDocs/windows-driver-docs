@@ -93,9 +93,9 @@ Replace the preprocessor definition NDIS51\_MINIPORT\_DRIVER with NDIS60\_MINIPO
 <a href="" id="new-adapter-states"></a>**New Adapter States**  
 -   Include new miniport adapter pause and restart functionality. For more information about adapter states, see [Adapter States of a Miniport Driver](adapter-states-of-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

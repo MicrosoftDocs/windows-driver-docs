@@ -16,9 +16,9 @@ Implementation of additional configurations for software decoders is encouraged.
 
 This additional configuration set is defined in terms of the members of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure.
 
- 
+ 
 
- 
+ 
 
 
 

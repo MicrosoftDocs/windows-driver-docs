@@ -21,9 +21,9 @@ The NDIS Library is packaged in Ndis.sys, a kernel-mode export library, as a set
 
 The WDK provides Ndis.h as the main header file for miniport drivers. This file defines the entry points for the miniport driver, the NDIS Library functions, and common data structures. The Network Reference section describes the miniport driver, protocol driver, and **Ndis*Xxx*** functions and the common data structures and OIDs.
 
- 
+ 
 
- 
+ 
 
 
 

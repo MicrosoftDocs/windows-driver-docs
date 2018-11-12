@@ -48,9 +48,9 @@ Any driver-created thread runs at IRQL = PASSIVE\_LEVEL and at a base run-time p
 
 For more information about the design tradeoffs of a using a driver thread for a slow device, see [Polling a Device](avoid-polling-devices.md). See also [Managing Hardware Priorities](managing-hardware-priorities.md). For specific information about IRQLs for particular support routines, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

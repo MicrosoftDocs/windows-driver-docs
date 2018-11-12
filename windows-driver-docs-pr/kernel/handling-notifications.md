@@ -41,11 +41,13 @@ When a registry filtering driver's *RegistryCallback* routine receives a post-no
 
 -   Modify the registry operation's return value by providing a status value for the **ReturnStatus** member of the [**REG\_POST\_OPERATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560971) structure and then returning STATUS\_CALLBACK\_BYPASS. The configuration manager returns the specified return value to the calling thread.
 
-    **Note**  If the driver changes a status code from success to failure, it might have to deallocate objects that the configuration manager allocated. Alternatively, if the driver changes a status code from failure to success, it might have to provide appropriate output parameters.
+    **Note**  If the driver changes a status code from success to failure, it might have to deallocate objects that the configuration manager allocated. Alternatively, if the driver changes a status code from failure to success, it might have to provide appropriate output parameters.
 
-     
 
-    Modifying return values is supported in Windows Vista and later.
+
+~~~
+Modifying return values is supported in Windows Vista and later.
+~~~
 
 When a registry filtering driver's *RegistryCallback* routine receives a pre-notification, the routine can handle the registry operation itself and then return STATUS\_CALLBACK\_BYPASS. When the registry receives STATUS\_CALLBACK\_BYPASS from the driver, it just returns STATUS\_SUCCESS to the calling thread and does not process the operation. The driver preempts the registry operation and must completely handle it, and the driver must be careful to return valid output values in the **REG\_*XXX*\_KEY\_INFORMATION** structure.
 
@@ -53,7 +55,7 @@ Drivers can preempt registry operations in Windows Vista and later.
 
 If a *RegistryCallback* routine returns STATUS\_CALLBACK\_BYPASS for a pre-notification, the operation's post-notification callback does not occur.
 
-**Note**  Several registry system calls are not documented because they are rarely used, and, when they are used, it is usually to achieve some unconventional result in the registry. Modifying the operations performed by these calls is difficult and error-prone. Driver developers are discouraged from trying to modify the following registry system calls:
+**Note**  Several registry system calls are not documented because they are rarely used, and, when they are used, it is usually to achieve some unconventional result in the registry. Modifying the operations performed by these calls is difficult and error-prone. Driver developers are discouraged from trying to modify the following registry system calls:
 -   **NtRestoreKey**
 -   **NtSaveKey**
 -   **NtSaveKeyEx**
@@ -64,11 +66,11 @@ If a *RegistryCallback* routine returns STATUS\_CALLBACK\_BYPASS for a pre-notif
 -   **NtRenameKey**
 -   **NtSetInformationKey**
 
- 
 
- 
 
- 
+
+
+
 
 
 

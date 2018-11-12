@@ -20,9 +20,9 @@ This section contains information on the following topics:
 
 [WIA Compatibility Layer Message Mapping](wia-compatibility-layer-message-mapping.md)
 
- 
+ 
 
- 
+ 
 
 
 
