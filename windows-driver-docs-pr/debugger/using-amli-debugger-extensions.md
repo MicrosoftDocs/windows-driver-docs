@@ -4,7 +4,7 @@ description: Using AMLI Debugger Extensions
 ms.assetid: 98b9cd6e-b2e1-44bd-aff6-376b9cf2daa2
 keywords: ["AMLI Debugger, AMLI Debugger extensions", "amli extension", "acpikd.amli extension"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -122,13 +122,6 @@ When you are at this prompt, the **!amli debugger** command is not available (be
 </tbody>
 </table>
 
- 
+## See Also
 
- 
-
- 
-
-
-
-
-
+[The AMLI Debugger](the-amli-debugger.md)
