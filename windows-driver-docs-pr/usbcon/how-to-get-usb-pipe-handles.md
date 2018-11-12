@@ -698,15 +698,9 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
 }  
 ```
 
-<<<<<<< HEAD
-In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the [**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB_PIPE_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
-
-One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
-=======
 In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the[**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
 
-One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb\_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
->>>>>>> master
+One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtain a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb\_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 Remarks
 -------
