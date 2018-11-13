@@ -30,7 +30,7 @@ If no high-resolution timers are set, the operating system typically runs the sy
 
 To avoid unnecessarily increasing power consumption, the operating system runs the system clock at its maximum rate only when necessary to satisfy the timing requirements of high-resolution timers. For example, if a high-resolution timer is periodic, and its period spans several default system clock ticks, the operating system might run the system clock at its maximum rate only in the part of the timer period that immediately precedes each expiration. For the rest of the timer period, the system clock runs at its default rate.
 
-To prevent excessive power consumption, drivers should avoid setting the period of a long-running high-resolution timer to a value that is less than the default interval between system clock ticks. Otherwise, the operating system is forced to continously run the system clock at its maximum rate.
+To prevent excessive power consumption, drivers should avoid setting the period of a long-running high-resolution timer to a value that is less than the default interval between system clock ticks. Otherwise, the operating system is forced to continuously run the system clock at its maximum rate.
 
 Starting with Windows 8, a driver can call the [**ExQueryTimerResolution**](https://msdn.microsoft.com/library/windows/hardware/dn275969) routine to get the range of timer resolutions that are supported by the system clock.
 
