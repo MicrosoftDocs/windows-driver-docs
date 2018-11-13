@@ -16,7 +16,7 @@ class DSM_Load_Balance_Policy
 {
 
     //
-    // Version information for futher changes.
+    // Version information for further changes.
     //
     [WmiDataId(1),
      read,
