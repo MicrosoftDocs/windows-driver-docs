@@ -275,7 +275,7 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </tr>
 <tr class="even">
 <td align="left"><p><span id="133x_functional_errors_"></span><span id="133x_FUNCTIONAL_ERRORS_"></span><strong>133x: Functional errors</strong></p></td>
-<td align="left"><p>In some cases the OS needs to process all of the registry operations up front without knowledge of the devices or the system. This means that different sections writing different data values to the same global key will conflict. For example you cannot have a service that is set to different serivce configuations in different sections, a global registry key set to different data values in different sections, or a destination file set to different source files in different copyfile sections. If we process this whole INF up front, one of these configurations will overwrite the other one resulting in one of the configurations not working as expected.</p></td>
+<td align="left"><p>Multiple registry sections write to a single global key. For example, different sections could have a service set to different service configuations, a global registry key set to different data values, or a destination file pointing to different source files.</p></td>
 </tr>
 </tbody>
 </table>
