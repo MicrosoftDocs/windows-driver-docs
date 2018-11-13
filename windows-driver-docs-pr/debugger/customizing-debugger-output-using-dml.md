@@ -604,22 +604,21 @@ The new methods are:
 
  The interest mask flags are defined in dbgeng.h as shown here.
 
-    ```cpp
-    // IDebugOutputCallbacks2 interest mask flags.
-    //
+ ```cpp
+ // IDebugOutputCallbacks2 interest mask flags.
+ //
+ // Indicates that the callback wants notifications
+// of all explicit flushes.
+#define DEBUG_OUTCBI_EXPLICIT_FLUSH 0x00000001
+// Indicates that the callback wants
+// content in text form.
+#define DEBUG_OUTCBI_TEXT           0x00000002
+// Indicates that the callback wants
+// content in markup form.
+#define DEBUG_OUTCBI_DML            0x00000004
 
-    // Indicates that the callback wants notifications
-    // of all explicit flushes.
-    #define DEBUG_OUTCBI_EXPLICIT_FLUSH 0x00000001
-    // Indicates that the callback wants
-    // content in text form.
-    #define DEBUG_OUTCBI_TEXT           0x00000002
-    // Indicates that the callback wants
-    // content in markup form.
-    #define DEBUG_OUTCBI_DML            0x00000004
-
-    #define DEBUG_OUTCBI_ANY_FORMAT     0x00000006
-    ```
+#define DEBUG_OUTCBI_ANY_FORMAT     0x00000006
+ ```
 
 Note that an output object can register for both text and DML content if it can handle them both. During output processing of the callback the engine will pick the format that reduces conversions, thus supporting both may reduce conversions in the engine. It is not necessary, though, and supporting only one format is the expected mode of operation.
 
