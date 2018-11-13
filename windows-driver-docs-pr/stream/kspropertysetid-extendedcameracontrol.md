@@ -108,6 +108,10 @@ The following camera driver controls are new for Windows 10, version 1607.
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md)
 
+The following camera driver controls are new for Windows 10, version 1904.
+
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCH_MODE**](ksproperty-cameracontrol-extended-irtorchmode.md)
+
  
 
  
