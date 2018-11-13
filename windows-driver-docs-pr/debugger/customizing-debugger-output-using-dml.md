@@ -3,7 +3,7 @@ title: Customizing Debugger Output Using DML
 description: The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions.
 ms.assetid: 04984510-B95F-405F-81DF-E9D0673210B4
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 11/13/2018
 ms.localizationpriority: medium
 ---
 
@@ -597,10 +597,12 @@ The new methods are:
 -   IDebugOutputCallbacks2::Output2 – All IDebugOutputCallbacks2 notifications come through Output2. The Which parameter indicates what kind of notification is coming in while the Flags, Arg and Text parameters carry the notification payload. Notifications include:
 
     -   DEBUG\_OUTCB\_TEXT – Plain text output. Flags are from DEBUG\_OUTCBF\_\*, Arg is the output mask and Text is the plain text. This will only be received if DEBUG\_OUTCBI\_TEXT was given in the interest mask.
+
     -   DEBUG\_OUTCB\_DML – DML content output. Flags are from DEBUG\_OUTCBF\_\*, Arg is the output mask and Text is the DML content. This will only be received if DEBUG\_OUTCBI\_DML was given in the interest mask.
+    
     -   DEBUG\_OUTCB\_EXPLICIT\_FLUSH – A caller has called FlushCallbacks with no buffered text. Normally when buffered text is flushed the DEBUG\_OUTCBF\_COMBINED\_EXPLICIT\_FLUSH flag will be set, folding the two notifications into one. If no text is buffered a flush-only notification is sent.
 
-    The flags are defined in dbgeng.h as shown here.
+ The interest mask flags are defined in dbgeng.h as shown here.
 
     ```cpp
     // IDebugOutputCallbacks2 interest mask flags.
