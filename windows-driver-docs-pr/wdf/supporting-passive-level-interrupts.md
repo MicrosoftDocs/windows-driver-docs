@@ -158,7 +158,7 @@ EvtInterruptIsr(
     }
     
     //
-    // Retrive the request buffer.
+    // Retrieve the request buffer.
     //
     status = WdfRequestRetrieveOutputMemory(request, &reqMemory);
 
