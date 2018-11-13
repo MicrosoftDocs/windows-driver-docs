@@ -16,7 +16,7 @@ In Windows 10, version 1709, USB driver stack can send USB packets over non-USB 
 
 ## Getting the delays for isochronous transfers
 
-For isochronous endpoints, the client driver needs to know the maximum programming latency and maximum completion latency. That request must be targetted for a specific pipe because that latency can be different for different endpoints on the same device as MA-USB specification provides mechanisms for the host to calculate these values. 
+For isochronous endpoints, the client driver needs to know the maximum programming latency and maximum completion latency. That request must be targeted for a specific pipe because that latency can be different for different endpoints on the same device as MA-USB specification provides mechanisms for the host to calculate these values. 
 
 To build that request the driver must use the **_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS** URB.
 
