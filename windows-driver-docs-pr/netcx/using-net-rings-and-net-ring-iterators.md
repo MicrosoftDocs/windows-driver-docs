@@ -26,10 +26,10 @@ Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequen
 
 ## NET_RING post and drain operations
 
-Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**. Manipulating these indices during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. The **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**, as described in the following table.
 
-> [!NOTE] 
-> This section describes the **NET_RING** indices and their underlying post and drain concepts for transferring network data. To perform operations on a **NET_RING**, client drivers call into the Net Ring Iterator Interface, described in the [next section](#net-ring-iterator-interface-overview).
+> [!IMPORTANT]
+> This section describes the **NET_RING** indices and what happens when they move. However, it is important to note that client drivers do not *directly* modify these indices. Instead, to perform operations on the **NET_RING**, client drivers call into the Net Ring Iterator Interface, described in the [next section](#net-ring-iterator-interface-overview).
 
 | **NET_RING** index name | Description | Modified by |
 | --- | --- | --- |
@@ -37,15 +37,15 @@ Each element in a **NET_RING** is owned by either the client driver or NetAdapte
 | NextIndex | The beginning of the *post* section of the **NET_RING**. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver, through Net Ring Iterator Interface API calls |
 | EndIndex | The end of the range of elements in the **NET_RING** that the NIC client driver owns. Client drivers own elements up to **EndIndex - 1** inclusive. | NetAdapterCx |
 
+Manipulating these indices with net ring iterators during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
+
 Client drivers own every element from **BeginIndex** to **EndIndex - 1** inclusive. For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
 
-NetAdapterCx posts elements to the ring buffer by incrementing **EndIndex**. A client driver drains the buffers and returns ownership of the elements by incrementing **BeginIndex**.
+NetAdapterCx posts elements to the ring buffer by incrementing **EndIndex**. A client driver drains the buffers and returns ownership of the elements by advancing the ring's drain iterator, which increments **BeginIndex**.
 
 Elements with index values between **NextIndex** and **EndIndex - 1** inclusive are owned by the client but have not yet been posted to hardware.
-
-After the hardware transmits or receives data, the client advances **BeginIndex**, transferring ownership of the packets and their fragments back to NetAdapterCx.
 
 The following animations illustrate the post and drain operations that a PCI device driver performs on a **NET_RING**. The first shows posting and draining during transmit (Tx) operations, and the second shows posting and draining during receive (Rx) operations. Note that each packet has one or more fragments during transmit, but each packet has exactly one fragment during receive. Most NICs are configured this way, although some advanced NICs are capable of receiving more than one fragment per packet.
 
@@ -64,32 +64,90 @@ NIC client drivers perform operations on net rings by calling into the *Net Ring
 
 Each **NET_RING** can have multiple iterators. For example, the packet ring might have an iterator that covers the drain section of the ring (a *drain iterator*), an iterator that covers the post section of the ring (a *post iterator*), and an iterator that covers both the post and drain sections. Likewise, the fragment ring can have the same iterators.
 
-To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) and [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md). These are wrapper structures around the **NET_RING_ITERATOR** and are used in all Net Ring Iterator Interface API calls.
+To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) and [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md). These are wrapper structures around the **NET_RING_ITERATOR** and are used in all Net Ring Iterator Interface API calls. Client drivers should not use a **NET_RING_ITERATOR** directly. Instead, they should use the appropriate type of iterator for a given net ring (either packet or fragment).
 
 By advancing, getting, and setting packet and fragment iterators, client drivers post and drain network data in their packet queues' net rings. Client drivers also call methods on net ring iterators to access the ring's elements.
 
-For a list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
+For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
 
-## Using the Net Ring Iterator Interface for post and drain operations
+## Device drivers with in-order completions
 
-### Device drivers with in-order completions
+Drivers for devices that use ring buffers at the hardware level (for example, typical PCI NICs) normally complete send and receive operations in order, and control their **NET_RING** post and drain iterators accordingly.
 
-Drivers for devices that use ring buffers at the hardware level (for example, typical PCI NICs) normally complete send and receive operations in order, and manipulate their **NET_RING** post and drain iterators accordingly.
+### Transmitting data in order
 
-Here is a typical transmit sequence for a driver that performs in-order completions:
+Here is a typical post and drain sequence for a driver that transmits data in order.
 
-1. Call [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor. You can store this in the queue's context space to reduce calls out of the driver.
-2. Use the datapath descriptor to retrieve the queue's packet ring buffer by calling [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer).
-3. Program packets to hardware by looping until the ring buffer's **NextIndex** equals **EndIndex**:
-    1. Call [**NetRingBufferGetPacketAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbuffergetpacketatindex) on **NextIndex**.
-    2. Translate the **NET_PACKET** descriptor into the associated hardware packet descriptors.
-    3. Call [**NetRingBufferIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/nf-netringbuffer-netringbufferincrementindex).
-4. Complete packets by looping until **BeginIndex** equals **NextIndex** or until an incomplete packet is reached:
-    1. Call [**NetRingBufferGetPacketAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/nf-netadapterpacket-netringbuffergetpacketatindex) on **BeginIndex**.
-    2. Detect if the associated hardware descriptors indicate completion. If not, terminate.
-    3. Translate the hardware descriptor to the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet).
-    4. Call [**NetRingBufferIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/nf-netringbuffer-netringbufferincrementindex).
+1. Call **NetTxQueueGetRingCollection** to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
+2. Post data to hardware:    
+    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetTxPostPacketIterator**](netringgettxpostpacketiterator.md).
+    2. Do the following in a loop:
+        1. Call [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md) with the packet iterator to get a packet.
+        2. Check if this packet should be ignored. If it should be ignored, skip to step 5 of this loop. If not, continue.
+        3. Call [**NetRingGetTxPostPacketFragmentIterator**](netringgettxpostpacketfragmentiterator.md) to get the post iterator for this packet's fragments.
+        4. Do the doing the following in a loop:
+            1. Call [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md) with the fragment iterator to get a fragment.
+            2. Translate the **NET_FRAGMENT** descriptor into the associated hardware fragment descriptor.
+            3. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment for this packet.
+            4. Call [**NetRingSetTxPostFragmentIterator**](netringsettxpostfragmentiterator.md) to finalize posting this fragment to hardware.
+        5. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
+    3. Call [**NetRingSetTxPostPacketIterator**](netringsettxpostpacketiterator.md) to finalize posting packets to hardware.
+3. Drain completed transmit packets to the OS:
+    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetTxDrainPacketIterator**](netringgettxdrainpacketiterator.md).
+    2. Do the following in a loop:
+        1. Check if the packet has finished transmitting. If it has not, break out of the loop.
+        2. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
+    3. Call [**NetRingSetTxDrainPacketIterator**](netringsettxdrainpacketiterator.md) to finalize draining packets to the OS.
 
+These steps might look like this in code:
+
+```cpp
+void
+MyEvtTxQueueAdvance(
+    NETPACKETQUEUE TxQueue
+)
+{
+    // Get the transmit queue's context to retrieve the net ring collection
+    PMY_TX_QUEUE_CONTEXT txQueueContext = MyGetTxQueueContext(TxQueue);
+    NET_RING_COLLECTION const * Rings = txQueueContext->Rings;
+
+    // Post data to hardware
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetTxPostPacketIterator(Rings);
+    while(NetRingIteratorAny(packetIterator))
+    {
+        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        if(!packet->Ignore)
+        {
+            NET_FRAGMENT_ITERATOR fragmentIterator = NetRingGetTxPostPacketFragmentIterator(&packetIterator);
+            for(txQueueContext->numTxDescriptors = 0; NetRingIteratorAny(fragmentIterator); txQueueContext->numTxDescriptors++)
+            {
+                // Translate fragment descriptor to hardware
+                ...
+
+                NetRingAdvanceFragmentIterator(&fragmentIterator);
+            }
+            NetRingSetTxPostFragmentIterator(&fragmentIterator);
+        }
+        NetRingAdvancePacketIterator(&packetIterator);
+    }
+    NetRingSetTxPostPacketIterator(&packetIterator);
+
+    // Drain packets if completed
+    packetIterator = NetRingGetTxDrainPacketIterator(Rings);
+    while(NetRingIteratorAny(packetIterator))
+    {
+        // Test packet for transmit completion and break if it is not finished
+        ...
+
+        NetRingAdvancePacketIterator(&packetIterator);
+    }
+    NetRingSetTxDrainPacketIterator(&packetIterator);
+}
+```
+
+### Receiving data in order
+
+Here is a typical sequence for a driver that receives data in order.
 
 For example, to complete and drain a batch of packets and their fragments from a transmit queue's net rings, a client driver might do something like this:
 
