@@ -100,11 +100,6 @@ The possible values include the following.
 <strong>DEBUG_OUTPUT_STATUS </strong></td>
 <td align="left"><p>Output which modifies the status bar.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><span id="DEBUG_OUTPUT_XML"></span><span id="debug_output_xml"></span>
-<strong>DEBUG_OUTPUT_XML</strong></td>
-<td align="left"><p>Structured XML status messages.</p></td>
-</tr>
 </tbody>
 </table>
 
