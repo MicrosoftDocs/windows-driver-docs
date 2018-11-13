@@ -208,6 +208,13 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 <td align="left"><p>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.</p>
 </td>
 </tr>
+
+<tr class="even">
+<td align="left"><p><strong>1296: Specified service not associated with hardware</strong></p></td>
+<td align="left"><p>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.</p>
+</td>
+</tr>
+
 </tbody>
 </table>
 
