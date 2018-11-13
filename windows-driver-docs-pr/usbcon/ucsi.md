@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 **Last Updated**
 
--   December 2016
+-   October 2018
 
 **Windows version**
 
