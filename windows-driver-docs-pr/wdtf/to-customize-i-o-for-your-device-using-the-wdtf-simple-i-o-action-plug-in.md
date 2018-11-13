@@ -90,7 +90,7 @@ This method should close your previously opened test context. You should clear y
     ```cpp
     //
        //  //
-       //   TODO: Add code for your implmentation of Close() here.
+       //   TODO: Add code for your implementation of Close() here.
        //
        // 
        //
