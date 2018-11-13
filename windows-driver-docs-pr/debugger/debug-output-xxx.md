@@ -18,7 +18,6 @@ api_name:
 - DEBUG_OUTPUT_DEBUGGEE_PROMPT
 - DEBUG_OUTPUT_SYMBOLS
 - DEBUG_OUTPUT_STATUS
-- DEBUG_OUTPUT_XML
 api_location:
 - DbgEng.h
 api_type:
