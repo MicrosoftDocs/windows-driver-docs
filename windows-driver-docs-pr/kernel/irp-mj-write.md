@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_WRITE
 
 
-Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) or [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine, as must any higher-level driver layered over such a device driver.
+Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) or [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) routine, as must any higher-level driver layered over such a device driver.
 
 When Sent
 ---------
