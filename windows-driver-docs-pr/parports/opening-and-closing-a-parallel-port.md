@@ -21,9 +21,9 @@ Clients can share a parallel port. A client must open a file on a parallel port 
 
 Note that in a Plug and Play environment, a device can be removed or added whenever there are no open files on it. In general, every time a parallel port is added, Plug and Play assigns a different location and resources.
 
- 
+ 
 
- 
+ 
 
 
 

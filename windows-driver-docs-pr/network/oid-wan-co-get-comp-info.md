@@ -21,7 +21,6 @@ Compression information is returned in an NDIS\_WAN\_CO\_GET\_COMP\_INFO structu
          OUT NDIS_WAN_COMPRESS_INFO SendCapabilities;
          OUT NDIS_WAN_COMPRESS_INFO RecvCapabilities;
     } NDIS_WAN_CO_GET_COMP_INFO,   *PNDIS_WAN_CO_GET_COMP_INFO;
-  
 ```
 
 
@@ -67,9 +66,9 @@ Requirements
 
 [OID\_WAN\_CO\_SET\_COMP\_INFO](oid-wan-co-set-comp-info.md)
 
- 
 
- 
+
+
 
 
 

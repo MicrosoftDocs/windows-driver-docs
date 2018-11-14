@@ -51,9 +51,9 @@ A device can support a hardware effect that falls into one of the predefined cat
 
 In this manner, an application designed for your hardware can use the second effect descriptor to access the full capabilities of the effect, whereas an application designed for generic hardware can use the first effect descriptor to access basic capabilities of the effect.
 
- 
+ 
 
- 
+ 
 
 
 

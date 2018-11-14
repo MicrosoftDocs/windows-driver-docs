@@ -38,9 +38,9 @@ When DirectDraw has determined the correct addresses (linear and physical) of th
 
 -   On Microsoft Windows 2000 and later, this is done with a [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) call using the GUID\_UpdateNonLocalHeap GUID. When this GUID is passed to *DDGetDriverInfo*, the heap data is passed in the [**DD\_UPDATENONLOCALHEAPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551748) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

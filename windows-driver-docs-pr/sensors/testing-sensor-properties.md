@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 The Sensor Diagnostic Tool lets you test your driver and firmware support for data retrieval by invoking properties in the Sensor API.
- 
+ 
 
 ## Configuring the Sensor Diagnostic Tool to retrieve a single sensor reading
 

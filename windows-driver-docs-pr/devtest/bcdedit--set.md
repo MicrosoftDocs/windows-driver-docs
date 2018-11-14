@@ -30,8 +30,8 @@ bcdedit  /set [{ID}] datatype value
 
 ### Parameters
 
-\[**{***ID***}**\]  
-The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
+\[**{**<em>ID</em>**}**\]  
+The **{**<em>ID</em>**}** is the GUID that is associated with the boot entry. If you do not specify an **{**<em>ID</em>**}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
 
 > [!NOTE]
 > If you are using [Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=108518), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
@@ -100,7 +100,7 @@ For more information about using this option, see [Boot Parameters to Test Drive
 **hal** *file*   
 Directs the operating system loader to load an alternate HAL file. The specified file must be located in the %SystemRoot%\\system32 directory.
 
-**hypervisorbusparams** *Bus***.***Device***.***Function*  
+**hypervisorbusparams** <em>Bus</em>**.**<em>Device</em>**.**<em>Function</em>  
 Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
 
 **hypervisordebug** \[ **On** | **Off** \]  
@@ -195,7 +195,7 @@ See [4-Gigabyte Tuning (Windows)](https://msdn.microsoft.com/library/windows/des
 **kernel** *file*   
 Directs the operating system loader to load an alternate kernel. The specified file must be located in the %SystemRoot%\\system32 directory.
 
-**loadoptions busparams=***Bus.Device.Function*   
+**loadoptions busparams=**<em>Bus.Device.Function</em>   
 Specifies the target controller when multiple controllers exist. This syntax is appropriate when using either a 1394 cable or a USB 2.0 debug cable for debugging. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.
 
 > [!NOTE]
@@ -349,7 +349,7 @@ To view the current boot entries and their settings, use the **bcdedit /enum** c
 
 To delete a boot option value that you have set, use the **/deletevalue** option. The syntax for the command is as follows:
 
-**bcdedit** /**deletevalue** \[**{***ID***}**\] *datatatype*
+**bcdedit** /**deletevalue** \[**{**<em>ID</em>**}**\] *datatatype*
 
 For example, if you change the processor group option, **groupsize**, to a new value for testing purposes, you can revert to the default value of 64 by typing the following command and then restarting the computer.
 

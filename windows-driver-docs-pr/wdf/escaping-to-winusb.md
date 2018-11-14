@@ -20,9 +20,9 @@ A UMDF driver can call [WinUSB Functions](https://msdn.microsoft.com/library/win
 
 For more information, see [How to Access a USB Device by Using WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540174).
 
- 
+ 
 
- 
+ 
 
 
 

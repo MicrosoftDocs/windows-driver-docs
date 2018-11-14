@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 In the USB Still Image Capture Device Definition (SICDD), the device is allowed to cancel an operation at any time by returning less data than the host is expecting.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -63,9 +63,9 @@ To access the GPIO pins in a GPIO I/O resource, a peripheral device driver must 
 
 To receive interrupts from the GPIO pin in an interrupt resource, a peripheral device driver must register its interrupt service routine (ISR) to receive interrupts from the interrupt resource that is implemented by this pin. A KMDF driver calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect an ISR to the interrupt. 
 
- 
+ 
 
- 
+ 
 
 
 

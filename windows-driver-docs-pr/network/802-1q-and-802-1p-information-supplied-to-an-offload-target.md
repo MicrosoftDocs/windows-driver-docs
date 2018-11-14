@@ -24,9 +24,9 @@ A filter driver, an intermediate driver, or NDIS can supply the following 802.1Q
 
 In addition, if one or more VLAN identifiers have been configured for the network interface, the offload target's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function reads these identifiers from the registry. For more information about processing VLAN identifiers, see [Initializing, Setting, and Retrieving VLAN Identifiers](https://msdn.microsoft.com/library/windows/hardware/ff548945).
 
- 
+ 
 
- 
+ 
 
 
 

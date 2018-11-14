@@ -38,9 +38,9 @@ Resolution
 
 Reboot the system from the shadow partition.
 
- 
+ 
 
- 
+ 
 
 
 

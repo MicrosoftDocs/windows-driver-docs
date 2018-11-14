@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalization levels for 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG array</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is an array of LONG elements:
 
@@ -79,7 +79,7 @@ Level\[N-1\]
 
 Level for band N-1.
 
- 
+ 
 
 Level values use the following scale:
 
@@ -133,9 +133,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIO\_EQ\_BANDS**](ksproperty-audio-eq-bands.md)
 
- 
+ 
 
- 
+ 
 
 
 

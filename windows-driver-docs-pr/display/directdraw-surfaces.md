@@ -27,9 +27,9 @@ The Microsoft DirectDraw Surface is the basic image unit in Microsoft DirectX gr
 
 The *primary* surface is the surface that is currently being scanned out to the monitor by the display card. For more information about the primary surface, see the [Flipping](flipping.md) and [Memory Configurations](memory-configurations.md) sections.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -50,7 +50,7 @@ When the driver's [**DrvGetDirectDrawInfo**](https://msdn.microsoft.com/library/
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -85,9 +85,9 @@ The driver should store the pointer to the Direct3D runtime's **D3DParseUnknownC
 
 For more information, see [DirectDraw Driver Initialization](directdraw-driver-initialization.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -48,7 +48,7 @@ Specifies the address of an IRP tracked by the Driver Verifier. If *IRP* is 0 or
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -94,9 +94,9 @@ Allocation Stack:
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ Instances of the [IDebugOutputCallbacks](https://msdn.microsoft.com/library/wind
 <span id="output_callbacks"></span><span id="OUTPUT_CALLBACKS"></span>**output callbacks**  
 See output callback objects.
 
- 
+ 
 
- 
+ 
 
 
 

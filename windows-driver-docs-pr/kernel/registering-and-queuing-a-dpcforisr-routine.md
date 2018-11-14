@@ -40,9 +40,9 @@ Because ISR and *DpcForIsr* routines can run concurrently on SMP machines, you m
 
 Even on a uniprocessor machine, the ISR could be called again if the device interrupts while or before the *DpcForIsr* routine is run. If this occurs, the *DpcForIsr* routine is run only once. In other words, there is no one-to-one correspondence between an ISR's calls to **IoRequestDpc** and instantiations of the *DpcForIsr* routine if a driver overlaps I/O operations for its target device objects.
 
- 
+ 
 
- 
+ 
 
 
 

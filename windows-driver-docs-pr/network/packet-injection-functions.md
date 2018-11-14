@@ -29,39 +29,39 @@ A callout driver can call the following WFP functions to inject pended or modifi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>FwpsInjectForwardAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551177)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551177" data-raw-source="[&lt;strong&gt;FwpsInjectForwardAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551177)"><strong>FwpsInjectForwardAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the forwarding data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>FwpsInjectNetworkReceiveAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551183)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551183" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkReceiveAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551183)"><strong>FwpsInjectNetworkReceiveAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>FwpsInjectNetworkSendAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551185)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551185" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkSendAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551185)"><strong>FwpsInjectNetworkSendAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>FwpsInjectTransportReceiveAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551186)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551186" data-raw-source="[&lt;strong&gt;FwpsInjectTransportReceiveAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551186)"><strong>FwpsInjectTransportReceiveAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>FwpsInjectTransportSendAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551188)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551188" data-raw-source="[&lt;strong&gt;FwpsInjectTransportSendAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551188)"><strong>FwpsInjectTransportSendAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>FwpsStreamInjectAsync0</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551213)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551213" data-raw-source="[&lt;strong&gt;FwpsStreamInjectAsync0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551213)"><strong>FwpsStreamInjectAsync0</strong></a></p></td>
 <td align="left"><p>TCP data segments</p></td>
 <td align="left"><p>a data stream</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In addition, the [**FwpsQueryPacketInjectionState0**](https://msdn.microsoft.com/library/windows/hardware/ff551202) function is used to inspect the injection history of packet data.
 
@@ -88,11 +88,11 @@ In Windows Vista with Service Pack 1 (SP1) and Windows Server 2008, if inMetaVal
 
 **Note**  For raw send operations, the net buffer list must contain only a single net buffer. If your net buffer list contains more than one net buffer, you have to convert your net buffer list to a series of net buffer lists, and each in the series must contain a single net buffer. For more information about net buffer list management, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

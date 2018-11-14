@@ -27,9 +27,9 @@ Keep the following points in mind when implementing *DispatchCreate*, *DispatchC
 
 -   The routines of lowest-level drivers are called only when the next-higher-level driver calls **IoAttachDeviceToDeviceStack**, **IoGetDeviceObjectPointer**, or **IoAttachDevice**. The lowest-level driver in a chain of layered drivers frequently does only the minimum required processing of a create or close request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,6 @@ The protocol supplies a specification for the PPP compression scheme it selected
          IN NDIS_WAN_COMPRESS_INFO SendCapabilities;
          IN NDIS_WAN_COMPRESS_INFO RecvCapabilities;
     } NDIS_WAN_CO_SET_COMP_INFO,   *PNDIS_WAN_CO_SET_COMP_INFO;
-  
 ```
 
 
@@ -65,9 +64,9 @@ Requirements
 
 [OID\_WAN\_CO\_GET\_COMP\_INFO](oid-wan-co-get-comp-info.md)
 
- 
 
- 
+
+
 
 
 

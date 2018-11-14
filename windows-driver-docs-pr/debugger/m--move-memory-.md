@@ -57,7 +57,7 @@ Specifies the starting address of the destination memory area. For more informat
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,9 +68,9 @@ Remarks
 
 The memory area that *Address* specifies can be part of the memory area that *Range* specifies. Overlapping moves are handled correctly.
 
- 
+ 
 
- 
+ 
 
 
 

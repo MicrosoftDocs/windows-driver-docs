@@ -22,9 +22,9 @@ The ACPI specification defines two sets of discrete power states: *system power 
 
 These clearly defined power states allow many devices from various manufacturers to work together consistently and predictably. For example, when the power manager sets the system in state S3, it can rely upon drivers that support power management not only to put their devices in the corresponding device power state but also to return to the working state in a predictable fashion.
 
- 
+ 
 
- 
+ 
 
 
 

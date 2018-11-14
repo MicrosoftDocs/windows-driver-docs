@@ -26,7 +26,7 @@ The !ivt extension displays the Itanium interrupt vector table.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -62,7 +62,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium target computer.
 
@@ -104,9 +104,9 @@ fd:e000000083576b10 hal!HalpMcRzHandler
 fe:e000000083576830 hal!HalpPCIISALine2Pin
 ```
 
- 
+ 
 
- 
+ 
 
 
 

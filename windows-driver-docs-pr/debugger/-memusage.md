@@ -49,7 +49,7 @@ Displays only general summary information about memory use.
 |-------|------------------|
 | Modes | kernel mode only |
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -137,9 +137,9 @@ You can use the [**!vm**](-vm.md) extension command to analyze virtual memory us
 
 The [**!pfn**](-pfn.md) extension command can be used to display a particular page frame entry in the PFN database.
 
- 
+ 
 
- 
+ 
 
 
 

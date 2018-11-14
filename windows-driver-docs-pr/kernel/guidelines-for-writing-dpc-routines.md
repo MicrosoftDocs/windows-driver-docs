@@ -54,9 +54,9 @@ Keep the following points in mind when writing a [*DpcForIsr*](https://msdn.micr
     -   Requests that change the state of the physical device
     -   Requests that require the return of inherently volatile information about the physical device
 
- 
+ 
 
- 
+ 
 
 
 

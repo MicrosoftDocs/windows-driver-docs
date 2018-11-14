@@ -21,9 +21,9 @@ This section shows how to analyze a video stream stall. All sample output is gen
 
 [Interpreting Bug Check 0xCB](interpreting-bug-check-0xcb.md)
 
- 
+ 
 
- 
+ 
 
 
 

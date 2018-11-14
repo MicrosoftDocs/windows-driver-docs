@@ -19,9 +19,9 @@ Various versions of the Microsoft DirectX runtime handle the following rotation 
 
 -   All versions of the DirectX runtime handle all accesses to a rotated primary surface that are made by a windowed-mode device that uses various forms of emulation.
 
- 
+ 
 
- 
+ 
 
 
 

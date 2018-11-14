@@ -52,7 +52,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -90,9 +90,9 @@ Requirements
 
 [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294)
 
- 
+ 
 
- 
+ 
 
 
 

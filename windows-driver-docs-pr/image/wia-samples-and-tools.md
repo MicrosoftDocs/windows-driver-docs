@@ -19,9 +19,9 @@ This section discusses the WIA sample code and the WIA tools that are available 
 
 [WIA Tools](wia-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,9 +13,9 @@ warning C28719: Banned API Usage
 
 This warning indicates that a function is being used that has been banned, and has a more robust and secure replacement.
 
- 
+ 
 
- 
+ 
 
 
 

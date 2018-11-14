@@ -36,9 +36,9 @@ Display the options that will be activated and the drivers that will be verified
 <span id="Display_information_about_the_currently-verified_drivers_______"></span><span id="display_information_about_the_currently-verified_drivers_______"></span><span id="DISPLAY_INFORMATION_ABOUT_THE_CURRENTLY-VERIFIED_DRIVERS_______"></span>**Display information about the currently-verified drivers**   
 This will display statistics related to Driver Verifier's actions. See [Monitoring Global Counters](monitoring-global-counters.md) and [Monitoring Individual Counters](monitoring-individual-counters.md) for details. It will also allow you to view and alter Driver Verifier's volatile actions. See [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

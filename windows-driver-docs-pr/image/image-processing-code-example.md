@@ -17,7 +17,7 @@ The following code example shows how to implement a simple image processing filt
 
 **Note**   Portions of code are omitted from the following example for brevity.
 
- 
+ 
 
 ```cpp
 ///
@@ -471,9 +471,9 @@ CMyFilterStream::Flush(VOID)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

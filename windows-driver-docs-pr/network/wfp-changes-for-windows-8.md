@@ -56,9 +56,9 @@ Several changes have been made in the available functions and behavior of the Wi
     - [**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_ETHERNET**](https://msdn.microsoft.com/library/windows/hardware/ff551291) (was **FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_802\_3**)
     - [**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_ETHERNET**](https://msdn.microsoft.com/library/windows/hardware/ff551334) (was **FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_802\_3**)
 
- 
+ 
 
- 
+ 
 
 
 

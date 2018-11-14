@@ -35,7 +35,7 @@ The following table is an example:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="SMS_short_codes"></span><span id="sms_short_codes"></span><span id="SMS_SHORT_CODES"></span>SMS short codes
 
@@ -47,9 +47,9 @@ SMS short codes that have short phone numbers that are four to six digits long a
 
 [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

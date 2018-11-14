@@ -13,7 +13,7 @@ The Microsoft operating system (OS) **ContainerID** descriptor can be used in de
 
 **Note**  If you decide to implement an Microsoft OS **ContainerID** descriptor, the descriptor value must be unique on every device to avoid container ID conflicts.
 
- 
+ 
 
 The Microsoft OS **ContainerID** descriptor is useful when a device supports simultaneous connections to the device through more than one bus. In this way, the same container ID is used on each bus supported by the device. This allows the operating system to determine whether functions on each bus are part of the same device container.
 
@@ -23,9 +23,9 @@ If you decide to use a Microsoft OS **ContainerID** within your USB device, you 
 
 -   USB devices integrated with a computer should never provide a Microsoft OS **ContainerID** descriptor. To ensure that integrated devices are correctly grouped with the computer's device container, integrated devices should rely on ACPI BIOS settings or on the USB hub descriptor **DeviceRemovable** bit for the port.
 
- 
+ 
 
- 
+ 
 
 
 

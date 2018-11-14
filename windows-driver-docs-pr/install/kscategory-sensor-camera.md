@@ -43,7 +43,7 @@ The KSCATEGORY_SENSOR_CAMERA GUID is defined as follows:
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

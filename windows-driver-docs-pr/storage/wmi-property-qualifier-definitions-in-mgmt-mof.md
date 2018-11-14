@@ -38,9 +38,9 @@ Thus, a WMI property qualifier resembles an enumeration because the qualifier re
 
 For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
 
- 
+ 
 
- 
+ 
 
 
 

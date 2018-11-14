@@ -26,9 +26,9 @@ The following topics are available in this section:
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

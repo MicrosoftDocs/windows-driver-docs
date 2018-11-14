@@ -40,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -57,13 +57,13 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 **Remarks**
 
 By default, the **suppressWizard** flag is set to OFF. You can set the **suppressWizard** flag to ON by including a **suppressWizard** XML element as a child element of a **dpinst** XML element in a DPInst descriptor file or by using the **/sw** command-line switch. The **suppressWizard** flag works with the **suppressEulaPage** flag.
 
-The following code example demonstrates a **supressWizard** element.
+The following code example demonstrates a **suppressWizard** element.
 
 ```cpp
 <dpinst>
@@ -78,9 +78,9 @@ The following code example demonstrates a **supressWizard** element.
 
 [**dpinst**](dpinst-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -85,9 +85,9 @@ When [attributes](gdl-attributes.md) with the same [keyword](gdl-keywords.md) ar
 
 The GDL parser takes the syntactical representation of the GDL stream and creates an internal logical representation of the GDL commands. The internal representation of these commands is then converted to XML and becomes a snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

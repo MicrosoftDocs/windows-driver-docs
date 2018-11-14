@@ -55,7 +55,7 @@ The VIDEO\_TDR\_ ERROR bug check has a value of 0x00000116. This indicates that 
 </tbody>
 </table>
 
- 
+
 
 Cause
 -----
@@ -130,7 +130,6 @@ fffff801`63ec0000 fffff801`649a7000   nvlddmkm T (no symbols)
     CheckSum:         00AA7491
     ImageSize:        00AE7000
     Translations:     0000.04b0 0000.04e4 0409.04b0 0409.04e4
-
 ```
 
 Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !analyze output, if you have symbols for the associated code, you can use the dt command to display this data.
@@ -223,9 +222,9 @@ Remarks
 
 For information on requirements that hardware devices must meet when they implement TDR, refer to the WHCK documentation on *Device.Graphics…TDRResiliency*.
 
- 
 
- 
+
+
 
 
 

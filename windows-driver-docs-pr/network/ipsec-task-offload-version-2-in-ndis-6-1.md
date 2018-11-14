@@ -22,9 +22,9 @@ IPsecOV2 uses the NDIS 6.1 direct OID request interface. For more information ab
 
 For more information about IPsecOV2, see [IPsec Offload Version 2](ipsec-offload-version-2.md).
 
- 
+ 
 
- 
+ 
 
 
 

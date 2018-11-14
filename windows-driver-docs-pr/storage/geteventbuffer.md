@@ -26,9 +26,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetEventBuffer(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS         HBAStatus,
-   [out] uint32                                    EventCount,
-   [out, WmiSizeIs("EventCount")] MSFC_EventBuffer Events[]
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS         HBAStatus,
+   [out] uint32                                    EventCount,
+   [out, WmiSizeIs("EventCount")] MSFC_EventBuffer Events[]
 );
 ```
 
@@ -87,9 +87,9 @@ Requirements
 
 [**MSFC\_EventBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff562480)
 
- 
+ 
 
- 
+ 
 
 
 

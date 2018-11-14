@@ -20,9 +20,9 @@ A typical audio adapter card contains a collection of audio hardware functions, 
 
 For more information, see [Miniport Interfaces](miniport-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

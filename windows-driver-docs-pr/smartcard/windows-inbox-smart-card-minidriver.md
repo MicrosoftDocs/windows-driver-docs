@@ -75,7 +75,7 @@ Note that the metadata provided below only include what is required to be presen
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="_File_Management_Data__DF_FMD_"></span><span id="_file_management_data__df_fmd_"></span><span id="_FILE_MANAGEMENT_DATA__DF_FMD_"></span> File Management Data (DF FMD)
 
@@ -118,7 +118,7 @@ Note that the metadata provided below only include what is required to be presen
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="File_Control_Parameters__DF_FCP_"></span><span id="file_control_parameters__df_fcp_"></span><span id="FILE_CONTROL_PARAMETERS__DF_FCP_"></span>File Control Parameters (DF FCP)
 
@@ -172,7 +172,7 @@ Note that the metadata provided below only include what is required to be presen
 <strong>Note</strong>  The security attribute does not have to exactly match this, but allowing User Authentication OR External Authentication to both create and delete EFs is required.
 </div>
 <div>
- 
+ 
 </div>
 </dd>
 </dl></td>
@@ -180,7 +180,7 @@ Note that the metadata provided below only include what is required to be presen
 </tbody>
 </table>
 
- 
+ 
 
 Once the DF FCP has been created, the card shall transition to the “initialization” state, which is the state required for creating the objects listed in the following sections.
 
@@ -198,7 +198,7 @@ To create a PIN, a CHANGE REFERENCE DATA APDU for the application password must 
 | Data Field | &lt;password&gt;             |
 | Le         | Absent                       |
 
- 
+ 
 
 For example, to set the PIN to 12345678, the following APDU must be sent to the card:
 
@@ -222,7 +222,7 @@ To create a PUK, a CHANGE REFERENCE DATA APDU for the application resetting pass
 | Data Field | &lt;password&gt;             |
 | Le         | Absent                       |
 
- 
+ 
 
 For example, to set the PUK to 12345678, the following APDU must be sent to the card:
 
@@ -243,7 +243,7 @@ ACLs must be created using the CREATE FILE APDU:
 | Data Field | FCP template for EF  |
 | Le         | Absent               |
 
- 
+ 
 
 The ACLs mentioned in the table below must be created. Each ACL creation APDU must be followed by ActivateFile APDU (00 44 00 00 00)
 
@@ -256,7 +256,7 @@ The ACLs mentioned in the table below must be created. Each ACL creation APDU mu
 | UserReadWriteAc          | 00 E0 00 00 0E 62 0C 82 01 39 83 02 A0 13 8C 03 03 30 30 |
 | AdminReadWriteAc         | 00 E0 00 00 0E 62 0C 82 01 39 83 02 A0 14 8C 03 03 20 20 |
 
- 
+ 
 
 ### <span id="_Create_EF_for_Admin_Key"></span><span id="_create_ef_for_admin_key"></span><span id="_CREATE_EF_FOR_ADMIN_KEY"></span> Create EF for Admin Key
 
@@ -271,7 +271,7 @@ EF for Admin key must be created using the CREATE FILE APDU:
 | Data Field | FCP template for EF (EFID = B080 and KeyID=80) |
 | Le         | Absent                                         |
 
- 
+ 
 
 The following APDU must be sent to the card to create the EF for a Triple-DES three-key Admin Key:
 
@@ -298,7 +298,7 @@ The Admin Key must be injected onto the card using the PUT KEY APDU:
 | Data Field | Key Usage Template   |
 | Le         | Absent               |
 
- 
+ 
 
 The following APDU must be sent to the card to inject the Admin key into KeyID 80:
 
@@ -328,7 +328,7 @@ First, send a SELECT APDU for the DF:
 | Data Field | 3F FF  |
 | Le         | Absent |
 
- 
+ 
 
 Secondly, use the ACTIVATE FILE APDU to change the state of the DF to “operational”:
 
@@ -341,7 +341,7 @@ Secondly, use the ACTIVATE FILE APDU to change the state of the DF to “operati
 | Data Field | Absent |
 | Le         | Absent |
 
- 
+ 
 
 The following APDU must be sent to the card to bring it to operational state:
 
@@ -413,7 +413,7 @@ For cards compliant with GIDS specification with Microsoft Generic Profile, the 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="INF_Sample_to_re-brand_inbox_class_minidriver"></span><span id="inf_sample_to_re-brand_inbox_class_minidriver"></span><span id="INF_SAMPLE_TO_RE-BRAND_INBOX_CLASS_MINIDRIVER"></span>INF Sample to re-brand inbox class minidriver
 
@@ -599,9 +599,9 @@ The following are required for this type of INF file:
 
 For more information on INF files and syntax, see [Device and Driver Installation Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

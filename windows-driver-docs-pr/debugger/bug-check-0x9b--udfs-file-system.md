@@ -55,7 +55,7 @@ The UDFS\_FILE\_SYSTEM bug check has a value of 0x0000009B. This bug check indic
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -73,9 +73,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This memory increases the quantity of nonpaged pool memory that is available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

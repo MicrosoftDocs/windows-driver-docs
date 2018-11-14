@@ -22,9 +22,9 @@ During the handling of a recoverable hardware error, the operating system attemp
 
 For more information about how to implement a PSHED plug-in that participates in error recovery, see [Participating in Error Recovery](participating-in-error-recovery.md).
 
- 
+ 
 
- 
+ 
 
 
 

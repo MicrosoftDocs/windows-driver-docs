@@ -59,9 +59,9 @@ G:\Debugging Tools> cdb -premote npipe:server=BOX17,pipe=AnotherPipe -v sol.exe
 
 For a more complicated example using a process server, see [Symbols in the Middle](symbols-in-the-middle.md).
 
- 
+ 
 
- 
+ 
 
 
 

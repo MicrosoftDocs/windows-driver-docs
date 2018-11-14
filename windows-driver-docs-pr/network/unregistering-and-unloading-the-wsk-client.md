@@ -124,9 +124,9 @@ VOID
 
 A WSK application is not required to call **NmrDeregisterClient** from within its *Unload* function. For example, if a WSK application is a subcomponent of a complex driver, the unregistration of the WSK application might occur when the WSK application subcomponent is deactivated. However, in such a situation the driver must still ensure that the WSK application has been completely unregistered from the NMR before returning from its *Unload* function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 A new DP2 token, D3DDP2OP\_BUFFERBLT, has been added to support optimal copying and updating of index and vertex buffers. This token is very similar to the existing D3DDP2OP\_TEXBLT that copies and updates textures but has been modified to support subbuffer copying rather than simple rectangles.
 
- 
+ 
 
- 
+ 
 
 
 

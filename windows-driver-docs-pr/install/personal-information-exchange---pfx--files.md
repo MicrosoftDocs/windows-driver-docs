@@ -35,9 +35,9 @@ Where:
 
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
- 
+ 
 
- 
+ 
 
 
 

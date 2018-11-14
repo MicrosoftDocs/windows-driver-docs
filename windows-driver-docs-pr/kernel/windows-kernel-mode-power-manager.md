@@ -38,9 +38,9 @@ Routines that provide a direct interface to the power manager are usually prefix
 
 The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296).
 
- 
+ 
 
- 
+ 
 
 
 

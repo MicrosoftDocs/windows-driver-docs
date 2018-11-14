@@ -113,43 +113,43 @@ In addition to **!process**, the following extensions can help to determine the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>[!ready](-ready.md)</strong></p></td>
+<td align="left"><p><strong><a href="-ready.md" data-raw-source="[!ready](-ready.md)">!ready</a></strong></p></td>
 <td align="left"><p>Identifies the threads that are ready to run, in order of priority.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!kdext*.locks](-locks---kdext--locks-.md)</strong></p></td>
+<td align="left"><p><strong><a href="-locks---kdext--locks-.md" data-raw-source="[!kdext*.locks](-locks---kdext--locks-.md)">!kdext*.locks</a></strong></p></td>
 <td align="left"><p>Identifies any held resource locks, in case there is a deadlock with retail time outs.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!vm](-vm.md)</strong></p></td>
+<td align="left"><p><strong><a href="-vm.md" data-raw-source="[!vm](-vm.md)">!vm</a></strong></p></td>
 <td align="left"><p>Checks the virtual memory usage.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!poolused](-poolused.md)</strong></p></td>
+<td align="left"><p><strong><a href="-poolused.md" data-raw-source="[!poolused](-poolused.md)">!poolused</a></strong></p></td>
 <td align="left"><p>Determines whether one type of pool allocation is disproportionately large (pool tagging required).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!memusage](-memusage.md)</strong></p></td>
+<td align="left"><p><strong><a href="-memusage.md" data-raw-source="[!memusage](-memusage.md)">!memusage</a></strong></p></td>
 <td align="left"><p>Checks the physical memory status.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!heap](-heap.md)</strong></p></td>
+<td align="left"><p><strong><a href="-heap.md" data-raw-source="[!heap](-heap.md)">!heap</a></strong></p></td>
 <td align="left"><p>Checks the validity of the heap.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!irpfind](-irpfind.md)</strong></p></td>
+<td align="left"><p><strong><a href="-irpfind.md" data-raw-source="[!irpfind](-irpfind.md)">!irpfind</a></strong></p></td>
 <td align="left"><p>Searches nonpaged pool for active IRPs.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If the information provided does not indicate an unusual condition, try setting a breakpoint at **ntoskrnl!KiSwapThread** to determine whether the processor is stuck in one process or if it is still scheduling other processes. If it is not stuck, set breakpoints in common functions, such as **NtReadFile**, to determine whether the computer is stuck in a specific code path.
 
- 
+ 
 
- 
+ 
 
 
 

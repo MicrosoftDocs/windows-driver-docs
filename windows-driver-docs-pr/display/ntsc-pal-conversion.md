@@ -28,9 +28,9 @@ Therefore, an interlaced video created from a film contains pairs of fields. But
 
 When the interlaced video is encoded, a flag is set to indicate how the stream should be decoded. This should be enough information to decode and optimally display the decoded pictures because the output of an MPEG-2 or NTSC decoder for DVD or DSS is theoretically always 50 or 60 interlaced fields per second. However, older films and some newer films often have a break in the flag cadence, especially at film reel changeover points. This requires a method for identifying such progressive content in order to select the proper method for displaying the information about a frame-by-frame basis.
 
- 
+ 
 
- 
+ 
 
 
 

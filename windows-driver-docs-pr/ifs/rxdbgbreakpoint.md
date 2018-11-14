@@ -25,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID RxDbgBreakPoint(
-   ULONG LineNumber
+   ULONG LineNumber
 );
 ```
 
@@ -80,9 +80,9 @@ Requirements
 
 [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 
- 
+ 
 
- 
+ 
 
 
 

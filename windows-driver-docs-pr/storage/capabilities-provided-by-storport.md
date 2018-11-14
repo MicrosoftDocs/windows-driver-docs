@@ -73,9 +73,9 @@ Storport provides services to the miniport driver by means of the Storport libra
 
 For a complete list of the library routines that Storport makes available to Storport miniport drivers, see [Storport Driver Support Routines](https://msdn.microsoft.com/library/windows/hardware/ff567548).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,13 +38,13 @@ set TRACE\_FORMAT\_PREFIX="\[%9!d!\]%8!04X!.%3!04X!::%4!s! \[%1!s!\](**%!COMPNAM
 
 The resulting prefix has the following format. The new elements are shown in parentheses.
 
-\[*CPUNumber*\]*ProcessID*.*ThreadID*::*SystemTime* \[*MessageGUIDFriendlyName*\](*ComponentName*:*FunctionName*:*Filename***\_***LineNumber*)
+\[*CPUNumber*\]*ProcessID*.*ThreadID*::*SystemTime* \[*MessageGUIDFriendlyName*\](*ComponentName*:*FunctionName*:<em>Filename</em>**\_**<em>LineNumber</em>)
 
 For a detailed example, see [Example 7: Customizing the Trace Message Prefix](example-7--customizing-the-trace-message-prefix.md). For a list of all predefined variables that can appear in the trace message prefix, see [Trace Message Prefix](trace-message-prefix.md).
 
- 
+ 
 
- 
+ 
 
 
 

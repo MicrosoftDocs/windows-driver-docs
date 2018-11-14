@@ -31,9 +31,9 @@ Cause
 
 Windows requires a higher-grade processor than the one you are using.
 
- 
+ 
 
- 
+ 
 
 
 

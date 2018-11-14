@@ -23,9 +23,9 @@ The following specific issues relate to template data types.
 
 [CodePage Template Entry Issues](codepage-template-entry-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

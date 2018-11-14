@@ -57,7 +57,7 @@ The MobileOperatorNotification event payload includes the following fields:
 </tbody>
 </table>
 
- 
+ 
 
 The MobileOperatorNotification event enables each of the scenarios that are described in [Mobile operator notification scenarios](mobile-operator-notification-scenarios.md) by differentiating them by using the **MessageType** field in the event payload. The **MessageType**s are enumerated as follows:
 
@@ -120,7 +120,7 @@ The MobileOperatorNotification event enables each of the scenarios that are desc
 </tbody>
 </table>
 
- 
+ 
 
 The work item that is associated with the MobileOperatorNotification event should start with logic that effectively differentiate the **MessageType**, and runs the appropriate code for each scenario.
 
@@ -176,7 +176,7 @@ The local data counters in Windows 8 are updated every one minute; at most, thi
 **Note**  
 Although this information is a good first-order guide, Windows cannot account for unbilled traffic or for usage on other devices that share the same data limits (such as family plans or SIM-swapping). Mobile operator apps should use local data counters only to approximate usage since the last sync with the operator’s own billing system. For data usage that has already been processed, the billing system should be considered authoritative.
 
- 
+ 
 
 ### <span id="DataPlanReset"></span><span id="dataplanreset"></span><span id="DATAPLANRESET"></span>DataPlanReset
 
@@ -195,7 +195,7 @@ The ProfileConnected MessageType is triggered on L2 connectivity for the mobile 
 **Note**  
 This trigger occurs before network identification is complete. The [**NetworkStatusChanged**](https://msdn.microsoft.com/library/windows/apps/br207299) event (part of the [**NetworkInformation**](https://msdn.microsoft.com/library/windows/apps/br207293) API) is generated when network identification determines the connectivity level of the network. For more information about network identification, see [Quickstart: Retrieving network connection information](https://msdn.microsoft.com/library/windows/apps/hh452990) and the **NetworkInformation** class.
 
- 
+ 
 
 ### <span id="RegisteredRoaming_and_RegisteredHome"></span><span id="registeredroaming_and_registeredhome"></span><span id="REGISTEREDROAMING_AND_REGISTEREDHOME"></span>RegisteredRoaming and RegisteredHome
 
@@ -320,9 +320,9 @@ The rules to identify a text message as an operator message can be defined in th
 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
- 
+ 
 
- 
+ 
 
 
 

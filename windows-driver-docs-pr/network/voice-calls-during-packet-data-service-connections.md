@@ -31,9 +31,9 @@ To handle voice calls during packet data service connections, use the following 
 
 6.  Miniport drivers should send an NDIS\_WWAN\_PACKET\_SERVICE\_STATE notification to the MB service that indicates the current DataClass.
 
- 
+ 
 
- 
+ 
 
 
 

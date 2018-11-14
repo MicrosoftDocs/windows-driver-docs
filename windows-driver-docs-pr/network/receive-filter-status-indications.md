@@ -19,9 +19,9 @@ This section describes the following NDIS status indications that can be used by
 
 [**NDIS\_STATUS\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES**](ndis-status-receive-filter-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

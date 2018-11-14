@@ -110,7 +110,7 @@ The REMOTE\_NDIS\_INITIALIZE\_CMPLT message is sent by the Remote NDIS device to
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -145,9 +145,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,11 +36,11 @@ For more information, see [Audio Data Formats and Data Ranges](audio-data-format
 **Note**  
 The KSPROPERTY\_PIN\_DATARANGES and KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES each begin on an 8-byte-aligned address.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

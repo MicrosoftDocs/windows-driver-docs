@@ -241,9 +241,9 @@ CAppWnd::OnDeviceChange(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

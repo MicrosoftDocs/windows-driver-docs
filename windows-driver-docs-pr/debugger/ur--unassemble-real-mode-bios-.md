@@ -57,7 +57,7 @@ Specifies the beginning of the memory range to disassemble. Eight instructions (
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ However, if real-mode code exists in a location where the debugger is not expect
 
 If you use **ur** on 32-bit or 64-bit code, the command tries to disassemble the code as if it were 16-bit code. This situation produces meaningless results.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,9 +41,9 @@ Prior to version 1.9 of KMDF, drivers could send I/O requests from a child devic
 
 Beginning with KMDF version 1.9, a driver can call [**WdfPdoInitAllowForwardingRequestToParent**](https://msdn.microsoft.com/library/windows/hardware/ff548789) before it creates a child device and then call [**WdfRequestForwardToParentDeviceIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff549959) to requeue a request from the child's I/O queue to a parent queue. If a driver uses**WdfPdoInitAllowForwardingRequestToParent** and **WdfRequestForwardToParentDeviceIoQueue**, the framework increases the child's device stack size and assigns the correct WDM device object to the I/O request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ The size of spool files is reduced through several optimizations in the conversi
 
 These optimizations occur any time an XPS Document or XPS spool file is created.
 
- 
+ 
 
- 
+ 
 
 
 

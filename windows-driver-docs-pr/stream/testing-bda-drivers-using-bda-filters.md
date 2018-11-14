@@ -25,9 +25,9 @@ You can use the Graph Editor to perform rudimentary tests of a BDA component, su
 
 To use the Graph Editor to thoroughly test functionality of your BDA component, you must build a filter graph that starts with a BDA network provider filter, contains a filter instance of your BDA component, and is rendered, at least, through a demultiplexer filter (packet identifier (PID) filter) to a transport information filter (TIF). The biggest problem with using the Graph Editor is that there is no dedicated application to submit requests via the **ITuner** interface that the network provider filter implements. However, the network provider filter has associated property pages that provide some limited ability to exercise the **ITuner** interface.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ The USB transfer to send a data message from the host to the device is a standar
 
 The USB transfer to send a data message from the device to the host is a standard USB bulk transfer from the Bulk IN endpoint of the Data Class interface. The host will read up to the number of bytes indicated by the *MaxTransferSize* field of [REMOTE\_NDIS\_INITIALIZE\_MSG](remote-ndis-initialize-msg.md), which will be no greater than 0x4000 bytes for a USB 1.1 device.
 
- 
+ 
 
- 
+ 
 
 
 

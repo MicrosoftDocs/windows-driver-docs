@@ -25,9 +25,9 @@ After completing the bus-reset request and any outstanding requests, the minipor
 
 Note that the operating system - specific port driver manages SCSI bus-reset delays on behalf of miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ Turns on the display of the processor number.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +70,9 @@ If you use the **.echocpunum** command without any arguments, the display of pro
 
 By default, the display is turned off.
 
- 
+ 
 
- 
+ 
 
 
 

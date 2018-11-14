@@ -36,9 +36,9 @@ For additional information on TYMED and stream-based transfers see [Data Transfe
 
 The **IWiaDataTransfer**, **IWiaTransfer**, and **IStream** interfaces are discussed in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

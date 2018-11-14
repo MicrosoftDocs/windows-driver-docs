@@ -19,9 +19,9 @@ A connectionless intermediate driver indicates receive network data to the next 
 
 Before indicating the receive network data, the driver processes the data, perhaps converting it to the format expected by a higher-level driver, and if required, copying relevant data into MDLs that are associated with an intermediate-driver-allocated [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure.
 
- 
+ 
 
- 
+ 
 
 
 

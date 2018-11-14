@@ -18,7 +18,7 @@ The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now
 pwrtest /processidle [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the maximum time (in minutes) for the scenario to run, after which the wait is aborted, even if idle tasks are continuing to run (default is to run until all tasks are completed).
 
 **Examples**
@@ -176,16 +176,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

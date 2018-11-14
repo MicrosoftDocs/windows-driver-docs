@@ -24,9 +24,9 @@ This section discusses issues you need to be concerned about when developing dri
 
 For information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](http://go.microsoft.com/fwlink/p/?linkid=165521).
 
- 
+ 
 
- 
+ 
 
 
 

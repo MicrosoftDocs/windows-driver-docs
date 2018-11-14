@@ -26,9 +26,9 @@ You should replace \\\\server\\share with the root of the UNC share that you are
 
 All debuggers set up in this fashion ignore the standard version control extraction instructions and instead access the source files from the location specified. Meanwhile, all debuggers without these items included in Srcsrv.ini use the normal version control mechanism to extract source files.
 
- 
+ 
 
- 
+ 
 
 
 

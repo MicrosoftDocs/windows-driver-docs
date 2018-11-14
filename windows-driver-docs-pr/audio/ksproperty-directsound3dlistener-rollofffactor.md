@@ -47,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property specifies the roll
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>FLOAT</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type FLOAT and specifies the rolloff factor. The rolloff factor can range from DS3D\_MINROLLOFFFACTOR to DS3D\_MAXROLLOFFFACTOR, which are defined as 0.0 and 10.0 respectively. The default rolloff factor is DS3D\_DEFAULTROLLOFFFACTOR, which is defined as 1.0.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
 
- 
+ 
 
- 
+ 
 
 
 

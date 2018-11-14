@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_DISPLAY_ADAPTER [device interface class](https://msdn.micr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**GUID_DISPLAY_DEVICE_ARRIVAL**](guid-display-device-arrival.md)
 
- 
+ 
 
- 
+ 
 
 
 

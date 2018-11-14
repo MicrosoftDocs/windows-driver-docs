@@ -29,7 +29,7 @@ The **FeatureScore** directive is supported in Windows Vista and later versions 
 
 **Warning**  The **FeatureScore** directive is only processed when specified directly in the **\[DDInstall\]** section.
 
- 
+ 
 
 ## Entries
 
@@ -65,9 +65,9 @@ For more information about how drivers are ranked, see [How Windows Ranks Driver
 
 [signature score](signature-score--windows-vista-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

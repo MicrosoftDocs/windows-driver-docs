@@ -18,9 +18,9 @@ Each of these [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/wind
 
 For a device that supports all four device power states (D0, D1, D2, D3) but can awaken only from states D0 and D1, the **WakeFromD0** and **WakeFromD1** bits are set, and the **WakeFromD2** and **WakeFromD3** bits are clear.
 
- 
+ 
 
- 
+ 
 
 
 

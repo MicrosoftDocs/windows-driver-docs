@@ -39,9 +39,9 @@ The **Initialize** method should assign the **INetCfgComponent** and **INetCfg**
 
 No other notify object interface methods are called until **Initialize** returns.
 
- 
+ 
 
- 
+ 
 
 
 

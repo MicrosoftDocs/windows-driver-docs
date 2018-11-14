@@ -30,9 +30,9 @@ The methods of the **IPrintTicketProvider** interface in a Unidrv or PScript5 pr
 
 3.  For each plug-in, call [**IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace**](https://msdn.microsoft.com/library/windows/hardware/ff553180).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ With this technique, you can play unprotected content as though it were DRM-prot
 
 For example, you can use the debugger to verify that your driver prevents the content from being recorded. Try to trick the driver into enabling recording of the wave-out stream through the capture MUX by changing the SndVol32 program's volume and mute settings. The sliders should reflect the changes you make to their settings, which are persistent, but the capture MUX should continue to mute the wave-out stream until the "protected" content finishes playing. Only then should the new settings take effect.
 
- 
+ 
 
- 
+ 
 
 
 

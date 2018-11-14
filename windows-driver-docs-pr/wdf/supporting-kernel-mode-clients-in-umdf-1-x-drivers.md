@@ -108,9 +108,9 @@ If the **UpperDriverOk** registry value is set to a nonzero number, the framewor
 
 For UMDF versions 1.9 and later, the **UpperDriverOk** registry value is obsolete and supported only for existing drivers. New drivers should use the [UmdfKernelModeClientPolicy](specifying-wdf-directives-in-inf-files.md) directive.
 
- 
+ 
 
- 
+ 
 
 
 

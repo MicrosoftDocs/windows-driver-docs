@@ -63,7 +63,7 @@ Required. One of the following values:
 </tr>
 <tr class="even">
 <td><p><span id="JobCanceledAtDevice"></span><span id="jobcanceledatdevice"></span><span id="JOBCANCELEDATDEVICE"></span>JobCanceledAtDevice</p></td>
-<td><p>The current scan job was canceled at the scan device's front panel.</p></td>
+<td><p>The current scan job was canceled at the scan device&#39;s front panel.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="JobCompletedWithErrors"></span><span id="jobcompletedwitherrors"></span><span id="JOBCOMPLETEDWITHERRORS"></span>JobCompletedWithErrors</p></td>
@@ -100,7 +100,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -121,10 +121,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobCompletedStateReasons</strong>](jobcompletedstatereasons.md)</p></td>
+<td><p><a href="jobcompletedstatereasons.md" data-raw-source="[&lt;strong&gt;JobCompletedStateReasons&lt;/strong&gt;](jobcompletedstatereasons.md)"><strong>JobCompletedStateReasons</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobStateReasons</strong>](jobstatereasons.md)</p></td>
+<td><p><a href="jobstatereasons.md" data-raw-source="[&lt;strong&gt;JobStateReasons&lt;/strong&gt;](jobstatereasons.md)"><strong>JobStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -147,9 +147,9 @@ You can extend the allowed values, but extending this list has implications on t
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

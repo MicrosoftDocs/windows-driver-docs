@@ -179,8 +179,6 @@
       href: wild-cards.md
     - name: "Data-Range Properties"
       href: data-range-properties.md
-    - name: "KMixer Behavior"
-      href: kmixer-behavior.md
   - name: "Dynamic Audio Subdevices"
     href: dynamic-audio-subdevices.md
     items: 
@@ -380,24 +378,9 @@
       href: rendering-and-capturing-audio-content-by-using-the-usbaudio-driver.md
     - name: "Rendering Wave Content Using DirectSound Software and Hardware Buffers"
       href: rendering-wave-content-using-directsound-software-and-hardware-buffers.md
-  - name: "KMixer Driver Sample Rate Conversion and Mixing Policy"
-    href: kmixer-driver-sample-rate-conversion-and-mixing-policy.md
-    items: 
-    - name: "Types of Sample Rate Conversion"
-      href: types-of-sample-rate-conversion.md
-    - name: "Policy for Sample Rate Conversion of Audio Streams"
-      href: policy-for-sample-rate-conversion-of-audio-streams.md
-    - name: "Policy for Mixing Audio Streams and Setting the Output Sample Rate"
-      href: policy-for-mixing-audio-streams-and-setting-the-output-sample-rate.md
-    - name: "How KMixer Handles Set-Format Requests"
-      href: how-kmixer-handles-set-format-requests.md
-    - name: "KMixer Volume and Mute Controls"
-      href: kmixer-volume-and-mute-controls.md
   - name: "Factors Governing Wave-Output Latency"
     href: factors-governing-wave-output-latency.md
     items: 
-    - name: "KMixer Latency"
-      href: kmixer-latency.md
     - name: "WaveCyclic Latency"
       href: wavecyclic-latency.md
     - name: "WavePci Latency"
@@ -410,23 +393,6 @@
     - name: "Audio System Effects"
       href: audio-system-effects.md
       items: 
-      - name: "GFX Filters"
-        href: gfx-filters.md
-        items: 
-        - name: "Requirements for a GFX Filter Factory"
-          href: requirements-for-a-gfx-filter-factory.md
-        - name: "Installing a Device-Specific GFX Filter"
-          href: installing-a-device-specific-gfx-filter.md
-        - name: "GFX Data Format Requirements"
-          href: gfx-data-format-requirements.md
-        - name: "Vendor's GFX User Interface"
-          href: vendor-s-gfx-user-interface.md
-        - name: "Persistence of GFX Settings"
-          href: persistence-of-gfx-settings.md
-        - name: "Target Device ID"
-          href: target-device-id.md
-        - name: "DRM Requirements for GFX Drivers"
-          href: drm-requirements-for-gfx-drivers.md
     - name: "System Effects Audio Processing Objects"
       href: system-effects-audio-processing-objects.md
       items: 

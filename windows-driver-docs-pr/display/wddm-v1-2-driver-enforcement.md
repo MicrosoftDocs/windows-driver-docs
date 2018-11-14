@@ -18,9 +18,9 @@ WDDM 1.2 has both mandatory and optional features. The driver must set all the m
 
 If a driver has wrongly claimed itself as WDDM 1.2 or has implemented only some of the mandatory features, then it will fail to create an adapter, and the system will fall back to the Microsoft Basic Display Driver (MSBDD).
 
- 
+ 
 
- 
+ 
 
 
 

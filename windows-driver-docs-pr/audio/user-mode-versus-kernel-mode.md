@@ -42,9 +42,9 @@ To summarize the recommendations above:
 
 -   For hardware components, first implement a software version in user mode (in order to work out the design issues with easy interfaces, debugging, installation, and removal), then convert it to a kernel-mode software version. Finally, connect the kernel-mode component to hardware, one feature at a time, until everything works as desired.
 
- 
+ 
 
- 
+ 
 
 
 

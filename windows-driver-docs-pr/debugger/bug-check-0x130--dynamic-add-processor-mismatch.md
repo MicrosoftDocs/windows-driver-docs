@@ -26,9 +26,9 @@ The DYNAMIC\_ADD\_PROCESSOR\_MISMATCH bug check has a value of 0x00000130. This 
 
 None
 
- 
+ 
 
- 
+ 
 
 
 

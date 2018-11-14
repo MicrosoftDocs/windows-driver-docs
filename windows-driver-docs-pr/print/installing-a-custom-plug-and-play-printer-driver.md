@@ -44,9 +44,9 @@ In this example, the two lines are nearly identical, differing only by the inclu
 
 In either case, Setup does not require a response from the user on whether to install the driver, so does not display a dialog box asking for a response. Note, however, that if the match is not a hardware ID match, but rather a [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) match, and installation occurs on the client side, Setup displays a dialog box asking for user interaction.
 
- 
+ 
 
- 
+ 
 
 
 

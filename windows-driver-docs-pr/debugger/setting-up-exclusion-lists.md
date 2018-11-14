@@ -42,11 +42,11 @@ SymProxy reads from the exclusion list every half-hour so that you do not need t
 
 **Note**   SymProxy does not support the use of both Symsrv.ini and the registry. If the .ini file exists, it is used. Otherwise, the registry is checked.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

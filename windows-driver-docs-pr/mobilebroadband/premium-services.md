@@ -18,9 +18,9 @@ You can use your mobile broadband app to let users discover and consume addition
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

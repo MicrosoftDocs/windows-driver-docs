@@ -48,9 +48,9 @@ Alternatively, if the retry slot and the busy slot are nonzero, a request may no
 
 The [**!devobj**](-devobj.md) extension determines whether the SCSI miniport is waiting for map registers. Use the device object address of the device that is issuing the request as input to **!devobj**. If the current IRQ is nonzero, it is highly probable that the SCSI miniport is waiting for map registers.
 
- 
+ 
 
- 
+ 
 
 
 

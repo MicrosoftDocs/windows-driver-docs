@@ -26,9 +26,9 @@ To modify the resource descriptors in a device's resource list, a driver should 
 
 If the driver removes a resource, it must remove it from both the [raw and translated resource lists](raw-and-translated-resources.md).
 
- 
+ 
 
- 
+ 
 
 
 

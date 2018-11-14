@@ -60,7 +60,7 @@ The PDO is always the bottom device object in a device stack. This results from 
 **Note**  
 When the drivers for a device are installed, the installer uses information in an information (INF) file to determine which driver is the function driver and which drivers are filters. Typically the INF file is provided either by Microsoft or by the hardware vendor. After the drivers for a device are installed, the PnP manager can determine the function and filter drivers for the device by looking in the registry.
 
- 
+ 
 
 ## <span id="Bus_drivers"></span><span id="bus_drivers"></span><span id="BUS_DRIVERS"></span>Bus drivers
 
@@ -87,9 +87,9 @@ The following diagram shows the device node, kernel-mode device stack, and the u
 
 [Driver stacks](driver-stacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

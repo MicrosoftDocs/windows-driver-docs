@@ -18,9 +18,9 @@ This section contains information on the following topics:
 
 [Data Transfer Between Windows Vista Application and Legacy Driver](data-transfer-between-windows-vista-application-and-legacy-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,9 +47,9 @@ The following is a typical example of a text log section that the Plug and Play 
 
 For detailed information about the content and format of a text log section, see [Format of a Text Log Section Header](format-of-a-text-log-section-header.md), [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), and [Format of a Text Log Section Footer](format-of-a-text-log-section-footer.md).
 
- 
+ 
 
- 
+ 
 
 
 

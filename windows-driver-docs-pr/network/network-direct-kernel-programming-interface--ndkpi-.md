@@ -26,9 +26,9 @@ In NDIS 6.30 and later (Windows Server 2012 and later), the Network Direct Kern
 -   [NetworkDirect Disconnect Scheme](networkdirect-disconnect-scheme.md)
 -   [NDKPI Deferred Processing Scheme](ndkpi-deferred-processing-scheme.md)
 
- 
+ 
 
- 
+ 
 
 
 

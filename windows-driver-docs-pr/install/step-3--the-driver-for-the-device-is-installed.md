@@ -35,9 +35,9 @@ As soon as the device and driver are instantiated, Windows installs the driver b
 
 As soon as this step is complete, the device is installed and ready to be used.
 
- 
+ 
 
- 
+ 
 
 
 

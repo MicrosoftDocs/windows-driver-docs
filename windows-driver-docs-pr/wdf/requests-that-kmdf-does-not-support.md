@@ -50,9 +50,9 @@ Kernel-Mode Driver Framework (KMDF) does not support I/O requests that have the 
 
 When the framework receives such a request, its default action depends on the device object that was the target of the request. For an FDO or PDO, the framework completes the IRP with the status STATUS\_INVALID\_DEVICE\_REQUEST. For a filter DO, the framework passes the IRP to the next lower driver. Although the framework does not support these request types, a KMDF driver can still handle them. For more information, see [Handling an IRP that the Framework Does Not Support](handling-an-irp-that-the-framework-does-not-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

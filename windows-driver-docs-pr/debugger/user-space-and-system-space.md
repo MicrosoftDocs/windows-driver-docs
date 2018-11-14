@@ -43,9 +43,9 @@ This indicates that user space ranges from 0x00000000\`00000000 to 0x000007FF\`F
 
 For more information about Windows memory management, see *Microsoft Windows Internals* by David Solomon and Mark Russinovich (4th edition, Microsoft Press, 2005).
 
- 
+ 
 
- 
+ 
 
 
 

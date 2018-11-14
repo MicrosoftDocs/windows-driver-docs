@@ -31,9 +31,9 @@ For example, the following command verifies that *Toaster.sys* has a valid embed
 SignTool verify /kp amd64\toaster.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

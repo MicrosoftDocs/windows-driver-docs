@@ -192,9 +192,9 @@ For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the m
 
 For a sample driver that shows how to write a GPIO peripheral driver that runs in kernel mode, see the SimDevice sample driver in the [GPIO sample drivers](http://go.microsoft.com/fwlink/p/?LinkId=616032) collection on GitHub.
 
- 
+ 
 
- 
+ 
 
 
 

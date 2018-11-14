@@ -24,8 +24,8 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">D3D9 format (D3DDDIFMT_* and/or D3DDECLTYPE*</th>
-<th align="left">D3D10+ API equivalent (DXGI_FORMAT_*)</th>
+<th align="left">D3D9 format (D3DDDIFMT_* and/or D3DDECLTYPE<em></th>
+<th align="left">D3D10+ API equivalent (DXGI_FORMAT_</em>)</th>
 <th align="left">Required D3D10_ or D3D11_ FORMAT_SUPPORT_* enumeration values</th>
 <th align="left">Minimum required Direct3D level</th>
 </tr>
@@ -540,7 +540,7 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -609,7 +609,7 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  These are further details on the support algorithm's requirements in Direct3D 10Level 9:
 -   The IA\_VERTEX\_BUFFER and/or IA\_INDEX\_BUFFER formats are supported by software vertex processing if there is no D3DDEVCAPS\_HWTRANSFORMANDLIGHT capability.
@@ -617,11 +617,11 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 -   For the SHADER\_SAMPLE format, the driver must support FORMATOP\_TEXTURE, FORMATOP\_VOLUMETEXTURE, or FORMATOP\_CUBETEXTURE, and it must not report FORMATOP\_NOFILTER.
 -   For the MIP\_AUTOGEN format, Direct3D 10Level 9 generates its own mip-maps, so it requires MIP, RENDER\_TARGET, and TEXTURE2D bits.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

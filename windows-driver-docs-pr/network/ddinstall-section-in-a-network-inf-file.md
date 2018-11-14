@@ -100,7 +100,7 @@ The **Characteristics** entry can have one or more of the following values (mult
 </tbody>
 </table>
 
- 
+ 
 
 ¹When using Windows Server 2012 R2, at least one network interface on the system must be marked with NCF\_PHYSICAL in order to be eligible for DHCPv6 client.
 
@@ -187,11 +187,11 @@ A *DDInstall* section for a physical network adapter must contain a **BusType** 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  If an adapter can function on more than one type of bus, the INF file that installs that adapter should contain a *DDInstall* section for each bus type.
 
- 
+ 
 
 For example, if an adapter can function on both the ISA bus and the PnPISA bus, the INF file for that adapter should contain a *DDInstall* section for ISA and a *DDInstall* section for PnPISA. The **BusType** entry in each such *DDInstall* section should specify the appropriate bus type for that section as follows:
 
@@ -219,13 +219,13 @@ The *DDInstall* section of an INF file that installs a multiport network adapter
 
 **Note**  It is assumed that the mapping of PCI device numbers or PCI functions to port numbers is static. It is also assumed that the adapter's ports are numbered sequentially.
 
- 
+ 
 
 The **Port1DeviceNumber** and **Port1FunctionNumber** entries are mutually exclusive. If both entries are present in a given *DDInstall* Section, only the **Port1DeviceNumber** entry is used.
 
- 
+ 
 
- 
+ 
 
 
 

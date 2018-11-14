@@ -42,9 +42,9 @@ The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://msdn.microsoft.com/library/w
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

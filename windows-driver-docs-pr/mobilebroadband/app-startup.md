@@ -20,9 +20,9 @@ For example, the app can read the IMSI and IMEI information from the mobile broa
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

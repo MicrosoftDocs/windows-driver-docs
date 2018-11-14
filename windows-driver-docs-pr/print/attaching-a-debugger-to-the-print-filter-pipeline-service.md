@@ -44,9 +44,9 @@ After setting the **PipelineHostTimeout** value, use the following procedure to 
 
 The filter host process should break into the debugger at the first breakpoint or the first verifier stop, whichever comes first. From there, you can step through code, examine variables, and so on.
 
- 
+ 
 
- 
+ 
 
 
 

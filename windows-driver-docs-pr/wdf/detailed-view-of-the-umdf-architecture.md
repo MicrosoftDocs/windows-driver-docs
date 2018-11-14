@@ -27,9 +27,9 @@ To send an I/O request to a UMDF driver, an application calls a Win32 file I/O f
 
 The request is either completed by one of the drivers in the user-mode stack or forwarded by one of the drivers back to the reflector. When the reflector receives a request from the user-mode driver stack, it sends the request down the kernel-mode stack for completion.
 
- 
+ 
 
- 
+ 
 
 
 

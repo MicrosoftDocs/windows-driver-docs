@@ -51,9 +51,9 @@ Sends an output report to a collection (Windows XP and later versions).
 <a href="" id="ioctl-hid-set-feature"></a>[**IOCTL\_HID\_SET\_FEATURE**](https://msdn.microsoft.com/library/windows/hardware/ff541176)  
 Sends a feature report to a collection.
 
- 
+ 
 
- 
+ 
 
 
 

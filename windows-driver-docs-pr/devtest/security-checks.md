@@ -13,14 +13,14 @@ The Security Checks option of Driver Verifier monitors the driver for common err
 
 Specifically, the Security Checks option looks for the following improper driver behavior:
 
--   **Calling kernel ZwXxx routines with user-mode addresses as parameters.** When the driver calls any **Zw*Xxx*** routines, Driver Verifier checks that none of the parameters are user-mode addresses. When calling any **Zw*Xxx*** routine, the current KPROCESSOR\_MODE becomes **KernelMode**, and any parameters passed to that routine are treated as though they are kernel-mode addresses. Thus, the driver must probe any user-mode buffers received from applications and place it into kernel-mode memory (for example, in a pool block or data structure allocated on the kernel stack) prior to calling the kernel **Zw*Xxx*** routine. The driver must use the captured buffer rather than the user-mode buffer as a parameter of the **Zw*Xxx*** routine.
+- **Calling kernel ZwXxx routines with user-mode addresses as parameters.** When the driver calls any **Zw*Xxx*** routines, Driver Verifier checks that none of the parameters are user-mode addresses. When calling any **Zw*Xxx*** routine, the current KPROCESSOR\_MODE becomes **KernelMode**, and any parameters passed to that routine are treated as though they are kernel-mode addresses. Thus, the driver must probe any user-mode buffers received from applications and place it into kernel-mode memory (for example, in a pool block or data structure allocated on the kernel stack) prior to calling the kernel **Zw*Xxx*** routine. The driver must use the captured buffer rather than the user-mode buffer as a parameter of the **Zw*Xxx*** routine.
 
--   **Calling kernel ZwXxx routines with malformed UNICODE\_STRINGs as parameters.** When the driver calls any **Zw*Xxx*** routine, Driver Verifier checks any parameters that are UNICODE\_STRING values. Common errors detected by Driver Verifier in such strings include:
-    -   **The buffer field points to user-mode memory.**
-    -   **The Length or MaximumLength parameters are incorrect.** For example, *MaximumLength* &lt; *Length*. Or one or both of these values is an odd number. Both of these values must always be even because they represent the number of bytes used for representing a Unicode string.
--   **Calling kernel ZwXxx routines with an incorrect OBJECT\_ATTRIBUTES structure as a parameter.** When the driver calls any **Zw*Xxx*** routine, Driver Verifier checks any parameters that are OBJECT\_ATTRIBUTE structures. The members of each OBJECT\_ATTRIBUTE structure parameter are subjected to the same checks for user-mode addresses and UNICODE\_STRING values that are described above.
+- **Calling kernel ZwXxx routines with malformed UNICODE\_STRINGs as parameters.** When the driver calls any **Zw*Xxx*** routine, Driver Verifier checks any parameters that are UNICODE\_STRING values. Common errors detected by Driver Verifier in such strings include:
+  -   **The buffer field points to user-mode memory.**
+  -   **The Length or MaximumLength parameters are incorrect.** For example, *MaximumLength* &lt; *Length*. Or one or both of these values is an odd number. Both of these values must always be even because they represent the number of bytes used for representing a Unicode string.
+- **Calling kernel ZwXxx routines with an incorrect OBJECT\_ATTRIBUTES structure as a parameter.** When the driver calls any **Zw*Xxx*** routine, Driver Verifier checks any parameters that are OBJECT\_ATTRIBUTE structures. The members of each OBJECT\_ATTRIBUTE structure parameter are subjected to the same checks for user-mode addresses and UNICODE\_STRING values that are described above.
 
--   **Inconsistent Irp-&gt;RequestorMode and I/O Request parameters.** Whenever the **Irp-&gt; RequestorMode** is set to **KernelMode**, Driver Verifier checks that no I/O Request parameters, **Irp-&gt;AssociatedIrp.SystemBuffer** or **Irp-&gt;UserBuffer**, are user-mode addresses.
+- **Inconsistent Irp-&gt;RequestorMode and I/O Request parameters.** Whenever the **Irp-&gt; RequestorMode** is set to **KernelMode**, Driver Verifier checks that no I/O Request parameters, **Irp-&gt;AssociatedIrp.SystemBuffer** or **Irp-&gt;UserBuffer**, are user-mode addresses.
 
 Beginning with Windows 7, when you enable any Driver Verifier option, Driver Verifier checks for the following driver behavior:
 
@@ -66,9 +66,9 @@ You can activate the Security Checks option for one or more drivers by using Dri
 
     The Security Checks feature is also included in the standard settings. To use this feature in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

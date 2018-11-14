@@ -24,9 +24,9 @@ To use private mediums, the minidriver should do the following in the pin's [*AV
 
 3.  The driver can then perform operations on the buffer and route it to the connected pin/filter object through its custom medium.
 
- 
+ 
 
- 
+ 
 
 
 

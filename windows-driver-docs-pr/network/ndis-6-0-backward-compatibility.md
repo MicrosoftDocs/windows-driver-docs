@@ -39,9 +39,9 @@ NDIS 6.0 does not support ATM and Token Ring drivers, but NDIS 3.0 - NDIS 5.*x* 
 
 Windows Vista does not support any versions of FDDI, ARCNET, or serialized intermediate drivers.
 
- 
+ 
 
- 
+ 
 
 
 

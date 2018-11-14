@@ -54,9 +54,9 @@ If the client rejected the call and the call manager or MCM driver has already a
 
 If the client accepted the call but the end-to-end connection was not successfully established (because, for example, the remote party tore down the call), the call manager or MCM driver will not call **Ndis(M)CmDispatchCallConnected**. Instead, it will call **Ndis(M)CmDispatchIncomingCloseCall**, which causes NDIS to call the client's *ProtocolClIncomingCloseCall* function. The client must then call [**NdisClCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561627) to complete the teardown of the call. The call manager or MCM driver then calls **Ndis(M)CmDeactivateVC** to [deactivate the VC](deactivating-a-vc.md) that it created for the incoming call. The call manager or MCM driver can then initiate [deletion of the VC](deleting-a-vc.md) by calling [**NdisCoDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff561698) in the case of the call manager or [**NdisMCmDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff562819) in the case of the MCM driver.
 
- 
+ 
 
- 
+ 
 
 
 

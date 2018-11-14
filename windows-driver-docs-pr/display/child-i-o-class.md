@@ -43,9 +43,9 @@ The Windows Display Driver Model (WDDM) does not permit a call into one of the c
 
 -   [*DxgkDdiOPMSetSigningKeyAndSequenceNumbers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Additionally, the following methods allow UI plug-ins to modify driver informati
 
 [**IPrintOemDriverUI::DrvUpgradeRegistrySetting**](https://msdn.microsoft.com/library/windows/hardware/ff553118) allows a UI plug-in to modify device settings in the registry, so that registry settings used by older driver versions can be updated.
 
- 
+ 
 
- 
+ 
 
 
 

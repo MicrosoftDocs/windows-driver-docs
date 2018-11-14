@@ -71,7 +71,7 @@ The following table describes the possible values for WIA\_DIP\_HW\_CONFIG.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -89,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

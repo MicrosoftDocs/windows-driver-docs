@@ -19,7 +19,7 @@ A INF file for a WAN adapter must add a **WanEndpoints** value to the instance k
 
 **Note**   ISDN drivers are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 The following is an example of an *add-registry-section* that adds a **WanEndpoints** value of 2 for a BRI ISDN adapter:
 
@@ -28,9 +28,9 @@ The following is an example of an *add-registry-section* that adds a **WanEndpoi
 HKR,, WanEndpoints, 0x00010001, 2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

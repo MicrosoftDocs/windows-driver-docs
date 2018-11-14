@@ -21,9 +21,9 @@ Other members contain information such as the total size of all of the buffers t
 
 The minidriver, together with the [**wiasGetImageInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549249) function, sets many of the transfer context items that describe the image itself, such as its width in pixels, and the number of lines. The WIA service sets many of the transfer context items that are concerned with the data transfer, such as the file handle (when applicable), the type of transfer.
 
- 
+ 
 
- 
+ 
 
 
 

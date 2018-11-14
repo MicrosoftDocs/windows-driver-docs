@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_IHV is used to start an IHV-initiated task.
 |--------|---------------------------------------------------------|---------------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | Priority depends on IHV-requested settings. | 10                              |
 
- 
+ 
 
 The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md), and is prioritized based on the value requested by the IHV.
 
@@ -29,7 +29,7 @@ The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_
 |--------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/dn926313) |                                | X        | The context data provided by the IHV component. This is forwarded from [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_ TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md). |
 
- 
+ 
 
 ## Task completion indication
 
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

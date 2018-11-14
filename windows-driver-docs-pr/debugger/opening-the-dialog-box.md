@@ -24,9 +24,9 @@ ms.localizationpriority: medium
 
     On Windows Vista, click **Start**, click **All Programs**, click **Debugging Tools for Windows**, right-click **Global Flags** and then click **Run as administrator**. If you omit this step, Windows displays the **System Registry Gflags Error: 5**. The Gflags dialog box opens, but Gflags commands fail.
 
- 
+ 
 
- 
+ 
 
 
 

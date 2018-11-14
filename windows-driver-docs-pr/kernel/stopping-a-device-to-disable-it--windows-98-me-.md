@@ -36,9 +36,9 @@ The PnP manager sends the stop IRPs in the following sequence:
 
 When a device is being disabled, its drivers cannot queue incoming IRPs because there is no guarantee when the device might be reenabled. Consequently, data might be lost.
 
- 
+ 
 
- 
+ 
 
 
 

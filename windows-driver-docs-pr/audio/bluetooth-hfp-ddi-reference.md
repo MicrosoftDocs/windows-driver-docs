@@ -21,9 +21,9 @@ The following topics describe the structures and IOCTLs that are defined for thi
 
 [Bluetooth HFP DDI IOCTLs](bluetooth-hfp-ddi-ioctls.md)
 
- 
+ 
 
- 
+ 
 
 
 

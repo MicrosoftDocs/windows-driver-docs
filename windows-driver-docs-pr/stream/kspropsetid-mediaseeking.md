@@ -36,9 +36,9 @@ The KSPROPSETID\_MediaSeeking property set includes:
 
 [**KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT**](ksproperty-mediaseeking-converttimeformat.md)
 
- 
+ 
 
- 
+ 
 
 
 

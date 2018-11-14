@@ -97,7 +97,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaFront</strong>](mediafront.md)</p></td>
+<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -120,9 +120,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**MediaFront**](mediafront.md)
 
- 
+ 
 
- 
+ 
 
 
 

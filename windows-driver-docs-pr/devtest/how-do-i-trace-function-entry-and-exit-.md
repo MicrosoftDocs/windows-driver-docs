@@ -20,7 +20,6 @@ First, add the definition of the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.co
         WPP_DEFINE_BIT(Unusual)              \
         WPP_DEFINE_BIT(Noise)                \
  WPP_DEFINE_BIT(FuncTrace) )
- 
 ```
 
 Then, in the same file, add the configuration data for the trace messages. Start the configuration data with a **begin\_wpp config** statement, and end it with an **end\_wpp** statement. Then add the definitions for the macros that support FuncTrace.
@@ -32,11 +31,10 @@ Then, in the same file, add the configuration data for the trace messages. Start
 // USESUFFIX(FuncEntry, " Entry to %!FUNC!");
 // USESUFFIX(FuncExit, " Exit from %!FUNC!");
 // end_wpp
- 
+
 // Map the null flags used by Entry/Exit to a function called FuncTrace
 #define WPP__ENABLED() WPP_LEVEL_ENABLED(FuncTrace)
 #define WPP__LOGGER() WPP_LEVEL_LOGGER(FuncTrace)
- 
 ```
 
 In the source file, surround the function code with **FuncEntry()** and **FuncExit()** calls.
@@ -71,15 +69,15 @@ If you put configuration data in a header file, use the **-scan** parameter to d
 RUN_WPP=$(SOURCES) -km -scan:mytrace.h
 ```
 
-**Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
+**Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
 
- 
+
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
 
- 
+
+
 
 
 

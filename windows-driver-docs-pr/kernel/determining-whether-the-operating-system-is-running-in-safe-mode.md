@@ -48,11 +48,11 @@ The following table lists the modes for values of the **InitSafeBootMode** varia
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  \* The value 3 applies to Windows domain controllers only.
 
- 
+ 
 
 To use the **InitSafeBootMode** variable, you must declare it in your driver, as the following code example shows.
 
@@ -78,7 +78,7 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     **Note**   You must never return failure from the **DriverEntry** routine.
 
-     
+     
 
 -   **Filter drivers**
 
@@ -90,9 +90,9 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     For drivers other than function or filter drivers, check the value of **InitSafeBootMode** in the driver's **DriverEntry** routine. If the operating system is in Safe Mode, return a failure status.
 
- 
+ 
 
- 
+ 
 
 
 

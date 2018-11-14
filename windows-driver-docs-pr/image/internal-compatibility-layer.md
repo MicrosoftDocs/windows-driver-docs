@@ -26,9 +26,9 @@ There are several limitations of the compatibility layer:
 
 -   Only Windows Vista scanner drivers that implement flatbed and feeder as their base items (WIA\_CATEGORY\_FLATBED and WIA\_CATEGORY\_FEEDER) are translated for legacy WIA applications.
 
- 
+ 
 
- 
+ 
 
 
 

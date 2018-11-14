@@ -24,9 +24,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Logging\BreakOnErro
 
 To make the debugger start if errors or assertions occur, you should set the value of **BreakOnError** or **BreakOnAssertion** to 1 (TRUE) respectively. To make the debugger not start if errors or assertions occur, you should set the value of **BreakOnError** or **BreakOnAssertion** to 0 (FALSE) respectively.
 
- 
+ 
 
- 
+ 
 
 
 

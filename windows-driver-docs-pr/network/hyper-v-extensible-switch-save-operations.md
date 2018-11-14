@@ -36,11 +36,11 @@ During the save operation for run-time data, the protocol edge of the extensible
 
 **Note**  The protocol edge of the extensible switch will not interleave save operations for run-time data for the same NIC. The protocol edge will start a run-time data save operation for a NIC only after a previous save operation has completed on the same NIC. However, the protocol edge may start a save operation for a NIC while another save operation is in progress for another NIC. Because of this, we highly recommend that extensions perform save operations in a non-interleaved fashion. For example, extensions should not assume that a new save operation cannot start on another NIC before an ongoing save operation has completed for a different NIC.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

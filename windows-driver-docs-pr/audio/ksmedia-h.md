@@ -216,7 +216,7 @@ This section contains reference topics for the Ksmedia.h header.
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_FILTER_STATE</strong>](ksproperty-audio-filter-state.md)</p></td>
-<td align="left"><p>The KSPROPERTY_AUDIO_FILTER_STATE property is used to query a [GFX filter](https://msdn.microsoft.com/library/windows/hardware/ff536403) for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.</p></td>
+<td align="left"><p>The KSPROPERTY_AUDIO_FILTER_STATE property is used to query a GFX filter for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_LATENCY</strong>](ksproperty-audio-latency.md)</p></td>

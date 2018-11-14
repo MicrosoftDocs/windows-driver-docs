@@ -28,9 +28,9 @@ You need an NDIS miniport driver to transfer data that must flow over networks o
 
 For information about implementing miniport and transport drivers, see [*Miniport Drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-miniport-driver) and [TDI Transports and Their Clients](https://msdn.microsoft.com/library/windows/hardware/ff565587).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ This section discusses Winsock Kernel (WSK) programming considerations and inclu
 -   [Using TDI Transports](using-tdi-transports.md)
 -   [Using NMR for WSK Registration and Unregistration](using-nmr-for-wsk-registration-and-unregistration.md)
 
- 
+ 
 
- 
+ 
 
 
 

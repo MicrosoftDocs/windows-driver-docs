@@ -20,9 +20,9 @@ NDIS includes the following miscellaneous features and functions:
 -   [NDIS Objects](ndis-objects.md)
 -   [NDIS I/O Work Items](ndis-i-o-work-items.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ The kernel transaction manager (KTM) is the Windows kernel-mode component that i
 
 For information about how to use KTM in kernel-mode components, see [Kernel Transaction Manager](using-kernel-transaction-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

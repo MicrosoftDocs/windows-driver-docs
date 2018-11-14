@@ -17,9 +17,9 @@ NDIS Quality of Service (QoS) parameters are specified through the [**NDIS\_QOS\
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

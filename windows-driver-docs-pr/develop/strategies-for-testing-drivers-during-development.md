@@ -52,9 +52,9 @@ Use the following suggestions for testing your driver code and driver package.
 
 -   Test your driver and device for specific system and hardware conditions, particularly edge conditions. For example, these conditions might include "D3 hot" and "D3 cold." Make sure your driver and device can return correctly from device power state "D3 hot" (without losing power) and "D3 cold" (when power is removed from the device). For more information, see [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
- 
+ 
 
- 
+ 
 
 
 

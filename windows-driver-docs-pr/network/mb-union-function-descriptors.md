@@ -45,9 +45,9 @@ The device reports any compatible ID that it has for its function. USBCCGP then 
 
 MBIM functions that are backward compatible with the NCM 1.0 specification will come up as NCM 1.0 functions by default. Mobile broadband devices that consist of an MBIM backward-compatible function should report a Microsoft OS compatible ID of "MBIM" for the MBIM function. This allows Windows 8 to detect the NCM 1.0 function as the MBIM function and load MBCD as the function driver.
 
- 
+ 
 
- 
+ 
 
 
 

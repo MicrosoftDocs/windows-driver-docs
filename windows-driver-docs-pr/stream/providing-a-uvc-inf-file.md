@@ -142,7 +142,7 @@ You can also define an optional registry value called **UvcFlags**. **UvcFlags**
 </tbody>
 </table>
 
- 
+ 
 
 Include a line similar to the following example to specify the bitmask to be applied:
 

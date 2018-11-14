@@ -40,9 +40,9 @@ For the following callback functions, a Direct3D-supported display driver must s
 
 For more information about floating-point operations, see [Floating-Point Operations in Graphics Driver Functions](floating-point-operations-in-graphics-driver-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

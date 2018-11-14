@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The **!sel** extension command is obsolete. Use the [**dg (Display Selector)**](dg--display-selector-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

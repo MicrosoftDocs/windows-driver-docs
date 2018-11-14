@@ -34,9 +34,9 @@ Typically, SerCx2 accurately reports the number of bytes transferred by a read o
 
 In response to a read or write request to transfer zero bytes, SerCx2 completes the request with a STATUS\_SUCCESS status code but performs no operation.
 
- 
+ 
 
- 
+ 
 
 
 

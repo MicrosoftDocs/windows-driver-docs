@@ -49,7 +49,7 @@ Each of the multiple texture blending operations combines two inputs. These can 
 </tbody>
 </table>
 
- 
+ 
 
 For a description of **IDirect3DDevice7::SetTextureStageState**, see the Direct3D SDK documentation.
 
@@ -88,11 +88,11 @@ At each texture stage, any of the preceding four parameters can be set using the
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   Some implementations may not be able to simultaneously use both D3DTA\_TFACTOR and a D3DTA\_DIFFUSE color.
 
- 
+ 
 
 ### <span id="modifier_flags"></span><span id="MODIFIER_FLAGS"></span>Modifier Flags
 
@@ -121,7 +121,7 @@ The two values listed in the following table should be combined with one of the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="defaults"></span><span id="DEFAULTS"></span>Defaults
 
@@ -145,9 +145,9 @@ D3DTA\_CURRENT defaults to D3DTA\_DIFFUSE if this is the first stage except when
 
 D3DTA\_TEXTURE is a value for a D3DTSS\_COLORARG1 or D3DTSS\_ALPHAARG1 state of any stage, or defaults to 0x0 if no texture is bound to this stage.
 
- 
+ 
 
- 
+ 
 
 
 

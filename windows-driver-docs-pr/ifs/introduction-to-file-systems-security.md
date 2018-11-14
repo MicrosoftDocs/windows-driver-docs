@@ -21,9 +21,9 @@ This section focuses on Windows security and file systems. It is not intended to
 
 This section includes a number of code samples. The samples are extracted from real-world code, but are presented here in abbreviated form. Developers should adapt these samples for use in their particular environment.
 
- 
+ 
 
- 
+ 
 
 
 

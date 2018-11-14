@@ -28,9 +28,9 @@ This section includes:
 
 [GDL Miscellaneous Macros](gdl-miscellaneous-macros.md)
 
- 
+ 
 
- 
+ 
 
 
 

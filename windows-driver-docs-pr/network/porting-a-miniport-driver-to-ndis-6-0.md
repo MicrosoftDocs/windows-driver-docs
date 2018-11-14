@@ -53,9 +53,9 @@ This section also includes the following topics that describe porting a miniport
 
 [Porting Miniport Adapter Shutdown Operations to NDIS 6.0](porting-miniport-adapter-shutdown-operations-to-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

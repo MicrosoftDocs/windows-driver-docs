@@ -57,12 +57,12 @@ FileReparsePointInformation</td>
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]
 &gt;   The FileQuotaInformation information class is obsolete. [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md) should be used instead.
 
- 
+ 
 
 After performing the requested operation, the file system driver should complete the IRP.
 
@@ -124,7 +124,7 @@ The following flags can be set for IRP\_MN\_QUERY\_DIRECTORY.
 </tbody>
 </table>
 
- 
+ 
 
 The following flag can be set for IRP\_MN\_NOTIFY\_CHANGE\_DIRECTORY:
 
@@ -147,7 +147,7 @@ The following flag can be set for IRP\_MN\_NOTIFY\_CHANGE\_DIRECTORY:
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_DIRECTORY\_CONTROL.
@@ -184,44 +184,44 @@ Specifies one of the values described below.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileBothDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_BOTH_DIR_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540235) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540235" data-raw-source="[&lt;strong&gt;FILE_BOTH_DIR_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540235)"><strong>FILE_BOTH_DIR_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_DIRECTORY_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540248) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540248" data-raw-source="[&lt;strong&gt;FILE_DIRECTORY_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540248)"><strong>FILE_DIRECTORY_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFullDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FULL_DIR_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540289) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540289" data-raw-source="[&lt;strong&gt;FILE_FULL_DIR_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540289)"><strong>FILE_FULL_DIR_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileIdBothDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_ID_BOTH_DIR_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540303) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540303" data-raw-source="[&lt;strong&gt;FILE_ID_BOTH_DIR_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540303)"><strong>FILE_ID_BOTH_DIR_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileIdFullDirectoryInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_ID_FULL_DIR_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540310) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540310" data-raw-source="[&lt;strong&gt;FILE_ID_FULL_DIR_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540310)"><strong>FILE_ID_FULL_DIR_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileNamesInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_NAMES_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540329) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540329" data-raw-source="[&lt;strong&gt;FILE_NAMES_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540329)"><strong>FILE_NAMES_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileObjectIdInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_OBJECTID_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540335) structure for each file.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335" data-raw-source="[&lt;strong&gt;FILE_OBJECTID_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540335)"><strong>FILE_OBJECTID_INFORMATION</strong></a> structure for each file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileQuotaInformation</strong></p></td>
-<td align="left"><p>This information class is obsolete. [<strong>IRP_MJ_QUERY_QUOTA</strong>](irp-mj-query-quota.md) should be used instead.</p></td>
+<td align="left"><p>This information class is obsolete. <a href="irp-mj-query-quota.md" data-raw-source="[&lt;strong&gt;IRP_MJ_QUERY_QUOTA&lt;/strong&gt;](irp-mj-query-quota.md)"><strong>IRP_MJ_QUERY_QUOTA</strong></a> should be used instead.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileReparsePointInformation</strong></p></td>
-<td align="left"><p>Return a single [<strong>FILE_REPARSE_POINT_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540354) structure for the directory.</p></td>
+<td align="left"><p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff540354" data-raw-source="[&lt;strong&gt;FILE_REPARSE_POINT_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540354)"><strong>FILE_REPARSE_POINT_INFORMATION</strong></a> structure for the directory.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--parameters-querydirectory-filename"></a>*IrpSp-&gt;Parameters.QueryDirectory.FileName*  
 Optional name of a file within the specified directory.
@@ -262,9 +262,9 @@ Length in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
 
 [**ZwQueryDirectoryFile**](https://msdn.microsoft.com/library/windows/hardware/ff567047)
 
- 
+ 
 
- 
+ 
 
 
 

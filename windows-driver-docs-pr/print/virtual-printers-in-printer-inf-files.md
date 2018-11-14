@@ -20,9 +20,9 @@ To insert a null hardware ID in an INF file, add a second comma in the models se
 
 For more information about virtual printers in INF files, see **DriverCategory** in [Printer INF File Entries](printer-inf-file-entries.md).
 
- 
+ 
 
- 
+ 
 
 
 

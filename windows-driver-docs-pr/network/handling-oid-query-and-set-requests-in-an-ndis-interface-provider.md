@@ -26,9 +26,9 @@ The following topics describe how to handle query and set requests for interface
 
 [Handling an Interface Object Set Request](handling-an-interface-object-set-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

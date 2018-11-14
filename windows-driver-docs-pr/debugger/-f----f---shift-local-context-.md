@@ -47,7 +47,7 @@ The **.f+** command shifts the frame index to the next frame in the current stac
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +74,9 @@ You can set the local context to a different stack frame to view new local varia
 
 The debugger resets the local context to the scope of the program counter if any program execution occurs. The local context is reset to the top stack frame if the register context is changed.
 
- 
+ 
 
- 
+ 
 
 
 

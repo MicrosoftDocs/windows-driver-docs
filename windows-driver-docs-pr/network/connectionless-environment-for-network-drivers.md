@@ -30,9 +30,9 @@ The following figure shows the NDIS environment for connectionless network drive
 
 [NDIS Miniport Drivers](ndis-miniport-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

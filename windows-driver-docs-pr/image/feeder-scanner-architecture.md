@@ -23,9 +23,9 @@ The following topics describe examples of flatbed scanners that support document
 
 [Advanced Duplex-Capable Document Feeder](advanced-duplex-capable-document-feeder.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ An application builds a filter graph containing the encode filter. The minidrive
 
 While the hardware is encoding, another application places a decode filter in a filter graph. When the decode pins are connected, *before the pins change state into KSSTATE\_ACQUIRE*, the minidriver attempts to configure the hardware for decoding. This reconfiguration interferes with the currently active encode graph and may result in a driver instability.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_TEMPLATE\_CONNECTIONS to retrieve a list of connect
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

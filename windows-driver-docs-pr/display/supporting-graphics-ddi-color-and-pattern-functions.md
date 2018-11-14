@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 Graphics DDI color and pattern functions include [palette management](managing-palettes.md) and [brush realization](realizing-brushes.md) functions.
 
- 
+ 
 
- 
+ 
 
 
 

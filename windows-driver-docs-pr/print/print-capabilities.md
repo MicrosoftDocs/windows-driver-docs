@@ -31,9 +31,9 @@ This section covers the following aspects of Print Capabilities:
 
 [Print Capabilities Support in GDI-based, Monolithic Print Drivers](print-capabilities-support-in-gdi-based--monolithic-print-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

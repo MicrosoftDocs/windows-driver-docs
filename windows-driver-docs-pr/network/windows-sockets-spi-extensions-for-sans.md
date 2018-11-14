@@ -45,9 +45,9 @@ Transfers data from an RDMA buffer in the address space that a socket's remote p
 <a href="" id="wsprdmawrite"></a>[**WSPRdmaWrite**](https://msdn.microsoft.com/library/windows/hardware/ff566306)  
 Transfers data from a source buffer in the address space that a local socket can access to a target RDMA buffer in the address space that the socket's remote peer can access.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ Monitor the Performance Monitor counters. After the test has started, the counte
 
 User-mode memory leaks are always located in pageable pool and cause both the **Pool Paged Bytes** counter and the page file **Usage** counter to increase steadily over time. Kernel-mode memory leaks usually deplete nonpaged pool, causing the **Pool Nonpaged Bytes** counter to increase, although pageable memory can be affected as well. Occasionally these counters may show false positives because an application is caching data.
 
- 
+ 
 
- 
+ 
 
 
 

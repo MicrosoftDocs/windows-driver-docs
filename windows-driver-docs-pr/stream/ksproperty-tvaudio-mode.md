@@ -47,13 +47,13 @@ The KSPROPERTY\_TVAUDIO\_MODE property sets the audio mode for the device. This 
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TVAUDIO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565953)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565953" data-raw-source="[&lt;strong&gt;KSPROPERTY_TVAUDIO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565953)"><strong>KSPROPERTY_TVAUDIO_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG that specifies the current TV audio mode, such as stereo or mono audio and language settings.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_TVAUDIO\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565953)
 
- 
+ 
 
- 
+ 
 
 
 

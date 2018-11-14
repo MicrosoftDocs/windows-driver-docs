@@ -22,9 +22,9 @@ Macrovision is supported by the last device handling the video data before leavi
 
 If the decoder has an NTSC output, Macrovision encoding and Macrovision compliance is the responsibility of the decoder card. The [**KS\_COPY\_MACROVISION**](https://msdn.microsoft.com/library/windows/hardware/ff567316) property indicates the level of Macrovision encoding on the media (levels 0 to 3). The decoder may use this information to enable or disable Macrovision encoding on the NTSC output.
 
- 
+ 
 
- 
+ 
 
 
 

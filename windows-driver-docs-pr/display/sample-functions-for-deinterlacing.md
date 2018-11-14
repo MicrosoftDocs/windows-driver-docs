@@ -33,17 +33,17 @@ The sample deinterlacing functions in the following table are member functions o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceQueryAvailableModes</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563943)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563943" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563943)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
 <td align="left"><p>Queries for available deinterlacing and frame-rate conversion modes.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceQueryModeCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563946)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563946" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563946)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
 <td align="left"><p>Queries for the capabilities of a given deinterlacing and frame-rate conversion mode.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Deinterlace_Bob_Device_Class_Sample_Functions"></span><span id="deinterlace_bob_device_class_sample_functions"></span><span id="DEINTERLACE_BOB_DEVICE_CLASS_SAMPLE_FUNCTIONS"></span>Deinterlace Bob Device Class Sample Functions
 
@@ -62,29 +62,29 @@ The sample deinterlacing functions in the following table are member functions o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceOpenStream</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563935)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563935" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563935)"><strong>DeinterlaceOpenStream</strong></a></p></td>
 <td align="left"><p>Opens a video stream object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563924)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563924" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563924)"><strong>DeinterlaceBlt</strong></a></p></td>
 <td align="left"><p>Provides bit-block deinterlacing of video stream objects.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceBltEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563927)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563927" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563927)"><strong>DeinterlaceBltEx</strong></a></p></td>
 <td align="left"><p><strong>Windows Server 2003 SP1 and later and Windows XP SP2 and later only.</strong></p>
 <div>
- 
+ 
 </div>
 Deinterlaces video and composites video substreams over the top of the video stream.</td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceCloseStream</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563931)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563931" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563931)"><strong>DeinterlaceCloseStream</strong></a></p></td>
 <td align="left"><p>Closes a video stream object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Mapping_Sample_Functions_to_DD_MOTIONCOMPCALLBACKS"></span><span id="mapping_sample_functions_to_dd_motioncompcallbacks"></span><span id="MAPPING_SAMPLE_FUNCTIONS_TO_DD_MOTIONCOMPCALLBACKS"></span>Mapping Sample Functions to DD\_MOTIONCOMPCALLBACKS
 
@@ -103,37 +103,37 @@ The sample functions in this section map to the motion compensation callback fun
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceQueryAvailableModes</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563943)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563943" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563943)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceQueryModeCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563946)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563946" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563946)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceOpenStream</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563935)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563935" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563935)"><strong>DeinterlaceOpenStream</strong></a></p></td>
 <td align="left"><p><strong>CreateMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563924)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563924" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563924)"><strong>DeinterlaceBlt</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DeinterlaceBltEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563927)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563927" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563927)"><strong>DeinterlaceBltEx</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DeinterlaceCloseStream</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563931)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563931" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563931)"><strong>DeinterlaceCloseStream</strong></a></p></td>
 <td align="left"><p><strong>DestroyMoComp</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

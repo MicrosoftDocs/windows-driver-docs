@@ -39,9 +39,9 @@ For objects within the Contact Service, *pContent-&gt;ContainerFunctionalObjectI
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

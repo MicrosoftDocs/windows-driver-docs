@@ -66,9 +66,9 @@ The port driver also attempts to fill in the following members with values from 
 
     A miniport driver must set an entry for each SCSI bus supported by the HBA, as indicated by the value of **NumberOfBuses**.
 
- 
+ 
 
- 
+ 
 
 
 

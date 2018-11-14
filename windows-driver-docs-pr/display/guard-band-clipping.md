@@ -22,9 +22,9 @@ Guard band clipping is also beneficial for anti-aliasing hardware, because the f
 
 To do the correct clipping, the driver is passed the viewport information. This specifies the actual viewport that the application requires the geometry to be clipped to. Driver writers who do not want to implement guard band clipping can ignore this information. It is recommended that drivers do not use this data to implement clipping through scissors or masking operations because these are likely to be slower than letting Direct3D do the clipping.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ If the SRB\_FLAGS\_BYPASS\_FROZEN\_QUEUE flag is set in the **SrbFlags** member 
 
 Higher-level drivers can force SCSI Port to unfreeze its queue using a SRB\_FUNCTION\_RELEASE\_QUEUE release queue request. SRB\_FUNCTION\_FLUSH\_QUEUE also unfreezes the queue after canceling all of the queued requests.
 
- 
+ 
 
- 
+ 
 
 
 

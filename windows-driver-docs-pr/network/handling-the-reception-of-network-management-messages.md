@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 An offload target does not process Address Resolution Protocol (ARP), Internet Control Message Protocol (ICMP), or Routing Information Protocol (RIP) messages. Instead, an offload target forwards such messages to the host stack through the non-offload NDIS interface by calling the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function. The host stack processes such messages and, if necessary, updates state that has been offloaded to the offload target.
 
- 
+ 
 
- 
+ 
 
 
 

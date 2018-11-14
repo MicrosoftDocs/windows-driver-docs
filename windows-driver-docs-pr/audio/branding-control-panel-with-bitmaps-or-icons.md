@@ -65,7 +65,7 @@ The branding information is stored in the registry in a **Branding** subkey unde
 </tbody>
 </table>
 
- 
+ 
 
 These values are added to the registry by directives within the add-registry-section (see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320)) of the INF file that installs the device driver. Control Panel uses defaults for any values that are missing from the **Branding** subkey.
 
@@ -75,7 +75,7 @@ The proprietary device name that appears in the previously mentioned pages is th
 
 **Important**   In Windows Vista and later versions of Windows, the use of bitmap images for third-party branding is no longer supported. Third-party audio driver developers who want to brand their audio device controls must use icons. The supported pixel dimensions for these icons are 32x32 or 48x48.
 
- 
+ 
 
 ### <span id="Example_1"></span><span id="example_1"></span><span id="EXAMPLE_1"></span>Example 1
 
@@ -102,9 +102,9 @@ The following example applies to Windows Vista and later versions of Windows. Th
   HKR,Branding,icon,,"c:\mydir\myicon.ico"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

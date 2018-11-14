@@ -20,7 +20,7 @@ Finish-install actions for a device are processed in the same way by an *install
 
 **Note**  In Windows 8, Windows 8.1, and Windows 10, finish-install actions must be completed in the Action Center by an administrator (or a limited user that can provide administrator credentials to a UAC prompt). Users must click on "Finish installing device software".
 
- 
+ 
 
 Windows processes finish-install actions after all other installation operations have completed and the device has been started, including:
 
@@ -52,9 +52,9 @@ Windows completes the following steps to process an installer's finish-install a
 
 5.  After the installers have completed their finish-install actions, Windows runs the default finish-install action, as described in [Running the Default Finish-Install Action](running-the-default-finish-install-action.md).
 
- 
+ 
 
- 
+ 
 
 
 

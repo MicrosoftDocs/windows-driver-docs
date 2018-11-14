@@ -25,9 +25,9 @@ If a driver has created a request object by calling [**IWDFDevice::CreateRequest
 
 If your driver provides an [**IRequestCallbackRequestCompletion::OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905) callback function for a request object that it reuses, the driver must call [**IWDFIoRequest::SetCompletionCallback**](https://msdn.microsoft.com/library/windows/hardware/ff559153) after it calls [**Reuse**](https://msdn.microsoft.com/library/windows/hardware/ff559048).
 
- 
+ 
 
- 
+ 
 
 
 

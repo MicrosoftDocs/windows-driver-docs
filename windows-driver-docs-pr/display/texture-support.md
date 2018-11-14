@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 
 A texture in 3D space flips the same way as any other surface. A *texture* is just a flat image that has bits set to specify that it can be transformed (texture mapped) onto a 3D surface. A texture can be mapped onto a 3D surface and the motion can be rendered smoothly by page flipping the texture. Flip waits for the renderer to finish reading (like waiting for the scan line). If the flipping driver supports textures, it must be able to recognize and handle them appropriately. For more details on textures, see [Direct3D Texture Management](direct3d-texture-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ The KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED property request passes an end user�
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type BOOL, and it indicates whether an end-user allows the max volume to be over a certain limit. A value of TRUE indicates that an end-user has allowed the volume level to be over the posted limit, whereas FALSE indicates the opposite. In the case of a child account, the value will always be FALSE.
 
@@ -86,9 +86,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

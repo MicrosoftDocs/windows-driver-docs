@@ -44,7 +44,7 @@ Following are the currently defined ACE types.
 </tbody>
 </table>
 
- 
+ 
 
 A fourth ACE structure, SYSTEM\_ALARM\_ACE, is not currently supported.
 
@@ -77,9 +77,9 @@ Requirements: ntifs.h (include ntifs.h)
 
 [**SYSTEM\_AUDIT\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff556771)
 
- 
+ 
 
- 
+ 
 
 
 

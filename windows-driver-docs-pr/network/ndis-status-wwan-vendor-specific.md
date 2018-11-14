@@ -48,9 +48,9 @@ Requirements
 
 [OID\_WWAN\_VENDOR\_SPECIFIC](oid-wwan-vendor-specific.md)
 
- 
+ 
 
- 
+ 
 
 
 

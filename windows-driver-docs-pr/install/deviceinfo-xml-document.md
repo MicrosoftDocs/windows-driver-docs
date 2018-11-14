@@ -31,9 +31,9 @@ Each device metadata package must contain only one DeviceInfo XML document. The 
 
 The data in the DeviceInfo XML document is formatted based on the [DeviceInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff541135).
 
- 
+ 
 
- 
+ 
 
 
 

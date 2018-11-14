@@ -25,9 +25,9 @@ The display driver graphics DDI functions fall into three groups, each of which 
 
 3.  [Graphics DDI functions that are optional](optional-display-driver-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

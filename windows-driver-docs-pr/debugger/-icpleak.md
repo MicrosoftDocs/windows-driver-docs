@@ -48,7 +48,7 @@ If this flag is set, the display also includes all processes that have a handle 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +63,9 @@ This extension works only if the system maintains type lists. If the *HandleFlag
 
 You can stop at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

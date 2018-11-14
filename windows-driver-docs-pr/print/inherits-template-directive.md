@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The \***Inherits** directive defines a template that the current template will inherit from.
 
- 
+ 
 
- 
+ 
 
 
 

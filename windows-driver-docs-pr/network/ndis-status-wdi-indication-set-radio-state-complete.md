@@ -18,7 +18,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SET\_RADIO\_STATE\_COMPLETE 
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +54,9 @@ Requirements
 
 [OID\_WDI\_TASK\_SET\_RADIO\_STATE](oid-wdi-task-set-radio-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

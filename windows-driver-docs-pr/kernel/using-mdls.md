@@ -72,9 +72,9 @@ If the physical pages that are described by an MDL in the chain are locked, the 
 
 For a summary of the system routines that allocate, free, and manage MDLs, see [Address Mappings and MDLs](https://msdn.microsoft.com/library/windows/hardware/ff540568).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ The following sections describe the precedence that is placed on protection leve
 
 [Determining the Protection Level for a Physical Output](determining-the-protection-level-for-a-physical-output.md)
 
- 
+ 
 
- 
+ 
 
 
 

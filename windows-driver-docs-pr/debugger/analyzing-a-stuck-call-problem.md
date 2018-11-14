@@ -125,11 +125,11 @@ It is possible that the thread was making another RPC call. If necessary, you ca
 
 **Note**   This procedure shows how to find the server thread if you know the client thread. For an example of the reverse technique, see [Identifying the Caller From the Server Thread](identifying-the-caller-from-the-server-thread.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

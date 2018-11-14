@@ -82,7 +82,7 @@ Calling **GetVariable** for `MemoryOverwriteRequestControlLock` returns 0x0, 0x1
 
 **Note**  Setting `MemoryOverwriteRequestControlLock` does not commit to flash (just changes the internal lock state). Getting the variable returns the internal state and never exposes the key. The following figures detail the expected behavior.
 
- 
+ 
 
 Example usage by the operating system
 

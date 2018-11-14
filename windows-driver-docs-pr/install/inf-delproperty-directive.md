@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
 
@@ -99,9 +99,9 @@ DeviceModel
 
 [**AddProperty**](inf-addproperty-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

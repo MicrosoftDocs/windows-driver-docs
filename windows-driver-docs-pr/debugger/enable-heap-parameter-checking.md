@@ -41,15 +41,15 @@ The **Enable heap parameter checking** flag verifies selected aspects of the hea
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
 
 [Enable heap validation on call](enable-heap-validation-on-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

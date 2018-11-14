@@ -22,9 +22,9 @@ The following sections describe how a video capture minidriver implements variou
 
 [Detecting Tuner Standards](detecting-tuner-standards.md)
 
- 
+ 
 
- 
+ 
 
 
 

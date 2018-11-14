@@ -28,9 +28,9 @@ The framework adds a device object for each device loaded in the driver host pro
 
 After the driver uses [IWDFDeviceInitialize](https://msdn.microsoft.com/library/windows/hardware/ff556965) to initialize the device, the driver passes a pointer to **IWDFDeviceInitialize** in a call to the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create a [UMDF device object](framework-device-object.md) for the device. After the framework device object is created, the driver makes calls to the [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) method to create read and write I/O queues. In these **IWDFDevice::CreateIoQueue** calls, the driver must identify how it receives requests from the I/O queue. For more information, see [Configuring Dispatch Mode for an I/O Queue](configuring-dispatch-mode-for-an-i-o-queue.md).
 
- 
+ 
 
- 
+ 
 
 
 

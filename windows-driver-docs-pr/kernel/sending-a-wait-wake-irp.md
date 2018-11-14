@@ -28,9 +28,9 @@ A driver sends an **IRP\_MN\_WAIT\_WAKE** request for one of two reasons:
 
 Whether a device is prepared to wake itself or the system, the actions its drivers must take are the same. The primary difference lies in how the device and system hardware respond to the initial wake-up signal. Driver behavior is the same in either case.
 
- 
+ 
 
- 
+ 
 
 
 

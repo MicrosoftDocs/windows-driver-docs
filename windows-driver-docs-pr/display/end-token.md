@@ -24,9 +24,9 @@ Bits 0 through 31 indicate the end of the shader code. This value is 0x0000FFFF.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

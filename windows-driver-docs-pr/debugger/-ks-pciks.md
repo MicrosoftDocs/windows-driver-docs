@@ -69,7 +69,7 @@ Optional, and applicable only to flag combinations that cause data to be display
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +88,9 @@ kd> !pciks
     Functional Device 82a17690 [\Driver\smwdm]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

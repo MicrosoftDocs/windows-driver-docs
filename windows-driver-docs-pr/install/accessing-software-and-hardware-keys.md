@@ -17,9 +17,9 @@ This section provides guidelines that the components of a [driver package](drive
 
 [Modifying Registry Values in a Device's Software Key](modifying-registry-values-in-a-device-s-software-key-.md)
 
- 
+ 
 
- 
+ 
 
 
 

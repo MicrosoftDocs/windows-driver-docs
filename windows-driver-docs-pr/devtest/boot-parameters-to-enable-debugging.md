@@ -47,7 +47,7 @@ The **/debug** option has the following syntax:
 bcdedit /debug [{ID}] { on | off }
 ```
 
-The **{***ID***}** is the GUID associated with a boot entry. If an **{***ID***}** is not specified, the settings apply to the current boot entry. The following command enables kernel debugging for the current Windows operating system boot entry:
+The **{**<em>ID</em>**}** is the GUID associated with a boot entry. If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry. The following command enables kernel debugging for the current Windows operating system boot entry:
 
 ```
 bcdedit /debug on
@@ -83,7 +83,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the global debug settings to serial communications, use the following syntax:
 
-**bcdedit /dbgsettings serial** \[ **debugport:***port*\] \[ **baudrate:** *baud*\]
+**bcdedit /dbgsettings serial** \[ **debugport:**<em>port</em>\] \[ **baudrate:** *baud*\]
 
 The following example shows how to specify serial communications as the global debug setting.
 
@@ -93,13 +93,13 @@ bcdedit /dbgsettings serial debugport:1 baudrate:115200
 
 To set the debug settings to serial for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype serial**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype serial**
 
-**bcdedit /set** \[**{***ID***}**\] **debugport** *port*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugport** *port*
 
-**bcdedit /set** \[**{***ID***}**\] **baudrate** *baud*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **baudrate** *baud*
 
-If no **{***ID***}** is specified, the settings apply to the currently active boot entry.
+If no **{**<em>ID</em>**}** is specified, the settings apply to the currently active boot entry.
 
 The following example shows how to specify the serial debug settings for a specific boot entry. To enable the debug settings, you must reboot your computer and select that boot entry you have configured for debugging.
 
@@ -131,7 +131,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the debug settings for 1394 globally, use the following syntax:
 
-**bcdedit /dbgsettings 1394** \[ **channel:***channel* \]
+**bcdedit /dbgsettings 1394** \[ **channel:**<em>channel</em> \]
 
 The following example shows how to specify 1394 as the global debug setting.
 
@@ -141,11 +141,11 @@ bcdedit /dbgsettings 1394 channel:32
 
 To set the debug settings to 1394 for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype 1394**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype 1394**
 
-**bcdedit /set** \[**{***ID***}**\] **channel** *channel*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **channel** *channel*
 
-If an **{***ID***}** is not specified, the settings apply to the current boot entry.
+If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry.
 
 The following example shows how to specify the 1394 debug settings for a specific boot entry, and how to use the **/debug** option to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
@@ -173,7 +173,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the debug settings for USB globally, use the following syntax:
 
-**bcdedit /dbgsettings usb** \[**targetname:***name*\]
+**bcdedit /dbgsettings usb** \[**targetname:**<em>name</em>\]
 
 The following example shows how to specify USB as the global debug setting.
 
@@ -183,11 +183,11 @@ bcdedit /dbgsettings usb targetname:U1
 
 To set the debug settings to USB for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype usb**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype usb**
 
-**bcdedit /set** \[**{***ID***}**\] **targetname** *name*\]
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **targetname** *name*\]
 
-If no **{***ID***}** is specified, the settings apply to the current boot entry.
+If no **{**<em>ID</em>**}** is specified, the settings apply to the current boot entry.
 
 The following example shows how to specify the USB debug settings for a specific boot entry, and how to use the **/debug** command to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
@@ -215,9 +215,9 @@ You must also select a debugging connection (serial, 1394, or USB 2.0). This can
 
 For more details, see [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183).
 
- 
+ 
 
- 
+ 
 
 
 

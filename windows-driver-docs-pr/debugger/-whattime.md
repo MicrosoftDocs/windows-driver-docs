@@ -48,7 +48,7 @@ The number of ticks.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -60,9 +60,9 @@ kd> !whattime 29857ae4
 696613604 Ticks in Standard Time:  15:02:16.040s
 ```
 
- 
+ 
 
- 
+ 
 
 
 

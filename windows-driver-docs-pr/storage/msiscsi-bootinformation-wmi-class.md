@@ -15,9 +15,9 @@ This class is unpublished. For a description of the information that the MSiSCSI
 
 Miniport drivers that implement the MSiSCSI\_BootInformation WMI class must register the class using the physical device object (PDO) instance names.
 
- 
+ 
 
- 
+ 
 
 
 

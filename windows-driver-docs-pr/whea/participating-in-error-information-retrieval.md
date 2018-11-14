@@ -172,9 +172,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error information retrieval must specify the **PshedFAErrorInfoRetrieval** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

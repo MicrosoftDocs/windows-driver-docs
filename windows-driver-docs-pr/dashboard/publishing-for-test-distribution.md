@@ -2,6 +2,8 @@
 title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
 ms.assetid: 67E31BC1-6209-4264-B9F4-8CDFE8CE2E65
+author: EliotSeattle
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -66,7 +68,7 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
 
 **Note**  Your system will continue to receive all production drivers from Windows Update.
 
- 
+ 
 
 1.  Open the Windows Registry Editor (regedit.exe)
 2.  Go to HKLM\\Software\\Microsoft\\DriverFlighting\\Partner. If these keys do not exist then you are done, otherwise continue to the next step.
@@ -80,9 +82,9 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
     -   Run Windows Update and check for updates
     -   In Device Manager, right click on the target device, and select **Update Device Software**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,9 +59,9 @@ To deregister an interrupt, a miniport driver calls the [**NdisMDeregisterInterr
 
 For more information about registering interrupts, see [Registering and Deregistering Interrupts](registering-and-deregistering-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

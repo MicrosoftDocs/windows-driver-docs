@@ -57,9 +57,9 @@ Returns a feature report from a HID collection.
 
 A driver can request the return of a specific report. To retrieve a specific report using these I/O requests, the driver first allocates the output report buffer, then zero-initializes the buffer, and sets the first byte in the buffer to the specific report ID. For more information, see [Interpreting HID Reports](interpreting-hid-reports.md).
 
- 
+ 
 
- 
+ 
 
 
 

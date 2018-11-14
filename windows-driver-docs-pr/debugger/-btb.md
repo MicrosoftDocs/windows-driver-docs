@@ -25,7 +25,7 @@ The **!btb** extension displays the Itanium-based processor, branch traces buffe
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -46,13 +46,13 @@ The **!btb** extension displays the Itanium-based processor, branch traces buffe
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

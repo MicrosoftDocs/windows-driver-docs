@@ -72,9 +72,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all values supported for hole punch Pattern.
 
- 
+ 
 
- 
+ 
 
 
 

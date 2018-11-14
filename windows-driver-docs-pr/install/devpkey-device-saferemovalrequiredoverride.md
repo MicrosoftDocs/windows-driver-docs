@@ -32,7 +32,7 @@ The DEVPKEY_Device_SafeRemovalRequiredOverride device property represents the sa
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_BOOLEAN</strong>](devprop-type-boolean.md)</p></td>
+<td align="left"><p><a href="devprop-type-boolean.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_BOOLEAN&lt;/strong&gt;](devprop-type-boolean.md)"><strong>DEVPROP_TYPE_BOOLEAN</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_Device_SafeRemovalRequiredOverride device property represents the sa
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,7 +56,7 @@ This device property can be used to override the result of the heuristic that Wi
 
     **Note**  A device instance is considered removable if its removable device capability is set. For more information, see [Overview of the Removable Device Capability](https://msdn.microsoft.com/library/windows/hardware/ff549564).
 
-     
+     
 
 -   If the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE and the device instance (or an ancestor) is not removable, PnP sets the DEVPKEY_Device_SafeRemovalRequired to DEVPROP_FALSE and does not use the heuristic.
 
@@ -91,9 +91,9 @@ Requirements
 
 [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163)
 
- 
+ 
 
- 
+ 
 
 
 

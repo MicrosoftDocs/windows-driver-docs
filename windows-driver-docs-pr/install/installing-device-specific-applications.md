@@ -35,9 +35,9 @@ If your distribution medium includes device-specific applications, you can use t
 
     If the user inserts the distribution medium before plugging in the device, this is referred to as a [software-first installation](software-first-installation.md). The medium's AutoRun-invoked device installation application should determine whether the device-specific applications have already been installed and if they have not, it should install them by using Windows Installer. For more information, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

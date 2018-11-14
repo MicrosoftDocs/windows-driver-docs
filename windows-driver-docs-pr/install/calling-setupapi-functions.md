@@ -41,7 +41,7 @@ Class installers and co-installers must not call the following [SetupAPI](setupa
 
     **Note**  Class installers and co-installers are prohibited from calling **SetupScanFileQueue** only when the SPQ_SCAN_PRUNE_COPY_QUEUE flag is set in the *Flags* parameter.
 
-     
+     
 
 ### <a href="" id="calling-the-default-dif-code-handler-functions"></a>Rules for calling the default DIF code handler functions
 
@@ -65,11 +65,11 @@ The following table lists the DIF codes that have default DIF code handler funct
 | [**DIF_SELECTDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543723)                    | [**SetupDiSelectDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552115)                             |
 | [**DIF_UNREMOVE**](https://msdn.microsoft.com/library/windows/hardware/ff543728)                            | [**SetupDiUnremoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552193)                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

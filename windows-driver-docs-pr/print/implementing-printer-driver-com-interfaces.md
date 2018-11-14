@@ -28,9 +28,9 @@ This section explains how to construct a plug-in, based on WDK-supplied sample c
 
 [Accessing Printer Driver Interfaces from Plug-Ins](accessing-printer-driver-interfaces-from-plug-ins.md)
 
- 
+ 
 
- 
+ 
 
 
 

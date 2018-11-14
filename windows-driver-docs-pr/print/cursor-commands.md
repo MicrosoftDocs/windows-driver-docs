@@ -120,13 +120,13 @@ The [printer commands](printer-commands.md) in the following table control curso
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

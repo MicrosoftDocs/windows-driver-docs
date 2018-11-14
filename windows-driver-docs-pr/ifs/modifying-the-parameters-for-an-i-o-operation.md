@@ -34,9 +34,9 @@ Although any parameter changes that a minifilter driver's preoperation callback 
 
 For more information about the parameters for an I/O operation, see [**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620) and [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638).
 
- 
+ 
 
- 
+ 
 
 
 

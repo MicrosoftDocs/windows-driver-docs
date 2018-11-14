@@ -33,7 +33,7 @@ Parameter one indicates which validity check failed.
 | 3         | The low 32 bits of the feature mask.                                            |
 | 4         | The high 32 bits of the feature mask.                                           |
 
- 
+ 
 
 | Parameter | Description                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ Parameter one indicates which validity check failed.
 | 3         | Reserved                                                                                       |
 | 4         | Reserved                                                                                       |
 
- 
+ 
 
 | Parameter | Description                                                     |
 |-----------|-----------------------------------------------------------------|
@@ -51,7 +51,7 @@ Parameter one indicates which validity check failed.
 | 3         | The current level.                                              |
 | 4         | Reserved                                                        |
 
- 
+ 
 
 | Parameter | Description                                               |
 |-----------|-----------------------------------------------------------|
@@ -60,7 +60,7 @@ Parameter one indicates which validity check failed.
 | 3         | The current thread.                                       |
 | 4         | Reserved                                                  |
 
- 
+ 
 
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
@@ -69,11 +69,11 @@ Parameter one indicates which validity check failed.
 | 3         | The current level.                                   |
 | 4         | Reserved                                             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

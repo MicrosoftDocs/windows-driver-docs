@@ -17,9 +17,9 @@ New vendor bus drivers should comply with the following guidelines for reporting
 
 3.  If the child devices of the bus do not belong to an existing [device setup class](device-setup-classes.md), [install a new device setup class for the child devices of the bus](installing-a-new-device-setup-class-for-a-bus.md).
 
- 
+ 
 
- 
+ 
 
 
 

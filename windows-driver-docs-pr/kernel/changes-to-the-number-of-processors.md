@@ -37,23 +37,23 @@ To retrieve the current number of active processors in the hardware partition, d
 
 **Note**  If a device driver allocates data structures for each active processor in the hardware partition and the device driver would fail if the memory allocation for the data structures for a new processor failed, the device driver can allocate enough of these data structures during driver initialization to handle the maximum number of processors that the operating system supports. In this situation, the device driver would not have to allocate new data structures when you add new processors to the hardware partition. However, unless the size of these data structures is fairly small, this can be an inefficient use of memory resources. A device driver can query the maximum number of processors that the operating system supports by calling the [**KeQueryMaximumProcessorCount**](https://msdn.microsoft.com/library/windows/hardware/ff553042) function.
 
- 
+ 
 
 **Important**  Device drivers should always update any saved value of the number of active processors and the processor affinity when it is notified that you added a processor to the hardware partition.
 
- 
+ 
 
 **Important**  A device driver should not count the number of set bits in the processor affinity value to determine the number of active processors in the hardware partition. We recommended that device drivers call the **KeQueryActiveProcessorCount** function for this purpose. This function returns both the number of active processors and the associated processor affinity value.
 
- 
+ 
 
 **Important**  Device drivers that are built for Windows Vista, Windows Server 2008 and later versions of Windows must not use the [**KeNumberProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff552975) kernel variable to determine the number of active processors in the hardware partition. The **KeNumberProcessors** kernel variable is obsolete in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

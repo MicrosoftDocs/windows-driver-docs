@@ -33,9 +33,9 @@ When a transfer operation is complete, the miniport driver must call [**ScsiPort
 
 See [**ScsiPortIoMapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff564649) and [**ScsiPortFlushDma**](https://msdn.microsoft.com/library/windows/hardware/ff564618) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

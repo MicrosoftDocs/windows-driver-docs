@@ -33,7 +33,7 @@ If a PD client does not understand how to process a packet or receives a control
 
 **Important**  There can be one PD provider and one PD client per net adapter. Therefore, there can be multiple PD clients and PD providers on a single system.
 
- 
+ 
 
 The PD client has control over the resources that are allocated to PD in the system. In cases of high network traffic, the PD client is responsible for minimizing its workload so that the OS can be responsive to other workloads.
 
@@ -52,9 +52,9 @@ The PDCI allows first-party Windows services/applications (e.g., Load-balancer, 
 
 [PacketDirect Provider Interface (PDPI) Reference](https://msdn.microsoft.com/library/windows/hardware/dn931858)
 
- 
+ 
 
- 
+ 
 
 
 

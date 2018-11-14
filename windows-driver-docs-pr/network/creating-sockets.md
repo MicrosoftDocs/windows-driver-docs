@@ -150,9 +150,9 @@ NTSTATUS
 
 For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create, bind, and connect a socket in a single function call.
 
- 
+ 
 
- 
+ 
 
 
 

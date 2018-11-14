@@ -46,9 +46,9 @@ Next, the PnP manager determines which additional drivers (function drivers and 
 
 For more information about the power-up sequence for KMDF function or filter drivers, [Power-Up Sequence for a Function or Filter Driver](power-up-sequence-for-a-function-or-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

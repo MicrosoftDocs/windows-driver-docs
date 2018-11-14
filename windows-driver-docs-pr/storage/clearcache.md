@@ -13,9 +13,9 @@ The **ClearCache** method instructs the initiator HBA to clear the iSCSI authent
 
 **ClearCache** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **ClearCache** method, see the member descriptions for the [**ClearCache\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff552447) structure.
 
- 
+ 
 
- 
+ 
 
 
 

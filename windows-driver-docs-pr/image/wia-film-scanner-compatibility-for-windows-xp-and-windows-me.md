@@ -19,13 +19,13 @@ You can provide rudimentary support for Windows XP WIA applications that run Win
 
 **Note**   If your scanner also supports flatbed scanning, the WIA flatbed scanner item must be the first WIA child item in the scanner item tree.
 
- 
+ 
 
 For more information about Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

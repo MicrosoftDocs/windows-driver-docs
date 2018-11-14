@@ -176,9 +176,9 @@ The preceding code example does the following:
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SpbRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) method to prepare the framework request object to be used again.
 
- 
+ 
 
- 
+ 
 
 
 

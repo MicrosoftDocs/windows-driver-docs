@@ -46,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFBack</strong>](adfback.md)</p></td>
+<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFFront</strong>](adffront.md)</p></td>
+<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ADFSupportsDuplex</strong>](adfsupportsduplex.md)</p></td>
+<td><p><a href="adfsupportsduplex.md" data-raw-source="[&lt;strong&gt;ADFSupportsDuplex&lt;/strong&gt;](adfsupportsduplex.md)"><strong>ADFSupportsDuplex</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerConfiguration</strong>](scannerconfiguration.md)</p></td>
+<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,9 +92,9 @@ If the scan device has an ADF, the WSD Scan Service must provide configuration i
 
 [**ScannerConfiguration**](scannerconfiguration.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ The following sections provide implementation details for miniport drivers of de
 
 [Setting Copy Protection Hardware](setting-copy-protection-hardware.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 -   [Power Policy Ownership in UMDF](power-policy-ownership-in-umdf.md)
 -   [PnP and Power Management Scenarios in UMDF](pnp-and-power-management-scenarios-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ This section includes the following topics:
 
 [Power Management (NDIS 6.0 and NDIS 6.1)](power-management--ndis-6-0-and-ndis-6-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

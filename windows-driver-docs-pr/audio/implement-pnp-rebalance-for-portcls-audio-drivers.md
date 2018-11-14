@@ -67,25 +67,25 @@ The following [IAdapterPnpManagement](https://msdn.microsoft.com/library/windows
 
     **Note**  Portcls acquires the device global lock before making this call, thus the miniport must execute this call as fast as possible.
 
-     
+     
 
 -   [**IAdapterPnpManagement::PnpQueryStop**](https://msdn.microsoft.com/library/windows/hardware/mt604853) is invoked by portcls just before succeeding the QueryStop IRP. This is just a notification and the call doesn’t return a value.
 
     **Note**  Portcls acquires the device global lock before making this call, thus the miniport must execute this call as fast as possible. While a Stop is pending, Portcls will block (hold) any new create requests.
 
-     
+     
 
 -   [**IAdapterPnpManagement::PnpCancelStop**](https://msdn.microsoft.com/library/windows/hardware/mt604852) is invoked by portcls while processing the CanceStop IRP. This is just a notification. It is possible for the miniport to receive PnpCancelStop even without previously receiving a PnpQueryStop notification. The miniport should be written to accommodate this behavior. For example, this is the case when the QueryStop logic fails the IRP before Portcls has an opportunity to forward this notification to the miniport. In this scenario PnP manager still invokes a PnP Cancel Stop.
 
     **Note**  Portcls acquires the device global lock before making this call, thus the miniport must execute this call as fast as possible. While a Stop is pending, Portcls will block (hold) any new create requests. PortCls restarts any pended create requests when a pending Stop is cancelled.
 
-     
+     
 
 -   [**IAdapterPnpManagement::PnpStop**](https://msdn.microsoft.com/library/windows/hardware/mt604854) is invoked by Portcls after stopping all Ioctl operations and moving active streams from \[run|pause|acquire\] state to the \[stop\] state. This call is not made while holding the device global lock. Thus the miniport has an opportunity to wait for its async operations (work-items, dpc, async threads) and unregister its audio subdevices. Before returning from this call the miniport must ensure that all the h/w resources have been released.
 
     **Note**  The miniport must not wait for the current miniport/stream objects to be deleted since it is unclear when existing audio clients will release the current handles. The PnpStop thread cannot block forever without crashing the system, i.e., this is a PnP/Power thread.
 
-     
+     
 
 ## <span id="_IMiniportPnpNotify"></span><span id="_iminiportpnpnotify"></span><span id="_IMINIPORTPNPNOTIFY"></span> IMiniportPnpNotify
 
@@ -98,11 +98,11 @@ IMiniportPnpNotify interface available is on both WaveRT and Topology.
 
 **Note**  Because Portcls acquires the device global lock before making this call, the miniport must execute this call as fast as possible. The miniport must not wait on other activity while processing this call to prevent deadlock when other threads/work-items are waiting for the device global lock. If needed, the miniport can wait in the [**IAdapterPnpManagement::PnpStop**](https://msdn.microsoft.com/library/windows/hardware/mt604854) call.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

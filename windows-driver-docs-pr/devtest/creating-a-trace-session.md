@@ -57,9 +57,9 @@ TraceView requires a [PDB symbol file](pdb-symbol-files.md), a [trace message fo
 
 When you use the TraceView window to create a trace session, the trace session runs only as long as the window remains open. You cannot close the window and leave the session running. To start a trace session that runs independently of the TraceView window, use the [TraceView command-line interface](traceview-command-line-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

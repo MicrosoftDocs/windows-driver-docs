@@ -66,7 +66,7 @@ Displays system version information.
 </tbody>
 </table>
 
- 
+ 
 
 The **!findxmldata** extension works only on a kernel-mode Small Memory Dump file that is stored in a CAB file.
 
@@ -129,9 +129,9 @@ Node DEVICE
         DRIVER         : msmpu401.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

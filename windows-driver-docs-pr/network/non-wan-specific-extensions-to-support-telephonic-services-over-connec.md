@@ -36,9 +36,9 @@ The NDIS/TAPI translation OIDs are as follows:
 
     This OID requests a call manager or MCM to prepare one or more NDIS SAPs from TAPI call parameters that are supplied by the client. The client typically uses an NDIS SAP returned by the call manager or MCM as an input (formatted as a [**CO\_SAP**](https://msdn.microsoft.com/library/windows/hardware/ff545392) structure) to [**NdisClRegisterSap**](https://msdn.microsoft.com/library/windows/hardware/ff561648), with which the client registers a SAP on which to receive incoming calls.
 
- 
+ 
 
- 
+ 
 
 
 

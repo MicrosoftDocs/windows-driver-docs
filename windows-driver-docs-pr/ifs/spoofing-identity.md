@@ -26,9 +26,9 @@ A driver that attempts to perform its own security checks must be particularly v
 
 In general, drivers are best designed and implemented if they take advantage of the existing security mechanisms within the operating system, rather than constructing their own. This minimizes the number of potential locations where the implementation may contain errors.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,13 +39,13 @@ The following table defines the format and requirements of the **LocationPath** 
 <td align="left"><p>Valid &quot;<em>LocationPath</em>&quot; value</p></td>
 <td align="left"><p>Optional (* or a valid location path must be present to indicate the scope of the removable device capability override)</p></td>
 <td align="left"><p>None</p></td>
-<td align="left"><p>[LocationPaths](locationpaths-registry-subkey.md) or [ChildLocationPaths](childlocationpaths-registry-subkey.md)</p></td>
+<td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a> or <a href="childlocationpaths-registry-subkey.md" data-raw-source="[ChildLocationPaths](childlocationpaths-registry-subkey.md)">ChildLocationPaths</a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Either the **LocationPath** or [\*](--registry-subkey.md) registry subkeys must be present to indicate the scope of the removable device capability override.
 
@@ -74,7 +74,7 @@ The **LocationPath** subkey must contain a **Removable** DWORD value that specif
 </tbody>
 </table>
 
- 
+ 
 
 The location path string for a given devnode can be displayed through Device Manager through the following steps:
 
@@ -86,7 +86,7 @@ The location path string for a given devnode can be displayed through Device Man
 
 **Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/ff546564) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
 
- 
+ 
 
 The **LocationPaths** registry subkey is intended to be used for overriding the removable device capability of devices that are hardwired to a fixed bus location. This typically occurs in portable computers, and includes the following devices:
 
@@ -104,9 +104,9 @@ For example, a laptop may have an internal USB hub with both internal and extern
 
 To discover the location paths value for a device that is connected to an external USB port, you can plug any device into the port and observe its location paths property. Any other USB devices that are plugged into the same port should receive the same location paths value, because the parent bus and how it internally identifies a port never changes.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ Data Type:BIDI\_INT
 
 Description:The amount of memory, in kilobytes (KB), available to the Postscript interpreter in the device. This amount should be less than the amount of physical memory installed.
 
- 
+ 
 
- 
+ 
 
 
 

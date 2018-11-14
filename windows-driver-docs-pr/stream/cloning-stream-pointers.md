@@ -32,9 +32,9 @@ Clones exist until you delete them by calling [**KsStreamPointerDelete**](https:
 
 See [AVStream DMA Services](avstream-dma-services.md) for an example of how to use stream pointer clones.
 
- 
+ 
 
- 
+ 
 
 
 

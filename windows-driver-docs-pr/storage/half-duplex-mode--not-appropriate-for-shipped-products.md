@@ -14,9 +14,9 @@ Half-duplex mode is intended for use only during the initial porting of a minipo
 
 If you continue to ship a half-duplex miniport, you risk compatibility issues with future revisions of Storport.
 
- 
+ 
 
- 
+ 
 
 
 

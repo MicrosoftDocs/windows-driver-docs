@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScanTicket</strong>](scanticket.md)</p></td>
+<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +80,7 @@ This operation might also return the following error code:
     | \[Reason\]     | Multiple elements in the DocumentParameters element have MustHonor set to true, but applying all settings set to true causes a conflict in the scanner device. |
     | \[Detail\]     | None                                                                                                                                                           |
 
-     
+     
 
 Examples
 --------

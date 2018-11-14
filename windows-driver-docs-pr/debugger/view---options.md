@@ -67,9 +67,9 @@ In the **Colors** menu, you can change the colors of the following items:
 
 These color changes take effect when you click **OK**. To discard these changes, click **Cancel**.
 
- 
+ 
 
- 
+ 
 
 
 

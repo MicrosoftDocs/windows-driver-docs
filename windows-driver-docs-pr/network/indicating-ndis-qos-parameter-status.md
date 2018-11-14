@@ -21,9 +21,9 @@ A miniport driver that supports NDIS Quality of Service (QoS) for the IEEE 802.1
 
 For more information about operational and remote NDIS QoS parameters, see [Overview of NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

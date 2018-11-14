@@ -124,9 +124,9 @@ Each I/O queue's [*EvtIoDefault*](https://msdn.microsoft.com/library/windows/har
 
 Optionally, the driver can call [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401) to create additional queues for each device. Then the driver can call [**WdfRequestForwardToIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff549958) to requeue some types of requests to the additional queues. When the framework delivers requests from an additional queue, the driver can call [**WdfIoQueueStop**](https://msdn.microsoft.com/library/windows/hardware/ff548482), if necessary, on that queue instead of the default queue, thereby minimizing the number or type of requests for which delivery is postponed.
 
- 
+ 
 
- 
+ 
 
 
 

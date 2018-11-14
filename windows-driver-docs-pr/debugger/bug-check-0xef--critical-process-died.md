@@ -59,7 +59,7 @@ A developer can also create a service and set its recovery option to Restart the
 </tbody>
 </table>
 
- 
+ 
 
 Resolution
 ----------
@@ -121,9 +121,9 @@ If you are not able to work with the debugger, these general troubleshooting tip
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
- 
+ 
 
- 
+ 
 
 
 

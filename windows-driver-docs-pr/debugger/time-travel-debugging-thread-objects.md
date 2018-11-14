@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 *TTD Thread* objects are used to give information about threads and their lifetime during a time travel trace.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | UniqueId | A unique ID for the thread across the trace. |
@@ -18,6 +19,7 @@ ms.localizationpriority: medium
 
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | LifeTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the lifetime of the thread. |

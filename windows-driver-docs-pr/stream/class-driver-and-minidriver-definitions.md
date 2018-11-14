@@ -28,9 +28,9 @@ The interactions between class driver and minidriver include:
 
 -   Only one device object is created per adapter. Multiple subdevices (called *streams*) supported by the adapter are represented by WDM Streaming pins.
 
- 
+ 
 
- 
+ 
 
 
 

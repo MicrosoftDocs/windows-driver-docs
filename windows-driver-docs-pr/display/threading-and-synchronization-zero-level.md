@@ -16,14 +16,14 @@ The Windows Display Driver Model (WDDM) permits the following calls into the dis
 
 **Note**   Although two or more threads can be running in the driver at the same time, no two threads can belong to a single process.
 
- 
+ 
 
 -   [*DxgkDdiCloseAllocation*](https://msdn.microsoft.com/library/windows/hardware/ff559592)
 
 -   [*DxgkDdiCollectDbgInfo*](https://msdn.microsoft.com/library/windows/hardware/ff559595)
     **Note**  [*DxgkDdiCollectDbgInfo*](https://msdn.microsoft.com/library/windows/hardware/ff559595) should collect debug information for various failures and can be called at any time and at high IRQL (that is, the IRQL that *DxgkDdiCollectDbgInfo* runs at is generally undefined). In any case, *DxgkDdiCollectDbgInfo* must verify availability of the required debug information and proper synchronization. However, if the **Reason** member of the [**DXGKARG\_COLLECTDBGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff557545) structure that the *pCollectDbgInfo* parameter of *DxgkDdiCollectDbgInfo* points to is set to [VIDEO\_TDR\_TIMEOUT\_DETECTED](https://msdn.microsoft.com/library/windows/hardware/hh994433) or [VIDEO\_ENGINE\_TIMEOUT\_DETECTED](https://msdn.microsoft.com/library/windows/hardware/hh994433), the driver must ensure that *DxgkDdiCollectDbgInfo* is pageable, runs at IRQL = **PASSIVE\_LEVEL**, and supports synchronization zero level.
 
-     
+     
 
 -   [*DxgkDdiControlEtwLogging*](https://msdn.microsoft.com/library/windows/hardware/ff559599)
 
@@ -79,9 +79,9 @@ The Windows Display Driver Model (WDDM) permits the following calls into the dis
 
 -   [*DxgkDdiResetDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559808)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentDescription</strong>](documentdescription.md)</p></td>
+<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobToken</strong>](jobtoken.md)</p></td>
+<td><p><a href="jobtoken.md" data-raw-source="[&lt;strong&gt;JobToken&lt;/strong&gt;](jobtoken.md)"><strong>JobToken</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +82,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The specified JobId was not found. |
     | \[Detail\]     | JobId: Incorrect JobId             |
 
-     
+     
 
 -   **ClientErrorNoImagesAvailable**The scanner does not have any more images available for the client to retrieve.
 
@@ -93,7 +93,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The server has no images available to acquire. |
     | \[Detail\]     | None                                           |
 
-     
+     
 
 -   **ClientErrorInvalidJobToken**The supplied JobToken value is not valid for the specified scan JobId.
 
@@ -104,7 +104,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The JobToken parameter value is not valid with the JobId parameter. |
     | \[Detail\]     | None                                                                |
 
-     
+     
 
 -   **ClientErrorJobCancelled**
 
@@ -115,7 +115,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The current scan job has been canceled. |
     | \[Detail\]     | None                                    |
 
-     
+     
 
 Examples
 --------
@@ -161,9 +161,9 @@ The following code example shows a client request to retrieve image data for the
 
 [**RetrieveImageResponse**](retrieveimageresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

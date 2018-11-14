@@ -38,9 +38,9 @@ windbg -remote npipe:server=BOXB,pipe=NearPipe
 
 The third machine is then used to control the debugging, while the second machine is where the actual processing is done and the symbols are accessed.
 
- 
+ 
 
- 
+ 
 
 
 

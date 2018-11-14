@@ -43,9 +43,9 @@ The `KSPROPSETID_RTAudio` property set contains the following properties:
 
 [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

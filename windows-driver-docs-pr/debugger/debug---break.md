@@ -54,9 +54,9 @@ You can disable the SYSRQ key by editing the registry. In the HKEY\_LOCAL\_MACHI
 
 The corresponding key in KD and CDB is [**CTRL+C**](ctrl-c--break-.md). For more information about other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

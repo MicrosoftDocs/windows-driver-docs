@@ -36,9 +36,9 @@ Once a printer port monitor running on a clustered node of a machine running Win
 
 When a failover from one cluster node to another occurs, the spooler must wait for all current printing jobs to complete or fail. If a pending print job is held up in a port monitor for longer than the spooler resource time-out, the spooler may come back online in an incomplete state, with printers temporarily missing. This may affect users who have connections to those missing printers.
 
- 
+ 
 
- 
+ 
 
 
 

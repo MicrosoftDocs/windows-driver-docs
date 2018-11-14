@@ -48,7 +48,7 @@ Specifies the address of the **IWDFDevice** interface for which to display infor
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,9 +77,9 @@ Queue: 1 (!wudfqueue 0x000f3500)
       IQueueCallbackWrite 0x000f3440
 ```
 
- 
+ 
 
- 
+ 
 
 
 

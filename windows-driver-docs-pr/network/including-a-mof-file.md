@@ -31,9 +31,9 @@ NdisMofResource MOFDATA filename.bmf
 
 *FileName* represents the file name of the MOF source file.
 
- 
+ 
 
- 
+ 
 
 
 

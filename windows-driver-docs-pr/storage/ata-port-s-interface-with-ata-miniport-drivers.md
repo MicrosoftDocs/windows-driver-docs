@@ -62,8 +62,8 @@ The following diagram shows a configuration in which the vendor-supplied minipor
 
 An ATA miniport driver that implements the channel interface exposes controller and channel management routines to the controller driver (*Pciidex.sys*). For performance reasons, *Pciidex.sys* passes the channel management entry points to the ATA port driver, and the ATA port driver calls the ATA miniport driver's channel management routines directly without the mediation of *Pciidex.sys*. The *Pciidex.sys* driver calls the ATA miniport driver's controller routines.
 
- 
+ 
 
- 
+ 
 
 

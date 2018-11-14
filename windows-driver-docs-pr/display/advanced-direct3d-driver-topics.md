@@ -34,9 +34,9 @@ The topics described in this section are:
 
 [Hardware Transform and Lighting](hardware-transform-and-lighting.md)
 
- 
+ 
 
- 
+ 
 
 
 

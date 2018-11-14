@@ -17,9 +17,9 @@ This section describes the actions that you can perform in the Defect Viewer. It
 
 [Changing the Text Size in the Defect Viewer](changing-the-text-size-in-the-defect-viewer.md)
 
- 
+ 
 
- 
+ 
 
 
 

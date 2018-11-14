@@ -18,7 +18,7 @@ OID\_WDI\_SET\_RECEIVE\_COALESCING is used by the host to add a packet filter fo
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 When the host receives a request from the OS to set packet coalescing filters, it uses this command to add a packet filter for packet coalescing. To clear a packet filter for packet coalescing, see [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](oid-wdi-set-clear-receive-coalescing.md).
 
@@ -29,7 +29,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
 | [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](https://msdn.microsoft.com/library/windows/hardware/dn898061) |                                |          | The packet coalescing parameters to be set. |
 
- 
+ 
 
 ## Set property results
 
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](oid-wdi-set-clear-receive-coalescing.md)
 
- 
+ 
 
- 
+ 
 
 
 

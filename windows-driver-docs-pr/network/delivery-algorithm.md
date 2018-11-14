@@ -32,9 +32,9 @@ To increase performance, the offload target can complete all filled receive requ
 
 After starting the delivery algorithm, the offload target must complete the algorithm.
 
- 
+ 
 
- 
+ 
 
 
 

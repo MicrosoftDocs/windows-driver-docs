@@ -36,9 +36,9 @@ This section includes:
 
 [GDL Exercise Notes](gdl-exercise-notes.md)
 
- 
+ 
 
- 
+ 
 
 
 

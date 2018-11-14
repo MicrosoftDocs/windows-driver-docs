@@ -48,9 +48,9 @@ The following enumerations were introduced in Windows 7 and earlier operating s
 
 [**KSPROPERTY\_JACK**](ksproperty-jack.md). Used by miniport drivers to specify the attributes of an audio endpoint jack.
 
- 
+ 
 
- 
+ 
 
 
 

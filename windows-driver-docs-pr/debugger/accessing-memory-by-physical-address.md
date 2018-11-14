@@ -26,9 +26,9 @@ To search physical memory for a piece of data or a range of data, use the [**!se
 
 Also, for more information about physical addresses, see [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md).
 
- 
+ 
 
- 
+ 
 
 
 

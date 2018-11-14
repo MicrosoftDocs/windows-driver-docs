@@ -18,9 +18,9 @@ The following illustration shows the order of the calls to IPrintOemPrintTicketP
 
 ![convertdevmodetoprintticket calling sequence](images/ptpcdm2pt-uml.gif)
 
- 
+ 
 
- 
+ 
 
 
 

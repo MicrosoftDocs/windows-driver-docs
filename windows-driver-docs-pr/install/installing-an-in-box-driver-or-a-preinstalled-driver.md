@@ -19,9 +19,9 @@ For more information about how driver packages are located during a [hardware-fi
 
 For information about how Windows selects the driver that has the best match to a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

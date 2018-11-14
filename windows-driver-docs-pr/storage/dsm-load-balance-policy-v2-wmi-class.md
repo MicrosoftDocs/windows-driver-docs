@@ -16,7 +16,7 @@ class DSM_Load_Balance_Policy_V2
 {
 
     //
-    // Version information for futher changes.
+    // Version information for further changes.
     //
     [WmiDataId(1),
      read,
@@ -80,9 +80,9 @@ class DSM_Load_Balance_Policy_V2
 
 When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_Load\_Balance\_Policy\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff552698) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

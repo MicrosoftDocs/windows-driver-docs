@@ -18,9 +18,9 @@ This section contains the following topics:
 
 [Identifying the Input Source for a Scan Event](identifying-the-input-source-for-a-scan-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

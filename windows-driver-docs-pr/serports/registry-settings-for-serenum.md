@@ -66,13 +66,13 @@ Each time the system builds a serial port device stack, Serenum sets the *enumer
 </tbody>
 </table>
 
- 
+ 
 
 For example, if a serial port's **SkipEnumerations** entry value is set to three when the system builds a port device stack, Serenum will skip the first three **BusRelations** requests it receives for the port. Serenum will subsequently enumerate the port in a normal manner as long as the port remains enabled.
 
- 
+ 
 
- 
+ 
 
 
 

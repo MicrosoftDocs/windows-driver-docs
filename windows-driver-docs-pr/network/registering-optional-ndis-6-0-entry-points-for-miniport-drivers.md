@@ -19,9 +19,9 @@ NDIS calls the [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows
 
 For more information about optional services, see [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

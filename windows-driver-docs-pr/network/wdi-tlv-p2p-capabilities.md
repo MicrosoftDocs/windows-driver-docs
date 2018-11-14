@@ -138,7 +138,7 @@ Specifies if the adapter, when given a set of service name instances, can perfor
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -164,9 +164,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

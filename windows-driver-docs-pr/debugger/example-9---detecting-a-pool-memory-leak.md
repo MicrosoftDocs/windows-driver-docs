@@ -21,7 +21,7 @@ PoolMon monitors the bytes in the paged and nonpaged memory pools and sorts them
 **Note**   Pool tagging is permanently enabled in Windows Server 2003 and later versions of Windows. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed, and commands to enable or disable pool tagging fail.
 If pool tagging is not enabled, PoolMon fails and displays the following message: "Query pooltags Failed c0000002."
 
- 
+ 
 
 **To detect a pool memory leak**
 
@@ -67,15 +67,15 @@ If pool tagging is not enabled, PoolMon fails and displays the following message
 
 **Note**   Use the append symbol (**&gt;&gt;**) to redirect the PoolMon output to a log file. Later, you can examine the log file for pool size trends. For example:
 
- 
+ 
 
 ```console
 poolmon.exe /b >> poolmon.log 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

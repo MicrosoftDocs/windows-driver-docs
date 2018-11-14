@@ -30,9 +30,9 @@ Keep the following points in mind when designing a kernel-mode driver:
 
 For more information about the device objects a specific driver must create, see the device-type-specific documentation in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

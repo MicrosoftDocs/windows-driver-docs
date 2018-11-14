@@ -21,9 +21,9 @@ The runtime masks these capability bits off before reporting capabilities to the
 
 Correct support for these capabilities is part of Microsoft Windows Hardware Quality Labs (WHQL) testing.
 
- 
+ 
 
- 
+ 
 
 
 

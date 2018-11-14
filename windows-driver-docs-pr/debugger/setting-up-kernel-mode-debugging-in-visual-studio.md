@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 
 # <span id="debugger.setting_up_kernel-mode_debugging_in_visual_studio"></span>Setting Up Kernel-Mode Debugging in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
 
 You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of Windows. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
- 
+ 
 
 As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md).
 
@@ -40,9 +40,9 @@ Kernel-mode debugging typically requires two computers. The debugger runs on the
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

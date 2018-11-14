@@ -33,9 +33,9 @@ To complete the support for this interface, the print driver must support the re
 
 [ValidatePrintTicket](validateprintticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

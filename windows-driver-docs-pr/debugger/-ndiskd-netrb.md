@@ -49,7 +49,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_RING\_BUFFER object with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NET\_RING\_BUFFER, follow these steps:
 
@@ -140,9 +140,9 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
 
 [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
 
- 
+ 
 
- 
+ 
 
 
 

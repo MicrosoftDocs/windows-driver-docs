@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_STREAMALLOCATOR\_INTERNAL\_FREEFRAME** event is used only internally in the default allocator implementation and other implementations. This event is used to service waiters that have pending allocation IRPs and should not be enabled by clients.
 
- 
+ 
 
- 
+ 
 
 
 

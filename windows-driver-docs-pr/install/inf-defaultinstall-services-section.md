@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DefaultInstall.Services** section contains one or more [**AddService**](inf-addservice-directive.md) directives referencing additional INF-writer-defined sections in an INF file. This section is equivalent to the [**INF *DDInstall*.Services**](inf-ddinstall-services-section.md) section, and is used in association with an [**INF DefaultInstall**](inf-defaultinstall-section.md) section.
 
@@ -42,25 +42,25 @@ AddService=ServiceName,[flags],service-install-section
 ## Entries
 
 
-<a href="" id="addservice-servicename--flags--service-install-section"></a>**AddService=***ServiceName***,**\[*flags*\]**,***service-install-section*  
+<a href="" id="addservice-servicename--flags--service-install-section"></a>**AddService=**<em>ServiceName</em>**,**\[*flags*\]**,**<em>service-install-section</em>  
 
-<a href="" id="-----------------------------------------------------------------------------------------event-log-install-section---eventlogtype---eventname------"></a>                                                   \[**,***event-log-install-section*\[**,**\[*EventLogType*\]\[**,**EventName\]\]\]...  
+<a href="" id="-----------------------------------------------------------------------------------------event-log-install-section---eventlogtype---eventname------"></a>                                                   \[**,**<em>event-log-install-section</em>\[**,**\[*EventLogType*\]\[<strong>,</strong>EventName\]\]\]...  
 This directive references an INF-writer-defined *service-install-section* and, possibly, an *event-log-install-section* elsewhere in the INF file for the drivers of the devices covered by this [**DefaultInstall**](inf-defaultinstall-section.md) section.
 
 For more information, see [**INF AddService Directive**](inf-addservice-directive.md).
 
-<a href="" id="delservice-servicename---flags----eventlogtype---eventname------"></a>**DelService=***ServiceName*\[**,**\[*flags*\]\[**,**\[*EventLogType*\]\[**,***EventName*\]\]\]...  
+<a href="" id="delservice-servicename---flags----eventlogtype---eventname------"></a>**DelService=**<em>ServiceName</em>\[**,**\[*flags*\]\[**,**\[*EventLogType*\]\[**,**<em>EventName</em>\]\]\]...  
 This directive removes a previously installed service from the target computer. This directive is very rarely used.
 
 For more information, see [**INF DelService Directive**](inf-delservice-directive.md).
 
-<a href="" id="include-filename-inf--filename2-inf----"></a>**Include=***filename***.inf**\[**,***filename2***.inf**\]...  
+<a href="" id="include-filename-inf--filename2-inf----"></a>**Include=**<em>filename</em>**.inf**\[**,**<em>filename2</em>**.inf**\]...  
 This optional entry specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, usually so is a **Needs** entry.
 
 For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
-<a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=***inf-section-name*\[**,***inf-section-name*\]...  
-This optional entry specifies the particular named section that must be processed during the installation of this device. Typically, such a named section is a *DDInstall***.Services** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a *DDInstall***.Services** section.
+<a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=**<em>inf-section-name</em>\[**,**<em>inf-section-name</em>\]...  
+This optional entry specifies the particular named section that must be processed during the installation of this device. Typically, such a named section is a <em>DDInstall</em>**.Services** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a <em>DDInstall</em>**.Services** section.
 
 **Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 
@@ -71,7 +71,7 @@ The [**AddService**](inf-addservice-directive.md) directive controls how and whe
 
 **Note**  INF files use the **DefaultInstall.Services** section only if they also use an [**INF DefaultInstall**](inf-defaultinstall-section.md) section. Otherwise, they use [**INF *DDInstall*.Services**](inf-ddinstall-services-section.md) sections together with [**INF *DDInstall***](inf-ddinstall-section.md) sections.
 
- 
+ 
 
 **DefaultInstall.Services** sections should have the same platform and operating system decorations as their related **DefaultInstall** sections. For example, a **DefaultInstall.ntx86** section would have a corresponding **DefaultInstall.ntx86.Services** section. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
@@ -87,9 +87,9 @@ See the examples provided for the [**INF *DDInstall*.Services**](inf-ddinstall-s
 
 [**DefaultInstall**](inf-defaultinstall-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

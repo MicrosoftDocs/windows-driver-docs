@@ -52,9 +52,9 @@ Requirements
 
 [**NDIS\_INTERRUPT\_MODERATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565793)
 
- 
+ 
 
- 
+ 
 
 
 

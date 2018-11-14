@@ -54,7 +54,7 @@ Specifies the number of the processor to debug.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Now the second processor in the computer that is being debugged.
 
 [Multiprocessor Syntax](multiprocessor-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

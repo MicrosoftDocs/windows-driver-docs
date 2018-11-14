@@ -35,11 +35,11 @@ A device metadata package is copied to the device metadata store in one of the f
 
 **Note**   We do not recommend that end-users copy device metadata packages to the device metadata store. Instead, end-users should install device metadata packages by using either the [Windows Metadata and Internet Services (WMIS)](installing-device-metadata-packages-from-wmis.md) or an application provided by the OEM.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

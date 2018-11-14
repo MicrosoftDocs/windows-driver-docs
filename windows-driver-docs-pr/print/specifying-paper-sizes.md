@@ -34,9 +34,9 @@ User-defined paper sizes (also called customized paper sizes) are defined by sys
 
 For information about how to use the system locale to specify a default paper size, see [Referencing Locales](referencing-locales.md).
 
- 
+ 
 
- 
+ 
 
 
 

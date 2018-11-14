@@ -138,9 +138,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**SetRenderTargets(D3D11)**](https://msdn.microsoft.com/library/windows/hardware/ff569554)
 
- 
+ 
 
- 
+ 
 
 
 

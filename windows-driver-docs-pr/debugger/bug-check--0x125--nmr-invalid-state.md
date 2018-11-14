@@ -83,11 +83,11 @@ Parameter 2 - Address of the WHEA_ERROR_RECORD structure.</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

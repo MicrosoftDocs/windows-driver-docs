@@ -26,9 +26,9 @@ If you have not previously performed any searches, use the **Edit | Find Next** 
 
 For more information about other ways of finding text in debugging information windows, see [Moving Through a Window](moving-through-a-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

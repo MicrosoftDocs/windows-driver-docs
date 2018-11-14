@@ -29,7 +29,7 @@ The *automatic aliases* and *user-named aliases* can have any name. The automati
 
 **Note**   if a user-named alias is given the same name as an automatic alias, the user-named alias will hide the automatic alias so that when retrieving the value of the alias by name, the user-named alias will be used.
 
- 
+ 
 
 ### <span id="engine_options"></span><span id="ENGINE_OPTIONS"></span>Engine Options
 
@@ -43,13 +43,13 @@ To request a break into the debugger, or to interrupt the debugger's current tas
 
 **Note**   When undertaking a long task from a debugger extension, it is recommended that the extension check **GetInterrupt** regularly and stop processing if an interrupt has been requested.
 
- 
+ 
 
 When requesting a break into the debugger, the engine might time out if it takes too long for the target to carry out the break-in. This can occur if the target is in a non-responsive state or if the break-in request is blocked or delayed by resource contention. The length of time the engine will wait is returned by [**GetInterruptTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff546955) and can be set using [**SetInterruptTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff556725).
 
- 
+ 
 
- 
+ 
 
 
 

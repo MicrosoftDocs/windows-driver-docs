@@ -21,8 +21,6 @@ BinPlace uses the following syntax at the command line:
 
 ```
     binplace [Options] File [ [Options] [@PlaceFile] File [...] ]
-
-   
 ```
 
 ## <span id="ddk_binplace_command_line_syntax_tools"></span><span id="DDK_BINPLACE_COMMAND_LINE_SYNTAX_TOOLS"></span>Parameters
@@ -71,9 +69,9 @@ Specifies a subdirectory of the root destination directory to be used. When the 
 <span id="-p_PlaceFile"></span><span id="-p_placefile"></span><span id="-P_PLACEFILE"></span>**-p** *PlaceFile*  
 Specifies the path and file name of the place file. If the **-p** switch is not used, BinPlace uses a place named *\\tools\\placefil.txt*. See [**Place File Syntax**](place-file-syntax.md) for an explanation of a place file's contents.
 
-**Note**  The **-p** switch and place files are now obsolete and should not be used.
+**Note**  The **-p** switch and place files are now obsolete and should not be used.
 
- 
+
 
 <span id="-q"></span><span id="-Q"></span>**-q**  
 Prevents BinPlace from using a log file. If the **-q** switch is omitted, the file specified by the BINPLACE\_LOG environment variable is used as the log file.
@@ -105,7 +103,7 @@ Prevents BinPlace from using any class subdirectories. The destination directory
 <span id="-z"></span><span id="-Z"></span>**-z**  
 Cancels the **-x** switch. This can be useful if you are using BinPlace on several targets -- you can use a command of the form **binplace** *argumentsTarget1argumentsTarget2*, and since the command line is parsed from left to right, *Target1* and *Target2* will be affected by different arguments. (See the Parsing Order section following). If a **-z** switch is encountered, this cancels the effect of any previous **-x** switch.
 
-<span id="-ci_ReturnCode_Application_Argument_Argument__..._"></span><span id="-ci_returncode_application_argument_argument__..._"></span><span id="-CI_RETURNCODE_APPLICATION_ARGUMENT_ARGUMENT__..._"></span>**-ci** *ReturnCode***,***Application***,***Argument***,***Argument***,** ...   
+<span id="-ci_ReturnCode_Application_Argument_Argument__..._"></span><span id="-ci_returncode_application_argument_argument__..._"></span><span id="-CI_RETURNCODE_APPLICATION_ARGUMENT_ARGUMENT__..._"></span>**-ci** <em>ReturnCode</em>**,**<em>Application</em>**,**<em>Argument</em>**,**<em>Argument</em>**,** ...   
 Causes BinPlace to use a custom application to validate all executable files. You can use the **-ci** switch if you want BinPlace to use some other application to do its validation.
 
 *ReturnCode* should be the value that will be returned by this application if it finds an error in an executable file. The additional parameters are used to launch this application. These must all be separated by commas. *Application* specifies the name of the program. This can be followed by any number of command-line arguments. The program will be started with a command line that includes *Application* followed by all the arguments (separated by spaces rather than commas), and finally ending with the name of the executable file to be checked.
@@ -134,7 +132,7 @@ Causes BinPlace to replace the string "asms" with the string "retail" if it occu
 <span id="_______File______"></span><span id="_______file______"></span><span id="_______FILE______"></span> *File*   
 Specifies the full path and file name of a file that BinPlace will act on. You can list any number of files, separated by spaces. If a path and file name contains a space, you must enclose the path and file name in quotation marks.
 
-<span id="________PlaceFile______"></span><span id="________placefile______"></span><span id="________PLACEFILE______"></span> **@***PlaceFile*   
+<span id="________PlaceFile______"></span><span id="________placefile______"></span><span id="________PLACEFILE______"></span> **@**<em>PlaceFile</em>   
 If any file name is preceded by an at sign ( **@** ), the file name represents the name of a place file. For more information, see the Supplying Parameters in a File section following.
 
 ### <span id="parsing_order"></span><span id="PARSING_ORDER"></span>Parsing Order
@@ -149,9 +147,9 @@ It is possible to pass parameters to BinPlace from a text file. There are two wa
 
 -   You can specify a file name on the BinPlace command line by prefixing it with an at sign ( **@** ). When BinPlace sees a string beginning with this sign on its command line, it will take the string, remove the at sign, and then look for a file with this name. If it finds this file, it will insert its text into the command line at exactly the place where the original parameter beginning with the at sign had been. Because BinPlace parses parameters from left to right, you can use this technique along with multiple instances of *File* to use BinPlace on several files with different options for each, without having to type all the options each time. (If this file is not found, BinPlace will treat the original string, including the at sign, as a *File* parameter.)
 
- 
 
- 
+
+
 
 
 

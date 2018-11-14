@@ -46,7 +46,7 @@ If the PDB file that you specify does not include the required tracing elements,
 
 If you use TraceView to open a PDB file on a computer running Windows Server 2003, TraceView automatically exits.
 
- 
+ 
 
 
 

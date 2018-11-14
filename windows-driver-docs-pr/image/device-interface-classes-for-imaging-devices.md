@@ -14,9 +14,9 @@ This section includes the following topic:
 
 [**GUID\_DEVINTERFACE\_IMAGE Device Interface Class**](guid-devinterface-image-device-interface-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

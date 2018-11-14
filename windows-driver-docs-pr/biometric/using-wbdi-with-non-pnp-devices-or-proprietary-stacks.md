@@ -26,9 +26,9 @@ There are two primary methods to use a legacy driver stack with WBDI:
 
 Creating a filter to manage WBDI PDOs is the simpler of the two solutions, and this is the method recommended by Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

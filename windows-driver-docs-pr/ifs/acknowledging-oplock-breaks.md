@@ -40,9 +40,9 @@ To send an acknowledgment when no acknowledgment is expected is an error and the
 
 Closing the handle of the file for which the oplock break is requested will implicitly acknowledge the break. In the case of an oplock break for a sharing violation, the oplock holder can close the file handle, which acknowledges the oplock break, and prevent a sharing violation for the other user of the file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ The **Enable heap tail checking** flag checks for buffer overruns when the heap 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +51,9 @@ This flag adds a short pattern to the end of each allocation. The Windows heap m
 
 [Enable heap free checking](enable-heap-free-checking.md), [Enable heap parameter checking](enable-heap-parameter-checking.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ The STORAGE\_DEVICE\_ABNORMALITY\_DETECTED bug check has a value of 0x00000140. 
 
 None
 
- 
+ 
 
- 
+ 
 
 
 

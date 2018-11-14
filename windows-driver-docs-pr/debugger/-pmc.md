@@ -27,7 +27,7 @@ This extension is supported only on an Itanium-based target computer.
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -42,11 +42,11 @@ Displays the register as a generic PMC register.
 Displays the register as a branch trace buffer (BTB) PMC register.
 
 <span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
-Specifies the hexadecimal address of a PMC. The expressions **@kpfcgen** and **@kpfcbtb** can be used as values for this parameter.
+Specifies the hexadecimal address of a PMC. The expressions <strong>@kpfcgen</strong> and <strong>@kpfcbtb</strong> can be used as values for this parameter.
 
-If *Expression* is **@kpfcgen**, the debugger displays the current processor PMC register as a generic PMC register. You can also display the current processor PMC register as a generic PMC register by setting *Option* to **gen** and using **@kpfc4**, **@kpfc5**, **@kpfc6**, or **@kpfc7** for the *Expression* value.
+If *Expression* is <strong>@kpfcgen</strong>, the debugger displays the current processor PMC register as a generic PMC register. You can also display the current processor PMC register as a generic PMC register by setting *Option* to **gen** and using <strong>@kpfc4</strong>, <strong>@kpfc5</strong>, <strong>@kpfc6</strong>, or <strong>@kpfc7</strong> for the *Expression* value.
 
-If *Expression* is **@kpfcbtb**, the debugger displays the current processor PMC register as a BTB PMC register. You can also display the current processor PMC register as a BTB PMC register by setting *Option* to **btb** and using @kpfc12 for the *Expression* value.
+If *Expression* is <strong>@kpfcbtb</strong>, the debugger displays the current processor PMC register as a BTB PMC register. You can also display the current processor PMC register as a BTB PMC register by setting *Option* to **btb** and using @kpfc12 for the *Expression* value.
 
 <span id="_______DisplayLevel______"></span><span id="_______displaylevel______"></span><span id="_______DISPLAYLEVEL______"></span> *DisplayLevel*   
 Can be any one of the following values:
@@ -79,11 +79,11 @@ Displays detailed information about all PMC register fields, including those tha
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

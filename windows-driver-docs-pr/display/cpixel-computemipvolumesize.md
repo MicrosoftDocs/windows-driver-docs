@@ -25,11 +25,11 @@ Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeMipVolumeSize(
-   UINT      cpWidth,
-   UINT      cpHeight,
-   UINT      cpDepth,
-   UINT      cLevels,
-   D3DFORMAT Format
+   UINT      cpWidth,
+   UINT      cpHeight,
+   UINT      cpDepth,
+   UINT      cLevels,
+   D3DFORMAT Format
 );
 ```
 
@@ -81,9 +81,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

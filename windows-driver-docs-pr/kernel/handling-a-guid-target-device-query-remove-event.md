@@ -32,9 +32,9 @@ When successfully handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE event, a notifi
 
 Closing a handle to a device does not cancel a driver's registration for PnP target device change notification. The PnP manager can still call the driver's notification callback routine, but in such calls the file object in the *NotificationStructure* is not valid.
 
- 
+ 
 
- 
+ 
 
 
 

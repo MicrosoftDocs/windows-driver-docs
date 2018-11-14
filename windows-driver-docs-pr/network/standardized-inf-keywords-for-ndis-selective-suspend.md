@@ -27,7 +27,7 @@ The INF file for the miniport driver that supports NDIS selective suspend must s
 
 **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
- 
+ 
 
 The **\*SelectiveSuspend** INF keyword is an enumeration keyword. The following table describes the possible INF entries for the **\*SelectiveSuspend** INF keyword. The columns in this table describe the following attributes for an enumeration keyword:
 
@@ -39,7 +39,7 @@ The display text that is associated with SubkeyName.
 
 **Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
 
- 
+ 
 
 <a href="" id="value"></a>Value  
 The enumeration integer value that is associated with each SubkeyName in the list.
@@ -78,7 +78,7 @@ The display text that is associated with each value that appears in the **Advanc
 </tbody>
 </table>
 
- 
+ 
 
 The miniport driver must check the **\*SelectiveSuspend** keyword value in the registry before it advertises its support for NDIS selective suspend. If the **\*SelectiveSuspend** keyword has a value of zero, the miniport must not advertise support for any selective suspend capabilities. For more information, see [Reporting NDIS Selective Suspend Capabilities](reporting-ndis-selective-suspend-capabilities.md).
 
@@ -91,7 +91,7 @@ After the driver is installed, administrators can update the **\*SSIdleTimeout**
 
 **Note**   The miniport driver is automatically restarted after a change is made in the advanced property page for the adapter.
 
- 
+ 
 
 The **\*SSIdleTimeout** INF keyword is a numeric (**Int**) keyword. The following table describes the possible INF entries for the **\*SSIdleTimeout** INF keyword. The columns in the table describe the following attributes for an **Int** keyword:
 
@@ -103,7 +103,7 @@ The display text that is associated with SubkeyName.
 
 **Note**  The independent hardware vendor (IHV) can define any descriptive text for the SubkeyName.
 
- 
+ 
 
 <a href="" id="default-value"></a>Default value  
 The default value for the integer.
@@ -142,11 +142,11 @@ The maximum value that is allowed for an integer.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  NDIS reads the value of the **\*SSIdleTimeout** standardized INF keyword for every instance of the network adapter whose driver supports NDIS selective suspend. Miniport drivers should not read this keyword.
 
- 
+ 
 
 NDIS measures the idle time-out by using timers that are precise to within 30 percent of the **\*SSIdleTimeout** value. For example, if the **\*SSIdleTimeout** value is 10, the adapter is suspended between 10 to 13 seconds after NDIS first detects the adapter is idle.
 
@@ -221,7 +221,7 @@ The maximum value that is allowed for an integer.
 NDIS measures the idle time-out by using timers that are precise to within 30 percent of the **\*SSIdleTimeoutScreenOff** value. For example, if the **\*SSIdleTimeoutScreenOff** value is 5, the adapter is suspended between 5 to 6.5 seconds after NDIS first detects the adapter is idle.
 
 
- 
+ 
 
 
 

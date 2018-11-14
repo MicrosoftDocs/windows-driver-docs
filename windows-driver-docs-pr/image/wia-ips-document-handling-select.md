@@ -53,7 +53,7 @@ The following table describes a constant that is valid with Windows Vista and la
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows Vista and Windows XP.
 
@@ -92,7 +92,7 @@ The following table describes the constants that are valid with Windows Vista an
 </tbody>
 </table>
 
- 
+ 
 
 The values DUPLEX and FRONT\_ONLY are mutually exclusive--set one or the other, but not both.
 
@@ -135,7 +135,7 @@ The following table describes the constants that are valid with Windows XP but a
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -162,9 +162,9 @@ Requirements
 
 [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](wia-dps-document-handling-select.md)
 
- 
+ 
 
- 
+ 
 
 
 

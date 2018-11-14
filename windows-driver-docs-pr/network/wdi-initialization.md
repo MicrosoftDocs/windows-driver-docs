@@ -17,9 +17,9 @@ This topic describes the initialization of the Wi-Fi device after power-on. On p
 2.  Once the adapter is initialized, the host queries the adapter for various Wi-Fi properties, set properties, and creates ports (MACs) as part of miniport initialization.
 3.  After the ports are created and initialized, the adapter can receive task and property commands.
 
- 
+ 
 
- 
+ 
 
 
 

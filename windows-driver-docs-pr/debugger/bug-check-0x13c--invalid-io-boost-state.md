@@ -31,11 +31,11 @@ The INVALID\_IO\_BOOST\_STATE bug check has a value of 0x0000013C. This indicate
 | 3         | Reserved                                                |
 | 4         | Reserved                                                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

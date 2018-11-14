@@ -21,9 +21,9 @@ When it handles this OID request, the PF miniport driver must follow these guide
 
 -   The reset operation must only affect the specified VF. The operation must not affect other VFs or the PF on the same network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

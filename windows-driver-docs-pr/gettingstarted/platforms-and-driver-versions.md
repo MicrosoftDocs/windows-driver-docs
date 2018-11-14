@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 When you create a driver project, you specify the minimum target operating system, which is the minimum version of Windows that your driver will run on. For example, you could specify that Windows 7 is the minimum target operating system. In that case, your driver would run on Windows 7 and later versions of Windows.
 
-**Note**  If you develop a driver for a particular minimum version of Windows and you want your driver to work on later versions of Windows, you must not use any undocumented functions, and you must not use documented functions in any way other than how it is described in the documentation. Otherwise your driver might fail to run on the later versions of Windows. Even if you have been careful to use only documented functions, you should test your driver on the new version of Windows each time one is released.
+**Note**  If you develop a driver for a particular minimum version of Windows and you want your driver to work on later versions of Windows, you must not use any undocumented functions, and you must not use documented functions in any way other than how it is described in the documentation. Otherwise your driver might fail to run on the later versions of Windows. Even if you have been careful to use only documented functions, you should test your driver on the new version of Windows each time one is released.
 
- 
+
 
 ## <span id="Writing_a_multiversion_driver_using_only_common_features"></span><span id="writing_a_multiversion_driver_using_only_common_features"></span><span id="WRITING_A_MULTIVERSION_DRIVER_USING_ONLY_COMMON_FEATURES"></span>Writing a multiversion driver using only common features
 
@@ -31,7 +31,7 @@ While this process is simple, it might restrict the driver to use only a subset 
 ## <span id="Writing_a_multiversion_driver_that_uses_version-dependent_features"></span><span id="writing_a_multiversion_driver_that_uses_version-dependent_features"></span><span id="WRITING_A_MULTIVERSION_DRIVER_THAT_USES_VERSION-DEPENDENT_FEATURES"></span>Writing a multiversion driver that uses version-dependent features
 
 
-A kernel-mode driver can dynamically determine which version of Windows it is running on and choose to use features that are available in that version. For example, a driver that must support all versions of Windows, starting with Windows 7, can determine, at run time, the version of Windows that it is running on. If the driver is running on Windows 7, it must use only the DDI functions that Windows 7 supports. However, the same driver can use additional DDI functions that are unique to Windows 8, for example, when its run-time check determines that it is running on Windows 8.
+A kernel-mode driver can dynamically determine which version of Windows it is running on and choose to use features that are available in that version. For example, a driver that must support all versions of Windows, starting with Windows 7, can determine, at run time, the version of Windows that it is running on. If the driver is running on Windows 7, it must use only the DDI functions that Windows 7 supports. However, the same driver can use additional DDI functions that are unique to Windows 8, for example, when its run-time check determines that it is running on Windows 8.
 
 ### <span id="determining_the_windows_version"></span><span id="DETERMINING_THE_WINDOWS_VERSION"></span>Determining the Windows version
 
@@ -59,9 +59,9 @@ Note that [**RtlIsServicePackVersionInstalled**](https://msdn.microsoft.com/libr
 
 After a driver determines that a specific operating system version is available on the computer, the driver can use the [**MmGetSystemRoutineAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554563) function to dynamically locate the routine and call it through a pointer. This function is available in Windows 7 and later operating system versions.
 
-**Note**  To help preserve type checking and prevent unintentional errors, you should create a typedef that mirrors the original function type.
+**Note**  To help preserve type checking and prevent unintentional errors, you should create a typedef that mirrors the original function type.
 
- 
+
 
 ### <span id="example__determining_the_windows_version_and_conditionally_calling_a_v"></span><span id="EXAMPLE__DETERMINING_THE_WINDOWS_VERSION_AND_CONDITIONALLY_CALLING_A_V"></span>Example: Determining the Windows version and conditionally calling a version-dependent function
 
@@ -76,25 +76,24 @@ This code example, which is from a driver's header file, defines the PAISQSL typ
  typedef (* PAISQSL) (KeAcquireInStackQueuedSpinLock);
 PAISQSL AcquireInStackQueued = NULL;
  ...
- 
 ```
 
 This code example, which is from the driver's initialization code, determines whether the driver is running on Windows 7 or a later operating system. If it is, the code retrieves a pointer to [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899).
 
 ```cpp
 ...
- 
+
 //
 // Are we running on Windows 7 or later?
 //
  if (RtlIsNtDdiVersionAvailable(NTDDI_WIN7) ) {
- 
+
  //
   // Yes... Windows 7 or later it is!
   //
      RtlInitUnicodeString(&funcName,
                   L"KeAcquireInStackQueuedSpinLock");
- 
+
  //
   // Get a pointer to Windows implementation
   // of KeAcquireInStackQueuedSpinLock into our
@@ -102,25 +101,24 @@ This code example, which is from the driver's initialization code, determines wh
      AcquireInStackQueued = (PAISQSL)
                   MmGetSystemRoutineAddress(&funcName);
  }
- 
+
 ...
 // Acquire a spin lock.
- 
+
  if( NULL != AcquireInStackQueued) {
   (AcquireInStackQueued)(&SpinLock, &lockHandle);
 } else {
     KeAcquireSpinLock(&SpinLock);
 }
- 
 ```
 
 In the example the driver calls [**RtlIsNtDdiVersionAvailable**](https://msdn.microsoft.com/library/windows/hardware/ff561954) to determine whether the driver is running on Windows 7 or later. If the version is Windows 7 or later, the driver calls [**MmGetSystemRoutineAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554563) to get a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) function and stores this pointer in the variable named `AcquireInStackQueued` (which was declared as a PAISQSL type).
 
 Later, when the driver must acquire a spin lock, it checks to see whether it has received a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) function. If the driver has received this pointer, the driver uses the pointer to call **KeAcquireInStackQueuedSpinLock**. If the pointer to **KeAcquireInStackQueuedSpinLock** is null, the driver uses [**KeAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551917) to acquire the spin lock.
 
- 
 
- 
+
+
 
 
 

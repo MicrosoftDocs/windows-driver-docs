@@ -44,21 +44,21 @@ None
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
-<td align="left"><p>[<strong>enableNotListedLanguages</strong>](enablenotlistedlanguages-xml-element.md) (zero or one)</p>
-<p>[<strong>deleteBinaries</strong>](deletebinaries-xml-element.md) (zero or one)</p>
-<p>[<strong>forceIfDriverIsNotBetter</strong>](forceifdriverisnotbetter-xml-element.md) (zero or one)</p>
-<p>[<strong>group</strong>](group-xml-element.md) (zero or more)</p>
-<p>[<strong>headerPath</strong>](headerpath-xml-element.md) (zero or one)</p>
-<p>[<strong>icon</strong>](icon-xml-element.md) (zero or one)</p>
-<p>[<strong>installAllOrNone</strong>](installallornone-xml-element.md) (zero or one)</p>
-<p>[<strong>language</strong>](language-xml-element.md) (zero or more)</p>
-<p>[<strong>legacyMode</strong>](legacymode-xml-element.md) (zero or one)</p>
-<p>[<strong>promptIfDriverIsNotBetter</strong>](promptifdriverisnotbetter-xml-element.md) (zero or one)</p>
-<p>[<strong>quietInstall</strong>](quietinstall-xml-element.md) (zero or one)</p>
-<p>[<strong>scanHardware</strong>](scanhardware-xml-element.md) (zero or one)</p>
-<p>[<strong>search</strong>](search-xml-element.md) (zero or more)</p>
-<p>[<strong>suppressAddRemovePrograms</strong>](suppressaddremoveprograms-xml-element.md) (zero or one)</p>
-<p>[<strong>watermarkPath</strong>](watermarkpath-xml-element.md) (zero or one)</p></td>
+<td align="left"><p><a href="enablenotlistedlanguages-xml-element.md" data-raw-source="[&lt;strong&gt;enableNotListedLanguages&lt;/strong&gt;](enablenotlistedlanguages-xml-element.md)"><strong>enableNotListedLanguages</strong></a> (zero or one)</p>
+<p><a href="deletebinaries-xml-element.md" data-raw-source="[&lt;strong&gt;deleteBinaries&lt;/strong&gt;](deletebinaries-xml-element.md)"><strong>deleteBinaries</strong></a> (zero or one)</p>
+<p><a href="forceifdriverisnotbetter-xml-element.md" data-raw-source="[&lt;strong&gt;forceIfDriverIsNotBetter&lt;/strong&gt;](forceifdriverisnotbetter-xml-element.md)"><strong>forceIfDriverIsNotBetter</strong></a> (zero or one)</p>
+<p><a href="group-xml-element.md" data-raw-source="[&lt;strong&gt;group&lt;/strong&gt;](group-xml-element.md)"><strong>group</strong></a> (zero or more)</p>
+<p><a href="headerpath-xml-element.md" data-raw-source="[&lt;strong&gt;headerPath&lt;/strong&gt;](headerpath-xml-element.md)"><strong>headerPath</strong></a> (zero or one)</p>
+<p><a href="icon-xml-element.md" data-raw-source="[&lt;strong&gt;icon&lt;/strong&gt;](icon-xml-element.md)"><strong>icon</strong></a> (zero or one)</p>
+<p><a href="installallornone-xml-element.md" data-raw-source="[&lt;strong&gt;installAllOrNone&lt;/strong&gt;](installallornone-xml-element.md)"><strong>installAllOrNone</strong></a> (zero or one)</p>
+<p><a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a> (zero or more)</p>
+<p><a href="legacymode-xml-element.md" data-raw-source="[&lt;strong&gt;legacyMode&lt;/strong&gt;](legacymode-xml-element.md)"><strong>legacyMode</strong></a> (zero or one)</p>
+<p><a href="promptifdriverisnotbetter-xml-element.md" data-raw-source="[&lt;strong&gt;promptIfDriverIsNotBetter&lt;/strong&gt;](promptifdriverisnotbetter-xml-element.md)"><strong>promptIfDriverIsNotBetter</strong></a> (zero or one)</p>
+<p><a href="quietinstall-xml-element.md" data-raw-source="[&lt;strong&gt;quietInstall&lt;/strong&gt;](quietinstall-xml-element.md)"><strong>quietInstall</strong></a> (zero or one)</p>
+<p><a href="scanhardware-xml-element.md" data-raw-source="[&lt;strong&gt;scanHardware&lt;/strong&gt;](scanhardware-xml-element.md)"><strong>scanHardware</strong></a> (zero or one)</p>
+<p><a href="search-xml-element.md" data-raw-source="[&lt;strong&gt;search&lt;/strong&gt;](search-xml-element.md)"><strong>search</strong></a> (zero or more)</p>
+<p><a href="suppressaddremoveprograms-xml-element.md" data-raw-source="[&lt;strong&gt;suppressAddRemovePrograms&lt;/strong&gt;](suppressaddremoveprograms-xml-element.md)"><strong>suppressAddRemovePrograms</strong></a> (zero or one)</p>
+<p><a href="watermarkpath-xml-element.md" data-raw-source="[&lt;strong&gt;watermarkPath&lt;/strong&gt;](watermarkpath-xml-element.md)"><strong>watermarkPath</strong></a> (zero or one)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data contents</strong></p></td>
@@ -71,7 +71,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -86,7 +86,7 @@ The following code example demonstrates an XML declaration element, followed by 
 
 **Note**  Because duplicate child elements are not permitted, each **search** child element and **language** element of a **dpinst** element must be unique.
 
- 
+ 
 
 ## See also
 
@@ -121,9 +121,9 @@ The following code example demonstrates an XML declaration element, followed by 
 
 [**watermarkPath**](watermarkpath-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

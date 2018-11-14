@@ -45,7 +45,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used
 </tbody>
 </table>
 
- 
+ 
 
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control face detection in the driver. By default, the driver should have FACEDETECTION\_OFF.
 
@@ -102,15 +102,15 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  MFT0 shall further attach the face information as a MF\_CAPTURE\_METADATA\_FACEROIS, the timestamp as a MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS, and the blink and/or smile information as a MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS on the sample.
 
- 
+ 
 
 **Note**  PREVIEW, VIDEO, and PHOTO capabilities are optional. However, at least one of PREVIEW, VIDEO, and PHOTO capabilities must be supported if this control is supported.
 
- 
+ 
 
 The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
@@ -153,7 +153,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
+ 
 
 The table below contains the descriptions and requirements for the KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION property. This structure is defined in Ksmedia.h.
 
@@ -190,7 +190,7 @@ The table below contains the descriptions and requirements for the KSCAMERA\_EXT
 </tbody>
 </table>
 
- 
+ 
 
 ### Remarks
 

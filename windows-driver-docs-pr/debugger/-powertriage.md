@@ -45,7 +45,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -135,9 +135,9 @@ The !powertriage extension can be useful in examining system crashes related to 
 2. Links to the [**!findthreads**](-findthreads.md) command with the related IRP. The IRP is added as part of the search criteria and displays the threads starting with higher correlation to the search criteria threads listed first.
 Dumping all device stacks with power IRPs can help in debugging cases where !analyze has not been able to correctly identify the IRP associated with the crash.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ An application can have a global (or application) manifest. If this global manif
 
 For more information about manifests and assemblies, activation contexts, isolated applications and side-by-side assembly sharing, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

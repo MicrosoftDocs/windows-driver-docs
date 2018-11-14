@@ -33,9 +33,9 @@ A driver that does not register its device with PoFx can still be notified of a 
 
 A function driver that does not register with PoFx and that does not arm its device for wake receives no notification of a surprise transition from D3cold to D0. The device might spend large amounts of time in an uninitialized D0 state. In this state, all of the components in the device are typically turned on. To reduce power consumption by idle devices, drivers should enable entry to D3cold only if they can receive notifications of surprise transitions to D0.
 
- 
+ 
 
- 
+ 
 
 
 

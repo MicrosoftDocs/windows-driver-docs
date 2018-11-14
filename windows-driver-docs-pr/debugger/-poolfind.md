@@ -67,7 +67,7 @@ Specifies the special pool.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -127,9 +127,9 @@ e1224250 size:   a0 previous size:   30  (Allocated) SeSd
 kd> 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

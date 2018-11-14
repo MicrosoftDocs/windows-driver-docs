@@ -32,9 +32,9 @@ A driver must allocate its own spin lock only when using the CONNECT\_FULLY\_SPE
 
 For information about writing and entering critical sections, see [Using Critical Sections](using-critical-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

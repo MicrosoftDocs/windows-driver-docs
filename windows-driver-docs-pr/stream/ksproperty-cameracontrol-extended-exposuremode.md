@@ -37,7 +37,7 @@ The **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.m
 | KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_MANUAL | Camera driver uses a preset processing method.                               |
 | KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_LOCK   | The current video processing method is locked.                               |
 
- 
+ 
 
 The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) contains the video processing flag currently set for the camera. The KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_AUTO setting may be combined with KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_LOCK.
 
@@ -109,7 +109,7 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 </tbody>
 </table>
 
- 
+ 
 
 If no exposure mode was previously set, then the driver sets **Flags** to KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_AUTO (default). The members of the [**KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting) structure that follows [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) are set according to the requirements of the processing mode.
 

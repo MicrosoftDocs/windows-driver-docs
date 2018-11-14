@@ -15,7 +15,7 @@ For Windows Vista and later operating systems, a driver can use the CONNECT\_LIN
 
 **Note**   You can use this method only for drivers that register a single interrupt service routine (ISR) for all of its line-based interrupts. If the driver can receive multiple interrupts, it must use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.
 
- 
+ 
 
 The driver specifies a value of CONNECT\_LINE\_BASED for *Parameters*-&gt;**Version** and uses the members of *Parameters*-&gt;**LineBased** to specify the other parameters of the operation:
 
@@ -56,9 +56,9 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

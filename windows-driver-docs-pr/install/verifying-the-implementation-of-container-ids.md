@@ -25,9 +25,9 @@ The physical device, which has one primary function, or "container," is represen
 
 For more information about the removable device capability, see [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
- 
+ 
 
- 
+ 
 
 
 

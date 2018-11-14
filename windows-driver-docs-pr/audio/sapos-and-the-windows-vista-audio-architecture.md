@@ -33,9 +33,9 @@ Audio endpoint refers to components such as headphones and loudspeakers collecti
 
 The concepts of pipes, APOs, and sAPOs are explained in more detail in the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic. For more information about the system-supplied sAPOs, see the [Windows Vista Default sAPOs](windows-vista-default-sapos.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

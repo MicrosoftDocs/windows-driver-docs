@@ -27,9 +27,9 @@ The following topics describe the operational flow for various configurations an
 
 [Signal Strength Indication Semantics](signal-strength-indication-semantics.md)
 
- 
+ 
 
- 
+ 
 
 
 

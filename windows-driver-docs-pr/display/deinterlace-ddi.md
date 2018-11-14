@@ -16,9 +16,9 @@ So that the Video Mixing Renderer (VMR) can deinterlace and perform frame-rate c
 
 To simplify driver development, use motion-compensation code templates and implement the deinterlacing functions in this section. The functions are member functions of either the deinterlace container device or the deinterlace mode device classes. For more information, see [Defining the Deinterlace Container Device Class](https://msdn.microsoft.com/library/windows/hardware/ff552682) and [Defining the Deinterlace Bob Device Class](https://msdn.microsoft.com/library/windows/hardware/ff552679).
 
- 
+ 
 
- 
+ 
 
 
 

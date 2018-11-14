@@ -17,21 +17,21 @@ The overlying driver, such as a protocol or filter driver, initializes the [**ND
 
     **Note**  Starting with NDIS 6.30, packet coalescing receive filters are only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
-     
+     
 
 -   The **FilterId** member must be set to the nonzero identifier (ID) value of the filter to be cleared on the miniport driver. The overlying driver obtained the filter ID from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) or [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787).
 
     **Note**  Only the overlying driver that set the packet coalescing receive filter can clear it.
 
-     
+     
 
 **Note**  Before it completes the unbind or detach operation, the overlying protocol or filter driver must clear all the packet coalescing receive filters that it set on the underlying miniport driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

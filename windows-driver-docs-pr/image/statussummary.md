@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerState</strong>](scannerstate.md)</p></td>
+<td><p><a href="scannerstate.md" data-raw-source="[&lt;strong&gt;ScannerState&lt;/strong&gt;](scannerstate.md)"><strong>ScannerState</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatusSummaryEvent</strong>](scannerstatussummaryevent.md)</p></td>
+<td><p><a href="scannerstatussummaryevent.md" data-raw-source="[&lt;strong&gt;ScannerStatusSummaryEvent&lt;/strong&gt;](scannerstatussummaryevent.md)"><strong>ScannerStatusSummaryEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -88,9 +88,9 @@ The WSD Scan Service must include the **StatusSummary** element when it sends a 
 **ScannerStateReasons**
 [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

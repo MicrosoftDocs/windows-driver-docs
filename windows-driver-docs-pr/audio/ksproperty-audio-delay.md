@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_DELAY property indicates the time lag that a delay node (
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
-<td align="left"><p>[<strong>KSTIME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567145)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567145" data-raw-source="[&lt;strong&gt;KSTIME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567145)"><strong>KSTIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSTIME, which specifies the amount of time lag.
 
@@ -86,9 +86,9 @@ Requirements
 
 [**KSNODETYPE\_DELAY**](ksnodetype-delay.md)
 
- 
+ 
 
- 
+ 
 
 
 

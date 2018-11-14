@@ -26,9 +26,9 @@ The three kinds of device objects are all of the type [**DEVICE\_OBJECT**](https
 
 A driver adds itself to the stack of drivers that handle I/O for a device by creating a device object ([**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397)) and attaching it to the device stack ([**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300)). **IoAttachDeviceToDeviceStack** determines the current top of the device stack and attaches the new device object to the top of the device stack.
 
- 
+ 
 
- 
+ 
 
 
 

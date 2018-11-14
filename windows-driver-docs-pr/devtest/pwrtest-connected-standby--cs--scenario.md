@@ -22,13 +22,13 @@ This scenario requires the test system to support the *Always on Always connecte
 pwrtest /cs [/c:n] [/d:n] [/p:n][/?] 
 ```
 
-<span id="_c_n"></span><span id="_C_N"></span>**/c:***n*  
+<span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
 Specifies the number of cycles (1 is default) to run.
 
-<span id="_d_n"></span><span id="_D_N"></span>**/d:***n*  
+<span id="_d_n"></span><span id="_D_N"></span>**/d:**<em>n</em>  
 Specifies the delay time (in seconds) between connected standby transitions (60 seconds is the default).
 
-<span id="_p_n"></span><span id="_P_N"></span>**/p:***n*  
+<span id="_p_n"></span><span id="_P_N"></span>**/p:**<em>n</em>  
 Specifies the connected standby exit time (in seconds; 60 seconds is the default).
 
 **Examples**
@@ -145,16 +145,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

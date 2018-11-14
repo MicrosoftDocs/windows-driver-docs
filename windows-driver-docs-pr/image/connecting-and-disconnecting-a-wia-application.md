@@ -21,9 +21,9 @@ This section contains the following topics
 
 [How the WIA Minidriver Receives a Disconnect Event from the WIA Service](how-the-wia-minidriver-receives-a-disconnect-event-from-the-wia-servic.md)
 
- 
+ 
 
- 
+ 
 
 
 

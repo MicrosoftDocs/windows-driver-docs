@@ -162,9 +162,9 @@ A client module is not required to call [**NmrRegisterClient**](https://msdn.mic
 
 For more information about implementing a client module's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function, see [Unloading a Client Module](unloading-a-client-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

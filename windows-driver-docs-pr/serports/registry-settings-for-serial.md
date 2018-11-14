@@ -34,9 +34,9 @@ Serial uses the registry settings to configure a serial device in the following 
 
 -   If a device-specific entry value is not present and there is no corresponding Serial service entry value, Serial uses a default service value that is statically defined in *serial.sys*.
 
- 
+ 
 
- 
+ 
 
 
 

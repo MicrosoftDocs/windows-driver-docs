@@ -29,9 +29,9 @@ The *GpuMmu* model is illustrated below:
 
 ![gpummu model](images/gpummu-model.1.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ This command is equivalent to pressing CTRL+A.
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

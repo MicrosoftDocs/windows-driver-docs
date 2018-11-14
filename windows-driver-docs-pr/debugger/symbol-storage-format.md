@@ -152,9 +152,9 @@ Now file.ptr contains "\\\\foo2\\bin\\symbols\\retail\\dll\\dbghelp.dbg", and re
 
 Whenever the final entry in refs.ptr is a pointer, the file file.ptr will exist and contain the path to the associated file. Whenever the final entry in refs.ptr is a file, no file.ptr will exist in this directory. Therefore, any delete operation that removes the final entry in refs.ptr may result in file.ptr being created, deleted, or changed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ Starting in UMDF 1.11, UMDF drivers can retrieve hardware resources that the sys
 -   [Reading and Writing to Device Registers in UMDF 1.x Drivers](reading-and-writing-to-device-registers-in-umdf-1-x-drivers.md)
 -   [Handling Interrupts](handling-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

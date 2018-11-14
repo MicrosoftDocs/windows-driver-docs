@@ -48,9 +48,9 @@ In general, only a highest-level driver is called in the context of the thread t
 
 Consequently, driver routines usually execute in an *arbitrary thread context*—the context of whatever thread is current when a standard driver routine is called. For performance reasons (to avoid context switches), very few drivers set up their own threads.
 
- 
+ 
 
- 
+ 
 
 
 

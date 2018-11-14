@@ -39,7 +39,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="odd">
 <td align="left"><p>1</p></td>
 <td align="left"><p>The virtual memory address that could not be accessed.</p>
-<p>Use <strong>[!pool](-pool.md)</strong> on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: <strong>[!pte](-pte.md)</strong>, <strong>[!address](-address.md)</strong>, and <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong>.</p></td>
+<p>Use <strong><a href="-pool.md" data-raw-source="[!pool](-pool.md)">!pool</a></strong> on this address to see whether it&#39;s Paged pool. These commands, may also be useful in gathering information about the failure: <strong><a href="-pte.md" data-raw-source="[!pte](-pte.md)">!pte</a></strong>, <strong><a href="-address.md" data-raw-source="[!address](-address.md)">!address</a></strong>, and <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -72,12 +72,12 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>The instruction pointer at the time of the fault.</p>
-<p>Use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command on this address to see the name of the function.</p></td>
+<p>Use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -94,7 +94,7 @@ This bug check indicates that an attempt was made to access an invalid address w
 Resolution
 ----------
 
-If a kernel debugger is available, obtain a stack trace.
+If a kernel debugger is available, obtain a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
 
 **Gather Information**
 
@@ -159,9 +159,9 @@ If you encounter bug check 0xA while upgrading to a later version of Windows, th
 
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

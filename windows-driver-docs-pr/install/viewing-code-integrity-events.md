@@ -39,9 +39,9 @@ For a list of all Code Integrity event log messages, see [Code Integrity Event L
 
 The System log events are viewable in the Event Viewer under the Windows Logs, System log view.
 
- 
+ 
 
- 
+ 
 
 
 

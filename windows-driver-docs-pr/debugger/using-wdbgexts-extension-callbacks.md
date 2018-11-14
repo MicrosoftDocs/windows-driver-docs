@@ -43,9 +43,9 @@ When you write a WdbgExts extension DLL, you can export certain functions:
 
 -   You can optionally export a function called [*CheckVersion*](https://msdn.microsoft.com/library/windows/hardware/ff539096). The debugger calls this routine every time you use an extension command. You can use this to print out version mismatch warnings when your DLL is of a slightly different version than the debugger, but not different enough to prevent it from running.
 
- 
+ 
 
- 
+ 
 
 
 

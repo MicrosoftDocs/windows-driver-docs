@@ -22,9 +22,9 @@ When a miniport driver is called to initialize a miniport adapter that it manage
 
 When NDIS calls one of the miniport driver's *MiniportXxx* functions that pertains to a miniport adapter, NDIS passes the miniport adapter context to identify the correct miniport adapter to the driver. The miniport adapter context is owned and maintained by the miniport driver and is opaque to NDIS and to protocol drivers.
 
- 
+ 
 
- 
+ 
 
 
 

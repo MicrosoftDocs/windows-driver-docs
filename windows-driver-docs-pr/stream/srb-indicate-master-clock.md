@@ -44,9 +44,9 @@ Until the minidriver receives a SRB\_INDICATE\_MASTER\_CLOCK for a particular st
 
 The minidriver should retain the **CommandData.MasterClockHandle** field in the SRB that points to the handle for the master clock. If this handle is zero, it indicates to the minidriver that this stream is now free running and cannot be subordinate to a master clock.
 
- 
+ 
 
- 
+ 
 
 
 

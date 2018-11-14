@@ -59,27 +59,27 @@ Debugging over a USB 3.0 cable requires the following hardware:
 > You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
 
 
-6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
+6. On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
-    -   **bcdedit /debug on**
-    -   **bcdedit /dbgsettings usb targetname:***TargetName*
+   - **bcdedit /debug on**
+   - **bcdedit /dbgsettings usb targetname:**<em>TargetName</em>
 
-    where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
+   where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-    -   The maximum length of the string is 24 characters.
-    -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
+   -   The maximum length of the string is 24 characters.
+   -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 
-7.  If you have more than one USB host controller on the target computer, enter this command:
+7. If you have more than one USB host controller on the target computer, enter this command:
 
-    **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
+   **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
 
-    where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging. The bus, device, and function numbers must be in decimal format.
+   where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging. The bus, device, and function numbers must be in decimal format.
 
-    Example:
+   Example:
 
-    **bcdedit /set "{dbgsettings}" busparams 48.0.0**
+   **bcdedit /set "{dbgsettings}" busparams 48.0.0**
 
-8.  Reboot the target computer.
+8. Reboot the target computer.
 
 ## <span id="Starting_a_Debugging_Session_for_the_First_Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
 
@@ -100,13 +100,13 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window, where *TargetName* is the target name you created when you set up the target computer:
 
-**windbg /k usb:targetname=***TargetName*
+**windbg /k usb:targetname=**<em>TargetName</em>
 
 ### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
 
 On the host computer, open a Command Prompt window and enter the following command, where *TargetName* is the target name you created when you set up the target computer:
 
-**kd /k usb:targetname=***TargetName*
+**kd /k usb:targetname=**<em>TargetName</em>
 
 ## <span id="troubleshooting_tips_for_debugging_over_usb_3.0"></span><span id="TROUBLESHOOTING_TIPS_FOR_DEBUGGING_OVER_USB_3.0"></span>Troubleshooting tips for debugging over USB 3.0
 
@@ -123,9 +123,9 @@ When you have finished using the xHCI host controller for debugging, enable sele
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_CROSSBAR enumeration.
 
 The only event in this set is [**KSEVENT\_CROSSBAR\_CHANGED**](ksevent-crossbar-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

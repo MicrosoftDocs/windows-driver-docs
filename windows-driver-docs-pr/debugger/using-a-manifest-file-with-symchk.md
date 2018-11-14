@@ -47,9 +47,9 @@ SYMCHK: PASSED + IGNORED files = 28
 
 Now you can move the symbols to the isolated computer and use them for debugging.
 
- 
+ 
 
- 
+ 
 
 
 

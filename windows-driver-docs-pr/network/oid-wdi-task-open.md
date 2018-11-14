@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_OPEN requests that the IHV component initializes the adapter.
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 1                                     | 2                               |
 
- 
+ 
 
 Adapter initialization includes downloading firmware to the adapter, and setting up interrupts and other hardware resources. During initialization, this task is passed to the IHV using the OpenAdapterHandler handler registered by the IHV. On resume from low power state, this is passed to the IHV using OID\_WDI\_TASK\_OPEN.
 
@@ -54,9 +54,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

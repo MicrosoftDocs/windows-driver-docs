@@ -31,11 +31,11 @@ With split buffers, the data length that is associated with the NET\_BUFFER stru
 
 **Note**  After the receive indication call returns to a miniport driver, the miniport driver can reclaim the header MDLs. The overlying drivers or their clients must not access the header MDLs after the receive indication call returns to the miniport driver. This restriction also applies even when the miniport driver is not indicating the received data with a status of NDIS\_RECEIVE\_FLAGS\_RESOURCES.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

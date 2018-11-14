@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The Microsoft Direct3D runtime calls the user-mode display driver's [**CreateDecodeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540618) function to create a decode device for video acceleration (VA). When the Direct3D runtime is finished with the decode device, it calls the user-mode display driver's [**DestroyDecodeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552757) function.
 
- 
+ 
 
- 
+ 
 
 
 

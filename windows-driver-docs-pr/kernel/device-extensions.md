@@ -55,9 +55,9 @@ While a higher-level driver can read data from the next-lower-level driver's dev
 
 To preserve their interoperability with lower-level drivers from one Windows platform or version to the next, higher-level drivers either must reuse the IRPs given them or must create new IRPs, and they must use [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) to communicate requests to lower-level drivers.
 
- 
+ 
 
- 
+ 
 
 
 

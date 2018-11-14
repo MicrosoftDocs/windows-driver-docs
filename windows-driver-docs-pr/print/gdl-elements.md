@@ -21,9 +21,9 @@ To program successfully in GDL, you should understand the following elements:
 
 [GDL Namespaces](gdl-namespaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

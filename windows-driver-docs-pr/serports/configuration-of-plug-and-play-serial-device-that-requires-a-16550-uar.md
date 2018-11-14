@@ -35,9 +35,9 @@ The following diagram shows the typical configuration for a sample toaster devic
 
 In these configurations, the Toaster device is a child device on a PCMCIA bus. The PCMCIA bus driver creates a PDO for the Toaster device when it enumerates the PCMCIA card. The INF file for the Toaster device specifies Serial as a lower-level device filter driver. Serial provides a 16550 UART-compatible interface to the hardware device. The Toaster driver creates and attaches an FDO to the Toaster device stack.
 
- 
+ 
 
- 
+ 
 
 
 

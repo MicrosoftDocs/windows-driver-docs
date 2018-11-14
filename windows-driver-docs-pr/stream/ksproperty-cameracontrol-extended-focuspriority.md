@@ -45,7 +45,7 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined i
 </tbody>
 </table>
 
- 
+ 
 
 To configure the focus priority, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID must be used. When focus priority is set, focusing will take priority over picture taken to ensure that the picture taken is always in focus. If focus priority is not set, the picture will be taken immediately regardless of whether the picture was in focus. The behavior in handling a failed focus failed and timeouts are determined by the OEM and is internal to the driver.
 
@@ -59,7 +59,7 @@ For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-
 **Note**  
 This is a synchronous control and there are no capabilities defined for this control.
 
- 
+ 
 
 The table below contains the descriptions and requirements for the **KSCAMERA\_EXTENDEDPROP\_HEADER** structure fields when using the focus priority control.
 
@@ -85,7 +85,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -102,7 +102,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 

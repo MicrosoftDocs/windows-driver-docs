@@ -56,7 +56,7 @@ Displays all 16-bit (USHORT) arrays and pointers as Unicode strings.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ You can also select or clear **Display 16-bit values** as Unicode on the shortcu
 
 [**ds, dS (Display String)**](ds--ds--display-string-.md)
 
- 
+ 
 
- 
+ 
 
 
 

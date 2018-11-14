@@ -70,9 +70,9 @@ Before an application can accept an incoming call, it first must have a line ope
 
 -   After NDISWAN accepts the incoming call, NDPROXY calls the [**NdisCoGetTapiCallId**](https://msdn.microsoft.com/library/windows/hardware/ff561700) function to retrieve a string that identifies NDISWAN's context for the VC. NDPROXY passes this string back to the TAPI application. The TAPI application uses this VC-context string to complete its call to **lineGetID**.
 
- 
+ 
 
- 
+ 
 
 
 

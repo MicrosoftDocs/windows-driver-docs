@@ -75,9 +75,9 @@ After you review the sample adapter driver and start to design your WaveRT minip
 
     APOs are available for use only with shared-mode audio streams. For exclusive-mode streams, applications exchange data directly with WaveRT hardware devices through cyclic buffers, and no other components can touch the data in the buffers.
 
- 
+ 
 
- 
+ 
 
 
 

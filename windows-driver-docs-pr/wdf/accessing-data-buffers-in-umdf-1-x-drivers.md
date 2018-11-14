@@ -140,9 +140,9 @@ However, the [definitions](https://msdn.microsoft.com/library/windows/hardware/f
 
 You should enable support of IOCTL requests that use the "neither" method only if you are sure that UMDF can convert the access method to buffered I/O or direct I/O. For example, if the IOCTL specifies a customized request that does not follow the buffer specification rules that are described at [Buffer Descriptions for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff540663), UMDF cannot convert the buffers.
 
- 
+ 
 
- 
+ 
 
 
 

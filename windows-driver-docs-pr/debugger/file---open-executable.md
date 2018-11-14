@@ -34,7 +34,7 @@ After you make your selections, click **Open**.
 
 **Note**   When you use this command to open a source file, the path to that file is automatically appended to the [source path](source-path.md).
 
- 
+ 
 
 If WinDbg is connected to a process server, you cannot use the **Open Executable** command.
 
@@ -42,9 +42,9 @@ If WinDbg is connected to a process server, you cannot use the **Open Executable
 
 For more information and other methods of starting new processes for debugging, see [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

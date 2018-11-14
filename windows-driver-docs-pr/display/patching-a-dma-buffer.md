@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 After the video memory manager is informed where every memory resource for the DMA buffer is located, the GPU scheduler calls the display miniport driver's [**DxgkDdiPatch**](https://msdn.microsoft.com/library/windows/hardware/ff559737) function to patch the resource with a physical address (that is, assign a physical address to the resource).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ Either the local host stack or the remote host can initiate a disconnect request
 
 -   For more information about responding to a disconnect request that was initiated by the remote host, see [Responding to the Reception of a FIN or RST Segment](responding-to-the-reception-of-a-fin-or-rst-segment.md).
 
- 
+ 
 
- 
+ 
 
 
 

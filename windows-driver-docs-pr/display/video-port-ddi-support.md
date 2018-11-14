@@ -143,9 +143,9 @@ Items marked with an asterisk (\*) are for hardware scenarios that are no longer
 -   VideoPortWriteRegisterUshort
 -   VideoPortZeroDeviceMemory\*
 
- 
+ 
 
- 
+ 
 
 
 

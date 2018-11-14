@@ -34,7 +34,7 @@ Reserved for system use.
 
 **Note**  This value is supported only in NDIS 6.30 and later.
 
- 
+ 
 
 The characteristics of an NDIS port vary from one port application to another. For example, for a bridge interface, the miniport driver upper edge of an intermediate driver creates an **NdisPortTypeBridge** port when the protocol edge of the intermediate driver binds to a physical miniport adapter that requires a bridge at layer three.
 
@@ -45,9 +45,9 @@ The characteristics of an NDIS port vary from one port application to another. F
 
 [Overview of NDIS Ports](overview-of-ndis-ports.md)
 
- 
+ 
 
- 
+ 
 
 
 

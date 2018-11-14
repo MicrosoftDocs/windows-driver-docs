@@ -59,9 +59,9 @@ When the minidriver receives this request, it should determine if the specified 
 
 7.  If clock support is available on the stream, indicate this through the **HwClockObject** member in the stream object.
 
- 
+ 
 
- 
+ 
 
 
 

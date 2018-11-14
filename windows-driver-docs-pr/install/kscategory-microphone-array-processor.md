@@ -43,7 +43,7 @@ The KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR [device interface class](https://msdn.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

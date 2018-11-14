@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  You must have administrator privileges to uninstall a device or [driver package](driver-packages.md) by using Device Manager.
 
- 
+ 
 
 For more information about uninstalling driver and driver packages, see [How Devices and Driver Packages are Uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
 
@@ -31,7 +31,7 @@ To uninstall a device by using Device Manager, follow these steps:
 
 **Note**  With some devices, you might have to restart the system to complete the uninstall process. The device might continue to function until the system has been restarted.
 
- 
+ 
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
@@ -41,9 +41,9 @@ On the **Confirm Device Removal** dialog box, click the **Delete the driver soft
 
 Device Manager cannot be used to perform this action.
 
- 
+ 
 
- 
+ 
 
 
 

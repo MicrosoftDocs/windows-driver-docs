@@ -67,7 +67,7 @@ For more syntax details, see [Address and Address Range Syntax](address-and-addr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -78,9 +78,9 @@ Remarks
 
 If you want to display Unicode strings in the Locals window or Watch window of WinDbg, you need to use the [**.enable\_unicode (Enable Unicode Display)**](-enable-unicode--enable-unicode-display-.md) command first.
 
- 
+ 
 
- 
+ 
 
 
 

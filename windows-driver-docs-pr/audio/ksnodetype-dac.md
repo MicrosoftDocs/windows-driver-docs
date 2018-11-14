@@ -33,9 +33,9 @@ A KSNODETYPE\_DAC node can support the following optional properties:
 
 [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md)
 
- 
+ 
 
- 
+ 
 
 
 

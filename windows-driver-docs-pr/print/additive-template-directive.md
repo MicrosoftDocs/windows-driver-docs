@@ -29,9 +29,9 @@ If this directive is absent, a default value of MOST\_RECENT will be assumed.
 
 If this directive is itself multiply defined within a template or appears in several templates that are related by inheritance, only the most recently defined directive in the most derived template will be honored.
 
- 
+ 
 
- 
+ 
 
 
 

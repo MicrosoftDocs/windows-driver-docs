@@ -73,9 +73,9 @@ The non-inplace transform filter allocates the transformed frames in kernel mode
 
 The minidriver can [inject frames](frame-injection.md) into the circuit by calling [**KsPinSubmitFrame**](https://msdn.microsoft.com/library/windows/hardware/ff563529) or [**KsPinSubmitFrameMdl**](https://msdn.microsoft.com/library/windows/hardware/ff563530). If the minidriver uses this method, the AVStream requester receives frames as a result of these calls, rather than from a kernel-mode allocator.
 
- 
+ 
 
- 
+ 
 
 
 

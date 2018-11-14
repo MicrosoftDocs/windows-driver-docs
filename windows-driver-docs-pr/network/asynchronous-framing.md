@@ -20,9 +20,9 @@ The following diagram illustrates asynchronous framing with compression turned o
 
 ![diagram illustrating asynchronous framing with compression turned off](images/ng10f1.png)
 
- 
+ 
 
- 
+ 
 
 
 

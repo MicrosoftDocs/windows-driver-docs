@@ -44,9 +44,9 @@ A miniport driver can also be interrogated by an upper layer driver or by NDIS a
 
 The miniport driver can be queried so that NDIS can synchronize operations between layers of NDIS drivers--for example, by determining whether a NIC is ready to accept packets.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ This section includes:
 
 [WIA Scanner Storage Compatibility for Windows XP and Windows Me](wia-scanner-storage-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

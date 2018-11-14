@@ -88,7 +88,7 @@ In addition to the registry entries in this table, you can also add a **ControlG
 <td align="left"><p><strong>EnableKernelFlags</strong></p></td>
 <td align="left"><p>REG_BINARY</p></td>
 <td align="left"><p>Converts the Global Logger session to an NT Kernel Logger trace session and specifies the events included in the kernel trace.</p>
-<p>For information, see [Boot-time Global Logger Session](boot-time-global-logger-session.md).</p></td>
+<p>For information, see <a href="boot-time-global-logger-session.md" data-raw-source="[Boot-time Global Logger Session](boot-time-global-logger-session.md)">Boot-time Global Logger Session</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileCounter</strong></p></td>
@@ -146,7 +146,7 @@ In addition to the registry entries in this table, you can also add a **ControlG
 </tbody>
 </table>
 
- 
+ 
 
 These registry entries that you create remain in the registry and are effective until you delete them or change their values. Therefore, after the Global Logger session has run, use the **tracelog -remove GlobalLogger** command to set the value of the **Start** entry to 0 and delete the other Global Logger registry entries. Otherwise, the Global Logger session runs every time that you restart the computer, and the resulting log file can grow very large.
 
@@ -273,7 +273,7 @@ This table is displayed here to show the hexadecimal values of the constants. Us
 </tr>
 </tbody>
 </table>
- 
+ 
 
 
 

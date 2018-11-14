@@ -34,7 +34,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
     **Note**   Because the signal processing that is performed by an LFX sAPO is different from the signal processing that is performed by a GFX sAPO, you must create separate classes for your LFX and GFX sAPOs.
 
-     
+     
 
 2.  Implement the following three methods:
 
@@ -70,7 +70,7 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
 
- 
+ 
 
 You must provide a user interface to configure the features that you added to the custom sAPO. For more information about this, see the [Implementing a UI for Configuring sAPOs](implementing-a-ui-for-configuring-sapos.md) topic.
 
@@ -85,9 +85,9 @@ The Swap sample is the sample that was developed to illustrate some features of 
 4. Open the SwapAPO project in Visual Studio.
 5. In the left navigation pane, expand the APO item.
 6. Click the file that you would like to browse, to see its contents.
- 
+ 
 
- 
+ 
 
 
 

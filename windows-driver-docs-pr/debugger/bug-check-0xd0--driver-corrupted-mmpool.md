@@ -56,7 +56,7 @@ The DRIVER\_CORRUPTED\_MMPOOL bug check has a value of 0x000000D0. This indicate
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -76,9 +76,9 @@ For information about the special pool, consult the Driver Verifier section of t
 
 An alternate method is to open the **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management** registry key. In this key, create or edit the **ProtectNonPagedPool** value, and set it equal to DWORD 1. Then reboot. Then the system will unmap all freed nonpaged pool. This will prevent drivers from corrupting the pool. (This does not protect the pool from DMA hardware, however.)
 
- 
+ 
 
- 
+ 
 
 
 

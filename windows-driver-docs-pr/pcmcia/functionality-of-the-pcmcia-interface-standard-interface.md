@@ -22,9 +22,9 @@ This section describes the functionality of the PCMCIA\_INTERFACE\_STANDARD inte
 
 For more information about the routines provided by the PCMCIA\_INTERFACE\_STANDARD interface, see [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://msdn.microsoft.com/library/windows/hardware/ff537607).
 
- 
+ 
 
- 
+ 
 
 
 

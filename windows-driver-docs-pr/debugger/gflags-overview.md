@@ -47,9 +47,9 @@ Enable, disable, and configure page heap verification for a program. When enable
 <span id="Silent_process_exit"></span><span id="silent_process_exit"></span><span id="SILENT_PROCESS_EXIT"></span>Silent process exit  
 Enable, disable, and configure monitoring and reporting of silent exits for a process. You can specify actions that occur when a process exits silently, including notification, event logging, and creation of dump files. For more information, see [Monitoring Silent Process Exit](registry-entries-for-silent-process-exit.md).
 
- 
+ 
 
- 
+ 
 
 
 

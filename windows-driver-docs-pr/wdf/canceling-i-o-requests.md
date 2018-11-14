@@ -83,9 +83,9 @@ For information about synchronizing code that cancels I/O requests, see:
 
 -   [Synchronizing Cancellation of Sent Requests](synchronizing-cancellation-of-sent-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

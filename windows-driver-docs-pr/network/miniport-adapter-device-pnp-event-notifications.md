@@ -26,9 +26,9 @@ If the event code indicates that the power profile has changed, NDIS also indica
 
 The miniport driver should adjust the adapter settings accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

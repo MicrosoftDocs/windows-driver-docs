@@ -40,9 +40,9 @@ Click **OK** to append the selected folder to the symbol path and return to the 
 
 For more information and for other ways to change the symbol path, see [Symbol Path](symbol-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

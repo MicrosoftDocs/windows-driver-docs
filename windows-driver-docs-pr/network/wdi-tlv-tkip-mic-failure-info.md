@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                            | Specifies the index of the cipher key in the default key array. Valid value range is from 0 through 3.                                                                                                                                                   |
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | Specifies the MAC address of the peer that transmitted the packet that failed MIC verification.                                                                                                                                                          |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

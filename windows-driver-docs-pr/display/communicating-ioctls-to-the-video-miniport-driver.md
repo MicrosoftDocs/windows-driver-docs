@@ -27,9 +27,9 @@ In general, and unless modularity dictates otherwise, the display driver handles
 
 See [Video Miniport Driver I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff570515) for descriptions of system-defined video IOCTLs. You can extend the interface between the display driver and the video miniport driver by adding a *private IOCTL*, which must be formatted as described in [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023). If you need to write a new IOCTL, you should first contact Microsoft Technical Support.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ On systems that do not have a physical GPIO resource for a required/optional har
 
 To use an interface, an entry must exist in the ACPI table that defines each of the respective device(s) for which the interface is to be utilized. However, the existence of any GPIO resources for a device is optional. See [ACPI descriptor samples](acpi-descriptor-samples.md).
 
- 
+ 
 
- 
+ 
 
 
 

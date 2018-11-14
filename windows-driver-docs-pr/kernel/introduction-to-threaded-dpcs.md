@@ -30,9 +30,9 @@ In addition, you must ensure that your *CustomThreadedDpc* routine obeys all the
 
 To add a threaded DPC to the DPC queue, call [**KeInsertQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552185). To remove a threaded DPC from the queue before it executes, call [**KeRemoveQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff553169).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,9 +40,9 @@ Because an *AdapterControl* routine cannot wait for the subordinate device to ca
 
 Another driver routine (probably the [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine) must call [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) and [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) when the DMA transfer operation is complete.
 
- 
+ 
 
- 
+ 
 
 
 

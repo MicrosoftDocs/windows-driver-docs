@@ -40,9 +40,9 @@ The PCMCIA memory card driver carries out the following operations:
 
 A driver must be running at IRQL &lt; DISPATCH\_LEVEL to send this request down the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

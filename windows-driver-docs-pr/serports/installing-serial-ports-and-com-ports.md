@@ -31,9 +31,9 @@ For more information about installing serial ports and COM ports using the Ports
 
 If you do a custom installation of a COM port, you must comply with the COM port requirements that are defined in [Configuration of COM Ports](configuration-of-com-ports.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 On Windows Vista, there is currently no support for transactions for network mini-redirectors based on RDBSS.
 
- 
+ 
 
- 
+ 
 
 
 

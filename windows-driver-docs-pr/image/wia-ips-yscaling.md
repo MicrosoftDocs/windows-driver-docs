@@ -66,9 +66,9 @@ Requirements
 
 [**WIA\_IPS\_XSCALING**](wia-ips-xscaling.md)
 
- 
+ 
 
- 
+ 
 
 
 

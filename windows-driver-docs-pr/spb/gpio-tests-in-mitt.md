@@ -67,7 +67,7 @@ GPIO test modules that are included in the MITT software package can be used to 
 </tbody>
 </table>
 
- 
+ 
 
 1.  On the MITT board, identify the GPIO connector. It uses the left most 12-pin header, labeled **JA1**, as shown in this image.
 
@@ -167,7 +167,7 @@ To generate a sequence, you need these values:
     | 13                        | Slate/Laptop toggle value ("1" presses the switch)  |
     | 14-15                     | Not used                                            |
 
-     
+     
 
 -   Clock Multiplier
 

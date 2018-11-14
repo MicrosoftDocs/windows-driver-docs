@@ -34,9 +34,9 @@ The following members of the **DEVICE\_CAPABILITIES** structure pertain to power
 
 [D1Latency, D2Latency, and D3Latency](d1latency--d2latency--and-d3latency.md)
 
- 
+ 
 
- 
+ 
 
 
 

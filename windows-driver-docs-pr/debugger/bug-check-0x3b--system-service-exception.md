@@ -55,7 +55,7 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -98,9 +98,9 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

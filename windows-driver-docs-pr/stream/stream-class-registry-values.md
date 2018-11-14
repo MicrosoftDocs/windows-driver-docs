@@ -63,9 +63,9 @@ HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

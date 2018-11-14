@@ -47,9 +47,9 @@ The following topics provide more information about the connection life cycle an
 
 [Management of I2S and SCO Resources](management-of-i2s-and-sco-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

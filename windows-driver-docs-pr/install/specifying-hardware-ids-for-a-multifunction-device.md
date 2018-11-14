@@ -45,9 +45,9 @@ Based on the [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 For more information about metadata package selection and ranking, see [How the DMRC Selects a Device Metadata Package](how-the-dmrc-selects-a-device-metadata-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

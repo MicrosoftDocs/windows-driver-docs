@@ -42,9 +42,9 @@ For a binding in the Paused state, the protocol driver:
 
 -   Should return receive indications immediately. If necessary, the driver can copy such receive indications before it returns them.
 
- 
+ 
 
- 
+ 
 
 
 

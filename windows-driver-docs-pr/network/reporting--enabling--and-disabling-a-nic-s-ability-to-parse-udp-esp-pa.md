@@ -22,9 +22,9 @@ The miniport reports the NIC's ability to parse incoming UDP-encapsulated ESP pa
 
 For information about enabling and disableing UDP ESP parsing capabilities, see [Enabling and Disabling TCP/IP Offload Services](enabling-and-disabling-task-offload-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

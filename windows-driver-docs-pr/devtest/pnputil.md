@@ -30,22 +30,22 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\system32 directory). There isn't a separate PnPUtil download package.</p>
+<td align="left"><p>PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\system32 directory). There isn&#39;t a separate PnPUtil download package.</p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
-<li>Type <strong>pnputil /?</strong> to view command options. See [<strong>PnPUtil Command Syntax</strong>](pnputil-command-syntax.md) for more information.</li>
+<li>Type <strong>pnputil /?</strong> to view command options. See <a href="pnputil-command-syntax.md" data-raw-source="[&lt;strong&gt;PnPUtil Command Syntax&lt;/strong&gt;](pnputil-command-syntax.md)"><strong>PnPUtil Command Syntax</strong></a> for more information.</li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](https://msdn.microsoft.com/library/windows/hardware/ff544838) tools to create and customize the installation of driver packages.
+<strong>Note</strong>  PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544838" data-raw-source="[Driver Install Frameworks (DIFx)](https://msdn.microsoft.com/library/windows/hardware/ff544838)">Driver Install Frameworks (DIFx)</a> tools to create and customize the installation of driver packages.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This section includes the following:
 
@@ -53,9 +53,9 @@ This section includes the following:
 
 [PnPUtil Examples](pnputil-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

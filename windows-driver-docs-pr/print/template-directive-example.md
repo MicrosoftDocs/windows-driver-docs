@@ -43,9 +43,9 @@ The construct instances that are bound to the host template by this production c
 
 If the host template inherits from other templates, the productions that are defined in the inherited templates are also evaluated and must also be **TRUE** for the production in the host template to evaluate to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

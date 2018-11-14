@@ -32,9 +32,9 @@ The following sections describe how drivers implement support for textures:
 
 [Driver-Managed Resources](driver-managed-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -72,9 +72,9 @@ Requirements
 
 [OID\_WWAN\_READY\_INFO](oid-wwan-ready-info.md)
 
- 
+ 
 
- 
+ 
 
 
 

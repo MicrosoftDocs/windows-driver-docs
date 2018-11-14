@@ -58,9 +58,9 @@ Windows needs a TMF file in order to format the binary trace messages in a buffe
 
 If you do not use either **!wmitrace.searchpath** or [**!wmitrace.tmffile**](-wmitrace-tmffile.md), the system uses the value of the TRACE\_FORMAT\_SEARCH\_PATH environment variable. If that variable is not present, it uses the default.tmf file, which is included in Windows. If the system cannot find any formatting information for a trace message, it writes a "No format information found" error message in place of the trace message content.
 
- 
+ 
 
- 
+ 
 
 
 

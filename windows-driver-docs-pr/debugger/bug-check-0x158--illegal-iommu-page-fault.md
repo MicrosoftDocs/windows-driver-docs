@@ -31,11 +31,11 @@ The ILLEGAL\_IOMMU\_PAGE\_FAULT bug check has a value of 0x00000158. This indica
 | 3         | The process using this ASID.          |
 | 4         | The ASID's reference count.           |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

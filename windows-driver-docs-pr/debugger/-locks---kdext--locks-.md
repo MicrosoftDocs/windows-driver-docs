@@ -62,7 +62,7 @@ Specifies the hexadecimal address of the ERESOURCE lock to be displayed. If *Add
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -124,9 +124,9 @@ fafa3ddc 8050ec72 nt!PspSystemThreadStartup+0x2e (FPO: [Non-Fpo]) (CONV: stdcall
 1 total locks, 1 locks currently held
 ```
 
- 
+ 
 
- 
+ 
 
 
 

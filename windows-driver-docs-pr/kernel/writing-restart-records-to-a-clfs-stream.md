@@ -20,9 +20,9 @@ Typically, restart records are written to a stream periodically to create checkp
 
 If you want to write a restart record to a stream and change the base LSN of the stream at the same time, set the *plsnBase* parameter of **ClfsWriteRestartArea** to the new base LSN.
 
- 
+ 
 
- 
+ 
 
 
 

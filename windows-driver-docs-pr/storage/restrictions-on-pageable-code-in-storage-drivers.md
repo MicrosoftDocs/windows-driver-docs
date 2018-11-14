@@ -30,9 +30,9 @@ Special considerations apply to drivers that manage storage devices in the pagin
 
 By default, the code for kernel-mode drivers is not pageable, nor is the global memory used by kernel-mode drivers pageable. For information about how to make code pageable, see [Making Driver Code or Data Pageable](https://msdn.microsoft.com/library/windows/hardware/ff554349).
 
- 
+ 
 
- 
+ 
 
 
 

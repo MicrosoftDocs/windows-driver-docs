@@ -46,9 +46,9 @@ Requirements
 
 [OID\_WW\_GEN\_INDICATION\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff561411)
 
- 
+ 
 
- 
+ 
 
 
 

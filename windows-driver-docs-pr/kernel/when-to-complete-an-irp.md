@@ -28,9 +28,9 @@ If a driver completes a request because processing cannot progress, or if it com
 
 If a driver must access a device to satisfy the request, it typically calls **IoCompleteRequest** from a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine. These routines are discussed extensively in [Servicing Interrupts](servicing-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

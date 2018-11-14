@@ -69,7 +69,7 @@ To create a WIA child item, located directly under the root item created in the 
 
 **Note**  **** Notice that the [**IWiaDrvItem::AddItemToFolder**](https://msdn.microsoft.com/library/windows/hardware/ff543856) method is called to add the newly created child item to the root item.
 
- 
+ 
 
 ```cpp
 LONG lItemFlags = WiaItemTypeFile|WiaItemTypeDevice|WiaItemTypeImage;
@@ -264,9 +264,9 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

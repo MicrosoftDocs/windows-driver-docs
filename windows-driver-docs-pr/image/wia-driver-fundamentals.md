@@ -43,9 +43,9 @@ This section describes WIA driver fundamentals and the WIA driver architecture a
 
 [WIA with Web Services for Devices](wia-with-web-services-for-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

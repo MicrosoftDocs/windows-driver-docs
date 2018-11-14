@@ -151,7 +151,7 @@ Time-out code context: port data
 
 Fatal time-out
 
- 
+ 
 
 If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter 3 is a time-out code. Possible values for the time-out code are given in the following table.
 
@@ -214,11 +214,11 @@ If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,9 +49,9 @@ In Windows XP and later operating systems, the changer class driver provides, tw
 
 -   [**ChangerClassSendSrbSynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff551415) -- initializes and synchronously sends an SRB to an indicated target device.
 
- 
+ 
 
- 
+ 
 
 
 

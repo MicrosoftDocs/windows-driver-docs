@@ -45,9 +45,9 @@ The driver must then do the following to add information to a resource requireme
 
 After the driver's [*EvtDeviceResourceRequirementsQuery*](https://msdn.microsoft.com/library/windows/hardware/ff540894) callback function returns, the framework passes the resource requirements list to the PnP manager.
 
- 
+ 
 
- 
+ 
 
 
 

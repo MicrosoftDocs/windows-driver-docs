@@ -17,7 +17,7 @@ Before you install a partial checked build, you must determine the version of th
 
 **Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
 
- 
+ 
 
 On computers running the 32-bit version of Windows, use the following procedures to identify the names of the files to copy:
 
@@ -109,7 +109,7 @@ Now that you know the names of the files that were used during your system insta
 </tbody>
 </table>
 
- 
+ 
 
 ## Step 3 - Changing the boot parameters using BCDEdit
 
@@ -120,7 +120,7 @@ For general instructions on using BCDEdit, see [Tools for Changing Boot Options 
 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 To configure a partial checked build on Windows Vista and later, use the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command and the **kernel** and **hal** options.
 
 For example, the following commands configure a boot entry to use the checked versions of the kernel and HAL.
@@ -191,9 +191,9 @@ Microsoft (R) Windows (R) 6.00. 6001 Service Pack 1 Multiprocessor Checked.
 
 [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 
- 
+ 
 
- 
+ 
 
 
 

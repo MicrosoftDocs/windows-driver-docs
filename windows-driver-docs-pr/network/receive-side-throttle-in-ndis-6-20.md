@@ -35,9 +35,9 @@ If an NDIS driver spends too much time at dispatch IRQ level in a deferred proce
 
 [**NdisMQueueDpcEx**](https://msdn.microsoft.com/library/windows/hardware/ff563640)
 
- 
+ 
 
- 
+ 
 
 
 

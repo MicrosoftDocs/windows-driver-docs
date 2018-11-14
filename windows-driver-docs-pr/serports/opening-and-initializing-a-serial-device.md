@@ -29,9 +29,9 @@ When Serial is used as a function driver, the following considerations apply to 
 
 -   Serenum must open an RS-232 port to enumerate the port. Clients that hold an RS-232 port open indefinitely should not use Serenum.
 
- 
+ 
 
- 
+ 
 
 
 

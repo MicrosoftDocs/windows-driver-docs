@@ -50,7 +50,7 @@ The KSPROPERTY\_AUDIO\_REVERB\_TIME property specifies the reverberation time. T
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type ULONG, and it specifies the number of seconds for which the reverberation will continue. It is expressed in seconds and the value can range from 0 through 255.9961 in 1/256th increments. To accommodate this, the property value should be expressed as a fixed point 16.16 value, where the following is true:
 
@@ -86,9 +86,9 @@ Requirements
 
 [**KSNODETYPE\_REVERB**](ksnodetype-reverb.md)
 
- 
+ 
 
- 
+ 
 
 
 

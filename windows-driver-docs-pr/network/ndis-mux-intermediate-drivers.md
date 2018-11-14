@@ -39,9 +39,9 @@ The following list describes examples of *n*-to-one MUX intermediate drivers:
 
 -   The MUX Intermediate Driver Sample is an n-to-one MUX intermediate driver. MUX creates multiple virtual miniports layered above a single underlying miniport adapter.
 
- 
+ 
 
- 
+ 
 
 
 

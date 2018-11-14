@@ -55,7 +55,7 @@ The SET\_OF\_INVALID\_CONTEXT bug check has a value of 0x00000030. This indicate
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -64,9 +64,9 @@ This bug check occurs when some routine attempts to set the stack pointer in the
 
 If this error were not caught, it would cause the kernel to run with a stack pointer pointing to stack which is no longer valid.
 
- 
+ 
 
- 
+ 
 
 
 

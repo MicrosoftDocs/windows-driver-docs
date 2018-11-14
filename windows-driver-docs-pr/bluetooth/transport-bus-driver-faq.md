@@ -1,6 +1,6 @@
 ---
 title: Transport Bus Driver FAQ
-description: The following are common questions, scenarions, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
+description: The following are common questions, scenarios, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
 ms.assetid: 7189EB3B-E071-4145-8308-EFA6D4E89D4B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Transport Bus Driver FAQ
 
 
-The following are common questions, scenarions, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
+The following are common questions, scenarios, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
 
 ## <span id="my_serial_bus_driver_encountered_some_error._what_does_it_mean_"></span><span id="MY_SERIAL_BUS_DRIVER_ENCOUNTERED_SOME_ERROR._WHAT_DOES_IT_MEAN_"></span>My serial bus driver encountered some error. What does it mean?
 
@@ -50,9 +50,9 @@ In this situation, the bus driver should complete the D2 transition, and then pr
 
 There is no way to tag a resource, GPIO or otherwise. This is why the resource order is important. The device driver should establish a convention (e.g. first GPIO resource to appear in the list is for BT\_WAKE and the second one to appear is for HOST\_WAKE).
 
- 
+ 
 
- 
+ 
 
 
 

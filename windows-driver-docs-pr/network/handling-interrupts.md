@@ -25,9 +25,9 @@ To queue additional DPCs after *MiniportInterrupt* returns, the miniport driver 
 
 The miniport driver can call **NdisMQueueDpc** to request additional DPC calls for other processors.
 
- 
+ 
 
- 
+ 
 
 
 

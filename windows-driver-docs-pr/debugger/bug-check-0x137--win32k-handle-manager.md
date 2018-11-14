@@ -31,13 +31,13 @@ The WIN32K\_HANDLE\_MANAGER bug check has a value of 0x00000137. This indicates 
 | 3         | Reserved                             |
 | 4         | Reserved                             |
 
- 
+ 
 
 Under some circumstances, additional parameters not listed here may be returned.
 
- 
+ 
 
- 
+ 
 
 
 

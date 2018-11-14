@@ -57,7 +57,7 @@ The following table describes the constants that are valid with the WIA\_IPA\_SU
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

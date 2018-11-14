@@ -29,8 +29,8 @@ Syntax
 DXGKDDI_SUBMITRENDER DxgkDdiSubmitRender;
 
 NTSTATUS DxgkDdiSubmitRender(
-   IN_CONST_HANDLE             hContext,
-   INOUT_PDXGKARG_SUBMITRENDER pSubmitRender
+   IN_CONST_HANDLE             hContext,
+   INOUT_PDXGKARG_SUBMITRENDER pSubmitRender
 )
 { ... }
 ```
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

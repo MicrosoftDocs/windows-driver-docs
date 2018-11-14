@@ -40,13 +40,13 @@ The following table lists attributes describing the printer's support for simula
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

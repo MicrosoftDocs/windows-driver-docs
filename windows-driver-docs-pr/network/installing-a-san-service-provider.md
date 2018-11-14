@@ -64,11 +64,11 @@ The vendor can also assign a unique name that represents this GUID, for example:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\Current Control Set\\Services\\Tcpip\\Parameters\\Interfaces\\*GUID*\\IPAutoconfigurationEnabled**
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ Filter drivers must call [**WdfFdoInitSetFilter**](https://msdn.microsoft.com/li
 
 The final step in creating a device object is to call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
- 
+ 
 
- 
+ 
 
 
 

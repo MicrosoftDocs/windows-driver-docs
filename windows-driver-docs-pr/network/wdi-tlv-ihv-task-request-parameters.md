@@ -31,7 +31,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The IHV-requested priority for this task. See [**WDI\_IHV\_TASK\_PRIORITY**](https://msdn.microsoft.com/library/windows/hardware/dn926064) for valid priority values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ LSOV2 supports IPv4 and IPv6 packets. The miniport driver must specify the follo
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

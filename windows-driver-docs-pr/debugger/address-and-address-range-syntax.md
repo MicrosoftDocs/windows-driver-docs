@@ -41,7 +41,7 @@ On x86-based platforms, CDB and KD support the following addressing modes. These
 <td align="left"><p>32-bit addresses (also 16-bit selectors that point to 32-bit segments) and 64-bit addresses on 64-bit systems.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&</p></td>
+<td align="left"><p>&amp;</p></td>
 <td align="left"><p>virtual 86</p></td>
 <td align="left"><p>Real-mode addresses. x86-based only.</p></td>
 </tr>
@@ -53,7 +53,7 @@ On x86-based platforms, CDB and KD support the following addressing modes. These
 </tbody>
 </table>
 
- 
+ 
 
 The difference between the plain and virtual 86 modes is that a plain 16-bit address uses the segment value as a selector and looks up the segment descriptor. But a virtual 86 address does not use selectors and instead maps directly into the lower 1 MB.
 
@@ -80,7 +80,7 @@ Address arguments specify the location of variables and functions. The following
 <td align="left"><p>The absolute address in virtual memory space, with a type that corresponds to the current execution mode. For example, if the current execution mode is 16 bit, the offset is 16 bit. If the execution mode is 32-bit segmented, the offset is 32-bit segmented.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>&</strong>[[ segment:]] offset</p></td>
+<td align="left"><p><strong>&amp;</strong>[[ segment:]] offset</p></td>
 <td align="left"><p>The real address. x86-based and x64-based.</p></td>
 </tr>
 <tr class="odd">
@@ -98,7 +98,7 @@ Address arguments specify the location of variables and functions. The following
 </tbody>
 </table>
 
- 
+ 
 
 Use the [**dg (Display Selector)**](dg--display-selector-.md) command to view segment descriptor information.
 
@@ -150,9 +150,9 @@ There are two other ways to specify the value (the **L***Size* range specifier):
 
 Some commands that ask for address ranges accept a single address as the argument. In this situation, the command uses some default object count to compute the size of the range. Typically, commands for which the address range is the final parameter permit this syntax. For the exact syntax and the default range size for each command, see the reference topics for each command.
 
- 
+ 
 
- 
+ 
 
 
 

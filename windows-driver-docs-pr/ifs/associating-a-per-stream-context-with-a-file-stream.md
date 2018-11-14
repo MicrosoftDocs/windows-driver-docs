@@ -29,9 +29,9 @@ If [**FsRtlLookupPerStreamContext**](https://msdn.microsoft.com/library/windows/
 
 After [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) is called for a per-stream context, the file system assumes responsibility for deleting and freeing it. If your filter driver allocates a per-stream context and does not call **FsRtlInsertPerStreamContext** for it, your filter driver is still responsible for freeing it by calling [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590).
 
- 
+ 
 
- 
+ 
 
 
 

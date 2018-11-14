@@ -25,9 +25,9 @@ Bus drivers are essentially function drivers, or rarely a filter driver, that al
 
 Bus drivers also have the same PnP and power management responsibilities that function drivers have. For information about these responsibilities, see [Supporting PnP and Power Management in Function Drivers](supporting-pnp-and-power-management-in-function-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

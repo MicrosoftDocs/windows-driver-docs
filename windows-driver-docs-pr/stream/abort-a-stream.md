@@ -39,9 +39,9 @@ Status =
 
 When a data stream is aborted, it can be resumed (if the device has not been removed) after its stream state has been reset to **KSSTATE\_STOP** by its client application.
 
- 
+ 
 
- 
+ 
 
 
 

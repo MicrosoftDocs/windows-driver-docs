@@ -11,19 +11,19 @@ ms.localizationpriority: medium
 
 This topic shows a sample INF file that installs a driver package on various operating systems and platforms. This INF file has the following INF sections and directives:
 
--   A decorated [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) for device installation on x86-based systems that are running:
+- A decorated [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) for device installation on x86-based systems that are running:
 
-    -   Microsoft Windows 2000
+  -   Microsoft Windows 2000
 
-    -   Windows XP
+  -   Windows XP
 
-    -   Windows Vista or later versions of Windows
+  -   Windows Vista or later versions of Windows
 
--   A decorated [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) for device installation on x86- and AMD64-based systems that are running Windows Vista or later versions of Windows.
+- A decorated [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) for device installation on x86- and AMD64-based systems that are running Windows Vista or later versions of Windows.
 
--   An [**INF *DDInstall***](inf-ddinstall-section.md) and [***DDInstall*.Services**](inf-ddinstall-services-section.md) that creates the service and registry entries on the target x86- and AMD64-based systems.
+- An [**INF *DDInstall***](inf-ddinstall-section.md) and [***DDInstall*.Services**](inf-ddinstall-services-section.md) that creates the service and registry entries on the target x86- and AMD64-based systems.
 
--   [**INF CopyFiles directives**](inf-copyfiles-directive.md) that copies platform-specific files to the target x86- and AMD64-based systems.
+- [**INF CopyFiles directives**](inf-copyfiles-directive.md) that copies platform-specific files to the target x86- and AMD64-based systems.
 
 ```cpp
 [Version]
@@ -142,9 +142,9 @@ DiskId1                    = "Microsoft Virtual Miniport Device Installation Dis
 
 The sample INF file (*MultiOS.inf*), which is included in the Windows Driver Kit (WDK), shows how a single INF file can be used to install a device on multiple versions of Windows. This file is in the *src\\print\\infs\\MultiOS* directory of the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -57,7 +57,7 @@ This table shows the mapping of a legacy driver's callback transfer messages to 
 </tbody>
 </table>
 
- 
+ 
 
 ### File Transfers
 
@@ -104,7 +104,7 @@ This table shows the mapping of a legacy driver's file transfer messages to the 
 </tbody>
 </table>
 
- 
+ 
 
 For more information on the legacy transfer messages, see the [IWiaMiniDrvCallBack Interface](https://msdn.microsoft.com/library/windows/hardware/ff543943).
 
@@ -112,9 +112,9 @@ For more information on the TYMED constants, see [Understanding TYMED](understan
 
 The **IStream** interface is described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

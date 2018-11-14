@@ -25,9 +25,9 @@ If the offload target receives any data on an offloaded TCP connection while the
 
 Before terminating the offload of a TCP connection, an offload target stops its push timer for the connection. In addition to uploading the connection, the offload target also uploads any receive data on the connection that it has not indicated to the application. (For more information about uploading such data, see [Handling Buffered Receive Data During a Terminate Offload Operation](handling-buffered-receive-data-during-a-terminate-offload-operation.md).) After the connection has been uploaded, the host stack restarts its push timer for the connection.
 
- 
+ 
 
- 
+ 
 
 
 

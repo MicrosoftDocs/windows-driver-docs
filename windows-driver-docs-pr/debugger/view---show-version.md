@@ -20,9 +20,9 @@ This command is equivalent to pressing CTRL+ALT+W (and pressing CTRL+W in KD).
 
 This command has the same effect as the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command, except that the latter command also displays the version of the Microsoft Windows operating system.
 
- 
+ 
 
- 
+ 
 
 
 

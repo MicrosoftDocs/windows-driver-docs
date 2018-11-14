@@ -36,9 +36,9 @@ The miniport driver should set the **BackfillSize** member of the NDIS\_HD\_SPLI
 
 The miniport driver should set the **MaxHeaderSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565694) structure to zero before calling **NdisMSetMiniportAttributes**. NDIS sets this member to the maximum size that is allowed for the header buffer of the split frames. After **NdisMSetMiniportAttributes** successfully returns, the miniport driver must use the **MaxHeaderSize** value that NDIS specified. For more information about the maximum header size, see [Allocating the Header Buffer](allocating-the-header-buffer.md).
 
- 
+ 
 
- 
+ 
 
 
 

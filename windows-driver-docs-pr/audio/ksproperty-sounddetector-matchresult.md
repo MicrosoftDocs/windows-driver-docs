@@ -44,13 +44,13 @@ The **KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT** property holds the result data fo
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>SOUNDDETECTOR_PATTERNHEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/dn957513)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn957513" data-raw-source="[&lt;strong&gt;SOUNDDETECTOR_PATTERNHEADER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn957513)"><strong>SOUNDDETECTOR_PATTERNHEADER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -92,9 +92,9 @@ Requirements
 
 [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
 
- 
+ 
 
- 
+ 
 
 
 

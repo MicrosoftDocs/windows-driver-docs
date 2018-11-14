@@ -48,9 +48,9 @@ To create a request object, your driver should call [**WdfRequestCreate**](https
 
 If a driver receives WDM IRPs in a WDM dispatch routine and then services or forwards them by using the framework, the driver can call [**WdfRequestCreateFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549953).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,13 +46,13 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 <strong>Note</strong>  A Wi-Fi Direct Discover Request may override the default probe request IEs.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

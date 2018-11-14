@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentDescription</strong>](documentdescription.md)</p></td>
+<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Documents</strong>](documents.md)</p></td>
+<td><p><a href="documents.md" data-raw-source="[&lt;strong&gt;Documents&lt;/strong&gt;](documents.md)"><strong>Documents</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -77,9 +77,9 @@ There are no attributes.
 
 [**Documents**](documents.md)
 
- 
+ 
 
- 
+ 
 
 
 

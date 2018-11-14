@@ -43,9 +43,9 @@ To determine the class properties that are set for a device class on a remote co
 
 -   In addition to supplying the parameter values that are required for both [**SetupDiGetClassPropertyKeysEx**](https://msdn.microsoft.com/library/windows/hardware/ff551093) and [**SetupDiGetClassPropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551091), supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -88,9 +88,9 @@ Long and undefined. Only physical interaction returns the system to the working 
 <a href="" id="system-hardware-context"></a>**System hardware context**  
 None retained in hardware. The system writes an image of memory in the hibernate file before powering down. When the operating system is loaded, it reads this file and jumps to its previous location.
 
- 
+ 
 
- 
+ 
 
 
 

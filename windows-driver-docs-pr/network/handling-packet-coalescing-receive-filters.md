@@ -29,7 +29,7 @@ As soon as the network adapter has been configured with receive filters, it must
 
     **Note**  The network adapter must not reconfigure the hardware timer if the time that is remaining on the timer is less than a receive filter's expiration time.
 
-     
+     
 
 -   As soon as received packets are coalesced, the network adapter generates an interrupt if any of the following events occur:
 
@@ -57,9 +57,9 @@ When the network adapter transitions to a full-power state, the miniport driver 
 
 -   The miniport driver must clear the coalesced packet counter.
 
- 
+ 
 
- 
+ 
 
 
 

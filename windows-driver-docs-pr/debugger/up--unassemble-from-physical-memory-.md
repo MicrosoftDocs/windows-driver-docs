@@ -57,7 +57,7 @@ Specifies the beginning of the memory range in physical memory to disassemble. E
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +70,9 @@ If you do not specify a parameter for the **up** command, the disassembly begins
 
 Do not confuse this command with the [**u (Unassemble)**](u--unassemble-.md). The **up** command disassembles only physical memory, while the **u** command disassembles only virtual memory.
 
- 
+ 
 
- 
+ 
 
 
 

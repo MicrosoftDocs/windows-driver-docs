@@ -26,9 +26,9 @@ NDIS 6.0 can call the protocol driver's receive entry point at IRQL&lt;= DISPATC
 
 For an overview of receive operations, see [Receiving Network Data](receiving-network-data.md). For more information about CoNDIS protocol driver receive operations, see [Receiving NET\_BUFFER Structures in CoNDIS Drivers](receiving-net-buffer-structures-in-condis-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

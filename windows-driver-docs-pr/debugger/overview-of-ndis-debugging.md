@@ -19,9 +19,9 @@ There is also an NDIS-specific bug check code, bug check 0x7C (BUGCODE\_NDIS\_DR
 
 Another useful tool for testing an NDIS driver is NDIS Verifier. For more information, consult the NDIS Verifier topic in the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

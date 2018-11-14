@@ -43,9 +43,9 @@ The **HSTRING** data type supports strings that have embedded NULL characters. H
 
 [**!winrterr**](-winrterr.md)
 
- 
+ 
 
- 
+ 
 
 
 

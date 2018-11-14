@@ -36,9 +36,9 @@ The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardwar
 
 4.  Pass the returned status as its own function return value.
 
- 
+ 
 
- 
+ 
 
 
 

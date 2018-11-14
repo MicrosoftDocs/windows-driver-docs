@@ -71,11 +71,11 @@ If these steps are not successful it is possible that the hard drive has failed.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

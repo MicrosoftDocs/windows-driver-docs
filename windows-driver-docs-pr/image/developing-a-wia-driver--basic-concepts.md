@@ -31,9 +31,9 @@ This section introduces a number of basic concepts involved in the creation of W
 
 [WIA Driver Errors](wia-driver-error-handling-and-recovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

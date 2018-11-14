@@ -28,9 +28,9 @@ This section describes adapter objects and [*AdapterControl*](https://msdn.micro
 
 [Writing AdapterControl Routines](writing-adaptercontrol-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

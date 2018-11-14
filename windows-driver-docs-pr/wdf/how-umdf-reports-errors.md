@@ -42,9 +42,9 @@ A UMDF error report can contain the following information. The contents of the r
 
 -   Analysis of the problem, which can include the address of the last driver-to-framework call (or vice versa), problem code, exception information, and so on
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Because the child driver can call into the miniport driver without the video por
 
 A child device is enumerated by [*HwVidGetVideoChildDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff567341).
 
- 
+ 
 
- 
+ 
 
 
 

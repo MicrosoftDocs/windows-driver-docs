@@ -30,9 +30,9 @@ The following sections describe CCD concepts:
 
 [Scaling the Desktop Image](scaling-the-desktop-image.md)
 
- 
+ 
 
- 
+ 
 
 
 

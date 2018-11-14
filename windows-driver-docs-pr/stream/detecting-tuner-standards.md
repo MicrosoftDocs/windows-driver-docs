@@ -23,9 +23,9 @@ A video capture minidriver that supports the KSPROPERTY\_TUNER\_STANDARD\_MODE p
 
 For analog signals, the audio standards (PAL\_B / PAL\_G - NICAM / BTSC) are the most difficult to detect. However, if suitable logic is embedded in the minidriver, the minidriver will be able to automatically detect these audio standards too.
 
- 
+ 
 
- 
+ 
 
 
 

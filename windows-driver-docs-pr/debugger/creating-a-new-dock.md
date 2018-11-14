@@ -24,9 +24,9 @@ You can create as many docks as you want.
 
 To close a dock and any debugging information windows that are currently docked there, click the **Close** button in the upper-right corner of the dock.
 
- 
+ 
 
- 
+ 
 
 
 

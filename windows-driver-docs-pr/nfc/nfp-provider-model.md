@@ -26,9 +26,9 @@ Two PCs with incompatible NFP providers will not be able to communicate through 
 
 NFP providers pre-stage their communication using a pub/sub model whose transmission is triggered by a proximate event of the underlying NFP technology. Messages are published and subscribed to based on a message type. When two devices become proximate according to the NFP technology, the proximity state is triggered and all currently published messages are transmitted to current subscribers on the other device. This mechanism provides a model where the user sets some context on his device, then taps it with another device to complete the scenario in an easy way.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

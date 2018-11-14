@@ -20,7 +20,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 **Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx).
 
- 
+ 
 
 ### Cross-Certificates
 
@@ -80,9 +80,9 @@ After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk*
 
 2.  Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ The Microsoft Windows print processor supports Asian languages that read from ri
 
 The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff548581) and [**ATTRIBUTE\_INFO\_4**](https://msdn.microsoft.com/library/windows/hardware/ff545096).
 
- 
+ 
 
- 
+ 
 
 
 

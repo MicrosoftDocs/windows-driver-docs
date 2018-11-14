@@ -24,9 +24,9 @@ Consequently, the *Unload* routines of PnP drivers are usually simple, often con
 
 The I/O manager frees the driver object and any driver object extension that the driver allocated using [**IoAllocateDriverObjectExtension**](https://msdn.microsoft.com/library/windows/hardware/ff548233).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 
 ## Properties
 Every heap object will have these properties.
+
 | Property | Description |
 | --- | --- |
 | Action | Describes the action that occurred. Possible values are: Alloc, ReAlloc, Free, Create, Protect, Lock, Unlock, Destroy. |
@@ -20,6 +21,7 @@ Every heap object will have these properties.
 
 ### Conditional properties
 Depending on the heap object, it may have some of the properties below.
+
 | Property | Description |
 | --- | --- |
 | Address | The address of the allocated object. |
@@ -33,6 +35,7 @@ Depending on the heap object, it may have some of the properties below.
 | MakeReadOnly | A non-zero value indicates a request to make the heap read-only; A zero value indicates the heap should be read-write. |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | TimeStart | A [position object](time-travel-debugging-position-objects.md) that describes the position at the start of the allocation. |

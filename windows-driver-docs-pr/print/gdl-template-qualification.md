@@ -34,9 +34,9 @@ When a template is named in a \*Members list, the GDL parser considers the named
     -   Of the remaining qualifying templates, the most derived template will be used.
     -   Of the remaining qualifying templates, the most recently defined template will be used.
 
- 
+ 
 
- 
+ 
 
 
 

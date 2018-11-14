@@ -54,7 +54,7 @@ Specifies the system to display. If you omit this parameter, all systems that yo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -93,9 +93,9 @@ The following command displays system number 2.
 3:2:005> ||2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

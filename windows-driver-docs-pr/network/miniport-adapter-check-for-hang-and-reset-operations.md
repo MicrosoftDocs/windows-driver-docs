@@ -59,9 +59,9 @@ Starting in NDIS 6.83, these callback functions are discouraged on **all** Windo
 
 [Miniport Driver Reset and Halt Functions](https://msdn.microsoft.com/library/windows/hardware/ff564064)
 
- 
+ 
 
- 
+ 
 
 
 

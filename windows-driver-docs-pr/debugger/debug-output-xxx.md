@@ -3,7 +3,7 @@ title: DEBUG\_OUTPUT\_XXX
 description: The DEBUG\_OUTPUT\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 ms.assetid: 0c500a2e-0817-45de-8607-4cd4a29d5813
 ms.author: domars
-ms.date: 12/07/2017
+ms.date: 11/13/2018
 topic_type:
 - apiref
 api_name:
@@ -17,6 +17,7 @@ api_name:
 - DEBUG_OUTPUT_DEBUGGEE
 - DEBUG_OUTPUT_DEBUGGEE_PROMPT
 - DEBUG_OUTPUT_SYMBOLS
+- DEBUG_OUTPUT_STATUS
 api_location:
 - DbgEng.h
 api_type:
@@ -93,6 +94,11 @@ The possible values include the following.
 <strong>DEBUG_OUTPUT_SYMBOLS</strong></td>
 <td align="left"><p>Symbol messages (for example, <strong>!sym noisy</strong>).</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><span id="DEBUG_OUTPUT_STATUS "></span><span id="debug_output_status"></span>
+<strong>DEBUG_OUTPUT_STATUS </strong></td>
+<td align="left"><p>Output which modifies the status bar.</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -112,9 +118,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

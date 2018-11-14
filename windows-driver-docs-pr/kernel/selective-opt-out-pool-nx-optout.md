@@ -20,9 +20,9 @@ This definition overrides the global opt-in settings in the selected file, and p
 
 An alternative to using the POOL\_NX\_OPTOUT opt-out mechanism in a source file is to explicitly replace each instance of **NonPagedPool** in the file with **NonPagedPoolExecute**.
 
- 
+ 
 
- 
+ 
 
 
 

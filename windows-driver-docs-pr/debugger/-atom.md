@@ -50,15 +50,15 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about atoms and atom tables, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

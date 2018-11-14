@@ -64,9 +64,9 @@ For more information about these interfaces, see [Controlling Targets](controlli
 
 WDTF includes a simple query language, Simple Data Evaluation Language (SDEL), that is similar to XPath and that simplifies the task of collecting targets based on attributes or relationships. SDEL enables you to form brief query statements that define selection constraints based on both the attributes of each target and relationships between them. For more information about SDEL, see [Simple Data Evaluation Language Overview](simple-data-evaluation-language-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

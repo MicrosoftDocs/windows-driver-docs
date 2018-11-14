@@ -33,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CIPHER\_KEY\_ID**](wdi-tlv-cipher-key-id.md)                |                                | X        | Specifies the cipher key ID. At least one of WDI\_TLV\_PEER\_MAC\_ADDRESS or WDI\_TLV\_CIPHER\_KEY\_ID must be present.    |
 | [**WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO**](wdi-tlv-cipher-key-type-info.md) |                                |          | Specifies the cipher key type information.                                                                                 |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

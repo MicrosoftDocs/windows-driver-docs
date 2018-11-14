@@ -56,7 +56,7 @@ Remarks
     This command requires level 3 or higher.
 ```
 
- 
+ 
 
 The NBL log shows network traffic on the system. [**!ndiskd.netreport**](-ndiskd-netreport.md) parses the NBL tracking log to display this network traffic visually. Therefore, if NBL tracking is not enabled, **!ndiskd.netreport** will not be able to show you this information.
 
@@ -116,9 +116,9 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 
 [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -84,7 +84,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>parameter</strong>](parameter.md)</p></td>
+<td><p><a href="parameter.md" data-raw-source="[&lt;strong&gt;parameter&lt;/strong&gt;](parameter.md)"><strong>parameter</strong></a></p></td>
 <td><p></p>
 <p>An optional element that specifies text strings that substitute for parameters in a body text specification.</p></td>
 </tr>
@@ -107,12 +107,12 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message balloon on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>messageBoxUI</strong>](messageboxui.md)</p></td>
+<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message box on the client computer.</p></td>
 </tr>

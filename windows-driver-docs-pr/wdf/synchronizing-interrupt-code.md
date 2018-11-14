@@ -61,9 +61,9 @@ Because of all of these factors, you must use the following rules when writing d
 
 For more information about synchronizing driver routines, see [Synchronization Techniques for Framework-Based Drivers](synchronization-techniques-for-wdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

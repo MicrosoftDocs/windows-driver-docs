@@ -61,9 +61,9 @@ If a code path is guaranteed to run with all APCs disabled, the driver can inste
 
 Guarded mutexes cannot be acquired recursively. If a thread that is already holding a guarded mutex tries to acquire it, that thread will deadlock. Guarded mutexes can be used only in code that runs at IRQL &lt;= APC\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

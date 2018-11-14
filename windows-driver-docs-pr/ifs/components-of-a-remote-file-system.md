@@ -42,9 +42,9 @@ The following sections discuss concepts that are important to developers of remo
 
 [Kernel Network Redirector Driver Components](kernel-network-redirector-driver-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

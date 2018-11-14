@@ -24,9 +24,9 @@ This section includes the following topics:
 [Device Requirements for USB Video Class Extension Units](device-requirements-for-usb-video-class-extension-units.md)
 [Extension Unit Plug-In Architecture](extension-unit-plug-in-architecture.md)
 [UVC Extension Unit Code Samples](uvc-extension-unit-code-samples.md)
- 
+ 
 
- 
+ 
 
 
 

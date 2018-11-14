@@ -68,11 +68,11 @@ This includes the following settings:
 | Custom property settings | The Windows 10 camera app no longer supports the setting of custom properties by property GUID and value.                                                                                                      |
 | Custom menu Items        | The Windows 10 camera app no longer supports the addition of custom menu items.                                                                                                                                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

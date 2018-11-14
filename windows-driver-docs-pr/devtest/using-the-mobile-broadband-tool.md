@@ -20,9 +20,9 @@ After you launch the **Mobile Broadband** tool, the **Welcome to the Metadata Au
 
 For more information about developing mobile operator apps, see [Mobile Broadband: UWP device app](http://go.microsoft.com/fwlink/p/?linkid=241446).
 
- 
+ 
 
- 
+ 
 
 
 

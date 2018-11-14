@@ -54,7 +54,7 @@ A peakmeter node should provide a property handler for the property flags (see [
 </tbody>
 </table>
 
- 
+ 
 
 The property handler should verify input parameters and left and right channel information.
 
@@ -73,21 +73,21 @@ A peakmeter node should also support the properties in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>KSPROPERTY_AUDIO_PEAKMETER</strong>](ksproperty-audio-peakmeter.md)</p></td>
+<td align="left"><p><a href="ksproperty-audio-peakmeter.md" data-raw-source="[&lt;strong&gt;KSPROPERTY_AUDIO_PEAKMETER&lt;/strong&gt;](ksproperty-audio-peakmeter.md)"><strong>KSPROPERTY_AUDIO_PEAKMETER</strong></a></p></td>
 <td align="left"><p>Represents the peakmeter control.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>KSPROPERTY_AUDIO_CPU_RESOURCES</strong>](ksproperty-audio-cpu-resources.md)</p></td>
-<td align="left"><p>Indicates whether the specified node's functionality makes use of the host CPU.</p></td>
+<td align="left"><p><a href="ksproperty-audio-cpu-resources.md" data-raw-source="[&lt;strong&gt;KSPROPERTY_AUDIO_CPU_RESOURCES&lt;/strong&gt;](ksproperty-audio-cpu-resources.md)"><strong>KSPROPERTY_AUDIO_CPU_RESOURCES</strong></a></p></td>
+<td align="left"><p>Indicates whether the specified node&#39;s functionality makes use of the host CPU.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

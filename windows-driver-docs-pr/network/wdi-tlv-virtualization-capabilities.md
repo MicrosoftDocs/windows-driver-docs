@@ -36,7 +36,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | The maximum number of separate channels that the device can operate in and maintain data connections on simultaneously. This limit should not include temporary multichannel operations like scans and Wi-Fi Direct negotiations. |
 | UINT8 | The maximum number of supported simultaneous STA/WFD clients.                                                                                                                                                                     |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +62,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

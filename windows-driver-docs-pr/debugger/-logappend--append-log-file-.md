@@ -31,7 +31,7 @@ Writes the log file in Unicode format. If you omit this parameter, the debugger 
 
 **Note**   When you are appending to an existing log file, you should use the **/u** parameter only if you created the log file by using the **/u** option. Otherwise, your log file will contain ASCII and Unicode characters, which might make it more difficult to read.
 
- 
+ 
 
 <span id="_______FileName______"></span><span id="_______filename______"></span><span id="_______FILENAME______"></span> *FileName*   
 Specifies the name of the log file. You can specify a full path or only the file name. If the file name contains spaces, enclose *FileName* in quotation marks. If you do not specify the path, the debugger uses the current directory. If you omit *FileName*, the debugger names the file Dbgeng.log.
@@ -59,16 +59,16 @@ Specifies the name of the log file. You can specify a full path or only the file
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 If you already have a log file open when you run the **.logappend** command, the debugger closes the log file. If you specify the name of a file that already exists, the debugger appends new information to the file. If the file does not exist, the debugger creates it.
 
- 
+ 
 
- 
+ 
 
 
 

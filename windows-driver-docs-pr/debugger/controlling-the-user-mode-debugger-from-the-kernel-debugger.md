@@ -22,7 +22,7 @@ You can use either CDB or NTSD as the user-mode debugger. NTSD is the better cho
 
 **Note**  The [**.shell**](-shell--command-shell-.md) command is not supported when the output of a user-mode debugger is redirected to the kernel debugger.
 
- 
+ 
 
 This section includes the following:
 
@@ -34,9 +34,9 @@ This section includes the following:
 
 -   [Combining This Method with Remote Debugging](combining-this-method-with-remote-debugging.md) describes how to control the user-mode debugger from a kernel debugger, and use it as a debugging server at the same time. This combination can be useful if your user-mode symbols are located on a symbol server.
 
- 
+ 
 
- 
+ 
 
 
 

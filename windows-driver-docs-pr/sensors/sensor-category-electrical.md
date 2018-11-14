@@ -35,7 +35,7 @@ This category includes the following platform-defined sensor types.
 |SENSOR_TYPE_RESISTANCE|Resistance sensors|
 |SENSOR_TYPE_VOLTAGE|Voltage sensors.|
 
- 
+ 
 
 ## Platform-defined Data Fields
 
@@ -50,7 +50,7 @@ This category includes the following platform-defined data fields.
 |SENSOR_DATA_TYPE_RESISTANCE_OHMS|VT_R8|>Resistance in ohms.|
 |SENSOR_DATA_TYPE_VOLTAGE_VOLTS|VT_R8|Electrical potential in volts.|
 
- 
+ 
 
 ## Requirements
 
@@ -63,9 +63,9 @@ This category includes the following platform-defined data fields.
 |Header|Sensors.h|
 
 
- 
+ 
 
- 
+ 
 
 
 

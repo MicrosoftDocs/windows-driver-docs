@@ -76,7 +76,7 @@ Pointer to a caller-supplied [**SECURITY\_INFORMATION**](security-information.md
 </tbody>
 </table>
 
- 
+ 
 
 **Length**  
 Length, in bytes, of the buffer that **SecurityBuffer** points to.
@@ -129,9 +129,9 @@ Requirements
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

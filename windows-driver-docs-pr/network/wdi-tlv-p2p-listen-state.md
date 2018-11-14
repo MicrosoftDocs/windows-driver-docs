@@ -31,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------------------------------------------------------------|----------------------------------------|
 | [**WDI\_P2P\_LISTEN\_STATE**](https://msdn.microsoft.com/library/windows/hardware/dn926097) | The desired Wi-Fi Direct listen state. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

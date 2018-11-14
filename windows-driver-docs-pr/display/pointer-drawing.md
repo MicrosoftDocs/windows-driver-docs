@@ -22,9 +22,9 @@ GDI supports both color pointers and monochrome pointers. The shape of a monochr
 
 Calls to the pointer functions are serialized by GDI. This means two different threads in the driver cannot execute the pointer functions simultaneously. There are two possible pointer functions: [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289) and [**DrvMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff556248).
 
- 
+ 
 
- 
+ 
 
 
 

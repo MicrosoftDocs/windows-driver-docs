@@ -17,9 +17,9 @@ The following sections show examples of GDL source code.
 
 [GDL Tutorials](gdl-tutorials.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ In addition, drivers might perform certain power tasks, such as powering on a de
 
 For more information, see [Power Management Responsibilities for Drivers](power-management-responsibilities-for-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

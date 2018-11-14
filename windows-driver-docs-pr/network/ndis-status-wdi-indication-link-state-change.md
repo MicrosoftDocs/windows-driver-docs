@@ -21,7 +21,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_LINK\_STATE\_CHANGE to indic
 |--------|
 | Port   |
 
- 
+ 
 
 This information from this indication is used by the host to keep track of metadata about the current link, and it may be propagated to the user.
 
@@ -34,7 +34,7 @@ In Station and P2P Client cases, the Peer MAC Address is set to the BSSID of the
 |------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------|
 | [**WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn897842) |                                |          | The link state change parameters. |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

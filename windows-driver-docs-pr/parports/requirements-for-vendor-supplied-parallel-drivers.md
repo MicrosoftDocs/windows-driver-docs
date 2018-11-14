@@ -29,9 +29,9 @@ The following topics describe how a vendor-supplied function driver for a parall
 
 [Operating a Parallel Device Attached to a Parallel Port](operating-a-parallel-device-attached-to-a-parallel-port.md)
 
- 
+ 
 
- 
+ 
 
 
 

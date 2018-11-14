@@ -31,7 +31,7 @@ To call **SetupWriteTextLogInfLine**, an application supplies the following info
 
 **SetupWriteTextLogInfLine** writes a log entry in the following format:
 
-*entry_prefix time_stamp* **inf:***indentation inf-line-text* **(***inf-file-name* **line** *line-number***)**
+*entry_prefix time_stamp* **inf:**<em>indentation inf-line-text</em> **(**<em>inf-file-name</em> **line** <em>line-number</em>**)**
 
 Where:
 
@@ -65,9 +65,9 @@ For this example, the following shows the type of log entry that **SetupWriteTex
    inf:      AddReg=HidServ_AddService_AddReg  (hidserv.inf line 98)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

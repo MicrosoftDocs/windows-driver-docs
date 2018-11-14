@@ -17,7 +17,7 @@ The data in the PackageInfo.xml document is formatted based on the PackageInfo X
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For the complete definition of the PackageInfo XML schema, see [PackageInfo XML schema definition](packageinfo-xml-schema-definition.md).
 
@@ -27,9 +27,9 @@ For information about the data types that are defined by the PackageInfo XML sch
 
 For an example of XML data in the format that is defined by the PackageInfo XML schema, see [PackageInfo XML Example](packageinfo-xml-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

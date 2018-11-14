@@ -40,9 +40,9 @@ The TID column gives the thread ID for each thread. The LASTTIME column contains
 
 Whenever the server receives a request, at least one thread will change state, and its time stamp will be updated. Therefore, if an RPC request is made to the server and the request fails but none of the time stamps change, this indicates that the request is not actually reaching the RPC Run-Time. You should investigate the cause of this.
 
- 
+ 
 
- 
+ 
 
 
 

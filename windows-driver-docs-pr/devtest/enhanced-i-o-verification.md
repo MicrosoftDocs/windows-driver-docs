@@ -60,7 +60,7 @@ You can activate the Enhanced I/O Verification feature for one or more drivers b
 
 **Note**  In Windows 7 and later versions of the Windows operating system, Enhanced I/O Verification is automatically activated when you select [I/O Verification](i-o-verification.md). It is not available or necessary to select it as a separate option.
 
- 
+ 
 
 -   **At the command line**
 
@@ -89,9 +89,9 @@ You can activate the Enhanced I/O Verification feature for one or more drivers b
 
     The DMA Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

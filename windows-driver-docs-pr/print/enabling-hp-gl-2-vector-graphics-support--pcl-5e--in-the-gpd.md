@@ -104,9 +104,9 @@ A GPD file for a color printer should also define a ColorMode feature, as shown 
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

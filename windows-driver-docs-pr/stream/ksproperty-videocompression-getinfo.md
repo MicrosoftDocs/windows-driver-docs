@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO property retrieves the video compressi
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565979)</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565979)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565979" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565979)"><strong>KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565979" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565979)"><strong>KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S structure that specifies video compression settings such as the stream whose compression capabilities are to be queried, default key frame rate, default predicted frame rate, default quality setting, number of quality settings, and various compression capabilities.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565979)
 
- 
+ 
 
- 
+ 
 
 
 

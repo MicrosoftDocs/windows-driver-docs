@@ -24,9 +24,9 @@ If the driver returns a [**FORMATOP**](https://msdn.microsoft.com/library/window
 
 The driver only receives requests to create resources with the D3DDDIFMT\_A2B10G10R10\_XR\_BIAS format for full-screen flipping chains. The Desktop Windows Manager (DWM) handles windowed presentation of XR\_BIAS in shader code. The driver should treat D3DDDIFMT\_A2B10G10R10\_XR\_BIAS-format resources as the D3DDDIFMT\_A2B10G10R10 format in all operations except scan out, For example, the driver can treat D3DDDIFMT\_A2B10G10R10\_XR\_BIAS-format resources as the D3DDDIFMT\_A2B10G10R10 format for blending, filtering, and format-conversion operations. The only difference is how XR\_BIAS affects scan-out. For more information about scan-out, see [BGRA Scan-Out Support](bgra-scan-out-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

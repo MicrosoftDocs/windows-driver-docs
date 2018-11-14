@@ -48,7 +48,7 @@ Specifies the base address of the image.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +63,9 @@ Here is an example:
 5d160000 ShimEng - at preferred address
 ```
 
- 
+ 
 
- 
+ 
 
 
 

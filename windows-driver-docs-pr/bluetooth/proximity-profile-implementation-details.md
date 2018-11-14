@@ -28,9 +28,9 @@ As mentioned in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md), W
 
 Apps can monitor the connection state of GATT devices by using a PnpObjectWatcher and monitor the PnP "Connected" property of the service Device Object. This technique is demonstrated in the [Bluetooth Generic Attribute Profile - Heart Rate Service](http://go.microsoft.com/fwlink/p/?linkid=301978) sample.
 
- 
+ 
 
- 
+ 
 
 
 

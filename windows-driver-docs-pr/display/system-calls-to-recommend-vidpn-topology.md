@@ -13,9 +13,9 @@ On a computer running Windows 7, the display mode manager (DMM) determines an ap
 
 On Windows Vista and its service packs, DMM continues to call *DxgkDdiRecommendVidPnTopology* to request that the driver provide a recommended functional VidPN topology.
 
- 
+ 
 
- 
+ 
 
 
 

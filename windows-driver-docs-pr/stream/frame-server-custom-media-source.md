@@ -461,7 +461,7 @@ Just like any other physical camera, it is recommended that your stub driver man
 
 This ensures that applications listen for device add/removal via the PnP APIs get the proper notifications. And ensures that a source that is no longer available cannot be enumerated.
 
-For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState] (https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
+For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
 
 For WMD drivers, see the [IoSetDeviceInterfaceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) function documentation.
 
@@ -933,7 +933,7 @@ Because of this, in Windows 10, version 1809, Custom Media Sources may optionall
 
 ### IMFActivate
 
-If the COM server for the Custom Media Source supports **IMFActivate** interface, the device initialization information will be provided to the COM server through the **IMFAttributes** inherited by the **IMFActivate**. So when the [IMFActivate::ActivateObject](https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) is invoked, the attribute store of the **IMFActivate** will contain the symbolic link name of the UMDF stub driver and any additional configuration settings provided by the pipeline/application at the time of the the source creation/initialization.
+If the COM server for the Custom Media Source supports **IMFActivate** interface, the device initialization information will be provided to the COM server through the **IMFAttributes** inherited by the **IMFActivate**. So when the [IMFActivate::ActivateObject](https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) is invoked, the attribute store of the **IMFActivate** will contain the symbolic link name of the UMDF stub driver and any additional configuration settings provided by the pipeline/application at the time of the source creation/initialization.
 
 The Custom Media Source should use this method invocation to acquire any hardware resources it needs.
 

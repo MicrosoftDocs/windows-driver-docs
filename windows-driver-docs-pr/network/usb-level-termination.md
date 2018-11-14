@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 See the USB Specification for a description of generic USB bus-level termination.
 
- 
+ 
 
- 
+ 
 
 
 

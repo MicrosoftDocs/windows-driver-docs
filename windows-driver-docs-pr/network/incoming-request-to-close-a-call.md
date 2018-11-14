@@ -36,9 +36,9 @@ If the client originally created this VC for an outgoing call and *CloseStatus* 
 
 If the call manager or MCM driver originally created this VC for an incoming call, the call manager or MCM driver can optionally [delete the VC](deleting-a-vc.md) by respectively calling **NdisCoDeleteVc** or [**NdisMCmDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff562819).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 <p>2 - wchar_t* to the name of the missing function</p>
 <p>3 - Reserved</p>
 <p>4 - Reserved</p>
-0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite's shape is being deleted without deleting the sprite.
+0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite&#39;s shape is being deleted without deleting the sprite.
 <p>2 - Handle to the SURFACE</p>
 <p>3 - Reference count to the SURFACE</p>
 <p>4 - PID of the SURFACE owner</p>
@@ -97,11 +97,11 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

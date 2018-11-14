@@ -31,11 +31,11 @@ The SECURE\_BOOT\_VIOLATION bug check has a value of 0x00000145. This indicates 
 | 3         | Size of the Secure Boot policy.    |
 | 4         | Reserved                           |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

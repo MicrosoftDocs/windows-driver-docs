@@ -48,7 +48,7 @@ Specifies the address of an SRB.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ The addresses of all currently active requests can be found in the *SRB* fields 
 
 This extension displays the status of the SRB, the driver it is addressed to, the SCSI that issued the SRB and its address, and a hexadecimal flag value. If 0x10000 is set in the flag value, this request is currently in the miniport.
 
- 
+ 
 
- 
+ 
 
 
 

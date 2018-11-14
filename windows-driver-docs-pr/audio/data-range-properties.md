@@ -29,9 +29,9 @@ Constrained data ranges provide more accurate information about the current capa
 
 In the current PortCls implementation, the default data-intersection handlers in the port drivers use only an adapter's static data ranges.
 
- 
+ 
 
- 
+ 
 
 
 

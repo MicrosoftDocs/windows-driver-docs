@@ -104,7 +104,6 @@ DDIOnClientDisconnect(sensorID, clientID)
     effectiveRS = DriverUpdateRS(sensorID)
     effectivePS = DriverUpdatePS(sensorID)
 }
-
 ```
 
 ## Client event subscriptions

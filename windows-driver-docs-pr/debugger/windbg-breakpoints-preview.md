@@ -27,7 +27,7 @@ The breakpoint window keep a running total of each time the breakpoint is hit.
 
 The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
 
- 
+ 
 
 
 

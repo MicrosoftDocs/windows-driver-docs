@@ -29,11 +29,11 @@ Since there is no physical display device associated with a mirrored surface, al
 
 **Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

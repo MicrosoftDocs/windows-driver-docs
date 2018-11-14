@@ -60,16 +60,16 @@ If you omit *Options*, the current options are displayed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 You can also set kernel debugging options using the \_NT\_DEBUG\_OPTIONS [environment variable](kernel-mode-environment-variables.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ When running a trace session, users can use the trace level to determine which m
 
 Like trace flags, users can change the trace level while a trace session is running by reenabling the trace provider.
 
- 
+ 
 
- 
+ 
 
 
 

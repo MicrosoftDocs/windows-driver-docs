@@ -50,7 +50,7 @@ The **.record\_branches** command enables the recording of branches that the tar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -59,9 +59,9 @@ The **.record\_branches 1** command enables the recording of branches in the tar
 
 Without parameters, **.record\_branches** displays the current status of this setting.
 
- 
+ 
 
- 
+ 
 
 
 

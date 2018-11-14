@@ -140,9 +140,9 @@ The wdbgexts.h header file contains prototypes for the following functions. Thes
 
 [**ListType**](https://msdn.microsoft.com/library/windows/hardware/ff551988)
 
- 
+ 
 
- 
+ 
 
 
 

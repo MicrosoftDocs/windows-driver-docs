@@ -27,9 +27,9 @@ Mediums are a method to ensure connectivity between two pins on separate filters
 
 The DirectShow graph builder interfaces, **IFilterMapper2** and **ICaptureGraphBuilder**, use these methods to construct filter graphs based on both mediums and stream categories.
 
- 
+ 
 
- 
+ 
 
 
 

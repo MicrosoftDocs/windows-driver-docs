@@ -34,9 +34,9 @@ The topics that follow describe how a driver can implement the following operati
 
 [Image Color Management](image-color-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

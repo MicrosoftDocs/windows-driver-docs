@@ -20,9 +20,9 @@ UMDH has two different modes, each with its own command syntax and parameters:
 
 -   [**Analyze UMDH Logs**](analyze-umdh-logs.md) - Compares the allocation list made at two different times for the same process. Analyzing the differences can help to identify memory leaks.
 
- 
+ 
 
- 
+ 
 
 
 

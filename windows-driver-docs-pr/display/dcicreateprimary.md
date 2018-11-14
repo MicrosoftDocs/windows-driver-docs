@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCICreatePrimary** function creates a primary surface on the display device and obtains surface information.
 
- 
+ 
 
- 
+ 
 
 
 

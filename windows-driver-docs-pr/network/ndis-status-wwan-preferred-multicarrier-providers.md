@@ -43,9 +43,9 @@ Requirements
 
 [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/hh831864)
 
- 
+ 
 
- 
+ 
 
 
 

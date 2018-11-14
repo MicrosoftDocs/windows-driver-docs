@@ -29,9 +29,9 @@ This section contains the following topics:
 
 For more information about data transfers, see [Transferring Data to a WIA Application](transferring-data-to-a-wia-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

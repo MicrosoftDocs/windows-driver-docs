@@ -50,7 +50,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +80,9 @@ The State line also applies to the specific virtual address passed to **!vprot**
 
 The Type line shows the memory type. The possible values are MEM\_IMAGE, MEM\_MAPPED, and MEM\_PRIVATE.
 
- 
+ 
 
- 
+ 
 
 
 

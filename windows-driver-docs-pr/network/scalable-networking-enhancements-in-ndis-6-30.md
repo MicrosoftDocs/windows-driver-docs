@@ -19,11 +19,11 @@ Scalable networking includes the following enhancements for NDIS 6.30 and later 
 
 **Note**  NetDMA is not supported in Windows 8 and later versions of the Windows operating system.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

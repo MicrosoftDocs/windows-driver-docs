@@ -19,9 +19,9 @@ The display miniport driver specifies and returns information about its memory s
 
 From the returned segment information, the video memory manager determines the appropriate memory segment to page-in for the given operation.
 
- 
+ 
 
- 
+ 
 
 
 

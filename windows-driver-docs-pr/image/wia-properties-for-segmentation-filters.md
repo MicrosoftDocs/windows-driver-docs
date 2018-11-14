@@ -33,9 +33,9 @@ The remainder of this section discusses the following additional topic:
 
 [WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties](wia-ips-deskew-x-and-wia-ips-deskew-y-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

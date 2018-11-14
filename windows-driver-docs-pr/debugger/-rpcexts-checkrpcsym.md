@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 The **!rpcexts.checkrpcsym** extension command is obsolete; the output from the debugger should be sufficient to diagnose any RPC symbol problems.
 
- 
+ 
 
- 
+ 
 
 
 

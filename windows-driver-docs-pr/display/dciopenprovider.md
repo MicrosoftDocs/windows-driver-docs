@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCIOpenProvider** function obtains a display's device context handle.
 
- 
+ 
 
- 
+ 
 
 
 

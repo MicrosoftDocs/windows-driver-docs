@@ -23,9 +23,9 @@ When a NIC splits the header and data in a received Ethernet frame, the miniport
 
 The driver stack can use the pre-allocated backfill storage to copy the header portion of the frame and create a virtually contiguous frame for network drivers that cannot handle split Ethernet frames.
 
- 
+ 
 
- 
+ 
 
 
 

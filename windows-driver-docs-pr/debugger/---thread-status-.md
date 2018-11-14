@@ -51,7 +51,7 @@ Specifies the thread to display. If you omit this parameter, all threads are dis
 </tr>
 </tbody>
 </table>
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -105,9 +105,9 @@ The previous command displays the following output.
 
 On the first line of this output, 0 is the decimal thread number, 4DC is the hexadecimal process ID, 470 is the hexadecimal thread ID, 0x7FFDE000 is the address of the TEB, and **Unfrozen** is the thread status. The period (.) before thread 1 means this thread is the current thread. The number sign (\#) before thread 2 means this thread was the one that originally caused the exception or it was active when the debugger attached to the process.
 
- 
+ 
 
- 
+ 
 
 
 

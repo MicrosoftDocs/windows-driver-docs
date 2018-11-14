@@ -46,9 +46,9 @@ The following sections show how BDA property and method sets are used to impleme
 
 [Accessing Frequency Properties of a BDA Tuner Node](accessing-frequency-properties-of-a-bda-tuner-node.md)
 
- 
+ 
 
- 
+ 
 
 
 

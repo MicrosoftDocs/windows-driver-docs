@@ -44,12 +44,12 @@ The following table defines the **DeviceOverrides** registry key's format and re
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>None</p></td>
-<td align="left"><p>[HardwareID](hardwareid-registry-subkey.md) or [CompatibleID](compatibleid-registry-subkey.md)</p></td>
+<td align="left"><p><a href="hardwareid-registry-subkey.md" data-raw-source="[HardwareID](hardwareid-registry-subkey.md)">HardwareID</a> or <a href="compatibleid-registry-subkey.md" data-raw-source="[CompatibleID](compatibleid-registry-subkey.md)">CompatibleID</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Each removable device capability override is specified through either the **HardwareID** or **ContainerID** registry subkeys.
 
@@ -65,11 +65,11 @@ The **DeviceOverrides** registry key must be created for the first removable dev
 
 **Note**  The existence of a removable device capability registry override does not change the global state of the removable device capability on a devnode.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

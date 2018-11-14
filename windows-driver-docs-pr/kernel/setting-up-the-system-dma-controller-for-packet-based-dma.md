@@ -68,9 +68,9 @@ The context information each driver should maintain about its DMA transfers depe
 
 When the requested transfer is complete, or if the driver must return an error status for the IRP, the driver should call [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) promptly to release the system DMA controller for other drivers and this driver to use.
 
- 
+ 
 
- 
+ 
 
 
 

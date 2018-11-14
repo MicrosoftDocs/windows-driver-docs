@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The **\*ElementType** directive defines the data type of an element that is used in the template.
 
- 
+ 
 
- 
+ 
 
 
 

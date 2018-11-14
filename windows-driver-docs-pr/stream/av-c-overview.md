@@ -43,9 +43,9 @@ Typically, vendors write an AV/C subunit driver to provide support to:
 
 -   Manage plug connections to stream data based on IEC-61883 standards across the IEEE 1394 bus. For more information about the 61883 standards, see the [IEC](http://go.microsoft.com/fwlink/p/?linkid=8732) website.
 
- 
+ 
 
- 
+ 
 
 
 

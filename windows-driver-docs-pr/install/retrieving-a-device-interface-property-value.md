@@ -30,9 +30,9 @@ Starting with Windows Vista, follow these steps to retrieve the value of a [devi
 
 If the second call to **SetupDiGetDeviceInterfaceProperty** succeeds, **SetupDiGetDeviceInterfaceProperty** sets \**PropertyType* to the property-data-type identifier for the property, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

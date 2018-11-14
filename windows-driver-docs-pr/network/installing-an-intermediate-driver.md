@@ -30,7 +30,7 @@ The virtual miniport device is always removed from the user interface by using t
 
 **Note**  The **ExcludeFromSelect** directive does not remove the virtual device from the **Connections** dialog box. However, the NCF\_HIDDEN flag in the miniport driver INF file *DDInstall* section's **Characteristics** entry prevents the virtual miniport from being displayed in any part of the user interface, including the **Connections** dialog box.
 
- 
+ 
 
 This section provides information about intermediate INF files and notify objects. This information is described in the following topics:
 
@@ -40,9 +40,9 @@ This section provides information about intermediate INF files and notify object
 
 [Intermediate Driver Notify Object](intermediate-driver-notify-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

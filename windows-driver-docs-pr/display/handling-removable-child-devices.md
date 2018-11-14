@@ -23,9 +23,9 @@ A video miniport driver can detect a change to the attached monitor and perform 
 
 For an Advanced Configuration and Power Interface (ACPI) enumerated monitor, the first mechanism is generally preferable because 32-bit device IDs are tied to the BIOS implementation. Therefore, specifying a different 32-bit device ID might not be possible.
 
- 
+ 
 
- 
+ 
 
 
 

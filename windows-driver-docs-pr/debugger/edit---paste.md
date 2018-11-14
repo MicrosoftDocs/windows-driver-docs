@@ -24,9 +24,9 @@ You can use the **Paste** command only with docked or tabbed windows. But you ca
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

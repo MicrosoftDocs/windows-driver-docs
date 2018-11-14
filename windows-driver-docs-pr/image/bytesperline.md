@@ -58,12 +58,12 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBackImageInfo</strong>](mediabackimageinfo.md)</p></td>
+<td><p><a href="mediabackimageinfo.md" data-raw-source="[&lt;strong&gt;MediaBackImageInfo&lt;/strong&gt;](mediabackimageinfo.md)"><strong>MediaBackImageInfo</strong></a></p></td>
 <td><p></p>
 <p>MediaBackImageInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFrontImageInfo</strong>](mediafrontimageinfo.md)</p></td>
+<td><p><a href="mediafrontimageinfo.md" data-raw-source="[&lt;strong&gt;MediaFrontImageInfo&lt;/strong&gt;](mediafrontimageinfo.md)"><strong>MediaFrontImageInfo</strong></a></p></td>
 <td><p></p>
 <p>MediaFrontImageInfo</p></td>
 </tr>
@@ -88,9 +88,9 @@ The **BytesPerLine** element is valid only if the requested [**Format**](format.
 
 [**MediaFrontImageInfo**](mediafrontimageinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

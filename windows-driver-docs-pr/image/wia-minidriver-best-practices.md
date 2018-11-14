@@ -19,9 +19,9 @@ This section consists of recommended tips for WIA minidriver developers. The fol
 
 [Security Issues for WIA Drivers](security-issues-for-wia-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

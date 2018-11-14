@@ -66,9 +66,9 @@ These changes take effect after the next restart of Windows.
 
 The FAT32 file system always stores LAT information (although only the date, and not the time, are stored). Therefore, AgeStore works with FAT32 file systems. However, since AgeStore will not run when the NTFS LAT is disabled, you must enable NTFS LAT even if your file system is FAT32.
 
- 
+ 
 
- 
+ 
 
 
 

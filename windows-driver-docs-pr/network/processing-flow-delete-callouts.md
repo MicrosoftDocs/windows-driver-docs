@@ -52,9 +52,9 @@ VOID NTAPI
 
 The filter engine automatically removes the context that a callout associated with a data flow when the data flow is stopped. Therefore, a callout is not required to call the [**FwpsFlowRemoveContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551169) function from its [*flowDeleteFn*](https://msdn.microsoft.com/library/windows/hardware/ff550025) callout function to remove the context from the data flow.
 
- 
+ 
 
- 
+ 
 
 
 

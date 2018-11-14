@@ -67,9 +67,9 @@ After using this extension, you must resume program execution (for example, by u
 
 To disable a provider, use [**!wmitrace.disable**](-wmitrace-disable.md).
 
- 
+ 
 
- 
+ 
 
 
 

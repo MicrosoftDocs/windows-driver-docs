@@ -34,9 +34,9 @@ Besides exporting these functions, the minidriver must provide initial values fo
 
 Typically, a UPS minidriver communicates with a UPS unit through a COM port by calling the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467), and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions (described in Windows SDK documentation). The minidriver is responsible for implementing whatever communication protocol the UPS unit supports.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,9 +28,9 @@ Unlike NDIS 5.x, the final status of an NDIS 6.0 close operation, whether synchr
 
 For more information about NDIS 6.0 unbinding operations, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

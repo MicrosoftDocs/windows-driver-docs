@@ -50,7 +50,7 @@ If neither the ICCID nor the IMSI matches the request from the client machine, n
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 1 Segmenting IMSI ranges (within an MNO's MCC+MNC)* shows an example of client device that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -75,7 +75,7 @@ If neither the ICCID nor the IMSI matches the request coming from the client mac
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 2 Segmenting ICCID ranges (within an MNO's ICCID issuer identification number)* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -98,7 +98,7 @@ This option requires the MNO or MVNO to ensure that the ICCID ranges are kept up
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -121,7 +121,7 @@ You can use a mixture of ICCID ranges and IMSI ranges to describe the MNO and MV
 **Note**  
 ICCID ranges get first priority for matching.
 
- 
+ 
 
 This is the most complex matching model. To ensure proper matching, the MNO and MVNO must frequently update their service metadata packages.
 
@@ -156,7 +156,7 @@ If the Home Provider Name does not match the request coming from the client mach
 **Note**  
 Home Provider Names must be globally unique to ensure that a user gets the correct experience. Service metadata will only allow a single service metadata package that uses a given Home Provider Name.
 
- 
+ 
 
 *Figure 5 Provider Name-based matching for GSM networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
@@ -227,7 +227,7 @@ Because service metadata is not versioned, the app cannot query the local copy o
 
 A delay can occur between the time that the service metadata is uploaded through the Windows Dev Center hardware dashboard, and the time that computers receive the updated metadata.
 
- 
+ 
 
 **Branding in the mobile broadband app**
 
@@ -269,7 +269,7 @@ For a CDMA network (3GPP2), Windows reads the SID and the Provider Name values t
 **Important**  
 The Provider Name value is case sensitive and must be an exact match to the Provider Name that the device reports to Windows. If you want to match by using the Provider Name, you must make sure that you have specified all spelling and capitalization variations of the Provider Name that CDMA devices report to Windows in the service metadata package that you submit through the Windows Dev Center hardware dashboard.
 
- 
+ 
 
 ### <span id="Managing_MVNOs"></span><span id="managing_mvnos"></span><span id="MANAGING_MVNOS"></span>Managing MVNOs
 
@@ -359,9 +359,9 @@ It is important to keep the following metadata package content up-to-date:
 
 For more information about mobile broadband metadata see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
- 
+ 
 
- 
+ 
 
 
 

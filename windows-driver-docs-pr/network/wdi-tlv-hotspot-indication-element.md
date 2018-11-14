@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|---------------------------------------------------------------------|
 | UINT8\[\] | A Hotspot Indication Element that is used in a Association Request. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -44,9 +44,9 @@ The HD Audio bus driver directly accesses the hardware registers in the HD Audio
 
 The HD Audio controller provides the DMA engines and command buffers that are used to transfer commands and data to codecs on the HD Audio Link. The boxes labeled Codec in the preceding figure can be either audio or modem codecs, and they can be connected either to removable peripherals through external jacks or to fixed internal peripherals, such as mobile PC speakers.
 
- 
+ 
 
- 
+ 
 
 
 

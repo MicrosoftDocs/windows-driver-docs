@@ -40,9 +40,9 @@ Handling the event typically means reading in an image. To do this, the applicat
 
 If an application has been started because an event occurred, but an image acquisition API has not opened the device in data mode (see [Transfer Modes](transfer-modes.md)), the event monitor will start another instance of the application if another event is detected. The application must be implemented so that it either allows multiple instances or (preferably) recognizes when it is not the first instance, sends a message to the first instance identifying the event, and exits.
 
- 
+ 
 
- 
+ 
 
 
 

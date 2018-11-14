@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|------------------------------------------------------------------------------------------|
 | UINT8 | The Access Network Type to be used in probe requests for the network being connected to. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

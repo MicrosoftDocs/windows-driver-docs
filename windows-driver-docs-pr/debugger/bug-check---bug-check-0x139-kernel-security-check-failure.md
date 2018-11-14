@@ -31,7 +31,7 @@ The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This b
 | 3         | Address of the exception record for the exception that caused the bug check |
 | 4         | Reserved                                                                    |
 
- 
+ 
 
 The following table describes possible values for Parameter 1.
 
@@ -67,7 +67,7 @@ The following table describes possible values for Parameter 1.
 |   37 | An out of range switch jumptable entry was invoked. |
 |   38 | A longjmp was attempted to an invalid target. |
 |   39 | An export suppressed call target couldn't be made a valid call target. |
- 
+ 
 
 Cause
 -----
@@ -118,9 +118,9 @@ These general troubleshooting tips may be helpful.
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
- 
+ 
 
- 
+ 
 
 
 

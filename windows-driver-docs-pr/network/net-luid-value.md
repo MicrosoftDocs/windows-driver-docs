@@ -28,9 +28,9 @@ The NET\_LUID data type is equivalent to the *ifName* object in RFC 2863, becaus
 
 To create a NET\_LUID value, an interface provider calls the [**NdisIfAllocateNetLuidIndex**](https://msdn.microsoft.com/library/windows/hardware/ff562695) function to allocate a NET\_LUID index and then calls the [**NDIS\_MAKE\_NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff565890) macro to build the NET\_LUID value. For more information about creating NET\_LUID values, see [Using NET\_LUID Indexes](using-a-net-luid-index.md).
 
- 
+ 
 
- 
+ 
 
 
 

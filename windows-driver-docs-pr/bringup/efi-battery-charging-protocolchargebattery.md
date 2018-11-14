@@ -74,7 +74,7 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 

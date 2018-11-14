@@ -23,9 +23,9 @@ As described in [Using Kernel-Mode Video Transport](using-kernel-mode-video-tran
 
 [DxApi Miniport Driver Functions For Windows 2000 and Later](dxapi-miniport-driver-functions-for-windows-2000-and-later.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,11 +47,11 @@ You can also selectively implement sections of the test cases. For example, you 
 
 **Note**   At a minimum, you must implement the Device and Service inspection interoperability test cases because other test cases require it.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

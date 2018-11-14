@@ -4,7 +4,7 @@ description: Basic AML Debugging
 ms.assetid: 2897abd4-7fef-4f9e-a4d8-10302d555fe4
 keywords: ["AMLI Debugger, basic use"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,13 +18,13 @@ The AMLI Debugger supports two types of specialized commands: *AMLI Debugger ext
 
 When you are performing AML debugging, you should carefully distinguish between two different kinds of prompts that will appear in the Debugger Command window:
 
--   When you see the **kd&gt;** prompt, you are controlling the kernel debugger. All the standard kernel debugger commands and extensions are available. In addition, the AMLI Debugger extensions are also available. In Windows 2000, these extensions have a syntax of **!acpikd.amli** *command*. In Windows XP and later versions of Windows, these extensions have a syntax of **!amli** *command*. The AMLI Debugger commands are not available in this mode.
+-   When you see the **kd&gt;** prompt, you are controlling the kernel debugger. All the standard kernel debugger commands and extensions are available. In addition, the AMLI Debugger extensions are also available. These extensions have a syntax of **!amli** *command*. The AMLI Debugger commands are not available in this mode.
 
 -   When you see the **AMLI(? for help)-&gt;** prompt, you are controlling the AMLI Debugger. (When you are using WinDbg, this prompt will appear in the top pane of the Debugger Command window, and an **Input&gt;** prompt will appear in the bottom pane.) From this prompt, you can enter any AMLI Debugger command. You can also enter any AMLI Debugger extension; these extensions should not be prefixed with **!amli**. The standard kernel debugging commands are not available in this mode.
 
 -   When you see no prompt at all, the target computer is running.
 
-At the beginning of any debugging session, you should set your AMLI Debugger options with the [**!amli set**](-amli-set.md) extension. The **verboseon**, **traceon**, and **errbrkon** options are also very useful. When your target computer is running Windows XP or later, you should always activate the **spewon** option. See the extension reference page for details.
+At the beginning of any debugging session, you should set your AMLI Debugger options with the [**!amli set**](-amli-set.md) extension. The **verboseon**, **traceon**, and **errbrkon** options are also very useful. You should consider activating the **spewon** option. See the extension reference page for details.
 
 There are several ways for the AMLI Debugger to become active:
 
@@ -54,13 +54,8 @@ The following extensions are especially useful for AML debugging:
 
 -   The AMLI Debugger is able to run, step, and trace through AML code. Use the **run**, **p**, and **t** commands to perform these actions.
 
-For a full list of extensions and commands, see [Using AMLI Debugger Extensions](using-amli-debugger-extensions.md) and [Using AMLI Debugger Commands](using-amli-debugger-commands.md) .
+For a full list of extensions and commands, see [Using AMLI Debugger Extensions](using-amli-debugger-extensions.md) and [Using AMLI Debugger Commands](using-amli-debugger-commands.md).
 
- 
+## See Also
 
- 
-
-
-
-
-
+[The AMLI Debugger](the-amli-debugger.md)

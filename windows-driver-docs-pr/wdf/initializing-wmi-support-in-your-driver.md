@@ -59,9 +59,9 @@ The framework automatically deregisters each provider instance when the instance
 
 Your driver can deregister an instance at any time by calling [**WdfWmiInstanceDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff551179).
 
- 
+ 
 
- 
+ 
 
 
 

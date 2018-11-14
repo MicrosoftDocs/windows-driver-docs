@@ -79,9 +79,9 @@ User Mode Driver Framework 2.0
 <a href="" id="nfpdrivers-wdf"></a>**WDF**  
 Windows Driver Framework
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

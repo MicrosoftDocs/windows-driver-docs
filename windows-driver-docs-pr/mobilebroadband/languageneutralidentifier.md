@@ -47,13 +47,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Relationships](relationships.md)</p></td>
-<td><p>The [Relationships](relationships.md) element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
+<td><p><a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a></p></td>
+<td><p>The <a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a> element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -72,13 +72,13 @@ For example, If you release a device for three locales (such as EN-US, JA-JP, an
 **Important**  
 The LanguageNeutralIdentifier element is not used by any component of the operating system. It is reserved for use by the OEM, independent hardware vendor (IHV), and independent software vendor (ISV).\]
 
- 
+ 
 
 The LanguageNeutralIdentifier element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

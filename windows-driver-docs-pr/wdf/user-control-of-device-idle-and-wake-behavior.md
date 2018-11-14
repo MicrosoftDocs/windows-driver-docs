@@ -38,9 +38,9 @@ Your driver's INF file can use an [**INF AddReg directive**](https://msdn.micros
 
 The framework examines the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values only if the driver has set the **UserControlOfIdleSettings** or **UserControlOfWakeSettings** member to **IdleAllowUserControl** or **WakeAllowUserControl**, respectively, and the **Enabled** member to **WdfTrue** or **WdfUseDefault**, in the appropriate settings structure.
 
- 
+ 
 
- 
+ 
 
 
 

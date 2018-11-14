@@ -47,7 +47,7 @@ The extension returns one of the following status codes for the OID method reque
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to return the feature status information as well as the [<strong>NDIS_SWITCH_FEATURE_STATUS_CUSTOM</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598207) and [<strong>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598208) structures. The underlying miniport edge of the extensible switch sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the feature status information as well as the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598207" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_FEATURE_STATUS_CUSTOM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598207)"><strong>NDIS_SWITCH_FEATURE_STATUS_CUSTOM</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh598208" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_FEATURE_STATUS_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598208)"><strong>NDIS_SWITCH_FEATURE_STATUS_PARAMETERS</strong></a> structures. The underlying miniport edge of the extensible switch sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -56,7 +56,7 @@ The extension returns one of the following status codes for the OID method reque
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -90,9 +90,9 @@ Requirements
 
 [**NDIS\_SWITCH\_FEATURE\_STATUS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598208)
 
- 
+ 
 
- 
+ 
 
 
 

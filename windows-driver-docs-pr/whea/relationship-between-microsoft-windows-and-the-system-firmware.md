@@ -20,9 +20,9 @@ Both the Microsoft Windows operating system and the system firmware play importa
 
 The operating system should own as much of the hardware error resources as is practical. However, the system firmware must continue to manage some of these resources due to the lack of hardware error resource standardization. As more hardware error reporting standards are defined and adopted, Microsoft believes that more of the hardware error handling mechanisms can be put under operating system control.
 
- 
+ 
 
- 
+ 
 
 
 

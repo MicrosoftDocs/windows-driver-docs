@@ -55,16 +55,16 @@ The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check has a value o
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 STATUS\_REPARSE should be returned only for IRP\_MJ\_CREATE requests with trailing names, as that indicates the driver is supporting name spaces.
 
- 
+ 
 
- 
+ 
 
 
 

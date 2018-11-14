@@ -43,11 +43,11 @@ This section contains the following topics, which provide general information ab
 
 **Note**  This section describes only a subset of the Setup functions in SetupAPI. For more information about this API, see [Setup API](http://go.microsoft.com/fwlink/p/?linkid=192108) .
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

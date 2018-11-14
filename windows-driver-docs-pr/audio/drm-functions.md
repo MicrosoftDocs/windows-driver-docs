@@ -34,9 +34,9 @@ In addition, this section describes the following macro:
 
 [**DEFINE\_DRMRIGHTS\_DEFAULT**](https://msdn.microsoft.com/library/windows/hardware/ff536254)
 
- 
+ 
 
- 
+ 
 
 
 

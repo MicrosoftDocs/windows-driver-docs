@@ -39,9 +39,9 @@ In addition to providing a synchronization routine, a driver can also activate a
 
 The driver must never batch DirectDraw drawing calls when the destination surface is the visible screen. Such a situation occurs in a windowed DirectX application where the completed frame is updated to the screen via [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) and should thus be displayed immediately. This restriction also applies to DirectDraw video port surfaces, which might be flipped asynchronously.
 
- 
+ 
 
- 
+ 
 
 
 

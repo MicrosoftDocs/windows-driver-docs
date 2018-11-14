@@ -119,7 +119,7 @@ The following table shows the pin IDs that the adapter driver should assign to t
 </tbody>
 </table>
 
- 
+ 
 
 The pin IDs in the preceding table are defined in the header file Ksmedia.h.
 
@@ -160,9 +160,9 @@ The AecConnections array in the preceding code example defines the filter topolo
 
 The preceding figure represents each connection inside the filter with a dashed arrow that points in the direction of data flow. A total of five connections appear in the figure. Each connection corresponds to one of the five elements in the AecConnections array in the code example.
 
- 
+ 
 
- 
+ 
 
 
 

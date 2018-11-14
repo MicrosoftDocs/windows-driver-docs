@@ -21,9 +21,9 @@ This section provides information about Windows Image Acquisition (WIA) image pr
 
 [Image Processing Code Example](image-processing-code-example.md)
 
- 
+ 
 
- 
+ 
 
 
 

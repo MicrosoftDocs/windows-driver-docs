@@ -15,9 +15,9 @@ The **IKsTopologyInfo** interface may be used by applications that are communica
 
 See also [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
- 
+ 
 
- 
+ 
 
 
 

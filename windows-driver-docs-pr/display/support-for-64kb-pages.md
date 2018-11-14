@@ -70,9 +70,9 @@ In the following diagram a 4 KB allocation and a 64 KB aligned allocation are in
 
 ![dual pte mode page tables](images/support-for-64kb-pages.1.png)
 
- 
+ 
 
- 
+ 
 
 
 

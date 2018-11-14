@@ -81,7 +81,7 @@ The following table describes the flags that are obsolete in Windows Vista and l
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the flags that are valid in Windows Vista, Windows XP, and later operating systems.
 
@@ -152,7 +152,7 @@ The following table describes the flags that are valid in Windows Vista, Windows
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the flags that are valid in Windows Vista and later versions of the operating system only.
 
@@ -171,11 +171,11 @@ The following table describes the flags that are valid in Windows Vista and late
 <tr class="odd">
 <td><p><strong>WiaItemTypeDocument</strong></p></td>
 <td><p><strong><em>WiaItemTypeDocument</em></strong> <em>is obsolete and should not be used.</em></p>
-<p>The WIA item is a document file in one of the document formats that the [<strong>WIA_IPA_FORMAT</strong>](wia-ipa-format.md) property contains.</p></td>
+<p>The WIA item is a document file in one of the document formats that the <a href="wia-ipa-format.md" data-raw-source="[&lt;strong&gt;WIA_IPA_FORMAT&lt;/strong&gt;](wia-ipa-format.md)"><strong>WIA_IPA_FORMAT</strong></a> property contains.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>WiaItemTypeProgrammableDataSource</strong></p></td>
-<td><p>The WIA item is a programmable data source and follows a set of predefined configuration rules, which are based on the [<strong>WIA_IPA_ITEM_CATEGORY</strong>](wia-ipa-item-category.md) property.</p></td>
+<td><p>The WIA item is a programmable data source and follows a set of predefined configuration rules, which are based on the <a href="wia-ipa-item-category.md" data-raw-source="[&lt;strong&gt;WIA_IPA_ITEM_CATEGORY&lt;/strong&gt;](wia-ipa-item-category.md)"><strong>WIA_IPA_ITEM_CATEGORY</strong></a> property.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>WiaItemTypeMask</strong></p></td>
@@ -192,7 +192,7 @@ The following table describes the flags that are valid in Windows Vista and late
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -219,9 +219,9 @@ Requirements
 
 [**wiasCreateDrvItem**](https://msdn.microsoft.com/library/windows/hardware/ff549160)
 
- 
+ 
 
- 
+ 
 
 
 

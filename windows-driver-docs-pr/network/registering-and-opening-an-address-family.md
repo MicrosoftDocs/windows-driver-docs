@@ -59,9 +59,9 @@ If a client accepts incoming calls, it usually [registers one or more SAPs](regi
 
 If a client makes outgoing calls, it could [create one or more VCs](creating-a-vc.md) in its *ProtocolClOpenAfCompleteEx* function in anticipation of a request by one or more its clients to make an outgoing call.
 
- 
+ 
 
- 
+ 
 
 
 

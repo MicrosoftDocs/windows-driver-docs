@@ -42,9 +42,9 @@ The miniport driver must specify the following information in the NDIS\_TCP\_LAR
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

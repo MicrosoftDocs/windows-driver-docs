@@ -17,9 +17,9 @@ Each thread has its own call stack, representing the calls made in that thread.
 
 To get a stack trace, use the methods [**GetStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff548425) and [**GetContextStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff545748). A stack trace can be printed using [**OutputStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff553252) and [**OutputContextStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff553203).
 
- 
+ 
 
- 
+ 
 
 
 

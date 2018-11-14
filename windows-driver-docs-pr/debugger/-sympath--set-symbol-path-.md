@@ -55,7 +55,7 @@ A fully qualified path or a list of fully qualified paths. Multiple paths are se
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +66,9 @@ Remarks
 
 New symbol information will not be loaded when the symbol path is changed. You can use the [**.reload (Reload Module)**](-reload--reload-module-.md) command to reload symbols.
 
- 
+ 
 
- 
+ 
 
 
 

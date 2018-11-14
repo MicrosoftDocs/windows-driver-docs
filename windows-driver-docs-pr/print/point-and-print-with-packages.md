@@ -23,9 +23,9 @@ Driver packages can be staged without immediately being installed on the system,
 
 Because the driver store is a trusted store, adding a package to the driver store is a privileged operation. A driver can be staged only by an administrator or a standard user who has been granted driver installation rights by the Group Policy for Devices policy.
 
- 
+ 
 
- 
+ 
 
 
 

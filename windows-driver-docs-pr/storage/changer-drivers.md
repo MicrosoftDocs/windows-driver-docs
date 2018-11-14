@@ -40,9 +40,9 @@ A changer driver controls the elements of a media library, or *changer* (sometim
 
 This section contains guidelines for writing a new changer miniclass driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ Starting with Windows 8, the following changes have been made to Windows Hardwa
 -   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](https://msdn.microsoft.com/library/windows/hardware/hh451252) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
 -   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](https://msdn.microsoft.com/library/windows/hardware/ff559531) is deprecated.
 
- 
+ 
 
- 
+ 
 
 
 

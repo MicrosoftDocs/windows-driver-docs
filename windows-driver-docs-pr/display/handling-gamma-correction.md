@@ -20,9 +20,9 @@ The following topics describe how a DirectX 9.0 version driver can handle the ga
 
 [Performing Gamma Correction on Swap Chains](performing-gamma-correction-on-swap-chains.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -112,7 +112,7 @@ The following filter values specify memory regions by the way that the target pr
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the memory type.
 
@@ -143,7 +143,7 @@ The following filter values specify memory regions by the memory type.
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the state of the memory.
 
@@ -174,7 +174,7 @@ The following filter values specify memory regions by the state of the memory.
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the protection applied to the memory.
 
@@ -237,7 +237,7 @@ The following filter values specify memory regions by the protection applied to 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-o__csv___tsv___1_"></span><span id="_______-O__CSV___TSV___1_"></span> **-o:**{**csv** | **tsv** | **1**}  
 Displays the output according to one of the following options.
@@ -264,12 +264,12 @@ Displays the output according to one of the following options.
 </tr>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to <strong>[.foreach](-foreach.md)</strong>.</p></td>
+<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to <strong><a href="-foreach.md" data-raw-source="[.foreach](-foreach.md)">.foreach</a></strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-c__Command_"></span><span id="_______-c__command_"></span><span id="_______-C__COMMAND_"></span> **-c**:"*Command*"  
 Executes a custom command for each memory region. You can use the following placeholders in your command to represent output fields of the **!address** extension.
@@ -317,7 +317,7 @@ Executes a custom command for each memory region. You can use the following plac
 </tbody>
 </table>
 
- 
+ 
 
 For example, `!address -f:Heap -c:".echo %1 %3 %5"` displays the base address, size, and state for each memory region of type **Heap**.
 
@@ -347,7 +347,7 @@ Displays minimal Help text for this extension in the [Debugger Command window](d
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -419,9 +419,9 @@ kd> !address
 
 The meaning of "usage" is the same as in user mode. "ImageName" indicates the module that is associated with this address. "KernelStack" shows the address of this thread's ETHREAD block (0x817B4DA0), the process ID (0x324), and the thread ID (0x368).
 
- 
+ 
 
- 
+ 
 
 
 

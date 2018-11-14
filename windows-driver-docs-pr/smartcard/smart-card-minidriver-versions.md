@@ -21,9 +21,9 @@ Smart card minidrivers contain the features specified for a version. Each subseq
 -   [Windows Smart Card Specification Version 6.02](minidriver-version-6-02-features.md)
 -   [Windows Smart Card Specification Version 5.07](minidriver-version-5-07-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

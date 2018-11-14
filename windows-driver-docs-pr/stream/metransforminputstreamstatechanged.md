@@ -23,7 +23,7 @@ When the Device MFT output is changed, the related input stream state may also n
 |------------------------|---------------------------------------------------------------------------------|
 | **Input stream index** | The input stream index must be set on the attribute store of the IMFMediaEvent. |
 
- 
+ 
 
 ## Remarks
 
@@ -38,9 +38,9 @@ This event may be generated when the specified stream is in stopped or running s
 
 When Device MFT generates this event while streaming, further sample delivery will be stopped, and the preferred mediatype will be requested on the Device MFT input. This mediatype is set on the output of Devproxy and input of Device MFT. The stream will be automatically restarted on the Devproxy output stream and the samples will be delivered to the Device MFT input stream. When new samples arrive, Device MFT will deliver the samples to the related output streams.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,7 +49,7 @@ The **.servers** command lists all debugging servers that have been established 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +64,9 @@ Each debugging server is identified by a unique ID. This ID can be used as the a
 
 The **.servers** command does not list debugging servers started on this computer by different instances of the debugger, nor does it list process servers or KD connection servers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -84,9 +84,9 @@ After *FilterSetOptions* returns, the filter modules are in the *Detached* state
 
 A filter driver also performs any other driver-specific initialization that it requires in **DriverEntry**. The filter driver must release the driver-specific resources that it allocates in its [*FilterDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff549936) routine. For more information, see [Unloading a Filter Driver](unloading-a-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

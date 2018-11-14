@@ -38,9 +38,9 @@ For a complete list of ACPI-related extensions, see [**!acpikd.help**](-acpikd-h
 
 For details on the **!amli***xxx* extensions, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

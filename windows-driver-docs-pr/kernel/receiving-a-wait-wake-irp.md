@@ -18,9 +18,9 @@ All PnP drivers must be prepared to receive power IRPs with minor IRP code [**IR
 
 The topics in this section provide guidelines for handling this IRP based on the type of driver and its level of wait/wake support.
 
- 
+ 
 
- 
+ 
 
 
 

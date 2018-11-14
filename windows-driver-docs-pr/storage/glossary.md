@@ -91,9 +91,9 @@ The process of copying the DRAM contents of the NVDIMM-N into non-volatile memor
 <span></span>**Vendor Log Page**  
 An optional area on the module that is accessible by the host and contains vendor specific data useful to triage issues on the NVDIMM-N module.
 
- 
+ 
 
- 
+ 
 
 
 

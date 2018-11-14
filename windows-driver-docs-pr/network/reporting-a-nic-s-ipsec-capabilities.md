@@ -62,9 +62,9 @@ A miniport driver specifies the following capabilities of a NIC to process ESP p
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,7 +40,7 @@ Microsoft supports a few standard CompatibleIDs in order to support several manu
 | PCL6               | 1284\_CID\_MS\_PCL6   |
 | PS                 | 1284\_CID\_MS\_PS     |
 
- 
+ 
 
 These standard print class drivers support only a small set of features, so manufacturers that choose to utilize these class drivers should implement enhanced driver configuration, using Bidi to add more specific paper sizes and configuration. The following table shows the features and the associated options supported by the standard print class drivers.
 
@@ -51,7 +51,7 @@ These standard print class drivers support only a small set of features, so manu
 | Media Type | Plain paper       |
 | N-Up       | 1, 2, 4, 6, 9, 16 |
 
- 
+ 
 
 **PrinterDriverID**. The PrinterDriverID is a new identifier that is used to determine the compatibility between drivers for printer sharing, as well as the compatibility between drivers and printer extensions. For example, if the driver on the server specifies a PrinterDriverID in its manifest file and the driver is then shared, clients that connect to this printer will search the local Driver Store and Windows Update for a driver that specifies the same PrinterDriverID in their driver INF. If a match is found, a connection will be made using that driver. Client machines do not filter matching results using the driver name.
 

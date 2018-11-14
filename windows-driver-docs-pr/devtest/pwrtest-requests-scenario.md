@@ -22,7 +22,7 @@ You could also use the administrator tool [PowerCfg](http://go.microsoft.com/fwl
 pwrtest /requests [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -132,7 +132,7 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;Legacy&gt;</strong></td>
-<td align="left"><p>Reports True or False if the caller used legacy [<strong>SetThreadExecutionState function (Windows)</strong>](https://msdn.microsoft.com/library/windows/desktop/aa373208) or [<strong>PoSetSystemState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559768) APIs or the newer [<strong>PowerSetRequest function (Windows)</strong>](https://msdn.microsoft.com/library/windows/desktop/dd405534) or [<strong>PoSetPowerRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559762) APIs.</p></td>
+<td align="left"><p>Reports True or False if the caller used legacy <a href="https://msdn.microsoft.com/library/windows/desktop/aa373208" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa373208)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559768" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559768)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="https://msdn.microsoft.com/library/windows/desktop/dd405534" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd405534)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559762" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559762)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;SystemAllowed&gt;</strong></td>
@@ -189,7 +189,7 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -198,9 +198,9 @@ The following table describes the XML elements that appear in the log file.
 
 [PowerCfg](http://go.microsoft.com/fwlink/p/?linkid=294568)
 
- 
+ 
 
- 
+ 
 
 
 

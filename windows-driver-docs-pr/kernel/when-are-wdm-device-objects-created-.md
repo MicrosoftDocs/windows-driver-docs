@@ -56,9 +56,9 @@ See [Creating a Device Object](creating-a-device-object.md) for information abou
 
 The device stack plus some additional information constitutes the *devnode* for a device. The PnP manager maintains information in a device's devnode such as whether the device has been started and which drivers, if any, have registered for notification of changes on the device. The kernel debugger command **!devnode** displays information about a devnode.
 
- 
+ 
 
- 
+ 
 
 
 

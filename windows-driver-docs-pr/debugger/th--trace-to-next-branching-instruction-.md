@@ -71,7 +71,7 @@ Specifies the number of branching instructions that the debugger must encounter 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +88,9 @@ If the program counter is already on a branching instruction, the debugger trace
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a branching instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

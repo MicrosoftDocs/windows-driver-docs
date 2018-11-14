@@ -31,11 +31,11 @@ The SDBUS\_INTERNAL\_ERROR bug check has a value of 0x0000015A. This indicates t
 | 3         | Pointer to the SD request packet sent down to the bus driver   |
 | 4         | Reserved                                                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

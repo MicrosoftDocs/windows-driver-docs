@@ -17,7 +17,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 
 **Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
- 
+ 
 
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
@@ -51,15 +51,15 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
     **Note**  The device must be certified before submitting device metadata for your UWP device app.
 
-     
+     
 
 6.  On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 
 For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

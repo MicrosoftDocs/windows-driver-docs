@@ -27,9 +27,9 @@ NDIS 6.0 protocol drivers do not call [**NdisCmRegisterAddressFamily**](https://
 
 For more information about call manager registration, see [CoNDIS Call Manager Registration](condis-call-manager-registration.md).
 
- 
+ 
 
- 
+ 
 
 
 

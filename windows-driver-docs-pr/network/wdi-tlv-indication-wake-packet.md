@@ -31,7 +31,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | The wake packet. The size is the size of the flat memory version of the packet that will be indicated in the normal receive path. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

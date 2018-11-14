@@ -52,7 +52,7 @@ Specifies the ID numbers of the breakpoints to disable. You can specify any numb
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all 
 
 Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) command to list all existing breakpoints, their ID numbers, and the commands that were used to create them.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Dual-mode devices can specify either of the *IfType* values from the following t
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="-mediatype"></a>\*MediaType
 
@@ -84,7 +84,7 @@ MB miniport drivers must specify one of the MediaType values from the following 
 </tbody>
 </table>
 
- 
+ 
 
 ### EnableDhcp
 
@@ -111,7 +111,7 @@ MB miniport drivers must specify one of the EnableDhcp values from the following
 </tbody>
 </table>
 
- 
+ 
 
 ### UpperRange
 
@@ -138,7 +138,7 @@ This keyword is set with one or more combinations of the following strings as ap
 </tbody>
 </table>
 
- 
+ 
 
 ### LowerRange
 
@@ -161,11 +161,11 @@ This keyword must have, at the minimum, the following value when media type is N
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

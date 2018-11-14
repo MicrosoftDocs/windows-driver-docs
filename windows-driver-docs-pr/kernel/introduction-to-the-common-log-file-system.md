@@ -44,9 +44,9 @@ Certain features of CLFS (for example, the previous LSN and undo-next LSN fields
 
 -   C. Mohan, *Repeating History Beyond ARIES*.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,11 +42,11 @@ If a schema is omitted, the parser will simply perform schema validation and the
 
 **Note**   The **PublishDriverInterface** method is part of the **IPrintOemUni** interface and other interfaces as well. So a plug-in does not necessarily get the helper interface from [**IPrintOemUI::PublishDriverInterface**](https://msdn.microsoft.com/library/windows/hardware/ff554184). It can get the helper interface from **IPrintOemUni::PublishDriverInterface** or elsewhere depending on the type of interface that the plug-in implements.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

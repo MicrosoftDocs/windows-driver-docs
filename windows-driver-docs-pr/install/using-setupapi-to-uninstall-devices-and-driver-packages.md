@@ -45,9 +45,9 @@ Starting with Windows Vista, this function also removes the [driver package](dri
 
 SetupAPI cannot be used to perform this action.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|-------------------------------------------------------|
 | UINT8 | The dialog token to be used in the next Action frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +62,9 @@ Requirements
 
 [OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN](https://msdn.microsoft.com/library/windows/hardware/dn925844)
 
- 
+ 
 
- 
+ 
 
 
 

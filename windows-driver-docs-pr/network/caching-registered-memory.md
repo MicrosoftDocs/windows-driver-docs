@@ -40,7 +40,7 @@ SAN service providers should cache and release RDMA buffers that are exposed for
 
 **Note**  The proxy driver must use the **try/except** mechanism around code that accesses a user-mode buffer that was secured through a call to **MmSecureVirtualMemory** to prevent operating system crashes. For more information about how a proxy driver secures and releases buffers, see [Securing and Releasing Ownership of Virtual Addresses](securing-and-releasing-ownership-of-virtual-addresses.md). For more information about **try/except**, see the Visual C++ documentation. For information about **VirtualFree**, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
 ### Caching RDMA Buffers Exposed for Remote Access
 
@@ -51,7 +51,7 @@ SAN service providers should cache RDMA buffers that are exposed for remote acce
 1.  When the Switch calls **WSPDeregisterRdmaMemory** to release a buffer, the SAN service provider should leave the buffer locked in physical memory and registered with the SAN NIC. The SAN service provider should also add the buffer to a cache of registered buffers, in case the buffer is used again in a subsequent RDMA operation. However, the SAN service provider should take appropriate action to ensure that the remote peer can no longer access the buffer.
     **Note**  If the buffer can only be made inaccessible by the SAN service provider removing the buffer registration from the SAN NIC, the SAN service provider must do so. However, the SAN service provider should leave the buffer locked down to a region of physical memory. This scenario does not provide the best possible performance but is better than no caching.
 
-     
+     
 
 2.  To cache RDMA buffers exposed for remote access, the SAN service provider and its proxy driver should use the caching techniques as described in the preceding list for RDMA buffers that are exposed for local access.
 
@@ -59,9 +59,9 @@ SAN service providers should cache RDMA buffers that are exposed for remote acce
 
 4.  To release RDMA buffers exposed for remote access, the SAN service provider and its proxy driver should use the techniques as described in the preceding list.
 
- 
+ 
 
- 
+ 
 
 
 

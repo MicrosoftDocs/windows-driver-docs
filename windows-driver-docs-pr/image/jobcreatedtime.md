@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ The specified time refers to the internal clock of the scan device and does not 
 
 [**JobStatus**](jobstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -75,14 +75,14 @@ Called by the WIA Flatbed driver to get the status of the ADF attached to the de
 </tbody>
 </table>
 
- 
+ 
 
 <span id="CMD_GETADFUNLOADREADY"></span><span id="cmd_getadfunloadready"></span>CMD\_GETADFUNLOADREADY  
 Called by the WIA Flatbed Driver to determine whether the ADF is ready for a page to be unloaded. If so, return S\_OK. If this command does not apply to the device, return E\_NOTIMPL.
 
- 
+ 
 
- 
+ 
 
 
 

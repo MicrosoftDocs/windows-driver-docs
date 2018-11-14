@@ -25,7 +25,7 @@ There are two ways to use the Verifier utility. On Windows Vista and later versi
 
 **Note**   Driver Verifier Manager in Windows XP and later differs slightly from the version of Driver Verifier Manager in Windows 2000.
 
- 
+ 
 
 This section includes:
 
@@ -35,9 +35,9 @@ This section includes:
 
 [Driver Verifier Manager (Windows XP and later)](driver-verifier-manager--windows-xp-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

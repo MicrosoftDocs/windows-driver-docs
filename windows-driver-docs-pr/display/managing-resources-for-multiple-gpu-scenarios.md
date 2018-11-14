@@ -26,9 +26,9 @@ To appropriately manage resources for multiple GPU scenarios, a user-mode displa
 
 Starting in Windows 8.1, a user-mode driver can support cross-adapter resources that are shared between a discrete GPU and an integrated GPU. See [Using cross-adapter resources in a hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md).
 
- 
+ 
 
- 
+ 
 
 
 

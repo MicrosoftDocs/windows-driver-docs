@@ -61,7 +61,7 @@ CTRL+ALT+W
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ In WinDbg, this can also be accomplished by selecting [View | Show Version](view
 
 [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
 
- 
+ 
 
- 
+ 
 
 
 

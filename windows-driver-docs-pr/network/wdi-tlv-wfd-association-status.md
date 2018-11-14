@@ -31,7 +31,7 @@ The size (in bytes) of a UINT8.
 |-------|-------------------------------------------------------------------------------|
 | UINT8 | The DOT11\_WFD\_STATUS\_CODE to be set when an association request is denied. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

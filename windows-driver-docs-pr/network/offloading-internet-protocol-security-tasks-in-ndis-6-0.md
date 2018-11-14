@@ -27,9 +27,9 @@ Offloading Internet protocol security (IPsec) tasks at run time in NDIS 6.0 is s
 
 For more information about offloading IPsec tasks, see [Offloading IPsec Tasks](offloading-ipsec-tasks.md).
 
- 
+ 
 
- 
+ 
 
 
 

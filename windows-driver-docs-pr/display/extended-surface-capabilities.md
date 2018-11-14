@@ -24,9 +24,9 @@ ms.localizationpriority: medium
 
 Beginning with Microsoft DirectX 6.0, Microsoft DirectDraw contains surface capabilities beyond those found in previous versions. These extended capabilities require the addition of several new structures, specifically the [**DDSCAPS2**](https://msdn.microsoft.com/library/windows/hardware/ff550292) and [**DD\_MORESURFACECAPS**](https://msdn.microsoft.com/library/windows/hardware/ff551659) structures. The DDSCAPS2 structure contains the **dwCaps** member originally found in the [**DDSCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff550286) structure, but also contains three new members: **dwCaps2**, **dwCaps3**, and **dwCaps4**. Only **dwCaps2** is used in DirectDraw for DirectX 6.0. The last three members of the **DDSCAPS2** structure are also identically arranged in the DDSCAPSEX structure.
 
- 
+ 
 
- 
+ 
 
 
 

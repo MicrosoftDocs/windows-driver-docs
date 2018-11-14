@@ -29,9 +29,9 @@ Autoconfig follows the following sequence:
 
 7.  The IHV plug-in will update the driver UI according to the latest configuration.
 
- 
+ 
 
- 
+ 
 
 
 

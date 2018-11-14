@@ -23,9 +23,9 @@ If you want to create a quoted string that ends with the percent sign (%), the p
 
 The HexSubString context can appear only within a quoted string context. Comments can appear within a HexSubString context.
 
- 
+ 
 
- 
+ 
 
 
 

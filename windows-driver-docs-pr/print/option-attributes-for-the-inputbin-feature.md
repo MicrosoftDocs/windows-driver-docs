@@ -19,9 +19,9 @@ There are no attributes associated with the InputBin feature. For more informati
 
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,7 +23,7 @@ NDIS generates a LUID for the PF before NDIS calls the [*MiniportInitializeEx*](
 
 **Note**  The value of the **Luid** member differs from the **NetLuid** member of the [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565972) structure. This structure is passed to the miniport driver through the *MiniportInitParameters* parameter of [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389).
 
- 
+ 
 
 ### Return Status Codes
 
@@ -53,7 +53,7 @@ When NDIS handles the OID\_SRIOV\_PF\_LUID request, it returns one of the follow
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -62,7 +62,7 @@ When NDIS handles the OID\_SRIOV\_PF\_LUID request, it returns one of the follow
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -94,9 +94,9 @@ Requirements
 
 [**NDIS\_SRIOV\_PF\_LUID\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451678)
 
- 
+ 
 
- 
+ 
 
 
 

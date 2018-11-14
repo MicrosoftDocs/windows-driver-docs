@@ -29,9 +29,9 @@ A call manager or MCM that supports an address family other than CO\_ADDRESS\_FA
 
 A call manager or MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY family writes these values to the CO\_CALL\_MANAGER\_PARAMETERS structure in the context of its [**ProtocolCmMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff570246) function. Note that the maximum SDU sizes passed to the *ProtocolCmMakeCall* function are incorrect. The *ProtocolCmMakeCall* function must overwrite the incorrect values with correct values.
 
- 
+ 
 
- 
+ 
 
 
 

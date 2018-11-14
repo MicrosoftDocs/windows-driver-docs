@@ -20,9 +20,9 @@ The WIA scanner storage child (file) item is required to support the following W
 
 [**WIA\_IPA\_ITEM\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551590)
 
- 
+ 
 
- 
+ 
 
 
 

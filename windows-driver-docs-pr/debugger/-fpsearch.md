@@ -51,7 +51,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -116,9 +116,9 @@ CEAD000  00000000 00000000 00000000 00000000 ................
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

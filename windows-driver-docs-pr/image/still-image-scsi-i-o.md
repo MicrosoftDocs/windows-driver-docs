@@ -19,9 +19,9 @@ This section contains additional information about SCSI control codes and the st
 
 [Still Image SCSI I/O Structures](still-image-scsi-i-o-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

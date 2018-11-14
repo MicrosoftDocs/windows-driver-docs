@@ -22,9 +22,9 @@ The USB Video Class driver stack is shown in the following diagram:
 
 ![diagram illustrating the usb video class driver stack ](images/uvc2.png)
 
- 
+ 
 
- 
+ 
 
 
 

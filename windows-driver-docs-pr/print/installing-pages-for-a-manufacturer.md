@@ -25,9 +25,9 @@ The manufacturer-specific page will be used for all of the manufacturer's printe
 
 The system determines a printer's manufacturer by reading the printer's INF file at installation time. When a user attempts to view a printer details page, the system first checks to see if a file named Page1.asp exists in &lt;Root&gt;\\&lt;Manufacturer&gt;\\&lt;Printer Type&gt;. If a file is not found, the system checks &lt;Root&gt;\\&lt;Manufacturer&gt;.
 
- 
+ 
 
- 
+ 
 
 
 

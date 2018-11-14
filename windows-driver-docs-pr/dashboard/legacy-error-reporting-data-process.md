@@ -1,7 +1,8 @@
 ---
 title: Legacy error reporting data process
 ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
-description: Deprecated -- process for getting driver error reporting data for earlier versions of Windows 10, Windows 8.x, and Windows 7. 
+description: Deprecated -- process for getting driver error reporting data for earlier versions of Windows 10, Windows 8.x, and Windows 7.
+ms.topic: article 
 ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---

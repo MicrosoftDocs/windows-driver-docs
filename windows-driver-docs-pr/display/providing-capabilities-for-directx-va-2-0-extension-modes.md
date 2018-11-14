@@ -21,9 +21,9 @@ The user-mode display driver returns the number and a list of the GUIDs that it 
 <span id="D3DDDICAPS_GETEXTENSIONCAPS_request_type"></span><span id="d3dddicaps_getextensioncaps_request_type"></span><span id="D3DDDICAPS_GETEXTENSIONCAPS_REQUEST_TYPE"></span>D3DDDICAPS\_GETEXTENSIONCAPS request type  
 Each extension mode that the user-mode display driver supports can have unique capabilities. The user-mode display driver returns those capabilities when the D3DDDICAPS\_GETEXTENSIONCAPS request type is passed. The Direct3D runtime specifies a [**DXVADDI\_QUERYEXTENSIONCAPSINPUT**](https://msdn.microsoft.com/library/windows/hardware/ff562926) structure for the extension GUID to retrieve capabilities for in a variable that the **pInfo** member of [**D3DDDIARG\_GETCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff543148) points to. The user-mode display driver returns capabilities for the extension GUID in a private structure that the **pData** member of D3DDDIARG\_GETCAPS points to.
 
- 
+ 
 
- 
+ 
 
 
 

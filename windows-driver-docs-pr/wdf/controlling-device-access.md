@@ -51,9 +51,9 @@ RtlInitUnicodeString(&sddlString, L"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)");
 status = WdfDeviceInitAssignSDDLString(DeviceInit, &sddlString);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

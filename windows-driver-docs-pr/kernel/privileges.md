@@ -31,26 +31,26 @@ The following table lists some examples of privileges and routines that can requ
 <tbody>
 <tr class="odd">
 <td><p><strong>SeManageVolumePrivilege</strong></p></td>
-<td><p>[<strong>ZwSetInformationFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567096) with <em>FileInformationClass</em> = <strong>FileValidDataLengthInformation</strong></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567096" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567096)"><strong>ZwSetInformationFile</strong></a> with <em>FileInformationClass</em> = <strong>FileValidDataLengthInformation</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SeTakeOwnershipPrivilege</strong></p></td>
-<td><p>[<strong>SeAccessCheck</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563674)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563674" data-raw-source="[&lt;strong&gt;SeAccessCheck&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563674)"><strong>SeAccessCheck</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SeSecurityPrivilege</strong></p></td>
-<td><p>[<strong>SeAccessCheck</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563674)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563674" data-raw-source="[&lt;strong&gt;SeAccessCheck&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563674)"><strong>SeAccessCheck</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Most system routines do not perform any privilege checks.
 
- 
+ 
 
- 
+ 
 
 
 

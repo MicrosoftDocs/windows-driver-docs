@@ -36,11 +36,11 @@ System handles for thread and process system objects can be obtained by using th
 
 **Note**   In kernel mode, the process and thread handles are artificial handles. They are not system handles.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

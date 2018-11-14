@@ -28,9 +28,9 @@ Kernel streaming clock objects support the KSPROPSETID\_Clock property set. Clie
 
 [**KSPROPERTY\_CLOCK\_TIME**](ksproperty-clock-time.md)
 
- 
+ 
 
- 
+ 
 
 
 

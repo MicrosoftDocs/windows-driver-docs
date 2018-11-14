@@ -40,8 +40,7 @@ The BC\_BTHMINI\_VERIFIER\_FAULT bug check has a value of 0x00000BFF. This indic
 <td align="left">1</td>
 <td align="left"><p>The subtype of the Bluetooth verifier fault.</p>
 <div class="code">
-```
-            0x1 : An attempt was made to return a packet with type that mis-matched its original request.
+<code>0x1 : An attempt was made to return a packet with type that mis-matched its original request.
                   2 - Returned packet type
                   3 - Expected packet type
                   4 - Reserved
@@ -52,8 +51,7 @@ The BC\_BTHMINI\_VERIFIER\_FAULT bug check has a value of 0x00000BFF. This indic
             0x3 : Incorrect output buffer size was returned to indicate number of bytes written by the lower transport driver.
                   2 - Unexpected buffer size
                   3 - Expected buffer size
-                  4 - Reserved
-```
+                  4 - Reserved</code>
 </div></td>
 </tr>
 <tr class="even">
@@ -71,16 +69,16 @@ The BC\_BTHMINI\_VERIFIER\_FAULT bug check has a value of 0x00000BFF. This indic
 </tbody>
 </table>
 
- 
+
 
 Resolution
 ----------
 
 Parameter 1 describes the type of violation. Look at the call stack to determine the misbehaving driver.
 
- 
 
- 
+
+
 
 
 

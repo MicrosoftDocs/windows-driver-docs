@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://msdn.microsoft.com/library/windows/hardware/ff540215).
 
- 
+ 
 
- 
+ 
 
 
 

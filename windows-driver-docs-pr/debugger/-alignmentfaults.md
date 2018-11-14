@@ -42,7 +42,7 @@ The **!alignmentfaults** extension displays all current type alignment faults by
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -53,9 +53,9 @@ Remarks
 
 This is only available on checked builds.
 
- 
+ 
 
- 
+ 
 
 
 

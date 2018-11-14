@@ -3,6 +3,7 @@ title: LSA and UEFI file signing
 description: LSA plug-in and UEFI firmware signing
 ms.author: eliotgra
 ms.localizationpriority: medium
+ms.topic: article
 ms.date: 10/17/2018
 ---
 
@@ -12,22 +13,22 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 
 
 > [!IMPORTANT]
-
+> 
 > Use the file-signing technique described in this topic for **UEFI** and **LSA** signing. 
 > For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions).
-
+> 
 > [!IMPORTANT]
 > * File signing requires an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md).
-
+> 
 > * All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing. 
 >   * This file should contain no folders and only the binaries or .efi files to be signed. 
-
+> 
 > * UEFI FIRMWARE ONLY - The CAB file signature must match the [Authenticode certificate](https://docs.microsoft.com/windows-hardware/drivers/install/authenticode) for your organization.
 >   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
 >   * EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
-
->* UEFI FIRMWARE ONLY - If your submission is a shim, you must submit a completed template for review to the shim review board. The shim review process is described at https://github.com/rhboot/shim-review/.
-
+> 
+> * UEFI FIRMWARE ONLY - If your submission is a shim, you must submit a completed template for review to the shim review board. The shim review process is described at https://github.com/rhboot/shim-review/.
+> 
 > * LSA PLUGINS ONLY - The CAB file signature must match the EV code signing certificate for your organization. 
 
 
@@ -36,7 +37,7 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 1.  Sign in to the dashboard with your Microsoft account and click **Hardware certification**.
 
 2.  On the **File Signing Services** page, click **Submit New UEFI** or **Submit New LSA**.
-    > [!NOTE]  
+    > [!NOTE]
     > You may be prompted to sign a legal agreement before creating a new file signing submission. Review and complete the agreement to continue. Every organization only needs to sign the agreement once.
 
 3.  On the submission page, upload the CAB file you want to submit, and click **Submit**.

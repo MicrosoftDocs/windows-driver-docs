@@ -14,7 +14,7 @@ This function returns warning and error thresholds which, if hit or surpassed, i
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -46,40 +46,40 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>ES Lifetime Percentage Warning Threshold</strong></td>
 <td align="left">1</td>
 <td align="left">4</td>
 <td align="left"><p>The percentage value of the warning threshold for the ES lifetime.</p>
-<p>*Byte 0 – <em>ES_LIFETIME_WARNING_THRESHOLD</em> (0, 0x99)</p></td>
+<p><em>Byte 0 – <em>ES_LIFETIME_WARNING_THRESHOLD</em> (0, 0x99)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>ES Lifetime Percentage Error Threshold</strong></td>
 <td align="left">1</td>
 <td align="left">5</td>
 <td align="left"><p>The percentage value of the error threshold for the ES lifetime.</p>
-<p>*Byte 0 – <em>ES_LIFETIME_ERROR_THRESHOLD</em> (0, 0x91)</p></td>
+<p></em>Byte 0 – <em>ES_LIFETIME_ERROR_THRESHOLD</em> (0, 0x91)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>ES Temperature Warning Threshold</strong></td>
 <td align="left">1</td>
 <td align="left">6</td>
 <td align="left"><p>The percentage value of the warning threshold for the ES temperature.</p>
-<p>*Byte 0 – <em>ES_TEMP_WARNING_THRESHOLD</em> (0, 0x9A)</p></td>
+<p><em>Byte 0 – <em>ES_TEMP_WARNING_THRESHOLD</em> (0, 0x9A)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>ES Temperature Error Threshold</strong></td>
 <td align="left">1</td>
 <td align="left">7</td>
 <td align="left"><p>The percentage value of the error threshold for the ES temperature.</p>
-<p>*Byte 0 – <em>ES_TEMP_ERROR_THRESHOLD</em> (0, 0x92)</p></td>
+<p></em>Byte 0 – <em>ES_TEMP_ERROR_THRESHOLD</em> (0, 0x92)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -90,9 +90,9 @@ None.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

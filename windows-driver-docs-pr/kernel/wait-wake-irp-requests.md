@@ -26,9 +26,9 @@ If no errors occur, **PoRequestPowerIrp** returns STATUS\_PENDING. This status m
 
 A wait/wake IRP does not change the power state of the system or of a device. It simply enables a device's wake-up signal. The IRP remains pending until an external signal causes the system or device to awaken.
 
- 
+ 
 
- 
+ 
 
 
 

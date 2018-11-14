@@ -49,9 +49,9 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
     When the driver destroys the dummy surface, it should ensure that the standard format is reprogrammed in the display device.
 
- 
+ 
 
- 
+ 
 
 
 

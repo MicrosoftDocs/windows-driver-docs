@@ -18,7 +18,7 @@ The PwrTest Info Scenario captures and logs the current system power information
 pwrtest /info:option [/p:{n|a|*}] [/w:n]  [/?] 
 ```
 
-<span id="_info_option"></span><span id="_INFO_OPTION"></span>**/info:***option*  
+<span id="_info_option"></span><span id="_INFO_OPTION"></span>**/info:**<em>option</em>  
 
 <table>
 <colgroup>
@@ -67,13 +67,13 @@ pwrtest /info:option [/p:{n|a|*}] [/w:n]  [/?]
 </tbody>
 </table>
 
- 
+ 
 
-<span id="_p_na_"></span><span id="_P_NA_"></span>**/p:**{*n*|**a**|**\***}  
+<span id="_p_na_"></span><span id="_P_NA_"></span>**/p:**{*n*|**a**|**\\***}  
 
 Specifies the logical processor number for **/info:ppm/info:ppmidle**, or **/info:ppmperf** options.
 
-<span id="a_or__"></span><span id="A_OR__"></span>**a** or **\***  
+<span id="a_or__"></span><span id="A_OR__"></span>**a** or **\\***  
 Specifies all the logical processor(s) (default).
 
 <span id="_w_yn"></span><span id="_W_YN"></span>**/w:**{**y**|**n**}  
@@ -243,11 +243,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;DefaultAlert1&gt;</strong></td>
-<td align="left"><p>Indicates the battery manufacturer's suggested capacity when a low battery alert should occur.</p></td>
+<td align="left"><p>Indicates the battery manufacturer&#39;s suggested capacity when a low battery alert should occur.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;DefaultAlert2&gt;</strong></td>
-<td align="left"><p>Indicates the battery manufacturer's suggested capacity when a warning battery alert should occur.</p></td>
+<td align="left"><p>Indicates the battery manufacturer&#39;s suggested capacity when a warning battery alert should occur.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;PROCESSOR_POWER_INFORMATION&gt;</strong></td>
@@ -280,16 +280,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

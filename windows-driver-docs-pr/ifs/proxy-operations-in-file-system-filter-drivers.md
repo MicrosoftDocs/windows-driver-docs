@@ -22,9 +22,9 @@ The ways in which a file system filter driver might introduce such problems are 
 
 It is essential for a file system filter driver to identify instances where the driver is performing an operation on behalf of, or as a result of, some user level operation. In these cases, a clear strategy for how to ensure correct operation needs to be identified.
 
- 
+ 
 
- 
+ 
 
 
 

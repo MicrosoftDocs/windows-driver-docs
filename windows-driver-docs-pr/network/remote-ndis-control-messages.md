@@ -39,9 +39,9 @@ The following Remote NDIS control messages must be supported by an Ethernet 802.
 
 [**REMOTE\_NDIS\_KEEPALIVE\_CMPLT**](remote-ndis-keepalive-cmplt.md)
 
- 
+ 
 
- 
+ 
 
 
 

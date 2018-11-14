@@ -22,9 +22,9 @@ By completing outstanding I/O requests that are ready for completion in its [**H
 
 While in its [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423) routine, a miniport should check for completed requests after starting the requested I/O operation.
 
- 
+ 
 
- 
+ 
 
 
 

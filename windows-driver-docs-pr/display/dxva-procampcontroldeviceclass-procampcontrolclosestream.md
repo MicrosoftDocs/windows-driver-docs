@@ -23,7 +23,7 @@ Syntax
 
 ```ManagedCPlusPlus
 HRESULT ProcAmpControlCloseStream(
-   void
+   void
 );
 ```
 
@@ -50,9 +50,9 @@ The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** 
 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

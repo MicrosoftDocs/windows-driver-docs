@@ -27,11 +27,11 @@ A print driver that supports the IPrintTicketProvider interface accomplishes the
 
 **Note**   GDI-based, version 3 print drivers do not need to add Print Ticket support to the drivers because the print subsystem converts PrintTicket objects to equivalent [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structures for the print driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

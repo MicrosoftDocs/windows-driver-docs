@@ -39,9 +39,9 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   Test individual applications on Windows 8 and later.
 -   Take advantage of the Windows 8 DirectX feature improvements.
 
- 
+ 
 
- 
+ 
 
 
 

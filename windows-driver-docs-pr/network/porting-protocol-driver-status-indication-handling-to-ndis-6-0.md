@@ -26,9 +26,9 @@ NDIS 6.0 serializes status indications for each protocol binding. To determine l
 
 For more information about status indications in a protocol driver, see [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

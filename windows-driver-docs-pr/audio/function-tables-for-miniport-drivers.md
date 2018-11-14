@@ -22,9 +22,9 @@ Similarly, audio miniport drivers use function tables, but they are statically a
 
 This approach was taken because COM supplies a solid, efficient, widely-understood model for creating abstracted objects. The audio miniport driver model leverages industry experience with COM and the body of COM literature. Objects can be implemented and used in C or C++. Assembly language can also be used, but should only be used where portability is not required.
 
- 
+ 
 
- 
+ 
 
 
 

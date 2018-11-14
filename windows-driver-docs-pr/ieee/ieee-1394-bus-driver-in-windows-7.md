@@ -16,7 +16,7 @@ The new 1394ohci.sys bus driver is fully backward compatible with the legacy bus
 
 **Note**  The 1394ohci.sys driver is a system driver that is included in Windows. It is automatically loaded when you install a 1394 controller. This is not a redistributable driver that you can download separately.
 
- 
+ 
 
 -   [I/O Request Completion](#io-request-completion)
 -   [Configuration ROM Retrieval](#configuration-rom-retrieval)

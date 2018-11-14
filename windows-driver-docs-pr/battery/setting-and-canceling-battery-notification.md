@@ -51,9 +51,9 @@ The *Context* parameter is a pointer to the context area allocated by the minicl
 
 Miniclass drivers can omit functionality for both routines and return STATUS\_NOT\_SUPPORTED. However, a miniclass driver that provides a *BatteryMiniSetStatusNotify* routine must provide a corresponding *BatteryMiniDisableStatusNotify* routine, and vice versa.
 
- 
+ 
 
- 
+ 
 
 
 

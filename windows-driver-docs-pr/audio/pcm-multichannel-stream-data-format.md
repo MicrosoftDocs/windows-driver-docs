@@ -36,9 +36,9 @@ This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](http
   Format.SubFormat       = KSDATAFORMAT_SUBTYPE_PCM;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

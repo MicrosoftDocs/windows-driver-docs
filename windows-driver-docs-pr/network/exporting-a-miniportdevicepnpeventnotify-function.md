@@ -28,9 +28,9 @@ If a miniport driver does not export a *MiniportDevicePnPEventNotify* function, 
 
 All NDIS 6.0 and later miniport drivers *must* export a *MiniportDevicePnPEventNotify* function. In addition, all miniport drivers that have a WDM lower edge *should* export a *MiniportDevicePnPEventNotify* function.
 
- 
+ 
 
- 
+ 
 
 
 

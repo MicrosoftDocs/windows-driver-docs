@@ -77,7 +77,7 @@ The function returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +87,9 @@ The function returns one of the following values:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

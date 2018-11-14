@@ -23,9 +23,9 @@ The [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726) sample driver is
 
 This **ControlGUID** subkey contains a **Flags** entry and a **Level** entry. These entries are optional and their value is defined by the provider.
 
- 
+ 
 
- 
+ 
 
 
 

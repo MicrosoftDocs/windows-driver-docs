@@ -37,9 +37,9 @@ To help you determine whether pageable code or data is appropriate for your driv
 
     For information about how to determine when your driver is in a nonpageable state, see [**WdfDevStateIsNP**](https://msdn.microsoft.com/library/windows/hardware/ff546958).
 
- 
+ 
 
- 
+ 
 
 
 

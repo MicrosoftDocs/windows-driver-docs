@@ -40,9 +40,9 @@ Very few drivers need to be aware of the state of a device's state machines. How
     -   [**WdfDeviceGetDevicePowerState**](https://msdn.microsoft.com/library/windows/hardware/ff545985)
     -   [**WdfDeviceGetDevicePowerPolicyState**](https://msdn.microsoft.com/library/windows/hardware/ff545974)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -245,7 +245,7 @@ Filtering Methods
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | .Where ( PredicateMethod ) | Returns a new collection of objects containing every object in the input collection for which the predicate method returned true. |
 
- 
+
 
 Projection Methods
 
@@ -254,7 +254,7 @@ Projection Methods
 | .Flatten ( \[KeyProjectorMethod\] ) | Takes an input container of containers (a tree) and flattens it into a single container which has every element in the tree. If the optional key projector method is supplied, the tree is considered a container of keys which are themselves containers and those keys are determined by a call to the projection method. |
 | .Select ( KeyProjectorMethod )      | Returns a new collection of objects containing the result of calling the projector method on every object in the input collection.                                                                                                                                                                                          |
 
- 
+
 
 Grouping Methods
 
@@ -265,7 +265,7 @@ Grouping Methods
 | Intersect (InnerCollection, \[ComparatorMethod\])                                                                          | Returns the set intersection, which means elements that appear in each of two collections. An optional comparator method can also be specified.                                                               |
 | Union (InnerCollection, \[ComparatorMethod\])                                                                              | Returns the set union, which means unique elements that appear in either of two collections. An optional comparator method can also be specified.                                                             |
 
- 
+
 
 Data Set Methods
 
@@ -276,7 +276,7 @@ Data Set Methods
 | Except (InnerCollection, \[ComparatorMethod\]) | Returns the set difference, which means the elements of one collection that do not appear in a second collection. An optional comparator method can be specified.                                 |
 | Concat (InnerCollection)                       | Concatenates two sequences to form one sequence.                                                                                                                                                  |
 
- 
+
 
 Ordering Methods
 
@@ -285,7 +285,7 @@ Ordering Methods
 | .OrderBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )           | Sorts the collection in ascending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided.  |
 | .OrderByDescending ( KeyProjectorMethod, \[KeyComparatorMethod\] ) | Sorts the collection in descending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided. |
 
- 
+
 
 Aggregating Methods
 
@@ -294,7 +294,7 @@ Aggregating Methods
 | Count ()                   | A method that returns the number of elements in the collection.                                                                                |
 | Sum (\[ProjectionMethod\]) | Calculates the sum of the values in a collection. Can optionally specify a projector method to transform the elements before summation occurs. |
 
- 
+
 
 Skip Methods
 
@@ -303,7 +303,7 @@ Skip Methods
 | Skip (Count)                | Skips elements up to a specified position in a sequence.                                      |
 | SkipWhile (PredicateMethod) | Skips elements based on a predicate function until an element does not satisfy the condition. |
 
- 
+
 
 Take Methods
 
@@ -312,7 +312,7 @@ Take Methods
 | Take (Count)                | Takes elements up to a specified position in a sequence.                                      |
 | TakeWhile (PredicateMethod) | Takes elements based on a predicate function until an element does not satisfy the condition. |
 
- 
+
 
 Comparison Methods
 
@@ -320,7 +320,7 @@ Comparison Methods
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | SequenceEqual (InnerCollection, \[ComparatorMethod\]) | Determines whether two sequences are equal by comparing elements in a pair-wise manner. An optional comparator can be specified. |
 
- 
+
 
 Error Handling Methods
 
@@ -330,7 +330,7 @@ Error Handling Methods
 | FirstNonError (\[PredicateMethod\]) | Returns the first element of a collection that isn’t an error.                    |
 | LastNonError (\[PredicateMethod\])  | Returns the last element of a collection that isn’t an error.                     |
 
- 
+
 
 Other Methods
 
@@ -344,7 +344,7 @@ Other Methods
 | Max(\[KeyProjectorMethod\])    | Returns the maximum element of the collection. An optional projector method can be specified to project each method before it is compared to others.                                                                                                                         |
 | Single(\[PredicateMethod\])    | Returns the only element from the list (or an error if the collection contains more than one element). If a predicate is specified, returns the single element that satisfies that predicate (if more than one element satisfies it, the function returns an error instead). |
 
- 
+
 
 **Signatures of the Arguments**
 
@@ -372,7 +372,7 @@ Other Methods
 </tbody>
 </table>
 
- 
+
 
 ## Supported LINQ Syntax - String Manipulation
 
@@ -388,7 +388,7 @@ Query Relevant Methods & Properties
 | .StartsWith ( OtherString )         | Returns a boolean value indicating whether the input string starts with OtherString.                                                                                                                                              |
 | .Substring ( StartPos, \[Length\] ) | Returns a substring within the input string starting at the given starting position. If the optional length is supplied, the returned substring will be of the specified length; otherwise – it will go to the end of the string. |
 
- 
+
 
 Miscellaneous Methods
 
@@ -397,7 +397,7 @@ Miscellaneous Methods
 | .IndexOf ( OtherString )     | Returns the index of the first occurrence of OtherString within the input string. |
 | .LastIndexOf ( OtherString ) | Returns the index of the last occurrence of OtherString within the input string.  |
 
- 
+
 
 Formatting Methods
 
@@ -408,7 +408,7 @@ Formatting Methods
 | .Remove ( StartPos, \[Length\] )         | Removes characters from the input string starting as the specified starting position. If the optional length parameter is supplied, that number of characters will be removed; otherwise – all characters to the end of the string will be removed. |
 | .Replace ( SearchString, ReplaceString ) | Replaces every occurrence of SearchString within the input string with the specified ReplaceString.                                                                                                                                                 |
 
- 
+
 
 String Object Projections
 
@@ -418,7 +418,7 @@ In addition to the methods which are projected directly onto string objects, any
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. |
 
- 
+
 
 The following examples illustrate the use of format specifiers.
 
@@ -635,14 +635,13 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">Removable</td>
 <td align="left"><div class="code">
 
-```dbgcmd
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)                
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)                
     [0x0]            : SWD\PRINTENUM\{2F8DBBB6-F246-4D84-BB1D-AA8761353885}
     [0x1]            : SWD\PRINTENUM\{F210BC77-55A1-4FCA-AA80-013E2B408378}
     [0x2]            : SWD\PRINTENUM\{07940A8E-11F4-46C3-B714-7FF9B87738F8}
-    [0x3]            : DISPLAY\Default_Monitor\6&1a097cd8&0&UID5527112 (monitor)
-```
+    [0x3]            : DISPLAY\Default_Monitor\6&amp;1a097cd8&amp;0&amp;UID5527112 (monitor)</code>
 
 </div></td>
 </tr>
@@ -650,14 +649,13 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">UniqueID</td>
 <td align="left"><div class="code">
 
-```dbgcmd
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)                
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
-...
-```
+...</code>
 
 </div></td>
 </tr>
@@ -665,14 +663,13 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">SilentInstall</td>
 <td align="left"><div class="code">
 
-```dbgcmd
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)                
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
-...
-```
+...</code>
 
 </div></td>
 </tr>
@@ -680,14 +677,13 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">RawDeviceOk</td>
 <td align="left"><div class="code">
 
-```dbgcmd
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)                
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x2]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
-...
-```
+...</code>
 
 </div></td>
 </tr>
@@ -695,21 +691,20 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left">SurpriseRemovalOK</td>
 <td align="left"><div class="code">
 
-```dbgcmd
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)                
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)                
     [0x0]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x1]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
     [0x2]            : SWD\PRINTENUM\PrintQueues
-...
-```
+...</code>
 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095).
 
 
@@ -719,7 +714,7 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 
-[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
 

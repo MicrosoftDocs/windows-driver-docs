@@ -66,7 +66,7 @@ Specifies the address of the process that you want. (More precisely, this parame
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -83,7 +83,7 @@ The [**.context (Set User-Mode Address Context)**](-context--set-user-mode-addre
 
 **Note**   If you are performing live debugging, you should use the **/i** or the **/p** parameter. Without one of these parameters, you cannot correctly display user-mode or session memory.
 
- 
+ 
 
 The **/i** parameter activates the target process. When you use this option, you must execute the target once for this command to take effect. If you execute again, the process context is lost.
 
@@ -152,9 +152,9 @@ PEB at 7FFDF000
         Environment:  0x10000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

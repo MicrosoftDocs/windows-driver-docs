@@ -36,9 +36,9 @@ To investigate memory usage, use the following steps:
     -   Corrections to their parent objects.
     -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) method.
 
- 
+ 
 
- 
+ 
 
 
 

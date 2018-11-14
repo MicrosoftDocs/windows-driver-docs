@@ -70,9 +70,9 @@ The following is a list of registry keys associated with the PS/2 port driver.
 
 Additional details on each specific registry key are available on http://technet.microsoft.com.
 
- 
+ 
 
- 
+ 
 
 
 

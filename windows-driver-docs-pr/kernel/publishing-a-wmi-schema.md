@@ -24,9 +24,9 @@ A driver writer can then publish a driver's WMI schema in one of the following w
 
 -   Include binary data within the driver and return it when WMI requests it. A schema published in this way can be changed dynamically at runtime. For more information, see [Implementing Dynamic MOF Data](implementing-dynamic-mof-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

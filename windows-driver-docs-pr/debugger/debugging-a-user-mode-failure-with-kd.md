@@ -26,9 +26,9 @@ Similar to the video DLLs, almost all executables load at the same address, so K
 
 Sometimes KD or WinDbg has trouble loading the correct user-mode symbols even when the full symbol tree is in the symbol path. In this case, ntdll.dll and kernel32.dll are two of the most common symbols that would be required. In the case of debugging CSRSS from KD, winsrv.dll and csrsrv.dll are also common DLLs to load.
 
- 
+ 
 
- 
+ 
 
 
 

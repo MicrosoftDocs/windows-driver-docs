@@ -43,9 +43,9 @@ The UI DLL communicates with the server DLL by calling the spooler's [**XcvData*
 
 A [sample port monitor](sample-port-monitor.md) is included in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

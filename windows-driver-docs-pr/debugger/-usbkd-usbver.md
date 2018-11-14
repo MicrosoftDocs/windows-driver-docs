@@ -52,9 +52,9 @@ USBD VER 600 USB stack is VISTA
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
 **USBD\_IsInterfaceVersionSupported**
- 
+ 
 
- 
+ 
 
 
 

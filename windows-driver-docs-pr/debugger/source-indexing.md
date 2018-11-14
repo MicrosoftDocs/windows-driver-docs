@@ -35,9 +35,9 @@ SrcSrv includes five tools that are used in the source indexing process:
 
 These tools are installed with Debugging Tools for Windows in the subdirectory srcsrv, and should remain installed in the same path as SrcSrv. The PERL scripts in these tools require PERL 5.6 or later.
 
- 
+ 
 
- 
+ 
 
 
 

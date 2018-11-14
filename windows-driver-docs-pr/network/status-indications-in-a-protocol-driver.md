@@ -22,9 +22,9 @@ A connection-oriented protocol driver must supply a [**ProtocolCoStatusEx**](htt
 
 For a complete list of the possible status indications, see [Status Indications](https://msdn.microsoft.com/library/windows/hardware/ff570879).
 
- 
+ 
 
- 
+ 
 
 
 

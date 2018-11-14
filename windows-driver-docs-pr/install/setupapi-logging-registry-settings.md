@@ -23,9 +23,9 @@ For information about how to set the event categories that are enabled for a log
 
 By default, the SetupAPI text logs are located in the %*SystemRoot*%*\\Inf* directory. For information about how to change the directory where the text logs are located, see [Setting the Directory Path of the Text Logs](setting-the-directory-path-of-the-text-logs.md).
 
- 
+ 
 
- 
+ 
 
 
 

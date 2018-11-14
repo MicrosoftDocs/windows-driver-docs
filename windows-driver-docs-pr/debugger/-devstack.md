@@ -48,7 +48,7 @@ Specifies the device object. This can be the hexadecimal address of the DEVICE\_
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +71,9 @@ kd> !devstack e000000085007b50
  ServiceName is "kmixer"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

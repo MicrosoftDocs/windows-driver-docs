@@ -20,7 +20,7 @@ To notify a client of an event, the engine calls the event callback object that 
 
 **Note**   While the event callback is handling the event, the target is suspended and the debugging session is accessible; however, because the engine was waiting for an event--either explicitly during a [**WaitForEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561229) call or implicitly by executing a command such as [**g (Go)**](g--go-.md) or [**p (Step)**](p--step-.md)--the event callback cannot call **WaitForEvent**, and if it attempts to execute any commands that would cause the debugger to execute, for example **g (Go)** or **p (Step)**, the engine will interpret these commands as an instruction on how to proceed.
 
- 
+ 
 
 ### <span id="event_filters"></span><span id="EVENT_FILTERS"></span>Event Filters
 
@@ -30,9 +30,9 @@ The debugger engine also provides *event filters*, which are a simpler alternati
 
 For details about monitoring events, see [Monitoring Events](monitoring-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ Secure Mode can only be enabled while the debugger is dormant. Secure Mode appli
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +65,9 @@ To activate Secure Mode, use the command **.secure 1** (or **.secure** followed 
 
 The command **.secure** will show whether Secure Mode is currently active.
 
- 
+ 
 
- 
+ 
 
 
 

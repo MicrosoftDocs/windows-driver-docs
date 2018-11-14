@@ -24,9 +24,9 @@ The Universal Printer Driver (Unidrv) provides the following capabilities:
 
 -   A single [Unidrv renderer](unidrv-renderer.md) that, along with the GDI graphics engine, converts Microsoft Win32 GDI calls from applications into printer commands that can be sent to the print spooler.
 
- 
+ 
 
- 
+ 
 
 
 

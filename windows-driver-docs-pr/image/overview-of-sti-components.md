@@ -92,9 +92,9 @@ Drivers can call the **IrSock** software interface (described in the Microsoft W
 
 A vendor only needs to provide bus drivers for buses that are not supported by Microsoft drivers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 Source code for Plotter.dll, the printer graphics DLL for the [Microsoft plotter driver](microsoft-plotter-driver.md), is provided with the Windows Driver Kit (WDK). The code is located in the \\src\\print\\msplot subdirectory of the directory tree that contains the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

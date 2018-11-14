@@ -59,7 +59,7 @@ You pass a *DesiredAccess* parameter to **ZwCreateKey** or **ZwOpenKey** that co
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the available values for the *DesiredAccess* parameter, see [**ZwCreateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566425).
 
@@ -67,11 +67,11 @@ You can also call [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/libra
 
 **Note**  For calls to **ZwCreateKey**, **ZwOpenKey**, **IoOpenDeviceRegistryKey**, and **IoOpenDeviceInterfaceRegistryKey**, the generic access rights, GENERIC\_READ and GENERIC\_WRITE, are equivalent in meaning to the key-specific access rights, KEY\_READ and KEY\_WRITE, respectively, and can be used as substitutes for these key-specific access rights.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

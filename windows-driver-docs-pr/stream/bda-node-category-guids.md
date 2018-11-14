@@ -54,9 +54,9 @@ A BDA minidriver assigns this GUID to specify a BDA ISDB-type demodulator node f
 <span id="KSNODE_BDA_ISDB_S_DEMODULATOR"></span><span id="ksnode_bda_isdb_s_demodulator"></span>KSNODE\_BDA\_ISDB\_S\_DEMODULATOR  
 A BDA minidriver assigns this GUID to specify a BDA ISDB-type demodulator node for DVB-satellite demodulators.
 
- 
+ 
 
- 
+ 
 
 
 

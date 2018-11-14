@@ -37,7 +37,7 @@ A capturing extension has the following requirements and restrictions:
 
     **Note**  As with other extensions, the capturing extension can only originate packet traffic in the extensible switch ingress data path.
 
-     
+     
 
 -   A capturing extension can monitor packets, OID requests, and NDIS status indications that are issued over the extensible switch driver stack. However, this type of extension must forward packets, OID requests, and NDIS status indications through the extensible switch driver stack. The extension must not modify the data within the packets, OID requests, or NDIS status indications that it monitors.
 
@@ -47,9 +47,9 @@ A capturing extension has the following requirements and restrictions:
 
     Once bound to an extensible switch instance, the layering of capturing extensions in the extensible switch driver stack can be reordered. For more information, see [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

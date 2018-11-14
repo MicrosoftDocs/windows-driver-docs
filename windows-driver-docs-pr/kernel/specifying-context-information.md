@@ -33,9 +33,9 @@ The configuration manager provides several ways for registry filtering drivers t
 
     The **CmSetCallbackObjectContext** routine and **RegNtCallbackObjectContextCleanup** notification are available starting with Windows Vista.
 
- 
+ 
 
- 
+ 
 
 
 

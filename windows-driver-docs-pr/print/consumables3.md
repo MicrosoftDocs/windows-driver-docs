@@ -18,9 +18,9 @@ The Consumables property contains information about all of the consumable suppli
 
 The Consumables property is the parent of the [\[Name\]](-name-.md) property.
 
- 
+ 
 
- 
+ 
 
 
 

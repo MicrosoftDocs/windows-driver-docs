@@ -31,9 +31,9 @@ Each framework resource-range-list object represents a [logical configuration](h
 <a href="" id="framework-resource-list-objects"></a>*Framework resource-list objects*  
 Each framework resource-list object represents a logical configuration (that is, a set of specific resources) in a [resource list](https://msdn.microsoft.com/library/windows/hardware/ff547012). Handles to these objects have a type of WDFCMRESLIST. The object defines [framework resource-list object methods](https://msdn.microsoft.com/library/windows/hardware/dn265665).
 
- 
+ 
 
- 
+ 
 
 
 

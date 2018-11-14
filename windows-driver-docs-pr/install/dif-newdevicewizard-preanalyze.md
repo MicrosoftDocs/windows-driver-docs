@@ -47,7 +47,7 @@ After the user has selected a driver, but before Windows registers the device th
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -128,9 +128,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

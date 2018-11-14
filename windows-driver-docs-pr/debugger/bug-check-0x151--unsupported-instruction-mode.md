@@ -31,11 +31,11 @@ The UNSUPPORTED\_INSTRUCTION\_MODE bug check has a value of 0x00000151. This ind
 | 3         | Reserved                                       |
 | 4         | Reserved                                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

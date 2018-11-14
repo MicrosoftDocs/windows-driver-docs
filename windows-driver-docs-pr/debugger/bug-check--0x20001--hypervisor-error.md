@@ -31,11 +31,11 @@ The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that t
 | 3         | Reserved    |
 | 4         | Reserved    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

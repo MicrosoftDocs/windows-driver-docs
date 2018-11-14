@@ -26,11 +26,11 @@ Without this data structure, the debugger cannot determine what images the symbo
 
 **Note**   This only affects symbol files for the user-mode modules. Kernel-mode modules and symbols are not affected, as they are tracked in a different list.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

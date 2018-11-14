@@ -172,9 +172,9 @@ The following is a simplified flowchart to illustrate a typical sequence and log
 
 The serial bus driver is a function driver (FD) and the power policy owner (PPO) of its layer. Thus, it needs to handle its own power management. After all of its children have entered lower device power states, it can then enter into a lower power state itself. When it’s ready to enter this lower power state, it can cancel any pending I/O requests to the UART controller driver – this will allow the UART driver to also enter a lower power state. However, the UART driver should persist and restore its device settings (including the baud rate) when its power state is later resumed to active.
 
- 
+ 
 
- 
+ 
 
 
 

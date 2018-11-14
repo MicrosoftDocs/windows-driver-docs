@@ -108,9 +108,9 @@ Some devices might store the persistent identifiers in an object, some might gen
 
 When a client application calls the **IPortableDeviceContent::GetObjectIDsFromPersistentUniqueIDs** method, the driver, in turn, calls **WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs**.
 
- 
+ 
 
- 
+ 
 
 
 

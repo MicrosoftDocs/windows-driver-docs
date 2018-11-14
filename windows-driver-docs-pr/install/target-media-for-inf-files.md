@@ -23,9 +23,9 @@ A **DestinationDirs** section should include a **DefaultDestDir** entry.
 
 If an INF has copy, rename, or delete sections but no **DestinationDirs** section and the INF includes other INF files, Windows searches the included INF files for target location information. However, the order in which Windows searches the included files is not predictable. Therefore, there is a risk that Windows will, for example, copy files to a location not intended by the INF writer. To avoid such confusion, always specify a **DestinationDirs** section in an INF that contains copy, rename, or delete sections. The **DestinationDirs** section should include at least a **DefaultDestDir** entry and can list sections in the INF that copy, rename, or delete files.
 
- 
+ 
 
- 
+ 
 
 
 

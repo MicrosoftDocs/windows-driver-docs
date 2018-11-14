@@ -22,9 +22,9 @@ Each monitor has a device stack that includes a Microsoft monitor class function
 
 [Monitor Filter Drivers](monitor-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

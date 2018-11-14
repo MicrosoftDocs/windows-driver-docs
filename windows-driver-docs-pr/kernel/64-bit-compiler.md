@@ -67,7 +67,7 @@ The compiler defines the following macros to identify the platform.
 </tbody>
 </table>
 
- 
+ 
 
 The following macros are specific to the architecture.
 
@@ -94,7 +94,7 @@ The following macros are specific to the architecture.
 </tbody>
 </table>
 
- 
+ 
 
 Do not use these macros except with architecture-specific code. Instead, use \_WIN64, \_WIN32, and \_WIN16 whenever possible.
 
@@ -116,9 +116,9 @@ There is a warning option to assist porting to 64-bit Windows. The -Wp64-W3 swit
 
 -   **C4244**: Same as the existing warning C4242. For example, "return": conversion from "\_int64" to "unsigned int," possible loss of data.
 
- 
+ 
 
- 
+ 
 
 
 

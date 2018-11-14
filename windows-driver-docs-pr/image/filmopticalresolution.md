@@ -49,7 +49,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Film</strong>](film.md)</p></td>
+<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,9 +70,9 @@ If **Height** is absent, the WSD Scan Service should assume a square image resol
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

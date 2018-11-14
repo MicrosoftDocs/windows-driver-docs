@@ -37,7 +37,7 @@ After the extension completes this OID set request and the reference counter for
 
 **Note**  An extension increments the reference counter for an extensible switch port by calling [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295). An extension decrements the reference counter by calling [*DereferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598142).
 
- 
+ 
 
 The extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_PORT\_TEARDOWN:
 
@@ -45,13 +45,13 @@ The extension must follow these guidelines for handling OID set requests of OID\
 
     **Note**  The extension must not modify the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure that is associated with the OID request.
 
-     
+     
 
 -   After the extension forwards this OID request, it cannot forward packets to the deleted port. The extension also cannot issue OID requests nor call the [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295) function for the deleted port.
 
 **Note**  The extension must not issue OID set requests of OID\_SWITCH\_PORT\_TEARDOWN.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -78,7 +78,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -126,9 +126,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

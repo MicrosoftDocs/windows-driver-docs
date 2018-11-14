@@ -48,7 +48,7 @@ Specifies the hexadecimal address of the critical section.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +73,9 @@ ContentionCount    1
 *** Locked
 ```
 
- 
+ 
 
- 
+ 
 
 
 

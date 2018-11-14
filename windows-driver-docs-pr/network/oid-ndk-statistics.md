@@ -18,7 +18,7 @@ NDIS 6.30 and later miniport drivers that provide NDK services must support this
 
 **Note**  NDIS supports this OID with the direct OID request interface. For more information about the direct OID request interface, see [NDIS 6.1 Direct OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff564736).
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 
 [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
- 
+ 
 
- 
+ 
 
 
 

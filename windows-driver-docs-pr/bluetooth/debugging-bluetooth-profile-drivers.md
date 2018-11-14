@@ -30,9 +30,9 @@ The verification checks can help to catch the following kinds of errors:
 
 While debugging your profile driver, you can use the **!analyze-v** debugger command after a BC\_BLUETOOTH\_VERIFIER\_FAULT to obtain an explanation of the fault.
 
- 
+ 
 
- 
+ 
 
 
 

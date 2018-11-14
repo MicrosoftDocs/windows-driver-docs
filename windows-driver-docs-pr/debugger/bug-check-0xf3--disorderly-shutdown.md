@@ -57,7 +57,7 @@ The DISORDERLY\_SHUTDOWN bug check has a value of 0x000000F3. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +66,9 @@ Windows attempted to shut down, but there were no free pages available to contin
 
 Because applications were not terminated and drivers were not unloaded, they continued to access pages even after the modified writer had terminated. This causes the system to run out of pages, since the page files could be used.
 
- 
+ 
 
- 
+ 
 
 
 

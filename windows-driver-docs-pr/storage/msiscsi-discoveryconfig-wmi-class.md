@@ -41,9 +41,9 @@ class MSiSCSI_DiscoveryConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_DiscoveryConfig**](https://msdn.microsoft.com/library/windows/hardware/ff562991) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

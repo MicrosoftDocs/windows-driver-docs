@@ -18,9 +18,9 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://msdn.mic
 
 A bus driver always calls this routine in its *DispatchPower* routine, before it calls the [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) routine.
 
- 
+ 
 
- 
+ 
 
 
 

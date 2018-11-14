@@ -36,9 +36,9 @@ This section discusses the following audio miniport object interfaces:
 
 [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737)
 
- 
+ 
 
- 
+ 
 
 
 

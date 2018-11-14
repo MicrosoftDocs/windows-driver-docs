@@ -50,7 +50,7 @@ The Locale element specifies the locale of the service metadata package. A servi
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -73,8 +73,8 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataKey](metadatakey.md)</p></td>
-<td><p>The [MetadataKey](metadatakey.md) element specifies the attributes of the device metadata package. These include the following:</p>
+<td><p><a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a></p></td>
+<td><p>The <a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a> element specifies the attributes of the device metadata package. These include the following:</p>
 <ul>
 <li><p>The identifier for each hardware function supported by the device.</p></li>
 <li><p>The language-specific locale for the text strings within the package.</p></li>
@@ -83,7 +83,7 @@ There are no child elements.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -110,7 +110,7 @@ There are no child elements.
     **Note**  
     Only one metadata package for a service should set the **default** attribute to **true** (1). Otherwise, the operating system randomly selects a metadata package for the service.
 
-     
+     
 
 -   When the operating system selects a service metadata package to display, it uses the Locale element in the following way:
 
@@ -122,9 +122,9 @@ There are no child elements.
 
 The Locale element is required.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,11 +25,11 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID* _RxAllocatePoolWithTag(
-   ULONG Type,
-   ULONG Size,
-   ULONG Tag,
-   PSZ   FileName,
-   ULONG LineNumber
+   ULONG Type,
+   ULONG Size,
+   ULONG Tag,
+   PSZ   FileName,
+   ULONG LineNumber
 );
 ```
 
@@ -110,9 +110,9 @@ Requirements
 
 [**\_RxFreePool**](-rxfreepool.md)
 
- 
+ 
 
- 
+ 
 
 
 

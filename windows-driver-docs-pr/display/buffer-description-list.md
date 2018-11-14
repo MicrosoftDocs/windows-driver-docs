@@ -23,9 +23,9 @@ DirectX VA operates primarily by passing buffers of data from the host decoder t
 
 The value of the **dwTypeIndex** member of the [**DXVA\_BufferDescription**](https://msdn.microsoft.com/library/windows/hardware/ff563122) structure specifies what type of buffer is passed from the host to the accelerator.
 
- 
+ 
 
- 
+ 
 
 
 

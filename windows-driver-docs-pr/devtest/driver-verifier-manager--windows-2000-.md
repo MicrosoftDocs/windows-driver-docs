@@ -31,9 +31,9 @@ Several screens have a **Refresh Frequency** section on them. This is used to co
 
 To exit Driver Verifier Manager, use the **Exit** button. If you have made any changes and have not pressed the corresponding **Apply** button, you will be asked if you wish to save your changes.
 
- 
+ 
 
- 
+ 
 
 
 

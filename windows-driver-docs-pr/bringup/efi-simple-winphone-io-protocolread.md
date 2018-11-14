@@ -85,7 +85,7 @@ The function returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -99,9 +99,9 @@ In case of errors, no more bytes will be read, and the appropriate status code w
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

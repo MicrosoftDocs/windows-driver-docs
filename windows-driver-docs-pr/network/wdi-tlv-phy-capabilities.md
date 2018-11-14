@@ -35,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                      | Specifies the operating temperature class.         |
 | UINT32                                      | Specifies the antenna diversity support.           |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

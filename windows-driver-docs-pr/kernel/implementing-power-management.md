@@ -33,9 +33,9 @@ The power manager instructs drivers when to prepare their devices to enter a low
 -   [Improving System Startup Performance](improving-system-startup-performance.md)
 -   [Device-Level Thermal Management](device-level-thermal-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

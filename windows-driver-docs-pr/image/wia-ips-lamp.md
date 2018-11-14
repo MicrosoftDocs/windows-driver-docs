@@ -56,7 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_LAMP.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

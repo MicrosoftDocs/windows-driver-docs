@@ -22,9 +22,9 @@ Whereas dump files caused by a system crash are written to the computer that has
 
 For details, see the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

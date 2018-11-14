@@ -26,9 +26,9 @@ You can configure the handling status by doing one of the following:
 
 For a detailed discussion of exceptions and events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

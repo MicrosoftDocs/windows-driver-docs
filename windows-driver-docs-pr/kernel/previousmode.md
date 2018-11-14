@@ -27,9 +27,9 @@ For another example, if the parameters for an **Nt*Xxx*** routine include an inp
 
 If it is necessary, a driver can call the [**ExGetPreviousMode**](https://msdn.microsoft.com/library/windows/hardware/ff545288) routine to get the **PreviousMode** value from the current thread object. Or, the driver can read the **RequestorMode** field from the [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) structure that describes the requested I/O operation. The **RequestorMode** field contains a copy of the **PreviousMode** value from the thread that requested the operation.
 
- 
+ 
 
- 
+ 
 
 
 

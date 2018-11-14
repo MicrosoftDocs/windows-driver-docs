@@ -22,9 +22,9 @@ WinDbg automatically positions each floating window. If a window has never been 
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

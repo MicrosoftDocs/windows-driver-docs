@@ -2,7 +2,8 @@
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
 ms.assetid: e812eee1-768d-42d6-918e-c716b5c29ea2
-ms.author: windowsdriverdev
+ms.author: EliotSeattle
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -35,7 +36,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
     **Note**  
     **WQReady.xml** is the default file name, but you can rename it.
 
-     
+     
 
 ## Submitting your file
 

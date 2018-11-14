@@ -26,9 +26,9 @@ The first topic of this section, [Overview of Wait/Wake Operation](overview-of-w
 
 [Canceling a Wait/Wake IRP](canceling-a-wait-wake-irp.md)
 
- 
+ 
 
- 
+ 
 
 
 

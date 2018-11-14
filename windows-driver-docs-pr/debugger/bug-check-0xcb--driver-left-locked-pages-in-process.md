@@ -59,7 +59,7 @@ If a driver locked these pages, the parameters have the following meaning.
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -96,7 +96,7 @@ If the I/O manager locked these pages, the parameters have the following meaning
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -105,9 +105,9 @@ This bug check is issued only if the registry value **\\\\HKEY\_LOCAL\_MACHINE\\
 
 Starting with Windows Vista, this bug check can also be issued by Driver Verifier when the Pool Tracking option is enabled.
 
- 
+ 
 
- 
+ 
 
 
 

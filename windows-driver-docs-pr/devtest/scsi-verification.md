@@ -82,7 +82,7 @@ The effects of each bit are as follows:
 <tr class="odd">
 <td align="left"><p>0</p></td>
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>Driver Verifier will monitor the miniport driver's memory access and check for improper use of memory buffers.</p></td>
+<td align="left"><p>Driver Verifier will monitor the miniport driver&#39;s memory access and check for improper use of memory buffers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>28</p></td>
@@ -107,7 +107,7 @@ The effects of each bit are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 In most cases, the recommended setting is 0xD0000001. This enables all **SCSI Verifier** tests except for the time limit on **HwAdapterControl**, the time limit on **HwInitialize**, and the ban on multiple requests to a logical unit. These three tests are often too stringent.
 
@@ -123,15 +123,15 @@ Similarly, if you want to completely deactivate SCSI Verification, you need to s
 
 **Note**   The value 0xF0000000 will disable all tests, but the SCSI Verification modules will still be loaded. Use this value if you wish to disable verification but intend to enable the high-bit tests at a later time. On the other hand, the value 0xFFFFFFFF prevents the modules from being loaded entirely; if this value is used during boot it will not be possible to enable SCSI Verification without rebooting.
 
- 
+ 
 
 ### <span id="activating_without_rebooting"></span><span id="ACTIVATING_WITHOUT_REBOOTING"></span>Activating without Rebooting
 
 In general, you cannot activate or deactivate SCSI Verification without restarting ("rebooting") the computer on any Windows operating system. The ScsiPort.sys driver reads the **VerifyLevel** registry entry only when it loads, which is typically at boot time. However, if the ScsiPort.sys driver is not loaded when you add the registry entry, or if it is unloaded and reloaded, you can enable SCSI Verification on Windows XP and later versions of Windows without restarting the computer.
 
- 
+ 
 
- 
+ 
 
 
 

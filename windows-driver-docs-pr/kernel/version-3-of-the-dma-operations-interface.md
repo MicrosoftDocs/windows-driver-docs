@@ -47,11 +47,11 @@ In version 3 of the DMA operations interface, calls to the [**KeFlushIoBuffers**
 
 On an x86 or x64 processor, the **KeFlushIoBuffers** call performs no operations, and this call, while unnecessary, does not interfere with the operation of the hardware platform. On an ARM processor, calls to **KeFlushIoBuffers** during DMA transfers perform cache operations that are unnecessary and can degrade performance.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

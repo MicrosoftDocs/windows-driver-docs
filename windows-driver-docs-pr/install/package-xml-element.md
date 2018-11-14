@@ -41,7 +41,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 </tbody>
 </table>
 
- 
+ 
 
 **Element Information**
 
@@ -53,7 +53,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>group</strong>](group-xml-element.md)</p></td>
+<td align="left"><p><a href="group-xml-element.md" data-raw-source="[&lt;strong&gt;group&lt;/strong&gt;](group-xml-element.md)"><strong>group</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -70,7 +70,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 </tbody>
 </table>
 
- 
+ 
 
 **Remarks**
 
@@ -91,9 +91,9 @@ The following code example demonstrates a **package** element that specifies Dir
 
 [**group**](group-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

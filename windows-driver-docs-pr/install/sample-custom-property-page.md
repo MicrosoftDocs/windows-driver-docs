@@ -17,11 +17,11 @@ In the previous dialog box, a provider supplies a property page named Properties
 
 **Note**  A setup component can define more than one property page for its device or device class. Each tab should have a name that concisely describes the purpose of the page. The system does not check to make sure that the names are unique.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

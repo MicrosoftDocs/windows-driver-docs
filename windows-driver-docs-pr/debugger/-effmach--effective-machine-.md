@@ -43,7 +43,7 @@ You can enter one of the following machine types.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.</strong></p></td>
-<td align="left"><p>Use the processor mode of the target computer's native processor mode.</p></td>
+<td align="left"><p>Use the processor mode of the target computer&#39;s native processor mode.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>#</strong></p></td>
@@ -74,7 +74,7 @@ You can enter one of the following machine types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -99,7 +99,7 @@ You can enter one of the following machine types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -112,9 +112,9 @@ The processor mode influences many debugger features:
 
 -   Which processor's register set is active.
 
- 
+ 
 
- 
+ 
 
 
 

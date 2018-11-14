@@ -51,7 +51,7 @@ Determines which control blocks are displayed. If *Flag* is **1**, the debugger 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +59,9 @@ For information about cache management, see the Microsoft Windows SDK documentat
 
 For information about other cache management extensions, see the [**!cchelp**](-cchelp.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

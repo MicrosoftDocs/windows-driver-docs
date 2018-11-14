@@ -18,7 +18,7 @@ OID\_WDI\_TASK\_CLOSE requests that the IHV component closes the adapter. This i
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 1                                     | 5                               |
 
- 
+ 
 
 ## Task parameters
 
@@ -52,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

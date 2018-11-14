@@ -33,9 +33,9 @@ Note that an offload target must support 802.1Q processing for offloaded TCP con
 
 An offload target can optionally support 802.1p.
 
- 
+ 
 
- 
+ 
 
 
 

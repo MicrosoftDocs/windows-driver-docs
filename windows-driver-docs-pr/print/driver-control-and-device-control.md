@@ -46,9 +46,9 @@ For some devices, proprietary color management is performed (either by the drive
 
 For either of these scenarios, both the BR\_HOST\_ICM flag in the **flColorType** member of [**BRUSHOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff538261) and the XO\_HOST\_ICM flag in the **flXlate** member of [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) will be set. These flags can be set even if the **dmICMMethod** member of [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) is DMICMMETHOD\_NONE.
 
- 
+ 
 
- 
+ 
 
 
 

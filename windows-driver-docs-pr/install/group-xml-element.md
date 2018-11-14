@@ -40,13 +40,13 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
-<td align="left"><p>[<strong>package</strong>](package-xml-element.md) (zero or more)</p>
-<p>[<strong>installAllOrNone</strong>](installallornone-xml-element.md) (zero or one)</p>
-<p>[<strong>suppressAddRemovePrograms</strong>](suppressaddremoveprograms-xml-element.md) (zero or one)</p></td>
+<td align="left"><p><a href="package-xml-element.md" data-raw-source="[&lt;strong&gt;package&lt;/strong&gt;](package-xml-element.md)"><strong>package</strong></a> (zero or more)</p>
+<p><a href="installallornone-xml-element.md" data-raw-source="[&lt;strong&gt;installAllOrNone&lt;/strong&gt;](installallornone-xml-element.md)"><strong>installAllOrNone</strong></a> (zero or one)</p>
+<p><a href="suppressaddremoveprograms-xml-element.md" data-raw-source="[&lt;strong&gt;suppressAddRemovePrograms&lt;/strong&gt;](suppressaddremoveprograms-xml-element.md)"><strong>suppressAddRemovePrograms</strong></a> (zero or one)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data contents</strong></p></td>
@@ -59,7 +59,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -88,9 +88,9 @@ The following code example demonstrates a **group** element that includes two [*
 
 [**suppressAddRemovePrograms**](suppressaddremoveprograms-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

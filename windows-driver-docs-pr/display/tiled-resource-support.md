@@ -38,9 +38,9 @@ These reference topics describe how to implement this capability in your user-mo
 * [**D3D10DDIARG\_CREATEDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice) (**pWDDM1\_3DeviceFuncs** member)
 * [**D3D11DDIARG\_CREATEDEFERREDCONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createdeferredcontext) (**pWDDM1\_3ContextFuncs** member)
 
- 
+ 
 
- 
+ 
 
 
 

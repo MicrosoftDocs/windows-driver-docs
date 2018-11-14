@@ -18,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_VPNOTIFY enumeration.
 
 The only event in this set is [**KSEVENT\_VPNOTIFY\_FORMATCHANGE**](ksevent-vpnotify-formatchange.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,14 +21,10 @@ Use a Traceview control command to manage trace sessions, including starting and
 
 ```
     traceview {-start | -stop | -update | -enable | -disable | -flush | -q} SessionName [Parameters]
-
-   
 ```
 
 ```
     traceview {-enumguid | -l | -h | -x}
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -83,7 +79,7 @@ When used with **-start**, **-rt** starts a real-time trace sessions (A trace lo
 
 When used with **-update**, **-rt** adds real-time message delivery to a trace log session. All new trace messages are sent directly to the trace consumer (as in a real-time trace session), in addition to a [trace log](trace-log.md).
 
-<span id="_______-guid___GUID___GUIDFile_"></span><span id="_______-guid___guid___guidfile_"></span><span id="_______-GUID___GUID___GUIDFILE_"></span> **-guid** {**\#***GUID* | *GUIDFile*}  
+<span id="_______-guid___GUID___GUIDFile_"></span><span id="_______-guid___guid___guidfile_"></span><span id="_______-GUID___GUID___GUIDFILE_"></span> **-guid** {**\#**<em>GUID</em> | *GUIDFile*}  
 Specifies one or more trace providers. Use with **-start** to enable providers for a trace session. Use with **-enable** to enable the providers or to change their **-flag** or **-level** values. Use with **-disable** to specify the providers to disable.
 
 *GUID* can specify either one [control GUID](control-guid.md) (preceded by a number sign (**\#**)) or the path (optional) and file name of a text file, such as a control GUID (.ctl) file, that contains the control GUIDs of one or more trace providers.
@@ -106,14 +102,14 @@ TraceView passes the values of the following subparameters to the specified prov
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>-flag</strong> <em>Flag</em></p></td>
-<td align="left"><p>Specifies the [trace flags](trace-flags.md) for the [providers](trace-provider.md) in the trace session. The flags determine which events the trace provider generates.</p>
+<td align="left"><p>Specifies the <a href="trace-flags.md" data-raw-source="[trace flags](trace-flags.md)">trace flags</a> for the <a href="trace-provider.md" data-raw-source="[providers](trace-provider.md)">providers</a> in the trace session. The flags determine which events the trace provider generates.</p>
 <p><em>Flag</em> represents a flag value defined in the trace provider, in decimal or hexadecimal format. The default value is 0. Values from 0x01000000 through 0xFF000000 are reserved for future use.</p>
 <p>The meaning of the flags is defined independently by each trace provider. Typically, flags represent increasingly detailed reporting levels.</p>
 <p>In a <strong>-start</strong> command, the flags value applies to all trace providers in the trace session. To set different flags for each trace provider, use a separate <strong>-enable</strong> command for each trace provider.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>-level</strong> <em>Level</em></p></td>
-<td align="left"><p>Specifies the [trace level](trace-level.md) for the providers in the trace session. The level determines which events the trace provider generates.</p>
+<td align="left"><p>Specifies the <a href="trace-level.md" data-raw-source="[trace level](trace-level.md)">trace level</a> for the providers in the trace session. The level determines which events the trace provider generates.</p>
 <p><em>Level</em> represents a level value in decimal or hexadecimal format. The default value is 0.</p>
 <p>The meaning of the level value is defined independently by each trace provider. Typically, the trace level represents the severity of the event (information, warning, or error).</p>
 <p>In a <strong>-start</strong> command, the level value applies to all trace providers in the trace session. To set different levels for each trace provider, use a separate <strong>-enable</strong> command for each trace provider.</p></td>
@@ -121,7 +117,7 @@ TraceView passes the values of the following subparameters to the specified prov
 </tbody>
 </table>
 
- 
+
 
 <span id="_______-b_______BufferSize______"></span><span id="_______-b_______buffersize______"></span><span id="_______-B_______BUFFERSIZE______"></span> **-b** *BufferSize*   
 Specifies the size, in KB, of each buffer allocated for the trace session. Use only with **-start**.
@@ -209,9 +205,9 @@ You can use the TraceView -start command to start a [Global Logger trace session
 traceview -start GlobalLogger [parameters]
 ```
 
- 
 
- 
+
+
 
 
 

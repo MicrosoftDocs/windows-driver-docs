@@ -22,9 +22,9 @@ If the miniport driver sets the **Status** member of the NET\_BUFFER\_LIST struc
 
 For more information about miniport driver receive handling, see [Indicating Received Data from a Miniport Driver](indicating-received-data-from-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

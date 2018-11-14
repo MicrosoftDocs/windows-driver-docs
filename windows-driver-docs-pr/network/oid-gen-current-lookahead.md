@@ -63,9 +63,9 @@ Requirements
 
 [OID\_GEN\_RECEIVE\_BLOCK\_SIZE](oid-gen-receive-block-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

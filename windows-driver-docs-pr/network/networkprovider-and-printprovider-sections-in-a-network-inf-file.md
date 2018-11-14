@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 In addition to being a network provider, a **NetClient** component can also be a print provider. A print provider provides print services to user applications over a network.
 
@@ -37,9 +37,9 @@ An INF that installs a **NetClient** component that is a print provider must con
 
 An INF file that installs a **NetClient** component must also contain an *add-registry-section* (referenced by a **AddReg** directive in the *service-install-section* for a component) that adds a **NetworkProvider** key to the component's **service** key. For more information, see [Specifying the Name and Provider Path for a NetClient Component](specifying-the-name-and-provider-path-for-a-netclient-component.md).
 
- 
+ 
 
- 
+ 
 
 
 

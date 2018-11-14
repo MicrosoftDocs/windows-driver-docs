@@ -28,9 +28,9 @@ This section includes:
 
 Certain common methods are supported by all COM interfaces on Microsoft Windows. These methods are not listed individually in this reference section. For details, see [Using Client Objects](https://msdn.microsoft.com/library/windows/hardware/ff560088).
 
- 
+ 
 
- 
+ 
 
 
 

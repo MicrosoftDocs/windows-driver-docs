@@ -18,7 +18,7 @@ Critical section time outs can be identified by the stack trace that shows the r
 
 As with resource time outs, the **!ntsdexts.locks** extension will give a list of locks currently held and the threads that own them. Unlike resource time outs, the thread IDs given are not immediately useful. These are system IDs that do not map directly to the thread numbers used by CDB.
 
-Just as with **ExpWaitForResource*Xxx***, the lock identifier is the first parameter to **RtlpWaitForCriticalSection**. Continue tracing the chain of waits until either a loop is found or the final thread is not waiting for a critical section time out.
+Just as with <strong>ExpWaitForResource*Xxx</strong><em>, the lock identifier is the first parameter to **RtlpWaitForCriticalSection</em>*. Continue tracing the chain of waits until either a loop is found or the final thread is not waiting for a critical section time out.
 
 ### <span id="example_of_debugging_a_critical_time_out"></span><span id="EXAMPLE_OF_DEBUGGING_A_CRITICAL_TIME_OUT"></span>Example of Debugging a Critical Time Out
 
@@ -132,9 +132,9 @@ ChildEBP RetAddr  Args to Child
 
 Thread 21 has **RtlpWaitForCriticalSection** near the top of its stack. Thread 6 does not. So thread 21 is the culprit.
 
- 
+ 
 
- 
+ 
 
 
 

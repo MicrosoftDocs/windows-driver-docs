@@ -45,11 +45,11 @@ The following lists summarize some key points for each method.
 
 **Note**  The above lists are not necessarily exhaustive. There might be other points to consider when choosing which method is the best choice for a particular WSK application.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

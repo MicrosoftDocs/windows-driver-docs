@@ -20,13 +20,13 @@ The following steps describe how NDIS participates in the surprise removal of a 
 
     **Note**  NDIS performs this step only for filter drivers that advertise an entry point for the [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function. A filter driver advertise this entry point when it calls the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function.
 
-     
+     
 
 3.  Within the context of the call to its [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function, the filter driver must call [**NdisFNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561828) to forward the **NetEventQueryRemoveDevice** event up to the next filter driver in the driver stack. This causes NDIS to call that filter driver's *FilterNetPnPEvent* function with an event code of **NetEventQueryRemoveDevice.**.
 
     **Note**  NDIS performs this step only for the next filter driver in the driver stack that advertises an entry point for the [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function.
 
-     
+     
 
 4.  Each filter driver in the driver stack repeats the previous step until the highest filter driver in the stack has forwarded the **NetEventQueryRemoveDevice.** event.
 
@@ -56,9 +56,9 @@ The following steps describe how NDIS participates in the surprise removal of a 
 
 11. When NDIS receives the completed IRP\_MN\_REMOVE\_DEVICE request from the next lower device object in the stack, NDIS destroys the functional device object (FDO) that it created for the NIC.
 
- 
+ 
 
- 
+ 
 
 
 

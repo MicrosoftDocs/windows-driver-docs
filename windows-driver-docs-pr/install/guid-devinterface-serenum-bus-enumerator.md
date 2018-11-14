@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR [device interface class](https://ms
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**GUID_SERENUM_BUS_ENUMERATOR**](guid-serenum-bus-enumerator.md)
 
- 
+ 
 
- 
+ 
 
 
 

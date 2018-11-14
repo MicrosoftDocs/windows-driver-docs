@@ -27,7 +27,7 @@ warning C28121: The function is not permitted to be called at the current IRQ le
 </tbody>
 </table>
 
- 
+ 
 
 The driver is executing at an IRQL that is too high for the function that it is calling.
 
@@ -37,9 +37,9 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 
 If the Code Analysis tool cannot determine the IRQL at which the driver is running, it will not report this warning, even if the function is being called at the wrong IRQL.
 
- 
+ 
 
- 
+ 
 
 
 

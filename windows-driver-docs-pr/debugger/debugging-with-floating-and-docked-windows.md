@@ -36,9 +36,9 @@ Press CTRL+TAB to switch between debugging information windows. By pressing thes
 
 The ALT+TAB shortcut keys are the standard Microsoft Windows shortcut keys to switch between the windows on the desktop. You can use these shortcut keys to switch between the WinDbg window and any additional docks that you have created. You can also make a dock active by clicking its button in the Windows taskbar.
 
- 
+ 
 
- 
+ 
 
 
 

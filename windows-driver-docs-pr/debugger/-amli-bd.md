@@ -31,14 +31,14 @@ Syntax
 <span id="_______Breakpoint______"></span><span id="_______breakpoint______"></span><span id="_______BREAKPOINT______"></span> *Breakpoint*   
 Specifies the number of the breakpoint to be disabled.
 
-<span id="______________"></span> **\***   
+<span id="______________"></span> **\\***   
 Specifies that all breakpoints should be disabled.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 Kdexts.dll
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ kd> !amli bl
 kd> !amli bd 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

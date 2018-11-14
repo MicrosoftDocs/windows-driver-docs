@@ -52,7 +52,7 @@ Specifies the target module whose imports the debugger corrects. *Module* can co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -61,9 +61,9 @@ You can use the **.fiximports** command only when the target is a minidump that 
 
 When the debugger maps images for use as memory, the debugger does not automatically connect image imports to exporters. Therefore, instructions that refer to imports are disassembled in the same manner as in a live debugging session. You can use **.fiximports** to request that the debugger perform the appropriate import linking.
 
- 
+ 
 
- 
+ 
 
 
 

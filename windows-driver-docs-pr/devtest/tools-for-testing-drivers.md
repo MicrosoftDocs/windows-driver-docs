@@ -39,9 +39,9 @@ ms.localizationpriority: medium
 -   [JSConstraintsDebug](jsconstraintsdebug.md)
 -   [Bluetooth Inquiry Record Verifier](bluetooth-inquiry-record-verifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ By taking advantage of this direct path, games and other display-intensive appli
 
 The rapid motion and ever-changing screens of many games and multimedia applications put a heavy burden on the display process and tend to exacerbate tearing. Although GDI is very fast at drawing spreadsheets, graphs, TrueType font rendering, and so on, it is not meant to be a real-time graphics API. DirectDraw augments GDI by handling the device-dependent hardware accelerator functions in a 32-bit driver.
 
- 
+ 
 
- 
+ 
 
 
 

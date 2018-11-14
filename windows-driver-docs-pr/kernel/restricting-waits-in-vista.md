@@ -14,11 +14,11 @@ Because many device driver developers use [Synchronous I/O Programming Technique
 
 **Note**   It is strongly recommended that [Synchronous I/O Programming Techniques](synchronous-i-o-programming.md) are avoided in your device driver. If Vista stops execution of your driver code because your driver is waiting for a device, your device may be left in an unknown state.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

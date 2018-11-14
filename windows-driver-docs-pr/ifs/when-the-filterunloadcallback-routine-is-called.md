@@ -33,9 +33,9 @@ Note that if a minifilter driver's **DriverEntry** routine returns a warning or 
 
 The *FilterUnloadCallback* routine is not called at system shutdown time. A minifilter driver that must perform shutdown processing should register a preoperation callback routine for IRP\_MJ\_SHUTDOWN operations.
 
- 
+ 
 
- 
+ 
 
 
 

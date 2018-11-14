@@ -58,9 +58,9 @@ The WSD Scan Service sends a **CancelJobResponse** operation to a client when it
 
 [**CancelJobRequest**](canceljobrequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

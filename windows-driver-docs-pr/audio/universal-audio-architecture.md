@@ -30,9 +30,9 @@ To be UAA-compatible, an IEEE 1394 AV/C audio device must conform to both the re
 
 For more information about the Microsoft UAA initiative, see the [Universal Audio Architecture](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) white paper. For more information about Intel HD Audio, see the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website. For a list of related specifications for USB and IEEE 1394 audio devices, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver).
 
- 
+ 
 
- 
+ 
 
 
 

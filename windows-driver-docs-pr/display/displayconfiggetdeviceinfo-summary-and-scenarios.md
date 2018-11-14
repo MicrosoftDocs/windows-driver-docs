@@ -36,9 +36,9 @@ The caller can use [**DisplayConfigGetDeviceInfo**](https://msdn.microsoft.com/l
 
 -   The display control panel applet calls [**DisplayConfigGetDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff553903) to obtain the native resolution of each connected monitor so the resolution can be highlighted in the user interface.
 
- 
+ 
 
- 
+ 
 
 
 

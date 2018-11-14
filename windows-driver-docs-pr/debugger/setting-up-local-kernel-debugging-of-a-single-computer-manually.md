@@ -49,9 +49,9 @@ Open a Command Prompt window as Administrator, and enter the following command:
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

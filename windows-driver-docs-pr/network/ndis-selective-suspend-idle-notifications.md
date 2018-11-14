@@ -23,9 +23,9 @@ The following topics provide more information on the NDIS selective suspend oper
 
 [Completing the NDIS Selective Suspend Idle Notification](completing-the-ndis-selective-suspend-idle-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -134,7 +134,7 @@ Many "world-wide" MB devices today support multiple frequency bands because the 
 </tbody>
 </table>
 
- 
+ 
 
 **3GPP2 (CDMA-based) Frequency Band Classes**
 
@@ -284,7 +284,7 @@ US 2.5 GHz Forward Link Only Band
 
 2624-2690
 
- 
+ 
 
 The unit for radio frequency bands in both tables is megahertz (MHz).
 
@@ -315,9 +315,9 @@ Requirements
 
 [WWAN Driver Initialization Procedure](https://msdn.microsoft.com/library/windows/hardware/ff557186)
 
- 
+ 
 
- 
+ 
 
 
 

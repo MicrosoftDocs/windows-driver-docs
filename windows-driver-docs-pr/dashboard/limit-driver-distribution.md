@@ -1,7 +1,8 @@
 ---
 title: Driver distribution expansion
 description: Creating a floor or ceiling for a driver submission in order to change its distribution.
-ms.author: eliotgra 
+ms.author: eliotgra
+ms.topic: article 
 ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---

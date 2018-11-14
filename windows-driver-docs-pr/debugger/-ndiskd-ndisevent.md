@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisevent** extension displays an NDIS debug event log.
 
@@ -169,9 +169,9 @@ MINIPORT PM & PNP EVENTS
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

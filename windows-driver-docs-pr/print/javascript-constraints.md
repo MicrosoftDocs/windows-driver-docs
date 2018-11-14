@@ -118,7 +118,7 @@ Return value
 | 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).   |
 | 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).       |
 
- 
+ 
 
 ## completePrintCapabilities function
 
@@ -209,9 +209,9 @@ If a driver does not utilize JavaScript constraints, there is no requirement tha
 
 For more information about how to use JavaScript constraints, see the [Print driver constraints sample](http://go.microsoft.com/fwlink/p/?LinkId=617946).
 
- 
+ 
 
- 
+ 
 
 
 

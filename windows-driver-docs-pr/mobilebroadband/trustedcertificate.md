@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SubjectName](subjectname.md)</p></td>
+<td><p><a href="subjectname.md" data-raw-source="[SubjectName](subjectname.md)">SubjectName</a></p></td>
 <td><p>The Subject Name of the trusted certificate.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IssuerName](issuername.md)</p></td>
+<td><p><a href="issuername.md" data-raw-source="[IssuerName](issuername.md)">IssuerName</a></p></td>
 <td><p>The Issuer Name of the trusted certificate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +70,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificates](trustedcertificates.md)</p></td>
+<td><p><a href="trustedcertificates.md" data-raw-source="[TrustedCertificates](trustedcertificates.md)">TrustedCertificates</a></p></td>
 <td><p>Specifies the trusted certificates.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -98,9 +98,9 @@ There are no attributes.
 
 The TrustedCertificate element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

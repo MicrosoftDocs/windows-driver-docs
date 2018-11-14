@@ -63,9 +63,9 @@ As discussed above, the setup program discards the driver's registry settings du
 
 The Ac97 audio adapter sample in the Windows Driver Kit (WDK) contains an example of an INF file (Ac97smpl.inf) that migrates an audio driver from Windows Me/98 to Windows XP or Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

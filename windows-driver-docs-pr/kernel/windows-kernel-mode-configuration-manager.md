@@ -18,9 +18,9 @@ Routines that provide a direct interface to the configuration manager are prefix
 
 In addition to directly calling the configuration manager, there are other ways you will want to work with the registry in your driver. For more information about using the registry in a driver, see [Using the Registry in a Driver](using-the-registry-in-a-driver.md) and [Registry Keys for Drivers](https://msdn.microsoft.com/library/windows/hardware/ff549538).
 
- 
+ 
 
- 
+ 
 
 
 

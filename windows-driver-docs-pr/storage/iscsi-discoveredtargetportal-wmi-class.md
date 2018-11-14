@@ -20,9 +20,9 @@ The ISCSI\_DiscoveredTargetPortal class is unpublished and is defined in *Discov
 
 When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal**](https://msdn.microsoft.com/library/windows/hardware/ff561509) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

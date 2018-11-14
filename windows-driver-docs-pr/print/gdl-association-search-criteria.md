@@ -24,9 +24,9 @@ The members list is searched, starting with the most recently added element. Whe
 
 The search will end when a template that qualifies to represent the data entry has been found. If no qualifying template has been found when the end of the list is reached, the data entry will be left without a template association; such data entries are called *unidentified entries*. All members of an unidentified data construct will also be unidentified.
 
- 
+ 
 
- 
+ 
 
 
 

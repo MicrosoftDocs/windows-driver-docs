@@ -39,9 +39,9 @@ However, these settings do not affect dump files created by the [**.dump**](-dum
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

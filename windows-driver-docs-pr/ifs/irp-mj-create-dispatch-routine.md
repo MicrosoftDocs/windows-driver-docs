@@ -32,9 +32,9 @@ This section includes the following topics:
 
 [Handling Quotas on IRP\_MJ\_CREATE](handling-quotas-on-irp-mj-create.md)
 
- 
+ 
 
- 
+ 
 
 
 

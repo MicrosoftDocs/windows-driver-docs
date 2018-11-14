@@ -53,9 +53,9 @@ The following concepts are used in the discussion of event tracing tools in Wind
 
 For conceptual information about event tracing, see the Microsoft Windows SDK documentation. For information about the Windows software trace preprocessor (WPP), see [WPP Software Tracing](wpp-software-tracing.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ While the flow of I/O request packets between a storage class driver and the SCS
 
 The Storport Driver offers a more flexible I/O model, in particular with regard to the masking of interrupts. For information about the differences between the Storport I/O model and the SCSI Port I/O model, see [Storport I/O Model](storport-i-o-model.md).
 
- 
+ 
 
- 
+ 
 
 
 

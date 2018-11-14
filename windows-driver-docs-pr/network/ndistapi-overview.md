@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 NDISTAPI is a system-provided driver that interfaces NDISWAN and NDIS WAN miniport drivers to the TAPI services. NDIS WAN miniport drivers are not supported for NDIS 5.0 and later drivers. New drivers should be based on the CoNDIS WAN driver architecture.
 
- 
+ 
 
- 
+ 
 
 
 

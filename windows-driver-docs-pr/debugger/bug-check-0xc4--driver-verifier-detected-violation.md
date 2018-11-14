@@ -29,7 +29,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 **Note**  If you have trouble viewing all 5 columns in this table, try the following:
 -   Expand your browser window to full size.
 -   Place the cursor in the table and use the arrow keys to scroll left and right.
- 
+ 
 |Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
 |--- |--- |--- |--- |--- |
 |0x00|Current IRQL|Pool type|0|The driver requested a zero-byte pool allocation.|
@@ -258,9 +258,9 @@ The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, **0** (zero) in
 
 [Handling a Bug Check When Driver Verifier is Enabled](handling-a-bug-check-when-driver-verifier-is-enabled.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,17 +28,17 @@ This OID method request returns an array. Each element in the array specifies th
 
 **Note**  When a switch extension binds for a Hyper-v Extensible Switch, it must first issue the [OID\_SWITCH\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh598270) OID to obtain the basic switch information. If the **IsActive** member of the [**NDIS\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598220) structure is FALSE, the extension must not issue the other query OIDs until the switch has finished activation. In this case, the **NetEventSwitchActivate** [**NET\_PNP\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff568751) notification specifies the switch activation event. If the **IsActive** member is TRUE at bind, the extension can safely issue the other query OIDs. Querying for the configuration while the Hyper-v Extensible Switch has not completed activation will result in the extension having an incomplete initial view of the switch configuration.
 
- 
+ 
 
 **Note**  When an extension generates its own OID requests, it does this in the same way as any NDIS filter driver. For more information on how this is done, see [Generating OID Requests from an NDIS Filter Driver](generating-oid-requests-from-an-ndis-filter-driver.md).
 
- 
+ 
 
 For more information on the control path for extensible switch OID requests, see [Hyper-V Extensible Switch Control Path for OID Requests](hyper-v-extensible-switch-control-path-for-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

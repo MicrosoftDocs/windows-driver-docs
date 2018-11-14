@@ -43,9 +43,9 @@ The following protection levels can be set for the indicated protection types:
     -   COPP\_HDCP\_Level0 or COPP\_HDCP\_LevelMin (0)
     -   COPP\_HDCP\_Level1 or COPP\_HDCP\_LevelMax (1)
 
- 
+ 
 
- 
+ 
 
 
 

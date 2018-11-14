@@ -26,9 +26,9 @@ The following examples show how to add the appropriate constructs to your GDL fi
 
 [Autodetecting the Printer's Hard Drive for GPD](autodetecting-the-printer-s-hard-drive-for-gpd.md)
 
- 
+ 
 
- 
+ 
 
 
 

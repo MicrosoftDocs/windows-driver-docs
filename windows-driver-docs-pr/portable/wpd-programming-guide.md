@@ -14,9 +14,9 @@ Subsequent driver samples demonstrate additional functionality, such as interfac
 
 The [Advanced Tasks](advanced-tasks.md) section describes advanced operations that are accomplished by a WPD device driver. Much of the information and the corresponding code samples are taken from the sample driver named WpdWudfSampleDriver.
 
- 
+ 
 
- 
+ 
 
 
 

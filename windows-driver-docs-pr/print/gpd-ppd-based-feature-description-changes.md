@@ -61,7 +61,7 @@ In a core driver's DEVMODE structure, settings for these custom GPD or PPD featu
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
 ## Related topics
 [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558)  

@@ -25,7 +25,7 @@ If a sequence of debugger commands are executed together--for example, "**g ; ? 
 
 **Note**   When determining whether the session is accessible or inaccessible, limited execution of a target (for example, stepping) is considered execution by the engine. When the limited execution is complete, the session becomes accessible.
 
- 
+ 
 
 ### <span id="host_engine"></span><span id="HOST_ENGINE"></span>Host Engine
 
@@ -33,9 +33,9 @@ When debugging remotely, you can use multiple instances of the debugger engine. 
 
 All debugger operations are relative to the host engine, for example, symbol loading and extension loading.
 
- 
+ 
 
- 
+ 
 
 
 

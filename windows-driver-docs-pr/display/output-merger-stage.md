@@ -45,9 +45,9 @@ The Direct3D runtime calls the following driver functions to create, set up, cle
 
 [**SetTextFilterSize**](https://msdn.microsoft.com/library/windows/hardware/ff569663)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ Except as noted, the information in this section applies to all types of drivers
 
 For reference information describing the ways that the various WDF objects, methods, and event callback functions map to common WDM objects and functions, see [Summary of KMDF and WDM Equivalents](summary-of-kmdf-and-wdm-equivalents.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,37 +22,37 @@ The following diagram illustrates a remote session where the debugging server, r
 
 There are several transport protocols you can use for a remote debugging connection: TCP, NPIPE, SPIPE, SSL, and COM Port. Suppose you have chosen to use TCP as the protocol and you have chosen to use KD as both the debugging client and the debugging server. You can use the following procedure to establish a remote kernel-mode debugging session:
 
-1.  On the host computer, open KD and establish a kernel-mode debugging session with a target computer. (See [Performing Kernel-Mode Debugging Using KD](performing-kernel-mode-debugging-using-kd.md).)
-2.  Break in by pressing CRTL-Break.
-3.  Enter the following command.
+1. On the host computer, open KD and establish a kernel-mode debugging session with a target computer. (See [Performing Kernel-Mode Debugging Using KD](performing-kernel-mode-debugging-using-kd.md).)
+2. Break in by pressing CRTL-Break.
+3. Enter the following command.
 
-    **.server tcp:port=5005**
+   **.server tcp:port=5005**
 
-    **Note**  The port number 5005 is arbitrary. The port number is your choice.
+   **Note**  The port number 5005 is arbitrary. The port number is your choice.
 
-     
+     
 
-4.  KD will respond with output similar to the following.
+4. KD will respond with output similar to the following.
 
-    ```dbgcmd
-    Server started.  Client can connect with any of these command lines
-    0: <debugger> -remote tcp:Port=5005,Server=YourHostComputer
-    ```
+   ```dbgcmd
+   Server started.  Client can connect with any of these command lines
+   0: <debugger> -remote tcp:Port=5005,Server=YourHostComputer
+   ```
 
-5.  On the remote computer, open a Command Prompt window, and enter the following command.
+5. On the remote computer, open a Command Prompt window, and enter the following command.
 
-    **kd -remote tcp:Port=5005,Server=***YourHostComputer*
+   **kd -remote tcp:Port=5005,Server=**<em>YourHostComputer</em>
 
-    where *YourHostComputer* is the name of your host computer, which is running the debugging server.
+   where *YourHostComputer* is the name of your host computer, which is running the debugging server.
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 
 For complete information about launching KD (and establishing remote debugging) at the command line, see [**KD Command-Line Options**](kd-command-line-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

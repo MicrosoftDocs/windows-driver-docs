@@ -42,7 +42,7 @@ The **!frozen** extension displays the state of each processor.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,9 +56,9 @@ Processor states:
        1 : Frozen
 ```
 
- 
+ 
 
- 
+ 
 
 
 

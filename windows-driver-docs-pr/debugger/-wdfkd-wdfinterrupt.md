@@ -86,9 +86,9 @@ To get ISR from KINTERRUPT:
 
 In the preceding example, the display concludes with two suggested [**dt (Display Type)**](dt--display-type-.md) commands that can be used to display additional data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
     **Note**  The miniport driver clears this counter when it transitions to a full-power state by handling an OID set request of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780). The miniport driver also clears the counter when its [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function is called.
 
-     
+     
 
 -   The miniport driver must not discard the packet coalescing receive filters when it transitions to a low-power state. However, while the network adapter is in a low-power state, it must only filter received packets based on wake-up patterns that have been offloaded to the adapter through OID set requests of [OID\_PNP\_ENABLE\_WAKE\_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775).
 
@@ -27,7 +27,7 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
     **Note**  The miniport driver must perform this operation regardless of whether the driver sets the *AddressingReset* parameter to TRUE.
 
-     
+     
 
 -   If the miniport driver is operating in the Native 802.11 extensible station (ExtSTA) mode, it must not discard the packet coalescing receive filters when it handles an OID method request of [OID\_DOT11\_RESET\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569409). After the miniport driver performs the 802.11 reset operation, it must configure the network adapter with the packet coalescing receive filters. Also, the driver *must not clear* the coalesced packet counter.
 
@@ -35,11 +35,11 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
     **Note**  NDIS does not support packet coalescing for native 802.11 miniport drivers that operate in extensible access point (ExtAP) mode. For more information about the ExtAP operation mode, see [Extensible Access Point Operation Mode](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-operation-mode).
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

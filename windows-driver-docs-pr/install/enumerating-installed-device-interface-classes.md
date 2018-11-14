@@ -28,9 +28,9 @@ Use the following guidelines to safely discover the attributes of device interfa
 
 -   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff549186) to enumerate the device interface classes that are installed in the system.
 
- 
+ 
 
- 
+ 
 
 
 

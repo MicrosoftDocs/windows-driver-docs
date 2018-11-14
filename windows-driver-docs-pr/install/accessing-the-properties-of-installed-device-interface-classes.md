@@ -29,9 +29,9 @@ Use the following guidelines to safely query and modify the attributes of device
 
 -   Kernel-mode drivers should use [**IoOpenDeviceInterfaceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549433) to open the registry key for a device interface class.
 
- 
+ 
 
- 
+ 
 
 
 

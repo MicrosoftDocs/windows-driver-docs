@@ -28,9 +28,9 @@ An MCM driver does not call the **NdisCo*Xxx*** functions that both connection-o
 
 An MCM driver does not require a call that is comparable to [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728), because the send interface between the call manager and the miniport driver is internal to an MCM driver and therefore opaque to NDIS.
 
- 
+ 
 
- 
+ 
 
 
 

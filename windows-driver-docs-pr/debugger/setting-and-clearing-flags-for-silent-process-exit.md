@@ -40,9 +40,9 @@ Settings that you specify in the **Silent Process Exit** tab are saved in the re
 
 [Enable silent process exit monitoring](enable-silent-process-exit-monitoring.md)
 
- 
+ 
 
- 
+ 
 
 
 

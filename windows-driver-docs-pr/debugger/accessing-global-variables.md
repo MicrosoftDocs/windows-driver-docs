@@ -46,15 +46,15 @@ To change the value of `MyCounter` to decimal 83, use the following command.
 0:000> ed MyCounter 83 
 ```
 
-This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
+This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
 
 ```dbgcmd
 0:000> dd MyCounter L1 0012fedc  00000053
 ```
 
- 
+ 
 
- 
+ 
 
 
 

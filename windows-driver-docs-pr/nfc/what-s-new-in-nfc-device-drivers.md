@@ -24,7 +24,7 @@ This topic summarizes the new features and improvements for NFC device drivers i
 
 * An in-box NFC radio manager has been added to take care of managing Airplane Mode for NFC. Do not package IHV-supplied NFC radio managers with NFC drivers (as was done in earlier versions of Windows). Installing an IHV-supplied NFC radio manager alongside the Windows 10 NFC radio manager will cause conflicts between those software components.
 
- 
+ 
 ## Related topics
  [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
- 
+ 

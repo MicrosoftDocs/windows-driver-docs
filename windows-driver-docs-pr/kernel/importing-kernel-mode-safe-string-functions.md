@@ -65,9 +65,9 @@ Your driver can assign smaller values to NTSTRSAFE\_MAX\_CCH and NTSTRSAFE\_UNIC
 
 Directives in Ntstrsafe.h verify that your new values are not larger than the default values.
 
- 
+ 
 
- 
+ 
 
 
 

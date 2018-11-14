@@ -43,9 +43,9 @@ In addition to the initial call to [*AVStrMiniPinSetDataFormat*](https://msdn.mi
 
 The minidriver should capture data in whatever format was contained in the last successful *AVStrMiniPinSetDataFormat* dispatch.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # <span id="debugger.debugging_a_user-mode_process_using_visual_studio"></span>Debugging a User-Mode Process Using Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -57,11 +57,11 @@ After you have provisioned a target computer, you can use Visual Studio on the h
 **Note**  
 If you are using separate host and target computers, do not install Visual Studio and the WDK on the target computer. Debugging is not supported if Visual Studio and the WDK are installed on the target computer.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

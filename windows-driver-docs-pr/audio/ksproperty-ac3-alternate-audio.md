@@ -47,13 +47,13 @@ The KSPROPERTY\_AC3\_ALTERNATE\_AUDIO property specifies whether the two mono ch
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSAC3_ALTERNATE_AUDIO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537055)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537055" data-raw-source="[&lt;strong&gt;KSAC3_ALTERNATE_AUDIO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537055)"><strong>KSAC3_ALTERNATE_AUDIO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSAC3\_ALTERNATE\_AUDIO structure that specifies how the two mono channels should be interpreted.
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSAC3\_ALTERNATE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537055)
 
- 
+ 
 
- 
+ 
 
 
 

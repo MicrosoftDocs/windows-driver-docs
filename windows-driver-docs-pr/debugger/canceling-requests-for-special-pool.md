@@ -27,9 +27,9 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
 3.  Click **Apply**.
 
- 
+ 
 
- 
+ 
 
 
 

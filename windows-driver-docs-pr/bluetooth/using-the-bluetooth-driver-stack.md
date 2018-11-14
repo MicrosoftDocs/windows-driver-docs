@@ -139,106 +139,106 @@ The following table describes the structures that correspond to specific BRBs th
 <tbody>
 <tr class="odd">
 <td align="left"><p>BRB_HCI_GET_LOCAL_BD_ADDR</p></td>
-<td align="left"><p>[<strong>_BRB_GET_LOCAL_BD_ADDR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536857)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536857" data-raw-source="[&lt;strong&gt;_BRB_GET_LOCAL_BD_ADDR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536857)"><strong>_BRB_GET_LOCAL_BD_ADDR</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_REGISTER_SERVER</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_REGISTER_SERVER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536862)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536862" data-raw-source="[&lt;strong&gt;_BRB_L2CA_REGISTER_SERVER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536862)"><strong>_BRB_L2CA_REGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_UNREGISTER_SERVER</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_UNREGISTER_SERVER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536863)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536863" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UNREGISTER_SERVER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536863)"><strong>_BRB_L2CA_UNREGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_OPEN_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_OPEN_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536860)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536860" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536860)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_OPEN_CHANNEL_RESPONSE</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_OPEN_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536860)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536860" data-raw-source="[&lt;strong&gt;_BRB_L2CA_OPEN_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536860)"><strong>_BRB_L2CA_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_CLOSE_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_CLOSE_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536859)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536859" data-raw-source="[&lt;strong&gt;_BRB_L2CA_CLOSE_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536859)"><strong>_BRB_L2CA_CLOSE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_ACL_TRANSFER</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_ACL_TRANSFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536858)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536858" data-raw-source="[&lt;strong&gt;_BRB_L2CA_ACL_TRANSFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536858)"><strong>_BRB_L2CA_ACL_TRANSFER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_L2CA_UPDATE_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_UPDATE_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536864)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536864" data-raw-source="[&lt;strong&gt;_BRB_L2CA_UPDATE_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536864)"><strong>_BRB_L2CA_UPDATE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_L2CA_PING</p></td>
-<td align="left"><p>[<strong>_BRB_L2CA_PING</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536861)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536861" data-raw-source="[&lt;strong&gt;_BRB_L2CA_PING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536861)"><strong>_BRB_L2CA_PING</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_REGISTER_PSM</p></td>
-<td align="left"><p>[<strong>_BRB_PSM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536865)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536865" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536865)"><strong>_BRB_PSM</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_UNREGISTER_PSM</p></td>
-<td align="left"><p>[<strong>_BRB_PSM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536865)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536865" data-raw-source="[&lt;strong&gt;_BRB_PSM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536865)"><strong>_BRB_PSM</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_REGISTER_SERVER</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_REGISTER_SERVER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536871)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536871" data-raw-source="[&lt;strong&gt;_BRB_SCO_REGISTER_SERVER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536871)"><strong>_BRB_SCO_REGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_UNREGISTER_SERVER</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_UNREGISTER_SERVER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536873)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536873" data-raw-source="[&lt;strong&gt;_BRB_SCO_UNREGISTER_SERVER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536873)"><strong>_BRB_SCO_UNREGISTER_SERVER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_OPEN_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_OPEN_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536870)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536870" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536870)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_OPEN_CHANNEL_RESPONSE</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_OPEN_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536870)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536870" data-raw-source="[&lt;strong&gt;_BRB_SCO_OPEN_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536870)"><strong>_BRB_SCO_OPEN_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_CLOSE_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_CLOSE_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536866)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536866" data-raw-source="[&lt;strong&gt;_BRB_SCO_CLOSE_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536866)"><strong>_BRB_SCO_CLOSE_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_TRANSFER</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_TRANSFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536872)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536872" data-raw-source="[&lt;strong&gt;_BRB_SCO_TRANSFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536872)"><strong>_BRB_SCO_TRANSFER</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_GET_CHANNEL_INFO</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_GET_CHANNEL_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536868)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536868" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_CHANNEL_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536868)"><strong>_BRB_SCO_GET_CHANNEL_INFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_SCO_GET_SYSTEM_INFO</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_GET_SYSTEM_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536869)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536869" data-raw-source="[&lt;strong&gt;_BRB_SCO_GET_SYSTEM_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536869)"><strong>_BRB_SCO_GET_SYSTEM_INFO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_SCO_FLUSH_CHANNEL</p></td>
-<td align="left"><p>[<strong>_BRB_SCO_FLUSH_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536867)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536867" data-raw-source="[&lt;strong&gt;_BRB_SCO_FLUSH_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536867)"><strong>_BRB_SCO_FLUSH_CHANNEL</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_ACL_GET_MODE</p></td>
-<td align="left"><p>[<strong>_BRB_ACL_GET_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536855)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536855" data-raw-source="[&lt;strong&gt;_BRB_ACL_GET_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536855)"><strong>_BRB_ACL_GET_MODE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>BRB_ACL_ENTER_ACTIVE_MODE</p></td>
-<td align="left"><p>[<strong>_BRB_ACL_ENTER_ACTIVE_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536854)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536854" data-raw-source="[&lt;strong&gt;_BRB_ACL_ENTER_ACTIVE_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536854)"><strong>_BRB_ACL_ENTER_ACTIVE_MODE</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>BRB_GET_DEVICE_INTERFACE_STRING</p></td>
-<td align="left"><p>[<strong>_BRB_GET_DEVICE_INTERFACE_STRING</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536856)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536856" data-raw-source="[&lt;strong&gt;_BRB_GET_DEVICE_INTERFACE_STRING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536856)"><strong>_BRB_GET_DEVICE_INTERFACE_STRING</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about using Bluetooth IOCTLs and BRBs, see [Building and Sending a BRB](building-and-sending-a-brb.md).
 
- 
+ 
 
- 
+ 
 
 
 

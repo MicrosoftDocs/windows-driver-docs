@@ -67,7 +67,7 @@ The following table describes the rotation constants that are defined for WIA\_I
 </tbody>
 </table>
 
- 
+ 
 
 The WIA minidriver is responsible for rotating image data before sending it back to the application. The application is responsible for checking the image headers to see the newly rotated values.
 
@@ -108,9 +108,9 @@ Requirements
 
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
 
- 
+ 
 
- 
+ 
 
 
 

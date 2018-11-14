@@ -48,9 +48,9 @@ This flag may optionally be used when an item can be deleted.
 <a href="" id="wiaitemtypeimage"></a>**WiaItemTypeImage**  
 The item is an image. This flag is required if the file contains still image data and is valid only for items that also have the **WiaItemTypeFile** flag set.
 
- 
+ 
 
- 
+ 
 
 
 

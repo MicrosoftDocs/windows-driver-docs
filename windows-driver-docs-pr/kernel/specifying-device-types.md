@@ -91,9 +91,9 @@ FILE\_DEVICE\_*XXX* values in the range of 0 through 32767 are reserved for Micr
 
 If a type of hardware does not match any of the defined types, specify a value of either FILE\_DEVICE\_UNKNOWN, or a value within the range of 32768 through 65535.
 
- 
+ 
 
- 
+ 
 
 
 

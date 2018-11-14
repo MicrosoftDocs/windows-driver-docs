@@ -49,7 +49,7 @@ This message is sent by the host to terminate the network connection. Unlike the
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

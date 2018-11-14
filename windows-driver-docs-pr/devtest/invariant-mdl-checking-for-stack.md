@@ -13,7 +13,7 @@ The Invariant MDL Checking for Stack option monitors how the driver handles inva
 
 **Note**  This option is available starting with Windows 8.
 
- 
+ 
 
 The Invariant MDL Checking for Stack option ensures that drivers follow the rules for invariant MDL buffers only at the point the request is leaving the driver stack.
 
@@ -47,9 +47,9 @@ To activate the Invariant MDL Checking for Stack option, you must also activate 
     4.  Select (check) [I/O Verification](i-o-verification.md) and Invariant MDL Checking for Stack.
     5.  Restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

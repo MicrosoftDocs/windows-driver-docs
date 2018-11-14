@@ -53,9 +53,9 @@ During a custom-transmit transaction, the driver might need to store information
 
 For a write request that the serial controller driver receives at the start of a custom-transmit transaction, the request context allocated by the driver framework is uninitialized. The driver should, as a best practice, call the [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610) routine to initialize this request context to all zeros.
 
- 
+ 
 
- 
+ 
 
 
 

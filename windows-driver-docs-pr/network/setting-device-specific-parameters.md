@@ -71,15 +71,15 @@ The *InformationBuffer* associated with each such [**REMOTE\_NDIS\_SET\_MSG**](h
 </tbody>
 </table>
 
- 
+ 
 
 The device sends a [**REMOTE\_NDIS\_SET\_CMPLT**](https://msdn.microsoft.com/library/windows/hardware/ff570651) in response to each [**REMOTE\_NDIS\_SET\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff570654), after applying the parameter value. If the parameter setting is acceptable, it returns a status of RNDIS\_STATUS\_SUCCESS in the response. If the parameter setting is not acceptable, and the device cannot apply a useful default value for this parameter, then the device returns an appropriate error status value (see section on status values). If an error status is returned, then the host will initiate a halt process for the device.
 
 Device-specific parameters are expected to be configured in the Windows registry. The keys that define parameter values are typically created in the registry during the process of device installation. The list of keys, type information, default values and optional range of valid values are specified in the INF file for the device. For more information about using an INF to set up configuration parameters in the registry for network devices, consult the Windows 2000 Driver Development Kit (DDK).
 
- 
+ 
 
- 
+ 
 
 
 

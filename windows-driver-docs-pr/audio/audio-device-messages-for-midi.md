@@ -61,9 +61,9 @@ The following is a list of the audio device messages and the **modMessage** entr
 
 [**MOM\_OPEN**](https://msdn.microsoft.com/library/windows/hardware/ff537553)
 
- 
+ 
 
- 
+ 
 
 
 

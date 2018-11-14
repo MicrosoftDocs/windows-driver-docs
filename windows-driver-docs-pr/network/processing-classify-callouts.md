@@ -47,9 +47,9 @@ For callouts that process data at a filtering layer that supports data flows, th
 
 WFP supports asynchronous processing of the *classifyFn* callout function. For more information about asynchronous processing, see [Processing Classify Callouts Asynchronously](processing-classify-callouts-asynchronously.md).
 
- 
+ 
 
- 
+ 
 
 
 

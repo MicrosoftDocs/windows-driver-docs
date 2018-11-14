@@ -109,9 +109,9 @@ If a client fails to send the required [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_ME
 
 The driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853320) within 10 - 20 seconds of the prior IOCTL completion.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

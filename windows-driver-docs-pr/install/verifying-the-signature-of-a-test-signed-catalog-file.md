@@ -50,9 +50,9 @@ For example, the following command verifies that *Tstamd64.cat* has a test signa
 SignTool verify /v /pa tstamd64.cat
 ```
 
- 
+ 
 
- 
+ 
 
 
 

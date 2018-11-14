@@ -85,7 +85,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -98,7 +98,7 @@ Before **!htrace** can be used, handle tracing must be enabled. One way to enabl
 
 **Note**   You can also enable handle tracing by activating Application Verifier for the target process and selecting the **Handles** option.
 
- 
+ 
 
 Some of the traces reported by **!htrace** may be from a different process context. In this case, the return addresses may not resolve properly in the current process context, or may resolve to the wrong symbols.
 
@@ -157,9 +157,9 @@ Parsed 0x6 stack traces.
 Dumped 0x5 stack traces.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

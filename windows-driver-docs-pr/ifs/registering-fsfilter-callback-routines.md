@@ -41,9 +41,9 @@ fsFilterCallbacks.PostReleaseForModifiedPageWriter = MyLegacyFilterPostFsFilterO
 status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &fsFilterCallbacks);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

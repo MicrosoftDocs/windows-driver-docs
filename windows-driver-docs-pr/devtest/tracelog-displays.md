@@ -19,9 +19,9 @@ Tracelog displays requested data at the command line. This section describes the
 
 Tracelog also has customized displays for special trace sessions, such as the display of thread events in an NT Kernel Logger session.
 
- 
+ 
 
- 
+ 
 
 
 

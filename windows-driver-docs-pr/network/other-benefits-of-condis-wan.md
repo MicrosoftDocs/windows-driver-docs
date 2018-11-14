@@ -26,9 +26,9 @@ In addition to flexibility and simplicity, the CoNDIS WAN model provides the fol
 
 -   Only CoNDIS WAN will support future NDIS enhancements that apply to WAN drivers.
 
- 
+ 
 
- 
+ 
 
 
 

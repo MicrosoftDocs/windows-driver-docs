@@ -57,9 +57,9 @@ The following sections describe the architecture and processes involved in three
 4.  When the application calls a **Present** method, the Direct3D runtime instructs the discrete GPU's user-mode display driver to perform a copy to a cross-adapter resource.
 5.  The integrated GPU's user-mode display driver and display miniport driver are instructed to flip to this cross-adapter resource.
 
- 
+ 
 
- 
+ 
 
 
 

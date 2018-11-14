@@ -61,7 +61,7 @@ The following are the valid minor function codes:
 </tbody>
 </table>
 
- 
+ 
 
 ## Operation: File System Filter Drivers
 
@@ -110,7 +110,7 @@ One or more of the following:
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_LOCK\_CONTROL.
@@ -147,9 +147,9 @@ Length, in bytes, of the byte range to be locked or unlocked.
 
 [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ This procedure is used starting in Windows 8.1 to validate the configuration of
 
 5.  Drivers that support WDDM versions prior to 1.3 are allowed to load even when an integrated hybrid adapter is present.
 
- 
+ 
 
- 
+ 
 
 
 

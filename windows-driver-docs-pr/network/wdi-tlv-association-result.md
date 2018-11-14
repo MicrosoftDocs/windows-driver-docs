@@ -38,7 +38,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE**](wdi-tlv-ethertype-encap-table.md)                 |                                | X        | The Ethertype encapsulations for the association.                                                                                                                                                           |
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md)                                 |                                | X        | The list of PHY identifiers that the 802.11 station uses to send or receive packets on the BSS network connection.                                                                                          |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

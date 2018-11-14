@@ -26,9 +26,9 @@ The BAD\_EXHANDLE bug check has a value of 0x000000A7. This bug check indicates 
 
 None
 
- 
+ 
 
- 
+ 
 
 
 

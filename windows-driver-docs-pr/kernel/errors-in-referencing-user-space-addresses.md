@@ -88,9 +88,9 @@ In this example, the driver should validate the embedded pointer by using the **
 
 For more information about using **try/except** blocks to handle invalid addresses, see [Handling Exceptions](handling-exceptions.md).
 
- 
+ 
 
- 
+ 
 
 
 

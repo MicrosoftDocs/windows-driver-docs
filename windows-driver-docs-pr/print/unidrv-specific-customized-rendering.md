@@ -33,9 +33,9 @@ The following topics provide information about the types of operations that [*Un
 
 [Handling Device-Managed Surfaces](handling-device-managed-surfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

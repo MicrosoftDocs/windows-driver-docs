@@ -70,7 +70,7 @@ The debugger automatically sets the following pseudo-registers.
 <tr class="even">
 <td align="left"><p><strong>$ra</strong></p></td>
 <td align="left"><p>The return address that is currently on the stack.</p>
-<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although <strong>[gu (Go Up)](gu--go-up-.md)</strong> is a more precise effective way of &quot;stepping out&quot; of the current function).</p></td>
+<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although <strong><a href="gu--go-up-.md" data-raw-source="[gu (Go Up)](gu--go-up-.md)">gu (Go Up)</a></strong> is a more precise effective way of &quot;stepping out&quot; of the current function).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$ip</strong></p></td>
@@ -94,7 +94,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$scopeip</strong></p></td>
-<td align="left"><p>The instruction pointer for the current [local context](changing-contexts.md#local-context) (also known as the <em>scope</em>).</p></td>
+<td align="left"><p>The instruction pointer for the current <a href="changing-contexts.md#local-context" data-raw-source="[local context](changing-contexts.md#local-context)">local context</a> (also known as the <em>scope</em>).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$exentry</strong></p></td>
@@ -123,7 +123,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$p</strong></p></td>
-<td align="left"><p>The value that the last <strong>[d* (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)</strong> command printed.</p></td>
+<td align="left"><p>The value that the last <strong><a href="d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md" data-raw-source="[d* (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md)">d* (Display Memory)</a></strong> command printed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$proc</strong></p></td>
@@ -163,11 +163,11 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$bp</strong><em>Number</em></p></td>
-<td align="left"><p>The address of the corresponding breakpoint. For example, <strong>$bp3</strong> (or <strong>$bp03</strong>) refers to the breakpoint whose breakpoint ID is 3. <em>Number</em> is always a decimal number. If no breakpoint has an ID of <em>Number</em>, <strong>$bp</strong><em>Number</em> evaluates to zero. For more information about breakpoints, see [Using Breakpoints](using-breakpoints.md).</p></td>
+<td align="left"><p>The address of the corresponding breakpoint. For example, <strong>$bp3</strong> (or <strong>$bp03</strong>) refers to the breakpoint whose breakpoint ID is 3. <em>Number</em> is always a decimal number. If no breakpoint has an ID of <em>Number</em>, <strong>$bp</strong><em>Number</em> evaluates to zero. For more information about breakpoints, see <a href="using-breakpoints.md" data-raw-source="[Using Breakpoints](using-breakpoints.md)">Using Breakpoints</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$frame</strong></p></td>
-<td align="left"><p>The current frame index. This index is the same frame number that the <strong>[.frame (Set Local Context)](-frame--set-local-context-.md)</strong> command uses.</p></td>
+<td align="left"><p>The current frame index. This index is the same frame number that the <strong><a href="-frame--set-local-context-.md" data-raw-source="[.frame (Set Local Context)](-frame--set-local-context-.md)">.frame (Set Local Context)</a></strong> command uses.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$dbgtime</strong></p></td>
@@ -175,7 +175,7 @@ The debugger automatically sets the following pseudo-registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$callret</strong></p></td>
-<td align="left"><p>The return value of the last function that <strong>[.call (Call Function)](-call--call-function-.md)</strong> called or that is used in an <strong>[.fnret /s](-fnret--display-function-return-value-.md)</strong> command. The data type of <strong>$callret</strong> is the data type of this return value.</p></td>
+<td align="left"><p>The return value of the last function that <strong><a href="-call--call-function-.md" data-raw-source="[.call (Call Function)](-call--call-function-.md)">.call (Call Function)</a></strong> called or that is used in an <strong><a href="-fnret--display-function-return-value-.md" data-raw-source="[.fnret /s](-fnret--display-function-return-value-.md)">.fnret /s</a></strong> command. The data type of <strong>$callret</strong> is the data type of this return value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$extret</strong></p></td>
@@ -308,7 +308,7 @@ The debugger automatically sets the following pseudo-registers.
 </tbody>
 </table>
 
- 
+ 
 
 Some of these pseudo-registers might not be available in certain debugging scenarios. For example, you cannot use **$peb**, **$tid**, and **$tpid** when you are debugging a user-mode minidump or certain kernel-mode dump files. There will be situations where you can learn thread information from [**~ (Thread Status)**](---thread-status-.md) but not from **$tid**. You cannot use the **$previp** pseudo-register on the first debugger event. You cannot use the **$relip** pseudo-register unless you are branch tracing. If you use an unavailable pseudo-register, a syntax error occurs.
 
@@ -320,7 +320,7 @@ You can use the **r** command to change the value of **$ip**. This change also a
 
 **Note**   In MASM syntax, you can indicate the **$ip** pseudo-register with a period ( **.** ). You do not add an at sign (@) before this period, and do not use the period as the first parameter of the **r** command. This syntax is not permitted within a C++ expression.
 
- 
+ 
 
 Automatic pseudo-registers are similar to [automatic aliases](using-aliases.md). But you can use automatic aliases together with alias-related tokens (such as **${ }**), and you cannot use pseudo-registers with such tokens.
 
@@ -353,7 +353,7 @@ User-defined pseudo-registers use zero as the default value when the debugger is
 
 **Note**  The aliases **$u0**, **$u1**, ..., **$u9** are not pseudo-registers, despite their similar appearance. For more information about these aliases, see [Using Aliases](using-aliases.md).
 
- 
+ 
 
 ### <span id="example1"></span><span id="EXAMPLE1"></span>Example
 
@@ -379,9 +379,9 @@ t "$<eaxstep"
 
 The debugger performs a step and then runs your command. In this case, the debugger runs the script, which either displays **1234** or repeats the process.
 
- 
+ 
 
- 
+ 
 
 
 

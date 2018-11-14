@@ -21,9 +21,9 @@ To toggle multiple-sample rendering on and off between begin-scene and end-scene
 
 If the D3DPRASTERCAPS\_MULTISAMPLE\_TOGGLE capability bit is set, the driver can receive the D3DRS\_MULTISAMPLEANTIALIAS render state between D3DRENDERSTATE\_SCENECAPTURE render states that specify **TRUE** for begin-scene information and **FALSE** for end-scene information.
 
- 
+ 
 
- 
+ 
 
 
 

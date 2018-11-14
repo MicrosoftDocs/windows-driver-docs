@@ -21,9 +21,9 @@ Together, the **Trace Tree** pane, the **Source Code** pane, and the **State** p
 
 You can open the Defect Viewer only when SDV has detected a "defect" (rule violation).
 
- 
+ 
 
- 
+ 
 
 
 

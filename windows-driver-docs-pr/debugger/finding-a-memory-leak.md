@@ -24,9 +24,9 @@ This section includes the following:
 
 -   [Finding a User-Mode Memory Leak](finding-a-user-mode-memory-leak.md) describes how to find a leak that is caused by a user-mode driver or application.
 
- 
+ 
 
- 
+ 
 
 
 

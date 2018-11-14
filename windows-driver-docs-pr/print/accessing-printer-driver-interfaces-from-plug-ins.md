@@ -30,9 +30,9 @@ If a plug-in calls methods that belong to the driver-supplied [IPrintOemDriverUI
 
 For plug-ins to use the new Windows Vista [IPrintCoreHelperPS](https://msdn.microsoft.com/library/windows/hardware/ff552906) or [IPrintCoreHelperUni](https://msdn.microsoft.com/library/windows/hardware/ff552940) interface, the plug-in needs to add support for **OEMGI\_GETREQUESTEDHELPERINTERFACES** in its [**IPrintOemUI::GetInfo**](https://msdn.microsoft.com/library/windows/hardware/ff554178), [**IPrintOemPS::GetInfo**](https://msdn.microsoft.com/library/windows/hardware/ff553221), or [**IPrintOemUni::GetInfo**](https://msdn.microsoft.com/library/windows/hardware/ff554256) method.
 
- 
+ 
 
- 
+ 
 
 
 

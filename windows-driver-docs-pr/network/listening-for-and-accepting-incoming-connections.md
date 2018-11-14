@@ -294,9 +294,9 @@ NTSTATUS WSKAPI
 
 If a WSK application determines that it will accept an incoming connection request on a listening socket that has conditional accept mode enabled, the incoming connection will be established and it can be accepted normally by either the application calling to the [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function or the WSK subsystem calling the socket's [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function as described previously.
 
- 
+ 
 
- 
+ 
 
 
 

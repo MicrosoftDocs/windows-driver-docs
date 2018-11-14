@@ -15,9 +15,9 @@ The events in this set are specified as KSEVENT\_VOLUMELIMIT enumeration values.
 
 [**KSEVENT\_VOLUMELIMIT\_CHANGED**](ksevent-volumelimit-changed.md)
 
- 
+ 
 
- 
+ 
 
 
 

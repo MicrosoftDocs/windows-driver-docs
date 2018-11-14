@@ -31,9 +31,9 @@ A miniport driver can use the framework only if the underlying device supports P
 
 Restrictions apply to the device objects that the [**WdfDeviceMiniportCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546802) method creates. For a list of these restrictions, see [**WdfDeviceMiniportCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546802).
 
- 
+ 
 
- 
+ 
 
 
 

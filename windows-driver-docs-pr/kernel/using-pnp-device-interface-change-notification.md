@@ -24,9 +24,9 @@ The following subsections discuss how to register for device interface change no
 
 See [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) and related routines For information about device interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

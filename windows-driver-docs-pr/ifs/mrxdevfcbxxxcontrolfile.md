@@ -78,7 +78,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -128,9 +128,9 @@ Requirements
 
 [**MRxStop**](mrxstop.md)
 
- 
+ 
 
- 
+ 
 
 
 

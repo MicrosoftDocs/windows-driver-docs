@@ -23,9 +23,9 @@ The white boxes represent software supplied by Microsoft, and the shaded box rep
 
 ![diagram illustrating a software dvd decoding solution](images/swdvddec.png)
 
- 
+ 
 
- 
+ 
 
 
 

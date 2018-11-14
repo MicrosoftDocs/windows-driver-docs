@@ -28,9 +28,9 @@ The [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware
 
 For more information about OID requests in a protocol driver, see [CoNDIS Protocol Driver OID Requests](condis-protocol-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

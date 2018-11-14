@@ -39,15 +39,15 @@ WPP software tracing supplements and enhances [WMI event tracing](https://msdn.m
 <tr class="odd">
 <td align="left"><p>WPP software tracing is primarily intended for debugging code during development. If you want to publish events that can be consumed by applications interested in structured ETW events, in addition to tracing during development, use the following:</p>
 <ul>
-<li>For kernel-mode drivers, use the [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) API.</li>
-<li>For user-mode drivers or applications, use the [Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803) (Windows Desktop) API.</li>
+<li>For kernel-mode drivers, use the <a href="event-tracing-for-windows--etw-.md" data-raw-source="[Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md)">Event Tracing for Windows (ETW)</a> API.</li>
+<li>For user-mode drivers or applications, use the <a href="https://msdn.microsoft.com/library/windows/desktop/bb968803" data-raw-source="[Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803)">Event Tracing</a> (Windows Desktop) API.</li>
 </ul>
-For more information, see [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md)</td>
+For more information, see <a href="tools-for-software-tracing.md" data-raw-source="[When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md)">When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?</a></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Logging messages with WPP software tracing is similar to using Windows event logging services. The driver logs a message ID and unformatted binary data in a log file. Subsequently, a postprocessor converts the information in the log file to a human-readable form. However, WPP software tracing supports message formats that are more capable and flexible than that supported by the event logging services. For example, WPP software tracing has built-in support for IP addresses, GUIDs, system IDs, time stamps, and other useful data types. In addition, users can add custom data types relevant to their application.
 
@@ -88,9 +88,9 @@ For information about the [WMI library support routines](https://msdn.microsoft.
 
 [**WmiTraceMessageVa**](https://msdn.microsoft.com/library/windows/hardware/ff566340)
 
- 
+ 
 
- 
+ 
 
 
 

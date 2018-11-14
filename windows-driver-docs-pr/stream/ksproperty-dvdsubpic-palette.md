@@ -47,13 +47,13 @@ The KSPROPERTY\_DVDSUBPIC\_PALETTE property specifies the color palette that the
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSPROPERTY_SPPAL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565628)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565628" data-raw-source="[&lt;strong&gt;KSPROPERTY_SPPAL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565628)"><strong>KSPROPERTY_SPPAL</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_SPPAL structure that describes the color palette to use for the subpicture display in the YUV color format.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**KSPROPERTY\_SPPAL**](https://msdn.microsoft.com/library/windows/hardware/ff565628)
 
- 
+ 
 
- 
+ 
 
 
 

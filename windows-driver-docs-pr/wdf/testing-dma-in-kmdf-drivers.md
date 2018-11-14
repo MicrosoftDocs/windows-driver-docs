@@ -32,9 +32,9 @@ The following tools can help debug framework-based drivers that support DMA:
     <a href="" id="-wdfdmatransaction"></a>[**!wdfdmatransaction**](https://msdn.microsoft.com/library/windows/hardware/ff565721)  
     Dumps information about a given transaction object.
 
- 
+ 
 
- 
+ 
 
 
 

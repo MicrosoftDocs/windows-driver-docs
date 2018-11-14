@@ -1,10 +1,11 @@
 ---
-author: mcleanbyron
+author: EliotSeattle
 ms.assetid: 48D891CD-706C-4759-AB33-B0663774A829
 description: Use this method in the Microsoft Store analytics API to download the CAB file for a Windows 7 or Windows 8.x driver error. This method is intended only for IHVs.
 title: Download the CAB file for a Windows 7 or Windows 8.x driver error
-ms.author: mcleans
+ms.author: eliotgra
 ms.date: 08/28/2018
+ms.topic: article
 keywords: windows 10, uwp, Microsoft Store analytics API, download CAB
 ms.localizationpriority: medium
 ---
@@ -52,7 +53,7 @@ To use this method, you need to first do the following:
 | Header        | Type   | Description                                                                 |
 |---------------|--------|-----------------------------------------------------------------------------|
 | Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
- 
+ 
 
 ### Request parameters
 
@@ -60,7 +61,7 @@ To use this method, you need to first do the following:
 |---------------|--------|---------------|------|
 | cabIdHash | string | The unique ID of the CAB file you want to download. To get this ID, use the [get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md) method to retrieve details for a specific error in your app, and use the **cabIdHash** value in the response body of that method. |  Yes  |
 
- 
+ 
 ### Request example
 
 The following example demonstrates how to download a CAB file using this method.

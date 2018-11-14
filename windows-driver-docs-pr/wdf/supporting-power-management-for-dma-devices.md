@@ -44,9 +44,9 @@ Deallocates a device's DMA buffers.
 
 For more information about the order in which the framework calls a driver's event callback functions, see [PnP and Power Management Scenarios](pnp-and-power-management-scenarios.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,7 +16,7 @@ NDIS and overlying drivers obtain the types of net packets that the miniport ada
 
 **Note**  This OID is not implemented in the Windows Vista and later versions of Windows operating system. For more information, see the Remarks section.
 
- 
+ 
 
 **Version Information**
 
@@ -64,9 +64,9 @@ Requirements
 
 [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

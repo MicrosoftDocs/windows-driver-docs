@@ -29,9 +29,9 @@ Generally, the following destination rectangle values are used:
 
 -   **right** = **left** + *horizontal\_size* = 720
 
- 
+ 
 
- 
+ 
 
 
 

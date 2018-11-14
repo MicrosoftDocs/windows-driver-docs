@@ -24,9 +24,9 @@ A BDA minidriver should be implemented with security in mind to prevent maliciou
 
 [Preventing BDA Minidriver Threats](preventing-bda-minidriver-threats.md)
 
- 
+ 
 
- 
+ 
 
 
 

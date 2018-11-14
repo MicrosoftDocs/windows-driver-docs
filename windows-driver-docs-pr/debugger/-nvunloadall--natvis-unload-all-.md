@@ -46,7 +46,7 @@ The .nvunloadall command unloads all of the NatVis files from the debugger envir
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -57,9 +57,9 @@ For more information, see [Writing debugger type visualizers for C++ using .natv
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
 
- 
+ 
 
- 
+ 
 
 
 

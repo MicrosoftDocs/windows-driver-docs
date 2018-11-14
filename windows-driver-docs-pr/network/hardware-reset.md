@@ -45,7 +45,7 @@ If the miniport driver returns **FALSE** in the *AddressingReset* parameter, the
 -   Power management wake-up patterns through a set request of [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569773).
     **Note**  Starting with NDIS 6.20, wake-up patterns set through [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) must be restored by the miniport driver.
 
-     
+     
 
 ## Related topics
 
@@ -56,9 +56,9 @@ If the miniport driver returns **FALSE** in the *AddressingReset* parameter, the
 
 [Miniport Driver Reset and Halt Functions](https://msdn.microsoft.com/library/windows/hardware/ff564064)
 
- 
+ 
 
- 
+ 
 
 
 

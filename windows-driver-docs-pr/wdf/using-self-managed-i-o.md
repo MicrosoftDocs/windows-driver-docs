@@ -72,9 +72,9 @@ For more information about the order in which the framework calls a driver's eve
 
 Although rarely necessary, the framework allows drivers to have even more control over a device's PnP and power states, by accessing the [state machines in the framework](state-machines-in-the-framework.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ ms.localizationpriority: medium
 -   [Handling Client Impersonation in UMDF 1.x Drivers](handling-client-impersonation-in-umdf-1-x-drivers.md)
 -   [Preventing an Imbalance of Create and Close Notifications to a Driver](preventing-an-imbalance-of-create-and-close-notifications-to-a-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

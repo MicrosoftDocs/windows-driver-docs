@@ -37,9 +37,9 @@ An existing tape miniclass driver must be modified to support one new entry poin
 
 This section describes the support provided by the operating system-specific tape class driver and provides guidelines for writing a new tape miniclass driver. See [Tape Class Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567959) and [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970) for details on the routines in the tape class and tape miniclass drivers. See [Device Configurations and Layered Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543100) for a description of the storage device driver layers.
 
- 
+ 
 
- 
+ 
 
 
 

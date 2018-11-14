@@ -29,9 +29,9 @@ The following scenarios illustrate optional optimizations--not required implemen
 
 -   If an application always preposts receive requests, it typically does not specify a receive indication size. If the application runs out of receive requests, the offload target might have to make a receive indication. If the value of **RcvIndicationSize** is unspecified (set to zero), the offload target should indicate as much data as possible when calling the *NdisTcpOffloadReceiveHandler* function.
 
- 
+ 
 
- 
+ 
 
 
 

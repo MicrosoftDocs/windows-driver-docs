@@ -48,7 +48,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +61,9 @@ If Logger has not yet been injected into the target application by the [**!logex
 
 If [**!logexts.logi**](-logexts-logi.md) has already been run, you cannot include *OutputDirectory*, because the output directory will have already been set.
 
- 
+ 
 
- 
+ 
 
 
 

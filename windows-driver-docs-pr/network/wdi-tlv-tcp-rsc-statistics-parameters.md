@@ -34,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT64 | The total number of coalescing events, which is the total number of packets that were formed from coalescing packets.                                                                                                                     |
 | UINT64 | The total number of RSC abort events, which is the number of exceptions other than the IP datagram length being exceeded. This count should include the cases where a packet is not coalesced because of insufficient hardware resources. |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

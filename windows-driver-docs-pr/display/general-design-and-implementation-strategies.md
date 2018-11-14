@@ -39,9 +39,9 @@ You should also consider the following facts:
 
 For information that is specific to display drivers, see [Graphics DDI Functions for Display Drivers](graphics-ddi-functions-for-display-drivers.md). That section contains information about required, conditionally required, and optionally required graphics DDI functions.
 
- 
+ 
 
- 
+ 
 
 
 

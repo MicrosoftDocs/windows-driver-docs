@@ -25,41 +25,41 @@ Be aware that a *dirid* with a value of 65535 is considered synonymous with a *d
 
 If you intend to use *dirids* in your INF file, consider the following two guidelines:
 
-1.  When the syntax for an INF file entry explicitly specifies a *dirid* value (the [**INF DestinationDirs section**](inf-destinationdirs-section.md), for example), express that value as a number.
+1. When the syntax for an INF file entry explicitly specifies a *dirid* value (the [**INF DestinationDirs section**](inf-destinationdirs-section.md), for example), express that value as a number.
 
-    The following example demonstrates this syntax:
+   The following example demonstrates this syntax:
 
-    ```cpp
-    [DestinationDirs]
-    DefaultDestDir = 11  ;  \system32 directory on Windows 2000 and later versions
-    ```
+   ```cpp
+   [DestinationDirs]
+   DefaultDestDir = 11  ;  \system32 directory on Windows 2000 and later versions
+   ```
 
-2.  When the syntax for an INF file entry specifies a file path, you can use a system-supplied string substitution to represent part or all of this path. This substitution has the following form:
+2. When the syntax for an INF file entry specifies a file path, you can use a system-supplied string substitution to represent part or all of this path. This substitution has the following form:
 
-    **%***dirid***%**
+   **%**<em>dirid</em>**%**
 
-    This form consists of a percent (%) character, followed by the *dirid* for the directory that you want to specify, followed by another percent (%) character. A terminating backslash (\) character separates this expression from a following file name or additional directories in the path**.**
+   This form consists of a percent (%) character, followed by the *dirid* for the directory that you want to specify, followed by another percent (%) character. A terminating backslash (\) character separates this expression from a following file name or additional directories in the path<strong>.</strong>
 
-    The following example demonstrates this syntax:
+   The following example demonstrates this syntax:
 
-    ```cpp
-    [aic78xx_Service_Inst]
-    ServiceBinary = %12%\aic78xx.sys
-    ```
+   ```cpp
+   [aic78xx_Service_Inst]
+   ServiceBinary = %12%\aic78xx.sys
+   ```
 
-    When fully expanded, the path shown in the previous example becomes *c:*\\*windows*\\*system32*\\*drivers*\\*aic78xx.sys* (assuming that Windows was installed in the *c:*\\*windows* directory). Be aware that the string substitution, or %*dirid*% form, can be used anywhere a string is expected, with the exception of the [**INF Strings section**](inf-strings-section.md) of the INF file.
+   When fully expanded, the path shown in the previous example becomes *c:*\\*windows*\\*system32*\\*drivers*\\*aic78xx.sys* (assuming that Windows was installed in the *c:*\\*windows* directory). Be aware that the string substitution, or %*dirid*% form, can be used anywhere a string is expected, with the exception of the [**INF Strings section**](inf-strings-section.md) of the INF file.
 
-    The two following examples show how string substitution should *not* be used.
+   The two following examples show how string substitution should *not* be used.
 
-    ```cpp
-    [DestinationDirs]
-    DefaultDestDir = %11%  ; Error! - number expected
+   ```cpp
+   [DestinationDirs]
+   DefaultDestDir = %11%  ; Error! - number expected
 
-    [aic78xx_Service_Inst]
-    ServiceBinary = 12\aic78xx.sys  ; Error! - unknown directory name
-    ```
+   [aic78xx_Service_Inst]
+   ServiceBinary = 12\aic78xx.sys  ; Error! - unknown directory name
+   ```
 
-    In the first example, the syntax for the **DefaultDestDir** entry requires its value to be a number. However, the %11% expression expands to a string. In the second example, the INF writer apparently intended to set the value for the **ServiceBinary** entry to a file in the directory that contains drivers (see the following table for more information). The error occurs because Windows looks for the specified file in a directory named "12", which probably does not exist on the computer.
+   In the first example, the syntax for the **DefaultDestDir** entry requires its value to be a number. However, the %11% expression expands to a string. In the second example, the INF writer apparently intended to set the value for the **ServiceBinary** entry to a file in the directory that contains drivers (see the following table for more information). The error occurs because Windows looks for the specified file in a directory named "12", which probably does not exist on the computer.
 
 The following table shows several commonly used *dirids*, and the directories they represent. The values most commonly specified by device INF files and driver INF files are listed toward the top of the table.
 
@@ -77,7 +77,7 @@ The following table shows several commonly used *dirids*, and the directories th
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>01</strong></p></td>
-<td align="left"><p><em>SourceDrive</em><strong>:\\\\</strong><em>pathname</em> (the directory from which the INF file was installed)</p></td>
+<td align="left"><p><em>SourceDrive</em><strong>:\</strong><em>pathname</em> (the directory from which the INF file was installed)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>10</strong></p></td>
@@ -87,23 +87,23 @@ The following table shows several commonly used *dirids*, and the directories th
 <tr class="odd">
 <td align="left"><p><strong>11</strong></p></td>
 <td align="left"><p>System directory.</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system32</em> for Windows 2000 and later versions of Windows..</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system32</em> for Windows 2000 and later versions of Windows..</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>12</strong></p></td>
 <td align="left"><p>Drivers directory.</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system32</em><strong>\\\\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system32</em><strong>\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
-<td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
+<td align="left"><p>Driver package&#39;s <a href="https://msdn.microsoft.com/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
 
-Don't use [DelFiles](inf-delfiles-directive.md) on a file for which **DestinationDirs** includes *dirid* 13.
+Don&#39;t use <a href="inf-delfiles-directive.md" data-raw-source="[DelFiles](inf-delfiles-directive.md)">DelFiles</a> on a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
 
-The optional subdirectory in the **SourceDiskFiles** section for a file must match the subdirectory in the **DestinationDirs** section for the entry that applies to this file.
+The optional subdirectory in the <strong>SourceDiskFiles</strong> section for a file must match the subdirectory in the <strong>DestinationDirs</strong> section for the entry that applies to this file.
 
-Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **DestinationDirs** includes *dirid* 13.
+Don&#39;t use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-copyfiles-directive.md)">CopyFiles</a> to rename a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
 </p></td>
 </tr>
 <tr class="even">
@@ -129,7 +129,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 <tr class="odd">
 <td align="left"><p><strong>24</strong></p></td>
 <td align="left"><p>Root directory of the system disk.</p>
-<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\\\\</em>&quot;.</p></td>
+<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\</em>&quot;.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>25</strong></p></td>
@@ -142,7 +142,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 <tr class="even">
 <td align="left"><p><strong>50</strong></p></td>
 <td align="left"><p>System directory</p>
-<p>This is equivalent to <em>%SystemRoot%</em><strong>\\\\</strong><em>system</em>.</p></td>
+<p>This is equivalent to <em>%SystemRoot%</em><strong>\</strong><em>system</em>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>51</strong></p></td>
@@ -171,7 +171,7 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 </tbody>
 </table>
 
- 
+ 
 
 *Dirid* values from 16384 through 32767 are reserved for special shell folders. The following table shows *dirid* values for these folders.
 
@@ -242,13 +242,13 @@ Don't use [CopyFiles](inf-copyfiles-directive.md) to rename a file for which **D
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL_*Xxx* value. For more information about CSIDL_*Xxx* values, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

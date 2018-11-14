@@ -34,9 +34,9 @@ For example, suppose your driver and device must operate when computer memory re
 
 The [PLX9x5x](sample-kmdf-drivers.md) sample reuses DMA transaction objects.
 
- 
+ 
 
- 
+ 
 
 
 

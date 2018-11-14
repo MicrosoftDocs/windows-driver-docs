@@ -31,11 +31,11 @@ The UNEXPECTED\_STORE\_EXCEPTION bug check has a value of 0x00000154. This indic
 | 3         | Reserved                                     |
 | 4         | Reserved                                     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

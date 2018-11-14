@@ -71,7 +71,7 @@ Specifies the address at which execution stops. This address must match the exac
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -84,7 +84,7 @@ The **ta** command causes the target to begin executing. This execution continue
 
 **Note**   If you use the **ta** command in kernel mode, execution stops when an instruction is encountered at the specified virtual address in any virtual address space.
 
- 
+ 
 
 During this execution, all steps are displayed explicitly. If a function is called, the debugger also traces through that function. Therefore, the display of this command resembles what you see if you executed [**t (Trace)**](t--trace-.md) repeatedly until the program counter reached the specified address.
 
@@ -94,9 +94,9 @@ For example, the following command explicitly traces through the target code unt
 0:000> ta @$ra 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 If NetSetup fails to find the device ID mapping for a network component in any of the netmap.inf files, it lists this component on the Compatibility Report page in the wizard. Associated with each such component is a Help message file.
 
@@ -66,9 +66,9 @@ Notice that the keyword **NotSupported** is assigned to Protocol1 in the **OemUp
 
 In the **OemUpgradeHelpFiles** section of the previous example, the Protoco11=helpmsg.txt, helpmsg.htm entry specifies two custom Help message files for Protocol1. The custom Help message contained in these files could indicate, for example, that the vendor does not support the upgrade of Protocol1 and that the user must separately upgrade Protocol1 to Protocol2 before attempting to upgrade the system to Windows 2000 or later.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ Depending on the nature of its device, an storage filter driver (SFD) might be r
 
 In general, an SFD has the same responsibilities as a storage class driver for those requests that require device-specific handling. For a discussion of the functionality required of storage class drivers, see [Storage Class Drivers](storage-class-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ The following figure shows a visual representation of a linear memory-space segm
 
 ![diagram illustrating a linear memory-space segment](images/memspac.png)
 
- 
+ 
 
- 
+ 
 
 
 
