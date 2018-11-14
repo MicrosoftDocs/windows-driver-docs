@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Windows 10 provides an inbox USB Video Class (UVC) driver for devices compliant with USB Video Class Specification (versions 1.0 to 1.5). This driver supports color and sensor type cameras. This document outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
 
-## Glossary
+## Terminology
 
 | Keyword              | Description                                                        |
 |----------------------|--------------------------------------------------------------------|
@@ -21,7 +21,7 @@ Windows 10 provides an inbox USB Video Class (UVC) driver for devices compliant 
 | BOS                  | Binary Device Object Store                                         |
 | MS OS 2.0 Descriptor | Microsoft platform specific BOS device capability descriptor       |
 
-## Sensor Cameras 
+## Sensor Cameras
 
 Windows supports two categories of cameras. One is a color camera and the other one is non-color (a.k.a sensor cameras) category. RGB or YUV cameras are categorized as color cameras and non-color cameras like gray scale, IR and Depth cameras are categorized as sensor cameras. The UVC driver supports both types of cameras. We recommend the camera firmware specify a value based on which the UVC driver would register the camera under one or both supported categories.
 
@@ -67,7 +67,7 @@ SkipCameraEnumeration: REG\_DWORD: 1 // make it available only for IR applicatio
 
 *If the SensorCameraMode and SkipCameraEnumeration attributes are not specified in the firmware or in the INF then, the camera will be registered as a color camera and will be visible only to color camera aware applications. *
 
-## IR stream 
+## IR stream
 
 Windows inbox USB Video Class driver supports cameras that capture the scene in YUV format and transmit the pixel data over USB as uncompressed YUV or as compressed MJPEG frames. Following are the format type GUIDs that should be specified in the stream’s video format descriptor:
 
@@ -125,7 +125,8 @@ UCHAR bVariableSize;
 
 } VIDEO\_FORMAT\_FRAME, \*PVIDEO\_FORMAT\_FRAME;
 
-*Note: IR streams would show up as regular capture stream in DShow. *
+> [!NOTE]
+> IR streams would show up as regular capture stream in DShow.
 
 ## Depth stream
 
@@ -291,11 +292,11 @@ Errors will be propagated from DMFT to DTM then to applications. For IHV/OEM DMF
 
 Requirements on DMFTs:
 
--   The input pin count of the DMFT must match with the output pin count of previous DMFT, otherwise DTM would fail during initialization. However, the input and output pin counts of same DMFT do not need to match.
+- The input pin count of the DMFT must match with the output pin count of previous DMFT, otherwise DTM would fail during initialization. However, the input and output pin counts of same DMFT do not need to match.
 
--   DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there is MFT0 configured or the next DMFT in the chain requires IMFTransform support.
+- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there is MFT0 configured or the next DMFT in the chain requires IMFTransform support.
 
--   On 64-bit systems that don’t make use of Frame Server, both 32-bit and 64-bit DMFTs shall be registered. Given that a USB camera might get plugged into an arbitrary system, for “external” (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
+- On 64-bit systems that don’t make use of Frame Server, both 32-bit and 64-bit DMFTs shall be registered. Given that a USB camera might get plugged into an arbitrary system, for “external” (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
 
 ## Configuring DMFT chain
 
@@ -309,25 +310,25 @@ Requirements on DMFTs:
 >
 > Some examples CameraDeviceMftCLSIDChain settings:
 
--   *No IHV/OEM DMFT or Platform DMFT*
+- *No IHV/OEM DMFT or Platform DMFT*
 
-    -   CameraDeviceMftCLSIDChain = “” (or no need to specify this registry entry)
+  - CameraDeviceMftCLSIDChain = “” (or no need to specify this registry entry)
 
--   *IHV/OEM DMFT*
+- *IHV/OEM DMFT*
 
-    -   CameraDeviceMftCLSIDChain = %Dmft.CLSID%
+  - CameraDeviceMftCLSIDChain = %Dmft.CLSID%
 
--   *Platform DMFT &lt;-&gt; IHV/OEM DMFT*
+- *Platform DMFT &lt;-&gt; IHV/OEM DMFT*
 
-    -   CameraDeviceMftCLSIDChain = “{3D096DDE-8971-4AD5-98F9-C74F56492630}”,%Dmft.CLSID%
+  - CameraDeviceMftCLSIDChain = “{3D096DDE-8971-4AD5-98F9-C74F56492630}”,%Dmft.CLSID%
 
-    -   Here is a screen shot of the result registry key for an USB camera with Platform DMFT and an DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
+  - Here is a screen shot of the result registry key for an USB camera with Platform DMFT and an DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
 
 ![Registry editor DMFT chain](images/dmft-registry-editor.png)
 
--   *IHV/OEM DMFT0 &lt;-&gt; IHV/OEM DMFT1*
+- *IHV/OEM DMFT0 &lt;-&gt; IHV/OEM DMFT1*
 
-    -   CameraDeviceMftCLSIDChain = %Dmft0.CLSID%,%Dmft1.CLSID%,
+  - CameraDeviceMftCLSIDChain = %Dmft0.CLSID%,%Dmft1.CLSID%,
 
 *Note: CameraDeviceMftCLSIDChain can have maximum 2 CLSIDs.*
 
@@ -357,8 +358,8 @@ Starting in RS2, Windows provides an in-box Device MFT for UVC cameras known as 
 
 | Features supported by Platform DMFT                                                                                           | Windows Release |
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| Enables face-based Region of Interest (ROI) for 3A adjustments in ROI-capable USB cameras.                                    
-                                                                                                                                
+| Enables face-based Region of Interest (ROI) for 3A adjustments in ROI-capable USB cameras.
+
  *Note: If the camera doesn’t support UVC 1.5 based ROI then the PDMFT wouldn’t load even if the device opted in to use PDMFT*  | RS2             |
 
 A UVC camera could opt-in to use platform DMFT by specifying the EnablePlatformDmft through BOS descriptor.
@@ -422,8 +423,8 @@ Configuring UVC devices through custom INF is still supported and that takes pre
 | Configuration Name                     | Type       | Description                                     |
 |----------------------------------------|------------|-------------------------------------------------|
 | *SensorCameraMode*                     | REG\_DWORD | Register the camera under a specific category.  |
-| *UVC-FSSensorGroupID*                  
-                                         
+| *UVC-FSSensorGroupID*
+
  *UVC-FSSensorGroupName*                 | REG\_SZ    | Group cameras with the same UVC-FSSensorGroupID |
 | *UVC-EnableDependentStillImageCapture* | REG\_DWORD | To enable still capture Method 2/3              |
 | *UVC-EnablePlatformDmft*               | REG\_DWORD | To enable Platform DMFT                         |
@@ -441,17 +442,17 @@ HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\{e53237
 
 This section gives an example BOS descriptor and a MS OS2.0 Descriptor for an imaginary composite device with two camera functions. One function is a UVC color camera and the second function is a UVC IR camera. The sample descriptors
 
-1.  register the color camera function under KSCATEGORY\_VIDEO\_CAMERA
+1. register the color camera function under KSCATEGORY\_VIDEO\_CAMERA
 
-2.  register the IR camera function under KSCATEGORY\_SENSOR\_CAMERA
+1. register the IR camera function under KSCATEGORY\_SENSOR\_CAMERA
 
-3.  enable color camera function’s still image capture
+1. enable color camera function’s still image capture
 
-4.  associates the color and IR camera functions as a group
+1. associates the color and IR camera functions as a group
 
 Upon device enumeration, the USB stack retrieves the BOS descriptor from the device. Following the BOS descriptor is a platform specific device capability.
 
-```
+```cpp
 #include <usbspec.h>
 
 const BYTE USBVideoBOSDescriptor[0x21] =
@@ -466,9 +467,9 @@ const BYTE USBVideoBOSDescriptor[0x21] =
     0x1C,                                   // 28 bytes bLength
     USB_DEVICE_CAPABILITY_DESCRIPTOR_TYPE,  // Platform Descriptor type
     USB_DEVICE_CAPABILITY_PLATFORM,         // bDevCapabilityType PLATFORM
-    0,                                      // bReserved 
-    0xDF, 0x60, 0xDD, 0xD8,                 // PlatformCapabilityUUID 
-    0x89, 0x45,                             // MS OS2.0 Descriptor 
+    0,                                      // bReserved
+    0xDF, 0x60, 0xDD, 0xD8,                 // PlatformCapabilityUUID
+    0x89, 0x45,                             // MS OS2.0 Descriptor
     0xC7, 0x4C,                             // D8DD60DF-4589-4CC7-9CD2-659D9E648A9F
     0x9C, 0xD2, 0x65, 0x9D, 0x9E, 0x64, 0x8A, 0x9F,
                                             // CapabilityData
@@ -476,16 +477,16 @@ const BYTE USBVideoBOSDescriptor[0x21] =
     0xC8, 0x02,                             // wLength 0x2C8 (712)
     0x01,                                   // bMS_VendorCode - any value. e.g. 0x01
     0x00                                    // bAltEnumCmd 0
-}; 
+};
 ```
 
 The BOS platform capability descriptor specifies
 
-1.  MS OS 2.0 descriptor platform capability GUID
+1. MS OS 2.0 descriptor platform capability GUID
 
-2.  a vendor control code bMS\_VendorCode (here is it set to 1. It can take any value the vendor prefers) to retrieve the MS OS 2.0 descriptor.
+1. A vendor control code bMS\_VendorCode (here is it set to 1. It can take any value the vendor prefers) to retrieve the MS OS 2.0 descriptor.
 
-3.  This BOS descriptor is applicable for OS version Windows 10 and later.
+1. This BOS descriptor is applicable for OS version Windows 10 and later.
 
 After seeing the BOS descriptor, the USB stack will issue the vendor specific control request to retrieve the MS OS 2.0 descriptor.
 
@@ -495,61 +496,60 @@ Format of the control request to retrieve MS OS 2.0 vendor-specific descriptor:
 |---------------|---------------------|--------|--------|---------|----------------------------------------|
 | 1100 0000B    | **bMS\_VendorCode** | 0x00   | 0x07   | Length  | Returned MS OS 2.0 Descriptor Set blob |
 
-**bmRequestType**
+    *bmRequestType*
 
--   Data Transfer Direction – Device to Host
+    - Data Transfer Direction – Device to Host
 
--   Type – Vendor
+    - Type – Vendor
 
--   Recipient - Device
+    - Recipient - Device
 
-**bRequest**
+    *bRequest*
 
-The **bMS\_VendorCode** value returned in the descriptor set information structure.
+    The **bMS\_VendorCode** value returned in the descriptor set information structure.
 
-**wValue**
+    *wValue*
 
-Set to 0x00.
+    Set to 0x00.
 
-**wIndex**
+    *wIndex*
 
-0x7 for MS\_OS\_20\_DESCRIPTOR\_INDEX.
+    0x7 for MS\_OS\_20\_DESCRIPTOR\_INDEX.
 
-**wLength**
+    *wLength*
 
-Length of the MS OS 2.0 descriptor set, as returned in the BOS descriptor. 0x25C (604) in this example.
+    Length of the MS OS 2.0 descriptor set, as returned in the BOS descriptor. 0x25C (604) in this example.
 
 The device is expected to return the MS OS 2.0 descriptor like the one specified in USBVideoMSOS20DescriptorSet.
 
 The USBVideoMSOS20DescriptorSet describes the color and IR functions. It specifies the following MS OS 2.0 Descriptor values:
 
-1.  Set Header
+1. Set Header
 
-2.  Configuration Subset Header
+1. Configuration Subset Header
 
-3.  Color Camera Function Subset Header
+1. Color Camera Function Subset Header
 
-4.  Registry Value Feature Descriptor for sensor group ID
+1. Registry Value Feature Descriptor for sensor group ID
 
-5.  Registry Value Feature Descriptor for sensor group name
+1. Registry Value Feature Descriptor for sensor group name
 
-6.  Registry Value Feature Descriptor for enabling still image capture
+1. Registry Value Feature Descriptor for enabling still image capture
 
-7.  Registry Value Feature Descriptor for enabling Platform DMFT
+1. Registry Value Feature Descriptor for enabling Platform DMFT
 
-8.  IR Camera Function Subset Header
+1. IR Camera Function Subset Header
 
-9.  Registry Value Feature Descriptor for sensor group ID
+1. Registry Value Feature Descriptor for sensor group ID
 
-10. Registry Value Feature Descriptor for sensor group name
+1. Registry Value Feature Descriptor for sensor group name
 
-11. Registry Value Feature Descriptor for registering the camera as a sensor camera
+1. Registry Value Feature Descriptor for registering the camera as a sensor camera
 
-Note:
+> [!NOTE]
+> The firmware will have a handler for the vendor request that will return the following MS OS 2.0 descriptor for the imaginary device described at the beginning of this section.
 
-*The firmware will have a handler for the vendor request that will return the following MS OS 2.0 descriptor for the imaginary device described at the beginning of this section.*
-
-```
+```cpp
 UCHAR USBVideoMSOS20DescriptorSet[0x2C8] =
 {
     /* Microsoft OS 2.0 Descriptor Set Header */
@@ -594,8 +594,8 @@ UCHAR USBVideoMSOS20DescriptorSet[0x2C8] =
     0x4E, 0x00,             // wPropertyDataLength – 0x4E (78) bytes
                             // FSSensorGroupID GUID in string format:
                             // "{20C94C5C-F402-4F1F-B324-0C1CF0257870}"
-    '{', 0x00, '2', 0x00,   // NOTE: This is just an example GUID. 
-    '0', 0x00, 'C', 0x00,   // You need to generate and use your 
+    '{', 0x00, '2', 0x00,   // NOTE: This is just an example GUID.
+    '0', 0x00, 'C', 0x00,   // You need to generate and use your
     '9', 0x00, '4', 0x00,   // own GUID for the sensor group ID
     'C', 0x00, '5', 0x00,
     'C', 0x00, '-', 0x00,
@@ -719,7 +719,7 @@ UCHAR USBVideoMSOS20DescriptorSet[0x2C8] =
     'p', 0x00, 'I', 0x00,
     'D', 0x00, 0x00, 0x00,
     0x4E, 0x00,             // wPropertyDataLength – 78 bytes
-                            // FSSensorGroupID GUID in string format: 
+                            // FSSensorGroupID GUID in string format:
                             // "{20C94C5C-F402-4F1F-B324-0C1CF0257870}"
     '{', 0x00, '2', 0x00,
     '0', 0x00, 'C', 0x00,
@@ -809,4 +809,3 @@ UCHAR USBVideoMSOS20DescriptorSet[0x2C8] =
     0x01, 0x00, 0x00, 0x00  // This exposes the camera to applications looking for IR only cameras
 };  
 ```
-
