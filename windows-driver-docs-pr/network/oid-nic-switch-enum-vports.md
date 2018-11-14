@@ -31,13 +31,13 @@ Overlying drivers and user-mode applications issue OID query requests of OID\_NI
 
 Before the driver or application issues the OID request, it must initialize an [**NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451595) structure that is passed along with the request. The driver or application must follow these guidelines when initializing the **NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY** structure:
 
--   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_SWITCH flag is set in the **Flags** member, information is retuned for all VPorts created on a specified NIC switch. The NIC switch is specified by the **SwitchId** member of that structure.
+-   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_SWITCH flag is set in the **Flags** member, information is returned for all VPorts created on a specified NIC switch. The NIC switch is specified by the **SwitchId** member of that structure.
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only the default NIC switch on the network adapter. Regardless of the flags that are set in the **Flags** member, the **SwitchId** member must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
      
 
--   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_FUNCTION flag is set in the **Flags** member, information is retuned for all VPorts attached to a specified PCI Express (PCIe) Physical Function (PF) or Virtual Function (VF) on the network adapter. The PF or VF is specified by the **AttachedFunctionId** member of that structure.
+-   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_FUNCTION flag is set in the **Flags** member, information is returned for all VPorts attached to a specified PCI Express (PCIe) Physical Function (PF) or Virtual Function (VF) on the network adapter. The PF or VF is specified by the **AttachedFunctionId** member of that structure.
 
     If the **AttachedFunctionId** member is set to NDIS\_PF\_FUNCTION\_ID, information is returned for all VPorts, including the default VPort, that are attached to the network adapter's PF. If the **AttachedFunctionId** member is set to a valid VF identifier, information is returned for all VPorts to the specified VF.
 
