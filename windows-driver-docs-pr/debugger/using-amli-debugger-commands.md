@@ -4,7 +4,7 @@ description: Using AMLI Debugger Commands
 ms.assetid: 8efa6f13-67db-417a-83ec-8219afc9874c
 keywords: ["AMLI Debugger, AMLI Debugger commands"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -114,14 +114,20 @@ Write DWORD to Port</td>
 These commands exit the AMLI Debugger. The **g** command will resume normal execution of the target computer, and the **q** command will freeze the target computer and break into the kernel debugger.
 
 **g**
+
 **q**
+
 ### <span id="controlling_aml_execution"></span><span id="CONTROLLING_AML_EXECUTION"></span>Controlling AML Execution
 
 These commands allow you to run or step through AML methods. The **run** command begins execution at a specified point. The **p** and **t** commands allow you to step through one instruction at a time. If a function call is encountered, the **p** command treats the function as a single step, while the **t** command traces into the new function one instruction at a time.
 
-**run** *MethodName* **\[**<em>ArgumentList</em>**\]**
-**run** *CodeAddress* **\[**<em>ArgumentList</em>**\]**
+
+**run** *MethodName* **\[***ArgumentList***\]**
+
+**run** *CodeAddress* **\[***ArgumentList***\]**
+
 **p**
+
 **t**
 
 <span id="MethodName"></span><span id="methodname"></span><span id="METHODNAME"></span>*MethodName*  
@@ -220,10 +226,15 @@ The port commands allow you to send output or receive input from a data port. Th
 These commands have the same effect as the standard kernel debugger port commands; they are duplicated within the AMLI Debugger for easy access.
 
 **i** *Port*
+
 **iw** *Port*
+
 **id** *Port*
+
 **o** *Port* *DataForPort*
+
 **ow** *Port* *DataForPort*
+
 **od** *Port* *DataForPort*
 
 <span id="Port"></span><span id="port"></span><span id="PORT"></span>*Port*  
@@ -241,11 +252,6 @@ This command displays help text for the AMLI Debugger commands.
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  
 Specifies the command for which to display help. If this is omitted, a list of all AMLI Debugger commands and AMLI Debugger extensions is displayed.
 
- 
+## See Also
 
- 
-
-
-
-
-
+[The AMLI Debugger](the-amli-debugger.md) 

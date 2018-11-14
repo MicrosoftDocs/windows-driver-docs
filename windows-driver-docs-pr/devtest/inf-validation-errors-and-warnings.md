@@ -208,6 +208,13 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 <td align="left"><p>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.</p>
 </td>
 </tr>
+
+<tr class="even">
+<td align="left"><p><strong>1296: Specified service not associated with hardware</strong></p></td>
+<td align="left"><p>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.</p>
+</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -231,20 +238,20 @@ The following errors and warnings are related to INF configurability:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="1301__Found_legacyXxx"></span><span id="1301__found_legacyxxx"></span><span id="1301__FOUND_LEGACYXXX"></span><strong>1301: Found legacy</strong><em>Xxx</em></p></td>
+<td align="left"><p><span id="1300__Found_legacyXxx"></span><span id="1300__found_legacyxxx"></span><span id="1300__FOUND_LEGACYXXX"></span><strong>1300: Found legacy</strong><em>Xxx</em></p></td>
 <td align="left"><p>You&#39;ll see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448" data-raw-source="[&lt;strong&gt;LogConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547448)"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321" data-raw-source="[&lt;strong&gt;DDInstall.CoInstallers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547321)"><strong>DDInstall.CoInstallers</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="1302__Found_legacyXxxoperationXxx"></span><span id="1302__found_legacyxxxoperationxxx"></span><span id="1302__FOUND_LEGACYXXXOPERATIONXXX"></span><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></p></td>
+<td align="left"><p><span id="1301__Found_legacyXxxoperationXxx"></span><span id="1301__found_legacyxxxoperationxxx"></span><span id="1301__FOUND_LEGACYXXXOPERATIONXXX"></span><strong>1301: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></p></td>
 <td align="left"><p>You&#39;ll see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448" data-raw-source="[&lt;strong&gt;LogConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547448)"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321" data-raw-source="[&lt;strong&gt;DDInstall.CoInstallers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547321)"><strong>DDInstall.CoInstallers</strong></a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="1303__Found_legacyXxxoperation_forXxx"></span><span id="1303__found_legacyxxxoperation_forxxx"></span><span id="1303__FOUND_LEGACYXXXOPERATION_FORXXX"></span><strong>1303: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></p></td>
+<td align="left"><p><span id="1302__Found_legacyXxxoperation_forXxx"></span><span id="1302__found_legacyxxxoperation_forxxx"></span><span id="1302__FOUND_LEGACYXXXOPERATION_FORXXX"></span><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></p></td>
 <td align="left"><p>This error occurs when the operation affects something external to the driver package, like deleting a service or deleting a file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="1304__Found_legacy_operation_defining_co-installers"></span><span id="1304__found_legacy_operation_defining_co-installers"></span><span id="1304__FOUND_LEGACY_OPERATION_DEFINING_CO-INSTALLERS"></span><strong>1304: Found legacy operation defining co-installers</strong></p></td>
-<td align="left"><p>Error 1304 indicates that an AddReg operation is specifying a coinstaller. For example:</p>
+<td align="left"><p><span id="1303__Found_legacy_operation_defining_co-installers"></span><span id="1303__found_legacy_operation_defining_co-installers"></span><span id="1303__FOUND_LEGACY_OPERATION_DEFINING_CO-INSTALLERS"></span><strong>1303: Found legacy operation defining co-installers</strong></p></td>
+<td align="left"><p>Error 1303 indicates that an AddReg operation is specifying a coinstaller. For example:</p>
 <div class="code">
 <pre>
 AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
@@ -252,16 +259,16 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </div></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="1305__Found_legacy_operation_using_non-relative_key"></span><span id="1305__found_legacy_operation_using_non-relative_key"></span><span id="1305__FOUND_LEGACY_OPERATION_USING_NON-RELATIVE_KEY"></span><strong>1305: Found legacy operation using non-relative key</strong></p></td>
-<td align="left"><p>Error 1305 indicates that a registry operation uses a registry root other than HKR.</p></td>
+<td align="left"><p><span id="1304__Found_legacy_operation_using_non-relative_key"></span><span id="1304__found_legacy_operation_using_non-relative_key"></span><span id="1304__FOUND_LEGACY_OPERATION_USING_NON-RELATIVE_KEY"></span><strong>1304: Found legacy operation using non-relative key</strong></p></td>
+<td align="left"><p>Error 1304 indicates that a registry operation uses a registry root other than HKR.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="1306__Found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1306__found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1306__FOUND_LEGACY_OPERATION_USING_APPENDABLE_MULTI-SZ_VALUE"></span><strong>1306: Found legacy operation using appendable multi-sz value</strong></p></td>
-<td align="left"><p>Error 1306 indicates that the INF deletes a value from a <strong>REG_MULTI_SZ</strong> or appends a value to an existing <strong>REG_MULTI_SZ</strong>.</p></td>
+<td align="left"><p><span id="1305__Found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1305__found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1305__FOUND_LEGACY_OPERATION_USING_APPENDABLE_MULTI-SZ_VALUE"></span><strong>1305: Found legacy operation using appendable multi-sz value</strong></p></td>
+<td align="left"><p>Error 1305 indicates that the INF deletes a value from a <strong>REG_MULTI_SZ</strong> or appends a value to an existing <strong>REG_MULTI_SZ</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="1307__Found_legacy_operation_with_non-system_target_path_"></span><span id="1307__found_legacy_operation_with_non-system_target_path_"></span><span id="1307__FOUND_LEGACY_OPERATION_WITH_NON-SYSTEM_TARGET_PATH_"></span><strong>1307: Found legacy operation with non-system target path</strong></p></td>
-<td align="left"><p>Error 1307 indicates that a file copy specifies a target that is not under %SystemRoot%.</p></td>
+<td align="left"><p><span id="1306__Found_legacy_operation_with_non-system_target_path_"></span><span id="1306__found_legacy_operation_with_non-system_target_path_"></span><span id="1306__FOUND_LEGACY_OPERATION_WITH_NON-SYSTEM_TARGET_PATH_"></span><strong>1306: Found legacy operation with non-system target path</strong></p></td>
+<td align="left"><p>Error 1306 indicates that a file copy specifies a target that is not under %SystemRoot%.</p></td>
 </tr>
     
 <tr class="even">
@@ -272,6 +279,10 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 <tr class="odd">
 <td align="left"><p><span id="1313_missing_includes_"></span><span id="1313_MISSING_INCLUDES_"></span><strong>1313-1314: Missing includes directive</strong></p></td>
 <td align="left"><p>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><span id="133x_functional_errors_"></span><span id="133x_FUNCTIONAL_ERRORS_"></span><strong>133x: Functional errors</strong></p></td>
+<td align="left"><p>Multiple registry sections write to a single global key. For example, different sections could have a service set to different service configuations, a global registry key set to different data values, or a destination file pointing to different source files.</p></td>
 </tr>
 </tbody>
 </table>

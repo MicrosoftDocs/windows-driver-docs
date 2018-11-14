@@ -14,7 +14,7 @@ Early Launch Antimalware drivers must adhere to the following program requiremen
 ## Antimalware Vendor Participation Requirements
 
 
-Microsoft requires that Early Launch Antimalware vendors either be members of the [**Microsoft Virus Initiative (MVI)**](https://www.microsoft.com/wdsi/alliances/virus-initiative) or pre-approved members of the [**Virus Information Alliance (VIA)**](https://www.microsoft.com/wdsi/alliances/virus-information-alliance). This membership ensures that the vendors are active antimalware community participants with a positive industry reputation. Please reach out to [<strong>mvi@microsoft.com</strong>](mailto:mvi@microsoft.com) if you have questions about ELAM driver signing or becoming a pre-approved VIA member.
+Microsoft requires that Early Launch Antimalware vendors either be members of the [**Microsoft Virus Initiative (MVI)**](https://www.microsoft.com/wdsi/alliances/virus-initiative). This membership ensures that the vendors are active antimalware community participants with a positive industry reputation. If you are not a member of the MVI program and believe you need use of ELAM, please reach out to [**mvi@microsoft.com**](mailto:mvi@microsoft.com) for additional information.
 
 ## Hardware Certification Kit Tests
 

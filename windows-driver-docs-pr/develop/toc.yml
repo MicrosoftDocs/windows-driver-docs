@@ -128,5 +128,7 @@
     href: creating-a-log-file-for-the-code-analysis-tool.md
   - name: "Creating a log file for Static Driver Verifier"
     href: creating-a-log-file-for-static-driver-verifier.md
+  - name: "Static Driver Verifier Known Issues - Windows 10 October 2018 Update (version 1809)"
+    href: static-driver-verifier-known-issues.md
 - name: "Distributing a driver package"
   href: distributing-a-driver-package-win8.md

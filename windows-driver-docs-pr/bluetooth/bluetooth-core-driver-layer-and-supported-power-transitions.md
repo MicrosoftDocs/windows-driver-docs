@@ -64,12 +64,6 @@ The following table summarizes device and system power states that the Bluetooth
 </table>
 
 
-<<<<<<< HEAD
-
-
- 
-=======
->>>>>>> master
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 
