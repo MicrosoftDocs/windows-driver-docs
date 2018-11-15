@@ -47,13 +47,13 @@ There are two ways the firmware could be updated.
 
 In this method, a lower filter driver to the USB device driver will be installed as part of driver update process. This filter driver will perform the firmware update.
 
-The driver update package on Windows Update server will contain:
+The driver update package on the Windows Update server will contain:
 
-    - A firmware update WDF lower filter driver
+- A firmware update WDF lower filter driver
 
-    - An extension INF to install the firmware update WDF lower filter driver
+- An extension INF to install the firmware update WDF lower filter driver
 
-    - The "firmware.bin" file.
+- The "firmware.bin" file
 
 ![Firmware update UMDF lower filter driver method](images/fw-update-umdf-lower-filter-driver-method.png)
 
@@ -89,7 +89,7 @@ The driver update package on Windows Update server for the device will contain:
 
 1. An extension INF to install the WDF lower filter driver
 
-In addition to the driver update package, a separate FW Update Device Driver package will be present on the Windows Update, with:
+In addition to the driver update package, a separate Firmware Update Device Driver package will be present on Windows Update, with:
 
 1. A WDF firmware update device driver and its INF, and
 
