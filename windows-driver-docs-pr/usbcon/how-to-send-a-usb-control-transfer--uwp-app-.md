@@ -70,14 +70,7 @@ For the control transfer, you must populate a *setup packet* that contains all i
     | **wValue**                | [**UsbSetupPacket.Value**](https://msdn.microsoft.com/library/windows/apps/dn278452)                            | Depends on the type of request.                                                                                                                                                                                                        |
     | **wIndex**                | [**UsbSetupPacket.Index**](https://msdn.microsoft.com/library/windows/apps/dn278433)                            | Depends on the type of request.                                                                                                                                                                                                        |
     | **wLength**               | [**UsbSetupPacket.Length**](https://msdn.microsoft.com/library/windows/apps/dn278435)                          | Length of the data packet sent or received in this request.                                                                                                                                                                            |
-
-
-
-~~~
 **Note**  For certain control transfers, you might need to provide **bmRequestType** as a raw byte. In that case, you can set the byte in the [**UsbControlRequestType.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property.
-~~~
-
-
 
 ## Step 2: Start an asynchronous operation to send the control transfer
 
