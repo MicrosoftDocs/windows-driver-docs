@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 -   USB Type-C interoperability test procedures in Windows 10: functional testing (FT) and stress testing (ST).
 -   Diagnostic procedures and tips to confirm scenarios, such as device addition and removal.
 
-**Applies to **
+**Applies to**
 
 -   Windows 10
 
@@ -177,11 +177,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     **Caution**  The **J1** connector requires additional support when connecting the SUT. The connector is not sturdy enough to sustain the weight of a device or by itself.
 
-
-
-~~~
-![attaching system under test (sut)](images/connexc-connect4.png)
-~~~
+    ![attaching system under test (sut)](images/connexc-connect4.png)
 
 5.  Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
 

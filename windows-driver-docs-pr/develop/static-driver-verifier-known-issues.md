@@ -1,6 +1,7 @@
 ﻿---
 title: Static Driver Verifier Known Issues
 description: 
+author: selerner
 ms.author: selerner
 ms.date: 11/07/2018
 ms.topic: article

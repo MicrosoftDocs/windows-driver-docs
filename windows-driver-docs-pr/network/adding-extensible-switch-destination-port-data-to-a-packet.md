@@ -63,21 +63,15 @@ The forwarding extension must follow these guidelines when it determines destina
 
         **Note**  If there are available destination ports in the array, the extension should not call [*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158).
 
+    2.  If the [*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158) function returns successfully, it has added the additional destination ports to the end of the destination array in the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure. A pointer to this structure is returned in the *Destinations* parameter.
 
+        **Note**  If the [*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158) function cannot allocate the requested number of destination ports, it returns NDIS\_STATUS\_RESOURCES.
 
-~~~
-2.  If the [*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158) function returns successfully, it has added the additional destination ports to the end of the destination array in the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure. A pointer to this structure is returned in the *Destinations* parameter.
+    3.  The extension specifies new destination port elements in the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure. The extension initializes each new destination port as an [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://msdn.microsoft.com/library/windows/hardware/hh598224) structure.
 
-    **Note**  If the [*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158) function cannot allocate the requested number of destination ports, it returns NDIS\_STATUS\_RESOURCES.
+        The extension initializes new destination ports to the array starting at the **NumDestinations** offset. **NumDestinations** is a member of the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure.
 
-
-
-3.  The extension specifies new destination port elements in the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure. The extension initializes each new destination port as an [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://msdn.microsoft.com/library/windows/hardware/hh598224) structure.
-
-    The extension initializes new destination ports to the array starting at the **NumDestinations** offset. **NumDestinations** is a member of the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure.
-
-4.  After the extension has finished adding or modifying destination port elements, it must call [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303) to commit those changes.
-~~~
+    4.  After the extension has finished adding or modifying destination port elements, it must call [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303) to commit those changes.
 
 -   If the extension adds a single destination port for a packet, it must follow these steps:
 
@@ -87,13 +81,9 @@ The forwarding extension must follow these guidelines when it determines destina
 
         **Note**  The extension should not call the [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303) function to commit the changes to a packet with only one destination port.
 
-
-
 -   When the forwarding extension calls [*AddNetBufferListDestination*](https://msdn.microsoft.com/library/windows/hardware/hh598133) or [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303) to commit the changes for destination ports, the extensible switch interface will not delete the extensible switch ports that are specified in the elements of the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure. After the packet send or receive operation is complete, the interface is free to delete the port if it is necessary.
 
     **Note**  After the forwarding extension commits the changes for destination ports to the forwarding context, destination ports cannot be removed and only the **IsExcluded** member of a destination port's [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://msdn.microsoft.com/library/windows/hardware/hh598224) structure can be changed. For more information, see [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md).
-
-
 
 -   The forwarding extension must synchronize its handling of object identifier (OID) set requests of [OID\_SWITCH\_NIC\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265) with its code that adds destination ports for the disconnected network adapter.
 
@@ -102,8 +92,6 @@ The forwarding extension must follow these guidelines when it determines destina
     -   If the extension called [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID request, it must not specify the port with the disconnected network adapter as a destination port for the packet.
 
         **Note**  If the only destination port for the packet is the one with the disconnected network adapter, the extension must drop the packet.
-
-
 
     -   The extension can return NDIS\_STATUS\_PENDING to complete the request asynchronously. This allows the extension to add the port with the disconnected network adapter as a destination port for the packet. This also allows the extension to call [*AddNetBufferListDestination*](https://msdn.microsoft.com/library/windows/hardware/hh598133) or [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303) and complete the addition of destination ports to a packet.
 
@@ -122,14 +110,3 @@ The forwarding extension must follow these guidelines when it determines destina
 -   If the number of destination ports is greater than zero, the forwarding extension must call [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616) to forward the packet over the ingress data path to the miniport edge of the extensible switch.
 
     **Note**  If the forwarding extension obtained a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures for multiple packets from the ingress data path, it should create a separate list of forwarded packets. By doing this, the extension can call [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616) just once to forward the list of packets. In addition, the extension should maintain separate lists to forward packets that have the same destination ports. For more information, see [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md).
-
-
-
-
-
-
-
-
-
-
-

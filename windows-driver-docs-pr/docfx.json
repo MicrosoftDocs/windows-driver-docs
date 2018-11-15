@@ -47,6 +47,20 @@
       "ms.author": "windowsdriverdev",
       "ms.topic": "article"
     },
+    "fileMetadata": {
+      "author":
+      {
+        "windows-driver-docs-pr/develop/*.md": "tedhudek",
+        "windows-driver-docs-pr/install/*.md": "tedhudek",
+        "windows-driver-docs-pr/wdf/*.md": "tedhudek"
+      },
+      "ms.author":
+      {
+        "windows-driver-docs-pr/develop/*.md": "tedhudek",
+        "windows-driver-docs-pr/install/*.md": "tedhudek",
+        "windows-driver-docs-pr/wdf/*.md": "tedhudek"
+      }
+    },
     "externalReference": [],
     "template": "op.html",
     "dest": "windows-driver-docs-pr",
