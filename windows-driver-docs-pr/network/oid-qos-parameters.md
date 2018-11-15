@@ -59,17 +59,11 @@ When the miniport driver handles the OID method request of OID\_QOS\_PARAMETERS,
 
         **Note**  The driver can also override configured local QoS parameters if they compromise the QoS parameters used by protocols or technologies that are enabled on the network adapter. For example, the driver can override the local QoS parameters if the network adapter is enabled for remote boot through the Fibre Channel over Ethernet (FCoE) protocol.
 
-
-
-~~~
-For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](https://msdn.microsoft.com/library/windows/hardware/hh706282).
+    For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](https://msdn.microsoft.com/library/windows/hardware/hh706282).
 
 For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh464015).
 
 **Note**  Overriding the local QoS parameters should not cause the miniport driver to fail the OID method request of OID\_QOS\_PARAMETERS.
-~~~
-
-
 
 For more information on how the miniport driver manages the local QoS parameters, see [Setting Local NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh440225).
 

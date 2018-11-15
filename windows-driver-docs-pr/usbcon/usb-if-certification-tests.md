@@ -110,7 +110,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
      <tr class="odd">
      <td>USB 2.0</td>
      <td><p>Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 2.0 devices] in the USB 3.0 Command Verifier test tool (USB30CV).</p>
-     <p>Run the interoperability tests as described in the EHCI portion of the Interoperability section of the [GoldSuite Test Procedure document](<a href="http://compliance.usb.org/resources/GoldSuite" data-raw-source="http://compliance.usb.org/resources/GoldSuite">http://compliance.usb.org/resources/GoldSuite</a> Test Procedure.pdf). Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller.</p></td>
+     <p>Run the interoperability tests as described in the EHCI portion of the Interoperability section of the <a href="http://compliance.usb.org/resources/GoldSuite%20Test%20Procedure.pdf">GoldSuite Test Procedure document</a>. Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller.</p></td>
      </tr>
      <tr class="even">
      <td>USB 3.0</td>

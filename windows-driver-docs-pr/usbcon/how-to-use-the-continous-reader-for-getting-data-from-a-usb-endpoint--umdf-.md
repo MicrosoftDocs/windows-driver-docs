@@ -34,11 +34,11 @@ Before the client driver can use the continuous reader, make sure that these req
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
 
-    **KMDF client driver:  **
+    **KMDF client driver:**
 
     A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
-    **UMDF client driver:  **
+    **UMDF client driver:**
 
     A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560362) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
@@ -46,11 +46,11 @@ Before the client driver can use the continuous reader, make sure that these req
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface. For information about how to change the alternate setting, see [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).
 
-    **KMDF client driver:  **
+    **KMDF client driver:**
 
     A KMDF client driver must call the [**WdfUsbTargetDeviceSelectConfig**](https://msdn.microsoft.com/library/windows/hardware/ff550101) method.
 
-    **UMDF client driver:  **
+    **UMDF client driver:**
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
@@ -94,27 +94,25 @@ Instructions
             pDeviceContext,  
             pipeContext->MaxPacketSize);  
 
+        readerConfig.EvtUsbTargetPipeReadersFailed=FX3EvtReadFailed;  
 
-~~~
-    readerConfig.EvtUsbTargetPipeReadersFailed=FX3EvtReadFailed;  
+        status = WdfUsbTargetPipeConfigContinuousReader(  
+            Pipe,  
+            &readerConfig);  
 
-    status = WdfUsbTargetPipeConfigContinuousReader(  
-        Pipe,  
-        &readerConfig);  
+        if (!NT_SUCCESS (status))
+        {
+            TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
+                "%!FUNC! WdfUsbTargetPipeConfigContinuousReader failed 0x%x", status);
 
-    if (!NT_SUCCESS (status))
-    {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, 
-            "%!FUNC! WdfUsbTargetPipeConfigContinuousReader failed 0x%x", status);
+            goto Exit;
+        }
 
-        goto Exit;
+
+    Exit:
+        return status;
     }
-
-
-Exit:
-    return status;
-}
-```
+    ```
 
 Typically the client driver configures the continuous reader in the [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function after enumerating the target pipe objects in the active setting.
 
@@ -129,7 +127,6 @@ In the preceding example, the client driver specifies its configuration options 
 In addition to the configuration parameters specified in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552566), the example also sets a failure routine in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552561). This failure routine is optional.
 
 In addition to the failure routine, there are other members in [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552561) that the client driver can use to specify the layout of the transfer buffer. For example, consider a network driver that uses the continuous reader to receive network packets. Each packet contains header, payload, and footer data. To describe the packet, the driver must first specify the size of the packet in its call to [**WDF\_USB\_CONTINUOUS\_READER\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552561_init). Then, the driver must specify the length of the header and footer by setting **HeaderLength** and **TrailerLength** members of **WDF\_USB\_CONTINUOUS\_READER\_CONFIG**. The framework uses those values to calculate the byte offsets on either side of the payload. When payload data is read from the endpoint, the framework stores that data in the part of the buffer between the offsets.
-~~~
 
 2.  Implement the completion routine.
 
@@ -151,32 +148,29 @@ In addition to the failure routine, there are other members in [**WDF\_USB\_CONT
         PDEVICE_CONTEXT  pDeviceContext;  
         PVOID  requestBuffer;    
 
+        pDeviceContext = (PDEVICE_CONTEXT)Context;
 
-~~~
-    pDeviceContext = (PDEVICE_CONTEXT)Context;
+        if (NumBytesTransferred == 0)
+        {
+            return;
+        }
 
-    if (NumBytesTransferred == 0)
-    {
+        requestBuffer = WdfMemoryGetBuffer(Buffer, NULL);
+
+        if (Pipe == pDeviceContext->InterruptPipe)
+        {
+            KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL,
+                                    "Interrupt endpoint: %s.\n", 
+                                    requestBuffer )); 
+        }
+
+
         return;
     }
 
-    requestBuffer = WdfMemoryGetBuffer(Buffer, NULL);
-
-    if (Pipe == pDeviceContext->InterruptPipe)
-    {
-        KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL,
-                                 "Interrupt endpoint: %s.\n", 
-                                  requestBuffer )); 
-    }
-
-
-    return;
-}
-
-```
+    ```
 
 The framework invokes the client-driver implemented completion routine each time a request is completed. The framework allocates a memory object for each read operation. In the completion routine, the framework passes the number of bytes read and a WDFMEMORY handle to the memory object. The memory object buffer contains the data that is read from the pipe. The client driver must not free the memory object. The framework releases the object after each completion routine returns. If the client driver wants to store the received data, the driver must copy the contents of the buffer in the completion routine.
-~~~
 
 3.  Implement the failure routine.
 
@@ -201,18 +195,15 @@ The framework invokes the client-driver implemented completion routine each time
                      status,
                      UsbdStatus);
 
-
-~~~
-    return TRUE;  
-}  
-```
+        return TRUE;  
+    }  
+    ```
 
 In the preceding example, the driver returns TRUE. This value indicates to the framework that it must reset the pipe and then restart the continuous reader.
 
 Alternatively, the client driver can return FALSE and provide an error recovery mechanism if a stall condition occurs on the pipe. For example, the driver can check the USBD status and issue a reset-pipe request to clear the stall condition.
 
 For information about error recovery in pipes, see [How to recover from USB pipe errors](how-to-recover-from-usb-pipe-errors.md).
-~~~
 
 4.  Instruct the framework to start the continuous reader when the device enters working state; stop the reader when the device leaves working state. Call these methods and specify the target pipe object as the I/O target object.
 

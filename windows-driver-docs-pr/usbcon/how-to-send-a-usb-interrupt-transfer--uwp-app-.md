@@ -33,11 +33,7 @@ For interrupt endpoints, the descriptor exposes these properties. Those values a
 
     **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
 
-
-
-~~~
-That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
-~~~
+    That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
 
 -   How much data can be transmitted in each service interval?
 
@@ -203,11 +199,3 @@ void UnregisterFromInterruptEvent(void)
 ```
 
 After the event handler is unregistered, the app stops receiving data from the interrupt pipe because the event handler is not invoked on interrupt events. This does not mean that the interrupt pipe stops getting data.
-
-
-
-
-
-
-
-
