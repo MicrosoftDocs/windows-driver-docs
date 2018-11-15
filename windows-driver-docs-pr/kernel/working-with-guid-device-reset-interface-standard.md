@@ -29,13 +29,13 @@ Starting in Windows 10, these registry entries under the `HKLM\SYSTEM\CurrentCon
 >  The GUID_DEVICE_RESET_INTERFACE_STANDARD interface is available starting in Windows 10.
  
 
-### Using the device reset interface
+## Using the device reset interface
 
 If a function driver detects that the device is not functioning correctly, it should first attempt a function-level reset. If a function-level reset does not fix the issue, then the driver may choose to attempt a platform-level reset. However, a platform-level reset should only be used as the final option.
 
 To query for this interface, a device driver sends an IRP_MN_QUERY_INTERFACE IRP down the driver stack. For this IRP, the driver sets the InterfaceType input parameter to GUID_DEVICE_RESET_INTERFACE_STANDARD. On successful completion of the IRP, the Interface output parameter is a pointer to a DEVICE_RESET_INTERFACE_STANDARD structure. This structure contains a pointer to the DeviceReset routine, which can be used to request a function-level or platform-level reset.
 
-### Supporting the device reset interface in function drivers
+## Supporting the device reset interface in function drivers
 
 To support the device reset interface, the device stack must meet the following requirements.
 
@@ -51,11 +51,11 @@ For more information about these IRPs, see:
 
 [Handling an IRP_MN_SURPRISE_REMOVAL Request](handling-an-irp-mn-surprise-removal-request.md)
 
-### Supporting the device reset interface in filter drivers
+## Supporting the device reset interface in filter drivers
 
 Filter drivers may intercept IRP_MN_QUERY_INTERFACE IRPs that have the GUID_DEVICE_RESET_INTERFACE_STANDARD interface type. By doing so, they can continue to delegate to the GUID_DEVICE_RESET_INTERFACE_STANDARD interface but perform device-specific operations before or after the reset operation. Alternatively, they can override the GUID_DEVICE_RESET_INTERFACE_STANDARD interface returned by the bus driver with its own interface in order to provide its own reset operation.
 
-### Supporting the device reset interface in bus drivers
+## Supporting the device reset interface in bus drivers
 
 Bus drivers that participate in the device reset process (that is, bus drivers that are associated with the device that is requesting the reset and bus drivers that are associated with devices that are responding to the reset request) must meet one of the following requirements:
 
@@ -65,11 +65,11 @@ Bus drivers that participate in the device reset process (that is, bus drivers t
 
 For WDF-based bus drivers, the WDF framework registers the GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface on behalf of the drivers. Therefore, registering this interface is not necessary for those drivers. If the bus driver needs to do perform some operations before its child devices are re-enumerated, it must register for the EvtChildListDeviceReenumerated callback routine and perform the operations in that routine. Because this callback routine may be called in parallel for all PDO’s, the code in the routine may need to protect against race conditions.
 
-### ACPI firmware: Function-level reset
+## ACPI firmware: Function-level reset
 
 To support function-level device reset, there must be an _RST method defined inside the Device scope. If present, this method will override the bus driver's implementation of function-level device reset (if present) for that device. When executed, the _RST method must reset only that device, and must not affect other devices. In addition, the device must stay connected on the bus.
 
-### ACPI firmware: Platform-level reset
+## ACPI firmware: Platform-level reset
 
 To support platform-level device reset, there are two options:
 
