@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 
 # OID\_RECEIVE\_FILTER\_SET\_FILTER
 
-
 An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER to set a filter on a network adapter.
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
@@ -55,23 +54,15 @@ The following points apply to miniport drivers that support the SR-IOV interface
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface only supports the default receive queue of a VPort.
 
+    After an SR-IOV VPort is allocated through an OID set request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md), overlying drivers can set filters on the VPort with OID requests of OID\_RECEIVE\_FILTER\_SET\_FILTER.
 
-
-~~~
-After an SR-IOV VPort is allocated through an OID set request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md), overlying drivers can set filters on the VPort with OID requests of OID\_RECEIVE\_FILTER\_SET\_FILTER.
-
-**Note**  Only the overlying driver that allocated the VPort can set a filter on that VPort.
-~~~
-
-
+    **Note**  Only the overlying driver that allocated the VPort can set a filter on that VPort.
 
 -   Because the default VPort always exists, overlying drivers can always set a filter on the default VPort.
 
 -   When the VPort is created, no receive filters are set on it. In this case, the miniport driver must not indicate any receive packets on that VPort before the miniport driver receives an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER for the VPort. After this OID request is issued, the miniport driver can indicate packets on that VPort.
 
     **Note**  If the miniport driver indicates packets on a VPort while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
-
-
 
 ### Additional Guidelines for the VMQ Interface
 
@@ -81,8 +72,6 @@ The following points apply to miniport drivers that support the VMQ interface:
 
     **Note**  Only the protocol driver that allocated a receive queue can set a filter on that queue.
 
-
-
 -   Because the default queue always exists, overlying drivers can always set a filter on the default queue. If the network adapter supports a drop queue, overlying drivers can set a filter on the drop queue.
 
     Overlying drivers do not own the default or drop queues. Therefore, all protocol drivers that are bound to a network adapter use the default or drop queue.
@@ -90,8 +79,6 @@ The following points apply to miniport drivers that support the VMQ interface:
 -   When the receive queue is created, no receive filters are set on it. In this case, the miniport driver must not indicate any receive packets on that receive queue before the miniport driver receives an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER for the receive queue. After this OID request is issued, the miniport driver can indicate packets on that receive queue.
 
     **Note**  If the miniport driver indicates packets on a queue while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
-
-
 
 ### Return status codes
 
@@ -153,11 +140,3 @@ Requirements
 [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](oid-receive-filter-clear-filter.md)
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](oid-receive-filter-queue-allocation-complete.md)
-
-
-
-
-
-
-
-
