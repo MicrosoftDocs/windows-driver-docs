@@ -134,7 +134,7 @@ The preceding command generates SSDT.aml.
 4. Enable test signing on the test system. 
 
 ```console
-Bcdedit /set GUID_DEVICE_RESET_INTERFACE_STANDARD testsigning on
+bcdedit /set GUID_DEVICE_RESET_INTERFACE_STANDARD testsigning on
 ```
 
 5. Reboot the test system. 
