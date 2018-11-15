@@ -17,39 +17,32 @@ ms.localizationpriority: medium
 
 # USBCAMD2 Minidriver Operation
 
-
-
-
-
 A USBCAMD2 camera minidriver generally operates as follows:
 
--   The camera minidriver calls [**USBCAMD\_DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff568593) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [*AdapterReceivePacket*](https://msdn.microsoft.com/library/windows/hardware/ff554080) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
+- The camera minidriver calls [**USBCAMD\_DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff568593) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [*AdapterReceivePacket*](https://msdn.microsoft.com/library/windows/hardware/ff554080) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
 
--   The camera minidriver can then receive various stream request blocks (SRBs) in its *AdapterReceivePacket* callback function to handle, including:
-    -   [**SRB\_INITIALIZE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff568185)
-    -   [**SRB\_INITIALIZATION\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/ff568182)
-    -   [**SRB\_GET\_STREAM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568173)
-    -   [**SRB\_GET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568170)
-    -   [**SRB\_SET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568204)
-    -   [**SRB\_GET\_DATA\_INTERSECTION**](https://msdn.microsoft.com/library/windows/hardware/ff568168)
-    -   [**SRB\_OPEN\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568191)
--   The camera minidriver determines how it must process each SRB. The minidriver can call routines in the USBCAMD2 minidriver library to assist with processing SRBs. These routines typically begin with the *USBCAMD\_* prefix.
+- The camera minidriver can then receive various stream request blocks (SRBs) in its *AdapterReceivePacket* callback function to handle, including:
+  - [**SRB\_INITIALIZE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff568185)
+  - [**SRB\_INITIALIZATION\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/ff568182)
+  - [**SRB\_GET\_STREAM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568173)
+  - [**SRB\_GET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568170)
+  - [**SRB\_SET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568204)
+  - [**SRB\_GET\_DATA\_INTERSECTION**](https://msdn.microsoft.com/library/windows/hardware/ff568168)
+  - [**SRB\_OPEN\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568191)
+- The camera minidriver determines how it must process each SRB. The minidriver can call routines in the USBCAMD2 minidriver library to assist with processing SRBs. These routines typically begin with the *USBCAMD\_* prefix.
 
-    For example, to specify the camera minidriver's other callback functions with USBCAMD2, the camera minidriver specifies their entry points in a [**USBCAMD\_DEVICE\_DATA2**](https://msdn.microsoft.com/library/windows/hardware/ff568590) structure. The minidriver then calls [**USBCAMD\_InitializeNewInterface**](https://msdn.microsoft.com/library/windows/hardware/ff568599) to pass the initialized USBCAMD\_DEVICE\_DATA2 structure to USBCAMD2. USBCAMD2 then calls the minidriver's callback functions when necessary.
+For example, to specify the camera minidriver's other callback functions with USBCAMD2, the camera minidriver specifies their entry points in a [**USBCAMD\_DEVICE\_DATA2**](https://msdn.microsoft.com/library/windows/hardware/ff568590) structure. The minidriver then calls [**USBCAMD\_InitializeNewInterface**](https://msdn.microsoft.com/library/windows/hardware/ff568599) to pass the initialized USBCAMD\_DEVICE\_DATA2 structure to USBCAMD2. USBCAMD2 then calls the minidriver's callback functions when necessary.
 
-    **Note**   The [**USBCAMD\_DEVICE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568585) structure is supported in USBCAMD2 only for purposes of backward compatibility.
+> [!NOTE]
+> The [**USBCAMD\_DEVICE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568585) structure is supported in USBCAMD2 only for purposes of backward compatibility.
 
-
-
-~~~
 The minidriver must call [**USBCAMD\_AdapterReceivePacket**](https://msdn.microsoft.com/library/windows/hardware/ff568574) to send any SRBs it does not handle to USBCAMD2 to process.
-~~~
 
 [USBCAMD Library Callback Functions](https://msdn.microsoft.com/library/windows/hardware/ff568608) describe the callback functions that the minidriver implements and whether they are optional or required.
 
 The following list of procedures illustrates the general flow of processing for SRBs sent to the camera minidriver:
 
-**Minidriver's SRB\_INITIALIZE\_DEVICE handler**
+## Minidriver's SRB\_INITIALIZE\_DEVICE handler
 
 <table>
 <colgroup>
@@ -102,9 +95,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_GET\_STREAM\_INFO handler**
+## Minidriver's SRB\_GET\_STREAM\_INFO handler
 
 <table>
 <colgroup>
@@ -149,9 +140,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_INITIALIZATION\_COMPLETE handler**
+## Minidriver's SRB\_INITIALIZATION\_COMPLETE handler
 
 <table>
 <colgroup>
@@ -172,9 +161,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_GET\_DEVICE\_PROPERTY handler**
+## Minidriver's SRB\_GET\_DEVICE\_PROPERTY handler
 
 <table>
 <colgroup>
@@ -195,9 +182,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_SET\_DEVICE\_PROPERTY handler**
+## Minidriver's SRB\_SET\_DEVICE\_PROPERTY handler
 
 <table>
 <colgroup>
@@ -218,9 +203,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_GET\_DATA\_INTERSECTION handler**
+## Minidriver's SRB\_GET\_DATA\_INTERSECTION handler
 
 <table>
 <colgroup>
@@ -245,9 +228,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_OPEN\_STREAM handler**
+## Minidriver's SRB\_OPEN\_STREAM handler
 
 <table>
 <colgroup>
@@ -308,9 +289,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_CLOSE\_STREAM handler**
+## Minidriver's SRB\_CLOSE\_STREAM handler
 
 <table>
 <colgroup>
@@ -355,9 +334,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_UNINITIALIZE\_DEVICE handler**
+## Minidriver's SRB\_UNINITIALIZE\_DEVICE handler
 
 <table>
 <colgroup>
@@ -390,9 +367,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_SURPRISE\_REMOVAL handler**
+## Minidriver's SRB\_SURPRISE\_REMOVAL handler
 
 <table>
 <colgroup>
@@ -425,9 +400,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_SET\_DATA\_FORMAT handler**
+## Minidriver's SRB\_SET\_DATA\_FORMAT handler
 
 <table>
 <colgroup>
@@ -456,9 +429,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_CHANGE\_POWER\_STATE from Power ON to Power OFF handler**
+## Minidriver's SRB\_CHANGE\_POWER\_STATE from Power ON to Power OFF handler
 
 <table>
 <colgroup>
@@ -491,9 +462,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
-
-
-**Minidriver's SRB\_CHANGE\_POWER\_STATE from Power OFF to Power ON handler**
+## Minidriver's SRB\_CHANGE\_POWER\_STATE from Power OFF to Power ON handler
 
 <table>
 <colgroup>
@@ -529,13 +498,3 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
