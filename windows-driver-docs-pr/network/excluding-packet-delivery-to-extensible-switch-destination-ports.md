@@ -14,10 +14,7 @@ This topic describes how Hyper-V extensible switch extensions can exclude the de
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
 
-
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about the extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
-
-
 
 Filtering and forwarding extensions can exclude the delivery of packets obtained on the extensible switch ingress or egress data paths. Excluding packet delivery can be done in the following ways:
 
@@ -31,19 +28,11 @@ Filtering and forwarding extensions can exclude the delivery of packets obtained
 
     **Note**  Packets obtained on the ingress data path do not contain destination ports. This data is only available after the extensible switch forwards the packet up the egress data path.
 
-
-
-~~~
 After the extension has modified the destination port's **IsExcluded** value, it must forward the packet in the egress data path to overlying extensions. However, if the **IsExcluded** data for all the packet's destination ports is set to one, the extension should drop the packet by completing the packet receive indication instead of forwarding it.
 
 **Note**  After an extension has set the destination port's **IsExcluded** value to one, overlying extensions on the egress data path cannot change this value to zero.
-~~~
-
-
 
 **Note**  Capturing extensions cannot exclude the delivery of packets to extensible switch ports.
-
-
 
 Filtering and forwarding extensions must follow these guidelines for excluding packet delivery to extensible switch ports:
 
@@ -65,14 +54,9 @@ Filtering and forwarding extensions must follow these guidelines for excluding p
 
         **Note**  If the **NumDestinations** member of the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh598210) structure contains a value of zero, the packet has no data for destination ports.
 
-
-
-~~~
 2.  The extension excludes the packet delivery to an extensible switch port by setting the **IsExcluded** member of the destination port's [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://msdn.microsoft.com/library/windows/hardware/hh598224) structure to a value of one.
 
     **Note**  If the extension excludes delivery of the packet to all of its destination ports, the extension must drop the packet by completing the packet's receive indication.
-
-
 
 3.  If the extension excludes delivery to one or all destination ports in a packet, it must do the following:
 
@@ -83,8 +67,5 @@ Filtering and forwarding extensions must follow these guidelines for excluding p
     Similarly, if the extension completes the packet send request or indication to exclude delivery to all ports for the packet, it must also call [*ReportFilteredNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/hh598297).
 
     **Note**  The extension can create a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures for packets that the extension is excluding. When the extension calls [*ReportFilteredNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/hh598297), it sets the *NetBufferLists* parameter to a pointer to the linked list.
-~~~
-
-
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
