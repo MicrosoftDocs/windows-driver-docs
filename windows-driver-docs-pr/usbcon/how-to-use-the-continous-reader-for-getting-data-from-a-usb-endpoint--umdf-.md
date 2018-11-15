@@ -34,11 +34,11 @@ Before the client driver can use the continuous reader, make sure that these req
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
 
-    **KMDF client driver:  **
+    **KMDF client driver:**
 
     A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
-    **UMDF client driver:  **
+    **UMDF client driver:**
 
     A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560362) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
@@ -46,11 +46,11 @@ Before the client driver can use the continuous reader, make sure that these req
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface. For information about how to change the alternate setting, see [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).
 
-    **KMDF client driver:  **
+    **KMDF client driver:**
 
     A KMDF client driver must call the [**WdfUsbTargetDeviceSelectConfig**](https://msdn.microsoft.com/library/windows/hardware/ff550101) method.
 
-    **UMDF client driver:  **
+    **UMDF client driver:**
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
