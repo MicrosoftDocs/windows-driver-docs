@@ -62,7 +62,7 @@ Cause
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
-The exception information returned in paramter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+The exception information returned in parameter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
 
 One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
 
