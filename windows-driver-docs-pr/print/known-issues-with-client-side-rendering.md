@@ -1,6 +1,5 @@
 ---
 title: Known Issues with Client-Side Rendering
-author: windows-driver-content
 description: Known Issues with Client-Side Rendering
 ms.assetid: ad17639d-6671-466b-8f72-e635e79fd1cc
 keywords:

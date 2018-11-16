@@ -1,6 +1,5 @@
 ---
 title: Sensor device driver design guide
-author: windows-driver-content
 description: Sensor device driver design guide
 ms.assetid: 74e8ae08-3e61-41be-aed0-e733dc6072cf
 ms.author: windowsdriverdev

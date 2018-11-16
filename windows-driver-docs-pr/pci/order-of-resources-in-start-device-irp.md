@@ -1,6 +1,5 @@
 ---
 title: Order of Resources in Start-Device IRP
-author: windows-driver-content
 description: Order of Resources in Start-Device IRP
 ms.assetid: df55105e-3da3-40cc-9f57-05632cb2d043
 keywords:

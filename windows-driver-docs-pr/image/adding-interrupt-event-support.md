@@ -1,6 +1,5 @@
 ---
 title: Adding Interrupt Event Support
-author: windows-driver-content
 description: Adding Interrupt Event Support
 ms.assetid: 74fbaa7c-f058-4b17-b278-3dea0faf4431
 ms.date: 04/20/2017

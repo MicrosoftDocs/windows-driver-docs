@@ -1,6 +1,5 @@
 ---
 title: Supporting Standard WMI Blocks
-author: windows-driver-content
 description: Supporting Standard WMI Blocks
 ms.assetid: ddec3afb-8274-4eff-93ef-b0a07fd7c13a
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "standard blocks WDK WMI"]

@@ -1,6 +1,5 @@
 ---
 title: INF SharedDriver Entry
-author: windows-driver-content
 description: INF SharedDriver Entry
 ms.assetid: 36d094b4-481d-41bb-b034-345b0743456e
 keywords:

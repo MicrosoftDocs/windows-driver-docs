@@ -1,6 +1,5 @@
 ---
 title: Operating a Parallel Device Attached to a Parallel Port
-author: windows-driver-content
 description: Operating a Parallel Device Attached to a Parallel Port
 ms.assetid: 5ad36162-efbe-4be8-954c-964ef12c539a
 keywords:

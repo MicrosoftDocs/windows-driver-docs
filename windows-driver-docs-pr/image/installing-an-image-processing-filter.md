@@ -1,6 +1,5 @@
 ---
 title: Installing an Image Processing Filter
-author: windows-driver-content
 description: Installing an Image Processing Filter
 ms.assetid: bce6405f-0377-4e50-b898-28c6cdb962be
 ms.date: 04/20/2017

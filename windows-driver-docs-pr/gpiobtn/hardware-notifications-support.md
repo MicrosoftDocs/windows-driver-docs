@@ -1,6 +1,5 @@
 ---
 title: Hardware notifications support
-author: windows-driver-content
 description: Windows 10, version 1709 provides an infrastructure for the hardware-agnostic support of notification components such as LEDs and vibration mechanisms.
 ms.assetid: 48df55c4-aa5e-4157-8b90-65ad127d876b
 ms.localizationpriority: medium

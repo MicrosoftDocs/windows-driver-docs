@@ -2,7 +2,6 @@
 title: Device Metadata
 description: Device Metadata
 ms.assetid: b3546d53-d51f-46d2-9dfb-ec63da4809e2
-author: EliotSeattle
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Key Exchange with Data Flow
-author: windows-driver-content
 description: Synchronizing Key Exchange with Data Flow
 ms.assetid: 54abc258-d26a-4d42-a5aa-712cdae76b6d
 keywords:

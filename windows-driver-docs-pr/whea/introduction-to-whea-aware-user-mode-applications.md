@@ -1,6 +1,5 @@
 ---
 title: Introduction to WHEA-Aware User-Mode Applications
-author: windows-driver-content
 description: Introduction to WHEA-Aware User-Mode Applications
 ms.assetid: cf2de8fa-191b-4dae-aaac-5d6d74f94ca7
 keywords:

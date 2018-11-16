@@ -1,6 +1,5 @@
 ---
 title: The Filter Driver's Control Device Object
-author: windows-driver-content
 description: The Filter Driver's Control Device Object
 ms.assetid: ac49b5d0-110d-4e47-814b-05f59791de41
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Filtering conditions
-author: windows-driver-content
 description: This section describes filtering conditions.
 ms.assetid: 7ce9455e-b938-4f44-b1f3-7f0a155f8807
 keywords:

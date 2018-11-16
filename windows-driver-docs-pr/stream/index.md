@@ -1,6 +1,5 @@
 ---
 title: Streaming media device driver design guide
-author: windows-driver-content
 description: Streaming media device driver design guide
 ms.assetid: 321edd72-4f6a-4eaf-85bf-3b36680a522c
 keywords:

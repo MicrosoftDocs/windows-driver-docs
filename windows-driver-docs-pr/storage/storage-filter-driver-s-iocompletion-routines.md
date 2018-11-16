@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's IoCompletion Routines
-author: windows-driver-content
 description: Storage Filter Driver's IoCompletion Routines
 ms.assetid: 1a27598b-7113-4f95-8777-bbb10003c268
 keywords:

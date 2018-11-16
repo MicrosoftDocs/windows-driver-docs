@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_STATION_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilities of a station.
 ms.assetid: 567445F1-EEDC-4302-B709-ED76D044A971
 ms.date: 07/18/2017

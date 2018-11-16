@@ -1,6 +1,5 @@
 ---
 title: Initializing HID Reports
-author: windows-driver-content
 description: Initializing HID Reports
 ms.assetid: 14229315-3928-4421-a8d8-c3f7837bf1c3
 keywords:

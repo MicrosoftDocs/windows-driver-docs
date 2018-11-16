@@ -1,6 +1,5 @@
 ---
 title: Required Root Item Properties for Scanner Storage
-author: windows-driver-content
 description: Required Root Item Properties for Scanner Storage
 ms.assetid: 204a7c79-e5cb-453a-a9b8-e2ebb0f6c041
 ms.date: 04/20/2017

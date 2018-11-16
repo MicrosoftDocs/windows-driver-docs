@@ -1,6 +1,5 @@
 ---
 title: The Changer Class Driver
-author: windows-driver-content
 description: The Changer Class Driver
 ms.assetid: c1c2330c-9cfc-432f-945c-630dc16aa54d
 keywords:

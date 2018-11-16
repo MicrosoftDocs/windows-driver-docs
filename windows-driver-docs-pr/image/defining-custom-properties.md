@@ -1,6 +1,5 @@
 ---
 title: Defining Custom Properties
-author: windows-driver-content
 description: Defining Custom Properties
 ms.assetid: c3b69482-12ad-4b9f-8c0c-5ce315032d51
 ms.date: 04/20/2017

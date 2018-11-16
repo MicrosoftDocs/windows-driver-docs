@@ -1,6 +1,5 @@
 ---
 title: Joystick Support
-author: windows-driver-content
 description: Joystick Support
 ms.assetid: 09fcbdf0-4e70-4144-9afc-4b085a2b4ba7
 keywords:

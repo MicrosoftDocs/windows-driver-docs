@@ -1,6 +1,5 @@
 ---
 title: Notification Callback
-author: windows-driver-content
 description: Notification Callback
 ms.assetid: cf884097-45a4-4ef3-8ebb-64c006838235
 keywords:

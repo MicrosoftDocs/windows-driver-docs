@@ -1,6 +1,5 @@
 ---
 title: Keyboard and mouse HID client drivers
-author: windows-driver-content
 description: Keyboard and mouse HID client drivers. 
 ms.assetid: DAD50261-7619-4554-B864-9158A0FA1ACE
 keywords:

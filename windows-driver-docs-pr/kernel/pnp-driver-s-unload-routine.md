@@ -1,6 +1,5 @@
 ---
 title: PnP Driver's Unload Routine
-author: windows-driver-content
 description: PnP Driver's Unload Routine
 ms.assetid: 71b30a84-d3c7-4674-94a6-b99f83567183
 keywords: ["Unload routines WDK kernel , PnP drivers", "PnP Unload routine WDK kernel", "Plug and Play Unload routine WDK kernel"]

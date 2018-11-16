@@ -1,6 +1,5 @@
 ---
 title: Name Cache Management
-author: windows-driver-content
 description: Name Cache Management
 ms.assetid: 3e1b1419-320e-44e0-a6c2-823517cf07c7
 keywords:

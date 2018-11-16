@@ -1,6 +1,5 @@
 ---
 title: WHEA Policy Settings
-author: windows-driver-content
 description: WHEA Policy Settings
 ms.assetid: 65ef70b7-a517-4428-9e6d-09c6da84e798
 keywords:

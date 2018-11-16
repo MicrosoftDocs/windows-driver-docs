@@ -1,6 +1,5 @@
 ---
 title: Print Driver Manifests
-author: windows-driver-content
 description: Print Driver Manifests
 ms.assetid: fca0c211-1daa-4295-a03e-c0038b66a898
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Sensor Constants
-author: windows-driver-content
 description: Sensor Constants
 ms.assetid: F3ED56C2-56AF-44FA-9ED8-7A16F1711AC7
 ms.date: 07/20/2018

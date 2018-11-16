@@ -1,6 +1,5 @@
 ---
 title: Creating IEEE 1394 Virtual Devices
-author: windows-driver-content
 description: Creating IEEE 1394 Virtual Devices
 ms.assetid: 5b6a4d7a-e116-4a68-a1f8-fd561fbc0495
 keywords:

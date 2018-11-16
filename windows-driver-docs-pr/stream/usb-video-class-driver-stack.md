@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Driver Stack
-author: windows-driver-content
 description: USB Video Class Driver Stack
 ms.assetid: 8dd9ce8d-eaa0-43d3-a27a-5b328220e10e
 keywords:

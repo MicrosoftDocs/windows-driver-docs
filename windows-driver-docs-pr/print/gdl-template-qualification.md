@@ -1,6 +1,5 @@
 ---
 title: GDL Template Qualification
-author: windows-driver-content
 description: GDL Template Qualification
 ms.assetid: 6a0fef55-4097-4d5b-b192-ce8a03b9c41f
 keywords:

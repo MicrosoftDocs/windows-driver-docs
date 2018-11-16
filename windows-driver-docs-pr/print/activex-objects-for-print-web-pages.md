@@ -1,6 +1,5 @@
 ---
 title: ActiveX Objects for Print Web Pages
-author: windows-driver-content
 description: ActiveX Objects for Print Web Pages
 ms.assetid: 85c37895-542f-4399-bf87-517eaab99a09
 keywords:

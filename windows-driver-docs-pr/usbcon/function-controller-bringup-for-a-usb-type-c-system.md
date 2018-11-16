@@ -1,7 +1,6 @@
 ---
 Description: The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
 title: Bring up the function controller on a USB Type-C Windows system
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

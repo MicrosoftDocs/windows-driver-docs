@@ -1,5 +1,4 @@
 ---
-author: EliotSeattle
 ms.assetid: 48D891CD-706C-4759-AB33-B0663774A829
 description: Use this method in the Microsoft Store analytics API to download the CAB file for a Windows 7 or Windows 8.x driver error. This method is intended only for IHVs.
 title: Download the CAB file for a Windows 7 or Windows 8.x driver error

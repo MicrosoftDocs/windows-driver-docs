@@ -1,7 +1,6 @@
 ---
 Description: WinUSB Power Management
 title: WinUSB Power Management
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

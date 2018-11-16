@@ -1,6 +1,5 @@
 ---
 title: NDIS_MDL_LINKAGE macro
-author: windows-driver-content
 description: The NDIS_MDL_LINKAGE macro retrieves a pointer to the next MDL that is associated with the specified MDL.
 ms.assetid: 3d5a91cb-cb26-49fb-b510-75fc95f7f46b
 ms.date: 07/18/2017

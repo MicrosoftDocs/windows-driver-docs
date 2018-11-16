@@ -1,6 +1,5 @@
 ---
 title: Win32 DeviceCapabilities API Behavior Changes
-author: windows-driver-content
 description: Win32 DeviceCapabilities API Behavior Changes
 ms.assetid: 44745e33-2bd8-4200-be29-b3ddb0e30de4
 ms.date: 04/20/2017

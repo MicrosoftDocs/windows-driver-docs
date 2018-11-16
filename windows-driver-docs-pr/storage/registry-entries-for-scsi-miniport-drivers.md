@@ -1,6 +1,5 @@
 ---
 title: Registry Entries for SCSI Miniport Drivers
-author: windows-driver-content
 description: Registry Entries for SCSI Miniport Drivers
 ms.assetid: bff5c004-7115-4436-b233-9d1d89643b23
 keywords:

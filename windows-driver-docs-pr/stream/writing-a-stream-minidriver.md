@@ -1,6 +1,5 @@
 ---
 title: Writing a Stream Minidriver
-author: windows-driver-content
 description: Writing a Stream Minidriver
 ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
 keywords:

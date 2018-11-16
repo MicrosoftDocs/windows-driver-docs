@@ -1,6 +1,5 @@
 ---
 title: Introduction to Printer Graphics DLLs
-author: windows-driver-content
 description: Introduction to Printer Graphics DLLs
 ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords:

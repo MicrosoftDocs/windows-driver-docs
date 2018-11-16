@@ -3,7 +3,6 @@ title: Create a new hardware submission
 description: Create a new hardware submission
 ms.assetid: 3F433F0A-422C-46E5-B59E-8DB4AC537F01
 ms.date: 04/20/2017
-author: EliotSeattle
 ms.topic: article
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Using Unidrv Vector Graphics Capabilities
-author: windows-driver-content
 description: Using Unidrv Vector Graphics Capabilities
 ms.assetid: 1b956d7f-4dd5-4486-897a-d4885fee5887
 keywords:

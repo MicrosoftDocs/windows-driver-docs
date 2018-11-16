@@ -1,6 +1,5 @@
 ---
 title: Work Queue Dispatching Mechanisms
-author: windows-driver-content
 description: Work Queue Dispatching Mechanisms
 ms.assetid: d4ce929f-2d84-4194-9afa-e00629594c36
 keywords:

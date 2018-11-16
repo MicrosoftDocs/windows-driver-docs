@@ -1,6 +1,5 @@
 ---
 title: Accessing a Device on a SerCx2-Managed Serial Port
-author: windows-driver-content
 description: SerCx2 and a serial controller driver jointly manage a serial port to which a peripheral device is permanently connected.
 ms.assetid: EF7F42D3-21A5-42F8-86AB-897281DF4F18
 ms.date: 04/20/2017

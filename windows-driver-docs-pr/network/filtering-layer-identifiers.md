@@ -1,6 +1,5 @@
 ---
 title: Filtering layer identifiers
-author: windows-driver-content
 description: This section describes filtering layer identifiers.
 ms.assetid: 29e6118f-3844-40b8-9d1d-95eb1f64b8b3
 keywords:

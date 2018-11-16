@@ -1,7 +1,6 @@
 ---
 Description: WMCDC Device Management Model
 title: WMCDC Device Management Model
-author: windows-driver-content
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,6 +1,5 @@
 ---
 title: KS Clocks
-author: windows-driver-content
 description: KS Clocks
 ms.assetid: e3ffc7ca-f3cd-4989-af40-78b6a2438f95
 keywords:

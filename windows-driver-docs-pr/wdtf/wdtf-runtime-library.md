@@ -1,7 +1,6 @@
 ---
 title: WDTF Runtime Library
 description: Description of the WDTF Runtime Library, the tools it contains, and how to install.
-author: windows-driver-content
 ms.author: eliotgra
 keywords:
 - WDTF

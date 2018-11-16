@@ -1,6 +1,5 @@
 ---
 title: action element
-author: windows-driver-content
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
 ms.assetid: dae207ad-072e-4de6-b6a2-f1188ce91065
 keywords: ["action element Print Devices"]

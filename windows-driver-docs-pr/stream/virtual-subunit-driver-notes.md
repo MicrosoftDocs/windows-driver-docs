@@ -1,6 +1,5 @@
 ---
 title: Virtual Subunit Driver Notes
-author: windows-driver-content
 description: Virtual Subunit Driver Notes
 ms.assetid: e484f815-73a8-46f1-956e-ee16b1856bd0
 keywords:

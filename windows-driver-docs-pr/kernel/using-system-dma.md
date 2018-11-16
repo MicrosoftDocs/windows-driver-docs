@@ -1,6 +1,5 @@
 ---
 title: Using System DMA
-author: windows-driver-content
 description: Using System DMA
 ms.assetid: 8d478365-a6c8-4488-9f75-53a822d1daa2
 keywords: ["AdapterControl routines, system DMA", "system DMA WDK kernel", "adapter objects WDK kernel , system DMA", "DMA transfers WDK kernel , system DMA", "slave devices WDK DMA", "system DMA WDK kernel , about system DMA"]

@@ -1,6 +1,5 @@
 ---
 title: Encoder Implementation and Support
-author: windows-driver-content
 description: Encoder Implementation and Support
 ms.assetid: 6ba97ff8-815b-490f-920b-6ede4f730e98
 keywords:

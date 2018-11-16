@@ -1,6 +1,5 @@
 ---
 title: IRPs Are Different From Fast I/O
-author: windows-driver-content
 description: IRPs Are Different From Fast I/O
 ms.assetid: 22b08da2-043e-4724-b8f1-90b337fa222c
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: INF PS2_Inst.NoInterruptInit.Bioses Section
-author: windows-driver-content
 description: INF PS2_Inst.NoInterruptInit.Bioses Section
 ms.assetid: 2bf1dc0f-00b6-4f4a-99f0-e9843fe6e66b
 keywords:

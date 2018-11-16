@@ -1,6 +1,5 @@
 ---
 title: Installing a Print Monitor
-author: windows-driver-content
 description: Installing a Print Monitor
 ms.assetid: 2ab993fd-647b-40aa-981c-1bc270ec79a4
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Design and Performance
-author: windows-driver-content
 description: Network Redirector Design and Performance
 ms.assetid: 60ee4548-f81c-4d10-91ef-0e31e2837268
 keywords:

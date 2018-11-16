@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_VIRTUALIZATION_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_VIRTUALIZATION_CAPABILITIES is a TLV that contains virtualization capabilities.
 ms.assetid: D72E9984-7193-406C-8BA3-006E54400B30
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: Returning Status from Dispatch Routines
-author: windows-driver-content
 description: Returning Status from Dispatch Routines
 ms.assetid: 76bd651a-344f-4e22-a435-b62fdf2d7ddc
 keywords:

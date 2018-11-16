@@ -1,6 +1,5 @@
 ---
 title: XML Snapshot Namespaces
-author: windows-driver-content
 description: XML Snapshot Namespaces
 ms.assetid: 723f1cfd-633c-4f87-b85f-5ccee45a8c4e
 keywords:

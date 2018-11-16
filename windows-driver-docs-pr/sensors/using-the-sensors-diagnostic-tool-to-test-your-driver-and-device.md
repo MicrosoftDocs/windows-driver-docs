@@ -1,6 +1,5 @@
 ---
 title: Use the Sensors Diagnostic Tool to test your driver and device
-author: windows-driver-content
 description: Use the Sensors Diagnostic Tool to test your driver and device
 ms.assetid: 68E0BB6C-7777-4EC5-B084-DA623074BBB2
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: External Transport Properties
-author: windows-driver-content
 description: External Transport Properties
 ms.assetid: e57e6c13-dfa3-4bec-9136-0e2bb2ffdd56
 keywords:

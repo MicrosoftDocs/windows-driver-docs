@@ -1,6 +1,5 @@
 ---
 title: CPSUI-Supplied Functions
-author: windows-driver-content
 description: CPSUI-Supplied Functions
 ms.assetid: 49da252a-fb51-43f3-b2e8-27253470b4b5
 keywords:

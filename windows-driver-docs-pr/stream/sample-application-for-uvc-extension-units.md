@@ -1,6 +1,5 @@
 ---
 title: Sample Application for UVC Extension Units
-author: windows-driver-content
 description: Sample Application for UVC Extension Units
 ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords:

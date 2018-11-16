@@ -1,6 +1,5 @@
 ---
 title: Finding and Opening a HID Collection
-author: windows-driver-content
 description: Finding and Opening a HID Collection
 ms.assetid: b46fdb06-e6ae-4376-994f-69bf6539f2ce
 keywords:

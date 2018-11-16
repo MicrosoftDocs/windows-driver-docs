@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode HAL Library
-author: windows-driver-content
 description: Windows Kernel-Mode HAL Library
 ms.assetid: 5cfdbf1b-b856-4a0c-9f56-3879482819aa
 ms.localizationpriority: medium

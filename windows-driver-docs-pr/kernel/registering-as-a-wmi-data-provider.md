@@ -1,6 +1,5 @@
 ---
 title: Registering as a WMI Data Provider
-author: windows-driver-content
 description: Registering as a WMI Data Provider
 ms.assetid: a08fed24-20b6-46aa-9a52-7a22f0e89ce4
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI"]

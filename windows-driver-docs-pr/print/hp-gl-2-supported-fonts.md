@@ -1,6 +1,5 @@
 ---
 title: HP-GL/2 Supported Fonts
-author: windows-driver-content
 description: HP-GL/2 Supported Fonts
 ms.assetid: e7ddc9d0-3007-4c63-9176-3507909282f7
 keywords:

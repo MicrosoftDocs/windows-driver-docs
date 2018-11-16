@@ -1,6 +1,5 @@
 ---
 title: WIA Camera Tree
-author: windows-driver-content
 description: WIA Camera Tree
 ms.assetid: 8c932c91-b389-4b4c-b686-75ca6bf3de6a
 ms.date: 04/20/2017

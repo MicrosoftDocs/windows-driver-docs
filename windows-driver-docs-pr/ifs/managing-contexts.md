@@ -1,6 +1,5 @@
 ---
 title: Managing Contexts
-author: windows-driver-content
 description: Managing Contexts
 ms.assetid: 1ad33c6c-a5dd-4b65-bfcc-a40453d3a6b5
 keywords:

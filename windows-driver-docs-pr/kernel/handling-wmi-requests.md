@@ -1,6 +1,5 @@
 ---
 title: Handling WMI Requests
-author: windows-driver-content
 description: Handling WMI Requests
 ms.assetid: d95b736c-045d-4888-8bab-b0a6201f8830
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI"]

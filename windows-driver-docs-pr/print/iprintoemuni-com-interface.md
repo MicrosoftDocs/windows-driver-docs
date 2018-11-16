@@ -1,6 +1,5 @@
 ---
 title: IPrintOemUni COM Interface
-author: windows-driver-content
 description: IPrintOemUni COM Interface
 ms.assetid: b120def0-f270-49c6-b12f-10c220801f51
 keywords:

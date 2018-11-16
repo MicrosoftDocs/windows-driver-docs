@@ -1,6 +1,5 @@
 ---
 title: Managing Device Queues
-author: windows-driver-content
 description: Managing Device Queues
 ms.assetid: 8b7d39f8-0449-4e9b-a54c-fe60ee60842c
 keywords: ["device queues WDK IRPs , managing", "supplemental IRP queues WDK kernel", "StartIo routines, supplemental device queues"]

@@ -1,6 +1,5 @@
 ---
 title: Setting Up and Using Interlocked Queues
-author: windows-driver-content
 description: Setting Up and Using Interlocked Queues
 ms.assetid: af44a4c0-5aa7-40aa-b511-df95c9bfe9bb
 keywords: ["interlocked IRP queues WDK kernel", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]

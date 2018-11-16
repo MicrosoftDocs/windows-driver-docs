@@ -1,6 +1,5 @@
 ---
 title: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
-author: windows-driver-content
 description: Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
 ms.assetid: a0cb4f1a-3c27-4608-a208-ffcf4113b722
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Printer INF File Data Sections
-author: windows-driver-content
 description: Printer INF File Data Sections
 ms.assetid: d060716c-7c26-41a8-afbc-6fe83829d46a
 keywords:

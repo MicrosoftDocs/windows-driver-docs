@@ -1,6 +1,5 @@
 ---
 title: WHEA Hardware Error Event Processing Applications
-author: windows-driver-content
 description: WHEA Hardware Error Event Processing Applications
 ms.assetid: df1790ec-5a7f-41c2-94df-757621e67ade
 keywords:

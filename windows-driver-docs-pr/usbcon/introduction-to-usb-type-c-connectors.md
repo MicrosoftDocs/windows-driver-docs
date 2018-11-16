@@ -1,7 +1,6 @@
 ---
 Description: Possible causes and resolutions to troubleshooting messages in Windows 10 that users might get on USB Type-C systems running Windows.
 title: Troubleshoot messages for a USB Type-C Windows system
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

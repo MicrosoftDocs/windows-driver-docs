@@ -1,7 +1,6 @@
 ---
 Description: Supporting USB chargers for function controllers
 title: USB filter driver for supporting USB chargers
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

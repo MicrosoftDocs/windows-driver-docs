@@ -1,6 +1,5 @@
 ---
 title: Interrupt Service Routines
-author: windows-driver-content
 description: Interrupt Service Routines
 ms.assetid: d72a15be-772f-4cd4-a304-10981056d735
 keywords: ["interrupt service routines WDK kernel", "InterruptService", "ISRs WDK kernel"]

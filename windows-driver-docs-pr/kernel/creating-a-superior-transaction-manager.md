@@ -1,6 +1,5 @@
 ---
 title: Creating a Superior Transaction Manager
-author: windows-driver-content
 description: Creating a Superior Transaction Manager
 ms.assetid: 6f6bf61a-fe53-47b5-9559-f76334969af8
 keywords: ["transaction managers WDK KTM", "superior transaction managers WDK KTM", "enlistments WDK KTM , superior enlistments", "superior enlistments WDK KTM", "enlistments WDK KTM , subordinate enlistments", "subordinate enlistments WDK KTM"]

@@ -1,6 +1,5 @@
 ---
 title: System-Supplied Parallel Drivers
-author: windows-driver-content
 description: System-Supplied Parallel Drivers
 ms.assetid: c38d31f9-ad7c-40aa-9464-6cc6ac03c9a5
 keywords:

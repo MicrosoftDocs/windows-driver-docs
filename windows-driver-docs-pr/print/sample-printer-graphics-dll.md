@@ -1,6 +1,5 @@
 ---
 title: Sample Printer Graphics DLL
-author: windows-driver-content
 description: Sample Printer Graphics DLL
 ms.assetid: d113159a-766e-44c3-a1b1-2975e803d7e2
 keywords:

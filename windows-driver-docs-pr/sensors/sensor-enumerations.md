@@ -1,6 +1,5 @@
 ---
 title: Sensor Enumerations
-author: windows-driver-content
 description: Sensor Enumerations
 ms.assetid: 3AE84BEA-F5AA-44E2-989C-F651E77E1D5C
 ms.date: 07/20/2018

@@ -1,6 +1,5 @@
 ---
 title: Design Goals for Kernel-Mode Drivers
-author: windows-driver-content
 description: Design Goals for Kernel-Mode Drivers
 ms.assetid: 2799556e-0359-4388-acf3-74d90eb86a0f
 keywords: ["kernel-mode drivers WDK , design goals"]

@@ -1,7 +1,6 @@
 ---
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

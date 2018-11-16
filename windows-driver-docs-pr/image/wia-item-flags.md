@@ -1,6 +1,5 @@
 ---
 title: WIA Item Flags
-author: windows-driver-content
 description: WIA Item Flags
 ms.assetid: 2b96bc23-705b-47f0-811c-1cb4a8be8b34
 ms.date: 04/20/2017

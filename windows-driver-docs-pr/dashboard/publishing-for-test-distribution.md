@@ -2,7 +2,6 @@
 title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
 ms.assetid: 67E31BC1-6209-4264-B9F4-8CDFE8CE2E65
-author: EliotSeattle
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,6 +1,5 @@
 ---
 title: Autoconfig Flow in Windows Vista for PPD
-author: windows-driver-content
 description: Autoconfig Flow in Windows Vista for PPD
 ms.assetid: 60675cd3-fe98-4772-aa1b-a73529480d8a
 keywords:

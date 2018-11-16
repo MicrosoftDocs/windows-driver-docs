@@ -1,6 +1,5 @@
 ---
 title: Cellular COM API capabilities
-author: windows-driver-content
 description: This topic provides information on cellular COM API capabilities.
 ms.assetid: f6172f25-9003-4b98-a87d-26dc193d40e3
 keywords:

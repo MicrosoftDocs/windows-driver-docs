@@ -1,6 +1,5 @@
 ---
 title: Crossbar Properties
-author: windows-driver-content
 description: Crossbar Properties
 ms.assetid: 41e46d45-90f8-4b0c-ab27-1fec4202b711
 keywords:

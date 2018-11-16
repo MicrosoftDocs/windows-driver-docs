@@ -1,6 +1,5 @@
 ---
 title: Stream Class and Minidriver Interface
-author: windows-driver-content
 description: Stream Class and Minidriver Interface
 ms.assetid: d85510e6-1fd7-442a-bd88-f32b6c13ff75
 keywords:

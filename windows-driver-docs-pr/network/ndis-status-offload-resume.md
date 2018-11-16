@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_OFFLOAD_RESUME
-author: windows-driver-content
 description: This topic describes the NDIS_STATUS_OFFLOAD_RESUME status indication.
 ms.assetid: 5b7b9056-4f3a-4469-b73a-0bbf3608207a
 keywords:

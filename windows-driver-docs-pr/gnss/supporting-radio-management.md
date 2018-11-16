@@ -1,6 +1,5 @@
 ---
 title: Supporting radio management
-author: windows-driver-content
 description: When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off.
 ms.assetid: AA7AB429-30C5-4C10-AA85-41ED9EAEE69A
 keywords:

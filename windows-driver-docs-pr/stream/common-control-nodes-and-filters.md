@@ -1,6 +1,5 @@
 ---
 title: Common Control Nodes and Filters
-author: windows-driver-content
 description: Common Control Nodes and Filters
 ms.assetid: 33e0605b-0fd1-4506-a48b-427976e94dfc
 keywords:

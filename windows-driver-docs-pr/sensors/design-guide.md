@@ -1,6 +1,5 @@
 ---
 title: Design Guide
-author: windows-driver-content
 description: This section describes the architecture and the implementation of the universal sensor driver stack for Windows 10.
 ms.assetid: C5D3E6B8-0880-4F57-92E4-C0125CFE0B85
 ms.date: 07/20/2018

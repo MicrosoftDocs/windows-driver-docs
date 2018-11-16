@@ -1,6 +1,5 @@
 ---
 title: Power Management
-author: windows-driver-content
 description: Power Management
 ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Compatibility with Win 32 Applications
-author: windows-driver-content
 description: Print Ticket Compatibility with Win 32 Applications
 ms.assetid: 3e358f8a-e950-4da0-b8ef-4e350ea28091
 keywords:

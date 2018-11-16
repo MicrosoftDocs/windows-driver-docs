@@ -1,6 +1,5 @@
 ---
 title: IOleCvt Property Get Operations
-author: windows-driver-content
 description: IOleCvt Property Get Operations
 MS-HAID:
 - 'webfnc\_5e9a049e-056f-4b69-9f76-a29544bf5b88.xml'

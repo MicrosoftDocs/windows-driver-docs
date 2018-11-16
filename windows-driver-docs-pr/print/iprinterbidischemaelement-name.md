@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaElement Name method
-author: windows-driver-content
 description: The Name method returns the Bidi schema element name.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

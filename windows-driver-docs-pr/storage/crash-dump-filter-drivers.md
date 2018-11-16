@@ -1,6 +1,5 @@
 ---
 title: Crash Dump Filter Drivers
-author: windows-driver-content
 description: Crash Dump Filter Drivers
 ms.assetid: d91c00d7-ad17-4fa8-9e78-fee0698d9049
 ms.date: 04/20/2017

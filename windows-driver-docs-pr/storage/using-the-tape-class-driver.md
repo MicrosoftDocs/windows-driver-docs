@@ -1,6 +1,5 @@
 ---
 title: Using the Tape Class Driver
-author: windows-driver-content
 description: Using the Tape Class Driver
 ms.assetid: 72ed3fd9-d46f-400e-9816-f9f48b5a85c0
 keywords:

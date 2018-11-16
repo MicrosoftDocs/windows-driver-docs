@@ -1,6 +1,5 @@
 ---
 title: How the Application Creates the WIA Device
-author: windows-driver-content
 description: How the Application Creates the WIA Device
 ms.assetid: f4268c61-11e5-4796-b7cb-80c8112be4d8
 ms.date: 04/20/2017

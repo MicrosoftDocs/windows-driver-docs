@@ -1,6 +1,5 @@
 ---
 title: Using Default PCL XL Fonts
-author: windows-driver-content
 description: Using Default PCL XL Fonts
 ms.assetid: 8e6abae5-c86f-4cfc-a379-2dd3f8810474
 keywords:

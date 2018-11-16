@@ -1,6 +1,5 @@
 ---
 title: Identifying a Printer's Color Capability
-author: windows-driver-content
 description: Identifying a Printer's Color Capability
 ms.assetid: 24abf76d-c0f9-440e-b825-8b39ea9ab807
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WIA Film Scanner Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Film Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: 9f96ef72-2482-435f-b512-b48c12dc1628
 ms.date: 04/20/2017

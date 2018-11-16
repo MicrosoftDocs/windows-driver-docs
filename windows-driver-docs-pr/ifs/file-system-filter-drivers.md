@@ -1,6 +1,5 @@
 ---
 title: File System Filter Drivers
-author: windows-driver-content
 description: File System Filter Drivers
 ms.assetid: 9ea59c4a-d6be-4081-82e7-46539d0a1dbd
 keywords:

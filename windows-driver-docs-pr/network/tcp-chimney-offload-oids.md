@@ -1,6 +1,5 @@
 ---
 title: TCP chimney offload OIDs
-author: windows-driver-content
 description: This topic describes TCP chimney offload OIDs 
 ms.assetid: 50886e4e-b4c4-4734-931e-ed3e7f4c389e
 keywords:

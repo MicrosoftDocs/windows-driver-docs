@@ -1,6 +1,5 @@
 ---
 title: Introduction to Kernel Dispatcher Objects
-author: windows-driver-content
 description: Introduction to Kernel Dispatcher Objects
 ms.assetid: acf7b19a-55a3-4d9b-87ff-ca4df9ed3a45
 keywords: ["kernel dispatcher objects WDK , about kernel dispatcher objects", "dispatcher objects WDK kernel , about kernel dispatcher objects", "wait states WDK kernel", "Signaled state WDK kernel", "Not-Signaled state WDK kernel"]

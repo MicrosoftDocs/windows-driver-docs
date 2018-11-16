@@ -1,6 +1,5 @@
 ---
 title: Unsynchronized HwStorBuildIo Routine
-author: windows-driver-content
 description: Unsynchronized HwStorBuildIo Routine
 ms.assetid: 6b18e3ff-30dd-414b-99b5-4bb914660a67
 ms.date: 04/20/2017

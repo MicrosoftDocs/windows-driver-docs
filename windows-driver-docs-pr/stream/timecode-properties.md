@@ -1,6 +1,5 @@
 ---
 title: Timecode Properties
-author: windows-driver-content
 description: Timecode Properties
 ms.assetid: e8359778-8cc6-4f19-b869-f9597dae0502
 keywords:

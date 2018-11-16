@@ -1,6 +1,5 @@
 ---
 title: New Information for Windows Hardware Error Architecture
-author: windows-driver-content
 description: New Information for Windows Hardware Error Architecture
 ms.assetid: 258dca19-3988-4fab-bc9f-a93035cbbd0e
 keywords:

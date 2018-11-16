@@ -1,6 +1,5 @@
 ---
 title: EFI_DISPLAY_POWER_STATE
-author: windows-driver-content
 description: EFI_DISPLAY_POWER_STATE
 ms.assetid: b4b0980b-db87-44e8-842c-afce0c8df0a0
 ms.date: 04/20/2017

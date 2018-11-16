@@ -1,6 +1,5 @@
 ---
 title: Queuing I/O Requests While a Device Is Sleeping
-author: windows-driver-content
 description: Queuing I/O Requests While a Device Is Sleeping
 ms.assetid: 8cc0cea0-e5be-4705-ad4d-13a44d536469
 keywords: ["I/O WDK power management", "queuing I/O requests", "sleep power management WDK kernel", "asleep devices WDK power management", "queuing IRPs", "power IRPs WDK kernel , queuing I/O requests", "working state returns WDK power management"]

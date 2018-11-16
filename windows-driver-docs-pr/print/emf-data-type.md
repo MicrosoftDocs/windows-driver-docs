@@ -1,6 +1,5 @@
 ---
 title: EMF Data Type
-author: windows-driver-content
 description: EMF Data Type
 ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
 keywords:

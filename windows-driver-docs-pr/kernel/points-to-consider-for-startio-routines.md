@@ -1,6 +1,5 @@
 ---
 title: Points to Consider for StartIo Routines
-author: windows-driver-content
 description: Points to Consider for StartIo Routines
 ms.assetid: 389240d0-682f-48b3-940f-c107e9f60155
 keywords: ["StartIo routines, about StartIo routines"]

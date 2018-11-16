@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext PrintedPageCount method
-author: windows-driver-content
 description: Returns the number of pages that have been printed by the print device in the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

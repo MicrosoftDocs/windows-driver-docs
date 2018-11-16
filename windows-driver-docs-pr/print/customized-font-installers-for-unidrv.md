@@ -1,6 +1,5 @@
 ---
 title: Customized Font Installers for Unidrv
-author: windows-driver-content
 description: Customized Font Installers for Unidrv
 ms.assetid: d753368d-b1c8-454e-a02b-131dc778e723
 keywords:

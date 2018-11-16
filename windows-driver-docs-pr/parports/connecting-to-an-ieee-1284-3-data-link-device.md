@@ -1,6 +1,5 @@
 ---
 title: Connecting to an IEEE 1284.3 Data Link Device
-author: windows-driver-content
 description: Connecting to an IEEE 1284.3 Data Link Device
 ms.assetid: 306ff7db-472b-400a-8f14-3f7667160ded
 keywords:

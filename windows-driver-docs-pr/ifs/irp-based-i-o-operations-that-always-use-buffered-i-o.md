@@ -1,6 +1,5 @@
 ---
 title: IRP-Based I/O Operations That Always Use Buffered I/O
-author: windows-driver-content
 description: IRP-Based I/O Operations That Always Use Buffered I/O
 ms.assetid: ac9b62a2-a562-4f40-83af-e1c74d58ce2b
 keywords:

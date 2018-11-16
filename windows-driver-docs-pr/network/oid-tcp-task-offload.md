@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_OFFLOAD
-author: windows-driver-content
 description: This topic describes the OID_TCP_TASK_OFFLOAD object identifier (OID).
 ms.assetid: 4e16cdb7-b899-43b6-a94b-d691622be105
 keywords:

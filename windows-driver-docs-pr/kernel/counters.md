@@ -1,6 +1,5 @@
 ---
 title: Counters
-author: windows-driver-content
 description: Counters
 ms.assetid: dd4cb793-64c4-4f66-b9cb-e97dd94fbb21
 keywords: ["synchronization WDK kernel , counters", "counters WDK kernel", "count values WDK kernel"]

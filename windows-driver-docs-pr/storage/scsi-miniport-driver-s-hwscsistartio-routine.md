@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiStartIo Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiStartIo Routine
 ms.assetid: cb818e5f-b91f-44cb-972b-22f75459edeb
 keywords:

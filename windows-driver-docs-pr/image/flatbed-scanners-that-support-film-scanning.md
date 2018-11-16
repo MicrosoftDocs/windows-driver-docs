@@ -1,6 +1,5 @@
 ---
 title: Flatbed Scanners that Support Film Scanning
-author: windows-driver-content
 description: Flatbed Scanners that Support Film Scanning
 ms.assetid: ee77c2c6-41a2-43dd-90e4-baf902b46f69
 ms.date: 04/20/2017

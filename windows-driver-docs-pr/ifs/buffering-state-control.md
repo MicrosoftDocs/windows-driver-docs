@@ -1,6 +1,5 @@
 ---
 title: Buffering State Control
-author: windows-driver-content
 description: Buffering State Control
 ms.assetid: 16590332-9d0d-4d8b-8304-a3fa9269c0e2
 keywords:

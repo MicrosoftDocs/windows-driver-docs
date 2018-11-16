@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Record Persistence
-author: windows-driver-content
 description: Participating in Error Record Persistence
 ms.assetid: 06cbcccf-7cda-468d-aa6e-b8ecf95adf16
 keywords:

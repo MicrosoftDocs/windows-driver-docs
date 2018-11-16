@@ -1,6 +1,5 @@
 ---
 title: Document Devices in Devices and Printers
-author: windows-driver-content
 description: Document Devices in Devices and Printers
 ms.assetid: 6855d8fa-1354-4af9-8c00-486b6a643f85
 ms.date: 04/20/2017

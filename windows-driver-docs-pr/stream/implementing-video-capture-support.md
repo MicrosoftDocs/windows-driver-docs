@@ -1,6 +1,5 @@
 ---
 title: Implementing Video Capture Support
-author: windows-driver-content
 description: Implementing Video Capture Support
 ms.assetid: 798629ae-ab98-477f-beba-cc67bc7cb024
 keywords:

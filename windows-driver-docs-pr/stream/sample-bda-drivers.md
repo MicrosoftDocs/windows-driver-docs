@@ -1,6 +1,5 @@
 ---
 title: Sample BDA Drivers
-author: windows-driver-content
 description: Sample BDA Drivers
 ms.assetid: d5d9778c-1591-444f-89e8-95aa0eab61aa
 keywords:

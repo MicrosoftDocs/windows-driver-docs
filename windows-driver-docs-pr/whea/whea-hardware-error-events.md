@@ -1,6 +1,5 @@
 ---
 title: WHEA Hardware Error Events
-author: windows-driver-content
 description: WHEA Hardware Error Events
 ms.assetid: c9f88e3b-3915-4a77-8d60-f0f3da514abc
 keywords:

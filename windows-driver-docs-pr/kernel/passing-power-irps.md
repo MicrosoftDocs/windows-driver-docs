@@ -1,6 +1,5 @@
 ---
 title: Passing Power IRPs
-author: windows-driver-content
 description: Passing Power IRPs
 ms.assetid: 01473eb0-ae60-4a95-9ae7-97b2b982d3d1
 keywords: ["power IRPs WDK kernel , passing", "passing IRPs down device stack WDK", "DispatchPower routine", "dispatch routines WDK power management", "PoStartNextPowerIrp"]

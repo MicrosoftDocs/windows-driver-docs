@@ -1,6 +1,5 @@
 ---
 title: Boolean Values
-author: windows-driver-content
 description: Boolean Values
 ms.assetid: 74ada705-1965-464a-9610-5d71b068eb1e
 keywords:

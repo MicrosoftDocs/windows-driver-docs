@@ -1,6 +1,5 @@
 ---
 title: Introduction to Printing
-author: windows-driver-content
 description: Introduction to Printing
 ms.assetid: 8a2e0151-6d40-493d-9757-42350a9e6220
 keywords:

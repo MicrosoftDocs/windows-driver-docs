@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_CREATE_VPORT
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_CREATE_VPORT to create a nondefault virtual port (VPort) on a network adapter's NIC switch.
 ms.assetid: 31109117-2242-40E0-B215-0FAE014B2035
 ms.date: 08/08/2017

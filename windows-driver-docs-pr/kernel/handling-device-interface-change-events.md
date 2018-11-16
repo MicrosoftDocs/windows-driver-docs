@@ -1,6 +1,5 @@
 ---
 title: Handling Device Interface Change Events
-author: windows-driver-content
 description: Handling Device Interface Change Events
 ms.assetid: 8966ca72-41d6-42bb-84a9-8f907a514338
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]

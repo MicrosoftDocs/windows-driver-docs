@@ -1,6 +1,5 @@
 ---
 title: Semaphore Objects
-author: windows-driver-content
 description: Semaphore Objects
 ms.assetid: e6703c39-3b47-4d3b-86e7-bf2bf37af493
 keywords: ["kernel dispatcher objects WDK , semaphore objects", "dispatcher objects WDK kernel , semaphore objects", "semaphore objects WDK kernel", "KeInitializeSemaphore", "waiting on semaphore objects", "KeReleaseSemaphore", "counting semaphores WDK kernel", "binary semaphores WDK kernel", "wait states WDK kernel"]

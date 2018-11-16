@@ -1,6 +1,5 @@
 ---
 title: System Power Policy
-author: windows-driver-content
 description: System Power Policy
 ms.assetid: 98b1a777-3ac1-40c2-a902-cb5326c20621
 keywords: ["system-wide power policy WDK kernel", "power policy WDK kernel", "power supply WDK kernel", "system power policy WDK kernel", "AC power WDK kernel", "DC power WDK kernel"]

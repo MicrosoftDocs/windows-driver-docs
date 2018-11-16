@@ -1,6 +1,5 @@
 ---
 title: IoCompletion Routines for Device Power IRPs
-author: windows-driver-content
 description: IoCompletion Routines for Device Power IRPs
 ms.assetid: c275fcba-5fa9-427c-8d7e-2339563985e4
 keywords: ["IoCompletion routines", "power IRPs WDK kernel , device changes", "state transitions WDK power management", "device state transitions WDK power management", "working state returns WDK power management"]

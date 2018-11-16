@@ -1,6 +1,5 @@
 ---
 title: Driver Capabilities
-author: windows-driver-content
 description: Driver Capabilities
 ms.assetid: 639eff56-655d-4b6a-95f0-daa1daf62fae
 ms.date: 04/20/2017

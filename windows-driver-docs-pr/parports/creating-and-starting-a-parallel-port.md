@@ -1,6 +1,5 @@
 ---
 title: Creating and Starting a Parallel Port
-author: windows-driver-content
 description: Creating and Starting a Parallel Port
 ms.assetid: 75c82353-6490-47e9-9278-ec0981af9ae9
 keywords:

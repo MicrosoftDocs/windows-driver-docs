@@ -2,7 +2,6 @@
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
 ms.assetid: 19a0ced7-bb31-4899-abb4-2de803f179a6
-author: EliotSeattle
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

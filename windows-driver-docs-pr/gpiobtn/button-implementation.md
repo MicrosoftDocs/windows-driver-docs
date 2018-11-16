@@ -1,6 +1,5 @@
 ---
 title: Button implementation
-author: windows-driver-content
 description: We recommend that you use a physical GPIO resource for both the buttons and state indicators.
 ms.assetid: ECF0723A-1AF0-4608-88CC-6ACBD98DA03C
 ms.localizationpriority: medium

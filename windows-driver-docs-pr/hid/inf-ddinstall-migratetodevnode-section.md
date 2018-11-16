@@ -1,6 +1,5 @@
 ---
 title: INF DDInstall.MigrateToDevNode Section
-author: windows-driver-content
 description: INF DDInstall.MigrateToDevNode Section
 ms.assetid: a4edbc9e-a2d0-4012-aca9-0b357939a881
 keywords:

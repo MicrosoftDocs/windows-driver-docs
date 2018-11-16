@@ -1,6 +1,5 @@
 ---
 title: Accessing Driver Settings from UI Plug-Ins
-author: windows-driver-content
 description: Accessing Driver Settings from UI Plug-Ins
 ms.assetid: 898e1cfb-851b-403e-a88b-d38c505c1390
 keywords:

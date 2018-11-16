@@ -1,6 +1,5 @@
 ---
 title: Adding Bidirectional Communication
-author: windows-driver-content
 description: Adding Bidirectional Communication
 ms.assetid: 30767eda-e456-4928-afac-40edd2ab48fc
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Threaded DPCs
-author: windows-driver-content
 description: Threaded DPCs
 ms.assetid: 41f5ffcc-ffa9-45e4-8fe1-278b00ff04da
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]

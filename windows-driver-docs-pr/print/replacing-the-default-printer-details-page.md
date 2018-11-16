@@ -1,6 +1,5 @@
 ---
 title: Replacing the Default Printer Details Page
-author: windows-driver-content
 description: Replacing the Default Printer Details Page
 ms.assetid: 451f442b-a882-4540-82dd-e96dab5e7619
 keywords:

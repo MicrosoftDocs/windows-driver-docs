@@ -1,6 +1,5 @@
 ---
 title: Sensors ACPI entries
-author: windows-driver-content
 description: This topic describes the advanced configuration and power management interface (ACPI) entries that are specific to sensors in Windows 10.
 ms.assetid: DFDD5603-18F5-4F6C-8D09-D6905587F3CE
 ms.date: 04/20/2017

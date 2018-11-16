@@ -1,6 +1,5 @@
 ---
 title: Differences Between GDL and GPD Preprocessing
-author: windows-driver-content
 description: Differences Between GDL and GPD Preprocessing
 ms.assetid: 0ca79e85-1697-4f8d-b534-fe24748aaf5b
 keywords:

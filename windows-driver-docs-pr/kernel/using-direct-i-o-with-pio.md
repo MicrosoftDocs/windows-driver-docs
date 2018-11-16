@@ -1,6 +1,5 @@
 ---
 title: Using Direct I/O with PIO
-author: windows-driver-content
 description: Using Direct I/O with PIO
 ms.assetid: 84d36567-c8c6-4576-91a0-829c8819de4d
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "PIO transfer operations WDK kernel", "programmed I/O transfers WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Print Providers
-author: windows-driver-content
 description: Print Providers
 ms.assetid: dfc951fc-602f-49c2-a91b-0cd979587a9a
 keywords:

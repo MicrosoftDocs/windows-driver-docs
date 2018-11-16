@@ -1,6 +1,5 @@
 ---
 title: Flow Control Gates in AVStream
-author: windows-driver-content
 description: Flow Control Gates in AVStream
 ms.assetid: c5592f92-a432-44e3-afe0-60fcf917a443
 keywords:

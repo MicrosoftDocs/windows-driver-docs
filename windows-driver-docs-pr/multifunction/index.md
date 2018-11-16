@@ -1,6 +1,5 @@
 ---
 title: Multifunction device driver design guide
-author: windows-driver-content
 description: Multifunction device driver design guide
 ms.assetid: 110c0b9b-4870-4853-8fbf-a9faf0c5f2ca
 keywords:

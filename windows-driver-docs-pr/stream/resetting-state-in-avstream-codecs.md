@@ -1,6 +1,5 @@
 ---
 title: Resetting State in AVStream Codecs
-author: windows-driver-content
 description: Resetting State in AVStream Codecs
 ms.assetid: c50014fe-bff0-43f4-8552-24e8e97f636b
 keywords:

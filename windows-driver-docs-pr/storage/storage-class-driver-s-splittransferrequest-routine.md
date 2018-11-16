@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's SplitTransferRequest Routine
-author: windows-driver-content
 description: Storage Class Driver's SplitTransferRequest Routine
 ms.assetid: 4f449d3b-9a0a-4ff9-a7fb-bfa21b8a56c0
 keywords:

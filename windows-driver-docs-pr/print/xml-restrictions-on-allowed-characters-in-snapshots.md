@@ -1,6 +1,5 @@
 ---
 title: XML Restrictions on Allowed Characters in Snapshots
-author: windows-driver-content
 description: XML Restrictions on Allowed Characters in Snapshots
 ms.assetid: e90fb0f2-28f7-4264-bd8c-cd5994717bad
 keywords:

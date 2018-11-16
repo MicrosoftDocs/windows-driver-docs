@@ -1,7 +1,6 @@
 ---
 title: Windows Hardware Dev Center Dashboard ID Definitions
 description: Windows Hardware Dev Center Dashboard ID Definitions
-author: EliotSeattle
 ms.topic: article 
 ms.date: 04/20/2017
 ms.localizationpriority: medium

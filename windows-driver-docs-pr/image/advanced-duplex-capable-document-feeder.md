@@ -1,6 +1,5 @@
 ---
 title: Advanced Duplex-Capable Document Feeder
-author: windows-driver-content
 description: Advanced Duplex-Capable Document Feeder
 ms.assetid: 05b91864-7573-4d99-8a03-701d6cdd650b
 ms.date: 04/20/2017

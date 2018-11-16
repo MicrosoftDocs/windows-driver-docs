@@ -1,6 +1,5 @@
 ---
 title: Raster Data Compression Attributes
-author: windows-driver-content
 description: Raster Data Compression Attributes
 ms.assetid: 6cf21414-923a-420a-9b82-588919d233cf
 keywords:

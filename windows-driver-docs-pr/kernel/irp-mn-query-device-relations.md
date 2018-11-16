@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_DEVICE_RELATIONS
-author: windows-driver-content
 description: The PnP manager sends this request to determine certain relationships among devices.
 ms.date: 08/12/2017
 ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d

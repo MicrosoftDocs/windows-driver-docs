@@ -1,6 +1,5 @@
 ---
 title: Virtual Subunit Driver Stack
-author: windows-driver-content
 description: Virtual Subunit Driver Stack
 ms.assetid: 5aa1804f-b871-4577-8e8a-ce4ad5150ee0
 keywords:

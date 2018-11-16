@@ -1,6 +1,5 @@
 ---
 title: \ TrayName\
-author: windows-driver-content
 description: \ TrayName\
 ms.assetid: 7fa03413-5b95-443f-9b0f-75d82d0e41cf
 ms.date: 11/28/2017

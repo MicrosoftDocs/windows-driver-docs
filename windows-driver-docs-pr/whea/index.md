@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture (WHEA) design guide
-author: windows-driver-content
 description: Windows Hardware Error Architecture (WHEA) design guide
 ms.assetid: 7a42bacd-cafe-48e0-8568-402738fd6e7c
 keywords:

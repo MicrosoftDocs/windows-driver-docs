@@ -1,6 +1,5 @@
 ---
 title: Differences from Previous Versions of Microsoft Windows
-author: windows-driver-content
 description: Differences from Previous Versions of Microsoft Windows
 ms.assetid: 9c30c5c6-27a7-424e-b5f0-ab625eed4b8a
 keywords:

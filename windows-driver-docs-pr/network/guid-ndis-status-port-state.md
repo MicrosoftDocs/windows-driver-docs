@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_STATUS_PORT_STATE
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_STATUS_PORT_STATE GUID for the NDIS WMI interface.
 ms.assetid: c657eef6-eb80-4715-9d60-0d2dde403300
 keywords:

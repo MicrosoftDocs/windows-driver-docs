@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_TCP_OFFLOAD_ADMIN_SETTINGS
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_TCP_OFFLOAD_ADMIN_SETTINGS GUID for the NDIS WMI interface.
 ms.assetid: 8648c75a-dcb3-4723-a2d0-d406d3a073d6
 keywords:

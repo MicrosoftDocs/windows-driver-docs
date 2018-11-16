@@ -2,7 +2,6 @@
 title: Developer and preview mode
 description: Developer and preview mode
 ms.assetid: 4e1c7277-3df1-42e0-ab4d-fa0c3f267047
-author: EliotSeattle
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

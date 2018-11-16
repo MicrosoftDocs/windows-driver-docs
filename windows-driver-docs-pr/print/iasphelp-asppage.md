@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_AspPage method
-author: windows-driver-content
 description: The AspPage property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 MS-HAID:
 - 'webfnc\_6b636ee3-bc4f-4fbd-8ad9-87d6abcf3b35.xml'

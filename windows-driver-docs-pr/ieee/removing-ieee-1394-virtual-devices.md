@@ -1,6 +1,5 @@
 ---
 title: Removing IEEE 1394 Virtual Devices
-author: windows-driver-content
 description: Removing IEEE 1394 Virtual Devices
 ms.assetid: ea2d4b9e-7774-42dc-98dd-d95298012d72
 keywords:

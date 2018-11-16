@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Syntax
-author: windows-driver-content
 description: GDL Preprocessor Syntax
 ms.assetid: 14e9a595-3b6f-43b9-b670-7c9324619974
 keywords:

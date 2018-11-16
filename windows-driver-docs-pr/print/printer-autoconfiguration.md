@@ -1,6 +1,5 @@
 ---
 title: Printer Autoconfiguration
-author: windows-driver-content
 description: Printer Autoconfiguration
 ms.assetid: bbe5e58b-4ca2-4ec2-867e-27765d4f59ab
 keywords:

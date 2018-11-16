@@ -1,6 +1,5 @@
 ---
 title: System Header Files for Storage Drivers
-author: windows-driver-content
 description: System Header Files for Storage Drivers
 ms.assetid: 2ee83fa4-41df-403e-86b8-b269f5dfbfed
 keywords:

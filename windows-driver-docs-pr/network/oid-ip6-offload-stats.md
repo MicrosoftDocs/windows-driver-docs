@@ -1,6 +1,5 @@
 ---
 title: OID_IP6_OFFLOAD_STATS
-author: windows-driver-content
 description: This topic describes the OID_IP6_OFFLOAD_STATS object identifier (OID).
 ms.assetid: 94bfc254-bc83-481f-a2d7-46c1e31e23a7
 keywords:

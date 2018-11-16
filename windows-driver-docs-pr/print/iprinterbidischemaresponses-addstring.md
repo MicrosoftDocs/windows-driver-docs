@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddString method
-author: windows-driver-content
 description: The AddString method adds a new response of type BIDI\_STRING to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

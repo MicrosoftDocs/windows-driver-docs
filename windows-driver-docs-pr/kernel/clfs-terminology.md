@@ -1,6 +1,5 @@
 ---
 title: CLFS Terminology
-author: windows-driver-content
 description: The following list gives definitions of key terms used in the Common Log File System (CLFS) documentation.
 Robots: noindex, nofollow
 ms.assetid: d8511c5a-0181-4c54-acdc-e8a5892bb620

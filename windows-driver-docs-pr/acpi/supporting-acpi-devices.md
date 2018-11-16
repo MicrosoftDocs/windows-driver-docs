@@ -1,6 +1,5 @@
 ---
 title: Supporting ACPI Devices
-author: windows-driver-content
 description: Supporting ACPI Devices
 ms.assetid: ebaf2e66-4f56-48ca-93ca-f34e694c0d73
 keywords:

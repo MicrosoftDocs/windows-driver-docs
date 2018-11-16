@@ -1,6 +1,5 @@
 ---
 title: Overview of VRAM Capture in AVStream
-author: windows-driver-content
 description: Overview of VRAM Capture in AVStream
 ms.assetid: b5fd026f-75e3-49e0-a39e-4883dd6cacf2
 keywords:

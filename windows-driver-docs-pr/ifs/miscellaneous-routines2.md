@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Routines
-author: windows-driver-content
 description: Miscellaneous Routines
 ms.assetid: e065c86c-a784-49e1-a1d9-e2bcff3fcae4
 keywords:

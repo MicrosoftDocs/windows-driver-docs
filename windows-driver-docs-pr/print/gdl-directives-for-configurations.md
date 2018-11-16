@@ -1,6 +1,5 @@
 ---
 title: GDL Directives for Configurations
-author: windows-driver-content
 description: GDL Directives for Configurations
 ms.assetid: c7b3c364-06b2-4de8-9fe6-2c77d313a2f8
 keywords:

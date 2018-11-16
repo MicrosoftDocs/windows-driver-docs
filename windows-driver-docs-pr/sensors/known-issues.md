@@ -1,6 +1,5 @@
 ---
 title: Known issues
-author: windows-driver-content
 description: This topic identifies known issues in the tool outupt.
 ms.assetid: 77714A7F-3C7B-43B3-A540-00E0B0E04DE4
 ms.date: 04/20/2017

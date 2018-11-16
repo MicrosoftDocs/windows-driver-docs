@@ -1,6 +1,5 @@
 ---
 title: Hardware Codec Support in AVStream
-author: windows-driver-content
 description: Hardware Codec Support in AVStream
 ms.assetid: 19ffd906-e198-4ede-b132-45e53431603c
 keywords:

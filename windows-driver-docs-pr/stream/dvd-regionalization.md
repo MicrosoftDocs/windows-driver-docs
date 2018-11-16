@@ -1,6 +1,5 @@
 ---
 title: DVD Regionalization
-author: windows-driver-content
 description: DVD Regionalization
 ms.assetid: 931441c8-9521-43c9-86f1-dbf75d36e190
 keywords:

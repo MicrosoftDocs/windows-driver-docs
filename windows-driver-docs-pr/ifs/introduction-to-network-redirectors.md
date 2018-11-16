@@ -1,6 +1,5 @@
 ---
 title: Introduction to Network Redirectors
-author: windows-driver-content
 description: Introduction to Network Redirectors
 ms.assetid: 6eef8dfa-8ae9-48ef-adf9-8f6d5cd37d00
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Using an INF File to Uninstall a File System Filter Driver
-author: windows-driver-content
 description: Using an INF File to Uninstall a File System Filter Driver
 ms.assetid: e41deb65-7977-479c-ac42-c550aa6a3f1b
 keywords:

@@ -1,7 +1,6 @@
 ---
 Description: This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 title: USB client driver verifier
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

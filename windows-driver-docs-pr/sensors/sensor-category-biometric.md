@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_BIOMETRIC
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_BIOMETRIC category contains sensors that provide information about living beings.
 ms.assetid: e26073e1-11cc-40a9-9a60-3a15ceb46059
 keywords: ["SENSOR_CATEGORY_BIOMETRIC Sensor Devices"]

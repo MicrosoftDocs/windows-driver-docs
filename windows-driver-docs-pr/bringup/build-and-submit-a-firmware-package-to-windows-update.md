@@ -1,7 +1,6 @@
 ---
 title: Build and submit a firmware package to Windows Update (WU)
 description: Build and submit a firmware package to Windows Update (WU)
-author: windows-driver-content
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

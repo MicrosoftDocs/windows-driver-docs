@@ -1,6 +1,5 @@
 ---
 title: KS Data Formats and Data Ranges
-author: windows-driver-content
 description: KS Data Formats and Data Ranges
 ms.assetid: 44b55a5a-ec58-4c1e-b780-e20829fe3edf
 keywords:

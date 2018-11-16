@@ -1,6 +1,5 @@
 ---
 title: Original Interface
-author: windows-driver-content
 description: Original Interface
 ms.assetid: 78f1e722-c2bd-4232-96f1-71df7e6ece23
 keywords:

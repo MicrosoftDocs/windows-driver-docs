@@ -1,6 +1,5 @@
 ---
 title: Leading and Trailing Edge Stream Pointers
-author: windows-driver-content
 description: Leading and Trailing Edge Stream Pointers
 ms.assetid: 73ab974f-8034-421f-980a-2393d84ec54c
 keywords:

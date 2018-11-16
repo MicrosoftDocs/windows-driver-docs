@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration in an IHV Driver
-author: windows-driver-content
 description: Autoconfiguration in an IHV Driver
 ms.assetid: 81febae0-6fab-4226-9e98-7705d606caf4
 keywords:

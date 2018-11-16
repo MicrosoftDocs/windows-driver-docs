@@ -1,6 +1,5 @@
 ---
 title: Describing Extended Sample Information in AVStream Codecs
-author: windows-driver-content
 description: Describing Extended Sample Information in AVStream Codecs
 ms.assetid: 04447525-78f5-4c77-9a41-4e6e4729f729
 keywords:

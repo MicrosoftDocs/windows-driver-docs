@@ -1,6 +1,5 @@
 ---
 title: Interface Identifiers for Printer Drivers
-author: windows-driver-content
 description: Interface Identifiers for Printer Drivers
 ms.assetid: 8182cba5-4461-4ca0-8b01-342519609b1f
 keywords:

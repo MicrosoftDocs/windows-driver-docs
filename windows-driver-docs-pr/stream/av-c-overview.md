@@ -1,6 +1,5 @@
 ---
 title: AV/C Overview
-author: windows-driver-content
 description: AV/C Overview
 ms.assetid: ff9e6dfc-7ab4-4b56-8b47-d3ea46b579e0
 keywords:

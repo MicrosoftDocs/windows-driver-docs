@@ -1,6 +1,5 @@
 ---
 title: WIA Item Flags for Film Scanners
-author: windows-driver-content
 description: WIA Item Flags for Film Scanners
 ms.assetid: 50aad730-6897-488d-a9de-58ce24738c17
 ms.date: 04/20/2017

@@ -6,7 +6,6 @@ keywords:
 - Event Tracing for Windows WDK , kernel-mode
 - ETW WDK , kernel-mode
 - kernel-mode ETW WDK software tracing
-author: EliotSeattle
 ms.author: eliotgra
 ms.date: 07/09/2018
 ms.localizationpriority: medium

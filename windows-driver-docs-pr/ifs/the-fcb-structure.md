@@ -1,6 +1,5 @@
 ---
 title: The FCB Structure
-author: windows-driver-content
 description: The FCB Structure
 ms.assetid: feb38b24-c028-4c8d-be45-11d9a4659f8d
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Introduction to CPSUI
-author: windows-driver-content
 description: Introduction to CPSUI
 ms.assetid: 737c2dbf-1ce6-4f83-af94-265c948f3128
 keywords:

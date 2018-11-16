@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_REGINFO
-author: windows-driver-content
 description: Drivers that support WMI on Microsoft Windows 98 and Microsoft Windows 2000 must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: db93b64b-a2e4-429d-850e-921fb438467c

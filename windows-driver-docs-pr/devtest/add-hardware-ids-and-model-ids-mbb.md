@@ -7,7 +7,6 @@ keywords:
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ms.author: eliotgra
-author: EliotSeattle
 ---
 
 # Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard

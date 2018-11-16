@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Source Discovery
-author: windows-driver-content
 description: Participating in Error Source Discovery
 ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords:

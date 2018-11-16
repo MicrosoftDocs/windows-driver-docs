@@ -1,6 +1,5 @@
 ---
 title: Synchronizing the Use of a Parallel Port
-author: windows-driver-content
 description: Synchronizing the Use of a Parallel Port
 ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
 keywords:

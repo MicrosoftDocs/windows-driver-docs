@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Drivers
-author: windows-driver-content
 description: Storage Filter Drivers
 ms.assetid: 615e8ff1-d5b2-49da-b024-83bbaff70ded
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_NETWORK_CHANGE
-author: windows-driver-content
 description: The NDIS_STATUS_NETWORK_CHANGE status indicates a network change to allow overlying drivers to initiate renegotiation of network addresses.
 ms.assetid: feb6bb71-7147-43dd-b09d-cb41404164eb
 ms.date: 07/18/2017

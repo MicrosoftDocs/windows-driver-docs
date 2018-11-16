@@ -1,6 +1,5 @@
 ---
 title: Providing a UVC INF File
-author: windows-driver-content
 description: Providing a UVC INF File
 ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:

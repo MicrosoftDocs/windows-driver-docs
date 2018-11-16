@@ -1,6 +1,5 @@
 ---
 title: Stream Pointers and IRP Cancellation
-author: windows-driver-content
 description: Stream Pointers and IRP Cancellation
 ms.assetid: ce392496-ca07-497d-af8a-709239a7bd5e
 keywords:

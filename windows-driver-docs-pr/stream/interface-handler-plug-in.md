@@ -1,6 +1,5 @@
 ---
 title: Interface Handler Plug-in
-author: windows-driver-content
 description: Interface Handler Plug-in
 ms.assetid: cd81f622-d11c-4b40-ac78-9324716e0a2c
 keywords:
