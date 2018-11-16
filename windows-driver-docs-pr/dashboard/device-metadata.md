@@ -16,20 +16,20 @@ When you submit a device for certification, you can also submit a device metadat
 ## <span id="Topics_in_this_section"></span><span id="topics_in_this_section"></span><span id="TOPICS_IN_THIS_SECTION"></span>Topics in this section
 
 
--   [Create a Device Metadata Experience](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
+-   [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
 
--   [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
+-   [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
 
--   [Manage Device Metadata Experiences](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/manage-device-metadata-experiences)
+-   [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-device-metadata-experiences)
 
--   [Device Metadata Business Rules](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/device-metadata-business-rules)
+-   [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)
 
--   [Create a mobile broadband experience](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/create-a-mobile-broadband-experience)
+-   [Create a mobile broadband experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-mobile-broadband-experience)
 
 ## <span id="related_topics"></span>Related topics
 
 
-- [Get Started with Device Metadata](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-metadata-packages)
+- [Get Started with Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages)
 
  
 
