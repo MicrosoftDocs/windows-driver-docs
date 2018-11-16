@@ -199,7 +199,7 @@ New ReasonIds may be supported in the future. As a result, printer extensions mu
 
 ### Print preferences
 
-Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This object encapsulates both the PrintTicket and PrintCapabilties documents that describe the features and options for a device. While the underlying XML is also available, the object model makes working with these formats easier.
+Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This object encapsulates both the PrintTicket and PrintCapabilities documents that describe the features and options for a device. While the underlying XML is also available, the object model makes working with these formats easier.
 
 Inside each [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) or [**IPrintSchemaCapabilities**](https://msdn.microsoft.com/library/windows/hardware/hh451256) object there are features ([**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284)) and options ([**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
 
