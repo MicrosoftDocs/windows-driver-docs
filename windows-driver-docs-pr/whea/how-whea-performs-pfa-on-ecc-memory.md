@@ -41,11 +41,11 @@ When an ECC memory error occurs on a memory page, WHEA performs PFA on the ECC m
 
 
 
-~~~
+
 WHEA then adds the memory page into the Boot Configuration Data (BCD) in the system store. This prevents the memory page from being used after the next system restart.
 
 **Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the ECC memory page to the BCD store if the registry value **MemPersistOffline** is set to 0.
-~~~
+
 
 
 

@@ -70,9 +70,9 @@ The strategy for choosing the best programming model depends on various factors.
 
 
 
-~~~
+
 If your device does not belong to one the preceding device classes, write a Windows desktop app.
-~~~
+
 
 ## Driver requirement
 

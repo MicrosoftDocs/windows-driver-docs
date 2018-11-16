@@ -69,7 +69,7 @@ Perform these steps on the system under test that has the I²C controller:
 
 
 
-~~~
+
 ``` syntax
 Device(TP1) {
     Name (_HID, "SPT0001") 
@@ -109,7 +109,7 @@ Device(TP3) {
 }
 
 ```
-~~~
+
 
 ## SPI automation tests
 

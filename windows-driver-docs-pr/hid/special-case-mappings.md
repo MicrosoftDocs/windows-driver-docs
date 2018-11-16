@@ -179,10 +179,10 @@ The following interfaces are affected by axis overrides:
 
 
 
-~~~
+
 -   Under each Axis key specify the Axis that you want to override. Create a binary value named **Attributes** and set it to: 00 00 00 00 HUP 00 HU 00. HUP is a two-digit hexadecimal number specifying the HID usage page of the device object (axis) that you want to override. HU is a two-digit hexadecimal number specifying the HID usage of the device object. Use DIQuick to determine these values, or see the HID specification.
 -   Plug the device back in and use any program to check whether the overrides work.
-~~~
+
 
 ### Meaning of the registry keys
 

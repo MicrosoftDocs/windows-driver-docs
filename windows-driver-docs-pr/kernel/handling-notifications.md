@@ -45,9 +45,9 @@ When a registry filtering driver's *RegistryCallback* routine receives a post-no
 
 
 
-~~~
+
 Modifying return values is supported in Windows Vista and later.
-~~~
+
 
 When a registry filtering driver's *RegistryCallback* routine receives a pre-notification, the routine can handle the registry operation itself and then return STATUS\_CALLBACK\_BYPASS. When the registry receives STATUS\_CALLBACK\_BYPASS from the driver, it just returns STATUS\_SUCCESS to the calling thread and does not process the operation. The driver preempts the registry operation and must completely handle it, and the driver must be careful to return valid output values in the **REG\_*XXX*\_KEY\_INFORMATION** structure.
 

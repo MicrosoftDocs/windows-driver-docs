@@ -24,9 +24,9 @@ To create a dedicated log, perform the following steps.
 
 
 
-~~~
+
 The **LOG\_FILE\_OBJECT** pointer returned by **ClfsCreateLogFile** represents an open instance of the dedicated log's one and only stream.
-~~~
+
 
 2.  Pass the **LOG\_FILE\_OBJECT** pointer you obtained from **ClfsCreateLogFile** to [**ClfsAddLogContainer**](https://msdn.microsoft.com/library/windows/hardware/ff540768) to create a container (contiguous physical extent) on stable storage that will hold log records. Specify the size of the container (which will be rounded up to a multiple of 512 kilobytes) by setting the *pcbContainer* parameter. Set the *puszContainerPath* parameter to specify a path name for the container. The path name can be absolute or relative to the directory that contains the base log file.
 

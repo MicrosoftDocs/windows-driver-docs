@@ -20,9 +20,9 @@ OPM supports all of Certified Output Protection Protocol's (COPP) features. The 
 
 
 
-~~~
+
 COPP applications request information from a graphics driver by causing a [**DXVA\_COPPStatusInput**](https://msdn.microsoft.com/library/windows/hardware/ff563899) structure to be passed to the driver.
-~~~
+
 
 -   OPM supports High-bandwidth Digital Content Protection (HDCP) repeaters. For more information about HDCP repeaters, see the [HDCP Specification Revision 1.1](http://go.microsoft.com/fwlink/p/?linkid=38728).
 

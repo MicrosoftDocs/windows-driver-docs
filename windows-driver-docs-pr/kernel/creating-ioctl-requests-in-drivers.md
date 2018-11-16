@@ -36,11 +36,11 @@ A class driver or other higher-level driver can allocate IRPs for I/O control re
 
 
 
-~~~
+
 The event is signaled by its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine when the IOCTL request has completed. Once the event is signaled, the thread resumes execution.
 
 **Important**  If the driver allocates the event object as a local variable on the stack, the driver must call [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) with its *WaitMode* parameter set to **KernelMode**. This parameter value prevents the stack from being paged out.
-~~~
+
 
 
 

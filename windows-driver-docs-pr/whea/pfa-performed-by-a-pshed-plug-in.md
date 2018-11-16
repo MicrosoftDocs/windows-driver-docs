@@ -56,7 +56,7 @@ When an ECC memory error occurs, WHEA and the plug-in perform the following step
 
 
 
-~~~
+
 WHEA then adds the memory page into the Boot Configuration Data (BCD) store on the system. This prevents the memory page from being used after the next system restart.
 
 **Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the memory page to the BCD store if the registry value **MemPersistOffline** is set to 0. For more information about the registry values, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
@@ -64,7 +64,7 @@ WHEA then adds the memory page into the Boot Configuration Data (BCD) store on t
 
 
 For more information about the system memory manager, see [Memory Management](http://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
-~~~
+
 
 10. The Windows kernel generates an ETW event and logs the error information in the system event log.
 

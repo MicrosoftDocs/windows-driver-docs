@@ -57,9 +57,9 @@ To implement finish-install actions, an installer:
 
 
 
-~~~
+
 **Note**   If a finish-install action fails and should not be attempted again, a class installer returns ERROR_DI_DO_DEFAULT and a device or class co-installer returns NO_ERROR.
-~~~
+
 
 
 

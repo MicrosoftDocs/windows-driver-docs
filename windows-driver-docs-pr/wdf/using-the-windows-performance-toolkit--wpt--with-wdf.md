@@ -45,9 +45,9 @@ To learn how to use the Windows Performance Toolkit to measure the performance o
 
 
 
-~~~
+
 This script sets registry entries for the specified driver so that the framework logs the events required to enable performance analysis when the ETW provider is enabled in step 4.
-~~~
+
 
 3.  Reboot the computer.
 4.  In an elevated command prompt, enter the following command.
@@ -60,9 +60,9 @@ This script sets registry entries for the specified driver so that the framework
 
 
 
-~~~
+
 On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.
-~~~
+
 
 5.  Exercise your scenario of interest.
 6.  Stop the ETW trace session: **Wpr.exe -Stop MyPerfTrace.etl**

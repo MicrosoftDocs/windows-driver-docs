@@ -116,7 +116,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
         WdfDeviceInitSetRequestAttributes(WdfDeviceInit, &wdfRequestAttributes);
 
 
-~~~
+
     // To distinguish I/O sent to GUID_DEVINTERFACE_USB_HOST_CONTROLLER, we will enable
     // enable interface reference strings by calling WdfDeviceInitSetFileObjectConfig
     // with FileObjectClass WdfFileObjectWdfXxx.
@@ -246,7 +246,7 @@ exit:
     return status;
 }
 ```
-~~~
+
 
 ## Handle user-mode IOCTL requests sent to the host controller
 

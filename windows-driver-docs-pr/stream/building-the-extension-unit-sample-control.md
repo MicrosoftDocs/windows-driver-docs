@@ -53,7 +53,7 @@ Use these steps to build the control:
     USE_STATIC_ATL=1
 
 
-~~~
+
 USER_INCLUDES= $(O)
 
 INCLUDES=
@@ -76,7 +76,7 @@ TARGETLIBS= \
         $(SDK_LIB_PATH)\uuid.lib              \
         $(SDK_LIB_PATH)\comctl32.lib
 ```
-~~~
+
 
 4.  Create a *makefile* file as follows:
 

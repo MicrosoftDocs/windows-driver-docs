@@ -75,7 +75,7 @@ Perform these steps on the system under test that has the I²C controller:
 
 
 
-~~~
+
 ``` syntax
 //TP1 100Khz Standard Target Device(TP1) 
 Device(TP1) {
@@ -150,7 +150,7 @@ Device(TP5) {
 ```
 
 **Note**  Only TP1-3 are required to run MITT I²C tests. TP4 and TP5 are optional targets.
-~~~
+
 
 
 
