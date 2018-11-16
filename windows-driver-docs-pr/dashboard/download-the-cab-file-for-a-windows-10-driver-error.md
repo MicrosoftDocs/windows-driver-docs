@@ -1,5 +1,4 @@
 ---
-author: mcleanbyron
 ms.assetid: 3D6EE7D7-7D75-499D-AA7A-55DA1C485BA6
 description: Use this method in the Microsoft Store analytics API to download the CAB file for a Windows 10 driver error. This method is intended only for IHVs.
 title: Download the CAB file for a Windows 10 driver error
