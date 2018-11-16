@@ -1,6 +1,5 @@
 ---
 title: Framework Device Object
-author: windows-driver-content
 description: Framework Device Object
 ms.assetid: 6be47eac-d6e4-43d1-bf2d-d49dcb2273c0
 keywords:

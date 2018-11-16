@@ -1,6 +1,5 @@
 ---
 title: WDF_DECLARE_CUSTOM_TYPE macro
-author: windows-driver-content
 description: The WDF_DECLARE_CUSTOM_TYPE macro creates a name and an accessor method for a driver's custom type.
 ms.assetid: DF496E17-B3D4-4983-8506-40810ECAEA3E
 keywords:

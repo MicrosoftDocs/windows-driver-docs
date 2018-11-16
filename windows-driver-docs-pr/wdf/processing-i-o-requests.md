@@ -1,6 +1,5 @@
 ---
 title: Processing I/O Requests
-author: windows-driver-content
 description: Processing I/O Requests
 ms.assetid: 90b1cc51-da40-45c1-9d6c-57f637f474d9
 keywords:

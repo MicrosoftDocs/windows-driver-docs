@@ -1,6 +1,5 @@
 ---
 title: Forwarding I/O Requests
-author: windows-driver-content
 description: Forwarding I/O Requests
 ms.assetid: 75e007e3-1b97-44db-ac86-56aab78222a6
 keywords:

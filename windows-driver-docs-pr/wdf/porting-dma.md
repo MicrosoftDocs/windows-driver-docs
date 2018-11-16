@@ -1,6 +1,5 @@
 ---
 title: Porting DMA
-author: windows-driver-content
 description: Porting DMA
 ms.assetid: 457B6459-EE02-4A2C-8D25-81CE1D9265DC
 ms.date: 04/20/2017

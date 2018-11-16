@@ -1,6 +1,5 @@
 ---
 title: Working with USB Devices
-author: windows-driver-content
 description: This topic describes the operations that a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver starting in version 2 can perform using the USB device object methods provided by Windows Driver Frameworks (WDF).
 ms.assetid: 8e06f3c4-1a58-4b9f-ae89-ff4e37eb8f0a
 keywords:

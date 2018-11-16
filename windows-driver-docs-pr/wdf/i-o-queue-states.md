@@ -1,6 +1,5 @@
 ---
 title: I/O Queue States
-author: windows-driver-content
 description: I/O Queue States
 ms.assetid: 99519d1c-20e5-4a32-8462-19ec9f907506
 keywords:

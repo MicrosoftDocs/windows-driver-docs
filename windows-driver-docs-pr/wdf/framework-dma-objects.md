@@ -1,6 +1,5 @@
 ---
 title: Framework DMA Objects
-author: windows-driver-content
 description: Framework DMA Objects
 ms.assetid: a5073bb0-a8c9-49fc-b280-e781f9f9c256
 keywords:

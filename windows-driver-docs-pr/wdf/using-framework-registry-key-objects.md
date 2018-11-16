@@ -1,6 +1,5 @@
 ---
 title: Using Framework Registry-Key Objects
-author: windows-driver-content
 description: Using Framework Registry-Key Objects
 ms.assetid: 2236b4e1-2e17-4e59-b12e-70fff5fd7513
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Using Memory Buffers
-author: windows-driver-content
 description: Using Memory Buffers
 ms.assetid: f5699837-f1ba-4088-82b3-d7e27341fb46
 keywords:

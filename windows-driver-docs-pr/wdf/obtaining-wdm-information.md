@@ -1,6 +1,5 @@
 ---
 title: Obtaining WDM Information
-author: windows-driver-content
 description: Obtaining WDM Information
 ms.assetid: a43ffa5b-6166-4624-8dee-a54aaa8c7283
 keywords:

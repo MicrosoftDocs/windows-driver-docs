@@ -1,6 +1,5 @@
 ---
 title: USB I/O Targets in UMDF
-author: windows-driver-content
 description: USB I/O Targets in UMDF
 ms.assetid: e08ca910-1b28-4809-9a5b-db3730cda31a
 keywords:

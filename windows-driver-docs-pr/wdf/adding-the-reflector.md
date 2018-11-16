@@ -1,6 +1,5 @@
 ---
 title: Specifying the Reflector in an INF File
-author: windows-driver-content
 description: Specifying the Reflector in an INF File
 ms.assetid: 3676c99d-4e13-4385-910a-251232b00d4c
 keywords:

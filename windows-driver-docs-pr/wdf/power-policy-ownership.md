@@ -1,6 +1,5 @@
 ---
 title: Power Policy Ownership
-author: windows-driver-content
 description: Power Policy Ownership
 ms.assetid: 8e44eedd-6afe-45c6-bbe8-42cfb6f6a644
 keywords:

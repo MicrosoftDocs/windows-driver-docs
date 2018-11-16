@@ -1,6 +1,5 @@
 ---
 title: Introduction to Registry Keys for Drivers
-author: windows-driver-content
 description: Introduction to Registry Keys for Drivers
 ms.assetid: ec1a21db-1a31-4041-941d-31156884ffae
 keywords:

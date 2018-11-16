@@ -1,6 +1,5 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
-author: windows-driver-content
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
 keywords:

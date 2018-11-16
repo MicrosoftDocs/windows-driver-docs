@@ -1,6 +1,5 @@
 ---
 title: Creating Framework Request Objects
-author: windows-driver-content
 description: Creating Framework Request Objects
 ms.assetid: 4bd668ec-14fb-4999-9535-a49712a26ba6
 keywords:

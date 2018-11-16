@@ -1,6 +1,5 @@
 ---
 title: WdfObjectAddCustomType macro
-author: windows-driver-content
 description: The WdfObjectAddCustomType macro associates a framework object with a custom type.
 ms.assetid: 750CF669-A436-4571-B474-D5447E0AA64F
 keywords:

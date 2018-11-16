@@ -1,6 +1,5 @@
 ---
 title: Deleting I/O Queues
-author: windows-driver-content
 description: Deleting I/O Queues
 ms.assetid: 7eb7a24d-de39-4e3d-865c-ebfb49d43519
 keywords:

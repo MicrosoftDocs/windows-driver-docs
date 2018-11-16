@@ -1,6 +1,5 @@
 ---
 title: A User Plugs in a Device
-author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:

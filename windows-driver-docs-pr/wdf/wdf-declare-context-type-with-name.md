@@ -1,6 +1,5 @@
 ---
 title: WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
-author: windows-driver-content
 description: The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
 ms.assetid: e5911bd2-6976-4a91-b9ba-befa7ec93103
 keywords:

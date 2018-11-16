@@ -1,6 +1,5 @@
 ---
 title: Raw and Translated Resources
-author: windows-driver-content
 description: Raw and Translated Resources
 ms.assetid: dfc1376d-7a1a-421c-82ae-e183cac77ec8
 keywords:

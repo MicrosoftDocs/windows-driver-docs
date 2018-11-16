@@ -1,6 +1,5 @@
 ---
 title: Working with USB Pipes
-author: windows-driver-content
 description: Working with USB Pipes
 ms.assetid: d5422ff2-de1e-4a77-8b3c-0b2917b1d9ca
 keywords:

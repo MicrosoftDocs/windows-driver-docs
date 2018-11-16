@@ -1,6 +1,5 @@
 ---
 title: WdfDeviceStopIdleWithTag macro
-author: windows-driver-content
 description: The WdfDeviceStopIdleWithTag macro increments the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 ms.assetid: 792A5EA8-5273-4284-B0EE-01BE1DCB9863
 keywords:

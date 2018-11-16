@@ -1,6 +1,5 @@
 ---
 title: Using WPP Software Tracing in UMDF Drivers
-author: windows-driver-content
 description: Using WPP Software Tracing in UMDF Drivers
 ms.assetid: d8469d29-dfc3-41b9-a72d-9dafb3e70123
 keywords:

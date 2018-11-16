@@ -1,6 +1,5 @@
 ---
 title: Adding a Device
-author: windows-driver-content
 description: Adding a Device
 ms.assetid: 233e3315-3044-42d7-867c-0a9e153eb53b
 keywords:

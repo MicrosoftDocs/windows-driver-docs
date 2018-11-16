@@ -1,6 +1,5 @@
 ---
 title: Sending I/O Requests to General I/O Targets
-author: windows-driver-content
 description: Sending I/O Requests to General I/O Targets
 ms.assetid: 3fa897f5-2de8-484b-becb-c2de23fb5e8c
 keywords:

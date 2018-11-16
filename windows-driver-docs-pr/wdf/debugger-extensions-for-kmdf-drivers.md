@@ -1,6 +1,5 @@
 ---
 title: Summary of Debugger Extensions in Wdfkd.dll
-author: windows-driver-content
 description: The Windows Driver Kit (WDK) includes a debugger extension library, named Wdfkd.dll.
 ms.assetid: 5a83ea58-5dbf-40a6-b4cb-9c330851fc33
 keywords:

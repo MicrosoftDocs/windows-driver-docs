@@ -1,6 +1,5 @@
 ---
 title: Managing I/O Queues
-author: windows-driver-content
 description: Managing I/O Queues
 ms.assetid: 83cc87c8-7e2d-4f79-a580-0519d327e7ba
 keywords:
