@@ -4,7 +4,7 @@ description: The wudfext.wudfrefhist extension displays the reference count stac
 ms.assetid: 8999f525-c6ed-4341-be2c-b0debef23a4b
 keywords: ["wudfext.wudfrefhist Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/16/2018
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ The **!wudfext.wudfrefhist** extension displays the reference count stack histor
 
 ```dbgcmd
 !wudfext.wudfrefhist ObjectAddress
-```dbgcmd
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -31,22 +31,7 @@ Specifies the address of the UMDF object whose reference count stack history is 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+>Wudfext.dll
 
  
 

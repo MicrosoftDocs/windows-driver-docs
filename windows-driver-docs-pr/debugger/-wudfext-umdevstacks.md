@@ -4,7 +4,7 @@ description: The wudfext.umdevstacks extension displays information about all de
 ms.assetid: e69420fc-97b8-420f-b635-bee41fbf4586
 keywords: ["wudfext.umdevstacks Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/16/2018
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ The **!wudfext.umdevstacks** extension displays information about all device sta
 
 ```dbgcmd
 !wudfext.umdevstacks [Flags] 
-```dbgcmd
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -37,30 +37,10 @@ Displays information about the internal framework.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
+Wudfext.dll
 
  
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
-
-Remarks
+### Remarks
 -------
 
 The **!wudfext.umdevstacks** extension displays the framework interface objects that are associated with each device stack. For more information about using the output from **!wudfext.umdevstacks**, see [**!wudfext.umdevstack**](-wudfext-umdevstack.md).
@@ -89,6 +69,10 @@ Number of device stacks: 1
     DevStack XFerMode: CopyImmediately RW: Buffered CTL: Buffered
 ```
 
+
+### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+
+For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
  
 
  
