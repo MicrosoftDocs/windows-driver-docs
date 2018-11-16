@@ -17,8 +17,6 @@ The [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/
 
 **Note**  The extensible switch forwarding context is different from the [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure. This allows extensions to allocate their own context structures without affecting the forwarding context.
 
-
-
 The extensible switch forwarding context is allocated and freed in the following way:
 
 -   When a packet arrives at the extensible switch from a network adapter, the extensible switch interface allocates the forwarding context and associates it with the packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
@@ -31,11 +29,7 @@ The extensible switch forwarding context is allocated and freed in the following
 
     **Note**  When the extension calls [*AllocateNetBufferListForwardingContext*](https://msdn.microsoft.com/library/windows/hardware/hh598134), the source port for the packet is set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**. This specifies that the packet originated from an extension instead of arriving at an extensible switch port. Under certain conditions, the extension may want to change the source port for the packet. For more information, see [Modifying a Packet's Extensible Switch Source Port Data](modifying-a-packet-s-extensible-switch-source-port-data.md).
 
-
-
-~~~
-For more information, see [Hyper-V Extensible Switch Send and Receive Operations](hyper-v-extensible-switch-send-and-receive-operations.md).
-~~~
+    For more information, see [Hyper-V Extensible Switch Send and Receive Operations](hyper-v-extensible-switch-send-and-receive-operations.md).
 
 All extensible switch extensions can call the following extensible switch handler functions to access the data within the packet's forwarding context:
 
@@ -58,8 +52,6 @@ Adds a single destination to the extensible switch forwarding context area for a
 
 **Note**  This call commits the change to the forwarding context area. In this case, the forwarding extension does not need to call [*UpdateNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598303).
 
-
-
 <a href="" id="grownetbufferlistdestinations"></a>[*GrowNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598158)  
 Increases the size of the destination port array in the forwarding context area of a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure.
 
@@ -67,8 +59,6 @@ Increases the size of the destination port array in the forwarding context area 
 Commits modifications that the extension made to one or more extensible switch destination ports of a packet. This function updates the forwarding context of a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure with these changes.
 
 **Note**  After the forwarding extension commits the changes for destination ports to the forwarding context, destination ports cannot be removed and only the **IsExcluded** member of a destination port's [**NDIS\_SWITCH\_PORT\_DESTINATION**](https://msdn.microsoft.com/library/windows/hardware/hh598224) structure can be changed. For more information, see [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md).
-
-
 
 ## Related topics
 

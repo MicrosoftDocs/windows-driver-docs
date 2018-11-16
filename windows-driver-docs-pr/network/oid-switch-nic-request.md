@@ -49,21 +49,15 @@ When OID requests arrive at the Hyper-V extensible switch interface, it encapsul
 
     **Note**  In this case, the protocol edge sets the **DestinationPortId** and **DestinationNicIndex** members to zero. This specifies that the encapsulated OID request is to be delivered to extensions in the control path.
 
+    Underlying forwarding extensions can inspect these encapsulated OID requests and retain the multicast address information that they specify. For example, the extension may need this information if it originates multicast packets that it forwards to an extensible switch port.
 
-
-~~~
-Underlying forwarding extensions can inspect these encapsulated OID requests and retain the multicast address information that they specify. For example, the extension may need this information if it originates multicast packets that it forwards to an extensible switch port.
-
-For more information, see [Forwarding OID Requests from a Hyper-V Child Partition](https://msdn.microsoft.com/library/windows/hardware/hh598150).
-~~~
+    For more information, see [Forwarding OID Requests from a Hyper-V Child Partition](https://msdn.microsoft.com/library/windows/hardware/hh598150).
 
 A forwarding extension can also issue an OID\_SWITCH\_NIC\_REQUEST in order to forward encapsulated OID requests to a physical network adapter that is bound to the external network adapter. This allows the extension to originate its own OID request or redirect an existing OID request to a physical network adapter that is bound to the external network adapter. In order to do this, the extension must follow these steps:
 
 1.  The extension calls [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment a reference counter for the index of the destination physical network adapter. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
 
     **Note**  The extensible switch interface could disconnect the physical network adapter connection while its reference counter is nonzero. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
-
-
 
 2.  The extension encapsulates the OID request by initializing an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214) structure in the following way:
 
@@ -135,11 +129,3 @@ Requirements
 [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
 
 [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214)
-
-
-
-
-
-
-
-

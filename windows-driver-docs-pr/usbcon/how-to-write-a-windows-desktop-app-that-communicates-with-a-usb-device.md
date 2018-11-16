@@ -48,7 +48,7 @@ To create an application from the template:
 
     `%DeviceName% =USB_Install, USB\VID_vvvv&PID_pppp`
 
-8.  Replace VID\_vvvv&PID\_pppp with the hardware ID for you device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
+8.  Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 9.  In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Win8.1 Debug and x64, as shown in the following screen shot.
 
     ![winusb application template](images/winusb-template2.png)
@@ -70,43 +70,39 @@ You can deploy, install, load, and debug your application and the driver by foll
 
     1.  Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909).
         **Note**  
-        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. Provisioning also installs the required debuggers, enables test signing for drivers, and so on.
+        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
+    2.  On the host computer, open your solution in Visual Studio.
+    3.  In main.cpp add this line before the OpenDevice call.
 
+        `system ("pause")`
 
+        The line causes the application to pause when launched. This is useful in remote debugging.
 
-~~~
-2.  On the host computer, open your solution in Visual Studio.
-3.  In main.cpp add this line before the OpenDevice call.
+    4.  In pch.h, include this line:
 
-    `system ("pause")`
+        `#include <cstdlib>`
 
-    The line causes the application to pause when launched. This is useful in remote debugging.
+        This include statement is required for the system() call in the preceding step.
 
-4.  In pch.h, include this line:
+    5.  In the **Solution Explorer** window, right-click USB Application1 Package, and choose **Properties**.
+    6.  In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.
+    7.  Check **Enable deployment**, and check **Remove previous driver versions before deployment**.
+    8.  For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
+    9.  Select **Install and Verify**. Click **OK**.
 
-    `#include <cstdlib>`
+        ![winusb template](images/winusb-template4.png)
 
-    This include statement is required for the system() call in the preceding step.
+    10. In the property page, navigate to **Configuration Properties &gt; Debugging**, and select **Debugging Tools for Windows – Remote Debugger**, as shown in the following screen shot.
 
-5.  In the **Solution Explorer** window, right-click USB Application1 Package, and choose **Properties**.
-6.  In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.
-7.  Check **Enable deployment**, and check **Remove previous driver versions before deployment**.
-8.  For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
-9.  Select **Install and Verify**. Click **OK**.
+        ![winusb template debug setting](images/winusb-template5.png)
 
-    ![winusb template](images/winusb-template4.png)
-
-10. In the property page, navigate to **Configuration Properties &gt; Debugging**, and select **Debugging Tools for Windows – Remote Debugger**, as shown in the following screen shot.
-
-    ![winusb template debug setting](images/winusb-template5.png)
-
-11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
+    11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
 
 On the target computer, you will see driver install scripts running. The driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the target computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder. The device must appear in Device Manager without errors.
 
 On the host computer, you will see this message in the **Output** window.
 
-``` syntax
+```syntax
 Deploying driver files for project 
 "<path>\visual studio 12\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".  
 Deployment may take a few minutes...
@@ -136,7 +132,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
 7.  Change **Debugger to launch** to **Remote Windows Debugger**.
 8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
 9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
-~~~
+
 -   **Single computer setup:**
 
     1.  To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window, as shown in the following screen shot. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
@@ -145,17 +141,11 @@ The preceding instructions debug the application by using **Debugging Tools for 
         ![winusb application template](images/winusb-template3.png)
 
         **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
-
-
-
-~~~
-3.  Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
-
-4.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
-5.  Change **Debugger to launch** to **Local Windows Debugger**.
-6.  7.  Right-click the USB Application1 Package project, and select **Unload Project**.
-8.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5**.
-~~~
+    3.  Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
+    4.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
+    5.  Change **Debugger to launch** to **Local Windows Debugger**.
+    6.  7.  Right-click the USB Application1 Package project, and select **Unload Project**.
+    8.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5**.
 
 ## Template code discussion
 

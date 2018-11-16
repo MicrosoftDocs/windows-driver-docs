@@ -147,13 +147,9 @@ You can see the structure of transactions and packets by using any USB analyzer,
     </tbody>
     </table>
 
+    Thus, we can conclude that in this control (read) transfer, the host sends a request to retrieve the device descriptor and specifies 18 bytes as the transfer length to hold that descriptor. The way the device sends those 18 bytes depends on how much data the default endpoint can send in one transaction. That information is included in the device descriptor returned by the device in the data transaction.
 
-
-~~~
-Thus, we can conclude that in this control (read) transfer, the host sends a request to retrieve the device descriptor and specifies 18 bytes as the transfer length to hold that descriptor. The way the device sends those 18 bytes depends on how much data the default endpoint can send in one transaction. That information is included in the device descriptor returned by the device in the data transaction.
-
-In response, the device sends a handshake packet (\#436 indicated by **D↓**). Notice that the PID value is ACK (ACK packet). This indicates that the device acknowledged the transaction.
-~~~
+    In response, the device sends a handshake packet (\#436 indicated by **D↓**). Notice that the PID value is ACK (ACK packet). This indicates that the device acknowledged the transaction.
 
 -   **Data transaction**
 
@@ -169,56 +165,50 @@ In response, the device sends a handshake packet (\#436 indicated by **D↓**). 
 
     **Note**  The maximum packet size of the default endpoint depends on the speed of the device. The default endpoint of a high-speed device is 64 bytes; low-speed device is 8 bytes.
 
+    The host acknowledges the data transaction by sending an ACK packet (\#452) to the device.
 
+    Let’s calculate the amount of data returned. In the **wLength** field of the data packet (\#435) in the setup transaction, the host requested 18 bytes. In the data transaction, we see that only first 8 bytes of the device descriptor were received from the device. So, how does the host receive information stored in the remaining 10 bytes? The device does so in two transactions: 8 bytes and then last 2 bytes.
 
-~~~
-The host acknowledges the data transaction by sending an ACK packet (\#452) to the device.
+    Now that the host knows the maximum packet size of the default endpoint, the host initiates a new data transaction and requests the next portion based on the packet size.
 
-Let’s calculate the amount of data returned. In the **wLength** field of the data packet (\#435) in the setup transaction, the host requested 18 bytes. In the data transaction, we see that only first 8 bytes of the device descriptor were received from the device. So, how does the host receive information stored in the remaining 10 bytes? The device does so in two transactions: 8 bytes and then last 2 bytes.
+    Here is the next data transaction:
 
-Now that the host knows the maximum packet size of the default endpoint, the host initiates a new data transaction and requests the next portion based on the packet size.
+    ![trace of an example data transaction.](images/datra-trans2.png)
 
-Here is the next data transaction:
+    The host initiates the preceding data transaction by sending an IN token (\#463) and requesting the next 8 bytes from the device. The device responds with a data packet (\#464) that contains the next 8 bytes of the device descriptor.
 
-![trace of an example data transaction.](images/datra-trans2.png)
+    Upon receiving the 8 bytes, the host sends an ACK packet (\#465) to the device.
 
-The host initiates the preceding data transaction by sending an IN token (\#463) and requesting the next 8 bytes from the device. The device responds with a data packet (\#464) that contains the next 8 bytes of the device descriptor.
+    Next, the host requests the last 2 bytes in another data transaction as follows:
 
-Upon receiving the 8 bytes, the host sends an ACK packet (\#465) to the device.
+    ![trace of an example data transaction.](images/datra-trans3.png)
 
-Next, the host requests the last 2 bytes in another data transaction as follows:
+    Therefore, we see that to transfer 18 bytes from the device to the host, the host keeps track of the number of bytes transferred and initiated three data transactions (8+8+2).
 
-![trace of an example data transaction.](images/datra-trans3.png)
+    **Note**   Notice the PID of the data packets in data transactions 19, 23, 26. The PID alternates between DATA0 and DATA1. This sequence is called data toggling. In cases where there are multiple data transactions, data toggling is used to verify the packet sequence. This method makes sure that the data packets are not duplicated or lost.
 
-Therefore, we see that to transfer 18 bytes from the device to the host, the host keeps track of the number of bytes transferred and initiated three data transactions (8+8+2).
+    By mapping the consolidated data packets to the structure of the device descriptor (See Table 9-8), we see these fields and values:
 
-**Note**   Notice the PID of the data packets in data transactions 19, 23, 26. The PID alternates between DATA0 and DATA1. This sequence is called data toggling. In cases where there are multiple data transactions, data toggling is used to verify the packet sequence. This method makes sure that the data packets are not duplicated or lost.
-
-
-
-By mapping the consolidated data packets to the structure of the device descriptor (See Table 9-8), we see these fields and values:
-
-| Field                  | Size | Value  | Description                                                                       |
-|------------------------|------|--------|-----------------------------------------------------------------------------------|
-| **bLength**            | 1    | 0x12   | Length of the device descriptor, which is 18 bytes.                               |
-| **bDescriptorType**    | 1    | 0x01   | The descriptor type is device.                                                    |
-| **bcdUSB**             | 2    | 0x0100 | The specification version number is 1.00.                                         |
-| **bDeviceClass**       | 1    | 0x00   | Device class is 0. Each interface in the configuration has the class information. |
-| **bDeviceSubClass**    | 1    | 0x00   | Subclass is 0 because device class is 0.                                          |
-| **bProtocol**          | 1    | 0x00   | Protocol is 0. This device does not use any class-specific protocols.             |
-| **bMaxPacketSize0**    | 1    | 0x08   | The maximum packet size of the endpoint is 8 bytes.                               |
-| **idVendor**           | 2    | 0x0562 | Telex Communications.                                                             |
-| **idProduct**          | 2    | 0x0002 | USB microphone.                                                                   |
-| **bcdDevice**          | 2    | 0x0100 | Indicates the device release number.                                              |
-| **iManufacturer**      | 1    | 0x01   | Manufacturer string.                                                              |
-| **iProduct**           | 1    | 0x02   | Product string.                                                                   |
-| **iSerialNumber**      | 1    | 0x03   | Serial number.                                                                    |
-| **bNumConfigurations** | 1    | 0x01   | Number of configurations.                                                         |
+    | Field                  | Size | Value  | Description                                                                       |
+    |------------------------|------|--------|-----------------------------------------------------------------------------------|
+    | **bLength**            | 1    | 0x12   | Length of the device descriptor, which is 18 bytes.                               |
+    | **bDescriptorType**    | 1    | 0x01   | The descriptor type is device.                                                    |
+    | **bcdUSB**             | 2    | 0x0100 | The specification version number is 1.00.                                         |
+    | **bDeviceClass**       | 1    | 0x00   | Device class is 0. Each interface in the configuration has the class information. |
+    | **bDeviceSubClass**    | 1    | 0x00   | Subclass is 0 because device class is 0.                                          |
+    | **bProtocol**          | 1    | 0x00   | Protocol is 0. This device does not use any class-specific protocols.             |
+    | **bMaxPacketSize0**    | 1    | 0x08   | The maximum packet size of the endpoint is 8 bytes.                               |
+    | **idVendor**           | 2    | 0x0562 | Telex Communications.                                                             |
+    | **idProduct**          | 2    | 0x0002 | USB microphone.                                                                   |
+    | **bcdDevice**          | 2    | 0x0100 | Indicates the device release number.                                              |
+    | **iManufacturer**      | 1    | 0x01   | Manufacturer string.                                                              |
+    | **iProduct**           | 1    | 0x02   | Product string.                                                                   |
+    | **iSerialNumber**      | 1    | 0x03   | Serial number.                                                                    |
+    | **bNumConfigurations** | 1    | 0x01   | Number of configurations.                                                         |
 
 
 
-By examining those values we have some preliminary information about the device. The device is a low-speed USB microphone. The maximum packet size of the default endpoint is 8 bytes. The device supports one configuration.
-~~~
+    By examining those values we have some preliminary information about the device. The device is a low-speed USB microphone. The maximum packet size of the default endpoint is 8 bytes. The device supports one configuration.
 
 -   **Status transaction**
 
@@ -275,21 +265,17 @@ Before the client driver can enumerate pipes, make sure that these requirements 
 
 A USB client driver on the host initiates most control requests to get information about the device, configure the device, or send vendor control commands. All of those requests can be categorized into:
 
--   Standard requests—Standard requests are defined in the USB specification. The purpose of sending these requests is to obtain information about the device, its configurations, interfaces, and endpoints. The recipient of each request depends on the type of request. The recipient can be the device, an interface, endpoint.
+-   Standard requests — Standard requests are defined in the USB specification. The purpose of sending these requests is to obtain information about the device, its configurations, interfaces, and endpoints. The recipient of each request depends on the type of request. The recipient can be the device, an interface, endpoint.
 
     **Note**  The target of any control transfer is always the default endpoint. The recipient is the device's entity whose information (descriptor, status, and so on) the host is interested in.
 
+    These requests can be further classified into: configuration requests, feature requests, and status requests.
 
+    -   Configuration requests are sent to get information from the device so that the host can configure it, such as a GET\_DESCRIPTOR request. These requests can also be write requests that are sent by the host to set a particular configuration or alternate setting in the device.
+    -   Feature requests are sent by the client driver to enable or disable certain Boolean device settings supported by the device, interface, or an endpoint.
+    -   USB devices support status requests to enable the host get or set the USB-defined status bits of a device, endpoint, or interface.
 
-~~~
-These requests can be further classified into: configuration requests, feature requests, and status requests.
-
--   Configuration requests are sent to get information from the device so that the host can configure it, such as a GET\_DESCRIPTOR request. These requests can also be write requests that are sent by the host to set a particular configuration or alternate setting in the device.
--   Feature requests are sent by the client driver to enable or disable certain Boolean device settings supported by the device, interface, or an endpoint.
--   USB devices support status requests to enable the host get or set the USB-defined status bits of a device, endpoint, or interface.
-
-For more information, see Section 9.4 in USB specification, version 2.0. The standard request types are defined the header file, Usbspec.h.
-~~~
+    For more information, see Section 9.4 in USB specification, version 2.0. The standard request types are defined the header file, Usbspec.h.
 
 -   Class requests—are defined by a specific device class specification.
 -   Vendor requests—are provided by the vendor and depends on the requests supported by the device.
@@ -298,7 +284,7 @@ The Microsoft-provided USB stack handles all the protocol communication with the
 
 Certain types of control requests are not exposed through WDF. For those requests, the client driver can use the WDF-hybrid model. This model allows the client driver to build and format WDM URB-style requests and then send those requests by using WDF framework objects. The hybrid model only applies to kernel-mode drivers.
 
-**For UMDF drivers:  **
+**For UMDF drivers:**
 
 Use the helper macros and structure defined in usb\_hw.h. This header is included with the UMDF Sample Driver for OSR USB Fx2 Learning Kit.
 
