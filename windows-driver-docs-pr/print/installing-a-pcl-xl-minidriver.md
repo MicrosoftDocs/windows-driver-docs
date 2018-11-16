@@ -1,6 +1,5 @@
 ---
 title: Installing a PCL XL Minidriver
-author: windows-driver-content
 description: Installing a PCL XL Minidriver
 ms.assetid: 88e4e1a0-8adb-4f40-abeb-a4da761ca4ee
 keywords:

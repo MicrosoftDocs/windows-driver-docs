@@ -1,7 +1,6 @@
 ---
 Description: A USB device can support interrupt endpoints so that it can send or receive data at regular intervals.
 title: How to send a USB interrupt transfer request (UWP app)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Do Not Depend on Order of SCSI Miniport Initialization
-author: windows-driver-content
 description: Do Not Depend on Order of SCSI Miniport Initialization
 ms.assetid: 762fa062-4eaa-40f2-acdb-99fc6cafe680
 keywords:

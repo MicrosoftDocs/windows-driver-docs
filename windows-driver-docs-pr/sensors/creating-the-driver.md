@@ -1,6 +1,5 @@
 ---
 title: Creating a sensor driver
-author: windows-driver-content
 description: Creating a sensor driver
 ms.assetid: 7a1cea3c-d542-47e9-90f9-18bae4969b9f
 ms.date: 07/20/2018

@@ -1,6 +1,5 @@
 ---
 title: Installing an AVStream-based Hardware Codec Driver
-author: windows-driver-content
 description: Installing an AVStream-based Hardware Codec Driver
 ms.assetid: 7b3bbff7-c8e7-47ea-a455-66f01a552e3b
 keywords:

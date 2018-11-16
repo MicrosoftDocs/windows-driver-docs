@@ -1,6 +1,5 @@
 ---
 title: Customized PDEV Structures
-author: windows-driver-content
 description: Customized PDEV Structures
 ms.assetid: e5c51b9a-5f73-4411-88d8-931981a8450c
 keywords:

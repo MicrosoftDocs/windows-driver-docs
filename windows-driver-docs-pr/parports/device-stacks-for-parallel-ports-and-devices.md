@@ -1,6 +1,5 @@
 ---
 title: Device Stacks for Parallel Ports and Devices
-author: windows-driver-content
 description: Device Stacks for Parallel Ports and Devices
 ms.assetid: 80222ed9-f900-4d97-b459-2d8ca780e1d1
 keywords:

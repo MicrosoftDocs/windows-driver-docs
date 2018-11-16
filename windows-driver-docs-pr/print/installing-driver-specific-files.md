@@ -1,6 +1,5 @@
 ---
 title: Installing Driver-Specific Files
-author: windows-driver-content
 description: Installing Driver-Specific Files
 ms.assetid: 19beaf89-c0c2-4706-8d25-12d76dc936d7
 keywords:

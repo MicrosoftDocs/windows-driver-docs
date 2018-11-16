@@ -1,6 +1,5 @@
 ---
 title: Printing to URLs from Applications
-author: windows-driver-content
 description: Printing to URLs from Applications
 ms.assetid: bc9aedb4-1d64-4b70-b14b-1392f914a635
 keywords:

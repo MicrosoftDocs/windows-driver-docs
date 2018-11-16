@@ -1,6 +1,5 @@
 ---
 title: GDL Primitive Data Types
-author: windows-driver-content
 description: GDL Primitive Data Types
 ms.assetid: e9a0a58b-ae29-46b1-8928-18686a89bd10
 keywords:

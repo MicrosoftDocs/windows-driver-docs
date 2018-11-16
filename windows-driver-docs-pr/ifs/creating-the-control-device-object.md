@@ -1,6 +1,5 @@
 ---
 title: Creating the Control Device Object
-author: windows-driver-content
 description: Creating the Control Device Object
 ms.assetid: 9f89fd24-59b8-4529-b151-4e91e6334173
 keywords:

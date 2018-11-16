@@ -1,6 +1,5 @@
 ---
 title: Development and Testing Tools
-author: windows-driver-content
 description: Development and Testing Tools
 ms.assetid: 6cc81509-27e1-4d5b-996c-6a7bbfd0ddcf
 keywords:

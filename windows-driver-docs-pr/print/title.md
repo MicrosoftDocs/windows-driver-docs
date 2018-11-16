@@ -1,6 +1,5 @@
 ---
 title: title element
-author: windows-driver-content
 description: The required title element provides text that is displayed in the title of the event notification message.
 ms.assetid: 60583593-9fe9-4c3c-ab86-3e7c37a8e199
 keywords: ["title element Print Devices"]

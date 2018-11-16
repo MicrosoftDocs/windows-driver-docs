@@ -1,6 +1,5 @@
 ---
 title: Code Example for Challenging a Potentially Disconnected Device
-author: windows-driver-content
 description: Code Example for Challenging a Potentially Disconnected Device
 ms.assetid: 74633481-229f-4074-a84e-cc515eaaacd0
 ms.date: 04/20/2017

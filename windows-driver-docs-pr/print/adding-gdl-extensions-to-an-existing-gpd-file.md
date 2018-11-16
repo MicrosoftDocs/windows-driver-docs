@@ -1,6 +1,5 @@
 ---
 title: Adding GDL Extensions to an Existing GPD File
-author: windows-driver-content
 description: Adding GDL Extensions to an Existing GPD File
 ms.assetid: 5ba2a447-e133-47bb-aa1e-93abe75c6eef
 keywords:

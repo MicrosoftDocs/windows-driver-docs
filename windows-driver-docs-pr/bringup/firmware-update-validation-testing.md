@@ -1,7 +1,6 @@
 ---
 title: Firmware update validation testing
 description: Firmware update validation testing
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

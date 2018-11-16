@@ -1,6 +1,5 @@
 ---
 title: Using Avc.sys
-author: windows-driver-content
 description: Using Avc.sys
 ms.assetid: 3b4ec139-ff01-40bd-8e29-92f554180585
 keywords:

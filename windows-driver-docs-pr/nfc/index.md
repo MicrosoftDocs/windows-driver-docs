@@ -1,6 +1,5 @@
 ---
 title: NFC design guide
-author: windows-driver-content
 description: Windows exposes a rich set of experiences using NFC technology including the following platforms
 ms.assetid: 26BFE25A-AC46-4634-8330-990DB447E55A
 keywords:

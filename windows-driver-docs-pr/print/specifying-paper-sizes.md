@@ -1,6 +1,5 @@
 ---
 title: Specifying Paper Sizes
-author: windows-driver-content
 description: Specifying Paper Sizes
 ms.assetid: 81352d15-c446-4d61-91ad-0c22d69da8ed
 keywords:

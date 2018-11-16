@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BITMAP_PATTERN_MASK
-author: windows-driver-content
 description: WDI_TLV_BITMAP_PATTERN_MASK is a TLV that contains the bitmap pattern mask.
 ms.assetid: 251B3496-04CE-419B-BE5E-C46265F50B7A
 ms.date: 07/18/2017

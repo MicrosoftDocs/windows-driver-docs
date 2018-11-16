@@ -1,6 +1,5 @@
 ---
 title: Streaming States
-author: windows-driver-content
 description: Streaming States
 ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
 keywords:

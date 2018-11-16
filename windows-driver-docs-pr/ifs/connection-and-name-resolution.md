@@ -1,6 +1,5 @@
 ---
 title: Connection and Name Resolution
-author: windows-driver-content
 description: Connection and Name Resolution
 ms.assetid: e61d09f1-7951-4291-93ce-e5ccbe0be576
 keywords:

@@ -1,7 +1,6 @@
 ---
 Description: This section provides information about certain limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
 title: Link power management in USB 3.0 hardware
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

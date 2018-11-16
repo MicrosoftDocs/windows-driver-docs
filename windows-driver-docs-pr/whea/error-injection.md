@@ -1,6 +1,5 @@
 ---
 title: Error Injection
-author: windows-driver-content
 description: Error Injection
 ms.assetid: d97d49bc-b216-40d6-afd1-aecff624624d
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Standard Variables
-author: windows-driver-content
 description: Standard Variables
 ms.assetid: d3f85c0f-7387-4301-8b1e-904471aed4b0
 keywords:

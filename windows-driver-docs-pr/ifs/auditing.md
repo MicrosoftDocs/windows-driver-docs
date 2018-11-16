@@ -1,6 +1,5 @@
 ---
 title: Auditing
-author: windows-driver-content
 description: Auditing
 ms.assetid: 0a703a27-91d6-41fc-bd46-a9486842a150
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Setting Up the WIA Build Environment
-author: windows-driver-content
 description: Setting Up the WIA Build Environment
 ms.assetid: 0e961aca-1b0c-483c-9269-e656daee3e5e
 ms.date: 04/20/2017

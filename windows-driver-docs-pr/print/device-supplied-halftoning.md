@@ -1,6 +1,5 @@
 ---
 title: Device-Supplied Halftoning
-author: windows-driver-content
 description: Device-Supplied Halftoning
 ms.assetid: d1d7963e-c23e-4cb5-a33f-43fec5dc74d2
 keywords:

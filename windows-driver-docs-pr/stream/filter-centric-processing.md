@@ -1,6 +1,5 @@
 ---
 title: Filter-Centric Processing
-author: windows-driver-content
 description: Filter-Centric Processing
 ms.assetid: e56c5102-7ea6-4687-ae5e-1550db9500f0
 keywords:

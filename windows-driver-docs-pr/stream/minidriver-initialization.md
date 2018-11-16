@@ -1,6 +1,5 @@
 ---
 title: Minidriver Initialization
-author: windows-driver-content
 description: Minidriver Initialization
 ms.assetid: 5aa4e2c6-5848-45fe-8a89-686aae7e85e6
 keywords:

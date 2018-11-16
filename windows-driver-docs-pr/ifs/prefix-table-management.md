@@ -1,6 +1,5 @@
 ---
 title: Prefix Table Management
-author: windows-driver-content
 description: Prefix Table Management
 ms.assetid: a48ed460-fab9-4a6d-bd2f-454b4932ea61
 keywords:

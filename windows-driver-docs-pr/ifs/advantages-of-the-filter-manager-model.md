@@ -1,6 +1,5 @@
 ---
 title: Advantages of the Filter Manager Model
-author: windows-driver-content
 description: Advantages of the Filter Manager Model
 ms.assetid: 8e3449dc-7c78-4f78-97c4-89b20001e91b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Installing Plug and Play Serial Ports and COM Ports
-author: windows-driver-content
 description: Installing Plug and Play Serial Ports and COM Ports
 ms.assetid: 48a489a1-6ed9-4e17-a7b5-0f2325486ab6
 keywords:

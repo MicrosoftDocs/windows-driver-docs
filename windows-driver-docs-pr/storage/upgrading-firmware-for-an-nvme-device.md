@@ -1,6 +1,5 @@
 ---
 title: Upgrading Firmware for an NVMe Device
-author: windows-driver-content
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
 ms.assetid: A912715A-F82A-41E5-BE14-5B17930C29B7
 ms.date: 04/20/2017

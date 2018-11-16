@@ -1,6 +1,5 @@
 ---
 title: Persistence of PFA Results
-author: windows-driver-content
 description: Persistence of PFA Results
 ms.assetid: de79b87e-2c9a-4181-b531-8ad283bb9d5b
 ms.date: 04/20/2017

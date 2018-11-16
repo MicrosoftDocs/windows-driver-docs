@@ -1,6 +1,5 @@
 ---
 title: Setting Attributes on a Parallel Device
-author: windows-driver-content
 description: Setting Attributes on a Parallel Device
 ms.assetid: 10df9a1b-99ec-46b1-b515-10fb20fe2aed
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: XML Structure of GDL Snapshots
-author: windows-driver-content
 description: XML Structure of GDL Snapshots
 ms.assetid: 46051e45-da46-488c-9d70-2299954445be
 keywords:

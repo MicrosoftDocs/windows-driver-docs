@@ -1,6 +1,5 @@
 ---
 title: Peer Subunit Driver Stack
-author: windows-driver-content
 description: Peer Subunit Driver Stack
 ms.assetid: 6ef4b6ae-3802-4ba9-acfa-4b3edba11ba3
 keywords:

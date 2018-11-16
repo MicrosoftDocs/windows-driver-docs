@@ -1,6 +1,5 @@
 ---
 title: AV/C Streaming INF Example
-author: windows-driver-content
 description: AV/C Streaming INF Example
 ms.assetid: c8a2c9cd-c71b-4fd1-80f5-34d13837865e
 keywords:

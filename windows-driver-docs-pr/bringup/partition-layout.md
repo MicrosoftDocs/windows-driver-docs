@@ -1,6 +1,5 @@
 ---
 title: Partition Layout
-author: windows-driver-content
 description: Partition Layout
 ms.assetid: 59ac7ec7-1b96-4fe1-a221-d8422e60072d
 ms.date: 04/20/2017

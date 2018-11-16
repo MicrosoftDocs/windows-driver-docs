@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File
-author: windows-driver-content
 description: Creating an INF File
 ms.assetid: c45fb42c-f0d6-4ab8-9a19-4bbf98c4cf8c
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: NdisQueryMdlOffset macro
-author: windows-driver-content
 description: The NdisQueryMdlOffset macro retrieves the offset within a physical page at which a given MDL buffer begins and the length of the buffer.
 ms.assetid: d6f23e9c-5015-4087-b7a2-badee00bdafa
 ms.date: 07/18/2017

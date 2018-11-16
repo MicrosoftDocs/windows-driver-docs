@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Close method
-author: windows-driver-content
 description: The Close method enables an ASP Web page to close access to a printer.
 MS-HAID:
 - 'webfnc\_62b91ac5-2f01-44d6-9289-ee2136acacc4.xml'

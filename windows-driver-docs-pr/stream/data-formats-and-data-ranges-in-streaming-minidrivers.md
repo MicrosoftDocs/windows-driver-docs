@@ -1,6 +1,5 @@
 ---
 title: Data Formats and Data Ranges in Streaming Minidrivers
-author: windows-driver-content
 description: Data Formats and Data Ranges in Streaming Minidrivers
 ms.assetid: ea3aa4af-0c8c-429e-b399-0a196eadc5ef
 keywords:

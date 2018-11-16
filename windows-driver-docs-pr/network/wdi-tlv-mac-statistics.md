@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_MAC_STATISTICS
-author: windows-driver-content
 description: WDI_TLV_MAC_STATISTICS is a TLV that contains per-peer MAC statistics for OID_WDI_GET_STATISTICS.
 ms.assetid: 47ABF170-76D7-4F17-BA92-56E1FEFF729D
 ms.date: 07/18/2017

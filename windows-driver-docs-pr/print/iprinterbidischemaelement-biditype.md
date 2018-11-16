@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaElement BidiType method
-author: windows-driver-content
 description: The BidiType method returns the Bidi schema element type.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_CONFIG_INFO
-author: windows-driver-content
 description: EFI_USB_CONFIG_INFO
 ms.assetid: 74d5cb02-2648-4bd1-990e-61156b5dc8cd
 ms.date: 04/20/2017

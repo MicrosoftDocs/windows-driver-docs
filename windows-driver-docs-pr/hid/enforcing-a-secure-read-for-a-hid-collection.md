@@ -1,6 +1,5 @@
 ---
 title: Enforcing a Secure Read For a HID Collection
-author: windows-driver-content
 description: Enforcing a Secure Read For a HID Collection
 ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords:

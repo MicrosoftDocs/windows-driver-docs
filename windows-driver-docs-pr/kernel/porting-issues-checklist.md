@@ -1,6 +1,5 @@
 ---
 title: Porting Issues Checklist
-author: windows-driver-content
 description: Porting Issues Checklist
 ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]

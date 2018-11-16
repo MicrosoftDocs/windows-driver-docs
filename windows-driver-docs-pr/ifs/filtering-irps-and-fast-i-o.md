@@ -1,6 +1,5 @@
 ---
 title: Filtering IRPs and Fast I/O
-author: windows-driver-content
 description: Filtering IRPs and Fast I/O
 ms.assetid: fad124b0-525d-4ff9-8f2c-3817fc76685c
 keywords:

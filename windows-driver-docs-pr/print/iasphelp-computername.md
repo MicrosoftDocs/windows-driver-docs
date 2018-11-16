@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_ComputerName method
-author: windows-driver-content
 description: The ComputerName property enables an ASP Web page to obtain a print server's name.
 MS-HAID:
 - 'webfnc\_fd5c59b9-c223-4762-898d-693e9960619c.xml'

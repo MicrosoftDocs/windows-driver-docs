@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddBool method
-author: windows-driver-content
 description: The AddBool method adds a new response of type BIDI\_BOOL to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

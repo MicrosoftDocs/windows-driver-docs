@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BEACON_PROBE_RESPONSE
-author: windows-driver-content
 description: WDI_TLV_BEACON_PROBE_RESPONSE is a TLV that contains the latest beacon or probe response frame received by the port.
 ms.assetid: D1148F9B-D25F-4AF0-8C55-43453441C667
 ms.date: 07/18/2017

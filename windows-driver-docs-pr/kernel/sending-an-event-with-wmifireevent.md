@@ -1,6 +1,5 @@
 ---
 title: Sending an Event with WmiFireEvent
-author: windows-driver-content
 description: Sending an Event with WmiFireEvent
 ms.assetid: f9cf8491-0f5a-4d83-849f-3edb77488092
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "WmiFireEvent", "dynamic instance names WDK WMI"]

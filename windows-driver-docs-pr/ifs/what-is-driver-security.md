@@ -1,6 +1,5 @@
 ---
 title: What is Driver Security
-author: windows-driver-content
 description: What is Driver Security
 ms.assetid: df959e2b-c779-4171-b408-32fbe52ed7af
 keywords:

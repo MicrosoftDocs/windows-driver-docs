@@ -1,6 +1,5 @@
 ---
 title: WriteableTag protocol
-author: windows-driver-content
 description: WriteableTag protocol
 ms.assetid: C2953050-4246-45BE-B486-DF468C13B885
 keywords:

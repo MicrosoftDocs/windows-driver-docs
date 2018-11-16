@@ -1,6 +1,5 @@
 ---
 title: WIA-TWAIN Locking
-author: windows-driver-content
 description: WIA-TWAIN Locking
 ms.assetid: bf2dc7f5-f3a0-4c51-86e1-854d0704074a
 ms.date: 04/20/2017

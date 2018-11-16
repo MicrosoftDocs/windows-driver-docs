@@ -1,6 +1,5 @@
 ---
 title: Processing I/O Operations
-author: windows-driver-content
 description: Processing I/O Operations
 ms.assetid: 750fa89b-dbdf-45ff-bfa5-83c717d2d7bb
 keywords:

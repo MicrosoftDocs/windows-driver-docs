@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddNull method
-author: windows-driver-content
 description: The AddNull method adds a new response of type BIDI\_NULL to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

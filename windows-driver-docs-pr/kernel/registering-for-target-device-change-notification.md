@@ -1,6 +1,5 @@
 ---
 title: Registering for Target Device Change Notification
-author: windows-driver-content
 description: Registering for Target Device Change Notification
 ms.assetid: 5f7a9c44-c9a4-4ff8-a97d-ad2462b86af0
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "registering target device change notifications", "IoRegisterPlugPlayNotification"]

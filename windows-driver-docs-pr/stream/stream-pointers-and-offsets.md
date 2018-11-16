@@ -1,6 +1,5 @@
 ---
 title: Stream Pointers and Offsets
-author: windows-driver-content
 description: Stream Pointers and Offsets
 ms.assetid: ef9dc015-f0ee-49a6-8774-cfb0223c8b12
 keywords:

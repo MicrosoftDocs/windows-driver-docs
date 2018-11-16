@@ -1,6 +1,5 @@
 ---
 title: Determining Whether the Operating System Is Running in Safe Mode
-author: windows-driver-content
 description: Determining Whether the Operating System Is Running in Safe Mode
 ms.assetid: 5724a731-81a2-4c4e-a9e2-146859977e44
 keywords: ["Safe Mode WDK kernel", "operating system Safe Mode WDK kernel", "InitSafeBootMode", "preventing Safe Mode WDK kernel", "checking Safe Mode", "verifying Safe Mode", "startup Safe Mode WDK kernel"]

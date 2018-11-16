@@ -1,6 +1,5 @@
 ---
 title: SPB I/O Requests
-author: windows-driver-content
 description: These IOCTLs are sent by a client (peripheral driver) handled by controller driver.
 ms.assetid: 4b8ed75e-1f03-4b7a-ad9d-0dfa9b20274c
 ms.date: 11/29/2017

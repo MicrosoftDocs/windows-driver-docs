@@ -1,6 +1,5 @@
 ---
 title: Data Type Wrappers
-author: windows-driver-content
 description: Data Type Wrappers
 ms.assetid: 8c88002b-4d0a-4e81-b50d-f765caa7cf80
 keywords:

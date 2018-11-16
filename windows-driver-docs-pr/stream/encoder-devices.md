@@ -1,6 +1,5 @@
 ---
 title: Encoder Devices
-author: windows-driver-content
 description: Encoder Devices
 ms.assetid: 156b1d6d-c6f6-4ab3-a91e-3124351c6ae5
 keywords:

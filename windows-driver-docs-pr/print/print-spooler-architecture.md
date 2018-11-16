@@ -1,6 +1,5 @@
 ---
 title: Print Spooler Architecture
-author: windows-driver-content
 description: Print Spooler Architecture
 ms.assetid: 712da599-29cb-4df9-9627-49907f0aa500
 keywords:

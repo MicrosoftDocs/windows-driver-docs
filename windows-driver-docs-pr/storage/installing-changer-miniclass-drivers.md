@@ -1,6 +1,5 @@
 ---
 title: Installing Changer Miniclass Drivers
-author: windows-driver-content
 description: Installing Changer Miniclass Drivers
 ms.assetid: 923e1128-bacc-450b-b250-bc666951965d
 keywords:

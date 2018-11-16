@@ -1,6 +1,5 @@
 ---
 title: Printer Driver Architecture
-author: windows-driver-content
 description: Printer Driver Architecture
 ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
 keywords:

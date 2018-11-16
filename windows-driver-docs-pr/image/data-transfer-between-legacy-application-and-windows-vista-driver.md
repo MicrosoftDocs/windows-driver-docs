@@ -1,6 +1,5 @@
 ---
 title: Data Transfer Between Legacy Application and Windows Vista Driver
-author: windows-driver-content
 description: Data Transfer Between Legacy Application and Windows Vista Driver
 ms.assetid: 83817277-3526-4f64-8e7c-7e02c8cd77bd
 ms.date: 04/20/2017

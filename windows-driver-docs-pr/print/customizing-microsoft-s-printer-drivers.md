@@ -1,6 +1,5 @@
 ---
 title: Customizing Microsoft Printer Drivers
-author: windows-driver-content
 description: Customizing Microsoft Printer Drivers
 ms.assetid: b7761209-1f6f-4288-af47-4ed855c2e629
 keywords:

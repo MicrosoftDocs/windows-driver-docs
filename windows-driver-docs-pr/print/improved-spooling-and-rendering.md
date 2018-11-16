@@ -1,6 +1,5 @@
 ---
 title: Improved Spooling and Rendering
-author: windows-driver-content
 description: Improved Spooling and Rendering
 ms.assetid: 0e385282-fbc8-4c4b-9070-19ee8290ddd6
 keywords:

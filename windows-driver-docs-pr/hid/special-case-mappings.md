@@ -1,6 +1,5 @@
 ---
 title: Special Case Mappings
-author: windows-driver-content
 description: Special Case Mappings
 ms.assetid: 1691e0e5-7b05-40e1-8747-40926f2eba9c
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "special case mappings WDK joysticks", "case mappings WDK joysticks", "Z-axis case mapping WDK joysticks", "car controller case mapping WDK joysticks", "mapping axes"]

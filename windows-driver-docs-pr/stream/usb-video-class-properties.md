@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Properties
-author: windows-driver-content
 description: Clients of the USB Video Class can use the following video capture property sets described in this topic.
 ms.assetid: 6295926b-4ec5-42f5-98ca-a375d36f917b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Adding Polling Event Support
-author: windows-driver-content
 description: Adding Polling Event Support
 ms.assetid: 7c7617d4-22d6-48a8-b69c-dd0347f078dd
 ms.date: 04/20/2017

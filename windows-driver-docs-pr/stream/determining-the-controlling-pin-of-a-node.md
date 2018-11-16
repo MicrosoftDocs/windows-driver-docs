@@ -1,6 +1,5 @@
 ---
 title: Determining the Controlling Pin of a Node
-author: windows-driver-content
 description: Determining the Controlling Pin of a Node
 ms.assetid: be1236e2-c710-4833-863e-54e826e53f92
 keywords:

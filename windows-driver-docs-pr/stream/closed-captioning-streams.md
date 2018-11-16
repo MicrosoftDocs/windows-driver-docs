@@ -1,6 +1,5 @@
 ---
 title: Closed Captioning Streams
-author: windows-driver-content
 description: Closed Captioning Streams
 ms.assetid: ee6cfac6-c532-4e73-81b2-ee767d2d6a4d
 keywords:

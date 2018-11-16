@@ -1,6 +1,5 @@
 ---
 title: Data field properties
-author: windows-driver-content
 description: This topic describes the sensor properties that are used for data fields only.
 ms.assetid: A7FA02AA-7B7B-45B4-A432-4B4ED69CB19C
 ms.date: 07/20/2018

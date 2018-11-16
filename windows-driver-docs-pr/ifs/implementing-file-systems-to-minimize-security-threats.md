@@ -1,6 +1,5 @@
 ---
 title: Implementing File Systems to Minimize Security Threats
-author: windows-driver-content
 description: Implementing File Systems to Minimize Security Threats
 ms.assetid: a7c974ee-9f0b-4a51-aa56-5c67ee2d1180
 keywords:

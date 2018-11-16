@@ -1,6 +1,5 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
-author: windows-driver-content
 description: How WHEA Performs PFA on ECC Memory
 ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:

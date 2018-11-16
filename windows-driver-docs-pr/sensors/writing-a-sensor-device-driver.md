@@ -1,6 +1,5 @@
 ---
 title: Writing a sensor device driver
-author: windows-driver-content
 description: Writing a sensor device driver
 ms.assetid: f876bbfb-6595-484e-a917-0b3f5932b3c8
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Language Monitor Functions
-author: windows-driver-content
 description: Language Monitor Functions
 ms.assetid: ffe1a52f-69cc-4346-945f-3f1bc0a1a91e
 keywords:

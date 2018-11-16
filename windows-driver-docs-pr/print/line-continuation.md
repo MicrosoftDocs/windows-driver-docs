@@ -1,6 +1,5 @@
 ---
 title: Line Continuation
-author: windows-driver-content
 description: Line Continuation
 ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
 keywords:

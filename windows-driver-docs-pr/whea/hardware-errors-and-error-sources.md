@@ -1,6 +1,5 @@
 ---
 title: Hardware Errors and Error Sources
-author: windows-driver-content
 description: Hardware Errors and Error Sources
 ms.assetid: 047e5d6d-a7c6-4c20-bfb2-c1d686ec0b7b
 keywords:

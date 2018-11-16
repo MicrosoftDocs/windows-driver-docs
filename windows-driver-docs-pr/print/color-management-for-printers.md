@@ -1,6 +1,5 @@
 ---
 title: Color Management for Printers
-author: windows-driver-content
 description: Color Management for Printers
 ms.assetid: b83a46b3-57cb-463f-9a57-64a9b73035e2
 keywords:

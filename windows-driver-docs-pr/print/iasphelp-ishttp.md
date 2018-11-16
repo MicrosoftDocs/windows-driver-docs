@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_IsHTTP method
-author: windows-driver-content
 description: The IsHTTP property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 MS-HAID:
 - 'webfnc\_e3e58eea-498f-4e85-8072-2c49ac50d733.xml'

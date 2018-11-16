@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CREATE_PORT_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_CREATE_PORT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CREATE_PORT.
 ms.assetid: CE0ACE11-5E7A-43E1-BE0B-8BA8F7FF8432
 ms.date: 07/18/2017

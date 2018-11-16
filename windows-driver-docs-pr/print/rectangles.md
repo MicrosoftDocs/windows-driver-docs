@@ -1,6 +1,5 @@
 ---
 title: Rectangles
-author: windows-driver-content
 description: Rectangles
 ms.assetid: c0991533-baf3-4fb6-8e1c-fb74c862b860
 keywords:

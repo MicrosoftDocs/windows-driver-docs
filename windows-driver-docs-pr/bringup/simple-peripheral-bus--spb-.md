@@ -1,6 +1,5 @@
 ---
 title: Simple peripheral bus (SPB)
-author: windows-driver-content
 description: SoC integrated circuits make extensive use of simple, low-pin-count, and low-power serial interconnects for connecting to platform peripherals.
 ms.assetid: E85BDD36-7ECE-47DB-A770-E28DA8383BA2
 ms.date: 04/20/2017

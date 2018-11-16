@@ -1,6 +1,5 @@
 ---
 title: NumberUp
-author: windows-driver-content
 description: NumberUp
 ms.assetid: d3c29bbc-2c6e-4e5b-b596-04eec939eb5b
 ms.date: 11/28/2017

@@ -1,6 +1,5 @@
 ---
 title: Summary of Read/Write Dispatch Routines
-author: windows-driver-content
 description: Summary of Read/Write Dispatch Routines
 ms.assetid: 2ab1cde7-89e8-449f-b2a0-12aa0762ebf3
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]

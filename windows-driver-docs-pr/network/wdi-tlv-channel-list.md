@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CHANNEL_LIST
-author: windows-driver-content
 description: WDI_TLV_CHANNEL_LIST is a TLV that contains one or more channel numbers.
 ms.assetid: DBBA28C2-D80F-409B-BEE6-81B6FEDF7484
 ms.date: 07/18/2017

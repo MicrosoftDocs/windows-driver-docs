@@ -1,6 +1,5 @@
 ---
 title: IEEE 1394 bus driver design guide
-author: windows-driver-content
 description: IEEE 1394 bus driver design guide
 ms.assetid: 815d6295-a64d-4c9b-94f5-bced729acb54
 keywords:

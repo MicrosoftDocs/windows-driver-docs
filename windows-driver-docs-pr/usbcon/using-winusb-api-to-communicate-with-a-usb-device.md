@@ -1,7 +1,6 @@
 ---
 Description: This topic includes a detailed walkthrough of how to use WinUSB Functions to communicate with a USB device that is using Winusb.sys as its function driver.
 title: How to Access a USB Device by Using WinUSB Functions
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

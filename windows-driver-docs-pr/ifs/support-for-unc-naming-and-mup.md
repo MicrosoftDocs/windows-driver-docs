@@ -1,6 +1,5 @@
 ---
 title: Support for UNC Naming and MUP
-author: windows-driver-content
 description: Support for UNC Naming and MUP
 ms.assetid: 07c4a498-10c7-41b2-aaeb-73cab946f392
 keywords:

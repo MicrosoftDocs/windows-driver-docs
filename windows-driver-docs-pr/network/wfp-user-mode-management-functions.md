@@ -1,6 +1,5 @@
 ---
 title: WFP user mode management functions
-author: windows-driver-content
 description: This topic describes WFP user mode management functions.
 ms.assetid: 14accd49-5b96-40]()e6-b9d7-6638a4e5c2dc
 keywords:

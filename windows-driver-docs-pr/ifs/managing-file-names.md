@@ -1,6 +1,5 @@
 ---
 title: Managing File Names
-author: windows-driver-content
 description: Managing File Names
 ms.assetid: 390c3817-e306-4d20-9ec0-9d68ccc8ff1b
 keywords:

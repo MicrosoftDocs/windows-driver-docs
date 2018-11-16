@@ -1,6 +1,5 @@
 ---
 title: Capture, Preview, and Still Category
-author: windows-driver-content
 description: Capture, Preview, and Still Category
 ms.assetid: b82cc3b6-1cea-4864-9501-95919f05455f
 keywords:

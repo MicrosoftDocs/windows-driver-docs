@@ -1,6 +1,5 @@
 ---
 title: Adding GDL Extensions to an Existing PPD File
-author: windows-driver-content
 description: Adding GDL Extensions to an Existing PPD File
 ms.assetid: 4d425701-85af-43e8-9ff2-ddfcc755f90c
 keywords:

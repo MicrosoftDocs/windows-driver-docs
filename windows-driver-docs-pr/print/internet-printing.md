@@ -1,6 +1,5 @@
 ---
 title: Internet Printing
-author: windows-driver-content
 description: Internet Printing
 ms.assetid: be448fee-a86e-4a78-8d50-5753a7b2c8f0
 keywords:

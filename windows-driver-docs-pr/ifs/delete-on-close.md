@@ -1,6 +1,5 @@
 ---
 title: Delete on Close
-author: windows-driver-content
 description: Delete on Close
 ms.assetid: 340e470f-7791-4677-9369-75ed8fa9f8ad
 keywords:

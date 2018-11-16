@@ -1,6 +1,5 @@
 ---
 title: Synchronization Examples
-author: windows-driver-content
 description: Synchronization Examples
 ms.assetid: b9290fab-8213-4083-bda5-0e6c2af737a6
 keywords:

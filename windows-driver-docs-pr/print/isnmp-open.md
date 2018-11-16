@@ -1,6 +1,5 @@
 ---
 title: ISNMP Open method
-author: windows-driver-content
 description: The Open method enables an ASP Web page to create a communication path to a specified SNMP agent.
 MS-HAID:
 - 'webfnc\_2be497fa-98d8-4fb3-997c-fa1345ed4648.xml'

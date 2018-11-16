@@ -1,6 +1,5 @@
 ---
 title: DispatchDeviceControl in Lowest-Level Drivers
-author: windows-driver-content
 description: DispatchDeviceControl in Lowest-Level Drivers
 ms.assetid: 51caacd3-c9e0-450e-9060-f308ab46b5a0
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]

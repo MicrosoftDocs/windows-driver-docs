@@ -1,6 +1,5 @@
 ---
 title: POS device driver design guide
-author: windows-driver-content
 description: This section provides design guidance for point-of-service (POS) device drivers.
 ms.assetid: D00B2CDF-C5CB-4CB5-A6AE-ECDE52B7603B
 ms.author: windowsdriverdev

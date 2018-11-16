@@ -1,6 +1,5 @@
 ---
 title: Creating Property Sheet Pages for Printers
-author: windows-driver-content
 description: Creating Property Sheet Pages for Printers
 ms.assetid: b9b7aa52-39b7-4809-acdf-e72293da37e1
 keywords:

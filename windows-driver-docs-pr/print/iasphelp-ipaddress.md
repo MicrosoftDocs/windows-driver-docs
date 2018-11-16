@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_IPAddress method
-author: windows-driver-content
 description: The IPAddress property enables an ASP Web page to obtain a printer's IP address.
 MS-HAID:
 - 'webfnc\_f0b5a4c6-50db-48a0-a10d-2a835cac32ac.xml'

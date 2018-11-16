@@ -1,6 +1,5 @@
 ---
 title: Restrictions on SCSI Miniport Drivers that Manage the Boot Drive
-author: windows-driver-content
 description: Restrictions on SCSI Miniport Drivers that Manage the Boot Drive
 ms.assetid: ff9e01d1-1f4d-480d-85cc-c100e4cb350f
 keywords:

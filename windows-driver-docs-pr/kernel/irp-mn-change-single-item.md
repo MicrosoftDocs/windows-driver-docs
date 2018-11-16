@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_CHANGE_SINGLE_ITEM
-author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 9839ebb2-31a9-4cb0-adbf-1882583849fc

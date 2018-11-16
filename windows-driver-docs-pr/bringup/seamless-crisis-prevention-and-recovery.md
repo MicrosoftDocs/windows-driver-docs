@@ -1,6 +1,5 @@
 ---
 title: Seamless crisis prevention and recovery
-author: windows-driver-content
 description: If a firmware update fails, the results can be devastating.
 ms.assetid: F002100E-2505-4CCB-B048-27D9CA1C8F3E
 ms.date: 08/06/2018

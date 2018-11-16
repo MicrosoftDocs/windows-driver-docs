@@ -1,6 +1,5 @@
 ---
 title: Introduction to WDM
-author: windows-driver-content
 description: To allow driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems, the Windows Driver Model (WDM) was introduced. Kernel-mode drivers that follow WDM rules are called WDM drivers.
 ms.assetid: 00225ec6-fe56-4cbc-b94d-2ba5f28c0bb9
 keywords: ["WDM WDK kernel", "Windows Driver Model WDK kernel", "WDM drivers WDK kernel", "Wdm.h", "Ntddk.h", "WDM drivers WDK kernel , about WDM drivers"]

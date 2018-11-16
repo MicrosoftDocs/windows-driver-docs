@@ -1,6 +1,5 @@
 ---
 title: KS Mediums
-author: windows-driver-content
 description: KS Mediums
 ms.assetid: c94c738c-66c6-491b-9157-28cccf95af4d
 keywords:

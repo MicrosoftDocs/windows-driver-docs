@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbWritePrintDataProgress interface
-author: windows-driver-content
 description: The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the writePrintData JavaScript function call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

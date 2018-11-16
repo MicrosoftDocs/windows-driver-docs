@@ -1,6 +1,5 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
-author: windows-driver-content
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
 ms.assetid: 8808bb5d-e00d-4b19-87ad-4a071a896e22
 ms.date: 04/20/2017

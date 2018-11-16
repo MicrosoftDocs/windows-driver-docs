@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_TCP_OFFLOAD_HW_CAPABILITIES
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_TCP_OFFLOAD_HW_CAPABILITIES GUID for the NDIS WMI interface.
 ms.assetid: 5918fcb0-ebcf-4021-99a5-9ecfd2fdb987
 keywords:

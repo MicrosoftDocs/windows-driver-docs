@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_PNP_DEVICE_STATE
-author: windows-driver-content
 description: Function, filter, and bus drivers can handle this request.
 ms.date: 08/12/2017
 ms.assetid: 24362a20-9e9d-4566-bc95-ce52b91056af

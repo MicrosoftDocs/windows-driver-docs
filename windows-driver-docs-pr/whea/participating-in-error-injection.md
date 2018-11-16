@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Injection
-author: windows-driver-content
 description: Participating in Error Injection
 ms.assetid: 0bd9efbd-e98d-457a-a28f-e09dcb5ae24d
 keywords:

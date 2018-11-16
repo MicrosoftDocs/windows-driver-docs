@@ -1,6 +1,5 @@
 ---
 title: Testing sensor functionality with the Sensor Diagnostic Tool
-author: windows-driver-content
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
 ms.assetid: 447E1348-53BA-4AD4-9010-A6452F46A827
 keywords:

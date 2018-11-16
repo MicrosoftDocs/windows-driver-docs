@@ -1,6 +1,5 @@
 ---
 title: Set File Information Processing
-author: windows-driver-content
 description: Set File Information Processing
 ms.assetid: bda94e8d-0be1-4730-a82e-4aa4d3763cce
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WHEA Changes for Windows Server 2008 and Windows Vista SP1
-author: windows-driver-content
 description: WHEA Changes for Windows Server 2008 and Windows Vista SP1
 ms.assetid: fd66ee01-e262-45c2-bced-549192b0eca3
 keywords:

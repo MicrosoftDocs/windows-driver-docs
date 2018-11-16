@@ -1,6 +1,5 @@
 ---
 title: Creating a Transactional Client
-author: windows-driver-content
 description: Creating a Transactional Client
 ms.assetid: 75d4758b-dfba-431b-9bfa-9dcb98c2a7cc
 keywords: ["transactional clients WDK KTM", "transactional clients WDK KTM , creating transactional clients"]

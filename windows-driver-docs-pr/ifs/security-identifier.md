@@ -1,6 +1,5 @@
 ---
 title: Security Identifier
-author: windows-driver-content
 description: Security Identifier
 ms.assetid: e4c39d83-6f32-406c-b8d5-d41305a8976f
 keywords:

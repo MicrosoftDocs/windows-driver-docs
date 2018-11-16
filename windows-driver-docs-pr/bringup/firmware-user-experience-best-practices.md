@@ -1,7 +1,6 @@
 ---
 title: Firmware user experience (UX) best practices
 description: Firmware user experience (UX) best practices
-author: windows-driver-content
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

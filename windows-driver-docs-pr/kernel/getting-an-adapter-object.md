@@ -1,6 +1,5 @@
 ---
 title: Getting an Adapter Object
-author: windows-driver-content
 description: Getting an Adapter Object
 ms.assetid: 2af4ac28-b3c0-4e46-afb1-9c6897c67f03
 keywords: ["adapter objects WDK kernel , getting", "DEVICE_DESCRIPTION", "DMA_OPERATIONS", "DMA transfers WDK kernel , adapter objects"]

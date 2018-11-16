@@ -1,6 +1,5 @@
 ---
 title: Other WDI data types
-author: windows-driver-content
 description: This topic describes other data types for WDI miniport drivers.
 ms.assetid: 33103199-03ED-4DF9-A3EB-C0E154747C78
 keywords:

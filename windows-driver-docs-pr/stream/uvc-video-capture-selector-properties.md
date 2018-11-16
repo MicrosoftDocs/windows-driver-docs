@@ -1,6 +1,5 @@
 ---
 title: UVC Video Capture Selector Properties
-author: windows-driver-content
 description: UVC Video Capture Selector Properties
 ms.assetid: f3af81a1-5c9b-4af6-a931-5146ef187b36
 keywords:

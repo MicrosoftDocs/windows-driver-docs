@@ -1,6 +1,5 @@
 ---
 title: GDL HexSubStrings
-author: windows-driver-content
 description: GDL HexSubStrings
 ms.assetid: 7451fd1f-a765-486a-bd90-bc01eac2c388
 keywords:

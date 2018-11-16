@@ -1,6 +1,5 @@
 ---
 title: Other ACPI namespace objects
-author: windows-driver-content
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.assetid: 41EA8C3D-F2C9-4BA9-A839-FCB66F271E3C
 ms.date: 05/16/2018

@@ -1,6 +1,5 @@
 ---
 title: Other sensor properties
-author: windows-driver-content
 description: In addition to the Common sensor properties and the Enumeration properties, there are other sensor properties that are specific to certain types of sensors. This section discusses these other properties.
 ms.assetid: E8649FE1-3BC3-4F55-953B-82A1AACCF572
 ms.date: 07/20/2018

@@ -1,6 +1,5 @@
 ---
 title: Canceling a Wait/Wake IRP
-author: windows-driver-content
 description: Canceling a Wait/Wake IRP
 ms.assetid: 08e1d11a-91a3-496a-b3ad-f99456e4ce1d
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , canceling", "canceling wait/wake IRPs", "Cancel routines, wait/wake IRPs"]

@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication
-author: windows-driver-content
 description: Bidirectional Communication
 ms.assetid: c88f5f43-4a14-4f63-9f17-b6680fc0d645
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IOleCvt ToUtf8 method
-author: windows-driver-content
 description: The ToUtf8 property enables an ASP Web page to translate a string of Unicode characters to the UTF-8 format.
 MS-HAID:
 - 'webfnc\_b88265bd-9013-4c9b-abe2-00010d5b43c3.xml'

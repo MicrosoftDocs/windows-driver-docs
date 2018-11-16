@@ -1,6 +1,5 @@
 ---
 title: Managing Device Performance States
-author: windows-driver-content
 description: Managing Device Performance States
 ms.assetid: 5a4cc09a-e86e-4e5a-98b2-0351b253b5b6
 keywords: ["power management WDK kernel , device performance states", "device performance states WDK power management", "performance states WDK power management", "custom power settings WDK power management"]

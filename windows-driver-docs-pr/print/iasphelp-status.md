@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_Status method
-author: windows-driver-content
 description: The Status property enables an ASP Web page to determine the printer status.
 MS-HAID:
 - 'webfnc\_30feffa7-1aa0-4b66-9d0a-1f66025272c3.xml'

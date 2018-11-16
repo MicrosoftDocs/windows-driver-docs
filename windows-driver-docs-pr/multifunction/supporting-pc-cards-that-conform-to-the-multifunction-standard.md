@@ -1,6 +1,5 @@
 ---
 title: Supporting PC Cards That Conform to the Multifunction Standard
-author: windows-driver-content
 description: Supporting PC Cards That Conform to the Multifunction Standard
 ms.assetid: 1ab295b6-42c9-46fc-97e0-2228e189ff37
 keywords:

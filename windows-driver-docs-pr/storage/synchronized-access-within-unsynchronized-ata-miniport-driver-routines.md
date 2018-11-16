@@ -1,6 +1,5 @@
 ---
 title: Synchronized Access within ATA Miniport Driver Routines
-author: windows-driver-content
 description: Synchronized Access within Unsynchronized ATA Miniport Driver Routines
 ms.assetid: ed047579-9f22-4725-a4b0-3c44b8db89ef
 keywords:

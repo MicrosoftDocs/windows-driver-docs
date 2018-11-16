@@ -1,6 +1,5 @@
 ---
 title: Paging an Entire Driver
-author: windows-driver-content
 description: Paging an Entire Driver
 ms.assetid: d861160f-e429-4ff3-9ca6-4fce4d5d6c1b
 keywords: ["pageable drivers WDK kernel , paging entire drivers", "paging entire drivers WDK", "reference counts WDK pageable drivers", "overriding pageable or nonpageable attributes WDK"]

@@ -1,7 +1,6 @@
 ---
 Description: Common failures for USB tests in the Windows HLK.
 title: Common failures for USB tests in the Windows HLK
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

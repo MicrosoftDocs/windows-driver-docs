@@ -1,6 +1,5 @@
 ---
 title: Attribute Types
-author: windows-driver-content
 description: Attribute Types
 ms.assetid: 6ca5d3d0-fec1-49b6-af5f-ead57371e0d0
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Extension Unit Plug-In Architecture
-author: windows-driver-content
 description: Extension Unit Plug-In Architecture
 ms.assetid: cf2b32dd-0b65-41ce-b6e8-a9068e232600
 keywords:

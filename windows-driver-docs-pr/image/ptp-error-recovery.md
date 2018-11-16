@@ -1,6 +1,5 @@
 ---
 title: PTP Error Recovery
-author: windows-driver-content
 description: PTP Error Recovery
 ms.assetid: 0f89d6b6-9d95-4e98-aa90-08c9508a2228
 ms.date: 04/20/2017

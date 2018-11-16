@@ -1,6 +1,5 @@
 ---
 title: Introduction to Storage Class Drivers
-author: windows-driver-content
 description: Introduction to Storage Class Drivers
 ms.assetid: 0ea462a9-5e6f-419f-af36-50f50901143d
 keywords:

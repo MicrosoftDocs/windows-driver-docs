@@ -1,6 +1,5 @@
 ---
 title: Codec Merit Validation
-author: windows-driver-content
 description: Codec Merit Validation
 ms.assetid: 595a21ea-bae2-410e-874a-7f3429ac02a1
 keywords:

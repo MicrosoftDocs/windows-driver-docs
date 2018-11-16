@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture Definitions
-author: windows-driver-content
 description: Windows Hardware Error Architecture Definitions
 ms.assetid: 4de5ead1-aa17-4c14-9afc-bc0d9689a13e
 keywords:

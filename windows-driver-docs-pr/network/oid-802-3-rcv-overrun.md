@@ -1,6 +1,5 @@
 ---
 title: OID_802_3_RCV_OVERRUN
-author: windows-driver-content
 description: This topic describes the OID_802_3_RCV_OVERRUN object identifier (OID).
 ms.assetid: 7F99D74A-8F76-4270-8826-3C774F892A25
 keywords:

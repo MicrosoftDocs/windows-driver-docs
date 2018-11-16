@@ -1,6 +1,5 @@
 ---
 title: Printer Attribute Format
-author: windows-driver-content
 description: Printer Attribute Format
 ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
 keywords:

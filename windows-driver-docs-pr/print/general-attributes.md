@@ -1,6 +1,5 @@
 ---
 title: General Attributes
-author: windows-driver-content
 description: General Attributes
 ms.assetid: c48fabff-0580-478f-b423-d959815bbeb4
 keywords:

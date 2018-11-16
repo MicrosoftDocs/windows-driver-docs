@@ -1,6 +1,5 @@
 ---
 title: Adding WIA Properties to a WIA Item
-author: windows-driver-content
 description: Adding WIA Properties to a WIA Item
 ms.assetid: 0cf4748f-c50a-4781-8b8d-3fb73e5d7242
 ms.date: 04/20/2017

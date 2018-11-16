@@ -1,6 +1,5 @@
 ---
 title: Point and Print with Driver Packages
-author: windows-driver-content
 description: Point and Print with Driver Packages
 ms.assetid: 4574d0c3-2ec5-4870-96ac-f828ba8515b3
 keywords:

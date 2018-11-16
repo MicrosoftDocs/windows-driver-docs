@@ -1,6 +1,5 @@
 ---
 title: Test-sign a driver package
-author: windows-driver-content
 description: This section describes how to test-sign a driver package.
 ms.assetid: 3BC92099-A464-4C62-9EB7-DD6AA0D1FB03
 ms.date: 05/15/2018

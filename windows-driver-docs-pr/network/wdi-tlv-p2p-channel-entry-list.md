@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_ENTRY_LIST
-author: windows-driver-content
 description: WDI_TLV_P2P_CHANNEL_ENTRY_LIST is a TLV that contains a channel number list.
 ms.assetid: 10739684-C00C-4AE7-A3B2-D4A6F1E9829B
 ms.date: 07/18/2017

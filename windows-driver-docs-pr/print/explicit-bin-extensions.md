@@ -1,6 +1,5 @@
 ---
 title: Explicit Bin Extensions
-author: windows-driver-content
 description: Explicit Bin Extensions
 ms.assetid: a9f7f290-1af8-4312-b348-c1c98a3fc4a6
 keywords:

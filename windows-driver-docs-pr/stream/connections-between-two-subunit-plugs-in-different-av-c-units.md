@@ -1,6 +1,5 @@
 ---
 title: Connections Between Two Subunit Plugs in Different AV/C Units
-author: windows-driver-content
 description: Connections Between Two Subunit Plugs in Different AV/C Units
 ms.assetid: 20d209b3-2516-4913-9f31-b14afddb78fb
 keywords:

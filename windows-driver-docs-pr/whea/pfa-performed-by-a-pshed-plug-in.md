@@ -1,6 +1,5 @@
 ---
 title: PFA Performed by a PSHED Plug-In
-author: windows-driver-content
 description: PFA Performed by a PSHED Plug-In
 ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
 keywords:

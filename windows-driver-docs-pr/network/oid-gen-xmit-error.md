@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_XMIT_ERROR
-author: windows-driver-content
 description: As a query, the OID_GEN_XMIT_ERROR OID specifies the number of frames that a NIC fails to transmit.
 ms.assetid: c4f42271-812b-4da9-8280-79d3bddc5164
 ms.date: 08/08/2017

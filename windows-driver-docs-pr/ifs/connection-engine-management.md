@@ -1,6 +1,5 @@
 ---
 title: Connection Engine Management
-author: windows-driver-content
 description: Connection Engine Management
 ms.assetid: 00ac74c5-2a69-493f-ad9b-6fa2f9082ac1
 keywords:

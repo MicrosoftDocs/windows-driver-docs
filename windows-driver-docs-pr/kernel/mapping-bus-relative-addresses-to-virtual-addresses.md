@@ -1,6 +1,5 @@
 ---
 title: Mapping Bus-Relative Addresses to Virtual Addresses
-author: windows-driver-content
 description: Mapping Bus-Relative Addresses to Virtual Addresses
 ms.assetid: 16496465-8a30-4250-9d64-afd36a788ae2
 keywords: ["virtual address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses", "bus-relative memory space WDK kernel"]

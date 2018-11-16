@@ -1,6 +1,5 @@
 ---
 title: Programming Considerations for USBPRINT
-author: windows-driver-content
 description: Programming Considerations for USBPRINT
 ms.assetid: 351b3124-d584-4817-a5ce-09e16b54d41b
 keywords:

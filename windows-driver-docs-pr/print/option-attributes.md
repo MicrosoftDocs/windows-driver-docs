@@ -1,6 +1,5 @@
 ---
 title: Option Attributes
-author: windows-driver-content
 description: Option Attributes
 ms.assetid: 140837b9-2af6-485c-8b59-95fcd6502e18
 keywords:

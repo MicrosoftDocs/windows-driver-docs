@@ -1,6 +1,5 @@
 ---
 title: WSDMON Port Monitor
-author: windows-driver-content
 description: WSDMON Port Monitor
 ms.assetid: fd6b0136-ca6e-4882-b6b9-be868f0dfc18
 keywords:

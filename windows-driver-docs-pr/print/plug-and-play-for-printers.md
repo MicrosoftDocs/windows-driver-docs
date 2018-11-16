@@ -1,6 +1,5 @@
 ---
 title: Plug and Play for Printers
-author: windows-driver-content
 description: Plug and Play for Printers
 ms.assetid: 60d3afa7-e234-4e7b-940d-f625037c8486
 keywords:

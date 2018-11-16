@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File for a File System Filter Driver
-author: windows-driver-content
 description: Creating an INF File for a File System Filter Driver
 ms.assetid: 1e8d0e59-eabd-4bdb-9675-e693a0b364ca
 keywords:

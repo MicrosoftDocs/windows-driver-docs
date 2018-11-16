@@ -1,6 +1,5 @@
 ---
 title: Extending the Bidi Communication Schema
-author: windows-driver-content
 description: Extending the Bidi Communication Schema
 ms.assetid: b216a238-184e-4ebd-b9ef-227ff6bf4dbe
 keywords:

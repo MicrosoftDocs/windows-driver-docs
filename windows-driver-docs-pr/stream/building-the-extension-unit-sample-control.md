@@ -1,6 +1,5 @@
 ---
 title: Building the Extension Unit Sample Control
-author: windows-driver-content
 description: Building the Extension Unit Sample Control
 ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords:

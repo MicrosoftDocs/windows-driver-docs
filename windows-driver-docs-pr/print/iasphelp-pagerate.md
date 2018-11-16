@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PageRate method
-author: windows-driver-content
 description: The PageRate property enables an ASP Web page to determine a printer's page rate.
 MS-HAID:
 - 'webfnc\_f356953e-ac15-4948-9a6e-b83d3aec8e7b.xml'

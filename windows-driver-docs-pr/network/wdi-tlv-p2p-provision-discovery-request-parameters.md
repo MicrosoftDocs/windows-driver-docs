@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_PARAMETERS is a TLV that contains Wi-Fi Provision Discovery Request parameters.
 ms.assetid: 938F9CA0-0B34-4507-86CC-731C969335F7
 ms.date: 07/18/2017

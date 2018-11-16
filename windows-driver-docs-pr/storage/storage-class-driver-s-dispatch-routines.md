@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's Dispatch Routines
-author: windows-driver-content
 description: Storage Class Driver's Dispatch Routines
 ms.assetid: 99713661-5e99-4110-b369-afc084a2aaef
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: InputBins
-author: windows-driver-content
 description: InputBins
 ms.assetid: 5cf7dcec-b8ea-47c6-b2a3-1cdd431fd295
 ms.date: 11/28/2017

@@ -1,6 +1,5 @@
 ---
 title: Copyright Protection Implementation
-author: windows-driver-content
 description: Copyright Protection Implementation
 ms.assetid: 42d91ad3-615a-461a-846b-4876ac8decea
 keywords:

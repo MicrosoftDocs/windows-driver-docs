@@ -1,6 +1,5 @@
 ---
 title: System Power States
-author: windows-driver-content
 description: System Power States
 ms.assetid: bb30bc89-d1f2-4cb3-bcfb-fb76c69dba27
 keywords: ["system power states WDK kernel , about system power states", "state transitions WDK power management", "Sx names WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "waking states WDK power management"]

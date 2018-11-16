@@ -1,6 +1,5 @@
 ---
 title: Starting a Device in a Function Driver
-author: windows-driver-content
 description: Starting a Device in a Function Driver
 ms.assetid: 148a3128-9cb1-4a2c-a62e-45199476d968
 keywords: ["function drivers WDK PnP"]

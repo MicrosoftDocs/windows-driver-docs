@@ -1,6 +1,5 @@
 ---
 title: Creating Standard Resource Maps
-author: windows-driver-content
 description: Creating Standard Resource Maps
 ms.assetid: 97d95481-5290-41d3-a6e6-7cc142d4c2e8
 keywords:

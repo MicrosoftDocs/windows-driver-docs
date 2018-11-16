@@ -1,6 +1,5 @@
 ---
 title: DeviceID
-author: windows-driver-content
 description: DeviceID
 ms.assetid: 0fb02802-a7b6-4efa-b9b1-6d73059b425f
 keywords:

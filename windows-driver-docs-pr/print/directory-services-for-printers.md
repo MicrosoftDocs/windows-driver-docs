@@ -1,6 +1,5 @@
 ---
 title: Directory Services for Printers
-author: windows-driver-content
 description: Directory Services for Printers
 ms.assetid: 4b368602-67d9-4d26-a82b-8d14d8da2625
 keywords:

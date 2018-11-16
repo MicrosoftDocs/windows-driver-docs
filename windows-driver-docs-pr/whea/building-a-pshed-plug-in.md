@@ -1,6 +1,5 @@
 ---
 title: Building a PSHED Plug-In
-author: windows-driver-content
 description: Building a PSHED Plug-In
 ms.assetid: 2d4dc052-af8b-4ee1-a8e7-4dbbb3817616
 ms.date: 04/20/2017

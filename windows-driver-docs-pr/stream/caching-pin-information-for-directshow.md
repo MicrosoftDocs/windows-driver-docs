@@ -1,6 +1,5 @@
 ---
 title: Caching Pin Information for DirectShow
-author: windows-driver-content
 description: Caching Pin Information for DirectShow
 ms.assetid: 1e6a973b-32d2-4ac2-9cd6-f4d3c329cecf
 keywords:

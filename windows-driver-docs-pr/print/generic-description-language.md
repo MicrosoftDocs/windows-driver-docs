@@ -1,6 +1,5 @@
 ---
 title: Generic Description Language
-author: windows-driver-content
 description: Generic Description Language
 ms.assetid: 818037fd-90bb-46dd-a2e3-239d57ed5fcf
 keywords:

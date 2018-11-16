@@ -1,6 +1,5 @@
 ---
 title: OID_CO_SIGNALING_ENABLED
-author: windows-driver-content
 description: This topic describes the OID_CO_SIGNALING_ENABLED object identifier (OID).
 ms.assetid: 9ce95120-d6db-4570-80c1-4290ea8fc160
 keywords:

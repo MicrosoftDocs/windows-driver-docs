@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiDisableInterruptsCallback Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiDisableInterruptsCallback Routine
 ms.assetid: d6c668cc-cb8d-42f4-a6e0-74bbd8b1b27a
 keywords:

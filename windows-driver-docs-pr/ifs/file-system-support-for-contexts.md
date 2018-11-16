@@ -1,6 +1,5 @@
 ---
 title: File System Support for Contexts
-author: windows-driver-content
 description: File System Support for Contexts
 ms.assetid: 661ee3ff-3171-4d1e-a8fe-8d1852c5e990
 keywords:

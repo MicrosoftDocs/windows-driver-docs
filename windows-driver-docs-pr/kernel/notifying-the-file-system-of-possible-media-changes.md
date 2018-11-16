@@ -1,6 +1,5 @@
 ---
 title: Notifying the File System of Possible Media Changes
-author: windows-driver-content
 description: Notifying the File System of Possible Media Changes
 ms.assetid: b1956370-ec9c-4a43-90a8-12705d28e314
 keywords: ["removable media WDK kernel , notifying of media changes", "notifications WDK removable media", "media change notifications WDK removable media"]

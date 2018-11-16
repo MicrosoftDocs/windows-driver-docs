@@ -1,6 +1,5 @@
 ---
 title: Checking the PendingReturned Flag
-author: windows-driver-content
 description: Checking the PendingReturned Flag
 ms.assetid: cdcdffb0-4210-4bf0-984e-b0c3234df129
 keywords:

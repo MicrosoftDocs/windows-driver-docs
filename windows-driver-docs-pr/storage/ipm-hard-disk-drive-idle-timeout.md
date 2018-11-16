@@ -1,6 +1,5 @@
 ---
 title: IPM Hard Disk Drive Idle Timeout
-author: windows-driver-content
 description: IPM Hard Disk Drive Idle Timeout
 ms.assetid: 1dcc261a-803c-4c0e-a68e-29b00f46cd32
 ms.date: 04/20/2017

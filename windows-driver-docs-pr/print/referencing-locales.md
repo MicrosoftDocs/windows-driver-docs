@@ -1,6 +1,5 @@
 ---
 title: Referencing Locales
-author: windows-driver-content
 description: Referencing Locales
 ms.assetid: 63ea5534-b2e1-43aa-b45b-e4fe8bb69f49
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Installation Constraints
-author: windows-driver-content
 description: Installation Constraints
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
 keywords:

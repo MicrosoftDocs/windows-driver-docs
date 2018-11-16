@@ -1,6 +1,5 @@
 ---
 title: Printing a Print Job
-author: windows-driver-content
 description: Printing a Print Job
 ms.assetid: 2e881f99-9dbe-4e89-8628-feb05137c9b0
 keywords:

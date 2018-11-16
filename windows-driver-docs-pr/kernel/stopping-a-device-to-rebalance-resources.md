@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device to Rebalance Resources
-author: windows-driver-content
 description: Stopping a Device to Rebalance Resources
 ms.assetid: eed28d41-8a9d-4b9e-90d7-ea4ddeeaad2d
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]

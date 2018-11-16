@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_SAR_CONFIG
-author: windows-driver-content
 description: OID_WWAN_SAR_CONFIG gets or sets information about a mobile broadband (MB) device's Specific Absorption Rate (SAR) back off mode and level.
 ms.assetid: 78B049E0-A80E-42AA-9D81-D45BBCF84FCB
 ms.date: 08/17/2018

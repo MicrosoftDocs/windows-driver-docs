@@ -1,6 +1,5 @@
 ---
 title: Handling Stream Request Blocks
-author: windows-driver-content
 description: Handling Stream Request Blocks
 ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
 keywords:

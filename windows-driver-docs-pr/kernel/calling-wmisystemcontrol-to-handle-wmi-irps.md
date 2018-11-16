@@ -1,6 +1,5 @@
 ---
 title: Calling WmiSystemControl to Handle WMI IRPs
-author: windows-driver-content
 description: Calling WmiSystemControl to Handle WMI IRPs
 ms.assetid: a2fa53e2-6468-4c3c-8b41-9a97305abc43
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]

@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.EventHandler
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.EventHandler
 ms.assetid: d493de90-cb8c-44d1-8999-f1ceb26e5c15
 ms.date: 04/20/2017

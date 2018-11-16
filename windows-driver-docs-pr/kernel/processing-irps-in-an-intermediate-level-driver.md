@@ -1,6 +1,5 @@
 ---
 title: Processing IRPs in an Intermediate-Level Driver
-author: windows-driver-content
 description: Processing IRPs in an Intermediate-Level Driver
 ms.assetid: 7606ab1b-68af-4d27-8668-7662969b85b8
 keywords: ["IRPs WDK kernel , processing examples", "IoCompletion routines", "IoSetCompletionRoutine", "mirror drivers WDK IRPs", "allocating IRPs", "IoCallDriver"]

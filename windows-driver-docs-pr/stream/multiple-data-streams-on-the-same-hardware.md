@@ -1,6 +1,5 @@
 ---
 title: Multiple Data Streams on the same Hardware
-author: windows-driver-content
 description: Multiple Data Streams on the same Hardware
 ms.assetid: 23133022-6d00-44ad-8c0d-24715204cacc
 keywords:

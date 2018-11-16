@@ -1,6 +1,5 @@
 ---
 title: Deleting a Per-Stream Context
-author: windows-driver-content
 description: Deleting a Per-Stream Context
 ms.assetid: 293a2ba2-af8a-4c1b-bc35-5e37e6e84d57
 keywords:

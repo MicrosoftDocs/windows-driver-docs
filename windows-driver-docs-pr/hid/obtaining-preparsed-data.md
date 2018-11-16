@@ -1,6 +1,5 @@
 ---
 title: Obtaining Preparsed Data
-author: windows-driver-content
 description: Obtaining Preparsed Data
 ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
 keywords:

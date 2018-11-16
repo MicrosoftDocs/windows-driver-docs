@@ -1,6 +1,5 @@
 ---
 title: Cursor Commands
-author: windows-driver-content
 description: Cursor Commands
 ms.assetid: 3ef09c7e-0e88-4236-a4c9-d89eb7ec61cb
 keywords:

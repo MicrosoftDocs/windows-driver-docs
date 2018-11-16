@@ -1,6 +1,5 @@
 ---
 title: Feature Conflict Priority
-author: windows-driver-content
 description: Feature Conflict Priority
 ms.assetid: 1185f983-ed04-4610-8b93-684ae3e07e84
 keywords:

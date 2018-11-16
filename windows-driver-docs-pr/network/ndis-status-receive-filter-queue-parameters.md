@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS
-author: windows-driver-content
 description: The NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS status indicates to NDIS and overlying drivers that the current virtual machine (VM) queue parameters have changed on the network adapter.
 ms.assetid: 30782C77-578F-4533-8B6B-9D2F64EE6189
 ms.date: 08/08/2017

@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise Notes
-author: windows-driver-content
 description: GDL Exercise Notes
 ms.assetid: 39013410-ad8e-4b1a-9db7-2ec541f08989
 keywords:

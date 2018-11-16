@@ -1,6 +1,5 @@
 ---
 title: Stream Changes
-author: windows-driver-content
 description: Stream Changes
 ms.assetid: 3bd6a511-c602-4159-87b4-7e1e55c03b2e
 keywords:

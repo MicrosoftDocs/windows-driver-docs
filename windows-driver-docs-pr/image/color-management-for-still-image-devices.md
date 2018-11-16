@@ -1,6 +1,5 @@
 ---
 title: Color Management for Still Image Devices
-author: windows-driver-content
 description: Color Management for Still Image Devices
 ms.assetid: dfc4afad-221a-436c-9124-981a74f70ee3
 ms.date: 04/20/2017

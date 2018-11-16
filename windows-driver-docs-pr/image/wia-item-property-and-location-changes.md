@@ -1,6 +1,5 @@
 ---
 title: WIA Item Property and Location Changes
-author: windows-driver-content
 description: WIA Item Property and Location Changes
 ms.assetid: 4e8b3d2a-a28c-41d1-9c4b-8d85f28cf904
 ms.date: 04/20/2017

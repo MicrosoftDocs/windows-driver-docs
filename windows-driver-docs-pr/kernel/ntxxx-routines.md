@@ -1,6 +1,5 @@
 ---
 title: NtXxx Routines
-author: windows-driver-content
 description: NtXxx Routines
 ms.assetid: 71db6fa6-d1f8-4aed-9de1-bba1f6cee1ce
 ms.localizationpriority: medium

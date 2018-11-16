@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Request and Response Schemas
-author: windows-driver-content
 description: The Bidirectional Request and Response Schemas provide an XML-formatted set of queries and responses that can be used for bidirectional communication between applications and printers.
 ms.assetid: C005D90D-DCDB-410C-BD6F-83111849547E
 ms.date: 04/20/2017

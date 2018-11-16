@@ -1,6 +1,5 @@
 ---
 title: Sample Extension Unit Descriptor
-author: windows-driver-content
 description: Sample Extension Unit Descriptor
 ms.assetid: 283a28e6-9f73-4131-bcfb-b4983a92cecd
 keywords:

@@ -1,7 +1,6 @@
 ---
 Description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 title: Windows 8.1 - What's new for USB
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

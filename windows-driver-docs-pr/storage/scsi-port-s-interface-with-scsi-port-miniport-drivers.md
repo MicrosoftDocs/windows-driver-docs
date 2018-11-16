@@ -1,6 +1,5 @@
 ---
 title: SCSI Port's Interface with SCSI Port Miniport Drivers
-author: windows-driver-content
 description: SCSI Port's Interface with SCSI Port Miniport Drivers
 ms.assetid: e6bd9861-5b89-40cc-92ab-0d23f18ba805
 ms.date: 04/20/2017

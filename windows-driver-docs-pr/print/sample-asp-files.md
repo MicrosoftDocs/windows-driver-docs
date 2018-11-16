@@ -1,6 +1,5 @@
 ---
 title: Sample ASP Files
-author: windows-driver-content
 description: Sample ASP Files
 ms.assetid: 52a555e2-a84f-4f28-869b-dbf22d1c16b3
 keywords:

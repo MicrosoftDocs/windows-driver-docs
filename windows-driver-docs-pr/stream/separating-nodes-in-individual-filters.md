@@ -1,6 +1,5 @@
 ---
 title: Separating Nodes in Individual Filters
-author: windows-driver-content
 description: Separating Nodes in Individual Filters
 ms.assetid: 9ae5c72a-a97b-48aa-80c1-bb8767701497
 keywords:

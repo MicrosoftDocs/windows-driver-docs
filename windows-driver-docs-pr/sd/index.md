@@ -1,6 +1,5 @@
 ---
 title: SD Bus Driver Design Guide
-author: windows-driver-content
 description: SD Bus Driver Design Guide
 ms.assetid: c082d86c-8f81-41ef-afac-bd9fd76696fd
 keywords:

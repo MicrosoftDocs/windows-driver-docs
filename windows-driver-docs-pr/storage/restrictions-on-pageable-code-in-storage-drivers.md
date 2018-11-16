@@ -1,6 +1,5 @@
 ---
 title: Restrictions on Pageable Code in Storage Drivers
-author: windows-driver-content
 description: Restrictions on Pageable Code in Storage Drivers
 ms.assetid: 1958f22f-5563-41e9-9c3f-dec8a4ac80c0
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Introduction to AVStream
-author: windows-driver-content
 description: Introduction to AVStream
 ms.assetid: 626556b5-cdfe-4d02-a5a9-881062d4e5b2
 keywords:

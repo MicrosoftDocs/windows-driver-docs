@@ -1,6 +1,5 @@
 ---
 title: Enabling Support for Color in PCL XL Minidrivers
-author: windows-driver-content
 description: Enabling Support for Color in PCL XL Minidrivers
 ms.assetid: 3287b070-76e3-4a28-a516-aa58905af224
 keywords:

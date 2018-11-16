@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Root Element
-author: windows-driver-content
 description: GDL Schema Root Element
 ms.assetid: 6148f026-52fa-452d-aa81-564d6ee5288d
 keywords:

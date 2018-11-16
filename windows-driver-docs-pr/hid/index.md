@@ -1,6 +1,5 @@
 ---
 title: HID drivers
-author: windows-driver-content
 description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
 ms.assetid: 19aefe5f-d82a-411f-86ab-5d1d53191524
 keywords:

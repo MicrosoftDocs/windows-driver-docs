@@ -1,6 +1,5 @@
 ---
 title: Auto Item
-author: windows-driver-content
 description: Auto Item
 ms.assetid: 59f9b71b-e4bd-44a3-a4f2-dfea9f1045e2
 ms.date: 04/20/2017

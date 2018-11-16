@@ -1,6 +1,5 @@
 ---
 title: Top-Level Collections Opened by Windows for System Use
-author: windows-driver-content
 description: Top-Level Collections Opened by Windows for System Use
 ms.assetid: e489ce46-379e-4ba9-a0e3-5848b1f4a17b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Video Port-Based Capture
-author: windows-driver-content
 description: Video Port-Based Capture
 ms.assetid: 84cc1ee3-142c-4dae-9f5c-0dde66cc3df9
 keywords:

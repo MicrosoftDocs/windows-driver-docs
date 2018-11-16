@@ -1,6 +1,5 @@
 ---
 title: Syntactical and Logical Constructs in GDL
-author: windows-driver-content
 description: Syntactical and Logical Constructs in GDL
 ms.assetid: f0802424-319c-4ba4-a8cd-539006f4d22c
 keywords:

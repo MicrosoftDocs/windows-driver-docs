@@ -1,6 +1,5 @@
 ---
 title: Video Capture Devices with Radio Tuners
-author: windows-driver-content
 description: Video Capture Devices with Radio Tuners
 ms.assetid: 36e3ca98-cb1b-46cc-809a-8c9ad08a53c8
 keywords:

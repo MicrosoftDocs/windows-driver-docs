@@ -1,6 +1,5 @@
 ---
 title: Other Windows Filtering Platform functions
-author: windows-driver-content
 description: This section describes other Windows Filtering Platform functions.
 ms.assetid: 9ebf1db2-fae2-427d-9c9d-6fae707da55a
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Windows kernel obsolete routines
-author: windows-driver-content
 description: Windows kernel obsolete routines
 ms.assetid: 876f48be-1d8f-4c65-bc84-e35c31919c47
 ms.localizationpriority: medium

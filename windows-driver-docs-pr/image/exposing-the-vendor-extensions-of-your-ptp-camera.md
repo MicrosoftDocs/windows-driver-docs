@@ -1,6 +1,5 @@
 ---
 title: Exposing the Vendor Extensions of Your PTP Camera
-author: windows-driver-content
 description: Exposing the Vendor Extensions of Your PTP Camera
 ms.assetid: b3a8b70b-c7ac-4e45-97bb-9b58e013100d
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguring the Printer's Memory for GPD
-author: windows-driver-content
 description: Autoconfiguring the Printer's Memory for GPD
 ms.assetid: 5e8339a5-d515-4821-853e-bc6607b2d9c1
 keywords:

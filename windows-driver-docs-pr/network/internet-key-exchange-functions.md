@@ -1,6 +1,5 @@
 ---
 title: Internet Key Exchange functions
-author: windows-driver-content
 description: This section describes Internet Key Exchange functions.
 ms.assetid: 993a6db0-018c-4529-bccc-46b522e74c79
 keywords:

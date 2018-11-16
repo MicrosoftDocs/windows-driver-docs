@@ -1,6 +1,5 @@
 ---
 title: Activity sensor properties
-author: windows-driver-content
 description: The property keys for the activity sensor.
 ms.assetid: 9C5DCE23-2690-4A22-8E38-D0571F997646
 ms.date: 07/20/2018

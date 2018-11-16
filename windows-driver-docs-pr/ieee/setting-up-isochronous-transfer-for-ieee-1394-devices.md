@@ -1,6 +1,5 @@
 ---
 title: Setting Up Isochronous Transfer for IEEE 1394 Devices
-author: windows-driver-content
 description: Setting Up Isochronous Transfer for IEEE 1394 Devices
 ms.assetid: 5161da54-0f20-496c-bf64-dc756b987de2
 keywords:

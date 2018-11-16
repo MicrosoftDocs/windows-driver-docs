@@ -1,7 +1,6 @@
 ---
 Description: This section provides guidance concerning the careful management of USB bandwidth.
 title: USB Bandwidth Allocation
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

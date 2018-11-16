@@ -1,6 +1,5 @@
 ---
 title: Encoder Code Examples
-author: windows-driver-content
 description: Encoder Code Examples
 ms.assetid: cbe773ad-2222-4d62-8e1e-6d47418a3e7c
 keywords:

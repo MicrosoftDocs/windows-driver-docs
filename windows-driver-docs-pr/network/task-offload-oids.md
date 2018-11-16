@@ -1,6 +1,5 @@
 ---
 title: Task offload OIDs
-author: windows-driver-content
 description: This topic describes Task offload OIDs 
 ms.assetid: 0d7eab31-d5c9-4264-9598-c72e19e1d86b
 keywords:

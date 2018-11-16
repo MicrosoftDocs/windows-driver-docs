@@ -1,6 +1,5 @@
 ---
 title: Hardware-Assisted Scanning Algorithm
-author: windows-driver-content
 description: Hardware-Assisted Scanning Algorithm
 ms.assetid: 9a24b985-9667-4424-84e5-b1c728b3c558
 keywords:

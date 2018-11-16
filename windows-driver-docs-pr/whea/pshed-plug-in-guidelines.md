@@ -1,6 +1,5 @@
 ---
 title: PSHED Plug-In Guidelines
-author: windows-driver-content
 description: PSHED Plug-In Guidelines
 ms.assetid: 2d17ebef-9474-4825-be09-c924ebd60c44
 keywords:

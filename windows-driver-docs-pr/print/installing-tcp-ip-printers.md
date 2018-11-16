@@ -1,6 +1,5 @@
 ---
 title: Installing TCP/IP Printers
-author: windows-driver-content
 description: Installing TCP/IP Printers
 ms.assetid: 15339cce-69aa-480d-bfee-11ea509ff5d4
 keywords:

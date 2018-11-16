@@ -1,6 +1,5 @@
 ---
 title: Selection Constraints
-author: windows-driver-content
 description: Selection Constraints
 ms.assetid: 9537e4c7-2cee-494d-b1ec-95d8c91a90e6
 keywords:

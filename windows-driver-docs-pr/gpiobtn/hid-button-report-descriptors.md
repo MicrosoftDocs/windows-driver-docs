@@ -1,6 +1,5 @@
 ---
 title: HID button report descriptors
-author: windows-driver-content
 description: This topic contains sample HID button report descriptors.
 ms.assetid: FB1D482A-A147-4362-969F-7A37E5ECF0B4
 ms.localizationpriority: medium
