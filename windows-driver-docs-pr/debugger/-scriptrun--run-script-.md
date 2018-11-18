@@ -120,14 +120,14 @@ host.diagnostics.debugLog("***>; Code at the very top (root) of the script is al
 
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; initializeScript was called \n");
 }
 
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
