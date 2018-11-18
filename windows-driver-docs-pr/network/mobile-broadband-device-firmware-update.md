@@ -188,7 +188,7 @@ CMyDevice::OnPrepareHardware(IWDFDevice* pDevice)
     // update against a MB device that loads the updated firmware 
     // on device boot. So the firmware update driver needs to
     // send the new firmware down to the device and then tell 
-    // the device to initate a stop/start. Once the device has
+    // the device to initiate a stop/start. Once the device has
     // reappeared, it would have automatically loaded the 
     // new firmware
     // 
