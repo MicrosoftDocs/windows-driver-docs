@@ -170,7 +170,7 @@ As indicated earlier, the UMDF driver should indicate to the Windows when it sta
 ```cpp
 /**
  * This is the IPnpCallbackHardware*:OnPrepareHardware handler 
- * in the UMDF driver. This is called everytime the firmware 
+ * in the UMDF driver. This is called every time the firmware 
  * update is device is started. Since this handler should be 
  * blocked from returning actual the firmware update process 
  * should be done in a workitem 

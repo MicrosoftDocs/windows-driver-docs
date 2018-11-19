@@ -378,7 +378,7 @@ As mentioned, initializeScript will be called immediately after the root code of
 ```javascript
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> initializeScript was called\n");
 }
@@ -391,7 +391,7 @@ The invokeScript method is the primary script method and is called when .scriptl
 ```javascript
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> invokeScript was called\n");
 }
@@ -406,7 +406,7 @@ If a script neither makes imperative manipulations to the object model nor cache
 ```javascript
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> uninitialize was called\n");
 }
@@ -469,14 +469,14 @@ host.diagnostics.debugLog("***>; Code at the very top (root) of the script is al
 
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; initializeScript was called \n");
 }
 
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
@@ -484,7 +484,7 @@ function invokeScript()
 
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; uninitialize was called\n");
 }
