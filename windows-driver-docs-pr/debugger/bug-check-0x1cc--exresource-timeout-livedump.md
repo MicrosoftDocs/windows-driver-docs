@@ -2,7 +2,6 @@
 title: Bug Check 1CC EXRESOURCE_TIMEOUT_LIVEDUMP 
 description: The EXRESOURCE_TIMEOUT_LIVEDUMP bug check has a value of 0x000001CC.
 keywords: ["Bug Check 0x1CC EXRESOURCE_TIMEOUT_LIVEDUMP", "EXRESOURCE_TIMEOUT_LIVEDUMP"]
-ms.author: domars
 ms.date: 04/19/2018
 topic_type:
 - apiref

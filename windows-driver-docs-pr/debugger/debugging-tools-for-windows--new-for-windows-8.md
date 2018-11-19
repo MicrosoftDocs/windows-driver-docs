@@ -2,7 +2,6 @@
 title: Debugging Tools for Windows New for Windows 8
 description: Debugging Tools for Windows New for Windows 8
 ms.assetid: 1AC2595A-800F-4F40-9C9D-61DE5398CBEB
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

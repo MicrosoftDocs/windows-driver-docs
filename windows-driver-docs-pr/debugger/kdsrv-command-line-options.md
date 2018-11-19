@@ -3,7 +3,6 @@ title: KdSrv Command-Line Options
 description: The KdSrv command line uses the following syntax.
 ms.assetid: 95b144c0-4507-4ce4-b828-1ac385dd7165
 keywords: ["KdSrv Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

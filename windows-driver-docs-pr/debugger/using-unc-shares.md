@@ -2,7 +2,6 @@
 title: Using UNC Shares
 description: Using UNC Shares
 ms.assetid: 7baf157d-e8c3-4ad5-a56e-58f8983da4d9
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -3,7 +3,6 @@ title: Bug Checks for SCSI Miniport Debugging
 description: Bug Checks for SCSI Miniport Debugging
 ms.assetid: 9a517096-f708-452b-83f6-e7d4f0d41ac3
 keywords: ["SCSI Miniport debugging, bug checks"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -3,7 +3,6 @@ title: pcrs
 description: The pcrs extension displays the Intel Itanium-specific processor control registers.
 ms.assetid: 45a84a95-86df-4176-ba30-ac93b509f7f7
 keywords: ["processor control register (PCR)", "PCR (processor control register)", "pcrs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

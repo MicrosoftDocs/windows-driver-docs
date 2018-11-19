@@ -3,7 +3,6 @@ title: Window MDI Emulation
 description: Window MDI Emulation
 ms.assetid: 495faabb-48d1-4d5d-b454-74ecbc200a2e
 keywords: ["Window MDI Emulation"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -3,7 +3,6 @@ title: Environment Variables
 description: Environment Variables
 ms.assetid: 0b1cd89f-e0c1-464e-a6d1-88a93753e570
 keywords: ["environment variables"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

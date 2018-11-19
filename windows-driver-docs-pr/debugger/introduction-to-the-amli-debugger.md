@@ -3,7 +3,6 @@ title: Introduction to the AMLI Debugger
 description: Introduction to the AMLI Debugger
 ms.assetid: f210171c-2226-4bd6-bbb4-aee4b087e575
 keywords: ["AMLI Debugger, overview", "ACPI debugging, machine language", "AML interpreter"]
-ms.author: domars
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

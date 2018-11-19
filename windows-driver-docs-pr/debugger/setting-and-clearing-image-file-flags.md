@@ -3,7 +3,6 @@ title: Setting and Clearing Image File Flags
 description: Setting and Clearing Image File Flags
 ms.assetid: 8f9ea2df-c172-43e0-98c5-0983f68a66f4
 keywords: ["GFlags, image file flags"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

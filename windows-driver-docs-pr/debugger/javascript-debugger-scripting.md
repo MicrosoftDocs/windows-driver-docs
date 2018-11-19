@@ -2,7 +2,6 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.author: domars
 ms.date: 10/26/2018
 ms.localizationpriority: medium
 ---
