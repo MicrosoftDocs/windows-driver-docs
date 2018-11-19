@@ -6,7 +6,6 @@ keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.author: windowsdriverdev
 ms.date: 10/2/2018
 ms.topic: article
 ms.prod: windows-hardware

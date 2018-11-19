@@ -6,7 +6,6 @@ keywords:
 - print devices WDK
 - print WDK See printer driver
 - print WDK See printing
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware

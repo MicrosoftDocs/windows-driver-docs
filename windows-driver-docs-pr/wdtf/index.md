@@ -2,7 +2,6 @@
 title: Windows Device Testing Framework (WDTF) design guide
 description: The Microsoft Windows Device Testing Framework (WDTF) enables you to create, manage, reuse, and extend device-centric, scenario-based automated tests.
 ms.assetid: cff552f0-5dde-4fe7-996c-0a496d845edc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
