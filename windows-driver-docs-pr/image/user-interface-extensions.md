@@ -1,6 +1,5 @@
 ---
 title: User Interface Extensions
-author: windows-driver-content
 description: User Interface Extensions
 ms.assetid: 06212343-4742-4dea-b750-0e9505695419
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ The rest of this section consists of the following topics:
 
 [User Interface Extension Registry Entries](user-interface-extension-registry-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

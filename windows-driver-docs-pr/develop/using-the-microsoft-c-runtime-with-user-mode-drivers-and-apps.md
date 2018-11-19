@@ -117,7 +117,7 @@ The following libraries contain the C run-time library functions.
 </tbody>
 </table>
 
- 
+ 
 
 To determine which DLLs you must redistribute with your application, you should collect a list of the DLLs that your application depends on. One way to collect the list is to run Dependency Walker (depends.exe).
 
@@ -140,9 +140,9 @@ For UMDF drivers, use static linking of the CRT with your driver code.
 * [Determining Which DLLs to Redistribute](http://go.microsoft.com/fwlink/p/?linkid=321001)
 * [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](http://go.microsoft.com/fwlink/p/?linkid=320999)
 * [Choosing a Deployment Method](http://go.microsoft.com/fwlink/p/?linkid=321651)
- 
+ 
 
- 
+ 
 
 
 

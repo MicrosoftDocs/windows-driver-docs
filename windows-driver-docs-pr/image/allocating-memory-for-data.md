@@ -1,6 +1,5 @@
 ---
 title: Allocating Memory for Data
-author: windows-driver-content
 description: Allocating Memory for Data
 ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
 ms.date: 04/20/2017
@@ -37,7 +36,7 @@ A WIA application uses the WIA\_IPA\_BUFFER\_SIZE property to determine the mini
 
 **Note**   The value that the WIA\_IPA\_BUFFER\_SIZE property contains is the minimum amount of data an application can request at any given time. The larger the buffer size, the larger the requests will be to the device. Buffer sizes that are too small can slow performance of the data transfer.
 
- 
+ 
 
 It is recommended that you set the WIA\_IPA\_BUFFER\_SIZE property to a reasonable size to allow the device to transfer data at an efficient rate. Do this by balancing the number of requests (buffer size not too small) and the number of time-consuming requests (buffer too large) for your device in order to ensure optimal performance.
 
@@ -348,9 +347,9 @@ HRESULT _stdcall CWIADevice::drvAcquireItemData(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

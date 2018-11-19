@@ -1,6 +1,5 @@
 ---
 title: Printer Commands
-author: windows-driver-content
 description: Printer Commands
 ms.assetid: 4f47ae57-cfca-4670-823e-526e2f40de82
 keywords:
@@ -40,9 +39,9 @@ The following topics describe how to specify printer commands in GPD files:
 
 [Command Execution Order](command-execution-order.md)
 
- 
+ 
 
- 
+ 
 
 
 

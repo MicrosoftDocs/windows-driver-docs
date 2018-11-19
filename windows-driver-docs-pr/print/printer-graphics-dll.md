@@ -1,6 +1,5 @@
 ---
 title: Printer Graphics DLL
-author: windows-driver-content
 description: Printer Graphics DLL
 ms.assetid: 58e181ff-c792-41a5-967d-a69a8ff5a041
 keywords:
@@ -34,9 +33,9 @@ This section provides the following topics:
 
 [Building a Printer Graphics DLL](building-a-printer-graphics-dll.md)
 
- 
+ 
 
- 
+ 
 
 
 

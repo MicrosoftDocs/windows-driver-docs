@@ -1,6 +1,5 @@
 ---
 title: \ Name\
-author: windows-driver-content
 description: \ Name\
 ms.assetid: 5259ea1a-a251-479b-88f1-711d5933868a
 ms.date: 11/28/2017
@@ -128,9 +127,9 @@ Data Type: BIDI\_STRING
 
 Description:An optional value that represents the vendor Model indicator for the referenced consumable. This value enables a client to distinguish exactly what version of a particular Type and Color combination Consumable is installed in the device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_CURRENT_CAPABILITIES
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_NIC_SWITCH_CURRENT_CAPABILITIES to obtain the currently enabled hardware capabilities of the NIC switch in a network adapter.
 ms.assetid: 529dc5d5-9b84-4891-9e7a-1f9f7850c6d7
 ms.date: 08/08/2017
@@ -23,7 +22,7 @@ Starting with NDIS 6.20, miniport drivers supply the currently enabled NIC switc
 
 **Note**  Starting with NDIS 6.30, miniport drivers that support the single root I/O virtualization (SR-IOV) interface must register the enabled hardware capabilities of the NIC switch. Drivers register these capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672).
 
- 
+ 
 
 Overlying protocol and filter drivers do not have to issue OID query requests of OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES. NDIS provides the currently enabled NIC switch hardware capabilities of a network adapter to these drivers in the following way:
 
@@ -51,7 +50,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES request, it return
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an [<strong>NDIS_NIC_SWITCH_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566583" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566583)"><strong>NDIS_NIC_SWITCH_CAPABILITIES</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -59,7 +58,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES request, it return
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_NIC_SWITCH_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566583)). The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/ff566583" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566583)"><strong>NDIS_NIC_SWITCH_CAPABILITIES</strong></a>). The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -68,7 +67,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES request, it return
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -103,9 +102,9 @@ Requirements
 
 [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
- 
+ 
 
- 
+ 
 
 
 

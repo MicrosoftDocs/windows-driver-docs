@@ -1,6 +1,5 @@
 ---
 title: Notification Filtering and Communication Styles
-author: windows-driver-content
 description: Notification Filtering and Communication Styles
 ms.assetid: 66d019c2-0760-440d-acc4-85a7c073929a
 keywords:
@@ -109,9 +108,9 @@ When a client registers for notifications, the server-side spooler maintains an 
 
 The client can unregister for receiving notifications only by using this handle.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Programming Guide
-author: windows-driver-content
 description: The sensors programming guide includes information that shows how to build, and then test a universal sensor driver.
 ms.assetid: 312C0A80-120A-4A3B-B2AE-2620F749EA12
 ms.date: 07/20/2018
@@ -24,7 +23,7 @@ A universal sensor driver is a sensor driver that was developed based on the uni
 |[Fusion Sensor Implementation Details](fusion-sensor-implementation-details.md)|This section provides information about sensor fusion drivers.|
 
 
- 
+ 
 
 
 

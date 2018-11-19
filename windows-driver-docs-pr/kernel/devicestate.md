@@ -1,6 +1,5 @@
 ---
 title: DeviceState
-author: windows-driver-content
 description: DeviceState
 ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]
@@ -57,7 +56,7 @@ For example, on a system that supports only S0, S4, and S5 [system power states]
 </tbody>
 </table>
 
- 
+ 
 
 On a system that supports all of the system power states, the following table lists the values that the array would contain for a device that must be in the D2 state or lower whenever the system goes to any intermediate sleep state and in the D3 state when the system hibernates.
 
@@ -100,7 +99,7 @@ On a system that supports all of the system power states, the following table li
 </tbody>
 </table>
 
- 
+ 
 
 Note that the entries in the **DeviceState** array signify the highest device power state that the device can support for the corresponding system power state. In the preceding example, the device could be in state D3 for any system power state, state D2 for system power states **PowerSystemWorking** through **PowerSystemSleeping3**, and state D1 for system state **PowerSystemWorking**.
 
@@ -108,9 +107,9 @@ The bus driver or ACPI filter sets these values based on the capabilities of the
 
 As a general rule, higher-level drivers should not change these values. However, in the rare circumstances in which such a change is necessary, a driver can specify a lower (less-powered) state than the bus driver or ACPI filter originally returned. For example, assume that **DeviceState**\[**PowerSystemSleeping1**\] maps to **PowerDeviceD2**, as in the table above. A driver can change this value to **PowerDeviceD3**, but not to **PowerDeviceD1** or **PowerDeviceD0**.
 
- 
+ 
 
- 
+ 
 
 
 

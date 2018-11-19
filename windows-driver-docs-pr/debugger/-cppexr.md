@@ -3,7 +3,6 @@ title: cppexr
 description: The cppexr extension displays the contents of a C++ exception record.
 ms.assetid: 568c98e9-31d9-4c49-9b7a-bc8eccfed24a
 keywords: ["exception records", "cppexr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the C++ exception record to display.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +62,9 @@ You can typically obtain the *Address* parameter by using the [**!analyze -v**](
 
 The **!cppexr** extension is useful for determining the type of a C++ exception.
 
- 
+ 
 
- 
+ 
 
 
 

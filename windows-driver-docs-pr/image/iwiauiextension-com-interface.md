@@ -1,6 +1,5 @@
 ---
 title: IWiaUIExtension COM Interface
-author: windows-driver-content
 description: IWiaUIExtension COM Interface
 ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
 ms.date: 04/20/2017
@@ -30,21 +29,21 @@ The **IWiaUIExtension** interface provides the following methods:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaUIExtension::DeviceDialog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545069)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545069" data-raw-source="[&lt;strong&gt;IWiaUIExtension::DeviceDialog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545069)"><strong>IWiaUIExtension::DeviceDialog</strong></a></p></td>
 <td><p>Provides a custom user interface that replaces the default system user interface.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaUIExtension::GetDeviceBitmapLogo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545073)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545073" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceBitmapLogo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545073)"><strong>IWiaUIExtension::GetDeviceBitmapLogo</strong></a></p></td>
 <td><p>Gets a custom bitmap logo for the device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaUIExtension::GetDeviceIcon</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545075)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545075" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceIcon&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545075)"><strong>IWiaUIExtension::GetDeviceIcon</strong></a></p></td>
 <td><p>Gets a custom device icon.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 [**IWiaUIExtension::DeviceDialog**](https://msdn.microsoft.com/library/windows/hardware/ff545069) accepts a pointer to a [**DEVICEDIALOGDATA**](https://msdn.microsoft.com/library/windows/hardware/ff540560) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
 
@@ -66,9 +65,9 @@ To implement a custom scanning dialog box in a WIA scanner driver, use the **IWi
 
 It is important to remember that the device dialog box itself does not manage the data transfers. The dialog box merely returns a pointer to an array of **IWiaItem** interface pointers (with properties set) from the driver to the application. It is then up to the application to negotiate the transfer mechanism and format.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating a Resource List for a Boot Configuration
-author: windows-driver-content
 description: Creating a Resource List for a Boot Configuration
 ms.assetid: 8b78cbac-b547-45a1-a49c-f5543bf5ffed
 keywords:
@@ -26,9 +25,9 @@ After the driver's *EvtDeviceResourcesQuery* callback function returns, the fram
 
 Device installers can specify additional resource lists. For more information about additional resource lists, see [Hardware Resources](https://msdn.microsoft.com/library/windows/hardware/ff547012).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Adding Print Ticket Support to Monolithic Print Drivers
-author: windows-driver-content
 description: Adding Print Ticket Support to Monolithic Print Drivers
 ms.assetid: 82c65b9a-6e7b-4acd-93aa-33d696ddc421
 keywords:
@@ -33,9 +32,9 @@ To complete the support for this interface, the print driver must support the re
 
 [ValidatePrintTicket](validateprintticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

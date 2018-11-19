@@ -3,7 +3,6 @@ title: Edit Find
 description: Edit Find
 ms.assetid: 9e3a0095-1bce-4262-a22c-584de54113cc
 keywords: ["Edit Find"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ Click **Find** on the **Edit** menu to find text in the active debugging informa
 
 **Note**  The active window must be the [Debugger Command window](debugger-command-window.md) or a [Source window](source-window.md).
 
- 
+ 
 
 This command is equivalent to pressing CTRL+F.
 
@@ -40,9 +39,9 @@ After you close the **Find** dialog box, you can repeat the search in a forward 
 
 For more information about other ways to find text in debugging information windows, see [Moving Through a Window](moving-through-a-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

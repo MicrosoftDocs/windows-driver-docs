@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_AUTHENTICATION_RESPONSE_FRAME
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains an authentication response frame.
 ms.assetid: 0BD8BDD9-7D51-413F-8740-FD49F71249B1
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the authentication response that was received with a failure code. This does not include the 802.11 MAC header. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

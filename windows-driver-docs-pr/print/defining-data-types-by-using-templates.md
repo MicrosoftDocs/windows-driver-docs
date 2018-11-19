@@ -1,6 +1,5 @@
 ---
 title: Defining Data Types by Using Templates
-author: windows-driver-content
 description: Defining Data Types by Using Templates
 ms.assetid: 9768f0da-b6cb-4f92-9ab4-2c95fedcb44c
 keywords:
@@ -55,7 +54,7 @@ A template is designated as a *data type template* (one that defines a data type
 
 **Note**   Not all directives are recognized within all data type templates.
 
- 
+ 
 
 In general, if no template can be bound to the GDL attribute entry, the value of that attribute will be emitted in the snapshot without any change within a CDATA section. The CDATA shall reside as element content (that is, the child element) of the ATTRIBUTE element.
 
@@ -72,9 +71,9 @@ Then, the entry will appear in the snapshot as follows.
         <![CDATA["OEMName LaserJet "]]></GDL_ATTRIBUTE>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

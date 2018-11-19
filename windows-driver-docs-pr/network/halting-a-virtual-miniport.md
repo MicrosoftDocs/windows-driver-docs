@@ -24,9 +24,9 @@ NDIS sets the *HaltAction* parameter to **NdisHaltDeviceInstanceDeInitialized** 
 
 The intermediate driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function must release all driver-allocated resources that are associated with a virtual miniport.
 
- 
+ 
 
- 
+ 
 
 
 

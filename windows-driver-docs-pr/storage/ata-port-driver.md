@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver
-author: windows-driver-content
 description: ATA Port Driver
 ms.assetid: c7b9d794-a8cb-4bdd-bb93-bff473ea26a7
 keywords:
@@ -31,8 +30,8 @@ The ATA miniport driver interface closely resembles the SCSI port driver interfa
 
 Together with the ATA port driver, the operating system provides a default ATA miniport driver and a default controller minidriver. The system-supplied default drivers work for most controller hardware, and we strongly recommend that the default minidrivers be used wherever possible.
 
- 
+ 
 
- 
+ 
 
 

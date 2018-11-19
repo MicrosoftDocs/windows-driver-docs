@@ -1,25 +1,24 @@
 ---
 title: TTD Event Objects
 description: This section describes the event model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+
 
 # TTD Event Objects
 ## Description
 *TTD Event* objects are used to give information about important events that happened during a time travel trace.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Type | Describes the type of event that happened. Possible values are: ThreadCreated, ThreadTerminated, ModuleLoaded, ModuleUnloaded, Exception |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the event occurred. |
@@ -33,7 +32,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```dbgcmd
 0:000> dx -r2 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)
 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)                
     [0x0]            : Exception of type CPlusPlus at PC: 0X777663B0

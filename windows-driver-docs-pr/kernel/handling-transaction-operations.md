@@ -1,6 +1,5 @@
 ---
 title: Handling Transaction Operations
-author: windows-driver-content
 description: Handling Transaction Operations
 ms.assetid: 9b82e9d6-3db2-4806-a087-1c9622dc04e2
 keywords: ["transactions WDK KTM , handling operations", "handling transaction operations WDK KTM", "transactions WDK KTM , committing transactions", "committing transactions WDK KTM", "transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "transactions WDK KTM , recovering transactions", "recovering transactions WDK KTM"]
@@ -27,9 +26,9 @@ This section contains the following topics:
 
 [Handling Recovery Operations](handling-recovery-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

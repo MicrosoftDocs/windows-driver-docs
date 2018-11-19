@@ -1,6 +1,5 @@
 ---
 title: Using an IoTimer Routine
-author: windows-driver-content
 description: Using an IoTimer Routine
 ms.assetid: 9de2d2ec-31c5-4a60-96bf-5da067d2d9db
 keywords: ["IoTimer"]
@@ -18,7 +17,7 @@ While the timer for the associated device object is enabled, the [*IoTimer*](htt
 
 **Note**  An *IoTimer* routine, like all DPC routines, is called at IRQL = DISPATCH\_LEVEL. While a DPC routine runs, all threads are prevented from running on the same processor. Driver developers should carefully design their *IoTimer* routines to run for as brief a time as possible.
 
- 
+ 
 
 Perhaps the most common use for an *IoTimer* routine is to time out device I/O operations for an IRP. Consider the following scenario for using an *IoTimer* routine as a running timer within a device driver:
 
@@ -46,9 +45,9 @@ Consequently, both the preceding *IoTimer* routine and its helper *SynchCritSect
 
 The simplicity of the preceding scenario depends on a device that does only one operation at a time and on a driver that does not normally overlap I/O operations. A driver that carries out overlapped device I/O operations, or a higher-level driver that uses an *IoTimer* routine to time out a set of driver-allocated IRPs sent to more than one chain of lower drivers, would have more complex timeout scenarios to manage.
 
- 
+ 
 
- 
+ 
 
 
 

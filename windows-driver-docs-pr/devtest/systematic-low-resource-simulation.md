@@ -15,11 +15,11 @@ To help you determine the root cause of the error, a debugger extension is provi
 
 **Caution**  This option is not intended for use when you are verifying all (or a large collection of) drivers on a computer. This option should be used only when you are doing targeted testing of individual drivers or their attached filter drivers. Using this option on a large number of drivers at the same time could cause unpredictable results, and could force crashes in components unrelated to the driver(s) you are testing.
 
- 
+ 
 
 **Note**  For Windows 8.1, the [Stack Based Failure Injection](stack-based-failure-injection.md) feature, which was available in the WDK 8, has been integrated into Driver Verifier. On computers running Windows 8.1, use the Systematic low resources simulation option.
 
- 
+ 
 
 When the Systematic low resources simulation option is enabled on a specific driver, it intercepts some calls from that driver to the kernel and Ndis.sys. Systematic low resources simulation looks at the call stack—specifically, at the portion of the call stack that comes from the driver it is enabled on. If this is the first time it has ever seen that stack, it will fail the call according to the semantics of that call. Otherwise, if it has seen that call before, it will pass it through untouched. Systematic low resources simulation contains logic to deal with the fact that a driver can be loaded and unloaded multiple times. It will recognize that a call stack is the same even if the driver is reloaded into a different memory location.
 
@@ -103,7 +103,7 @@ You can activate the Systematic low resources simulation feature for one or more
     </tbody>
     </table>
 
-     
+     
 
 -   **Using Driver Verifier Manager**
 
@@ -128,9 +128,9 @@ Most of the issues found with Systematic low resources simulation result in bug 
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected.
 
- 
+ 
 
- 
+ 
 
 
 

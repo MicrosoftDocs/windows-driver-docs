@@ -1,6 +1,5 @@
 ---
 title: Enumeration properties
-author: windows-driver-content
 description: This topic describes the static sensor properties that are available from the PnP Driver Store.
 ms.assetid: E4663410-375F-48B9-A9E4-6E608FA8D2FF
 ms.date: 01/04/2018
@@ -36,7 +35,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 <td><p>DEVPKEY_Sensor_Type</p></td>
 <td><p>VT_CLSID</p></td>
 <td><p>Required</p></td>
-<td><p>A GUID that identifies the type of sensor. For more information about sensor types, see [Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707).</p></td>
+<td><p>A GUID that identifies the type of sensor. For more information about sensor types, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn946707" data-raw-source="[Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707)">Sensor type GUIDs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>DEVPKEY_Sensor_Category</p></td>
@@ -50,7 +49,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 <td><p>Optional</p>
 <p>Required for Ambient Light Sensor and Accelerometer</p></td>
 <td><p>The senor connection type. Sensor connection types can be integrated, attached, or external.</p>
-<p>For more information, see the [<strong>SensorConnectionType</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545701) enumeration.</p></td>
+<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545701" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545701)"><strong>SensorConnectionType</strong></a> enumeration.</p></td>
 </tr>
 <tr class="even">
 <td><p>DEVPKEY_Sensor_IsPrimary</p></td>
@@ -104,7 +103,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -119,9 +118,9 @@ For more information about the data types shown in the **Type** column, see [PRO
 
 [Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707)
 
- 
+ 
 
- 
+ 
 
 
 

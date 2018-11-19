@@ -1,6 +1,5 @@
 ---
 title: GDL Tutorials
-author: windows-driver-content
 description: GDL Tutorials
 ms.assetid: 79c73df6-0890-436c-827d-6fccbd14b503
 keywords:
@@ -36,9 +35,9 @@ This section includes:
 
 [GDL Exercise Notes](gdl-exercise-notes.md)
 
- 
+ 
 
- 
+ 
 
 
 

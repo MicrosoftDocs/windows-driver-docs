@@ -3,7 +3,6 @@ title: Evaluating Expressions
 description: Evaluating Expressions
 ms.assetid: f2fbdac1-2c20-4132-b43e-4c7a90a2f5b7
 keywords: ["expressions, overview", "expressions, different types", "MASM expressions, when to use", "C++ expressions, when to use", "MASM expressions, overview", "C++ expressions, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -50,7 +49,7 @@ The two at signs (**@@**) enable you to use two different evaluators for differe
 
 **Warning**   C++ expression syntax is useful for manipulating structures and variables, but it is not well-suited as a parser for the parameters of debugger commands. When you are using debugger commands for general purposes or you are using debugger extensions, you should set MASM expression syntax as the default expression evaluator. If you must have a specific parameter use C++ expression syntax, use the two at sign (**@@**) syntax.
 
- 
+ 
 
 For more information about the two different expression types, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
@@ -84,9 +83,9 @@ Remember that MASM operations are always byte-based, and C++ operations follow C
 
 For some examples of the different syntaxes, see [Expression Examples](expression-examples.md).
 
- 
+ 
 
- 
+ 
 
 
 

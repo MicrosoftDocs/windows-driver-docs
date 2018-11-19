@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_UPLOAD_ALL
-author: windows-driver-content
 description: This topic describes the NDIS_STATUS_UPLOAD_ALL status indication.
 ms.assetid: 88a756a6-04a0-410b-9bc7-50e7a67b3685
 keywords:

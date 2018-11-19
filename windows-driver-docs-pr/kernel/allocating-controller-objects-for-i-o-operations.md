@@ -1,6 +1,5 @@
 ---
 title: Allocating Controller Objects for I/O Operations
-author: windows-driver-content
 description: Allocating Controller Objects for I/O Operations
 ms.assetid: 8a5e3741-f8ea-4e27-bb7f-6c20da1d618d
 keywords: ["controller objects WDK kernel , allocating", "ControllerControl routines, controller object allocation", "IoAllocateController", "allocating controller objects"]
@@ -50,9 +49,9 @@ When a *ControllerControl* routine returns **KeepObject**, usually the driver's 
 
 Whenever the *ControllerControl* routine returns **KeepObject**, the routine that completes the IRP must call [**IoFreeController**](https://msdn.microsoft.com/library/windows/hardware/ff549104). Such a driver routine should call **IoFreeController** as soon as possible so that its next device I/O operation can be set up promptly.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,6 +2,7 @@
 title: Winqual Submission Tool (winqual.exe)
 description: Winqual Submission Tool (winqual.exe)
 ms.assetid: f7a34ee3-0532-465b-acb0-1ff80e2d4cb8
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -50,7 +51,7 @@ To use the Windows Submission Tool (WST):
     **Note**  
     To re-enable this dialog box, click **Tools**, click **Options**, and then select the **Warn if update check fails** check box.
 
-     
+     
 
 5.  Add the test results to the submission package, and choose to save the list for later use. An **.xml** file (which you'll use later for creating the submission) is created with all the submission information.
 
@@ -104,9 +105,9 @@ You can also perform the following additional actions in the WST:
 
 8.  After all the errors are fixed, you can create a submission package. The submission package is created with the same name as the **.xml** file at the same location.
 
- 
+ 
 
- 
+ 
 
 
 

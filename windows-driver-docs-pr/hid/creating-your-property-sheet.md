@@ -1,6 +1,5 @@
 ---
 title: Creating Your Property Sheet
-author: windows-driver-content
 description: Creating Your Property Sheet
 ms.assetid: 04fa34fd-86d6-4017-a6da-9882d65674e3
 keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK DirectInput , property sheet creation", "control panels WDK DirectInput , property sheet creation", "sample property sheet applications WDK DirectInput", "custom property sheets WDK DirectInput", "templates WDK DirectInput"]
@@ -36,7 +35,7 @@ Creating a custom property sheet from scratch is a relatively simple process.
 
     **Note**   You may want to write a test container for your property sheets as a window that launches your pages as independent dialog boxes. At this point, you could also convert any existing control panel you might have to the DirectInput control panel.
 
-     
+     
 
 3.  Populate the [**DIGCPAGEINFO**](https://msdn.microsoft.com/library/windows/hardware/ff538484) and [**DIGCSHEETINFO**](https://msdn.microsoft.com/library/windows/hardware/ff538492) structures and return that information in your implementations of [**IDIGameCntrlPropSheet::GetPageInfo**](https://msdn.microsoft.com/library/windows/hardware/ff540026) and [**IDIGameCntrlPropSheet::GetSheetInfo**](https://msdn.microsoft.com/library/windows/hardware/ff540029) respectively.
 
@@ -44,9 +43,9 @@ The generation of the property sheet pages is done through the **PropertySheet**
 
 Dialog templates are also important to remember when considering visual alignment and the centering of controls on a page. For example, consider a case in which the user creates two pages that contain items specified to be centered on the page. One item to be centered is 200 dialog units (DLUs) in width; the other is 100 units. In such a case, the latter item is not centered on the page. Instead, the control is centered to its template and additional white space (or gray, as it may be) is added to the width of the more narrow page. You should create dialog templates of the same size, even if you are not using it all. (For more information about the **PropertySheet** function, see the Microsoft Win32 SDK.)
 
- 
+ 
 
- 
+ 
 
 
 

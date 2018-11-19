@@ -1,6 +1,5 @@
 ---
 title: UEFI display power state protocol
-author: windows-driver-content
 description: UEFI display power state protocol
 ms.assetid: ab16c548-1402-4819-9fbb-a1d6f55d934a
 ms.date: 04/20/2017
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 The display power state protocol is used by the Microsoft UEFI battery charging application to communicate with the UEFI battery charging driver in order to perform the following tasks:
 
@@ -22,7 +21,7 @@ The display power state protocol is used by the Microsoft UEFI battery charging 
 
 **Important**  If the device uses a custom UEFI battery charging application instead of the Microsoft-provided application, the UEFI battery charging driver must not implement this protocol. The Windows Boot Manager will load the Microsoft UEFI battery charging application if the driver implements this protocol.
 
- 
+ 
 
 For more information about the Microsoft-provided UEFI battery charging application, see [Battery charging in the boot environment](battery-charging-in-the-boot-environment.md).
 

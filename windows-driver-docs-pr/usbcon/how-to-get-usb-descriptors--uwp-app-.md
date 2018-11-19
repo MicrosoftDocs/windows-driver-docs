@@ -1,7 +1,6 @@
 ---
 Description: One of the main tasks of interacting with a USB device is to get information about it.
 title: How to get USB descriptors (UWP app)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -250,7 +249,7 @@ Notice that [**UsbConfiguration**](https://msdn.microsoft.com/library/windows/ap
 
 **Note**  The first two bytes of all descriptor buffers also indicate the type and length of the descriptor.
 
- 
+ 
 
 For example, the [**UsbConfiguration.Descriptors**](https://msdn.microsoft.com/library/windows/apps/dn264289) property gets the array of complete configuration descriptor (fixed and variable length portions). The first element in that array is the fixed-length configuration descriptor (same as [**UsbConfigurationDescriptor**](https://msdn.microsoft.com/library/windows/apps/dn297689)), the second element is the interface descriptor of the first alternate setting, and so on.
 
@@ -299,9 +298,9 @@ private String GetCustomDescriptorsAsString(UsbDevice device)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -110,9 +110,9 @@ function smsMessageReadSuccess(smsMessage)
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

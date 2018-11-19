@@ -45,9 +45,9 @@ The conversion of float to XR\_BIAS is permitted tolerance of 0.6f Unit-Last-Pla
 
 The standard Direct3D version 10 requirement for inverting data also applies.
 
- 
+ 
 
- 
+ 
 
 
 

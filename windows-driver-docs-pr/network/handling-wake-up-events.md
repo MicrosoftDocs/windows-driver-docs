@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A miniport driver does not handle a wake-up event detected by a NIC. When a NIC detects an enabled wake-up event, it asserts a bus-specific wake-up line. The power manager then sends a power IRP to NDIS, which, in response, sends the miniport driver an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) OID that requests the miniport driver to put a NIC in the highest-powered (D0) state.
 
- 
+ 
 
- 
+ 
 
 
 

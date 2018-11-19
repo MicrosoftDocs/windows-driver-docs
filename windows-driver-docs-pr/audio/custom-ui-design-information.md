@@ -15,15 +15,15 @@ In this case, the user interface will not be a replacement for the system-suppli
 
 Therefore the most practical approach here is to implement a separate UI for configuring the custom sAPOs that you developed to replace the system-supplied sAPOs. To develop and implement your custom UI, perform the following steps.
 
-1.  [Develop a custom UI](http://go.microsoft.com/fwlink/p/?linkid=106006) for configuring your system effects features
+1.  [Develop a custom UI](https://go.microsoft.com/fwlink/p/?linkid=106006) for configuring your system effects features
 
-2.  [Create a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) package from your custom UI
+2.  [Create a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) package from your custom UI
 
 3.  Create or modify an [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) for installing and registering your DLL
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SIO_WSK_SET_SENDTO_ADDRESS
-author: windows-driver-content
 description: SIO_WSK_SET_SENDTO_ADDRESS
 ms.assetid: 2dd149d2-adc6-4e03-92de-ed76aa048886
 ms.date: 07/18/2017
@@ -143,9 +142,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

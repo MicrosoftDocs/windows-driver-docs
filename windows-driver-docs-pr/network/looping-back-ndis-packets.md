@@ -52,9 +52,9 @@ The following figure shows the loopback algorithm logic flow.
 
 ![flowchart illustrating the loopback algorithm logic flow](images/loopback.png)
 
- 
+ 
 
- 
+ 
 
 
 

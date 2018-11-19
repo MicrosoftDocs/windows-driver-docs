@@ -25,9 +25,9 @@ The D3DRS\_ANTIALIASEDLINEENABLE render state applies to triangles drawn in wire
 
 When rendering to a multiple-sample render target, the driver must ignore a request to enable line antialiasing and render all lines aliased.
 
- 
+ 
 
- 
+ 
 
 
 

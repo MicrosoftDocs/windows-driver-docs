@@ -32,7 +32,7 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left">[<strong>DEVPROP_TYPE_GUID</strong>](devprop-type-guid.md)</td>
+<td align="left"><a href="devprop-type-guid.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_GUID&lt;/strong&gt;](devprop-type-guid.md)"><strong>DEVPROP_TYPE_GUID</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -66,7 +66,7 @@ The DEVPKEY_Device_ContainerId can be used to determine the device container gro
 
 **Note**  All [*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) that belong to a container on a given bus type must share the same ContainerID value.
 
- 
+ 
 
 For more information about ContainerIDs, see [Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff540024).
 
@@ -97,9 +97,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

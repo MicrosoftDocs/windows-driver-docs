@@ -20,9 +20,9 @@ Selecting the appropriate signature type for a [driver package](driver-packages.
 -   [PnP Device Installation Signing Requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md)
 -   [Authenticode Signing of Third-party CSPs](authenticode-signing-of-csps.md)
 
- 
+ 
 
- 
+ 
 
 
 

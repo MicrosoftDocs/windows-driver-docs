@@ -1,6 +1,5 @@
 ---
 title: Making Driver Code or Data Pageable
-author: windows-driver-content
 description: Making Driver Code or Data Pageable
 ms.assetid: c4ffd222-8ea5-48df-9c79-7d68e5462b3e
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel , setting up"]
@@ -26,9 +25,9 @@ This section contains the following topics:
 
 [Paging an Entire Driver](paging-an-entire-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Important**  The use of WavePci is no longer recommended, instead use WaverRT.
 
- 
+ 
 
 A WaveCyclic miniport driver manages the hardware-dependent functions of a wave-rendering or wave-capture device that uses a cyclic buffer for audio data. The cyclic buffer is typically a single block of contiguous physical memory and can be located in a region of memory of the driver's choosing. A device with any of the following limitations should provide a WaveCyclic miniport driver rather than a [WavePci miniport driver](wavepci-miniport-driver.md):
 
@@ -69,9 +69,9 @@ Sets the state of the wave stream.
 [**IMiniportWaveCyclicStream::Silence**](https://msdn.microsoft.com/library/windows/hardware/ff536721)
 
 Copies silence into a buffer.
- 
+ 
 
- 
+ 
 
 
 

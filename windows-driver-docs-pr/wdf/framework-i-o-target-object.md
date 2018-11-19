@@ -1,6 +1,5 @@
 ---
 title: Framework I/O Target Object
-author: windows-driver-content
 description: Framework I/O Target Object
 ms.assetid: 355a1818-88c9-4989-9141-8445f511f501
 keywords:
@@ -22,9 +21,9 @@ The framework I/O target object is exposed to drivers by the [IWDFIoTarget](http
 
 UMDF drivers can also use the [IWDFIoTargetStateManagement](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface to manage and monitor the state of an I/O target object.
 
- 
+ 
 
- 
+ 
 
 
 

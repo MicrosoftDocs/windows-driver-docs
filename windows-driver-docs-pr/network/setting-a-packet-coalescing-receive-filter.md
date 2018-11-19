@@ -23,9 +23,9 @@ After NDIS allocates the necessary resources and the filter ID, it forwards the 
 
 After a successful return from the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795), the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure. This structure is updated by NDIS with the new filter ID.
 
- 
+ 
 
- 
+ 
 
 
 

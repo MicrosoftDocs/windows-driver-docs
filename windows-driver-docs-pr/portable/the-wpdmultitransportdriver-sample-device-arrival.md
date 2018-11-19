@@ -30,7 +30,7 @@ The parallel queue is required so that the **IOCTL\_COMPOSITE\_TRANSPORT\_REQUES
 | Set the necessary Plug and Play (PnP) values.                         | These values are used to configure the multitransport framework.                                                                                                                                                                 |
 | Set the current transport bandwidth.                                  | This value is used by the class extension and the composite driver (*WpdComp.dll*). The composite driver retrieves the value from the extension and uses it to determine the best transport when multiple transports are active. |
 
- 
+ 
 
 The following code example from the **CDevice::OnPrepareHardware** method shows how the sample driver created the Functional Unique Identifier (FUID). Make sure to review the comments, which precede the creation of this GUID.
 
@@ -164,9 +164,9 @@ While the **CDriver::OnDeviceAdd** method handles the creation of the I/O queues
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

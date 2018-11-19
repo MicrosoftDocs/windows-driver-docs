@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.SetEndpointPolicy
 ms.assetid: d7ab0529-1925-47b5-9706-2e6288a6a5cf
 ms.date: 04/20/2017
@@ -83,7 +82,7 @@ A pointer to the buffer that contains the new endpoint policy value. For more in
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -95,9 +94,9 @@ This function can be called only before [EFI\_USBFN\_IO\_PROTOCOL.StartControlle
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Specifying Access Rights
-author: windows-driver-content
 description: Specifying Access Rights
 ms.assetid: 8ef4b4bb-5f4e-4095-b4ab-1182c0f75619
 ms.localizationpriority: medium
@@ -40,7 +39,7 @@ The following standard specific access rights apply to all types of executive ob
 </tr>
 <tr class="odd">
 <td><p>SYNCHRONIZE</p></td>
-<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to [<strong>KeWaitForMultipleObjects</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553324).)</p></td>
+<td><p>The caller can perform a wait operation on the object. (For example, the object can be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff553324" data-raw-source="[&lt;strong&gt;KeWaitForMultipleObjects&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553324)"><strong>KeWaitForMultipleObjects</strong></a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p>WRITE_DAC</p></td>
@@ -53,7 +52,7 @@ The following standard specific access rights apply to all types of executive ob
 </tbody>
 </table>
 
- 
+ 
 
 Note that normally only DELETE and SYNCHRONIZE are of interest to driver writers.
 
@@ -90,7 +89,7 @@ You can also specify the following generic access rights. These also apply to al
 </tbody>
 </table>
 
- 
+ 
 
 The following combinations of standard specific access rights are also defined. These are not normally used directly, but are used as templates to define other bitmasks. (For example, when you specify GENERIC\_READ for a file object, the system maps this to the FILE\_GENERIC\_READ bitmask of specific access rights. FILE\_GENERIC\_READ is defined in terms of STANDARD\_RIGHTS\_READ.)
 
@@ -129,7 +128,7 @@ The following combinations of standard specific access rights are also defined. 
 </tbody>
 </table>
 
- 
+ 
 
 Each type of object can have its own additional access rights. For a description of the access rights that are applicable to a file, directory, or device, see [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424). For a description of the access rights that are applicable to an object manager directory, see [**ZwCreateDirectoryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566421). For a description of the access rights that are applicable to a registry key, see [**ZwCreateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566425). For a description of the access rights that are applicable to a section object, see [**ZwOpenSection**](https://msdn.microsoft.com/library/windows/hardware/ff567029). For a description of the access rights that are applicable to a WMI data block, see [**IoWMIOpenBlock**](https://msdn.microsoft.com/library/windows/hardware/ff550453).
 

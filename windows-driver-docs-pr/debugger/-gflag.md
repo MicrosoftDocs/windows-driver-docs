@@ -3,7 +3,6 @@ title: gflag
 description: The gflag extension sets or displays the global flags.
 ms.assetid: b661f775-a313-4a4d-a3db-1e4dacf830de
 keywords: ["gflag Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -249,11 +248,11 @@ The following table contains the abbreviations that you can use for the *Abbrevi
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

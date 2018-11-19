@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CHANNEL_NUMBER
-author: windows-driver-content
 description: WDI_TLV_CHANNEL_NUMBER is a TLV that contains a channel number.
 ms.assetid: 254831C8-8AE0-4742-8FCC-0310214696A7
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT8.
 |-------|---------------------|
 | UINT8 | The channel number. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

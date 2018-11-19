@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_SUPPORTED_GUIDS
-author: windows-driver-content
 description: As a query, the OID_GEN_SUPPORTED_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS_GUID.
 ms.assetid: 6985727e-50f8-4dbf-b8cd-ce31d49e8294
 ms.date: 08/08/2017
@@ -91,7 +90,7 @@ When set, indicates that all users are allowed to use this GUID to set informati
 **Note**  
 By default, custom WMI GUIDs supplied by a miniport driver are only accessible to users with administrator privileges. A user with administrator privileges can always read or write to a custom GUID if the miniport driver supports the read or write operation for that GUID. Set the fNDIS\_GUID\_ALLOW\_READ and fNDIS\_GUID\_ALLOW\_WRITE flags to allow all users to access a custom GUID.
 
- 
+ 
 
 Note that all custom GUIDs registered by a miniport driver must set either fNDIS\_GUID\_TO\_OID or fNDIS\_GUID\_TO\_STATUS (never set both). All other flags may be combined by using the OR operator as applicable.
 
@@ -133,9 +132,9 @@ Requirements
 
 [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
 
- 
+ 
 
- 
+ 
 
 
 

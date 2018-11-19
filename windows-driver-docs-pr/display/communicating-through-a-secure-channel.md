@@ -29,9 +29,9 @@ To use COPP, a secure communication channel must be established between the appl
 
 [Status Security and Authenticity](status-security-and-authenticity.md)
 
- 
+ 
 
- 
+ 
 
 
 

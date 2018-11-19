@@ -13,10 +13,10 @@ This topic describes how to use the [TraceLogging](https://msdn.microsoft.com/li
 
 Prerequisites:
 
--   Windows 10
+-   Windows 10
 -   Visual Studio 2013 (or later)
--   Windows 10 SDK
--   Windows Driver Kit (WDK) for Windows 10
+-   Windows 10 SDK
+-   Windows Driver Kit (WDK) for Windows 10
 
 ## <span id="Include_the_TraceLogging_header_files"></span><span id="include_the_tracelogging_header_files"></span><span id="INCLUDE_THE_TRACELOGGING_HEADER_FILES"></span>Include the TraceLogging header files
 
@@ -28,9 +28,9 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 #include <TraceLoggingProvider.h> 
 ```
 
-**Note**  The wdm.h file is required for TraceLoggingProvider.h when developing kernel mode drivers.
+**Note**  The wdm.h file is required for TraceLoggingProvider.h when developing kernel mode drivers.
 
- 
+
 
 ## <span id="Declare_your_driver_as_a_TraceLogging_provider"></span><span id="declare_your_driver_as_a_tracelogging_provider"></span><span id="DECLARE_YOUR_DRIVER_AS_A_TRACELOGGING_PROVIDER"></span>Declare your driver as a TraceLogging provider
 
@@ -49,9 +49,9 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 
     The variable you declare with [**TRACELOGGING\_DECLARE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904623) becomes the handle to the provider when you call the [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro later in your code.
 
-    **Tip**  You might want to put this macro in a header file so that the handle to the TraceLogging provider is available globally.
+    **Tip**  You might want to put this macro in a header file so that the handle to the TraceLogging provider is available globally.
 
-     
+
 
 2.  Add the [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro, and specify a name for the trace provider and the trace provider handle. The handle is the variable you declared in step 1. The syntax of the macro is:
 
@@ -70,11 +70,13 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 
     When you first create the handle with the [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro, the provider is in the unregistered state. In this state, the provider will ignore any trace write calls until it is registered.
 
-    **Note**  Note: For kernel-mode, be aware that while provider metadata is explicitly stored into TLG\_METADATA\_SEGMENT (.rdata), the variables you create for the handle (for example, g\_hProvider) and the name of the provider (for example, "MyTraceLoggingProviderKM") are not explicitly assigned a segment and will use the current implicit segments.
+    **Note**  Note: For kernel-mode, be aware that while provider metadata is explicitly stored into TLG\_METADATA\_SEGMENT (.rdata), the variables you create for the handle (for example, g\_hProvider) and the name of the provider (for example, "MyTraceLoggingProviderKM") are not explicitly assigned a segment and will use the current implicit segments.
 
-     
 
-    The [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro expects the variables passed to it to be in the nonpaged pool. If this is not the case already, the caller must set the data segment via \#pragma data\_seg (for uniqueVarName) or the const segment via \#pragma const\_seg (for g\_hMyProvider) before calling the **TRACELOGGING\_DEFINE\_PROVIDER** macro.
+
+
+The [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro expects the variables passed to it to be in the nonpaged pool. If this is not the case already, the caller must set the data segment via \#pragma data\_seg (for uniqueVarName) or the const segment via \#pragma const\_seg (for g\_hMyProvider) before calling the **TRACELOGGING\_DEFINE\_PROVIDER** macro.
+
 
 ## <span id="Register_the_driver_with_TraceLogging"></span><span id="register_the_driver_with_tracelogging"></span><span id="REGISTER_THE_DRIVER_WITH_TRACELOGGING"></span>Register the driver with TraceLogging
 
@@ -109,9 +111,9 @@ TraceLoggingWrite(g_hProvider, "EventName", args...)
 
 Where g\_hProvider is the handle for the provider you defined and "EventName" is a string literal (not a variable) that you use to identify the specific event. Like **printf** or **DbgPrint**, the [**TraceLoggingWrite**](https://msdn.microsoft.com/library/windows/desktop/dn904617) macro supports a variable number of additional parameters (up to 99). The parameters (args) must be TraceLogging wrapper macros, such as [**TraceLoggingLevel**](https://msdn.microsoft.com/library/windows/desktop/dn933288), TraceLoggingInt32 , or TraceLoggingString. The TraceLogging wrapper macros are defined in TraceLoggingProvider.h.
 
-**Note**  If you are using C++, you can use the [**TraceLoggingValue**](https://msdn.microsoft.com/library/windows/desktop/dn933292) wrapper macro to automatically adjust for type. If you are writing your driver in C, you must use the type-specific field macros (for example, TraceLoggingInt32 or TraceLoggingUnicodeString).
+**Note**  If you are using C++, you can use the [**TraceLoggingValue**](https://msdn.microsoft.com/library/windows/desktop/dn933292) wrapper macro to automatically adjust for type. If you are writing your driver in C, you must use the type-specific field macros (for example, TraceLoggingInt32 or TraceLoggingUnicodeString).
 
- 
+
 
 The following example, logs an event for the provider, g\_hProvider. The event is called "MyDriverEntryEvent." The macro makes use of the TraceLoggingPointer and TraceLoggingUnicodeString wrappers to write the pointer to the driver object and registry path to the trace log. The TraceLoggingUnicodeString wrapper takes an optional name. In this example, "RegPath" is the name of the RegistryPath value. If no name is specified, the value is used as the name.
 
@@ -130,9 +132,9 @@ If you are instrumenting a driver or component that is written in C++, you link 
 
 For examples of how to capture and view TraceLogging data, see [Capture and view TraceLogging data](capture-and-view-tracelogging-data.md).
 
- 
 
- 
+
+
 
 
 

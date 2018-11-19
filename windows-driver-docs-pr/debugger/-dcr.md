@@ -3,7 +3,6 @@ title: dcr
 description: The dcr extension displays the default control register (DCR) at the specified address.
 ms.assetid: 294fc3a9-5182-47ae-a261-53be6389bcf1
 keywords: ["DCR (default control register)", "dcr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -25,13 +24,13 @@ The **!dcr** extension displays the default control register (DCR) at the specif
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
 <span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
-Specifies the hexadecimal address of the DCR to display. The expression **@dcr** can also be used for this parameter. In that case, information about the current processor DCR is displayed.
+Specifies the hexadecimal address of the DCR to display. The expression <strong>@dcr</strong> can also be used for this parameter. In that case, information about the current processor DCR is displayed.
 
 <span id="_______DisplayLevel______"></span><span id="_______displaylevel______"></span><span id="_______DISPLAYLEVEL______"></span> *DisplayLevel*   
 Can be any one of the following options:
@@ -64,7 +63,7 @@ Causes the display to include more in-depth information about all of the DCR fie
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium-based target computer.
 
@@ -96,9 +95,9 @@ kd> !dcr @dcr 2
   rv : 0 : reserved2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

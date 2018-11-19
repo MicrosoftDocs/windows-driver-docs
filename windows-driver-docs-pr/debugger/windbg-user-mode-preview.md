@@ -1,14 +1,9 @@
 ---
 title: WinDbg Preview - Start a user mode session
 description: This section describes how to start a user mode session with the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/04/2017
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - Start a user mode session  
 

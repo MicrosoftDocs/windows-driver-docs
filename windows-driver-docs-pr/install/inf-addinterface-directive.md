@@ -31,12 +31,12 @@ An exported device interface class can be one of the system-defined device inter
 
 
 <a href="" id="interfaceclassguid"></a>*InterfaceClassGUID*  
-Specifies the GUID value that identifies the device interface class. This can be expressed as an explicit GUID value of the form **{***nnnnnnnn***-***nnnn***-***nnnn*-*nnnn***-***nnnnnnnnnnnn***}** or as a %*strkey*% token defined to **"{***nnnnnnnn***-***nnnn***-***nnnn*-*nnnn***-***nnnnnnnnnnnn***}"** in a [**Strings**](inf-strings-section.md) section of the INF file.
+Specifies the GUID value that identifies the device interface class. This can be expressed as an explicit GUID value of the form **{**<em>nnnnnnnn</em>**-***nnnn***-***nnnn*-*nnnn***-**<em>nnnnnnnnnnnn</em>**}** or as a %*strkey*% token defined to **"{**<em>nnnnnnnn</em>**-***nnnn***-***nnnn*-*nnnn***-**<em>nnnnnnnnnnnn</em>**}"** in a [**Strings**](inf-strings-section.md) section of the INF file.
 
 For more information about how to create a GUID, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392). For the system-defined interface class GUIDS, see the appropriate header, such as *Ks.h* for the kernel-streaming interface GUIDs.
 
 <a href="" id="reference-string"></a>*reference-string*  
-This optional value, associated with the device-specific instance of the specified interface class, can be expressed either as a **"***quoted string***"** or as a %*strkey*% token defined in an [**INF Strings section**](inf-strings-section.md).
+This optional value, associated with the device-specific instance of the specified interface class, can be expressed either as a **"**<em>quoted string</em>**"** or as a %*strkey*% token defined in an [**INF Strings section**](inf-strings-section.md).
 
 PnP function and filter drivers usually omit this value from the **AddInterface=** entries in their INF files. A *reference-string* is used by the *swenum* driver as a placeholder for software devices that are created on demand by using multiple instances of a single interface class. The same *InterfaceClassGUID* value can be specified in INF entries with two or more unique *reference-string*s. Because the I/O manager passes the *reference-string* value as a path component of the interface instance's name whenever it is opened, the installed driver can discriminate between interface instances of the same class for a single device.
 
@@ -49,9 +49,9 @@ If specified, this entry must be zero.
 Remarks
 -------
 
-If the [device interface class](device-interface-classes.md) identified by a specified **{***InterfaceClassGUID***}** is not installed already, the system setup code installs that class in the system. Any INF file that installs a new class also has an [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md). This section contains the specified **{***InterfaceClassGUID***}** and references an *interface-install-section* that sets up interface-specific installation operations for that class.
+If the [device interface class](device-interface-classes.md) identified by a specified **{**<em>InterfaceClassGUID</em>**}** is not installed already, the system setup code installs that class in the system. Any INF file that installs a new class also has an [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md). This section contains the specified **{**<em>InterfaceClassGUID</em>**}** and references an *interface-install-section* that sets up interface-specific installation operations for that class.
 
-To enable an instance of a device interface class for run-time use by higher level components, a device driver must first call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) to retrieve the symbolic link name of the device interface instance to enable.  Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.  To enable instances of device interfaces provisioned in the INF, the device driver must provide the **{***InterfaceClassGUID***}** and *reference-string* specified in the INF when it calls [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).  The driver then calls [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable the interface using the symbolic link name returned by [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506). 
+To enable an instance of a device interface class for run-time use by higher level components, a device driver must first call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) to retrieve the symbolic link name of the device interface instance to enable.  Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.  To enable instances of device interfaces provisioned in the INF, the device driver must provide the **{**<em>InterfaceClassGUID</em>**}** and *reference-string* specified in the INF when it calls [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).  The driver then calls [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable the interface using the symbolic link name returned by [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506). 
 
 Each **AddInterface** directive in an [**INF DDInstall.Interfaces section**](inf-ddinstall-interfaces-section.md) can reference an INF-writer-defined *add-interface-section* elsewhere in the INF file. Each INF-writer-defined section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -162,9 +162,9 @@ ESSAud.Wave.szPname="ESS AudioDrive"
 
 [**UpdateInis**](inf-updateinis-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

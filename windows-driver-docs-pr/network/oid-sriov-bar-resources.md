@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_BAR_RESOURCES
-author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_BAR_RESOURCES to determine the memory resources that were allocated to a PCI Express (PCIe) Base Address Register (BAR) of a PCIe Virtual Function (VF).
 ms.assetid: CA29591B-EBFB-4B12-A980-F3FAD65207E2
 ms.date: 08/08/2017
@@ -35,13 +34,13 @@ NDIS issues an OID method request of OID\_SRIOV\_BAR\_RESOURCES to obtain the sy
 
 **Note**  Overlying drivers, such as protocol or filter drivers, cannot issue OID method requests of OID\_SRIOV\_BAR\_RESOURCES to the PF miniport driver.
 
- 
+ 
 
 When the PF miniport driver receives the OID method request, the driver returns the resources for the specified BAR by formatting the [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541977) structure within the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure. The driver formats the **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structure with the system hardware resources associated with the BAR for the specified VF.
 
 **Note**  The driver must format the structure for a resource type of **CmResourceTypeMemory**.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -69,11 +68,11 @@ The PF miniport driver returns one of the following status codes for the method 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451675) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451675" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_BAR_RESOURCES_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451675)"><strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer is less than (sizeof([<strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451675)) + sizeof([<strong>CM_PARTIAL_RESOURCE_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff541977)). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer is less than (sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451675" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_BAR_RESOURCES_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451675)"><strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong></a>) + sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/ff541977" data-raw-source="[&lt;strong&gt;CM_PARTIAL_RESOURCE_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541977)"><strong>CM_PARTIAL_RESOURCE_DESCRIPTOR</strong></a>). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -82,7 +81,7 @@ The PF miniport driver returns one of the following status codes for the method 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -114,9 +113,9 @@ Requirements
 
 [**NDIS\_SRIOV\_BAR\_RESOURCES\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451675)
 
- 
+ 
 
- 
+ 
 
 
 

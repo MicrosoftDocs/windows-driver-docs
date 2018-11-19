@@ -78,7 +78,7 @@ Here are the predefined constant values that represent versions of the Microsoft
 </tbody>
 </table>
 
- 
+ 
 
 You can see many examples of version-specific DDI elements in the WDK header files. This conditional declaration appears in Wdm.h, which is a header file that might be included by a kernel-mode driver.
 
@@ -117,9 +117,9 @@ In the example can see that the [**GetPrintExecutionData**](https://msdn.microso
 
 The WDK supports several versions of Windows, and it also supports several versions of the Kernel Mode Driver Framework (KMDF) and User Mode Driver Framework (UMDF). The versioning information in the WDK header files pertains to Windows versions, but not to KMDF or UMDF versions. Header files for different versions of KMDF and UMDF are placed in separate directories.
 
- 
+ 
 
- 
+ 
 
 
 

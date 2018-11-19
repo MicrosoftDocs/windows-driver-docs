@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID
-author: windows-driver-content
 description: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID is a TLV that contains the ID of the pattern that matches a wake packet.
 ms.assetid: 3E1D4CC4-0369-4C1F-94C6-AFC34C861E0D
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The ID of the pattern that matches the wake packet. The ID is defined when the pattern is added with [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

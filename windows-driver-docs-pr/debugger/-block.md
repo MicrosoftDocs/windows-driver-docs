@@ -3,7 +3,6 @@ title: .block
 description: The .block token performs no action; it is used solely to introduce a block of statements.
 ms.assetid: 8f1ac6b5-fea5-4e3f-8d4c-5e0533722885
 keywords: [".block Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.block** token performs no action; it is used solely to introduce a block of statements.
 
-```
+```dbgcmd
     Commands ; .block { Commands } ; Commands 
 ```
 
@@ -39,9 +38,9 @@ Blocks of commands are surrounded by braces. When each block is entered, all ali
 
 Each block must begin with a control flow token. If you wish to create a block for the sole purpose of evaluating aliases, you should prefix it with the **.block** token, since this token has no effect other than to allow a block to be introduced.
 
- 
+ 
 
- 
+ 
 
 
 

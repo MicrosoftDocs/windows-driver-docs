@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property specifies the digital signal
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>GUID</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a GUID that identifies the effect that the pin applies to its data stream. This value can be one of the following GUIDs from header file Ksmedia.h:
 
@@ -105,9 +105,9 @@ Requirements
 
 [**KSNODETYPE\_NOISE\_SUPPRESS**](ksnodetype-noise-suppress.md)
 
- 
+ 
 
- 
+ 
 
 
 

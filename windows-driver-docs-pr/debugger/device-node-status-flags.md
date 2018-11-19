@@ -3,7 +3,6 @@ title: Device Node Status Flags
 description: Device Node Status Flags
 ms.assetid: 64f4548f-ace3-440c-8a36-97bd46cfa986
 keywords: ["Plug and Play (PnP), Device Node Status Flags", "Device Node Status Flags", "DNF_XXX"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -114,9 +113,9 @@ There is no Registry entry of the upper-class-filters type for the device.
 <span id="DNF_WAITING_FOR_FDO__0x80000000_"></span><span id="dnf_waiting_for_fdo__0x80000000_"></span><span id="DNF_WAITING_FOR_FDO__0X80000000_"></span>**DNF\_WAITING\_FOR\_FDO (0x80000000)**  
 Enumeration of the device is waiting until the driver attaches its FDO.
 
- 
+ 
 
- 
+ 
 
 
 

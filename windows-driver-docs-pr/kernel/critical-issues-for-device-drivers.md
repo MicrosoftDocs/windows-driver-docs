@@ -1,6 +1,5 @@
 ---
 title: Critical Issues for Device Drivers
-author: windows-driver-content
 description: Critical Issues for Device Drivers
 ms.assetid: af09c548-02f6-448e-bdd8-7521b4ed7c96
 keywords: ["dynamic hardware partitioning WDK , critical issues", "hardware partitioning WDK dynamic , critical issues", "partitions WDK dynamic hardware , critical issues", "dynamically partitionable servers WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning"]
@@ -19,9 +18,9 @@ When you develop device drivers, you should consider the following critical issu
 
 [Hot Replace of Partition Units](hot-replace-of-partition-units.md)
 
- 
+ 
 
- 
+ 
 
 
 

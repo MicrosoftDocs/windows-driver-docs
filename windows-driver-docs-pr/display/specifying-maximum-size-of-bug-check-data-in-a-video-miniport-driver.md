@@ -22,9 +22,9 @@ A video miniport driver must set the value for the *BugcheckDataSize* parameter 
 
 The Windows XP SP1 DDK documentation incorrectly specified the maximum value for *BugcheckDataSize*.
 
- 
+ 
 
- 
+ 
 
 
 

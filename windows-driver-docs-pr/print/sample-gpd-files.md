@@ -1,6 +1,5 @@
 ---
 title: Sample GPD Files
-author: windows-driver-content
 description: Sample GPD Files
 ms.assetid: 68b4ffa1-8c94-4cda-bc96-887e196cf534
 keywords:
@@ -22,7 +21,7 @@ The Windows driver print samples on GitHub include several examples of GPD files
 -   [XPSDrv driver and filter sample](http://go.microsoft.com/fwlink/p/?LinkId=617950)
 
 
- 
+ 
 
 
 

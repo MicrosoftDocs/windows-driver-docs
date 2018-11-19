@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MEDIA_CAPABILITIES
-author: windows-driver-content
 description: The OID_GEN_MEDIA_CAPABILITIES OID is obsolete. NDIS and NDIS drivers do not use this OID.
 ms.assetid: 5806ec46-d860-466f-b163-d7a7ad59e87a
 ms.date: 08/08/2017
@@ -34,9 +33,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

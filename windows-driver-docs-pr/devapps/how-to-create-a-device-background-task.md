@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # Creating a device background task in Windows 8.1 (UWP device apps)
 
 
-In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967) or [DeviceServicingTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308965). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
+In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967) or [DeviceServicingTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308965). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-**Note**  This topic corresponds to the [Custom USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=301975 ). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger. To see an example of a background task that performs a firmware update with the DeviceServicingTrigger, download the [Firmware update USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=309186).
+**Note**  This topic corresponds to the [Custom USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=301975 ). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger. To see an example of a background task that performs a firmware update with the DeviceServicingTrigger, download the [Firmware update USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=309186).
 
- 
+
 
 Although the device background task in the [Custom USB device sample](http://go.microsoft.com/fwlink/p/?LinkId=301975 ) features a DeviceUseTrigger, everything discussed in this topic can also be applied to device background tasks that use DeviceServicingTrigger. The only difference between using the two triggers are the policy checks made by Windows.
 
@@ -71,17 +71,19 @@ The foreground app in the [Custom USB device sample](http://go.microsoft.com/fwl
     1.  Calls the `SetupBackgroundTask` method from the previous step and registers the background task that will sync with the device.
     2.  Calls the private `StartSyncBackgroundTaskAsync` method which starts the background task. That method closes the app’s handle to the device to ensure that the background task is able to open the device when it starts.
 
-        **Important**  The background task will need to open the device to perform the update so the foreground app must close its connections to the device before calling `RequestAsync`.
+        **Important**  The background task will need to open the device to perform the update so the foreground app must close its connections to the device before calling `RequestAsync`.
 
-         
 
-        Next, the `StartSyncBackgroundTaskAsync` method calls the `DeviceUseTrigger` object’s `RequestAsync` method which starts triggers the background task and returns the `DeviceTriggerResults` object from `RequestAsync` used to determine if the background task started successfully.
 
-        **Important**  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the foreground app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
 
-         
+    Next, the `StartSyncBackgroundTaskAsync` method calls the `DeviceUseTrigger` object’s `RequestAsync` method which starts triggers the background task and returns the `DeviceTriggerResults` object from `RequestAsync` used to determine if the background task started successfully.
 
-    3.  Finally, the `SyncWithDeviceAsync` method uses the `DeviceTriggerResults` object returned from `StartSyncBackgroundTaskAsync` to determine if the background task started successfully. A switch statement is used to inspect the result from `DeviceTriggerResults`
+    **Important**  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the foreground app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
+
+
+
+3.  Finally, the `SyncWithDeviceAsync` method uses the `DeviceTriggerResults` object returned from `StartSyncBackgroundTaskAsync` to determine if the background task started successfully. A switch statement is used to inspect the result from `DeviceTriggerResults`
+
 
 5.  The foreground app implements a private `OnSyncWithDeviceProgress` event handler that will update the app UI with progress from the device background task.
 
@@ -110,9 +112,9 @@ The foreground app in the [Custom USB device sample](http://go.microsoft.com/fwl
 
 [Supporting your app with background tasks](http://go.microsoft.com/fwlink/p/?LinkID=254337)
 
- 
 
- 
+
+
 
 
 

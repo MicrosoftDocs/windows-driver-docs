@@ -1,6 +1,5 @@
 ---
 title: Obtaining Information About a Parallel Port
-author: windows-driver-content
 description: Obtaining Information About a Parallel Port
 ms.assetid: d8ae2296-05b6-419a-93cc-00fcb12d41fe
 keywords:
@@ -33,9 +32,9 @@ A client uses the following internal device control requests to obtain the above
 
 A client releases parallel port information by using an [**IOCTL\_INTERNAL\_RELEASE\_PARALLEL\_PORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff544047) request.
 
- 
+ 
 
- 
+ 
 
 
 

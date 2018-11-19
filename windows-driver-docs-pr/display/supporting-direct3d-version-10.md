@@ -29,9 +29,9 @@ The following sections describe the new features of Direct3D version 10 and how 
 
 [DirectX Graphics Infrastructure DDI](directx-graphics-infrastructure-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

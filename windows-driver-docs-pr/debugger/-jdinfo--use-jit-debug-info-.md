@@ -3,7 +3,6 @@ title: .jdinfo (Use JIT_DEBUG_INFO)
 description: The .jdinfo command uses a JIT_DEBUG_INFO structure as the source of the exception and context for just in time (JIT) debugging.
 ms.assetid: C35A2A04-CF0E-475e-8471-2A8562BB3650
 keywords: ["Use JIT_DEBUG_INFO (.jdinfo) command ----- Appendix", "JIT_DEBUG_INFO ----- Appendix", ".jdinfo (Use JIT_DEBUG_INFO) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the stru
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -213,9 +212,9 @@ Last event: 153c.5d0: Break instruction exception - code 80000003 (first chance)
   debugger time: Thu Sep  8 12:55:08.968 2016 (UTC - 7:00)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

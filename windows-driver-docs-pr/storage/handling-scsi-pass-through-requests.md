@@ -1,6 +1,5 @@
 ---
 title: Handling SCSI Pass-Through Requests
-author: windows-driver-content
 description: Handling SCSI Pass-Through Requests
 ms.assetid: 61f8dc02-b5ae-4be5-b7e1-d8207304ef7c
 keywords:
@@ -32,9 +31,9 @@ If the port driver's I/O stack location for an IOCTL\_SCSI\_PASS\_THROUGH or IOC
 
 The port driver does not check the validity of the SCSI command embedded in such a pass-through request.
 
- 
+ 
 
- 
+ 
 
 
 

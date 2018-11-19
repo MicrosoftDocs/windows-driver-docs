@@ -1,6 +1,5 @@
 ---
 title: Single-Component Device, one or more Functional Power States
-author: windows-driver-content
 description: Describes how to implement Fx state support for a single-component device in a KMDF driver.
 ms.assetid: C7EFD71F-E101-4160-9703-E1DBD507698C
 ms.date: 04/20/2017
@@ -78,9 +77,9 @@ Restart power-managed queues and self-managed I/O operations in [*ComponentActiv
 
 If the driver previously called [**WdfInterruptReportInactive**](https://msdn.microsoft.com/library/windows/hardware/hh439277), re-enable inactive interrupts by calling [**WdfInterruptReportActive**](https://msdn.microsoft.com/library/windows/hardware/hh439273) from either [*ComponentActiveConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406416) or [*ComponentIdleStateCallback*](https://msdn.microsoft.com/library/windows/hardware/hh450931).
 
- 
+ 
 
- 
+ 
 
 
 

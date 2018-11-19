@@ -28,9 +28,9 @@ The following properties are defined:
 
 [**KS\_AM\_RATE\_Step**](ks-am-rate-step.md)
 
- 
+ 
 
- 
+ 
 
 
 

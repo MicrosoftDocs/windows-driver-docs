@@ -33,9 +33,9 @@ The SetupAPI property functions that retrieve and set a property value take a *P
 
 For more information, see [Using SetupAPI to Access Device Properties (Windows Vista and Later)](using-setupapi-to-access-device-properties--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

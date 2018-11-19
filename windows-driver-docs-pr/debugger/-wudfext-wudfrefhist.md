@@ -3,7 +3,6 @@ title: wudfext.wudfrefhist
 description: The wudfext.wudfrefhist extension displays the reference count stack history for a UMDF object.
 ms.assetid: 8999f525-c6ed-4341-be2c-b0debef23a4b
 keywords: ["wudfext.wudfrefhist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the UMDF object whose reference count stack history is 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -101,9 +100,9 @@ WUDFPlatform!WdfLpcCommPort::ProcessMessage+0x92
 WUDFPlatform!WdfLpc::RetrieveMessage+0x20c
 ```
 
- 
+ 
 
- 
+ 
 
 
 

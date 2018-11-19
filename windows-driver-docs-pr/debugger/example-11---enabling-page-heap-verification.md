@@ -2,7 +2,6 @@
 title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
 ms.assetid: 5d0303a9-29f7-4759-ae7b-ad670eaee0ee
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -39,11 +38,11 @@ gflags /i myapp.exe -02000000
 
 **Note**   When using the **/debug** or **/kdebug** parameters, use the **/p /disable** parameters to turn off the page heap verification (not the **/i -hpa** parameters). The **/p /disable** parameters disable page heap verification and delete registry entries that the debugger reads.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Managing a Port
-author: windows-driver-content
 description: Managing a Port
 ms.assetid: 204d57bb-eb4a-4417-952a-349e27633560
 keywords:
@@ -21,9 +20,9 @@ Port management activities consist of [adding a port](adding-a-port.md), [config
 
 One additional, optional management activity involves [setting port time-out values](setting-port-time-out-values.md).
 
- 
+ 
 
- 
+ 
 
 
 

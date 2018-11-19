@@ -77,7 +77,7 @@ The following terms are used in the flowcharts:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>SEG.Tsval</strong></p></td>
-<td align="left"><p>The <strong>Timestamp</strong> value in the currently received segment. The format for this value is defined in [RFC 1323](http://www.ietf.org/rfc/rfc1323.txt).</p></td>
+<td align="left"><p>The <strong>Timestamp</strong> value in the currently received segment. The format for this value is defined in <a href="http://www.ietf.org/rfc/rfc1323.txt" data-raw-source="[RFC 1323](http://www.ietf.org/rfc/rfc1323.txt)">RFC 1323</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>H.Tsval</strong></p></td>
@@ -94,7 +94,7 @@ The following terms are used in the flowcharts:
 </tbody>
 </table>
 
- 
+ 
 
 ![flowchart describing the rules for coalescing segments and updating tcp headers](images/rsc-rules1.png)
 
@@ -162,7 +162,7 @@ The TCP timestamp option is the only option that may be legally coalesced. Coale
 
 **Note**  The check **SEG.TSval** &gt;= **H.TSval** must be performed using modulo-232 arithmetic similar to that used for TCP sequence numbers. See [RFC 793](http://www.ietf.org/rfc/rfc793.txt), section 3.3.
 
- 
+ 
 
 When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure that describes the coalesced segment:
 
@@ -191,9 +191,9 @@ Finalizing an SCU involves:
 
 A network card may report both RSC and IPsec task offload capabilities. (See [Determining the RSC Capabilities of a Network Adapter](determining-the-rsc-capabilities-of-a-network-adapter.md).) However, if it supports IPsec task offload, it must not attempt to coalesce segments that are protected by IPsec.
 
- 
+ 
 
- 
+ 
 
 
 

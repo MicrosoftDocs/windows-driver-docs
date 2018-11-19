@@ -1,6 +1,5 @@
 ---
 title: Print Driver Versioning
-author: windows-driver-content
 description: Print Driver Versioning
 ms.assetid: 8ce844a5-44f6-4967-8586-b302823fc862
 keywords:
@@ -67,7 +66,7 @@ Fourth WORD
 
 Represents a bug fix or service pack release. Increment this value on release of a new binary, when it is a collection of bug fixes or a service pack.
 
- 
+ 
 
 Here is a monolithic driver example:
 
@@ -112,9 +111,9 @@ Set this constant to a name that specifies the original name of the file (not in
 #define VER_ORIGINALFILENAME_STR    "SAMPLERES.DLL"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

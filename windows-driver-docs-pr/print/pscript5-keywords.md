@@ -1,6 +1,5 @@
 ---
 title: Pscript5 Keywords
-author: windows-driver-content
 description: Pscript5 Keywords
 ms.assetid: a5f4384a-8d78-4dc6-969b-f7a1fa6cb5e7
 ms.date: 04/20/2017
@@ -54,7 +53,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 <tr class="even">
 <td><p>%CustomPageSize</p></td>
 <td><p>Custom page size options have a complex format. See note 2 following this table.</p></td>
-<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public [<strong>DEVMODEW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
+<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -117,7 +116,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 &quot;Portrait&quot;
 &quot;Landscape&quot;
 &quot;RotatedLandscape&quot;</td>
-<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public [<strong>DEVMODEW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
+<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -210,26 +209,26 @@ Feature and option names that are passed to the helper interface from a Pscript5
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   1
 If the stated requirements are not met for a feature, that feature will not be listed in **EnumFeatures**, and attempts to get or set that feature will cause E\_FAIL to be returned. This note applies to %AddEuro, %Negative, and %OutputPSLevel.
 
- 
+ 
 
 **Note**   2 (%CustomPageSize)
 Custom page size format is identical to that described in **IPrintCoreUI2**. **EnumOptions** returns an empty list of options.
 
- 
+ 
 
 **Note**   3
 Numeric values are represented as ANSI strings that contain only digit characters. Sign symbols are not allowed. For example, "300" is valid, but "-20", "20.5", and "+300" are all invalid. This note applies to %JobTimeout, %MaxFontSizeAsBitmap, %MinFontAsOutline, %PSMemory, and %WaitTimeout.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

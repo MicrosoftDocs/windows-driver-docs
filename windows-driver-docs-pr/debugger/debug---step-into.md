@@ -3,7 +3,6 @@ title: Debug Step Into
 description: Debug Step Into
 ms.assetid: 809a14f8-7280-46d3-b113-7b1808c13d0f
 keywords: ["Debug Step Into", "controlling the target, Debug Step Into"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ This command is equivalent to pressing F11 or F8 or clicking the **Step into (F1
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ The ability to customize the in box HD audio default audio volume and microphone
 
 **Note**  The process described here can only be used if the default Microsoft HD Audio driver is being used.
 
- 
+ 
 
 By default, the HD Audio class function driver sets the audio volume and the microphone boost levels at predetermined values to ensure a pleasant “out of the box” experience for the user.
 
@@ -66,7 +66,7 @@ The KS DB stepping values are defined as follows:
 
 For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309).
 
-To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 ```inf
 ;Copyright (c) Microsoft Corporation. All rights reserved.

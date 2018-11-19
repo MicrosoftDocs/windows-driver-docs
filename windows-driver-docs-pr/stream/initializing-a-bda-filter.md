@@ -1,6 +1,5 @@
 ---
 title: Initializing a BDA Filter
-author: windows-driver-content
 description: Initializing a BDA Filter
 ms.assetid: 716978f5-4bdd-4673-8c4a-14dc76947fba
 keywords:
@@ -21,9 +20,9 @@ A network provider filter uses the create dispatch routine of the BDA device's i
 
 The BDA filter's create routine should allocate memory for its filter object, should set member variables for the filter object, and then should call the [**BdaInitFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556464) support function to initialize the filter instance. In this call, the BDA filter's create routine passes a pointer to the [**KSFILTER**](https://msdn.microsoft.com/library/windows/hardware/ff562522) structure for the initial filter to create and a pointer to the [**BDA\_FILTER\_TEMPLATE**](https://msdn.microsoft.com/library/windows/hardware/ff556523) structure that describes possibilities for the filter's template topology for the initial filter instance.
 
- 
+ 
 
- 
+ 
 
 
 

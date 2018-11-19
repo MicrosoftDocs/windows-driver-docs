@@ -1,6 +1,5 @@
 ---
 title: OID_PM_ADD_PROTOCOL_OFFLOAD
-author: windows-driver-content
 description: As a set, NDIS protocol drivers use the OID_PM_ADD_PROTOCOL_OFFLOAD OID to add a protocol offload for power management to a network adapter.
 ms.assetid: 418f4ce8-64af-4e1e-877a-4cc606f63747
 ms.date: 08/08/2017
@@ -27,7 +26,7 @@ Before NDIS sends this OID request down to the underlying NDIS drivers or comple
 
 **Note**  The protocol offload identifier is a unique value for each of the protocol offloads that are set on a network adapter. However, the protocol offload identifier is not globally unique across all network adapters.
 
- 
+ 
 
 If NDIS or an underlying network adapter rejects an offload, it generates an [**NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567412) status indication. This can occur after returning NDIS\_STATUS\_SUCCESS for the OID. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains the ULONG protocol offload identifier of the rejected protocol offload.
 
@@ -94,9 +93,9 @@ Requirements
 
 [Adding and Deleting Low Power Protocol Offloads](https://msdn.microsoft.com/library/windows/hardware/ff543707)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INSTANCE_NAME_HASH
-author: windows-driver-content
 description: WDI_TLV_P2P_INSTANCE_NAME_HASH is a TLV that contains the hash of "Instance Name, Service Type".
 ms.assetid: A29D0339-93A8-43EB-8C22-DD7A7DC2147C
 ms.date: 07/18/2017
@@ -16,7 +15,7 @@ WDI\_TLV\_P2P\_INSTANCE\_NAME\_HASH is a TLV that contains the hash of "Instance
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -35,7 +34,7 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.micros
 |-------------------------------------------------------------------------|--------------------------------------------|
 | [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) | The hash of "Instance Name, Service Type". |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

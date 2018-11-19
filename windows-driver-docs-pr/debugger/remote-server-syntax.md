@@ -3,7 +3,6 @@ title: Remote Server Syntax
 description: To start the server side of the Remote tool, use the following syntax at the command line.
 ms.assetid: fecc9f43-6946-4d99-840b-a85c75ac397c
 keywords: ["Remote Server Syntax Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 To start the server side of the Remote tool, use the following syntax at the command line.
 
-```
+```console
 remote /s Command SessionName [/f Color] [/b] [/u User [/u User...]] [/ud User [/ud User...]] [/v | /-v]
 ```
 
@@ -65,7 +64,7 @@ Makes a remote debugger session invisible. For more information, see [Visible Se
 
 The *Command* and *SessionName* parameters must appear in the order shown on the syntax line.
 
-To end a remote session, type **@k**. For more information, see [Remote Session Commands](remote-session-commands.md).
+To end a remote session, type <strong>@k</strong>. For more information, see [Remote Session Commands](remote-session-commands.md).
 
 The Remote tool will not create a session that the current user does not have permission to join.
 
@@ -73,16 +72,16 @@ When starting more than one remote session on a single computer, open a new comm
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```console
 remote /s "i386kd -v" TestSession
 remote /s "cmd" "My Remote Session" /f white /b black /u Server01\Administrators
 remote /s "ntsd -d -g -x" DebugIt /-v
 remote /q Server01
 ```
 
- 
+ 
 
- 
+ 
 
 
 

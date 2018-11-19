@@ -3,7 +3,6 @@ title: Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP
 description: The UNEXPECTED_KERNEL_MODE_TRAP bug check has a value of 0x0000007F.
 ms.assetid: f4fcc2a1-891b-44e9-94bf-e712019f538f
 keywords: ["Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP", "UNEXPECTED_KERNEL_MODE_TRAP"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ The UNEXPECTED\_KERNEL\_MODE\_TRAP bug check has a value of 0x0000007F. This bug
 
 This trap could be a *bound trap* (a trap the kernel is not permitted to catch) or a *double fault* (a fault that occurred while processing an earlier fault, which always results in a system failure).
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## UNEXPECTED\_KERNEL\_MODE\_TRAP Parameters
 
@@ -102,9 +101,9 @@ If you encountered this error while upgrading to a new version of the Windows op
 
 Finally, if all the above steps do not resolve the error, take the system motherboard to a repair facility for diagnostic testing. A crack, a scratched trace, or a defective component on the motherboard can also cause this error.
 
- 
+ 
 
- 
+ 
 
 
 

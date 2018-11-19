@@ -1,6 +1,5 @@
 ---
 title: Renamed WHEA Data Types
-author: windows-driver-content
 description: Renamed WHEA Data Types
 ms.assetid: e2c511a2-fd6e-4c7a-a47f-eb9b9f917bb4
 keywords:
@@ -78,7 +77,7 @@ The following tables list the WHEA data types' former and new names.
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="renamed-whea-defines"></a> Renamed WHEA Defines
 
@@ -101,7 +100,7 @@ The following tables list the WHEA data types' former and new names.
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="renamed-whea-structures-and-unions"></a> Renamed WHEA Structures and Unions
 
@@ -119,68 +118,68 @@ The following tables list the WHEA data types' former and new names.
 <tbody>
 <tr class="odd">
 <td><p>WHEA_FIRMWARE_RECORD</p></td>
-<td><p>[<strong>WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560520)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560520" data-raw-source="[&lt;strong&gt;WHEA_FIRMWARE_ERROR_RECORD_REFERENCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560520)"><strong>WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_GENERIC_PROCESSOR_ERROR</p></td>
-<td><p>[<strong>WHEA_PROCESSOR_GENERIC_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560607)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560607" data-raw-source="[&lt;strong&gt;WHEA_PROCESSOR_GENERIC_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560607)"><strong>WHEA_PROCESSOR_GENERIC_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560610)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560610" data-raw-source="[&lt;strong&gt;WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560610)"><strong>WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_MEMORY_ERROR</p></td>
-<td><p>[<strong>WHEA_MEMORY_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560565)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560565" data-raw-source="[&lt;strong&gt;WHEA_MEMORY_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560565)"><strong>WHEA_MEMORY_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_MEMORY_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_MEMORY_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560568)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560568" data-raw-source="[&lt;strong&gt;WHEA_MEMORY_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560568)"><strong>WHEA_MEMORY_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_NMI_ERROR</p></td>
-<td><p>[<strong>WHEA_NMI_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560571)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560571" data-raw-source="[&lt;strong&gt;WHEA_NMI_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560571)"><strong>WHEA_NMI_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_PCIEXPRESS_ERROR</p></td>
-<td><p>[<strong>WHEA_PCIEXPRESS_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560576)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560576" data-raw-source="[&lt;strong&gt;WHEA_PCIEXPRESS_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560576)"><strong>WHEA_PCIEXPRESS_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_PCIEXPRESS_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560580)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560580" data-raw-source="[&lt;strong&gt;WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560580)"><strong>WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_PCIXBUS_ERROR</p></td>
-<td><p>[<strong>WHEA_PCIXBUS_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560583)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560583" data-raw-source="[&lt;strong&gt;WHEA_PCIXBUS_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560583)"><strong>WHEA_PCIXBUS_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_PCIXBUS_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560585)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560585" data-raw-source="[&lt;strong&gt;WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560585)"><strong>WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_PCIXDEVICE_ERROR</p></td>
-<td><p>[<strong>WHEA_PCIXDEVICE_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560589)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560589" data-raw-source="[&lt;strong&gt;WHEA_PCIXDEVICE_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560589)"><strong>WHEA_PCIXDEVICE_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_PCIXDEVICE_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560591)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560591" data-raw-source="[&lt;strong&gt;WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560591)"><strong>WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WHEA_XPF_PROCESSOR_ERROR</p></td>
-<td><p>[<strong>WHEA_XPF_PROCESSOR_ERROR_SECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560655)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560655" data-raw-source="[&lt;strong&gt;WHEA_XPF_PROCESSOR_ERROR_SECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560655)"><strong>WHEA_XPF_PROCESSOR_ERROR_SECTION</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WHEA_XPF_PROCESSOR_ERROR_VALIDBITS</p></td>
-<td><p>[<strong>WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560657)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560657" data-raw-source="[&lt;strong&gt;WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560657)"><strong>WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

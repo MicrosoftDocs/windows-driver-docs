@@ -3,7 +3,6 @@ title: ks.kshelp
 description: The ks.kshelp extension displays a help text showing original KS 1.0-specific Ks.dll extension commands.
 ms.assetid: 672446ad-74a0-4caa-9801-eafef80929cb
 keywords: ["ks.kshelp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,15 +41,15 @@ The **!ks.kshelp** extension displays a help text showing original KS 1.0-specif
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

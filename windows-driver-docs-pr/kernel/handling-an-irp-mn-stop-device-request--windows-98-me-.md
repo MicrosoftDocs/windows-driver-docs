@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)
-author: windows-driver-content
 description: Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 8e44561a-f494-48ce-ab61-aa47cd4e1c64
 keywords: ["IRP_MN_STOP_DEVICE"]
@@ -42,9 +41,9 @@ A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as t
 
 A driver cannot start any IRPs that access the device while the device is stopped. A driver must fail such IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

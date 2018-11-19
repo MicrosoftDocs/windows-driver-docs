@@ -3,7 +3,6 @@ title: arbiter
 description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
 ms.assetid: 95149538-6fcd-4638-b35f-4e1a562e5231
 keywords: ["arbiter Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -19,8 +18,9 @@ ms.localizationpriority: medium
 
 The **!arbiter** extension displays the current system resource arbiters and arbitrated ranges.
 
+```dbgcmd
     !arbiter [Flags] 
-
+```
 
 ## <span id="ddk__arbiter_dbg"></span><span id="DDK__ARBITER_DBG"></span>Parameters
 
@@ -65,7 +65,7 @@ Do not display aliases.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -117,7 +117,7 @@ The flags have the following meanings:
 </tbody>
 </table>
 
- 
+ 
 
 Here is an example:
 
@@ -154,9 +154,9 @@ AttachedDevice (Upper) 80d78b28 \Driver\i8042prt
 Device queue is not busy.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

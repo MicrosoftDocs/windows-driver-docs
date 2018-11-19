@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_CDROM [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -79,9 +79,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md)
 
- 
+ 
 
- 
+ 
 
 
 

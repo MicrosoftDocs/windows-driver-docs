@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ColorEntry</strong>](colorentry.md)</p></td>
+<td><p><a href="colorentry.md" data-raw-source="[&lt;strong&gt;ColorEntry&lt;/strong&gt;](colorentry.md)"><strong>ColorEntry</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Film</strong>](film.md)</p></td>
+<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -86,9 +86,9 @@ Another important aspect of the returned scan data is the photometric interpreta
 
 [**Film**](film.md)
 
- 
+ 
 
- 
+ 
 
 
 

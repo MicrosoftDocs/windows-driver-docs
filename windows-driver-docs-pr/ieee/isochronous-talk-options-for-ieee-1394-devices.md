@@ -1,6 +1,5 @@
 ---
 title: Isochronous Talk Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Talk Options for IEEE 1394 Devices
 ms.assetid: b3df5dd5-9903-48b4-9cb2-17b8d3a08f8f
 keywords:
@@ -145,9 +144,9 @@ BufferAddress += r;
 isochDescriptor->mdl = IoAllocateMdl(BufferAddress, ... and so on.)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

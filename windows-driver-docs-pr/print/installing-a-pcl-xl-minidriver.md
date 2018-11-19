@@ -1,6 +1,5 @@
 ---
 title: Installing a PCL XL Minidriver
-author: windows-driver-content
 description: Installing a PCL XL Minidriver
 ms.assetid: 88e4e1a0-8adb-4f40-abeb-a4da761ca4ee
 keywords:
@@ -51,9 +50,9 @@ In the preceding section, the **CopyFiles** directive in the first line copies t
 
 For additional information about using the **CopyFiles** directive for printer installations, see [Printer INF File CopyFiles Sections](printer-inf-file-copyfiles-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,9 +18,9 @@ UPS minidrivers are user-mode DLLs that can be installed using Microsoft Windows
 
 One responsibility of the installation operation is to create [UPS\\ServiceProviders registry entries](ups-serviceproviders-registry-entries.md).
 
- 
+ 
 
- 
+ 
 
 
 

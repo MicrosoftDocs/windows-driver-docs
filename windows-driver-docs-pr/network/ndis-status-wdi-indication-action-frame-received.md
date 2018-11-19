@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED to indicate that an Action Frame has been received.
 ms.assetid: C1F6EB50-C11F-428F-BF51-5C89A59CBF76
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -29,7 +28,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 | [**WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926155) |                                |          | The logical channel number and band ID for the BSS entry. |
 | [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)            |                                |          | The incoming Action Frame body.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION](oid-wdi-set-advertisement-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

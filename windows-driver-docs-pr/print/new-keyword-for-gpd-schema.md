@@ -1,6 +1,5 @@
 ---
 title: New Keyword for GPD Schema
-author: windows-driver-content
 description: New Keyword for GPD Schema
 ms.assetid: 4814d019-0556-4e5a-8c55-c05454bafbd3
 keywords:
@@ -19,9 +18,9 @@ Starting with Windows Vista, you should add a new root-level keyword to the GPD 
 
 If you are writing Unidrv-based drivers, you must use a separate GDL file that the driver's main GPD file references directly by using the \***BidiQueryFile** keyword.
 
- 
+ 
 
- 
+ 
 
 
 

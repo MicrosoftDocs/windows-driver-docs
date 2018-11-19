@@ -1,6 +1,5 @@
 ---
 title: Valid GDL Configurations
-author: windows-driver-content
 description: Valid GDL Configurations
 ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
 keywords:
@@ -31,9 +30,9 @@ A valid configuration satisfies the following conditions:
 
 To prevent loss of the intent of your configuration because of the parser's validation process, you should pass a valid configuration to the parser functions.
 
- 
+ 
 
- 
+ 
 
 
 

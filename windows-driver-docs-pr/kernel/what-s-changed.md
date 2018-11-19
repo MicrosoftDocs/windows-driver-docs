@@ -1,6 +1,5 @@
 ---
 title: What's Changed
-author: windows-driver-content
 description: What's Changed
 ms.assetid: c7799406-d046-4261-8af7-7abbac18fa70
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "64-bit pointers WDK kernel", "integer size WDK 64-bit", "data types WDK 64-bit", "64-bit WDK kernel , what's changed"]
@@ -20,9 +19,9 @@ On 64-bit Windows, however, this assumption of uniformity is no longer valid. Po
 
 On 32-bit Windows platforms, the operating system automatically fixes kernel-mode memory alignment faults and makes them invisible to the application. It does this for the calling process and any descendant processes. This feature, which often dramatically reduces performance, has not been implemented in 64-bit Windows. Thus, if your 32-bit driver contains misalignment bugs, you will need to fix them when porting to 64-bit Windows.
 
- 
+ 
 
- 
+ 
 
 
 

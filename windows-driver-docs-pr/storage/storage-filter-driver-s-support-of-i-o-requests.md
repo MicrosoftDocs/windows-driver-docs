@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's Support of I/O Requests
-author: windows-driver-content
 description: Storage Filter Driver's Support of I/O Requests
 ms.assetid: 2899bf91-584f-47fe-9d5c-3feb07b8707e
 keywords:
@@ -36,9 +35,9 @@ Like a storage class driver, an SFD has the following requirements common to all
 
 If its device has special features, an SFD can support a set of driver-defined I/O control codes in addition to the system-required set of device-type-specific I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests.
 
- 
+ 
 
- 
+ 
 
 
 

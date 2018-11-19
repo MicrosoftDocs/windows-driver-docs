@@ -1,6 +1,5 @@
 ---
 title: Button Capability Arrays
-author: windows-driver-content
 description: Button Capability Arrays
 ms.assetid: 139324e5-4d46-4d00-9f5a-fd0313fc109a
 keywords:
@@ -104,7 +103,7 @@ The following table summarizes an example for three aliased usages.
 </tbody>
 </table>
 
- 
+ 
 
 For information about how usages and data indices are cross-referenced, see [Data Indices](data-indices.md).
 
@@ -151,11 +150,11 @@ The HID parser assigns a [data index](data-indices.md) to each usage associated 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

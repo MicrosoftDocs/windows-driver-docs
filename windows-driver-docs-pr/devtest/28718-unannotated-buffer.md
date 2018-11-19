@@ -36,9 +36,9 @@ int foo( _Out_writes_(cch) LPTSTR buffer, size_t cch );
 [Using SAL Annotations to Reduce C/C++ Code Defects](http://go.microsoft.com/fwlink/p/?linkid=247283)
 
 **Annotating Function Parameters and Return Values**
- 
+ 
 
- 
+ 
 
 
 

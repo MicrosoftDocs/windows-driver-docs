@@ -3,7 +3,6 @@ title: peb
 description: The peb extension displays a formatted view of the information in the process environment block (PEB).
 ms.assetid: 01687f13-9eb7-48f0-a0d6-54fee00084ab
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -50,7 +49,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -99,9 +98,9 @@ PEB at 7ffdf000
 
 The similar [**!teb**](-teb.md) extension displays the thread environment block.
 
- 
+ 
 
- 
+ 
 
 
 

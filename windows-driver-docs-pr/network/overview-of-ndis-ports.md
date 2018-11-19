@@ -35,9 +35,9 @@ The following topics further describe NDIS ports:
 
 [NDIS Port States](ndis-port-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Extending the DirectInput Game Controller Control Panel
-author: windows-driver-content
 description: Extending the DirectInput Game Controller Control Panel
 ms.assetid: 45df8aee-10e0-43b3-8878-3ad83d822028
 keywords:
@@ -28,9 +27,9 @@ This section provides information about creating property sheets for the Microso
 
 [DirectInput Control Panel Essentials](directinput-control-panel-essentials.md)
 
- 
+ 
 
- 
+ 
 
 
 

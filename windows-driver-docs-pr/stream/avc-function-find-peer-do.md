@@ -50,7 +50,7 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -91,9 +91,9 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PEER\_DO\_LOCATOR**](https://msdn.microsoft.com/library/windows/hardware/ff554180), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724)
 
- 
+ 
 
- 
+ 
 
 
 

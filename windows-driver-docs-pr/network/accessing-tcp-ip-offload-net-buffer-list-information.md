@@ -9,15 +9,11 @@ keywords:
 - NET_BUFFER_LIST
 - task offload WDK TCP/IP transport , out-of-band data
 - connection offload WDK TCP/IP transport , out-of-band data
-ms.date: 04/20/2017
+ms.date: 10/23/2018
 ms.localizationpriority: medium
 ---
 
 # Accessing TCP/IP Offload NET\_BUFFER\_LIST Information
-
-
-
-
 
 NDIS versions 6.0 and later provide TCP/IP offload out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure, which specifies a linked list of [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.
 
@@ -47,17 +43,17 @@ For LSOV1, LSOV2, checksum, and IPsec offload types, a miniport driver performs 
 
 The NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO structure contains the maximum segment size (MSS). The **TcpHeaderOffset** member specifies the location of the TCP header so that the miniport driver does not have to parse IP headers, IP options, or IP extension headers.
 
-The NDIS 6.0 and later miniport driver that supports LSOV2 and LSOV1 must check the **Type** member of [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) to determine whether the driver stack is using LSOV2 or LSOV1 and must perform the appropriate offload.
+An NDIS 6.0 and later miniport driver that supports LSOV2 and LSOV1 must check the **Type** member of [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) to determine whether the driver stack is using LSOV2 or LSOV1 and must perform the appropriate offload.
 
-Before a miniport driver completes the send of a large TCP packet that it has segmented into smaller packets by using LSO, the driver writes the number of TCP payload bytes that it sent in the segmented packets in the **TcpPayload** member of NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO.
+For LSOv1, before a miniport driver completes the send of a large TCP packet that it has segmented into smaller packets by using LSO, the driver writes the number of TCP payload bytes that it sent in the segmented packets in the **TcpPayload** member of NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO.
 
 If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q flag in its capabilities, the driver can perform task offload services for [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures that contain the VLAN header in the buffer data. In the case of received data, this flag indicates that the miniport driver will perform the receive checksum calculation and put the VLAN header in the Ethernet packet.
 
 If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q\_IN\_OOB flag in its capabilities, the driver can perform offload on NET\_BUFFER\_LIST structures that contain the VLAN header in the **Ieee8021QnetBufferListInfo** OOB data. In the receive checksum offload case, the miniport inserts the VLAN header into the **Ieee8021QnetBufferListInfo** OOB data.
 
- 
+ 
 
- 
+ 
 
 
 

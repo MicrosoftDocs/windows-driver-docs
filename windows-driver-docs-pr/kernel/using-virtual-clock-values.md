@@ -1,6 +1,5 @@
 ---
 title: Using Virtual Clock Values
-author: windows-driver-content
 description: Using Virtual Clock Values
 ms.assetid: de01b0f1-86b1-4e7d-af22-84dbbe3a3f83
 keywords: ["virtual clock values WDK KTM", "Kernel Transaction Manager WDK , virtual clock values", "KTM WDK , virtual clock values", "transactions WDK KTM , virtual clock values"]
@@ -45,9 +44,9 @@ If a resource manager or superior transaction manager passes a new clock value t
 
 Resource managers and superior transaction managers can obtain a transaction manager object's virtual clock value by calling the [**ZwQueryInformationTransactionManager**](https://msdn.microsoft.com/library/windows/hardware/ff567058) routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Passive-Level Interrupt Service Routines
-author: windows-driver-content
 description: Starting with Windows 8, a driver can use the IoConnectInterruptEx routine to register a passive-level InterruptService routine (ISR).
 ms.assetid: 122BDE14-1552-4F7B-88D3-030423713E00
 ms.localizationpriority: medium
@@ -58,9 +57,9 @@ In rare cases, an interrupt might require so little processing that the passive-
 
 For information about using passive-level ISRs in KMDF drivers, see [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035).
 
- 
+ 
 
- 
+ 
 
 
 

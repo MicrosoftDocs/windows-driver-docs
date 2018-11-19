@@ -1,6 +1,5 @@
 ---
 title: Installing a Minifilter Driver
-author: windows-driver-content
 description: Installing a Minifilter Driver
 ms.assetid: c31aa104-404e-43e3-9215-2671ae6b12c0
 keywords:
@@ -29,9 +28,9 @@ This section includes:
 
 [Reparse Point Tag Request](reparse-point-tag-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device after a Failed Start (Windows 98/Me)
-author: windows-driver-content
 description: Stopping a Device after a Failed Start (Windows 98/Me)
 ms.assetid: 373a1797-6479-4b99-b577-c74494f1774c
 keywords: ["failed starts WDK PnP"]
@@ -18,9 +17,9 @@ On Windows 98/Me, the PnP manager issues an [**IRP\_MN\_STOP\_DEVICE**](https://
 
 In response to the stop IRP, drivers release the device's hardware resources (such as its I/O ports), disable and deregister any user-mode interfaces, and fail any incoming I/O requests that require access to the device.
 
- 
+ 
 
- 
+ 
 
 
 

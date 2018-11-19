@@ -1,6 +1,5 @@
 ---
 title: Buffering State Control
-author: windows-driver-content
 description: Buffering State Control
 ms.assetid: 16590332-9d0d-4d8b-8304-a3fa9269c0e2
 keywords:
@@ -71,25 +70,25 @@ RDBSS provides the following routines to manage buffering state that can be used
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxChangeBufferingState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554335)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554335" data-raw-source="[&lt;strong&gt;RxChangeBufferingState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554335)"><strong>RxChangeBufferingState</strong></a></p></td>
 <td align="left"><p>This routine is called to process a buffering state change request.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxIndicateChangeOfBufferingState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554485)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554485" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554485)"><strong>RxIndicateChangeOfBufferingState</strong></a></p></td>
 <td align="left"><p>This routine is called to register a buffering state change request (an oplock break indication, for example) for later processing.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxIndicateChangeOfBufferingStateForSrvOpen</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554490)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554490" data-raw-source="[&lt;strong&gt;RxIndicateChangeOfBufferingStateForSrvOpen&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554490)"><strong>RxIndicateChangeOfBufferingStateForSrvOpen</strong></a></p></td>
 <td align="left"><p>This routine is called to register a buffering state change request (an oplock break indication, for example) for later processing.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ If the driver cannot effectively determine when a DDBLT\_LAST\_PRESENTATION blt 
 
 Finally, in the case of multiple windowed applications running simultaneously, the driver should count presentation blts based on the source of each blt, rather than the primary, that is, the driver is allowed to queue three frames per window/render target. This results in better performance.
 
- 
+ 
 
- 
+ 
 
 
 

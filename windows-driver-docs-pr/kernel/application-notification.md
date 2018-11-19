@@ -1,6 +1,5 @@
 ---
 title: Application Notification
-author: windows-driver-content
 description: Application Notification
 ms.assetid: ca6cf2e7-e710-4c23-8440-54cdff736dc0
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , application"]
@@ -21,9 +20,9 @@ This section includes the following topics:
 
 [Processing an Application Notification](processing-an-application-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

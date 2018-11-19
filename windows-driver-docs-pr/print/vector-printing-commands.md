@@ -1,6 +1,5 @@
 ---
 title: Vector Printing Commands
-author: windows-driver-content
 description: Vector Printing Commands
 ms.assetid: b81fa498-62a5-4839-ae4a-1330d8a03d03
 keywords:
@@ -20,9 +19,9 @@ Vector printing commands are those that are associated with printing vector grap
 
 [Rectangle Area Fill Commands](rectangle-area-fill-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

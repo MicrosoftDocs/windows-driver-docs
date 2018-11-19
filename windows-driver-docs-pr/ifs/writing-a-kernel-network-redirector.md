@@ -1,6 +1,5 @@
 ---
 title: Writing a Kernel Network Redirector
-author: windows-driver-content
 description: Writing a Kernel Network Redirector
 ms.assetid: c6502d4e-e431-4aa2-a75e-93fab34513e4
 keywords:
@@ -27,9 +26,9 @@ This section discusses the important issues to consider when writing a kernel ne
 
 [Network Redirectors and the File System Process](network-redirectors-and-the-file-system-process.md)
 
- 
+ 
 
- 
+ 
 
 
 

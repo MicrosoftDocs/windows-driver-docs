@@ -31,9 +31,9 @@ A rank is represented by a value of type DWORD. A rank is sum of a signature sco
 
 For information about entries in the SetupAPI log that indicate the rank of a driver and the type of driver signature, see [Driver Rank Information in the SetupAPI Log](driver-rank-information-in-the-setupapi-log.md).
 
- 
+ 
 
- 
+ 
 
 
 

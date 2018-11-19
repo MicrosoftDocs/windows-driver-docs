@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode DMA Library
-author: windows-driver-content
 description: Windows Kernel-Mode DMA Library
 ms.assetid: db6cc33a-474b-44a2-bd55-769ff31abae7
 ms.localizationpriority: medium
@@ -18,9 +17,9 @@ For a listing of DMA routines, see [Direct Memory Access (DMA) Library Routines]
 
 Note that DMA is a technology for communicating directly between device and memory and is not the same as [Device Memory Access](https://msdn.microsoft.com/library/windows/hardware/ff543138), which is a set of macros provided to read and write to I/O ports and CPU registers.
 
- 
+ 
 
- 
+ 
 
 
 

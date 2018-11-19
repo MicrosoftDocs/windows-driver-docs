@@ -3,7 +3,6 @@ title: dl (Display Linked List)
 description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
 ms.assetid: fbf03e78-d4b3-4dd9-904b-3f44a1a86cff
 keywords: ["dl (Display Linked List) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **dl** command displays a LIST\_ENTRY or SINGLE\_LIST\_ENTRY linked list.
 
-```
+```dbgcmd
 dl[b] Address MaxCount Size
 ```
 
@@ -61,7 +60,7 @@ Size of each element. This is the number of consecutive ULONG\_PTRs that will be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +79,9 @@ If the list loops back on itself, the dump will stop. If a null pointer is encou
 
 If you want to execute some command for each element of the list, use the [**!list**](-list.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Moving Through a Window
 description: Moving Through a Window
 ms.assetid: c164a446-1f6c-4d37-8ad6-aa254d3268bc
 keywords: ["debugging information windows, navigating"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -50,9 +49,9 @@ To activate this option, click **Go to Line** on the **Edit** menu or press CTRL
 
 When the **Go to Line** dialog box appears, enter the line number that you want to find and then click **OK**. The debugger moves the cursor to that line. If the line number is larger than the last line in the file, the cursor moves to the end of the file.
 
- 
+ 
 
- 
+ 
 
 
 

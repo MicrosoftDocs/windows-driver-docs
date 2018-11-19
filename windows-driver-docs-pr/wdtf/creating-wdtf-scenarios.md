@@ -1,6 +1,5 @@
 ---
 title: Creating WDTF Scenarios
-author: windows-driver-content
 description: With WDTF scenarios, you build device-focused automated and customized test scenarios using the WDTF framework.
 ms.assetid: f9e3de20-28be-40c6-802c-f4637b3f6c20
 keywords:
@@ -72,9 +71,9 @@ Set NonPhantomDevices = WDTF.DeviceDepot.Query ("IsAttached")
 
 For more attribute keywords, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
 
- 
+ 
 
- 
+ 
 
 
 

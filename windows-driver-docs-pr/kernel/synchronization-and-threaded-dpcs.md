@@ -1,6 +1,5 @@
 ---
 title: Synchronization and Threaded DPCs
-author: windows-driver-content
 description: Synchronization and Threaded DPCs
 ms.assetid: b4f2c77b-226c-4229-bcbb-5eebabdc28a4
 keywords: ["threaded DPCs WDK kernel", "synchronization WDK kernel , interrupts", "queued spin locks WDK kernel"]
@@ -32,9 +31,9 @@ Because **KeAcquireSpinLockForDpc** and **KeAcquireInStackQueuedSpinLockForDpc**
 
 For more information about spin locks, see [Spin Locks](spin-locks.md).
 
- 
+ 
 
- 
+ 
 
 
 

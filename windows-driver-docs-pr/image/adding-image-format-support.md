@@ -1,6 +1,5 @@
 ---
 title: Adding Image Format Support
-author: windows-driver-content
 description: Adding Image Format Support
 ms.assetid: 1ffa7c0d-23ec-402a-a0b5-fb5596a851bf
 ms.date: 04/20/2017
@@ -86,9 +85,9 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

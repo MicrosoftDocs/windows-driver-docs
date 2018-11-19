@@ -1,6 +1,5 @@
 ---
 title: GDL Constructs
-author: windows-driver-content
 description: GDL Constructs
 ms.assetid: e579bff0-4e28-4e9e-bef2-f6748c3849e5
 keywords:
@@ -73,9 +72,9 @@ This section includes:
 
 [GDL Strings](gdl-strings.md)
 
- 
+ 
 
- 
+ 
 
 
 

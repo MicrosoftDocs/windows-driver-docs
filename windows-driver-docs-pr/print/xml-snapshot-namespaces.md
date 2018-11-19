@@ -1,6 +1,5 @@
 ---
 title: XML Snapshot Namespaces
-author: windows-driver-content
 description: XML Snapshot Namespaces
 ms.assetid: 723f1cfd-633c-4f87-b85f-5ccee45a8c4e
 keywords:
@@ -37,9 +36,9 @@ The following code example shows the &lt;schema&gt; element's start tag in the X
 
 These definitions minimize the need to use explicit namespace prefixes in the schema and snapshot. The typical user does not need to worry about the implications of these definitions. You need to be aware of these namespace conventions only if you choose to use \*DataType: XSD\_DEFINED. For template authors, the data type definition that is supplied by using the \*XSDTypeDefinition directive should follow the namespaces and defaults that are defined in the &lt;schema&gt; element. The instance data for these XSD\_DEFINED data types needs to follow the namespaces that are defined in &lt;SnapshotRoot&gt;.
 
- 
+ 
 
- 
+ 
 
 
 

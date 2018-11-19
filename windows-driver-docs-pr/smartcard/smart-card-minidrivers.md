@@ -40,9 +40,9 @@ The following figure shows the interfaces between card minidrivers and CAPI2-bas
 
 It is recommend that developers take advantage of the rich set of libraries that Microsoft provides for cryptographic operations that the minidriver performs. This lets developers benefit from the Microsoft Windows Update infrastructure for the distribution of critical security updates.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SCSI Port's Interface with the Storage Class Driver
-author: windows-driver-content
 description: SCSI Port's Interface with the Storage Class Driver
 ms.assetid: 195397c2-dade-4117-9809-592d7c1ae4a2
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ This section contains information about the interface between the storage class 
 
 5.  [Bypassing the Class Driver with SCSI Pass-Through Requests](bypassing-the-class-driver-with-scsi-pass-through-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

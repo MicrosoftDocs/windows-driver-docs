@@ -1,6 +1,5 @@
 ---
 title: NFC architecture
-author: windows-driver-content
 description: The high-level architecture diagram of the NFC stack on Windows is shown further below. NFC UMDF drivers will implement the DDIs described in this specification.
 ms.assetid: 0FA2BE92-05E1-40D1-AD1D-AE9ADF425E67
 keywords:
@@ -25,9 +24,9 @@ The high-level architecture diagram of the NFC stack on Windows is shown further
 
 ![A flowchart describing the NFC stack starting from Applications at the top, User mode services, UMDF Drivers, Kernel Mode, then Hardware at the bottom.](images/nfcarchitecture.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
  [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
- 
+ 

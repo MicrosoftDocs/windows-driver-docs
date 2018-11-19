@@ -29,9 +29,9 @@ After the profile driver has advertised its services, other Bluetooth devices ca
 
 To stop advertising services with SDP, a profile driver uses [**IOCTL\_BTH\_SDP\_REMOVE\_RECORD**](https://msdn.microsoft.com/library/windows/hardware/ff536690).
 
- 
+ 
 
- 
+ 
 
 
 

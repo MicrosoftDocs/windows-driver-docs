@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_PNP
-author: windows-driver-content
 description: Handling SRB_FUNCTION_PNP
 ms.assetid: 25490320-8d6b-4c5a-a585-4f628ea72393
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ These requests merely represent notifications that PnP events are occurring and 
 
 If the function member of an SRB is set to SRB\_FUNCTION\_PNP, the SRB is a structure of type SCSI\_PNP\_REQUEST\_BLOCK.
 
- 
+ 
 
- 
+ 
 
 
 

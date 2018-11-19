@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_DIRECTORY_CONTROL
-author: windows-driver-content
 description: IRP_MJ_DIRECTORY_CONTROL
 ms.assetid: 27c2de1c-5550-4211-97cc-4c66f18d3b99
 keywords:
@@ -115,9 +114,9 @@ FsdNotifyTraverseCheck (
 
 This routine is likely to be substantially different for file systems that cache security information, or that have different data structures for tracking files and directories (for example, files that use a structure for tracking links between files and directories). File systems supporting links are not considered in this sample in an attempt to simplify the example.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ This section includes the following topics on best practices for specifying [har
 
 For more information about the format requirements of the **HardwareID** XML element, see [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114).
 
- 
+ 
 
- 
+ 
 
 
 

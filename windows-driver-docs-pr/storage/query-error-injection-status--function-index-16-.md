@@ -41,7 +41,7 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Error Injection Enabled</strong></td>
@@ -54,7 +54,7 @@ None.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -65,9 +65,9 @@ None.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

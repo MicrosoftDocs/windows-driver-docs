@@ -1,6 +1,5 @@
 ---
 title: CLFS Terminology
-author: windows-driver-content
 description: The following list gives definitions of key terms used in the Common Log File System (CLFS) documentation.
 Robots: noindex, nofollow
 ms.assetid: d8511c5a-0181-4c54-acdc-e8a5892bb620
@@ -46,14 +45,14 @@ A set of log I/O blocks, created, maintained, and scheduled by a CLFS client for
 
 **Note**   Even though all the log I/O blocks (in volatile memory) for a particular marshalling area are the same size, the log I/O blocks that are written to stable storage (from that marshalling area) vary in size. For example, if a log I/O block is forced to stable storage before it is full, only the used portion of the block will be written to stable storage.
 
- 
+ 
 
 <a href="" id="kernel-clfs-term-log-sequence-number--lsn"></a>**log sequence number (LSN)**  
 An opaque structure that holds a value that uniquely identifies a log record in a given stream. When a client writes a record to a stream, it gets back an LSN that it can use to identify the record in the future. The LSNs that CLFS assigns to the records in a stream form an increasing sequence. That is, the LSN assigned to a record in a stream is always greater than the LSN assigned to the record previously written to that same stream.
 
 **Note**   Records across streams are not comparable. That is, you cannot compare the LSNs of two records in different streams to determine which record was written first.
 
- 
+ 
 
 <a href="" id="kernel-clfs-term-base-lsn"></a>**base LSN**  
 The LSN of the oldest record in a stream that is still needed by the stream's clients. The clients are responsible for updating the base LSN.
@@ -67,9 +66,9 @@ The LSN of the oldest record in a log for which archiving has not taken place. N
 <a href="" id="kernel-clfs-term-active-portion-of-a-stream"></a>**active portion of a stream**  
 The portion of a stream that is currently in use by its clients. The active portion begins with the record pointed to by the base LSN or the archive tail, whichever is smaller. The active portion ends with the record pointed to by the last LSN.
 
- 
+ 
 
- 
+ 
 
 
 

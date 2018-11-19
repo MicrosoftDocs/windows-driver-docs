@@ -1,6 +1,5 @@
 ---
 title: Airplane mode radio management
-author: windows-driver-content
 description: Starting with Windows 8, the Windows operating system provides support via HID, for airplane mode radio management controls.
 ms.assetid: 5B0662B0-CBD3-4F31-B98F-6BC8184574DB
 ms.date: 04/20/2017
@@ -26,7 +25,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 | 0x00C7   | Wireless Radio LED           | On/Off Control (OOC)       |
 | 0x00C8   | Wireless Radio Slider Switch | On/Off Control (OOC)       |
 
- 
+ 
 
 The following is an architectural diagram of the HID Client that provides support for Radio Management / Airplane Mode.
 
@@ -154,9 +153,9 @@ Tip \#3: For more information on the Airplane Mode radio management button, see 
 
 Tip \#4: For more information regarding the buttons, and to ensure that you are implementing the correct hardware, please review the Windows 8 System Logo Requirements.
 
- 
+ 
 
- 
+ 
 
 
 

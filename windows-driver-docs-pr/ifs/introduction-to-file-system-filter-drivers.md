@@ -1,6 +1,5 @@
 ---
 title: Introduction to File System Filter Drivers
-author: windows-driver-content
 description: Introduction to File System Filter Drivers
 ms.assetid: 7947aaa9-57d4-4adf-8214-151a4755939b
 ms.date: 04/20/2017
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 
 <div class="alert">
-<strong>Note</strong>   For optimal reliability and performance, we recommend using [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. Also, legacy file system filter drivers can’t attach to direct access (DAX) volumes. For more about file system minifilter drivers, see [Advantages of the Filter Manager Model](advantages-of-the-filter-manager-model.md). To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+<strong>Note</strong>   For optimal reliability and performance, we recommend using <a href="filter-manager-and-minifilter-driver-architecture.md" data-raw-source="[file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md)">file system minifilter drivers</a> instead of legacy file system filter drivers. Also, legacy file system filter drivers can’t attach to direct access (DAX) volumes. For more about file system minifilter drivers, see <a href="advantages-of-the-filter-manager-model.md" data-raw-source="[Advantages of the Filter Manager Model](advantages-of-the-filter-manager-model.md)">Advantages of the Filter Manager Model</a>. To port your legacy driver to a minifilter driver, see <a href="guidelines-for-porting-legacy-filter-drivers.md" data-raw-source="[Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md)">Guidelines for Porting Legacy Filter Drivers</a>.
 </div>
- 
+ 
 
 This section introduces file system filter drivers. It includes the following topics:
 
@@ -30,9 +29,9 @@ This section introduces file system filter drivers. It includes the following to
 
 [Attaching a Filter to a File System or Volume](attaching-a-filter-to-a-file-system-or-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

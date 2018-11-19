@@ -39,9 +39,9 @@ Additional information about porting send and receive operations is included in 
 
 [Porting NDIS Protocol Driver Receive Data Handling](porting-ndis-protocol-driver-receive-data-handling.md)
 
- 
+ 
 
- 
+ 
 
 
 

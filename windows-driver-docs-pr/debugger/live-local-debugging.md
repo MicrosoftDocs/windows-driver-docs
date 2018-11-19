@@ -3,7 +3,6 @@ title: Live Local Debugging
 description: Live Local Debugging
 ms.assetid: ec76a71e-f173-4b66-beaf-d57a1c991acd
 keywords: ["kernel streaming debugging, live local debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -13,13 +12,13 @@ ms.localizationpriority: medium
 
 In Microsoft Windows XP and later operating systems, it is possible to do local kernel debugging by starting the kernel debugger (KD) or WinDbg with the **-kl** command line option:
 
-```
+```console
 kd [-y SymbolPath] -kl 
 ```
 
 or
 
-```
+```console
 windbg [-y SymbolPath] -kl 
 ```
 
@@ -51,7 +50,7 @@ Consider the last of these.
 
 First, use the [**!process 0 0**](-process.md) extension to identify the process containing the hung thread. Then, issue **!process** again for more information about that thread:
 
-```
+```dbgcmd
 lkd> !process 816a550 7
         THREAD 81705da8  Cid 0b5c.0b60  Teb: 7ffde000 Win32Thread: e1b2d890 WAIT: (Suspended)
         IRP List:
@@ -64,7 +63,7 @@ lkd> !process 816a550 7
 
 The threads are not displayed, but the stack addresses are. Using the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) (or **ddq**) command on the current address on the stack yields a starting point for further investigation, because it specifies which process is calling.
 
-```
+```dbgcmd
 lkd> dds f50bea74
 f50bea74  f50bebc4
 f50bea78  00000000
@@ -76,9 +75,9 @@ f50beb00  f943f6f1 ks!CKsPipeSection::DistributeDeviceStateChange+0x1d
 f50beb24  f943fb1e ks!CKsPipeSection::SetDeviceState+0xb2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

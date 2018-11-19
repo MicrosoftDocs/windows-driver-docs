@@ -21,7 +21,7 @@ Driver code that uses the kernel-mode IP Helper functions, MIB structures, and e
 
 **Note**  Do not include Iphlpapi.h in driver code. It is used only for user-mode applications.
 
- 
+ 
 
 When Netioapi.h is used with kernel-mode drivers, it already includes networking header files that define Winsock Kernel, network interface information, the network layer, and Network Driver Interface Specification (NDIS) types.
 
@@ -34,9 +34,9 @@ Therefore, do not include the following header files in your driver code:
 
 For information about the user-mode versions of the IP Helper functions and MIB structures, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

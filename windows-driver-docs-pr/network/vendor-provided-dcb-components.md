@@ -28,9 +28,9 @@ The Windows operating system does not natively support FCoE. To support FCoE, th
 <a href="" id="dcb-capable-miniport-driver-and-network-adapter"></a>DCB-Capable Miniport Driver and Network Adapter  
 To support NDIS QoS for DCB, the miniport driver and network adapter must support the requirements described in [NDIS QoS Requirements for Data Center Bridging](ndis-qos-requirements-for-data-center-bridging.md).
 
- 
+ 
 
- 
+ 
 
 
 

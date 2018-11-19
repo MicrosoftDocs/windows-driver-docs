@@ -1,6 +1,5 @@
 ---
 title: WIA Item Categories
-author: windows-driver-content
 description: WIA Item Categories
 ms.assetid: b201e365-60d8-4c3b-a9cf-4bbaa318337f
 ms.date: 04/20/2017
@@ -50,9 +49,9 @@ In Windows 7 and later, an [auto item](auto-item.md) represents the automatic co
 
 Each WIA item category has a set of required WIA item flags and WIA properties that an item in the category must support, and, in addition, a set of flags and properties that the item can support as options. For a summary of the flags and properties associated with the various item categories, see [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581). For a complete list of the WIA item flags, see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).
 
- 
+ 
 
- 
+ 
 
 
 

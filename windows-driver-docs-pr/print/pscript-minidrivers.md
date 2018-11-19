@@ -1,6 +1,5 @@
 ---
 title: Pscript Minidrivers
-author: windows-driver-content
 description: Pscript Minidrivers
 ms.assetid: b1108a6b-e0cc-413c-b3ea-53a1aa3156c0
 keywords:
@@ -58,9 +57,9 @@ This section contains the following topics:
 
 [TrueGray](truegray.md)
 
- 
+ 
 
- 
+ 
 
 
 

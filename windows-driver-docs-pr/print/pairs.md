@@ -1,6 +1,5 @@
 ---
 title: Pairs
-author: windows-driver-content
 description: Pairs
 ms.assetid: 156e6b10-74c2-4702-b0be-b9d209c02070
 keywords:
@@ -26,9 +25,9 @@ where *Value1* and *Value2* are [numeric values](numeric-values.md). For example
 *CursorOrigin: PAIR(120, 100)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Queued Spin Locks
-author: windows-driver-content
 description: Queued Spin Locks
 ms.assetid: 7ccec366-5436-4e69-9fb7-f0090cf2adcb
 keywords: ["queued spin locks WDK kernel", "first-come first-served spin locks WDK kernel", "KeAcquireInStackQueuedSpinLock"]
@@ -24,9 +23,9 @@ Drivers must not mix calls to the queued spin lock routines and the ordinary **K
 
 If the driver is already at IRQL = DISPATCH\_LEVEL, it can call [**KeAcquireInStackQueuedSpinLockAtDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff551908) and [**KeReleaseInStackQueuedSpinLockFromDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553137) instead.
 
- 
+ 
 
- 
+ 
 
 
 

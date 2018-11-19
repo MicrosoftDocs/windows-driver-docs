@@ -1,6 +1,5 @@
 ---
 title: CLFS Marshalling Areas
-author: windows-driver-content
 description: CLFS Marshalling Areas
 ms.assetid: 1153bcfd-43e9-43bd-b893-5ec044ea9584
 keywords: ["Common Log File System WDK kernel , marshalling areas", "CLFS WDK kernel , marshalling areas", "marshalling areas WDK CLFS", "log I/O buffers WDK CLFS", "maximum number of log I/O buffers WDK CLFS", "memory allocations WDK CLFS", "buffers WDK CLFS", "appending records WDK CLFS", "stable storage WDK CLFS", "volatile memory WDK CLFS", "storage WDK CLFS"]
@@ -28,9 +27,9 @@ If you want to do your own memory allocation for log I/O buffers, set the *pfnAl
 
 In some cases, you might want to reserve space in a marshalling area ahead of time. For example, you might know that you are about to write a set of ten log records, and you want to be sure that there is enough space in the marshalling area for the entire set. To reserve space for the ten records, create a ten-element array that holds the sizes of the records, and then pass the array to the [**ClfsReserveAndAppendLog**](https://msdn.microsoft.com/library/windows/hardware/ff541723) function in the *rgcbReservation* parameter. **ClfsReserveAndAppendLog** is a multi-purpose function that reserves space in a marshalling area or appends log records to a stream or does both of those things atomically. By setting the parameters appropriately, you can call **ClfsReserveAndAppendLog** to reserve space for future use without actually appending any records to the stream.
 
- 
+ 
 
- 
+ 
 
 
 

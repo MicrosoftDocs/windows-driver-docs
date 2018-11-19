@@ -1,6 +1,5 @@
 ---
 title: Providing ISR Context Information
-author: windows-driver-content
 description: Providing ISR Context Information
 ms.assetid: 216c3111-3638-4410-a720-ff3d65a1eadd
 keywords: ["interrupt service routines WDK kernel , context information", "ISRs WDK kernel , context information", "interrupt objects WDK kernel , context information", "context information WDK interrupts", "pointers WDK interrupts"]
@@ -22,9 +21,9 @@ Typically, drivers use the device extension to store pointers to each of the dev
 
 (Alternatively, interrupt object pointers can be stored in nonpaged pool that the driver allocates.)
 
- 
+ 
 
- 
+ 
 
 
 

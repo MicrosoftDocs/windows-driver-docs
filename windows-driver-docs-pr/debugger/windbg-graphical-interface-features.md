@@ -3,7 +3,6 @@ title: WinDbg Graphical Interface Features
 description: WinDbg Graphical Interface Features
 ms.assetid: 715b0502-6915-402c-aecb-0b762eb7b846
 keywords: ["WinDbg, graphical interface (reference)", "graphical interface, details"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -32,9 +31,9 @@ This section discusses the elements of the WinDbg graphical user interface. Thes
 
 [Shortcut Keys](keyboard-shortcuts.md)
 
- 
+ 
 
- 
+ 
 
 
 

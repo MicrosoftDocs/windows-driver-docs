@@ -27,77 +27,77 @@ Use these rules to verify that your driver correctly pends I/O request packets (
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>MarkDevicePower</strong>](wdm-markdevicepower.md)</p></td>
-<td align="left"><p>The [<strong>MarkDevicePower</strong>](wdm-markdevicepower.md) rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for SystemPowerState IRP going to S0 is pended.</p></td>
+<td align="left"><p><a href="wdm-markdevicepower.md" data-raw-source="[&lt;strong&gt;MarkDevicePower&lt;/strong&gt;](wdm-markdevicepower.md)"><strong>MarkDevicePower</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markdevicepower.md" data-raw-source="[&lt;strong&gt;MarkDevicePower&lt;/strong&gt;](wdm-markdevicepower.md)"><strong>MarkDevicePower</strong></a> rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for SystemPowerState IRP going to S0 is pended.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MarkingInterlockedQueuedIrps</strong>](wdm-markinginterlockedqueuedirps.md)</p></td>
-<td align="left"><p>The [<strong>MarkingInterlockedQueuedIrps</strong>](wdm-markinginterlockedqueuedirps.md) rule specifies that the driver correctly marks the IRP as pending before it queues it in an interlocked fashion for further processing.</p></td>
+<td align="left"><p><a href="wdm-markinginterlockedqueuedirps.md" data-raw-source="[&lt;strong&gt;MarkingInterlockedQueuedIrps&lt;/strong&gt;](wdm-markinginterlockedqueuedirps.md)"><strong>MarkingInterlockedQueuedIrps</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markinginterlockedqueuedirps.md" data-raw-source="[&lt;strong&gt;MarkingInterlockedQueuedIrps&lt;/strong&gt;](wdm-markinginterlockedqueuedirps.md)"><strong>MarkingInterlockedQueuedIrps</strong></a> rule specifies that the driver correctly marks the IRP as pending before it queues it in an interlocked fashion for further processing.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MarkingQueuedIrps</strong>](wdm-markingqueuedirps.md)</p></td>
-<td align="left"><p>The [<strong>MarkingQueuedIrps</strong>](wdm-markingqueuedirps.md) rule specifies that the driver calls [<strong>IoMarkIrpPending</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549422) for an IRP that requires further processing only while holding a spin lock. This rule applies only when the driver adds the IRP to a driver-managed queue.</p></td>
+<td align="left"><p><a href="wdm-markingqueuedirps.md" data-raw-source="[&lt;strong&gt;MarkingQueuedIrps&lt;/strong&gt;](wdm-markingqueuedirps.md)"><strong>MarkingQueuedIrps</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markingqueuedirps.md" data-raw-source="[&lt;strong&gt;MarkingQueuedIrps&lt;/strong&gt;](wdm-markingqueuedirps.md)"><strong>MarkingQueuedIrps</strong></a> rule specifies that the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549422" data-raw-source="[&lt;strong&gt;IoMarkIrpPending&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549422)"><strong>IoMarkIrpPending</strong></a> for an IRP that requires further processing only while holding a spin lock. This rule applies only when the driver adds the IRP to a driver-managed queue.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MarkIrpPending</strong>](wdm-markirppending.md)</p></td>
-<td align="left"><p>The [<strong>MarkIrpPending</strong>](wdm-markirppending.md) rule specifies that whenever a driver dispatch routine calls [<strong>IoMarkIrpPending</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549422), the driver returns STATUS_PENDING when the dispatch routine ends. See [<strong>MarkIrpPending2</strong>](wdm-markirppending2.md) for a complimentary specification.</p></td>
+<td align="left"><p><a href="wdm-markirppending.md" data-raw-source="[&lt;strong&gt;MarkIrpPending&lt;/strong&gt;](wdm-markirppending.md)"><strong>MarkIrpPending</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markirppending.md" data-raw-source="[&lt;strong&gt;MarkIrpPending&lt;/strong&gt;](wdm-markirppending.md)"><strong>MarkIrpPending</strong></a> rule specifies that whenever a driver dispatch routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549422" data-raw-source="[&lt;strong&gt;IoMarkIrpPending&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549422)"><strong>IoMarkIrpPending</strong></a>, the driver returns STATUS_PENDING when the dispatch routine ends. See <a href="wdm-markirppending2.md" data-raw-source="[&lt;strong&gt;MarkIrpPending2&lt;/strong&gt;](wdm-markirppending2.md)"><strong>MarkIrpPending2</strong></a> for a complimentary specification.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MarkIrpPending2</strong>](wdm-markirppending2.md)</p></td>
-<td align="left"><p>The [<strong>MarkIrpPending2</strong>](wdm-markirppending2.md) rule specifies that if a dispatch routine returns STATUS_PENDING, it has called [<strong>IoMarkIrpPending</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549422) or passed the IRP to the lower driver. See [<strong>MarkIrpPending</strong>](wdm-markirppending.md) for a complimentary specification.</p></td>
+<td align="left"><p><a href="wdm-markirppending2.md" data-raw-source="[&lt;strong&gt;MarkIrpPending2&lt;/strong&gt;](wdm-markirppending2.md)"><strong>MarkIrpPending2</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markirppending2.md" data-raw-source="[&lt;strong&gt;MarkIrpPending2&lt;/strong&gt;](wdm-markirppending2.md)"><strong>MarkIrpPending2</strong></a> rule specifies that if a dispatch routine returns STATUS_PENDING, it has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff549422" data-raw-source="[&lt;strong&gt;IoMarkIrpPending&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549422)"><strong>IoMarkIrpPending</strong></a> or passed the IRP to the lower driver. See <a href="wdm-markirppending.md" data-raw-source="[&lt;strong&gt;MarkIrpPending&lt;/strong&gt;](wdm-markirppending.md)"><strong>MarkIrpPending</strong></a> for a complimentary specification.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MarkPower</strong>](wdm-markpower.md)</p></td>
-<td align="left"><p>The [<strong>MarkPower</strong>](wdm-markpower.md) rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for <strong>SystemPowerState</strong> IRP going to S0 is pended. This rule only applies to FDO and FIDO drivers.</p></td>
+<td align="left"><p><a href="wdm-markpower.md" data-raw-source="[&lt;strong&gt;MarkPower&lt;/strong&gt;](wdm-markpower.md)"><strong>MarkPower</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markpower.md" data-raw-source="[&lt;strong&gt;MarkPower&lt;/strong&gt;](wdm-markpower.md)"><strong>MarkPower</strong></a> rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for <strong>SystemPowerState</strong> IRP going to S0 is pended. This rule only applies to FDO and FIDO drivers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MarkPowerDown</strong>](wdm-markpowerdown.md)</p></td>
-<td align="left"><p>The [<strong>MarkPowerDown</strong>](wdm-markpowerdown.md) rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for <strong>SystemPowerState</strong> IRP going from s0 to [S1...S5] is pended.</p></td>
+<td align="left"><p><a href="wdm-markpowerdown.md" data-raw-source="[&lt;strong&gt;MarkPowerDown&lt;/strong&gt;](wdm-markpowerdown.md)"><strong>MarkPowerDown</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markpowerdown.md" data-raw-source="[&lt;strong&gt;MarkPowerDown&lt;/strong&gt;](wdm-markpowerdown.md)"><strong>MarkPowerDown</strong></a> rule specifies that an IRP_MJ_POWER with IRP_MN_SET_POWER for <strong>SystemPowerState</strong> IRP going from s0 to [S1...S5] is pended.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MarkQueryRelations</strong>](wdm-markqueryrelations.md)</p></td>
-<td align="left"><p>The [<strong>MarkQueryRelations</strong>](wdm-markqueryrelations.md) rule specifies that the driver should pend the IRP_MN_QUERY_DEVICE_RELATIONS IRP.</p></td>
+<td align="left"><p><a href="wdm-markqueryrelations.md" data-raw-source="[&lt;strong&gt;MarkQueryRelations&lt;/strong&gt;](wdm-markqueryrelations.md)"><strong>MarkQueryRelations</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markqueryrelations.md" data-raw-source="[&lt;strong&gt;MarkQueryRelations&lt;/strong&gt;](wdm-markqueryrelations.md)"><strong>MarkQueryRelations</strong></a> rule specifies that the driver should pend the IRP_MN_QUERY_DEVICE_RELATIONS IRP.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MarkStartDevice</strong>](wdm-markstartdevice.md)</p></td>
-<td align="left"><p>The [<strong>MarkStartDevice</strong>](wdm-markstartdevice.md) rule specifies that the driver pends an IRP_MN_START_DEVICE IRP correctly. This rule only applies to FDO and FIDO drivers.</p></td>
+<td align="left"><p><a href="wdm-markstartdevice.md" data-raw-source="[&lt;strong&gt;MarkStartDevice&lt;/strong&gt;](wdm-markstartdevice.md)"><strong>MarkStartDevice</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-markstartdevice.md" data-raw-source="[&lt;strong&gt;MarkStartDevice&lt;/strong&gt;](wdm-markstartdevice.md)"><strong>MarkStartDevice</strong></a> rule specifies that the driver pends an IRP_MN_START_DEVICE IRP correctly. This rule only applies to FDO and FIDO drivers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>PendedCompletedRequest</strong>](wdm-pendedcompletedrequest.md)</p></td>
-<td align="left"><p>The [<strong>PendedCompletedRequest</strong>](wdm-pendedcompletedrequest.md) rule specifies that a driver's dispatch routine does not return STATUS_PENDING on an IRP if the driver has called [<strong>IoCompleteRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548343) on the incoming IRP.</p></td>
+<td align="left"><p><a href="wdm-pendedcompletedrequest.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest&lt;/strong&gt;](wdm-pendedcompletedrequest.md)"><strong>PendedCompletedRequest</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-pendedcompletedrequest.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest&lt;/strong&gt;](wdm-pendedcompletedrequest.md)"><strong>PendedCompletedRequest</strong></a> rule specifies that a driver&#39;s dispatch routine does not return STATUS_PENDING on an IRP if the driver has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548343)"><strong>IoCompleteRequest</strong></a> on the incoming IRP.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>PendedCompletedRequest2</strong>](wdm-pendedcompletedrequest2.md)</p></td>
-<td align="left"><p>The [<strong>PendedCompletedRequest2</strong>](wdm-pendedcompletedrequest2.md) rule specifies that a wait is required after a call to [<strong>IoCallDriver</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548336) or [<strong>PoCallDriver</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559654) because the dispatch routine could complete a pending IRP.</p></td>
+<td align="left"><p><a href="wdm-pendedcompletedrequest2.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest2&lt;/strong&gt;](wdm-pendedcompletedrequest2.md)"><strong>PendedCompletedRequest2</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-pendedcompletedrequest2.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest2&lt;/strong&gt;](wdm-pendedcompletedrequest2.md)"><strong>PendedCompletedRequest2</strong></a> rule specifies that a wait is required after a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336" data-raw-source="[&lt;strong&gt;IoCallDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548336)"><strong>IoCallDriver</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559654" data-raw-source="[&lt;strong&gt;PoCallDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559654)"><strong>PoCallDriver</strong></a> because the dispatch routine could complete a pending IRP.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>PendedCompletedRequest3</strong>](wdm-pendedcompletedrequest3.md)</p></td>
-<td align="left"><p>The [<strong>PendedCompletedRequest3</strong>](wdm-pendedcompletedrequest3.md) rule specifies that a pending IRP should not be completed with a call to [<strong>IoCompleteRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548343).</p></td>
+<td align="left"><p><a href="wdm-pendedcompletedrequest3.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest3&lt;/strong&gt;](wdm-pendedcompletedrequest3.md)"><strong>PendedCompletedRequest3</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-pendedcompletedrequest3.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequest3&lt;/strong&gt;](wdm-pendedcompletedrequest3.md)"><strong>PendedCompletedRequest3</strong></a> rule specifies that a pending IRP should not be completed with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548343)"><strong>IoCompleteRequest</strong></a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>PendedCompletedRequestEx</strong>](wdm-pendedcompletedrequestex.md)</p></td>
-<td align="left"><p>The [<strong>PendedCompletedRequestEx</strong>](wdm-pendedcompletedrequestex.md) rule specifies that the driver should not call [<strong>IoCompleteRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548343) for a pending IRP.</p></td>
+<td align="left"><p><a href="wdm-pendedcompletedrequestex.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequestEx&lt;/strong&gt;](wdm-pendedcompletedrequestex.md)"><strong>PendedCompletedRequestEx</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-pendedcompletedrequestex.md" data-raw-source="[&lt;strong&gt;PendedCompletedRequestEx&lt;/strong&gt;](wdm-pendedcompletedrequestex.md)"><strong>PendedCompletedRequestEx</strong></a> rule specifies that the driver should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548343)"><strong>IoCompleteRequest</strong></a> for a pending IRP.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StartDeviceWait</strong>](wdm-startdevicewait.md)</p></td>
-<td align="left"><p>The [<strong>StartDeviceWait</strong>](wdm-startdevicewait.md) rule specifies that the driver should not call [<strong>KeWaitForSingleObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553350) in the context of start device IRP.</p></td>
+<td align="left"><p><a href="wdm-startdevicewait.md" data-raw-source="[&lt;strong&gt;StartDeviceWait&lt;/strong&gt;](wdm-startdevicewait.md)"><strong>StartDeviceWait</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-startdevicewait.md" data-raw-source="[&lt;strong&gt;StartDeviceWait&lt;/strong&gt;](wdm-startdevicewait.md)"><strong>StartDeviceWait</strong></a> rule specifies that the driver should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553350" data-raw-source="[&lt;strong&gt;KeWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553350)"><strong>KeWaitForSingleObject</strong></a> in the context of start device IRP.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StartDeviceWait2</strong>](wdm-startdevicewait2.md)</p></td>
-<td align="left"><p>The [<strong>StartDeviceWait2</strong>](wdm-startdevicewait2.md) rule specifies that the driver should not call [<strong>KeWaitForSingleObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553350) in the context of start device IRP.</p></td>
+<td align="left"><p><a href="wdm-startdevicewait2.md" data-raw-source="[&lt;strong&gt;StartDeviceWait2&lt;/strong&gt;](wdm-startdevicewait2.md)"><strong>StartDeviceWait2</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-startdevicewait2.md" data-raw-source="[&lt;strong&gt;StartDeviceWait2&lt;/strong&gt;](wdm-startdevicewait2.md)"><strong>StartDeviceWait2</strong></a> rule specifies that the driver should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553350" data-raw-source="[&lt;strong&gt;KeWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553350)"><strong>KeWaitForSingleObject</strong></a> in the context of start device IRP.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StartDeviceWait3</strong>](wdm-startdevicewait3.md)</p></td>
-<td align="left"><p>The [<strong>StartDeviceWait3</strong>](wdm-startdevicewait3.md) rule specifies that the driver should not call [<strong>KeWaitForSingleObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553350) in the context of start device IRP.</p></td>
+<td align="left"><p><a href="wdm-startdevicewait3.md" data-raw-source="[&lt;strong&gt;StartDeviceWait3&lt;/strong&gt;](wdm-startdevicewait3.md)"><strong>StartDeviceWait3</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-startdevicewait3.md" data-raw-source="[&lt;strong&gt;StartDeviceWait3&lt;/strong&gt;](wdm-startdevicewait3.md)"><strong>StartDeviceWait3</strong></a> rule specifies that the driver should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553350" data-raw-source="[&lt;strong&gt;KeWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553350)"><strong>KeWaitForSingleObject</strong></a> in the context of start device IRP.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StartDeviceWait4</strong>](wdm-startdevicewait4.md)</p></td>
-<td align="left"><p>The [<strong>StartDeviceWait4</strong>](wdm-startdevicewait4.md) rule specifies that the driver should not call [<strong>KeWaitForSingleObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553350) in the context of start device IRP.</p></td>
+<td align="left"><p><a href="wdm-startdevicewait4.md" data-raw-source="[&lt;strong&gt;StartDeviceWait4&lt;/strong&gt;](wdm-startdevicewait4.md)"><strong>StartDeviceWait4</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-startdevicewait4.md" data-raw-source="[&lt;strong&gt;StartDeviceWait4&lt;/strong&gt;](wdm-startdevicewait4.md)"><strong>StartDeviceWait4</strong></a> rule specifies that the driver should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553350" data-raw-source="[&lt;strong&gt;KeWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553350)"><strong>KeWaitForSingleObject</strong></a> in the context of start device IRP.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **To select the IrpPending rule set**
 
@@ -113,9 +113,9 @@ Use these rules to verify that your driver correctly pends I/O request packets (
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: New camera driver controls for Windows 10
-author: windows-driver-content
 description: The following camera driver controls are new for Windows 10.
 ms.assetid: E2995039-E8FD-4EC2-9B2F-9BFB767AEE16
 ms.date: 04/06/2018
@@ -58,9 +57,9 @@ The following camera driver controls are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET**](ksproperty-cameracontrol-perframesetting-set.md)
 
- 
+ 
 
- 
+ 
 
 
 

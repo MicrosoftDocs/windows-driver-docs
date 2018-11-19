@@ -3,7 +3,6 @@ title: Graph Analysis with Unloadable Modules
 description: Graph Analysis with Unloadable Modules
 ms.assetid: 12441fa1-3d19-4485-815c-546367f31567
 keywords: ["kernel streaming debugging, unloadable modules"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ The above situation may occur if you load the extension at boot time. Specifical
 
 In the following example, we are capturing two streams (sndrec32) from a Telex USB microphone. Breaking on **splitter!FilterProcess** and running [**!ks.graph**](-ks-graph.md) on splitter's filter yields:
 
-```
+```dbgcmd
 kd> !graph ffa0c6d4 7
 Attempting a graph build on ffa0c6d4...  Please be patient...
 Graph With Starting Point ffa0c6d4:
@@ -36,7 +35,7 @@ Graph With Starting Point ffa0c6d4:
 
 In this example, KMixer has been loaded and connected to splitter, but Kmixer does not appear in the graph. There are IRPs queued to splitter's output pin, yet the **!ks.graph** command is unable to backtrace and discover KMixer. Issue a [**!ks.libexts details**](-ks-libexts.md) command to investigate further:
 
-```
+```dbgcmd
 kd> !libexts details
 ## LibExt Details:
 --------------------------------------------------
@@ -64,7 +63,7 @@ According to the above output, the KMixer section of the extension is currently 
 
 To enable KMixer explicitly, you can use [**!ks.libexts**](-ks-libexts.md) with the **enable** parameter, as follows:
 
-```
+```dbgcmd
 kd> !libexts enable kmixer
 LibExt "kmixer" has been enabled.
 
@@ -94,9 +93,9 @@ Graph With Starting Point ffa0c6d4:
 
 KMixer now appears as expected in the capture graph.
 
- 
+ 
 
- 
+ 
 
 
 

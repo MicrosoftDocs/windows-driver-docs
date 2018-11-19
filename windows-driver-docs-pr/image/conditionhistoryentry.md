@@ -71,19 +71,19 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ClearTime</strong>](cleartime.md)</p></td>
+<td><p><a href="cleartime.md" data-raw-source="[&lt;strong&gt;ClearTime&lt;/strong&gt;](cleartime.md)"><strong>ClearTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Component</strong>](component.md)</p></td>
+<td><p><a href="component.md" data-raw-source="[&lt;strong&gt;Component&lt;/strong&gt;](component.md)"><strong>Component</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Name forParents DeviceCondition and ConditionHistoryEntry</strong>](name-element-for-devicecondition-and-conditionhistoryentry.md)</p></td>
+<td><p><a href="name-element-for-devicecondition-and-conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;Name forParents DeviceCondition and ConditionHistoryEntry&lt;/strong&gt;](name-element-for-devicecondition-and-conditionhistoryentry.md)"><strong>Name forParents DeviceCondition and ConditionHistoryEntry</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Severity</strong>](severity.md)</p></td>
+<td><p><a href="severity.md" data-raw-source="[&lt;strong&gt;Severity&lt;/strong&gt;](severity.md)"><strong>Severity</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Time</strong>](time.md)</p></td>
+<td><p><a href="time.md" data-raw-source="[&lt;strong&gt;Time&lt;/strong&gt;](time.md)"><strong>Time</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,7 +102,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistory</strong>](conditionhistory.md)</p></td>
+<td><p><a href="conditionhistory.md" data-raw-source="[&lt;strong&gt;ConditionHistory&lt;/strong&gt;](conditionhistory.md)"><strong>ConditionHistory</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -131,9 +131,9 @@ You cannot extend the allowed values for **Id**.
 
 [**Time**](time.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCICloseProvider** function closes a display's device context.
 
- 
+ 
 
- 
+ 
 
 
 

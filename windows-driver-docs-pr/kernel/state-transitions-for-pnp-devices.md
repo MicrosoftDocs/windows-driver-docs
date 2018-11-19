@@ -1,6 +1,5 @@
 ---
 title: State Transitions for PnP Devices
-author: windows-driver-content
 description: State Transitions for PnP Devices
 ms.assetid: 31969515-899b-407e-ab73-f6f7f36adb85
 keywords: ["PnP WDK kernel , state transitions", "Plug and Play WDK kernel , state transitions", "state transitions WDK PnP", "device states WDK PnP"]
@@ -36,9 +35,9 @@ When a PnP device is being physically removed from the system or has already bee
 
 At some point after all of a driver's devices have been removed, the PnP manager calls the driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine and unloads the driver.
 
- 
+ 
 
- 
+ 
 
 
 

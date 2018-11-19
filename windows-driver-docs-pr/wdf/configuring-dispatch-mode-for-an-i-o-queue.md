@@ -1,6 +1,5 @@
 ---
 title: Configuring Dispatch Mode for an I/O Queue
-author: windows-driver-content
 description: Configuring Dispatch Mode for an I/O Queue
 ms.assetid: 7603c3fd-a4cb-4174-ad14-f57efedfe9de
 keywords:
@@ -25,7 +24,7 @@ When I/O requests from applications arrive, the framework places each request in
 
 **Note**   The dispatch mode for the I/O queue is not related to the [synchronization mode](specifying-a-callback-synchronization-mode.md). The I/O queue's dispatch configuration controls the number of requests that the driver can accept for processing at any given time, while synchronization controls the simultaneous execution of event callback functions that are presenting or canceling requests. However, several modes of operation are created by [combining dispatch and synchronization modes](combining-dispatch-and-synchronization-modes.md).
 
- 
+ 
 
 The driver configures dispatching for an I/O queue when the driver calls the [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) method to configure the default queue or to create a secondary queue. The driver can specify one of the values from the [**WDF\_IO\_QUEUE\_DISPATCH\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff552362) enumeration type in the *DispatchType* parameter of **IWDFDevice::CreateIoQueue** to identify the dispatch mode. An [I/O queue object](framework-i-o-queue-object.md) can support the following dispatch modes:
 
@@ -50,9 +49,9 @@ For all dispatch modes, the [I/O queue object](framework-i-o-queue-object.md) re
 
 If the driver configures the queue for serial or parallel dispatching, the framework notifies the driver of a request through the callback functions that are registered by the driver when the driver creates the queue or configures the default queue. For more information, see [I/O Queue Event Callback Functions](i-o-queue-event-callback-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_TKIP_MIC_FAILURE_INFO
-author: windows-driver-content
 description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a TLV that contains TKIP-MIC failure information.
 ms.assetid: BBF168BE-6223-4C54-AFF5-17878D07EFBD
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                            | Specifies the index of the cipher key in the default key array. Valid value range is from 0 through 3.                                                                                                                                                   |
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | Specifies the MAC address of the peer that transmitted the packet that failed MIC verification.                                                                                                                                                          |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

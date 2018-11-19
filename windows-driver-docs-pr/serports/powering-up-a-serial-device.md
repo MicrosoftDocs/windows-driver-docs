@@ -1,6 +1,5 @@
 ---
 title: Powering Up a Serial Device
-author: windows-driver-content
 description: Powering Up a Serial Device
 ms.assetid: 83f86da6-0acb-4cad-8856-e826c98c2182
 keywords:
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 A serial device must be turned on (in the device power state **PowerDeviceD0**) for Serial to communicate with the device hardware. If the device is not turned on, Serial will attempt to turn on the device before the driver completes a request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Commands
 description: Commands
 ms.assetid: be2ff9ca-48d2-4050-8390-2ead1d53f8d9
 keywords: ["commands, reference"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 This section of the reference discusses the various debugger commands that you can use in CDB, KD, and WinDbg.
 
- 
+ 
 
- 
+ 
 
 
 

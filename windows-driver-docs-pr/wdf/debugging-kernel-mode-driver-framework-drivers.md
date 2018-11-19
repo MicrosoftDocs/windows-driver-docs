@@ -1,6 +1,5 @@
 ---
 title: Videos Debugging KMDF Drivers
-author: windows-driver-content
 description: This topic contains links to a three part video series by Kumar Rajeev that demonstrates how to debug Kernel-Mode Driver Framework (KMDF) drivers.
 ms.assetid: 62D0F1DA-318F-4989-94C5-968C67F420C8
 ms.date: 04/20/2017
@@ -34,9 +33,9 @@ This series of demonstrations is given at an advanced technical level. To get th
 
     This session shows you how to get detailed information about a KMDF device object including plug and play (PnP) and power state, power policy ownership, power configuration, PnP and power callbacks, and device properties. It also shows you how to get information on open handles, explore all the I/O queues configured for the device, and dump individual requests.
 
- 
+ 
 
- 
+ 
 
 
 

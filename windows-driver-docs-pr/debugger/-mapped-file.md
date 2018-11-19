@@ -3,7 +3,6 @@ title: mapped_file
 description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
 ms.assetid: 1d6d4d14-01ca-47ce-a044-778c9a56e9a5
 keywords: ["mapped_file Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the file mapping. If *Address* is not in a mapping, the
 </tbody>
 </table>
 
- 
+ 
 
 The **!mapped\_file** extension can only be used during live, nonremote debugging.
 
@@ -72,9 +71,9 @@ Mapped file name for 77150000: '\Device\HarddiskVolume2\Windows\System32\kernel3
 No information found for 80310000: error 87
 ```
 
- 
+ 
 
- 
+ 
 
 
 

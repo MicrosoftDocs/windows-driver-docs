@@ -1,6 +1,5 @@
 ---
 title: HSPluginGetVersion function
-author: windows-driver-content
 description: The HSPluginGetVersion function is exported by the plugin DLL and is called to verify that the plugin version matches the host version.
 ms.assetid: dfdd534c-43c0-4d96-b85b-de9c2830322d
 keywords: 
@@ -56,9 +55,9 @@ Requirements
 
 [**HS\_PLUGIN\_VERSION**](hs-plugin-version.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: locks kdext
 description: The locks extension in Kdextx86.dll and Kdexts.dll displays information about kernel ERESOURCE locks.
 ms.assetid: c1be6c6c-0028-459f-9c92-61df52cbc4b6
 keywords: ["kdext locks extension", "ERESOURCE locks", "deadlocks", "locks  kdext .locks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Specifies the hexadecimal address of the ERESOURCE lock to be displayed. If *Add
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -124,9 +123,9 @@ fafa3ddc 8050ec72 nt!PspSystemThreadStartup+0x2e (FPO: [Non-Fpo]) (CONV: stdcall
 1 total locks, 1 locks currently held
 ```
 
- 
+ 
 
- 
+ 
 
 
 

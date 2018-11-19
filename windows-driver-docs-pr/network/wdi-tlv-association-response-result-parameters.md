@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_RESULT_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_RESULT_PARAMETERS is a TLV that contains association response result parameters.
 ms.assetid: 8BF2C8B4-207E-479A-9903-3FCDEED5BA2C
 ms.date: 07/18/2017
@@ -40,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>WDI_MAC_ADDRESS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926071)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926071" data-raw-source="[&lt;strong&gt;WDI_MAC_ADDRESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926071)"><strong>WDI_MAC_ADDRESS</strong></a></td>
 <td>The MAC address of the peer adapter.</td>
 </tr>
 <tr class="even">
@@ -54,21 +53,21 @@ The sum (in bytes) of the sizes of all contained elements.
 <p>Valid values are 0 and 1. A value of 1 indicates that it is a reassociation response.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_AUTH_ALGORITHM</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897792)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn897792" data-raw-source="[&lt;strong&gt;WDI_AUTH_ALGORITHM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897792)"><strong>WDI_AUTH_ALGORITHM</strong></a></td>
 <td>The authentication algorithm for the association.</td>
 </tr>
 <tr class="odd">
-<td>[<strong>WDI_CIPHER_ALGORITHM</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897802)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn897802" data-raw-source="[&lt;strong&gt;WDI_CIPHER_ALGORITHM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897802)"><strong>WDI_CIPHER_ALGORITHM</strong></a></td>
 <td>The unicast cipher algorithm for the association.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_CIPHER_ALGORITHM</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897802)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn897802" data-raw-source="[&lt;strong&gt;WDI_CIPHER_ALGORITHM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897802)"><strong>WDI_CIPHER_ALGORITHM</strong></a></td>
 <td>The multicast cipher algorithm for the association.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -94,9 +93,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

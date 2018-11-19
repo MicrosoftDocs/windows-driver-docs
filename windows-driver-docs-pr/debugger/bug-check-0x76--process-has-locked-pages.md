@@ -3,7 +3,6 @@ title: Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES
 description: The PROCESS_HAS_LOCKED_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation.
 ms.assetid: 25c63e2e-6d2a-401a-b523-ffa70e9f75df
 keywords: ["Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES", "PROCESS_HAS_LOCKED_PAGES"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation, or that it attempted to unlock pages that were already unlocked.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PROCESS\_HAS\_LOCKED\_PAGES Parameters
 
@@ -59,7 +58,7 @@ The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug ch
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -85,9 +84,9 @@ The system then saves stack traces, so you can easily identify the driver that c
 
 Examine the driver source code that locks and unlocks memory, and try to locate an instance where memory is unlocked without first being locked.
 
- 
+ 
 
- 
+ 
 
 
 

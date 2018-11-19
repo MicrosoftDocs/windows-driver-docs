@@ -23,9 +23,9 @@ If the NIC cannot split the frame at the UDP payload, the NIC should split the f
 
 If the header-data split provider splits the frame at the UDP payload, the indicated [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures must have the NDIS\_NBL\_FLAGS\_IS\_UDP and NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_PAYLOAD flags set in the **NblFlags** member. For more information about setting header-data split NET\_BUFFER\_LIST flags, see [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_DELETE_PORT
-author: windows-driver-content
 description: OID_WDI_TASK_DELETE_PORT requests that the IHV component releases all resources (including MAC and PHY) allocated to the specified port.
 ms.assetid: c84b6cd6-a8e7-4ba7-a9d9-04b2881904c8
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 6                                     | 1                               |
 
- 
+ 
 
 ## Task parameters
 
@@ -27,7 +26,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
 | [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926288) |                                |          | The delete port parameters. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

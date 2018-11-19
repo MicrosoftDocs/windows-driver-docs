@@ -1,6 +1,5 @@
 ---
 title: IPM Configuration and Usage
-author: windows-driver-content
 description: IPM Configuration and Usage
 ms.assetid: 95057785-e5b5-40ae-86e4-50bbf0014cef
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ The Power Options control panel applet shown in the following screen shot is use
 
 A command line tool (*Powercfg.exe*) can also be used. Type **powercfg /?** for usage information at the command prompt.
 
- 
+ 
 
- 
+ 
 
 
 

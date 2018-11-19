@@ -1,6 +1,5 @@
 ---
 title: Creating and Using Driver-Created File Objects
-author: windows-driver-content
 description: Creating and Using Driver-Created File Objects
 ms.assetid: 84b677b4-fddf-4f06-9ea6-e4642c3f1b2d
 keywords:
@@ -63,9 +62,9 @@ After the framework calls [**OnCloseFile**](https://msdn.microsoft.com/library/w
 
 If driver-created file objects remain after the driver's device-removal methods (for example [**IPnpCallbackHardware::OnReleaseHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556768) and [**IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup**](https://msdn.microsoft.com/library/windows/hardware/ff556780)) return, the framework generates a driver stop. For information about troubleshooting this problem, see [Determining Why UMDF Indicates Outstanding Files at Device Removal Time](determining-why-umdf-indicates-outstanding-files-at-device-removal-tim.md).
 
- 
+ 
 
- 
+ 
 
 
 

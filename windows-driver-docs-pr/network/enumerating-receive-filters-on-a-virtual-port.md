@@ -43,7 +43,7 @@ Before the overlying driver or user application issues this OID method request, 
 
     **Note**  This member is only valid if the driver or application sets the NDIS\_RECEIVE\_FILTER\_INFO\_ARRAY\_VPORT\_ID\_SPECIFIED flag in the **Flags** member. If this flag is not set, receive filters are returned that were set on every VPort on the NIC switch.
 
-     
+     
 
 After a successful return from the OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787), the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an updated [**NDIS\_RECEIVE\_FILTER\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff567179) structure that is followed by one or more [**NDIS\_RECEIVE\_FILTER\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567176) structures. Each **NDIS\_RECEIVE\_FILTER\_INFO** structure specifies the unique identifier for the receive filter that is set on the specified VPort.
 
@@ -60,7 +60,7 @@ Before the overlying driver or user application issues this OID method request, 
 
     **Note**  The overlying driver obtained the filter identifier from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) or [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). The application can obtain the filter identifier only from an earlier OID method request of OID\_RECEIVE\_FILTER\_ENUM\_FILTERS.
 
-     
+     
 
 -   The **QueueId** member must be set to NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
@@ -72,9 +72,9 @@ Before the overlying driver or user application issues this OID method request, 
 
 NDIS handles the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) and [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792) method OID requests for miniport drivers. NDIS obtained the information from an internal cache of the data that it received from the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) OID request.
 
- 
+ 
 
- 
+ 
 
 
 

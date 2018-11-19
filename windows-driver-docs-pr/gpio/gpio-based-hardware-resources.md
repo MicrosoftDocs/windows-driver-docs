@@ -1,6 +1,5 @@
 ---
 title: GPIO-Based Hardware Resources
-author: windows-driver-content
 description: Starting with Windows 8, the general-purpose I/O (GPIO) pins that are controlled by a GPIO controller driver are available to other drivers as system-managed hardware resources.
 ms.assetid: 03A6ACDF-8BB7-40C0-A331-7F61F48A44DC
 ms.date: 04/20/2017
@@ -53,9 +52,9 @@ After a peripheral device driver opens a connection to a GPIO I/O resource, an [
 
 For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the mapping of data input pins to the bits in the request output buffer, see [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483). For more information about **IOCTL\_GPIO\_WRITE\_PINS** requests, including the mapping of the bits in the request input buffer to data output pins, see [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487).
 
- 
+ 
 
- 
+ 
 
 
 

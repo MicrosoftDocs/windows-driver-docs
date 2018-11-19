@@ -1,6 +1,5 @@
 ---
 title: NFC class extension extensibility model
-author: windows-driver-content
 description: The NFC class extension driver enables developers to add chipset-specific NCI proprietary extensions that aren’t covered by the NCI specification.
 ms.assetid: 8CCCE7BF-595A-4F30-9924-B5BD45D6137F
 keywords:
@@ -26,9 +25,9 @@ The NFC class extension driver provides three extensibility points for the NFC c
 -   RF protocol and interface extensibility
 -   NCI packet handling
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

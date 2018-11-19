@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS is a TLV that contains Wi-Fi Direct device information parameters.
 ms.assetid: A0B1AC85-5F99-4674-A1C4-E25554BDD89F
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8\[4\] | Primary device type: OUI assigned to this device type. |
 | UINT16     | Primary device type: Subcategory type identifier.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

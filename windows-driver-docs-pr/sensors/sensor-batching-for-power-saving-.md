@@ -1,6 +1,5 @@
 ---
 title: Sensor data batching for power savings
-author: windows-driver-content
 description: This topic covers the interfaces that are required between the sensor class extension and the sensor driver, to implement sensor data batching in Windows 10.
 ms.assetid: E64B9CE0-2C76-430A-ABE0-717BD27BCA8A
 ms.date: 07/20/2018
@@ -124,9 +123,9 @@ The following diagram illustrates the different configurations described in the 
 
 Under normal circumstances the driver is supposed to read the hardware buffer at least once every time interval equal to *BatchLatencyMs*, to ensure that no data is dropped or lost. When the hardware FIFO buffer fills up, it should wrap around and behave like a circular buffer, overwriting older events.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Triaging WDTF-based tests
-author: windows-driver-content
 description: To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for WDTF Object Logging and WPP Software Tracing.
 ms.assetid: C2F7AA74-7A74-4EA4-AD2D-8143252380C8
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ WDTF provides support for [WPP Software Tracing](https://msdn.microsoft.com/libr
 -   [Enabling and Viewing WDTF Traces](viewing-wdtf-traces.md)
 -   [Diagnosing problems running WDTF-based tests](diagnosing-problems-running-wdtf-based-tests.md)
 
- 
+ 
 
- 
+ 
 
 
 

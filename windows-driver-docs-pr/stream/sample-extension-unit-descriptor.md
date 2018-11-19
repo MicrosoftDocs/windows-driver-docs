@@ -1,6 +1,5 @@
 ---
 title: Sample Extension Unit Descriptor
-author: windows-driver-content
 description: Sample Extension Unit Descriptor
 ms.assetid: 283a28e6-9f73-4131-bcfb-b4983a92cecd
 keywords:
@@ -30,9 +29,9 @@ BYTE  baSourceID[0]:     0x01
 
 For more detailed information on hardware requirements for USB Video Class, see the *Universal Serial Bus Device Class Definition for Video DevicesSpecification*. This specification is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
- 
+ 
 
- 
+ 
 
 
 

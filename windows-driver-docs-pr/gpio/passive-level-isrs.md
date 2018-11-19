@@ -1,6 +1,5 @@
 ---
 title: Passive-Level ISRs
-author: windows-driver-content
 description: Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) drivers can, as an option, register their interrupt service routines (ISRs) to run at passive level.
 ms.assetid: E7556046-D85C-4CD1-8C27-578BF5CAFF2B
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ To support a passive-level ISR for a peripheral device that generates a level-tr
 
 Because the interrupt remains masked until the ISR returns, the device's passive-level ISR should perform only the initial servicing of the interrupt, and then return to avoid delaying passive-level ISRs for other devices. Typically, the driver should defer additional interrupt-related processing to the interrupt worker thread, which runs at a lower priority than the ISR.
 
- 
+ 
 
- 
+ 
 
 
 

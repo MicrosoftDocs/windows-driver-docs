@@ -140,9 +140,9 @@ You can activate the I/O Verification feature for one or more drivers by using D
 
     The I/O Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

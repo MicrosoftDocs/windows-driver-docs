@@ -1,6 +1,5 @@
 ---
 title: Setting Attributes on a Parallel Device
-author: windows-driver-content
 description: Setting Attributes on a Parallel Device
 ms.assetid: 10df9a1b-99ec-46b1-b515-10fb20fe2aed
 keywords:
@@ -26,9 +25,9 @@ A client uses following device control requests to set the indicated operations 
 
 -   [**IOCTL\_PAR\_SET\_WRITE\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff544115) sets an ECP or EPP write address (channel) for a parallel device.
 
- 
+ 
 
- 
+ 
 
 
 

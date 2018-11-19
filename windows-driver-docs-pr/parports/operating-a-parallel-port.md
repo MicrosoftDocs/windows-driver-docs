@@ -1,6 +1,5 @@
 ---
 title: Operating a Parallel Port
-author: windows-driver-content
 description: Operating a Parallel Port
 ms.assetid: c9015a01-a7cb-41f4-9710-a868ef19f6d7
 keywords:
@@ -45,9 +44,9 @@ For more information about system support for parallel ports, see:
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
 

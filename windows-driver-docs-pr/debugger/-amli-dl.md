@@ -3,7 +3,6 @@ title: amli dl
 description: The amli dl extension displays a portion of the AML interpreter's event log.
 ms.assetid: 06565760-d7f0-4f22-8670-7706d3b4b3a8
 keywords: ["amli dl Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,8 +20,9 @@ The **!amli dl** extension displays a portion of the AML interpreter's event log
 
 Syntax
 
+```dbgcmd
     !amli dl
-
+```
 
 ## <span id="ddk__amli_dl_dbg"></span><span id="DDK__AMLI_DL_DBG"></span>
 
@@ -54,9 +54,9 @@ EVAL: [c15a6618]QTh=00000000,QCt=00000000,QFg=00000002: Ctx=c18b4000,Obj=\_WAK
 RUNC: [c15a6618]QTh=c15a6618,QCt=c18b4000,QFg=00000002: Ctx=c18b4000,Obj=\_WAK
 ```
 
- 
+ 
 
- 
+ 
 
 
 

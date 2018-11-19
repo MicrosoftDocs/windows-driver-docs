@@ -1,6 +1,5 @@
 ---
 title: Pscript Printer Minidriver Versioning
-author: windows-driver-content
 description: Pscript Printer Minidriver Versioning
 ms.assetid: bdc203ee-b256-492b-bb8c-c695a8b4686d
 keywords:
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 
 See [Specifying Printer Driver Version Numbers](print-driver-versioning.md).
 
- 
+ 
 
- 
+ 
 
 
 

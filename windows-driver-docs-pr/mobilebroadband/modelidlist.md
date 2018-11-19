@@ -15,7 +15,7 @@ The ModelIDList element specifies one or more GUIDs. Each GUID is specified thro
 **Caution**  
 The ModelIDList and [ModelID](modelid.md) elements are not supported for service metadata packages. You must use the [HardwareIDList](hardwareidlist.md) and [HardwareID](hardwareid.md) elements instead.
 
- 
+ 
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -47,13 +47,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ModelID](modelid.md)</p></td>
-<td><p>The [ModelID](modelid.md) element specifies the GUID of a physical device.</p></td>
+<td><p><a href="modelid.md" data-raw-source="[ModelID](modelid.md)">ModelID</a></p></td>
+<td><p>The <a href="modelid.md" data-raw-source="[ModelID](modelid.md)">ModelID</a> element specifies the GUID of a physical device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -71,8 +71,8 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataKey](metadatakey.md)</p></td>
-<td><p>The [MetadataKey](metadatakey.md) element specifies the attributes of the device metadata package. These include the following:</p>
+<td><p><a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a></p></td>
+<td><p>The <a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a> element specifies the attributes of the device metadata package. These include the following:</p>
 <ul>
 <li><p>The identifier for each hardware function supported by the device.</p></li>
 <li><p>The language-specific locale for the text strings within the package.</p></li>
@@ -81,7 +81,7 @@ There are no attributes.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -104,7 +104,7 @@ The ModelIDList element is required only if the [HardwareIDList](hardwareidlist.
 **Caution**  
 The ModelIDList and [ModelID](modelid.md) elements are not supported for service metadata packages. You must use the [HardwareIDList](hardwareidlist.md) and [HardwareID](hardwareid.md) elements instead.
 
- 
+ 
 
 If the PackageInfo XML data contains both of the [HardwareIDList](hardwareidlist.md) and ModelIDList elements, the operating system uses the following rules when it determines whether a device is specified by a device metadata package:
 
@@ -112,9 +112,9 @@ If the PackageInfo XML data contains both of the [HardwareIDList](hardwareidlist
 
 -   Otherwise, the operating searches the [HardwareIDList](hardwareidlist.md) element for a match of the device's hardware ID.
 
- 
+ 
 
- 
+ 
 
 
 

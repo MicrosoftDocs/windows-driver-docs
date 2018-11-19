@@ -1,17 +1,13 @@
 ---
 title: time travel navigation commands
 description: This section describes the time travel navigation commands.
-ms.author: domars
 ms.date: 09/23/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time travel navigation commands
+# Time travel navigation commands
 
 This section describes the time travel navigation commands.
 
@@ -19,7 +15,7 @@ This section describes the time travel navigation commands.
 ## </span><span id="P"></span> p- (Step Back)
 
 The *p-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step. You can invoke this command using the **Step Over Back**  button on the **Home** ribbon in WinDbg Preview.
- 
+ 
 
 ## </span><span id="T"></span> t- (Trace Back)
 

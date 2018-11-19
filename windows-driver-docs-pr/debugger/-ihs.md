@@ -3,7 +3,6 @@ title: ihs
 description: The ihs extension displays the interrupt history record for the specified processor, using program counter symbols.
 ms.assetid: 3b91e8aa-5639-4273-9da4-1927d2ae8c62
 keywords: ["interrupt history record", "ihs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -25,7 +24,7 @@ The **!ihs** extension displays the interrupt history record for the specified p
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -52,7 +51,7 @@ Specifies a processor. If *Processor* is omitted, the current processor is used.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium target computer.
 
@@ -96,9 +95,9 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0 nt
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

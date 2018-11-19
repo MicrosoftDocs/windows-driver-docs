@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_SURPRISE_REMOVAL Request
-author: windows-driver-content
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
 ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
@@ -102,7 +101,7 @@ All drivers should handle this IRP and should note that the device has been phys
 
 On Windows 98/Me, the PnP manager does not send this IRP. If a user removes a device without first using the appropriate user interface, the PnP manager sends only an **IRP\_MN\_REMOVE\_DEVICE** request to the drivers for the device. All WDM drivers must handle both **IRP\_MN\_SURPRISE\_REMOVAL** and **IRP\_MN\_REMOVE\_DEVICE**. The code for **IRP\_MN\_REMOVE\_DEVICE** should check whether the driver received a prior surprise-remove IRP and should handle both cases.
 
- ## Using GUID_REENUMERATE_SELF_INTERFACE_STANDARD
+ ## Using GUID_REENUMERATE_SELF_INTERFACE_STANDARD
 
 The GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface enables a driver to request that its device be reenumerated.
 
@@ -137,7 +136,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 </tr>
 <tr class="even">
 <td>PNP_DEVICE_DONT_DISPLAY_IN_UI</td>
-<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the [<strong>DEVICE_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure.)</p></td>
+<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543095" data-raw-source="[&lt;strong&gt;DEVICE_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543095)"><strong>DEVICE_CAPABILITIES</strong></a> structure.)</p></td>
 </tr>
 <tr class="odd">
 <td>PNP_DEVICE_FAILED</td>
@@ -147,8 +146,8 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 <tr class="even">
 <td>PNP_DEVICE_NOT_DISABLEABLE</td>
 <td><p>The device is required when the computer starts. Such a device must not be disabled.</p>
-<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path ([<strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong>](irp-mn-device-usage-notification.md) for <strong>DeviceUsageTypePaging</strong>), the driver calls [<strong>IoInvalidateDeviceState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549361) and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
-<p>If this bit is set for a device, the PnP manager propagates this setting to the device's parent device, its parent's parent device, and so forth.</p>
+<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549361" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549361)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
+<p>If this bit is set for a device, the PnP manager propagates this setting to the device&#39;s parent device, its parent&#39;s parent device, and so forth.</p>
 <p>If this bit is set for a root-enumerated device, the device cannot be disabled or uninstalled.</p></td>
 </tr>
 <tr class="odd">
@@ -169,7 +168,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 </tbody>
 </table>
 
- 
+ 
 
 The PnP manager queries a device's PNP\_DEVICE\_STATE right after starting the device by sending an **IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE** request to the device stack. In response to this IRP, the drivers for the device set the appropriate flags in PNP\_DEVICE\_STATE.
 

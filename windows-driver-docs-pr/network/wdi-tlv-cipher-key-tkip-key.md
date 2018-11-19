@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_KEY
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TKIP_KEY is a TLV that contains TKIP key material.
 ms.assetid: 73E4F051-5CC3-4F9E-9AFD-F33FAAC5A39D
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the TKIP key material. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Finding a Kernel-Mode Memory Leak
 description: Finding a Kernel-Mode Memory Leak
 ms.assetid: 7e707b89-8614-46d7-9c2e-bea2ddf16164
 keywords: ["memory leak, kernel-mode", "memory leak, kernel-mode, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -23,9 +22,9 @@ If you do not know which kernel-mode driver or component is responsible for the 
 
 If you have already identified the responsible driver or component, use the second and third techniques in the preceding list to determine the cause of the leak more specifically.
 
- 
+ 
 
- 
+ 
 
 
 

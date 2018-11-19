@@ -13,7 +13,7 @@ Starting with NDIS 6.40 (Windows Server 2012 R2, the Hyper-V extensible switch
 
 **Note**  This page assumes that you are familiar with [Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md) and [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md).
 
- 
+ 
 
 ## NVGRE and non-NVGRE packets
 
@@ -30,7 +30,7 @@ In the ingress data path, after the capturing and filtering extensions but befor
 
 **Note**  The **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) is often referred to as the packet's "out-of-band (OOB) data."
 
- 
+ 
 
 If the **NativeForwardingRequired** flag is set in the packet's OOB data, the packet is an NVGRE packet. If it is not set, the packet is a non-NVGRE packet.
 
@@ -66,9 +66,9 @@ A **VirtualSubnetId** can be configured on a VM network adapter port as an exter
 
 [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598211)
 
- 
+ 
 
- 
+ 
 
 
 

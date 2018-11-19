@@ -1,6 +1,5 @@
 ---
 title: Anti-virus optimization for Windows Containers
-author: windows-driver-content
 description: This topic describes optimizations that anti-virus products can utilize when running within Windows Containers.
 ms.assetid: 101BC08B-EE63-4468-8B12-C8C8B0E99FC5
 ms.date: 04/20/2017
@@ -77,7 +76,7 @@ The following changes are need in the AV product:
 
         **Note**  Registered layers may not be identified by the system in the future. In this case, local layer files must be individually identified as described in the last bullet.
 
-         
+         
 
     -   For opens that are serviced from a local package layer, AV should use the provided VolumeGUID and FileId of the layer file to determine if the file needs to be scanned. This will likely require AV to build a cache of scanned files indexed by volume GUID and FileId. This is indicated by the redirection flag:
 
@@ -115,9 +114,9 @@ Consider the following benefits and risks to using these new optimizations for A
 
 If a container is launched in the time between signature update and the next scheduled proactive anti-malware scan, the files executed in the container are not being scanned with respect to the latest anti-malware signatures. To mitigate this risk, the AV product could skip scans for redirected files only if there has not been a signature update since the last proactive scan. This would limit container performance degradation until a proactive scan is completed with the latest signatures. Optionally, the AV product can trigger a proactive scan in this situation so that subsequent container launches are more efficient.
 
- 
+ 
 
- 
+ 
 
 
 

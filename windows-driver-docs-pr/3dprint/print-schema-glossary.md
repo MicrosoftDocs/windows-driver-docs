@@ -1,6 +1,5 @@
 ---
 title: Print schema glossary
-author: windows-driver-content
 description: Glossary page
 Robots: noindex, nofollow
 ms.assetid: 70B4C1B6-F076-4D58-A9A6-46DA9CBF5151

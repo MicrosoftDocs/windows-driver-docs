@@ -1,6 +1,5 @@
 ---
 title: Build the sensor driver
-author: windows-driver-content
 description: This topic shows you how to build the sample sensor driver for the ADXL345 accelerometer.
 ms.assetid: F9D8D124-DAD6-4779-9F03-B1743BADC31A
 ms.date: 04/20/2017
@@ -53,9 +52,9 @@ Navigate to the [Microsoft / Windows-driver-samples](https://github.com/Microsof
 -   *ADXL345Acc.inf* - a setup information file.
 
 7. Copy these three files from the **ADXL345Acc** folder onto a flash drive, then follow the steps in [Install the sensor driver](install-the-sensor-driver.md) to install the sample sensor driver for the ADXL345 accelerometer.
- 
+ 
 
- 
+ 
 
 
 

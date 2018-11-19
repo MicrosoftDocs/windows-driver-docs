@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver indicates that its device supports a scissor test by setting the D3DPRASTERCAPS\_SCISSORTEST capability bit in the **RasterCaps** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating a Well-Behaved PTP Camera
-author: windows-driver-content
 description: Creating a Well-Behaved PTP Camera
 ms.assetid: 5d36a973-c4ff-4da7-9626-f358f801b592
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The following points must be considered to create a PTP camera that works proper
 
 [Image Geometry Properties](image-geometry-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

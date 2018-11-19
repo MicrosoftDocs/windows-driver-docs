@@ -1,6 +1,5 @@
 ---
 title: GPIO logging and investigations
-author: windows-driver-content
 description: This topic describes logging and investigations for GPIO testing.
 ms.assetid: 998BF6BC-D931-4555-A8BC-F860DFA9A18F
 ms.localizationpriority: medium
@@ -24,7 +23,7 @@ logman stop -ets buttonTrace
 **Note**  
 This is a WPP trace.
 
- 
+ 
 
 If a test fails, logging can help diagnose whether the appropriate injection was performed. For example, if a dock indicator change is expected, the following entry should be found in the log at the time that the notification is triggered.
 
@@ -37,9 +36,9 @@ If a test fails, logging can help diagnose whether the appropriate injection was
 
 For additional guidance on how to implement the indicator injection, see the [GPIO buttons and indicators implementation guide for Windows 8.1](gpio-buttons-and-indicators-implementation-guide-for-windows-8-1.md).
 
- 
+ 
 
- 
+ 
 
 
 

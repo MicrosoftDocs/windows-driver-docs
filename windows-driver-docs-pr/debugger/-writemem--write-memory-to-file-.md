@@ -3,7 +3,6 @@ title: .writemem (Write Memory to File)
 description: The .writemem command writes a section of memory to a file.
 ms.assetid: 928e9452-d9b4-49fa-a5fa-cdc3832d7349
 keywords: [".writemem (Write Memory to File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ Specifies the memory range to be written to the file. For syntax details, see [A
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +63,9 @@ The memory is copied literally to the file. It is not parsed in any way.
 
 The **.writemem** command is the opposite of the [**.readmem (Read Memory from File)**](-readmem--read-memory-from-file-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,8 +3,7 @@ title: Reading Bug Check Callback Data
 description: Reading Bug Check Callback Data
 ms.assetid: 638074bb-5133-4edc-86c5-33aafa837a0c
 keywords: ["callback data for bug checks", "callback data for bug checks, displaying callback data", "callback data for bug checks, displaying secondary data", "secondary bug check callback data", "bug check, callback routines", "dbgeng.h header file, IDebugDataSpaces3", "dbgeng.h header file, ReadTagged", "dbgeng.h header file, StartEnumTagged", "dbgeng.h header file, GetNextTagged"]
-ms.author: domars
-ms.date: 05/23/2017
+ms.date: 10/25/2018
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 Many drivers supply *bug check callback routines*. When Windows issues a bug check, it calls these routines before shutting down the system. These routines can specify and write to areas of memory known as *callback data* and *secondary callback data*.
 
 <span id="BugCheckCallback"></span><span id="bugcheckcallback"></span><span id="BUGCHECKCALLBACK"></span>[BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479)  
-Data written by this routine becomes part of callback data. The data is not included in the crash dump file. (See [Earlier Versions of Windows](#earlier-versions-of-windows) for an exception.)
+Data written by this routine becomes part of callback data. The data is not included in the crash dump file. 
 
 <span id="BugCheckSecondaryDumpDataCallback"></span><span id="bugchecksecondarydumpdatacallback"></span><span id="BUGCHECKSECONDARYDUMPDATACALLBACK"></span>[BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481)  
 Data written by this routine becomes part of secondary callback data. The data is included in the crash dump file.
@@ -26,16 +25,12 @@ The amount of callback and secondary callback data that is available to the debu
 
 -   If you are performing live debugging of a crashed system, callback data that has already been written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) or specified by [BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480) will be available. Secondary callback data will not be available, because it is not stored in any fixed memory location.
 
--   If you are debugging a Complete Memory Dump or Kernel Memory Dump, callback data specified by [BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480) and secondary callback data written by [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481) will be available. Callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) will not be available. (See [Earlier Versions of Windows](#earlier-versions-of-windows) for an exception.)
+-   If you are debugging a Complete Memory Dump or Kernel Memory Dump, callback data specified by [BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480) and secondary callback data written by [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481) will be available. Callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) will not be available. 
 
 -   If you are debugging a Small Memory Dump, callback data will not be available. Secondary callback data will be available.
 
 See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md) for more details on these different dump file sizes.
 
-## <span id="earlier-versions-of-windows"></span><span id="EARLIER-VERSIONS-OF-WINDOWS"></span>Earlier Versions of Windows
-
-
-In versions of Windows earlier than Windows XP SP1, callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) is included in the crash dump file.
 
 ## <span id="ddk_reading_bug_check_callback_data_dbg"></span><span id="DDK_READING_BUG_CHECK_CALLBACK_DATA_DBG"></span>
 
@@ -50,7 +45,7 @@ To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*
 
 ### <span id="displaying-secondary-callback-data"></span><span id="DISPLAYING-SECONDARY-CALLBACK-DATA"></span>Displaying Secondary Callback Data
 
-There are two methods for displaying secondary callback data in Windows XP SP1, Windows Server 2003, and later versions of Windows. You can use the **.enumtag** command or you can write your own debugger extension.
+There are two methods for displaying secondary callback data. You can use the **.enumtag** command or you can write your own debugger extension.
 
 Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481).
 
@@ -60,7 +55,7 @@ To use this data in a more practical way, it is recommended that you write your 
 
 If you know the GUID tag of the secondary data block, your extension should use the method **IDebugDataSpaces3::ReadTagged** to access the data. Its prototype is as follows:
 
-```
+```cpp
 STDMETHOD(ReadTagged)(
     THIS_
     IN LPGUID Tag,
@@ -73,7 +68,7 @@ STDMETHOD(ReadTagged)(
 
 Here is an example of how to use this method:
 
-```
+```cpp
 UCHAR RawData[MY_DATA_SIZE];
 GUID MyGuid = .... ;
 
@@ -87,7 +82,7 @@ If two blocks have identical GUID tags, the first matching block will be returne
 
 If you are not sure of the GUID tag of your block, you can use the **IDebugDataSpaces3::StartEnumTagged**, **IDebugDataSpaces3::GetNextTagged**, and **IDebugDataSpaces3::EndEnumTagged** methods to enumerate the tagged blocks. Their prototypes are as follows:
 
-```
+```cpp
 STDMETHOD(StartEnumTagged)(
     THIS_
     OUT PULONG64 Handle
@@ -112,9 +107,9 @@ It is also possible to debug the callback routine itself. Breakpoints within cal
 
 If the callback routine causes a second bug check, this new bug check will be processed first. However, Windows will not repeat certain parts of the Stop process—for example, it will not write a second crash dump file. The Stop code displayed on the blue screen will be the second bug check code. If a kernel debugger is attached, messages about both bug checks will usually appear.
 
- 
+ 
 
- 
+ 
 
 
 

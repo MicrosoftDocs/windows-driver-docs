@@ -1,6 +1,5 @@
 ---
 title: Unidrv Printer Minidriver Versioning
-author: windows-driver-content
 description: Unidrv Printer Minidriver Versioning
 ms.assetid: 4f7701f4-79c4-4cdd-8562-fe4f70ad5cfe
 keywords:
@@ -18,9 +17,9 @@ ms.localizationpriority: medium
 
 See [Specifying Printer Driver Version Numbers](print-driver-versioning.md).
 
- 
+ 
 
- 
+ 
 
 
 

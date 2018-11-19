@@ -3,7 +3,6 @@ title: minipkd.portconfig
 description: The minipkd.portconfig extension displays information about the specified PORT_CONFIGURATION_INFORMATION data structure.
 ms.assetid: efc527c4-0340-4976-9126-d3e32286fc64
 keywords: ["minipkd.portconfig Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of a PORT\_CONFIGURATION\_INFORMATION data structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +58,9 @@ Remarks
 
 The *PortConfig* address can be found in the **Port Config Info** field of the [**!minipkd.adapter**](-minipkd-adapter.md) display.
 
- 
+ 
 
- 
+ 
 
 
 

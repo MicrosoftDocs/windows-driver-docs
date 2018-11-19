@@ -39,9 +39,9 @@ The following features have been removed from Windows 8 and later:
 
 -   The TCP/IP protocol driver that ships with Windows 8 has been updated to NDIS 6.30. However, this change was relatively minor, so it's not worth porting your driver just for this feature. The TCP/IP protocol driver is backward compatible with NDIS 6.20 and earlier drivers in the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

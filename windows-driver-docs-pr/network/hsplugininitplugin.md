@@ -1,6 +1,5 @@
 ---
 title: HSPluginInitPlugin function
-author: windows-driver-content
 description: The HSPluginInitPlugin function is exported by the plugin DLL and is called to initialize the plugin.
 ms.assetid: db51267c-4f38-47bd-bde2-7b27a93dd2a7
 keywords: 
@@ -41,11 +40,11 @@ A handle, provided by the host, that the plugin is required to save and then use
 The host's current version number.
 
 *dwHostCapabilities* \[in\]  
-Value that specifies the list of capabilities that the host can provide to the plugin. This value is the bitwise OR combination of the applicable capability flags. For more information about capability flags, see the **HS\_FLAG\_CAPABILITY\_\*** constants in [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
+Value that specifies the list of capabilities that the host can provide to the plugin. This value is the bitwise OR combination of the applicable capability flags. For more information about capability flags, see the **HS\_FLAG\_CAPABILITY\_\\*** constants in [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
 
 **Note**  If the host does not supply all the capabilities required by the plugin, the plugin will not be initialized.
 
- 
+ 
 
 *\*pDeviceIdentity* \[in\]  
 Pointer to a [**HS\_DEVICE\_IDENTITY**](hs-device-identity.md) structure that contains information about the device manufacturer and model.
@@ -104,9 +103,9 @@ Requirements
 
 [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

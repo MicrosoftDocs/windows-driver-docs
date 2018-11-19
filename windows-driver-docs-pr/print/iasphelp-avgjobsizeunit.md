@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_AvgJobSizeUnit method
-author: windows-driver-content
 description: The AvgJobSizeUnit property enables an ASP Web page to determine the units of the average job size.
 MS-HAID:
 - 'webfnc\_b7542526-ad13-46d7-a1c1-e02d7832dfb6.xml'
@@ -63,7 +62,7 @@ A caller-supplied pointer to a memory location that receives one of the values i
 </tbody>
 </table>
 
- 
+ 
 
 Return value
 ------------

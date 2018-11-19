@@ -1,6 +1,5 @@
 ---
 title: Preprocessing and Postprocessing IRPs
-author: windows-driver-content
 description: Preprocessing and Postprocessing IRPs
 ms.assetid: a0e14ae6-a06e-4c24-8b64-b56f485cf9ff
 keywords:
@@ -86,9 +85,9 @@ Your driver must not call [**IoCopyCurrentIrpStackLocationToNext**](https://msdn
 
 For more information about when to call [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387), [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355), and [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), see [Passing IRPs down the Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff558781).
 
- 
+ 
 
- 
+ 
 
 
 

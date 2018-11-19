@@ -21,19 +21,17 @@ Uses Windows Plug and Play features to update the device list for the computer. 
 
 ```
     devcon [/m:\\computer] [/r] rescan 
-
-   
 ```
 
 ## <span id="ddk_devcon_rescan_tools"></span><span id="DDK_DEVCON_RESCAN_TOOLS"></span>Parameters
 
 
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\***computer*   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
 Runs the command on the specified remote computer. The backslashes are required.
 
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
+**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
- 
+
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
@@ -57,9 +55,9 @@ devcon /m:\\Server01 rescan
 
 [Example 37: Scan the computer for new devices](devcon-examples.md#ddk_example_37_scan_the_computer_for_new_devices_tools)
 
- 
 
- 
+
+
 
 
 

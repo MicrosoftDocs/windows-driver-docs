@@ -1,6 +1,5 @@
 ---
 title: Locking and Unlocking Best Practices
-author: windows-driver-content
 description: Locking and Unlocking Best Practices
 ms.assetid: cfa45c0d-4e92-4455-a8f6-17d4806f9c36
 ms.date: 07/18/2018
@@ -41,9 +40,9 @@ The following list contains precautions and guidelines you should follow when wo
 
 -   If a BOOL value is used to control locking, protect this value from multiple threads. When two drivers attempt to lock a single device at the same time, only one driver can succeed.
 
- 
+ 
 
- 
+ 
 
 
 

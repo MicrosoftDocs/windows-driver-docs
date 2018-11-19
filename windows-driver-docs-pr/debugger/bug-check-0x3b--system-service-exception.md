@@ -3,7 +3,6 @@ title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
-ms.author: domars
 ms.date: 09/12/2018
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## SYSTEM\_SERVICE\_EXCEPTION Parameters
 
@@ -55,7 +54,7 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -94,13 +93,13 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

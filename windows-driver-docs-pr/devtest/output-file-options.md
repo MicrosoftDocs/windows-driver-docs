@@ -35,9 +35,9 @@ If you specify the path and file name of an existing output or summary file, Tra
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
 
- 
+ 
 
- 
+ 
 
 
 

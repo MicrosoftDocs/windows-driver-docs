@@ -1,7 +1,7 @@
 ---
 title: Schedule a new report
 description: How to schedule a custom error report based on the report template for the Microsoft Hardware Dev Center.
-author: EliotSeattle
+ms.topic: article
 ms.author: shganesh
 ms.date: 09/01/2018
 ms.localizationpriority: medium

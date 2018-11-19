@@ -1,6 +1,5 @@
 ---
 title: Network Redirectors and the File System Process
-author: windows-driver-content
 description: Network Redirectors and the File System Process
 ms.assetid: 01bdd0d4-d03e-4b3c-ab34-1d5909cde284
 keywords:
@@ -51,9 +50,9 @@ Method 2 is commonly used for processing IRPs that use METHOD\_NEITHER when only
 
 RDBSS only supports asynchronous calls for the **MrxLowIoSubmit** array of operations. If a network mini-redirector wants to implement other operations ([**MRxQueryFileInfo**](https://msdn.microsoft.com/library/windows/hardware/ff550770), for example) as an asynchronous call, the network mini-redirector needs to post the request to the FSP. If a network mini-redirector receives a request for **MrxQueryFileInfo** with the RX\_CONTEXT\_ASYNC\_OPERATION bit set in the **Flags** member of the RX\_CONTEXT structure, the network mini-redirector would need to post this request to the FSP for asynchronous operation. In the operation of the **MrxQueryFileInfo** routine, the network mini-redirector would first need to capture the security context of the user's thread and map the user buffers into kernel space (or set the system worker thread to attach to the user's calling process while executing in the FSP). Then the network mini-redirector would set the **PostRequest** member of the RX\_CONTEXT structure to **TRUE** and return STATUS\_PENDING from the FSD. The work would be dispatched by RDBSS to a work queue for operation by a system worker thread (the FSP).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ndiskd.netpacket
 description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
 ms.assetid: 304BA2CF-B6BC-452C-8543-9B872054AA9E
 keywords: ["ndiskd.netpacket Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
@@ -167,9 +166,9 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
 
- 
+ 
 
- 
+ 
 
 
 

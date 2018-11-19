@@ -1,6 +1,5 @@
 ---
 title: Evaluating a Control Method That Takes Input Arguments
-author: windows-driver-content
 description: Evaluating a Control Method That Takes Input Arguments
 ms.assetid: 3a4be8a8-0906-4d38-bf6d-f245e6ae236a
 ms.date: 04/20/2017
@@ -111,9 +110,9 @@ Return Value:
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

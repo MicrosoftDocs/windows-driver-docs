@@ -1,6 +1,5 @@
 ---
 title: Dispatching Methods for I/O Requests
-author: windows-driver-content
 description: Dispatching Methods for I/O Requests
 ms.assetid: 3e91aa7c-bccf-4eeb-8b68-b1277a690f8c
 keywords:
@@ -56,9 +55,9 @@ To obtain a request from a manual queue, the driver can call [**WdfIoQueueRetrie
 
 After the driver obtains a request from the queue, it must [process the request](processing-i-o-requests.md). The driver must eventually [complete](completing-i-o-requests.md) or [cancel](canceling-i-o-requests.md) each request.
 
- 
+ 
 
- 
+ 
 
 
 

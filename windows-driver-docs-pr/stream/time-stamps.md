@@ -1,6 +1,5 @@
 ---
 title: Time Stamps
-author: windows-driver-content
 description: Time Stamps
 ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
 keywords:
@@ -28,9 +27,9 @@ PStreamObject->HWClockFunction = (PHW_CLOCK_FUNCTION)StreamClockRoutine;
 PStreamObject->ClockSupportFlags = CLOCK_SUPPORT_CAN_READ_ONBOARD_CLOCK | CLOCK_SUPPORT_CAN_RETURN_STREAM_TIME;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

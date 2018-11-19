@@ -3,7 +3,6 @@ title: .echotimestamps (Show Time Stamps)
 description: The .echotimestamps command turns on or turns off the display of time stamp information.
 ms.assetid: c70dc71b-83c2-41de-90f3-638e231c0476
 keywords: ["Show Time Stamps (.echotimestamps) command", "time stamps", "DbgPrint time stamps", ".echotimestamps (Show Time Stamps) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Turns on the display of time stamp information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +73,9 @@ The **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx** kernel-mode rou
 
 When you use **.echotimestamps** to turn on the display of time stamps, the time and date of each comment in the **DbgPrint** buffer is displayed.
 
- 
+ 
 
- 
+ 
 
 
 

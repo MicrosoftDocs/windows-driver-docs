@@ -1,6 +1,5 @@
 ---
 title: SCSI Port's SRB Interface with the Storage Class Driver
-author: windows-driver-content
 description: SCSI Port's SRB Interface with the Storage Class Driver
 ms.assetid: ca30bf9b-6d76-4160-8a4e-54c681dfc843
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ Unlike other port drivers, such as the system-supplied port drivers for the IDE/
 
 For this reason, most aspects of the SRB interface between the storage class driver and SCSI Port are covered in the general documentation for storage class and storage miniport drivers and their accompanying reference materials. For a list of sections related to the SRB interface between the storage class driver and the SCSI Port-miniport driver pair, see [SCSI Port's Interface with SCSI Port Miniport Drivers](scsi-port-s-interface-with-scsi-port-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

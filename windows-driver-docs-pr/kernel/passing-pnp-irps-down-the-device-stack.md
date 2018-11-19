@@ -1,6 +1,5 @@
 ---
 title: Passing PnP IRPs Down the Device Stack
-author: windows-driver-content
 description: Passing PnP IRPs Down the Device Stack
 ms.assetid: 339ef4b4-1b4f-42ac-ab57-c53b83120f0d
 keywords: ["PnP WDK kernel , passing IRPs down device stack", "Plug and Play WDK kernel , passing IRPs down device stack", "IRPs WDK PnP", "I/O request packets WDK PnP", "passing IRPs down device stack WDK", "IoCompletion routine"]
@@ -44,9 +43,9 @@ If a function or filter driver did not fail the IRP, it passes the IRP to the ne
 
 The parent bus driver completes the IRP after performing any tasks to respond to the IRP. After the bus driver calls **IoCompleteRequest**, the I/O manager calls any *IoCompletion* routines registered by the function or filter drivers for the device.
 
- 
+ 
 
- 
+ 
 
 
 

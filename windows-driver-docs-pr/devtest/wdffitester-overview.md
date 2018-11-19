@@ -37,9 +37,9 @@ Because the tool uses the WMI interface, you can run it from a script (vbscript 
 
 Apart from other operations, with the tool's WMI interface you can get a list of DDIs that were called by a specific KMDF driver, and that are waiting on a WMI event that fires every time a DDI fault injection completes successfully.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: version (Show Debugger Version)
 description: The version command displays version information about the debugger and all loaded extension DLLs.
 ms.assetid: 51819d56-c24f-41f2-9090-5787e24ea773
 keywords: ["version (Show Debugger Version) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,9 +20,7 @@ The **version** command displays version information about the debugger and all 
 
 Do not confuse this command with the [**!version (Show DLL Version)**](-version.md) extension command.
 
-```
-version 
-```
+`version`
 
 ## <span id="ddk_cmd_show_debugger_version_dbg"></span><span id="DDK_CMD_SHOW_DEBUGGER_VERSION_DBG"></span>
 
@@ -51,7 +48,7 @@ version
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -60,9 +57,9 @@ version
 
 [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
 
- 
+ 
 
- 
+ 
 
 
 

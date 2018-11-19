@@ -1,6 +1,5 @@
 ---
 title: Introduction to Microsoft STI
-author: windows-driver-content
 description: Introduction to Microsoft STI
 ms.assetid: b329dbbc-28c5-47df-9ced-33180415b7c6
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ Microsoft STI defines several [Still Image COM Interfaces](still-image-com-inter
 
 The next section provides more information about these and other [Microsoft STI Components](microsoft-sti-components.md).
 
- 
+ 
 
- 
+ 
 
 
 

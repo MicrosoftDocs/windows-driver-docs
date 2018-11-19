@@ -1,6 +1,5 @@
 ---
 title: Installing TCP/IP Printers
-author: windows-driver-content
 description: Installing TCP/IP Printers
 ms.assetid: 15339cce-69aa-480d-bfee-11ea509ff5d4
 keywords:
@@ -28,9 +27,9 @@ By using this extended MIB, you can manage updates to printer information withou
 
 For more information about the extended MIB specification, see the [Printer Port Monitor MIB v1.0](http://go.microsoft.com/fwlink/p/?linkid=526286) Printer Working Group document.
 
- 
+ 
 
- 
+ 
 
 
 

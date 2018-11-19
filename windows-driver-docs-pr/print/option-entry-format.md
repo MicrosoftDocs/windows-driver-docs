@@ -1,6 +1,5 @@
 ---
 title: Option Entry Format
-author: windows-driver-content
 description: Option Entry Format
 ms.assetid: defc035a-d571-4bf1-abeb-c7528ba23b81
 keywords:
@@ -29,7 +28,7 @@ To specify a printer option entry in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *OptionName* is either the name of one of the predefined [standard options](standard-options.md) or a customized option name, and *OptionAttributes* is a set of [option attributes](option-attributes.md).
 
@@ -39,9 +38,9 @@ If you repeat an option specification, for example by specifying two or more \**
 
 You can control the order in which options are displayed to the user. See [Specifying Feature and Option Display Order](specifying-feature-and-option-display-order.md).
 
- 
+ 
 
- 
+ 
 
 
 

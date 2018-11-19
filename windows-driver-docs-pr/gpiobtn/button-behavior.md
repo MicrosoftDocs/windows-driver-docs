@@ -1,6 +1,5 @@
 ---
 title: Button behavior
-author: windows-driver-content
 description: This topic describes the expected behavior of hardware buttons.
 ms.assetid: 057A4F21-3514-4CCA-BCE2-279E8228B5A9
 ms.localizationpriority: medium
@@ -67,7 +66,7 @@ This topic describes the expected behavior of hardware buttons.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about button requirements:
 
@@ -132,7 +131,7 @@ Handled by Camera app (focus)
 Camera shutter
 Handled by Camera application
 Launch Camera app / take picture
- 
+ 
 
 ### <span id="Button_combination_behavior_in_Windows_10"></span><span id="button_combination_behavior_in_windows_10"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_10"></span>Button combination behavior in Windows 10
 
@@ -179,7 +178,7 @@ As noted, some button combinations in Windows 10 apply to the [Windows 10 butto
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="button_behavior_in_windows_8.1"></span><span id="BUTTON_BEHAVIOR_IN_WINDOWS_8.1"></span>Button behavior in Windows 8.1
 
@@ -235,7 +234,7 @@ Not applicable
 Camera shutter
 Not supported
 Not applicable
- 
+ 
 
 ### <span id="Button_combination_behavior_in_Windows_8.1"></span><span id="button_combination_behavior_in_windows_8.1"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_8.1"></span>Button combination behavior in Windows 8.1
 
@@ -248,7 +247,7 @@ Not applicable
 | Power + Volume Up   | Not supported             | Take screenshot               |
 | Power + Volume Down | Not supported             | Hardware reset (after 10 sec) |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 [Windows 10 button architecture](https://msdn.microsoft.com/library/windows/hardware/dn957423%28v=vs.85%29.aspx)  

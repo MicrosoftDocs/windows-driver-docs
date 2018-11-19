@@ -1,6 +1,5 @@
 ---
 title: V4 Driver Setup Concepts
-author: windows-driver-content
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 ms.assetid: C1DF5496-14CF-4BF4-B85C-AF1A691C7AF2
 ms.date: 04/20/2017
@@ -29,7 +28,7 @@ For example: 1284\_CID\_FA\_PCL5e\_Laser
 
 If CompatibleIDs are already implemented in existing devices, the print driver should continue to use those CompatibleIDs.
 
-CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](http://msdn.microsoft.com/library/windows/hardware/gg463313.aspx).
+CompatibleIDs are not used in the installation of TCP/IP-based print devices. As a result, users will need to identify an appropriate driver using only the name of the driver. Where print class drivers are concerned, we recommend that manufacturers provide compatibility lists on their web sites for any devices that are supported by a print class driver. For more information about how to implement CompatibleIDs in your hardware, including a full list of rules and restrictions, see [How to Implement Compatible IDs in Printing Devices](https://msdn.microsoft.com/library/windows/hardware/gg463313.aspx).
 
 Microsoft supports a few standard CompatibleIDs in order to support several manufacturer-neutral (standard) print class drivers. The following table shows these standard CompatibleIDs and their associated PDL file types.
 
@@ -40,7 +39,7 @@ Microsoft supports a few standard CompatibleIDs in order to support several manu
 | PCL6               | 1284\_CID\_MS\_PCL6   |
 | PS                 | 1284\_CID\_MS\_PS     |
 
- 
+ 
 
 These standard print class drivers support only a small set of features, so manufacturers that choose to utilize these class drivers should implement enhanced driver configuration, using Bidi to add more specific paper sizes and configuration. The following table shows the features and the associated options supported by the standard print class drivers.
 
@@ -51,7 +50,7 @@ These standard print class drivers support only a small set of features, so manu
 | Media Type | Plain paper       |
 | N-Up       | 1, 2, 4, 6, 9, 16 |
 
- 
+ 
 
 **PrinterDriverID**. The PrinterDriverID is a new identifier that is used to determine the compatibility between drivers for printer sharing, as well as the compatibility between drivers and printer extensions. For example, if the driver on the server specifies a PrinterDriverID in its manifest file and the driver is then shared, clients that connect to this printer will search the local Driver Store and Windows Update for a driver that specifies the same PrinterDriverID in their driver INF. If a match is found, a connection will be made using that driver. Client machines do not filter matching results using the driver name.
 
@@ -133,7 +132,7 @@ c. Solution \#2 – The PnP devnode is extraneous: The setup program removes the
 
 **Driver Ranking**. The introduction of v4 print drivers does not modify the Plug and Play ranking behavior. When a device is plugged in, the available driver with the highest score will be selected. If the selected driver is a print class driver, and there is a better ranked, matching driver on the Windows Update site, then the selected driver will automatically be replaced the next time the user downloads updates for Windows.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](http://msdn.microsoft.com/library/windows/hardware/ff546225.aspx).
+For more information about driver ranking, see [How Windows Ranks Drivers](https://msdn.microsoft.com/library/windows/hardware/ff546225.aspx).
 
 ## Driver Setup Best Practices
 
@@ -177,8 +176,8 @@ c. CompatibleID lines: "Print Class Driver name" = INSTALL\_SECTION,,1284\_CID\_
 2. Print class driver INFs must not define any bus enumerators (for example, WSDPRINT\)
 
 ## Related topics
-[How to Implement Compatible IDs in Printing Devices](http://msdn.microsoft.com/library/windows/hardware/gg463313.aspx)  
-[How Windows Ranks Drivers](http://msdn.microsoft.com/library/windows/hardware/ff546225.aspx)  
+[How to Implement Compatible IDs in Printing Devices](https://msdn.microsoft.com/library/windows/hardware/gg463313.aspx)  
+[How Windows Ranks Drivers](https://msdn.microsoft.com/library/windows/hardware/ff546225.aspx)  
 [Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html)  
 
 

@@ -1,6 +1,5 @@
 ---
 title: GPIO buttons and indicators supplemental testing
-author: windows-driver-content
 description: This topic describes Windows 8.1 test scenarios for hardware buttons and indicators, to ensure an optimal user experience for various form factors.
 ms.assetid: 47E24D50-6007-4CD7-91C5-2D72788106B8
 ms.localizationpriority: medium
@@ -28,21 +27,21 @@ This topic describes Windows 8.1 test scenarios for hardware buttons and indicat
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Test automation tools](test-automation-tools.md)</p></td>
+<td align="left"><p><a href="test-automation-tools.md" data-raw-source="[Test automation tools](test-automation-tools.md)">Test automation tools</a></p></td>
 <td align="left"><p>GPIO test automation uses the MITT platform.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Integration testing](integration-testing.md)</p></td>
+<td align="left"><p><a href="integration-testing.md" data-raw-source="[Integration testing](integration-testing.md)">Integration testing</a></p></td>
 <td align="left"><p>It is important to perform integration testing to ensure an optimal end-to-end user experience</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[GPIO logging and investigations](gpio-logging-and-investigations.md)</p></td>
+<td align="left"><p><a href="gpio-logging-and-investigations.md" data-raw-source="[GPIO logging and investigations](gpio-logging-and-investigations.md)">GPIO logging and investigations</a></p></td>
 <td align="left"><p>This topic describes logging and investigations for GPIO testing.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Buttons under test:
 

@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Support in the XPSDrv Render Module
-author: windows-driver-content
 description: Print Ticket Support in the XPSDrv Render Module
 ms.assetid: ea9bb6a1-b878-4402-a865-adc65d480373
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ Print Ticket processing in the render module of a print driver consists of the f
 
 -   [Print Ticket Parsing](print-ticket-parsing.md)
 
- 
+ 
 
- 
+ 
 
 
 

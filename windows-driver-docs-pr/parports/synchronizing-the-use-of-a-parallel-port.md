@@ -1,6 +1,5 @@
 ---
 title: Synchronizing the Use of a Parallel Port
-author: windows-driver-content
 description: Synchronizing the Use of a Parallel Port
 ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
 keywords:
@@ -38,15 +37,15 @@ The [**IOCTL\_INTERNAL\_PARALLEL\_PORT\_ALLOCATE**](https://msdn.microsoft.com/l
 
 **Note**   The [**PPARALLEL\_TRY\_ALLOCATE\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff544550) callback returns immediately (is nonblocking). If a client uses only the **PPARALLEL\_TRY\_ALLOCATE\_ROUTINE** callback to attempt to allocate a parallel port for which other clients are contending, the parallel port function driver might never allocate the port to the client. To ensure success, a client must use a parallel port allocate request. (The parallel port function driver queues, and subsequently processes, port allocate and device select requests in the order in which the requests are received.)
 
- 
+ 
 
 After the parallel port function driver allocates a parallel port to a client, the client has exclusive access to the port. The client must call the [**PPARALLEL\_FREE\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff544509) callback to free the port. After the client frees the port, the parallel port function driver removes the next request (a port allocate or device select request), if any, from the port's work queue and completes the request.
 
 A client should use the [**PPARALLEL\_QUERY\_WAITERS\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff544532) callback to determine if there are other clients waiting for a parallel port. A client that needs to allocate a port for an extended period of time should periodically call the **PPARALLEL\_QUERY\_WAITERS\_ROUTINE** callback to determine if other clients are waiting to acquire the port, and, if clients are waiting, free the port as soon as possible.
 
- 
+ 
 
- 
+ 
 
 
 

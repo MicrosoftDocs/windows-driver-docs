@@ -3,7 +3,6 @@ title: lookaside
 description: The lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
 ms.assetid: ec343563-f293-4ddf-96c8-69fc7b9b4377
 keywords: ["lookaside list", "lookaside Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -67,7 +66,7 @@ Note that if the current depth of a look-aside list exceeds the maximum depth of
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 !lookaside 0xfffff88001294f80
 
 Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"
@@ -95,9 +94,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

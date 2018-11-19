@@ -1,6 +1,5 @@
 ---
 title: Attaching the Filter Device Object to the Target Device Object
-author: windows-driver-content
 description: Attaching the Filter Device Object to the Target Device Object
 ms.assetid: 1df293db-417a-4fee-afb8-06ab527331fb
 keywords:
@@ -53,11 +52,11 @@ If the call to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library
 
 **Note**   In addition to the control device object pointer (*rawDeviceObject*), [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) returns a pointer to a file object (*fileObject*) that represents the device object in user mode. In the code snippet above, the file object is not needed, so it is closed by calling [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724). It is important to note that decrementing the reference count on the file object returned by **IoGetDeviceObjectPointer** causes the reference count on the device object to be decremented as well. Thus the *fileObject* and *rawDeviceObject* pointers should both be considered invalid after the above call to **ObDereferenceObject**, unless the reference count on the device object is incremented by an additional call to [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678) before **ObDereferenceObject** is called for the file object.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

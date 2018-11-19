@@ -1,6 +1,5 @@
 ---
 title: Microsoft Universal Printer Driver
-author: windows-driver-content
 description: This section shows how to add minidrivers to Unidrv to support different printer models.
 ms.assetid: 1f5d68a1-3552-44a9-a0c5-b3ec5fe22a22
 keywords:
@@ -64,9 +63,9 @@ The Microsoft Universal print driver (Unidrv) is also referred to as the v3 prin
 
 [Adding Forms to the Forms Database](adding-forms-to-the-forms-database.md)
 
- 
+ 
 
- 
+ 
 
 
 

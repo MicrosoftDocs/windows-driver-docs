@@ -52,9 +52,9 @@ To create these display drivers, perform the following steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

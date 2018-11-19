@@ -1,6 +1,5 @@
 ---
 title: Debugging Still Image Components
-author: windows-driver-content
 description: Debugging Still Image Components
 ms.assetid: 587b8db7-7fca-4b70-8901-3adbde07718f
 ms.date: 07/18/2018
@@ -29,7 +28,7 @@ To aid the debugging of vendor-supplied still image components, the still image 
 </tr>
 <tr class="even">
 <td><p><strong>Stimon /r</strong></p></td>
-<td><p>Refreshes the event monitor's device list.</p></td>
+<td><p>Refreshes the event monitor&#39;s device list.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Stimon /t</strong><em>number</em></p></td>

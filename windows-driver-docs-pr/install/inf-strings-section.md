@@ -38,16 +38,16 @@ strkey2 = "    string-with-leading-or-trailing-whitespace     "  |
 <a href="" id="strkey1--strkey2-----"></a>*strkey1*, *strkey2*, ...  
 Each string key in an INF file must specify a unique name that consists of letters, digits, and/or other explicitly visible characters. A % character within such a *strkey* token must be expressed as **%%**.
 
-<a href="" id="some-string----some-string-"></a>*some string* | **"***some string***"**  
+<a href="" id="some-string----some-string-"></a>*some string* | **"**<em>some string</em>**"**  
 Specifies a string, optionally delimited by using double quotation marks characters ("), that contains letters, digits, punctuation, and possibly even certain implicitly visible characters, in particular, internal space and/or tab characters. However, an unquoted string cannot contain an internal double quotation marks ("), semicolon (;), linefeed, return, or any invisible control characters, and it cannot have a backslash (\) as its final character.
 
 <a href="" id="------string-with-leading-or-trailing-whitespace-----------"></a>**"***     string-with-leading-or-trailing-whitespace*     **"** |   
 
-<a href="" id="-very-long-multiline-string----"></a>**"***very-long-multiline-string***"** |   
+<a href="" id="-very-long-multiline-string----"></a>**"**<em>very-long-multiline-string</em>**"** |   
 
-<a href="" id="-string-with-semicolon----"></a>**"***string-with-semicolon***"** |   
+<a href="" id="-string-with-semicolon----"></a>**"**<em>string-with-semicolon</em>**"** |   
 
-<a href="" id="-string-ending-in-backslash---"></a>**"***string-ending-in-backslash***"** |  
+<a href="" id="-string-ending-in-backslash---"></a>**"**<em>string-ending-in-backslash</em>**"** |  
 
 <a href="" id="--double-quoted-string-value--"></a>**"***"double-quoted-string-value"***"**  
 The value specified for a %*strkey*% token *must* be enclosed in double quotation marks (") if it meets any of the following criteria:
@@ -74,16 +74,16 @@ The system INF parser discards the outermost enclosing pair of double quotation 
 Remarks
 -------
 
-Because the system INF parser strips the outermost pair of enclosing double quotation marks from any **"***quoted string***"** defining a %*strkey*% token, many of the system INF files define all %*strkey*% tokens as **"***quoted string***"**s to avoid the unintended loss of leading and trailing whitespaces during INF parsing. The use of **"***quoted string***"**s also ensures that especially long string values that wrap across lines cannot be truncated, and that strings with ending backslashes cannot be concatenated to the next line in the INF file.
+Because the system INF parser strips the outermost pair of enclosing double quotation marks from any **"**<em>quoted string</em>**"** defining a %*strkey*% token, many of the system INF files define all %*strkey*% tokens as **"**<em>quoted string</em><strong>"</strong>s to avoid the unintended loss of leading and trailing whitespaces during INF parsing. The use of **"**<em>quoted string</em><strong>"</strong>s also ensures that especially long string values that wrap across lines cannot be truncated, and that strings with ending backslashes cannot be concatenated to the next line in the INF file.
 
-To create a single international INF file, an INF can have a set of locale-specific **Strings.***LanguageID* sections, as shown in the formal syntax statement. The *LanguageID* extension is a hexadecimal value that is defined as follows:
+To create a single international INF file, an INF can have a set of locale-specific **Strings.**<em>LanguageID</em> sections, as shown in the formal syntax statement. The *LanguageID* extension is a hexadecimal value that is defined as follows:
 
 -   The lower 10 bits contain the primary language ID and the next 6 bits contain the sublanguage ID, as specified by the MAKELANGID macro defined in *Winnt.h*.
 -   The language and sublanguage IDs must match the system-defined values of the Win32 LANG_*XXX* and SUBLANG_*XXX* constants defined in *Winnt.h.*
 
 For example, a *LanguageID* value of 0x0407 represents a primary language ID of LANG_GERMAN (07) with a sublanguage ID of SUBLANG_GERMAN (01).
 
-An INF file can contain only one **Strings** section, along with one **Strings.***LanguageID* section for each *LanguageID* value.
+An INF file can contain only one **Strings** section, along with one **Strings.**<em>LanguageID</em> section for each *LanguageID* value.
 
 Windows selects a single **Strings** section that is used to translate all %*strkey*% tokens for the installation. Depending on the current locale of a particular computer, Windows selects a **Strings** section in the following way:
 
@@ -98,7 +98,7 @@ Although **Strings** sections are the last sections in every INF file, any speci
 
 The use of %*strkey*% tokens within INF files is not restricted to user-visible string values. These tokens can be used in any manner convenient to the INF writer, as long as each token is defined within a **Strings** section. For example, when you write an INF file that requires the specification of several GUIDs, it might be convenient to create a %*strkey*% token for each GUID, by using a meaningful name as a substitute for each such GUID value.
 
-Specifying a set of **%***strkey***% = "{***GUID***}"** values in the INF file's **Strings** section requires you to type each explicit GUID values only once. This can help provide more readable internal INF documentation than by using explicit GUID values throughout the INF file.
+Specifying a set of **%**<em>strkey</em>**% = "{**<em>GUID</em>**}"** values in the INF file's **Strings** section requires you to type each explicit GUID values only once. This can help provide more readable internal INF documentation than by using explicit GUID values throughout the INF file.
 
 All %*strkey*% tokens must be defined within the INF file in which they are referenced. Therefore, for any INF file that has **Include** and **Needs** entries, an included INF must have its own **Strings** section to define all %*strkey*% tokens referenced in that INF.
 
@@ -154,9 +154,9 @@ E = "In particular, Microsoft assumes no liability for any damages that may resu
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Access Control Entry
-author: windows-driver-content
 description: Access Control Entry
 ms.assetid: 4dc72f43-e5a7-441d-8586-f8893b9c1084
 keywords:
@@ -44,9 +43,9 @@ Thus, three of the types are used to control programmatic access to an object, w
 
 A driver may construct an access control entry of ACCESS\_ALLOWED\_ACE\_TYPE using the routine [**RtlAddAccessAllowedAce**](https://msdn.microsoft.com/library/windows/hardware/ff552092). For adding the other types of ACE entries, driver writers must construct their own functions because the WDK does not provide any other support routines.
 
- 
+ 
 
- 
+ 
 
 
 

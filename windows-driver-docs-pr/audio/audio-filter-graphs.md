@@ -43,9 +43,9 @@ The signal that passes through a bridge pin or physical connection can be either
 
 For example, in the preceding figure, the two bridge pins both handle analog signals. The bridge pin on the left transmits the output signal from a DAC (digital-to-analog converter), which drives a speaker. The bridge pin on the right receives the signal from a microphone, which enters an ADC (analog-to-digital converter). However, a bridge pin might also represent an S/PDIF connector on an audio device. In this case, the signal that passes through the bridge pin is digital rather than analog.
 
- 
+ 
 
- 
+ 
 
 
 

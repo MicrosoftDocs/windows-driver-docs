@@ -24,9 +24,9 @@ Also, instead of the driver being responsible for creating internal handles for 
 
 Also, when the application is running, a call is made to [**D3dDestroyDDLocal**](https://msdn.microsoft.com/library/windows/hardware/ff544685) to clean up and destroy any driver data created explicitly for these surfaces. This call is also made before a Direct3D context is created. This is done to ensure that there are no dirty handles associated with any contexts that have not been cleaned up. This is simply a preventative measure that should not actually destroy anything if contexts are properly cleaned up after use.
 
- 
+ 
 
- 
+ 
 
 
 

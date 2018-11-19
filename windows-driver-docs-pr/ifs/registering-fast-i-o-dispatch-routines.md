@@ -1,6 +1,5 @@
 ---
 title: Registering Fast I/O Dispatch Routines
-author: windows-driver-content
 description: Registering Fast I/O Dispatch Routines
 ms.assetid: e559d3f2-be33-4a35-8931-4716e6082fc9
 keywords:
@@ -51,9 +50,9 @@ fastIoDispatch->FastIoQueryOpen = MyLegacyFilterIoQueryOpen;
 DriverObject->FastIoDispatch = fastIoDispatch;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

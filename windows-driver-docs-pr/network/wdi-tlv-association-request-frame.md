@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ASSOCIATION_REQUEST_FRAME
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_REQUEST_FRAME is a TLV that contains the association request that was used for the association.
 ms.assetid: C2323DFE-2B13-4E35-BF9B-4A0B5F3B2076
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the association request that was used for the association. This does not include the 802.11 MAC header. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

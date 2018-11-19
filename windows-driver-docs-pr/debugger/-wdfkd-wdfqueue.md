@@ -3,7 +3,6 @@ title: wdfkd.wdfqueue
 description: The wdfkd.wdfqueue extension displays information about a specified framework queue object and the framework request objects that are in the queue.
 ms.assetid: 100917dc-9ce9-48d6-a285-58ea78a4c2f4
 keywords: ["wdfkd.wdfqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,9 +60,9 @@ Parallel, Power-managed, PowerOff, Can accept, Can dispatch, ExecutionLevelDispa
 
 The queue in the preceding example is configured for parallel dispatching, is power-managed but is currently in the Off state, and can both accept and dispatch requests.
 
- 
+ 
 
- 
+ 
 
 
 

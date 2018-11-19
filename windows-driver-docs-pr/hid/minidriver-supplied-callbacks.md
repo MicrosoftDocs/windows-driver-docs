@@ -1,6 +1,5 @@
 ---
 title: Minidriver-Supplied Callbacks
-author: windows-driver-content
 description: Minidriver-Supplied Callbacks
 ms.assetid: df5bbc1c-988f-4e07-9783-4f380f85c2b6
 keywords:
@@ -23,9 +22,9 @@ Joystick hardware that is not polled or that has nonstandard polling requirement
 
 On request from Msjstick.drv, VJoyD checks for the minidrivers that should be loaded and unloaded. Msjstick.drv makes the request for each device it handles and whenever joyConfigChanged receives a call. Msjstick.drv is initialized for each device it handles during the **Normal** boot sequence, which means that some devices and services may be unavailable to the minidriver at the time it is loaded. Because VJoyD loads minidrivers when they are assigned to a joystick number; not when an application needs to use the device, you should keep the processing to a minimum. You should not start any background processing, shared resource usage, or large-scale memory allocations just because the VxD is loaded. VJoyD starts with DirectX 5.0, and does its initial loading of minidrivers at a later stage in the boot process than the original.
 
- 
+ 
 
- 
+ 
 
 
 

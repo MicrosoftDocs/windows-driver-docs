@@ -41,7 +41,7 @@ The **language** XML element localizes and customizes the items that DPInst disp
 </tbody>
 </table>
 
- 
+ 
 
 ### **Element Information**
 
@@ -53,23 +53,23 @@ The **language** XML element localizes and customizes the items that DPInst disp
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
-<td align="left"><p>[<strong>dpinstTitle</strong>](dpinsttitle-xml-element.md) (zero or one)</p>
-<p>[<strong>eula</strong>](eula-xml-element.md) (zero or one)</p>
-<p>[<strong>eulaHeaderTitle</strong>](eulaheadertitle-xml-element.md) (zero or one)</p>
-<p>[<strong>eulaNoButton</strong>](eulanobutton-xml-element.md) (zero or one)</p>
-<p>[<strong>eulaYesButton</strong>](eulayesbutton-xml-element.md) (zero or one)</p>
-<p>[<strong>finishText</strong>](finishtext-xml-element.md) (zero or one)</p>
-<p>[<strong>finishTitle</strong>](finishtitle-xml-element.md) (zero or one)</p>
-<p>[<strong>headerPath</strong>](headerpath-xml-element.md) (zero or one)</p>
-<p>[<strong>icon</strong>](icon-xml-element.md) (zero or one)</p>
-<p>[<strong>installHeaderTitle</strong>](installheadertitle-xml-element.md) (zero or one)</p>
-<p>[<strong>watermarkPath</strong>](watermarkpath-xml-element.md) (zero or one)</p>
-<p>[<strong>welcomeIntro</strong>](welcomeintro-xml-element.md) (zero or one)</p>
-<p>[<strong>welcomeTitle</strong>](welcometitle-xml-element.md) (zero or one)</p></td>
+<td align="left"><p><a href="dpinsttitle-xml-element.md" data-raw-source="[&lt;strong&gt;dpinstTitle&lt;/strong&gt;](dpinsttitle-xml-element.md)"><strong>dpinstTitle</strong></a> (zero or one)</p>
+<p><a href="eula-xml-element.md" data-raw-source="[&lt;strong&gt;eula&lt;/strong&gt;](eula-xml-element.md)"><strong>eula</strong></a> (zero or one)</p>
+<p><a href="eulaheadertitle-xml-element.md" data-raw-source="[&lt;strong&gt;eulaHeaderTitle&lt;/strong&gt;](eulaheadertitle-xml-element.md)"><strong>eulaHeaderTitle</strong></a> (zero or one)</p>
+<p><a href="eulanobutton-xml-element.md" data-raw-source="[&lt;strong&gt;eulaNoButton&lt;/strong&gt;](eulanobutton-xml-element.md)"><strong>eulaNoButton</strong></a> (zero or one)</p>
+<p><a href="eulayesbutton-xml-element.md" data-raw-source="[&lt;strong&gt;eulaYesButton&lt;/strong&gt;](eulayesbutton-xml-element.md)"><strong>eulaYesButton</strong></a> (zero or one)</p>
+<p><a href="finishtext-xml-element.md" data-raw-source="[&lt;strong&gt;finishText&lt;/strong&gt;](finishtext-xml-element.md)"><strong>finishText</strong></a> (zero or one)</p>
+<p><a href="finishtitle-xml-element.md" data-raw-source="[&lt;strong&gt;finishTitle&lt;/strong&gt;](finishtitle-xml-element.md)"><strong>finishTitle</strong></a> (zero or one)</p>
+<p><a href="headerpath-xml-element.md" data-raw-source="[&lt;strong&gt;headerPath&lt;/strong&gt;](headerpath-xml-element.md)"><strong>headerPath</strong></a> (zero or one)</p>
+<p><a href="icon-xml-element.md" data-raw-source="[&lt;strong&gt;icon&lt;/strong&gt;](icon-xml-element.md)"><strong>icon</strong></a> (zero or one)</p>
+<p><a href="installheadertitle-xml-element.md" data-raw-source="[&lt;strong&gt;installHeaderTitle&lt;/strong&gt;](installheadertitle-xml-element.md)"><strong>installHeaderTitle</strong></a> (zero or one)</p>
+<p><a href="watermarkpath-xml-element.md" data-raw-source="[&lt;strong&gt;watermarkPath&lt;/strong&gt;](watermarkpath-xml-element.md)"><strong>watermarkPath</strong></a> (zero or one)</p>
+<p><a href="welcomeintro-xml-element.md" data-raw-source="[&lt;strong&gt;welcomeIntro&lt;/strong&gt;](welcomeintro-xml-element.md)"><strong>welcomeIntro</strong></a> (zero or one)</p>
+<p><a href="welcometitle-xml-element.md" data-raw-source="[&lt;strong&gt;welcomeTitle&lt;/strong&gt;](welcometitle-xml-element.md)"><strong>welcomeTitle</strong></a> (zero or one)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data contents</strong></p></td>
@@ -82,7 +82,7 @@ The **language** XML element localizes and customizes the items that DPInst disp
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -92,7 +92,7 @@ DPInst also uses this icon for the entries that are added to **Programs and Feat
 
 **Note**  In versions of Windows earlier than Windows Vista, DPInst added these entries to **Add or Remove Programs** in Control Panel.
 
- 
+ 
 
 To customize the items that appear on the wizard pages in the English-only version of DPInst, use a **language** element that specifies the English (Standard) language and include child elements of the **language** element that customize the items. To localize and customize the items that appear on the DPInst wizard pages in the multi-language version of DPInst, use a **language** element that specifies the language and include child elements of the **language** element that customize the items.
 
@@ -142,9 +142,9 @@ If a **dpinstTitle** element is not specified, DPInst displays the default title
 
 [**welcomeTitle**](welcometitle-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

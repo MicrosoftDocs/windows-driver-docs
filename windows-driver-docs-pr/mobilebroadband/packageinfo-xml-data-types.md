@@ -14,9 +14,9 @@ This section describes the XML data types that are defined by the [PackageInfo X
 
 -   [GUIDType](guidtype-packageinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

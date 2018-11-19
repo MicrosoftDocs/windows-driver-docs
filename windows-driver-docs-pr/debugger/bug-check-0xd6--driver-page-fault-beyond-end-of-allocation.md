@@ -3,7 +3,6 @@ title: Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 description: The DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION bug check has a value of 0x000000D6. This indicates the driver accessed memory beyond the end of its pool allocation.
 ms.assetid: 939165dc-3052-4de7-88fd-25d4a7e82945
 keywords: ["Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000D6. This indicates the driver accessed memory beyond the end of its pool allocation.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION Parameters
 
@@ -56,7 +55,7 @@ The DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) *KiBugCheckDriver*.
 
@@ -72,9 +71,9 @@ Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 
- 
+ 
 
- 
+ 
 
 
 

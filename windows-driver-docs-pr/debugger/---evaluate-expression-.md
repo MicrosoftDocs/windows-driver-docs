@@ -3,7 +3,6 @@ title: (Evaluate Expression)
 description: The question mark ( ) command evaluates and displays the value of an expression.Note  A question mark by itself ( ) displays command help.
 ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,8 +20,9 @@ The question mark (**?**) command evaluates and displays the value of an express
 
 **Note**   A question mark by itself ([**?**](---command-help-.md)) displays command help. The **?** *expression* command evaluates the given expression.
 
+```dbgcmd
     ? Expression
-
+```
 
 ## <span id="ddk_cmd_evaluate_expression_dbg"></span><span id="DDK_CMD_EVALUATE_EXPRESSION_DBG"></span>Parameters
 
@@ -53,7 +53,7 @@ Specifies the expression to evaluate.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,7 +82,7 @@ Syntax error at '( "c:\dir\", "*filename*" )
 
 In the first two examples, even though the string does match the pattern, the evaluator is returning a value of **FALSE**. In the third, the evaluator cannot make a comparison because the string ends in a backslash ( \\ ), and so the **\\"** is translated by the evaluator.
 
-To get the evaluator to interpret a string literally, you must use the **@"***String***"** syntax. The following code example shows the correct results:
+To get the evaluator to interpret a string literally, you must use the <strong>@"</strong>*String*<strong>"</strong> syntax. The following code example shows the correct results:
 
 ```console
 0:000> ? $spat( @"c:\dir\name.txt", "*name*" )
@@ -102,9 +102,9 @@ In the preceding examples, the **$spat** MASM operator checks the first string t
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
 
- 
+ 
 
- 
+ 
 
 
 

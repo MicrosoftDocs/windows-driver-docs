@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must indicate support for stream offsets by setting the D3DDEVCAPS2\_STREAMOFFSET capability bit in the **DevCaps2** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

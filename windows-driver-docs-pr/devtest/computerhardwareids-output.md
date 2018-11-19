@@ -36,9 +36,9 @@ Hardware IDs
 
 In this example, the vendor (Contoso Inc.) would typically use the second hardware ID (d7be59e5-29b5-589a-b49d-de7265ef6a7b) for the value of the [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) element in the [PackageInfo XML document](https://msdn.microsoft.com/library/windows/hardware/ff549602) of the vendor's device metadata package.
 
- 
+ 
 
- 
+ 
 
 
 

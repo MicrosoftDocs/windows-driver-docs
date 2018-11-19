@@ -81,7 +81,7 @@ Here is the structure of the string descriptor:
 </tbody>
 </table>
 
- 
+ 
 
 The structure of the Microsoft OS string descriptor is fixed for version 1.00 and has an overall length of 18 bytes. The version number of the Microsoft OS string descriptor is listed in the **qwSignature** field. The information stored in the **bMS\_VendorCode** field must be a single byte value. It will be used to retrieve Microsoft OS feature descriptors, and this byte value is used in the **bmRequestType** field described as follows:
 
@@ -122,7 +122,7 @@ To retrieve the information stored in the string, a standard GET\_DESCRIPTOR req
 </tbody>
 </table>
 
- 
+ 
 
 The **bmRequestType** field is a bitmap composed of three parts—direction of data transfer, descriptor type, and recipient. According to the USB specification, the value of **bmRequestType** is set to 1000 0000b (0x80).
 
@@ -189,7 +189,7 @@ To retrieve a Microsoft OS feature descriptor, a special GET\_MS\_DESCRIPTOR req
 </tbody>
 </table>
 
- 
+ 
 
 The **bmRequestType** field is a bitmap composed of three parts—direction of data transfer, descriptor type, and recipient—and is in accordance with the USB specification. The Microsoft OS feature descriptor is a vendor-specific descriptor and the direction of data transfer is from the device to the host. Therefore, the value of **bmRequestType** is set to 1100 0000b (0xC0).
 
@@ -278,7 +278,7 @@ The header section stores information about the rest of the extended configurati
 </tbody>
 </table>
 
- 
+ 
 
 **Function section**
 
@@ -344,7 +344,7 @@ Here is the format of the function section, including values that should be used
 </tbody>
 </table>
 
- 
+ 
 
 ¹Offset of the custom property section has been reset to zero. To calculate the offset of a field from the beginning of the extended configuration descriptor, add the length of the sections that precede it.
 
@@ -388,7 +388,7 @@ Here is the format of the function section, including values that should be used
 </tbody>
 </table>
 
- 
+ 
 
 -   **bConfiguration** refers to the **bConfiguration** value within the USB configuration descriptor of the configuration that exposes the MBIM function. **bConfiguration** cannot be 1 because that is the default configuration exposing only the CDROM function. **bConfiguration** cannot be greater than 4; that is, the MBIM function should be exposed within the first four configurations.
 -   compatibleID remains the same for all configurations. The subcompatibleID changes based on the configuration
@@ -448,7 +448,7 @@ This table shows a sample multi-configuration scenario. The table lists the func
 </tbody>
 </table>
 
- 
+ 
 
 The following tables show the values used by the Microsoft OS string descriptor and the Microsoft OS extended configuration feature descriptor for the previous sample’s multi-configuration scenario.
 
@@ -497,7 +497,7 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 *Example Microsoft OS extended configuration feature descriptor header*
 
@@ -550,7 +550,7 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 *Example Microsoft OS extended configuration feature descriptor function*
 
@@ -603,13 +603,13 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 ²Offset of the custom property section has been reset to zero. To calculate the offset of a field from the beginning of the extended configuration descriptor, add the length of the sections that precede it.
 
- 
+ 
 
- 
+ 
 
 
 

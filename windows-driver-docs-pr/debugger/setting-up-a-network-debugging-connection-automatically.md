@@ -3,7 +3,6 @@ title: Setting Up KDNET Network Kernel Debugging Automatically
 description: Use KDNET to configure network kernel debugging automatically for the Windows debuggging tools.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.author: domars
 ms.date: 09/25/2018
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 3. In the command output, locate the IPv4 address of the Ethernet adapter.
 
-    ```
+    ```console
     ...
 
     Ethernet adapter Ethernet:
@@ -36,7 +35,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
     ```
 4. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
- 
+ 
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Host and Target Computers
 
@@ -46,7 +45,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 2. Locate the *kdnet.exe* and *VerifiedNICList.xml* files. By default, they are located here.
 
-   ```
+   ```console
    C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
    ```
 
@@ -68,7 +67,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 5. On the target computer, open a Command Prompt window as Administrator. Enter this command to verify that the target computer has a supported network adapter.
 
-   ```
+   ```console
    C:\KDNET>kdnet
    Network debugging is supported on the following NICs:
    busparams=1.0.0, Broadcom NetXtreme Gigabit Ethernet, Plugged in.  
@@ -79,7 +78,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 7. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address or the name of the host system. Pick a unique port address for each target/host pair that you work with, with in the recommended range of 50000-50039.
 
-   ```
+   ```console
    C:\>kdnet <HostComputerIPAddress> <YourDebugPort> 
    
    Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
@@ -95,7 +94,7 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where <YourPort> is the port you selected above, and <YourKey> is the key that was returned by kdnet above. Paste in the key in that you saved to in the notepad .txt file earlier.
 
-   ```
+   ```console
   windbg -k net:port=<YourDebugPort>,key=<YourKey> 
    ```
 
@@ -108,7 +107,7 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 Once the debugger is connected, reboot the target computer. One way to do restart the PC, is to use this command from an administrator's command prompt.
 
-   ```
+   ```console
    shutdown -r -t 0 
    ```
 
@@ -132,7 +131,7 @@ The  debugger  must have access through the firewall. Use Control Panel to allow
 
 If the debugger times out and does not connect, use the ping command on the target PC to verify connectivity. 
 
-   ```
+   ```console
    C:\>Ping <HostComputerIPAddress> 
    ```
 
@@ -155,7 +154,7 @@ The host computer can use any network adapter, but the target computer must use 
 ## <span id="related_topics"></span>Related topics
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
- 
+ 
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 
@@ -163,7 +162,7 @@ The host computer can use any network adapter, but the target computer must use 
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
 
- 
+ 
 
 
 

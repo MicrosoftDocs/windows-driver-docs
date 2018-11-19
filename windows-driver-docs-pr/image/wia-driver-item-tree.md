@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Item Tree
-author: windows-driver-content
 description: WIA Driver Item Tree
 ms.assetid: 67232179-4b9b-49a0-b8b0-5ed0914d4156
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ Going through the WIA service, an application uses an item to perform such tasks
 
 Applications can call the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method to acquire data from an item by requesting a data transfer from the item.
 
- 
+ 
 
- 
+ 
 
 
 

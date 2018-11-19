@@ -93,16 +93,16 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_DeinterlaceQueryModeCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563956) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563956" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceQueryModeCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563956)"><strong>DXVA_DeinterlaceQueryModeCaps</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_DeinterlaceCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563939) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563939" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563939)"><strong>DXVA_DeinterlaceCaps</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -139,9 +139,9 @@ Requirements
 
 [**DXVA\_VideoDesc**](https://msdn.microsoft.com/library/windows/hardware/ff564070)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ The ISCSI\_DiscoveredTargetPortal2 WMI class is an unpublished class that is def
 
 When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal2**](https://msdn.microsoft.com/library/windows/hardware/ff561511) data structure
 
- 
+ 
 
- 
+ 
 
 
 

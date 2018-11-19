@@ -1,6 +1,5 @@
 ---
 title: Changing BDA Filter Properties
-author: windows-driver-content
 description: Changing BDA Filter Properties
 ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
 keywords:
@@ -118,9 +117,9 @@ errExit:
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

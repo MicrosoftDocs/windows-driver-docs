@@ -1,6 +1,5 @@
 ---
 title: Basic Scanning for Film Scanners
-author: windows-driver-content
 description: Basic Scanning for Film Scanners
 ms.assetid: ca25c14d-120e-4e53-9d57-ba5663536bae
 ms.date: 04/20/2017
@@ -60,9 +59,9 @@ The driver normally performs the following operations when it uses the scanner's
 
 The WIA properties that are located on the film scanner item should be used by the driver as settings to be applied to the film scanning part of the scanner before the scan. The WIA application is required to always trust the headers of the data that is returned by the WIA driver. For example, the scanner has determined that it cannot scan the specified image width and needs to round up the value. The driver should update the image headers with the updated width information so that the application has the proper data. The WIA driver should always update the WIA property set with the actual data information that is returned from the device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_GEN_PORT_AUTHENTICATION_PARAMETERS
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_GEN_PORT_AUTHENTICATION_PARAMETERS GUID for the NDIS WMI interface.
 ms.assetid: a61e972b-0969-4ee8-ad57-cf88beda962d
 keywords:

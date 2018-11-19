@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise 4 Defining Variants of Constructs
-author: windows-driver-content
 description: GDL Exercise 4 Defining Variants of Constructs
 ms.assetid: b923b5f8-6e60-44a0-a38e-8bfa315281c5
 keywords:
@@ -156,9 +155,9 @@ The following derived option template further specializes properties of the temp
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

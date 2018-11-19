@@ -1,6 +1,5 @@
 ---
 title: Technique 2 Using IoIs32bitProcess
-author: windows-driver-content
 description: Technique 2 Using IoIs32bitProcess
 ms.assetid: 41e9c0e6-59dd-4e01-9c82-5aba40d8b97f
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
@@ -94,9 +93,9 @@ else
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

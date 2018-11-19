@@ -1,6 +1,5 @@
 ---
 title: Checking Flags in the Device Object
-author: windows-driver-content
 description: Checking Flags in the Device Object
 ms.assetid: f7bff7b8-bd30-4489-ab3f-ca5ad4d5c1ba
 keywords: ["removable media WDK kernel , flag checking", "flags WDK removable media", "checking device object flags", "verifying device object flags"]
@@ -24,9 +23,9 @@ For each IRP requesting an I/O operation to/from removable media, a removable-me
 
 If a removable-media device driver does not fail IRPs when DO\_VERIFY\_VOLUME is set and SL\_OVERRIDE\_VERIFY\_VOLUME is not set for the preceding transfer requests, the file system can neither maintain the integrity of cached file data nor cause the user to be prompted to remount the media that holds an open file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Physical Configuration of Devices Attached to a Parallel Port
-author: windows-driver-content
 description: Physical Configuration of Devices Attached to a Parallel Port
 ms.assetid: ae90fcc6-7ea8-4cb1-89a1-1fbf1ad5c05e
 keywords:
@@ -71,7 +70,7 @@ The following table specifies the number of IEEE 1284.3 devices that are support
 </tbody>
 </table>
 
- 
+ 
 
 For more information about supporting IEEE 1284.3 devices, see:
 
@@ -79,9 +78,9 @@ For more information about supporting IEEE 1284.3 devices, see:
 
 [Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port](selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parallel-p.md)
 
- 
+ 
 
- 
+ 
 
 
 

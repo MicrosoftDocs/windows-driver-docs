@@ -1,6 +1,5 @@
 ---
 title: V4 Printer Driver Property Bags
-author: windows-driver-content
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 ms.assetid: 4E20303A-BEB3-4928-BA5A-356D978FA2BE
 ms.date: 04/20/2017
@@ -30,7 +29,7 @@ The following table provides an overview of how to use different components to o
 <tbody>
 <tr class="odd">
 <td>JavaScript constraint script</td>
-<td>The driver and queue property bags are passed to JavaScript constraint scripts using the scriptContext parameter. This parameter is of type [<strong>IPrinterScriptContext</strong>](https://msdn.microsoft.com/library/windows/hardware/hh768279) and contains children:
+<td>The driver and queue property bags are passed to JavaScript constraint scripts using the scriptContext parameter. This parameter is of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh768279" data-raw-source="[&lt;strong&gt;IPrinterScriptContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh768279)"><strong>IPrinterScriptContext</strong></a> and contains children:
 DriverProperties – refers to the driver property bag.
 QueueProperties – refers to the queue property bag.
 UserProperties – The user property bag.
@@ -44,21 +43,21 @@ QueueProperties – refers to the queue property bag.</td>
 </tr>
 <tr class="odd">
 <td>Printer extension app</td>
-<td>All property bags are passed in as part of the [<strong>IPrinterExtensionEventArgs</strong>](https://msdn.microsoft.com/library/windows/hardware/hh973207) parameter to the OnDriverEvent handler. They are all of type <strong>IPrinterPropertyBag</strong>. They are specified as the following:
+<td>All property bags are passed in as part of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh973207" data-raw-source="[&lt;strong&gt;IPrinterExtensionEventArgs&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh973207)"><strong>IPrinterExtensionEventArgs</strong></a> parameter to the OnDriverEvent handler. They are all of type <strong>IPrinterPropertyBag</strong>. They are specified as the following:
 DriverProperties – refers to the driver property bag.
 UserProperties – The user property bag.
 PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="even">
 <td>UWP device app</td>
-<td>All property bags are passed in during activation using the [<strong>IPrinterExtensionContext</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406649) object. They are specified as:
+<td>All property bags are passed in during activation using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406649" data-raw-source="[&lt;strong&gt;IPrinterExtensionContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406649)"><strong>IPrinterExtensionContext</strong></a> object. They are specified as:
 DriverProperties – refers to the driver property bag.
 UserProperties – The user property bag.
 PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="odd">
 <td>XPS rendering filter</td>
-<td><p>XPS filters can access the driver property bag from within the [<strong>Print Filter Pipeline Property Bag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561066) using the property name &quot;DriverPropertyBag&quot;, or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
+<td><p>XPS filters can access the driver property bag from within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561066" data-raw-source="[&lt;strong&gt;Print Filter Pipeline Property Bag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561066)"><strong>Print Filter Pipeline Property Bag</strong></a> using the property name &quot;DriverPropertyBag&quot;, or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
 <strong>Property type:</strong> VT_UNKNOWN
 <strong>Description:</strong> A pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrinterPropertyBag interface to the driver property bag.
 <p>And XPS filters can access the queue property bag from within the Print Filter Pipeline Property Bag using the property name &quot;QueuePropertyBag&quot;, or the defined value XPS_FP_QUEUE_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about QueuePropertyBag:</p>
@@ -68,7 +67,7 @@ PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tbody>
 </table>
 
- 
+
 
 In JavaScript implementations, property bags are passed in as parameters. In printer extension applications, property bags are passed in as members of the event argument used to start the application.
 
@@ -86,9 +85,9 @@ The Windows Driver Kit includes a template project for a driver property bag. Th
 
 The user property bag allows partners to store settings in a per-user, machine local context. This property bag is well suited as a storage mechanism for user preferences like "Don't show this again". This property bag is not manageable by administrators and is not synchronized between client and server during printer sharing. The user property bag is only set at runtime and is only available to the printer extensions, UWP device apps, and JavaScript constraints.
 
-**Note**  Since JavaScript constraints may also be called outside of a user context, during despooling, the user property bag is unavailable at this time and Windows will return HRESULT\_FROM\_WIN32(ERROR\_NOT\_FOUND).
+**Note**  Since JavaScript constraints may also be called outside of a user context, during despooling, the user property bag is unavailable at this time and Windows will return HRESULT\_FROM\_WIN32(ERROR\_NOT\_FOUND).
 
- 
+
 
 ## DEVMODE Property Bag
 
@@ -130,13 +129,14 @@ The queue property bag is created automatically for many v4 print drivers, but d
 3. Specify a queue property bag in the driver manifest using the QueueProperties directive.
 
 Administrators configure queue property bags using PowerShell. The following command-lets (cmdlets) are children of a printer object, that can be obtained using the Get-Printer cmdlet.
+
 | Cmdlet Name                                                                                                  | Description                                                             |
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Get-PrinterProperty -printerName &lt;printerName&gt; -name &lt;propertyName\*&gt;                            | Retrieves one or more properties (-name supports globbing)              |
 | Set-PrinterProperty -inputObject &lt;printerPropertyObject&gt;                                               | Changes a print queue property using a persisted printerPropertyObject. |
 | set-PrinterProperty -printerName &lt;printerName&gt; -PropertyName &lt;propertyName&gt; -Value &lt;value&gt; | Changes the property specified to the value specified.                  |
 
- 
+
 
 **Installable options**. These options, for example, the state of a duplexer, will be exposed into the queue property bag as individual properties. Each property will be named as follows, where the feature name is based on the name of the feature from the driver’s GPD or PPD file:
 
@@ -146,9 +146,9 @@ For example, Config:DuplexUnit
 
 The value of the property is the keyword name for the option that has been selected by the administrator. For example, Installed. Installable options are editable using the same Set-PrinterProperty cmdlet that is used for queue properties.
 
-**Note**  Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a UWP device app.
+**Note**  Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a UWP device app.
 
- 
+
 
 **Form to Tray Mappings**. For printers with a v4 print driver, and with more than one tray, "form to tray" mappings are exposed via the queue property bag in the property named “FormTrayTable”.
 

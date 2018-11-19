@@ -1,6 +1,5 @@
 ---
 title: WdfObjectIsCustomType macro
-author: windows-driver-content
 description: The WdfObjectIsCustomType macro determines whether a framework object is of a specified custom type.
 ms.assetid: EE3CC41D-6FBA-49A2-A2A0-C7E818F6FAAA
 keywords:
@@ -56,7 +55,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -84,9 +83,9 @@ Requirements
 
 [**WdfObjectGetCustomTypeData**](wdfobjectgetcustomtypedata.md)
 
- 
+ 
 
- 
+ 
 
 
 

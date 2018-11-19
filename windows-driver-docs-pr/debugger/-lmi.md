@@ -3,7 +3,6 @@ title: lmi
 description: The lmi extension displays detailed information about a module.
 ms.assetid: 00438edf-618a-401e-818f-24add7861487
 keywords: ["lmi Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies a loaded module, either by name or by base address.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -94,9 +93,9 @@ Debug Data Dirs: Type Size     VA  Pointer
 
 For an explanation of the abbreviations shown on the **Characteristics** line of this example, see [Symbol Status Abbreviations](symbol-status-abbreviations.md).
 
- 
+ 
 
- 
+ 
 
 
 

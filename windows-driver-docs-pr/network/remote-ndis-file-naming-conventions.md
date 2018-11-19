@@ -45,20 +45,20 @@ In order to support legacy Remote NDIS devices, multiple Remote NDIS drivers hav
 <li><p>Windows Server 2003 SP1 (x86, x64, ia64) and later</p></li>
 <li><p>Windows Vista (x86, x64) and later</p></li>
 </ul>
-<p>The Rndismpx.sys and Usb8023x.sys binaries ship as part of the operating system. The Netrndis.inf file is an internal file that is part of the operating system. All these files must be referenced by the IHV-provided INF file as described in [Remote NDIS INF Template](remote-ndis-inf-template.md).</p></td>
+<p>The Rndismpx.sys and Usb8023x.sys binaries ship as part of the operating system. The Netrndis.inf file is an internal file that is part of the operating system. All these files must be referenced by the IHV-provided INF file as described in <a href="remote-ndis-inf-template.md" data-raw-source="[Remote NDIS INF Template](remote-ndis-inf-template.md)">Remote NDIS INF Template</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Remote NDIS is not supported on Windows 98/Me/SE or prior versions.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

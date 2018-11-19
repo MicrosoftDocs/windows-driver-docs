@@ -3,7 +3,6 @@ title: u, ub, uu (Unassemble)
 description: The u* commands display an assembly translation of the specified program code in memory. This command should not be confused with the ~u (Unfreeze Thread) command.
 ms.assetid: 933a308c-61d1-4ca4-89c1-5749ba1b41c1
 keywords: ["u, ub, uu (Unassemble) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -17,11 +16,11 @@ ms.localizationpriority: medium
 # u, ub, uu (Unassemble)
 
 
-The **u\*** commands display an assembly translation of the specified program code in memory.
+The **u\\*** commands display an assembly translation of the specified program code in memory.
 
 This command should not be confused with the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
-```
+```dbgcmd
 u[u|b] Range 
 u[u|b] Address
 u[u|b] 
@@ -65,7 +64,7 @@ Specifies that the disassembly will continue even if there is a memory read erro
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -78,9 +77,9 @@ If you do not specify a parameter for the **u** command, the disassembly begins 
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -246,7 +246,7 @@ These definitions are necessary as they help to solve padding issues with struct
 
 **Note**  Order matters here. All data offsets are implied based on the property group description, and data is written/parsed in the order it is defined here. These structures have to be defined here.
 
- 
+ 
 
 ## Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
 
@@ -315,9 +315,9 @@ There are several possible property types (struct fields).
 </propertyGroup>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

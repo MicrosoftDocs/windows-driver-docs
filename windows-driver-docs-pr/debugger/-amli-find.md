@@ -3,7 +3,6 @@ title: amli find
 description: The amli find extension finds an ACPI namespace object.
 ms.assetid: bacb1be2-f079-49da-a8d2-1e9821b20ed3
 keywords: ["amli find Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,7 +20,9 @@ The **!amli find** extension finds an ACPI namespace object.
 
 Syntax
 
+```dbgcmd
     !amli find Name
+```
 
 ## <span id="ddk__amli_find_dbg"></span><span id="DDK__AMLI_FIND_DBG"></span>Parameters
 
@@ -69,9 +70,9 @@ AMLI(? for help)-> find _bst
 \_SB.PCI0.ISA.BAT2._BST
 ```
 
- 
+ 
 
- 
+ 
 
 
 

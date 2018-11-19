@@ -1,6 +1,5 @@
 ---
 title: Package-Aware Print Drivers
-author: windows-driver-content
 description: Package-Aware Print Drivers
 ms.assetid: f2ab38b9-410c-4dd8-bb81-4a8e0e48317a
 keywords:
@@ -26,9 +25,9 @@ This section includes:
 
 [Package-Aware Print Drivers that Share Files](package-aware-print-drivers-that-share-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -117,9 +117,9 @@ The main function in the preceding code example creates a [**WAVEFORMATEXTENSIBL
 
 The PrintSerializedFormat function in the preceding code example serializes the format description and prints the serialized format description as REG\_BINARY data. You can copy the printed output produced by the function and paste it into your INF file.
 
- 
+ 
 
- 
+ 
 
 
 

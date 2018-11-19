@@ -3,7 +3,6 @@ title: ndiskd.help
 description: The ndiskd.help command displays a list of available ndiskd commands with a brief description of each one.
 ms.assetid: ba9a1364-173b-4258-9894-09271e47786e
 keywords: ["ndiskd.help Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -50,15 +49,14 @@ NDIS KD EXTENSIONS
 
     Show more extensions
     View examples & tutorials online
-
 ```
 
 By using **!ndiskd.help -all**, you'll get a more detailed list, as shown in the following example.
 
-**Note**  
+**Note**  
 Some alternate commands are listed at the bottom of this example. These commands are available for NDIS driver developers who have used them before but we recommend using the primary commands instead.
 
- 
+
 
 ```console
 3: kd> !ndiskd.help -all
@@ -131,9 +129,9 @@ NDIS KD EXTENSIONS
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
- 
 
- 
+
+
 
 
 

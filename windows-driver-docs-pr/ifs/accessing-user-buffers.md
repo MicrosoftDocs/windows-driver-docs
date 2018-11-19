@@ -1,6 +1,5 @@
 ---
 title: Accessing User Buffers
-author: windows-driver-content
 description: Accessing User Buffers
 ms.assetid: 5ab32074-0949-4cdc-8a95-1bded0085ce1
 keywords:
@@ -32,9 +31,9 @@ The filter manager provides the following support routines for accessing user bu
 
 [**FltLockUserBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff543371)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT
-author: windows-driver-content
 description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT is a TLV that contains information about an Action Frame that was sent to a peer.
 ms.assetid: DA469DF2-4C59-495C-A4B5-DC7B3B157566
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT\_PARAMETERS**](wdi-tlv-p2p-send-action-frame-result-parameters.md) |                                |          | The Wi-Fi Direct send Action Frame result parameters. |
 | [**WDI\_TLV\_P2P\_ACTION\_FRAME\_IES**](wdi-tlv-p2p-action-frame-ies.md)                                         |                                |          | The set of IEs sent to the remote device.             |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

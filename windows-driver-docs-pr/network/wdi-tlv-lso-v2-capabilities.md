@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_LSO_V2_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_LSO_V2_CAPABILITIES is a TLV that contains Large Send Offload V2 capabilities.
 ms.assetid: 6F7C83BA-B004-431F-90AF-AD7DE1B13546
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_IPV4\_LSO\_V2**](wdi-tlv-ipv4-lso-v2.md) |                                |          | Large Send Offload V2 capabilities for IPv4. |
 | [**WDI\_TLV\_IPV6\_LSO\_V2**](wdi-tlv-ipv6-lso-v2.md) |                                |          | Large Send Offload V2 capabilities for IPv6. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

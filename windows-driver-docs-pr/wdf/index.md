@@ -1,6 +1,5 @@
 ---
 title: What's New for WDF Drivers in Windows 10
-author: windows-driver-content
 description: Summarizes new features and improvements for WDF drivers in Windows 10.
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
 keywords:
@@ -11,7 +10,6 @@ keywords:
 - framework-based drivers WDK KMDF , about framework-based drivers
 - objects WDK KMDF
 - framework objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -55,19 +53,19 @@ In Windows 10, version 1703, WDF includes the following enhancements:
     To start monitoring, add the following registry values under:
     `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\<driver service>\Parameters\wdf`
     
-    1.  Add a DWORD value named **ObjectLeakDetectionLimit** with the threshold value. This is the maximum number of objects of the types described in the **ObjectsForLeakDetection** key.
+  1. Add a DWORD value named **ObjectLeakDetectionLimit** with the threshold value. This is the maximum number of objects of the types described in the **ObjectsForLeakDetection** key.
     
-    2.  Add a new REG_MULTI_SZ value named **ObjectsForLeakDetection** that lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string.
+  2. Add a new REG_MULTI_SZ value named **ObjectsForLeakDetection** that lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string.
 
-    3. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [DbgBreakOnError](using-kmdf-verifier.md) key.
+  3. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [DbgBreakOnError](using-kmdf-verifier.md) key.
 
-    By default, if the ObjectsForLeakDetection key is not specified, the framework monitors WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
+     By default, if the ObjectsForLeakDetection key is not specified, the framework monitors WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
     
-    The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the WDF Verifier limit is three times the value specified in **ObjectLeakDetectionLimit**.
+     The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the WDF Verifier limit is three times the value specified in **ObjectLeakDetectionLimit**.
     
-    If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates.
+     If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates.
     
-    This feature does not currently support tracking the WDFMEMORY object type. 
+     This feature does not currently support tracking the WDFMEMORY object type. 
 
 * SleepStudy tool provides info on KMDF drivers
 
@@ -165,9 +163,9 @@ New support has been added for USB drivers in UMDF. A UMDF 2 USB driver no longe
 
 -   UMDF provides improved buffer mapping for HID transfers.
 
- 
+ 
 
- 
+ 
 
 
 

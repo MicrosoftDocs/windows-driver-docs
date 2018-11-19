@@ -1,6 +1,5 @@
 ---
 title: Using IoCompletion Routines
-author: windows-driver-content
 description: Using IoCompletion Routines
 ms.assetid: 07a6e930-eef0-4408-9f71-55a827aa558e
 keywords: ["IoCompletion routines", "completing IRPs WDK kernel , IoCompletion routines", "completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
@@ -28,9 +27,9 @@ This section contains the following topics:
 
 [Implementing an IoCompletion Routine](implementing-an-iocompletion-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

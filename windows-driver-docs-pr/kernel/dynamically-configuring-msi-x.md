@@ -1,6 +1,5 @@
 ---
 title: Dynamically Configuring MSI-X
-author: windows-driver-content
 description: Dynamically Configuring MSI-X
 ms.assetid: 53051239-e00f-41e8-b95d-9618693e696d
 ms.localizationpriority: medium
@@ -22,9 +21,9 @@ Drivers use the interface by sending an [**IRP\_MN\_QUERY\_INTERFACE**](https://
 
 By default, the interrupt table is configured so that the first entry has message ID zero, the second entry has message ID one, and so on. If the number of table entries exceeds the number of messages, each additional table entry is assigned message ID zero. (The message ID is the index for the interrupt's entry in the **MessageInfo** member of the [**IO\_INTERRUPT\_MESSAGE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550576) structure that describes the driver's message-signaled interrupts. The [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) routine supplies a pointer to this structure.)
 
- 
+ 
 
- 
+ 
 
 
 

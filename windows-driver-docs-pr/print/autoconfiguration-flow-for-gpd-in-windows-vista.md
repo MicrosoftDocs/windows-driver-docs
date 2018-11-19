@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration Flow for GPD in Windows Vista
-author: windows-driver-content
 description: Autoconfiguration Flow for GPD in Windows Vista
 ms.assetid: 41468218-fa05-4431-a57d-3056449f2e2e
 keywords:
@@ -29,9 +28,9 @@ Autoconfiguration follows the following sequence:
 
 7.  Your plug-in will update the driver UI according to the latest configuration.
 
- 
+ 
 
- 
+ 
 
 
 

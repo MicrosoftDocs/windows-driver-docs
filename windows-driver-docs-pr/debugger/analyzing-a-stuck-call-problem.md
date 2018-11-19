@@ -3,7 +3,6 @@ title: Analyzing a Stuck Call Problem
 description: Analyzing a Stuck Call Problem
 ms.assetid: e1a80cde-cf83-4a16-ae4b-5ddd5eb77b6d
 keywords: ["RPC debugging, stuck call"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -125,11 +124,11 @@ It is possible that the thread was making another RPC call. If necessary, you ca
 
 **Note**   This procedure shows how to find the server thread if you know the client thread. For an example of the reverse technique, see [Identifying the Caller From the Server Thread](identifying-the-caller-from-the-server-thread.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

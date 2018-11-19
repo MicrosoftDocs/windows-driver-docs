@@ -3,7 +3,6 @@ title: .fiximports (Fix Target Module Imports)
 description: The .fiximports command validates and corrects all static import links for a target module.
 ms.assetid: 584a5060-5ab5-4126-bfec-e2fe647d50ff
 keywords: ["Fix Target Module Imports (.fiximports) command", ".fiximports (Fix Target Module Imports) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the target module whose imports the debugger corrects. *Module* can co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -61,9 +60,9 @@ You can use the **.fiximports** command only when the target is a minidump that 
 
 When the debugger maps images for use as memory, the debugger does not automatically connect image imports to exporters. Therefore, instructions that refer to imports are disassembled in the same manner as in a live debugging session. You can use **.fiximports** to request that the debugger perform the appropriate import linking.
 
- 
+ 
 
- 
+ 
 
 
 

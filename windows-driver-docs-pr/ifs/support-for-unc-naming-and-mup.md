@@ -1,6 +1,5 @@
 ---
 title: Support for UNC Naming and MUP
-author: windows-driver-content
 description: Support for UNC Naming and MUP
 ms.assetid: 07c4a498-10c7-41b2-aaeb-73cab946f392
 keywords:
@@ -84,7 +83,7 @@ MUP performs prefix resolution by issuing an [**IOCTL\_REDIR\_QUERY\_PATH**](htt
 </tbody>
 </table>
 
- 
+
 
 The IOCTL and the data structures are defined in *ntifs.h*. The buffers are allocated from non-paged pool.
 
@@ -122,12 +121,12 @@ typedef struct _QUERY_PATH_REQUEST {
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FilePathName</strong></p></td>
-<td align="left"><p>A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&lt;path&gt;. The length of the string, in bytes, is specified by the <strong>PathNameLength</strong> member.</p></td>
+<td align="left"><p>A non-NULL terminated Unicode string of the form &amp;lt;server&gt;&amp;lt;share&gt;&amp;lt;path&gt;. The length of the string, in bytes, is specified by the <strong>PathNameLength</strong> member.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 UNC providers should use the QUERY\_PATH\_RESPONSE data structure for the response information.
 
@@ -156,7 +155,7 @@ typedef struct _QUERY_PATH_RESPONSE {
 </tbody>
 </table>
 
- 
+
 
 Note that IOCTL\_REDIR\_QUERY\_PATH is a METHOD\_NEITHER IOCTL. This means that the input and output buffers might not be at the same address. A common mistake by UNC providers is to assume that the input buffer and the output buffer are the same and use the input buffer pointer to provide the response.
 
@@ -212,7 +211,6 @@ The order in which providers are queried during prefix resolution is controlled 
 
 ```cpp
 HKLM\System\CurrentControlSet\Control\NetworkProvider\Order
- 
 ```
 
 Individual provider names in the ProviderOrder registry value are separated by commas without any leading or trailing white space.
@@ -249,9 +247,9 @@ On Windows XP Service Pack 2 and later and on Windows Server 2003 Service Pack 1
 
 The primary reason this behavior was changed is that a "serial prefix resolution" scheme prevents cases of a network redirector with lower priority in the ProviderOrder value from causing performance issues for a network redirector of higher priority in the ProviderOrder value. For example, consider a remote server, with a firewall in place, configured to block certain types of TCP/IP packets (access to HTTP, for example), but to allow others (SMB access, for example). In this case, even if the SMB network redirector is configured as the first provider in the ProviderOrder value and claims the prefix quickly, the WebDAV redirector might significantly delay the completion of the prefix resolution by waiting for the TCP connection to timeout.
 
- 
 
- 
+
+
 
 
 

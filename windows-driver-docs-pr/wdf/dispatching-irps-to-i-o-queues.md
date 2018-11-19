@@ -1,6 +1,5 @@
 ---
 title: Dispatching IRPs to I/O Queues
-author: windows-driver-content
 description: Dispatching IRPs to I/O Queues
 ms.assetid: 71872114-2A38-47FE-9D18-EF8923273811
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ Typically, a driver calls [**WdfDeviceWdmDispatchIrpToIoQueue**](https://msdn.mi
 
 **Note**  A UMDF driver can supply a [*EvtDeviceWdmIrpDispatch*](https://msdn.microsoft.com/library/windows/hardware/hh406404) callback function, but only KMDF drivers can provide [*EvtDeviceWdmIrpPreprocess*](https://msdn.microsoft.com/library/windows/hardware/ff540925).
 
- 
+ 
 
 If your driver already provides [*EvtDeviceWdmIrpPreprocess*](https://msdn.microsoft.com/library/windows/hardware/ff540925), you can use it to dynamically select a queue. If not, provide [*EvtDeviceWdmIrpDispatch*](https://msdn.microsoft.com/library/windows/hardware/hh406404) and call [**WdfDeviceWdmDispatchIrpToIoQueue**](https://msdn.microsoft.com/library/windows/hardware/hh451105) from within that callback function.
 
@@ -55,9 +54,9 @@ To dispatch IRPs from a driver's [*EvtDeviceWdmIrpPreprocess*](https://msdn.micr
 3.  From [*EvtDeviceWdmIrpPreprocess*](https://msdn.microsoft.com/library/windows/hardware/ff540925), call [**WdfDeviceWdmDispatchIrpToIoQueue**](https://msdn.microsoft.com/library/windows/hardware/hh451105) with *Flags* set to WDF\_FORWARD\_IRP\_TO\_IO\_QUEUE\_PREPROCESSED\_IRP.
 4.  If the driver has set the WDF\_FORWARD\_IRP\_TO\_IO\_QUEUE\_INVOKE\_INCALLERCTX\_CALLBACK flag and has not enabled guaranteed forward progress for the target I/O queue, the framework then calls the driver's [*EvtIoInCallerContext*](https://msdn.microsoft.com/library/windows/hardware/ff541764), if provided. After the callback function has finished preprocessing the request, it must either queue it by calling [**WdfDeviceEnqueueRequest**](https://msdn.microsoft.com/library/windows/hardware/ff545945) or complete it by calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).
 
- 
+ 
 
- 
+ 
 
 
 

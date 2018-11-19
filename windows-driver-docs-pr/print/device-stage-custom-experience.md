@@ -1,6 +1,5 @@
 ---
 title: Device Stage Custom Experience
-author: windows-driver-content
 description: Device Stage Custom Experience
 ms.assetid: fb6c8022-83cd-47c2-8605-84ec8647efa8
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ Device Stage experiences are distributed through Microsoft servers to Windows 7 
 
 Device Stage experiences may be distributed with manufacture's setup applications as well.
 
- 
+ 
 
- 
+ 
 
 
 

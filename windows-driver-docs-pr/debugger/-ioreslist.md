@@ -3,7 +3,6 @@ title: ioreslist
 description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
 ms.assetid: cb599656-2e0a-41ec-8358-a42047974dea
 keywords: ["ioreslist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST struct
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -117,9 +116,9 @@ This resource list contains the following requests:
 
 Interrupts and DMA channels are represented as ranges with the same beginning and end.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -97,7 +97,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScanRegion</strong>](scanregion.md)</p></td>
+<td><p><a href="scanregion.md" data-raw-source="[&lt;strong&gt;ScanRegion&lt;/strong&gt;](scanregion.md)"><strong>ScanRegion</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -126,9 +126,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**ScanRegionWidth**](scanregionwidth.md)
 
- 
+ 
 
- 
+ 
 
 
 

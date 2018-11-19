@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 To create an unsigned catalog file for a driver package, follow these steps:
 
-1.  Add the required INF **CatalogFile**=*FileName***.Cat** entry or INF **CatalogFile.***PlatformExtension*=*unique-filename***.Cat** entries to the [**INF Version section**](inf-version-section.md) of a [driver package's](driver-packages.md) INF file. For information about how to use platform extensions, see [Cross-Platform INF Files](cross-platform-inf-files.md).
+1. Add the required INF **CatalogFile**=<em>FileName</em>**.Cat** entry or INF **CatalogFile.**<em>PlatformExtension</em>=<em>unique-filename</em>**.Cat** entries to the [**INF Version section**](inf-version-section.md) of a [driver package's](driver-packages.md) INF file. For information about how to use platform extensions, see [Cross-Platform INF Files](cross-platform-inf-files.md).
 
-2.  Use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
+2. Use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
 
 Use the following Inf2Cat command to create unsigned catalog files:
 
@@ -23,9 +23,9 @@ Inf2Cat /driver:DriverPath /os:WindowsVersionList
 
 Where:
 
--   The **/driver:***DriverPath* parameter supplies the name of the directory where the [driver package](driver-packages.md) is located.
+- The **/driver:**<em>DriverPath</em> parameter supplies the name of the directory where the [driver package](driver-packages.md) is located.
 
--   The **/os:***WindowsVersionList* parameter configures Inf2Cat to verify that the driver package complies with the signing requirements for the Windows versions that are specified by the list of Windows version identifiers.
+- The **/os:**<em>WindowsVersionList</em> parameter configures Inf2Cat to verify that the driver package complies with the signing requirements for the Windows versions that are specified by the list of Windows version identifiers.
 
 ### Examples
 
@@ -58,9 +58,9 @@ To generate *Tostamd64.cat* only for Windows Vista x64 Edition, specify only "Vi
 Inf2Cat /driver:c:\WindDDK\5739\src\general\toaster\toastpkg\toastcd /os:Vista_X64
 ```
 
- 
+ 
 
- 
+ 
 
 
 

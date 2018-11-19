@@ -1,6 +1,5 @@
 ---
 title: Wi-Fi Hotspot Offloading Constants
-author: windows-driver-content
 description: This section describes the constants that are defined for the Wi-Fi Hotspot Offloading framework.
 ms.assetid: F09DCB81-C9FF-493B-AE8F-97DE441A4BC3
 ms.date: 07/31/2017
@@ -148,9 +147,9 @@ Requirements
 
 [Wi-Fi Hotspot Offloading Reference](wi-fi-hotspot-offloading-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

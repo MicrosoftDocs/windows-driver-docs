@@ -23,9 +23,9 @@ In NT-based operating system platforms, a kernel-mode component called the *V86 
 
 In other words, the display driver retains control of the video adapter while a VDM runs in a window.
 
- 
+ 
 
- 
+ 
 
 
 

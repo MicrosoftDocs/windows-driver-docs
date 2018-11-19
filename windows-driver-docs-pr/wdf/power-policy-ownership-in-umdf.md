@@ -1,6 +1,5 @@
 ---
 title: Power Policy Ownership in UMDF
-author: windows-driver-content
 description: Power Policy Ownership in UMDF
 ms.assetid: cf543259-3401-4f3b-a492-53940cea07f3
 keywords:
@@ -58,9 +57,9 @@ For more information about the power policy owner's responsibilities, see the fo
 
 -   [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

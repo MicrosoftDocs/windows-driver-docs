@@ -3,7 +3,6 @@ title: Using the DbgRpc Tool
 description: Using the DbgRpc Tool
 ms.assetid: a98b9141-72e1-4957-a65c-36e677d159a6
 keywords: ["DbgRpc", "DbgRpc, basic use"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,7 +27,7 @@ The **-s** command-line option is used to specify the server name, and the **-p*
 
 Here is an example:
 
-```
+```console
 G:\>dbgrpc -s MyServer -p ncacn_ip_tcp -l -P 1e8 -L 0.1
 Getting remote cell info ...
 Endpoint
@@ -41,9 +40,9 @@ Endpoint name: OLE18
 
 For a description of the full command syntax, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

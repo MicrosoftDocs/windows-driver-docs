@@ -41,7 +41,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_PictureParameters"></span><span id="restrictions_on_dxva_pictureparameters"></span><span id="RESTRICTIONS_ON_DXVA_PICTUREPARAMETERS"></span>Restrictions on DXVA\_PictureParameters
 
@@ -128,7 +128,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_MBctrl_I_HostResidDiff_1__DXVA_MBctrl_I_OffHostIDCT_1__DXVA_MBctrl_P_HostResidDiff_1__and_DXVA_MBctrl_P_OffHostIDCT_1"></span><span id="restrictions_on_dxva_mbctrl_i_hostresiddiff_1__dxva_mbctrl_i_offhostidct_1__dxva_mbctrl_p_hostresiddiff_1__and_dxva_mbctrl_p_offhostidct_1"></span><span id="RESTRICTIONS_ON_DXVA_MBCTRL_I_HOSTRESIDDIFF_1__DXVA_MBCTRL_I_OFFHOSTIDCT_1__DXVA_MBCTRL_P_HOSTRESIDDIFF_1__AND_DXVA_MBCTRL_P_OFFHOSTIDCT_1"></span>Restrictions on DXVA\_MBctrl\_I\_HostResidDiff\_1, DXVA\_MBctrl\_I\_OffHostIDCT\_1, DXVA\_MBctrl\_P\_HostResidDiff\_1, and DXVA\_MBctrl\_P\_OffHostIDCT\_1
 
@@ -146,7 +146,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>MBscanMethod</em></p></td>
-<td align="left"><p>May be a value of zero (zigzag) or a value of 1 (alternate vertical) if the <strong>ConfigHostInverseScan</strong> member of [<strong>DXVA_ConfigPictureDecode</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563133) is equal to zero.</p></td>
+<td align="left"><p>May be a value of zero (zigzag) or a value of 1 (alternate vertical) if the <strong>ConfigHostInverseScan</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133" data-raw-source="[&lt;strong&gt;DXVA_ConfigPictureDecode&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563133)"><strong>DXVA_ConfigPictureDecode</strong></a> is equal to zero.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>H261LoopFilter</p></td>
@@ -155,7 +155,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_Bitstream_Buffers"></span><span id="restrictions_on_bitstream_buffers"></span><span id="RESTRICTIONS_ON_BITSTREAM_BUFFERS"></span>Restrictions on Bitstream Buffers
 
@@ -163,9 +163,9 @@ The contents of any bitstream buffer must contain data in the MPEG-2 main profil
 
 The **bNewQmatrix** member of [**DXVA\_QmatrixData**](https://msdn.microsoft.com/library/windows/hardware/ff564034) equals zero, for i = 2 and 3 when inverse-quantization matrices are used.
 
- 
+ 
 
- 
+ 
 
 
 

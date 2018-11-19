@@ -1,6 +1,5 @@
 ---
 title: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: 7877943e-ee61-455d-b489-db223e1ddbe1
 ms.date: 04/20/2017
@@ -55,9 +54,9 @@ There is very limited support for using Windows Vista drivers on a Windows XP co
 
 For more information on the compatibility layer and Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

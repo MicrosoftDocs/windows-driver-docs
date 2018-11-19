@@ -3,7 +3,6 @@ title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -83,7 +82,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -203,9 +202,9 @@ The following items appear in this **!cs -t** display:
 
 -   **WaitCnt** is the contention count.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Improvements in Configuration Formats
-author: windows-driver-content
 description: Configuration formats in v4 printer drivers have been improved to allow control over copy count and punctuation substitutions.
 ms.assetid: 66FC6BAF-26DD-4E18-B8C9-0BF494346917
 ms.date: 04/20/2017
@@ -25,7 +24,7 @@ Due to historical implementations using v3 printer drivers, some devices may req
 | GPD       | \*NoPunctuationCharSubstitute? | True           |
 | PPD       | \*MSPunctuationCharSubstitute  | True           |
 
- 
+ 
 
 ## Related topics
 [V4 Driver Configuration](v4-driver-configuration.md)  

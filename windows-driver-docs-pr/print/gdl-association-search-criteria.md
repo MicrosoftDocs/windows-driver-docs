@@ -1,6 +1,5 @@
 ---
 title: GDL Association Search Criteria
-author: windows-driver-content
 description: GDL Association Search Criteria
 ms.assetid: f591e944-a6dc-406a-a15e-7af0cc70d7f5
 keywords:
@@ -24,9 +23,9 @@ The members list is searched, starting with the most recently added element. Whe
 
 The search will end when a template that qualifies to represent the data entry has been found. If no qualifying template has been found when the end of the list is reached, the data entry will be left without a template association; such data entries are called *unidentified entries*. All members of an unidentified data construct will also be unidentified.
 
- 
+ 
 
- 
+ 
 
 
 

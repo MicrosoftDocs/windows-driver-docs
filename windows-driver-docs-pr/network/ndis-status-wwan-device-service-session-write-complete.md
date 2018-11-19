@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE notification to report the status of a write operation on a device service session.NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure.
 ms.assetid: 39C0FE62-E262-4D7D-8A93-6C31431AF846
 ms.date: 07/18/2017
@@ -43,9 +42,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/hh831861)
 
- 
+ 
 
- 
+ 
 
 
 

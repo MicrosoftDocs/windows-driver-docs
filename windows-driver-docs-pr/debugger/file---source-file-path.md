@@ -3,7 +3,6 @@ title: File Source File Path
 description: File Source File Path
 ms.assetid: 2fa7cbc1-a1e6-411b-95d2-18fd183ee117
 keywords: ["File Source File Path", "source files and paths, File Source File Path"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ Click **OK** to append the selected folder to the source path and return to the 
 
 For more information and for other ways to change this path, see [Source Path](source-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

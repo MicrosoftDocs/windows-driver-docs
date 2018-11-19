@@ -1,6 +1,5 @@
 ---
 title: Storport's SRB Interface with the Storage Class Driver
-author: windows-driver-content
 description: Storport's SRB Interface with the Storage Class Driver
 ms.assetid: c7e55516-0ba9-48bc-9b68-e6344552f070
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ Unlike other port drivers, such as the system-supplied port drivers for the IDE/
 
 For this reason, most aspects of the SRB interface between the storage class driver and Storport are covered in the general documentation for storage class and storage miniport drivers and their accompanying reference materials. For a list of sections related to the SRB interface between the storage class driver and the Storport-miniport driver pair, see [Storport's Interface with Storport Miniport Drivers](storport-s-interface-with-storport-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EMF Data Type
-author: windows-driver-content
 description: EMF Data Type
 ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
 keywords:
@@ -23,9 +22,9 @@ NT-based operating system clients send EMF data to NT-based operating system pri
 
 For more information about the EMF data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. For more information about enhanced metafiles, see the Windows SDK documentation. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

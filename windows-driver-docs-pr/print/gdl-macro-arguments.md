@@ -1,6 +1,5 @@
 ---
 title: GDL Macro Arguments
-author: windows-driver-content
 description: GDL Macro Arguments
 ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
 keywords:
@@ -76,9 +75,9 @@ Then, the following macro reference will be interpreted as three separate and un
 
 The parser will not interpret (=Macro2, =Macro3) to be a parameter list for =Macro1. This behavior preserves backward compatibility with current GPDs.
 
- 
+ 
 
- 
+ 
 
 
 

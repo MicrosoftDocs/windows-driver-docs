@@ -1,6 +1,5 @@
 ---
 title: Working with USB Interfaces in UMDF 1.x Drivers
-author: windows-driver-content
 description: Working with USB Interfaces in UMDF 1.x Drivers
 ms.assetid: fc25e3b2-1631-445e-9340-a8cc92c68733
 keywords:
@@ -57,11 +56,11 @@ The device's alternate settings must be numbered contiguously, starting with zer
 
 **Important**   Selecting a setting invalidates any information about the interface and endpoints. Therefore, the driver should obtain this information again. The driver must also discard any USB pipe objects that it previously retrieved and recreate them.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

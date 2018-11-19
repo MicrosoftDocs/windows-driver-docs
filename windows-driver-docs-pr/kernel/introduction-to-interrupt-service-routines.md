@@ -1,6 +1,5 @@
 ---
 title: Introduction to Interrupt Service Routines
-author: windows-driver-content
 description: Introduction to Interrupt Service Routines
 ms.assetid: e83eb873-7cdf-4faf-9a6e-cc5954ebf1d6
 keywords: ["interrupt service routines WDK kernel , about ISRs", "ISRs WDK kernel , about interrupt service routines", "InterruptService", "line-based interrupts WDK kernel", "interrupt lines WDK kernel", "message-signaled interrupts WDK kernel", "InterruptMessageService"]
@@ -23,9 +22,9 @@ The system supports two different types of ISRs:
 
 -   The driver can register an [*InterruptMessageService*](https://msdn.microsoft.com/library/windows/hardware/ff547940) routine to handle message-signaled interrupts. The system passes both a driver-supplied context value and the message ID of the interrupt message.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: '#SetPPPrefix Preprocessor Directive'
-author: windows-driver-content
 description: '#SetPPPrefix Preprocessor Directive'
 ms.assetid: 3520aa66-1090-40db-9c9f-cfba0e6e2bee
 keywords:

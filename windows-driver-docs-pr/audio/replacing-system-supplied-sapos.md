@@ -15,7 +15,7 @@ To develop an sAPO to replace a system-supplied one, complete the following step
 
 1.  Develop a DSP algorithm to produce the custom system effects.
 
-2.  Develop a [COM component](http://go.microsoft.com/fwlink/p/?linkid=106012) that will host the DSP algorithm.
+2.  Develop a [COM component](https://go.microsoft.com/fwlink/p/?linkid=106012) that will host the DSP algorithm.
 
 3.  Implement the following interfaces and methods for the COM component:
     -   [IAudioProcessingObject](https://msdn.microsoft.com/library/windows/hardware/ff536501). The required methods for this interface are: [**Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff536510) and [**IsInputFormatSupported.**](https://msdn.microsoft.com/library/windows/hardware/ff536511)
@@ -23,15 +23,15 @@ To develop an sAPO to replace a system-supplied one, complete the following step
     -   [IAudioProcessingObjectRT](https://msdn.microsoft.com/library/windows/hardware/ff536505). The required method for this interface is [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) and it is the method that implements the DSP algorithm.
     -   [IAudioSystemEffects](https://msdn.microsoft.com/library/windows/hardware/ff536514). This interface makes the audio engine recognize a DLL as an sAPO.
 
-4.  Package the COM component as a [DLL](http://go.microsoft.com/fwlink/p/?linkid=106014)
+4.  Package the COM component as a [DLL](https://go.microsoft.com/fwlink/p/?linkid=106014)
 
 5.  [Provide an INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to copy and register the DLL during installation of your audio driver.
 
 6.  Implement a user interface to configure the custom sAPO. See the [Custom UI Design Information](custom-ui-design-information.md) topic for more details.
 
- 
+ 
 
- 
+ 
 
 
 

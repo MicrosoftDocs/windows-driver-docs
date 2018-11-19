@@ -28,9 +28,9 @@ These reference topics describe how to implement this capability in your display
 -   [**DXGK\_QUERYADAPTERINFOTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff562010) (new **DXGKQAITYPE\_HISTORYBUFFERPRECISION** constant value)
 -   [*DxgkDdiCreateAllocation*](https://msdn.microsoft.com/library/windows/hardware/ff559606) (see "Allocating history buffers" in Remarks)
 
- 
+ 
 
- 
+ 
 
 
 

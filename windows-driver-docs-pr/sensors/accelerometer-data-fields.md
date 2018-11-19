@@ -1,6 +1,5 @@
 ---
 title: Accelerometer data fields
-author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the accelerometer.
 ms.assetid: 88333B6A-E262-4937-9349-156B00BA8CC4
 ms.date: 07/20/2018
@@ -21,16 +20,16 @@ The following table shows the data fields. For more information about the types 
 |PKEY_SensorData_AccelerationZ_G|VT_R4|Required|The z-axis acceleration in g’s.|
 |PKEY_SensorData_Shake|VT_BOOL|Optional|An indication that a shake has been detected by the accelerometer. This must be true if the data field is sent up.|
 
- 
+ 
 
 ## Related topics
 
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

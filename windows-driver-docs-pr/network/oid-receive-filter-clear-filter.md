@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_CLEAR_FILTER
-author: windows-driver-content
 description: Overlying drivers issue OID set requests of OID_RECEIVE_FILTER_CLEAR_FILTER to clear a receive filter on a network adapter.
 ms.assetid: 5e92a11a-468e-431d-b4e5-7b0da3847e8a
 ms.date: 08/08/2017
@@ -49,7 +48,7 @@ The following points apply to miniport and overlying drivers that support the SR
 
     **Note**  A miniport driver also must not indicate packets on a nondefault VPort if it has completed an OID request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](oid-nic-switch-delete-vport.md) to free the VPort.
 
-     
+     
 
 ### Additional Guidelines for the VMQ Interface
 
@@ -61,7 +60,7 @@ The following points apply to miniport and overlying drivers that support the VM
 
     **Note**  A miniport driver also must not indicate packets on a receive queue if it has completed an OID request of [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](oid-receive-filter-free-queue.md) to free the receive queue.
 
-     
+     
 
 ### Return status codes
 
@@ -85,7 +84,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the [<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622) function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a> function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -94,7 +93,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tbody>
 </table>
 
- 
+ 
 
 NDIS returns one of the following status codes for this request:
 
@@ -143,9 +142,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

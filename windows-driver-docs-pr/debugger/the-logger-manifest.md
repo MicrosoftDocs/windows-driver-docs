@@ -3,7 +3,6 @@ title: The Logger Manifest
 description: The Logger Manifest
 ms.assetid: 7f9bbb4e-0627-446e-8bd9-2827f11a2bf6
 keywords: ["Logger, manifest"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ This section includes:
 
 [Manifest File Format](manifest-file-format.md)
 
- 
+ 
 
- 
+ 
 
 
 

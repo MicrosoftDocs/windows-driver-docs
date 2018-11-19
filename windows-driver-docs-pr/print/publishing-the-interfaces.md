@@ -1,6 +1,5 @@
 ---
 title: Publishing the Interfaces
-author: windows-driver-content
 description: Publishing the Interfaces
 ms.assetid: 3beefaa0-58b9-459a-89e5-1d9d81e80519
 keywords:
@@ -52,9 +51,9 @@ The objects that are marked with an asterisk (\*) in the following lists are pub
 
 2.  **IUnknown** and **IPrintCorePS2**
 
- 
+ 
 
- 
+ 
 
 
 

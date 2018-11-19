@@ -1,6 +1,5 @@
 ---
 title: Framework Object Context Space
-author: windows-driver-content
 description: Framework Object Context Space
 ms.assetid: 21a46e04-2330-4a3d-ba72-c04295bfbb3c
 keywords:
@@ -72,9 +71,9 @@ After an object has been created, the driver can obtain a pointer to the object'
 
 If your driver has a context space pointer, it can find the object that the context space belongs to by calling [**WdfObjectContextGetObject**](https://msdn.microsoft.com/library/windows/hardware/ff548727).
 
- 
+ 
 
- 
+ 
 
 
 

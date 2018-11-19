@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Schema Extensions for Driver-Specific Queries
-author: windows-driver-content
 description: TCP/IP Schema Extensions for Driver-Specific Queries
 ms.assetid: c6f85f99-852a-418f-98da-41fe4c36e9ba
 keywords:
@@ -26,9 +25,9 @@ For queries concerning typical printer properties, you must create queries that 
 
 [Value](value.md)
 
- 
+ 
 
- 
+ 
 
 
 

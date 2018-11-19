@@ -39,9 +39,9 @@ Press **Finish** to stop viewing these settings.
 
 If you wish to view the Driver Verifier features that are currently active, rather than the settings that will take effect after the next boot, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Obtaining HID Reports by Kernel-Mode Drivers
-author: windows-driver-content
 description: This topic discusses how a kernel-mode driver should use IRP_MJ_READ requests as its main approach for continuously obtaining HID input reports.
 ms.assetid: 017481f1-8021-4fd5-ab8e-f09f6006e616
 ms.localizationpriority: medium
@@ -57,9 +56,9 @@ Returns a feature report from a HID collection.
 
 A driver can request the return of a specific report. To retrieve a specific report using these I/O requests, the driver first allocates the output report buffer, then zero-initializes the buffer, and sets the first byte in the buffer to the specific report ID. For more information, see [Interpreting HID Reports](interpreting-hid-reports.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic presents the software and hardware-related points you must consider when you decide to develop your own WaveRT miniport driver.
 
-Microsoft has developed a set of hardware design guidelines for a [Universal Audio Architecture (UAA)](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) and the guidelines incorporate the features we recommend for a WaveRT audio device. The UAA guidelines are closely based on the High Definition (HD) Audio specification developed by Intel.
+Microsoft has developed a set of hardware design guidelines for a [Universal Audio Architecture (UAA)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) and the guidelines incorporate the features we recommend for a WaveRT audio device. The UAA guidelines are closely based on the High Definition (HD) Audio specification developed by Intel.
 
 Windows Vista and later Windows operating systems provide an HD audio driver for UAA-compliant audio devices. So if your audio device is UAA-compliant, you do not have to develop your own WaveRT miniport driver. But for audio devices that have some proprietary, non-UAA hardware features, you must develop your own WaveRT miniport driver to support the proprietary features.
 
@@ -68,18 +68,16 @@ After you review the sample adapter driver and start to design your WaveRT minip
         GFX APOs perform hardware-specific processing of an audio stream. A GFX APO is tied to a particular audio device by the INF file that installs the device. The effect of a GFX APO is global because it affects the global mix that plays through the audio device.
 
         **Note**   Windows Vista and later operating systems provide a set of APOs as part of the operating system. You can, however develop your own APOs to replace the system-supplied ones. For more information, see [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md).
-
-         
-
+    
     Global mixing is performed by the audio engine, which is the user-mode system component that is responsible for mixing the audio streams from all audio applications. Typically, the audio engine is the client that directly exchanges data with the WaveRT audio device through the cyclic buffer.
 
     When the user enables an LFX APO, the audio system inserts the APO into one of the input streams to the audio engine. When the user enables a GFX APO, the system inserts that APO into the output stream from the audio engine. For more information about LFX and GFX APOs and the audio engine, see the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic.
 
     APOs are available for use only with shared-mode audio streams. For exclusive-mode streams, applications exchange data directly with WaveRT hardware devices through cyclic buffers, and no other components can touch the data in the buffers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,11 +13,11 @@ This topic describes the guidelines that Hyper-V extensible switch extensions mu
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about the extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
 
- 
+ 
 
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 Extensions must follow these guidelines for packet management in the extensible switch data path:
 
@@ -31,7 +31,7 @@ Extensions must follow these guidelines for packet management in the extensible 
 
         **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can only be done on packets obtained on the egress data path.
 
-         
+         
 
     -   Forwarding extensions can filter packet traffic and enforce custom and standard port or switch policies for packet delivery through the extensible switch. When the forwarding extension filters packets in the ingress data path, it applies filtering rules based on the source port as well as the destination ports that the forwarding extension assigns to the packet.
 
@@ -59,13 +59,13 @@ Extensions must follow these guidelines for packet management in the extensible 
 
         **Note**  If the extension clones a packet that was obtained on the egress data path, it can inject the new packet into the egress data path only if it has not changed the packet data and has preserved the original destination port data.
 
-         
+         
 
     -   Add destination ports to the packet before forwarding the packet.
 
         **Note**  Forwarding extensions are allowed to add destination ports to packets obtained on the ingress data path.
 
-         
+         
 
     -   Inject new or cloned data packets into the egress data path.
 
@@ -77,13 +77,13 @@ Extensions must follow these guidelines for packet management in the extensible 
 
     **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension must call [*CopyNetBufferListInfo*](https://msdn.microsoft.com/library/windows/hardware/hh598136) to copy the OOB data associated with the extensible switch data path from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the cloned packet.
 
-     
+     
 
 -   If an extension drops a packet from either the ingress of egress data path, it must call [*ReportFilteredNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/hh598297). When this function is called, the extensible switch interface increments counters and logs events for the dropped or excluded packets.
 
- 
+ 
 
- 
+ 
 
 
 

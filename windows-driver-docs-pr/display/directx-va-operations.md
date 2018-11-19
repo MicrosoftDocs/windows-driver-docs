@@ -27,9 +27,9 @@ This section describes the operations defined by values of the [bDXVA\_Func vari
 
 [Picture Resampling Control](picture-resampling-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

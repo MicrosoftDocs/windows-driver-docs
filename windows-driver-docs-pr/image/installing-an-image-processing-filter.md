@@ -1,6 +1,5 @@
 ---
 title: Installing an Image Processing Filter
-author: windows-driver-content
 description: Installing an Image Processing Filter
 ms.assetid: bce6405f-0377-4e50-b898-28c6cdb962be
 ms.date: 04/20/2017
@@ -44,11 +43,11 @@ As shown in the preceding example INF snippet, the recommended **ThreadingModel*
 
 **Note**   It is possible to install a filter after the installation of the driver is complete--for example, as a value-added component.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

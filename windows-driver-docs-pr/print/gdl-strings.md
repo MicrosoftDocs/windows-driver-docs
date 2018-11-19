@@ -1,6 +1,5 @@
 ---
 title: GDL Strings
-author: windows-driver-content
 description: GDL Strings
 ms.assetid: b51b44c5-f319-4f8d-a30a-342e647cdfe6
 keywords:
@@ -20,9 +19,9 @@ GDL uses two types of strings:
 
 [GDL HexSubStrings](gdl-hexsubstrings.md)
 
- 
+ 
 
- 
+ 
 
 
 

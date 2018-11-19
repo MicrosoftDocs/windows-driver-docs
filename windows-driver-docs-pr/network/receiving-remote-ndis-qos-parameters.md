@@ -23,9 +23,9 @@ The driver must follow these guidelines for managing remote QoS parameters:
 
 For more information about NDIS QoS parameters, see [Overview of NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

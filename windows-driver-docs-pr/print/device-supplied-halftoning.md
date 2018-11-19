@@ -1,6 +1,5 @@
 ---
 title: Device-Supplied Halftoning
-author: windows-driver-content
 description: Device-Supplied Halftoning
 ms.assetid: d1d7963e-c23e-4cb5-a33f-43fec5dc74d2
 keywords:
@@ -35,9 +34,9 @@ If your printer provides halftoning capabilities internally, your minidriver mus
 
 ColorMode feature entries must also be specified, and they must include \*DevBPP and \*DevNumOfPlanes entries describing the input formats expected by the printer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: HOTSPOT_PLUGIN_APIS structure
-author: windows-driver-content
 description: The HOTSPOT_PLUGIN_APIS structure contains the Hotspot plugin APIs function table.
 ms.assetid: eee56f84-2c7f-4218-b7ec-b4fc0181d767
 keywords: 
@@ -139,9 +138,9 @@ Requirements
 
 [**HS\_PLUGIN\_DEINIT**](hs-plugin-deinit.md)
 
- 
+ 
 
- 
+ 
 
 
 

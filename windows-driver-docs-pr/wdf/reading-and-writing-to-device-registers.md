@@ -1,6 +1,5 @@
 ---
 title: Reading and Writing to Device Registers
-author: windows-driver-content
 description: Reading and Writing to Device Registers
 ms.assetid: 58A94C75-94C1-4517-A300-9F04AA7B771A
 ms.date: 04/20/2017
@@ -208,9 +207,9 @@ NTSTATUS
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

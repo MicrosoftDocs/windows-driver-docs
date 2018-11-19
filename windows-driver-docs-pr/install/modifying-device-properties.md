@@ -55,11 +55,11 @@ The following properties are writable. However, they are reserved for use by the
 
 **Note**  [*Class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) and [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) must not change device properties except for the friendly name ([**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502)) and the upper and lower filter drivers for the device ([**DEVPKEY_Device_UpperFilters**](https://msdn.microsoft.com/library/windows/hardware/ff542667) and [**DEVPKEY_Device_LowerFilters**](https://msdn.microsoft.com/library/windows/hardware/ff542554)). For more information, see [Accessing Device Instance Properties](accessing-device-instance-properties--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

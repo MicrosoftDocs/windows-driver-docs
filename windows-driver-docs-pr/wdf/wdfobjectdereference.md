@@ -1,6 +1,5 @@
 ---
 title: WdfObjectDereference macro
-author: windows-driver-content
 description: The WdfObjectDereference macro decrements the reference count for a specified framework object.
 ms.assetid: e945202c-7e6b-47b7-9216-d7a3a694489e
 keywords:
@@ -69,7 +68,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -94,7 +93,7 @@ WUDFx02000.dll (UMDF)</td>
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td>[<strong>DriverCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544957), [<strong>MemAfterReqCompletedIntIoctlA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549090), [<strong>MemAfterReqCompletedIoctlA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549106), [<strong>MemAfterReqCompletedReadA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549116), [<strong>MemAfterReqCompletedWriteA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549125), [<strong>wdfioqueuefindrequestfailed</strong>](https://msdn.microsoft.com/library/windows/hardware/hh975098), [<strong>wdfioqueueretrievefoundrequest</strong>](https://msdn.microsoft.com/library/windows/hardware/hh975099)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff544957" data-raw-source="[&lt;strong&gt;DriverCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544957)"><strong>DriverCreate</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549090" data-raw-source="[&lt;strong&gt;MemAfterReqCompletedIntIoctlA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549090)"><strong>MemAfterReqCompletedIntIoctlA</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549106" data-raw-source="[&lt;strong&gt;MemAfterReqCompletedIoctlA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549106)"><strong>MemAfterReqCompletedIoctlA</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549116" data-raw-source="[&lt;strong&gt;MemAfterReqCompletedReadA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549116)"><strong>MemAfterReqCompletedReadA</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549125" data-raw-source="[&lt;strong&gt;MemAfterReqCompletedWriteA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549125)"><strong>MemAfterReqCompletedWriteA</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975098" data-raw-source="[&lt;strong&gt;wdfioqueuefindrequestfailed&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh975098)"><strong>wdfioqueuefindrequestfailed</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975099" data-raw-source="[&lt;strong&gt;wdfioqueueretrievefoundrequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh975099)"><strong>wdfioqueueretrievefoundrequest</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -108,9 +107,9 @@ WUDFx02000.dll (UMDF)</td>
 
 [**WdfObjectReference**](wdfobjectreference.md)
 
- 
+ 
 
- 
+ 
 
 
 

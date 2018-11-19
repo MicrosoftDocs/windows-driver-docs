@@ -3,7 +3,6 @@ title: .apply_dbp (Apply Data Breakpoint to Context)
 description: The .apply_dbp command applies the current process' existing data breakpoints to the specified register context.
 ms.assetid: c74fd4b3-3335-4e03-a57a-6a9aa883dd9f
 keywords: [".apply_dbp (Apply Data Breakpoint to Context) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -19,8 +18,9 @@ ms.localizationpriority: medium
 
 The **.apply\_dbp** command applies the current process' existing data breakpoints to the specified register context.
 
+```dbgcmd
     .apply_dbp [/m Context] 
-
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -51,7 +51,7 @@ Specifies the address of a register context (CONTEXT structure) in memory to whi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +70,9 @@ This command can only be used if the target is in native machine mode. For examp
 
 One example of a time this command is useful is when you are in an exception filter. The **.apply\_dbp** command can update the exception filter's stored context. Data breakpoints will then be applied when the exception filter exits and the stored context is resumed. Without such a modification it is possible that data breakpoints would be lost.
 
- 
+ 
 
- 
+ 
 
 
 

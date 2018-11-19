@@ -1,6 +1,5 @@
 ---
 title: When the FilterUnloadCallback Routine Is Called
-author: windows-driver-content
 description: When the FilterUnloadCallback Routine Is Called
 ms.assetid: 22a3a73e-28be-4483-a7a6-73525e74503d
 keywords:
@@ -33,9 +32,9 @@ Note that if a minifilter driver's **DriverEntry** routine returns a warning or 
 
 The *FilterUnloadCallback* routine is not called at system shutdown time. A minifilter driver that must perform shutdown processing should register a preoperation callback routine for IRP\_MJ\_SHUTDOWN operations.
 
- 
+ 
 
- 
+ 
 
 
 

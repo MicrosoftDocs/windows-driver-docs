@@ -1,6 +1,5 @@
 ---
 title: Clearing the DO_DEVICE_INITIALIZING Flag
-author: windows-driver-content
 description: Clearing the DO_DEVICE_INITIALIZING Flag
 ms.assetid: 1c1cca60-bb95-4a8d-9e17-4db54983bbb0
 keywords:
@@ -29,11 +28,11 @@ When the filter device object is created, [**IoCreateDevice**](https://msdn.micr
 
 **Note**   It is not necessary to clear the DO\_DEVICE\_INITIALIZING flag on device objects that are created in DriverEntry, because this is done automatically by the I/O Manager. However, your driver should clear this flag on all other device objects that it creates.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: New Root-Level-Only PPD Attributes for Windows Vista
-author: windows-driver-content
 description: New Root-Level-Only PPD Attributes for Windows Vista
 ms.assetid: 49cdfb2f-e119-4960-9e79-67e1025b753f
 keywords:
@@ -68,11 +67,11 @@ If an \***MSPrintSchemaKeywordMap** entry violates any of the preceding format r
 \*MediaType
 It is also important to know that if you map a feature to a Print Schema keyword that is already being used in the PPD file, the corresponding PrintCapabilities document might list that feature more than once. Multiple occurrences might be confusing, so you should not map features to Print Schema keywords that are used in the PPD file.
 
- 
+ 
 
 **Note**  The PPD parser automatically generates the FORMSOURCE option for the InputBin feature and maps it to the AutoSelect keyword in the Print Schema. If your PPD file contains an InputBin option that uses the **MSPrintSchemaKeywordMap** attribute to map the option to a Print Schema keyword, the feature in the Print Schema will contain a FORMSOURCE option in the device namespace. AutoSelect will appear in the PrintCapabilities document and refer to the option that is specified in the **MSPrintSchemaKeywordMap** attribute of the PPD file.
 
- 
+ 
 
 The following code example shows an example of the **MSPrintSchemaKeywordMap** attribute in a partial PPD file.
 
@@ -233,9 +232,9 @@ The following code example shows an example of **MSXPSMaxCopies** in a partial P
 *MSXPSMaxCopies: "99"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

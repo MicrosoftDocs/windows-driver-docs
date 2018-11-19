@@ -1,6 +1,5 @@
 ---
 title: Debugging Power Reference Leaks in WDF
-author: windows-driver-content
 description: When a Windows Driver Frameworks (WDF) driver calls WdfDeviceStopIdle, the framework increments the device's power reference count.
 ms.assetid: 25F4EEBB-4733-498C-8704-8E015F81FE06
 ms.date: 04/20/2017
@@ -21,7 +20,7 @@ Open the settings list for your driver and right-click the **TrackPower** settin
 
 **Tip**  Avoid capturing stack traces in performance-critical code paths.
 
- 
+ 
 
 ![setting track power references in wdfverifier](images/wdfverifier--track-power-references-on.png)
 
@@ -115,9 +114,9 @@ Corresponding [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/ha
 (++) Initial Tag '....' at Time 0x12c9a ticks
 ```
 
- 
+ 
 
- 
+ 
 
 
 

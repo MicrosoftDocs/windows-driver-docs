@@ -1,6 +1,5 @@
 ---
 title: Simple Data Evaluation Language Overview
-author: windows-driver-content
 description: WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships.
 ms.assetid: 84c2a1d6-6bec-4aeb-b858-c29f50d74390
 keywords:
@@ -29,7 +28,7 @@ The following sections within this topic describe how you can use SDEL.
 
 **Note**  For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
 
- 
+ 
 
 ### SDEL Syntax Basics
 
@@ -65,7 +64,7 @@ No comparison operation (and no value) specified
 
 If the actual value in the attribute is of type VT\_BOOL, the match is satisfied based on that value--that is, you do not need a comparison operator to do "IsDisableable=True". Otherwise, if there is any value at all (other than VT\_EMPTY), the match is satisfied.
 
- 
+ 
 
 When there is more than one actual value (or an array) in the attribute, all of the comparison operators should be interpreted to match at least one, except the inequality operator, which has the opposite behavior. If the types cannot be compared at all (that is, **VariantChangeType** fails), there is no match (except with the inequality operator, which has the opposite behavior).
 
@@ -179,11 +178,11 @@ If you pass an SDEL statement with bad syntax to any of the methods in WDTF, the
 
 **Note**   A misspelled attribute, namespace, or relation token does not cause a syntax error, because SDEL is designed to be dynamic based on the target: SDEL statements must be able to query for the existence of an attribute in a dynamic field set.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

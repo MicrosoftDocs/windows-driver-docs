@@ -2,6 +2,7 @@
 title: Manage hardware submissions
 description: Manage hardware submissions for the Windows Hardware Dev Center Dashboard
 ms.assetid: C4C3C56F-8E92-4CB1-A57B-942E466ECD3D
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -18,9 +18,9 @@ DirectX 8.0 introduces index buffers and updates information for vertex buffers.
 
 [Vertex Buffers](vertex-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

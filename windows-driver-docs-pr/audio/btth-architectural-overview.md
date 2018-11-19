@@ -1,12 +1,12 @@
 ---
-title: Architectural Overview
+title: Windows Bluetooth host controller interface (HCI) Architectural Overview
 description: This topic presents an architectural overview of the Windows 8.1 support for rerouting audio data to bypass the Bluetooth host controller interface (HCI).
 ms.assetid: FC9E5254-B543-4890-811C-1DA5F28E61B9
-ms.date: 04/20/2017
+ms.date: 10/22/2018
 ms.localizationpriority: medium
 ---
 
-# Architectural Overview
+# Windows Bluetooth host controller interface (HCI) Architectural Overview
 
 
 This topic presents an architectural overview of the Windows 8.1 support for rerouting audio data to bypass the Bluetooth host controller interface (HCI).
@@ -25,9 +25,9 @@ The following diagram shows the software and hardware components that work toget
 
 Note that this Windows feature does not support bypass audio streaming using advanced audio distribution profile (A2DP). Windows 8 provides a separate A2DP profile driver that completely supports audio functionality through the standard Bluetooth HCI without requiring any additional audio drivers.
 
- 
+ 
 
- 
+ 
 
 
 

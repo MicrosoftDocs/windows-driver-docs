@@ -21,9 +21,9 @@ The [Windows Sockets Direct reference](https://msdn.microsoft.com/library/window
 
 This section also lists the [Windows Sockets SPI functions that a SAN service provider is not required to supply](windows-sockets-spi-functions-not-required-for-sans.md).
 
- 
+ 
 
- 
+ 
 
 
 

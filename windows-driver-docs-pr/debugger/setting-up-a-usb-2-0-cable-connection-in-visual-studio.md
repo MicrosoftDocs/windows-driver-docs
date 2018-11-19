@@ -2,14 +2,13 @@
 title: Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 2.0 cable.
 ms.assetid: 3BEE43E2-32E5-4E7A-BA71-9ADB224578B1
-ms.author: domars
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -34,7 +33,7 @@ Debugging over a USB 2.0 connection requires the following hardware:
 2.  In UsbView, locate all of the host controllers that are compatible with the EHCI specification. For example, you could look for controllers that are listed as Enhanced.
 3.  In UsbView, expand the nodes of the EHCI host controllers. Look for an indication that a host controller supports debugging, and look for the number of the debug port. For example, UsbView displays this output for an EHCI host controller that supports debugging on port 1.
 
-    ```
+    ```console
     Xxx xxx xxx USB2 Enhanced Host Controller - 293A
     ...
     Debug Port Number:  1
@@ -43,7 +42,7 @@ Debugging over a USB 2.0 connection requires the following hardware:
 
     **Note**  Many EHCI host controllers support debugging on port 1, but some EHCI host controllers support debugging on port 2.
 
-     
+     
 
 4.  Make a note of the bus, device, and function numbers for the EHCI controller that you intend to use for debugging. UsbView displays these number. In the preceding example, the bus number is 0, the device number is 29, and the function number is 7.
 
@@ -51,7 +50,7 @@ Debugging over a USB 2.0 connection requires the following hardware:
 
     **Note**  See [this remark](setting-up-a-usb-2-0-debug-cable-connection.md#what-if-usbview-shows-a-debug-capable-port) for an exception.
 
-     
+     
 
 ## <span id="Connecting_the_USB_debug_cable"></span><span id="connecting_the_usb_debug_cable"></span><span id="CONNECTING_THE_USB_DEBUG_CABLE"></span>Connecting the USB debug cable
 
@@ -87,7 +86,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 targetname              MyUsbTarget
 debugtype               USB
@@ -104,7 +103,7 @@ If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matc
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 where *b*, *d*, and *f* are the bus, device, and function numbers of the EHCI controller on the target computer that you have chosen to use for debugging.
 
@@ -139,9 +138,9 @@ At this point, the USB debug driver gets installed on the host computer. This is
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

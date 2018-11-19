@@ -1,6 +1,5 @@
 ---
 title: Passing Power IRPs
-author: windows-driver-content
 description: Passing Power IRPs
 ms.assetid: 01473eb0-ae60-4a95-9ae7-97b2b982d3d1
 keywords: ["power IRPs WDK kernel , passing", "passing IRPs down device stack WDK", "DispatchPower routine", "dispatch routines WDK power management", "PoStartNextPowerIrp"]
@@ -76,9 +75,9 @@ Finally, the driver passes down the system IRP from the callback routine. The dr
 
 In a similar situation, when the system is going to sleep, a power policy owner might need to complete some pending I/O before it sends the device IRP to power down its device. Instead of signaling an event when the I/O completes and waiting in its *DispatchPower* routine, the driver should queue a work item and return STATUS\_PENDING from the *DispatchPower* routine. In the worker thread, it waits for I/O to complete and then sends the device power IRP. For more information, see [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276).
 
- 
+ 
 
- 
+ 
 
 
 

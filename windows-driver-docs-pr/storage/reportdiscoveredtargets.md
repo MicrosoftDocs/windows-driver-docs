@@ -15,9 +15,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_DiscoveryOperations WMI cla
 
 Miniport drivers that implement the MSiSCSI\_DiscoveryOperations WMI class must support **ReportDiscoveredTargets**.
 
- 
+ 
 
- 
+ 
 
 
 

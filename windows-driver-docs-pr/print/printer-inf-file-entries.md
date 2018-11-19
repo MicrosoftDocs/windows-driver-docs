@@ -1,6 +1,5 @@
 ---
 title: Printer INF File Entries
-author: windows-driver-content
 description: Printer INF File Entries
 ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
 keywords:
@@ -53,7 +52,7 @@ The following table lists INF file entries that should be included in printer IN
 
  
 
- **Note**  **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
+ **Note**  **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
  
  
 | Driver Category          | Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -65,23 +64,23 @@ The following table lists INF file entries that should be included in printer IN
 | PrintFax.Printer.Service | 4     | A print queue that represents a printing service. When the user selects to print to a service, then the result (possibly after further user interaction) is that a third-party printing service receives the printed content. The user can then go to the physical business location to pick up the printed output.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | PrintFax.Printer.3D      | 5     | A print queue that represents the data stream for a 3D printer. If this category is unintentionally specified for a 2D printer (a regular printer), the 2D printer will simply output the 2D content of the data stream. If this category is correctly specified for a 3D printer, but a 2D data stream is sent to the 3D printer, the 3D printer will not generate any output.                                                                                                                                                                                                                                                                                                                                                                |
 
- 
+ 
 
 Also note that v4 print drivers use a Manifest file. For more information, see [V4 Driver Manifest](v4-driver-manifest.md).
 
- 
+ 
 
 **Note**  **2 (ExcludeFromSelect)**: The [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342) for more information.
 
- 
+ 
 
 **Note**  **3 (VendorSetup)**: If no VendorSetup entry is specified, customized setup operations are not performed. In particular, no user interface is permitted during print processor, print monitor, or printer driver installation, except through the use of the VendorSetup INF entry. For more information about this entry, see [Customized Printer Setup Operations](customized-printer-setup-operations.md).
 
- 
+ 
 
 **Important**  : VendorSetup is now deprecated and should not be used by any *new* v3 or v4 drivers that you develop. This information about VendorSetup is provided for reference only, or for the maintenance of existing v3 drivers that already use this INF directive.
 
- 
+ 
 
 Printer INF file entries are typically specified within [printer INF file data sections](printer-inf-file-data-sections.md). For examples, see the [sample printer INF files](sample-printer-inf-files.md).
 

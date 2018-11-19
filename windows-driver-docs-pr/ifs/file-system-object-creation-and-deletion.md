@@ -1,6 +1,5 @@
 ---
 title: File System Object Creation and Deletion
-author: windows-driver-content
 description: File System Object Creation and Deletion
 ms.assetid: 71e342cf-455f-4b01-af55-12568bf06728
 keywords:
@@ -38,73 +37,73 @@ The following table lists the routines that can be implemented by a network mini
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[<strong>MRxAreFilesAliased</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549838)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549838" data-raw-source="[&lt;strong&gt;MRxAreFilesAliased&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549838)"><strong>MRxAreFilesAliased</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to query the network mini-redirector if two FCB objects represent the same file. RDBSS calls this routine when processing two files that appear to be the same but have different names (an MS-DOS short name and a long name, for example).</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxCleanupFobx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549841)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549841" data-raw-source="[&lt;strong&gt;MRxCleanupFobx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549841)"><strong>MRxCleanupFobx</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector close a file system object extension. RDBSS issues this call in response to receiving an IRP_MJ_CLEANUP on a file object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxCloseSrvOpen</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549845)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549845" data-raw-source="[&lt;strong&gt;MRxCloseSrvOpen&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549845)"><strong>MRxCloseSrvOpen</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector close a SRV_OPEN object.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxCollapseOpen</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549847)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549847" data-raw-source="[&lt;strong&gt;MRxCollapseOpen&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549847)"><strong>MRxCollapseOpen</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector collapse an open file system request onto an existing SRV_OPEN.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549862)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549862" data-raw-source="[&lt;strong&gt;MRxCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549862)"><strong>MRxCreate</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector create a file system object. This call is issued by RDBSS in response to receiving an IRP_MJ_CREATE.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxDeallocateForFcb</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549871)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549871" data-raw-source="[&lt;strong&gt;MRxDeallocateForFcb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549871)"><strong>MRxDeallocateForFcb</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector deallocate an FCB. This call is in response to a request to close a file system object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxDeallocateForFobx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549872)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549872" data-raw-source="[&lt;strong&gt;MRxDeallocateForFobx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549872)"><strong>MRxDeallocateForFobx</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector deallocate an FOBX. This call is in response to a request to close a file system object.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxExtendForCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549878)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549878" data-raw-source="[&lt;strong&gt;MRxExtendForCache&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549878)"><strong>MRxExtendForCache</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector extend a file when the file is being cached by cache manager.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxExtendForNonCache</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549879)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549879" data-raw-source="[&lt;strong&gt;MRxExtendForNonCache&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549879)"><strong>MRxExtendForNonCache</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector extend a file when the file is not being cached by cache manager.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxFlush</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550669)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550669" data-raw-source="[&lt;strong&gt;MRxFlush&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550669)"><strong>MRxFlush</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector flush a file system object. RDBSS issue this call in response to receiving an IRP_MJ_FLUSH_BUFFERS.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxForceClosed</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550677)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550677" data-raw-source="[&lt;strong&gt;MRxForceClosed&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550677)"><strong>MRxForceClosed</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector force a close. This routine is called when the condition of the SRV_OPEN is not good or the SRV_OPEN is marked as closed.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxIsLockRealizable</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550691)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550691" data-raw-source="[&lt;strong&gt;MRxIsLockRealizable&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550691)"><strong>MRxIsLockRealizable</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector indicate whether byte-range locks are supported on this NET_ROOT.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxShouldTryToCollapseThisOpen</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550817)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550817" data-raw-source="[&lt;strong&gt;MRxShouldTryToCollapseThisOpen&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550817)"><strong>MRxShouldTryToCollapseThisOpen</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector indicate if RDBSS should try and collapse an open request onto an existing file system object.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxTruncate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550839)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550839" data-raw-source="[&lt;strong&gt;MRxTruncate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550839)"><strong>MRxTruncate</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector truncate a file system object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxZeroExtend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550844)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550844" data-raw-source="[&lt;strong&gt;MRxZeroExtend&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550844)"><strong>MRxZeroExtend</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector extend a file system object filling the file with zeros on cleanup if the file size is greater than the valid data length of the FCB.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: wmitrace.setprefix
 description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
 ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -134,7 +133,7 @@ Each %n variable represents a parameter that is described in the following table
 </tbody>
 </table>
 
- 
+ 
 
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
@@ -189,9 +188,9 @@ The prefix that you set by using this extension command affects only the debugge
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension does not affect them.
 
- 
+ 
 
- 
+ 
 
 
 

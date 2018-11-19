@@ -1,6 +1,5 @@
 ---
 title: System Power Actions
-author: windows-driver-content
 description: System Power Actions
 ms.assetid: e8ab99d4-c18d-4ba8-bfe8-8eebb881c384
 keywords: ["system power actions WDK power management", "system power states WDK kernel , power actions", "power actions WDK power management", "POWER_ACTION"]
@@ -55,7 +54,7 @@ When the power manager sends an IRP to set or query the system power state, it s
 </tbody>
 </table>
 
- 
+ 
 
 When a driver receives a system query or set-power IRP for S5, it can check **ShutdownType** For more information about the requested shutdown. A driver can use this information to optimize its shutdown sequence when the machine is resetting instead of shutting off power indefinitely. Drivers of most devices retain power when the system resets. However, for certain devices, such as a video streaming device that performs direct memory access (DMA), a driver might choose to power down its device when the system is resetting, thus stopping any ongoing I/O.
 
@@ -63,9 +62,9 @@ When a device power policy owner sends a *device* power IRP to its device stack 
 
 In Windows 98/Me, this member always contains **PowerActionNone** when the IRP requests a device power state.
 
- 
+ 
 
- 
+ 
 
 
 

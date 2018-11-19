@@ -3,6 +3,7 @@ title: Get product data
 description: These methods from the Microsoft Hardware APIs get data for hardware products registered to your Dev Center Account.
 author: balapv
 ms.author: balapv
+ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---

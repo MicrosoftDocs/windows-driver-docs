@@ -3,7 +3,6 @@ title: processirps
 description: The processirps extension displays information about I/O request packets (IRPs) associated with processes.
 ms.assetid: B7CC72A5-7D3F-4DE5-878D-ABD08BAF227C
 keywords: ["processirps Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -96,9 +95,9 @@ Checking file objects for IRPs.
     IRP fffffa8006659010 - Owned by \Driver\DeviceApi for device DeviceApi (fffffa800363ae40)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

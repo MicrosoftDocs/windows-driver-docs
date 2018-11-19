@@ -3,7 +3,6 @@ title: ndiskd.netreport
 description: The ndiskd.netreport extension generates a visual report of the entire network stack.
 ms.assetid: 0FC134A8-8D91-4299-8D15-4E8EDD9ED855
 keywords: ["ndiskd.netreport Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -94,9 +93,9 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 [Using NIC Teaming for Network Subsystem Performance](https://msdn.microsoft.com/library/windows/hardware/dn567652)
 
- 
+ 
 
- 
+ 
 
 
 

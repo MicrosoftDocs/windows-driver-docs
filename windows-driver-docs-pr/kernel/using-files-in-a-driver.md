@@ -1,6 +1,5 @@
 ---
 title: Using Files In A Driver
-author: windows-driver-content
 description: Using Files In A Driver
 ms.assetid: 721bf336-1d1d-4677-843d-8af04c6f434d
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "reading data from files", "writing data to files", "reading metadata for file", "writing metadata for file", "driver file objects WDK kernel", "multiple file objects WDK kernel", "kernel-mode drivers WDK , files"]
@@ -32,9 +31,9 @@ Kernel-mode components refer to a file by its object name, which is **\\DosDevic
 
 Every time that you open a handle to a file, the Windows executive creates a file object that represents the file, and it returns an open handle to that object. Therefore, multiple file objects can exist for a single file. (Because a user-mode application can copy a handle, multiple handles can also exist for the same file object.) After all the open handles to a file object are closed, the Windows executive deletes the file object.
 
- 
+ 
 
- 
+ 
 
 
 

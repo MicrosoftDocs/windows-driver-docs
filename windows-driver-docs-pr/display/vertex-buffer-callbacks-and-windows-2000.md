@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 DirectX 7.0 on the initial retail release of Windows 2000 prevents a driver's execute buffer (D3D buffer) callbacks from being invoked by the runtime. This prevents the driver from being notified of vertex buffer creation requests and, hence, no video memory or nonlocal video memory buffers can be created or used in this scenario. Video memory vertex buffers are enabled in DirectX 8.0 and in the version of DirectX 7.0 that is shipped with DirectX 8.0. Furthermore, Windows 2000 Service Pack 1 (SP1) enables video memory vertex buffers and all future versions of Windows 2000 will enable video memory vertex buffers. However, there is no workaround to enable video memory vertex buffers on Windows 2000 other than to install DirectX 8.0.
 
- 
+ 
 
- 
+ 
 
 
 

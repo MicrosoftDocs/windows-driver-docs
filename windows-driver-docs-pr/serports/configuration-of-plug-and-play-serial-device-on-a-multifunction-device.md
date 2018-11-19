@@ -1,6 +1,5 @@
 ---
 title: Configure PnP Multifunction Serial Device with 16550 UART Interface
-author: windows-driver-content
 description: Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface
 ms.assetid: 63588ac9-4c87-421d-8da3-3e950cbd466c
 keywords:
@@ -39,9 +38,9 @@ In these configurations, the Toaster device is a child device on the multifuncti
 
 The INF file and installers for the Toaster device install the Serial driver as lower-level device filter driver to provide a 16550 UART-compatible interface for the Toaster device. The Toaster driver creates and attaches an FDO to the Serial driver filter DO.
 
- 
+ 
 
- 
+ 
 
 
 

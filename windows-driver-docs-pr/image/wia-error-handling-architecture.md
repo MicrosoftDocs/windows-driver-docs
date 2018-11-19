@@ -1,6 +1,5 @@
 ---
 title: WIA Error Handling Architecture
-author: windows-driver-content
 description: WIA Error Handling Architecture
 ms.assetid: 2672a5ee-d860-44de-9e68-bd70377d58a8
 ms.date: 04/20/2017
@@ -30,7 +29,7 @@ If the *hrStatus* parameter is set to SEVERITY\_SUCCESS, it represents a non-fat
 
 **Note**   Only one modeless error handler dialog box can be shown at the same time.
 
- 
+ 
 
 An error handler should display modal UI in response to a device status message of SEVERITY\_ERROR.
 
@@ -60,13 +59,13 @@ If no error handler handles a device status message with SEVERITY\_SUCCESS (info
 
 **Note**  The application's callback routine, **IWiaTransferCallback::TransferCallback**, will never receive a message with *lMessage* set to WIA\_TRANSFER\_MSG\_DEVICE\_STATUS. Instead, these messages will be sent to the error handlers.
 
- 
+ 
 
 The **IWiaTransferCallback**,**IWiaAppErrorHandler**, and **IWiaTransfer** interfaces are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

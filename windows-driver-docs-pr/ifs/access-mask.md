@@ -1,6 +1,5 @@
 ---
 title: Access Mask
-author: windows-driver-content
 description: Access Mask
 ms.assetid: eb379196-7a10-4d52-8b81-825550ebbbb0
 keywords:
@@ -90,9 +89,9 @@ For directories, the same bit values are used, but their interpretation is diffe
 
 The actual mapping of generic rights to standard and specific rights for file objects is defined by the I/O manager. This mapping can be retrieved by a file system using [**IoGetFileObjectGenericMapping**](https://msdn.microsoft.com/library/windows/hardware/ff549231). Normally, this mapping is done during IRP\_MJ\_CREATE processing by the I/O manager prior to calling the file system. But this might be done by a file system checking security on specific operations (specialized FSCTL operations, for example).
 
- 
+ 
 
- 
+ 
 
 
 

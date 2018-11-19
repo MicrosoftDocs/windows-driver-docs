@@ -1,6 +1,5 @@
 ---
 title: WMI Class Examples
-author: windows-driver-content
 description: WMI Class Examples
 ms.assetid: 5b0ef39a-32bd-4f62-ad8f-fdab74409294
 keywords: ["classes WDK WMI", "WMI WDK kernel , classes"]
@@ -114,9 +113,9 @@ class Vendor_SerialSendEvent : WMIEvent
       boolean Active;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

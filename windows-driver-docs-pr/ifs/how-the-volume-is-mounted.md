@@ -1,6 +1,5 @@
 ---
 title: How the Volume Is Mounted
-author: windows-driver-content
 description: How the Volume Is Mounted
 ms.assetid: e8f39b06-9904-40e8-af52-eae310d11fa7
 keywords:
@@ -25,11 +24,11 @@ After the volume is mounted by the file system, file system filter drivers can a
 
 **Note**   The storage device object for the volume resides in the storage device stack, but it is not necessarily the topmost device object in the stack. Moreover, even after the volume is mounted, storage filter drivers can still attach to the top of the storage stack. It is important for driver writers to keep in mind that, when the file system sends an IRP from the VDO to the storage device stack, it sends it to the storage device object for the volume, not the topmost device object in the stack. (However, when the I/O Manager sends an IRP directly to the storage stack, bypassing the file system, that IRP is sent to the topmost device object in the stack.)
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

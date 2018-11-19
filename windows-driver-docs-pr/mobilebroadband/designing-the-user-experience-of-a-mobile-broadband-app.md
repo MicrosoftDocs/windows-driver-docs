@@ -58,7 +58,7 @@ The following shows how different pages in the app can be organized:
 **Tip**  
 For prepaid plans, the account overview could directly link to a **Make a Payment** page for refill scenarios.
 
- 
+ 
 
 For more information about how to design these pages, see the following topics:
 
@@ -87,9 +87,9 @@ For more information about how to design these pages, see the following topics:
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -69,9 +69,9 @@ The function 'DispatchPassIrp' does not have a _Dispatch_type_ annotation matchi
 
 This use of a loop in the dispatch table is common in some filter drivers. In this situation, the error message can be ignored, as this is a limitation of static analysis. The Code Analysis tool reports this error when the annotations on the function do not match the dispatch table entry slot. In this case, the Code Analysis tool reports an illegal assignment (that’s undone later). However, there is no way for a static tool to know that an illegal state will be undone later. If you know you are making an assignments this way, and fixing them later, you can suppress the warning.
 
- 
+ 
 
- 
+ 
 
 
 

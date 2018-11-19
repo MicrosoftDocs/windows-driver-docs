@@ -3,7 +3,6 @@ title: envvar
 description: The envvar extension displays the value of the specified environment variable.
 ms.assetid: 7a6e1796-08e0-414e-a092-326b30c8ce8f
 keywords: ["envvar Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the environment variable whose value is displayed. *Variable* is not c
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +63,9 @@ The **!envvar** extension works both in user mode and in kernel mode. However, i
         _nt_symbol_path = srv*C:\mysyms*https://msdl.microsoft.com/download/symbols
 ```
 
- 
+ 
 
- 
+ 
 
 
 

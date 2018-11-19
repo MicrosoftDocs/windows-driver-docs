@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SET_CIPHER_KEY_INFO
-author: windows-driver-content
 description: WDI_TLV_SET_CIPHER_KEY_INFO is a TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
 ms.assetid: 6352284A-73CD-4B15-A057-80D0C8518CD5
 ms.date: 07/18/2017
@@ -39,7 +38,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CIPHER\_KEY\_WEP\_KEY**](wdi-tlv-cipher-key-wep-key.md)                                |                                | X        | Specifies the WEP key. This is only present if the cipher algorithm is WDI\_CIPHER\_ALGO\_WEP40, WDI\_CIPHER\_ALGO\_WEP104, or WDI\_CIPHER\_ALGO\_WEP.                                                                                                                                                                                                            |
 | [**WDI\_TLV\_CIPHER\_KEY\_IHV\_KEY**](wdi-tlv-cipher-key-ihv-key.md)                                |                                | X        | Specifies the IHV cipher key. This is only present if [**WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO**](wdi-tlv-cipher-key-type-info.md) is in the range WDI\_CIPHER\_ALGO\_IHV\_START to WDI\_CIPHER\_ALGO\_IHV\_END.                                                                                                                                                     |
 
- 
+ 
 
 Requirements
 ------------
@@ -65,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

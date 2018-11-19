@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_ENUMERATE_PORTS
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID_GEN_ENUMERATE_PORTS OID to determine the characteristics of the active NDIS ports that are associated with an underlying miniport adapter.
 ms.assetid: 42a12a05-e360-4493-b037-d3a63906a132
 ms.date: 08/08/2017
@@ -52,9 +51,9 @@ Requirements
 
 [**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791)
 
- 
+ 
 
- 
+ 
 
 
 

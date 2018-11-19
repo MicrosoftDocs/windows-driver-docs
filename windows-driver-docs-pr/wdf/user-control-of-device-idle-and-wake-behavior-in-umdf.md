@@ -1,6 +1,5 @@
 ---
 title: User Control of Device Idle and Wake Behavior in UMDF
-author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior in UMDF
 ms.assetid: 9341c412-dd0a-4e80-a164-250e24004082
 keywords:
@@ -45,9 +44,9 @@ The framework examines the **WdfDefaultIdleInWorkingState** registry value only 
 
 The framework examines the **WdfDefaultWakeFromSleepState** registry values only if the driver sets the *UserControlOfWakeSettings* parameter to **IWakeAllowUserControl** and the *Enabled* parameter to **WdfTrue** or **WdfUseDefault** when the driver calls the [**IWDFDevice2::AssignSxWakeSettings**](https://msdn.microsoft.com/library/windows/hardware/ff556923) method.
 
- 
+ 
 
- 
+ 
 
 
 

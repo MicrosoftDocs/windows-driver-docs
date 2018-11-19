@@ -20,9 +20,9 @@ A *message GUID* is a GUID assigned to the trace messages from a particular prov
 
 Event Tracing for Windows (ETW) uses the message GUID to associate the trace messages with the correct TMF file. For more information about how this is done, see [Tracepdb](tracepdb.md).
 
- 
+ 
 
- 
+ 
 
 
 

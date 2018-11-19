@@ -1,6 +1,5 @@
 ---
 title: Filter Device Object Attached to a Volume
-author: windows-driver-content
 description: Filter Device Object Attached to a Volume
 ms.assetid: cf152065-fc03-4f5f-b65b-13a76e83d745
 keywords:
@@ -130,11 +129,11 @@ File system filter device objects, attached to volumes, are required to pass all
 
 For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

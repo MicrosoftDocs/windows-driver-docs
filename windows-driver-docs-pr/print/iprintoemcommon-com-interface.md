@@ -1,6 +1,5 @@
 ---
 title: IPrintOemCommon COM Interface
-author: windows-driver-content
 description: IPrintOemCommon COM Interface
 ms.assetid: 1d4b2f77-6682-4a4b-8d7f-34acd03523e1
 ms.date: 04/20/2017
@@ -32,18 +31,18 @@ The following table lists and describes all the methods that the `IPrintOemCommo
 </tr>
 <tr class="even">
 <td><p><strong>IPrintOemCommon::GetInfo</strong></p></td>
-<td><p>Returns a plug-in's identification information.</p></td>
+<td><p>Returns a plug-in&#39;s identification information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For information about how these methods are implemented for UI plug-ins, see [IPrintOemUI COM Interface](iprintoemui-com-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

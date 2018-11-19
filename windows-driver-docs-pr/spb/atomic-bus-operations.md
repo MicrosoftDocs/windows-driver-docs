@@ -1,6 +1,5 @@
 ---
 title: Atomic Bus Operations
-author: windows-driver-content
 description: To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation.
 ms.assetid: F8CD670F-C817-40BF-AF4B-5F3839E46EFB
 ms.date: 04/20/2017
@@ -70,9 +69,9 @@ Other patterns of requests might be used instead to perform this read-modify-wri
 
 To perform a read-modify-write on function address 0 in this device, the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request in step 1 of the previous list can be replaced by a simple read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794)) request.
 
- 
+ 
 
- 
+ 
 
 
 

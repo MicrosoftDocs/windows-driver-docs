@@ -3,7 +3,6 @@ title: Advanced SymSrv Use
 description: Advanced SymSrv Use
 ms.assetid: 16d4dda0-4bcf-4450-9972-e20d71efc845
 keywords: ["SymSrv, features", "caching symbols", "symbol servers, caching", "symbols, caching", "symbol servers, downstream store", "downstream store (symbol server)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -57,7 +56,7 @@ If the *DownstreamStore* parameter is omitted and no extra asterisk is included 
 
 **Note**   If you are accessing symbols from an HTTP or HTTPS site, or if the symbol store uses compressed files, a downstream store is always used. If no downstream store is specified, one will be created in the sym subdirectory of the home directory.
 
- 
+ 
 
 <span id="__Server_Share"></span><span id="__server_share"></span><span id="__SERVER_SHARE"></span>*\\\\Server\\Share*  
 Specifies the server and share of the remote symbol store.
@@ -81,13 +80,13 @@ set _NT_SYMBOL_PATH=symsrv*symsrv.dll*c:\localsymbols*\\mybuilds\mysymbols
 To set the symbol path so that the debugger will copy symbol files from the HTTP site www.company.com/manysymbols to a local network directory \\\\localserver\\myshare\\mycache, use:
 
 ```console
-set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*http://www.company.com/manysymbols
+set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*https://www.company.com/manysymbols
 ```
 
 This last example can also be shortened as such:
 
 ```console
-set _NT_SYMBOL_PATH=srv*\\localserver\myshare\mycache*http://www.company.com/manysymbols
+set _NT_SYMBOL_PATH=srv*\\localserver\myshare\mycache*https://www.company.com/manysymbols
 ```
 
 In addition, the symbol path can contain several directories or symbol servers, separated by semicolons. This allows you to locate symbols from multiple locations (or even multiple symbol servers). If a binary has a mismatched symbol file, the debugger cannot locate it using the symbol server because it checks only for the exact parameters. However, the debugger may find a mismatched symbol file with the correct name, using the traditional symbol path, and successfully load it. Even though the file is technically not the correct symbol file, it might provide useful information.
@@ -108,7 +107,7 @@ It is possible to have a vast symbol store that includes symbol files for many d
 
 You can specify any number of downstream stores, separated by asterisks. These stores are known as *cascading symbol stores*.
 
-After the initial **srv\*** or **symsrv\****ServerDLL***\***, each subsequent token represents a symbol location. The token furthest left is checked first. An empty token -- indicated by two asterisks in a row, or by an asterisk at the end of the string -- represents the default downstream store.
+After the initial **srv\\*** or **symsrv\\**<strong>ServerDLL</strong>*\***, each subsequent token represents a symbol location. The token furthest left is checked first. An empty token -- indicated by two asterisks in a row, or by an asterisk at the end of the string -- represents the default downstream store.
 
 Here is an example of a symbol path that uses two downstream stores to hold information from the main symbol store being accessed. These could be called the master store, the mid-level store, and the local cache:
 
@@ -116,12 +115,12 @@ Here is an example of a symbol path that uses two downstream stores to hold info
 srv*c:\localcache*\\interim\store*https://msdl.microsoft.com/download/symbols
 ```
 
-In this scenario, SymSrv will first look in c:\\localcache for a symbol file. If it is found there, it will return a path to it. If it is not found there, it will look in \\\\interim\\store. If the symbol file is found there, SymSrv will copy it to c:\\localcache and return the path. If it is not found there, SymSrv will look in the [Microsoft public symbol store](microsoft-public-symbols.md) at https://msdl.microsoft.com/download/symbols; if the file is found there, SymSrv will copy it to both \\\\interim\\store and c:\\localcache.
+In this scenario, SymSrv will first look in c:\\localcache for a symbol file. If it is found there, it will return a path to it. If it is not found there, it will look in \\\\interim\\store. If the symbol file is found there, SymSrv will copy it to c:\\localcache and return the path. If it is not found there, SymSrv will look in the [Microsoft public symbol store](microsoft-public-symbols.md) at <https://msdl.microsoft.com/download/symbols>; if the file is found there, SymSrv will copy it to both \\\\interim\\store and c:\\localcache.
 
 A similar behavior would be obtained by using the following path:
 
 ```console
-srv**\\interim\store*http://internetsite
+srv**\\interim\store*https://internetsite
 ```
 
 In this case, the local cache is the default downstream store and the master store is an internet site. A mid-level store of \\\\interim\\store has been specified for use in between the other two.
@@ -174,12 +173,12 @@ srv*C:\Symbols*\\MachineName\Symbols*https://SymProxyName/Symbols
 It is possible to specify multiple chains of symbol servers and cache locations, separated by a semi colon “;”. If the symbols are located in the first chain, the second chain is not traversed. If the symbols are not located in the first chain, the second chain will be traversed and if the symbols are located in the second chain, they will be cached in the specified location. This approach will allow a primary symbol server to normally be used, with a secondary server only being used, if the symbols are not available on the primary symbol server specified in the first chain.
 
 ```console
-srv*C:\Symbols*\\Machine1\Symbols*http://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
+srv*C:\Symbols*\\Machine1\Symbols*https://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
 ```
 
 ### <span id="cache_localsymbolcache"></span><span id="CACHE_LOCALSYMBOLCACHE"></span>cache\**localsymbolcache*
 
-Another way to create a local cache of symbols is by using the **cache\****localsymbolcache* string in your symbol path. This is not part of the symbol server element, but a separate element in your symbol path. The debugger will use the specified directory *localsymbolcache* to store any symbols loaded from any element that appears in your symbol path to the right of this string. This allows you to use a local cache for symbols downloaded from any location, not just those downloaded by a symbol server.
+Another way to create a local cache of symbols is by using the **cache\\**<em>*localsymbolcache</em> string in your symbol path. This is not part of the symbol server element, but a separate element in your symbol path. The debugger will use the specified directory *localsymbolcache* to store any symbols loaded from any element that appears in your symbol path to the right of this string. This allows you to use a local cache for symbols downloaded from any location, not just those downloaded by a symbol server.
 
 For example, the following symbol path will not cache symbols taken from *\\\\someshare*. It will use c:\\mysymbols to cache symbols taken from *\\\\anothershare*, because the element beginning with *\\\\anothershare* appears to the right of the **cache\*c:\\mysymbols** element. It will also use c:\\mysymbols to cache symbols taken from the Microsoft public symbol store, because of the usual syntax used by the symbol server (**srv** with two or more asterisks). Moreover, if you subsequently use the [**.sympath+**](-sympath--set-symbol-path-.md) command to add additional locations to this path, these new elements will also be cached, since they will be appended to the right side of the path.
 
@@ -199,9 +198,9 @@ If this search is successful, **SymbolServer** passes the path to the caller and
 
 The AgeStore tool can be used to delete cached files that are older than a specified date, or to reduce the contents of the cache below a specified size. This can be useful if your downstream store is too large. For details, see [AgeStore](agestore.md).
 
- 
+ 
 
- 
+ 
 
 
 

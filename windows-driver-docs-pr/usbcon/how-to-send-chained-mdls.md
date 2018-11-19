@@ -1,7 +1,6 @@
 ---
 Description: In this topic, you will learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of MDL structure.
 title: How to send chained MDLs
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

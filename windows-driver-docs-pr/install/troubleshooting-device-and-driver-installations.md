@@ -33,9 +33,9 @@ You can use the following guidelines to either verify that your device is instal
 
 Additionally, in Windows Server 2003, Windows XP, and Windows 2000, a [co-installer](writing-a-co-installer.md) can provide a troubleshooter that helps users diagnose problems with your device. See [**DIF_TROUBLESHOOTER**](https://msdn.microsoft.com/library/windows/hardware/ff543726) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

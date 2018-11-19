@@ -1,6 +1,5 @@
 ---
 title: Constructing a Package-Aware Driver with Updated Core Drivers
-author: windows-driver-content
 description: Constructing a Package-Aware Driver with Updated Core Drivers
 ms.assetid: 801ac83c-a04a-4a3f-81a9-24010a390ee5
 ms.date: 04/20/2017
@@ -22,7 +21,7 @@ If your package-aware driver package must use a version of the core driver packa
 
 **Note**   If possible, avoid making your package-aware driver package dependent on a system-supplied core driver package that is newer than the initial Windows Vista release. Otherwise, you must take additional steps to ensure that your driver package installs properly on Windows Vista releases with older versions of the core driver package.
 
- 
+ 
 
 Localized help content is included in the core driver package, but this content will not be updated after the initial Windows Vista release. When selecting a language for a driver package, use the language that is the most likely to be understood by those installing the package. Typically, a manufacturer who wants to ship a single package to cover multiple languages should use English. The choice of a language for the driver package will not impact the localized help content already available on client machines.
 
@@ -36,9 +35,9 @@ This section discusses the following topics:
 
 [Updating Your Package-Aware Driver's INF](updating-your-package-aware-driver-s-inf.md)
 
- 
+ 
 
- 
+ 
 
 
 

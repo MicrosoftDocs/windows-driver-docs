@@ -1,6 +1,5 @@
 ---
 title: GDL Construct Unions
-author: windows-driver-content
 description: GDL Construct Unions
 ms.assetid: 0ca237fe-7f47-4b9c-8963-676a2afd1140
 keywords:
@@ -85,9 +84,9 @@ When [attributes](gdl-attributes.md) with the same [keyword](gdl-keywords.md) ar
 
 The GDL parser takes the syntactical representation of the GDL stream and creates an internal logical representation of the GDL commands. The internal representation of these commands is then converted to XML and becomes a snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

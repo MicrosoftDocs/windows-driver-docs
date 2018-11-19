@@ -1,6 +1,5 @@
 ---
 title: Using Multiple GPD Files in a Minidriver
-author: windows-driver-content
 description: Using Multiple GPD Files in a Minidriver
 ms.assetid: 2ec08b46-a286-4af8-a5d4-e0306f731b3f
 keywords:
@@ -32,9 +31,9 @@ Each included file must end with a complete GPD file entry, and the file must co
 
 The GPD parser treats the top-level GPD file and all included files as if they were one long file. Therefore, macros defined in one file can be referenced in subsequently included files. If a GPD file entry is duplicated, the most recently parsed entry replaces previous ones. Entries not duplicated are added to Unidrv's database.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ Consistent with the *NDIS Specification*, the MB driver model evolution is *addi
 
 **Important**  Only under extremely rare circumstances will existing OIDs be deprecated or members of existing OID data structures not be used in the next version. If that happens, these changes and their impacts on backward compatibility shall be clearly documented in subsequent documentation about newer versions of the MB driver model specification.
 
- 
+ 
 
 This documentation covers the Windows 8 release of the MB driver model. The driver model version has been incremented to version 2.0. Some OID revisions continue to be revision number 1, while some have been updated to revision 2. For more information about which revisions to use with respective OIDs, see [MB Data Model](mb-data-model.md).
 
@@ -27,9 +27,9 @@ When the driver model moves to the next version, its version number is increased
 
 The driver model version is conveyed by [OID\_WWAN\_DRIVER\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569825). The MB Service sends an OID\_WWAN\_DRIVER\_CAPS query request to the miniport driver during [MB Miniport Driver Initialization](mb-miniport-driver-initialization.md). Individual OID revisions are described by the **Revision** member of the [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure that is included as part of the data structure for each individual OID.
 
- 
+ 
 
- 
+ 
 
 
 

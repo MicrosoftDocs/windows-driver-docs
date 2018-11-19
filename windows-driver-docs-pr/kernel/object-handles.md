@@ -1,6 +1,5 @@
 ---
 title: Object Handles
-author: windows-driver-content
 description: Object Handles
 ms.assetid: deeeb3c0-54e4-4727-ac43-6da79be515d7
 keywords: ["object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel", "private object handles WDK", "shared object handles WDK"]
@@ -34,36 +33,36 @@ Here is a list of object types that drivers typically use, and the routines that
 <tbody>
 <tr class="odd">
 <td><p>File</p></td>
-<td><p>[<strong>IoCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548418), [<strong>ZwCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566424), [<strong>ZwOpenFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567011)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548418" data-raw-source="[&lt;strong&gt;IoCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548418)"><strong>IoCreateFile</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566424)"><strong>ZwCreateFile</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567011" data-raw-source="[&lt;strong&gt;ZwOpenFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567011)"><strong>ZwOpenFile</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Registry keys</p></td>
-<td><p>[<strong>IoOpenDeviceInterfaceRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549433), [<strong>IoOpenDeviceRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549443), [<strong>ZwCreateKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566425), [<strong>ZwOpenKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567014)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549433" data-raw-source="[&lt;strong&gt;IoOpenDeviceInterfaceRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549433)"><strong>IoOpenDeviceInterfaceRegistryKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549443" data-raw-source="[&lt;strong&gt;IoOpenDeviceRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549443)"><strong>IoOpenDeviceRegistryKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425" data-raw-source="[&lt;strong&gt;ZwCreateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566425)"><strong>ZwCreateKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567014" data-raw-source="[&lt;strong&gt;ZwOpenKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567014)"><strong>ZwOpenKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Threads</p></td>
-<td><p>[<strong>PsCreateSystemThread</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559932)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559932" data-raw-source="[&lt;strong&gt;PsCreateSystemThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559932)"><strong>PsCreateSystemThread</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Events</p></td>
-<td><p>[<strong>IoCreateSynchronizationEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549045), [<strong>IoCreateNotificationEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549039)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549045" data-raw-source="[&lt;strong&gt;IoCreateSynchronizationEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549045)"><strong>IoCreateSynchronizationEvent</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549039" data-raw-source="[&lt;strong&gt;IoCreateNotificationEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549039)"><strong>IoCreateNotificationEvent</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Symbolic links</p></td>
-<td><p>[<strong>ZwOpenSymbolicLinkObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567030)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567030" data-raw-source="[&lt;strong&gt;ZwOpenSymbolicLinkObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567030)"><strong>ZwOpenSymbolicLinkObject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory objects</p></td>
-<td><p>[<strong>ZwCreateDirectoryObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566421)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566421" data-raw-source="[&lt;strong&gt;ZwCreateDirectoryObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566421)"><strong>ZwCreateDirectoryObject</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Section objects</p></td>
-<td><p>[<strong>ZwOpenSection</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567029)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567029" data-raw-source="[&lt;strong&gt;ZwOpenSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567029)"><strong>ZwOpenSection</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When the driver no longer requires access to the object, it calls the [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) routine to close the handle. This works for all of the object types listed in the table above.
 
@@ -103,9 +102,9 @@ A driver that shares object handles between kernel mode and user mode must be ca
 
 If a user-mode application creates an event object, a driver can safely wait for that event to be signaled, but only if the application passes a handle to the event object to the driver through an IOCTL. The driver must handle the IOCTL in the context of the process that created the event and must validate that the handle is an event handle by calling [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679).
 
- 
+ 
 
- 
+ 
 
 
 

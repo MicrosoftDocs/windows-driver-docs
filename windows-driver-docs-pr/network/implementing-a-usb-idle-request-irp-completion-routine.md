@@ -17,7 +17,7 @@ The completion routine only has to call [**NdisMIdleNotificationComplete**](http
 
 **Note**  The completion routine must return STATUS\_MORE\_PROCESSING\_REQUIRED if the USB miniport driver will reuse the IRP resources during another idle notification from NDIS.
 
- 
+ 
 
 The following is an example of a completion routine for the USB idle request IRP.
 
@@ -40,9 +40,9 @@ VOID MiniportUsbIdleRequestCompletion(PVOID AdapterContext)
 
 For more information about the USB idle request callback routine, see USB Idle Request IRP Completion Routine.
 
- 
+ 
 
- 
+ 
 
 
 

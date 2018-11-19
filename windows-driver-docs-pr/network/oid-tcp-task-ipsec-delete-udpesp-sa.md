@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA
-author: windows-driver-content
 description: This topic describes the OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA object identifier (OID).
 ms.assetid: f598199e-48f2-4ff5-846e-e88139408824
 keywords:

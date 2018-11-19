@@ -3,7 +3,6 @@ title: .hideinjectedcode (Hide Injected Code)
 description: The .hideinjectedcode command turns on, or off, the hiding of injected code.
 ms.assetid: 08C5DAC1-1D5B-431F-9E17-E8F0FF60F782
 keywords: [".hideinjectedcode (Hide Injected Code) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,9 +41,9 @@ Remarks
 
 If you enter this command with no parameter, it displays help for the command.
 
- 
+ 
 
- 
+ 
 
 
 

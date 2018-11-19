@@ -1,6 +1,5 @@
 ---
 title: About Sensor Driver Events
-author: windows-driver-content
 description: About Sensor Driver Events
 ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
 ms.date: 07/20/2018
@@ -16,7 +15,7 @@ Sensor drivers can raise **state change events**, which notify applications abou
 
 **Note**  Do not use [**IWDFDevice::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff558835) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
 
- 
+ 
 
 ## State Change Events
 
@@ -69,7 +68,7 @@ Like other data requests, requests for event notifications are made secure throu
 >[!CAUTION]
 > Make sure to use the sensor class extension to process all I/O requests for sensors. By doing this, you are less likely to reveal a user's private information.
 
- 
+ 
 
 For more information about data privacy, see [Privacy and Security in the Sensor and Location Platform](https://docs.microsoft.com/windows-hardware/drivers/gnss/privacy-and-security-in-the-sensor-and-location-platform)
 

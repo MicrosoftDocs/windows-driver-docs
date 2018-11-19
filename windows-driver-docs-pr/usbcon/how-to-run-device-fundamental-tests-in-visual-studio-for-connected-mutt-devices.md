@@ -1,7 +1,6 @@
 ---
 Description: Describes the Device Fundamental tests that you must run for MUTT devices that are attached to available ports.
 title: Run system power devfund tests in Visual Studio for MUTT devices
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

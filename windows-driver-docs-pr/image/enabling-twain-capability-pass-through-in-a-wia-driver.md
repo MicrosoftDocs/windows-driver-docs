@@ -1,6 +1,5 @@
 ---
 title: Enabling TWAIN Capability Pass-Through in a WIA Driver
-author: windows-driver-content
 description: Enabling TWAIN Capability Pass-Through in a WIA Driver
 ms.assetid: b2108109-9e41-481d-bc25-67327420faf9
 ms.date: 04/20/2017
@@ -39,9 +38,9 @@ The following example is taken from the *wiascanr* sample (which is included in 
      WiaItemTypeRoot | WiaItemTypeFolder|WiaItemTypeDevice;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

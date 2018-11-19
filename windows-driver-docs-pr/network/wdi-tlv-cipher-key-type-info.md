@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TYPE_INFO
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a TLV that contains cipher key type information for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
 ms.assetid: 1168D53D-A837-4E3F-8E31-FB86CF866BA3
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                                                | Specifies whether the port should delete the key on a roam. If this value is set to 0, the key must be deleted when the port disconnects from the BSS network or connects to the BSS network. If this value is set to 1, the key should be deleted on an explicit delete or on a reset request. |
 | [**WDI\_CIPHER\_KEY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897806)           | Specifies the type of key being published.                                                                                                                                                                                                                                                      |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

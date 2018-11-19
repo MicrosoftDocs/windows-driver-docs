@@ -1,6 +1,5 @@
 ---
 title: System Shutdown State S5
-author: windows-driver-content
 description: System Shutdown State S5
 ms.assetid: c08d688d-c31a-4d57-a343-406edfa35e8f
 keywords: ["S5 WDK power management", "system shutdown states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management", "system power states WDK kernel , shutdown state", "shutdown states WDK power management"]
@@ -32,9 +31,9 @@ Long and undefined. Only physical interaction, such as the user pressing the ON 
 <a href="" id="system-hardware-context"></a>**System hardware context**  
 None retained.
 
- 
+ 
 
- 
+ 
 
 
 

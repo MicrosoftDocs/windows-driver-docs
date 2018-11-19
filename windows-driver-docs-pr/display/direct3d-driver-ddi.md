@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 The following sections describe the callback functions and operation codes that comprise the Direct3D DDI.
 
- 
+ 
 
- 
+ 
 
 
 

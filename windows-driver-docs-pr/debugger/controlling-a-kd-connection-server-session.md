@@ -3,7 +3,6 @@ title: Controlling a KD Connection Server Session
 description: Controlling a KD Connection Server Session
 ms.assetid: d927575f-f408-48d0-81f4-0711a09b0015
 keywords: ["KD connection server, controlling a session"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ for details. The KD connection server will remain in operation and can be re-use
 
 The KD connection server can be terminated from either computer. To terminate it from the smart client, use the [**.endpsrv (End Process Server)**](-endpsrv--end-process-server-.md) command. To terminate the KD connection server from the computer it is running on, use Task Manager to end the kdsrv.exe process.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,23 +39,27 @@ A DirectX 9.0 version driver must support:
 
 -   Reporting the capabilities of its device by returning a D3DCAPS9 structure when requested. The driver returns a D3DCAPS9 structure in response to a **GetDriverInfo2** request using the D3DGDI2\_TYPE\_GETD3DCAPS9 value similarly to how it returns a D3DCAPS8 structure as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this request is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md). D3DCAPS9 contains both DirectX 9.0 and DirectX 8.0 related capabilities.
 
-     
 
-    The driver must continue to report only DirectX 8.0 related capabilities in D3DCAPS8 when queried by the DirectX 8.0 runtime.
+
+
+The driver must continue to report only DirectX 8.0 related capabilities in D3DCAPS8 when queried by the DirectX 8.0 runtime.
+
 
 -   Setting the D3DFORMAT\_OP\_BUMPMAP flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) structure for all surface formats that can support bump mapping in either fixed-function or programmable-pixel pipes.
 
 -   Reporting [support of asynchronous query operations](supporting-asynchronous-query-operations.md), even if the driver just responds by indicating that no query types are supported. For more information, see [Verifying Support of Query Types](verifying-support-of-query-types.md).
 
-     
 
-    Querying asynchronously imposes two new requirements on the [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) DDI. For more information, see [Imposing Requirements on the D3dDrawPrimitives2 DDI](imposing-requirements-on-the-d3ddrawprimitives2-ddi.md).
+
+
+Querying asynchronously imposes two new requirements on the [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) DDI. For more information, see [Imposing Requirements on the D3dDrawPrimitives2 DDI](imposing-requirements-on-the-d3ddrawprimitives2-ddi.md).
+
 
 -   Letting applications perform other [processing with busy present queues](processing-with-busy-present-queues.md).
 
- 
 
- 
+
+
 
 
 

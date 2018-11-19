@@ -41,9 +41,9 @@ Indicates the current lock type for a signal.
 
 When specifying the particular property of the KSPROPSETID\_BdaSignalStats property set to get a signal statistic from a pin, set the **NodeId** member of the KSP\_NODE structure to −1.
 
- 
+ 
 
- 
+ 
 
 
 

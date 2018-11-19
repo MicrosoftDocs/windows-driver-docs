@@ -27,9 +27,9 @@ In the case of the prepackaged DLS set, management of the set is delegated to Di
 
 ROM sets are also managed by the system. In order to preserve maximum sample memory for use by downloadable samples, the miniport driver should not load the entire ROM set into sample RAM. (This is not an issue for hardware that can play samples directly out of ROM.) The system provides instrument download requests for needed updates before the update change itself is delivered. If an instrument download refers to an update in the ROM sample set, then the **dwDLId** member of the DMUS\_DOWNLOADINFO structure (described in the Microsoft Windows SDK documentation) contains the tag DOWNLOAD\_ID\_ROMSET (defined as 0xFFFFFFFF).
 
- 
+ 
 
- 
+ 
 
 
 

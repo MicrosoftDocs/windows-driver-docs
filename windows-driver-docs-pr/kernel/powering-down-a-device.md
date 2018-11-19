@@ -1,6 +1,5 @@
 ---
 title: Powering Down a Device
-author: windows-driver-content
 description: Powering Down a Device
 ms.assetid: d2525e15-9590-4fc0-955c-ca3540c13375
 keywords: ["device power downs WDK kernel", "powering down devices WDK kernel", "IRP_MN_REMOVE_DEVICE", "turning off devices WDK power management", "automatic power downs WDK kernel", "shutdown power management WDK kernel", "off power WDK kernel", "IRPs WDK power management", "surprise removals WDK power management", "device removals WDK power management", "removing devices", "I/O WDK power management", "unexpected device removal WDK power management", "idle detection WDK power management", "conserving power WDK kernel", "I/O request packets WDK power management"]
@@ -26,9 +25,9 @@ At system shutdown, the power manager sends an **IRP\_MN\_SET\_POWER** for a sys
 
 A driver can optionally perform idle detection for its device, or can request that the power manager perform idle detection, so that the device can be powered down when not in use. For further information, see [Detecting an Idle Device](detecting-an-idle-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

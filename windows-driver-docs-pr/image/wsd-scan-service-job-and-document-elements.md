@@ -15,9 +15,9 @@ This section describes the elements that are associated with scan jobs, job tabl
 
 [WSD Scan Service Document Elements](wsd-scan-service-document-elements.md)
 
- 
+ 
 
- 
+ 
 
 
 

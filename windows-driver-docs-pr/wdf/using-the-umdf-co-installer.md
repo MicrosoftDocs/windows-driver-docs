@@ -1,6 +1,5 @@
 ---
 title: Using the UMDF Co-installer
-author: windows-driver-content
 description: Using the UMDF Co-installer
 ms.assetid: e5ec2122-1602-487b-baad-4a3d9e47cf58
 keywords:
@@ -87,9 +86,9 @@ Your driver's INF file must always contain a **DDInstall.Wdf** section that the 
 
 You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

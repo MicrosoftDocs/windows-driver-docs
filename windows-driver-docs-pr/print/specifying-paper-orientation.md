@@ -1,6 +1,5 @@
 ---
 title: Specifying Paper Orientation
-author: windows-driver-content
 description: Specifying Paper Orientation
 ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
 keywords:
@@ -64,11 +63,11 @@ However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 o
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

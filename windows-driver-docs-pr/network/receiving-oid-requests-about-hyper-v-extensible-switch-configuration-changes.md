@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 
 The extensible switch interface notifies underlying extensions about changes to the extensible switch component configuration and policy parameters by issuing extensible switch object identifier (OID) set requests. These requests are issued by the protocol edge of the extensible switch to notify underlying extensions about changes to the extensible switch component configuration and policy parameters. These OID requests move through the extensible switch driver stack to the underlying miniport edge of the extensible switch.
 
-The following figure shows the extensible switch control path for OID requests for NDIS 6.40 (Windows Server 2012 R2) and later.
+The following figure shows the extensible switch control path for OID requests for NDIS 6.40 (Windows Server 2012 R2) and later.
 
 ![diagram of the vswitch oid control path for ndis 6.40](images/vswitch-oid-controlpath-ndis640.png)
 
-The following figure shows the extensible switch control path for OID requests for NDIS 6.30 (Windows Server 2012).
+The following figure shows the extensible switch control path for OID requests for NDIS 6.30 (Windows Server 2012).
 
 ![diagram of the vswitch oid control path for ndis 6.30](images/vswitch-oid-controlpath.png)
 
-**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. 
+**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. 
 
 The protocol edge of the extensible switch issues OID set requests for the following types of notifications:
 
@@ -40,9 +40,7 @@ The protocol edge of the extensible switch issues OID set requests for the follo
 
     For more information about this type of OID notification, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
-    **Note**  The extension is not notified of changes to the default port or switch policies that are managed by the underlying miniport edge of the extensible switch.
-
-     
+    **Note**  The extension is not notified of changes to the default port or switch policies that are managed by the underlying miniport edge of the extensible switch.
 
 -   Save or restore run-time port data.
 
@@ -80,13 +78,12 @@ The extensible switch extension must follow these guidelines when its [*FilterOi
 
 -   If the extension does not complete the OID request, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the request down the extensible switch driver stack.
 
-    **Note**  Before the driver calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830), the driver must call [**NdisAllocateCloneOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff560706) to allocate an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure and transfer the request information to the new structure.
-
-     
+    **Note**  Before the driver calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830), the driver must call [**NdisAllocateCloneOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff560706) to allocate an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure and transfer the request information to the new structure.
 
     The extension should monitor the completion result of the OID request when its [*FilterOidRequestComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549956) function is called. This allows the extension to determine whether the operation on an extensible switch component completed successfully or was vetoed by an underlying extension.
 
     For more information on how to filter and forward an OID request, see [Filtering OID Requests in an NDIS Filter Driver](filtering-oid-requests-in-an-ndis-filter-driver.md).
+
 
 -   NDIS and overlying protocol and filter drivers can issue OID requests for hardware offload technologies to the underlying physical network adapter. This includes OID requests for offload technologies, such as virtual machine queue (VMQ), Internet Protocol security (IPsec), and single root I/O virtualization (SR-IOV).
 
@@ -100,19 +97,15 @@ The extensible switch extension must follow these guidelines when its [*FilterOi
 
     For more information on how to handle the [OID\_SWITCH\_NIC\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266) OID request, see [Forwarding OID Requests to Physical Network Adapters](forwarding-oid-requests-to-physical-network-adapters.md).
 
-    **Note**  Extension filter drivers can generate OID requests of [OID\_SWITCH\_NIC\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266) to issue private OIDs to any physical adapter that is bound to the extensible switch external network adapter.
+    **Note**  Extension filter drivers can generate OID requests of [OID\_SWITCH\_NIC\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266) to issue private OIDs to any physical adapter that is bound to the extensible switch external network adapter.
 
-     
-
-    **Note**  Stack restart requests using [**NdisFRestartFilter**](https://msdn.microsoft.com/library/windows/hardware/ff562611) will not complete while an extensible switch OID request is pending. For this reason, an extension that is waiting for a stack restart must complete any ongoing OID requests.
-
-     
+**Note**  Stack restart requests using [**NdisFRestartFilter**](https://msdn.microsoft.com/library/windows/hardware/ff562611) will not complete while an extensible switch OID request is pending. For this reason, an extension that is waiting for a stack restart must complete any ongoing OID requests.
 
 For more information on the control path for extensible switch OID requests, see [Hyper-V Extensible Switch Control Path for OID Requests](hyper-v-extensible-switch-control-path-for-oid-requests.md).
 
- 
 
- 
+
+
 
 
 

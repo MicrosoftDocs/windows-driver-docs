@@ -38,9 +38,9 @@ If you specify an existing listing or summary file, TraceView overwrites the fil
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
 
- 
+ 
 
- 
+ 
 
 
 

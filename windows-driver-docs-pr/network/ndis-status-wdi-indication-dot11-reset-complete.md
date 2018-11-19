@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DOT11_RESET_COMPLETE to indicate the completion of OID_WDI_TASK_DOT11_RESET.
 ms.assetid: bef0eb15-5089-4b42-9d89-d45d1145d8e7
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE to in
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +48,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

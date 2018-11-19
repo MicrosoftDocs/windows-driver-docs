@@ -1,6 +1,5 @@
 ---
 title: Creating WDF HID Minidrivers
-author: windows-driver-content
 description: This topic describes how to create a Human Interface Device (HID) minidriver using Windows Driver Frameworks (WDF).
 ms.assetid: 4FEDFE4B-F3B2-4B34-80DC-84BFFA4C612B
 ms.date: 04/20/2017
@@ -56,11 +55,11 @@ Both *MsHidUmdf.sys* and *MsHidKmdf.sys* call the HID class driver's [**HidRegis
 | UMDF architecture                                                                   | KMDF architecture                                                                      |
 | ![location of hidumdf.sys in the driver stack](images/UMDF-basedHIDMinidrivers.png) | ![location of mshidkmdf.sys in driver stack](images/Framework-basedHIDMinidrivers.png) |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

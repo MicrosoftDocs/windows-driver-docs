@@ -3,7 +3,6 @@ title: Using SymChk
 description: Using SymChk
 ms.assetid: 60c3df99-a842-4e46-a504-8e2b54030eef
 keywords: ["SymChk, using"]
-ms.author: domars
 ms.date: 10/08/2017
 ms.localizationpriority: medium
 ---
@@ -15,8 +14,9 @@ ms.localizationpriority: medium
 
 The basic syntax for SymChk is as follows:
 
-    symchk [/r] FileNames /s SymbolPath 
-
+```console
+symchk [/r] FileNames /s SymbolPath 
+```
 
 *FileNames* specifies one or more program files whose symbols are needed. If *FileNames* is a directory and the **/r** flag is used, this directory is explored recursively, and SymChk will try to find symbols for all program files in this directory tree. *SymbolPath* specifies where SymChk is to search for symbols.
 
@@ -55,7 +55,7 @@ If a downstream store is specified, SymChk will make copies of all valid symbol 
 SymChk always searches the downstream store before querying the symbol server. Therefore you should be careful about using a downstream store when someone else is maintaining the symbol store. If you run SymChk once and it finds symbol files, it will copy those to the downstream store. If you then run SymChk again after these files have been altered or deleted on the symbol store, SymChk will not notice this fact, since it will find what it is looking for on the downstream store and look no further.
 
 **Note**   SymChk always uses SymSrv (Symsrv.dll) as its symbol server DLL. On the other hand, the debuggers can choose a symbol server DLL other than SymSrv if one is available. (SymSrv is the symbol server included in the Debugging Tools for Windows package.)
- 
+ 
 
 ### <span id="Using_SymChk_to_determine_whether_symbols_are_private_or_public"></span><span id="using_symchk_to_determine_whether_symbols_are_private_or_public"></span><span id="USING_SYMCHK_TO_DETERMINE_WHETHER_SYMBOLS_ARE_PRIVATE_OR_PUBLIC"></span>Using SymChk to determine whether symbols are private or public
 
@@ -101,7 +101,7 @@ For more information, see [Public and Private Symbols](public-and-private-symbol
 
 Here are some examples. The following command searches for symbols for the program Myapp.exe:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\applications 
 
 SYMCHK: Myapp.exe           FAILED  - Myapp.pdb is missing
@@ -112,7 +112,7 @@ SYMCHK: PASSED + IGNORED files = 0
 
 You can try again with a different symbol path:
 
-```
+```console
 e:\debuggers> symchk f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: FAILED files = 0
@@ -125,7 +125,7 @@ A program file is ignored if it contains no executable code. Many resource files
 
 If you prefer to see the file names of all program files, you can use the **/v** option to generate verbose output:
 
-```
+```console
 e:\debuggers> symchk /v f:\myapp.exe /s f:\symbols\newdirectory 
 
 SYMCHK: MyApp.exe           PASSED
@@ -136,7 +136,7 @@ SYMCHK: PASSED + IGNORED files = 1
 
 The following command searches for a huge number of Windows symbols in a symbol server. There are a great variety of possible error messages:
 
-```
+```console
 e:\debuggers> symchk /r c:\windows\system32 /s srv*\\manysymbols\windows 
 
 SYMCHK: msisam11.dll         FAILED  - MSISAM11.pdb is missing
@@ -160,7 +160,7 @@ SYMCHK: PASSED + IGNORED files = 4809
 [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md)
 
 
- 
+ 
 
 
 

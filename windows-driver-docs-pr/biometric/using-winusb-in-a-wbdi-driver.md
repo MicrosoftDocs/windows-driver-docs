@@ -67,7 +67,7 @@ If you do not use the UMDF-USB target, the driver should stop sending pending re
 
 ### <span id="selective_suspend"></span><span id="SELECTIVE_SUSPEND"></span>Selective Suspend
 
-A WBDI driver should support [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144).
+A WBDI driver should support [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
 A device that supports system wake and device idle should enable the registry settings for selective suspend in WinUsb, as shown in this code example from WudfBioUsbSample.inx:
 
@@ -80,9 +80,9 @@ The operating system USB stack cannot guarantee the timing between system wake a
 
 Ideally, the device should be left in a state ready to capture a scan when the system is suspended. If a scan occurs while the system is suspended, the device should cache the input data for an entire fingerprint scan. When the system wakes up, the driver then reads in the data from the device. By supporting this scenario, you can enable system wake and unlock/login scenarios.
 
- 
+ 
 
- 
+ 
 
 
 

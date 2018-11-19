@@ -1,6 +1,5 @@
 ---
 title: Forwarding I/O Requests
-author: windows-driver-content
 description: Forwarding I/O Requests
 ms.assetid: 75e007e3-1b97-44db-ac86-56aab78222a6
 keywords:
@@ -45,9 +44,9 @@ The driver must eventually [complete](completing-i-o-requests.md) every request 
 
 Note that when a driver forwards a request, the framework does not literally transfer the framework request object from the sending driver to the receiving driver. Instead, the framework creates a new request object in the driver that receives the request. Only the request's underlying I/O request packet ([**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)) is transferred from one driver to another.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Printer Attribute Format
-author: windows-driver-content
 description: Printer Attribute Format
 ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
 keywords:
@@ -30,9 +29,9 @@ For example, the \*ModelName attribute is used for specifying a text string that
 
 All attribute names are predefined and are recognized by Unidrv's GPD parser.
 
- 
+ 
 
- 
+ 
 
 
 

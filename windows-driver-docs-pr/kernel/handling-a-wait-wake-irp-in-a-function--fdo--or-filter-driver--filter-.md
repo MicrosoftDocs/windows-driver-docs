@@ -1,6 +1,5 @@
 ---
 title: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
-author: windows-driver-content
 description: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
 ms.assetid: 752b6c3c-f42a-469d-8a43-0778ecbe4541
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management"]
@@ -52,9 +51,9 @@ If a function or filter driver receives a wait/wake IRP for a device that does n
 
 2.  Return the status set in **Irp-&gt;IoStatus.Status** from the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Name Cache Management
-author: windows-driver-content
 description: Name Cache Management
 ms.assetid: 3e1b1419-320e-44e0-a6c2-823517cf07c7
 keywords:
@@ -51,49 +50,49 @@ The RDBSS name cache management routines include the following:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxNameCacheActivateEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554552)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554552" data-raw-source="[&lt;strong&gt;RxNameCacheActivateEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554552)"><strong>RxNameCacheActivateEntry</strong></a></p></td>
 <td align="left"><p>This routine takes a name cache entry and updates the expiration time and the network mini-redirector context. It then puts the entry on the active list.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxNameCacheCheckEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554558)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554558" data-raw-source="[&lt;strong&gt;RxNameCacheCheckEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554558)"><strong>RxNameCacheCheckEntry</strong></a></p></td>
 <td align="left"><p>This routine checks a NAME_CACHE entry for validity.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxNameCacheCreateEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554565)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554565" data-raw-source="[&lt;strong&gt;RxNameCacheCreateEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554565)"><strong>RxNameCacheCreateEntry</strong></a></p></td>
 <td align="left"><p>This routine allocates and initializes a NAME_CACHE structure with the given name string. It is expected that the caller will then initialize any additional network mini-redirector elements of the name cache context and then put the entry on the name cache active list.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxNameCacheExpireEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554569)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554569" data-raw-source="[&lt;strong&gt;RxNameCacheExpireEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554569)"><strong>RxNameCacheExpireEntry</strong></a></p></td>
 <td align="left"><p>This routine puts a NAME_CACHE entry on the free list.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxNameCacheExpireEntryWithShortName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554570)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554570" data-raw-source="[&lt;strong&gt;RxNameCacheExpireEntryWithShortName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554570)"><strong>RxNameCacheExpireEntryWithShortName</strong></a></p></td>
 <td align="left"><p>This routine expires all of the NAME_CACHE entries whose name prefix matches the given short file name.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxNameCacheFetchEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554573)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554573" data-raw-source="[&lt;strong&gt;RxNameCacheFetchEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554573)"><strong>RxNameCacheFetchEntry</strong></a></p></td>
 <td align="left"><p>This routine looks for a match with a specified name string for a NAME_CACHE entry.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxNameCacheFinalize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554575)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554575" data-raw-source="[&lt;strong&gt;RxNameCacheFinalize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554575)"><strong>RxNameCacheFinalize</strong></a></p></td>
 <td align="left"><p>This routine releases the storage for all of the NAME_CACHE entries associated with a NAME_CACHE_CONTROL structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxNameCacheFreeEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554579)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554579" data-raw-source="[&lt;strong&gt;RxNameCacheFreeEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554579)"><strong>RxNameCacheFreeEntry</strong></a></p></td>
 <td align="left"><p>This routine releases the storage for a NAME_CACHE entry and decrements the count of NAME_CACHE cache entries associated with a NAME_CACHE_CONTROL structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxNameCacheInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554586)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554586" data-raw-source="[&lt;strong&gt;RxNameCacheInitialize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554586)"><strong>RxNameCacheInitialize</strong></a></p></td>
 <td align="left"><p>This routine initializes a name cache (a NAME_CACHE_CONTROL structure).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

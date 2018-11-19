@@ -54,9 +54,9 @@ If your device technology has a minidriver model, and you are not able to find a
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
 6.  Refer to the documentation for your technology to learn about the functions that you need to implement. As you implement and organize your functions, you might decide to add additional .cpp or .c files.
 
- 
+ 
 
- 
+ 
 
 
 

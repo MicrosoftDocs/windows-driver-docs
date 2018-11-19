@@ -1,6 +1,5 @@
 ---
 title: Attributes for Simulated Fonts
-author: windows-driver-content
 description: Attributes for Simulated Fonts
 ms.assetid: 000f3c30-2e8a-41b7-ac06-6f2da550ac70
 keywords:
@@ -40,13 +39,13 @@ The following table lists attributes describing the printer's support for simula
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

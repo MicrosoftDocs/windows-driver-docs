@@ -1,7 +1,6 @@
 ---
 Description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
 title: How to open and close static streams in a USB bulk endpoint
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,17 +28,17 @@ The topic contains some notes that are labeled as **WDM drivers**. Those notes d
 
 Before a client driver can open or close streams, the driver must have:
 
--   Called the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.
+- Called the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.
 
-    The method requires the client contract version to be USBD\_CLIENT\_CONTRACT\_VERSION\_602. By specifying that version the client driver must adhere to a set of rules. For more information, see [Best Practices: Using URBs](usb-client-driver-contract-in-windows-8.md).
+  The method requires the client contract version to be USBD\_CLIENT\_CONTRACT\_VERSION\_602. By specifying that version the client driver must adhere to a set of rules. For more information, see [Best Practices: Using URBs](usb-client-driver-contract-in-windows-8.md).
 
-    The call retrieves a WDFUSBDEVICE handle to the framework's USB target device object. That handle is required in order to make subsequent calls to open streams. Typically, the client driver registers itself in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
+  The call retrieves a WDFUSBDEVICE handle to the framework's USB target device object. That handle is required in order to make subsequent calls to open streams. Typically, the client driver registers itself in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
 
-    **WDM drivers:  **Call the [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241) routine and obtain a USBD handle for the driver's registration with the USB driver stack.
+  <strong>WDM drivers:  **Call the [</strong>USBD\_CreateHandle**](<https://msdn.microsoft.com/library/windows/hardware/hh406241>) routine and obtain a USBD handle for the driver's registration with the USB driver stack.
 
--   Configured the device and obtained a WDFUSBPIPE pipe handle to the bulk endpoint that supports streams. To obtain the pipe handle, call the [**WdfUsbInterfaceGetConfiguredPipe**](https://msdn.microsoft.com/library/windows/hardware/ff550057) method on the current alternate setting of an interface in the selected configuration.
+- Configured the device and obtained a WDFUSBPIPE pipe handle to the bulk endpoint that supports streams. To obtain the pipe handle, call the [**WdfUsbInterfaceGetConfiguredPipe**](https://msdn.microsoft.com/library/windows/hardware/ff550057) method on the current alternate setting of an interface in the selected configuration.
 
-    **WDM drivers:  **Obtain a USBD pipe handle by sending a select-configuration or select-interface request. For more information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
+  **WDM drivers:  **Obtain a USBD pipe handle by sending a select-configuration or select-interface request. For more information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
 Instructions
 ------------
@@ -47,50 +46,50 @@ Instructions
 ### How to open static streams
 
 <a href="" id="open-streams"></a>
-1.  Determine whether the underlying USB driver stack and the host controller supports the static streams capability by calling the [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) method. Typically, the client driver calls the routine in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
+1. Determine whether the underlying USB driver stack and the host controller supports the static streams capability by calling the [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) method. Typically, the client driver calls the routine in the driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback routine.
 
-    **WDM drivers:  **Call the [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) routine. Typically, the driver queries for the capabilities that it wants to use in the driver's start-device routine ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)). For code example, see **USBD\_QueryUsbCapability**.
+   <strong>WDM drivers:  **Call the [</strong>USBD\_QueryUsbCapability<strong>](<https://msdn.microsoft.com/library/windows/hardware/hh406230>) routine. Typically, the driver queries for the capabilities that it wants to use in the driver's start-device routine ([</strong>IRP\_MN\_START\_DEVICE<strong>](<https://msdn.microsoft.com/library/windows/hardware/ff551749>)). For code example, see **USBD\_QueryUsbCapability</strong>.
 
-    Provide the following information:
+   Provide the following information:
 
-    -   A handle to the USB device object that was retrieved, in a previous call to [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428), for client driver registration.
+   - A handle to the USB device object that was retrieved, in a previous call to [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428), for client driver registration.
 
-        **WDM drivers:  **Pass the USBD handle that was retrieved in the previous call to [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241).
+     <strong>WDM drivers:  **Pass the USBD handle that was retrieved in the previous call to [</strong>USBD\_CreateHandle**](<https://msdn.microsoft.com/library/windows/hardware/hh406241>).
 
-        If the client driver wants to use a particular capability, the driver must first query the underlying USB driver stack to determine whether the driver stack and the host controller support the capability. If the capability is supported, only then, the driver should send a request to use the capability. Some requests require URBs, such as the streams capability (discussed in step 5). For those requests, make sure that you use the same handle to query capabilities and allocate URBs. That is because the driver stack uses handles to track the supported capabilities that a driver can use.
+     If the client driver wants to use a particular capability, the driver must first query the underlying USB driver stack to determine whether the driver stack and the host controller support the capability. If the capability is supported, only then, the driver should send a request to use the capability. Some requests require URBs, such as the streams capability (discussed in step 5). For those requests, make sure that you use the same handle to query capabilities and allocate URBs. That is because the driver stack uses handles to track the supported capabilities that a driver can use.
 
-        For instance, if you obtained a USBD\_HANDLE (by calling [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241)), query the driver stack by calling [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230), and allocate the URB by calling [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250). Pass the same USBD\_HANDLE in both those calls.
+     For instance, if you obtained a USBD\_HANDLE (by calling [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241)), query the driver stack by calling [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230), and allocate the URB by calling [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250). Pass the same USBD\_HANDLE in both those calls.
 
-        If you call KMDF methods, [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) and [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423), specify the same WDFUSBDEVICE handle to the framework target object in those method calls.
+     If you call KMDF methods, [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) and [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423), specify the same WDFUSBDEVICE handle to the framework target object in those method calls.
 
-    -   The GUID assigned to GUID\_USB\_CAPABILITY\_STATIC\_STREAMS.
-    -   An output buffer (pointer to USHORT). Upon completion the buffer is filled with the maximum number of streams (per endpoint) that are supported by the host controller.
-    -   The length, in bytes, of the output buffer. For streams the length is `sizeof (USHORT)`.
+   - The GUID assigned to GUID\_USB\_CAPABILITY\_STATIC\_STREAMS.
+   - An output buffer (pointer to USHORT). Upon completion the buffer is filled with the maximum number of streams (per endpoint) that are supported by the host controller.
+   - The length, in bytes, of the output buffer. For streams the length is `sizeof (USHORT)`.
 
-2.  Evaluate the returned NTSTATUS value. If the routine completes successfully, returns STATUS\_SUCCESS, the static streams capability is supported. Otherwise, the method returns an appropriate error code.
-3.  Determine the number of streams to open. The maximum number of streams that can be opened is limited by:
-    -   The maximum number of streams supported by the host controller. That number is received by [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) (for WDM drivers, [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230)), in the caller-supplied output buffer. The Microsoft-provided USB driver stack supports up to 255 streams. **WdfUsbTargetDeviceQueryUsbCapability** takes that limitation into consideration while calculating the number of streams. The method never returns a value that is greater than 255.
-    -   The maximum number of streams supported by the endpoint in the device. To get that number, inspect the endpoint companion descriptor (see [**USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/hh406269) in Usbspec.h). To obtain the endpoint companion descriptor, you must parse the configuration descriptor. To obtain the configuration descriptor, the client driver must call the [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method. You must use the helper routines, [**USBD\_ParseConfigurationDescriptorEx**](https://msdn.microsoft.com/library/windows/hardware/ff539102) and [**USBD\_ParseDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff539109). For code example, see the example function named RetrieveStreamInfoFromEndpointDesc in [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
+2. Evaluate the returned NTSTATUS value. If the routine completes successfully, returns STATUS\_SUCCESS, the static streams capability is supported. Otherwise, the method returns an appropriate error code.
+3. Determine the number of streams to open. The maximum number of streams that can be opened is limited by:
+   -   The maximum number of streams supported by the host controller. That number is received by [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) (for WDM drivers, [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230)), in the caller-supplied output buffer. The Microsoft-provided USB driver stack supports up to 255 streams. **WdfUsbTargetDeviceQueryUsbCapability** takes that limitation into consideration while calculating the number of streams. The method never returns a value that is greater than 255.
+   -   The maximum number of streams supported by the endpoint in the device. To get that number, inspect the endpoint companion descriptor (see [**USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/hh406269) in Usbspec.h). To obtain the endpoint companion descriptor, you must parse the configuration descriptor. To obtain the configuration descriptor, the client driver must call the [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method. You must use the helper routines, [**USBD\_ParseConfigurationDescriptorEx**](https://msdn.microsoft.com/library/windows/hardware/ff539102) and [**USBD\_ParseDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff539109). For code example, see the example function named RetrieveStreamInfoFromEndpointDesc in [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-    To determine the maximum number of streams, choose the lesser of two values supported by the host controller and the endpoint.
-4.  Allocate an array of [**USBD\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/hh406247) structures with *n* elements, where *n* is the number of streams to open. The client driver is responsible for releasing this array after the driver is finished using streams.
-5.  Allocate an URB for the open-streams request by calling the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method. If the call completes successfully, the method retrieves a WDF memory object and the address of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure that is allocated by the USB driver stack.
+   To determine the maximum number of streams, choose the lesser of two values supported by the host controller and the endpoint.
+4. Allocate an array of [**USBD\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/hh406247) structures with *n* elements, where *n* is the number of streams to open. The client driver is responsible for releasing this array after the driver is finished using streams.
+5. Allocate an URB for the open-streams request by calling the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method. If the call completes successfully, the method retrieves a WDF memory object and the address of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure that is allocated by the USB driver stack.
 
-    **WDM drivers:  **Call the [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250) routine.
+   <strong>WDM drivers:  **Call the [</strong>USBD\_UrbAllocate**](<https://msdn.microsoft.com/library/windows/hardware/hh406250>) routine.
 
-6.  Format the URB for the open-stream request. The URB uses the [**\_URB\_OPEN\_STATIC\_STREAMS**](https://msdn.microsoft.com/library/windows/hardware/hh406294) structure to define the request. To format the URB you need:
-    -   The USBD pipe handle to the endpoint. If you have a WDF pipe object, you can obtain the USBD pipe handle by calling the [**WdfUsbTargetPipeWdmGetPipeHandle**](https://msdn.microsoft.com/library/windows/hardware/ff551162) method.
-    -   The stream array (created in step 4)
-    -   A pointer to the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure (created in step 5).
+6. Format the URB for the open-stream request. The URB uses the [**\_URB\_OPEN\_STATIC\_STREAMS**](https://msdn.microsoft.com/library/windows/hardware/hh406294) structure to define the request. To format the URB you need:
+   -   The USBD pipe handle to the endpoint. If you have a WDF pipe object, you can obtain the USBD pipe handle by calling the [**WdfUsbTargetPipeWdmGetPipeHandle**](https://msdn.microsoft.com/library/windows/hardware/ff551162) method.
+   -   The stream array (created in step 4)
+   -   A pointer to the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure (created in step 5).
 
-    To format the URB, call [**UsbBuildOpenStaticStreamsRequest**](https://msdn.microsoft.com/library/windows/hardware/hh406226) and pass the required information as parameter values. Make sure that the number of streams specified to **UsbBuildOpenStaticStreamsRequest** does not exceed the maximum number of supported streams.
-7.  Send the URB as a WDF request object by calling the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method. To send the request synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method instead.
+   To format the URB, call [**UsbBuildOpenStaticStreamsRequest**](https://msdn.microsoft.com/library/windows/hardware/hh406226) and pass the required information as parameter values. Make sure that the number of streams specified to **UsbBuildOpenStaticStreamsRequest** does not exceed the maximum number of supported streams.
+7. Send the URB as a WDF request object by calling the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method. To send the request synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method instead.
 
-    **WDM drivers:  **Associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
+   **WDM drivers:  **Associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
-8.  After the request is complete, check the status of the request.
+8. After the request is complete, check the status of the request.
 
-    If USB driver stack fails the request, the URB status contains the relevant error code. Some common failure conditions are described in the Remarks section.
+   If USB driver stack fails the request, the URB status contains the relevant error code. Some common failure conditions are described in the Remarks section.
 
 If the status of the request (IRP or the WDF request object) indicates USBD\_STATUS\_SUCCESS, the request was completed successfully. Inspect the array of [**USBD\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/hh406247) structures received on completion. The array is filled with information about the requested streams. The USB driver stack populates each structure in the array with stream information, such as handles (received as USBD\_PIPE\_HANDLE), stream identifiers, and the maximum number transfer size. Streams are now open to transfer data.
 
@@ -122,7 +121,7 @@ The following procedure assumes that the client driver receives the request obje
 3.  Format the WDF request object by calling the [**WdfUsbTargetPipeFormatRequestForUrb**](https://msdn.microsoft.com/library/windows/hardware/ff551139) method. In the call, specify the WDF memory object that contains the data transfer URB. The memory object was allocated in step 1.
 4.  Send the URB as a WDF request either by calling [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) or [**WdfUsbTargetPipeSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551158). If you call **WdfRequestSend**, you must specify a completion routine by calling [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) so that the client driver can get notified when the asynchronous operation is complete. You must free the data transfer URB in the completion routine.
 
-**WDM drivers:  **Allocate an URB by calling [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250) and format it for bulk transfer (see [**\_URB\_BULK\_OR\_INTERRUPT\_TRANSFER**](https://msdn.microsoft.com/library/windows/hardware/ff540352)). To format the URB, you can call [**UsbBuildInterruptOrBulkTransferRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538953) or format the URB structure manually. Specify the handle to the stream in the URB's **UrbBulkOrInterruptTransfer.PipeHandle** member.
+<strong>WDM drivers:  **Allocate an URB by calling [</strong>USBD\_UrbAllocate<strong>](<https://msdn.microsoft.com/library/windows/hardware/hh406250>) and format it for bulk transfer (see [</strong>\_URB\_BULK\_OR\_INTERRUPT\_TRANSFER<strong>](<https://msdn.microsoft.com/library/windows/hardware/ff540352>)). To format the URB, you can call [</strong>UsbBuildInterruptOrBulkTransferRequest<strong>](<https://msdn.microsoft.com/library/windows/hardware/ff538953>) or format the URB structure manually. Specify the handle to the stream in the URB's **UrbBulkOrInterruptTransfer.PipeHandle</strong> member.
 
 ### How to close static streams
 

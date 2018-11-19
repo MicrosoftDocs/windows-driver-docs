@@ -1,6 +1,5 @@
 ---
 title: Setting Device Object Registry Properties After Installation
-author: windows-driver-content
 description: Setting Device Object Registry Properties After Installation
 ms.assetid: e9415497-f61e-49ba-9376-9255e51e72a8
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
@@ -46,7 +45,7 @@ The correspondence between values for the *Property* parameter and actual proper
 </tr>
 <tr class="even">
 <td><p>SPDRP_SECURITY</p></td>
-<td><p>Security descriptor as a [<strong>SECURITY_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563689) structure</p></td>
+<td><p>Security descriptor as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563689)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p>SPDRP_SECURITY_SDS</p></td>
@@ -55,7 +54,7 @@ The correspondence between values for the *Property* parameter and actual proper
 </tbody>
 </table>
 
- 
+ 
 
 Note that two different ways are provided to get or set the security descriptor. You can specify the SPDRP\_SECURITY value to treat the security descriptor as a **SECURITY\_DESCRIPTOR** structure, or SPDRP\_SECURITY\_SDS to treat the security descriptor as an SDDL string. For more information about SDDL strings, see [SDDL for Device Objects](sddl-for-device-objects.md).
 
@@ -63,9 +62,9 @@ For Windows XP and later operating systems, programs can also get and set the pr
 
 For more information about using the **SetupDi*Xxx*** functions, see [Using Device Installation Functions](https://msdn.microsoft.com/library/windows/hardware/ff553567).
 
- 
+ 
 
- 
+ 
 
 
 

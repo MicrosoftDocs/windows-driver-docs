@@ -3,7 +3,6 @@ title: gs
 description: The gs extension analyzes a /GS stack overflow.
 ms.assetid: 4c73fd73-e476-4836-80f7-ab9b9c797d8b
 keywords: ["gs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,7 +41,7 @@ The **!gs** extension analyzes a /GS stack overflow.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +86,9 @@ Candidate buffer : ps 0013e268 to 0013e2a7
 0:000>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

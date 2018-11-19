@@ -1,7 +1,6 @@
 ---
 title: Firmware WEG FAQ
 description:  Firmware WEG - Frequently asked questions (FAQ)
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
@@ -102,7 +101,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 **Q:** What is dependency/impact on 32-bit vs. 64-bit OS going from Legacy boot to UEFI and vice versa if the firmware is 64-bit UEFI or 32-bit UEFI?
 
-> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7).  If you have a 32-bit UEFI, you can only install a 32-bit Windows on it.  64-bit Windows requires 64-bit UEFI or a CSM.  However, if a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
+> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7).ï¿½ If you have a 32-bit UEFI, you can only install a 32-bit Windows on it.ï¿½ 64-bit Windows requires 64-bit UEFI or a CSM.ï¿½ However, ifï¿½a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
 
 **Q:** Can you convert a system booting using Legacy MBR boot to GPT boot on the fly without impacting data?
 

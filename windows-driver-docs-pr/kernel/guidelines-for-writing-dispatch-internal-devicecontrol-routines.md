@@ -1,6 +1,5 @@
 ---
 title: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
-author: windows-driver-content
 description: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 ms.assetid: e64ab28e-2904-41c2-a262-405bc129b9bb
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
@@ -44,9 +43,9 @@ The particular I/O control codes a device driver handles must include any device
 
 The class driver of a closely coupled class/port driver pair can process and complete a subset of device control requests without passing them on to the underlying port driver. However, such a class driver must pass on all valid device control requests that require a change of state for the device and those that require the return of volatile information about the device, such as its current baud rate, volume, or video mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,9 +15,9 @@ The KSPROPSETID\_FMRXControl property set includes the following properties:
 
 -   [**KSPROPERTY\_FMRX\_STATE**](ksproperty-fmrx-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

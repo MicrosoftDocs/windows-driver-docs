@@ -3,7 +3,6 @@ title: .scriptload (Load Script)
 description: The .scriptload command will load and execute the specified script file.
 ms.assetid: 1D4C9587-1491-4D34-9D09-45587B272641
 keywords: [".scriptload (Load Script) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the name of the script file to load. *ScriptFile* should include the .
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -97,9 +96,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
- 
+ 
 
- 
+ 
 
 
 

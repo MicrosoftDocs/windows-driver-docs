@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PHY_DATA_RATE_LIST
-author: windows-driver-content
 description: WDI_TLV_PHY_DATA_RATE_LIST is a TLV that contains a list of data rates.
 ms.assetid: FFD28866-4983-4C0B-A74D-4EF9A819571E
 ms.date: 07/18/2017
@@ -26,7 +25,7 @@ The size (in bytes) of the array of WDI\_DATA\_RATE\_LIST elements. The array mu
 
 **Note**  WDI\_DATA\_RATE\_LIST is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 ## Values
 
@@ -35,7 +34,7 @@ The size (in bytes) of the array of WDI\_DATA\_RATE\_LIST elements. The array mu
 |---------------------------|---------------------------------------------------------------------------------------------------------|
 | WDI\_DATA\_RATE\_LIST\[\] | An array of data rates. Each data rate in the array must contain data rate flags and a data rate value. |
 
- 
+ 
 
 WDI\_DATA\_RATE\_LIST consists of the following elements.
 
@@ -44,7 +43,7 @@ WDI\_DATA\_RATE\_LIST consists of the following elements.
 | UINT8  | The data rate flags as defined in [**WDI\_DATA\_RATE\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/dn897811). |
 | UINT16 | The data rate value.                                                                          |
 
- 
+ 
 
 Requirements
 ------------
@@ -70,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

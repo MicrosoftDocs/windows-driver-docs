@@ -1,6 +1,5 @@
 ---
 title: Properties for WIA Camera Minidrivers
-author: windows-driver-content
 description: Properties for WIA Camera Minidrivers
 ms.assetid: 3a5e61d7-1ca8-44a8-b24a-7a5929d424a5
 ms.date: 04/20/2017
@@ -135,9 +134,9 @@ A WIA minidriver supplies the following properties:
 
 [**WIA\_IPC\_TIMEDELAY**](https://msdn.microsoft.com/library/windows/hardware/ff552560)
 
- 
+ 
 
- 
+ 
 
 
 

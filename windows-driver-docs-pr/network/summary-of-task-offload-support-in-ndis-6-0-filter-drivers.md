@@ -28,9 +28,9 @@ NDIS 6.0 filter drivers can modify the task offload services that an underlying 
 
 For general information about NDIS 6.0 filter drivers, see [Introduction to NDIS Filter Drivers](introduction-to-ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

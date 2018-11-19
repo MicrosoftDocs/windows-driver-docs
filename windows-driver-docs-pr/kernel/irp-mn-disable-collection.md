@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_DISABLE_COLLECTION
-author: windows-driver-content
 description: Any WMI driver that registers one or more of its data blocks as expensive to collect must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: de375d56-880e-4534-acab-8d0685f45ebe
@@ -98,9 +97,9 @@ Requirements
 
 [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834)
 
- 
+ 
 
- 
+ 
 
 
 

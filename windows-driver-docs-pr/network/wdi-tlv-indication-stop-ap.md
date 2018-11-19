@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_INDICATION_STOP_AP
-author: windows-driver-content
 description: WDI_TLV_INDICATION_STOP_AP is a TLV that contains the reason for a Stop AP indication.
 ms.assetid: 49FA6AF6-68BE-437B-9715-5090F52F0109
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|--------------------------------------------------------------------------------------------------------------|
 | UINT32 | The Stop AP reason. See [**WDI\_STOP\_AP\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn926116) for possible reason values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +61,9 @@ Requirements
 
 [NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP](https://msdn.microsoft.com/library/windows/hardware/dn925661)
 
- 
+ 
 
- 
+ 
 
 
 

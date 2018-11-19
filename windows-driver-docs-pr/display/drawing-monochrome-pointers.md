@@ -57,13 +57,13 @@ A monochrome bitmap consists of two parts: the first defines the AND mask for th
 </tbody>
 </table>
 
- 
+ 
 
 This bitmap definition and usage supplies a black-and-white image, while providing support for transparency and inversion of the pixels that make up the pointer.
 
- 
+ 
 
- 
+ 
 
 
 

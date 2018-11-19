@@ -1,6 +1,5 @@
 ---
 title: How UMDF Handles Application Failures
-author: windows-driver-content
 description: Describes actions that User-Mode Driver Framework (UMDF) and the operating system take when an application fails. It applies to both UMDF versions 1 and 2.
 ms.assetid: ac59a5fe-5975-455f-9da3-318c0692bf9c
 keywords:
@@ -25,9 +24,9 @@ When an application fails, the following events occur:
 
 -   The host process and UMDF driver complete pending I/O requests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -32,9 +32,9 @@ Device MFT would receive the total output stream count of **MFT\_OUTPUT\_DATA\_B
 
 For more information, see [**IMFDeviceTransform::ProcessOutput**](https://msdn.microsoft.com/library/windows/hardware/mt797682).
 
- 
+ 
 
- 
+ 
 
 
 

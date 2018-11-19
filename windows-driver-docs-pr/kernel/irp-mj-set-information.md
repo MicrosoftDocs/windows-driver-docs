@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_SET_INFORMATION
-author: windows-driver-content
 description: Device drivers can optionally handle an IRP_MJ_SET_INFORMATION request.
 ms.date: 08/12/2017
 ms.assetid: 1bcca676-2926-4d0f-9c0f-c6ea56481153
@@ -61,9 +60,9 @@ Requirements
 
 [**ZwSetInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567096)
 
- 
+ 
 
- 
+ 
 
 
 

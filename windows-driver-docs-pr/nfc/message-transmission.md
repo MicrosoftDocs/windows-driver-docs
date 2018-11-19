@@ -1,6 +1,5 @@
 ---
 title: Message transmission
-author: windows-driver-content
 description: Message transmission
 ms.assetid: 96C5CE38-25EE-425A-A7C5-05990CBE2C3E
 keywords:
@@ -30,9 +29,9 @@ The NFP device driver interface does not require that the published messages be 
 
 There is no mechanism defined in the NFP device driver interface to inform clients if any app on a receiving device was subscribed to the message. There is also no mechanism for telling clients that a message they are not subscribed to was received.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

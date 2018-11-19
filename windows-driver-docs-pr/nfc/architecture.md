@@ -1,6 +1,5 @@
 ---
 title: NFC class extension architecture
-author: windows-driver-content
 description: The NFC driver is implemented as a class extension and the underlying transport driver is implemented as the client driver.
 ms.assetid: 9C68B3F7-CD83-4BDB-A4DD-11B7C1448301
 keywords:
@@ -25,12 +24,12 @@ Support for the class extension is included in UMDF 2.0. Because the NFC stack h
 | NfcCx.dll     | This DLL contains the NFC class driver implementation. It has a dependency on UMDF and is installed via a component manifest. The DLL is a core system-compliant binary without any dependency above what is available in the core system. The DLL is indirectly linked to by the client driver via the NfcCxStub library that enables the client driver to load it and start its initialization. |
 | NfcCxStub.lib | This file is the stub library that enables the client driver to perform load-time linking to NfcCx.dll without directly linking to NfcCx.lib.                                                                                                                                                                                                                                                     |
 
- 
+ 
 
 The NFC class extension driver is not expected to run in Update OS context. However, the driver is expected to run in Microsoft Manufacturing OS (MMOS) to perform end-of-line testing. The NFC client driver supplied by a chipset manufacturer can implement additional DDI support for manufacturing and end-of-line testing purposes, but that is outside the scope of this documentation.
 
- 
- 
+ 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

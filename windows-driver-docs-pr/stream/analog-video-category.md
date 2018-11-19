@@ -1,6 +1,5 @@
 ---
 title: Analog Video Category
-author: windows-driver-content
 description: Analog Video Category
 ms.assetid: 64564c81-b1e1-482b-ae70-59b229a5e86f
 keywords:
@@ -37,11 +36,11 @@ When specifying **PINNAME\_VIDEO\_ANALOGVIDEOIN**, pins, use the information lis
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p>[<strong>KS_DATARANGE_ANALOGVIDEO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567340)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567340" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567340)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
-<td><p>[<strong>KS_DATARANGE_ANALOGVIDEO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567340)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567340" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567340)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MajorFormat GUID</strong></p></td>
@@ -78,7 +77,7 @@ When specifying **PINNAME\_VIDEO\_ANALOGVIDEOIN**, pins, use the information lis
 </tbody>
 </table>
 
- 
+ 
 
 There is no special category defined for analog audio, such as TV or radio audio. When specifying a category for devices with analog audio pins, the value of the **MajorFormat** member should be KSDATAFORMAT\_TYPE\_ANALOGAUDIO. The value of the **Specifier** member should be KSDATAFORMAT\_SPECIFIER\_NONE and the **subtype** member and the format block should be set to KSDATAFORMAT\_SUBTYPE\_NONE. For more information about radio audio, see [Video Capture Devices with Radio Tuners](video-capture-devices-with-radio-tuners.md).
 
@@ -86,9 +85,9 @@ Although the analog video stream essentially mimics the input to the analog vide
 
 Capture filters must propagate this tuning packet in the extended header of VBI output streams to downstream VBI codecs.
 
- 
+ 
 
- 
+ 
 
 
 

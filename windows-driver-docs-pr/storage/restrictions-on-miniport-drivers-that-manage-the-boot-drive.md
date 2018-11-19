@@ -1,6 +1,5 @@
 ---
 title: Restrictions on Miniport Drivers that Manage the Boot Drive
-author: windows-driver-content
 description: Restrictions on Miniport Drivers that Manage the Boot Drive
 ms.assetid: 78375e9b-8be9-4e64-b90e-cc8c4ab1751b
 keywords:
@@ -62,9 +61,9 @@ Storage miniport drivers in the boot or dump path must detect whether they are r
 
 When you look in the debugger for an image of a storage miniport driver in dump mode, the driver name will have a prefix of "dump\_". If the miniport driver is in hibernation mode, the driver name will have a prefix of "hiber\_".
 
- 
+ 
 
- 
+ 
 
 
 

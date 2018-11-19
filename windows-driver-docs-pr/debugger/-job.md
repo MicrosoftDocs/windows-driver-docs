@@ -3,7 +3,6 @@ title: job
 description: The job extension displays a job object.
 ms.assetid: 1fbadcc7-d81b-4cfb-a54a-7843e2f78ea1
 keywords: ["job Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Causes the display to include a list of all processes in the job.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -99,9 +98,9 @@ Job at ffffffff8256e1f0
   Token                    00000000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
 ms.assetid: aa3f5c53-8522-48be-a3cd-49b740803fe3
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -171,9 +170,9 @@ A quick inspection reveals the cause of the problem: The program tries to write 
 *((PCHAR)Block + 0x100) = 0;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

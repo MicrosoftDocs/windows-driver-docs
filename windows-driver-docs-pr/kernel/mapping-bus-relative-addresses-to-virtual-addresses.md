@@ -1,6 +1,5 @@
 ---
 title: Mapping Bus-Relative Addresses to Virtual Addresses
-author: windows-driver-content
 description: Mapping Bus-Relative Addresses to Virtual Addresses
 ms.assetid: 16496465-8a30-4250-9d64-afd36a788ae2
 keywords: ["virtual address space mappings WDK kernel", "physical address space mappings WDK kernel", "mapping memory", "address space mappings WDK kernel", "translating address space WDK kernel", "memory management WDK kernel , mapping addresses", "bus-relative memory space WDK kernel"]
@@ -36,13 +35,13 @@ If a driver is assigned a translated memory resource (**CmResourceTypeMemory**),
 
 When the driver receives an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) or [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request from the PnP manager, it must release the mappings by calling [**MmUnmapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff556387) in a similar loop. The driver should also call **MmUnmapIoSpace** if it must fail the **IRP\_MN\_START\_DEVICE** request.
 
-The raw resource type indicates which HAL access routine a driver should call (**READ\_REGISTER\_*XXX***, **WRITE\_REGISTER\_*XXX***, **READ\_PORT\_*XXX***, **WRITE\_PORT\_*XXX***). Most drivers do not have to check the raw resource list to determine which of these routines to use, because the driver itself requested the resource or the driver writer knows the required type given the nature of the device hardware.
+The raw resource type indicates which HAL access routine a driver should call (<strong>READ\_REGISTER\_*XXX</strong><em>, **WRITE\_REGISTER\_</em>XXX<strong><em>, *</em>READ\_PORT\_*XXX</strong><em>, **WRITE\_PORT\_</em>XXX***). Most drivers do not have to check the raw resource list to determine which of these routines to use, because the driver itself requested the resource or the driver writer knows the required type given the nature of the device hardware.
 
-For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write **READ\_REGISTER\_*XXX***, **WRITE\_REGISTER\_*XXX***, **READ\_PORT\_*XXX***, and **WRITE\_PORT\_*XXX*** routines.
+For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write <strong>READ\_REGISTER\_*XXX</strong><em>, **WRITE\_REGISTER\_</em>XXX<strong><em>, *</em>READ\_PORT\_*XXX</strong><em>, and **WRITE\_PORT\_</em>XXX*** routines.
 
- 
+ 
 
- 
+ 
 
 
 

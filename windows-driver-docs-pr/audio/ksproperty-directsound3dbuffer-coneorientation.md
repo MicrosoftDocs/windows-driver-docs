@@ -47,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEORIENTATION property specifies the orie
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
-<td align="left"><p>[<strong>DS3DVECTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536367)</p></td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536367" data-raw-source="[&lt;strong&gt;DS3DVECTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536367)"><strong>DS3DVECTOR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type DS3DVECTOR that specifies the orientation of the sound-projection cone.
 
@@ -93,9 +93,9 @@ Requirements
 
 [**DS3DVECTOR**](https://msdn.microsoft.com/library/windows/hardware/ff536367)
 
- 
+ 
 
- 
+ 
 
 
 

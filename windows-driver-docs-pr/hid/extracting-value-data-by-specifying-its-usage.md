@@ -1,6 +1,5 @@
 ---
 title: Extracting Value Data by Specifying Its Usage
-author: windows-driver-content
 description: Extracting Value Data by Specifying Its Usage
 ms.assetid: 043cdb68-ead8-4ccf-ae00-1165fe2988f4
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "data usage extractions WDK HID"]
@@ -27,9 +26,9 @@ Returns a usage value array.
 
 To use **HidP\_GetUsageValueArray**, applications and drivers must allocate a zero-initialized buffer, which is large enough to hold the usage value array. The required size, in bytes, is the product of the **BitSize** and **ReportCount** members of the usage value array's [**HIDP\_VALUE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539832) structure, rounded up to the nearest byte.
 
- 
+ 
 
- 
+ 
 
 
 

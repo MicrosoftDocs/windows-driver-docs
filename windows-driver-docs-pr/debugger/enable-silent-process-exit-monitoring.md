@@ -2,7 +2,6 @@
 title: Enable silent process exit monitoring
 description: Enable silent process exit monitoring
 ms.assetid: 3FEA9660-541B-42D0-B020-CECEBF14BB4D
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -36,15 +35,15 @@ The **Enable silent process exit monitoring** flag enables silent exit monitorin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 For more information about monitoring a process for silent exit, see [Monitoring Silent Process Exit](registry-entries-for-silent-process-exit.md).
 
- 
+ 
 
- 
+ 
 
 
 

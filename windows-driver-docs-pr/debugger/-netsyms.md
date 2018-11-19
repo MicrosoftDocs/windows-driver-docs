@@ -2,7 +2,6 @@
 title: .netsyms (Disable Network Symbol Loading)
 description: .netsyms (Disable Network Symbol Loading)
 ms.assetid: 09347909-47C8-4a4d-8246-C32A1791F46B
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -50,7 +49,7 @@ Disables network symbol loading.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -58,9 +57,9 @@ Use .netsyms with no argument to display the current state of this setting.
 
 Use [**!sym noisy**](-sym.md) or the *-n* [**WinDbg Command-Line Option**](windbg-command-line-options.md) to display additional detail as symbols are loaded.
 
- 
+ 
 
- 
+ 
 
 
 

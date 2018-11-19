@@ -1,6 +1,5 @@
 ---
 title: Enumerating Legacy COM Ports
-author: windows-driver-content
 description: Enumerating Legacy COM Ports
 ms.assetid: 36a73153-0e3e-4b41-9b3d-08b29b5220fe
 keywords:
@@ -43,9 +42,9 @@ Serial performs the following steps:
 
 6.  Starts the legacy COM port.
 
- 
+ 
 
- 
+ 
 
 
 

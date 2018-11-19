@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

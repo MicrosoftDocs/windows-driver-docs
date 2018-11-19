@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 A netmap.inf file contains one or more of the following top-level sections. Each section contains ID mappings for the components listed in the **Map** column.
 
@@ -61,15 +61,15 @@ A netmap.inf file contains one or more of the following top-level sections. Each
 </tbody>
 </table>
 
- 
+ 
 
 Each entry in a section maps a network component's preupgrade device, hardware, or compatible ID to its corresponding Windows 2000 or later ID. Each entry specifies either *one-to-one* ID mapping or *one-to-many* ID mapping. These mapping strategies are described following.
 
 Network clients are not defined as such in Windows NT 3.51 and Windows NT 4.0; therefore, if an earlier network service becomes a network client under Windows 2000 or later, its device ID mapping must be listed in the **OemNetClients** section, not in the **OemNetServices** section.
 
- 
+ 
 
- 
+ 
 
 
 

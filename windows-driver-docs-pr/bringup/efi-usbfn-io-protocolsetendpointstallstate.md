@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
 ms.assetid: bd754296-5002-48b6-9986-fa09c2094470
 ms.date: 04/20/2017
@@ -75,7 +74,7 @@ Requested stall state on the specified endpoint. Setting this parameter to **TRU
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +86,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

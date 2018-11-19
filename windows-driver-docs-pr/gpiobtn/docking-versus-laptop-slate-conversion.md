@@ -1,6 +1,5 @@
 ---
 title: Docking versus laptop slate conversion
-author: windows-driver-content
 description: This topic describes the distinctions for indicators between laptop slate conversion and docking actions.
 ms.assetid: B6E33F63-5BEA-4588-80D2-F49821856708
 ms.localizationpriority: medium
@@ -31,11 +30,11 @@ Docking is considered to be the user action of attaching the portable system to 
 **Note**  
 USB based docking accessories are outside the scope of the GPIO dock indicator implementation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

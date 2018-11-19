@@ -1,6 +1,5 @@
 ---
 title: Enabling and Disabling Interrupts
-author: windows-driver-content
 description: Enabling and Disabling Interrupts
 ms.assetid: 52846461-4F08-4546-93F5-F2469C6E3AD8
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ The driver can call [**IWDFInterrupt::GetInfo**](https://msdn.microsoft.com/libr
 
 To enable and disable interrupts directly, the driver can call the interrupt object's [**IWDFInterrupt::Enable**](https://msdn.microsoft.com/library/windows/hardware/hh451300) and [**IWDFInterrupt::Disable**](https://msdn.microsoft.com/library/windows/hardware/hh451295) methods, which call the driver's [*OnInterruptEnable*](https://msdn.microsoft.com/library/windows/hardware/hh463899) and [*OnInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/hh463895) event callback functions. However, most drivers should just allow the framework to call the *OnInterruptEnable* and *OnInterruptDisable* callback functions at the proper times.
 
- 
+ 
 
- 
+ 
 
 
 

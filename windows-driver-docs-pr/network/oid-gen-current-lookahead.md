@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CURRENT_LOOKAHEAD
-author: windows-driver-content
 description: As a query, the OID_GEN_CURRENT_LOOKAHEAD OID returns the number of bytes of received packet data that will be indicated to the protocol driver.
 ms.assetid: ccfcb5ca-04bd-416b-91ec-690e78daeda0
 ms.date: 08/08/2017
@@ -63,9 +62,9 @@ Requirements
 
 [OID\_GEN\_RECEIVE\_BLOCK\_SIZE](oid-gen-receive-block-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

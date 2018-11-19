@@ -1,6 +1,5 @@
 ---
 title: Getting an Adapter Object
-author: windows-driver-content
 description: Getting an Adapter Object
 ms.assetid: 2af4ac28-b3c0-4e46-afb1-9c6897c67f03
 keywords: ["adapter objects WDK kernel , getting", "DEVICE_DESCRIPTION", "DMA_OPERATIONS", "DMA transfers WDK kernel , adapter objects"]
@@ -60,9 +59,9 @@ The following sections ([Using System DMA](using-system-dma.md) and [Using Bus-M
 
 In other words, these sections describe the simplest possible technique for drivers' DMA operations, but individual drivers do not necessarily use exactly the same techniques. For any driver of a DMA device, which driver routines should split up large DMA transfer requests depends on the driver model (class/port or monolithic), on the device's features, and on any device-specific DMA constraints that driver must handle.
 
- 
+ 
 
- 
+ 
 
 
 

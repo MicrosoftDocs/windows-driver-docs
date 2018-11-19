@@ -1,6 +1,5 @@
 ---
 title: Adding Attachments to Images
-author: windows-driver-content
 description: Adding Attachments to Images
 ms.assetid: 704f541b-b98c-44a8-bb19-5d5d0d1eab78
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ An item cannot be both of type **WiaItemTypeHasAttachments** and type **WiaItemT
 
 ![diagram illustrating a wia camera item tree with attachments](images/camera-tree-attachments.png)
 
- 
+ 
 
- 
+ 
 
 
 

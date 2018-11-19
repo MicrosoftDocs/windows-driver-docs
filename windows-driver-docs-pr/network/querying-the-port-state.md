@@ -26,9 +26,9 @@ Overlying drivers should avoid using OID\_GEN\_PORT\_STATE when possible and sho
 
 If the OID\_GEN\_PORT\_STATE query succeeds, NDIS returns the port state information in an [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800) structure.
 
- 
+ 
 
- 
+ 
 
 
 

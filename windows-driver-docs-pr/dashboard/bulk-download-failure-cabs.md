@@ -1,9 +1,9 @@
 ---
 title: Bulk download failure cabs
 description: Use the report delivered as part of the Get Report Data API to retrieve the CabURL and then download the failure cab.
-author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
+ms.topic: article
 ms.localizationpriority: medium
 ---
 

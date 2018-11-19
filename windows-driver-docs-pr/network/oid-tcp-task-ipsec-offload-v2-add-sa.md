@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA
-author: windows-driver-content
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA OID to request that a miniport driver add the specified security associations (SAs) to a NIC.
 ms.assetid: bd1d0cf2-234d-4c06-904e-fe2de6022981
 ms.date: 08/08/2017
@@ -18,11 +17,11 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\
 
 **Note**  NDIS supports this OID with the direct OID request interface. For more information about the direct OID request interface, see [NDIS 6.1 Direct OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff564736).
 
- 
+ 
 
 **Note**  This OID is supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later drivers see [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA\_EX](oid-tcp-task-ipsec-offload-v2-add-sa-ex.md).
 
- 
+ 
 
 Remarks
 -------
@@ -50,7 +49,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later, use [OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX](oid-tcp-task-ipsec-offload-v2-add-sa-ex.md).</p></td>
+<td><p>Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later, use <a href="oid-tcp-task-ipsec-offload-v2-add-sa-ex.md" data-raw-source="[OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX](oid-tcp-task-ipsec-offload-v2-add-sa-ex.md)">OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -70,9 +69,9 @@ Requirements
 
 [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA](oid-tcp-task-ipsec-offload-v2-delete-sa.md)
 
- 
+ 
 
- 
+ 
 
 
 

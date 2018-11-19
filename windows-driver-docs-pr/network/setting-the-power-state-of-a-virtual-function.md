@@ -27,9 +27,9 @@ When the PF miniport driver is issued this OID set request, it must follow these
 
 -   The power state operation must only affect the specified VF. The operation must not affect other VFs or the PF on the same network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

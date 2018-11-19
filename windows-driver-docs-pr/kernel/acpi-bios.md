@@ -1,6 +1,5 @@
 ---
 title: ACPI BIOS
-author: windows-driver-content
 description: ACPI BIOS
 ms.assetid: 787e82ed-e58c-461f-abb6-71ed6cba411c
 keywords: ["ACPI BIOS WDK power management"]

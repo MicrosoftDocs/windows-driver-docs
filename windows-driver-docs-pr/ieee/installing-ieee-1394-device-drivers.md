@@ -1,6 +1,5 @@
 ---
 title: Installing IEEE 1394 Device Drivers
-author: windows-driver-content
 description: Installing IEEE 1394 Device Drivers
 ms.assetid: 3f99bec7-e657-4de7-bce4-36a779cc0442
 keywords:
@@ -30,9 +29,9 @@ There are no other special requirements associated with installing IEEE 1394 dev
 
 For general information about device installation in Windows 2000 and later operating systems, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

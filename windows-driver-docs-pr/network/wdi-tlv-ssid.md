@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SSID
-author: windows-driver-content
 description: WDI_TLV_SSID is a TLV that contains an SSID.
 ms.assetid: 31391E25-B507-4652-9D70-9DA0D6245CA8
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. An array length of 0 is allo
 |-----------|----------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies an SSID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

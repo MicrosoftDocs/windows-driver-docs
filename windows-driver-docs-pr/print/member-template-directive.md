@@ -1,6 +1,5 @@
 ---
 title: Member Template Directive
-author: windows-driver-content
 description: Member Template Directive
 ms.assetid: 3f4bdf3c-30cb-4edc-bd9e-422c4bfbb5b7
 keywords:
@@ -28,9 +27,9 @@ No other attributes or constructs are allowed within the \*`Member` directive.
 
 When the \*Members directive is in conjunction with the template binding process, the \*Members directive attempts to associate a template with each child element that appears within a construct. But it does not specify how many times a child element can appear or specify any dependencies among or between child elements. The \*Production directive is responsible for specifying these requirements. Note that the \*Members directive is still required even when you use the \*Production directive.
 
- 
+ 
 
- 
+ 
 
 
 

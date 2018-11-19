@@ -1,6 +1,5 @@
 ---
 title: Removing a Device in a Bus Driver
-author: windows-driver-content
 description: Removing a Device in a Bus Driver
 ms.assetid: f3961c29-02e1-41f0-bb7f-784bcdb57eb0
 keywords: ["bus drivers WDK PnP", "DispatchPnP routine"]
@@ -62,9 +61,9 @@ A bus driver must be able to handle an **IRP\_MN\_REMOVE\_DEVICE** for a device 
 
 A bus driver does not remove its data structures for a child device until it receives an **IRP\_MN\_REMOVE\_DEVICE** request for the device. A bus driver might detect that a device has been removed and call [**IoInvalidateDeviceRelations**](https://msdn.microsoft.com/library/windows/hardware/ff549353), but it must not delete the device's PDO until the PnP manager sends an **IRP\_MN\_REMOVE\_DEVICE** request.
 
- 
+ 
 
- 
+ 
 
 
 

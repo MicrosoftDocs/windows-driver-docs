@@ -2,7 +2,6 @@
 title: Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a 1394 (Firewire) cable.
 ms.assetid: 07784500-83F1-4927-998F-7CEEEADAA2B0
-ms.author: domars
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 # Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio
 
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -34,8 +33,6 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
     **Note**  Do not set the channel to 0 when you first set up debugging. Because the default channel value is 0, the software assumes there is no change and does not update the settings. If you must use channel 0, first use an alternate channel (1 through 62) and then switch to channel 0.
 
-     
-
     If you have more than one 1394 controller on the target computer, enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the 1394 controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 4.4.0).
 
 5.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, click **Finish**.
@@ -52,7 +49,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 debugtype               1394
 debugport               1
@@ -69,7 +66,7 @@ If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matc
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 where *b*, *d*, and *f* are the bus, device, and function numbers of the 1394 controller on the target computer that you have chosen to use for debugging.
 
@@ -105,7 +102,7 @@ The target computer can have multiple 1394 controllers, although this is not rec
 
 If you decide to have multiple 1394 controllers enabled on the target computer, you must specify bus parameters so that the debugger knows which controller to claim for debugging. To specify the bus parameters, Open Device Manager, and locate the 1394 controller that you want to use for debugging. Open the property page for the controller, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 Reboot the target computer.
 
@@ -114,9 +111,9 @@ Reboot the target computer.
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
 ms.assetid: 78dbc589-3ffd-4ee2-9d80-4570b3b20b2f
 ms.date: 04/20/2017
@@ -67,7 +66,7 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -77,9 +76,9 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

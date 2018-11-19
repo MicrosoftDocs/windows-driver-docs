@@ -1,6 +1,5 @@
 ---
 title: Using Power-Managed I/O Queues
-author: windows-driver-content
 description: Using Power-Managed I/O Queues
 ms.assetid: 271d55ef-d82e-4ffd-bf41-a602c42c3f0e
 keywords:
@@ -46,9 +45,9 @@ Because [request handlers](request-handlers.md) run in an arbitrary thread conte
 
 For more information about when a driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://msdn.microsoft.com/library/windows/hardware/ff548068).
 
- 
+ 
 
- 
+ 
 
 
 

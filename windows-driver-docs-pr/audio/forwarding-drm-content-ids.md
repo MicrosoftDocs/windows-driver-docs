@@ -85,9 +85,9 @@ A typical secure data path consists of the [KMixer system driver](kernel-mode-wd
 
 For more information, see the implementations of the **SetContentId** method in the sb16 and msvad sample drivers in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

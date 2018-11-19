@@ -19,9 +19,9 @@ If your USB device relies on the operating system to generate a container ID bas
 
 2.  The string that results is hashed into a GUID by using the UUID Version 5 (SHA-1) hash algorithm under a USB-specific namespace. The generated container ID will be unique, provided the independent hardware vendor (IHV) provides a unique serial number on each device.
 
- 
+ 
 
- 
+ 
 
 
 

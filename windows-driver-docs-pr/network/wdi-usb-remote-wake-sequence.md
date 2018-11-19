@@ -13,9 +13,9 @@ When the device receives external events, it wakes the stack. The following flow
 
 ![wdi usb remote wake sequence](images/wdi-usb-remote-wake-sequence-flow.png)
 
- 
+ 
 
- 
+ 
 
 
 

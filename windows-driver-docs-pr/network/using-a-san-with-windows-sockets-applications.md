@@ -28,9 +28,9 @@ For each Windows Sockets application, Windows Sockets Direct can either:
 
     To route data traffic that is not for a specific SAN from a Windows Sockets application, the switch must use the TCP/IP service provider. Non-SAN-specific data traffic includes, for example, datagrams, multicast, and connections that must be routed. Non-SAN-specific data traffic is then routed through TCP/IP and the NDIS miniport driver to the SAN NIC.
 
- 
+ 
 
- 
+ 
 
 
 

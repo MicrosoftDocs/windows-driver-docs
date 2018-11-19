@@ -1,6 +1,5 @@
 ---
 title: Sample PrintTicket File for PIN Printing
-author: windows-driver-content
 description: Here is a sample PrintTicket file to show how to specify PIN printing.
 ms.assetid: FC1BE797-7097-4BEF-A530-3846CED3E400
 ms.date: 04/20/2017
@@ -30,9 +29,9 @@ Here is a sample PrintTicket file to show how to specify PIN printing.
 
 For more information about protected printing, see [Driver support For Protected Printing](driver-support-for-protected-printing.md).
 
- 
+ 
 
- 
+ 
 
 
 

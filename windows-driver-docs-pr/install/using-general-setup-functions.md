@@ -53,9 +53,9 @@ This section includes the following topics:
 
 [SetupAPI Logging Functions](setupapi-logging-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

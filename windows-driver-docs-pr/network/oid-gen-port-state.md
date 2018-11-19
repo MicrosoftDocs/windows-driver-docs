@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_PORT_STATE
-author: windows-driver-content
 description: As a query, overlying drivers use the OID_GEN_PORT_STATE OID to get the current state of the port that is specified in the PortNumber member of the NDIS_OID_REQUEST structure.
 ms.assetid: e0705b2e-08ea-4ed4-a6df-4c33b934c3dd
 ms.date: 08/08/2017
@@ -52,9 +51,9 @@ Requirements
 
 [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800)
 
- 
+ 
 
- 
+ 
 
 
 

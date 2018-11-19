@@ -1,6 +1,5 @@
 ---
 title: Sample Extension Unit Plug-in DLL
-author: windows-driver-content
 description: Sample Extension Unit Plug-in DLL
 ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
 keywords:
@@ -317,9 +316,9 @@ CExtension::FinalConstruct()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

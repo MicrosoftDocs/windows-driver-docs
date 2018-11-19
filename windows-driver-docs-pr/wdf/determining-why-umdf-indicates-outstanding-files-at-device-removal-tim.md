@@ -1,6 +1,5 @@
 ---
 title: UMDF Indicates Outstanding Files at Device Removal Time
-author: windows-driver-content
 description: Describes how to use Wudfext.dll to determine why UMDF indicates that there are outstanding files when you remove a device.
 ms.assetid: 9a8b3b69-1192-40c1-895b-4abfc01c1ca7
 keywords:
@@ -33,9 +32,9 @@ To determine why UMDF indicates outstanding files, use the following steps:
     -   Determine if the IRP completed.
     -   Determine if a driver-created request was not deleted either explicitly by the driver or implicitly by the object tree.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ The restrictions for MPEC2\_C are defined by the restrictions listed for MPEG2\_
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigPictureDecode"></span><span id="restrictions_on_dxva_configpicturedecode"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGPICTUREDECODE"></span>Restrictions on DXVA\_ConfigPictureDecode
 
@@ -70,11 +70,11 @@ This profile adds an additional configuration to the [minimal interoperability s
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ An audio driver supports **KSPROPERTY\_JACK\_CONTAINERID**, if and only if, it c
 
 If your audio driver supports the **KSPROPERTY\_JACK\_CONTAINERID** property, the audio system reads this property's value from the driver, and then stores the value as the container ID for the audio endpoint.
 
-For more information about container IDs and about the algorithm mentioned in the preceding section, see [Container ID](http://msdn.microsoft.com/library/windows/hardware/ff540024.aspx) and [Audio Endpoint Builder Algorithm](audio-endpoint-builder-algorithm.md).
+For more information about container IDs and about the algorithm mentioned in the preceding section, see [Container ID](https://msdn.microsoft.com/library/windows/hardware/ff540024.aspx) and [Audio Endpoint Builder Algorithm](audio-endpoint-builder-algorithm.md).
 
 ## <span id="related_topics"></span>Related topics
 [Theory of Operation](theory-of-operation.md)  

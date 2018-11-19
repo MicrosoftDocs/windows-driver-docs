@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_ADMIN_STATUS
-author: windows-driver-content
 description: As a query, use the OID_GEN_ADMIN_STATUS OID to determine the administrative status for an interface (ifAdminStatus from RFC 2863).
 ms.assetid: e8f45521-7419-4c11-b84b-36d4d3306fc2
 ms.date: 08/08/2017
@@ -54,9 +53,9 @@ Requirements
 
 [NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Passing I/O Operations Down the Minifilter Driver Instance Stack
-author: windows-driver-content
 description: Passing an I/O Operation Down the Minifilter Driver Instance Stack
 ms.assetid: b2661e1e-2190-4def-be6c-27057c631304
 keywords:
@@ -28,7 +27,7 @@ A minifilter driver's preoperation callback routine returns an I/O operation to 
 
 **Note**   Although FLT\_PREOP\_SYNCHRONIZE should be returned only for IRP-based I/O operations, you can return this status value for other operation types. If it is returned for an I/O operation that is not an IRP-based I/O operation, the filter manager treats this return value as if it were FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK.
 
- 
+ 
 
 Alternatively, the work routine for an operation that was pended in a preoperation callback routine returns an I/O operation to the filter manager by passing one of the preceding status values in the *CallbackStatus* parameter when it calls [**FltCompletePendedPreOperation**](https://msdn.microsoft.com/library/windows/hardware/ff541913) to resume processing for the pended I/O operation.
 
@@ -40,9 +39,9 @@ This section includes:
 
 [Returning FLT\_PREOP\_SYNCHRONIZE](returning-flt-preop-synchronize.md)
 
- 
+ 
 
- 
+ 
 
 
 

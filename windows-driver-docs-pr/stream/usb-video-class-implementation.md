@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Implementation
-author: windows-driver-content
 description: USB Video Class Implementation
 ms.assetid: b390d741-9ddc-4bac-bca2-73e32461c5ed
 keywords:
@@ -26,9 +25,9 @@ The USB Video Class driver also supports audio/video stream synchronization; usb
 
 To communicate with USB Video Class, user-mode clients call DirectShow or Media Foundation interfaces. These interfaces are COM interface wrappers defined by the kernel streaming proxy as plug-ins. See the Microsoft Windows SDK documentation for more information about [Media Foundation](http://go.microsoft.com/fwlink/p/?linkid=144771).
 
- 
+ 
 
- 
+ 
 
 
 

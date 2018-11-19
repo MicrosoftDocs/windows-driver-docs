@@ -2974,6 +2974,8 @@
         href: -rrestart--register-for-restart-.md
       - name: ".scroll_prefs (Control Source Scrolling Preferences)"
         href: -scroll-prefs--control-source-scrolling-preferences-.md
+      - name: ".scriptdebug (Debug JavaScript)"
+        href: -scriptdebug--debug-javascript-.md
       - name: ".scriptlist (List Loaded Scripts)"
         href: -scriptlist--list-loaded-scripts-.md
       - name: ".scriptload (Load Script)"

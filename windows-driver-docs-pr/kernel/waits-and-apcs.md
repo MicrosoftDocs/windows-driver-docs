@@ -1,6 +1,5 @@
 ---
 title: Waits and APCs
-author: windows-driver-content
 description: Waits and APCs
 ms.assetid: b967beec-922c-4acf-a578-c476ce024fdb
 keywords: ["kernel dispatcher objects WDK , alerts", "dispatcher objects WDK kernel , alerts", "APCs WDK kernel", "alerts WDK kernel", "kernel dispatcher objects WDK , APCs", "dispatcher objects WDK kernel , APCs", "Alertable parameter", "WaitMode parameter", "kernel dispatcher objects WDK , waiting for", "dispatcher objects WDK kernel , waiting for"]
@@ -63,7 +62,7 @@ The following table explains the relationship between different parameter settin
 </tbody>
 </table>
 
- 
+ 
 
 You can disable kernel APCs for a thread. If you do disable kernel APCs for a thread, both user APC delivery and thread termination for that thread are also disabled. For more information about how to disable APCs, see [Disabling APCs](disabling-apcs.md).
 
@@ -71,9 +70,9 @@ Alerts, a seldom-used mechanism that are internal to the operating system, can a
 
 Note that kernel APCs run preemptively, and do not cause **KeWaitFor*Xxx*** or **KeDelayExecutionThread** to return. The system interrupts and resumes the wait internally. Drivers are normally unaffected by this process, but it is possible for the driver to miss a dispatcher object signal for a transient condition, such as a call to [**KePulseEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552979).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ Control path commands are shown in orange.
 
 ![wdi sta wi-fi direct disconnect flow](images/wdi-sta-wfd-client-disconnect.png)
 
- 
+ 
 
- 
+ 
 
 
 

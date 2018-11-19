@@ -1,6 +1,5 @@
 ---
 title: Remote NDIS Control Messages
-author: windows-driver-content
 Description: Remote NDIS Control Messages
 ms.assetid: b9cb2ef3-c664-4cb7-a235-229e9465a6b9
 ms.date: 07/31/2017
@@ -39,9 +38,9 @@ The following Remote NDIS control messages must be supported by an Ethernet 802.
 
 [**REMOTE\_NDIS\_KEEPALIVE\_CMPLT**](remote-ndis-keepalive-cmplt.md)
 
- 
+ 
 
- 
+ 
 
 
 

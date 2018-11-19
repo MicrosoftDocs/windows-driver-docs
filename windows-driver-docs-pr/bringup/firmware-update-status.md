@@ -1,6 +1,5 @@
 ---
 title: Firmware update status
-author: windows-driver-content
 description: At this point it is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 ms.assetid: 988B1E95-2268-4B4F-B0C6-3C965FCD1B1C
 ms.date: 04/20/2017
@@ -34,7 +33,7 @@ At this point it is expected that all firmware updates will be applied, and the 
 |   Last Attempt Version              | 1                         | The last device firmware version for which an update was attempted is 1.                                                                                                                                             |
 |   Last Attempt Status               | 0                         | The last device firmware update attempt was successful.                                                                                                                                                              |
 
- 
+ 
 
 If the firmware cannot successfully apply an update, then the Firmware Version, Last Attempt Version and Last Attempt Status entries in the ESRT will reflect the failed update attempt. For example, if the system is attempting to update version 1 of the firmware to version 2, and fails to successfully apply the update, then the Firmware Version = 1, Last Attempt Version = 2, and Last Attempt Status != 0. (I.e. the Last Attempt Status is set to the appropriate non-zero error code indicating the reason failure occurred. For the list of valid error codes for this entry, see [ESRT table definition](esrt-table-definition.md).
 
@@ -47,7 +46,7 @@ A system reset allows end-users to revert their systems back to factory settings
 
 **Note**  Due to security requirements which prevent firmware rollback across security boundaries, system reset is unable to roll back firmware versions to match the original firmware deployed in the factory. This means that all versions of firmware must be backwards compatible with all driver and operating system versions shipped on that platform. If firmware is not compatible, this could result in a user returning their system to the manufacturer.
 
- 
+ 
 
 ## Rolling back firmware updates
 

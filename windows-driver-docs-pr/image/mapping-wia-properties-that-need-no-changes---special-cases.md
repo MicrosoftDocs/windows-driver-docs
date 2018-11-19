@@ -1,6 +1,5 @@
 ---
 title: Mapping WIA Properties That Need No Changes - Special Cases
-author: windows-driver-content
 description: Mapping WIA Properties That Need No Changes - Special Cases
 ms.assetid: 4ed02c01-efe8-4728-a54a-26fe27aa403c
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ The cases where the compatibility layer might fail are:
 
 -   If the Windows XP driver does not implement a correct Windows XP item structure (root plus child scan item), for example, if the driver partially implements support for the new Windows Vista item structure but fails to provide complete support for Windows Vista image transfers, the property/item compatibility layer will be disabled and the current session will fail.
 
- 
+ 
 
- 
+ 
 
 
 

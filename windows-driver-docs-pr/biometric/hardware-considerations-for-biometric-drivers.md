@@ -23,9 +23,9 @@ A biometric device that uses the WBDI framework should meet the following requir
 
 -   The device should be able to enter a capture mode and make internal state transitions during a scan without extra commands from the host.
 
- 
+ 
 
- 
+ 
 
 
 

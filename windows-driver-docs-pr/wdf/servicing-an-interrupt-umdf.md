@@ -1,6 +1,5 @@
 ---
 title: Servicing an Interrupt
-author: windows-driver-content
 description: Servicing an Interrupt
 ms.assetid: 79BA75B3-E10F-4AC1-A2C5-A502BF821188
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](https:/
 
 For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](http://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
 
- 
+ 
 
- 
+ 
 
 
 

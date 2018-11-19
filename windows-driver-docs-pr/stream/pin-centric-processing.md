@@ -1,6 +1,5 @@
 ---
 title: Pin-Centric Processing
-author: windows-driver-content
 description: Pin-Centric Processing
 ms.assetid: 0b6a02c2-e672-4568-a890-491c721ec3a7
 keywords:
@@ -48,9 +47,9 @@ Processing attempts may fail if the minidriver is holding the [processing mutex]
 
 The [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit samples is a pin-centric capture driver for a simulated piece of hardware. The Avshws sample shows how to implement [DMA through AVStream](avstream-dma-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

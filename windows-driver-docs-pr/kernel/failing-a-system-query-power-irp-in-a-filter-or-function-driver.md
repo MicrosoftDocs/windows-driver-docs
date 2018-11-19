@@ -1,6 +1,5 @@
 ---
 title: Failing a System Query-Power IRP in a Filter or Function Driver
-author: windows-driver-content
 description: Failing a System Query-Power IRP in a Filter or Function Driver
 ms.assetid: 7c4ceb8e-94f4-4ff7-9d45-1094e9a861fd
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management", "failing query-power IRPs"]
@@ -30,9 +29,9 @@ To fail an **IRP\_MN\_QUERY\_POWER** request for a system power state, a driver 
 
 4.  Return a failure status from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: HID over I2C
-author: windows-driver-content
 description: For Windows 8, Microsoft created a new HID miniport driver that allows devices to communicate over an Inter-Integrated Circuit (I²C) bus.
 ms.assetid: E8A056C0-B10F-48E2-B8E3-67B00AAC87D8
 keywords:
@@ -38,9 +37,9 @@ After these resources are defined, additional ACPI resources, of other types, ma
 -   The HID I²C driver enables devices and system manufacturers to reduce the total number of drivers they have to develop to support common device types like keyboards, touchpads, touch screens, sensors, and so on.
 -   The HID I²C driver is available on all client SKUs of Windows and is included in WinPE.
 
- 
+ 
 
- 
+ 
 
 
 

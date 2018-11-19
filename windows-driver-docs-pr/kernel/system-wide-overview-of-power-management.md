@@ -1,6 +1,5 @@
 ---
 title: System-Wide Overview of Power Management
-author: windows-driver-content
 description: System-Wide Overview of Power Management
 ms.assetid: 16313152-3fe2-49d7-8cf1-b369e39e4130
 keywords: ["power management WDK kernel , about power management", "power management WDK kernel , system-wide overview", "software WDK power management", "Control Panel WDK power management", "system-wide power policy WDK kernel", "power policy WDK kernel", "conserving power WDK kernel"]
@@ -30,9 +29,9 @@ When the power manager requests a change to the system power state, drivers resp
 
 Although ACPI hardware realizes the greatest power savings, the hardware need not be ACPI-compliant for power management in drivers to be effective.
 
- 
+ 
 
- 
+ 
 
 
 

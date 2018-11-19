@@ -1,6 +1,5 @@
 ---
 title: Using the Tape Class Driver
-author: windows-driver-content
 description: Using the Tape Class Driver
 ms.assetid: 72ed3fd9-d46f-400e-9816-f9f48b5a85c0
 keywords:
@@ -38,9 +37,9 @@ The tape class driver:
 
 See [Tape Class Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567959) for descriptions of the **TapeClass***Xxx* routines that can be called by a tape miniclass driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Power Management
-author: windows-driver-content
 description: Power Management
 ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
 keywords:
@@ -63,9 +62,9 @@ With one device connected and installed correctly, test its behavior before and 
     5.  Put the device into each of the error states described in [Device Error States](device-error-states.md). Verify that the job can be canceled, recovered from, and restarted after returning from a critical shutdown event. Print jobs in an error state should remain in the queue through shutdown or restart, and the print job should resume after the error state is cleared after shutdown or restart.
     6.  With the device installed and idle, use the **Power Options** application, obtained from Control Panel, to start a system sleep state. Verify that the system enters the appropriate Sleep state at the given time. Repeat this test without the device installed, and verify that the device can be installed after the system wakes.
 
- 
+ 
 
- 
+ 
 
 
 

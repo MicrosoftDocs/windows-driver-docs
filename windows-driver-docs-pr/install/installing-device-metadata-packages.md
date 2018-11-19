@@ -23,9 +23,9 @@ This section discusses the various ways a device metadata package is installed o
 
 [Manually Adding Device Metadata Packages](manually-adding-device-metadata-packages.md)
 
- 
+ 
 
- 
+ 
 
 
 

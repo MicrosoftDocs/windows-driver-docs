@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_SEND_RESPONSE_ACTION_FRAME_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_SEND_RESPONSE_ACTION_FRAME_COMPLETE to indicate information about the Response Action frame sent by OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME.
 ms.assetid: 0b330ad6-4a55-4a3e-951f-0e5a951a8cf1
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\
 |------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------------------------------------|------------------------------------------------------------------------|
 | [**WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT**](https://msdn.microsoft.com/library/windows/hardware/dn897993) |                                | This TLV is only required if the status is success. | Information about the Response Action frame that was sent to the peer. |
 
- 
+ 
 
 Requirements
 ------------
@@ -53,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

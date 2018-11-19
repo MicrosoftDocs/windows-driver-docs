@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_WMI
-author: windows-driver-content
 description: Handling SRB_FUNCTION_WMI
 ms.assetid: df20b9dc-1b67-4044-8abe-3cf5714076b3
 keywords:
@@ -64,9 +63,9 @@ On receipt of an SRB in which the **Function** member is set to SRB\_FUNCTION\_W
 
 For more information about WMI, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139).
 
- 
+ 
 
- 
+ 
 
 
 

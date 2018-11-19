@@ -50,7 +50,7 @@ When your driver package passes the certification tests, it can be signed by Win
 
 To install on Windows 10, 8.1, 8, and 7, your driver package can have a single SHA1 signature.
 
-Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](http://msdn.microsoft.com/windows/hardware/gg236587.aspx).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
+Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](https://msdn.microsoft.com/windows/hardware/gg236587.aspx).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
 
 ** Note **  SHA1 deprecation does not apply to drivers.  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
 
@@ -67,7 +67,7 @@ When you set the driver package properties for production signing, remember to a
 
 **Note**  To see the hash (also called the thumb print) of a certificate, open a Command Prompt window and navigate to the directory that contains your certificate. Enter the command **certutil -dump** *CertName.pfx*, where *CertName.pfx* is the name of your certificate.
 
-     
+     
 
 ## <span id="related_topics"></span>Related topics
 
@@ -83,9 +83,9 @@ When you set the driver package properties for production signing, remember to a
 * [Driver Signing](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544865)
 * [Installing a Boot-Start Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547570)
 * [Tools for Signing Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552958)
- 
+ 
 
- 
+ 
 
 
 

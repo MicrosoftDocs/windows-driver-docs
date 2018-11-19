@@ -21,8 +21,6 @@ Deletes a third-party (OEM) driver package from the driver store on the local co
 
 ```
     devcon dp_delete [-f] inf
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -43,9 +41,9 @@ devcon dp_delete oem2.inf
 devcon dp_delete oem0.inf -f
 ```
 
- 
 
- 
+
+
 
 
 

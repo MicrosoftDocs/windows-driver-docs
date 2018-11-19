@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Recommendations
-author: windows-driver-content
 description: XPSDrv Driver Recommendations
 ms.assetid: 6700afd2-8526-4464-92b8-a9c1a37f8402
 keywords:
@@ -18,9 +17,9 @@ In addition to the [XPSDrv Driver Requirements](xpsdrv-driver-requirements.md), 
 
 -   **Map to public Print Schema keywords.** Whenever possible, you should map all print driver settings and print driver capabilitiesto their equivalent keywords in the public Print Schema. Mapping print driver settings to public Print Schema keywords makes it easier for applications to adopt new features. This mapping also provides better synchronization of printer settings between print drivers and applications and system.
 
- 
+ 
 
- 
+ 
 
 
 

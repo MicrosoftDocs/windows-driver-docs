@@ -1,6 +1,5 @@
 ---
 title: The Changer Class Driver
-author: windows-driver-content
 description: The Changer Class Driver
 ms.assetid: c1c2330c-9cfc-432f-945c-630dc16aa54d
 keywords:
@@ -35,9 +34,9 @@ The changer class driver:
 
 -   Calls **Changer***Xxx* miniclass driver routines to get product data, change element status, or query inquiry or volume tags data.
 
- 
+ 
 
- 
+ 
 
 
 

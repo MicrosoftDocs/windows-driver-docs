@@ -17,17 +17,13 @@ A filtering extension can do the following with packets that were obtained on th
 
 -   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the ingress data path, it can apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the out-of-band (OOB) data of a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://msdn.microsoft.com/library/windows/hardware/hh598259) macro.
 
-    **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can be done only on packets obtained on the egress data path.
-
-     
+    **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can be done only on packets obtained on the egress data path.
 
     Custom policies are defined by the independent software vendor (ISV). Property settings for this policy type are managed through the Hyper-V WMI management layer. The filtering extension is configured with these property settings through an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278) and [OID\_SWITCH\_PROPERTY\_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598283).
 
     For more information on custom extensible port or switch policies, see [Managing Hyper-V Extensible Switch Policies](managing-hyper-v-extensible-switch-extensibility-policies.md).
 
-    **Note**  Only forwarding extensions can enforce standard port policies for packet delivery through the extensible switch.
-
-     
+    **Note**  Only forwarding extensions can enforce standard port policies for packet delivery through the extensible switch.
 
 -   Inject new, modified, or cloned packets into the ingress data path.
 
@@ -53,9 +49,7 @@ Besides inspecting OID requests and NDIS status indications, a filtering extensi
 
 -   Veto the creation of an extensible switch port or network adapter connection by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto a port creation request by returning STATUS\_DATA\_NOT\_ACCEPTED when the driver receives an OID set request of [OID\_SWITCH\_PORT\_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598272).
 
-    **Note**  Filtering extensions do not create or delete ports or network adapter connections. The protocol edge of the extensible switch issues OIDs to notify the underlying filter drivers about the creation or deletion of ports or network adapter connections. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md).
-
-     
+    **Note**  Filtering extensions do not create or delete ports or network adapter connections. The protocol edge of the extensible switch issues OIDs to notify the underlying filter drivers about the creation or deletion of ports or network adapter connections. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md).
 
 -   Veto the addition or update of an extensible switch or port policy by returning STATUS\_DATA\_NOT\_ACCEPTED for the applicable extensible switch OIDs. For example, the filtering extension can veto the addition of a port policy by returning STATUS\_DATA\_NOT\_ACCEPTED when the extension receives an OID set request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275).
 
@@ -69,9 +63,7 @@ A filtering extension has the following requirements:
 
     For more information on how to write a filtering extension, see [Writing Hyper-V Extensible Switch Extensions](writing-hyper-v-extensible-switch-extensions.md).
 
-    **Note**  The Windows Filtering Platform (WFP) provides an in-box extensible switch filtering extension (Wfplwfs.sys ). This extension allows WFP filters or callout drivers to intercept packets along the Hyper-V extensible switch data path. This allows the filters or callout drivers to perform packet inspection or modification by using the WFP management and system functions. For an overview of WFP, see [Windows Filtering Platform](porting-packet-processing-drivers-and-apps-to-wfp.md).
-
-     
+    **Note**  The Windows Filtering Platform (WFP) provides an in-box extensible switch filtering extension (Wfplwfs.sys ). This extension allows WFP filters or callout drivers to intercept packets along the Hyper-V extensible switch data path. This allows the filters or callout drivers to perform packet inspection or modification by using the WFP management and system functions. For an overview of WFP, see [Windows Filtering Platform](porting-packet-processing-drivers-and-apps-to-wfp.md).
 
 -   The INF file for a filtering extension must install the driver as a modifying filter driver. NDIS-monitoring filter drivers cannot be installed in the extensible switch driver stack.
 
@@ -84,12 +76,3 @@ A filtering extension has the following requirements:
 -   Any number of filtering extensions can be bound and enabled in the driver stack for each instance of an extensible switch. By default, multiple filtering extensions are ordered based on when they were installed. For example, multiple filtering extensions are layered in the extensible switch driver stack with the most recently installed extension layered above other filtering extensions in the stack.
 
     After they are bound and enabled in an extensible switch instance, the layering of filtering extensions in the extensible switch driver stack can be reordered. For more information, see [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md).
-
- 
-
- 
-
-
-
-
-

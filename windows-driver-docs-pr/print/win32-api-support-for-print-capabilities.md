@@ -1,6 +1,5 @@
 ---
 title: Win32 API Support for Print Capabilities
-author: windows-driver-content
 description: Win32 API Support for Print Capabilities
 ms.assetid: 1b40cc3e-c6f6-460f-b514-4ef3a001f563
 keywords:
@@ -28,9 +27,9 @@ When a WPF application requests a PrintCapabilities document from a print driver
 
 For more information about how the **IPrintTicketProvider** interface is supported by Microsoft print drivers, see [Printer Driver and Plug-in Interface Design in Windows Vista](printer-driver-and-plug-in-helper-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

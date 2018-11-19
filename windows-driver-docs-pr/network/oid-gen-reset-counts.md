@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_RESET_COUNTS
-author: windows-driver-content
 description: As a query, the OID_GEN_RESET_COUNTS OID returns the number of times the miniport adapter was reset.
 ms.assetid: 3f27d801-f044-4f50-98eb-c16d8e4291f2
 ms.date: 08/08/2017
@@ -39,9 +38,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

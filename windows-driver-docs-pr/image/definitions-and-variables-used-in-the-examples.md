@@ -1,6 +1,5 @@
 ---
 title: Definitions and Variables Used in the Examples
-author: windows-driver-content
 description: Definitions and Variables Used in the Examples
 ms.assetid: 55dd0618-2171-406b-a22a-437412c77cbc
 ms.date: 04/20/2017
@@ -44,9 +43,9 @@ PFN_WSDCHNR_INITIALIZE m_pfnInitializeChallenge;
 PFN_WSDCHNR_SHUTDOWN m_pfnShutdownChallenge;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Failing an I/O Operation in a Postoperation Callback Routine
-author: windows-driver-content
 description: Failing an I/O Operation in a Postoperation Callback Routine
 ms.assetid: 45897bca-1573-42c5-ad00-3198b7362d9e
 keywords:
@@ -32,9 +31,9 @@ When setting the callback data structure's **IoStatus.Status** field to the fina
 
 Callers of [**FltCancelFileOpen**](https://msdn.microsoft.com/library/windows/hardware/ff541784) must be running at IRQL &lt;= APC\_LEVEL. However, a minifilter driver can safely call this routine from a post-create callback routine, because, for IRP\_MJ\_CREATE operations, the postoperation callback routine is called at IRQL = PASSIVE\_LEVEL, in the context of the thread that originated the create operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ If an underlying driver should associate the OID request with a subsequent statu
 
 A driver can call [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) when a binding is in the *Restarting*, *Running*, *Pausing*, or *Paused* state.
 
- 
+ 
 
- 
+ 
 
 
 

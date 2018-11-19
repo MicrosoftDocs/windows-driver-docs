@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication
-author: windows-driver-content
 description: Bidirectional Communication
 ms.assetid: c88f5f43-4a14-4f63-9f17-b6680fc0d645
 keywords:
@@ -40,9 +39,9 @@ For a description of how the print spooler supports bidirectional communication,
 
 [Bidirectional Communication Error Codes](https://msdn.microsoft.com/library/windows/hardware/dd183367)
 
- 
+ 
 
- 
+ 
 
 
 

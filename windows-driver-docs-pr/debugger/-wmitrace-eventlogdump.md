@@ -3,7 +3,6 @@ title: wmitrace.eventlogdump
 description: The wmitrace.eventlogdump extension displays the contents of the specified logger. The display is formatted like an event log.
 ms.assetid: 27254b36-b413-45f0-9834-ff55fbb787c7
 keywords: ["wmitrace.eventlogdump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,9 +48,9 @@ This extension is similar to the [**!wmitrace.logdump**](-wmitrace-logdump.md) e
 
 To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitrace-strdump.md) extension. Alternatively, you can use the Tracelog command tracelog -l to list the trace sessions and their basic properties, including the logger ID.
 
- 
+ 
 
- 
+ 
 
 
 

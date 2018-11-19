@@ -2,7 +2,6 @@
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
 ms.assetid: F477430B-10C7-4039-9C5F-25556C306643
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ Use the general process to test any of the samples.
 
 2. Use a text editor such as Notepad to create a text file named and save it with a .js file extension, such as *HelloWorld.js*
 
-```
+```javascript
 // WinDbg JavaScript sample
 // Says Hello World!
 
@@ -42,13 +41,13 @@ function sayHi()
 
 3. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 4. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
 
-```
+```dbgcmd
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
@@ -56,7 +55,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 
 5. If the script contains a uniquely named function, use the dx command to execute that function, that is located in Debugger.State.Scripts.*ScriptName*.Contents.*FunctionName*.
 
-```
+```dbgcmd
 0:001> dx Debugger.State.Scripts.HelloWorld.Contents.sayHi()
 Hi from JavaScript!
 Debugger.State.Scripts.HelloWorld.Contents.sayHi()
@@ -73,7 +72,7 @@ This script is intended to support kernel mode debugging.
 
 You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](-devnode.md).
 
-```
+```javascript
 // PlugAndPlayDeviceTree.js
 // An ES6 generator function which recursively filters the device tree looking for PCI devices in the started state.
 //
@@ -107,18 +106,18 @@ function filterAllDevices()
 
 Either load a kernel dump file or establish a kernel mode connection to a target system.
 
-```
+```dbgcmd
 0: kd> !load jsprovider.dll
 ```
 
-```
+```dbgcmd
 0: kd> .scriptload c:\WinDbg\Scripts\deviceFilter.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\deviceFilter.js'
 ```
 
 Call the filterAllDevices() function.
 
-```
+```dbgcmd
 0: kd> dx Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()
 Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()                 : [object Generator]
     [0x0]            : PCI\VEN_8086&DEV_D131&SUBSYS_304A103C&REV_11\3&21436425&0&00
@@ -134,7 +133,7 @@ Each of these objects presented above, automatically supports DML, and can be cl
 
 Alternatively to using this script, it is possible to use a LINQ query to accomplish a similar result.
 
-```
+```dbgcmd
 0: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") && n.State == 776)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.InstancePath.Contains("PCI") && n.State == 776)  
     [0x0]            : PCI\VEN_8086&DEV_D131&SUBSYS_304A103C&REV_11\3&21436425&0&00
@@ -155,7 +154,7 @@ This script is intended to support kernel mode debugging.
 
 Note that the choice to extend Session with StreamingDevices is done for example purposes only. This should be either left to \_DEVICE\_OBJECT only or deeper inside a namespace under the existing .Devices.\* hierarchy.
 
-```
+```javascript
 // StreamingFinder.js
 // Extends a kernel _DEVICE_OBJECT for information specific to multimedia 
 // and adds StreamingDevices to a debugger session.
@@ -360,14 +359,14 @@ function initializeScript()
 
 First load the script provider as described previously. Then load the script.
 
-```
+```dbgcmd
 0: kd> .scriptload c:\WinDbg\Scripts\StreamingFinder.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\StreamingFinder.js'
 ```
 
 Then use the dx command to access the new StreamingDevices capabilities that the script provides.
 
-```
+```dbgcmd
 0: kd> dx -r3 @$cursession.StreamingDevices.Select(d => d->StreamingState.CreateEntries)
 @$cursession.StreamingDevices.Select(d => d->StreamingState.CreateEntries)                
     [0x0]            : [object Object]
@@ -409,7 +408,7 @@ This script extends the visualization of \_DEVICE\_OBJECT to add a BusInformatio
 
 This script is intended to support kernel mode debugging.
 
-```
+```javascript
 "use strict";
 
 /*************************************************
@@ -578,14 +577,14 @@ function initializeScript()
 
 First load the script provider as described previously. Then load the script.
 
-```
+```dbgcmd
 0: kd> .scriptload c:\WinDbg\Scripts\DeviceExtensionInformation.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\DeviceExtensionInformation.js'
 ```
 
 We need to locate the address of the device object we are interested in. In this example, we will examine the audio HDAudBus driver.
 
-```
+```dbgcmd
 0: kd>  !drvobj HDAudBus
 Driver object (ffffb60757a4ae60) is for:
  \Driver\HDAudBus
@@ -597,7 +596,7 @@ ffffb60758e21810  ffffb60757a67c60
 
 After the script is loaded use the dx command to display bus information for device objects.
 
-```
+```dbgcmd
 0: kd> dx -r1 (*((ntkrnlmp!_DEVICE_OBJECT *)0xffffe00001b567c0))
 (*((ntkrnlmp!_DEVICE_OBJECT *)0xffffe00001b567c0))                 : Device for "\Driver\HDAudBus" [Type: _DEVICE_OBJECT]
     [<Raw View>]     [Type: _DEVICE_OBJECT]
@@ -639,7 +638,7 @@ This example iterates through all the threads in the debugger's current process,
 
 This script is intended to support user mode debugging.
 
-```
+```javascript
 // TitleFinder.js
 // A function which uses just JavaScript concepts to find the title of an application
 //
@@ -688,21 +687,21 @@ function findTitleWithLINQ()
 }
 ```
 
-```
+```dbgcmd
 0: kd> .scriptload c:\WinDbg\Scripts\TitleFinder.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\TitleFinder.js'
 ```
 
 Calling the findTitle() function returns notepad.exe
 
-```
+```dbgcmd
 0:000> dx Debugger.State.Scripts.TitleFinder.Contents.findTitle()
 Debugger.State.Scripts.TitleFinder.Contents.findTitle() : C:\Windows\System32\notepad.exe
 ```
 
 Calling the LINQ version, findTitleWithLINQ() also returns notepad.exe
 
-```
+```dbgcmd
 0:000> dx Debugger.State.Scripts.TitleFinder.Contents.findTitleWithLINQ()
 Debugger.State.Scripts.titleFinder.Contents.findTitleWithLINQ() : C:\Windows\System32\notepad.exe
 ```
@@ -712,9 +711,9 @@ Debugger.State.Scripts.titleFinder.Contents.findTitleWithLINQ() : C:\Windows\Sys
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Prepare your sensor test board
-author: windows-driver-content
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
 ms.assetid: 121A6B05-9D5D-447C-B7C6-B2B86C24114B
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ This topic shows you how to prepare your sensor test board for connection to the
 
 **Note**  This topic assumes that you’re using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with Sharks Cove.
 
- 
+ 
 
 If you purchased your sensor test board from an IHV, and it was not developed specifically for use with Sharks Cove, it might be necessary to make some modifications to the test board. This topic shows you the kind of information that you must read to find out if you need to make modifications to your sensor test board. If you need to modify the sensor test board, then follow the guidance in this topic to prepare the test board for connection to Sharks Cove.
 
@@ -49,7 +48,7 @@ Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showi
 | 19         | Not connected          | None                                                                                                |
 | 20         | Not connected          | None                                                                                                |
 
- 
+ 
 
 For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](http://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
 
@@ -89,9 +88,9 @@ So preparing your sensor test board for connection to Sharks Cove, could involve
 
 After you’ve made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Semantic Model Checks
-author: windows-driver-content
 description: Semantic Model Checks
 ms.assetid: 7e050067-1f90-4088-a1d9-63d03af81b2d
 keywords:
@@ -36,9 +35,9 @@ This section includes the following topics:
 
 [Media Validation](media-validation.md)
 
- 
+ 
 
- 
+ 
 
 
 

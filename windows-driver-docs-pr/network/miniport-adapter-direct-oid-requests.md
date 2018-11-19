@@ -38,25 +38,25 @@ To support the direct OIDs request interface, use the documentation for the stan
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>MiniportDirectOidRequest</em>](https://msdn.microsoft.com/library/windows/hardware/ff559371)</p></td>
-<td align="left"><p>[<em>MiniportOidRequest</em>](https://msdn.microsoft.com/library/windows/hardware/ff559416)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559371" data-raw-source="[&lt;em&gt;MiniportDirectOidRequest&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559371)"><em>MiniportDirectOidRequest</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559416" data-raw-source="[&lt;em&gt;MiniportOidRequest&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559416)"><em>MiniportOidRequest</em></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>MiniportCancelDirectOidRequest</em>](https://msdn.microsoft.com/library/windows/hardware/ff559335)</p></td>
-<td align="left"><p>[<em>MiniportCancelOidRequest</em>](https://msdn.microsoft.com/library/windows/hardware/ff559339)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559335" data-raw-source="[&lt;em&gt;MiniportCancelDirectOidRequest&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559335)"><em>MiniportCancelDirectOidRequest</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559339" data-raw-source="[&lt;em&gt;MiniportCancelOidRequest&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559339)"><em>MiniportCancelOidRequest</em></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NdisMDirectOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563582)</p></td>
-<td align="left"><p>[<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563582" data-raw-source="[&lt;strong&gt;NdisMDirectOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563582)"><strong>NdisMDirectOidRequestComplete</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

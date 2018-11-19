@@ -60,7 +60,7 @@ By default, Windows 8 has power settings that PortCls uses to determine whether
 </tbody>
 </table>
 
- 
+ 
 
 The following Windows registry fragment shows the syntax that is used for providing the power setting information.
 
@@ -73,9 +73,9 @@ The following Windows registry fragment shows the syntax that is used for provid
 
 The preceding fragment shows a hexadecimal (hex) value of "1e" for the *ConservationIdleTime*, and this equates to a 30-second idle timeout. The hex value of "0" shown for *PerformanceIdleTime* means that idle management has been disabled. And the value of "03" shown for the *IdlePowerState* means that when power is no longer needed, the device associated with this power setting profile will enter the D3 power state.
 
- 
+ 
 
- 
+ 
 
 
 

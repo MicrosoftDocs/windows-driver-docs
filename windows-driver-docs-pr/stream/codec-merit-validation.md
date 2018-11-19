@@ -1,6 +1,5 @@
 ---
 title: Codec Merit Validation
-author: windows-driver-content
 description: Codec Merit Validation
 ms.assetid: 595a21ea-bae2-410e-874a-7f3429ac02a1
 keywords:
@@ -32,7 +31,7 @@ To support KSPROPSETID\_OPMVideoOutput, implement the following methods:
 
 The remainder of this topic includes a sample implementation of these three methods.
 
-To use this code, you must include the following header files*:*
+To use this code, you must include the following header files<em>:</em>
 
 ```cpp
 #include <initguid.h>
@@ -1099,9 +1098,9 @@ const BYTE TestCert[] =
 #endif //_TESTCERT_H_
 ```
 
- 
+ 
 
- 
+ 
 
 
 

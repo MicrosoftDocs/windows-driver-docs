@@ -1,6 +1,5 @@
 ---
 title: IWiaLog COM Interface
-author: windows-driver-content
 description: IWiaLog COM Interface
 ms.assetid: e5d42b5d-796f-42f3-9c01-4234b8765ca6
 ms.date: 04/20/2017
@@ -30,27 +29,27 @@ It is provided for backward compatibility only. The methods in this interface al
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaLog::InitializeLog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543932)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543932" data-raw-source="[&lt;strong&gt;IWiaLog::InitializeLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543932)"><strong>IWiaLog::InitializeLog</strong></a></p></td>
 <td><p>Initializes the logging utility.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaLog::Log</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543939)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543939" data-raw-source="[&lt;strong&gt;IWiaLog::Log&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543939)"><strong>IWiaLog::Log</strong></a></p></td>
 <td><p>Logs a message to a file or other target.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaLog::hResult</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543928)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543928" data-raw-source="[&lt;strong&gt;IWiaLog::hResult&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543928)"><strong>IWiaLog::hResult</strong></a></p></td>
 <td><p>Translates an HRESULT into a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about this interface, see [IWiaLog Interface and Diagnostic Log Macros](https://msdn.microsoft.com/library/windows/hardware/ff543937).
 
- 
+ 
 
- 
+ 
 
 
 

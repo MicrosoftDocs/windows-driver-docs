@@ -1,6 +1,5 @@
 ---
 title: Powering Up a Device
-author: windows-driver-content
 description: Powering Up a Device
 ms.assetid: 115cc904-922d-447e-b221-cb3e489dd08d
 keywords: ["I/O WDK power management", "device power ups WDK kernel", "powering up devices WDK kernel", "IRP_MN_SET_POWER", "working state returns WDK power management", "turning on devices WDK power management", "automatic power ups WDK kernel", "on power WDK kernel", "IRPs WDK power management", "startup power management WDK kernel"]
@@ -18,9 +17,9 @@ When a bus driver handles a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.micros
 
 When a device has been powered down to conserve power, its drivers should power it up when an I/O request arrives. In this case, the device power policy owner must send an **IRP\_MN\_SET\_POWER** to return the device to the working state. When the IRP completes, the drivers for the device stop queuing I/O and begin to process requests off the queue.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Data Type Template Inheritance
-author: windows-driver-content
 description: Data Type Template Inheritance
 ms.assetid: c2ecc091-8fdc-4666-9cdf-629903f13f6f
 keywords:
@@ -23,7 +22,7 @@ The templates that serve as base templates do not need to be completely defined.
 
 **Note**   The parser filter automatically creates a default value for the **\*ArraySize** directive if it is missing when the **\*ElementType** directive is supplied in a COMPOSITE data type. As a result, **\*ArraySize** can be defined before **\*ElementType** (by defining **\*ArraySize** in a template that is subsequently inherited by the template that defines **\*ElementType**), but the reverse is not allowed (that is, **\*ElementType** cannot be defined before **\*ArraySize**).
 
- 
+ 
 
 ### Schemas
 
@@ -105,9 +104,9 @@ Data type inheritance is used to factor out properties that are common to severa
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

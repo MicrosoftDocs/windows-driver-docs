@@ -1,6 +1,5 @@
 ---
 title: WSK_RELEASE_SD
-author: windows-driver-content
 description: WSK_RELEASE_SD
 ms.assetid: de8cc759-c778-464e-9e19-984ea20c0d29
 ms.date: 07/18/2017
@@ -83,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

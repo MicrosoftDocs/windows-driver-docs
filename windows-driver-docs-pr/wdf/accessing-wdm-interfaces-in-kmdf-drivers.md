@@ -1,6 +1,5 @@
 ---
 title: Accessing WDM Interfaces in KMDF Drivers
-author: windows-driver-content
 description: Most Kernel-Mode Driver Framework (KMDF) drivers do not need to access Windows Driver Model (WDM) interfaces directly.
 ms.assetid: 86e35617-cb6a-4d65-b2a6-9c7bcfa73480
 keywords:
@@ -27,9 +26,9 @@ Most Kernel-Mode Driver Framework (KMDF) drivers do not need to access Windows D
 -   [Handling WDM IRPs Outside of the Framework](handling-wdm-irps-outside-of-the-framework.md)
 -   [WDM Interface Restrictions](wdm-interface-restrictions.md)
 
- 
+ 
 
- 
+ 
 
 
 

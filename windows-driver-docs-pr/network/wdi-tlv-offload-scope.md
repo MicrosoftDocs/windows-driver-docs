@@ -31,7 +31,7 @@ The size (in bytes) of the below values.
 | UINT8 | Specifies whether LsoV1 offload parameters are applicable on all ports. <p>Possible values:</p> <ul><li>0: Not applicable</li><li>1: Applicable</li></ul> |
 | UINT8 | Specifies whether LsoV2 offload parameters are applicable on all ports. <p>Possible values:</p> <ul><li>0: Not applicable</li><li>1: Applicable</li></ul> |
 | UINT8 | Specifies whether RSC offload parameters are applicable on all ports. <p>Possible values:</p> <ul><li>0: Not applicable</li><li>1: Applicable</li></ul> |
- 
+ 
 
 ## Requirements
 

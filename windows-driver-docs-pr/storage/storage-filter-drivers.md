@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Drivers
-author: windows-driver-content
 description: Storage Filter Drivers
 ms.assetid: 615e8ff1-d5b2-49da-b024-83bbaff70ded
 keywords:
@@ -42,9 +41,9 @@ If an existing storage class driver does not fully support a new device of its t
 
 Unless a new device requires that every request be handled in a device-specific manner, a storage filter driver can be developed in far less time than a new storage class driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,7 +31,7 @@ The following sequence of operations must be performed to pass a command buffer 
 3.  The DirectX graphics kernel subsystem calls the display miniport driver's [**DxgkDdiRender**](https://msdn.microsoft.com/library/windows/hardware/ff559793) or [**DxgkDdiRenderKm**](https://msdn.microsoft.com/library/windows/hardware/ff559800) function to validate the command buffer, write a DMA buffer in the hardware's format, and produce an allocation list that describes the surfaces used. Note that the DMA buffer has not yet been patched (that is, assigned physical addresses).
     **Note**   If the runtime initiated the command-buffer submission by calling the user-mode display driver's [**Present**](https://msdn.microsoft.com/library/windows/hardware/ff569176) function, the graphics subsystem calls the display miniport driver's [**DxgkDdiPresent**](https://msdn.microsoft.com/library/windows/hardware/ff559743) function, rather than [**DxgkDdiRender**](https://msdn.microsoft.com/library/windows/hardware/ff559793) or [**DxgkDdiRenderKm**](https://msdn.microsoft.com/library/windows/hardware/ff559800).
 
-     
+     
 
 4.  The video memory manager calls the display miniport driver's [**DxgkDdiBuildPagingBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff559587) function to create special purpose DMA buffers, known as paging buffers, that move the allocations specified in the allocation list that accompanies the DMA buffer to and from GPU-accessible memory. For more information, see [Paging Video Memory Resources](paging-video-memory-resources.md).
 
@@ -49,9 +49,9 @@ The following sequence of operations must be performed to pass a command buffer 
 
 11. The display miniport driver's DPC is notified to handle most of the DMA buffer processing.
 
- 
+ 
 
- 
+ 
 
 
 

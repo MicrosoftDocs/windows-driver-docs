@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_AspPage method
-author: windows-driver-content
 description: The AspPage property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 MS-HAID:
 - 'webfnc\_6b636ee3-bc4f-4fbd-8ad9-87d6abcf3b35.xml'
@@ -67,7 +66,7 @@ This method can return one of these values.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_NOTIMPL</strong></td>

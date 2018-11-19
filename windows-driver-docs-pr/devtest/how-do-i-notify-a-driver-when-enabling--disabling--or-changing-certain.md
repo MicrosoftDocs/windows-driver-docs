@@ -26,7 +26,6 @@ __in __int64 Logger,
 __in BOOLEAN Enable,
 __in ULONG Flags,
 __in UCHAR Level);
- 
 ```
 
 The following is an example of how to notify a driver when certain flags are enabled:
@@ -44,7 +43,7 @@ VOID MyOwnCallback (
 //                
 //                  This callback function will be called with the current values of : GUID, Logger, Enable, Flags, and Level
 //                 
- 
+
                   if (Enable) {
                         .
                         .
@@ -52,9 +51,9 @@ VOID MyOwnCallback (
 } 
 ```
 
- 
 
- 
+
+
 
 
 

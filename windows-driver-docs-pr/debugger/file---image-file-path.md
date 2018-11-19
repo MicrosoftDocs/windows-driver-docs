@@ -3,7 +3,6 @@ title: File Image File Path
 description: File Image File Path
 ms.assetid: d2a827b5-bba0-4840-8e74-5b24c9eb6a22
 keywords: ["File Image File Path", "executable files and paths, File Image File Path"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,9 +35,9 @@ In the **Browse For Folder** dialog box, you can browse through the folders on y
 
 Click **OK** to append the selected folder to the executable image path and return to the **Executable Image Search Path** dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

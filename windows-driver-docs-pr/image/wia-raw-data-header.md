@@ -1,6 +1,5 @@
 ---
 title: WIA RAW Data Header
-author: windows-driver-content
 description: WIA RAW Data Header
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
 ms.date: 04/20/2017
@@ -73,9 +72,9 @@ Black and white and grayscale data can omit the palette (because the information
 
 For indexed images, the number of entries in the color palette is dictated by the current *BitsPerPixel* value (2 ^ *BitsPerPixel*. For example, 2 entries for 1bpp, 16 entries for 4bpp, 256 entries for 8bpp). The format of the palette entries would be dictated by the number of entries in *BitsPerChannel* field (the number of fields/channels in each palette entry) and *BitsPerChannel* values (each field would contain exactly the value specified in the *BitsPerChannel* field for the respective channel). Each palette entry field must be BYTE-aligned.
 
- 
+ 
 
- 
+ 
 
 
 

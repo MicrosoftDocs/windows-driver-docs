@@ -29,11 +29,11 @@ Hardware vendors who want to run checked binaries for WDDM can use one of the fo
 
     **Note**   The *Win32k.sys*, *Gdi32.dll*, *Winsrv.dll*, and *User32.dll*WDDM binaries are exceptions to this rule. These binaries should always match the type of operating system build being installed. Therefore, on a free-binary version of the operating system, these binaries should also be free binary; on a checked-binary version of the operating system build, these binaries should be checked binary. Otherwise, hardware vendors can mix and match free-binary and checked-binary versions of all other WDDM binaries.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

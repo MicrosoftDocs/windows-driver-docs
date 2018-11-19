@@ -1,6 +1,5 @@
 ---
 title: Adding Document Feeder Support for Windows Me and Windows XP
-author: windows-driver-content
 description: Adding Document Feeder Support for Windows Me and Windows XP
 ms.assetid: f3be94fa-6fb7-45de-a3ce-f3d173e802cf
 ms.date: 04/20/2017
@@ -99,9 +98,9 @@ The number of pages that a document feeder driver returns depends on the setting
 
 2.  2. If the scanner runs out of paper before the requested number of pages are scanned, return WIA\_STATUS\_END\_OF\_MEDIA. This allows the application to close the scanning session, thus preserving the number of pages it already scanned successfully. Some applications respond to WIA\_ERROR\_PAPER\_EMPTY the same way as they would to WIA\_STATUS\_END\_OF\_MEDIA.
 
- 
+ 
 
- 
+ 
 
 
 

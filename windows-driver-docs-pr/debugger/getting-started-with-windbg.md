@@ -2,7 +2,6 @@
 title: Getting Started with WinDbg (User-Mode)
 description: WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
 ms.assetid: 8C2D2D0C-7E54-4711-A6FD-970E040F1C50
-ms.author: domars
 ms.date: 10/09/2017
 ms.localizationpriority: medium
 ---
@@ -34,7 +33,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```console
+    ```dbgcmd
     Symbol search path is: srv*
     Expanded Symbol search path is: cache*;SRV
     ```
@@ -57,7 +56,7 @@ After you have installed the debugging tools, locate the installation directorie
  
     The output is similar to this:
 
-    ```console
+    ```dbgcmd
     000000d0`428ff7e8 00007ff6`3282122f notepad!WinMain
     ...
     ```
@@ -72,7 +71,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0 e 00007ff6`32825f64     0001 (0001)  0:**** notepad!WinMain
     ```
 
@@ -88,7 +87,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:000> lm
     start             end                 module name
     00007ff6`32820000 00007ff6`3285a000   notepad    (pdb symbols)          C:\...\notepad.pdb
@@ -120,7 +119,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     Breakpoint 0 hit
     notepad!WinMain:
     00007ff6`32825f64 488bc4          mov     rax,rsp
@@ -156,7 +155,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:011> ~
        0  Id: 10c8.128c Suspend: 1 Teb: 00007ff6`31cdd000 Unfrozen
        1  Id: 10c8.1a10 Suspend: 1 Teb: 00007ff6`31cdb000 Unfrozen
@@ -182,7 +181,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:011> ~0s
     USER32!SystemParametersInfoW:
     00007ffc`b12a4d20 48895c2408      mov     qword ptr [rsp+8], ...
@@ -206,7 +205,7 @@ After you have installed the debugging tools, locate the installation directorie
 
 Suppose you have written and built this small console application.
 
-```
+```dbgcmd
 ...
 void MyFunction(long p1, long p2, long p3)
 {
@@ -254,7 +253,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 5.  On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
 
-    ```
+    ```dbgcmd
     (1450.1424): Integer divide-by-zero - code c0000094 (first chance)
     First chance exceptions are reported before any exception handling.
     This exception may be expected and handled.
@@ -268,7 +267,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
     WinDbg displays an analysis of the problem (division by 0 in this case).
 
-    ```
+    ```dbgcmd
     FAULTING_IP: 
     MyApp!MyFunction+44 [c:\myapp\myapp\myapp.cpp @ 7]
     00007ff6`3be11064 f77c2428        idiv    eax,dword ptr [rsp+28h]
@@ -345,9 +344,9 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
 
- 
+ 
 
- 
+ 
 
 
 

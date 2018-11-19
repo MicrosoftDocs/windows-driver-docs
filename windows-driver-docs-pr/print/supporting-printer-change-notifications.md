@@ -1,6 +1,5 @@
 ---
 title: Supporting Printer Change Notifications
-author: windows-driver-content
 description: Supporting Printer Change Notifications
 ms.assetid: e75c6f89-9cef-4900-af89-edf1f7f786c7
 keywords:
@@ -48,9 +47,9 @@ Applications can request notification of the occurrences of print queue events b
 
 -   Provide a **FindClosePrinterChangeNotification** function (described in the Windows SDK documentation).
 
- 
+ 
 
- 
+ 
 
 
 

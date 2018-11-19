@@ -1,6 +1,5 @@
 ---
 title: Introduction to the Universal Printer Driver
-author: windows-driver-content
 description: Introduction to the Universal Printer Driver
 ms.assetid: e4e66d88-4273-47b1-9eb1-f2f5af8a7529
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ The Universal Printer Driver (Unidrv) is the Microsoft Corporation's standard pr
 
 [Sample GPD Files](sample-gpd-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

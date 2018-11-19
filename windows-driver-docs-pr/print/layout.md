@@ -1,6 +1,5 @@
 ---
 title: Layout
-author: windows-driver-content
 description: Layout
 ms.assetid: 649268ab-582a-4a9a-9f1e-669af321e6c6
 ms.date: 11/28/2017
@@ -26,9 +25,9 @@ The Layout property is the parent of the following properties:
 
 [InputBins](inputbins2.md)
 
- 
+ 
 
- 
+ 
 
 
 

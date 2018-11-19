@@ -3,7 +3,6 @@ title: str
 description: The str extension displays an ANSI_STRING or OEM_STRING structure.
 ms.assetid: 5ebb29d4-5d77-475b-ace5-8bc8a4299320
 keywords: ["strings", "ANSI_STRING structure", "str Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the ANSI\_STRING or OEM\_STRING structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ typedef STRING OEM_STRING;
 
 If the string is null-terminated, **Length** does not include the trailing null.
 
- 
+ 
 
- 
+ 
 
 
 

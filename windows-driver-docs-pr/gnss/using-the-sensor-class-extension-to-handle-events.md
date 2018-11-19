@@ -1,6 +1,5 @@
 ---
 title: Using the sensor class extension to handle events
-author: windows-driver-content
 description: The sensor class extension handles the event-linkage between a sensor driver and the Sensor API.
 ms.assetid: A49489EF-1721-4F12-9793-6FBA76BA7976
 ms.date: 04/20/2017
@@ -26,7 +25,7 @@ The state supported by the sample driver corresponds to a constant found in the 
 |----------------------|----------------------------------------------------------------|
 | SENSOR\_STATE\_READY | Indicates that the sensor is connected and ready to send data. |
 
- 
+ 
 
 As noted earlier, the sensor class extension handles the event-linkage between the sample driver and the Sensor API. Each time the driver invokes the **ISensorClassExtension::PostStateChange** method, the class extension forwards the notification to the API. The sample driver invokes this method within **CSensorManager::SetState**. When the driver invokes the **ISensorClassExtension::PostEvent** method and supplies the property key for the data-updated event, the class extension forwards the notification to the Sensor API. The sample driver invokes this method within **CSensorManager::PostDataEvent**.
 

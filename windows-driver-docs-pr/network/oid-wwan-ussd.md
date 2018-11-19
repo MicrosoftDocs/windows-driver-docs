@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_USSD
-author: windows-driver-content
 description: OID_WWAN_USSD sends Unstructured Supplementary Service Data (USSD) requests to the underlying MB device.
 ms.assetid: 9DFAAABD-8213-4B83-8FE8-1EC2BB9F735B
 ms.date: 08/08/2017
@@ -49,9 +48,9 @@ Requirements
 
 [WWAN\_USSD\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh464138)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ For more information about code integrity event logging and system auditing, see
 
 For more information about how to enable the system audit log and verbose logging, see [Enabling the System Event Audit Log](enabling-the-system-event-audit-log.md).
 
- 
+ 
 
- 
+ 
 
 
 

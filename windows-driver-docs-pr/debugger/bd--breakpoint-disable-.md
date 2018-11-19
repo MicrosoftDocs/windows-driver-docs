@@ -3,7 +3,6 @@ title: bd (Breakpoint Disable)
 description: The bd command disables, but does not delete, previously set breakpoints.
 ms.assetid: 9b408f4a-6036-41d7-b89a-3e7841c50a90
 keywords: ["bd (Breakpoint Disable) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the ID numbers of the breakpoints to disable. You can specify any numb
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +68,9 @@ Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all 
 
 Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) command to list all existing breakpoints, their ID numbers, and the commands that were used to create them.
 
- 
+ 
 
- 
+ 
 
 
 

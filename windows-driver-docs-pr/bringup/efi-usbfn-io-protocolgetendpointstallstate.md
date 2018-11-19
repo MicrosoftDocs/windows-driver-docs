@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
 ms.assetid: abf53ee7-8460-4861-a82d-827ad1dc6c40
 ms.date: 04/20/2017
@@ -75,7 +74,7 @@ Boolean; **TRUE** value indicates that the endpoint is in a stalled state, **FAL
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +86,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

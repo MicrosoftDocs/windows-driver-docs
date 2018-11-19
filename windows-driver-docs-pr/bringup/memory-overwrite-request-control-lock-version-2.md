@@ -1,7 +1,6 @@
 ---
 title: Memory Overwrite Request Control (MOR) LOCK version 2
 description: Memory Overwrite Request Control (MOR) LOCK version 2
-author: windows-driver-content
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

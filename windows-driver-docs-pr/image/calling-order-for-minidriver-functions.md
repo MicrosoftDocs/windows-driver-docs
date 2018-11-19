@@ -1,6 +1,5 @@
 ---
 title: Calling Order for Minidriver Functions
-author: windows-driver-content
 description: Calling Order for Minidriver Functions
 ms.assetid: 0e51d29c-964d-44d5-86be-095601286f94
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ For cameras, if an application wants to display thumbnails for the images, the W
 
 One other special consideration for cameras is root item properties that affect settings on the camera (shutter speed, for example). When the application changes these properties, the WIA service calls [**IWiaMiniDrv::drvValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545017). The minidriver can communicate with the camera, if necessary, to validate the property settings. This function, however, is not the best place to change settings on the camera, because another application also can change the properties. The minidriver should update all of the camera settings from the root item properties when the [**IWiaMiniDrv::drvDeviceCommand**](https://msdn.microsoft.com/library/windows/hardware/ff543967) function is called to capture a new image.
 
- 
+ 
 
- 
+ 
 
 
 

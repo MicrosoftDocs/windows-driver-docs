@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_REMOVE_WAKE_UP_PATTERN
-author: windows-driver-content
 description: OID_PNP_REMOVE_WAKE_UP_PATTERN
 ms.assetid: 493019d0-9cd9-4712-8d18-5ee0264be9e1
 ms.date: 08/08/2017
@@ -38,7 +37,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID_PM_REMOVE_WOL_PATTERN](oid-pm-remove-wol-pattern.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="oid-pm-remove-wol-pattern.md" data-raw-source="[OID_PM_REMOVE_WOL_PATTERN](oid-pm-remove-wol-pattern.md)">OID_PM_REMOVE_WOL_PATTERN</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -56,9 +55,9 @@ Requirements
 
 [OID\_PM\_REMOVE\_WOL\_PATTERN](oid-pm-remove-wol-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

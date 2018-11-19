@@ -1,6 +1,5 @@
 ---
 title: Porting from ScsiPort to StorPort
-author: windows-driver-content
 description: Porting from ScsiPort to StorPort
 ms.assetid: 2a14051d-dc23-4420-a3e5-0827b16b1e42
 ms.date: 04/20/2017
@@ -32,9 +31,9 @@ The following is a summary of the porting activities that were necessary in orde
 
 -   Add StorPortSetDeviceQueueDepth call -- LUN queue depth set to 31
 
- 
+ 
 
- 
+ 
 
 
 

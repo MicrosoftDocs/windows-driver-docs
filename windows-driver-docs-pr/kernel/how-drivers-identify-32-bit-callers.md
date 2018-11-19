@@ -1,6 +1,5 @@
 ---
 title: How Drivers Identify 32-Bit Callers
-author: windows-driver-content
 description: How Drivers Identify 32-Bit Callers
 ms.assetid: 9bfe9024-60f1-41ad-a034-160caaaa7801
 keywords: ["32-bit I/O support WDK 64-bit , identifying 32-bit callers", "identifying 32-bit callers", "32-bit caller identifications WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "caller identifications WDK 64-bit"]
@@ -22,9 +21,9 @@ The second technique permits 32- and 64-bit applications to continue using the s
 
 The first technique is more efficient, because the driver checks a bit flag instead of calling a kernel-mode routine. However, the second technique requires no changes to user-mode code. Which technique you should use depends on the requirements of your driver and the applications that send I/O requests to it.
 
- 
+ 
 
- 
+ 
 
 
 

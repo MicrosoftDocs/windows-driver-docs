@@ -43,7 +43,7 @@ The KSCATEGORY_VIRTUAL [device interface class](https://msdn.microsoft.com/libra
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,7 +42,7 @@ DriverVer=mm/dd/yyyy,w.x.y.z
 ## Entries
 
 
-<a href="" id="signature--signature-name-"></a>**Signature="***signature-name***"**  
+<a href="" id="signature--signature-name-"></a>**Signature="**<em>signature-name</em>**"**  
 Must be **$Windows NT$** or **$Chicago$**. This indicates the operating systems for which this INF is valid. These signature values have the following meanings.
 
 | Signature value  | Meaning                       |
@@ -50,7 +50,7 @@ Must be **$Windows NT$** or **$Chicago$**. This indicates the operating systems 
 | **$Windows NT$** | All Windows operating systems |
 | **$Chicago$**    | All Windows operating systems |
 
- 
+ 
 
 The enclosing dollar sign characters ($) are required but these strings are case-insensitive. If *signature-name* is none of these string values, the file is not accepted as a valid INF.
 
@@ -58,9 +58,9 @@ Generally, Windows does not differentiate among these signature values. One of t
 
 Some class installers put additional requirements on how the signature value must be specified. Such requirements, if they exist, are discussed in device type-specific sections of this Windows Driver Kit (WDK).
 
-An INF must supply OS-specific installation information by appending system-defined extensions to its *DDInstall* sections, whether the *signature-name* is **$Windows NT$**or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
+An INF must supply OS-specific installation information by appending system-defined extensions to its *DDInstall* sections, whether the *signature-name* is <strong>$Windows NT$</strong>or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
 
-<a href="" id="class-class-name"></a>**Class=***class-name*  
+<a href="" id="class-class-name"></a>**Class=**<em>class-name</em>  
 For any standard type of device, this specifies the name of the [device setup class](device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff553419).
 
 If an INF specifies a **Class,** it should also specify the corresponding system-defined GUID value for its **ClassGUID** entry. Specifying the matching GUID value for a device of any predefined device setup class can install the device and its drivers faster because this helps the system setup code to optimize its INF searching.
@@ -71,9 +71,9 @@ This entry is irrelevant to an INF that installs neither a new device driver und
 
 **Note**  This entry is required for device drivers that are installed through the Plug and Play (PnP) manager.
 
- 
+ 
 
-<a href="" id="classguid--nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn-"></a>**ClassGuid={***nnnnnnnn***-***nnnn***-***nnnn***-***nnnn***-***nnnnnnnnnnnn***}**  
+<a href="" id="classguid--nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn-"></a>**ClassGuid={**<em>nnnnnnnn</em>**-***nnnn***-***nnnn***-***nnnn***-**<em>nnnnnnnnnnnn</em>**}**  
 Specifies the [device setup class](device-setup-classes.md) GUID. The GUID value is formatted as shown here, where each *n* is a hexadecimal digit.
 
 This GUID value specifies the device setup class subkey in the registry **...\\Class** tree under which to write registry information for the drivers of devices that are installed from this INF file. This class-specific GUID value also identifies the device class installer for the type of device and class-specific property page provider, if any.
@@ -82,42 +82,42 @@ For a new [device setup class](device-setup-classes.md), the INF must specify a 
 
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 
- 
+ 
 
-<a href="" id="provider--inf-creator-"></a>**Provider=%***INF-creator***%**  
-Identifies the provider of the INF file. Typically, this is specified as an **%***OrganizationName***%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE_LEN.
+<a href="" id="provider--inf-creator-"></a>**Provider=%**<em>INF-creator</em>**%**  
+Identifies the provider of the INF file. Typically, this is specified as an **%**<em>OrganizationName</em>**%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE_LEN.
 
-For example, INF files supplied with the system typically specify the *INF-creator* as **%**Msft**%** and define **%**Msft**% = "**Microsoft**"** in their [**Strings**](inf-strings-section.md) sections.
+For example, INF files supplied with the system typically specify the *INF-creator* as <strong>%</strong>Msft<strong>%</strong> and define <strong>%</strong>Msft<strong>% = "</strong>Microsoft<strong>"</strong> in their [**Strings**](inf-strings-section.md) sections.
 
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 
- 
+ 
 
-<a href="" id="catalogfile-filename-cat"></a>**CatalogFile=***filename***.cat**  
+<a href="" id="catalogfile-filename-cat"></a>**CatalogFile=**<em>filename</em>**.cat**  
 Specifies a catalog (.*cat*) file to be included on the distribution media of a device/driver.
 
 When a [driver package](driver-packages.md) is submitted to Microsoft for digital signing, WHQL provides a [catalog file](catalog-files.md) for the driver package after WHQL has tested and assigned digital signatures to the package. For more information about the testing and signing of IHV or OEM driver packages, see [WHQL Release Signature](whql-release-signature.md). Catalog files are not listed in the [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section or [**CopyFiles**](inf-copyfiles-directive.md) directive of the INF. Windows assumes that the catalog file is in the same location as the INF file.
 
 System-supplied INF files never have **CatalogFile=** entries because the operating system validates the signature for such an INF against all system-supplied *xxx.cat* files.
 
-<a href="" id="catalogfile-nt-unique-filename-cat--"></a>**CatalogFile.nt=***unique-filename***.cat** |  
+<a href="" id="catalogfile-nt-unique-filename-cat--"></a>**CatalogFile.nt=**<em>unique-filename</em>**.cat** |  
 
-<a href="" id="catalogfile-ntx86-unique-filename-cat--"></a>**CatalogFile.ntx86=***unique-filename***.cat** |  
+<a href="" id="catalogfile-ntx86-unique-filename-cat--"></a>**CatalogFile.ntx86=**<em>unique-filename</em>**.cat** |  
 
-<a href="" id="catalogfile-ntia64-unique-filename-cat--"></a>**CatalogFile.ntia64=***unique-filename***.cat** |  
+<a href="" id="catalogfile-ntia64-unique-filename-cat--"></a>**CatalogFile.ntia64=**<em>unique-filename</em>**.cat** |  
 
-<a href="" id="catalogfile-ntamd64-unique-filename-cat"></a>**CatalogFile.ntamd64=***unique-filename***.cat**  
-Specifies another INF-writer-determined, unique file name, with the .*cat* extension, of a catalog file. If these optional entries are omitted, a given **CatalogFile=***filename.cat* is used for validating WDM device/driver installations.
+<a href="" id="catalogfile-ntamd64-unique-filename-cat"></a>**CatalogFile.ntamd64=**<em>unique-filename</em>**.cat**  
+Specifies another INF-writer-determined, unique file name, with the .*cat* extension, of a catalog file. If these optional entries are omitted, a given **CatalogFile=**<em>filename.cat</em> is used for validating WDM device/driver installations.
 
 If any decorated **CatalogFile.*xxx*=** entry exists in an INF's **Version** section together with an undecorated **CatalogFile=** entry, the undecorated entry is assumed to identify a *filename.cat* for validating device installations, driver installations, or both on those platforms for which a decorated entry is not specified.
 
-Any cross-platform device driver INF file that has **CatalogFile=** and **CatalogFile.***xxx***=** entries must supply a unique IHV/OEM-determined name for each such .cat file.
+Any cross-platform device driver INF file that has **CatalogFile=** and **CatalogFile.**<em>xxx</em>**=** entries must supply a unique IHV/OEM-determined name for each such .cat file.
 
 For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 **Note**  Because the same .cat file can be used across all supported platforms, the use of this entry is not required or recommended. However, you must use this entry if you want to create platform-specific .cat files for your driver package.
 
- 
+ 
 
 <a href="" id="driverver-mm-dd-yyyy--w-x-y-z-"></a>**DriverVer=** **mm/dd/yyyy**,**w.x.y.z**  
 This entry specifies version information for drivers that are installed by this INF file. Starting with Windows 2000, this entry is required.
@@ -129,7 +129,7 @@ This directive is for internal use only on Windows Vista and later versions of W
 
 **Note**  This directive is present in some of the INF files for inbox drivers. The INF file writer must be careful not to copy this directive along with other INF Version directives that the writer might copy from an inbox INF file.
 
- 
+ 
 
 <a href="" id="pnplockdown-0-1"></a>**PnpLockDown=0**|**1**  
 Specifies whether Plug and Play (PnP) prevents applications from directly modifying the files that a [driver package's](driver-packages.md) INF file specifies. If the **PnpLockDown** directive is set to 1, PnP prevents applications from directly modifying the files that are copied by INF **CopyFiles** directives. Otherwise, if the directive is not included in an INF file or the value of the directive is set to zero, an application that has administrator privileges can directly modify these files. Driver files that are protected in this manner are referred to as *third-party protected driver files*.
@@ -140,9 +140,9 @@ Starting with Windows Vista, a driver package should set **PnpLockDown** to 1 to
 
 **Note**  Although PnP on Windows Vista and later versions of Windows does not require that an INF file include a **PnpLockDown** directive in order to install a driver, PnP in a future version of Windows might require that INF files for PnP [driver packages](driver-packages.md) include the **PnpLockDown** directive.
 
- 
+ 
 
-<a href="" id="driverpackagedisplayname--driver-package-description-"></a>**DriverPackageDisplayName=%**driver-package-description**%**  
+<a href="" id="driverpackagedisplayname--driver-package-description-"></a><strong>DriverPackageDisplayName=%</strong>driver-package-description<strong>%</strong>  
 Specifies a string token that corresponds to a string key entry in an INF [**Strings**](inf-strings-section.md) section. The string key entry supplies the [driver package](driver-packages.md) display name. Driver Install Frameworks (DIFx) uses the driver package display name to describe the purpose of driver package to end-users.
 
 <a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
@@ -155,7 +155,7 @@ When a [driver package](driver-packages.md) passes Microsoft Windows Hardware Qu
 
 **Note**   If an INF **Version** section does not include at least one **CatalogFile** or **CatalogFile.nt***xxx* entry, the driver is treated as unsigned, and the dates listed in the [**DriverVer**](inf-driverver-directive.md) directive are not displayed by Windows.
 
- 
+ 
 
 For more information, see [Driver Signing](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
@@ -204,9 +204,9 @@ Floppy_Description = "Adaptec Drivers Disk"
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

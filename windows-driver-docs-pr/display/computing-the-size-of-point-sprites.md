@@ -70,9 +70,9 @@ SetRenderState(D3DRS_POINTSIZE, 1.0);
 // D3DRS_POINTSIZE to be set to a value between 0.0-1.0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

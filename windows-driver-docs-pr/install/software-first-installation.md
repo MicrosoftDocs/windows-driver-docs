@@ -34,9 +34,9 @@ If the user inserts your distribution medium before plugging in the device, an A
 
 -   If the device is not hot-pluggable, tell the user to turn the system off, plug in the device, and turn the system back on.
 
- 
+ 
 
- 
+ 
 
 
 

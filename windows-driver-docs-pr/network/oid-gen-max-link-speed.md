@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MAX_LINK_SPEED
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID_GEN_MAX_LINK_SPEED OID to determine the maximum supported transmit and receive link speeds of a miniport adapter.
 ms.assetid: 4009c5c6-57ec-47f5-80d6-d69df797857f
 ms.date: 08/08/2017
@@ -54,9 +53,9 @@ Requirements
 
 [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672)
 
- 
+ 
 
- 
+ 
 
 
 

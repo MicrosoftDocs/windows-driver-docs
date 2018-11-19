@@ -3,7 +3,6 @@ title: ss (Set Symbol Suffix)
 description: The ss command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
 ms.assetid: acf4cf2e-5b09-4d46-aa42-e539ee968685
 keywords: ["ss (Set Symbol Suffix) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **ss** command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
 
-```
+```dbgcmd
 ss [a|w|n] 
 ```
 
@@ -58,7 +57,7 @@ Specifies that the debugger should not use a symbol suffix. (This parameter is t
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +68,9 @@ Remarks
 
 If you specify the **ss** command together with no parameters, the current state of the suffix value is displayed.
 
- 
+ 
 
- 
+ 
 
 
 

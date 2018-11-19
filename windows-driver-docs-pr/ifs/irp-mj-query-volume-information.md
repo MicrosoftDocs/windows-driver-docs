@@ -114,44 +114,44 @@ Specifies the type of volume information to be returned by the file system. This
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileFsAttributeInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_ATTRIBUTE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540251) structure that contains attribute information about the file system responsible for the volume.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540251" data-raw-source="[&lt;strong&gt;FILE_FS_ATTRIBUTE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540251)"><strong>FILE_FS_ATTRIBUTE_INFORMATION</strong></a> structure that contains attribute information about the file system responsible for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_CONTROL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540258) structure that contains file system control information about the volume.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540258)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> structure that contains file system control information about the volume.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsDeviceInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_DEVICE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545788) structure that contains device information for the volume.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545788" data-raw-source="[&lt;strong&gt;FILE_FS_DEVICE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545788)"><strong>FILE_FS_DEVICE_INFORMATION</strong></a> structure that contains device information for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsDriverPathInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_DRIVER_PATH_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540262) structure that contains information about whether a specified driver is in the I/O path for the volume. The originator of the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request must store the name of the driver into the <strong>FILE_FS_DRIVER_PATH_INFORMATION</strong> structure before sending the IRP to the file system volume device stack.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540262" data-raw-source="[&lt;strong&gt;FILE_FS_DRIVER_PATH_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540262)"><strong>FILE_FS_DRIVER_PATH_INFORMATION</strong></a> structure that contains information about whether a specified driver is in the I/O path for the volume. The originator of the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request must store the name of the driver into the <strong>FILE_FS_DRIVER_PATH_INFORMATION</strong> structure before sending the IRP to the file system volume device stack.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsFullSizeInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_FULL_SIZE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540267) structure that contains information about the total amount of space available on the volume.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540267" data-raw-source="[&lt;strong&gt;FILE_FS_FULL_SIZE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540267)"><strong>FILE_FS_FULL_SIZE_INFORMATION</strong></a> structure that contains information about the total amount of space available on the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_OBJECTID_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540274) structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540274)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsSizeInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_SIZE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540282) structure containing information about the amount of space on the volume that is available to the user associated with the thread which originated the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540282" data-raw-source="[&lt;strong&gt;FILE_FS_SIZE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540282)"><strong>FILE_FS_SIZE_INFORMATION</strong></a> structure containing information about the amount of space on the volume that is available to the user associated with the thread which originated the <strong>IRP_MJ_QUERY_VOLUME_INFORMATION</strong> request.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsVolumeInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_VOLUME_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540287) that contains information about the volume such as the volume label, serial number, and creation time.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540287" data-raw-source="[&lt;strong&gt;FILE_FS_VOLUME_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540287)"><strong>FILE_FS_VOLUME_INFORMATION</strong></a> that contains information about the volume such as the volume label, serial number, and creation time.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsSectorSizeInformation</strong></p></td>
-<td align="left"><p>Return a [<strong>FILE_FS_SECTOR_SIZE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406395) structure that contains information about the physical and logical sector sizes of a volume.</p></td>
+<td align="left"><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406395" data-raw-source="[&lt;strong&gt;FILE_FS_SECTOR_SIZE_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406395)"><strong>FILE_FS_SECTOR_SIZE_INFORMATION</strong></a> structure that contains information about the physical and logical sector sizes of a volume.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="------irpsp--parameters-queryvolume-length"></a> *IrpSp-&gt;Parameters.QueryVolume.Length*
 Length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*. On return, this variable receives the number of bytes written to the buffer.
@@ -190,9 +190,9 @@ Length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*. On return, t
 
 [**ZwSetVolumeInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567112)
 
- 
+ 
 
- 
+ 
 
 
 

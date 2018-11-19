@@ -1,6 +1,5 @@
 ---
 title: AVStream Pipes and Circuits
-author: windows-driver-content
 description: AVStream Pipes and Circuits
 ms.assetid: 7e4db0da-7faf-4155-ab9d-f8651db834ec
 keywords:
@@ -73,9 +72,9 @@ The non-inplace transform filter allocates the transformed frames in kernel mode
 
 The minidriver can [inject frames](frame-injection.md) into the circuit by calling [**KsPinSubmitFrame**](https://msdn.microsoft.com/library/windows/hardware/ff563529) or [**KsPinSubmitFrameMdl**](https://msdn.microsoft.com/library/windows/hardware/ff563530). If the minidriver uses this method, the AVStream requester receives frames as a result of these calls, rather than from a kernel-mode allocator.
 
- 
+ 
 
- 
+ 
 
 
 

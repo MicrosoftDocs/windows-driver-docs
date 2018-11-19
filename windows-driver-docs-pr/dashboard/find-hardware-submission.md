@@ -3,6 +3,7 @@ title: Find and manage your hardware submission
 author: dimanjar
 description: Learn how to find a specific Windows hardware submission by searching with text or by selecting driver attributes in a keyword search.
 ms.author: dimanjar
+ms.topic: article
 ms.date: 09/24/2018
 ms.localizationpriority: medium
 ---
@@ -39,7 +40,7 @@ For example, the search phrase **mydriver** returns submissions with the product
 
 You can search for drivers by driver attributes using the keyword search. When you type an at symbol (**\@**) in the search box, the dashboard displays a list of the usable attributes. 
 
-![Screenshot of the Drivers page in the hardware dashboard, with @ symbol entered into the text box. A list of available attributes shows under @ symbol.](images\ampersand-search.png)
+![Screenshot of the Drivers page in the hardware dashboard, with @ symbol entered into the text box. A list of available attributes shows under @ symbol.](images/ampersand-search.png)
 
 As you enter text after @ symbol, the list narrows to match the criteria. When you click one of the prepopulated values, it appears in the search box in the form **(@*ParameterName*: "")**. Do not modify the parameter name or the format, other than to enter a string between the quotation marks (**""**). Search phrase can be a complete search value or partial one. For example, to search for drivers  by operating system codes you could use either:
 

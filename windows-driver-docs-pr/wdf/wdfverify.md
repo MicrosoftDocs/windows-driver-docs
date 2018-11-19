@@ -1,6 +1,5 @@
 ---
 title: WDFVERIFY macro
-author: windows-driver-content
 description: The WDFVERIFY macro tests a logical expression and, if the expression evaluates to FALSE, breaks into the kernel debugger.
 ms.assetid: 9dc19299-7eda-42fb-811e-ba8dc5c1cdb5
 keywords:
@@ -21,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID WDFVERIFY(
-    exp
+    exp
 );
 ```
 
@@ -66,7 +65,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -84,9 +83,9 @@ Requirements
 
 [**VERIFY_IS_IRQL_PASSIVE_LEVEL**](verify-is-irql-passive-level.md)
 
- 
+ 
 
- 
+ 
 
 
 

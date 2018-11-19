@@ -3,7 +3,6 @@ title: logonsession
 description: The logonsession extension displays information about a specified logon session.
 ms.assetid: 95746bc0-ab36-43a7-83ad-9f6fdbb15b39
 keywords: ["logon session", "logonsession Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ To display information about the system session and all system tokens in a check
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,7 +71,7 @@ Remarks
 
 Here is an example of the output from this extension on a free build:
 
-```
+```dbgcmd
 kd> !logonsession 0
 
 Dumping all logon sessions.
@@ -124,9 +123,9 @@ Dumping all logon sessions.
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

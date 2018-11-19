@@ -26,9 +26,9 @@ While an allocation must be entirely contained within a segment, the allocation 
 
 If banks are used, the driver must cover the entire address space of the segment with banks. The first bank always starts at offset zero within the segment and the last bank always ends at the end of the segment. Banks are contiguous and have no free space between them.
 
- 
+ 
 
- 
+ 
 
 
 

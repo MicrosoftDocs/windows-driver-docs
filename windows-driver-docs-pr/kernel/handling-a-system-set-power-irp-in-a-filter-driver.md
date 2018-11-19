@@ -1,6 +1,5 @@
 ---
 title: Handling a System Set-Power IRP in a Filter Driver
-author: windows-driver-content
 description: Handling a System Set-Power IRP in a Filter Driver
 ms.assetid: a6e364fc-f173-47ce-b36b-84f802cefcc3
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
@@ -30,9 +29,9 @@ All filter drivers and any function driver that does not own power policy for it
 
 6.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

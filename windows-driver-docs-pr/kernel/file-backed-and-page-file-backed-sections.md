@@ -1,6 +1,5 @@
 ---
 title: File-Backed and Page-File-Backed Sections
-author: windows-driver-content
 description: File-Backed and Page-File-Backed Sections
 ms.assetid: 5967678a-cbc3-4db0-86d8-14ffc79f610e
 keywords: ["file-backed sections WDK kernel", "page-file-backed sections WDK kernel", "backed memory sections WDK kernel", "paged file backups WDK kernel", "temporarily shared data WDK kernel", "permanently shared data WDK kernel", "memory sections WDK kernel", "section objects WDK kernel"]
@@ -22,9 +21,9 @@ A page-file-backed section is backed by the page files instead of by any explici
 
 Any section, file-backed or not, can be shared between two processes. The same physical memory address range is mapped to a virtual memory address range within each process (though not necessarily to the same virtual address).
 
- 
+ 
 
- 
+ 
 
 
 

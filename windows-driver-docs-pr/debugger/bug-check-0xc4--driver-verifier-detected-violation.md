@@ -3,7 +3,6 @@ title: Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION
 description: The DRIVER_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x000000C4. This is the general bug check code for fatal errors found by Driver Verifier. 
 ms.assetid: 7814f827-05fc-419b-b428-4565978bbb52
 keywords: ["Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION", "DRIVER_VERIFIER_DETECTED_VIOLATION"]
-ms.author: domars
 ms.date: 10/04/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The DRIVER\_VERIFIER\_DETECTED\_VIOLATION bug check has a value of 0x000000C4. This is the general bug check code for fatal errors found by Driver Verifier. For more information, see [Handling a Bug Check When Driver Verifier is Enabled](handling-a-bug-check-when-driver-verifier-is-enabled.md).
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_VERIFIER\_DETECTED\_VIOLATION Parameters
 
@@ -29,7 +28,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 **Note**  If you have trouble viewing all 5 columns in this table, try the following:
 -   Expand your browser window to full size.
 -   Place the cursor in the table and use the arrow keys to scroll left and right.
- 
+ 
 |Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
 |--- |--- |--- |--- |--- |
 |0x00|Current IRQL|Pool type|0|The driver requested a zero-byte pool allocation.|
@@ -41,7 +40,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x13 or 0x14|Reserved|Pointer to pool header|Pool header contents|The driver attempted to free memory pool which was already freed.|
 |0x16|Reserved|Pool address|0|The driver attempted to free pool at a bad address, or the driver passed invalid parameters to a memory routine.|
 |0x30|Current IRQL|Requested IRQL|0|The driver passed an invalid parameter to [KeRaiseIrql](https://msdn.microsoft.com/library/windows/hardware/ff553079). (The parameter was either a value lower than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
-|0x31|Current IRQL|Requested IRQL|0: New IRQL is bad 1: New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://msdn.microsoft.com/library/windows/hardware/ff552968). (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
+|0x31|Current IRQL|Requested IRQL|0: New IRQL is bad 1: New IRQL is invalid inside a DPC routine|The driver passed an invalid parameter to [KeLowerIrql](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kelowerirql~r1). (The parameter was either a value higher than the current IRQL, or a value higher than HIGH_LEVEL. This may be the result of using an uninitialized parameter.)|
 |0x32|Current IRQL|Spin lock address|0|The driver called [KeReleaseSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff553145) at an IRQL other than DISPATCH_LEVEL. (This may be due to a double-release of a spin lock.)|
 |0x33|Current IRQL|Fast mutex address|0|The driver attempted to acquire fast mutex with IRQL > APC_LEVEL.|
 |0x34|Current IRQL|Fast mutex address|0|The driver attempted to release fast mutex at an IRQL other than APC_LEVEL.|
@@ -258,9 +257,9 @@ The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, **0** (zero) in
 
 [Handling a Bug Check When Driver Verifier is Enabled](handling-a-bug-check-when-driver-verifier-is-enabled.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ WPP tracing can be used within a static library in such a way that provides sepa
 
 Both the binary and library have their own control GUID. This allows tracing to be enabled in the static library, the binary, or both.
 
-The .lib file can be accessed by using WPP at several points, as shown in the following code example. Be aware that it is not important to define the actual value of the control GUID (marked in bold) because the static library is not calling the WPP\_INIT\_TRACING macro, which does the actual registration with ETW.
+The .lib file can be accessed by using WPP at several points, as shown in the following code example. Be aware that it is not important to define the actual value of the control GUID, because the static library is not calling the WPP\_INIT\_TRACING macro, which does the actual registration with ETW.
 
 ```
 #define WPP_CONTROL_GUIDS \
@@ -44,9 +44,9 @@ WPP_DEFINE_BIT(MemoryAllocations) \
 
 You can select the degree of control that you need for tracing on both your component and the static library, by specifying either a separate control GUID for the .lib and the .exe files, each with its own flags, or one control GUID for both. In the sample, the .exe file is using the same flags as the .lib file.
 
- 
+ 
 
- 
+ 
 
 
 

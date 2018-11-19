@@ -3,7 +3,6 @@ title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
 ms.assetid: ed702f01-2a30-4ffb-a804-167cf3b19936
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -90,21 +89,21 @@ The following access types are available for processor breakpoints:
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_READ</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_WRITE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
 DEBUG_BREAK_READ
 | DEBUG_BREAK_WRITE</td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_EXECUTE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_IO</p></td>
@@ -113,7 +112,7 @@ DEBUG_BREAK_READ
 </tbody>
 </table>
 
- 
+ 
 
 Not all access types and sizes are supported on all processors. The following access types and sizes are supported:
 
@@ -129,9 +128,9 @@ All access types except DEBUG\_BREAK\_IO are supported. The size must be a power
 <span id="Itanium_running_in_x86_mode"></span><span id="itanium_running_in_x86_mode"></span><span id="ITANIUM_RUNNING_IN_X86_MODE"></span>Itanium running in x86 mode  
 The is the same as for x86, except that DEBUG\_BREAK\_IO is not supported.
 
- 
+ 
 
- 
+ 
 
 
 

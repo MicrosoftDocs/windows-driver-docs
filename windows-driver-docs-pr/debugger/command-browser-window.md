@@ -3,7 +3,6 @@ title: Using the Command Browser Window in WinDbg
 description: Using the Command Browser Window in WinDbg
 ms.assetid: b895f463-38ec-451a-8c0a-0deb8650a904
 keywords: ["debugging information windows, command browser window", "command browser window", "Debugger Command window, command browser window"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -51,9 +50,9 @@ A command that you enter in a Command Browser window executes synchronously, so 
 
 Command Browser windows are saved in the WinDbg workspace, but the command histories are not saved. Only the current command for each Command Browser window is saved in the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

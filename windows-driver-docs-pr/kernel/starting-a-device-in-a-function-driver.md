@@ -1,6 +1,5 @@
 ---
 title: Starting a Device in a Function Driver
-author: windows-driver-content
 description: Starting a Device in a Function Driver
 ms.assetid: 148a3128-9cb1-4a2c-a62e-45199476d968
 keywords: ["function drivers WDK PnP"]
@@ -66,9 +65,9 @@ When the driver receives an **IRP\_MN\_STOP\_DEVICE**, **IRP\_MN\_REMOVE\_DEVICE
 
 See [Mapping Bus-Relative Addresses to Virtual Addresses](mapping-bus-relative-addresses-to-virtual-addresses.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

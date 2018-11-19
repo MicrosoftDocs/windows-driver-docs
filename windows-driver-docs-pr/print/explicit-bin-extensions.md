@@ -1,6 +1,5 @@
 ---
 title: Explicit Bin Extensions
-author: windows-driver-content
 description: Explicit Bin Extensions
 ms.assetid: a9f7f290-1af8-4312-b348-c1c98a3fc4a6
 keywords:
@@ -32,7 +31,7 @@ You can further extend an implicit bin extension by using the special construct,
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>An enumerator in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>An enumerator in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>drvPrinterEvent</strong></p></td>
@@ -45,7 +44,7 @@ You can further extend an implicit bin extension by using the special construct,
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
@@ -85,9 +84,9 @@ The preceding example results in the following query:
 \Printer.Finishing.OutputBins.TopBin:Status
 ```
 
- 
+ 
 
- 
+ 
 
 
 

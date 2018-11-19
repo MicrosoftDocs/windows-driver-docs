@@ -3,7 +3,6 @@ title: Handling a Bug Check When Driver Verifier is Enabled
 description: Driver Verifier detects driver errors at run time. You can use Driver Verifier along with the analyze debugger command to detect and display information about errors in your driver.
 ms.assetid: 4226B62B-0AA5-4D04-A32D-7DD22FD694E3
 keywords: ["Driver Verifier", "Verifier"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ Use the following procedure to get set up.
 
 When Driver Verifier detects an error, it generates a bug check. Then Windows breaks into the debugger and displays a brief description of the error. Here is an example where Driver Verifier generates Bug Check [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4)**](bug-check-0xc4--driver-verifier-detected-violation.md).
 
-```
+```dbgcmd
 Driver Verifier: Extension abort with Error Code 0x20005
 Error String ExAcquireFastMutex should only be called at IRQL <= APC_LEVEL.
 
@@ -44,7 +43,7 @@ fffff802`a40ef930 cc              int     3
 
 In the debugger, enter [**!analyze -v**](-analyze.md) to get a detailed description of the error.
 
-```
+```dbgcmd
 0: kd> !analyze -v
 Connected to Windows 8 9200 x64 target at (Thu Oct 11 13:48:31.270 2012 (UTC - 7:00)), ptr64 TRUE
 Loading Kernel Symbols
@@ -96,7 +95,7 @@ In the preceding output, you can see the name and description of the rule, **Irq
 
 The output of [**!analyze -v**](-analyze.md) continues with a stack trace and information about the code that caused the error. In the following output, you can see that the **OnInterrupt** routine in MyDriver.sys called [ExAcquireFastMutex](https://go.microsoft.com/fwlink/p?LinkID=268628). **OnInterrupt** is an interrupt service routine that runs at an IRQL greater than APC\_LEVEL, so it is a violation for this routine to call [ExAcquireFastMutex](https://go.microsoft.com/fwlink/p?LinkID=268628).
 
-```
+```dbgcmd
 LAST_CONTROL_TRANSFER:  from fffff802a41f00ea to fffff802a40ef930
 
 STACK_TEXT:  
@@ -163,9 +162,9 @@ BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 
 [Static Driver Verifier](https://go.microsoft.com/fwlink/p?LinkID=268668)
 
- 
+ 
 
- 
+ 
 
 
 

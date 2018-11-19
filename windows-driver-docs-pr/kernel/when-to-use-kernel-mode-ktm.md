@@ -1,6 +1,5 @@
 ---
 title: When to Use Kernel-Mode KTM
-author: windows-driver-content
 description: When to Use Kernel-Mode KTM
 ms.assetid: deb3372d-19c4-4a17-b499-1da485e89276
 keywords: ["Kernel Transaction Manager WDK , when to use", "KTM WDK , when to use"]
@@ -19,9 +18,9 @@ For example, you might use KTM in the following situations:
 
 -   You are designing a new data storage system that stores information in one or more databases. Components of your system will access the databases in kernel mode, or possibly in both user mode and kernel mode. Transactional clients of your system will encapsulate their database operations within transactions so that all modifications to all databases either succeed or fail as a unit.
 
- 
+ 
 
- 
+ 
 
 
 

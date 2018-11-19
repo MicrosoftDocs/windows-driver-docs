@@ -2,6 +2,7 @@
 title: Submit a Device Metadata Package (Dashboard help)
 description: Submit a Device Metadata Package (Dashboard help)
 ms.assetid: dcd35784-51c3-410a-8704-94f07fa8959a
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -72,9 +73,9 @@ For info about submitting service metadata for a mobile broadband app, see [Serv
 
 - [Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

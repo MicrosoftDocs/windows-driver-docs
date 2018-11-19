@@ -1,6 +1,5 @@
 ---
 title: Developing a WIA Driver Basic Concepts
-author: windows-driver-content
 description: Developing a WIA Driver Basic Concepts
 ms.assetid: 1d931e7a-3c58-4b64-8850-22375b10d0a4
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ This section introduces a number of basic concepts involved in the creation of W
 
 [WIA Driver Errors](wia-driver-error-handling-and-recovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

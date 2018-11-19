@@ -67,9 +67,9 @@ Specifies IRP\_MJ\_FLUSH\_BUFFERS.
 
 [**IRP\_MJ\_FLUSH\_BUFFERS (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550760)
 
- 
+ 
 
- 
+ 
 
 
 

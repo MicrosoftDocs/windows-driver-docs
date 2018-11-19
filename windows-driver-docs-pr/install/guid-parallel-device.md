@@ -45,9 +45,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md)
 
- 
+ 
 
- 
+ 
 
 
 

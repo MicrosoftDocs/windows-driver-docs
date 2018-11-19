@@ -3,7 +3,6 @@ title: Bug Checks (Blue Screens)
 description: This topic covers bug checks (Blue Screens)
 ms.assetid: 6ACE4AD9-5318-4c96-A560-D247033CB500
 keywords: bug check, blue screen, kernel error, stop error, stop code
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,11 +23,11 @@ This section includes:
 
 **Note**  These topic are for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

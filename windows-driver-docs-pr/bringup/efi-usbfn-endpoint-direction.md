@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_ENDPOINT_DIRECTION
-author: windows-driver-content
 description: EFI_USBFN_ENDPOINT_DIRECTION
 ms.assetid: 910f7ab5-b4c0-4385-9306-37d863d19bf7
 ms.date: 04/20/2017
@@ -45,9 +44,9 @@ Indicates USB OUT transfer. Direction is from host to device
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ A NIC can split IPsec frames at the [beginning of the upper-layer-protocol heade
 
 The NIC might not be able to split the frame if the resulting header buffer has a greater length than the maximum header size. For more information about the maximum header size, see [Allocating the Header Buffer](allocating-the-header-buffer.md).
 
- 
+ 
 
- 
+ 
 
 
 

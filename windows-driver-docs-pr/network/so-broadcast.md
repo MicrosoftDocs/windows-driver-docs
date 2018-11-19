@@ -1,6 +1,5 @@
 ---
 title: SO_BROADCAST
-author: windows-driver-content
 description: SO_BROADCAST
 ms.assetid: 24b93d4e-461d-44c3-b721-85cf41a1680a
 ms.date: 08/08/2017
@@ -65,7 +64,7 @@ To set the state of this socket option, a WSK application calls the [**WskContro
 </tbody>
 </table>
 
- 
+ 
 
 To retrieve the state of this socket option, a WSK application calls the **WskControlSocket** function with the following parameters.
 
@@ -118,7 +117,7 @@ To retrieve the state of this socket option, a WSK application calls the **WskCo
 </tbody>
 </table>
 
- 
+ 
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or retrieve the state of the SO\_BROADCAST socket option.
 
@@ -144,9 +143,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Injecting a Hardware Error
-author: windows-driver-content
 description: Injecting a Hardware Error
 ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
 keywords:
@@ -159,9 +158,9 @@ pClass->Release();
 pOutParameters->Release();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

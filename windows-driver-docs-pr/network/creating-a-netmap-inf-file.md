@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 The netmap.inf file is a vendor-supplied file that resides either in a directory specified by an entry in the **OemNetUpgradeDirs** section of a [netupg.inf](creating-a-netupg-inf-file.md) file or in the directory that contains netupgrd.dll. The netmap.inf file:
 
@@ -37,9 +37,9 @@ This section includes the following topics:
 -   [Specifying the Upgrade DLL in a Netmap.inf File](specifying-the-upgrade-dll-in-a-netmap-inf-file.md)
 -   [Specifying Alternative Help Message Files in a Netmap.inf File](specifying-alternative-help-message-files-in-a-netmap-inf-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

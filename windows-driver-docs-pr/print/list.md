@@ -1,6 +1,5 @@
 ---
 title: List
-author: windows-driver-content
 description: List
 ms.assetid: 4cf1c1ea-f890-4f9d-96ea-b79790f6bc60
 keywords:
@@ -45,7 +44,7 @@ The Web Services for Devices (WSD) `List` construct is a string type that compos
 </tbody>
 </table>
 
- 
+ 
 
 The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
@@ -73,9 +72,9 @@ The preceding example results in the following query:
 \Printer.Layout.NumberUp.PagesPerSheet:Supported
 ```
 
- 
+ 
 
- 
+ 
 
 
 

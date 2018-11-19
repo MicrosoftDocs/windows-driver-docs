@@ -1,6 +1,5 @@
 ---
 title: GDL Configurations
-author: windows-driver-content
 description: GDL Configurations
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords:
@@ -40,9 +39,9 @@ In addition, GDL enables selected configurations to be excluded as "not allowed"
 
 For more information about creating data that is configuration-dependent, see [Creating GDL Configuration-Dependent Data](creating-gdl-configuration-dependent-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

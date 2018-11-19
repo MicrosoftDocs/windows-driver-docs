@@ -1,6 +1,5 @@
 ---
 title: Processor power management (PPM) notifications
-author: windows-driver-content
 description: Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 ms.assetid: 4BA89D0F-78F0-44DF-BC9B-0F9F3256CD59
 keywords: [AcceptProcessorNotification callback]
@@ -318,7 +317,7 @@ For a PEP_NOTIFY_PPM_QUERY_LP_SETTINGS notification, the AcceptProcessorNotifica
 
 PASSIVE_LEVEL
  
-##PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 
+## PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2 
 Handle
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 

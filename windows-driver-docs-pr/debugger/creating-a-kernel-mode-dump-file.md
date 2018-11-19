@@ -3,7 +3,6 @@ title: Creating a Kernel-Mode Dump File
 description: Creating a Kernel-Mode Dump File
 ms.assetid: d3eb86b2-eba7-4ddb-90e9-0e26414436fb
 keywords: ["dump file, creating kernel-mode dump file", "dump file, NMI switch", "NMI switch"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -38,9 +37,9 @@ It is also possible to use an NMI switch to create a crash dump file. Contact yo
 
 The usage of NMI switches is not covered in this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

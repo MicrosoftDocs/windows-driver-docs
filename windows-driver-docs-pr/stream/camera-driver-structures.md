@@ -1,6 +1,5 @@
 ---
 title: Camera driver structures
-author: windows-driver-content
 description: The following camera driver structures are new for Windows 10.
 ms.assetid: E1C2695B-F3E3-4B16-9552-C79B957A5470
 ms.date: 04/20/2017
@@ -104,9 +103,9 @@ The following camera driver structures are new for Windows 10.
 
 [**MF\_MDL\_SHARED\_PAYLOAD\_KEY**](https://msdn.microsoft.com/library/windows/hardware/mt186399)
 
- 
+ 
 
- 
+ 
 
 
 

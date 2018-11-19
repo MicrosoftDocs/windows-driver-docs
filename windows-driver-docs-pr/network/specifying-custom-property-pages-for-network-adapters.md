@@ -39,9 +39,9 @@ If the **Advanced** property page is not suitable for displaying the configurati
 
         This reloads the driver so that it can read the changed parameter values.
 
- 
+ 
 
- 
+ 
 
 
 

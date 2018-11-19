@@ -46,13 +46,13 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537499)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537499" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537499)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
 <td align="left"><p><strong>NULL</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure along with a user-mode event handle.
 
@@ -89,7 +89,7 @@ A KSPROPERTY\_ RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property request returns S
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -131,9 +131,9 @@ Requirements
 
 [State Transitions](https://msdn.microsoft.com/library/windows/hardware/ff568227)
 
- 
+ 
 
- 
+ 
 
 
 

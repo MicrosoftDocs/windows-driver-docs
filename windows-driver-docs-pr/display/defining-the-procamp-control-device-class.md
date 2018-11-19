@@ -36,9 +36,9 @@ struct DXVA_ProcAmpControlDeviceClass : public DXVA_DeviceBaseClass
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
 ms.assetid: 236b925f-2c7b-4df8-b5c8-e8c2f7b853d2
 ms.date: 04/20/2017
@@ -61,7 +60,7 @@ This function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -71,9 +70,9 @@ This function returns the following values:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

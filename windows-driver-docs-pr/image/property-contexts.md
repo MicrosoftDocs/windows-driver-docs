@@ -1,6 +1,5 @@
 ---
 title: Property Contexts
-author: windows-driver-content
 description: Property Contexts
 ms.assetid: da33848c-a9bc-40c7-ab1b-0ca056f3e06d
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ Context for a set of properties is maintained in a [**WIA\_PROPERTY\_CONTEXT**](
 
 The minidriver calls the WIA service library function, [**wiasCreatePropContext**](https://msdn.microsoft.com/library/windows/hardware/ff549167), to allocate memory and fill in the values for a property context. Other WIA service library functions, such as [**wiasGetChangedValueFloat**](https://msdn.microsoft.com/library/windows/hardware/ff549200), use a property context to determine when a property's values should be updated.
 
- 
+ 
 
- 
+ 
 
 
 

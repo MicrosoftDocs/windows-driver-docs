@@ -1,6 +1,5 @@
 ---
 title: Introduction to Adapter Objects
-author: windows-driver-content
 description: Introduction to Adapter Objects
 ms.assetid: a1a0d516-dee0-484a-b971-c7a595fef155
 keywords: ["AdapterControl routines, about AdapterControl routines", "DMA transfers WDK kernel , adapter objects", "adapter objects WDK kernel , about adapter objects"]
@@ -36,9 +35,9 @@ As part of device start-up operations, drivers that handle DMA operations call t
 
 See [Using System DMA](using-system-dma.md) and [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
 
- 
+ 
 
- 
+ 
 
 
 

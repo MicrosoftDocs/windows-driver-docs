@@ -33,9 +33,9 @@ For example, consider two media playback applications, A and B, each controlling
 
 Assume application A is the first to initiate a call to [*COPPQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff539652) on its COPP device. Application A then receives the COPP\_LinkLost flag and acts accordingly. If application A initiates a subsequent *COPPQueryStatus* call, it should not receive the COPP\_LinkLost flag, unless the connector becomes unplugged again. When application B initiates a call to *COPPQueryStatus* on its COPP device, it receives the COPP\_LinkLost flag and acts accordingly. Again, application B should not receive the COPP\_LinkLost flag again until the connector becomes unplugged again.
 
- 
+ 
 
- 
+ 
 
 
 

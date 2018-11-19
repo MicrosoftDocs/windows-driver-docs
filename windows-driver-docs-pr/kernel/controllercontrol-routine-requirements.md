@@ -1,6 +1,5 @@
 ---
 title: ControllerControl Routine Requirements
-author: windows-driver-content
 description: ControllerControl Routine Requirements
 ms.assetid: b311c0b0-f7b1-4276-a165-5c658657b198
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, requirements"]
@@ -54,9 +53,9 @@ As soon as the I/O operation(s) to satisfy the current request are done, the rou
 
 If the *ControllerControl* routine itself completes an IRP or if it can set up an operation, such as a disk seek, for one target device object (disk) that could be overlapped with an operation for another device object, the *ControllerControl* routine should return **DeallocateObject**.
 
- 
+ 
 
- 
+ 
 
 
 

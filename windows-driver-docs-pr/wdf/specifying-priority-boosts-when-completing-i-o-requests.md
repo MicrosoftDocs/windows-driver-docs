@@ -1,6 +1,5 @@
 ---
 title: Specifying Priority Boosts When Completing I/O Requests
-author: windows-driver-content
 description: Specifying Priority Boosts When Completing I/O Requests
 ms.assetid: 9a501ca1-58c9-4458-b202-9581f8ce5e5f
 keywords:
@@ -272,11 +271,11 @@ If the driver calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

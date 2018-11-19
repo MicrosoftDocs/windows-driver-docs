@@ -1,6 +1,5 @@
 ---
 title: WSK_CACHE_SD
-author: windows-driver-content
 description: WSK_CACHE_SD
 ms.assetid: 60a4c7f9-d7e3-4378-b22b-93c69a9b8a37
 ms.date: 07/18/2017
@@ -85,9 +84,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
 title: How to transfer data to USB isochronous endpoints
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -49,9 +48,9 @@ Based on the pipe information, determine this set of information:
     -   **bMaxBurst** field of the endpoint companion descriptor. This value indicates the number of chunks of **wMaxPacketSize** that can be present in a single burst transaction. There can be up to 16 chunks (indexed 0 to 15) in a burst transaction.
     -   **wBytesPerInterval** indicates the total number of bytes that the host can send or receive in a bus interval. Even though the maximum number of bytes per bus interval can be calculated as (**bMaxBurst**+1) \* (**Mult**+1) \* **wMaxPacketSize**, the USB 3.0 specification recommends using the **wBytesPerInterval** value instead. The **wBytesPerInterval** value must be less than or equal to that calculated value.
 
-    **Important**  For a client driver the values described in the preceding is for information only. The driver must always use the **MaximumPacketSize** value of the endpoint descriptor to determine the layout of the transfer buffer.
+    **Important**  For a client driver the values described in the preceding is for information only. The driver must always use the **MaximumPacketSize** value of the endpoint descriptor to determine the layout of the transfer buffer.
 
-     
+
 
 -   How often does the endpoint send or receive data.
 
@@ -68,7 +67,7 @@ Based on the pipe information, determine this set of information:
     | 3        | 4; Data is transferred every fourth bus interval. |
     | 4        | 8; Data is transferred every eighth bus interval. |
 
-     
+
 
 -   What are the restrictions on the number of packets for each bus speed.
 
@@ -81,7 +80,7 @@ Based on the pipe information, determine this set of information:
     | 3              | Multiple of 2                               |
     | 4              | Any                                         |
 
-     
+
 
 Consider an example full-speed endpoint with **wMaxPacketSize** is 1,023. For this example, the application supplied buffer of 25,575 bytes. The transfer for that buffer requires 25 isochronous packets (25575/1023).
 
@@ -132,9 +131,9 @@ For full-speed transmissions, the size of an isochronous packet is the number of
 
 In the example, **MaximumPacketSize** is 1023 bytes per frame (full speed); 3072 bytes per microframe (high speed); 45,000 bytes per microframe (SuperSpeed).
 
-**Note**  The **MaximumPacketSize** value indicates the maximum permitted size of the isochronous packet. The client driver can set the size of each isochronous packet to any value less than the **MaximumPacketSize** value.
+**Note**  The **MaximumPacketSize** value indicates the maximum permitted size of the isochronous packet. The client driver can set the size of each isochronous packet to any value less than the **MaximumPacketSize** value.
 
- 
+
 
 ### <a href="" id="determine-the-number-of-isochronous-packets-per-frame-"></a>Step 2: Determine the number of isochronous packets per frame.
 
@@ -159,7 +158,7 @@ The client driver should validate these requirements:
 
 1.  Allocate an [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure in nonpaged pool.
 
-    If your client driver uses WDM routines, the driver must call the [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231) if you have the Windows Driver Kit (WDK) for Windows 8. A client driver can uses the routine to target Windows Vista and later versions of the Windows operating system. If you do not have the WDK for Windows 8 or if the client driver is intended for an earlier version of the operating system, you can allocate the structure on the stack or in nonpaged pool by calling [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520).
+    If your client driver uses WDM routines, the driver must call the [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231) if you have the Windows Driver Kit (WDK) for Windows 8. A client driver can uses the routine to target Windows Vista and later versions of the Windows operating system. If you do not have the WDK for Windows 8 or if the client driver is intended for an earlier version of the operating system, you can allocate the structure on the stack or in nonpaged pool by calling [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520).
 
     A WDF client driver can call the [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method to allocate memory for the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.
 
@@ -365,7 +364,7 @@ NTSTATUS CreateIsochURB  ( PDEVICE_OBJECT         DeviceObject,
 
         //Calculate the number of packets.
         numberOfPacketsPerFrame = 1;
-        
+
         numberOfPackets = TotalLength / isochPacketSize;
 
         if (numberOfPackets > MAX_SUPPORTED_PACKETS_FOR_FULL_SPEED) 
@@ -431,9 +430,6 @@ Exit:
 
     return ntStatus;  
 }  
-
-
-
 ```
 
 ## Related topics

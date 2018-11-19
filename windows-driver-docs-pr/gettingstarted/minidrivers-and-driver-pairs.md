@@ -197,7 +197,7 @@ The different technology-specific driver models use a variety of names for the s
 
 **Note**  As you can see in the list, several of the models use the term *class driver* for the general portion of a driver pair. This kind of class driver is different from a standalone class driver and different from a class filter driver.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -208,9 +208,9 @@ The different technology-specific driver models use a variety of names for the s
 
 [Driver stacks](driver-stacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

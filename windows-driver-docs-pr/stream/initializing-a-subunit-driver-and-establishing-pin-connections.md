@@ -1,6 +1,5 @@
 ---
 title: Initializing a Subunit Driver and Establishing Pin Connections
-author: windows-driver-content
 description: Initializing a Subunit Driver and Establishing Pin Connections
 ms.assetid: 08c7a604-3aa5-4ee0-be55-b58bea0e6df1
 keywords:
@@ -66,9 +65,9 @@ AV/C external plug connections are not directly supported by *Avc.sys*, but *Avc
 
 An approach that allows *Avc.sys* to make the proper internal plug connections and exposes possible external plug connections to applications is to have filter factories for each possible external plug. The resulting filter instances expose an appropriate input or output pin, which in turn provides AVCCONNECTINFO structures.
 
- 
+ 
 
- 
+ 
 
 
 

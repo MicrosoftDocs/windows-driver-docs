@@ -3,7 +3,6 @@ title: Bug Check 0x131 INVALID_EXTENDED_PROCESSOR_STATE
 description: The INVALID_EXTENDED_PROCESSOR_STATE bug check has a value of 0x00000131. This indicates that an invalid combination of parameters was detected while saving or restoring extended processor state.
 ms.assetid: 72EEA46A-1E96-4B07-A7E6-40DAE4641B20
 keywords: ["Bug Check 0x131 INVALID_EXTENDED_PROCESSOR_STATE", "INVALID_EXTENDED_PROCESSOR_STATE"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The INVALID\_EXTENDED\_PROCESSOR\_STATE bug check has a value of 0x00000131. This indicates that an invalid combination of parameters was detected while saving or restoring extended processor state.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_EXTENDED\_PROCESSOR\_STATE Parameters
 
@@ -33,7 +32,7 @@ Parameter one indicates which validity check failed.
 | 3         | The low 32 bits of the feature mask.                                            |
 | 4         | The high 32 bits of the feature mask.                                           |
 
- 
+ 
 
 | Parameter | Description                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------|
@@ -42,7 +41,7 @@ Parameter one indicates which validity check failed.
 | 3         | Reserved                                                                                       |
 | 4         | Reserved                                                                                       |
 
- 
+ 
 
 | Parameter | Description                                                     |
 |-----------|-----------------------------------------------------------------|
@@ -51,7 +50,7 @@ Parameter one indicates which validity check failed.
 | 3         | The current level.                                              |
 | 4         | Reserved                                                        |
 
- 
+ 
 
 | Parameter | Description                                               |
 |-----------|-----------------------------------------------------------|
@@ -60,7 +59,7 @@ Parameter one indicates which validity check failed.
 | 3         | The current thread.                                       |
 | 4         | Reserved                                                  |
 
- 
+ 
 
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
@@ -69,11 +68,11 @@ Parameter one indicates which validity check failed.
 | 3         | The current level.                                   |
 | 4         | Reserved                                             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

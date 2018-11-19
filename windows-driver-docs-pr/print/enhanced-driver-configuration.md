@@ -1,6 +1,5 @@
 ---
 title: Enhanced Driver Configuration
-author: windows-driver-content
 description: GPD and PPD files can be used to provide enhanced driver configuration information for a v4 print driver.
 ms.assetid: B208C661-4D5B-467A-8451-4382453EC09A
 ms.date: 04/20/2017
@@ -50,7 +49,7 @@ Extension for Reading the PPD File
 
 **Note**  For USB devices, whether you're using a GPD or a PPD file, the Bidi extension XML file must specify the drvPrinterEvent attribute and set its value to "true". This ensures that the element is updated after Bidi cache refreshes.
 
- 
+ 
 
 The following XML fragment demonstrates the correct syntax for using the drvPrinterEvent attribute:
 

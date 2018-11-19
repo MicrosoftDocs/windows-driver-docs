@@ -1,6 +1,5 @@
 ---
 title: Seamless crisis prevention and recovery
-author: windows-driver-content
 description: If a firmware update fails, the results can be devastating.
 ms.assetid: F002100E-2505-4CCB-B048-27D9CA1C8F3E
 ms.date: 08/06/2018
@@ -43,7 +42,7 @@ When the system firmware is performing the actual update there are a series of p
 <strong>Note</strong>  In a test/laboratory environment it is acceptable to have no battery present yet still allow firmware updates as long as tethered power is provided. However a differentiation must be made between a dead/not charging battery and no battery present.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -72,7 +71,7 @@ When the system firmware is performing the actual update there are a series of p
 </tbody>
 </table>
 
- 
+ 
 
 Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md) and [Firmware update status](firmware-update-status.md).
 

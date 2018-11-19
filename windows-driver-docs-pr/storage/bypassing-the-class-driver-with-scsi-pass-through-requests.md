@@ -1,6 +1,5 @@
 ---
 title: Bypassing the Class Driver with SCSI Pass-Through Requests
-author: windows-driver-content
 description: Bypassing the Class Driver with SCSI Pass-Through Requests
 ms.assetid: 7f26e0bc-f01b-4430-aa9f-0f684fdbc2ec
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ SCSI Port does not check the validity of the SCSI command that is embedded in a 
 
 For a discussion of SCSI pass-through requests from the perspective of a storage class driver, see [Handling SCSI Pass-Through Requests](handling-scsi-pass-through-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

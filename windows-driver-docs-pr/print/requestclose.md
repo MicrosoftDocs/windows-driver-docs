@@ -1,6 +1,5 @@
 ---
 title: requestClose element
-author: windows-driver-content
 description: The optional requestClose element is used to close an event notification message on the client computer.
 ms.assetid: b2f21ab2-9205-483c-9f56-1c877edb7da2
 keywords: ["requestClose element Print Devices"]
@@ -54,7 +53,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>asyncPrintUIRequest</strong>](asyncprintuirequest.md)</p></td>
+<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
 <td><p></p>
 <p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
 </tr>

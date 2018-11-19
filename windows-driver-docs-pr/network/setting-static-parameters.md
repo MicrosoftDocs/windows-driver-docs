@@ -28,9 +28,9 @@ HKR,, InternalId, 0, "232"
 
 An *add-registry-section* can add any vendor-defined static parameter to a component's instance key.
 
- 
+ 
 
- 
+ 
 
 
 

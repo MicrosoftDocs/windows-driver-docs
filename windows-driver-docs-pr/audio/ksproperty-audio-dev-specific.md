@@ -53,7 +53,7 @@ The `KSPROPERTY_AUDIO_DEV_SPECIFIC` property is used to access a device-specific
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is expressed in a device-specific format.
 
@@ -83,7 +83,7 @@ In Windows Vista and later versions of Windows, an additional tab (labeled **Cus
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>KSPROPERTY_AUDIO_AGC</strong>](ksproperty-audio-agc.md)</p></td>
+<td align="left"><p><a href="ksproperty-audio-agc.md" data-raw-source="[&lt;strong&gt;KSPROPERTY_AUDIO_AGC&lt;/strong&gt;](ksproperty-audio-agc.md)"><strong>KSPROPERTY_AUDIO_AGC</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 <td align="left"><p>Check box</p></td>
 </tr>
@@ -105,7 +105,7 @@ In Windows Vista and later versions of Windows, an additional tab (labeled **Cus
 </tbody>
 </table>
 
- 
+ 
 
 **KSPROPERTY\_AUDIO\_AGC** must be used to expose actual AGC functionality in the device. Other device-specific functionality must be exposed by using `KSPROPERTY_AUDIO_DEV_SPECIFIC`.
 
@@ -140,9 +140,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIO\_AGC**](ksproperty-audio-agc.md)
 
- 
+ 
 
- 
+ 
 
 
 

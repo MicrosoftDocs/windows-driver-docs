@@ -74,7 +74,7 @@ Pointer to a [**SECURITY\_INFORMATION**](security-information.md) value that spe
 </tbody>
 </table>
 
- 
+ 
 
 **SecurityDescriptor**  
 Pointer to a [**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610) structure that contains the values of the security information to be assigned to the object.
@@ -123,9 +123,9 @@ Requirements
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS is a TLV that contains parameters for an association result.
 ms.assetid: A6F29084-EF36-43C4-B646-E071E755E110
 ms.date: 07/18/2017
@@ -44,7 +43,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | WDI\_BAND\_ID (UINT32)                                      | The band ID on which the association is established.                                                                                                                                                                                                |
 | UINT32                                                      | The IHV association status. If the association failed, this can contain an IHV-defined status code. This is only used for debugging purpose.                                                                                                        |
 
- 
+ 
 
 Requirements
 ------------
@@ -70,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

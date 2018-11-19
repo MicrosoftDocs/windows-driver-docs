@@ -1,6 +1,5 @@
 ---
 title: Writing DPC Routines
-author: windows-driver-content
 description: Writing DPC Routines
 ms.assetid: a0b93b71-7ee3-4626-b0b8-5dd6e19fba0d
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
@@ -54,9 +53,9 @@ Consider the following a general design guidelines.
 
 A *DpcForIsr* or *CustomDpc* routine must call **IoStartNextPacket**, or otherwise notify the appropriate driver routine when device I/O processing for the next request can be started. Depending on the driver and its device, this can occur well before the *DpcForIsr* or *CustomDpc* routine completes the current IRP with [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343), or it can occur immediately before this routine completes the current IRP and returns control.
 
- 
+ 
 
- 
+ 
 
 
 

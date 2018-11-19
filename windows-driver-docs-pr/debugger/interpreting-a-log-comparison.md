@@ -3,7 +3,6 @@ title: Interpreting a Log Comparison
 description: Interpreting a Log Comparison
 ms.assetid: fe2acdd5-00aa-4414-a59e-e6203ad48363
 keywords: ["UMDH, interpreting a log comparison"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ You can generate multiple User-Mode Dump Heap (UMDH) logs of the same process ov
 
 For example, the following command directs UMDH to compare two UMDH logs, Log1.txt and Log2.txt, and redirects the output to a third file, Compare.txt.
 
-```
+```console
 umdh -v Log1.txt Log2.txt > Compare.txt
 ```
 
@@ -28,14 +27,14 @@ For example, the following line from the file shows the change in allocation siz
 
 In Log1.txt, the calls in the stack accounts for 40,432 (0x9DF0) bytes, but in Log2.txt, the same call stack accounts for 61,712 (0xF110) bytes, a difference of 21,280 (0x5320) bytes.
 
-```
+```console
 + 5320 (f110 - 9df0) 3a allocs BackTrace00053 
 Total increase == 5320
 ```
 
 Following is the stack for the allocation:
 
-```
+```console
 ntdll!RtlDebugAllocateHeap+0x000000FD
 ntdll!RtlAllocateHeapSlowly+0x0000005A
 ntdll!RtlAllocateHeap+0x00000808
@@ -60,9 +59,9 @@ Suppose you have two computers: a *logging computer* where you create a UMDH log
 
 [Using UMDH to Find a User-Mode Memory Leak](using-umdh-to-find-a-user-mode-memory-leak.md)
 
- 
+ 
 
- 
+ 
 
 
 

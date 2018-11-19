@@ -89,9 +89,9 @@ After obtaining a *pDeviceProperties* function pointer, you must supply a comput
     };
     ```
 
- 
+ 
 
- 
+ 
 
 
 

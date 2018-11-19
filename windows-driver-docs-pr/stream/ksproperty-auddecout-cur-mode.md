@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDDECOUT\_CUR\_MODE property indicates the current audio output
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a DWORD that represents the current output mode of the audio decoder.
 
@@ -98,9 +98,9 @@ Requirements
 
 [**KSPROPERTY\_AUDDECOUT\_MODES**](ksproperty-auddecout-modes.md)
 
- 
+ 
 
- 
+ 
 
 
 

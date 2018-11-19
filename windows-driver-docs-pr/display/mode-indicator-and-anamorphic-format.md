@@ -39,9 +39,9 @@ A good way to display a film that has an occasional 3:2 pattern irregularity is 
 
 One can imagine many content scenarios. Some automatic display schemes work better than others depending on the particular content involved. It is likely that only some content providers will see a need to guarantee optimal results on the widest range of playback platforms. DirectShow gives these content authors a method for judging the impact of display mode on their titles and transmits their preferences.
 
- 
+ 
 
- 
+ 
 
 
 

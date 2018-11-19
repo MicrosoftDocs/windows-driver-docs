@@ -1,6 +1,5 @@
 ---
 title: Multiplex ID Management
-author: windows-driver-content
 description: Multiplex ID Management
 ms.assetid: feffc421-bd51-4174-80a4-1f9a36355667
 keywords:
@@ -52,37 +51,37 @@ RDBSS provides the following routines for creating and manipulating a MID\_ATLAS
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxAssociateContextWithMid</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553388)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553388" data-raw-source="[&lt;strong&gt;RxAssociateContextWithMid&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553388)"><strong>RxAssociateContextWithMid</strong></a></p></td>
 <td align="left"><p>This routine associates the supplied opaque context with an available MID from a MID_ATLAS structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxCreateMidAtlas</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554352)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554352" data-raw-source="[&lt;strong&gt;RxCreateMidAtlas&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554352)"><strong>RxCreateMidAtlas</strong></a></p></td>
 <td align="left"><p>This routine allocates a new instance of the MID_ATLAS data structure and initializes it.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxDestroyMidAtlas</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554395)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554395" data-raw-source="[&lt;strong&gt;RxDestroyMidAtlas&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554395)"><strong>RxDestroyMidAtlas</strong></a></p></td>
 <td align="left"><p>This routine destroys an existing instance of a MID_ATLAS data structure and frees the memory allocated to it. As a side effect it invokes the passed in context destructor on every valid context in the MID_ATLAS structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxMapMidToContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554545)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554545" data-raw-source="[&lt;strong&gt;RxMapMidToContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554545)"><strong>RxMapMidToContext</strong></a></p></td>
 <td align="left"><p>This routine maps a MID to its associated context in a MID_ATLAS structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxMapAndDissociateMidFromContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554541)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554541" data-raw-source="[&lt;strong&gt;RxMapAndDissociateMidFromContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554541)"><strong>RxMapAndDissociateMidFromContext</strong></a></p></td>
 <td align="left"><p>This routine maps a MID to its associated context in a MID_ATLAS structure and then disassociates the MID from the context.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxReassociateMid</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554686)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554686" data-raw-source="[&lt;strong&gt;RxReassociateMid&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554686)"><strong>RxReassociateMid</strong></a></p></td>
 <td align="left"><p>This routine reassociates a MID with an alternate context.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting KMDF and UMDF Driver Installation
-author: windows-driver-content
 description: Troubleshooting KMDF and UMDF Driver Installation
 ms.assetid: b0b71adc-cb6e-4b84-a5bf-bd1269bcf315
 keywords:
@@ -78,7 +77,6 @@ WudfCoInstaller: ReadWdfSection: Checking WdfSection [Echo_Install.NT.Wdf]
 WudfCoInstaller: Configuring UMDF Service  WUDFEchoDriver.
 WudfCoInstaller: Service WudfSvc is already running.
 WudfCoInstaller: Final status: error(0) The operation completed successfully.
-
 ```
 
 In the above scenario, no update is necessary because the on-disk version of the runtime is UMDF 1.9, which is the same as the version of the co-installer.
@@ -106,14 +104,13 @@ WudfUpdate: update returned error 0x16 - error(22) The device does not recognize
 WudfUpdate: For additional information please look at the log files %windir%\windowsupdate.log and %windir%\Logs\CBS\CBS.log
 WudfUpdate: Cleaning up update.
 WudfUpdate: Error updating UMDF - error(22) The device does not recognize the command. Aborting installation.
-
 ```
 
 In this scenario, the on-disk version of the UMDF runtime was older than the version of the co-installer. However, in this case the update was unsuccessful. The co-installer points to additional log files where you can find more information regarding the reason for the failure.
 
- 
 
- 
+
+
 
 
 

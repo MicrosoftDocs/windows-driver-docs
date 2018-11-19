@@ -1,6 +1,5 @@
 ---
 title: Allocating the Bus-Master Adapter Object
-author: windows-driver-content
 description: Allocating the Bus-Master Adapter Object
 ms.assetid: fc80d3f8-a12e-40bd-8b0e-c6bca2f9e7de
 keywords: ["allocating bus-master adapter objects", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
@@ -70,9 +69,9 @@ Another driver routine (probably the [*DpcForIsr*](https://msdn.microsoft.com/li
 
 When the driver has satisfied the current IRP's transfer request or must fail the IRP due to a device or bus I/O error, it must call **FreeMapRegisters**. This call should occur immediately following the last call to **FlushAdapterBuffers** for the current IRP, so that the driver can service other DMA requests, possibly for other devices on the bus.
 
- 
+ 
 
- 
+ 
 
 
 

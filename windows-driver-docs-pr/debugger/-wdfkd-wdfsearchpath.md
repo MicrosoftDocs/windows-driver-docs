@@ -3,7 +3,6 @@ title: wdfkd.wdfsearchpath
 description: The wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
 ms.assetid: cb52dc07-00b3-47d3-8636-4a6cd5ff3e29
 keywords: ["wdfkd.wdfsearchpath Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Remarks
 
 The KMDF formatting files are included in the Windows Driver Kit (WDK). The path to the formatting files depends on the installation directory of your WDK and on the version of the WDK that you have installed. The KMDF formatting files have extension tmf (trace message formatting). To determine the search path, browse or search your WDK installation for file names of the form Wdf*VersionNumber*.tmf. The following example shows how to use the **!wdfkd.wdfsearchpath** extension.
 
-```
+```dbgcmd
 kd> !wdfsearchpath C:\WinDDK\7600\tools\tracing\amd64
 ```
 
@@ -73,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

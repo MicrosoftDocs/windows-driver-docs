@@ -1,6 +1,5 @@
 ---
 title: Coordinating I/O Requests with Component Power State
-author: windows-driver-content
 description: Coordinating I/O Requests with Component Power State
 ms.assetid: CF74B946-BF62-481A-B8AA-DD106DDB94CA
 ms.date: 04/20/2017
@@ -31,7 +30,7 @@ For each request type supported by the driver, identify the required components.
 | B            | 1                 |
 | C            | 0,1,2             |
 
- 
+ 
 
 In this example, there are three distinct sets of components, one for each request type.
 The driver supplies one default, power-managed I/O queue for the device, as well as one additional power-managed queue corresponding to each set of components. In the example above, the driver creates one primary queue and three secondary queues, one corresponding to each component set. This queue configuration is shown in the following diagram:
@@ -58,9 +57,9 @@ Suppose that at this point, component 0 becomes idle. In the [*ComponentIdleCond
 
 To use the technique described in this example, the driver must also register an [*EvtIoCanceledOnQueue*](https://msdn.microsoft.com/library/windows/hardware/ff541756) callback function for each of its secondary queues. If a request were to be canceled while in the secondary queue, the driver could use this callback to call [**PoFxIdleComponent**](https://msdn.microsoft.com/library/windows/hardware/hh406717) for each corresponding component. Doing so releases the power reference that the request handler took when it called [**PoFxActivateComponent**](https://msdn.microsoft.com/library/windows/hardware/hh406650) before forwarding the request to the secondary queue.
 
- 
+ 
 
- 
+ 
 
 
 

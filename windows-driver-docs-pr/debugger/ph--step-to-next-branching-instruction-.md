@@ -3,7 +3,6 @@ title: ph (Step to Next Branching Instruction)
 description: The ph command executes the program until any kind of branching instruction is reached, including conditional or unconditional branches, calls, returns, and system calls.
 ms.assetid: ba4699d3-9872-4deb-96c7-e8b54c1d8ec6
 keywords: ["ph (Step to Next Branching Instruction) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,13 +20,13 @@ The **ph** command executes the program until any kind of branching instruction 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ph [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ph [r] [= StartAddress] [Count] 
 ```
 
@@ -71,7 +70,7 @@ Specifies the number of branching instructions that must be encountered for this
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -86,9 +85,9 @@ If the program counter is already on a branching instruction, the entire branchi
 
 In source mode, you can associate one source line with multiple assembly instructions. The **ph** command does not stop at a branching instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

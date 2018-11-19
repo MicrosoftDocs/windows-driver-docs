@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_SOURCE_PATH_HAS_SOURCE_SERVER
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ The source path does not include a source server.
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

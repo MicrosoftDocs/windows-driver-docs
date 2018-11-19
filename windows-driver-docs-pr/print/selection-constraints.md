@@ -1,6 +1,5 @@
 ---
 title: Selection Constraints
-author: windows-driver-content
 description: Selection Constraints
 ms.assetid: 9537e4c7-2cee-494d-b1ec-95d8c91a90e6
 keywords:
@@ -32,7 +31,7 @@ The \*InvalidCombination entry has the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature.
 
@@ -57,7 +56,7 @@ If you only need to indicate an invalid combination relationship between two opt
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. A \*Constraints entry must be placed inside an \*Option entry. For example, to indicate that letter-sized and A4-sized paper cannot be used with the envelope feeder, you can use the following entries:
 
@@ -86,9 +85,9 @@ or, equivalently:
 
 These examples specify that if a user attempts to select the envelope feeder and letter-sized paper, or the envelope feeder and A4-sized paper, Unidrv rejects the selection.
 
- 
+ 
 
- 
+ 
 
 
 

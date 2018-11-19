@@ -1,6 +1,5 @@
 ---
 title: Stream Class and Minidriver Interface
-author: windows-driver-content
 description: Stream Class and Minidriver Interface
 ms.assetid: d85510e6-1fd7-442a-bd88-f32b6c13ff75
 keywords:
@@ -36,9 +35,9 @@ The streaming minidriver can call WDM system services as necessary. However, the
 
 Minidrivers must be aware that all minidriver entry points are called at IRQL &gt; DISPATCH\_LEVEL when making WDM system service calls, except for the [**StreamClassCallAtNewPriority**](https://msdn.microsoft.com/library/windows/hardware/ff568230) routine. This function allows service calls at IRQL = DISPATCH\_LEVEL or PASSIVE\_LEVEL, depending on the priority specified. This limitation on IRQL can be overridden by setting the **TurnOffSynchronization** Boolean in the [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) structure to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ With the addition of multiple texturing, the methods for blending and texture fi
 
 If a driver sets the D3DDEVCAPS\_SEPARATETEXTUREMEMORIES flag in the **DevCaps** member of the D3DCAPS8 structure, it indicates to DirectX 8.0 and later versions of applications that they are disabled from simultaneously using multiple textures. The driver returns a D3DCAPS8 structure in response to a **GetDriverInfo2** query as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
- 
+ 
 
- 
+ 
 
 
 

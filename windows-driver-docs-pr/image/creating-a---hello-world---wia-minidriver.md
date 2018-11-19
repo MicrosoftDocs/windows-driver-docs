@@ -1,6 +1,5 @@
 ---
 title: Creating a 'Hello World' WIA Minidriver
-author: windows-driver-content
 description: Creating a 'Hello World' WIA Minidriver
 ms.assetid: 074da2ff-bc60-48a9-b2ff-83f070bd5351
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ The following files are used to create the "Hello World" WIA Minidriver:
 
 For information about how to add a custom UI to a minidriver, see, [Creating a "Hello World" WIA Minidriver UI Extension](creating-a--hello-world--wia-minidriver-ui-extension.md).
 
- 
+ 
 
- 
+ 
 
 
 

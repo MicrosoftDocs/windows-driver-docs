@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_TARGET_EXCEPTION_CONTEXT
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -39,9 +38,9 @@ This information is also returned to the *Context* parameter by the [**GetStored
 
 [**GetStoredEventInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548431)
 
- 
+ 
 
- 
+ 
 
 
 

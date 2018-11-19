@@ -38,9 +38,9 @@ When you implement the [DXVA-HD DDI](dxva-hd-ddi.md) in your user-mode display d
 
 -   Any [DXVA-HD DDI](dxva-hd-ddi.md) function should return S\_OK, E\_INVALIDARG or E\_OUTOFMEMORY.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Acquire and Release Semantics
-author: windows-driver-content
 description: Acquire and Release Semantics
 ms.assetid: a0852881-c33f-427a-be8a-5b9edac81f9a
 keywords: ["synchronization WDK kernel , acquire semantics", "synchronization WDK kernel , release semantics", "acquire semantics WDK kernel", "release semantics WDK kernel", "semantics WDK kernel"]
@@ -67,28 +66,28 @@ The following table lists the routines that have acquire-only and release-only v
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>InterlockedIncrement</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547910)</p></td>
-<td><p>[<strong>InterlockedIncrementAcquire</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547916)</p></td>
-<td><p>[<strong>InterlockedIncrementRelease</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547919)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547910" data-raw-source="[&lt;strong&gt;InterlockedIncrement&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547910)"><strong>InterlockedIncrement</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547916" data-raw-source="[&lt;strong&gt;InterlockedIncrementAcquire&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547916)"><strong>InterlockedIncrementAcquire</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547919" data-raw-source="[&lt;strong&gt;InterlockedIncrementRelease&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547919)"><strong>InterlockedIncrementRelease</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InterlockedDecrement</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547871)</p></td>
-<td><p>[<strong>InterlockedDecrementAcquire</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547875)</p></td>
-<td><p>[<strong>InterlockedDecrementRelease</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547883)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547871" data-raw-source="[&lt;strong&gt;InterlockedDecrement&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547871)"><strong>InterlockedDecrement</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547875" data-raw-source="[&lt;strong&gt;InterlockedDecrementAcquire&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547875)"><strong>InterlockedDecrementAcquire</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547883" data-raw-source="[&lt;strong&gt;InterlockedDecrementRelease&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547883)"><strong>InterlockedDecrementRelease</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>InterlockedCompareExchange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547853)</p></td>
-<td><p>[<strong>InterlockedCompareExchangeAcquire</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547857)</p></td>
-<td><p>[<strong>InterlockedCompareExchangeRelease</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547867)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547853" data-raw-source="[&lt;strong&gt;InterlockedCompareExchange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547853)"><strong>InterlockedCompareExchange</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547857" data-raw-source="[&lt;strong&gt;InterlockedCompareExchangeAcquire&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547857)"><strong>InterlockedCompareExchangeAcquire</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547867" data-raw-source="[&lt;strong&gt;InterlockedCompareExchangeRelease&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547867)"><strong>InterlockedCompareExchangeRelease</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

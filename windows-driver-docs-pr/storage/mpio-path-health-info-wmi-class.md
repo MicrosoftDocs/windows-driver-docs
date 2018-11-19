@@ -38,9 +38,9 @@ class MPIO_PATH_HEALTH_INFO
 
 When the class definition is compiled by the WMI tool suiteit produces the [**MPIO\_PATH\_HEALTH\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff562431) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

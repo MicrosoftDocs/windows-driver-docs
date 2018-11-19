@@ -1,6 +1,5 @@
 ---
 title: WSK_SET_STATIC_EVENT_CALLBACKS
-author: windows-driver-content
 description: WSK_SET_STATIC_EVENT_CALLBACKS
 ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
 ms.date: 07/18/2017
@@ -40,7 +39,7 @@ To automatically enable certain event callback functions on every socket it crea
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_EVENT_CALLBACK_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571166) structure that specifies the desired event callback functions to be automatically enabled</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571166" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571166)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -89,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

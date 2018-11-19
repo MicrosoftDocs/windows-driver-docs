@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and later)
-author: windows-driver-content
 description: Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and later)
 ms.assetid: 5e91748c-d03a-48f7-a9cc-df2801d8a555
 keywords: ["IRP_MN_STOP_DEVICE"]
@@ -40,9 +39,9 @@ A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as t
 
 While the device is stopped to rebalance resources, a driver cannot start any IRPs that access the device. A driver must queue such IRPs, as described in [Holding Incoming IRPs When A Device Is Paused](holding-incoming-irps-when-a-device-is-paused.md), or fail them if the driver does not implement an IRP-holding queue and must not drop I/O requests.
 
- 
+ 
 
- 
+ 
 
 
 

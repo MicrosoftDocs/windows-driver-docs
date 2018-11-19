@@ -3,7 +3,6 @@ title: File Connect to Remote Stub
 description: File Connect to Remote Stub
 ms.assetid: 7357db85-babe-4729-9a20-76ba284f5bf3
 keywords: ["File Connect to Remote Stub"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,7 @@ When you click **Connect to Remote Stub**, the **Connect to Remote Stub Server**
 
 To manually specify the remote connection parameters, enter one of the following strings in the **Connection string** box:
 
-```
+```text
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6]
@@ -63,7 +62,7 @@ If you use the COM protocol, *COMChannel* should match the channel number that y
 (Windows 2000 and later) If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=***Cert* or **machuser=***Cert* parameter that was used when the server was created.
+(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the server was created.
 
 <span id="clicon"></span><span id="CLICON"></span>**clicon**  
 Specifies that the process server or KD connection server will try to connect to the client through a reverse connection. The client must use **clicon** if and only if the server is using **clicon**. In most cases, the smart client is started before the server when a reverse connection is used.
@@ -82,7 +81,7 @@ In the **Browse Remote Servers** dialog box, in the **Machine** text box, enter 
 
 The **Servers** area lists all of the process servers and KD connection servers that are running on that computer. Select any of the listed servers and then press ENTER or click **OK**. (You can also double-click one of the listed servers.) The proper connection string for the process server that you selected will now appear in the **Connection string** box in the **Connect to Remote Stub Server** dialog box.
 
-If the server is password-protected, the connection string includes **Password=\***. You must replace the asterisk (**\***) with the actual password.
+If the server is password-protected, the connection string includes **Password=\\**<em>. You must replace the asterisk (</em>*\***) with the actual password.
 
 After you specify the server and password, click **OK** to open the connection.
 
@@ -94,9 +93,9 @@ The list of servers does not include debugging servers. To view those servers, u
 
 For more information and for other methods of joining a remote stub session, see [**Activating a Smart Client**](activating-a-smart-client.md) and [**Activating a Smart Client (Kernel Mode)**](activating-a-smart-client--kernel-mode-.md).
 
- 
+ 
 
- 
+ 
 
 
 

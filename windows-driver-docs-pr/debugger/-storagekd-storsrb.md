@@ -3,7 +3,6 @@ title: storagekd.storsrb
 description: The storagekd.storsrb extension displays information about the specified Storage (or SCSI) Request Block (SRB).
 ms.assetid: E2AB3BE2-0EE1-4FB5-9F62-02169B22B00B
 keywords: ["storagekd.storsrb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -44,7 +43,7 @@ Specifies the address of the SRB.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +62,9 @@ Here is an example of the **!storagekd.storsrb** display:
     PTL: (0, 1, 1)  CDB: 28 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  OpCode: SCSI/READ (10)   
 ```
 
- 
+ 
 
- 
+ 
 
 
 

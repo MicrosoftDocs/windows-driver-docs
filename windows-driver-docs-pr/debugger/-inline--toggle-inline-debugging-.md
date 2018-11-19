@@ -3,7 +3,6 @@ title: .inline (Toggle Inline Function Debugging)
 description: The .inline command enables or disables inline function debugging.
 ms.assetid: 7B6CB75D-E318-4832-935F-239531B8DC66
 keywords: [".inline (Toggle Inline Function Debugging) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,9 +37,9 @@ Enables inline function debugging.
 
 [Debugging Optimized Code and Inline Functions](debugging-optimized-code-and-inline-functions-external.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ The following topics describe how the display miniport driver and the user-mode 
 
 [Providing Kernel-Mode Support to the OpenGL Installable Client Driver](providing-kernel-mode-support-to-the-opengl-installable-client-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

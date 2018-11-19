@@ -1,6 +1,5 @@
 ---
 title: Collection list serialization helpers
-author: windows-driver-content
 description: The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on SENSOR\_COLLECTION\_LIST structures.
 ms.assetid: 586FEDD7-6BA1-4E76-8E8D-E486F4711FAE
 ms.date: 07/20/2018
@@ -84,16 +83,16 @@ Comments
 | Minimum supported server | Windows Server 2012 R2 |
 | Header                   | Sensorsutils.h         |
 
- 
+ 
 
 ## Related topics
 
 
 [Marshalling helper functions](marshalling-helper-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

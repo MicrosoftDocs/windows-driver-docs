@@ -15,9 +15,9 @@ In Windows Vista the Sound applet in the Control Panel shows an **Enhancements**
 
 To design and implement the custom property page provider, perform the following steps.
 
-1.  Create a custom property page. See [Creating property sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
+1.  Create a custom property page. See [Creating property sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
 
-2.  Package your property page as a DLL. See [Creating and using a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) for more information about packaging your custom page as a DLL.
+2.  Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) for more information about packaging your custom page as a DLL.
 
 3.  Modify your [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the DLL for the property page.
 
@@ -53,9 +53,9 @@ HKLM
 
 The CLSID of the default property page is replaced with the CLSID of your custom property page.
 
- 
+ 
 
- 
+ 
 
 
 

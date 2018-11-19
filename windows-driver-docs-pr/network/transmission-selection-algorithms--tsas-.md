@@ -17,9 +17,9 @@ This section includes the following topics:
 
 [Enhanced Transmission Selection (ETS) Algorithm](enhanced-transmission-selection--ets--algorithm.md)
 
- 
+ 
 
- 
+ 
 
 
 

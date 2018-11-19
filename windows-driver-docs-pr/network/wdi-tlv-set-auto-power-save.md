@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SET_AUTO_POWER_SAVE
-author: windows-driver-content
 description: WDI_TLV_SET_AUTO_POWER_SAVE is an unused TLV.
 ms.assetid: 897696D0-72C0-471A-9A43-1D1FAA78260F
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

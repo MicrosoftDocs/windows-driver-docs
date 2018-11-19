@@ -1,6 +1,5 @@
 ---
 title: Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter
-author: windows-driver-content
 description: Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter
 ms.assetid: 9691f47d-1ea8-4ef6-8e0d-57570ff70a16
 keywords:
@@ -66,9 +65,9 @@ The port driver also attempts to fill in the following members with values from 
 
     A miniport driver must set an entry for each SCSI bus supported by the HBA, as indicated by the value of **NumberOfBuses**.
 
- 
+ 
 
- 
+ 
 
 
 

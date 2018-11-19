@@ -23,9 +23,9 @@ In NDIS 6.0, miniport drivers register CoNDIS *MiniportXxx* functions by calling
 
 For more information about CoNDIS miniport driver registration, see [CoNDIS Miniport Driver Registration](condis-miniport-driver-registration.md).
 
- 
+ 
 
- 
+ 
 
 
 

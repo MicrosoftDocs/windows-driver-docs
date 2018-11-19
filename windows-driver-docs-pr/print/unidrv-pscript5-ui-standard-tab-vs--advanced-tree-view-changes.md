@@ -1,6 +1,5 @@
 ---
 title: Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
-author: windows-driver-content
 description: Unidrv/PScript5 UI Standard Tab vs.
 ms.assetid: 07374e07-f0ca-4e97-8e5f-e5fe54d14af4
 ms.date: 04/20/2017
@@ -45,8 +44,8 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 <td><p>If the GPD or PPD file defines a feature with the &quot;JobPageOrder&quot; Print Schema keyword, and the feature has exactly two options with the &quot;Standard&quot; and &quot;Reverse&quot; Print Schema keywords, then that feature is shown in the <strong>Page Order</strong> area in the standard <strong>Layout</strong> tab. Otherwise, the GPD or PPD feature is shown in the generic &quot;Printer Features&quot; group in the <strong>Advanced</strong> tree view UI.</p>
 <p>When the feature is shown in the <strong>Page Order</strong> area in the standard <strong>Layout</strong> tab, then the following is true:</p>
 <ul>
-<li><p>If the driver’s GPD file doesn’t specify “*OutputOrderReversed?: TRUE” or its PPD file doesn’t specify &quot;DefaultOutputOrder: Reverse&quot;, then the GPD/PPD &quot;Standard&quot; option is shown as the Front to Back UI option, and the GPD/PPD &quot;Reverse&quot; option is shown as the Back to Front UI option.</p></li>
-<li><p>If the driver’s GPD file does specify “*OutputOrderReversed?: TRUE” or its PPD file does specify &quot;DefaultOutputOrder: Reverse&quot;, then the GPD/PPD &quot;Standard&quot; option is shown as the Back to Front UI option, and the GPD/PPD &quot;Reverse&quot; option is shown as the Front to Back UI option.</p></li>
+<li><p>If the driver’s GPD file doesn’t specify “<em>OutputOrderReversed?: TRUE” or its PPD file doesn’t specify &quot;DefaultOutputOrder: Reverse&quot;, then the GPD/PPD &quot;Standard&quot; option is shown as the Front to Back UI option, and the GPD/PPD &quot;Reverse&quot; option is shown as the Back to Front UI option.</p></li>
+<li><p>If the driver’s GPD file does specify “</em>OutputOrderReversed?: TRUE” or its PPD file does specify &quot;DefaultOutputOrder: Reverse&quot;, then the GPD/PPD &quot;Standard&quot; option is shown as the Back to Front UI option, and the GPD/PPD &quot;Reverse&quot; option is shown as the Front to Back UI option.</p></li>
 </ul>
 <p>The following screen shot shows the Page Order area on the Printing Preferences dialog box.</p>
 <img src="images/xpsdrv-printingpreferences1.png" alt="Screen shot of the Page Order area on the Printing Preferences dialog box" /></td>
@@ -63,7 +62,7 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 </tr>
 <tr class="odd">
 <td><p>PageDeviceFont-Substitution</p></td>
-<td><p>If GPD or PPD defines a feature with the &quot;PageDeviceFontSubstitution&quot; Print Schema keyword and the feature has exactly two options with the &quot;On&quot; and &quot;Off&quot; Print Schema keywords that feature is shown in the <strong>TrueType Font</strong> list in the <strong>Advanced</strong> tab's &quot;Graphic&quot; group. The &quot;On&quot; option is shown as <strong>Substitute with Device Font</strong>, and the &quot;Off&quot; option is shown as <strong>Download as Softfont</strong>.</p>
+<td><p>If GPD or PPD defines a feature with the &quot;PageDeviceFontSubstitution&quot; Print Schema keyword and the feature has exactly two options with the &quot;On&quot; and &quot;Off&quot; Print Schema keywords that feature is shown in the <strong>TrueType Font</strong> list in the <strong>Advanced</strong> tab&#39;s &quot;Graphic&quot; group. The &quot;On&quot; option is shown as <strong>Substitute with Device Font</strong>, and the &quot;Off&quot; option is shown as <strong>Download as Softfont</strong>.</p>
 <p>Otherwise, the GPD or PPD feature is shown in the generic &quot;Printer Features&quot; group in the <strong>Advanced tree view</strong> UI.</p>
 <p>The following screen shot of the Advanced Options dialog box shows the Substitute with Device font option selected.</p>
 <img src="images/xpsdrv-printingpreferences4.png" alt="Screen shot of the Advanced Options dialog box with Substitute with Device font selected" /></td>
@@ -84,13 +83,13 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 </tbody>
 </table>
 
- 
+ 
 
 For any other custom GPD or PPD features, no matter if they are mapped to public Print Schema features or not, they will always be shown in the generic "Printer Features" group in the **Advanced tree view** UI.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Kill Tool
 description: The Kill tool, kill.exe, terminates one or more processes and all of their threads. This tool works only on processes running on the local computer.
 ms.assetid: e1733a74-2a31-436f-87b8-e704b27b6f04
 keywords: kill Tool, Kill.exe, kill.exe
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ Kill.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="Kill_Tool_command-line_options"></span><span id="kill_tool_command-line_options"></span><span id="KILL_TOOL_COMMAND-LINE_OPTIONS"></span>Kill Tool command-line options
 
 
-```
+```console
 kill [/f] { PID | Pattern* }
 ```
 
@@ -35,7 +34,7 @@ Specifies the process identifier (PID) of the task to be terminated.
 
 To find the PID for a task, use TaskList in Microsoft Windows XP and later or [TList](tlist.md) in Windows 2000.
 
-<span id="_______Pattern_"></span><span id="_______pattern_"></span><span id="_______PATTERN_"></span> *Pattern***\***  
+<span id="_______Pattern_"></span><span id="_______pattern_"></span><span id="_______PATTERN_"></span> <em>Pattern</em>**\\***  
 Specifies all or part of the name of a task or window. The Kill tool terminates all processes whose process names or window names match the pattern. The asterisk is required.
 
 Before using a pattern that might match many process or window names unintentionally, use the **tlist** *pattern* command to test the pattern. See [TList](tlist.md) for details.
@@ -45,19 +44,19 @@ Before using a pattern that might match many process or window names unintention
 
 The following command terminates processes whose names begin with "myapp."
 
-```
+```console
 kill myapp*
 ```
 
 The following command terminates the process whose process ID (PID) is 2520:
 
-```
+```console
 kill 2520
 ```
 
 The following command terminates processes whose names begin with "my\*." It does not prompt for confirmation. This command succeeds even when this process is a system service:
 
-```
+```console
 kill /f my*
 ```
 
@@ -66,9 +65,9 @@ kill /f my*
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

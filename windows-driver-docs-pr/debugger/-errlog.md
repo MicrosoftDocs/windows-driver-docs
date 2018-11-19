@@ -3,7 +3,6 @@ title: errlog
 description: The errlog extension displays the contents of any pending entries in the I/O system's error log.
 ms.assetid: 2ef6331e-fa83-4515-8d70-5094e40b8497
 keywords: ["errlog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!errlog** extension displays the contents of any pending entries in the I/
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -60,9 +59,9 @@ Only entries that were queued by [**IoWriteErrorLogEntry**](https://msdn.microso
 
 This command can be used as a diagnostic aid after a system crash because it reveals pending error information that was unable to be committed to the error log before the system halted.
 
- 
+ 
 
- 
+ 
 
 
 

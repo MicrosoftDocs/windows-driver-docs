@@ -34,9 +34,9 @@ The class driver only attempts to page out the minidriver if it has no open stre
 
 The class driver pages out the minidriver only if the minidriver turns on this feature. The minidriver enables this feature by setting the registry variable PageOutWhenUnopened to 1 in the device's INF file. See the sample streaming minidriver's INFs for more information.
 
- 
+ 
 
- 
+ 
 
 
 

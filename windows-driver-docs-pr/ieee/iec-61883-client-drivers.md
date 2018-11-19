@@ -1,6 +1,5 @@
 ---
 title: IEC-61883 Client Drivers
-author: windows-driver-content
 description: IEC-61883 Client Drivers
 ms.assetid: 2a3f62d0-c1f2-4978-8f89-3ed800d697f4
 keywords:
@@ -39,9 +38,9 @@ This section includes:
 
 [IEC-61883 Protocol Driver](https://msdn.microsoft.com/library/windows/hardware/ff537191)
 [IEC-61883 Protocol Driver in a Client Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537193)
- 
+ 
 
- 
+ 
 
 
 

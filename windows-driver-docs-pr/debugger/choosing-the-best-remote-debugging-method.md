@@ -3,7 +3,6 @@ title: Choosing the Best Remote Debugging Method
 description: Choosing the Best Remote Debugging Method
 ms.assetid: af048b78-cb80-44d2-854f-11e0991e3353
 keywords: ["remote debugging, choosing the best method"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -50,9 +49,9 @@ It is possible to chain several computers together to take advantage of more tha
 
 You can even perform remote debugging on a single computer. For example, it might be useful to start a low-privilege process server and then connect to it with a high-privilege smart client. And on a Windows 2000 terminal server computer you can debug one session from another.
 
- 
+ 
 
- 
+ 
 
 
 

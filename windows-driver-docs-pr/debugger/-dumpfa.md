@@ -3,7 +3,6 @@ title: dumpfa
 description: The dumpfa extension displays the contents of a failure analysis entry.
 ms.assetid: 4516252d-b6c9-4bf4-b435-6c0b3cb0fbc3
 keywords: ["failure analysis entries, display", "failure analysis entries", "dumpfa Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,14 +47,14 @@ Specifies the address of the failure analysis entry that is displayed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The **.dumpfa** extension is useful only to debug the [**!analyze**](-analyze.md) extension, as the following example shows.
 
-```
+```dbgcmd
 0:000> !dumpfa 0x00a34140
 DataUsed 3b0
 Type =        DEBUG_FLR_MARKER_BUCKET 00010016 - Size = 9
@@ -81,9 +80,9 @@ Type =      DEBUG_FLR_IMAGE_TIMESTAMP 80000002 - Size = 8
 
 You can also use the [**!asd**](-asd.md) extension to debug the [**!analyze**](-analyze.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using INX Files to Create INF Files
-author: windows-driver-content
 description: Using INX Files to Create INF Files
 ms.assetid: b49f8fed-c2b5-46e2-aeaf-e09231fa1578
 keywords:
@@ -78,9 +77,9 @@ UmdfLibraryVersion=$UMDFVERSION$
 
 [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) also supports a -*u* option to replace UMDF string variables in an INX file. If your driver package includes both UMDF-based drivers and KMDF-based drivers, you can use the -*k* and -*u* options with a single Stampinf command and a single INX file.
 
- 
+ 
 
- 
+ 
 
 
 

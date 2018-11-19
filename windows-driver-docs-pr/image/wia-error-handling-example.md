@@ -1,6 +1,5 @@
 ---
 title: WIA Error Handling Example
-author: windows-driver-content
 description: WIA Error Handling Example
 ms.assetid: 7dc4b15e-40db-4e64-be41-d6bcc44603c6
 ms.date: 04/20/2017
@@ -122,9 +121,9 @@ OUT BSTR *pbstrDescription)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0xCE DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
 description: The DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS bug check has a value of 0x000000CE. This indicates that a driver failed to cancel pending operations before unloading.
 ms.assetid: ade0d20d-25f0-45ad-a099-31f3521b91cd
 keywords: ["Bug Check 0xCE DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS", "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS bug check has a value of 0x000000CE. This indicates that a driver failed to cancel pending operations before unloading.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS Parameters
 
@@ -56,7 +55,7 @@ The DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS bug check has a v
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -65,9 +64,9 @@ Cause
 
 This driver failed to cancel lookaside lists, DPCs, worker threads, or other such items before unload.
 
- 
+ 
 
- 
+ 
 
 
 

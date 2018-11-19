@@ -1,6 +1,5 @@
 ---
 title: Customizing Print Web Pages
-author: windows-driver-content
 description: Customizing Print Web Pages
 ms.assetid: 7592e530-9f87-4d4e-a8aa-d2125014971a
 keywords:
@@ -26,9 +25,9 @@ This section provides the following topics:
 
 [Installing Customized Print Web Pages](installing-customized-print-web-pages.md)
 
- 
+ 
 
- 
+ 
 
 
 

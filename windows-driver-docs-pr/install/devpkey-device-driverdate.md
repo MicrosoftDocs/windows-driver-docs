@@ -32,7 +32,7 @@ The PKEY_Device_DriverDate device property represents the date of the driver tha
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_FILETIME</strong>](devprop-type-filetime.md)</p></td>
+<td align="left"><p><a href="devprop-type-filetime.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_FILETIME&lt;/strong&gt;](devprop-type-filetime.md)"><strong>DEVPROP_TYPE_FILETIME</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -50,7 +50,7 @@ The PKEY_Device_DriverDate device property represents the date of the driver tha
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,9 +91,9 @@ Requirements
 **INF Version section**
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

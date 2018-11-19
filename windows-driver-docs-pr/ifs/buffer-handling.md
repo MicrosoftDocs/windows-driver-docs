@@ -1,6 +1,5 @@
 ---
 title: Buffer Handling
-author: windows-driver-content
 description: Buffer Handling
 ms.assetid: 0739ff35-2915-4237-9fe0-11559eccb0bb
 keywords:
@@ -59,9 +58,9 @@ The WDK contains numerous examples of buffer validation in the FASTFAT and CDFS 
 
 -   The **CdCommonRead** function in cdfs\\read.c uses \_\_try and \_\_except around code to zero user buffers. Note that the sample code in **CdCommonRead** appears to use the try and except keywords. In the WDK environment, these keywords in C are defined in terms of the compiler extensions \_\_try and \_\_except. Anyone using C++ code must use the native compiler types to handle exceptions properly, as \_\_try is a C++ keyword, but not a C keyword, and will provide a form of C++ exception handling that is not valid for kernel drivers.
 
- 
+ 
 
- 
+ 
 
 
 

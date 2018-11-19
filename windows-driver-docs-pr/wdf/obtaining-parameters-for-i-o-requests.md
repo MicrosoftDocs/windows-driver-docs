@@ -1,6 +1,5 @@
 ---
 title: Obtaining Parameters for I/O Requests
-author: windows-driver-content
 description: Obtaining Parameters for I/O Requests
 ms.assetid: 1ba1fdcf-99bd-44e3-adbf-5dc93a790900
 keywords:
@@ -25,9 +24,9 @@ When a driver receives an I/O request, the driver can use the following methods 
 
 -   [**IWDFIoRequest::GetWriteParameters**](https://msdn.microsoft.com/library/windows/hardware/ff559130)
 
- 
+ 
 
- 
+ 
 
 
 

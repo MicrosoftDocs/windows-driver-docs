@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how to view a USB event trace in Xperf.
 title: Viewing a USB Event Trace in Xperf
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,6 @@ To analyze performance and timing issues, you can use Xperf to view a USB event 
 
 ```cpp
 xperf usb.etl
-
 ```
 
 Xperf displays a view of the events in graphical form. The initial view is a timeline view, in which each diamond represents one or more events in this image. The diamonds are color coded according to the event provider.

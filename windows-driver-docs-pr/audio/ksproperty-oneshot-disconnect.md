@@ -44,13 +44,13 @@ The **KSPROPERTY\_ONESHOT\_DISCONNECT** property is used to prompt the audio dri
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>NULL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 No property value is sent with this property request.
 
@@ -61,7 +61,7 @@ The **KSPROPERTY\_ONESHOT\_DISCONNECT** property returns STATUS\_SUCCESS if the 
 &gt; \[!Note\]
 &gt;   A successful request means that the driver made an attempt to disconnect from the Bluetooth audio device, but does not necessarily mean that the attempt was successful.
 
- 
+ 
 
 Remarks
 -------
@@ -95,9 +95,9 @@ Requirements
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
 
- 
+ 
 
- 
+ 
 
 
 

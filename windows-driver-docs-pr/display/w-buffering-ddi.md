@@ -19,9 +19,9 @@ The driver supports w-buffering by enabling the D3DPRASTERCAPS\_WBUFFER cap in t
 
 The [**D3DHAL\_DP2VIEWPORTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff545936) structure supports fields that correspond to world-space front and back clip planes (hither and yon respectively). This information can be used to adjust fog tables as well.
 
- 
+ 
 
- 
+ 
 
 
 

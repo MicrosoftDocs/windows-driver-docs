@@ -3,7 +3,6 @@ title: Disable heap coalesce on free
 description: Disable heap coalesce on free
 ms.assetid: 64a68fa2-9270-4b2d-9edc-d54370191dcb
 keywords: ["Disable heap coalesce on free (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Disable heap coalesce on free** flag leaves adjacent blocks of heap memory
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +48,9 @@ By default, Windows combines ("coalesces") newly-freed adjacent blocks into a si
 
 This flag is used for maintaining compatibility with old applications.
 
- 
+ 
 
- 
+ 
 
 
 

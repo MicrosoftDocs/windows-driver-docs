@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_GET_AUTO_POWER_SAVE
-author: windows-driver-content
 description: WDI_TLV_GET_AUTO_POWER_SAVE is a TLV that contains auto power save information for OID_WDI_GET_AUTO_POWER_SAVE.
 ms.assetid: E57AD1CE-A252-4BB5-B983-11D3E46B7EC1
 ms.date: 07/18/2017
@@ -45,7 +44,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT64                                                                             | Number of received unicast packets.                                                                                |
 | UINT64                                                                             | Number of sent unicast packets.                                                                                    |
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

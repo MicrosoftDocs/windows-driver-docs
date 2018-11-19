@@ -53,9 +53,9 @@ To initialize a GSM-based device with PIN1 locked, implement the following steps
 
 19. The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

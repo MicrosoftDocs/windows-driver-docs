@@ -1,6 +1,5 @@
 ---
 title: Revise Forward Request Logic
-author: windows-driver-content
 description: Revise Forward Request Logic
 ms.assetid: B307AE04-7AA5-453D-9086-CD740617C659
 ms.date: 04/20/2017
@@ -14,9 +13,9 @@ If a driver cannot complete a request by itself, it passes the request down the 
 
 For information about how a WDF driver passes a request down to the next lower driver in the stack, see [Forwarding I/O Requests](forwarding-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

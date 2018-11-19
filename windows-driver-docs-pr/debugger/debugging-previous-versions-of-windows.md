@@ -2,7 +2,6 @@
 title: Debugging Previous Versions of Windows
 description: .
 ms.assetid: 4751D53D-A7CD-4645-B6E9-A8E06ABF4C6D
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ To debug code running on Windows Vistaor Windows Server 2008, get the Windows 
 
 [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

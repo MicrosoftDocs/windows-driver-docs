@@ -19,7 +19,7 @@ To call **SetupWriteTextLogError**, an application supplies the same information
 
 **SetupWriteTextLogError** writes the second log entry in the following format:
 
-*entry_prefix time_stamp category* *****indentation* **Error:***error-number error-description*
+*entry_prefix time_stamp category* **<strong>*indentation* **Error:</strong>*error-number error-description*
 
 Where:
 
@@ -31,17 +31,17 @@ Where:
 
 The following example shows how an application might typically call [**SetupWriteTextLogError**](https://msdn.microsoft.com/library/windows/hardware/ff552232) to log information about an error in a text log. The error used in the example is a system start error. The application calls **SetupWriteTextLogError**, supplying the following parameter values:
 
--   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211) or is one of the system-defined log token values that are described in [Log Tokens](log-tokens.md).
+- *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211) or is one of the system-defined log token values that are described in [Log Tokens](log-tokens.md).
 
--   *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
+- *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 
--   *LogFlags* is set to TXTLOG_ERROR. This example does not include a time stamp or change the indentation depth. The current indentation depth was previously set to five monospace text spaces. For information about how to change the indentation depth, see [Writing Indented Log Entries](writing-indented-log-entries.md). Event levels are described in [Setting the Event Level for a Text Log](setting-the-event-level-for-a-text-log.md).
+- *LogFlags* is set to TXTLOG_ERROR. This example does not include a time stamp or change the indentation depth. The current indentation depth was previously set to five monospace text spaces. For information about how to change the indentation depth, see [Writing Indented Log Entries](writing-indented-log-entries.md). Event levels are described in [Setting the Event Level for a Text Log](setting-the-event-level-for-a-text-log.md).
 
--   *Error* is set to the value of the Win32 error code, ERROR_SERVICE_ALREADY_RUNNING. The decimal value of this error code is 1056.
+- *Error* is set to the value of the Win32 error code, ERROR_SERVICE_ALREADY_RUNNING. The decimal value of this error code is 1056.
 
--   *MessageStr is* set to TEXT("Start Service: Failed to start service 'SomeService'").
+- *MessageStr is* set to TEXT("Start Service: Failed to start service 'SomeService'").
 
--   A comma-separated parameter list is not supplied*.*
+- A comma-separated parameter list is not supplied<em>.</em>
 
 The parameters *LogToken*, *Category*, and *LogFlags* affect the operation of **SetupWriteTextLogError** in the same manner as these parameters affect the operation of **SetupWriteTextLog**.
 
@@ -66,9 +66,9 @@ If the TXTLOG_VENDOR event category is enabled and the TXTLOG_ERROR event level 
 
 Be aware that **SetupWriteTextLogError** provides the string "An instance of the service is already running." to describe the Win32 error whose value is 1056.
 
- 
+ 
 
- 
+ 
 
 
 

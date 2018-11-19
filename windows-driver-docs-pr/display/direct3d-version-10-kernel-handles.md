@@ -21,9 +21,9 @@ typedef struct D3D10DDI_HKMRESOURCE
 } D3D10DDI_HKMRESOURCE;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

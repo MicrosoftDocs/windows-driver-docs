@@ -1,6 +1,5 @@
 ---
 title: TVOT\_SCROLLBAR
-author: windows-driver-content
 description: TVOT\_SCROLLBAR
 ms.assetid: 8d905933-9629-48eb-9130-afa3dfa15099
 keywords: ["TVOT_SCROLLBAR Print Devices"]
@@ -119,7 +118,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -139,9 +138,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

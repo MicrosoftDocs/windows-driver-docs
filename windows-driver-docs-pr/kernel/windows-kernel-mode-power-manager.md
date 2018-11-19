@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Power Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Power Manager
 ms.assetid: 2d39e43a-63a6-4474-a1ed-c24b4526a3f5
 ms.localizationpriority: medium
@@ -38,9 +37,9 @@ Routines that provide a direct interface to the power manager are usually prefix
 
 The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296).
 
- 
+ 
 
- 
+ 
 
 
 

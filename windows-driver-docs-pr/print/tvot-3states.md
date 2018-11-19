@@ -1,6 +1,5 @@
 ---
 title: TVOT\_3STATES
-author: windows-driver-content
 description: TVOT\_3STATES
 ms.assetid: baa9fa5e-521e-446b-bd6c-7910d61c7764
 keywords: ["TVOT_3STATES Print Devices"]
@@ -119,7 +118,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -139,9 +138,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

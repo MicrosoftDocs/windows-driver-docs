@@ -1,6 +1,5 @@
 ---
 title: UEFI simple I/O protocol
-author: windows-driver-content
 description: UEFI simple I/O protocol
 ms.assetid: 0cb55bf5-71e9-4b59-aef1-7d74eb331a18
 ms.date: 04/20/2017
@@ -12,13 +11,13 @@ ms.localizationpriority: medium
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 The simple I/O protocol is used by flashing tools to enable communication between the device and a host computer in the pre-boot environment.
 
 **Note**  Information about flashing tools will be provided in a future release of this documentation.
 
- 
+ 
 
 ## EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL
 

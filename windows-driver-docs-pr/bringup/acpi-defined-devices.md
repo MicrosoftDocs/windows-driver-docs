@@ -1,6 +1,5 @@
 ---
 title: ACPI-defined devices
-author: windows-driver-content
 description: The ACPI 5.0 specification defines a number of device types to represent and control typical platform features.
 ms.assetid: 10BD17C9-E8FE-41E0-BD8C-E622B60E6BB6
 ms.date: 04/20/2017
@@ -89,9 +88,9 @@ The platform can indicate to the operating system that processor cores in the th
 
 OEMs can include a Device-Specific Method (\_DSM) to support the Microsoft thermal extensions for Windows. For more information, see [Device-Specific Method for Microsoft Thermal Extensions](device-specific-method-for-microsoft-thermal-extensions.md).
 
- 
+ 
 
- 
+ 
 
 
 

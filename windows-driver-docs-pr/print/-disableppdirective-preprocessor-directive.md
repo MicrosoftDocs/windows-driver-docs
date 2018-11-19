@@ -1,6 +1,5 @@
 ---
 title: '#DisablePPDirective Preprocessor Directive'
-author: windows-driver-content
 description: '#DisablePPDirective Preprocessor Directive'
 ms.assetid: 5f85a6b1-a72f-45e2-901a-7bce94b4793c
 keywords:
@@ -35,9 +34,9 @@ The following code examples shows how you can use this directive.
     *%  the newer host file.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

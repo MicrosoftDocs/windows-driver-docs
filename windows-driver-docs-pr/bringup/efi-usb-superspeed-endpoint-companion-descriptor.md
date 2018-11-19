@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-author: windows-driver-content
 description: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 ms.assetid: 5449A10A-17BC-40CB-A8FC-19F867CFC9D0
 ms.date: 04/20/2017
@@ -63,9 +62,9 @@ The total number of bytes this endpoint will transfer every service interval (SI
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

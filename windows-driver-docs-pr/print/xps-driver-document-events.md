@@ -1,6 +1,5 @@
 ---
 title: XPS Driver Document Events
-author: windows-driver-content
 description: XPS Driver Document Events
 ms.assetid: 240e14d1-d8ee-403c-b728-b14941775634
 keywords:
@@ -321,9 +320,9 @@ The following escape codes are defined in Winddiui.h.
 #define DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPOST     12
 ```
 
- 
+ 
 
- 
+ 
 
 
 

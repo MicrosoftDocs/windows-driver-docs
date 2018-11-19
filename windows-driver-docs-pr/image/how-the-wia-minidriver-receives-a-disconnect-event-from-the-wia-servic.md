@@ -1,6 +1,5 @@
 ---
 title: How WIA minidriver receives disconnect from WIA
-author: windows-driver-content
 description: How the WIA minidriver receives a disconnect event from the WIA service
 ms.assetid: 6ae3c230-d026-469e-a699-860a295fba85
 ms.date: 04/20/2017
@@ -15,7 +14,7 @@ The WIA minidriver should not attempt to communicate with the hardware during or
 
 The WIA\_EVENT\_DEVICE\_DISCONNECTED event is not always sent to the WIA minidriver. When the computer is shutting down and the WIA service is unloading WIA drivers, it does not send this event. This event should be treated as a device hardware disabling action.
 
- 
+ 
 
 
 

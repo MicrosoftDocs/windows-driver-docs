@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MEDIA_CONNECT_STATUS
-author: windows-driver-content
 description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS OID requests the connection status of the NIC on the network.
 ms.assetid: 3ed26e62-a285-4b78-91c6-7c3cc0963570
 ms.date: 08/08/2017
@@ -67,9 +66,9 @@ Requirements
 
 [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
 
- 
+ 
 
- 
+ 
 
 
 

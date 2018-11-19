@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_IPV6_LSO_V2 (0xD4)
-author: windows-driver-content
 description: WDI_TLV_IPV6_LSO_V2 is a TLV that contains Large Send Offload V2 parameters for IPv6.
 ms.assetid: 898257D1-405A-46A3-AE63-26DFA8C1FAAC
 ms.date: 07/18/2017
@@ -67,7 +66,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -93,9 +92,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

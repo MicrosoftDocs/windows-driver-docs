@@ -19,9 +19,9 @@ Applications can call the **Present** method either to present contents of back 
 
 The runtime in turn makes independent sequential calls to the driver's [*DdFlip*](https://msdn.microsoft.com/library/windows/hardware/ff549306) or [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) function. Because the display mode and refresh rate of each head might be different, these calls are always independent at the DDI level.
 
- 
+ 
 
- 
+ 
 
 
 

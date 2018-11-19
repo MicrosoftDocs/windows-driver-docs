@@ -30,9 +30,9 @@ The driver should handle [*DdBlt*](https://msdn.microsoft.com/library/windows/ha
 
 The driver is allowed to perform texture management in order to perform optimization transformations on the textures or to decide for itself where and when to transfer textures in memory.
 
- 
+ 
 
- 
+ 
 
 
 

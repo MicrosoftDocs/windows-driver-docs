@@ -1,6 +1,5 @@
 ---
 title: Required Dispatch Routines
-author: windows-driver-content
 description: Required Dispatch Routines
 ms.assetid: 9b760ac7-7f31-47ad-bf84-7d79c6b24ebd
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
@@ -56,9 +55,9 @@ Most drivers must handle the following *Dispatch* routines:
 
 The dispatch routines that a driver must provide vary according to the type and functionality of the underlying physical device. For device-type-specific information about IRP major function codes that drivers must handle, see the device-type specific documentation in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

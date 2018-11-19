@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for a Legacy COM Port
-author: windows-driver-content
 description: Registry Settings for a Legacy COM Port
 ms.assetid: 043ac1f5-eeb1-4828-8417-b3c6d76b4322
 keywords:
@@ -51,7 +50,7 @@ Specifies the untranslated base I/O address for the COM port control registers. 
 Specifies the untranslated interrupt vector, as appropriate for the bus type. Serial reads this value. The value cannot be zero. The default value of **Interrupt** is 0x00000000.
 
 <a href="" id="dosdevices--reg-sz-"></a>**DosDevices** (REG\_SZ)  
-Specifies the name of the COM port. The name of a COM port is typically COM*&lt;n&gt;,* where &lt;*n&gt;* is a COM port number that the installer obtains from the [COM port database](com-port-database.md). However, a COM port name can be set to any non-**NULL** string. Serial uses the port name to create a symbolic link to the COM port that is visible in usermode. The default value of **DosDevices** is a **NULL** string.
+Specifies the name of the COM port. The name of a COM port is typically COM<em>&lt;n&gt;,</em> where &lt;*n&gt;* is a COM port number that the installer obtains from the [COM port database](com-port-database.md). However, a COM port name can be set to any non-**NULL** string. Serial uses the port name to create a symbolic link to the COM port that is visible in usermode. The default value of **DosDevices** is a **NULL** string.
 
 <a href="" id="interruptstatus--reg-dword-"></a>**InterruptStatus** (REG\_DWORD)  
 Specifies the raw I/O address for the interrupt status register. Serial reads this value. The value is omitted if the port is a stand-alone port. The value cannot be zero if the port is on a multiport device. The default value of **InterruptStatus** is 0x00000000.
@@ -74,9 +73,9 @@ Specifies a Plug and Play device identifier for a Plug and Play device. Serial r
 <a href="" id="legacydiscovered--reg-dword-"></a>**LegacyDiscovered** (REG\_DWORD)  
 Boolean flag that indicates whether Serial has previously reported the device to the Plug and Play manager. Serial reads and sets this value. If **LegacyDiscovered** is nonzero, Serial has previously reported the device and does not report the device again. Otherwise, Serial reports the device and sets the entry value to 0x00000001.
 
- 
+ 
 
- 
+ 
 
 
 

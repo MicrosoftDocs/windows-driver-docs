@@ -1,6 +1,5 @@
 ---
 title: IPrintOemUni3 COM Interface
-author: windows-driver-content
 description: IPrintOemUni3 COM Interface
 ms.assetid: 2b3a43fe-52f8-4cb2-993e-d8fcdc878e90
 keywords:
@@ -32,27 +31,27 @@ The following table lists and describes all of the methods provided by the `IPri
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IPrintOemUni3::DownloadPattern</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554201)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554201" data-raw-source="[&lt;strong&gt;IPrintOemUni3::DownloadPattern&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554201)"><strong>IPrintOemUni3::DownloadPattern</strong></a></p></td>
 <td><p>Enables a plug-in to download a pattern to a printer.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>IPrintOemUni3::GetPDEVAdjustment</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554205)</td>
-<td><p>Enables a plug-in to override specific [<em>PDEV</em>](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) settings.</p></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff554205" data-raw-source="[&lt;strong&gt;IPrintOemUni3::GetPDEVAdjustment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554205)"><strong>IPrintOemUni3::GetPDEVAdjustment</strong></a></td>
+<td><p>Enables a plug-in to override specific <a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev" data-raw-source="[&lt;em&gt;PDEV&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev)"><em>PDEV</em></a> settings.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>IPrintOemUni3::SetBandSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554209)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff554209" data-raw-source="[&lt;strong&gt;IPrintOemUni3::SetBandSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554209)"><strong>IPrintOemUni3::SetBandSize</strong></a></td>
 <td><p>Enables a plug-in to specify the desired band size on the printed output</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

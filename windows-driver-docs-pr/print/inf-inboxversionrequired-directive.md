@@ -1,6 +1,5 @@
 ---
 title: INF InboxVersionRequired Directive
-author: windows-driver-content
 description: INF InboxVersionRequired Directive
 ms.assetid: 75a07ca7-d279-4815-b644-10b58753f885
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ The following example shows how you set **InboxVersionRequired** to a specific v
 InboxVersionRequired=09/28/1999,5.00.2136.1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

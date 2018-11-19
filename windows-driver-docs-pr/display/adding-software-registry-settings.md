@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The INF file must add all software registry settings to the Plug and Play (PnP) software key as shown in the following example:
 
-```cpp
+```inf
 [Xxx.Mfg]
 "RADEON 8500/RADEON 8500LE (R200 LDDM)" = R200_R200, PCI\VEN_1002&DEV_514c&SUBSYS_003a1002
 
@@ -27,9 +27,9 @@ AddReg = R200_R200_SoftwareDeviceSettings
 DelReg = R200_RemoveDeviceSettings 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

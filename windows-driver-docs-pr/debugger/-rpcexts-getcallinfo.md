@@ -3,7 +3,6 @@ title: rpcexts.getcallinfo
 description: The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information.
 ms.assetid: 85957afe-f73e-4533-af5c-5ee55b35ac84
 keywords: ["rpcexts.getcallinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -131,9 +130,9 @@ Searching for call info ...
 
 For a similar example using the DbgRpc tool, see [Get RPC Call Information](get-rpc-call-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

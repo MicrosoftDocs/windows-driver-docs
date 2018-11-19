@@ -1,6 +1,5 @@
 ---
 title: Using a Driver-Supplied Spin Lock
-author: windows-driver-content
 description: Using a Driver-Supplied Spin Lock
 ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
@@ -190,9 +189,9 @@ The I/O manager always acquires the global cancel spin lock before it calls a *C
 
 For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
 
- 
+ 
 
- 
+ 
 
 
 

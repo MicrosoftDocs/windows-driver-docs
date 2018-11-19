@@ -1,6 +1,5 @@
 ---
 title: Offloaded Data Transfer
-author: windows-driver-content
 description: Offloaded Data Transfer
 ms.assetid: EDFA6AFB-7D14-44F8-A105-E74182D26398
 ms.date: 04/20/2017
@@ -58,7 +57,7 @@ After completing the offload read request, the copy manager prepares a represent
 | 4             | ROD Token Type |
 | 508           | ROD Token ID   |
 
- 
+ 
 
 Because the ROD token is granted and consumed only by the storage array, its format is opaque, unique, and highly secure. If the token is modified, not validated, or expired, the copy manager can invalidate the token during the offload write operation. The returned ROD token from the offload read operation has an inactive time-out value to indicate the number of seconds that the copy manager must keep the token valid for the next Write Using Token usage.
 
@@ -78,7 +77,7 @@ A client application can also perform the offload write operation with a well-kn
 | 2             | Well Known Pattern |
 | 506           | ROD Token ID       |
 
- 
+ 
 
 In an offload write with a well-known ROD token, a client application cannot use an offload read to request a well-known token. The copy manager verifies and maintains the well-known ROD tokens according to its own policy.
 
@@ -169,9 +168,9 @@ Data migration strategy plays an important role in the end result of a tiered st
 -   From the server system, the data migration application issues an offload read request to the source LUN and receives the token from the source LUN, and then issues an offload write request with the token to the destination LUN. The copy manager moves the data from the source LUN to the destination LUN across two different tier storage devices.
 -   When the data migration task is completed, the application deletes the data from the Tier1 storage device and reclaims the storage space.
 
- 
+ 
 
- 
+ 
 
 
 

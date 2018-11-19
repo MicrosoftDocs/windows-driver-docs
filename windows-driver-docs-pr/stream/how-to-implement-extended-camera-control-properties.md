@@ -1,6 +1,5 @@
 ---
 title: How To Implement Extended Camera Control Properties
-author: windows-driver-content
 description: Implementing extended camera control properties for a camera driver.
 ms.assetid: BF5B2F1F-AC1D-4ED1-B1FC-64E8FA1218DA
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ The camera driver should implement [extended camera control properties](extended
 
 **Note**  Because an extended property’s data size can be of arbitrary length, query the user-mode stack for the size of the data by passing a null buffer. A two-step process is needed: first the driver returns the required length, as shown in the example code, then the user-mode stack requests a proper buffer for the property data.
 
- 
+ 
 
 ## Driver implementation
 
@@ -302,9 +301,9 @@ CCaptureFilter::FocusRectHandler(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

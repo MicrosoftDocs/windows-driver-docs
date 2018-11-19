@@ -1,6 +1,5 @@
 ---
 title: Halftoning with Unidrv
-author: windows-driver-content
 description: Halftoning with Unidrv
 ms.assetid: 42d1ca77-f8af-4212-a5a7-fb147d86b689
 keywords:
@@ -24,9 +23,9 @@ Halftoning operations can be controlled by either GDI or driver software, or by 
 
 [Device-Supplied Halftoning](device-supplied-halftoning.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,9 +42,9 @@ NDIS supports the following WMI operations:
 
     Through NDIS, a WMI client can run a method that is associated with a data block, which corresponds to a single OID. WMI clients provide the information that NDIS requires to run the method. Method requests can be associated with miniport adapters, NDIS ports, or VCs. NDIS returns the resulting information after the method is successfully run.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -52,7 +52,7 @@ DeviceDescription = "My WDM device driver"
 
 **Note**  The preceding INF file fragment, only shows the **Version** section and the sections relevant to the [**AddProperty**](https://msdn.microsoft.com/library/windows/hardware/ff546318) directive.
 
- 
+ 
 
 The **%MfgName% = CompanyName** line entry in the **Manufacturer** section references the **CompanyName** section where the model and hardware ID (hw-id) of the audio adapter are provided. This section in an INF file, where model and hw-id information is provided, is called the *models section*. The actual title of the section is user-defined and in the preceding example it is **CompanyName**. For more information about the models section of an INF file, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).
 
@@ -68,9 +68,9 @@ For more information about the AddProperty directive, see [**INF AddProperty Dir
 
 The property name that corresponds to the property category GUID and property ID in the preceding INF file fragment is PKEY\_AudioDevice\_DontPersistControls.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -49,9 +49,9 @@ The INF files for display drivers that are written to the Windows Vista display
 
 The release of the Windows 7 operating system also introduces GPUView (GPUView.exe), which is a new development tool that monitors the performance of the graphics processing unit (GPU). For more information about GPUView, see [Using GPUView](using-gpuview.md).
 
- 
+ 
 
- 
+ 
 
 
 

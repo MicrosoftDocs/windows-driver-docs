@@ -3,7 +3,6 @@ title: .foreach
 description: The .foreach token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
 ms.assetid: 646c86c2-a436-43d6-b0d8-32dbd423120e
 keywords: [".foreach Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ Specifies one or more commands which will be executed for each token. Whenever t
 
 **Note**   When the string *Variable* appears within *OutCommands*, it must be surrounded by spaces. If it is adjacent to any other text -- even a parenthesis -- it will not be replaced by the current token value, unless you use the [**${ } (Alias Interpreter)**](-------alias-interpreter-.md) token.
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,21 +68,21 @@ When the output from *InCommands*, the *InString* string, or the *InFile* file i
 
 Here is an example of a **.foreach** statement that uses the [**dds**](dds--dps--dqs--display-words-and-symbols-.md) command on each token found in the file *myfile.txt*:
 
-```
+```dbgcmd
 0:000> .foreach /f ( place "g:\myfile.txt") { dds place } 
 ```
 
 The **/pS** and **/ps** flags can be used to pass only certain tokens to the specified *OutCommands*. For example, the following statement will skip the first two tokens in the *myfile.txt* file and then pass the third to [**dds**](dds--dps--dqs--display-words-and-symbols-.md). After each token that is passed, it will skip four tokens. The result is that **dds** will be used with the 3rd, 8th, 13th, 18th, and 23rd tokens, and so on:
 
-```
+```dbgcmd
 0:000> .foreach /pS 2 /ps 4 /f ( place "g:\myfile.txt") { dds place } 
 ```
 
 For more examples that use the **.foreach** token, see [Debugger Command Program Examples](debugger-command-program-examples.md).
 
- 
+ 
 
- 
+ 
 
 
 

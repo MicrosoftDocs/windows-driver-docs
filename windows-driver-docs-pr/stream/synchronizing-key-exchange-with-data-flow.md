@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Key Exchange with Data Flow
-author: windows-driver-content
 description: Synchronizing Key Exchange with Data Flow
 ms.assetid: 54abc258-d26a-4d42-a5aa-712cdae76b6d
 keywords:
@@ -26,9 +25,9 @@ The key exchange process may begin before all data from the previous key is proc
 
 If the decrypter can process a new key exchange while still using the old key, the DVD decoder minidriver should process the key exchange as it receives the properties. If the decrypter must wait until all movie data requiring the previous key has been processed, then the decrypter holds the SRB for the **Set** property. The decrypter uses the [**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567639) structure with the parameter **KS\_DVDCOPYSTATE\_INITIALIZE** or **KS\_DVDCOPYSTATE\_INITIALIZE\_TITLE** until it has received the **KS\_AM\_UseNewCSSKey** flag on all streams that are connected to it. After that, the DVD decoder minidriver processes all packets received until that point. This prevents using the incorrect key on the data.
 
- 
+ 
 
- 
+ 
 
 
 

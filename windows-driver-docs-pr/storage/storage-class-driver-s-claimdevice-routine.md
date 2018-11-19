@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's ClaimDevice Routine
-author: windows-driver-content
 description: Storage Class Driver's ClaimDevice Routine
 ms.assetid: 175b9be6-34a5-4d20-970c-aa9a6880c242
 keywords:
@@ -28,9 +27,9 @@ When the IRP completes, *ClaimDevice* should release the reference to the device
 
 A *ClaimDevice* routine can serve double duty as a routine to be called from a class driver's *RemoveDevice* routine, or from *AddDevice* if the driver succeeds in claiming the device but cannot create a device object. In such cases, *ClaimDevice* sends an SRB with the **Function** value SRB\_FUNCTION\_RELEASE\_DEVICE.
 
- 
+ 
 
- 
+ 
 
 
 

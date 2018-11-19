@@ -2,6 +2,7 @@
 title: Device Metadata
 description: Device Metadata
 ms.assetid: b3546d53-d51f-46d2-9dfb-ec63da4809e2
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,24 +15,24 @@ When you submit a device for certification, you can also submit a device metadat
 ## <span id="Topics_in_this_section"></span><span id="topics_in_this_section"></span><span id="TOPICS_IN_THIS_SECTION"></span>Topics in this section
 
 
--   [Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+-   [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
 
--   [Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+-   [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
 
--   [Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
+-   [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-device-metadata-experiences)
 
--   [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
+-   [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)
 
--   [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
+-   [Create a mobile broadband experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-mobile-broadband-experience)
 
 ## <span id="related_topics"></span>Related topics
 
 
-- [Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
+- [Get Started with Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages)
 
- 
+ 
 
- 
+ 
 
 
 

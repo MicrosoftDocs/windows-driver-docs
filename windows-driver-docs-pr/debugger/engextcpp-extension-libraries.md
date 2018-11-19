@@ -3,7 +3,6 @@ title: EngExtCpp Extension Libraries
 description: EngExtCpp Extension Libraries
 ms.assetid: 8c7ce3f8-46c4-408c-aab5-00d654bddfcd
 keywords: ["EngExtCpp extensions, libraries"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ The [**EXT\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff54450
 
 The [**EXT\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff544508) class can contain a number of methods that use the **ExtProvideValueMethod** prototype. The methods can be used by the engine to evaluate some pseudo-registers provided by the extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ A DirectX 9.0 driver for a device that supports a nonstandard display mode must 
 
 Private formats and legacy code cannot be used to expose nonstandard desktop formats.
 
- 
+ 
 
- 
+ 
 
 
 

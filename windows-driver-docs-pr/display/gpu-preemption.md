@@ -30,21 +30,21 @@ A new GPU preemption model is available starting with Windows 8. In this model 
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics…Preemption Test</strong></p>
 <p><strong>Device.Graphics…FlipOnVSyncMmIo</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If long-running packets cannot be successfully preempted, high-priority GPU work, such as work required by the Desktop Window Manager (DWM), can be delayed, resulting in glitches during window transitions and animations. Also, long-running GPU packets that cannot be preempted can cause a TDR process to repeatedly reset the GPU, and eventually a system bugcheck can occur.
 
 **Note**  
 All WDDM 1.2 display miniport drivers must support the Windows 8 preemption model. However, when in operation, WDDM 1.2 drivers can also reject the Windows 8 preemption model and retain Windows 7 behavior by the Microsoft DirectX graphics kernel subsystem scheduler.
 
- 
+ 
 
 ## <span id="GPU_preemption_device_driver_interfaces__DDIs_"></span><span id="gpu_preemption_device_driver_interfaces__ddis_"></span><span id="GPU_PREEMPTION_DEVICE_DRIVER_INTERFACES__DDIS_"></span>GPU preemption device driver interfaces (DDIs)
 
@@ -98,9 +98,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

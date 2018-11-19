@@ -1,6 +1,5 @@
 ---
 title: DispatchPnP Routines
-author: windows-driver-content
 description: DispatchPnP Routines
 ms.assetid: 909d99ac-5bd3-4b12-bfb4-79713cf2a156
 keywords: ["dispatch routines WDK kernel , DispatchPnP routine", "DispatchPnP routine", "PnP dispatch routines WDK kernel", "IRPs WDK kernel , Plug and Play dispatch routines", "Plug and Play dispatch routines WDK kernel", "IRP_MJ_PNP I/O function code"]
@@ -58,9 +57,9 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 You should test your drivers with a checked build of the operating system. The checked build of the system verifies whether a driver follows many of the PnP rules listed above.
 
- 
+ 
 
- 
+ 
 
 
 

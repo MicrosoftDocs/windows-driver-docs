@@ -1,6 +1,5 @@
 ---
 title: The radio-manager file list
-author: windows-driver-content
 description: The following table describes the files that are found in the radio manager DLL.
 ms.assetid: 70A8B11F-89FF-49E3-933E-2BB66D5E1BF6
 ms.date: 04/20/2017
@@ -31,11 +30,11 @@ The following table describes the files that are found in the radio manager DLL.
 | SampleInstanceCollection.cpp | Implementation details for the Sample Instance Collection. Important concepts include: - Radio Instance discovery and retrieval                                                                                                             |
 | RadioMgr\_interface.cpp      | Helper source file to include the MIDL-generated files.                                                                                                                                                                                     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

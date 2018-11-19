@@ -50,7 +50,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 &gt; \[!Note\]
 &gt;  Supported in Windows 7 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_OffloadRead"></span><span id="devicedsmaction_offloadread"></span><span id="DEVICEDSMACTION_OFFLOADREAD"></span>**DeviceDsmAction\_OffloadRead**
 (3 | DeviceDsmActionFlag\_NonDestructive)
@@ -61,7 +61,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_OffloadWrite"></span><span id="devicedsmaction_offloadwrite"></span><span id="DEVICEDSMACTION_OFFLOADWRITE"></span>**DeviceDsmAction\_OffloadWrite**
 4
@@ -72,7 +72,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_Allocation"></span><span id="devicedsmaction_allocation"></span><span id="DEVICEDSMACTION_ALLOCATION"></span>**DeviceDsmAction\_Allocation**
 (5 | DeviceDsmActionFlag\_NonDestructive)
@@ -83,7 +83,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_Repair"></span><span id="devicedsmaction_repair"></span><span id="DEVICEDSMACTION_REPAIR"></span>**DeviceDsmAction\_Repair**
 (6 | DeviceDsmActionFlag\_NonDestructive)
@@ -94,7 +94,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_Scrub"></span><span id="devicedsmaction_scrub"></span><span id="DEVICEDSMACTION_SCRUB"></span>**DeviceDsmAction\_Scrub**
 (7 | DeviceDsmActionFlag\_NonDestructive)
@@ -105,7 +105,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_DrtQuery"></span><span id="devicedsmaction_drtquery"></span><span id="DEVICEDSMACTION_DRTQUERY"></span>**DeviceDsmAction\_DrtQuery**
 (8 | DeviceDsmActionFlag\_NonDestructive)
@@ -116,7 +116,7 @@ The logical block range is specified, on input, in a single [**DEVICE\_DATA\_SET
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_DrtClear"></span><span id="devicedsmaction_drtclear"></span><span id="DEVICEDSMACTION_DRTCLEAR"></span>**DeviceDsmAction\_DrtClear**
 (9 | DeviceDsmActionFlag\_NonDestructive)
@@ -127,7 +127,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_DrtDisable"></span><span id="devicedsmaction_drtdisable"></span><span id="DEVICEDSMACTION_DRTDISABLE"></span>**DeviceDsmAction\_DrtDisable**
 (10 | DeviceDsmActionFlag\_NonDestructive)
@@ -138,7 +138,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_NvCache_Change_Priority"></span><span id="devicedsmaction_nvcache_change_priority"></span><span id="DEVICEDSMACTION_NVCACHE_CHANGE_PRIORITY"></span>**DeviceDsmAction\_NvCache\_Change\_Priority**
 (14 | DeviceDsmActionFlag\_NonDestructive)
@@ -160,7 +160,7 @@ Reserved bytes.
 &gt; \[!Note\]
 &gt;  Supported in Windows 8.1 and later versions of Windows.
 
- 
+ 
 
 <span id="DeviceDsmAction_NvCache_Evict"></span><span id="devicedsmaction_nvcache_evict"></span><span id="DEVICEDSMACTION_NVCACHE_EVICT"></span>**DeviceDsmAction\_NvCache\_Evict**
 (15 | DeviceDsmActionFlag\_NonDestructive)
@@ -173,7 +173,7 @@ The **DeviceDsmAction\_NvCache\_Evict** action is executed synchronously. No oth
 &gt; \[!Note\]
 &gt;  Supported in Windows 8.1 and later versions of Windows.
 
- 
+ 
 
 Remarks
 -------
@@ -183,7 +183,7 @@ If a bitwise **OR** of the **DEVICE\_DATA\_MANAGEMENT\_SET\_ACTION** constant va
 &gt; \[!Note\]
 &gt;  Before it forwards the [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573) request, the driver still performs the normal processing of the block of data set ranges that are specified in the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure. This block is located at **DataSetRangesOffset** and consists of one or more contiguous entries formatted as [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structures. The length, in bytes, of the data set ranges is set in the **DataSetRangesLength** member of **DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**.
 
- 
+ 
 
 Requirements
 ------------
@@ -214,9 +214,9 @@ Requirements
 
 [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573)
 
- 
+ 
 
- 
+ 
 
 
 

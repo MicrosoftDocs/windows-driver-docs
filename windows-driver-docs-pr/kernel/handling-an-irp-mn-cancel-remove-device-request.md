@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
-author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
 ms.assetid: 3382c47d-6ac8-409e-b558-ad2f2ae83715
 keywords: ["IRP_MN_CANCEL_REMOVE_DEVICE", "spurious cancel-remove requests WDK PnP"]
@@ -44,9 +43,9 @@ A driver handles an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request with a procedure
 
 A driver might receive a spurious cancel-remove request when the device is started and active. This can occur, for example, if the driver (or a driver higher in the device stack) failed an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request. When a device is started and active, a driver simply succeeds a spurious cancel-remove request for the device.
 
- 
+ 
 
- 
+ 
 
 
 

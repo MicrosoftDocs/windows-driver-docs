@@ -31,9 +31,9 @@ From the perspective of an offload target, a forward operation is initiated when
 
 For more information about forwarding data from an offload target, see [*MiniportTcpOffloadForward*](https://msdn.microsoft.com/library/windows/hardware/ff559458). For more information about completing a forward operation, see [**NdisTcpOffloadForwardComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564597).
 
- 
+ 
 
- 
+ 
 
 
 

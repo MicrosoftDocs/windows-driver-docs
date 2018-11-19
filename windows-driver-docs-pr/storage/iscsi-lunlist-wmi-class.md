@@ -28,9 +28,9 @@ class ISCSI_LUNList {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LUNList**](https://msdn.microsoft.com/library/windows/hardware/ff561544) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

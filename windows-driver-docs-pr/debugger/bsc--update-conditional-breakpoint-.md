@@ -3,7 +3,6 @@ title: bsc (Update Conditional Breakpoint)
 description: The bsc command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
 ms.assetid: 4d491797-3ba2-4a63-a575-67df39484bcf
 keywords: ["bsc (Update Conditional Breakpoint) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -64,7 +63,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,13 +76,13 @@ If the *CommandString* is not specified, any commands already set on the breakpo
 
 The same effect can be achieved by using the [**bs (Update Breakpoint Command)**](bs--update-breakpoint-command-.md) command with the following syntax:
 
-```
+```dbgcmd
 bs ID "j Condition 'CommandString'; 'gc'"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

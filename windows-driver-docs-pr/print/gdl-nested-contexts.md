@@ -1,6 +1,5 @@
 ---
 title: GDL Nested Contexts
-author: windows-driver-content
 description: GDL Nested Contexts
 ms.assetid: c679937a-fa36-487a-84f2-f61a7ef0198e
 keywords:
@@ -50,9 +49,9 @@ The entire contents of a nested context is treated as part of the [value](gdl-va
 *KeywordC:  "the small brown fox" ]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Registry Entries for SCSI Miniport Drivers
-author: windows-driver-content
 description: Registry Entries for SCSI Miniport Drivers
 ms.assetid: bff5c004-7115-4436-b233-9d1d89643b23
 keywords:
@@ -34,7 +33,7 @@ The following registry entries allow you to configure the behavior of the port d
         -   Otherwise, if the disk global timeout registry (this key) is set, this value is honored by the storage class driver.
         -   Otherwise, a default value of 10 seconds is used by the storage class driver.
 
-         
+         
 
     -   Operating system version: This feature is available in all versions of the Windows operating systems.
 
@@ -61,9 +60,9 @@ The following registry entries allow you to configure the behavior of the port d
     -   Meaning: A value of 1 indicates that the port driver will create an "initiator logical unit," so that higher-level drivers can send certain requests to the port driver even though there is no actual hardware device connected to the adapter or the connected device is not visible to the system. Sometimes it is necessary to configure a device's operating parameters or update its firmware before it will be visible to the system. Prior to Windows Server 2003, it was not possible to instruct the port driver to update firmware for a device unless the port driver had at least one logical unit in its device stack. Some vendors attempted to remedy this deficiency by adding so-called "pseudo-LUNs" to the adapter's stack, but this created problems for setup and disk management, and occasionally such solutions would cause the configuration manager to prompt the user for a driver for a non-existent device. With the new "initiator logical unit" feature, it is no longer necessary to use these work-around techniques. By setting **CreateInitiatorLU** to 1 in the registry, you can send IOCTLs and WMI requests to the port driver whether it has devices attached that are visible to the operating system. Another use of the "initiator logical unit" feature is to allow communication with fibre channel adapters that have a purely administrative function and no attached devices.
     -   Operating system version: This feature is available in Windows Server 2003 and later operating systems. The value of this registry value only affects the functionality of the SCSI Port miniport drivers. Storport miniport driver always permit access to adapter objects, even when no device is attached to the adapter.
 
- 
+ 
 
- 
+ 
 
 
 

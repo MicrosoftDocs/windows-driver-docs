@@ -1,6 +1,5 @@
 ---
 title: Using EnumFeatures
-author: windows-driver-content
 description: Using EnumFeatures
 ms.assetid: 4a87cedf-066a-445b-ad3e-71699c9d3e07
 keywords:
@@ -25,13 +24,13 @@ Pscript handles certain features in a special way. If more than one of \*Resolut
 
 **Note**   Some driver features (such as %Mirroring) are always supported, while other driver features are supported only under certain conditions. For example, when spooler EMF spooling is disabled on Windows 2000 and later operating system releases, the %PageOrder feature will not be supported. These unsupported driver features will not appear in the output keyword list of **EnumFeatures**.
 
- 
+ 
 
 For driver features, the keyword prefix "%" is included in the output. For PPD features, the keyword prefix "\*" is not included in the output.
 
- 
+ 
 
- 
+ 
 
 
 

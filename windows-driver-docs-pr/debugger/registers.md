@@ -3,7 +3,6 @@ title: Registers
 description: Registers
 ms.assetid: fa334c9f-46c6-4288-95ce-43128fff7f03
 keywords: ["memory access, registers", "registers"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -52,7 +51,7 @@ Each pseudo-register has an index. The index is a number between zero and the nu
 
 **Note**   Not all of the pseudo-registers are available in all debugging sessions or at all times in a particular session.
 
- 
+ 
 
 ### <span id="displaying_registers"></span><span id="DISPLAYING_REGISTERS"></span>Displaying Registers
 
@@ -62,9 +61,9 @@ The methods [**OutputRegisters**](https://msdn.microsoft.com/library/windows/har
 
 Whenever the values of the target's registers change, the engine will call the [**IDebugEventCallbacks::ChangeDebuggeeState**](https://msdn.microsoft.com/library/windows/hardware/ff550678) callback method with the parameter *Flags* set to DEBUG\_CDS\_REGISTERS.
 
- 
+ 
 
- 
+ 
 
 
 

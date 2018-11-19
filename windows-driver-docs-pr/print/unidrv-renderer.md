@@ -1,6 +1,5 @@
 ---
 title: Unidrv Renderer
-author: windows-driver-content
 description: Unidrv Renderer
 ms.assetid: 5c19eb9c-149b-4587-a12d-f01164231b51
 keywords:
@@ -23,9 +22,9 @@ The renderer is also responsible for sending rendered image data, along with pri
 
 You can modify Unidrv's rendering operations by providing a [rendering plug-in](rendering-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -81,7 +81,7 @@ The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderM
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_ProcAmpControlBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564015) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564015" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564015)"><strong>DXVA_ProcAmpControlBlt</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -90,7 +90,7 @@ The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderM
 </tbody>
 </table>
 
- 
+ 
 
 For the DirectX VA device used for ProcAmp control, RenderMoComp is called without calling the display driver-supplied BeginMoCompFrame or EndMoCompFrame function.
 
@@ -107,9 +107,9 @@ For the DirectX VA device used for ProcAmp control, RenderMoComp is called witho
 
 [**DD\_CREATEMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550529)
 
- 
+ 
 
- 
+ 
 
 
 

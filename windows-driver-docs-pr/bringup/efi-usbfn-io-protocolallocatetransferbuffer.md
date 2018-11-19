@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 ms.assetid: dbaa4f18-97b5-4867-9e03-de19b2253722
 ms.date: 04/20/2017
@@ -71,7 +70,7 @@ This function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -81,9 +80,9 @@ This function returns the following values:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

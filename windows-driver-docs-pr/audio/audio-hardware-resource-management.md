@@ -2,27 +2,24 @@
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
 ms.assetid: 6E94529E-F3F0-4DC5-AF8B-F896A4F991E3
-ms.date: 04/20/2017
+ms.date: 10/29/2017
 ms.localizationpriority: medium
 ---
 
 # Audio Hardware Resource Management
 
-
 Windows 10 includes the ability to express concurrency constraints using and XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
 
 **Note**   This mechanism is only available in phones and tablets.
-
- 
-
+ 
 One challenge with creating a good audio experience on a low cost mobile device, is that some devices have various concurrency constraints. For example, it is possible that the device can only play up to 6 audio streams concurrently and supports only 2 offload streams. When there is an active phone call on a mobile device, it is possible that the device supports only 2 audio streams. When the device is capturing audio, the device can only play up to 4 audio streams.
 
 Windows 10 includes a mechanism to express concurrency constraints to insure that high-priority audio streams and cellular phone calls will be able to play. If the system does not have enough resources, then low priority streams are terminated. This mechanism is only available in phones and tablets not on desktops or laptops.
 
 To specify constraints complete these two steps.
 
--   Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify_concurrency_constraints).
--   Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry_key_configuration).
+- Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify_concurrency_constraints).
+- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry_key_configuration).
 
 ## <span id="Specify_Concurrency_Constraints"></span><span id="specify_concurrency_constraints"></span><span id="SPECIFY_CONCURRENCY_CONSTRAINTS"></span>Specify Concurrency Resource Constraints
 
@@ -142,7 +139,7 @@ The following table summarizes the render audio stream priorities, listed from h
 | Other                    | 13  |
 | Alerts                   | 14  |
 
- 
+ 
 
 The following table summarizes the capture audio stream priorities, listed from highest to lowest priority.
 
@@ -170,32 +167,30 @@ The following table summarizes the capture audio stream priorities, listed from 
 | Ringtone                 | 15  |
 | System                   | 15  |
 
- 
+ 
 
 **Examples**
 
--   Example 1: The user is talking over Skype, using Communications Render and Capture streams. They start a game, which attempts to create a Game Effects stream. If there aren’t enough resources available, the Game Effects stream creation will fail.
--   Example 2: The user is playing music. They start an application that creates a Speech stream. If there aren’t enough resources available, the music stream will be terminated and the Speech stream creation will succeed.
+- Example 1: The user is talking over Skype, using Communications Render and Capture streams. They start a game, which attempts to create a Game Effects stream. If there aren’t enough resources available, the Game Effects stream creation will fail.
+
+- Example 2: The user is playing music. They start an application that creates a Speech stream. If there aren’t enough resources available, the music stream will be terminated and the Speech stream creation will succeed.
 
 ## <span id="Registry_Key_Configuration"></span><span id="registry_key_configuration"></span><span id="REGISTRY_KEY_CONFIGURATION"></span>Registry Key Configuration
 
-
-The full path to the concurrency constraints XML file needs to be specified in the following registry key.
+The full path to the concurrency constraints XML file needs to be specified in the following registry key. 
 
 ```inf
-HKLM\System\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
+HKR\SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
 ```
 
-In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file or preferably through the phone Package schema as shown here.
+The path is relative to the driver install. In the driver INF installation the constraint XML file needs to be copied and the following line would be added to register it with the system:
 
-```xml
-<RegKeys> 
-        <RegKey KeyName="$(hklm.system)\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig"> 
-        <RegValue Name="AudioResourceConstraintExamplePath" Type="REG_SZ" 
-                        Value="C:\\Windows\\System32\\AudioResourceConstraintsExample.xml" /> 
-        </RegKey> 
-</RegKeys>
+```inf
+HKR,SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig,<Name of the constraint>,,<Path to the constraint>
 ```
+
+In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file.
+
 
 ## <span id="Example_XML_Constraints_File"></span><span id="example_xml_constraints_file"></span><span id="EXAMPLE_XML_CONSTRAINTS_FILE"></span>Example XML Constraints File
 
@@ -1630,9 +1625,9 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
 </ConstraintModel>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

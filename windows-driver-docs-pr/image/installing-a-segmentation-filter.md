@@ -1,6 +1,5 @@
 ---
 title: Installing a Segmentation Filter
-author: windows-driver-content
 description: Installing a Segmentation Filter
 ms.assetid: 39f96c16-2408-460c-8aa3-08b6a6584bef
 ms.date: 04/20/2017
@@ -46,9 +45,9 @@ The COM **ThreadingModel** must be **Both**.
 
 For more information about INF files, see [INF Files for WIA Devices](inf-files-for-wia-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

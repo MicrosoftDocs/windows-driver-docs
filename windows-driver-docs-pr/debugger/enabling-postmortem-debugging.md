@@ -3,7 +3,6 @@ title: Enabling Postmortem Debugging
 description: This topic covers how to enable postmortem debugging
 ms.assetid: ae116b60-fed2-4e1d-98a8-9fe83f460c50
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
-ms.author: domars
 ms.date: 09/17/2018
 ms.localizationpriority: medium
 ---
@@ -80,14 +79,14 @@ When you manually edit the registry, do so very carefully, because improper chan
 
 **Example Command Line Usage**
 
-Many postmortem debuggers use a command line that includes -p and -e switches to indicate the parameters are a PID and Event (respectively). For example, installing WinDbg via ```windbg.exe -I``` creates the following values:
+Many postmortem debuggers use a command line that includes -p and -e switches to indicate the parameters are a PID and Event (respectively). For example, installing WinDbg via `windbg.exe -I` creates the following values:
 
 ```console
 Debugger = "<Path>\WinDbg -p %ld -e %ld -g"
 Auto = 1
 ```
 
-There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) using ```procdump.exe -i``` creates the following values with no switches between the WER %ld %ld %p parameters:
+There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) using `procdump.exe -i` creates the following values with no switches between the WER %ld %ld %p parameters:
 
 ```console
 Debugger = "<Path>\procdump.exe" -accepteula -j "c:\Dumps" %ld %ld %p
@@ -102,7 +101,7 @@ On a 64-bit platform, the Debugger (REG\_SZ) and Auto (REG\_SZ) registry values 
 
 On a 64-bit platform, use a 32-bit post-mortem debugger for 32-bit processes and a 64-bit debugger for 64-bit processes. This avoids a 64-bit debugger focusing on the WOW64 threads, instead of the 32-bit threads, in a 32-bit process.
 
-For many postmortem debuggers, including the Debugging Tools for Windows postmortem debuggers, this involves running the installation command twice; once with the x86 version and once with the x64 version. For example, to use WinDbg as the interactive postmortem debugger, the ```windbg.exe -I``` command would be run twice, once for each version.
+For many postmortem debuggers, including the Debugging Tools for Windows postmortem debuggers, this involves running the installation command twice; once with the x86 version and once with the x64 version. For example, to use WinDbg as the interactive postmortem debugger, the `windbg.exe -I` command would be run twice, once for each version.
 
 64-bit Installation:
 
@@ -112,7 +111,7 @@ C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe –I
 
 This updates the registry key with these values.
 
-```console
+```reg
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug
 Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe" -p %ld -e %ld –g
 ```
@@ -125,9 +124,10 @@ C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe –I
 
 This updates the registry key with these values.
 
-    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
-    Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe" -p %ld -e %ld –g
-
+```reg
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
+Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe" -p %ld -e %ld –g
+```
 
 ## <span id="Configuring"></span><span id="configuring"></span><span id="CONFIGURING"></span>Configuring Post Mortem Debuggers
 
@@ -138,14 +138,14 @@ The Debugging Tools for Windows debuggers all support being set as the postmorte
 
 **WinDbg**
 
-To set the postmortem debugger to WinDbg, run ```windbg -I```. (The ```I``` must be capitalized.) This command will display a success or failure message after it is used. To work with both 32 and 64 bit applications, run the command for the both the 64 and 32 debuggers.
+To set the postmortem debugger to WinDbg, run `windbg -I`. (The `I` must be capitalized.) This command will display a success or failure message after it is used. To work with both 32 and 64 bit applications, run the command for the both the 64 and 32 debuggers.
 
 ```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe –I
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe –I
 ```
 
-This is how the AeDebug registry entry will be configured when ```windbg -I``` is run.
+This is how the AeDebug registry entry will be configured when `windbg -I` is run.
 
 ```console
 Debugger = "<Path>\WinDbg -p %ld -e %ld -g"
@@ -163,7 +163,7 @@ There is a significant issue passing the g (Go) command. The issue with this app
 
 To avoid this issue, use .jdinfo or .dump /j. This approach allows the debugger to be in the context of the code failure of interest. For more information, see [Just In Time (JIT) Debugging](#jit) later in this topic.
 
- 
+ 
 
 **CDB**
 
@@ -203,7 +203,7 @@ This command display nothing if it succeeds, and an error to a new console windo
 
 **Note**  Because the -p %ld -e %ld -g parameters always appear first on the command line of the postmortem debugger, you should not use the -iaec switch to specify the -server parameter because -server will not work unless it appears first on the command line. To install a postmortem debugger that includes this parameter, you must edit the registry manually.
 
- 
+ 
 
 ### <span id="Visual_Studio_JIT_Debugger"></span><span id="visual_studio_jit_debugger"></span><span id="VISUAL_STUDIO_JIT_DEBUGGER"></span>Visual Studio JIT Debugger
 
@@ -223,7 +223,7 @@ Like the [**.dump**](-dump--create-dump-file-.md) WinDbg command, ProcDump is ab
 
 ProcDump exits when the dump file capture completes, WER then reports the failure and the faulting process is terminated.
 
-Use ```procdump -i``` to install procdump and -u to uninstall ProcDump for both the 32 and 64 bit post mortem debugging.
+Use `procdump -i` to install procdump and -u to uninstall ProcDump for both the 32 and 64 bit post mortem debugging.
 
 ```console
 <Path>\procdump.exe -i
@@ -326,9 +326,9 @@ This example would allow WER to report the failure after WinDbg captures a dump.
 
 If you are considering enabling postmortem debugging on a computer that you share with other people, see [Security During Postmortem Debugging](security-during-postmortem-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Filter Manager Concepts
-author: windows-driver-content
 description: Filter Manager Concepts
 ms.assetid: 5b11671f-02fd-4d0e-8199-c345bbf2591c
 keywords:
@@ -41,7 +40,7 @@ The filter manager cannot attach a minifilter between two attached legacy filter
 
 **Important**  Always verify interoperability of legacy filters with minifilters or consider replacing legacy filters with minifilters. For more information, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
- 
+ 
 
 If a minifilter driver is unloaded and reloaded, it is reloaded at the same altitude in the same frame from which it was unloaded.
 
@@ -49,9 +48,9 @@ The following figure shows a simplified I/O stack with a two filter manager fram
 
 ![diagram illustrating a simplified i/o stack with two filter manager frames, minifilter driver instances, and a legacy filter driver](images/filter-manager-architecture-2.gif)
 
- 
+ 
 
- 
+ 
 
 
 

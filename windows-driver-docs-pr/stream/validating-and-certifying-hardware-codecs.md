@@ -1,6 +1,5 @@
 ---
 title: Validating and Certifying Hardware Codecs
-author: windows-driver-content
 description: Validating and Certifying Hardware Codecs
 ms.assetid: 8cf96aac-78ba-41f0-b9d0-48948f704262
 keywords:

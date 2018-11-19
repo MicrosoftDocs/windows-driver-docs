@@ -1,6 +1,5 @@
 ---
 title: Framework File Object
-author: windows-driver-content
 description: Framework File Object
 ms.assetid: dd8215ee-2c10-4e49-9d7f-d2295bf219da
 keywords:
@@ -21,15 +20,15 @@ The framework file object is exposed to drivers by the [IWDFFile](https://msdn.m
 
 **Note**   All requests passed to UMDF drivers are associated with file objects. However, requests that are passed to [WDM](https://msdn.microsoft.com/library/windows/hardware/ff565698) and [KMDF](https://msdn.microsoft.com/library/windows/hardware/ff544296) drivers are sometimes not associated with file objects.
 
- 
+ 
 
 A UMDF driver can call the [**IWDFIoRequest::GetFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff559099) method to obtain the file object associated with a request.
 
 When your driver calls [**GetFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff559099), the framework increments the reference count on the interface. Your driver is responsible for releasing the reference when finished with the interface pointer. To do so, either use a smart pointer that automatically decrements the reference count when the object goes out of context, or call [**Release**](https://msdn.microsoft.com/library/windows/desktop/ms682317) on the interface when finished with it. For a code example that shows how to use a smart pointer, see **GetFileObject**.
 
- 
+ 
 
- 
+ 
 
 
 

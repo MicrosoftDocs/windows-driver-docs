@@ -38,9 +38,9 @@ Two major objectives have guided the design and development of NDIS 6.0:
     -   A standard interface for obtaining management information
     -   A filter driver model to replace filter intermediate drivers
 
- 
+ 
 
- 
+ 
 
 
 

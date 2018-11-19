@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_CCMP_KEY
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_CCMP_KEY is a TLV that contains CCMP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEY.
 ms.assetid: A4754EAC-AA54-45CC-A7C5-B78A2757E012
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|-------------------------------------------|
 | UINT8\[\] | Specifies CCMP cipher algorithm key data. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -36,9 +36,9 @@ NDIS calls the [*MiniportCancelSend*](https://msdn.microsoft.com/library/windows
 
 In its *ProtocolSendNetBufferListsComplete* function, a protocol driver can call NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID with *CancelId* set to **NULL**. This prevents the NET\_BUFFER\_LIST from inadvertently being used again with a stale cancellation ID.
 
- 
+ 
 
- 
+ 
 
 
 

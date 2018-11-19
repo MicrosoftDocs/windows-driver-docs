@@ -3,7 +3,6 @@ title: Debug Run to Cursor
 description: Debug Run to Cursor
 ms.assetid: 3d3d017b-e106-4eec-be0a-46c0db658744
 keywords: ["Debug Run to Cursor", "controlling the target, Debug Run to Cursor"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ This command is equivalent to pressing F7 or CTRL+F10 or clicking the **Run to c
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

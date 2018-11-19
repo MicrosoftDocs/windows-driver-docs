@@ -30,9 +30,9 @@ This section contains general information about the design of display drivers fo
 
 [Return Values for DirectDraw](return-values-for-directdraw.md)
 
- 
+ 
 
- 
+ 
 
 
 

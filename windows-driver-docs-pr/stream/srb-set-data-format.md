@@ -35,9 +35,9 @@ The class driver passes the new data format in the **CommandData**.**OpenFormat*
 
 For more information about data formats, see the [Stream Class Minidriver Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff568277). Also see [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
 
- 
+ 
 
- 
+ 
 
 
 

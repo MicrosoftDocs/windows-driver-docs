@@ -15,13 +15,13 @@ This topic describes how to add the experience ID to your UWP device app. The *e
 
 **Tip**  You can skip this step if your app is specified as a privileged app and it is not configured for automatic installation.
 
- 
+ 
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 **Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
- 
+ 
 
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
@@ -36,7 +36,7 @@ The experience ID is specified in the StoreManifest.xml file. This ID links your
 **Important**  
 The StoreManifest.xml file must be stored in the root folder of your app's project, and not in the solution’s root folder.
 
- 
+ 
 
 **To add StoreManifest.xml to your project**
 
@@ -52,9 +52,9 @@ For more info about the StoreManifest.xml file, see [StoreManifest schema refere
 
 [Step 4: Test device metadata](step-4--test-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

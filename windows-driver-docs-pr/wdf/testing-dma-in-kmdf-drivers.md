@@ -1,6 +1,5 @@
 ---
 title: Testing DMA in KMDF Drivers
-author: windows-driver-content
 description: Testing DMA in KMDF Drivers
 ms.assetid: 1D37F8B3-EAFC-4BB0-988D-64ADF30DBC40
 ms.date: 04/20/2017
@@ -32,9 +31,9 @@ The following tools can help debug framework-based drivers that support DMA:
     <a href="" id="-wdfdmatransaction"></a>[**!wdfdmatransaction**](https://msdn.microsoft.com/library/windows/hardware/ff565721)  
     Dumps information about a given transaction object.
 
- 
+ 
 
- 
+ 
 
 
 

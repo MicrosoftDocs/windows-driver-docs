@@ -1,6 +1,5 @@
 ---
 title: Driver Role in Power Management
-author: windows-driver-content
 description: Driver Role in Power Management
 ms.assetid: 24b55880-e767-4f18-977e-c4a93332b909
 keywords: ["power management WDK kernel , driver roles in", "system power states WDK kernel , driver roles", "device power states WDK kernel", "driver power support roles WDk kernel"]
@@ -30,9 +29,9 @@ In addition, drivers might perform certain power tasks, such as powering on a de
 
 For more information, see [Power Management Responsibilities for Drivers](power-management-responsibilities-for-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

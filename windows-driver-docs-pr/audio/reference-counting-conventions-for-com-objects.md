@@ -37,9 +37,9 @@ For example, the [**IMiniportWaveCyclic::NewStream**](https://msdn.microsoft.com
 
 For a description of the unconventional reference counting that this method performs on its *DmaChannel* output parameter, see [**IMiniportWavePci::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536735).
 
- 
+ 
 
- 
+ 
 
 
 

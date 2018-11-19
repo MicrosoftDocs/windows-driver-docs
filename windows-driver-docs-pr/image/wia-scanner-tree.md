@@ -1,6 +1,5 @@
 ---
 title: WIA Scanner Tree
-author: windows-driver-content
 description: WIA Scanner Tree
 ms.assetid: bd1452b9-1926-4dd6-b94c-e44f07573266
 ms.date: 04/20/2017
@@ -43,9 +42,9 @@ As an example, suppose that an application intends to perform a duplex scan of t
 
 It is important to remember that if the device has an ADF, it must support the ADF properties.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_ACTION_FRAME_RESPONSE_PARAMETERS is a TLV that contains Wi-Fi Direct Action Frame response parameters.
 ms.assetid: 2DFF00A6-FDE2-43EF-93C2-EEA3DBC00D52
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                                                  | The send timeout. Specifies the maximum time, in milliseconds, to send this action frame.                                            |
 | UINT32                                                                  | The post-ACK dwell time. Specifies the time to remain on listen channel, in milliseconds, after the incoming packet is acknowledged. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

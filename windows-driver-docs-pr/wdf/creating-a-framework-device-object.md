@@ -1,6 +1,5 @@
 ---
 title: Creating a Framework Device Object
-author: windows-driver-content
 description: Creating a Framework Device Object
 ms.assetid: 25023c19-a153-4bd4-9fb6-3a1bf85860aa
 keywords:
@@ -40,9 +39,9 @@ For more information about creating framework device objects, see the following 
 
 -   [Creating Device Objects in a Bus Driver](creating-device-objects-in-a-bus-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

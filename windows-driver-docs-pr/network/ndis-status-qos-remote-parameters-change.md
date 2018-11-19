@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE
-author: windows-driver-content
 description: The miniport driver that supports NDIS Quality of Service (QoS) issues an NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE status indication when its remote NDIS QoS parameters are either received from a peer for the first time or change later.
 ms.assetid: 3DA5F4FA-193F-4716-8678-7B6FB833E68E
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ When the miniport driver makes this status indication, it sets the **StatusBuffe
 
 **Note**  This NDIS status indication is valid only for miniport drivers that support the IEEE 802.1 Data Center Bridging (DCB) interface.
 
- 
+ 
 
 Remarks
 -------
@@ -35,17 +34,17 @@ The miniport driver must follow these guidelines for issuing an **NDIS\_STATUS\_
 
     **Note**  The miniport driver must issue this status indication if the network adapter receives remote QoS parameter settings from a peer before the driver's local QoS parameters are set. For more information, see [Setting Local NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh440225).
 
-     
+     
 
 -   After this initial status indication, the miniport driver must only issue an **NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE** status indication when it determines a change in the QoS settings on the remote peer.
 
     **Note**  Miniport drivers must not issue an **NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE** status indication if there have been no changes to the remote NDIS QoS parameters. If the driver does make this type of status indication, NDIS may not pass the indication to overlying drivers.
 
-     
+     
 
 **Note**  Overlying drivers can use the **NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE** status indication to determine the remote NDIS QoS parameters. Alternatively, these drivers can also issue OID query requests of [OID\_QOS\_REMOTE\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451841) to obtain the remote NDIS QoS parameters at any time.
 
- 
+ 
 
 For more information on how the miniport driver issues an **NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE** status indication, see [Indicating Changes to the Remote NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh406724).
 
@@ -81,9 +80,9 @@ Requirements
 
 [OID\_QOS\_REMOTE\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451841)
 
- 
+ 
 
- 
+ 
 
 
 

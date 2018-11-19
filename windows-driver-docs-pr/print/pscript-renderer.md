@@ -1,6 +1,5 @@
 ---
 title: Pscript Renderer
-author: windows-driver-content
 description: Pscript Renderer
 ms.assetid: b1707a83-c5c9-4578-8603-7c19de4960ed
 keywords:
@@ -23,9 +22,9 @@ The renderer is also responsible for sending text rendered image data, along wit
 
 You can modify Pscript's rendering operations by providing a [rendering plug-in](rendering-plug-ins.md), which is described in the section entitled [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

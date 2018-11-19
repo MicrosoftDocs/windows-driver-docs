@@ -1,6 +1,5 @@
 ---
 title: Obtaining HID Reports by User-Mode Applications
-author: windows-driver-content
 description: This topic discusses the obtaining of HID input reports or HID feature reports, by user-mode applications using ReadFile or the HidD_GetXxx routines.
 ms.assetid: 28f560dd-b919-4652-93f6-691051a0ffbe
 ms.localizationpriority: medium
@@ -32,9 +31,9 @@ Returns a feature report from a HID collection.
 
 An application can request the return of a specific report. To retrieve a specific report using these routines, the application allocates the report output buffer, zero-initializes the buffer, and sets the first byte in the buffer to the specific report ID. For more information, see [Initializing HID Reports](initializing-hid-reports.md).
 
- 
+ 
 
- 
+ 
 
 
 

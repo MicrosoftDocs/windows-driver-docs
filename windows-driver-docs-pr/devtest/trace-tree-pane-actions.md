@@ -49,9 +49,11 @@ You can perform the following actions in the **Trace Tree** pane:
     </tbody>
     </table>
 
-     
 
-    As you step through the source code elements in the **Trace Tree** pane, SDV automatically moves the cursor in the [Source Code pane](source-code-pane.md) to the line of source code that contains the element in the **Trace Tree** pane and displays the associated Boolean expressions in the [State pane](state-pane.md).
+
+
+As you step through the source code elements in the **Trace Tree** pane, SDV automatically moves the cursor in the [Source Code pane](source-code-pane.md) to the line of source code that contains the element in the **Trace Tree** pane and displays the associated Boolean expressions in the [State pane](state-pane.md).
+
 
 -   **Expand and collapse nodes**
 
@@ -66,9 +68,9 @@ You can perform the following actions in the **Trace Tree** pane:
 
 When you step through the trace, be aware of all collapsed nodes. The DOWN ARROW key skips all code that is within a collapsed node.
 
- 
 
- 
+
+
 
 
 

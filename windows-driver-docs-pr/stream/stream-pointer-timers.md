@@ -1,6 +1,5 @@
 ---
 title: Stream Pointer Timers
-author: windows-driver-content
 description: Stream Pointer Timers
 ms.assetid: 98413fc6-2b62-4c52-9ac4-bd2a3a60db60
 keywords:
@@ -21,9 +20,9 @@ To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](ht
 
 To cancel a timeout, call [**KsStreamPointerCancelTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff567128).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ These values of the *bDXVA\_Func* variable must be supported: 1 (picture decodin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigAlphaLoad_and_DXVA_ConfigAlphaCombine"></span><span id="restrictions_on_dxva_configalphaload_and_dxva_configalphacombine"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGALPHALOAD_AND_DXVA_CONFIGALPHACOMBINE"></span>Restrictions on DXVA\_ConfigAlphaLoad and DXVA\_ConfigAlphaCombine
 
@@ -65,16 +65,16 @@ These values of the *bDXVA\_Func* variable must be supported: 1 (picture decodin
 </tr>
 <tr class="even">
 <td align="left"><p><strong>bConfigDataType</strong> (DXVA_ConfigAlphaLoad)</p></td>
-<td align="left"><p>Zero, 1, or 3 (at the accelerator's discretion)</p></td>
+<td align="left"><p>Zero, 1, or 3 (at the accelerator&#39;s discretion)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

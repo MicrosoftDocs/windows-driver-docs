@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Render Module
-author: windows-driver-content
 description: XPSDrv Render Module
 ms.assetid: e844e320-bd3d-4855-bb47-fdfbdb157802
 keywords:
@@ -68,9 +67,9 @@ To develop an XPS driver, you must create the following components:
 
 You can also add [Print Ticket Support to the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md)
 
- 
+ 
 
- 
+ 
 
 
 

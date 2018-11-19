@@ -1,6 +1,5 @@
 ---
 title: Improved End-User Experience
-author: windows-driver-content
 description: Improved End-User Experience
 ms.assetid: d87062f2-2832-4443-b9f0-97e34f79c47f
 keywords:
@@ -22,9 +21,9 @@ Windows Vista introduces two new technologies to improve communication of device
 
 -   **Print Capabilities**. The XML-based Print Capabilities technology provides a way to publish configurable device capabilities, such as finishing options and page layout options. Printers can use PrintCapabilities to describe explicitly all user-configurable attributes of the device and the allowable settings for each attribute. The Print Schema framework makes it possible to precisely describe and efficiently compare device attributes. By using the keywords in the Print Schema Keywords document and the structure that is defined in the Print Schema framework, applications can use device capabilities more effectively.
 
- 
+ 
 
- 
+ 
 
 
 

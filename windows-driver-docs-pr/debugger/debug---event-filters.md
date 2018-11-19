@@ -3,7 +3,6 @@ title: Debug Event Filters
 description: Debug Event Filters
 ms.assetid: ffa1241a-8a75-44ac-94b7-608393cf4138
 keywords: ["Debug Event Filters", "exceptions, Debug Event Filters", "events, Debug Event Filters"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -38,9 +37,9 @@ If you want to set automatic commands that are executed if the event breaks into
 
 For more information about break status and handling status, all event codes, the default status for all events, and other methods of controlling this status, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

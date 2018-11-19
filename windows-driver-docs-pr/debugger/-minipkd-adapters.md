@@ -3,7 +3,6 @@ title: minipkd.adapters
 description: The minipkd.adapters extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter.
 ms.assetid: 8571b9ec-1ec9-4adb-8a65-5306e45c3aa6
 keywords: ["minipkd.adapters Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,7 +41,7 @@ The **!minipkd.adapters** extension displays all of the adapters that work with 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -98,11 +97,11 @@ The flags in the display are explained in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 Here is an example of the **!minipkd.adapters** display:
 
-```
+```dbgcmd
 0: kd> !minipkd.adapters
 Adapter \Driver\lp6nds35     DO 86334a70         DevExt 86334b28
 Adapter \Driver\adpu160m     DO 8633da70         DevExt 8633db28
@@ -115,15 +114,15 @@ Adapter \Driver\adpu160m     DO 86376040         DevExt 863760f8
 
 An error message similar to the following indicates that either the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols, or that Windows has not identified any adapters that work with the SCSI Port driver.
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
 If the [**!minipkd.help**](-minipkd-help.md) extension command returns help information successfully, the SCSI Port symbols are correct.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: body element
-author: windows-driver-content
 description: The required body element provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.
 ms.assetid: 3343c272-5090-4b60-ab04-08038d2583ff
 keywords: ["body element Print Devices"]
@@ -84,7 +83,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>parameter</strong>](parameter.md)</p></td>
+<td><p><a href="parameter.md" data-raw-source="[&lt;strong&gt;parameter&lt;/strong&gt;](parameter.md)"><strong>parameter</strong></a></p></td>
 <td><p></p>
 <p>An optional element that specifies text strings that substitute for parameters in a body text specification.</p></td>
 </tr>
@@ -107,12 +106,12 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message balloon on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>messageBoxUI</strong>](messageboxui.md)</p></td>
+<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message box on the client computer.</p></td>
 </tr>

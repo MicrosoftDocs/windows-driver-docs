@@ -19,9 +19,9 @@ The following property is available:
 <span id="KSPROPERTY_BDA_TABLE_SECTION"></span><span id="ksproperty_bda_table_section"></span>[**KSPROPERTY\_BDA\_TABLE\_SECTION**](ksproperty-bda-table-section.md)  
 Informs a node about the table section to use when delivering data on the node's output.
 
- 
+ 
 
- 
+ 
 
 
 

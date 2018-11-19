@@ -3,7 +3,6 @@ title: processfields
 description: The processfields extension displays the names and offsets of the fields within the executive process (EPROCESS) block.
 ms.assetid: d1d4c49e-3566-4cf6-8b08-656668c92d6c
 keywords: ["processfields Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!processfields** extension displays the names and offsets of the fields wi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -126,9 +125,9 @@ kd> !processfields
     Win32WindowStation:                0x1c4
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Raster Printing Attributes
-author: windows-driver-content
 description: Raster Printing Attributes
 ms.assetid: d0b73d5b-0e6e-4ad6-890a-a8b8b6d76424
 keywords:
@@ -24,9 +23,9 @@ Raster printing attributes are [general attributes](general-attributes.md) that 
 
 [Preanalysis Infrastructure](preanalysis-infrastructure.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,7 +21,7 @@ Instead, all third-party CSPs can now be self-signed by following this procedure
 
 **Note**  Starting with Windows 8, it is no longer a requirement that CSPs must be signed.
 
- 
+ 
 
 You can sign binaries from a command-line, or sign as an integrated build step in Visual Studio 2012 and newer.
 
@@ -45,18 +45,18 @@ signtool.exe sign /ac certificate.cer /sha1 553e39af9e0ea8c9edcd802abbf103166f81
 
 **Note**  It is unnecessary to include resource ID \#666 in the CSP DLL, or the signature in the registry, as was required for older CSP signatures.
 
- 
+ 
 
 ## Additional Help and Support
 
 
-Consult the [Troubleshooting and support](http://msdn.microsoft.com/hh361695) page for additional help and support.
+Consult the [Troubleshooting and support](https://msdn.microsoft.com/hh361695) page for additional help and support.
 
 You can also check the [Application Security for Windows Desktop](http://social.msdn.microsoft.com/Forums/home?forum=windowssecurity) forum for assistance.
 
- 
+ 
 
- 
+ 
 
 
 

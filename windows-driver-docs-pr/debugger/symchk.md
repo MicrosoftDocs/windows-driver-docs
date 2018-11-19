@@ -3,7 +3,6 @@ title: SymChk
 description: SymChk
 ms.assetid: ba025aac-2a72-4150-9f29-0dc57b6483b7
 keywords: ["SymChk", "SymChk, overview", "symbols, SymChk"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ This section includes:
 
 [**SymChk Command-Line Options**](symchk-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

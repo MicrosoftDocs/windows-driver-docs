@@ -29,9 +29,9 @@ Use the following procedure to check the driver version numbers:
 
 -   Use Windows Explorer to view the directory containing the files. Right-click each file and click **Properties** to verify that the copyright information is correct. In particular, verify that your driver does not specify "Microsoft" as the vendor name.
 
- 
+ 
 
- 
+ 
 
 
 

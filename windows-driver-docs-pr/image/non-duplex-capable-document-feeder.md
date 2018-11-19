@@ -1,6 +1,5 @@
 ---
 title: Non-Duplex-Capable Document Feeder
-author: windows-driver-content
 description: Non-Duplex-Capable Document Feeder
 ms.assetid: e22ec1bb-623e-45c6-88f4-d3b6a45fa175
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ Applications navigate to the feeder item to perform document feeder scans. This 
 
 In standard acquisition and folder acquisition, the WIA feeder item property settings are used for all front pages. For more information about standard acquisition and folder acquisition, see [Advanced Duplex-Capable Document Feeder](advanced-duplex-capable-document-feeder.md).
 
- 
+ 
 
- 
+ 
 
 
 

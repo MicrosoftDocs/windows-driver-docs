@@ -1,6 +1,5 @@
 ---
 title: Supporting Autoupdate Events with Extension Units
-author: windows-driver-content
 description: Supporting Autoupdate Events with Extension Units
 ms.assetid: 3dc75f48-adc7-4443-8090-2e61b3306798
 keywords:
@@ -74,9 +73,9 @@ printf("Wait returned : %d\n", dwError);
 // handle the autoupdate event..
 ```
 
- 
+ 
 
- 
+ 
 
 
 

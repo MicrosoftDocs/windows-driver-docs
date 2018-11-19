@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for OID_WDI_SET_NETWORK_LIST_OFFLOAD.
 ms.assetid: B8DD3BB6-DB90-4500-9BD5-252230F4BAAD
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG**](wdi-tlv-network-list-offload-config.md) |                                |          | Specifies NLO configuration.                                                                 |
 | [**WDI\_TLV\_SSID\_OFFLOAD**](wdi-tlv-ssid-offload.md)                                 | X                              | X        | Specifies offload SSIDs. When this element is absent, the firmware should stop NLO scanning. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

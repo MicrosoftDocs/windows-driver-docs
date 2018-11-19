@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
-author: windows-driver-content
 description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 ms.assetid: 30177e51-5312-4a24-972e-0c1c2d183d18
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
@@ -90,9 +89,9 @@ If any driver in the device stack fails an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, t
 
 Once a driver succeeds an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** and it considers the device to be in the remove-pending state, the driver must fail any subsequent create requests for the device. The driver processes all other IRPs as usual, until the driver receives an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** or an **IRP\_MN\_REMOVE\_DEVICE**.
 
- 
+ 
 
- 
+ 
 
 
 

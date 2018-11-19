@@ -61,9 +61,9 @@ A BDA minidriver assigns this GUID to the **SubFormat** member of a KSDATARANGE 
 <span id="KSDATAFORMAT_TYPE_MPE"></span><span id="ksdataformat_type_mpe"></span>KSDATAFORMAT\_TYPE\_MPE  
 A BDA minidriver assigns this GUID to the **MajorFormat** member of a KSDATARANGE structure to enable connecting to a pin of a filter that also assigns this major format.
 
- 
+ 
 
- 
+ 
 
 
 

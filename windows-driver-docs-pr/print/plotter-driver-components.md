@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Components
-author: windows-driver-content
 description: Plotter Driver Components
 ms.assetid: 6a976956-c188-4d31-b176-e97e09e8cc0b
 keywords:
@@ -46,9 +45,9 @@ Minidriver data read from .pcd files.
 <a href="" id="plotter-dll"></a>**plotter.dll**  
 [Plotter driver renderer](plotter-driver-renderer.md), which renders images and sends the image data stream to the spooler.
 
- 
+ 
 
- 
+ 
 
 
 

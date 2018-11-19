@@ -24,7 +24,7 @@ warning C28173: The current function appears to incorrectly adapt to physical me
 </tbody>
 </table>
 
- 
+ 
 
 On systems that have more than 4 GB of memory, the **IoGetDmaAdapter** function might return fewer map registers than requested; this becomes more likely when the value requested becomes large (approaching 64).This is because of the need to map physical memory above 4 GB into the space below 4 GB.
 
@@ -32,9 +32,9 @@ This warning message appears when code does not adapt to getting fewer registers
 
 Note that there are other ways that a driver can fail on systems with more than 4 GB. You should inspect your code for these possible failure modes. For more information about the 4 GB memory issues and the map registers, see [**NdisMAllocateMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff552300).
 
- 
+ 
 
- 
+ 
 
 
 

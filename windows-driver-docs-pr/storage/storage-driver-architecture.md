@@ -1,6 +1,5 @@
 ---
 title: Windows Storage Driver Architecture
-author: windows-driver-content
 description: Windows Storage Driver Architecture
 ms.assetid: 16636899-fab9-46e8-ab9d-b8d86519b08a
 keywords:
@@ -53,9 +52,9 @@ The system-supplied SCSI port driver can also act as an interface between a stor
 
 For more detailed information about SRBs, see the Kernel-Mode Driver Architecture Reference. For device-type-specific information about CDBs, consult appropriate command sets in the INCITS SCSI-3 standards.
 
- 
+ 
 
- 
+ 
 
 
 

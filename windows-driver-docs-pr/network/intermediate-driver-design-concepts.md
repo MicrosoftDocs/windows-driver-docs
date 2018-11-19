@@ -46,9 +46,9 @@ The following topics provide additional information about writing NDIS intermedi
 
 [Status Indications in an Intermediate Driver](status-indications-in-an-intermediate-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

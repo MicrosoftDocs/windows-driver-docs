@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_ENUM_FILTERS
-author: windows-driver-content
 description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_ENUM_FILTERS to obtain a list of all the filters that are configured on a network adapter.
 ms.assetid: 498c1e96-c3ee-4f5d-b0f2-6e88921187e5
 ms.date: 08/08/2017
@@ -106,9 +105,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

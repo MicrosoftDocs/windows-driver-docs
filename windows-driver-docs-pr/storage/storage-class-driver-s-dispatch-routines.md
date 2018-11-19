@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's Dispatch Routines
-author: windows-driver-content
 description: Storage Class Driver's Dispatch Routines
 ms.assetid: 99713661-5e99-4110-b369-afc084a2aaef
 keywords:
@@ -27,9 +26,9 @@ A storage class driver must have a [**DispatchShutdown**](https://msdn.microsoft
 
 See also [Writing Dispatch Routines](https://msdn.microsoft.com/library/windows/hardware/ff566407) for more information about general requirements for dispatch routines.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Diagnostics and Debugging
-author: windows-driver-content
 description: Diagnostics and Debugging
 ms.assetid: 6c5c1b4a-338d-4550-903d-c6905ce743f9
 keywords:
@@ -45,28 +44,28 @@ These routines include the items in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxAssert</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553384)</p></td>
-<td align="left"><p>This routine sends an assert string in checked builds of RDBSS to a kernel debugger if one is installed. When the rxAssert.h include file is used, Windows kernel <strong>RtlAssert</strong> calls will be redefined to call this [<strong>RxAssert</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553384) routine as well.</p>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553384" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553384)"><strong>RxAssert</strong></a></p></td>
+<td align="left"><p>This routine sends an assert string in checked builds of RDBSS to a kernel debugger if one is installed. When the rxAssert.h include file is used, Windows kernel <strong>RtlAssert</strong> calls will be redefined to call this <a href="https://msdn.microsoft.com/library/windows/hardware/ff553384" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553384)"><strong>RxAssert</strong></a> routine as well.</p>
 <p>For retail builds, calls to this routine will bug check.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxDbgBreakPoint</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554385)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554385" data-raw-source="[&lt;strong&gt;RxDbgBreakPoint&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554385)"><strong>RxDbgBreakPoint</strong></a></p></td>
 <td align="left"><p>This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise, it is handled by the debug system.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxpTrackDereference</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554655)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554655" data-raw-source="[&lt;strong&gt;RxpTrackDereference&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554655)"><strong>RxpTrackDereference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these reference requests can be accessed by the logging system and WMI. This routine does not perform the dereference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxpTrackReference</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554659)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554659" data-raw-source="[&lt;strong&gt;RxpTrackReference&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554659)"><strong>RxpTrackReference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to dereference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these dereference requests can be accessed by the logging system and WMI. This routine does not perform the reference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the routines listed in the previous table, a number of macros that call these routines are defined for debugging. These macros, which are listed in the following table, provide a wrapper around the [**RxReference**](https://msdn.microsoft.com/library/windows/hardware/ff554688) or [**RxDereference**](https://msdn.microsoft.com/library/windows/hardware/ff554388) routines used for file structure management operations on SRV\_CALL, NET\_ROOT, V\_NET\_ROOT, FOBX, FCB, and SRV\_OPEN structures. These macros first call the corresponding [**RxpTrackReference**](https://msdn.microsoft.com/library/windows/hardware/ff554659) or [**RxpTrackDereference**](https://msdn.microsoft.com/library/windows/hardware/ff554655) routine to log diagnostic information before calling the corresponding **RxReference** or **RxDeference** routine. A log of the reference and dereference requests can be accessed by the RDBSS logging system and WMI.
 
@@ -143,11 +142,11 @@ In addition to the routines listed in the previous table, a number of macros tha
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

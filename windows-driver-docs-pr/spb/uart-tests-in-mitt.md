@@ -1,6 +1,5 @@
 ---
 title: UART tests in MITT
-author: windows-driver-content
 description: The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board’s UART interface acts as a UART loopback device.
 ms.assetid: 239F131C-5416-4E86-B0EE-E3156CDA11CF
 ms.date: 04/20/2017
@@ -42,7 +41,7 @@ The MITT software package includes tests for validating data transfers to a UART
     | RX                               | TX                                       |
     | CTS                              | RTS                                      |
 
-     
+     
 
 3.  The UART adapter board provides a jumper for selecting the correct voltage. Only 3.3V signal is supported for direct connect (without the adapter board).
 
@@ -102,7 +101,7 @@ To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1.
 5.  View all commands available, launch UtsSanity.exe -? and refer to the command line options available:
     **Note**  The **–mitt** option is required to run the tests while the MITT board is connected.
 
-     
+     
 
 Example 1: To run the tests at 115200 bps (default)
 
@@ -117,9 +116,9 @@ Example 2: To run the tests at 3Mbps:
 
 ![spi schematic](images/spi-schematic.png)
 
- 
+ 
 
- 
+ 
 
 
 

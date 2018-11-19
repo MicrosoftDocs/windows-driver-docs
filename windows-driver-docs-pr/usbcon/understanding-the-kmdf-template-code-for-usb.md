@@ -1,7 +1,6 @@
 ---
 Description: Learn about the source code for KMDF-based USB client driver. 
 title: USB client driver code structure (KMDF)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -351,7 +350,7 @@ In the implementation for [*EvtDevicePrepareHardware*](https://msdn.microsoft.co
 | *USB target interface object* (WDFUSBINTERFACE ) | [**WdfUsbTargetDeviceGetInterface**](https://msdn.microsoft.com/library/windows/hardware/ff550092)             | Represents an individual interface and provides methods that a client driver can call to select an alternate setting and retrieve information about the setting.                                                                                                                                                                              |
 | *USB target pipe object* (WDFUSBPIPE)            | [**WdfUsbInterfaceGetConfiguredPipe**](https://msdn.microsoft.com/library/windows/hardware/ff550057)         | Represents an individual pipe for an endpoint that is configured in the current alternate setting for an interface. The USB driver stack selects each interface in the selected configuration and sets up a communication channel to each endpoint within the interface. In USB terminology, that communication channel is known as a *pipe*. |
 
- 
+ 
 
 This code example shows the implementation for EvtDevicePrepareHardware.
 
@@ -451,7 +450,7 @@ Here's a closer look at the client driver's tasks as implemented by the template
 
     Such drivers are not required to specify a client contract version and therefore must skip Step 1.
 
-     
+     
 
 3.  Selects a USB configuration.
 
@@ -461,7 +460,7 @@ Here's a closer look at the client driver's tasks as implemented by the template
 
     **Note**  If the client driver wants to select alternate settings other than the default setting, the driver must create an array of [**WDF\_USB\_INTERFACE\_SETTING\_PAIR**](https://msdn.microsoft.com/library/windows/hardware/ff553023) structures. Each element in the array specifies the device-defined interface number and the index of the alternate setting to select. That information is stored in the device's configuration and interface descriptors that can be obtained by calling the [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method. The client driver must then call [**WDF\_USB\_DEVICE\_SELECT\_CONFIG\_PARAMS\_INIT\_MULTIPLE\_INTERFACES**](https://msdn.microsoft.com/library/windows/hardware/ff552992) and pass the **WDF\_USB\_INTERFACE\_SETTING\_PAIR** array to the framework.
 
-     
+     
 
 ## Queue source code
 

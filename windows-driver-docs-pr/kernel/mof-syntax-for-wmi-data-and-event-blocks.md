@@ -1,6 +1,5 @@
 ---
 title: MOF Syntax for WMI Data and Event Blocks
-author: windows-driver-content
 description: MOF Syntax for WMI Data and Event Blocks
 ms.assetid: 247037b7-d62e-4f74-8fa4-57e74f6c412f
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "MOF files WDK WMI"]
@@ -20,7 +19,7 @@ A driver writer defines a driver's schema in Managed Object Format (MOF). MOF is
 
 A MOF class definition for a WMI data block follows this syntax:
 
-**\[***Required and optional class qualifiers***\]**
+**\[**<em>Required and optional class qualifiers</em>**\]**
 
 **class***ClassName* : *OptionalBaseClass*
 **{**
@@ -29,9 +28,9 @@ A MOF class definition for a WMI data block follows this syntax:
 **\[read\]**
 **boolean Active;**
 **\[** *Required and optional property qualifiers* **\]**
-*datatype itemname1***;**
+<em>datatype itemname1</em>**;**
 **\[** *Required and optional property qualifiers* **\]**
-*datatype itemnameN***;**
+<em>datatype itemnameN</em>**;**
 **};**
 The following topics describe the syntax elements shown above:
 
@@ -49,9 +48,9 @@ The following topics describe the syntax elements shown above:
 
 For a general discussion of MOF syntax as it pertains to WMI clients and other kinds of applications, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

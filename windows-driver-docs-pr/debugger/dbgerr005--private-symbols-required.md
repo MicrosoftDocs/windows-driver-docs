@@ -3,7 +3,6 @@ title: dbgerr005 Private Symbols Required
 description: dbgerr005 Private Symbols Required
 ms.assetid: 0e3b9c98-1f02-4fff-9a91-d3a7470df882
 keywords: ["dbgerr005", "Private symbols required (dbgerr005)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ Most debugging actions can be performed with public symbols alone. But certain a
 
 When you see this message, it is usually best to simply continue debugging. The information you were unable to obtain is probably not essential to properly debugging the target.
 
- 
+ 
 
- 
+ 
 
 
 

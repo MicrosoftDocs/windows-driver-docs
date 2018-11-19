@@ -1,6 +1,5 @@
 ---
 title: Creating Framework Request Objects
-author: windows-driver-content
 description: Creating Framework Request Objects
 ms.assetid: 4bd668ec-14fb-4999-9535-a49712a26ba6
 keywords:
@@ -48,9 +47,9 @@ To create a request object, your driver should call [**WdfRequestCreate**](https
 
 If a driver receives WDM IRPs in a WDM dispatch routine and then services or forwards them by using the framework, the driver can call [**WdfRequestCreateFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549953).
 
- 
+ 
 
- 
+ 
 
 
 

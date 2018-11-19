@@ -1,7 +1,6 @@
 ---
 Description: This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.
 title: Common hardware problems with U1 or U2 implementation
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -65,9 +64,9 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
     If a DS port of a hub or controller is in U1 or U2 and the software initiates a U3 transition on the port, the parent hub or controller is responsible for first transitioning the link to U0 and then to U3. Some hubs and controllers do not handle that requirement properly. This can cause the link to enter an error state and can cause re-enumeration of the device.  
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ Many WMI objects contain the **MSNdis\_ObjectHeader** property, which is equival
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

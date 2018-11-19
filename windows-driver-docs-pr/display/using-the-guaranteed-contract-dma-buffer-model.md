@@ -19,9 +19,9 @@ In guaranteed contract mode, the user-mode display driver is aware of the exact 
 
 The video memory manager guarantees not to trim the DMA buffers and patch-location lists for that device until the next translation is complete. The display miniport driver must be able to translate one command buffer into exactly one DMA buffer and one patch-location list. If this translation is not possible, the user-mode command buffer is, by definition, invalid. The display miniport driver cannot return status that indicates it is out of DMA buffer space and patch-location lists during the translation; doing so results in the video memory manager bug checking the system because the memory manager failed to meet the requirements of the guaranteed DMA contract.
 
- 
+ 
 
- 
+ 
 
 
 

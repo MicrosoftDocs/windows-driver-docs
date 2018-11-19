@@ -1,6 +1,5 @@
 ---
 title: Writing a Stream Minidriver
-author: windows-driver-content
 description: Writing a Stream Minidriver
 ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
 keywords:
@@ -63,9 +62,9 @@ The minidriver must provide two additional routines for manipulating stream requ
 
 When a hardware interrupt occurs, the operating system signals the class driver, which then calls the minidriver's [*StrMiniInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff568459) routine to handle the interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ The following topics describe the relationship between binding states and operat
 -   [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md)
 -   [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

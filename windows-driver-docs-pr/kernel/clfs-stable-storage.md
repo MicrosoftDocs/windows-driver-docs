@@ -1,6 +1,5 @@
 ---
 title: CLFS Stable Storage
-author: windows-driver-content
 description: CLFS Stable Storage
 ms.assetid: d0ee4f22-9fba-47da-a9c9-eaf3a21feb36
 keywords: ["Common Log File System WDK kernel , stable storage", "CLFS WDK kernel , stable storage", "stable storage WDK CLFS", "storage WDK CLFS", "containers WDK CLFS", "logical containers WDK CLFS", "physical containers WDK CLFS", "log I/O blocks WDK CLFS", "blocks WDK CLFS", "block offsets WDK CLFS", "logs WDK CLFS", "physical logs WDK CLFS", "container identifiers WDK CLFS", "record sequence numbers WDK CLFS"]
@@ -62,9 +61,9 @@ The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** ret
 
 The record sequence number is a 9-bit number, so there are 2^9 (512) possible record sequence numbers, and they are in the range 0x0 through 0x1FF. A log I/O block can have at most 512 records.
 
- 
+ 
 
- 
+ 
 
 
 

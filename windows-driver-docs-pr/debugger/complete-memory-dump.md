@@ -3,7 +3,6 @@ title: Complete Memory Dump
 description: Complete Memory Dump
 ms.assetid: ccc4d22a-89af-4c7d-a982-f77c682cd001
 keywords: ["dump file, Complete Memory Dump", "Complete Memory Dump"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -29,9 +28,9 @@ If a second bug check occurs and another Complete Memory Dump (or Kernel Memory 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

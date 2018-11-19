@@ -3,7 +3,6 @@ title: irp extension command
 description: The irp extension displays information about an I/O request packet (IRP).
 ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
-ms.author: domars
 ms.date: 08/23/2018
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ If this parameter is included with any value, such as 1, the output includes the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -270,7 +269,7 @@ IRP_MJ_MAXIMUM_FUNCTION</td>
 </tbody>
 </table>
 
- 
+ 
 
 The Plug and Play minor function codes are as follows:
 
@@ -385,7 +384,7 @@ The Plug and Play minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The WMI minor function codes are as follows:
 
@@ -444,7 +443,7 @@ The WMI minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The power management minor function codes are as follows:
 
@@ -479,7 +478,7 @@ The power management minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The SCSI minor function codes are as follows:
 
@@ -502,7 +501,7 @@ The SCSI minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -513,9 +512,9 @@ The SCSI minor function codes are as follows:
 
 [**!ioctldecode**](-ioctldecode.md)
 
- 
+ 
 
- 
+ 
 
 
 

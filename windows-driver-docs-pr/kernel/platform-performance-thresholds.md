@@ -1,6 +1,5 @@
 ---
 title: Platform Performance Thresholds
-author: windows-driver-content
 description: There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
 ms.assetid: 4FB3AFEF-1560-4683-9D57-3029DAA50FE8
 ms.localizationpriority: medium
@@ -28,7 +27,7 @@ The absolute lowest performance level of the platform. Selecting a performance l
 
 **Note**  All static performance levels do not need to be distinct. A platform's nominal performance level may also be its highest performance level, for example.
 
- 
+ 
 
 The platform may optionally also express a dynamic performance threshold, the *Guaranteed Performance* threshold. If present, this represents the maximum sustained performance level of a processor, taking into account all known external constraints (power budgeting, thermal constraints, power source, etc.). All processors are expected to be able to sustain their guaranteed performance levels simultaneously for at least one second. The guaranteed performance level is required to fall in the range \[Lowest Performance, Nominal performance\], inclusive.
 
@@ -37,9 +36,9 @@ The platform may optionally also express a dynamic performance threshold, the *G
 
 The PEP must use the same performance scale for all processors in the system. On platforms with heterogeneous processors, the performance characteristics of all processors may not be identical. In this case, the PEP must synthesize a performance scale that adjusts for differences in processors, such that any two processors running the same workload at the same performance level will complete in approximately the same time. The PEP should expose different capabilities for different classes of processors, so as to accurately reflect the performance characteristics of each processor.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -71,9 +71,9 @@ Finally, the INF file should define the friendly names for these subdevices:
 
 The friendly names show up in the audio control panel to identify the subdevices.
 
- 
+ 
 
- 
+ 
 
 
 

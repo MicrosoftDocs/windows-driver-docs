@@ -1,6 +1,5 @@
 ---
 title: Programming Issues for 64-Bit Drivers
-author: windows-driver-content
 description: Programming Issues for 64-Bit Drivers
 ms.assetid: 36794bd3-1d44-4edf-b789-a4da4165ea60
 keywords: ["64-bit WDK kernel", "kernel-mode drivers WDK , 64-bit issues", "Win32 applications WDK 64-bit", "user-mode applications WDK 64-bit"]
@@ -24,9 +23,9 @@ This section discusses issues you need to be concerned about when developing dri
 
 For information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](http://go.microsoft.com/fwlink/p/?linkid=165521).
 
- 
+ 
 
- 
+ 
 
 
 

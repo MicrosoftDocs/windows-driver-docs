@@ -1,6 +1,5 @@
 ---
 title: Checking for Other Special Cases on IRP_MJ_CREATE
-author: windows-driver-content
 description: Checking for Other Special Cases on IRP_MJ_CREATE
 ms.assetid: e6af44c2-fd39-469b-8530-cf88edb329f7
 keywords:
@@ -69,9 +68,9 @@ if (0 == (AccessState->Flags & TOKEN_HAS_RESTORE_PRIVILEGE)) {
 
 This code sample is a good example of where file system policy takes precedence. The caller did not request DELETE access or FILE\_WRITE\_DATA access, but such access is inherent in the operation being performed based upon the semantics of the file system.
 
- 
+ 
 
- 
+ 
 
 
 

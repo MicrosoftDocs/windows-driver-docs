@@ -1,6 +1,5 @@
 ---
 title: Supporting System Wake-Up
-author: windows-driver-content
 description: Supporting System Wake-Up
 ms.assetid: 519dcd1a-9975-48b1-a032-04348b903ac5
 keywords:
@@ -43,9 +42,9 @@ When a bus driver determines that a device has triggered a wake signal, it must 
 
 For information about registry entries that control a device's wake capabilities, see [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md).
 
- 
+ 
 
- 
+ 
 
 
 

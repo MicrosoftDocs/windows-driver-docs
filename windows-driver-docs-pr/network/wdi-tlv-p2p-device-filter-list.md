@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_DEVICE_FILTER_LIST
-author: windows-driver-content
 description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a TLV that contains a list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery.
 ms.assetid: 56D1E6BD-41E3-4869-A821-334012B781A7
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microso
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | A list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

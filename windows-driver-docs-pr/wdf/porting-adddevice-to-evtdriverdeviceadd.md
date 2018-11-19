@@ -1,6 +1,5 @@
 ---
 title: Porting AddDevice to EvtDriverDeviceAdd
-author: windows-driver-content
 description: Porting AddDevice to EvtDriverDeviceAdd
 ms.assetid: 8FCFDA98-621E-415E-83D7-0371F55DD8A8
 ms.date: 04/20/2017
@@ -80,39 +79,39 @@ In WDM drivers, these requests arrive as minor IRP codes in an [**IRP\_MJ\_PNP**
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceResourcesQuery</em>](https://msdn.microsoft.com/library/windows/hardware/ff540895)</p></td>
-<td align="left"><p>[<strong>IRP_MN_QUERY_RESOURCES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551710)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540895" data-raw-source="[&lt;em&gt;EvtDeviceResourcesQuery&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540895)"><em>EvtDeviceResourcesQuery</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551710" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_RESOURCES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551710)"><strong>IRP_MN_QUERY_RESOURCES</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceResourceRequirementsQuery</em>](https://msdn.microsoft.com/library/windows/hardware/ff540894)</p></td>
-<td align="left"><p>[<strong>IRP_MN_QUERY_RESOURCE_REQUIREMENTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551715)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540894" data-raw-source="[&lt;em&gt;EvtDeviceResourceRequirementsQuery&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540894)"><em>EvtDeviceResourceRequirementsQuery</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551715" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_RESOURCE_REQUIREMENTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551715)"><strong>IRP_MN_QUERY_RESOURCE_REQUIREMENTS</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceEject</em>](https://msdn.microsoft.com/library/windows/hardware/ff540863)</p></td>
-<td align="left"><p>[<strong>IRP_MN_EJECT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550853)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540863" data-raw-source="[&lt;em&gt;EvtDeviceEject&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540863)"><em>EvtDeviceEject</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550853" data-raw-source="[&lt;strong&gt;IRP_MN_EJECT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550853)"><strong>IRP_MN_EJECT</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceSetLock</em>](https://msdn.microsoft.com/library/windows/hardware/ff540909)</p></td>
-<td align="left"><p>[<strong>IRP_MN_SET_LOCK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551742)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540909" data-raw-source="[&lt;em&gt;EvtDeviceSetLock&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540909)"><em>EvtDeviceSetLock</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551742" data-raw-source="[&lt;strong&gt;IRP_MN_SET_LOCK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551742)"><strong>IRP_MN_SET_LOCK</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceEnableWakeAtBus</em>](https://msdn.microsoft.com/library/windows/hardware/ff540866)</p></td>
-<td align="left"><p>[<strong>IRP_MN_WAIT_WAKE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551766)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540866" data-raw-source="[&lt;em&gt;EvtDeviceEnableWakeAtBus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540866)"><em>EvtDeviceEnableWakeAtBus</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551766" data-raw-source="[&lt;strong&gt;IRP_MN_WAIT_WAKE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551766)"><strong>IRP_MN_WAIT_WAKE</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceDisableWakeAtBus</em>](https://msdn.microsoft.com/library/windows/hardware/ff540858)</p></td>
-<td align="left"><p>[<strong>IRP_MN_WAIT_WAKE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551766)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540858" data-raw-source="[&lt;em&gt;EvtDeviceDisableWakeAtBus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540858)"><em>EvtDeviceDisableWakeAtBus</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551766" data-raw-source="[&lt;strong&gt;IRP_MN_WAIT_WAKE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551766)"><strong>IRP_MN_WAIT_WAKE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Additional **WdfPdoInitXxx** methods enable the driver to specify device-specific data, such as device IDs.
 
- 
+ 
 
- 
+ 
 
 
 

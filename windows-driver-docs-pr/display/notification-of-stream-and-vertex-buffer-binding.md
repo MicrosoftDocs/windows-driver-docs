@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 A driver is notified of the binding of a vertex buffer to a particular stream through a new DP2 token, D3DDP2OP\_SETSTREAMSOURCE, and its associated HAL data structure, [**D3DHAL\_DP2SETSTREAMSOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff545798).
 
- 
+ 
 
- 
+ 
 
 
 

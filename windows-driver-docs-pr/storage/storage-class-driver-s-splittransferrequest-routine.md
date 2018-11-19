@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's SplitTransferRequest Routine
-author: windows-driver-content
 description: Storage Class Driver's SplitTransferRequest Routine
 ms.assetid: 4f449d3b-9a0a-4ff9-a7fb-bfa21b8a56c0
 keywords:
@@ -74,9 +73,9 @@ To track each piece of the transfer, *SplitTransferRequest* registers an *IoComp
 
 Such an *IoCompletion* routine must free any IRPs and/or SRBs the driver has allocated and must complete the original IRP when all requested data has been transferred or when the class driver has exhausted retries of the IRP and must fail it due to device transfer errors.
 
- 
+ 
 
- 
+ 
 
 
 

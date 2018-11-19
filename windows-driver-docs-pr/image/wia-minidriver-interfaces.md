@@ -1,6 +1,5 @@
 ---
 title: WIA Minidriver Interfaces
-author: windows-driver-content
 description: WIA Minidriver Interfaces
 ms.assetid: 6d069584-f9e1-4312-b8f2-1ef3d518faeb
 ms.date: 04/20/2017
@@ -37,9 +36,9 @@ The **IWiaMiniDrv** interface, which is defined in *Wiamindr.h*, exposes most of
 
 For more information about these interfaces, see [Developing a WIA Driver: Basic Concepts](developing-a-wia-driver--basic-concepts.md).
 
- 
+ 
 
- 
+ 
 
 
 

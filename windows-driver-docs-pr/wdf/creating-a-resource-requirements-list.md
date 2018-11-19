@@ -1,6 +1,5 @@
 ---
 title: Creating a Resource Requirements List
-author: windows-driver-content
 description: Creating a Resource Requirements List
 ms.assetid: 1254aa21-c64b-4c62-93dc-6758cef382f9
 keywords:
@@ -45,9 +44,9 @@ The driver must then do the following to add information to a resource requireme
 
 After the driver's [*EvtDeviceResourceRequirementsQuery*](https://msdn.microsoft.com/library/windows/hardware/ff540894) callback function returns, the framework passes the resource requirements list to the PnP manager.
 
- 
+ 
 
- 
+ 
 
 
 

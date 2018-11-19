@@ -47,9 +47,9 @@ DEFINE_GUID( GUID_UpdateNonLocalHeap,
 
 If the driver must allocate memory for AGP surfaces by itself, but has exposed heaps to DirectDraw, then [**HeapVidMemAllocAligned**](https://msdn.microsoft.com/library/windows/hardware/ff567267) is exposed as an **Eng** function for this purpose. **HeapVidMemAllocAligned** only deals with heap addresses so it returns an offset. The driver must do whatever memory mapping work it needs to do to turn the information returned from **HeapVidMemAllocAligned** into a virtual address.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: ATA Command Support
-author: windows-driver-content
 description: ATA Command Support
 ms.assetid: 98149A59-3435-4166-8250-EEFBA44DFD4C
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ This section contains information about special requirements for issuing certain
 
 [Security Group Commands](security-group-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

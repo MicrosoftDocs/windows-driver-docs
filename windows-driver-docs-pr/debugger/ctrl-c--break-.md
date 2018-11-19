@@ -3,7 +3,6 @@ title: CTRL+C (Break)
 description: The CTRL+C key breaks into the debugger, stopping the target application or target computer, and cancels debugger commands.
 ms.assetid: ee9df6d7-4a40-4006-90df-478e06899e3a
 keywords: ["CTRL+C (Break) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -69,7 +68,7 @@ F12
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -114,11 +113,11 @@ If you are debugging KD with CDB, then CTRL+C will be intercepted by the host de
 
 **Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use [CTRL+BREAK](debug---break.md) or select Debug | Break from the menu.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

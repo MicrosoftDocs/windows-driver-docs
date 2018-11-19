@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Merging
-author: windows-driver-content
 description: Print Ticket Merging
 ms.assetid: 2d9cf4d3-5c73-4355-b5e0-effcfb7102cc
 keywords:
@@ -70,9 +69,9 @@ class Filter
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

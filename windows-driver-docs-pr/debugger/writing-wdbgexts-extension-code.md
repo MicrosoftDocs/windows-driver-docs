@@ -3,7 +3,6 @@ title: Writing WdbgExts Extension Code
 description: Writing WdbgExts Extension Code
 ms.assetid: bb37ea19-8355-42f3-aca5-32cc2b3be3b2
 keywords: ["WdbgExts extensions", "extensions, WdbgExts"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ WdbgExts extensions cannot use the C++ interfaces that appear in the DbgEng.h he
 
 **Note**   You must not attempt to call any DbgHelp or ImageHlp routines from a debugger extension. This is not supported and may cause a variety of problems.
 
- 
+ 
 
 The following topics give an overview of various categories of WdbgExts functions:
 
@@ -40,9 +39,9 @@ The following topics give an overview of various categories of WdbgExts function
 
 For a full list of these functions, see [WdbgExts Functions](https://msdn.microsoft.com/library/windows/hardware/ff561258).
 
- 
+ 
 
- 
+ 
 
 
 

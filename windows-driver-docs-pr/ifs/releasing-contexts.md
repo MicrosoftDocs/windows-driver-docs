@@ -1,6 +1,5 @@
 ---
 title: Releasing Contexts
-author: windows-driver-content
 description: Releasing Contexts
 ms.assetid: 29d855cd-cca6-486b-86d9-f74810ae12c1
 keywords:
@@ -64,9 +63,9 @@ If the context is successfully set for the instance, [**FltSetInstanceContext**]
 
 If the call to [**FltSetInstanceContext**](https://msdn.microsoft.com/library/windows/hardware/ff544521) fails, the instance context has only one reference, namely the one set by [**FltAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff541710). When [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314) returns, the instance context has a reference count of zero, and it is freed by the filter manager.
 
- 
+ 
 
- 
+ 
 
 
 

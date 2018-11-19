@@ -1,6 +1,5 @@
 ---
 title: Failure to Check the Size of Buffers
-author: windows-driver-content
 description: Failure to Check the Size of Buffers
 ms.assetid: e9d9a5d9-19a5-4a1d-95f9-df2021c51c41
 keywords: ["buffer size WDK kernel", "input buffers WDK kernel", "output buffers WDK kernel"]
@@ -71,9 +70,9 @@ Assuming that the **NumIF** field of the system buffer specifies the number of i
 
 Remember that the I/O manager assumes that the value in the **Information** field is valid. If a caller passes in a valid kernel-mode address for the output buffer and a size of zero bytes, serious problems can occur if the driver does not check the output buffer size and thus find the error.
 
- 
+ 
 
- 
+ 
 
 
 

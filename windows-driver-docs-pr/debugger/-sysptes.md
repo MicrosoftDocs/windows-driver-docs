@@ -3,7 +3,6 @@ title: sysptes
 description: The sysptes extension displays a formatted view of the system page table entries (PTEs).
 ms.assetid: cfb40732-6658-43aa-8b83-0ad4b55194ba
 keywords: ["sysptes Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -65,7 +64,7 @@ Displays detailed information about any system PTEs that are allocated to mappin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -100,9 +99,9 @@ System PTE Information
   free blocks: 3   total free: 552337    largest free block: 551557
 ```
 
- 
+ 
 
- 
+ 
 
 
 

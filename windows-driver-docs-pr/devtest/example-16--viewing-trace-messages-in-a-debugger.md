@@ -41,9 +41,9 @@ In response, Tracelog reports that it has started the session. When the trace pr
 
 To view the messages in the debugger, use the WMI Tracing Extensions. For information, see [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=8708).
 
- 
+ 
 
- 
+ 
 
 
 

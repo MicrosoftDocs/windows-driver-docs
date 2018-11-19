@@ -1,6 +1,5 @@
 ---
 title: IStream Data Transfer Driver Changes
-author: windows-driver-content
 description: IStream Data Transfer Driver Changes
 ms.assetid: 1c837e4f-8d53-40ed-8f5b-0d525c7dd758
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ In folder acquisition, a single transfer request is on the parent item, but the 
 
 **Note**  This change affects only drivers that support the new data transfers. Legacy drivers, which do not support **IStream** data transfers, are not affected; the WIA service will continue to call the **IWiaMiniDrv::drvWriteItemProperties** method for them.
 
- 
+ 
 
 In folder acquisitions where the driver makes multiple calls to **IWiaTransferCallback::GetNextStream** (which is described in the Microsoft Windows SDK documentation), the driver can have only one active stream at a time.
 
@@ -40,9 +39,9 @@ The driver must call only the stream's **IStream::Write**, **IStream::Seek**, an
 
 When the [**WIA\_DPS\_PAGE\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551417) property is set to WIA\_PAGE\_AUTO (that is, automatic page size detection is enabled), the driver should provide accurate dimension information about the image only after it completes the transfer of the image data. For stream-based transfers, the driver should update the image dimensions in the image header at the end of the transfer. At the beginning of a new session, the value for WIA\_DPS\_PAGE\_SIZE property should always be set to a value other than WIA\_PAGE\_AUTO.
 
- 
+ 
 
- 
+ 
 
 
 

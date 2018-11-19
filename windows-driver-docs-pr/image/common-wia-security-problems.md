@@ -1,6 +1,5 @@
 ---
 title: Common WIA Security Problems
-author: windows-driver-content
 description: Common WIA Security Problems
 ms.assetid: d3f7d6e9-1ac4-4209-92bb-d08e4e13a4ad
 ms.date: 04/20/2017
@@ -37,9 +36,9 @@ The most common problems occur with:
 
     WIA drivers should not manually start other processes (for example, by calling **CreateProcess** or **CreateProcessAsUser**). Although this behavior would have succeeded for drivers under **LocalSystem** accounts, it is no longer possible for drivers to do so under the new **LocalService** account. For more information about **CreateProcess** and **CreateProcessAsUser**, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Implementing an IoCompletion Routine
-author: windows-driver-content
 description: Implementing an IoCompletion Routine
 ms.assetid: 669860b1-5e85-4b28-a9b1-1ccf8c689b7a
 keywords: ["IoCompletion routines", "IoCompleteRequest routine", "priority boosts WDK IRPs"]
@@ -79,9 +78,9 @@ A higher-level driver's *IoCompletion* routine can check only the IRP's I/O stat
 
 The caller of **IoCompleteRequest** must not attempt to access the just-completed IRP. Such an attempt is a programming error that causes a system crash.
 
- 
+ 
 
- 
+ 
 
 
 

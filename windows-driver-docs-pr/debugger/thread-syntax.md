@@ -3,7 +3,6 @@ title: Thread Syntax
 description: Thread Syntax
 ms.assetid: f3eaa0ee-7c4f-47a4-aba9-c1d21c1529d1
 keywords: ["thread, command syntax", "~ (thread identifier)", "thread, thread identifier ( ~ )", "thread, thread ID", "~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, threads"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -57,7 +56,7 @@ The thread identifier can be one of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 Threads are assigned indexes as they are created. Note that this number differs from the thread ID that the Microsoft Windows operating system uses.
 
@@ -73,11 +72,11 @@ In kernel mode, you cannot control threads by using thread identifiers. For more
 
 **Note**  You can use the tilde character ( ~ ) to specify threads during user-mode debugging. In kernel-mode debugging, you can use the tilde to specify processors. For more information about how to specify processors, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

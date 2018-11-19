@@ -1,7 +1,6 @@
 ---
 Description: This topic describes the device-specific registry entries.
 title: USB Device Registry Entries
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,12 +40,12 @@ The registry entries described in this topic are found under this key:
 
 ```cpp
 HKEY_LOCAL_MACHINE
-   SYSTEM
-      CurrentControlSet
-         Control
-            usbflags
-               <VVVVPPPPRRRR>
-                  <Device-specific registry entry>
+   SYSTEM
+      CurrentControlSet
+         Control
+            usbflags
+               <VVVVPPPPRRRR>
+                  <Device-specific registry entry>
 ```
 
 In the ***vvvvpppprrrrr*** key,
@@ -76,7 +75,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 <td><p><strong>osvc</strong></p>
 <p>REG_BINARY</p>
 <p>Supported on Windows XP and later versions.</p></td>
-<td><p>Indicates whether the operating system queried the device for [Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md). If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p></td>
+<td><p>Indicates whether the operating system queried the device for <a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-Defined USB Descriptors</a>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p></td>
 <td><ul>
 <li><p>0x0000: The device did not provide a valid response to the Microsoft OS string descriptor request.</p></li>
 <li><p>0x01xx: The device provided a valid response to the Microsoft OS string descriptor request, where xx is the <strong>bVendorCode</strong> contained in the response.</p></li>
@@ -105,7 +104,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  

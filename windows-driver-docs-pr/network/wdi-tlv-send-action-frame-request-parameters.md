@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME.
 ms.assetid: 92629752-A94B-442A-97E9-D8E1C7924855
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                            | The send timeout. Specifies the maximum time (in milliseconds) to send this Action Frame.                                                       |
 | UINT32                                            | The post-acknowledgment dwell time. Specifies the time (in milliseconds) to remain on listen channel after the incoming packet is acknowledged. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

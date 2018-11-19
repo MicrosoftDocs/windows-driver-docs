@@ -35,9 +35,9 @@ MPEG-2 syntax provides the information necessary to identify progressive content
 
 With VPE and DirectDraw under the latest DirectX release, video can always be displayed with the best-possible quality if these flags or a signal derived from these flags can be conveyed to the system on a per-field basis. Interlaced video can also be supported by DirectShow, with new flags in the media sample to indicate whether an uncompressed video media sample is either a full frame or a field, plus any other information. As described in the [Displaying Interleaved Video with VPE](displaying-interleaved-video-with-vpe.md) section, DirectShow can be instructed to switch between display modes on a per-frame basis by using either frame-based media samples or field-based media samples.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: .bpsync (Synchronize Threads at Breakpoint)
 description: When a thread reaches a breakpoint, the .bpsync command freezes all other threads, until the thread to which the breakpoint applies has stepped through the breakpoint.
 ms.assetid: 3e97ea97-77b8-4a22-b49c-c99739b42d59
 keywords: [".bpsync (Synchronize Threads at Breakpoint) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 When a thread reaches a breakpoint, the **.bpsync** command freezes all other threads, until the thread to which the breakpoint applies has stepped through the breakpoint.
 
-```
+```dbgcmd
 .bpsync 1
 .bpsync 0
 .bpsync 
@@ -57,7 +56,7 @@ Allows other threads to continue executing when one thread has reached a breakpo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +71,9 @@ The temporary removal of breakpoints is a normal aspect of debugger operation. W
 
 Note that if you use **.bpsync 1**, there is a risk of deadlocks among the threads that have been frozen.
 
- 
+ 
 
- 
+ 
 
 
 

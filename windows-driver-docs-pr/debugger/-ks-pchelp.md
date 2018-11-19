@@ -3,7 +3,6 @@ title: ks.pchelp
 description: The ks.pchelp extension displays a help text showing PortCls-specific Ks.dll extension commands.
 ms.assetid: 6724deae-fceb-415b-991c-370347d5ff15
 keywords: ["ks.pchelp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,15 +41,15 @@ The **!ks.pchelp** extension displays a help text showing PortCls-specific Ks.dl
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: wudfext.umdevstacks
 description: The wudfext.umdevstacks extension displays information about all device stacks in the current host process.
 ms.assetid: e69420fc-97b8-420f-b635-bee41fbf4586
 keywords: ["wudfext.umdevstacks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Displays information about the internal framework.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +88,9 @@ Number of device stacks: 1
     DevStack XFerMode: CopyImmediately RW: Buffered CTL: Buffered
 ```
 
- 
+ 
 
- 
+ 
 
 
 

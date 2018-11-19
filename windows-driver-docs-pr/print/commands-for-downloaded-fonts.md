@@ -1,6 +1,5 @@
 ---
 title: Commands for Downloaded Fonts
-author: windows-driver-content
 description: Commands for Downloaded Fonts
 ms.assetid: 5cf6b2bd-5378-4e90-8959-ced978dee02f
 keywords:
@@ -35,7 +34,7 @@ The following table lists the commands for controlling downloaded fonts. All com
 <tr class="odd">
 <td><p><strong>CmdDeleteFont</strong></p></td>
 <td><p>Command to delete a soft font by specifying its identifier.</p></td>
-<td><p>Optional. Specify this command only if a deleted font's allocated memory can be immediately reclaimed.</p></td>
+<td><p>Optional. Specify this command only if a deleted font&#39;s allocated memory can be immediately reclaimed.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CmdDeselectFontID</strong></p></td>
@@ -70,13 +69,13 @@ The following table lists the commands for controlling downloaded fonts. All com
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Writing a FilterUnloadCallback Routine for a Minifilter Driver
-author: windows-driver-content
 description: Writing a FilterUnloadCallback Routine for a Minifilter Driver
 ms.assetid: 0f4eac6d-08ef-47d5-8c1f-5397f058ecb2
 keywords:
@@ -30,9 +29,9 @@ This section includes:
 
 [Writing a FilterUnloadCallback Routine](writing-a-filterunloadcallback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_SUPERSPEED_INTERFACE_INFO
-author: windows-driver-content
 description: EFI_USB_SUPERSPEED_INTERFACE_INFO
 ms.assetid: 1B0C04D0-5254-4B9A-A94D-4FF1CEAD4627
 ms.date: 04/20/2017
@@ -42,9 +41,9 @@ The **EFI\_USB\_INTERFACE\_DESCRIPTOR** structure is defined in the UEFI specifi
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

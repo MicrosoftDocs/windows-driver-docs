@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_PORT_PROPERTY_UPDATE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_PROPERTY_UPDATE to notify extensible switch extensions about the update of a property for an extensible switch port policy.
 ms.assetid: 674CA5EB-BF11-47E8-A2AC-6C789CA4FDB5
 ms.date: 08/08/2017
@@ -29,7 +28,7 @@ The extension can veto the update of the port property by returning NDIS\_STATUS
 
 **Note**  If the extension returns other NDIS\_STATUS\_*Xxx* error status codes, the update notification is also vetoed. However, returning status codes for transitory scenarios, such as returning NDIS\_STATUS\_RESOURCES, could result in a retry of the creation notification.
 
- 
+ 
 
 If the extension does not veto the OID request, it should monitor the status when the request is completed. The extension should do this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
@@ -53,7 +52,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PORT\_
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to process the [<strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure and the data in the structure's property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to process the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598238" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_PORT_PROPERTY_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598238)"><strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong></a> structure and the data in the structure&#39;s property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_DATA_NOT_ACCEPTED</p></td>
@@ -70,7 +69,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PORT\_
 </tbody>
 </table>
 
- 
+ 
 
 If the extension does not complete the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_UPDATE, the request is completed by the underlying miniport edge of the extensible switch. The miniport edge returns the following status code.
 
@@ -93,7 +92,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_PORT\_PRO
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -129,9 +128,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: stacks
 description: The stacks extension displays information about the kernel stacks.
 ms.assetid: f0777609-4785-4a6b-a6f5-9efaeb608df7
 keywords: ["stacks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the level of detail to use in the display. The following table lists t
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______FilterString______"></span><span id="_______filterstring______"></span><span id="_______FILTERSTRING______"></span> *FilterString*   
 Displays only threads that contain the specified substring in a symbol.
@@ -135,9 +134,9 @@ Proc.Thread  .Thread  ThreadState  Blocker
 .....
 ```
 
- 
+ 
 
- 
+ 
 
 
 

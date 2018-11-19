@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 A [driver package](driver-packages.md) can install device metadata packages by copying them to the [device metadata store](device-metadata-store.md). This is accomplished by using [**INF CopyFiles directives**](inf-copyfiles-directive.md) within the [**DestinationDirs**](inf-destinationdirs-section.md) and [**DDInstall**](inf-ddinstall-section.md) sections of the [INF file](inf-files.md) for the driver package.
 
-**Note**  We highly recommend that you install device metadata packages from the WMIS server instead of through driver packages. For more information, see [Installing Device Metadata Packages from WMIS](installing-device-metadata-packages-from-wmis.md).
+**Note**  We highly recommend that you install device metadata packages from the WMIS server instead of through driver packages. For more information, see [Installing Device Metadata Packages from WMIS](installing-device-metadata-packages-from-wmis.md).
 
- 
+
 
 To install device metadata packages through a [driver package](driver-packages.md), you must follow these guidelines:
 
@@ -21,11 +21,13 @@ To install device metadata packages through a [driver package](driver-packages.m
 
 -   If your driver package is used to install devices on versions of Windows earlier than Windows 7, you must use a separate [**INF *DDInstall* section**](inf-ddinstall-section.md) that contains your metadata-related INF directives. You must specify this section name in the [**INF *Models* section**](inf-models-section.md) by using a *TargetOSversion* decoration that specifies an *OSMajorVersion* and *OSMinorVersion* value for Windows 7 or later versions of Windows.
 
-    **Note**  If you do not use a separate INF *DDInstall* section that is decorated for Windows 7 or later versions of Windows, the installation of your digitally signed [driver package](driver-packages.md) will result in a signature alert when installed on versions of Windows earlier than Windows 7.
+    **Note**  If you do not use a separate INF *DDInstall* section that is decorated for Windows 7 or later versions of Windows, the installation of your digitally signed [driver package](driver-packages.md) will result in a signature alert when installed on versions of Windows earlier than Windows 7.
 
-     
 
-    For more information, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
+
+
+For more information, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
+
 
 -   All metadata packages in the driver package must be copied to the correct locale-specific folder in the [device metadata store](device-metadata-store.md). This is needed in order to support dynamic changes to locale.
 
@@ -65,9 +67,9 @@ GUID2.devicemetadata-ms,,,0x00000800 ;COPYFLG_NODECOMP
 GUID3.devicemetadata-ms,,,0x00000800 ;COPYFLG_NODECOMP
 ```
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SerCx2 Architectural Overview
-author: windows-driver-content
 description: SerCx2 works together with a serial controller driver to enable communication between a peripheral driver and a serially connected peripheral device.
 ms.assetid: BA5D8966-ACC5-44ED-8CB8-61D1BCF39522
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ The peripheral driver that sends I/O requests to the serial controller is either
 
 In response to a read or write request, SerCx2 initiates one or more I/O transactions to move data between the serial controller and the data buffer in the request. Each I/O transaction uses either programmed I/O (PIO) or DMA to transfer data between the serial controller and the data buffer in the request. The types of I/O transactions supported by a serial controller driver depend on the hardware capabilities of the serial controller. For more information, see [Overview of SerCx2 I/O Transactions](overview-of-sercx2-i-o-transactions.md).
 
- 
+ 
 
- 
+ 
 
 
 

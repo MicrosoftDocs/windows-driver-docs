@@ -18,7 +18,7 @@ NDIS modifies a driver stack for operations such as inserting, removing, or reco
 
 **Note**  If filter driver entry points change (that is, because of bypass mode), NDIS pauses and restarts the driver stack. Pause and restart could cause some network packets to be dropped on the transmit path, or receive path. Network protocols that provide a reliable transport mechanism might retry the network I/O operation in the case of a lost packet, but other protocols that do not guarantee reliability do not retry the operation.
 
- 
+ 
 
 NDIS modifies a running driver stack as follows:
 
@@ -36,9 +36,9 @@ NDIS modifies a running driver stack as follows:
 
     For more information, see [Restarting a Driver Stack](restarting-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

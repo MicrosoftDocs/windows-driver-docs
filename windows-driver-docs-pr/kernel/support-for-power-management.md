@@ -1,6 +1,5 @@
 ---
 title: Support for Power Management
-author: windows-driver-content
 description: Support for Power Management
 ms.assetid: 77e8be50-9623-4085-8d38-44db676a9a1f
 keywords: ["power management WDK kernel , support requirements", "power management WDK kernel , about power management", "PnP WDK power management", "Plug and Play WDK power management"]
@@ -26,9 +25,9 @@ Device power management applies to individual devices. A driver that supports po
 
 Beginning with Windows Vista, the operating system also supports driver performance states. Drivers that support device performance states can choose to tradeoff performance or features with a reduction in power consumption. Windows Vista provides a framework for devices to retrieve their power settings and information about the system power state. This mechanism is extendable, allowing driver vendors to define and install new custom power settings for their device. For more information, see [System Power Policy](system-power-policy.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling PnP Initialization in a Storage Class Driver
-author: windows-driver-content
 description: Handling PnP Initialization in a Storage Class Driver
 ms.assetid: 472e52c8-a214-418b-a82f-fd4a9bcc894e
 keywords:
@@ -39,9 +38,9 @@ For more information about initializing storage class drivers, see the following
 
 Also see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
 

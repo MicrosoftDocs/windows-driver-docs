@@ -1,6 +1,5 @@
 ---
 title: Compiling a Driver's MOF File
-author: windows-driver-content
 description: Compiling a Driver's MOF File
 ms.assetid: 0a4ab163-3e2c-48e9-9659-756d35ad445f
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "compiling MOF files"]
@@ -25,7 +24,7 @@ The following items appear in the preceding syntax:
 <a href="" id="-wmi"></a>**-WMI**  
 Validates all classes in *filename.mof* for use with WMI. If any class definition is invalid, Mofcomp deletes the output file *filename.bmf*. If **-WMI** is omitted, you should run [Wmimofck](using-wmimofck-exe.md) on *filename.bmf* to validate the classes. A driver must either use the WMI switch or run Wmimofck to validate the MOF. Failure to do so can result in the MOF file not loading correctly into the WMI schema.
 
-<a href="" id="-b-filename-bmf"></a>**-B:***filename.bmf*  
+<a href="" id="-b-filename-bmf"></a>**-B:**<em>filename.bmf</em>  
 Requests that the compiler create a platform-independent binary version of the MOF file in *filename.bmf* without making any modifications to the CIMOM object repository.
 
 <a href="" id="filename-mof"></a>*filename.mof*  
@@ -51,9 +50,9 @@ For more information about handling WMI IRPs using WMI iibrary routines, see [Ha
 
 For more information about defining and including resources in executable files, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

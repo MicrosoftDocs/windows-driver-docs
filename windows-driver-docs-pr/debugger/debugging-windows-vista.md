@@ -2,7 +2,6 @@
 title: Debugging Windows Vista
 description: To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the SDK for Windows 7.
 ms.assetid: 1E4FC9D9-7F84-4F67-8FBC-4283C69AB0AC
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -14,9 +13,9 @@ To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Win
 
 If you want to download only Debugging Tools for Windows, install the SDK, and, during the installation, select the **Debugging Tools for Windows** box and clear all the other boxes.
 
-**Note**  You might have to uninstall Microsoft Visual C++ 2010 Redistributable components before you install the SDK. For more information, see [the Microsoft Support website](http://support.microsoft.com/kb/2717426).
+**Note**  You might have to uninstall Microsoft Visual C++ 2010 Redistributable components before you install the SDK. For more information, see [the Microsoft Support website](https://support.microsoft.com/kb/2717426).
 
- 
+ 
 
 ## <span id="DEBUGGING_TOOLS__WINDBG__KD__CDB__NTSD__FOR_WINDOWS_WINDOWS_VISTA"></span>Debugging Tools (WinDbg, KD, CDB, NTSD) for Windows Vista
 
@@ -26,14 +25,14 @@ The Windows 7 Debugging Tools for Windows can run on x86-based or x64-based proc
 |               |                     |
 |---------------|---------------------|
 | Windows Vista | Windows Server 2008 |
- 
+ 
 
 If the target computer is running a more recent version of Windows, get the current [Debugging Tools for Windows](index.md).
 
 
- 
+ 
 
- 
+ 
 
 
 

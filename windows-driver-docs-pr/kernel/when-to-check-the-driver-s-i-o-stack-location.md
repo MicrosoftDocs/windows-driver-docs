@@ -1,6 +1,5 @@
 ---
 title: When to Check the Driver's I/O Stack Location
-author: windows-driver-content
 description: When to Check the Driver's I/O Stack Location
 ms.assetid: ca084221-7b07-4db0-a987-9dd8a66d169c
 keywords: ["dispatch routines WDK kernel , I/O stack locations", "I/O stack locations WDK dispatch routines", "driver I/O stack locations WDK dispatch routines"]
@@ -32,9 +31,9 @@ The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardwar
 
 In most cases, the *DispatchDeviceControl* or *DispatchInternalDeviceControl* routine of a higher-level driver simply passes an **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** request on to the next-lower driver, after setting up its stack location in the IRP. However, SCSI class drivers must check for certain [SCSI Port I/O control codes](https://msdn.microsoft.com/library/windows/hardware/ff565367) so that they can set up the SCSI port driver's I/O stack location correctly before passing on these requests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Attaching a User-Mode Debugger
-author: windows-driver-content
 description: Attaching a User-Mode Debugger
 ms.assetid: ba8eeabd-946d-46fa-b9ed-b9a674315bd4
 keywords:
@@ -39,9 +38,9 @@ After the driver manager starts the driver host process for the device, you can 
 
     You can use the operating system-supplied Tasklist.exe to determine the PID of a host process. (Tasklist.exe is a command-line application that provides a user with a list of processes that are running on the operating system.)
 
- 
+ 
 
- 
+ 
 
 
 

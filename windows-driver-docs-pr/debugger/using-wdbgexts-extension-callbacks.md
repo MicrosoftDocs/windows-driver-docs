@@ -3,7 +3,6 @@ title: Using WdbgExts Extension Callbacks
 description: Using WdbgExts Extension Callbacks
 ms.assetid: b9a2f30a-b09c-43eb-b105-a6b0ffdb1342
 keywords: ["WdbgExts extensions, callbacks, using"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,7 +23,7 @@ When you write a WdbgExts extension DLL, you can export certain functions:
 
     For example, you could create global variables named ExtensionApis, SavedMajorVersion, and SavedMinorVersion as shown in the following example.
 
-    ```ManagedCPlusPlus
+    ```cpp
     WINDBG_EXTENSION_APIS64 ExtensionApis;
     USHORT SavedMajorVersion;
     USHORT SavedMinorVersion;
@@ -43,9 +42,9 @@ When you write a WdbgExts extension DLL, you can export certain functions:
 
 -   You can optionally export a function called [*CheckVersion*](https://msdn.microsoft.com/library/windows/hardware/ff539096). The debugger calls this routine every time you use an extension command. You can use this to print out version mismatch warnings when your DLL is of a slightly different version than the debugger, but not different enough to prevent it from running.
 
- 
+ 
 
- 
+ 
 
 
 

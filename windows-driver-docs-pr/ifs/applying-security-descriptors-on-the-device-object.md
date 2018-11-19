@@ -1,6 +1,5 @@
 ---
 title: Applying Security Descriptors on the Device Object
-author: windows-driver-content
 description: Applying Security Descriptors on the Device Object
 ms.assetid: c0697021-cf78-4b85-b959-342179da5621
 keywords:
@@ -67,9 +66,9 @@ The purpose of applying specific security descriptors to device objects is to en
 
 An interesting issue in these cases is how to handle security at the boundary between the I/O manager responsible for checking access to the driver device object and the device driver, which implements whatever security policy is appropriate for the driver. Traditionally, if the object being opened is the name of the device itself, the I/O manager will perform a full access check against the device object directly using its security descriptor. However, if the object being opened indicates a path inside the driver itself, the I/O manager will only check to ensure that traverse access is granted to the device object. Typically, this traverse right is granted because most threads have been granted **SeChangeNotifyPrivilege**, which corresponds with granting the traverse right to the directory. A device that does not support name structure would normally request that the I/O manager perform a full security check. This is done by setting the **FILE\_DEVICE\_SECURE\_OPEN** bit in the device characteristics field. A driver that includes a mix of such device objects should set this characteristic for those devices that do not support name structure. For example, a file system would set this option on its named device object (which does not support a naming structure), but would not set this option on its unnamed device objects (a volume, for example), which do support naming structure. Failing to set this bit correctly is a common bug in drivers and can allow inappropriate access to the device. For drivers that use the attachment interface ([**IoAttachDeviceToDeviceStackSafe**](https://msdn.microsoft.com/library/windows/hardware/ff548236), for example), the **FILE\_DEVICE\_SECURE\_OPEN** bit is set if this field is set in the device to which the driver is attaching. So, filter drivers don't need to worry about this particular aspect of security checking.
 
- 
+ 
 
- 
+ 
 
 
 

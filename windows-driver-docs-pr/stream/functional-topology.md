@@ -1,6 +1,5 @@
 ---
 title: Functional Topology
-author: windows-driver-content
 description: Functional Topology
 ms.assetid: f25b3581-5561-4668-8549-65506b03815d
 keywords:
@@ -38,9 +37,9 @@ The template topology in the preceding figure contains five different node types
 
 The network provider must examine this topology and determine the transformations that the filter performs on a signal in any particular graph. For more information about the data structures that describe the template topology, see [Broadcast Driver Architecture Minidrivers](broadcast-driver-architecture-minidrivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

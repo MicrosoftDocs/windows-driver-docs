@@ -24,7 +24,7 @@ To send a restart notification, NDIS calls a protocol driver's [*ProtocolNetPnPE
 
 **Note**  While the binding was paused, NDIS could have reconfigured the driver stack. The new stack configuration can support a different set of capabilities for the underlying adapter. These new capabilities can affect how the protocol driver communicates on a binding.
 
- 
+ 
 
 The protocol driver should use the information in the [**NDIS\_PROTOCOL\_RESTART\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566844) structure to avoid unnecessary OID requests.
 
@@ -40,9 +40,9 @@ In the Restarting state, the protocol driver can:
 
 After the driver is ready to resume send and receive operations for the binding, the binding enters the Running state.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Command String Format
-author: windows-driver-content
 description: Command String Format
 ms.assetid: 3b33b261-08c7-4441-94f5-6c9de53ae349
 keywords:
@@ -37,11 +36,11 @@ As an example, a printer's command to set a rectangle's gray fill percentage mig
 
 To send a percent sign (**%**) to a printer, include two percent sign characters (**%%**) in the command string. If the percent sign is at the end of the command string, you must use the hexadecimal equivalent, as in:
 
-**"***string* **&lt;25 25&gt;"**.
+**"**<em>string</em> **&lt;25 25&gt;"**.
 
- 
+ 
 
- 
+ 
 
 
 

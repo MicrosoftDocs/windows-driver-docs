@@ -1,6 +1,5 @@
 ---
 title: USB I/O Targets in UMDF
-author: windows-driver-content
 description: USB I/O Targets in UMDF
 ms.assetid: e08ca910-1b28-4809-9a5b-db3730cda31a
 keywords:
@@ -31,9 +30,9 @@ Each universal serial bus (USB) device, and each pipe that a USB device interfac
 -   [File Creation by a USB I/O Target](file-creation-by-a-usb-i-o-target.md)
 -   [Calling WinUSB from UMDF](escaping-to-winusb.md)
 
- 
+ 
 
- 
+ 
 
 
 

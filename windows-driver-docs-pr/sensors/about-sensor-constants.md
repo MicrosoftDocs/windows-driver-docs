@@ -1,6 +1,5 @@
 ---
 title: About Sensor Constants
-author: windows-driver-content
 description: About Sensor Constants
 ms.assetid: 9c26e305-0d5c-4442-9bcf-a9cdc1778c6b
 ms.date: 07/20/2018
@@ -61,9 +60,9 @@ You can define custom values for categories, sensor types, data fields, properti
 
 For guidelines and an example of how to define custom values for constants, see [Defining Custom Values for Constants](defining-custom-values-for-constants.md).
 
- 
+ 
 
- 
+ 
 
 
 

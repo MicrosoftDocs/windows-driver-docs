@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The **KeAcquireQueuedSpinLock** routine is reserved for system use.
 
- 
+ 
 
- 
+ 
 
 
 

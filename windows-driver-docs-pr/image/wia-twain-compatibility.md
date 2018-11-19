@@ -1,6 +1,5 @@
 ---
 title: WIA-TWAIN Compatibility
-author: windows-driver-content
 description: WIA-TWAIN Compatibility
 ms.assetid: f4fe85cc-a201-4cf7-a0f9-74d7514f1447
 ms.date: 04/20/2017
@@ -29,11 +28,11 @@ Either way, you should rebuild your tree so that it reflects any changes made to
 
 **Note**   While your TWAIN and WIA drivers may exist in the same DLL, WIA and TWAIN drivers cannot share the same UI. Each driver must have its own UI.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

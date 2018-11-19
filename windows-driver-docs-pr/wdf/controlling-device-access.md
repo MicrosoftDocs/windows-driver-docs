@@ -1,6 +1,5 @@
 ---
 title: Controlling Device Access
-author: windows-driver-content
 description: Controlling Device Access
 ms.assetid: E4FF73B3-87D0-458E-A042-E5A8F3DB1677
 ms.date: 04/20/2017
@@ -51,9 +50,9 @@ RtlInitUnicodeString(&sddlString, L"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)");
 status = WdfDeviceInitAssignSDDLString(DeviceInit, &sddlString);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

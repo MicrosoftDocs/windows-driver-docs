@@ -3,7 +3,6 @@ title: poolused
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
 ms.assetid: e801342d-2536-43a3-992b-99942eb3c5ae
 keywords: ["poolused Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -43,7 +42,7 @@ Sorts the display by the amount of paged memory use.
 
 **Note**  You can use the [**!session**](-session.md) command to switch between sessions.
 
- 
+ 
 
 <span id="_______TagString______"></span><span id="_______tagstring______"></span><span id="_______TAGSTRING______"></span> *TagString*   
 Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asterisk (\*) can be used to represent any number of characters; the question mark (?) can be used to represent exactly one character. Unless an asterisk is used, *TagString* must be exactly four characters in length.
@@ -67,7 +66,7 @@ Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asteri
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -132,9 +131,9 @@ Here is a partial example of the output from this extension:
  TOTAL     3570214 209120008     38769 13066104
 ```
 
- 
+ 
 
- 
+ 
 
 
 

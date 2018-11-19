@@ -1,6 +1,5 @@
 ---
 title: Specifying Context Information
-author: windows-driver-content
 description: Specifying Context Information
 ms.assetid: 7133529f-5a6c-4df1-8d03-1c79c0d98fa9
 keywords: ["filtering registry calls WDK kernel , context information", "registry filtering drivers WDK kernel , context information", "context information", "context information WDK filter registry call"]
@@ -33,9 +32,9 @@ The configuration manager provides several ways for registry filtering drivers t
 
     The **CmSetCallbackObjectContext** routine and **RegNtCallbackObjectContextCleanup** notification are available starting with Windows Vista.
 
- 
+ 
 
- 
+ 
 
 
 

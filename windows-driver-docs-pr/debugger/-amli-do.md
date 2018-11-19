@@ -3,7 +3,6 @@ title: amli do
 description: The amli do extension displays an AML data object.
 ms.assetid: 5597f691-5402-42da-84f5-d5993231191e
 keywords: ["amli do Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,8 +20,9 @@ The **!amli do** extension displays an AML data object.
 
 Syntax
 
+```dbgcmd
     !amli do Address
-
+```
 
 ## <span id="ddk__amli_do_dbg"></span><span id="DDK__AMLI_DO_DBG"></span>Parameters
 
@@ -38,9 +38,9 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

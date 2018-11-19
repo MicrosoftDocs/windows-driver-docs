@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_AP_ASSOCIATION_REQUEST_RECEIVED
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_AP_ASSOCIATION_REQUEST_RECEIVED to indicate that a Wi-Fi Association Request Frame has been received for an operational Wi-Fi Direct Group Owner.
 ms.assetid: c207ada5-39fd-4326-9b62-4844d3bb01af
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_AP\_ASSOCIATION\_REQUEST\_RE
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_AP\_ASSOCIATION\_REQUEST\_RE
 |----------------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------|
 | [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926315) |                                |          | The incoming Association Request information. |
 
- 
+ 
 
 Requirements
 ------------
@@ -53,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

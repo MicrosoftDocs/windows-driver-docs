@@ -1,6 +1,5 @@
 ---
 title: The SRV_CALL Structure
-author: windows-driver-content
 description: The SRV_CALL Structure
 ms.assetid: 9a3bb194-0289-47f4-a5c8-848d8d82cdd7
 keywords:
@@ -50,9 +49,9 @@ The finalization of a SRV\_CALL structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the SRV\_CALL structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

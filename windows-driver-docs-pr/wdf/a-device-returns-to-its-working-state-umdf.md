@@ -1,6 +1,5 @@
 ---
 title: A Device Returns to Its Working State
-author: windows-driver-content
 description: A Device Returns to Its Working State
 ms.assetid: 2b192eea-f731-4d61-be19-95724bf7b04a
 keywords:
@@ -37,9 +36,9 @@ For each UMDF-based function and filter driver that supports the device, the fra
 
 To see a diagram that shows these steps, see [A User Plugs in a Device](a-user-plugs-in-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

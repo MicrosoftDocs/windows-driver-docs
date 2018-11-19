@@ -27,9 +27,9 @@ Conversely, when a gigabit Ethernet network adapter transitions to the fully-on 
 
 While a miniport driver's underlying network adapter is transitioning to or from a low-power state, the miniport must not indicate either a change in link speed or a change in connection status. For more information about indicating a change in link speed, see [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391). For more information about indicating a change in connection status, see [Indicating Connection Status](indicating-connection-status.md).
 
- 
+ 
 
- 
+ 
 
 
 

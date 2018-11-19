@@ -1,6 +1,5 @@
 ---
 title: Event Reporting
-author: windows-driver-content
 description: Event Reporting
 ms.assetid: 4c3ffa7e-d0b3-483c-9f6b-3fe8ae997cf0
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ The WIA architecture enables a still image device to notify the WIA minidriver w
 
 The WIA architecture supports interrupt events and polled events. For more information about these events, see [WIA Driver Event Support](wia-driver-event-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

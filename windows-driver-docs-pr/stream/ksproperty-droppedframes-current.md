@@ -47,13 +47,13 @@ The KSPROPERTY\_DROPPED\_FRAMES\_CURRENT property dynamically retrieves the vide
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565138)</p></td>
-<td><p>[<strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565138)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565138" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565138)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565138" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565138)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S structure that specifies the current picture number, the count of dropped frames, and the average size of the frames captured.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565138)
 
- 
+ 
 
- 
+ 
 
 
 

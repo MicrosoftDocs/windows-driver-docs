@@ -3,7 +3,6 @@ title: lsp (Set Number of Source Lines)
 description: The lsp command controls how many source lines are displayed while you step through or execute code or use the ls and lsa commands.
 ms.assetid: 350933f1-5459-4ba2-9ca7-a42341cf95de
 keywords: ["lsp (Set Number of Source Lines) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **lsp** command controls how many source lines are displayed while you step through or execute code or use the [**ls and lsa commands**](ls--lsa--list-source-lines-.md).
 
-```
+```dbgcmd
 lsp [-a] LeadingLines TrailingLines 
 lsp [-a] TotalLines 
 lsp [-a] 
@@ -63,7 +62,7 @@ Specifies the total number of lines to show. This number is divided evenly betwe
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +75,9 @@ When you step through a program or break in after program execution, the previou
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

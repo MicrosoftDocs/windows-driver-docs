@@ -1,6 +1,5 @@
 ---
 title: Which Type of DPC Should You Use
-author: windows-driver-content
 description: Which Type of DPC Should You Use
 ms.assetid: 7a8e6d75-5573-4a94-a895-fa2f70856807
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
@@ -34,9 +33,9 @@ For example, consider some of the design challenges involved in writing a serial
 
 Consequently, a serial driver might maintain internal queues for the read, write, purge, and wait operations that user-mode COM port applications can request. It also could maintain reference counts or use some other tracking mechanism, such as a set of flags, for the IRPs in its internal queues. Its ISR would call **KeInsertQueueDpc** with any of a number of driver-allocated and initialized DPC objects, each associated with a driver-supplied *CustomDpc* routine.
 
- 
+ 
 
- 
+ 
 
 
 

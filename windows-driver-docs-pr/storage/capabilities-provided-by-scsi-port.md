@@ -1,6 +1,5 @@
 ---
 title: Capabilities Provided by SCSI Port
-author: windows-driver-content
 description: Capabilities Provided by SCSI Port
 ms.assetid: 549dc3f1-b62f-4047-bdc0-7e24d5bc6ad5
 ms.date: 04/20/2017
@@ -74,9 +73,9 @@ SCSI Port provides services to the miniport driver by means of the SCSI Port lib
 
 For a complete list of the library routines that SCSI Port makes available to SCSI Port miniport drivers, see [SCSI Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff565375).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SPB I/O Requests
-author: windows-driver-content
 description: These IOCTLs are sent by a client (peripheral driver) handled by controller driver.
 ms.assetid: 4b8ed75e-1f03-4b7a-ad9d-0dfa9b20274c
 ms.date: 11/29/2017
@@ -51,14 +50,14 @@ The user-mode driver or kernel-mode driver for a device on the bus sends this I/
 This IOCTL is supported only by SPB controller drivers for buses, such as SPI, that can read and write data simultaneously.
 
 The write and read buffers for the full-duplex transfer are described by an SPB_TRANSFER_LIST structure. This structure must use the following format:
--    The array of SPB_TRANSFER_LIST_ENTRY structures contains exactly two elements. The first element describes the write buffer (Direction = SpbTransferDirectionToDevice). The second element describes the read buffer (Direction = SpbTransferDirectionFromDevice).
--    The DelayInUs members of the two SPB_TRANSFER_LIST_ENTRY structures must be zero.
-The buffer formats for the write buffer and read buffer can be any of the following:
-    -    SpbTransferBufferFormatSimple
-    -    SpbTransferBufferFormatList
-    -    SpbTransferBufferFormatSimpleNonPaged
-    -    SpbTransferBufferFormatMdl
-The last two formats in the preceding list can be used only by kernel-mode clients. The formats for the write and read buffers are not required to be the same. For more information about these buffer formats, see SPB_TRANSFER_BUFFER_FORMAT.
+- The array of SPB_TRANSFER_LIST_ENTRY structures contains exactly two elements. The first element describes the write buffer (Direction = SpbTransferDirectionToDevice). The second element describes the read buffer (Direction = SpbTransferDirectionFromDevice).
+- The DelayInUs members of the two SPB_TRANSFER_LIST_ENTRY structures must be zero.
+  The buffer formats for the write buffer and read buffer can be any of the following:
+  -    SpbTransferBufferFormatSimple
+  -    SpbTransferBufferFormatList
+  -    SpbTransferBufferFormatSimpleNonPaged
+  -    SpbTransferBufferFormatMdl
+  The last two formats in the preceding list can be used only by kernel-mode clients. The formats for the write and read buffers are not required to be the same. For more information about these buffer formats, see SPB_TRANSFER_BUFFER_FORMAT.
 
 A successful operation might set the Information member to a value that is less than the sum of the sizes of the write buffer and read buffer, which can occur if the request is canceled, or if the operation cannot write the full contents of the write buffer to the device, or completely fill the read buffer with data read from the device.
 

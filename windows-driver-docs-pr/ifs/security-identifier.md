@@ -1,6 +1,5 @@
 ---
 title: Security Identifier
-author: windows-driver-content
 description: Security Identifier
 ms.assetid: e4c39d83-6f32-406c-b8d5-d41305a8976f
 keywords:
@@ -109,9 +108,9 @@ The following code example demonstrates how to create a SID using the **SecLooku
 
 Either of these approaches are valid, although the latter code is preferred. Note that these code examples use local buffers for storing the SID. These buffers cannot be used outside the current call context. If the SID buffer needed to be persistent, the buffer should be allocated from pool memory.
 
- 
+ 
 
- 
+ 
 
 
 

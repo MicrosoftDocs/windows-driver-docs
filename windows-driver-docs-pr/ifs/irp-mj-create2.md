@@ -1,6 +1,5 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_CREATE operation
-author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_CREATE operation
 ms.assetid: 30684025-9da0-4f4c-a850-ab0390bef091
 ms.date: 04/20/2017
@@ -151,7 +150,7 @@ The following only applies when an existing stream of a file is being opened (th
 </li>
 <li><b>AND:</b><ul>
 <li>
-<p>A "writable" desired access was requested on the stream which was not opened for FILE_SHARE_READ access.  Note that "writeable" access is defined as any attribute other than:</p>
+<p>A &quot;writable&quot; desired access was requested on the stream which was not opened for FILE_SHARE_READ access.  Note that &quot;writeable&quot; access is defined as any attribute other than:</p>
 <ul>
 <li>FILE_READ_ATTRIBUTES</li>
 <li>FILE_WRITE_ATTRIBUTES</li>
@@ -365,7 +364,7 @@ The following only applies when an existing stream of a file is being opened (th
 </td>
 </tr>
 </table>
- 
+ 
 
 The file system performs additional checks for Batch and Filter oplocks (rather than the oplock package itself) when processing an IRP_MJ_CREATE operation, which impact whether the file system asks the oplock package to perform oplock break processing. This is a case where operations on one data stream can impact the oplocks on other data streams of the same file (that is, the last two list items of the following criteria list). If one or more of the following criteria are met, the file system sends a request to the oplock package to perform oplock break processing:
 
@@ -379,9 +378,9 @@ When the file system decides to ask the oplock package to perform oplock break p
 
 The check to break Batch and Filter oplocks occurs before the share access checks are made. This means the Batch or Filter oplock is broken even if the open request ultimately fails due to a sharing violation.
 
- 
+ 
 
- 
+ 
 
 
 

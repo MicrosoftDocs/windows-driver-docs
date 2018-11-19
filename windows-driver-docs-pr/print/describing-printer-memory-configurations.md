@@ -1,6 +1,5 @@
 ---
 title: Describing Printer Memory Configurations
-author: windows-driver-content
 description: Describing Printer Memory Configurations
 ms.assetid: 4a85788a-9713-42fb-a788-4d45f9aaabac
 keywords:
@@ -71,9 +70,9 @@ Whichever method you use, the [Unidrv user interface](unidrv-user-interface.md) 
 
 If your minidriver specifies memory configurations, it can also specify the types of data that can be stored in printer memory and use up its available space. The \*MemoryUsage attribute is one of the [printer capability attributes](printer-capability-attributes.md), and you can use it to indicate to Unidrv whether font, raster, or vector data, or a combination of the three, are stored within printer memory. For each type specified, Unidrv attempts to keep track of how much printer memory is in use.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Segmentation Filters
-author: windows-driver-content
 description: Introduction to Segmentation Filters
 ms.assetid: 3f73aa08-c3ef-4e97-9e3e-a1f0325cd599
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The following figure shows the segmentation filter component running in the appl
 
 ![diagram illustrating a segmentation filter component running in an application's process](images/wia-components-app-process.png)
 
- 
+ 
 
- 
+ 
 
 
 

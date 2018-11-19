@@ -1,6 +1,5 @@
 ---
 title: How File System Filter Drivers Are Different from Device Drivers
-author: windows-driver-content
 description: How File System Filter Drivers Are Different from Device Drivers
 ms.assetid: 64a59564-a4d7-4174-82d3-60bd1a30b2d8
 keywords:
@@ -45,9 +44,9 @@ Because file system filter drivers are not device drivers, they do not perform [
 
 Unlike device filter drivers, which can attach above or below a target device's function driver, file system filter drivers can attach only above a target file system driver. Thus, in device-driver terms, a file system filter driver can be only an upper filter, never a lower filter.
 
- 
+ 
 
- 
+ 
 
 
 

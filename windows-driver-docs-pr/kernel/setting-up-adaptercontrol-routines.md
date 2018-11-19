@@ -1,6 +1,5 @@
 ---
 title: Setting Up AdapterControl Routines
-author: windows-driver-content
 description: Setting Up AdapterControl Routines
 ms.assetid: 0d2add25-711a-4e5d-8409-b7ce60b08858
 keywords: ["AdapterControl routines, setting up", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
@@ -24,9 +23,9 @@ A driver's dispatch routine for a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.
 
 The returned adapter object pointer, the entry point of the driver's *AdapterControl* routine, the *DeviceObject* pointer representing the target device for the current IRP, a *Context* pointer to an area already set up for the *AdapterControl* routine, and a *NumberOfMapRegisters* value, which can be less than the maximum possible number for smaller transfer requests, must be passed in calls to [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573). Usually, a driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) (or possibly [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049)) routine sets up the area at *Context* before it calls **AllocateAdapterChannel**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Common-Buffer Bus-Master DMA
-author: windows-driver-content
 description: Using Common-Buffer Bus-Master DMA
 ms.assetid: 55b5d819-e257-4863-b02a-5eeb83f72c65
 keywords: ["continuous DMA WDK kernel", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
@@ -46,9 +45,9 @@ Otherwise, the driver can use the allocated common buffer as a driver- and adapt
 
 When the PnP manager sends an IRP that stops or removes the device, the driver must call [**FreeCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff546511) to release each common buffer it has allocated.
 
- 
+ 
 
- 
+ 
 
 
 

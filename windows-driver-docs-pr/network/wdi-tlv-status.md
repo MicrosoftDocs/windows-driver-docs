@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_STATUS
-author: windows-driver-content
 description: WDI_TLV_STATUS is a TLV that contains a status value.
 ms.assetid: 62A331EB-5765-41E9-A1CC-0CFF69BC4EF3
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of an NDIS\_STATUS.
 |--------------|-------------------------|
 | NDIS\_STATUS | The NDIS\_STATUS value. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

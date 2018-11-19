@@ -25,7 +25,7 @@ To install and configure the Network Monitor tool, complete the following steps.
     5.  ..\\NplAutoProfile.ps1
         **Note**  The WPD parsers are included in the Windows Driver Kit.
 
-         
+         
 
 4.  Configure the *NetMon.exe* options by using the Tools/Options dialog:
     1.  In the **General** tab, check the **Use fixed width font in Frame Summary** box.
@@ -112,9 +112,9 @@ The Network Monitor tool provides several filtering capabilities.
 
     WPDMTP.CorrespondingCommand.MTPOpcode == MTP\_OPCODE\_GETSERVICEPROPERTIES
 
- 
+ 
 
- 
+ 
 
 
 

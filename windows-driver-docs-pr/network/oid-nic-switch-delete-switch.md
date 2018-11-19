@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_DELETE_SWITCH
-author: windows-driver-content
 description: NDIS issues an object identifier (OID) set request of OID_NIC_SWITCH_DELETE_SWITCH to delete a NIC switch from a network adapter.
 ms.assetid: 5785B30F-B67F-4D5A-A93A-243D33B9CAE8
 ms.date: 08/08/2017
@@ -18,7 +17,7 @@ NDIS issues this OID set request to the miniport driver of the network adapter's
 
 **Note**  Overlying drivers, such as protocol or filter drivers, cannot issue this OID method request to the PF miniport driver.
 
- 
+ 
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_DELETE\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451575) structure.
 
@@ -43,7 +42,7 @@ When it receives the OID method request of OID\_NIC\_SWITCH\_DELETE\_SWITCH, the
 
     **Note**  If the PF miniport driver supports static creation and configuration of NIC switches, it must only call [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481) when [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) is called.
 
-     
+     
 
 For more information, see [Deleting a NIC Switch](https://msdn.microsoft.com/library/windows/hardware/hh439415).
 
@@ -69,7 +68,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the [<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622) function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a> function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -77,12 +76,12 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_REQUEST_ABORTED</strong></p></td>
-<td><p>The miniport driver stopped processing the request. For example, NDIS called the [<em>MiniportResetEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.</p></td>
+<td><p>The miniport driver stopped processing the request. For example, NDIS called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559432" data-raw-source="[&lt;em&gt;MiniportResetEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559432)"><em>MiniportResetEx</em></a> function.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 NDIS returns one of the following status codes for this request:
 
@@ -108,16 +107,16 @@ NDIS returns one of the following status codes for this request:
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_FILE_NOT_FOUND</strong></p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_DELETE_SWITCH_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451575) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451575" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_DELETE_SWITCH_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451575)"><strong>NDIS_NIC_SWITCH_DELETE_SWITCH_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer is too small. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer is too small. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -157,9 +156,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_FREE\_VF](oid-nic-switch-free-vf.md)
 
- 
+ 
 
- 
+ 
 
 
 

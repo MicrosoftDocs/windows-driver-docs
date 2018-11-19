@@ -1,6 +1,5 @@
 ---
 title: Custom Property Sets and Interfaces
-author: windows-driver-content
 description: Custom Property Sets and Interfaces
 ms.assetid: ea1337e4-c8e5-4971-b602-c066b5a6fd07
 keywords:
@@ -61,16 +60,15 @@ public:
     STDMETHODIMP NonDelegatingQueryInterface(
         REFIID riid,
         PVOID* ppv);
- 
+
     STDMETHODIMP Set( 
             IN long Property,
             IN long lValue,
             IN long Flags);
- 
+
 private:
     HANDLE m_ObjectHandle;
 };
- 
 ```
 
 **Camera.cpp**
@@ -183,9 +181,9 @@ HKCR,CLSID\{71F96465-78F3-11d0-A18C-00A0C9118956}\InprocServer32,ThreadingModel,
 HKLM,System\CurrentControlSet\Control\MediaSets\{C6E13370-30AC-11d0-A18C-00A0C9118956}\PropertyPages\{71F96465-78F3-11d0-A18C-00A0C9118956},,,%PropPage_CameraControl%
 ```
 
- 
 
- 
+
+
 
 
 

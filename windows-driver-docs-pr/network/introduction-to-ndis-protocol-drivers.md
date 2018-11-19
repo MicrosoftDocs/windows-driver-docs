@@ -13,7 +13,7 @@ An NDIS protocol driver exports a set of *ProtocolXxx* functions at its lower ed
 
 **Note**  The miniport driver upper edge of an intermediate driver (virtual miniport) does not manage physical devices. Underlying miniport drivers manage physical devices.
 
- 
+ 
 
 Protocol drivers always use NDIS-provided functions to communicate with underlying NDIS drivers to send and receive network data. For example, a protocol driver that has a connectionless lower-edge (which communicates with underlying drivers for connectionless media, such as Ethernet) must call [**NdisSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564535) to send network data to an underlying NDIS driver. The protocol driver can call [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) to query or set OIDs that underlying connectionless drivers support. A protocol driver that has a connection-oriented lower edge (which communicates with underlying drivers for connection-oriented media, such as ISDN) must call [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728) to send network data to a lower-level NDIS driver. It can also call [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) to query or set OIDs that are supported by underlying connection-oriented drivers.
 
@@ -21,9 +21,9 @@ NDIS also provides a set of **Ndis*Xxx*** functions that hide the details of the
 
 Developers of protocol drivers should use the same [programming considerations](network-driver-programming-considerations.md) that are applied to other NDIS drivers.
 
- 
+ 
 
- 
+ 
 
 
 

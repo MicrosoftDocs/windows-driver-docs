@@ -1,6 +1,5 @@
 ---
 title: OID_PD_OPEN_PROVIDER
-author: windows-driver-content
 description: An NDIS protocol or filter driver sends an object identifier (OID) method request of OID_PD_OPEN_PROVIDER to a PD-capable miniport driver to gain access to the PD capability in the miniport driver's PDPI provider object.
 ms.assetid: B13E0FAC-A179-4785-9B39-CB498064947B
 ms.date: 08/08/2017
@@ -56,9 +55,9 @@ Requirements
 
 [OID\_PD\_CLOSE\_PROVIDER](oid-pd-close-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

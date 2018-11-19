@@ -1,6 +1,5 @@
 ---
 title: Creating IRPs for Lower-Level Drivers
-author: windows-driver-content
 description: Creating IRPs for Lower-Level Drivers
 ms.assetid: 2d298eb1-6169-4742-80c1-200223a2d4fa
 keywords: ["IRPs WDK kernel , creating", "asynchronous requests WDK IRPs", "IRPs WDK kernel , asynchronous requests"]
@@ -62,9 +61,9 @@ Instead, if an intermediate driver creates IRPs for lower drivers, it should cal
 
 However, a driver is more likely to call **IoBuildDeviceIoControlRequest** to allocate device control IRPs than **IoBuildSynchronousFsdRequest**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ The following description starts with the loading of the miniport driver and des
 
 6.  The PnP manager assigns resources to the NIC, if necessary.
 
- 
+ 
 
- 
+ 
 
 
 

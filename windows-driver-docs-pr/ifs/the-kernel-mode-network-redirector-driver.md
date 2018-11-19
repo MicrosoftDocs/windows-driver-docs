@@ -1,6 +1,5 @@
 ---
 title: The Kernel-Mode Network Redirector Driver
-author: windows-driver-content
 description: The Kernel-Mode Network Redirector Driver
 ms.assetid: 706daaf4-6ad3-4548-86b4-a32e5bb0abe1
 keywords:
@@ -29,9 +28,9 @@ This section introduces concepts that are important to developers of kernel-mode
 
 [Oplock Semantics](oplock-semantics.md)
 
- 
+ 
 
- 
+ 
 
 
 

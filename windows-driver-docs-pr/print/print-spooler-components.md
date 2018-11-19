@@ -1,6 +1,5 @@
 ---
 title: Print Spooler Components
-author: windows-driver-content
 description: Print Spooler Components
 ms.assetid: 42b5e6cf-b434-4734-86f3-b3b9d15ea468
 keywords:
@@ -29,9 +28,9 @@ This section explains how to customize print spooler components. The following t
 
 [Displaying UI in Operating Systems Prior to Windows Vista](displaying-a-ui-in-operating-systems-prior-to-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

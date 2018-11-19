@@ -1,6 +1,5 @@
 ---
 title: OID_PD_CLOSE_PROVIDER
-author: windows-driver-content
 description: An NDIS protocol or filter driver sends an object identifier (OID) method request of OID_PD_CLOSE_PROVIDER to the PDPI provider to give up access to the PD capability in a PDPI provider object.
 ms.assetid: 8A504A81-6DC8-415C-9FDC-F03657A0EB87
 ms.date: 08/08/2017
@@ -53,9 +52,9 @@ Requirements
 
 [OID\_PD\_OPEN\_PROVIDER](oid-pd-open-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

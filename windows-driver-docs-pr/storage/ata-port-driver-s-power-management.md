@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver's Power Management
-author: windows-driver-content
 description: ATA Port Driver's Power Management
 ms.assetid: 01c37fed-3b5b-4dd9-bdbd-5c5499a2ddcf
 keywords:
@@ -25,8 +24,8 @@ The miniport driver can begin a power state transition by calling [**AtaPortRequ
 
 Doing idle detection from a miniport driver is strongly discouraged.
 
- 
+ 
 
- 
+ 
 
 

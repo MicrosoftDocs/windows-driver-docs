@@ -43,7 +43,7 @@ The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

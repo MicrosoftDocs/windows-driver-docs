@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT
-author: windows-driver-content
 description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a TLV that contains an Action Frame device context.
 ms.assetid: D8AF374A-0AD0-4856-B05C-B8E3A3F1572B
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains an Action Frame device context. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

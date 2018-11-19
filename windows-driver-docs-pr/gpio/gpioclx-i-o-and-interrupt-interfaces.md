@@ -1,6 +1,5 @@
 ---
 title: GpioClx I/O and Interrupt Interfaces
-author: windows-driver-content
 description: Typically, the clients of a GPIO controller are drivers for peripheral devices that connect to GPIO pins.
 ms.assetid: F75E9B21-9DA4-4DD9-BB44-59E19EDFC099
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ When client drivers receive interrupt requests or send I/O requests to GPIO pins
 
 GpioClx does all the processing that is required to manage I/O and interrupt connections that are opened by clients. The GPIO controller driver—by delegating the management of these connections to GpioClx—is responsible only for the relatively simple task of accessing the hardware registers in the GPIO controller device. The GPIO controller driver does not need to know the client driver for which a particular access is made.
 
- 
+ 
 
- 
+ 
 
 
 

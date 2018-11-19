@@ -1,6 +1,5 @@
 ---
 title: Problems with Logical Operators in GDL Preprocessing
-author: windows-driver-content
 description: Problems with Logical Operators in GDL Preprocessing
 ms.assetid: 8ba1758c-8b8e-4eb2-8625-ffee213025aa
 keywords:
@@ -84,9 +83,9 @@ However, you should use the following code example instead.
 #Undefine: TempSymbol
 ```
 
- 
+ 
 
- 
+ 
 
 
 

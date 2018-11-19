@@ -1,6 +1,5 @@
 ---
 title: IStiUSD COM Interface
-author: windows-driver-content
 description: IStiUSD COM Interface
 ms.assetid: 2f805955-8c66-4c9e-839e-c8a98c6637a8
 ms.date: 04/20/2017
@@ -64,9 +63,9 @@ Specifies an event handle that the minidriver should use to inform the caller of
 <a href="" id="istiusd--unlockdevice"></a>[**IStiUSD::UnLockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543843)  
 Unlocks a device.
 
- 
+ 
 
- 
+ 
 
 
 

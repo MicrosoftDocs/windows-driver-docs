@@ -1,6 +1,5 @@
 ---
 title: title element
-author: windows-driver-content
 description: The required title element provides text that is displayed in the title of the event notification message.
 ms.assetid: 60583593-9fe9-4c3c-ab86-3e7c37a8e199
 keywords: ["title element Print Devices"]
@@ -87,7 +86,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message balloon on the client computer.</p></td>
 </tr>

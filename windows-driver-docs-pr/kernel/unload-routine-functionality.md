@@ -1,6 +1,5 @@
 ---
 title: Unload Routine Functionality
-author: windows-driver-content
 description: Unload Routine Functionality
 ms.assetid: a36b4687-df1d-498f-b9f3-d13ae2a9a3cd
 keywords: ["Unload routines WDK kernel , functionality"]
@@ -20,9 +19,9 @@ Just as the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardwar
 
 A non-PnP driver's *Unload* routine must free device objects and release driver-allocated resources. In short, it must undo the work performed by its corresponding **DriverEntry** and [*Reinitialize*](https://msdn.microsoft.com/library/windows/hardware/ff561022) routines in initializing the driver, its devices, and its resources. See [A Non-PnP Driver's Unload Routine](non-pnp-driver-s-unload-routine.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Axis Selection Overrides
-author: windows-driver-content
 description: Axis Selection Overrides
 ms.assetid: 151c3d19-2f80-4d71-a004-10c16c691fb9
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "overriding axis selections WDK joysticks", "usage pages WDK HID"]
@@ -20,7 +19,7 @@ With the release of DirectX 8.0, these members became relevant to HID-compliant 
 
 **Note**   Axis mapping is static, so the behavior is undefined if these values are changed while the device is in use. If the suggested match for an axis cannot be made, processing continues as though no mapping had been suggested.
 
- 
+ 
 
 For example, imagine a joystick device designed for use on a platform with a complete implementation of the HID\_USAGE\_PAGE\_GAME controls. Such a device might describe its X and Y axes in HID as:
 
@@ -55,7 +54,7 @@ For example, imagine a joystick device designed for use on a platform with a com
 </tbody>
 </table>
 
- 
+ 
 
 Because these scenarios are not directly recognized by DirectInput (or JoyHID) they are not very useful to games. To get them recognized as the X and Y axes by DirectInput, the following registry entries could be added:
 
@@ -176,15 +175,15 @@ When the JoyHID/VJoyD path is taken, the following tables match WinMM axes to HI
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Mappings for the R, U and V axes fall through to the next axis if a mapping is not found, whereas X, Y and Z mappings are completely independent of each other. This is because VJoyD.VxD only supports contiguous sets of axes (for example, X, Y, Z, R is supported, but X, Y, Z, U is not). The only exceptions to this rule are made for joysticks that use the precise combinations of X, Y and R, or X, Y, Z, R and V. This method of mapping helps to avoid the possibility that JoyHID.VxD makes axis assignments that VJoyD.VxD cannot tolerate.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

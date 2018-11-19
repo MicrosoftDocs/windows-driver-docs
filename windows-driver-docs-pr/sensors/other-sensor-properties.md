@@ -1,6 +1,5 @@
 ---
 title: Other sensor properties
-author: windows-driver-content
 description: In addition to the Common sensor properties and the Enumeration properties, there are other sensor properties that are specific to certain types of sensors. This section discusses these other properties.
 ms.assetid: E8649FE1-3BC3-4F55-953B-82A1AACCF572
 ms.date: 07/20/2018
@@ -23,16 +22,16 @@ In addition to the [Common sensor properties](common-sensor-properties.md) and t
 |[Activity sensor properties](activity-sensor-properties.md)|The property keys for the activity sensor.|
 |[Pedometer sensor property](pedometer-sensor-property.md)|The property key for the pedometer.|
 
- 
+ 
 
 ## Related topics
 
 
 [Sensor properties](sensor-properties2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Roadmap for Developing Storport Miniport Drivers
-author: windows-driver-content
 description: Roadmap for Developing Storport Miniport Drivers
 ms.assetid: 43a8f1ee-b2d3-4f97-b7e5-d59790ca6754
 ms.date: 04/20/2017
@@ -50,9 +49,9 @@ ms.localizationpriority: medium
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

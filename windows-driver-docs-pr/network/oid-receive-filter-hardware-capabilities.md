@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES
-author: windows-driver-content
 description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES to obtain the receive filtering hardware capabilities of a network adapter.
 ms.assetid: 2b80944e-5309-4cb0-a69a-331f8fd3f7a4
 ms.date: 08/08/2017
@@ -31,7 +30,7 @@ The [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library
 
 **Note**  All the receive filtering hardware capabilities of a network adapter are returned through an OID query request of OID\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES, regardless of whether a capability is enabled or disabled.
 
- 
+ 
 
 Starting with NDIS 6.20, miniport drivers register the currently enabled receive filtering hardware capabilities of the network adapter when its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function is called. Miniport drivers register these capabilities by following these steps:
 
@@ -91,9 +90,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864)
 
- 
+ 
 
- 
+ 
 
 
 

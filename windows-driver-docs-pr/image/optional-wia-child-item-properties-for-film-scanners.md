@@ -1,6 +1,5 @@
 ---
 title: Optional WIA Child Item Properties for Film Scanners
-author: windows-driver-content
 description: Optional WIA Child Item Properties for Film Scanners
 ms.assetid: 85364b59-e0a8-4a82-bc89-6f160609f35d
 ms.date: 04/20/2017
@@ -70,9 +69,9 @@ The WIA film scanner child item can optionally support the following WIA propert
 
 [**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DispatchReadWrite Using Buffered I/O
-author: windows-driver-content
 description: DispatchReadWrite Using Buffered I/O
 ms.assetid: bb8ce47d-5722-4050-9492-bec154744597
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "buffered I/O WDK kernel", "I/O WDK kernel , buffered"]
@@ -36,9 +35,9 @@ Drivers that buffer data internally should support [**IRP\_MJ\_FLUSH\_BUFFERS**]
 
 The highest-level driver in a chain is usually responsible for checking the input IRP's parameters before passing a read/write request on to lower drivers. Consequently, many lower-level drivers can assume that their I/O stack locations in a read/write IRP have valid parameters. If a lowest-level driver in a chain is aware of device-specific constraints on data transfers, that driver is required to check the validity of the parameters in its I/O stack location.
 
- 
+ 
 
- 
+ 
 
 
 

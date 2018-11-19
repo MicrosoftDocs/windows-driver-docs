@@ -78,7 +78,7 @@ A *connection-oriented client*:
 
 **Note**  The definition of a connection-oriented client's upper-edge interface is beyond the scope of the NDIS documentation. If a client serves as an adaptation layer, its upper-edge interface is defined by the protocol that it adapts to connection-oriented NDIS.
 
- 
+ 
 
 For a summary of connection-oriented operations performed by a connection-oriented client, see [Connection-Oriented Operations Performed by Clients](connection-oriented-operations-performed-by-clients.md).
 
@@ -87,9 +87,9 @@ For a summary of connection-oriented operations performed by a connection-orient
 
 [NDIS Miniport Drivers](ndis-miniport-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Value (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular MIB object.
 ms.assetid: 46b24830-10a1-405b-9c12-b5804f76d668
 keywords:
@@ -48,16 +47,16 @@ The TCP/IP `Value` construct allows you to extend the bidi communications schema
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the<code> Value</code> construct, a value in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>The type of data in the<code> Value</code> construct, a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  A network device that supports the SNMP protocol can be the host for different subdevices, such as Processor, Network, Printer, and Disk Storage. The MIB tables implemented in network printers have entries that are indexed by device indexes. In order to retrieve data from the MIB table (such as the name of an input bin), the query must have a device index that correctly identifies the subdevice. The standard TCP/IP port monitor allows the device index to be manually configured through the port configuration UI. A bidi extension with **deviceIndex**="true" generates an OID with the appropriate device index obtained from the port configuration UI. In addition, if the `Value` construct is contained in a Property instance, the OID will have a zero index appended to its end.
 
- 
+ 
 
 ### <a href="" id="code-example"></a> Code Example
 
@@ -79,9 +78,9 @@ The preceding example results in the following query:
 
 Note that because the `Value` construct is contained in a Property instance rather than an IndexedProperty instance, a trailing zero is automatically appended to the OID.
 
- 
+ 
 
- 
+ 
 
 
 

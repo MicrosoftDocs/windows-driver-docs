@@ -3,7 +3,6 @@ title: Overview of NDIS Debugging
 description: Overview of NDIS Debugging
 ms.assetid: d15e8a0c-e553-4e0d-84ed-5fdc2026a2d3
 keywords: ["NDIS debugging, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,9 +18,9 @@ There is also an NDIS-specific bug check code, bug check 0x7C (BUGCODE\_NDIS\_DR
 
 Another useful tool for testing an NDIS driver is NDIS Verifier. For more information, consult the NDIS Verifier topic in the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: File Streams, Stream Contexts, and Per-Stream Contexts
-author: windows-driver-content
 description: File Streams, Stream Contexts, and Per-Stream Contexts
 ms.assetid: baea4967-f0d6-4096-aac4-fd38c117b4c6
 keywords:
@@ -42,9 +41,9 @@ When the file system deletes its stream context for a file stream, it calls [**F
 
 To query whether the file system supports per-stream contexts for the file stream represented by a given file object, call [**FsRtlSupportsPerStreamContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547285) on the file object. Note that a file system might support per-stream contexts for some types of files but not for others. For example, NTFS and FAT do not currently support per-stream contexts for paging files. Thus if **FsRtlSupportsPerStreamContexts** returns **TRUE** for one file stream, this does not imply that it returns **TRUE** for all file streams.
 
- 
+ 
 
- 
+ 
 
 
 

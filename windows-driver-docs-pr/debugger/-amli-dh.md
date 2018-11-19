@@ -3,7 +3,6 @@ title: amli dh
 description: The amli dh extension displays the AML interpreter's internal heap block.
 ms.assetid: 52027a44-3308-4d9e-be66-8b45cdd88b3b
 keywords: ["amli dh Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ The **!amli dh** extension displays the AML interpreter's internal heap block.
 
 Syntax
 
-```
+```dbgcmd
 !amli dh [HeapAddress]
 ```
 
@@ -39,9 +38,9 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

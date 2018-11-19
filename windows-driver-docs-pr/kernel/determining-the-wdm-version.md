@@ -1,6 +1,5 @@
 ---
 title: Determining the WDM Version
-author: windows-driver-content
 description: Determining the WDM Version
 ms.assetid: 7ed288d9-6447-4b08-baf2-e7b743654ebd
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM"]
@@ -18,9 +17,9 @@ A cross-system WDM driver should use the [**IoIsWdmVersionAvailable**](https://m
 
 For information about differences in WDM that drivers should handle, see [Differences in WDM Versions](differences-in-wdm-versions.md).
 
- 
+ 
 
- 
+ 
 
 
 

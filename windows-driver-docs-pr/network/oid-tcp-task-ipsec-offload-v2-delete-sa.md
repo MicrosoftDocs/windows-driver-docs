@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA
-author: windows-driver-content
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA OID to request that a miniport driver delete the specified security associations (SAs) from a NIC.
 ms.assetid: 9b2c702c-beaa-4caf-97c5-d80a2632e4d3
 ms.date: 08/08/2017
@@ -18,7 +17,7 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELE
 
 **Note**  NDIS supports this OID with the direct OID request interface. For more information about the direct OID request interface, see [NDIS 6.1 Direct OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff564736).
 
- 
+ 
 
 Remarks
 -------
@@ -53,7 +52,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the [<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622) function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a> function, passing <strong>NDIS_STATUS_SUCCESS</strong> for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -61,12 +60,12 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_REQUEST_ABORTED</strong></p></td>
-<td><p>The miniport driver stopped processing the request. For example, NDIS called the [<em>MiniportResetEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.</p></td>
+<td><p>The miniport driver stopped processing the request. For example, NDIS called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559432" data-raw-source="[&lt;em&gt;MiniportResetEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559432)"><em>MiniportResetEx</em></a> function.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -97,9 +96,9 @@ Requirements
 
 [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ Microsoft DirectDraw VPE objects monitor the incoming signal and pass image data
 
 The VPEs are not associated with the Microsoft Windows 2000 and later video port system module, *videoprt.sys*.
 
- 
+ 
 
- 
+ 
 
 
 

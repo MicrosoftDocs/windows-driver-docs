@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's AddDevice Routine
-author: windows-driver-content
 description: Storage Class Driver's AddDevice Routine
 ms.assetid: ff07ae84-2748-44b4-88c6-e67f1d4c9268
 keywords:
@@ -35,9 +34,9 @@ A storage class driver stores the pointer returned by **IoAttachDeviceToDeviceSt
 
 For more information, see [Writing an AddDevice Routine](https://msdn.microsoft.com/library/windows/hardware/ff566398).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Broadcast Receiver Topology
-author: windows-driver-content
 description: Broadcast Receiver Topology
 ms.assetid: d6f7614b-b7ff-4d42-8e04-fbf1b4f0445a
 keywords:
@@ -26,9 +25,9 @@ A *Broadcast Driver Architecture (BDA) receiver topology* is an abstract represe
 
 [Common Control Nodes and Filters](common-control-nodes-and-filters.md)
 
- 
+ 
 
- 
+ 
 
 
 

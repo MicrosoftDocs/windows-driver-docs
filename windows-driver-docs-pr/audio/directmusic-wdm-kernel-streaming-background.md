@@ -59,9 +59,9 @@ When the DMus port driver receives MIDI data, it routes the data to the sequence
 
 When the DMus port driver receives a property-request containing DLS data (see [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)), it routes the request directly to the miniport driver. Because these are just sounds that can be played, there is no need to involve the sequencer or wave sink when they are downloaded.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,9 +34,9 @@ This section describes how the video present network (VidPN) manager, the displa
 
 -   [Determining Whether a VidPN is Supported on a Display Adapter](determining-whether-a-vidpn-is-supported-on-a-display-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

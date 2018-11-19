@@ -24,9 +24,9 @@ To protect video content, a user-mode display driver should implement the Conten
 
 [Using Crypto Session with DirectX Video Accelerator 2.0 Decoder](using-crypto-session-with-directx-video-accelerator-2-0-decoder.md)
 
- 
+ 
 
- 
+ 
 
 
 

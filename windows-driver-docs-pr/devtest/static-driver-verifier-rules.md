@@ -31,9 +31,9 @@ Starting in Windows 8, you can configure [Driver Verifier](https://msdn.microso
 
 [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)
 [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)
- 
+ 
 
- 
+ 
 
 
 

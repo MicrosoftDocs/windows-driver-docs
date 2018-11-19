@@ -1,6 +1,5 @@
 ---
 title: Plug and Play Registry Routines
-author: windows-driver-content
 description: Plug and Play Registry Routines
 ms.assetid: d526af4e-8b33-46fb-9af9-b0d9b9f1913a
 keywords: ["registry WDK kernel , Plug and Play", "driver registry information WDK kernel , Plug and Play", "Plug and Play WDK kernel , registry routines", "hardware keys WDK kernel", "software keys WDK kernel", "IoOpenDeviceRegistryKey", "IoOpenDeviceInterfaceRegistryKey", "PnP WDK kernel , registry routines"]
@@ -59,9 +58,9 @@ if (NTSUCCESS(status)) {
 
 Note that access to a registry key can be restricted, so a call to [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549443) and [**IoOpenDeviceInterfaceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549433) should specify the minimum rights necessary for *DesiredAccess*. If the driver requests an access right that is not allowed, either routine returns STATUS\_ACCESS\_DENIED. In particular, drivers should not specify KEY\_ALL\_ACCESS.
 
- 
+ 
 
- 
+ 
 
 
 

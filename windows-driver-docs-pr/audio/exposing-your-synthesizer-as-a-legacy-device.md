@@ -33,9 +33,9 @@ You may want to write a single device driver that exposes your synth hardware as
 
     This case is problematic because the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) and other clients are not aware that they need to download a collection. They just start sending MIDI update changes and notes.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: ACLs and the Device Stack
-author: windows-driver-content
 description: ACLs and the Device Stack
 ms.assetid: DAFC851D-E808-4588-86D2-E608584FD05B
 ms.date: 04/20/2017
@@ -45,7 +44,7 @@ When the driver stack creates the device object, the I/O manager sets a default 
 
     **Note**  Prior to Windows Vista, the entry for IU was not present in the ACL that was set by the I/O manager. Starting with Windows Vista, the I/O manager provides Full access to the IU group, so that applications can receive direct access to a volume without requiring elevation of privilege, as discussed earlier. However, UFD devices that do not set the **Removable** property do not benefit from this because the I/O manager does not treat them as removable.
 
-     
+     
 
 -   The disk class driver sets the FILE\_REMOVABLE\_MEDIA characteristic if the identity data (received from the device in response to the SCSI INQUIRY command) has the **Removable** property set. Because some UFD devices set this property even though they are not truly removable media, the I/O manager treats such devices as removable disks and provides the IU group Read and Write access to the volume.
 
@@ -62,7 +61,7 @@ When the device driver stack is started, the PnP manager changes the ACL on the 
 | Value    | **SECURITY\_DESCRIPTOR**         |
 | Size     | **sizeof**(SECURITY\_DESCRIPTOR) |
 
- 
+ 
 
 These properties can also be set through a driver package installer, by specifying the related parameters in an INF file.
 
@@ -94,9 +93,9 @@ For example, if the caller has opened a handle for Read-only access, like the fo
 
 -   **IOCTL\_DISK\_GET\_PARTITION\_INFO** is sent to the driver stack because it requires only Read access.
 
- 
+ 
 
- 
+ 
 
 
 

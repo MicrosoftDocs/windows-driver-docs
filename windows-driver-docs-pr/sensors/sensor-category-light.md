@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_LIGHT
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_LIGHT category contains sensors that provide information about characteristics of light.
 ms.assetid: 56bb4869-3752-437d-89c9-829e6fb01043
 keywords: ["SENSOR_CATEGORY_LIGHT Sensor Devices"]
@@ -44,7 +43,7 @@ This category includes the following platform-defined sensor types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="platform_defined_data_fields"></span><span id="PLATFORM_DEFINED_DATA_FIELDS"></span>Platform-defined Data Fields
 
@@ -85,11 +84,11 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**   Each platform-defined light data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_LIGHT\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 Requirements
 ------------
@@ -119,9 +118,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

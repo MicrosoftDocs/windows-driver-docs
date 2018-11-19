@@ -1,6 +1,5 @@
 ---
 title: eHS_AUTHENTICATION_RESULT enumeration
-author: windows-driver-content
 description: The eHS_AUTHENTICATION_RESULT enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.
 ms.assetid: a61ddc7c-8df8-410c-83df-9058e88bce51
 keywords: 
@@ -76,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

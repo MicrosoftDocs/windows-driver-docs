@@ -1,6 +1,5 @@
 ---
 title: Creating a WIA Microdriver
-author: windows-driver-content
 description: Creating a WIA Microdriver
 ms.assetid: 4f453569-d768-47fb-9b70-ebb51e303cf0
 ms.date: 04/20/2017
@@ -17,7 +16,7 @@ Many flatbed scanners are controlled in a similar manner. The common behavior be
 
 **Note**  The WIA microdrivers described in this section are WIA 1.0. Currently there is no corresponding WIA microdriver model for WIA 2.0. If you develop a WIA microdriver to run on a computer that has a Windows version that supports WIA 2.0 (Windows Vista or newer), this WIA microdriver will work like any other WIA 1.0 device, and will be used by WIA 2.0 applications in WIA 1.0 compatibility mode.
 
- 
+ 
 
 The following diagram shows the components in the WIA microdriver architecture.
 
@@ -27,9 +26,9 @@ The WIA Flatbed Driver handles requests from the WIA service by calling the WIA 
 
 The microdriver should not store any parameters for a scan, but should rely on the values stored in the [**SCANINFO**](https://msdn.microsoft.com/library/windows/hardware/ff547361) structure. This is important for supporting multiple application access to the device. If two applications are setting up a scan on the same device at the same time, there is only one copy of the microdriver running. In this situation the microdriver is called with one of two different SCANINFO structures depending on which application is trying to access the device.
 
- 
+ 
 
- 
+ 
 
 
 

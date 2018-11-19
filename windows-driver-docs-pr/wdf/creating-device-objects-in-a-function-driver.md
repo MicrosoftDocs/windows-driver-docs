@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Function Driver
-author: windows-driver-content
 description: Creating Device Objects in a Function Driver
 ms.assetid: 3b988f6d-c50e-412d-85cb-031746535ff4
 keywords:
@@ -72,9 +71,9 @@ Creating a framework device object in a function driver typically includes the f
 
     The final step in creating a device object is to call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
- 
+ 
 
- 
+ 
 
 
 

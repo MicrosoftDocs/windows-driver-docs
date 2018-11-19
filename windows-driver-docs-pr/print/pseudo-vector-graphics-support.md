@@ -1,6 +1,5 @@
 ---
 title: Pseudo-Vector Graphics Support
-author: windows-driver-content
 description: Pseudo-Vector Graphics Support
 ms.assetid: 8eeba51b-00fa-4bf3-a78c-ac1d1adc9696
 keywords:
@@ -33,9 +32,9 @@ In addition, it is possible that the new object to be drawn contains complex cli
 
 The pseudovector graphics feature may alter the z-ordering in certain situations, particularly when text is downloaded directly to the device and subsequent objects with complex clipping must interact with that text.
 
- 
+ 
 
- 
+ 
 
 
 

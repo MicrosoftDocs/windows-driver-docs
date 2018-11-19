@@ -1,6 +1,5 @@
 ---
 title: Connections between subunit plugs and unit plugs within one AV/C unit
-author: windows-driver-content
 description: Provides information about connections between subunit plugs and unit plugs within one AV/C unit
 ms.assetid: 12132a0c-9657-4cff-a582-8404a103c46a
 keywords:
@@ -45,7 +44,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
 <td><p>0xFF (the unit that contains the subunit)</p></td>
 <td><p>iPlug (0x0 to 0x1E or 0x7F)</p></td>
 <td><p>N/A</p></td>
@@ -53,7 +52,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -82,7 +81,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 ### **Scenario 2**
 
@@ -111,7 +110,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because source unit's device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because source unit&#39;s device identifier is the unit that contains the subunit</p></td>
 <td><p>Subunit address</p></td>
 <td><p>Source plug (0x0 to 0x1E)</p></td>
 <td><p>N/A</p></td>
@@ -119,7 +118,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -148,7 +147,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 The following list describes the meaning of values that appear in the preceding tables:
 
@@ -160,9 +159,9 @@ The following list describes the meaning of values that appear in the preceding 
 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
- 
+ 
 
- 
+ 
 
 
 

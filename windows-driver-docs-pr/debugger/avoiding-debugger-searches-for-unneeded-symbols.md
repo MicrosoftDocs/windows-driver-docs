@@ -2,7 +2,6 @@
 title: Avoiding debugger searches for unneeded symbols
 description: Why does symbol loading sometimes take so long? That depends on whether the symbol name is qualified or unqualified.
 ms.assetid: 710BAEAF-BC45-416E-8359-69E9DFCA2570
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -54,11 +53,11 @@ A number of options are available to control how the debugger loads and uses sym
 
 [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
-[Windows Debugging](http://msdn.microsoft.com/library/windows/hardware/ff551063.aspx)
+[Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

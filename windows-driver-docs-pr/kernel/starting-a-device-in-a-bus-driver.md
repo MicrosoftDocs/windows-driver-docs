@@ -1,6 +1,5 @@
 ---
 title: Starting a Device in a Bus Driver
-author: windows-driver-content
 description: Starting a Device in a Bus Driver
 ms.assetid: 1babeabb-1866-4ca5-b5a3-380c246596e5
 keywords: ["bus drivers WDK PnP"]
@@ -30,9 +29,9 @@ A bus driver starts a child device (child [*PDO*](https://msdn.microsoft.com/lib
 
 If a bus driver requires some time to start the device, it can mark the IRP as pending and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

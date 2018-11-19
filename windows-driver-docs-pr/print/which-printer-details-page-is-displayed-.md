@@ -1,6 +1,5 @@
 ---
 title: Which Printer Details Page is Displayed
-author: windows-driver-content
 description: Which Printer Details Page is Displayed
 ms.assetid: f7824350-a6de-45ca-8d72-859edf77e86d
 keywords:
@@ -28,9 +27,9 @@ When a user attempts to view a printer's details page, the server uses the follo
 
 For more information, see [Installing Customized Print Web Pages](installing-customized-print-web-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

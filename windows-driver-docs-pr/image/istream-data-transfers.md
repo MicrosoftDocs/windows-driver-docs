@@ -1,6 +1,5 @@
 ---
 title: IStream Data Transfers
-author: windows-driver-content
 description: IStream Data Transfers
 ms.assetid: 348871d7-137b-4921-aeb0-ac689f4385c3
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ This section includes:
 
 [WIA Transfer Constants](wia-transfer-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

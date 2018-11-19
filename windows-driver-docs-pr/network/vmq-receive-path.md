@@ -36,7 +36,7 @@ VMQ receive indications must define shared memory information at the **SharedMem
 
 **Note**  When a VMQ is deleted (for example, during VM live migration), it is possible for the miniport driver to receive an NBL that contains an invalid **QueueId** value. If this happens, the miniport should ignore the invalid queue ID and use 0 (the default queue) instead. The **QueueId** is found in the **NetBufferListFilteringInfo** portion of the NBL's OOB data, and is retrieved by using the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff568407) macro.
 
- 
+ 
 
 To indicate that the [**NET\_BUFFER\_SHARED\_MEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff568419) pointer at **SharedMemoryInfo** is valid, the miniport driver must set the NDIS\_RECEIVE\_FLAGS\_SHARED\_MEMORY\_INFO\_VALID flag in the *ReceiveFlags* parameter of the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function. For more information about the layout of shared memory buffers in VMQ receive buffers, see [Shared Memory in Receive Buffers](shared-memory-in-receive-buffers.md).
 
@@ -68,11 +68,11 @@ The byte count and byte offset in the MDL and the **DataLength** and **DataOffse
 
 **Note**  Starting with NDIS 6.30 and Windows Server 2012, splitting packet data into separate lookahead buffers is no longer supported. The overlying protocol driver will not set the **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED** flag.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

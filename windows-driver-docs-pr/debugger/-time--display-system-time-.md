@@ -3,7 +3,6 @@ title: .time (Display System Time)
 description: The .time command displays information about the system time variables.
 ms.assetid: d8024f84-98ff-4017-81c5-8a08973f9e4b
 keywords: ["Display System Time (.time) command", ".time (Display System Time) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Specifies the offset from Greenwich Mean Time, in hours. A negative value of *Ho
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -80,9 +79,9 @@ Process Uptime: 0 days 0:00:08.750
   User time: 0 days 0:00:00.015
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: Before using MUTT devices, you must prepare the test system.
 title: How to prepare the test system to run MUTT test tools
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ The instructions in this document are based on the following assumptions:
 
 **Note**  This setup applies to the MUTT, MUTTPack, SuperMUTT and SuperMUTT Pack. For more information about those devices, see [MUTT devices](microsoft-usb-test-tool--mutt--devices.md).
 
- 
+ 
 
 ## Instructions
 

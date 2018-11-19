@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses interface
-author: windows-driver-content
 description: The IPrinterBidiSchemaResponses interface represents a set of bidi responses populated by USB Bidi Extension JavaScript methods getSchemas and getStatus.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -45,39 +44,39 @@ The **IPrinterBidiSchemaResponses** interface has these methods.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>AddBool</strong>](iprinterbidischemaresponses--addbool.md)</td>
+<td><a href="iprinterbidischemaresponses--addbool.md" data-raw-source="[&lt;strong&gt;AddBool&lt;/strong&gt;](iprinterbidischemaresponses--addbool.md)"><strong>AddBool</strong></a></td>
 <td><p>The AddBool method adds a new response of type BIDI_BOOL to the collection.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>AddInt32</strong>](iprinterbidischemaresponses--addint32.md)</td>
+<td><a href="iprinterbidischemaresponses--addint32.md" data-raw-source="[&lt;strong&gt;AddInt32&lt;/strong&gt;](iprinterbidischemaresponses--addint32.md)"><strong>AddInt32</strong></a></td>
 <td><p>The AddInt32 method adds a new response of type BIDI_INT to the collection.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>AddBlob</strong>](iprinterbidischemaresponses-addblob.md)</td>
+<td><a href="iprinterbidischemaresponses-addblob.md" data-raw-source="[&lt;strong&gt;AddBlob&lt;/strong&gt;](iprinterbidischemaresponses-addblob.md)"><strong>AddBlob</strong></a></td>
 <td><p>The AddBlob method adds a new response of type BIDI_BLOB to the collection.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>AddEnum</strong>](iprinterbidischemaresponses-addenum.md)</td>
+<td><a href="iprinterbidischemaresponses-addenum.md" data-raw-source="[&lt;strong&gt;AddEnum&lt;/strong&gt;](iprinterbidischemaresponses-addenum.md)"><strong>AddEnum</strong></a></td>
 <td><p>The AddEnum method adds a new response of type BIDI_ENUM to the collection.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>AddFloat</strong>](iprinterbidischemaresponses-addfloat.md)</td>
+<td><a href="iprinterbidischemaresponses-addfloat.md" data-raw-source="[&lt;strong&gt;AddFloat&lt;/strong&gt;](iprinterbidischemaresponses-addfloat.md)"><strong>AddFloat</strong></a></td>
 <td><p>The AddFloat method adds a new response of type BIDI_FLOAT to the collection.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>AddNull</strong>](iprinterbidischemaresponses-addnull.md)</td>
+<td><a href="iprinterbidischemaresponses-addnull.md" data-raw-source="[&lt;strong&gt;AddNull&lt;/strong&gt;](iprinterbidischemaresponses-addnull.md)"><strong>AddNull</strong></a></td>
 <td><p>The AddNull method adds a new response of type BIDI_NULL to the collection.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>AddRequeryKey</strong>](iprinterbidischemaresponses-addrequerykey.md)</td>
+<td><a href="iprinterbidischemaresponses-addrequerykey.md" data-raw-source="[&lt;strong&gt;AddRequeryKey&lt;/strong&gt;](iprinterbidischemaresponses-addrequerykey.md)"><strong>AddRequeryKey</strong></a></td>
 <td><p>The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>AddString</strong>](iprinterbidischemaresponses-addstring.md)</td>
+<td><a href="iprinterbidischemaresponses-addstring.md" data-raw-source="[&lt;strong&gt;AddString&lt;/strong&gt;](iprinterbidischemaresponses-addstring.md)"><strong>AddString</strong></a></td>
 <td><p>The AddString method adds a new response of type BIDI_STRING to the collection.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>AddText</strong>](iprinterbidischemaresponses-addtext.md)</td>
+<td><a href="iprinterbidischemaresponses-addtext.md" data-raw-source="[&lt;strong&gt;AddText&lt;/strong&gt;](iprinterbidischemaresponses-addtext.md)"><strong>AddText</strong></a></td>
 <td><p>The AddText method adds a new response of type BIDI_TEXT to the collection.</p></td>
 </tr>
 </tbody>

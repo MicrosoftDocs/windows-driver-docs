@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_DRIVER_VERSION
-author: windows-driver-content
 description: As a query, the OID_GEN_DRIVER_VERSION OID specifies the NDIS version in use by the miniport driver.
 ms.assetid: 8c3ac2ab-a83a-44d2-88bc-bd1468a0a59b
 ms.date: 08/08/2017
@@ -54,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

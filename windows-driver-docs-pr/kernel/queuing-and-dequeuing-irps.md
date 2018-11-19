@@ -1,6 +1,5 @@
 ---
 title: Queuing and Dequeuing IRPs
-author: windows-driver-content
 description: Queuing and Dequeuing IRPs
 ms.assetid: 736107bf-4790-4562-8785-c37fbbed03d3
 keywords: ["IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "multiple I/O request handling WDK kernel", "internal IRP queues WDK kernel", "synchronization WDK IRPs", "starting I/O operations", "I/O WDK kernel , operation starting", "StartIo routines", "cancel-safe IRP queues WDK kernel"]
@@ -60,9 +59,9 @@ An exception to this is the SCSI port driver, which has a *StartIo* routine and 
 
 The SCSI port driver uses its supplemental device queues to hold IRPs sent down from the SCSI class drivers in LU-specific queues whenever any device on a SCSI bus is particularly busy. In effect, this driver's supplemental, LU-specific device queues allow the SCSI port driver to serialize operations for heterogeneous SCSI devices through an HBA while keeping each device on that HBA's SCSI buses as busy as possible.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ The conversion from BGR8888-type formats (for example, DXGI\_FORMAT\_B8G8R8A8\_U
 
 The scale factor of 510 is explicitly chosen to provide a cleanly invertible conversion between a BGR8888-type format and XR\_BIAS without causing the nonlinear jump near 0.5 that would be implied by a scale factor of 511.
 
- 
+ 
 
- 
+ 
 
 
 

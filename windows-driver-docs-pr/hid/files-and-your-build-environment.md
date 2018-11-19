@@ -1,6 +1,5 @@
 ---
 title: Files and Your Build Environment
-author: windows-driver-content
 description: Files and Your Build Environment
 ms.assetid: 0c85a599-65bb-45e5-a2f8-eefd47e82025
 keywords: ["property sheets WDK DirectInput , files", "game controllers WDK DirectInput , files", "control panels WDK DirectInput , files", "property sheets WDK DirectInput , build environments", "game controllers WDK DirectInput , build environments", "control panels WDK DirectInput , build environments", "build environments WDK DirectInput", "files WDK DirectInput"]
@@ -18,11 +17,11 @@ At a minimum, you will need the Direct X Direct Development Kit (DDK) header fil
 
 **Note**   When testing your control panel, make sure to test it on a system whose primary display is set to a resolution of 640 x 480 pixels. Make sure that all the controls are still visible at this reduced resolution.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

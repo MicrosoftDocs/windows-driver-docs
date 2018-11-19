@@ -1,6 +1,5 @@
 ---
 title: OID_CO_GET_CALL_INFORMATION
-author: windows-driver-content
 description: This topic describes the OID_CO_GET_CALL_INFORMATION object identifier (OID).
 ms.assetid: 5ddb5c9b-ca99-4977-948a-fff63363e08e
 keywords:

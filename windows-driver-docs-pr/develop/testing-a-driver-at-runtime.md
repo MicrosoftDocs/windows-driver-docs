@@ -93,13 +93,13 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 * [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md)
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
+ 
 
- 
+ 
 
 
 

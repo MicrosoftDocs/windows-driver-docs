@@ -1,6 +1,5 @@
 ---
 title: Converting East Asian AFM Files to NTF Files
-author: windows-driver-content
 description: Converting East Asian AFM Files to NTF Files
 ms.assetid: 0932068a-9101-4cdc-8c80-b2d3a4b507ba
 keywords:
@@ -77,9 +76,9 @@ The .map and .ps files needed to create an .ntf file for Chinese Simplified, Chi
 
 -   uniksv.ps
 
- 
+ 
 
- 
+ 
 
 
 

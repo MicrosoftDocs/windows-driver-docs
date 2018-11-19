@@ -1,6 +1,5 @@
 ---
 title: Setting Up ControllerControl Routines
-author: windows-driver-content
 description: Setting Up ControllerControl Routines
 ms.assetid: 007247c1-b51e-4677-9a46-78ff9f1c8996
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, setting up"]
@@ -24,9 +23,9 @@ A driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/f
 
 The returned *ControllerObject* pointer, the entry point of the driver's *ControllerControl* routine, the *DeviceObject* pointer representing the target device for the current IRP, and a *Context* pointer to an area already set up for the *ControllerControl* routine must be passed in the driver's calls to [**IoAllocateController**](https://msdn.microsoft.com/library/windows/hardware/ff548224). Usually, a driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine sets up the area at *Context* before it calls **IoAllocateController**.
 
- 
+ 
 
- 
+ 
 
 
 

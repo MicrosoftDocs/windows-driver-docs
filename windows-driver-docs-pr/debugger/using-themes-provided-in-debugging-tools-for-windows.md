@@ -3,7 +3,6 @@ title: Using Themes Provided in Debugging Tools for Windows
 description: Using Themes Provided in Debugging Tools for Windows
 ms.assetid: d3571a7a-cdab-4a17-b4e0-ffb1690de642
 keywords: ["themes, provided"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -48,9 +47,9 @@ In each docking location, a placeholder window is also included as a point of re
 
 ![screen shot of the multimon.reg theme](images/theme-multimon.jpg)
 
- 
+ 
 
- 
+ 
 
 
 

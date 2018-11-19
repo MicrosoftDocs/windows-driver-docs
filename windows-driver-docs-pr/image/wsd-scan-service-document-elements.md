@@ -83,9 +83,9 @@ The schema includes the following document-related elements:
 
 [**Sharpness**](sharpness.md)
 
- 
+ 
 
- 
+ 
 
 
 

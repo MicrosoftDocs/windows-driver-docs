@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_CAPS property describes the basic capabilities of a tuner
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565828)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565828" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565828)"><strong>KSPROPERTY_TUNER_CAPS_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a LONG that specifies the tuning modes supported by the streaming minidriver.
 
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_MODE\_CAPS**](ksproperty-tuner-mode-caps.md)
 
- 
+ 
 
- 
+ 
 
 
 

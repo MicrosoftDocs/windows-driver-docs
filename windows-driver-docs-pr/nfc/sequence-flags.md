@@ -1,6 +1,5 @@
 ---
 title: Sequence flags
-author: windows-driver-content
 description: The NFC CX defines the following constants for sequence events.
 ms.assetid: AC6CE286-52F7-4FC9-9F38-CD10C1413A90
 keywords:
@@ -59,9 +58,9 @@ This flag is used during NFCEE pre-discovery sequence to skip performing the NFC
 
 This flag forces the NFC CX to not send an NCI reset during shutdown.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

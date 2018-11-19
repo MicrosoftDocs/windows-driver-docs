@@ -1,6 +1,5 @@
 ---
 title: Driver Behavior During Multipage Transfers
-author: windows-driver-content
 description: Driver Behavior During Multipage Transfers
 ms.assetid: ecf0428b-c11c-49ff-9aa3-322e55dbca07
 ms.date: 04/20/2017
@@ -24,11 +23,11 @@ If a separate transfer was called on each of the child items of "Flatbed", the d
 
 **Note**  We recommend that only more sophisticated drivers directly support folder acquisition, because the driver is responsible for walking the item tree and taking the appropriate action.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

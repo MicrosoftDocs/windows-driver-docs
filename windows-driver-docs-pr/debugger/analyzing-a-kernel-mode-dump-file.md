@@ -3,7 +3,6 @@ title: Analyzing a Kernel-Mode Dump File
 description: Analyzing a Kernel-Mode Dump File
 ms.assetid: 2bda51c2-b022-4740-8df9-5a2cf2382e3e
 keywords: ["dump file, analyzing a kernel-mode dump file"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ Regardless of which tool you use, you need to install the symbol files for the v
 
 The DumpExam tool is obsolete. It is no longer needed in the analysis of a crash dump file.
 
- 
+ 
 
- 
+ 
 
 
 

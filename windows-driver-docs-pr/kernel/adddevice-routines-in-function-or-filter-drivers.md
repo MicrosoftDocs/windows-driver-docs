@@ -1,6 +1,5 @@
 ---
 title: AddDevice Routines in Function or Filter Drivers
-author: windows-driver-content
 description: AddDevice Routines in Function or Filter Drivers
 ms.assetid: 0a095c17-2295-46df-9908-f306f7fe9f67
 keywords: ["function drivers WDK kernel", "filter drivers WDK kernel", "AddDevice routines WDK kernel , function drivers", "AddDevice routines WDK kernel , filter drivers"]
@@ -60,9 +59,9 @@ An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) r
 
 A driver must not start controlling the device until it receives an **IRP\_MN\_START\_DEVICE** containing the list of hardware resources assigned to the device by the PnP manager.
 
- 
+ 
 
- 
+ 
 
 
 

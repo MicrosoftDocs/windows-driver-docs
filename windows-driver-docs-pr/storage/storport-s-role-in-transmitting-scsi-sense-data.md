@@ -1,6 +1,5 @@
 ---
 title: Storport's Role in Transmitting SCSI Sense Data
-author: windows-driver-content
 description: Storport's Role in Transmitting SCSI Sense Data
 ms.assetid: 18f2f4e0-f49b-4026-b18f-26b413f05970
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ Storport is also responsible for translating the request sense data into the app
 
 When Storport completes the IRP\_MJ\_SCSI IRP associated with the SRB, it must indicate that it is returning request-sense information by logical-ORing the SRB\_STATUS\_AUTOSENSE\_VALID flag in with the **SrbStatus** member of the SRB.
 
- 
+ 
 
- 
+ 
 
 
 

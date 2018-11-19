@@ -25,7 +25,7 @@ The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed
 
 **Note**  This property is now obsolete. Use [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md) instead.
 
- 
+ 
 
 Property Type: VT\_BSTR
 
@@ -83,9 +83,9 @@ Requirements
 
 [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md)
 
- 
+ 
 
- 
+ 
 
 
 

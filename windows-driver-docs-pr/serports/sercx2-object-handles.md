@@ -1,6 +1,5 @@
 ---
 title: SerCx2 Object Handles
-author: windows-driver-content
 description: This topic describes object handle types that are specifically defined for version 2 of the serial framework extension (SerCx2). 
 ms.localizationpriority: medium
 ms.date: 10/17/2018
@@ -163,10 +162,10 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 ##  SERCX2SYSTEMDMARECEIVE Object Handle
 A SERCX2SYSTEMDMARECEIVE object handle is an opaque reference to a system-DMA-receive object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2SystemDmaReceiveCreate] (https://msdn.microsoft.com/library/windows/hardware/dn265279) method creates a system-DMA-receive object. 
+The [SerCx2SystemDmaReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265279) method creates a system-DMA-receive object. 
 SerCx2 uses this object to manage system DMA transactions that read data from the serial controller. 
 This object is opaque to serial controller drivers. 
-[SerCx2SystemDmaReceiveCreate] (https://msdn.microsoft.com/library/windows/hardware/dn265279) supplies, as an output parameter, a SERCX2SYSTEMDMARECEIVE handle to the newly created system-DMA-receive object. 
+[SerCx2SystemDmaReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265279) supplies, as an output parameter, a SERCX2SYSTEMDMARECEIVE handle to the newly created system-DMA-receive object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent system-DMA-receive transactions. 
 For more information, see [SerCx2 System-DMA-Receive Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265343).
 

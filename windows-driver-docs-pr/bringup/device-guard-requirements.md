@@ -1,6 +1,5 @@
 ---
 title: Secure MOR implementation
-author: windows-driver-content
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
 ms.assetid: 94F42629-3B76-4EB1-A5FA-4FA13C932CED
 ms.date: 04/20/2017
@@ -82,7 +81,7 @@ Calling **GetVariable** for `MemoryOverwriteRequestControlLock` returns 0x0, 0x1
 
 **Note**  Setting `MemoryOverwriteRequestControlLock` does not commit to flash (just changes the internal lock state). Getting the variable returns the internal state and never exposes the key. The following figures detail the expected behavior.
 
- 
+ 
 
 Example usage by the operating system
 

@@ -30,9 +30,9 @@ In particular, the following topics are covered:
 
 [Smart Card Callback Parameters](smart-card-callback-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

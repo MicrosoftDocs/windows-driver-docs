@@ -43,7 +43,7 @@ The KSCATEGORY_MEDIUMTRANSFORM [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

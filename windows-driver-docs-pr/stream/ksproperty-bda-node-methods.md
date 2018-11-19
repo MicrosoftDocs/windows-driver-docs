@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_NODE\_METHODS to retrieve a list of methods support
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
- 
+ 
 
- 
+ 
 
 
 

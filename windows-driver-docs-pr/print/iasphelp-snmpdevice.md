@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_SNMPDevice method
-author: windows-driver-content
 description: The SNMPDevice property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 MS-HAID:
 - 'webfnc\_e4a9d1b3-1168-45a7-98cb-9c19fdf83009.xml'
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

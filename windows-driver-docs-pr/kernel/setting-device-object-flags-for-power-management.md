@@ -1,6 +1,5 @@
 ---
 title: Setting Device Object Flags for Power Management
-author: windows-driver-content
 description: Setting Device Object Flags for Power Management
 ms.assetid: 58d1a3a2-c8ea-446c-b1d6-ed00411d1d75
 keywords: ["DO_POWER_PAGABLE", "DO_POWER_INRUSH", "device object flags WDK power management", "object flags WDK power management", "flags WDK power management"]
@@ -21,7 +20,7 @@ In its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff54052
 | DO\_POWER\_INRUSH  | Indicates that the current drawn by the device surges when the device is first turned on. This surge or "inrush" lasts for a short period, after which the current drawn by the device falls to a lower operating level.                                                                                   |
 | DO\_POWER\_PAGABLE | Indicates that the driver is pageable. Starting with Windows 2000, drivers that can be paged must set the DO\_POWER\_PAGABLE flag. The power manager calls such drivers at IRQL = PASSIVE\_LEVEL. For more information about pageable drivers, see [Making Drivers Pageable](making-drivers-pageable.md). |
 
- 
+ 
 
 The device object flags are typically set by the bus driver when it creates the PDO for the device. However, some function drivers might need to alter the values of these flags as part of their *AddDevice* routines. Starting with Windows Vista, the operating system does not require that all device objects within a device stack have the same power-related flags set. However, in Windows Server 2003, Windows XP, and Windows 2000, all the device objects in a device stack should have the same power-related flags set.
 
@@ -33,9 +32,9 @@ Drivers for devices that require an inrush of power at start-up must set the DO\
 
 Starting with Windows Vista, drivers can set both the DO\_POWER\_PAGABLE flag and the DO\_POWER\_INRUSH flag. In Windows Server 2003, Windows XP, and Windows 2000, drivers cannot set both the DO\_POWER\_PAGABLE flag and the DO\_POWER\_INRUSH flag.
 
- 
+ 
 
- 
+ 
 
 
 

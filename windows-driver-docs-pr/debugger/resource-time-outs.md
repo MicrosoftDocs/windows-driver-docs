@@ -3,7 +3,6 @@ title: Resource Time Outs
 description: Resource Time Outs
 ms.assetid: ea5b61e0-cb51-4da2-9596-ab85f7b01bed
 keywords: ["resource time outs"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 During a resource time out, the thread waiting for the resource will break into the kernel debugger with a message similar to the following:
 
-```
+```console
 Resource @ 800e99c0
  ActiveCount = 0001  Flags = IsOwnedExclusive sharedWaiter
  NumberOfExclusiveWaiters = 0000
@@ -37,7 +36,7 @@ If you get to a thread that is not waiting for another resource, that thread is 
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-```
+```console
 Resource @ fc664ee0                  // Here's the resource lock address
 
  ActiveCount = 0001  Flags = IsOwnedExclusive ExclusiveWaiter
@@ -97,9 +96,9 @@ fec6bef4 77f716ab 0012dd64 0012dd3c 00000000 ntoskrnl!_KiSystemService+0x83
 0012dd20 00000000 00000000 00000000 00000000 ntdll!_ZwQueryAttributesFile+0xb 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DispatchCleanup Routines
-author: windows-driver-content
 description: DispatchCleanup Routines
 ms.assetid: 1ba001b8-92e0-453f-b9f6-6099cedf6439
 keywords: ["dispatch routines WDK kernel , DispatchCleanup routine", "DispatchCleanup routine", "IRP_MJ_CLEANUP I/O function code", "deallocating resources WDK kernel", "unmapping hardware memory", "unmapping user-mode memory", "unlocking user-mode memory", "cleaning up resources WDK kernel", "spin locks WDK kernel", "cleanup dispatch routines WDK kernel"]
@@ -28,9 +27,9 @@ In general, a *DispatchCleanup* routine must process an **IRP\_MJ\_CLEANUP** req
 
 While processing an **IRP\_MJ\_CLEANUP** request, a driver can receive additional requests, such as [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) or [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819). Therefore, a driver that must deallocate resources must also synchronize execution of its *DispatchCleanup* routine with other dispatch routines, such as [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034).
 
- 
+ 
 
- 
+ 
 
 
 

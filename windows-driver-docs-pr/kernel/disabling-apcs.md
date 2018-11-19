@@ -1,6 +1,5 @@
 ---
 title: Disabling APCs
-author: windows-driver-content
 description: Disabling APCs
 ms.assetid: 0578df31-1467-4bad-ba62-081d61278deb
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "disabling APCs", "critical regions WDK kernel", "guarded regions WDK kernel", "raising current IRQLs"]
@@ -35,9 +34,9 @@ The following mutex operations have the same effect as entering or leaving a cri
 
 For more information about mutex objects, see [Mutex Objects](mutex-objects.md). For more information about fast and guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
 
- 
+ 
 
- 
+ 
 
 
 

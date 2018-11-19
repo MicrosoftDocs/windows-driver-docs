@@ -1,6 +1,5 @@
 ---
 title: Identifying the Input Source for a Scan Event
-author: windows-driver-content
 description: Identifying the Input Source for a Scan Event
 ms.assetid: aaa0bbf4-6866-45d7-8150-c6a74d6c46c1
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ In Windows 7 and later versions of Windows, when a scan event occurs, an applica
 
 In Windows Vista, the Web Services for Devices (WSD) scan class driver supports the WIA\_DPS\_SCAN\_AVAILABLE\_ITEM property. The driver defines this property (under the name WIA\_WSD\_SCAN\_AVAILABLE\_ITEM) as a custom driver extension. The driver supports only networked WIA scanner devices that implement the Windows Device Protocol (WDP) 1.0 for scanners. In Windows 7, the WSD scan class driver implements the WIA\_DPS\_SCAN\_AVAILABLE\_ITEM property as a standard driver feature, as described in the preceding paragraph, instead of as a custom driver extension. For more information about the WSD scan class driver, see [WIA with Web Services for Devices](wia-with-web-services-for-devices.md). For more information about WDP for scanners, see [Web Services for Devices Scan Service Schema](https://msdn.microsoft.com/library/windows/hardware/ff547963).
 
- 
+ 
 
- 
+ 
 
 
 

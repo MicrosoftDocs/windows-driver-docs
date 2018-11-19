@@ -56,9 +56,9 @@ For an overview of all video miniport driver functions and how those functions a
 
 For details on the I²C bus, see the I²C Bus Specification published by Philips Semiconductors.
 
- 
+ 
 
- 
+ 
 
 
 

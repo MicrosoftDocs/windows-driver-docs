@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_WAKE_UP_OK
-author: windows-driver-content
 description: OID_PNP_WAKE_UP_OK
 ms.assetid: 93389bfe-11b9-4433-8eca-4446f05d01c0
 ms.date: 08/08/2017
@@ -41,9 +40,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_DELETE_CIPHER_KEYS
-author: windows-driver-content
 description: OID_WDI_SET_DELETE_CIPHER_KEYS deletes cipher keys from the device's cipher key table.
 ms.assetid: 0a8d4625-382b-4976-aa3f-a8fea0976a00
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +26,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 |------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------|
 | [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926283) | X                              |          | The cipher keys to be deleted from the device's key table. |
 
- 
+ 
 
 ## Set property results
 
@@ -62,9 +61,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](oid-wdi-set-add-cipher-keys.md)
 
- 
+ 
 
- 
+ 
 
 
 

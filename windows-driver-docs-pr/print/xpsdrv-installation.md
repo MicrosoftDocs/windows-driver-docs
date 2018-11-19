@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Installation
-author: windows-driver-content
 description: XPSDrv Installation
 ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
 keywords:
@@ -53,9 +52,9 @@ xdsmpl-pipelineconfig.xml
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

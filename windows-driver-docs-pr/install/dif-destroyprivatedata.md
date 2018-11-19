@@ -47,7 +47,7 @@ When Windows destroys a [device information set](https://msdn.microsoft.com/libr
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -113,9 +113,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

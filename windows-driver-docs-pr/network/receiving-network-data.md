@@ -32,7 +32,7 @@ If the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag in the *ReceiveFlags* parameter that
 
 **Note**  If the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag is set, the protocol driver must retain the original set of NET\_BUFFER\_LIST structures in the linked list. For example, when this flag is set the driver might process the structures and indicate them up the stack one at a time but before the function returns it must restore the original linked list.
 
- 
+ 
 
 If the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag in the *ReceiveFlags* parameter that is passed to a protocol driver's *ProtocolReceiveNetBufferLists* function is not set, the protocol driver can retain ownership of the NET\_BUFFER\_LIST structures. In this case, the protocol driver must return the NET\_BUFFER\_LIST structures by calling the [**NdisReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564534) function.
 
@@ -42,7 +42,7 @@ NDIS calls a miniport driver's [*MiniportReturnNetBufferLists*](https://msdn.mic
 
 **Note**  If a miniport driver indicates a NET\_BUFFER\_LIST structure with the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag set, that does not mean that NDIS will indicate the NET\_BUFFER\_LIST structure to the protocol driver with the same status. For example, NDIS could copy a NET\_BUFFER\_LIST structure with the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag set and indicate the copy to the protocol driver with the flag cleared.
 
- 
+ 
 
 NDIS can return [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures to the miniport driver in any arbitrary order and in any combination. That is, the linked list of NET\_BUFFER\_LIST structures returned back to a miniport driver by a call to its *MiniportReturnNetBufferLists* function, can have NET\_BUFFER\_LIST structures from different previous calls to **NdisMIndicateReceiveNetBufferLists**.
 
@@ -50,9 +50,9 @@ Miniport drivers should set the **SourceHandle** member in the NET\_BUFFER\_LIST
 
 Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LIST structure to the *MiniportAdapterHandle* value that NDIS provided to the intermediate driver in the *MiniportInitializeEx* function. If an intermediate driver forwards a receive indication, the driver must save the **SourceHandle** value that the underlying driver provided before it writes to the **SourceHandle** member. When NDIS returns a forwarded NET\_BUFFER\_LIST structure to the intermediate driver, the intermediate driver must restore the **SourceHandle** that it saved.
 
- 
+ 
 
- 
+ 
 
 
 

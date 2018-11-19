@@ -1,6 +1,5 @@
 ---
 title: WSK Client Control Operations
-author: windows-driver-content
 description: WSK Client Control Operations
 ms.assetid: aa1159f5-defd-440e-9628-906a246c11df
 ms.date: 07/18/2017
@@ -31,9 +30,9 @@ The WSK subsystem supports the following WSK client control operations:
 
 [**WSK\_TRANSPORT\_LIST\_QUERY**](wsk-transport-list-query.md)
 
- 
+ 
 
- 
+ 
 
 
 

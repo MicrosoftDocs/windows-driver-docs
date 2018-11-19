@@ -20,7 +20,7 @@ This section describes how to set up and perform a data transfer.
 
 **Note**  Depending on the behavior of applications that load the switch, the switch optimizes its session protocol to reduce the overhead involved in transferring application data.
 
- 
+ 
 
 This section also provides examples of how the switch's session protocol performs data transfers. However, these examples do not include definitive descriptions of these operations.
 
@@ -73,9 +73,9 @@ The following figure shows an overview of how the switch completes the transfer 
 
 [Transferring Data on a SAN](transferring-data-on-a-san.md)
 
- 
+ 
 
- 
+ 
 
 
 

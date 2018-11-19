@@ -13,7 +13,7 @@ The following COM interfaces are defined in headers included in the WDK.
 
 **Important**  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](https://msdn.microsoft.com/library/windows/desktop/ms694505).
 
- 
+ 
 
 ## <span id="UNKNOWN.H_"></span>unknown.h
 
@@ -44,9 +44,9 @@ INonDelegatingUnknown::NonDelegatingRelease
 
 PNONDELEGATINGUNKNOWN
 
- 
+ 
 
- 
+ 
 
 
 

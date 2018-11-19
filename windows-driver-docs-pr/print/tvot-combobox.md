@@ -1,6 +1,5 @@
 ---
 title: TVOT\_COMBOBOX
-author: windows-driver-content
 description: TVOT\_COMBOBOX
 ms.assetid: 186acda6-f87c-4e0f-95b8-d76823354cfd
 keywords: ["TVOT_COMBOBOX Print Devices"]
@@ -115,7 +114,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -135,9 +134,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

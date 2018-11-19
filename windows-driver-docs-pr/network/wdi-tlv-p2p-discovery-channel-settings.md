@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS
-author: windows-driver-content
 description: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS is a TLV that contains Wi-Fi Direct discovery channel settings.
 ms.assetid: 50BD3F70-4C12-4984-8E3F-AEC9F5C3CDCA
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_LISTEN\_DURATION**](wdi-tlv-p2p-listen-duration.md) |                                |          | The cycle duration and listen time. |
 | [**WDI\_TLV\_BAND\_CHANNEL**](wdi-tlv-band-channel.md)                | X                              |          | The list of channels to scan.       |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

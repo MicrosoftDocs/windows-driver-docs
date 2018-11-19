@@ -1,6 +1,5 @@
 ---
 title: WDI Miniport Driver Status Indications
-author: windows-driver-content
 description: This section contains WDI status notifications.
 ms.assetid: CD873C33-72ED-4F99-A584-5C307F4FB65E
 ms.date: 07/18/2017
@@ -60,9 +59,9 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE](ndis-status-wdi-indication-tkip-mic-failure.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](ndis-status-wdi-indication-wake-reason.md)
 
- 
+ 
 
- 
+ 
 
 
 

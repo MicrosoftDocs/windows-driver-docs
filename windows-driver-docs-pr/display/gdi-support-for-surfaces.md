@@ -34,73 +34,73 @@ For each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#w
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngAssociateSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564183)</p></td>
-<td align="left"><p>Associates a surface with a PDEV and defines the drawing operations the driver writer wants to hook out for that surface. It uses the PDEV's default palette and style steps. The driver must make this call for the primary surface during the execution of [<strong>DrvEnableSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556214). The driver must also make this call when it enables a secondary surface before locking the surface to write on it.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564183" data-raw-source="[&lt;strong&gt;EngAssociateSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564183)"><strong>EngAssociateSurface</strong></a></p></td>
+<td align="left"><p>Associates a surface with a PDEV and defines the drawing operations the driver writer wants to hook out for that surface. It uses the PDEV&#39;s default palette and style steps. The driver must make this call for the primary surface during the execution of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556214" data-raw-source="[&lt;strong&gt;DrvEnableSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556214)"><strong>DrvEnableSurface</strong></a>. The driver must also make this call when it enables a secondary surface before locking the surface to write on it.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngCheckAbort</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564189)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564189" data-raw-source="[&lt;strong&gt;EngCheckAbort&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564189)"><strong>EngCheckAbort</strong></a></p></td>
 <td align="left"><p>(Printers only) Enables a printer driver to determine whether its printer job has been terminated.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngCreateBitmap</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564199)</p></td>
-<td align="left"><p>Creates a standard format [<em>DIB</em>](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) bitmap. GDI can perform all drawing operations on this type of surface.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564199" data-raw-source="[&lt;strong&gt;EngCreateBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564199)"><strong>EngCreateBitmap</strong></a></p></td>
+<td align="left"><p>Creates a standard format <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-" data-raw-source="[&lt;em&gt;DIB&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-)"><em>DIB</em></a> bitmap. GDI can perform all drawing operations on this type of surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngCreateDeviceBitmap</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564204)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564204" data-raw-source="[&lt;strong&gt;EngCreateDeviceBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564204)"><strong>EngCreateDeviceBitmap</strong></a></p></td>
 <td align="left"><p>Creates a device-dependent bitmap which the driver is responsible for drawing on (although it can be created as a DIB, in which case the driver can call back to have GDI draw on it).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngCreateDeviceSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564206)</p></td>
-<td align="left"><p>Creates a [<em>device-managed surface</em>](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface). The driver is responsible for managing certain drawing operations for this surface. The function returns a handle that the driver manages.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564206" data-raw-source="[&lt;strong&gt;EngCreateDeviceSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564206)"><strong>EngCreateDeviceSurface</strong></a></p></td>
+<td align="left"><p>Creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="[&lt;em&gt;device-managed surface&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface)"><em>device-managed surface</em></a>. The driver is responsible for managing certain drawing operations for this surface. The function returns a handle that the driver manages.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngCreateWnd</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564769)</p></td>
-<td align="left"><p>Create a [<strong>WNDOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570599) structure on a specified surface.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564769" data-raw-source="[&lt;strong&gt;EngCreateWnd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564769)"><strong>EngCreateWnd</strong></a></p></td>
+<td align="left"><p>Create a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570599" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570599)"><strong>WNDOBJ</strong></a> structure on a specified surface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngDeleteSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564827)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564827" data-raw-source="[&lt;strong&gt;EngDeleteSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564827)"><strong>EngDeleteSurface</strong></a></p></td>
 <td align="left"><p>Deletes a surface (DIB, device-dependent bitmap, or device-managed surface).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngDeleteWnd</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564830)</p></td>
-<td align="left"><p>Deletes a [<strong>WNDOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570599) structure.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564830" data-raw-source="[&lt;strong&gt;EngDeleteWnd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564830)"><strong>EngDeleteWnd</strong></a></p></td>
+<td align="left"><p>Deletes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570599" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570599)"><strong>WNDOBJ</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngEraseSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564857)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564857" data-raw-source="[&lt;strong&gt;EngEraseSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564857)"><strong>EngEraseSurface</strong></a></p></td>
 <td align="left"><p>Fills a specified rectangle on a surface with a given color, effectively erasing it. This function should be called only to erase the surface of a GDI bitmap.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngLockDirectDrawSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564966)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564966" data-raw-source="[&lt;strong&gt;EngLockDirectDrawSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564966)"><strong>EngLockDirectDrawSurface</strong></a></p></td>
 <td align="left"><p>Locks the kernel-mode handle of a DirectDraw surface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngLockSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564968)</p></td>
-<td align="left"><p>Gives the driver access to a created surface by creating a user object ([<strong>SURFOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569901)) for that surface. (The [primary surface](surface-negotiation.md) is not locked.)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564968" data-raw-source="[&lt;strong&gt;EngLockSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564968)"><strong>EngLockSurface</strong></a></p></td>
+<td align="left"><p>Gives the driver access to a created surface by creating a user object (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569901" data-raw-source="[&lt;strong&gt;SURFOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569901)"><strong>SURFOBJ</strong></a>) for that surface. (The <a href="surface-negotiation.md" data-raw-source="[primary surface](surface-negotiation.md)">primary surface</a> is not locked.)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngMarkBandingSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564975)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564975" data-raw-source="[&lt;strong&gt;EngMarkBandingSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564975)"><strong>EngMarkBandingSurface</strong></a></p></td>
 <td align="left"><p>(Printers only) Marks a surface as a banding surface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngModifySurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564976)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564976" data-raw-source="[&lt;strong&gt;EngModifySurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564976)"><strong>EngModifySurface</strong></a></p></td>
 <td align="left"><p>Notifies GDI about the attributes of a surface that was created by the driver.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngUnlockDirectDrawSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565042)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565042" data-raw-source="[&lt;strong&gt;EngUnlockDirectDrawSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565042)"><strong>EngUnlockDirectDrawSurface</strong></a></p></td>
 <td align="left"><p>Releases the lock on a given DirectDraw specified surface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngUnlockSurface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565422)</p></td>
-<td align="left"><p>Unlocks a surface when the driver has finished a drawing operation (to be called when disabling a [secondary surface](surface-negotiation.md)).</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565422" data-raw-source="[&lt;strong&gt;EngUnlockSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565422)"><strong>EngUnlockSurface</strong></a></p></td>
+<td align="left"><p>Unlocks a surface when the driver has finished a drawing operation (to be called when disabling a <a href="surface-negotiation.md" data-raw-source="[secondary surface](surface-negotiation.md)">secondary surface</a>).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

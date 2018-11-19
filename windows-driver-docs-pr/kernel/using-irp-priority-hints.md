@@ -1,6 +1,5 @@
 ---
 title: Using IRP Priority Hints
-author: windows-driver-content
 description: Using IRP Priority Hints
 ms.assetid: c34afff2-32f2-451b-ab16-ff048d5c3204
 ms.localizationpriority: medium
@@ -14,9 +13,9 @@ An *IRP priority hint* is an [**IO\_PRIORITY\_HINT**](https://msdn.microsoft.com
 
 For more information about IRP priority hints, see the [I/O Prioritization in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=67877) white paper.
 
- 
+ 
 
- 
+ 
 
 
 

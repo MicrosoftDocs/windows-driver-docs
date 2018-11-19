@@ -15,9 +15,9 @@ This section includes:
 
 [Standard Miniport Driver Status Indications Registered with WMI](standard-miniport-driver-status-indications-registered-with-wmi.md)
 
- 
+ 
 
- 
+ 
 
 
 

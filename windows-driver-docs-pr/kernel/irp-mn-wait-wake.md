@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_WAIT_WAKE
-author: windows-driver-content
 description: This IRP enables a driver to awaken a sleeping system or to awaken a sleeping device.
 ms.date: 08/12/2017
 ms.assetid: b79fd057-bf95-457e-882a-42221789e6e6
@@ -112,9 +111,9 @@ Requirements
 
 [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734)
 
- 
+ 
 
- 
+ 
 
 
 

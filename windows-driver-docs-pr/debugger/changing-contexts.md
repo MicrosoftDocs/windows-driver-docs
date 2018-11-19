@@ -3,7 +3,6 @@ title: Changing Contexts
 description: Changing Contexts
 ms.assetid: 3690903c-4281-4c65-98b0-00ca22206168
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
-ms.author: domars
 ms.date: 08/02/2018
 ms.localizationpriority: medium
 ---
@@ -108,9 +107,9 @@ The local context is reset if any of the following events occur:
 
 The [**!for\_each\_frame**](-for-each-frame.md) extension enables you to execute a single command repeatedly, once for each frame in the stack. This command changes the local context for each frame, executes the specified command, and then returns the local context to its original value.
 
- 
+ 
 
- 
+ 
 
 
 

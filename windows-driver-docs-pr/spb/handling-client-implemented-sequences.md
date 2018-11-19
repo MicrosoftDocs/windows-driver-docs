@@ -1,6 +1,5 @@
 ---
 title: Handling Client-Implemented Sequences
-author: windows-driver-content
 description: The optional EvtSpbControllerLock and EvtSpbControllerUnlock event callback functions perform complementary operations.
 ms.assetid: C1DED853-059D-481F-A524-E50772072018
 ms.date: 04/20/2017
@@ -33,9 +32,9 @@ Your driver has two ways to detect the start of a client-implemented sequence. F
 
 The *EvtSpbControllerUnlock* callback is the only way that a driver can determine when a sequence ends. A driver that does not implement an *EvtSpbControllerUnlock* function cannot support client-implemented sequences.
 
- 
+ 
 
- 
+ 
 
 
 

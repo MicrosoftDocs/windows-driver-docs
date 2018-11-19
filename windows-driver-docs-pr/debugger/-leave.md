@@ -3,7 +3,6 @@ title: .leave
 description: The .leave token is used to exit from a .catch block.
 ms.assetid: 82c5cbf7-bccd-4abf-b52a-2db65e0a0c2c
 keywords: [".leave Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -37,9 +36,9 @@ When a **.leave** token is encountered within a [**.catch**](-catch.md) block, t
 
 Since there is no control flow token equivalent to the C **goto** statement, you will usually use the **.leave** token within an [**.if**](-if.md) conditional, as shown in the syntax examples above. However, this is not actually required.
 
- 
+ 
 
- 
+ 
 
 
 

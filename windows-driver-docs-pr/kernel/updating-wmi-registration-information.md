@@ -1,6 +1,5 @@
 ---
 title: Updating WMI Registration Information
-author: windows-driver-content
 description: Updating WMI Registration Information
 ms.assetid: d24688e5-bb50-4bce-a4d4-4a3bf886f86d
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "registering blocks", "updating WMI registration information"]
@@ -38,9 +37,9 @@ After its initial registration with WMI, a driver changes its registration infor
 
     WMI does not send an **IRP\_MN\_REGINFO** or **IRP\_MN\_REGINFO\_EX** request in response to this call, because it requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request. Note that the deregister call will block until all WMI IRPs to the device have been completed. If a driver queues WMI IRPs, it must cancel them before calling [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480) to deregister.
 
- 
+ 
 
- 
+ 
 
 
 

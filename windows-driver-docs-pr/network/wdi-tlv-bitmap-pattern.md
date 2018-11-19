@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BITMAP_PATTERN
-author: windows-driver-content
 description: WDI_TLV_BITMAP_PATTERN is a TLV that contains the byte array of a pattern.
 ms.assetid: 44A18754-3D04-4B62-B8C2-861A47129F08
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|----------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the byte array of the pattern. Length = (Pattern length + 7)/8. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

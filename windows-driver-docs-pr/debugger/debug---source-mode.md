@@ -3,7 +3,6 @@ title: Debug Source Mode
 description: Debug Source Mode
 ms.assetid: 51fd8b6c-9bd9-42ed-a5fa-0098b3f0fea2
 keywords: ["Debug Source Mode", "source debugging, Debug Source Mode", "assembly debugging, Debug Source Mode"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ When source mode is active, ASM is unavailable on the status bar. When assembly 
 
 For more information about source-mode debugging, see [Debugging in Source Mode](debugging-in-source-mode.md). For more information about assembly-mode debugging, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

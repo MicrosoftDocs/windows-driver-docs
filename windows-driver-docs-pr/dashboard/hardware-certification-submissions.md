@@ -2,6 +2,7 @@
 title: Hardware submissions
 description: Hardware submissions
 ms.assetid: 7EFA9617-CF1D-4259-B0C4-A9DDCF5C3A1F
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,10 +18,10 @@ To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
-> [!NOTE]  
+> [!NOTE]
 > We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published. 
 
- 
+ 
 
 -   To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -84,8 +85,8 @@ The hardware certification submission list displays the following information ab
 <td><p>Your permission for the submission. Possible values are:</p>
 <ul>
 <li>Author: Author of the driver. You can complete all tasks and share the driver with partners.</li>
-<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can't share the driver with additional companies.</li>
-<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can't create shipping labels or create DUA packages.</li>
+<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can&#39;t share the driver with additional companies.</li>
+<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can&#39;t create shipping labels or create DUA packages.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -95,7 +96,7 @@ The hardware certification submission list displays the following information ab
 </tbody>
 </table>
 
- 
+ 
 
 The search box allows you to search for a specific submission or set of submissions. You can search for exact or partial matches for the values in the **ID**, **Name**, **State**, and **Certification type** columns.
 
@@ -140,7 +141,7 @@ This section displays certification information. Select **See more info** to exp
 <tbody>
 <tr class="odd">
 <td><p>Is this a Universal Windows driver?</p></td>
-<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
+<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>What type of device?</p></td>
@@ -227,7 +228,7 @@ The shipping label list displays the shipping labels for this submission. This l
 </tbody>
 </table>
 
- 
+ 
 
 The status graphic displays the publish status for each shipping label. A green check means the label has been published. A yellow circle means the label is not published yet.
 
@@ -237,9 +238,9 @@ The status graphic displays the publish status for each shipping label. A green 
 
 - [Manage hardware submissions](manage-your-hardware-submissions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Associating Callback Interfaces Example
-author: windows-driver-content
 description: Associating Callback Interfaces Example
 ms.assetid: 6156730b-394c-451c-beea-1b25ba5a1fe3
 keywords:
@@ -39,9 +38,9 @@ static HRESULT CreateInstance(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

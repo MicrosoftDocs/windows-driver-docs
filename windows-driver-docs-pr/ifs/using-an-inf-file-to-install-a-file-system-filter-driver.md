@@ -1,6 +1,5 @@
 ---
 title: Using an INF File to Install a File System Filter Driver
-author: windows-driver-content
 description: Using an INF File to Install a File System Filter Driver
 ms.assetid: 0bc70cdb-d115-4329-9fcc-a085a57c5f78
 keywords:
@@ -27,7 +26,7 @@ To execute the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/h
 
 **Note**   The shortcut menu appears only if the INF file contains a **DefaultInstall** section.
 
- 
+ 
 
 ### <span id="Command-Line_or_Batch_File_Install"></span><span id="command-line_or_batch_file_install"></span><span id="COMMAND-LINE_OR_BATCH_FILE_INSTALL"></span>Command-Line or Batch File Install
 
@@ -59,9 +58,9 @@ If you use a setup application to install your driver, observe the following gui
 
 For more information about setup applications, see [Writing a Device Installation Application](https://msdn.microsoft.com/library/windows/hardware/ff554015).
 
- 
+ 
 
- 
+ 
 
 
 

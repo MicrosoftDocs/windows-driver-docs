@@ -120,9 +120,9 @@ The following screen shot shows how to close the Defect Viewer.
 
 ![screen shot showing how to close the defect viewer for a rule](images/sdv-defectviewerclose.png)
 
- 
+ 
 
- 
+ 
 
 
 

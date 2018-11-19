@@ -25,9 +25,9 @@ After a miniport driver receives the [**NET\_BUFFER\_LIST**](https://msdn.micros
 
 When the NIC performs IPsec processing on a send packet, it calculates the AH or ESP encryption checksums (or both) for the packet and, if the packet contains an ESP payload, encrypts the packet. The TCP/IP transport has already framed the packet, padded it (if necessary), and assigned it a sequence number and SPI.
 
- 
+ 
 
- 
+ 
 
 
 

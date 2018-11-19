@@ -20,9 +20,9 @@ By default, NDIS does not create an NDIS network interface for an NDIS port. If 
 
 For more information about NDIS network interfaces, see [NDIS 6.0 Network Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff566525).
 
- 
+ 
 
- 
+ 
 
 
 

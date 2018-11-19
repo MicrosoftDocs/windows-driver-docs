@@ -1,6 +1,5 @@
 ---
 title: PCL XL Issues
-author: windows-driver-content
 description: PCL XL Issues
 ms.assetid: 65db50fb-b58f-44f0-aa2a-67c23a448d32
 keywords:
@@ -23,9 +22,9 @@ ms.localizationpriority: medium
 
 -   The GPD \*TextHalftoneThreshold attribute name is not supported on a PCL XL minidriver. Text in any resolution is grayscaled in PCL XL mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Customized Color Formats
-author: windows-driver-content
 description: Customized Color Formats
 ms.assetid: 309d33e8-6338-4c32-8e03-d6cbf3371e16
 keywords:
@@ -24,9 +23,9 @@ If you implement [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/
 
 If a rendering plug-in implements [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261), it can also implement [**IPrintOemUni::MemoryUsage**](https://msdn.microsoft.com/library/windows/hardware/ff554264).
 
- 
+ 
 
- 
+ 
 
 
 

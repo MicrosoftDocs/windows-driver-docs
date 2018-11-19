@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY to indicate Network List Offload (NLO) discovery.
 ms.assetid: 1a789bd8-8601-45f3-a9bf-5220c20379cb
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_NLO\_DISCOVERY to indicate N
 |--------|
 | Port   |
 
- 
+ 
 
 The firmware detects APs for SSIDs pushed down in NLO. NLO is used in non-AOAC systems for fast connection when resuming from system sleep. It is also used in AOAC systems to scan APs for SSIDs that are pushed to the firmware.
 
@@ -44,7 +43,7 @@ The indication of NLO discovery happens in the following two cases.
 |--------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926162) | X                              |          | A list of BSSIDs. The list must at least contain the entry that triggered this discovery status. |
 
- 
+ 
 
 Requirements
 ------------
@@ -70,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

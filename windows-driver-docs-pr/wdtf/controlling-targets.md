@@ -1,6 +1,5 @@
 ---
 title: Controlling Targets
-author: windows-driver-content
 description: Controlling Targets
 ms.assetid: b329e9a2-7d24-4612-9aa1-9d7955a61473
 keywords:

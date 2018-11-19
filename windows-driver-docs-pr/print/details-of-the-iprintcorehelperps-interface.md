@@ -1,6 +1,5 @@
 ---
 title: Details of the IPrintCoreHelperPS Interface
-author: windows-driver-content
 description: Details of the IPrintCoreHelperPS Interface
 ms.assetid: 0e00012c-6ced-4369-b367-675465e29d93
 keywords:
@@ -22,9 +21,9 @@ Pscript5 does not have an equivalent to the GDL parser, so for Pscript5 drivers,
 
 Because the PPD information does not depend on the configuration, you do not need to supply an input [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) parameter to these methods.
 
- 
+ 
 
- 
+ 
 
 
 

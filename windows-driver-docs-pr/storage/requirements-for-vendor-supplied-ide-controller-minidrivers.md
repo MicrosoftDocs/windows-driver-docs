@@ -1,6 +1,5 @@
 ---
 title: Requirements for Vendor-Supplied IDE Controller Minidrivers
-author: windows-driver-content
 description: Requirements for Vendor-Supplied IDE Controller Minidrivers
 ms.assetid: a1584665-8788-49a4-b86f-50c265e7ce7a
 keywords:
@@ -33,9 +32,9 @@ A vendor-supplied controller minidriver must provide a set of standard minidrive
 
 For more information about the PciIdeX library and a description of the minidriver routine interface between the system-supplied controller driver and a vendor-supplied controller minidriver, see [Initializing and Calling IDE Minidriver Routines](initializing-and-calling-ide-minidriver-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

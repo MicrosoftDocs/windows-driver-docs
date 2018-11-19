@@ -22,9 +22,9 @@ The caller uses the **position** member of the [**DISPLAYCONFIG\_SOURCE\_MODE**]
 
 Although [**SetDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569533) attempts to rearrange sources surfaces to enforce these GDI layout rules, the caller should specify the layout of the sources surfaces. It is undefined how GDI will rearrange the sources surfaces to enforce its layout rules, and the resultant layout of sources surfaces might not be what the caller wanted to achieve.
 
- 
+ 
 
- 
+ 
 
 
 

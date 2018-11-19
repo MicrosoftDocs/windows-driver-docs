@@ -26,9 +26,9 @@ We recommend the following:
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

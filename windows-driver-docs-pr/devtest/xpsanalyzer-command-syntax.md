@@ -21,8 +21,6 @@ To run XpsAnalyzer, type a command at the command line using the following synta
 
 ```
     XpsAnalyzer [/XpsFile:FileName] [/Directory:DirectoryName] [/FlushSql:SqlFormat]] 
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -70,9 +68,9 @@ This file contains a script to insert the XPS analysis results into the SQL data
 
 For an example of an XPS analysis report, see [XpsAnalyzer Output](xpsanalyzer-output.md).
 
- 
 
- 
+
+
 
 
 

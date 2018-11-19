@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Source Control
-author: windows-driver-content
 description: Participating in Error Source Control
 ms.assetid: 4b2e3431-348f-48b1-924e-14b9fb5a48f0
 keywords:
@@ -146,9 +145,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error source control must specify the **PshedFAErrorSourceControl** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

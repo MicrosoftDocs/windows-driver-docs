@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Schema Extensions for Input and Output Bins
-author: windows-driver-content
 description: TCP/IP Schema Extensions for Input and Output Bins
 ms.assetid: 942325e8-588c-4171-91fa-366db6e2cb16
 keywords:
@@ -46,7 +45,7 @@ The Tcpbidi.xsd file, which is used to extend the bidi schema, defines two const
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
@@ -76,9 +75,9 @@ This section includes the following topics.
 
 [Driver-Specific Bins](driver-specific-bins.md)
 
- 
+ 
 
- 
+ 
 
 
 

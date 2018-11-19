@@ -1,6 +1,5 @@
 ---
 title: User-Mode Functions
-author: windows-driver-content
 description: User-Mode Functions
 ms.assetid: 1faa04b1-0bf0-494c-b55f-5c90c259c8f5
 keywords: ["force feedback drivers WDK HID , user-mode functions", "user-mode functions WDK force feedback"]
@@ -26,9 +25,9 @@ All magnitude and gain values used by DirectInput are uniform and linear across 
 
 The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](https://msdn.microsoft.com/library/windows/hardware/ff540050)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.
 
- 
+ 
 
- 
+ 
 
 
 

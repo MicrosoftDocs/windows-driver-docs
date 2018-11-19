@@ -3,7 +3,6 @@ title: devstack
 description: The devstack extension displays a formatted view of the device stack associated with a device object.
 ms.assetid: 2215f166-2053-4525-80cd-be3817510dbd
 keywords: ["devstack Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the device object. This can be the hexadecimal address of the DEVICE\_
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ kd> !devstack e000000085007b50
  ServiceName is "kmixer"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

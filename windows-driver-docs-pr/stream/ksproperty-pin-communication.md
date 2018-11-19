@@ -47,13 +47,13 @@ The KSPROPERTY\_PIN\_COMMUNICATION property specifies the direction of IRP flow 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>KSPIN_COMMUNICATION</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -100,9 +100,9 @@ Requirements
 
 [**KSPROPERTY\_PIN\_DATAFLOW**](ksproperty-pin-dataflow.md)
 
- 
+ 
 
- 
+ 
 
 
 

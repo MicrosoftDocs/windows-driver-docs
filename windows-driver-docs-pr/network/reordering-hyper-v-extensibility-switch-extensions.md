@@ -13,7 +13,7 @@ Multiple Hyper-V extensible switch capturing or filtering extensions can be enab
 
 **Note**  Only one forwarding extension can be enabled in each instance of an extensible switch.
 
- 
+ 
 
 By default, multiple capturing or filtering extensions are ordered based on their type and when they were installed. For example, multiple capturing extensions are layered in the extensible switch driver stack with the most recently installed extension closest to the protocol edge of the switch.
 
@@ -54,9 +54,9 @@ Name: Switch Extensibility Test Extension 1
 
 [**Msvm\_VirtualEthernetSwitchSettingData**](https://msdn.microsoft.com/library/hh850246)
 
- 
+ 
 
- 
+ 
 
 
 

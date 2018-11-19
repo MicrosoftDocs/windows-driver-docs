@@ -26,9 +26,9 @@ Offloading TCP/IP checksum tasks at run time in NDIS 6.0 is similar to NDIS 5.*x
 
 For more information about offloading TCP/IP checksum tasks, see [Offloading Checksum Tasks](offloading-checksum-tasks.md).
 
- 
+ 
 
- 
+ 
 
 
 

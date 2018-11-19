@@ -1,6 +1,5 @@
 ---
 title: Reusing IRPs
-author: windows-driver-content
 description: Reusing IRPs
 ms.assetid: 19b09cf8-b88d-4808-9af0-038d3d02dceb
 keywords: ["IRPs WDK kernel , reusing", "reusing IRPs WDK kernel"]
@@ -26,9 +25,9 @@ Drivers can safely reuse IRPs that they have created, as follows:
 
 3.  If a driver allocates an IRP by calling **IoAllocateIrp** with the *ChargeQuota* parameter set to **FALSE**, then it can safely use **IoInitializeIrp** to reinitialize the IRP. Drivers that must work on Windows 98/Me can use this method as a work-around. Drivers designed strictly for Windows 2000 and later operating systems should use the previous method.
 
- 
+ 
 
- 
+ 
 
 
 

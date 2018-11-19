@@ -1,6 +1,5 @@
 ---
 title: Interlocked Operations in Storport Miniport Drivers
-author: windows-driver-content
 description: Many of the interlocked functions available to Windows applications are appropriate for use in Storport miniport drivers.
 ms.assetid: F3868AF4-545F-4B8E-8655-5AAD888C4B40
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ The following interlocked functions are available for use in miniport drivers.
 
 **Note**  The functions are declared in *miniport.h* or, for 32-bit (x86) drivers, in *storport.h*. The function topics listed from the Platform Software Development Kit (SDK) documentation are for usage reference only.
 
- 
+ 
 
 ## <span id="interlocked_logical"></span><span id="INTERLOCKED_LOGICAL"></span>Logical
 
@@ -52,9 +51,9 @@ The following interlocked functions are available for use in miniport drivers.
 [**InterlockedExchangeAdd64**](https://msdn.microsoft.com/library/windows/desktop/ms683599)  
 [**InterlockedIncrement**](https://msdn.microsoft.com/library/windows/desktop/ms683614)  
 [**InterlockedIncrement64**](https://msdn.microsoft.com/library/windows/desktop/ms683615)  
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ndiskd.netqueue
 description: The ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object.
 ms.assetid: 101F29AA-5CEE-41F8-A3EC-AA2E74B8E074
 keywords: ["ndiskd.netqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -43,7 +42,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NETTXQUEUE and NETRXQUEUE objects with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 
@@ -113,9 +112,9 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

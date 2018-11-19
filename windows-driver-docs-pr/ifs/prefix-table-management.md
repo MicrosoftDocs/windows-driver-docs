@@ -1,6 +1,5 @@
 ---
 title: Prefix Table Management
-author: windows-driver-content
 description: Prefix Table Management
 ms.assetid: a48ed460-fab9-4a6d-bd2f-454b4932ea61
 keywords:
@@ -62,28 +61,28 @@ The RDBSS prefix table management routines include the following:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxpAcquirePrefixTableLockExclusive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554595)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554595" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockExclusive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554595)"><strong>RxpAcquirePrefixTableLockExclusive</strong></a></p></td>
 <td align="left"><p>This routine acquires an exclusive lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxpAcquirePrefixTableLockShared</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554598)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554598" data-raw-source="[&lt;strong&gt;RxpAcquirePrefixTableLockShared&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554598)"><strong>RxpAcquirePrefixTableLockShared</strong></a></p></td>
 <td align="left"><p>This routine acquires a shared lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxPrefixTableLookupName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554632)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554632" data-raw-source="[&lt;strong&gt;RxPrefixTableLookupName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554632)"><strong>RxPrefixTableLookupName</strong></a></p></td>
 <td align="left"><p>The routine looks up a name in a prefix table used to catalog SRV_CALL and NET_ROOT names and converts from the underlying pointer to the containing structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxpReleasePrefixTableLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554637)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554637" data-raw-source="[&lt;strong&gt;RxpReleasePrefixTableLock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554637)"><strong>RxpReleasePrefixTableLock</strong></a></p></td>
 <td align="left"><p>This routine releases a lock on a prefix table used to catalog SRV_CALL and NET_ROOT names.</p>
 <p>This routine is only available on Windows XP and Windows 2000. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Starting with Windows Server 2003, the routines mentioned in the previous table, except [**RxPrefixTableLookupName**](https://msdn.microsoft.com/library/windows/hardware/ff554632), are replaced by macros.The following macros are defined that call the prefix table routines with fewer parameters.
 
@@ -122,11 +121,11 @@ Starting with Windows Server 2003, the routines mentioned in the previous table
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Reading Symbols from Paged-Out Headers
 description: Reading Symbols from Paged-Out Headers
 ms.assetid: 74ec20d8-e2b5-449d-8b93-7553c57fac07
 keywords: ["symbols, paged-out header problems"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ This technique is only used for kernel-mode debugging. The operating system is c
 
 Here is an example of this technique being used:
 
-```
+```dbgcmd
 kd> .reload
 Connected to Windows XP 2268 x86 compatible target, ptr64 FALSE
 Loading Kernel Symbols
@@ -60,14 +59,14 @@ by being in the wrong process context or by paging
 
 Notice that many images have inaccessible headers. Check the symbols from one of these files (in this example, fs\_rec.sys):
 
-```
+```dbgcmd
 kd> x fs_rec!*
 *** ERROR: Module load completed but symbols could not be loaded for fs_rec.sys
 ```
 
 These headers are apparently paged out. So you need to add the proper images to the symbol path:
 
-```
+```dbgcmd
 kd> .sympath+ \\myserver\myshare\symbols\x86fre\symbols
 Symbol search path is: symsrv*symsrv.dll*c:\localcache*https://msdl.microsoft.com/download/symbols;\\myserver\myshare\symbols\x86fre\symbols
 
@@ -94,7 +93,7 @@ by being in the wrong process context or by paging
 
 The same warnings have appeared, but the symbols themselves are now accessible:
 
-```
+```dbgcmd
 kd> x fs_Rec!*
 fe0c8358  Fs_Rec!_imp___allmul
 fe0c8310  Fs_Rec!_imp__IoCreateDevice
@@ -105,9 +104,9 @@ fe0c832c  Fs_Rec!_imp__KeSetEvent
 fe0c9570  Fs_Rec!_NULL_IMPORT_DESCRIPTOR
 ```
 
- 
+ 
 
- 
+ 
 
 
 

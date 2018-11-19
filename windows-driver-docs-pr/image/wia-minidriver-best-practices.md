@@ -1,6 +1,5 @@
 ---
 title: WIA Minidriver Best Practices
-author: windows-driver-content
 description: WIA Minidriver Best Practices
 ms.assetid: 0be38135-6911-44eb-8ba7-439c7a038216
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ This section consists of recommended tips for WIA minidriver developers. The fol
 
 [Security Issues for WIA Drivers](security-issues-for-wia-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

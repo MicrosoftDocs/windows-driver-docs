@@ -1,6 +1,5 @@
 ---
 title: Initializing and Calling IDE Minidriver Routines
-author: windows-driver-content
 description: Initializing and Calling IDE Minidriver Routines
 ms.assetid: ae7b19a9-0a2e-4231-b008-879b7f6c8566
 keywords:
@@ -65,9 +64,9 @@ This routine determines whether I/O can be done by means of DMA.
 
 [**HwIdeXUseDma**](https://msdn.microsoft.com/library/windows/hardware/ff557266)
 
- 
+ 
 
- 
+ 
 
 
 

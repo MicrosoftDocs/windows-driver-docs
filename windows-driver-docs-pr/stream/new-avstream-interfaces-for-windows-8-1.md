@@ -1,6 +1,5 @@
 ---
 title: New AVStream Interfaces for Windows 8.1
-author: windows-driver-content
 description: AVStream streaming media driver interfaces are extended to support new camera platform functionality starting with Windows 8.1.
 ms.assetid: 1D06A754-236B-441D-A0BB-A78B419270E9
 ms.date: 05/15/2018
@@ -56,9 +55,9 @@ These device driver interfaces (DDIs) support these extensions and are new or up
 -   [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) (new **FrameCompletionNumber** member)
 -   Note also the additional [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) property set listed in [Video Capture Minidriver Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff568714).
 
- 
+ 
 
- 
+ 
 
 
 

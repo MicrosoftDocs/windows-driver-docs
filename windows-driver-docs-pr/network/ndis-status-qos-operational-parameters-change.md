@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE
-author: windows-driver-content
 description: The miniport driver that supports NDIS Quality of Service (QoS) issues an NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE status indication when its operational NDIS QoS parameters are either resolved for the first time or changed later.
 ms.assetid: 15D2B139-1AEA-4252-8599-0EA4ED2E3733
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ When the miniport driver makes this status indication, it sets the **StatusBuffe
 
 **Note**  This NDIS status indication is valid only for miniport drivers that support the IEEE 802.1 Data Center Bridging (DCB) interface.
 
- 
+ 
 
 Remarks
 -------
@@ -39,7 +38,7 @@ The miniport driver issues an **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHAN
 
 **Note**  Overlying drivers can use the **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE** status indication to determine the operational NDIS QoS parameters. Alternatively, these drivers can also issue OID query requests of [OID\_QOS\_OPERATIONAL\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451832) to obtain the operational NDIS QoS parameters at any time.
 
- 
+ 
 
 For information on how the miniport driver issues an **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE** status indication, see [Indicating Changes to the Operational NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh451447).
 
@@ -75,9 +74,9 @@ Requirements
 
 [OID\_QOS\_OPERATIONAL\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451832)
 
- 
+ 
 
- 
+ 
 
 
 

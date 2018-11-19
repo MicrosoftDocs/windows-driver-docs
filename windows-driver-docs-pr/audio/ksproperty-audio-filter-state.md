@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # KSPROPERTY\_AUDIO\_FILTER\_STATE
 
 
-The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a [GFX filter](https://msdn.microsoft.com/library/windows/hardware/ff536403) for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.
+The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GFX filter for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.
 
 ## <span id="ddk_ksproperty_audio_filter_state_ks"></span><span id="DDK_KSPROPERTY_AUDIO_FILTER_STATE_KS"></span>
 
@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a [GFX filter](ht
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>Array of GUIDs</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property data (operation data) is an array of GUIDs. Each GUID in the array specifies a property set that the filter supports.
 
@@ -66,7 +66,7 @@ Remarks
 
 The size of the array of GUIDs that this property returns depends on the number of property sets that the filter supports. Before retrieving the array, a client first queries the size of the property's GUID array by sending the miniport driver's property handler a KSPROPERTY\_AUDIO\_FILTER\_STATE get-property request with a zero-length property-value buffer. The handler responds by returning the required buffer size and the status code STATUS\_BUFFER\_OVERFLOW. For more information, see [Audio Property Handlers](https://msdn.microsoft.com/library/windows/hardware/ff536214).
 
-With the array of GUIDs from a KSPROPERTY\_AUDIO\_FILTER\_STATE get-property request, the operating system can serially interrogate the properties within each property set. This information enables the operating system to restore the state of a GFX filter object at the time that the filter is instantiated, and also to save the state of a GFX filter object at the time that the filter is destroyed. When saving or restoring the state of the GFX filter, the operating system serializes its requests for the properties in each property set, as described in [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671). The purpose for saving and restoring the GFX filter's state is to preserve any changes the user has made to the filter's settings, and to make the settings persistent across successive instantiations of the filter. For additional information, see [Persistence of GFX Settings](https://msdn.microsoft.com/library/windows/hardware/ff537741).
+With the array of GUIDs from a KSPROPERTY\_AUDIO\_FILTER\_STATE get-property request, the operating system can serially interrogate the properties within each property set. This information enables the operating system to restore the state of a GFX filter object at the time that the filter is instantiated, and also to save the state of a GFX filter object at the time that the filter is destroyed. When saving or restoring the state of the GFX filter, the operating system serializes its requests for the properties in each property set, as described in [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671). The purpose for saving and restoring the GFX filter's state is to preserve any changes the user has made to the filter's settings, and to make the settings persistent across successive instantiations of the filter. .
 
 Requirements
 ------------
@@ -89,9 +89,9 @@ Requirements
 
 [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
 
- 
+ 
 
- 
+ 
 
 
 

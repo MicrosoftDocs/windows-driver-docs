@@ -1,6 +1,5 @@
 ---
 title: Example I/O Request - An Overview
-author: windows-driver-content
 description: Example I/O Request - An Overview
 ms.assetid: ffc9030e-4b03-4899-88a0-ed6ffd79fd58
 keywords: ["opening file objects", "named file objects WDK kernel", "file objects WDK kernel"]
@@ -40,9 +39,9 @@ The following figure shows an overview of what happens when a subsystem opens a 
 
 After a subsystem successfully opens a file object that represents a data file, a device, or a volume, the subsystem uses the returned handle to identify the file object in subsequent requests for device I/O operations (usually read, write, or device I/O control requests). To make such a request, the subsystem calls I/O system services. The I/O manager routes these requests as IRPs sent to appropriate drivers.
 
- 
+ 
 
- 
+ 
 
 
 

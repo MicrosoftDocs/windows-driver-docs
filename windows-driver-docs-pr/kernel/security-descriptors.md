@@ -1,6 +1,5 @@
 ---
 title: Security Descriptors
-author: windows-driver-content
 description: Security Descriptors
 ms.assetid: a5edd5e8-6fc7-4ab0-aebc-f0cd8e9299b6
 keywords: ["security descriptors WDK objects", "system ACL WDK objects", "SACL WDK objects", "discretionary ACL WDK objects", "DACL WDK objects", "access control lists WDK objects", "ACL WDK objects"]
@@ -35,9 +34,9 @@ For a driver, the most important security descriptors are those for the driver's
 
 For more information about security descriptors in general, see the Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

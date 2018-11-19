@@ -32,9 +32,9 @@ The following code example avoids this warning.
 oldCancel = IoSetCancelRoutine(irp, myCancelRoutine);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

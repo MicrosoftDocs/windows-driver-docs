@@ -3,7 +3,6 @@ title: Debug Kernel Connection Cycle Baud Rate
 description: Debug Kernel Connection Cycle Baud Rate
 ms.assetid: 5d7f13ff-738d-498c-88cb-ad2d6fe596ac
 keywords: ["Debug Kernel Connection Cycle Baud Rate"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ This command cycles through all available baud rates for the kernel debugging co
 
 You cannot use this command to change the baud rate at which you are debugging. The baud rate of the host computer and the target computer must match, and you cannot change the baud rate of the target computer without restarting the computer. Therefore, you must change the baud rate only if the two computers are trying to communicate at different rates. In this case, you must change the host computer's baud rate to match that of the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

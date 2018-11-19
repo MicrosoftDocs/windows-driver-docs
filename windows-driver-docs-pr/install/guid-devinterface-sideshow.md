@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_SIDESHOW [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

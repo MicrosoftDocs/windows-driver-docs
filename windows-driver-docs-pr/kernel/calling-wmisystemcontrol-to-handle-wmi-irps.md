@@ -1,6 +1,5 @@
 ---
 title: Calling WmiSystemControl to Handle WMI IRPs
-author: windows-driver-content
 description: Calling WmiSystemControl to Handle WMI IRPs
 ms.assetid: a2fa53e2-6468-4c3c-8b41-9a97305abc43
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]
@@ -38,19 +37,19 @@ Before calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows
 
 When the driver receives a WMI request:
 
-1.  The driver calls **WmiSystemControl** with a pointer to its initialized **WMILIB\_CONTEXT** structure, a pointer to its device object, and a pointer to the IRP.
+1. The driver calls **WmiSystemControl** with a pointer to its initialized **WMILIB\_CONTEXT** structure, a pointer to its device object, and a pointer to the IRP.
 
-2.  WMI validates the IRP parameters and calls the driver's *DpWmiXxx* routine that processes the request. If the driver set no entry point in its **WMILIB\_CONTEXT** for an optional *DpWmiXxx* routine, WMI completes the IRP with default values and status.
+2. WMI validates the IRP parameters and calls the driver's *DpWmiXxx* routine that processes the request. If the driver set no entry point in its **WMILIB\_CONTEXT** for an optional *DpWmiXxx* routine, WMI completes the IRP with default values and status.
 
-3.  In its *DpWmiXxx* routine, the driver processes the request and writes any output to the caller-supplied buffer. For example, a driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine would write the requested instance(s) of the specified block to the buffer.
+3. In its *DpWmiXxx* routine, the driver processes the request and writes any output to the caller-supplied buffer. For example, a driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine would write the requested instance(s) of the specified block to the buffer.
 
-4.  In all *DpWmiXxx* routines except [*DpWmiQueryReginfo*](https://msdn.microsoft.com/library/windows/hardware/ff544097), the driver calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) to complete the request, or returns STATUS\_PENDING to postpone completion, as for any IRP.
+4. In all *DpWmiXxx* routines except [*DpWmiQueryReginfo*](https://msdn.microsoft.com/library/windows/hardware/ff544097), the driver calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) to complete the request, or returns STATUS\_PENDING to postpone completion, as for any IRP.
 
-5.  WMI performs any necessary postprocessing, packages any output in an appropriate **WNODE\_*XXX*** structure, and passes the output and status to the data consumer.
+5. WMI performs any necessary postprocessing, packages any output in an appropriate **WNODE\_*XXX*** structure, and passes the output and status to the data consumer.
 
- 
+ 
 
- 
+ 
 
 
 

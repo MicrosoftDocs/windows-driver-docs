@@ -3,7 +3,6 @@ title: Security During User-Mode Debugging
 description: Security During User-Mode Debugging
 ms.assetid: e198c29a-d793-4974-8ee3-f26679bd70b4
 keywords: ["security considerations, user-mode debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ For suggestions on how to guard against unexpected remote connections, see [Secu
 
 If you are not performing remote debugging, you should still beware of bad symbol files and extension DLLs. do not load symbols or extensions that you distrust!
 
- 
+ 
 
- 
+ 
 
 
 

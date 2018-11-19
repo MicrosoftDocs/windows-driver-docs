@@ -1,6 +1,5 @@
 ---
 title: Using Remove Locks
-author: windows-driver-content
 description: Using Remove Locks
 ms.assetid: 78ca7fe5-ceed-4752-bf1b-d13309097cd8
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]
@@ -34,9 +33,9 @@ After **IoReleaseRemoveLockAndWait** returns, the driver should consider the dev
 
 Because a driver stores an **IO\_REMOVE\_LOCK** structure in the device extension of a device object, the remove lock is deleted when the driver deletes the device extension while processing an **IRP\_MN\_REMOVE\_DEVICE** request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Unidrv/PScript5 Plug-in Configuration Modules
-author: windows-driver-content
 description: Unidrv/PScript5 Plug-in Configuration Modules
 ms.assetid: 806175ba-18a9-48f3-8f50-06e794d1f304
 keywords:
@@ -113,9 +112,9 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

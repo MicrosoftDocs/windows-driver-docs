@@ -32,9 +32,9 @@ NDIS can also register custom GUIDs for custom OIDs and status indications. If t
 
 For connection-oriented miniport drivers, NDIS also registers any named virtual connections (VCs). WMI clients can work only with VCs that a stand-alone call manager, or connection-oriented client, has named with the [**NdisCoAssignInstanceName**](https://msdn.microsoft.com/library/windows/hardware/ff561692) function. For more information about NDIS WMI support for named VCs, see [Support for Named VCs](support-for-named-vcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

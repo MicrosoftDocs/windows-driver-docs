@@ -3,7 +3,6 @@ title: KD Command-Line Options
 description: First-time users of KD should begin with the Debugging Using KD and NTKD section.
 ms.assetid: 76c11b45-8469-4f27-840d-06477d8922b8
 keywords: ["KD Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ First-time users of KD should begin with the [Debugging Using KD and NTKD](debug
 
 The KD command line uses the following syntax.
 
-```
+```dbgcmd
 kd [ -server ServerTransport | -remote ClientTransport ] 
    [-b | -x] [-d] [-bonc] [-m] [-myob] [-lines] [-n] [-r] [-s] 
    [-v] [-clines lines] [-failinc] [-noio] [-noshell] 
@@ -64,15 +63,15 @@ This option no longer supported.
 <span id="_______-bonc______"></span><span id="_______-BONC______"></span> **-bonc**   
 If this option is specified, the debugger will break into the target as soon as the session begins. This is especially useful when connecting to a debugging server that might not be currently broken into the target.
 
-<span id="_______-c__command_______"></span><span id="_______-C__COMMAND_______"></span> **-c "***command***"**   
+<span id="_______-c__command_______"></span><span id="_______-C__COMMAND_______"></span> **-c "**<em>command</em>**"**   
 Specifies the initial debugger command to run at start-up. This command must be surrounded with quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command.)
 
 If you are starting a debugging client, this command must be intended for the debugging server. Client-specific commands, such as **.lsrcpath**, are not allowed.
 
-<span id="_______-cf__filename_______"></span><span id="_______-CF__FILENAME_______"></span> **-cf "***filename***"**   
+<span id="_______-cf__filename_______"></span><span id="_______-CF__FILENAME_______"></span> **-cf "**<em>filename</em>**"**   
 Specifies the path and name of a script file. This script file is executed as soon as the debugger is started. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the -cf option is not used, the file ntsd.ini in the current directory is used as the script file. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
 
-<span id="_______-cfr__filename_______"></span><span id="_______-CFR__FILENAME_______"></span> **-cfr "***filename***"**   
+<span id="_______-cfr__filename_______"></span><span id="_______-CFR__FILENAME_______"></span> **-cfr "**<em>filename</em>**"**   
 Specifies the path and name of a script file. This script file is executed as soon as the debugger is started, and any time the target is restarted. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
 
 <span id="_______-clines________lines______"></span><span id="_______-CLINES________LINES______"></span> **-clines** *lines*   
@@ -213,7 +212,7 @@ Specifies the error level that will cause the debugger to display an error messa
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -245,9 +244,9 @@ Displays command-line help text.
 
 KD will automatically detect the platform on which the target is running. You do not need to specify the target on the KD command line. The older syntax (using the name *I386KD* or *IA64KD*) is obsolete.
 
- 
+ 
 
- 
+ 
 
 
 

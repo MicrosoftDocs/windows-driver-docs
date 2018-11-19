@@ -1,7 +1,7 @@
 ---
 title: Sample report templates
 description: Compilation of sample report templates for Windows driver submission failure reports. Code is REST APIs and JSON formatting. 
-author: EliotSeattle
+ms.topic: article
 ms.author: shganesh
 ms.date: 09/01/2018
 ms.localizationpriority: medium

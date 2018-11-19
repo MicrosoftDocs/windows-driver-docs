@@ -1,6 +1,5 @@
 ---
 title: Supporting Standard WMI Blocks
-author: windows-driver-content
 description: Supporting Standard WMI Blocks
 ms.assetid: ddec3afb-8274-4eff-93ef-b0a07fd7c13a
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "standard blocks WDK WMI"]
@@ -26,9 +25,9 @@ MOF classes for standard blocks are published in system-supplied MOF files. A dr
 
 Currently, class definitions of standard blocks are published in the file wmicore.mof, which is included in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

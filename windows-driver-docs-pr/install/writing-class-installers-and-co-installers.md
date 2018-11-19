@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section contains the guidelines that you should follow when you write a [*co-installer*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer):
 
@@ -39,7 +39,7 @@ In most cases, co-installers should not interact with the user except during the
 
 **Note**  Co-installers should not fail a DIF code with ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION because that causes the device installation to fail. If the device installation requires user interaction, co-installers should support finish-install actions.
 
- 
+ 
 
 ## Saving device installation state
 
@@ -63,7 +63,7 @@ To safely load an executable file or DLL by a class installer or co-installer, w
 
 **Note**  Class installers and co-installers must not load DLL modules by explicit function calls, such as **LoadLibrary**, or by creating link dependencies.
 
- 
+ 
 
 ## Starting other processes or services
 
@@ -72,9 +72,9 @@ During device installation, Windows cannot track additional processes and is una
 
 In most cases, [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](http://go.microsoft.com/fwlink/p/?linkid=194524) from a function or dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog or procedure until the created process has exited.
 
- 
+ 
 
- 
+ 
 
 
 

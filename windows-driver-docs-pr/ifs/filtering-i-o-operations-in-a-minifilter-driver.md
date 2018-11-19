@@ -1,6 +1,5 @@
 ---
 title: Filtering I/O Operations in a Minifilter Driver
-author: windows-driver-content
 description: Filtering I/O Operations in a Minifilter Driver
 ms.assetid: e35944c1-fcc6-44e0-838c-da8d24f95d51
 keywords:
@@ -26,9 +25,9 @@ The following list describes several guidelines for filtering specific types of 
 
 -   Minifilter drivers cannot register a postoperation callback routine for IRP\_MJ\_SHUTDOWN.
 
- 
+ 
 
- 
+ 
 
 
 

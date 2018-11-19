@@ -4,7 +4,6 @@ description: Glossary page - S
 Robots: noindex, nofollow
 ms.assetid: 94cbf33b-e975-49eb-a266-774798955a48
 keywords: ["suspended thread", "suspended process"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -79,9 +78,9 @@ A memory address that the engine treats like a symbol.
 <span id="system_crash"></span><span id="SYSTEM_CRASH"></span>**system crash**  
 See bug check.
 
- 
+ 
 
- 
+ 
 
 
 

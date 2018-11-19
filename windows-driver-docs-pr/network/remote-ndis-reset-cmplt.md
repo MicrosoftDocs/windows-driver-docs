@@ -1,6 +1,5 @@
 ---
 title: 'REMOTE_NDIS_RESET_CMPLT'
-author: windows-driver-content
 Description: 'A Remote NDIS device will respond to a REMOTE_NDIS_RESET_MSG message from the host by resetting the device and returning the status of the request in the REMOTE_NDIS_RESET_CMPLT message.'
 ms.assetid: 80ab998f-9690-49d3-bb47-1937c832d13e
 ms.date: 07/31/2017
@@ -55,7 +54,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_RESET\_MSG**](remote-ndi
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -77,9 +76,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

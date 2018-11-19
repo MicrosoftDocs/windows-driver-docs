@@ -9,7 +9,6 @@ api_name:
 - Specific Exceptions
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -156,11 +155,11 @@ The following table lists the exception codes for the specific exception filters
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

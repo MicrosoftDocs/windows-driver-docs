@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture-Aware User-Mode Applications
-author: windows-driver-content
 description: Windows Hardware Error Architecture-Aware User-Mode Applications
 ms.assetid: fb559ac3-1f8d-48b7-8ebe-018623ab8d09
 keywords:
@@ -23,9 +22,9 @@ This section includes the following topics:
 
 [WHEA Management Applications](whea-management-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Configuration
-author: windows-driver-content
 description: Configuration
 ms.assetid: 8d1d4a80-7ca1-47e3-bd27-ece0c0b38b81
 ms.date: 11/28/2017
@@ -26,9 +25,9 @@ The Configuration property is the parent of the following properties:
 
 [DuplexUnit](duplexunit.md)
 
- 
+ 
 
- 
+ 
 
 
 

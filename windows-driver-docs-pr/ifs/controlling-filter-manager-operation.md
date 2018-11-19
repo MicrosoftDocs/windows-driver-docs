@@ -1,6 +1,5 @@
 ---
 title: Controlling Filter Manager Operation
-author: windows-driver-content
 description: Controlling Filter Manager Operation
 ms.assetid: 884e6a15-5bfa-41bf-b759-af6e43078fad
 keywords:
@@ -28,9 +27,9 @@ The *AttachWhenLoaded* registry value does not exist on Windows Vista and only 
 
 When a minifilter driver is installed on Windows prior to Windows Vista, the software installer should set *AttachWhenLoaded* to 1 if this registry value is not currently set to 1. If the previous value of *AttachWhenLoaded* was zero, the installer should reboot the system after the installation of the minifilter driver.
 
- 
+ 
 
- 
+ 
 
 
 

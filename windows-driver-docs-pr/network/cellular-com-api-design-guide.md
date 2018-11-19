@@ -1,6 +1,5 @@
 ---
 title: Cellular COM API design guide
-author: windows-driver-content
 description: This section provides information on the cellular COM API.
 ms.assetid: 93aa20d0-d8c3-40ec-baf1-fab56ff5686d
 keywords:

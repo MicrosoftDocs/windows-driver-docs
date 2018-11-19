@@ -1,6 +1,5 @@
 ---
 title: IoCompletion Routines for Device Power IRPs
-author: windows-driver-content
 description: IoCompletion Routines for Device Power IRPs
 ms.assetid: c275fcba-5fa9-427c-8d7e-2339563985e4
 keywords: ["IoCompletion routines", "power IRPs WDK kernel , device changes", "state transitions WDK power management", "device state transitions WDK power management", "working state returns WDK power management"]
@@ -38,9 +37,9 @@ The bus driver does not power up the device until it or higher drivers must comm
 
 When its device enters a sleeping state, a driver should set an *IoCompletion* routine that calls [**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776) (Windows Server 2003, Windows XP, and Windows 2000 only) and releases the remove lock. Remember that a driver cannot access its device while the device is in a sleeping state.
 
- 
+ 
 
- 
+ 
 
 
 

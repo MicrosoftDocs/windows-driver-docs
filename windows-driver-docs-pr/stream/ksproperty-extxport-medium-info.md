@@ -47,13 +47,13 @@ The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an e
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_EXTXPORT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565167)</p></td>
-<td><p>[<strong>MEDIUM_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567726)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565167" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565167)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567726" data-raw-source="[&lt;strong&gt;MEDIUM_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567726)"><strong>MEDIUM_INFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a MEDIUM\_INFO structure that describes the media loaded into the external device. For example cassette tape, tape grade and write protection.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**MEDIUM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567726)
 
- 
+ 
 
- 
+ 
 
 
 

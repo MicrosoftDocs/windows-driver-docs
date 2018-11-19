@@ -1,6 +1,5 @@
 ---
 title: Using Message-Signaled Interrupts
-author: windows-driver-content
 description: Using Message-Signaled Interrupts
 ms.assetid: 5e1f8648-378f-4d5b-b936-4396d13cf002
 keywords: ["message-signaled interrupts WDK kernel , filtering", "filtering message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
@@ -21,9 +20,9 @@ This section contains the following topics:
 
 [Dynamically Configuring MSI-X](dynamically-configuring-msi-x.md)
 
- 
+ 
 
- 
+ 
 
 
 

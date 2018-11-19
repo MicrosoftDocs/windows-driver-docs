@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_CONNECT
-author: windows-driver-content
 description: OID_WWAN_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
 ms.assetid: 51be35fe-750b-4c2b-aab3-a9df59711f7d
 ms.date: 08/08/2017
@@ -61,7 +60,7 @@ For response to query requests, miniport driver sends the NDIS\_STATUS\_WWAN\_CO
 
 **Important**  Note:
 
- 
+ 
 
 In rare, but specific circumstances, the MB Service on Windows 7 may attempt to auto-connect before connectivity to the Internet has been determined for pre-existing connections or during a momentary disruption in Internet connectivity of pre-existing connections. This could result in simultaneous MB and WLAN/Ethernet connections. For example, this can occur during system boot when MB and other connections are attempted simultaneously and the Network List Manager service is still attempting to determine the Internet connectivity of other connections using active and passive methods. It could also occur due to temporary outages in network infrastructure like a corporate proxy server or an ISP network. Thus, the MB Service may attempt to auto-connect to the internet regardless of whether the "Auto-connect only if no alternate Internet connection is available" option is selected.
 
@@ -90,9 +89,9 @@ Requirements
 
 [WWAN Packet Context Management](https://msdn.microsoft.com/library/windows/hardware/ff559086)
 
- 
+ 
 
- 
+ 
 
 
 

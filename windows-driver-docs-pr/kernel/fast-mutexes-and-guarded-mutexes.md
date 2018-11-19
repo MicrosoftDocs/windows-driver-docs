@@ -1,6 +1,5 @@
 ---
 title: Fast Mutexes and Guarded Mutexes
-author: windows-driver-content
 description: Fast Mutexes and Guarded Mutexes
 ms.assetid: 8c8014bf-6b81-4039-ae93-d4cedd6d6fed
 keywords: ["synchronization WDK kernel , fast mutexes", "synchronization WDK kernel , guarded mutexes", "guarded mutexes WDK kernel", "fast mutexes WDK kernel", "mutexes WDK kernel"]
@@ -61,9 +60,9 @@ If a code path is guaranteed to run with all APCs disabled, the driver can inste
 
 Guarded mutexes cannot be acquired recursively. If a thread that is already holding a guarded mutex tries to acquire it, that thread will deadlock. Guarded mutexes can be used only in code that runs at IRQL &lt;= APC\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

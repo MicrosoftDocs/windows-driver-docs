@@ -26,9 +26,9 @@ Informs the demodulator node that it should stop trying to automatically demodul
 
 KSPROPSETID\_BdaAutodemodulate is also used for demodulator nodes, such as the 8VSB demodulator node which only support one configuration of modulation parameters. For these types of nodes, the demodulator is not informed to set specific values such as Inner and Outer forward error correction (FEC) method.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DeviceWake
-author: windows-driver-content
 description: DeviceWake
 ms.assetid: 3b82c095-1ee7-41e9-991e-ac0bcf959024
 keywords: ["DeviceWake"]
@@ -34,9 +33,9 @@ If both the **SystemWake** and **DeviceWake** members are nonzero (that is, not 
 
 On non-ACPI hardware, the **DeviceWake** member contains zero (**PowerSystemUnspecified**).
 
- 
+ 
 
- 
+ 
 
 
 

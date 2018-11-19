@@ -1,7 +1,6 @@
 ---
 Description: This topic describes the USB 3.0 LPM mechanism.There is an addendum to the official USB 2.0 Specification (USB2_LinkPowerMangement_ECN), which defines LPM for newer USB 2.0 hardware.
 title: USB 3.0 LPM mechanism
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,9 +40,9 @@ U1 and U2 states are designed to complement Selective Suspend, which can lead to
 
 For example, a device with isochronous endpoints can put the link to U1 or U2 between service intervals. To save some power, when the device is idle, it can send its upstream link to those states even before Selective Suspend gets invoked. There are no restrictions on how much power the device can draw when the link is in U1 or U2. A device could remain fully powered when the link is in U1 or U2. Therefore, unlike Selective Suspend, a device can send its link to U1 or U2 without losing any capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

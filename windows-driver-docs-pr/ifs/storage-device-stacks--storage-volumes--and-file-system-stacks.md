@@ -1,6 +1,5 @@
 ---
 title: Storage Device Stacks, Storage Volumes, and File System Stacks
-author: windows-driver-content
 description: Storage Device Stacks, Storage Volumes, and File System Stacks
 ms.assetid: 5240ce9b-acfa-4e9c-9962-bc776878827c
 keywords:
@@ -26,9 +25,9 @@ Before exploring how file system filter drivers attach to file systems and volum
 
 [File System Stacks](file-system-stacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

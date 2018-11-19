@@ -1,6 +1,5 @@
 ---
 title: ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro
-author: windows-driver-content
 description: The ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro calculates the size, in bytes, of a variable-length ACPI_ENUM_CHILD structure.
 ms.assetid: 62be7cb5-4b71-4b8e-bad5-807623cd812a
 keywords: 
@@ -19,7 +18,7 @@ Syntax
 
 ```cpp
 void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
-    Child
+    Child
 );
 ```
 
@@ -66,9 +65,9 @@ Requirements
 
 [**ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff536112)
 
- 
+ 
 
- 
+ 
 
 
 

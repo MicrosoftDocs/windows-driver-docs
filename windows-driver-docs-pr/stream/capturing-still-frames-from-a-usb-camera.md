@@ -1,6 +1,5 @@
 ---
 title: Capturing Still Frames from a USB Camera
-author: windows-driver-content
 description: Capturing Still Frames from a USB Camera
 ms.assetid: 762021ea-753c-4cd2-9eec-1403ee918d4e
 keywords:
@@ -27,7 +26,7 @@ ms.localizationpriority: medium
 
 USBCAMD2 provides the capability for a separate [Still Image driver](https://msdn.microsoft.com/library/windows/hardware/ff548278) to retrieve still frames from the camera through the camera's bulk pipe.
 
-****To support still frame capture a USBCAMD2 minidriver must perform the following****
+***<em>To support still frame capture a USBCAMD2 minidriver must perform the following</em>***
 
 -   Call [*USBCAMD\_BulkReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff568577) from the PROPSETID\_VIDCAP\_VIDEOCONTROL property handler and pass a pointer to a minidriver-allocated buffer into which the still image can be captured. The pointer must not be **NULL**.
 
@@ -37,7 +36,7 @@ USBCAMD2 provides the capability for a separate [Still Image driver](https://msd
 
 Still frame data flow is intended for use with a *pull* model. A pull occurs when an application requests a still frame. Alternately, still frame data flow also works in a *push* model. A push occurs when the user pushes the button on the camera, triggering the device event.
 
-****To use the** ***pull*** **model to retrieve still frames from an STI minidriver****
+*<strong>*To use the** *</strong>pull*** **model to retrieve still frames from an STI minidriver****
 
 -   Open the WDM video capture source filter associated with the camera.
 
@@ -51,7 +50,7 @@ Still frame data flow is intended for use with a *pull* model. A pull occurs whe
 
 -   Set the *KS\_VideoControlFlag\_Trigger* flag associated with [**KSPROPERTY\_VIDEOCONTROL\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff566042).
 
-****To support the** ***push*** **model to retrieve still frames from a camera****
+*<strong>*To support the** *</strong>push*** **model to retrieve still frames from a camera****
 
 -   Pass the *USBCAMD\_CamControlFlag\_EnableDeviceEvents* flag when you call [**USBCAMD\_InitializeNewInterface**](https://msdn.microsoft.com/library/windows/hardware/ff568599) from within the minidriver's SRB\_INITIALIZE\_DEVICE handler. The minidriver handles SRB\_INITIALIZE\_DEVICE from within its [*AdapterReceivePacket*](https://msdn.microsoft.com/library/windows/hardware/ff554080) callback function.
 
@@ -59,9 +58,9 @@ Still frame data flow is intended for use with a *pull* model. A pull occurs whe
 
 To cancel a requested bulk read or write, an application should call **CancelIO** with a handle to the still pin. If tables need to be transferred to the camera (through a USB bulk-out pipe), an application should call **WriteFile** with a handle to the still pin.
 
- 
+ 
 
- 
+ 
 
 
 

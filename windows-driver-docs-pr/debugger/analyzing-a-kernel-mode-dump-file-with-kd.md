@@ -3,7 +3,6 @@ title: Analyzing a Kernel-Mode Dump File with KD
 description: Analyzing a Kernel-Mode Dump File with KD
 ms.assetid: 7e8fbf6e-0adc-434c-ba93-f83f49a4af92
 keywords: ["KD, analyzing a dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with KD"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -60,9 +59,9 @@ The following debugger extensions are especially useful for analyzing a kernel-m
 
 For techniques that can be used to read specific kinds of information from a dump file, see [Extracting Information from a Dump File](extracting-information-from-a-dump-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

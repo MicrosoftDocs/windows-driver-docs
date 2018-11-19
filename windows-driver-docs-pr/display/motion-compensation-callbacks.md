@@ -63,9 +63,9 @@ The motion compensation callback functions comprise the device driver side of th
 
 9.  At the end of the relevant processing, the device driver's [*DdMoCompDestroy*](https://msdn.microsoft.com/library/windows/hardware/ff549664) is used to notify the driver that the current video acceleration object will no longer be used, so that the driver can perform any necessary cleanup.
 
- 
+ 
 
- 
+ 
 
 
 

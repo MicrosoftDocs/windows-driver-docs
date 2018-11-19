@@ -1,6 +1,5 @@
 ---
 title: Sending I/O Requests Asynchronously
-author: windows-driver-content
 description: Sending I/O Requests Asynchronously
 ms.assetid: 9f6fb85e-96aa-4945-8c8a-13277beff140
 keywords:
@@ -33,29 +32,29 @@ Before you can send an I/O request asynchronously to an I/O target, you must for
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>WdfIoTargetFormatRequestForRead</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548612)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548612" data-raw-source="[&lt;strong&gt;WdfIoTargetFormatRequestForRead&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548612)"><strong>WdfIoTargetFormatRequestForRead</strong></a></p></td>
 <td align="left"><p>Formats a read request</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WdfIoTargetFormatRequestForWrite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548620)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548620" data-raw-source="[&lt;strong&gt;WdfIoTargetFormatRequestForWrite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548620)"><strong>WdfIoTargetFormatRequestForWrite</strong></a></p></td>
 <td align="left"><p>Formats a write request</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WdfIoTargetFormatRequestForIoctl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548604)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548604" data-raw-source="[&lt;strong&gt;WdfIoTargetFormatRequestForIoctl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548604)"><strong>WdfIoTargetFormatRequestForIoctl</strong></a></p></td>
 <td align="left"><p>Formats a device control request</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WdfIoTargetFormatRequestForInternalIoctl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548595)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548595" data-raw-source="[&lt;strong&gt;WdfIoTargetFormatRequestForInternalIoctl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548595)"><strong>WdfIoTargetFormatRequestForInternalIoctl</strong></a></p></td>
 <td align="left"><p>Formats an internal device control request</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WdfIoTargetFormatRequestForInternalIoctlOthers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548599)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548599" data-raw-source="[&lt;strong&gt;WdfIoTargetFormatRequestForInternalIoctlOthers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548599)"><strong>WdfIoTargetFormatRequestForInternalIoctlOthers</strong></a></p></td>
 <td align="left"><p>Formats a non-standard internal device control request</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 To send an I/O request asynchronously, your driver must:
 
@@ -75,9 +74,9 @@ A driver that calls [**WdfRequestSend**](https://msdn.microsoft.com/library/wind
 
 Some drivers might send a single I/O request to multiple devices, and thus to multiple I/O targets, by calling [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) more than once for each request. These drivers must call [**WdfRequestChangeTarget**](https://msdn.microsoft.com/library/windows/hardware/ff549943) before each call to **WdfRequestSend** after the first one to verify that the request can be sent to the next I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

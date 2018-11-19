@@ -47,13 +47,13 @@ The KSPROPERTY\_DVDCOPY\_TITLE\_KEY property retrieves the title key information
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KS_DVDCOPY_TITLEKEY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567640)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567640" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_TITLEKEY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567640)"><strong>KS_DVDCOPY_TITLEKEY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KS\_DVDCOPY\_TITLEKEY structure that describes the current title key.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**KS\_DVDCOPY\_TITLEKEY**](https://msdn.microsoft.com/library/windows/hardware/ff567640)
 
- 
+ 
 
- 
+ 
 
 
 

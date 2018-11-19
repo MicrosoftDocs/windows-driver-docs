@@ -1,6 +1,5 @@
 ---
 title: Filtering data
-author: windows-driver-content
 description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
 ms.assetid: 1895EC5C-08C1-4976-83F2-CD5A2B55338D
 keywords:
@@ -51,7 +50,7 @@ The following table lists six common sensors, the data associated with each, and
 | Device Orientation | Quaternion             | Degrees Movement                   |
 |                    | Rotation Matrix        | Degrees Movement                   |
 
- 
+ 
 
 The following table lists the recommended Current Report Interval (CRI) defaults.
 
@@ -64,7 +63,7 @@ The following table lists the recommended Current Report Interval (CRI) defaults
 | Inclinometer  | 50                                  |
 | Orientation   | 50                                  |
 
- 
+ 
 
 The following table lists the recommended Change Sensitivity (CS) defaults.
 
@@ -135,7 +134,7 @@ Whenever a client application establishes a connection to a sensor, your driver 
 </tbody>
 </table>
 
- 
+ 
 
 The following table represents the client container for a 3D accelerometer with 4 connected client applications. Two of these client apps (corresponding to the 2nd and 4th row) have subscribed to events.
 
@@ -146,7 +145,7 @@ The following table represents the client container for a 3D accelerometer with 
 | FF80D345           | FALSE                | 15  | NULL   | NULL   | NULL   |
 | FF803287           | TRUE                 | 100 | .005   | .005   | .005   |
 
- 
+ 
 
 After the driver evaluated this set of connected clients, it chose the following values for E-CRI and E-CS:
 
@@ -186,7 +185,7 @@ Your driver should rely on interrupts instead of polling the device. This will r
 
 **Note**  If a driver relies on interrupts but the current report interval and change-sensitivity logic exists in the driver, the driver will potentially receive a significant number of interrupts between data updates. As a result, the driver may need to disable (or mask) interrupts until the current-report interval expires.
 
- 
+ 
 
 ### Move change-sensitivity support to the device
 

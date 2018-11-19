@@ -1,6 +1,5 @@
 ---
 title: HS_PLUGIN_STOP_POST_CONNECT_AUTH function
-author: windows-driver-content
 description: The HS_PLUGIN_STOP_POST_CONNECT_AUTH function is called to notify the plugin to stop the authentication process.
 ms.assetid: 2e4e01b1-e41a-41db-a3ca-6cc6b53b3a8b
 keywords: 
@@ -61,9 +60,9 @@ Requirements
 
 [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md)
 
- 
+ 
 
- 
+ 
 
 
 

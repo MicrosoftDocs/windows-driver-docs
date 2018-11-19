@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_AUTH_ALGO_LIST
-author: windows-driver-content
 description: WDI_TLV_AUTH_ALGO_LIST is a TLV that contains a list of authentication algorithms.
 ms.assetid: 6F5EC21B-C923-45ED-B62E-302D916AABE5
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](https://msdn.micr
 |-------------------------------------------------------------|----------------------------------------|
 | [**WDI\_AUTH\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897792)\[\] | An array of authentication algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

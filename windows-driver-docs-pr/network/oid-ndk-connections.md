@@ -1,6 +1,5 @@
 ---
 title: OID_NDK_CONNECTIONS
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_CONNECTIONS OID to query the list of active Network Direct connections from the miniport adapter.
 ms.assetid: 31A0BB2B-B571-4548-A9D1-BE44687DEA37
 ms.date: 08/08/2017
@@ -58,9 +57,9 @@ Requirements
 
 [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
- 
+ 
 
- 
+ 
 
 
 

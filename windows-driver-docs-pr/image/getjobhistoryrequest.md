@@ -83,9 +83,9 @@ The following code example contains a request for job history.
 
 [**GetJobHistoryResponse**](getjobhistoryresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

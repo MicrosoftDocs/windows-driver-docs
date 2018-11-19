@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Source Discovery
-author: windows-driver-content
 description: Participating in Error Source Discovery
 ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords:
@@ -101,9 +100,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error source discovery must specify the **PshedFADiscovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ The following topics discuss video processing for DirectX VA 2.0:
 
 [Processing Video Frames](processing-video-frames.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Font Substitution
-author: windows-driver-content
 description: Font Substitution
 ms.assetid: a67f42cd-1c10-46b7-8d24-0cb26339bc92
 keywords:
@@ -36,7 +35,7 @@ You can create a default font substitution table by using a series of \*TTFS ent
 </tbody>
 </table>
 
- 
+ 
 
 where *FontName* is a symbol specifying the entry name, *TTFontNameString* is a text string identifying the TrueType font to be replaced, and *DeviceFontNameString* is a text string identifying the hardware-resident or cartridge font to be used. Following is an example table:
 
@@ -77,7 +76,7 @@ To control whether or not font substitution is enabled by default, use the \*TTF
 </tbody>
 </table>
 
- 
+ 
 
 where *BooleanValue* is **TRUE** or **FALSE**. If *BooleanValue* is **TRUE**, Unidrv enables font substitution. If *BooleanValue* is **FALSE**, or if you do not include a \*TTFSEnabled? entry in the GPD file, Unidrv disables font substitution until it is enabled by a user.
 
@@ -93,9 +92,9 @@ A default table of TrueType font substitutions is provided in the file named ttf
 
 Additionally, this file must be installed. For more information, see [Printer INF File Install Sections](printer-inf-file-install-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Security Issues for WIA Drivers
-author: windows-driver-content
 description: Security Issues for WIA Drivers
 ms.assetid: 5d8fc015-cbf5-43a3-8f65-3ebb17754417
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ Following the practices outlined in this document ensures that the WIA drivers d
 
 For additional information about device driver security, see the [Securing Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563688) and [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212) sections.
 
- 
+ 
 
- 
+ 
 
 
 

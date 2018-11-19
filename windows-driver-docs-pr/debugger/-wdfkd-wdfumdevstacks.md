@@ -3,7 +3,6 @@ title: wdfkd.wdfumdevstacks
 description: The wdfkd.wdfumdevstacks extension displays information about all UMDF device stacks in the implicit process.
 ms.assetid: 05D09B0D-4ED8-4333-B4BC-5BE28C63312C
 keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -97,9 +96,9 @@ Number of device stacks: 1
 
 The preceding output shows that there is one UMDF device stack in the implicit process. You can also see that the device stack has one device object (Number of UM devices: 1).
 
- 
+ 
 
- 
+ 
 
 
 

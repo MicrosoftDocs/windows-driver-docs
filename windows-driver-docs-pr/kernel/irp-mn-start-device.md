@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_START_DEVICE
-author: windows-driver-content
 description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 0aac1346-b5c7-4dcc-ab86-03e8fd151505
@@ -84,9 +83,9 @@ Requirements
 
 [**IRP\_MN\_STOP\_DEVICE**](irp-mn-stop-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting Mount Manager Requests in a Storage Class Driver
-author: windows-driver-content
 description: Supporting Mount Manager Requests in a Storage Class Driver
 ms.assetid: fb37f862-70d6-4514-b481-16f664346422
 keywords:
@@ -32,7 +31,7 @@ The mount manager provides a unique interface to each volume in the system by cr
 
 This symbolic link name is called a *unique volume name*. Like a traditional volume label, it persists when the system restarts, but like a drive letter, and unlike a volume label, it is unique. The format for unique volume names is:
 
-"**\\??\\Volume{***GUID***}\\**
+"**\\??\\Volume{**<em>GUID</em>**}\\**
 
 where *GUID* is a globally unique identifier that identifies the volume.
 
@@ -40,7 +39,7 @@ Mount manager's persistent name database is located in the **MountedDevices** re
 
 Each persistent symbolic link name in the database appears as the name of a registry value under the **MountedDevices** key accompanied by a *unique ID*. The unique ID is another unique identifier of a volume (different from the unique volume name). It helps identify which of the potentially numerous persistent symbolic link names refer to the same volume.
 
-For instance, a single volume with a unique volume name of **"\\\\?\\Volume{**7603f260-142a-11d4-ac67-806d6172696f **}\\"** might have an accompanying drive letter "\\DosDevices\\D:" and two mount points "\\DosDevices\\C:\\mymount" and "\\DosDevices\\E:\\FilesysD\\mnt". This would produce four entries in mount manager's persistent symbolic link name database: one for the unique volume name, one for the drive letter, and two for the two mount point names. All four entries would share the same unique id. Thus someone viewing the **MountedDevices** registry key would be able to detect that all four persistent names point to the same volume.
+For instance, a single volume with a unique volume name of <strong>"\\\\?\\Volume{</strong>7603f260-142a-11d4-ac67-806d6172696f **}\\"** might have an accompanying drive letter "\\DosDevices\\D:" and two mount points "\\DosDevices\\C:\\mymount" and "\\DosDevices\\E:\\FilesysD\\mnt". This would produce four entries in mount manager's persistent symbolic link name database: one for the unique volume name, one for the drive letter, and two for the two mount point names. All four entries would share the same unique id. Thus someone viewing the **MountedDevices** registry key would be able to detect that all four persistent names point to the same volume.
 
 The following acreen shot illustrates how persistent names appear in the **MountedDevices** registry key.
 
@@ -66,9 +65,9 @@ When the mount manager detects that a volume has gone off line then it deletes t
 
 For information about how mount manager clients create persistent symbolic names, see [**IOCTL\_MOUNTMGR\_CREATE\_POINT**](https://msdn.microsoft.com/library/windows/hardware/ff560457).
 
- 
+ 
 
- 
+ 
 
 
 

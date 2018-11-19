@@ -1,6 +1,5 @@
 ---
 title: TWAIN and Raw RGB Format
-author: windows-driver-content
 description: TWAIN and Raw RGB Format
 ms.assetid: 0de4a547-6c8e-4fbf-a7a3-7af440bf72f3
 ms.date: 04/20/2017
@@ -41,9 +40,9 @@ The data must be transferred with no image header. The **IWiaDataCallback::Bande
 
 The TWAIN compatibility layer (see [Support for TWAIN-Compatible Applications](support-for-twain-compatible-applications.md)) supports the WiaImgFmt\_RAWRGB format GUID. This enables TWAIN applications to transfer images with pixel depths greater than 32 bits, using a memory-callback transfer.
 
- 
+ 
 
- 
+ 
 
 
 

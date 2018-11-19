@@ -1,6 +1,5 @@
 ---
 title: Handling Device Power-Down IRPs
-author: windows-driver-content
 description: Handling Device Power-Down IRPs
 ms.assetid: 2f4591d6-5bd0-45db-b02d-cf9dd59c3888
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-down IRPs WDK kernel", "context information WDK power management", "shutdown power management WDK kernel", "off power WDK kernel"]
@@ -62,9 +61,9 @@ If the IRP specifies any other state (D0, D1 or D2), required driver actions are
 
 Under some circumstances, a function or filter driver might receive a device power IRP specifying PowerDeviceD0 when the device is already in the D0 state. The driver should handle this IRP as it would any other set-power IRP: complete pending I/O requests, queue incoming I/O requests, set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, and pass the IRP down to the next-lower driver. A driver must not, however, change the device's hardware settings. When the bus driver receives the IRP, it should simply complete the IRP. When the IRP completes, function and filter drivers can handle any queued requests. Queuing I/O until the IRP completes eliminates any possibility of lower drivers attempting to change device registers while a higher driver attempts I/O.
 
- 
+ 
 
- 
+ 
 
 
 

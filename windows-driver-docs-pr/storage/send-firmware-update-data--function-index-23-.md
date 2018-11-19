@@ -14,7 +14,7 @@ This function sends firmware data to the device.
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -64,7 +64,7 @@ This function sends firmware data to the device.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -95,17 +95,17 @@ This function sends firmware data to the device.
 <p>3: Transfer failed due to data corruption.</p>
 <p>4: Operation timed out.</p>
 <p>5: The firmware commit operation failed.</p>
-<p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for more information.</p></td>
+<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]   
 &gt;This function shall compute the CRC of the Firmware Data and compare it with \**FW\_REGION\_CRC0* (3, 0x40) and \**FW\_REGION\_CRC1* (3, 0x41). If the values don’t match, the function shall fail with Function-Specific Error Code 3. Please refer to the Byte Addressable Energy Backed Interface JEDEC standard for the CRC algorithm specification.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -120,9 +120,9 @@ This function sends firmware data to the device.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

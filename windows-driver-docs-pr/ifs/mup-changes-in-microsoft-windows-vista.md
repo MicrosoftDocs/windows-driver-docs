@@ -1,6 +1,5 @@
 ---
 title: MUP Changes in Microsoft Windows Vista
-author: windows-driver-content
 description: MUP Changes in Microsoft Windows Vista
 ms.assetid: 8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec
 keywords:
@@ -102,7 +101,6 @@ These registry values can be changed dynamically without a reboot. These registr
 
 ```cpp
 HKLM\System\CurrentControlSet\Services\Mup\Parameters.
- 
 ```
 
 The ProviderOrder registry value that determines the order in which MUP issues prefix resolution requests to individual redirectors can be changed dynamically without rebooting the system. This registry value is located under the following registry key:
@@ -142,7 +140,7 @@ The input and output buffers for IOCTL\_REDIR\_QUERY\_PATH\_EX are as follows:
 </tbody>
 </table>
 
- 
+
 
 The IOCTL and the data structures are defined in ntifs.h. The buffers are allocated from non-paged pool.
 
@@ -185,12 +183,12 @@ typedef struct _QUERY_PATH_REQUEST_EX {
 </tr>
 <tr class="even">
 <td align="left"><p><strong>PathName</strong></p></td>
-<td align="left"><p>A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&lt;path&gt;.</p></td>
+<td align="left"><p>A non-NULL terminated Unicode string of the form &amp;lt;server&gt;&amp;lt;share&gt;&amp;lt;path&gt;.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 UNC providers should use the QUERY\_PATH\_RESPONSE data structure for the response information.
 
@@ -219,7 +217,7 @@ typedef struct _QUERY_PATH_RESPONSE {
 </tbody>
 </table>
 
- 
+
 
 Note that IOCTL\_REDIR\_QUERY\_PATH\_EX is a METHOD\_NEITHER IOCTL. This means that the input and output buffers might not be at the same address. A common mistake by UNC providers is to assume that the input buffer and the output buffer are the same and use the input buffer pointer to provide the response.
 
@@ -247,9 +245,9 @@ The **Create.Flags** member will have the RX\_CONTEXT\_CREATE\_FLAG\_UNC\_NAME b
 
 If the network mini-redirector wants to see details of the prefix claim, it can read these members in the RX\_CONTEXT structure that is passed to [**MRxCreateSrvCall**](https://msdn.microsoft.com/library/windows/hardware/ff549864). Otherwise, it can just attempt to connect to the server share and return STATUS\_SUCCESS if the **MRxCreateSrvCall** call was successful. RDBSS will make the prefix claim on behalf of the network mini-redirector.
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Overview of Spooler Notification
-author: windows-driver-content
 description: Overview of Spooler Notification
 ms.assetid: 1d0c9130-eeb8-4a7b-8be4-5b434413c870
 keywords:
@@ -37,9 +36,9 @@ After a channel is opened and a notification is sent, the listener client receiv
 
 The notification mechanism is asynchronous. The order of notifications is guaranteed.
 
- 
+ 
 
- 
+ 
 
 
 

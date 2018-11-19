@@ -1,6 +1,5 @@
 ---
 title: GDL Values
-author: windows-driver-content
 description: GDL Values
 ms.assetid: 0e634646-d334-4b9c-b9d2-36026f617575
 keywords:
@@ -62,9 +61,9 @@ The following code examples show values that are acceptable to the GDL parser.
 +  not continuation chars, *% this is not a comment  <EndValue:anything>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

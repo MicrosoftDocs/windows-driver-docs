@@ -1,6 +1,5 @@
 ---
 title: Extending the Bidi Communication Schema
-author: windows-driver-content
 description: Extending the Bidi Communication Schema
 ms.assetid: b216a238-184e-4ebd-b9ef-227ff6bf4dbe
 keywords:
@@ -21,9 +20,9 @@ The precise definition of the Bidi Extension Framework can be found in the tcpbi
 
 For more information about extending the schema, see [Customizing the Printer Port Monitors](customizing-the-printer-port-monitors.md).
 
- 
+ 
 
- 
+ 
 
 
 

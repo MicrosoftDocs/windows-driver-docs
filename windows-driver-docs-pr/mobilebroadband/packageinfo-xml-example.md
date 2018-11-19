@@ -19,7 +19,7 @@ MBAE:0:L9@E}}DT2.\*F65MQA57Y+L
 **Note**  
 Hardware IDs that are included in PackageInfo.xml must have the “DOID:” prefix added to them.
 
- 
+ 
 
 The package is also for the EN-US locale, which the document sets as the default locale for the components of the metadata package.
 
@@ -46,9 +46,9 @@ The package is also for the EN-US locale, which the document sets as the default
 </PackageInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

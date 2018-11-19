@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_V6_TX_PARAMETERS (0xDC)
-author: windows-driver-content
 description: WDI_TLV_CHECKSUM_OFFLOAD_V6_TX_PARAMETERS is a TLV that contains for Tx checksum offload for IPv6.
 ms.assetid: F0340707-4E81-4E66-AF0E-A2918F4F5C7A
 ms.date: 07/18/2017
@@ -67,7 +66,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -93,9 +92,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

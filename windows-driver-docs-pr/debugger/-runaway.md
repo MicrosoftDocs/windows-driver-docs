@@ -3,7 +3,6 @@ title: runaway
 description: The runaway extension displays information about the time consumed by each thread.
 ms.assetid: ea318d5b-60c6-4d1c-80c7-6bc418ad01ab
 keywords: ["runaway Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!runaway** extension can only be used during live debugging or when debugging crash dump files created by [**.dump /mt**](-dump--create-dump-file-.md) or **.dump /ma**.
 
@@ -97,9 +96,9 @@ Here is an example:
  1:1a4        0:00:25.0876
 ```
 
- 
+ 
 
- 
+ 
 
 
 

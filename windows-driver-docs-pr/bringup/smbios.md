@@ -1,7 +1,6 @@
 ---
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
@@ -34,8 +33,8 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>04h</td>
             <td>32</td>
-            <td rowspan="8">Contoso, Inc. manufactures 2 product lines: 1) "A" series, and 2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.</td>
-            <td>"Contoso"</td>
+            <td rowspan="8">Contoso, Inc. manufactures 2 product lines: 1) &quot;A&quot; series, and 2) &quot;B&quot; series. The &quot;A&quot; series of devices include the Contoso &quot;A11&quot; and &quot;A13&quot; device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The &quot;A11&quot; has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the &quot;A11&quot; models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.</td>
+            <td>&quot;Contoso&quot;</td>
         </tr>
         <tr>
             <td>Family</td>
@@ -43,7 +42,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>1Ah</td>
             <td>64</td>
-            <td>"A11"</td>
+            <td>&quot;A11&quot;</td>
         </tr>
         <tr>
             <td>Product Name</td>
@@ -51,7 +50,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>05h</td>
             <td>64</td>
-            <td>"A11 a110001"</td>
+            <td>&quot;A11 a110001&quot;</td>
         </tr>
         <tr>
             <td>Baseboard Product</td>
@@ -59,7 +58,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>05h</td>
             <td>32</td>
-            <td>"bb03"</td>
+            <td>&quot;bb03&quot;</td>
         </tr>
         <tr>
             <td>KU Number</td>
@@ -67,7 +66,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>19h</td>
             <td>32</td>
-            <td>"A11a11001-EU-04"</td>
+            <td>&quot;A11a11001-EU-04&quot;</td>
         </tr>
         <tr>
             <td>Serial Number</td>
@@ -75,7 +74,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>07h</td>
             <td></td>
-            <td>"A1B2C3456789ABC"</td>
+            <td>&quot;A1B2C3456789ABC&quot;</td>
         </tr>
         <tr>
             <td>UUID</td>
@@ -91,7 +90,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>Byte</td>
             <td>05h</td>
             <td>N/A</td>
-            <td>"detachable"</td>
+            <td>&quot;detachable&quot;</td>
         </tr>
         <tr>
             <td>BIOS Vendor</td>
@@ -152,7 +151,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		</tr>
 		<tr>
 			<td>Family</td>
-			<td>Number of null-terminated string.</td>>
+            <td>Number of null-terminated string.</td>&gt;
 			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
 			<td>The format of the <b>family</b> field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The <b>family</b> field string should not contain the <b>manufacturer</b> name.</td>
 			<td>The <b>family</b> field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>

@@ -1,6 +1,5 @@
 ---
 title: Minidrivers and the HID class driver
-author: windows-driver-content
 description: Operation of the HID class driver
 ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
 ms.date: 04/20/2017
@@ -254,9 +253,9 @@ In compliance with WDM requirements, a HID minidriver sends power requests down 
 
 Typically, the HID minidriver passes power requests down the device stack without additional processing.
 
- 
+ 
 
- 
+ 
 
 
 

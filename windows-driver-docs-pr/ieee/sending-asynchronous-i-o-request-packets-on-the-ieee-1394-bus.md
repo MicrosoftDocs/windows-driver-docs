@@ -1,6 +1,5 @@
 ---
 title: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
-author: windows-driver-content
 description: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 ms.assetid: 93ad0cdf-5ac2-4916-b90e-1e64ca4494b6
 keywords:
@@ -60,7 +59,7 @@ The following diagram illustrates asynchronous non-incrementing data blocks.
 
 **Warning**  The bus driver enforces the maximum asynchronous packet size for the current connection speed between the device and the computer, and the maximum speed the device reports in the MAX\_REC field of its configuration ROM. If **nBlockSize** is greater than either of these values, the bus driver uses the enforced value for the block size. If the driver sets the ASYNC\_FLAGS\_NONINCREMENTING flag, this is unlikely to give the desired behavior. If drivers set this flag, they should check that the block size is smaller than the enforced limitations before submitting the request.
 
- 
+ 
 
 ### Sending lock requests
 
@@ -70,9 +69,9 @@ The IEEE 1394 bus protocol provides asynchronous lock requests, which allow atom
 
 A device driver that uses asynchronous I/O keeps track of the bus reset generation. In each asynchronous request, the device driver reports that value in the **u.AsyncXxx.ulGeneration** member of the IRB for the request. The bus driver compares that value to the actual generation count, and if they fail to match, it fails the request with a status value of STATUS\_INVALID\_GENERATION. If a request fails in this manner, the driver should query for the correct generation by using the REQUEST\_GET\_GENERATION\_COUNT bus request. However, the driver should not reissue any request that failed with this status until it retrieves new generation in its Bus Reset Notification callback. This ensures that the device is still present on the bus. Note that client drivers should not depend on IRP\_MN\_BUS\_RESET to be notified of a bus reset. IRP\_MN\_BUS\_RESET is obsolete in Windows XP and later operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

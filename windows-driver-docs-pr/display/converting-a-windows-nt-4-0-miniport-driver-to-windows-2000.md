@@ -46,9 +46,9 @@ You can use the *geninf.exe* tool that is included with the Driver Development K
 
 The Windows 2000 and later video port supports Windows NT 4.0 miniport drivers as legacy drivers. The graphics adapter for a legacy miniport driver cannot be removed from the system while the system is running, nor are legacy miniport drivers automatically detected when added to a running system.
 
- 
+ 
 
- 
+ 
 
 
 

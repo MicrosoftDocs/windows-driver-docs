@@ -1,6 +1,5 @@
 ---
 title: Smart card design guide
-author: windows-driver-content
 description: Smart card design guide
 ms.assetid: 721A1530-B7B4-4373-9006-356A0A601349
 keywords:
@@ -43,9 +42,9 @@ The Windows smart card DDI includes IOCTL requests for Get and Set attributes. I
 -   [Storage card requirements](storage-card-requirements.md)
 -   [Supported smart card attributes](smart-card-attributes.md)
 -   [PC/SC interface](pc-sc-interface.md)
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Smart card DDI and command reference](https://msdn.microsoft.com/library/windows/hardware/dn905601)  

@@ -24,9 +24,9 @@ The following interface types in the KSINTERFACESETID\_Standard set are enumerat
 
 [**KSINTERFACE\_STANDARD\_CONTROL**](ksinterface-standard-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

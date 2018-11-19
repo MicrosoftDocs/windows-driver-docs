@@ -1,6 +1,5 @@
 ---
 title: KS Filters
-author: windows-driver-content
 description: KS Filters
 ms.assetid: caf46279-17f3-4bb4-8b8a-a1673f9fa28f
 keywords:
@@ -42,9 +41,9 @@ The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://msdn.microsoft.com/library/w
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

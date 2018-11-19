@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_SESSION_INFO
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_SESSION_INFO is a TLV that contains Service Session information.
 ms.assetid: ED1FF2F5-82BA-48AC-A986-8B75F099DCA0
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------------|
 | UINT8\[\] | Service Session Information. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: DbgSrv Command-Line Options
 description: The DbgSrv command line uses the following syntax.
 ms.assetid: 817f7ede-bdaf-4d4e-a1bd-579c67ea1ab9
 keywords: ["DbgSrv Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,9 +55,9 @@ Displays a message box with help text for the DbgSrv command line.
 
 For information about using DbgSrv, see [Process Servers (User Mode)](process-servers--user-mode-.md).
 
- 
+ 
 
- 
+ 
 
 
 

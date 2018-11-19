@@ -1,6 +1,5 @@
 ---
 title: OID_WAN_CO_GET_INFO
-author: windows-driver-content
 description: The OID_WAN_CO_GET_INFO OID requests the miniport driver to return information that applies to all virtual connections (VCs) on its NIC. This information is returned in an NDIS_WAN_CO_INFO structure, defined as follows.
 ms.assetid: c97130a5-68e1-4c69-a5a5-9781ea59af0c
 ms.date: 08/08/2017
@@ -21,7 +20,6 @@ The OID\_WAN\_CO\_GET\_INFO OID requests the miniport driver to return informati
          OUT ULONG FramingBits;
          OUT ULONG DesiredACCM;
     } NDIS_WAN_CO_INFO, *PNDIS_WAN_CO_INFO;
-  
 ```
 
 
@@ -155,9 +153,9 @@ Requirements
 
 [**WAN\_CO\_LINKPARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff565819)
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_BROADCAST_BYTES_RCV
-author: windows-driver-content
 description: As a query, the OID_GEN_BROADCAST_BYTES_RCV OID specifies the number of bytes in broadcast packets that are received without errors.
 ms.assetid: 1047f3a9-be4a-4836-ac48-a9029c6f748f
 ms.date: 08/08/2017
@@ -57,9 +56,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

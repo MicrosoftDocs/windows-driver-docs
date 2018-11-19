@@ -1,6 +1,5 @@
 ---
 title: Introduction to Kernel Dispatcher Objects
-author: windows-driver-content
 description: Introduction to Kernel Dispatcher Objects
 ms.assetid: acf7b19a-55a3-4d9b-87ff-ca4df9ed3a45
 keywords: ["kernel dispatcher objects WDK , about kernel dispatcher objects", "dispatcher objects WDK kernel , about kernel dispatcher objects", "wait states WDK kernel", "Signaled state WDK kernel", "Not-Signaled state WDK kernel"]
@@ -68,9 +67,9 @@ If necessary, a driver can create a device-dedicated thread, which can wait for 
 
 As a general guideline, if you expect that your new device driver will often need to stall for longer than 50 microseconds while it waits for device-state changes during I/O operations, consider implementing a driver with a device-dedicated thread. If the device driver is also a highest-level driver, consider using [system worker threads](system-worker-threads.md) and implementing one or more worker-thread callback routines. See [**PsCreateSystemThread**](https://msdn.microsoft.com/library/windows/hardware/ff559932) and [Managing Interlocked Queues with a Driver-Created Thread](managing-interlocked-queues-with-a-driver-created-thread.md).
 
- 
+ 
 
- 
+ 
 
 
 

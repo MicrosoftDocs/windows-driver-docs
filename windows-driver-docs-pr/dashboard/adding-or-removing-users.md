@@ -2,6 +2,7 @@
 title: Adding or Removing Users
 description: The Hardware Dashboard uses Azure Active Directory for user management. This topic describes the process for using your Global Admin credentials to add/remove users.
 ms.assetid: 1922C767-CD34-43CD-AF90-F1FCA297EF5E
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,7 +35,7 @@ When all details are complete, select **Save** to finalize your new user. This w
 
 **Note**  Make sure you print or save this page for the new user. You will not be able to recover this password after you leave this page.
 
- 
+ 
 
 ## <span id="Removing_Users"></span><span id="removing_users"></span><span id="REMOVING_USERS"></span>Removing Users
 
@@ -43,7 +44,7 @@ Removing a user is easy. On the **manage users** page, you will see a list of al
 
 ![an image showing the remove button on the manage users screen](images/remove-users.png)
 
- 
+ 
 
- 
+ 
 

@@ -1,6 +1,5 @@
 ---
 title: Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs
-author: windows-driver-content
 description: If your simple peripheral bus (SPB) controller driver supports one or more custom I/O control (IOCTL) requests, use the SPB_TRANSFER_LIST structure to describe the read and write buffers in these requests.
 ms.assetid: 577122CC-D1F8-41C5-BE77-A22FC8516B82
 ms.date: 04/20/2017
@@ -104,9 +103,9 @@ In the preceding code example, the **switch** statement verifies that the reques
 
 For a [code example](https://msdn.microsoft.com/library/windows/hardware/hh974773#code-example) that shows parameter checking by an *EvtSpbControllerIoOther* function, see [Handling **IOCTL\_SPB\_FULL\_DUPLEX** Requests](https://msdn.microsoft.com/library/windows/hardware/hh974773).
 
- 
+ 
 
- 
+ 
 
 
 

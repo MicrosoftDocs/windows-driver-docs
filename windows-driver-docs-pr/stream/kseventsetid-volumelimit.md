@@ -15,9 +15,9 @@ The event item in this set is specified in the **KSEVENT\_VOLUMELIMIT** enumerat
 
 The only event in this set is [**KSEVENT\_VOLUMELIMIT\_CHANGED**](ksevent-volumelimit-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

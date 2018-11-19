@@ -1,6 +1,5 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
-author: windows-driver-content
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
 ms.assetid: e27ed767-7854-4b2f-8043-35c39357eee4
 ms.date: 04/20/2017
@@ -77,7 +76,7 @@ The function returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -87,9 +86,9 @@ The function returns one of the following values:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

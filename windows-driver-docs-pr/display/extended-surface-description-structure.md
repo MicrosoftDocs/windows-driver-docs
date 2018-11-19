@@ -22,9 +22,9 @@ The data blocks for the [*DdCreateSurface*](https://msdn.microsoft.com/library/w
 
 If the size returned is sizeof(DDSURFACEDESC2), the driver can then examine the **dwCaps2**, **dwCaps3**, and **dwCaps4** members of the [**DDSCAPS2**](https://msdn.microsoft.com/library/windows/hardware/ff550292) structure.
 
- 
+ 
 
- 
+ 
 
 
 

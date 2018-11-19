@@ -1,6 +1,5 @@
 ---
 title: Initializing a BDA Minidriver
-author: windows-driver-content
 description: Initializing a BDA Minidriver
 ms.assetid: 4df2efc6-e666-48d5-9a7b-cbf724c027f0
 keywords:
@@ -88,9 +87,9 @@ DeviceDescriptor =
 #endif // DYNAMIC_TOPOLOGY
 ```
 
- 
+ 
 
- 
+ 
 
 
 

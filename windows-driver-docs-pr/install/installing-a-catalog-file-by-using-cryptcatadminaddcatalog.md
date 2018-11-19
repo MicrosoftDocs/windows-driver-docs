@@ -11,12 +11,13 @@ ms.localizationpriority: medium
 
 An installation program can use the [CryptCATAdminAddCatalog](http://go.microsoft.com/fwlink/p/?linkid=104926) and other **CryptCATAdmin*Xxx*** cryptography functions to programmatically install a [catalog file](catalog-files.md) in the system component and driver database.
 
-The installation program must use the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 in the following way:
+The installation program must use the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 in the following way:
 
--   The source files of the installation program must include the following header (*.h*) files:
-    -   *Mscat.h*, which defines the prototypes and structures for the various **CryptCATAdmin*Xxx*** functions.
-    -   *Softpub.h*, which defines the various data structures and GUIDs that are used by the **CryptCATAdmin*Xxx*** functions.
--   The installation program must link to *Wintrust.lib*.
+- The source files of the installation program must include the following header (*.h*) files:
+  - *Mscat.h*, which defines the prototypes and structures for the various **CryptCATAdmin*Xxx*** functions.
+  - *Softpub.h*, which defines the various data structures and GUIDs that are used by the **CryptCATAdmin*Xxx*** functions.
+
+- The installation program must link to *Wintrust.lib*.
 
 To use these **CryptCATAdmin*Xxx*** cryptography functions, an installation program does the following:
 
@@ -28,9 +29,9 @@ To use these **CryptCATAdmin*Xxx*** cryptography functions, an installation prog
 
 4.  Calls [CryptCATAdminReleaseContext](http://go.microsoft.com/fwlink/p/?linkid=105785) to release the handle to the catalog administrator context. The application supplies the handle to the catalog administrator context that was obtained in step 1.
 
- 
 
- 
+
+
 
 
 

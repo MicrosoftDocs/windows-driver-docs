@@ -1,6 +1,5 @@
 ---
 title: Implementing Plug and Play
-author: windows-driver-content
 description: Implementing Plug and Play
 ms.assetid: ebd3aaa2-a701-41f3-88ff-2a6bdf7bd7cb
 keywords: ["PnP WDK kernel", "Plug and Play WDK kernel", "kernel-mode drivers WDK , Plug and Play", "hardware configuration changes WDK PnP", "resource allocations WDK PnP", "hardware resource allocations WDK PnP", "automatic resource allocations WDK PnP", "dynamic resource allocations WDK PnP"]
@@ -32,9 +31,9 @@ This section describes Plug and Play (PnP) concepts and operating system compone
 
 [Using PnP Notification](using-pnp-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

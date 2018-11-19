@@ -1,6 +1,5 @@
 ---
 title: Supporting User-Defined Paper Sizes
-author: windows-driver-content
 description: Supporting User-Defined Paper Sizes
 ms.assetid: f9c0b759-687e-4d92-80ce-330e30cbc41c
 keywords:
@@ -241,9 +240,9 @@ The following example GPD file segment describes acceptable customized paper siz
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Pscript Capabilities
-author: windows-driver-content
 description: Pscript Capabilities
 ms.assetid: 1530cb64-a1b1-4ff5-a6bf-b3634e83a225
 keywords:
@@ -37,9 +36,9 @@ The PostScript Printer Driver (Pscript) provides the following capabilities:
     -   Font substitution per glyph, for glyphs that exist in the printer's character set.
 -   Support for ICM 2.0, and allowing image color management to be performed on the host system or by printer hardware.
 
- 
+ 
 
- 
+ 
 
 
 

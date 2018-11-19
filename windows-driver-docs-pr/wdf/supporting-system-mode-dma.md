@@ -1,6 +1,5 @@
 ---
 title: Supporting System-Mode DMA
-author: windows-driver-content
 description: Describes the code that a KMDF driver provides in its event callback functions to handle I/O requests for a system-mode DMA device.
 ms.assetid: CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6
 ms.date: 04/20/2017
@@ -58,9 +57,9 @@ If your device does not raise an interrupt to signal DMA transfer completion, yo
 
 To register this callback function, a driver calls [**WdfDmaTransactionSetTransferCompleteCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439261) from one of its [request handlers](request-handlers.md).
 
- 
+ 
 
- 
+ 
 
 
 

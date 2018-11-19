@@ -19,9 +19,9 @@ The following enumeration was updated for NDIS 6.40:
 
 -   [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh598242)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting Specific WMI Problems
-author: windows-driver-content
 description: Troubleshooting Specific WMI Problems
 ms.assetid: 966191e7-aec4-4eff-b975-99a6d3eb8d02
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]
@@ -30,7 +29,7 @@ ms.localizationpriority: medium
 
     **Warning**  If this operation succeeds, it actually registers the new WMI class data with the system. You will need to delete these classes (by using Wbemtest, for example) to test if your driver's MOF data is being read correctly.
 
-     
+     
 
 7.  If the previous step succeeds, then the most likely problem is that the members of **WMIREGINFO**, such as **MofResourceName**, are specified incorrectly. Alternatively, the problem could be that your MOF file specifies a class derived from a base class that does not exist.
 
@@ -38,19 +37,19 @@ ms.localizationpriority: medium
 
 ### Driver's WMI Properties or Methods Cannot Be Accessed
 
-1.  Use **wmimofck driver.bmf** to check if the binary MOF file format is correct. For more information, see [Using wmimofck.exe](using-wmimofck-exe.md).
+1. Use **wmimofck driver.bmf** to check if the binary MOF file format is correct. For more information, see [Using wmimofck.exe](using-wmimofck-exe.md).
 
-2.  Check the system event log for errors. For more information, see [WMI IRPs and the System Event Log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg).
+2. Check the system event log for errors. For more information, see [WMI IRPs and the System Event Log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-irps-and-the-system-event-log-kg).
 
-3.  Check the [WMI WDM Provider Log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-wdm-provider-log-kg) for errors.
+3. Check the [WMI WDM Provider Log](general-techniques-for-testing-wmi-driver-support.md#ddk-wmi-wdm-provider-log-kg) for errors.
 
-4.  Make sure the driver receives a WMI IRP whenever you use Wbemtest to query the driver's classes. If not, then check that the specified GUID in the MOF file matches the GUID the driver is expecting. Also check that the driver is receiving the WMI registration request, that it is succeeding, and the driver is registering the right GUIDs.
+4. Make sure the driver receives a WMI IRP whenever you use Wbemtest to query the driver's classes. If not, then check that the specified GUID in the MOF file matches the GUID the driver is expecting. Also check that the driver is receiving the WMI registration request, that it is succeeding, and the driver is registering the right GUIDs.
 
-5.  If the driver receives the IRP, ensure that the IRP is completed successfully, and that the driver is returning the right type of **WNODE\_*XXX*** structure.
+5. If the driver receives the IRP, ensure that the IRP is completed successfully, and that the driver is returning the right type of **WNODE\_*XXX*** structure.
 
-6.  If Wbemtest returns an error, click the **More Information** button and check the **Description** property for a description of the error.
+6. If Wbemtest returns an error, click the **More Information** button and check the **Description** property for a description of the error.
 
-7.  For methods, check that your driver supports handling the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551650) and [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff551718) requests for the method's GUID. WMI will always perform one of those two requests before executing a method.
+7. For methods, check that your driver supports handling the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551650) and [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff551718) requests for the method's GUID. WMI will always perform one of those two requests before executing a method.
 
 ### Driver's WMI Events Are Not Being Received
 
@@ -68,9 +67,9 @@ ms.localizationpriority: medium
 
 -   Unload and reload the WMI WDM Provider. For WMI data blocks registered with the WMIREG\_FLAG\_EXPENSIVE flag, the provider keeps a handle open to the data block as long as there are consumers for that block. The new security settings will not take effect until the provider closes the handle. Unloading and reloading the provider makes sure the handle has been closed. (For more information about the WMIREG\_FLAG\_EXPENSIVE flag, see [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827).)
 
- 
+ 
 
- 
+ 
 
 
 

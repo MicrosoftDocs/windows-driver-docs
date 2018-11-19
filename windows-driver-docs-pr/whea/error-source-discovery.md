@@ -1,6 +1,5 @@
 ---
 title: Error Source Discovery
-author: windows-driver-content
 description: Error Source Discovery
 ms.assetid: 58b7501d-b51a-436f-ac29-8d03161d0956
 keywords:
@@ -44,9 +43,9 @@ For PCI Express (PCIe) advanced error reporting (AER), the PCI bus driver discov
 
 A PSHED plug-in can also participate in error source discovery to modify the error source information that is reported by the PSHED and to report additional error sources that were not discovered by the PSHED. If a PSHED plug-in is implemented that participates in error source discovery and reports additional error sources to the operating system that the PSHED does not support, the PSHED plug-in must also participate in [error source control](error-source-control.md) and [error information retrieval](error-information-retrieval.md) to support the error source control and error information retrieval operations for these additional error sources. For more information about how to implement a PSHED plug-in that participates in error source discovery, see [Participating in Error Source Discovery](participating-in-error-source-discovery.md).
 
- 
+ 
 
- 
+ 
 
 
 

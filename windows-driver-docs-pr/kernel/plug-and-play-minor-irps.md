@@ -1,6 +1,5 @@
 ---
 title: Plug and Play Minor IRPs
-author: windows-driver-content
 description: Plug and Play Minor IRPs
 ms.date: 08/12/2017
 ms.assetid: eeb7dafd-fb44-4fb7-b5f0-314059ee0093
@@ -25,43 +24,41 @@ The PnP manager sends these IRPs. PnP drivers can send some of these IRPs, but o
 
 The following are the minor function codes for PnP IRPs, and the driver types that handle them:
 
-PnP IRP minor function code | Function or filter driver for nonbus device | Function driver for bus device (for bus FDO) | Bus driver or bus filter driver (for child PDOs)
---------------------------- | ------------------------------------------- | -------------------------------------------- | ------------------------------------------------
-[**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) | Required | Required | Required 
-[**IRP\_MN\_QUERY\_STOP\_DEVICE**](irp-mn-query-stop-device.md) | Required | Required | Required 
-[**IRP\_MN\_STOP\_DEVICE**](irp-mn-stop-device.md) | Required | Required | Required 
-[**IRP\_MN\_CANCEL\_STOP\_DEVICE**](irp-mn-cancel-stop-device.md) | Required | Required | Required 
-[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](irp-mn-query-remove-device.md) | Required | Required | Required 
-[**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) | Required | Required | Required 
-[**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](irp-mn-cancel-remove-device.md) | Required | Required | Required 
-[**IRP\_MN\_SURPRISE\_REMOVAL**](irp-mn-surprise-removal.md) | Required | Required | Required 
-[**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) | Optional | Optional Required
-[**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) | Optional | Optional | Optional
-[**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](irp-mn-filter-resource-requirements.md) | Optional (1) | Optional (1) | No
-[**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](irp-mn-device-usage-notification.md) | Required (1) | Required (1) | Required (1)
-[**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](irp-mn-query-device-relations.md) |
--   **BusRelations** | Optional (1) | Required | No (2)
--   **EjectionRelations** | No | No | Optional
--   **RemovalRelations** | Optional | Optional | No
--   **TargetDeviceRelation** | No | No | Required
-[**IRP\_MN\_QUERY\_RESOURCES**](irp-mn-query-resources.md) | No | No | Required (1)
-[**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) | No | No | Required (1)
-[**IRP\_MN\_QUERY\_ID**](irp-mn-query-id.md) |
--   **BusQueryDeviceID** | No | No | Required
--   **BusQueryHardwareIDs** | No | No | Optional
--   **BusQueryCompatibleIDs** | No | NoOptional
--   **BusQueryInstanceID** | No | No | Optional
--   **BusQueryContainerID** | No | No | Required (3)
-[**IRP\_MN\_QUERY\_DEVICE\_TEXT**](irp-mn-query-device-text.md) | No | No | Required (1)
-[**IRP\_MN\_QUERY\_BUS\_INFORMATION**](irp-mn-query-bus-information.md) | No | No | Required (1)
-[**IRP\_MN\_QUERY\_INTERFACE**](irp-mn-query-interface.md) | Optional | Optional | Required (1)
-[**IRP\_MN\_READ\_CONFIG**](irp-mn-read-config.md) | No | No | Required (1)
-[**IRP\_MN\_WRITE\_CONFIG**](irp-mn-write-config.md) | No | No | Required (1)
-[**IRP\_MN\_DEVICE\_ENUMERATED**](irp-mn-device-enumerated.md) | No | No | Required (1)
-[**IRP\_MN\_SET\_LOCK**](irp-mn-set-lock.md) | No | No | Required (1)
 
-
-
+|                              PnP IRP minor function code                              | Function or filter driver for nonbus device | Function driver for bus device (for bus FDO) | Bus driver or bus filter driver (for child PDOs) |
+|---------------------------------------------------------------------------------------|---------------------------------------------|----------------------------------------------|--------------------------------------------------|
+|                 [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md)                  |                  Required                   |                   Required                   |                     Required                     |
+|            [**IRP\_MN\_QUERY\_STOP\_DEVICE**](irp-mn-query-stop-device.md)            |                  Required                   |                   Required                   |                     Required                     |
+|                  [**IRP\_MN\_STOP\_DEVICE**](irp-mn-stop-device.md)                   |                  Required                   |                   Required                   |                     Required                     |
+|           [**IRP\_MN\_CANCEL\_STOP\_DEVICE**](irp-mn-cancel-stop-device.md)           |                  Required                   |                   Required                   |                     Required                     |
+|          [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](irp-mn-query-remove-device.md)          |                  Required                   |                   Required                   |                     Required                     |
+|                [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)                 |                  Required                   |                   Required                   |                     Required                     |
+|         [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](irp-mn-cancel-remove-device.md)         |                  Required                   |                   Required                   |                     Required                     |
+|             [**IRP\_MN\_SURPRISE\_REMOVAL**](irp-mn-surprise-removal.md)              |                  Required                   |                   Required                   |                     Required                     |
+|           [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md)            |                  Optional                   |              Optional Required               |                                                  |
+|      [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md)       |                  Optional                   |                   Optional                   |                     Optional                     |
+| [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](irp-mn-filter-resource-requirements.md) |                Optional (1)                 |                 Optional (1)                 |                        No                        |
+|    [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](irp-mn-device-usage-notification.md)    |                Required (1)                 |                 Required (1)                 |                   Required (1)                   |
+|       [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](irp-mn-query-device-relations.md)       |                                             |                                              |                                                  |
+|                                 -   **BusRelations**                                  |                Optional (1)                 |                   Required                   |                      No (2)                      |
+|                               -   **EjectionRelations**                               |                     No                      |                      No                      |                     Optional                     |
+|                               -   **RemovalRelations**                                |                  Optional                   |                   Optional                   |                        No                        |
+|                             -   **TargetDeviceRelation**                              |                     No                      |                      No                      |                     Required                     |
+|              [**IRP\_MN\_QUERY\_RESOURCES**](irp-mn-query-resources.md)               |                     No                      |                      No                      |                   Required (1)                   |
+|  [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md)  |                     No                      |                      No                      |                   Required (1)                   |
+|                     [**IRP\_MN\_QUERY\_ID**](irp-mn-query-id.md)                      |                                             |                                              |                                                  |
+|                               -   **BusQueryDeviceID**                                |                     No                      |                      No                      |                     Required                     |
+|                              -   **BusQueryHardwareIDs**                              |                     No                      |                      No                      |                     Optional                     |
+|                             -   **BusQueryCompatibleIDs**                             |                     No                      |                  NoOptional                  |                                                  |
+|                              -   **BusQueryInstanceID**                               |                     No                      |                      No                      |                     Optional                     |
+|                              -   **BusQueryContainerID**                              |                     No                      |                      No                      |                   Required (3)                   |
+|            [**IRP\_MN\_QUERY\_DEVICE\_TEXT**](irp-mn-query-device-text.md)            |                     No                      |                      No                      |                   Required (1)                   |
+|        [**IRP\_MN\_QUERY\_BUS\_INFORMATION**](irp-mn-query-bus-information.md)        |                     No                      |                      No                      |                   Required (1)                   |
+|              [**IRP\_MN\_QUERY\_INTERFACE**](irp-mn-query-interface.md)               |                  Optional                   |                   Optional                   |                   Required (1)                   |
+|                  [**IRP\_MN\_READ\_CONFIG**](irp-mn-read-config.md)                   |                     No                      |                      No                      |                   Required (1)                   |
+|                 [**IRP\_MN\_WRITE\_CONFIG**](irp-mn-write-config.md)                  |                     No                      |                      No                      |                   Required (1)                   |
+|            [**IRP\_MN\_DEVICE\_ENUMERATED**](irp-mn-device-enumerated.md)             |                     No                      |                      No                      |                   Required (1)                   |
+|                     [**IRP\_MN\_SET\_LOCK**](irp-mn-set-lock.md)                      |                     No                      |                      No                      |                   Required (1)                   |
 
 (1) Required or optional in certain situations. See the reference page for the IRP for more details.
 
@@ -69,11 +66,11 @@ PnP IRP minor function code | Function or filter driver for nonbus device | Func
 
 (3) Supported in Windows 7 and later versions of Windows.
 
- 
 
- 
 
- 
+
+
+
 
 
 

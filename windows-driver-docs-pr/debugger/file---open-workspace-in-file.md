@@ -3,7 +3,6 @@ title: File Open Workspace in File
 description: File Open Workspace in File
 ms.assetid: 902be727-a418-4d84-b20b-39af8e7dd417
 keywords: ["File Open Workspace in File", "workspaces, File Open Workspace in File"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ Click **OK** to load the workspace, or click **Cancel** to close the dialog box.
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

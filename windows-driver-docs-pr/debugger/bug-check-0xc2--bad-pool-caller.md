@@ -3,7 +3,6 @@ title: Bug Check 0xC2 BAD_POOL_CALLER
 description: The BAD_POOL_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
 keywords: ["(Developer Content) Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## BAD\_POOL\_CALLER Parameters
 
@@ -91,7 +90,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <tr class="odd">
 <td align="left"><p>0x0A</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Allocator's tag</p></td>
+<td align="left"><p>Allocator&#39;s tag</p></td>
 <td align="left"><p>Tag being used in the attempted free</p></td>
 <td align="left"><p>The current thread attempted to free pool memory by using the wrong tag.</p>
 <p>(The memory might belong to another component.)</p></td>
@@ -101,7 +100,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <p>0x0C,</p>
 <p>or 0x0D</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Pool allocation's tag</p></td>
+<td align="left"><p>Pool allocation&#39;s tag</p></td>
 <td align="left"><p>Bad quota process pointer</p></td>
 <td align="left"><p>The current thread attempted to release a quota on a corrupted pool allocation.</p></td>
 </tr>
@@ -190,7 +189,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9B</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag of 0</p>
 <p>(This would be untrackable, and possibly corrupt the existing tag tables.)</p></td>
 </tr>
@@ -198,7 +197,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9C</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag of &quot;BIG&quot;.</p>
 <p>(This would be untrackable and could possibly corrupt the existing tag tables.)</p></td>
 </tr>
@@ -206,7 +205,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9D</p></td>
 <td align="left"><p>Incorrect pool tag used</p></td>
 <td align="left"><p>Pool type</p></td>
-<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>Caller&#39;s address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag that does not contain any letters or digits. Using such tags makes tracking pool issues difficult.</p></td>
 </tr>
 <tr class="odd">
@@ -219,7 +218,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 </tbody>
 </table>
 
- 
+ 
 
 The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, 0 indicates nonpaged pool and 1 indicates paged pool.
 
@@ -241,9 +240,9 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 
 In particular, for situations with memory pool corruption, run the Windows Memory Diagnostics tool, to try and isolate the physical memory as a cause. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
- 
+ 
 
- 
+ 
 
 
 

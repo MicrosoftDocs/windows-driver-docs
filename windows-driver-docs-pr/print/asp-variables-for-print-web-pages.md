@@ -1,6 +1,5 @@
 ---
 title: ASP Variables for Print Web Pages
-author: windows-driver-content
 description: ASP Variables for Print Web Pages
 ms.assetid: eab0d5e0-0e20-443c-b714-a2b2327894e4
 keywords:
@@ -160,13 +159,13 @@ Request
 
 Yes
 
- 
+ 
 
 The session variables specify properties of the "current" printer, that is, the printer for which an ASP page was invoked. To obtain additional printer properties for the current printer, or to obtain properties of a different printer, see [ActiveX Objects for Print Web Pages](activex-objects-for-print-web-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

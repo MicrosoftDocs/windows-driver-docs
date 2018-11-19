@@ -1,6 +1,5 @@
 ---
 title: Power IRPs for Individual Devices
-author: windows-driver-content
 description: Power IRPs for Individual Devices
 ms.assetid: a8d5db12-8f6b-4c65-9814-0bc3e476dd1c
 keywords: ["power IRPs WDK kernel , devices", "device power IRPs WDK kernel", "power sequence values WDK kernel", "working state returns WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
@@ -64,9 +63,9 @@ As the previous figure shows, a device power IRP is sent, forwarded, and complet
 
 For more information about device power IRPs, see [Managing Power for Individual Devices](managing-power-for-individual-devices.md) and [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md). For details on the power sequence IRP, see [**IRP\_MN\_POWER\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/ff551644).
 
- 
+ 
 
- 
+ 
 
 
 

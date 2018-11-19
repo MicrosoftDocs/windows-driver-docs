@@ -1,6 +1,5 @@
 ---
 title: DispatchReadWrite Using Direct I/O
-author: windows-driver-content
 description: DispatchReadWrite Using Direct I/O
 ms.assetid: 5174fe1f-aee5-4c8a-87a1-7f185ed4e242
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O"]
@@ -28,9 +27,9 @@ Note that a device driver's *DispatchReadWrite* routine can control the order in
 
 In general, a device driver that must split up large transfer requests to suit the limitations of its device should postpone these operations until just before setting up the device for a given transfer request. Such a device driver's *DispatchReadWrite* routine should not check the I/O stack location of incoming IRPs for any device-specific transfer constraints, nor attempt to calculate partial-transfer ranges, when the driver can postpone these checks until just before its [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) (or other driver routine) programs the device for a transfer operation.
 
- 
+ 
 
- 
+ 
 
 
 

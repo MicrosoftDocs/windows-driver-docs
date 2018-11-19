@@ -62,9 +62,9 @@ The following sections describe the CCD APIs and show how to use them in some ex
 
 [CCD Example Code](ccd-example-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

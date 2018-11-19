@@ -1,6 +1,5 @@
 ---
 title: Implementing WMI
-author: windows-driver-content
 description: Implementing WMI
 ms.assetid: 5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9
 keywords: ["WMI WDK kernel", "Windows Management Instrumentation WDK kernel", "extensions WDK WMI", "measurement data WDK WMI", "instrumentation data WDK WMI", "user-mode WMI WDK", "WMI WDK user-mode", "Windows Management Instrumentation WDK user-mode", "kernel-mode drivers WDK , WMI"]
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 This section describes kernel-mode Windows Management Instrumentation (WMI) extensions to WDM. When you add these extensions to your kernel-mode driver, your driver becomes a WMI provider. A WMI provider makes measurement and instrumentation data available to WMI consumers, such as user-mode applications.
 
-For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](http://msdn.microsoft.com/library/aa394582(VS.85).aspx) in the Windows SDK.
+For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](https://msdn.microsoft.com/library/aa394582(VS.85).aspx) in the Windows SDK.
 
 If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff544711).
 
@@ -48,9 +47,9 @@ This section includes the following information about kernel-mode WMI:
 
 [Testing and Troubleshooting WMI Driver Support](testing-and-troubleshooting-wmi-driver-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

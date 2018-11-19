@@ -1,6 +1,5 @@
 ---
 title: XPS Support in Earlier Versions of Windows
-author: windows-driver-content
 description: XPS Support in Earlier Versions of Windows
 ms.assetid: e13b43f5-e926-404d-9f76-c2dfef6e0637
 keywords:

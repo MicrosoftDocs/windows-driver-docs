@@ -1,6 +1,5 @@
 ---
 title: Managing Device Power Policy
-author: windows-driver-content
 description: Managing Device Power Policy
 ms.assetid: f6f9ab40-4d51-4181-ac11-ff7af42370af
 keywords: ["device power policy WDK kernel", "power policy WDK kernel", "device power policy owners WDK kernel", "function drivers WDK power management", "device power states WDK kernel", "initial device power state WDK kernel"]
@@ -48,9 +47,9 @@ The device power policy owner is responsible for the following:
 
     The device power policy owner sends and cancels wait/wake IRPs, as described in [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

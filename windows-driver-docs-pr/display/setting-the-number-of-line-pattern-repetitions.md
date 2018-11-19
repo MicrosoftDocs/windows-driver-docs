@@ -22,9 +22,9 @@ Applications can direct a Direct3D device to render primitives using solid or pa
 
 When applications set the render-state value for the D3DRENDERSTATE\_LINEPATTERN (or D3DRS\_LINEPATTERN) render state, they can specify the number of times to repeat the line pattern by setting the **wRepeatFactor** member of the D3DLINEPATTERN structure. Applications can set this member to a maximum value of 65535 (16-bit value). However, hardware only supports a maximum of 255 (8-bit value). Therefore, a display driver must fail a request that attempts to set the line-pattern-repetition number to a value greater than 255 as an invalid request. D3DLINEPATTERN is described in the DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

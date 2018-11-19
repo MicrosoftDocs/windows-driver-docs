@@ -1,6 +1,5 @@
 ---
 title: Changes to Printer Forms in Windows Vista
-author: windows-driver-content
 description: Changes to Printer Forms in Windows Vista
 ms.assetid: 6e970cbd-1c7f-4c48-8d05-a29f922a3f33
 keywords:
@@ -36,9 +35,9 @@ This section describes the following improvements in printer forms for Windows V
 
 For more information about using printer forms, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

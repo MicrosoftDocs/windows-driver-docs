@@ -1,6 +1,5 @@
 ---
 title: Errors in Handling Cleanup and Close Operations
-author: windows-driver-content
 description: Errors in Handling Cleanup and Close Operations
 ms.assetid: 9d449974-99b1-4d38-9bbb-54938d67c23a
 keywords: ["reliability WDK kernel , errors", "DispatchClose", "DispatchCleanup", "cleanup errors WDK kernel", "close errors WDK kernel"]
@@ -18,9 +17,9 @@ Some drivers fail to distinguish the tasks required in [*DispatchCleanup*](https
 
 When calling dispatch routines, the I/O manager holds a reference to the file object for normal I/O calls. As a result, a driver can receive I/O requests for a file object after its *DispatchCleanup* routine has been called but before its *DispatchClose* routine is called. For example, a user-mode caller might close the file handle while an I/O manager request is in progress from another thread. If the driver has deleted or freed necessary resources before the I/O manager calls its *DispatchClose* routine, invalid pointer references and other problems could occur.
 
- 
+ 
 
- 
+ 
 
 
 

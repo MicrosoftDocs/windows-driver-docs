@@ -1,6 +1,5 @@
 ---
 title: Creating GDL Configuration-Dependent Data
-author: windows-driver-content
 description: Creating GDL Configuration-Dependent Data
 ms.assetid: 5b00903c-a637-4f83-96b8-92fe850d309e
 keywords:
@@ -35,9 +34,9 @@ The following topics describe the steps to create and organize configuration-dep
 
 [Creating GDL Snapshots](creating-gdl-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

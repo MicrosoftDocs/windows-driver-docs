@@ -1,6 +1,5 @@
 ---
 title: How File System Filter Drivers Are Similar to Device Drivers
-author: windows-driver-content
 description: How File System Filter Drivers Are Similar to Device Drivers
 ms.assetid: 7797239e-e0cc-4422-bcc6-31cfe6efd8e4
 keywords:
@@ -37,9 +36,9 @@ Like device drivers, file system filter drivers can receive [Introduction to I/O
 
 Like device drivers, file system filter drivers can be configured to be loaded at system startup time or to be loaded later, after the system startup process is complete.
 
- 
+ 
 
- 
+ 
 
 
 

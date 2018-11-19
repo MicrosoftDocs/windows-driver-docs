@@ -1,7 +1,6 @@
 ---
 Description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
 title: How to connect to a USB device (UWP app)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -117,7 +116,7 @@ Generate an advanced query string (AQS) that contains identification information
 
     **Note**  Notice that the device interface GUID that appears in the string is not the one you specified. That GUID is the actual device interface GUID registered by Winusb.sys for UWP apps.
 
-     
+     
 
 -   If you know the device class of the device or its class, subclass, and protocol codes, call [**GetDeviceClassSelector**](https://msdn.microsoft.com/library/windows/apps/dn264013) to generate the AQS string.
 
@@ -134,7 +133,7 @@ This is the simplest way to find a USB device. For details, see [Quickstart: enu
 4.  Call [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) by passing the device instance string and get the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. You can then use the **UsbDevice** object to perform other operations, such as sending a control transfer. When the app has finished using the **UsbDevice** object, the app must release it by calling [**Close**](https://msdn.microsoft.com/library/windows/apps/dn263990).
     **Note**  When UWP app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) reference.
 
-     
+     
 
 ```CSharp
     private async void OpenDevice()
@@ -186,7 +185,7 @@ void CreateSuperMuttDeviceWatcher(void)
     string aqs = UsbDevice.GetDeviceSelector(vid, pid);  
     
     var superMuttWatcher = DeviceInformation.CreateWatcher(aqs);
-  
+  
     superMuttWatcher.Added += new TypedEventHandler<DeviceWatcher, DeviceInformation>
                               (this.OnDeviceAdded);
 
@@ -208,9 +207,9 @@ C++ apps must release the reference by using the **delete** keyword. C#/VB apps 
 
 The [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) fails if the device is in use or cannot be found.
 
- 
+ 
 
- 
+ 
 
 
 

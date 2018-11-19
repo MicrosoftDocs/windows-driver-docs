@@ -1,6 +1,5 @@
 ---
 title: Querying SCSI Port for Hardware Information
-author: windows-driver-content
 description: Querying SCSI Port for Hardware Information
 ms.assetid: 2f3adc40-6e5a-4a70-8298-60359b77f04f
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ If a higher-level driver sends a query property request IRP to the FDO of the ad
 
 For a detailed explanation of storage device descriptors and storage adapter descriptors, see [Storage Class Driver's GetDescriptor Routine](storage-class-driver-s-getdescriptor-routine.md), and the reference pages for [**STORAGE\_PROPERTY\_QUERY**](https://msdn.microsoft.com/library/windows/hardware/ff566997), [**STORAGE\_DEVICE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff566971), and [**STORAGE\_ADAPTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff566346).
 
- 
+ 
 
- 
+ 
 
 
 

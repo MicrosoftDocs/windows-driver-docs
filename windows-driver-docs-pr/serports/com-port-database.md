@@ -1,6 +1,5 @@
 ---
 title: COM Port Database
-author: windows-driver-content
 description: COM Port Database
 ms.assetid: c9baf147-6e33-4ed2-b682-c141938eb0da
 keywords:
@@ -78,9 +77,9 @@ A client releases a port number by calling the [**ComDBReleasePort**](https://ms
 
 A client can resize the COM port database by calling the [**ComDBResizeDatabase**](https://msdn.microsoft.com/library/windows/hardware/ff546480) routine. A client can only increase the size of the database by integer multiples of 1024. The maximum size of the database is COMDB\_MAX\_PORTS\_ARBITRATED.
 
- 
+ 
 
- 
+ 
 
 
 

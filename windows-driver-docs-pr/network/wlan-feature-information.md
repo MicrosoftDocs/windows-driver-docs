@@ -29,7 +29,7 @@ Wi-Fi network preference is as follows.
     **Note**  
     Wireless network profiles that are roamed to the phone from Windows PCs do not show up in the *Known networks* list until the phone has connected to the network once.
 
-     
+     
 
 2.  Hotspots (from a Store application or OEM plug-in) are prioritized next. If multiple hotspots are found, the following factors are used to decide preference.
 
@@ -38,23 +38,10 @@ Wi-Fi network preference is as follows.
     -   Signal strength.
 
 **Note**  
-When there are multiple networks that have the same name or SSID, only the first configured network that uses the name or SSID is accepted.
-
- 
+When there are multiple networks that have the same name or SSID, only the first configured network that uses the name or SSID is accepted. 
 
 Windows does not disconnect from a network once it is connected if the signal from the network is still present, even when a more preferred network becomes available. For example, if a user connects to a mobile operator hotspot at a store, and walks home while the signal from the hotspot is still present, the phone will not move to the user's configured home Wi-Fi network.
 
 ## Also in this section:
 
-
 -   [Fast Roaming with 802.11k, 802.11v, and 802.11r](fast-roaming-with-802-11k--802-11v--and-802-11r.md)
-- For information on developing Miracast displays with a WLAN connection, refer to the [Building best-in-class Miracast solutions with Windows 10](http://download.microsoft.com/download/3/F/9/3F9F0453-04AE-4E4B-87EF-729FF931C1F9/Building best-in-class Miracast solutions with Windows 10.docx) guide
-
- 
-
- 
-
-
-
-
-

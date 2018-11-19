@@ -1,6 +1,5 @@
 ---
 title: DriverEntry's Required Responsibilities
-author: windows-driver-content
 description: DriverEntry's Required Responsibilities
 ms.assetid: 6e997875-e7b7-43e2-8398-f0574f3a5816
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
@@ -38,9 +37,9 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
 
 4.  Return NTSTATUS indicating whether the driver successfully loaded and can accept and process requests from the PnP manager to configure, add, and start its devices. (See [DriverEntry Return Values](driverentry-return-values.md).)
 
- 
+ 
 
- 
+ 
 
 
 

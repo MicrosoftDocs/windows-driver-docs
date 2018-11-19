@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS is a TLV that contains provision discovery response parameters.
 ms.assetid: 0732C370-108E-4C9A-AF13-2B7D54AEB984
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | The Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi P2P technical specification. |
 | UINT8 | The bits set by the operating system in the above Group capability bitmap.                                                                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

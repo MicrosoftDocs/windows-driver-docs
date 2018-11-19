@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_MEDIA_SPECIFIC_INDICATION
-author: windows-driver-content
 description: The NDIS_STATUS_MEDIA_SPECIFIC_INDICATION status indicates a media-specific status.
 ms.assetid: 983ffff1-5157-46ae-b4ce-31ee1aa55955
 ms.date: 07/18/2017
@@ -46,9 +45,9 @@ Requirements
 
 [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
 
- 
+ 
 
- 
+ 
 
 
 

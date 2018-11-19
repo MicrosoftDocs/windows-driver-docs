@@ -1,6 +1,5 @@
 ---
 title: V4 Printer Driver Configuration Architecture
-author: windows-driver-content
 description: The v4 printer driver model supports a greatly simplified configuration layer.
 ms.assetid: E797CB4A-C28E-4442-89E6-97B589900BD6
 ms.date: 04/20/2017
@@ -25,11 +24,11 @@ The Generic Printer Description (GPD) and PostScript Printer Description (PPD) f
 | GPD       | \*Include          | msxpsinc.gpd   |
 | PPD       | \*MSIsXPSDriver    | True           |
 
- 
+ 
 
 **Note**  PPD-based drivers must not specify the \*Include: msxpsinc.ppd directive as this is known to cause compatibility issues with some applications.
 
- 
+ 
 
 **Mapping to the PrintSchema**
 
@@ -37,9 +36,9 @@ Mapping features and options into the PrintSchema’s namespace is necessary in 
 
 Some features and options are considered to be standard, and are automatically mapped into the PrintSchema’s namespace. These features and options are specific and should not be remapped using \*PrintSchemaKeywordMap. If not otherwise listed, drivers must use the \*PrintSchemaKeywordMap directive on GPD-based drivers, or the \*MSPrintSchemaKeywordMap directive on PPD-based drivers.
 
- 
+ 
 
- 
+ 
 
 
 

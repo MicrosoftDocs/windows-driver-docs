@@ -31,9 +31,9 @@ See the Pixel Shader Reference and Vertex Shader Reference in the latest DirectX
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

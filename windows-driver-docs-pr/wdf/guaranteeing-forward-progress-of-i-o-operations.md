@@ -1,6 +1,5 @@
 ---
 title: Guaranteeing Forward Progress of I/O Operations
-author: windows-driver-content
 description: Guaranteeing Forward Progress of I/O Operations
 ms.assetid: e230eb3b-54ac-43b1-ac2b-8fa137cee43e
 keywords:
@@ -116,9 +115,9 @@ This driver does not provide an [*EvtIoWdmIrpForForwardProgress*](https://msdn.m
 
 Remember that when a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress.
 
- 
+ 
 
- 
+ 
 
 
 

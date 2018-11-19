@@ -1,6 +1,5 @@
 ---
 title: Required WIA Item Properties for Scanner Storage
-author: windows-driver-content
 description: Required WIA Item Properties for Scanner Storage
 ms.assetid: 53df1700-4f84-4f94-b9ee-215e61b4b1ef
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ The WIA scanner storage (folder) item is required to support the following WIA p
 
 [**WIA\_IPA\_ITEM\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551590)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -35,9 +35,9 @@ ppt.x = GET_X_LPARAM(dw);
 ppt.y = GET_Y_LPARAM(dw);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

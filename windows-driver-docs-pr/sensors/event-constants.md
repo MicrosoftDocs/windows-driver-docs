@@ -1,6 +1,5 @@
 ---
 title: Event Constants
-author: windows-driver-content
 description: The sensor platform defines the following constants for driver events.
 ms.assetid: d9bcfda4-d731-462f-802d-99c85911a6ca
 keywords:
@@ -33,7 +32,7 @@ The sensor platform defines the following sensor event types identifiers.
 |SENSOR_EVENT_PROPERTY_CHANGED|Indicates that a property value changed.|
 |SENSOR_EVENT_STATE_CHANGED|Indicates a change of operational state, for example, from SENSOR_STATE_INITIALIZING to SENSOR_STATE_READY.|
 
- 
+ 
 
 ### Sensor Event PROPERTYKEYs
 
@@ -44,7 +43,7 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 |SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the <strong>GUID</strong> value in [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
 |SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call [<strong>ISensorClassExtension::PostStateChange</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
 
- 
+ 
 
 Requirements
 ------------
@@ -69,9 +68,9 @@ Requirements
 
 [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001)
 
- 
+ 
 
- 
+ 
 
 
 

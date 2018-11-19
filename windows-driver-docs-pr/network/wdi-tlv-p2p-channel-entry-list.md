@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_ENTRY_LIST
-author: windows-driver-content
 description: WDI_TLV_P2P_CHANNEL_ENTRY_LIST is a TLV that contains a channel number list.
 ms.assetid: 10739684-C00C-4AE7-A3B2-D4A6F1E9829B
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_OPERATING\_CLASS**](wdi-tlv-operating-class.md)      |                                |          | The frequency band for the channels. |
 | [**WDI\_TLV\_CHANNEL\_INFO\_LIST**](wdi-tlv-channel-info-list.md) |                                |          | The channel number list.             |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

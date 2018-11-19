@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Keywords
-author: windows-driver-content
 description: GDL Preprocessor Keywords
 ms.assetid: 95ad9645-7c16-421a-937e-d4ada587d1e1
 keywords:
@@ -38,9 +37,9 @@ The GDL preprocessor uses the following keyword commands, which should be consid
 
 The preprocessor also uses [GDL preprocessor conditional directives](gdl-preprocessor-conditional-directives.md) to perform conditional tests on syntax blocks of code.
 
- 
+ 
 
- 
+ 
 
 
 

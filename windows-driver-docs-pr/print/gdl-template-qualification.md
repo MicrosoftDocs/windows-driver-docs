@@ -1,6 +1,5 @@
 ---
 title: GDL Template Qualification
-author: windows-driver-content
 description: GDL Template Qualification
 ms.assetid: 6a0fef55-4097-4d5b-b192-ce8a03b9c41f
 keywords:
@@ -34,9 +33,9 @@ When a template is named in a \*Members list, the GDL parser considers the named
     -   Of the remaining qualifying templates, the most derived template will be used.
     -   Of the remaining qualifying templates, the most recently defined template will be used.
 
- 
+ 
 
- 
+ 
 
 
 

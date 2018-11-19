@@ -1,6 +1,5 @@
 ---
 title: Handling Events
-author: windows-driver-content
 description: Handling Events
 ms.assetid: 2cd7ccf3-12f5-4ad0-a7c9-a0f437b72445
 keywords:
@@ -33,9 +32,9 @@ When the event actually occurs, the minidriver signals the class driver by calli
 
 The class driver can parse a [**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750) structure to create its [**KSEVENT\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff561853) structure, but it cannot do the same for any event-specific parameters that follow it in the original request. The minidriver can allocate additional space after the KSEVENT\_ENTRY structure for a specific type of event, by providing a nonzero value for the **ExtraEntryData** member of the KSEVENT\_ITEM it used to declare the event. When *StrMiniEvent* is called for that type of event, it should store any event-specific parameters from KSEVENTDATA in this memory.
 
- 
+ 
 
- 
+ 
 
 
 

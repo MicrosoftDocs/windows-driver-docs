@@ -1,6 +1,5 @@
 ---
 title: Framework Queue Objects
-author: windows-driver-content
 description: Framework Queue Objects
 ms.assetid: 42736e2d-2482-46b4-bf52-4efe369db40b
 keywords:
@@ -45,9 +44,9 @@ This section includes:
 
 [Example Uses of I/O Queues](example-uses-of-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

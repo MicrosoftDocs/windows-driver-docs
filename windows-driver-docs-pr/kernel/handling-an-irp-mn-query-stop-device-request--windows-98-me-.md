@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 98/Me)
-author: windows-driver-content
 description: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 2a12af98-c5ed-4a24-b957-b363683cc491
 keywords: ["IRP_MN_QUERY_STOP_DEVICE"]
@@ -96,9 +95,9 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
 If any driver in the device stack fails the **IRP\_MN\_QUERY\_STOP\_DEVICE**, the PnP manager sends an [**IRP\_MN\_CANCEL\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550826) to the device stack. This prevents drivers from requiring an *IoCompletion* routine for a query-stop IRP to detect whether a lower driver failed the IRP.
 
- 
+ 
 
- 
+ 
 
 
 

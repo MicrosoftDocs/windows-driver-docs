@@ -168,9 +168,9 @@ VOID NTAPI
 
 In the previous examples, the *calloutId* variable contains the run-time identifier for the callout. The run-time identifier is the same identifier that was returned to the callout driver when the callout driver registered the callout with the filter engine.
 
- 
+ 
 
- 
+ 
 
 
 

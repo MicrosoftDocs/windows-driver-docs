@@ -25,9 +25,9 @@ The host stack synchronizes update operations as follows:
 
 -   The host stack never attempts to update an invalidated state object.
 
- 
+ 
 
- 
+ 
 
 
 

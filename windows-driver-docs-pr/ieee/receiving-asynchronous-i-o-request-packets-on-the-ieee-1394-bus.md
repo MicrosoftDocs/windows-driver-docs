@@ -1,6 +1,5 @@
 ---
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
-author: windows-driver-content
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
 ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
 keywords:
@@ -475,9 +474,9 @@ kmdf1394_NotificationCallback (
 } // kmdf1394_NotificationCallback
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Input Streams
-author: windows-driver-content
 description: Input Streams
 ms.assetid: 0aa378d8-e7e2-4555-b541-dd1ed77b4a12
 keywords:
@@ -56,14 +55,14 @@ The following table describes the MPEG2 video input stream media types used by D
 <td><p>Format Block Structure</p></td>
 <td><p>MPEG2VIDEOINFO</p>
 <div>
- 
+ 
 </div>
 (Superset of VIDEOINFO2 structure. Also indicates MPEG profile and level.)</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the AC-3 audio input stream media types used by DVD movies:
 
@@ -96,7 +95,7 @@ The following table describes the AC-3 audio input stream media types used by DV
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -104,7 +103,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the LPCM audio input stream media types used by DVD movies:
 
@@ -139,7 +138,7 @@ The following table describes the LPCM audio input stream media types used by DV
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the DTS audio input stream media types used by DVD movies:
 
@@ -172,7 +171,7 @@ The following table describes the DTS audio input stream media types used by DVD
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -180,7 +179,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the SDDS audio input stream media types used by DVD movies:
 
@@ -213,7 +212,7 @@ The following table describes the SDDS audio input stream media types used by DV
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -221,7 +220,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the subpicture stream media types used by DVD movies:
 
@@ -256,7 +255,7 @@ The following table describes the subpicture stream media types used by DVD movi
 </tbody>
 </table>
 
- 
+ 
 
 For subpicture highlighting, palette information and highlight information are passed as properties. The subpicture data stream consists of packets of data, as provided by the DVD specification. Although the PACK header is stripped off, it is still provided.
 
@@ -268,9 +267,9 @@ The highlight information arrives asynchronously to the data stream. The DVD dec
 
 Highlight information contains Start and End time-stamps. These are in the same units as other time stamps, with two exceptions: A Start time-stamp of 0xFFFFFFFF means the highlight property is effective upon receipt, and an End time-stamp of 0xFFFFFFFF means the highlight property is valid until the next highlight is received.
 
- 
+ 
 
- 
+ 
 
 
 

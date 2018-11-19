@@ -1,6 +1,5 @@
 ---
 title: Obtaining a Function Instance Object
-author: windows-driver-content
 description: Obtaining a Function Instance Object
 ms.assetid: 2c750281-031b-4b9f-9012-3b341ebe1cd9
 ms.date: 04/20/2017
@@ -83,9 +82,9 @@ pfiCollection->Item(0, &m_pFunctionInstance);
 
 For a code example that contains the declaration of a sample class (CWSDDevice), see [Code Sample for Obtaining a Function Instance Object](code-example-for-obtaining-a-function-instance-object.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Videoport VBI Category
-author: windows-driver-content
 description: Videoport VBI Category
 ms.assetid: 99a4d204-45af-4b73-8d31-d745387a38ac
 keywords:
@@ -78,11 +77,11 @@ When specifying **PINNAME\_VIDEO\_VIDEOPORT\_VBI** pins, use the information lis
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Properties for All WIA Minidrivers
-author: windows-driver-content
 description: Properties for All WIA Minidrivers
 ms.assetid: ba85dbbd-2333-4f4f-b12a-84985773eef6
 ms.date: 04/20/2017
@@ -127,9 +126,9 @@ A WIA minidriver supplies the following properties:
 
 [**WIA\_IPA\_SUPPRESS\_PROPERTY\_PAGE**](https://msdn.microsoft.com/library/windows/hardware/ff551653)
 
- 
+ 
 
- 
+ 
 
 
 

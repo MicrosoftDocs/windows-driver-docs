@@ -27,7 +27,7 @@ warning C28123: The function is not permitted to be called at a high IRQ level. 
 </tbody>
 </table>
 
- 
+ 
 
 The driver is executing at an IRQL that is too high for the function that it is calling and the lowest permissible IRQL for prior calls within the function is greater than the maximum IRQL required for this call.
 
@@ -35,9 +35,9 @@ When the Code Analysis tool reports this warning, consult the WDK documentation 
 
 The Code Analysis tool infers the current IRQL and reports this warning only when it has inferred enough about the IRQL to detect the error. This inference might be based on the *function signature* (the arguments and result type) of the function being analyzed, or from prior calls in the execution path.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: GDI Printer Drivers
-author: windows-driver-content
 description: GDI Printer Drivers
 ms.assetid: c7ae6c0e-ae43-4b10-9a6f-f2daf578ecd2
 keywords:
@@ -25,9 +24,9 @@ All Windows 2000 and later printer drivers consist of the following components:
 
 In addition, Microsoft-supplied printer drivers make use of [printer data files](printer-data-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

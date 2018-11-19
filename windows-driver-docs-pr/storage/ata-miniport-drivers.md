@@ -1,6 +1,5 @@
 ---
 title: ATA Miniport Drivers
-author: windows-driver-content
 description: ATA Miniport Drivers
 ms.assetid: 4e5cf0e3-72c5-43df-b61e-0039c3666de4
 keywords:
@@ -25,8 +24,8 @@ ATA miniport drivers work with the ATA port Driver. The following sections descr
 
 [ATA Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff551343)
 
- 
+ 
 
- 
+ 
 
 

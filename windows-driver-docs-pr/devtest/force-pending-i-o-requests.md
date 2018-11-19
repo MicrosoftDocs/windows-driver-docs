@@ -18,7 +18,7 @@ This option is supported only on Windows Vista and later versions of the Windows
 
 **Caution**   Do not use this option on a driver unless you have detailed knowledge of the operation of the driver and have verified that the driver is designed to handle STATUS\_PENDING return values from all of its calls to **IoCallDriver**. Running this option on a driver that is not designed to handle STATUS\_PENDING from all calls can result in crashes, memory corruptions, and unusual system behavior that can be difficult to debug or correct.
 
- 
+ 
 
 ### <span id="why_use_force_pending_i_o_requests_"></span><span id="WHY_USE_FORCE_PENDING_I_O_REQUESTS_"></span>Why Use Force Pending I/O Requests?
 
@@ -150,9 +150,9 @@ IRP: 8f84ef00 - forced pending from stack trace:
 
 The stack trace shows that *Acpi.sys* was trying to complete IRP 8f84ef00. Driver Verifier forced a deferred completion, so *Acpi.sys* returned STATUS\_PENDING to **pci!PciCallDownIrpStack**. If this call had caused a crash, the driver owner would need to review the source code for **pci!PciCallDownIrpStack** and revise it to handle the STATUS\_PENDING properly.
 
- 
+ 
 
- 
+ 
 
 
 

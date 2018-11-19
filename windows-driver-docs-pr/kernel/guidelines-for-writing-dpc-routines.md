@@ -1,6 +1,5 @@
 ---
 title: Guidelines for Writing DPC Routines
-author: windows-driver-content
 description: Guidelines for Writing DPC Routines
 ms.assetid: 570219be-d152-4826-855a-737bbed67ffd
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
@@ -54,9 +53,9 @@ Keep the following points in mind when writing a [*DpcForIsr*](https://msdn.micr
     -   Requests that change the state of the physical device
     -   Requests that require the return of inherently volatile information about the physical device
 
- 
+ 
 
- 
+ 
 
 
 

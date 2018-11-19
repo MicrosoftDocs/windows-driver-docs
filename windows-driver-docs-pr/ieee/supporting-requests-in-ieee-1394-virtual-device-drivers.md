@@ -1,6 +1,5 @@
 ---
 title: Supporting Requests in IEEE 1394 Virtual Device Drivers
-author: windows-driver-content
 description: Supporting Requests in IEEE 1394 Virtual Device Drivers
 ms.assetid: 17e0c84b-29d9-461f-a5f6-7677ecb7fb6e
 keywords:
@@ -49,9 +48,9 @@ Virtual PDOs and the drivers that are loaded above them have the same level of a
 
 For all other requests, the behavior between virtual and physical devices is identical.
 
- 
+ 
 
- 
+ 
 
 
 

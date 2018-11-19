@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_REMOVE_DEVICE
-author: windows-driver-content
 description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 0d733cbd-2da8-48a5-afc6-e1e6b8f507a1
@@ -88,9 +87,9 @@ Requirements
 
 [**IRP\_MN\_SURPRISE\_REMOVAL**](irp-mn-surprise-removal.md)
 
- 
+ 
 
- 
+ 
 
 
 

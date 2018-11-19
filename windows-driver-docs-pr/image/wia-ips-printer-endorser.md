@@ -57,7 +57,7 @@ The following table describes the required values for the **WIA\_IPS\_PRINTER\_E
 </tbody>
 </table>
 
- 
+ 
 
 The WIA minidriver is allowed to accept property configuration, but at scan time it ignores requests to enable printing/endorsing to an inactive scan input source.
 
@@ -94,7 +94,7 @@ The following table describes the optional values for the **WIA\_IPS\_PRINTER\_E
 </tbody>
 </table>
 
- 
+ 
 
 This property must be supported by all Imprinter/Endorser data source items. The required default value is **WIA\_PRINTER\_ENDORSER\_DISABLED**.
 
@@ -114,9 +114,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

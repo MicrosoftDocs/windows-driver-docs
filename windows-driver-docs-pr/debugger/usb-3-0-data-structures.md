@@ -2,7 +2,6 @@
 title: USB 3.0 Data Structures
 description: This topic describes the data structures used by the USB 3.0 host controller driver.
 ms.assetid: 39BD7413-48A5-4199-BA8E-D2A77E4D23F1
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -66,9 +65,9 @@ An Endpoint Context structure holds context information for a single endpoint. I
 
 [USB Debugging Innovations in Windows 8](https://go.microsoft.com/fwlink/p/?LinkID=249153)
 
- 
+ 
 
- 
+ 
 
 
 

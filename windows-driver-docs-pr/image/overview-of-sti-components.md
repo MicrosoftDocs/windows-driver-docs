@@ -1,6 +1,5 @@
 ---
 title: Overview of STI Components
-author: windows-driver-content
 description: Overview of STI Components
 ms.assetid: 30aaa622-fb86-42dc-a417-df61e0093db3
 ms.date: 04/20/2017
@@ -92,9 +91,9 @@ Drivers can call the **IrSock** software interface (described in the Microsoft W
 
 A vendor only needs to provide bus drivers for buses that are not supported by Microsoft drivers.
 
- 
+ 
 
- 
+ 
 
 
 

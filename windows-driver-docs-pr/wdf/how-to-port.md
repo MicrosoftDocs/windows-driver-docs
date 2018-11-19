@@ -1,6 +1,5 @@
 ---
 title: Steps in Porting
-author: windows-driver-content
 description: Steps in Porting
 ms.assetid: D8B7E534-7CFC-45EC-93E9-4B046598D82B
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ Except as noted, the information in this section applies to all types of drivers
 
 For reference information describing the ways that the various WDF objects, methods, and event callback functions map to common WDM objects and functions, see [Summary of KMDF and WDM Equivalents](summary-of-kmdf-and-wdm-equivalents.md).
 
- 
+ 
 
- 
+ 
 
 
 

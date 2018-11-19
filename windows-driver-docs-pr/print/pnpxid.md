@@ -1,6 +1,5 @@
 ---
 title: PnPXID
-author: windows-driver-content
 description: PnPXID
 ms.assetid: 42590d47-edb0-4435-8f7c-6b9c19d7f324
 keywords:
@@ -17,9 +16,9 @@ The `PnPXID` command returns the Plug and Play (PnP) identifier (ID) in the form
 
 For more information about function discovery keys, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

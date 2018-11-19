@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_INVITATION_RESPONSE_PARAMETERS is a TLV that contains Wi-Fi Direct Invitation Response parameters.
 ms.assetid: A242F40C-D062-4A62-8F47-E42E74EAEFE8
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT16 | The GO Configuration Timeout, in milliseconds.                                 |
 | UINT16 | The Client Configuration Timeout, in milliseconds.                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

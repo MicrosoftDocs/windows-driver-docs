@@ -61,9 +61,9 @@ typedef enum
 } SECRET_TYPE;
 ```
 
-**Note**  When encountering PIN **SECRET\_TYPEEmptyPinType**, Windows does not prompt for PIN nor does it call **CardAuthenticatePin** or **CardAuthenticatePinEx**. This setting is useful when an unconditional access to material on the card is desired.
+**Note**  When encountering PIN **SECRET\_TYPEEmptyPinType**, Windows does not prompt for PIN nor does it call **CardAuthenticatePin** or **CardAuthenticatePinEx**. This setting is useful when an unconditional access to material on the card is desired.
 
- 
+
 
 ## <span id="SECRET_PURPOSE"></span><span id="secret_purpose"></span>SECRET\_PURPOSE
 
@@ -105,7 +105,7 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
     | PrimaryCardPin      | “Please enter your PIN.”                         |
     | UnblockOnlyPin      | “Please enter your PIN to unblock the user PIN.” |
 
-     
+
 
 -   Custom strings
 
@@ -119,13 +119,15 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
     “LangID,xxxx;LangID,xxxxx”
     ```
 
-    **Note**  Quotation marks around the custom string are not handled properly and should not be relied on to prevent parsing special characters within the string.
+    **Note**  Quotation marks around the custom string are not handled properly and should not be relied on to prevent parsing special characters within the string.
 
-     
 
-    **Note**  Including two different custom strings for the same locale results in the first custom string being picked up.
 
-     
+
+**Note**  Including two different custom strings for the same locale results in the first custom string being picked up.
+
+
+
 
 The third string in the dialog box (“Digital Signature PIN”) is a predefined string that is determined by the **SECRET\_PURPOSE** value in the **PIN\_INFO** data structure.
 
@@ -155,11 +157,11 @@ The following table describes how the Base CSP acts upon the three different cac
 | **PinCacheNone**         | When the PIN cannot be cached, Base CSP never adds the PIN to the cache. When the Base CSP/KSP is called with [**CryptSetProvParam**](https://msdn.microsoft.com/library/windows/desktop/aa380276) to set a PIN, the PIN is submitted to the card for verification but not cached. This means that any subsequent operations must occur before the Base CSP transaction time-out expires.                                                                                                                                                                                                                  |
 | **PinCacheAlwaysPrompt** | Unlike **PinCacheNone**, when this cache mode is set, the Base CSP transaction time-out is not applicable. The PIN is collected from the user and then submitted to the card for verification before each call that requires authentication. Calls to [**CryptSetProvParam**](https://msdn.microsoft.com/library/windows/desktop/aa380276) and [**NcryptSetProperty**](https://msdn.microsoft.com/library/windows/desktop/aa376292) for setting the PIN return ERROR\_SUCCESS without verifying and caching the PIN. This implies that calls from applications that use silent contexts will fail if the call requires authentication. |
 
- 
 
-**Note**  Windows logon may not work properly if a PIN is not cached. This behavior is by design. Therefore, careful consideration should be given when setting a PIN cache mode to any value other than **PinCacheNormal**.
 
- 
+**Note**  Windows logon may not work properly if a PIN is not cached. This behavior is by design. Therefore, careful consideration should be given when setting a PIN cache mode to any value other than **PinCacheNormal**.
+
+
 
 ## <span id="_PIN_CACHE_POLICY"></span><span id="_pin_cache_policy"></span> PIN\_CACHE\_POLICY
 
@@ -201,13 +203,13 @@ The **dwUnblockPermission** member is a bit-mask that describes which PINs have 
 
 The **dwFlags** member contains PIN flags. Currently, only one flag is defined: PIN\_INFO\_REQUIRE\_SECURE\_ENTRY. This flag indicates to the Base CSP/KSP whether a secure desktop is required for PIN entry.
 
-**Note**  It is possible by using this structure to give ROLE\_EVERYONE permission to change or unblock a PIN. We do not recommend this, and no mechanism is provided in the minidriver API to allow ROLE\_EVERYONE to change or unblock a PIN.
+**Note**  It is possible by using this structure to give ROLE\_EVERYONE permission to change or unblock a PIN. We do not recommend this, and no mechanism is provided in the minidriver API to allow ROLE\_EVERYONE to change or unblock a PIN.
 
- 
 
- 
 
- 
+
+
+
 
 
 

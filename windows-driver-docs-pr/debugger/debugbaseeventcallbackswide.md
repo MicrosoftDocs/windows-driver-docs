@@ -3,7 +3,6 @@ title: debugbaseeventcallbackswide
 description: The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface. 
 ms.assetid: 38AD8472-1BA3-42EA-99CE-E91098A5B334
 keywords: [DebugBaseEventCallbacksWide]
-ms.author: domars
 ms.date: 01/10/2018
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ The DebugBaseEventCallbacksWide class provides a base implementation of the [IDe
 A program can derive an event callbacks class from DebugBaseEventCallbacksWide and implement only the methods needed. 
 
 Be careful to implement GetInterestMask appropriately.
- 
+ 
 ### Requirements
 
 Header
@@ -32,9 +31,9 @@ Dbgeng.h (include Dbgeng.h)
 ### See Also
 [DebugBaseEventCallbacks](debugbaseeventcallbacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

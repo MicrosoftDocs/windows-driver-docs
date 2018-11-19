@@ -1,6 +1,5 @@
 ---
 title: Print Ticket and Print Capabilities Provider Interface
-author: windows-driver-content
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers
 ms.assetid: a14c1173-0419-44c7-bc8f-7197590083b3
 keywords:
@@ -19,9 +18,9 @@ The Windows Vista operating system provides basic print ticket support for all d
 
 Implementations of the print ticket and print capabilities provider interface must be multithread safe, because calls into the provider are driven by the application and might be made concurrently.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,6 +2,7 @@
 title: Windows Device Experience List
 description: Windows Device Experience List
 ms.assetid: 6325401e-4c8d-4b24-b910-ee3652470e31
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,7 +36,7 @@ You can filter any set of results with the drop-down menus at the top of the lis
     **Note**  
     Selecting **Yes** on the **Device Stage** filter limits models to those with a Device Stage experience.
 
-     
+     
 
 2.  Click **Go** to apply the filter.
 
@@ -55,9 +56,9 @@ You can sort any set of results by **Model Name**, **Company**, **Locale**, **Ca
 
 To obtain a listing on the Windows Device Experience List, is to read and follow instructions in [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

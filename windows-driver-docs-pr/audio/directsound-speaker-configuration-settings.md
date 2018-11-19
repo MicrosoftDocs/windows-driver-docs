@@ -28,9 +28,9 @@ This section describes the DirectSound speaker-configuration settings and how to
 
 [DSSPEAKER\_DIRECTOUT Speaker Configuration](dsspeaker-directout-speaker-configuration.md)
 
- 
+ 
 
- 
+ 
 
 
 

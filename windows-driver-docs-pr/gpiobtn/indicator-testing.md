@@ -1,6 +1,5 @@
 ---
 title: Indicator testing
-author: windows-driver-content
 description: This topic describes common indicator step procedures and examples.
 ms.assetid: 8FD5728C-30E3-4998-A01D-80894BDB379A
 ms.localizationpriority: medium
@@ -46,7 +45,7 @@ Various form factors allow for different methods of conversion, such as the foll
 
 **Figure 2 Screen Swivel Conversion**
 
- 
+ 
 
 **Slate examples:**
 
@@ -68,9 +67,9 @@ It is important to perform end-to-end indicator testing for convertibles to expo
 -   Various timings when converting the system from one mode to another mode.
 -   Mechanical specifics of the convertible.
 
- 
+ 
 
- 
+ 
 
 
 

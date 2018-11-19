@@ -1,6 +1,5 @@
 ---
 title: Publishing a WMI Schema
-author: windows-driver-content
 description: Publishing a WMI Schema
 ms.assetid: db2b8086-71e4-4532-a0ae-75983691a5a6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "binary MOF WDK WMI"]
@@ -24,9 +23,9 @@ A driver writer can then publish a driver's WMI schema in one of the following w
 
 -   Include binary data within the driver and return it when WMI requests it. A schema published in this way can be changed dynamically at runtime. For more information, see [Implementing Dynamic MOF Data](implementing-dynamic-mof-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

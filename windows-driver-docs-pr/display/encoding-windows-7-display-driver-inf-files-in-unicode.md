@@ -19,9 +19,9 @@ To encode an INF file as Unicode (or to verify whether the INF file is encoded a
 
 3.  If "ANSI" appears in the Encoding field of the dialog box, change the encoding to "Unicode" and save the file under a new name.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Internal Compatibility Layer
-author: windows-driver-content
 description: Internal Compatibility Layer
 ms.assetid: 6cfb3842-751e-4f4c-9fac-daba70245b81
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ There are several limitations of the compatibility layer:
 
 -   Only Windows Vista scanner drivers that implement flatbed and feeder as their base items (WIA\_CATEGORY\_FLATBED and WIA\_CATEGORY\_FEEDER) are translated for legacy WIA applications.
 
- 
+ 
 
- 
+ 
 
 
 

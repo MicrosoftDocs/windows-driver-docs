@@ -3,7 +3,6 @@ title: ta (Trace to Address)
 description: The ta command executes the program until the specified address is reached, displaying each step (including steps within called functions).
 ms.assetid: 99741659-dd43-44ea-ac27-06d821b47fbe
 keywords: ["ta (Trace to Address) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,13 +20,13 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ta [r] [= StartAddress] StopAddress 
 ```
 
@@ -71,7 +70,7 @@ Specifies the address at which execution stops. This address must match the exac
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -84,19 +83,19 @@ The **ta** command causes the target to begin executing. This execution continue
 
 **Note**   If you use the **ta** command in kernel mode, execution stops when an instruction is encountered at the specified virtual address in any virtual address space.
 
- 
+ 
 
 During this execution, all steps are displayed explicitly. If a function is called, the debugger also traces through that function. Therefore, the display of this command resembles what you see if you executed [**t (Trace)**](t--trace-.md) repeatedly until the program counter reached the specified address.
 
 For example, the following command explicitly traces through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> ta @$ra 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

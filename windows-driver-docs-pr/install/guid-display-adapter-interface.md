@@ -41,9 +41,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

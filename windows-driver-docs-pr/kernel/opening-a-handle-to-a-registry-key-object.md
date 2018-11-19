@@ -1,6 +1,5 @@
 ---
 title: Opening a Handle to a Registry-Key Object
-author: windows-driver-content
 description: Opening a Handle to a Registry-Key Object
 ms.assetid: 451e36a1-1cc2-469e-9f54-c02fef7b1666
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel", "opening handle to registry-key object", "handle to registry-key object WDK kernel"]
@@ -59,7 +58,7 @@ You pass a *DesiredAccess* parameter to **ZwCreateKey** or **ZwOpenKey** that co
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the available values for the *DesiredAccess* parameter, see [**ZwCreateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566425).
 
@@ -67,11 +66,11 @@ You can also call [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/libra
 
 **Note**  For calls to **ZwCreateKey**, **ZwOpenKey**, **IoOpenDeviceRegistryKey**, and **IoOpenDeviceInterfaceRegistryKey**, the generic access rights, GENERIC\_READ and GENERIC\_WRITE, are equivalent in meaning to the key-specific access rights, KEY\_READ and KEY\_WRITE, respectively, and can be used as substitutes for these key-specific access rights.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: CleanupPort
-author: windows-driver-content
 description: CleanupPort
 ms.assetid: c24a9f09-3fac-4fe7-a4d2-aeb9f818fa54
 keywords:
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 The CleanupPort command can be called to delete a specified port if it is not used for any printers in the system.
 
- 
+ 
 
- 
+ 
 
 
 

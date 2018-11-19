@@ -31,9 +31,9 @@ For [driver-managed resources](driver-managed-resources.md), when the driver evi
 
 The Direct3D runtime cannot call the driver's [*DdLock*](https://msdn.microsoft.com/library/windows/hardware/ff549599) function or use any other [DDI](direct3d-driver-ddi.md) to access the sublevels of an auto-generated MIP-map texture. This implies that the sublevels for auto-generated MIP-map textures, like lightweight MIP-map textures, are "implicit" and can be specified by the driver as appropriate. The driver is not required to specify "complete" surface data structures. Note, however, that Direct3D must be able to call the driver's *DdLock* or [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) functions, send the D3DDP2OP\_BLT command, or use any other DDI (for [driver-managed textures](driver-managed-textures.md), dynamic textures or vendor-specific formats only) to access the top level of an auto-generated MIP-map texture.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Buffered I/O
-author: windows-driver-content
 description: Using Buffered I/O
 ms.assetid: 69291156-babb-465a-9e80-1766f075768b
 keywords: ["buffered I/O WDK kernel", "buffers WDK I/O , buffered I/O", "data buffers WDK I/O , buffered I/O", "nonpaged system buffers WDK I/O", "I/O control codes WDK kernel , buffered I/O", "I/O WDK kernel , buffered I/O"]
@@ -50,9 +49,9 @@ Typically, a driver uses buffered I/O for some types of IRPs, such as [**IRP\_MJ
 
 Every **IRP\_MJ\_DEVICE\_CONTROL** and **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** request includes an I/O control code. If the I/O control code indicates that the IRP must be supported by using buffered I/O, the I/O manager uses a single system buffer to represent the user application's input and output buffers. A driver that supports such an I/O control code must read input data (if any) from the buffer and then supply output data (if any) by overwriting the input data. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
- 
+ 
 
- 
+ 
 
 
 

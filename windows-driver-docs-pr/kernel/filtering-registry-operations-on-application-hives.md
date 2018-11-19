@@ -1,6 +1,5 @@
 ---
 title: Filtering Registry Operations on Application Hives
-author: windows-driver-content
 description: Initial support for application hives was introduced in Windows Vista.
 ms.assetid: A8D06E25-7CC6-476A-AB55-DAFE19954347
 ms.localizationpriority: medium
@@ -22,9 +21,9 @@ An application hive does not support setting security descriptors on the keys in
 
 A registry filter driver receives calls to its [*RegistryCallback*](https://msdn.microsoft.com/library/windows/hardware/ff560903) routine for registry operations on application hives. These calls do not distinguish between registry operations on application hives and operations on other types of registry hives. Registry filter drivers that handle create-key and open-key operations (which are indicated by the **RegNtPreOpenKey**, **RegNtPreOpenKeyEx**, **RegNtPreCreateKey**, and **RegNtPreCreateKeyEx** notification values) must correctly handle the following special situation. When an application hive is loaded, the last step in the loading process is the opening of the root key of the hive by the registry manager. The registry manager issues this open-key operation with an absolute path to the key, which means that the path name string in the **CompleteName** member of the [**REG\_CREATE\_KEY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560920), [**REG\_CREATE\_KEY\_INFORMATION\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff560922), [**REG\_OPEN\_KEY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560957), or [**REG\_OPEN\_KEY\_INFORMATION\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff560959) structure will start with "\\REGISTRY\\A\\". Only the registry manager can use an absolute path to open an application hive. If a registry filter driver tries to open an application hive in this way (for example, by calling the [**ZwOpenKey**](https://msdn.microsoft.com/library/windows/hardware/ff567014) routine), the operation will fail with error status STATUS\_ACCESS\_DENIED.
 
- 
+ 
 
- 
+ 
 
 
 

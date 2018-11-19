@@ -54,9 +54,9 @@ Graphics hardware vendors must write user-mode display drivers for their display
 
 [Managing Resources for Multiple GPU Scenarios](managing-resources-for-multiple-gpu-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

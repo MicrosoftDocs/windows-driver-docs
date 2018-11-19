@@ -1,6 +1,5 @@
 ---
 title: Time stamp helper
-author: windows-driver-content
 description: The time stamp helper function is used by v2 sensor drivers, and it's used with the sensor device driver software interface (DDSI).
 ms.assetid: AE02CEBE-C5CB-4F54-BCB0-439D360DF6A1
 ms.date: 07/20/2018
@@ -30,16 +29,16 @@ Comments
 | Minimum supported server | Windows Server 2012 R2 |
 | Header                   | Sensorsutils.h         |
 
- 
+ 
 
 ## Related topics
 
 
 [Marshalling helper functions](marshalling-helper-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

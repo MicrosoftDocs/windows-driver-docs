@@ -1,6 +1,5 @@
 ---
 title: Getting Error Source Information for a Specific Error Source
-author: windows-driver-content
 description: Getting Error Source Information for a Specific Error Source
 ms.assetid: 9979d654-8214-4e2d-9c6e-fc29a7f4ab40
 keywords:
@@ -166,9 +165,9 @@ pClass->Release();
 pOutParameters->Release();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NTSTATUS Values
-author: windows-driver-content
 description: NTSTATUS Values
 ms.assetid: 7792201b-63bb-4db5-803d-2af02893d505
 keywords: ["standard driver routines WDK kernel , NTSTATUS values"]
@@ -20,9 +19,9 @@ This section discusses how to use the NTSTATUS values that are returned by syste
 
 [Defining New NTSTATUS Values](defining-new-ntstatus-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

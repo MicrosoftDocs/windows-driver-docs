@@ -1,6 +1,5 @@
 ---
 title: Replacing the Default Printer Details Page
-author: windows-driver-content
 description: Replacing the Default Printer Details Page
 ms.assetid: 451f442b-a882-4540-82dd-e96dab5e7619
 keywords:
@@ -40,11 +39,11 @@ You must not modify the file named Globals.asp, which is contained in the Printe
 
 Microsoft reserves the right to modify its print Web pages without notice. Therefore, customized ASP files must not depend on the content of Microsoft-supplied ASP files.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

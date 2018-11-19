@@ -1,6 +1,5 @@
 ---
 title: Handling PnP Start in a Storage Class Driver
-author: windows-driver-content
 description: Handling PnP Start in a Storage Class Driver
 ms.assetid: 8d4ccd09-c5d2-4c9b-b94d-e22c916f0043
 keywords:
@@ -30,9 +29,9 @@ A driver of a device of type FILE\_DEVICE\_DISK or FILE\_DEVICE\_MASS\_STORAGE c
 
 For more information about a storage class driver's *DispatchPnP* routine, see [Handling PnP Requests to Storage Peripherals](handling-pnp-requests-to-storage-peripherals.md). For more information about handling PnP start requests, see [Starting a Device](https://msdn.microsoft.com/library/windows/hardware/ff563849).
 
- 
+ 
 
- 
+ 
 
 
 

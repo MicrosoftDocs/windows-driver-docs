@@ -69,7 +69,7 @@ Like all WDM drivers, framework-based drivers must have a **DriverEntry** routin
 
 **Note**  A UMDF driver runs in a user-mode host process, while a KMDF driver runs in kernel mode in a system process. The framework might load multiple instances of a UMDF driver into separate instances of the host process. As a result:
 
- 
+ 
 
 -   The framework might call a UMDF driver’s DriverEntry routine multiple times if it loads instances of the driver in different host processes. In contrast, the framework calls a KMDF driver's DriverEntry routine only once.
 -   If a UMDF driver creates a global variable in its DriverEntry routine, the variable might may not be available to all instances of the driver. However, a global variable that a KMDF driver creates in its DriverEntry routine is available to all instances of the driver.
@@ -185,9 +185,9 @@ DriverEntry(
 
 [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693)
 
- 
+ 
 
- 
+ 
 
 
 

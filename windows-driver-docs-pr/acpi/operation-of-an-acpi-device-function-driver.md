@@ -1,6 +1,5 @@
 ---
 title: Operation of an ACPI Device Function Driver
-author: windows-driver-content
 description: Operation of an ACPI Device Function Driver
 ms.assetid: 56c63373-5094-4ae5-a7b0-56d61e3fa9b1
 keywords:
@@ -32,9 +31,9 @@ A function driver for an ACPI device is a WDM driver that does the following:
 
     For more information, see [Providing a Vendor-Defined ACPI Device Interface](providing-a-vendor-defined-acpi-device-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: Create a new report template
 description: Describes how to create a new report template for driver failure reports. Includes REST API information. 
-author: EliotSeattle
 ms.author: shganesh
+ms.topic: article
 ms.date: 09/01/2018
 ms.localizationpriority: medium
 ---
@@ -154,7 +154,7 @@ This table describes the parameters in the Report Template Creation JSON.
         <td>limit</td>
         <td>No</td>
         <td>Limits the number of rows in response</td>
-        <td>Integers >=0<br/>0 indicates all records</td>
+        <td>Integers &gt;=0<br/>0 indicates all records</td>
     </tr>
     </tbody>
 </table>
@@ -178,10 +178,10 @@ The response payload is structured as follows in JSON format.
     	<tr>
       <td>Response Payload</td>
           <td><pre>{
-    "data": {
-        "templateId": templateId
+    &quot;data&quot;: {
+        &quot;templateId&quot;: templateId
   },
-  "errors": null  }`</td>
+  &quot;errors&quot;: null  }`</td>
       </tr>
      </tbody>
 </table>
@@ -315,7 +315,7 @@ You can select from the following columns in the Windows 10, Windows 8.x, and Wi
     </tr>
     <tr>
       <td>CabIdHash</td>
-      <td>Hash of the CabID that can be used to download the cab file using the [CabDownload](https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload) API</td>
+      <td>Hash of the CabID that can be used to download the cab file using the <a href="https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload" data-raw-source="[CabDownload](https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload)">CabDownload</a> API</td>
     </tr>
     <tr>
       <td>DeviceId</td>

@@ -3,7 +3,6 @@ title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
 ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
-ms.author: domars
 ms.date: 08/16/2018
 ms.localizationpriority: medium
 ---
@@ -29,12 +28,12 @@ The following GFlags settings enable UMDH stack traces:
 
     Or, equivalently, use the following GFlags command line, where *ImageName* is the process name (including the file name extension):
 
-    ```
+    ```dbgcmd
     gflags /i ImageName +ust 
     ```
     Use this command to clear the GFlag settings once you are done. For more information, see [GFlags Commands](gflags-commands.md).
 
-    ```
+    ```dbgcmd
     gflags /i ImageName -ust 
     ```
     
@@ -47,7 +46,7 @@ Before using UMDH, you must have access to the proper symbols for your applicati
 
 For example, if the symbols for your application are located at C:\\MySymbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\mysymbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols 
 ```
 
@@ -65,9 +64,9 @@ After making these preparations, you can use UMDH to capture information about t
 
 2.  Use UMDH to analyze the heap memory allocations for this process, and save it to a log file. Use the -p switch with the PID, and the -f switch with the name of the log file. For example, if the PID is 124, and you want to name the log file Log1.txt, use the following command:
 
-    ```
+    ```console
     umdh -p:124 -f:log1.txt 
-    ```
+    ```dbgcmd
 
 3.  Use Notepad or another program to open the log file. This file contains the call stack for each heap allocation, the number of allocations made through that call stack, and the number of bytes consumed through that call stack.
 
@@ -75,13 +74,13 @@ After making these preparations, you can use UMDH to capture information about t
 
     UMDH can compare two different log files and display the change in their respective allocation sizes. You can use the greater-than symbol (**&gt;**) to redirect the results into a third text file. You may also want to include the -d option, which converts the byte and allocation counts from hexadecimal to decimal. For example, to compare Log1.txt and Log2.txt, saving the results of the comparison to the file LogCompare.txt, use the following command:
 
-    ```
+    ```console
     umdh log1.txt log2.txt > logcompare.txt 
     ```
 
 5.  Open the LogCompare.txt file. Its contents resemble the following:
 
-    ```
+    ```text
     + 5320 ( f110 - 9df0) 3a allocs BackTrace00B53 
     Total increase == 5320 
     ```
@@ -90,7 +89,7 @@ After making these preparations, you can use UMDH to capture information about t
 
 6.  To determine what is in that backtrace, open one of the original log files (for example, Log2.txt) and search for "BackTrace00B53." The results are similar to this data:
 
-    ```
+    ```text
     00005320 bytes in 0x14 allocations (@ 0x00000428) by: BackTrace00B53
     ntdll!RtlDebugAllocateHeap+0x000000FD
     ntdll!RtlAllocateHeapSlowly+0x0000005A
@@ -112,9 +111,9 @@ After making these preparations, you can use UMDH to capture information about t
 
     Determine which of these calls is the last one to explicitly appear in your source code. In this case, it is probably the **new** operator because the call to *malloc* occurred as part of the implementation of **new** rather than as a separate allocation. So this instance of the **new** operator in the **DisplayMyGraphics** routine is repeatedly allocating memory that is not being freed.
 
- 
+ 
 
- 
+ 
 
 
 

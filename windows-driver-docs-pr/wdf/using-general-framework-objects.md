@@ -1,6 +1,5 @@
 ---
 title: Using General Framework Objects
-author: windows-driver-content
 description: Using General Framework Objects
 ms.assetid: d3356d3f-8110-44dd-b4a2-36265f5a1714
 keywords:
@@ -37,9 +36,9 @@ Drivers can create and use general framework objects. If your driver calls [**Wd
 
 Using general objects can be a convenient way to manage driver-allocated resources. For example, a higher-level driver might require multiple memory allocations to process a received I/O request, if the driver sends the request to multiple devices or breaks the request into several smaller ones. The driver can create one or more general objects that are children of the received I/O request, and it can store information about the memory allocations in the general objects' context space.
 
- 
+ 
 
- 
+ 
 
 
 

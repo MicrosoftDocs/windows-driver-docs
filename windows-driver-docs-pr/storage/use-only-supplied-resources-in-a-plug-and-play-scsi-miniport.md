@@ -1,6 +1,5 @@
 ---
 title: Use Only Supplied Resources in a Plug and Play SCSI Miniport
-author: windows-driver-content
 description: Use Only Supplied Resources in a Plug and Play SCSI Miniport
 ms.assetid: 26c688dc-b6af-4a0c-8401-d53e653d90b3
 keywords:
@@ -25,9 +24,9 @@ In Plug and Play, devices on enumerable buses are detected by the driver for the
 
 Consequently, a SCSI miniport driver must use only the resources provided by the port driver (if any) in Microsoft Windows 2000 and later systems. The miniport driver is allowed to scan the bus for an HBA only if the port driver passes in zero-value access ranges. If the miniport driver attempts to use resources that are not assigned to it, the [**ScsiPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff564629) call will fail. Calls to read and write device registers or ports that have not been properly mapped also might fail.
 
- 
+ 
 
- 
+ 
 
 
 

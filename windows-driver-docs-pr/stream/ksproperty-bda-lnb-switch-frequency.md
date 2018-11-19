@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY to inform the RF tuner node 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -93,9 +93,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md)
 
- 
+ 
 
- 
+ 
 
 
 

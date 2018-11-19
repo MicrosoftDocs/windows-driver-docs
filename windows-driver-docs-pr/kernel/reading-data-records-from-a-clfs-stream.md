@@ -1,6 +1,5 @@
 ---
 title: Reading Data Records from a CLFS Stream
-author: windows-driver-content
 description: Reading Data Records from a CLFS Stream
 ms.assetid: 46e583c5-9f12-4f05-8f11-683ac428313a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reading data records", "read forward WDK CLFS", "forward reading WDK CLFS", "read backward WDK CLFS", "backward reading WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS"]
@@ -23,7 +22,7 @@ For all variations on reading a sequence of data records, complete the following
 
 **Caution**  Read contexts are not thread-safe. Clients are responsible for serializing access to read contexts.
 
- 
+ 
 
 The following subtopics discuss the details of reading the different types of record sequences and chains.
 
@@ -82,7 +81,7 @@ To read forward in a CLSF stream (starting at the data record of your choice), y
 </tbody>
 </table>
 
- 
+ 
 
 After you have obtained the read context and the first record, you can obtain subsequent records in the stream by calling **ClfsReadNextLogRecord** repeatedly. When there are no more data records in the stream, **ClfsReadNextLogRecord** returns STATUS\_END\_OF\_FILE. The following table shows how to set and interpret the parameters.
 
@@ -129,7 +128,7 @@ After you have obtained the read context and the first record, you can obtain su
 </tbody>
 </table>
 
- 
+ 
 
 ### Reading a chain of data records linked by the previous LSN
 
@@ -188,7 +187,7 @@ Suppose you have written a chain of data records that are linked by their previo
 </tbody>
 </table>
 
- 
+ 
 
 After you have the read context and the first record, you can read the remaining records in the chain by calling **ClfsReadNextLogRecord** repeatedly. The following table shows how to set and interpret the parameters.
 
@@ -235,7 +234,7 @@ After you have the read context and the first record, you can read the remaining
 </tbody>
 </table>
 
- 
+ 
 
 As you make repeated calls to **ClfsReadNextLogRecord**, your sequence of calls will end in one of the following ways.
 
@@ -257,9 +256,9 @@ Suppose you have written a chain of data records that are linked by LSNs you hav
 
 Note that you can only move backward in the stream when you call **ClfsReadNextLogRecord** to read a record chain. The LSN you supply in *plsnUser* must be less than the LSN of the current record in the chain.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: wudfext.wudfdevicequeues
 description: The wudfext.wudfdevicequeues extension displays information about all the I/O queues for a device.
 ms.assetid: 985e6d93-018f-436a-a75c-088251398539
 keywords: ["wudfext.wudfdevicequeues Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the **IWDFDevice** interface for which to display infor
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,7 +58,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfdevicequeues** display:
 
-```
+```dbgcmd
 ## kd> !wudfdevicequeues 0xf2f80 
 --------------------------------------------------
 Queue: 1 (!wudfqueue 0x000f3500)
@@ -77,9 +76,9 @@ Queue: 1 (!wudfqueue 0x000f3500)
       IQueueCallbackWrite 0x000f3440
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Completing a DMA Transfer
-author: windows-driver-content
 description: Completing a DMA Transfer
 ms.assetid: 86383b9f-9b82-4afa-81ac-2ab09bd8778b
 keywords:
@@ -65,9 +64,9 @@ If the [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/f
 
 To restart the transaction's current transfer, the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function can call [**WdfDmaTransactionDmaCompletedWithLength**](https://msdn.microsoft.com/library/windows/hardware/ff547052) with the *TransferredLength* parameter set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

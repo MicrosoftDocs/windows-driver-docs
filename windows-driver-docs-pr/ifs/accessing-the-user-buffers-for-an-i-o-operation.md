@@ -1,6 +1,5 @@
 ---
 title: Accessing the User Buffers for an I/O Operation
-author: windows-driver-content
 description: Accessing the User Buffers for an I/O Operation
 ms.assetid: 0f4334bf-eec9-4667-af02-537e3357d872
 keywords:
@@ -38,9 +37,9 @@ The following topics provide guidelines for handling buffer addresses and MDLs f
 
 [Accessing User Buffers in a Postoperation Callback Routine](accessing-user-buffers-in-a-postoperation-callback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

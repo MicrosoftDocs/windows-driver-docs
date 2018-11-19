@@ -34,7 +34,7 @@ For a thorough description of device states, see the following topics:
 
 **Note**  NDIS processes power management IRPs, but NDIS drivers do not.
 
- 
+ 
 
 The device power states for network adapters are defined as follows:
 
@@ -112,9 +112,9 @@ Before a network adapter can transition to a sleeping state, its miniport driver
 
 The only transitions allowed between device power states are from the highest-powered state (D0) to a sleeping state (D1, D2, D3), or from a sleeping state to the highest-powered state. NDIS never commands a network adapter to transition directly from one sleeping state to another.
 
- 
+ 
 
- 
+ 
 
 
 

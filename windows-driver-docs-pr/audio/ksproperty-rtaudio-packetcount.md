@@ -44,13 +44,13 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>ULONG</strong>](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong" data-raw-source="[&lt;strong&gt;ULONG&lt;/strong&gt;](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong)"><strong>ULONG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 
@@ -96,9 +96,9 @@ Requirements
 
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
 
- 
+ 
 
- 
+ 
 
 
 

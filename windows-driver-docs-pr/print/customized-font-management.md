@@ -1,6 +1,5 @@
 ---
 title: Customized Font Management
-author: windows-driver-content
 description: Customized Font Management
 ms.assetid: 6e643703-ace1-4660-990c-3a9ca735829d
 keywords:
@@ -141,13 +140,13 @@ All .uff files must be stored in the %SystemRoot%\\System32\\Spool\\Drivers\\Uni
 </tbody>
 </table>
 
- 
+ 
 
 After you add a font cartridge to a printer, the system administrator must run the font installer, which is responsible to copy font descriptions from the .uff file specified by "ExtFontCartFile" into the .uff file specified by "ExternalFontFile". Likewise, the font installer must remove font descriptions from the .uff file specified by "ExtFontCartFile" when a cartridge is removed.
 
- 
+ 
 
- 
+ 
 
 
 

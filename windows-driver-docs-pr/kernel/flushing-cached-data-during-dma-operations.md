@@ -1,6 +1,5 @@
 ---
 title: Flushing Cached Data during DMA Operations
-author: windows-driver-content
 description: Flushing Cached Data during DMA Operations
 ms.assetid: 1b984b47-82cc-46b9-acad-73c5ed63e246
 keywords: ["DMA transfers WDK kernel , data integrity", "KeFlushIoBuffers", "FlushAdapterBuffers", "flushing cached data"]
@@ -18,7 +17,7 @@ In some platforms, the processor and system DMA controller (or bus-master DMA ad
 
 **Note**  The guidelines in this topic apply only to drivers that use versions 1 and 2 of the DMA operations interface. Drivers that use version 3 of this interface must follow a different set of guidelines. For more information, see [Version 3 of the DMA Operations Interface](version-3-of-the-dma-operations-interface.md).
 
- 
+ 
 
 **To maintain data integrity during DMA operations, lowest-level drivers must follow these guidelines**
 
@@ -46,9 +45,9 @@ The driver of a bus-master DMA device also should call **FlushAdapterBuffers** a
 
 **FlushAdapterBuffers** returns a Boolean, value that indicates whether the requested flush operation was successful. A driver can use this value to determine how to set the I/O status block when completing an IRP for a DMA read or write operation.
 
- 
+ 
 
- 
+ 
 
 
 

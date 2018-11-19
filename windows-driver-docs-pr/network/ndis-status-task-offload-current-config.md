@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG status indication to notify NDIS and overlying drivers that there has been a change in the task offload configuration of a NIC.
 ms.assetid: 8a098dff-409e-4168-a3aa-372851aa999d
 ms.date: 07/18/2017
@@ -26,7 +25,7 @@ The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.m
 
 **Note**  The contents of the [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure reflect only the NIC's current task offload configuration, not its actual hardware capabilities.
 
- 
+ 
 
 For more information about the current task offload configuration, see [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805).
 
@@ -69,9 +68,9 @@ Requirements
 
 [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569807)
 
- 
+ 
 
- 
+ 
 
 
 

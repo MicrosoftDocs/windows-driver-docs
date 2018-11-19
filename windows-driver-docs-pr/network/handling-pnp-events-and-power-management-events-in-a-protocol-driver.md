@@ -17,10 +17,6 @@ ms.localizationpriority: medium
 
 # Handling PnP Events and Power Management Events in a Protocol Driver
 
-
-
-
-
 When the operating system issues a Plug and Play (PnP) I/O request packet (IRP) or a power management IRP to a target device object that represents a network interface card (NIC), NDIS intercepts the IRP. NDIS indicates the event to each bound protocol driver and each bound intermediate driver by calling the driver's [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263) function. In the call to *ProtocolNetPnPEvent*, NDIS passes a pointer to a [**NET\_PNP\_EVENT\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff568752) that contains a NET\_PNP\_EVENT structure. The NET\_PNP\_EVENT structure describes the PnP event or power management event being indicated. For more information about the protocol driver PnP interface, see [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md).
 
 The following list contains PnP and power management events, as indicated by the **NetEvent** code in the NET\_PNP\_EVENT structure:
@@ -35,9 +31,7 @@ The following list contains PnP and power management events, as indicated by the
 
     If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) to **NULL**.
 
-    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263).
-
-     
+    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263).
 
     For more information about set-power events, see [Handling PnP Events and Power Management Events in an Intermediate Driver](handling-pnp-events-and-power-management-events-in-an-intermediate-dri.md).
 
@@ -45,9 +39,7 @@ The following list contains PnP and power management events, as indicated by the
 
     Indicates a Query Power request, which queries whether the underlying miniport adapter can make a transition to a particular power state. A protocol driver should always succeed a **NetEventQueryPower** . After establishing an active connection, a protocol driver can call [**PoRegisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559731) to register a continuous busy state. As long as the state registration is in effect, the power manager does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver cancels the state registration by calling [**PoUnregisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559794). A protocol driver should never try to prevent the system from transitioning to the sleeping state by failing a **NetEventQueryRemoveDevice**. Note that a **NetEventQueryPower** is always followed by a **NetEventSetPower**. A **NetEventSetPower** that sets the device's current power state in effect cancels the **NetEventQueryPower**.
 
-    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263).
-
-     
+    **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263).
 
 -   **NetEventQueryRemoveDevice**
 
@@ -102,12 +94,3 @@ The following list contains PnP and power management events, as indicated by the
 The **Buffer** member of the NET\_PNP\_EVENT structure points to a buffer that contains information specific to the event being indicated.
 
 A protocol driver can complete the call to *ProtocolNetPnPEvent* asynchronously with [**NdisCompleteNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561705).
-
- 
-
- 
-
-
-
-
-

@@ -2,7 +2,6 @@
 title: Example 7 Clearing All Flags for an Image File
 description: Example 7 Clearing All Flags for an Image File
 ms.assetid: 832c79de-07ca-4212-b3b3-ace396986ebb
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -27,9 +26,9 @@ In response, GFlags displays a message indicating that there are no flags set fo
 No Registry Settings for notepad.exe executable 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

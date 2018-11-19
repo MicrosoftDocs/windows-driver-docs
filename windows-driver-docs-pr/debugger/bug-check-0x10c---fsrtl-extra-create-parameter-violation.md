@@ -3,7 +3,6 @@ title: Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION
 description: The FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION bug check has a value of 0x0000010C that indicates that a violation was detected in the FsRtl ECP package.
 ms.assetid: b702b182-696a-4233-8bd0-23a52ab2ddc4
 keywords: ["Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION", "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION bug check has a value of 0x0000010C. This indicates that a violation was detected in the File system Run-time library (FsRtl) Extra Create Parameter (ECP) package.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION Parameters
 
@@ -55,7 +54,7 @@ The FSRTL\_EXTRA\_CREATE\_PARAMETER\_VIOLATION bug check has a value of 0x000001
 </tbody>
 </table>
 
- 
+ 
 
 The value of Parameter 1 indicates the type of violation.
 
@@ -118,11 +117,11 @@ The value of Parameter 1 indicates the type of violation.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,7 +15,7 @@ Before the overlying driver or user application issues this OID method request, 
 
 **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*, and is referenced by the NDIS\_DEFAULT\_SWITCH\_ID identifier.
 
- 
+ 
 
 After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure. This structure contains the parameters for the specified switch.
 
@@ -25,9 +25,9 @@ NDIS handles the [OID\_NIC\_SWITCH\_PARAMETERS](https://msdn.microsoft.com/libra
 
 -   OID requests of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451815) and [OID\_NIC\_SWITCH\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451823).
 
- 
+ 
 
- 
+ 
 
 
 

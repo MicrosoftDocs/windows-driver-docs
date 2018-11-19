@@ -3,7 +3,6 @@ title: winrterr
 description: The winrterr sets the debugger reporting mode for Windows Runtime errors.
 ms.assetid: 72E3EF7A-6055-405F-9E24-C9B81C07B8A7
 keywords: ["winrterr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ The following table describes the possible values for *Mode*.
 </tbody>
 </table>
 
- 
+ 
 
 If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the debugger has broken in as a result of a Windows Runtime error, the error and related text are also displayed.
 
@@ -70,9 +69,9 @@ If *Mode* is omitted, **!winrterr** displays the current reporting mode. If the 
 
 [**!hstring2**](-hstring2.md)
 
- 
+ 
 
- 
+ 
 
 
 

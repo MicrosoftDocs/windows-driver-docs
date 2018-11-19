@@ -43,7 +43,7 @@ The MOUNTDEV_MOUNTED_DEVICE_GUID [device interface class](https://msdn.microsoft
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +73,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

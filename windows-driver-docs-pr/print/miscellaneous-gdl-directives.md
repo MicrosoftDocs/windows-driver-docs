@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous GDL Directives
-author: windows-driver-content
 description: Miscellaneous GDL Directives
 ms.assetid: 8a1c4bdf-7a84-44b5-8dad-4518edc2b560
 keywords:
@@ -21,9 +20,9 @@ GDL provides two miscellaneous directives:
 
 -   \*% (asterisk plus the percent sign) causes the parser to ignore the remainder of the line. You can use this directive for adding a comment.
 
- 
+ 
 
- 
+ 
 
 
 

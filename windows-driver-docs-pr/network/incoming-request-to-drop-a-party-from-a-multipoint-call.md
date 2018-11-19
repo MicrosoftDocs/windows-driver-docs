@@ -34,9 +34,9 @@ The next figure shows an incoming request through an MCM driver to drop a party 
 
 *ProtocolClIncomingDropParty* should carry out any protocol-determined operations for dropping the party from the client's multipoint VC. If the party that is being dropped is not the last party on the VC, *ProtocolClIncomingDropParty* must call **NdisClDropParty**(see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)). If the party being dropped is the last party on the VC, *ProtocolClIncomingDropParty* must call **NdisClCloseCall**(see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md)).
 
- 
+ 
 
- 
+ 
 
 
 

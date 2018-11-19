@@ -1,6 +1,5 @@
 ---
 title: Behavior and guidance
-author: windows-driver-content
 description: The states of the two indicators available (mode and docking) play an important role in determining the user experience around touch keyboard and screen auto-rotation.
 ms.assetid: C5A0B339-3159-4AFF-B322-D041E49D875A
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ When you determine the modes that are to be reported for the indicators, conside
 | Slate          | Undocked       | Yes                          | Yes                   |
 | Slate          | Docked         | Yes                          | No                    |
 
- 
+ 
 
 When the system is in slate mode:
 
@@ -50,11 +49,11 @@ To match this behavior, the mode and dock indicators must be implemented accordi
 | Dock      | Docked   | Report Dock if the system is stationary (attached to a docking system or a port replicator). Stand-alone AC power supply does not apply as long as the system can be freely moved.                                                                                                                                                        |
 | Dock      | Undocked | Report undocked if the system is not stationary. This applies to the case of having the device connected to general power supply because it can still be freely moved. A power supply is not mandatory for reporting undocked. This is the natural state of any system when it is not connected to a port replicator or docking solution. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

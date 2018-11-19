@@ -48,13 +48,13 @@ Miniport drivers should specify the error code in the first element of the last 
 </tbody>
 </table>
 
- 
+ 
 
 Miniport drivers can put other values in the remainder of the elements of variable-sized array.
 
- 
+ 
 
- 
+ 
 
 
 

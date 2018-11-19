@@ -3,7 +3,6 @@ title: Bug Check 0x187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD
 description: The VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD bug check has a value of 0x00000187. This indicates that video fell back to BDD rather than using the IHV driver. This always generates a live dump.
 ms.assetid: CF4AB5DB-2779-4E6E-BF27-AE320403A982
 keywords: ["Bug Check 0x187 VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD", "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD bug check has a value of 0x00000187. This indicates that video fell back to BDD rather than using the IHV driver. This always generates a live dump.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD Parameters
 
@@ -56,11 +55,11 @@ The VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD bug check has a value of 0x00000187. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

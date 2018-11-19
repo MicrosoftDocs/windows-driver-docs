@@ -1,6 +1,5 @@
 ---
 title: Autodetecting the Printer's Hard Drive for GPD
-author: windows-driver-content
 description: Autodetecting the Printer's Hard Drive for GPD
 ms.assetid: c3bc415e-fa4d-42d0-9686-3105a588a7ea
 keywords:
@@ -23,7 +22,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
 *Feature: Collate
 {
   *rcNameID: 392 
- 
+
   *DefaultOption: OFF
   *Option: ON
   {
@@ -39,7 +38,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
            *%   printer collate disabled
            *% Print Processor will take care
            *%   of collated copies
- 
+
            *Cmd: ""
          }
       }
@@ -51,7 +50,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
            *% Collate requested with disk => 
             *%   printer collate enabled
            *% Printer will take care of collated copies
- 
+
            *Cmd: "@PJL SET QTY=" %d{NumOfCopies}"<0A>"
         }
       }
@@ -67,7 +66,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
     }
   }
 }
- 
+
 *% Feature to explicitly constrain the Collate feature
 *Feature: PrinterHardDisk
 {
@@ -85,7 +84,6 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
     *rcNameID: 443
   }
 }
- 
 ```
 
 To automatically detect whether a hard disk is installed, and enable or disable collating accordingly, simply add the following code example to the GDL file.
@@ -113,12 +111,11 @@ To automatically detect whether a hard disk is installed, and enable or disable 
     *BidiValue: BOOL(TRUE)
   }
 }
- 
 ```
 
- 
 
- 
+
+
 
 
 

@@ -72,9 +72,9 @@ To learn about miniport drivers that offload TCP/IP to hardware, read:
 
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

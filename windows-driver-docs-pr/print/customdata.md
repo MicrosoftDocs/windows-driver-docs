@@ -1,6 +1,5 @@
 ---
 title: customData element
-author: windows-driver-content
 description: The optional customData element specifies a custom data source for this asynchronous notification XML schema.
 ms.assetid: 5e14a627-72c0-440d-b616-6963c3d69d2b
 keywords: ["customData element Print Devices"]
@@ -115,7 +114,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>

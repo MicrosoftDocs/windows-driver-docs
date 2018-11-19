@@ -23,9 +23,9 @@ Some of the ways to fix the use of **PulseEvent**:
 
 -   If all threads waiting on the event need to be released AND the event is an auto-reset event, call **SetEvent** instead of **PulseEvent** (your original call to **PulseEvent** was releasing only one thread anyway).
 
- 
+ 
 
- 
+ 
 
 
 

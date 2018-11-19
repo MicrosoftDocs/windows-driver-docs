@@ -25,7 +25,6 @@ The following code example generates this warning.
 {
     ...
 }  
-
 ```
 
 The following code example avoids this warning.
@@ -37,9 +36,9 @@ The following code example avoids this warning.
 }
 ```
 
- 
 
- 
+
+
 
 
 

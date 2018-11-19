@@ -16,9 +16,9 @@ The class driver issues this request to query the data format for the stream. Th
 
 For more information about data formats, see the [Stream Class Minidriver Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff568277).
 
- 
+ 
 
- 
+ 
 
 
 

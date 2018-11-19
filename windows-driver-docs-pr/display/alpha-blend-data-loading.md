@@ -25,9 +25,9 @@ When the [bDXVA\_Func variable](bdxva-func-variable.md) is equal to 2, the opera
 
 The [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) structure determines which of these methods is used.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: The Srcsrv.ini File
 description: The Srcsrv.ini File
 ms.assetid: 5a3f5990-e43a-4c50-a16f-cbaa9f706ece
 keywords: ["SrcSrv, Srcsrv.ini file", "Srcsrv.ini file", "SrcSrv, SRCSRV_INI_FILE environment variable", "SRCSRV_INI_FILE environment variable"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -13,13 +12,13 @@ ms.localizationpriority: medium
 
 The Srcsrv.ini file is the master list of all source control servers. Each entry has the following format:
 
-```
+```ini
 MYSERVER=ServerInfo
 ```
 
 When using Perforce, the *ServerInfo* consists of the full network path to the server, followed by a colon, followed by the port number it uses. For example:
 
-```
+```ini
 MYSERVER=machine.corp.company.com:1666
 ```
 
@@ -37,13 +36,13 @@ You can specify a different file for configuration by setting the SRCSRV\_INI\_F
 
 For example, if several people want to share a single configuration file, they could place it on a share accessible to all of their systems, and then set an environment variable like the following:
 
-```
+```console
 set SRCSRV_INI_FILE=\\ourserver\ourshare\bestfile.txt
 ```
 
- 
+ 
 
- 
+ 
 
 
 

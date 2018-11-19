@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Versioning
-author: windows-driver-content
 description: WIA Driver Versioning
 ms.assetid: 9ebd79ac-d742-4524-9573-5873f7a8ec37
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ In the Windows Driver Kit (WDK) for Windows Vista, the value of STI\_VERSION is 
 
 A Windows Vista driver that adheres to the new Windows Vista WIA model must return STI\_VERSION\_3 in the version field that is returned from **IStiUSD::GetCapabilities**.
 
- 
+ 
 
- 
+ 
 
 
 

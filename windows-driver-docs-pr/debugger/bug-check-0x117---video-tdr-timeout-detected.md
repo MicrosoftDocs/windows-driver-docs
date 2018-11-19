@@ -3,7 +3,6 @@ title: Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED
 description: The VIDEO_TDR_TIMEOUT_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 ms.assetid: 70e24a97-f695-4d35-b52f-69dfddecd9b5
 keywords: ["Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED", "VIDEO_TDR_TIMEOUT_DETECTED"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## VIDEO\_TDR\_TIMEOUT\_DETECTED Parameters
 
@@ -55,7 +54,7 @@ The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -84,7 +83,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
-```
+```dbgcmd
 3: kd> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -106,7 +105,7 @@ Arg4: 00000000, Optional internal context dependent data.
 
 Also displayed will be the faulting module name
 
-```
+```dbgcmd
 MODULE_NAME: atikmpag
 
 IMAGE_NAME:  atikmpag.sys
@@ -114,7 +113,7 @@ IMAGE_NAME:  atikmpag.sys
 
 You can use the lmv command to display information about the faulting driver, including the timestamp.
 
-```
+```dbgcmd
 3: kd> lmvm atikmpag
 Browse full module list
 start    end        module name
@@ -131,7 +130,7 @@ start    end        module name
 
 Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT.
 
-```
+```dbgcmd
 3: kd> dt dxgkrnl!_TDR_RECOVERY_CONTEXT fffffa8010041010
    +0x000 Signature        : ??
    +0x004 pState           : ???? 
@@ -155,13 +154,13 @@ Memory read error 10041b08
 
 Parameter 2 contains a pointer into the responsible device driver module (for example, the owner tag).
 
-```
+```dbgcmd
 BUGCHECK_P2: ffffffff9a02381e
 ```
 
 You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
-```
+```dbgcmd
 3: kd> k
  # ChildEBP RetAddr  
 00 81d9ace0 976e605e dxgkrnl!TdrUpdateDbgReport+0x93 [d:\blue_gdr\windows\core\dxkernel\dxgkrnl\core\dxgtdr.cxx @ 944]
@@ -209,9 +208,9 @@ Remarks
 
 For information on requirements that hardware devices must meet when they implement TDR, refer to the WHCK documentation on *Device.Graphics…TDRResiliency*.
 
- 
+ 
 
- 
+ 
 
 
 

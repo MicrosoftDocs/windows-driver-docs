@@ -1,6 +1,5 @@
 ---
 title: Processing Tape Device Control Requests
-author: windows-driver-content
 description: Processing Tape Device Control Requests
 ms.assetid: de6edfc6-9b4b-4866-8fdb-1047b43163de
 keywords:
@@ -148,7 +147,7 @@ All tape miniclass drivers must report status using the values listed in the [**
 </tbody>
 </table>
 
- 
+ 
 
 Whenever the class driver must call a miniclass routine more than once to complete a request, the miniclass driver uses the return status to indicate whether the request is complete or whether the routine should be called again. The tape class driver maintains a zero-based count of the number of times that it has called the miniclass routine for a given request and passes that count to the routine as the *CallNumber* parameter.
 
@@ -172,9 +171,9 @@ A miniclass routine returns one of the following status values to indicate that 
 
 When the miniclass routine finishes processing a request--either successfully or with an error after retries are exhausted--it returns to the tape class driver with a TAPE\_STATUS\_*XXX* that indicates the success or failure of the request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,9 +37,9 @@ With Device Manager, you can view and manage the devices on a system. For exampl
 
 For more information, see [Using Device Manager](using-device-manager.md). Also, see the Help documentation in Device Manager.
 
- 
+ 
 
- 
+ 
 
 
 

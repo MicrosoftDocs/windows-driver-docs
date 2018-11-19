@@ -32,9 +32,9 @@ An offload target can request the termination of all TCP connections that have b
 
 This functionality might be used by an 802.3ad-capable intermediate driver when failing over from one network interface card (NIC) to another NIC.
 
- 
+ 
 
- 
+ 
 
 
 

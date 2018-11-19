@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_POWER_STATE
-author: windows-driver-content
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
 ms.assetid: f1453ace-5e36-464e-96f0-e578890cdf3f
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_POWER\_STATE sets the power state of the device.
 |---------|--------------------------|---------------------------------|
 | Adapter | Yes                      | 10                              |
 
- 
+ 
 
 A NIC comes up in D0 (device fully powered) when the system boots or when the NIC is plugged in to the system. When the condition is right (on AOAC platforms, this is when NIC Active reference is 0 on the NIC), the operating system prepares and puts the NIC in D0. When users are not present, the host goes to low power state to save power. The host may set the NIC into a lower power state where the NIC can keep connections autonomously for the host. The NIC wakes up the host for external events that the host expresses interest in.
 
@@ -77,7 +76,7 @@ For an AOAC system that supports hibernation, the following is a summary of impo
 </tbody>
 </table>
 
- 
+ 
 
 For an AOAC system where hibernation is not required or supported, here is the summary of driver power states.
 
@@ -118,7 +117,7 @@ For an AOAC system where hibernation is not required or supported, here is the s
 </tbody>
 </table>
 
- 
+ 
 
 Set power commands cannot fail. The firmware should never fail such commands. The Microsoft component ensures that there are no outstanding tasks or commands when it sends any set power command. While the set power command is outstanding, the Microsoft component also guarantees that no other commands or tasks are sent to the IHV component.
 
@@ -129,7 +128,7 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 | D3: power off (SDBus NICs), armed for wake (PCIe NICs) | For SDBus NICs, this state is powered off. For PCIe bus NICs, the operating system may arm NICs for wakes (D3Hot) or may turn off the power (D3Cold). Note that from the driver stack perspective, there is only D3 state. Multiple components are involved to enable the D3Hot state, including the ACPI table and the processing of NDIS system power IRPs that come from the operating system depending on end-user actions or inactions, such as hibernation, Connection Standby, and hybrid shutdown. |
 | Dx for non-default ports                               | Dx is either D2 or D3. When the NIC is put into Dx all non-default ports are reset, which means all non-default ports are disconnected in Dx.                                                                                                                                                                                                                                                                                                                                                              |
 
- 
+ 
 
 ## Set property parameters
 
@@ -151,19 +150,19 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>WDI_TLV_POWER_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898040)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn898040" data-raw-source="[&lt;strong&gt;WDI_TLV_POWER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898040)"><strong>WDI_TLV_POWER_STATE</strong></a></p></td>
 <td></td>
 <td></td>
 <td><p>The power state. This applies to the primary port.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926303)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn926303" data-raw-source="[&lt;strong&gt;WDI_TLV_ENABLE_WAKE_EVENTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926303)"><strong>WDI_TLV_ENABLE_WAKE_EVENTS</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>This field may only appear when the NIC is being put into low power and is armed to wake on any of the specified events (such as D2 on SD IO).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>WDI_TLV_SET_POWER_DX_REASON</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898060)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn898060" data-raw-source="[&lt;strong&gt;WDI_TLV_SET_POWER_DX_REASON&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898060)"><strong>WDI_TLV_SET_POWER_DX_REASON</strong></a></p></td>
 <td></td>
 <td>X</td>
 <td><p>The set power reason.</p></td>
@@ -171,7 +170,7 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 </tbody>
 </table>
 
- 
+ 
 
 ## Set property results
 
@@ -180,7 +179,7 @@ Set power commands cannot fail. The firmware should never fail such commands. Th
 |-------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED**](https://msdn.microsoft.com/library/windows/hardware/dn926120) |                                | X        | If the value is true, it signals to the OS that the firmware needs assistance in resuming its context. This should only occur when the driver is suspended to storage. The IHV component must reset the software state because the operating system issues a series of Wi-Fi commands to bring the firmware context and IHV component context up to date. |
 
- 
+ 
 
 ## Enable wake events
 
@@ -195,7 +194,7 @@ Each and every wake by the Wi-Fi NIC should be followed by a wake reason for why
 
 **Note**  If the NIC receives the D0 command for some other reason (for example, the NIC does not wake the host), the NIC should not indicate a wake reason.
 
- 
+ 
 
 ## No enabled wake events
 
@@ -272,9 +271,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

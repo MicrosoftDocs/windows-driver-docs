@@ -1723,3 +1723,5 @@
           href: mm-bad-pointer.md
         - name: "Windows kernel opaque structures"
           href: eprocess.md
+      - name: "Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD"
+        href: working-with-guid-device-reset-interface-standard.md

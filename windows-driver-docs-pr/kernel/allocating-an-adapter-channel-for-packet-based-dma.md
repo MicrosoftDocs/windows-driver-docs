@@ -1,6 +1,5 @@
 ---
 title: Allocating an Adapter Channel for Packet-Based DMA
-author: windows-driver-content
 description: Allocating an Adapter Channel for Packet-Based DMA
 ms.assetid: c95e4b2d-ce19-453a-bcc5-4bb37fc5d9ed
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel"]
@@ -58,9 +57,9 @@ When a driver has satisfied the current IRP's request, it must call [**FreeAdapt
 
 The driver of a subordinate device with scatter/gather capabilities should also return **KeepObject** from its *AdapterControl* routine. The device must be capable of waiting while the system DMA controller is reprogrammed between DMA operations when the driver must split up a given DMA request. On some Windows platforms, such devices can transfer at most a page of data per DMA operation because the HAL can assign only a single map register to the driver of that device.
 
- 
+ 
 
- 
+ 
 
 
 

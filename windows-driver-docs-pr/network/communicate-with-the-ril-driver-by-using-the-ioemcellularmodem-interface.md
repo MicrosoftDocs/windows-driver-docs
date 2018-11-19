@@ -1,6 +1,5 @@
 ---
 title: Communicate with the RIL driver by using the IOemCellularModem interface
-author: windows-driver-content
 description: This topic provides information on how to communicate with the RIL driver by using the IOemCellularModem interface.
 ms.assetid: 612a7f98-053f-4447-bb0e-c6f34969df5d
 keywords:
@@ -36,7 +35,7 @@ This code shows retrieving the [IOemCellular](https://msdn.microsoft.com/library
                                 nullptr, _countof(query), query);
     ...
 ```
-This code shows registering a pointer to [IOemCellularModemExistenceChange](https://msdn.microsoft.com/library/windows/hardware/dn946688) by using [IOemCellular::RegisterForOemModemExistenceChanges]()https://msdn.microsoft.com/library/windows/hardware/dn931023). In the code below, this is a pointer to **CModems** which provides the IOemCellularModemExistenceChange interface.
+This code shows registering a pointer to [IOemCellularModemExistenceChange](https://msdn.microsoft.com/library/windows/hardware/dn946688) by using [IOemCellular::RegisterForOemModemExistenceChanges]()<https://msdn.microsoft.com/library/windows/hardware/dn931023>). In the code below, this is a pointer to **CModems** which provides the IOemCellularModemExistenceChange interface.
 
 ```c++
     HRESULT hr;

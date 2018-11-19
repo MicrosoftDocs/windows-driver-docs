@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_PARALLEL [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**GUID_PARALLEL_DEVICE**](guid-parallel-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

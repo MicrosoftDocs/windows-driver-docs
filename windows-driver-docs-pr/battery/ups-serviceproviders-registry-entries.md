@@ -65,7 +65,7 @@ Each model-specific entry consists of a value name and a value. The value name s
     </tbody>
     </table>
 
-     
+     
 
 -   The second part of the string is optional. It represents the path and name of the UPS minidriver. If this path and name is supplied, it must be preceded by a semicolon (;). If only the name is supplied, a default path of %SystemRoot%\\system32 is used.
 
@@ -80,9 +80,9 @@ UPS\ServiceProviders
         Smart-UPS "0x1;apcups.dll"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

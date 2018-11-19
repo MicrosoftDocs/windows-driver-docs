@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Requirements
-author: windows-driver-content
 description: XPSDrv Driver Requirements
 ms.assetid: 382b53eb-a69a-452a-8403-876640a9129e
 keywords:
@@ -20,9 +19,9 @@ For in-box and the [Windows Hardware Certification Kit (HCK)](https://go.microso
 
 For the complete list of configuration module requirements, see [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
 
- 
+ 
 
- 
+ 
 
 
 

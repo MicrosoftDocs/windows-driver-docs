@@ -1,6 +1,5 @@
 ---
 title: COM Interface Design Skills
-author: windows-driver-content
 description: COM Interface Design Skills
 ms.assetid: 3a3adbc2-af6f-4495-8993-fd25d56ffad6
 keywords:
@@ -26,9 +25,9 @@ When you create a new action interface, you should design your object model with
 
 5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204).
 
- 
+ 
 
- 
+ 
 
 
 

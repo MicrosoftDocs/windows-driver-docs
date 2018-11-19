@@ -3,7 +3,6 @@ title: GFlags
 description: GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 ms.assetid: e268af2e-90a9-411e-8e29-ab486d2aac48
 keywords: GFlags, Global Flags Editor, gflags.exe
-ms.author: domars
 ms.date: 06/12/2018
 ms.localizationpriority: medium
 ---
@@ -20,13 +19,13 @@ GFlags is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-dow
 
 After the debugging tools are installed, gflags.exe for use on 64 bit Windows is installed by default to the following directory.
 
-```
+```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
 If you are running a 32 bit version of Windows, use the 32 bit version of gflags.exe located here.
 
-```
+```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
 ```
 
@@ -74,20 +73,20 @@ This topic includes:
 
 **Note**   Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
 
- 
+ 
 
 **Important**  Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows, including Windows Vista. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed and commands to enable or disable pool tagging fail.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

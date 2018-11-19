@@ -47,13 +47,13 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter node</p></td>
-<td><p>[<strong>KSP_NODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566720)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566720" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566720)"><strong>KSP_NODE</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,7 +87,7 @@ Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID 
 </tbody>
 </table>
 
- 
+ 
 
 The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](https://msdn.microsoft.com/library/windows/hardware/ff568134):
 

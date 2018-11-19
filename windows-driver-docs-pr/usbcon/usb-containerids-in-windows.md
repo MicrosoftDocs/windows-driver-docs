@@ -1,7 +1,6 @@
 ---
 Description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
 title: USB ContainerIDs in Windows
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -40,7 +39,7 @@ A **ContainerID** descriptor consists of a header section.
 | 4      | **bcdVersion** | 2    | BCD            | The version number of the **ContainerID** descriptor, in binary coded decimal (BCD), where each nibble corresponds to a digit. The most-significant byte (MSB) contains the two digits before the decimal point, and the least-significant byte (LSB) contains the two digits after the decimal point. For example, version 1.00 is represented as 0x0100. This field must always be set to 0x0100. |
 | 6      | **wIndex**     | 2    | Word           | This field is always set to 6 for USB **ContainerID** descriptors.                                                                                                                                                                                                                                                                                                                                  |
 
- 
+ 
 
 A **ContainerID** descriptor consists of a ContainerID section.
 
@@ -48,7 +47,7 @@ A **ContainerID** descriptor consists of a ContainerID section.
 |--------|------------------|------|----------------|-----------------------|
 | 0      | **bContainerID** | 16   | Unsigned DWord | **ContainerID** data. |
 
- 
+ 
 
 Device manufacturers are responsible for ensuring that each instance of a device has a universally unique 16-byte value for the **ContainerID**. Also, a device must report the same **ContainerID** value each time it is powered on.
 There are several established algorithms for generating UUIDs with almost zero chance of duplication. Device manufacturers can select the UUID generation algorithm that best suits their needs. It does not matter which UUID generation algorithm is used as long as the result is unique.
@@ -136,7 +135,7 @@ The current definition of the Microsoft OS string descriptor includes a 1-byte p
 </tbody>
 </table>
 
- 
+ 
 
 Currently shipping USB devices that support the Microsoft OS descriptor but do not support the **ContainerID** descriptor have the **bPad** field set to 0x00. The USB hub driver does not query such devices for the USB **ContainerID** descriptor.
 ## Container View of a USB Multifunction Device
@@ -164,7 +163,7 @@ Recommendations for Implementing a USB **ContainerID** The following are recomme
 -   Make sure to set the Removable Device Capability correctly for your device.
     **Note**  Device vendors that add a USB **ContainerID** descriptor to a previously shipping USB device must increment the device release number (**bcdDevice**) in the device’s device descriptor. This is required because the USB hub driver caches the Microsoft OS string descriptor (or the lack of one) based on a device’s vendor ID, product ID, and device release number. If you do not increment the device release number, the hub driver does not query for the USB **ContainerID** of a new device if it previously enumerated an instance of the device with the same vendor ID, product ID, and device release number that did not support the USB **ContainerID** descriptor.
 
-     
+     
 
 ## Related topics
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  

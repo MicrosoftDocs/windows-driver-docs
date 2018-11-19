@@ -1,6 +1,5 @@
 ---
 title: NDIS QoS Status Indications
-author: windows-driver-content
 description: NDIS QoS Status Indications
 ms.assetid: 5D1B6264-35C9-4887-A2D1-C8AED017CAFC
 ms.date: 07/18/2017
@@ -16,9 +15,9 @@ This section includes the reference topics of NDIS quality of service (QoS) stat
 
 [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](ndis-status-qos-remote-parameters-change.md)
 
- 
+ 
 
- 
+ 
 
 
 

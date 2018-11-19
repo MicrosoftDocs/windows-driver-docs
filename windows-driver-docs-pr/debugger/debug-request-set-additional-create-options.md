@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_SET_ADDITIONAL_CREATE_OPTIONS
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -47,9 +46,9 @@ The **CreateFlags** field of the [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://m
 
 [**CreateProcessAndAttach**](https://msdn.microsoft.com/library/windows/hardware/ff540048)
 
- 
+ 
 
- 
+ 
 
 
 

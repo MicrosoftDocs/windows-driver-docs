@@ -28,9 +28,9 @@ Whenever DirectDraw requests the driver to create a surface, the driver must det
 
 -   Check the width and height members (**dwWidth** and **dwHeight**) of the [**DDSURFACEDESC2**](https://msdn.microsoft.com/library/windows/hardware/ff550340) structure. DirectDraw sets these members to multiples of 4 pixels.
 
- 
+ 
 
- 
+ 
 
 
 

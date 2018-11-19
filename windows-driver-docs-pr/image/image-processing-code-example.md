@@ -1,6 +1,5 @@
 ---
 title: Image Processing Code Example
-author: windows-driver-content
 description: Image Processing Code Example
 ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
 ms.date: 04/20/2017
@@ -17,7 +16,7 @@ The following code example shows how to implement a simple image processing filt
 
 **Note**   Portions of code are omitted from the following example for brevity.
 
- 
+ 
 
 ```cpp
 ///
@@ -471,9 +470,9 @@ CMyFilterStream::Flush(VOID)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

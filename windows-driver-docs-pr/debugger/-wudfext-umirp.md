@@ -3,7 +3,6 @@ title: wudfext.umirp
 description: The wudfext.umirp extension displays information about a host user-mode I/O request packet (UM IRP).
 ms.assetid: b31b864d-0c94-48b8-9ffd-f14639b9a551
 keywords: ["wudfext.umirp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the UM IRP to display information about.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -96,9 +95,9 @@ UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
         Offset:               0x0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ warning C28139: The argument should exactly match the type
 </tbody>
 </table>
 
- 
+ 
 
 An enumerated value in a function call does not match the type specified for the parameter in the function declaration. This error can occur when parameters are mis-coded, missing, or out of order. Because C permits enumerated values to be used interchangeably, and to be used interchangeably with integer constants, it is not unusual to pass the wrong enumerated value to a function without recognizing the error.
 
@@ -47,9 +47,9 @@ The following code example avoids this warning.
 ....KeWaitForSingleObject(&MyMutex, UserRequest, UserMode, false, NULL);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Debug Resolve Unqualified Symbols
 description: Debug Resolve Unqualified Symbols
 ms.assetid: 8b935640-a01d-46e8-a9e4-08f20e293196
 keywords: ["Debug Resolve Unqualified Symbols"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -21,9 +20,9 @@ Although we always recommend that you use module qualifiers, you can clear the *
 
 For more information about symbols, loading symbols, and verifying symbols, see [Symbols](symbols.md).
 
- 
+ 
 
- 
+ 
 
 
 

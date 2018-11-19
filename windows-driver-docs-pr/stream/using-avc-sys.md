@@ -1,6 +1,5 @@
 ---
 title: Using Avc.sys
-author: windows-driver-content
 description: Using Avc.sys
 ms.assetid: 3b4ec139-ff01-40bd-8e29-92f554180585
 keywords:
@@ -59,9 +58,9 @@ The choice of which IRB a subunit driver must use depends on the desired functio
 
 The primary AV/C function used by subunit drivers is [**AVC\_FUNCTION\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/ff554150), which uses the AVC\_COMMAND\_IRB structure. **AVC\_FUNCTION\_COMMAND** sends AV/C requests and receives the corresponding AV/C responses. Details for building AV/C commands are handled by *Avc.sys*, but the subunit driver must provide the AV/C opcode and operands of each command.
 
- 
+ 
 
- 
+ 
 
 
 

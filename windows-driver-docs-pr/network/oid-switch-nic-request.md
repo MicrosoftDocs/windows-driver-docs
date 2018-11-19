@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_REQUEST
-author: windows-driver-content
 description: An object identifier (OID) method request of OID_SWITCH_NIC_REQUEST is used to encapsulate and forward OID requests to the Hyper-V extensible switch external network adapter.
 ms.assetid: 7EF4D950-D18E-400A-B1DD-39768A16E4C4
 ms.date: 08/08/2017
@@ -31,9 +30,9 @@ When OID requests arrive at the Hyper-V extensible switch interface, it encapsul
 
     -   If the OID request was originated from a Hyper-V child partition, the **SourcePortId** and **SourceNicIndex** members are set to the corresponding values for the port and network adapter that are used by the partition. Otherwise, the **SourcePortId** and **SourceNicIndex** members are set to zero.
 
-        **Note**  The extension must retain the values of these members if it forwards or redirects the OID request.
+        **Note**  The extension must retain the values of these members if it forwards or redirects the OID request.
 
-         
+
 
     -   The **OidRequest** member is set to a pointer to the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for the encapsulated OID request.
 
@@ -47,9 +46,7 @@ When OID requests arrive at the Hyper-V extensible switch interface, it encapsul
 
     When these OID requests arrive at the extensible switch interface, the protocol edge of the extensible switch encapsulates the OID request within an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214) structure. The protocol edge also sets the **SourcePortId** and **SourceNicIndex** members to the corresponding values for the port and network adapter from which the OID request originated. The protocol edge then issues the OID\_SWITCH\_NIC\_REQUEST request to forward the encapsulated OID request down the extensible switch control path for inspection by underlying extensions.
 
-    **Note**  In this case, the protocol edge sets the **DestinationPortId** and **DestinationNicIndex** members to zero. This specifies that the encapsulated OID request is to be delivered to extensions in the control path.
-
-     
+    **Note**  In this case, the protocol edge sets the **DestinationPortId** and **DestinationNicIndex** members to zero. This specifies that the encapsulated OID request is to be delivered to extensions in the control path.
 
     Underlying forwarding extensions can inspect these encapsulated OID requests and retain the multicast address information that they specify. For example, the extension may need this information if it originates multicast packets that it forwards to an extensible switch port.
 
@@ -59,9 +56,7 @@ A forwarding extension can also issue an OID\_SWITCH\_NIC\_REQUEST in order to f
 
 1.  The extension calls [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment a reference counter for the index of the destination physical network adapter. This guarantees that the extensible switch interface will not delete the physical network adapter connection while its reference counter is nonzero.
 
-    **Note**  The extensible switch interface could disconnect the physical network adapter connection while its reference counter is nonzero. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
-
-     
+    **Note**  The extensible switch interface could disconnect the physical network adapter connection while its reference counter is nonzero. For more information, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
 2.  The extension encapsulates the OID request by initializing an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214) structure in the following way:
 
@@ -104,7 +99,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+
 
 Requirements
 ------------
@@ -133,11 +128,3 @@ Requirements
 [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
 
 [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh598214)
-
- 
-
- 
-
-
-
-

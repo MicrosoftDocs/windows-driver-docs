@@ -1,6 +1,5 @@
 ---
 title: StartIo Routines in Lowest-Level Drivers
-author: windows-driver-content
 description: StartIo Routines in Lowest-Level Drivers
 ms.assetid: f79f8929-bcf4-46a2-bf0e-0f8fb0720dd9
 keywords: ["StartIo routines, lowest-level drivers", "I/O control requests WDK kernel", "buffered I/O WDK kernel", "direct I/O WDK kernel", "synchronization WDK IRPs"]
@@ -22,7 +21,7 @@ Before the *StartIo* routine in a highest-level device driver is called, that dr
 
 **Note**   Any buffer memory to be accessed by a driver's *StartIo* routine must be locked down or allocated from resident, system-space memory and must be accessible in an arbitrary thread context.
 
- 
+ 
 
 In general, any lower-level device driver's *StartIo* routine is responsible for calling [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the input IRP and then doing whatever request-specific processing is necessary to start the I/O operation on its device. Request-specific processing can include the following:
 
@@ -116,9 +115,9 @@ Before calling **KeSynchronizeExecution**, the *StartIo* routine must do any pre
 
 If a device driver uses DMA, its *StartIo* routine usually calls [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) with a driver-supplied [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine. In these circumstances, the *StartIo* routine postpones the responsibility for programming the physical device to the *AdapterControl* routine. It, in turn, can call **KeSynchronizeExecution** to have a driver-supplied *SynchCritSection* routine program the device for a DMA transfer.
 
- 
+ 
 
- 
+ 
 
 
 

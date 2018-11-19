@@ -65,7 +65,7 @@ In some drivers, ISRs waste time by calling a stream's [**Notify**](https://msdn
 
 However, a driver with this type of ISR needs to make sure that any pending events on a stream are triggered when the stream exits the RUN state. Otherwise, the events might be delayed or lost. This issue arises only during RUN-to-PAUSE transitions in operating systems older than Microsoft Windows XP. In Windows XP and later, the port driver automatically signals any outstanding position events immediately when a stream changes state from RUN to PAUSE. In the older operating systems, however, the miniport driver is responsible for triggering any outstanding events by making a final call to [**Notify**](https://msdn.microsoft.com/library/windows/hardware/ff536918) immediately after the stream is paused. For more information, see PAUSE/ACQUIRE Optimizations below.
 
-A typical WavePci miniport driver manages a single playback stream from the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). The current implementation of KMixer uses a minimum of three mapping IRPs to buffer a playback stream. Each IRP contains enough buffer storage for about 10 milliseconds of audio. If the miniport driver triggers a hardware interrupt each time the DMA controller finishes with the final mapping in an IRP, interrupts should occur at fairly regular 10-millisecond intervals, which is frequent enough to keep the DMA queue from starving. For more information, see [KMixer Latency](kmixer-latency.md).
+A typical WavePci miniport driver manages a single playback stream from the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). The current implementation of KMixer uses a minimum of three mapping IRPs to buffer a playback stream. Each IRP contains enough buffer storage for about 10 milliseconds of audio. If the miniport driver triggers a hardware interrupt each time the DMA controller finishes with the final mapping in an IRP, interrupts should occur at fairly regular 10-millisecond intervals, which is frequent enough to keep the DMA queue from starving. 
 
 ### <span id="Timer_DPCs"></span><span id="timer_dpcs"></span><span id="TIMER_DPCS"></span>Timer DPCs
 
@@ -119,9 +119,9 @@ For some audio devices, wave streams with different attributes (3-D, stereo/mono
 
 The process is reversed when a heavyweight stream is closed. The available pin count might increase by more than one in order to reflect the fact that two or more lightweight streams can be created from the newly freed resources.
 
- 
+ 
 
- 
+ 
 
 
 

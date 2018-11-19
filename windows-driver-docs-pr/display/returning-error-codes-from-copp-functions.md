@@ -45,9 +45,9 @@ The Remarks section for each COPP function specifies the DDERR\_ error codes tha
 
 When propagating error information from the COPP DDI in the video miniport driver to the display driver, you should not use the return value from the [**EngDeviceIoControl**](https://msdn.microsoft.com/library/windows/hardware/ff564838) function, because the Windows kernel manipulates the error value that is returned from the IOCTL to **EngDeviceIoControl**. Instead, error information should be passed through the *lpInBuffer* parameter of **EngDeviceIoControl**. For more information, see [Calling the COPP DDI from the Display Driver](calling-the-copp-ddi-from-the-display-driver.md) and the example code in [COPP Video Miniport Driver Template](copp-video-miniport-driver-template.md) and [Performing COPP Operations](performing-copp-operations-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

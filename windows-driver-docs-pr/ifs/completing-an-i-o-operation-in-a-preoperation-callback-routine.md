@@ -1,6 +1,5 @@
 ---
 title: Completing an I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Completing an I/O Operation in a Preoperation Callback Routine
 ms.assetid: 1f339779-dc88-4673-87d5-36cee0b27fc2
 keywords:
@@ -50,9 +49,9 @@ Completing an I/O operation is often referred to as succeeding or failing the op
 
 NTSTATUS values are defined in ntstatus.h. These values fall into four categories: success, informational, warning, and error. For more information about these values, see [Using NTSTATUS Values](https://msdn.microsoft.com/library/windows/hardware/ff565436).
 
- 
+ 
 
- 
+ 
 
 
 

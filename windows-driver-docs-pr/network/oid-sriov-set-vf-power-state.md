@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_SET_VF_POWER_STATE
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) set request of OID_SRIOV_SET_VF_POWER_STATE to change the power state of a specified PCI Express (PCIe) Virtual Function (VF) on the network adapter.
 ms.assetid: 9723518E-2312-48F9-820A-19F5567A33DB
 ms.date: 08/08/2017
@@ -53,11 +52,11 @@ The PF miniport driver returns one of the following status codes for the OID set
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451683) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451683" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451683)"><strong>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. The PF miniport driver must set the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. The PF miniport driver must set the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -66,7 +65,7 @@ The PF miniport driver returns one of the following status codes for the OID set
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -98,9 +97,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md)
 
- 
+ 
 
- 
+ 
 
 
 

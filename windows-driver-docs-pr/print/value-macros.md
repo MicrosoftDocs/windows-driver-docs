@@ -1,6 +1,5 @@
 ---
 title: Value Macros
-author: windows-driver-content
 description: Value Macros
 ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords:
@@ -47,7 +46,7 @@ To define one or more value macros in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *ValueMacroGroupName* is a unique name, and *ValueMacroBody* is a set of unique value names and associated values, as follows:
 
@@ -87,9 +86,9 @@ For example, to reference one of the HP4L macros within a command specification,
 
 The only time you can assign a value by combining macro references with nonmacro values is when all macro definitions and other values represent text or command substrings, as illustrated in the example. In all other cases, the macro reference must represent the entire value to be assigned.
 
- 
+ 
 
- 
+ 
 
 
 

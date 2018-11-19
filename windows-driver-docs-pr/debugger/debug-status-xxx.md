@@ -2,7 +2,6 @@
 title: DEBUG\_STATUS\_XXX
 description: DEBUG\_STATUS\_XXX
 ms.assetid: 3f5fcdb6-b4fc-4155-bf39-929d00fb210c
-ms.author: domars
 ms.date: 12/07/2017
 keywords: ["DEBUG_STATUS_XXX Windows Debugging"]
 topic_type:
@@ -131,12 +130,12 @@ The values in the following table are reverse ordered by precedence; the values 
 </tbody>
 </table>
 
- 
+ 
 
 &gt; \[!Note\]
 &gt;   The precedence of the status codes does not follow the numeric values of the constants.
 
- 
+ 
 
 Requirements
 ------------
@@ -154,9 +153,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

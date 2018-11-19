@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_CAPABILITIES
-author: windows-driver-content
 description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
 ms.assetid: f2e3a867-d7d2-4d09-b84b-e8f8610b8535
 ms.date: 08/08/2017
@@ -109,7 +108,7 @@ If the underlying network adapter is not PM-aware, the intermediate driver shoul
 
 **Note**  For information about how NDIS 6.20 and later miniport drivers report power management capabilities, see [Reporting Power Management Capabilities](https://msdn.microsoft.com/library/windows/hardware/ff570672).
 
- 
+ 
 
 Requirements
 ------------
@@ -122,7 +121,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use [OID_PM_CURRENT_CAPABILITIES](oid-pm-current-capabilities.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use <a href="oid-pm-current-capabilities.md" data-raw-source="[OID_PM_CURRENT_CAPABILITIES](oid-pm-current-capabilities.md)">OID_PM_CURRENT_CAPABILITIES</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -148,9 +147,9 @@ Requirements
 
 [Reporting Power Management Capabilities](https://msdn.microsoft.com/library/windows/hardware/ff570672)
 
- 
+ 
 
- 
+ 
 
 
 

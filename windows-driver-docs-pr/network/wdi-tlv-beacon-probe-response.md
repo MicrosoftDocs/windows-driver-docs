@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BEACON_PROBE_RESPONSE
-author: windows-driver-content
 description: WDI_TLV_BEACON_PROBE_RESPONSE is a TLV that contains the latest beacon or probe response frame received by the port.
 ms.assetid: D1148F9B-D25F-4AF0-8C55-43453441C667
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the latest beacon or probe response frame received by the port. This does not include the 802.11 MAC header. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

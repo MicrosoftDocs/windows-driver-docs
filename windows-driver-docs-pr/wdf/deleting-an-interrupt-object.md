@@ -1,6 +1,5 @@
 ---
 title: Deleting an Interrupt Object
-author: windows-driver-content
 description: Deleting an Interrupt Object
 ms.assetid: B72DA452-B22F-47CD-8C5D-E741F09F556E
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ The framework uses the following rules:
 
 Optionally, the driver can call [**IWDFObject::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) to delete an interrupt object at any time. Because a driver cannot create a new interrupt object outside of [**OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) or [**OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/hh439734), manual deletion of the object should not be used unless the driver must remove the object before the framework deletes it.
 
- 
+ 
 
- 
+ 
 
 
 

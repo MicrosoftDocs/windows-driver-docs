@@ -1,6 +1,5 @@
 ---
 title: Installing Legacy COM Ports
-author: windows-driver-content
 description: Installing Legacy COM Ports
 ms.assetid: 9cf2a22c-fb4e-4f15-8410-021d2b4f2ce1
 keywords:
@@ -33,9 +32,9 @@ The **IoReportDetectedDevice** call marks the port as a root-enumerated device. 
 
 The Plug and Play manager creates the following [compatible IDs](https://msdn.microsoft.com/library/windows/hardware/ff539950) for a legacy COM port: DETECTEDInternal\\Serial and DETECTED\\Serial.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: CC Category
-author: windows-driver-content
 description: CC Category
 ms.assetid: 742955f3-85a2-4627-b1b1-0bd85cdb1e77
 keywords:
@@ -78,11 +77,11 @@ When specifying **PINNAME\_VIDEO\_CC** pins, use the information listed in the f
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

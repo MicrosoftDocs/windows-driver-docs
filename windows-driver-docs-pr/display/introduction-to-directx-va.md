@@ -44,9 +44,9 @@ The [Implementation of Current Standards](implementation-of-current-standards.md
 
 There are no tools supplied with DirectX VA. For more information about tools supplied for Windows media support, see the Windows Media Porting Kit.
 
- 
+ 
 
- 
+ 
 
 
 

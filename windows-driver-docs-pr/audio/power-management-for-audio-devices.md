@@ -31,9 +31,9 @@ This section discusses the following topics:
 
 [Audio Device Class Inactivity Timer Implementation](audio-device-class-inactivity-timer-implementation.md)
 
- 
+ 
 
- 
+ 
 
 
 

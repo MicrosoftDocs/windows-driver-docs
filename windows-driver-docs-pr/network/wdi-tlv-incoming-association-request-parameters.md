@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a TLV that contains association request parameters.
 ms.assetid: DC3439A2-2221-4489-AB38-3752624EA4B2
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The MAC address of the sender.                                                                                                |
 | UINT8                                             | A bit that indicates whether or not it is a reassociation request. A value of 1 indicates that it is a reassociation request. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

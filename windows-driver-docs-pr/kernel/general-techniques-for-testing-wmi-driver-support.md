@@ -1,6 +1,5 @@
 ---
 title: General Techniques for Testing WMI Driver Support
-author: windows-driver-content
 description: General Techniques for Testing WMI Driver Support
 ms.assetid: 4d1a9198-2cc7-491d-a803-80f846882a6e
 keywords: ["WMI WDK kernel , testing", "testing WMI support WDK kernel", "WMI WDM provider logs WDK", "errors WDK WMI", "provider logs WDK WMI", "events WDK WMI", "WMI WDK kernel , errors"]
@@ -53,9 +52,9 @@ WMI errors that occur while being handled by the WMI WDM provider (Wmiprov.dll) 
 
 In versions of Windows earlier than Windows Vista, you can change the logging settings for all WMI providers by using the Wmimgmt.msc application. (In Windows 98/Me, use Wbemcntl instead.) You can disable or reenable logging, change the directory where WMI log files are kept, as well as set the maximum size for such files. For more information, see [WMI Log Files](https://msdn.microsoft.com/library/aa394564).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 BOOLEAN _RxCheckMemoryBlock(
-   PVOID Buffer,
-   PSZ   FileName,
-   ULONG LineNumber
+   PVOID Buffer,
+   PSZ   FileName,
+   ULONG LineNumber
 );
 ```
 
@@ -86,9 +86,9 @@ Requirements
 
 [**\_RxFreePool**](-rxfreepool.md)
 
- 
+ 
 
- 
+ 
 
 
 

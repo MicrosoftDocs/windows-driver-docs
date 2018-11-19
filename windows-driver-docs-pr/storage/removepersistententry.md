@@ -25,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void RemovePersistentEntry(
-   [in, HBAType("HBA_WWN")] uint8                            PortWWN[8],
-   [in, HbaType("HBA_FCPBINDINGENTRY2")] HBAFCPBindingEntry2 Binding,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                   HBAStatus
+   [in, HBAType("HBA_WWN")] uint8                            PortWWN[8],
+   [in, HbaType("HBA_FCPBINDINGENTRY2")] HBAFCPBindingEntry2 Binding,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                   HBAStatus
 );
 ```
 
@@ -80,9 +80,9 @@ Requirements
 
 [**RemovePersistentEntry\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff563994)
 
- 
+ 
 
- 
+ 
 
 
 

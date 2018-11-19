@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_DISABLE_EVENTS
-author: windows-driver-content
 description: Any WMI driver that registers one or more event blocks must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 3187643b-27d7-4a6d-8fbe-4f8eb6c251ed
@@ -98,9 +97,9 @@ Requirements
 
 [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834)
 
- 
+ 
 
- 
+ 
 
 
 

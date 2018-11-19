@@ -3,7 +3,6 @@ title: memusage
 description: The memusage extension displays summary statistics about physical memory use.
 ms.assetid: 32796ada-53ee-465f-b284-db6ee5481878
 keywords: ["memusage Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ Displays only general summary information about memory use.
 |-------|------------------|
 | Modes | kernel mode only |
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -137,9 +136,9 @@ You can use the [**!vm**](-vm.md) extension command to analyze virtual memory us
 
 The [**!pfn**](-pfn.md) extension command can be used to display a particular page frame entry in the PFN database.
 
- 
+ 
 
- 
+ 
 
 
 

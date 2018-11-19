@@ -3,7 +3,6 @@ title: pool extension command
 description: The pool extension displays information about a specific pool allocation or about the entire system-wide pool.
 ms.assetid: 1c224e0c-d50c-487e-8238-9be054368ac2
 keywords: ["pool", "pooltag.txt file", "pool tag", "memory, pool tag", "pool Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -62,7 +61,7 @@ Causes the display to suppress pool header information for all pools, except the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,13 +74,13 @@ In Windows XP and later versions of Windows, the **!pool** extension displays th
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including pooltag.txt. If you modify or replace the sample pooltag.txt file, be sure to save a copy of it to a different directory. After reinstalling the debuggers, you can copy the saved pooltag.txt over the default version.
 
- 
+ 
 
 If the **!pool** extension reports pool corruption, you should use [**!poolval**](-poolval.md) to investigate.
 
 Here is an example. If *Address* specifies 0xE1001050, the headers of all pools in this block are displayed, and 0xE1001050 itself is marked with an asterisk (\*).
 
-```
+```dbgcmd
 kd> !pool e1001050 
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001040 size:   10 previous size:   40  (Free)       Mm  
@@ -97,7 +96,7 @@ In this example, the right-most column shows the pool tag. The column to the lef
 
 The following command shows the pool headers and pool contents:
 
-```
+```dbgcmd
 kd> !pool e1001050 1
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001008  ffffffff 0057005c 004e0049 004f0044
@@ -118,9 +117,9 @@ kd> !pool e1001050 1
 ......
 ```
 
- 
+ 
 
- 
+ 
 
 
 

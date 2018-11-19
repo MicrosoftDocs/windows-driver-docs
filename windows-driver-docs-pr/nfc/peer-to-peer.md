@@ -1,6 +1,5 @@
 ---
 title: Peer-to-peer
-author: windows-driver-content
 ms.assetid: 0234BA57-477E-408C-94C8-8DD8922FD386
 keywords:
 - NFC
@@ -31,9 +30,9 @@ The Driver MUST support the default SNEP server running over LLCP to exchange ND
 -   All NDEF messages received on the SNEP server MUST be translated into message types as defined in this document.
 -   All message types to be published MUST be translated into NDEF messages and sent to the remote device as defined above. Once the message is transmitted, the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853320) is completed as defined in this document.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

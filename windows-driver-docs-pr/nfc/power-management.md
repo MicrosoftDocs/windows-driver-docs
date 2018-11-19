@@ -1,6 +1,5 @@
 ---
 title: NFP power management
-author: windows-driver-content
 description: NFP power management
 ms.assetid: A47F4B01-A912-410A-8CF8-656D2C125148
 keywords:
@@ -20,9 +19,9 @@ NFP devices operate in one of three power modes. These modes are *active*, *idle
 
 The NFP driver will receive an [**IOCTL\_NFP\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/jj853316) or an [**IOCTL\_NFP\_DISABLE**](https://msdn.microsoft.com/library/windows/hardware/jj853315) control code to enable or disable subscriptions, publications, and presence events. These control codes will also trigger a power mode change for the device. The [Near-field proximity (NFP) power management for connected standby platforms](https://msdn.microsoft.com/library/windows/hardware/mt614845) topic provides detailed description of power mode changes for NFP devices.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

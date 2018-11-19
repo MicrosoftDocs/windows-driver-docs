@@ -23,9 +23,9 @@ The following topics describe how drivers support operations that query for info
 
 [Imposing Requirements on the D3dDrawPrimitives2 DDI](imposing-requirements-on-the-d3ddrawprimitives2-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Working with USB Pipes
-author: windows-driver-content
 description: Working with USB Pipes
 ms.assetid: d5422ff2-de1e-4a77-8b3c-0b2917b1d9ca
 keywords:
@@ -179,9 +178,9 @@ Formats an I/O request that contains a URB. The driver can call [**WdfRequestSen
 <a href="" id="---------wdfusbtargetpipewdmgetpipehandle--kmdf-only-"></a>[**WdfUsbTargetPipeWdmGetPipeHandle (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff551162)  
 Returns a device's USBD pipe handle. Some URBs require this handle.
 
- 
+ 
 
- 
+ 
 
 
 

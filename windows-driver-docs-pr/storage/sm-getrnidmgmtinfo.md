@@ -25,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void SM_GetRNIDMgmtInfo(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
-   [out] HBAFC3MgmtInfo                    MgmtInfo
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
+   [out] HBAFC3MgmtInfo                    MgmtInfo
 );
 ```
 
@@ -76,9 +76,9 @@ Requirements
 
 [**SM\_GetRNIDMgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566252)
 
- 
+ 
 
- 
+ 
 
 
 

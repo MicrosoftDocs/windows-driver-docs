@@ -26,9 +26,9 @@ To preinstall driver files, your [*device installation application*](https://msd
 
 When the user plugs in the device, the PnP manager recognizes the device, finds the INF file copied by [SetupCopyOEMInf](http://go.microsoft.com/fwlink/p/?linkid=194252), and installs the drivers copied in step (2). (For more information about copying INF files, see [Copying INFs](copying-inf-files.md).)
 
- 
+ 
 
- 
+ 
 
 
 

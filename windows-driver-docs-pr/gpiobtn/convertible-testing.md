@@ -1,6 +1,5 @@
 ---
 title: Convertible testing
-author: windows-driver-content
 description: This topic describes tests for convertibles.
 ms.assetid: 8974F615-B979-4EF0-9E24-3AEA375516E4
 ms.localizationpriority: medium
@@ -83,9 +82,9 @@ This topic describes tests for convertibles.
 
     *Validation*: The onscreen keyboard should deploy.
 
- 
+ 
 
- 
+ 
 
 
 

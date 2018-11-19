@@ -1,6 +1,5 @@
 ---
 title: UEFI requirements for Windows on SoC platforms
-author: windows-driver-content
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 ms.assetid: 7A0B901E-1252-4F8F-B1CB-BA1AB7B01112
 ms.date: 04/20/2017
@@ -61,7 +60,7 @@ For more details about specific requirements, see the sections after the table.
 |   Secure boot                             | 27.0                       | Explicit Windows requirement   |
 |   Boot manager requirements               | 3.1, 3.3                   | Explicit Windows requirement   |
 
- 
+ 
 
 ## EFI system table requirements
 
@@ -92,7 +91,7 @@ The EFI System Table must conform to the standard definition at the revision lev
 </tbody>
 </table>
 
- 
+ 
 
 ## EFI boot services requirements
 
@@ -142,13 +141,13 @@ The following table lists the EFI boot services requirements for Windows.
 <strong>Note</strong>  The Stall() implementation is required to have a deterministic (repeatable) error such that error correction or cancellation can be done reliably.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## EFI runtime services requirements
 
@@ -177,7 +176,7 @@ The following table lists the EFI runtime services requirements for Windows.
 <strong>Note</strong>  Time services will only be called during boot (before ExitBootServices()) for accessing platform time-of-day hardware.
 </div>
 <div>
- 
+ 
 </div></li>
 </ul></td>
 </tr>
@@ -194,14 +193,14 @@ The following table lists the EFI runtime services requirements for Windows.
 <strong>Note</strong>  The ResetSystem() implementation must support both reset and shutdown options.
 </div>
 <div>
- 
+ 
 </div></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Protocol requirements
 
@@ -262,7 +261,7 @@ The following table describes the UEFI protocols that are required by Windows to
 </tbody>
 </table>
 
- 
+ 
 
 ## Security requirements
 
@@ -299,7 +298,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <strong>Note</strong>  Because PK<em><sub>priv</sub></em> (the private-key counterpart to PK<em><sub>pub</sub></em>) controls Secure Boot policy on all devices provisioned with PK<em><sub>pub</sub></em>, its protection and use must be closely guarded.
 </div>
 <div>
- 
+ 
 </div></li>
 <li><p>Requirement 7: MANDATORY. The initial signature databases shall be stored in firmware flash and may be updated only with an OEM-signed firmware update or through UEFI authenticated variable write.</p></li>
 <li><p>Requirement 8: MANDATORY. Images in the boot path that fails signature verification must not be executed, and the reason for the failure shall be added to the EFI_IMAGE_EXECUTION_TABLE. Further, the recommended approach in these situations is that the UEFI boot manager initiates recovery according to an OEM-specific strategy.</p></li>
@@ -323,7 +322,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td><p>The following requirements do not imply a need for a TCG TPM implementation; they do however imply a need for equivalent functionality for the affected areas.</p>
 <p>The platform support may be provided by a firmware implementation of a TPM executing in the secure execution environment, layering on top of the cryptographic acceleration engine and leveraging the isolated storage. Microsoft may be able to provide reference software for such a TPM implementation for use by the vendor. This is subject to further discussions.</p>
 <ul>
-<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the [UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536).</p></li>
+<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 <li><p>Requirement 23: MANDATORY. The platform shall adhere to the TCG EFI Platform Specification with the following additions:</p>
 <ul>
 <li><p>On platforms supporting the interface defined in TrEE EFI Protocol, the digest of PK<em><sub>pub</sub></em> shall be extended to TPM PCR[03] as an EV_EFI_VARIABLE_CONFIG event.</p></li>
@@ -331,14 +330,14 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>It shall be possible for a UEFI client to read and parse the list of certificates using the EFI_IMAGE_SECURITY_DATABASE variable and validate the digest against the extended value.</p></li>
 <li><p>TCG_PCR_EVENT digest values shall be SHA-256, not SHA-1.</p></li>
 </ul></li>
-<li><p>Requirement 24: MANDATORY. The platform must implement the MemoryOverwriteRequestControl defined in the [TCG Platform Reset Attack Mitigation Specification](http://go.microsoft.com/fwlink/p/?LinkId=528539).</p></li>
+<li><p>Requirement 24: MANDATORY. The platform must implement the MemoryOverwriteRequestControl defined in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=528539" data-raw-source="[TCG Platform Reset Attack Mitigation Specification](http://go.microsoft.com/fwlink/p/?LinkId=528539)">TCG Platform Reset Attack Mitigation Specification</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Cryptography</td>
 <td><ul>
 <li><p>Requirement 25: MANDATORY. The platform shall provide the EFI_HASH_PROTOCOL (UEFI v2.3.1 Section 27.4) for offload of cryptographic hash operations. SHA-256 must be supported.</p></li>
-<li><p>Requirement 26: MANDATORY. The platform shall support the Microsoft-defined [EFI_RNG_PROTOCOL](uefi-entropy-gathering-protocol.md) for pre-OS read of entropy.</p></li>
+<li><p>Requirement 26: MANDATORY. The platform shall support the Microsoft-defined <a href="uefi-entropy-gathering-protocol.md" data-raw-source="[EFI_RNG_PROTOCOL](uefi-entropy-gathering-protocol.md)">EFI_RNG_PROTOCOL</a> for pre-OS read of entropy.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -356,16 +355,16 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td>Other security requirements</td>
 <td><p>The following additional requirements are required by Windows on SoC platforms.</p>
 <ul>
-<li><p>Microsoft has defined protocol for gathering entropy from a UEFI platform. While not a UEFI requirement, this protocol is required by Windows on SoC platforms. For more information about this protocol, see [UEFI entropy gathering protocol](uefi-entropy-gathering-protocol.md).</p></li>
+<li><p>Microsoft has defined protocol for gathering entropy from a UEFI platform. While not a UEFI requirement, this protocol is required by Windows on SoC platforms. For more information about this protocol, see <a href="uefi-entropy-gathering-protocol.md" data-raw-source="[UEFI entropy gathering protocol](uefi-entropy-gathering-protocol.md)">UEFI entropy gathering protocol</a>.</p></li>
 <li><p>UEFI Signature Database Updates. A new mechanism for updating Authenticated Variables has been adopted in section 27 of UEFI 2.3.1. This mechanism is required by Windows.</p></li>
 <li><p>Trusted Execution Environment. Microsoft has developed an EFI protocol for interacting with a Trusted Execution Environment (TrEE), similar in functionality to a subset of a Trusted Computing Group (TCG) Trusted Platform Module (TPM). The EFI protocol leverages to a large degree, “TCG EFI Protocol,” Version 1.2 Revision 1.00, June 9, 2006, by the Trusted Computing Group.</p>
-<p>For details, refer to [UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536).</p></li>
+<p>For details, refer to <a href="http://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Firmware boot manager requirements
 
@@ -421,7 +420,7 @@ The firmware is responsible for putting the system hardware into a well-defined 
 </tbody>
 </table>
 
- 
+ 
 
 ## Installation requirements
 

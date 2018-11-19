@@ -21,9 +21,9 @@ Underlying connectionless miniport drivers call the **NdisMIndicateReceiveNetBuf
 
 For more information about receiving data in an intermediate driver with a connectionless lower edge, see [Protocol Driver Send and Receive Operations](protocol-driver-send-and-receive-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

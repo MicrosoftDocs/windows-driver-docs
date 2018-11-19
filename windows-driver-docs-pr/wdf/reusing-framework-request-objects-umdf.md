@@ -1,6 +1,5 @@
 ---
 title: Reusing Framework Request Objects in UMDF
-author: windows-driver-content
 description: Reusing Framework Request Objects in UMDF
 ms.assetid: 804efc94-a7df-4ebd-a42e-82d1c5376e19
 keywords:
@@ -25,9 +24,9 @@ If a driver has created a request object by calling [**IWDFDevice::CreateRequest
 
 If your driver provides an [**IRequestCallbackRequestCompletion::OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905) callback function for a request object that it reuses, the driver must call [**IWDFIoRequest::SetCompletionCallback**](https://msdn.microsoft.com/library/windows/hardware/ff559153) after it calls [**Reuse**](https://msdn.microsoft.com/library/windows/hardware/ff559048).
 
- 
+ 
 
- 
+ 
 
 
 

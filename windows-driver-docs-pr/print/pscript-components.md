@@ -1,6 +1,5 @@
 ---
 title: Pscript Components
-author: windows-driver-content
 description: Pscript Components
 ms.assetid: 9f3bd004-e62c-42b6-99da-045c12e088a3
 keywords:
@@ -52,9 +51,9 @@ Optional, printer-specific, [user interface plug-in](user-interface-plug-ins.md)
 <a href="" id="rendering-plug-in"></a>**Rendering Plug-In**  
 Optional, printer-specific, [rendering plug-in](rendering-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

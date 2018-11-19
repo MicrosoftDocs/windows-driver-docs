@@ -1,6 +1,5 @@
 ---
 title: Writing Postoperation Callback Routines
-author: windows-driver-content
 description: Writing Postoperation Callback Routines
 ms.assetid: 4940e38d-107b-45c4-aa71-6e8543330f39
 keywords:
@@ -68,9 +67,9 @@ This section includes:
 
 [Failing an I/O Operation in a Postoperation Callback Routine](failing-an-i-o-operation-in-a-postoperation-callback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 title: Headers and libraries required by a USB client driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -42,7 +41,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>usb.h</td>
 <td>Include\shared</td>
 <td></td>
-<td>Defines [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
+<td>Defines <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>usb100.h</td>
@@ -128,19 +127,19 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>Include\um</td>
 <td><p>winapifamily.h</p>
 <p>winusbio.h</p></td>
-<td>Defines [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
+<td>Defines <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB functions</a> exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
 </tr>
 <tr class="even">
 <td>winusbio.h</td>
 <td>Include\shared</td>
 <td><p>winapifamily.h</p>
 <p>usb.h</p></td>
-<td>Defines flags for [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb).</td>
+<td>Defines flags for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB functions</a>.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Libraries
 
@@ -161,39 +160,39 @@ To find the header and library for a specific device driver interface (DDI), con
 <tbody>
 <tr class="odd">
 <td>usbd.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for getting information from the USB driver stack and formatting URBs for requests.</td>
 </tr>
 <tr class="even">
 <td>usbrpm.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides functions for an application to perform operations for replacing a Microsoft-provided driver with a third-party RPM driver.</td>
 </tr>
 <tr class="odd">
 <td>usbdex.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for client drivers to send requests to the underlying USB driver stack. The library gets loaded and statically linked to the client driver module when it is built. A client driver that calls these routines can run on Windows Vista and later versions of Windows.</td>
 </tr>
 <tr class="even">
 <td>winusb.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win8\um\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\um\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\um\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win8\um&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\um&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\um&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides functions for a user-mode client driver or an application to communicate with a USB device that has Winusb.sys loaded as its function driver.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Header Changes in Windows 8
 

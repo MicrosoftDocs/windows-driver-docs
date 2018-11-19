@@ -78,7 +78,7 @@ An *add-power-setting-section* takes one of the following two possible forms:
 
 **Note**  Except for a *value-data* entry, all the following entries that supply a string value can specify the string in one of the ways that are described in [Specifying an AddPowerSetting String Entry Value](#specifying-an-addpowersetting-string-entry-value).
 
- 
+ 
 
 <a href="" id="subgroup"></a>**SubGroup**  
 A subgroup groups power settings that are logically related.
@@ -90,7 +90,7 @@ For example, GUID_VIDEO_SUBGROUP represents the subgroup that contains the video
 To define a new subgroup, include the **SubGroup** directive and supply the following required entries: *subgroup-guid*, *subgroup-name*, *subgroup-description*, and *subgroup-icon.* The GUID of the new subgroup must be unique and the other entries should be as descriptive as possible.
 
 <a href="" id="subgroup-guid"></a>*subgroup-guid*  
-The required entry supplies the GUID that identifies the subgroup. The format of this entry is **{***XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX***}**, where "X" is a hexadecimal digit.
+The required entry supplies the GUID that identifies the subgroup. The format of this entry is **{**<em>XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX</em>**}**, where "X" is a hexadecimal digit.
 
 For example, the value of the system-defined constant GUID_VIDEO_SUBGROUP is {7516B95F-F776-4464-8C53-06167F40CC99}. This GUID represents the subgroup that contains the video power settings for a power scheme personality.
 
@@ -111,7 +111,7 @@ The **Setting** directive identifies the setting to which all the other entries 
 The following are the entries that are associated with a **Setting** directive.
 
 <a href="" id="setting-guid"></a>*setting-guid*  
-A required entry that specifies the GUID that represents the power setting. The format of this entry is **{***XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX***}**, where each "X" is a hexadecimal digit.
+A required entry that specifies the GUID that represents the power setting. The format of this entry is **{**<em>XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX</em>**}**, where each "X" is a hexadecimal digit.
 
 For example, the following is a custom GUID value: {BFC0D9E9-549C-483D-AD2A-3D90C98A8B03}.
 
@@ -149,7 +149,7 @@ A required entry that specifies the data type of the corresponding value-data en
 | 0x00010001 | [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)  |
 | 0x00000000 | [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)     |
 
- 
+ 
 
 <a href="" id="value-data"></a>*value-data*  
 A required entry that supplies the data for the corresponding setting value, the format of which depends on the data type that is specified by corresponding *value-flags* entry, as follows:
@@ -163,7 +163,7 @@ A required entry that supplies the data for the corresponding setting value, the
 
 **Note**  You should not use string values because they cannot be localized. Instead, use values of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) or [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
- 
+ 
 
 <a href="" id="valuerange"></a>**ValueRange**  
 Use the **ValueRange** directive if the allowed power settings values can best be defined as an incremented sequence of non-negative integer values within a specified range. The power manager validates that a setting that a user selects in **Power Options** in Control Panel is one of these allowed values. The set of allowed values is determined by a minimum allowed value, a maximum allowed value, and an increment between the allowed values within the range. A value is allowed if it satisfies the following:
@@ -206,7 +206,7 @@ One of the following GUIDs, which identifies the power scheme that the default v
 | High performance | {8C5E7FDA-E8BF-4A96-9A85-A6E23A8C635C} |
 | Balanced         | {381B4222-F694-41F0-9685-FF5BB260DF2E} |
 
- 
+ 
 
 These GUIDs are defined in *Wdm.h*.
 
@@ -329,9 +329,9 @@ DC = 1
 
 [***DDInstall*.Services**](inf-ddinstall-services-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

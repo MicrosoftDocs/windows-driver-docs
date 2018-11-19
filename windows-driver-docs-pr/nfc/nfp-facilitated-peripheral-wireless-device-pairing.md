@@ -1,6 +1,5 @@
 ---
 title: NFP-facilitated peripheral wireless device pairing
-author: windows-driver-content
 description: NFP-facilitated peripheral wireless device pairing
 ms.assetid: 7B57019F-C80A-4E74-BBC2-A26BEDEB20DD
 keywords:
@@ -22,9 +21,9 @@ In order to accomplish this kind of pairing, the device needs to make its transp
 
 The NFP provider must understand and handle Bluetooth pairing type messages. These are identified by the type component of the *messageType* parameter. An example might be “Pairing:Bluetooth”, which would correspond to a device that supports static Bluetooth OOB pairing. When the NFP provider receives one of these pairing messages, it must translate the message into just the standard OOB pairing data, removing any technology-specific protocol information (like NDEF headers).
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

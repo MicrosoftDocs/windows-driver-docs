@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_ADVERTISEMENT_ID
-author: windows-driver-content
 description: WDI_TLV_P2P_ADVERTISEMENT_ID is a TLV that contains an ID that uniquely identifies a service instance.
 ms.assetid: 04F8200C-54A3-4B2F-9EDF-15E2BBB19201
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------------------------------|
 | UINT32 | An ID that uniquely identifies a service instance. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

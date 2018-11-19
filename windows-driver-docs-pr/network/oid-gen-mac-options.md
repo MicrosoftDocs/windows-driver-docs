@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MAC_OPTIONS
-author: windows-driver-content
 description: As a query, the OID_GEN_MAC_OPTIONS OID specifies a bitmask that defines optional properties of the underlying driver or a NIC.
 ms.assetid: 2a093bcb-ae6f-491c-a596-03e6f47b0b86
 ms.date: 08/08/2017
@@ -59,7 +58,7 @@ The miniport driver supports full-duplex transmits and indications on SMP platfo
 
 **Note**  This flag has been deprecated for use by NDIS 5.0 and later miniport drivers. NDIS 5.0 and later ignores this flag.
 
- 
+ 
 
 <a href="" id="ndis-mac-option-eotx-indication"></a>NDIS\_MAC\_OPTION\_EOTX\_INDICATION  
 This flag is obsolete.
@@ -69,7 +68,7 @@ The NIC and its driver support 802.1p packet priority. For more information, see
 
 **Note**  NDIS 6.0 and later and later and later miniport drivers must set the NDIS\_MAC\_OPTION\_8021P\_PRIORITY flag.
 
- 
+ 
 
 <a href="" id="ndis-mac-option-supports-mac-address-overwrite"></a>NDIS\_MAC\_OPTION\_SUPPORTS\_MAC\_ADDRESS\_OVERWRITE  
 NDIS sets this flag when a miniport driver calls the [**NdisReadNetworkAddress**](https://msdn.microsoft.com/library/windows/hardware/ff564512) function.
@@ -89,7 +88,7 @@ Reserved for NDIS internal use.
 
 **Note**  A miniport driver that sets the NDIS\_MAC\_OPTION\_8021Q\_VLAN flag must also set the NDIS\_MAC\_OPTION\_8021P\_PRIORITY flag. In other words, a miniport driver that supports 802.1Q must also support 802.1p.
 
- 
+ 
 
 Requirements
 ------------
@@ -116,9 +115,9 @@ Requirements
 
 [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376)
 
- 
+ 
 
- 
+ 
 
 
 

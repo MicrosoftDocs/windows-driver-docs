@@ -1,6 +1,5 @@
 ---
 title: Disallow a Fast I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Disallow a Fast I/O Operation in a Preoperation Callback Routine
 ms.assetid: 20797d8c-ffcf-46df-b870-839d5c02d2d4
 keywords:
@@ -37,9 +36,9 @@ FLT\_PREOP\_DISALLOW\_FASTIO can only be returned for fast I/O operations. To de
 
 Minifilter drivers cannot return FLT\_PREOP\_DISALLOW\_FASTIO for IRP\_MJ\_SHUTDOWN, IRP\_MJ\_VOLUME\_MOUNT, or IRP\_MJ\_VOLUME\_DISMOUNT operations.
 
- 
+ 
 
- 
+ 
 
 
 

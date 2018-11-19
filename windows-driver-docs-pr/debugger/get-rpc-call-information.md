@@ -3,7 +3,6 @@ title: Get RPC Call Information
 description: Get RPC Call Information
 ms.assetid: bb883bb1-3ab8-4702-896d-4ff8076bad68
 keywords: ["RPC call information", "SCALL (server call)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ Four optional parameters are permitted. Three of these -- *CallID*, *IfStart*, a
 
 If no parameters are supplied, all known SCALLs in the system will be displayed. The following is an example of this long display:
 
-```
+```console
 D:\wmsg>dbgrpc -c
 Searching for call info ...
 ## PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -75,9 +74,9 @@ For details on the optional parameters, see [**DbgRpc Command-Line Options**](db
 
 For a similar example using the RPC debugger extensions, see [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md).
 
- 
+ 
 
- 
+ 
 
 
 

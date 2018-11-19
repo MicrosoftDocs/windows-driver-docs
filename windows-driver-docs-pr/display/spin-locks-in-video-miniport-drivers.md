@@ -24,9 +24,9 @@ When the thread that is holding the spin lock has completed its task, the minipo
 
 When the miniport driver has no further use for the spin lock, it should destroy the spin lock by a call to [**VideoPortDeleteSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff570293).
 
- 
+ 
 
- 
+ 
 
 
 

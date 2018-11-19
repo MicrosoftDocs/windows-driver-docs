@@ -1,6 +1,5 @@
 ---
 title: AV/C Subunit Plug Connection and Format Management
-author: windows-driver-content
 description: AV/C Subunit Plug Connection and Format Management
 ms.assetid: c80641d5-3108-4dbc-91b9-7ed295434b97
 keywords:
@@ -36,9 +35,9 @@ The AV/C peer subunit driver stack provides functions for IEEE 1394 and AV/C sub
 
 The mediums and formats together help to determine whether a KS pin connection represents data to and from the computer over the IEEE 1394 serial bus or internal to a device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SDDL for Device Objects
-author: windows-driver-content
 description: SDDL for Device Objects
 ms.assetid: c0e4432a-4429-4ecd-a2e5-f93a9e3caf48
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "Security Descriptor Definition Language WDK device objects", "SDDL WDK device objects", "IoCreateDeviceSecure", "security descriptors WDK device objects"]
@@ -22,7 +21,7 @@ SDDL strings for device objects are of the form "D:P" followed by one or more ex
 
 **Note**  When using SDDL for device objects, your driver must link against Wdmsec.lib.
 
- 
+ 
 
 <a href="" id="access"></a>*Access*  
 Specifies an [**ACCESS\_MASK**](access-mask.md) value that determines the allowed access. This value can be written either as a hexadecimal value in the form "0x*hex*", or as a sequence of two-letter symbolic codes that represent access rights.
@@ -60,7 +59,7 @@ The following codes can be used to specify generic access rights.
 </tbody>
 </table>
 
- 
+ 
 
 The following codes can be used to specify specific access rights.
 
@@ -95,7 +94,7 @@ The following codes can be used to specify specific access rights.
 </tbody>
 </table>
 
- 
+ 
 
 Note that GENERIC\_ALL grants all the rights listed in the above two tables, including the ability to change the ACL.
 
@@ -134,7 +133,7 @@ The following SIDs represent *accounts* on the machine.
 </tbody>
 </table>
 
- 
+ 
 
 The following SIDs represent *groups* on the machine.
 
@@ -168,7 +167,7 @@ The following SIDs represent *groups* on the machine.
 </tbody>
 </table>
 
- 
+ 
 
 The following SIDs describe the extent to which a user has been authenticated.
 
@@ -197,7 +196,7 @@ The following SIDs describe the extent to which a user has been authenticated.
 </tbody>
 </table>
 
- 
+ 
 
 The following SIDs describe how the user logged into the machine.
 
@@ -233,7 +232,7 @@ The following SIDs describe how the user logged into the machine.
 </tbody>
 </table>
 
- 
+ 
 
 The following SIDs deserve special mention.
 
@@ -252,7 +251,7 @@ The following SIDs deserve special mention.
 <tr class="odd">
 <td><p>RC</p></td>
 <td><p>Restricted Code</p>
-<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token's normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
+<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token&#39;s normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
 <p>Any ACL that specifies RC must also specify WD. When RC is paired with WD in an ACL, a superset of Everyone including untrusted code is described.</p>
 <p>Untrusted code might be code launched using the Run As option in Explorer. By default, World does not cover untrusted code.</p></td>
 </tr>
@@ -260,12 +259,12 @@ The following SIDs deserve special mention.
 <td><p>UD</p></td>
 <td><p>User-Mode Drivers</p>
 <p>This SID grants access to user-mode drivers. Currently, this SID covers only drivers that are written for the User-Mode Driver Framework (UMDF). This SID is available starting with Windows 8.</p>
-<p>In earlier versions of Windows, which do not recognize the &quot;UD&quot; abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see [Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567) in the User-Mode Driver Framework documentation.</p></td>
+<p>In earlier versions of Windows, which do not recognize the &quot;UD&quot; abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439567" data-raw-source="[Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### SDDL Examples For Device Objects
 
@@ -317,13 +316,13 @@ Everyone (the World SID) is given read access. In addition, untrusted code is al
 
 Also note that traversal access is not granted to normal users. As such, this might not be an appropriate descriptor for a device with a namespace.
 
- 
+ 
 
 Note that the above SDDL strings do not include any inheritance modifiers. As such, they are only appropriate for device objects and should not be used for files or registry keys. For more information about specifying inheritance using SDDL, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

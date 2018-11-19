@@ -1,6 +1,5 @@
 ---
 title: Using GDI Functions in Print Processors
-author: windows-driver-content
 description: Using GDI Functions in Print Processors
 ms.assetid: 2ad62308-ab42-4475-ac42-f753d5091251
 keywords:
@@ -32,57 +31,57 @@ A set of user-mode GDI functions is exported by Gdi32.dll, for use by print proc
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GdiDeleteSpoolFileHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549449)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549449" data-raw-source="[&lt;strong&gt;GdiDeleteSpoolFileHandle&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549449)"><strong>GdiDeleteSpoolFileHandle</strong></a></p></td>
 <td><p>Releases a spool file handle.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiEndDocEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549463)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549463" data-raw-source="[&lt;strong&gt;GdiEndDocEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549463)"><strong>GdiEndDocEMF</strong></a></p></td>
 <td><p>Completes EMF playback operations for a print job document.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>GdiEndPageEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549468)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549468" data-raw-source="[&lt;strong&gt;GdiEndPageEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549468)"><strong>GdiEndPageEMF</strong></a></p></td>
 <td><p>Completes EMF playback operations for a physical page, and ejects the page from the printer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiGetDC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549470)</p></td>
-<td><p>Returns a handle to the printer's device context.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549470" data-raw-source="[&lt;strong&gt;GdiGetDC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549470)"><strong>GdiGetDC</strong></a></p></td>
+<td><p>Returns a handle to the printer&#39;s device context.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>GdiGetDevmodeForPage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549478)</p></td>
-<td><p>Returns a document page's [<strong>DEVMODEW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549478" data-raw-source="[&lt;strong&gt;GdiGetDevmodeForPage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549478)"><strong>GdiGetDevmodeForPage</strong></a></p></td>
+<td><p>Returns a document page&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiGetPageCount</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549492)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549492" data-raw-source="[&lt;strong&gt;GdiGetPageCount&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549492)"><strong>GdiGetPageCount</strong></a></p></td>
 <td><p>Returns the number of document pages.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>GdiGetPageHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549505)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549505" data-raw-source="[&lt;strong&gt;GdiGetPageHandle&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549505)"><strong>GdiGetPageHandle</strong></a></p></td>
 <td><p>Returns a handle to a document page.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiGetSpoolFileHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549517)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549517" data-raw-source="[&lt;strong&gt;GdiGetSpoolFileHandle&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549517)"><strong>GdiGetSpoolFileHandle</strong></a></p></td>
 <td><p>Returns a spool file handle, required as input to the other GDI functions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>GdiPlayPageEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549524)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549524" data-raw-source="[&lt;strong&gt;GdiPlayPageEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549524)"><strong>GdiPlayPageEMF</strong></a></p></td>
 <td><p>Plays the EMF records associated with a document page.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiResetDCEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549529)</p></td>
-<td><p>Resets a printer's device context.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549529" data-raw-source="[&lt;strong&gt;GdiResetDCEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549529)"><strong>GdiResetDCEMF</strong></a></p></td>
+<td><p>Resets a printer&#39;s device context.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>GdiStartDocEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549534)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549534" data-raw-source="[&lt;strong&gt;GdiStartDocEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549534)"><strong>GdiStartDocEMF</strong></a></p></td>
 <td><p>Performs initialization operations for the print job document.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GdiStartPageEMF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549543)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549543" data-raw-source="[&lt;strong&gt;GdiStartPageEMF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549543)"><strong>GdiStartPageEMF</strong></a></p></td>
 <td><p>Performs initialization operations for a physical page.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 An EMF print processor's [**PrintDocumentOnPrintProcessor**](https://msdn.microsoft.com/library/windows/hardware/ff560724) should call [**GdiGetSpoolFileHandle**](https://msdn.microsoft.com/library/windows/hardware/ff549517) to obtain a spool file handle and [**GdiGetDC**](https://msdn.microsoft.com/library/windows/hardware/ff549470) to obtain the printer's device context handle. Then it can perform the following steps:
 
@@ -98,9 +97,9 @@ If a print processor requires the total page count before it can begin printing 
 
 If a print processor uses these GDI functions, its [**EnumPrintProcessorDatatypes**](https://msdn.microsoft.com/library/windows/hardware/ff548757) function must return "NT EMF" as a supported data type, which represents generic Windows 2000 and later EMF format. The print processor must not modify EMF records.
 
- 
+ 
 
- 
+ 
 
 
 

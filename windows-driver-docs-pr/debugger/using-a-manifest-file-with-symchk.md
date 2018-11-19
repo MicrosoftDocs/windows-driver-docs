@@ -2,7 +2,6 @@
 title: Using a Manifest File with SymChk
 description: Using a Manifest File with SymChk
 ms.assetid: ee5d0c39-1838-4595-adf4-6cd1261a57c8
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ In some cases, you might need to retrieve symbols for files that are on an isola
 
 Suppose yourApp.exe is running on an isolated computer. The following command creates a manifest file that describes all the symbols needed to debug the yourApp.exe pocess.
 
-```
+```dbgcmd
 C:\>SymChk /om c:\Manifest\man.txt /ie yourApp.exe
 
 SYMCHK: FAILED files = 0
@@ -36,7 +35,7 @@ SYMCHK: PASSED + IGNORED files = 28
 
 Now assume you have moved the manifest file to a different computer that is on a network that has access to a symbol store. The following command retrieves the symbols described in the manifest file and places them in the mySymbols folder.
 
-```
+```dbgcmd
 C:\>SymChk /im c:\FolderOnOtherComputer\man.txt /s srv*c:\mysymbols*\\aServer\symbols
 
 SYMCHK: myApp.exe             ERROR - Unable to download file. Error reported was 2
@@ -47,9 +46,9 @@ SYMCHK: PASSED + IGNORED files = 28
 
 Now you can move the symbols to the isolated computer and use them for debugging.
 
- 
+ 
 
- 
+ 
 
 
 

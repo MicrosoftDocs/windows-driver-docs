@@ -1,6 +1,5 @@
 ---
 title: Deleting a Port
-author: windows-driver-content
 description: Deleting a Port
 ms.assetid: 0d491368-e529-4f04-a323-678e31a862c3
 keywords:
@@ -32,9 +31,9 @@ The port monitor UI DLL's **DeletePortUI** function should perform the following
 
 For more information about these operations, see the description of [**DeletePortUI**](https://msdn.microsoft.com/library/windows/hardware/ff547432).
 
- 
+ 
 
- 
+ 
 
 
 

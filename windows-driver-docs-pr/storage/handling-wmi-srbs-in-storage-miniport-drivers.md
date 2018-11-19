@@ -1,6 +1,5 @@
 ---
 title: Handling WMI SRBs in Storage Miniport Drivers
-author: windows-driver-content
 description: Handling WMI SRBs in Storage Miniport Drivers
 ms.assetid: 92b78611-7e6f-4d77-9133-635df96584f0
 keywords:
@@ -47,9 +46,9 @@ For information about implementing the previous steps, see the following topics 
 
 [Modifying Storage Miniport Driver Routines to Support WMI SRBs](modifying-storage-miniport-driver-routines-to-support-wmi-srbs.md)
 
- 
+ 
 
- 
+ 
 
 
 

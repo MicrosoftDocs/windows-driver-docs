@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_SCANNER
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_SCANNER category contains sensors that provide information that is obtained by scanning.
 ms.assetid: ba7a44d0-1d89-4a6c-b046-c7cd02c457b3
 keywords: ["SENSOR_CATEGORY_SCANNER Sensor Devices"]
@@ -48,7 +47,7 @@ This category includes the following platform-defined sensor types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="platform_defined_data_fields"></span><span id="PLATFORM_DEFINED_DATA_FIELDS"></span>Platform-defined Data Fields
 
@@ -76,11 +75,11 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**   Each platform-defined scanner data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_SCANNER\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 Requirements
 ------------
@@ -110,9 +109,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

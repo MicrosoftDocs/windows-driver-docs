@@ -44,13 +44,13 @@ The **KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL** property specifies the volume level
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Pin instance</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</p></td>
-<td align="left"><p>LONG (for a Get request) and [<strong>KSAUDIOENGINE_VOLUMELEVEL</strong>](https://msdn.microsoft.com/library/windows/hardware/hh831854) (for a Set request).</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p>LONG (for a Get request) and <a href="https://msdn.microsoft.com/library/windows/hardware/hh831854" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_VOLUMELEVEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh831854)"><strong>KSAUDIOENGINE_VOLUMELEVEL</strong></a> (for a Set request).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For a Get request, the property value is of type LONG, and it specifies the volume level of a channel in a given a stream. Volume-level values use the following scale and can be bounded by the minimum and maximum values supplied in the Basic Support response for this property:
 
@@ -63,7 +63,7 @@ For a Get request, the property value is of type LONG, and it specifies the volu
 &gt; \[!Note\]
 &gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
- 
+ 
 
 For a Set request, the property value is of type **KSAUDIOENGINE\_VOLUMELEVEL**, and it specifies the desired volume level of a channel in a given stream, as well as a curve type and curve duration to be applied as the volume level is set. If a value is specified beyond the range of the filter, the request to set this property will still be successful. But the actual value that was applied to the filter can only be determined by a subsequent Get call to this property.
 
@@ -107,9 +107,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](ksproperty-audioengine-supporteddeviceformats.md)
 
- 
+ 
 
- 
+ 
 
 
 

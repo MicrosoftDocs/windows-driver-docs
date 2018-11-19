@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_SET_POWER
-author: windows-driver-content
 description: This IRP notifies a driver of a change to the system power state or sets the device power state for a device.
 ms.date: 08/12/2017
 ms.assetid: 1294183a-bd0b-4ead-bd64-669d5b3725ce
@@ -176,9 +175,9 @@ Requirements
 
 [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/jj835780)
 
- 
+ 
 
- 
+ 
 
 
 

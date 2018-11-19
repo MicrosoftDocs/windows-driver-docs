@@ -45,9 +45,9 @@ The minidriver should set the stream to the specified state and return STATUS\_S
 
 [SRB\_GET\_STREAM\_STATE](srb-get-stream-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

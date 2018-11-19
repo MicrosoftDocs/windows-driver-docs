@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ETHERTYPE_ENCAP_TABLE
-author: windows-driver-content
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a TLV that contains the Ethertype encapsulations for the association.
 ms.assetid: BAAC7E5B-F13F-4AC8-A3F9-76197F92C7E3
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897818)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897818) elements that specifies the Ethertype encapsulations for the association. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

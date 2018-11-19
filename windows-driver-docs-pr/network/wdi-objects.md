@@ -36,7 +36,7 @@ The operating system configures each port with an operation mode, such as 802.11
 | Wi-Fi Direct Device              | 1 (if supported)      |
 | Wi-Fi Direct Role (GO or Client) | 1 or 2 (if supported) |
 
- 
+ 
 
 ## Port concurrency requirements
 
@@ -50,9 +50,9 @@ The following concurrency requirements for the different port types are as follo
     2.  1 Client
     3.  1 GO, 1 Client
 
- 
+ 
 
- 
+ 
 
 
 

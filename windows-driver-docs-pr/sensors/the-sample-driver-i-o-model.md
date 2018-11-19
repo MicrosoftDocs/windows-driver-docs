@@ -1,6 +1,5 @@
 ---
 title: Sample driver I/O model
-author: windows-driver-content
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
 ms.assetid: 86DA1BDE-DD97-45CA-884D-12BD279BD12E
 ms.date: 04/20/2017
@@ -31,7 +30,7 @@ For more information see [Simple Peripheral Bus](https://docs.microsoft.com/wind
 |----------------|-----------------|
 | SpbRequest.cpp | CSpbRequest     |
 
- 
+ 
 
 The SpbAccelerometer sample code interacts with the SPB component is found in SpbRequest.cpp. The three methods in the CSpbRequest class interact with this component as described below.
 
@@ -41,7 +40,7 @@ The SpbAccelerometer sample code interacts with the SPB component is found in Sp
 | **CSpbRequest::CreateAndSendWrite**             | Creates and issues an SPB write               |
 | **CSpbRequest::CreateAndSendWriteReadSequence** | Creates and issues a SPB write/read sequence. |
 
- 
+ 
 
 ## General-purpose input/output (GPIO)
 
@@ -55,7 +54,7 @@ On SoC platforms GPIO pins are spread across the chip as well as exposed on othe
 |----------------------|-----------------|
 | SpbAccelerometer.asl | N/A             |
 
- 
+ 
 
 The SpbAccelerometer sample relies on the GPIO component for interrupts. The GpioInt() element in the SpbAccelerometer.asl file defines the GPIO pin that’s connected to the ADXL345 as an interrupt resource.
 
@@ -80,7 +79,7 @@ Here are the key elements of the I2C resource:
 | 400000     | Specifies the operating frequency for the slave device. |
 | \\\\SB.I2C | Specifies the ACPI node for the slave device.           |
 
- 
+ 
 
 ### Processing acceleration data
 
@@ -88,7 +87,7 @@ Here are the key elements of the I2C resource:
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 If the GPIO line is asserted by the ADXL345, the sample driver’s passive ISR routine (**CAccelerometerDevice::OnInterruptIsr**) is invoked. A helper function, **CAccelerometerDevice::OnInterruptWorkItem**, processes the interrupt data that::**OnInterruptIsr** stored.
 
@@ -128,7 +127,7 @@ The hub is a component specifically aimed at SoC platforms and their flat device
 |----------------------|-----------------|
 | SpbAccelerometer.asl | N/A             |
 
- 
+ 
 
 The **ResourceTemplate** section of SpbAccelerometer.asl specifies how the resources are connected.
 
@@ -149,9 +148,9 @@ Name(RBUF, ResourceTemplate()
 Return(RBUF)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting Vendor-Defined Paper Sizes
-author: windows-driver-content
 description: Supporting Vendor-Defined Paper Sizes
 ms.assetid: 5c356857-ef43-41e4-a4ed-fae6655bd9ce
 keywords:
@@ -30,9 +29,9 @@ The following option attributes can be used, but are not required:
 \*CursorOrigin
 \*RotateSize?
 \*PageProtectMem
- 
+ 
 
- 
+ 
 
 
 

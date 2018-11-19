@@ -1,6 +1,5 @@
 ---
 title: Property Sheet Pages for Still Image Devices
-author: windows-driver-content
 description: Property Sheet Pages for Still Image Devices
 ms.assetid: ef77e57d-f791-4afa-8d51-67e78b60cf57
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ You can provide a DLL that creates device-specific property sheet pages. The Sca
 
 To cause this DLL to be installed and used, you must include a **PropertyPages** entry in your setup information (INF) file. This entry contains the DLL's file name and entry point name. For more information, see [INF Files for Still Image Devices](inf-files-for-still-image-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: eHS_UNLOAD_REASON enumeration
-author: windows-driver-content
 description: The eHS_UNLOAD_REASON enumeration indicates the reason for the plugin to get unloaded.
 ms.assetid: 1e658dd3-f66d-4803-ad3c-84bfa1890a86
 keywords: 
@@ -148,9 +147,9 @@ Requirements
 
 [**HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS**](hs-plugin-query-supported-sims.md)
 
- 
+ 
 
- 
+ 
 
 
 

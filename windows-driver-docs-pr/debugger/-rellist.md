@@ -3,7 +3,6 @@ title: rellist
 description: The rellist extension displays a Plug and Play relation list.
 ms.assetid: ecbf7e35-91c0-4ff4-82a4-53a935920915
 keywords: ["rellist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,15 +59,15 @@ Causes the display to include the translated CM\_RESOURCE\_LIST.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about these list structures, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

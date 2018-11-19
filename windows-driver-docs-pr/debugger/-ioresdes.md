@@ -3,7 +3,6 @@ title: ioresdes
 description: The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address.
 ms.assetid: a57dd414-16d6-4515-9eee-dac91398906b
 keywords: ["ioresdes Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,15 +47,15 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_DESCRIPTOR structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about the IO\_RESOURCE\_DESCRIPTOR structure, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

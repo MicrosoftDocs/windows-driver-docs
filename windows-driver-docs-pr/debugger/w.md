@@ -3,7 +3,6 @@ title: W (Windows Debugger Glossary)
 description: Glossary page - W
 Robots: noindex, nofollow
 ms.assetid: 99a1fa3e-f690-458a-afcd-ff54a7c40ba6
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ An extension based on the prototypes in the wdbgexts.h header file. These extens
 <span id="wow64"></span><span id="WOW64"></span>**WOW64**  
 An emulation layer in 64-bit Windows that can run 32-bit Windows applications. When debugging a 32-bit application running on 64-bit Windows, it is important to distinguish between the application itself and the WOW64 subsystem.
 
- 
+ 
 
- 
+ 
 
 
 

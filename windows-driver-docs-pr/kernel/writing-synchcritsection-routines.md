@@ -1,6 +1,5 @@
 ---
 title: Writing SynchCritSection Routines
-author: windows-driver-content
 description: Writing SynchCritSection Routines
 ms.assetid: b02e230e-48f1-43dc-b5aa-368cd7b5436f
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]
@@ -28,9 +27,9 @@ For any received IRP, a device driver should do as much I/O processing as possib
 
 For additional information about how critical sections are synchronized, see [Using Spin Locks: An Example](using-spin-locks--an-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

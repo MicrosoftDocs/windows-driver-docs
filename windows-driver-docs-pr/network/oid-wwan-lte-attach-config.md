@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_LTE_ATTACH_CONFIG
-author: windows-driver-content
 description: OID_WWAN_LTE_ATTACH_CONFIG enables the operating system to query or set the default LTE attach context of the inserted SIM's provider (MCC/MNC pair).
 ms.assetid: 7E753513-D6A2-4B67-9AED-83A695C39D3C
 ms.date: 08/22/2018
@@ -21,7 +20,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_LTE_ATTACH_CON
 
 After each Query or Set request, the miniport driver should return an [NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG](ndis-status-wwan-lte-attach-config.md) notification that describes the LTE attach configuration.
 
-For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_CONFIG](mb-lte-attach-operations.md#mbimcidmslteattachconfig).
+For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_CONFIG](mb-lte-attach-operations.md).
 
 ## Requirements
 

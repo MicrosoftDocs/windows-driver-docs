@@ -1,6 +1,5 @@
 ---
 title: Installing Customized Print Web Pages
-author: windows-driver-content
 description: Installing Customized Print Web Pages
 ms.assetid: 8a50e7ea-0e91-476f-86cb-935329b76f91
 keywords:
@@ -26,9 +25,9 @@ The methods used for installing customized print Web pages depend on whether you
 
 [Installing Pages for a Port Monitor](installing-pages-for-a-port-monitor.md)
 
- 
+ 
 
- 
+ 
 
 
 

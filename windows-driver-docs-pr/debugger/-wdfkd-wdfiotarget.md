@@ -3,7 +3,6 @@ title: wdfkd.wdfiotarget
 description: The wdfkd.wdfiotarget extension displays information about a specified I/O target object.
 ms.assetid: 60a864cc-5099-4d8c-8712-1ba48bce1e0f
 keywords: ["wdfkd.wdfiotarget Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Remarks
 
 The following example shows a display from the **!wdfkd.wdfiotarget** extension.
 
-```
+```dbgcmd
 kd> !wdfiotarget 0x7c9630b8 
 
 # WDFIOTARGET 8369cf40
@@ -73,9 +72,9 @@ Requests sent with ignore-target-state: 0
 
 The output in the preceding example includes the address of the I/O target's parent framework device object, along with the addresses of the WDM DEVICE\_OBJECT structures that represent the target driver's device object and the target device's physical device object (PDO).
 
- 
+ 
 
- 
+ 
 
 
 

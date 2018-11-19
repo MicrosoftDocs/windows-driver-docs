@@ -24,9 +24,9 @@ DirectX VA 2.0 uses the synchronization model that Direct3D already uses on vert
 
 Typically, for DirectX VA 2.0, synchronization is only an issue if the hardware can consume the compressed buffers directly without additional buffer copies.
 
- 
+ 
 
- 
+ 
 
 
 

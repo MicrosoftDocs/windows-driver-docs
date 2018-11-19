@@ -91,16 +91,16 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a filled [<strong>DXVA_VideoDesc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564070) structure.</p></td>
+<td align="left"><p>Pointer to a filled <a href="https://msdn.microsoft.com/library/windows/hardware/ff564070" data-raw-source="[&lt;strong&gt;DXVA_VideoDesc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564070)"><strong>DXVA_VideoDesc</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_DeinterlaceQueryAvailableModes</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563951) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563951" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563951)"><strong>DXVA_DeinterlaceQueryAvailableModes</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 After the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-) has determined the deinterlace or frame conversion modes available for a particular video format, the VMR queries the driver to obtain detailed information about the input requirements of a particular deinterlace mode and any additional video processing that might be supported on that mode. The driver returns this information from a call to its [**DeinterlaceQueryModeCaps**](dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function.
 
@@ -117,9 +117,9 @@ After the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#w
 
 [**DXVA\_SampleFormat**](https://msdn.microsoft.com/library/windows/hardware/ff564045)
 
- 
+ 
 
- 
+ 
 
 
 

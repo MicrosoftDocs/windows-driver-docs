@@ -1,6 +1,5 @@
 ---
 title: Spooler Notification Terminology
-author: windows-driver-content
 description: Spooler Notification Terminology
 ms.assetid: 7d4888b1-cb5f-4095-9e1b-c330c04e4971
 keywords:
@@ -41,9 +40,9 @@ Refers to components loaded by Spoolsv.exe, such as print processors, drivers, a
 <a href="" id="service"></a>service  
 Refers to the functionality implemented by the spooler, either as part of the service itself (Spoolsv.exe) or as part of the client side (Winspool.drv).
 
- 
+ 
 
- 
+ 
 
 
 

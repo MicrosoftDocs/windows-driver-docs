@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_VISIBLE_PROVIDERS
-author: windows-driver-content
 description: OID_WWAN_VISIBLE_PROVIDERS returns a list of network providers currently visible within the MB device's range.
 ms.assetid: 4dfd4477-6332-4163-8b3e-a1604b11d175
 ms.date: 08/08/2017
@@ -68,9 +67,9 @@ Requirements
 
 [WWAN Provider Operations](https://msdn.microsoft.com/library/windows/hardware/ff559101)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Printer Options
-author: windows-driver-content
 description: Printer Options
 ms.assetid: 48033d01-e701-4bc5-aac9-9ac2f0fd4de9
 keywords:
@@ -27,9 +26,9 @@ This section discusses GPD language support for both [standard options](standard
 
 Additional topics in this section include [Option Entry Format](option-entry-format.md), [Option Attributes](option-attributes.md), and [Option Constraints](option-constraints.md).
 
- 
+ 
 
- 
+ 
 
 
 

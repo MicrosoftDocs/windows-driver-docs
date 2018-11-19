@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -26,7 +26,7 @@ A *NULL DMA transfer* is a zero-length data transfer that is specified in a dyna
 
 **Note**  In theory, a DMA engine could improve performance in some cases by not signaling the completion of a **NULL** transfer. However, if the engine does not signal the completion, the NetDMA interface will not receive a notice that the preceding transfers in the linked list of DMA descriptors are complete.
 
- 
+ 
 
 Overall performance can be improved in some applications by submitting a list of DMA descriptors without requesting completion notifications for any descriptors except for the last descriptor. The final descriptor in the list could be a **NULL** transfer that provides the completion information for the entire list. If the NetDMA interface submits a **NULL** transfer and requests completion notification in the **NULL** transfer descriptor, this can provide a simple way to ensure that all of the descriptors that were submitted before the **NULL** transfer were processed.
 
@@ -34,9 +34,9 @@ DMA providers must support **NULL** transfers and process the associated DMA des
 
 For more information about completing DMA transfers, see [Completing a DMA Transfer](completing-a-dma-transfer.md).
 
- 
+ 
 
- 
+ 
 
 
 

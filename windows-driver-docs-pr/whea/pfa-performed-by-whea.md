@@ -1,6 +1,5 @@
 ---
 title: PFA Performed by WHEA
-author: windows-driver-content
 description: PFA Performed by WHEA
 ms.assetid: c93b15aa-9b99-4dfa-8c97-b503654e44f2
 keywords:
@@ -21,7 +20,7 @@ Starting with Windows 7, the Windows Hardware Error Architecture (WHEA) supports
 
 **Important**  A [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) can perform PFA on ECC memory instead of WHEA. If the plug-in performs PFA, it must follow the steps that are described in [PFA Performed by a PSHED Plug-In](pfa-performed-by-a-pshed-plug-in.md). The plug-in must not follow the steps that are described in this topic.
 
- 
+ 
 
 When an ECC memory error occurs, WHEA performs the following steps:
 
@@ -41,15 +40,15 @@ When an ECC memory error occurs, WHEA performs the following steps:
 
     **Note**  If the PSHED plug-in is not performing PFA, it must not set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560472) member of the [WHEA\_ERROR\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff560465) structure.
 
-     
+     
 
 8.  If PFA is enabled, WHEA performs PFA on the ECC memory page. For more information about this process, see [How WHEA Performs PFA on ECC Memory](how-whea-performs-pfa-on-ecc-memory.md).
 
 9.  The Windows kernel generates an ETW event and logs the error information in the system event log.
 
- 
+ 
 
- 
+ 
 
 
 

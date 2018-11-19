@@ -38,7 +38,7 @@ When asked to play a stream format that does not match the audio device's speake
 
 -   Play the stream by mixing the channels in the original stream to generate precisely the number of channels required for the speaker configuration. If there are more channels in the original stream than there are speakers, this approach avoids loss of the content that would result from simply discarding the excess channels. The mixing and format conversion can be performed in software or hardware.
 
-Regarding the third option, the driver should avoid directly performing software mixing. Instead, the hardware vendor should install a global-effects (GFX) software module to process the stream before it reaches the audio device. In Windows Vista, global effects are implemented as GFX audio processing objects (APOs). In Windows Server 2003 and Windows XP, global effects are implemented as [GFX filters](gfx-filters.md). Windows 2000 and Windows Me/98 do not support global effects.
+Regarding the third option, the driver should avoid directly performing software mixing. Instead, the hardware vendor should install a global-effects (GFX) software module to process the stream before it reaches the audio device. In Windows Vista, global effects are implemented as GFX audio processing objects (APOs). In Windows Server 2003 and Windows XP, global effects were implemented as GFX filters. 
 
 ### <span id="playing_a_5_1_channel_stream_on_a_7_1_speaker_configuration"></span><span id="PLAYING_A_5_1_CHANNEL_STREAM_ON_A_7_1_SPEAKER_CONFIGURATION"></span>Playing a 5.1-Channel Stream on a 7.1 Speaker Configuration
 
@@ -86,9 +86,9 @@ In Windows Server 2003 with SP1 and Windows XP with SP2, if the system mixer pro
 
 If the system mixer receives a 7.1-channel input stream with a channel mask of 0x63F and produces a 5.1-channel output stream (with a channel mask of 0x3F), the mixer copies channels 6 and 7 in the input stream to channels 4 and 5 in the output stream. The mixer discards channels 4 and 5 (for the two back speakers) from the 7.1-channel input stream. This behavior ensures that the channels containing the content for the two side speakers in the 7.1-channel stream play through the side speakers in the 5.1 speaker configuration.
 
- 
+ 
 
- 
+ 
 
 
 

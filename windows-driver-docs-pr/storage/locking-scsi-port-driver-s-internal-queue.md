@@ -1,6 +1,5 @@
 ---
 title: Locking SCSI Port Driver's Internal Queue
-author: windows-driver-content
 description: Locking SCSI Port Driver's Internal Queue
 ms.assetid: ea5be4e1-4908-431c-9c80-96539157b87e
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ Once its queue is unlocked, SCSI Port resumes processing queued SRBs. A class dr
 
 For more information about unlocking queues from the perspective of the class driver, see [Storage Class Driver's ReleaseQueue Routine](storage-class-driver-s-releasequeue-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

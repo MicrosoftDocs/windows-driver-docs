@@ -1,6 +1,5 @@
 ---
 title: Default PageMediaSize Mappings
-author: windows-driver-content
 description: This section shows the default mappings between the PageMediaSize option of the PrintTicket and the GPD/PPD file entries.
 ms.assetid: 3063E023-0CCC-4BD5-9B26-DD57CA94EEB7
 ms.date: 04/20/2017
@@ -90,7 +89,7 @@ This section shows the default mappings between the PageMediaSize option of the 
 | PrintTicket NorthAmericaTabloid               | GPD TABLOID                 |
 | PrintTicket NorthAmericaTabloidExtra          | GPD TABLOID\_EXTRA          |
 
- 
+ 
 
 ## Related topics
 [Standard XPS Filters](standard-xps-filters.md)  

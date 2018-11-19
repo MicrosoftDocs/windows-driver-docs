@@ -3,7 +3,6 @@ title: Bug Check 0xF5 FLTMGR_FILE_SYSTEM
 description: The FLTMGR_FILE_SYSTEM bug check has a value of 0x000000F5. This indicates that an unrecoverable failure occurred in the Filter Manager.
 ms.assetid: 9b008c76-65c8-4de4-b7a0-96d8732c7b7e
 keywords: ["Bug Check 0xF5 FLTMGR_FILE_SYSTEM", "FLTMGR_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The FLTMGR\_FILE\_SYSTEM bug check has a value of 0x000000F5. This indicates that an unrecoverable failure occurred in the Filter Manager.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FLTMGR\_FILE\_SYSTEM Parameters
 
@@ -88,14 +87,14 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tr>
 <tr class="odd">
 <td align="left"><p>0x6D</p></td>
-<td align="left"><p>Address of the minifilter's context structure</p></td>
+<td align="left"><p>Address of the minifilter&#39;s context structure</p></td>
 <td align="left"><p>Address of the CONTEXT_NODE structure</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The context structure was dereferenced too many times. This means that the reference count on the Filter Manager's CONTEXT_NODE structure went to zero while it was still attached to its associated object.</p></td>
+<td align="left"><p>The context structure was dereferenced too many times. This means that the reference count on the Filter Manager&#39;s CONTEXT_NODE structure went to zero while it was still attached to its associated object.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x6E</p></td>
-<td align="left"><p>Address of the minifilter's context structure</p></td>
+<td align="left"><p>Address of the minifilter&#39;s context structure</p></td>
 <td align="left"><p>Address of the CONTEXT_NODE structure</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>The context structure was referenced after being freed.</p></td>
@@ -103,7 +102,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -125,9 +124,9 @@ If Parameter 1 equals **0x6D**, make sure that your minifilter driver does not c
 
 If Parameter 1 equals 0x6E, make sure that your minifilter driver does not call **FltReferenceContext** after the given context has been deleted (see Parameter 2).
 
- 
+ 
 
- 
+ 
 
 
 

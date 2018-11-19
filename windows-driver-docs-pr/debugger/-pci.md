@@ -3,7 +3,6 @@ title: pci
 description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 ms.assetid: 37b767db-18c9-4fd3-8910-4be03f41e764
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -101,7 +100,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+
 
 This extension command can only be used with an x86-based target computer.
 
@@ -171,7 +170,7 @@ This example displays the configuration space for segment 1, bus 0, device 1:
 
 ```dbgcmd
 0: kd> !pci 301 1 0 1
- 
+
 PCI Configuration Space (Segment:0001 Bus:00 Device:01 Function:00)
 Common Header:
     00: VendorID       14e4 Broadcom Corporation
@@ -185,7 +184,6 @@ Common Header:
     5c: MsgAddr        2d4bff00
     60: MsgAddrHi      1ae09097
     64: MsData         9891
- 
 ```
 
 To display all devices and buses on valid segments, issue the command **!pci 602 ffff ff**:
@@ -234,9 +232,9 @@ PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
 
- 
 
- 
+
+
 
 
 

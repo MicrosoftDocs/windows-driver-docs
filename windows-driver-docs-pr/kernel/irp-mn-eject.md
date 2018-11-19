@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_EJECT
-author: windows-driver-content
 description: Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 ms.date: 08/12/2017
 ms.assetid: 2807eeca-c614-469a-baeb-3d2d65416c57
@@ -80,9 +79,9 @@ Requirements
 
 [**IoRequestDeviceEject**](https://msdn.microsoft.com/library/windows/hardware/ff549647)
 
- 
+ 
 
- 
+ 
 
 
 

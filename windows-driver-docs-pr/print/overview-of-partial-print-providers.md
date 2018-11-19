@@ -1,6 +1,5 @@
 ---
 title: Overview of Partial Print Providers
-author: windows-driver-content
 description: Overview of Partial Print Providers
 ms.assetid: 622f99e3-d4a5-42f0-ab71-4d256e0ea02c
 keywords:
@@ -39,9 +38,9 @@ It is important to remember that a partial print provider does not replace the l
 
 Partial providers do not generate print jobs; they depend on the local provider and its [*print processors*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor) to create [RAW data](raw-data-type.md) that can be sent to a printer. When a print processor calls the local provider's **StartDocPrinter** function (see [Printing a Print Job](printing-a-print-job.md)), and the print queue is supported by a partial provider, the local provider calls the partial provider's **StartDocPrinter** function, supplying the RAW data (as a file). The partial provider's **StartDocPrinter**, **WritePrinter**, and **EndDocPrinter** functions should send the RAW data over the network to the remote print queue.
 
- 
+ 
 
- 
+ 
 
 
 

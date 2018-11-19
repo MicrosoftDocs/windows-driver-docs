@@ -21,9 +21,9 @@ A management application can use the **SetPresharedKeyForId** method to associat
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetPresharedKeyForId**.
 
- 
+ 
 
- 
+ 
 
 
 

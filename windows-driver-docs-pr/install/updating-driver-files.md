@@ -26,7 +26,7 @@ Drivers are updated whenever one of the following occurs:
 
     **Note**  Starting with Windows Vista, this wizard is now named the **Update Driver Software Wizard**.
 
-     
+     
 
 -   Windows Update is run.
 
@@ -63,9 +63,9 @@ Use the following guidelines when you write installation software and INF files 
 
 For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](inf-file-sections-and-directives.md).
 
- 
+ 
 
- 
+ 
 
 
 

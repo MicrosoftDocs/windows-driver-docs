@@ -15,11 +15,11 @@ Microsoft defines setup classes for most devices. IHVs and OEMs can define new d
 
 There is a GUID associated with each device setup class. System-defined setup class GUIDs are defined in *Devguid.h* and typically have symbolic names of the form GUID_DEVCLASS_*Xxx*.
 
-The device setup class GUID defines the **..\\CurrentControlSet\\Control\\Class\\***ClassGuid* registry key under which to create a new subkey for any particular device of a standard setup class.
+The device setup class GUID defines the **..\\CurrentControlSet\\Control\\Class\\**<em>ClassGuid</em> registry key under which to create a new subkey for any particular device of a standard setup class.
 
- 
+ 
 
- 
+ 
 
 
 

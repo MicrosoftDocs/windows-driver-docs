@@ -1,6 +1,5 @@
 ---
 title: Holding Incoming IRPs When A Device Is Paused
-author: windows-driver-content
 description: Holding Incoming IRPs When A Device Is Paused
 ms.assetid: 4964e06b-f1b9-4421-89d1-ad79ce7d7307
 keywords: ["holding IRPs", "IRPs WDK PnP", "I/O request packets WDK PnP", "pausing PnP devices"]
@@ -40,9 +39,9 @@ To hold IRPs while a device is paused, a driver implements a procedure such as t
 
     Errors in processing IRPs from the IRP-holding queue do not affect the status returned for the start or cancel-stop IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

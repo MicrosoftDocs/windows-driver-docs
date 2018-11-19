@@ -1,6 +1,5 @@
 ---
 title: Error Processing
-author: windows-driver-content
 description: Error Processing
 ms.assetid: d9cb2f62-1ccf-4ab6-b547-dc54f6d07820
 keywords:
@@ -85,9 +84,9 @@ The following describes the sequence of actions taken by WHEA in response to eac
 
 8.  The Windows kernel generates a bug check.
 
- 
+ 
 
- 
+ 
 
 
 

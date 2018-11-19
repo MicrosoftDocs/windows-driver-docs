@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_LISTEN_STATE
-author: windows-driver-content
 description: WDI_TLV_P2P_LISTEN_STATE is a TLV that contains a Wi-Fi Direct listen state.
 ms.assetid: 66BDF96A-2B9D-4188-AFC8-465786924B47
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------------------------------------------------------------|----------------------------------------|
 | [**WDI\_P2P\_LISTEN\_STATE**](https://msdn.microsoft.com/library/windows/hardware/dn926097) | The desired Wi-Fi Direct listen state. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

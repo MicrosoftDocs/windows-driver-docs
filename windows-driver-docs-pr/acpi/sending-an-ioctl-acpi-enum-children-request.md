@@ -1,6 +1,5 @@
 ---
 title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
-author: windows-driver-content
 description: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
 ms.date: 04/20/2017
@@ -125,9 +124,9 @@ After the example code obtains the required size of the output buffer, it perfor
     }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

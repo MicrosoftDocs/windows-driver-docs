@@ -1,6 +1,5 @@
 ---
 title: AdapterControl Routine Requirements
-author: windows-driver-content
 description: AdapterControl Routine Requirements
 ms.assetid: 09ce4ad8-eb1b-4fd0-9a22-4249d09584b3
 keywords: ["AdapterControl routines, requirements", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
@@ -46,9 +45,9 @@ If a transfer request requires the driver to perform a sequence of partial-trans
 
 The driver routine that completes the current transfer IRP, usually the *DpcForIsr* or *CustomDpc* routine, also is responsible for releasing the system DMA controller or bus-master adapter by calling [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) or [**FreeMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff546513), respectively. This driver routine should make the appropriate call as soon as possible when its last partial-transfer operation is done so that drivers of subordinate DMA devices can allocate the system DMA controller or a bus-master driver can begin processing the next transfer IRP promptly.
 
- 
+ 
 
- 
+ 
 
 
 

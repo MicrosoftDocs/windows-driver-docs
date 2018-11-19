@@ -27,9 +27,9 @@ Unlike reporting the number of constant registers a device has for vertex shader
 
 Implementations must allow data within the range they report to pass through pixel processing unmodified (for example unclamped). This value normally defines the limits of a signed range, that is, an absolute value. Therefore, for example, 1 indicates that the range is \[-1.0 to 1.0\], and 8 indicates that the range is \[-8.0 to 8.0\]. For pixel shader version 1.0 to 1.3, the driver must set the value in **MaxPixelShaderValue** to a minimum of 1. For 1.4, the driver must set the value in **MaxPixelShaderValue** to a minimum of 8.
 
- 
+ 
 
- 
+ 
 
 
 

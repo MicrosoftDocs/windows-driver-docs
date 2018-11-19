@@ -1,8 +1,6 @@
 ---
 title: WDTF Runtime Library
 description: Description of the WDTF Runtime Library, the tools it contains, and how to install.
-author: windows-driver-content
-ms.author: eliotgra
 keywords:
 - WDTF
 - Windows Driver Test Framework
@@ -17,7 +15,7 @@ ms.localizationpriority: medium
 
 The WDTF runtime library is available as part of the Windows Driver Kit (WDK). When you install the WDK, you also install the Windows Driver Test Framework (WDTF). The templates and sample files for testing and development are installed along with the WDK. The WDTF runtime library needs to be installed on any system that you want to run WDTF-based tests on. This includes the tests provided in the WDK and tests you write using WDK test templates.
 
-The WDK also includes a separate installation package (*.msi) that you can use to install the WDTF runtime on a test computer. The WDK includes The MSI does the following:
+The WDK also includes a separate installation package (*.msi) that you can use to install the WDTF runtime on a test computer. The MSI does the following:
 
 - Copies files.
 
@@ -35,7 +33,7 @@ The WDTF runtime library includes tools to help you triage and run tests.
 |DisplayDeviceClass.vbs|Displays device class information that exist on the current system. Both the Class GUID and Class Friendly name is shown. Useful when trying to create /DQ queries that look for certain class of devices.|
 |DisplayDeviceDataFields.cmd|Displays device class information that exist on the current system. Both the Class GUID and Class Friendly name is shown. Useful when trying to create /DQ queries that look for certain class of devices.|
 |DisplayDevices.vbs|Displays information about each device expressed by the /DQ parameter, the default is all device in the system. |
-|DisplayDevicesWithWDTFilters.vbs|Displays any device that has one of the WDTF filter drivers installed on it. WDTF has 3 filter drivers: EDT, IOSPY, or the button driver.|
+|DisplayDevicesWithWDTFilters.vbs|Displays any device that has one of the WDTF filter drivers installed on it. WDTF has three filter drivers: EDT, IOSPY, or the button driver.|
 |DisplayDeviceTree.vbs|Displays the device tree of the current system.|
 |DisplaySystemDataFields.cmd|Displays all the system namespaces and the fields they have.|
 
@@ -52,13 +50,14 @@ You can also install the WDTF runtime library manually.
 ### Installing WDTF on a test computer (preferred method)
 
 1. Install Visual Studio and then install the WDK.
-2. Configure a remote computer for testing (**Driver > Test > Configure Computers**).
+
+2. Configure a remote computer for testing. In Visual Studio, click the **Driver** menu, point to **Test**, and then click **Configure Computers**.
 
 ### Manually installing WDTF on a test computer (alternative method)
 
 1. Install Visual Studio and the WDK on the computer you use for development.
 
-2. Copy the WDTF installation files from the computer where you installed the WDK to the test computer. The WDTF installation files (*.msi and *.cab files) are located in the %programfiles%\Windows Kits\8.0\Testing\Runtimes directory on your development system. Copy the all the files in the directory that matches the architecture of the test computer.
+2. Copy the WDTF installation files from the computer where you installed the WDK to the test computer. The WDTF installation files (*.msi and *.cab files) are located in the %programfiles%\Windows Kits\10\Testing\Runtimes directory on your development system. Copy the all the files in the directory that matches the architecture of the test computer.
 
 3. On the test computer, open a Command Prompt window using elevated permission (**Run as administrator**) and navigate to the directory that contains the WDTF installation files. Run either of the following commands to install WDTF.
 
@@ -77,7 +76,7 @@ The following table describes the options you can use with the **msiexec** comma
 |Option|Description|
 |----|----|
 |**/l*** *filename*|Writes all messages and errors to a file, *filename*.|
-|**WDTFDIR=**_CustomInstallationDirectory_|Specifies a destination directory for WDTF Runtimes. Default **WDTFDir** is %programfiles%\Windows Kits\8.0\Testing\Runtimes\WDTF|
+|**WDTFDIR=**_CustomInstallationDirectory_|Specifies a destination directory for WDTF Runtimes. Default **WDTFDir** is %programfiles%\Windows Kits\10\Testing\Runtimes\WDTF|
 |**WDTF_SKIP_MACHINE_CONFIG=[1 \| 2]**|Specify **1** to skip setting cscript.exe as the default script engine. Specify **2** to skip enabling AC and DC RTC wake.|
 |**/?**|Shows help for msiexec.exe options.|
 

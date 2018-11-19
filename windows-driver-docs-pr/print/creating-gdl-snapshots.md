@@ -1,6 +1,5 @@
 ---
 title: Creating GDL Snapshots
-author: windows-driver-content
 description: Creating GDL Snapshots
 ms.assetid: 20430458-b1e5-490a-90c8-a0abe3892cfe
 keywords:
@@ -33,9 +32,9 @@ The following topics describe two cases where exceptions need to be addressed fo
 
 [Resolving GDL Configuration Conflicts](resolving-gdl-configuration-conflicts.md)
 
- 
+ 
 
- 
+ 
 
 
 

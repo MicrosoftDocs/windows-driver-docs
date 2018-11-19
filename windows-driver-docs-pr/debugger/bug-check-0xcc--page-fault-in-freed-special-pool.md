@@ -3,7 +3,6 @@ title: Bug Check 0xCC PAGE_FAULT_IN_FREED_SPECIAL_POOL
 description: The PAGE_FAULT_IN_FREED_SPECIAL_POOL bug check has a value of 0x000000CC. This indicates that the system has referenced memory which was earlier freed.
 ms.assetid: 77823c38-76eb-49ca-aaf4-3cf5994a0525
 keywords: ["Bug Check 0xCC PAGE_FAULT_IN_FREED_SPECIAL_POOL", "PAGE_FAULT_IN_FREED_SPECIAL_POOL"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000000CC. This indicates that the system has referenced memory which was earlier freed.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL Parameters
 
@@ -56,7 +55,7 @@ The PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000000CC. T
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -72,9 +71,9 @@ Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 
- 
+ 
 
- 
+ 
 
 
 

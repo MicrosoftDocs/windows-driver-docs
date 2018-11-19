@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_MECHANICAL
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_MECHANICAL category contains sensors that provide information related to mechanisms.
 ms.assetid: 0ae66a5b-6564-4e2c-a6a1-c88c7e853a38
 keywords: ["SENSOR_CATEGORY_MECHANICAL Sensor Devices"]
@@ -64,7 +63,7 @@ This category includes the following platform-defined sensor types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="platform_defined_data_fields"></span><span id="PLATFORM_DEFINED_DATA_FIELDS"></span>Platform-defined Data Fields
 
@@ -122,11 +121,11 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
- 
+ 
 
 **Important**   Each platform-defined mechanical data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_MECHANICAL\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 Requirements
 ------------
@@ -156,9 +155,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

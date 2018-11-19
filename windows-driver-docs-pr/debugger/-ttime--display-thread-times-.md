@@ -3,7 +3,6 @@ title: .ttime (Display Thread Times)
 description: The .ttime command displays the running times for a thread.
 ms.assetid: ff48310f-3eb9-4112-b5ab-b7c16878ac8f
 keywords: [".ttime (Display Thread Times) Windows Debugging"]
-ms.author: domars
 ms.date: 08/01/2018
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ The **.ttime** command displays the running times for a thread.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +66,9 @@ Kernel:  0 days 0:00:00.131
 User:    0 days 0:00:02.109
 ```
 
- 
+ 
 
- 
+ 
 
 
 

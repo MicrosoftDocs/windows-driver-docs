@@ -1,6 +1,5 @@
 ---
 title: Why a UMDF Driver Consumes Excessive Memory
-author: windows-driver-content
 description: Describes how to use Wudfext.dll to determine why a UMDF version 1 driver consumes an excessive amount of memory.
 ms.assetid: 01316c4e-24e8-467c-af52-900b3fe042db
 keywords:
@@ -36,9 +35,9 @@ To investigate memory usage, use the following steps:
     -   Corrections to their parent objects.
     -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) method.
 
- 
+ 
 
- 
+ 
 
 
 

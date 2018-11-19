@@ -2,6 +2,7 @@
 title: Manage Device Metadata Experiences
 description: Manage Device Metadata Experiences
 ms.assetid: aede9597-4b67-4c1a-8ae4-924d39c88b53
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

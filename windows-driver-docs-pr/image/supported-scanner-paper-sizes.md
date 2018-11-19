@@ -1,6 +1,5 @@
 ---
 title: Supported Scanner Paper Sizes
-author: windows-driver-content
 description: Supported Scanner Paper Sizes
 ms.assetid: c4437c38-b43a-433c-913a-d3de9bf74284
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ Both the Common Scanner Dialog and the Scanner and Camera Wizard have a static t
 
 The largest page size (by area) that a driver supports in page feed mode, as determined by the maximum bed size, is considered the default page size. Paper sizes that do not fit on the feeder or on the bed of the device are not offered to the user.
 
- 
+ 
 
- 
+ 
 
 
 

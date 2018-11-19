@@ -2,7 +2,6 @@
 title: Example 1 Displaying Global Flags
 description: Example 1 Displaying Global Flags
 ms.assetid: c1a1eafd-d70a-43f9-af90-33ddc33758fe
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -52,9 +51,9 @@ gflags /i notepad.exe
 
 Remember that the flag value displayed might not be the current, effective flag value. Changes to the system-wide flags are not effective until you restart Windows. Changes to image file flag settings are not effective until you restart the program.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ Although some network adapters report support for the *wake device on media conn
 
 For more information about the *wake device on media connect* method, see [Low Power on Media Disconnect](low-power-on-media-disconnect.md).
 
- 
+ 
 
- 
+ 
 
 
 

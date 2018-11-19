@@ -1,14 +1,10 @@
 ---
 title: WinDbg Preview - File Menu
 description: This section describes how to use the file menu in the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/04/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - File Menu 
 
@@ -40,7 +36,7 @@ Session connection information is stored in workspace configuration files. Works
 
 The default location for workspace files is: 
 
-```
+```console
 C:\Users\*UserName*\AppData\Local\DBG\targets
 ```
 
@@ -62,11 +58,11 @@ Use the settings menu to set the source and symbol path as well as choose the li
 Use *About* to display build version information for the debugger. You can use also use this screen to view the Microsoft privacy statement.
 
 ---
- 
+ 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

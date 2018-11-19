@@ -1,6 +1,5 @@
 ---
 title: Overview of UMDF
-author: windows-driver-content
 description: This topic provides a high-level overview of UMDF components and describes how your driver interacts with system-supplied components.
 ms.assetid: b36c9fad-1963-4d29-a1e7-890de77fed50
 keywords:
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 This topic provides a high-level overview of User-Mode Driver Framework (UMDF) components and describes how your driver interacts with system-supplied components. It applies to both UMDF versions 1 and 2.
 
-UMDF drivers abstract hardware functionality, run in the user-mode environment, and can access various services. UMDF drivers operate as part of a stack of drivers that manage a device. File system drivers, display drivers, and print drivers cannot be UMDF drivers.
+UMDF drivers abstract hardware functionality, run in the user-mode environment, and can access various services. UMDF drivers operate as part of a stack of drivers that manage a device. File system drivers, display drivers (for full display devices, not display-only display devices), and print drivers cannot be UMDF drivers.
 
 A UMDF driver interacts with the following system-supplied components:
 
@@ -43,9 +42,9 @@ The following diagram shows how driver host processes, driver manager, and refle
 
 ![umdf components including up and down device objects in reflector](images/umdfarch3.gif)
 
- 
+ 
 
- 
+ 
 
 
 

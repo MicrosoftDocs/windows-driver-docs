@@ -1,9 +1,7 @@
 ---
 title: Simple Peripheral Bus (SPB) Driver Design Guide
-author: windows-driver-content
 description: This section describes how to write a driver for a simple peripheral bus (SPB) controller device or for a peripheral device that is connected to an SPB.
 ms.assetid: 7E9F688B-F473-4343-A1E0-525273391935
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -43,25 +41,25 @@ An SPB provides no bus-specific means to convey interrupt requests from peripher
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SPB controller drivers](https://msdn.microsoft.com/library/windows/hardware/hh698220)</p></td>
-<td><p>An SPB controller is a device that controls a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB. The hardware vendor for an SPB controller provides an SPB controller driver to manage the hardware functions in the controller.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh698220" data-raw-source="[SPB controller drivers](https://msdn.microsoft.com/library/windows/hardware/hh698220)">SPB controller drivers</a></p></td>
+<td><p>An SPB controller is a device that controls a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450903" data-raw-source="[simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903)">simple peripheral bus</a> (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB. The hardware vendor for an SPB controller provides an SPB controller driver to manage the hardware functions in the controller.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SPB peripheral device drivers](https://msdn.microsoft.com/library/windows/hardware/hh698225)</p></td>
-<td><p>An SPB peripheral device driver controls a peripheral device that is connected to a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB). The hardware registers of this device are available only through the SPB. To read from or write to the device, the driver must send I/O requests to the SPB controller. Only this controller can initiate data transfers to and from the device over the SPB.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh698225" data-raw-source="[SPB peripheral device drivers](https://msdn.microsoft.com/library/windows/hardware/hh698225)">SPB peripheral device drivers</a></p></td>
+<td><p>An SPB peripheral device driver controls a peripheral device that is connected to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450903" data-raw-source="[simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903)">simple peripheral bus</a> (SPB). The hardware registers of this device are available only through the SPB. To read from or write to the device, the driver must send I/O requests to the SPB controller. Only this controller can initiate data transfers to and from the device over the SPB.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Test with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn919874" data-raw-source="[Test with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)">Test with Multi Interface Test Tool (MITT)</a></p></td>
 <td><p>The Multiple Interface Test Tool (MITT) is a test tool for validating hardware and software for simple peripheral buses, such as UART, I2C, SPI, and GPIO. MITT uses the FPGA development board and includes a software package with firmware, test binaries, and drivers that provide an inexpensive test solution.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

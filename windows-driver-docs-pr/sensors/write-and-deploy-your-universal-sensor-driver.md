@@ -1,6 +1,5 @@
 ---
 title: Write and deploy your universal sensor driver
-author: windows-driver-content
 description: This topic provides guidance on how to write and deploy your universal sensor driver, using the user mode driver framework (UMDF) version 2.
 ms.assetid: FA888CB3-5B43-47CB-907D-76C6E6B6DE5D
 ms.date: 04/20/2017
@@ -39,9 +38,9 @@ After updating the generic files to customize them for your sensor, see the foll
 -   [Build the sensor driver](build-the-sensor-driver.md)
 -   [Install the sensor driver](install-the-sensor-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

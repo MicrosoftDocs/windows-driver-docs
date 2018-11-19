@@ -56,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +73,9 @@ All times are based on the time at startup, so the client can calculate duration
 
 [**ScannerStatus**](scannerstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

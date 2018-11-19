@@ -1,6 +1,5 @@
 ---
 title: Serial I/O Request Interface
-author: windows-driver-content
 description: To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.
 ms.assetid: D536A0EC-2B8B-491B-8A14-656F4B5A3843
 ms.date: 04/20/2017
@@ -33,229 +32,229 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406621)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh406621" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406621)"><strong>IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_CLEAR_STATS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546538)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546538" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_CLEAR_STATS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546538)"><strong>IOCTL_SERIAL_CLEAR_STATS</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_CLR_DTR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546541)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546541" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_CLR_DTR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546541)"><strong>IOCTL_SERIAL_CLR_DTR</strong></a></p></td>
 <td><p>See note 1.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_CLR_RTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546545)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546545" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_CLR_RTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546545)"><strong>IOCTL_SERIAL_CLR_RTS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_CONFIG_SIZE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546548)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546548" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_CONFIG_SIZE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546548)"><strong>IOCTL_SERIAL_CONFIG_SIZE</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_BAUD_RATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546554)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546554" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_BAUD_RATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546554)"><strong>IOCTL_SERIAL_GET_BAUD_RATE</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_CHARS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546558)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546558" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_CHARS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546558)"><strong>IOCTL_SERIAL_GET_CHARS</strong></a></p></td>
 <td><p>See note 2.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_COMMSTATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546562)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546562" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_COMMSTATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546562)"><strong>IOCTL_SERIAL_GET_COMMSTATUS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_DTRRTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546566)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546566" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_DTRRTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546566)"><strong>IOCTL_SERIAL_GET_DTRRTS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_HANDFLOW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546574)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546574" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_HANDFLOW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546574)"><strong>IOCTL_SERIAL_GET_HANDFLOW</strong></a></p></td>
 <td><p>See note 1.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_LINE_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546582)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546582" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_LINE_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546582)"><strong>IOCTL_SERIAL_GET_LINE_CONTROL</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_MODEM_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546591) (See note 4.)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546591" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_MODEM_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546591)"><strong>IOCTL_SERIAL_GET_MODEM_CONTROL</strong></a> (See note 4.)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_MODEMSTATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546587)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546587" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_MODEMSTATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546587)"><strong>IOCTL_SERIAL_GET_MODEMSTATUS</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_PROPERTIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546597)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546597" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_PROPERTIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546597)"><strong>IOCTL_SERIAL_GET_PROPERTIES</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_STATS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546600)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546600" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_STATS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546600)"><strong>IOCTL_SERIAL_GET_STATS</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_GET_TIMEOUTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546604)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546604" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_TIMEOUTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546604)"><strong>IOCTL_SERIAL_GET_TIMEOUTS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_GET_WAIT_MASK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546610)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546610" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_GET_WAIT_MASK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546610)"><strong>IOCTL_SERIAL_GET_WAIT_MASK</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_IMMEDIATE_CHAR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546620)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546620" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_IMMEDIATE_CHAR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546620)"><strong>IOCTL_SERIAL_IMMEDIATE_CHAR</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_LSRMST_INSERT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546649)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546649" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_LSRMST_INSERT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546649)"><strong>IOCTL_SERIAL_LSRMST_INSERT</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_PURGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546655)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546655" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_PURGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546655)"><strong>IOCTL_SERIAL_PURGE</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_RESET_DEVICE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546671) (See note 5.)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546671" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_RESET_DEVICE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546671)"><strong>IOCTL_SERIAL_RESET_DEVICE</strong></a> (See note 5.)</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_BAUD_RATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546672)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546672" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_BAUD_RATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546672)"><strong>IOCTL_SERIAL_SET_BAUD_RATE</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_BREAK_OFF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546680)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546680" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_BREAK_OFF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546680)"><strong>IOCTL_SERIAL_SET_BREAK_OFF</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_BREAK_ON</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546685)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546685" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_BREAK_ON&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546685)"><strong>IOCTL_SERIAL_SET_BREAK_ON</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_CHARS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546688)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546688" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_CHARS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546688)"><strong>IOCTL_SERIAL_SET_CHARS</strong></a></p></td>
 <td><p>See note 2.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_DTR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546696)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546696" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_DTR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546696)"><strong>IOCTL_SERIAL_SET_DTR</strong></a></p></td>
 <td><p>See note 1.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_FIFO_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546720)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546720" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_FIFO_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546720)"><strong>IOCTL_SERIAL_SET_FIFO_CONTROL</strong></a></p></td>
 <td><p>See note 1.</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_HANDFLOW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546736) (See note 3.)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546736" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_HANDFLOW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546736)"><strong>IOCTL_SERIAL_SET_HANDFLOW</strong></a> (See note 3.)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_LINE_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546740)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546740" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_LINE_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546740)"><strong>IOCTL_SERIAL_SET_LINE_CONTROL</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_MODEM_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546748) (See note 4.)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546748" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_MODEM_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546748)"><strong>IOCTL_SERIAL_SET_MODEM_CONTROL</strong></a> (See note 4.)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_QUEUE_SIZE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546754)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546754" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_QUEUE_SIZE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546754)"><strong>IOCTL_SERIAL_SET_QUEUE_SIZE</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_RTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546760)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546760" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_RTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546760)"><strong>IOCTL_SERIAL_SET_RTS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_TIMEOUTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546772)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546772" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_TIMEOUTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546772)"><strong>IOCTL_SERIAL_SET_TIMEOUTS</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_WAIT_MASK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546780)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546780" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_WAIT_MASK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546780)"><strong>IOCTL_SERIAL_SET_WAIT_MASK</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_SET_XOFF</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546784)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546784" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_XOFF&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546784)"><strong>IOCTL_SERIAL_SET_XOFF</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_SET_XON</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546793)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546793" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_SET_XON&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546793)"><strong>IOCTL_SERIAL_SET_XON</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IOCTL_SERIAL_WAIT_ON_MASK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546805)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546805" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_WAIT_ON_MASK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546805)"><strong>IOCTL_SERIAL_WAIT_ON_MASK</strong></a></p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IOCTL_SERIAL_XOFF_COUNTER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546812)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546812" data-raw-source="[&lt;strong&gt;IOCTL_SERIAL_XOFF_COUNTER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546812)"><strong>IOCTL_SERIAL_XOFF_COUNTER</strong></a></p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
@@ -263,7 +262,7 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 </tbody>
 </table>
 
- 
+ 
 
 **Notes**
 
@@ -279,9 +278,9 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 
 For more information about **IOCTL\_SERIAL\_*XXX*** requests, see [Serial Device Control Requests](https://msdn.microsoft.com/library/windows/hardware/ff547466). For more information about read and write requests for serial controllers, see [Serial Major I/O Requests](https://msdn.microsoft.com/library/windows/hardware/ff547484).
 
- 
+ 
 
- 
+ 
 
 
 

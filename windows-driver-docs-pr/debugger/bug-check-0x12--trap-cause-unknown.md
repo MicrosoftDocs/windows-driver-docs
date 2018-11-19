@@ -3,7 +3,6 @@ title: Bug Check 0x12 TRAP_CAUSE_UNKNOWN
 description: The TRAP_CAUSE_UNKNOWN bug check has a value of 0x00000012. This indicates that an unknown exception has occurred.
 ms.assetid: 43cbcc34-9df0-4d5f-b823-1cc3cafaa811
 keywords: ["Bug Check 0x12 TRAP_CAUSE_UNKNOWN", "TRAP_CAUSE_UNKNOWN"]
-ms.author: domars
 ms.date: 06/26/2018
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The TRAP\_CAUSE\_UNKNOWN bug check has a value of 0x00000012. This indicates that an unknown exception has occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## TRAP\_CAUSE\_UNKNOWN Parameters
 
@@ -85,11 +84,11 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

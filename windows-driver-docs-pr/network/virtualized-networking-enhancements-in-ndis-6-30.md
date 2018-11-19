@@ -33,9 +33,9 @@ Starting with NDIS 6.30, the Hyper-V Extensible Switch supports an extensibility
 
 For more information about the Hyper-V extensible switch interface, see [Hyper-V Extensible Switch](hyper-v-extensible-switch.md).
 
- 
+ 
 
- 
+ 
 
 
 

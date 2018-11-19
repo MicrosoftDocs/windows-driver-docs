@@ -36,9 +36,9 @@ The class driver uses this request to satisfy [**KSPROPERTY\_PIN\_DATAINTERSECTI
 
 Generally, the resulting data format is immediately used to open a stream in that format. For more information about data formats and data ranges, see [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,9 +20,9 @@ The implementation of status indications in intermediate drivers is nearly ident
 
 When an intermediate driver receives a status indication, it can indicate the status indication up to the higher-level drivers by calling [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600). An intermediate driver should indicate status changes to overlying drivers as appropriate for its specific design requirements.
 
- 
+ 
 
- 
+ 
 
 
 

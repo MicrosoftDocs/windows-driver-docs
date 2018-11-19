@@ -1,6 +1,5 @@
 ---
 title: WS-Discovery Mobile Printing Support
-author: windows-driver-content
 description: WS-Discovery Mobile Printing Support
 ms.assetid: 788E2A1C-FBE9-40CD-A3EB-14A2DE266A2C
 ms.date: 04/20/2017
@@ -94,13 +93,13 @@ The following table provides additional information about the MobilePrinter cate
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](http://go.microsoft.com/fwlink/p/?linkid=509797).
 
- 
+ 
 
- 
+ 
 
 
 

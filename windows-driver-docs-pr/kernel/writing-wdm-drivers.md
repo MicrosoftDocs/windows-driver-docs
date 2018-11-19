@@ -1,6 +1,5 @@
 ---
 title: Writing WDM Drivers
-author: windows-driver-content
 description: Writing WDM Drivers
 ms.assetid: 379305f0-3caa-4c8d-add5-17e8c83f2429
 ms.localizationpriority: medium
@@ -14,7 +13,7 @@ This section discusses the Microsoft Windows Driver Model (WDM) architecture. Th
 
 **Note**  Drivers for versions of Windows NT-based operating systems before Windows 2000 are not supported, and you should update these drivers. The WDM architecture does not support drivers for non-Windows NT-based operating systems (such as Windows 98), and you should rewrite such drivers.
 
- 
+ 
 
 This section is divided into three parts:
 
@@ -28,11 +27,11 @@ This section is divided into three parts:
 
 **Note**  WDM drivers can also use the Windows Driver Frameworks (WDF) library to make some parts of a device driver easier to write. Specifically, kernel-mode drivers can use the Kernel-Mode Driver Framework (KMDF), which is part of WDF. For more information about KMDF for kernel-mode drivers, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296). Note that KMDF does not replace WDM. You must still understand many parts of WDM to write a KMDF driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

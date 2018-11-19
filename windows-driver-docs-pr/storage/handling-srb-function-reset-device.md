@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_RESET_DEVICE
-author: windows-driver-content
 description: Handling SRB_FUNCTION_RESET_DEVICE
 ms.assetid: d95bca21-306e-4598-a8c6-04990885e23d
 keywords:
@@ -25,9 +24,9 @@ The system port driver calls the miniport driver's *HwScsiStartIo* routine with 
 
 If the device reset fails or times out, or if the time-out occurs while the port driver is waiting for a **NextRequest** notification, the port driver calls [*HwScsiResetBus*](https://msdn.microsoft.com/library/windows/hardware/ff557318).
 
- 
+ 
 
- 
+ 
 
 
 

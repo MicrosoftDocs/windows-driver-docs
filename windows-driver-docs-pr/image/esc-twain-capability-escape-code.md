@@ -1,6 +1,5 @@
 ---
 title: ESC_TWAIN_CAPABILITY Escape Code
-author: windows-driver-content
 description: ESC_TWAIN_CAPABILITY Escape Code
 ms.assetid: 3fd3f03b-ea72-4151-a19c-3e71cf3193fa
 ms.date: 04/20/2017
@@ -283,9 +282,9 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

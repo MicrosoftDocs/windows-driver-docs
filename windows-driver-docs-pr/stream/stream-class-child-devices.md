@@ -1,6 +1,5 @@
 ---
 title: Stream Class Child Devices
-author: windows-driver-content
 description: Stream Class Child Devices
 ms.assetid: 2885a77d-5e39-4730-b715-99f0a426f273
 keywords:
@@ -103,11 +102,11 @@ Stream\\MyCrossbar
 **Note**   In DirectX 9.0 and later, the legacy hardware ID, Stream\\*&lt;pnpid&gt;*, is still reported as the lowest rank compatible ID. As a result, legacy drivers continue to work unmodified on these platforms.
 However, as of the DirectX 9.0 release, Microsoft recommends that vendors writing *new or revised drivers that leverage the stream class bus enumerator use the new hardware ID formats*. Drivers can support platforms running earlier versions of stream class by including the old ID in the compatible IDs list in the INF file.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

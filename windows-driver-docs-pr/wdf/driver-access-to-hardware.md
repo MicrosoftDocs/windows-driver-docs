@@ -1,6 +1,5 @@
 ---
 title: Driver Access to Hardware
-author: windows-driver-content
 description: Driver Access to Hardware
 ms.assetid: 66743284-6cdd-467e-b3b4-3d588cd296a5
 keywords:
@@ -35,145 +34,145 @@ The following table lists all of the event callback functions that the framework
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceArmWakeFromS0</em>](https://msdn.microsoft.com/library/windows/hardware/ff540843)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540843" data-raw-source="[&lt;em&gt;EvtDeviceArmWakeFromS0&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540843)"><em>EvtDeviceArmWakeFromS0</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceArmWakeFromSx</em>](https://msdn.microsoft.com/library/windows/hardware/ff540844)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540844" data-raw-source="[&lt;em&gt;EvtDeviceArmWakeFromSx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540844)"><em>EvtDeviceArmWakeFromSx</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceArmWakeFromSxWithReason</em>](https://msdn.microsoft.com/library/windows/hardware/ff540846)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540846" data-raw-source="[&lt;em&gt;EvtDeviceArmWakeFromSxWithReason&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540846)"><em>EvtDeviceArmWakeFromSxWithReason</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceD0Entry</em>](https://msdn.microsoft.com/library/windows/hardware/ff540848)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540848" data-raw-source="[&lt;em&gt;EvtDeviceD0Entry&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540848)"><em>EvtDeviceD0Entry</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceD0Exit</em>](https://msdn.microsoft.com/library/windows/hardware/ff540855)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540855" data-raw-source="[&lt;em&gt;EvtDeviceD0Exit&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540855)"><em>EvtDeviceD0Exit</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceDisableWakeAtBus</em>](https://msdn.microsoft.com/library/windows/hardware/ff540858)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540858" data-raw-source="[&lt;em&gt;EvtDeviceDisableWakeAtBus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540858)"><em>EvtDeviceDisableWakeAtBus</em></a></p></td>
 <td align="left"><p>Parent bus might be at D0. The device might be at D0.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceDisarmWakeFromS0</em>](https://msdn.microsoft.com/library/windows/hardware/ff540860)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540860" data-raw-source="[&lt;em&gt;EvtDeviceDisarmWakeFromS0&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540860)"><em>EvtDeviceDisarmWakeFromS0</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceDisarmWakeFromSx</em>](https://msdn.microsoft.com/library/windows/hardware/ff540862)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540862" data-raw-source="[&lt;em&gt;EvtDeviceDisarmWakeFromSx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540862)"><em>EvtDeviceDisarmWakeFromSx</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceEject</em>](https://msdn.microsoft.com/library/windows/hardware/ff540863)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540863" data-raw-source="[&lt;em&gt;EvtDeviceEject&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540863)"><em>EvtDeviceEject</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceEnableWakeAtBus</em>](https://msdn.microsoft.com/library/windows/hardware/ff540866)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540866" data-raw-source="[&lt;em&gt;EvtDeviceEnableWakeAtBus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540866)"><em>EvtDeviceEnableWakeAtBus</em></a></p></td>
 <td align="left"><p>Parent bus is at D0, but the device might not be.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceFileCreate</em>](https://msdn.microsoft.com/library/windows/hardware/ff540868)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540868" data-raw-source="[&lt;em&gt;EvtDeviceFileCreate&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540868)"><em>EvtDeviceFileCreate</em></a></p></td>
 <td align="left"><p>Maybe</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceFilterAddResourceRequirements</em>](https://msdn.microsoft.com/library/windows/hardware/ff540870)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540870" data-raw-source="[&lt;em&gt;EvtDeviceFilterAddResourceRequirements&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540870)"><em>EvtDeviceFilterAddResourceRequirements</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceFilterRemoveResourceRequirements</em>](https://msdn.microsoft.com/library/windows/hardware/ff540872)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540872" data-raw-source="[&lt;em&gt;EvtDeviceFilterRemoveResourceRequirements&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540872)"><em>EvtDeviceFilterRemoveResourceRequirements</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDevicePrepareHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540880)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540880" data-raw-source="[&lt;em&gt;EvtDevicePrepareHardware&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540880)"><em>EvtDevicePrepareHardware</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceRelationsQuery</em>](https://msdn.microsoft.com/library/windows/hardware/ff540886)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540886" data-raw-source="[&lt;em&gt;EvtDeviceRelationsQuery&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540886)"><em>EvtDeviceRelationsQuery</em></a></p></td>
 <td align="left"><p>Yes, but the device might be in a sleeping state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceReleaseHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540890)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540890" data-raw-source="[&lt;em&gt;EvtDeviceReleaseHardware&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540890)"><em>EvtDeviceReleaseHardware</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceRemoveAddedResources</em>](https://msdn.microsoft.com/library/windows/hardware/ff540892)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540892" data-raw-source="[&lt;em&gt;EvtDeviceRemoveAddedResources&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540892)"><em>EvtDeviceRemoveAddedResources</em></a></p></td>
 <td align="left"><p>Yes, but resources have not been assigned to the device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceResourceRequirementsQuery</em>](https://msdn.microsoft.com/library/windows/hardware/ff540894)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540894" data-raw-source="[&lt;em&gt;EvtDeviceResourceRequirementsQuery&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540894)"><em>EvtDeviceResourceRequirementsQuery</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceResourcesQuery</em>](https://msdn.microsoft.com/library/windows/hardware/ff540895)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540895" data-raw-source="[&lt;em&gt;EvtDeviceResourcesQuery&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540895)"><em>EvtDeviceResourcesQuery</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceSelfManagedIoCleanup</em>](https://msdn.microsoft.com/library/windows/hardware/ff540898)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540898" data-raw-source="[&lt;em&gt;EvtDeviceSelfManagedIoCleanup&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540898)"><em>EvtDeviceSelfManagedIoCleanup</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceSelfManagedIoFlush</em>](https://msdn.microsoft.com/library/windows/hardware/ff540901)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540901" data-raw-source="[&lt;em&gt;EvtDeviceSelfManagedIoFlush&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540901)"><em>EvtDeviceSelfManagedIoFlush</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceSelfManagedIoInit</em>](https://msdn.microsoft.com/library/windows/hardware/ff540902)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540902" data-raw-source="[&lt;em&gt;EvtDeviceSelfManagedIoInit&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540902)"><em>EvtDeviceSelfManagedIoInit</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceSelfManagedIoRestart</em>](https://msdn.microsoft.com/library/windows/hardware/ff540905)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540905" data-raw-source="[&lt;em&gt;EvtDeviceSelfManagedIoRestart&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540905)"><em>EvtDeviceSelfManagedIoRestart</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceSelfManagedIoSuspend</em>](https://msdn.microsoft.com/library/windows/hardware/ff540907)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540907" data-raw-source="[&lt;em&gt;EvtDeviceSelfManagedIoSuspend&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540907)"><em>EvtDeviceSelfManagedIoSuspend</em></a></p></td>
 <td align="left"><p>No, if device has been surprise-removed; otherwise, yes.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceSetLock</em>](https://msdn.microsoft.com/library/windows/hardware/ff540909)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540909" data-raw-source="[&lt;em&gt;EvtDeviceSetLock&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540909)"><em>EvtDeviceSetLock</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceSurpriseRemoval</em>](https://msdn.microsoft.com/library/windows/hardware/ff540913)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540913" data-raw-source="[&lt;em&gt;EvtDeviceSurpriseRemoval&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540913)"><em>EvtDeviceSurpriseRemoval</em></a></p></td>
 <td align="left"><p>No</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceUsageNotification</em>](https://msdn.microsoft.com/library/windows/hardware/ff540915)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540915" data-raw-source="[&lt;em&gt;EvtDeviceUsageNotification&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540915)"><em>EvtDeviceUsageNotification</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceWakeFromS0Triggered</em>](https://msdn.microsoft.com/library/windows/hardware/ff540919)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540919" data-raw-source="[&lt;em&gt;EvtDeviceWakeFromS0Triggered&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540919)"><em>EvtDeviceWakeFromS0Triggered</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDeviceWakeFromSxTriggered</em>](https://msdn.microsoft.com/library/windows/hardware/ff540923)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540923" data-raw-source="[&lt;em&gt;EvtDeviceWakeFromSxTriggered&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540923)"><em>EvtDeviceWakeFromSxTriggered</em></a></p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDeviceWdmIrpPreprocess</em>](https://msdn.microsoft.com/library/windows/hardware/ff540925)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540925" data-raw-source="[&lt;em&gt;EvtDeviceWdmIrpPreprocess&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540925)"><em>EvtDeviceWdmIrpPreprocess</em></a></p></td>
 <td align="left"><p>Depends on the IRP.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDevicePnpStateChange</em>](https://msdn.microsoft.com/library/windows/hardware/ff540874)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540874" data-raw-source="[&lt;em&gt;EvtDevicePnpStateChange&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540874)"><em>EvtDevicePnpStateChange</em></a></p></td>
 <td align="left"><p>Depends on the state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>EvtDevicePowerPolicyStateChange</em>](https://msdn.microsoft.com/library/windows/hardware/ff540876)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540876" data-raw-source="[&lt;em&gt;EvtDevicePowerPolicyStateChange&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540876)"><em>EvtDevicePowerPolicyStateChange</em></a></p></td>
 <td align="left"><p>Depends on the state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>EvtDevicePowerStateChange</em>](https://msdn.microsoft.com/library/windows/hardware/ff540878)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540878" data-raw-source="[&lt;em&gt;EvtDevicePowerStateChange&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540878)"><em>EvtDevicePowerStateChange</em></a></p></td>
 <td align="left"><p>Depends on the state.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

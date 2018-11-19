@@ -3,7 +3,6 @@ title: ks.enumdevobj
 description: The ks.enumdevobj extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device.
 ms.assetid: 3730fe3e-df7a-47fd-825b-ef31be6f7620
 keywords: ["ks.enumdevobj Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies a pointer to a WDM device object.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,7 +60,7 @@ The output from [**!ks.allstreams**](-ks-allstreams.md) can be used as the input
 
 Here is an example of the **!ks.enumdevobj** display:
 
-```
+```dbgcmd
 kd> !enumdevobj 8241c020
 WDM device object 8241c020:
     Corresponding KSDEVICE        823b8430
@@ -69,9 +68,9 @@ WDM device object 8241c020:
         829493c4 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

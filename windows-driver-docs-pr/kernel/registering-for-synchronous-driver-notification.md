@@ -1,6 +1,5 @@
 ---
 title: Registering for Synchronous Driver Notification
-author: windows-driver-content
 description: Registering for Synchronous Driver Notification
 ms.assetid: 852a2b69-c71f-4127-946e-8179954d504c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "synchronous notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , registering", "synchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
@@ -91,9 +90,9 @@ VOID
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

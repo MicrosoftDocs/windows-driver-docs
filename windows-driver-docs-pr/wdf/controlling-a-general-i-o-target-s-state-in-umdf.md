@@ -1,6 +1,5 @@
 ---
 title: Controlling a General I/O Target's State in UMDF
-author: windows-driver-content
 description: Controlling a General I/O Target's State in UMDF
 ms.assetid: 479487b2-5ce5-4522-b195-58ee50d210b6
 keywords:
@@ -73,9 +72,9 @@ Informs the driver that an attempt to remove a remote I/O target's device has be
 
 Drivers can call [**IWDFRemoteTarget::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff560265) to obtain the current state of a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Building DbgEng Extensions
 description: Building DbgEng Extensions
 ms.assetid: e2cf8a01-2099-4ad7-98ac-1a20c76a2e0a
 keywords: ["DbgEng Extensions, building", "Build utility (build.exe), building DbgEng extensions"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -37,9 +36,9 @@ To build an extension, use the following procedure:
 
 3.  Select **Build** and then **Build Solution** from the menu in Visual Studio.
 
- 
+ 
 
- 
+ 
 
 
 

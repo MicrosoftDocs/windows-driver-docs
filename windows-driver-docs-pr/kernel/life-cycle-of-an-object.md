@@ -1,6 +1,5 @@
 ---
 title: Life Cycle of an Object
-author: windows-driver-content
 description: Life Cycle of an Object
 ms.assetid: e81bfce6-27c4-4916-adc8-9c014d02bee7
 keywords: ["object life cycles WDK kernel", "life cycles WDK objects", "referencing objects", "object reference counts WDK kernel", "temporary objects WDK kernel", "permanent objects WDK kernel", "reference counts WDK objects", "freed objects WDK kernel", "object temporary status WDK kernel", "object permanent status WDK kernel", "automatic object deletions WDK kernel", "object tracking WDK kernel", "open object handles WDK kernel", "counting references WDK objects"]
@@ -58,9 +57,9 @@ An object can be made permanent at the time of its creation by specifying the OB
 
 To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566477) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
 
- 
+ 
 
- 
+ 
 
 
 

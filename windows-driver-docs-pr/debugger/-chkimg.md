@@ -3,7 +3,6 @@ title: chkimg
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 ms.assetid: 8079676c-1138-4c60-95df-62fd270fee62
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -120,7 +119,7 @@ Specifies the contents of the log file. *LogOptions* is a string that consists o
 </tbody>
 </table>
 
- 
+ 
 
 *LogOptions* can also include some, or none, of the following additional options.
 
@@ -147,7 +146,7 @@ Specifies the contents of the log file. *LogOptions* is a string that consists o
 </tbody>
 </table>
 
- 
+ 
 
 For example, if *LogOptions* is **rSewo**, each line of the log file contains the relative address and section name of the mismatch location and the expected and actual values at that location. This option also causes any previous file to be overwritten. You can use the **-mmw** switch multiple times if you want to create several log files that have different options. You can create up to 10 log files at the same time.
 
@@ -175,7 +174,7 @@ Specifies the module to check. *Module* can be the name of the module, the start
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -194,11 +193,11 @@ All sections of the file are compared, except for sections that are discardable,
 
 **Note**   If you use the **-f** option to fix image mismatches, **!chkimg** fixes only those mismatches that it considers to be errors. For example, **!chkimg** does not change an 0x90 byte to an 0xF0 byte unless you include **-noplock**.
 
- 
+ 
 
 When you include the **-d** option, **!chkimg** displays a summary of all mismatched areas while the scan is occurring. Each mismatch is displayed on two lines. The first line includes the start of the range, the end of the range, the size of the range, the symbol name and offset that corresponds to the start of the range, and the number of bytes since the last error (in parentheses). The second line is enclosed in brackets and includes the hexadecimal byte values that were expected, a colon, and then the hexadecimal byte values that were actually encountered in the image. If the range is longer than 8 bytes, only the first 8 bytes are shown before the colon and after the colon. The following example shows this situation.
 
-```
+```dbgcmd
 be000015-be000016  2 bytes - win32k!VeryUsefulFunction+15 (0x8)
      [ 85 dd:95 23 ]
 ```
@@ -207,13 +206,13 @@ Occasionally, a driver alters part of the Microsoft Windows kernel by using hook
 
 You can also use **!chkimg** together with the [**!for\_each\_module**](-for-each-module.md) extension to check the image of each loaded module. The following example shows this situation.
 
-```
+```dbgcmd
 !for_each_module !chkimg @#ModuleName 
 ```
 
 Suppose that you encounter a bug check, for example, and begin by using [**!analyze**](-analyze.md).
 
-```
+```dbgcmd
 kd> !analyze 
 ....
 BugCheck 1000008E, {c0000005, bf920e48, baf75b38, 0}
@@ -224,14 +223,14 @@ CHKIMG_EXTENSION: !chkimg !win32k
 
 In this example, the [**!analyze**](-analyze.md) output suggests that memory corruption has occurred and includes a CHKIMG\_EXTENSION line that suggests that Win32k.sys could be the corrupted module. (Even if this line is not present, you might consider possible corruption in the module on top of the stack.) Start by using **!chkimg** without any switches, as the following example shows.
 
-```
+```dbgcmd
 kd> !chkimg win32k
 Number of different bytes for win32k: 31
 ```
 
 The following example shows that there are indeed memory corruptions. Use **!chkimg -d** to display all of the errors for the Win32k module.
 
-```
+```dbgcmd
 kd> !chkimg win32k -d
     bf920e40-bf920e46  7 bytes - win32k!HFDBASIS32::vSteadyState+1f
         [ 78 08 d3 78 0c c2 04:00 00 00 00 00 01 00 ]
@@ -242,7 +241,7 @@ Number of different bytes for win32k: 31
 
 When you try to disassemble the corrupted image of the second section that is listed, the following output might occur.
 
-```
+```dbgcmd
 kd> u  win32k!HFDBASIS32::vHalveStepSize
 win32k!HFDBASIS32::vHalveStepSize:
 bf920e48 0000             add     [eax],al
@@ -257,7 +256,7 @@ bf920e58 8b510c           mov     edx,[ecx+0xc]
 
 Then, use **!chkimg -f**to fix the memory corruption.
 
-```
+```dbgcmd
 kd> !chkimg win32k -f
 Warning: Any detected errors will be fixed to what we expect!
 Number of different bytes for win32k: 31 (fixed)
@@ -265,7 +264,7 @@ Number of different bytes for win32k: 31 (fixed)
 
 Now you can disassemble the corrected view and see the changes that you have made.
 
-```
+```dbgcmd
 kd> u  win32k!HFDBASIS32::vHalveStepSize
 win32k!HFDBASIS32::vHalveStepSize:
 bf920e48 8b510c           mov     edx,[ecx+0xc]
@@ -278,9 +277,9 @@ bf920e57 2bf0             sub     esi,eax
 bf920e59 d1fe             sar     esi,1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
-author: windows-driver-content
 description: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
 ms.assetid: 741d504e-7e61-4f60-a8cf-e4ea92f0654e
 ms.localizationpriority: medium
@@ -21,9 +20,9 @@ A higher-level driver can call [**IoCancelIrp**](https://msdn.microsoft.com/libr
 
 A higher-level driver must not call **IoCancelIrp** with an IRP that it did not allocate.
 
- 
+ 
 
- 
+ 
 
 
 

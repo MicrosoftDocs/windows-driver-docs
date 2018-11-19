@@ -1,6 +1,5 @@
 ---
 title: Subscribing for presence events
-author: windows-driver-content
 description: Subscribing for presence events
 ms.assetid: 4AA6C7DA-5301-4356-8AF9-5567322FAB46
 keywords:
@@ -20,7 +19,7 @@ A presence subscription is represented as a unique open handle within the driver
 
 **Note**  This interface does not currently provide the ability to tell which proximate device was removed or which subscriptions arrive from which proximate device when two devices are both proximate.
 
- 
+ 
 
 Presence events are implemented using the typical subscription path. Messages with protocol “DeviceArrived” or “DeviceDeparted” MUST be interpreted as special subscriptions. The arrival message MUST be the first message delivered immediately before delivering received messages. The departure message MUST be the last message delivered after no more messages are possible.
 
@@ -42,17 +41,17 @@ The driver MUST accept and report duplicate subscriptions, even if subscribed by
 
     **Note**  For NFC, this equates to LLCP support.
 
-     
+     
 
 -   If the first device to become proximate is merely a tag-type device (for example, an NFC Forum Tag), then the driver MUST clear the least-significant bit in the payload of the DeviceArrived message.
 
-     
+     
 
 -   The payload for a DeviceDeparted message MUST be a single DWORD with a value of 0.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

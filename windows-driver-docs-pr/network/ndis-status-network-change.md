@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_NETWORK_CHANGE
-author: windows-driver-content
 description: The NDIS_STATUS_NETWORK_CHANGE status indicates a network change to allow overlying drivers to initiate renegotiation of network addresses.
 ms.assetid: feb6bb71-7147-43dd-b09d-cb41404164eb
 ms.date: 07/18/2017
@@ -25,7 +24,7 @@ NDIS 6.0 and later miniport drivers should generate the NDIS\_STATUS\_NETWORK\_C
 
 **Note**  Although the media-connected state is not precisely defined, this state can be loosely defined as - the state in which the miniport adapter is able to transmit and receive network data. Media-connected is not directly related to link authentication status. The native WiFi 802.3 interface is unable to send or receive packets until after the link is authenticated. In this case, the media-connected state is coincident with the link-authenticated state in native 802.11.
 
- 
+ 
 
 NDIS supplies one of the following NDIS\_NETWORK\_CHANGE\_TYPE values in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure:
 
@@ -69,9 +68,9 @@ Requirements
 
 [**NDIS\_STATUS\_MEDIA\_CONNECT**](ndis-status-media-connect.md)
 
- 
+ 
 
- 
+ 
 
 
 

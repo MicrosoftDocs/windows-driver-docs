@@ -2,6 +2,7 @@
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
 ms.assetid: b6748bff-d730-434e-9316-dc7b7222b727
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -113,9 +114,9 @@ N .\ManifestFiles\ GUID.devicemanifest-ms
 
 For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://msdn.microsoft.com/library/windows/hardware/hh801885.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

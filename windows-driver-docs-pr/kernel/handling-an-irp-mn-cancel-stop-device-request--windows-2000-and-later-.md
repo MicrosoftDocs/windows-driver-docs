@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and later)
-author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and later)
 ms.assetid: 2e5e835f-d327-4bde-bdfd-8a71a47b0ac0
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]
@@ -48,9 +47,9 @@ A driver handles an **IRP\_MN\_CANCEL\_STOP\_DEVICE** request with a procedure s
 
 A driver might receive a spurious cancel-stop request when the device is started and active. This can occur, for example, if the driver (or a driver higher in the device stack) failed an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request. When a device is started and active, drivers can safely succeed spurious cancel-stop requests for the device.
 
- 
+ 
 
- 
+ 
 
 
 

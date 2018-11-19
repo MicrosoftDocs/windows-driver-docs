@@ -1,6 +1,5 @@
 ---
 title: Opening and Closing a Parallel Port
-author: windows-driver-content
 description: Opening and Closing a Parallel Port
 ms.assetid: 2183ffd9-8265-4848-b5d1-703643e0d0e6
 keywords:
@@ -21,9 +20,9 @@ Clients can share a parallel port. A client must open a file on a parallel port 
 
 Note that in a Plug and Play environment, a device can be removed or added whenever there are no open files on it. In general, every time a parallel port is added, Plug and Play assigns a different location and resources.
 
- 
+ 
 
- 
+ 
 
 
 

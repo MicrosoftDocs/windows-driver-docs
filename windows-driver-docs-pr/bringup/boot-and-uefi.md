@@ -1,6 +1,5 @@
 ---
 title: Boot and UEFI
-author: windows-driver-content
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
 ms.assetid: eff3f381-85fe-4bb3-a57f-3889ca8929f5
 ms.date: 04/20/2017
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 A device running Windows 10 has several requirements for booting into the OS. After the device's firmware initializes all the hardware, the device needs to ensure that there is enough power to boot. Afterwards, the device needs to ensure that the device is booting into the appropriate OS depending on if the user wants to perform an update or a restore on the device, or if the user wants to boot the device into the main OS.
 
@@ -66,7 +65,7 @@ The Windows Boot Manager is a Microsoft-provided UEFI application that sets up t
 
 **Important**  All components inside the boot environment are provided by Microsoft and cannot be modified, replaced, or omitted by OEMs.
 
- 
+ 
 
 Boot applications implement functionality for the following scenarios:
 

@@ -47,13 +47,13 @@ Clients use the KSPROPERTY\_CLOCK\_FUNCTIONTABLE property to retrieve the entry 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSCLOCK_FUNCTIONTABLE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561020)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561020" data-raw-source="[&lt;strong&gt;KSCLOCK_FUNCTIONTABLE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561020)"><strong>KSCLOCK_FUNCTIONTABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -87,9 +87,9 @@ Requirements
 
 [**KeQueryInterruptTime**](https://msdn.microsoft.com/library/windows/hardware/ff553025)
 
- 
+ 
 
- 
+ 
 
 
 

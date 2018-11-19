@@ -1,6 +1,5 @@
 ---
 title: Error Record Persistence
-author: windows-driver-content
 description: Error Record Persistence
 ms.assetid: fe43f93a-59bd-4158-ad00-8fef595528cb
 keywords:
@@ -37,9 +36,9 @@ For more information about how to implement a PSHED plug-in that participates in
 
 For more information about error record persistence, see [Error Record Persistence Mechanism](error-record-persistence-mechanism.md).
 
- 
+ 
 
- 
+ 
 
 
 

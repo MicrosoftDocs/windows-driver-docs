@@ -21,9 +21,9 @@ Index buffers are created, locked, unlocked and destroyed with the same driver e
 
 Unlike many other surface types, a driver does not need to set the capability DDSCAPS2\_INDEXBUFFER when reporting its capabilities to the runtime to receive driver calls for index buffer creation, destruction, and locking. A DirectX 8.0 driver that supports vertex buffers is assumed to support index buffers also. If the underlying hardware has no direct support for index buffers, then the driver should handle index buffer creation by allocating system memory for the surface.
 
- 
+ 
 
- 
+ 
 
 
 

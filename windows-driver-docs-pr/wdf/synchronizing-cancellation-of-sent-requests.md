@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Cancellation of Sent Requests
-author: windows-driver-content
 description: Synchronizing Cancellation of Sent Requests
 ms.assetid: e7ec65c9-bc7b-46ea-853d-3e23b1763666
 keywords:
@@ -39,9 +38,9 @@ Before attempting to cancel a request that the driver has forwarded to an I/O ta
 
 This sequence ensures that if the I/O target completes the request before the driver calls [**WdfRequestCancelSentRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549941), the request's handle is still valid (because of the incremented reference count) even if the driver's [*CompletionRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff540745) callback function calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).
 
- 
+ 
 
- 
+ 
 
 
 

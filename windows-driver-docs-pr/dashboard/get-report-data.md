@@ -1,8 +1,8 @@
 ---
 title: Get report data
 description: Query the status of a failure report for Windows driver submission and get the failure details report.
-author: EliotSeattle
 ms.author: shganesh
+ms.topic: article
 ms.date: 09/01/2018
 ms.localizationpriority: medium
 ---

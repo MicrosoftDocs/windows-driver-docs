@@ -13,15 +13,15 @@ The [AllSignersEqual Group Policy](allsignersequal-group-policy--windows-vista-a
 
 **Note**  In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. Starting with Windows 7, this Group Policy is enabled by default.
 
- 
+ 
 
 After you enable the AllSignersEqual Group Policy, this configuration change applies to all subsequent driver installations on the target system until you disable the AllSignersEqual Group Policy.
 
 For more information about how to configure the **AllSignersEqual** Group Policy to rank driver signatures equally, see [AllSignersEqual Group Policy (Windows Vista and Later)](allsignersequal-group-policy--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

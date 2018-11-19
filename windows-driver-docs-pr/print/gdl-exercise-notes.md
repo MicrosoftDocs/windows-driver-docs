@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise Notes
-author: windows-driver-content
 description: GDL Exercise Notes
 ms.assetid: 39013410-ad8e-4b1a-9db7-2ec541f08989
 keywords:
@@ -69,7 +68,7 @@ The \*Name and \*POption entries map to several templates, each with different s
 
 **Note**   These exercises establish some basic templates and subsequently derived variants as the schema became more detailed. This process mimics the way a schema evolves in real-life. Inheritance enabled the exercise schema to be extended without changing any previously defined templates. This feature enables third parties to extend the master schema and also ensures that any third-party schema extension remains compatible with users of the original master schema.
 
- 
+ 
 
 The exercise answers that are shown are not unique. For example, you could have derived the templates MIN\_SIZE and MAX\_SIZE from PAPERDIMENSIONS in the following manner.
 
@@ -94,9 +93,9 @@ Typically, when a template declares NAME to be a \*Member, this declaration impl
 
 If you anticipate the specialization of NAME into PAPER\_SIZE\_OPT\_NAME and INPUTTRAY\_OPT\_NAME during the original design of the schema, a different schema implementation would result simply by removing NAME from the \*Members list of GENERIC\_OPTION. This change would make it unnecessary to redefine \*Name. A further design refinement would have NAME, PAPER\_SIZE\_OPT\_NAME, and INPUTTRAY\_OPT\_NAME inheriting from a common virtual template, because that situation more accurately reflects the relationship between these keywords.
 
- 
+ 
 
- 
+ 
 
 
 

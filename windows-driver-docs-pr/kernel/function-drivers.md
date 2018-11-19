@@ -1,6 +1,5 @@
 ---
 title: Function Drivers
-author: windows-driver-content
 description: Function Drivers
 ms.assetid: a6ac329b-ffb0-4bd3-9d54-195fa025d532
 keywords: ["function drivers WDK WDM", "raw mode WDK WDM", "WDM function drivers WDK"]
@@ -22,9 +21,9 @@ The function driver for a device can be implemented as a driver/minidriver pair,
 
 If a device is being driven in raw mode, it has no function driver and no upper or lower-level filter drivers. All raw-mode I/O is done by the bus driver and optional bus filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

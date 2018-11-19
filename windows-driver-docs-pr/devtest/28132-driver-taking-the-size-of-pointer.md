@@ -27,9 +27,9 @@ warning C28132: Taking the size of pointer
 </tbody>
 </table>
 
- 
+ 
 
-The driver is taking the size of a pointer variable, not the size of the value that is pointed to. If the driver needs the size of the pointed-to value, change the code so that it references the value. If the driver actually needs the size of the pointer, take the size of the pointer type (for example, LPSTR, **char\*** or even **void\***) to clarify that this is the intent.
+The driver is taking the size of a pointer variable, not the size of the value that is pointed to. If the driver needs the size of the pointed-to value, change the code so that it references the value. If the driver actually needs the size of the pointer, take the size of the pointer type (for example, LPSTR, **char\\*** or even **void\\***) to clarify that this is the intent.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -45,9 +45,9 @@ The following code example avoids this warning.
 memset(b, 0, sizeof(*b));
 ```
 
- 
+ 
 
- 
+ 
 
 
 

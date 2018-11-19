@@ -1,6 +1,5 @@
 ---
 title: Using Extra Create Parameters with an IRP_MJ_CREATE Operation
-author: windows-driver-content
 description: Using Extra Create Parameters with an IRP_MJ_CREATE Operation
 ms.assetid: e32aeec6-1a0a-4d21-8358-89d9fc0a15eb
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ The following sections describe how to define, attach, and use ECPs. The followi
 
 [System-Defined ECPs](system-defined-ecps.md)
 
- 
+ 
 
- 
+ 
 
 
 

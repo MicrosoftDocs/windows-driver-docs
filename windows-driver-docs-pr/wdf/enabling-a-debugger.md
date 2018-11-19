@@ -1,6 +1,5 @@
 ---
 title: How to Enable Debugging of a UMDF Driver
-author: windows-driver-content
 description: How to Enable Debugging of a UMDF Driver
 ms.assetid: ea37eb7b-09fa-4c8d-aff7-273b07bc0007
 keywords:
@@ -94,18 +93,18 @@ In UMDF 1.11 or later, before breaking into the kernel debugger, the reflector a
 
 Use these steps:
 
-1.  Disable pooling. turn on **DebugModeFlags** and list your driver in **DebugModeBinaries**
-2.  If your driver uses UMDF 1.11 or later, **HostFailKdDebugBreak** is enabled by default. Skip this step.
+1. Disable pooling. turn on **DebugModeFlags** and list your driver in **DebugModeBinaries**
+2. If your driver uses UMDF 1.11 or later, **HostFailKdDebugBreak** is enabled by default. Skip this step.
 
-    If your driver uses UMDF 1.9 or earlier, set **HostFailKdDebugBreak** to 1.
+   If your driver uses UMDF 1.9 or earlier, set **HostFailKdDebugBreak** to 1.
 
-3.  If you are debugging problems related to timeouts, turn off **HostProcessDbgBreakOnDriverStart** and **HostProcessDbgBreakOnDriverLoad**. (When **HostProcessDbgBreakOnDriverStart** or **HostProcessDbgBreakOnDriverLoad** is non-zero, the framework disables timeouts so that the reflector does not terminate the host while a user-mode debugger is attached to the host process.) If you need to debug driver initialization code, instead of using these two values, try issuing the following command in WinDbg before your driver loads: **sxe ld:***MyDriver.dll* (break on module load)
-4.  Reboot if you made any registry changes.
-5.  Depending on the selections you made above, your remote kernel debugger should break in when the driver loads or unloads on the target.
+3. If you are debugging problems related to timeouts, turn off **HostProcessDbgBreakOnDriverStart** and **HostProcessDbgBreakOnDriverLoad**. (When **HostProcessDbgBreakOnDriverStart** or **HostProcessDbgBreakOnDriverLoad** is non-zero, the framework disables timeouts so that the reflector does not terminate the host while a user-mode debugger is attached to the host process.) If you need to debug driver initialization code, instead of using these two values, try issuing the following command in WinDbg before your driver loads: **sxe ld:**<em>MyDriver.dll</em> (break on module load)
+4. Reboot if you made any registry changes.
+5. Depending on the selections you made above, your remote kernel debugger should break in when the driver loads or unloads on the target.
 
- 
+ 
 
- 
+ 
 
 
 

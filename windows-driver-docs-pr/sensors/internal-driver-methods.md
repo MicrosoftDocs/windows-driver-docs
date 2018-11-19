@@ -1,6 +1,5 @@
 ---
 title: Internal helper methods
-author: windows-driver-content
 description: A sensor driver supports a number of internal helper methods that perform tasks like polling for data, setting properties, retrieving properties, updating the device state, and supporting events.
 ms.assetid: BF5956FE-E1B6-476A-9B6E-86B400DE0A20
 ms.date: 04/20/2017

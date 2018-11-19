@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Recovery
-author: windows-driver-content
 description: Participating in Error Recovery
 ms.assetid: 79f534b2-a5eb-4249-bfff-2f40c25805a6
 keywords:
@@ -67,9 +66,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error recovery must specify the **PshedFAErrorRecovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Event Objects
-author: windows-driver-content
 description: Event Objects
 ms.assetid: da9df4a2-26cf-4861-80ca-1790ca059e45
 keywords: ["kernel dispatcher objects WDK , event objects", "dispatcher objects WDK kernel , event objects", "event objects WDK kernel"]
@@ -22,9 +21,9 @@ This section contains the following topics:
 
 [Standard Event Objects](standard-event-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

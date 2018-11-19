@@ -1,6 +1,5 @@
 ---
 title: Deleting a Per-Stream Context
-author: windows-driver-content
 description: Deleting a Per-Stream Context
 ms.assetid: 293a2ba2-af8a-4c1b-bc35-5e37e6e84d57
 keywords:
@@ -31,7 +30,7 @@ When a filter driver needs to delete its per-stream context for a file stream wh
 
 **Note**   After your filter driver has called [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) to associate a per-stream context structure with a file stream, it must call [**FsRtlRemovePerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff547238) for the context before freeing it. Otherwise, the system will crash when the file stream is closed.
 
- 
+ 
 
 ### <span id="When_the_Per-Stream_Context_s_FreeCallback_Is_Called"></span><span id="when_the_per-stream_context_s_freecallback_is_called"></span><span id="WHEN_THE_PER-STREAM_CONTEXT_S_FREECALLBACK_IS_CALLED"></span>When the Per-Stream Context's FreeCallback Is Called
 
@@ -39,11 +38,11 @@ When the file stream is being closed or deleted, the file system frees its own s
 
 **Note**   After your filter driver has called [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) to associate a per-stream context structure with a file stream, the file system is responsible for ensuring that the [**FreeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547357) routine for the filter's per-stream context is called when there are no longer any open references to the stream.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

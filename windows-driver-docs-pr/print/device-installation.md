@@ -1,6 +1,5 @@
 ---
 title: Device Installation
-author: windows-driver-content
 description: Device Installation
 ms.assetid: 47bbe4cd-bcbc-42d5-9513-9ea659c123dc
 keywords:
@@ -40,12 +39,12 @@ Initial installation of your port-connected device can occur in many ways, and t
 </tr>
 <tr class="odd">
 <td><p>System in Sleep State (S1-S4)</p></td>
-<td><p>See [Power Management](power-management.md).</p></td>
+<td><p>See <a href="power-management.md" data-raw-source="[Power Management](power-management.md)">Power Management</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](http://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
 
@@ -121,9 +120,9 @@ To test a printer on a hub, complete the following:
 
 6.  Disconnect a printer from one port and connect it to another port, and then verify that it uninstalls successfully from the old port and reinstalls successfully to the new port
 
- 
+ 
 
- 
+ 
 
 
 

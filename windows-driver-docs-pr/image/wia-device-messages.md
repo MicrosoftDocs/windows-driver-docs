@@ -1,6 +1,5 @@
 ---
 title: WIA Device Messages
-author: windows-driver-content
 description: WIA Device Messages
 ms.assetid: b498a75d-1252-4f13-ae62-9a53491c2bde
 ms.date: 04/20/2017
@@ -90,9 +89,9 @@ Currently, the WIA default error handler supports the following device messages:
 
 -   WIA\_ERROR\_PAPER\_EMPTY
 
- 
+ 
 
- 
+ 
 
 
 

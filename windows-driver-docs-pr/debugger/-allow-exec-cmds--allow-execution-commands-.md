@@ -3,7 +3,6 @@ title: .allow_exec_cmds (Allow Execution Commands)
 description: The .allow_exec_cmds command controls whether execution commands can be used.
 ms.assetid: c6e37cf1-42cc-4f82-9eb8-d252f0b6e196
 keywords: [".allow_exec_cmds (Allow Execution Commands) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -19,10 +18,11 @@ ms.localizationpriority: medium
 
 The **.allow\_exec\_cmds** command controls whether execution commands can be used.
 
-    .allow_exec_cmds 0 
-    .allow_exec_cmds 1 
-    .allow_exec_cmds 
-
+```dbgcmd
+.allow_exec_cmds 0 
+.allow_exec_cmds 1 
+.allow_exec_cmds 
+```
 
 ## <span id="ddk_meta_allow_execution_commands_dbg"></span><span id="DDK_META_ALLOW_EXECUTION_COMMANDS_DBG"></span>Parameters
 
@@ -56,7 +56,7 @@ Allows execution commands to be used.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +69,9 @@ With no parameters, **.allow\_exec\_cmds** will display whether execution comman
 
 Execution commands include [**g (Go)**](g--go-.md), [**t (Trace)**](t--trace-.md), [**p (Step)**](p--step-.md), and any other command or WinDbg graphical interface action that would cause the target to execute.
 
- 
+ 
 
- 
+ 
 
 
 

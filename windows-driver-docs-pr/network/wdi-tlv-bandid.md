@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BANDID
-author: windows-driver-content
 description: WDI_TLV_BANDID is a TLV that contains a band ID.
 ms.assetid: 1D0CBFED-C460-447B-BB03-CEAE57EE09F2
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|------------------------------|
 | UINT32 | The identifier for the band. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

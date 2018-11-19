@@ -1,6 +1,5 @@
 ---
 title: WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro
-author: windows-driver-content
 description: The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object's driver-defined context information into the object's WDF_OBJECT_ATTRIBUTES structure.
 ms.assetid: cac8b8f4-cc6b-4e6c-ad0b-dee58e4673ff
 keywords:
@@ -21,8 +20,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
-    _attributes,
-    _contexttype
+    _attributes,
+    _contexttype
 );
 ```
 
@@ -60,7 +59,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -88,9 +87,9 @@ Requirements
 
 [**WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE**](wdf-object-attributes-init-context-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

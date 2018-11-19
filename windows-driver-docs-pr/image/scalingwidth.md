@@ -89,7 +89,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Scaling</strong>](scaling.md)</p></td>
+<td><p><a href="scaling.md" data-raw-source="[&lt;strong&gt;Scaling&lt;/strong&gt;](scaling.md)"><strong>Scaling</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -114,9 +114,9 @@ You can subset the allowed values for this element.
 
 [**ScalingHeight**](scalingheight.md)
 
- 
+ 
 
- 
+ 
 
 
 

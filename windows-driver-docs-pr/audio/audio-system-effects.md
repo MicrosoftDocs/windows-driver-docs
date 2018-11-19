@@ -23,13 +23,11 @@ Conversely, sAPOs are not minidrivers and are not part of the audio driver. sAPO
 
 This section includes the following topics:.
 
-[GFX Filters](gfx-filters.md)
-
 [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

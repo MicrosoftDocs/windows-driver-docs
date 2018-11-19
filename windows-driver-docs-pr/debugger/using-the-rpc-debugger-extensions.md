@@ -3,7 +3,6 @@ title: Using the RPC Debugger Extensions
 description: Using the RPC Debugger Extensions
 ms.assetid: 55303052-c5b3-4fe7-96ce-6f41a45a2358
 keywords: ["RPC extensions (rpcexts.dll)", "RPC debugging, extensions (rpcexts.dll)", "rpcexts.dll (RPC extensions)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ If you need to analyze RPC state information from a remote computer, you should 
 
 Accessing RPC state information through the debugger is especially useful in stress environments, or when a debugger already happens to be running.
 
- 
+ 
 
- 
+ 
 
 
 

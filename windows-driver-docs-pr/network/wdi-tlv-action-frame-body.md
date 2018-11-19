@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ACTION_FRAME_BODY
-author: windows-driver-content
 description: WDI_TLV_ACTION_FRAME_BODY is a TLV that contains the body of an Action Frame.
 ms.assetid: 272782A9-F92E-4F32-A92B-B18EBE7C1803
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|-----------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the body of an Action Frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

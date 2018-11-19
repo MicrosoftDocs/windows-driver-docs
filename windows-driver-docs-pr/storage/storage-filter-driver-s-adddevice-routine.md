@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's AddDevice Routine
-author: windows-driver-content
 description: Storage Filter Driver's AddDevice Routine
 ms.assetid: 7970fb3e-4e4c-4ff7-9738-e09454a864c4
 keywords:
@@ -22,9 +21,9 @@ The PnP manager calls the [*AddDevice*](https://msdn.microsoft.com/library/windo
 
 For information about a storage class driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, see [Storage Class Drivers](storage-class-drivers.md). For general information about a PnP driver's *AddDevice* routine, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
 

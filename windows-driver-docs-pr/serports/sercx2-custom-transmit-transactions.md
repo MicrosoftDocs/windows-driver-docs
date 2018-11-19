@@ -1,6 +1,5 @@
 ---
 title: SerCx2 Custom-Transmit Transactions
-author: windows-driver-content
 description: Some serial controller hardware might implement a data-transfer mechanism other than PIO or system DMA for writing data to a serial controller.
 ms.assetid: E72E68BC-A60A-41BE-8606-92A608648042
 ms.date: 04/20/2017
@@ -53,9 +52,9 @@ During a custom-transmit transaction, the driver might need to store information
 
 For a write request that the serial controller driver receives at the start of a custom-transmit transaction, the request context allocated by the driver framework is uninitialized. The driver should, as a best practice, call the [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610) routine to initialize this request context to all zeros.
 
- 
+ 
 
- 
+ 
 
 
 

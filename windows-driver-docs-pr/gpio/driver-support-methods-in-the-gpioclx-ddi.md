@@ -1,6 +1,5 @@
 ---
 title: Driver Support Methods in the GpioClx DDI
-author: windows-driver-content
 description: The GPIO framework extension (GpioClx) is available starting with Windows 8.
 ms.assetid: 179EFB06-6122-4EB0-B9F8-D5A3089D75EE
 ms.date: 04/20/2017
@@ -49,9 +48,9 @@ To avoid potential synchronization errors, GpioClx implements an *interrupt lock
 
 If the GpioClx ISR calls a driver-implemented callback function, this function does not need to acquire (or release) the interrupt lock because the ISR already holds the lock (and will release it). Calls to the [**GPIO\_CLX\_AcquireInterruptLock**](https://msdn.microsoft.com/library/windows/hardware/hh439482) and [**GPIO\_CLX\_ReleaseInterruptLock**](https://msdn.microsoft.com/library/windows/hardware/hh439494) methods by this function have no effect but are not treated as errors.
 
- 
+ 
 
- 
+ 
 
 
 

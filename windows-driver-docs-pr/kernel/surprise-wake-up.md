@@ -1,6 +1,5 @@
 ---
 title: Surprise Wake-Up
-author: windows-driver-content
 description: A surprise wake-up is an unexpected transition to D0.
 ms.assetid: 07D3EC05-A1C9-40C5-90FC-E25B5A66B064
 ms.localizationpriority: medium
@@ -33,9 +32,9 @@ A driver that does not register its device with PoFx can still be notified of a 
 
 A function driver that does not register with PoFx and that does not arm its device for wake receives no notification of a surprise transition from D3cold to D0. The device might spend large amounts of time in an uninitialized D0 state. In this state, all of the components in the device are typically turned on. To reduce power consumption by idle devices, drivers should enable entry to D3cold only if they can receive notifications of surprise transitions to D0.
 
- 
+ 
 
- 
+ 
 
 
 

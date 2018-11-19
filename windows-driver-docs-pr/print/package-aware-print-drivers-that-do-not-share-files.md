@@ -1,6 +1,5 @@
 ---
 title: Package-Aware Print Drivers that Do Not Share Files
-author: windows-driver-content
 description: Package-Aware Print Drivers that Do Not Share Files
 ms.assetid: cd114766-37f4-43b5-8e2a-d85f95c973ab
 keywords:
@@ -55,9 +54,9 @@ OEMCORE.DLL = 1
 MediaDescription = "Description for Vendor provided media"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

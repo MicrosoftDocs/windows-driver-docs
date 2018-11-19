@@ -52,11 +52,11 @@ The following table describes the valid values for the **WIA\_IPS\_MULTI\_FEED**
 </tr>
 <tr class="even">
 <td><p>WIA_MULTI_FEED_DETECT_STOP_ERROR</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for [<strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong>](wia-dps-document-handling-status.md), and returns WIA_ERROR_MULTI_FEED to [<strong>IWiaMiniDrv::drvAcquireItemData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543956).</p></td>
+<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and returns WIA_ERROR_MULTI_FEED to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543956)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_MULTI_FEED_DETECT_STOP_SUCCESS</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for [<strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong>](wia-dps-document-handling-status.md), and [<strong>IWiaMiniDrv::drvAcquireItemData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543956) returns and does not fail because of the multi-feed.</p></td>
+<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543956)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> returns and does not fail because of the multi-feed.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_MULTI_FEED_DETECT_CONTINUE</p></td>
@@ -65,7 +65,7 @@ The following table describes the valid values for the **WIA\_IPS\_MULTI\_FEED**
 </tbody>
 </table>
 
- 
+ 
 
 This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
 
@@ -87,9 +87,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

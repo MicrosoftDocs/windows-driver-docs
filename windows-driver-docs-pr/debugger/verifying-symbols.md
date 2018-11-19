@@ -3,7 +3,6 @@ title: Verifying Symbols
 description: Verifying Symbols
 ms.assetid: 61b4fcce-960b-4091-b575-4dd53c39cff2
 keywords: ["symbols, verifying"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ If you suspect that the debugger is not loading symbols correctly, there are sev
 
 First, use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command to display the list of loaded modules with symbol information. The most useful form of this command is the following:
 
-```
+```dbgcmd
 0:000> lml 
 ```
 
@@ -30,7 +29,7 @@ Pay particular attention to any notes or abbreviations you may see in these disp
 
 If you don't see the proper symbol files, the first thing to do is to check the symbol path:
 
-```
+```dbgcmd
 0:000> .sympath
 Current Symbol Path is: d:\MyInstallation\i386\symbols\retail
 ```
@@ -39,7 +38,7 @@ If your symbol path is wrong, fix it. If you are using the kernel debugger make 
 
 Then reload symbols using the [**.reload (Reload Module)**](-reload--reload-module-.md) command:
 
-```
+```dbgcmd
 0:000> .reload ModuleName 
 ```
 
@@ -47,7 +46,7 @@ If your symbol path is correct, you should activate *noisy mode* so you can see 
 
 Here is an example of a "noisy" reload of the Microsoft Windows symbols:
 
-```
+```dbgcmd
 kd> !sym noisy
 kd> .reload nt
  1: Kernel Version 2081 MP Checked
@@ -67,7 +66,7 @@ The symbol handler first looks for an image that matches the module it is trying
 
 If the symbol-search encountered a catastrophic failure, you would see a message of the form:
 
-```
+```dbgcmd
 ImgHlpFindDebugInfo(00000000, module.dll, c:\MyDir;c:\SomeDir, 0823345, 0) failed
 ```
 
@@ -96,7 +95,7 @@ Let "c:\\MyDir;c:\\SomeDir" represent your symbol path. Where should you look fo
 
 In cases where the binary has been stripped of debug information, such as the free builds of Windows, first look for a .dbg file in the following locations:
 
-```
+```dbgcmd
 c:\MyDir\symbols\exe\ntoskrnl.dbg
 c:\SomeDir\symbols\exe\ntoskrnl.dbg
 c:\MyDir\exe\ntoskrnl.dbg
@@ -108,7 +107,7 @@ current-working-directory\ntoskrnl.dbg
 
 Next, look for a .pdb file in the following locations:
 
-```
+```dbgcmd
 c:\MyDir\symbols\exe\ntoskrnl.pdb
 c:\MyDir\exe\ntoskrnl.pdb
 c:\MyDir\ntoskrnl.pdb
@@ -128,7 +127,7 @@ One of the most common problems in debugging failures on a machine that is often
 
 To find out what build of Windows is installed on the target computer, use the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command:
 
-```
+```dbgcmd
 kd> vertarget 
 Windows XP Kernel Version 2505 UP Free x86 compatible
 Built by: 2505.main.010626-1514
@@ -141,7 +140,7 @@ System Uptime: 0 days 0:04:53
 
 Testing the symbols is more difficult. It involves verifying a stack trace on the debugger and seeing if the debug output is correct. Here's one example to try:
 
-```
+```dbgcmd
 kd> u videoprt!videoportfindadapter2
 Loading symbols for 0xf2860000     videoprt.sys ->   videoprt.sys
 
@@ -160,7 +159,7 @@ The **u** command unassembles the videoportfindadapter string in videoprt.sys. T
 
 It's usually obvious when the symbols aren't working correctly. Glintmp.sys doesn't have symbols in this example because a function isn't listed next to **Glintmp**:
 
-```
+```dbgcmd
 kd> kb
 Loading symbols for 0xf28d0000     videoprt.sys ->   videoprt.sys
 Loading symbols for 0xf9cdd000      glintmp.sys ->   glintmp.sys
@@ -175,7 +174,7 @@ f29bf248 f9cde411 f9b7d000 f29bf2b0 f9ba0060 VIDEOPRT!VideoPortReadRegisterUlong
 
 The wrong build symbols were loaded for this stack trace. Notice how there are no functions listed for the first two calls. This stack trace looks like a problem with win32k.sys drawing rectangles:
 
-```
+```dbgcmd
 1: kd> 
 1: kd> kb                      [Local        9:50 AM]
 Loading symbols for 0xf22b0000       agpcpq.sys ->   agpcpq.sys
@@ -192,7 +191,7 @@ be682b80 a00f5646 e1145100 e1cee560 e1cee560 win32k!vPatCpyRect1_6x6+0x20b
 
 Here's the correct stack trace. The problem is really with AGP440.sys. The first item appearing on a stack trace is usually at fault. Notice that the win32k.sys rectangle error is gone:
 
-```
+```dbgcmd
 1: kd> kb                      [Local        9:49 AM]
 ChildEBP RetAddr  Args to Child
 be682b18 f22b372b 82707128 f21c1ffc 826a70f8 agpCPQ!AgpReleaseMemory+0x88
@@ -242,7 +241,7 @@ This will list the modules which currently have symbols loaded. This is useful i
 <span id=".RELOAD__USER"></span>[**.reload /user**](-reload--reload-module-.md)  
 This will attempt to reload all user-mode symbols. This is needed while performing kernel debugging if symbols were loaded while one process was running, and a break later occurred in another process. In this case, the user-mode symbols from the new process will not be loaded unless this command is executed.
 
-<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\***](x--examine-symbols-.md)  
+<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\\***](x--examine-symbols-.md)  
 This will list only the symbols in the **wdmaud** module whose names contain the "start" string. This has the advantage that it forces the reloading of all the symbols in **wdmaud**, but only displays those with "start" in them. (This means a shorter listing, but since there are always some symbols with "start" in them, there will be some verification that the load has taken place.)
 
 One other useful technique for verifying symbols is unassembling code. Most functions begin with an add, sub, or push operation using either the base pointer (**ebp**) or the stack pointer (**esp** or **sp**). Try unassembling ([**U Function**](u--unassemble-.md)) some of the functions on the stack (from offset zero) to verify the symbols.
@@ -277,15 +276,13 @@ Problems will occur with the symbol files and while connecting to the debugger. 
 
 **Q:** What does the following message mean?
 
-```
-*** WARNING: symbols checksum and timestamp is wrong 0x0036d6bf 0x0036ab55 for ntkrnlmp.exe
-```
+`*** WARNING: symbols checksum and timestamp is wrong 0x0036d6bf 0x0036ab55 for ntkrnlmp.exe`
 
 **A:** It means your symbols for ntkrnlmp.exe are wrong.
 
- 
+ 
 
- 
+ 
 
 
 

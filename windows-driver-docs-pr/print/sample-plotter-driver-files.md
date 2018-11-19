@@ -1,6 +1,5 @@
 ---
 title: Sample Plotter Driver Files
-author: windows-driver-content
 description: Sample Plotter Driver Files
 ms.assetid: d72bcb9a-62d7-4deb-9d6c-7431e67be77c
 keywords:
@@ -28,9 +27,9 @@ The Windows Driver Kit (WDK) includes the following MSPlot sample code:
 
 Samples are located in a subdirectory of the directory tree that contain the WDK samples. The plotter driver renderer (plotter.dll) can be compiled as either a user-mode or a kernel-mode DLL. For more information, see [Choosing User Mode or Kernel Mode](choosing-user-mode-or-kernel-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

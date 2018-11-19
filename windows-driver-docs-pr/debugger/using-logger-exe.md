@@ -3,7 +3,6 @@ title: Using Logger.exe
 description: Using Logger.exe
 ms.assetid: da2ec999-4529-49dc-855e-a7d3b15583f7
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 One way to activate Logger is to run the stand-alone Logger.exe program. This is essentially a very small debugger that can only take a single target. To run it, include the name of the target application on the command line:
 
-```
+```dbgcmd
 logger Target 
 ```
 
@@ -69,9 +68,9 @@ The output file will always be placed in LogExts subdirectory of the desktop; th
 
 These limitations will not apply if you are running Logger through the debugger and Logexts.dll.
 
- 
+ 
 
- 
+ 
 
 
 

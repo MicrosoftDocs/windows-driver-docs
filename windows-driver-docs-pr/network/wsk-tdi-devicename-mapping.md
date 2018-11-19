@@ -1,6 +1,5 @@
 ---
 title: WSK_TDI_DEVICENAME_MAPPING
-author: windows-driver-content
 description: WSK_TDI_DEVICENAME_MAPPING
 ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.date: 07/18/2017
@@ -40,7 +39,7 @@ To map combinations of address family, socket type, and protocol to device names
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_TDI_MAP_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571192) structure that contains a list of mappings of combinations of address family, socket type, and protocol to [TDI](https://msdn.microsoft.com/library/windows/hardware/ff565091) device names.</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571192" data-raw-source="[&lt;strong&gt;WSK_TDI_MAP_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571192)"><strong>WSK_TDI_MAP_INFO</strong></a> structure that contains a list of mappings of combinations of address family, socket type, and protocol to <a href="https://msdn.microsoft.com/library/windows/hardware/ff565091" data-raw-source="[TDI](https://msdn.microsoft.com/library/windows/hardware/ff565091)">TDI</a> device names.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -67,7 +66,7 @@ The *Irp* parameter must be **NULL** for this client control operation.
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571068) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
 Requirements
 ------------
@@ -89,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

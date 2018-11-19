@@ -1,7 +1,6 @@
 ---
 Description: CDC ATM Networking Control Model
 title: CDC ATM Networking Control Model
-author: windows-driver-content
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -49,15 +48,15 @@ USB CDC ATM Networking Control Model (ANCM) interface collections have the follo
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_07&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_07
-USB\Vid_%04x&Pid_%04x&Cdc_07&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_07</code></pre></td>
+<td><pre space="preserve"><code>USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_07&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_07
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_07&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_07</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_07&Prot_00
-USB\Class_02&SubClass_07
+<td><pre space="preserve"><code>USB\Class_02&amp;SubClass_07&amp;Prot_00
+USB\Class_02&amp;SubClass_07
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -67,11 +66,11 @@ USB\Class_02</code></pre></td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

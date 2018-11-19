@@ -29,9 +29,9 @@ The user-mode display driver passes the hints to the display miniport driver thr
 
 Regardless of the type of video memory that is used to create the resource, the user-mode display driver must not expose any semantic differences to the runtime. That is, for each video memory type, the driver must render information identically and must return the same return values.
 
- 
+ 
 
- 
+ 
 
 
 

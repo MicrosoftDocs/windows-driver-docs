@@ -1,7 +1,6 @@
 ---
 Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ Instructions
     logman update trace -n usbtrace -p Microsoft-Windows-USB-USBHUB
     logman update trace -n usbtrace -p Microsoft-Windows-Kernel-IoTrace 0 2
     logman start -n usbtrace
-    
+
     ```
 
     After each of these commands completes, Logman displays `The command completed successfully.`
@@ -53,7 +52,7 @@ Instructions
     logman stop -n usbtrace 
     logman delete -n usbtrace
     move /Y %SystemRoot%\Tracing\usbtrace_000001.etl %SystemRoot%\Tracing\usbtrace.etl
-    
+
     ```
 
 The preceding capture session generates an etl file, named usbtrace.etl. The trace file is stored at %SystemRoot%\\Tracing\\usbtrace.etl (C:\\Windows\\Tracing\\usbtrace.etl). Move the file to another location or rename it in order to avoid overwriting it when you capture the next session.
@@ -103,7 +102,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tr>
 <tr class="even">
 <td><p><strong>HeadersBusTrace</strong></p></td>
-<td><p>Shows all USB transfer events but doesn't save data packets.</p></td>
+<td><p>Shows all USB transfer events but doesn&#39;t save data packets.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PartialDataBusTrace</strong></p></td>
@@ -111,7 +110,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tr>
 <tr class="even">
 <td><p><strong>FullDataBusTrace</strong></p></td>
-<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the [<strong>URB_ISOCH_TRANSFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540414) request structure is saved). For more information, see [How to send chained MDLs](how-to-send-chained-mdls.md) and [How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md).</p></td>
+<td><p>Shows all USB transfer events and saves up to 4 KB of bus data for bulk, interrupt, and control transfers. Note that only the first buffer of a chained MDL is logged. Isochronous bus data is never logged (though the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540414" data-raw-source="[&lt;strong&gt;URB_ISOCH_TRANSFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540414)"><strong>URB_ISOCH_TRANSFER</strong></a> request structure is saved). For more information, see <a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a> and <a href="transfer-data-to-isochronous-endpoints.md" data-raw-source="[How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md)">How to transfer data to USB isochronous endpoints</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>HWVerifyHost</strong></p></td>
@@ -128,7 +127,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tbody>
 </table>
 
- 
+
 
 As an example, here is a sequence of commands that start a session to capture USB device power transitions. Due to the selection of providers (the USB 3.0 driver stack), events are captured only for devices that are connected downstream of a USB 3.0 host controller.
 
@@ -139,7 +138,6 @@ logman update trace -n usbtrace -p Microsoft-Windows-USB-UCX (Rundown,Power)
 logman update trace -n usbtrace -p Microsoft-Windows-USB-USBHUB3 (Rundown,Power)
 logman update trace -n usbtrace -p Microsoft-Windows-Kernel-IoTrace 0 2
 logman start -n usbtrace
-
 ```
 
 **Capture filters for power events**
@@ -150,7 +148,6 @@ A useful ETW keyword for USB devices is the USB port driver’s PowerDiagnostics
 Logman start Usbtrace -p Microsoft-Windows-USB-USBPORT PowerDiagnostics -o usbtrace.etl -ets -nb 128 640 -bs 128
 
 Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
-
 ```
 
 If your filtered trace log has many host controller asynchronous schedule enable and disable events, you can filter them out when viewing the log by using a Netmon filter, as shown in the following example:

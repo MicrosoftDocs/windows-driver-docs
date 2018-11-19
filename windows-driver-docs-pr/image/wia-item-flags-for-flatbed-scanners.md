@@ -1,6 +1,5 @@
 ---
 title: WIA Item Flags for Flatbed Scanners
-author: windows-driver-content
 description: WIA Item Flags for Flatbed Scanners
 ms.assetid: bd070e41-47e9-4165-a250-e759b8a214aa
 ms.date: 04/20/2017
@@ -38,9 +37,9 @@ The WIA flatbed scanner item can optionally support the following WIA item flag:
 <a href="" id="wiaitemtypefolder"></a>**WiaItemTypeFolder**  
 The item is a folder. Add this flag if the flatbed scanner item contains child items. (These items may include multiple selected regions on a single flatbed platen.)You should use this flag only on the base item. Child items *cannot* have this flag.
 
- 
+ 
 
- 
+ 
 
 
 

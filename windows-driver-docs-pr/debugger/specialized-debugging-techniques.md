@@ -2,7 +2,6 @@
 title: Specialized Debugging Techniques
 description: This section describes debugging techniques that apply to particular technologies and types of code modules.
 ms.assetid: ADCEC5D6-5CA1-4F46-AAFD-D4BFD27D8A29
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -29,9 +28,9 @@ You can learn more in the following topics.
 -   [Debugging BIOS Code](debugging-bios-code.md)
 -   [Specifying Module and Function Owners](specifying-module-and-function-owners.md)
 
- 
+ 
 
- 
+ 
 
 
 

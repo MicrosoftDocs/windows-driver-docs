@@ -1,6 +1,5 @@
 ---
 title: Including GUIDs in Driver Code
-author: windows-driver-content
 description: Including GUIDs in Driver Code
 ms.assetid: 9235f9e6-9c40-4c4b-a98b-99e6b46a11ce
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs"]
@@ -29,21 +28,20 @@ The following code excerpt shows the sequence of statements for including GUIDs:
 ```cpp
 :
 // include system headers here such as wdm.h
- 
+
 #include <initguid.h>
- 
+
 // include system and driver-specific header files here that contain
 // GUID definitions
 
 ...
- 
 ```
 
 Put the above statements in one module of the driver; typically the main module. When the above statements are present, the driver refers to a GUID using its symbolic name.
 
- 
 
- 
+
+
 
 
 

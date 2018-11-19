@@ -3,7 +3,6 @@ title: wdfkd.wdftmffile
 description: The wdfkd.wdftmffile extension sets the trace message format (.tmf) file to use when the debugger is formatting KMDF error logs for the wdfkd.wdflogdump or wdfkd.wdfcrashdump.
 ms.assetid: 7099440c-bfea-472f-b9ee-943026afdb81
 keywords: ["wdfkd.wdftmffile Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,9 +57,9 @@ Note that the path might be different for the version of the Windows Driver Kit 
 
 For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](https://msdn.microsoft.com/library/windows/hardware/ff545531).
 
- 
+ 
 
- 
+ 
 
 
 

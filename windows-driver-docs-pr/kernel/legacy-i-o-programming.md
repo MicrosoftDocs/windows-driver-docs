@@ -1,6 +1,5 @@
 ---
 title: Legacy I/O Programming
-author: windows-driver-content
 description: Legacy I/O Programming
 ms.assetid: 9ab9fef0-7939-40dd-9b56-9c6f5902f36a
 ms.localizationpriority: medium
@@ -16,9 +15,9 @@ The following I/O programming techniques are not recommended for Microsoft Windo
 
 [Using Controller Objects](using-controller-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

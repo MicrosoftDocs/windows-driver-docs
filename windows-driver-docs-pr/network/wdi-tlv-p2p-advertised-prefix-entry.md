@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_ADVERTISED_PREFIX_ENTRY
-author: windows-driver-content
 description: WDI_TLV_P2P_ADVERTISED_PREFIX_ENTRY is a TLV that contains a Wi-Fi Direct advertised prefix entry.
 ms.assetid: 484A7784-EDD5-46F0-91E0-060D23ADC0BD
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_SERVICE\_NAME**](wdi-tlv-p2p-service-name.md)            |                                |          | Name of the service, in UTF-8, with a maximum size of 255 bytes. |
 | [**WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH**](wdi-tlv-p2p-service-name-hash.md) |                                |          | Hash of Service Name.                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

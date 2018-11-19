@@ -1,6 +1,5 @@
 ---
 title: Processing IRPs in a Lowest-Level Driver
-author: windows-driver-content
 description: Processing IRPs in a Lowest-Level Driver
 ms.assetid: 9b8c2586-d47b-49ab-bf65-a298af36304c
 keywords: ["IRPs WDK kernel , processing examples", "IRPs WDK kernel , I/O status blocks", "I/O status blocks WDK kernel", "status blocks WDK kernel", "IoStartNextPacket", "IoCompleteRequest", "IoRequestDpc", "AllocateAdapterChannel", "MapTransfer", "IoStartPacket", "IoMarkIrpPending", "IoGetCurrentIrpStackLocation"]
@@ -36,7 +35,7 @@ As this figure shows, the I/O manager creates an IRP and sends it to the driver'
 
 ### Calling IoGetCurrentIrpStackLocation
 
-Any driver routine that requires IRP parameters must call [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) to obtain the driver's [I/O stack location](i-o-stack-locations.md). Such routines include dispatch routines that handle more than one major I/O function code (**IRP\_MJ\_*XXX***), handle a function that supports minor functions (**IRP\_MN\_*XXX***), or handle device I/O control requests ([**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and/or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766)), along with every other driver routine that processes an IRP.
+Any driver routine that requires IRP parameters must call [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) to obtain the driver's [I/O stack location](i-o-stack-locations.md). Such routines include dispatch routines that handle more than one major I/O function code (<strong>IRP\_MJ\_*XXX</strong><em>), handle a function that supports minor functions (</em><em>IRP\_MN\_</em>XXX<strong><em>), or handle device I/O control requests ([</em>*IRP\_MJ\_DEVICE\_CONTROL</strong>](<https://msdn.microsoft.com/library/windows/hardware/ff550744>) and/or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766)), along with every other driver routine that processes an IRP.
 
 This driver's I/O stack location is the lowest one, with an indefinite number of higher-level drivers' I/O stack locations shown shaded. For simplicity, calls to **IoGetCurrentIrpStackLocation** from the [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381), *StartIo*, *AdapterControl*, and [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routines are not shown in the previous figure.
 
@@ -94,9 +93,9 @@ Assuming the transfer operation in the previous figure is successful, the *DpcFo
 
 Many of the standard driver routines also return NTSTATUS-type values. For more information about NTSTATUS constants like STATUS\_SUCCESS, see [Logging Errors](logging-errors.md).
 
- 
+ 
 
- 
+ 
 
 
 

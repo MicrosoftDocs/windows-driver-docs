@@ -1,6 +1,5 @@
 ---
 title: Half-Duplex Mode Not Appropriate for Shipped Products
-author: windows-driver-content
 description: Half-Duplex Mode Not Appropriate for Shipped Products
 ms.assetid: a586f340-5577-40ba-aa3e-11599f506223
 ms.date: 04/20/2017
@@ -14,9 +13,9 @@ Half-duplex mode is intended for use only during the initial porting of a minipo
 
 If you continue to ship a half-duplex miniport, you risk compatibility issues with future revisions of Storport.
 
- 
+ 
 
- 
+ 
 
 
 

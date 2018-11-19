@@ -29,11 +29,11 @@ To port your TDI driver to Winsock Kernel (WSK), you'll need to convert TDI task
 | Connect Handler                  | [**ClientEventConnect**](https://msdn.microsoft.com/library/windows/hardware/ff544257), [**TDI\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff565083) | [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109)                                                                                           |
 | Close Socket or Connection       | [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) or [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)    | [**WskCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571124)                                                                                 |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

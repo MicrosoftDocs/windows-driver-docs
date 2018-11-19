@@ -1,6 +1,5 @@
 ---
 title: Proxy Operations in File System Filter Drivers
-author: windows-driver-content
 description: Proxy Operations in File System Filter Drivers
 ms.assetid: 01cc7a48-8b27-4de7-8968-8958e9512989
 keywords:
@@ -22,9 +21,9 @@ The ways in which a file system filter driver might introduce such problems are 
 
 It is essential for a file system filter driver to identify instances where the driver is performing an operation on behalf of, or as a result of, some user level operation. In these cases, a clear strategy for how to ensure correct operation needs to be identified.
 
- 
+ 
 
- 
+ 
 
 
 

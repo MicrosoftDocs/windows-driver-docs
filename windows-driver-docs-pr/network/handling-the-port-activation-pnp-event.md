@@ -27,9 +27,9 @@ Miniport drivers can indicate the activation of multiple ports in one PnP notifi
 
 NDIS generates a **NetEventPortDeactivation** PnP event to the bound protocol drivers when a miniport deactivates some ports. For more information about the **NetEventPortDeactivation** PnP event, see [Handling the Port Deactivation PnP Event](handling-the-port-deactivation-pnp-event.md).
 
- 
+ 
 
- 
+ 
 
 
 

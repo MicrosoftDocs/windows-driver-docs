@@ -23,7 +23,7 @@ Reserved for system use. Do not use it in your driver.
 &gt; \[!Note\]
 &gt;  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
 
- 
+ 
 
 Syntax
 ------
@@ -75,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

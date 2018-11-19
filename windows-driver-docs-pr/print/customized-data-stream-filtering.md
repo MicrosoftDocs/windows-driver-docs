@@ -1,6 +1,5 @@
 ---
 title: Customized Data Stream Filtering
-author: windows-driver-content
 description: Customized Data Stream Filtering
 ms.assetid: 768d4b95-4d8d-4460-9a8c-c80785f7f799
 keywords:
@@ -25,9 +24,9 @@ To perform final postprocessing of image data, provide a rendering plug-in that 
 
 The [**IPrintOemUni::FilterGraphics**](https://msdn.microsoft.com/library/windows/hardware/ff554252) method receives scan line data as input. The method must process the data and then send it to the print spooler by calling [**IPrintOemDriverUni::DrvWriteSpoolBuf**](https://msdn.microsoft.com/library/windows/hardware/ff553138). If the **IPrintOemUni::FilterGraphics** method is implemented, Unidrv does not spool printer data. Instead, it sends every data block to the **IPrintOemUni::FilterGraphics** method.
 
- 
+ 
 
- 
+ 
 
 
 

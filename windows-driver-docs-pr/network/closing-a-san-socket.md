@@ -27,9 +27,9 @@ As long as a SAN service provider performs the preceding procedure to close a SA
 
 To prevent race conditions between a SAN service provider and the switch initiating socket closures, the SAN service provider should never release data structures related to a SAN socket until the switch calls **WSPCloseSocket**.
 
- 
+ 
 
- 
+ 
 
 
 

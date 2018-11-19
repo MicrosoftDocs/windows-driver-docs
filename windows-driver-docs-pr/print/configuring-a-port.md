@@ -1,6 +1,5 @@
 ---
 title: Configuring a Port
-author: windows-driver-content
 description: Configuring a Port
 ms.assetid: f5996e94-aa48-4aa0-82f5-331a57d2fb6b
 keywords:
@@ -30,9 +29,9 @@ The port monitor UI DLL's [**ConfigurePortUI**](https://msdn.microsoft.com/libra
 
 For more information about these operations, see the description of [**ConfigurePortUI**](https://msdn.microsoft.com/library/windows/hardware/ff546290). Also see [Storing Port Configuration Information](storing-port-configuration-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

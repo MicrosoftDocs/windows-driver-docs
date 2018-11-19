@@ -55,11 +55,11 @@ The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirec
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectHandle</strong></p></td>
-<td align="left"><p>The redirect handle that the callout driver created by calling the [<strong>FwpsRedirectHandleCreate0</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439681) function.</p></td>
+<td align="left"><p>The redirect handle that the callout driver created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439681" data-raw-source="[&lt;strong&gt;FwpsRedirectHandleCreate0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439681)"><strong>FwpsRedirectHandleCreate0</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>localRedirectContext</strong></p></td>
-<td align="left"><p>A callout driver context area that the callout driver allocated by calling the [<strong>ExAllocatePoolWithTag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544520) function.</p></td>
+<td align="left"><p>A callout driver context area that the callout driver allocated by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544520)"><strong>ExAllocatePoolWithTag</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectContextSize</strong></p></td>
@@ -68,7 +68,7 @@ The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirec
 </tbody>
 </table>
 
- 
+ 
 
 After a callout driver has finished using a redirect handle, it must call the [**FwpsRedirectHandleDestroy0**](https://msdn.microsoft.com/library/windows/hardware/hh439684) function to destroy the handle.
 
@@ -84,9 +84,9 @@ If the redirect status is FWPS\_CONNECTION\_REDIRECTED\_BY\_OTHER, the ALE\_CONN
 
 If the redirect status is FWPS\_CONNECTION\_PREVIOUSLY\_REDIRECTED\_BY\_SELF, the ALE\_CONNECT\_REDIRECT callout must not perform redirection even if other inspectors’ results are not acceptable. In this case, it must either permit or block the connection (at the ALE\_AUTH\_CONNECT layer).
 
- 
+ 
 
- 
+ 
 
 
 

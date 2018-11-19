@@ -3,7 +3,6 @@ title: .for
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 ms.assetid: 35f54c4c-e7f5-42a9-b579-1e4958b7286b
 keywords: [".for Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,9 +54,9 @@ Here is an example of a **.for** statement with multiple increment commands:
 
 The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
- 
+ 
 
- 
+ 
 
 
 

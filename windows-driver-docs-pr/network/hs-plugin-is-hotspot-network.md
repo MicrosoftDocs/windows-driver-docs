@@ -1,6 +1,5 @@
 ---
 title: HS_PLUGIN_IS_HOTSPOT_NETWORK function
-author: windows-driver-content
 description: The HS_PLUGIN_IS_HOTSPOT_NETWORK function is called by the host to determine if a specified network is a hotspot network.
 ms.assetid: 24a26ee0-9eb1-49fa-95da-40315a4aab3a
 keywords: 
@@ -73,9 +72,9 @@ Requirements
 
 [**HS\_NETWORK\_PROFILE**](hs-network-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

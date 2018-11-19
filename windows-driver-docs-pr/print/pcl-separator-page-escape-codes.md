@@ -1,6 +1,5 @@
 ---
 title: PCL Separator Page Escape Codes
-author: windows-driver-content
 description: PCL Separator Page Escape Codes
 ms.assetid: 8e571fcd-f6ee-4a56-8d8a-20bf3a5c333c
 keywords:
@@ -32,11 +31,11 @@ The escape codes shown in the following table can be used when you create a PCL 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>\\</p></td>
+<td><p>&lt;/p&gt;</td>
 <td><p>The first line of the separator file must contain only this character. The separator file interpreter reads the separator file command as a delimiter.</p></td>
 </tr>
 <tr class="even">
-<td><p>\\<em>n</em></p></td>
+<td><p>&lt;em&gt;n</em></p></td>
 <td><p>Skips the number of lines specified by <em>n</em> (from 0 through 9). Skipping 0 lines moves printing to the next line.</p></td>
 </tr>
 <tr class="odd">
@@ -86,13 +85,13 @@ The escape codes shown in the following table can be used when you create a PCL 
 </tbody>
 </table>
 
- 
+ 
 
 After the local print provider passes a job through the print processor and the separator page processor, it sends the job from the spooler to the appropriate port print monitor.
 
- 
+ 
 
- 
+ 
 
 
 

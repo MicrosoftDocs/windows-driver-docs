@@ -29,25 +29,25 @@ Depending on how a driver is implemented and on the features of the underlying a
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvCopyBits</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556182)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556182" data-raw-source="[&lt;strong&gt;DrvCopyBits&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556182)"><strong>DrvCopyBits</strong></a></p></td>
 <td align="left"><p>Translates between device-managed raster surfaces and GDI standard-format bitmaps.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvStrokePath</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556316)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556316" data-raw-source="[&lt;strong&gt;DrvStrokePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556316)"><strong>DrvStrokePath</strong></a></p></td>
 <td align="left"><p>Draws a path (curve or line) when called by GDI.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvTextOut</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557277)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557277" data-raw-source="[&lt;strong&gt;DrvTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557277)"><strong>DrvTextOut</strong></a></p></td>
 <td align="left"><p>Renders a set of glyphs at specified positions.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   Driver calls are serialized for any given surface.
 
- 
+ 
 
 Drivers that write to standard-format [*DIBs*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) usually allow GDI to manage most or all of these operations. Displays that support *settable palettes* must support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.
 
@@ -64,19 +64,19 @@ Drivers that write to standard-format [*DIBs*](https://msdn.microsoft.com/librar
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvSetPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556282)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556282" data-raw-source="[&lt;strong&gt;DrvSetPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556282)"><strong>DrvSetPalette</strong></a></p></td>
 <td align="left"><p>Requests that the driver realize the palette for a specified device. The driver sets the hardware palette to match the entries in the given palette as closely as possible.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A list of conditionally required functions for all graphics drivers appears in [Conditionally Required Graphics Driver Functions](conditionally-required-graphics-driver-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

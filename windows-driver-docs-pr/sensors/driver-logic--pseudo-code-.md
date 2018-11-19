@@ -1,6 +1,5 @@
 ---
 title: Sensor driver logic
-author: windows-driver-content
 description: This section describes key driver logic, or tasks, as pseudocode.
 ms.assetid: 4B14C515-1B79-4B67-BA9A-365B2D6C0F07
 ms.date: 04/20/2017
@@ -35,7 +34,7 @@ The pseudocode in this section uses the following abbreviations.
 | RS           | Reporting state (indicates whether eventing is enabled or disabled)                                       |
 | PS           | Power state (can be off, low, or high)                                                                    |
 
- 
+
 
 The pseudocode contains the following variables.
 
@@ -48,7 +47,7 @@ The pseudocode contains the following variables.
 | flagLDA     | Set to True if at least one client has specified the location desired accuracy       |
 | deviceState | Indicates the driver is connected to the device                                      |
 
- 
+
 
 ## Driver methods
 
@@ -133,7 +132,6 @@ struct clientEntry
     clientLDA
     clientSubscribed
 }
-
 ```
 
 A sensor driver needs to represent the device state. The pseudocode uses the following enumeration to represent the device state.
@@ -144,7 +142,6 @@ enum deviceState
     deviceStateDisconnected // driver is disconnected from the device
     deviceStateConnected //driver is connected to the device
 }
-
 ```
 
 A sensor driver needs to represent the device state. The pseudocode uses the following enumeration to represent the device state.
@@ -155,7 +152,6 @@ enum deviceState
     deviceStateDisconnected // driver is disconnected from the device
     deviceStateConnected //driver is connected to the device
 }
-
 ```
 
 ## Related topics

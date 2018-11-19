@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Property Get Operations
-author: windows-driver-content
 description: Iasphelp Property Get Operations
 MS-HAID:
 - 'webfnc\_fee9acda-e54a-4039-b7d4-6bb7cb7fefd3.xml'

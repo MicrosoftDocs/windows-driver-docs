@@ -1,6 +1,5 @@
 ---
 title: Collection list helpers
-author: windows-driver-content
 description: The collection list helper functions are used by the v2 sensor drivers, for working with SENSOR\_COLLECTION\_LIST structures.
 ms.assetid: 9BE06FA6-A171-4760-9D3E-C0183F3C3EFA
 ms.date: 07/20/2018
@@ -64,16 +63,16 @@ Comments
 | Minimum supported server | Windows Server 2012 R2 |
 | Header                   | Sensorsutils.h         |
 
- 
+ 
 
 ## Related topics
 
 
 [Marshalling helper functions](marshalling-helper-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

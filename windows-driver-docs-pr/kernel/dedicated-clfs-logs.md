@@ -1,6 +1,5 @@
 ---
 title: Dedicated CLFS Logs
-author: windows-driver-content
 description: Dedicated CLFS Logs
 ms.assetid: c6ca580c-b7f4-493a-8bd6-35d0aa932b1a
 keywords: ["Common Log File System WDK kernel , dedicated logs", "CLFS WDK kernel , dedicated logs", "dedicated logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
@@ -20,11 +19,13 @@ To create a dedicated log, perform the following steps.
 
 1.  Call [**ClfsCreateLogFile**](https://msdn.microsoft.com/library/windows/hardware/ff540792) to obtain a pointer to a [**LOG\_FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff554316) structure. Set the *puszLogFileName* parameter to a string of the form "log:*&lt;log name&gt;*" where *&lt;log name&gt;* is a valid path on the underlying file system. For example, if you set *puszLogFileName* to "log:c:\\ClfsLogs\\myLog", the base log file myLog.blf would be created in the c:\\ClfsLogs directory. The c:\\ClfsLogs directory would also serve as the default location for containers that you add to the log later.
 
-    **Note**  It is the form of the string passed in *puszLogFileName* that determines whether CLFS creates a dedicated or multiplexed log. If the string has a double colon (::) after the log name, then CLFS creates a multiplexed log. In the example given here, "log:c\\ClfsLogs\\myLog" has no double colon, so CLFS creates a dedicated log.
+    **Note**  It is the form of the string passed in *puszLogFileName* that determines whether CLFS creates a dedicated or multiplexed log. If the string has a double colon (::) after the log name, then CLFS creates a multiplexed log. In the example given here, "log:c\\ClfsLogs\\myLog" has no double colon, so CLFS creates a dedicated log.
 
-     
 
-    The **LOG\_FILE\_OBJECT** pointer returned by **ClfsCreateLogFile** represents an open instance of the dedicated log's one and only stream.
+
+
+The **LOG\_FILE\_OBJECT** pointer returned by **ClfsCreateLogFile** represents an open instance of the dedicated log's one and only stream.
+
 
 2.  Pass the **LOG\_FILE\_OBJECT** pointer you obtained from **ClfsCreateLogFile** to [**ClfsAddLogContainer**](https://msdn.microsoft.com/library/windows/hardware/ff540768) to create a container (contiguous physical extent) on stable storage that will hold log records. Specify the size of the container (which will be rounded up to a multiple of 512 kilobytes) by setting the *pcbContainer* parameter. Set the *puszContainerPath* parameter to specify a path name for the container. The path name can be absolute or relative to the directory that contains the base log file.
 
@@ -44,9 +45,9 @@ Now that you have one or more marshalling areas associated with your stream, you
 
 Each time you write a record, you get back a log sequence number (LSN) that identifies the record. The LSN assigned to a record is always greater than the LSN assigned to the previously written record, regardless of which marshalling area was used to write the record.
 
- 
 
- 
+
+
 
 
 

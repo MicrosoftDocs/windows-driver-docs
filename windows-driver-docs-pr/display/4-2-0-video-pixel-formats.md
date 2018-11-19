@@ -34,11 +34,11 @@ To decode compressed 4:2:0 video, use one of the following uncompressed pixel fo
 <tbody>
 <tr class="odd">
 <td align="left"><p>YUY2</p></td>
-<td align="left"><p>As described in [4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md), except that two lines of output Cb and Cr samples are produced for each actual line of 4:2:0 Cb and Cr samples. The second line of each pair of output lines is generally either a duplicate of the first line or is produced by averaging the samples in the first line of the pair with the samples of the first line of the next pair.</p></td>
+<td align="left"><p>As described in <a href="4-2-2-video-pixel-formats.md" data-raw-source="[4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md)">4:2:2 Video Pixel Formats</a>, except that two lines of output Cb and Cr samples are produced for each actual line of 4:2:0 Cb and Cr samples. The second line of each pair of output lines is generally either a duplicate of the first line or is produced by averaging the samples in the first line of the pair with the samples of the first line of the next pair.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UYVY</p></td>
-<td align="left"><p>As described in [4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md), except that two lines of output Cb and Cr samples are produced for each actual line of 4:2:0 Cb and Cr samples. The second line of each pair of output lines is generally either a duplicate of the first line or is produced by averaging the samples in the first line of the pair with the samples of the first line of the next pair.</p></td>
+<td align="left"><p>As described in <a href="4-2-2-video-pixel-formats.md" data-raw-source="[4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md)">4:2:2 Video Pixel Formats</a>, except that two lines of output Cb and Cr samples are produced for each actual line of 4:2:0 Cb and Cr samples. The second line of each pair of output lines is generally either a duplicate of the first line or is produced by averaging the samples in the first line of the pair with the samples of the first line of the next pair.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>YV12</p></td>
@@ -59,8 +59,8 @@ To decode compressed 4:2:0 video, use one of the following uncompressed pixel fo
 <tr class="odd">
 <td align="left"><p>IMC1</p></td>
 <td align="left"><p>The same as YV12, except that the stride of the Cb and Cr planes is the same as the stride in the Y plane. Also, the Cb and Cr planes must fall on memory boundaries that are a multiple of 16 lines. The following code examples show calculations for the Cb and Cr planes.</p>
-<pre space="preserve"><code>BYTE* pCr = pY + (((Height + 15) & ~15) * Stride);
-BYTE* pCb = pY + (((((Height * 3) / 2) + 15) & ~15) * Stride);</code></pre>
+<pre space="preserve"><code>BYTE* pCr = pY + (((Height + 15) &amp; ~15) * Stride);
+BYTE* pCb = pY + (((((Height * 3) / 2) + 15) &amp; ~15) * Stride);</code></pre>
 <p>In the preceding examples, pY is a byte pointer that points to the beginning of the memory array, and Height must be a multiple of 16.</p></td>
 </tr>
 <tr class="even">
@@ -78,13 +78,13 @@ BYTE* pCb = pY + (((((Height * 3) / 2) + 15) & ~15) * Stride);</code></pre>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about these formats, see [Recommended 8-Bit YUV Formats for Video Rendering](https://msdn.microsoft.com/library/windows/desktop/dd206750) in the Microsoft Media Foundation documentation.
 
- 
+ 
 
- 
+ 
 
 
 

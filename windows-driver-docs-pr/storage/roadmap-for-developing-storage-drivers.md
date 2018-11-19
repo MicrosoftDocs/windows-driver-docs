@@ -1,6 +1,5 @@
 ---
 title: Roadmap for Developing Windows Storage Drivers
-author: windows-driver-content
 description: Roadmap for Developing Windows Storage Drivers
 ms.assetid: 67627ff9-588c-492f-861f-c592f7f92b51
 ms.date: 04/20/2017
@@ -50,9 +49,9 @@ ms.localizationpriority: medium
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

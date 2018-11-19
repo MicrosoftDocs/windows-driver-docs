@@ -44,13 +44,13 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_SETWRITEPACKET_INFO</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info" data-raw-source="[&lt;strong&gt;KSRTAUDIO_SETWRITEPACKET_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)"><strong>KSRTAUDIO_SETWRITEPACKET_INFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 
@@ -96,9 +96,9 @@ Requirements
 
 [UsePositionLock](usepositionlock.md)
 
- 
+ 
 
- 
+ 
 
 
 

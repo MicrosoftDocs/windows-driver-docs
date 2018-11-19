@@ -1,6 +1,5 @@
 ---
 title: Authentication and Identification
-author: windows-driver-content
 description: Authentication and Identification
 ms.assetid: fe118cf3-05ce-43b1-b878-4bb99b97dc2e
 keywords:
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 Most drivers are not involved in authentication or identification issues, leaving this task to individual services. One case where a driver might become involved in authentication or identification processing is in access management. In this case, the authentication step is usually handled through calls to the Security Reference Monitor. Authentication and identification information is normally tracked by the operating system by the security token, an internal data structure that encapsulates the security credentials for a given thread or process.
 
- 
+ 
 
- 
+ 
 
 
 

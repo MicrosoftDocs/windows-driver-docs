@@ -1,6 +1,5 @@
 ---
 title: WIA Error Handler Cancellation of Modeless Dialogs
-author: windows-driver-content
 description: WIA Error Handler Cancellation of Modeless Dialogs
 ms.assetid: eca6c3a3-c196-4d28-925a-c8f5d5d8601b
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ Drivers should not send the WIA\_STATUS\_CLEAR message themselves.
 
 The **IWiaTransferCallback** interface is described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

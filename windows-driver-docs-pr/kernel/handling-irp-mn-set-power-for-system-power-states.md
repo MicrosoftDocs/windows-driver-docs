@@ -1,6 +1,5 @@
 ---
 title: Handling IRP_MN_SET_POWER for System Power States
-author: windows-driver-content
 description: Handling IRP_MN_SET_POWER for System Power States
 ms.assetid: 21e8e8a7-ca77-445b-a49e-28a53f431a26
 keywords: ["IRP_MN_SET_POWER", "system power states WDK kernel , IRP_MN_SET_POWER", "set-power IRPs WDK power management"]
@@ -40,9 +39,9 @@ How a driver handles this IRP depends upon its role in the device stack, as desc
 
 A driver cannot fail an **IRP\_MN\_SET\_POWER** request to set the system power state. The power manager ignores any failure status returned for this IRP.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
 title: USB configuration descriptors
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -67,16 +66,16 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 
 The configuration descriptor is obtained from the device through a standard device request (GET\_DESCRIPTOR), which is sent as a control transfer by the USB driver stack. A USB client driver can initiate the request in one of the following ways:
 
--   If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method.
--   For a device that supports multiple configurations, if the client driver wants to get the descriptor of the configuration other than the first, the driver must submit an URB. To submit an URB, the driver must allocate, format, and then submit the URB to the USB driver stack.
+- If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method.
+- For a device that supports multiple configurations, if the client driver wants to get the descriptor of the configuration other than the first, the driver must submit an URB. To submit an URB, the driver must allocate, format, and then submit the URB to the USB driver stack.
 
-    To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method. The method receives a pointer to an URB allocated by the USB driver stack.
+  To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method. The method receives a pointer to an URB allocated by the USB driver stack.
 
-    To format the URB, the client driver can use the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. The macro sets all the necessary information in the URB, such as the device-defined configuration number for which to retrieve the descriptor. The URB function is set to URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff540357)) and the type of descriptor is set to USB\_CONFIGURATION\_DESCRIPTOR\_TYPE. By using the information contained in the URB, the USB driver stack builds a standard control request and sends it to the device.
+  To format the URB, the client driver can use the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. The macro sets all the necessary information in the URB, such as the device-defined configuration number for which to retrieve the descriptor. The URB function is set to URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff540357)) and the type of descriptor is set to USB\_CONFIGURATION\_DESCRIPTOR\_TYPE. By using the information contained in the URB, the USB driver stack builds a standard control request and sends it to the device.
 
-    To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method.
+  To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method.
 
-    **WDM drivers:  **A Windows Driver Model (WDM) client driver can only get the configuration descriptor by submitting an URB. To allocate the URB, the driver must call the [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250) routine. To format the URB, the driver must call the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. To submit the URB, the driver must associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
+  <strong>WDM drivers:  **A Windows Driver Model (WDM) client driver can only get the configuration descriptor by submitting an URB. To allocate the URB, the driver must call the [</strong>USBD\_UrbAllocate<strong>](<https://msdn.microsoft.com/library/windows/hardware/hh406250>) routine. To format the URB, the driver must call the [</strong>UsbBuildGetDescriptorRequest**](<https://msdn.microsoft.com/library/windows/hardware/ff538943>) macro. To submit the URB, the driver must associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
 Within a USB configuration, the number of interfaces and their alternate settings are variable. Therefore, it's difficult to predict the size of buffer required to hold the configuration descriptor. The client driver must collect all that information in two steps. First, determine what size buffer required to hold all of the configuration descriptor, and then issue a request to retrieve the entire descriptor. A client driver can get the size in one of the following ways:
 
@@ -149,7 +148,6 @@ Exit:
 
     return ntStatus;   
 }
-  
 ```
 
 **To obtain the configuration descriptor by submitting an URB, perform these steps:**

@@ -1,6 +1,5 @@
 ---
 title: GDL Quoted Strings
-author: windows-driver-content
 description: GDL Quoted Strings
 ms.assetid: 52d6f1bf-0b8c-4aa7-8cc8-1a18def224be
 keywords:
@@ -27,9 +26,9 @@ A *quoted string* begins and ends with the double quotation character ("). Any c
 
 -   Quoted strings can appear within a nested context; only the HexSubString context is recognized within a uoted string.
 
- 
+ 
 
- 
+ 
 
 
 

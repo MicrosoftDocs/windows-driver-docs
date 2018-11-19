@@ -27,7 +27,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 -   [How to debug Driver Verifier violations](#how-to-debug-driver-verifier-violations)
 -   [Related topics](#related-topics)
 
- 
+
 
 ## Where can I download Driver Verifier?
 
@@ -38,15 +38,14 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>You don't need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn't a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
+<td align="left"><p>You don&#39;t need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn&#39;t a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
-<li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See [<strong>Driver Verifier Command Syntax</strong>](verifier-command-line.md) for more information.</li>
+<li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See <a href="verifier-command-line.md" data-raw-source="[&lt;strong&gt;Driver Verifier Command Syntax&lt;/strong&gt;](verifier-command-line.md)"><strong>Driver Verifier Command Syntax</strong></a> for more information.</li>
 </ul>
 <p></p>
 <div class="alert">
-<strong>Caution</strong>  
-<ul>
+<strong>Caution</strong><br/><ul>
 <li>Running Driver Verifier could cause the computer to crash.</li>
 <li>You should only run Driver Verifier on computers you are using for testing and debugging.</li>
 <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
@@ -54,16 +53,16 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </ul>
 </div>
 <div>
- 
+
 </div>
-<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see [Driver Verifier: What's New](driver-verifier--what-s-new.md).</p></td>
+<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What&#39;s New](driver-verifier--what-s-new.md)">Driver Verifier: What&#39;s New</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 ## When to use Driver Verifier
 
@@ -76,61 +75,61 @@ Run Driver Verifier throughout the driver development and test process.
 
 -   Use Driver Verifier for troubleshooting and debugging test failures and computer crashes.
 
- 
+
 
 ## How to start Driver Verifier
 
 
 You should only run Driver Verifier on test computers, or computers you are testing and debugging. To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
 
-1.  Open a **Command Prompt** window (**Run as administrator**) and type **verifier** to open the Driver Verifier Manager.
-2.  Select **Create standard settings** (default) and click **Next**.
+1. Open a **Command Prompt** window (**Run as administrator**) and type **verifier** to open the Driver Verifier Manager.
+2. Select **Create standard settings** (default) and click **Next**.
 
-    You can also choose **Create custom settings** to select from predefined settings, or to select individual options. See [Driver Verifier Options](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md) for more information.
+   You can also choose **Create custom settings** to select from predefined settings, or to select individual options. See [Driver Verifier Options](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md) for more information.
 
-3.  Select a driver or drivers to verify.
+3. Select a driver or drivers to verify.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Option</th>
-    <th align="left">Recommended use</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><strong>Automatically select unsigned drivers</strong></td>
-    <td align="left"><p>Useful option for testing on computers running versions of Windows that don't require signed drivers.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><strong>Automatically select drivers built for older versions of Windows</strong></td>
-    <td align="left"><p>Useful option for testing driver compatibility with newer versions of Windows.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><strong>Automatically select all drivers installed on this computer</strong></td>
-    <td align="left"><p>Provides maximum coverage in terms of the number of drivers that are tested on a system. This option is useful for test scenarios where a driver can interact with other devices or drivers on a system.</p>
-    <p>This option can also exhaust the resources available for [Special Pool](special-pool.md) and some resource tracking. Testing all drivers can also adversely affect system performance.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><strong>Select driver names from a list</strong></td>
-    <td align="left"><p>In most cases, you will want to specify which drivers to test.</p>
-    <p>Selecting all drivers in a device stack allows the [Enhanced I/O Verification](enhanced-i-o-verification.md) option to track objects and check compliance as an IRP is passed between each of the drivers in the stack and allows for a greater level of detail to be provided should an error be found.</p>
-    <p>Select a single driver if you are running a test scenario that measures system or driver performance metrics, or if you want to allocate the greatest number of resources available for detecting memory corruption or resource tracking issues (deadlocks, mutexs). The [Special Pool](special-pool.md) and [I/O Verification](i-o-verification.md) options will be more effective when used on one driver at a time.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th align="left">Option</th>
+   <th align="left">Recommended use</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td align="left"><strong>Automatically select unsigned drivers</strong></td>
+   <td align="left"><p>Useful option for testing on computers running versions of Windows that don&#39;t require signed drivers.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><strong>Automatically select drivers built for older versions of Windows</strong></td>
+   <td align="left"><p>Useful option for testing driver compatibility with newer versions of Windows.</p></td>
+   </tr>
+   <tr class="odd">
+   <td align="left"><strong>Automatically select all drivers installed on this computer</strong></td>
+   <td align="left"><p>Provides maximum coverage in terms of the number of drivers that are tested on a system. This option is useful for test scenarios where a driver can interact with other devices or drivers on a system.</p>
+   <p>This option can also exhaust the resources available for <a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a> and some resource tracking. Testing all drivers can also adversely affect system performance.</p></td>
+   </tr>
+   <tr class="even">
+   <td align="left"><strong>Select driver names from a list</strong></td>
+   <td align="left"><p>In most cases, you will want to specify which drivers to test.</p>
+   <p>Selecting all drivers in a device stack allows the <a href="enhanced-i-o-verification.md" data-raw-source="[Enhanced I/O Verification](enhanced-i-o-verification.md)">Enhanced I/O Verification</a> option to track objects and check compliance as an IRP is passed between each of the drivers in the stack and allows for a greater level of detail to be provided should an error be found.</p>
+   <p>Select a single driver if you are running a test scenario that measures system or driver performance metrics, or if you want to allocate the greatest number of resources available for detecting memory corruption or resource tracking issues (deadlocks, mutexs). The <a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a> and <a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a> options will be more effective when used on one driver at a time.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
 
-4.  Click **Finish** and reboot the computer.
 
-**Note**  You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
+4. Click **Finish** and reboot the computer.
 
- 
+**Note**  You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
+
+
 
 ```
 verifier  /standard /driver myDriver.sys
@@ -138,7 +137,7 @@ verifier  /standard /driver myDriver.sys
 
 See [**Driver Verifier Command Syntax**](verifier-command-line.md) for more information.
 
- 
+
 
 ## How to control Driver Verifier
 
@@ -177,7 +176,7 @@ Or type the following command in a Command Prompt window.
 verifier  /query
 ```
 
- 
+
 
 ## How to debug Driver Verifier violations
 
@@ -244,9 +243,9 @@ In addition [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/f
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
 
- 
 
- 
+
+
 
 
 

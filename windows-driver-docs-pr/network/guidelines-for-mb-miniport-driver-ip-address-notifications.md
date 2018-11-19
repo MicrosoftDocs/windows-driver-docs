@@ -25,7 +25,7 @@ IP addresses and default gateways that are set by using the IP Helper API persis
 
 **Note**  Miniport drivers can find the **LUID** and **Index** of the MB interface from the **NetLuid** or **IfIndex** members of [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565972) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.
 
- 
+ 
 
 ### Resetting the IP Address and Gateway Address
 
@@ -92,9 +92,9 @@ To set an IPv4 gateway address, use the following procedure. You can use similar
 
 -   Set the **NameServer** registry key as described in [MB DNS Updates](mb-dns-updates.md) to notify Windows about updated DNS addresses.
 
- 
+ 
 
- 
+ 
 
 
 

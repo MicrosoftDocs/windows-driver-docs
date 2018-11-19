@@ -27,9 +27,9 @@ PwrTest functionality is separated into scenarios. Currently, PwrTest supports t
 -   [PwrTest Thermal Scenario](pwrtest-thermal-scenario.md)
 -   [PwrTest Timer Scenario](pwrtest-timer-scenario.md)
 
- 
+ 
 
- 
+ 
 
 
 

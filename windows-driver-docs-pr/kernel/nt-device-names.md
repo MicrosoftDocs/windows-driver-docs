@@ -1,6 +1,5 @@
 ---
 title: NT Device Names
-author: windows-driver-content
 description: NT Device Names
 ms.assetid: dfcc7338-7c4d-4b4c-9a13-c76bfe82f5a9
 keywords: ["NT device names WDK kernel", "device objects WDK kernel , named", "named device objects WDK kernel", "device names WDK kernel", "non-WDM driver device names WDK kernel"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A named device object has a name of the form **\\Device\\***DeviceName*. This is known as the *NT device name* of the device object.
+A named device object has a name of the form **\\Device\\**<em>DeviceName</em>. This is known as the *NT device name* of the device object.
 
 ### Device Names for WDM Drivers
 
@@ -32,9 +31,9 @@ Driver writers must not name more than one object in a device stack. The operati
 
 A non-WDM driver must explicitly specify a name for any named device objects. The driver must create at least one named device object in the **\\Device** object directory to receive I/O requests. The driver specifies the device name as the *DeviceName* parameter to [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407) when creating the device object.
 
- 
+ 
 
- 
+ 
 
 
 

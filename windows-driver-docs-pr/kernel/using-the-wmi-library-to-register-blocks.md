@@ -1,6 +1,5 @@
 ---
 title: Using the WMI Library to Register Blocks
-author: windows-driver-content
 description: Using the WMI Library to Register Blocks
 ms.assetid: 1f4b773d-ca24-47f5-87e8-84c98dad9267
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
@@ -24,9 +23,9 @@ A driver can use the WMI Library to handle [**IRP\_MN\_REGINFO**](https://msdn.m
 
 A driver must initialize entry points for its *DpWmiXxx* callback routines in the **WMILIB\_CONTEXT** structure before calling **WmiSystemControl**, but can postpone initialization of **GuidCount** and **GuidList** in the **WMILIB\_CONTEXT** structure until WMI calls the driver's *DpWmiQueryReginfo* routine.
 
- 
+ 
 
- 
+ 
 
 
 

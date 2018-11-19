@@ -19,9 +19,9 @@ Some hardware uses an anti-aliasing kernel that influences pixels outside the ex
 
 Direct3D addresses this problem by enabling hardware drivers to request that the extents rectangle be adjusted outward by a specified number of pixels in the **dvExtentsAdjust** member of the [**D3DHAL\_D3DEXTENDEDCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff544753) structure. This member is filled in response to the GUID\_D3DExtendedCaps GUID in [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404). The extents rectangle is clipped to the extents of the render target surface for the device. The default is zero.
 
- 
+ 
 
- 
+ 
 
 
 

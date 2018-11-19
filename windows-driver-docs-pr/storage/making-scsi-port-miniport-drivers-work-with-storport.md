@@ -1,6 +1,5 @@
 ---
 title: Making SCSI Port Miniport Drivers Work with Storport
-author: windows-driver-content
 description: Making SCSI Port Miniport Drivers Work with Storport
 ms.assetid: d2e8daaf-47e2-4a6c-9992-517dc107d4bd
 keywords:
@@ -38,9 +37,9 @@ This section provides more detailed instructions for driver writers who wish to 
 
 [Setting Port Configuration Information with Storport](setting-port-configuration-information-with-storport.md)
 
- 
+ 
 
- 
+ 
 
 
 

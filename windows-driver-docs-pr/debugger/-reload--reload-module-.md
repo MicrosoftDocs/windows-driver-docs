@@ -3,7 +3,6 @@ title: .reload (Reload Module)
 description: The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 ms.assetid: 750eb1a2-7af9-4f2d-81ca-9ea0fb157961
 keywords: ["Reload Module (.reload) command", "symbols, Reload Module (.reload) command", ".reload (Reload Module) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -84,7 +83,7 @@ Specifies the timestamp of the module image. In many situations, the debugger kn
 
 **Note**   There must be no blank space between the *Address*, *Size*, and *Timestamp* parameters.
 
- 
+ 
 
 <span id="_______-_______"></span> **-?**   
 Displays a short help text for this command.
@@ -112,7 +111,7 @@ Displays a short help text for this command.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -146,9 +145,9 @@ Unloaded ntdll.dll
 0:000> .reload /s /f ntdll.dll
 ```
 
- 
+ 
 
- 
+ 
 
 
 

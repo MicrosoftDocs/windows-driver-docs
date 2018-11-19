@@ -1,6 +1,5 @@
 ---
 title: Programming DMA Hardware
-author: windows-driver-content
 description: This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its EvtProgramDma event callback function.
 ms.assetid: 5e74fe74-d38f-4cca-b0cf-8a6f170c4dc5
 keywords:
@@ -69,7 +68,6 @@ Steps 1 and 4 are illustrated in the following code example, taken from the [PLX
                     "<-- PLxEvtProgramReadDma: errors ****");
         return FALSE;
     }
-
 ```
 
 The example calls the **PLxReadRequestComplete** function to perform steps 2 and 3:
@@ -120,9 +118,9 @@ Return Value:
 }
 ```
 
- 
 
- 
+
+
 
 
 

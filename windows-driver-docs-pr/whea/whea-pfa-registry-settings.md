@@ -1,6 +1,5 @@
 ---
 title: WHEA Policy Settings
-author: windows-driver-content
 description: WHEA Policy Settings
 ms.assetid: 65ef70b7-a517-4428-9e6d-09c6da84e798
 keywords:
@@ -21,7 +20,7 @@ Starting with Windows 8, WHEA policies can be managed either though [**WHEAPoli
 
 **Note**   The registry settings described in this topic are intended for use by WHEA only. If a [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) performs PFA and uses the registry to store its configuration settings, it must use registry values that are different from those that are described in this topic.
 
- 
+ 
 
 The WHEA PFA configuration settings are located in the following registry key:
 
@@ -31,7 +30,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WHEA\Policy
 
 **Note**  WHEA assumes the default setting for a PFA registry value if that value is not present under **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WHEA\\Policy**.
 
- 
+ 
 
 The following table describes the various registry values that are used for PFA configuration. The registry values in the following table are REG\_DWORD values.
 
@@ -55,7 +54,7 @@ The following table describes the various registry values that are used for PFA 
 <strong>Note</strong>  The <strong>DisableOffline</strong> value applies to hardware components that are predicted to fail due to PFA performed either by WHEA or a PSHED plug-in.
 </div>
 <div>
- 
+ 
 </div>
 <p>A value of 0 enables hardware offline support. Any other value disables hardware offline support.</p>
 <p>The default value for this setting is 0.</p></td>
@@ -68,7 +67,7 @@ The following table describes the various registry values that are used for PFA 
 <strong>Note</strong>  The <strong>MemPersistOffline</strong> value applies to ECC memory pages taken offline due to PFA performed either by WHEA or a PSHED plug-in.
 </div>
 <div>
- 
+ 
 </div>
 <p>A value of 1 enables BCD persistence. A value of 0 disables BCD persistence.</p>
 <p>The default value for this setting is 1 for Windows Server platforms and 0 for Windows client platforms.</p></td>
@@ -76,7 +75,7 @@ The following table describes the various registry values that are used for PFA 
 <tr class="odd">
 <td><p></p>
 <p><strong>MemPfaDisable</strong></p></td>
-<td><p>A Boolean value that specifies whether WHEA's PFA for ECC memory pages is disabled.</p>
+<td><p>A Boolean value that specifies whether WHEA&#39;s PFA for ECC memory pages is disabled.</p>
 <p>A value of 0 enables PFA for ECC memory pages. Any other value disables PFA for ECC memory pages.</p>
 <p>The default value for this setting is 0.</p></td>
 </tr>
@@ -89,7 +88,7 @@ The following table describes the various registry values that are used for PFA 
 <strong>Note</strong>  If this value is set to a number that is outside the allowable range, the default value is used.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -102,7 +101,7 @@ The following table describes the various registry values that are used for PFA 
 <strong>Note</strong>  If this value is set to a number that is outside the allowable range, the default value is used.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -120,13 +119,13 @@ The following table describes the various registry values that are used for PFA 
 <strong>Note</strong>  If this value is set to a number that is outside the allowable range, the default value is used.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following two legacy registry values are supported for application compatibility reasons:
 
@@ -138,11 +137,11 @@ This value corresponds to the **MemPfaPageCount** registry value.
 
 **Note**  Whenever possible, you should use the registry values that were described earlier in this topic instead of these legacy registry values.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

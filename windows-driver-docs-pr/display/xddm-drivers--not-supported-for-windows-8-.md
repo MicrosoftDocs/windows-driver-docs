@@ -16,7 +16,7 @@ If the graphics hardware is not supported by a Windows 8 in-box graphics driver,
 **Note**  
 The vendor can develop a Windows 8-compatible display-only driver for the hardware if it is a server product.
 
- 
+ 
 
 T*able 1 Driver Upgrade Experience in Windows 8* summarizes graphics driver migration behavior during a Windows 8 upgrade and clean installations. In this table, *ITB* = in-box, and *OTB* = out-of-the-box; this is an OEM or IHV retail driver package or Windows Update package.
 
@@ -30,7 +30,7 @@ T*able 1 Driver Upgrade Experience in Windows 8* summarizes graphics driver migr
 | N/A                                                            | Clean    | ITB Driver Support        | Win8 ITB Driver                       |
 | N/A                                                            | Clean    | No ITB Driver Support     | Win8 MSBDD                            |
 
- 
+ 
 
 In cases where the Windows 7 graphics driver itself is not migrated, any IHV or OEM value-add components from the Windows 7 graphics driver package, such as control panels and OpenGL support libraries, can persist after a Windows 8 upgrade installation. This happens because the Windows 8 installer cannot know that these value-add components are associated with the Windows 7 retail or OEM driver package. These value-add components might not function properly in the absence of the rest of their driver package.
 
@@ -40,9 +40,9 @@ Some retail and OEM Windows 7 graphics drivers are intentionally structured to p
 
 An IHV can create a unified driver package that is a WDDM 1.2 driver on Windows 8, but that appears like a WDDM 1.1 or 1.0 driver on previous Windows releases.
 
- 
+ 
 
- 
+ 
 
 
 

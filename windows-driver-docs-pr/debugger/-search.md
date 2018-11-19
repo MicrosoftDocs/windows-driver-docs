@@ -3,7 +3,6 @@ title: search
 description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
 ms.assetid: 5f9d4e50-c389-4309-8851-0f5069b1b66e
 keywords: ["search Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -107,9 +106,9 @@ The columns in the display are as follows: **Pfn** is the page frame number (PFN
 
 To calculate the physical address, shift the PFN left three hexadecimal digits (12 bits) and add the offset. For example, the last line in the table is virtual address 0x0237D000 + 0x428 = 0x02347D428.
 
- 
+ 
 
- 
+ 
 
 
 

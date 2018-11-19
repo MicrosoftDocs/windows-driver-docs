@@ -21,7 +21,7 @@ In Windows Vista, Microsoft will provide the following two drivers as part of th
 
 -   A [Universal Audio Architecture](universal-audio-architecture.md) (UAA) class driver for managing a UAA-compliant audio codec (or possibly more than one codec) that is connected to an HD Audio controller.
 
-Microsoft also will develop a similar HD Audio bus driver and UAA HD Audio class driver for systems that run Windows Server 2003, and Windows XP. For information about the HD Audio controller architecture, see the Intel High Definition Audio Specification at the [Intel HD Audio](http://go.microsoft.com/fwlink/p/?linkid=42508) website. For an overview of Microsoft's UAA, see the white paper titled Universal Audio Architecture at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+Microsoft also will develop a similar HD Audio bus driver and UAA HD Audio class driver for systems that run Windows Server 2003, and Windows XP. For information about the HD Audio controller architecture, see the Intel High Definition Audio Specification at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website. For an overview of Microsoft's UAA, see the white paper titled Universal Audio Architecture at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
 The HD Audio bus driver implements the HD Audio device driver interface (DDI), which kernel-mode audio and modem drivers use to communicate with hardware codecs that are attached to the HD Audio controller. The HD Audio bus driver exposes the HD Audio DDI to its children, which are instances of the audio and modem drivers that manage the codecs.
 
@@ -53,9 +53,9 @@ This section includes:
 
 [Programming Guidelines](programming-guidelines.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Log Streams with KTM
-author: windows-driver-content
 description: Using Log Streams with KTM
 ms.assetid: d7ad0e16-d1f2-4c41-b647-95b5445c2708
 keywords: ["log streams WDK KTM", "Kernel Transaction Manager WDK , log streams", "KTM WDK , log streams", "Common Log File System WDK kernel , KTM log streams", "CLFS WDK kernel , KTM log streams", "transaction managers WDK KTM , log streams", "resource managers WDK KTM , log streams"]
@@ -53,9 +52,9 @@ If the resource manager receives a rollback notification, it can restore the ori
 
 Resource managers can also use the [**ZwSetInformationEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567094) routine to store recovery information in an enlistment object. KTM saves this information in its log stream and reads it from the log stream during recovery operations. Therefore, a resource manager can obtain this recovery information at any time by calling [**ZwQueryInformationEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567051).
 
- 
+ 
 
- 
+ 
 
 
 

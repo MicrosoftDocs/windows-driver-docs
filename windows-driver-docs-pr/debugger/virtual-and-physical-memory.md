@@ -3,7 +3,6 @@ title: Virtual and Physical Memory
 description: Virtual and Physical Memory
 ms.assetid: 346a46ea-9d44-4e12-8623-d118cd0c7e25
 keywords: ["memory access, virtual and physical memory", "virtual memory access", "physical memory access"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -48,9 +47,9 @@ An address in the target's virtual address space can be translated to a physical
 
 When the virtual or physical memory of the target is changed, the [**IDebugEventCallbacks::ChangeDebuggeeState**](https://msdn.microsoft.com/library/windows/hardware/ff550678) callback method is called.
 
- 
+ 
 
- 
+ 
 
 
 

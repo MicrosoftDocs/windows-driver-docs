@@ -55,9 +55,9 @@ If your miniport driver implements Raw IP Packet Processing during its driver de
 
 -   Transaction ID (the **xid** member) of the DHCP response from the miniport driver should match exactly the transaction ID set in the DHCP request message from the client.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Driver Registration and Start/Stop Control
-author: windows-driver-content
 description: Driver Registration and Start/Stop Control
 ms.assetid: 66f44703-1277-49fe-a481-c8712172db0f
 keywords:
@@ -61,42 +60,42 @@ The following table lists the RDBSS driver registration and start/stop control r
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxDriverEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554404)</p></td>
-<td align="left"><p>This routine is called by a monolithic network mini-redirector driver from its [<strong>DriverEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine to initialize RDBSS.</p>
-<p>For non-monolithic drivers, this initialization routine is equivalent to the [<strong>DriverEntry</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine of the rbss.sys device driver.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554404" data-raw-source="[&lt;strong&gt;RxDriverEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554404)"><strong>RxDriverEntry</strong></a></p></td>
+<td align="left"><p>This routine is called by a monolithic network mini-redirector driver from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544113" data-raw-source="[&lt;strong&gt;DriverEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544113)"><strong>DriverEntry</strong></a> routine to initialize RDBSS.</p>
+<p>For non-monolithic drivers, this initialization routine is equivalent to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544113" data-raw-source="[&lt;strong&gt;DriverEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544113)"><strong>DriverEntry</strong></a> routine of the rbss.sys device driver.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxRegisterMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554693)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554693" data-raw-source="[&lt;strong&gt;RxRegisterMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554693)"><strong>RxRegisterMinirdr</strong></a></p></td>
 <td align="left"><p>This routine is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxSetDomainForMailslotBroadcast</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554718)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554718" data-raw-source="[&lt;strong&gt;RxSetDomainForMailslotBroadcast&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554718)"><strong>RxSetDomainForMailslotBroadcast</strong></a></p></td>
 <td align="left"><p>This routine is called by a network mini-redirector driver to set the domain used for mailslot broadcasts, if mailslots are supported by the driver.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxStartMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554736)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554736" data-raw-source="[&lt;strong&gt;RxStartMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554736)"><strong>RxStartMinirdr</strong></a></p></td>
 <td align="left"><p>This routine starts up a network mini-redirector that called to register itself. RDBSS will also register the network mini-redirector driver as a UNC provider with the MUP if the driver indicates support for UNC names.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxStopMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554743)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554743" data-raw-source="[&lt;strong&gt;RxStopMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554743)"><strong>RxStopMinirdr</strong></a></p></td>
 <td align="left"><p>This routine stops a network mini-redirector driver. A driver that is stopped will no longer receive new commands except IOCTL or FSCTL requests.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxpUnregisterMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554662)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554662" data-raw-source="[&lt;strong&gt;RxpUnregisterMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554662)"><strong>RxpUnregisterMinirdr</strong></a></p></td>
 <td align="left"><p>This routine is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxUnregisterMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554744)</p></td>
-<td align="left"><p>This routine is an inline function defined in rxstruc.h that is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. The [<strong>RxUnregisterMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554744) inline function internally calls [<strong>RxpUnregisterMinirdr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554662).</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554744" data-raw-source="[&lt;strong&gt;RxUnregisterMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554744)"><strong>RxUnregisterMinirdr</strong></a></p></td>
+<td align="left"><p>This routine is an inline function defined in rxstruc.h that is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554744" data-raw-source="[&lt;strong&gt;RxUnregisterMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554744)"><strong>RxUnregisterMinirdr</strong></a> inline function internally calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff554662" data-raw-source="[&lt;strong&gt;RxpUnregisterMinirdr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554662)"><strong>RxpUnregisterMinirdr</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>__RxFillAndInstallFastIoDispatch</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557374)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557374" data-raw-source="[&lt;strong&gt;__RxFillAndInstallFastIoDispatch&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557374)"><strong>__RxFillAndInstallFastIoDispatch</strong></a></p></td>
 <td align="left"><p>This routine fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following macro is defined in the mrx.h header file that calls one of these routines. This macro is normally used instead of calling the [**\_\_RxFillAndInstallFastIoDispatch**](https://msdn.microsoft.com/library/windows/hardware/ff557374) routine directly.
 
@@ -114,16 +113,16 @@ The following macro is defined in the mrx.h header file that calls one of these 
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>RxFillAndInstallFastIoDispatch</strong>(<em>__devobj</em>, <em>__fastiodisp</em>)</p></td>
-<td align="left"><p>This macro calls [<strong>__RxFillAndInstallFastIoDispatch</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557374)to fill out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.</p></td>
+<td align="left"><p>This macro calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557374" data-raw-source="[&lt;strong&gt;__RxFillAndInstallFastIoDispatch&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557374)"><strong>__RxFillAndInstallFastIoDispatch</strong></a>to fill out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

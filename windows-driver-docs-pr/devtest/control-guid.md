@@ -34,9 +34,9 @@ The control GUID appears in the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com
 
 Because the control GUID identifies the trace provider to Event Tracing for Windows (ETW), you can use the control GUID to define and redefine the scope of a [trace provider](trace-provider.md). For example, multiple drivers can be part of a single trace provider by specifying the same control GUID. Or, a single driver can include multiple trace providers by specifying different control GUIDs in each instance of the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro.
 
- 
+ 
 
- 
+ 
 
 
 

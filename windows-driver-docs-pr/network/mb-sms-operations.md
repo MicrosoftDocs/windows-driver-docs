@@ -31,9 +31,9 @@ We recommend miniport drivers support SMS configuration, read, send, and delete 
 
 For more information about SMS operations, see [OID\_WWAN\_SMS\_CONFIGURATION](https://msdn.microsoft.com/library/windows/hardware/ff569837), [OID\_WWAN\_SMS\_READ](https://msdn.microsoft.com/library/windows/hardware/ff569839), [OID\_WWAN\_SMS\_SEND](https://msdn.microsoft.com/library/windows/hardware/ff569840), [OID\_WWAN\_SMS\_DELETE](https://msdn.microsoft.com/library/windows/hardware/ff569838), and [OID\_WWAN\_SMS\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569841).
 
- 
+ 
 
- 
+ 
 
 
 

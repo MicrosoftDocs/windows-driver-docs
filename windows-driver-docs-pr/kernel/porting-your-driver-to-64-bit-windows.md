@@ -1,6 +1,5 @@
 ---
 title: Porting Your Driver to 64-Bit Windows
-author: windows-driver-content
 description: Porting Your Driver to 64-Bit Windows
 ms.assetid: f06e6aae-fc44-481c-a277-1c266d6e6d7b
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "thunking WDK", "WOW64 thunking layer WDK", "converting parameters to fixed-precision types"]
@@ -20,11 +19,11 @@ For user-mode applications, 64-bit Windows includes a Windows on Windows (WOW64)
 
 **Note**  This thunking is only done for 32-bit *applications*; 32-bit *drivers* are not supported on 64-bit versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

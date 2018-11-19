@@ -1,6 +1,5 @@
 ---
 title: 'REMOTE_NDIS_PACKET_MSG'
-author: windows-driver-content
 Description: 'REMOTE_NDIS_PACKET_MSG encapsulates NDIS data packets to form a single data message.'
 ms.assetid: cc4efe94-6e2c-4201-b251-10e76cf5a553
 ms.date: 07/31/2017
@@ -101,7 +100,7 @@ The REMOTE\_NDIS\_PACKET\_MSG format is defined in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 The format of a single OOB data record is indicated in the following table.
 
@@ -148,12 +147,12 @@ The format of a single OOB data record is indicated in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 (N) is equal to the value of *ClassInformationOffset*.
 
- 
+ 
 
 The following table defines the format of a per-packet information data record.
 
@@ -200,12 +199,12 @@ The following table defines the format of a per-packet information data record.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 (N) is equal to the value of *PerPacketInformationOffset*.
 
- 
+ 
 
 Remarks
 -------
@@ -246,9 +245,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

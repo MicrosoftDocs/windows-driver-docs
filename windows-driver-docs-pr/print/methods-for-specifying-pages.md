@@ -1,6 +1,5 @@
 ---
 title: Methods for Specifying Pages
-author: windows-driver-content
 description: Methods for Specifying Pages
 ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
 keywords:
@@ -40,9 +39,9 @@ An application can use any of three methods to specify property sheet pages to C
 
 Whichever method is used for specifying new pages, the pages must be assigned to a [group parent](group-parent.md) by passing a group parent handle to the **ComPropSheet** function.
 
- 
+ 
 
- 
+ 
 
 
 

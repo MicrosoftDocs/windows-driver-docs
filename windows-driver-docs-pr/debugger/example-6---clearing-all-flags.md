@@ -2,7 +2,6 @@
 title: Example 6 Clearing All Flags
 description: Example 6 Clearing All Flags
 ms.assetid: 07a6af3d-3ef7-429d-9afa-439b20915ab1
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ This example demonstrates two different ways to clear all flags set in the regis
 
 **Note**   The methods demonstrated by this example clear flags only. They do not reset the maximum stack trace size or kernel special pool tag to the default values.
 
- 
+ 
 
 ### <span id="Subtract_the_Current_Flag_Value"></span><span id="subtract_the_current_flag_value"></span><span id="SUBTRACT_THE_CURRENT_FLAG_VALUE"></span>Subtract the Current Flag Value
 
@@ -60,7 +59,7 @@ Current Boot Registry Settings are: 00000000
 
 **Tip**   Type this command into Notepad, then save the file as clearflag.bat. Thereafter, to clear all flags, just type **ClearFlag**.
 
- 
+ 
 
 Finally, the following example demonstrates that the intuitive method of clearing all flags does not work.
 
@@ -81,9 +80,9 @@ Current Boot Registry Settings are: 000000e0
 
 The command has no effect because it adds the value 0 to system-wide flag entry.
 
- 
+ 
 
- 
+ 
 
 
 

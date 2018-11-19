@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST to request that the Microsoft component queue an IHV task.ObjectPort .
 ms.assetid: E123F957-574F-4C78-B366-76E886018503
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to reques
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -28,7 +27,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to reques
 | [**WDI\_TLV\_IHV\_TASK\_REQUEST\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926314) |                                |          | The IHV-requested priority for this task. Refer to the [**WDI\_IHV\_TASK\_PRIORITY**](https://msdn.microsoft.com/library/windows/hardware/dn926064) enum for valid values. |
 | [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/dn926313)         |                                | X        | The IHV-provided context information that is forwarded to [OID\_WDI\_TASK\_IHV](oid-wdi-task-ihv.md).                                       |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 
 [OID\_WDI\_TASK\_IHV](oid-wdi-task-ihv.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: obtrace
 description: The obtrace extension displays object reference tracing data for the specified object.
 ms.assetid: 6a124f9f-1c2f-4303-b84f-0032fb912cc1
 keywords: ["obtrace Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ A pointer to the object or a path.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -140,15 +139,15 @@ The primary indicators in the **!obtrace 0xfa96f700** display are listed in the 
 </tbody>
 </table>
 
- 
+ 
 
 The object reference traces on x64-based target computers might be incomplete because it is not always possible to acquire stack traces at IRQL levels higher than PASSIVE\_LEVEL.
 
 You can stop execution at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

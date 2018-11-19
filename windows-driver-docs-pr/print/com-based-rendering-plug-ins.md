@@ -1,6 +1,5 @@
 ---
 title: COM-Based Rendering Plug-Ins
-author: windows-driver-content
 description: COM-Based Rendering Plug-Ins
 ms.assetid: c80d6c2b-ba4d-4bd1-bd3a-8c1b0bf29884
 keywords:
@@ -30,9 +29,9 @@ By calling back to the driver's graphics DDI function, the hooking function can 
 
 It might be necessary for you to provide a [customized PDEV structure](customized-pdev-structures.md). You can reference this structure from within a graphics DDI hooking function, through the [**SURFOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff569901) structure pointer that each hooking function receives as input. Specifically, the SURFOBJ structure's **dhpdev** member points to a [**DEVOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff547573) structure, and the DEVOBJ structure's **pdevOEM** member points to your customized PDEV structure.
 
- 
+ 
 
- 
+ 
 
 
 

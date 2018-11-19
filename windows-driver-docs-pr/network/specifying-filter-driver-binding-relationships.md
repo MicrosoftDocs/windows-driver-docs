@@ -33,9 +33,9 @@ HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
 
 When the computer loads a filter driver, the driver is inserted into all of the existing protocol-to-adapter bindings, depending on the media types that **FilterMediaTypes** lists.
 
- 
+ 
 
- 
+ 
 
 
 

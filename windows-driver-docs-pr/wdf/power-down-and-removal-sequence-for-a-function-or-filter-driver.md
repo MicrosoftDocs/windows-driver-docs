@@ -1,6 +1,5 @@
 ---
 title: Power-Down and Removal Sequence for a Function or Filter Driver
-author: windows-driver-content
 description: Power-Down and Removal Sequence for a Function or Filter Driver
 ms.assetid: E5A22C91-5967-42D6-A991-42B46C72ED82
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ The following figure shows the order in which the framework calls a KMDF functio
 
 As the figure shows, the KMDF power-down and removal sequence involves calling the corresponding "undo" callbacks in the reverse order in which the framework called the functions that are involved in making the device operational. The framework deletes the device object after it deletes the device object context area.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_BOS_DESCRIPTOR
-author: windows-driver-content
 description: EFI_USB_BOS_DESCRIPTOR
 ms.assetid: A12E3678-E5B6-4AB0-8F28-FCDA57C9D397
 ms.date: 04/20/2017
@@ -45,9 +44,9 @@ The number of separate device capability descriptors in the BOS.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

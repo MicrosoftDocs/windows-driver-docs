@@ -3,7 +3,6 @@ title: Using CVS
 description: Using CVS
 ms.assetid: 4ad1202e-0be5-4adc-af8b-6b8d7cb34b04
 keywords: ["Concurrent Versions System (CVS)", "source servers, CVS", "SrcSrv, CVS", "Concurrent Versions System (CVS), overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -27,13 +26,13 @@ The client computer that extracts files during debugging does not need a CVS san
 
 CVS is unable to extract a file by its version number. Instead, it must be done using what is known as a *tag*. When indexing a CVS-based system, you must ensure that all changes are checked into the repository and then apply a tag using the "cvs tag" command. Then, when indexing the file, make certain you use the "label" command-line parameter to specify the tag that you want to associate with the build you are indexing. You can achieve the same result by setting CVS\_LABEL in the environment. Other values can be set from the environment or the command line. Use the **-??** command-line option with SSIndex to examine your choices and to verify that all was configured correctly:
 
-```
+```console
 ssindex.cmd -system=cvs -??
 ```
 
- 
+ 
 
- 
+ 
 
 
 

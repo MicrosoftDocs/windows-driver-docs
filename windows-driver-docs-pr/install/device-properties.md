@@ -20,9 +20,9 @@ Microsoft Windows Server 2003, Windows XP, and Windows 2000 do not support this 
 
 For reference information about the components of the unified device property model—including device property functions, system-defined device properties, data structures, and INF file directives—see [Device Property Reference](https://msdn.microsoft.com/library/windows/hardware/ff541483).
 
- 
+ 
 
- 
+ 
 
 
 

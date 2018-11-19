@@ -3,7 +3,6 @@ title: Determining the Status of a Device
 description: Determining the Status of a Device
 ms.assetid: d250643e-13cb-4657-9235-5fdeb1eab89a
 keywords: ["Plug and Play (PnP), device status", "Plug and Play (PnP), device tree", "device status", "device tree"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -152,9 +151,9 @@ DevNode 0xff0bb808 for PDO 0xff0bb900 at level 0xffffffff
       Range starts at 0x0000000040800000 for 0x800000 bytes
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ A synth node can also support the following optional [KSPROPSETID\_Synth](ksprop
 
 [**KSPROPERTY\_SYNTH\_DLS\_WAVEFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff537400)
 
- 
+ 
 
- 
+ 
 
 
 

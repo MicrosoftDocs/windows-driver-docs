@@ -1,7 +1,6 @@
 ---
 Description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
 title: USB registry settings for a function controller driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,34 +52,34 @@ This table describes the subkeys that OEMs can modify under this key. More infor
 <tr class="odd">
 <td><strong>Alternates</strong></td>
 <td>This subkey contains additional subkeys that describe an interface that has one or more alternate settings:
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Alternates</strong></p></td>
+<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Alternates</strong></p></td>
 </tr>
 <tr class="even">
 <td><strong>Associations</strong></td>
 <td>This subkey defines Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. Each subkey represents a different IAD and OEMs can modify the values for those subkeys.
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Associations</strong></p></td>
+<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Associations</strong></p></td>
 </tr>
 <tr class="odd">
 <td><strong>Default</strong></td>
 <td>This subkey contains default values that are used to describe device-specific settings such as the VID and PID. This is a Microsoft-owned subkey whose values are overridden by those in the parent key:
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong></p></td>
+<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong></p></td>
 </tr>
 <tr class="even">
 <td><strong>Configurations</strong></td>
-<td>This subkey contains additional subkeys that contain configuration descriptor values that are used during USB enumeration. For example, the standard test configuration might exist under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Configurations</strong>\\<strong>TestConfigClassic</strong>.</td>
+<td>This subkey contains additional subkeys that contain configuration descriptor values that are used during USB enumeration. For example, the standard test configuration might exist under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Configurations</strong>&lt;strong&gt;TestConfigClassic</strong>.</td>
 </tr>
 <tr class="odd">
 <td><strong>Configurations\Default</strong></td>
-<td>This subkey contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong> key.</td>
+<td>This subkey contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key.</td>
 </tr>
 <tr class="even">
 <td><strong>Interfaces</strong></td>
-<td>This subkey contains additional subkeys that describe specific interface descriptors. For example, the IP over USB configuration may reside under a subkey named <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Interfaces</strong>\\<strong>IpOverUsb</strong>. The name of this subkey for an interface is what determines the hardware ID of the class driver. In the IP over USB example, the _HID of the loaded PDO is <strong>USBFN\IpOverUsb</strong>.</td>
+<td>This subkey contains additional subkeys that describe specific interface descriptors. For example, the IP over USB configuration may reside under a subkey named <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Interfaces</strong>&lt;strong&gt;IpOverUsb</strong>. The name of this subkey for an interface is what determines the hardware ID of the class driver. In the IP over USB example, the _HID of the loaded PDO is <strong>USBFN\IpOverUsb</strong>.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This table describes the values that OEMs can modify in the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN** key. Values that are not listed in this table assume the default values defined by Microsoft under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Default**.
 
@@ -95,7 +94,7 @@ All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and *
 | **iSerialNumber**        | REG\_DWORD | OEM   | If this value is set to 0, then the device does not have a serial number. If this value is non-zero or does not exist, then the serial number is generated uniquely per device.                                                                                                                                            |
 | **CurrentConfiguration** | REG\_SZ    | OEM   | This string must correspond to the name of a configuration subkey. This string determines which configuration to use to build a configuration descriptor for USB device enumeration.                                                                                                                                       |
 
- 
+ 
 
 ## USBFN\\Configurations registry key
 
@@ -122,19 +121,19 @@ This table describes the values that OEMs can modify for subkeys under **HKEY\_L
 <td><strong>InterfaceList</strong></td>
 <td>REG_MULTI_SZ</td>
 <td>OEM or Microsoft</td>
-<td><p>Contains a list of interface names that correspond to interface subkeys under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Interfaces</strong>, the IAD associations defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Associations</strong>, and the alternate interfaces defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong>\\<strong>Alternates</strong>. Those keys determine the interfaces that are used to describe the composite configuration descriptor.</p>
-<p>If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong> key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate.</p></td>
+<td><p>Contains a list of interface names that correspond to interface subkeys under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Interfaces</strong>, the IAD associations defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Associations</strong>, and the alternate interfaces defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Alternates</strong>. Those keys determine the interfaces that are used to describe the composite configuration descriptor.</p>
+<p>If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate.</p></td>
 </tr>
 <tr class="even">
 <td><strong>MSOSCompatIdDescriptor</strong></td>
 <td>REG_BINARY</td>
 <td>OEM or Microsoft</td>
-<td><p>Optional. Defines an Extended Compat ID OS Feature Descriptor for the configuration. If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>\\<strong>USBFN</strong> key is set to 1, the functions in this descriptor are appended to the functions and interfaces in the default configuration.</p></td>
+<td><p>Optional. Defines an Extended Compat ID OS Feature Descriptor for the configuration. If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key is set to 1, the functions in this descriptor are appended to the functions and interfaces in the default configuration.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## USBFN\\Interfaces registry key
 
@@ -150,7 +149,7 @@ Each subkey represents a different USB interface. To define an interface, create
 | **InterfaceNumber**                | REG\_DWORD  | OEM or Microsoft | Optional. This value is used to assign a fixed interface number to a function. Interface numbers 0-1F are reserved for legacy functions, 20-3F are reserved for Microsoft, and 40-5F are reserved for use by OEMs.                                                                                           |
 | **MSOSExtendedPropertyDescriptor** | REG\_BINARY | OEM or Microsoft | Optional. Defines an Extended Property OS Feature Descriptor for the interface.                                                                                                                                                                                                                              |
 
- 
+ 
 
 ## USBFN\\Alternates registry key
 
@@ -165,7 +164,7 @@ Each subkey represents a different interface. To define an interface with altern
 | **InterfaceNumber**                | REG\_DWORD     | OEM or Microsoft | Optional. This value is used to assign a fixed interface number to a function. Interface numbers 0-1F are reserved for legacy functions, 20-3F are reserved for Microsoft, and 40-5F are reserved for use by OEMs.                                                                                                                                                 |
 | **MSOSExtendedPropertyDescriptor** | REG\_BINARY    | OEM or Microsoft | Optional. Defines an Extended Property OS Feature Descriptor for the interface.                                                                                                                                                                                                                                                                                    |
 
- 
+ 
 
 ## USBFN\\Associations registry key
 
@@ -182,7 +181,7 @@ Each subkey represents a different IAD. To define an association, create a subke
 | **bFunctionProtocol**              | REG\_DWORD     |                  | The protocol code of the function, set to 01.                                                                                                                                                                               |
 | **MSOSExtendedPropertyDescriptor** | REG\_BINARY    | OEM or Microsoft | Optional. Defines an Extended Property OS Feature Descriptor for the interface.                                                                                                                                             |
 
- 
+ 
 
 **Use case: Enabling MirrorLink**
 
@@ -197,7 +196,7 @@ To enable MirrorLink connectivity on Windows 10 Mobile Device, OEM must make th
     |----------------|------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|
     | **MirrorLink** | REG\_DWORD | OEM or Microsoft | A non-zero value indicates the interface supports MirrorLink. The USB function stack does not stall the MirrorLink USB command. |
 
-     
+     
 
 -   Class-specific descriptors can be included in the interface descriptor set that is defined in the registry. The size field must be set in those descriptors so that USB function driver stack can parse them accurately.
 

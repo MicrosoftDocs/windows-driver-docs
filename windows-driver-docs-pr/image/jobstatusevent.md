@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -96,7 +96,6 @@ The following code example shows how the scan device notifies a client about the
     </wscn:JobStatusEvent>
   </soap:Body
 </soap:Envelope>
-
 ```
 
 ## See also
@@ -108,9 +107,9 @@ The following code example shows how the scan device notifies a client about the
 
 [**JobStatus**](jobstatus.md)
 
- 
 
- 
+
+
 
 
 

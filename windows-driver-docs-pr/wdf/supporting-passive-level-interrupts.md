@@ -1,6 +1,5 @@
 ---
 title: Supporting Passive-Level Interrupts
-author: windows-driver-content
 description: Starting with framework version 1.11, WDF drivers can create interrupt objects that require passive-level handling.
 ms.assetid: E464F885-928C-40BC-A09F-7A7921F8FF37
 ms.date: 04/20/2017
@@ -158,7 +157,7 @@ EvtInterruptIsr(
     }
     
     //
-    // Retrive the request buffer.
+    // Retrieve the request buffer.
     //
     status = WdfRequestRetrieveOutputMemory(request, &reqMemory);
 
@@ -317,9 +316,9 @@ To prevent deadlock, follow these guidelines when writing a driver that implemen
 
 For more information about using interrupt locks, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

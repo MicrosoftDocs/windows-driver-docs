@@ -1,7 +1,6 @@
 ---
 Description: This table describes the use cases is supported by Windows 10, and the additional tasks OEMs must perform for those use case to work.
 title: OEM tasks for USB Type-C systems
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,7 +34,7 @@ This table describes the use cases is supported by Windows 10, and the addition
 <p>Support for charging a USB Type-C system by using legacy chargers (&lt;7.5W), USB Type-C chargers (&lt;15W), Power Delivery chargers (100W+)</p></td>
 <td><p>For Windows 10 Mobile systems,</p>
 <ul>
-<li>Charging from legacy chargers is handled by the [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md).</li>
+<li>Charging from legacy chargers is handled by the <a href="usb-device-side-drivers-in-windows.md" data-raw-source="[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)">USB device-side drivers in Windows</a>.</li>
 <li>Charging from USB Type-C chargers (including those that implement Power Delivery), is handled by the USB connector manager drivers: USB connector manager class extension (UcmCx) and its client driver for the connector. The client driver communicates with the hardware to determine the charging policy and forwards that UcmCx, which further sends it to the charging arbitration driver (CAD). CAD selects the charging source to use.</li>
 </ul>
 <p>For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) systems,</p>
@@ -48,7 +47,7 @@ This table describes the use cases is supported by Windows 10, and the addition
 <strong>Note</strong>  The user is notified when a slower charger is detected.
 </div>
 <div>
- 
+ 
 </div></td>
 <td><p>You must determine the charging policy in your hardware, firmware, and client driver. Charging policy mainly includes:</p>
 <ul>
@@ -59,13 +58,13 @@ This table describes the use cases is supported by Windows 10, and the addition
 <p>For power delivery-compliant chargers, the hardware must negotiate a power contract, which includes the voltage and current.​ The negotiated power contract must be forwarded to the system through the USB connector manager class extension (UcmCx) or the USCI driver for appropriate action.</p>
 <p>If a slow charger is connected to the system, the system must be notified through UcmCx or UCSI.</p>
 <p>To support legacy proprietary high-voltage or high-current charging mechanisms, an additional filter driver must be written for Microsoft’s in-box USB Function driver that detects the proprietary charger and reports it to the in-box driver.</p>
-<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p>
-<p>[USB filter driver for supporting proprietary chargers](https://msdn.microsoft.com/library/windows/hardware/mt188012)</p>
+<p><a href="bring-up-a-usb-type-c-connector-on-a-windows-system.md" data-raw-source="[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)">Write a USB Type-C connector driver</a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/mt188012" data-raw-source="[USB filter driver for supporting proprietary chargers](https://msdn.microsoft.com/library/windows/hardware/mt188012)">USB filter driver for supporting proprietary chargers</a></p>
 <div class="alert">
 <strong>Note</strong>  Windows does not support Power Delivery for legacy USB-A and USB-B/USB-microB connectors.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -73,15 +72,15 @@ This table describes the use cases is supported by Windows 10, and the addition
 <p>Ability of a Windows system (desktop and mobile) to connect USB devices/peripherals</p></td>
 <td><p>Windows 10 for desktop editions supports most device classes. The device drivers and their installation files are included in Windows</p>
 <p>Devices that run Windows 10 Mobile can connect and interact with USB devices/peripherals​ through a set of in-box drivers. The operating system supports a subset of device classes.</p>
-<p>See, [USB device class drivers included in Windows](supported-usb-classes.md).</p></td>
-<td><p>If your system wants to connect to a custom USB device for which Windows does not include a driver, you can choose to load the generic driver (Winusb.sys) or write a driver. For guidance, see [Choosing a driver model for developing a USB client driver](winusb-considerations.md).</p>
-<p>We recommend that you write a single driver that runs on Windows 10 for desktop editions and Windows 10 Mobile. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers).</p>
-<p>To write an application that communicates the device, use Windows Runtime APIs. For more information, see [Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md).</p></td>
+<p>See, <a href="supported-usb-classes.md" data-raw-source="[USB device class drivers included in Windows](supported-usb-classes.md)">USB device class drivers included in Windows</a>.</p></td>
+<td><p>If your system wants to connect to a custom USB device for which Windows does not include a driver, you can choose to load the generic driver (Winusb.sys) or write a driver. For guidance, see <a href="winusb-considerations.md" data-raw-source="[Choosing a driver model for developing a USB client driver](winusb-considerations.md)">Choosing a driver model for developing a USB client driver</a>.</p>
+<p>We recommend that you write a single driver that runs on Windows 10 for desktop editions and Windows 10 Mobile. For more information, see <a href="https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers)">Getting Started with Universal Windows drivers</a>.</p>
+<p>To write an application that communicates the device, use Windows Runtime APIs. For more information, see <a href="talking-to-usb-devices-start-to-finish.md" data-raw-source="[Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md)">Talking to USB devices, start to finish (UWP app)</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>Alternate modes</strong>
 <p>Connect to a non-USB device (e.g. monitor) using a USB Type-C connector.</p>
-​</td>
+ </td>
 <td><p>Windows 10 is capable of detecting DisplayPort/DockPort devices if the hardware supports those alternate modes.</p>
 <p>Windows 10 provides an in-box driver for a Billboard device and notifies the user if the Billboard device indicates that an error occurred.</p></td>
 <td><p>In order for an alternate mode to work, your system and device must support the alternate mode in the hardware and firmware. Perform necessary tasks to negotiate the alternate mode and entering the mode. That is typically accomplished by muxing the wire on the USB Type-C connector to the alternate mode.</p></td>
@@ -99,7 +98,7 @@ For the best results, make sure that the alternate mode device or adapter’s re
 <p></p></td>
 <td><p>Your Alternate Mode adapter or device must implement a Billboard device that indicates whether or not an Alternate Mode negotiation was successful.</p>
 <p>If your alternate mode adapter or device implements other USB functionality, updating the contents of your Billboard descriptor will require you to disconnect and reconnect the device, possibly interrupting functionality (such as a file transfer, if your device is a USB mass storage device). To avoid that, the Billboard specification recommends that you use an integrated hub in your device, and have the Billboard device appear as a separate USB device on one of its ports.</p>
-<p>For more information, see [USB Device Class Definition for Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207).</p></td>
+<p>For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=620207" data-raw-source="[USB Device Class Definition for Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207)">USB Device Class Definition for Billboard Devices specification</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>USB dual role</strong>
@@ -113,13 +112,13 @@ For the best results, make sure that the alternate mode device or adapter’s re
 <strong>Note</strong>  Peer-to-peer USB Type-C connections such as a PC is connected to another PC, or mobile device is connected to another mobile device are not supported. For such connections, an error is displayed to the user.
 </div>
 <div>
- 
+ 
 </div></td>
 <td><p>Dual role ports must work with the operating system to make sure the right software stack (either Host or Function) is loaded at the right time.</p>
 <p>Systems can be designed such that the dual-role USB port needs Windows to configure it to either Host or Function mode. These designs will need to use the USB role switch stack. If the system does not use a Synopsys or ChipIdea dual role controller, you will need to write a USB role switch client driver for the system’s dual role controller.</p>
-<p>[USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)</p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/mt628026" data-raw-source="[USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)">USB dual-role controller driver programming reference</a></p>
 <p>System can also be designed such that the firmware or the customer-supplied drivers configure the port as either a Host or Function port, depending on the device that is connected to the port. These designs will need to either implement this logic in the firmware, or will need to implement it in a USB connector manager client driver. In these systems, Windows will automatically load the correct software stack.</p>
-<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p></td>
+<p><a href="bring-up-a-usb-type-c-connector-on-a-windows-system.md" data-raw-source="[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)">Write a USB Type-C connector driver</a></p></td>
 </tr>
 <tr class="even">
 <td><strong>Audio Accessories​</strong>
@@ -131,7 +130,7 @@ For the best results, make sure that the alternate mode device or adapter’s re
 </tbody>
 </table>
 
- 
+ 
 
 USB Type-C connectors can be used for wired docking, which allows the system to connect to a dock that delivers power to the system and attaches other peripherals. If the system detects an alternate display, the system can project to that display. To enable wired docking, make sure you have completed OEM tasks listed for Power delivery, Connecting USB devices and peripherals, and Alternate modes use cases in the preceding table.
 

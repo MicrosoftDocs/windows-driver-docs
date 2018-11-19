@@ -1,6 +1,5 @@
 ---
 title: Supported PrintTicket Features
-author: windows-driver-content
 description: This section provides information about the PrintTicket features that are supported by the standard XPS filters.
 ms.assetid: 6D1AD770-D4BA-4BDC-886A-C5C36A09BB0E
 ms.date: 04/20/2017
@@ -56,7 +55,7 @@ The PCL6 generated for the selected media type is specified by the GPD MediaType
 | PrintTicket Plain              | GPD STANDARD       |
 | PrintTicket Transparency       | GPD TRANSPARENCY   |
 
- 
+ 
 
 3. The name attribute of the PageMediaType Option matches the name of the Option in the GPD.
 
@@ -101,7 +100,7 @@ The PCL6 generated for the selected input tray is specified by the GPD InputBin 
 | PrintTicket Manual     | GPD MANUAL,MIDDLE,SMALLFMT          |
 | PrintTicket Tractor    | GPD TRACTOR,UPPER                   |
 
- 
+ 
 
 3. The name attribute of the PageMediaType Option matches the name of the Option in the GPD.
 
@@ -127,7 +126,7 @@ The PCL6 generated for the selected orientation is specified by the GPD Orientat
 | PrintTicket Landscape        | GPD LANDSCAPE\_CC90  |
 | PrintTicket ReverseLandscape | GPD LANDSCAPE\_CC270 |
 
- 
+ 
 
 3. The name attribute of the PageOrientation Option matches the name of the option in the GPD.
 
@@ -223,13 +222,13 @@ The PCL6 generated for the selected collation is specified by the GPD Collate fe
 | PrintTicket Uncollated | GPD OFF            |
 | PrintTicket Collated   | GPD ON             |
 
- 
+ 
 
 3. The name attribute of the DocumentCollate option matches the name of the option in the GPD.
 
 **Note**  When DocumentCollate is set to Collated and the GPD Collate option contains a command, then it is assumed that the device can generate the collated copies. The *XPS.PCL6* filter will only generate 1 copy of the job and use the GPD command to instruct the device to generate the collated copies. The filter then replaces NumOfCopies in the GPD command with the number of copies specified by JobCopiesAllDocuments.
 
- 
+ 
 
 The PostScript generated for the selected collation is specified by the PPD Collate feature. The Option in the PPD to use is selected in the following order:
 1. If MSPrintSchemaKeywordMap is specified and matches the name attribute of the DocumentCollate Option.
@@ -241,13 +240,13 @@ The PostScript generated for the selected collation is specified by the PPD Coll
 | PrintTicket Uncollated | PPD False          |
 | PrintTicket Collated   | PPD True           |
 
- 
+ 
 
 3. The name attribute of the DocumentCollate Option matches the name of the Option in the PPD.
 
 **Note**  When DocumentCollate is set to Collated and the PPD contains the Collate feature, or a feature which is keyword mapped to DocumentCollate, then it is assumed that the device can generate the collated copies. The XPS.PS filter will only generate 1 copy of the job and use the PPD command to instruct the device to generate the collated copies.
 
- 
+ 
 
 ## JobDuplexAllDocumentsContiguously
 
@@ -266,7 +265,7 @@ The PCL6 generated for the selected duplex is specified by the GPD Duplex Featur
 | PrintTicket TwoSidedShortEdge           | GPD HORIZONTAL     |
 | PrintTicket TwoSidedLongEdge            | GPD VERTICAL       |
 
- 
+ 
 
 3. The name attribute of the JobDuplexAllDocumentsContiguously option matches the name of the Option in the GPD.
 
@@ -281,7 +280,7 @@ The PostScript generated for the selected duplex is specified by the PPD Duplex 
 | PrintTicket TwoSidedShortEdge           | PPD DuplexTumble   |
 | PrintTicket TwoSidedLongEdge            | PPD DuplexNoTumble |
 
- 
+ 
 
 3. The name attribute of the JobDuplexAllDocumentsContiguously option matches the name of the option in the PPD.
 
@@ -302,7 +301,7 @@ The PCL6 generated for the selected duplex is specified by the GPD Duplex Featur
 | PrintTicket TwoSidedShortEdge | GPD HORIZONTAL     |
 | PrintTicket TwoSidedLongEdge  | GPD VERTICAL       |
 
- 
+ 
 
 3. The name attribute of the DocumentDuplex Option matches the name of the Option in the GPD.
 
@@ -317,7 +316,7 @@ The PostScript generated for the selected duplex is specified by the PPD Duplex 
 | PrintTicket TwoSidedShortEdge | PPD DuplexTumble   |
 | PrintTicket TwoSidedLongEdge  | PPD DuplexNoTumble |
 
- 
+ 
 
 3. The name attribute of the DocumentDuplex Option matches the name of the Option in the PPD.
 
@@ -364,7 +363,7 @@ When the BindingGutter ScoredProperty is specified for BindBottom or EdgeStitchB
 
 **Note**  The binding edge is the specified edge based on the orientation of the first page of the first document in the job. For all other options, BindingGutter is ignored.
 
- 
+ 
 
 If the GPD file does not specify a command for the selected option, then the PCL6 generated for the selected binding is determined by the filter.
 
@@ -389,7 +388,7 @@ When the BindingGutter ScoredProperty is specified for BindBottom or EdgeStitchB
 
 **Note**  The binding edge is the specified edge based on the orientation of the first page of the document. For all other Options, BindingGutter is ignored.
 
- 
+ 
 
 If the GPD file does not specify a command for the selected option, then the PCL6 generated for the selected binding is determined by the filter.
 
@@ -464,7 +463,7 @@ The PostScript generated for the selected mirroring is specified by the PPD Mirr
 | PrintTicket None             | PPD False          |
 | PrintTicket MirrorImageWidth | PPD True           |
 
- 
+ 
 
 3. The name attribute of the PageMirrorImage Option matches the name of the Option in the PPD.
 
@@ -489,7 +488,7 @@ The PostScript generated for the selected negative printing is specified by the 
 | PrintTicket None        | PPD False          |
 | PrintTicket Negative    | PPD True           |
 
- 
+ 
 
 3. The name attribute of the PageNegativeImage Option matches the name of the Option in the PPD.
 

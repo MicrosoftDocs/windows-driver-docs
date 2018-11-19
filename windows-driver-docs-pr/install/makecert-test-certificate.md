@@ -28,9 +28,9 @@ CertMgr /add CertFileName.cer /s /r localMachine root
 
 Before you can install a [driver package](driver-packages.md) that is signed by a MakeCert test certificate, the test certificate must be installed in the Trusted Root Certification Authorities certificate store and the [Trusted Publishers certificate store](trusted-publishers-certificate-store.md) of the test computer. For information about how to install a MakeCert test certificate on a test computer, see [Installing a Test Certificate on a Test Computer](installing-a-test-certificate-on-a-test-computer.md).
 
- 
+ 
 
- 
+ 
 
 
 

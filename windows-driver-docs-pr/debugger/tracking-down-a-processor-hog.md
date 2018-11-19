@@ -3,7 +3,6 @@ title: Tracking Down a Processor Hog
 description: Tracking Down a Processor Hog
 ms.assetid: 8ecd000d-34e6-4471-a040-b50627915a20
 keywords: ["processor hog", "hogging a processor", "starving applications"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,7 +25,7 @@ Use the following procedure to correct a bug of this sort.
 
 3.  **Identify which thread is causing the problem:** Break into the offending application. Use the [**!runaway 3**](-runaway.md) extension to take a "snapshot" of where all the CPU time is going. Use [**g (Go)**](g--go-.md) and wait a few seconds. Then break in and use **!runaway 3** again.
 
-    ```
+    ```dbgcmd
     0:002> !runaway 3
      User Mode Time
      Thread    Time
@@ -57,7 +56,7 @@ Use the following procedure to correct a bug of this sort.
     Compare the two sets of numbers and look for the thread whose user-mode time or kernel-mode time has increased the most. Because **!runaway** sorts by descending CPU time, the offending thread is usually the one at the top of the list. In this case, thread 0x4E0 is causing the problem.
 
 4.  Use the [**~ (Thread Status)**](---thread-status-.md) and [**~s (Set Current Thread)**](-s--set-current-thread-.md) commands to make this the current thread:
-    ```
+    ```dbgcmd
     0:001> ~
        0  Id: 3f4.3d4 Suspend: 1 Teb: 7ffde000 Unfrozen
     .  1  Id: 3f4.22c Suspend: 1 Teb: 7ffdd000 Unfrozen
@@ -67,7 +66,7 @@ Use the following procedure to correct a bug of this sort.
     ```
 
 5.  Use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to obtain a stack trace of this thread:
-    ```
+    ```dbgcmd
     0:002> kb
     FramePtr  RetAddr   Param1   Param2   Param3   Function Name
     0b4ffc74  77f6c600  000000c8.00000000 77fa5ad0 BuggyProgram!CreateMsgFile+0x1b
@@ -83,13 +82,13 @@ Use the following procedure to correct a bug of this sort.
     ```
 
 6.  Set a breakpoint on the return address of the currently-running function. In this case, the return address is shown on the first line as 0x77F6C600. The return address is equivalent to the function offset shown on the second line (**BuggyProgram!OpenDestFileStream+0xB3**). If no symbols are available for the application, the function name may not appear. Use the [**g (Go)**](g--go-.md) command to execute until this return address is reached, using either the symbolic or hexadecimal address:
-    ```
+    ```dbgcmd
     0:002> g BuggyProgram!OpenDestFileStream+0xb3
     ```
 
 7.  If this breakpoint is hit, repeat the process. For example, suppose this breakpoint is hit. The following steps should be taken:
 
-    ```
+    ```dbgcmd
     0:002> kb
     FramePtr  RetAddr   Param1   Param2   Param3   Function Name
     0b4ffce4  01836060  0184f440 00000001 0b4ffe20 BuggyProgram!OpenDestFileStream+0xb3
@@ -107,7 +106,7 @@ Use the following procedure to correct a bug of this sort.
 
     If this is hit, continue with:
 
-    ```
+    ```dbgcmd
     0:002> kb
     FramePtr  RetAddr   Param1   Param2   Param3   Function Name
     0b4ffd20  01843eba  02b5b920 00000102 02b1e0e0 BuggyProgram!SaveMsgToDestFolder+0xb3
@@ -125,7 +124,7 @@ Use the following procedure to correct a bug of this sort.
 8.  Finally you will find a breakpoint that is not hit. In this case, you should assume that the last **g** command set the target running and it did not break. This means that the **SaveMsgToDestFolder()** function will never return.
 
 9.  Break into the thread again and set a breakpoint on **BuggyProgram!SaveMsgToDestFolder+0xB3** with the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command. Then use the **g** command repeatedly. If this breakpoint hits immediately, regardless of how many times you have executed the target, it is very likely that you have identified the offending function:
-    ```
+    ```dbgcmd
     0:002> bp BuggyProgram!SaveMsgToDestFolder+0xb3
 
     0:002> g 
@@ -135,9 +134,9 @@ Use the following procedure to correct a bug of this sort.
 
 10. Use the [**p (Step)**](p--step-.md) command to proceed through the function until you identify the place where the looping sequence of instructions are. You can then analyze the application's source code to identify the cause of the spinning thread. The cause will usually turn out to be a problem in the logic of a **while**, **do-while**, **goto**, or **for** loop.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,7 @@
 ---
 title: Managing User Roles
 ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
+ms.topic: article
 description: Managing user roles in the Windows hardware dev center dashboard
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -22,7 +23,7 @@ The Windows Hardware Dev Center Dashboard allows you to assign specific roles to
 | Shipping Label Promoter        | Adds the additional ability to submit shipping labels that have driver promotions (automatic installation) selected. This role requires the Shipping Label Owner role. If you select this role, you must also give the user the Shipping Label Owner role. |
 | System Submitter               | Can create new Systems Certifications and onboard new device definitions for the purposes of MDA Upgrade Test result uploads. Can’t make changes to driver submissions or shipping labels.                                                                 |
 
- 
+ 
 
 To change a user’s roles, navigate to the [Manage Users](https://go.microsoft.com/fwlink/?linkid=833569) section of **Account Settings**. Find the user you want to modify by using the search bar and click on their name.
 
@@ -34,7 +35,7 @@ In the user’s details, scroll down to the roles and select the ones they shoul
 
 Finalize your selections by selecting **Save**.
 
- 
+ 
 
- 
+ 
 

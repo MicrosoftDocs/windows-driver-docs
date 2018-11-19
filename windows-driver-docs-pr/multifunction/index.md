@@ -1,6 +1,5 @@
 ---
 title: Multifunction device driver design guide
-author: windows-driver-content
 description: Multifunction device driver design guide
 ms.assetid: 110c0b9b-4870-4853-8fbf-a9faf0c5f2ca
 keywords:
@@ -13,7 +12,6 @@ keywords:
 - multifunction devices WDK , installing
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -76,9 +74,9 @@ The rest of this section describes how to support multifunction devices on Windo
 
 The Windows Driver Kit (WDK) includes a separate section that describes how to support [multifunction audio devices](https://msdn.microsoft.com/library/windows/hardware/ff537574).
 
- 
+ 
 
- 
+ 
 
 
 

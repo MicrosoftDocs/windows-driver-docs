@@ -25,9 +25,9 @@ In Windows Vista and later versions of Windows, applications and installers can
 
 For information about how to access device class properties on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Device Setup Class Properties](accessing-device-setup-class-properties.md) and [Accessing Device Interface Class Properties](accessing-device-interface-class-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

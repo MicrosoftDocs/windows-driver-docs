@@ -61,9 +61,9 @@ On GPUs, which support the **DXGK\_PAGETABLEUPDATE\_CPU\_VIRTUAL** page table up
 
 The disadvantage of this method is that the [*UpdatePageTable*](https://msdn.microsoft.com/library/windows/hardware/ff560815) operations are not parallel with rendering operations. The advantage is that the driver does not need to implement support for paging buffers and implement *UpdatePageTable* as an immediate operation.
 
- 
+ 
 
- 
+ 
 
 
 

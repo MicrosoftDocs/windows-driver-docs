@@ -1,6 +1,5 @@
 ---
 title: System Worker Threads
-author: windows-driver-content
 description: System Worker Threads
 ms.assetid: 01ae1c1b-0cb0-4b9b-bd74-341b7c289fd4
 keywords: ["executive worker threads WDK kernel", "work items WDK kernel", "thread objects WDK kernel", "WorkItem", "WorkItemEx", "worker threads WDK kernel", "worker-thread callback routines WDK kernel", "callback routines WDK worker threads"]
@@ -49,9 +48,9 @@ Do not call **IoQueueWorkItem** or **IoQueueWorkItemEx** to queue a work item th
 
 The system worker thread removes the work item from the queue before it calls the worker thread. Thus, a driver thread can safely queue the work item again as soon as the worker thread starts to run.
 
- 
+ 
 
- 
+ 
 
 
 

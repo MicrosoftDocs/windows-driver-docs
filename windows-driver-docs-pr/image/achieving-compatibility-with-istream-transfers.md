@@ -1,6 +1,5 @@
 ---
 title: Achieving Compatibility with IStream Transfers
-author: windows-driver-content
 description: Achieving Compatibility with IStream Transfers
 ms.assetid: fdd0dce8-8f21-466b-bd2d-48da34914a23
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ This section includes:
 
 [WIA Driver Versioning](wia-driver-versioning.md)
 
- 
+ 
 
- 
+ 
 
 
 

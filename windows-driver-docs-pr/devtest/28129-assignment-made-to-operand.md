@@ -30,9 +30,9 @@ The following code example avoids this warning.
 fdo->Flags |= DO_BUFFERED_IO;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

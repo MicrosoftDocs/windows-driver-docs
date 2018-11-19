@@ -16,9 +16,9 @@ To resize a Defect Viewer window, place the cursor over the window border until 
 
 ![screen shot showing how to resize the defect viewer window](images/sdvresize.png)
 
- 
+ 
 
- 
+ 
 
 
 

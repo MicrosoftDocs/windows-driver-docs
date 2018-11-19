@@ -30,9 +30,9 @@ The Default rule set (Default.sdv) specifies the recommended sets of rules to us
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

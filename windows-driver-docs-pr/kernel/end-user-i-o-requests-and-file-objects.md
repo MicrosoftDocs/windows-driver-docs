@@ -1,6 +1,5 @@
 ---
 title: End-User I/O Requests and File Objects
-author: windows-driver-content
 description: End-User I/O Requests and File Objects
 ms.assetid: 69524f41-32c4-4a62-b666-6eb2e4657877
 keywords: ["IRPs WDK kernel , end-user I/O requests", "end-user I/O requests WDK kernel", "I/O requests WDK kernel", "named file objects WDK kernel", "file objects WDK kernel", "protected subsystems WDK kernel", "subsystem I/O requests WDK kernel", "user I/O requests WDK kernel"]
@@ -38,9 +37,9 @@ As shown in the previous figure, a subsystem and its native applications can acc
 
 The I/O manager, which exports these system services, is then responsible for locating or creating the file object that represents the device or data file and for locating the appropriate driver(s).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: amli r
 description: The amli r extension displays information about the current context or the specified context.
 ms.assetid: 1a8977ed-a420-4f68-8580-8e7446075283
 keywords: ["amli r Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,8 +20,9 @@ The **!amli r** extension displays information about the current context or the 
 
 Syntax
 
+```dbgcmd
    !amli r [ContextAddress]
-
+```
 
 ## <span id="ddk__amli_r_dbg"></span><span id="DDK__AMLI_R_DBG"></span>Parameters
 
@@ -74,9 +74,9 @@ ffffffff80e630e5 : | Store(Zero, S4BW)
 ffffffff80e630eb : }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

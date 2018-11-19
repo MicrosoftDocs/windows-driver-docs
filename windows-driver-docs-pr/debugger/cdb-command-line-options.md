@@ -3,7 +3,6 @@ title: CDB Command-Line Options
 description: First-time users of CDB or NTSD should begin with the Debugging Using CDB and NTSD section.
 ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 08/01/2018
 topic_type:
 - apiref
@@ -136,7 +135,7 @@ Passes control of this debugger to the kernel debugger. If you are debugging CSR
 
 **Note**  If you use WinDbg as the kernel debugger, many of the familiar features of WinDbg are not available in this scenario. For example, you cannot use the Locals window, the Disassembly window, or the Call Stack window, and you cannot step through source code. This is because WinDbg is only acting as a viewer for the debugger (NTSD or CDB) running on the target computer.
 
- 
+ 
 
 <span id="_______-ddefer______"></span><span id="_______-DDEFER______"></span> **-ddefer**   
 Passes control of this debugger to the kernel debugger, unless a debugging client is connected. (This is a variation of **-d** that can be used from a debugging server.) See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details. This option cannot be used in conjunction with either the **-d** option or the **-noio** option.
@@ -294,7 +293,7 @@ Specifies the error level that will cause the target to break into the debugger.
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -371,7 +370,7 @@ Specifies the error level that will cause the debugger to display an error messa
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -422,9 +421,9 @@ When you are starting the debugger from **Start | Run** or from a Command Prompt
 cdb myexe arg1arg2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

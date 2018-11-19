@@ -1,6 +1,5 @@
 ---
 title: Driver Entry Points in Driver Objects
-author: windows-driver-content
 description: Driver Entry Points in Driver Objects
 ms.assetid: f004c2b3-8435-4c25-82e9-aff3911dc316
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects", "entry points WDK kernel", "driver entry points WDK kernel"]
@@ -50,9 +49,9 @@ A **DriverEntry** or optional [*Reinitialize*](https://msdn.microsoft.com/librar
 
 The I/O manager exports no support routines to manipulate driver objects, which are [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174) structures. Driver objects are used by the I/O manager to keep track of currently loaded drivers. Some members of a driver object are used only by the I/O manager. Others members are also used by driver writers; for example, you must know certain member names to define *AddDevice*, *Dispatch*, *StartIo*, and *Unload* entry points. You should neither attempt to use undocumented members within a **DRIVER\_OBJECT** structure, nor make assumptions about the locations of any driver object members that are named in this documentation. Otherwise, you cannot maintain the portability of a driver from one Windows platform to another.
 
- 
+ 
 
- 
+ 
 
 
 

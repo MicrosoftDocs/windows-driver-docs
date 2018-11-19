@@ -24,9 +24,9 @@ If the FVF code of a vertex buffer conflicts with that specified by D3DDP2OP\_SE
 
 The DirectX runtime guarantees that only FVF codes are passed as vertex shader handles to a driver that does not support programmable vertex processing. However, such a driver should have debug code to verify that the FVF code that is passed is supported.
 
- 
+ 
 
- 
+ 
 
 
 

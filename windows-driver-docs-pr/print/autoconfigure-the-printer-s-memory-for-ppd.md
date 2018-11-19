@@ -1,6 +1,5 @@
 ---
 title: Autoconfigure the Printer's Memory for PPD
-author: windows-driver-content
 description: Autoconfigure the Printer's Memory for PPD
 ms.assetid: 75df1026-896f-4840-a69d-975f813ca636
 keywords:
@@ -67,9 +66,9 @@ To enable autoconfiguration for the "InstalledMemory" PPD feature, add the follo
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

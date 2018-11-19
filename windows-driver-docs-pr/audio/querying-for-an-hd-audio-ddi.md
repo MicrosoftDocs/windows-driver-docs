@@ -27,9 +27,9 @@ The procedures for obtaining references to the HDAUDIO\_BUS\_INTERFACE, the HDAU
 
 [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Neither I/O Operations
-author: windows-driver-content
 description: Neither I/O Operations
 ms.assetid: c8fc4742-e220-45c4-9113-ec5658bc09cc
 keywords:
@@ -156,9 +155,9 @@ Another critical issue occurs when the request is not satisfied in the context o
 
 The FASTFAT file system protects against a broad range of failures, not simply invalid user buffers, by using these routines. While this is a very powerful technique, it also involves ensuring that all protected code blocks properly release any resources they might be holding. The resources to release include memory, synchronization objects, or some other resource of the file system itself. A failure to do so would give a would-be attacker the ability to cause resource starvation by making many repetitive calls into the operating system to exhaust the resource.
 
- 
+ 
 
- 
+ 
 
 
 

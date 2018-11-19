@@ -27,11 +27,11 @@ Each NIC switch contains the following components:
 
     **Note**  Additional VPorts can be created and allocated to the PF for network access.
 
-     
+     
 
 **Note**  Starting with NDIS 6.30 in Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*, and is referenced by the NDIS\_DEFAULT\_SWITCH\_ID identifier.
 
- 
+ 
 
 The hardware resources for the NIC switch are managed by the PF miniport driver for the SR-IOV network adapter. The driver creates and configures the NIC switch through one of the following methods:
 
@@ -41,9 +41,9 @@ The hardware resources for the NIC switch are managed by the PF miniport driver 
 
 For more information on how NIC switches are created, configured, and managed, see [Managing NIC Switches](managing-nic-switches.md).
 
- 
+ 
 
- 
+ 
 
 
 

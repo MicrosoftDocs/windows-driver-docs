@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -32,9 +32,9 @@ This section includes the following topics:
 
 [NetDMA 2.0 Extensions for NetDMA 2.0 and Later Providers](netdma-2-0-extensions-for-netdma-2-0-and-later-providers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to HID Concepts
-author: windows-driver-content
 description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
 ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
 keywords:
@@ -51,7 +50,7 @@ When applications and HID devices exchange data, this is done through Reports. T
 | Output Report  | Data blobs that are sent from the application to the HID device, for example to the LEDs on a keyboard.         |
 | Feature Report | Data blobs that can be manually read and/or written, and are typically related to configuration information.    |
 
- 
+ 
 
 Each Top Level Collection defined in a Report Descriptor can contain zero (0) or more reports of each type.
 
@@ -129,9 +128,9 @@ The following list identifies the HID parser APIs.
 -   [**HidP\_UsageAndPageListDifference**](https://msdn.microsoft.com/library/windows/hardware/ff539824)
 -   [**HidP\_UsageListDifference**](https://msdn.microsoft.com/library/windows/hardware/ff539826)
 
- 
+ 
 
- 
+ 
 
 
 

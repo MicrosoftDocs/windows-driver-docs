@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_IHV_KEY
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_IHV_KEY is a TLV that contains an IHV key.
 ms.assetid: 5814DEA6-038A-4CA6-8518-E8830BBA6B7F
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the IHV key. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

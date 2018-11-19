@@ -1,7 +1,6 @@
 ---
 Description: Highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 title: Windows 10 - What's new for USB
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -49,7 +48,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
 -   **New set of programming interfaces for developing a USB host controller driver.**
 
-    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](http://msdn.microsoft.com/library/windows/hardware/hh406256.aspx#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
+    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/hh406256.aspx#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
 
     [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 
@@ -79,9 +78,9 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [USB serial driver (Usbser.sys)](usb-driver-installation-based-on-compatible-ids.md)
 
- 
+ 
 
- 
+ 
 
 
 

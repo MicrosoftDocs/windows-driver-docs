@@ -3,7 +3,6 @@ title: defwrites
 description: The defwrites extension displays the values of the kernel variables used by the cache manager.
 ms.assetid: da576e05-3d9f-4599-bf8e-b1fa05093d77
 keywords: ["cache manager", "defwrites Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!defwrites** extension displays the values of the kernel variables used by
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -76,9 +75,9 @@ Write throttles not engaged
 
 In this case, there are no dirty pages. If **CcTotalDirtyPages** reaches 1538 (the value of **CcDirtyPageThreshold**), writing will be delayed until the number of dirty pages is reduced.
 
- 
+ 
 
- 
+ 
 
 
 

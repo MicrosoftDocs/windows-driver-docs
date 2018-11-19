@@ -25,9 +25,9 @@ DirectSound exposes hardware-accelerated 3D mixing for WDM audio miniport driver
 
 -   The pin must support the [KSPROPSETID\_DirectSound3DListener](https://msdn.microsoft.com/library/windows/hardware/ff537449) property set on the 3D node.
 
- 
+ 
 
- 
+ 
 
 
 

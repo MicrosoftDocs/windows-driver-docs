@@ -1,6 +1,5 @@
 ---
 title: OID_802_3_MAXIMUM_LIST_SIZE
-author: windows-driver-content
 description: OID_802_3_MAXIMUM_LIST_SIZE
 ms.assetid: e4288fb3-6bb3-415c-b150-1f258a2fa1a0
 ms.date: 08/08/2017
@@ -44,9 +43,9 @@ Requirements
 
 [OID\_802\_3\_MULTICAST\_LIST](oid-802-3-multicast-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

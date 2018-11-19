@@ -1,6 +1,5 @@
 ---
 title: WIA Flatbed Driver
-author: windows-driver-content
 description: WIA Flatbed Driver
 ms.assetid: 83c35b1f-10e0-47e1-97cc-5a7a79fb8088
 ms.date: 04/20/2017
@@ -55,15 +54,15 @@ Resolutions="75, 100, 300, 600, 1200"
 **Note**   Remember to put a space after each comma.
 It is possible to use the **IWiaItem::DeviceDlg** method (described in the Microsoft Windows SDK documentation) to get user input on selecting a "custom" resolution.
 
- 
+ 
 
 ### ADF
 
 Only simple Automatic Document Feeder (ADF) control is supported.
 
- 
+ 
 
- 
+ 
 
 
 

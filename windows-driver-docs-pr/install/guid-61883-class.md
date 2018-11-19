@@ -43,7 +43,7 @@ The GUID_61883_CLASS [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Requirements
 
 [**BUS1394_CLASS_GUID**](bus1394-class-guid.md)
 
- 
+ 
 
- 
+ 
 
 
 

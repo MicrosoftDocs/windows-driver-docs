@@ -1,6 +1,5 @@
 ---
 title: Passive and Active Cooling Modes
-author: windows-driver-content
 description: Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the GUID_THERMAL_COOLING_INTERFACE driver interface.
 ms.assetid: 4AB70ED3-E71A-45EE-818D-7DCDE0FFBCB3
 ms.localizationpriority: medium
@@ -26,9 +25,9 @@ Passive cooling is the only cooling mode available to many mobile devices. In pa
 
 Handheld computing platforms typically use System on a Chip (SoC) chips that contain processors and GPUs, and the SoC hardware vendors supply the thermal management software for these devices. However, peripheral devices, such as battery chargers and display backlights, are external to SoC chips. The vendors for these devices must supply device drivers, and these drivers must provide any thermal management support that might be required for the devices. A relatively simple way for a device driver to support thermal management is to implement the GUID\_THERMAL\_COOLING\_INTERFACE driver interface.
 
- 
+ 
 
- 
+ 
 
 
 

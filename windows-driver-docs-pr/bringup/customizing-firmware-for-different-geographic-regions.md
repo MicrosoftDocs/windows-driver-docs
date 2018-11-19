@@ -1,6 +1,5 @@
 ---
 title: Customizing firmware for different geographic regions
-author: windows-driver-content
 description: Systems will be sold in a variety of markets and geographies worldwide. To enable this, OEMs must define unique GUID values for those devices/system firmware which may require region-specific firmware.
 ms.assetid: 47E1C9EC-ED6E-4626-B61F-A19D1546FA08
 ms.date: 04/20/2017

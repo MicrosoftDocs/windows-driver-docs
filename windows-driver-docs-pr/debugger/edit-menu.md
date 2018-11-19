@@ -3,7 +3,6 @@ title: Edit Menu
 description: Edit Menu
 ms.assetid: fb3c8b71-93ba-4811-ba86-abc5aef81faa
 keywords: ["Edit Menu (complete listing)", "graphical interface, edit menu"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -54,9 +53,9 @@ This section describes the following commands on the **Edit** menu of WinDbg:
 
 [Edit | Open/Close Log File](edit---open-close-log-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

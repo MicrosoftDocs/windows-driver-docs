@@ -141,78 +141,80 @@ The following NDIS filter driver installation issues are associated with modifyi
     </tbody>
     </table>
 
-     
 
-    **Note**  More than one filter driver of a specific class can exist in a layered stack of modifying filter drivers. For example, two modifying filter drivers of **FilterClass** "scheduler" can exist in a stack simultaneously. The filter driver that has an earlier installation time stamp is installed below (that is, closer to the miniport adapter) the filter driver with the later time stamp. However, the order of multiple filter drivers with the same class is exactly the same over different miniport adapters on the same computer.
 
-     
 
-    The following example shows a sample **FilterClass** .
+**Note**  More than one filter driver of a specific class can exist in a layered stack of modifying filter drivers. For example, two modifying filter drivers of **FilterClass** "scheduler" can exist in a stack simultaneously. The filter driver that has an earlier installation time stamp is installed below (that is, closer to the miniport adapter) the filter driver with the later time stamp. However, the order of multiple filter drivers with the same class is exactly the same over different miniport adapters on the same computer.
 
-    ```INF
-    HKR, Ndi,FilterClass,, compression
-    ```
 
--   Only Hyper-V switch extension filter drivers are valid in the Hyper-V Extensible Switch. Hyper-V extensible switch filter drivers must define the FilterClass key with one of the values in the following table.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Value</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>ms_switch_capture</p></td>
-    <td align="left"><p>Starting with NDIS 6.30, capture drivers monitor packet traffic in the Hyper-V extensible switch driver stack. This class of filter driver exists below custom drivers in the stack.</p>
-    <p>For more information about this class of driver, see [Capturing Extensions](capturing-extensions.md).</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>ms_switch_filter</p></td>
-    <td align="left"><p>Starting with NDIS 6.30, filtering drivers filter packet traffic and enforce port or switch policy for packet delivery through the extensible switch driver stack. This class of filter driver exists below <strong>ms_switch_capture</strong> drivers in the stack.</p>
-    <p>For more information about this class of driver, see [Filtering Extensions](filtering-extensions.md).</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>ms_switch_forward</p></td>
-    <td align="left"><p>Starting with NDIS 6.30, forwarding drivers filter perform the same functions as a filtering driver. Forwarding drivers also forward packets to and from extensible switch ports. This class of filter driver exists below <strong>ms_switch_filter</strong> drivers in the stack.</p>
-    <p>For more information about this class of driver, see [Forwarding Extensions](forwarding-extensions.md).</p></td>
-    </tr>
-    </tbody>
-    </table>
+The following example shows a sample **FilterClass** .
 
-     
+```INF
+HKR, Ndi,FilterClass,, compression
+```
 
--   You must define the following entries in the modifying filter driver INF file to control the driver bindings.
 
-    ```INF
-    HKR, Ndi\Interfaces,UpperRange,,"noupper"
-    HKR, Ndi\Interfaces,LowerRange,,"nolower"
-    HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
-    ```
+- Only Hyper-V switch extension filter drivers are valid in the Hyper-V Extensible Switch. Hyper-V extensible switch filter drivers must define the FilterClass key with one of the values in the following table.
 
-    For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Value</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p>ms_switch_capture</p></td>
+  <td align="left"><p>Starting with NDIS 6.30, capture drivers monitor packet traffic in the Hyper-V extensible switch driver stack. This class of filter driver exists below custom drivers in the stack.</p>
+  <p>For more information about this class of driver, see <a href="capturing-extensions.md" data-raw-source="[Capturing Extensions](capturing-extensions.md)">Capturing Extensions</a>.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>ms_switch_filter</p></td>
+  <td align="left"><p>Starting with NDIS 6.30, filtering drivers filter packet traffic and enforce port or switch policy for packet delivery through the extensible switch driver stack. This class of filter driver exists below <strong>ms_switch_capture</strong> drivers in the stack.</p>
+  <p>For more information about this class of driver, see <a href="filtering-extensions.md" data-raw-source="[Filtering Extensions](filtering-extensions.md)">Filtering Extensions</a>.</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p>ms_switch_forward</p></td>
+  <td align="left"><p>Starting with NDIS 6.30, forwarding drivers filter perform the same functions as a filtering driver. Forwarding drivers also forward packets to and from extensible switch ports. This class of filter driver exists below <strong>ms_switch_filter</strong> drivers in the stack.</p>
+  <p>For more information about this class of driver, see <a href="forwarding-extensions.md" data-raw-source="[Forwarding Extensions](forwarding-extensions.md)">Forwarding Extensions</a>.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
--   A modifying filter INF file should specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
-    ```INF
-    [Common.Params.reg]
 
-    HKR, FilterDriverParams\DriverParam,  ParamDesc, , "Driverparam for lwf"
-    HKR, FilterDriverParams\DriverParam,  default, , "5"
-    HKR, FilterDriverParams\DriverParam,  type,  , "int"
 
-    HKR, FilterAdapterParams\AdapterParam,  ParamDesc, , "Adapterparam for lwf"
-    HKR, FilterAdapterParams\AdapterParam,  default, , "10"
-    HKR, FilterAdapterParams\AdapterParam,  type,  , "int"
-    ```
+- You must define the following entries in the modifying filter driver INF file to control the driver bindings.
 
- 
+  ```INF
+  HKR, Ndi\Interfaces,UpperRange,,"noupper"
+  HKR, Ndi\Interfaces,LowerRange,,"nolower"
+  HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
+  ```
 
- 
+  For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
+
+- A modifying filter INF file should specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
+  ```INF
+  [Common.Params.reg]
+
+  HKR, FilterDriverParams\DriverParam,  ParamDesc, , "Driverparam for lwf"
+  HKR, FilterDriverParams\DriverParam,  default, , "5"
+  HKR, FilterDriverParams\DriverParam,  type,  , "int"
+
+  HKR, FilterAdapterParams\AdapterParam,  ParamDesc, , "Adapterparam for lwf"
+  HKR, FilterAdapterParams\AdapterParam,  default, , "10"
+  HKR, FilterAdapterParams\AdapterParam,  type,  , "int"
+  ```
+
+
+
+
 
 
 

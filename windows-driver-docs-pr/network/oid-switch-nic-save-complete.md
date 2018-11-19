@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_SAVE_COMPLETE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_SAVE_COMPLETE to notify Hyper-V extensible switch extensions about the completion of the operation to save run-time data.
 ms.assetid: 75D4C0D5-B4B2-493D-8D1D-400F60613FCA
 ms.date: 08/08/2017
@@ -52,7 +51,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -82,9 +81,9 @@ Requirements
 
 [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216)
 
- 
+ 
 
- 
+ 
 
 
 

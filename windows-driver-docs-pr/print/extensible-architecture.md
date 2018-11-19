@@ -1,6 +1,5 @@
 ---
 title: Extensible Architecture
-author: windows-driver-content
 description: Extensible Architecture
 ms.assetid: 48a9c3ea-282c-4d3c-83ca-dc7051fe5002
 keywords:
@@ -35,9 +34,9 @@ The modular construction of the filter pipeline provides a framework for develop
 
 Versions of the Windows operation system before Windows Vista required printer drivers to have a printer interface DLL for printer configuration and control and a printer graphics DLL for processing and rendering the actual document content to be printed. Printer drivers for Windows Vista require the same functions as in previous printer driver versions. An XPSDrv driver communicates with devices and applications by using the Print Ticket and Print Capabilities technologies. You must add the additional interfaces that provide the enhanced PrintTicket and Print Capabilities functions of Windows Vista printing.
 
- 
+ 
 
- 
+ 
 
 
 

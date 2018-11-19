@@ -3,7 +3,6 @@ title: ndiskd.ndisrwlock
 description: The ndiskd.ndisrwlock extension displays information about an NDIS_RW_LOCK_EX lock structure.
 ms.assetid: 853CBAFE-3899-4983-BFC7-933D3BC7ADA1
 keywords: ["ndiskd.ndisrwlock Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -91,9 +90,9 @@ NDIS READ-WRITE LOCK
 
 [**NDIS\_RW\_LOCK\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff567279)
 
- 
+ 
 
- 
+ 
 
 
 

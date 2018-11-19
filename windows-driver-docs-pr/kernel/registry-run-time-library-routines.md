@@ -1,6 +1,5 @@
 ---
 title: Registry Run-Time Library Routines
-author: windows-driver-content
 description: Registry Run-Time Library Routines
 ms.assetid: 53e55969-3c8e-44ab-8ba7-6abb0ddbfc24
 keywords: ["registry WDK kernel , run-time library routines", "driver registry information WDK kernel , run-time library routines", "run-time library routines WDK kernel", "RtlXxxRegistryYyy routines"]
@@ -34,30 +33,30 @@ The following table list the operations that drivers can perform by calling the 
 <tbody>
 <tr class="odd">
 <td><p>Create a registry key</p></td>
-<td><p>[<strong>RtlCreateRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561822)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561822" data-raw-source="[&lt;strong&gt;RtlCreateRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561822)"><strong>RtlCreateRegistryKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Check whether a registry key exists</p></td>
-<td><p>[<strong>RtlCheckRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561754)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561754" data-raw-source="[&lt;strong&gt;RtlCheckRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561754)"><strong>RtlCheckRegistryKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Examine one or more registry-key values</p></td>
-<td><p>[<strong>RtlQueryRegistryValues</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562046)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562046" data-raw-source="[&lt;strong&gt;RtlQueryRegistryValues&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562046)"><strong>RtlQueryRegistryValues</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Write a registry-key value</p></td>
-<td><p>[<strong>RtlWriteRegistryValue</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563034)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563034" data-raw-source="[&lt;strong&gt;RtlWriteRegistryValue&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563034)"><strong>RtlWriteRegistryValue</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Delete a registry-key value</p></td>
-<td><p>[<strong>RtlDeleteRegistryValue</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561829)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561829" data-raw-source="[&lt;strong&gt;RtlDeleteRegistryValue&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561829)"><strong>RtlDeleteRegistryValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-The following code example illustrates how to set *ValueName* for **\\Registry\\Machine\\System\\***KeyName* to a ULONG value of 0xFF. Compare this example with the corresponding one in the [Registry Key Object Routines](registry-key-object-routines.md) section.
+The following code example illustrates how to set *ValueName* for **\\Registry\\Machine\\System\\**<em>KeyName</em> to a ULONG value of 0xFF. Compare this example with the corresponding one in the [Registry Key Object Routines](registry-key-object-routines.md) section.
 
 ```cpp
 NTSTATUS status;
@@ -75,9 +74,9 @@ Although you write fewer lines of code when using the **Rtl*Xxx*Registry*Xxx*** 
 
 If you perform multiple operations on the same key, the **Zw*Xxx*Key** routines are more efficient—you can use the same open handle for each operation. In contrast, the **Rtl*Xxx*Registry*Xxx*** routines open and close a new handle for each operation.
 
- 
+ 
 
- 
+ 
 
 
 

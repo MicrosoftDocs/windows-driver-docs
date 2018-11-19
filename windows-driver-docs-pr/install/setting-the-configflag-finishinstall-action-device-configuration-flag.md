@@ -20,9 +20,9 @@ An *installer* (a class installer, class co-installer, or device co-installer) i
 
 2.  If the DI_FLAGSEX_FINISHINSTALL_ACTION flag is set for a device after all installers have processed the [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) request for the device, Windows flags the device as needing to perform a finish install action.
 
- 
+ 
 
- 
+ 
 
 
 

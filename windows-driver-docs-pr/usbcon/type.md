@@ -1,7 +1,6 @@
 ---
 Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
 title: USB Type-C manual interoperability test procedures
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -153,7 +152,7 @@ Repeat this test for other available system power states: Sleep (S3), Hibernate 
 
 **Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](https://msdn.microsoft.com/library/windows/hardware/ff550682).
 
- 
+ 
 
 ## <a href="" id="ft4"></a>FT Case 4: Selective Suspend
 
@@ -185,7 +184,7 @@ Applies to: Dock
 
 **Note**  Additional information on dock identification can be found in the [2015 WinHEC slide presentation](http://go.microsoft.com/fwlink/p/?LinkId=623309) (approximately slide 26 in section entitled: Identifying device as a dock).
 
- 
+ 
 
 ## <a href="" id="ft6"></a>FT Case 6: Alternate Mode Negotiation
 
@@ -199,7 +198,7 @@ Applies to: System, dock, device
 3.  Connect an alternate mode-enabled USB Type-C device to an alternate mode-enabled USB Type-C port on the system; make sure both the device and the system share at least one alternate mode in common and that the device is powered or connected to an external power source, if necessary.
     **Note**  For Type-C dongles/adapters, ensure that an appropriate peripheral is powered on and connected to the non-Type-C end of the dongle/adapter.
 
-     
+     
 
 4.  Confirm that the alternate mode device is added in **Device Manager**. In some cases, the alternate mode device may show up as a Monitor device or another bus device. For more information, see [How to confirm device addition](#add).
 5.  Disconnect the device and observe changes in **Device Manager**. The hub and device should no longer appear in **Device Manager**. For more information, see [How to confirm device removal](#remove).
@@ -287,7 +286,7 @@ Applies to: System, dock, device
 
 **Note**  During the test, validate there is no glitching from devices connected via the USB Type-C A/V dongle such as video distortion or audio drop off.
 
- 
+ 
 
 ## <a href="" id="ft-plan"></a>Functional system interoperability test plan
 
@@ -484,9 +483,9 @@ Provide these details:
 -   The list must specify the tests that have failed or passed.
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
 
- 
+ 
 
- 
+ 
 
 
 

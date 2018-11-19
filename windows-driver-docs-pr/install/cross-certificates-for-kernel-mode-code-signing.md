@@ -13,7 +13,7 @@ This information describes how to obtain and use cross-certificates for code-sig
 
 **Note**  Please also review Microsoft Security Advisory ([2880823](https://technet.microsoft.com/library/security/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
 
- 
+ 
 
 ## Cross-Certificates Overview
 
@@ -94,9 +94,9 @@ The following list contains several new CAs that are currently supported by Micr
 | GoDaddy Class 2 Certification Authority                      | d9 61 24 72 ef 0f 27 87 e2 b2 d9 e0 63 a0 6b 32 fa 5e 33 3d | [Download](http://go.microsoft.com/fwlink/p/?linkid=321791) |
 | Starfield Class 2 Certification Authority                    | f8 fc 7f 3c dd 51 76 ad d2 7c f9 7f 73 96 59 09 46 6d 9a 22 | [Download](http://go.microsoft.com/fwlink/p/?linkid=321792) |
 | UTN-USERFirst-Object                                         | ae 1e 25 26 01 30 a3 0b 1b c2 20 29 35 65 3b e5 a7 23 be f5 | [Download](http://go.microsoft.com/fwlink/p/?linkid=321793) |
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES
-author: windows-driver-content
 description: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES is a TLV that contains Wi-Fi Direct Provision Service attributes.
 ms.assetid: CA318E91-660A-4F17-827B-F27E18643CC6
 ms.date: 07/18/2017
@@ -42,7 +41,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | A flag indicating if a Persistent Group will be used for the connection. The flag is set to 1 if a Persistent Group will be used.                  |
 | UINT8                                             | A flag indicating if this frame is part of a follow-on provision discovery. The flag is set to 1 if it is part of a follow-on provision discovery. |
 
- 
+ 
 
 Requirements
 ------------
@@ -68,9 +67,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

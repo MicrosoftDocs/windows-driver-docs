@@ -58,9 +58,9 @@ The sample *DeinterlaceOpenStream* function maps directly to the **CreateMoComp*
 
 [**DXVA\_VideoDesc**](https://msdn.microsoft.com/library/windows/hardware/ff564070)
 
- 
+ 
 
- 
+ 
 
 
 

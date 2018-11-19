@@ -1,6 +1,5 @@
 ---
 title: WIA Properties Supported by an Auto Item
-author: windows-driver-content
 description: WIA Properties Supported by an Auto Item
 ms.assetid: 71b3a9ea-e402-4be8-9c62-9463e2a10f27
 ms.date: 04/20/2017
@@ -44,9 +43,9 @@ For an auto item, the WIA architecture requires the minidriver to support all of
 
 The minidriver must set the WIA\_IPA\_ITEM\_CATEGORY property on an auto item to the value WIA\_CATEGORY\_AUTO. The last five properties in the preceding list enable a WIA application to negotiate the file format used to transfer image data that the device acquires during auto-configured scanning. The application should select a file format based on its internal requirements. Some applications might enable a user to select a file format from a list of formats that are supported by both the application and the driver.
 
- 
+ 
 
- 
+ 
 
 
 

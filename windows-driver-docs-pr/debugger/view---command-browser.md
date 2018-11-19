@@ -3,7 +3,6 @@ title: View Command Browser
 description: View Command Browser
 ms.assetid: 61ddbca3-e718-41a4-8b02-b57e2c36751d
 keywords: ["View Command Browser", "command browser window, View Command Browser"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -17,9 +16,9 @@ This command is equivalent to pressing CTRL+N or clicking the **Command Browser 
 
 For more information about this window and its uses, see [Command Browser Window](command-browser-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

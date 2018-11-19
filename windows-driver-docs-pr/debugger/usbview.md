@@ -3,7 +3,6 @@ title: USBView
 description: USBView
 ms.assetid: 88d2a93f-2e7c-493c-bb9e-487f1d1f2016
 keywords: ["USBView"]
-ms.author: domars
 ms.date: 02/22/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ To download  and use USBView complete the following steps:
 
 3. By default on a x64 PC the SDK will install USBView to this directory.
 
-   ```C:\Program Files (x86)\Windows Kits\10\Debuggers\x64```
+   `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 
 4. Navigate to the kits debugger directory for the processor type you are running and click on usbview.exe to start the utility.
 
@@ -45,7 +44,7 @@ The right pane displays the USB data structures that pertain to the selected USB
 
 To use Windows Device Manager to display USB information:
 
-1. Type the Windows Key + R and enter in ```devmgmt.msc``` into the pop-up box and press Enter.
+1. Type the Windows Key + R and enter in `devmgmt.msc` into the pop-up box and press Enter.
 
 2. In Device Manager, click your computer so that it is highlighted.
 
@@ -69,9 +68,9 @@ To use Windows Device Manager to display USB information:
 If you are trying to diagnose a USB device that does not eject using the Safely Remove Hardware dialog box, you might want to try the [Windows USB Troubleshooter](https://support.microsoft.com/help/17614/automatically-diagnose-and-fix-windows-usb-problems).
 
 
- 
+ 
 
- 
+ 
 
 
 

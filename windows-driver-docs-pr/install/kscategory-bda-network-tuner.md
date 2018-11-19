@@ -43,7 +43,7 @@ The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://msdn.microsoft
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

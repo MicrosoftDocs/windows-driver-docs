@@ -41,9 +41,9 @@ This section includes:
 
 -   [Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-miniport-offload-block-list-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

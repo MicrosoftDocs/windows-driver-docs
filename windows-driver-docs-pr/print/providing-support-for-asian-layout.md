@@ -1,6 +1,5 @@
 ---
 title: Providing Support for Asian Layout
-author: windows-driver-content
 description: Providing Support for Asian Layout
 ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
 keywords:
@@ -31,9 +30,9 @@ The Microsoft Windows print processor supports Asian languages that read from ri
 
 The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff548581) and [**ATTRIBUTE\_INFO\_4**](https://msdn.microsoft.com/library/windows/hardware/ff545096).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PageRate method
-author: windows-driver-content
 description: The PageRate property enables an ASP Web page to determine a printer's page rate.
 MS-HAID:
 - 'webfnc\_f356953e-ac15-4948-9a6e-b83d3aec8e7b.xml'
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

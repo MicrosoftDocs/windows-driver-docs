@@ -19,9 +19,9 @@ An SDV *operating system model* or *harness* consists of partial and abstracted 
 
 There is also a harness that executes parts of your driver in the same manner as the Windows Operating System by calling into entry points in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

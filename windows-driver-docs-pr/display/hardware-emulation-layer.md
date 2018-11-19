@@ -28,9 +28,9 @@ For example, if the DirectDraw driver has capability (*caps*) bits set for blts 
 
 DirectDraw does not pass failed DirectDraw driver operations to the HEL. If either the HEL or the DirectDraw driver fails a particular operation, an error code is returned to the application.
 
- 
+ 
 
- 
+ 
 
 
 

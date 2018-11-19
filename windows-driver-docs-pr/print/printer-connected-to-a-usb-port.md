@@ -1,6 +1,5 @@
 ---
 title: Printer Connected to a USB Port
-author: windows-driver-content
 description: Printer Connected to a USB Port
 ms.assetid: 85e238e1-4dc1-4720-b383-d6aaed72e560
 keywords:
@@ -42,9 +41,9 @@ The following example shows the entries in an [**INF Manufacturer section**](htt
 "Model Name XYZ" = Install_Section_XYZ, Company_NameModelNam1234, Company_NameModelNam1234 ; plus any other compatible IDs
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_SET_RADIO_STATE
-author: windows-driver-content
 description: OID_WDI_TASK_SET_RADIO_STATE is used to set the Wi-Fi radio state for the adapter.
 ms.assetid: d7981df2-d3e5-49fd-8414-ca350775828b
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_TASK\_SET\_RADIO\_STATE is used to set the Wi-Fi radio state for the a
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 1                                     | 1                               |
 
- 
+ 
 
 The task must be completed only after the disconnect activity has been completed.
 
@@ -33,7 +32,7 @@ Before the host turns off the radio, it disconnects all peers and stops any Grou
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_RADIO\_STATE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898043) |                                |          | The desired state of the radio. If this set to 1, the radio is enabled. If this is set to 0, the radio is turned off. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -69,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

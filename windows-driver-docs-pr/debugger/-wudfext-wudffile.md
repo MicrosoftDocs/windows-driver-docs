@@ -3,7 +3,6 @@ title: wudfext.wudffile
 description: The wudfext.wudffile extension displays information about a framework file.
 ms.assetid: f655703d-0e61-4e9c-a033-834a89ef6d05
 keywords: ["wudfext.wudffile Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,15 +50,15 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

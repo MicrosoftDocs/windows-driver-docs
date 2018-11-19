@@ -1,7 +1,6 @@
 ---
-Description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
+Description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
 title: Send USB isochronous transfers from a WinUSB desktop app
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 -   [**WinUsb\_WriteIsochPipeAsap**](https://msdn.microsoft.com/library/windows/hardware/dn265569)
 -   [**WinUsb\_ReadIsochPipeAsap**](https://msdn.microsoft.com/library/windows/hardware/dn265565)
 
-Starting in Windows 8.1, the set of [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
+Starting in Windows 8.1, the set of [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
 
 A USB device can support isochronous endpoints to transfer time-dependent data at a steady rate, such as with audio/video streaming. There is no guaranteed delivery. A good connection shouldn’t drop any packets, it is not normal or expected to lose packets, but the isochronous protocol is tolerant of such losses.
 
@@ -161,7 +160,6 @@ HRESULT
 
        return hr;
 }
-
 ```
 
 The SuperMUTT device defines its isochronous endpoints in the default interface, at setting 1. The preceding code obtains the **PipeId** values and stores them in the DEVICE\_DATA structure.
@@ -250,9 +248,6 @@ else if (pipe.PipeType == UsbdPipeTypeIsochronous)
 }
 
 ...
-
-
-
 ```
 
 In the preceding code, the app gets **Interval** and **MaximumBytesPerInterval** from [**WINUSB\_PIPE\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/dn265570) to calculate the transfer size and number of isochronous packets required for the read transfer. For both isochronous endpoints, **Interval** is 1. That value indicates that all microframes of the frame carry data. Based on that, to send 10 milliseconds of data, you need 10 frames, total transfer size is 10\*1024\*8 bytes and 80 isochronous packets, each 1024 bytes long.
@@ -305,7 +300,7 @@ VOID
         printf(_T("Transfer size must end at a frame boundary.\n"));
         goto Error;
     }
-    
+
     writeBuffer = new UCHAR[totalTransferSize];
 
     if (writeBuffer == NULL)
@@ -461,7 +456,6 @@ Error:
 
     return;
 }
-
 ```
 
 ## Step 4: Send a read transfer to receive data from an isochronous IN endpoint
@@ -558,7 +552,7 @@ VOID
         printf(_T("Isoch buffer registration failed.\n"));
         goto Error;
     }
-            
+
     result = WinUsb_GetCurrentFrameNumber(
                 DeviceData->WinusbHandle,
                 &frameNumber,
@@ -656,7 +650,7 @@ Error:
             printf(_T("Failed to unregister isoch read buffer. \n"));
         }
     }    
-    
+
     if (readBuffer != NULL)
     {
         delete [] readBuffer;
@@ -683,8 +677,6 @@ Error:
     }
     return;
 }
-
-
 ```
 
 ## Related topics

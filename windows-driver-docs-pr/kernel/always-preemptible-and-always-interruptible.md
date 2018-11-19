@@ -1,6 +1,5 @@
 ---
 title: Always Preemptible and Always Interruptible
-author: windows-driver-content
 description: Always Preemptible and Always Interruptible
 ms.assetid: 3da667b4-50f3-4536-9049-65719fa003ce
 keywords: ["preemptible designs WDK kernel", "interruptible designs WDK kernel", "interrupt request levels WDK kernel", "IRQL levels WDK kernel", "variable priority attributes WDK kernel", "prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "higher IRQL levels WDK kernel", "lower IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "WAKE_LEVEL WDK", "deferred procedure calls WDK kernel", "DPCs WDK kernel", "arbitrary thread context WDK kernel", "thread preemption WDK kernel", "thread priorities WDK kernel"]
@@ -48,9 +47,9 @@ In general, only a highest-level driver is called in the context of the thread t
 
 Consequently, driver routines usually execute in an *arbitrary thread context*—the context of whatever thread is current when a standard driver routine is called. For performance reasons (to avoid context switches), very few drivers set up their own threads.
 
- 
+ 
 
- 
+ 
 
 
 

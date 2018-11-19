@@ -1,6 +1,5 @@
 ---
 title: Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks
-author: windows-driver-content
 description: Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks
 ms.assetid: 2c17fc63-3c33-4d03-8c46-8d56242556d1
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
@@ -50,9 +49,9 @@ In this case, the driver:
 
 3.  If the driver is registering blocks on behalf of another driver (as a class driver might on behalf of a miniclass driver), the driver fills in another [**WMIREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565832) structure and list of [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827) structures with registration information for the other driver's blocks, and sets **NextWmiRegInfo** in the first **WMIREGINFO** to the offset in bytes from the beginning of the first **WMIREGINFO** to the beginning of the second **WMIREGINFO** structure.
 
- 
+ 
 
- 
+ 
 
 
 

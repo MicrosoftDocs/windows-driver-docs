@@ -1,6 +1,5 @@
 ---
 title: Vendor-Extended Properties
-author: windows-driver-content
 description: Vendor-Extended Properties
 ms.assetid: bcc89272-c14d-4d46-a2ca-7da0fb188111
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ A **PropCode** entry in the **DeviceData** INF file section (see the example in 
 
 The WIA property codes should be between 0x9802 and 0x11802, which is the range defined for vendor-defined WIA device properties. The properties can be accessed through the **IWiaPropertyStorage::GetPropertyStream** and **IWiaPropertyStorage::SetPropertyStream** methods, which are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

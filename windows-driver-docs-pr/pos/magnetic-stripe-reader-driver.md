@@ -1,6 +1,5 @@
 ---
 title: Magnetic stripe reader driver sample
-author: windows-driver-content
 description: This sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended as a template for creating a new driver.
 ms.assetid: 92A8C116-F71F-4A74-A453-44C14297BCDD
 ms.date: 09/07/2018
@@ -54,7 +53,7 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
     > [!NOTE]
     > If test-signing had been enabled previously, a reboot is not necessary.
 
-     
+     
 
 3.  From an elevated command prompt, navigate to the folder where your project was built. If you created an x64 debug build, this folder will be `<project_root>\x64\Debug\SampleMagneticStripeReaderDrv`.
 
@@ -66,7 +65,7 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
     | SampleMagneticStripeReaderDrv.inf | An INF file that contains information needed to install the driver.          |
     | samplemagneticstripereaderdrv.cat | A signed catalog file, which serves as the signature for the entire package. |
 
-     
+     
 
 4.  Identify the path to the Device Console utility (devcon.exe) that matches your OS and driver platform. The default locations for the x64 version is `C:\Program Files (x86)\Windows Kits\10\Tools\x64`.
 5.  Type the following command, replacing &lt;devcon\_path&gt; with the path to the devcon.exe file that you located in the previous step.

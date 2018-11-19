@@ -1,6 +1,5 @@
 ---
 title: General-purpose I/O (GPIO)
-author: windows-driver-content
 description: System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins.
 ms.assetid: 9EB4EFC3-B94E-42C9-9FC7-12DF4AD01622
 ms.date: 07/09/2018
@@ -36,7 +35,7 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 > [!NOTE]
 > The third requirement in the preceding list implies that the driver for a device that uses ActiveBoth might receive an interrupt immediately after initializing (connecting to) the interrupt, if the signal at the GPIO pin is in the asserted state at that time. This is possible, and even likely for some devices (for example, headphones), and must be supported in the driver.
 
- 
+ 
 
 To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://docs.microsoft.com/windows-hardware/drivers/gpio).
 
@@ -87,4 +86,4 @@ Fields in an OpRegion can be declared anywhere in the namespace and accessed fro
 > [!NOTE]
 > Because OpRegion access is provided by the GPIO controller device driver (the "OpRegion Handler"), methods must take care not to access an OpRegion until the driver is available. ASL code can track the state of the OpRegion handler by including a Region (\_REG) method under the GPIO controller device (see section 6.5.4 of the ACPI 5.0 specification). Additionally, the OpRegion Dependencies (\_DEP) object (see section 6.5.8 of the ACPI 5.0 specification) can be used under any device that has a method accessing GPIO OpRegion fields, if needed. See the **Device dependencies** section in the [Device management namespace objects](device-management-namespace-objects.md) topic for a discussion of when to use \_DEP. It is important that drivers are not assigned GPIO I/O resources that are also assigned to GeneralPurposeIO OpRegions. Opregions are for the exclusive use of ASL control methods.
 
- 
+ 

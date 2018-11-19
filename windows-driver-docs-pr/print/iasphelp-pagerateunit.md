@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PageRateUnit method
-author: windows-driver-content
 description: The PageRateUnit enables an ASP Web page to determine the units in which the page rate is expressed.
 MS-HAID:
 - 'webfnc\_c3c557fb-2ce9-4260-838a-4bd0e56fb63d.xml'
@@ -95,7 +94,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

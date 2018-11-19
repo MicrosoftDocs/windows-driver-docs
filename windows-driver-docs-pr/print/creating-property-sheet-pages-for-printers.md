@@ -1,6 +1,5 @@
 ---
 title: Creating Property Sheet Pages for Printers
-author: windows-driver-content
 description: Creating Property Sheet Pages for Printers
 ms.assetid: b9b7aa52-39b7-4809-acdf-e72293da37e1
 keywords:
@@ -21,9 +20,9 @@ Printer interface DLLs, in conjunction with [CPSUI](common-property-sheet-user-i
 
 To understand how these functions should be designed, it is important to read the section describing [CPSUI](common-property-sheet-user-interface.md). Displaying property sheet pages involves interaction between an application, the print spooler, the printer interface DLL, and CPSUI. Execution flow is described in [Using CPSUI with Printer Drivers](using-cpsui-with-printer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

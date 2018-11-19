@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Driver Stack
-author: windows-driver-content
 description: USB Video Class Driver Stack
 ms.assetid: 8dd9ce8d-eaa0-43d3-a27a-5b328220e10e
 keywords:
@@ -22,9 +21,9 @@ The USB Video Class driver stack is shown in the following diagram:
 
 ![diagram illustrating the usb video class driver stack ](images/uvc2.png)
 
- 
+ 
 
- 
+ 
 
 
 

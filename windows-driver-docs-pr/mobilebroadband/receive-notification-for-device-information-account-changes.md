@@ -35,9 +35,9 @@ To receive a notification for device information account changes, use the [**Acc
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

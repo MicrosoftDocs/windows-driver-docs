@@ -1,6 +1,5 @@
 ---
 title: Writing Dispatch Routines
-author: windows-driver-content
 description: Writing Dispatch Routines
 ms.assetid: 84eb9372-2ef7-4cc2-94af-97e3399e69e0
 keywords: ["dispatch routines WDK kernel", "standard driver routines WDK kernel , dispatch routines", "driver routines WDK kernel , dispatch routines", "routines WDK kernel , dispatch routines", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "dispatch routines WDK kernel , about dispatch routines", "IRPs WDK kernel , dispatch routines", "multiple I/O function codes WDK kernel", "IRP major function codes WDK kernel", "major function codes WDK kernel", "function codes WDK kernel"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Processing any I/O request packet (IRP) begins in a dispatch routine that the driver registers to handle an [IRP major function code](https://msdn.microsoft.com/library/windows/hardware/ff550710) (**IRP\_MJ\_*XXX***). The driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine exports entry points for dispatch routines in a dispatch table within the driver's [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174) structure.
+Processing any I/O request packet (IRP) begins in a dispatch routine that the driver registers to handle an [IRP major function code](https://msdn.microsoft.com/library/windows/hardware/ff550710) (<strong>IRP\_MJ\_*XXX</strong><em>). The driver's [</em>*DriverEntry*<em>](<https://msdn.microsoft.com/library/windows/hardware/ff544113>) routine exports entry points for dispatch routines in a dispatch table within the driver's [</em>*DRIVER\_OBJECT**](<https://msdn.microsoft.com/library/windows/hardware/ff544174>) structure.
 
 A driver can provide a separate dispatch routine for each major I/O function code that it handles. Alternatively, dispatch routines can be written to handle multiple I/O function codes.
 
@@ -52,9 +51,9 @@ This section contains the following topics:
 
 [DispatchSystemControl Routines](dispatchsystemcontrol-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Defining a Callback Object
-author: windows-driver-content
 description: Defining a Callback Object
 ms.assetid: 9717795b-dd62-4f17-b931-5ca2b1237e60
 keywords: ["callback objects WDK kernel", "registering callback notifications"]
@@ -26,9 +25,9 @@ When the callback condition occurs, the driver calls [**ExNotifyCallback**](http
 
 After all operations have been completed with the callback object, the driver that created the callback should call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to decrement its reference count and ensure that the object is deleted.
 
- 
+ 
 
- 
+ 
 
 
 

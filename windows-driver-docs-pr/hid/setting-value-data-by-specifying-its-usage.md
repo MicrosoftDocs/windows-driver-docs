@@ -1,6 +1,5 @@
 ---
 title: Setting Value Data by Specifying Its Usage
-author: windows-driver-content
 description: Setting Value Data by Specifying Its Usage
 ms.assetid: 69dc3bb4-8999-4990-950c-8581328030eb
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "data usage settings WDK HID"]
@@ -27,9 +26,9 @@ Sets a usage value array in a report.
 
 <a href="" id="see-also-initializing-hid-reports-"></a>See also [Initializing HID Reports](initializing-hid-reports.md).  
 
- 
+ 
 
- 
+ 
 
 
 

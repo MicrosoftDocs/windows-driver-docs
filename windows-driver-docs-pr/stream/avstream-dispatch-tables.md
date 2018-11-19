@@ -1,6 +1,5 @@
 ---
 title: AVStream Dispatch Tables
-author: windows-driver-content
 description: AVStream Dispatch Tables
 ms.assetid: 974ea9ee-bb59-4973-83ef-c61f0240a555
 keywords:
@@ -32,9 +31,9 @@ You can register filters to be notified about creations, deletions, the need to 
 
 For more information about dispatch functions, see [**KSFILTER\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff562554), [**KSPIN\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff563535), and [**KSALLOCATOR\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff560976).
 
- 
+ 
 
- 
+ 
 
 
 

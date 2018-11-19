@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INVITATION_REQUEST_INFO
-author: windows-driver-content
 description: WDI_TLV_P2P_INVITATION_REQUEST_INFO is a TLV that contains Wi-Fi Direct Invitation Request information.
 ms.assetid: 055B0F6D-2B68-495D-8253-2D213D699383
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](wdi-tlv-p2p-channel-number.md)                                |                                | X        | The operating channel for Wi-Fi Direct GO.      |
 | [**WDI\_TLV\_P2P\_GROUP\_ID**](wdi-tlv-p2p-group-id.md)                                            |                                |          | The Group ID for target Wi-Fi Direct GO.        |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

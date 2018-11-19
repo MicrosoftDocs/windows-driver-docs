@@ -1,6 +1,5 @@
 ---
 title: NetworkingInfo
-author: windows-driver-content
 description: NetworkingInfo
 ms.assetid: 81c615d4-8a7c-4d28-a3ce-5233899e35cf
 ms.date: 11/28/2017
@@ -38,9 +37,9 @@ Data Type:BIDI\_STRING
 
 Description:A string that contains the current TCP/IP address of the device. This address could be in either IPV4 or IPV6 format. This address is an address that the port monitor is currently using to communicate with the print device.
 
- 
+ 
 
- 
+ 
 
 
 

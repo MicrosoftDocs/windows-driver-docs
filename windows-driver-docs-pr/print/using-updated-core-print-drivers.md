@@ -1,6 +1,5 @@
 ---
 title: Using Updated Core Print Drivers
-author: windows-driver-content
 description: Using Updated Core Print Drivers
 ms.assetid: a2a31627-a453-4776-b4f2-13660e4ad7a3
 ms.date: 04/20/2017
@@ -38,9 +37,9 @@ The following topics are discussed:
 
 [Creating a Single Driver Package for Windows XP and Windows Vista](creating-a-single-driver-package-for-windows-xp-and-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

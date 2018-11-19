@@ -31,11 +31,11 @@ While the global reference counter is greater than 0, the video miniport driver 
 
 **Note**   The *DdMoCompDestroy* function might be called while the COPP device's local reference counter is still set to greater than 0 (for example, if the user-mode process terminated abnormally).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

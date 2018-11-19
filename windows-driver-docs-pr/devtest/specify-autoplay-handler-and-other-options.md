@@ -36,11 +36,11 @@ To define an AutoPlay Handler for a device, select from the following options un
 -   To define an AutoPlay Handler for a desktop app, fill out the fields under **Desktop AutoPlay Handler**.
     **Note**  You can't define both AutoPlay Handler and Desktop AutoPlay Handler.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

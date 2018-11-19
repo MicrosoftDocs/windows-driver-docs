@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD
-author: windows-driver-content
 description: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD removes the protocol offload specified by the protocol offload ID.
 ms.assetid: 47850c43-4d10-48f5-b2e9-1f94f23eabf2
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +26,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898037) |                                |          | Protocol offload ID. |
 
- 
+ 
 
 ## Set property results
 
@@ -64,9 +63,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD](oid-wdi-set-add-pm-protocol-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

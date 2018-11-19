@@ -1,6 +1,5 @@
 ---
 title: Rectangle Area Fill Commands
-author: windows-driver-content
 description: Rectangle Area Fill Commands
 ms.assetid: b9401126-4173-4187-960a-dc5ce69d3522
 keywords:
@@ -66,13 +65,13 @@ The following table lists the rectangle area fill commands. All commands are spe
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

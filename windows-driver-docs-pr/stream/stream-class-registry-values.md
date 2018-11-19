@@ -1,6 +1,5 @@
 ---
 title: Stream Class Registry Values
-author: windows-driver-content
 description: Stream Class Registry Values
 ms.assetid: a6800f53-4d55-4a28-839b-47f0cecc17bf
 keywords:
@@ -63,9 +62,9 @@ HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

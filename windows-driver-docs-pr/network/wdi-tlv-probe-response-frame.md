@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PROBE_RESPONSE_FRAME
-author: windows-driver-content
 description: WDI_TLV_PROBE_RESPONSE_FRAME is a TLV that contains a probe response frame.
 ms.assetid: 600019AB-55D2-4EE1-9500-0AFCB07C3AB2
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|---------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the probe response frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

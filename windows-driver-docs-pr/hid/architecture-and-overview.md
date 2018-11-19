@@ -1,6 +1,5 @@
 ---
 title: Architecture and overview for HID over the I²C transport
-author: windows-driver-content
 description: This section describes the driver stack for devices that support HID over the I²C transport.
 ms.assetid: 99384729-552C-4847-AA35-E0D413018104
 ms.date: 04/20/2017
@@ -25,7 +24,7 @@ Windows 8 provides a KMDF-based HID miniport driver that implements version 1.0
 
 **Note**  The HIDI2C.sys device driver supports only the I²C bus. It does not support SPI, SMBUS, or other low-power buses in Windows 8.
 
- 
+ 
 
 ## The I²C Controller Driver
 
@@ -34,7 +33,7 @@ The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface
 
 **Note**  The HID I²C driver will not function on systems that do not have an I²C bus that is compatible with the SPB platform. Contact your system manufacturer to determine whether the I²C bus on your device system is compatible with the SPB platform.
 
- 
+ 
 
 ## The GPIO Controller Driver
 
@@ -48,9 +47,9 @@ Connections on a SoC platform are typically non-discoverable, because there are 
 
 The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](https://msdn.microsoft.com/library/windows/hardware/hh698216) topic.
 
- 
+ 
 
- 
+ 
 
 
 

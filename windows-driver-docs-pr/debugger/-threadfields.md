@@ -3,7 +3,6 @@ title: threadfields
 description: The threadfields extension displays the names and offsets of the fields within the executive thread (ETHREAD) block.
 ms.assetid: 1b36e922-9079-4dc5-911a-f635ec026084
 keywords: ["threadfields Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!threadfields** extension displays the names and offsets of the fields wit
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -94,9 +93,9 @@ kd> !threadfields
     HardErrorsAreDisabled:         0x239
 ```
 
- 
+ 
 
- 
+ 
 
 
 

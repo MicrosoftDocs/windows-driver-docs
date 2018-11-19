@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Interrupt Code
-author: windows-driver-content
 description: Synchronizing Interrupt Code
 ms.assetid: a24477dc-f75d-4ab6-8695-d8a85247e276
 keywords:
@@ -61,9 +60,9 @@ Because of all of these factors, you must use the following rules when writing d
 
 For more information about synchronizing driver routines, see [Synchronization Techniques for Framework-Based Drivers](synchronization-techniques-for-wdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

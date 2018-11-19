@@ -1,6 +1,5 @@
 ---
 title: Using Memory Buffers
-author: windows-driver-content
 description: Using Memory Buffers
 ms.assetid: f5699837-f1ba-4088-82b3-d7e27341fb46
 keywords:
@@ -74,9 +73,9 @@ However, drivers can also use memory objects for local buffers. An advantage to 
 
 Your driver can use the [**WDF\_ALIGN\_SIZE\_UP**](https://msdn.microsoft.com/library/windows/hardware/ff551217) or [**WDF\_ALIGN\_SIZE\_DOWN**](https://msdn.microsoft.com/library/windows/hardware/ff551214) function to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
 
- 
+ 
 
- 
+ 
 
 
 

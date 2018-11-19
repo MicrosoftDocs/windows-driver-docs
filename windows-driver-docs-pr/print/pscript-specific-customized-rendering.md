@@ -1,6 +1,5 @@
 ---
 title: Pscript-Specific Customized Rendering
-author: windows-driver-content
 description: Pscript-Specific Customized Rendering
 ms.assetid: e984f0f0-1435-4cfd-9a99-297f6a9521f5
 keywords:
@@ -20,9 +19,9 @@ Pscript5 allows device-specific customized code to inject Postscript commands in
 
 Pscript5 calls the **IPrintOemPS::Command** method at a variety of points within the print job's data stream. One of the function's arguments specifies an index value that represents the current point in the data stream. Each time the function is called, it can check the index value and either provide additional stream data or not.
 
- 
+ 
 
- 
+ 
 
 
 

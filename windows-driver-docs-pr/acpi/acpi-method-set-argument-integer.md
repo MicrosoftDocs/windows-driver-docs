@@ -1,6 +1,5 @@
 ---
 title: ACPI_METHOD_SET_ARGUMENT_INTEGER macro
-author: windows-driver-content
 description: The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an ACPI_METHOD_ARGUMENT structure for a single integer value.
 ms.assetid: a79f9149-0ffe-483f-a45e-427b05ff0a11
 keywords: 
@@ -19,8 +18,8 @@ Syntax
 
 ```cpp
 void ACPI_METHOD_SET_ARGUMENT_INTEGER(
-    MethodArgument,
-    IntData
+    MethodArgument,
+    IntData
 );
 ```
 

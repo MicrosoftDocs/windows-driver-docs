@@ -3,7 +3,6 @@ title: Enable page heap
 description: Enable page heap
 ms.assetid: b889b7b7-721c-4ecf-bf59-c1ccc0bc735d
 keywords: ["Enable page heap (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Enable page heap** flag turns on page heap verification, which monitors dy
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -53,9 +52,9 @@ This option enables full page heap verification when set for image files and sta
 
 Setting this flag for an image file is the same as typing **gflags /p /enable** *ImageFile* **/full** for the image file at the command line.
 
- 
+ 
 
- 
+ 
 
 
 

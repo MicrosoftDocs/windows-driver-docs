@@ -15,7 +15,7 @@ Windows 8 provides an updated class driver that works with devices conforming t
 
 **Note**  Functionality to extend MB devices services is accomplished via a user-mode application, not a kernel-mode driver extension.
 
- 
+ 
 
 While the class driver introduced in Windows 7 featured limited MB device feature support, the MB Class Driver in Windows 8 added native support for some additional features such as USSD, EAP-SIM/AKA and USB selective suspend, and offers an extensible device representation and control mechanisms. The [Mobile broadband WinRT API overview](http://go.microsoft.com/fwlink/p/?linkid=242060) provides some additional information about extending device services.
 
@@ -27,9 +27,9 @@ For more information see:
 
 -   The "MBIM Service and CID Extensibility" section of the [Mobile Broadband Interface Model (MBIM) specification]( http://go.microsoft.com/fwlink/p/?linkid=320791)
 
- 
+ 
 
- 
+ 
 
 
 

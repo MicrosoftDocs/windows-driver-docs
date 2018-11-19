@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Driver Programming Techniques
-author: windows-driver-content
 description: Miscellaneous Driver Programming Techniques
 ms.assetid: 6afdaecb-62f8-4909-8117-6242cd5b3765
 keywords: ["driver programming techniques WDK kernel", "kernel-mode drivers WDK , driver programming techniques"]
@@ -58,9 +57,9 @@ This section contains various topics of interest to driver writers. It includes 
 
 [Kernel Macros, Global Variables, and Opaque Structures](kernel-macros--global-variables--and-opaque-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Synchronized Access within Miniport Driver Routines
-author: windows-driver-content
 description: Even when a miniport driver executes in full-duplex mode or has unsynchronized processing of SRBs, it might still require synchronized access.
 ms.assetid: a1bc3bff-b109-4a52-8466-48a0be7611b7
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ Even when a miniport driver executes in full-duplex mode or does unsynchronized 
 
 When the miniport driver calls **StorPortSynchronizeAccess**, it must supply the routine with a pointer to a callback routine. The callback routine contains the part of the SRB's processing that must be synchronized with the host bus adapter's interrupt handler. For better performance, write your driver to spend as little time as possible executing the callback routine.
 
- 
+ 
 
- 
+ 
 
 
 

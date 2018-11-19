@@ -1,6 +1,5 @@
 ---
 title: Property Validation for RAW Format Transfers
-author: windows-driver-content
 description: Property Validation for RAW Format Transfers
 ms.assetid: ad58f94e-d59e-4d04-be27-cc87f89f3d76
 ms.date: 04/20/2017
@@ -39,9 +38,9 @@ Must be updated by the minidriver according to the WIA\_IPA\_FORMAT and WIA\_IPA
 <a href="" id="wia-ipa-item-size"></a>[**WIA\_IPA\_ITEM\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551594)  
 Must be zero.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: CLFS Support for Archiving
-author: windows-driver-content
 description: CLFS Support for Archiving
 ms.assetid: 5a07d7d2-4939-48f8-bd4c-855af61034fb
 keywords: ["Common Log File System WDK kernel , archiving", "CLFS WDK kernel , archiving", "archiving WDK CLFS", "non-ephemeral logs WDK CLFS", "archive tail WDK CLFS"]
@@ -24,9 +23,9 @@ A non-ephemeral log actually has two tails: one marked by the base LSN and one m
 
 The base LSN and the archive tail are important when you call [**ClfsReadNextLogRecord**](https://msdn.microsoft.com/library/windows/hardware/ff541690) repeatedly to read a chain of records linked by previous LSNs, undo-next LSNs, or user LSNs. **ClfsReadNextLogRecord** will not read a record whose LSN is less than both the archive tail and the base LSN. It will, however, read a record whose LSN is between the archive tail and the base LSN. For more information about following record chains, see [Reading Data Records from a CLFS Stream](reading-data-records-from-a-clfs-stream.md).
 
- 
+ 
 
- 
+ 
 
 
 

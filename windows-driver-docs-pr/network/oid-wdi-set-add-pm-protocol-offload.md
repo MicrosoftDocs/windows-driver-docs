@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD
-author: windows-driver-content
 description: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD adds a list of one or more protocol offloads for power management.
 ms.assetid: 50c69dd4-352d-484f-81c1-a4c9587ab368
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD adds a list of one or more protocol of
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 This property provides information to enable the device/firmware to implement these protocols while the main CPU is asleep. In this state, the firmware and device handles the offloaded tasks without waking up the host.
 
@@ -31,7 +30,7 @@ This property provides information to enable the device/firmware to implement th
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](https://msdn.microsoft.com/library/windows/hardware/dn898036)                  |                                | X        | IPv6 NS protocol offload parameters.   |
 | [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](https://msdn.microsoft.com/library/windows/hardware/dn898033) |                                | X        | RSN Rekey protocol offload parameters. |
 
- 
+ 
 
 ## Set property results
 
@@ -68,9 +67,9 @@ Requirements
 
 [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](oid-wdi-set-remove-pm-protocol-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

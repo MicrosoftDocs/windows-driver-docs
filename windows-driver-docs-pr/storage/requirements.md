@@ -1,6 +1,5 @@
 ---
 title: Requirements
-author: windows-driver-content
 description: Requirements
 ms.assetid: d939a319-f321-455e-a34d-220a3faf6092
 ms.date: 04/20/2017
@@ -32,9 +31,9 @@ The storage silo driver system meets the following requirements:
 
 -   A dynamically changing ACL on the host grants exclusive ACT access rights to a single authorized user at a time in order to provide a secure solution that protects access to user data in a multi-user or fast user switch environment.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: The PnP Manager Redistributes System Resources
-author: windows-driver-content
 description: The PnP Manager Redistributes System Resources
 ms.assetid: fc88ae0a-5b78-4292-a101-29d2fc383555
 keywords:
@@ -67,9 +66,9 @@ For each function and filter driver that supports the device, the framework does
 
 7.  If the driver is using self-managed I/O, the framework calls the driver's [*EvtDeviceSelfManagedIoRestart*](https://msdn.microsoft.com/library/windows/hardware/ff540905) callback function.
 
- 
+ 
 
- 
+ 
 
 
 

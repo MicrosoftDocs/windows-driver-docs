@@ -3,7 +3,6 @@ title: ds, dS (Display String)
 description: The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_STRING structure.
 ms.assetid: cb05e89c-6c83-476b-a577-a6aeefd8cdd6
 keywords: ["ds, dS (Display String) Windows Debugging"]
-ms.author: domars
 ms.date: 05/03/2018
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ These commands do not display null-delimited character strings, but rather strin
 
 If you have the address of the characters of a Unicode string then use the du command instead. Use the da command to display ASCII characters. For more information, see [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](https://docs.microsoft.com/windows-hardware/drivers/debugger/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor).
 
-```
+```dbgcmd
 d{s|S} [/c Width] [Address]
 ```
 
@@ -67,7 +66,7 @@ For more syntax details, see [Address and Address Range Syntax](address-and-addr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -78,9 +77,9 @@ Remarks
 
 If you want to display Unicode strings in the Locals window or Watch window of WinDbg, you need to use the [**.enable\_unicode (Enable Unicode Display)**](-enable-unicode--enable-unicode-display-.md) command first.
 
- 
+ 
 
- 
+ 
 
 
 

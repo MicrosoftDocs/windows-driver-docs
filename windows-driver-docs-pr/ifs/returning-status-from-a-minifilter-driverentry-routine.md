@@ -1,6 +1,5 @@
 ---
 title: Returning Status from a Minifilter DriverEntry Routine
-author: windows-driver-content
 description: Returning Status from a Minifilter DriverEntry Routine
 ms.assetid: a9448908-f712-43f7-99c0-e02abc1678ed
 keywords:
@@ -20,9 +19,9 @@ A minifilter driver's **DriverEntry** routine normally returns STATUS\_SUCCESS. 
 
 If the **DriverEntry** routine returns a status value that is not a success NTSTATUS value, the system responds by unloading the minifilter driver. The minifilter driver's [**FilterUnloadCallback**](https://msdn.microsoft.com/library/windows/hardware/ff551085) routine is not called. For this reason, the **DriverEntry** routine must free any memory that was allocated for system resources before returning a status value that is not a success NTSTATUS value.
 
- 
+ 
 
- 
+ 
 
 
 

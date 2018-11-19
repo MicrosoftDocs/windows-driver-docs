@@ -46,9 +46,9 @@ NDIS provides the following power management support for old miniport drivers:
 
 -   If the miniport driver was halted and reinitialized, NDIS restores all the appropriate miniport driver settings, such as packet filters and multicast address lists, by issuing OID requests. If the miniport driver was not halted and then reinitialized, the miniport driver must restore such settings.
 
- 
+ 
 
- 
+ 
 
 
 

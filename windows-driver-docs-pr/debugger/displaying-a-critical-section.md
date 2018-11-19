@@ -3,7 +3,6 @@ title: Displaying a Critical Section
 description: Displaying a Critical Section
 ms.assetid: d55971f6-9112-417d-8fb6-e299c7fc90a7
 keywords: ["critical section", "critical section, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -104,7 +103,7 @@ ContentionCount    0
 
 The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual value of this field for an unlocked critical section is -1. You can verify this with the **dt (Display Type)** command:
 
-```
+```dbgcmd
 0:000> dt RTL_CRITICAL_SECTION 433e60
    +0x000 DebugInfo        : 0x77fcec80
    +0x004 LockCount        : -1
@@ -116,7 +115,7 @@ The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual va
 
 When the first thread calls the **EnterCriticalSection** routine, the critical section's **LockCount**, **RecursionCount**, **EntryCount** and **ContentionCount** fields are all incremented by one, and **OwningThread** becomes the thread ID of the caller. **EntryCount** and **ContentionCount** are never decremented. For example:
 
-```
+```dbgcmd
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          0
@@ -130,7 +129,7 @@ At this point, four different things can happen.
 
 1.  The owning thread calls **EnterCriticalSection** again. This will increment **LockCount** and **RecursionCount**. **EntryCount** is not incremented.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -142,7 +141,7 @@ At this point, four different things can happen.
 
 2.  A different thread calls **EnterCriticalSection**. This will increment **LockCount** and **EntryCount**. **RecursionCount** is not incremented.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -154,7 +153,7 @@ At this point, four different things can happen.
 
 3.  The owning thread calls **LeaveCriticalSection**. This will decrement **LockCount** (to -1) and **RecursionCount** (to 0), and will reset **OwningThread** to 0.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          NOT LOCKED 
@@ -180,21 +179,21 @@ In Microsoft Windows Server 2003 Service Pack 1 and later versions of Windows, t
 
 As an example, suppose the **LockCount** is -22. The lowest bit can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? 0x1 & (-0n22)
 Evaluate expression: 0 = 00000000
 ```
 
 The next-lowest bit can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? (0x2 & (-0n22)) >> 1
 Evaluate expression: 1 = 00000001
 ```
 
 The ones-complement of the remaining bits can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? ((-1) - (-0n22)) >> 2
 Evaluate expression: 5 = 00000005
 ```
@@ -205,9 +204,9 @@ In this example, the first bit is 0 and therefore the critical section is locked
 
 For information about how to debug critical section time outs, see [Critical Section Time Outs](critical-section-time-outs.md). For general information about critical sections, see the Microsoft Windows SDK, the Windows Driver Kit (WDK), or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

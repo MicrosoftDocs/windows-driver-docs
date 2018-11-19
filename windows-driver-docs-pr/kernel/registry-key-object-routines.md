@@ -1,6 +1,5 @@
 ---
 title: Registry Key Object Routines
-author: windows-driver-content
 description: Registry Key Object Routines
 ms.assetid: 9db6ff0d-8371-41bc-82c4-1bb56f5430f2
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
@@ -44,12 +43,12 @@ User-mode applications access keys relative to global handles, such as HKEY\_LOC
 </tr>
 <tr class="even">
 <td><p>HKEY_CURRENT_USER</p></td>
-<td><p>No simple kernel-mode equivalent, but see [Registry Run-Time Library Routines](registry-run-time-library-routines.md)</p></td>
+<td><p>No simple kernel-mode equivalent, but see <a href="registry-run-time-library-routines.md" data-raw-source="[Registry Run-Time Library Routines](registry-run-time-library-routines.md)">Registry Run-Time Library Routines</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A driver can manipulate a registry-key object by performing the following steps:
 
@@ -59,9 +58,9 @@ A driver can manipulate a registry-key object by performing the following steps:
 
 3.  Close the handle by calling [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417).
 
- 
+ 
 
- 
+ 
 
 
 

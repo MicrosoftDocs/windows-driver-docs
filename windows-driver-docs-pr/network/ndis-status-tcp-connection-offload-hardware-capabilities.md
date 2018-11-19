@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES
-author: windows-driver-content
 description: MUX intermediate drivers use the NDIS_STATUS_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES CAPABILITIES status indication to notify NDIS and overlying drivers that there has been change in the connection offload characteristics of the underlying hardware.
 ms.assetid: 694cc0c4-0987-4095-8490-14ddfc9eaedb
 ms.date: 07/18/2017
@@ -52,9 +51,9 @@ Requirements
 
 [OID\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569803)
 
- 
+ 
 
- 
+ 
 
 
 

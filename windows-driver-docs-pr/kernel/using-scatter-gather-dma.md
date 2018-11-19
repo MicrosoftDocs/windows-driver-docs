@@ -1,6 +1,5 @@
 ---
 title: Using Scatter/Gather DMA
-author: windows-driver-content
 description: Using Scatter/Gather DMA
 ms.assetid: dacc618f-d4d4-4c3c-a18c-baeef779e931
 keywords: ["AdapterListControl routine", "scatter/gather DMA WDK I/O", "PutScatterGatherList", "GetScatterGatherList", "DMA transfers WDK kernel , scatter/gather DMA"]
@@ -72,9 +71,9 @@ On return from the driver-supplied *AdapterListControl* routine, **GetScatterGat
 
 When the driver has satisfied the current IRP's transfer request or must fail the IRP due to a device or bus I/O error, it must call **PutScatterGatherList** before it can access the transferred data in the buffer. **PutScatterGatherList** flushes the adapter buffers and frees the map registers and scatter/gather list.
 
- 
+ 
 
- 
+ 
 
 
 

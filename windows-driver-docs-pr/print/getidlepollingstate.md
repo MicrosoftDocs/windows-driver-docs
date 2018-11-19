@@ -1,6 +1,5 @@
 ---
 title: GetIdlePollingState
-author: windows-driver-content
 description: GetIdlePollingState
 ms.assetid: e2c96291-e86c-49a1-a9ce-73e00eddc22a
 keywords:
@@ -39,11 +38,11 @@ The following tables shows the relationship between the return values and pollin
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

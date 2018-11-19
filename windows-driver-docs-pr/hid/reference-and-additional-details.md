@@ -1,6 +1,5 @@
 ---
 title: Resources for HID over USB
-author: windows-driver-content
 ms.assetid: 17BC5293-1D60-41BC-8A23-1F2FAF29C577
 description: Additional references for HID over USB.
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ The following references may prove helpful when creating your HID device:
 -   [HID USB homepage]( http://go.microsoft.com/fwlink/p/?LinkId=620758)
 -   [HID Usage Pages](http://go.microsoft.com/fwlink/p/?LinkId=620759)
 
- 
+ 
 
- 
+ 
 
 
 

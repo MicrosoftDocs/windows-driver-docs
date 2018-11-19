@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode I/O Manager
-author: windows-driver-content
 description: Windows Kernel-Mode I/O Manager
 ms.assetid: 8652f37d-0ece-4c08-9bce-499f0fedb0dd
 ms.localizationpriority: medium
@@ -30,9 +29,9 @@ For lists of routines that relate to IRPS, see [IRPs](https://msdn.microsoft.com
 
 The I/O manager has two subcomponents: the Plug and Play manager and power manager. They manage the I/O functionality for the technologies of Plug and Play and power management. For more information about Plug and Play management, see [Windows Kernel-Mode Plug and Play Manager](windows-kernel-mode-plug-and-play-manager.md) and for more information about power management, see [Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

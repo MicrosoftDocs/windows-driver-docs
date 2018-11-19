@@ -1,6 +1,5 @@
 ---
 title: Handling Hardware Interrupts
-author: windows-driver-content
 description: Describes how a WDF driver creates interrupt objects to service hardware interrupts, and how your driver synchronizes access to interrupt data buffers.
 ms.assetid: 08460510-6e5f-4c02-8086-9caa9b4b4c2d
 keywords:
@@ -35,9 +34,9 @@ The topics in this section describe how a Windows Driver Frameworks (WDF) driver
 -   [Using an Interrupt to Wake a Device](using-an-interrupt-to-wake-a-device.md)
 -   [Handling Active-Both Interrupts](handling-active-both-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

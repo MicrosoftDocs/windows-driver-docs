@@ -1,6 +1,5 @@
 ---
 title: Introduction to I/O Control Codes
-author: windows-driver-content
 description: Introduction to I/O Control Codes
 ms.assetid: 8b9e09ef-56f9-42b9-9b65-04bc380f3a1e
 keywords: ["I/O control codes WDK kernel , about I/O control codes", "control codes WDK IOCTLs , about I/O control codes", "IOCTLs WDK kernel , about I/O control codes", "private IOCTLs WDK kernel", "public IOCTLs WDK kernel", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode"]
@@ -26,9 +25,9 @@ Private IOCTLs, on the other hand, are meant to be used exclusively by a vendor'
 
 There is no difference between the coding of public and private IOCTLs. There are, however, differences in the internal codes that can be used in vendor-defined IOCTLs, compared with those that are used for system-defined IOCTLs. If the available public IOCTLs do not fit your needs, you can define new private IOCTLs that your software components can use to communicate with one another. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
- 
+ 
 
- 
+ 
 
 
 

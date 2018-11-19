@@ -64,11 +64,11 @@ When the driver is stopped or removed, it must use the [**IPortClsRuntimePower::
 
 After the miniport establishes access to an **IPortClsRuntimePower** interface, and uses the interface's **RegisterPowerControlCallback** method to register a callback, it is now ready to send private power controls. When the callback method is invoked, the miniport driver uses the [**IPortClsRuntimePower::SendPowerControl**](https://msdn.microsoft.com/library/windows/hardware/dn265127) method to send the private power controls to the Windows PEP.
 
-With the exception of the *DeviceObject* parameter, all other parameters are defined identically to those for the runtime power framework’s [PoFxPowerControl](http://msdn.microsoft.com/library/windows/hardware/hh439518.aspx) method.
+With the exception of the *DeviceObject* parameter, all other parameters are defined identically to those for the runtime power framework’s [PoFxPowerControl](https://msdn.microsoft.com/library/windows/hardware/hh439518.aspx) method.
 
- 
+ 
 
- 
+ 
 
 
 

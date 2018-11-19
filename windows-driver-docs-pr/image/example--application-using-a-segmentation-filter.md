@@ -1,6 +1,5 @@
 ---
 title: Example Application Using a Segmentation Filter
-author: windows-driver-content
 description: Example Application Using a Segmentation Filter
 ms.assetid: 3f7de6a2-5684-4c37-97bc-47f4727114ab
 ms.date: 04/20/2017
@@ -89,9 +88,9 @@ pChildItem->QueryInterface(IID_IWiaTransfer,
 pWiaTransferChild->Download(lFlags, pMyWiaTransferCallback); 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

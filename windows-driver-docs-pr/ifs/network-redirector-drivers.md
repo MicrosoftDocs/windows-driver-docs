@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Drivers
-author: windows-driver-content
 description: Network Redirector Drivers
 ms.assetid: 7a224512-53ed-4a7d-9de3-409b42c1c104
 keywords:
@@ -24,9 +23,9 @@ This section includes the following topics, which describe network redirector dr
 
 [Writing a Kernel Network Redirector](writing-a-kernel-network-redirector.md)
 
- 
+ 
 
- 
+ 
 
 
 

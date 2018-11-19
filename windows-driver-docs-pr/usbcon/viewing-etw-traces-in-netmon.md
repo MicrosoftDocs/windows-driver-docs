@@ -1,7 +1,6 @@
 ---
 Description: You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.
 title: USB ETW traces in Netmon
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,25 +26,25 @@ You can view USB ETW event traces using Microsoft Network Monitor, also referred
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[How to install Netmon and USB ETW Parsers](how-to-install-netmon-and-the-netmon-usb-parser.md)</p></td>
+<td><p><a href="how-to-install-netmon-and-the-netmon-usb-parser.md" data-raw-source="[How to install Netmon and USB ETW Parsers](how-to-install-netmon-and-the-netmon-usb-parser.md)">How to install Netmon and USB ETW Parsers</a></p></td>
 <td><p>This topic provides installation information about Netmon and the USB ETW parsers.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to view a USB ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)</p></td>
+<td><p><a href="how-to-examining-a-trace-file-by-using-netmon.md" data-raw-source="[How to view a USB ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)">How to view a USB ETW trace in Netmon</a></p></td>
 <td><p>This topic describes how to example a event trace file by using Netmon.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Debugging USB device issues by using ETW events](best-practices--debugging-usb-device-problems.md)</p></td>
+<td><p><a href="best-practices--debugging-usb-device-problems.md" data-raw-source="[Debugging USB device issues by using ETW events](best-practices--debugging-usb-device-problems.md)">Debugging USB device issues by using ETW events</a></p></td>
 <td><p>This topic provides tips for debugging USB device problems by using ETW events.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Case Study: Troubleshooting an unknown USB device by using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md)</p></td>
+<td><p><a href="case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md" data-raw-source="[Case Study: Troubleshooting an unknown USB device by using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md)">Case Study: Troubleshooting an unknown USB device by using ETW and Netmon</a></p></td>
 <td><p>This topic provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  

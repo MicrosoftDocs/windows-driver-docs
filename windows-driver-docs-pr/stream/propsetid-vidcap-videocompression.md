@@ -38,9 +38,9 @@ Video capture minidrivers are required to implement the following properties:
 
 The DirectShow **IAMVideoCompression** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

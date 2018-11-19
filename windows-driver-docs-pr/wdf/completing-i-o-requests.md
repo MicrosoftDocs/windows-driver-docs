@@ -1,6 +1,5 @@
 ---
 title: Completing I/O Requests
-author: windows-driver-content
 description: Completing I/O Requests
 ms.assetid: ec5aef7a-110e-430c-902d-669ccc7095ac
 keywords:
@@ -84,9 +83,9 @@ If a driver sends an I/O request synchronously, it typically calls [**WdfRequest
 
 For more information about completing I/O requests, see [Synchronizing Cancel and Completion Code](synchronizing-cancel-and-completion-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

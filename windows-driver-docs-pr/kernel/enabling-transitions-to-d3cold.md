@@ -1,6 +1,5 @@
 ---
 title: Enabling Transitions to D3cold
-author: windows-driver-content
 description: All versions of Windows enable a device to be in D3cold while the computer is sleeping (in one of the system low-power states, S1 through S4).
 ms.assetid: C2C6166D-8269-4FCE-81A8-B350626052D4
 ms.localizationpriority: medium
@@ -31,9 +30,9 @@ Putting a device in D3cold doesn't necessarily mean that all sources of power to
 
 Because D3cold is a state where the bus cannot be used to communicate with the device, a driver can't put its device into D3cold directly. Instead, the driver first calls the [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734) routine to request a D3 power IRP (an [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) request with target state = **PowerDeviceD3**) to move the device from D0 to D3hot. After entering D3hot, the device may or may not move from D3hot to D3cold. The device enters D3cold only when power to the bus is removed, which occurs if the parent bus driver turns off the bus or if the system firmware turns off power to a section of the hardware platform.
 
- 
+ 
 
- 
+ 
 
 
 

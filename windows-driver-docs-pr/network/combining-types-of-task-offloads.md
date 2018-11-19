@@ -117,11 +117,11 @@ Miniport drivers are not required to support both IPv4 and IPv6. All NDIS 6.0 an
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

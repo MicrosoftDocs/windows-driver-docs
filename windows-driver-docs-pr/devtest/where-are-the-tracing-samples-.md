@@ -17,9 +17,9 @@ The TraceDrv sample also includes TraceCtl, an application that starts TraceDrv 
 
 [Eventdrv](http://go.microsoft.com/fwlink/p/?LinkId=617724) is a sample that demonstrates how to implement [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) in a driver. The ETW kernel-mode API was introduced with Windows Vista and is not supported in earlier operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

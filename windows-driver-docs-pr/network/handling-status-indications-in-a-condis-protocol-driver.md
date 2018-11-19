@@ -21,9 +21,9 @@ NDIS calls a protocol driver's *ProtocolCoStatusEx* function after an underlying
 
 If the status indication is associated with an OID request, the underlying driver can set the **DestinationHandle** and **RequestId** members of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the status information so that NDIS can provide the status indication to a specific protocol binding. For more information about OID requests, see [CoNDIS Protocol Driver OID Requests](condis-protocol-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

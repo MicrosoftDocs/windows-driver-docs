@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST to inform the host about updates to the BSS entries. This is an unsolicited indication and can be sent at any time.
 ms.assetid: 5b9fd7b1-0817-4b86-9acc-b4f99cb7ae9a
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST to inform t
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -27,7 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST to inform t
 |--------------------------------------------------------|--------------------------------|----------|-----------------------------|
 | [**WDI\_TLV\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926162) | X                              | X        | The list of updated BSSIDs. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +61,9 @@ Requirements
 
 [OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY](oid-wdi-set-p2p-start-background-discovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

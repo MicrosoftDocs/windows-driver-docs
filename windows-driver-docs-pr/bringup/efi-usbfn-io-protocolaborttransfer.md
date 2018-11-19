@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AbortTransfer
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.AbortTransfer
 ms.assetid: 204998d6-7d8d-482b-8d9c-b96d2e2729bf
 ms.date: 04/20/2017
@@ -71,7 +70,7 @@ Direction of the endpoint. For more information see [EFI\_USBFN\_ENDPOINT\_DIREC
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -83,9 +82,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

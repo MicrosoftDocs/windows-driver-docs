@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Indexed Properties and Device Indexes
-author: windows-driver-content
 description: TCP/IP Indexed Properties and Device Indexes
 ms.assetid: b26b0c18-1787-43e0-8461-acfbd9fb38f9
 keywords:
@@ -47,9 +46,9 @@ The preceding example results in the following query:
 
 The OID generated from this example starts out identical to the **oid** attribute in the **Value** property, but has two indexes appended to it. The appended indexes in the example arise from the **deviceIndex** attribute being set to **TRUE** and **Row** being an indexed property. Assuming that the port configuration UI defines the device index to be 111, and that the text in row 1 of the printer's display is of interest, the OID that is generated would be 1.3.6.1.2.1.43.16.5.1.2.111.1. This OID is identical to the original, except for the device index (111) and property index (1) at the end. If **deviceIndex** had been set to **FALSE** or had been omitted, then the resulting OID would have been 1.3.6.1.2.1.43.16.5.1.2.1. To display text from row *n* of the display, use a property index of *n*.
 
- 
+ 
 
- 
+ 
 
 
 

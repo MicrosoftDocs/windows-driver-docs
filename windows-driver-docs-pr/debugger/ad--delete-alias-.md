@@ -3,7 +3,6 @@ title: ad (Delete Alias)
 description: The ad command deletes an alias from the alias list.
 ms.assetid: 8ff223b6-5cfb-4d87-b45f-ad9bd51faf7f
 keywords: ["ad (Delete Alias) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ Specifies the name of the alias to delete. If you specify an asterisk (\*), all 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +66,9 @@ Remarks
 
 You can use the **ad** command to delete any user-named alias. But you cannot use this command to delete a fixed-name alias ($u0 to $u9).
 
- 
+ 
 
- 
+ 
 
 
 

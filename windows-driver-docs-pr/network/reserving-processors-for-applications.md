@@ -30,9 +30,9 @@ The PowerShell cmdlet for reserving RSS CPUs is [Set-NetAdapterRss](https://tech
 
 For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj134956).
 
- 
+ 
 
- 
+ 
 
 
 

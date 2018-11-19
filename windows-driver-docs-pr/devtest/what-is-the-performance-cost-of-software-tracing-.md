@@ -27,11 +27,11 @@ For more information about how to exclude the WPP\_CHECK\_INIT check for better 
 
 **Note**  There might be some performance cost if you use methods other than WPP software tracing to implement software tracing in your driver. The effect depends on the implementation method.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

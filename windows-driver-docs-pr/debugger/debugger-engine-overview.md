@@ -3,7 +3,6 @@ title: Debugger Engine Overview
 description: Debugger Engine Overview
 ms.assetid: e3cd8a1d-dd07-480b-bc3b-4f6acc647167
 keywords: ["Debugger Engine", "Debugger Engine, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -47,9 +46,9 @@ For many concepts relating to the debuggers and the debugger engine that are not
 
 To obtain some of the currently undocumented functionality of the debugger engine API, use the [**Execute**](https://msdn.microsoft.com/library/windows/hardware/ff543208) method to execute individual debugger commands.
 
- 
+ 
 
- 
+ 
 
 
 

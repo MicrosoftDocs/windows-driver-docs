@@ -1,6 +1,5 @@
 ---
 title: About ISensorDriver
-author: windows-driver-content
 description: About ISensorDriver
 ms.assetid: 2c51c235-e402-4f89-bff5-39af87d95e19
 ms.date: 07/20/2018
@@ -32,9 +31,9 @@ Client applications can also retrieve sensor data as **data fields**, or **prope
 
 When the sensor class extension has received an I/O control command through [**ISensorClassExtension::ProcessIoControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-processiocontrol) for which it does not provide a handler, it calls [**ISensorDriver::OnProcessWpdMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-onprocesswpdmessage). This callback method signals the driver that a WPD command has not been processed and gives the driver an opportunity to process the command. This means that you can create custom WPD commands and provide custom handlers in your driver, to extend sensor platform functionality.
 
- 
+ 
 
- 
+ 
 
 
 

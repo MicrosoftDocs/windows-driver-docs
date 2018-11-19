@@ -1,6 +1,5 @@
 ---
 title: Required Support for Device Power States
-author: windows-driver-content
 description: Required Support for Device Power States
 ms.assetid: f7218f2a-d4ad-4b9a-af90-057801e714a2
 keywords: ["continuous power WDK kernel", "delays WDK power management", "device power states WDK kernel", "hardware WDK power management", "legacy power management WDK kernel", "class drivers WDK power management", "port drivers WDK power management"]
@@ -34,9 +33,9 @@ Class and port drivers supplied with the system and by independent hardware vend
 
 -   The video port driver manages most of the PnP and power management requirements for the miniport. Video miniport drivers must support miniport-specific routines, which are described elsewhere in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Configuration of Serial Devices and Drivers
-author: windows-driver-content
 description: Configuration of Serial Devices and Drivers
 ms.assetid: a3b5c58a-e66a-4e8c-ab59-7684c12f8e8b
 keywords:
@@ -30,9 +29,9 @@ This section includes the following topics about the configuration of serial dev
 
 [Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface](configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

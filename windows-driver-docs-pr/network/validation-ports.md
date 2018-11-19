@@ -13,7 +13,7 @@ Starting with NDIS 6.30 in Windows Server 2012, the extensible switch interface
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 This validation port is created under the following conditions:
 
@@ -47,9 +47,9 @@ When the extensible switch extension validates port and policy settings for a va
 
 For more information on extensible switch operational ports, see [Operational Ports](operational-ports.md).
 
- 
+ 
 
- 
+ 
 
 
 

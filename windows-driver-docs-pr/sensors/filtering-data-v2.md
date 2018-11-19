@@ -1,6 +1,5 @@
 ---
 title: Filtering data
-author: windows-driver-content
 description: In order to optimize data throughput and battery life, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
 ms.assetid: EDABA09D-2C46-4546-9429-CF6DEFBF69C4
 keywords:
@@ -35,6 +34,7 @@ So, a weather-station application may specify a current report interval (CRI) fo
 An ambient light sensor (ALS) is an example of a sensor that would require change-sensitivity to be specified as a percentage. For example, if the change sensitivity value for Illuminance was 2.0, this sensor would interpret the value as a percentage and only raise the data-updated event when the LUX value had either dropped or increased by 2%.
 
 ## Terminologies Related To Filtering Criteria
+
 | Term | Meaning |
 |------|---------|
 | Current Report Interval (CRI) | The rate expressed as the period (not frequency) in milliseconds at which a client wishes to receive data updates when meaningful change in magnitude is occurring.<br><br>This field is expressed as the minimum period between events if meaningful change has occurred (in measured sensor phenomenon). The period will vary but never be shorter than this, based on the occurrence of meaningful change.<br><br>This value is per sensor.|
@@ -67,7 +67,7 @@ The following table lists the recommended Current Report Interval (CRI) defaults
 | Simple device orientation | 200*                                 |
 
 (*) Proximity and simple device orientation sensors must not report sample readings at regular interval. Instead, these sensors should report data to the class extension when the reading has changed. The report interval value for these sensors represent the maximum amount of time the sensor can take to report a sample reading.
- 
+
 ## Change sensitivity recommended defaults
 The following table lists the recommended Change Sensitivity (CS) defaults.
 
@@ -97,7 +97,7 @@ The following functions are called by the sensor class extension to, start/stop 
 
 | Event of Interest          | Event Handler Activities                                           |
 |----------------------------|--------------------------------------------------------------------|
-| EvtSensorStart	         | Starts the sensor                                                  |
+| EvtSensorStart             | Starts the sensor                                                  |
 | EvtSensorStop              | Stops the sensor                                                   |
 | EvtSensorSetDataInterval   | Set the current report interval                                    |
 | EvtSensorGetDataInterval   | Get the current report interval                                    |
@@ -152,8 +152,8 @@ Your driver should rely on interrupts instead of polling the device. This will r
 2.  Using interrupts will reduce unnecessary code execution in both the driver and the sensor firmware.
 3.  Using interrupts will reduce bus activity.
 
-**Note**:  If a driver relies on interrupts but the current report interval and change-sensitivity logic exists in the driver, the driver will potentially receive a significant number of interrupts between data updates. As a result, the driver may need to disable (or mask) interrupts until the current-report interval expires.
- 
+**Note**:  If a driver relies on interrupts but the current report interval and change-sensitivity logic exists in the driver, the driver will potentially receive a significant number of interrupts between data updates. As a result, the driver may need to disable (or mask) interrupts until the current-report interval expires.
+
 
 ### Move change-sensitivity support to the device
 
@@ -169,6 +169,6 @@ If your sensor does not provide native report-interval support, consider disabli
 [The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Filtering%20data%20v2%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors/sensors%5D:%20Filtering%20data%20v2%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

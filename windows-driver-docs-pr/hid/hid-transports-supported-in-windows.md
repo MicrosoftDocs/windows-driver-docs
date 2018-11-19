@@ -1,6 +1,5 @@
 ---
 title: HID Transports Supported in Windows
-author: windows-driver-content
 description: Windows supports the following transports.
 ms.assetid: 03B66788-A930-4C18-A019-CA906634DC4C
 ms.date: 04/20/2017
@@ -19,7 +18,7 @@ Windows supports the following transports.
 | Bluetooth LE | No        | Yes       | Windows 8 introduces support for HID over Bluetooth LE.                                               |
 | I2C          | No        | Yes       | Windows 8 introduces support for HID over I2C                                                         |
 
- 
+ 
 
 Previous versions of Windows (prior to Windows 7) also included support for the following.
 
@@ -38,10 +37,10 @@ The following table shows the recommended transports for keyboards, mice, and to
 | Legacy systems               | Internal: PS/2, External: USB, Bluetooth | Internal: N/A, External: USB, Bluetooth     |
 | System on Chip (SoC) systems | Internal: I2C, External: USB, Bluetooth  | Internal: I2C, USB External: USB, Bluetooth |
 
- 
+ 
 
 [**USB Generic HID Test**](https://msdn.microsoft.com/library/windows/hardware/dn942240) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers. 
- 
+ 
 
 
 

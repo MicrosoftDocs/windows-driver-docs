@@ -3,7 +3,6 @@ title: gc (Go from Conditional Breakpoint)
 description: The gc command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing).
 ms.assetid: 7850269a-3fc7-48b6-a369-bb020a5e11c3
 keywords: ["gc (Go from Conditional Breakpoint) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **gc** command resumes execution from a conditional breakpoint in the same fashion that was used to hit the breakpoint (stepping, tracing, or freely executing).
 
-```
+```dbgcmd
 gc
 ```
 
@@ -46,7 +45,7 @@ gc
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,7 +58,7 @@ When a [conditional breakpoint](setting-a-conditional-breakpoint.md) includes an
 
 For example, the following is a proper conditional breakpoint formulation:
 
-```
+```dbgcmd
 0:000> bp Address "j (Condition) 'OptionalCommands'; 'gc' " 
 ```
 
@@ -67,13 +66,13 @@ When this breakpoint is encountered and the expression is false, execution will 
 
 On the other hand, the following is an improper breakpoint formulation, since execution will always resume freely even if you had been stepping before reaching the breakpoint:
 
-```
+```dbgcmd
 0:000> bp Address "j (Condition) 'OptionalCommands'; 'g' " 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

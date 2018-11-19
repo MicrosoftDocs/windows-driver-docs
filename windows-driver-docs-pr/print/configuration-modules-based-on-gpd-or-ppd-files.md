@@ -1,6 +1,5 @@
 ---
 title: Configuration Modules Based on GPD or PPD Files
-author: windows-driver-content
 description: Configuration Modules Based on GPD or PPD Files
 ms.assetid: b0aeea58-1c58-475e-8d4a-597778e42a7c
 keywords:
@@ -100,9 +99,9 @@ The following code example shows a GPD file that illustrates the entries and key
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

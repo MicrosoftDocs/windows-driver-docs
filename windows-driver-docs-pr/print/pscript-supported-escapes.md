@@ -1,6 +1,5 @@
 ---
 title: Pscript-Supported Escapes
-author: windows-driver-content
 description: Pscript-Supported Escapes
 ms.assetid: c0133355-fa3b-4117-bd38-b6a8b3898f94
 keywords:
@@ -38,12 +37,12 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>CHECKJPEGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a JPEG image. For more information about this escape, see CHECKJPEGFORMAT in the Microsoft Windows SDK documentation.</p>
-<p>This escape produces a call to the [<strong>DrvQueryDeviceSupport</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556260) function.</p></td>
+<p>This escape produces a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556260" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556260)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECKPNGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a PNG image. For more information about this escape, see CHECKPNGFORMAT in the Windows SDK documentation.</p>
-<p>This escape produces a call to the [<strong>DrvQueryDeviceSupport</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556260) function.</p></td>
+<p>This escape produces a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556260" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556260)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>CLIP_TO_PATH</p></td>
@@ -56,13 +55,13 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>DRAWPATTERNRECT</p></td>
 <td><p>Create a white, grayscale, or solid black rectangle by using the pattern and rule capabilities of Page Control Language (PCL) on Hewlett Packard LaserJet or LaserJet-compatible printers. A grayscale is a gray pattern that contains a specific mixture of black and white pixels. For more information about this escape, see DRAWPATTERNRECT in the Windows SDK documentation.</p>
-<p>This escape is associated with the driver's [<strong>DrvEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556217) function.</p></td>
+<p>This escape is associated with the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556217" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556217)"><strong>DrvEscape</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ENCAPSULATED_POSTSCRIPT</p></td>
 <td><p>Send Encapsulated PostScript (EPS) data to the printer.</p>
 <p>This escape is not supported in Microsoft Windows NT 4.0 printer drivers.</p>
-<p>This escape is associated with the driver's [<strong>DrvDrawEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556203) function.</p></td>
+<p>This escape is associated with the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556203" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556203)"><strong>DrvDrawEscape</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>END_PATH</p></td>
@@ -131,7 +130,7 @@ The Pscript5 printer driver supports the following escapes.
 </tbody>
 </table>
 
- 
+ 
 
 The following escapes were added in Windows NT 4.0 but are no longer supported:
 
@@ -198,11 +197,11 @@ The following escapes are obsolete and provided only for compatibility with 16-b
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

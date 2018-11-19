@@ -28,9 +28,9 @@ The **KSPROPSETID\_AudioEffectsDiscovery** property set contains the following K
 
 This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](https://msdn.microsoft.com/library/windows/hardware/dn457705) enum.
 
- 
+ 
 
- 
+ 
 
 
 

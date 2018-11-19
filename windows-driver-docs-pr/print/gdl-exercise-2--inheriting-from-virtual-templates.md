@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise 2 Inheriting from Virtual Templates
-author: windows-driver-content
 description: GDL Exercise 2 Inheriting from Virtual Templates
 ms.assetid: 89878438-bea4-4d6f-bf3b-88d5bef0e6ab
 keywords:
@@ -105,9 +104,9 @@ The following GDL file does not conform to the given schema.
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

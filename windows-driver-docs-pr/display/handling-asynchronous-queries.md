@@ -35,9 +35,9 @@ A driver handles asynchronous query operations that are received in the [command
 
 6.  If the driver sent D3DDP2OP\_RESPONSECONTINUE, the runtime submits an empty command buffer in the incoming [command stream](command-stream.md) so that the driver can continue to write more responses. The driver must ensure that it can process empty command buffers.
 
- 
+ 
 
- 
+ 
 
 
 

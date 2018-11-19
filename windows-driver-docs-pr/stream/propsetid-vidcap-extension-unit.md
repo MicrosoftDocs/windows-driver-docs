@@ -28,9 +28,9 @@ Clients of the USB video class driver can make the following requests of filters
 
 Use the following user-mode interfaces to access the properties of this set: **IKsTopologyInfo**, **ISelector**, and **IKsNodeControl**. See the DirectShow documentation in the Microsoft Windows SDK for information about these interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

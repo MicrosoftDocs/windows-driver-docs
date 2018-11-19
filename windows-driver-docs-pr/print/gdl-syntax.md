@@ -1,6 +1,5 @@
 ---
 title: GDL Syntax
-author: windows-driver-content
 description: GDL Syntax
 ms.assetid: 31f0c2f6-2a6b-4a3c-9da1-6fd586b8ae2a
 keywords:
@@ -42,9 +41,9 @@ This section includes:
 
 [GDL Strings](gdl-strings.md)
 
- 
+ 
 
- 
+ 
 
 
 

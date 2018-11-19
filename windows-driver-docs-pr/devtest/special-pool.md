@@ -83,7 +83,7 @@ You can activate the Special Pool feature for one or more drivers by using Drive
 
 **Note**  To activate the Special Pool feature by pool tag or allocation size, or to set the **Verify Start** (detect underruns) and **Verify End** (detect overruns) alignments, use the [Global Flags utility](using-the-global-flags-utility.md); these alignment settings apply to all special pool allocations.
 
- 
+ 
 
 -   **At the command line**
 
@@ -117,9 +117,9 @@ You can activate the Special Pool feature for one or more drivers by using Drive
 
     The Special Pool feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

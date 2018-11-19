@@ -13,9 +13,9 @@ This topic describes the operations used to packet-attach with a registered prov
 
 For more information about packet service attach operations, see [OID\_WWAN\_PACKET\_SERVICE](https://msdn.microsoft.com/library/windows/hardware/ff569827).
 
- 
+ 
 
- 
+ 
 
 
 

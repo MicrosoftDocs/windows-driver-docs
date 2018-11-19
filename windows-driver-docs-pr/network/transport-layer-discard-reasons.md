@@ -1,6 +1,5 @@
 ---
 title: Transport layer discard reasons
-author: windows-driver-content
 description: This section describes Transport layer discard reasons for Windows Filtering Platform callout drivers.
 ms.assetid: e2a9dcd1-87c6-4052-ae96-3a7994328dd0
 keywords:

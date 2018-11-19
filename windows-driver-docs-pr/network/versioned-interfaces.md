@@ -24,9 +24,9 @@ This versioning simplifies backward compatibility and extends the life of NDIS 6
 
 For more information, see [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Install the sample device and driver on your Sharks Cove board
-author: windows-driver-content
 description: Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 ms.assetid: A67EBD9C-9C5A-49D3-9205-37FC4396DF56
 ms.date: 04/20/2017
@@ -76,7 +75,7 @@ The package contains these files:
 | WudfUpdate\_01011.dll | The coinstaller for WDF.                                                          |
 | SpbAccelerometer.dll  | The driver file.                                                                  |
 
- 
+
 
 ## Alter the Secondary System Description Table (SSDT)
 
@@ -140,56 +139,58 @@ The package contains these files:
             Name(_UID, 1)
 
 
-            Method(_CRS, 0x0, NotSerialized)
+
+        Method(_CRS, 0x0, NotSerialized)
+        {
+            Name(RBUF, ResourceTemplate()
+            {          
+                I2CSerialBus(0x53, ControllerInitiated, 400000, AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer) 
+                GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") {0x17}
+            })
+
+            Return(RBUF)
+        }
+
+
+        Method(_DSM, 0x4, NotSerialized)
+        {
+            If(LEqual(Arg0, Buffer(0x10)
             {
-                Name(RBUF, ResourceTemplate()
-                {          
-                    I2CSerialBus(0x53, ControllerInitiated, 400000, AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer) 
-                    GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") {0x17}
-                })
-
-                Return(RBUF)
-            }
-
-
-            Method(_DSM, 0x4, NotSerialized)
+                0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
+            }))
             {
-                If(LEqual(Arg0, Buffer(0x10)
-                {
-                    0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
-                }))
-                {
-                    If(LEqual(Arg2, Zero))
-                    {
-                        Return(Buffer(One)
-                        {
-                            0x03
-                        })
-                    }
-
-                    If(LEqual(Arg2, One))
-                    {
-                        Return(Buffer(0x4)
-                        {
-                            0x00, 0x01, 0x02, 0x03
-                        })
-                    }
-                }
-                Else
+                If(LEqual(Arg2, Zero))
                 {
                     Return(Buffer(One)
                     {
-                        0x00
+                        0x03
                     })
                 }
-            } // Method(_DSM ...)
 
-        } // Device(SPBA)
+                If(LEqual(Arg2, One))
+                {
+                    Return(Buffer(0x4)
+                    {
+                        0x00, 0x01, 0x02, 0x03
+                    })
+                }
+            }
+            Else
+            {
+                Return(Buffer(One)
+                {
+                    0x00
+                })
+            }
+        } // Method(_DSM ...)
 
-    } // Scope(_SB_)
-    ```
+    } // Device(SPBA)
 
-    In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
+} // Scope(_SB_)
+```
+
+In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
+
 
 5.  After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
 
@@ -199,33 +200,35 @@ The package contains these files:
 
 6.  Verify that test signing is turned on for the Sharks Cove board.
 
-    **Note**  Test signing is turned on automatically during provisioning.
+    **Note**  Test signing is turned on automatically during provisioning.
 
-     
 
-    On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-    **bcdedit /enum {current}**
 
-    Verify that you see `testsigning Yes` in the output.
+On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-    ``` syntax
-    Windows Boot Loader
-    -------------------
-    identifier              {current}
-    ...
-    testsigning             Yes
-    ...
-    ```
+**bcdedit /enum {current}**
 
-    If you need to turn on test signing manually, here are the steps:
+Verify that you see `testsigning Yes` in the output.
 
-    1.  Open a Command Prompt window as Administrator, and enter this command.
+``` syntax
+Windows Boot Loader
+-------------------
+identifier              {current}
+...
+testsigning             Yes
+...
+```
 
-        **bcdedit /set TESTSIGNING ON**
+If you need to turn on test signing manually, here are the steps:
 
-    2.  Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
-    3.  Save your changes and continue booting to Windows.
+1.  Open a Command Prompt window as Administrator, and enter this command.
+
+    **bcdedit /set TESTSIGNING ON**
+
+2.  Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
+3.  Save your changes and continue booting to Windows.
+
 
 7.  To load your updated SSDT, open a Command Prompt window as Administrator, and enter this command:
 
@@ -240,9 +243,9 @@ The package contains these files:
 2.  In Solution Explorer, double click **package** (lower case), and choose **Properties**. Go to **Driver Install &gt; Deployment**. Check **Enable Deployment**. Check **Remove previous driver versions before deployment**. For **Target computer name**, enter the name of your Sharks Cove board that you provisioned previously. Select **Install and Verify**. Click **OK**.
 3.  On the **Debug** menu, choose **Start Debugging**. Your driver package is automatically copied to the Sharks Cove board. Your driver is automatically installed and loaded. The Windows user-mode debugger (running on the host computer in Visual Studio) automatically attaches to the instance of Wudfhost.exe (running on the Sharks Cove board) that is hosting your driver.
 
- 
 
- 
+
+
 
 
 

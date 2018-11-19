@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK
-author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_VF_INVALIDATE_CONFIG_BLOCK to notify the miniport driver of a PCI Express (PCIe) Virtual Function (VF) that data within one or more configuration blocks has changed.
 ms.assetid: CF73E0DA-20DA-49A0-80B0-0F5A56DCEF5D
 ms.date: 08/08/2017
@@ -23,7 +22,7 @@ A VF configuration block is used for backchannel communication between the PF an
 
 **Note**  Data from each VF configuration block is used only by the PF and VF miniport drivers.
 
- 
+ 
 
 VF configuration data is exchanged between the following drivers:
 
@@ -42,7 +41,7 @@ In order to handle notifications of invalid VF configuration data, NDIS and the 
 
         **Note**  Each time that the PF miniport driver calls [**NdisMInvalidateConfigBlock**](https://msdn.microsoft.com/library/windows/hardware/hh451517), the virtualization stack ORs the *BlockMask* parameter data with the current value in its cache.
 
-         
+         
 
     3.  The virtualization stack notifies the virtual PCI (VPCI) driver, which runs in the guest operating system, about the invalidation of VF configuration data. The virtualization stack sends the cached *BlockMask* parameter data to the VPCI driver.
 
@@ -84,11 +83,11 @@ The miniport driver returns one of the following status codes for the OID method
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451684) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451684" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451684)"><strong>NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the size of the [<strong>NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451684) structure.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451684" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451684)"><strong>NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -97,7 +96,7 @@ The miniport driver returns one of the following status codes for the OID method
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -135,9 +134,9 @@ Requirements
 
 [**VPCI\_INVALIDATE\_BLOCK\_OUTPUT**](https://msdn.microsoft.com/library/windows/hardware/hh451586)
 
- 
+ 
 
- 
+ 
 
 
 

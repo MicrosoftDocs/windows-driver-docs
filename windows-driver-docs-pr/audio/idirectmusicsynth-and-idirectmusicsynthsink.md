@@ -43,46 +43,46 @@ DirectMusic communicates with a software synthesizer through its **IDirectMusicS
 <tbody>
 <tr class="odd">
 <td align="left"><p>Activation</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Activate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536529)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536529" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Activate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536529)"><strong>IDirectMusicSynth::Activate</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Channels</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::GetChannelPriority</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536534)</p>
-<p>[<strong>IDirectMusicSynth::SetChannelPriority</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536542)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536534" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetChannelPriority&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536534)"><strong>IDirectMusicSynth::GetChannelPriority</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536542" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::SetChannelPriority&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536542)"><strong>IDirectMusicSynth::SetChannelPriority</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Instruments</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Download</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536532)</p>
-<p>[<strong>IDirectMusicSynth::Unload</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536546)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536532" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Download&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536532)"><strong>IDirectMusicSynth::Download</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536546" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Unload&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536546)"><strong>IDirectMusicSynth::Unload</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Information</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::GetAppend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536533)</p>
-<p>[<strong>IDirectMusicSynth::GetFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536535)</p>
-<p>[<strong>IDirectMusicSynth::GetLatencyClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536536)</p>
-<p>[<strong>IDirectMusicSynth::GetPortCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536537)</p>
-<p>[<strong>IDirectMusicSynth::GetRunningStats</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536538)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536533" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetAppend&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536533)"><strong>IDirectMusicSynth::GetAppend</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536535" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536535)"><strong>IDirectMusicSynth::GetFormat</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536536" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetLatencyClock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536536)"><strong>IDirectMusicSynth::GetLatencyClock</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536537" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetPortCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536537)"><strong>IDirectMusicSynth::GetPortCaps</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536538" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::GetRunningStats&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536538)"><strong>IDirectMusicSynth::GetRunningStats</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Playback</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::PlayBuffer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536540)</p>
-<p>[<strong>IDirectMusicSynth::Render</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536541)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536540" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::PlayBuffer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536540)"><strong>IDirectMusicSynth::PlayBuffer</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536541" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Render&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536541)"><strong>IDirectMusicSynth::Render</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ports</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Open</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536539)</p>
-<p>[<strong>IDirectMusicSynth::Close</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536531)</p>
-<p>[<strong>IDirectMusicSynth::SetNumChannelGroups</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536544)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536539" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Open&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536539)"><strong>IDirectMusicSynth::Open</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536531" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::Close&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536531)"><strong>IDirectMusicSynth::Close</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536544" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::SetNumChannelGroups&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536544)"><strong>IDirectMusicSynth::SetNumChannelGroups</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Miscellaneous parameters</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::SetMasterClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536543)</p>
-<p>[<strong>IDirectMusicSynth::SetSynthSink</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536545)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536543" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::SetMasterClock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536543)"><strong>IDirectMusicSynth::SetMasterClock</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536545" data-raw-source="[&lt;strong&gt;IDirectMusicSynth::SetSynthSink&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536545)"><strong>IDirectMusicSynth::SetSynthSink</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Most applications do not need to call the methods in the **IDirectMusicSynth** interface directly; the DirectMusic port typically manages the synthesizer. However, your application can interface directly to the synthesizer during development and testing.
 
@@ -108,22 +108,22 @@ Only DirectX 6.1 and DirectX 7 support the implementation of a custom user-mode 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Initialization</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynthSink::Activate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536521)</p>
-<p>[<strong>IDirectMusicSynthSink::GetDesiredBufferSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536522)</p>
-<p>[<strong>IDirectMusicSynthSink::Init</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536524)</p>
-<p>[<strong>IDirectMusicSynthSink::SetDirectSound</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536527)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536521" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::Activate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536521)"><strong>IDirectMusicSynthSink::Activate</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536522" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::GetDesiredBufferSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536522)"><strong>IDirectMusicSynthSink::GetDesiredBufferSize</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536524" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::Init&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536524)"><strong>IDirectMusicSynthSink::Init</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536527" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::SetDirectSound&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536527)"><strong>IDirectMusicSynthSink::SetDirectSound</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Timing</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynthSink::GetLatencyClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536523)</p>
-<p>[<strong>IDirectMusicSynthSink::RefTimeToSample</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536525)</p>
-<p>[<strong>IDirectMusicSynthSink::SampleToRefTime</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536526)</p>
-<p>[<strong>IDirectMusicSynthSink::SetMasterClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536528)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536523" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::GetLatencyClock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536523)"><strong>IDirectMusicSynthSink::GetLatencyClock</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536525" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::RefTimeToSample&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536525)"><strong>IDirectMusicSynthSink::RefTimeToSample</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536526" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::SampleToRefTime&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536526)"><strong>IDirectMusicSynthSink::SampleToRefTime</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff536528" data-raw-source="[&lt;strong&gt;IDirectMusicSynthSink::SetMasterClock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff536528)"><strong>IDirectMusicSynthSink::SetMasterClock</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In DirectX 8 and later, DirectMusic always uses its internal wave sink with a user-mode synthesizer. These later versions of DirectMusic do not support custom implementations of **IDirectMusicSynthSink**.
 
@@ -143,9 +143,9 @@ When a software synthesizer is first opened, DirectMusic gives the synthesizer a
 
 For additional information, see the descriptions of the **IDirectMusic** and **IDirectMusicPort** interfaces in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

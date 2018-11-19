@@ -34,9 +34,9 @@ If you are writing an intermediate driver whose lower edge provides an interface
 
 -   [Connection-Oriented NDIS](connection-oriented-ndis.md)
 
- 
+ 
 
- 
+ 
 
 
 

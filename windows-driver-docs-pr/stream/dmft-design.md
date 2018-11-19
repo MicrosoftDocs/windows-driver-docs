@@ -177,7 +177,7 @@ With this architecture, photo sequence is implemented with the camera device dri
 
 ### Photo confirmation
 
-Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService] (https://msdn.microsoft.com/library/windows/desktop/ms696978) method.
+Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService](https://msdn.microsoft.com/library/windows/desktop/ms696978) method.
 
 ### Metadata
 
@@ -229,7 +229,7 @@ Device MFTs must support the following interfaces:
 
 - [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047)
 
-- [IMFMediaEventGenerator] (https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
+- [IMFMediaEventGenerator](https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 - [IMFShutdown](https://msdn.microsoft.com/library/windows/desktop/ms703054)
 
@@ -245,7 +245,7 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 ### Thread Requirements
 
-Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx] (https://msdn.microsoft.com/library/windows/desktop/hh448047) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
+Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
 
 ### InputStream Requirements
 

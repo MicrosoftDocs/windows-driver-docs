@@ -1,6 +1,5 @@
 ---
 title: General I/O Programming Techniques
-author: windows-driver-content
 description: General I/O Programming Techniques
 ms.assetid: c310829f-e102-4a96-aa3e-39136b8a641b
 ms.localizationpriority: medium
@@ -22,9 +21,9 @@ Microsoft Vista has a new policy for dealing with problems with synchronous prog
 
 In earlier device driver programming, a driver would need to repeatedly request information from a driver until the answer was provided. This technique is called polling and should almost never be used. The best way to handle the problem of polling is to use hardware interrupts. For more information about hardware interrupts, see [Servicing Interrupts](servicing-interrupts.md). For more information on polling and why you should not use it, see [Avoid Device Polling](avoid-polling-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

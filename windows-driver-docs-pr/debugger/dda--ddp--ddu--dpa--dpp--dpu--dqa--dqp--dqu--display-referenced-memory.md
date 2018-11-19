@@ -3,7 +3,6 @@ title: dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)
 description: The dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, and dqu commands display the pointer at the specified location, dereference that pointer, and display the associated memory.
 ms.assetid: af3db4e2-e3fc-4c4d-9432-13b87e699716
 keywords: ["dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -78,7 +77,7 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -104,21 +103,21 @@ The second character of this command determines the pointer size used:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>dd*</strong></p></td>
+<td align="left"><p><strong>dd<em></strong></p></td>
 <td align="left"><p>32-bit pointers used</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>dq*</strong></p></td>
+<td align="left"><p><strong>dq</em></strong></p></td>
 <td align="left"><p>64-bit pointers used</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dp*</strong></p></td>
-<td align="left"><p>Standard pointer sizes used: 32-bit or 64-bit, depending on the target's processor architecture</p></td>
+<td align="left"><p>Standard pointer sizes used: 32-bit or 64-bit, depending on the target&#39;s processor architecture</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The third character of this command determines how the dereferenced memory is displayed:
 
@@ -135,11 +134,11 @@ The third character of this command determines how the dereferenced memory is di
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>d*p</strong></p></td>
-<td align="left"><p>Displays the contents of the memory referenced by the pointer in DWORD or QWORD format, depending on the pointer size of the target's processor architecture. If this value matches any known symbol, this symbol is displayed as well.</p></td>
+<td align="left"><p><strong>d<em>p</strong></p></td>
+<td align="left"><p>Displays the contents of the memory referenced by the pointer in DWORD or QWORD format, depending on the pointer size of the target&#39;s processor architecture. If this value matches any known symbol, this symbol is displayed as well.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>d*a</strong></p></td>
+<td align="left"><p><strong>d</em>a</strong></p></td>
 <td align="left"><p>Displays the contents of the memory referenced by the pointer in ASCII character format.</p></td>
 </tr>
 <tr class="odd">
@@ -149,13 +148,13 @@ The third character of this command determines how the dereferenced memory is di
 </tbody>
 </table>
 
- 
+ 
 
 If line number information has been enabled, source file names and line numbers will be displayed when available.
 
- 
+ 
 
- 
+ 
 
 
 

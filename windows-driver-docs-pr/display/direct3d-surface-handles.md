@@ -27,9 +27,9 @@ Handles are guaranteed by the runtime to be unique for each device and for each 
 
 There is no corresponding **DestroySurfaceEx** call, so driver-side surface structures are destroyed at [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) time.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -40,12 +40,12 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/hh454208) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/hh454208" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/hh454208)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
@@ -59,9 +59,9 @@ See also
 [NDIS\_STATUS\_DOT11\_CONNECTION\_START](https://msdn.microsoft.com/library/windows/hardware/ff567328)
 [OID\_DOT11\_RESET\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569409)
 [NDIS\_STATUS\_DOT11\_ROAMING\_START](https://msdn.microsoft.com/library/windows/hardware/ff567360)
- 
+ 
 
- 
+ 
 
 
 

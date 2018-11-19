@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 You must not specify any information for the **LayoutFile** and **CatalogFile** directives in the **Version** section. The following example shows a typical **Version** section:
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 Provider=%MSFT%
@@ -27,9 +27,9 @@ DriverVer=11/22/2004, 6.14.10.7000
 
 For more information about the **Version** section and directives that are associated with **Version**, see [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
 
- 
+ 
 
- 
+ 
 
 
 

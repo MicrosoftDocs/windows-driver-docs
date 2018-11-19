@@ -45,9 +45,9 @@ In general, background events are intended as simple trigger points and are not 
 
 -   [Mobile operator notification scenarios](mobile-operator-notification-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

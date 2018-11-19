@@ -3,7 +3,6 @@ title: ADPlus
 description: This topic covers ADPlus
 ms.assetid: f0ac9322-3728-42ef-87a4-5b6d25a282d1
 keywords: ADPlus, dump file, adplus.vbs, Autodump+
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ For ADPlus V7.0 documentation, see adplus.doc in the installation folder for Deb
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

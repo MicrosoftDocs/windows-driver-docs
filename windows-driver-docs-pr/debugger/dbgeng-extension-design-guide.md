@@ -3,7 +3,6 @@ title: DbgEng Extension Design Guide
 description: DbgEng Extension Design Guide
 ms.assetid: c7046c2a-9cda-4cae-b47a-f36cca44e82d
 keywords: ["DbgEng Extensions, Design Guide"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ This section includes:
 
 [Building DbgEng Extensions](building-dbgeng-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

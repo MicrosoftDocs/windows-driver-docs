@@ -2,14 +2,13 @@
 title: Remote Debugging Using Visual Studio
 description: The procedure covers Remote Debugging Using Visual Studio.
 ms.assetid: 9FA347BF-878E-46C8-8459-DC73A8B1EB26
-ms.author: domars
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---
 
 # Remote Debugging Using Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -21,9 +20,9 @@ To perform remote debugging using Visual Studio:
 1.  On the remote computer, in Visual Studio, choose **Connect to Remote Debugger** from the **Tools** menu.
 2.  In the **Connect to Remote Debugger** dialog box, enter a connection string, and click **Connect**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,6 +2,7 @@
 title: Submit a Bulk Metadata Package
 description: Submit a Bulk Metadata Package
 ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -54,7 +55,7 @@ The XML documents must be saved by using UTF-8 encoding.
 
 You must include at least one device metadata or device manifest package in your bulk metadata submission package.
 
- 
+ 
 
 ### <span id="Structure_of_a_Bulk_Metadata_Submission_Package"></span><span id="structure_of_a_bulk_metadata_submission_package"></span><span id="STRUCTURE_OF_A_BULK_METADATA_SUBMISSION_PACKAGE"></span>Structure of a Bulk Metadata Submission Package
 
@@ -121,7 +122,7 @@ N .\BulkFiles\ DDMMYYYY.bulkmetadata-ms
 **Note**  
 You can find more information about this tool in [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
 
- 
+ 
 
 ## <span id="creating_bulkmetadatasubmission.xml"></span><span id="CREATING_BULKMETADATASUBMISSION.XML"></span>Creating BulkMetadataSubmission.xml
 
@@ -135,7 +136,7 @@ The data in the BulkMetadataSubmission.xml document is formatted based on the Bu
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 **BulkMetadataSubmission XML Schema NameSpace**
 
@@ -217,7 +218,7 @@ The following table describes the metadata elements and attributes of the BulkMe
 </tbody>
 </table>
 
- 
+ 
 
 **BulkMetadataSubmission XML Schema Metadata**
 
@@ -515,7 +516,7 @@ You can select one of two options for each experience. These options and their d
 </tbody>
 </table>
 
- 
+ 
 
 **LogoSubmissionIDList Element**
 
@@ -635,9 +636,9 @@ The following XML document uses the BulkMetadataSubmission XML schema to specify
 </BulkMetadataSubmission>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

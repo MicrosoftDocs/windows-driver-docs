@@ -3,7 +3,6 @@ title: amli dns
 description: The amli dns extension displays an ACPI namespace object.
 ms.assetid: 7db937ba-109f-4f4e-8dd3-4aa5d0dc13b2
 keywords: ["amli dns Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -21,8 +20,9 @@ The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
 
+```dbgcmd
     !amli dns [/s] [Name | Address]
-
+```
 
 ## <span id="ddk__amli_dns_dbg"></span><span id="DDK__AMLI_DNS_DBG"></span>Parameters
 
@@ -95,9 +95,9 @@ To display the entire namespace, type:
 kd> !amli dns
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave device's wave
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSWAVE_OUTPUT_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567248)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567248" data-raw-source="[&lt;strong&gt;KSWAVE_OUTPUT_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567248)"><strong>KSWAVE_OUTPUT_CAPABILITIES</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSWAVE\_OUTPUT\_CAPABILITIES structure that describes the output capabilities of a wave device, including the maximum number of audio channels, the range of bits per sample, the range of sampling frequency, the total and active number of connections.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**KSWAVE\_OUTPUT\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff567248)
 
- 
+ 
 
- 
+ 
 
 
 

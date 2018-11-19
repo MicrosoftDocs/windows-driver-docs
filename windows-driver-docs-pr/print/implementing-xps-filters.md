@@ -1,6 +1,5 @@
 ---
 title: Implementing XPS Filters
-author: windows-driver-content
 description: Implementing XPS Filters
 ms.assetid: 681f533f-d6f6-43a3-be0b-10d8c1a6f12e
 keywords:
@@ -54,9 +53,9 @@ The following recommendations apply to filters:
 
 For more information about adding asynchronous notification to your filter, see [Asynchronous Notifications in Print Filters](asynchronous-notifications-in-print-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Calling PoStartNextPowerIrp from a Bus Driver
-author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Bus Driver
 ms.assetid: 4e23ebe1-c939-48e1-82bf-cdb4980a5a7b
 keywords: ["bus drivers WDK power management", "power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
@@ -18,9 +17,9 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://msdn.mic
 
 A bus driver always calls this routine in its *DispatchPower* routine, before it calls the [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) routine.
 
- 
+ 
 
- 
+ 
 
 
 

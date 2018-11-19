@@ -55,7 +55,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 </tr>
 <tr class="odd">
 <td><p>WIA_PAGE_CUSTOM</p></td>
-<td><p>Defined by the values of the [<strong>WIA_IPS_PAGE_HEIGHT</strong>](wia-ips-page-height.md) and [<strong>WIA_IPS_PAGE_WIDTH</strong>](wia-ips-page-width.md) properties.</p></td>
+<td><p>Defined by the values of the <a href="wia-ips-page-height.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_HEIGHT&lt;/strong&gt;](wia-ips-page-height.md)"><strong>WIA_IPS_PAGE_HEIGHT</strong></a> and <a href="wia-ips-page-width.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_WIDTH&lt;/strong&gt;](wia-ips-page-width.md)"><strong>WIA_IPS_PAGE_WIDTH</strong></a> properties.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_PAGE_CUSTOM_BASE</p></td>
@@ -68,7 +68,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -111,9 +111,9 @@ Requirements
 
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
 
- 
+ 
 
- 
+ 
 
 
 

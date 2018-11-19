@@ -1,6 +1,5 @@
 ---
 title: Creating a sensor driver
-author: windows-driver-content
 description: Creating a sensor driver
 ms.assetid: 7a1cea3c-d542-47e9-90f9-18bae4969b9f
 ms.date: 07/20/2018
@@ -47,7 +46,7 @@ To install your driver for testing, follow these steps:
 
     **Note**  Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
 
-     
+     
 
 If your driver cannot be installed, it is likely that one of the methods in step 2 returned an error code. To debug this problem, you must attach a debugger during installation. For information about how to debug UMDF drivers during loading, see [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](https://msdn.microsoft.com/library/windows/hardware/ff554611).
 

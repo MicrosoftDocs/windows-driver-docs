@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_NEIGHBOR_REPORT_ENTRY
-author: windows-driver-content
 description: WDI_TLV_NEIGHBOR_REPORT_ENTRY is a TLV that contains a neighbor report.
 ms.assetid: 23A0AA84-3EDA-4D6F-9140-2361C0CF55AA
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CHANNEL\_NUMBER**](wdi-tlv-channel-number.md)   |                                |          | The last known operating channel of the AP indicated by this BSSID. |
 | [**WDI\_TLV\_PHY\_TYPE**](wdi-tlv-phy-type.md)               |                                |          | The PHY type of the AP indicated by this BSSID.                     |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

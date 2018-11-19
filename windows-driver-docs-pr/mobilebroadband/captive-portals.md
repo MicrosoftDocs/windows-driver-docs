@@ -38,14 +38,14 @@ To determine Internet connectivity and captive portal status when a client first
 
 To avoid false positive or false negative test results, your captive portal should not do the following:
 
--   Allow access to **www.msftncsi.com** when the user does not have access to the Internet.
+- Allow access to <strong>www.msftncsi.com</strong> when the user does not have access to the Internet.
 
--   Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
+- Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
 
-    **Note**  
-    Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
+  **Note**  
+  Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
 
-     
+     
 
 ## <span id="touchfr"></span><span id="TOUCHFR"></span>Touch-friendly web pages
 
@@ -60,7 +60,7 @@ The same provisioning file that can be applied by an app can also be applied by 
 **Note**  
 This provisioning file must be signed when it is provided by a website or an app that is not the mobile broadband app.
 
- 
+ 
 
 Passing an XML provisioning file enables the operating system to automatically connect to other networks that are included in the user’s service, even if they have different service set identifiers (SSIDs). If you use static Wireless Internet Service Provider roaming (WISPr) credentials, it also enables a smoother connection experience because in the future, Windows can automatically authenticate with those credentials.
 
@@ -74,9 +74,9 @@ The richest experience of Windows 8, Windows 8.1, and Windows 10 is through t
 
 [Hotspot authentication methods](hotspot-authentication-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

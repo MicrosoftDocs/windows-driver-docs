@@ -56,7 +56,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PREVIE
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 
 [**WIA\_DPS\_PREVIEW**](wia-dps-preview.md)
 
- 
+ 
 
- 
+ 
 
 
 

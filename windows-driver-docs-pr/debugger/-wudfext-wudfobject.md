@@ -3,7 +3,6 @@ title: wudfext.wudfobject
 description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
 ms.assetid: cb9398fb-24f5-4692-9a08-543bf1317b19
 keywords: ["wudfext.wudfobject Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -164,9 +163,9 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
               No Children
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,11 +29,11 @@ Authenticode code signing does not alter the executable portions of a driver. In
 
 **Note**  The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has test categories for a variety of device types. The list of test categories can be found at [Certification Test Reference](https://msdn.microsoft.com/library/windows/hardware/hh998741). If a test category for the device type is included in this list, the software publisher should obtain a [WHQL release signature](whql-release-signature.md) for the [driver package](driver-packages.md) However, if the HCK does not have a test program for the device type, the software publisher can sign the driver package by using the Microsoft Authenticode technology. For more information about this process, see [Signing Drivers for Public Release](signing-drivers-for-public-release.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

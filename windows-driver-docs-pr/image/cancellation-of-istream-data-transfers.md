@@ -1,6 +1,5 @@
 ---
 title: Cancellation of IStream Data Transfers
-author: windows-driver-content
 description: Cancellation of IStream Data Transfers
 ms.assetid: cefe8ef3-f0f8-4260-b666-c61f9902de5c
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ This section includes:
 
 [Cancellation of Data Transfers in Windows Vista](cancellation-of-data-transfers-in-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

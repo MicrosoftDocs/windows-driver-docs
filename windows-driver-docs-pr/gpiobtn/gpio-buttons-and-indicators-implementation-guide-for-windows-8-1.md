@@ -1,6 +1,5 @@
 ---
 title: GPIO buttons and indicators implementation guide
-author: windows-driver-content
 description: Windows 8 introduced support for general-purpose I/O (GPIO) buttons and indicators by using a HID miniport class driver.
 ms.assetid: E073E15A-7068-43D0-9DBA-7DD2E7FE2993
 ms.localizationpriority: medium
@@ -28,37 +27,37 @@ Windows 8 introduced support for general-purpose I/O (GPIO) buttons and indicato
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[State indicators](state-indicators.md)</p></td>
+<td align="left"><p><a href="state-indicators.md" data-raw-source="[State indicators](state-indicators.md)">State indicators</a></p></td>
 <td align="left"><p>This section describes the states of the mode and docking indicators.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Physical buttons](physical-buttons.md)</p></td>
+<td align="left"><p><a href="physical-buttons.md" data-raw-source="[Physical buttons](physical-buttons.md)">Physical buttons</a></p></td>
 <td align="left"><p>Hardware buttons let users perform many common tasks that do not have a convenient user interface alternative. For the scenarios addressed in this section, the hardware buttons are typically used for tasks that occur while the physical keyboard is not available to the user, on form factors such as convertibles or slates.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Interface implementation guidance](interface-implementation-guidance.md)</p></td>
+<td align="left"><p><a href="interface-implementation-guidance.md" data-raw-source="[Interface implementation guidance](interface-implementation-guidance.md)">Interface implementation guidance</a></p></td>
 <td align="left"><p>This section provides guidance for interface implementation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Code samples](code-samples.md)</p></td>
+<td align="left"><p><a href="code-samples.md" data-raw-source="[Code samples](code-samples.md)">Code samples</a></p></td>
 <td align="left"><p>This section includes code samples and sample descriptors for interface implementation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Implement the unattended Windows Setup setting](implement-the-unattended-windows-setup-setting.md)</p></td>
+<td align="left"><p><a href="implement-the-unattended-windows-setup-setting.md" data-raw-source="[Implement the unattended Windows Setup setting](implement-the-unattended-windows-setup-setting.md)">Implement the unattended Windows Setup setting</a></p></td>
 <td align="left"><p>This topic describes how to set the unattended Windows Setup component setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Logging and investigations](logging-and-investigations.md)</p></td>
+<td align="left"><p><a href="logging-and-investigations.md" data-raw-source="[Logging and investigations](logging-and-investigations.md)">Logging and investigations</a></p></td>
 <td align="left"><p>This topic describes logging and investigations for GPIO implementations.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Running test passes](running-test-passes.md)</p></td>
+<td align="left"><p><a href="running-test-passes.md" data-raw-source="[Running test passes](running-test-passes.md)">Running test passes</a></p></td>
 <td align="left"><p>The MITT platform can test GPIO buttons by offering both test automation and the option to customize the GPIO patterns that are sent for targeted investigations.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 As part of Windows 8.1 investments, the **msgpio** button driver brings important enhancements:
 

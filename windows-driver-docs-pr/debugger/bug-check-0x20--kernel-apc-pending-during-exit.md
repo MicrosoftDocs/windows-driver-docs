@@ -3,7 +3,6 @@ title: Bug Check 0x20 KERNEL_APC_PENDING_DURING_EXIT
 description: The KERNEL_APC_PENDING_DURING_EXIT bug check has a value of 0x00000020. This indicates that an asynchronous procedure call (APC) was still pending when a thread exited.
 ms.assetid: 0ef7c2b2-0864-4206-b786-bac9df9cedc7
 keywords: ["Bug Check 0x20 KERNEL_APC_PENDING_DURING_EXIT", "KERNEL_APC_PENDING_DURING_EXIT"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This indicates that an asynchronous procedure call (APC) was still pending when a thread exited.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## KERNEL\_APC\_PENDING\_DURING\_EXIT Parameters
 
@@ -42,7 +41,7 @@ The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The thread's APC disable count</p></td>
+<td align="left"><p>The thread&#39;s APC disable count</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
@@ -55,7 +54,7 @@ The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -72,9 +71,9 @@ If you ever see this error, be very suspicious of all drivers installed on the m
 
 This current IRQL (Parameter 3) should be zero. If it is not, the driver's cancellation routine may have caused this bug check by returning at an elevated IRQL. In this case, carefully note what was running (and what was closing) at the time of the crash, and note all of the installed drivers at the time of the crash. The cause in this case is usually a severe bug in a driver.
 
- 
+ 
 
- 
+ 
 
 
 

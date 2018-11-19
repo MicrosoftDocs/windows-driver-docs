@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes Failure method
-author: windows-driver-content
 description: Returns a value of '1' to inform USBMon that the method call failed.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

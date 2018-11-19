@@ -1,6 +1,5 @@
 ---
 title: Registering for Asynchronous Driver Notification
-author: windows-driver-content
 description: Registering for Asynchronous Driver Notification
 ms.assetid: e1f97a65-7c82-4d7b-97ec-0293fc69fd8c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , registering", "asynchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
@@ -71,7 +70,7 @@ Status =
 
 **Note**   If a device driver only has to be notified about processors, it does not have to implement a callback function for memory or register for notification about memory. Similarly, if a device driver only has to be notified about memory, it does not have to implement a callback function for processors or register for notification about processors.
 
- 
+ 
 
 When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) function. The following code example shows how to unregister the callback functions:
 
@@ -88,9 +87,9 @@ Status =
     );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

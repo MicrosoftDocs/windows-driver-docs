@@ -1,7 +1,6 @@
 ---
 Description: This topic provides a brief overview about USB bulk transfers. 
 title: How to send USB bulk transfer requests
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -123,7 +122,7 @@ Before you begin, make sure that you have this information:
 
 -   The client driver must have created the framework USB target device object and obtained the WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.
 
-    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
+    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
 -   WDFREQUEST handle to the framework request object that contains details about this request.
 -   The number of bytes to read or write.
@@ -215,9 +214,9 @@ VOID Fx3EvtIoWrite(
     WDFUSBPIPE  pipe;
     WDFMEMORY  reqMemory;
     PDEVICE_CONTEXT  pDeviceContext;
- 
+
     pDeviceContext = GetDeviceContext(WdfIoQueueGetDevice(Queue));
- 
+
     pipe = pDeviceContext->BulkWritePipe;
 
     status = WdfRequestRetrieveInputMemory(
@@ -264,7 +263,6 @@ Exit:
     }
     return;
 }
-
 ```
 
 This example code shows the completion routine implementation for a bulk transfer. The client driver completes the request in the completion routine and sets this request information: status and the number of bytes transferred.
@@ -356,7 +354,6 @@ Exit:
 
     return;
 }
-
 ```
 
 ## Related topics

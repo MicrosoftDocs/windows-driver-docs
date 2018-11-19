@@ -1,6 +1,5 @@
 ---
 title: Starting a BDA Minidriver
-author: windows-driver-content
 description: Starting a BDA Minidriver
 ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords:
@@ -183,9 +182,9 @@ BDA_PIN_PAIRING TemplateTunerPinPairings[] =
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Obtaining Information About a General I/O Target
-author: windows-driver-content
 description: Obtaining Information About a General I/O Target
 ms.assetid: 70ae920e-de2d-4014-bae4-74058b26e7c0
 keywords:
@@ -36,9 +35,9 @@ Returns a pointer to the WDM file object that is associated with a remote I/O ta
 <a href="" id="wdfiotargetwdmgettargetfilehandle"></a>[**WdfIoTargetWdmGetTargetFileHandle**](https://msdn.microsoft.com/library/windows/hardware/ff548683)  
 Returns a handle to the file that is associated with a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

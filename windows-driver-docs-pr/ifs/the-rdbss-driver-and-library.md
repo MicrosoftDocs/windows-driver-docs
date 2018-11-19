@@ -1,6 +1,5 @@
 ---
 title: The RDBSS Driver and Library
-author: windows-driver-content
 description: The RDBSS Driver and Library
 ms.assetid: fb2d1939-7af5-474c-8247-e5d48b4bbed6
 keywords:
@@ -85,9 +84,9 @@ The routines exported by RDBSS and the RDBSS macros defined to call these routin
 
 -   [Connection Engine Management](connection-engine-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

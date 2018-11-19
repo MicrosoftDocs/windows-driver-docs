@@ -1,6 +1,5 @@
 ---
 title: Decorations in Printer INF Files
-author: windows-driver-content
 description: Decorations in Printer INF Files
 ms.assetid: 86ddca11-e2a9-44b8-8c42-313116fc580e
 keywords:
@@ -27,9 +26,9 @@ Beginning with Windows Server 2003 with SP1 and the 64-bit version of Windows XP
 
 [How to Use Decorations in INF Files for Printer Drivers](how-to-use-decorations-in-inf-files-for-printer-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ In a uniprocessor environment, a single processor runs only one computer instruc
 
 In a multiprocessor environment, processors simultaneously run several computer instructions. A driver must synchronize so that when one driver function manipulates common data structures, the same or another driver function on another processor does not attempt to modify shared data at the same time. All driver code is reentrant in a symmetric multiprocessor (SMP) computer. To eliminate this resource protection problem, Windows device drivers use spin locks. For more information, see [Synchronization and Notification in Network Drivers](synchronization-and-notification-in-network-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

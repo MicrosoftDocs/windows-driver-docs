@@ -1,6 +1,5 @@
 ---
 title: Attaching a Filter to a File System or Volume
-author: windows-driver-content
 description: Attaching a Filter to a File System or Volume
 ms.assetid: 7c5059b3-cd9f-4a83-8f78-5a2fcc96b246
 keywords:
@@ -26,11 +25,11 @@ A file system filter driver attaches itself to one or more mounted volumes and f
 
 **Note**   You should generally assume that the mapping of volumes to drive letters is one-to-many, not one-to-one. This is because of advanced storage features, such as dynamic volumes and volume mount points.
 
- 
+ 
 
 **Note**   You should not assume that IRP\_MN\_MOUNT\_VOLUME requests are always handled synchronously by the file system. For example, a floppy drive may be mounted asynchronously if there is no floppy disk in the drive. Thus your filter driver should be prepared to propagate the **PendingReturned** flag in its mount completion routine. For more information, see "[Checking the PendingReturned Flag](checking-the-pendingreturned-flag.md)."
 
- 
+ 
 
 File system filter drivers can attach to, and filter I/O for, any file system volume. They cannot attach directly to storage devices, such as disk drives or partitions. Also, they cannot attach to individual directories or files.
 
@@ -46,9 +45,9 @@ For more information, see the following topics:
 
 [Clearing the DO\_DEVICE\_INITIALIZING Flag](clearing-the-do-device-initializing-flag.md)
 
- 
+ 
 
- 
+ 
 
 
 

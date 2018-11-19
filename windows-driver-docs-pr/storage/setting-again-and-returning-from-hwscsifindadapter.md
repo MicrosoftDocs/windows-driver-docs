@@ -1,6 +1,5 @@
 ---
 title: Setting Again and Returning from HwScsiFindAdapter
-author: windows-driver-content
 description: Setting Again and Returning from HwScsiFindAdapter
 ms.assetid: 8a9cde40-06fa-4b56-818d-63a9c71da208
 keywords:
@@ -28,9 +27,9 @@ If *HwScsiFindAdapter* cannot find an HBA it supports, it should set *Again* to 
 
 Note that setting *Again* to **FALSE** and returning control with SP\_RETURN\_NOT\_FOUND or SP\_RETURN\_BAD\_CONFIG indicates that a given I/O bus, identified by the **SystemIoBusNumber** in the input PORT\_CONFIGURATION\_INFORMATION, has no HBA that the miniport driver can support. It does not prevent the system port driver from calling *HwScsiFindAdapter* again with updated PORT\_CONFIGURATION\_INFORMATION to scan another I/O bus for HBA(s) if the machine has additional I/O buses of the same **AdapterInterfaceType**.
 
- 
+ 
 
- 
+ 
 
 
 

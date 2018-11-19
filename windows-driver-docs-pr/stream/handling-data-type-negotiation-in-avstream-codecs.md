@@ -1,6 +1,5 @@
 ---
 title: Handling Data Type Negotiation in AVStream Codecs
-author: windows-driver-content
 description: Handling Data Type Negotiation in AVStream Codecs
 ms.assetid: b5212429-dbc8-4e9a-b5a9-2431f8a1eb2a
 keywords:
@@ -83,9 +82,9 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
 15. When the minidriver receives property GET requests with variable data buffer sizes, the minidriver should interpret a **NULL** buffer as a query for size of the buffer required. In this case, the driver should specify the required length in the Irp-&gt;IoStatus.Information field and return STATUS\_BUFFER\_OVERFLOW. In addition, the minidriver should set the return code to be a warning and not an error. For example, follow this guidance with data intersection handlers.
 
- 
+ 
 
- 
+ 
 
 
 

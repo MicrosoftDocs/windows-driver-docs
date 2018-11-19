@@ -1,6 +1,5 @@
 ---
 title: Using Device Pooling in UMDF Drivers
-author: windows-driver-content
 description: Using Device Pooling in UMDF Drivers
 ms.assetid: EC36CB33-3877-445B-8AC6-1D41E6397FF9
 ms.date: 04/20/2017
@@ -48,9 +47,9 @@ In a pooled environment, if multiple device stacks share the same user mode driv
 
 Because there is only one driver object in a pooled configuration, the driver must not store any per-device context in global variables or in objects that are shared across the devices, such as the driver callback object. Instead, the driver must store per-device context in an object that is not shared between the device stacks, such as the driver’s device callback object.
 
- 
+ 
 
- 
+ 
 
 
 

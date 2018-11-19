@@ -1,6 +1,5 @@
 ---
 title: Cancel Routines in Drivers with StartIo Routines
-author: windows-driver-content
 description: Cancel Routines in Drivers with StartIo Routines
 ms.assetid: 5098e4b9-d4db-44c2-acb3-a46878d6f1c4
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]
@@ -31,9 +30,9 @@ The driver's *Cancel* routine should call **KeRemoveEntryDeviceQueue** to test w
 
 Drivers with *Cancel* routines can handle [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) requests as well. See [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) for more information about **IRP\_MJ\_CLEANUP** requests.
 
- 
+ 
 
- 
+ 
 
 
 

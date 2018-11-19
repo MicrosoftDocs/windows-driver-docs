@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
-author: windows-driver-content
 ms.date: 05/09/2018
 ms.localizationpriority: medium
 ---
@@ -116,7 +115,6 @@ if ( !NT_SUCCESS(status)) {
                  status);
     return status;
 }
-
 ```
 
 In the example, the driver calls [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff551271), specifying **IdleUsbSelectiveSuspend**. The driver sets **IdleTimeout** to 10,000 milliseconds (10 seconds) and accepts the framework defaults for **DxState** and **UserControlOfIdleSettings**. As a result, the framework transitions the device to the D3 state when it is idle and creates a Device Manager property page that allows users with administrator privilege to enable or disable device idle support. The driver then calls [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903) to enable idle support and register these settings with the framework.

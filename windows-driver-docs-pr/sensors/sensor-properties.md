@@ -1,6 +1,5 @@
 ---
 title: Sensor Properties
-author: windows-driver-content
 description: The Sensor and Location platform defines constants that identify properties for sensors. Sensor manufacturers can also define their own properties.
 ms.assetid: a9f88dad-a81d-45dc-b607-e7b4c5036774
 topic_type:
@@ -48,7 +47,7 @@ Each platform-defined sensor property **PROPERTYKEY** is based on a common **GUI
 
 **Important**   Do not use this base value to define your own property keys.
 
- 
+ 
 
 Values for properties designated as read/write can be specified by the client application. Values for properties designated as static must not change over time. Properties designated as required must be supported by the sensor.
 
@@ -69,7 +68,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_ACCURACY</strong>
 (PID = 17)</td>
 <td><p><strong>VT_UNKNOWN</strong></p>
-<p>Read only. [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=134660) object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
+<p>Read only. <a href="http://go.microsoft.com/fwlink/p/?linkid=134660" data-raw-source="[IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=134660)">IPortableDeviceValues</a> object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CHANGE_SENSITIVITY"></span><span id="sensor_property_change_sensitivity"></span>
@@ -88,7 +87,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_CONNECTION_TYPE</strong>
 (PID = 11)</td>
 <td><p><strong>VT_UI4</strong></p>
-<p>Read only. [<strong>SensorConnectionType</strong>](https://msdn.microsoft.com/library/windows/desktop/dd318902) value that contains the current connection type.</p></td>
+<p>Read only. <a href="https://msdn.microsoft.com/library/windows/desktop/dd318902" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd318902)"><strong>SensorConnectionType</strong></a> value that contains the current connection type.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL"></span><span id="sensor_property_current_report_interval"></span>
@@ -98,7 +97,7 @@ Values for properties designated as read/write can be specified by the client ap
 <p>Read/write. The current elapsed time for sensor data report generation, in milliseconds.</p>
 <p>Setting a value of zero signals the driver to return either: the default report interval, or, the smallest report interval. If there is only one client connected, the driver should return the default report interval. If multiple clients are connected, the driver should return the smallest interval requested by any of those clients.</p>
 <p>Applications can set this value to request a particular report interval, but multiple applications could be using the same driver. Therefore, drivers determine the true report interval, based on internal logic. For example, the driver might always use the shortest report interval that is requested by any caller.</p>
-<p>For an example of how to use this property, see [Using Sensor API Events](https://msdn.microsoft.com/library/windows/desktop/dd319014).</p></td>
+<p>For an example of how to use this property, see <a href="https://msdn.microsoft.com/library/windows/desktop/dd319014" data-raw-source="[Using Sensor API Events](https://msdn.microsoft.com/library/windows/desktop/dd319014)">Using Sensor API Events</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_PROPERTY_DESCRIPTION"></span><span id="sensor_property_description"></span>
@@ -127,15 +126,15 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE</strong>
 (PID = 16)</td>
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
-<p>Read only. A counted array that contains pairs of values that provide a mapping between ambient light levels and offsets. These values are expressed as percentages. The adaptive brightness feature in Windows applies these values to the user's current display brightness preference.</p>
-<p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This property actually contains each value as a 4-byte unsigned integer (<strong>VT_UI4)</strong>. For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>Read only. A counted array that contains pairs of values that provide a mapping between ambient light levels and offsets. These values are expressed as percentages. The adaptive brightness feature in Windows applies these values to the user&#39;s current display brightness preference.</p>
+<p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This property actually contains each value as a 4-byte unsigned integer (<strong>VT_UI4)</strong>. For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY"></span><span id="sensor_property_location_desired_accuracy"></span>
 <strong>SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY</strong>
 (PID = 19)</td>
 <td><p><strong>VT_UI4</strong></p>
-<p>Read/write. A value from the [<strong>LOCATION_DESIRED_ACCURACY</strong>](https://msdn.microsoft.com/library/windows/desktop/dd756639) enumeration that indicates the type of accuracy handling requested by a client application.</p>
+<p>Read/write. A value from the <a href="https://msdn.microsoft.com/library/windows/desktop/dd756639" data-raw-source="[&lt;strong&gt;LOCATION_DESIRED_ACCURACY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd756639)"><strong>LOCATION_DESIRED_ACCURACY</strong></a> enumeration that indicates the type of accuracy handling requested by a client application.</p>
 <p><strong>LOCATION_DESIRED_ACCURACY_DEFAULT</strong> (0) indicates that the sensor should use the accuracy for which it can optimize power use and other cost considerations.</p>
 <p><strong>LOCATION_DESIRED_ACCURACY_HIGH</strong> (1) indicates that the sensor should deliver the most accurate report possible. This includes using services that might charge money, or consuming higher levels of battery power or connection bandwidth.</p></td>
 </tr>
@@ -144,7 +143,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_MANUFACTURER</strong>
 (PID = 6)</td>
 <td><p><strong>VT_LPWSTR</strong></p>
-<p>Read only. Required, static. The manufacturer's name.</p></td>
+<p>Read only. Required, static. The manufacturer&#39;s name.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_PROPERTY_MIN_REPORT_INTERVAL"></span><span id="sensor_property_min_report_interval"></span>
@@ -165,7 +164,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_PERSISTENT_UNIQUE_ID</strong>
 (PID = 5)</td>
 <td><p><strong>VT_CLSID</strong></p>
-<p>Read only. Required, static. A <strong>GUID</strong> that identifies the sensor. This value must be unique for each sensor on a device, or across devices of the same model as enumerated on the computer. This property contains the same value obtained by calling [<strong>ISensor::GetID</strong>](https://msdn.microsoft.com/library/windows/desktop/dd318873) .</p></td>
+<p>Read only. Required, static. A <strong>GUID</strong> that identifies the sensor. This value must be unique for each sensor on a device, or across devices of the same model as enumerated on the computer. This property contains the same value obtained by calling <a href="https://msdn.microsoft.com/library/windows/desktop/dd318873" data-raw-source="[&lt;strong&gt;ISensor::GetID&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd318873)"><strong>ISensor::GetID</strong></a> .</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_RANGE_MAXIMUM"></span><span id="sensor_property_range_maximum"></span>
@@ -202,12 +201,12 @@ Values for properties designated as read/write can be specified by the client ap
 (PID = 3)</td>
 <td><p><strong>VT_UI4</strong></p>
 <p>Read only. Required.</p>
-<p>[<strong>SensorState</strong>](https://msdn.microsoft.com/library/windows/desktop/dd318905) value that contains the current sensor state.</p>
+<p><a href="https://msdn.microsoft.com/library/windows/desktop/dd318905" data-raw-source="[&lt;strong&gt;SensorState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd318905)"><strong>SensorState</strong></a> value that contains the current sensor state.</p>
 <div class="alert">
-<strong>Note</strong>  To update this property, raise a state-changed event by calling [<strong>ISensorClassExtension::PostStateChange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545523).
+<strong>Note</strong>  To update this property, raise a state-changed event by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545523" data-raw-source="[&lt;strong&gt;ISensorClassExtension::PostStateChange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545523)"><strong>ISensorClassExtension::PostStateChange</strong></a>.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -285,9 +284,9 @@ Requirements
 
 [**SetProperties**](https://msdn.microsoft.com/library/windows/desktop/dd318899)
 
- 
+ 
 
- 
+ 
 
 
 

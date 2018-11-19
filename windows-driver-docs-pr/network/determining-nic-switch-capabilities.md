@@ -17,7 +17,7 @@ This topic describes how NDIS and overlying drivers determine the NIC switch cap
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) of an SR-IOV network adapter can report NIC switch capabilities. Miniport drivers for PCIe Virtual Functions (VFs) must not report the NIC switch capabilities of the SR-IOV adapter.
 
- 
+ 
 
 For more information on NIC switches, see [NIC Switches](nic-switches.md).
 
@@ -30,7 +30,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
     **Note**  Starting with NDIS 6.30, only one NIC switch is created on the network adapter. This switch is known as the *default NIC switch*.
 
-     
+     
 
 -   The NIC switch capabilities that are currently enabled on the network adapter.
 
@@ -46,7 +46,7 @@ The miniport driver reports the NIC switch hardware capabilities of the underlyi
 
     **Note**  Depending on the available hardware resources on the network adapter, the miniport driver can set the **MaxNumVFs** member to a value that is less than its **\*NumVFs** keyword. For more information about this keyword, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
-     
+     
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver registers the NIC switch capabilities of the network adapter by following these steps:
 
@@ -75,9 +75,9 @@ NDIS passes the network adapter's currently enabled NIC switch capabilities to o
 
 NDIS also returns the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure when it handles object identifier (OID) query requests of [OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569761) and [OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569760) that are issued by overlying protocol or filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

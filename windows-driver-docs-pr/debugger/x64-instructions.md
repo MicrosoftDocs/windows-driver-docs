@@ -3,7 +3,6 @@ title: x64 Instructions
 description: x64 Instructions
 ms.assetid: f05cbf3e-001c-43cc-8a53-0e22fd161a53
 keywords: ["x64 processor, instructions"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -55,7 +54,7 @@ The x64 provides new variants of the MOV instruction that can handle 64-bit imme
 </tbody>
 </table>
 
- 
+ 
 
 The x64 also provides a new instruction to sign-extend 32-bit operands to 64 bits.
 
@@ -74,7 +73,7 @@ The x64 also provides a new instruction to sign-extend 32-bit operands to 64 bit
 </tbody>
 </table>
 
- 
+ 
 
 Ordinary MOV operations into 32-bit subregisters automatically zero extend to 64 bits, so there is no MOVZXD instruction.
 
@@ -100,7 +99,7 @@ Two SSE instructions can be used to move 128-bit values (such as GUIDs) from mem
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Data_Conversion"></span><span id="data_conversion"></span><span id="DATA_CONVERSION"></span>Data Conversion
 
@@ -121,7 +120,7 @@ Two SSE instructions can be used to move 128-bit values (such as GUIDs) from mem
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="String_Manipulation"></span><span id="string_manipulation"></span><span id="STRING_MANIPULATION"></span>String Manipulation
 
@@ -154,11 +153,11 @@ Two SSE instructions can be used to move 128-bit values (such as GUIDs) from mem
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

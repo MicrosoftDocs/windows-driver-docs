@@ -3,7 +3,6 @@ title: Debugging Session and Execution Model
 description: Debugging Session and Execution Model
 ms.assetid: 1cc2c055-447c-44cd-94d4-ae3dfa8243fb
 keywords: ["Debugger Engine, execution model", "execution model", "Debugger Engine, debugging session"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ If a sequence of debugger commands are executed together--for example, "**g ; ? 
 
 **Note**   When determining whether the session is accessible or inaccessible, limited execution of a target (for example, stepping) is considered execution by the engine. When the limited execution is complete, the session becomes accessible.
 
- 
+ 
 
 ### <span id="host_engine"></span><span id="HOST_ENGINE"></span>Host Engine
 
@@ -33,9 +32,9 @@ When debugging remotely, you can use multiple instances of the debugger engine. 
 
 All debugger operations are relative to the host engine, for example, symbol loading and extension loading.
 
- 
+ 
 
- 
+ 
 
 
 

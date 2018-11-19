@@ -1,6 +1,5 @@
 ---
 title: Returning FLT_PREOP_SYNCHRONIZE
-author: windows-driver-content
 description: Returning FLT_PREOP_SYNCHRONIZE
 ms.assetid: b1331f8d-e230-45b2-be1b-f85d85557350
 keywords:
@@ -22,7 +21,7 @@ The filter manager calls the minifilter driver's postoperation callback routine 
 
 **Note**   If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SYNCHRONIZE, but the minifilter driver has not registered a postoperation callback routine for the operation, the system asserts on a checked build.
 
- 
+ 
 
 If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SYNCHRONIZE, it can return a non-NULL value in its *CompletionContext* output parameter. This parameter is an optional context pointer that is passed to the corresponding postoperation callback routine. The postoperation callback routine receives this pointer in its *CompletionContext* input parameter.
 
@@ -42,9 +41,9 @@ The following types of I/O operations cannot be synchronized:
 
 FLT\_PREOP\_SYNCHRONIZE cannot be returned for any of these operations.
 
- 
+ 
 
- 
+ 
 
 
 

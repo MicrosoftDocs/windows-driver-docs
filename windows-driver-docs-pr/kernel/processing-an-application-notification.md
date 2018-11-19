@@ -1,6 +1,5 @@
 ---
 title: Processing an Application Notification
-author: windows-driver-content
 description: Processing an Application Notification
 ms.assetid: 475d8e37-5d31-4989-92ce-3c4a7c09d292
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning", "processing application notifications WDK dynamic hardware partitioning"]
@@ -241,9 +240,9 @@ CAppWnd::OnDeviceChange(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

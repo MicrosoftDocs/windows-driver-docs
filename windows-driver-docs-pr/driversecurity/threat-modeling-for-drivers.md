@@ -33,11 +33,11 @@ This section applies the principles of threat modeling to driver design and prov
 
 -   The Microsoft SDL Web site:
 
-    <http://www.microsoft.com/sdl>
+    <https://www.microsoft.com/sdl>
 
 -   Simplified Implementation of the Microsoft SDL:
 
-    [Download White Paper](http://go.microsoft.com/?linkid=9708425)
+    [Download White Paper](https://go.microsoft.com/?linkid=9708425)
 
 -   This blog entry describes how to download a free copy of *The Security Development Lifecycle: SDL*, by Michael Howard and Steve Lipner:
 
@@ -176,7 +176,7 @@ For example, consider the data flow for IRP\_MJ\_DEVICE\_CONTROL requests as sho
 </tbody>
 </table>
 
- 
+ 
 One threat is often related to another. For example, an attack that exploits an elevation-of-privilege threat can result in information disclosure or denial of service. Furthermore, some types of attacks depend on a sequence of events. A malicious user might start by exploiting an elevation-of-privilege threat. Then, with the added capabilities that come with elevated privilege, the user might find and exploit additional vulnerabilities.
 
 Threat trees and outlines can be useful in modeling such complex scenarios.
@@ -199,7 +199,7 @@ An outline simply lists in hierarchical order the steps to attack a particular t
 
 Either technique can help you to understand which threats are most dangerous and which vulnerabilities in your design are most critical.
 
- 
+ 
 
 ## <span id="Fast_path_threat_modeling"></span><span id="fast_path_threat_modeling"></span><span id="FAST_PATH_THREAT_MODELING"></span>Fast path threat modeling
 
@@ -297,7 +297,7 @@ Additional tools such as binscope and fuzz testers can be used to validate that 
 
 For more information about the SDL process, see these additional resources:
 
--   This is the primary Microsoft SDL site and provides an overview of SDL. <http://www.microsoft.com/sdl>
+-   This is the primary Microsoft SDL site and provides an overview of SDL. <https://www.microsoft.com/sdl>
 
 -   This blog describes how to download a free copy of *The Security Development Lifecycle: SDL*, by Michael Howard and Steve Lipner. <https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/>
 
@@ -331,7 +331,7 @@ For additional driver security resources, see [Driver Security Checklist](driver
 
 **Microsoft Hardware and Driver Developer Information**
 
-[Common Driver Reliability Problems](http://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc) white paper
+[Common Driver Reliability Problems](https://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc) white paper
 
 [Cancel Logic in Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/dn653289) white paper
 
@@ -355,7 +355,7 @@ To expand your knowledge of software threats, review the available public databa
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
 
 
- 
+ 
 
 
 

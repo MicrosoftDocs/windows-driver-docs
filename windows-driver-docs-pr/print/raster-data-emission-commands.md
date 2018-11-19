@@ -1,6 +1,5 @@
 ---
 title: Raster Data Emission Commands
-author: windows-driver-content
 description: Raster Data Emission Commands
 ms.assetid: 31a25de3-f66b-4cf0-90ea-988d75838f68
 keywords:
@@ -110,13 +109,13 @@ The following table lists the raster data emission commands. All commands are sp
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

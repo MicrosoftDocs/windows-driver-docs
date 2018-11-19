@@ -1,6 +1,5 @@
 ---
 title: GDL Construct Delimiters
-author: windows-driver-content
 description: GDL Construct Delimiters
 ms.assetid: 6f759534-3dc2-4e04-afe0-3f377790be21
 keywords:
@@ -34,9 +33,9 @@ The second example combines the value into one line but still uses the curly bra
 *Person: FlorenceF{*Company:Contoso Pharmaceuticals{*Location: Redmond, WA}}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: scm
 description: The scm extension displays the specified shared cache map.
 ms.assetid: 4333ee14-ca28-43af-b132-210996328af2
 keywords: ["shared cache map", "cache manager", "scm Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the shared cache map.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +60,9 @@ Remarks
 
 In Windows XP and later versions of Windows, use the [**dt nt!\_SHARED\_CACHE\_MAP Address**](dt--display-type-.md) command instead of **!scm**.
 
- 
+ 
 
- 
+ 
 
 
 

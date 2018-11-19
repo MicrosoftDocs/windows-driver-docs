@@ -2,6 +2,7 @@
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
 ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,9 +18,9 @@ A device manifest submission package must contain one LocaleInfo.xml document, w
 The data in the LocaleInfo.xml document is formatted based on the LocaleInfo XML schema, which is described below.
 
 **Note**  
- The XML document must be saved by using UTF-8 encoding.
+ The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](http://go.microsoft.com/fwlink/?LinkId=253559).
 
@@ -73,7 +74,7 @@ The following table describes the metadata elements and attributes of the Locale
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="LocaleInfo_XML_Schema_Definition"></span><span id="localeinfo_xml_schema_definition"></span><span id="LOCALEINFO_XML_SCHEMA_DEFINITION"></span>LocaleInfo XML Schema Definition
 
@@ -220,9 +221,9 @@ This example applies to a device metadata package that supports the en-US, ja-JP
 </LocaleInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

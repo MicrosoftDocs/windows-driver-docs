@@ -3,7 +3,6 @@ title: bitcount
 description: The !bitcount extension counts the number of "1" bits in a memory range.
 ms.assetid: dacf3d63-6241-4779-afca-514905b37e26
 keywords: ["bitcount Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bitcount** extension counts the number of "1" bits in a memory range.
 
-```
+```dbgcmd
 !bitcount StartAddress TotalBits
 ```
 
@@ -54,11 +53,11 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

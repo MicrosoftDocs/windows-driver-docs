@@ -1,6 +1,5 @@
 ---
 title: Original Interface
-author: windows-driver-content
 description: Original Interface
 ms.assetid: 78f1e722-c2bd-4232-96f1-71df7e6ece23
 keywords:
@@ -64,13 +63,13 @@ The four joystick-specific callbacks must be registered with the VJoyD VJOYD\_Re
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the registration, a minidriver can perform any other initialization at this time. The joystick minidriver model does not require any specific actions in response to SYS\_DYNAMIC\_DEVICE\_EXIT, though the VxD may still use it for final internal clean up.
 
- 
+ 
 
- 
+ 
 
 
 

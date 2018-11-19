@@ -60,25 +60,37 @@ The maximum absolute error is 0.002.
 
 The following shows the Taylor series for sin(x) and cos(x):
 
-```cpp
-(1) cos(x) = 1 - x2/2! + x4/4! - x6/6!
-sin(x) = x - x3/3! + x5/5! - x7/7! = x*(1 - x2/3! + x4/5! - x6/7!)
+
+`(1) cos(x) = 1 - x2/2! + x4/4! - x6/6!
+sin(x) = x - x3/3! + x5/5! - x7/7! = x*(1 - x2/3! + x4/5! - x6/7!)`
+
 To increase precision we compute cos(x) using cos(x/2):
-(2) cos(x) = 1 - 2*sin(x/2)*sin(x/2)
-sin(x) = 2*sin(x/2)*cos(x/2)
+
+`(2) cos(x) = 1 - 2*sin(x/2)*sin(x/2)
+sin(x) = 2*sin(x/2)*cos(x/2)`
+
 (1) can be re-written by substituting x to x/2 as:
-(3) cos(x) = 1 - x2/(2!*4) + x4/(4!*16) - x6/(6!*64)
+
+`(3) cos(x) = 1 - x2/(2!*4) + x4/(4!*16) - x6/(6!*64)
 sin(x) = x/2 - x3/(3!*8) + x5/(5!*32) - x7/(7!*128) =
-= x*(0.5f - x2/(3!*8) + x4/(5!*32) - x6/(7!*128))
+= x*(0.5f - x2/(3!*8) + x4/(5!*32) - x6/(7!*128))`
+
 Lets, write (3) in vector form. Here a,b,c,d are 2D constant vectors:
-a + x2*b + x4*c + x6*d = a+x2*(b + x2*(c + x2*d)
-```
+
+`a + x2*b + x4*c + x6*d = a+x2*(b + x2*(c + x2*d)`
+
 
 The following shows the implementation for SINCOS:
 
+
+SRC2 should be constant:
+
+`(1.f/(7!*128), 1.f/(6!*64), 1.f/(4!*16), 1.f/(5!*32) )`
+
+SRC3 should be constant:
+
 ```cpp
-SRC2 should be constant (1.f/(7!*128), 1.f/(6!*64), 1.f/(4!*16), 1.f/(5!*32) )
-SRC3 should be constant (1.f/(3!*8), 1.f/(2!*8), 1.f, 0.5f )
+(1.f/(3!*8), 1.f/(2!*8), 1.f, 0.5f )
 VECTOR v1 = EvalSource(SRC1);
 VECTOR v2 = EvalSource(SRC2);
 VECTOR v3 = EvalSource(SRC3);
@@ -86,7 +98,12 @@ VECTOR v;
 MUL v.z, v1.w, v1.w ; x*x
 MAD v.xy, v.z, v2.xy, v2.wz
 MAD v.xy, v.xy, v.z, v3.xy
-MAD v.xy, v.xy, v.z, v3.wz ; Partial sin(x/2) and final cos(x/2)
+MAD v.xy, v.xy, v.z, v3.wz ; 
+```
+
+Partial sin(x/2) and final cos(x/2):
+
+```cpp
 MUL v.x, v.x, v1.w ; sin(x/2)
 MUL v.xy, v.xy, v.x ; compute sin(x/2)*sin(x/2) and sin(x/2)*cos(x/2)
 ADD v.xy, v.xy, v.xy ; 2*sin(x/2)*sin(x/2) and 2*sin(x/2)*cos(x/2)
@@ -96,7 +113,7 @@ WriteResult(v, DST);
 
 If an application must compute SINCOS for an arbitrary angle, the angle can be mapped to the range -Pi...+Pi by using the following macro (r0.x holds the original angle):
 
-```cpp
+```macro
 def c0, Pi, 0.5f, 2*Pi, 1/(2*Pi)
 mad r0.x, r.x, c0.w, c0.y
 frc r0.x, r0.x
@@ -108,9 +125,9 @@ mad r0.x, r0.x, c0.z, -c0.x
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

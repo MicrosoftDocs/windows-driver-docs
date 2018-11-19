@@ -1,6 +1,5 @@
 ---
 title: OID_QOS_PARAMETERS
-author: windows-driver-content
 description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier (OID) method request of OID_QOS_PARAMETERS to configure the local NDIS Quality of Service (QoS) parameters on a network adapter.
 ms.assetid: 1CA97C8A-8F5B-4AB2-B68E-DF1FA772C08F
 ms.date: 08/08/2017
@@ -16,18 +15,18 @@ The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure.
 
-**Note**  This OID method request is mandatory for miniport drivers that support NDIS QoS for the IEEE 802.1 Data Center Bridging (DCB) interface.
+**Note**  This OID method request is mandatory for miniport drivers that support NDIS QoS for the IEEE 802.1 Data Center Bridging (DCB) interface.
 
- 
+
 
 Remarks
 -------
 
 Miniport drivers obtain the local NDIS QoS parameters through an OID method request of OID\_QOS\_PARAMETERS. These parameters define how the network adapter prioritizes transmit, or *egress*, packets. For more information about these parameters, see [Overview of NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh440130).
 
-**Note**  Only the DCB component can issue an OID method request of OID\_QOS\_PARAMETERS. An overlying protocol or filter driver must not issue this OID. For more information on the DCB component, see [NDIS QoS Architecture for Data Center Bridging](https://msdn.microsoft.com/library/windows/hardware/hh451627).
+**Note**  Only the DCB component can issue an OID method request of OID\_QOS\_PARAMETERS. An overlying protocol or filter driver must not issue this OID. For more information on the DCB component, see [NDIS QoS Architecture for Data Center Bridging](https://msdn.microsoft.com/library/windows/hardware/hh451627).
 
- 
+
 
 The DCB component issues an OID\_QOS\_PARAMETERS request under the following conditions:
 
@@ -57,17 +56,13 @@ When the miniport driver handles the OID method request of OID\_QOS\_PARAMETERS,
 
         For example, the miniport driver can override an unconfigured local QoS parameter with its proprietary settings for the QoS parameter that is defined by the IHV. If there are no proprietary settings for local QoS parameters that are not specified with an **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CONFIGURED** flag, the driver must disable the use of these QoS parameters on the network adapter.
 
-        **Note**  The driver can also override configured local QoS parameters if they compromise the QoS parameters used by protocols or technologies that are enabled on the network adapter. For example, the driver can override the local QoS parameters if the network adapter is enabled for remote boot through the Fibre Channel over Ethernet (FCoE) protocol.
-
-         
+        **Note**  The driver can also override configured local QoS parameters if they compromise the QoS parameters used by protocols or technologies that are enabled on the network adapter. For example, the driver can override the local QoS parameters if the network adapter is enabled for remote boot through the Fibre Channel over Ethernet (FCoE) protocol.
 
     For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](https://msdn.microsoft.com/library/windows/hardware/hh706282).
 
-    For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh464015).
+For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh464015).
 
-    **Note**  Overriding the local QoS parameters should not cause the miniport driver to fail the OID method request of OID\_QOS\_PARAMETERS.
-
-     
+**Note**  Overriding the local QoS parameters should not cause the miniport driver to fail the OID method request of OID\_QOS\_PARAMETERS.
 
 For more information on how the miniport driver manages the local QoS parameters, see [Setting Local NDIS QoS Parameters](https://msdn.microsoft.com/library/windows/hardware/hh440225).
 
@@ -93,7 +88,7 @@ The miniport driver returns one of the following status codes.
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_PENDING</p></td>
-<td><p>The OID request is pending completion. When the miniport driver calls [<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622), NDIS will pass the final status code and results to the OID request completion handler of the caller after the request is completed.</p></td>
+<td><p>The OID request is pending completion. When the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a>, NDIS will pass the final status code and results to the OID request completion handler of the caller after the request is completed.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -101,11 +96,11 @@ The miniport driver returns one of the following status codes.
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more members of the [<strong>NDIS_QOS_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure contain incorrect values.</p></td>
+<td><p>One or more members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451640" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451640)"><strong>NDIS_QOS_PARAMETERS</strong></a> structure contain incorrect values.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than <strong>sizeof</strong>([<strong>NDIS_QOS_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451640)). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than <strong>sizeof</strong>(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451640" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451640)"><strong>NDIS_QOS_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -114,7 +109,7 @@ The miniport driver returns one of the following status codes.
 </tbody>
 </table>
 
- 
+
 
 Requirements
 ------------
@@ -150,9 +145,9 @@ Requirements
 
 [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439812)
 
- 
 
- 
+
+
 
 
 

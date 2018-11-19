@@ -1,6 +1,5 @@
 ---
 title: Supporting D3cold in a Driver
-author: windows-driver-content
 description: Starting with Windows 8, the D3 (off) device power state is divided into two distinct substates, D3hot and D3cold.
 ms.assetid: D085820E-EDAC-4353-8500-207F77D9CC1F
 ms.localizationpriority: medium
@@ -42,29 +41,29 @@ The following topics contain more information about supporting D3cold in a devic
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Enabling Transitions to D3cold](enabling-transitions-to-d3cold.md)</p></td>
+<td><p><a href="enabling-transitions-to-d3cold.md" data-raw-source="[Enabling Transitions to D3cold](enabling-transitions-to-d3cold.md)">Enabling Transitions to D3cold</a></p></td>
 <td><p>All versions of Windows enable a device to be in D3cold while the computer is sleeping (in one of the system low-power states, S1 through S4). Before the computer exits S0, the function drivers, bus drivers, and filter drivers work together to move the device to D3hot. When the computer enters the low-power Sx state, this transition has the side effect of moving the device from D3hot to D3cold.</p></td>
 </tr>
 <tr class="even">
-<td><p>[D3cold Capabilities of a Device](d3cold-capabilities-of-a-device.md)</p></td>
+<td><p><a href="d3cold-capabilities-of-a-device.md" data-raw-source="[D3cold Capabilities of a Device](d3cold-capabilities-of-a-device.md)">D3cold Capabilities of a Device</a></p></td>
 <td><p>Before the driver that is the power policy owner (PPO) for a device enables the device to enter D3cold (when the computer is to remain in S0), the driver must verify that the device will be responsive and continue to operate correctly after the device enters D3cold.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface](using-guid-d3cold-support-interface.md)</p></td>
-<td><p>Starting with Windows 8, drivers can call the routines in the [GUID_D3COLD_SUPPORT_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are [<em>SetD3ColdSupport</em>](https://msdn.microsoft.com/library/windows/hardware/hh967716) and [<em>GetIdleWakeInfo</em>](https://msdn.microsoft.com/library/windows/hardware/hh967712).</p></td>
+<td><p><a href="using-guid-d3cold-support-interface.md" data-raw-source="[Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface](using-guid-d3cold-support-interface.md)">Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface</a></p></td>
+<td><p>Starting with Windows 8, drivers can call the routines in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967714" data-raw-source="[GUID_D3COLD_SUPPORT_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714)">GUID_D3COLD_SUPPORT_INTERFACE</a> interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are <a href="https://msdn.microsoft.com/library/windows/hardware/hh967716" data-raw-source="[&lt;em&gt;SetD3ColdSupport&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh967716)"><em>SetD3ColdSupport</em></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh967712" data-raw-source="[&lt;em&gt;GetIdleWakeInfo&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh967712)"><em>GetIdleWakeInfo</em></a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Surprise Wake-Up](surprise-wake-up.md)</p></td>
+<td><p><a href="surprise-wake-up.md" data-raw-source="[Surprise Wake-Up](surprise-wake-up.md)">Surprise Wake-Up</a></p></td>
 <td><p>A surprise wake-up is an unexpected transition to D0. After a device enters D3cold, it might experience a surprise wake-up as a side effect when the driver for another device on the same power rail requests a transition from D3cold to D0. The driver for the first device must receive notification of the surprise wake-up to prevent the device from remaining in an uninitialized D0 state.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

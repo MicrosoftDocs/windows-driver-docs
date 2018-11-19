@@ -27,9 +27,9 @@ Service activation refers to the process of activating the MB service subscripti
 
 For more information about service detection and activation, see [OID\_WWAN\_SERVICE\_ACTIVATION](https://msdn.microsoft.com/library/windows/hardware/ff569835).
 
- 
+ 
 
- 
+ 
 
 
 

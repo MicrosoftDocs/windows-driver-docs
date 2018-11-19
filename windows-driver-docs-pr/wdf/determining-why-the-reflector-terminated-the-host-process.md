@@ -1,6 +1,5 @@
 ---
 title: Determining Why the Reflector Terminated the Host Process
-author: windows-driver-content
 description: This topic describes how you can analyze why the reflector terminated the driver host process (WUDFHost.exe).
 ms.assetid: c80b117b-597a-494a-bc28-5a918d2a9279
 keywords:
@@ -27,7 +26,7 @@ For many crashes, dump file details are sufficient to determine why the terminat
 
     **Note**  Starting in UMDF 2.15, the log directory is *%ProgramData%*\\Microsoft\\WDF.
 
-     
+     
 
 2.  Load the latest .dmp file into the debugger by using the following command:
     ```cpp
@@ -52,9 +51,9 @@ Once you have established a connection, display the outstanding IRPs by using th
 -   If your driver has not completed a canceled IRP quickly, determine which IRP was canceled and why it has not completed.
 -   If a cleanup or close IRP is pending, determine why the IRP is taking a long time to process.
 
- 
+ 
 
- 
+ 
 
 
 

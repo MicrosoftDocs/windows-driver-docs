@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG
-author: windows-driver-content
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG object identifier (OID). 
 ms.assetid: 29CB74B1-8D7F-4EC2-AAAC-93D454824031
 keywords:

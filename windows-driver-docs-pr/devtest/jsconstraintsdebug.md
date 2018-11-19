@@ -22,12 +22,12 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see [Windows Driver Kit downloads](http://go.microsoft.com/fwlink/p/?LinkId=808351).</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=808351" data-raw-source="[Windows Driver Kit downloads](http://go.microsoft.com/fwlink/p/?LinkId=808351)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
@@ -79,7 +79,7 @@ Elevated privileges are required to enable debugging of JS functions. To run in 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="JavaScript_debugger_statements"></span><span id="javascript_debugger_statements"></span><span id="JAVASCRIPT_DEBUGGER_STATEMENTS"></span>JavaScript debugger statements
 
@@ -138,11 +138,11 @@ JSConstraintsDebug <PrinterName> <PrintTicket> [MergePrintTicket] [Constraints]
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Specifying a constraints file with the Constraints parameter will overwrite existing source code in the targeted driver.
 
- 
+ 
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -165,9 +165,9 @@ Test merge and validate operations between two custom print tickets.
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
 
- 
+ 
 
- 
+ 
 
 
 

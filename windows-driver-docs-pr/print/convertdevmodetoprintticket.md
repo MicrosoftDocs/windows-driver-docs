@@ -1,6 +1,5 @@
 ---
 title: ConvertDevModeToPrintTicket overview
-author: windows-driver-content
 description: The ConvertDevModeToPrintTicket method is called for each print driver plug-in that was installed.
 ms.assetid: 71387d8b-60ce-4deb-a20b-9d7b0b7be230
 keywords:
@@ -18,9 +17,9 @@ The following illustration shows the order of the calls to IPrintOemPrintTicketP
 
 ![convertdevmodetoprintticket calling sequence](images/ptpcdm2pt-uml.gif)
 
- 
+ 
 
- 
+ 
 
 
 

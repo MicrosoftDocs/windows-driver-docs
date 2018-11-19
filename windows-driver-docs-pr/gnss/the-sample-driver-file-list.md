@@ -1,6 +1,5 @@
 ---
 title: Geolocation sample driver file list
-author: windows-driver-content
 description: The source file of the geolocation driver sample includes the following categories of files.
 ms.assetid: 8A9A1102-921B-40FF-94F2-FA9E3C1CE662
 ms.date: 04/20/2017
@@ -43,7 +42,7 @@ The following table describes the general files that are common to a UMDF sensor
 | SensorsGeolocationDriverSample.rc  | Contains definitions for resources that the driver requires, such as file type, file description string, file version, and original file name.                                                                             |
 | Sources                            | Contains a series of macro definitions that are recognized by the Build utility                                                                                                                                            |
 
- 
+ 
 
 The following table lists the files that support the simulated geolocation sensor that is supported by the sample driver.
 
@@ -53,7 +52,7 @@ The following table lists the files that support the simulated geolocation senso
 | Geolocation.cpp | Contains an implementation of the CGeolocation class. The methods in this class initialize the simulated sensor, retrieve readable properties, and set writable properties. |
 | Geolocation.h   | Contains the definition of the CGeolocation class                                                                                                                           |
 
- 
+ 
 
 ## Related topics
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  

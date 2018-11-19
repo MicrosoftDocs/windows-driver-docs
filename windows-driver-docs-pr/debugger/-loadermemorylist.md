@@ -3,7 +3,6 @@ title: loadermemorylist
 description: The loadermemorylist extension displays the memory allocation list that the Windows boot loader passes to Windows.
 ms.assetid: 3e5dff7a-ea8f-4029-93e3-7c160487e968
 keywords: ["OSLOADER", "loadermemorylist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +52,7 @@ Specifies the address of a list header.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +61,9 @@ This extension is designed to be used at the beginning of the system boot proces
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

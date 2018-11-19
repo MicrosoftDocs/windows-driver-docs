@@ -1,6 +1,5 @@
 ---
 title: Driver-Specific Bins
-author: windows-driver-content
 description: Driver-Specific Bins
 ms.assetid: 4c014e64-9e82-4058-9ec9-51769102f815
 keywords:
@@ -36,9 +35,9 @@ The preceding code example results in the following two queries. Recall that an 
 \Printer.Finishing.OutputBins.BBB:Level
 ```
 
- 
+ 
 
- 
+ 
 
 
 

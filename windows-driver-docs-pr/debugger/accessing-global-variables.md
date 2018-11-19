@@ -3,7 +3,6 @@ title: Accessing Global Variables
 description: Accessing Global Variables
 ms.assetid: 81daf418-d3cf-413a-8ee0-790b0c0f86c0
 keywords: ["global variables", "global variables, accessing"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -46,15 +45,15 @@ To change the value of `MyCounter` to decimal 83, use the following command.
 0:000> ed MyCounter 83 
 ```
 
-This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
+This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
 
 ```dbgcmd
 0:000> dd MyCounter L1 0012fedc  00000053
 ```
 
- 
+ 
 
- 
+ 
 
 
 

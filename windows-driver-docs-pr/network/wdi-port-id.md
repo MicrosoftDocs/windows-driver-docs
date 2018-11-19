@@ -1,6 +1,5 @@
 ---
 title: WDI_PORT_ID
-author: windows-driver-content
 description: This topic describes the WDI_PORT_ID data type for WDI miniport drivers.
 ms.assetid: 16385F87-E3BE-4CCC-8E40-C4AAEA399964
 keywords:

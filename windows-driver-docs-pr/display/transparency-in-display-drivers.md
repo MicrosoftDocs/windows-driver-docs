@@ -19,9 +19,9 @@ If the display hardware supports transparency, the display driver should impleme
 
 To reduce the cost of reading from video memory, drivers should implement this function when both the source and destination surfaces are in video memory. Drivers should let GDI process transparent bit-block transfers from system memory to video memory, and let GDI handle stretched bit-block transfers as well.
 
- 
+ 
 
- 
+ 
 
 
 

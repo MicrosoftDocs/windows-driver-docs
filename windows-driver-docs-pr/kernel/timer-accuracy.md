@@ -1,6 +1,5 @@
 ---
 title: Timer Accuracy
-author: windows-driver-content
 description: A system timer routine typically enables the caller to specify either an absolute or a relative expiration time for a timer.
 ms.assetid: CA29DC02-1AEA-4A13-B2D6-8C8052E21EDB
 ms.localizationpriority: medium
@@ -22,9 +21,9 @@ Starting with Windows 8, [**KeDelayExecutionThread**](https://msdn.microsoft.co
 
 If the system time changes before a timer expires, a relative timer is not affected but the system adjusts each absolute timer. A relative timer always expires after the specified number of time units elapse, regardless of the absolute system time. An absolute timer expires at a specific system time, so a change in the system time changes the wait duration of an absolute timer.
 
- 
+ 
 
- 
+ 
 
 
 

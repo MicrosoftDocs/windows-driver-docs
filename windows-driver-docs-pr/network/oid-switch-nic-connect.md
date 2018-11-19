@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_CONNECT
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_CONNECT to notify underlying extensible switch extensions that a network connection between an extensible switch port and a network adapter is completely established. The protocol edge previously notified extensions that this connection is being established when it issued an OID set request of OID_SWITCH_NIC_CREATE.
 ms.assetid: 98A4AD28-2716-40DD-AE46-70969A23FAB7
 ms.date: 08/08/2017
@@ -41,7 +40,7 @@ When it receives the OID set request of OID\_SWITCH\_NIC\_CONNECT, the extension
 
 **Note**  The extension must not issue its own OID set requests of OID\_SWITCH\_NIC\_CONNECT.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -68,7 +67,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -108,9 +107,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

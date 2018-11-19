@@ -1,6 +1,5 @@
 ---
 title: Using WDF to Develop a Driver
-author: windows-driver-content
 description: This topic provides a high-level overview of the framework objects you'll use to develop a Kernel-Mode Driver Framework (KMDF) driver.
 ms.assetid: 421b7eb8-11d3-4a37-8ae8-e2d3d216c9c7
 keywords:
@@ -69,9 +68,9 @@ When you create a WDF driver, you will typically do the following:
 
     The framework provides additional objects that your driver can use. For more information about these objects, see [WDF Support Objects](wdf-support-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

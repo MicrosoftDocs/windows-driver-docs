@@ -31,11 +31,11 @@ DEFINE_DEVPROPKEY(DEVPROPKEYStuctureName, 0xde5c254e, 0xab1c, 0xeffd, 0x80, 0x20
 
 **Note**   The system-defined property key categories are reserved for system use only.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

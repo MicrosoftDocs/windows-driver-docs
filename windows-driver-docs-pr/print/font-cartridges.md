@@ -1,6 +1,5 @@
 ---
 title: Font Cartridges
-author: windows-driver-content
 description: Font Cartridges
 ms.assetid: bc92e2eb-ea75-4f0f-85b7-1433d57401f3
 keywords:
@@ -30,15 +29,15 @@ If your printer accepts font cartridges, cartridges can be described by \***Font
 </tbody>
 </table>
 
- 
+ 
 
 where *CartridgeName* is a text string representing the name of the cartridge and *FontCartridgeAttributes* is a set of one or more [font cartridge attributes](font-cartridge-attributes.md).
 
 Alternatively, the fonts supplied by font cartridges can be specified using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Typically, the most commonly supplied font cartridges are described in a GPD file, while less commonly-used cartridges are specified with .uff files.
 
- 
+ 
 
- 
+ 
 
 
 

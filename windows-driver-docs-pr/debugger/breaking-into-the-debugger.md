@@ -3,7 +3,6 @@ title: Breaking Into the Debugger
 description: Breaking Into the Debugger
 ms.assetid: 4fec7170-7480-4a8a-b060-1c8a8c3fb9dc
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
-ms.author: domars
 ms.date: 08/16/2017
 ms.localizationpriority: medium
 ---
@@ -51,9 +50,9 @@ The **ASSERT** macro causes the debugger to display the failed expression and it
 
 For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

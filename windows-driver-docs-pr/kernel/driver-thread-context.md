@@ -1,6 +1,5 @@
 ---
 title: Driver Thread Context
-author: windows-driver-content
 description: Driver Thread Context
 ms.assetid: 8795811d-a5f6-4f90-9fa0-edd4b37fd269
 keywords: ["driver thread context WDK kernel", "thread context WDK kernel"]
@@ -30,9 +29,9 @@ While the lowest-level driver shown in the [Processing IRPs in Layered Drivers](
 
 Most kernel-mode drivers, like the physical device driver in the [Processing IRPs in Layered Drivers](example-i-o-request---the-details.md#ddk-example-i-o-request---the-details-kg) figure, execute in an arbitrary thread context: that of whatever thread happens to be current when they are called to process an IRP. Consequently, drivers usually maintain state about their I/O operations and the devices they service in a driver-defined part of their device objects, called a *device extension*.
 
- 
+ 
 
- 
+ 
 
 
 

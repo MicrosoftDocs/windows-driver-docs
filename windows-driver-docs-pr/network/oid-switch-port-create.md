@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_PORT_CREATE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_CREATE to notify extensible switch extensions about the creation of an extensible switch port.
 ms.assetid: 579D51CD-0594-4A06-998E-3886E7325D97
 ms.date: 08/08/2017
@@ -41,7 +40,7 @@ The extensible switch extension must follow these guidelines for handling OID se
 
 **Note**  Extensions must not issue OID set requests of OID\_SWITCH\_PORT\_CREATE.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -76,11 +75,11 @@ If the extension completes the OID set request of OID\_SWITCH\_PORT\_CREATE, it 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  If the extension completes the OID set request, it must not return NDIS\_STATUS\_SUCCESS.
 
- 
+ 
 
 If the extension does not complete the OID set request of OID\_SWITCH\_PORT\_CREATE, the request is completed by the underlying miniport edge of the extensible switch. The underlying miniport edge returns the following status code for this OID set request.
 
@@ -103,7 +102,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_PORT\_CRE
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -141,9 +140,9 @@ Requirements
 
 [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](oid-switch-port-property-enum.md)
 
- 
+ 
 
- 
+ 
 
 
 

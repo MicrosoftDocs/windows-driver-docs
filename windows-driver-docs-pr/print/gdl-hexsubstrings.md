@@ -1,6 +1,5 @@
 ---
 title: GDL HexSubStrings
-author: windows-driver-content
 description: GDL HexSubStrings
 ms.assetid: 7451fd1f-a765-486a-bd90-bc01eac2c388
 keywords:
@@ -23,9 +22,9 @@ If you want to create a quoted string that ends with the percent sign (%), the p
 
 The HexSubString context can appear only within a quoted string context. Comments can appear within a HexSubString context.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: .while
 description: The .while token behaves like the while keyword in C.
 ms.assetid: bc38357d-b17a-4a26-840e-1b4b90986154
 keywords: [".while Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -41,9 +40,9 @@ Remarks
 
 The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
- 
+ 
 
- 
+ 
 
 
 

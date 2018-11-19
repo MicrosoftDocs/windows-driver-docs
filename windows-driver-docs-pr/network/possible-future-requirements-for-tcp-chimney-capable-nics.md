@@ -28,9 +28,9 @@ We strongly recommend, although it is not yet required, that vendors implement t
 
 -   [Silly Window Syndrome (SWS) prevention timer](silly-window-syndrome-prevention-timer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,15 +25,15 @@ The user-mode display driver is not loaded into multiple processes simultaneousl
 
 **Note**   Two or more threads that are using the same display device can never run in the user-mode display driver simultaneously.
 
- 
+ 
 
 Like the display miniport driver, the user-mode display driver is not required to use any global data structures, because Direct3D devices are independent and state and resources from each device do not affect the other devices. If the user-mode display driver must maintain global cross-device data structures (such as, for a custom system memory heap manager), it must arbitrate access by using its own mechanisms. Such global data structures that the driver manages are strongly discouraged. Because the Direct3D runtime opens an independent "view" of the shared resource in each user-mode display device that must access the resource, cross-process or cross-device resources should not be handled differently from resources that a single process or device use. Lifetime and other management are handled by the DirectX graphics kernel subsystem (*Dxgkrnl.sys*).
 
 On multiple-processor computers, the Direct3D runtime might call a user-mode display driver from a worker thread instead of from the main application thread. This multiple-processor optimization is transparent to the user-mode display driver. When the runtime uses multiple-processor optimization, it still ensures that only one thread that references a particular device runs in the driver at any given time.
 
- 
+ 
 
- 
+ 
 
 
 

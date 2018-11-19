@@ -1,6 +1,5 @@
 ---
 title: Adding New Property Sheet Pages
-author: windows-driver-content
 description: Adding New Property Sheet Pages
 ms.assetid: ec4303e9-889c-41ee-8872-ddefdc906eb2
 keywords:
@@ -29,9 +28,9 @@ If you want to add new pages to the property sheets provided by the printer inte
 
 If you implement one of these methods, you will typically also supply a [**\_CPSUICALLBACK**](https://msdn.microsoft.com/library/windows/hardware/ff564313)-typed callback function to handle user modifications. This callback function must call [**IPrintOemDriverUI::DrvUpdateUISetting**](https://msdn.microsoft.com/library/windows/hardware/ff553115) to inform the driver when the value associated with a user interface setting has been modified, if the setting's value is stored in the driver's [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure or registry keys.
 
- 
+ 
 
- 
+ 
 
 
 

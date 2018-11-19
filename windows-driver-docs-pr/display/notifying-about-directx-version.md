@@ -23,9 +23,9 @@ In a D3DGDI2\_TYPE\_GETFORMATCOUNT query, the DirectX 9.0 driver is notified of 
 
 In a D3DGDI2\_TYPE\_GETFORMAT query, the DirectX 9.0 driver is notified of the runtime version in the **dwSize** member of the DDPIXELFORMAT structure that is specified in the **format** member of the [**DD\_GETFORMATDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551569) structure. The **dwSize** member is also set to DD\_RUNTIME\_VERSION.
 
- 
+ 
 
- 
+ 
 
 
 

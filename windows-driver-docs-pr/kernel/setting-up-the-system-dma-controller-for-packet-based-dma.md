@@ -1,6 +1,5 @@
 ---
 title: Setting Up the System DMA Controller for Packet-Based DMA
-author: windows-driver-content
 description: Setting Up the System DMA Controller for Packet-Based DMA
 ms.assetid: 3a646169-1ea3-4844-b771-d08f4ddec460
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "AllocateAdapterChannel", "MapTransfer"]
@@ -68,9 +67,9 @@ The context information each driver should maintain about its DMA transfers depe
 
 When the requested transfer is complete, or if the driver must return an error status for the IRP, the driver should call [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) promptly to release the system DMA controller for other drivers and this driver to use.
 
- 
+ 
 
- 
+ 
 
 
 

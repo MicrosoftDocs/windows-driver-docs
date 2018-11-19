@@ -44,7 +44,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>An 8-bit unsigned integer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>BRUSHOBJ*</p></td>
+<td align="left"><p>BRUSHOBJ<em></p></td>
 <td align="left"><p>pbo</p></td>
 <td align="left"><p>A pointer to a brush object.</p></td>
 </tr>
@@ -54,7 +54,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A clipline object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>CLIPOBJ*</p></td>
+<td align="left"><p>CLIPOBJ</em></p></td>
 <td align="left"><p>pco</p></td>
 <td align="left"><p>A pointer to a clipping object.</p></td>
 </tr>
@@ -89,7 +89,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A set of 32-bit flags.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>FONTOBJ*</p></td>
+<td align="left"><p>FONTOBJ<em></p></td>
 <td align="left"><p>pfo</p></td>
 <td align="left"><p>A pointer to a font object.</p></td>
 </tr>
@@ -129,12 +129,12 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A 32-bit quantity, whose lower 16 bits define foreground and background mix modes.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>PALOBJ*</p></td>
+<td align="left"><p>PALOBJ</em></p></td>
 <td align="left"><p>ppalo</p></td>
 <td align="left"><p>A pointer to a palette object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>PATHOBJ*</p></td>
+<td align="left"><p>PATHOBJ<em></p></td>
 <td align="left"><p>ppo</p></td>
 <td align="left"><p>A pointer to a path object.</p></td>
 </tr>
@@ -184,12 +184,12 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A structure that consists of {LONG <strong>cx</strong>, <strong>cy</strong>;}.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>STROBJ*</p></td>
+<td align="left"><p>STROBJ</em></p></td>
 <td align="left"><p>pstro</p></td>
 <td align="left"><p>A pointer to a text string object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>SURFOBJ*</p></td>
+<td align="left"><p>SURFOBJ<em></p></td>
 <td align="left"><p>pso</p></td>
 <td align="left"><p>A pointer to a surface object.</p></td>
 </tr>
@@ -204,7 +204,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A 16-bit unsigned integer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>XFORMOBJ*</p></td>
+<td align="left"><p>XFORMOBJ</em></p></td>
 <td align="left"><p>pxo</p></td>
 <td align="left"><p>A pointer to a coordinate transform object.</p></td>
 </tr>
@@ -216,7 +216,7 @@ The data types defined in the following table appear in the device driver interf
 </tbody>
 </table>
 
- 
+ 
 
 The parameter prefixes listed in the next table are used to modify variable name prefixes in accordance with their usage.
 
@@ -247,11 +247,11 @@ The parameter prefixes listed in the next table are used to modify variable name
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

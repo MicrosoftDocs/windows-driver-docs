@@ -1,6 +1,5 @@
 ---
 title: Capture, Preview, and Still Category
-author: windows-driver-content
 description: Capture, Preview, and Still Category
 ms.assetid: b82cc3b6-1cea-4864-9501-95919f05455f
 keywords:
@@ -38,7 +37,7 @@ The capture, preview, and still stream pin categories are almost identical in te
 
 **Note**  : Because many cameras produce only a single output stream, Microsoft DirectShow includes a Smart Tee filter that splits a single stream into a Capture and a Preview stream. Therefore, minidrivers for cameras that produce only a single stream should not internally duplicate their data streams to produce a preview stream.
 
- 
+ 
 
 When specifying **PINNAME\_VIDEO\_CAPTURE**, or **PINNAME\_VIDEO\_PREVIEW**, or **PINNAME\_VIDEO\_STILL** pins, use the information listed in the following table.
 
@@ -56,17 +55,17 @@ When specifying **PINNAME\_VIDEO\_CAPTURE**, or **PINNAME\_VIDEO\_PREVIEW**, or 
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p>[<strong>KS_DATARANGE_VIDEO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567628) (frames only)</p>
-<p>[<strong>KS_DATARANGE_VIDEO2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567629) (fields or frames, bob or weave settings)</p>
-<p>[<strong>KS_DATARANGE_MPEG1_VIDEO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567353)</p>
-<p>[<strong>KS_DATARANGE_MPEG2_VIDEO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567362)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567628" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567628)"><strong>KS_DATARANGE_VIDEO</strong></a> (frames only)</p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567629" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567629)"><strong>KS_DATARANGE_VIDEO2</strong></a> (fields or frames, bob or weave settings)</p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567353" data-raw-source="[&lt;strong&gt;KS_DATARANGE_MPEG1_VIDEO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567353)"><strong>KS_DATARANGE_MPEG1_VIDEO</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567362" data-raw-source="[&lt;strong&gt;KS_DATARANGE_MPEG2_VIDEO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567362)"><strong>KS_DATARANGE_MPEG2_VIDEO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
 <td><p>KS_DATAFORMAT_VIDEO (frames only)</p>
 <p>KS_DATAFORMAT_VIDEO2 (fields or frames, bob or weave settings)</p>
-<p>[<strong>KS_MPEG1VIDEOINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567658) (for MPEG1)</p>
-<p>[<strong>KS_MPEGVIDEOINFO2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567667) (for MPEG2)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567658" data-raw-source="[&lt;strong&gt;KS_MPEG1VIDEOINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567658)"><strong>KS_MPEG1VIDEOINFO</strong></a> (for MPEG1)</p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567667" data-raw-source="[&lt;strong&gt;KS_MPEGVIDEOINFO2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567667)"><strong>KS_MPEGVIDEOINFO2</strong></a> (for MPEG2)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Major Format GUID</strong></p></td>
@@ -83,12 +82,12 @@ When specifying **PINNAME\_VIDEO\_CAPTURE**, or **PINNAME\_VIDEO\_PREVIEW**, or 
 </tr>
 <tr class="even">
 <td><p><strong>Extended Header Size</strong></p></td>
-<td><p>[<strong>KS_FRAME_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567645) if not an MPEG format. Zero if an MPEG format.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567645" data-raw-source="[&lt;strong&gt;KS_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567645)"><strong>KS_FRAME_INFO</strong></a> if not an MPEG format. Zero if an MPEG format.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Required Property Sets</strong></p></td>
-<td><p>[KSPROPSETID_Connection](https://msdn.microsoft.com/library/windows/hardware/ff566568)</p>
-<p>[PROPSETID_VIDCAP_DROPPEDFRAMES](https://msdn.microsoft.com/library/windows/hardware/ff567806)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566568" data-raw-source="[KSPROPSETID_Connection](https://msdn.microsoft.com/library/windows/hardware/ff566568)">KSPROPSETID_Connection</a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567806" data-raw-source="[PROPSETID_VIDCAP_DROPPEDFRAMES](https://msdn.microsoft.com/library/windows/hardware/ff567806)">PROPSETID_VIDCAP_DROPPEDFRAMES</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Required Event Sets</strong></p></td>
@@ -106,11 +105,11 @@ When specifying **PINNAME\_VIDEO\_CAPTURE**, or **PINNAME\_VIDEO\_PREVIEW**, or 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

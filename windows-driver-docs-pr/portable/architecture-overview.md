@@ -31,9 +31,9 @@ The driver receives messages from the WUDF reflector (this is not shown in the d
 
 WPD drivers may communicate with their devices by going through a kernel-mode driver, typically accessed via Win32 file operations (such as CreateFile, ReadFile, WriteFile, and so on). For the common buses, Microsoft will provide standard kernel drivers for vendors to use, which will allow vendors to ship a user-mode-only driver solution.
 
- 
+ 
 
- 
+ 
 
 
 

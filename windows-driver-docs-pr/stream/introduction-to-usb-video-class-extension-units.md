@@ -1,6 +1,5 @@
 ---
 title: Introduction to USB Video Class Extension Units
-author: windows-driver-content
 description: Introduction to USB Video Class Extension Units
 ms.assetid: a46feb97-771e-4efd-872e-4a4b0fb3b705
 keywords:
@@ -28,9 +27,9 @@ In Windows Vista and later releases, Vidcap.h is included as part of the Microso
 
 The Microsoft DirectShow documentation contains the corresponding reference pages. Globally unique identifier (GUID) types and some other USB-video-related constants are defined in Ksmedia.h. For more information, see [USB Video Class Properties](usb-video-class-properties.md) and [Kernel Streaming Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff560886).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ However, the **-tmf** parameter is required in order to direct Tracefmt to the s
 
 This command also uses the **-display** parameter, which displays the trace messages in the Command Prompt window in addition to writing them to a log file. In this case, because the **-o** parameter is omitted, the messages are written to the default log file, FmtFile.txt, in the local directory.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_CREATE_SWITCH
-author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID_NIC_SWITCH_CREATE_SWITCH to create a NIC switch on a network adapter.
 ms.assetid: 16FFC6A4-11A6-45A1-ABCF-8C1EBE3FD953
 ms.date: 08/08/2017
@@ -18,7 +17,7 @@ NDIS issues this OID method request to the miniport driver of the network adapte
 
 **Note**  Overlying drivers, such as protocol or filter drivers, cannot issue OID method requests of OID\_NIC\_SWITCH\_CREATE\_SWITCH to the PF miniport driver.
 
- 
+ 
 
 The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure.
 
@@ -39,7 +38,7 @@ When it receives the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, the
 
     **Note**  The default VPort is always created through an OID request of OID\_NIC\_SWITCH\_CREATE\_SWITCH and deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](oid-nic-switch-delete-switch.md). OID requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) and [OID\_NIC\_SWITCH\_DELETE\_VPORT](oid-nic-switch-delete-vport.md) are used for the creation and deletion of nondefault VPorts on the NIC switch.
 
-     
+     
 
 4.  The PF miniport driver that supports dynamic switch creation and configuration must enable SR-IOV virtualization on the switch by calling [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481). This call configures the **NumVFs** member and the **VF Enable** bit in the SR-IOV Extended Capability structure of the adapter's PCI Express (PCIe) configuration space.
 
@@ -47,7 +46,7 @@ When it receives the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, the
 
     **Note**  If the PF miniport driver supports static switch creation, it enables SR-IOV virtualization after it creates the switch when [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) is called.
 
-     
+     
 
 If the PF miniport driver successfully completes the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, it allows the following to occur:
 
@@ -83,11 +82,11 @@ The PF miniport driver returns one of the following status codes for the OID met
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451587" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451587)"><strong>NDIS_NIC_SWITCH_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_NIC_SWITCH_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451587)). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451587" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451587)"><strong>NDIS_NIC_SWITCH_PARAMETERS</strong></a>). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -96,7 +95,7 @@ The PF miniport driver returns one of the following status codes for the OID met
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -134,9 +133,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md)
 
- 
+ 
 
- 
+ 
 
 
 

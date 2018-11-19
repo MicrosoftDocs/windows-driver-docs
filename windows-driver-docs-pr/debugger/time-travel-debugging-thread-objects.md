@@ -1,20 +1,16 @@
 ---
 title: TTD Thread Objects
 description: This section describes the thread model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Thread Objects
 ## Description
 *TTD Thread* objects are used to give information about threads and their lifetime during a time travel trace.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | UniqueId | A unique ID for the thread across the trace. |
@@ -22,6 +18,7 @@ ms.localizationpriority: medium
 
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | LifeTime | A [TTD range object](time-travel-debugging-range-objects.md) that describes the lifetime of the thread. |

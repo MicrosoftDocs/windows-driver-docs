@@ -20,9 +20,9 @@ If you manufacture a portable device and require connectivity with Windows, you 
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

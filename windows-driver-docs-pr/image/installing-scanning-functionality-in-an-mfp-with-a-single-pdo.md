@@ -1,6 +1,5 @@
 ---
 title: Installing Scanning Functionality in an MFP with a Single PDO
-author: windows-driver-content
 description: Installing Scanning Functionality in an MFP with a Single PDO
 ms.assetid: 002ff319-42f9-4034-9bdd-c1e771ed2ba9
 ms.date: 04/20/2017
@@ -70,11 +69,11 @@ All kernel-mode portions must be installed by the original [**INF DDInstall Sect
 
 If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface (in addition to any other class device interfaces, such as the Print class device interface). The kernel-mode component enables an Image class device interface on the device's devnode by means of a call to the [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

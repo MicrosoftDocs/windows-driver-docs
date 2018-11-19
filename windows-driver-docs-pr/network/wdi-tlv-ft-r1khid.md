@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_FT_R1KHID
-author: windows-driver-content
 description: WDI_TLV_FT_R1KHID is an unused TLV.
 ms.assetid: E032EF3C-6028-4481-B41A-6B9377B9A88B
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

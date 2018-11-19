@@ -1,6 +1,5 @@
 ---
 title: Medium GUIDs
-author: windows-driver-content
 description: Medium GUIDs
 ms.assetid: 4209952c-0ba5-4359-b612-91529a0a46f1
 keywords:
@@ -61,11 +60,11 @@ For more information about mediums, including how to implement them, see the [AV
 
 **Note**  : When deriving a new minidriver from sample code in the Windows Driver Kit, you must generate new GUID values for the mediums to reflect the unique hardware topology of the device. Failure to do so can result in the mediums for one device colliding with the mediums that are defined for another device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

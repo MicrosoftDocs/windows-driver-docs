@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Construct Element
-author: windows-driver-content
 description: GDL Schema Construct Element
 ms.assetid: 46653504-4ce7-455c-a22a-a6032cbd6a3e
 keywords:
@@ -52,9 +51,9 @@ The preceding entry results in the following XML snapshot.
 
 A particular option is marked constrained depending on the supplied configuration and the set of constraints that are defined in the GDL instance data.
 
- 
+ 
 
- 
+ 
 
 
 

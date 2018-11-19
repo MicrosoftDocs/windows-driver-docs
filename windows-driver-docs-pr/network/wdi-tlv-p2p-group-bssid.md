@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_GROUP_BSSID
-author: windows-driver-content
 description: WDI_TLV_P2P_GROUP_BSSID is a TLV that contains the Group BSSID for local Wi-Fi Direct GO.
 ms.assetid: C9BC2209-DF72-4775-A3B5-EC37D404CFED
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/libr
 |---------------------------------------------------|------------------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | Specifies the Group BSSID for local Wi-Fi Direct GO. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

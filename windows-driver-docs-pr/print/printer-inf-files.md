@@ -1,6 +1,5 @@
 ---
 title: Printer INF Files
-author: windows-driver-content
 description: Printer INF Files
 ms.assetid: 33f1c836-0846-49d5-8ab5-baadf9e0678c
 keywords:
@@ -51,9 +50,9 @@ Also see the installation topics in the following section:
 
 [Customizing Print Spooler Components](print-spooler-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

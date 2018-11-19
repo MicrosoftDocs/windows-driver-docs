@@ -1,6 +1,5 @@
 ---
 title: Stream Categories
-author: windows-driver-content
 description: Stream Categories
 ms.assetid: dc2af282-4976-42d8-b07b-13b2a6dfb7d5
 keywords:
@@ -28,9 +27,9 @@ The stream category GUID and pin name GUID for a given video capture stream type
 
 The following subsections contain information about each of the different video capture stream categories. The stream category GUID and pin name GUID are described, as well as the structures that should be used to support the category. Required property set support is also listed for each category. The corresponding user-mode DirectShow type information is also listed for convenience.
 
- 
+ 
 
- 
+ 
 
 
 

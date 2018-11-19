@@ -2,6 +2,7 @@
 title: Driver flighting
 description: Driver flighting in the Windows Hardware Dev Center dashboard enables you to distribute your driver within defined Windows Insider rings, and provides automatic monitoring and evaluation.
 ms.date: 07/27/2018
+ms.topic: article
 ms.localizationpriority: medium
 ---
 
@@ -37,15 +38,16 @@ Once your account has been approved, your organization's administrators will be 
 ## How to promote a driver for driver flighting
 
 After being submitted to the Windows Hardware Dev Center Dashboard, you can promote your drivers for flighting with the following steps:
- 
+
 1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
 
 2. Select one or more driver promotion option to promote your driver for flighting, as described below:
 
-| Promotion Option                                                        | Description                                                                                                                              |
+|                            Promotion Option                             |                                                               Description                                                                |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Automatically deliver and install the driver during Windows Upgrade     | Marks the driver for delivery via Dynamic Update, enabling it to be delivered to applicable machines during an operating system upgrade. |
-| Automatically deliver and install the driver on all applicable systems. | Marks the driver as a Critical Update (CU), enabling it to be automatically installed via Windows Update.                                |
+|   Automatically deliver and install the driver during Windows Upgrade   | Marks the driver for delivery via Dynamic Update, enabling it to be delivered to applicable machines during an operating system upgrade. |
+| Automatically deliver and install the driver on all applicable systems. |                Marks the driver as a Critical Update (CU), enabling it to be automatically installed via Windows Update.                 |
+
 3. Complete the additional details required for promotion for flighting:
     1. The email address of the Microsoft sponsor you are working with for the promotion
     2. The business justification for promoting the publication request
@@ -54,7 +56,7 @@ After being submitted to the Windows Hardware Dev Center Dashboard, you can prom
 
 4. Select the appropriate statements that apply to your driver. These answers will improve the speed of the evaluation process:
     ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device](images/driver-flighting-statements.png)
-    
+
     > [!IMPORTANT] 
     > Please note the following:
     > * It is recommended to avoid requiring a reboot after driver installation. 

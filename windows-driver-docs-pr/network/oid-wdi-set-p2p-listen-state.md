@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_P2P_LISTEN_STATE
-author: windows-driver-content
 description: OID_WDI_SET_P2P_LISTEN_STATE sets the Wi-Fi Direct listen state on the port.
 ms.assetid: d488903b-ef64-44b6-b07a-70168a0ccfd8
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_P2P\_LISTEN\_STATE sets the Wi-Fi Direct listen state on the port
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 There are different levels of listen state, and the port is expected to adhere to concurrency requirements across ports.
 
@@ -30,7 +29,7 @@ If the adapter has a virtualized port operating on a non-social channel, the por
 
 **Note**  This property specifies a radio time slice requirement to the port, which may cause conflicts with other properties or tasks issued to the port.
 
- 
+ 
 
 ## Set property parameters
 
@@ -41,7 +40,7 @@ If the adapter has a virtualized port operating on a non-social channel, the por
 | [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://msdn.microsoft.com/library/windows/hardware/dn897869)   |                                | X        | The host’s desired listen channel when enabling the Wi-Fi Direct listen state. If this option is not specified, the port may select a listen channel on its own. |
 | [**WDI\_TLV\_P2P\_LISTEN\_DURATION**](https://msdn.microsoft.com/library/windows/hardware/dn897973) |                                |          | Cycle duration and listen time.                                                                                                                                  |
 
- 
+ 
 
 ## Set property results
 
@@ -71,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

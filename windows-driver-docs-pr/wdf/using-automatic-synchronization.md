@@ -1,6 +1,5 @@
 ---
 title: Using Automatic Synchronization
-author: windows-driver-content
 description: Using Automatic Synchronization
 ms.assetid: be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8
 keywords:
@@ -54,20 +53,20 @@ If your driver enables automatic synchronization of the callback functions that 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Queue object</p></td>
-<td align="left"><p>[Request handlers](request-handlers.md), [<em>EvtIoQueueState</em>](https://msdn.microsoft.com/library/windows/hardware/ff541771), [<em>EvtIoResume</em>](https://msdn.microsoft.com/library/windows/hardware/ff541779), [<em>EvtIoStop</em>](https://msdn.microsoft.com/library/windows/hardware/ff541788)</p></td>
+<td align="left"><p><a href="request-handlers.md" data-raw-source="[Request handlers](request-handlers.md)">Request handlers</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff541771" data-raw-source="[&lt;em&gt;EvtIoQueueState&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541771)"><em>EvtIoQueueState</em></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff541779" data-raw-source="[&lt;em&gt;EvtIoResume&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541779)"><em>EvtIoResume</em></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff541788" data-raw-source="[&lt;em&gt;EvtIoStop&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541788)"><em>EvtIoStop</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>File object</p></td>
-<td align="left"><p>All [callback functions](https://msdn.microsoft.com/library/windows/hardware/dn265638)</p></td>
+<td align="left"><p>All <a href="https://msdn.microsoft.com/library/windows/hardware/dn265638" data-raw-source="[callback functions](https://msdn.microsoft.com/library/windows/hardware/dn265638)">callback functions</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Request object</p></td>
-<td align="left"><p>[<em>EvtRequestCancel</em>](https://msdn.microsoft.com/library/windows/hardware/ff541817)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff541817" data-raw-source="[&lt;em&gt;EvtRequestCancel&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541817)"><em>EvtRequestCancel</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Optionally, the framework can also synchronize these callback functions with any interrupt, DPC, work-item, and timer object callback functions that your driver provides for the device (excluding the interrupt object's [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function). To enable this additional synchronization, the driver must set the **AutomaticSerialization** member of these objects' configuration structures to **TRUE**.
 
@@ -223,7 +222,7 @@ The following table shows the IRQL level at which the framework can call a drive
 </tbody>
 </table>
 
- 
+ 
 
 You can set the execution level to **WdfExecutionLevelPassive** or **WdfExecutionLevelDispatch** for driver, device, file, queue, timer, and general objects. For other objects, only **WdfExecutionLevelInheritFromParent** is allowed.
 
@@ -245,9 +244,9 @@ For DPC objects, and for timer objects that do not represent [passive-level time
 
 Also note that for timer objects that *do* represent passive-level timers, you can set the **AutomaticSerialization** member of the configuration structure to TRUE *only* if the parent device's execution level is set to **WdfExecutionLevelPassive**.
 
- 
+ 
 
- 
+ 
 
 
 

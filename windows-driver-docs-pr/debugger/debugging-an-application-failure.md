@@ -3,7 +3,6 @@ title: Debugging an Application Failure
 description: Debugging an Application Failure
 ms.assetid: c4118acb-2566-441a-8481-dee4bfdb03ba
 keywords: ["application failures"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ Critical section timeouts (or possible deadlocks) occur when one thread is waiti
 
 In-page I/O errors are almost always hardware failures. You can double-check the status code in ntstatus.h to verify.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -42,17 +42,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[NetworkConfiguration](networkconfiguration.md)</p></td>
-<td><p>The [NetworkConfiguration](networkconfiguration.md) element specifies the purchase and Internet mobile broadband profiles to be used.</p></td>
+<td><p><a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a></p></td>
+<td><p>The <a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a> element specifies the purchase and Internet mobile broadband profiles to be used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProvisioningEngine](provisioningengine.md)</p></td>
-<td><p>The [ProvisioningEngine](provisioningengine.md) element specifies trusted certificate values for Subject Name and Issuer Name.</p></td>
+<td><p><a href="provisioningengine.md" data-raw-source="[ProvisioningEngine](provisioningengine.md)">ProvisioningEngine</a></p></td>
+<td><p>The <a href="provisioningengine.md" data-raw-source="[ProvisioningEngine](provisioningengine.md)">ProvisioningEngine</a> element specifies trusted certificate values for Subject Name and Issuer Name.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -79,9 +79,9 @@ There are no parent elements.
 
 The MobileBroadbandInfo element is required.
 
- 
+ 
 
- 
+ 
 
 
 

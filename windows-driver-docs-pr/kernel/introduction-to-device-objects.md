@@ -1,6 +1,5 @@
 ---
 title: Introduction to Device Objects
-author: windows-driver-content
 description: Introduction to Device Objects
 ms.assetid: 310a2344-f3bc-4a7a-8e1e-63232ecd4cbe
 keywords: ["device objects WDK kernel , about device objects", "multiple device objects WDK kernel", "device stacks WDK kernel , about device stacks", "device extensions WDK kernel"]
@@ -40,9 +39,9 @@ The following figure illustrates the relationship between device objects and the
 
 The figure shows the members of the **DEVICE\_OBJECT** structure that are of interest to a driver writer. For more information about these members, see [Creating a Device Object](creating-a-device-object.md), [Initializing a Device Object](initializing-a-device-object.md), and [Properties of Device Objects](properties-of-device-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

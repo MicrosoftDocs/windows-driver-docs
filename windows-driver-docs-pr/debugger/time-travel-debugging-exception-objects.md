@@ -1,14 +1,10 @@
 ---
 title: TTD Exception Objects
 description: This section describes the exception model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 09/24/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Exception Objects
 ## Description
@@ -16,6 +12,7 @@ ms.localizationpriority: medium
 
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Type | Describes the type of exception. Possible values are "Software" and "Hardware". |
@@ -25,6 +22,7 @@ ms.localizationpriority: medium
 | RecordAddress | Where in memory you can find the record of the exception.  |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | Position | A [position object](time-travel-debugging-position-objects.md) that describes the position the exception occurred. |

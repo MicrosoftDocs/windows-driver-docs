@@ -1,6 +1,5 @@
 ---
 title: Implementing a Cancel Routine
-author: windows-driver-content
 description: Implementing a Cancel Routine
 ms.assetid: 243b623b-317c-4084-a753-940c91c4cc50
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines"]
@@ -39,9 +38,9 @@ All *Cancel* routines must follow these guidelines:
 -   Never call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with an IRP while holding a spin lock. Attempting to complete an IRP while holding a spin lock can cause deadlocks.
 
 
- 
+ 
 
- 
+ 
 
 
 

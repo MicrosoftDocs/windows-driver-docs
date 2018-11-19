@@ -3,7 +3,6 @@ title: Stack Unwind Information Not Available
 description: Stack Unwind Information Not Available
 ms.assetid: 82260f85-780b-4f30-bebd-62faed6efeeb
 keywords: ["Stack unwind information not available (warning)", "call stack, Stack unwind information not available (warning)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ To trace the call stack, the debugger examines the stack and analyzes the functi
 
 If this symbol information is not available, the debugger is forced to make a best guess about which frames are return addresses. This warning information is displayed to indicate the uncertain nature of the call stack after this point.
 
- 
+ 
 
- 
+ 
 
 
 

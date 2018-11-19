@@ -1,6 +1,5 @@
 ---
 title: RAW Data Type
-author: windows-driver-content
 description: RAW Data Type
 ms.assetid: f53264c1-97aa-42f0-8bab-76bf984f2c79
 keywords:
@@ -23,9 +22,9 @@ Postscript commands can be considered RAW data if the target printer supports Po
 
 For more information about the RAW data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

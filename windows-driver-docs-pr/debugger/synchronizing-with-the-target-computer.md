@@ -3,7 +3,6 @@ title: Synchronizing with the Target Computer
 description: Synchronizing with the Target Computer
 ms.assetid: bc9bbe35-6665-49ee-ba95-16ff03e25e96
 keywords: ["synchronizing with the target computer", "synchronizing with the target computer, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ The [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connecti
 
 The **.restart** command is most useful when you are performing [remote debugging through remote.exe](remote-debugging-through-remote-exe.md). (In this kind of debugging, it might be difficult to end and restart the debugger.) However, you cannot use **.restart** from a debugging client if you are performing remote debugging through the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

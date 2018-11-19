@@ -1,6 +1,5 @@
 ---
 title: WdfObjectAddCustomTypeWithData macro
-author: windows-driver-content
 description: The WdfObjectAddCustomTypeWithData macro associates a framework object with a custom type, and optionally associates this pair with a data buffer and event callback functions.
 ms.assetid: 237F9BAA-A2E2-4F20-B52E-8F093B326E45
 keywords:
@@ -21,11 +20,11 @@ Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS WdfObjectAddCustomTypeWithData(
-    _handle,
-    _type,
-    _data,
-    _cleanup,
-    _destroy
+    _handle,
+    _type,
+    _data,
+    _cleanup,
+    _destroy
 );
 ```
 
@@ -83,7 +82,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -105,7 +104,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -133,9 +132,9 @@ Requirements
 
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
- 
+ 
 
- 
+ 
 
 
 

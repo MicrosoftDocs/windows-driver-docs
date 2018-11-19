@@ -1,6 +1,5 @@
 ---
 title: Alternatives to Mutex Objects
-author: windows-driver-content
 description: Alternatives to Mutex Objects
 ms.assetid: c3b78155-426a-449d-8678-5666a7a12cbd
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "fast mutexes WDK kernel", "guarded mutexes WDK kernel"]
@@ -19,9 +18,9 @@ Fast mutexes and guarded mutexes can be used as a replacement for mutex objects.
 
 For more information about fast and guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
 
- 
+ 
 
- 
+ 
 
 
 

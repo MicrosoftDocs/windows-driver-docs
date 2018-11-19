@@ -23,9 +23,9 @@ In response to a query of [OID\_TCP\_CONNECTION\_OFFLOAD\_CURRENT\_CONFIG](https
 
 For more information about specifying connection offload capabilities, see Initializing an Offload Target in the [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: pte
 description: The pte extension displays the page table entry (PTE) and page directory entry (PDE) for the specified address.
 ms.assetid: e5603e58-8d9f-4693-bca2-a319080187cc
 keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory entry (PDE)", "PDE (page directory entry)", "pte Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -164,7 +163,7 @@ On an x86 or x64 target computer, the status bits for the PDE and the PTE are sh
 </tbody>
 </table>
 
- 
+ 
 
 On an Itanium target computer, the status bits for the PDE and the PTE are slightly different from those of the PPE. The Itanium PPE bits are as follows:
 
@@ -220,11 +219,11 @@ On an Itanium target computer, the status bits for the PDE and the PTE are sligh
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

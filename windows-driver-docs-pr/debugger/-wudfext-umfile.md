@@ -3,7 +3,6 @@ title: wudfext.umfile
 description: The wudfext.umfile extension displays information about a UMDF intra-stack file.
 ms.assetid: cd796f73-702e-488d-929d-ac77801c74f4
 keywords: ["wudfext.umfile Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,15 +47,15 @@ Specifies the address of the UMDF intra-stack file to display information about.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

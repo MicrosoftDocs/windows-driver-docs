@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR is a TLV that contains a Wi-Fi Direct service update indicator.
 ms.assetid: C90579C9-55DD-4E32-BEA3-EB156F4A422C
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT16 | The service update indicator to include in ANQP responses if the driver supports responding to service information discovery ANQP requests. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

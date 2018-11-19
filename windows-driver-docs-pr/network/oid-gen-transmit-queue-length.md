@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_TRANSMIT_QUEUE_LENGTH
-author: windows-driver-content
 description: As a query, the OID_GEN_TRANSMIT_QUEUE_LENGTH OID specifies the number of packets that are currently queued for transmission, whether on the NIC or in a driver-internal queue.
 ms.assetid: 042a7df3-a204-45f8-b147-96def7438b4a
 ms.date: 08/08/2017
@@ -59,9 +58,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

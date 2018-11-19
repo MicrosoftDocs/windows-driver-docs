@@ -13,9 +13,9 @@ Starting with the Windows 7 version of the Windows Driver Kit (WDK), the tracing
 
 If you build your [trace provider](trace-provider.md) (such as a driver or application) with the Windows 7 and later versions of the WDK, you can remove the WPP\_CHECK\_FOR\_NULL\_STRING macro from your source code.
 
- 
+ 
 
- 
+ 
 
 
 

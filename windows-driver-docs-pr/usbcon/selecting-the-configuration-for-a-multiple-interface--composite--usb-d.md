@@ -1,7 +1,6 @@
 ---
 Description: This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.
 title: Configuring Usbccgp.sys to Select a Non-Default USB Configuration
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,12 +22,12 @@ However, in Windows Vista and later versions of Windows, you can add the followi
 | OriginalConfigurationValue | REG\_DWORD | USB configuration index. Usbccgp.sys uses OriginalConfigurationValue first for a select-configuration request. | 0             |
 | AltConfigurationValue      | REG\_DWORD | The configuration index to use if the select-configuration request with OriginalConfigurationValue fails.      | 0             |
 
- 
+ 
 
 **Note**  The preceding registry settings are not present, by default. They must be added under this node:
 HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\*&lt;device\_identifier&gt;*\\*&lt;instance\_identifier&gt;*\\DeviceParameters
 
- 
+ 
 
 The registry setting allows the CCGP driver to select an alternate configuration.
 

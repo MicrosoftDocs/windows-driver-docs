@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 [Tracelog](tracelog.md) is a trace controller. [TraceView](traceview.md) is both a trace controller and a [trace consumer](trace-consumer.md).
 
- 
+ 
 
- 
+ 
 
 
 

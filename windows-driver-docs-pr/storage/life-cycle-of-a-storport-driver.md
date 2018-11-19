@@ -1,6 +1,5 @@
 ---
 title: Life Cycle of a Storport Driver
-author: windows-driver-content
 description: Life Cycle of a Storport Driver
 ms.assetid: 6b48cf8e-83c3-4403-88fd-1bf1f285aafc
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ The main I/O path consists of a series of calls to [**HwStorBuildIo**](https://m
 
 When the system is shutdown, [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423) is called with an SRB of type SRB\_FUNCTION\_SHUTDOWN. When an adapter is removed or disabled while the system is running, or when the system is entering hibernate mode, [**HwStorAdapterControl**](https://msdn.microsoft.com/library/windows/hardware/ff557365) is called with **ScsiStopAdapter** as a parameter. When the system is resuming from hibernate mode, **HwStorAdapterControl** is called with **ScsiRestartAdapter** as a parameter.
 
- 
+ 
 
- 
+ 
 
 
 

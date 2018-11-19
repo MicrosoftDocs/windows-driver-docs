@@ -1,6 +1,5 @@
 ---
 title: Windows Portable Device (WPD) driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom WPD driver for your device.
 ms.assetid: 5EB5B820-A29A-4A93-BBB9-6F4CDF101E3B
 ms.date: 04/20/2017
@@ -23,11 +22,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | WPD service sample driver                 | [WpdServiceSampleDriver](http://go.microsoft.com/fwlink/p/?LinkId=618010)  | Demonstrates how to extend the WpdHelloWorldDriver sample so that it supports a simulated device with a Contacts device service.                                                                                                                                      |
 | WUDF driver                               | [WpdWudfSampleDriver](http://go.microsoft.com/fwlink/p/?LinkId=618011)     | A comprehensive WPD sample driver demonstrates virtually all aspects of the WPD device driver interface (DDI).                                                                                                                                                        |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

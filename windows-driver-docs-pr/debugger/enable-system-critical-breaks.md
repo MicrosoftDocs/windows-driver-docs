@@ -3,7 +3,6 @@ title: Enable system critical breaks
 description: Enable system critical breaks
 ms.assetid: f13372b9-604e-4ea5-96e2-d8b7e916c8e5
 keywords: ["Enable system critical breaks (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Enable system critical breaks** flag forces a system break into the debugg
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -49,9 +48,9 @@ When set for a process (image file), this flag forces a system break into the de
 
 When set system-wide (registry or kernel flag), this flag forces a system break into the debugger whenever processes that have called the **RtlSetProcessBreakOnExit** and **RtlSetThreadBreakOnExit** interfaces stop abnormally.
 
- 
+ 
 
- 
+ 
 
 
 

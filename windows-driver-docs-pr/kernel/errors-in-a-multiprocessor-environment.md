@@ -1,6 +1,5 @@
 ---
 title: Errors in a Multiprocessor Environment
-author: windows-driver-content
 description: Errors in a Multiprocessor Environment
 ms.assetid: 8a76b8d6-14d8-4709-8b15-e8b6b5094a1b
 keywords: ["reliability WDK kernel , race conditions", "race conditions WDK kernel", "reliability WDK kernel , multiprocessor environment errors", "multiprocessor environment errors WDK kernel", "locking WDK kernel", "multiple I/O request handling WDK kernel", "I/O requests WDK kernel", "thread conflicts WDK kernel"]
@@ -30,7 +29,6 @@ In the following code snippet, a race condition could occur when the driver acce
    pLpcInfo->LpcPortName.Buffer = ExAllocatePool(
                                      PagedPool,
                                      arg->PortName.Length);
- 
 ```
 
 Multiple threads entering this code as a result of an IOCTL call could cause a memory leak as the pointer is overwritten. To avoid this problem, the driver should use the **ExInterlocked*Xxx*** routines or some type of lock when it changes the global data. The driver's requirements determine the acceptable types of locks. For further information, see [Spin Locks](spin-locks.md), [Kernel Dispatcher Objects](kernel-dispatcher-objects.md), and [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363).
@@ -60,9 +58,9 @@ The following example attempts to reallocate a file-specific buffer (**Endpoint-
 
 In this example, a race condition could occur with accesses to the file object. Because the driver does not hold any locks, two requests for the same file object can enter this function. The result might be references to freed memory, multiple attempts to free the same memory, or memory leaks. To avoid these errors, the two **if** statements should be enclosed in a spin lock.
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: A User Plugs in a Device
-author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: cc047c05-f3aa-4423-98fc-cafd7777e104
 keywords:
@@ -46,9 +45,9 @@ Next, the PnP manager determines which additional drivers (function drivers and 
 
 For more information about the power-up sequence for KMDF function or filter drivers, [Power-Up Sequence for a Function or Filter Driver](power-up-sequence-for-a-function-or-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

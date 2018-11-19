@@ -1,6 +1,5 @@
 ---
 title: Resolving GDL Configuration Conflicts
-author: windows-driver-content
 description: Resolving GDL Configuration Conflicts
 ms.assetid: 02a2da63-0b7f-4aa9-b3c3-72784f409d94
 keywords:
@@ -31,9 +30,9 @@ When GDL changes a parameter's setting to resolve a conflict, it will use the de
 
 The **ResolveConstraint()** parser interface function can be called to explicitly check a configuration for constraint violations and to resolve the conflict if any are found. The new configuration is returned to the caller. The caller can then examine the configuration for acceptability or can use the configuration to obtain a [snapshot](gdl-snapshots.md). The snapshot indicates which parameter settings are constrained under the configuration that is specified in its creation. This information might be useful for clients that create user interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

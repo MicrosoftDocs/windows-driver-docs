@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_QUERY_INFORMATION
-author: windows-driver-content
 description: Drivers can optionally handle an IRP_MJ_QUERY_INFORMATION request.
 ms.date: 08/12/2017
 ms.assetid: 317f82b1-88d3-4618-9282-140eca2178b5
@@ -59,9 +58,9 @@ Requirements
 
 [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.author: domars
 ms.date: 09/12/2018
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MEMORY\_MANAGEMENT Parameters
 
@@ -52,7 +51,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="odd">
 <td align="left"><p>0x403</p></td>
-<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 & 4 differ by only a single bit.</p></td>
+<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 &amp; 4 differ by only a single bit.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x411</p></td>
@@ -187,11 +186,11 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

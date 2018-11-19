@@ -1,6 +1,5 @@
 ---
 title: Security Features for File Systems
-author: windows-driver-content
 description: Security Features for File Systems
 ms.assetid: 344083d5-781a-46e3-ab90-b70e57d07dd0
 keywords:
@@ -29,6 +28,6 @@ This section includes the following topics:
 
 [Kernel Extended Attributes](kernel-extended-attributes.md)
 
- 
+ 
 
 

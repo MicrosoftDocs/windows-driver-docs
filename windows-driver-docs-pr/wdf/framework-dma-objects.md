@@ -1,6 +1,5 @@
 ---
 title: Framework DMA Objects
-author: windows-driver-content
 description: Framework DMA Objects
 ms.assetid: a5073bb0-a8c9-49fc-b280-e781f9f9c256
 keywords:
@@ -41,9 +40,9 @@ For information about the interfaces that these objects export, see:
 
 [Framework Common Buffer Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265627)
 
- 
+ 
 
- 
+ 
 
 
 

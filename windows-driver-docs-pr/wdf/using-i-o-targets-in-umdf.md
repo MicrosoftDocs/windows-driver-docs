@@ -1,6 +1,5 @@
 ---
 title: Using I/O Targets in UMDF
-author: windows-driver-content
 description: Using I/O Targets in UMDF
 ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
 keywords:
@@ -31,9 +30,9 @@ The framework supports both general I/O targets and specialized I/O targets:
 
 If the framework provides specialized I/O targets that support your device's data format, your driver should use the specialized I/O targets. Otherwise, the driver should use general I/O targets.
 
- 
+ 
 
- 
+ 
 
 
 

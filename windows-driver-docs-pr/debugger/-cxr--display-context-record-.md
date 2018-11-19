@@ -3,7 +3,6 @@ title: .cxr (Display Context Record)
 description: The .cxr command displays the context record saved at the specified address. It also sets the register context.
 ms.assetid: 0e882639-6029-4512-8d46-050228e95cb6
 keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Display Context Record) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Omitting the address does not display any context record information, but it doe
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +79,9 @@ The **.cxr** command is often used to debug bug check 0x1E. For more information
 
 The **.cxr /w** command writes the context to memory and displays the address where it has been stored. This address can be passed to [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) if you need to apply data breakpoints to this context.
 
- 
+ 
 
- 
+ 
 
 
 

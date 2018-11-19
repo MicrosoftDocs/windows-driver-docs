@@ -3,7 +3,6 @@ title: ppmidleaccounting
 description: The ppmidleaccounting command
 ms.assetid: DD0D35EE-874B-43E4-BF47-09C5BF305B12
 keywords: ["ppmidleaccounting Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -37,9 +36,9 @@ This command is supported on the following versions of Windows:
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
- Kdexts.dll 
+ Kdexts.dll 
 
- 
+ 
 
 
 

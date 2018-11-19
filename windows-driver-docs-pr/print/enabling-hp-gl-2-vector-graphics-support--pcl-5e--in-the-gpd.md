@@ -1,6 +1,5 @@
 ---
 title: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
-author: windows-driver-content
 description: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 ms.assetid: 2ca5a2fe-4c37-4b7f-bd9b-d41240f8843f
 keywords:
@@ -104,9 +103,9 @@ A GPD file for a color printer should also define a ColorMode feature, as shown 
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

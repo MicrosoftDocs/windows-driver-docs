@@ -59,13 +59,13 @@ In DVD use of MPEG-2 for 4:3 pan-scan within 16:9 pictures, the pan-scan MPEG-2 
 </tbody>
 </table>
 
- 
+ 
 
 The formulation described in [MPEG-2 Pan-Scan Example](mpeg-2-pan-scan-example.md) can then be applied directly in this case.
 
- 
+ 
 
- 
+ 
 
 
 

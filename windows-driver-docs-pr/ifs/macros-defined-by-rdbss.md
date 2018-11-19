@@ -1,6 +1,5 @@
 ---
 title: Macros Defined by RDBSS
-author: windows-driver-content
 description: Macros Defined by RDBSS
 ms.assetid: 11add885-ecd9-4b43-be42-ef060e847183
 keywords:
@@ -44,7 +43,7 @@ The following macros are defined by RDBSS.
 <tr class="odd">
 <td align="left"><p><strong>RxAllocatePoolWithTag</strong> (<em>type</em>, <em>size</em>, <em>tag</em>)</p></td>
 <td align="left"><p>On checked builds, this macro allocates memory from a pool with a four-byte tag at the beginning of the block that can be used to help catch instances of memory trashing.</p>
-<p>On retail builds, this macro becomes a direct call to [<strong>ExAllocatePoolWithTag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544520).</p></td>
+<p>On retail builds, this macro becomes a direct call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544520)"><strong>ExAllocatePoolWithTag</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxCheckMemoryBlock</strong> (<em>ptr</em>)</p></td>
@@ -83,28 +82,28 @@ The following macros are defined by RDBSS.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxFcbAcquiredShared</strong> (<em>RXCONTEXT</em>, <em>FCB</em>)</p></td>
-<td align="left"><p>This macro checks if the current thread has access to the regular resource in shared mode. This macro calls the [<strong>ExIsResourceAcquiredSharedLite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545477) routine.</p></td>
+<td align="left"><p>This macro checks if the current thread has access to the regular resource in shared mode. This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545477" data-raw-source="[&lt;strong&gt;ExIsResourceAcquiredSharedLite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545477)"><strong>ExIsResourceAcquiredSharedLite</strong></a> routine.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxFillAndInstallFastIoDispatch</strong>(<em>__devobj</em>, <em>__fastiodisp</em>)</p></td>
-<td align="left"><p>This macro calls [<strong>__RxFillAndInstallFastIoDispatch</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557374) to fill out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.</p></td>
+<td align="left"><p>This macro calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557374" data-raw-source="[&lt;strong&gt;__RxFillAndInstallFastIoDispatch&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557374)"><strong>__RxFillAndInstallFastIoDispatch</strong></a> to fill out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxFreePool</strong> (<em>ptr</em>)</p></td>
 <td align="left"><p>On checked builds, this macro frees a memory pool.</p>
-<p>On retail builds, this macro becomes a direct call to [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590).</p></td>
+<p>On retail builds, this macro becomes a direct call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590" data-raw-source="[&lt;strong&gt;ExFreePool&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544590)"><strong>ExFreePool</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxIsFcbAcquiredShared</strong> (<em>FCB</em>)</p></td>
-<td align="left"><p>This macro checks if the current thread has access to the regular resource in shared mode. This macro calls the [<strong>ExIsResourceAcquiredSharedLite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545477) routine.</p></td>
+<td align="left"><p>This macro checks if the current thread has access to the regular resource in shared mode. This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545477" data-raw-source="[&lt;strong&gt;ExIsResourceAcquiredSharedLite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545477)"><strong>ExIsResourceAcquiredSharedLite</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxIsFcbAcquiredExclusive</strong> (<em>FCB</em>)</p></td>
-<td align="left"><p>This macro checks if the current thread has access to the regular resource in exclusive mode. This macro calls the [<strong>ExIsResourceAcquiredExclusiveLite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545458) routine.</p></td>
+<td align="left"><p>This macro checks if the current thread has access to the regular resource in exclusive mode. This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545458" data-raw-source="[&lt;strong&gt;ExIsResourceAcquiredExclusiveLite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545458)"><strong>ExIsResourceAcquiredExclusiveLite</strong></a> routine.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxIsFcbAcquired</strong> (<em>FCB</em>)</p></td>
-<td align="left"><p>This macro checks if the current thread has access to the regular resource in either shared or exclusive mode. This macro calls the [<strong>ExIsResourceAcquiredSharedLite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545477) and [<strong>ExIsResourceAcquiredExclusiveLite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545458) routines.</p></td>
+<td align="left"><p>This macro checks if the current thread has access to the regular resource in either shared or exclusive mode. This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545477" data-raw-source="[&lt;strong&gt;ExIsResourceAcquiredSharedLite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545477)"><strong>ExIsResourceAcquiredSharedLite</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545458" data-raw-source="[&lt;strong&gt;ExIsResourceAcquiredExclusiveLite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545458)"><strong>ExIsResourceAcquiredExclusiveLite</strong></a> routines.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxIsPrefixTableLockAcquired</strong> (<em>TABLE</em>)</p></td>
@@ -116,25 +115,25 @@ The following macros are defined by RDBSS.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxLog</strong>(<em>Args</em>)</p></td>
-<td align="left"><p>On checked builds, this macro calls the [<strong>_RxLog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557368) routine.</p>
+<td align="left"><p>On checked builds, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557368" data-raw-source="[&lt;strong&gt;_RxLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557368)"><strong>_RxLog</strong></a> routine.</p>
 <p>On retail builds, this macro does nothing.</p>
 <p>Note that the arguments to <strong>RxLog</strong> must be enclosed with an additional pair of parenthesis to enable translation into a null call when logging should be turned off.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxLogEvent</strong> (<em>_DeviceObject</em>, <em>_OriginatorId</em>, <em>_EventId</em>, <em>_Status</em>)</p></td>
-<td align="left"><p>This macro calls the [<strong>RxLogEventDirect</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554515) routine.</p></td>
+<td align="left"><p>This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554515" data-raw-source="[&lt;strong&gt;RxLogEventDirect&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554515)"><strong>RxLogEventDirect</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxLogFailure</strong> (<em>_DeviceObject</em>, <em>_OriginatorId</em>, <em>_EventId</em>, <em>_Status</em>)</p></td>
-<td align="left"><p>This macro calls the [<strong>RxLogEventDirect</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554515) routine.</p></td>
+<td align="left"><p>This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554515" data-raw-source="[&lt;strong&gt;RxLogEventDirect&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554515)"><strong>RxLogEventDirect</strong></a> routine.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxLogFailureWithBuffer</strong> (<em>_DeviceObject</em>, <em>_OriginatorId</em>, <em>_EventId</em>, <em>_Status</em>, <em>_Buffer</em>, <em>_Length</em>)</p></td>
-<td align="left"><p>This macro calls the [<strong>RxLogEventWithBufferDirect</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554524) routine.</p></td>
+<td align="left"><p>This macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554524" data-raw-source="[&lt;strong&gt;RxLogEventWithBufferDirect&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554524)"><strong>RxLogEventWithBufferDirect</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxLogRetail</strong>(<em>Args</em>)</p></td>
-<td align="left"><p>On checked builds, this macro calls the [<strong>_RxLog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557368) routine.</p>
+<td align="left"><p>On checked builds, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557368" data-raw-source="[&lt;strong&gt;_RxLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557368)"><strong>_RxLog</strong></a> routine.</p>
 <p>On retail builds, this macro does nothing.</p>
 <p>Note that the arguments to <strong>RxLogRetail</strong> must be enclosed with an additional pair of parenthesis to enable translation into a null call when logging should be turned off.</p></td>
 </tr>
@@ -172,22 +171,22 @@ The following macros are defined by RDBSS.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>RxSynchronizeBlockingOperations</strong>(<em>RXCONTEXT</em>,<em>FCB</em>,<em>IOQUEUE</em>)</p></td>
-<td align="left"><p>This macro synchronizes blocking I/O requests to the same work queue. On Windows Server 2003, this macro calls the [<strong>__RxSynchronizeBlockingOperations</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557377) routine with the <em>DropFcbLock</em> parameter set to <strong>FALSE</strong>.</p>
-<p>On Windows XP and Windows 2000, this macro calls the [<strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557382) routine with the <em>DropFcbLock</em> parameter set to <strong>FALSE</strong>.</p></td>
+<td align="left"><p>This macro synchronizes blocking I/O requests to the same work queue. On Windows Server 2003, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557377" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperations&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557377)"><strong>__RxSynchronizeBlockingOperations</strong></a> routine with the <em>DropFcbLock</em> parameter set to <strong>FALSE</strong>.</p>
+<p>On Windows XP and Windows 2000, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557382)"><strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong></a> routine with the <em>DropFcbLock</em> parameter set to <strong>FALSE</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>RxSynchronizeBlockingOperations</strong>(<em>RXCONTEXT</em>,<em>FCB</em>,<em>IOQUEUE</em>)</p></td>
-<td align="left"><p>This macro synchronizes blocking I/O requests to the same work queue. On Windows Server 2003, this macro calls the [<strong>__RxSynchronizeBlockingOperations</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557377) routine with the <em>DropFcbLock</em> parameter set to <strong>TRUE</strong>.</p>
-<p>On Windows XP and Windows 2000, this macro calls the [<strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557382) routine with the <em>DropFcbLock</em> parameter set to <strong>TRUE</strong>.</p></td>
+<td align="left"><p>This macro synchronizes blocking I/O requests to the same work queue. On Windows Server 2003, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557377" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperations&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557377)"><strong>__RxSynchronizeBlockingOperations</strong></a> routine with the <em>DropFcbLock</em> parameter set to <strong>TRUE</strong>.</p>
+<p>On Windows XP and Windows 2000, this macro calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557382)"><strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong></a> routine with the <em>DropFcbLock</em> parameter set to <strong>TRUE</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

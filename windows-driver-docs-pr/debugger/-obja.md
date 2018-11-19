@@ -3,7 +3,6 @@ title: obja
 description: The obja extension displays the attributes of an object in the object manager.
 ms.assetid: dc263ec2-72bf-4cb1-8583-4e9142d0bbdb
 keywords: ["object manager", "obja Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -50,7 +49,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,9 +80,9 @@ Obja +80967768 at 80967768:
         OBJ_EXCLUSIVE
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,7 +19,7 @@ Creating display drivers is easier using the Windows Display Driver Model (WDDM)
 
 **Note**  XDDM and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
 
- 
+ 
 
 -   The Microsoft Direct3D runtime and Microsoft DirectX graphics kernel subsystem perform more of the display processing (that is, more code is in the runtime and subsystem as opposed to the drivers). This includes code that manages video memory and schedules direct memory access (DMA) buffers for the GPU. For more information, see [Video Memory Management and GPU Scheduling](video-memory-management-and-gpu-scheduling.md).
 
@@ -50,9 +50,9 @@ Creating display drivers is easier using the Windows Display Driver Model (WDDM)
 
     Background translation (that is, translation code that runs in a separate thread from other display-processing threads) is easier to write for user mode.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play
-author: windows-driver-content
 description: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play
 ms.assetid: 46e5eb41-ff41-4054-856b-cc32f286e543
 keywords:
@@ -24,9 +23,9 @@ To run successfully under Plug and Play, a Microsoft Windows
 
 NT 4.0 miniport driver's source code might need to be modified as described in the following sections.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Work Queue Dispatching Mechanisms
-author: windows-driver-content
 description: Work Queue Dispatching Mechanisms
 ms.assetid: d4ce929f-2d84-4194-9afa-e00629594c36
 keywords:
@@ -77,26 +76,26 @@ The following RDBSS routines for work queue dispatching include.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxDispatchToWorkerThread</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554398)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554398" data-raw-source="[&lt;strong&gt;RxDispatchToWorkerThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554398)"><strong>RxDispatchToWorkerThread</strong></a></p></td>
 <td align="left"><p>This routine invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxPostToWorkerThread</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554620)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554620" data-raw-source="[&lt;strong&gt;RxPostToWorkerThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554620)"><strong>RxPostToWorkerThread</strong></a></p></td>
 <td align="left"><p>This routine invokes the routine in the context of a worker thread. Memory for the WORK_QUEUE_ITEM must be allocated by the caller.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxSpinDownMRxDispatcher</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554734)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554734" data-raw-source="[&lt;strong&gt;RxSpinDownMRxDispatcher&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554734)"><strong>RxSpinDownMRxDispatcher</strong></a></p></td>
 <td align="left"><p>This routine tears down the dispatcher context for a network mini-redirector.</p>
 <p>Note that this routine is only available on Windows Server 2003 and Windows XP.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

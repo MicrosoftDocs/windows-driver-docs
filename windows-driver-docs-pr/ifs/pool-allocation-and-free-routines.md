@@ -1,6 +1,5 @@
 ---
 title: Pool Allocation and Free Routines
-author: windows-driver-content
 description: Pool Allocation and Free Routines
 ms.assetid: 757eebc0-ebd4-49a1-acea-6c27956b4b23
 keywords:
@@ -41,24 +40,24 @@ The following table lists the RDBSS pool allocation and free routines.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>_RxAllocatePoolWithTag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557355)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557355" data-raw-source="[&lt;strong&gt;_RxAllocatePoolWithTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557355)"><strong>_RxAllocatePoolWithTag</strong></a></p></td>
 <td align="left"><p>This routine allocates memory from a pool with a four-byte tag at the beginning of the block that can help catch memory problems.</p>
 <p>It is recommended that the <strong>RxAllocatePoolWithTag</strong> macro be called instead of using this routine directly.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>_RxCheckMemoryBlock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557358)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557358" data-raw-source="[&lt;strong&gt;_RxCheckMemoryBlock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557358)"><strong>_RxCheckMemoryBlock</strong></a></p></td>
 <td align="left"><p>This routine checks a memory block for a special RX_POOL_HEADER header signature. Note that a network mini-redirector driver would need to add this special signature block to memory allocated in order to use the routine.</p>
 <p>This routine should not be used since this special header block has not been implemented.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>_RxFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557363)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557363" data-raw-source="[&lt;strong&gt;_RxFreePool&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557363)"><strong>_RxFreePool</strong></a></p></td>
 <td align="left"><p>This routine frees a memory pool.</p>
 <p>It is recommended that the <strong>RxFreePool</strong> macro be called instead of using this routine directly.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A number of macros, which are defined in the *ntrxdef.h* header file, call these routines. Instead of calling the routines listed in the previous table directly, the following macros are normally used.
 
@@ -92,11 +91,11 @@ A number of macros, which are defined in the *ntrxdef.h* header file, call these
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

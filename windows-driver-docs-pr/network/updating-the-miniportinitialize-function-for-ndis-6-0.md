@@ -42,9 +42,9 @@ The *MiniportInitializeEx* function must:
 
 -   Read and write to the bus-specific configuration space. For more information, see [Updating Bus-Specific Configuration Space Access for NDIS 6.0](updating-bus-specific-configuration-space-access-for-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -154,7 +154,7 @@ The following table shows a hypothetical situation in which a video decoder requ
 </tbody>
 </table>
 
- 
+ 
 
 Each B picture in the preceding table requires the decoding of two prior pictures in bitstream order before it can be decoded. As a consequence, the decoder cannot begin displaying pictures with their proper timing until after the second picture has been decoded (that is, until during the third time slice of decoding). Somewhere during this time slice, the display of pictures with their proper timing can begin.
 
@@ -164,9 +164,9 @@ The two rules described in [sequence requirements](sequence-requirements.md) for
 
 A significant obstacle in the decoding process occurs as a result of having more than two B pictures in succession. This occurs in the preceding table upon encountering the tenth decoded picture (B¹₉). When the third or subsequent B picture in a contiguous series is encountered, the time lag tolerance between the display of one B picture and the use of a surface to hold the next decoded B picture is eliminated. The host decoder must check the display status of the B picture that was displayed in the previous period (B¹₇) to ensure that it has been removed from the display (waiting for this to happen if necessary), then it must immediately use the same surface for the next B picture to be decoded (surface 1 used for B¹₉). The decoder cannot decode the new B picture into either of the surfaces being used to hold its reference I or P pictures (in this case, surfaces 0 and 2 used for P⁰₆ and P²₁₀), and cannot decode the new B picture into the surface being displayed during the same interval of time (in this case, surface 3 used for B³₈). Thus, it must use the surface that was displayed in the immediately preceding period (in this case, surface 1).
 
- 
+ 
 
- 
+ 
 
 
 

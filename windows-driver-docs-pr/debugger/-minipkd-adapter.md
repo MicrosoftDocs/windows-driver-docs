@@ -3,7 +3,6 @@ title: minipkd.adapter
 description: The minipkd.adapter extension displays information about the specified adapter.
 ms.assetid: 86cde6f0-9690-41b6-8e81-b9d25d7d6de5
 keywords: ["minipkd.adapter Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of an adapter.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +58,9 @@ Remarks
 
 The address of an adapter can be found in the **DevExt** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: PnP and Power Management Scenarios
-author: windows-driver-content
 description: PnP and Power Management Scenarios
 ms.assetid: 9175ce95-196d-44bd-b31c-88386fa0d3d3
 keywords:
@@ -26,9 +25,9 @@ The following topics identify typical PnP and power management scenarios and sho
 
 -   [The PnP Manager Redistributes System Resources](the-pnp-manager-redistributes-system-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

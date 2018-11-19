@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a CustomDpc Routine
-author: windows-driver-content
 description: Registering and Queuing a CustomDpc Routine
 ms.assetid: 7c35f8f8-a6dc-43b1-9120-701227d7b4c5
 keywords: ["CustomDpc", "registering CustomDpc routine", "queuing CustomDpc routine"]
@@ -34,9 +33,9 @@ A *CustomDpc* routine is responsible for doing whatever is necessary to complete
 
 The ISR and *CustomDpc* routines can be run concurrently on an SMP machine. Therefore, when writing *CustomDpc* routines, follow the guidelines set out in the previous section, [Registering and Queuing a DpcForIsr Routine](registering-and-queuing-a-dpcforisr-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

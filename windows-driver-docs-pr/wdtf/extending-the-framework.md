@@ -1,6 +1,5 @@
 ---
 title: Extending the Framework
-author: windows-driver-content
 description: Extending the Framework
 ms.assetid: 37a0fd70-0c88-414f-b4e3-afd641f1c667
 keywords:
@@ -35,9 +34,9 @@ The following list describes the three extensibility methods, in order of diffic
 
     This method is the most difficult of the three methods because it requires [COM interface design skills](com-interface-design-skills.md). You must be able to design and implement simple abstractions of your functionality by using a COM-automation interface.
 
- 
+ 
 
- 
+ 
 
 
 

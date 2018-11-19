@@ -43,7 +43,7 @@ The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +71,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

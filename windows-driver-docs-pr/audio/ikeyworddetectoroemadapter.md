@@ -29,9 +29,9 @@ Members
 
 The **IKeywordDetectorOemAdapter** interface inherits from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface but does not have additional members.
 
- 
+ 
 
- 
+ 
 
 
 

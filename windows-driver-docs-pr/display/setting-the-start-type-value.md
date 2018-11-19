@@ -16,7 +16,7 @@ You should set display drivers that are written to the Windows Display Driver Mo
 
 The following example shows a service-install section with the value for the **StartType** entry set to SERVICE\_DEMAND\_START to indicate that the display miniport driver is started on demand:
 
-```cpp
+```inf
 ;
 ; Service Installation Section
 ;
@@ -31,9 +31,9 @@ ServiceBinary  = %12%\r200.sys
 
 For more information about service-install sections that are associated with the **AddService** directive, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
 
- 
+ 
 
- 
+ 
 
 
 

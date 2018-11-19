@@ -1,6 +1,5 @@
 ---
 title: Multiplexed CLFS Logs
-author: windows-driver-content
 description: Multiplexed CLFS Logs
 ms.assetid: bbea9bdc-8bb8-4455-89c4-4735bad85ba0
 keywords: ["Common Log File System WDK kernel , multiplexed logs", "CLFS WDK kernel , multiplexed logs", "multiplexed logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
@@ -22,9 +21,9 @@ Consider the case of a multiplexed log that has two streams, each of which has o
 
 1.  On behalf of client 1, call [**ClfsCreateLogFile**](https://msdn.microsoft.com/library/windows/hardware/ff540792) to obtain a pointer to a **LOG\_FILE\_OBJECT** structure. Set the *puszLogFileName* parameter to a string of the form "log:&lt;log name&gt;::&lt;stream name&gt;" where &lt;log name&gt; is a valid path on the underlying file system, and &lt;stream name&gt; is the name that you have chosen to give to the stream that will be used by client 1. For example, you could set *puszLogFileName* to "log:c:\\ClfsLogs\\myLog::Stream1". In that case, CLFS would create the base log file myLog.blf in the c:\\ClfsLogs directory, and Stream1 would be the name of the stream used by client 1.
 
-    **Note**  It is the form of the string passed in *puszLogFileName* that determines whether CLFS creates a dedicated or multiplexed log. If the string has a double colon (::) after the path name, then CLFS creates a multiplexed log.
+    **Note**  It is the form of the string passed in *puszLogFileName* that determines whether CLFS creates a dedicated or multiplexed log. If the string has a double colon (::) after the path name, then CLFS creates a multiplexed log.
 
-     
+
 
 2.  On behalf of client 2, call [**ClfsCreateLogFile**](https://msdn.microsoft.com/library/windows/hardware/ff540792) to obtain a pointer to a **LOG\_FILE\_OBJECT** structure. Set the *puszLogFileName* parameter to a string of the form "log:&lt;log name&gt;::&lt;stream name&gt;" where &lt;log name&gt; is the same path name you used for client 1, and &lt;stream name&gt; is the name that you have chosen to give to the stream that will be used by client 2. For example, you could set *puszLogFileName* to "log:c:\\ClfsLogs\\myLog::Stream2".
 
@@ -38,11 +37,13 @@ Consider the case of a multiplexed log that has two streams, each of which has o
 
 5.  Pass the **LOG\_FILE\_OBJECT** pointer you obtained on behalf of client 2 to **ClfsCreateMarshallingArea** to obtain a marshalling area that client 2 can use to read and write log records. Specify the size of the log I/O blocks that the marshalling area will use by setting the *cbMarshallingBuffer* parameter.
 
-    **Note**  There are several other parameters you can use to set various properties of the marshalling area.
+    **Note**  There are several other parameters you can use to set various properties of the marshalling area.
 
-     
 
-    If client 2 needs additional marshalling areas, pass the same **LOG\_FILE\_OBJECT** pointer to **ClfsCreateMarshallingArea** again, once for each additional marshalling area that client 2 needs.
+
+
+If client 2 needs additional marshalling areas, pass the same **LOG\_FILE\_OBJECT** pointer to **ClfsCreateMarshallingArea** again, once for each additional marshalling area that client 2 needs.
+
 
 Now that clients 1 and 2 each have a **LOG\_FILE\_OBJECT** and one or more marshalling areas, they can each write records to their own streams (by way of the marshalling areas associated with those streams) by calling the following functions.
 
@@ -58,9 +59,9 @@ As client 1 writes records to its stream, it gets back an increasing sequence of
 
 CLFS maintains a base LSN and a last LSN for every stream, including streams that share a multiplexed log. Each stream has an active portion that begins with the record pointed to by the base LSN and ends with the record pointed to by the last LSN. Note that a container in a multiplexed log on stable storage cannot be recycled until the base LSNs of all the log's streams have advanced beyond any records stored in that container.
 
- 
 
- 
+
+
 
 
 

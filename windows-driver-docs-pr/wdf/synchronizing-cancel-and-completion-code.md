@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Cancel and Completion Code
-author: windows-driver-content
 description: Synchronizing Cancel and Completion Code
 ms.assetid: 4c302fc5-cb14-46e5-80c8-8dbf62486905
 keywords:
@@ -41,9 +40,9 @@ This code ensures that the driver does not call [**WdfRequestComplete**](https:/
 
 For more information about the rules that your driver must follow when it calls **WdfRequestUnmarkCancelable**, see [**WdfRequestUnmarkCancelable**](https://msdn.microsoft.com/library/windows/hardware/ff550035).
 
- 
+ 
 
- 
+ 
 
 
 

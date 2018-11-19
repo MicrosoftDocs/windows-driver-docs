@@ -1,6 +1,5 @@
 ---
 title: Developing a WIA Video Driver
-author: windows-driver-content
 description: Developing a WIA Video Driver
 ms.assetid: 3cf14fd3-1dfa-480e-a69c-c4d2c196a504
 ms.date: 04/20/2017
@@ -32,9 +31,9 @@ If you do not make these additions WIA will not recognize the device. Be sure to
 
 For an example of how to support WIA from a video camera using USBCAMD model with a still pin from your driver see [USB-Based Camera with a Capture Button](https://msdn.microsoft.com/library/windows/hardware/ff568643).
 
- 
+ 
 
- 
+ 
 
 
 

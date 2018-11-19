@@ -1,6 +1,5 @@
 ---
 title: Logging and investigations
-author: windows-driver-content
 description: This topic describes logging and investigations for GPIO implementations.
 ms.assetid: 27D6349D-5F92-450B-B9AA-90BA9C5D7E65
 ms.localizationpriority: medium
@@ -52,9 +51,9 @@ For example, if a dock indicator change is expected, the following entry should 
 12: Indicator_UpdateRegistryValue - Indicator state update : DockMode_Indicator : new state : Docked
 ```
 
- 
+ 
 
- 
+ 
 
 
 

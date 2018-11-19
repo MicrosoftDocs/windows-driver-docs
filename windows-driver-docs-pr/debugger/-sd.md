@@ -3,7 +3,6 @@ title: sd
 description: The sd extension displays the security descriptor at the specified address.
 ms.assetid: 67c72bdb-7bfc-42d6-9b65-31a07dc67729
 keywords: ["sd Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -77,9 +76,9 @@ kd> !sd e1a96a80 1
 ->Sacl    :  is NULL
 ```
 
- 
+ 
 
- 
+ 
 
 
 

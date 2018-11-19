@@ -1,6 +1,5 @@
 ---
 title: Preparing for Porting
-author: windows-driver-content
 description: Preparing for Porting
 ms.assetid: 355CD834-6B64-4E6F-AA17-AE1145F269CA
 ms.date: 04/20/2017
@@ -40,9 +39,9 @@ The answers to these questions determine how the core of the WDF driver is struc
 
 Finally, if the driver supports WMI (also KMDF only), you must understand how to gather the data it exports and which WMI callbacks the driver requires.
 
- 
+ 
 
- 
+ 
 
 
 

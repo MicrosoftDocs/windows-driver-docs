@@ -35,9 +35,9 @@ Filter drivers can provide the following services:
 
 -   Manage configuration parameters in the registry for each miniport adapter with which it interfaces. For more information, see [Accessing Configuration Information for a Filter Driver](accessing-configuration-information-for-a-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Hardware Resources
-author: windows-driver-content
 description: Introduction to Hardware Resources
 ms.assetid: 34350031-daae-4213-b157-086a7a55e05b
 keywords:
@@ -52,9 +51,9 @@ The following steps describe the process in more detail:
 
 10. After the device has entered an uninitialized D0 state, the framework calls each driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function, passing [raw and translated](raw-and-translated-resources.md) versions of the device's resource list as an input argument. The driver can save the resource list, which is valid until the framework calls the driver's [*EvtDeviceReleaseHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540890) callback function.
 
- 
+ 
 
- 
+ 
 
 
 

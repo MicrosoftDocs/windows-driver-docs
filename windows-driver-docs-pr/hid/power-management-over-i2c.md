@@ -1,6 +1,5 @@
 ---
 title: Power management for HID over the I²C
-author: windows-driver-content
 description: This section describes power management for devices that support HID over the I²C.
 ms.assetid: 00FE1248-683F-48FE-8422-E51E88224955
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ Below is a short summary of how devices should behave during the connected stand
 | Rotation Lock                                                                                                                                                   | No                                           | Must not process                          | D3                                                        |
 | Generic Desktop Controls - Volume Up - Volume Down - Channel Down - Channel Up - Fast Forward - Track Forward - Track Back - Play - Pause - Record - Track Stop | No                                           | Must process                              | D0                                                        |
 
- 
+ 
 
 For more information about connected standby please refer to the [Understanding Connected Standby](http://go.microsoft.com/fwlink/p/?linkid=241608) video.
 
@@ -42,9 +41,9 @@ Devices on the I²C bus are enumerated by the Advanced Configuration and Power I
 
 The inbox HIDI²C miniport driver passes along the D-IRP from HIDClass. This allows ACPI to, in turn, power-manage the device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: gdikdx.verifier
 description: The gdikdx.verifier extension displays the status of Driver Verifier during the verification of a graphics driver.
 ms.assetid: a7e189bb-ed63-4da3-ab7a-bf502ec131ed
 keywords: ["gdikdx.verifier Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Displays some brief Help text for this command in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +66,9 @@ When verifying drivers that are not graphics drivers, the standard kernel-mode e
 
 Regardless of which flags are selected, this extension will display the Driver Verifier options that are active. It will also display statistics on the frequency of random failure.
 
- 
+ 
 
- 
+ 
 
 
 

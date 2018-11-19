@@ -19,7 +19,7 @@ When a Windows-based application invokes**IPortableDeviceContent::EnumObject** o
 | **IEnumPortableDeviceObjectIDs::Next**    | **OnFindNext**                          |
 | **IEnumPortableDeviceObjectIDs::Release** | **OnEndFind**                           |
 
- 
+ 
 
 The **WpdObjectEnumerator** command handlers are invoked by the **WpdObjectEnumerator::DispatchWpdMessage** method. The following excerpt from the sample driver contains the code for **WpdObjectEnumerator::DispatchWpdMessage.**
 
@@ -70,9 +70,9 @@ HRESULT WpdObjectEnumerator::DispatchWpdMessage(const PROPERTYKEY&     Command,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

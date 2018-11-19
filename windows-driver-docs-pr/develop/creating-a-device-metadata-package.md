@@ -12,9 +12,9 @@ You can create a Device Metadata Package for your device directly in Visual Stud
 
 For more information about how to use the Device Metadata Authoring Wizard, please see [Device Metadata Authoring Wizard](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454213).
 
- 
+ 
 
- 
+ 
 
 
 

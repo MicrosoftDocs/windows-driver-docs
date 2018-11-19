@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device to Rebalance Resources
-author: windows-driver-content
 description: Stopping a Device to Rebalance Resources
 ms.assetid: eed28d41-8a9d-4b9e-90d7-ea4ddeeaad2d
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
@@ -44,9 +43,9 @@ The following notes correspond to the circled numbers in the previous figure:
 
 Rebalancing the hardware resources of a PnP device must be transparent to applications and end users. Users might experience a temporary delay in operation, but data must not be lost. You must take that into consideration when you handle stop IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

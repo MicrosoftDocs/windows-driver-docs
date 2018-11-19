@@ -1,9 +1,8 @@
 ---
-author: mcleanbyron
 ms.assetid: 79DC7C99-70F1-499A-856B-D2A83FC6F867
 description: Use this method in the Microsoft Store analytics API to get detailed data for a Windows 10 driver error. This method is intended only for IHVs.
 title: Get details for a Windows 10 driver error
-ms.author: mcleans
+ms.topic: article
 ms.date: 08/28/2018
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors, details
 ms.localizationpriority: medium

@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_STATUS_LINK_STATE
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_STATUS_LINK_STATE GUID for the NDIS WMI interface.
 ms.assetid: 7f56d211-14c7-4b8b-8d1c-ee7836b7b70a
 keywords:

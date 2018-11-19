@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS is a TLV that contains Wi-Fi Direct Invitation Request parameters.
 ms.assetid: CC9B0454-4522-4589-8E21-4986BAEBC6D0
 ms.date: 07/18/2017
@@ -59,7 +58,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -85,9 +84,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

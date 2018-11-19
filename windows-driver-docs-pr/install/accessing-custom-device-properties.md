@@ -27,9 +27,9 @@ After you retrieve a handle to a registry key, supply the handle in a call to [R
 
 Call the [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) function to close the registry key after access to the registry key is no longer required.
 
- 
+ 
 
- 
+ 
 
 
 

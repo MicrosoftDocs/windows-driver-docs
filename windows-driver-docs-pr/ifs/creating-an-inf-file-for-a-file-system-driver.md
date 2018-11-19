@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File for a File System Driver
-author: windows-driver-content
 description: Creating an INF File for a File System Driver
 ms.assetid: 4b67159f-a5a5-46da-9500-a9c6b6995da4
 keywords:
@@ -110,7 +109,7 @@ The following table shows the values that file system filter drivers should spec
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See [<strong>INF DriverVer directive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547394).</p></td>
+<td align="left"><p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547394" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547394)"><strong>INF DriverVer directive</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CatalogFile</strong></p></td>
@@ -119,7 +118,7 @@ The following table shows the values that file system filter drivers should spec
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DestinationDirs_Section__optional_but_recommended_"></span><span id="destinationdirs_section__optional_but_recommended_"></span><span id="DESTINATIONDIRS_SECTION__OPTIONAL_BUT_RECOMMENDED_"></span>DestinationDirs Section (optional but recommended)
 
@@ -161,7 +160,7 @@ In the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/
 
 **Note**   The [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive should not refer to the catalog file or the INF file itself; SetupAPI copies these files automatically.
 
- 
+ 
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. This type of INF file is created by creating additional [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356), [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360), **DefaultUninstall**, and **DefaultUninstall.Services** sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](https://msdn.microsoft.com/library/windows/hardware/ff540206).
 
@@ -244,7 +243,7 @@ The **ServiceType** entry specifies the type of service. The following table lis
 </tbody>
 </table>
 
- 
+ 
 
 The **ServiceType** entry should always be set to SERVICE\_FILE\_SYSTEM\_DRIVER for a file system driver.
 
@@ -285,7 +284,7 @@ The **StartType** entry specifies when to start the service. The following table
 </tbody>
 </table>
 
- 
+ 
 
 For detailed descriptions of these start types to determine which one is appropriate for your file system driver, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
@@ -317,16 +316,16 @@ The **ErrorControl** entry specifies the action to be taken if the service fails
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry's LastKnownGood control set and continue system startup.)</p></td>
+<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry&#39;s LastKnownGood control set and continue system startup.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00000003</p></td>
-<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry's LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
+<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry&#39;s LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The **LoadOrderGroup** entry must always be set to "File System" for a file system driver. This is different from what is specified for a file system filter driver or file system minifilter driver where the **LoadOrderGroup** entry is set to one of the file system filter load order groups. For more information about the load order groups that are used for file system filter drivers and file system minifilter drivers, see [Load Order Groups for File System Filter Drivers](load-order-groups-for-file-system-filter-drivers.md) and [Load Order Groups and Altitudes for Minifilter Drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 
@@ -334,7 +333,7 @@ The [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/f
 
 **Note**   If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG\_ADDREG\_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\\CurrentControlSet\\Services when subsequent files are installed. For example:
 
- 
+ 
 
 ```cpp
 [ExampleFileSystem.AddRegistry]
@@ -368,11 +367,11 @@ DelService = %ServiceName%,0x200
 
 **Note**   The [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive should always specify the 0x200 (SPSVCINST\_STOPSERVICE) flag to stop the service before it is deleted.
 
- 
+ 
 
 **Note**   There are certain classes of file system products that cannot be completely uninstalled. In this situation, it is acceptable to just uninstall the components of the product that can be uninstalled and leave installed the components of the product that cannot be uninstalled. An example of such a product is the Microsoft Single Instance Store (SIS) feature.
 
- 
+ 
 
 ### <span id="Strings_Section__required_"></span><span id="strings_section__required_"></span><span id="STRINGS_SECTION__REQUIRED_"></span>Strings Section (required)
 
@@ -389,11 +388,11 @@ ParameterPath = "SYSTEM\CurrentControlSet\Services\ExampleFileSystem\Parameters"
 Disk1       = "Example File System Driver CD"
 ```
 
-You can create a single international INF file by creating additional locale-specific **Strings.***LanguageID* sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
+You can create a single international INF file by creating additional locale-specific **Strings.**<em>LanguageID</em> sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
 
- 
+ 
 
- 
+ 
 
 
 

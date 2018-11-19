@@ -11,13 +11,9 @@ ms.localizationpriority: medium
 
 This topic describes how Hyper-V extensible switch extensions clone, or duplicate, packets and inject them into the extensible switch data path. For more information on cloning packets, see [Cloned NET\_BUFFER\_LIST Structures](cloned-net-buffer-list-structures.md).
 
-**Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
+**Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
-
-**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about the extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
-
- 
+**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. For more information about the extensions, see [Hyper-V Extensible Switch Extensions](hyper-v-extensible-switch-extensions.md).
 
 Extensible switch filtering and forwarding extensions can inject cloned packets into the extensible switch ingress or egress data path by following these guidelines:
 
@@ -57,9 +53,9 @@ Extensible switch filtering and forwarding extensions can inject cloned packets 
 
     The source port information is stored in the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598211) union in the OOB data of the packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure. The extension obtains the data by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://msdn.microsoft.com/library/windows/hardware/hh598259) macro.
 
-    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension can call [*CopyNetBufferListInfo*](https://msdn.microsoft.com/library/windows/hardware/hh598136) to copy all OOB data from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the packet.
+    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension can call [*CopyNetBufferListInfo*](https://msdn.microsoft.com/library/windows/hardware/hh598136) to copy all OOB data from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the packet.
 
-     
+
 
 -   When the extension clones a packet, the cloned packet data is located in local, or *trusted*, memory in the parent operating system of the Hyper-V parent partition. This memory cannot be accessed by the child partition. Therefore, it is considered "safe" from unsynchronized updates by the guest operating system that runs in that partition.
 
@@ -71,37 +67,31 @@ Filtering and forwarding extensions must follow these guidelines for injecting c
 
     When NDIS calls the extension's [*FilterSendNetBufferListsComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549967) function to complete the send request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](https://msdn.microsoft.com/library/windows/hardware/hh598153) to free the allocated forwarding context. The extension must do this before it frees or reuses the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure for the packet.
 
-    **Note**  The extension must inject the cloned packet into the ingress data path if it modifies the packet data or source port for a packet that it obtained from the egress data path. It must also inject the cloned packet into the ingress data path if the packet's destination ports are not preserved.
+    **Note**  The extension must inject the cloned packet into the ingress data path if it modifies the packet data or source port for a packet that it obtained from the egress data path. It must also inject the cloned packet into the ingress data path if the packet's destination ports are not preserved.
 
-     
+
 
 -   The extension must call [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820) to inject the cloned packet into the egress data path. The extension must set the *ReceiveFlags* parameter with the appropriate extensible switch flag settings.
 
     When NDIS calls the extension's [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964) function to complete the receive request of the cloned packet, the extension must call [*FreeNetBufferListForwardingContext*](https://msdn.microsoft.com/library/windows/hardware/hh598153) before it frees or reuses the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure for the packet.
 
-    **Note**  Before the forwarding extension calls [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820), it must have determined the cloned packet's destination ports and added this data to the packet's OOB data.
+    **Note**  Before the forwarding extension calls [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820), it must have determined the cloned packet's destination ports and added this data to the packet's OOB data.
 
-     
+
 
 -   If the extension clones a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure, it must retain ownership of the original packet's **NET\_BUFFER\_LIST** structure until the cloned packet's send or receive request has completed. The extension must use the **ParentNetBufferList** member of the cloned packet's **NET\_BUFFER\_LIST** structure to link to the original packet's **NET\_BUFFER\_LIST** structure.
 
-    **Note**  In NDIS 6.30 (Windows Server 2012), the extension can use the **ParentNetBufferList** member to link to the original packet, but it is not required to do so. In NDIS 6.40 (Windows Server 2012 R2) and later, the extension is required to use the **ParentNetBufferList** member to link to the original packet.
-
-     
+    **Note**  In NDIS 6.30 (Windows Server 2012), the extension can use the **ParentNetBufferList** member to link to the original packet, but it is not required to do so. In NDIS 6.40 (Windows Server 2012 R2) and later, the extension is required to use the **ParentNetBufferList** member to link to the original packet.
 
     Once the cloned packet's send or receive request has completed, the extension must complete the send or receive request of the original packet.
 
-    **Note**  If the extension has cloned a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure, it can complete the send or receive request of the original packet after it has been cloned.
-
-     
+    **Note**  If the extension has cloned a packet's [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure, it can complete the send or receive request of the original packet after it has been cloned.
 
 -   If the extension clones a packet, it can complete the send or receive request of the original packet as soon as it is cloned.
 
 If the forwarding or filtering extension obtains a packet in the egress data path, it cannot inject a cloned version of the packet in this data path if the extension modified the packet data or changed the source port. However, the extension can inject these packets into the ingress data path. This allows the packet to be forwarded and filtered properly through the extensible switch data path.
 
-**Note**  Filtering extensions can only inject cloned packets into the ingress data path if the packet's destination ports are not preserved.
-
- 
+**Note**  Filtering extensions can only inject cloned packets into the ingress data path if the packet's destination ports are not preserved.
 
 For example, assume that a packet with multiple destination ports was obtained in the extensible switch egress data path. If one destination port requires special handling, such as data encapsulation, the forwarding or filtering extension handles this by following these steps:
 
@@ -109,9 +99,7 @@ For example, assume that a packet with multiple destination ports was obtained i
 
 2.  Clone the original packet and perform the required handling of the packet data.
 
-    **Note**  The filtering extension must not add a destination port for the cloned packet. This data will be added later by the forwarding extension or the miniport edge of the extensible switch.
-
-     
+    **Note**  The filtering extension must not add a destination port for the cloned packet. This data will be added later by the forwarding extension or the miniport edge of the extensible switch.
 
 3.  Forward the original packet on the egress data path by calling [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598).
 
@@ -119,13 +107,13 @@ For example, assume that a packet with multiple destination ports was obtained i
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
-**Note**  Capturing extensions cannot clone packet traffic. However, they can originate packet traffic. For more information, see [Originating Packet Traffic](originating-packet-traffic.md).
+**Note**  Capturing extensions cannot clone packet traffic. However, they can originate packet traffic. For more information, see [Originating Packet Traffic](originating-packet-traffic.md).
 
- 
 
- 
 
- 
+
+
+
 
 
 

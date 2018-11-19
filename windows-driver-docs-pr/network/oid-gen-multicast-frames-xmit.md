@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MULTICAST_FRAMES_XMIT
-author: windows-driver-content
 description: As a query, the OID_GEN_MULTICAST_FRAMES_XMIT OID specifies the number of multicast/functional packets that are transmitted without errors.
 ms.assetid: 780763a5-6220-44ad-a6e7-ed63e89baaed
 ms.date: 08/08/2017
@@ -57,9 +56,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

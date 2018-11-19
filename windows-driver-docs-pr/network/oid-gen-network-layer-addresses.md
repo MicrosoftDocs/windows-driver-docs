@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_NETWORK_LAYER_ADDRESSES
-author: windows-driver-content
 description: As a set, the OID_GEN_NETWORK_LAYER_ADDRESSES OID notifies underlying miniport driver and other layered drivers about the list of network-layer addresses that are associated with bound instances.
 ms.assetid: 4a75c2ca-1a58-462e-876a-a65cfe63441e
 ms.date: 08/08/2017
@@ -117,9 +116,9 @@ Requirements
 
 [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715)
 
- 
+ 
 
- 
+ 
 
 
 

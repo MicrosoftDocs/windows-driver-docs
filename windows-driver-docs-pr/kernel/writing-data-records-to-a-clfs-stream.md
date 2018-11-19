@@ -1,6 +1,5 @@
 ---
 title: Writing Data Records to a CLFS Stream
-author: windows-driver-content
 description: Writing Data Records to a CLFS Stream
 ms.assetid: 22bd6d39-b777-4a62-85b1-3d03a7144f7a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
@@ -50,7 +49,7 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="even">
 <td><p><em>rgWriteEntries</em></p></td>
-<td><p>A pointer to a [<strong>CLFS_WRITE_ENTRY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff541891) structure.</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541891" data-raw-source="[&lt;strong&gt;CLFS_WRITE_ENTRY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541891)"><strong>CLFS_WRITE_ENTRY</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cWriteEntries</em></p></td>
@@ -78,12 +77,12 @@ Suppose you have a single data buffer that you want to write to a marshalling ar
 </tr>
 <tr class="odd">
 <td><p><em>plsn</em></p></td>
-<td><p>A pointer to a [<strong>CLFS_LSN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff541824) structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824" data-raw-source="[&lt;strong&gt;CLFS_LSN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541824)"><strong>CLFS_LSN</strong></a> structure. (This is an output parameter that receives the LSN of the record that is written.)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Reserving space for a set of CLFS log records
 
@@ -140,11 +139,11 @@ You can use **ClfsReserveAndAppendLog** to reserve space in a marshalling area f
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   Another way to reserve space in a marshalling area is to call [**ClfsAlignReservedLog**](https://msdn.microsoft.com/library/windows/hardware/ff540779) followed by [**ClfsAllocReservedLog**](https://msdn.microsoft.com/library/windows/hardware/ff540782).
 
- 
+ 
 
 ### Writing a record to reserved space
 
@@ -178,11 +177,11 @@ Now suppose you want to write one of those records into the reserved space in th
 </tr>
 <tr class="even">
 <td><p><em>plsnUndoNext</em></p></td>
-<td><p>CLFS_LSN_INVALID or the LSN of the previous record in the undo chain. For more information about the undo chain, see [CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md).</p></td>
+<td><p>CLFS_LSN_INVALID or the LSN of the previous record in the undo chain. For more information about the undo chain, see <a href="clfs-log-sequence-numbers.md" data-raw-source="[CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md)">CLFS Log Sequence Numbers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>plsnPrevious</em></p></td>
-<td><p>CLFS_LSN_INVALID or the LSN of the previous log record in the previous-LSN chain. For more information about the previous-LSN chain, see [CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md).</p></td>
+<td><p>CLFS_LSN_INVALID or the LSN of the previous log record in the previous-LSN chain. For more information about the previous-LSN chain, see <a href="clfs-log-sequence-numbers.md" data-raw-source="[CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md)">CLFS Log Sequence Numbers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>cReserveRecords</em></p></td>
@@ -203,7 +202,7 @@ Now suppose you want to write one of those records into the reserved space in th
 </tbody>
 </table>
 
- 
+ 
 
 ### Writing records with aligned entries
 
@@ -239,11 +238,11 @@ Suppose you want to write a record that has three write entries. The write entri
 </tr>
 <tr class="odd">
 <td><p><em>plsnUndoNext</em></p></td>
-<td><p>CLFS_LSN_INVALID or the LSN of the previous record in the undo chain. For more information about the undo chain, see [CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md).</p></td>
+<td><p>CLFS_LSN_INVALID or the LSN of the previous record in the undo chain. For more information about the undo chain, see <a href="clfs-log-sequence-numbers.md" data-raw-source="[CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md)">CLFS Log Sequence Numbers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>plsnPrevious</em></p></td>
-<td><p>CLFS_LSN_INVALID or the LSN of the previous log record in the previous-LSN chain. For more information about the previous-LSN chain, see [CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md).</p></td>
+<td><p>CLFS_LSN_INVALID or the LSN of the previous log record in the previous-LSN chain. For more information about the previous-LSN chain, see <a href="clfs-log-sequence-numbers.md" data-raw-source="[CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md)">CLFS Log Sequence Numbers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cReserveRecords</em></p></td>
@@ -264,13 +263,13 @@ Suppose you want to write a record that has three write entries. The write entri
 </tbody>
 </table>
 
- 
+ 
 
 The preceding tables show only a few of the many variations on reserving record space and writing records to CLFS streams. As you think of other variations, keep the following point in mind: The actions performed by **ClfsReserveAndAppendLog** (or **ClfsReserveAndAppendLogAligned**) are atomic. For example, you can make a single call to **ClfsReserveAndAppendLog** that will reserve space for a record and write the record to the stream. The pair of actions (reserve, write) will either succeed as a whole or fail as a whole.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Transfer Modes
-author: windows-driver-content
 description: Transfer Modes
 ms.assetid: 79af0d8f-dd04-4ff4-a047-f415562a16a5
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ For devices connected to dedicated ports, such as SCSI or USB bus devices, it is
 
 When a device is opened in data mode, [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) is typically called from within **IStiUSD:Initialize**, independent of the bus type.
 
- 
+ 
 
- 
+ 
 
 
 

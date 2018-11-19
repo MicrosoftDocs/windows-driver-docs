@@ -24,9 +24,9 @@ For these reasons, an adapter driver might need to constrain the sample frequenc
 
 As explained previously, KMixer is the system mixer in Windows Server 2003, Windows XP, Windows 2000, and Windows Me/98. When KMixer's source pin is connected to an adapter's sink pin, KMixer might need to call the adapter's **SetFormat** method (for example, see [**IMiniportWavePciStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536732)) to adjust the sample frequency at the connection to match the highest sample frequency of the audio streams at its inputs. If the adapter is unable to change the frequency--perhaps because it is constrained by the clock rates of other on-board streams--it can fail the **SetFormat** call. In this case, KMixer will respond by making more **SetFormat** calls with successively lower sample frequencies until the call succeeds. Once KMixer has settled on a reduced sample frequency, it will sample-down its higher frequency input streams accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

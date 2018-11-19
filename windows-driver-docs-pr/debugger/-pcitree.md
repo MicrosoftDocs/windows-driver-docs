@@ -3,7 +3,6 @@ title: pcitree
 description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 ms.assetid: cd1b2f85-b8de-4396-8b37-79bb3d62092c
 keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!pcitree** extension displays information about PCI device objects, includ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -85,9 +84,9 @@ kd> !devext fe4f4428 pci
 
 If the **!pcitree** extension generates an error, this often means that your PCI symbols were not loaded properly. Use [**.reload pci.sys**](-reload--reload-module-.md) to fix this problem.
 
- 
+ 
 
- 
+ 
 
 
 

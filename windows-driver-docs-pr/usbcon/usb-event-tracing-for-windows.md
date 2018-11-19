@@ -1,7 +1,6 @@
 ---
 Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: USB Event Tracing for Windows
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -86,33 +85,33 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Capture and view USB traces with Microsoft Message Analyzer](capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)</p></td>
+<td><p><a href="capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md" data-raw-source="[Capture and view USB traces with Microsoft Message Analyzer](capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)">Capture and view USB traces with Microsoft Message Analyzer</a></p></td>
 <td><p>You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)</p></td>
-<td><p>This topic provides information about using the [Logman](http://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
+<td><p><a href="how-to-capture-a-usb-event-trace.md" data-raw-source="[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)">How to capture a USB event trace with Logman</a></p></td>
+<td><p>This topic provides information about using the <a href="http://go.microsoft.com/fwlink/p/?linkid=617153" data-raw-source="[Logman](http://go.microsoft.com/fwlink/p/?linkid=617153)">Logman</a> tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using activity ID GUIDs in USB ETW traces](using-usb-etw.md)</p></td>
+<td><p><a href="using-usb-etw.md" data-raw-source="[Using activity ID GUIDs in USB ETW traces](using-usb-etw.md)">Using activity ID GUIDs in USB ETW traces</a></p></td>
 <td><p>This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md)</p></td>
+<td><p><a href="viewing-etw-traces-in-netmon.md" data-raw-source="[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md)">USB ETW traces in Netmon</a></p></td>
 <td><p>You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using Xperf with USB ETW](using-xperf-with-usb-etw.md)</p></td>
+<td><p><a href="using-xperf-with-usb-etw.md" data-raw-source="[Using Xperf with USB ETW](using-xperf-with-usb-etw.md)">Using Xperf with USB ETW</a></p></td>
 <td><p>This topic describes how to use Xperf with Netmon to analyze USB trace data.</p></td>
 </tr>
 <tr class="even">
-<td><p>[USB ETW and Power Management](usb-etw-and-power-management.md)</p></td>
+<td><p><a href="usb-etw-and-power-management.md" data-raw-source="[USB ETW and Power Management](usb-etw-and-power-management.md)">USB ETW and Power Management</a></p></td>
 <td><p>This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Using USB ETW](using-usb-etw.md)  

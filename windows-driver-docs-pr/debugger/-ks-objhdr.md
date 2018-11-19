@@ -3,7 +3,6 @@ title: ks.objhdr
 description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
 ms.assetid: 105b1c03-fc89-4c0f-91d0-42e88f07c71c
 keywords: ["ks.objhdr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -130,9 +129,9 @@ Object Header 81BC1008
     Corresponding AVStream object = 81A971B0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

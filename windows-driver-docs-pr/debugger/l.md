@@ -3,7 +3,6 @@ title: L (Windows Debugger Glossary)
 description: Glossary page - L
 Robots: noindex, nofollow
 ms.assetid: d290c203-4cb3-423c-a41f-baabb3c9a3c1
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ See scope.
 <span id="local_debugging"></span><span id="LOCAL_DEBUGGING"></span>**local debugging**  
 This refers to a debugging session in which the debugger and the application to be debugged reside on the same computer.
 
- 
+ 
 
- 
+ 
 
 
 

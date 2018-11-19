@@ -1,6 +1,5 @@
 ---
 title: Text Strings
-author: windows-driver-content
 description: Text Strings
 ms.assetid: 773c977b-aac4-4c7c-8bab-aa2c69b2a89a
 keywords:
@@ -57,9 +56,9 @@ For additional rules pertaining to strings defined in resource files, refer to t
 
 For more information about specifying printer command escape sequences, see [Command String Format](command-string-format.md).
 
- 
+ 
 
- 
+ 
 
 
 

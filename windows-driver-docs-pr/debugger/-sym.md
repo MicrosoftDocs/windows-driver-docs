@@ -3,7 +3,6 @@ title: sym
 description: The sym extension controls noisy symbol loading and symbol prompts.
 ms.assetid: 84551b24-740c-4289-acc4-8a0053f80b41
 keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Suppresses all authentication dialog boxes when SymSrv receives an authenticatio
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,11 +73,11 @@ The **!sym prompts** and **!sym prompts off** extensions control whether authent
 
 **Note**   Noisy symbol loading should not be confused with noisy source loading -- that is controlled by the [**.srcnoisy (Noisy Source Loading)**](-srcnoisy--noisy-source-loading-.md) command.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

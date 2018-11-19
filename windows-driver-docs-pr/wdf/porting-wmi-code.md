@@ -1,6 +1,5 @@
 ---
 title: Porting WMI
-author: windows-driver-content
 description: Porting WMI
 ms.assetid: 10843A15-3F6F-4DB5-A43B-4D9964DD3312
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ For KMDF drivers, the framework provides default handling for [**IRP\_MJ\_SYSTEM
 
 For implementation details, see [Supporting WMI in KMDF Drivers](supporting-wmi-in-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

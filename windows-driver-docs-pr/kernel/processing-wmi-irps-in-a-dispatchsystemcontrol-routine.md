@@ -1,6 +1,5 @@
 ---
 title: Processing WMI IRPs in a DispatchSystemControl Routine
-author: windows-driver-content
 description: Processing WMI IRPs in a DispatchSystemControl Routine
 ms.assetid: 9f1fc209-ee32-4270-87e5-e360ca5eca17
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "DispatchSystemControl routine"]
@@ -28,9 +27,9 @@ A driver should check the input **WNODE\_*XXX*** structure at **Parameters.WMI.B
 [**IRP\_MN\_EXECUTE\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff550868)
 The driver should check for the instance name as follows:
 
--   If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is set in **WnodeHeader.Flags**, use **InstanceIndex** as an index into the driver's list of static instance names for that block.
+- If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is set in **WnodeHeader.Flags**, use **InstanceIndex** as an index into the driver's list of static instance names for that block.
 
--   If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is clear in **WnodeHeader.Flags**, use **OffsetInstanceName** as an offset to the instance name string in the input **WNODE\_*XXX*** structure. **OffsetInstanceName** is the offset in bytes from the beginning of the structure to a USHORT that indicates the length of the instance name string in bytes (not characters), including the NUL terminator if present, followed by the string itself in Unicode.
+- If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is clear in **WnodeHeader.Flags**, use **OffsetInstanceName** as an offset to the instance name string in the input **WNODE\_*XXX*** structure. **OffsetInstanceName** is the offset in bytes from the beginning of the structure to a USHORT that indicates the length of the instance name string in bytes (not characters), including the NUL terminator if present, followed by the string itself in Unicode.
 
 If the driver cannot locate the instance specified by **InstanceIndex** or **OffsetInstanceName**, it must fail the IRP with STATUS\_WMI\_INSTANCE\_NOT\_FOUND.
 
@@ -54,9 +53,9 @@ Call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware
 
 For more information, see [WMI WNODE\_*XXX* Structures](wmi-wnode-xxx-structures.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: minipkd.req
 description: The minipkd.req extension displays information about all of the currently active requests on the specified adapter or device.
 ms.assetid: 5edc00dd-9a0b-4576-a3ec-11ce22163e95
 keywords: ["minipkd.req Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the physical device object (PDO) for the Logical Unit Extension (LUN) 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +62,9 @@ Remarks
 
 The PDO for a LUN can be found in the **DevObj** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 
- 
+ 
 
- 
+ 
 
 
 

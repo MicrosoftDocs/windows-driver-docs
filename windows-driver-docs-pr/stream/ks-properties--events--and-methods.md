@@ -1,6 +1,5 @@
 ---
 title: KS Properties, Events, and Methods
-author: windows-driver-content
 description: KS Properties, Events, and Methods
 ms.assetid: 933bbe81-92d8-4bcc-b935-9ae929464ca1
 keywords:
@@ -56,9 +55,9 @@ These sections contain information about how minidrivers support the three opera
 
 [KS Methods](ks-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

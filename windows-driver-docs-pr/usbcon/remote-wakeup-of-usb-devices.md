@@ -1,7 +1,6 @@
 ---
 Description: This topic describes best practices about implementing the remote wakeup capability in a client driver.
 title: Remote Wakeup of USB Devices
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ In Windows Vista and later versions of Windows, if a USB leaf device on the bus 
 
 **Note**  UHCI (Universal Host Controller Interface) USB host controllers do not distinguish between remote wake signaling and connect change events on root hub ports. This means the system will always wake from a low system power state if a USB device is connected to or disconnected from a root hub port, if there is at least one device behind the UHCI controller that is armed for wake.
 
- 
+ 
 
 ## Related topics
 [USB Power Management](usb-power-management.md)  

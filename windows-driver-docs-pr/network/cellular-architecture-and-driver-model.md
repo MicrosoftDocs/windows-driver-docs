@@ -28,8 +28,8 @@ For Windows 10 for desktop editions, the following is required.
 
 For Windows 10 Mobile, the following is required:
 
--   Implement an IHV RIL (Radio Interface Layer) and Mobile Broadband NDIS driver for your modem hardware.
-## Windows 8.1 architecture:
+- Implement an IHV RIL (Radio Interface Layer) and Mobile Broadband NDIS driver for your modem hardware.
+  ## Windows 8.1 architecture:
 
 
 ![windows 8.1 cellular architecture](images/win81-cellular-architecture.png)
@@ -45,9 +45,9 @@ For Windows 10 Mobile, the following is required:
 
 [Mobile Broadband (MB) Design Guide](mobile-broadband--mb--design-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

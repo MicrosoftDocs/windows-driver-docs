@@ -3,7 +3,6 @@ title: for_each_function
 description: The for_each_function extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 ms.assetid: D51C3562-3D49-4528-A208-71A8756EBC8E
 keywords: ["for_each_function Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -75,7 +74,7 @@ You can use the following aliases in *CommandString*.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-_______"></span> -?   
 Displays help for this extension.
@@ -112,7 +111,7 @@ The following example shows how to list all symbols, in all modules, whose funct
 
 **Note**  Do not confuse the @\#ModuleName alias with the @\#ModName alias. The @\#ModuleName alias belongs to the [**!for\_each\_module**](-for-each-module.md) extension, and the @\#ModName alias belongs to the **!for\_each\_function** extension.
 
- 
+ 
 
 ```dbgcmd
 1: kd> !for_each_module !for_each_function -m:${@#ModuleName} -p:*CreateFile* -c:.echo @#SymbolName
@@ -161,9 +160,9 @@ fffff880`00f7c044 48895c2408      mov     qword ptr [rsp+8],rbx
 
 [**!for\_each\_module**](-for-each-module.md)
 
- 
+ 
 
- 
+ 
 
 
 

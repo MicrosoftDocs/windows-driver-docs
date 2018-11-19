@@ -46,9 +46,9 @@ This section describes the following messages:
 
 [**DRVM\_MAPPER\_PREFERRED\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff536362)
 
- 
+ 
 
- 
+ 
 
 
 

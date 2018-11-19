@@ -1,6 +1,5 @@
 ---
 title: Specifying the Reflector in an INF File
-author: windows-driver-content
 description: Specifying the Reflector in an INF File
 ms.assetid: 3676c99d-4e13-4385-910a-251232b00d4c
 keywords:
@@ -96,9 +95,9 @@ UMDF drivers cannot specify a unique service name for the reflector on operating
 
 If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Singly and Doubly Linked Lists
-author: windows-driver-content
 description: Singly and Doubly Linked Lists
 ms.assetid: 3a305f54-7866-4163-a3e4-e078d1927adc
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
@@ -176,7 +175,7 @@ To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then p
 
 **Warning**   For 64-bit Microsoft Windows operating systems, [**SLIST\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff563805) structures must be 16-byte aligned.
 
- 
+ 
 
 Windows XP and later versions of Windows provide optimized versions of the sequenced singly linked list functions that are not available in Windows 2000. If your driver uses these functions and also must run with Windows 2000, the driver must define the \_WIN2K\_COMPAT\_SLIST\_USAGE flag, as follows:
 
@@ -186,9 +185,9 @@ Windows XP and later versions of Windows provide optimized versions of the seque
 
 For x86-based processors, this flag causes the compiler to use versions of the sequenced singly linked list functions that are compatible with Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

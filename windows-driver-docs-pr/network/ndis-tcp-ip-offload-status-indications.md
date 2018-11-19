@@ -1,6 +1,5 @@
 ---
 title: NDIS TCP/IP Offload Status Indications
-author: windows-driver-content
 description: NDIS TCP/IP Offload Status Indications
 ms.assetid: 181539a5-1855-4092-86d0-e6d5eb154119
 ms.date: 07/18/2017
@@ -23,9 +22,9 @@ This section includes:
 
 [**NDIS\_STATUS\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES**](ndis-status-tcp-connection-offload-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

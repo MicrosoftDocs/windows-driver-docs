@@ -25,9 +25,9 @@ Many system area networks (SANs) lack flow control; therefore, the Windows Socke
 
 [Completing Data Transfer Requests](completing-data-transfer-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -92,9 +92,9 @@ If KMixer is inserted into the path of the capture stream, it performs sample-ra
 
 At the top-right corner of the preceding figure, the application reads the wave data from the DirectSoundCapture buffer and writes it to the file.
 
- 
+ 
 
- 
+ 
 
 
 

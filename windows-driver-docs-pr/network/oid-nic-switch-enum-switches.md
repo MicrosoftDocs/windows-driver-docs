@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_ENUM_SWITCHES
-author: windows-driver-content
 description: An overlying driver or user-mode application issues an object identifier (OID) query request of OID_NIC_SWITCH_ENUM_SWITCHES to obtain an array.
 ms.assetid: 706C3F1C-239F-4731-A38E-E150D26C79A5
 ms.date: 08/08/2017
@@ -22,7 +21,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
     **Note**  If the network adapter has no NIC switches, the driver sets the **NumElements** member of the [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451584) structure to zero and no [**NDIS\_NIC\_SWITCH\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451582) structures are returned.
 
-     
+     
 
 Remarks
 -------
@@ -31,7 +30,7 @@ Overlying drivers and user-mode applications issue OID query requests of OID\_NI
 
 **Note**  Starting with Windows Server 2012, the single root I/O virtualization (SR-IOV) interface only supports the default NIC switch on the network adapter. Therefore, the returned [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451584) structure must specify a single [**NDIS\_NIC\_SWITCH\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451582) element for the default NIC switch, which is referenced by the identifier of NDIS\_DEFAULT\_SWITCH\_ID.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -61,11 +60,11 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_SWITCHES request, it returns one o
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_INFO_ARRAY</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451577) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451577" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_INFO_ARRAY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451577)"><strong>NDIS_NIC_SWITCH_INFO_ARRAY</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -74,7 +73,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_SWITCHES request, it returns one o
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -110,9 +109,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_PARAMETERS](oid-nic-switch-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

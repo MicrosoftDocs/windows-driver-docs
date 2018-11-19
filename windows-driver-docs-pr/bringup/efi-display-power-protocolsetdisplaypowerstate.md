@@ -1,6 +1,5 @@
 ---
 title: EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState
-author: windows-driver-content
 description: EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState
 ms.assetid: ee638d05-4d0e-45b0-a733-73923a7c045a
 ms.date: 04/20/2017
@@ -63,7 +62,7 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 

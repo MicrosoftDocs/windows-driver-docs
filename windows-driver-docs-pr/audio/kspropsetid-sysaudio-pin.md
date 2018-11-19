@@ -19,9 +19,9 @@ The following property is the only member of the `KSPROPSETID_Sysaudio_Pin` prop
 
 [**KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE**](ksproperty-sysaudio-attach-virtual-source.md)
 
- 
+ 
 
- 
+ 
 
 
 

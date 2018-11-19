@@ -27,9 +27,9 @@ Because each packet context can be activated no more than one time, a static pac
 
 For more information about packet context management, see [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831) and [OID\_WWAN\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/ff569823).
 
- 
+ 
 
- 
+ 
 
 
 

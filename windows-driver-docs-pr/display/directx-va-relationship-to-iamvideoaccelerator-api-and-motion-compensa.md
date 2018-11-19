@@ -34,9 +34,9 @@ The motion compensation DDI establishes a common interface to access hardware ac
 
 For more information about the **IAMVideoAccelerator** and **IAMVideoAcceleratorNotify** interfaces, see the Windows SDK documentation. For more information about the motion compensation DDI, see [Motion Compensation](motion-compensation.md) and [Motion Compensation Callbacks](motion-compensation-callbacks.md).
 
- 
+ 
 
- 
+ 
 
 
 

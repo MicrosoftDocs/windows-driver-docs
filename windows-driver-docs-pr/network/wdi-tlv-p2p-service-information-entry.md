@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY is an unused TLV.
 ms.assetid: E9848752-DC4B-44A2-96FA-C81E9E5795AA
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

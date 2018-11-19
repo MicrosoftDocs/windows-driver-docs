@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_DISCONNECT
-author: windows-driver-content
 description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a peer.
 ms.assetid: 03566fbd-5043-4166-bd33-0ed48f85f370
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_TASK\_DISCONNECT is used to terminate a connection with a peer.
 |--------|---------------|---------------------------------------|---------------------------------|
 | Port   | No            | 2                                     | 1                               |
 
- 
+ 
 
 This command is used to disconnect from an Access Point or a Wi-Fi Direct GO, and also to disconnect clients of the port. When the disconnect is received, the port must disassociate and deauthenticate from the peer and clear the state associated with that peer. However, it must not reset any of the connection parameters that are not specific to this peer. The task must be completed only after the disconnect activity has been completed.
 
@@ -29,7 +28,7 @@ This command is used to disconnect from an Access Point or a Wi-Fi Direct GO, an
 |--------------------------------------------------------------------------------|--------------------------------|----------|----------------------------|
 | [**WDI\_TLV\_DISCONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926300) |                                |          | The disconnect parameters. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -67,9 +66,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

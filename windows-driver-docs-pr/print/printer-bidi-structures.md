@@ -1,6 +1,5 @@
 ---
 title: Printer Bidi Enumerations
-author: windows-driver-content
 description: This section provides information about the enumerations that work with the V4 print driver.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

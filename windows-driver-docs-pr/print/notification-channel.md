@@ -1,6 +1,5 @@
 ---
 title: Notification Channel
-author: windows-driver-content
 description: Notification Channel
 ms.assetid: 3161342a-0737-4f3b-bb16-32d6949bceea
 keywords:
@@ -112,11 +111,11 @@ If you meet one of these conditions, you must call **Release**. If you do not me
 
 **Note**   Calling **Release** under any of the preceding conditions but the first, in which you call **AddRef** explicitly, is an exception to general COM programming patterns. **IPrintAsyncNotifyChannel** differs from standard COM practice in this situation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

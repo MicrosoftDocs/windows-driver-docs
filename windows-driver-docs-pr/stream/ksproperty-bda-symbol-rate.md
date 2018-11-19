@@ -51,7 +51,7 @@ Clients use KSPROPERTY\_BDA\_SYMBOL\_RATE to control the symbol rate of a demodu
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,9 +65,9 @@ The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator n
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

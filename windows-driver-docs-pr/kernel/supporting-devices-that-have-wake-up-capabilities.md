@@ -1,6 +1,5 @@
 ---
 title: Supporting Devices that Have Wake-Up Capabilities
-author: windows-driver-content
 description: Supporting Devices that Have Wake-Up Capabilities
 ms.assetid: 70b9d0af-c3d7-44dc-b11a-3274391508c5
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "restoring power WDK kernel", "IRPs WDK power management", "wait/wake IRPs WDK power management", "I/O request packets WDK power management"]
@@ -26,9 +25,9 @@ The first topic of this section, [Overview of Wait/Wake Operation](overview-of-w
 
 [Canceling a Wait/Wake IRP](canceling-a-wait-wake-irp.md)
 
- 
+ 
 
- 
+ 
 
 
 

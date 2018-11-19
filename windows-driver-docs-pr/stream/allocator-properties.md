@@ -1,6 +1,5 @@
 ---
 title: Allocator Properties
-author: windows-driver-content
 description: Allocator Properties
 ms.assetid: 851bc3d8-46f6-46d0-87a8-81de2536492a
 keywords:
@@ -28,29 +27,29 @@ The [PROPSETID\_ALLOCATOR\_CONTROL](https://msdn.microsoft.com/library/windows/h
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564276)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564276" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564276)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT</strong></a></p></td>
 <td><p>Controls how a filter determines the number of video port overlay surfaces to allocate.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564278)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564278" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564278)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE</strong></a></p></td>
 <td><p>Controls the dimensions of the video port overlay surface.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564267)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564267" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564267)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS</strong></a></p></td>
 <td><p>Describes the capture capabilities of the video port.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564271)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564271" data-raw-source="[&lt;strong&gt;KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564271)"><strong>KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE</strong></a></p></td>
 <td><p>Returns if the video port supports interleaved capture.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

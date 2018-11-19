@@ -1,6 +1,5 @@
 ---
 title: Installing a Network Print Provider
-author: windows-driver-content
 description: Installing a Network Print Provider
 ms.assetid: 448101f8-cb26-4a6f-807d-f110978321da
 keywords:
@@ -21,9 +20,9 @@ To install a new network print provider, you must supply an installer that copie
 
 To create a connection to a printer supported by a network print provider, a user invokes the Add Printer Wizard and chooses the "Network printer server" option. The user specifies a print queue using the \\\\*Server*\\*Printer* format, and the provider's **OpenPrinter** function must recognize that print queue name.
 
- 
+ 
 
- 
+ 
 
 
 

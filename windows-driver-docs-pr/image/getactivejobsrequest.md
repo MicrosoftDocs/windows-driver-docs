@@ -81,9 +81,9 @@ The following code example shows a request for all active scan jobs.
 
 [**GetActiveJobsResponse**](getactivejobsresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

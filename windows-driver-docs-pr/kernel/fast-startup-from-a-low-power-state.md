@@ -1,6 +1,5 @@
 ---
 title: Fast Startup from a Low-Power State
-author: windows-driver-content
 description: Fast Startup from a Low-Power State
 ms.assetid: 1091571c-2e30-4ad5-b4b9-0f8633e68288
 ms.localizationpriority: medium
@@ -32,7 +31,7 @@ Use the following steps to achieve fast startup of a leaf-node device from a low
 
 **Note**   The preceding steps do not apply to the handling of power IRPs for any power state other than PowerSystemWorking (S0). These steps specifically apply to the handling of power IRPs for transitions from a low-power state to the power-on (S0) state.
 
- 
+ 
 
 A system startup is complete after all devices have completed their S0 power IRPs. These devices are not required, at the completion of system startup, to have completed their D0 power IRPs or to be fully functioning. The kernel power manager has a limited set of IRP dispatch queues and must use these queues to notify all devices in the system of the return to the S0 state. Drivers that fail to quickly complete their S0 power IRPs prevent drivers for other devices from receiving their S0 power IRPs. Thus, poorly designed drivers impair overall system startup performance by causing driver operations that should be performed concurrently to be performed serially.
 
@@ -48,9 +47,9 @@ For more information about power IRPs, see the following topics:
 
 [Handling IRP\_MN\_SET\_POWER for Device Power States](handling-irp-mn-set-power-for-device-power-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

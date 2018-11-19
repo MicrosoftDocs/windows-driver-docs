@@ -23,7 +23,7 @@ The driver verification log has the file name extension .DVL.XML. The log is cre
 
 **Note**  When you are ready to test your driver using the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893), you need to copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Be sure to delete the contents of the directory on the test computer before you copy the new driver verification log.
 
- 
+ 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
@@ -32,7 +32,7 @@ For the most up-to-date information about the Code Analysis tool, Static Driver 
 
 **Important**   Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the Static Tools test in HCK to fail. For HCK 2.0, the Static Tools Test only requires the presence of DVL file to show Code Analysis and SDV had been run, and does not require all rules to pass.
 
- 
+ 
 
 You can also create the driver verification log from a Visual Studio Command Prompt window. Set up the environment by running one of the following batch files.
 
@@ -61,9 +61,9 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Win8 Release" /P:Plat
 * [Analyzing Driver Quality by Using Code Analysis Tools](analyzing-driver-quality-by-using-code-analysis-tools.md)
 * [How to run Code Analysis for drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454219)
 * [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281)
- 
+ 
 
- 
+ 
 
 
 

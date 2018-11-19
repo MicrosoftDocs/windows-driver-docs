@@ -1,6 +1,5 @@
 ---
 title: Resetting State in AVStream Codecs
-author: windows-driver-content
 description: Resetting State in AVStream Codecs
 ms.assetid: c50014fe-bff0-43f4-8552-24e8e97f636b
 keywords:
@@ -24,9 +23,9 @@ A reset IOCTL is also sent in the following scenario. When the driver sets the K
 
 In this case, when the driver receives an end request without a preceding begin request, the driver should set [**KSPIN**](https://msdn.microsoft.com/library/windows/hardware/ff563483).**ResetState** to KSRESET\_END. This case applies only to output pins.
 
- 
+ 
 
- 
+ 
 
 
 

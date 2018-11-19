@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_IO_CONTROL
-author: windows-driver-content
 description: Handling SRB_FUNCTION_IO_CONTROL
 ms.assetid: 92d09a49-d8e8-4d97-b334-c42d5b04ee8d
 keywords:
@@ -27,7 +26,7 @@ All system-defined, required device I/O control requests sent to NT-based operat
 
 [SRB_IO_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddscsi/ns-ntddscsi-_srb_io_control)
 
- 
+ 
 
 
 

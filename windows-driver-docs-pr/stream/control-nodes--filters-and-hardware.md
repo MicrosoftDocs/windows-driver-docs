@@ -1,6 +1,5 @@
 ---
 title: Control Nodes, Filters and Hardware
-author: windows-driver-content
 description: Control Nodes, Filters and Hardware
 ms.assetid: c299f5d9-634f-46c9-becf-cf59aaa0257f
 keywords:
@@ -29,9 +28,9 @@ BDA control nodes in BDA receiver topology can be separated into individual filt
 
 [Control Nodes for Processing IP Data](control-nodes-for-processing-ip-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

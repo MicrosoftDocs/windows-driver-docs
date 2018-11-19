@@ -1,6 +1,5 @@
 ---
 title: How the Application Releases the WIA Device
-author: windows-driver-content
 description: How the Application Releases the WIA Device
 ms.assetid: 694daed4-d794-4835-a052-27cc498baa10
 ms.date: 04/20/2017
@@ -22,7 +21,7 @@ The WIA driver should *not* free any driver resources in this method call unless
 
 To determine the current application connection count, the WIA driver should increment a class member variable as a reference counter to keep track of the method calls to **IWiaMiniDrv::drvInitializeWia** (incrementing the counter) and **IWiaMiniDrv::drvUnInitializeWia** (decrementing the counter).
 
- 
+ 
 
 The following example shows an implementation of the **IWiaMiniDrv::drvUnInitializeWia** method.
 
@@ -65,9 +64,9 @@ HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

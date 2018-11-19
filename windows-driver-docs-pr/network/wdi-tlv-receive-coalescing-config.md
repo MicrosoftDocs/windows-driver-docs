@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCING_CONFIG
-author: windows-driver-content
 description: WDI_TLV_RECEIVE_COALESCING_CONFIG is a TLV that contains receive coalescing configuration.
 ms.assetid: 32542203-14DE-4F91-AB85-D2FA75ECAB9E
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | A filter ID with a value from 1 to the number of filters supported. |
 | UINT32 | The maximum coalescing delay in milliseconds.                       |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +63,9 @@ Requirements
 
 [OID\_WDI\_SET\_RECEIVE\_COALESCING](https://msdn.microsoft.com/library/windows/hardware/dn925941)
 
- 
+ 
 
- 
+ 
 
 
 

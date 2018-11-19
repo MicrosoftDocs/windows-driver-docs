@@ -1,6 +1,5 @@
 ---
 title: Partitioning a GPIO Controller into Banks of Pins
-author: windows-driver-content
 description: A driver developer can, as an option, partition a general-purpose I/O (GPIO) controller device into two or more banks of GPIO pins.
 ms.assetid: D9425459-E052-48D8-A4F3-91387AE7059A
 ms.date: 04/20/2017
@@ -30,9 +29,9 @@ To determine whether a bank of GPIO pins supports component-level power manageme
 
 If a GPIO bank supports component-level power management, GpioClx enables a transition to the F1 power state when the bank is idle. Before the bank enters the F1 state, GpioClx calls the [*CLIENT\_SaveBankHardwareContext*](https://msdn.microsoft.com/library/windows/hardware/hh439419) event callback function to tell the driver to save the hardware context (chiefly, the register contents) of the bank. Later, after the bank enters the F0 state, GpioClx calls the [*CLIENT\_RestoreBankHardwareContext*](https://msdn.microsoft.com/library/windows/hardware/hh439414) event callback function to tell the driver to restore the previously saved hardware context.
 
- 
+ 
 
- 
+ 
 
 
 

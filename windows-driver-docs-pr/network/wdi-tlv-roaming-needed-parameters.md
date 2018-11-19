@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ROAMING_NEEDED_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED payload.
 ms.assetid: 152F923C-ECAE-4D50-A7B4-4B2309D5A3B5
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_ASSOC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn897725) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://msdn.microsoft.com/library/windows/hardware/dn925958) is triggered, this reason is forwarded to it. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Feeder Scanner Architecture
-author: windows-driver-content
 description: Feeder Scanner Architecture
 ms.assetid: 02157a88-fccd-4a23-a4ee-174755c8d3aa
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The following topics describe examples of flatbed scanners that support document
 
 [Advanced Duplex-Capable Document Feeder](advanced-duplex-capable-document-feeder.md)
 
- 
+ 
 
- 
+ 
 
 
 

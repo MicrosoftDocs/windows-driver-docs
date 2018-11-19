@@ -73,9 +73,9 @@ In order to make nonlocal video memory accessible to a user-mode process it is n
 
 If the driver returns DDHAL\_DRIVER\_HANDLED for a lock of an AGP surface the kernel code returns the value of **lpSurfData** in the [**DD\_LOCKDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551637) data structure to the runtime and application. If the driver returns DDHAL\_DRIVER\_NOTHANDLED the kernel simply returns the value of **fpVidMem** to user mode. Therefore, it is not necessary to return DDHAL\_DRIVER\_HANDLED as long as **fpVidMem** is updated to point to the new user-mode pointer. However, we recommend that the driver both set **fpVidMem** and **lpSurfData** and return DDHAL\_DRIVER\_HANDLED.
 
- 
+ 
 
- 
+ 
 
 
 

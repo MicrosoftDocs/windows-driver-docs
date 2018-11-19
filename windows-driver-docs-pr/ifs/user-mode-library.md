@@ -1,6 +1,5 @@
 ---
 title: User-Mode Library
-author: windows-driver-content
 description: User-Mode Library
 ms.assetid: a471ae15-bbdd-47c8-ad77-9b82281dd430
 keywords:
@@ -84,9 +83,9 @@ The following support routines are provided for responding to communication init
 
 [**FilterReplyMessage**](https://msdn.microsoft.com/library/windows/hardware/ff541508)
 
- 
+ 
 
- 
+ 
 
 
 

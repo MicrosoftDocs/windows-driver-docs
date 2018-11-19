@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  This page assumes that you are familiar with the information and diagrams in [Overview of the Hyper-V Extensible Switch](overview-of-the-hyper-v-extensible-switch.md) and [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 Packet traffic that moves over the Hyper-V extensible switch data path is obtained by extensions in the following way:
 
@@ -28,7 +28,7 @@ When NDIS calls [*FilterSendNetBufferLists*](https://msdn.microsoft.com/library/
 
 **Note**  If each packet in the linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures uses the same source port, the extension should set the **NDIS\_SEND\_COMPLETE\_FLAGS\_SWITCH\_SINGLE\_SOURCE** flag in the *SendCompleteFlags* parameter of [**NdisFSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff562618) when it completes the send request.
 
- 
+ 
 
 <a href="" id="ndis-send-flags-switch-destination-group"></a>**NDIS\_SEND\_FLAGS\_SWITCH\_DESTINATION\_GROUP**  
 If this flag is set, all packets in a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures are to be forwarded to the same extensible switch destination port.
@@ -39,13 +39,13 @@ Capturing and filtering extensions cannot use this flag.
 
 **Note**  The forwarding extension only determines the packet's destination ports for non-NVGRE packets. If the packet is an NVGRE packet, the Hyper-V Network Virtualization (HNV) component determines the packet's destination ports and forwards the packet. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
- 
+ 
 
 For the best performance, forwarding extensions should set this flag if all packets in the linked list are to be forwarded to the same destination port. By setting this flag, the extension is acknowledging that all packets in the linked list have the same destination port elements in the extensible switch forwarding context.
 
 **Note**  The forwarding extension must not set this flag for a linked list of packets that have multiple destination ports.
 
- 
+ 
 
 The following flags may be set in the *ReceiveFlags* parameter of [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960) or [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820):
 
@@ -56,7 +56,7 @@ When NDIS calls [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/libra
 
 **Note**  If each packet in the linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures use the same source port, the extension should set the **NDIS\_RETURN\_FLAGS\_SWITCH\_SINGLE\_SOURCE** flag in the *ReturnFlags* parameter of [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964) when the receive request completes. The extension must set this flag in the *ReturnFlags* parameter if it calls [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613) to return packets that it did not originate or clone.
 
- 
+ 
 
 <a href="" id="ndis-receive-flags-switch-destination-group"></a>**NDIS\_RECEIVE\_FLAGS\_SWITCH\_DESTINATION\_GROUP**  
 If this flag is set, all packets in a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures are to be forwarded to the same extensible switch destination port.
@@ -65,11 +65,11 @@ When NDIS calls [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/libra
 
 **Note**  When an extension calls [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820), it must not set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter. The extensible switch interface ignores this flag and will complete the receive indication by calling [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

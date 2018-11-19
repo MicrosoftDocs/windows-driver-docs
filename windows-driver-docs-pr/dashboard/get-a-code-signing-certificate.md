@@ -2,6 +2,7 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -72,11 +73,11 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 </tbody>
 </table>
 
- 
+ 
 > [!NOTE] 
 > The Hardware Dev Center dashboard will enforce mandatory EV certificates for submissions later this year.
 
- 
+ 
 
 ### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
@@ -157,7 +158,7 @@ Once the certificate authority has verified your contact information and your ce
 **Note**  
 You must use the same computer and browser to retrieve your certificate.
 
- 
+ 
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
@@ -238,13 +239,13 @@ This table summarizes the driver signing requirements for Windows.
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
- 
+ 
 
 \*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://technet.microsoft.com/library/mt219733.aspx).
 
 (1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
 
- 
+ 
 
- 
+ 
 

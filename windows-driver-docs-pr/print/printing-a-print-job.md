@@ -1,6 +1,5 @@
 ---
 title: Printing a Print Job
-author: windows-driver-content
 description: Printing a Print Job
 ms.assetid: 2e881f99-9dbe-4e89-8628-feb05137c9b0
 keywords:
@@ -35,9 +34,9 @@ The **ReadPort** function is used for obtaining status information from bidirect
 
 If printing hardware is bidirectional, both its language monitor and its port monitor should support a **GetPrinterDataFromPort** function. A language monitor's **GetPrinterDataFromPort** function should accept a registry value name as input, obtain a value for that name (generally by calling associated port monitor's **WritePort** and **ReadPort** functions), and return the value to the caller. A port monitor's **GetPrinterDataFromPort** function should accept an I/O control code as input, call [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) (described in the Windows SDK documentation) to pass the control code to the port driver, and return the result.
 
- 
+ 
 
- 
+ 
 
 
 

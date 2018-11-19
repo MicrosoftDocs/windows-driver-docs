@@ -1,6 +1,5 @@
 ---
 title: Processing I/O Requests
-author: windows-driver-content
 description: Processing I/O Requests
 ms.assetid: d12e879e-3aeb-4e88-82de-47e06e7ac482
 keywords:
@@ -32,9 +31,9 @@ ms.localizationpriority: medium
 -   [Handling Client Impersonation in UMDF 1.x Drivers](handling-client-impersonation-in-umdf-1-x-drivers.md)
 -   [Preventing an Imbalance of Create and Close Notifications to a Driver](preventing-an-imbalance-of-create-and-close-notifications-to-a-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

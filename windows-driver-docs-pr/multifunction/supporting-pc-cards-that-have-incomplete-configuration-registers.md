@@ -1,6 +1,5 @@
 ---
 title: Supporting PC Cards That Have Incomplete Configuration Registers
-author: windows-driver-content
 description: Supporting PC Cards That Have Incomplete Configuration Registers
 ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
 keywords:
@@ -145,14 +144,13 @@ PCCardConfig = 49(W)                    ; ConfigIndex
 MSFT = "Microsoft"
 M_Supra = "Supra"
 Supra1 = "Supra Dual 56K modem"
- 
 ```
 
 An INF like the one shown above copies the ID and resource information for the child functions to the registry. The mf.sys driver retrieves the information from the registry when it enumerates the child functions of the device.
 
- 
 
- 
+
+
 
 
 

@@ -3,7 +3,6 @@ title: .pcmd (Set Prompt Command)
 description: The .pcmd command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the Debugger Command window with register or target state information.
 ms.assetid: 8cda10c3-860c-453d-9fdd-0dfc74d71c53
 keywords: [".pcmd (Set Prompt Command) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.pcmd** command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the [Debugger Command window](debugger-command-window.md) with register or target state information.
 
-```
+```dbgcmd
 .pcmd -s CommandString 
 .pcmd -c 
 .pcmd 
@@ -57,7 +56,7 @@ Deletes any existing prompt command string.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -109,9 +108,9 @@ Prymes!isPrime+0x9f:
 $tpid=0000080c $tid=00000514
 ```
 
- 
+ 
 
- 
+ 
 
 
 

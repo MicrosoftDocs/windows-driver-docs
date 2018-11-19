@@ -16,9 +16,9 @@ We recommend that you remove any code that parses the packet payload, particular
 
 Miniport drivers should avoid parsing the packet data. They should not try to handle offload operations that the hardware cannot handle. In the receive side of the system, be very careful about how your driver inspects packet payload information. The send side of the driver could also be potentially affected with routed/bridged system configurations.
 
- 
+ 
 
- 
+ 
 
 
 

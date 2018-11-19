@@ -32,7 +32,7 @@ The DEVPKEY_Device_BusTypeGuid device property represents the GUID that identifi
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_GUID</strong>](devprop-type-guid.md)</p></td>
+<td align="left"><p><a href="devprop-type-guid.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_GUID&lt;/strong&gt;](devprop-type-guid.md)"><strong>DEVPROP_TYPE_GUID</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -49,7 +49,7 @@ The DEVPKEY_Device_BusTypeGuid device property represents the GUID that identifi
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -89,9 +89,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

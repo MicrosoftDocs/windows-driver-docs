@@ -1,6 +1,5 @@
 ---
 title: Sample Device and Driver Configuration
-author: windows-driver-content
 description: Sample Device and Driver Configuration
 ms.assetid: 803262b2-0882-46d0-9c4f-63e59eb4beaa
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "keyboards WDK kernel", "mouse WDK kernel", "hardware configurations WDK kernel", "intermediate drivers WDK kernel"]
@@ -38,9 +37,9 @@ A corresponding [*port driver*](https://msdn.microsoft.com/library/windows/hardw
 
 A new intermediate driver, such as a PnP filter driver, could be added to the configuration in the figure illustrating the keyboard and mouse driver layers. For example, a filter driver added above the keyboard class driver might filter keyboard input in a platform-specific manner before passing it through the I/O services to the subsystem that requested it. Such a filter driver must recognize the same IRPs and IOCTLs as the keyboard class driver.
 
- 
+ 
 
- 
+ 
 
 
 

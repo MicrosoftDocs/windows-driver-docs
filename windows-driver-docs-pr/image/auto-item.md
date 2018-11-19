@@ -1,6 +1,5 @@
 ---
 title: Auto Item
-author: windows-driver-content
 description: Auto Item
 ms.assetid: 59f9b71b-e4bd-44a3-a4f2-dfea9f1045e2
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ The WIA architecture does not permit a scanner device operating in auto-configur
 
 A WIA minidriver for a scanner device that supports auto-configured scanning should set the AUTO\_SOURCE flag bit in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551379) property value implemented by the root item in the WIA tree. A WIA application can query this property to determine whether the WIA item tree for the device contains an auto item.
 
- 
+ 
 
- 
+ 
 
 
 

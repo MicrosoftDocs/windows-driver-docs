@@ -1,6 +1,5 @@
 ---
 title: Defining WMI Instance Names
-author: windows-driver-content
 description: Defining WMI Instance Names
 ms.assetid: 0f91710a-7bd2-462a-b677-6dd32160a861
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "dynamic instance names WDK WMI", "static instance names WDK WMI", "instance names WDK WMI", "WMI WDK kernel , instance names"]
@@ -42,9 +41,9 @@ In most cases, static instance names are preferable to dynamic instance names fo
 
 A driver indicates whether a block uses static or dynamic instance names, and the type of static instance names, by setting or clearing WMIREG\_FLAG\_*XXX* in the [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827) or [**WMIGUIDREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565811) structure it passes to WMI when it registers the block. For more information, see [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

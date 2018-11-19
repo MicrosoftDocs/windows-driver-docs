@@ -1,7 +1,6 @@
 ---
 Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
 title: Microsoft USB Test Tool (MUTT) devices
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -80,7 +79,7 @@ Use the following flow chart to determine how to power the MUTT Pack:
 
 **Note**  Do not use the MUTT Pack without the power jumper.
 
- 
+ 
 
 ![incorrect usage](images/fig5-muttpackincorrectusage.png)
 
@@ -94,7 +93,7 @@ This image shows how to use the jumper for powering the MUTT pack with an extern
 
 **Note**  Disconnect any existing power adapters and the cable to the host system when you are changing the jumper on the MUTT Pack.
 
- 
+ 
 
 ## SuperMUTT
 
@@ -113,7 +112,7 @@ The SuperMUTT Pack is two devices in one. It is a USB 3.0 hub with a Cypress FX2
 
 **Note**  The downstream device is a 2.0 device, not a USB 3.0 device.
 
- 
+ 
 
 ![supermutt pack](images/supermuttpack.png)
 

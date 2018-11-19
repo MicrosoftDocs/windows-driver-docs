@@ -3,7 +3,6 @@ title: usbkd.usb2tree
 description: The usbkd.usb2tree command displays USB 2.0 tree.
 ms.assetid: 6BEFE154-C8F0-466C-AB68-71C6304D0DEA
 keywords: ["usbkd.usb2tree Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -36,7 +35,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 **Note**  The DML feature is available in WinDbg, but not in Visual Studio or KD.
 
- 
+ 
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -62,9 +61,9 @@ For more information about these drivers, see [USB Driver Stack Architecture](ht
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

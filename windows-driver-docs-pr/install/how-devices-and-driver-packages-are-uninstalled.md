@@ -25,7 +25,7 @@ These actions include the following:
 
 **Note**  These actions do not need to be performed in sequential order.
 
- 
+ 
 
 ### <a href="" id="uninstalling-the-device"></a> Uninstalling the Device
 
@@ -43,7 +43,7 @@ This uninstall action does not undo all the actions that were performed during t
 
 **Note**  After this uninstall action is finished, the devnode for the device no longer exists, however, the [driver package](driver-packages.md) is still present in the [driver store](driver-store.md). If the PnP manager re-enumerates the device (such as when the device is unplugged and then plugged in again), the PnP manager treats it as a new device instance and installs the driver package from the driver store.
 
- 
+ 
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
@@ -55,7 +55,7 @@ Before deleting a driver package from the driver store, be sure to uninstall all
 
 **Important**  You must not manually delete the [driver package](driver-packages.md) from the [driver store](driver-store.md). Doing so can cause an inconsistency between the INF fie, the driver store catalog, and the driver in the driver store. You might also be unable to stage the same driver package to the driver store.
 
- 
+ 
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 
@@ -65,9 +65,9 @@ When you uninstall a driver package, the associated driver binaries might still 
 
 
 
- 
+ 
 
- 
+ 
 
 
 

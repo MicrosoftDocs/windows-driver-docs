@@ -31,9 +31,9 @@ The following topics provide information with regard to the support of font and 
 
 [Drawing Text](drawing-text.md)
 
- 
+ 
 
- 
+ 
 
 
 

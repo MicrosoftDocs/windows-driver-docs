@@ -49,9 +49,9 @@ msbuild /t:sdv /p:Inputs="/check:D:\SDV\MyRules.sdv" mydriver.VcxProj /p:Configu
 
 The rule list files that you create to list the rules for a verification have the .sdv file name extension. The SDV source code files for rules have a .slic file name extension.
 
- 
+ 
 
- 
+ 
 
 
 

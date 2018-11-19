@@ -22,9 +22,9 @@ The following procedures show how to obtain the user-mode (ring 3) handles.
 
 To get the DirectDraw handle for a DirectDraw object:
 
-1.  Call **QueryInterface(***lpDD*, &*IID\_IDirectDrawKernel*, &*pNewInterface***)** on the DirectDraw interface.
+1. Call **QueryInterface(**<em>lpDD</em>, &*IID\_IDirectDrawKernel*, &<em>pNewInterface</em>**)** on the DirectDraw interface.
 
-2.  Call the [**IDirectDrawKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567404) method on the new interface.
+2. Call the [**IDirectDrawKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567404) method on the new interface.
 
 The **IDirectDrawKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDraw object. To release the handle, use the [**IDirectDrawKernel::ReleaseKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567407) method.
 
@@ -47,9 +47,9 @@ if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 
 To get the DirectDrawSurface handle:
 
-1.  Call **QueryInterface(***lpSurface*, &*IID\_IDirectDrawSurfaceKernel*, &*pDDSK***)** on the DirectDrawSurface interface.
+1. Call **QueryInterface(**<em>lpSurface</em>, &*IID\_IDirectDrawSurfaceKernel*, &<em>pDDSK</em>**)** on the DirectDrawSurface interface.
 
-2.  Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567411) method on the new interface.
+2. Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567411) method on the new interface.
 
 The **IDirectDrawSurfaceKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDrawSurface driver. To release the handle, use the [**IDirectDrawSurfaceKernel::ReleaseKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567413) method.
 
@@ -69,9 +69,9 @@ if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

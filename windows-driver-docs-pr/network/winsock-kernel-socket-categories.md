@@ -32,7 +32,7 @@ Connection-oriented sockets are used to send and receive network data over estab
 
 <a href="" id="stream-sockets-------"></a>**Stream Sockets**   
 Stream sockets are used to either listen for incoming connections from remote transport addresses (act as a listening socket), or to send and receive network data over established connections (act as a connection-oriented socket). Use a stream socket when you do not know at the time of socket creation if you want a listening socket or a connection-oriented socket. The functionality of a stream socket includes all of the functionality of a basic socket.
- 
+ 
 
 
 

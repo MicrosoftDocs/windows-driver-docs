@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -31,9 +31,9 @@ After the NetDMA interface calls *ProviderFreeDmaChannel*, it will not call any 
 
 The NetDMA interface frees all of the allocated DMA channels before it returns from the [**NetDmaProviderStop**](https://msdn.microsoft.com/library/windows/hardware/ff568335) function. For more information about stopping a NetDMA provider, see [Stopping a NetDMA Provider](stopping-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

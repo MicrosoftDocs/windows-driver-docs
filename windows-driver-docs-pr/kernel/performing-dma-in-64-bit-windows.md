@@ -1,6 +1,5 @@
 ---
 title: Performing DMA in 64-Bit Windows
-author: windows-driver-content
 description: Performing DMA in 64-Bit Windows
 ms.assetid: 3ef00c05-356d-488a-8422-503d8132344d
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "DMA transfers WDK kernel , 64-bit Windows", "double-buffering WDK 64-bit", "Direct Memory Access WDK kernel", "polymorphism WDK 64-bit", "data structures WDK 64-bit", "unsigned operations WDK 64-bit", "signed operations WDK 64-bit", "pointer arithmetic WDK 64-bit"]
@@ -32,9 +31,9 @@ To support 64-bit DMA, drivers should observe the following guidelines:
 
 The DMA routines in 32-bit Windows are 64-bit-ready. If your device driver uses these routines correctly, your DMA code should work without modification on 64-bit Windows.
 
- 
+ 
 
- 
+ 
 
 
 

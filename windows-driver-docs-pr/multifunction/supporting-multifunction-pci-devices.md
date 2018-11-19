@@ -1,6 +1,5 @@
 ---
 title: Supporting Multifunction PCI Devices
-author: windows-driver-content
 description: Supporting Multifunction PCI Devices
 ms.assetid: 57cbbcdb-7201-4bf4-a2a0-e613607e4509
 keywords:
@@ -42,9 +41,9 @@ As shown in the previous figure, rather than enumerating one multifunction devic
 
 The illustration focuses on the function driver and bus driver for each function and their associated FDO and PDO. Any filter drivers (and filter DOs) are omitted for simplicity.
 
- 
+ 
 
- 
+ 
 
 
 

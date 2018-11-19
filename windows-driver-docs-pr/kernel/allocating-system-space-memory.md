@@ -1,6 +1,5 @@
 ---
 title: Allocating System-Space Memory
-author: windows-driver-content
 description: Allocating System-Space Memory
 ms.assetid: eee425b3-6ddd-4e9d-b51d-1f2c9ea106a5
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "I/O buffer memory allocations WDK kernel", "buffer memory allocations WDK kernel"]
@@ -42,15 +41,15 @@ Drivers can also call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/lib
 
     **Note**  Starting with Windows Vista, the system automatically adds the additional memory so two allocations are unnecessary.
 
-     
+     
 
 -   *PoolType* = **PagedPool** for memory that is always accessed at IRQL &lt;= APC\_LEVEL and is not in the file system's write path.
 
 **ExAllocatePoolWithTag** returns a **NULL** pointer if it cannot allocate the requested number of bytes. Drivers should always check the returned pointer. If its value is **NULL**, the **DriverEntry** routine (or any other driver routine that returns NTSTATUS values) should return STATUS\_INSUFFICIENT\_RESOURCES or handle the error condition if possible.
 
- 
+ 
 
- 
+ 
 
 
 

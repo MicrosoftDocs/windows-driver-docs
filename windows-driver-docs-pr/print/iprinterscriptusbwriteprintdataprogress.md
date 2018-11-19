@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbWritePrintDataProgress interface
-author: windows-driver-content
 description: The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the writePrintData JavaScript function call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -45,11 +44,11 @@ The **IPrinterScriptUsbWritePrintDataProgress** interface has these methods.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>ProcessedByteCount</strong>](iprinterscriptusbwriteprintdataprogress-processedbytecount.md)</td>
+<td><a href="iprinterscriptusbwriteprintdataprogress-processedbytecount.md" data-raw-source="[&lt;strong&gt;ProcessedByteCount&lt;/strong&gt;](iprinterscriptusbwriteprintdataprogress-processedbytecount.md)"><strong>ProcessedByteCount</strong></a></td>
 <td><p>Returns the number of bytes that the IHV JavaScript function has processed by the time this method was called.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>ProcessedByteCount</strong>](iprinterscriptusbwriteprintdataprogress-processedbytecount-in.md)</td>
+<td><a href="iprinterscriptusbwriteprintdataprogress-processedbytecount-in.md" data-raw-source="[&lt;strong&gt;ProcessedByteCount&lt;/strong&gt;](iprinterscriptusbwriteprintdataprogress-processedbytecount-in.md)"><strong>ProcessedByteCount</strong></a></td>
 <td><p>Sets the number of bytes that the IHV JavaScript function has processed at the time this method was called.</p></td>
 </tr>
 </tbody>

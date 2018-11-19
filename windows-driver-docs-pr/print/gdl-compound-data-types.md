@@ -1,6 +1,5 @@
 ---
 title: GDL Compound Data Types
-author: windows-driver-content
 description: GDL Compound Data Types
 ms.assetid: c0e623f2-cb98-4fed-82ad-cc38ea4b0aa0
 keywords:
@@ -26,9 +25,9 @@ The following compound data types are used for GDL templates:
 
 For more information about issues that relate to compound data types, see [GDL Template Data Type Issues](compound-template-data-type-issues.md).
 
- 
+ 
 
- 
+ 
 
 
 

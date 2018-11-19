@@ -1,6 +1,5 @@
 ---
 title: UMDF Driver Host Process
-author: windows-driver-content
 description: This topic describes the User-Mode Driver Framework (UMDF) driver host process and how it works with other UMDF components. It applies to both UMDF versions 1 and 2.
 ms.assetid: 8b469c91-d33d-4fb0-8c7d-e90f86a1e339
 keywords:
@@ -38,9 +37,9 @@ However, you cannot load UMDF version 1 and 2 drivers in the same device stack. 
 
 For a diagram that shows how the driver host relates to other UMDF components, see [Overview of UMDF](overview-of-the-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

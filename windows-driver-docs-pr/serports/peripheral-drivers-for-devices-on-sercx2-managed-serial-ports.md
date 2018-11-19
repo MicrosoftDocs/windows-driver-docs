@@ -1,6 +1,5 @@
 ---
 title: Peripheral Drivers for Devices on SerCx2-Managed Serial Ports
-author: windows-driver-content
 description: Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device.
 ms.assetid: 06412F66-3192-4D25-BDBA-FAB2211519DA
 ms.date: 04/20/2017
@@ -61,9 +60,9 @@ GPIO interrupts are only one way for the peripheral driver to receive notificati
 
 However, the serial controller can detect hardware events only when it is in the D0 device power state. If the serial controller is in a low-power state, the peripheral driver cannot rely on notifications from the serial controller to know when, for example, the peripheral device has new data for the driver to read. In this case, the peripheral device must send an interrupt signal (or, perhaps, a wake signal) through a GPIO pin. A GPIO controller consumes very little power and typically remains active after most other devices have entered low-power states.
 
- 
+ 
 
- 
+ 
 
 
 

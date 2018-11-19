@@ -1,6 +1,5 @@
 ---
 title: Using Packet-Based Bus-Master DMA
-author: windows-driver-content
 description: Using Packet-Based Bus-Master DMA
 ms.assetid: 57b37103-8ae0-4c54-b613-55b1a629d9ae
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
@@ -36,9 +35,9 @@ Individual drivers call this sequence of support routines at different points, d
 
 Instead of using the routines described in this section, any driver that uses packet-based DMA can use support routines intended to streamline scatter/gather DMA, regardless of whether its device has built-in scatter/gather support. See [Using Scatter/Gather DMA](using-scatter-gather-dma.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

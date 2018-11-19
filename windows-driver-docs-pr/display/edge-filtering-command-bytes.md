@@ -45,9 +45,9 @@ The macroblock data is returned from the accelerator to the host in the form of 
 
 Residual difference blocks within a macroblock are returned in the order specified in MPEG-2 Figures 6-10, 6-11, and 6-12 (raster-scan order for Y blocks of the macroblock, followed by the 4:2:0 block of Cb, followed by the 4:2:0 block of Cr. If in a 4:2:2 or a 4:4:4 sampling operation, the 4:2:0 blocks are followed by the 4:2:2 block of Cb, followed by the 4:2:2 block of Cr. If in 4:4:4 sampling operation, the 4:2:2 blocks are followed by the 4:4:4 blocks of Cb, followed by the 4:4:4 blocks of Cr).
 
- 
+ 
 
- 
+ 
 
 
 

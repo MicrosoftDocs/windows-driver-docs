@@ -3,7 +3,6 @@ title: Analyzing a Capture Stall
 description: Analyzing a Capture Stall
 ms.assetid: 9a88deba-374c-4ccc-8bb8-18e3b4124158
 keywords: ["kernel streaming debugging, blah"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -73,9 +72,9 @@ Suspect Filters (For a Hung Graph):
 
 From this information, the analyzer suggests that either emu10k or WaveCyclic may be at fault. It also provides a list of the suspect IRPs; these are the IRPs that are queued to emu10k's input pin. If any of those IRPs were to complete, splitter would copy data and complete an IRP and the graph would progress. For some reason, emu10k is not completing those capture Irps.
 
- 
+ 
 
- 
+ 
 
 
 

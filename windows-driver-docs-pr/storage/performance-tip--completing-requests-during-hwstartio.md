@@ -1,6 +1,5 @@
 ---
 title: Performance Tip Completing Requests During HwStartIo
-author: windows-driver-content
 description: Performance Tip Completing Requests During HwStartIo
 ms.assetid: b1a3feff-ca18-4757-a336-c70ada998ba9
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ By completing outstanding I/O requests that are ready for completion in its [**H
 
 While in its [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423) routine, a miniport should check for completed requests after starting the requested I/O operation.
 
- 
+ 
 
- 
+ 
 
 
 

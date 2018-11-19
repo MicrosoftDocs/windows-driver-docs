@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Components
-author: windows-driver-content
 description: WIA Driver Components
 ms.assetid: 2c854945-2eda-4f4c-9cf6-5525e6e237ed
 ms.date: 04/20/2017
@@ -39,9 +38,9 @@ This sections provides additional information about the WIA minidriver and its c
 
 [WIA Components](wia-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

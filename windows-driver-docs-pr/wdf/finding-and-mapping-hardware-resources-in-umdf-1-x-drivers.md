@@ -1,6 +1,5 @@
 ---
 title: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
-author: windows-driver-content
 description: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 ms.assetid: 51CB254D-1B2C-43F5-925A-209810E2F5FC
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ If the driver receives memory-mapped registers, the driver must call [**IWDFDevi
 
 For an example that shows how a driver finds and maps memory-mapped register resources, see [**IWDFDevice3::MapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/hh451225).
 
- 
+ 
 
- 
+ 
 
 
 

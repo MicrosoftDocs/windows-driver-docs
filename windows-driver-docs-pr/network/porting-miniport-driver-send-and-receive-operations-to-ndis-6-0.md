@@ -37,9 +37,9 @@ Additional information about porting send and receive operations is included in 
 
 [Porting NDIS Miniport Driver Receive Data Handling](porting-ndis-miniport-driver-receive-data-handling.md)
 
- 
+ 
 
- 
+ 
 
 
 

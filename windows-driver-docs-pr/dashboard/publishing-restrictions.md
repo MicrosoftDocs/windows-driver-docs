@@ -2,6 +2,7 @@
 title: Publishing restrictions
 description: The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
 ms.assetid: 30D23457-6BE1-4A4C-B69A-3C8C0A8E093A
+ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -58,7 +59,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 <td><p>Classcode declarations</p></td>
 <td><p>\CLASS</p>
 <p>\CC</p>
-<p>\&</p></td>
+<p>&amp;</p></td>
 </tr>
 <tr class="even">
 <td><p>Two-part HWIDs</p></td>
@@ -84,7 +85,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 <p>ISAPNP\PNP</p>
 <p>SERENUM\PNP</p>
 <p>PNP</p>
-<p>*PNP</p>
+<p><em>PNP</p>
 <p>BIOS\PNP</p>
 <p>ACPI\PNP</p></td>
 </tr>
@@ -95,7 +96,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 </tr>
 <tr class="even">
 <td><p>Invalid HWIDs</p></td>
-<td><p>*DONTUSE</p>
+<td><p></em>DONTUSE</p>
 <p>SERIAL_MOUSE</p>
 <p>Root\circlass</p>
 <p>Hid\irdevice</p>
@@ -105,13 +106,13 @@ Examples of these restrictions include, but are not limited to the list in the f
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the driver publishing workflow, see [Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374).
 
- 
+ 
 
- 
+ 
 
 
 

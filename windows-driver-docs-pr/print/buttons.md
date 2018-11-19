@@ -1,6 +1,5 @@
 ---
 title: buttons element
-author: windows-driver-content
 description: The required buttons element specifies one or more buttons that are displayed in the event notification message box on the client computer.
 ms.assetid: bf3718c0-37d9-4b73-a015-8a5a95535381
 keywords: ["buttons element Print Devices"]
@@ -51,7 +50,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>button</strong>](button.md)</p></td>
+<td><p><a href="button.md" data-raw-source="[&lt;strong&gt;button&lt;/strong&gt;](button.md)"><strong>button</strong></a></p></td>
 <td><p></p>
 <p>A required element that specifies the characteristics of a button in a message box that is displayed on the client computer.</p></td>
 </tr>
@@ -74,7 +73,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>messageBoxUI</strong>](messageboxui.md)</p></td>
+<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message box on the client computer.</p></td>
 </tr>

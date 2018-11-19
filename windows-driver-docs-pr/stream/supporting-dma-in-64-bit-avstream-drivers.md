@@ -1,6 +1,5 @@
 ---
 title: Supporting DMA in 64-Bit AVStream Drivers
-author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords:
@@ -80,9 +79,9 @@ This code example works on 64-bit as well as 32-bit platforms. If the driver doe
 
 In addition, when authoring a 64-bit AVStream driver, minimize the number of concurrent frame locks held. Since AVStream generates scatter/gather mappings when the minidriver first locks frames, your driver might run out of resources if it does not follow this guideline. In particular, if you are writing a driver to run on a Win64 platform with a 32-bit card, increasing the number of simultaneous locks increases the chance that a lock will fail because low memory buffers are a limited resource.
 
- 
+ 
 
- 
+ 
 
 
 

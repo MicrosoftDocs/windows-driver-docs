@@ -1,6 +1,5 @@
 ---
 title: Managing Buffer Access Methods in UMDF Drivers
-author: windows-driver-content
 description: If you are writing a UMDF driver, you can specify preferences for the buffer access method that the framework uses for read and write requests, as well as device I/O control requests.
 ms.assetid: BDB78BCD-1964-431B-BE99-CABA6DF44D7A
 ms.date: 04/20/2017
@@ -63,9 +62,9 @@ However, the [definitions](https://msdn.microsoft.com/library/windows/hardware/f
 
 You should enable support of IOCTL requests that use the "neither" method only if you are sure that UMDF can convert the access method to buffered I/O or direct I/O. For example, if the IOCTL specifies a customized request that does not follow the buffer specification rules that are described at [Buffer Descriptions for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff540663), UMDF cannot convert the buffers.
 
- 
+ 
 
- 
+ 
 
 
 

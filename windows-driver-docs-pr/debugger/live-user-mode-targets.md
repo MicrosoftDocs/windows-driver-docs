@@ -3,7 +3,6 @@ title: Live User-Mode Targets
 description: Live User-Mode Targets
 ms.assetid: 2709dd01-6486-471d-afa1-a8441665da8d
 keywords: ["Debugger Engine API, targets, user-mode", "Debugger Engine API, disconnecting from a process", "Debugger Engine API, process options"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ A user-mode process can be created using [**Create Process**](https://msdn.micro
 
 **Note**   The engine doesn't completely attach to the process until the [**WaitForEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561229) method has been called. Only after the process has generated an event -- for example, the process creation event -- does it become available in the debugger session. See [Debugging Session and Execution Model](debugging-session-and-execution-model.md) for more details.
 
- 
+ 
 
 The method [**GetRunningProcessSystemIds**](https://msdn.microsoft.com/library/windows/hardware/ff548265) will return the process IDs of all the running processes on the computer. The process ID of a particular program can be found using [**GetRunningProcessSystemIdByExecutableName**](https://msdn.microsoft.com/library/windows/hardware/ff548254). Given a process ID, a description of the process is returned by [**GetRunningProcessDescription**](https://msdn.microsoft.com/library/windows/hardware/ff548243).
 
@@ -40,9 +39,9 @@ There are three different ways for the engine to disconnect from a process.
 
 3.  *Abandon*. Remove the process from the list of processes being debugged. The operating system will still consider the process as being debugged and it will remain suspended until another debugger attaches to it or it is killed. [**AbandonCurrentProcess**](https://msdn.microsoft.com/library/windows/hardware/ff537786) will abandon the current process.
 
- 
+ 
 
- 
+ 
 
 
 

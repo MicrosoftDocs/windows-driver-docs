@@ -3,7 +3,6 @@ title: vpb
 description: The vpb extension displays a volume parameter block (VPB).
 ms.assetid: 978d4ec8-6141-4656-9e5c-266de91c9440
 keywords: ["vpb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the VPB.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +109,9 @@ RefCount: 14
 Volume Label:           MY-DISK-C
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Understanding TPS Components
-author: windows-driver-content
 description: Understanding TPS Components
 ms.assetid: 4bc962fa-8c05-4b0f-b634-9c0f435907b7
 keywords: ["transaction processing systems WDK KTM , components", "TPS WDK KTM , components", "transaction processing systems WDK KTM , scenarios", "TPS WDK KTM , scenarios", "resource managers WDK KTM , in a TPS"]
@@ -149,9 +148,9 @@ KTM supports other TPS scenarios. For example, the following scenarios describe 
 
     In this case, you typically have to modify the existing resource manager so that it becomes a [superior transaction manager](creating-a-superior-transaction-manager.md) that communicates with KTM.
 
- 
+ 
 
- 
+ 
 
 
 

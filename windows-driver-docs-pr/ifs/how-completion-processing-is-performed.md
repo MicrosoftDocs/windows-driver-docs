@@ -1,6 +1,5 @@
 ---
 title: How Completion Processing Is Performed
-author: windows-driver-content
 description: How Completion Processing Is Performed
 ms.assetid: 5741c226-9781-4d9a-b6dd-d8ecc17c4c6f
 keywords:
@@ -41,11 +40,11 @@ The second stage is performed in the context of the thread that originated the I
 
 **Note**   If completion processing for an IRP is halted because a completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED, it can be resumed by calling [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) on the same IRP. When this happens, first-stage processing resumes, beginning with the completion routine for the driver immediately above the one whose completion routine returned STATUS\_MORE\_PROCESSING\_REQUIRED.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

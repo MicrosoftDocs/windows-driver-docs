@@ -1,6 +1,5 @@
 ---
 title: Networking driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom network driver for your device.
 ms.assetid: 97C88E82-96AA-41AD-9B1F-3EB848A08BD8
 ms.date: 04/20/2017
@@ -35,11 +34,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Native Wi-Fi IHV Service                                   | [wlan](http://go.microsoft.com/fwlink/p/?LinkId=617934)                  | Demonstrates IHV extensibility for native Wi-Fi.                                                                                                                                                                                       |
 | WSK TCP Echo Server                                        | [echosrv](http://go.microsoft.com/fwlink/p/?LinkId=617935)               | This sample driver is a minimal driver meant to demonstrate the usage of the Winsock Kernel (WSK) programming interface.                                                                                                               |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

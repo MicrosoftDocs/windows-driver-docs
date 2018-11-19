@@ -25,9 +25,9 @@ Contains information about the class-specific co-installers that are registered 
 <a href="" id="deviceclasses"></a>**DeviceClasses**  
 Contains information about the device interfaces on the system. There is a subkey for each [device interface class](device-interface-classes.md) and entries under those subkeys for each instance of an interface that is registered for the device interface class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: acpicache
 description: The acpicache extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 ms.assetid: 488bbc40-0f67-4d13-8615-944ff8a6a177
 keywords: ["acpicache Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -19,8 +18,9 @@ ms.localizationpriority: medium
 
 The **!acpicache** extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 
-    !acpicache [DisplayLevel]
-
+```dbgcmd
+!acpicache [DisplayLevel]
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -47,15 +47,15 @@ Specifies the detail level of the display. This value is either 0 for an abbrevi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about the ACPI, see the Microsoft Windows Driver Kit (WDK) documentation, the Windows SDK documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These books and resources may not be available in some languages and countries.) Also see [ACPI Debugging](acpi-debugging.md) for information about other extensions that are associated with the ACPI.
 
- 
+ 
 
- 
+ 
 
 
 

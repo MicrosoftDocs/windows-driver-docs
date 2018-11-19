@@ -1,6 +1,5 @@
 ---
 title: How UMDF Handles Driver Failures
-author: windows-driver-content
 description: This topic describes actions that User-Mode Driver Framework (UMDF) and the operating system take when a UMDF driver fails. It applies to both UMDF versions 1 and 2.
 ms.assetid: 1811f131-6a51-4e53-bc8d-da511619f6fd
 keywords:
@@ -27,7 +26,7 @@ The following events occur in the order presented:
 
     **Note**   The reflector that runs on Microsoft Windows XP completes outstanding I/O with STATUS\_DRIVER\_INTERNAL\_ERROR, and Win32 applications, in turn, receive the ERROR\_IO\_DEVICE error code for the outstanding I/O. Therefore, applications that run on Windows XP should not use ERROR\_IO\_DEVICE to detect a driver failure because they cannot determine any difference from the status that is returned from a typical I/O request (for example, the status that is returned from a call to the Win32 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) function).
 
-     
+     
 
 -   The reflector sends the GUID\_WUDF\_DEVICE\_HOST\_PROBLEM custom Plug and Play (PnP) event to the operating system after the operating system reports a problem with the host process.
 
@@ -45,7 +44,7 @@ The following events occur in the order presented:
 
     **Note**   The operating system will not tear down and restart the device stack until all handles to the old stack have closed. An application will detect the device failure and a surprise removal notification for the device (DBT\_REMOVEDEVICEPENDING). However, if any handle to the old stack is kept open, the device is not restarted.
 
-     
+     
 
 -   The driver manager either restarts or disables the device. If the device is disabled, the operating system displays a yellow exclamation point in Device Manager.
 
@@ -59,9 +58,9 @@ Note that after a UMDF driver fails, the following operations can occur in an ar
 
 Therefore, an application might receive ERROR\_DRIVER\_PROCESS\_TERMINATED for the outstanding I/O after the operating system has restarted the device. After receiving ERROR\_DRIVER\_PROCESS\_TERMINATED, the application might also receive the DBT\_CUSTOMEVENT notification that results from the GUID\_WUDF\_DEVICE\_HOST\_PROBLEM event.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Basic Calling Pattern for Version-3 DMA Routines
-author: windows-driver-content
 description: To perform a DMA transfer that uses the routines in version 3 of the DMA operations interface, your driver should follow the steps described in the following list.
 ms.assetid: 5D73120F-79F5-4C9A-8AE5-25D5CF9B06F5
 ms.localizationpriority: medium
@@ -102,9 +101,9 @@ After the entire DMA data buffer is successfully mapped and the final transfer c
 
 After all DMA transfers are complete and any previously allocated map registers are freed, the driver calls the [**PutDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff559965) routine to release the adapter object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionClearTime</strong>](conditioncleartime.md)</p></td>
+<td><p><a href="conditioncleartime.md" data-raw-source="[&lt;strong&gt;ConditionClearTime&lt;/strong&gt;](conditioncleartime.md)"><strong>ConditionClearTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ConditionId</strong>](conditionid.md)</p></td>
+<td><p><a href="conditionid.md" data-raw-source="[&lt;strong&gt;ConditionId&lt;/strong&gt;](conditionid.md)"><strong>ConditionId</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatusConditionEvent</strong>](scannerstatusconditionevent.md)</p></td>
+<td><p><a href="scannerstatusconditionevent.md" data-raw-source="[&lt;strong&gt;ScannerStatusConditionEvent&lt;/strong&gt;](scannerstatusconditionevent.md)"><strong>ScannerStatusConditionEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -93,9 +93,9 @@ The **DeviceConditionCleared** element contains the [**ConditionId**](conditioni
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

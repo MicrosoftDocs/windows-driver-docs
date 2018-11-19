@@ -43,7 +43,7 @@ Your camera’s driver must use the AvStream driver model. For more info about t
 
 A driver MFT is registered with Windows as a COM interface so that the transform it implements can be applied to the media stream coming out of a specific device, such as a camera.
 
-**Note**  A driver MFT shouldn’t be registered using the `MFTRegister` function because it is device specific and not a general purpose MFT. For info on the registry key, see the [Installing and registering the driver MFT](#installing) section later in this topic.
+**Note**  A driver MFT shouldn’t be registered using the `MFTRegister` function because it is device specific and not a general purpose MFT. For info on the registry key, see the [Installing and registering the driver MFT](#installing) section later in this topic.
 
 When an app initiates a video capture, a Media Foundation Source Reader is instantiated to provide the video stream. This media source reads a registry value from the device registry key. If the CLSID of the driver MFT’s COM class is found in the registry value, the source reader instantiates the driver MFT and inserts it into the media pipeline.
 
@@ -110,7 +110,7 @@ The following code example shows how the driver MFT can get the pointer to the s
 
 ```cpp
 if(!m_pSourceTransform && m_pInputAttributes) {
-          
+
           m_pInputAttributes->
               GetUnknown( MFT_CONNECTED_STREAM_ATTRIBUTE,
               IID_PPV_ARGS(&pSourceAttributes));
@@ -240,7 +240,7 @@ library SampleMft0Lib
 };
 ```
 
-**Note**  The driver MFT is a regular COM class that can be created using `CoCreateInstance`. You should not use the `MFTRegister` function to register it because it is not a general-purpose MFT.
+**Note**  The driver MFT is a regular COM class that can be created using `CoCreateInstance`. You should not use the `MFTRegister` function to register it because it is not a general-purpose MFT.
 
 ### Creating a proxy
 
@@ -271,16 +271,18 @@ This section lists steps for installing the driver MFT:
     "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
 
 
-    KSCATEGORY_CAPTURE:
 
-    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{ 65E8773D-8F56-11D0-A3B9-00A0C9223196}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{65E8773D-8F56-11D0-A3B9-00A0C9223196}\#GLOBAL\Device Parameters]
-    "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
-    "FriendlyName"="USB Video Device"
-    "RTCFlags"=dword:00000010
-    "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"
-    ```
+KSCATEGORY_CAPTURE:
 
-    **Note**  `KSCATEGORY_VIDEO_CAMERA` is recommended for cameras. You will normally only need one of the registry keys, depending on how the device is registered.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{ 65E8773D-8F56-11D0-A3B9-00A0C9223196}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{65E8773D-8F56-11D0-A3B9-00A0C9223196}\#GLOBAL\Device Parameters]
+"CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+"FriendlyName"="USB Video Device"
+"RTCFlags"=dword:00000010
+"CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"
+```
+
+**Note**  `KSCATEGORY_VIDEO_CAMERA` is recommended for cameras. You will normally only need one of the registry keys, depending on how the device is registered.
+
 
 ## Associate your app with the camera
 
@@ -290,7 +292,7 @@ This section contains information on steps required to identify your camera in d
 
 After the first installation of the app, if the user downloads an updated version of the app, then the updates are automatically integrated into the camera capture experience. However, updates are not downloaded automatically. The user must download additional app updates from the Microsoft Store, because the app is [automatically installed](auto-install-for-uwp-device-apps.md) only on first connect. The main page of your UWP device app can provide notifications that updates are available and provide links to download updates.
 
-**Important**  Your updated app should work with any updated drivers distributed through Windows Update.
+**Important**  Your updated app should work with any updated drivers distributed through Windows Update.
 
 ### Multiple cameras
 
@@ -325,7 +327,7 @@ For more info about how to use device metadata to associate your app with your d
 
 [Driver MFT sample](http://go.microsoft.com/fwlink/p/?LinkID=251566)
 
- 
 
- 
+
+
 

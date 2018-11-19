@@ -1,6 +1,5 @@
 ---
 title: WIA Architecture Overview
-author: windows-driver-content
 description: WIA Architecture Overview
 ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
 ms.date: 07/18/2018
@@ -63,4 +62,4 @@ Microsoft provides WDM-based, kernel-mode still image drivers for the USB, SCSI,
 
 A vendor must provide a kernel-mode still image driver *only* if its imaging device is incompatible with Microsoft-supplied, kernel-mode I/O drivers.
 
- 
+ 

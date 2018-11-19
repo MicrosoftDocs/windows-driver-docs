@@ -1,6 +1,5 @@
 ---
 title: Building a WIA Minidriver
-author: windows-driver-content
 description: Building a WIA Minidriver
 ms.assetid: 7a13d355-f42e-406d-8cba-4739df1af9fa
 ms.date: 04/20/2017
@@ -37,16 +36,16 @@ All WIA minidrivers must include the header files that are shown in the followin
 </tr>
 <tr class="even">
 <td><p><em>stiusd.h</em></p></td>
-<td><p>Defines the [IStiUSD](https://msdn.microsoft.com/library/windows/hardware/ff543827) interface that all WIA minidrivers must implement.</p></td>
+<td><p>Defines the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543827" data-raw-source="[IStiUSD](https://msdn.microsoft.com/library/windows/hardware/ff543827)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>wiamindr.h</em></p></td>
-<td><p>Defines the [IWiaMiniDrv](https://msdn.microsoft.com/library/windows/hardware/ff545027) interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
+<td><p>Defines the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027" data-raw-source="[IWiaMiniDrv](https://msdn.microsoft.com/library/windows/hardware/ff545027)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 WIA minidrivers may require additional header files. The headers that are required depend on the device type and the functionality that is implemented. These requirements are noted in the reference section.
 
@@ -77,13 +76,13 @@ WIA uses the library files that are shown in the following table. All minidriver
 </tbody>
 </table>
 
- 
+ 
 
 In your build environment, the WDK *Include* and *Lib* directories should be the first directories in the search path. This ensures that you are using the most recent versions of headers and library files.
 
- 
+ 
 
- 
+ 
 
 
 

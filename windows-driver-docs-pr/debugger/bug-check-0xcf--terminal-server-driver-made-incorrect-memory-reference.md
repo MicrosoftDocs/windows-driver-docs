@@ -3,7 +3,6 @@ title: Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 description: The TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE bug check has a value of 0x000000CF. This indicates that a driver has been incorrectly ported to the terminal server.
 ms.assetid: 1c3351d8-95df-4a12-a9c5-36aa6a5cf236
 keywords: ["Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE", "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE bug check has a value of 0x000000CF. This indicates that a driver has been incorrectly ported to the terminal server.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE Parameters
 
@@ -56,7 +55,7 @@ The TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE bug check has a
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -67,9 +66,9 @@ The driver is referencing session space addresses from the system process contex
 
 This driver needs to comply with Terminal Server's memory management rules.
 
- 
+ 
 
- 
+ 
 
 
 

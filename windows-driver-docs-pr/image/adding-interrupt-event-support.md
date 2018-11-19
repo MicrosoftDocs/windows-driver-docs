@@ -1,6 +1,5 @@
 ---
 title: Adding Interrupt Event Support
-author: windows-driver-content
 description: Adding Interrupt Event Support
 ms.assetid: 74fbaa7c-f058-4b17-b278-3dea0faf4431
 ms.date: 04/20/2017
@@ -29,7 +28,7 @@ The following two examples show configuring your device for interrupts with impl
 
 **Note**   It is important to use overlapped I/O calls with all activities involving the kernel mode drivers. This allows for proper time-outs and cancellation of device requests.
 
- 
+ 
 
 ### <a href="" id="explanation-of-the-iwiaminidrv-drvgetcapabilities-implementation"></a>Explanation of the IWiaMiniDrv::drvGetCapabilities Implementation
 
@@ -39,7 +38,7 @@ The WIA driver should allocate memory (to be used by the WIA driver and freed by
 
 **Note**   The WIA service will not free this memory. It is important that the WIA driver manages the allocated memory.
 
- 
+ 
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method.
 
@@ -328,7 +327,7 @@ Interrupt events can be stopped at any time by passing **NULL** as the event han
 
 **Note**   The [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method can receive power management events that affect the event waiting state.
 
- 
+ 
 
 The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method and sends a WIA\_EVENT\_POWER\_SUSPEND event when the system is about to be placed in a sleep state. If this call occurs, the device might already be out of its wait state. Sleep states automatically trigger kernel-mode drivers to exit any waiting state to allow the system to enter this powered-down state. When the system resumes from its sleep state, the WIA service sends the WIA\_EVENT\_POWER\_RESUME event. At this time the WIA minidriver must reestablish the interrupt event wait state. For more information about sleep states, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) and [Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff543162).
 
@@ -396,9 +395,9 @@ HRESULT _stdcall CWIADevice::drvNotifyPnpEvent(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

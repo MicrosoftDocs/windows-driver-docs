@@ -71,7 +71,7 @@ To specify the Privileged Applications, fill out the following fields under **Pr
 
 **Note**  For detailed information about the following fields, see [Windows 8 Device Experience](http://go.microsoft.com/fwlink/p/?LinkId=242009). For information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](http://go.microsoft.com/fwlink/p/?linkid=256362).
 
- 
+ 
 
 -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest.
 -   **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest.
@@ -101,9 +101,9 @@ The mobile broadband platform provides enhanced functionality for receiving and 
 
 Windows provides broker facilities for UWP app to run some code in response to events even if the Microsoft Store app isn't running. For more information about implementing notification handlers, see [Enabling mobile operator notifications and system events](http://go.microsoft.com/fwlink/p/?linkid=242062).
 
- 
+ 
 
- 
+ 
 
 
 

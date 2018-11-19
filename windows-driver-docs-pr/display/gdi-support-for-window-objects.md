@@ -32,33 +32,33 @@ GDI provides support for window creation and deletion, and for the enumeration o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngCreateWnd</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564769)</p></td>
-<td align="left"><p>Create a [<strong>WNDOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570599) structure on a specified surface.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564769" data-raw-source="[&lt;strong&gt;EngCreateWnd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564769)"><strong>EngCreateWnd</strong></a></p></td>
+<td align="left"><p>Create a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570599" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570599)"><strong>WNDOBJ</strong></a> structure on a specified surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngDeleteWnd</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564830)</p></td>
-<td align="left"><p>Deletes a [<strong>WNDOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570599) structure.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564830" data-raw-source="[&lt;strong&gt;EngDeleteWnd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564830)"><strong>EngDeleteWnd</strong></a></p></td>
+<td align="left"><p>Deletes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570599" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570599)"><strong>WNDOBJ</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WNDOBJ_bEnum</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570602)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570602" data-raw-source="[&lt;strong&gt;WNDOBJ_bEnum&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570602)"><strong>WNDOBJ_bEnum</strong></a></p></td>
 <td align="left"><p>Gets a collection of rectangles from the visible region of a window.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WNDOBJ_cEnumStart</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570603)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570603" data-raw-source="[&lt;strong&gt;WNDOBJ_cEnumStart&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570603)"><strong>WNDOBJ_cEnumStart</strong></a></p></td>
 <td align="left"><p>Sets parameters for enumeration of rectangles in the visible region of a window.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WNDOBJ_vSetConsumer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570606)</p></td>
-<td align="left"><p>Sets a driver-defined value in the <strong>pvConsumer</strong> member of the specified [<strong>WNDOBJ</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570599) structure.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570606" data-raw-source="[&lt;strong&gt;WNDOBJ_vSetConsumer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570606)"><strong>WNDOBJ_vSetConsumer</strong></a></p></td>
+<td align="left"><p>Sets a driver-defined value in the <strong>pvConsumer</strong> member of the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff570599" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570599)"><strong>WNDOBJ</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

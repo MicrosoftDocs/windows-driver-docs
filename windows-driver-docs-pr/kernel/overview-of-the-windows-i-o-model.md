@@ -1,6 +1,5 @@
 ---
 title: Overview of the Windows I/O Model
-author: windows-driver-content
 description: Overview of the Windows I/O Model
 ms.assetid: 17a012b7-946e-4f42-8d80-e270bc26de06
 keywords: ["IRPs WDK kernel , about Windows I/O model", "Windows I/O model WDK", "I/O WDK kernel , model"]
@@ -26,9 +25,9 @@ Every operating system has an implicit or explicit I/O model for handling the fl
 
 In addition to using IRPs to convey traditional I/O requests, the I/O manager works with the PnP and power managers to send IRPs containing PnP and power requests.
 
- 
+ 
 
- 
+ 
 
 
 

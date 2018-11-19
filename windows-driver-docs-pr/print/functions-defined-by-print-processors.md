@@ -1,6 +1,5 @@
 ---
 title: Functions Defined by Print Processors
-author: windows-driver-content
 description: Functions Defined by Print Processors
 ms.assetid: ada376f0-515e-4995-b612-4da9523b6fcf
 keywords:
@@ -31,37 +30,37 @@ Print processors must export the functions listed in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ClosePrintProcessor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545976)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545976" data-raw-source="[&lt;strong&gt;ClosePrintProcessor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545976)"><strong>ClosePrintProcessor</strong></a></p></td>
 <td><p>Closes the print processor.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ControlPrintProcessor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546352)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546352" data-raw-source="[&lt;strong&gt;ControlPrintProcessor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546352)"><strong>ControlPrintProcessor</strong></a></p></td>
 <td><p>Provides control over printing a document.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>EnumPrintProcessorDatatypes</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548757)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548757" data-raw-source="[&lt;strong&gt;EnumPrintProcessorDatatypes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548757)"><strong>EnumPrintProcessorDatatypes</strong></a></p></td>
 <td><p>Enumerates the data types supported by a print processor.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>GetPrintProcessorCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550522)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550522" data-raw-source="[&lt;strong&gt;GetPrintProcessorCapabilities&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550522)"><strong>GetPrintProcessorCapabilities</strong></a></p></td>
 <td><p>Returns print processor capabilities for a specified input data type.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>OpenPrintProcessor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559604)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559604" data-raw-source="[&lt;strong&gt;OpenPrintProcessor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559604)"><strong>OpenPrintProcessor</strong></a></p></td>
 <td><p>Opens the print processor for printing.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>PrintDocumentOnPrintProcessor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560724)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560724" data-raw-source="[&lt;strong&gt;PrintDocumentOnPrintProcessor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560724)"><strong>PrintDocumentOnPrintProcessor</strong></a></p></td>
 <td><p>Prints a document on the print processor.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

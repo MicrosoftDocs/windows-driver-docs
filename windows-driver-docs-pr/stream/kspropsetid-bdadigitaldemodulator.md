@@ -51,9 +51,9 @@ The KSPROPSETID\_BdaDigitalDemodulator property set describes the properties of 
 
 [KSPROPSETID\_BdaAutodemodulate](kspropsetid-bdaautodemodulate.md)
 
- 
+ 
 
- 
+ 
 
 
 

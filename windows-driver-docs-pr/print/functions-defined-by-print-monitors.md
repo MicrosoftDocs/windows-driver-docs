@@ -1,6 +1,5 @@
 ---
 title: Functions Defined by Print Monitors
-author: windows-driver-content
 description: Functions Defined by Print Monitors
 ms.assetid: 718682a5-4f64-47f3-9b92-88f89c1f7516
 keywords:
@@ -24,9 +23,9 @@ The following sections list the functions that must be defined within print moni
 
 [Port Monitor Server DLL Functions](port-monitor-server-dll-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

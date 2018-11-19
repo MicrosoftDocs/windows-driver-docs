@@ -3,7 +3,6 @@ title: critsec
 description: The critsec extension displays a critical section.
 ms.assetid: 7e30efd5-2bdc-420c-b3ed-504280ddd8f7
 keywords: ["critsec Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the critical section.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +72,9 @@ ContentionCount    1
 *** Locked
 ```
 
- 
+ 
 
- 
+ 
 
 
 

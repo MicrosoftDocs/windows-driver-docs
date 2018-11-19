@@ -1,6 +1,5 @@
 ---
 title: Hardware Capabilities Callback
-author: windows-driver-content
 description: Hardware Capabilities Callback
 ms.assetid: 407505e4-c0d7-4e12-80d7-55801a66f531
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , capabilities", "hardware capabilities callbacks WDK joysticks"]
@@ -26,9 +25,9 @@ pjhwc->dwMaxAxes = 4;       /* The largest axis number which may be requested */
 pjhwc->dwNumAxes = 3;       /* The number of axes the device has */
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Publishing messages
-author: windows-driver-content
 description: Publishing messages
 ms.assetid: 44F8FB0B-6709-4A1C-886D-3788CA39A4D2
 keywords:
@@ -31,9 +30,9 @@ The Message Transmitted Callback allows clients to know when a message they have
 
 The model does not provide for knowledge of the receiving side actually processing the message. The only way to accomplish this is for the receiver to publish a message back to the client.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

@@ -1,6 +1,5 @@
 ---
 title: WSK_TDI_BEHAVIOR
-author: windows-driver-content
 description: WSK_TDI_BEHAVIOR
 ms.assetid: 84e4c8c3-2c31-4db5-bb25-309c6bb176ff
 ms.date: 07/18/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**   The TDI feature is deprecated and will be removed in future versions of Microsoft Windows.
 
- 
+ 
 
 A WSK application uses the WSK\_TDI\_BEHAVIOR client control operation to control whether the WSK subsystem will divert network I/O to [TDI](https://msdn.microsoft.com/library/windows/hardware/ff565094) transports. A WSK application uses this client control operation only if it needs to override the default behavior of the WSK subsystem.
 
@@ -76,7 +75,7 @@ The *Irp* parameter must be **NULL** for this client control operation.
 
 **Note**  TDI is not supported in Microsoft Windows versions after Windows Vista.
 
- 
+ 
 
 Requirements
 ------------
@@ -98,9 +97,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
 ms.assetid: 86228b87-9ca3-4d0c-be9e-63446ac6ce31
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -61,7 +60,7 @@ In this example, *ExecutableName* is the name of an executable file.
 
 This escape syntax is more useful for C++ (for example, overloaded operators) instead of C because there are no spaces (or special characters) in C function names. However, this syntax is also important for a lot of managed code because of the considerable use of overloads in the .NET Framework.
 
-To set a breakpoint on arbitrary text in C++ syntax, use **bu @@c++(***text***)** for C++-compatible symbols.
+To set a breakpoint on arbitrary text in C++ syntax, use <strong>bu @@c++(</strong><em>text</em>**)** for C++-compatible symbols.
 
 ### <span id="breakpoints_in_scripts"></span><span id="BREAKPOINTS_IN_SCRIPTS"></span>Breakpoints in Scripts
 
@@ -83,9 +82,9 @@ b?[@$t0]
 
 If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp***Number* syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
 
- 
+ 
 
- 
+ 
 
 
 

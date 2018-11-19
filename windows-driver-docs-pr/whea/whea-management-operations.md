@@ -1,6 +1,5 @@
 ---
 title: WHEA Management Operations
-author: windows-driver-content
 description: WHEA Management Operations
 ms.assetid: 74b57d81-c6ee-4823-b877-53c25d2eaa8a
 keywords:
@@ -29,9 +28,9 @@ This section includes the following topics:
 
 [Injecting a Hardware Error](injecting-a-hardware-error.md)
 
- 
+ 
 
- 
+ 
 
 
 

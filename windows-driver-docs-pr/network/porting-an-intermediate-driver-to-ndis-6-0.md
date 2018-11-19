@@ -45,9 +45,9 @@ The following topics describe how to port an intermediate driver to NDIS 6.0 in 
 
 [Porting Intermediate Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-intermediate-driver-plug-and-play-event-notification-handling-.md)
 
- 
+ 
 
- 
+ 
 
 
 

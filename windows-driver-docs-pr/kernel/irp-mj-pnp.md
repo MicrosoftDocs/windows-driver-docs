@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_PNP
-author: windows-driver-content
 description: All drivers must be prepared to service IRP_MJ_PNP requests in a DispatchPnP routine.
 ms.date: 08/12/2017
 ms.assetid: db838761-b838-44fd-bc77-c9d55d2c4a41
@@ -55,9 +54,9 @@ Requirements
 
 [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341)
 
- 
+ 
 
- 
+ 
 
 
 

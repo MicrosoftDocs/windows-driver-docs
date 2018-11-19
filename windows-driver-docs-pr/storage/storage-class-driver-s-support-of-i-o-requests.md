@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's Support of I/O Requests
-author: windows-driver-content
 description: Storage Class Driver's Support of I/O Requests
 ms.assetid: 046b7978-49ee-4e3e-a85f-f6ad327b91bf
 keywords:
@@ -32,9 +31,9 @@ The designer of a class driver for an entirely new type of storage device must d
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813)
 
- 
+ 
 
- 
+ 
 
 
 

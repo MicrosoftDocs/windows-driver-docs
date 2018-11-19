@@ -1,6 +1,5 @@
 ---
 title: Constraints between Selections and Installations
-author: windows-driver-content
 description: Constraints between Selections and Installations
 ms.assetid: abb6004f-daae-4f28-b36c-102d0b8c9f55
 keywords:
@@ -26,15 +25,15 @@ To specify relationships between the selection of certain options with the insta
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>*InstalledConstraints : <em>FeatureName</em> . <em>OptionName</em></p></td>
+<td><p><em>InstalledConstraints : <em>FeatureName</em> . <em>OptionName</em></p></td>
 </tr>
 <tr class="even">
-<td><p>*NotInstalledConstraints : <em>FeatureName</em> . <em>OptionName</em></p></td>
+<td><p></em>NotInstalledConstraints : <em>FeatureName</em> . <em>OptionName</em></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. If the argument is a feature, the period and *OptionName* are not included.
 
@@ -53,9 +52,9 @@ An \***InstalledConstraints** or \***NotInstalledConstraints** entry must be pla
 
 If a feature or option includes an \***InstalledConstraints** or \***NotInstalledConstraints** entry, the feature or option's \*Installable? attribute must be set to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

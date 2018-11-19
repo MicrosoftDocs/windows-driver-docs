@@ -3,7 +3,6 @@ title: usb3kd.usb_tree
 description: The usb3kd.usb_tree extension displays information, in tree format, about all USB 3.0 controllers, hubs, and devices on the computer.
 ms.assetid: 8E24AD44-7B32-4299-8428-D8E9B36F5848
 keywords: ["usb3kd.usb_tree Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,7 +41,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 **Note**  The DML feature is available in WinDbg, but not in Visual Studio or KD.
 
- 
+ 
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -69,9 +68,9 @@ The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

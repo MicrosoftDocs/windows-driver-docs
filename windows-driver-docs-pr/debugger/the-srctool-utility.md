@@ -3,7 +3,6 @@ title: The SrcTool Utility
 description: The SrcTool Utility
 ms.assetid: d8669a91-4361-41d6-a7ba-a6d1a706ff66
 keywords: ["SrcSrv, SrcTool utility", "SrcTool utility"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,11 +18,11 @@ SrcTool has other options as well. Use the **?** switch to see them. Of most int
 
 **Note**   Previous versions of this program created a directory called src below the current directory when extracting files. This is no longer the case. If you want the src directory used, you must create it yourself and run the command from that directory.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

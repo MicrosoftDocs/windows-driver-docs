@@ -58,9 +58,9 @@ All of the information that an offload target requires to process a received TCP
 
 Note that the preceding description of an offload target's internal state trees is just an example and is not meant to be prescriptive. The implementation determines how an offload target actually represents offloaded state internally.
 
- 
+ 
 
- 
+ 
 
 
 

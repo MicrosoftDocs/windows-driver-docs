@@ -43,7 +43,7 @@ The KSCATEGORY_DATADECOMPRESSOR [device interface class](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +77,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

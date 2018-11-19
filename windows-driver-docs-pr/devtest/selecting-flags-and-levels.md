@@ -34,9 +34,9 @@ If the **Tracing Flags and Level Selection** dialog box is disabled, you can set
 
 Flags and levels are properties of the trace provider. Typically, the flags represent increasingly detailed reporting levels and levels represent the severity of the event (information, warning, or error).
 
- 
+ 
 
- 
+ 
 
 
 

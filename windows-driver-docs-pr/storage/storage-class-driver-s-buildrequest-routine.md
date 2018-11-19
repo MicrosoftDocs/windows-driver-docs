@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's BuildRequest Routine
-author: windows-driver-content
 description: Storage Class Driver's BuildRequest Routine
 ms.assetid: 2ba26628-4862-440c-b8f1-dd983cf9923b
 keywords:
@@ -45,9 +44,9 @@ A class driver can request that the port driver return SCSI request-sense or equ
 
 Storage class drivers are responsible for retrying requests that fail due to target/controller errors, bus resets, or request time-outs. Consequently, many class drivers maintain a retry count in their own I/O stack location of the IRP. Such a class driver's *BuildRequest* routine also might initialize the retry limit for a given request before it sets up its *IoCompletion* routine and sends the IRP to the port driver. For more information about *RetryRequest* routines, see [Storage Class Driver's RetryRequest Routine](storage-class-driver-s-retryrequest-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

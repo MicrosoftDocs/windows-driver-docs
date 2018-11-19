@@ -3,7 +3,6 @@ title: pnpevent
 description: The pnpevent extension displays the Plug and Play device event queue.
 ms.assetid: 5f70fbf8-1313-4238-a917-c3fba8c80927
 keywords: ["pnpevent Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of a device event to display. If this is zero or omitted, 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +58,9 @@ See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of th
 
 [Plug and Play and Power Debugger Commands](plug-and-play-and-power-debugger-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

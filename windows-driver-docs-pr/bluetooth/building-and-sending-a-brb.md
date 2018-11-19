@@ -33,7 +33,7 @@ The following pseudocode example demonstrates how to set up a L2CAP Ping BRB for
 
 **Note**  For readability, the following pseudocode example does not demonstrate error handling.
 
- 
+ 
 
 ```cpp
 #include <bthddi.h>
@@ -64,9 +64,9 @@ NTSTATUS Status;
 Status = IoCallDriver( DeviceExtension->NextLowerDriver, Irp );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

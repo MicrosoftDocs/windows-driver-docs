@@ -3,7 +3,6 @@ title: a (Assemble)
 description: The a command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 ms.assetid: 6736a5fd-5a33-4698-9510-8a95f6a1caf7
 keywords: ["Assemble (a) command", "assembly debugging, Assemble (a) command", "a (Assemble) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the beginning of the block in memory where the resulting codes are put
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +66,9 @@ If you do not specify an address, the assembly starts at the address that the cu
 
 Because the assembler searches for all of the symbols that are referred to in the code, this command might take time to complete. During this time, you cannot press [**CTRL+C**](ctrl-c--break-.md)to end the **a** command.
 
- 
+ 
 
- 
+ 
 
 
 

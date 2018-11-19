@@ -1,6 +1,5 @@
 ---
 title: ValidatePrintTicket overview
-author: windows-driver-content
 description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintTicket method to validate the PrintTicket.
 ms.assetid: 3a4cf946-c931-4f71-9f1a-4efec4dfe866
 keywords:
@@ -32,9 +31,9 @@ Unidrv and PScript5 print drivers validate the Print Ticket by using the sequenc
 
 8.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553184) method to validate the PrintTicket.
 
- 
+ 
 
- 
+ 
 
 
 

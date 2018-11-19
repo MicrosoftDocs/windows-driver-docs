@@ -54,9 +54,9 @@ This section includes:
 
 [MSiSCSI\_RedirectPortalInfoClass WMI Class](msiscsi-redirectportalinfoclass-wmi-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Testing for Security
-author: windows-driver-content
 description: Testing for Security
 ms.assetid: d9d98f18-a7fc-479c-8627-0aea53ff0bae
 keywords:
@@ -26,9 +25,9 @@ Testing for security is not an automated process. Rather, it combines the use of
 
 Ideally, for testing purposes, the development of validation tests would include input from the original designers of the software, as well as unrelated development resources familiar with the specific type of file system or file system filter driver product being developed, and one or more people familiar with security intrusion analysis and prevention.
 
- 
+ 
 
- 
+ 
 
 
 

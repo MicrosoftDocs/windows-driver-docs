@@ -1,6 +1,5 @@
 ---
 title: Kernel-Mode Driver Components
-author: windows-driver-content
 description: Kernel-Mode Driver Components
 ms.assetid: 79be2948-cc74-4f0b-8ffa-1e57f44d7b0c
 keywords: ["kernel-mode drivers WDK , components", "kernel-mode drivers WDK , standard driver routines", "standard driver routines WDK kernel", "driver routines WDK kernel", "routines WDK kernel"]
@@ -36,9 +35,9 @@ This section includes:
 
 [Writing an Unload Routine](writing-an-unload-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

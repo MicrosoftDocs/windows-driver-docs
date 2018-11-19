@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ANQP_ELEMENTS
-author: windows-driver-content
 description: WDI_TLV_ANQP_ELEMENTS is an unused TLV.
 ms.assetid: 84B0987B-9CF1-432D-A290-1BC75BCAEFED
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

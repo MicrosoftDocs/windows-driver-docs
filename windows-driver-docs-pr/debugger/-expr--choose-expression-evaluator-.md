@@ -3,7 +3,6 @@ title: .expr (Choose Expression Evaluator)
 description: The .expr command specifies the default expression evaluator.
 ms.assetid: 96d246c2-10fe-4688-a04f-1325ac51e4b3
 keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Displays the list of possible expression types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +71,9 @@ The [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md) command,
 
 For more information about how to control which syntax is used, see [Evaluating Expressions](evaluating-expressions.md). For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
 
- 
+ 
 
- 
+ 
 
 
 

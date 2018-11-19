@@ -2,7 +2,6 @@
 title: How the Debugger Recognizes Symbols
 description: How the Debugger Recognizes Symbols
 ms.assetid: 2e96fd22-a1e9-4a25-8904-4db78948e5be
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -21,9 +20,9 @@ This section includes:
 
 [Symbol Status Abbreviations](symbol-status-abbreviations.md)
 
- 
+ 
 
- 
+ 
 
 
 

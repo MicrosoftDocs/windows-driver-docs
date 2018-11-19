@@ -1,6 +1,5 @@
 ---
 title: WHEA Management Applications
-author: windows-driver-content
 description: WHEA Management Applications
 ms.assetid: 6441f17b-a0fc-4d6f-aef2-94cc9a62899d
 keywords:
@@ -23,11 +22,11 @@ This section includes the following topics:
 
 **Note**  WHEA management applications are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

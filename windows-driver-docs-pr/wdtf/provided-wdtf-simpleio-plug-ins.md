@@ -1,6 +1,5 @@
 ---
 title: Provided WDTF Simple I/O plug-ins
-author: windows-driver-content
 description: Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality.
 ms.assetid: 948E8CF5-24A1-4A7C-BD18-374F989AD053
 ms.date: 04/20/2017
@@ -41,10 +40,9 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 ### <a href="" id="-audio"></a>
 
-| Audio    |
-|----------|
-
- 
+| Audio |
+|-------|
+|       |
 
 **Requirements:**
 
@@ -91,10 +89,9 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 ### <a href="" id="-bluetooth"></a>
 
-| Bluetooth    |
-|--------------|
-
- 
+| Bluetooth |
+|-----------|
+|           |
 
 **Requirements:**
 
@@ -108,8 +105,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | CDROM |
 |-------|
-
- 
+|       |
 
 **Requirements:**
 
@@ -131,8 +127,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Disk |
 |------|
-
- 
+|      |
 
 **Requirements:**
 
@@ -146,10 +141,10 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 **Requirements:**
 
+
 | Display Devices |
 |-----------------|
-
- 
+|                 |
 
 -   No special requirements for testing.
 
@@ -165,8 +160,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | GPS devices (and GPS devices in systems) |
 |------------------------------------------|
-
- 
+|                                          |
 
 **Requirements:**
 
@@ -180,8 +174,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | LAN |
 |-----|
-
- 
+|     |
 
 **Requirements:**
 
@@ -207,8 +200,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Mobile Broadband |
 |------------------|
-
- 
+|                  |
 
 **Requirements:**
 
@@ -238,8 +230,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Portable Devices |
 |------------------|
-
- 
+|                  |
 
 **Requirements:**
 
@@ -253,8 +244,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Smart Card Readers |
 |--------------------|
-
- 
+|                    |
 
 **Requirements:**
 
@@ -268,8 +258,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Sensors |
 |---------|
-
- 
+|         |
 
 **Requirements:**
 
@@ -279,8 +268,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Volume |
 |--------|
-
- 
+|        |
 
 **Requirements:**
 
@@ -303,16 +291,15 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Webcam |
 |--------|
-
- 
+|        |
 
 **Requirements:**
 
 -   No special requirements for testing.
 
-    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](http://go.microsoft.com/fwlink/p/?linkid=266437).
+    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](http://go.microsoft.com/fwlink/p/?linkid=266437).
 
-     
+
 
 **Type of I/O plug-in performs:**
 
@@ -322,8 +309,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | WLAN |
 |------|
-
- 
+|      |
 
 **Requirements:**
 
@@ -341,8 +327,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | USB Controller and HUB with Mutt |
 |----------------------------------|
-
- 
+|                                  |
 
 **Requirements:**
 

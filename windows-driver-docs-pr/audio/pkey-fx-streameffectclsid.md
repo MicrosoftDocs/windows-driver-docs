@@ -34,9 +34,9 @@ HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%FX_STREAM_CLSID%
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

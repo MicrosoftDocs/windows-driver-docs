@@ -1,6 +1,5 @@
 ---
 title: Framework Objects for Hardware Resources
-author: windows-driver-content
 description: Framework Objects for Hardware Resources
 ms.assetid: 64eb628f-ce3d-494b-9fc1-7179a722c5f2
 keywords:
@@ -31,9 +30,9 @@ Each framework resource-range-list object represents a [logical configuration](h
 <a href="" id="framework-resource-list-objects"></a>*Framework resource-list objects*  
 Each framework resource-list object represents a logical configuration (that is, a set of specific resources) in a [resource list](https://msdn.microsoft.com/library/windows/hardware/ff547012). Handles to these objects have a type of WDFCMRESLIST. The object defines [framework resource-list object methods](https://msdn.microsoft.com/library/windows/hardware/dn265665).
 
- 
+ 
 
- 
+ 
 
 
 

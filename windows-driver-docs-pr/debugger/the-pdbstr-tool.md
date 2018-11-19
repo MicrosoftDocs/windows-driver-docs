@@ -3,7 +3,6 @@ title: The PDBStr Tool
 description: The PDBStr Tool
 ms.assetid: a70e92ac-4d72-4c71-9396-f470314257f2
 keywords: ["SrcSrv, PDBStr tool", "PDBStr tool"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -15,9 +14,9 @@ The PDBStr (Pdbstr.exe) tool is used by the indexing scripts to insert the versi
 
 For more information, run PDBStr with the **-?** option.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -25,7 +25,7 @@ In **DriverEntry**, the NetDMA provider driver sets standard driver entry points
 
 **Note**  A NetDMA provider driver also sets entry points that are specific to NetDMA providers. For more information about registering NetDMA provider entry points, see [Registering a NetDMA Provider](registering-a-netdma-provider.md).
 
- 
+ 
 
 The PnP manager passes two arguments to **DriverEntry**:
 
@@ -51,9 +51,9 @@ If the DMA engine supports MSI-X, the NetDMA provider driver must set the DMA en
 
 The PnP manager calls the NetDMA provider driver's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine after all of the devices that the driver manages have been removed. For more information about unloading a NetDMA provider driver, see [Unloading a NetDMA Provider Driver](unloading-a-netdma-provider-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

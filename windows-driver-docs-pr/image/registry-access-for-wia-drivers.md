@@ -1,6 +1,5 @@
 ---
 title: Registry Access for WIA Drivers
-author: windows-driver-content
 description: Registry Access for WIA Drivers
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
 ms.date: 04/20/2017
@@ -130,11 +129,11 @@ The **DeviceData** registry subkey is open for read/write access to the driver o
 
 **Note**   The driver *must* close any registry keys it opened when they are no longer needed, and must close all registry keys prior to unloading.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

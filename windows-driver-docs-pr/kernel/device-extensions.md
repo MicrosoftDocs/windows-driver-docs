@@ -1,6 +1,5 @@
 ---
 title: Device Extensions
-author: windows-driver-content
 description: Device Extensions
 ms.assetid: 9ea59994-1112-4ae5-96a8-fa0670694b53
 keywords: ["device objects WDK kernel , device extensions", "device extensions WDK kernel", "extensions WDK device objects", "higher-level driver extensions WDK kernel", "lower-level driver extensions WDK kernel", "intermediate driver extensions WDK kernel"]
@@ -55,9 +54,9 @@ While a higher-level driver can read data from the next-lower-level driver's dev
 
 To preserve their interoperability with lower-level drivers from one Windows platform or version to the next, higher-level drivers either must reuse the IRPs given them or must create new IRPs, and they must use [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) to communicate requests to lower-level drivers.
 
- 
+ 
 
- 
+ 
 
 
 

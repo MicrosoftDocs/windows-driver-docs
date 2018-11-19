@@ -1,6 +1,5 @@
 ---
 title: Leading and Trailing Edge Stream Pointers
-author: windows-driver-content
 description: Leading and Trailing Edge Stream Pointers
 ms.assetid: 73ab974f-8034-421f-980a-2393d84ec54c
 keywords:
@@ -33,7 +32,7 @@ The minidriver is responsible for advancing the leading edge in all but the two 
 <thead>
 <tr class="header">
 <th>Situation</th>
-<th>AVStream's Behavior</th>
+<th>AVStream&#39;s Behavior</th>
 </tr>
 </thead>
 <tbody>
@@ -48,7 +47,7 @@ The minidriver is responsible for advancing the leading edge in all but the two 
 </tbody>
 </table>
 
- 
+ 
 
 See [Introduction to Stream Pointers](introduction-to-stream-pointers.md) For more information about advancing stream pointers.
 
@@ -60,7 +59,7 @@ When the trailing edge advances, the reference count on the frame to which it pr
 
 ### Maintaining a Frame Window
 
-As a result of the frame reference count rules described in [Introduction to Stream Pointers](introduction-to-stream-pointers.md), a frame between the leading and trailing edge remains in the queue until it is canceled*, even if the frame is not referenced by a stream pointer*. As such, a minidriver can use the leading and trailing edge pointers to maintain a working window of multiple contiguous frames. Frames in the window might be awaiting processing or filling, for example.
+As a result of the frame reference count rules described in [Introduction to Stream Pointers](introduction-to-stream-pointers.md), a frame between the leading and trailing edge remains in the queue until it is canceled<em>, even if the frame is not referenced by a stream pointer</em>. As such, a minidriver can use the leading and trailing edge pointers to maintain a working window of multiple contiguous frames. Frames in the window might be awaiting processing or filling, for example.
 
 In the following diagram, the oldest frames are at the bottom. New frames arrive at the top. The number in each frame is the reference count for that frame. When the stream pointers advance, they move up in this diagram.
 
@@ -72,9 +71,9 @@ The middle queue is an example of [Cloning Stream Pointers](cloning-stream-point
 
 The rightmost queue shows how the minidriver can maintain reference count for a frame behind the trailing edge by using a stream pointer clone.
 
- 
+ 
 
- 
+ 
 
 
 

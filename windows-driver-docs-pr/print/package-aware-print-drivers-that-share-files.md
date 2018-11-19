@@ -1,6 +1,5 @@
 ---
 title: Package-Aware Print Drivers that Share Files
-author: windows-driver-content
 description: Package-Aware Print Drivers that Share Files
 ms.assetid: dcf4e7b4-f0f4-4644-9f5c-c01c1b6c4221
 keywords:
@@ -75,7 +74,7 @@ Core print package files are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 More than one core driver section can be referenced; for example:
 
@@ -93,9 +92,9 @@ This section includes the following topics:
 
 [Core Driver Sample](core-driver-sample.md)
 
- 
+ 
 
- 
+ 
 
 
 

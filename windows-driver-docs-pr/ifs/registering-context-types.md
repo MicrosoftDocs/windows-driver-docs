@@ -1,6 +1,5 @@
 ---
 title: Registering Context Types
-author: windows-driver-content
 description: Registering Context Types
 ms.assetid: ddf03426-5c49-4621-b81d-59d1cb002ae9
 keywords:
@@ -70,9 +69,9 @@ const FLT_CONTEXT_REGISTRATION contextRegistration[] =
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

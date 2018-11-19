@@ -1,6 +1,5 @@
 ---
 title: DVD Data Streams
-author: windows-driver-content
 description: DVD Data Streams
 ms.assetid: 77e38075-5e28-4d9d-a2ca-caa274bde4db
 keywords:
@@ -33,9 +32,9 @@ The following stream-related topics are discussed:
 
 [Multiple Data Streams on the same Hardware](multiple-data-streams-on-the-same-hardware.md)
 
- 
+ 
 
- 
+ 
 
 
 

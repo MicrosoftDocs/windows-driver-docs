@@ -1,7 +1,7 @@
 ---
 title: Windows Hardware Dev Center Dashboard ID Definitions
 description: Windows Hardware Dev Center Dashboard ID Definitions
-ms.assetid: 
+ms.topic: article 
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,15 +35,15 @@ The Windows Hardware Dev Center Dashboard lists each of these IDs on the driver 
 <tr class="even">
 <td><p>Private Product ID</p></td>
 <td><p>The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.
-> [!NOTE]
-> when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
+&gt; [!NOTE]
+&gt; when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
 </p>
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>Submission ID</p></td>
-<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See [Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions) for more details. </p></td>
+<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)">Manage your hardware submissions</a> for more details. </p></td>
 </tr>
 </tbody>
 </table>

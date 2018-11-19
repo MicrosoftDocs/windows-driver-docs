@@ -3,7 +3,6 @@ title: File Symbol File Path
 description: File Symbol File Path
 ms.assetid: 22d32b1b-d1b9-4627-99ed-08656da9b849
 keywords: ["File Symbol File Path", "symbol files and paths, File Symbol File Path"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ Click **OK** to append the selected folder to the symbol path and return to the 
 
 For more information and for other ways to change the symbol path, see [Symbol Path](symbol-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

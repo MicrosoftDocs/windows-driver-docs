@@ -1,7 +1,6 @@
 ---
 Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,7 @@ The following table shows the scenarios that require the use of the idle request
 | Windows Server 2003 | Must use idle request IRP                    | Must use idle request IRP                        | Must use idle request IRP   |
 | Windows XP          | Must use idle request IRP                    | Must use idle request IRP                        | Must use idle request IRP   |
 
- 
+
 
 This section explains the Windows selective suspend mechanism and includes the following topics:
 
@@ -98,13 +97,13 @@ The following WDM example code illustrates the steps that a device driver takes 
        TRUE,
        TRUE,
        TRUE);
-     
+
     ```
 
 4.  Store the idle request in the device extension.
     ```cpp
     deviceExtension->PendingIdleIrp = irp;
-     
+
     ```
 
 5.  Send the Idle request to the parent driver.
@@ -132,12 +131,12 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 </thead>
 <tbody>
 <tr class="odd">
-<td>The client driver has canceled the idle IRP and the USB driver stack has not called the "USB Idle Notification Callback Routine".</td>
+<td>The client driver has canceled the idle IRP and the USB driver stack has not called the &quot;USB Idle Notification Callback Routine&quot;.</td>
 <td><p>The USB driver stack completes the idle IRP. Because the device never left the <strong>D0</strong>, the driver does not change the device state.</p></td>
 </tr>
 <tr class="even">
 <td>The client driver has canceled the idle IRP, the USB driver stack has called the USB idle notification callback routine, and it has not yet returned.</td>
-<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver's callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
+<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver&#39;s callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
 <p>When the device is in the lower power state, the client driver can then send a <strong>D0</strong> request.</p>
 <p>Alternatively, the driver can wait for the USB driver stack to complete the idle IRP and then send the <strong>D0</strong> IRP.</p>
 <p>If the callback routine is unable to put the device into a low power state due to insufficient memory to allocate a power IRP, it should cancel the idle IRP and exit immediately. The idle IRP will not be completed until the callback routine has returned; therefore, the callback routine should not block waiting for the canceled idle IRP to complete.</p></td>
@@ -155,7 +154,7 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 
 In many cases, a bus driver might call a driver's idle request IRP completion routine. If this occurs, a client driver must detect why the bus driver completed the IRP. The returned status code can provide this information. If the status code is not STATUS\_POWER\_STATE\_INVALID, the driver should put its device in **D0** if the device is not already in **D0**. If the device is still idle, the driver can submit another idle request IRP.
 
-**Note**  The idle request IRP completion routine should not block waiting for a **D0** power request to complete. The completion routine can be called in the context of a power IRP by the hub driver, and blocking on another power IRP in the completion routine can lead to a deadlock.
+**Note**  The idle request IRP completion routine should not block waiting for a **D0** power request to complete. The completion routine can be called in the context of a power IRP by the hub driver, and blocking on another power IRP in the completion routine can lead to a deadlock.
 
 The following list indicates how a completion routine for an idle request should interpret some common status codes:
 
@@ -195,7 +194,7 @@ The following list indicates how a completion routine for an idle request should
 </tbody>
 </table>
 
- 
+
 
 The following code example shows a sample implementation for the idle request completion routine.
 
@@ -228,7 +227,7 @@ IdleNotificationRequestComplete(
     PUSB_IDLE_CALLBACK_INFO idleCallbackInfo;
 
     ntStatus = Irp->IoStatus.Status;
-    
+
     if(!NT_SUCCESS(ntStatus) && ntStatus != STATUS_NOT_SUPPORTED) 
     {
 
@@ -236,7 +235,7 @@ IdleNotificationRequestComplete(
 
         switch(ntStatus) 
         {
-            
+
         case STATUS_INVALID_DEVICE_REQUEST:
 
             //Invalid request.
@@ -268,7 +267,7 @@ IdleNotificationRequestComplete(
 
         }
 
- 
+
         // If IRP completes with error, issue a SetD0
 
         //Increment the I/O count because
@@ -315,7 +314,6 @@ IdleNotificationRequestComplete_Exit:
 
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
-
 ```
 
 ## USB Idle Notification Callback Routine

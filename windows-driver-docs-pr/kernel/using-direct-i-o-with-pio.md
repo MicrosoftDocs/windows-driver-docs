@@ -1,6 +1,5 @@
 ---
 title: Using Direct I/O with PIO
-author: windows-driver-content
 description: Using Direct I/O with PIO
 ms.assetid: 84d36567-c8c6-4576-91a0-829c8819de4d
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "PIO transfer operations WDK kernel", "programmed I/O transfers WDK kernel"]
@@ -38,9 +37,9 @@ The current user thread's buffers and the thread itself are guaranteed to be res
 
 However, the original thread's virtual addresses for its buffer do not remain visible while another thread is current, even if the memory manager preserves the buffer's physical pages. Consequently, drivers cannot use a virtual address returned by [**MmGetMdlVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554539) to access memory. Callers of this routine must pass its results to [**MapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff554402) (along with the IRP's **MdlAddress** pointer) in order to transfer data using packet-based system or bus-master DMA.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: TCPMON Xcv Interface
-author: windows-driver-content
 description: TCPMON Xcv Interface
 ms.assetid: 7b2b1cff-ab8f-44e0-9327-dc60a0072bf5
 keywords:
@@ -111,11 +110,11 @@ Note that the return value from the **XcvData** function indicates only whether 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

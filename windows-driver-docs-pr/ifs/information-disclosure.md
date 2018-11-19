@@ -1,6 +1,5 @@
 ---
 title: Information Disclosure
-author: windows-driver-content
 description: Information Disclosure
 ms.assetid: e5794acb-44f7-4775-854b-69884f60658a
 keywords:
@@ -38,9 +37,9 @@ For a file system or file system filter driver, there is the added risk of discl
 
 Because of their unique role in managing and protecting information, file systems and file system filter drivers must be particularly vigilant in ensuring their protection of information.
 
- 
+ 
 
- 
+ 
 
 
 

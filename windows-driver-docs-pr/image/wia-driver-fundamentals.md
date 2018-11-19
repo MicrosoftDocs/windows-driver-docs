@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Fundamentals
-author: windows-driver-content
 description: WIA Driver Fundamentals
 ms.assetid: 374388eb-ca2e-47da-aa0a-d90fdd00c665
 ms.date: 04/20/2017
@@ -43,9 +42,9 @@ This section describes WIA driver fundamentals and the WIA driver architecture a
 
 [WIA with Web Services for Devices](wia-with-web-services-for-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DirectInput Control Panel Architecture
-author: windows-driver-content
 description: DirectInput Control Panel Architecture
 ms.assetid: 638af2f9-7944-4325-b455-271d4f970170
 keywords: ["property sheets WDK DirectInput , control panel structure", "game controllers WDK DirectInput , control panel structure", "control panels WDK DirectInput , architecture", "architecture WDK DirectInput control panel"]
@@ -22,9 +21,9 @@ This section describes the basic structure of the DirectInput control panel exte
 
 [Integration with Windows](integration-with-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

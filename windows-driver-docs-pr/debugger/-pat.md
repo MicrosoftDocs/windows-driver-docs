@@ -3,7 +3,6 @@ title: pat
 description: The pat extension displays the Page Attribute Table (PAT) registers for the target processor.
 ms.assetid: 41583410-08cc-49b5-96b2-b59d935f623e
 keywords: ["PAT", "pat Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,13 +48,13 @@ If *Flag* is set, the debugger verifies that the PAT feature is present before t
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

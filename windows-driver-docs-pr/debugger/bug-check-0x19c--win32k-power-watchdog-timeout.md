@@ -3,7 +3,6 @@ title: Bug Check 0x19C WIN32K_POWER_WATCHDOG_TIMEOUT
 description: The WIN32K_POWER_WATCHDOG_TIMEOUT bug check has a value of 0x0000019C. This indicates that Win32k did not turn the monitor on in a timely manner.
 ms.assetid: 55907359-C282-43F0-92FE-5DC248BF9D02
 keywords: ["Bug Check 0x19C WIN32K_POWER_WATCHDOG_TIMEOUT", "WIN32K_POWER_WATCHDOG_TIMEOUT"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This indicates that Win32k did not turn the monitor on in a timely manner.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## WIN32K\_POWER\_WATCHDOG\_TIMEOUT Parameters
 
@@ -40,8 +39,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 <td align="left">1</td>
 <td align="left"><p>Failure type (win32kbase!POWER_WATCHDOG_TYPE)</p>
 <div class="code">
-```
-          0x10 : The power request queue is not making progress
+<code>0x10 : The power request queue is not making progress
               2 - Pointer to the thread processing power requests, if any
               3 - Pointer to the win32k user lock
               4 - Pointer to the power request (win32kbase!PPOWERREQUEST) being
@@ -61,8 +59,7 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
           0x50 : Calling monitor driver to power on
               2 - Pointer to the power request worker thread
               3 - Reserved
-              4 - Reserved
-```
+              4 - Reserved</code>
 </div></td>
 </tr>
 <tr class="even">
@@ -80,11 +77,11 @@ The WIN32K\_POWER\_WATCHDOG\_TIMEOUT bug check has a value of 0x0000019C. This i
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

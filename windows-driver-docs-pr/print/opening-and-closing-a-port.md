@@ -1,6 +1,5 @@
 ---
 title: Opening and Closing a Port
-author: windows-driver-content
 description: Opening and Closing a Port
 ms.assetid: 8bfdb3af-51d4-4252-ae1c-7910f973f5f6
 keywords:
@@ -38,9 +37,9 @@ The spooler closes a port if a job must be sent through a different language mon
 
 If a language monitor is not associated with a port, the spooler calls the port monitor's **ClosePort** function directly.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Locking and Unlocking a Parallel Port
-author: windows-driver-content
 description: Locking and Unlocking a Parallel Port for Use by a Parallel Device
 ms.assetid: dbfa962e-9de8-4a9c-b962-24b53c41f35d
 keywords:
@@ -37,9 +36,9 @@ Clients can send individual I/O requests to parallel devices without the need to
 
 If the parallel port bus driver can allocate the port to the parallel device within a set time-out period, the device's worker thread completes the request. Otherwise, the parallel port bus driver completes the pending request with a status of STATUS\_DEVICE\_BUSY.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: In-Box Support for Autoconfiguration
-author: windows-driver-content
 description: In-Box Support for Autoconfiguration
 ms.assetid: cd2faef4-96ba-4d11-99f6-90e41ae2e283
 keywords:
@@ -25,9 +24,9 @@ The following topics describe how to take advantage of the in-box support for au
 
 [Customizing the Printer Port Monitors](customizing-the-printer-port-monitors.md)
 
- 
+ 
 
- 
+ 
 
 
 

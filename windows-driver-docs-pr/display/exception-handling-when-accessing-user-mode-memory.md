@@ -52,11 +52,11 @@ __except(EXCEPTION_EXECUTE_HANDLER)
 
 **Note**   Aside from accessing and copying the user-mode value into a local variable, the driver should not perform any other operations inside the **\_\_try** block. Other operations can cause their own exceptions to occur. The operating system handles these exceptions differently.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

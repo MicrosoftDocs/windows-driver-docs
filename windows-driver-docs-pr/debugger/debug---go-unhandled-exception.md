@@ -3,7 +3,6 @@ title: Debug Go Unhandled Exception
 description: Debug Go Unhandled Exception
 ms.assetid: b9263b79-c8cb-4a3e-bf4e-f2e6673a8498
 keywords: ["Debug Go Unhandled Exception", "controlling the target, Debug Go Unhandled Exception", "exceptions, Debug Go Unhandled Exception"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ Click **Go Unhandled Exception** on the **Debug** menu to resume execution on th
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md). For more information about exceptions and other events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
- 
+ 
 
- 
+ 
 
 
 
