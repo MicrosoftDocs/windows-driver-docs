@@ -70,7 +70,7 @@ By advancing, getting, and setting packet and fragment iterators, client drivers
 
 For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
 
-## Device drivers with in-order completions
+## Sending and receiving for device drivers with in-order completions
 
 Drivers for devices that use ring buffers at the hardware level (for example, typical PCI NICs) normally complete send and receive operations in order, and control their **NET_RING** post and drain iterators accordingly.
 
@@ -82,9 +82,9 @@ Here is a typical post and drain sequence for a driver that transmits data in or
 2. Post data to hardware:    
     1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetTxPostPacketIterator**](netringgettxpostpacketiterator.md).
     2. Do the following in a loop:
-        1. Call [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md) with the packet iterator to get a packet.
+        1. Get a packet by calling [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md) with the packet iterator.
         2. Check if this packet should be ignored. If it should be ignored, skip to step 5 of this loop. If not, continue.
-        3. Call [**NetRingGetTxPostPacketFragmentIterator**](netringgettxpostpacketfragmentiterator.md) to get the post iterator for this packet's fragments.
+        3. Get the post iterator for this packet's fragments by calling [**NetRingGetTxPostPacketFragmentIterator**](netringgettxpostpacketfragmentiterator.md).
         4. Do the doing the following in a loop:
             1. Call [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md) with the fragment iterator to get a fragment.
             2. Translate the **NET_FRAGMENT** descriptor into the associated hardware fragment descriptor.
@@ -123,6 +123,7 @@ MyEvtTxQueueAdvance(
             {
                 // Translate fragment descriptor to hardware
                 ...
+                //
 
                 NetRingAdvanceFragmentIterator(&fragmentIterator);
             }
@@ -136,8 +137,9 @@ MyEvtTxQueueAdvance(
     packetIterator = NetRingGetTxDrainPacketIterator(Rings);
     while(NetRingIteratorAny(packetIterator))
     {
-        // Test packet for transmit completion and break if it is not finished
+        // Test packet for transmit completion
         ...
+        //
 
         NetRingAdvancePacketIterator(&packetIterator);
     }
@@ -147,92 +149,136 @@ MyEvtTxQueueAdvance(
 
 ### Receiving data in order
 
-Here is a typical sequence for a driver that receives data in order.
+Here is a typical sequence for a driver that receives data in order, with one fragment per packet.
 
-For example, to complete and drain a batch of packets and their fragments from a transmit queue's net rings, a client driver might do something like this:
+1. Call **NetRxQueueGetRingCollection** to retrieve the receive queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
+2. Indicate received data to the OS by draining the net rings:
+    1. Use the ring collection to retrieve the drain iterator for the receive queue's net rings: call [**NetRingGetRxDrainPacketIterator**](netringgetrxdrainpacketiterator.md) for the packet ring and call [**NetRingGetRxDrainFragmentIterator**](netringgetrxdrainfragmentiterator.md) for the fragment ring.
+    2. Do the following in a loop:
+        1. Check if the fragment has been received by the hardware. If not, break out of the loop.
+        2. Get the fragment iterator's current fragment by calling [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md).
+        3. Fill in the fragment's information, such as its **ValidLength**, based on its matching hardware descriptor.
+        4. Get a packet for this fragment by calling [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md).
+        5. Bind the fragment to the packet by setting the packet's **FragmentIndex** to the fragment's current index in the fragment ring and setting the number of fragments to **1**. 
+        6. Optionally, fill in any other packet information such as checksum info.
+        7. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
+        7. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
+    3. Call [**NetRingSetRxDrainFragmentIterator**](netringsetrxdrainpacketiterator.md) and [**NetRingSetRxDrainPacketIterator**](netringsetrxdrainpacketiterator.md) to finalize indicating received packets and their fragments to the OS.
+3. Post fragment buffers to hardware for the next receives:    
+    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetRxPostFragmentIterator**](netringgetrxpostfragmentiterator.md).
+    2. Do the following in a loop:
+        1. Get the fragment iterator's current index by calling [**NetRingIteratorGetIndex**](netringiteratorgetindex.md).
+        2. Post the fragment's information to the matching hardware descriptor.
+        3. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
+    3. Call [**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md) to finalize posting fragments to hardware.
+
+These steps might look like this in code:
 
 ```cpp
 void
-MyCompleteTxPacketBatch(
-    _In_ NET_RING_COLLECTION const * Rings,
-    _In_ UINT32                      BatchSize
+MyEvtRxQueueAdvance(
+    NETPACKETQUEUE RxQueue
 )
 {
-    UINT32 packetCount = 0;
+    // Get the receive queue's context to retrieve the net ring collection
+    PMY_RX_QUEUE_CONTEXT rxQueueContext = MyGetRxQueueContext(RxQueue);
+    NET_RING_COLLECTION const * Rings = rxQueueContext->Rings;
+    UINT32 currentFragmentIndex = 0;
 
-    // Retrieve the packet drain iterator
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetTxDrainPacketIterator(Rings);
-    while(NetRingIteratorAny(packetIterator))
+    // Indicate receives by draining the rings
+    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetRxDrainFragmentIterator(Rings);
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetRxDrainPacketIterator(Rings);
+    while(NetRingIteratorAny(fragmentIterator))
     {
-        // Get the packet
+        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+
+        // Test for fragment reception
+        ...
+        //
+
+        NET_FRAGMENT* fragment = NetRingIteratorGetFragment(&fragmentIterator);
+        fragment->ValidLength = ... ;
         NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        packet->FragmentIndex = currentFragmentIndex;
+        packet->FragmentCount = 1;
 
-        // Test the packet for completion. You can either use the Scratch field of the packet or some other tracking method.
-        if(!myPacketCompletionTest)
-        {
-            break;
-        }
+        // Fill in checksum info
+        ...
+        //
 
-        packetCount++;
-
-        // Get this packet's fragments
-        NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetTxDrainPacketFragmentIterator(&packetIterator);
-
-        // Drain the fragments
-        NetRingAdvanceEndFragmentIterator(&fragmentIterator);
-
-        // Move on to the next packet
+        NetRingAdvanceFragmentIterator(&fragmentIterator);
         NetRingAdvancePacketIterator(&packetIterator);
-
-        // Finish draining packets and fragments if desired batch is complete
-        if(packetCount >= BatchSize)
-        {
-            NetRingSetTxDrainPacketIterator(&packetIterator);
-            NetRingSetTxDrainFragmentIterator(&fragmentIterator);
-        }
     }
+    NetRingSetRxDrainFragmentIterator(&fragmentIterator);
+    NetRingSetRxDrainPacketIterator(&packetIterator);
+
+    // Post fragment buffers to hardware
+    fragmentIterator = NetRingGetRxPostFragmentIterator(Rings);
+    while(NetRingIteratorAny(fragmentIterator))
+    {
+        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+
+        // Post fragment information to hardware descriptor
+        ...
+        //
+
+        NetRingAdvanceFragmentIterator(&fragmentIterator);
+    }
+    NetRingSetRxPostFragmentIterator(&fragmentIterator);
 }
 ```
 
-To cancel and drain all fragments from the ring back to the OS, a client driver calls these three methods in order:
+## Sending and receiving for device drivers with out-of-order completions
 
-1. [**NetRingGetAllFragmentIterator**](netringgetallfragmentiterator.md)
-2. **NetRingAdvanceEndFragmentIterator**
-3. [**NetRingSetAllFragmentIterator**](netringsetallfragmentiterator.md)
+How is this different from the above? For example, take transmit. The above examples would continually get the drain iterators and break if a packet is not done transmitting. Only sets the iterator when all are done, so this would work for out-of-order too?
 
-```cpp
+### Transmitting data out of order
 
-```
+...
 
-For example, to cancel and drain all packets from the ring back to the OS, a client driver calls these three methods in order:
-
-1. [**NetRingGetAllPacketIterator**](netringgetallpacketiterator.md)
-2. **NetRingAdvanceEndPacketIterator**
-3. [**NetRingSetAllPacketIterator**](netringsetallpacketiterator.md)
+### Receiving data out of order
 
 
-Here is a typical receive sequence for a driver that performs in-order completions:
-
-1. Step 1
-2. Step 2
-etc.
-
-```cpp
-```
-
-### Device drivers with out-of-order completions
-
-Drivers for devices that process send and receive operations out-of-order (for example, many USB NICs) perform steps similarly to in-order device drivers. Such drivers might use the **Scratch** field of each **NET_FRAGMENT** to track completion. Only when a batch of fragments has been completed can the driver advance and set the iterators for those fragments and their packets.
-
-For example, an out-of-order transmit sequence might look like this:
-
-1. Step 1
-2. Step 2
-etc.
-
-```cpp
-```
+...
 
 ## Other Net Ring Iterator Interface operations
 
-Besides typical NIC driver post and drain, mention things like cancelation, using the getall/setall APIs, the AdvanceEnd APIs, and NetRingIteratorAny.
+### Canceling send and receive operations
+
+To cancel and drain all packets from the ring back to the OS, a client driver calls these three methods in order:
+
+1. [**NetRingGetAllPacketIterator**](netringgetallpacketiterator.md)
+2. [**NetRingAdvanceEndPacketIterator**](netringadvanceendpacketiterator.md)
+3. [**NetRingSetAllPacketIterator**](netringsetallpacketiterator.md)
+
+
+Similarly, to cancel and drain all fragments from the ring back to the OS, a client driver calls these three methods in order:
+
+1. [**NetRingGetAllFragmentIterator**](netringgetallfragmentiterator.md)
+2. [**NetRingAdvanceEndFragmentIterator**](netringadvanceendfragmentiterator.md)
+3. [**NetRingSetAllFragmentIterator**](netringsetallfragmentiterator.md)
+
+Canceling might look like this for a receive queue, during a call to [*EvtRxQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel):
+
+```cpp
+void
+MyEvtRxQueueCancel(
+    NETPACKETQUEUE RxQueue
+)
+{
+    // Get the receive queue's context to retrieve the net ring collection
+    PMY_RX_QUEUE_CONTEXT rxQueueContext = MyGetRxQueueContext(RxQueue);
+    NET_RING_COLLECTION const * Rings = rxQueueContext->Rings;
+
+    // Drain oustanding receive packets
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetAllPacketIterator(Rings);
+    NetRingAdvanceEndPacketIterator(&packetIterator);
+    NetRingSetAllPacketIterator(&packetIterator);
+
+    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetAllFragmentIterator(Rings);
+    NetRingAdvanceEndFragmentIterator(&fragmentIterator);
+    NetRingSetAllFragmentIterator(&fragmentIterator);
+}
+```
+
+Canceling a transmit queue is similar for hardware that supports cancleing in-flight transmissions.
