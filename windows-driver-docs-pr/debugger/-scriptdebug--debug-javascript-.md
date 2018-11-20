@@ -102,9 +102,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
-    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
+    be <bpid>  ......................... Enable breakpoint by specified <bpid>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
