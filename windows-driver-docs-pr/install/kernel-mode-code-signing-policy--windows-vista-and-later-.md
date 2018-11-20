@@ -59,8 +59,6 @@ Before Windows 10, version 1607, the following types of drivers require an Authe
 
 The following table shows signing policies for client operating system versions.
 
-To load on Windows Server 2016, drivers must pass HLK tests and be signed by the Hardware dashboard portal. Windows Server does not load [attestation signed drivers](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md).
-
 Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
 |Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, version 1607+ with Secure Boot on|
