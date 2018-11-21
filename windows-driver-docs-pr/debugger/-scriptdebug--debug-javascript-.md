@@ -141,7 +141,7 @@ sx
     uh  [     active] .... Break on unhandled exception     
 ```
 
-Use the **sxe** script debugger command to enable any of the break beahaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
+Use the **sxe** script debugger command to enable any of the break behaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
 
 ```
 >>> Debug [DebuggableSample <No Position>] >sxe en          
