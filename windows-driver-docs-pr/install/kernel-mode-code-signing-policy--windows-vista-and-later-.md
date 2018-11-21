@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 # Driver Signing Policy
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Dev Portal.  To get started you must first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) is required to establish a dashboard account.
+> Starting with Windows 10, version 1607, Windows will not load any new kernel-mode drivers which are not signed by the Dev Portal.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) is required to establish a dashboard account.
 
-There are many different ways to submit drivers to the portal.  For production drivers, you should submit HLK/HCK test logs, as described below.  For testing on Windows 10 Client only systems, you can submit your drivers for [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md), which does not require HLK testing.  Or, you can submit your driver for Test signing as described on the [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md) page.
+There are many different ways to submit drivers to the portal.  For production drivers, you should submit HLK/HCK test logs, as described below.  For testing on Windows 10 client only systems, you can submit your drivers for [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md), which does not require HLK testing.  Or, you can submit your driver for Test signing as described on the [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md) page.
 
 ## Exceptions
 
